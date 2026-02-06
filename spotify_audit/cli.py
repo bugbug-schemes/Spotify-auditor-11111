@@ -189,67 +189,71 @@ def _resolve_artist_by_name(
     deezer_client: DeezerClient,
     mb_client: MusicBrainzClient,
 ) -> ArtistInfo:
-    """Resolve an artist by name using multiple strategies:
-    1. MusicBrainz search → find Spotify URL → scrape full Spotify profile
-    2. Deezer search → build ArtistInfo from Deezer data as fallback
-    """
-    # Strategy 1: MusicBrainz → Spotify ID → full Spotify scrape
-    try:
-        mb_artist = mb_client.search_artist(name)
-        if mb_artist and mb_artist.mbid:
-            # MusicBrainz stores Spotify URLs as "url" relations
-            # We can look up the artist's Spotify link from their MBID
-            logger.debug("Found %s on MusicBrainz (mbid=%s)", name, mb_artist.mbid)
-    except Exception as exc:
-        logger.debug("MusicBrainz search failed for '%s': %s", name, exc)
+    """Resolve an artist by name using Deezer API for real data.
 
-    # Strategy 2: Deezer search → real artist data
+    For combined names like "Kendrick Lamar, SZA", searches the primary artist.
+    """
+    # For combined artist names, search the first (primary) artist
+    search_name = name.split(",")[0].strip() if "," in name else name
+
+    # Strategy 1: Deezer search → real artist data (fast, no auth needed)
     try:
-        dz = deezer_client.search_artist(name)
-        if dz and dz.name.lower().strip() == name.lower().strip():
-            dz = deezer_client.enrich(dz)
-            logger.debug(
-                "Found %s on Deezer: %d fans, %d albums",
-                name, dz.nb_fan, dz.nb_album,
-            )
-            # Build ArtistInfo from Deezer data
-            release_dates = [
-                a.get("release_date", "")
-                for a in dz.albums
-                if isinstance(a, dict) and a.get("release_date")
-            ]
-            track_durations = [
-                t.get("duration", 0) * 1000  # Deezer uses seconds
-                for t in dz.top_tracks
-                if isinstance(t, dict) and t.get("duration")
-            ]
-            return ArtistInfo(
-                artist_id=f"deezer:{dz.deezer_id}",
-                name=dz.name,
-                followers=dz.nb_fan,
-                image_url=dz.picture_url or None,
-                external_urls={"deezer": dz.link} if dz.link else {},
-                album_count=sum(
-                    1 for a in dz.albums
-                    if isinstance(a, dict) and a.get("record_type") == "album"
-                ),
-                single_count=sum(
-                    1 for a in dz.albums
-                    if isinstance(a, dict) and a.get("record_type") == "single"
-                ),
-                total_tracks=sum(
-                    a.get("nb_tracks", 0)
+        dz = deezer_client.search_artist(search_name)
+        if dz:
+            # Accept if Deezer name reasonably matches
+            dz_lower = dz.name.lower().strip()
+            search_lower = search_name.lower().strip()
+            if dz_lower == search_lower or search_lower in dz_lower or dz_lower in search_lower:
+                dz = deezer_client.enrich(dz)
+                logger.debug(
+                    "Resolved '%s' via Deezer: %s (%d fans, %d albums)",
+                    name, dz.name, dz.nb_fan, dz.nb_album,
+                )
+                # Build ArtistInfo from Deezer data
+                release_dates = [
+                    a.get("release_date", "")
                     for a in dz.albums
-                    if isinstance(a, dict)
-                ),
-                release_dates=release_dates,
-                track_durations=track_durations,
-            )
+                    if isinstance(a, dict) and a.get("release_date")
+                ]
+                track_durations = [
+                    t.get("duration", 0) * 1000  # Deezer uses seconds
+                    for t in dz.top_tracks
+                    if isinstance(t, dict) and t.get("duration")
+                ]
+                return ArtistInfo(
+                    artist_id=f"deezer:{dz.deezer_id}",
+                    name=name,  # keep original playlist name
+                    followers=dz.nb_fan,
+                    image_url=dz.picture_url or None,
+                    external_urls={"deezer": dz.link} if dz.link else {},
+                    album_count=sum(
+                        1 for a in dz.albums
+                        if isinstance(a, dict) and a.get("record_type") == "album"
+                    ),
+                    single_count=sum(
+                        1 for a in dz.albums
+                        if isinstance(a, dict) and a.get("record_type") == "single"
+                    ),
+                    total_tracks=sum(
+                        a.get("nb_tracks", 0)
+                        for a in dz.albums
+                        if isinstance(a, dict)
+                    ),
+                    release_dates=release_dates,
+                    track_durations=track_durations,
+                )
+            else:
+                logger.debug(
+                    "Deezer name mismatch for '%s': got '%s'",
+                    search_name, dz.name,
+                )
+        else:
+            logger.debug("Deezer returned no results for '%s'", search_name)
     except Exception as exc:
         logger.debug("Deezer search failed for '%s': %s", name, exc)
 
-    # Strategy 3: name-only fallback
-    logger.debug("Could not resolve '%s' via MusicBrainz or Deezer", name)
+    # Strategy 2: name-only fallback
+    logger.warning("Could not resolve '%s' — using name-only fallback", name)
     return ArtistInfo(artist_id=f"name:{name}", name=name)
 
 
@@ -329,6 +333,9 @@ def _run_audit(
     # 3. Fetch each artist's data (with progress bar + polite delays)
     quick_results: dict[str, QuickScanResult] = {}
     artist_reports: list[ArtistReport] = []
+    resolved_count = 0
+    cached_count = 0
+    fallback_count = 0
 
     with Progress(
         SpinnerColumn(),
@@ -356,17 +363,23 @@ def _run_audit(
                         tier="quick",
                     )
                     quick_results[cache_key] = qr
+                    cached_count += 1
                     progress.advance(task)
                     continue
 
             # Fetch artist data
             if is_id:
                 artist = client.get_artist_info(key)
+                resolved_count += 1
             else:
-                # Resolve by name via Deezer + MusicBrainz
+                # Resolve by name via Deezer
                 artist = _resolve_artist_by_name(
                     key, client, deezer_client, mb_client,
                 )
+                if artist.artist_id.startswith("name:"):
+                    fallback_count += 1
+                else:
+                    resolved_count += 1
 
             # Run quick scan
             qr = quick_scan(artist, config.quick_weights)
@@ -381,6 +394,17 @@ def _run_audit(
                 })
 
             progress.advance(task)
+
+    # Show resolution summary
+    parts = []
+    if resolved_count:
+        parts.append(f"[green]{resolved_count} resolved via Deezer[/green]")
+    if cached_count:
+        parts.append(f"[dim]{cached_count} from cache[/dim]")
+    if fallback_count:
+        parts.append(f"[yellow]{fallback_count} name-only fallback[/yellow]")
+    if parts:
+        console.print("Resolution: " + ", ".join(parts))
 
     # 4. Escalation: Standard tier
     standard_results: dict[str, StandardScanResult] = {}
