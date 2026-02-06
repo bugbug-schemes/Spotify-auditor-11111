@@ -206,19 +206,19 @@ def _resolve_artist_by_name(
             if dz_lower == search_lower or search_lower in dz_lower or dz_lower in search_lower:
                 dz = deezer_client.enrich(dz)
                 logger.debug(
-                    "Resolved '%s' via Deezer: %s (%d fans, %d albums)",
-                    name, dz.name, dz.nb_fan, dz.nb_album,
+                    "Resolved '%s' via Deezer: %s (%d fans, %d albums, labels=%s)",
+                    name, dz.name, dz.nb_fan, dz.nb_album, dz.labels[:3],
                 )
-                # Build ArtistInfo from Deezer data
+                # Build ArtistInfo from all available Deezer data
                 release_dates = [
                     a.get("release_date", "")
                     for a in dz.albums
                     if isinstance(a, dict) and a.get("release_date")
                 ]
-                track_durations = [
-                    t.get("duration", 0) * 1000  # Deezer uses seconds
-                    for t in dz.top_tracks
-                    if isinstance(t, dict) and t.get("duration")
+                related_names = [
+                    r.get("name", "")
+                    for r in dz.related_artists
+                    if isinstance(r, dict) and r.get("name")
                 ]
                 return ArtistInfo(
                     artist_id=f"deezer:{dz.deezer_id}",
@@ -226,21 +226,22 @@ def _resolve_artist_by_name(
                     followers=dz.nb_fan,
                     image_url=dz.picture_url or None,
                     external_urls={"deezer": dz.link} if dz.link else {},
-                    album_count=sum(
-                        1 for a in dz.albums
-                        if isinstance(a, dict) and a.get("record_type") == "album"
-                    ),
-                    single_count=sum(
-                        1 for a in dz.albums
-                        if isinstance(a, dict) and a.get("record_type") == "single"
-                    ),
+                    album_count=dz.album_types.get("album", 0),
+                    single_count=dz.album_types.get("single", 0),
                     total_tracks=sum(
                         a.get("nb_tracks", 0)
                         for a in dz.albums
                         if isinstance(a, dict)
                     ),
                     release_dates=release_dates,
-                    track_durations=track_durations,
+                    track_durations=[d * 1000 for d in dz.track_durations],  # sec → ms
+                    labels=dz.labels,
+                    track_titles=dz.track_titles,
+                    track_ranks=dz.track_ranks,
+                    has_explicit=dz.has_explicit,
+                    contributors=dz.contributors,
+                    related_artist_names=related_names,
+                    deezer_fans=dz.nb_fan,
                 )
             else:
                 logger.debug(
