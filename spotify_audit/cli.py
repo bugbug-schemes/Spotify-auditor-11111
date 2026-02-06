@@ -532,6 +532,7 @@ def _resolve_artist_by_name(
                     track_ranks=dz.track_ranks,
                     has_explicit=dz.has_explicit,
                     contributors=dz.contributors,
+                    contributor_roles=dz.contributor_roles,
                     related_artist_names=related_names,
                     deezer_fans=dz.nb_fan,
                 )

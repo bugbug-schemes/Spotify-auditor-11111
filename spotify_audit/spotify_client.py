@@ -77,6 +77,7 @@ class ArtistInfo:
     track_ranks: list[int] = field(default_factory=list)
     has_explicit: bool = False
     contributors: list[str] = field(default_factory=list)  # collaborator names
+    contributor_roles: dict[str, list[str]] = field(default_factory=dict)  # {name: [roles]}
     related_artist_names: list[str] = field(default_factory=list)
     deezer_fans: int = 0
 

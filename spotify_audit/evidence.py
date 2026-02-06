@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from enum import Enum
 
 from spotify_audit.spotify_client import ArtistInfo
-from spotify_audit.config import pfc_distributors, known_ai_artists
+from spotify_audit.config import pfc_distributors, known_ai_artists, pfc_songwriters
 
 logger = logging.getLogger(__name__)
 
@@ -852,6 +852,61 @@ def _collect_collaboration_evidence(artist: ArtistInfo) -> list[Evidence]:
             strength="weak",
             detail=f"Related: {', '.join(artist.related_artist_names[:3])}.",
         ))
+
+    return evidence
+
+
+def _collect_credit_network_evidence(artist: ArtistInfo) -> list[Evidence]:
+    """Check if track credits match known PFC ghost producers/songwriters."""
+    evidence: list[Evidence] = []
+    watchlist = {n.lower(): n for n in pfc_songwriters()}
+    if not watchlist:
+        return evidence
+
+    # Check contributor names against songwriter watchlist
+    matched: list[str] = []
+    for contributor in artist.contributors:
+        clower = contributor.lower()
+        if clower in watchlist:
+            matched.append(watchlist[clower])
+
+    # Also check contributor_roles keys (may have names not in contributors list)
+    for name in artist.contributor_roles:
+        nlower = name.lower()
+        if nlower in watchlist and watchlist[nlower] not in matched:
+            matched.append(watchlist[nlower])
+
+    if matched:
+        evidence.append(Evidence(
+            finding=f"Credits linked to known PFC songwriter(s): {', '.join(matched)}",
+            source="Credit network",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Track credits include {', '.join(matched)}, who "
+                   f"{'is' if len(matched) == 1 else 'are'} identified in investigative "
+                   "reporting as prolific ghost producers creating music under fabricated "
+                   "artist names for PFC placement. This is strong evidence that this "
+                   "artist profile may be a pseudonym.",
+        ))
+
+    # Check for suspiciously few unique contributors with producer roles
+    # (PFC tracks tend to be written by 1-2 people behind many names)
+    if artist.contributor_roles:
+        producers = [
+            name for name, roles in artist.contributor_roles.items()
+            if any(r.lower() in ("producer", "composer", "author", "writer")
+                   for r in roles)
+        ]
+        if len(producers) == 1 and len(artist.track_titles) >= 5:
+            evidence.append(Evidence(
+                finding=f"All tracks credit a single producer: {producers[0]}",
+                source="Credit network",
+                evidence_type="red_flag",
+                strength="weak",
+                detail=f"Every track credits '{producers[0]}' as the sole producer/composer. "
+                       "While some solo artists self-produce, this pattern is also common "
+                       "with ghost producers who write entire catalogs under pseudonyms.",
+            ))
 
     return evidence
 
@@ -1767,6 +1822,7 @@ def evaluate_artist(
     all_evidence.extend(_collect_label_evidence(artist))
     all_evidence.extend(_collect_name_evidence(artist))
     all_evidence.extend(_collect_collaboration_evidence(artist))
+    all_evidence.extend(_collect_credit_network_evidence(artist))
     all_evidence.extend(_collect_genre_evidence(artist))
     all_evidence.extend(_collect_track_rank_evidence(artist))
 

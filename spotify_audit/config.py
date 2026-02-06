@@ -172,3 +172,7 @@ def pfc_playlists() -> list[str]:
 
 def known_ai_artists() -> list[str]:
     return load_blocklist("known_ai_artists")
+
+
+def pfc_songwriters() -> list[str]:
+    return load_blocklist("pfc_songwriters")
