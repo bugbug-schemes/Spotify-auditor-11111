@@ -23,6 +23,8 @@ from rich.panel import Panel
 
 from spotify_audit.config import AuditConfig
 from spotify_audit.spotify_client import SpotifyClient, ArtistInfo
+from spotify_audit.deezer_client import DeezerClient
+from spotify_audit.musicbrainz_client import MusicBrainzClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.scoring import (
@@ -172,26 +174,73 @@ def main(
             click.echo(report_text)
 
 
-def _search_artist_by_name(client: SpotifyClient, name: str) -> ArtistInfo:
-    """Look up an artist by name when we don't have a Spotify ID.
-    Uses the scraper's search or constructs a minimal ArtistInfo."""
+def _resolve_artist_by_name(
+    name: str,
+    spotify_client: SpotifyClient,
+    deezer_client: DeezerClient,
+    mb_client: MusicBrainzClient,
+) -> ArtistInfo:
+    """Resolve an artist by name using multiple strategies:
+    1. MusicBrainz search → find Spotify URL → scrape full Spotify profile
+    2. Deezer search → build ArtistInfo from Deezer data as fallback
+    """
+    # Strategy 1: MusicBrainz → Spotify ID → full Spotify scrape
     try:
-        # Try searching via the scraper (some versions support search)
-        results = client._scraper.search(name, search_type="artist", limit=1)
-        if results and isinstance(results, dict):
-            artists = results.get("artists", [])
-            if artists:
-                first = artists[0]
-                aid = first.get("id", "")
-                if aid:
-                    return client.get_artist_info(aid)
-    except (AttributeError, Exception):
-        # search() may not exist in all versions
-        pass
+        mb_artist = mb_client.search_artist(name)
+        if mb_artist and mb_artist.mbid:
+            # MusicBrainz stores Spotify URLs as "url" relations
+            # We can look up the artist's Spotify link from their MBID
+            logger.debug("Found %s on MusicBrainz (mbid=%s)", name, mb_artist.mbid)
+    except Exception as exc:
+        logger.debug("MusicBrainz search failed for '%s': %s", name, exc)
 
-    # Fallback: return a minimal ArtistInfo with just the name
-    # This still lets our heuristics run on whatever data we have
-    logger.debug("Could not resolve artist ID for '%s', using name-only data", name)
+    # Strategy 2: Deezer search → real artist data
+    try:
+        dz = deezer_client.search_artist(name)
+        if dz and dz.name.lower().strip() == name.lower().strip():
+            dz = deezer_client.enrich(dz)
+            logger.debug(
+                "Found %s on Deezer: %d fans, %d albums",
+                name, dz.nb_fan, dz.nb_album,
+            )
+            # Build ArtistInfo from Deezer data
+            release_dates = [
+                a.get("release_date", "")
+                for a in dz.albums
+                if isinstance(a, dict) and a.get("release_date")
+            ]
+            track_durations = [
+                t.get("duration", 0) * 1000  # Deezer uses seconds
+                for t in dz.top_tracks
+                if isinstance(t, dict) and t.get("duration")
+            ]
+            return ArtistInfo(
+                artist_id=f"deezer:{dz.deezer_id}",
+                name=dz.name,
+                followers=dz.nb_fan,
+                image_url=dz.picture_url or None,
+                external_urls={"deezer": dz.link} if dz.link else {},
+                album_count=sum(
+                    1 for a in dz.albums
+                    if isinstance(a, dict) and a.get("record_type") == "album"
+                ),
+                single_count=sum(
+                    1 for a in dz.albums
+                    if isinstance(a, dict) and a.get("record_type") == "single"
+                ),
+                total_tracks=sum(
+                    a.get("nb_tracks", 0)
+                    for a in dz.albums
+                    if isinstance(a, dict)
+                ),
+                release_dates=release_dates,
+                track_durations=track_durations,
+            )
+    except Exception as exc:
+        logger.debug("Deezer search failed for '%s': %s", name, exc)
+
+    # Strategy 3: name-only fallback
+    logger.debug("Could not resolve '%s' via MusicBrainz or Deezer", name)
     return ArtistInfo(artist_id=f"name:{name}", name=name)
 
 
@@ -212,6 +261,10 @@ def _run_audit(
         f"Loaded [bold]{meta.name}[/bold] — "
         f"{meta.total_tracks} tracks by {meta.owner}"
     )
+
+    # Set up supplementary clients for name resolution
+    deezer_client = DeezerClient(delay=0.3)
+    mb_client = MusicBrainzClient(delay=1.1)
 
     # 2. Deduplicate artists — prefer IDs, fall back to names
     artist_ids = list({aid for t in tracks for aid in t.artist_ids if aid})
@@ -273,8 +326,10 @@ def _run_audit(
             if is_id:
                 artist = client.get_artist_info(key)
             else:
-                # Search by name — use the scraper to search
-                artist = _search_artist_by_name(client, key)
+                # Resolve by name via Deezer + MusicBrainz
+                artist = _resolve_artist_by_name(
+                    key, client, deezer_client, mb_client,
+                )
 
             # Run quick scan
             qr = quick_scan(artist, config.quick_weights)
