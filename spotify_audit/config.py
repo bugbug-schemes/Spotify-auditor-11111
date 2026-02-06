@@ -134,14 +134,13 @@ class AuditConfig:
     cache_ttl_days: int = 7
     db_path: Path = DEFAULT_DB_PATH
 
-    spotify_client_id: str = ""
-    spotify_client_secret: str = ""
     anthropic_api_key: str = ""
 
     # Rate-limit / batching
     claude_batch_size: int = 5          # artists per Claude API call
     max_retries: int = 5
     backoff_base: float = 2.0           # exponential backoff base in seconds
+    scrape_delay: float = 2.0           # seconds between Spotify embed requests
 
 
 # ---------------------------------------------------------------------------

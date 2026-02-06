@@ -56,24 +56,43 @@ class QuickScanResult:
 
 def _score_follower_listener_ratio(artist: ArtistInfo) -> tuple[float, str]:
     """
-    Spotify doesn't expose monthly listeners via the public API, so we
-    approximate suspicion from popularity vs follower count.
-    A real artist with 50+ popularity usually has >1 000 followers.
-    Ghost/PFC artists often have high popularity but few followers because
-    they're placed on editorial playlists.
+    Compare followers to monthly listeners. Ghost/PFC artists typically have
+    very high monthly listeners (from playlist placement) but almost no
+    followers (no organic fanbase). If monthly_listeners is unavailable,
+    falls back to popularity as a proxy.
     """
-    if artist.followers == 0 and artist.popularity > 20:
+    ml = artist.monthly_listeners
+    followers = artist.followers
+
+    # If we have monthly listeners data (from SpotifyScraper), use the real ratio
+    if ml > 0:
+        if followers == 0:
+            return 90.0, f"{ml:,} monthly listeners but 0 followers"
+        ratio = followers / ml
+        # Healthy artists: ~5-20% of listeners are followers
+        # Ghost artists: <0.5% of listeners are followers
+        if ratio < 0.001:
+            return 90.0, f"follower/listener ratio={ratio:.4f} ({followers:,}/{ml:,})"
+        if ratio < 0.005:
+            return 70.0, f"follower/listener ratio={ratio:.4f} ({followers:,}/{ml:,})"
+        if ratio < 0.01:
+            return 45.0, f"follower/listener ratio={ratio:.3f} ({followers:,}/{ml:,})"
+        if ratio < 0.03:
+            return 25.0, f"follower/listener ratio={ratio:.3f} (low-ish)"
+        return 5.0, f"follower/listener ratio={ratio:.3f} (healthy)"
+
+    # Fallback: use popularity as a proxy for monthly listeners
+    if followers == 0 and artist.popularity > 20:
         return 90.0, f"0 followers but popularity={artist.popularity}"
-    if artist.followers == 0:
-        return 60.0, "0 followers"
-    ratio = artist.popularity / max(artist.followers, 1)
-    # A very high ratio means algorithmically boosted
+    if followers == 0:
+        return 60.0, "0 followers (no monthly listener data)"
+    ratio = artist.popularity / max(followers, 1)
     if ratio > 1.0:
         score = min(90, 50 + ratio * 10)
-        return score, f"popularity/followers ratio={ratio:.2f} (high)"
+        return score, f"popularity/followers ratio={ratio:.2f} (high, no ML data)"
     if ratio > 0.1:
-        return 30.0, f"popularity/followers ratio={ratio:.2f} (moderate)"
-    return 5.0, f"popularity/followers ratio={ratio:.2f} (healthy)"
+        return 30.0, f"popularity/followers ratio={ratio:.2f} (moderate, no ML data)"
+    return 5.0, f"popularity/followers ratio={ratio:.2f} (healthy, no ML data)"
 
 
 def _score_genre_absence(artist: ArtistInfo) -> tuple[float, str]:

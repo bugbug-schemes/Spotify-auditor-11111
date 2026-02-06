@@ -3,6 +3,8 @@ spotify-audit CLI entry point.
 
 Usage:
     spotify-audit <playlist-url> [--tier quick|standard|deep] [--format md|html|json] [--output FILE]
+
+No Spotify API key required — data is scraped from public embed endpoints.
 """
 
 from __future__ import annotations
@@ -15,12 +17,11 @@ from pathlib import Path
 import click
 from dotenv import load_dotenv
 from rich.console import Console
-from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn, TaskID
+from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 from rich.table import Table
 from rich.panel import Panel
-from rich.text import Text
 
-from spotify_audit.config import AuditConfig, score_label
+from spotify_audit.config import AuditConfig
 from spotify_audit.spotify_client import SpotifyClient, ArtistInfo
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
@@ -42,8 +43,6 @@ def _build_config() -> AuditConfig:
     """Load config from environment variables."""
     load_dotenv()
     return AuditConfig(
-        spotify_client_id=os.getenv("SPOTIPY_CLIENT_ID", ""),
-        spotify_client_secret=os.getenv("SPOTIPY_CLIENT_SECRET", ""),
         anthropic_api_key=os.getenv("ANTHROPIC_API_KEY", ""),
     )
 
@@ -133,28 +132,23 @@ def main(
     verbose: bool,
     no_cache: bool,
 ) -> None:
-    """Analyze a Spotify playlist for AI-generated, ghost, and fake artists."""
+    """Analyze a Spotify playlist for AI-generated, ghost, and fake artists.
+
+    No API keys required — data is scraped from Spotify's public embed endpoints.
+    """
     logging.basicConfig(
-        level=logging.DEBUG if verbose else logging.INFO,
+        level=logging.DEBUG if verbose else logging.WARNING,
         format="%(levelname)s %(name)s: %(message)s",
     )
 
     config = _build_config()
-
-    if not config.spotify_client_id or not config.spotify_client_secret:
-        console.print(
-            "[red]Error:[/red] SPOTIPY_CLIENT_ID and SPOTIPY_CLIENT_SECRET must be set.\n"
-            "See .env.example for details.",
-            highlight=False,
-        )
-        sys.exit(1)
-
     client = SpotifyClient(config)
     cache = None if no_cache else Cache(config.db_path, config.cache_ttl_days)
 
     try:
         playlist_report = _run_audit(client, cache, config, playlist_url, tier)
     finally:
+        client.close()
         if cache:
             cache.close()
 
@@ -174,7 +168,6 @@ def main(
         console.print(f"\n[green]Report written to {output}[/green]")
     else:
         if fmt != "md":
-            # For HTML/JSON also dump to stdout unless piped
             console.print(f"\n[dim]--- {fmt.upper()} report ---[/dim]")
             click.echo(report_text)
 
@@ -189,7 +182,7 @@ def _run_audit(
     """Core workflow: fetch playlist -> quick scan all -> escalate as needed."""
 
     # 1. Fetch playlist
-    with console.status("[bold green]Fetching playlist..."):
+    with console.status("[bold green]Fetching playlist from Spotify..."):
         meta, tracks = client.get_playlist(playlist_url)
 
     console.print(
@@ -198,14 +191,10 @@ def _run_audit(
     )
 
     # 2. Deduplicate artist IDs
-    artist_ids = list({aid for t in tracks for aid in t.artist_ids})
+    artist_ids = list({aid for t in tracks for aid in t.artist_ids if aid})
     console.print(f"Found [bold]{len(artist_ids)}[/bold] unique artists")
 
-    # 3. Batch-fetch artist metadata
-    with console.status("[bold green]Fetching artist metadata..."):
-        artists = client.get_artists(artist_ids)
-
-    # 4. Quick scan all artists
+    # 3. Fetch each artist's data (with progress bar + polite delays)
     quick_results: dict[str, QuickScanResult] = {}
     artist_reports: list[ArtistReport] = []
 
@@ -216,10 +205,12 @@ def _run_audit(
         TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
         console=console,
     ) as progress:
-        task = progress.add_task("Quick scanning artists...", total=len(artists))
+        task = progress.add_task(
+            "Scanning artists...", total=len(artist_ids),
+        )
 
-        for artist_id, artist in artists.items():
-            # Check cache
+        for artist_id in artist_ids:
+            # Check cache first
             if cache:
                 cached = cache.get(artist_id, "quick")
                 if cached:
@@ -234,9 +225,8 @@ def _run_audit(
                     progress.advance(task)
                     continue
 
-            # Enrich artist with album/track data
-            artist = client.enrich_artist(artist)
-            artists[artist_id] = artist
+            # Fetch artist data (scraper already includes discography + top tracks)
+            artist = client.get_artist_info(artist_id)
 
             # Run quick scan
             qr = quick_scan(artist, config.quick_weights)
@@ -252,7 +242,7 @@ def _run_audit(
 
             progress.advance(task)
 
-    # 5. Escalation (placeholder for standard/deep tiers)
+    # 4. Escalation (placeholder for standard/deep tiers)
     escalated_standard = 0
     escalated_deep = 0
 
@@ -262,12 +252,10 @@ def _run_audit(
 
         if max_tier in ("standard", "deep") and should_escalate_to_standard(qr.score, config):
             escalated_standard += 1
-            # TODO: Standard tier analysis
             logger.debug("Would escalate %s to Standard (score=%d)", qr.artist_name, qr.score)
 
         if max_tier == "deep" and qr.score > config.escalate_to_deep:
             escalated_deep += 1
-            # TODO: Deep tier analysis
             logger.debug("Would escalate %s to Deep (score=%d)", qr.artist_name, qr.score)
 
         report = finalize_artist_report(
@@ -284,7 +272,7 @@ def _run_audit(
     if escalated_deep:
         console.print(f"[yellow]→ {escalated_deep} artists would escalate to Deep tier (not yet implemented)[/yellow]")
 
-    # 6. Build playlist-level report
+    # 5. Build playlist-level report
     return build_playlist_report(
         playlist_name=meta.name,
         playlist_id=meta.playlist_id,
