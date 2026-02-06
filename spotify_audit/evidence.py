@@ -170,6 +170,9 @@ class ArtistEvaluation:
     labels: list[str] = field(default_factory=list)
     contributors: list[str] = field(default_factory=list)
 
+    # Keep external data for source status display
+    external_data: ExternalData | None = None
+
     @property
     def red_flag_count(self) -> int:
         return len(self.red_flags)
@@ -185,6 +188,243 @@ class ArtistEvaluation:
     @property
     def strong_green_flags(self) -> list[Evidence]:
         return [e for e in self.green_flags if e.strength == "strong"]
+
+    @property
+    def category_scores(self) -> dict[str, int]:
+        """Compute 0-100 scores for 6 signal categories (for radar chart)."""
+        return compute_category_scores(self)
+
+    @property
+    def sources_reached(self) -> dict[str, bool]:
+        """Which API sources were successfully reached."""
+        ext = self.external_data or ExternalData()
+        return {
+            "Spotify": self.platform_presence.spotify,
+            "Deezer": self.platform_presence.deezer,
+            "Genius": ext.genius_found,
+            "Discogs": ext.discogs_found,
+            "MusicBrainz": ext.musicbrainz_found,
+            "Setlist.fm": ext.setlistfm_found,
+            "Bandsintown": ext.bandsintown_found,
+        }
+
+
+def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
+    """Compute 0-100 scores for 6 signal categories.
+
+    Categories:
+        Platform Presence: How widely is the artist found across music databases?
+        Fan Engagement: Do real people follow and listen to this artist?
+        Creative History: Does the artist have a real body of work?
+        Live Performance: Has the artist performed live?
+        Online Identity: Does the artist have a real-world identity trail?
+        Industry Signals: Is the artist registered in professional systems?
+    """
+    ext = ev.external_data or ExternalData()
+
+    def _clamp(v: float) -> int:
+        return max(0, min(100, int(v)))
+
+    # --- Platform Presence (0-100) ---
+    # 7 platforms max; each adds ~14 pts
+    platform_score = _clamp(ev.platform_presence.count() * 14.3)
+
+    # --- Fan Engagement (0-100) ---
+    fans = ev.platform_presence.deezer_fans or 0
+    fan_pts = 0
+    if fans >= 1_000_000:
+        fan_pts = 50
+    elif fans >= 100_000:
+        fan_pts = 40
+    elif fans >= 10_000:
+        fan_pts = 25
+    elif fans >= 1_000:
+        fan_pts = 15
+    elif fans > 0:
+        fan_pts = 5
+
+    # Bandsintown trackers
+    if ext.bandsintown_tracker_count >= 10_000:
+        fan_pts += 20
+    elif ext.bandsintown_tracker_count >= 1_000:
+        fan_pts += 10
+    elif ext.bandsintown_tracker_count > 0:
+        fan_pts += 5
+
+    # Genius followers
+    if ext.genius_followers_count >= 1_000:
+        fan_pts += 20
+    elif ext.genius_followers_count >= 100:
+        fan_pts += 10
+
+    # Genius song count as proxy for fan interest
+    if ext.genius_song_count >= 20:
+        fan_pts += 10
+    elif ext.genius_song_count >= 5:
+        fan_pts += 5
+
+    engagement_score = _clamp(fan_pts)
+
+    # --- Creative History (0-100) ---
+    creative_pts = 0
+
+    # Albums
+    album_count = len([e for e in ev.green_flags if "album" in e.finding.lower() and e.source == "Deezer"])
+    for e in ev.green_flags + ev.red_flags + ev.neutral_notes:
+        if "album" in e.finding.lower() and "catalog" not in e.finding.lower():
+            pass  # counted via labels below
+
+    # Use evidence directly for catalog signals
+    for e in ev.green_flags:
+        if "albums in catalog" in e.finding.lower():
+            creative_pts += 25
+        elif "album(s) in catalog" in e.finding.lower():
+            creative_pts += 15
+        if "physical release" in e.finding.lower():
+            if e.strength == "strong":
+                creative_pts += 30
+            else:
+                creative_pts += 15
+        if "songs on Genius" in e.finding:
+            if e.strength == "strong":
+                creative_pts += 20
+            elif e.strength == "moderate":
+                creative_pts += 10
+            else:
+                creative_pts += 5
+        if "collaborator" in e.finding.lower():
+            creative_pts += 10
+
+    # Penalize content farm patterns
+    for e in ev.red_flags:
+        if "content farm" in e.finding.lower():
+            creative_pts -= 30
+        if "empty catalog" in e.finding.lower():
+            creative_pts -= 20
+
+    creative_score = _clamp(creative_pts)
+
+    # --- Live Performance (0-100) ---
+    live_pts = 0
+
+    # Setlist.fm
+    if ext.setlistfm_total_shows >= 50:
+        live_pts += 40
+    elif ext.setlistfm_total_shows >= 10:
+        live_pts += 25
+    elif ext.setlistfm_total_shows >= 1:
+        live_pts += 10
+
+    # Bandsintown
+    if ext.bandsintown_past_events >= 10:
+        live_pts += 20
+    elif ext.bandsintown_past_events >= 1:
+        live_pts += 10
+
+    # Tour names
+    if ext.setlistfm_tour_names:
+        live_pts += 15
+
+    # Geographic spread
+    countries = len(ext.setlistfm_venue_countries)
+    if countries >= 5:
+        live_pts += 25
+    elif countries >= 2:
+        live_pts += 15
+    elif countries >= 1:
+        live_pts += 5
+
+    live_score = _clamp(live_pts)
+
+    # --- Online Identity (0-100) ---
+    identity_pts = 0
+
+    # Social media count
+    social_count = 0
+    if ext.genius_facebook_name:
+        social_count += 1
+    if ext.genius_instagram_name:
+        social_count += 1
+    if ext.genius_twitter_name:
+        social_count += 1
+    if ext.bandsintown_facebook_url:
+        social_count += 1
+    for u in ext.discogs_social_urls:
+        social_count += 1
+    # MusicBrainz URL rels
+    for rel_type, url in ext.musicbrainz_urls.items():
+        if any(s in url.lower() for s in ["facebook", "instagram", "twitter", "youtube", "bandcamp"]):
+            social_count += 1
+    social_count = min(social_count, 8)  # cap duplicates
+    identity_pts += social_count * 5
+
+    # Wikipedia
+    has_wikipedia = any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values())
+    if has_wikipedia:
+        identity_pts += 20
+
+    # Discogs bio
+    if len(ext.discogs_profile) >= 200:
+        identity_pts += 15
+    elif len(ext.discogs_profile) >= 50:
+        identity_pts += 8
+
+    # Real name known
+    if ext.discogs_realname:
+        identity_pts += 10
+
+    # Group members
+    if ext.discogs_members:
+        identity_pts += 10
+
+    # Genius verified
+    if ext.genius_is_verified:
+        identity_pts += 15
+
+    identity_score = _clamp(identity_pts)
+
+    # --- Industry Signals (0-100) ---
+    industry_pts = 0
+
+    # ISNI
+    if ext.musicbrainz_isnis:
+        industry_pts += 30
+
+    # IPI
+    if ext.musicbrainz_ipis:
+        industry_pts += 30
+
+    # MusicBrainz metadata richness
+    mb_rich = sum([
+        bool(ext.musicbrainz_type),
+        bool(ext.musicbrainz_country),
+        bool(ext.musicbrainz_begin_date),
+        len(ext.musicbrainz_labels) >= 1,
+        len(ext.musicbrainz_genres) >= 1,
+    ])
+    industry_pts += mb_rich * 5
+
+    # Discogs data quality
+    if ext.discogs_data_quality == "Correct":
+        industry_pts += 10
+    elif ext.discogs_data_quality:
+        industry_pts += 5
+
+    # PFC label penalty
+    for e in ev.red_flags:
+        if "PFC blocklist" in e.finding:
+            industry_pts -= 40
+
+    industry_score = _clamp(industry_pts)
+
+    return {
+        "Platform Presence": platform_score,
+        "Fan Engagement": engagement_score,
+        "Creative History": creative_score,
+        "Live Performance": live_score,
+        "Online Identity": identity_score,
+        "Industry Signals": industry_score,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -1559,4 +1799,5 @@ def evaluate_artist(
         decision_path=decision_path,
         labels=artist.labels,
         contributors=artist.contributors,
+        external_data=ext,
     )

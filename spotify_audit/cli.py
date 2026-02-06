@@ -133,13 +133,14 @@ def _render_summary_table(report: PlaylistReport, blocklist_report: BlocklistRep
     )
     console.print(breakdown)
 
-    # Artist verdict table
+    # Artist verdict table with API sources
     if report.artists:
         artist_table = Table(title="Artist Evaluations", show_header=True)
         artist_table.add_column("", width=3)  # icon
-        artist_table.add_column("Verdict", width=20)
-        artist_table.add_column("Artist", min_width=20)
-        artist_table.add_column("Key Evidence", min_width=30)
+        artist_table.add_column("Verdict", width=18)
+        artist_table.add_column("Artist", min_width=18)
+        artist_table.add_column("APIs Reached", min_width=22)
+        artist_table.add_column("Key Evidence", min_width=25)
         artist_table.add_column("Conf.", width=6)
 
         for a in report.artists:
@@ -151,11 +152,22 @@ def _render_summary_table(report: PlaylistReport, blocklist_report: BlocklistRep
                     a.artist_name,
                     "-",
                     "-",
+                    "-",
                 )
                 continue
 
             color = _color_for_verdict(ev.verdict)
             icon = _VERDICT_ICONS.get(ev.verdict, "")
+
+            # API source status
+            sources = ev.sources_reached
+            source_parts = []
+            for name, reached in sources.items():
+                if reached:
+                    source_parts.append(f"[green]{name}[/green]")
+                else:
+                    source_parts.append(f"[dim]{name}[/dim]")
+            sources_str = " ".join(source_parts)
 
             # Show the most important evidence as a short summary
             key_evidence = _summarize_key_evidence(ev)
@@ -164,22 +176,17 @@ def _render_summary_table(report: PlaylistReport, blocklist_report: BlocklistRep
                 icon,
                 f"[{color}]{ev.verdict.value}[/{color}]",
                 a.artist_name,
+                sources_str,
                 key_evidence,
                 ev.confidence,
             )
         console.print(artist_table)
 
-    # Show detailed evidence for suspicious/inconclusive/artificial artists
-    flagged = [
-        a for a in report.artists
-        if a.evaluation and a.evaluation.verdict in (
-            Verdict.SUSPICIOUS, Verdict.LIKELY_ARTIFICIAL, Verdict.INCONCLUSIVE,
-        )
-    ]
-    if flagged:
-        console.print()
-        console.print("[bold]Detailed Evidence for Flagged Artists:[/bold]")
-        for a in flagged:
+    # Show detailed evidence cards for ALL artists
+    console.print()
+    console.print("[bold]Detailed Artist Scorecards:[/bold]")
+    for a in report.artists:
+        if a.evaluation:
             _render_evidence_card(a)
 
     # Blocklist intelligence
@@ -231,7 +238,33 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
     """Build rich text showing all evidence for an artist."""
     lines: list[str] = []
 
-    # Platform presence
+    # --- Section 1: API Sources Reached ---
+    lines.append("[bold underline]Data Sources[/bold underline]")
+    sources = ev.sources_reached
+    for name, reached in sources.items():
+        if reached:
+            lines.append(f"  [green]OK[/green]  {name}")
+        else:
+            lines.append(f"  [red]--[/red]  {name} [dim](not found)[/dim]")
+    lines.append("")
+
+    # --- Section 2: Category Scores (text-based bar chart) ---
+    lines.append("[bold underline]Signal Scores[/bold underline]")
+    scores = ev.category_scores
+    for cat, score in scores.items():
+        bar_filled = score // 5  # 20 chars max
+        bar_empty = 20 - bar_filled
+        if score >= 60:
+            bar_color = "green"
+        elif score >= 30:
+            bar_color = "yellow"
+        else:
+            bar_color = "red"
+        bar = f"[{bar_color}]{'█' * bar_filled}[/{bar_color}][dim]{'░' * bar_empty}[/dim]"
+        lines.append(f"  {cat:<20s} {bar} {score:>3d}/100")
+    lines.append("")
+
+    # --- Section 3: Platform presence ---
     platforms = ev.platform_presence.names()
     if platforms:
         lines.append(f"[bold]Found on:[/bold] {', '.join(platforms)}")
@@ -239,32 +272,99 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
         lines.append("[bold]Found on:[/bold] No verified platforms")
     lines.append("")
 
-    # Decision path
+    # --- Section 4: Decision path ---
     if ev.decision_path:
         lines.append("[bold]Decision:[/bold] " + " -> ".join(ev.decision_path))
         lines.append("")
 
-    # Red flags
+    # --- Section 5: Key data fields that contributed ---
+    ext = ev.external_data
+    if ext:
+        data_fields: list[str] = []
+        if ev.platform_presence.deezer_fans:
+            data_fields.append(f"Deezer fans: {ev.platform_presence.deezer_fans:,}")
+        if ext.genius_song_count:
+            data_fields.append(f"Genius songs: {ext.genius_song_count}")
+        if ext.genius_is_verified:
+            data_fields.append("Genius: verified")
+        if ext.genius_followers_count:
+            data_fields.append(f"Genius followers: {ext.genius_followers_count:,}")
+        if ext.discogs_physical_releases:
+            data_fields.append(f"Discogs physical: {ext.discogs_physical_releases}")
+        if ext.discogs_total_releases:
+            data_fields.append(f"Discogs total: {ext.discogs_total_releases}")
+        if ext.discogs_profile:
+            data_fields.append(f"Discogs bio: {len(ext.discogs_profile)} chars")
+        if ext.discogs_realname:
+            data_fields.append(f"Real name: {ext.discogs_realname}")
+        if ext.discogs_members:
+            data_fields.append(f"Members: {', '.join(ext.discogs_members[:3])}")
+        if ext.setlistfm_total_shows:
+            data_fields.append(f"Setlist.fm shows: {ext.setlistfm_total_shows}")
+        if ext.setlistfm_tour_names:
+            data_fields.append(f"Tours: {', '.join(ext.setlistfm_tour_names[:2])}")
+        if ext.setlistfm_venue_countries:
+            data_fields.append(f"Countries: {', '.join(ext.setlistfm_venue_countries[:4])}")
+        if ext.bandsintown_past_events:
+            data_fields.append(f"BIT events: {ext.bandsintown_past_events}")
+        if ext.bandsintown_tracker_count:
+            data_fields.append(f"BIT trackers: {ext.bandsintown_tracker_count:,}")
+        if ext.musicbrainz_type:
+            data_fields.append(f"MB type: {ext.musicbrainz_type}")
+        if ext.musicbrainz_country:
+            data_fields.append(f"MB country: {ext.musicbrainz_country}")
+        if ext.musicbrainz_begin_date:
+            data_fields.append(f"MB active since: {ext.musicbrainz_begin_date}")
+        if ext.musicbrainz_isnis:
+            data_fields.append(f"ISNI: {ext.musicbrainz_isnis[0]}")
+        if ext.musicbrainz_ipis:
+            data_fields.append(f"IPI: {ext.musicbrainz_ipis[0]}")
+        if ext.musicbrainz_genres:
+            data_fields.append(f"MB genres: {', '.join(ext.musicbrainz_genres[:3])}")
+        social_links = []
+        if ext.genius_facebook_name:
+            social_links.append("FB")
+        if ext.genius_instagram_name:
+            social_links.append("IG")
+        if ext.genius_twitter_name:
+            social_links.append("X")
+        if ext.bandsintown_facebook_url:
+            social_links.append("FB(BIT)")
+        if social_links:
+            data_fields.append(f"Social: {', '.join(social_links)}")
+        mb_links = []
+        for rel_type in ext.musicbrainz_urls:
+            mb_links.append(rel_type)
+        if mb_links:
+            data_fields.append(f"MB links: {', '.join(mb_links[:4])}")
+
+        if data_fields:
+            lines.append("[bold underline]Key Data Fields[/bold underline]")
+            for df in data_fields:
+                lines.append(f"  {df}")
+            lines.append("")
+
+    # --- Section 6: Red flags ---
     if ev.red_flags:
-        lines.append("[bold red]Red Flags:[/bold red]")
+        lines.append(f"[bold red]Red Flags ({len(ev.red_flags)}):[/bold red]")
         for e in ev.red_flags:
             strength_icon = {"strong": "!!!", "moderate": "!!", "weak": "!"}
             icon = strength_icon.get(e.strength, "!")
-            lines.append(f"  [{e.strength}] {icon} {e.finding}")
+            lines.append(f"  [{e.strength}] {icon} {e.finding} [dim]({e.source})[/dim]")
             lines.append(f"      [dim]{e.detail}[/dim]")
         lines.append("")
 
-    # Green flags
+    # --- Section 7: Green flags ---
     if ev.green_flags:
-        lines.append("[bold green]Green Flags:[/bold green]")
+        lines.append(f"[bold green]Green Flags ({len(ev.green_flags)}):[/bold green]")
         for e in ev.green_flags:
             strength_icon = {"strong": "+++", "moderate": "++", "weak": "+"}
             icon = strength_icon.get(e.strength, "+")
-            lines.append(f"  [{e.strength}] {icon} {e.finding}")
+            lines.append(f"  [{e.strength}] {icon} {e.finding} [dim]({e.source})[/dim]")
             lines.append(f"      [dim]{e.detail}[/dim]")
         lines.append("")
 
-    # Neutral notes (brief)
+    # --- Section 8: Neutral notes ---
     if ev.neutral_notes:
         lines.append("[bold]Notes:[/bold]")
         for e in ev.neutral_notes:
