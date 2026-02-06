@@ -172,6 +172,29 @@ def main(
             click.echo(report_text)
 
 
+def _search_artist_by_name(client: SpotifyClient, name: str) -> ArtistInfo:
+    """Look up an artist by name when we don't have a Spotify ID.
+    Uses the scraper's search or constructs a minimal ArtistInfo."""
+    try:
+        # Try searching via the scraper (some versions support search)
+        results = client._scraper.search(name, search_type="artist", limit=1)
+        if results and isinstance(results, dict):
+            artists = results.get("artists", [])
+            if artists:
+                first = artists[0]
+                aid = first.get("id", "")
+                if aid:
+                    return client.get_artist_info(aid)
+    except (AttributeError, Exception):
+        # search() may not exist in all versions
+        pass
+
+    # Fallback: return a minimal ArtistInfo with just the name
+    # This still lets our heuristics run on whatever data we have
+    logger.debug("Could not resolve artist ID for '%s', using name-only data", name)
+    return ArtistInfo(artist_id=f"name:{name}", name=name)
+
+
 def _run_audit(
     client: SpotifyClient,
     cache: Cache | None,
@@ -190,9 +213,28 @@ def _run_audit(
         f"{meta.total_tracks} tracks by {meta.owner}"
     )
 
-    # 2. Deduplicate artist IDs
+    # 2. Deduplicate artists — prefer IDs, fall back to names
     artist_ids = list({aid for t in tracks for aid in t.artist_ids if aid})
-    console.print(f"Found [bold]{len(artist_ids)}[/bold] unique artists")
+    # If no IDs found (embed endpoint may omit them), collect unique names
+    artist_names_only: list[str] = []
+    if not artist_ids:
+        artist_names_only = list({
+            name for t in tracks for name in t.artist_names if name
+        })
+        console.print(
+            f"Found [bold]{len(artist_names_only)}[/bold] unique artists "
+            f"[dim](by name — embed data had no artist IDs)[/dim]"
+        )
+    else:
+        console.print(f"Found [bold]{len(artist_ids)}[/bold] unique artists")
+
+    # Build a unified lookup list: (key, is_id)
+    # key is either a Spotify artist ID or an artist name
+    artist_keys: list[tuple[str, bool]] = []
+    if artist_ids:
+        artist_keys = [(aid, True) for aid in artist_ids]
+    else:
+        artist_keys = [(name, False) for name in artist_names_only]
 
     # 3. Fetch each artist's data (with progress bar + polite delays)
     quick_results: dict[str, QuickScanResult] = {}
@@ -206,13 +248,15 @@ def _run_audit(
         console=console,
     ) as progress:
         task = progress.add_task(
-            "Scanning artists...", total=len(artist_ids),
+            "Scanning artists...", total=len(artist_keys),
         )
 
-        for artist_id in artist_ids:
+        for key, is_id in artist_keys:
+            cache_key = key
+
             # Check cache first
             if cache:
-                cached = cache.get(artist_id, "quick")
+                cached = cache.get(cache_key, "quick")
                 if cached:
                     qr = QuickScanResult(
                         artist_id=cached["artist_id"],
@@ -221,20 +265,24 @@ def _run_audit(
                         signals=[],
                         tier="quick",
                     )
-                    quick_results[artist_id] = qr
+                    quick_results[cache_key] = qr
                     progress.advance(task)
                     continue
 
-            # Fetch artist data (scraper already includes discography + top tracks)
-            artist = client.get_artist_info(artist_id)
+            # Fetch artist data
+            if is_id:
+                artist = client.get_artist_info(key)
+            else:
+                # Search by name — use the scraper to search
+                artist = _search_artist_by_name(client, key)
 
             # Run quick scan
             qr = quick_scan(artist, config.quick_weights)
-            quick_results[artist_id] = qr
+            quick_results[cache_key] = qr
 
             # Cache result
             if cache:
-                cache.put(artist_id, "quick", {
+                cache.put(cache_key, "quick", {
                     "artist_id": qr.artist_id,
                     "artist_name": qr.artist_name,
                     "score": qr.score,

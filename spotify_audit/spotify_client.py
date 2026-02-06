@@ -96,6 +96,31 @@ def extract_id(url_or_id: str, resource: str = "playlist") -> str:
     return url_or_id.strip()
 
 
+def _extract_artist_id(artist_data: dict) -> str:
+    """Extract artist ID from various formats the scraper may return."""
+    # Direct ID field
+    aid = artist_data.get("id", "")
+    if aid:
+        return aid
+
+    # Extract from URI (spotify:artist:XXXX)
+    uri = artist_data.get("uri", "")
+    if uri and "artist:" in uri:
+        return uri.split(":")[-1]
+
+    # Extract from external_urls or link
+    for key in ("external_urls", "link", "url"):
+        val = artist_data.get(key, "")
+        if isinstance(val, dict):
+            val = val.get("spotify", "")
+        if isinstance(val, str) and "artist/" in val:
+            m = re.search(r"artist/([a-zA-Z0-9]+)", val)
+            if m:
+                return m.group(1)
+
+    return ""
+
+
 def _artist_url(artist_id: str) -> str:
     return f"{SPOTIFY_BASE}/artist/{artist_id}"
 
@@ -167,35 +192,74 @@ class SpotifyClient:
             backoff_base=self.config.backoff_base,
         )
 
+        logger.debug("Raw playlist keys: %s", list(raw.keys()))
+        if raw.get("tracks"):
+            sample = raw["tracks"][0] if raw["tracks"] else {}
+            logger.debug("First track keys: %s", list(sample.keys()) if sample else "empty")
+            if sample.get("artists"):
+                logger.debug("First track artist data: %s", sample["artists"][:2])
+
         owner = raw.get("owner", {})
         owner_name = owner if isinstance(owner, str) else owner.get("display_name", owner.get("name", ""))
         owner_id = owner if isinstance(owner, str) else owner.get("id", "")
+
+        # SpotifyScraper uses "track_count"; fall back to "total_tracks" or len
+        track_count = (
+            raw.get("track_count", 0)
+            or raw.get("total_tracks", 0)
+            or len(raw.get("tracks", []))
+        )
 
         meta = PlaylistMeta(
             playlist_id=pid,
             name=raw.get("name", ""),
             owner=owner_name,
             description=raw.get("description", ""),
-            followers=raw.get("followers", {}).get("total", 0) if isinstance(raw.get("followers"), dict) else int(raw.get("followers", 0) or 0),
-            total_tracks=raw.get("total_tracks", 0) or len(raw.get("tracks", [])),
+            followers=_safe_int(raw.get("followers")),
+            total_tracks=track_count,
             is_spotify_owned=(owner_id == "spotify"),
         )
 
         tracks: list[TrackInfo] = []
         for t in raw.get("tracks", []):
-            artists = t.get("artists", [])
+            raw_artists = t.get("artists", [])
+            # Handle artists as list of dicts or list of strings
+            artist_ids: list[str] = []
+            artist_names: list[str] = []
+            for a in raw_artists:
+                if isinstance(a, dict):
+                    aid = _extract_artist_id(a)
+                    if aid:
+                        artist_ids.append(aid)
+                    name = a.get("name", "")
+                    if name:
+                        artist_names.append(name)
+                elif isinstance(a, str):
+                    # Some formats just return artist names as strings
+                    artist_names.append(a)
+
+            album = t.get("album", {})
             tracks.append(TrackInfo(
                 track_id=t.get("id", ""),
                 name=t.get("name", ""),
-                duration_ms=t.get("duration_ms", 0),
-                popularity=t.get("popularity", 0),
-                album_name=t.get("album", {}).get("name", "") if isinstance(t.get("album"), dict) else str(t.get("album", "")),
-                album_type=t.get("album", {}).get("album_type", "") if isinstance(t.get("album"), dict) else "",
-                release_date=t.get("album", {}).get("release_date", "") if isinstance(t.get("album"), dict) else "",
-                artist_ids=[a.get("id", "") for a in artists if isinstance(a, dict)],
-                artist_names=[a.get("name", "") for a in artists if isinstance(a, dict)],
-                explicit=t.get("explicit", False),
+                duration_ms=_safe_int(t.get("duration_ms")),
+                popularity=_safe_int(t.get("popularity")),
+                album_name=album.get("name", "") if isinstance(album, dict) else str(album or ""),
+                album_type=album.get("album_type", "") if isinstance(album, dict) else "",
+                release_date=album.get("release_date", "") if isinstance(album, dict) else "",
+                artist_ids=artist_ids,
+                artist_names=artist_names,
+                explicit=t.get("explicit", False) or t.get("is_explicit", False),
             ))
+
+        # Log what we found
+        all_ids = {aid for t in tracks for aid in t.artist_ids}
+        all_names = {name for t in tracks for name in t.artist_names}
+        logger.debug(
+            "Extracted %d artist IDs and %d artist names from %d tracks",
+            len(all_ids), len(all_names), len(tracks),
+        )
+
         return meta, tracks
 
     # -- artists ------------------------------------------------------------
@@ -210,9 +274,10 @@ class SpotifyClient:
                 max_retries=self.config.max_retries,
                 backoff_base=self.config.backoff_base,
             )
+            logger.debug("Artist %s raw keys: %s", artist_id, list(raw.keys()))
             return self._parse_artist(artist_id, raw)
-        except SpotifyScraperError:
-            logger.warning("Scraper failed for %s, falling back to oEmbed", artist_id)
+        except (SpotifyScraperError, Exception) as exc:
+            logger.warning("Scraper failed for %s (%s), falling back to oEmbed", artist_id, exc)
             return self._oembed_fallback(artist_id)
 
     def get_artists(self, artist_ids: list[str]) -> dict[str, ArtistInfo]:
@@ -232,15 +297,28 @@ class SpotifyClient:
         if isinstance(best_img, str):
             best_img = {"url": best_img}
 
-        # Discography breakdown
+        # Discography breakdown — scraper may use different keys
         albums_list = raw.get("albums", [])
         singles_list = raw.get("singles", [])
         compilations = raw.get("compilations", [])
 
+        # Also check for "discography" or "popular_releases" keys
+        if not albums_list and not singles_list:
+            popular = raw.get("popular_releases", [])
+            for item in popular:
+                if isinstance(item, dict):
+                    rtype = item.get("type", "").lower()
+                    if rtype == "album":
+                        albums_list.append(item)
+                    elif rtype == "single":
+                        singles_list.append(item)
+
         release_dates: list[str] = []
         for item in albums_list + singles_list + compilations:
-            if isinstance(item, dict) and item.get("release_date"):
-                release_dates.append(item["release_date"])
+            if isinstance(item, dict):
+                date = item.get("release_date", "") or item.get("date", "")
+                if date:
+                    release_dates.append(date)
 
         # Top tracks
         top_tracks = raw.get("top_tracks", [])
@@ -248,15 +326,23 @@ class SpotifyClient:
         popularities = []
         for t in top_tracks:
             if isinstance(t, dict):
-                if t.get("duration_ms"):
-                    durations.append(t["duration_ms"])
-                if t.get("popularity"):
-                    popularities.append(t["popularity"])
+                dur = _safe_int(t.get("duration_ms"))
+                if dur:
+                    durations.append(dur)
+                pop = _safe_int(t.get("popularity"))
+                if pop:
+                    popularities.append(pop)
 
         # External URLs
         ext_urls = raw.get("external_urls", {})
         if isinstance(ext_urls, str):
             ext_urls = {"spotify": ext_urls}
+        # Also check social links
+        social = raw.get("social", {})
+        if isinstance(social, dict):
+            for k, v in social.items():
+                if v and isinstance(v, str):
+                    ext_urls[k] = v
 
         return ArtistInfo(
             artist_id=artist_id,
@@ -265,11 +351,11 @@ class SpotifyClient:
             followers=_safe_int(raw.get("followers")),
             monthly_listeners=_safe_int(raw.get("monthly_listeners")),
             popularity=_safe_int(raw.get("popularity")),
-            verified=bool(raw.get("verified", False)),
+            verified=bool(raw.get("verified", False) or raw.get("is_verified", False)),
             bio=raw.get("bio", "") or "",
-            image_url=best_img.get("url"),
-            image_width=best_img.get("width"),
-            image_height=best_img.get("height"),
+            image_url=best_img.get("url") if isinstance(best_img, dict) else None,
+            image_width=best_img.get("width") if isinstance(best_img, dict) else None,
+            image_height=best_img.get("height") if isinstance(best_img, dict) else None,
             external_urls=ext_urls if isinstance(ext_urls, dict) else {},
             album_count=len(albums_list),
             single_count=len(singles_list),
