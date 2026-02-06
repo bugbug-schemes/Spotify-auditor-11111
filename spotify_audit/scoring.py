@@ -15,6 +15,7 @@ from spotify_audit.config import (
     score_label,
 )
 from spotify_audit.analyzers.quick import QuickScanResult
+from spotify_audit.analyzers.standard import StandardScanResult
 
 
 @dataclass
@@ -71,7 +72,7 @@ def finalize_artist_report(
     artist_id: str,
     artist_name: str,
     quick_result: QuickScanResult | None = None,
-    standard_result: dict | None = None,
+    standard_result: StandardScanResult | None = None,
     deep_result: dict | None = None,
 ) -> ArtistReport:
     """Build an ArtistReport from whichever tiers completed."""
@@ -91,11 +92,19 @@ def finalize_artist_report(
             for s in quick_result.signals
         ]
 
-    # Standard and Deep are placeholders for now
     if standard_result:
-        report.standard_score = standard_result.get("score")
+        report.standard_score = standard_result.score
         report.tiers_completed.append("standard")
-        report.standard_signals = standard_result.get("signals", [])
+        report.standard_signals = [
+            {
+                "name": s.name,
+                "raw_score": s.raw_score,
+                "weight": s.weight,
+                "weighted_score": s.weighted_score,
+                "detail": s.detail,
+            }
+            for s in standard_result.signals
+        ]
 
     if deep_result:
         report.deep_score = deep_result.get("score")

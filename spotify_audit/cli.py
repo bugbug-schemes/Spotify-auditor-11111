@@ -25,8 +25,13 @@ from spotify_audit.config import AuditConfig
 from spotify_audit.spotify_client import SpotifyClient, ArtistInfo
 from spotify_audit.deezer_client import DeezerClient
 from spotify_audit.musicbrainz_client import MusicBrainzClient
+from spotify_audit.genius_client import GeniusClient
+from spotify_audit.discogs_client import DiscogsClient
+from spotify_audit.setlistfm_client import SetlistFmClient
+from spotify_audit.bandsintown_client import BandsintownClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
+from spotify_audit.analyzers.standard import standard_scan, StandardScanResult
 from spotify_audit.scoring import (
     finalize_artist_report,
     build_playlist_report,
@@ -46,6 +51,10 @@ def _build_config() -> AuditConfig:
     load_dotenv()
     return AuditConfig(
         anthropic_api_key=os.getenv("ANTHROPIC_API_KEY", ""),
+        genius_token=os.getenv("GENIUS_TOKEN", ""),
+        discogs_token=os.getenv("DISCOGS_TOKEN", ""),
+        setlistfm_api_key=os.getenv("SETLISTFM_API_KEY", ""),
+        bandsintown_app_id=os.getenv("BANDSINTOWN_APP_ID", ""),
     )
 
 
@@ -262,9 +271,37 @@ def _run_audit(
         f"{meta.total_tracks} tracks by {meta.owner}"
     )
 
-    # Set up supplementary clients for name resolution
+    # Set up supplementary clients
     deezer_client = DeezerClient(delay=0.3)
     mb_client = MusicBrainzClient(delay=1.1)
+
+    # Standard-tier clients (instantiate even if not used — they check .enabled)
+    genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
+    discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
+    setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
+    bandsintown_client = BandsintownClient(app_id=config.bandsintown_app_id, delay=0.3)
+
+    # Show which Standard-tier APIs are configured
+    if max_tier in ("standard", "deep"):
+        configured = []
+        if genius_client.enabled:
+            configured.append("Genius")
+        if discogs_client.enabled:
+            configured.append("Discogs")
+        if setlistfm_client.enabled:
+            configured.append("Setlist.fm")
+        if bandsintown_client.enabled:
+            configured.append("Bandsintown")
+        if configured:
+            console.print(
+                f"Standard APIs: [green]{', '.join(configured)}[/green]"
+            )
+        else:
+            console.print(
+                "[yellow]No Standard-tier API keys configured. "
+                "Set GENIUS_TOKEN, DISCOGS_TOKEN, SETLISTFM_API_KEY, "
+                "BANDSINTOWN_APP_ID in .env for richer analysis.[/yellow]"
+            )
 
     # 2. Deduplicate artists — prefer IDs, fall back to names
     artist_ids = list({aid for t in tracks for aid in t.artist_ids if aid})
@@ -345,37 +382,97 @@ def _run_audit(
 
             progress.advance(task)
 
-    # 4. Escalation (placeholder for standard/deep tiers)
-    escalated_standard = 0
+    # 4. Escalation: Standard tier
+    standard_results: dict[str, StandardScanResult] = {}
+    escalate_candidates = [
+        (aid, qr) for aid, qr in quick_results.items()
+        if max_tier in ("standard", "deep")
+        and should_escalate_to_standard(qr.score, config)
+    ]
+
+    if escalate_candidates:
+        console.print(
+            f"\n[bold cyan]Escalating {len(escalate_candidates)} artists "
+            f"to Standard tier (score > {config.escalate_to_standard})...[/bold cyan]"
+        )
+
+        with Progress(
+            SpinnerColumn(),
+            TextColumn("[bold cyan]{task.description}"),
+            BarColumn(),
+            TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+            console=console,
+        ) as progress:
+            std_task = progress.add_task(
+                "Standard scan...", total=len(escalate_candidates),
+            )
+
+            for artist_id, qr in escalate_candidates:
+                # Check cache
+                if cache:
+                    cached = cache.get(artist_id, "standard")
+                    if cached:
+                        standard_results[artist_id] = StandardScanResult(
+                            artist_id=cached["artist_id"],
+                            artist_name=cached["artist_name"],
+                            score=cached["score"],
+                            signals=[],
+                            tier="standard",
+                        )
+                        progress.advance(std_task)
+                        continue
+
+                sr = standard_scan(
+                    artist_name=qr.artist_name,
+                    quick_result=qr,
+                    genius=genius_client,
+                    discogs=discogs_client,
+                    setlistfm=setlistfm_client,
+                    bandsintown=bandsintown_client,
+                    mb_client=mb_client,
+                    deezer=deezer_client,
+                    weights=config.standard_weights,
+                )
+                standard_results[artist_id] = sr
+
+                if cache:
+                    cache.put(artist_id, "standard", {
+                        "artist_id": sr.artist_id,
+                        "artist_name": sr.artist_name,
+                        "score": sr.score,
+                    })
+
+                progress.advance(std_task)
+
+    # 5. Deep tier (placeholder)
     escalated_deep = 0
-
     for artist_id, qr in quick_results.items():
-        standard_result = None
-        deep_result = None
-
-        if max_tier in ("standard", "deep") and should_escalate_to_standard(qr.score, config):
-            escalated_standard += 1
-            logger.debug("Would escalate %s to Standard (score=%d)", qr.artist_name, qr.score)
-
-        if max_tier == "deep" and qr.score > config.escalate_to_deep:
+        if max_tier == "deep" and should_escalate_to_deep(
+            standard_results[artist_id].score
+            if artist_id in standard_results
+            else qr.score,
+            config,
+        ):
             escalated_deep += 1
-            logger.debug("Would escalate %s to Deep (score=%d)", qr.artist_name, qr.score)
 
+    if escalated_deep:
+        console.print(
+            f"[yellow]→ {escalated_deep} artists would escalate "
+            f"to Deep tier (not yet implemented)[/yellow]"
+        )
+
+    # 6. Build reports
+    for artist_id, qr in quick_results.items():
         report = finalize_artist_report(
             artist_id=artist_id,
             artist_name=qr.artist_name,
             quick_result=qr,
-            standard_result=standard_result,
-            deep_result=deep_result,
+            standard_result=standard_results.get(artist_id),
+            deep_result=None,
         )
         artist_reports.append(report)
 
-    if escalated_standard:
-        console.print(f"[yellow]→ {escalated_standard} artists would escalate to Standard tier (not yet implemented)[/yellow]")
-    if escalated_deep:
-        console.print(f"[yellow]→ {escalated_deep} artists would escalate to Deep tier (not yet implemented)[/yellow]")
-
-    # 5. Build playlist-level report
+    # 7. Build playlist-level report
     return build_playlist_report(
         playlist_name=meta.name,
         playlist_id=meta.playlist_id,

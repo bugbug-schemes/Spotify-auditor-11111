@@ -90,14 +90,14 @@ class QuickWeights:
 # ---------------------------------------------------------------------------
 @dataclass
 class StandardWeights:
-    """Weights for Standard-tier signals (adds web/DB lookups)."""
+    """Weights for Standard-tier signals (adds external DB lookups)."""
     quick_score: float = 0.40
-    wikipedia_absent: float = 0.10
-    musicbrainz_absent: float = 0.10
-    discogs_absent: float = 0.05
-    label_blocklist_match: float = 0.20
-    deezer_ai_flag: float = 0.10
-    web_presence: float = 0.05
+    genius_credits: float = 0.12          # songwriter/producer credits
+    discogs_physical: float = 0.12        # physical releases (vinyl/CD)
+    live_show_history: float = 0.12       # concert history (setlist.fm + bandsintown)
+    musicbrainz_presence: float = 0.08    # MusicBrainz metadata quality
+    label_blocklist_match: float = 0.10   # PFC distributor/label match
+    deezer_cross_check: float = 0.06      # Deezer presence & fan validation
 
     def total(self) -> float:
         return sum(self.__dict__.values())
@@ -135,6 +135,12 @@ class AuditConfig:
     db_path: Path = DEFAULT_DB_PATH
 
     anthropic_api_key: str = ""
+
+    # External API keys (all free-tier)
+    genius_token: str = ""              # Genius access token
+    discogs_token: str = ""             # Discogs personal access token
+    setlistfm_api_key: str = ""         # setlist.fm API key
+    bandsintown_app_id: str = ""        # Bandsintown app ID
 
     # Rate-limit / batching
     claude_batch_size: int = 5          # artists per Claude API call
