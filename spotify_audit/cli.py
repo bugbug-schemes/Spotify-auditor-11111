@@ -464,6 +464,12 @@ def _lookup_external_data(
                 ga = genius.enrich(ga)
                 ext.genius_song_count = ga.song_count
                 ext.genius_description = ga.description_snippet
+                ext.genius_facebook_name = ga.facebook_name
+                ext.genius_instagram_name = ga.instagram_name
+                ext.genius_twitter_name = ga.twitter_name
+                ext.genius_is_verified = ga.is_verified
+                ext.genius_followers_count = ga.followers_count
+                ext.genius_alternate_names = ga.alternate_names
         except Exception as exc:
             logger.debug("Genius lookup failed for '%s': %s", search_name, exc)
 
@@ -478,6 +484,12 @@ def _lookup_external_data(
             ext.discogs_total_releases = da.total_releases
             ext.discogs_formats = da.formats
             ext.discogs_labels = da.labels
+            ext.discogs_profile = da.profile
+            ext.discogs_realname = da.realname
+            ext.discogs_social_urls = da.social_urls
+            ext.discogs_members = da.members
+            ext.discogs_groups = da.groups
+            ext.discogs_data_quality = da.data_quality
     except Exception as exc:
         logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
 
@@ -492,6 +504,9 @@ def _lookup_external_data(
                 ext.setlistfm_first_show = sa.first_show_date
                 ext.setlistfm_last_show = sa.last_show_date
                 ext.setlistfm_venues = sa.top_venues
+                ext.setlistfm_venue_cities = sa.venue_cities
+                ext.setlistfm_venue_countries = sa.venue_countries
+                ext.setlistfm_tour_names = sa.tour_names
         except Exception as exc:
             logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
 
@@ -505,6 +520,9 @@ def _lookup_external_data(
                 ext.bandsintown_past_events = ba.past_events
                 ext.bandsintown_upcoming_events = ba.upcoming_events
                 ext.bandsintown_tracker_count = ba.tracker_count
+                ext.bandsintown_facebook_url = ba.facebook_page_url
+                ext.bandsintown_social_links = ba.social_links
+                ext.bandsintown_on_tour = ba.on_tour
         except Exception as exc:
             logger.debug("Bandsintown lookup failed for '%s': %s", search_name, exc)
 
@@ -516,8 +534,15 @@ def _lookup_external_data(
             ext.musicbrainz_type = mb.artist_type
             ext.musicbrainz_country = mb.country
             ext.musicbrainz_begin_date = mb.begin_date
+            ext.musicbrainz_gender = mb.gender
+            ext.musicbrainz_area = mb.area
+            ext.musicbrainz_aliases = mb.aliases
+            ext.musicbrainz_isnis = mb.isnis
+            ext.musicbrainz_ipis = mb.ipis
+            ext.musicbrainz_genres = mb.genres
             mb = mb_client.enrich(mb)
             ext.musicbrainz_labels = mb.labels
+            ext.musicbrainz_urls = mb.urls
     except Exception as exc:
         logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 

@@ -27,10 +27,19 @@ class SetlistArtist:
     first_show_date: str = ""          # earliest known show
     last_show_date: str = ""           # most recent show
     top_venues: list[str] = None       # notable venues
+    venue_cities: list[str] = None     # cities where they've played
+    venue_countries: list[str] = None  # countries where they've played
+    tour_names: list[str] = None       # named tours
 
     def __post_init__(self):
         if self.top_venues is None:
             self.top_venues = []
+        if self.venue_cities is None:
+            self.venue_cities = []
+        if self.venue_countries is None:
+            self.venue_countries = []
+        if self.tour_names is None:
+            self.tour_names = []
 
 
 class SetlistFmClient:
@@ -93,14 +102,33 @@ class SetlistFmClient:
         if setlists:
             # Most recent first
             artist.last_show_date = setlists[0].get("eventDate", "")
-            # Get venue names
+            # Get venue names, cities, countries, and tour names
             venues = []
-            for s in setlists[:10]:
+            cities = []
+            countries = []
+            tours = []
+            for s in setlists[:20]:
                 venue = s.get("venue", {})
                 vname = venue.get("name", "")
                 if vname and vname not in venues:
                     venues.append(vname)
+                city_obj = venue.get("city", {})
+                if isinstance(city_obj, dict):
+                    city_name = city_obj.get("name", "")
+                    if city_name and city_name not in cities:
+                        cities.append(city_name)
+                    country_obj = city_obj.get("country", {})
+                    if isinstance(country_obj, dict):
+                        country_name = country_obj.get("name", "")
+                        if country_name and country_name not in countries:
+                            countries.append(country_name)
+                tour_name = s.get("tour", {}).get("name", "") if isinstance(s.get("tour"), dict) else ""
+                if tour_name and tour_name not in tours:
+                    tours.append(tour_name)
             artist.top_venues = venues
+            artist.venue_cities = cities
+            artist.venue_countries = countries
+            artist.tour_names = tours
 
         # Get oldest show (last page)
         total_pages = (artist.total_setlists + 19) // 20  # 20 per page

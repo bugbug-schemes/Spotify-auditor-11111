@@ -37,6 +37,12 @@ class ExternalData:
     genius_found: bool = False
     genius_song_count: int = 0
     genius_description: str = ""
+    genius_facebook_name: str = ""
+    genius_instagram_name: str = ""
+    genius_twitter_name: str = ""
+    genius_is_verified: bool = False
+    genius_followers_count: int = 0
+    genius_alternate_names: list[str] = field(default_factory=list)
 
     # Discogs
     discogs_found: bool = False
@@ -45,6 +51,12 @@ class ExternalData:
     discogs_total_releases: int = 0
     discogs_formats: list[str] = field(default_factory=list)
     discogs_labels: list[str] = field(default_factory=list)
+    discogs_profile: str = ""          # bio text
+    discogs_realname: str = ""
+    discogs_social_urls: list[str] = field(default_factory=list)
+    discogs_members: list[str] = field(default_factory=list)
+    discogs_groups: list[str] = field(default_factory=list)
+    discogs_data_quality: str = ""
 
     # Setlist.fm
     setlistfm_found: bool = False
@@ -52,12 +64,18 @@ class ExternalData:
     setlistfm_first_show: str = ""
     setlistfm_last_show: str = ""
     setlistfm_venues: list[str] = field(default_factory=list)
+    setlistfm_venue_cities: list[str] = field(default_factory=list)
+    setlistfm_venue_countries: list[str] = field(default_factory=list)
+    setlistfm_tour_names: list[str] = field(default_factory=list)
 
     # Bandsintown
     bandsintown_found: bool = False
     bandsintown_past_events: int = 0
     bandsintown_upcoming_events: int = 0
     bandsintown_tracker_count: int = 0
+    bandsintown_facebook_url: str = ""
+    bandsintown_social_links: list[dict] = field(default_factory=list)
+    bandsintown_on_tour: bool = False
 
     # MusicBrainz
     musicbrainz_found: bool = False
@@ -65,6 +83,13 @@ class ExternalData:
     musicbrainz_country: str = ""
     musicbrainz_begin_date: str = ""
     musicbrainz_labels: list[str] = field(default_factory=list)
+    musicbrainz_urls: dict[str, str] = field(default_factory=dict)  # relation type -> url
+    musicbrainz_genres: list[str] = field(default_factory=list)
+    musicbrainz_aliases: list[str] = field(default_factory=list)
+    musicbrainz_isnis: list[str] = field(default_factory=list)
+    musicbrainz_ipis: list[str] = field(default_factory=list)
+    musicbrainz_gender: str = ""
+    musicbrainz_area: str = ""
 
 
 # ---------------------------------------------------------------------------
@@ -990,6 +1015,354 @@ def _collect_musicbrainz_evidence(ext: ExternalData) -> list[Evidence]:
     return evidence
 
 
+def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze social media presence across APIs."""
+    evidence: list[Evidence] = []
+
+    # Collect all social links from all sources
+    social_links: dict[str, str] = {}  # platform -> source
+
+    # Genius social links
+    if ext.genius_facebook_name:
+        social_links["Facebook"] = "Genius"
+    if ext.genius_instagram_name:
+        social_links["Instagram"] = "Genius"
+    if ext.genius_twitter_name:
+        social_links["Twitter/X"] = "Genius"
+
+    # Bandsintown social links
+    if ext.bandsintown_facebook_url:
+        social_links.setdefault("Facebook", "Bandsintown")
+    for link in ext.bandsintown_social_links:
+        url = link.get("url", "").lower()
+        if "facebook" in url:
+            social_links.setdefault("Facebook", "Bandsintown")
+        elif "instagram" in url:
+            social_links.setdefault("Instagram", "Bandsintown")
+        elif "twitter" in url or "x.com" in url:
+            social_links.setdefault("Twitter/X", "Bandsintown")
+        elif "youtube" in url:
+            social_links.setdefault("YouTube", "Bandsintown")
+        elif "tiktok" in url:
+            social_links.setdefault("TikTok", "Bandsintown")
+
+    # Discogs social URLs
+    for url in ext.discogs_social_urls:
+        url_lower = url.lower()
+        if "facebook" in url_lower:
+            social_links.setdefault("Facebook", "Discogs")
+        elif "instagram" in url_lower:
+            social_links.setdefault("Instagram", "Discogs")
+        elif "twitter" in url_lower or "x.com" in url_lower:
+            social_links.setdefault("Twitter/X", "Discogs")
+        elif "youtube" in url_lower:
+            social_links.setdefault("YouTube", "Discogs")
+        elif "bandcamp" in url_lower:
+            social_links.setdefault("Bandcamp", "Discogs")
+        elif "soundcloud" in url_lower:
+            social_links.setdefault("SoundCloud", "Discogs")
+
+    # MusicBrainz URL relations
+    for rel_type, url in ext.musicbrainz_urls.items():
+        url_lower = url.lower()
+        rel_lower = rel_type.lower()
+        if "official homepage" in rel_lower or "official site" in rel_lower:
+            social_links.setdefault("Official Website", "MusicBrainz")
+        elif "wikipedia" in rel_lower or "wikipedia" in url_lower:
+            social_links.setdefault("Wikipedia", "MusicBrainz")
+        elif "wikidata" in rel_lower or "wikidata" in url_lower:
+            social_links.setdefault("Wikidata", "MusicBrainz")
+        elif "youtube" in url_lower:
+            social_links.setdefault("YouTube", "MusicBrainz")
+        elif "bandcamp" in url_lower:
+            social_links.setdefault("Bandcamp", "MusicBrainz")
+        elif "soundcloud" in url_lower:
+            social_links.setdefault("SoundCloud", "MusicBrainz")
+        elif "facebook" in url_lower:
+            social_links.setdefault("Facebook", "MusicBrainz")
+        elif "instagram" in url_lower:
+            social_links.setdefault("Instagram", "MusicBrainz")
+        elif "twitter" in url_lower or "x.com" in url_lower:
+            social_links.setdefault("Twitter/X", "MusicBrainz")
+
+    if len(social_links) >= 4:
+        platforms_str = ", ".join(f"{k} (via {v})" for k, v in sorted(social_links.items()))
+        evidence.append(Evidence(
+            finding=f"{len(social_links)} social/web presences found",
+            source="Social media",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Artist has verified presence on: {platforms_str}. "
+                   "A broad web footprint is strong evidence of a real artist.",
+        ))
+    elif len(social_links) >= 2:
+        platforms_str = ", ".join(f"{k} (via {v})" for k, v in sorted(social_links.items()))
+        evidence.append(Evidence(
+            finding=f"{len(social_links)} social/web presences found",
+            source="Social media",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Found: {platforms_str}.",
+        ))
+    elif len(social_links) == 1:
+        platforms_str = ", ".join(f"{k} (via {v})" for k, v in social_links.items())
+        evidence.append(Evidence(
+            finding=f"1 social/web presence: {platforms_str}",
+            source="Social media",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Minimal web presence found: {platforms_str}.",
+        ))
+    else:
+        # Only flag if we actually checked multiple APIs
+        apis_checked = sum([
+            ext.genius_found,
+            ext.discogs_found,
+            ext.bandsintown_found,
+            ext.musicbrainz_found,
+        ])
+        if apis_checked >= 2:
+            evidence.append(Evidence(
+                finding="No social media or website links found",
+                source="Social media",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail="Checked Genius, Discogs, Bandsintown, and MusicBrainz — "
+                       "no social media profiles or official website found. "
+                       "Real artists almost always have some web presence.",
+            ))
+
+    # Genius verified status
+    if ext.genius_is_verified:
+        evidence.append(Evidence(
+            finding="Verified on Genius",
+            source="Genius",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail="Artist has a verified Genius account, indicating they have claimed "
+                   "their profile and likely manage their own credits/lyrics.",
+        ))
+
+    # Genius followers
+    if ext.genius_followers_count >= 1000:
+        evidence.append(Evidence(
+            finding=f"{ext.genius_followers_count:,} Genius followers",
+            source="Genius",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Artist has {ext.genius_followers_count:,} followers on Genius, "
+                   "indicating engaged fans who follow lyrics/credits.",
+        ))
+    elif ext.genius_followers_count >= 100:
+        evidence.append(Evidence(
+            finding=f"{ext.genius_followers_count:,} Genius followers",
+            source="Genius",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Artist has {ext.genius_followers_count:,} Genius followers.",
+        ))
+
+    # Wikipedia/Wikidata presence (from MusicBrainz URL rels)
+    has_wikipedia = any("wikipedia" in k.lower() or "wikipedia" in v.lower()
+                        for k, v in ext.musicbrainz_urls.items())
+    if has_wikipedia:
+        evidence.append(Evidence(
+            finding="Has Wikipedia article",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="strong",
+            detail="Artist has a Wikipedia article linked from MusicBrainz. "
+                   "Wikipedia's notability requirements make this strong proof of legitimacy.",
+        ))
+
+    return evidence
+
+
+def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze bio, real name, group membership, and identity signals."""
+    evidence: list[Evidence] = []
+
+    # Discogs bio/profile
+    if ext.discogs_profile:
+        bio_len = len(ext.discogs_profile)
+        if bio_len >= 200:
+            evidence.append(Evidence(
+                finding=f"Discogs bio ({bio_len} chars)",
+                source="Discogs",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"Has a detailed Discogs biography: "
+                       f"\"{ext.discogs_profile[:150]}{'...' if bio_len > 150 else ''}\"",
+            ))
+        elif bio_len >= 50:
+            evidence.append(Evidence(
+                finding=f"Discogs bio ({bio_len} chars)",
+                source="Discogs",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Has a brief Discogs biography: \"{ext.discogs_profile[:100]}\"",
+            ))
+
+    # Real name (Discogs)
+    if ext.discogs_realname:
+        evidence.append(Evidence(
+            finding=f"Real name known: {ext.discogs_realname}",
+            source="Discogs",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Discogs records this artist's real name as \"{ext.discogs_realname}\". "
+                   "Known real names indicate a documented, real person.",
+        ))
+
+    # Group members (Discogs)
+    if ext.discogs_members:
+        evidence.append(Evidence(
+            finding=f"Group with {len(ext.discogs_members)} known members",
+            source="Discogs",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Discogs lists group members: {', '.join(ext.discogs_members[:5])}"
+                   f"{'...' if len(ext.discogs_members) > 5 else ''}. "
+                   "Known members indicate a real group.",
+        ))
+
+    # Groups this artist belongs to (Discogs)
+    if ext.discogs_groups:
+        evidence.append(Evidence(
+            finding=f"Member of {len(ext.discogs_groups)} group(s)",
+            source="Discogs",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Also part of: {', '.join(ext.discogs_groups[:5])}.",
+        ))
+
+    # Discogs data quality
+    if ext.discogs_data_quality == "Correct":
+        evidence.append(Evidence(
+            finding="Discogs data quality: Correct",
+            source="Discogs",
+            evidence_type="green_flag",
+            strength="weak",
+            detail="Community-verified Discogs data rated as 'Correct'.",
+        ))
+
+    # MusicBrainz professional identifiers (ISNIs/IPIs)
+    if ext.musicbrainz_isnis:
+        evidence.append(Evidence(
+            finding=f"Has ISNI identifier ({ext.musicbrainz_isnis[0]})",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="strong",
+            detail="Artist has an International Standard Name Identifier (ISNI), "
+                   "a globally unique identifier assigned to public identities. "
+                   "This is very strong proof of a real, professionally registered artist.",
+        ))
+
+    if ext.musicbrainz_ipis:
+        evidence.append(Evidence(
+            finding=f"Has IPI code ({ext.musicbrainz_ipis[0]})",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="strong",
+            detail="Artist has an Interested Parties Information (IPI) code, "
+                   "assigned by collecting societies for royalty management. "
+                   "This means they are registered as a rights holder.",
+        ))
+
+    # MusicBrainz gender (helps confirm type=Person)
+    if ext.musicbrainz_gender:
+        evidence.append(Evidence(
+            finding=f"MusicBrainz gender: {ext.musicbrainz_gender}",
+            source="MusicBrainz",
+            evidence_type="neutral",
+            strength="weak",
+            detail=f"MusicBrainz records this artist's gender as {ext.musicbrainz_gender}.",
+        ))
+
+    # MusicBrainz genres
+    if ext.musicbrainz_genres:
+        evidence.append(Evidence(
+            finding=f"MusicBrainz genres: {', '.join(ext.musicbrainz_genres[:5])}",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Community-tagged genres: {', '.join(ext.musicbrainz_genres[:8])}. "
+                   "Genre tags indicate community recognition.",
+        ))
+
+    # Alternate names (Genius + MusicBrainz aliases)
+    all_aliases = list(set(ext.genius_alternate_names + ext.musicbrainz_aliases))
+    if len(all_aliases) >= 3:
+        evidence.append(Evidence(
+            finding=f"{len(all_aliases)} alternate names/aliases",
+            source="Multiple",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Known aliases: {', '.join(all_aliases[:6])}. "
+                   "Multiple aliases suggest a real artist with an established history.",
+        ))
+    elif all_aliases:
+        evidence.append(Evidence(
+            finding=f"Alias(es): {', '.join(all_aliases[:3])}",
+            source="Multiple",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Known as: {', '.join(all_aliases[:5])}.",
+        ))
+
+    return evidence
+
+
+def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze geographic spread of touring (from Setlist.fm)."""
+    evidence: list[Evidence] = []
+
+    if not ext.setlistfm_found:
+        return evidence
+
+    # Tour names indicate organized, named tours
+    if ext.setlistfm_tour_names:
+        evidence.append(Evidence(
+            finding=f"{len(ext.setlistfm_tour_names)} named tour(s)",
+            source="Setlist.fm",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Named tours: {', '.join(ext.setlistfm_tour_names[:5])}. "
+                   "Named tours indicate professional touring activity.",
+        ))
+
+    # Geographic spread
+    countries = ext.setlistfm_venue_countries
+    cities = ext.setlistfm_venue_cities
+    if len(countries) >= 5:
+        evidence.append(Evidence(
+            finding=f"Performed in {len(countries)} countries",
+            source="Setlist.fm",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"International touring across: {', '.join(countries[:8])}. "
+                   "International touring is very strong proof of a real artist.",
+        ))
+    elif len(countries) >= 2:
+        evidence.append(Evidence(
+            finding=f"Performed in {len(countries)} countries",
+            source="Setlist.fm",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Toured in: {', '.join(countries[:5])}.",
+        ))
+    elif len(cities) >= 3:
+        evidence.append(Evidence(
+            finding=f"Performed in {len(cities)} cities",
+            source="Setlist.fm",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Venues in: {', '.join(cities[:5])}.",
+        ))
+
+    return evidence
+
+
 # ---------------------------------------------------------------------------
 # Decision tree
 # ---------------------------------------------------------------------------
@@ -1162,6 +1535,9 @@ def evaluate_artist(
     all_evidence.extend(_collect_discogs_evidence(ext))
     all_evidence.extend(_collect_live_show_evidence(ext))
     all_evidence.extend(_collect_musicbrainz_evidence(ext))
+    all_evidence.extend(_collect_social_media_evidence(ext))
+    all_evidence.extend(_collect_identity_evidence(ext))
+    all_evidence.extend(_collect_touring_geography_evidence(ext))
 
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]

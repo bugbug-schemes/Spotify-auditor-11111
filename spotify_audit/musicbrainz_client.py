@@ -43,6 +43,13 @@ class MBArtist:
     labels: list[str] = field(default_factory=list)
     releases: list[MBRelease] = field(default_factory=list)
     urls: dict[str, str] = field(default_factory=dict)  # relation type -> url
+    # Expanded metadata
+    genres: list[str] = field(default_factory=list)       # community genres/tags
+    aliases: list[str] = field(default_factory=list)      # alternate names
+    isnis: list[str] = field(default_factory=list)        # International Standard Name Identifiers
+    ipis: list[str] = field(default_factory=list)         # Interested Parties Information codes
+    area: str = ""                                        # origin area (more specific than country)
+    gender: str = ""                                      # for Person type
 
 
 class MusicBrainzClient:
@@ -98,6 +105,22 @@ class MusicBrainzClient:
                 best = a
                 break
 
+        # Extract aliases from search result
+        aliases = []
+        for alias in best.get("aliases", []):
+            if isinstance(alias, dict) and alias.get("name"):
+                aliases.append(alias["name"])
+
+        # Extract genres/tags from search result
+        genres = []
+        for tag in best.get("tags", []):
+            if isinstance(tag, dict) and tag.get("name"):
+                genres.append(tag["name"])
+
+        # Extract ISNIs and IPIs
+        isnis = best.get("isnis", []) or []
+        ipis = best.get("ipis", []) or []
+
         return MBArtist(
             mbid=best.get("id", ""),
             name=best.get("name", ""),
@@ -106,6 +129,12 @@ class MusicBrainzClient:
             begin_date=best.get("life-span", {}).get("begin", ""),
             end_date=best.get("life-span", {}).get("end", ""),
             artist_type=best.get("type", ""),
+            gender=best.get("gender", "") or "",
+            area=best.get("area", {}).get("name", "") if isinstance(best.get("area"), dict) else "",
+            aliases=aliases,
+            genres=genres,
+            isnis=isnis if isinstance(isnis, list) else [],
+            ipis=ipis if isinstance(ipis, list) else [],
         )
 
     def get_releases(self, mbid: str) -> list[MBRelease]:
@@ -141,10 +170,54 @@ class MusicBrainzClient:
                 break
         return releases
 
+    def get_url_relations(self, mbid: str) -> dict[str, str]:
+        """Fetch URL relations for an artist (social media, official site, etc.)."""
+        try:
+            data = self._get(f"/artist/{mbid}", {"inc": "url-rels"})
+        except requests.HTTPError:
+            return {}
+
+        urls: dict[str, str] = {}
+        for rel in data.get("relations", []):
+            if rel.get("type") and rel.get("url", {}).get("resource"):
+                rel_type = rel["type"]
+                url = rel["url"]["resource"]
+                urls[rel_type] = url
+        return urls
+
+    def get_genres(self, mbid: str) -> list[str]:
+        """Fetch genres/tags for an artist."""
+        try:
+            data = self._get(f"/artist/{mbid}", {"inc": "genres"})
+        except requests.HTTPError:
+            return []
+
+        genres = []
+        for g in data.get("genres", []):
+            if isinstance(g, dict) and g.get("name"):
+                genres.append(g["name"])
+        return genres
+
     def enrich(self, artist: MBArtist) -> MBArtist:
-        """Populate releases and extract labels."""
+        """Populate releases, labels, URL relations, and genres."""
         if not artist.mbid:
             return artist
+
+        # Releases and labels
         artist.releases = self.get_releases(artist.mbid)
         artist.labels = list({r.label for r in artist.releases if r.label})
+
+        # URL relations (social media, official site, Wikipedia, etc.)
+        try:
+            artist.urls = self.get_url_relations(artist.mbid)
+        except Exception as exc:
+            logger.debug("MusicBrainz URL relations failed for %s: %s", artist.mbid, exc)
+
+        # Genres (if not already populated from search)
+        if not artist.genres:
+            try:
+                artist.genres = self.get_genres(artist.mbid)
+            except Exception as exc:
+                logger.debug("MusicBrainz genres failed for %s: %s", artist.mbid, exc)
+
         return artist

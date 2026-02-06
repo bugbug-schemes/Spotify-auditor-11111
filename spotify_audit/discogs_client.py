@@ -30,6 +30,14 @@ class DiscogsArtist:
     total_releases: int = 0
     formats: list[str] = field(default_factory=list)  # unique formats found
     labels: list[str] = field(default_factory=list)    # labels they've released on
+    # Populated by enrich_profile()
+    profile: str = ""                  # bio text from Discogs
+    realname: str = ""                 # real name (for solo artists)
+    social_urls: list[str] = field(default_factory=list)  # external URLs (social, website)
+    members: list[str] = field(default_factory=list)      # group members (if group)
+    groups: list[str] = field(default_factory=list)        # groups this artist belongs to
+    name_variations: list[str] = field(default_factory=list)
+    data_quality: str = ""             # "Correct", "Needs Vote", etc.
 
 
 class DiscogsClient:
@@ -74,10 +82,55 @@ class DiscogsClient:
             url=first.get("resource_url", ""),
         )
 
-    def enrich(self, artist: DiscogsArtist) -> DiscogsArtist:
-        """Check for physical releases."""
+    def enrich_profile(self, artist: DiscogsArtist) -> DiscogsArtist:
+        """Fetch artist profile: bio, real name, social URLs, members."""
         if artist.discogs_id == 0:
             return artist
+
+        data = self._get(f"/artists/{artist.discogs_id}")
+
+        artist.profile = (data.get("profile", "") or "")[:1000]
+        artist.realname = data.get("realname", "") or ""
+        artist.data_quality = data.get("data_quality", "") or ""
+
+        # External URLs (social media, official website, etc.)
+        urls = data.get("urls", [])
+        if isinstance(urls, list):
+            artist.social_urls = [u for u in urls if isinstance(u, str)]
+
+        # Members (for groups)
+        members = data.get("members", [])
+        if isinstance(members, list):
+            artist.members = [
+                m.get("name", "") for m in members
+                if isinstance(m, dict) and m.get("name")
+            ]
+
+        # Groups this artist belongs to
+        groups = data.get("groups", [])
+        if isinstance(groups, list):
+            artist.groups = [
+                g.get("name", "") for g in groups
+                if isinstance(g, dict) and g.get("name")
+            ]
+
+        # Name variations
+        namevariations = data.get("namevariations", [])
+        if isinstance(namevariations, list):
+            artist.name_variations = [n for n in namevariations if isinstance(n, str)]
+
+        return artist
+
+    def enrich(self, artist: DiscogsArtist) -> DiscogsArtist:
+        """Check for physical releases and fetch profile data."""
+        if artist.discogs_id == 0:
+            return artist
+
+        # Fetch profile (bio, social URLs, members) first
+        try:
+            self.enrich_profile(artist)
+        except Exception as exc:
+            logger.debug("Discogs profile fetch failed for %s: %s", artist.name, exc)
 
         data = self._get(f"/artists/{artist.discogs_id}/releases", {
             "per_page": 100,

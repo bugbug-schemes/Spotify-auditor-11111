@@ -44,6 +44,12 @@ class DeezerArtist:
     has_explicit: bool = False
     contributors: list[str] = field(default_factory=list)     # unique collaborator names
 
+    # Additional fields
+    radio: bool = False                                        # has Deezer radio
+    related_artist_fans: list[tuple[str, int]] = field(default_factory=list)  # [(name, nb_fan)]
+    album_release_dates: list[str] = field(default_factory=list)  # release dates per album
+    contributor_roles: dict[str, list[str]] = field(default_factory=dict)  # {name: [roles]}
+
 
 class DeezerClient:
     """Thin wrapper around the Deezer public API."""
@@ -89,14 +95,22 @@ class DeezerClient:
         if artist.deezer_id == 0:
             return artist
 
-        # --- Albums (with label info) ---
+        # Fetch full artist data for radio flag
+        try:
+            full_data = self._get(f"/artist/{artist.deezer_id}")
+            artist.radio = bool(full_data.get("radio", False))
+        except Exception as exc:
+            logger.debug("Could not fetch full artist data for %s: %s", artist.name, exc)
+
+        # --- Albums (with label info and release dates) ---
         data = self._get(f"/artist/{artist.deezer_id}/albums", {"limit": 100})
         artist.albums = data.get("data", [])
         artist.nb_album = len(artist.albums)
 
-        # Extract labels and album type breakdown
+        # Extract labels, album type breakdown, and release dates
         labels_seen: set[str] = set()
         type_counts: dict[str, int] = {}
+        release_dates: list[str] = []
         for album in artist.albums:
             if not isinstance(album, dict):
                 continue
@@ -105,8 +119,12 @@ class DeezerClient:
                 labels_seen.add(label)
             rtype = album.get("record_type", "unknown")
             type_counts[rtype] = type_counts.get(rtype, 0) + 1
+            rdate = album.get("release_date", "")
+            if rdate:
+                release_dates.append(rdate)
         artist.labels = sorted(labels_seen)
         artist.album_types = type_counts
+        artist.album_release_dates = release_dates
 
         # --- Top tracks (with duration, rank, contributors) ---
         data = self._get(f"/artist/{artist.deezer_id}/top", {"limit": 25})
@@ -116,6 +134,7 @@ class DeezerClient:
         durations: list[int] = []
         ranks: list[int] = []
         contributors_seen: set[str] = set()
+        contributor_roles: dict[str, list[str]] = {}
         has_explicit = False
 
         for track in artist.top_tracks:
@@ -132,23 +151,34 @@ class DeezerClient:
                 ranks.append(rank)
             if track.get("explicit_lyrics", False):
                 has_explicit = True
-            # Contributors (featured artists, producers)
+            # Contributors (featured artists, producers) with roles
             for contrib in track.get("contributors", []):
                 if isinstance(contrib, dict):
                     cname = contrib.get("name", "")
+                    crole = contrib.get("role", "")
                     if cname and cname.lower() != artist.name.lower():
                         contributors_seen.add(cname)
+                        if cname not in contributor_roles:
+                            contributor_roles[cname] = []
+                        if crole and crole not in contributor_roles[cname]:
+                            contributor_roles[cname].append(crole)
 
         artist.track_titles = titles
         artist.track_durations = durations
         artist.track_ranks = ranks
         artist.has_explicit = has_explicit
         artist.contributors = sorted(contributors_seen)
+        artist.contributor_roles = contributor_roles
 
-        # --- Related artists ---
+        # --- Related artists (with fan counts) ---
         try:
             data = self._get(f"/artist/{artist.deezer_id}/related", {"limit": 10})
             artist.related_artists = data.get("data", [])
+            artist.related_artist_fans = [
+                (r.get("name", ""), r.get("nb_fan", 0))
+                for r in artist.related_artists
+                if isinstance(r, dict) and r.get("name")
+            ]
         except Exception as exc:
             logger.debug("Could not fetch related artists for %s: %s", artist.name, exc)
 

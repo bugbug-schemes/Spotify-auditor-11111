@@ -28,6 +28,10 @@ class BandsintownArtist:
     upcoming_events: int = 0           # scheduled future shows
     past_events: int = 0               # historical shows
     on_tour: bool = False
+    # Social links
+    facebook_page_url: str = ""
+    mbid: str = ""                     # MusicBrainz ID
+    social_links: list[dict] = field(default_factory=list)  # [{type, url}]
 
 
 class BandsintownClient:
@@ -64,6 +68,17 @@ class BandsintownClient:
         if not isinstance(data, dict) or "error" in data:
             return None
 
+        # Parse social links
+        links = data.get("links", [])
+        social_links = []
+        if isinstance(links, list):
+            for link in links:
+                if isinstance(link, dict) and link.get("url"):
+                    social_links.append({
+                        "type": link.get("type", ""),
+                        "url": link.get("url", ""),
+                    })
+
         return BandsintownArtist(
             name=data.get("name", ""),
             url=data.get("url", ""),
@@ -71,6 +86,9 @@ class BandsintownClient:
             tracker_count=data.get("tracker_count", 0),
             upcoming_events=data.get("upcoming_event_count", 0),
             on_tour=data.get("on_tour", False),
+            facebook_page_url=data.get("facebook_page_url", "") or "",
+            mbid=data.get("mbid", "") or "",
+            social_links=social_links,
         )
 
     def get_past_events_count(self, name: str) -> int:
