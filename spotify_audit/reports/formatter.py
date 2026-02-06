@@ -1,5 +1,8 @@
 """
 Report formatters: Markdown, HTML, and JSON output.
+
+Updated to include evidence-based evaluations with red/green flags,
+platform presence, and decision trail.
 """
 
 from __future__ import annotations
@@ -9,6 +12,7 @@ from datetime import datetime, timezone
 
 from spotify_audit.config import THREAT_CATEGORIES, score_label
 from spotify_audit.scoring import PlaylistReport, ArtistReport
+from spotify_audit.evidence import ArtistEvaluation, Evidence, Verdict
 
 
 # ---------------------------------------------------------------------------
@@ -32,11 +36,12 @@ def _report_to_dict(report: PlaylistReport) -> dict:
             "is_spotify_owned": report.is_spotify_owned,
             "health_score": report.health_score,
         },
-        "summary": {
-            "verified_legit": report.verified_legit,
-            "probably_fine": report.probably_fine,
+        "verdict_summary": {
+            "verified_artists": report.verified_artists,
+            "likely_authentic": report.likely_authentic,
+            "inconclusive": report.inconclusive,
             "suspicious": report.suspicious,
-            "likely_non_authentic": report.likely_non_authentic,
+            "likely_artificial": report.likely_artificial,
         },
         "artists": [_artist_to_dict(a) for a in report.artists],
     }
@@ -46,20 +51,42 @@ def _artist_to_dict(a: ArtistReport) -> dict:
     d: dict = {
         "artist_id": a.artist_id,
         "artist_name": a.artist_name,
-        "final_score": a.final_score,
-        "label": a.label,
-        "tiers_completed": a.tiers_completed,
+        "verdict": a.verdict,
     }
-    if a.threat_category is not None:
-        d["threat_category"] = a.threat_category
-        d["threat_category_name"] = a.threat_category_name
+
+    # Evidence-based evaluation
+    ev = a.evaluation
+    if ev:
+        d["confidence"] = ev.confidence
+        d["platform_presence"] = ev.platform_presence.names()
+        d["decision_path"] = ev.decision_path
+        d["red_flags"] = [_evidence_to_dict(e) for e in ev.red_flags]
+        d["green_flags"] = [_evidence_to_dict(e) for e in ev.green_flags]
+        d["neutral_notes"] = [_evidence_to_dict(e) for e in ev.neutral_notes]
+        if ev.labels:
+            d["labels"] = ev.labels
+        if ev.contributors:
+            d["contributors"] = ev.contributors
+
+    # Legacy score data (supplementary)
+    if a.quick_score is not None:
+        d["legacy_quick_score"] = a.quick_score
+    if a.standard_score is not None:
+        d["legacy_standard_score"] = a.standard_score
     if a.quick_signals:
         d["quick_signals"] = a.quick_signals
-    if a.standard_signals:
-        d["standard_signals"] = a.standard_signals
-    if a.deep_signals:
-        d["deep_signals"] = a.deep_signals
+
     return d
+
+
+def _evidence_to_dict(e: Evidence) -> dict:
+    return {
+        "finding": e.finding,
+        "source": e.source,
+        "type": e.evidence_type,
+        "strength": e.strength,
+        "detail": e.detail,
+    }
 
 
 # ---------------------------------------------------------------------------
@@ -83,51 +110,84 @@ def to_markdown(report: PlaylistReport) -> str:
     lines.append(f"## Playlist Health Score: {report.health_score}/100")
     lines.append("")
 
-    # Category breakdown
-    lines.append("## Category Breakdown")
+    # Verdict breakdown
+    lines.append("## Verdict Breakdown")
     lines.append("")
-    lines.append(f"| Category | Count |")
-    lines.append(f"|---|---|")
-    lines.append(f"| Verified Legit (0-20) | {report.verified_legit} |")
-    lines.append(f"| Probably Fine (21-40) | {report.probably_fine} |")
-    lines.append(f"| Suspicious (41-70) | {report.suspicious} |")
-    lines.append(f"| Likely Non-Authentic (71-100) | {report.likely_non_authentic} |")
+    lines.append("| Verdict | Count |")
+    lines.append("|---|---|")
+    lines.append(f"| Verified Artist | {report.verified_artists} |")
+    lines.append(f"| Likely Authentic | {report.likely_authentic} |")
+    lines.append(f"| Inconclusive | {report.inconclusive} |")
+    lines.append(f"| Suspicious | {report.suspicious} |")
+    lines.append(f"| Likely Artificial | {report.likely_artificial} |")
     lines.append("")
 
-    # Flagged artists table
-    lines.append("## Flagged Artists (sorted by suspicion)")
+    # Artist evaluation table
+    lines.append("## Artist Evaluations")
     lines.append("")
-    lines.append("| Score | Label | Artist | Threat Category | Tiers |")
-    lines.append("|---|---|---|---|---|")
+    lines.append("| Verdict | Artist | Key Evidence | Confidence |")
+    lines.append("|---|---|---|---|")
     for a in report.artists:
-        cat = a.threat_category_name or "-"
-        tiers = ", ".join(a.tiers_completed)
-        lines.append(f"| {a.final_score} | {a.label} | {a.artist_name} | {cat} | {tiers} |")
+        ev = a.evaluation
+        if ev:
+            key_ev = _md_key_evidence(ev)
+            lines.append(f"| {ev.verdict.value} | {a.artist_name} | {key_ev} | {ev.confidence} |")
+        else:
+            lines.append(f"| {a.label} | {a.artist_name} | - | - |")
     lines.append("")
 
-    # Per-artist detail cards (only for suspicious+)
-    flagged = [a for a in report.artists if a.final_score > 40]
-    if flagged:
-        lines.append("## Detail Cards")
+    # Detailed evidence cards for all artists
+    has_evidence = [a for a in report.artists if a.evaluation]
+    if has_evidence:
+        lines.append("## Evidence Details")
         lines.append("")
-        for a in flagged:
-            lines.append(f"### {a.artist_name} — Score: {a.final_score} ({a.label})")
+        for a in has_evidence:
+            ev = a.evaluation
+            if not ev:
+                continue
+
+            lines.append(f"### {a.artist_name}")
             lines.append("")
-            if a.threat_category_name:
-                lines.append(f"**Threat category:** {a.threat_category_name}")
+            lines.append(f"**Verdict:** {ev.verdict.value} ({ev.confidence} confidence)")
+            lines.append("")
+
+            # Platform presence
+            platforms = ev.platform_presence.names()
+            if platforms:
+                lines.append(f"**Found on:** {', '.join(platforms)}")
+            lines.append("")
+
+            # Decision path
+            if ev.decision_path:
+                lines.append(f"**How we decided:** {' -> '.join(ev.decision_path)}")
                 lines.append("")
-            if a.quick_signals:
-                lines.append("**Quick Scan Signals:**")
+
+            # Red flags
+            if ev.red_flags:
+                lines.append("**Red Flags:**")
                 lines.append("")
-                lines.append("| Signal | Raw | Weight | Weighted | Detail |")
-                lines.append("|---|---|---|---|---|")
-                for s in a.quick_signals:
-                    lines.append(
-                        f"| {s['name']} | {s['raw_score']} | "
-                        f"{s['weight']:.3f} | {s['weighted_score']:.1f} | "
-                        f"{s['detail']} |"
-                    )
+                for e in ev.red_flags:
+                    lines.append(f"- [{e.strength.upper()}] {e.finding}")
+                    lines.append(f"  - {e.detail}")
                 lines.append("")
+
+            # Green flags
+            if ev.green_flags:
+                lines.append("**Green Flags:**")
+                lines.append("")
+                for e in ev.green_flags:
+                    lines.append(f"- [{e.strength.upper()}] {e.finding}")
+                    lines.append(f"  - {e.detail}")
+                lines.append("")
+
+            # Notes
+            if ev.neutral_notes:
+                lines.append("**Notes:**")
+                lines.append("")
+                for e in ev.neutral_notes:
+                    lines.append(f"- {e.finding} ({e.source})")
+                lines.append("")
+
             lines.append("---")
             lines.append("")
 
@@ -135,14 +195,28 @@ def to_markdown(report: PlaylistReport) -> str:
     return "\n".join(lines)
 
 
+def _md_key_evidence(ev: ArtistEvaluation) -> str:
+    """Short summary for the markdown table."""
+    parts: list[str] = []
+    platforms = ev.platform_presence.count()
+    if platforms >= 2:
+        parts.append(f"{platforms} platforms")
+    if ev.platform_presence.deezer_fans:
+        parts.append(f"{ev.platform_presence.deezer_fans:,} fans")
+    if ev.red_flags:
+        parts.append(f"{len(ev.red_flags)} red flags")
+    if ev.green_flags:
+        parts.append(f"{len(ev.green_flags)} green flags")
+    return ", ".join(parts) if parts else "-"
+
+
 # ---------------------------------------------------------------------------
 # HTML
 # ---------------------------------------------------------------------------
 
 def to_html(report: PlaylistReport) -> str:
-    """Minimal standalone HTML report with inline CSS."""
+    """Standalone HTML report with evidence-based styling."""
     md = to_markdown(report)
-    # Convert markdown tables and headers to simple HTML
     html_body = _md_to_html(md)
     return f"""<!DOCTYPE html>
 <html lang="en">
@@ -156,16 +230,16 @@ def to_html(report: PlaylistReport) -> str:
          background: #fafafa; }}
   h1 {{ color: #1DB954; }}
   h2 {{ border-bottom: 2px solid #1DB954; padding-bottom: .3rem; }}
+  h3 {{ color: #333; }}
   table {{ border-collapse: collapse; width: 100%; margin: 1rem 0; }}
   th, td {{ border: 1px solid #ddd; padding: .5rem .75rem; text-align: left; }}
   th {{ background: #1DB954; color: white; }}
   tr:nth-child(even) {{ background: #f2f2f2; }}
-  .score-high {{ color: #d32f2f; font-weight: bold; }}
-  .score-med  {{ color: #f57c00; }}
-  .score-low  {{ color: #388e3c; }}
   hr {{ border: none; border-top: 1px solid #ddd; margin: 1.5rem 0; }}
   code {{ background: #e8e8e8; padding: .15rem .3rem; border-radius: 3px; }}
   em {{ color: #666; }}
+  ul {{ margin: 0.5rem 0; }}
+  li {{ margin: 0.25rem 0; }}
 </style>
 </head>
 <body>
@@ -175,16 +249,17 @@ def to_html(report: PlaylistReport) -> str:
 
 
 def _md_to_html(md: str) -> str:
-    """Rough markdown-to-HTML for tables, headers, bold, code, hr, em."""
+    """Rough markdown-to-HTML for tables, headers, bold, code, hr, em, lists."""
     lines = md.split("\n")
     html: list[str] = []
     in_table = False
     is_header_row = True
+    in_list = False
 
     for line in lines:
         stripped = line.strip()
 
-        # Table separator row — skip
+        # Table separator row -- skip
         if stripped.startswith("|---") or stripped.startswith("| ---"):
             continue
 
@@ -192,6 +267,9 @@ def _md_to_html(md: str) -> str:
         if stripped.startswith("|") and stripped.endswith("|"):
             cells = [c.strip() for c in stripped.strip("|").split("|")]
             if not in_table:
+                if in_list:
+                    html.append("</ul>")
+                    in_list = False
                 html.append("<table>")
                 in_table = True
                 is_header_row = True
@@ -204,6 +282,22 @@ def _md_to_html(md: str) -> str:
         if in_table:
             html.append("</table>")
             in_table = False
+
+        # List items
+        if stripped.startswith("- "):
+            if not in_list:
+                html.append("<ul>")
+                in_list = True
+            content = stripped[2:]
+            if line.startswith("  - "):
+                html.append(f"<li style='margin-left:1.5rem;font-size:0.9em;color:#555'>{_inline(content)}</li>")
+            else:
+                html.append(f"<li>{_inline(content)}</li>")
+            continue
+
+        if in_list and not stripped.startswith("- "):
+            html.append("</ul>")
+            in_list = False
 
         if stripped.startswith("### "):
             html.append(f"<h3>{_inline(stripped[4:])}</h3>")
@@ -220,6 +314,8 @@ def _md_to_html(md: str) -> str:
 
     if in_table:
         html.append("</table>")
+    if in_list:
+        html.append("</ul>")
     return "\n".join(html)
 
 

@@ -1,8 +1,12 @@
 """
 Scoring engine.
 
-Combines signal results from each analysis tier into a final artist score,
-maps to threat categories, and handles escalation decisions.
+Combines evidence-based evaluations with legacy signal results into
+artist and playlist-level reports.
+
+The primary evaluation is now evidence-based (see evidence.py), which
+produces a Verdict + explanation instead of a simple 0-100 score.
+The legacy Quick/Standard weighted scores are retained as supplementary data.
 """
 
 from __future__ import annotations
@@ -16,6 +20,17 @@ from spotify_audit.config import (
 )
 from spotify_audit.analyzers.quick import QuickScanResult
 from spotify_audit.analyzers.standard import StandardScanResult
+from spotify_audit.evidence import ArtistEvaluation, Verdict
+
+
+# Map verdicts to sort order (most concerning first)
+_VERDICT_ORDER = {
+    Verdict.LIKELY_ARTIFICIAL: 0,
+    Verdict.SUSPICIOUS: 1,
+    Verdict.INCONCLUSIVE: 2,
+    Verdict.LIKELY_AUTHENTIC: 3,
+    Verdict.VERIFIED_ARTIST: 4,
+}
 
 
 @dataclass
@@ -24,6 +39,10 @@ class ArtistReport:
     artist_id: str
     artist_name: str
 
+    # Evidence-based evaluation (primary)
+    evaluation: ArtistEvaluation | None = None
+
+    # Legacy weighted scores (supplementary)
     quick_score: int | None = None
     standard_score: int | None = None
     deep_score: int | None = None
@@ -43,6 +62,18 @@ class ArtistReport:
     standard_signals: list[dict] = field(default_factory=list)
     deep_signals: list[dict] = field(default_factory=list)
 
+    @property
+    def verdict(self) -> str:
+        if self.evaluation:
+            return self.evaluation.verdict.value
+        return self.label
+
+    @property
+    def verdict_enum(self) -> Verdict:
+        if self.evaluation:
+            return self.evaluation.verdict
+        return Verdict.INCONCLUSIVE
+
 
 @dataclass
 class PlaylistReport:
@@ -57,10 +88,16 @@ class PlaylistReport:
     health_score: int = 0           # 0 = all fake, 100 = all legit
     artists: list[ArtistReport] = field(default_factory=list)
 
-    # Breakdown counts
+    # Evidence-based breakdown
+    verified_artists: int = 0
+    likely_authentic: int = 0
+    inconclusive: int = 0
+    suspicious: int = 0
+    likely_artificial: int = 0
+
+    # Legacy breakdown (kept for backward compatibility)
     verified_legit: int = 0
     probably_fine: int = 0
-    suspicious: int = 0
     likely_non_authentic: int = 0
 
 
@@ -71,12 +108,16 @@ class PlaylistReport:
 def finalize_artist_report(
     artist_id: str,
     artist_name: str,
+    evaluation: ArtistEvaluation | None = None,
     quick_result: QuickScanResult | None = None,
     standard_result: StandardScanResult | None = None,
     deep_result: dict | None = None,
 ) -> ArtistReport:
-    """Build an ArtistReport from whichever tiers completed."""
+    """Build an ArtistReport from evidence evaluation + scan tiers."""
     report = ArtistReport(artist_id=artist_id, artist_name=artist_name)
+
+    # Evidence-based evaluation (primary)
+    report.evaluation = evaluation
 
     if quick_result:
         report.quick_score = quick_result.score
@@ -135,7 +176,6 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
 
     signals = {s["name"]: s for s in report.quick_signals}
 
-    # Heuristic classification based on available Quick signals
     catalog = signals.get("catalog_size", {})
     cadence = signals.get("release_cadence", {})
     name_sig = signals.get("name_pattern", {})
@@ -146,22 +186,14 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
     name_raw = name_sig.get("raw_score", 0)
     duration_raw = duration.get("raw_score", 0)
 
-    # Known AI artist by name
     if name_raw >= 100:
         return 2  # Independent AI Artist
-
-    # Extreme output + uniform durations -> fraud farm
     if cadence_raw >= 65 and duration_raw >= 50:
         return 3  # AI Fraud Farm
-
-    # High catalog suspicion + playlist-driven -> PFC ghost
     if catalog_raw >= 50 and report.final_score >= 40:
         return 1  # PFC Ghost Artist
-
-    # Generic high suspicion without strong indicators
     if report.final_score >= 50:
-        return 1  # Default to PFC Ghost (most common)
-
+        return 1  # Default to PFC Ghost
     return None
 
 
@@ -178,6 +210,12 @@ def build_playlist_report(
     artist_reports: list[ArtistReport],
 ) -> PlaylistReport:
     """Aggregate individual artist reports into a playlist health report."""
+    # Sort by verdict severity (most concerning first), then by score
+    sorted_reports = sorted(
+        artist_reports,
+        key=lambda a: (_VERDICT_ORDER.get(a.verdict_enum, 2), -a.final_score),
+    )
+
     pr = PlaylistReport(
         playlist_name=playlist_name,
         playlist_id=playlist_id,
@@ -185,9 +223,24 @@ def build_playlist_report(
         total_tracks=total_tracks,
         total_unique_artists=len(artist_reports),
         is_spotify_owned=is_spotify_owned,
-        artists=sorted(artist_reports, key=lambda a: a.final_score, reverse=True),
+        artists=sorted_reports,
     )
 
+    # Evidence-based breakdown
+    for a in artist_reports:
+        v = a.verdict_enum
+        if v == Verdict.VERIFIED_ARTIST:
+            pr.verified_artists += 1
+        elif v == Verdict.LIKELY_AUTHENTIC:
+            pr.likely_authentic += 1
+        elif v == Verdict.INCONCLUSIVE:
+            pr.inconclusive += 1
+        elif v == Verdict.SUSPICIOUS:
+            pr.suspicious += 1
+        elif v == Verdict.LIKELY_ARTIFICIAL:
+            pr.likely_artificial += 1
+
+    # Legacy breakdown (from weighted score)
     for a in artist_reports:
         if a.final_score <= 20:
             pr.verified_legit += 1
@@ -198,10 +251,20 @@ def build_playlist_report(
         else:
             pr.likely_non_authentic += 1
 
-    # Health score: inverse of average suspicion
+    # Health score: based on evidence verdicts
     if artist_reports:
-        avg_suspicion = sum(a.final_score for a in artist_reports) / len(artist_reports)
-        pr.health_score = int(max(0, min(100, 100 - avg_suspicion)))
+        # Weight: Verified=100, LikelyAuth=85, Inconclusive=50, Suspicious=25, LikelyArtificial=0
+        verdict_health = {
+            Verdict.VERIFIED_ARTIST: 100,
+            Verdict.LIKELY_AUTHENTIC: 85,
+            Verdict.INCONCLUSIVE: 50,
+            Verdict.SUSPICIOUS: 25,
+            Verdict.LIKELY_ARTIFICIAL: 0,
+        }
+        total_health = sum(
+            verdict_health.get(a.verdict_enum, 50) for a in artist_reports
+        )
+        pr.health_score = int(total_health / len(artist_reports))
     else:
         pr.health_score = 100
 

@@ -20,6 +20,7 @@ from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 from rich.table import Table
 from rich.panel import Panel
+from rich.text import Text
 
 from spotify_audit.config import AuditConfig
 from spotify_audit.spotify_client import SpotifyClient, ArtistInfo
@@ -32,6 +33,8 @@ from spotify_audit.bandsintown_client import BandsintownClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, StandardScanResult
+from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict
+from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
     finalize_artist_report,
     build_playlist_report,
@@ -58,55 +61,237 @@ def _build_config() -> AuditConfig:
     )
 
 
-def _color_for_score(score: int) -> str:
-    if score <= 20:
-        return "green"
-    if score <= 40:
-        return "yellow"
-    if score <= 70:
-        return "dark_orange"
-    return "red"
+# ---------------------------------------------------------------------------
+# Verdict colors and display
+# ---------------------------------------------------------------------------
+
+_VERDICT_COLORS = {
+    Verdict.VERIFIED_ARTIST: "green",
+    Verdict.LIKELY_AUTHENTIC: "bright_green",
+    Verdict.INCONCLUSIVE: "yellow",
+    Verdict.SUSPICIOUS: "dark_orange",
+    Verdict.LIKELY_ARTIFICIAL: "red",
+}
+
+_VERDICT_ICONS = {
+    Verdict.VERIFIED_ARTIST: "[green]OK[/green]",
+    Verdict.LIKELY_AUTHENTIC: "[bright_green]OK[/bright_green]",
+    Verdict.INCONCLUSIVE: "[yellow]??[/yellow]",
+    Verdict.SUSPICIOUS: "[dark_orange]!![/dark_orange]",
+    Verdict.LIKELY_ARTIFICIAL: "[red]XX[/red]",
+}
 
 
-def _render_summary_table(report: PlaylistReport) -> None:
-    """Rich table summarizing the playlist."""
+def _color_for_verdict(verdict: Verdict) -> str:
+    return _VERDICT_COLORS.get(verdict, "white")
+
+
+def _render_summary_table(report: PlaylistReport, blocklist_report: BlocklistReport | None = None) -> None:
+    """Rich output summarizing the playlist with evidence-based verdicts."""
     console.print()
-    health_color = _color_for_score(100 - report.health_score)
+
+    # Health score panel
+    health = report.health_score
+    if health >= 80:
+        health_color = "green"
+    elif health >= 60:
+        health_color = "yellow"
+    elif health >= 40:
+        health_color = "dark_orange"
+    else:
+        health_color = "red"
+
     console.print(Panel(
-        f"[bold]Playlist Health Score: [{health_color}]{report.health_score}/100[/{health_color}][/bold]",
+        f"[bold]Playlist Health Score: [{health_color}]{health}/100[/{health_color}][/bold]",
         title=f"[bold green]{report.playlist_name}[/bold green]",
         subtitle=f"Owner: {report.owner} | Tracks: {report.total_tracks} | Artists: {report.total_unique_artists}",
     ))
 
-    # Breakdown
-    breakdown = Table(title="Category Breakdown", show_header=True)
-    breakdown.add_column("Category", style="bold")
+    # Verdict breakdown
+    breakdown = Table(title="Verdict Breakdown", show_header=True)
+    breakdown.add_column("Verdict", style="bold")
     breakdown.add_column("Count", justify="right")
-    breakdown.add_row("[green]Verified Legit (0-20)[/green]", str(report.verified_legit))
-    breakdown.add_row("[yellow]Probably Fine (21-40)[/yellow]", str(report.probably_fine))
-    breakdown.add_row("[dark_orange]Suspicious (41-70)[/dark_orange]", str(report.suspicious))
-    breakdown.add_row("[red]Likely Non-Authentic (71-100)[/red]", str(report.likely_non_authentic))
+    breakdown.add_row(
+        "[green]Verified Artist[/green]",
+        str(report.verified_artists),
+    )
+    breakdown.add_row(
+        "[bright_green]Likely Authentic[/bright_green]",
+        str(report.likely_authentic),
+    )
+    breakdown.add_row(
+        "[yellow]Inconclusive[/yellow]",
+        str(report.inconclusive),
+    )
+    breakdown.add_row(
+        "[dark_orange]Suspicious[/dark_orange]",
+        str(report.suspicious),
+    )
+    breakdown.add_row(
+        "[red]Likely Artificial[/red]",
+        str(report.likely_artificial),
+    )
     console.print(breakdown)
 
-    # Artist table
+    # Artist verdict table
     if report.artists:
-        artist_table = Table(title="Artists by Suspicion Score", show_header=True)
-        artist_table.add_column("Score", justify="right", width=6)
-        artist_table.add_column("Label", width=20)
+        artist_table = Table(title="Artist Evaluations", show_header=True)
+        artist_table.add_column("", width=3)  # icon
+        artist_table.add_column("Verdict", width=20)
         artist_table.add_column("Artist", min_width=20)
-        artist_table.add_column("Threat Category", width=22)
-        artist_table.add_column("Tiers", width=18)
+        artist_table.add_column("Key Evidence", min_width=30)
+        artist_table.add_column("Conf.", width=6)
 
         for a in report.artists:
-            color = _color_for_score(a.final_score)
+            ev = a.evaluation
+            if not ev:
+                artist_table.add_row(
+                    "[yellow]??[/yellow]",
+                    "[yellow]No evaluation[/yellow]",
+                    a.artist_name,
+                    "-",
+                    "-",
+                )
+                continue
+
+            color = _color_for_verdict(ev.verdict)
+            icon = _VERDICT_ICONS.get(ev.verdict, "")
+
+            # Show the most important evidence as a short summary
+            key_evidence = _summarize_key_evidence(ev)
+
             artist_table.add_row(
-                f"[{color}]{a.final_score}[/{color}]",
-                f"[{color}]{a.label}[/{color}]",
+                icon,
+                f"[{color}]{ev.verdict.value}[/{color}]",
                 a.artist_name,
-                a.threat_category_name or "-",
-                ", ".join(a.tiers_completed),
+                key_evidence,
+                ev.confidence,
             )
         console.print(artist_table)
+
+    # Show detailed evidence for suspicious/inconclusive/artificial artists
+    flagged = [
+        a for a in report.artists
+        if a.evaluation and a.evaluation.verdict in (
+            Verdict.SUSPICIOUS, Verdict.LIKELY_ARTIFICIAL, Verdict.INCONCLUSIVE,
+        )
+    ]
+    if flagged:
+        console.print()
+        console.print("[bold]Detailed Evidence for Flagged Artists:[/bold]")
+        for a in flagged:
+            _render_evidence_card(a)
+
+    # Blocklist intelligence
+    if blocklist_report and blocklist_report.has_suggestions:
+        console.print()
+        _render_blocklist_report(blocklist_report)
+
+
+def _summarize_key_evidence(ev: ArtistEvaluation) -> str:
+    """Build a short summary of the most important evidence."""
+    parts: list[str] = []
+
+    # Show platform presence count
+    platforms = ev.platform_presence.count()
+    if platforms >= 2:
+        parts.append(f"{platforms} platforms")
+    if ev.platform_presence.deezer_fans:
+        parts.append(f"{ev.platform_presence.deezer_fans:,} fans")
+
+    # Count flags
+    if ev.red_flags:
+        strong_reds = len(ev.strong_red_flags)
+        if strong_reds:
+            parts.append(f"[red]{strong_reds} strong red flag{'s' if strong_reds != 1 else ''}[/red]")
+        else:
+            parts.append(f"[dark_orange]{len(ev.red_flags)} red flag{'s' if len(ev.red_flags) != 1 else ''}[/dark_orange]")
+    if ev.green_flags:
+        parts.append(f"[green]{len(ev.green_flags)} green flag{'s' if len(ev.green_flags) != 1 else ''}[/green]")
+
+    return ", ".join(parts) if parts else "-"
+
+
+def _render_evidence_card(a: ArtistReport) -> None:
+    """Render a detailed evidence card for a single artist."""
+    ev = a.evaluation
+    if not ev:
+        return
+
+    color = _color_for_verdict(ev.verdict)
+    console.print()
+    console.print(Panel(
+        _build_evidence_text(ev),
+        title=f"[bold]{a.artist_name}[/bold] — [{color}]{ev.verdict.value}[/{color}] ({ev.confidence} confidence)",
+        border_style=color,
+    ))
+
+
+def _build_evidence_text(ev: ArtistEvaluation) -> str:
+    """Build rich text showing all evidence for an artist."""
+    lines: list[str] = []
+
+    # Platform presence
+    platforms = ev.platform_presence.names()
+    if platforms:
+        lines.append(f"[bold]Found on:[/bold] {', '.join(platforms)}")
+    else:
+        lines.append("[bold]Found on:[/bold] No verified platforms")
+    lines.append("")
+
+    # Decision path
+    if ev.decision_path:
+        lines.append("[bold]Decision:[/bold] " + " -> ".join(ev.decision_path))
+        lines.append("")
+
+    # Red flags
+    if ev.red_flags:
+        lines.append("[bold red]Red Flags:[/bold red]")
+        for e in ev.red_flags:
+            strength_icon = {"strong": "!!!", "moderate": "!!", "weak": "!"}
+            icon = strength_icon.get(e.strength, "!")
+            lines.append(f"  [{e.strength}] {icon} {e.finding}")
+            lines.append(f"      [dim]{e.detail}[/dim]")
+        lines.append("")
+
+    # Green flags
+    if ev.green_flags:
+        lines.append("[bold green]Green Flags:[/bold green]")
+        for e in ev.green_flags:
+            strength_icon = {"strong": "+++", "moderate": "++", "weak": "+"}
+            icon = strength_icon.get(e.strength, "+")
+            lines.append(f"  [{e.strength}] {icon} {e.finding}")
+            lines.append(f"      [dim]{e.detail}[/dim]")
+        lines.append("")
+
+    # Neutral notes (brief)
+    if ev.neutral_notes:
+        lines.append("[bold]Notes:[/bold]")
+        for e in ev.neutral_notes:
+            lines.append(f"  - {e.finding} ({e.source})")
+
+    return "\n".join(lines)
+
+
+def _render_blocklist_report(bl_report: BlocklistReport) -> None:
+    """Show blocklist intelligence from the scan."""
+    console.print(Panel(
+        "[bold]Blocklist Intelligence[/bold]\n"
+        "Based on data from this scan, the following blocklist additions are suggested:",
+        border_style="cyan",
+    ))
+
+    for suggestion in bl_report.suggestions:
+        confidence_color = {"high": "red", "medium": "yellow", "low": "dim"}.get(
+            suggestion.confidence, "dim"
+        )
+        console.print(
+            f"  [{confidence_color}]{suggestion.confidence.upper()}[/{confidence_color}] "
+            f"Add [bold]{suggestion.value}[/bold] to {suggestion.blocklist}"
+        )
+        console.print(f"       Reason: {suggestion.reason}")
+        if suggestion.seen_on:
+            console.print(f"       Seen on: {', '.join(suggestion.seen_on[:5])}")
 
 
 # ---------------------------------------------------------------------------
@@ -157,14 +342,14 @@ def main(
     cache = None if no_cache else Cache(config.db_path, config.cache_ttl_days)
 
     try:
-        playlist_report = _run_audit(client, cache, config, playlist_url, tier)
+        playlist_report, blocklist_report = _run_audit(client, cache, config, playlist_url, tier)
     finally:
         client.close()
         if cache:
             cache.close()
 
     # Terminal output
-    _render_summary_table(playlist_report)
+    _render_summary_table(playlist_report, blocklist_report)
 
     # File / formatted output
     if fmt == "json":
@@ -196,7 +381,7 @@ def _resolve_artist_by_name(
     # For combined artist names, search the first (primary) artist
     search_name = name.split(",")[0].strip() if "," in name else name
 
-    # Strategy 1: Deezer search → real artist data (fast, no auth needed)
+    # Strategy 1: Deezer search -> real artist data (fast, no auth needed)
     try:
         dz = deezer_client.search_artist(search_name)
         if dz:
@@ -234,7 +419,7 @@ def _resolve_artist_by_name(
                         if isinstance(a, dict)
                     ),
                     release_dates=release_dates,
-                    track_durations=[d * 1000 for d in dz.track_durations],  # sec → ms
+                    track_durations=[d * 1000 for d in dz.track_durations],  # sec -> ms
                     labels=dz.labels,
                     track_titles=dz.track_titles,
                     track_ranks=dz.track_ranks,
@@ -254,7 +439,7 @@ def _resolve_artist_by_name(
         logger.debug("Deezer search failed for '%s': %s", name, exc)
 
     # Strategy 2: name-only fallback
-    logger.warning("Could not resolve '%s' — using name-only fallback", name)
+    logger.warning("Could not resolve '%s' -- using name-only fallback", name)
     return ArtistInfo(artist_id=f"name:{name}", name=name)
 
 
@@ -264,15 +449,15 @@ def _run_audit(
     config: AuditConfig,
     playlist_url: str,
     max_tier: str,
-) -> PlaylistReport:
-    """Core workflow: fetch playlist -> quick scan all -> escalate as needed."""
+) -> tuple[PlaylistReport, BlocklistReport | None]:
+    """Core workflow: fetch playlist -> evaluate with evidence -> escalate as needed."""
 
     # 1. Fetch playlist
     with console.status("[bold green]Fetching playlist from Spotify..."):
         meta, tracks = client.get_playlist(playlist_url)
 
     console.print(
-        f"Loaded [bold]{meta.name}[/bold] — "
+        f"Loaded [bold]{meta.name}[/bold] -- "
         f"{meta.total_tracks} tracks by {meta.owner}"
     )
 
@@ -280,7 +465,7 @@ def _run_audit(
     deezer_client = DeezerClient(delay=0.3)
     mb_client = MusicBrainzClient(delay=1.1)
 
-    # Standard-tier clients (instantiate even if not used — they check .enabled)
+    # Standard-tier clients
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
@@ -308,9 +493,8 @@ def _run_audit(
                 "BANDSINTOWN_APP_ID in .env for richer analysis.[/yellow]"
             )
 
-    # 2. Deduplicate artists — prefer IDs, fall back to names
+    # 2. Deduplicate artists -- prefer IDs, fall back to names
     artist_ids = list({aid for t in tracks for aid in t.artist_ids if aid})
-    # If no IDs found (embed endpoint may omit them), collect unique names
     artist_names_only: list[str] = []
     if not artist_ids:
         artist_names_only = list({
@@ -318,20 +502,21 @@ def _run_audit(
         })
         console.print(
             f"Found [bold]{len(artist_names_only)}[/bold] unique artists "
-            f"[dim](by name — embed data had no artist IDs)[/dim]"
+            f"[dim](by name -- embed data had no artist IDs)[/dim]"
         )
     else:
         console.print(f"Found [bold]{len(artist_ids)}[/bold] unique artists")
 
     # Build a unified lookup list: (key, is_id)
-    # key is either a Spotify artist ID or an artist name
     artist_keys: list[tuple[str, bool]] = []
     if artist_ids:
         artist_keys = [(aid, True) for aid in artist_ids]
     else:
         artist_keys = [(name, False) for name in artist_names_only]
 
-    # 3. Fetch each artist's data (with progress bar + polite delays)
+    # 3. Fetch each artist's data + run evidence evaluation
+    artist_infos: dict[str, ArtistInfo] = {}       # key -> ArtistInfo
+    evaluations: dict[str, ArtistEvaluation] = {}   # key -> evidence evaluation
     quick_results: dict[str, QuickScanResult] = {}
     artist_reports: list[ArtistReport] = []
     resolved_count = 0
@@ -346,7 +531,7 @@ def _run_audit(
         console=console,
     ) as progress:
         task = progress.add_task(
-            "Scanning artists...", total=len(artist_keys),
+            "Analyzing artists...", total=len(artist_keys),
         )
 
         for key, is_id in artist_keys:
@@ -373,7 +558,6 @@ def _run_audit(
                 artist = client.get_artist_info(key)
                 resolved_count += 1
             else:
-                # Resolve by name via Deezer
                 artist = _resolve_artist_by_name(
                     key, client, deezer_client, mb_client,
                 )
@@ -382,7 +566,14 @@ def _run_audit(
                 else:
                     resolved_count += 1
 
-            # Run quick scan
+            # Store ArtistInfo for evidence evaluation
+            artist_infos[cache_key] = artist
+
+            # Run evidence-based evaluation
+            ev = evaluate_artist(artist)
+            evaluations[cache_key] = ev
+
+            # Run legacy quick scan (still useful for signal details)
             qr = quick_scan(artist, config.quick_weights)
             quick_results[cache_key] = qr
 
@@ -433,7 +624,6 @@ def _run_audit(
             )
 
             for artist_id, qr in escalate_candidates:
-                # Check cache
                 if cache:
                     cached = cache.get(artist_id, "standard")
                     if cached:
@@ -482,23 +672,28 @@ def _run_audit(
 
     if escalated_deep:
         console.print(
-            f"[yellow]→ {escalated_deep} artists would escalate "
+            f"[yellow]-> {escalated_deep} artists would escalate "
             f"to Deep tier (not yet implemented)[/yellow]"
         )
 
-    # 6. Build reports
+    # 6. Build reports (with evidence evaluations)
     for artist_id, qr in quick_results.items():
         report = finalize_artist_report(
             artist_id=artist_id,
             artist_name=qr.artist_name,
+            evaluation=evaluations.get(artist_id),
             quick_result=qr,
             standard_result=standard_results.get(artist_id),
             deep_result=None,
         )
         artist_reports.append(report)
 
-    # 7. Build playlist-level report
-    return build_playlist_report(
+    # 7. Run blocklist analysis
+    all_evaluations = list(evaluations.values())
+    blocklist_report = analyze_for_blocklist(all_evaluations) if all_evaluations else None
+
+    # 8. Build playlist-level report
+    playlist_report = build_playlist_report(
         playlist_name=meta.name,
         playlist_id=meta.playlist_id,
         owner=meta.owner,
@@ -506,3 +701,5 @@ def _run_audit(
         is_spotify_owned=meta.is_spotify_owned,
         artist_reports=artist_reports,
     )
+
+    return playlist_report, blocklist_report
