@@ -26,6 +26,48 @@ logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
+# External API results container (passed in from CLI)
+# ---------------------------------------------------------------------------
+
+@dataclass
+class ExternalData:
+    """Aggregated results from Standard-tier API lookups.
+    Each field is None if the lookup wasn't performed, or holds the result."""
+    # Genius
+    genius_found: bool = False
+    genius_song_count: int = 0
+    genius_description: str = ""
+
+    # Discogs
+    discogs_found: bool = False
+    discogs_physical_releases: int = 0
+    discogs_digital_releases: int = 0
+    discogs_total_releases: int = 0
+    discogs_formats: list[str] = field(default_factory=list)
+    discogs_labels: list[str] = field(default_factory=list)
+
+    # Setlist.fm
+    setlistfm_found: bool = False
+    setlistfm_total_shows: int = 0
+    setlistfm_first_show: str = ""
+    setlistfm_last_show: str = ""
+    setlistfm_venues: list[str] = field(default_factory=list)
+
+    # Bandsintown
+    bandsintown_found: bool = False
+    bandsintown_past_events: int = 0
+    bandsintown_upcoming_events: int = 0
+    bandsintown_tracker_count: int = 0
+
+    # MusicBrainz
+    musicbrainz_found: bool = False
+    musicbrainz_type: str = ""       # "Person", "Group", etc.
+    musicbrainz_country: str = ""
+    musicbrainz_begin_date: str = ""
+    musicbrainz_labels: list[str] = field(default_factory=list)
+
+
+# ---------------------------------------------------------------------------
 # Data structures
 # ---------------------------------------------------------------------------
 
@@ -606,6 +648,349 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
 
 
 # ---------------------------------------------------------------------------
+# External API evidence collectors
+# ---------------------------------------------------------------------------
+
+def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Genius songwriter/producer credit data."""
+    evidence: list[Evidence] = []
+
+    if not ext.genius_found:
+        evidence.append(Evidence(
+            finding="Not found on Genius",
+            source="Genius",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="Artist has no page on Genius. Real songwriters and performers "
+                   "almost always have lyrics/credits on Genius. Ghost and AI artists "
+                   "typically have no Genius presence.",
+        ))
+        return evidence
+
+    # Found on Genius
+    if ext.genius_song_count >= 20:
+        evidence.append(Evidence(
+            finding=f"{ext.genius_song_count} songs on Genius",
+            source="Genius",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Artist has {ext.genius_song_count} songs with lyrics/credits on Genius. "
+                   "This is strong evidence of a real artist with legitimate songwriting credits.",
+        ))
+    elif ext.genius_song_count >= 5:
+        evidence.append(Evidence(
+            finding=f"{ext.genius_song_count} songs on Genius",
+            source="Genius",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Artist has {ext.genius_song_count} songs on Genius — real songwriting credits exist.",
+        ))
+    elif ext.genius_song_count >= 1:
+        evidence.append(Evidence(
+            finding=f"{ext.genius_song_count} song(s) on Genius",
+            source="Genius",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Found {ext.genius_song_count} song(s) on Genius. Minimal but present.",
+        ))
+    else:
+        evidence.append(Evidence(
+            finding="Found on Genius but 0 songs",
+            source="Genius",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="Artist has a Genius page but no songs with lyrics or credits. "
+                   "This can happen with very new artists or placeholder profiles.",
+        ))
+
+    if ext.genius_description:
+        evidence.append(Evidence(
+            finding="Has Genius artist bio",
+            source="Genius",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Genius bio: \"{ext.genius_description[:100]}{'...' if len(ext.genius_description) > 100 else ''}\"",
+        ))
+
+    return evidence
+
+
+def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Discogs physical release data."""
+    evidence: list[Evidence] = []
+
+    if not ext.discogs_found:
+        evidence.append(Evidence(
+            finding="Not found on Discogs",
+            source="Discogs",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="No Discogs profile found. Discogs catalogs physical music releases "
+                   "(vinyl, CD, cassette). Ghost and AI artists virtually never have "
+                   "physical releases.",
+        ))
+        return evidence
+
+    if ext.discogs_total_releases == 0:
+        evidence.append(Evidence(
+            finding="Found on Discogs but 0 releases",
+            source="Discogs",
+            evidence_type="red_flag",
+            strength="weak",
+            detail="Artist exists on Discogs but has no cataloged releases.",
+        ))
+        return evidence
+
+    # Physical releases are one of the strongest authenticity signals
+    if ext.discogs_physical_releases >= 10:
+        evidence.append(Evidence(
+            finding=f"{ext.discogs_physical_releases} physical releases on Discogs",
+            source="Discogs",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Artist has {ext.discogs_physical_releases} physical releases "
+                   f"(formats: {', '.join(ext.discogs_formats[:5])}). "
+                   "Pressing vinyl or manufacturing CDs requires real investment — "
+                   "this is very strong evidence of a legitimate artist.",
+        ))
+    elif ext.discogs_physical_releases >= 3:
+        evidence.append(Evidence(
+            finding=f"{ext.discogs_physical_releases} physical releases on Discogs",
+            source="Discogs",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Artist has {ext.discogs_physical_releases} physical releases "
+                   f"({', '.join(ext.discogs_formats[:5])}). Physical media is strong proof of legitimacy.",
+        ))
+    elif ext.discogs_physical_releases >= 1:
+        evidence.append(Evidence(
+            finding=f"{ext.discogs_physical_releases} physical release(s) on Discogs",
+            source="Discogs",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"At least {ext.discogs_physical_releases} physical release exists.",
+        ))
+    elif ext.discogs_digital_releases > 0:
+        evidence.append(Evidence(
+            finding=f"Discogs: {ext.discogs_digital_releases} digital-only releases, no physical",
+            source="Discogs",
+            evidence_type="neutral",
+            strength="weak",
+            detail=f"Found on Discogs with {ext.discogs_digital_releases} digital releases "
+                   "but no physical pressings. Not conclusive either way.",
+        ))
+
+    # Discogs labels
+    if ext.discogs_labels:
+        pfc_labels = [l.lower() for l in pfc_distributors()]
+        discogs_pfc_matches = [l for l in ext.discogs_labels if l.lower() in pfc_labels]
+        if discogs_pfc_matches:
+            evidence.append(Evidence(
+                finding=f"Discogs labels match PFC blocklist: {', '.join(discogs_pfc_matches)}",
+                source="Discogs",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Discogs confirms distribution by PFC-associated label(s): "
+                       f"{', '.join(discogs_pfc_matches)}.",
+            ))
+        elif len(ext.discogs_labels) >= 2:
+            evidence.append(Evidence(
+                finding=f"Released on {len(ext.discogs_labels)} Discogs labels",
+                source="Discogs",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Labels: {', '.join(ext.discogs_labels[:5])}.",
+            ))
+
+    return evidence
+
+
+def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze concert/touring history from Setlist.fm and Bandsintown."""
+    evidence: list[Evidence] = []
+    total_shows = ext.setlistfm_total_shows + ext.bandsintown_past_events
+
+    # Setlist.fm
+    if ext.setlistfm_found:
+        if ext.setlistfm_total_shows >= 50:
+            date_range = ""
+            if ext.setlistfm_first_show and ext.setlistfm_last_show:
+                date_range = f" ({ext.setlistfm_first_show} to {ext.setlistfm_last_show})"
+            venues_str = ""
+            if ext.setlistfm_venues:
+                venues_str = f" Notable venues: {', '.join(ext.setlistfm_venues[:3])}."
+            evidence.append(Evidence(
+                finding=f"{ext.setlistfm_total_shows} concerts on Setlist.fm",
+                source="Setlist.fm",
+                evidence_type="green_flag",
+                strength="strong",
+                detail=f"Setlist.fm records {ext.setlistfm_total_shows} live performances{date_range}."
+                       f"{venues_str} "
+                       "Extensive concert history is the strongest possible proof of "
+                       "a real artist — AI and ghost artists don't perform live.",
+            ))
+        elif ext.setlistfm_total_shows >= 10:
+            evidence.append(Evidence(
+                finding=f"{ext.setlistfm_total_shows} concerts on Setlist.fm",
+                source="Setlist.fm",
+                evidence_type="green_flag",
+                strength="strong",
+                detail=f"Artist has {ext.setlistfm_total_shows} recorded live performances. "
+                       "Concert history is very strong proof of a real artist.",
+            ))
+        elif ext.setlistfm_total_shows >= 1:
+            evidence.append(Evidence(
+                finding=f"{ext.setlistfm_total_shows} concert(s) on Setlist.fm",
+                source="Setlist.fm",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"At least {ext.setlistfm_total_shows} live performance(s) recorded.",
+            ))
+        else:
+            evidence.append(Evidence(
+                finding="Found on Setlist.fm but 0 concerts",
+                source="Setlist.fm",
+                evidence_type="neutral",
+                strength="weak",
+                detail="Artist exists on Setlist.fm but no performances are recorded.",
+            ))
+    else:
+        evidence.append(Evidence(
+            finding="Not found on Setlist.fm",
+            source="Setlist.fm",
+            evidence_type="red_flag",
+            strength="weak",
+            detail="No concert history found on Setlist.fm. Could be a new or "
+                   "studio-only artist, or could indicate a non-performing entity.",
+        ))
+
+    # Bandsintown
+    if ext.bandsintown_found:
+        parts: list[str] = []
+        if ext.bandsintown_past_events > 0:
+            parts.append(f"{ext.bandsintown_past_events} past events")
+        if ext.bandsintown_upcoming_events > 0:
+            parts.append(f"{ext.bandsintown_upcoming_events} upcoming")
+        if ext.bandsintown_tracker_count > 0:
+            parts.append(f"{ext.bandsintown_tracker_count:,} trackers")
+
+        if ext.bandsintown_past_events >= 10:
+            evidence.append(Evidence(
+                finding=f"Bandsintown: {', '.join(parts)}",
+                source="Bandsintown",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"Active touring presence with {ext.bandsintown_past_events} past events "
+                       f"and {ext.bandsintown_tracker_count:,} trackers.",
+            ))
+        elif ext.bandsintown_past_events >= 1 or ext.bandsintown_tracker_count >= 100:
+            evidence.append(Evidence(
+                finding=f"Bandsintown: {', '.join(parts)}",
+                source="Bandsintown",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Some touring presence: {', '.join(parts)}.",
+            ))
+        elif ext.bandsintown_tracker_count > 0:
+            evidence.append(Evidence(
+                finding=f"Bandsintown: {ext.bandsintown_tracker_count:,} trackers, 0 events",
+                source="Bandsintown",
+                evidence_type="neutral",
+                strength="weak",
+                detail="Artist is tracked on Bandsintown but has no recorded events.",
+            ))
+
+    # Combined live show assessment
+    if total_shows == 0 and not ext.setlistfm_found and not ext.bandsintown_found:
+        evidence.append(Evidence(
+            finding="No live performance history found anywhere",
+            source="Live shows",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="No concerts found on Setlist.fm or Bandsintown. While some real "
+                   "artists are studio-only, the absence of any live history is a "
+                   "common pattern for ghost and AI-generated artists.",
+        ))
+
+    return evidence
+
+
+def _collect_musicbrainz_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze MusicBrainz metadata richness."""
+    evidence: list[Evidence] = []
+
+    if not ext.musicbrainz_found:
+        evidence.append(Evidence(
+            finding="Not found on MusicBrainz",
+            source="MusicBrainz",
+            evidence_type="red_flag",
+            strength="weak",
+            detail="No MusicBrainz entry found. MusicBrainz is a comprehensive "
+                   "open-source music database. Established artists usually have entries.",
+        ))
+        return evidence
+
+    # Found — assess metadata richness
+    richness_parts: list[str] = []
+    if ext.musicbrainz_type:
+        richness_parts.append(f"type: {ext.musicbrainz_type}")
+    if ext.musicbrainz_country:
+        richness_parts.append(f"country: {ext.musicbrainz_country}")
+    if ext.musicbrainz_begin_date:
+        richness_parts.append(f"active since {ext.musicbrainz_begin_date}")
+
+    richness_score = sum([
+        bool(ext.musicbrainz_type),
+        bool(ext.musicbrainz_country),
+        bool(ext.musicbrainz_begin_date),
+        len(ext.musicbrainz_labels) >= 1,
+    ])
+
+    if richness_score >= 3:
+        evidence.append(Evidence(
+            finding=f"Rich MusicBrainz profile ({', '.join(richness_parts)})",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"MusicBrainz has detailed metadata: {', '.join(richness_parts)}. "
+                   f"Labels: {', '.join(ext.musicbrainz_labels[:3]) if ext.musicbrainz_labels else 'none listed'}. "
+                   "Well-documented profiles indicate an established artist.",
+        ))
+    elif richness_score >= 1:
+        evidence.append(Evidence(
+            finding=f"MusicBrainz entry ({', '.join(richness_parts) if richness_parts else 'minimal data'})",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Found on MusicBrainz with some metadata: {', '.join(richness_parts)}.",
+        ))
+    else:
+        evidence.append(Evidence(
+            finding="Sparse MusicBrainz entry",
+            source="MusicBrainz",
+            evidence_type="neutral",
+            strength="weak",
+            detail="Found on MusicBrainz but with minimal metadata. Could be a stub entry.",
+        ))
+
+    # MusicBrainz labels vs PFC blocklist
+    if ext.musicbrainz_labels:
+        pfc_labels = [l.lower() for l in pfc_distributors()]
+        mb_pfc_matches = [l for l in ext.musicbrainz_labels if l.lower() in pfc_labels]
+        if mb_pfc_matches:
+            evidence.append(Evidence(
+                finding=f"MusicBrainz labels match PFC blocklist: {', '.join(mb_pfc_matches)}",
+                source="MusicBrainz",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"MusicBrainz confirms distribution by PFC-associated label(s): "
+                       f"{', '.join(mb_pfc_matches)}.",
+            ))
+
+    return evidence
+
+
+# ---------------------------------------------------------------------------
 # Decision tree
 # ---------------------------------------------------------------------------
 
@@ -689,17 +1074,78 @@ def _decide_verdict(
 # Main evaluation entry point
 # ---------------------------------------------------------------------------
 
-def evaluate_artist(artist: ArtistInfo) -> ArtistEvaluation:
+def evaluate_artist(
+    artist: ArtistInfo,
+    external: ExternalData | None = None,
+) -> ArtistEvaluation:
     """Run the full evidence-based evaluation on a single artist.
 
     Collects evidence from all available data sources, then walks
     the decision tree to produce a verdict with explanation.
+
+    Args:
+        artist: Core artist data (from Deezer/Spotify)
+        external: Optional results from Standard-tier API lookups
+                  (Genius, Discogs, Setlist.fm, Bandsintown, MusicBrainz)
     """
+    ext = external or ExternalData()
     all_evidence: list[Evidence] = []
     decision_path: list[str] = []
 
-    # Collect evidence from each dimension
+    # Collect evidence from core data (Deezer/Spotify)
     presence, platform_ev = _collect_platform_evidence(artist)
+
+    # Update platform presence with external API results
+    if ext.genius_found:
+        presence.genius = True
+    if ext.discogs_found:
+        presence.discogs = True
+    if ext.setlistfm_found:
+        presence.setlistfm = True
+    if ext.bandsintown_found:
+        presence.bandsintown = True
+    if ext.musicbrainz_found:
+        presence.musicbrainz = True
+
+    # Re-generate platform evidence with updated counts
+    platforms_found = presence.count()
+    platform_ev = []  # clear and rebuild
+    if platforms_found >= 5:
+        platform_ev.append(Evidence(
+            finding=f"Found on {platforms_found} platforms",
+            source="Cross-platform",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Artist verified on: {', '.join(presence.names())}. "
+                   "Broad cross-platform presence is very strong proof of a real artist.",
+        ))
+    elif platforms_found >= 3:
+        platform_ev.append(Evidence(
+            finding=f"Found on {platforms_found} platforms",
+            source="Cross-platform",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Artist exists on: {', '.join(presence.names())}. "
+                   "Artists present on multiple platforms are very likely real.",
+        ))
+    elif platforms_found >= 2:
+        platform_ev.append(Evidence(
+            finding=f"Found on {platforms_found} platforms",
+            source="Cross-platform",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Found on: {', '.join(presence.names())}.",
+        ))
+    elif platforms_found <= 1:
+        platform_ev.append(Evidence(
+            finding="Only found on 1 platform",
+            source="Cross-platform",
+            evidence_type="red_flag",
+            strength="weak",
+            detail="Artist only verified on a single platform. "
+                   "Could be new or could be a fabricated artist.",
+        ))
+
     all_evidence.extend(platform_ev)
     all_evidence.extend(_collect_follower_evidence(artist))
     all_evidence.extend(_collect_catalog_evidence(artist))
@@ -710,6 +1156,12 @@ def evaluate_artist(artist: ArtistInfo) -> ArtistEvaluation:
     all_evidence.extend(_collect_collaboration_evidence(artist))
     all_evidence.extend(_collect_genre_evidence(artist))
     all_evidence.extend(_collect_track_rank_evidence(artist))
+
+    # Collect evidence from external APIs (Standard tier)
+    all_evidence.extend(_collect_genius_evidence(ext))
+    all_evidence.extend(_collect_discogs_evidence(ext))
+    all_evidence.extend(_collect_live_show_evidence(ext))
+    all_evidence.extend(_collect_musicbrainz_evidence(ext))
 
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]

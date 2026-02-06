@@ -33,7 +33,7 @@ from spotify_audit.bandsintown_client import BandsintownClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, StandardScanResult
-from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict
+from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
     finalize_artist_report,
@@ -443,6 +443,87 @@ def _resolve_artist_by_name(
     return ArtistInfo(artist_id=f"name:{name}", name=name)
 
 
+def _lookup_external_data(
+    artist_name: str,
+    genius: GeniusClient,
+    discogs: DiscogsClient,
+    setlistfm: SetlistFmClient,
+    bandsintown: BandsintownClient,
+    mb_client: MusicBrainzClient,
+) -> ExternalData:
+    """Run all Standard-tier API lookups and return aggregated results."""
+    ext = ExternalData()
+    search_name = artist_name.split(",")[0].strip() if "," in artist_name else artist_name
+
+    # Genius
+    if genius.enabled:
+        try:
+            ga = genius.search_artist(search_name)
+            if ga:
+                ext.genius_found = True
+                ga = genius.enrich(ga)
+                ext.genius_song_count = ga.song_count
+                ext.genius_description = ga.description_snippet
+        except Exception as exc:
+            logger.debug("Genius lookup failed for '%s': %s", search_name, exc)
+
+    # Discogs
+    try:
+        da = discogs.search_artist(search_name)
+        if da:
+            ext.discogs_found = True
+            da = discogs.enrich(da)
+            ext.discogs_physical_releases = da.physical_releases
+            ext.discogs_digital_releases = da.digital_only_releases
+            ext.discogs_total_releases = da.total_releases
+            ext.discogs_formats = da.formats
+            ext.discogs_labels = da.labels
+    except Exception as exc:
+        logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
+
+    # Setlist.fm
+    if setlistfm.enabled:
+        try:
+            sa = setlistfm.search_artist(search_name)
+            if sa:
+                ext.setlistfm_found = True
+                sa = setlistfm.get_setlist_count(sa)
+                ext.setlistfm_total_shows = sa.total_setlists
+                ext.setlistfm_first_show = sa.first_show_date
+                ext.setlistfm_last_show = sa.last_show_date
+                ext.setlistfm_venues = sa.top_venues
+        except Exception as exc:
+            logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
+
+    # Bandsintown
+    if bandsintown.enabled:
+        try:
+            ba = bandsintown.get_artist(search_name)
+            if ba:
+                ext.bandsintown_found = True
+                ba = bandsintown.enrich(ba)
+                ext.bandsintown_past_events = ba.past_events
+                ext.bandsintown_upcoming_events = ba.upcoming_events
+                ext.bandsintown_tracker_count = ba.tracker_count
+        except Exception as exc:
+            logger.debug("Bandsintown lookup failed for '%s': %s", search_name, exc)
+
+    # MusicBrainz
+    try:
+        mb = mb_client.search_artist(search_name)
+        if mb and mb.mbid:
+            ext.musicbrainz_found = True
+            ext.musicbrainz_type = mb.artist_type
+            ext.musicbrainz_country = mb.country
+            ext.musicbrainz_begin_date = mb.begin_date
+            mb = mb_client.enrich(mb)
+            ext.musicbrainz_labels = mb.labels
+    except Exception as exc:
+        logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
+
+    return ext
+
+
 def _run_audit(
     client: SpotifyClient,
     cache: Cache | None,
@@ -450,7 +531,7 @@ def _run_audit(
     playlist_url: str,
     max_tier: str,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
-    """Core workflow: fetch playlist -> evaluate with evidence -> escalate as needed."""
+    """Core workflow: fetch playlist -> resolve artists -> external lookups -> evidence evaluation."""
 
     # 1. Fetch playlist
     with console.status("[bold green]Fetching playlist from Spotify..."):
@@ -461,39 +542,36 @@ def _run_audit(
         f"{meta.total_tracks} tracks by {meta.owner}"
     )
 
-    # Set up supplementary clients
+    # Set up all clients
     deezer_client = DeezerClient(delay=0.3)
     mb_client = MusicBrainzClient(delay=1.1)
-
-    # Standard-tier clients
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
     bandsintown_client = BandsintownClient(app_id=config.bandsintown_app_id, delay=0.3)
 
-    # Show which Standard-tier APIs are configured
-    if max_tier in ("standard", "deep"):
-        configured = []
-        if genius_client.enabled:
-            configured.append("Genius")
-        if discogs_client.enabled:
-            configured.append("Discogs")
-        if setlistfm_client.enabled:
-            configured.append("Setlist.fm")
-        if bandsintown_client.enabled:
-            configured.append("Bandsintown")
-        if configured:
-            console.print(
-                f"Standard APIs: [green]{', '.join(configured)}[/green]"
-            )
-        else:
-            console.print(
-                "[yellow]No Standard-tier API keys configured. "
-                "Set GENIUS_TOKEN, DISCOGS_TOKEN, SETLISTFM_API_KEY, "
-                "BANDSINTOWN_APP_ID in .env for richer analysis.[/yellow]"
-            )
+    # Show which APIs are configured
+    configured = ["Deezer", "MusicBrainz"]  # always available (no key needed)
+    if genius_client.enabled:
+        configured.append("Genius")
+    if discogs_client.enabled:
+        configured.append("Discogs")
+    if setlistfm_client.enabled:
+        configured.append("Setlist.fm")
+    if bandsintown_client.enabled:
+        configured.append("Bandsintown")
+    console.print(f"APIs: [green]{', '.join(configured)}[/green]")
 
-    # 2. Deduplicate artists -- prefer IDs, fall back to names
+    any_external = (genius_client.enabled or discogs_client.enabled
+                    or setlistfm_client.enabled or bandsintown_client.enabled)
+    if not any_external:
+        console.print(
+            "[yellow]No Standard-tier API keys configured. "
+            "Set GENIUS_TOKEN, DISCOGS_TOKEN, SETLISTFM_API_KEY in .env "
+            "for richer evidence.[/yellow]"
+        )
+
+    # 2. Deduplicate artists
     artist_ids = list({aid for t in tracks for aid in t.artist_ids if aid})
     artist_names_only: list[str] = []
     if not artist_ids:
@@ -507,18 +585,15 @@ def _run_audit(
     else:
         console.print(f"Found [bold]{len(artist_ids)}[/bold] unique artists")
 
-    # Build a unified lookup list: (key, is_id)
     artist_keys: list[tuple[str, bool]] = []
     if artist_ids:
         artist_keys = [(aid, True) for aid in artist_ids]
     else:
         artist_keys = [(name, False) for name in artist_names_only]
 
-    # 3. Fetch each artist's data + run evidence evaluation
-    artist_infos: dict[str, ArtistInfo] = {}       # key -> ArtistInfo
-    evaluations: dict[str, ArtistEvaluation] = {}   # key -> evidence evaluation
+    # 3. Phase 1: Resolve each artist via Deezer + run quick scan
+    artist_infos: dict[str, ArtistInfo] = {}
     quick_results: dict[str, QuickScanResult] = {}
-    artist_reports: list[ArtistReport] = []
     resolved_count = 0
     cached_count = 0
     fallback_count = 0
@@ -531,15 +606,12 @@ def _run_audit(
         console=console,
     ) as progress:
         task = progress.add_task(
-            "Analyzing artists...", total=len(artist_keys),
+            "Resolving artists (Deezer)...", total=len(artist_keys),
         )
 
         for key, is_id in artist_keys:
-            cache_key = key
-
-            # Check cache first
             if cache:
-                cached = cache.get(cache_key, "quick")
+                cached = cache.get(key, "quick")
                 if cached:
                     qr = QuickScanResult(
                         artist_id=cached["artist_id"],
@@ -548,38 +620,27 @@ def _run_audit(
                         signals=[],
                         tier="quick",
                     )
-                    quick_results[cache_key] = qr
+                    quick_results[key] = qr
                     cached_count += 1
                     progress.advance(task)
                     continue
 
-            # Fetch artist data
             if is_id:
                 artist = client.get_artist_info(key)
                 resolved_count += 1
             else:
-                artist = _resolve_artist_by_name(
-                    key, client, deezer_client, mb_client,
-                )
+                artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
                 if artist.artist_id.startswith("name:"):
                     fallback_count += 1
                 else:
                     resolved_count += 1
 
-            # Store ArtistInfo for evidence evaluation
-            artist_infos[cache_key] = artist
-
-            # Run evidence-based evaluation
-            ev = evaluate_artist(artist)
-            evaluations[cache_key] = ev
-
-            # Run legacy quick scan (still useful for signal details)
+            artist_infos[key] = artist
             qr = quick_scan(artist, config.quick_weights)
-            quick_results[cache_key] = qr
+            quick_results[key] = qr
 
-            # Cache result
             if cache:
-                cache.put(cache_key, "quick", {
+                cache.put(key, "quick", {
                     "artist_id": qr.artist_id,
                     "artist_name": qr.artist_name,
                     "score": qr.score,
@@ -587,7 +648,6 @@ def _run_audit(
 
             progress.advance(task)
 
-    # Show resolution summary
     parts = []
     if resolved_count:
         parts.append(f"[green]{resolved_count} resolved via Deezer[/green]")
@@ -598,18 +658,17 @@ def _run_audit(
     if parts:
         console.print("Resolution: " + ", ".join(parts))
 
-    # 4. Escalation: Standard tier
+    # 4. Phase 2: External API lookups + evidence evaluation for all non-cached artists
+    evaluations: dict[str, ArtistEvaluation] = {}
     standard_results: dict[str, StandardScanResult] = {}
-    escalate_candidates = [
-        (aid, qr) for aid, qr in quick_results.items()
-        if max_tier in ("standard", "deep")
-        and should_escalate_to_standard(qr.score, config)
+    artists_to_lookup = [
+        (key, artist_infos[key]) for key in artist_infos
     ]
 
-    if escalate_candidates:
+    if artists_to_lookup:
         console.print(
-            f"\n[bold cyan]Escalating {len(escalate_candidates)} artists "
-            f"to Standard tier (score > {config.escalate_to_standard})...[/bold cyan]"
+            f"\n[bold cyan]Running external lookups on {len(artists_to_lookup)} artists "
+            f"({', '.join(configured)})...[/bold cyan]"
         )
 
         with Progress(
@@ -619,24 +678,27 @@ def _run_audit(
             TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
             console=console,
         ) as progress:
-            std_task = progress.add_task(
-                "Standard scan...", total=len(escalate_candidates),
+            ext_task = progress.add_task(
+                "External lookups + evidence...", total=len(artists_to_lookup),
             )
 
-            for artist_id, qr in escalate_candidates:
-                if cache:
-                    cached = cache.get(artist_id, "standard")
-                    if cached:
-                        standard_results[artist_id] = StandardScanResult(
-                            artist_id=cached["artist_id"],
-                            artist_name=cached["artist_name"],
-                            score=cached["score"],
-                            signals=[],
-                            tier="standard",
-                        )
-                        progress.advance(std_task)
-                        continue
+            for key, artist in artists_to_lookup:
+                # Run all external API lookups
+                ext = _lookup_external_data(
+                    artist_name=artist.name,
+                    genius=genius_client,
+                    discogs=discogs_client,
+                    setlistfm=setlistfm_client,
+                    bandsintown=bandsintown_client,
+                    mb_client=mb_client,
+                )
 
+                # Run evidence evaluation with ALL data
+                ev = evaluate_artist(artist, external=ext)
+                evaluations[key] = ev
+
+                # Also run legacy Standard weighted score
+                qr = quick_results[key]
                 sr = standard_scan(
                     artist_name=qr.artist_name,
                     quick_result=qr,
@@ -648,16 +710,17 @@ def _run_audit(
                     deezer=deezer_client,
                     weights=config.standard_weights,
                 )
-                standard_results[artist_id] = sr
+                standard_results[key] = sr
 
-                if cache:
-                    cache.put(artist_id, "standard", {
-                        "artist_id": sr.artist_id,
-                        "artist_name": sr.artist_name,
-                        "score": sr.score,
-                    })
+                progress.advance(ext_task)
 
-                progress.advance(std_task)
+    # For cached artists that we didn't look up externally, run Deezer-only evidence
+    for key in quick_results:
+        if key not in evaluations:
+            artist = artist_infos.get(key)
+            if artist:
+                ev = evaluate_artist(artist)
+                evaluations[key] = ev
 
     # 5. Deep tier (placeholder)
     escalated_deep = 0
@@ -676,7 +739,8 @@ def _run_audit(
             f"to Deep tier (not yet implemented)[/yellow]"
         )
 
-    # 6. Build reports (with evidence evaluations)
+    # 6. Build reports
+    artist_reports: list[ArtistReport] = []
     for artist_id, qr in quick_results.items():
         report = finalize_artist_report(
             artist_id=artist_id,
@@ -688,7 +752,7 @@ def _run_audit(
         )
         artist_reports.append(report)
 
-    # 7. Run blocklist analysis
+    # 7. Blocklist analysis
     all_evaluations = list(evaluations.values())
     blocklist_report = analyze_for_blocklist(all_evaluations) if all_evaluations else None
 
