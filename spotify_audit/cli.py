@@ -9,6 +9,7 @@ No Spotify API key required — data is scraped from public embed endpoints.
 
 from __future__ import annotations
 
+import dataclasses
 import logging
 import os
 import sys
@@ -51,7 +52,13 @@ logger = logging.getLogger("spotify_audit")
 
 def _build_config() -> AuditConfig:
     """Load config from environment variables."""
-    load_dotenv()
+    # Explicitly load .env from project root (parent of spotify_audit package)
+    # override=True ensures .env values take precedence over any pre-existing env vars
+    project_env = Path(__file__).resolve().parent.parent / ".env"
+    if project_env.exists():
+        load_dotenv(project_env, override=True)
+    else:
+        load_dotenv(override=True)
     return AuditConfig(
         anthropic_api_key=os.getenv("ANTHROPIC_API_KEY", ""),
         genius_token=os.getenv("GENIUS_TOKEN", ""),
@@ -735,41 +742,62 @@ def _run_audit(
         )
 
         for key, is_id in artist_keys:
+            # Check cache for both QuickScanResult AND ArtistInfo
+            cached_qr = None
+            cached_artist = None
             if cache:
                 cached = cache.get(key, "quick")
                 if cached:
-                    qr = QuickScanResult(
+                    cached_qr = QuickScanResult(
                         artist_id=cached["artist_id"],
                         artist_name=cached["artist_name"],
                         score=cached["score"],
                         signals=[],
                         tier="quick",
                     )
-                    quick_results[key] = qr
-                    cached_count += 1
-                    progress.advance(task)
-                    continue
+                    ai_data = cached.get("artist_info")
+                    if ai_data:
+                        try:
+                            cached_artist = ArtistInfo(**ai_data)
+                        except (TypeError, KeyError):
+                            cached_artist = None  # stale cache format
 
-            if is_id:
-                artist = client.get_artist_info(key)
-                resolved_count += 1
+            if cached_artist:
+                # Full cache hit — have both ArtistInfo and quick scan
+                artist = cached_artist
+                artist_infos[key] = artist
+                quick_results[key] = cached_qr
+                cached_count += 1
             else:
-                artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
-                if artist.artist_id.startswith("name:"):
-                    fallback_count += 1
-                else:
+                # Need to resolve via Deezer (no cached ArtistInfo)
+                if is_id:
+                    artist = client.get_artist_info(key)
                     resolved_count += 1
+                else:
+                    artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
+                    if artist.artist_id.startswith("name:"):
+                        fallback_count += 1
+                    else:
+                        resolved_count += 1
 
-            artist_infos[key] = artist
-            qr = quick_scan(artist, config.quick_weights)
-            quick_results[key] = qr
+                artist_infos[key] = artist
 
-            if cache:
-                cache.put(key, "quick", {
-                    "artist_id": qr.artist_id,
-                    "artist_name": qr.artist_name,
-                    "score": qr.score,
-                })
+                if cached_qr:
+                    # Had cached quick result but no ArtistInfo — use cached score
+                    quick_results[key] = cached_qr
+                else:
+                    qr = quick_scan(artist, config.quick_weights)
+                    quick_results[key] = qr
+
+                # Cache with full ArtistInfo for next run
+                qr = quick_results[key]
+                if cache:
+                    cache.put(key, "quick", {
+                        "artist_id": qr.artist_id,
+                        "artist_name": qr.artist_name,
+                        "score": qr.score,
+                        "artist_info": dataclasses.asdict(artist),
+                    })
 
             progress.advance(task)
 
@@ -783,11 +811,11 @@ def _run_audit(
     if parts:
         console.print("Resolution: " + ", ".join(parts))
 
-    # 4. Phase 2: External API lookups + evidence evaluation for all non-cached artists
+    # 4. Phase 2: External API lookups + evidence evaluation for ALL artists
     evaluations: dict[str, ArtistEvaluation] = {}
     standard_results: dict[str, StandardScanResult] = {}
     artists_to_lookup = [
-        (key, artist_infos[key]) for key in artist_infos
+        (key, artist_infos[key]) for key in quick_results if key in artist_infos
     ]
 
     if artists_to_lookup:
@@ -839,12 +867,19 @@ def _run_audit(
 
                 progress.advance(ext_task)
 
-    # For cached artists that we didn't look up externally, run Deezer-only evidence
+    # Safety fallback: evaluate any artist that somehow missed Phase 2
     for key in quick_results:
         if key not in evaluations:
             artist = artist_infos.get(key)
             if artist:
                 ev = evaluate_artist(artist)
+                evaluations[key] = ev
+            else:
+                # Last resort: minimal evaluation from quick scan data only
+                logger.warning("No ArtistInfo for '%s' — generating minimal evaluation", key)
+                qr = quick_results[key]
+                minimal = ArtistInfo(artist_id=qr.artist_id, name=qr.artist_name)
+                ev = evaluate_artist(minimal)
                 evaluations[key] = ev
 
     # 5. Deep tier (placeholder)
