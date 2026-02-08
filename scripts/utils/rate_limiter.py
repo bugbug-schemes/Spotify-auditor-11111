@@ -20,13 +20,20 @@ class APILimiter:
     name: str
     min_delay: float          # Minimum seconds between requests
     max_backoff: float = 60.0 # Maximum backoff in seconds
+    circuit_breaker: int = 15 # Skip API entirely after this many consecutive errors
     _last_call: float = 0.0
     _backoff: float = 0.0     # Current backoff (0 = no backoff)
     _consecutive_errors: int = 0
+    _tripped: bool = False    # Circuit breaker tripped — skip all calls
     # Stats
     total_calls: int = 0
     total_errors: int = 0
     total_429s: int = 0
+
+    @property
+    def is_tripped(self) -> bool:
+        """True if circuit breaker has tripped (too many consecutive errors)."""
+        return self._tripped
 
     def wait(self):
         """Wait appropriate time before next API call."""
@@ -52,15 +59,36 @@ class APILimiter:
         self.total_errors += 1
         if is_rate_limit:
             self.total_429s += 1
-        # Exponential backoff: 1, 2, 4, 8, 16, 32, 60 (capped)
+
+        # Circuit breaker: after N consecutive errors, skip this API entirely
+        if self._consecutive_errors >= self.circuit_breaker and not self._tripped:
+            self._tripped = True
+            logger.error(
+                "[%s] CIRCUIT BREAKER: %d consecutive errors — skipping this API for rest of run. "
+                "Check your API key / network.",
+                self.name, self._consecutive_errors,
+            )
+            return
+
+        # Exponential backoff: 1, 2, 4, 8 (capped at 8s, not 60s)
         self._backoff = min(
             2 ** (self._consecutive_errors - 1),
-            self.max_backoff,
+            8.0,
         )
         logger.warning(
             "[%s] Error #%d — backoff now %.1fs",
             self.name, self._consecutive_errors, self._backoff,
         )
+
+    def reset_for_new_artist(self):
+        """Partially reset backoff between artists.
+
+        Keeps consecutive error count for circuit breaker tracking,
+        but reduces backoff so we don't wait 60s on the first call
+        for a new artist.
+        """
+        if not self._tripped:
+            self._backoff = min(self._backoff, self.min_delay)
 
     def stats(self) -> dict:
         return {
@@ -69,6 +97,7 @@ class APILimiter:
             "total_errors": self.total_errors,
             "total_429s": self.total_429s,
             "current_backoff": self._backoff,
+            "circuit_breaker_tripped": self._tripped,
         }
 
 

@@ -37,7 +37,7 @@ from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
 from spotify_audit.bandsintown_client import BandsintownClient
 from spotify_audit.lastfm_client import LastfmClient
-from scripts.utils.rate_limiter import get_limiter
+from scripts.utils.rate_limiter import get_limiter, API_LIMITERS
 
 logger = logging.getLogger("enrich")
 
@@ -81,6 +81,9 @@ def _is_enriched(artist_name: str) -> bool:
 def _retry_call(fn, *args, api_name: str, **kwargs):
     """Call fn with retry logic. Returns result or None."""
     limiter = get_limiter(api_name)
+    # Skip if circuit breaker tripped (API consistently failing)
+    if limiter.is_tripped:
+        return None
     for attempt in range(MAX_RETRIES):
         limiter.wait()
         try:
@@ -90,6 +93,8 @@ def _retry_call(fn, *args, api_name: str, **kwargs):
         except Exception as exc:
             is_429 = "429" in str(exc) or "rate" in str(exc).lower()
             limiter.error(is_rate_limit=is_429)
+            if limiter.is_tripped:
+                return None
             if attempt == MAX_RETRIES - 1:
                 logger.debug("  %s: failed after %d retries: %s", api_name, MAX_RETRIES, exc)
                 return None
@@ -425,6 +430,10 @@ def main():
             continue
 
         logger.info("[%d/%d] Enriching: %s", idx + 1, len(seeds), name)
+
+        # Reset per-artist backoff so failed APIs don't accumulate wait time
+        for limiter in API_LIMITERS.values():
+            limiter.reset_for_new_artist()
 
         try:
             profile = enrich_artist(
