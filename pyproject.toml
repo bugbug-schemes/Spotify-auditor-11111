@@ -26,6 +26,7 @@ dev = [
 
 [project.scripts]
 spotify-audit = "spotify_audit.cli:main"
+spotify-audit-db = "spotify_audit.entity_cli:cli"
 
 [tool.setuptools.packages.find]
 include = ["spotify_audit*"]

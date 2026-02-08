@@ -47,6 +47,7 @@ from spotify_audit.scoring import (
 )
 from spotify_audit.reports.formatter import to_markdown, to_html, to_json
 from spotify_audit.deep_analysis import run_deep_analysis, run_deep_analysis_batch, DeepAnalysis
+from spotify_audit.entity_db import EntityDB
 
 console = Console()
 logger = logging.getLogger("spotify_audit")
@@ -1009,7 +1010,53 @@ def _run_audit(
     all_evaluations = list(evaluations.values())
     blocklist_report = analyze_for_blocklist(all_evaluations) if all_evaluations else None
 
-    # 8. Build playlist-level report
+    # 8. Populate entity database with scan results
+    try:
+        entity_db = EntityDB()
+        scan_id = entity_db.start_scan(
+            playlist_id=meta.playlist_id,
+            playlist_name=meta.name,
+            scan_tier=max_tier,
+            artist_count=len(artist_reports),
+        )
+        for report in artist_reports:
+            ev = report.evaluation
+            if not ev:
+                continue
+            aid = entity_db.upsert_artist(
+                report.artist_name,
+                threat_status=(
+                    "confirmed_bad" if ev.verdict == Verdict.LIKELY_ARTIFICIAL
+                    else "suspected" if ev.verdict == Verdict.SUSPICIOUS
+                    else "cleared" if ev.verdict == Verdict.VERIFIED_ARTIST
+                    else "unknown"
+                ),
+                threat_category=report.threat_category,
+                latest_verdict=ev.verdict.value,
+                latest_confidence=ev.confidence,
+            )
+            # Link labels
+            for lbl in ev.labels:
+                lid = entity_db.upsert_label(lbl)
+                entity_db.link_artist_label(aid, lid, source="scan")
+            # Link contributors
+            for contrib in ev.contributors:
+                sid = entity_db.upsert_songwriter(contrib)
+                entity_db.link_artist_songwriter(aid, sid, source="scan")
+            # Store key red flags as observations
+            for e in ev.strong_red_flags:
+                entity_db.add_observation(
+                    "artist", aid, "red_flag", e.finding,
+                    detail=e.detail, source=e.source,
+                    strength=e.strength, scan_id=scan_id,
+                )
+        entity_db.refresh_entity_counts()
+        entity_db.complete_scan(scan_id)
+        entity_db.close()
+    except Exception as exc:
+        logger.debug("Entity DB update failed (non-fatal): %s", exc)
+
+    # 9. Build playlist-level report
     playlist_report = build_playlist_report(
         playlist_name=meta.name,
         playlist_id=meta.playlist_id,
