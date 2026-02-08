@@ -160,7 +160,11 @@ def finalize_artist_report(
     elif report.quick_score is not None:
         report.final_score = report.quick_score
 
-    report.label = score_label(report.final_score)
+    # Label: derive from evidence verdict when available, legacy score otherwise
+    if report.evaluation:
+        report.label = report.evaluation.verdict.value
+    else:
+        report.label = score_label(report.final_score)
     report.threat_category = _infer_threat_category(report)
     if report.threat_category is not None:
         report.threat_category_name = THREAT_CATEGORIES.get(report.threat_category, "")
@@ -169,31 +173,81 @@ def finalize_artist_report(
 
 
 def _infer_threat_category(report: ArtistReport) -> float | None:
-    """Best-effort threat category assignment from Quick signals alone.
-    Standard/Deep tiers will refine this with label and web data."""
+    """Assign threat category using evidence-based verdict as primary signal.
+
+    Only assigns a threat category when the evidence verdict is Suspicious
+    or Likely Artificial.  Uses red flag content to distinguish between
+    PFC Ghost (1), AI Hybrid (1.5), Independent AI (2), AI Fraud Farm (3),
+    and AI Impersonation (4).  Falls back to legacy quick signals when no
+    evidence evaluation is available.
+    """
+    ev = report.evaluation
+
+    # If we have an evidence-based verdict, use it as the gate
+    if ev:
+        # Verified / Likely Authentic / Inconclusive → no threat category
+        if ev.verdict in (Verdict.VERIFIED_ARTIST, Verdict.LIKELY_AUTHENTIC,
+                          Verdict.INCONCLUSIVE):
+            return None
+
+        # Suspicious or Likely Artificial — dig into the red flags
+        red_findings = " ".join(
+            (e.finding + " " + e.detail).lower() for e in ev.red_flags
+        )
+
+        has_pfc = "pfc" in red_findings or "content farm" in red_findings
+        has_ai = ("ai generat" in red_findings or "ai_generated" in red_findings
+                  or "ai-generated" in red_findings)
+        has_ghost = "ghost" in red_findings or "pfc_ghost" in red_findings
+        has_impersonation = "impersonat" in red_findings
+
+        # Check Claude synthesis if present
+        synth_findings = " ".join(
+            (e.finding + " " + e.detail).lower()
+            for e in ev.red_flags if e.source == "Claude synthesis"
+        )
+        synth_pfc = "pfc" in synth_findings
+        synth_ai = "ai" in synth_findings
+
+        if has_impersonation:
+            return 4   # AI Impersonation
+        if has_pfc and has_ai:
+            return 1.5  # PFC + AI Hybrid
+        if synth_ai and not synth_pfc:
+            return 2   # Independent AI Artist
+        if has_ai and not has_pfc and not has_ghost:
+            return 2   # Independent AI Artist
+        if has_pfc or has_ghost:
+            return 1   # PFC Ghost Artist
+
+        # Fall through: look at pattern signals for fraud farm
+        signals = {s["name"]: s for s in report.quick_signals}
+        cadence_raw = signals.get("release_cadence", {}).get("raw_score", 0)
+        duration_raw = signals.get("track_duration_uniformity", {}).get("raw_score", 0)
+        if cadence_raw >= 65 and duration_raw >= 50:
+            return 3   # AI Fraud Farm
+
+        # Default: PFC Ghost for Suspicious/Likely Artificial without specifics
+        return 1
+
+    # No evidence evaluation — legacy fallback using quick signals only
     if report.final_score < 30:
-        return None  # Not suspicious enough to categorize
+        return None
 
     signals = {s["name"]: s for s in report.quick_signals}
-
-    catalog = signals.get("catalog_size", {})
-    cadence = signals.get("release_cadence", {})
-    name_sig = signals.get("name_pattern", {})
-    duration = signals.get("track_duration_uniformity", {})
-
-    catalog_raw = catalog.get("raw_score", 0)
-    cadence_raw = cadence.get("raw_score", 0)
-    name_raw = name_sig.get("raw_score", 0)
-    duration_raw = duration.get("raw_score", 0)
+    catalog_raw = signals.get("catalog_size", {}).get("raw_score", 0)
+    cadence_raw = signals.get("release_cadence", {}).get("raw_score", 0)
+    name_raw = signals.get("name_pattern", {}).get("raw_score", 0)
+    duration_raw = signals.get("track_duration_uniformity", {}).get("raw_score", 0)
 
     if name_raw >= 100:
-        return 2  # Independent AI Artist
+        return 2   # Independent AI Artist
     if cadence_raw >= 65 and duration_raw >= 50:
-        return 3  # AI Fraud Farm
+        return 3   # AI Fraud Farm
     if catalog_raw >= 50 and report.final_score >= 40:
-        return 1  # PFC Ghost Artist
+        return 1   # PFC Ghost Artist
     if report.final_score >= 50:
-        return 1  # Default to PFC Ghost
+        return 1
     return None
 
 
@@ -240,14 +294,12 @@ def build_playlist_report(
         elif v == Verdict.LIKELY_ARTIFICIAL:
             pr.likely_artificial += 1
 
-    # Legacy breakdown (from weighted score)
+    # Legacy breakdown (from weighted score) — uses separate counters
     for a in artist_reports:
         if a.final_score <= 20:
             pr.verified_legit += 1
         elif a.final_score <= 40:
             pr.probably_fine += 1
-        elif a.final_score <= 70:
-            pr.suspicious += 1
         else:
             pr.likely_non_authentic += 1
 
