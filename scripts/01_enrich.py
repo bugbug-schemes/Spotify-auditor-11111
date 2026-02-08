@@ -106,7 +106,7 @@ def enrich_musicbrainz(mb: MusicBrainzClient, name: str) -> dict:
     artist = _retry_call(mb.enrich, artist, api_name="musicbrainz") or artist
     result.update({
         "mbid": artist.mbid,
-        "type": artist.type,
+        "type": artist.artist_type,
         "country": artist.country,
         "area": artist.area,
         "begin_date": artist.begin_date,
