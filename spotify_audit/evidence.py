@@ -91,6 +91,15 @@ class ExternalData:
     musicbrainz_gender: str = ""
     musicbrainz_area: str = ""
 
+    # Last.fm
+    lastfm_found: bool = False
+    lastfm_listeners: int = 0
+    lastfm_playcount: int = 0
+    lastfm_listener_play_ratio: float = 0.0
+    lastfm_tags: list[str] = field(default_factory=list)
+    lastfm_similar_artists: list[str] = field(default_factory=list)
+    lastfm_bio_exists: bool = False
+
 
 # ---------------------------------------------------------------------------
 # Data structures
@@ -126,11 +135,13 @@ class PlatformPresence:
     discogs: bool = False
     setlistfm: bool = False
     bandsintown: bool = False
+    lastfm: bool = False
 
     def count(self) -> int:
         return sum([
             self.spotify, self.deezer, self.musicbrainz,
             self.genius, self.discogs, self.setlistfm, self.bandsintown,
+            self.lastfm,
         ])
 
     def names(self) -> list[str]:
@@ -150,6 +161,8 @@ class PlatformPresence:
             platforms.append("Setlist.fm")
         if self.bandsintown:
             platforms.append("Bandsintown")
+        if self.lastfm:
+            platforms.append("Last.fm")
         return platforms
 
 
@@ -1608,6 +1621,100 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
     return evidence
 
 
+def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Last.fm data — listener/playcount ratio is a top fraud signal."""
+    evidence: list[Evidence] = []
+
+    if not ext.lastfm_found:
+        evidence.append(Evidence(
+            finding="Not found on Last.fm",
+            source="Last.fm",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="Artist has no Last.fm presence. Real artists with significant "
+                   "Spotify streams almost always have Last.fm scrobble data. "
+                   "Ghost artists typically have zero Last.fm activity.",
+        ))
+        return evidence
+
+    evidence.append(Evidence(
+        finding=f"Found on Last.fm ({ext.lastfm_listeners:,} listeners, "
+                f"{ext.lastfm_playcount:,} scrobbles)",
+        source="Last.fm",
+        evidence_type="green_flag",
+        strength="moderate",
+        detail=f"Artist has {ext.lastfm_listeners:,} unique listeners and "
+               f"{ext.lastfm_playcount:,} total scrobbles on Last.fm.",
+    ))
+
+    # Listener-to-playcount ratio analysis
+    # Real artists: ratio typically 5-50+ (fans listen repeatedly)
+    # Ghost artists: ratio near 1-3 (no real fans, incidental scrobbles)
+    ratio = ext.lastfm_listener_play_ratio
+    if ratio > 0:
+        if ratio >= 10:
+            evidence.append(Evidence(
+                finding=f"Strong scrobble engagement (play/listener ratio: {ratio:.1f})",
+                source="Last.fm",
+                evidence_type="green_flag",
+                strength="strong",
+                detail=f"Each listener averages {ratio:.1f} plays. High replay value "
+                       "indicates genuine fans who return to this artist's music.",
+            ))
+        elif ratio >= 4:
+            evidence.append(Evidence(
+                finding=f"Moderate scrobble engagement (play/listener ratio: {ratio:.1f})",
+                source="Last.fm",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Each listener averages {ratio:.1f} plays. Moderate engagement.",
+            ))
+        elif ext.lastfm_listeners >= 100 and ratio < 2:
+            evidence.append(Evidence(
+                finding=f"Very low scrobble engagement (play/listener ratio: {ratio:.1f})",
+                source="Last.fm",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"Despite {ext.lastfm_listeners:,} listeners, each averages only "
+                       f"{ratio:.1f} plays. This suggests passive/algorithmic listening "
+                       "rather than genuine fans — a common pattern with PFC content.",
+            ))
+
+    # Low listener count vs Spotify presence
+    if ext.lastfm_listeners > 0 and ext.lastfm_listeners < 50:
+        evidence.append(Evidence(
+            finding=f"Negligible Last.fm presence ({ext.lastfm_listeners} listeners)",
+            source="Last.fm",
+            evidence_type="red_flag",
+            strength="weak",
+            detail="Extremely low Last.fm listener count suggests minimal organic "
+                   "fanbase outside of Spotify algorithmic playlists.",
+        ))
+
+    # Similar artists as legitimacy signal
+    if ext.lastfm_similar_artists and len(ext.lastfm_similar_artists) >= 5:
+        evidence.append(Evidence(
+            finding=f"{len(ext.lastfm_similar_artists)} similar artists on Last.fm",
+            source="Last.fm",
+            evidence_type="green_flag",
+            strength="weak",
+            detail="Last.fm algorithmically links this artist to others based on "
+                   "listener behavior — suggests real listener overlap.",
+        ))
+
+    # Bio on Last.fm
+    if ext.lastfm_bio_exists:
+        evidence.append(Evidence(
+            finding="Has Last.fm biography",
+            source="Last.fm",
+            evidence_type="green_flag",
+            strength="weak",
+            detail="Artist has a bio on Last.fm, typically contributed by users.",
+        ))
+
+    return evidence
+
+
 def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
     """Analyze geographic spread of touring (from Setlist.fm)."""
     evidence: list[Evidence] = []
@@ -1774,6 +1881,8 @@ def evaluate_artist(
         presence.bandsintown = True
     if ext.musicbrainz_found:
         presence.musicbrainz = True
+    if ext.lastfm_found:
+        presence.lastfm = True
 
     # Re-generate platform evidence with updated counts
     platforms_found = presence.count()
@@ -1833,6 +1942,7 @@ def evaluate_artist(
     all_evidence.extend(_collect_musicbrainz_evidence(ext))
     all_evidence.extend(_collect_social_media_evidence(ext))
     all_evidence.extend(_collect_identity_evidence(ext))
+    all_evidence.extend(_collect_lastfm_evidence(ext))
     all_evidence.extend(_collect_touring_geography_evidence(ext))
 
     # Separate by type

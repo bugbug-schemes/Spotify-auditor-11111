@@ -31,10 +31,11 @@ from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
 from spotify_audit.bandsintown_client import BandsintownClient
+from spotify_audit.lastfm_client import LastfmClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, StandardScanResult
-from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData
+from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, incorporate_deep_evidence
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
     finalize_artist_report,
@@ -559,6 +560,7 @@ def _lookup_external_data(
     setlistfm: SetlistFmClient,
     bandsintown: BandsintownClient,
     mb_client: MusicBrainzClient,
+    lastfm: "LastfmClient | None" = None,
 ) -> ExternalData:
     """Run all Standard-tier API lookups and return aggregated results."""
     ext = ExternalData()
@@ -655,6 +657,24 @@ def _lookup_external_data(
     except Exception as exc:
         logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 
+    # Last.fm
+    if lastfm and lastfm.enabled:
+        try:
+            la = lastfm.get_artist_info(search_name)
+            if la:
+                ext.lastfm_found = True
+                la = lastfm.enrich(la)
+                ext.lastfm_listeners = la.listeners
+                ext.lastfm_playcount = la.playcount
+                ext.lastfm_listener_play_ratio = (
+                    round(la.playcount / la.listeners, 2) if la.listeners > 0 else 0.0
+                )
+                ext.lastfm_tags = la.tags
+                ext.lastfm_similar_artists = la.similar_artists
+                ext.lastfm_bio_exists = bool(la.bio and len(la.bio) > 50)
+        except Exception as exc:
+            logger.debug("Last.fm lookup failed for '%s': %s", search_name, exc)
+
     return ext
 
 
@@ -683,6 +703,7 @@ def _run_audit(
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
     bandsintown_client = BandsintownClient(app_id=config.bandsintown_app_id, delay=0.3)
+    lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
 
     # Set up Claude (Deep tier) if key available
     anthropic_client = None
@@ -703,6 +724,8 @@ def _run_audit(
         configured.append("Setlist.fm")
     if bandsintown_client.enabled:
         configured.append("Bandsintown")
+    if lastfm_client.enabled:
+        configured.append("Last.fm")
     if anthropic_client:
         configured.append("Claude (Deep)")
     console.print(f"APIs: [green]{', '.join(configured)}[/green]")
@@ -857,6 +880,7 @@ def _run_audit(
                     setlistfm=setlistfm_client,
                     bandsintown=bandsintown_client,
                     mb_client=mb_client,
+                    lastfm=lastfm_client,
                 )
 
                 # Run evidence evaluation with ALL data
@@ -895,22 +919,71 @@ def _run_audit(
                 ev = evaluate_artist(minimal)
                 evaluations[key] = ev
 
-    # 5. Deep tier (placeholder)
-    escalated_deep = 0
-    for artist_id, qr in quick_results.items():
-        if max_tier == "deep" and should_escalate_to_deep(
-            standard_results[artist_id].score
-            if artist_id in standard_results
-            else qr.score,
-            config,
-        ):
-            escalated_deep += 1
+    # 5. Deep tier — Claude bio + image analysis
+    deep_count = 0
+    if anthropic_client and max_tier == "deep":
+        # Find artists to deep-analyze: those scored Suspicious or worse,
+        # or all artists if the playlist is small enough
+        deep_candidates = []
+        for key in quick_results:
+            ev = evaluations.get(key)
+            if not ev:
+                continue
+            score = (standard_results[key].score
+                     if key in standard_results else quick_results[key].score)
+            if should_escalate_to_deep(score, config) or len(quick_results) <= 20:
+                deep_candidates.append(key)
 
-    if escalated_deep:
-        console.print(
-            f"[yellow]-> {escalated_deep} artists would escalate "
-            f"to Deep tier (not yet implemented)[/yellow]"
+        if deep_candidates:
+            console.print(
+                f"\n[bold magenta]Phase 3: Deep analysis (Claude) for "
+                f"{len(deep_candidates)} artists...[/bold magenta]"
+            )
+            with Progress(
+                SpinnerColumn(),
+                TextColumn("[bold magenta]{task.description}"),
+                BarColumn(),
+                TextColumn("[progress.percentage]{task.percentage:>3.0f}%"),
+                console=console,
+            ) as progress:
+                deep_task = progress.add_task(
+                    "Claude bio + image analysis...", total=len(deep_candidates),
+                )
+
+                for key in deep_candidates:
+                    artist = artist_infos.get(key)
+                    ev = evaluations.get(key)
+                    if not artist or not ev:
+                        progress.advance(deep_task)
+                        continue
+
+                    ext = ev.external_data or ExternalData()
+                    try:
+                        deep = run_deep_analysis(anthropic_client, artist, ext)
+                        all_deep_ev = deep.bio_analysis + deep.image_analysis + deep.synthesis
+                        if all_deep_ev:
+                            evaluations[key] = incorporate_deep_evidence(ev, all_deep_ev)
+                            deep_count += 1
+                    except Exception as exc:
+                        logger.debug("Deep analysis failed for '%s': %s", artist.name, exc)
+
+                    progress.advance(deep_task)
+
+            console.print(f"[magenta]-> Deep analysis completed for {deep_count} artists[/magenta]")
+    elif max_tier == "deep" and not anthropic_client:
+        # Count how many would have escalated
+        escalated_deep = sum(
+            1 for key, qr in quick_results.items()
+            if should_escalate_to_deep(
+                standard_results[key].score if key in standard_results else qr.score,
+                config,
+            )
         )
+        if escalated_deep:
+            console.print(
+                f"[yellow]-> {escalated_deep} artists need Deep analysis but "
+                f"ANTHROPIC_API_KEY not set in .env[/yellow]"
+            )
 
     # 6. Build reports
     artist_reports: list[ArtistReport] = []
