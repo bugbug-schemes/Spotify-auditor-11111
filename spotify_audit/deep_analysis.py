@@ -1,0 +1,422 @@
+"""
+Claude-powered deep analysis for artist authenticity evaluation.
+
+Uses Anthropic's Claude API to analyze:
+- Artist bios for AI-generated text patterns, unverifiable claims
+- Profile images for AI generation artifacts
+- Overall synthesis of all available data
+
+Requires ANTHROPIC_API_KEY in .env.
+"""
+
+from __future__ import annotations
+
+import base64
+import logging
+import re
+from dataclasses import dataclass, field
+
+import requests
+from anthropic import Anthropic
+
+from spotify_audit.spotify_client import ArtistInfo
+from spotify_audit.evidence import ExternalData, Evidence
+
+logger = logging.getLogger(__name__)
+
+# Timeout for image download
+IMAGE_TIMEOUT = 10
+MAX_IMAGE_BYTES = 5 * 1024 * 1024  # 5MB
+
+
+@dataclass
+class DeepAnalysis:
+    """Results from Claude-powered deep analysis."""
+    bio_analysis: list[Evidence] = field(default_factory=list)
+    image_analysis: list[Evidence] = field(default_factory=list)
+    synthesis: list[Evidence] = field(default_factory=list)
+    raw_bio_response: str = ""
+    raw_image_response: str = ""
+    raw_synthesis_response: str = ""
+
+
+def _fetch_image_base64(url: str) -> tuple[str, str] | None:
+    """Download an image and return (base64_data, media_type) or None."""
+    if not url:
+        return None
+    try:
+        resp = requests.get(url, timeout=IMAGE_TIMEOUT, stream=True)
+        resp.raise_for_status()
+        content_type = resp.headers.get("content-type", "image/jpeg")
+        # Normalize media type
+        if "png" in content_type:
+            media_type = "image/png"
+        elif "webp" in content_type:
+            media_type = "image/webp"
+        elif "gif" in content_type:
+            media_type = "image/gif"
+        else:
+            media_type = "image/jpeg"
+
+        data = resp.content
+        if len(data) > MAX_IMAGE_BYTES:
+            logger.debug("Image too large (%d bytes), skipping", len(data))
+            return None
+        return base64.standard_b64encode(data).decode("utf-8"), media_type
+    except Exception as exc:
+        logger.debug("Failed to fetch image from %s: %s", url, exc)
+        return None
+
+
+def _collect_bio_texts(artist: ArtistInfo, ext: ExternalData) -> str:
+    """Gather all available bio/description text into a single string."""
+    parts: list[str] = []
+    if artist.bio:
+        parts.append(f"Spotify bio: {artist.bio}")
+    if ext.genius_description:
+        parts.append(f"Genius description: {ext.genius_description}")
+    if ext.discogs_profile:
+        parts.append(f"Discogs profile: {ext.discogs_profile}")
+    return "\n\n".join(parts)
+
+
+def _build_artist_context(artist: ArtistInfo, ext: ExternalData) -> str:
+    """Build a context string summarizing what we know about the artist."""
+    lines = [f"Artist name: {artist.name}"]
+    if artist.genres:
+        lines.append(f"Genres: {', '.join(artist.genres)}")
+    if artist.followers:
+        lines.append(f"Spotify followers: {artist.followers:,}")
+    if artist.monthly_listeners:
+        lines.append(f"Monthly listeners: {artist.monthly_listeners:,}")
+    if artist.deezer_fans:
+        lines.append(f"Deezer fans: {artist.deezer_fans:,}")
+    if artist.album_count or artist.single_count:
+        lines.append(f"Catalog: {artist.album_count} albums, {artist.single_count} singles")
+    if artist.labels:
+        lines.append(f"Labels: {', '.join(artist.labels[:5])}")
+    if artist.track_titles:
+        lines.append(f"Sample tracks: {', '.join(artist.track_titles[:8])}")
+    if ext.discogs_realname:
+        lines.append(f"Real name (Discogs): {ext.discogs_realname}")
+    if ext.musicbrainz_country:
+        lines.append(f"Country (MusicBrainz): {ext.musicbrainz_country}")
+    if ext.setlistfm_total_shows:
+        lines.append(f"Live shows: {ext.setlistfm_total_shows}")
+    if ext.bandsintown_past_events:
+        lines.append(f"Bandsintown past events: {ext.bandsintown_past_events}")
+
+    return "\n".join(lines)
+
+
+def analyze_bio(
+    client: Anthropic,
+    artist: ArtistInfo,
+    ext: ExternalData,
+    model: str = "claude-sonnet-4-5-20250929",
+) -> list[Evidence]:
+    """Analyze artist bio text for authenticity signals using Claude."""
+    bio_text = _collect_bio_texts(artist, ext)
+    if not bio_text:
+        return [Evidence(
+            finding="No biographical text available",
+            source="Bio analysis",
+            evidence_type="neutral",
+            strength="weak",
+            detail="No bio text found on Spotify, Genius, or Discogs. "
+                   "Many ghost artists have no biography at all.",
+        )]
+
+    context = _build_artist_context(artist, ext)
+
+    prompt = f"""You are analyzing an artist's biographical text to determine if this is a real human artist or a fabricated/ghost/AI artist profile.
+
+ARTIST DATA:
+{context}
+
+BIOGRAPHICAL TEXT TO ANALYZE:
+{bio_text}
+
+Analyze this bio for the following signals:
+
+1. **AI/ghost mentions**: Does it explicitly mention AI, generated, algorithm, or similar? Does it say "created by" a platform?
+2. **ChatGPT-style writing**: Generic, vague, overly polished language with no specific details. Phrases like "blending genres," "pushing boundaries," "unique soundscapes."
+3. **Verifiable claims**: Does it mention specific cities, venues, collaborators, education, or life events that could be verified? Or is it entirely vague?
+4. **Geographic specificity**: Does it mention where the artist is from? Real artists almost always have a hometown or country.
+5. **Career timeline**: Does it reference specific years, albums, or career milestones? Or is it timeless/generic?
+6. **Red flags**: Unusually short bio, only describes the music's mood/vibe (not the person), or reads like a playlist description rather than an artist bio.
+
+Respond in this EXACT format (keep each line short and specific):
+VERDICT: [AUTHENTIC|SUSPICIOUS|INCONCLUSIVE]
+CONFIDENCE: [HIGH|MEDIUM|LOW]
+AI_MENTIONED: [YES|NO]
+GEOGRAPHIC_SPECIFICITY: [YES|NO]
+VERIFIABLE_CLAIMS: [YES|NO]
+REASONING: [2-3 sentences explaining your assessment in plain English]"""
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=300,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = response.content[0].text.strip()
+    except Exception as exc:
+        logger.warning("Claude bio analysis failed for '%s': %s", artist.name, exc)
+        return [Evidence(
+            finding="Bio analysis unavailable",
+            source="Claude (bio)",
+            evidence_type="neutral",
+            strength="weak",
+            detail=f"Claude API call failed: {exc}",
+        )]
+
+    return _parse_bio_response(text, bio_text)
+
+
+def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
+    """Parse Claude's bio analysis response into Evidence objects."""
+    evidence: list[Evidence] = []
+
+    verdict = _extract_field(response, "VERDICT", "INCONCLUSIVE").upper()
+    confidence = _extract_field(response, "CONFIDENCE", "LOW").upper()
+    ai_mentioned = _extract_field(response, "AI_MENTIONED", "NO").upper() == "YES"
+    geo_specific = _extract_field(response, "GEOGRAPHIC_SPECIFICITY", "NO").upper() == "YES"
+    verifiable = _extract_field(response, "VERIFIABLE_CLAIMS", "NO").upper() == "YES"
+    reasoning = _extract_field(response, "REASONING", "Analysis inconclusive.")
+
+    strength = "strong" if confidence == "HIGH" else "moderate" if confidence == "MEDIUM" else "weak"
+
+    if ai_mentioned:
+        evidence.append(Evidence(
+            finding="Bio explicitly mentions AI or algorithmic creation",
+            source="Claude (bio)",
+            evidence_type="red_flag",
+            strength="strong",
+            detail="The artist's biography explicitly references AI generation, "
+                   "algorithms, or automated music creation. " + reasoning,
+        ))
+
+    if verdict == "SUSPICIOUS":
+        evidence.append(Evidence(
+            finding="Bio text has hallmarks of a fabricated profile",
+            source="Claude (bio)",
+            evidence_type="red_flag",
+            strength=strength,
+            detail=reasoning,
+        ))
+    elif verdict == "AUTHENTIC":
+        evidence.append(Evidence(
+            finding="Bio text appears to describe a real artist",
+            source="Claude (bio)",
+            evidence_type="green_flag",
+            strength=strength,
+            detail=reasoning,
+        ))
+    else:
+        evidence.append(Evidence(
+            finding="Bio text analysis inconclusive",
+            source="Claude (bio)",
+            evidence_type="neutral",
+            strength="weak",
+            detail=reasoning,
+        ))
+
+    if geo_specific:
+        evidence.append(Evidence(
+            finding="Bio includes geographic details",
+            source="Claude (bio)",
+            evidence_type="green_flag",
+            strength="weak",
+            detail="Biography mentions specific locations, suggesting a real person "
+                   "with verifiable roots.",
+        ))
+    elif bio_text and not geo_specific:
+        evidence.append(Evidence(
+            finding="Bio lacks any geographic specificity",
+            source="Claude (bio)",
+            evidence_type="red_flag",
+            strength="weak",
+            detail="Biography doesn't mention where the artist is from. "
+                   "Real artists almost always reference their hometown or country.",
+        ))
+
+    if verifiable:
+        evidence.append(Evidence(
+            finding="Bio contains verifiable claims",
+            source="Claude (bio)",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail="Biography references specific events, collaborators, venues, or dates "
+                   "that could be independently verified.",
+        ))
+
+    return evidence
+
+
+def analyze_image(
+    client: Anthropic,
+    artist: ArtistInfo,
+    model: str = "claude-sonnet-4-5-20250929",
+) -> list[Evidence]:
+    """Analyze artist profile image for AI generation artifacts using Claude vision."""
+    if not artist.image_url:
+        return [Evidence(
+            finding="No profile image available",
+            source="Image analysis",
+            evidence_type="neutral",
+            strength="weak",
+            detail="No profile image URL found. Some ghost artists have no image, "
+                   "while others use AI-generated or stock photos.",
+        )]
+
+    img_data = _fetch_image_base64(artist.image_url)
+    if not img_data:
+        return [Evidence(
+            finding="Could not download profile image",
+            source="Image analysis",
+            evidence_type="neutral",
+            strength="weak",
+            detail=f"Failed to download image from {artist.image_url}.",
+        )]
+
+    b64, media_type = img_data
+
+    prompt = """Analyze this artist profile image for signs of AI generation or inauthenticity.
+
+Look for:
+1. **AI generation artifacts**: Warped fingers/hands, asymmetric features, melted text, inconsistent lighting, uncanny valley faces, blurred backgrounds with sharp foreground
+2. **Stock photo indicators**: Watermarks, overly generic compositions, standard corporate portrait style
+3. **Abstract/non-human images**: Solid colors, geometric patterns, generic landscapes, or mood imagery instead of an actual person or band
+4. **Professional photo indicators**: Real concert photos, studio shots with natural imperfections, candid moments, band group photos
+
+Respond in this EXACT format:
+IMAGE_TYPE: [HUMAN_PHOTO|AI_GENERATED|STOCK_PHOTO|ABSTRACT_ART|LOGO|OTHER]
+AI_ARTIFACTS_DETECTED: [YES|NO|UNCERTAIN]
+CONFIDENCE: [HIGH|MEDIUM|LOW]
+REASONING: [2-3 sentences explaining what you see]"""
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=300,
+            messages=[{
+                "role": "user",
+                "content": [
+                    {
+                        "type": "image",
+                        "source": {
+                            "type": "base64",
+                            "media_type": media_type,
+                            "data": b64,
+                        },
+                    },
+                    {"type": "text", "text": prompt},
+                ],
+            }],
+        )
+        text = response.content[0].text.strip()
+    except Exception as exc:
+        logger.warning("Claude image analysis failed for '%s': %s", artist.name, exc)
+        return [Evidence(
+            finding="Image analysis unavailable",
+            source="Claude (image)",
+            evidence_type="neutral",
+            strength="weak",
+            detail=f"Claude vision API call failed: {exc}",
+        )]
+
+    return _parse_image_response(text)
+
+
+def _parse_image_response(response: str) -> list[Evidence]:
+    """Parse Claude's image analysis response into Evidence objects."""
+    evidence: list[Evidence] = []
+
+    image_type = _extract_field(response, "IMAGE_TYPE", "OTHER").upper()
+    ai_artifacts = _extract_field(response, "AI_ARTIFACTS_DETECTED", "UNCERTAIN").upper()
+    confidence = _extract_field(response, "CONFIDENCE", "LOW").upper()
+    reasoning = _extract_field(response, "REASONING", "Analysis inconclusive.")
+
+    strength = "strong" if confidence == "HIGH" else "moderate" if confidence == "MEDIUM" else "weak"
+
+    if ai_artifacts == "YES":
+        evidence.append(Evidence(
+            finding="AI generation artifacts detected in profile image",
+            source="Claude (image)",
+            evidence_type="red_flag",
+            strength=strength,
+            detail=reasoning,
+        ))
+    elif image_type == "AI_GENERATED":
+        evidence.append(Evidence(
+            finding="Profile image appears AI-generated",
+            source="Claude (image)",
+            evidence_type="red_flag",
+            strength=strength,
+            detail=reasoning,
+        ))
+    elif image_type in ("ABSTRACT_ART", "LOGO", "OTHER"):
+        evidence.append(Evidence(
+            finding=f"Profile image is {image_type.lower().replace('_', ' ')} (not a person)",
+            source="Claude (image)",
+            evidence_type="red_flag",
+            strength="weak",
+            detail="Profile uses abstract art, a logo, or non-human imagery instead of "
+                   "a photo. While some real artists do this, it's more common with "
+                   "fabricated profiles. " + reasoning,
+        ))
+    elif image_type == "STOCK_PHOTO":
+        evidence.append(Evidence(
+            finding="Profile image appears to be a stock photo",
+            source="Claude (image)",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="Profile image looks like a stock photo rather than an authentic "
+                   "artist photo. Ghost artists frequently use stock imagery. " + reasoning,
+        ))
+    elif image_type == "HUMAN_PHOTO" and ai_artifacts == "NO":
+        evidence.append(Evidence(
+            finding="Profile image appears to be an authentic photo",
+            source="Claude (image)",
+            evidence_type="green_flag",
+            strength=strength,
+            detail=reasoning,
+        ))
+    else:
+        evidence.append(Evidence(
+            finding="Image analysis inconclusive",
+            source="Claude (image)",
+            evidence_type="neutral",
+            strength="weak",
+            detail=reasoning,
+        ))
+
+    return evidence
+
+
+def run_deep_analysis(
+    client: Anthropic,
+    artist: ArtistInfo,
+    ext: ExternalData,
+    model: str = "claude-sonnet-4-5-20250929",
+) -> DeepAnalysis:
+    """Run full deep analysis: bio + image + synthesis."""
+    result = DeepAnalysis()
+
+    # Bio analysis
+    result.bio_analysis = analyze_bio(client, artist, ext, model=model)
+
+    # Image analysis
+    result.image_analysis = analyze_image(client, artist, model=model)
+
+    return result
+
+
+def _extract_field(text: str, field_name: str, default: str = "") -> str:
+    """Extract a field value from structured Claude response."""
+    pattern = rf"{field_name}:\s*(.+?)(?:\n|$)"
+    m = re.search(pattern, text, re.IGNORECASE)
+    if m:
+        return m.group(1).strip().strip("[]")
+    return default

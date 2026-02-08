@@ -45,6 +45,7 @@ from spotify_audit.scoring import (
     PlaylistReport,
 )
 from spotify_audit.reports.formatter import to_markdown, to_html, to_json
+from spotify_audit.deep_analysis import run_deep_analysis, DeepAnalysis
 
 console = Console()
 logger = logging.getLogger("spotify_audit")
@@ -683,6 +684,15 @@ def _run_audit(
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
     bandsintown_client = BandsintownClient(app_id=config.bandsintown_app_id, delay=0.3)
 
+    # Set up Claude (Deep tier) if key available
+    anthropic_client = None
+    if config.anthropic_api_key and max_tier == "deep":
+        try:
+            from anthropic import Anthropic
+            anthropic_client = Anthropic(api_key=config.anthropic_api_key)
+        except ImportError:
+            logger.warning("anthropic package not installed — Deep tier unavailable")
+
     # Show which APIs are configured
     configured = ["Deezer", "MusicBrainz"]  # always available (no key needed)
     if genius_client.enabled:
@@ -693,6 +703,8 @@ def _run_audit(
         configured.append("Setlist.fm")
     if bandsintown_client.enabled:
         configured.append("Bandsintown")
+    if anthropic_client:
+        configured.append("Claude (Deep)")
     console.print(f"APIs: [green]{', '.join(configured)}[/green]")
 
     any_external = (genius_client.enabled or discogs_client.enabled

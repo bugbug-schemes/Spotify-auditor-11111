@@ -1857,3 +1857,50 @@ def evaluate_artist(
         contributors=artist.contributors,
         external_data=ext,
     )
+
+
+def incorporate_deep_evidence(
+    evaluation: ArtistEvaluation,
+    deep_evidence: list[Evidence],
+) -> ArtistEvaluation:
+    """Add Deep-tier evidence to an existing evaluation and re-run the verdict.
+
+    This lets us append Claude bio/image analysis results after the initial
+    Standard evaluation without re-running all the collectors.
+    """
+    if not deep_evidence:
+        return evaluation
+
+    # Merge all evidence
+    all_evidence = (
+        evaluation.red_flags
+        + evaluation.green_flags
+        + evaluation.neutral_notes
+        + deep_evidence
+    )
+
+    # Re-separate by type
+    red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]
+    green_flags = [e for e in all_evidence if e.evidence_type == "green_flag"]
+    neutral_notes = [e for e in all_evidence if e.evidence_type == "neutral"]
+
+    # Re-run decision tree with expanded evidence
+    decision_path: list[str] = ["Re-evaluated with Deep tier (Claude) evidence"]
+    verdict, confidence = _decide_verdict(
+        red_flags, green_flags, evaluation.platform_presence, decision_path,
+    )
+
+    return ArtistEvaluation(
+        artist_id=evaluation.artist_id,
+        artist_name=evaluation.artist_name,
+        verdict=verdict,
+        confidence=confidence,
+        platform_presence=evaluation.platform_presence,
+        red_flags=red_flags,
+        green_flags=green_flags,
+        neutral_notes=neutral_notes,
+        decision_path=decision_path,
+        labels=evaluation.labels,
+        contributors=evaluation.contributors,
+        external_data=evaluation.external_data,
+    )
