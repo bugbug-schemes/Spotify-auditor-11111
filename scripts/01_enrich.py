@@ -364,6 +364,8 @@ def main():
     parser = argparse.ArgumentParser(description="Phase 1: Enrich seed artists")
     parser.add_argument("--limit", type=int, default=0, help="Max artists to process (0=all)")
     parser.add_argument("--start", type=int, default=0, help="Start index")
+    parser.add_argument("--control", action="store_true",
+                        help="Enrich control group instead of PFC seeds")
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -377,13 +379,19 @@ def main():
     if env_path.exists():
         load_dotenv(env_path, override=True)
 
-    # Load seeds
-    if not SEEDS_FILE.exists():
-        logger.error("Seeds file not found: %s", SEEDS_FILE)
+    # Load seeds (PFC corpus or control group)
+    if args.control:
+        seeds_path = DATA_DIR / "seeds" / "control_group.json"
+        label = "control group"
+    else:
+        seeds_path = SEEDS_FILE
+        label = "seed"
+    if not seeds_path.exists():
+        logger.error("Seeds file not found: %s", seeds_path)
         sys.exit(1)
-    with open(SEEDS_FILE) as f:
+    with open(seeds_path) as f:
         seeds = json.load(f)
-    logger.info("Loaded %d seed artists", len(seeds))
+    logger.info("Loaded %d %s artists", len(seeds), label)
 
     # Ensure output dir
     ENRICHED_DIR.mkdir(parents=True, exist_ok=True)
