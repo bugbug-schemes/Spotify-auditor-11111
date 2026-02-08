@@ -818,6 +818,35 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
                    "names like this, so this is only a weak signal.",
         ))
 
+    # Mood-word track titles (PFC tracks use generic mood/atmosphere names)
+    mood_words = {
+        "calm", "peaceful", "gentle", "soft", "quiet", "serene", "tranquil",
+        "dreamy", "hazy", "misty", "ambient", "chill", "cozy", "warm",
+        "morning", "evening", "night", "dawn", "dusk", "sunset", "sunrise",
+        "rain", "ocean", "forest", "garden", "meadow", "river", "sky",
+        "clouds", "breeze", "wind", "snow", "light", "glow", "drift",
+        "float", "flow", "sleep", "rest", "relax", "breathe", "solitude",
+        "silence", "whisper", "echo", "reflection", "meditation",
+    }
+    if artist.track_titles:
+        mood_count = 0
+        for title in artist.track_titles:
+            title_words = set(title.lower().split())
+            if title_words & mood_words:
+                mood_count += 1
+        mood_ratio = mood_count / len(artist.track_titles) if artist.track_titles else 0
+        if mood_ratio >= 0.7 and len(artist.track_titles) >= 4:
+            evidence.append(Evidence(
+                finding=f"{mood_ratio:.0%} of track titles use generic mood/atmosphere words",
+                source="Name analysis",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"{mood_count} of {len(artist.track_titles)} tracks have names built "
+                       "from mood vocabulary (calm, peaceful, rain, morning, etc.). PFC music "
+                       "is often named to match playlist moods rather than artistic expression. "
+                       f"Sample titles: {', '.join(artist.track_titles[:5])}.",
+            ))
+
     return evidence
 
 
@@ -958,6 +987,24 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
         return evidence
 
     avg_rank = statistics.mean(artist.track_ranks)
+
+    # Top tracks concentration: if 1-2 tracks hold vast majority of popularity
+    if len(artist.track_ranks) >= 4:
+        sorted_ranks = sorted(artist.track_ranks, reverse=True)
+        total_rank = sum(sorted_ranks)
+        if total_rank > 0:
+            top2_share = sum(sorted_ranks[:2]) / total_rank
+            if top2_share >= 0.90:
+                evidence.append(Evidence(
+                    finding=f"Top 2 tracks hold {top2_share:.0%} of total rank score",
+                    source="Deezer",
+                    evidence_type="red_flag",
+                    strength="moderate",
+                    detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
+                           f"{top2_share:.0%} of all popularity. This concentration pattern "
+                           "is consistent with playlist stuffing — a couple of tracks placed "
+                           "on playlists while the rest have near-zero organic plays.",
+                ))
 
     if avg_rank >= 500_000:
         evidence.append(Evidence(

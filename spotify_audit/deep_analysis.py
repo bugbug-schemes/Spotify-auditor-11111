@@ -395,6 +395,91 @@ def _parse_image_response(response: str) -> list[Evidence]:
     return evidence
 
 
+def _synthesize(
+    client: Anthropic,
+    artist: ArtistInfo,
+    ext: ExternalData,
+    bio_evidence: list[Evidence],
+    image_evidence: list[Evidence],
+    model: str = "claude-sonnet-4-5-20250929",
+) -> list[Evidence]:
+    """Final synthesis: combine all signals into a threat assessment."""
+    context = _build_artist_context(artist, ext)
+
+    # Summarize prior evidence
+    prior_lines = []
+    for ev in bio_evidence + image_evidence:
+        flag = "RED" if ev.evidence_type == "red_flag" else ("GREEN" if ev.evidence_type == "green_flag" else "NEUTRAL")
+        prior_lines.append(f"[{flag} - {ev.strength}] {ev.finding}: {ev.detail}")
+
+    if not prior_lines:
+        return []
+
+    prompt = f"""You are a music industry analyst investigating whether this is a real artist or a fabricated/ghost/AI artist.
+
+ARTIST DATA:
+{context}
+
+EVIDENCE COLLECTED SO FAR:
+{chr(10).join(prior_lines)}
+
+Based on ALL the evidence above, provide a final synthesis assessment.
+
+Classify into one of these threat categories:
+- PFC_GHOST: Fabricated artist identity created by a production company (like Epidemic Sound), music written by ghost producers under fake names
+- AI_GENERATED: Music created primarily by AI tools, artist identity may not correspond to a real person
+- LEGITIMATE: Real human artist with genuine creative output
+- INCONCLUSIVE: Not enough evidence to determine
+
+Respond in this EXACT format:
+CATEGORY: [PFC_GHOST|AI_GENERATED|LEGITIMATE|INCONCLUSIVE]
+CONFIDENCE: [HIGH|MEDIUM|LOW]
+REASONING: [2-3 sentences summarizing the key evidence and your conclusion]"""
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=300,
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = response.content[0].text.strip()
+    except Exception as exc:
+        logger.debug("Synthesis failed for %s: %s", artist.name, exc)
+        return []
+
+    evidence = []
+    category = _extract_field(text, "CATEGORY", "INCONCLUSIVE").upper()
+    confidence = _extract_field(text, "CONFIDENCE", "LOW").upper()
+    reasoning = _extract_field(text, "REASONING", "")
+
+    if category in ("PFC_GHOST", "AI_GENERATED"):
+        evidence.append(Evidence(
+            finding=f"Claude synthesis: {category.replace('_', ' ').title()}",
+            source="Claude synthesis",
+            evidence_type="red_flag",
+            strength="strong" if confidence == "HIGH" else "moderate",
+            detail=reasoning,
+        ))
+    elif category == "LEGITIMATE":
+        evidence.append(Evidence(
+            finding="Claude synthesis: Likely Legitimate",
+            source="Claude synthesis",
+            evidence_type="green_flag",
+            strength="strong" if confidence == "HIGH" else "moderate",
+            detail=reasoning,
+        ))
+    else:
+        evidence.append(Evidence(
+            finding="Claude synthesis: Inconclusive",
+            source="Claude synthesis",
+            evidence_type="neutral",
+            strength="weak",
+            detail=reasoning,
+        ))
+
+    return evidence
+
+
 def run_deep_analysis(
     client: Anthropic,
     artist: ArtistInfo,
@@ -409,6 +494,13 @@ def run_deep_analysis(
 
     # Image analysis
     result.image_analysis = analyze_image(client, artist, model=model)
+
+    # Synthesis: combine all signals
+    result.synthesis = _synthesize(
+        client, artist, ext,
+        result.bio_analysis, result.image_analysis,
+        model=model,
+    )
 
     return result
 

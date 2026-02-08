@@ -58,6 +58,11 @@ def _artist_to_dict(a: ArtistReport) -> dict:
         "verdict": a.verdict,
     }
 
+    # Threat category
+    if a.threat_category is not None:
+        d["threat_category"] = a.threat_category
+        d["threat_category_name"] = a.threat_category_name
+
     # Evidence-based evaluation
     ev = a.evaluation
     if ev:
@@ -131,17 +136,18 @@ def to_markdown(report: PlaylistReport) -> str:
     # Artist evaluation table
     lines.append("## Artist Evaluations")
     lines.append("")
-    lines.append("| Verdict | Artist | APIs Reached | Key Evidence | Confidence |")
-    lines.append("|---|---|---|---|---|")
+    lines.append("| Verdict | Artist | Threat Type | APIs Reached | Key Evidence | Confidence |")
+    lines.append("|---|---|---|---|---|---|")
     for a in report.artists:
         ev = a.evaluation
+        threat = a.threat_category_name or "-"
         if ev:
             key_ev = _md_key_evidence(ev)
             sources = ev.sources_reached
             api_str = ", ".join(n for n, r in sources.items() if r)
-            lines.append(f"| {ev.verdict.value} | {a.artist_name} | {api_str} | {key_ev} | {ev.confidence} |")
+            lines.append(f"| {ev.verdict.value} | {a.artist_name} | {threat} | {api_str} | {key_ev} | {ev.confidence} |")
         else:
-            lines.append(f"| {a.label} | {a.artist_name} | - | - | - |")
+            lines.append(f"| {a.label} | {a.artist_name} | {threat} | - | - | - |")
     lines.append("")
 
     # Detailed evidence cards for all artists
@@ -157,6 +163,8 @@ def to_markdown(report: PlaylistReport) -> str:
             lines.append(f"### {a.artist_name}")
             lines.append("")
             lines.append(f"**Verdict:** {ev.verdict.value} ({ev.confidence} confidence)")
+            if a.threat_category_name:
+                lines.append(f"**Threat Category:** {a.threat_category_name}")
             lines.append("")
 
             # Category scores
@@ -336,7 +344,7 @@ def to_html(report: PlaylistReport) -> str:
   .artist-name {{ font-size: 1.15rem; font-weight: 600; }}
   .verdict-badge {{
     padding: 0.3rem 0.8rem; border-radius: 16px; font-size: 0.8rem;
-    font-weight: 600; color: #000;
+    font-weight: 600; color: #111;
   }}
   .card-body {{ padding: 1.5rem; display: none; }}
   .card-body.open {{ display: block; }}
@@ -460,6 +468,11 @@ def _build_artist_card_html(a: ArtistReport, ev: ArtistEvaluation, idx: int) -> 
     sources = ev.sources_reached
     ext = ev.external_data or ExternalData()
 
+    # Threat category badge (if applicable)
+    threat_html = ""
+    if a.threat_category_name:
+        threat_html = f' <span style="background: #333; color: #f97316; padding: 0.3rem 0.8rem; border-radius: 16px; font-size: 0.75rem; font-weight: 600; margin-left: 0.5rem">{_esc(a.threat_category_name)}</span>'
+
     # Build plain-English explanation
     explanation = _build_explanation(ev)
 
@@ -524,11 +537,11 @@ def _build_artist_card_html(a: ArtistReport, ev: ArtistEvaluation, idx: int) -> 
     card_html = f"""<div class="artist-card">
   <div class="card-header">
     <span class="artist-name">{_esc(a.artist_name)}</span>
-    <span class="verdict-badge" style="background: {verdict_color}">{_esc(verdict_str)}</span>
+    <span class="verdict-badge" style="background: {verdict_color}">{_esc(verdict_str)}</span>{threat_html}
   </div>
   <div class="card-body">
     <div class="explanation" style="border-color: {verdict_color}; background: {verdict_bg}20">
-      <span style="color: #000">{explanation}</span>
+      <span style="color: #e0e0e0">{explanation}</span>
     </div>
 
     <div class="scorecard-grid">
