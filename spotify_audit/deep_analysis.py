@@ -505,6 +505,260 @@ def run_deep_analysis(
     return result
 
 
+# ---------------------------------------------------------------------------
+# Batch deep analysis — reduces API calls by grouping artists
+# ---------------------------------------------------------------------------
+
+BATCH_SIZE = 8  # artists per Claude call (bio & synthesis)
+
+
+def _batch_analyze_bios(
+    client: Anthropic,
+    batch: list[tuple[str, ArtistInfo, ExternalData]],
+    model: str = "claude-sonnet-4-5-20250929",
+) -> dict[str, list[Evidence]]:
+    """Analyze bios for multiple artists in a single Claude call.
+
+    Returns {artist_key: [Evidence, ...]} for each artist in the batch.
+    """
+    # Build combined prompt
+    artist_sections = []
+    keys_in_order: list[str] = []
+    bios_present: dict[str, str] = {}
+
+    for key, artist, ext in batch:
+        bio_text = _collect_bio_texts(artist, ext)
+        context = _build_artist_context(artist, ext)
+        keys_in_order.append(key)
+        bios_present[key] = bio_text
+
+        if not bio_text:
+            artist_sections.append(
+                f"=== ARTIST [{key}]: {artist.name} ===\n"
+                f"CONTEXT:\n{context}\n"
+                f"BIO: [NO BIO AVAILABLE]"
+            )
+        else:
+            artist_sections.append(
+                f"=== ARTIST [{key}]: {artist.name} ===\n"
+                f"CONTEXT:\n{context}\n"
+                f"BIO:\n{bio_text}"
+            )
+
+    prompt = f"""You are analyzing multiple artists' biographical text to determine if each is a real human artist or a fabricated/ghost/AI artist profile.
+
+For each artist, analyze:
+1. AI/ghost mentions (explicit AI, algorithm, "created by" platform)
+2. ChatGPT-style writing (generic, vague, "blending genres", "pushing boundaries")
+3. Verifiable claims (specific cities, venues, collaborators, education)
+4. Geographic specificity (hometown, country)
+5. Career timeline (specific years, albums, milestones)
+6. Red flags (unusually short, describes mood not person, reads like playlist description)
+
+{chr(10).join(artist_sections)}
+
+For EACH artist, respond in this EXACT format (one block per artist, in the same order):
+
+=== ARTIST [key] ===
+VERDICT: [AUTHENTIC|SUSPICIOUS|INCONCLUSIVE]
+CONFIDENCE: [HIGH|MEDIUM|LOW]
+AI_MENTIONED: [YES|NO]
+GEOGRAPHIC_SPECIFICITY: [YES|NO]
+VERIFIABLE_CLAIMS: [YES|NO]
+REASONING: [2-3 sentences]"""
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=300 * len(batch),
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = response.content[0].text.strip()
+    except Exception as exc:
+        logger.warning("Batch bio analysis failed: %s", exc)
+        # Fall back to individual calls
+        results: dict[str, list[Evidence]] = {}
+        for key, artist, ext in batch:
+            results[key] = analyze_bio(client, artist, ext, model=model)
+        return results
+
+    # Parse response — split by artist blocks
+    results: dict[str, list[Evidence]] = {}
+    for key in keys_in_order:
+        # Find the section for this artist
+        pattern = rf"===\s*ARTIST\s*\[{re.escape(key)}\]\s*===\s*(.*?)(?====\s*ARTIST|$)"
+        m = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
+        if m:
+            section = m.group(1).strip()
+            bio_text = bios_present.get(key, "")
+            results[key] = _parse_bio_response(section, bio_text)
+        else:
+            # Section not found — mark as neutral
+            results[key] = [Evidence(
+                finding="Bio analysis: could not parse batch response",
+                source="Claude (bio)",
+                evidence_type="neutral",
+                strength="weak",
+                detail="Artist section not found in batch response.",
+            )]
+
+    return results
+
+
+def _batch_synthesize(
+    client: Anthropic,
+    batch: list[tuple[str, ArtistInfo, ExternalData, list[Evidence], list[Evidence]]],
+    model: str = "claude-sonnet-4-5-20250929",
+) -> dict[str, list[Evidence]]:
+    """Run synthesis for multiple artists in a single Claude call.
+
+    batch items: (key, artist, ext, bio_evidence, image_evidence)
+    Returns {artist_key: [Evidence, ...]}.
+    """
+    artist_sections = []
+    keys_in_order: list[str] = []
+
+    for key, artist, ext, bio_ev, img_ev in batch:
+        keys_in_order.append(key)
+        context = _build_artist_context(artist, ext)
+
+        prior_lines = []
+        for ev in bio_ev + img_ev:
+            flag = "RED" if ev.evidence_type == "red_flag" else (
+                "GREEN" if ev.evidence_type == "green_flag" else "NEUTRAL"
+            )
+            prior_lines.append(f"[{flag} - {ev.strength}] {ev.finding}: {ev.detail}")
+
+        evidence_block = chr(10).join(prior_lines) if prior_lines else "[No evidence collected]"
+        artist_sections.append(
+            f"=== ARTIST [{key}] ===\n"
+            f"DATA:\n{context}\n"
+            f"EVIDENCE:\n{evidence_block}"
+        )
+
+    prompt = f"""You are a music industry analyst investigating whether these artists are real or fabricated/ghost/AI artists.
+
+For each artist, classify into one of these threat categories:
+- PFC_GHOST: Fabricated identity by a production company, ghost producers under fake names
+- AI_GENERATED: Music created primarily by AI tools, identity may not be real
+- LEGITIMATE: Real human artist with genuine creative output
+- INCONCLUSIVE: Not enough evidence to determine
+
+{chr(10).join(artist_sections)}
+
+For EACH artist, respond in this EXACT format (one block per artist, in the same order):
+
+=== ARTIST [key] ===
+CATEGORY: [PFC_GHOST|AI_GENERATED|LEGITIMATE|INCONCLUSIVE]
+CONFIDENCE: [HIGH|MEDIUM|LOW]
+REASONING: [2-3 sentences]"""
+
+    try:
+        response = client.messages.create(
+            model=model,
+            max_tokens=200 * len(batch),
+            messages=[{"role": "user", "content": prompt}],
+        )
+        text = response.content[0].text.strip()
+    except Exception as exc:
+        logger.debug("Batch synthesis failed: %s", exc)
+        # Fall back to individual
+        results: dict[str, list[Evidence]] = {}
+        for key, artist, ext, bio_ev, img_ev in batch:
+            results[key] = _synthesize(client, artist, ext, bio_ev, img_ev, model=model)
+        return results
+
+    results: dict[str, list[Evidence]] = {}
+    for key in keys_in_order:
+        pattern = rf"===\s*ARTIST\s*\[{re.escape(key)}\]\s*===\s*(.*?)(?====\s*ARTIST|$)"
+        m = re.search(pattern, text, re.DOTALL | re.IGNORECASE)
+        if m:
+            section = m.group(1).strip()
+            category = _extract_field(section, "CATEGORY", "INCONCLUSIVE").upper()
+            confidence = _extract_field(section, "CONFIDENCE", "LOW").upper()
+            reasoning = _extract_field(section, "REASONING", "")
+
+            evidence = []
+            if category in ("PFC_GHOST", "AI_GENERATED"):
+                evidence.append(Evidence(
+                    finding=f"Claude synthesis: {category.replace('_', ' ').title()}",
+                    source="Claude synthesis",
+                    evidence_type="red_flag",
+                    strength="strong" if confidence == "HIGH" else "moderate",
+                    detail=reasoning,
+                ))
+            elif category == "LEGITIMATE":
+                evidence.append(Evidence(
+                    finding="Claude synthesis: Likely Legitimate",
+                    source="Claude synthesis",
+                    evidence_type="green_flag",
+                    strength="strong" if confidence == "HIGH" else "moderate",
+                    detail=reasoning,
+                ))
+            else:
+                evidence.append(Evidence(
+                    finding="Claude synthesis: Inconclusive",
+                    source="Claude synthesis",
+                    evidence_type="neutral",
+                    strength="weak",
+                    detail=reasoning,
+                ))
+            results[key] = evidence
+        else:
+            results[key] = []
+
+    return results
+
+
+def run_deep_analysis_batch(
+    client: Anthropic,
+    artists: list[tuple[str, ArtistInfo, ExternalData]],
+    model: str = "claude-sonnet-4-5-20250929",
+    on_progress: "callable | None" = None,
+) -> dict[str, DeepAnalysis]:
+    """Run deep analysis for multiple artists, batching bio and synthesis calls.
+
+    Bio analysis: batched (BATCH_SIZE artists per call)
+    Image analysis: individual (each image is unique + large)
+    Synthesis: batched (BATCH_SIZE artists per call)
+
+    Args:
+        client: Anthropic client
+        artists: list of (key, ArtistInfo, ExternalData) tuples
+        model: Claude model to use
+        on_progress: optional callback called after each artist completes
+
+    Returns:
+        {key: DeepAnalysis} for each artist
+    """
+    results: dict[str, DeepAnalysis] = {key: DeepAnalysis() for key, _, _ in artists}
+
+    # Phase 1: Batch bio analysis
+    for i in range(0, len(artists), BATCH_SIZE):
+        batch = artists[i:i + BATCH_SIZE]
+        bio_results = _batch_analyze_bios(client, batch, model=model)
+        for key, evidence in bio_results.items():
+            results[key].bio_analysis = evidence
+
+    # Phase 2: Individual image analysis (images too large to batch)
+    for key, artist, ext in artists:
+        results[key].image_analysis = analyze_image(client, artist, model=model)
+        if on_progress:
+            on_progress()
+
+    # Phase 3: Batch synthesis
+    for i in range(0, len(artists), BATCH_SIZE):
+        batch_items = []
+        for key, artist, ext in artists[i:i + BATCH_SIZE]:
+            r = results[key]
+            batch_items.append((key, artist, ext, r.bio_analysis, r.image_analysis))
+        synth_results = _batch_synthesize(client, batch_items, model=model)
+        for key, evidence in synth_results.items():
+            results[key].synthesis = evidence
+
+    return results
+
+
 def _extract_field(text: str, field_name: str, default: str = "") -> str:
     """Extract a field value from structured Claude response."""
     pattern = rf"{field_name}:\s*(.+?)(?:\n|$)"

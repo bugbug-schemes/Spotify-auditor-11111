@@ -46,7 +46,7 @@ from spotify_audit.scoring import (
     PlaylistReport,
 )
 from spotify_audit.reports.formatter import to_markdown, to_html, to_json
-from spotify_audit.deep_analysis import run_deep_analysis, DeepAnalysis
+from spotify_audit.deep_analysis import run_deep_analysis, run_deep_analysis_batch, DeepAnalysis
 
 console = Console()
 logger = logging.getLogger("spotify_audit")
@@ -935,9 +935,20 @@ def _run_audit(
                 deep_candidates.append(key)
 
         if deep_candidates:
+            # Build batch input
+            batch_input: list[tuple[str, ArtistInfo, ExternalData]] = []
+            for key in deep_candidates:
+                artist = artist_infos.get(key)
+                ev = evaluations.get(key)
+                if artist and ev:
+                    ext = ev.external_data or ExternalData()
+                    batch_input.append((key, artist, ext))
+
+            n_calls = (2 * ((len(batch_input) + 7) // 8)) + len(batch_input)
             console.print(
                 f"\n[bold magenta]Phase 3: Deep analysis (Claude) for "
-                f"{len(deep_candidates)} artists...[/bold magenta]"
+                f"{len(batch_input)} artists "
+                f"(~{n_calls} API calls, batched)...[/bold magenta]"
             )
             with Progress(
                 SpinnerColumn(),
@@ -947,27 +958,23 @@ def _run_audit(
                 console=console,
             ) as progress:
                 deep_task = progress.add_task(
-                    "Claude bio + image analysis...", total=len(deep_candidates),
+                    "Claude bio + image + synthesis...", total=len(batch_input),
                 )
 
-                for key in deep_candidates:
-                    artist = artist_infos.get(key)
-                    ev = evaluations.get(key)
-                    if not artist or not ev:
-                        progress.advance(deep_task)
-                        continue
-
-                    ext = ev.external_data or ExternalData()
-                    try:
-                        deep = run_deep_analysis(anthropic_client, artist, ext)
+                try:
+                    deep_results = run_deep_analysis_batch(
+                        anthropic_client, batch_input,
+                        on_progress=lambda: progress.advance(deep_task),
+                    )
+                    for key, deep in deep_results.items():
                         all_deep_ev = deep.bio_analysis + deep.image_analysis + deep.synthesis
                         if all_deep_ev:
-                            evaluations[key] = incorporate_deep_evidence(ev, all_deep_ev)
-                            deep_count += 1
-                    except Exception as exc:
-                        logger.debug("Deep analysis failed for '%s': %s", artist.name, exc)
-
-                    progress.advance(deep_task)
+                            ev = evaluations.get(key)
+                            if ev:
+                                evaluations[key] = incorporate_deep_evidence(ev, all_deep_ev)
+                                deep_count += 1
+                except Exception as exc:
+                    logger.warning("Batch deep analysis failed: %s", exc)
 
             console.print(f"[magenta]-> Deep analysis completed for {deep_count} artists[/magenta]")
     elif max_tier == "deep" and not anthropic_client:
