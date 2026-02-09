@@ -697,6 +697,16 @@ def _run_audit(
         f"{meta.total_tracks} tracks by {meta.owner}"
     )
 
+    # Set up entity intelligence DB (for prior knowledge)
+    try:
+        entity_db = EntityDB()
+        db_stats = entity_db.stats()
+        db_total = sum(db_stats[t] for t in ("artists", "labels", "songwriters", "publishers"))
+        if db_total > 0:
+            console.print(f"Entity DB: [cyan]{db_total} entities loaded[/cyan]")
+    except Exception:
+        entity_db = None
+
     # Set up all clients
     deezer_client = DeezerClient(delay=0.3)
     mb_client = MusicBrainzClient(delay=1.1)
@@ -885,7 +895,7 @@ def _run_audit(
                 )
 
                 # Run evidence evaluation with ALL data
-                ev = evaluate_artist(artist, external=ext)
+                ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
                 evaluations[key] = ev
 
                 # Also run legacy Standard weighted score
@@ -910,14 +920,14 @@ def _run_audit(
         if key not in evaluations:
             artist = artist_infos.get(key)
             if artist:
-                ev = evaluate_artist(artist)
+                ev = evaluate_artist(artist, entity_db=entity_db)
                 evaluations[key] = ev
             else:
                 # Last resort: minimal evaluation from quick scan data only
                 logger.warning("No ArtistInfo for '%s' — generating minimal evaluation", key)
                 qr = quick_results[key]
                 minimal = ArtistInfo(artist_id=qr.artist_id, name=qr.artist_name)
-                ev = evaluate_artist(minimal)
+                ev = evaluate_artist(minimal, entity_db=entity_db)
                 evaluations[key] = ev
 
     # 5. Deep tier — Claude bio + image analysis
@@ -1011,50 +1021,51 @@ def _run_audit(
     blocklist_report = analyze_for_blocklist(all_evaluations) if all_evaluations else None
 
     # 8. Populate entity database with scan results
-    try:
-        entity_db = EntityDB()
-        scan_id = entity_db.start_scan(
-            playlist_id=meta.playlist_id,
-            playlist_name=meta.name,
-            scan_tier=max_tier,
-            artist_count=len(artist_reports),
-        )
-        for report in artist_reports:
-            ev = report.evaluation
-            if not ev:
-                continue
-            aid = entity_db.upsert_artist(
-                report.artist_name,
-                threat_status=(
-                    "confirmed_bad" if ev.verdict == Verdict.LIKELY_ARTIFICIAL
-                    else "suspected" if ev.verdict == Verdict.SUSPICIOUS
-                    else "cleared" if ev.verdict == Verdict.VERIFIED_ARTIST
-                    else "unknown"
-                ),
-                threat_category=report.threat_category,
-                latest_verdict=ev.verdict.value,
-                latest_confidence=ev.confidence,
+    if entity_db:
+        try:
+            scan_id = entity_db.start_scan(
+                playlist_id=meta.playlist_id,
+                playlist_name=meta.name,
+                scan_tier=max_tier,
+                artist_count=len(artist_reports),
             )
-            # Link labels
-            for lbl in ev.labels:
-                lid = entity_db.upsert_label(lbl)
-                entity_db.link_artist_label(aid, lid, source="scan")
-            # Link contributors
-            for contrib in ev.contributors:
-                sid = entity_db.upsert_songwriter(contrib)
-                entity_db.link_artist_songwriter(aid, sid, source="scan")
-            # Store key red flags as observations
-            for e in ev.strong_red_flags:
-                entity_db.add_observation(
-                    "artist", aid, "red_flag", e.finding,
-                    detail=e.detail, source=e.source,
-                    strength=e.strength, scan_id=scan_id,
+            for report in artist_reports:
+                ev = report.evaluation
+                if not ev:
+                    continue
+                aid = entity_db.upsert_artist(
+                    report.artist_name,
+                    threat_status=(
+                        "confirmed_bad" if ev.verdict == Verdict.LIKELY_ARTIFICIAL
+                        else "suspected" if ev.verdict == Verdict.SUSPICIOUS
+                        else "cleared" if ev.verdict == Verdict.VERIFIED_ARTIST
+                        else "unknown"
+                    ),
+                    threat_category=report.threat_category,
+                    latest_verdict=ev.verdict.value,
+                    latest_confidence=ev.confidence,
                 )
-        entity_db.refresh_entity_counts()
-        entity_db.complete_scan(scan_id)
-        entity_db.close()
-    except Exception as exc:
-        logger.debug("Entity DB update failed (non-fatal): %s", exc)
+                # Link labels
+                for lbl in ev.labels:
+                    lid = entity_db.upsert_label(lbl)
+                    entity_db.link_artist_label(aid, lid, source="scan")
+                # Link contributors
+                for contrib in ev.contributors:
+                    sid = entity_db.upsert_songwriter(contrib)
+                    entity_db.link_artist_songwriter(aid, sid, source="scan")
+                # Store key red flags as observations
+                for e in ev.strong_red_flags:
+                    entity_db.add_observation(
+                        "artist", aid, "red_flag", e.finding,
+                        detail=e.detail, source=e.source,
+                        strength=e.strength, scan_id=scan_id,
+                    )
+            entity_db.refresh_entity_counts()
+            entity_db.complete_scan(scan_id)
+        except Exception as exc:
+            logger.debug("Entity DB update failed (non-fatal): %s", exc)
+        finally:
+            entity_db.close()
 
     # 9. Build playlist-level report
     playlist_report = build_playlist_report(

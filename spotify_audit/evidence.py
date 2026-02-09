@@ -1893,12 +1893,159 @@ def _decide_verdict(
 
 
 # ---------------------------------------------------------------------------
+# Entity database intelligence collector
+# ---------------------------------------------------------------------------
+
+def _collect_entity_db_evidence(
+    artist: ArtistInfo,
+    entity_db: "EntityDB",
+) -> list[Evidence]:
+    """Check the entity intelligence database for prior intelligence.
+
+    Looks up:
+    - Artist itself (previously flagged?)
+    - Labels (any confirmed_bad or suspected?)
+    - Contributors/songwriters (any confirmed_bad or suspected?)
+    - Cowriter network (connected to other bad artists?)
+    """
+    evidence: list[Evidence] = []
+
+    # 1. Check if this artist is already flagged
+    db_artist = entity_db.get_artist(artist.name)
+    if db_artist:
+        status = db_artist.get("threat_status", "unknown")
+        if status == "confirmed_bad":
+            evidence.append(Evidence(
+                finding="Artist previously confirmed as bad in entity database",
+                source="Entity DB",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"'{artist.name}' was previously flagged as confirmed_bad. "
+                       f"Notes: {db_artist.get('notes', 'none')}",
+            ))
+        elif status == "suspected":
+            evidence.append(Evidence(
+                finding="Artist previously flagged as suspected in entity database",
+                source="Entity DB",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"'{artist.name}' was flagged as suspected in a prior scan. "
+                       f"Notes: {db_artist.get('notes', 'none')}",
+            ))
+        elif status == "cleared":
+            evidence.append(Evidence(
+                finding="Artist previously cleared in entity database",
+                source="Entity DB",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"'{artist.name}' was manually cleared as legitimate. "
+                       f"Notes: {db_artist.get('notes', 'none')}",
+            ))
+
+    # 2. Check labels against entity DB
+    bad_labels: list[str] = []
+    suspected_labels: list[str] = []
+    for label_name in artist.labels:
+        db_label = entity_db.get_label(label_name)
+        if db_label:
+            label_status = db_label.get("threat_status", "unknown")
+            label_artists = db_label.get("artist_count", 0)
+            if label_status == "confirmed_bad":
+                bad_labels.append(f"{label_name} ({label_artists} artists)")
+            elif label_status == "suspected":
+                suspected_labels.append(f"{label_name} ({label_artists} artists)")
+
+    if bad_labels:
+        evidence.append(Evidence(
+            finding=f"Label(s) flagged as confirmed bad: {', '.join(bad_labels)}",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Artist releases through label(s) that are confirmed bad actors "
+                   f"in the entity intelligence database.",
+        ))
+    if suspected_labels:
+        evidence.append(Evidence(
+            finding=f"Label(s) flagged as suspected: {', '.join(suspected_labels)}",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail=f"Artist releases through label(s) that are suspected in the "
+                   f"entity intelligence database.",
+        ))
+
+    # 3. Check contributors against entity DB
+    bad_writers: list[str] = []
+    suspected_writers: list[str] = []
+    for contrib in artist.contributors:
+        db_sw = entity_db.get_songwriter(contrib)
+        if db_sw:
+            sw_status = db_sw.get("threat_status", "unknown")
+            sw_artists = db_sw.get("artist_count", 0)
+            if sw_status == "confirmed_bad":
+                bad_writers.append(f"{contrib} ({sw_artists} artists)")
+            elif sw_status == "suspected":
+                suspected_writers.append(f"{contrib} ({sw_artists} artists)")
+
+    if bad_writers:
+        evidence.append(Evidence(
+            finding=f"Credits include confirmed bad songwriter(s): {', '.join(bad_writers)}",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Track credits include songwriter(s)/producer(s) confirmed as bad "
+                   f"actors in the entity intelligence database.",
+        ))
+    if suspected_writers:
+        evidence.append(Evidence(
+            finding=f"Credits include suspected songwriter(s): {', '.join(suspected_writers)}",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail=f"Track credits include songwriter(s)/producer(s) flagged as "
+                   f"suspected in the entity intelligence database.",
+        ))
+
+    # 4. Check cowriter network — is this artist connected to known bad actors?
+    if db_artist:
+        cowriter_net = entity_db.get_cowriter_network(db_artist["id"])
+        bad_connections = [
+            cw for cw in cowriter_net
+            if cw.get("threat_status") in ("confirmed_bad", "suspected")
+        ]
+        if len(bad_connections) >= 3:
+            names = [cw["name"] for cw in bad_connections[:5]]
+            evidence.append(Evidence(
+                finding=f"Connected to {len(bad_connections)} flagged artists via shared producers",
+                source="Entity DB",
+                evidence_type="red_flag",
+                strength="strong" if len(bad_connections) >= 5 else "moderate",
+                detail=f"Shared songwriter/producer connections link this artist to: "
+                       f"{', '.join(names)}"
+                       f"{f' and {len(bad_connections) - 5} more' if len(bad_connections) > 5 else ''}. "
+                       f"This network pattern is common in PFC operations.",
+            ))
+        elif len(bad_connections) >= 1:
+            names = [cw["name"] for cw in bad_connections]
+            evidence.append(Evidence(
+                finding=f"Connected to {len(bad_connections)} flagged artist(s) via shared producers",
+                source="Entity DB",
+                evidence_type="red_flag",
+                strength="weak",
+                detail=f"Shared songwriter/producer connections to: {', '.join(names)}.",
+            ))
+
+    return evidence
+
+
+# ---------------------------------------------------------------------------
 # Main evaluation entry point
 # ---------------------------------------------------------------------------
 
 def evaluate_artist(
     artist: ArtistInfo,
     external: ExternalData | None = None,
+    entity_db: "EntityDB | None" = None,
 ) -> ArtistEvaluation:
     """Run the full evidence-based evaluation on a single artist.
 
@@ -1909,6 +2056,7 @@ def evaluate_artist(
         artist: Core artist data (from Deezer/Spotify)
         external: Optional results from Standard-tier API lookups
                   (Genius, Discogs, Setlist.fm, Bandsintown, MusicBrainz)
+        entity_db: Optional entity intelligence database for prior knowledge
     """
     ext = external or ExternalData()
     all_evidence: list[Evidence] = []
@@ -1991,6 +2139,10 @@ def evaluate_artist(
     all_evidence.extend(_collect_identity_evidence(ext))
     all_evidence.extend(_collect_lastfm_evidence(ext))
     all_evidence.extend(_collect_touring_geography_evidence(ext))
+
+    # Entity intelligence database (accumulated from prior scans)
+    if entity_db:
+        all_evidence.extend(_collect_entity_db_evidence(artist, entity_db))
 
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]
