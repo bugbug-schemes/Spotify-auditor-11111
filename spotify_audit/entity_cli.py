@@ -208,7 +208,11 @@ def lookup(ctx: click.Context, entity_type: str, name: str) -> None:
             lines.append(f"Threat category: {entity['threat_category']}")
         if entity.get("country"):
             lines.append(f"Country: {entity['country']}")
+
+        # Platform IDs
         ids = []
+        if entity.get("spotify_id"):
+            ids.append(f"Spotify:{entity['spotify_id']}")
         if entity.get("deezer_id"):
             ids.append(f"Deezer:{entity['deezer_id']}")
         if entity.get("musicbrainz_id"):
@@ -217,8 +221,39 @@ def lookup(ctx: click.Context, entity_type: str, name: str) -> None:
             ids.append(f"Genius:{entity['genius_id']}")
         if entity.get("discogs_id"):
             ids.append(f"Discogs:{entity['discogs_id']}")
+        if entity.get("setlistfm_id"):
+            ids.append(f"Setlist.fm:{entity['setlistfm_id']}")
+        if entity.get("bandsintown_id"):
+            ids.append(f"BIT:{entity['bandsintown_id']}")
+        if entity.get("lastfm_url"):
+            ids.append(f"Last.fm:{entity['lastfm_url']}")
         if ids:
             lines.append(f"IDs: {', '.join(ids)}")
+
+        # API coverage
+        api_names = [
+            ("found_spotify", "Spotify"), ("found_deezer", "Deezer"),
+            ("found_musicbrainz", "MusicBrainz"), ("found_genius", "Genius"),
+            ("found_discogs", "Discogs"), ("found_setlistfm", "Setlist.fm"),
+            ("found_bandsintown", "Bandsintown"), ("found_lastfm", "Last.fm"),
+        ]
+        found = [name for col, name in api_names if entity.get(col)]
+        missing = [name for col, name in api_names if not entity.get(col)]
+        if found:
+            lines.append(f"Found on: [green]{', '.join(found)}[/green] ({entity.get('platform_count', len(found))} platforms)")
+        if missing:
+            lines.append(f"Missing:  [dim]{', '.join(missing)}[/dim]")
+
+        # Metrics
+        metrics = []
+        if entity.get("deezer_fans"):
+            metrics.append(f"Deezer fans: {entity['deezer_fans']:,}")
+        if entity.get("lastfm_listeners"):
+            metrics.append(f"Last.fm listeners: {entity['lastfm_listeners']:,}")
+        if entity.get("lastfm_playcount"):
+            metrics.append(f"Last.fm playcount: {entity['lastfm_playcount']:,}")
+        if metrics:
+            lines.append("  ".join(metrics))
     elif entity_type in ("label", "songwriter"):
         if entity.get("artist_count"):
             lines.append(f"Connected to {entity['artist_count']} artists")

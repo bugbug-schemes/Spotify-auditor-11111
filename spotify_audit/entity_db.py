@@ -73,12 +73,29 @@ CREATE TABLE IF NOT EXISTS artists (
     musicbrainz_id  TEXT,
     genius_id       INTEGER,
     discogs_id      INTEGER,
+    setlistfm_id    TEXT,
+    bandsintown_id  TEXT,
+    lastfm_url      TEXT,
+    -- Per-API found flags
+    found_spotify   INTEGER DEFAULT 0,
+    found_deezer    INTEGER DEFAULT 0,
+    found_musicbrainz INTEGER DEFAULT 0,
+    found_genius    INTEGER DEFAULT 0,
+    found_discogs   INTEGER DEFAULT 0,
+    found_setlistfm INTEGER DEFAULT 0,
+    found_bandsintown INTEGER DEFAULT 0,
+    found_lastfm    INTEGER DEFAULT 0,
+    platform_count  INTEGER DEFAULT 0,
+    -- Threat & verdict
     threat_status   TEXT NOT NULL DEFAULT 'unknown',
     threat_category REAL,            -- 1, 1.5, 2, 3, 4
     latest_verdict  TEXT,            -- e.g. "Likely Artificial"
     latest_confidence TEXT,
     country         TEXT,
     genres          TEXT,             -- JSON array
+    deezer_fans     INTEGER,
+    lastfm_listeners INTEGER,
+    lastfm_playcount INTEGER,
     first_seen      TEXT NOT NULL,
     last_seen       TEXT NOT NULL,
     notes           TEXT DEFAULT '',
@@ -212,6 +229,28 @@ class EntityDB:
 
     def _init_schema(self) -> None:
         self._conn.executescript(_SCHEMA)
+        # Migrations: add columns that may be missing on older DBs
+        for col, typ in [
+            ("setlistfm_id", "TEXT"),
+            ("bandsintown_id", "TEXT"),
+            ("lastfm_url", "TEXT"),
+            ("found_spotify", "INTEGER DEFAULT 0"),
+            ("found_deezer", "INTEGER DEFAULT 0"),
+            ("found_musicbrainz", "INTEGER DEFAULT 0"),
+            ("found_genius", "INTEGER DEFAULT 0"),
+            ("found_discogs", "INTEGER DEFAULT 0"),
+            ("found_setlistfm", "INTEGER DEFAULT 0"),
+            ("found_bandsintown", "INTEGER DEFAULT 0"),
+            ("found_lastfm", "INTEGER DEFAULT 0"),
+            ("platform_count", "INTEGER DEFAULT 0"),
+            ("deezer_fans", "INTEGER"),
+            ("lastfm_listeners", "INTEGER"),
+            ("lastfm_playcount", "INTEGER"),
+        ]:
+            try:
+                self._conn.execute(f"ALTER TABLE artists ADD COLUMN {col} {typ}")
+            except sqlite3.OperationalError:
+                pass  # column already exists
         self._conn.commit()
 
     def close(self) -> None:
@@ -240,6 +279,24 @@ class EntityDB:
         musicbrainz_id: str | None = None,
         genius_id: int | None = None,
         discogs_id: int | None = None,
+        setlistfm_id: str | None = None,
+        bandsintown_id: str | None = None,
+        lastfm_url: str | None = None,
+        # Per-API found flags
+        found_spotify: bool | None = None,
+        found_deezer: bool | None = None,
+        found_musicbrainz: bool | None = None,
+        found_genius: bool | None = None,
+        found_discogs: bool | None = None,
+        found_setlistfm: bool | None = None,
+        found_bandsintown: bool | None = None,
+        found_lastfm: bool | None = None,
+        platform_count: int | None = None,
+        # Metrics
+        deezer_fans: int | None = None,
+        lastfm_listeners: int | None = None,
+        lastfm_playcount: int | None = None,
+        # Threat & verdict
         threat_status: str = UNKNOWN,
         threat_category: float | None = None,
         latest_verdict: str | None = None,
@@ -253,6 +310,36 @@ class EntityDB:
         now = _now_iso()
         import json as _json
 
+        # Build dict of non-None optional fields for update/insert
+        optional: dict[str, Any] = {}
+        if spotify_id: optional["spotify_id"] = spotify_id
+        if deezer_id: optional["deezer_id"] = deezer_id
+        if musicbrainz_id: optional["musicbrainz_id"] = musicbrainz_id
+        if genius_id: optional["genius_id"] = genius_id
+        if discogs_id: optional["discogs_id"] = discogs_id
+        if setlistfm_id: optional["setlistfm_id"] = setlistfm_id
+        if bandsintown_id: optional["bandsintown_id"] = bandsintown_id
+        if lastfm_url: optional["lastfm_url"] = lastfm_url
+        if found_spotify is not None: optional["found_spotify"] = int(found_spotify)
+        if found_deezer is not None: optional["found_deezer"] = int(found_deezer)
+        if found_musicbrainz is not None: optional["found_musicbrainz"] = int(found_musicbrainz)
+        if found_genius is not None: optional["found_genius"] = int(found_genius)
+        if found_discogs is not None: optional["found_discogs"] = int(found_discogs)
+        if found_setlistfm is not None: optional["found_setlistfm"] = int(found_setlistfm)
+        if found_bandsintown is not None: optional["found_bandsintown"] = int(found_bandsintown)
+        if found_lastfm is not None: optional["found_lastfm"] = int(found_lastfm)
+        if platform_count is not None: optional["platform_count"] = platform_count
+        if deezer_fans is not None: optional["deezer_fans"] = deezer_fans
+        if lastfm_listeners is not None: optional["lastfm_listeners"] = lastfm_listeners
+        if lastfm_playcount is not None: optional["lastfm_playcount"] = lastfm_playcount
+        if threat_status != UNKNOWN: optional["threat_status"] = threat_status
+        if threat_category is not None: optional["threat_category"] = threat_category
+        if latest_verdict: optional["latest_verdict"] = latest_verdict
+        if latest_confidence: optional["latest_confidence"] = latest_confidence
+        if country: optional["country"] = country
+        if genres: optional["genres"] = _json.dumps(genres)
+        if notes: optional["notes"] = notes
+
         with self._tx():
             row = self._conn.execute(
                 "SELECT id FROM artists WHERE normalized_name = ?", (norm,)
@@ -260,52 +347,26 @@ class EntityDB:
 
             if row:
                 aid = row["id"]
-                updates: list[str] = ["last_seen = ?"]
+                updates = ["last_seen = ?"]
                 params: list[Any] = [now]
-                if spotify_id:
-                    updates.append("spotify_id = ?"); params.append(spotify_id)
-                if deezer_id:
-                    updates.append("deezer_id = ?"); params.append(deezer_id)
-                if musicbrainz_id:
-                    updates.append("musicbrainz_id = ?"); params.append(musicbrainz_id)
-                if genius_id:
-                    updates.append("genius_id = ?"); params.append(genius_id)
-                if discogs_id:
-                    updates.append("discogs_id = ?"); params.append(discogs_id)
-                if threat_status != UNKNOWN:
-                    updates.append("threat_status = ?"); params.append(threat_status)
-                if threat_category is not None:
-                    updates.append("threat_category = ?"); params.append(threat_category)
-                if latest_verdict:
-                    updates.append("latest_verdict = ?"); params.append(latest_verdict)
-                if latest_confidence:
-                    updates.append("latest_confidence = ?"); params.append(latest_confidence)
-                if country:
-                    updates.append("country = ?"); params.append(country)
-                if genres:
-                    updates.append("genres = ?"); params.append(_json.dumps(genres))
-                if notes:
-                    updates.append("notes = ?"); params.append(notes)
+                for col, val in optional.items():
+                    updates.append(f"{col} = ?")
+                    params.append(val)
                 params.append(aid)
                 self._conn.execute(
                     f"UPDATE artists SET {', '.join(updates)} WHERE id = ?", params
                 )
                 return aid
             else:
+                cols = ["name", "normalized_name", "first_seen", "last_seen"]
+                vals: list[Any] = [name, norm, now, now]
+                for col, val in optional.items():
+                    cols.append(col)
+                    vals.append(val)
+                placeholders = ", ".join("?" for _ in cols)
                 cur = self._conn.execute(
-                    """INSERT INTO artists
-                       (name, normalized_name, spotify_id, deezer_id,
-                        musicbrainz_id, genius_id, discogs_id,
-                        threat_status, threat_category,
-                        latest_verdict, latest_confidence,
-                        country, genres, first_seen, last_seen, notes)
-                       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)""",
-                    (name, norm, spotify_id, deezer_id,
-                     musicbrainz_id, genius_id, discogs_id,
-                     threat_status, threat_category,
-                     latest_verdict, latest_confidence,
-                     country, _json.dumps(genres) if genres else None,
-                     now, now, notes),
+                    f"INSERT INTO artists ({', '.join(cols)}) VALUES ({placeholders})",
+                    vals,
                 )
                 return cur.lastrowid
 
@@ -769,25 +830,61 @@ class EntityDB:
     def import_enriched_profile(self, profile: dict) -> int | None:
         """Import a single enriched artist profile from Phase 1 output.
 
-        Extracts: artist, labels, contributors, similar artists.
+        Extracts: artist (with all API IDs + found flags), labels,
+        contributors, similar artists.
         Returns the artist row id, or None on failure.
         """
         name = profile.get("artist_name", "")
         if not name:
             return None
 
-        # Artist
+        # Extract per-API data
         deezer = profile.get("deezer", {})
         mb = profile.get("musicbrainz", {})
         genius = profile.get("genius", {})
         discogs = profile.get("discogs", {})
+        setlistfm = profile.get("setlistfm", {})
+        bandsintown = profile.get("bandsintown", {})
+        lastfm = profile.get("lastfm", {})
+
+        # Per-API found flags
+        f_deezer = bool(deezer.get("found"))
+        f_mb = bool(mb.get("found"))
+        f_genius = bool(genius.get("found"))
+        f_discogs = bool(discogs.get("found"))
+        f_setlistfm = bool(setlistfm.get("found"))
+        f_bandsintown = bool(bandsintown.get("found"))
+        f_lastfm = bool(lastfm.get("found"))
+
+        platform_count = profile.get("platform_count") or sum([
+            f_deezer, f_mb, f_genius, f_discogs,
+            f_setlistfm, f_bandsintown, f_lastfm,
+        ])
 
         artist_id = self.upsert_artist(
             name,
-            deezer_id=deezer.get("deezer_id") if deezer.get("found") else None,
-            musicbrainz_id=mb.get("mbid") if mb.get("found") else None,
-            genius_id=genius.get("genius_id") if genius.get("found") else None,
-            discogs_id=discogs.get("discogs_id") if discogs.get("found") else None,
+            # IDs
+            deezer_id=deezer.get("deezer_id") if f_deezer else None,
+            musicbrainz_id=mb.get("mbid") if f_mb else None,
+            genius_id=genius.get("genius_id") if f_genius else None,
+            discogs_id=discogs.get("discogs_id") if f_discogs else None,
+            setlistfm_id=setlistfm.get("setlistfm_id") or setlistfm.get("mbid") if f_setlistfm else None,
+            bandsintown_id=bandsintown.get("bandsintown_id") if f_bandsintown else None,
+            lastfm_url=lastfm.get("url") if f_lastfm else None,
+            # Found flags
+            found_deezer=f_deezer,
+            found_musicbrainz=f_mb,
+            found_genius=f_genius,
+            found_discogs=f_discogs,
+            found_setlistfm=f_setlistfm,
+            found_bandsintown=f_bandsintown,
+            found_lastfm=f_lastfm,
+            platform_count=platform_count,
+            # Metrics
+            deezer_fans=deezer.get("nb_fan") if f_deezer else None,
+            lastfm_listeners=lastfm.get("listeners") if f_lastfm else None,
+            lastfm_playcount=lastfm.get("playcount") if f_lastfm else None,
+            # Metadata
             country=mb.get("country", ""),
             genres=mb.get("genres", []),
         )
