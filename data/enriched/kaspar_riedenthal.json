@@ -1,0 +1,157 @@
+{
+  "artist_name": "Kaspar Riedenthal",
+  "artist_id": "kaspar_riedenthal",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:46:26.214637+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 335193381,
+    "name": "Kaspar Riedenthal",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/335193381",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Solenne",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Heart Remembers",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Umbra Timpului",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Without Doors",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Holy Night",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Sky Remembers",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Bells of Siena",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marbles",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Letter From Samarkand",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kaspar Riedenthal",
+    "mbid": "",
+    "listeners": 1399,
+    "playcount": 2916,
+    "listener_play_ratio": 2.08,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kaspar+Riedenthal\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ignacio Montoya",
+      "Mont Eval",
+      "Michael Donnahue",
+      "Naskal",
+      "Adrian Solen"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Heart Remembers",
+        "listeners": 1399,
+        "playcount": 2916
+      }
+    ],
+    "url": "https://www.last.fm/music/Kaspar+Riedenthal"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

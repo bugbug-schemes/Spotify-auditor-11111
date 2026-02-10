@@ -1,0 +1,148 @@
+{
+  "artist_name": "Emerald Haze",
+  "artist_id": "emerald_haze",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:27:17.042402+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 199337397,
+    "name": "Emerald Haze",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/199337397",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4736a605c2c914e177b3a7d72d10c4be/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Softwood Mist",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Asterveil",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Willow Dream",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden Stream",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispering Ferns",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hollow Bloom",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faunistic",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Emerald Haze",
+    "mbid": "",
+    "listeners": 538,
+    "playcount": 1105,
+    "listener_play_ratio": 2.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Emerald+Haze\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tomorrow and Now",
+      "Jason Singh",
+      "Waves Of Aware",
+      "Wanyes",
+      "morgondis"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hidden Stream",
+        "listeners": 498,
+        "playcount": 1030
+      },
+      {
+        "name": "Willow Dream",
+        "listeners": 42,
+        "playcount": 75
+      }
+    ],
+    "url": "https://www.last.fm/music/Emerald+Haze"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

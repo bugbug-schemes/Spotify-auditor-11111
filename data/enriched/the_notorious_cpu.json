@@ -1,0 +1,384 @@
+{
+  "artist_name": "The Notorious CPU",
+  "artist_id": "the_notorious_cpu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:36:04.862780+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 292619161,
+    "name": "The Notorious CPU",
+    "nb_fan": 7,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/292619161",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/df0cedc60be450d30280e1ad1e1b7f85/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Marie",
+      "Stræpa",
+      "The Yume Collective"
+    ],
+    "contributor_roles": {
+      "Marie": [
+        "Main"
+      ],
+      "The Yume Collective": [
+        "Main"
+      ],
+      "Stræpa": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "A Little Further Now",
+      "Dawn Ballad",
+      "Kindness We Found",
+      "Along The Way",
+      "Soft Bloom",
+      "The Stars Above",
+      "Air Between Moments",
+      "In The Quiet Of Me"
+    ],
+    "track_durations": [
+      121,
+      144,
+      133,
+      124,
+      131,
+      130,
+      121,
+      116
+    ],
+    "track_ranks": [
+      65875,
+      50743,
+      102720,
+      25462,
+      32484,
+      13576,
+      9424,
+      66443
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "What Remains",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Awakening",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Crossing Lines",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy Breeze",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond Statics",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Every Step Holds Freedom",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kindness We Found",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Bloom",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Until The Sky Turns",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunrise In The Veins",
+        "label": "",
+        "release_date": "2025-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Straight Lines",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Air Between Moments",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amber Still",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That Day Might Be Yours",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Until The Next Sun",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In The Quiet Of Me",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Stars Above",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bright Side Shuffle",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon’s Little Song",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liminal Dream",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Currents Carry On",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nebula Dream",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eternal Shelter",
+        "label": "",
+        "release_date": "2025-04-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Along The Way",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quantum Roads",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dawn Ballad",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oldies",
+        "label": "",
+        "release_date": "2025-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Transistor",
+        "label": "",
+        "release_date": "2024-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tales of Tomorrow",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Notorious CPU",
+    "mbid": "",
+    "listeners": 6030,
+    "playcount": 12514,
+    "listener_play_ratio": 2.08,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Notorious+CPU\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cozeen",
+      "Mike Nora",
+      "Dry Season",
+      "yvwn.",
+      "Komiji"
+    ],
+    "top_tracks": [
+      {
+        "name": "Every Step Holds Freedom",
+        "listeners": 4654,
+        "playcount": 9156
+      },
+      {
+        "name": "Kindness We Found",
+        "listeners": 180,
+        "playcount": 320
+      },
+      {
+        "name": "Currents Carry On",
+        "listeners": 176,
+        "playcount": 342
+      },
+      {
+        "name": "In The Quiet Of Me",
+        "listeners": 159,
+        "playcount": 275
+      },
+      {
+        "name": "Sunrise In The Veins",
+        "listeners": 153,
+        "playcount": 206
+      },
+      {
+        "name": "No Straight Lines",
+        "listeners": 115,
+        "playcount": 153
+      },
+      {
+        "name": "Bright Side Shuffle",
+        "listeners": 104,
+        "playcount": 139
+      },
+      {
+        "name": "Along The Way",
+        "listeners": 96,
+        "playcount": 133
+      },
+      {
+        "name": "Dawn Ballad",
+        "listeners": 91,
+        "playcount": 162
+      },
+      {
+        "name": "Air Between Moments",
+        "listeners": 89,
+        "playcount": 126
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Notorious+CPU"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

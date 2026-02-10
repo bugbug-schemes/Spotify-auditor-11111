@@ -1,0 +1,129 @@
+{
+  "artist_name": "Lullsway",
+  "artist_id": "lullsway",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:17:42.354500+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 292793651,
+    "name": "Lullsway",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/292793651",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Resona Alpha (Alpha Sinus 69Hz – 77Hz)",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpha Cognitive Drift 110 Hz - 118 Hz",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpha Mental Orbit 59 Hz - 67 Hz",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nocturne Glow (Noise)",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ethereal Waters (Noise)",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lullsway",
+    "mbid": "",
+    "listeners": 314,
+    "playcount": 772,
+    "listener_play_ratio": 2.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lullsway\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sensory Flow",
+      "Binaural Dynamics",
+      "Solfjord",
+      "Z Izzard",
+      "Bit rain"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alpha Cognitive Drift 110 Hz - 118 Hz",
+        "listeners": 314,
+        "playcount": 772
+      }
+    ],
+    "url": "https://www.last.fm/music/Lullsway"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

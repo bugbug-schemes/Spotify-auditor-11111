@@ -1,0 +1,208 @@
+{
+  "artist_name": "Nemo Jaymes",
+  "artist_id": "nemo_jaymes",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:59:34.940884+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 119139532,
+    "name": "Nemo Jaymes",
+    "nb_fan": 0,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/119139532",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7ba713cfb997bca652149c0dd53249d0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Bed of Feathers",
+        "label": "",
+        "release_date": "2024-03-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Goodnight Stars",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Walk with Gretta",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Los pollitos dicen pio pio",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Esta niña linda",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jingle Bell Rock (Fireplace Version)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jingle Bell Rock",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Great Dreams",
+        "label": "",
+        "release_date": "2024-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Edelweiss",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Boat with Wings",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepyby",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweetest of dreams",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Teddy Bear's Picnic",
+        "label": "",
+        "release_date": "2023-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleeping Bunnies (Hop Little Bunnies)",
+        "label": "",
+        "release_date": "2022-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nemo Jaymes",
+    "mbid": "",
+    "listeners": 4773,
+    "playcount": 14404,
+    "listener_play_ratio": 3.02,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nemo+Jaymes\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "syrene",
+      "Naia Catalán",
+      "Meadow Bryce",
+      "Leonardo Paul",
+      "Joe Hanson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Jingle Bell Rock",
+        "listeners": 4169,
+        "playcount": 10225
+      },
+      {
+        "name": "Sleeping Bunnies (Hop Little Bunnies)",
+        "listeners": 546,
+        "playcount": 3822
+      },
+      {
+        "name": "The Sweetest of Dreams",
+        "listeners": 46,
+        "playcount": 273
+      },
+      {
+        "name": "Sweetest of Dreams",
+        "listeners": 21,
+        "playcount": 84
+      }
+    ],
+    "url": "https://www.last.fm/music/Nemo+Jaymes"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

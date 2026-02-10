@@ -1,0 +1,581 @@
+{
+  "artist_name": "Casiio",
+  "artist_id": "casiio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:00:36.503127+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "47fdf155-8154-449f-ab6b-d63c77816bd0",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "chillwave",
+      "instrumental",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "boom bap",
+      "hip hop",
+      "downtempo"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/8174609",
+      "free streaming": "https://www.deezer.com/artist/50289412",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/casiio/7047040",
+      "social network": "https://www.instagram.com/beats.by.casiio/",
+      "soundcloud": "https://soundcloud.com/casiioo",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/casiio/7047040",
+      "youtube music": "https://music.youtube.com/channel/UCF-mN-XHUCabVfi71bU_Ecg"
+    },
+    "labels": [
+      "LoFi Café Records",
+      "Fortune Cookie Records",
+      "Salad Days",
+      "pilslife agency",
+      "Lofi Records",
+      "urbanundergrounds",
+      "Hip Dozer",
+      "Joeri Ritzen Records",
+      "Lofi Chill Records",
+      "Lofi Jazz Records",
+      "Steezyasfuck",
+      "Blunt Shelter Records",
+      "Effortless Audio",
+      "Noh Life Music Group",
+      "Dust Collectors",
+      "Sleep Tales",
+      "Retro Jungle",
+      "[no label]",
+      "Birdhouse",
+      "Mellotron Records",
+      "Chill Beats Records",
+      "Mutombo Records",
+      "Aviary Bridge Records",
+      "Moonshift Records",
+      "Lovibes",
+      "ChilledCow Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 50289412,
+    "name": "Casiio",
+    "nb_fan": 1688,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/50289412",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/05ad7db72303a669a2f9e0ff69885df5/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Blvd.",
+      "Bring Me The Horizon",
+      "Elijah Lee",
+      "Intoku",
+      "Kainbeats",
+      "Lofi Girl",
+      "NO SPIRIT",
+      "Sleepermane",
+      "Tah."
+    ],
+    "contributor_roles": {
+      "Kainbeats": [
+        "Main"
+      ],
+      "Bring Me The Horizon": [
+        "Main"
+      ],
+      "NO SPIRIT": [
+        "Main"
+      ],
+      "Intoku": [
+        "Main"
+      ],
+      "Blvd.": [
+        "Main"
+      ],
+      "Sleepermane": [
+        "Main",
+        "Featured"
+      ],
+      "Lofi Girl": [
+        "Main"
+      ],
+      "Elijah Lee": [
+        "Main"
+      ],
+      "Tah.": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Glowing Jellyfish",
+      "Moonlight Rays",
+      "canyoufeelmy<3.tmpx",
+      "Whirlpools",
+      "Darkside.verXx",
+      "Serendipity",
+      "Turquoise Rain",
+      "Felicity",
+      "Siren's Lullaby",
+      "Frostwhisper",
+      "Unexplored",
+      "Dew Drift",
+      "Atlantic Garden",
+      "Ancestral",
+      "Sunken Stasis",
+      "Falling Reflections",
+      "Pandora",
+      "Depths",
+      "Uneven",
+      "Sunglitter",
+      "Cloudspill",
+      "Dreamcurrents",
+      "Underneath",
+      "Pearls",
+      "Afterglow"
+    ],
+    "track_durations": [
+      169,
+      148,
+      163,
+      155,
+      188,
+      124,
+      109,
+      138,
+      135,
+      140,
+      130,
+      111,
+      132,
+      96,
+      129,
+      170,
+      109,
+      130,
+      116,
+      114,
+      119,
+      138,
+      129,
+      155,
+      144
+    ],
+    "track_ranks": [
+      436017,
+      405146,
+      519932,
+      295307,
+      412892,
+      281993,
+      302704,
+      556519,
+      286014,
+      290781,
+      433334,
+      299211,
+      297863,
+      399021,
+      319870,
+      274565,
+      350498,
+      520451,
+      343956,
+      253098,
+      249198,
+      215714,
+      384668,
+      399378,
+      215814
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "ep": 9,
+      "single": 79
+    },
+    "albums": [
+      {
+        "title": "Puddles",
+        "label": "",
+        "release_date": "2025-09-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Saga",
+        "label": "",
+        "release_date": "2024-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Submerged",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Phantasm",
+        "label": "",
+        "release_date": "2023-08-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stories Of The Night",
+        "label": "",
+        "release_date": "2023-01-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Unexplored",
+        "label": "",
+        "release_date": "2022-10-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Far Off",
+        "label": "",
+        "release_date": "2022-02-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Passing By",
+        "label": "",
+        "release_date": "2022-01-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nomads",
+        "label": "",
+        "release_date": "2021-10-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Particles",
+        "label": "",
+        "release_date": "2021-05-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Underneath",
+        "label": "",
+        "release_date": "2020-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wondering",
+        "label": "",
+        "release_date": "2020-05-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seoulicious",
+        "label": "",
+        "release_date": "2026-02-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dreams from Home",
+        "label": "",
+        "release_date": "2025-07-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Cadmium Yellow",
+        "label": "",
+        "release_date": "2024-04-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hideaway",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Fable",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wants & Needs",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Artefacts",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bouju Beach",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Kashmir",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "once it's late",
+        "label": "",
+        "release_date": "2026-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lounge 47",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Counting Clouds",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "forevermore",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sienna, after rain",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gallery 12",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twilight",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "green, fading slow",
+        "label": "",
+        "release_date": "2026-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "snowdreams",
+        "label": "",
+        "release_date": "2025-12-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Softy",
+      "Hoogway",
+      "Kainbeats",
+      "Laffey",
+      "S N U G",
+      "brillion.",
+      "Mujo",
+      "Steezy Prime",
+      "Hevi",
+      "Jhove"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8174609,
+    "name": "Casiio",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 14,
+    "digital_only_releases": 9,
+    "total_releases": 23,
+    "formats": [
+      "",
+      "10xLP, Comp + Box, Ltd, Num",
+      "10xLP, Comp, Ltd, Box",
+      "10xLP, Comp, Num + Box, Ltd, Num",
+      "12\", Album, Ltd, 180",
+      "12\", EP, 180",
+      "15xFile, FLAC, Album, 24b",
+      "2xLP, Comp, Ltd",
+      "2xLP, Comp, Ltd, 180",
+      "2xLP, Comp, Ltd, Ivo",
+      "2xLP, Comp, Ltd, Pin",
+      "2xLP, Ltd, Num, Pic",
+      "5xFile, FLAC",
+      "6xFile, MP3, EP, 320",
+      "File, MP3, Single, 320",
+      "LP, Album, Ltd, Num",
+      "LP, Comp, Ltd",
+      "LP, Ltd, Num"
+    ],
+    "labels": [
+      "Chilled Cow Records",
+      "Lofi Girl",
+      "Lofi Records (4)",
+      "Not On Label (Glimlip Self-released), Not On Label (Casiio Self-released)",
+      "Qrates"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Casiio",
+    "mbid": "47fdf155-8154-449f-ab6b-d63c77816bd0",
+    "listeners": 500302,
+    "playcount": 7551748,
+    "listener_play_ratio": 15.09,
+    "bio_exists": true,
+    "bio_summary": "Casiio is a lo-fi beats producer with limited publicly available information. According to MusicBrainz, there is a possibility that Casiio hails from Türkiye.\n\nThe producer made their first appearance on Soundcloud with the track \"Wim,\" which was uploaded on August 30, 2018. The track was later released on Spotify on September 4, 2018, further expanding their reach.\n\nOn May 18, 2020, Casiio released their debut album titled \"Wondering,\" showcasing their artistic growth and potential within the l",
+    "tags": [
+      "Lo-Fi",
+      "instrumental hip-hop",
+      "instrumental",
+      "electronic",
+      "lofi"
+    ],
+    "similar_artists": [
+      "EnRa",
+      "Dontcry",
+      "Sleepermane",
+      "Sitting Duck",
+      "Jisatsu"
+    ],
+    "top_tracks": [
+      {
+        "name": "Affection",
+        "listeners": 81921,
+        "playcount": 284310
+      },
+      {
+        "name": "Afterglow",
+        "listeners": 66441,
+        "playcount": 187108
+      },
+      {
+        "name": "Passing By",
+        "listeners": 64889,
+        "playcount": 167861
+      },
+      {
+        "name": "Coming Home",
+        "listeners": 61018,
+        "playcount": 156549
+      },
+      {
+        "name": "Depths",
+        "listeners": 60294,
+        "playcount": 171487
+      },
+      {
+        "name": "Ancestral",
+        "listeners": 59112,
+        "playcount": 152828
+      },
+      {
+        "name": "Stray",
+        "listeners": 46693,
+        "playcount": 148507
+      },
+      {
+        "name": "To See",
+        "listeners": 45880,
+        "playcount": 167853
+      },
+      {
+        "name": "Pandora",
+        "listeners": 45858,
+        "playcount": 115701
+      },
+      {
+        "name": "Harmonies",
+        "listeners": 45496,
+        "playcount": 170956
+      }
+    ],
+    "url": "https://www.last.fm/music/Casiio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

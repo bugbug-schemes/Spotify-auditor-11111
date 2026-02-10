@@ -1,0 +1,113 @@
+{
+  "artist_name": "Ava Twilight",
+  "artist_id": "ava_twilight",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:19:34.956670+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327430211,
+    "name": "Ava Twilight",
+    "nb_fan": 1,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/327430211",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b35c46a88c75df0efa7d6f66c1b37fc6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Aeloria",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tuning into Stillness",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ava Twilight",
+    "mbid": "",
+    "listeners": 1543,
+    "playcount": 3797,
+    "listener_play_ratio": 2.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ava+Twilight\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Njarka",
+      "Mountain Explorer",
+      "Piano Bloom",
+      "Tiam Aref",
+      "OceanFinder"
+    ],
+    "top_tracks": [
+      {
+        "name": "Aeloria",
+        "listeners": 1422,
+        "playcount": 3566
+      },
+      {
+        "name": "Tuning into Stillness",
+        "listeners": 129,
+        "playcount": 231
+      }
+    ],
+    "url": "https://www.last.fm/music/Ava+Twilight"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

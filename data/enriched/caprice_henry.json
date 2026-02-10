@@ -1,0 +1,169 @@
+{
+  "artist_name": "Caprice Henry",
+  "artist_id": "caprice_henry",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:57:55.875218+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 279742061,
+    "name": "Caprice Henry",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/279742061",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ae738023cb2248ed8cd1ed77618a694f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Home We Go",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Three Little Chickens",
+        "label": "",
+        "release_date": "2025-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightingales",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Count the Stars",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blueberry Bells",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hippo's Goodnight",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mrs Ladybug's Lullaby",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Lamb's Lullaby",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Caprice Henry",
+    "mbid": "",
+    "listeners": 2865,
+    "playcount": 40926,
+    "listener_play_ratio": 14.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Caprice+Henry\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Nightingales",
+        "listeners": 2102,
+        "playcount": 21592
+      },
+      {
+        "name": "Little Lamb's Lullaby",
+        "listeners": 1699,
+        "playcount": 15862
+      },
+      {
+        "name": "Count the Stars",
+        "listeners": 254,
+        "playcount": 3461
+      },
+      {
+        "name": "Blueberry Bells",
+        "listeners": 9,
+        "playcount": 9
+      },
+      {
+        "name": "Mrs Ladybug's Lullaby",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Home We Go",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Caprice+Henry"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

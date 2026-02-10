@@ -1,0 +1,126 @@
+{
+  "artist_name": "Monte Aria",
+  "artist_id": "monte_aria",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:48:48.110176+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Monte Aria', got 'Pont Aeri'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6365794,
+    "name": "Arianna Monteverdi",
+    "profile": "Country / folk singer-songwriter based in Nantes, France.",
+    "realname": "",
+    "social_urls": [
+      "http://ariannamonteverdi.com",
+      "https://ariannamonteverdi.bandcamp.com",
+      "https://www.facebook.com/ariannamonteverdimusic/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 4,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "11xFile, MP3, Comp, 320",
+      "12\", EP",
+      "17xFile, MP3, Comp, 320"
+    ],
+    "labels": [
+      "Les Disques Normal",
+      "Pale Figure Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Monte Aria",
+    "mbid": "",
+    "listeners": 38397,
+    "playcount": 138249,
+    "listener_play_ratio": 3.6,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Monte+Aria\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Noctivelle",
+      "steve stanton",
+      "Frans Dromenstadt",
+      "Mysticallity",
+      "Gillirium"
+    ],
+    "top_tracks": [
+      {
+        "name": "Saffron Dusk",
+        "listeners": 24020,
+        "playcount": 85652
+      },
+      {
+        "name": "Breathe",
+        "listeners": 7503,
+        "playcount": 26534
+      },
+      {
+        "name": "Etherea",
+        "listeners": 6677,
+        "playcount": 18194
+      },
+      {
+        "name": "Velorith",
+        "listeners": 2713,
+        "playcount": 7864
+      },
+      {
+        "name": "Tranquillitas aquae",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Noche Serena",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Monte+Aria"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

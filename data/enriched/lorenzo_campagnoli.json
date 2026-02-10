@@ -1,0 +1,222 @@
+{
+  "artist_name": "Lorenzo Campagnoli",
+  "artist_id": "lorenzo_campagnoli",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:12:42.213552+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 83200972,
+    "name": "Lorenzo Campagnoli",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/83200972",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b446f838f402e081d632ddc8d65c33cd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Lucca",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Creek",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember Yesterday",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weekend",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lifetime",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Palermo",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amore del fato",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Il Dolce Mare",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ordinary Sunday",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10991396,
+    "name": "Lorenzo Gardino E I Suoi Gai Campagnoli",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Lorenzo Gardino"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 6,
+    "digital_only_releases": 1,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "10\"",
+      "2xLP, Album",
+      "7\"",
+      "7\", EP"
+    ],
+    "labels": [
+      "Arpeggio (2)",
+      "Cetra",
+      "Excelsius"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lorenzo Campagnoli",
+    "mbid": "",
+    "listeners": 9959,
+    "playcount": 37177,
+    "listener_play_ratio": 3.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lorenzo+Campagnoli\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Armand Beck",
+      "Em Monet",
+      "Enzo Costa",
+      "Sven Simons",
+      "Camilo Branca"
+    ],
+    "top_tracks": [
+      {
+        "name": "Palermo",
+        "listeners": 4648,
+        "playcount": 11020
+      },
+      {
+        "name": "Ordinary Sunday",
+        "listeners": 3707,
+        "playcount": 12739
+      },
+      {
+        "name": "Remember Yesterday",
+        "listeners": 3315,
+        "playcount": 11286
+      },
+      {
+        "name": "Weekend",
+        "listeners": 675,
+        "playcount": 1439
+      },
+      {
+        "name": "Lucca",
+        "listeners": 223,
+        "playcount": 466
+      },
+      {
+        "name": "Lifetime",
+        "listeners": 126,
+        "playcount": 202
+      },
+      {
+        "name": "The Creek",
+        "listeners": 8,
+        "playcount": 21
+      },
+      {
+        "name": "Il Dolce Mare",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Amore del fato",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Lorenzo+Campagnoli"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

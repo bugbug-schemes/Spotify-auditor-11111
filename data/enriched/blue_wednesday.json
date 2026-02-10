@@ -1,0 +1,608 @@
+{
+  "artist_name": "Blue Wednesday",
+  "artist_id": "blue_wednesday",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:46:39.468587+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1077e53e-c8e8-4492-9813-31f71677e6f9",
+    "type": "Person",
+    "country": "CA",
+    "area": "Canada",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi hip hop",
+      "instrumental hip hop",
+      "hip hop",
+      "lo-fi",
+      "chillwave",
+      "downtempo",
+      "instrumental",
+      "boom bap",
+      "lofi hip hop"
+    ],
+    "aliases": [
+      "Gustav Joseph"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://bluewednesday.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6500567",
+      "free streaming": "https://www.deezer.com/artist/12463844",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/blue-wednesday/3105772",
+      "social network": "https://www.instagram.com/bluewednesdaybeats/",
+      "soundcloud": "https://soundcloud.com/bluewednesday",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/blue-wednesday/3105772",
+      "youtube": "https://www.youtube.com/user/strengthpsychology",
+      "youtube music": "https://music.youtube.com/channel/UCH5Ryy6Kqv89TFDBS6T4bNg"
+    },
+    "labels": [
+      "Chillhop Music",
+      "Dust Collectors",
+      "PLYGRND",
+      "Blue Wednesday Records",
+      "Youthful Records.",
+      "Lofi Records",
+      "ChilledCow Records",
+      "[no label]",
+      "Chill Masters Records",
+      "Atlantic Chill",
+      "Radio Juicy",
+      "Hip Dozer",
+      "Inner Ocean Records",
+      "Effortless Audio",
+      "Sonder House",
+      "Cole Slaw",
+      "Ninetofive Records",
+      "Chillhop Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12463844,
+    "name": "Blue Wednesday",
+    "nb_fan": 3189,
+    "nb_album": 57,
+    "link": "https://www.deezer.com/artist/12463844",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b207d85d29728c030a7c28e8d1363911/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Atlantic Chill",
+      "C4C",
+      "Khutko",
+      "Lofi Girl",
+      "Magnus Klausen",
+      "Middle School",
+      "Mr. Shirai",
+      "Powfu",
+      "Shopan",
+      "anbuu",
+      "another silent weekend",
+      "goosetaf",
+      "tender spring"
+    ],
+    "contributor_roles": {
+      "Lofi Girl": [
+        "Main"
+      ],
+      "Powfu": [
+        "Featured"
+      ],
+      "goosetaf": [
+        "Main"
+      ],
+      "Shopan": [
+        "Main"
+      ],
+      "anbuu": [
+        "Main"
+      ],
+      "Khutko": [
+        "Main"
+      ],
+      "Magnus Klausen": [
+        "Featured",
+        "Main"
+      ],
+      "tender spring": [
+        "Main"
+      ],
+      "Middle School": [
+        "Main"
+      ],
+      "C4C": [
+        "Main"
+      ],
+      "another silent weekend": [
+        "Main"
+      ],
+      "Atlantic Chill": [
+        "Main"
+      ],
+      "Mr. Shirai": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "bridge to my heart (instrumental)",
+      "Wildflower",
+      "New Shoes",
+      "the songbird and the bookworm (instrumental)",
+      "Silk",
+      "Murmuration",
+      "Cold Start",
+      "Walk Out",
+      "The Descent",
+      "Sixth Station",
+      "Middle School",
+      "Runaway",
+      "Driftwood",
+      "Light Leaks",
+      "Overgrown",
+      "Introvert",
+      "Build with Love",
+      "Kickflips",
+      "Tea leaves",
+      "i got u",
+      "Technical Difficulties",
+      "Moods",
+      "Cereal Killa",
+      "Out Biking",
+      "Island Boy"
+    ],
+    "track_durations": [
+      146,
+      154,
+      116,
+      139,
+      140,
+      156,
+      185,
+      153,
+      213,
+      161,
+      144,
+      134,
+      189,
+      161,
+      184,
+      165,
+      148,
+      191,
+      160,
+      203,
+      170,
+      156,
+      132,
+      213,
+      154
+    ],
+    "track_ranks": [
+      655086,
+      556574,
+      185362,
+      415042,
+      424714,
+      204926,
+      184119,
+      357741,
+      387230,
+      199162,
+      128312,
+      112128,
+      247878,
+      140760,
+      137296,
+      240239,
+      256723,
+      141934,
+      252678,
+      326800,
+      260875,
+      234807,
+      181213,
+      178924,
+      147467
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 5,
+      "single": 48
+    },
+    "albums": [
+      {
+        "title": "In My Head",
+        "label": "",
+        "release_date": "2021-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Directions",
+        "label": "",
+        "release_date": "2021-01-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beat Tape 2",
+        "label": "",
+        "release_date": "2016-12-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beat Tape 1",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Plentiful Emotions",
+        "label": "",
+        "release_date": "2024-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Bigger Picture",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "After Hours",
+        "label": "",
+        "release_date": "2021-03-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Discovery",
+        "label": "",
+        "release_date": "2020-06-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Great Escape",
+        "label": "",
+        "release_date": "2020-01-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mise en Place",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cold Start",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flora",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Second Nelson",
+        "label": "",
+        "release_date": "2025-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nomad",
+        "label": "",
+        "release_date": "2025-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Real Time",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rookie",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet",
+        "label": "",
+        "release_date": "2025-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vultures",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bullet Trains (feat. Hahlweg)",
+        "label": "",
+        "release_date": "2024-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mission Control",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lefty",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Addison",
+        "label": "",
+        "release_date": "2024-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpenglow",
+        "label": "",
+        "release_date": "2024-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blind Spots",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brush Strokes",
+        "label": "",
+        "release_date": "2024-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightshade",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Iodine",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow Burn",
+        "label": "",
+        "release_date": "2023-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Rain",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loose Ends",
+        "label": "",
+        "release_date": "2023-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "NO SPIRIT",
+      "G Mills",
+      "Purrple Cat",
+      "Nothingtosay",
+      "brillion.",
+      "Steezy Prime",
+      "Tibeauthetraveler",
+      "Towerz",
+      "Iamalex",
+      "S N U G"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6500567,
+    "name": "Blue Wednesday",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 14,
+    "digital_only_releases": 39,
+    "total_releases": 53,
+    "formats": [
+      "",
+      "10xFile, FLAC, Album, 16b",
+      "10xLP, Comp, Ltd, Box",
+      "14xFile, FLAC, Album",
+      "16xFile, FLAC, Comp",
+      "18xFile, FLAC, Comp",
+      "2x12\", Comp",
+      "2x12\", Comp, Ltd, Gat",
+      "2xLP, Comp, Ltd",
+      "2xLP, Comp, Ltd, Ivo",
+      "2xLP, Comp, Ltd, Whi",
+      "2xLP, Ltd, Num, Pic",
+      "2xLP, Pic",
+      "3xFile, FLAC, EP, 16b",
+      "6xFile, FLAC, EP, 24b",
+      "7xFile, FLAC, EP, 16b",
+      "CD",
+      "CD, Comp",
+      "CDr, Mixed",
+      "Cass, EP, Ltd",
+      "Cass, Ltd",
+      "LP, Comp, Ltd, Num, Tra",
+      "LP, Comp, Off",
+      "LP, Ltd, Red"
+    ],
+    "labels": [
+      "Chilled Cow Records",
+      "Chillhop Music",
+      "Chillhop Records",
+      "Chillhop Records, Tower Records (4), P-Vine Records",
+      "College Music Records",
+      "Good Question",
+      "Hip Dozer",
+      "Lofi Records (4)",
+      "Not On Label",
+      "Not On Label (Bonus Points Self-released)",
+      "Radio Juicy",
+      "Sundae Sauuce",
+      "The Jazz Hop Cafe"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Blue Wednesday",
+    "mbid": "1077e53e-c8e8-4492-9813-31f71677e6f9",
+    "listeners": 395932,
+    "playcount": 3642617,
+    "listener_play_ratio": 9.2,
+    "bio_exists": true,
+    "bio_summary": "Hailing from the cold and wet landscape that is the Pacific Northwest, Gustav Joseph, professionally known as Blue Wednesday, is a Canadian musician, songwriter and producer. Identifying as genre-fluid, Gustav’s sound highlights his artistry behind the piano, whilst honoring heavy influences from beatmakers and other instrumental acts that have inspired him from a young age. <a href=\"https://www.last.fm/music/Blue+Wednesday\">Read more on Last.fm</a>",
+    "tags": [
+      "instrumental hip-hop",
+      "electronic",
+      "chill",
+      "canada",
+      "Lo-Fi"
+    ],
+    "similar_artists": [
+      "No Spirit",
+      "Psalm Trees",
+      "Yasper",
+      "Xander.",
+      "Team Astro"
+    ],
+    "top_tracks": [
+      {
+        "name": "Japanese Garden",
+        "listeners": 103664,
+        "playcount": 292224
+      },
+      {
+        "name": "Wildflower",
+        "listeners": 74803,
+        "playcount": 210582
+      },
+      {
+        "name": "Murmuration",
+        "listeners": 71299,
+        "playcount": 298579
+      },
+      {
+        "name": "The Descent",
+        "listeners": 68505,
+        "playcount": 188199
+      },
+      {
+        "name": "Don't Let Go",
+        "listeners": 49633,
+        "playcount": 158412
+      },
+      {
+        "name": "Introvert",
+        "listeners": 36728,
+        "playcount": 119057
+      },
+      {
+        "name": "Summer Rain",
+        "listeners": 35674,
+        "playcount": 87372
+      },
+      {
+        "name": "Cascadia",
+        "listeners": 32289,
+        "playcount": 82261
+      },
+      {
+        "name": "Driftwood",
+        "listeners": 29040,
+        "playcount": 74320
+      },
+      {
+        "name": "Youth",
+        "listeners": 28600,
+        "playcount": 75140
+      }
+    ],
+    "url": "https://www.last.fm/music/Blue+Wednesday"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

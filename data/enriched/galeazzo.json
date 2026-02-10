@@ -1,0 +1,158 @@
+{
+  "artist_name": "Galeazzo",
+  "artist_id": "galeazzo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:47:40.739434+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "369be13e-8cad-4596-847d-c6d9eaed832f",
+    "type": "Person",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "1597",
+    "end_date": "1662-12-06",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000003122143"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/4344504",
+      "IMSLP": "https://imslp.org/wiki/Category:Sabbatini,_Galeazzo",
+      "other databases": "https://www.worldcat.org/identities/lccn-nr90001907/",
+      "VIAF": "http://viaf.org/viaf/27259075",
+      "wikidata": "https://www.wikidata.org/wiki/Q5518314"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Galeazzo', got 'GALEANO'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6207086,
+    "name": "Carla Galeazzo",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Galeazzo",
+    "mbid": "",
+    "listeners": 29065,
+    "playcount": 129807,
+    "listener_play_ratio": 4.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Galeazzo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hveiti Brauo",
+      "Alex Flynn",
+      "Niels Henningsen",
+      "Alur Mcrose",
+      "In-No-Scence"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bubbles",
+        "listeners": 16514,
+        "playcount": 33102
+      },
+      {
+        "name": "It's in the Details",
+        "listeners": 10954,
+        "playcount": 42726
+      },
+      {
+        "name": "Be Mine",
+        "listeners": 9749,
+        "playcount": 43338
+      },
+      {
+        "name": "Cherish the Night",
+        "listeners": 2705,
+        "playcount": 10515
+      },
+      {
+        "name": "For a Moment",
+        "listeners": 1,
+        "playcount": 22
+      },
+      {
+        "name": "O Little Town of Bethlehem",
+        "listeners": 1,
+        "playcount": 21
+      },
+      {
+        "name": "Midnight in the Moonlight",
+        "listeners": 1,
+        "playcount": 21
+      },
+      {
+        "name": "My Favourite Person",
+        "listeners": 1,
+        "playcount": 21
+      },
+      {
+        "name": "Florence",
+        "listeners": 1,
+        "playcount": 20
+      },
+      {
+        "name": "Take My Hand",
+        "listeners": 1,
+        "playcount": 20
+      }
+    ],
+    "url": "https://www.last.fm/music/Galeazzo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

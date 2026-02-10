@@ -1,0 +1,179 @@
+{
+  "artist_name": "Milo Sandbo",
+  "artist_id": "milo_sandbo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:44:13.533447+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 297684851,
+    "name": "Milo Sandbo",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/297684851",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3c1a9953151049634827204148293bd1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Whispering On My Pillow",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whimsical Wardrobe",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gramps Goodnight",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pondside Dreamland",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When The Sun Goes Down",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Busy Day",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Apple Sweet",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grandma's Chair",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bunny's Long Day",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Charmed Meadows",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Milo Sandbo",
+    "mbid": "",
+    "listeners": 3815,
+    "playcount": 55185,
+    "listener_play_ratio": 14.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Milo+Sandbo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Elio Rowan",
+      "Milo Grímur",
+      "Richie Goulding",
+      "Nils Meißner",
+      "Francis Luna"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pondside Dreamland",
+        "listeners": 2136,
+        "playcount": 22179
+      },
+      {
+        "name": "Bunny's Long Day",
+        "listeners": 2021,
+        "playcount": 22485
+      },
+      {
+        "name": "Gramps Goodnight",
+        "listeners": 1269,
+        "playcount": 9566
+      },
+      {
+        "name": "Whispering On My Pillow",
+        "listeners": 265,
+        "playcount": 955
+      }
+    ],
+    "url": "https://www.last.fm/music/Milo+Sandbo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

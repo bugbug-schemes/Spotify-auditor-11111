@@ -1,0 +1,491 @@
+{
+  "artist_name": "Hologramme",
+  "artist_id": "hologramme",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:09:57.466373+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3a56e9ee-25d1-48e3-81de-1f25dc240e70",
+    "type": "",
+    "country": "GR",
+    "area": "Greece",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [
+      "Werkstatt Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7859988,
+    "name": "Hologramme",
+    "nb_fan": 642,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/7859988",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fe2cadfb02b5caf751a318b650555a44/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "AG Kone",
+      "Claudia Bouvette",
+      "Dominique Fils-Aimé",
+      "Geoffroy",
+      "Mantisse",
+      "Mykalle"
+    ],
+    "contributor_roles": {
+      "Geoffroy": [
+        "Featured"
+      ],
+      "Dominique Fils-Aimé": [
+        "Featured"
+      ],
+      "Claudia Bouvette": [
+        "Featured"
+      ],
+      "Mantisse": [
+        "Featured"
+      ],
+      "AG Kone": [
+        "Featured"
+      ],
+      "Mykalle": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Felicity",
+      "Unfold",
+      "Tulip",
+      "Préface (Printemps)",
+      "Le Ciel",
+      "Animal (feat. Geoffroy)",
+      "Follow",
+      "Love & Aggression",
+      "Candide",
+      "Slow",
+      "Hot Slush Puppie (feat. Claudia Bouvette, AG Kone, Mantisse)",
+      "ADAGIO no.1",
+      "Ori AA",
+      "Aphrodite",
+      "RW:AK",
+      "Sixteen"
+    ],
+    "track_durations": [
+      231,
+      349,
+      266,
+      329,
+      318,
+      276,
+      262,
+      269,
+      348,
+      259,
+      241,
+      99,
+      238,
+      241,
+      292,
+      220
+    ],
+    "track_ranks": [
+      290653,
+      118937,
+      104098,
+      371627,
+      163658,
+      66985,
+      86795,
+      89179,
+      69435,
+      24997,
+      91043,
+      75179,
+      47805,
+      28930,
+      258099,
+      125846
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 4,
+      "single": 31
+    },
+    "albums": [
+      {
+        "title": "SOLEDAD opus 32 no.1",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "CIEL",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Felicity",
+        "label": "",
+        "release_date": "2019-08-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Surfaces",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Animal",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Karakoram",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Geist Im Glas",
+        "label": "",
+        "release_date": "2020-12-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Love & Aggression",
+        "label": "",
+        "release_date": "2025-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tulip",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Duo Pulse",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RW: KA",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love, I'm working hard (for your heart)",
+        "label": "",
+        "release_date": "2025-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RW:AK",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Guidance",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feels like falling",
+        "label": "",
+        "release_date": "2024-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloudy June",
+        "label": "",
+        "release_date": "2024-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Year's Eve (Fascist Regime Burn Down)",
+        "label": "",
+        "release_date": "2023-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There's a life indulging",
+        "label": "",
+        "release_date": "2023-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "we were here",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow",
+        "label": "",
+        "release_date": "2023-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "higher",
+        "label": "",
+        "release_date": "2023-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "enveloped in a summer slump (instumental)",
+        "label": "",
+        "release_date": "2023-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aphrodite",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "32",
+        "label": "",
+        "release_date": "2023-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "saga blue",
+        "label": "",
+        "release_date": "2023-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Candide",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ya Rabbi",
+        "label": "",
+        "release_date": "2023-02-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "enveloped",
+        "label": "",
+        "release_date": "2023-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This thing never ends",
+        "label": "",
+        "release_date": "2023-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hot Slush Puppie",
+        "label": "",
+        "release_date": "2021-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Grand Soleil",
+      "Diskay",
+      "Dombrance",
+      "Üm",
+      "Kid Francescoli",
+      "Ambassadeurs",
+      "Les Gordon",
+      "Emrod",
+      "Camel Power Club",
+      "S+C+A+R+R"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3893295,
+    "name": "Hologramme",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 5,
+    "digital_only_releases": 5,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "20xFile, MP3, Comp, Mixed, 320",
+      "2xLP, Album",
+      "56xFile, MP3, Comp, 320",
+      "CD, Album",
+      "CD, Album, Dig",
+      "File, MP3, Single, 320",
+      "LP",
+      "LP, MiniAlbum, Ltd"
+    ],
+    "labels": [
+      "Anjunadeep",
+      "Anjunadeep Explorations (2)",
+      "Cliché Musique",
+      "Société Holographique de Montréal",
+      "St-Laurent Records",
+      "Werkstatt Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hologramme",
+    "mbid": "3d4a2be9-1c1b-458a-be69-6be5bc2cc4a5",
+    "listeners": 29646,
+    "playcount": 158388,
+    "listener_play_ratio": 5.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hologramme\">Read more on Last.fm</a>",
+    "tags": [
+      "indie",
+      "instrumental",
+      "montreal",
+      "electronic",
+      "synthesizer"
+    ],
+    "similar_artists": [
+      "Else",
+      "Zola Blood",
+      "Les Louanges",
+      "Whitey",
+      "dvw logic"
+    ],
+    "top_tracks": [
+      {
+        "name": "Felicity",
+        "listeners": 9944,
+        "playcount": 42285
+      },
+      {
+        "name": "Unfold",
+        "listeners": 5435,
+        "playcount": 16506
+      },
+      {
+        "name": "Follow",
+        "listeners": 3857,
+        "playcount": 11393
+      },
+      {
+        "name": "Karakoram",
+        "listeners": 3097,
+        "playcount": 8866
+      },
+      {
+        "name": "Tulip",
+        "listeners": 2990,
+        "playcount": 8429
+      },
+      {
+        "name": "Faith",
+        "listeners": 2563,
+        "playcount": 6495
+      },
+      {
+        "name": "Sixteen",
+        "listeners": 1540,
+        "playcount": 5231
+      },
+      {
+        "name": "Trans Atlantique",
+        "listeners": 1279,
+        "playcount": 2510
+      },
+      {
+        "name": "Duo Pulse",
+        "listeners": 1017,
+        "playcount": 1818
+      },
+      {
+        "name": "Loin d'ici",
+        "listeners": 899,
+        "playcount": 3754
+      }
+    ],
+    "url": "https://www.last.fm/music/Hologramme"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

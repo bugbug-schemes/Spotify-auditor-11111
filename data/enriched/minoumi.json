@@ -1,0 +1,96 @@
+{
+  "artist_name": "minoumi",
+  "artist_id": "minoumi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:24:58.635434+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'minoumi', got 'MINMI'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6874706,
+    "name": "Gabriel Minoumi",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "minoumi",
+    "mbid": "",
+    "listeners": 7591,
+    "playcount": 14965,
+    "listener_play_ratio": 1.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/minoumi\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Komiji",
+      "Plaxon",
+      "Faded Amber",
+      "Cosmaze",
+      "BenjieBoy"
+    ],
+    "top_tracks": [
+      {
+        "name": "The city felt softer today",
+        "listeners": 7591,
+        "playcount": 14964
+      },
+      {
+        "name": "Lights Across the Lake",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/minoumi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,175 @@
+{
+  "artist_name": "Jonah Thorne",
+  "artist_id": "jonah_thorne",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:34:38.695469+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "571329fa-dbdd-452f-88e4-cb2649d818fc",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Jonah Richard Thorne"
+    ],
+    "isnis": [],
+    "ipis": [
+      "01052614786"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/6353194",
+      "other databases": "https://www.metal-archives.com/artists/Jonah_Thorne/762934",
+      "social network": "https://www.instagram.com/sevenfootgrin/"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 66995912,
+    "name": "Jonah Thorne",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/66995912",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/31c4b4f8e9d630d65101467661136cfa/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "I Saw Mommy Kissing Santa Claus (Fireside)"
+    ],
+    "track_durations": [
+      148
+    ],
+    "track_ranks": [
+      103410
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "I Saw Mommy Kissing Santa Claus (Fireside)",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Saw Mommy Kissing Santa Claus",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6353194,
+    "name": "Jonah Thorne",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/sevenfootgrin/"
+    ],
+    "members": [],
+    "groups": [
+      "secondgradeknifefight",
+      "Wristmeetrazor",
+      "Glass Killing Floor",
+      "Immersed In Pain",
+      "Under A Serpent Sun",
+      "Heartstopper"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 21,
+    "total_releases": 21,
+    "formats": [
+      "",
+      "2xFile, FLAC, EP",
+      "2xFile, MP3, 320",
+      "4xFile, FLAC, EP",
+      "7xFile, MP3, 320",
+      "Cass, S/Sided, Pur"
+    ],
+    "labels": [
+      "Not On Label (Gates To Hell Self-released)",
+      "Not On Label (Porcelain Lacerations Self-released)",
+      "Not On Label (Shame (27) Self-released)",
+      "Not On Label (Under A Serpent Sun Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jonah Thorne",
+    "mbid": "",
+    "listeners": 1903,
+    "playcount": 4647,
+    "listener_play_ratio": 2.44,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jonah+Thorne\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Silas Arden",
+      "Forrest St. Marie",
+      "Joe Hanson",
+      "Meadow Bryce",
+      "J Stepan"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Saw Mommy Kissing Santa Claus",
+        "listeners": 1590,
+        "playcount": 3881
+      },
+      {
+        "name": "I Saw Mommy Kissing Santa Claus (Fireside)",
+        "listeners": 373,
+        "playcount": 766
+      }
+    ],
+    "url": "https://www.last.fm/music/Jonah+Thorne"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

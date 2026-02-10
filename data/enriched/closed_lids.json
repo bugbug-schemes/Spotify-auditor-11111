@@ -1,0 +1,153 @@
+{
+  "artist_name": "Closed Lids",
+  "artist_id": "closed_lids",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:10:59.584286+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 163716087,
+    "name": "Closed Lids",
+    "nb_fan": 2,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/163716087",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/30dd7a7972dbd1bcd2253af71afebd5b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Warm",
+        "label": "",
+        "release_date": "2022-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Not Profound, Simply True",
+        "label": "",
+        "release_date": "2022-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Closed Lids",
+    "mbid": "",
+    "listeners": 16928,
+    "playcount": 85580,
+    "listener_play_ratio": 5.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Closed+Lids\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Noel Oliver",
+      "Felix Manzi",
+      "Henry Gadacz",
+      "Corinne Blanchard",
+      "Drömqvist"
+    ],
+    "top_tracks": [
+      {
+        "name": "Warm",
+        "listeners": 14025,
+        "playcount": 76478
+      },
+      {
+        "name": "The Wexford Carol 2024 version",
+        "listeners": 2218,
+        "playcount": 5832
+      },
+      {
+        "name": "Pause",
+        "listeners": 561,
+        "playcount": 2267
+      },
+      {
+        "name": "Not Profound, Simply True",
+        "listeners": 367,
+        "playcount": 721
+      },
+      {
+        "name": "Moonlight",
+        "listeners": 70,
+        "playcount": 149
+      },
+      {
+        "name": "Reflect",
+        "listeners": 52,
+        "playcount": 87
+      },
+      {
+        "name": "A Memory of Swans",
+        "listeners": 19,
+        "playcount": 33
+      },
+      {
+        "name": "Nocturne",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Some Happy Memories",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Flow",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Closed+Lids"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

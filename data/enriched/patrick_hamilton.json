@@ -1,0 +1,552 @@
+{
+  "artist_name": "Patrick Hamilton",
+  "artist_id": "patrick_hamilton",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:22:45.674114+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "013c361c-b18a-4f18-86a1-be6204d63515",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1904-03-17",
+    "end_date": "1962-09-23",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Anthony Walter Patrick Hamilton"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "wikidata": "https://www.wikidata.org/wiki/Q1278407"
+    },
+    "labels": [
+      "Edition audoba",
+      "Deutschlandfunk Kultur"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 482355,
+    "name": "Patrick Hamilton",
+    "nb_fan": 846,
+    "nb_album": 77,
+    "link": "https://www.deezer.com/artist/482355",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e1ddd4b0e275452f82c13419099ce667/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Nel Swerts",
+      "Rosie Bennet"
+    ],
+    "contributor_roles": {
+      "Nel Swerts": [
+        "Main"
+      ],
+      "Rosie Bennet": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "La Mattina",
+      "L'arbre Solitaire",
+      "Hamilton: Le 16ème Avril",
+      "Stories of Hope",
+      "Hamilton: Au debut du printemps",
+      "Hummingbird",
+      "Weekend Walk",
+      "Spring Waltz",
+      "Winter: II. Largo",
+      "Hamilton: La danse d'amour",
+      "Christmas Lullaby",
+      "Dawn Chorus",
+      "Hamilton: Winged Melancholy",
+      "Hamilton: A New Beginning",
+      "Hamilton: Indecisive",
+      "Fields of Gold",
+      "In The Bleak Midwinter",
+      "Hamilton: La danse en sourdine",
+      "Hamilton: La Farfalla",
+      "Hamilton: Papillons de passion des papillons",
+      "Lost in Thoughts",
+      "Christine's Theme",
+      "Hamilton: Find your way home",
+      "Hamilton: Morning Light",
+      "Mélodie d'automne"
+    ],
+    "track_durations": [
+      172,
+      194,
+      98,
+      191,
+      137,
+      169,
+      176,
+      145,
+      124,
+      146,
+      91,
+      171,
+      139,
+      160,
+      161,
+      181,
+      138,
+      122,
+      112,
+      182,
+      174,
+      156,
+      120,
+      144,
+      166
+    ],
+    "track_ranks": [
+      596592,
+      489613,
+      286160,
+      315480,
+      156730,
+      319818,
+      368441,
+      376600,
+      596222,
+      410420,
+      342187,
+      351122,
+      112765,
+      214973,
+      282291,
+      227918,
+      535124,
+      180828,
+      156746,
+      131437,
+      243222,
+      410620,
+      156383,
+      243551,
+      343554
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "single": 70
+    },
+    "albums": [
+      {
+        "title": "Silent Night - A Neoclassical Christmas",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Elements of Nature",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fragments",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moodland",
+        "label": "",
+        "release_date": "2021-12-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Whispering Wings",
+        "label": "",
+        "release_date": "2021-04-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Journey to the unknown",
+        "label": "",
+        "release_date": "2020-07-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cocktail für eine Leiche (von Patrick Hamilton. Gelesen von Jens Wawrczeck. Verfilmt von Alfred Hitchcock)",
+        "label": "",
+        "release_date": "2019-06-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Her Smile",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fields of Gold",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Variations On Jingle Bells",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carol Of The Bells",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In The Bleak Midwinter",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Lullaby",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Night",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Holy Night",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter: II. Largo",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noël (Trois Anges Sont Venus Ce Soir)",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ave Maria",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "XII",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coventry Carol",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Mattina",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dancing Girl",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weekend Walk",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost in Thoughts",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mélodie d'automne",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hummingbird",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lever du Soleil",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Peaceful Paradise",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "L'arbre Solitaire",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Danse des Fleurs",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Alexis Ffrench",
+      "Olivia Belli",
+      "Florian Christl",
+      "Alban Claudin",
+      "Dardust",
+      "Lavinia Meijer",
+      "Alexandra Streliski",
+      "REYN",
+      "A. Blomqvist",
+      "Michael Forster"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 350047,
+    "name": "Patrick Hamilton",
+    "profile": "Belgian producer, recording engineer, studio musician and player of the Hammond organ, born in 1963.\r\nFounder of the [l=The Globe Recording Studios].",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/patrick.hamilton.37017"
+    ],
+    "members": [],
+    "groups": [
+      "2 Lips",
+      "Quadriga (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 83,
+    "digital_only_releases": 17,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "7\", Single",
+      "CD",
+      "CD, Album",
+      "CD, Album, Ltd + DVD-V, Ltd",
+      "CD, Comp",
+      "CD, Maxi",
+      "CD, Single",
+      "CD, Single, Enh",
+      "CD, Single, Promo",
+      "CDr, Single, Car",
+      "LP, Album"
+    ],
+    "labels": [
+      "2Brains Records",
+      "ARS Entertainment",
+      "ARS Entertainment, ARS Entertainment",
+      "Antler-Subway, Antler-Subway, Antler-Subway",
+      "CNR Music",
+      "CNR Music Belgium NV",
+      "CNR Records",
+      "CNR Records, VMP Bvba",
+      "Capitol Records",
+      "Decca",
+      "Dino Music",
+      "Dureco",
+      "Dureco Benelux",
+      "EMI",
+      "EMI Belgium",
+      "EMI, EMI",
+      "GTS (3)",
+      "Ghost Town Music",
+      "Globe Records (10)",
+      "HKM",
+      "Holy Hole Music",
+      "KvdB",
+      "Magic",
+      "Magic, EMI",
+      "Media Future",
+      "Media Future, Fanty Factory",
+      "Multidisc (3), Multidisc (3)",
+      "Music Hall Records, Musical Van Vlaanderen",
+      "Not On Label (Silk (68) Self-released)",
+      "Not On Label (Wendy Van Wanten Self-released)",
+      "Onadisc",
+      "Piet Roelen Productions",
+      "Piet Roelen Productions, Universal Music Belgium",
+      "RM Records",
+      "Stargate Records (2)",
+      "TELAMO, TELAMO",
+      "The Evolution",
+      "The Sun (3)",
+      "Universal Music Belgium, Universal Music Belgium",
+      "Van Dijk Publishing",
+      "Van Dijk Publishing, Van Dijk Publishing",
+      "Vlaamse Sterren",
+      "Vlaamse Sterren, Thienpont Artists",
+      "[PIAS] Belgium, Ketnet, Musical Van Vlaanderen"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Patrick Hamilton",
+    "mbid": "b1bd706a-2919-47c3-bf3a-fcc860a729a8",
+    "listeners": 51915,
+    "playcount": 211526,
+    "listener_play_ratio": 4.07,
+    "bio_exists": true,
+    "bio_summary": "Patrick Hamilton is a multi-faceted artist who effortlessly moves between the roles of composer, producer and performer. Signed to Sony Music Masterworks, Hamilton successfully combines his work as a composer in the contemporary space with his work in film and TV score composition.\n\nArtistically diverse, Patrick Hamilton is rooted in the core classical tradition. Hailing from Bruges in Belgium, he was classically trained at the Royal Conservatoires in Bruges & Ghent before embarking on a hugely ",
+    "tags": [
+      "london",
+      "piano",
+      "Classical",
+      "contemporary classical",
+      "hefner"
+    ],
+    "similar_artists": [
+      "Alban Claudin",
+      "A. Blomqvist",
+      "Olivia Belli",
+      "Alexis Ffrench",
+      "Jef Martens"
+    ],
+    "top_tracks": [
+      {
+        "name": "Serendipity",
+        "listeners": 14798,
+        "playcount": 44459
+      },
+      {
+        "name": "Winged Melancholy",
+        "listeners": 12799,
+        "playcount": 38449
+      },
+      {
+        "name": "Stories of Hope",
+        "listeners": 10792,
+        "playcount": 25545
+      },
+      {
+        "name": "Amore Eterno",
+        "listeners": 6617,
+        "playcount": 16516
+      },
+      {
+        "name": "A New Beginning",
+        "listeners": 5559,
+        "playcount": 12976
+      },
+      {
+        "name": "Le 16ème Avril",
+        "listeners": 2312,
+        "playcount": 6484
+      },
+      {
+        "name": "Amitié éternelle",
+        "listeners": 2223,
+        "playcount": 6355
+      },
+      {
+        "name": "Au Fond D'Amour",
+        "listeners": 1823,
+        "playcount": 4558
+      },
+      {
+        "name": "La danse d'amour",
+        "listeners": 1641,
+        "playcount": 4279
+      },
+      {
+        "name": "Dawn Chorus",
+        "listeners": 1403,
+        "playcount": 3865
+      }
+    ],
+    "url": "https://www.last.fm/music/Patrick+Hamilton"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

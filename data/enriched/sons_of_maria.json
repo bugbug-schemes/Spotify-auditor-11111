@@ -1,0 +1,571 @@
+{
+  "artist_name": "Sons Of Maria",
+  "artist_id": "sons_of_maria",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:12:50.794960+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8a5b6a67-a40c-47cc-8696-edaae8bb9b94",
+    "type": "Person",
+    "country": "ES",
+    "area": "Spain",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1980063",
+      "free streaming": "https://www.deezer.com/artist/1417381",
+      "purchase for download": "https://www.beatport.com/artist/sons-of-maria/137039",
+      "social network": "https://www.facebook.com/SonsOfMaria",
+      "soundcloud": "https://soundcloud.com/sonsofmaria",
+      "streaming": "https://tidal.com/artist/3707456"
+    },
+    "labels": [
+      "GNKP Goodnight Kiss Productions GmbH",
+      "Enormous Chills",
+      "No Definition",
+      "Enormous Tunes"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1417381,
+    "name": "Sons Of Maria",
+    "nb_fan": 5131,
+    "nb_album": 90,
+    "link": "https://www.deezer.com/artist/1417381",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/270d59ed9ed6e5cc89e2b617c2d16f95/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "EDX",
+      "Nora En Pure",
+      "Passenger 10"
+    ],
+    "contributor_roles": {
+      "Nora En Pure": [
+        "Main"
+      ],
+      "EDX": [
+        "Featured"
+      ],
+      "Passenger 10": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Don't Tell Me I Can't Have It",
+      "Break Through",
+      "Outbound",
+      "What It Feels Like (Original Mix)",
+      "Over You",
+      "Uruguay (EDX's Dubai Skyline Radio Mix)",
+      "Are You (Extended Mix)",
+      "Do You Still Breathe",
+      "Solero (Original Mix)",
+      "Are You",
+      "Some Days Are Harder",
+      "Resemblance",
+      "Need You (Radio Mix)",
+      "Need You (Original Mix)",
+      "Bahar : Bahar",
+      "Days of Blues",
+      "Silk & Frames (Original Mix)",
+      "Chimera (Original Mix)",
+      "The Old Lady Who Waits for the Days to Go By",
+      "Sleeping in My Bed (Radio Mix)",
+      "Break Through (Club Mix)",
+      "Foyer (Original Mix)",
+      "What It Feels Like (Radio Mix)",
+      "Chimera (Radio Mix)",
+      "Uruguay (EDX's Dubai Skyline Remix)"
+    ],
+    "track_durations": [
+      187,
+      211,
+      193,
+      394,
+      207,
+      208,
+      337,
+      170,
+      362,
+      214,
+      196,
+      244,
+      165,
+      435,
+      390,
+      232,
+      352,
+      381,
+      239,
+      186,
+      379,
+      405,
+      207,
+      246,
+      349
+    ],
+    "track_ranks": [
+      336214,
+      215642,
+      182478,
+      114833,
+      261191,
+      419005,
+      37761,
+      92183,
+      153695,
+      146205,
+      248161,
+      191230,
+      315219,
+      32536,
+      47544,
+      163432,
+      181666,
+      152919,
+      90896,
+      238604,
+      106712,
+      185299,
+      102510,
+      176402,
+      206564
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 13,
+      "single": 74
+    },
+    "albums": [
+      {
+        "title": "Sirup Deep Sessions 2016.01",
+        "label": "",
+        "release_date": "2016-01-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Luna Park",
+        "label": "",
+        "release_date": "2014-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mykonos 2011",
+        "label": "",
+        "release_date": "2011-07-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Close to Me",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Like a Drum",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Break Through",
+        "label": "",
+        "release_date": "2018-06-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Breathe into Me",
+        "label": "",
+        "release_date": "2017-02-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "What It Feels Like",
+        "label": "",
+        "release_date": "2016-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chimera EP",
+        "label": "",
+        "release_date": "2016-02-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Solero",
+        "label": "",
+        "release_date": "2015-07-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "With You",
+        "label": "",
+        "release_date": "2015-01-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Uruguay - The Remixes",
+        "label": "",
+        "release_date": "2015-01-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I Got a Thrill",
+        "label": "",
+        "release_date": "2014-07-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Silk & Frames",
+        "label": "",
+        "release_date": "2013-11-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I'm Gonna Show You",
+        "label": "",
+        "release_date": "2012-11-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "So Blue",
+        "label": "",
+        "release_date": "2010-11-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shorelines",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let It All Go",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Surf",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Long Way Home",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bohemian World",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Infatuated",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Appalachian",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Some Days Are Harder",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Do You Still Breathe",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whenever You Are Ready (Ambient Version)",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whenever You Are Ready",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rural Life",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Place",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Into Your Arms",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Nora En Pure",
+      "Möwe",
+      "MYNGA",
+      "Tep No",
+      "Pang!",
+      "Y.V.E. 48",
+      "Spada",
+      "Thomas Jack",
+      "Autograf",
+      "Klingande"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1980063,
+    "name": "Sons Of Maria",
+    "profile": "Contact info:\r\ne-mail: sonsofmaria@hotmail.com",
+    "realname": "",
+    "social_urls": [
+      "http://soundcloud.com/sonsofmaria",
+      "https://www.facebook.com/SonsOfMaria",
+      "https://twitter.com/sonsofmaria",
+      "http://www.lastfm.de/music/Sons+Of+Maria",
+      "https://www.instagram.com/sonsofmaria/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 54,
+    "digital_only_releases": 46,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "16xFile, MP3, Comp, 320",
+      "21xFile, MP3, Comp, 320",
+      "25xFile, MP3, Comp, 320",
+      "29xFile, MP3, Comp, 320",
+      "2xCD",
+      "2xCD + CD, Mixed + Comp",
+      "2xCD, Comp",
+      "2xCD, Comp + CD, Comp, Mixed",
+      "2xCD, Comp, Mixed",
+      "2xCD, Mixed",
+      "2xFile, MP3, 320",
+      "32xFile, MP3, Comp, 320",
+      "36xFile, MP3, Comp, 320",
+      "3xCD, Comp",
+      "3xCD, Comp, Mixed",
+      "3xCD, Comp, Mixed + CD, Comp",
+      "3xCD, Mixed",
+      "3xCD, Mixed + CD, Comp",
+      "3xFile, MP3, 320",
+      "3xFile, MP3, EP, 320",
+      "40xFile, MP3, Comp, 320",
+      "42xFile, MP3, Comp, P/Mixed",
+      "4xCD, Comp",
+      "4xCD, Comp, Mixed",
+      "6xCD, Album, Comp, P/Mixed, Dig",
+      "CD, Album + CD, Mixed + Dig",
+      "CD, Comp",
+      "CD, Comp, Mixed",
+      "CD, Comp, Promo",
+      "CD, Mixed, Promo, Smplr",
+      "File, MP3, 320",
+      "File, MP3, Comp",
+      "File, MP3, Mixed",
+      "File, MP3, Single, 320"
+    ],
+    "labels": [
+      "541",
+      "Armada Digital",
+      "CNR Music",
+      "City Life",
+      "Club Tools, Kontor Records",
+      "Coco Beach Ibiza, Kontor Records",
+      "Do It Yourself Multimedia Group",
+      "Embassy One",
+      "Enormous Chills",
+      "Enormous Tunes",
+      "I Love This Sound",
+      "Kontor Records",
+      "Kontor Records GmbH",
+      "Kontor Records, Kontor Records, Kontor Records, Kontor Records",
+      "Le Mans Recordings",
+      "Mix!",
+      "More Music And Media",
+      "Nikki Beach Music",
+      "No Definition",
+      "Not On Label (D2A self-released)",
+      "Pacha Recordings",
+      "Pink Revolver",
+      "Sirup Music",
+      "Sony Music",
+      "Sony Music, Ministry Of Sound",
+      "Tokenish",
+      "Vidisco",
+      "Wavemusic",
+      "ZYX Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sons Of Maria",
+    "mbid": "",
+    "listeners": 163774,
+    "playcount": 1196623,
+    "listener_play_ratio": 7.31,
+    "bio_exists": true,
+    "bio_summary": "Hailing from Zurich, Switzerland, Sons of Maria is a prolific dance outfit that makes essential house music in many different styles from deep to tropical to driving to progressive and future house. The Swiss project first emerged in 2015 and since then has put out eight fascinating EPs. The labels they have worked with include disco:wax, Enormous Tunes and No Deifniton and their influences take in chill wave, downtempo and lush pop as well as club facing house grooves. <a href=\"https://www.last",
+    "tags": [
+      "deep house",
+      "trance",
+      "dance",
+      "House",
+      "switzerland"
+    ],
+    "similar_artists": [
+      "Nora En Pure",
+      "Nora Van Elken",
+      "Calippo",
+      "Eli & Fur",
+      "Avoure"
+    ],
+    "top_tracks": [
+      {
+        "name": "You & I - Radio Mix",
+        "listeners": 25050,
+        "playcount": 82067
+      },
+      {
+        "name": "Need You - Radio Mix",
+        "listeners": 22385,
+        "playcount": 59876
+      },
+      {
+        "name": "Where the Rivers Flow - Radio Mix",
+        "listeners": 21400,
+        "playcount": 67397
+      },
+      {
+        "name": "Never Be the Same",
+        "listeners": 15323,
+        "playcount": 55025
+      },
+      {
+        "name": "Don't Tell Me I Can't Have It",
+        "listeners": 11791,
+        "playcount": 42169
+      },
+      {
+        "name": "Sweet Madness",
+        "listeners": 11707,
+        "playcount": 32978
+      },
+      {
+        "name": "Feels Like Summer - Radio Mix",
+        "listeners": 8424,
+        "playcount": 24852
+      },
+      {
+        "name": "Take It to the Beat",
+        "listeners": 8295,
+        "playcount": 25936
+      },
+      {
+        "name": "Our Love - Radio Mix",
+        "listeners": 8280,
+        "playcount": 19854
+      },
+      {
+        "name": "Are You",
+        "listeners": 7981,
+        "playcount": 24924
+      }
+    ],
+    "url": "https://www.last.fm/music/Sons+Of+Maria"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,483 @@
+{
+  "artist_name": "William Wilson",
+  "artist_id": "william_wilson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:00:25.134809+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d8df599f-2bcc-44eb-a731-af3751fc9377",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [
+      "Bill Wilson"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "official homepage": "http://www.williamwilson.com/"
+    },
+    "labels": [
+      "GuitarSounds",
+      "Space for Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 55083,
+    "name": "William Wilson",
+    "nb_fan": 203,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/55083",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e61fa7aa32463693307352368db1889a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "El Noi De La Mare",
+      "Estudio No. 5",
+      "Canon in D",
+      "Clair De Lune",
+      "Largo from \"Xerxes\"",
+      "Gymnopédie No. 1",
+      "Lascia Ch'io Pianga",
+      "Sheep May Safely Graze",
+      "Españoleta",
+      "Gymnopédie No. 3",
+      "Largo from \"New World Symphony\"",
+      "Gymnopédie No. 2",
+      "Arioso",
+      "Estudio No. 1",
+      "Wachet Auf",
+      "Adagio from \"Pathetique Sonata\"",
+      "Romanza",
+      "LakmÃ©: Flower Duet",
+      "Angels from the Realms of Glory",
+      "The First Noël",
+      "O Little Town of Bethlehem",
+      "Bring a Torch, Jeannette, Isabella",
+      "Coventry Carol",
+      "Jolly Old St. Nicholas",
+      "What Child Is This?"
+    ],
+    "track_durations": [
+      134,
+      161,
+      219,
+      228,
+      131,
+      171,
+      122,
+      233,
+      125,
+      123,
+      128,
+      143,
+      147,
+      106,
+      144,
+      185,
+      166,
+      88,
+      71,
+      98,
+      98,
+      82,
+      145,
+      99,
+      114
+    ],
+    "track_ranks": [
+      104755,
+      121170,
+      164688,
+      150464,
+      117580,
+      123091,
+      120434,
+      123501,
+      110772,
+      162406,
+      168336,
+      144737,
+      133643,
+      82691,
+      119682,
+      107032,
+      115257,
+      105798,
+      25108,
+      10119,
+      15443,
+      21990,
+      38678,
+      27412,
+      9032
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "ep": 4,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "Spleen",
+        "label": "",
+        "release_date": "2021-02-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Calming Music for Classical Guitar",
+        "label": "",
+        "release_date": "2021-01-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Música Triste - Sad Music for the Classical Guitar",
+        "label": "",
+        "release_date": "2019-10-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Let It Glow",
+        "label": "",
+        "release_date": "2019-05-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spleen",
+        "label": "",
+        "release_date": "2018-05-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flamencolele",
+        "label": "",
+        "release_date": "2017-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Classical Guitar Music for Reading and Studying",
+        "label": "",
+        "release_date": "2015-09-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "O Little Town of Bethlehem: Christmas Miniatures for Classical Guitar",
+        "label": "",
+        "release_date": "2014-11-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spanish Dances for Classical Guitar: Music of Sarasate",
+        "label": "",
+        "release_date": "2014-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Classical Guitar Music for Sleep and Relaxation",
+        "label": "",
+        "release_date": "2013-01-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tango for One",
+        "label": "",
+        "release_date": "2006-07-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Love",
+        "label": "",
+        "release_date": "2005-01-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lavenbergi",
+        "label": "",
+        "release_date": "2021-02-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lavenbergi",
+        "label": "",
+        "release_date": "2018-05-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "New Year - EP",
+        "label": "",
+        "release_date": "2015-04-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ep disposable",
+        "label": "",
+        "release_date": "2006-01-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "ALL3Y",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hunting grounds (shortened edit)",
+        "label": "",
+        "release_date": "2025-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hostile Pursuit",
+        "label": "",
+        "release_date": "2025-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Road Ahead",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Journey on",
+        "label": "",
+        "release_date": "2025-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kompressor",
+        "label": "",
+        "release_date": "2025-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Invader",
+        "label": "",
+        "release_date": "2025-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dark Aura",
+        "label": "",
+        "release_date": "2025-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hunting grounds",
+        "label": "",
+        "release_date": "2025-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fakes",
+        "label": "",
+        "release_date": "2025-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hyper Rush",
+        "label": "",
+        "release_date": "2024-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Interstellar Rave",
+        "label": "",
+        "release_date": "2024-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Abyss",
+        "label": "",
+        "release_date": "2024-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm before the storm",
+        "label": "",
+        "release_date": "2024-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 704922,
+    "name": "William Wilson (2)",
+    "profile": "",
+    "realname": "William Wilson",
+    "social_urls": [
+      "https://williamwilsonofficial.com/",
+      "https://www.instagram.com/williamwilsonofficial/",
+      "https://www.facebook.com/WilliamWilsonOfficial/"
+    ],
+    "members": [],
+    "groups": [
+      "Legion Within",
+      "Sky's Gone Out"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 11,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "4xFile, FLAC, EP",
+      "CD, Album"
+    ],
+    "labels": [
+      "Projekt",
+      "Tragick Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "William Wilson",
+    "mbid": "22ff594d-3dfc-4d8b-8c4f-a76061e9c35e",
+    "listeners": 21981,
+    "playcount": 221076,
+    "listener_play_ratio": 10.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/William+Wilson\">Read more on Last.fm</a>",
+    "tags": [
+      "folk",
+      "indie",
+      "acustico",
+      "classical guitar",
+      "instrumental"
+    ],
+    "similar_artists": [
+      "Chris Richter",
+      "Ana Vidović",
+      "Miguel Llobet Solés",
+      "Manuel Ponce",
+      "Roland Dyens"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lakmé: Flower Duet",
+        "listeners": 6268,
+        "playcount": 18296
+      },
+      {
+        "name": "Españoleta",
+        "listeners": 3005,
+        "playcount": 14252
+      },
+      {
+        "name": "Angels from the Realms of Glory",
+        "listeners": 2585,
+        "playcount": 5940
+      },
+      {
+        "name": "Good Christian Men, Rejoice",
+        "listeners": 2154,
+        "playcount": 4893
+      },
+      {
+        "name": "Romanza",
+        "listeners": 2118,
+        "playcount": 11812
+      },
+      {
+        "name": "Clair De Lune",
+        "listeners": 1758,
+        "playcount": 10898
+      },
+      {
+        "name": "Lascia Ch'io Pianga",
+        "listeners": 1747,
+        "playcount": 9549
+      },
+      {
+        "name": "Gymnopédie No. 2",
+        "listeners": 1587,
+        "playcount": 9815
+      },
+      {
+        "name": "What Child Is This?",
+        "listeners": 1514,
+        "playcount": 3327
+      },
+      {
+        "name": "Largo from \"New World Symphony\"",
+        "listeners": 1501,
+        "playcount": 9049
+      }
+    ],
+    "url": "https://www.last.fm/music/William+Wilson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

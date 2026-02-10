@@ -1,0 +1,208 @@
+{
+  "artist_name": "Ray Wilshire",
+  "artist_id": "ray_wilshire",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:38:10.975994+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 57735062,
+    "name": "Ray Wilshire",
+    "nb_fan": 2,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/57735062",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/82b2547a0ab35c1a68b4a8a09c57995b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Playing for Keeps",
+      "My Christmas Tree"
+    ],
+    "track_durations": [
+      140,
+      130
+    ],
+    "track_ranks": [
+      89371,
+      11546
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Little Peter Rabbit",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Christmas Tree (Fireplace Version)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Revive Us Again",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Christmas Tree",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Masquerade is Over",
+        "label": "",
+        "release_date": "2023-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just a Piece of My Heart",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Moon",
+        "label": "",
+        "release_date": "2023-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Playing for Keeps",
+        "label": "",
+        "release_date": "2019-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Washington Circle",
+        "label": "",
+        "release_date": "2019-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ray Wilshire",
+    "mbid": "",
+    "listeners": 33207,
+    "playcount": 126327,
+    "listener_play_ratio": 3.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ray+Wilshire\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Charlotte Benton",
+      "Ada Harley",
+      "Alec Lee-Stewart",
+      "Maki Yuoma",
+      "Bruce Douglas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Playing for Keeps",
+        "listeners": 17886,
+        "playcount": 67205
+      },
+      {
+        "name": "Just a Piece of My Heart",
+        "listeners": 5854,
+        "playcount": 23887
+      },
+      {
+        "name": "My Christmas Tree",
+        "listeners": 5823,
+        "playcount": 16203
+      },
+      {
+        "name": "Washington Circle",
+        "listeners": 5011,
+        "playcount": 12434
+      },
+      {
+        "name": "Lousy Conversations",
+        "listeners": 1469,
+        "playcount": 3637
+      },
+      {
+        "name": "Blue Moon",
+        "listeners": 742,
+        "playcount": 1922
+      },
+      {
+        "name": "The Masquerade is Over",
+        "listeners": 427,
+        "playcount": 1047
+      },
+      {
+        "name": "Revive Us Again",
+        "listeners": 5,
+        "playcount": 17
+      },
+      {
+        "name": "Night and Day",
+        "listeners": 3,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/Ray+Wilshire"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,91 @@
+{
+  "artist_name": "Topozia",
+  "artist_id": "topozia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:46:32.406217+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Topozia', got 'Topo La Maskara'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Topozia",
+    "mbid": "",
+    "listeners": 4057,
+    "playcount": 7949,
+    "listener_play_ratio": 1.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Topozia\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Furomerald",
+      "Altered Echoes",
+      "Owen Bloom",
+      "elveper",
+      "Lún"
+    ],
+    "top_tracks": [
+      {
+        "name": "Seasons",
+        "listeners": 2720,
+        "playcount": 4713
+      },
+      {
+        "name": "Beneath the Wave",
+        "listeners": 1583,
+        "playcount": 3231
+      },
+      {
+        "name": "Lost Memories",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Daydreaming",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Topozia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

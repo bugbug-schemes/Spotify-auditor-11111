@@ -1,0 +1,135 @@
+{
+  "artist_name": "Divine Isle",
+  "artist_id": "divine_isle",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:30:10.977388+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Divine Isle', got 'Divine Sweater'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2910786,
+    "name": "Mike Morton (3)",
+    "profile": "UK photographer, who grew up on the Isle of Wight and became a smudger at the age of 16. \r\nMorton turned professional at 18 and worked in London with Sigue Sigue Sputnik, who first put his work on a sleeve. Other artists he has snapped include Debbie Harry, Marc Almond, Divine, Bronski Beat, Strawberry Switchblade, Billy Idol, Alice Cooper, Rod Stewart, Bryan Ferry, Erasure and Oasis.\r\nMike's main body of work was as a freelance photographer for Melody Maker (1986 - 1991), staff photographer for Sky Channel (1986 - 1988) and in-house photographer at The Limelight Club, London (1987). His work was also published in NME, Sounds, Record Mirror, Zigzag, Smash Hits, No.1, Time Out, City Limits, Music Week, the japanese publication Rockin' On and national newspapers The Guardian, Sunday Mirror and Daily Mirror  \r\n\r\n",
+    "realname": "",
+    "social_urls": [
+      "http://www.dreamlandnews.com/morton/index.shtml",
+      "http://www.dreamlandnews.com/morton/1.shtml",
+      "http://archive.blondie.net/archives/archived20030811/mikemorton_about.html"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 15,
+    "total_releases": 15,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Divine Isle",
+    "mbid": "",
+    "listeners": 9276,
+    "playcount": 31273,
+    "listener_play_ratio": 3.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Divine+Isle\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aimspherer",
+      "Elements Of Matter",
+      "Cénter",
+      "Sinnesro",
+      "Constant Future"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hydration",
+        "listeners": 5990,
+        "playcount": 16821
+      },
+      {
+        "name": "Silent Garden",
+        "listeners": 3518,
+        "playcount": 12930
+      },
+      {
+        "name": "Eternal Flute",
+        "listeners": 646,
+        "playcount": 1354
+      },
+      {
+        "name": "Flow Calm",
+        "listeners": 36,
+        "playcount": 73
+      },
+      {
+        "name": "Crystal Tones",
+        "listeners": 24,
+        "playcount": 27
+      },
+      {
+        "name": "Flow",
+        "listeners": 20,
+        "playcount": 29
+      },
+      {
+        "name": "Blissful Echoes",
+        "listeners": 18,
+        "playcount": 29
+      },
+      {
+        "name": "Somnatica",
+        "listeners": 2,
+        "playcount": 6
+      },
+      {
+        "name": "Shimmering Stream",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Divine+Isle"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,516 @@
+{
+  "artist_name": "Chappell Roan",
+  "artist_id": "chappell_roan",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:03:14.368058+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "56a55378-f155-48de-80a5-d80104221267",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1998-02-19",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "pop",
+      "singer-songwriter",
+      "synth-pop",
+      "electropop",
+      "indie pop",
+      "dance-pop",
+      "pop rock",
+      "alternative pop",
+      "queer",
+      "sapphic",
+      "2020s",
+      "gen z",
+      "gay pop"
+    ],
+    "aliases": [
+      "Chapell Roan",
+      "Kayleigh Rose Amstutz",
+      "ChappellRoanVEVO"
+    ],
+    "isnis": [
+      "0000000492646027"
+    ],
+    "ipis": [
+      "00850371449",
+      "00850371547"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003654352",
+      "bandsintown": "https://www.bandsintown.com/a/14727853",
+      "discogs": "https://www.discogs.com/artist/6360106",
+      "free streaming": "https://www.deezer.com/artist/12945219",
+      "IMDb": "https://www.imdb.com/name/nm11490513/",
+      "last.fm": "https://www.last.fm/music/Chappell+Roan",
+      "lyrics": "https://www.musixmatch.com/artist/Chappell-Roan",
+      "official homepage": "http://iamchappellroan.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2024107086/",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/chappellroan-10003224933/3224933",
+      "secondhandsongs": "https://secondhandsongs.com/artist/235192",
+      "setlistfm": "https://www.setlist.fm/setlists/chappell-roan-6bcad6ce.html",
+      "social network": "https://www.tiktok.com/@chappellroan",
+      "songkick": "https://www.songkick.com/artists/9198519",
+      "soundcloud": "https://soundcloud.com/chappellroan",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/chappellroan-10003224933/3224933",
+      "VIAF": "http://viaf.org/viaf/3383169829218837320005",
+      "wikidata": "https://www.wikidata.org/wiki/Q110281146",
+      "youtube": "https://www.youtube.com/channel/UCTKTRVaWrythRIGNfZYBp2A",
+      "youtube music": "https://music.youtube.com/channel/UC1cYfQGC1eXrSO-hxMd7ESQ"
+    },
+    "labels": [
+      "NPR Music",
+      "Trade Mark of Quality",
+      "Atlantic",
+      "[no label]",
+      "Amusement Records",
+      "Island",
+      "Big Beat"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12945219,
+    "name": "Chappell Roan",
+    "nb_fan": 260380,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/12945219",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/14ca3aea25950189f30efe0fa79ac4f9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Pink Pony Club",
+      "Good Luck, Babe!",
+      "HOT TO GO!",
+      "The Subway",
+      "Casual",
+      "Red Wine Supernova",
+      "The Giver",
+      "Femininomenon",
+      "Picture You",
+      "Naked In Manhattan",
+      "My Kink Is Karma",
+      "After Midnight",
+      "Super Graphic Ultra Modern Girl",
+      "California",
+      "Coffee",
+      "Guilty Pleasure",
+      "Love Me Anyway",
+      "Kaleidoscope",
+      "Die Young",
+      "Meantime",
+      "Bad for You",
+      "Sugar High",
+      "School Nights",
+      "Bitter",
+      "Good Hurt"
+    ],
+    "track_durations": [
+      258,
+      218,
+      184,
+      248,
+      232,
+      193,
+      203,
+      220,
+      187,
+      211,
+      222,
+      204,
+      183,
+      198,
+      205,
+      224,
+      233,
+      222,
+      225,
+      183,
+      232,
+      219,
+      249,
+      242,
+      192
+    ],
+    "track_ranks": [
+      957312,
+      963608,
+      783983,
+      822887,
+      719312,
+      692487,
+      652269,
+      703250,
+      672354,
+      645392,
+      655427,
+      678349,
+      664827,
+      608186,
+      586350,
+      583621,
+      558180,
+      630369,
+      399216,
+      412908,
+      473121,
+      452673,
+      425546,
+      406276,
+      377472
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "The Rise and Fall of a Midwest Princess",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "School Nights",
+        "label": "",
+        "release_date": "2017-09-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Subway",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Giver",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Luck, Babe!",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "HOT TO GO!",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Red Wine Supernova",
+        "label": "",
+        "release_date": "2023-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kaleidoscope",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Casual",
+        "label": "",
+        "release_date": "2023-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Femininomenon",
+        "label": "",
+        "release_date": "2023-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Kink Is Karma",
+        "label": "",
+        "release_date": "2023-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pink Pony Club",
+        "label": "",
+        "release_date": "2023-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naked In Manhattan",
+        "label": "",
+        "release_date": "2023-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "California",
+        "label": "",
+        "release_date": "2023-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Me Anyway",
+        "label": "",
+        "release_date": "2023-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "School Nights",
+        "label": "",
+        "release_date": "2018-03-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bitter",
+        "label": "",
+        "release_date": "2018-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Hurt (Aevion Remix)",
+        "label": "",
+        "release_date": "2017-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Hurt",
+        "label": "",
+        "release_date": "2017-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Conan Gray",
+      "girl in red",
+      "Reneé Rapp",
+      "MUNA",
+      "Olivia Rodrigo",
+      "Towa Bird",
+      "Sabrina Carpenter",
+      "Ethel Cain",
+      "Between Friends",
+      "Suki Waterhouse"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6360106,
+    "name": "Chappell Roan",
+    "profile": "American indie pop singer and songwriter known for her 1980s synth-pop and early 2000s pop-inspired music, as well her camp and drag queen–influenced aesthetic. Born Kayleigh Rose Amstutz in Willard, Missouri, on February 19, 1998. Her stage name, Chappell Roan, is a combination of the name of her grandfather, Dennis K. Chappell, who died of brain cancer, and a word taken from his favorite song, \"The Strawberry Roan\" by [a1791599]. ",
+    "realname": "Kayleigh Rose Amstutz",
+    "social_urls": [
+      "http://iamchappellroan.com/",
+      "https://chappellroan.bandcamp.com/",
+      "https://soundcloud.com/chappellroan/",
+      "https://www.instagram.com/chappellroan/?hl=en",
+      "https://www.facebook.com/ChappellRoan/",
+      "https://en.wikipedia.org/wiki/Chappell_Roan",
+      "https://x.com/ChappellRoan",
+      "https://www.tiktok.com/@chappellroan?lang=en",
+      "https://www.youtube.com/channel/UCTKTRVaWrythRIGNfZYBp2A"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 26,
+    "digital_only_releases": 43,
+    "total_releases": 69,
+    "formats": [
+      "",
+      "12\", S/Sided, EP, RSD, Etch, Ltd, Pur",
+      "28xFile, AAC, Comp, 256",
+      "2xCD, Comp",
+      "31xFile, AAC, Comp, 256",
+      "3xCD, Comp",
+      "4xCD, Comp, Ltd, Édi",
+      "4xFile, MP3, EP, 320",
+      "56xFile, AAC, Comp, 256",
+      "5xCD, Comp, Dlx",
+      "61xFile, AAC, Comp, 256",
+      "73xFile, AAC, Comp, 256",
+      "9xFile, MP3, Promo, Smplr, 320",
+      "Album, P/Unofficial + 217xFile, FLAC + 4xFile, WAV",
+      "CD, Album",
+      "CD, Comp",
+      "CDr, Comp",
+      "CDr, Comp, Unofficial",
+      "Cass, Unofficial, Red",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single",
+      "File, FLAC, Single, 16-",
+      "File, FLAC, Single, 24-",
+      "File, FLAC, Single, Unofficial",
+      "File, MP3, MPEG-4 Video, Unofficial",
+      "File, MP3, Single",
+      "File, MP3, Single, 320",
+      "LP, EP, Unofficial, Bla",
+      "LP, Unofficial"
+    ],
+    "labels": [
+      "/v/",
+      "Amusement Records (3)",
+      "Atlantic",
+      "Chappell Roan PS, Island Records",
+      "DMC, DMC",
+      "Deadwood Designs",
+      "EMI, Sony Music, EMI, Sony Music",
+      "Geffen Records",
+      "Geffen Records, Geffen Records",
+      "Infinite Distances",
+      "Island Records",
+      "Island Records (2)",
+      "Label Panthéon, Universal Music France",
+      "Netflix",
+      "Not On Label",
+      "Not On Label (Moistbreezy Self-released)",
+      "Not On Label (Until Dawn (2) Self-released)",
+      "Polystar (3)",
+      "Re:Mission Entertainment",
+      "Sony Music",
+      "Sony Music, Sony Music, EMI, EMI",
+      "UMe, Global Clearing House",
+      "Universal",
+      "Universal Music Belgium",
+      "Universal Music France",
+      "Universal Music, Sony Music",
+      "Warner Music France"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Chappell Roan",
+    "mbid": "56a55378-f155-48de-80a5-d80104221267",
+    "listeners": 2475754,
+    "playcount": 317424569,
+    "listener_play_ratio": 128.21,
+    "bio_exists": true,
+    "bio_summary": "Kayleigh Rose Amstutz (born February 19, 1998), known professionally as Chappell Roan, is a Grammy award-winning American singer and songwriter. Working with long-time collaborator Dan Nigro, her music is inspired by '80s synth-pop and early 2000s pop hits. Her music is heavily influenced by drag queens and is often described as \"campy.\"\n\nWhen she was 17 years old, Roan uploaded a song titled \"Die Young\" to YouTube, leading Atlantic Records to sign her to the label. <a href=\"https://www.last.fm/",
+    "tags": [
+      "pop",
+      "indie pop",
+      "synthpop",
+      "electropop",
+      "queer"
+    ],
+    "similar_artists": [
+      "Sabrina Carpenter",
+      "Olivia Rodrigo",
+      "Reneé Rapp",
+      "Conan Gray",
+      "Taylor Swift"
+    ],
+    "top_tracks": [
+      {
+        "name": "Good Luck, Babe!",
+        "listeners": 2007394,
+        "playcount": 57057595
+      },
+      {
+        "name": "HOT TO GO!",
+        "listeners": 1542777,
+        "playcount": 32041135
+      },
+      {
+        "name": "Pink Pony Club",
+        "listeners": 1453436,
+        "playcount": 25534714
+      },
+      {
+        "name": "Red Wine Supernova",
+        "listeners": 1279313,
+        "playcount": 30631680
+      },
+      {
+        "name": "Casual",
+        "listeners": 1252090,
+        "playcount": 28542552
+      },
+      {
+        "name": "Femininomenon",
+        "listeners": 1067709,
+        "playcount": 19091922
+      },
+      {
+        "name": "My Kink Is Karma",
+        "listeners": 990352,
+        "playcount": 19119199
+      },
+      {
+        "name": "The Subway",
+        "listeners": 890937,
+        "playcount": 15314985
+      },
+      {
+        "name": "Naked in Manhattan",
+        "listeners": 855618,
+        "playcount": 14267326
+      },
+      {
+        "name": "Picture You",
+        "listeners": 843308,
+        "playcount": 12532393
+      }
+    ],
+    "url": "https://www.last.fm/music/Chappell+Roan"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,202 @@
+{
+  "artist_name": "Aiyden",
+  "artist_id": "aiyden",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:46:47.406984+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 169792847,
+    "name": "Aiyden",
+    "nb_fan": 4,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/169792847",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b0135e22f65094b16582fb6317883265/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Outward Motion",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gratification",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Into Restful Dawn",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Orbit",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quintus",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm Delta",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feathers",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Upwards",
+        "label": "",
+        "release_date": "2021-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dust",
+        "label": "",
+        "release_date": "2021-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aiyden",
+    "mbid": "",
+    "listeners": 34876,
+    "playcount": 171265,
+    "listener_play_ratio": 4.91,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aiyden\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Remi Asana",
+      "Manny Chu",
+      "Bevan Holcomb",
+      "Minja Nielsen",
+      "Ghasel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Feathers",
+        "listeners": 22989,
+        "playcount": 120602
+      },
+      {
+        "name": "Upwards",
+        "listeners": 6934,
+        "playcount": 24785
+      },
+      {
+        "name": "Dust",
+        "listeners": 5970,
+        "playcount": 21099
+      },
+      {
+        "name": "Outward Motion",
+        "listeners": 1173,
+        "playcount": 2934
+      },
+      {
+        "name": "Gentle Orbit",
+        "listeners": 399,
+        "playcount": 1587
+      },
+      {
+        "name": "Afternoon Sky",
+        "listeners": 81,
+        "playcount": 216
+      },
+      {
+        "name": "Gratification",
+        "listeners": 1,
+        "playcount": 23
+      },
+      {
+        "name": "Calm Delta",
+        "listeners": 1,
+        "playcount": 12
+      },
+      {
+        "name": "acoustic feal",
+        "listeners": 1,
+        "playcount": 6
+      },
+      {
+        "name": "Fire From The Gods - End Transmission",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Aiyden"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

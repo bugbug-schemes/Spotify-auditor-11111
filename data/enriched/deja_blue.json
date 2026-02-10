@@ -1,0 +1,385 @@
+{
+  "artist_name": "deja blue",
+  "artist_id": "deja_blue",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:16:58.592914+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f499a4b5-7360-4556-80a5-a4018d958433",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "downtempo",
+      "instrumental",
+      "hip hop",
+      "lo-fi",
+      "boom bap",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "not on boomplay"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/7315338",
+      "purchase for download": "https://us.7digital.com/artist/deja-blue",
+      "streaming": "https://tidal.com/artist/6557039",
+      "youtube music": "https://music.youtube.com/channel/UCPUnem56cbyW-qXsgKev5rw"
+    },
+    "labels": [
+      "Chill Ghost",
+      "Kindbrew",
+      "Chill Beats Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7315338,
+    "name": "Deja Blue",
+    "nb_fan": 118,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/7315338",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/51a7ea1d17bcaf58f50fe831f0863212/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Banks",
+      "Bashful",
+      "Malofsky",
+      "MyceliumBug",
+      "Whilst"
+    ],
+    "contributor_roles": {
+      "MyceliumBug": [
+        "Main"
+      ],
+      "Banks": [
+        "Main"
+      ],
+      "Bashful": [
+        "Main"
+      ],
+      "Whilst": [
+        "Main"
+      ],
+      "Malofsky": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Aquarium",
+      "Cozy",
+      "Past Times",
+      "drift away",
+      "Fox's Midnight Flame",
+      "Radiance"
+    ],
+    "track_durations": [
+      136,
+      128,
+      126,
+      163,
+      125,
+      138
+    ],
+    "track_ranks": [
+      372256,
+      139020,
+      39147,
+      4324,
+      86676,
+      162681
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 4,
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "My Art Is Bad And Very Popular",
+        "label": "",
+        "release_date": "2024-04-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Unsolved World",
+        "label": "",
+        "release_date": "2022-09-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "1999",
+        "label": "",
+        "release_date": "2014-12-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "As Long As I Know How To Love",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "pieces of me",
+        "label": "",
+        "release_date": "2023-06-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Awake but See-Through",
+        "label": "",
+        "release_date": "2018-04-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Deja Blue",
+        "label": "",
+        "release_date": "2016-02-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Past Times",
+        "label": "",
+        "release_date": "2026-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "These times",
+        "label": "",
+        "release_date": "2025-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Every Way (Demo Version)",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "minami",
+        "label": "",
+        "release_date": "2025-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heartache",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aquarium",
+        "label": "",
+        "release_date": "2024-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "fireplace",
+        "label": "",
+        "release_date": "2024-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "drift away",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "feelin blue",
+        "label": "",
+        "release_date": "2023-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reverie",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fox's Midnight Flame",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "skatin around",
+        "label": "",
+        "release_date": "2023-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sweet",
+        "label": "",
+        "release_date": "2023-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "About Us",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14345876,
+    "name": "Deja Blue",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "2x12\", Comp, Ltd, Gre",
+      "2xLP, Comp, Ltd, Num, 180"
+    ],
+    "labels": [
+      "Lofi Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Deja Blue",
+    "mbid": "f499a4b5-7360-4556-80a5-a4018d958433",
+    "listeners": 5662,
+    "playcount": 17353,
+    "listener_play_ratio": 3.06,
+    "bio_exists": true,
+    "bio_summary": "With musical influences such as Billie Holiday, Musiq Soulchild and Boyz 2 Men, 19 year- old singer/songwriter, Deja Blue, is already wise beyond her years musically. Once you factor in that she was born to a vocalist and flutist, you begin to understand the depth of her abilities. Born in raised in West Philadelphia as the youngest of 7, in a very musical home, she almost had no choice but to fall in love with music.\n\nShe describes her music and style as different <a href=\"https://www.last.fm/m",
+    "tags": [
+      "soul",
+      "rnb"
+    ],
+    "similar_artists": [
+      "Chronodrift",
+      "FlowRay",
+      "A Bowl of Rice",
+      "Flâneur",
+      "Okinami"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cozy",
+        "listeners": 4994,
+        "playcount": 14624
+      },
+      {
+        "name": "Butterflies",
+        "listeners": 239,
+        "playcount": 541
+      },
+      {
+        "name": "feelin blue",
+        "listeners": 135,
+        "playcount": 610
+      },
+      {
+        "name": "Reverie",
+        "listeners": 121,
+        "playcount": 248
+      },
+      {
+        "name": "U and I",
+        "listeners": 78,
+        "playcount": 152
+      },
+      {
+        "name": "Color You",
+        "listeners": 74,
+        "playcount": 317
+      },
+      {
+        "name": "skatin around",
+        "listeners": 72,
+        "playcount": 132
+      },
+      {
+        "name": "sweet",
+        "listeners": 57,
+        "playcount": 112
+      },
+      {
+        "name": "no one",
+        "listeners": 42,
+        "playcount": 61
+      },
+      {
+        "name": "fireplace",
+        "listeners": 24,
+        "playcount": 41
+      }
+    ],
+    "url": "https://www.last.fm/music/Deja+Blue"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

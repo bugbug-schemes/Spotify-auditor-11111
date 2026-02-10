@@ -1,0 +1,151 @@
+{
+  "artist_name": "Frederic Dupont",
+  "artist_id": "frederic_dupont",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:43:08.375300+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f78fb868-073c-4cc3-87db-631b0adeea23",
+    "type": "Person",
+    "country": "BE",
+    "area": "Belgium",
+    "begin_date": "1972",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "setlistfm": "https://www.setlist.fm/setlists/frederic-dupont-3f5656b.html"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Frederic Dupont', got 'Frédéric Dupont'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2858736,
+    "name": "Frédéric Dupont",
+    "profile": "Guitarist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "Blue Note"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Frederic Dupont",
+    "mbid": "",
+    "listeners": 3833,
+    "playcount": 9995,
+    "listener_play_ratio": 2.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Frederic+Dupont\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Philipe Goldman",
+      "Tarragona Heights",
+      "Otar Dunley",
+      "Ferdinand Eisner",
+      "Brogan Doyle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beacon Hill",
+        "listeners": 1764,
+        "playcount": 4865
+      },
+      {
+        "name": "Arbonne",
+        "listeners": 1224,
+        "playcount": 2927
+      },
+      {
+        "name": "Angels We Have Heard On High",
+        "listeners": 920,
+        "playcount": 1909
+      },
+      {
+        "name": "Walcot",
+        "listeners": 76,
+        "playcount": 129
+      },
+      {
+        "name": "Iara",
+        "listeners": 43,
+        "playcount": 107
+      },
+      {
+        "name": "Lonely Road",
+        "listeners": 23,
+        "playcount": 49
+      },
+      {
+        "name": "Pastoral",
+        "listeners": 6,
+        "playcount": 6
+      },
+      {
+        "name": "The Most Wonderful Time Of The Year",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "What's My Name (From \"Descendants 2\"/Soundtrack Version)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Frederic+Dupont"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

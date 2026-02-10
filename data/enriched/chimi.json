@@ -1,0 +1,166 @@
+{
+  "artist_name": "chimi",
+  "artist_id": "chimi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:13:45.912108+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c648fed6-408d-4dd2-9a97-e380cc39eee6",
+    "type": "Group",
+    "country": "",
+    "area": "Long Island",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'chimi', got 'My Chemical Romance'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 278167,
+    "name": "Chimiste",
+    "profile": "French hip hop DJ, producer, beatmaker.\r\nCo-founder of the French rap label [l=Arsenal Records], along with [a=oeno] (Brian Lucas).",
+    "realname": "David Joly",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 42,
+    "total_releases": 49,
+    "formats": [
+      "",
+      "10xFile, AAC, AIFF, ALAC, FLAC, MP3, ogg, WAV, Com",
+      "11xFile, FLAC, MP3",
+      "12\", Promo",
+      "12xFile, MP3, Album, 320",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Mixed, Promo, Sni"
+    ],
+    "labels": [
+      "Arsenal Records",
+      "Brain Connection 1978",
+      "Madrina.Madara",
+      "Not On Label",
+      "Project 21",
+      "Spaïck Production & Recording",
+      "Universal, Maison Barclay, Nouvelle Donne Production",
+      "Urban [PIAS]"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Chimi",
+    "mbid": "",
+    "listeners": 1379,
+    "playcount": 4377,
+    "listener_play_ratio": 3.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Chimi\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jorge Cajías",
+      "Claire Delić",
+      "Tiare",
+      "Tomás del Real",
+      "Luz Pinos"
+    ],
+    "top_tracks": [
+      {
+        "name": "Eterno Verano",
+        "listeners": 1188,
+        "playcount": 3335
+      },
+      {
+        "name": "Perdón Por Ser Yo",
+        "listeners": 27,
+        "playcount": 122
+      },
+      {
+        "name": "Chimichanga! (Regular Show Remix)",
+        "listeners": 26,
+        "playcount": 258
+      },
+      {
+        "name": "Nena No Llores",
+        "listeners": 17,
+        "playcount": 29
+      },
+      {
+        "name": "ZenryokuFlag",
+        "listeners": 15,
+        "playcount": 16
+      },
+      {
+        "name": "Classy 101 - More",
+        "listeners": 14,
+        "playcount": 18
+      },
+      {
+        "name": "manhunt",
+        "listeners": 11,
+        "playcount": 23
+      },
+      {
+        "name": "MFH",
+        "listeners": 8,
+        "playcount": 81
+      },
+      {
+        "name": "Kanon Wakeshima - Still Doll",
+        "listeners": 7,
+        "playcount": 124
+      },
+      {
+        "name": "RIGHT NOW",
+        "listeners": 7,
+        "playcount": 37
+      }
+    ],
+    "url": "https://www.last.fm/music/Chimi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,142 @@
+{
+  "artist_name": "David Sereno",
+  "artist_id": "david_sereno",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:24:30.151849+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'David Sereno', got 'David Cedeno'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 405279,
+    "name": "Sereno",
+    "profile": "Creado por Magio. Han participado en las producciones de Sereno: Magaly Alzate, Seiname (Gary), Patricia Nieto, Andrés Morales, Ana María Arias, George Angel, Luis Saldarriaga, José León, Sergio Damian, Iraka Jaibanakus, Víctor Angel, José Tobón, Nicolás Guevara, David Colorado, Carlos Ramírez, Zdey, Denial Ochoa, El Amarillo, Juan Diego Jaramillo, Jessica Prado, Darío Cano, Carlos Giraldo, Mauricio Durango.",
+    "realname": "",
+    "social_urls": [
+      "http://www.sonidosereno.net/",
+      "https://soundcloud.com/sonidosereno",
+      "https://web.facebook.com/sonidosereno/"
+    ],
+    "members": [
+      "Magio",
+      "Monica Zuluaga"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 0,
+    "total_releases": 7,
+    "formats": [
+      "10\"",
+      "2xCD, Album, S/Edition",
+      "CD, Album",
+      "CD, Album, S/Edition",
+      "CD, Mixed",
+      "CDr, Album"
+    ],
+    "labels": [
+      "Grabaciones Tierra Negra",
+      "Highball Music",
+      "NativoRecords"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "David Sereno",
+    "mbid": "",
+    "listeners": 2973,
+    "playcount": 9455,
+    "listener_play_ratio": 3.18,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/David+Sereno\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "F. Garling",
+      "Eric Nilson",
+      "Jeremiah River",
+      "Enzo Costa",
+      "Jonas Kahnberg"
+    ],
+    "top_tracks": [
+      {
+        "name": "Field",
+        "listeners": 2931,
+        "playcount": 9145
+      },
+      {
+        "name": "Promise",
+        "listeners": 134,
+        "playcount": 254
+      },
+      {
+        "name": "Stars",
+        "listeners": 22,
+        "playcount": 50
+      },
+      {
+        "name": "Amandome",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Sunday",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Porch",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Forrest Clearing",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "O Little Town of Bethlehem",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/David+Sereno"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

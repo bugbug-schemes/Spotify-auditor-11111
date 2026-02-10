@@ -1,0 +1,134 @@
+{
+  "artist_name": "Max Stewart",
+  "artist_id": "max_stewart",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:35:41.610363+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Max Stewart', got 'JC Stewart'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3619547,
+    "name": "Max Stewart",
+    "profile": "Australian country musician",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 2,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD, Album, RE"
+    ],
+    "labels": [
+      "Bellbird Music (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Max Stewart",
+    "mbid": "",
+    "listeners": 3709,
+    "playcount": 16602,
+    "listener_play_ratio": 4.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Max+Stewart\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "J. Kahnberg",
+      "Cassian Haines",
+      "Jonas Björk",
+      "Yolanda Rae",
+      "Yumi Ima"
+    ],
+    "top_tracks": [
+      {
+        "name": "On safe ground",
+        "listeners": 2465,
+        "playcount": 7984
+      },
+      {
+        "name": "Floating",
+        "listeners": 1872,
+        "playcount": 6012
+      },
+      {
+        "name": "The Shy One",
+        "listeners": 601,
+        "playcount": 1509
+      },
+      {
+        "name": "Momentum",
+        "listeners": 305,
+        "playcount": 661
+      },
+      {
+        "name": "Slowly Rising",
+        "listeners": 211,
+        "playcount": 410
+      },
+      {
+        "name": "Untitled",
+        "listeners": 1,
+        "playcount": 22
+      },
+      {
+        "name": "North County",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Replacing Audi A3 8P Rear Sidelight",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Spotify ads be like...",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Max+Stewart"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

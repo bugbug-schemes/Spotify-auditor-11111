@@ -1,0 +1,187 @@
+{
+  "artist_name": "Philip Berg",
+  "artist_id": "philip_berg",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:26:10.846167+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a124695a-29db-44cb-9db5-17cf9c550c9a",
+    "type": "Person",
+    "country": "NO",
+    "area": "Norway",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Marcus Nordli"
+    ],
+    "isnis": [],
+    "ipis": [
+      "00658704318"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1225065"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Philip Berg', got 'Philip George'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1225065,
+    "name": "Marcus Philip Berg-Iversen Nordli",
+    "profile": "DJ and producer from Norway.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Da Tweekaz",
+      "Team Blue",
+      "Tweekacore",
+      "The Elite (12)"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 16,
+    "digital_only_releases": 28,
+    "total_releases": 44,
+    "formats": [
+      "",
+      "12\"",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "2xCD, Mixed",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "3xCD, Mixed",
+      "4xCD, Comp, Mixed",
+      "4xCD, Mixed",
+      "CD, Album, Mixed, Dig + DVD-V",
+      "CD, Comp, Mixed",
+      "CD, Comp, P/Mixed",
+      "CD, Mixed",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Cloud 9 Dance",
+      "Cloud 9 Dance, Q-Dance",
+      "Dirty Workz",
+      "Electric Fox (2)",
+      "Globe (2)",
+      "KADOKAWA, WAKYO Records",
+      "Mix!",
+      "More Music And Media",
+      "Paradise Import Records",
+      "Spider Records (3)",
+      "Toff Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Philip berg",
+    "mbid": "",
+    "listeners": 3051,
+    "playcount": 39760,
+    "listener_play_ratio": 13.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Philip+berg\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ogden Enqvist",
+      "All About The Children",
+      "Rio Harris",
+      "Moa Schooner",
+      "Valérian Rose"
+    ],
+    "top_tracks": [
+      {
+        "name": "Playing With Leaves",
+        "listeners": 3040,
+        "playcount": 39687
+      },
+      {
+        "name": "A Starlit Dream",
+        "listeners": 7,
+        "playcount": 10
+      },
+      {
+        "name": "Digital Tsunami 122",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Philip Berg at Mėnulio Smūgis Festival 2021",
+        "listeners": 2,
+        "playcount": 17
+      },
+      {
+        "name": "Excess",
+        "listeners": 1,
+        "playcount": 8
+      },
+      {
+        "name": "-",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Philip Berg at Blind Bodies / Robert Johnson",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Philip Berg at Eleve/ Sameheads 07/09/2018",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Checkmate",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Untitled",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Philip+berg"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

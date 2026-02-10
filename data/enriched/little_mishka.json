@@ -1,0 +1,200 @@
+{
+  "artist_name": "Little Mishka",
+  "artist_id": "little_mishka",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:09:39.088314+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 141815742,
+    "name": "Little Mishka",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/141815742",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/02882e645571e70ef51fd6b636377a6d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Sea Lions"
+    ],
+    "track_durations": [
+      108
+    ],
+    "track_ranks": [
+      31550
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Storybook",
+        "label": "",
+        "release_date": "2025-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Superhero",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlight",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All My Friends",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cozy Blanket Serenade",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twilight Tidings",
+        "label": "",
+        "release_date": "2024-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Tale of Tricky Troll",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sea Lions",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tucked In Tight",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleep Monkey",
+        "label": "",
+        "release_date": "2021-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Little Mishka",
+    "mbid": "",
+    "listeners": 4859,
+    "playcount": 75627,
+    "listener_play_ratio": 15.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Little+Mishka\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eijah Nilson",
+      "Mylène Longet",
+      "Aryan Armstrong",
+      "Naéli Gosally",
+      "DoRe Mi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sea Lions",
+        "listeners": 4036,
+        "playcount": 51790
+      },
+      {
+        "name": "Tucked In Tight",
+        "listeners": 2342,
+        "playcount": 23655
+      },
+      {
+        "name": "Sleep Monkey",
+        "listeners": 43,
+        "playcount": 82
+      },
+      {
+        "name": "The Tale of Tricky Troll",
+        "listeners": 38,
+        "playcount": 93
+      },
+      {
+        "name": "Twilight Tidings",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Little Mishka",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Cozy Blanket Serenade",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Little+Mishka"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

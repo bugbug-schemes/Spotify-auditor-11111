@@ -1,0 +1,125 @@
+{
+  "artist_name": "Brkati Madjinca",
+  "artist_id": "brkati_madjinca",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:50:40.912593+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 140055142,
+    "name": "Brkati Madjinca",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/140055142",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0eff56d1777816826932fb1521fc693b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Room For Growth",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Still Before",
+        "label": "",
+        "release_date": "2025-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eve's Echo",
+        "label": "",
+        "release_date": "2024-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Brkati Madjinca",
+    "mbid": "",
+    "listeners": 5693,
+    "playcount": 14039,
+    "listener_play_ratio": 2.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Brkati+Madjinca\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cashmere Cove",
+      "Caio Blanco",
+      "Dark Forest Effects",
+      "Muqamar",
+      "Stellar Stones"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Still Before",
+        "listeners": 4300,
+        "playcount": 8954
+      },
+      {
+        "name": "Eve's Echo",
+        "listeners": 1491,
+        "playcount": 5067
+      },
+      {
+        "name": "Corollary",
+        "listeners": 5,
+        "playcount": 18
+      }
+    ],
+    "url": "https://www.last.fm/music/Brkati+Madjinca"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

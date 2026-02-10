@@ -1,0 +1,116 @@
+{
+  "artist_name": "Miko Yoshida",
+  "artist_id": "miko_yoshida",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:43:13.154941+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Miko Yoshida', got 'Minako Yoshida'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Miko Yoshida",
+    "mbid": "",
+    "listeners": 10242,
+    "playcount": 36210,
+    "listener_play_ratio": 3.54,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Miko+Yoshida\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Duo MR",
+      "Taylor Owen",
+      "Remy Simon",
+      "K.C Brown",
+      "Matthias Trapp"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Short Walk To Open Fields",
+        "listeners": 4472,
+        "playcount": 11285
+      },
+      {
+        "name": "If I Could Tell You",
+        "listeners": 4180,
+        "playcount": 13381
+      },
+      {
+        "name": "Asian Delight",
+        "listeners": 1802,
+        "playcount": 4553
+      },
+      {
+        "name": "All Because I Found You",
+        "listeners": 1209,
+        "playcount": 3626
+      },
+      {
+        "name": "Your Picture Is Still There",
+        "listeners": 693,
+        "playcount": 1883
+      },
+      {
+        "name": "I'd Rather Sit In The Shadow",
+        "listeners": 445,
+        "playcount": 905
+      },
+      {
+        "name": "Traveling Home",
+        "listeners": 184,
+        "playcount": 424
+      },
+      {
+        "name": "Amber Afternoon",
+        "listeners": 55,
+        "playcount": 150
+      },
+      {
+        "name": "At The Deepest Level",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Miko+Yoshida"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,400 @@
+{
+  "artist_name": "Ballroom Jazz Collective",
+  "artist_id": "ballroom_jazz_collective",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:24:00.385107+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a28c95c1-4a31-4878-bd66-3706b9a57c6d",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0i7Yh2vJ2r5pMEMUjgntGL"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183261587,
+    "name": "Ballroom Jazz Collective",
+    "nb_fan": 12,
+    "nb_album": 24,
+    "link": "https://www.deezer.com/artist/183261587",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d6d655c357b72d4d1484c31f3b05d42f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "When January Comes",
+      "Wooden String",
+      "My Romance",
+      "Rope's End",
+      "Faber",
+      "A Perfect Day",
+      "Lovely Weekends",
+      "Forgetful"
+    ],
+    "track_durations": [
+      235,
+      204,
+      228,
+      211,
+      211,
+      213,
+      188,
+      261
+    ],
+    "track_ranks": [
+      25736,
+      59643,
+      73104,
+      21141,
+      49121,
+      22467,
+      32690,
+      41700
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Fallen Symmetry",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Memories of You",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Side by Side",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noites de Verão",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rope's End",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When January Comes",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hardworking Reindeers on Christmas Eve",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lovely Weekends",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snowy Roofs",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faber",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Perfect Day",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amiable",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wooden String",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fluster",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Delighted Mood",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Resilience",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chelsea Bridge",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forgetful",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirror Images",
+        "label": "",
+        "release_date": "2022-05-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Romance",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Can´t Get Started",
+        "label": "",
+        "release_date": "2021-07-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Ship",
+        "label": "",
+        "release_date": "2021-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I've Seen",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somebody Like You",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 376955,
+    "name": "Bill Graham (2)",
+    "profile": "Bill Graham (January 8, 1931, Berlin, Germany — October 25, 1991, Vallejo, California, USA) was an American  impresario  and rock concert promoter from the 1960s until his death.\r\n\r\n[b]Graham[/b] had no known musical talent. His talent was to know a good band when he heard it and to promote it in concerts at one of his Fillmore venues. Along with the work of [a=Chet Helms], the visionary Graham pioneered the concepts of concert promotion in the late 1960s- introducing acts of converging musical cultures and tastes, using artistic posters & tickets to attract audiences. He was the 'Daddy' of the 'Children of The Revolution' in the musical counterculture cradles of both San Francisco and New York.\r\n\r\nGraham's father died shortly after his birth and from an early age he was nicknamed 'Wolfgang'. He was placed, with his youngest sister Rita, in an orphanage that transfered them to France prior to the Nazi invasion. He lost both his mother and three other sisters (Evelyn, Sonja and Tolla) t",
+    "realname": "Wolodia Grajonca",
+    "social_urls": [
+      "http://www.billgrahamfoundation.org/",
+      "http://www.rockhall.com/inductee/bill-graham",
+      "http://www.wolfgangsvault.com/memorabilia/support/about/wolfgangs-vault.html",
+      "http://www.2ch.com/artist/bill-graham",
+      "https://en.wikipedia.org/wiki/Bill_Graham_(promoter)"
+    ],
+    "members": [],
+    "groups": [
+      "Bill Graham Management"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 91,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xLP, Transcription",
+      "3xBlu-ray, Dlx, S/Edition",
+      "5xLP, Transcription",
+      "6xLP, Promo, Transcription",
+      "7\", EP",
+      "7xLP, Album, RM + Box, Comp",
+      "CDr, Comp, Mono, RM",
+      "LP",
+      "LP, Album, Uno",
+      "LP, Transcription"
+    ],
+    "labels": [
+      "AML+",
+      "Arthaus, StudioCanal",
+      "Barking Pumpkin Records",
+      "CBS/Sony",
+      "InnerView",
+      "Pterodactyl Productions",
+      "Stoned Production",
+      "Ted Randal Enterprises",
+      "The Source (8)",
+      "Westwood One Radio Networks"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ballroom Jazz Collective",
+    "mbid": "a28c95c1-4a31-4878-bd66-3706b9a57c6d",
+    "listeners": 59602,
+    "playcount": 236571,
+    "listener_play_ratio": 3.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ballroom+Jazz+Collective\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Eduard Landings",
+      "Hermie",
+      "Evelyn Parker",
+      "Lennie Weston",
+      "Archie Taylor"
+    ],
+    "top_tracks": [
+      {
+        "name": "My Romance",
+        "listeners": 22682,
+        "playcount": 57307
+      },
+      {
+        "name": "Wooden String",
+        "listeners": 13505,
+        "playcount": 29669
+      },
+      {
+        "name": "Fluster",
+        "listeners": 11471,
+        "playcount": 24046
+      },
+      {
+        "name": "Forgetful",
+        "listeners": 10490,
+        "playcount": 24420
+      },
+      {
+        "name": "Faber",
+        "listeners": 6820,
+        "playcount": 25144
+      },
+      {
+        "name": "Mirror Images",
+        "listeners": 6112,
+        "playcount": 15808
+      },
+      {
+        "name": "When January Comes",
+        "listeners": 5828,
+        "playcount": 11282
+      },
+      {
+        "name": "Lovely Weekends",
+        "listeners": 4476,
+        "playcount": 17517
+      },
+      {
+        "name": "Rope's End",
+        "listeners": 4348,
+        "playcount": 8814
+      },
+      {
+        "name": "A Perfect Day",
+        "listeners": 2877,
+        "playcount": 5958
+      }
+    ],
+    "url": "https://www.last.fm/music/Ballroom+Jazz+Collective"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,189 @@
+{
+  "artist_name": "Cosmos People",
+  "artist_id": "cosmos_people",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:15:40.329570+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4649215,
+    "name": "Cosmos People",
+    "nb_fan": 106,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/4649215",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1a4ed4932b7be76fd544bfc98b804365/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Haoting",
+      "Parcels",
+      "Sunset Rollercoaster"
+    ],
+    "contributor_roles": {
+      "Parcels": [
+        "Main"
+      ],
+      "Sunset Rollercoaster": [
+        "Main"
+      ],
+      "Haoting": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Leaveyourlove (with Cosmos People, HAOTING from Sunset Rollercoaster)"
+    ],
+    "track_durations": [
+      186
+    ],
+    "track_ranks": [
+      153319
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Leaveyourlove (with Cosmos People, HAOTING from Sunset Rollercoaster)",
+        "label": "",
+        "release_date": "2024-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11346986,
+    "name": "Cosmos People",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp"
+    ],
+    "labels": [
+      "P-Vine Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cosmos People",
+    "mbid": "",
+    "listeners": 11211,
+    "playcount": 152514,
+    "listener_play_ratio": 13.6,
+    "bio_exists": true,
+    "bio_summary": "Cosmos People (Chinese: 宇宙人; stylized as COSMOS PEOPLE) is a Taiwanese band formed in 2004. The members are all graduates of Taipei Municipal Jianguo High School. Their music often uses elements of funk and dance-pop.\n\n— Members:\n• Jade (林忠諭 also 小玉) – Vocalist and Pianist\n• A-Kui (陳奎言 also 阿奎) – Gutarist\n• FunQ 方奎棠 also 方Q) – Bassist <a href=\"https://www.last.fm/music/Cosmos+People\">Read more on Last.fm</a>",
+    "tags": [
+      "taiwanese",
+      "mandopop",
+      "taiwan",
+      "C-pop",
+      "blues"
+    ],
+    "similar_artists": [
+      "icyball",
+      "Crispy脆樂團",
+      "Pa Pun Band",
+      "GOOD BAND",
+      "冰球樂團"
+    ],
+    "top_tracks": [
+      {
+        "name": "你的樣子",
+        "listeners": 3996,
+        "playcount": 18919
+      },
+      {
+        "name": "藍色的你 (《比悲傷更悲傷的故事》 影集版 插曲)",
+        "listeners": 2144,
+        "playcount": 12286
+      },
+      {
+        "name": "如果我們還在一起",
+        "listeners": 2053,
+        "playcount": 13014
+      },
+      {
+        "name": "不用大腦",
+        "listeners": 1143,
+        "playcount": 6738
+      },
+      {
+        "name": "兩人雨天",
+        "listeners": 1124,
+        "playcount": 5305
+      },
+      {
+        "name": "我還繞著你在旋轉",
+        "listeners": 1014,
+        "playcount": 7870
+      },
+      {
+        "name": "一萬小時",
+        "listeners": 994,
+        "playcount": 5581
+      },
+      {
+        "name": "現在就讓我走",
+        "listeners": 915,
+        "playcount": 5218
+      },
+      {
+        "name": "一桌菜",
+        "listeners": 899,
+        "playcount": 3564
+      },
+      {
+        "name": "明天留給我",
+        "listeners": 851,
+        "playcount": 4357
+      }
+    ],
+    "url": "https://www.last.fm/music/Cosmos+People"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

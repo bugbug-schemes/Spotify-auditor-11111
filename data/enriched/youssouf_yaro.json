@@ -1,0 +1,156 @@
+{
+  "artist_name": "Youssouf Yaro",
+  "artist_id": "youssouf_yaro",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:06:10.888946+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 221156405,
+    "name": "Youssouf Yaro",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/221156405",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/80f0f647642a034e4c5e17ab802484cc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Somniora",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Therass",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond Your Dreams",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating Fables",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jupiter Returns",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rest And Sleep",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Youssouf Yaro",
+    "mbid": "",
+    "listeners": 23836,
+    "playcount": 108180,
+    "listener_play_ratio": 4.54,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Youssouf+Yaro\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tendai Marwan",
+      "Csaba Vitez",
+      "Pax Magnolia",
+      "Ethereal Nexus",
+      "Yara Blom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rest And Sleep",
+        "listeners": 8595,
+        "playcount": 32021
+      },
+      {
+        "name": "Floating Fables",
+        "listeners": 8243,
+        "playcount": 53695
+      },
+      {
+        "name": "Somniora",
+        "listeners": 7823,
+        "playcount": 22461
+      },
+      {
+        "name": "Jupiter Returns",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Youssouf Yaro",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Youssouf+Yaro"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

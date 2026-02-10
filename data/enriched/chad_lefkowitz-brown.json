@@ -1,0 +1,452 @@
+{
+  "artist_name": "Chad Lefkowitz-Brown",
+  "artist_id": "chad_lefkowitz-brown",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:02:38.675819+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6dde414d-5316-4105-9a21-85f5a88ef6d7",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3400550",
+      "free streaming": "https://www.deezer.com/artist/5705783",
+      "purchase for download": "https://music.apple.com/us/artist/401690766",
+      "streaming": "https://music.apple.com/us/artist/401690766"
+    },
+    "labels": [
+      "La Reserve Records",
+      "[no label]",
+      "SteepleChase"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5705783,
+    "name": "Chad Lefkowitz-Brown",
+    "nb_fan": 1102,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/5705783",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2091fe6371663dad27a66a0c4d535b36/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Arturo Sandoval",
+      "Benny Benack III",
+      "Bryan Carter"
+    ],
+    "contributor_roles": {
+      "Benny Benack III": [
+        "Main"
+      ],
+      "Arturo Sandoval": [
+        "Featured"
+      ],
+      "Bryan Carter": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "My Foolish Heart",
+      "Mack the Knife",
+      "Time In A Bottle",
+      "Caravan",
+      "Some Other Time",
+      "Green Chimneys",
+      "Twilight Blue",
+      "A Night In Tunisia",
+      "These Foolish Things"
+    ],
+    "track_durations": [
+      290,
+      331,
+      530,
+      456,
+      462,
+      430,
+      298,
+      400,
+      347
+    ],
+    "track_ranks": [
+      440920,
+      31245,
+      27982,
+      40485,
+      93079,
+      33347,
+      50597,
+      21750,
+      31155
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 8,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "The Shadow Of Your Smile",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Time in a Bottle",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Open World",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Quartet Sessions",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Standard Sessions",
+        "label": "",
+        "release_date": "2018-09-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Electric Band: 2013-2014",
+        "label": "",
+        "release_date": "2018-09-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Onward",
+        "label": "",
+        "release_date": "2017-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Imagery Manifesto",
+        "label": "",
+        "release_date": "2013-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Where Do I Begin?",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream a Little Dream of Me",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Some Other Time",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shadow Of Your Smile",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Only You",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Layla",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Way",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time In A Bottle",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn Leaves",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Catching Drift",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stablemates",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spain",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waters of March",
+        "label": "",
+        "release_date": "2021-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night in Tunisia",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caravan",
+        "label": "",
+        "release_date": "2021-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Foolish Heart",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mack the Knife",
+        "label": "",
+        "release_date": "2020-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Ahmad Jamal",
+      "Julian Lage",
+      "David Hazeltine",
+      "Erroll Garner",
+      "Stéphane Belmondo",
+      "Bill Evans",
+      "Wes Montgomery",
+      "Dexter Gordon",
+      "Horace Silver",
+      "Michel Petrucciani"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3400550,
+    "name": "Chad Lefkowitz-Brown",
+    "profile": "US saxophonist",
+    "realname": "",
+    "social_urls": [
+      "https://www.chadlefkowitz-brown.com/"
+    ],
+    "members": [],
+    "groups": [
+      "Adam O'Farrill's Stranger Days",
+      "Generation Gap Jazz Orchestra"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 26,
+    "digital_only_releases": 10,
+    "total_releases": 36,
+    "formats": [
+      "",
+      "10xFile, MP3, Album",
+      "2xCD, Comp",
+      "2xLP, Album, Cle",
+      "8xFile, FLAC, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, Ltd",
+      "File, AAC, MP3, Album"
+    ],
+    "labels": [
+      "Alessa Records",
+      "Apollo Sounds",
+      "Aurora Sounds",
+      "Biophilia Records",
+      "Capri Records (6)",
+      "Capri Records Ltd.",
+      "Cellar Music (2)",
+      "Challenge Records (3)",
+      "Dixie Rose Enterprises",
+      "Jazziz",
+      "Jesús Molina Producciones",
+      "La Reserve Records",
+      "La Reserve Records LLC",
+      "Losen Records",
+      "Mainland Records",
+      "Music TP",
+      "Not On Label",
+      "Not On Label (Chad Lefkowitz-Brown Self-Released)",
+      "Not On Label (Natalie Cressman Self-released)",
+      "Not On Label (Raviv Markovitz Self-released)",
+      "Not On Label (Steven Feifke Self-released)",
+      "Not On Label (Tyler Kaneshiro Self-released)",
+      "Ocean Road Sounds",
+      "Origin Records",
+      "SteepleChase",
+      "Sunnyside",
+      "University Of The Pacific"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Chad Lefkowitz-Brown",
+    "mbid": "",
+    "listeners": 13778,
+    "playcount": 54241,
+    "listener_play_ratio": 3.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Chad+Lefkowitz-Brown\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Chad LB Virtual Big Band",
+      "Steven Feifke",
+      "Martin Brandqvist Quartet",
+      "Tobias Stavngaard",
+      "Jørgen Emborg"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mack the Knife",
+        "listeners": 7175,
+        "playcount": 16041
+      },
+      {
+        "name": "Some Other Time",
+        "listeners": 2585,
+        "playcount": 4359
+      },
+      {
+        "name": "My Foolish Heart",
+        "listeners": 1545,
+        "playcount": 3689
+      },
+      {
+        "name": "Caravan",
+        "listeners": 903,
+        "playcount": 2680
+      },
+      {
+        "name": "A Night In Tunisia",
+        "listeners": 486,
+        "playcount": 1564
+      },
+      {
+        "name": "Spain",
+        "listeners": 387,
+        "playcount": 1326
+      },
+      {
+        "name": "Giant Steps",
+        "listeners": 317,
+        "playcount": 1118
+      },
+      {
+        "name": "The Nearness of You",
+        "listeners": 281,
+        "playcount": 1120
+      },
+      {
+        "name": "This I Dig of You",
+        "listeners": 279,
+        "playcount": 1108
+      },
+      {
+        "name": "Yardbird Suite",
+        "listeners": 270,
+        "playcount": 861
+      }
+    ],
+    "url": "https://www.last.fm/music/Chad+Lefkowitz-Brown"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

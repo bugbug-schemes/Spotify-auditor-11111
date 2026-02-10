@@ -1,0 +1,181 @@
+{
+  "artist_name": "Shea Ada",
+  "artist_id": "shea_ada",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:00:26.968285+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 262555991,
+    "name": "Shea Ada",
+    "nb_fan": 9,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/262555991",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b076920cef3d3da7f2ace7e55b5b1db9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Longevity",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond the Cypress",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Subtle Dream",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rainy Sunday",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunday Waltz",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Straight Face",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cavaria",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3421741,
+    "name": "Adam Shea",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 2,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD, Album"
+    ],
+    "labels": [
+      "Flagrak Limited"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Shea Ada",
+    "mbid": "",
+    "listeners": 30838,
+    "playcount": 127766,
+    "listener_play_ratio": 4.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Shea+Ada\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Niamh Shona",
+      "Rhian Cadogan",
+      "Lakes of Lagan",
+      "everall",
+      "Florentin Davies"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cavaria",
+        "listeners": 30837,
+        "playcount": 127747
+      },
+      {
+        "name": "Sunday Waltz",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Straight Face",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Shea Ada - Cavaria",
+        "listeners": 1,
+        "playcount": 13
+      },
+      {
+        "name": "Subtle Dream",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Shea+Ada"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,454 @@
+{
+  "artist_name": "Lunaris",
+  "artist_id": "lunaris",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:18:56.903717+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "74e15f36-265e-4f1f-bafd-5e137ba57f71",
+    "type": "Group",
+    "country": "NO",
+    "area": "Norway",
+    "begin_date": "1998",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/388652",
+      "free streaming": "https://open.spotify.com/artist/5BjyslsFtfHhoqHIaYQErU",
+      "official homepage": "http://www.lunarisweb.com/",
+      "other databases": "https://www.worldcat.org/identities/containsVIAFID/279149196481574791629",
+      "VIAF": "http://viaf.org/viaf/279149196481574791629",
+      "wikidata": "https://www.wikidata.org/wiki/Q55807405"
+    },
+    "labels": [
+      "Earache Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 2987431,
+    "name": "Lunaris",
+    "nb_fan": 96,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/2987431",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/08d216d0f7928376747d3b39b1479e8a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Kikicream",
+      "Mew Mew Slowed"
+    ],
+    "contributor_roles": {
+      "Kikicream": [
+        "Main"
+      ],
+      "Mew Mew Slowed": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "AURA (sped up)",
+      "Astrothunder (slowed)",
+      "breakin my heart (sped up)",
+      "Boyfriend (Sped Up)",
+      "Eminem Mockingbird (Slowed + Reverb)"
+    ],
+    "track_durations": [
+      138,
+      179,
+      278,
+      150,
+      353
+    ],
+    "track_ranks": [
+      553383,
+      344222,
+      38083,
+      7926,
+      8872
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 13,
+      "ep": 4,
+      "single": 83
+    },
+    "albums": [
+      {
+        "title": "Overgrown Nights",
+        "label": "",
+        "release_date": "2025-12-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Silent Nightfall",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Regularly Scheduled (slowed)",
+        "label": "",
+        "release_date": "2025-10-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "space safari (slowed)",
+        "label": "",
+        "release_date": "2025-10-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "kichi kich love lue (slowed)",
+        "label": "",
+        "release_date": "2025-10-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ryuki rider (slowed)",
+        "label": "",
+        "release_date": "2025-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "retor tee (slowed)",
+        "label": "",
+        "release_date": "2025-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "night city (slowed)",
+        "label": "",
+        "release_date": "2025-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "best of nova (slowed)",
+        "label": "",
+        "release_date": "2025-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beyond the Storm",
+        "label": "",
+        "release_date": "2024-12-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Universos de Piel",
+        "label": "",
+        "release_date": "2021-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Infinite",
+        "label": "",
+        "release_date": "2007-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cyclic",
+        "label": "",
+        "release_date": "2007-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pixel",
+        "label": "",
+        "release_date": "2026-02-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Scrapped",
+        "label": "",
+        "release_date": "2025-12-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lost but Fine",
+        "label": "",
+        "release_date": "2025-10-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Undercover Vampire Policeman (ambience)",
+        "label": "",
+        "release_date": "2025-10-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mlle LV",
+        "label": "",
+        "release_date": "2026-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gotoprim",
+        "label": "",
+        "release_date": "2026-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Final",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Candy Rush",
+        "label": "",
+        "release_date": "2026-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Phantom Snowfield",
+        "label": "",
+        "release_date": "2026-01-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trigger",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream Path Through Sea Fog",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lamp of Meditation",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oasis of Serenity",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Edge of Light",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fantasy Stream of Serenity",
+        "label": "",
+        "release_date": "2026-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers of Autumn Leaves",
+        "label": "",
+        "release_date": "2026-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wishes Under the Starry Sky",
+        "label": "",
+        "release_date": "2026-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 388652,
+    "name": "Lunaris",
+    "profile": "Norwegian Black Metal band formed in 1993.",
+    "realname": "",
+    "social_urls": [
+      "http://www.lunarisweb.com/"
+    ],
+    "members": [
+      "Øyvind Hægeland",
+      "Asgeir Mickelson",
+      "Janos",
+      "Raymond Njerve",
+      "Steinar Gundersen",
+      "Kjetil Hektoen",
+      "Erik Aadland",
+      "Mikael Omlid",
+      "Lars \"Balfori\" Larsen"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 12,
+    "digital_only_releases": 2,
+    "total_releases": 14,
+    "formats": [
+      "",
+      "CD, Comp, Enh",
+      "CD, Comp, Enh, Promo, Car",
+      "CD, Comp, Enh, Smplr",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, Promo",
+      "CD, Promo, Smplr",
+      "CD, Shape, Comp, Enh, Promo",
+      "CD, Smplr, Cov",
+      "CD-ROM, Promo, Smplr"
+    ],
+    "labels": [
+      "Earache",
+      "Hell Awaits",
+      "Legacy Magazine",
+      "Metal Hammer",
+      "Metal Hammer, Earache",
+      "Psycho!",
+      "Rock Sound",
+      "Terrorizer"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lunaris",
+    "mbid": "74e15f36-265e-4f1f-bafd-5e137ba57f71",
+    "listeners": 6478,
+    "playcount": 68019,
+    "listener_play_ratio": 10.5,
+    "bio_exists": true,
+    "bio_summary": "Lunaris is at least 2 bands:\n\n1 A technical/progressive Black Metal Band  that was founded by guitarists M and Balfori, in the fall of 1998. Balfori, who then appeared as guitar-player of 1349, soon found his place in Lunaris as a vocalist. The spot of second guitarist was taken by the infamous Azarak (guitarist of Spiral Architect & Satyricon session). Later on formerly unknown keyboardist Ray was added to the roster. Two demos were released with this line-up, \"Demo 2000\" & \"Creative Destructio",
+    "tags": [
+      "black metal",
+      "progressive black metal",
+      "Progressive metal",
+      "Symphonic Black Metal",
+      "norwegian"
+    ],
+    "similar_artists": [
+      "In Lingua Mortua",
+      "Emancer",
+      "Cronian",
+      "Asgaroth",
+      "Hidden in the Fog"
+    ],
+    "top_tracks": [
+      {
+        "name": "Existence Unveiled",
+        "listeners": 1173,
+        "playcount": 3422
+      },
+      {
+        "name": "In the Eyes of the Heretic",
+        "listeners": 1088,
+        "playcount": 3341
+      },
+      {
+        "name": "Arise",
+        "listeners": 1063,
+        "playcount": 2977
+      },
+      {
+        "name": "Mendacities of a Corporate Messiah",
+        "listeners": 1029,
+        "playcount": 3048
+      },
+      {
+        "name": "Cyclic",
+        "listeners": 1006,
+        "playcount": 2872
+      },
+      {
+        "name": "When It Ends",
+        "listeners": 967,
+        "playcount": 2759
+      },
+      {
+        "name": "Slaves of Opinion",
+        "listeners": 958,
+        "playcount": 2718
+      },
+      {
+        "name": "Lessons in Futility",
+        "listeners": 955,
+        "playcount": 2816
+      },
+      {
+        "name": "Grey Clouds",
+        "listeners": 883,
+        "playcount": 2056
+      },
+      {
+        "name": "Mother of Storms",
+        "listeners": 857,
+        "playcount": 2371
+      }
+    ],
+    "url": "https://www.last.fm/music/Lunaris"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

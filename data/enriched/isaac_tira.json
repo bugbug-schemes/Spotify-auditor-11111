@@ -1,0 +1,121 @@
+{
+  "artist_name": "Isaac Tira",
+  "artist_id": "isaac_tira",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:16:36.529322+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Isaac Tira', got 'Isaac Gracie'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Isaac Tira",
+    "mbid": "",
+    "listeners": 10548,
+    "playcount": 135105,
+    "listener_play_ratio": 12.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Isaac+Tira\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Iris Avory",
+      "Amos Green",
+      "Mylène Longet",
+      "Daisy Day",
+      "Mauve Dream"
+    ],
+    "top_tracks": [
+      {
+        "name": "Once",
+        "listeners": 3161,
+        "playcount": 6246
+      },
+      {
+        "name": "Dreams Of The Night",
+        "listeners": 2909,
+        "playcount": 36342
+      },
+      {
+        "name": "Teddy",
+        "listeners": 2781,
+        "playcount": 27097
+      },
+      {
+        "name": "Sleep Tight Little Friend",
+        "listeners": 2222,
+        "playcount": 19928
+      },
+      {
+        "name": "On A Fluffy Starbed",
+        "listeners": 2161,
+        "playcount": 20507
+      },
+      {
+        "name": "You And Me",
+        "listeners": 1306,
+        "playcount": 12527
+      },
+      {
+        "name": "The Stars And The Moon",
+        "listeners": 470,
+        "playcount": 3832
+      },
+      {
+        "name": "Fairytales",
+        "listeners": 340,
+        "playcount": 3741
+      },
+      {
+        "name": "Best Friends",
+        "listeners": 326,
+        "playcount": 4230
+      },
+      {
+        "name": "Looking At You Sleeping",
+        "listeners": 64,
+        "playcount": 113
+      }
+    ],
+    "url": "https://www.last.fm/music/Isaac+Tira"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

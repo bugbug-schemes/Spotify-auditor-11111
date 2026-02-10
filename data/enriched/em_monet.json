@@ -1,0 +1,169 @@
+{
+  "artist_name": "Em Monet",
+  "artist_id": "em_monet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:26:47.571688+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Em Monet', got 'Ramones'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 476731,
+    "name": "Emmanuelle Monet",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Dolly (2)",
+      "Lupins"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 21,
+    "digital_only_releases": 26,
+    "total_releases": 47,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Smplr",
+      "CD, EP, Promo",
+      "CD, Maxi, Hor",
+      "CD, Promo, Smplr",
+      "CD, Single, Promo, Car",
+      "CDr, Single, Promo",
+      "DVD-V + CD",
+      "DVD-V, Comp, Unofficial, Dig"
+    ],
+    "labels": [
+      "Chrysalis Strengholt Music France",
+      "France 3 Music",
+      "France 3 Ouest",
+      "JCK Music",
+      "Kebra's Rcds, Rue Stendhal",
+      "Rock & Folk",
+      "Rock Sound",
+      "Rock Sound, Rock Sound",
+      "Tekini Records",
+      "U.L.M TV Market, Warner Strategic Marketing France",
+      "Universal (3)",
+      "Urban Folk",
+      "Warner Music Canada",
+      "Warner Music France",
+      "Warner Music France, Rock & Folk, Warner Strategic Marketing France",
+      "nsb - NonSolo Blue's"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Em Monet",
+    "mbid": "",
+    "listeners": 8224,
+    "playcount": 25072,
+    "listener_play_ratio": 3.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Em+Monet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Enzo Costa",
+      "Lorenzo Campagnoli",
+      "Logan Connors",
+      "Oma Holt",
+      "Milan Heyes"
+    ],
+    "top_tracks": [
+      {
+        "name": "On This Day",
+        "listeners": 3927,
+        "playcount": 9069
+      },
+      {
+        "name": "Peekskills",
+        "listeners": 3722,
+        "playcount": 11526
+      },
+      {
+        "name": "Memories Of The Future",
+        "listeners": 1546,
+        "playcount": 4100
+      },
+      {
+        "name": "Cadence Of Hearts",
+        "listeners": 212,
+        "playcount": 359
+      },
+      {
+        "name": "As The River Flows",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Wind And Leaves",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Above The Sky",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Ripples",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "We Can Do This",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Better Listen To The Wind",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Em+Monet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

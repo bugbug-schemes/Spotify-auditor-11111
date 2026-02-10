@@ -1,0 +1,163 @@
+{
+  "artist_name": "Sátyr",
+  "artist_id": "sátyr",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:33:06.912524+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "746a1e70-e300-4616-8f20-33b4c231b484",
+    "type": "Person",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "chillwave",
+      "downtempo",
+      "hip hop",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "lo-fi",
+      "instrumental",
+      "boom bap"
+    ],
+    "aliases": [
+      "Lukas Stütz"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://satyrmusic.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/8962267",
+      "free streaming": "https://www.deezer.com/artist/1710102",
+      "purchase for download": "https://www.traxsource.com/artist/597402",
+      "social network": "https://www.instagram.com/satyrbeats/",
+      "soundcloud": "https://soundcloud.com/satyrbeatz",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/satyr/857814",
+      "youtube music": "https://music.youtube.com/channel/UCmnx_71H86SOydCz5ga9fvA"
+    },
+    "labels": [
+      "On Canvas",
+      "Fortune Cookie Records",
+      "PLYGRND",
+      "Lofi Records",
+      "urbanundergrounds",
+      "Hip Dozer",
+      "Lofi Chill Records",
+      "Lofi Jazz Records",
+      "Goji Island",
+      "okwow",
+      "S!X - Music",
+      "Effortless Audio",
+      "Kreʞрek Records",
+      "Stereofox Records",
+      "[no label]",
+      "Dust Collectors Deutschland",
+      "We Run This.",
+      "Mellotron Records",
+      "Chill Beats Records",
+      "Mutombo Records",
+      "Common Theory Records",
+      "Besser‐Samstag"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sátyr', got 'Satyr'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 276268,
+    "name": "Satyr Wongraven",
+    "profile": "Founding member and leader of Norwegian black metal band [a=Satyricon], Born on the 28th of November, 1975 in Bøder, Norway.\r\nHe also did the Norse dark ambient project [a=Wongraven], and founded the Norse metal band [a=Storm (10)] with [a=Fenriz] from [a=Darkthrone]. \r\nAlso helped found the [l=Moonfog Productions] label.\r\nHis art name \"Satyr\" was picked from Greek mythology [god of the woods, demon of nature, gifted musician, half demon/ half man, decadent, hedonistic...]\r\n",
+    "realname": "Sigurd Wongraven",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 24,
+    "digital_only_releases": 76,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "16xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xFile, MP3, 320",
+      "5xCass, Ltd, RE, RP, S/Edition, Unofficial, Box",
+      "Box, Comp, Ltd, Num + LP, Album, Pic, RE + LP, Alb",
+      "Box, Comp, Ltd, RM + 2xLP, Album, RE, Bei + 2xLP, ",
+      "CD, Album, Comp, Ltd",
+      "CD, Album, Comp, Promo",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, Enh",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Car",
+      "CD, Ltd, Unofficial",
+      "CD, Single, Ltd",
+      "CD, Single, Promo",
+      "Cass, Comp",
+      "Cass, Ltd, RP, S/Edition, Unofficial",
+      "DVD-V, Comp",
+      "VHS, PAL, E30"
+    ],
+    "labels": [
+      "Columbia",
+      "Death Metal Bootlegs",
+      "Hard N' Heavy",
+      "Heavy Rock",
+      "Metal Hammer",
+      "Moonfog Productions",
+      "Mystic Production",
+      "Napalm Records",
+      "Not On Label (Barak Tor Self-released)",
+      "Orkus",
+      "Roadrunner Records",
+      "RockHard",
+      "Sonic Seducer",
+      "Spinefarm Records",
+      "Sylphorium Records",
+      "Universal, Coca-Cola, Kerrang!",
+      "Worship The Goat Productions"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": false,
+    "raw": null
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "lastfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

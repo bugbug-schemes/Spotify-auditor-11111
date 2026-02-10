@@ -1,0 +1,121 @@
+{
+  "artist_name": "Zaytune",
+  "artist_id": "zaytune",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:07:46.700676+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Zaytune', got 'Satine'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zaytune",
+    "mbid": "",
+    "listeners": 7462,
+    "playcount": 21946,
+    "listener_play_ratio": 2.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zaytune\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Chill Motion",
+      "Hausward",
+      "Yelloo Hill",
+      "Pure Recall",
+      "Maison Lune"
+    ],
+    "top_tracks": [
+      {
+        "name": "Love You Better",
+        "listeners": 3885,
+        "playcount": 7799
+      },
+      {
+        "name": "Tangerine Glow",
+        "listeners": 3675,
+        "playcount": 6426
+      },
+      {
+        "name": "Need You",
+        "listeners": 1173,
+        "playcount": 1953
+      },
+      {
+        "name": "Never Let Me Go",
+        "listeners": 1074,
+        "playcount": 1692
+      },
+      {
+        "name": "Milky Way",
+        "listeners": 841,
+        "playcount": 1800
+      },
+      {
+        "name": "Tropics",
+        "listeners": 815,
+        "playcount": 1258
+      },
+      {
+        "name": "Under the Canopy",
+        "listeners": 476,
+        "playcount": 757
+      },
+      {
+        "name": "Falling Short",
+        "listeners": 167,
+        "playcount": 229
+      },
+      {
+        "name": "Final Lap",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Speedrun",
+        "listeners": 4,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Zaytune"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

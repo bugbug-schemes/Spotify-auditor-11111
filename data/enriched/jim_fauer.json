@@ -1,0 +1,121 @@
+{
+  "artist_name": "Jim Fauer",
+  "artist_id": "jim_fauer",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:28:33.010707+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Jim Fauer', got 'Jim Bauer'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jim Fauer",
+    "mbid": "",
+    "listeners": 9142,
+    "playcount": 208760,
+    "listener_play_ratio": 22.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jim+Fauer\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Wyatt Cross",
+      "Anton De Ville",
+      "Iris Avory",
+      "DoRe Mi",
+      "Robin Colt"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleeping Woods",
+        "listeners": 2546,
+        "playcount": 22497
+      },
+      {
+        "name": "Off To Neverland",
+        "listeners": 2339,
+        "playcount": 30301
+      },
+      {
+        "name": "A Curious Little Friend",
+        "listeners": 2266,
+        "playcount": 21342
+      },
+      {
+        "name": "Sleep My Little Friend",
+        "listeners": 2228,
+        "playcount": 21840
+      },
+      {
+        "name": "Flying At Night",
+        "listeners": 2226,
+        "playcount": 27390
+      },
+      {
+        "name": "Your Own Bedtime Lullaby",
+        "listeners": 1992,
+        "playcount": 18293
+      },
+      {
+        "name": "In My Arms",
+        "listeners": 1713,
+        "playcount": 16237
+      },
+      {
+        "name": "In The Arms Of The Night",
+        "listeners": 1428,
+        "playcount": 16295
+      },
+      {
+        "name": "One Still Night",
+        "listeners": 1344,
+        "playcount": 11536
+      },
+      {
+        "name": "Singing For The Moon",
+        "listeners": 1308,
+        "playcount": 11203
+      }
+    ],
+    "url": "https://www.last.fm/music/Jim+Fauer"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

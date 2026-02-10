@@ -1,0 +1,194 @@
+{
+  "artist_name": "Finn Dubois",
+  "artist_id": "finn_dubois",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:38:18.536986+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 264847362,
+    "name": "Finn Dubois",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/264847362",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c19ad3f2350827bcdf75c0914d9234d4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Auburn Dawn"
+    ],
+    "track_durations": [
+      172
+    ],
+    "track_ranks": [
+      1393
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Estuary",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alder",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brontide",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Auburn Dawn",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amandine Noir",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12649,
+    "name": "The Freight Elevator Quartet",
+    "profile": "An electronic avant-garde group that existed between 1997 and 2003. Formed by R. Luke Dubois, Paul Feuer, Rachael Finn, and Stephen Krieger at Columbia University, often collaborating with Mark McNamara and Jonathan Lee.",
+    "realname": "",
+    "social_urls": [
+      "http://www.fe4.com/"
+    ],
+    "members": [
+      "Rachael Finn",
+      "Stephen Krieger",
+      "R. Luke Dubois",
+      "Paul Feuer",
+      "Tiny Diva"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 18,
+    "digital_only_releases": 4,
+    "total_releases": 22,
+    "formats": [
+      "",
+      "12\", EP",
+      "3xCD, Album, Comp",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Car",
+      "CD, Comp, Promo",
+      "CDr, CD-ROM, Comp, Smplr, MP3",
+      "Cass, Mixtape"
+    ],
+    "labels": [
+      "Alternative Distribution Alliance, Newbury Comics",
+      "BMG",
+      "Caipirinha Productions",
+      "Caipirinha Productions, Caipirinha Productions",
+      "Electronic Music Foundation",
+      "Kenwood",
+      "Kyan Records",
+      "Museum Music",
+      "Not On Label",
+      "Quench This Music",
+      "Trip (3)",
+      "c74"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Finn Dubois",
+    "mbid": "",
+    "listeners": 8271,
+    "playcount": 21294,
+    "listener_play_ratio": 2.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Finn+Dubois\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Justin Dell",
+      "Max Dew",
+      "Denalia",
+      "Naskal",
+      "Lucien Vallière"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alder",
+        "listeners": 8025,
+        "playcount": 20793
+      },
+      {
+        "name": "Auburn Dawn",
+        "listeners": 272,
+        "playcount": 489
+      },
+      {
+        "name": "Brontide",
+        "listeners": 9,
+        "playcount": 11
+      },
+      {
+        "name": "Estuary",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Finn+Dubois"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

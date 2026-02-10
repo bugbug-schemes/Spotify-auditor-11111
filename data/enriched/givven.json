@@ -1,0 +1,369 @@
+{
+  "artist_name": "GIVVEN",
+  "artist_id": "givven",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:45:38.581160+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "56692499-cf2e-44f3-bc5b-2f264e9270a7",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/7734483",
+      "free streaming": "https://www.deezer.com/artist/61462062",
+      "streaming": "https://tidal.com/artist/15260173"
+    },
+    "labels": [
+      "Bias Beach Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 61462062,
+    "name": "GIVVEN",
+    "nb_fan": 1143,
+    "nb_album": 17,
+    "link": "https://www.deezer.com/artist/61462062",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8fad35249d52401debc0356913a99bd1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Klangkarussell",
+      "Max Manie",
+      "Senes"
+    ],
+    "contributor_roles": {
+      "Klangkarussell": [
+        "Main"
+      ],
+      "Senes": [
+        "Main"
+      ],
+      "Max Manie": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Ghostkeeper",
+      "Ghostkeeper (Edit)",
+      "Sun Went Down, Sky Went Dark",
+      "Afterglow",
+      "Petrichor",
+      "Petrichor - Edit",
+      "Doubts",
+      "Sun Went Down, Sky Went Dark (Extended Mix)",
+      "Follow (Extended Mix)",
+      "Follow",
+      "Toxic",
+      "Follow (Max Manie Remix)",
+      "Losing Colours"
+    ],
+    "track_durations": [
+      331,
+      238,
+      252,
+      395,
+      339,
+      206,
+      279,
+      488,
+      296,
+      212,
+      228,
+      292,
+      168
+    ],
+    "track_ranks": [
+      477577,
+      367880,
+      500246,
+      353678,
+      256269,
+      203042,
+      83197,
+      149592,
+      191429,
+      256174,
+      252877,
+      181495,
+      40993
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "Losing Colours EP",
+        "label": "",
+        "release_date": "2022-03-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sun Went Down, Sky Went Dark",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sun Went Down, Sky Went Dark",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Petrichor",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Petrichor (Edit)",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Afterglow",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing Colours",
+        "label": "",
+        "release_date": "2022-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Taking On Water",
+        "label": "",
+        "release_date": "2021-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Berlin",
+        "label": "",
+        "release_date": "2021-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Toxic",
+        "label": "",
+        "release_date": "2021-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow (MVCA Remix)",
+        "label": "",
+        "release_date": "2021-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow (Max Manie Remix)",
+        "label": "",
+        "release_date": "2020-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow",
+        "label": "",
+        "release_date": "2020-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow",
+        "label": "",
+        "release_date": "2020-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blameless",
+        "label": "",
+        "release_date": "2020-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glue",
+        "label": "",
+        "release_date": "2020-06-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ghostkeeper",
+        "label": "",
+        "release_date": "2020-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lane 8",
+      "ArtLec",
+      "Anderholm",
+      "ODESZA",
+      "Kasbo",
+      "Nils Hoffmann",
+      "Nora En Pure",
+      "Massane",
+      "Ben Böhmer",
+      "Kidnap"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7734483,
+    "name": "GIVVEN",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 6,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "2x12\", Album",
+      "2xFile, FLAC",
+      "File, FLAC"
+    ],
+    "labels": [
+      "Bias Beach Records",
+      "Monsieur Blue Records / Ever Ever"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "GIVVEN",
+    "mbid": "56692499-cf2e-44f3-bc5b-2f264e9270a7",
+    "listeners": 8192,
+    "playcount": 42202,
+    "listener_play_ratio": 5.15,
+    "bio_exists": true,
+    "bio_summary": "Since their first sessions together in 2017 in small studios in Berlin and Vienna, they've been creating, destroying, recreating, and tweaking their songs to hone in on the essential ingredients of what GIVVEN is. The end result is an eclectic blend of fresh electronic sounds and classic songwriting. The group’s collaboration with Klangkarussell, ‘Ghostkeeper’, became an instant streaming hit; the single picking up a rollcall of the world’s best editorial playlists and several million streams si",
+    "tags": [
+      "south africa"
+    ],
+    "similar_artists": [
+      "byelian",
+      "ILAYO",
+      "Boii",
+      "Bankii",
+      "Faraway Friends"
+    ],
+    "top_tracks": [
+      {
+        "name": "Glue",
+        "listeners": 2982,
+        "playcount": 12315
+      },
+      {
+        "name": "Toxic",
+        "listeners": 2837,
+        "playcount": 11528
+      },
+      {
+        "name": "Losing Colours",
+        "listeners": 2436,
+        "playcount": 11767
+      },
+      {
+        "name": "Doubts",
+        "listeners": 942,
+        "playcount": 3602
+      },
+      {
+        "name": "Blameless",
+        "listeners": 243,
+        "playcount": 1508
+      },
+      {
+        "name": "Taking On Water",
+        "listeners": 199,
+        "playcount": 909
+      },
+      {
+        "name": "Part Of Me",
+        "listeners": 161,
+        "playcount": 459
+      },
+      {
+        "name": "Ghostkeeper",
+        "listeners": 6,
+        "playcount": 37
+      },
+      {
+        "name": "Losing Colors",
+        "listeners": 2,
+        "playcount": 30
+      },
+      {
+        "name": "Glue | FM4 Connected",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/GIVVEN"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

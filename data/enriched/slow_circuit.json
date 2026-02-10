@@ -1,0 +1,199 @@
+{
+  "artist_name": "Slow Circuit",
+  "artist_id": "slow_circuit",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:06:54.463004+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 264790432,
+    "name": "Slow Circuit",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/264790432",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f2bc54d671d525dcb05728656df8f3fb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "REMwave Ebbing Softly",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brainstem Serenity",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liberathing Path",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Royal calm",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Certain Dose",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 536758,
+    "name": "Shabby Tiger",
+    "profile": "British pop band from Blackburn that started in 1970 playing the Northern club circuit & quickly went on to play some major venues in London, where they were spotted by Ben Findon who signed them to RCA records.\r\n\r\nTheir first single, “Slow Down” reached the top of the charts in Scandinavia, Holland, Belgium & Germany but failed to chart in the UK probably due to lack of plays on Radio One at the time, who seemed to have the monopoly on whether a record would be listed or not.\r\nThey disbanded in 1976 leaving 5 singles and one album to their credit.",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/ShabbyTiger70s"
+    ],
+    "members": [
+      "Henderson Gibson",
+      "Dave Almond",
+      "Mike Ryan",
+      "Toni Baker",
+      "Graham Fielden"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 22,
+    "digital_only_releases": 12,
+    "total_releases": 34,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xLP, Comp",
+      "2xLP, Comp, Gat",
+      "3xCD, Comp",
+      "7\", Promo",
+      "7\", Single",
+      "Box + 4xCD, Comp",
+      "CD, Comp",
+      "LP, Album, Comp, Unofficial, W/Lbl",
+      "LP, Comp",
+      "LP, Comp, Club"
+    ],
+    "labels": [
+      "7T's Records",
+      "BR Music",
+      "BR Music, Hot Town Music",
+      "Bear Family Records",
+      "Decca",
+      "EMI, Frituna, DR",
+      "Hot Town Music",
+      "Karussell",
+      "Magic Belgium",
+      "My Way Music",
+      "Negram",
+      "Not On Label",
+      "PolyGram",
+      "Polydor",
+      "Victor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Slow Circuit",
+    "mbid": "",
+    "listeners": 5580,
+    "playcount": 13360,
+    "listener_play_ratio": 2.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Slow+Circuit\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Spirit Garden",
+      "BRINDABELLA",
+      "Shaolin Healing Bowls",
+      "cb10",
+      "Lucas & Marvin"
+    ],
+    "top_tracks": [
+      {
+        "name": "Liberathing Path",
+        "listeners": 5356,
+        "playcount": 12929
+      },
+      {
+        "name": "Certain Dose",
+        "listeners": 248,
+        "playcount": 408
+      },
+      {
+        "name": "Royal calm",
+        "listeners": 9,
+        "playcount": 18
+      },
+      {
+        "name": "REMwave Ebbing Softly",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Brainstem Serenity",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Slow+Circuit"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

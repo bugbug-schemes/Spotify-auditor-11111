@@ -1,0 +1,179 @@
+{
+  "artist_name": "Nordklang Collective",
+  "artist_id": "nordklang_collective",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:06:28.089464+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 287088701,
+    "name": "Nordklang Collective",
+    "nb_fan": 2,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/287088701",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b698de64f0c54c5b46fe202434e07d30/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Sleep Talk",
+      "Meets the Sea"
+    ],
+    "track_durations": [
+      191,
+      217
+    ],
+    "track_ranks": [
+      67806,
+      69166
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Sleep Talk",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Kiss",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Space Between",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meets the Sea",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Together Is Enough",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Night Is My Dream",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunday Morning Mood",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nordklang Collective",
+    "mbid": "",
+    "listeners": 29031,
+    "playcount": 75764,
+    "listener_play_ratio": 2.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nordklang+Collective\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Downtown Café",
+      "The Super Smart Trio",
+      "Chops & Coda",
+      "Two steps in the street",
+      "Eight Bar Band"
+    ],
+    "top_tracks": [
+      {
+        "name": "Meets the Sea",
+        "listeners": 14263,
+        "playcount": 29471
+      },
+      {
+        "name": "In the Space Between",
+        "listeners": 11663,
+        "playcount": 24345
+      },
+      {
+        "name": "Sleep Talk",
+        "listeners": 10445,
+        "playcount": 21945
+      },
+      {
+        "name": "Sunday Morning Mood",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Together Is Enough",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Midnight Kiss",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Nordklang+Collective"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,196 @@
+{
+  "artist_name": "Lila Novelle",
+  "artist_id": "lila_novelle",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:08:50.300647+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 341812181,
+    "name": "Lila Novelle",
+    "nb_fan": 0,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/341812181",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7f3c580ba1ccccf2de6c737a63884d0a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Goodnight Mini",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Counting Sheep",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby Bear",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lila's Night Train",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Make A Wish",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Babies",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Babylon",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby Giraffe",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Elliphant",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby Bloom",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Happy Sunflowers",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lila Novelle",
+    "mbid": "",
+    "listeners": 1754,
+    "playcount": 17776,
+    "listener_play_ratio": 10.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lila+Novelle\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ole Close",
+      "Tristan Bloom",
+      "Elysia Blue",
+      "Axel Moons",
+      "Sophie Amélie"
+    ],
+    "top_tracks": [
+      {
+        "name": "Baby Bloom",
+        "listeners": 1078,
+        "playcount": 9848
+      },
+      {
+        "name": "Sleepy Babies",
+        "listeners": 717,
+        "playcount": 4268
+      },
+      {
+        "name": "Goodnight Mini",
+        "listeners": 487,
+        "playcount": 1766
+      },
+      {
+        "name": "Make A Wish",
+        "listeners": 177,
+        "playcount": 905
+      },
+      {
+        "name": "Baby Giraffe",
+        "listeners": 167,
+        "playcount": 988
+      },
+      {
+        "name": "Little Elliphant",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lila+Novelle"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

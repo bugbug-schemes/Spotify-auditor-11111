@@ -1,0 +1,424 @@
+{
+  "artist_name": "Glenn Natale",
+  "artist_id": "glenn_natale",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:53:35.319960+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9b461ebe-fdf0-4491-b0b1-0cc2e6f531f9",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/14769247",
+      "purchase for download": "https://music.apple.com/us/artist/1382794282",
+      "social network": "https://www.instagram.com/glenn_natale/",
+      "soundcloud": "https://soundcloud.com/glennnatale",
+      "streaming": "https://tidal.com/artist/18478767",
+      "youtube music": "https://music.youtube.com/channel/UCaD57y5el9Z9CnUx91A49wA"
+    },
+    "labels": [
+      "bigo & twigetti",
+      "Blue Spiral Records",
+      "Yellow Rose Records",
+      "Nordic Euphony Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14769247,
+    "name": "Glenn Natale",
+    "nb_fan": 19,
+    "nb_album": 88,
+    "link": "https://www.deezer.com/artist/14769247",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ae86a7225e6d5257334ae038f0199b1f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Enigma",
+      "Resilient and Kind",
+      "De Novo",
+      "For Asher",
+      "My Idle Mind",
+      "A Pale Tomorrow",
+      "Kismet",
+      "Sundown",
+      "Forgiven",
+      "A Day Of Ponder",
+      "Afar",
+      "Esme",
+      "Flight of a Joyful Finch",
+      "Follow the Pines"
+    ],
+    "track_durations": [
+      163,
+      163,
+      139,
+      193,
+      189,
+      139,
+      139,
+      153,
+      148,
+      136,
+      93,
+      142,
+      177,
+      214
+    ],
+    "track_ranks": [
+      87709,
+      139099,
+      156232,
+      202026,
+      32942,
+      64891,
+      134153,
+      42383,
+      33674,
+      41062,
+      70829,
+      110304,
+      7761,
+      26590
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 2,
+      "single": 84
+    },
+    "albums": [
+      {
+        "title": "Selected Works",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Follow the Pines",
+        "label": "",
+        "release_date": "2020-06-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Absolved",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "To Wander Alone",
+        "label": "",
+        "release_date": "2021-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Alpenglow",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Omniscient",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Little Town of Bethlehem",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liora",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oneiric",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gabriella",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amara",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aporia",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salvare",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fallen",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eden",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pravartika",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Covenant",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Tempest",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Resplendent",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Penumbra",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Asher",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paragon Sky",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Day Of Ponder",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Resilient and Kind",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sundown",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lovely Day",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Peace with You",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Immensely",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holism (Know Thyself)",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heart Not Troubled",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Glenn Natale",
+    "mbid": "9b461ebe-fdf0-4491-b0b1-0cc2e6f531f9",
+    "listeners": 45199,
+    "playcount": 188258,
+    "listener_play_ratio": 4.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Glenn+Natale\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Eyøni",
+      "Valter Soll",
+      "everall",
+      "Skaresnø",
+      "Shea Ada"
+    ],
+    "top_tracks": [
+      {
+        "name": "For Asher",
+        "listeners": 21172,
+        "playcount": 93655
+      },
+      {
+        "name": "Resplendent",
+        "listeners": 9788,
+        "playcount": 19205
+      },
+      {
+        "name": "Divinity",
+        "listeners": 4163,
+        "playcount": 9329
+      },
+      {
+        "name": "Enigma",
+        "listeners": 4161,
+        "playcount": 8079
+      },
+      {
+        "name": "Penumbra",
+        "listeners": 3642,
+        "playcount": 7168
+      },
+      {
+        "name": "Eden",
+        "listeners": 3222,
+        "playcount": 12378
+      },
+      {
+        "name": "Paragon Sky",
+        "listeners": 3222,
+        "playcount": 11920
+      },
+      {
+        "name": "Asunder",
+        "listeners": 1119,
+        "playcount": 3721
+      },
+      {
+        "name": "Forgiven",
+        "listeners": 749,
+        "playcount": 3239
+      },
+      {
+        "name": "Resilient and Kind",
+        "listeners": 745,
+        "playcount": 2327
+      }
+    ],
+    "url": "https://www.last.fm/music/Glenn+Natale"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

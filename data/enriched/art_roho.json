@@ -1,0 +1,236 @@
+{
+  "artist_name": "Art Roho",
+  "artist_id": "art_roho",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:07:17.095243+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6bfbad04-b390-4563-96b1-9893004e871b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/196981237"
+    },
+    "labels": [
+      "amm",
+      "HHH Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 196981237,
+    "name": "Art Roho",
+    "nb_fan": 5,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/196981237",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b54a2eb7a72c224ced66a844d7b88b9a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Hannes Bennich",
+      "Mads Søndergaard"
+    ],
+    "contributor_roles": {
+      "Mads Søndergaard": [
+        "Main"
+      ],
+      "Hannes Bennich": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Dark Turn of Mind",
+      "Ack Värmeland, Du Sköna"
+    ],
+    "track_durations": [
+      338,
+      252
+    ],
+    "track_ranks": [
+      48511,
+      140504
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Balanka",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Art Roho Serving Aske Drasbæk",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Move",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Art Roho serving Mads Søndergaard",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Art Roho Serving Hannes Bennich",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moonglow",
+        "label": "",
+        "release_date": "2020-03-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Shou Xi Hu",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tidal",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Art Roho",
+    "mbid": "6bfbad04-b390-4563-96b1-9893004e871b",
+    "listeners": 22208,
+    "playcount": 53745,
+    "listener_play_ratio": 2.42,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Art+Roho\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Thomas Sejthen Trio",
+      "Copenhagen Jazzexperience",
+      "The Mellowtones",
+      "Ari Bragi Kárason",
+      "Gathering in Jazz"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ack Värmeland, Du Sköna",
+        "listeners": 19032,
+        "playcount": 42146
+      },
+      {
+        "name": "Dark Turn of Mind",
+        "listeners": 5076,
+        "playcount": 9817
+      },
+      {
+        "name": "The Lake",
+        "listeners": 75,
+        "playcount": 154
+      },
+      {
+        "name": "You Make Me Feel So Young",
+        "listeners": 66,
+        "playcount": 138
+      },
+      {
+        "name": "If Ever I Would Leave You",
+        "listeners": 41,
+        "playcount": 78
+      },
+      {
+        "name": "Aquellos Ojos Verdes",
+        "listeners": 39,
+        "playcount": 83
+      },
+      {
+        "name": "On the Trail",
+        "listeners": 38,
+        "playcount": 120
+      },
+      {
+        "name": "Because",
+        "listeners": 37,
+        "playcount": 74
+      },
+      {
+        "name": "The Peacocks",
+        "listeners": 36,
+        "playcount": 73
+      },
+      {
+        "name": "Falling To Pieces",
+        "listeners": 33,
+        "playcount": 65
+      }
+    ],
+    "url": "https://www.last.fm/music/Art+Roho"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,187 @@
+{
+  "artist_name": "Nighthawks Revisited",
+  "artist_id": "nighthawks_revisited",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:01:54.652559+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 335192071,
+    "name": "Nighthawks Revisited",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/335192071",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7dd142e07a1dcf14a50e5dc8a867fab6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Urban Oasis",
+      "Umbrella Melody"
+    ],
+    "track_durations": [
+      183,
+      189
+    ],
+    "track_ranks": [
+      70439,
+      63613
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Little Jesus Boy",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rockin' Around the Christmas Tree",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Urban Oasis",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "While I Dream",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Call",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Umbrella Melody",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Swayed by Silence",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nighthawks Revisited",
+    "mbid": "",
+    "listeners": 47104,
+    "playcount": 119159,
+    "listener_play_ratio": 2.53,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nighthawks+Revisited\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Third Rail Trio",
+      "The 52nd Street Club",
+      "Downtown Café",
+      "Autumn Steps",
+      "Blue Hour Theory"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hark! the Herald Angels Sing",
+        "listeners": 21746,
+        "playcount": 42248
+      },
+      {
+        "name": "Urban Oasis",
+        "listeners": 19122,
+        "playcount": 38802
+      },
+      {
+        "name": "Last Call",
+        "listeners": 10122,
+        "playcount": 20217
+      },
+      {
+        "name": "Umbrella Melody",
+        "listeners": 8641,
+        "playcount": 17823
+      },
+      {
+        "name": "Little Jesus Boy",
+        "listeners": 18,
+        "playcount": 37
+      },
+      {
+        "name": "Rockin' Around the Christmas Tree",
+        "listeners": 15,
+        "playcount": 30
+      },
+      {
+        "name": "While I Dream",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Swayed by Silence",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Nighthawks+Revisited"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

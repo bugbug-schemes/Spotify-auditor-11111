@@ -1,0 +1,776 @@
+{
+  "artist_name": "Mark Ronson",
+  "artist_id": "mark_ronson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:30:19.161539+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c3c82bdc-d9e7-4836-9746-c24ead47ca19",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1975-09-04",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "rock",
+      "pop",
+      "alternative rock",
+      "dance",
+      "hip-hop",
+      "hip hop",
+      "funk",
+      "soul",
+      "synth-pop",
+      "electropop",
+      "dance-pop",
+      "jazz pop",
+      "english",
+      "united kingdom",
+      "pop and chart",
+      "pop soul",
+      "nu disco",
+      "synth funk"
+    ],
+    "aliases": [
+      "Mark Daniel Ronson",
+      "Mark D. Ronson",
+      "Marc Ronson",
+      "DJ Mark Ronson"
+    ],
+    "isnis": [
+      "000000007143363X"
+    ],
+    "ipis": [
+      "00199628407",
+      "00199628505"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000237773",
+      "BBC Music page": "https://www.bbc.co.uk/music/artists/c3c82bdc-d9e7-4836-9746-c24ead47ca19",
+      "discogs": "https://www.discogs.com/artist/151634",
+      "free streaming": "https://www.deezer.com/artist/13204",
+      "image": "https://commons.wikimedia.org/wiki/File:Mark_Ronson_and_Jennifer_Su%2C_2011_(cropped).jpg",
+      "IMDb": "https://www.imdb.com/name/nm1053148/",
+      "last.fm": "https://www.last.fm/music/Mark+Ronson",
+      "lyrics": "https://genius.com/artists/Mark-ronson",
+      "myspace": "https://myspace.com/markronson",
+      "official homepage": "https://www.markronson.co.uk/",
+      "other databases": "http://www.maniadb.com/artist/138530",
+      "purchase for download": "https://www.melon.com/artist/detail.htm?artistId=45077",
+      "secondhandsongs": "https://secondhandsongs.com/artist/22797",
+      "social network": "https://www.tiktok.com/@markronson",
+      "songkick": "https://www.songkick.com/artists/296466",
+      "soundcloud": "https://soundcloud.com/markronson",
+      "streaming": "https://www.melon.com/artist/detail.htm?artistId=45077",
+      "VIAF": "http://viaf.org/viaf/47979779",
+      "wikidata": "https://www.wikidata.org/wiki/Q425821",
+      "youtube": "https://www.youtube.com/channel/UCSY5V7BJSrxNvvBF0Drslow"
+    },
+    "labels": [
+      "EMI",
+      "RCA",
+      "Sony BMG Music Entertainment",
+      "Elektra",
+      "Sony Music Entertainment UK Limited",
+      "Qwest Records",
+      "Sony Music",
+      "Allido Records",
+      "Rapster Records",
+      "Epic Legacy Records",
+      "[no label]",
+      "BBC Music",
+      "WaterTower Music",
+      "Island",
+      "House of Iona",
+      "triple j",
+      "Coca-Cola",
+      "Columbia",
+      "Bunghole Recordings",
+      "La‐La Land Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13204,
+    "name": "Mark Ronson",
+    "nb_fan": 740257,
+    "nb_album": 78,
+    "link": "https://www.deezer.com/artist/13204",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cacdbfdf5fa8c600eadc3e1c2b6ac8c8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Action Bronson",
+      "Alicia Keys",
+      "Amy Winehouse",
+      "Bruno Mars",
+      "Camila Cabello",
+      "Dan Auerbach",
+      "Daniel Merriweather",
+      "FNZ",
+      "Foo Fighters",
+      "Ghostface Killah",
+      "Kevin Parker",
+      "King Princess",
+      "Lucky Daye",
+      "Lykke Li",
+      "MNDR",
+      "Michael Jackson",
+      "Miley Cyrus",
+      "Mystikal",
+      "Nate Dogg",
+      "N’Dea Davenport",
+      "Ol' Dirty Bastard",
+      "Purple Disco Machine",
+      "RAYE",
+      "Ryan Gosling",
+      "Sabrina Carpenter",
+      "Saigon",
+      "The Brand New Heavies",
+      "The Business Intl.",
+      "The Last Artful, Dodgr",
+      "Tiggers",
+      "Trife",
+      "Yebba"
+    ],
+    "contributor_roles": {
+      "Bruno Mars": [
+        "Featured"
+      ],
+      "Miley Cyrus": [
+        "Main"
+      ],
+      "Amy Winehouse": [
+        "Featured"
+      ],
+      "RAYE": [
+        "Main"
+      ],
+      "Action Bronson": [
+        "Main"
+      ],
+      "Dan Auerbach": [
+        "Main"
+      ],
+      "Camila Cabello": [
+        "Featured"
+      ],
+      "Mystikal": [
+        "Featured"
+      ],
+      "Ryan Gosling": [
+        "Main"
+      ],
+      "Purple Disco Machine": [
+        "Featured"
+      ],
+      "Lucky Daye": [
+        "Main"
+      ],
+      "Ghostface Killah": [
+        "Featured"
+      ],
+      "Nate Dogg": [
+        "Featured"
+      ],
+      "Trife": [
+        "Featured"
+      ],
+      "Saigon": [
+        "Featured"
+      ],
+      "Tiggers": [
+        "Featured"
+      ],
+      "Ol' Dirty Bastard": [
+        "Featured"
+      ],
+      "Michael Jackson": [
+        "Main"
+      ],
+      "Kevin Parker": [
+        "Featured"
+      ],
+      "The Business Intl.": [
+        "Main"
+      ],
+      "MNDR": [
+        "Featured"
+      ],
+      "Lykke Li": [
+        "Featured"
+      ],
+      "Daniel Merriweather": [
+        "Featured"
+      ],
+      "King Princess": [
+        "Main"
+      ],
+      "The Brand New Heavies": [
+        "Main"
+      ],
+      "N’Dea Davenport": [
+        "Main"
+      ],
+      "Yebba": [
+        "Featured"
+      ],
+      "Foo Fighters": [
+        "Main"
+      ],
+      "Alicia Keys": [
+        "Featured"
+      ],
+      "The Last Artful, Dodgr": [
+        "Featured"
+      ],
+      "Sabrina Carpenter": [
+        "Main"
+      ],
+      "FNZ": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Uptown Funk (feat. Bruno Mars)",
+      "Nothing Breaks Like a Heart (feat. Miley Cyrus)",
+      "Valerie (feat. Amy Winehouse) (Version Revisited)",
+      "Suzanne",
+      "Standing in the Rain",
+      "Nothing Breaks Like a Heart (feat. Miley Cyrus) (Acoustic Version)",
+      "Find U Again (feat. Camila Cabello)",
+      "Feel Right (feat. Mystikal)",
+      "I'm Just Ken (Purple Disco Machine Remix; Extended)",
+      "Too Much (feat. Lucky Daye)",
+      "Ooh Wee (feat. Ghostface Killah, Nate Dogg, Trife & Saigon)",
+      "Toxic (feat. Ol' Dirty Bastard & Tiggers) (Version Revisited)",
+      "Michael Jackson x Mark Ronson: Diamonds are Invincible",
+      "Daffodils (feat. Kevin Parker)",
+      "Bang Bang Bang (feat. MNDR)",
+      "Late Night Feelings (feat. Lykke Li)",
+      "Stop Me (feat. Daniel Merriweather)",
+      "Happy Together",
+      "These Walls",
+      "Don't Leave Me Lonely (feat. Yebba)",
+      "Making A Fire (Mark Ronson Re-Version)",
+      "Ooh Wee (feat. Ghostface Killah, Nate Dogg, Trife & Saigon) (Radio Edit)",
+      "2 AM (feat. Lykke Li)",
+      "Truth (feat. Alicia Keys & The Last Artful, Dodgr)",
+      "Espresso (Mark Ronson x FNZ Working Late Remix)"
+    ],
+    "track_durations": [
+      270,
+      217,
+      219,
+      235,
+      202,
+      220,
+      176,
+      223,
+      343,
+      215,
+      209,
+      246,
+      299,
+      298,
+      234,
+      251,
+      234,
+      181,
+      245,
+      216,
+      270,
+      168,
+      198,
+      228,
+      184
+    ],
+    "track_ranks": [
+      950885,
+      869934,
+      775853,
+      796303,
+      489591,
+      753274,
+      367531,
+      431850,
+      161442,
+      405589,
+      533804,
+      512521,
+      549360,
+      395961,
+      362012,
+      465366,
+      333111,
+      401227,
+      412510,
+      373221,
+      352591,
+      308567,
+      236467,
+      307096,
+      378970
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 12,
+      "ep": 10,
+      "single": 55,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Barbie (Score from the Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Late Night Feelings",
+        "label": "",
+        "release_date": "2019-06-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mortdecai (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2015-01-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Uptown Special",
+        "label": "",
+        "release_date": "2015-01-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kitsuné: Record Collection 2012",
+        "label": "",
+        "release_date": "2011-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Record Collection",
+        "label": "",
+        "release_date": "2010-09-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Valerie (feat. Amy Winehouse)",
+        "label": "",
+        "release_date": "2007-08-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stop Me (feat. Daniel Merriweather)",
+        "label": "",
+        "release_date": "2007-08-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Version Digital Edition",
+        "label": "",
+        "release_date": "2007-06-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Version",
+        "label": "",
+        "release_date": "2007-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Version",
+        "label": "",
+        "release_date": "2007-04-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Here Comes The Fuzz",
+        "label": "",
+        "release_date": "2003-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ken The EP",
+        "label": "",
+        "release_date": "2023-12-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Watch the Sound With Mark Ronson (Apple TV+ Original Series Soundtrack)",
+        "label": "",
+        "release_date": "2021-07-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I Can't Lose (Remixes) - EP (feat. Keyone Starr)",
+        "label": "",
+        "release_date": "2015-07-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Uptown Funk (Remixes) (feat. Bruno Mars)",
+        "label": "",
+        "release_date": "2015-04-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Somebody To Love Me",
+        "label": "",
+        "release_date": "2010-11-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bang Bang Bang (feat. MNDR)",
+        "label": "",
+        "release_date": "2010-08-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Oh My God (feat. Lily Allen)",
+        "label": "",
+        "release_date": "2007-07-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Stop Me (feat. Daniel Merriweather)",
+        "label": "",
+        "release_date": "2007-04-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Stop Me (feat. Daniel Merriweather)",
+        "label": "",
+        "release_date": "2007-04-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Just (feat. Phantom Planet)",
+        "label": "",
+        "release_date": "2008-02-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rumore",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Suzanne (At The Church)",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Suzanne",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Espresso (Working Late Remixes)",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I’m Just Ken (Purple Disco Machine Remix) [Extended]",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Help Falling in Love (From the Original Motion Picture Soundtrack ELVIS) DELUXE EDITION (Bonus Track)",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bird Calling",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Too Much (feat. Lucky Daye)",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Jamiroquai",
+      "Chromeo",
+      "Vulfpeck",
+      "Pharrell Williams",
+      "Gnarls Barkley",
+      "Mayer Hawthorne",
+      "Maverick Sabre",
+      "Bruno Mars",
+      "Aloe Blacc",
+      "The Knocks"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 151634,
+    "name": "Mark Ronson",
+    "profile": "DJ, remixer, producer and songwriter. Born September 4,  1975 in St John's Wood, London, England, but moved to NYC at the age of eight. He learned drums, saxophone and piano at an early age.\r\n\r\nHe is the stepson of guitarist, songwriter and producer [a=Mick Jones (2)].",
+    "realname": "Mark Daniel Ronson",
+    "social_urls": [
+      "https://www.markronson.co.uk/",
+      "https://www.facebook.com/markronson/",
+      "https://twitter.com/MarkRonson",
+      "https://www.instagram.com/iammarkronson/",
+      "https://myspace.com/markronson",
+      "https://medium.com/@MarkRonson",
+      "https://soundcloud.com/markronson",
+      "https://www.youtube.com/@markronson",
+      "https://www.youtube.com/@MarkRonsonVEVO",
+      "https://en.wikipedia.org/wiki/Mark_Ronson"
+    ],
+    "members": [],
+    "groups": [
+      "Flip Squad Allstars",
+      "The Soundhustlers",
+      "Chauffeur (2)",
+      "Silk City (3)",
+      "Mark Ronson & The Business Intl"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 41,
+    "digital_only_releases": 59,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP, RSD",
+      "12\", Ltd, Promo, Smplr",
+      "12\", Promo",
+      "12\", Promo, Smplr",
+      "22xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp, Promo",
+      "2xCD, Mixed",
+      "2xCDr, Comp, Promo",
+      "2xCDr, Mixed",
+      "3xCD, Comp",
+      "3xCD, Comp, Mixed",
+      "3xCD, Mixed, Mixtape, Promo",
+      "Acetate, 12\"",
+      "CD, Album",
+      "CD, Album, RE + CD, Album, RE + CD, Album, RE + CD",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, Mixed",
+      "CD, Mixed",
+      "CD, Mixed, Mixtape, Promo + CD, Comp, Promo",
+      "CD, Mixed, Promo, Smplr",
+      "CD, Mixtape",
+      "CD, Promo",
+      "CD, Promo, Smplr",
+      "CDr, Comp",
+      "CDr, Comp, Promo",
+      "CDr, Mixed",
+      "CDr, Mixed, Mixtape",
+      "CDr, Mixed, Promo",
+      "CDr, Mixtape",
+      "CDr, Promo, Smplr",
+      "CDr, Single, Promo",
+      "CDr, Smplr",
+      "DVD, Promo, Med",
+      "DVDr, PAL",
+      "DVDr, Promo, NTSC",
+      "File, FLAC, Single",
+      "File, FLAC, Single, 24-",
+      "File, FLAC, WAV, Single, AAC",
+      "File, MP3, 320",
+      "File, MP3, Comp, P/Mixed, 320",
+      "File, MP3, Single, 320",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "Abstract Urban",
+      "Allido Records",
+      "Allido Records, Universal Music Special Markets",
+      "Bunghole Recordings",
+      "Cd Pool",
+      "Columbia",
+      "Columbia, Allido Records",
+      "Columbia, Sony Music",
+      "Cornerstone Promotion",
+      "Cornerstone Promotion, Cornerstone Promotion",
+      "DMC",
+      "DMC, DMC, DMC",
+      "Digiwaxx",
+      "EMI, Soundcolours",
+      "Earthbeat",
+      "Elektra",
+      "Fabric (2)",
+      "HHC Magazine, HHC Magazine",
+      "Hypem",
+      "Interscope Records, UMe",
+      "Jagjaguwar",
+      "La Musique Fait La Force",
+      "La-La Land Records",
+      "Ministry Of Sound",
+      "Not On Label",
+      "Not On Label (DJ Ayres Self-released)",
+      "Not On Label (Mark Ronson)",
+      "Octone Records",
+      "Parlophone France",
+      "Plugg City",
+      "RCA",
+      "Roc-A-Fella Records",
+      "Roc-A-Fella Records, Allido Records",
+      "Sony Music",
+      "Warner Music",
+      "Zelig Records, LLC"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mark Ronson",
+    "mbid": "c3c82bdc-d9e7-4836-9746-c24ead47ca19",
+    "listeners": 3028102,
+    "playcount": 49577531,
+    "listener_play_ratio": 16.37,
+    "bio_exists": true,
+    "bio_summary": "Mark Daniel Ronson (born 4 September 1975) is a British-American DJ, record producer, songwriter, and composer. He has received multiple Grammy Awards, including Producer of the Year for Amy Winehouse's album \"Back to Black\" (2006), as well as awards for Record of the Year for Winehouse's single \"Rehab\" (2006) and his own single \"Uptown Funk\" (featuring Bruno Mars) (2014). He also won an Academy Award, a Golden Globe, and a Grammy Award for co-writing \"Shallow\" (performed by Lady Gaga and Bradle",
+    "tags": [
+      "funk",
+      "british",
+      "pop",
+      "Hip-Hop",
+      "dj"
+    ],
+    "similar_artists": [
+      "Mark Ronson & The Business Intl",
+      "Clean Bandit",
+      "RAYE",
+      "Silk City",
+      "Miley Cyrus"
+    ],
+    "top_tracks": [
+      {
+        "name": "Uptown Funk (feat. Bruno Mars)",
+        "listeners": 1153689,
+        "playcount": 6988976
+      },
+      {
+        "name": "Valerie (Feat. Amy Winehouse) - Version Revisited",
+        "listeners": 783069,
+        "playcount": 5900388
+      },
+      {
+        "name": "Nothing Breaks Like a Heart (feat. Miley Cyrus)",
+        "listeners": 778652,
+        "playcount": 8520364
+      },
+      {
+        "name": "Uptown Funk",
+        "listeners": 538177,
+        "playcount": 4060065
+      },
+      {
+        "name": "Find U Again (feat. Camila Cabello)",
+        "listeners": 188907,
+        "playcount": 2174560
+      },
+      {
+        "name": "Suzanne",
+        "listeners": 184783,
+        "playcount": 880271
+      },
+      {
+        "name": "Late Night Feelings (feat. Lykke Li)",
+        "listeners": 177805,
+        "playcount": 1596926
+      },
+      {
+        "name": "Diversion",
+        "listeners": 132028,
+        "playcount": 440903
+      },
+      {
+        "name": "Inversion",
+        "listeners": 121150,
+        "playcount": 445395
+      },
+      {
+        "name": "Outversion",
+        "listeners": 117614,
+        "playcount": 377536
+      }
+    ],
+    "url": "https://www.last.fm/music/Mark+Ronson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

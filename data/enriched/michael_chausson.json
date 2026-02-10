@@ -1,0 +1,133 @@
+{
+  "artist_name": "Michael Chausson",
+  "artist_id": "michael_chausson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:41:08.089124+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 235766461,
+    "name": "Michael Chausson",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/235766461",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/81001b83001b91bb8e0945d47aa57cb2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Slowly Strolling"
+    ],
+    "track_durations": [
+      113
+    ],
+    "track_ranks": [
+      22213
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Up and Down",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "カタナ",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Bear is Sleeping",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slowly Strolling",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Michael Chausson",
+    "mbid": "",
+    "listeners": 4539,
+    "playcount": 65193,
+    "listener_play_ratio": 14.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Michael+Chausson\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Leanne Haughey",
+      "Vincent Lundborg",
+      "Snuggly Sam",
+      "Jordan Avery",
+      "Fruity Koala"
+    ],
+    "top_tracks": [
+      {
+        "name": "Slowly Strolling",
+        "listeners": 4271,
+        "playcount": 61956
+      },
+      {
+        "name": "Up and Down",
+        "listeners": 584,
+        "playcount": 3237
+      }
+    ],
+    "url": "https://www.last.fm/music/Michael+Chausson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

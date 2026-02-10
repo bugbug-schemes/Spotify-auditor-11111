@@ -1,0 +1,595 @@
+{
+  "artist_name": "Morgan Wallen",
+  "artist_id": "morgan_wallen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:50:27.453296+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2077273e-eaa1-4f49-903c-f286ededecb9",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1993-05-13",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "country",
+      "racist",
+      "country pop"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000467316966"
+    ],
+    "ipis": [
+      "00744206556",
+      "00744206654"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003351348",
+      "bandsintown": "https://www.bandsintown.com/a/4726457",
+      "discogs": "https://www.discogs.com/artist/6628105",
+      "free streaming": "https://www.deezer.com/artist/7188840",
+      "IMDb": "https://www.imdb.com/name/nm9147070/",
+      "last.fm": "https://www.last.fm/music/Morgan+Wallen",
+      "lyrics": "https://genius.com/artists/Morgan-wallen",
+      "official homepage": "http://morganwallen.com/",
+      "other databases": "https://rateyourmusic.com/artist/morgan-wallen",
+      "purchase for download": "https://music.apple.com/us/artist/829142092",
+      "secondhandsongs": "https://secondhandsongs.com/artist/125474",
+      "social network": "https://www.instagram.com/morganwallen/",
+      "songkick": "https://www.songkick.com/artists/8964794",
+      "soundcloud": "https://soundcloud.com/morgan-wallen",
+      "streaming": "https://tidal.com/artist/6326493",
+      "wikidata": "https://www.wikidata.org/wiki/Q29561472",
+      "youtube": "https://www.youtube.com/MorganWallenOfficial"
+    },
+    "labels": [
+      "Big Loud Records",
+      "[no label]",
+      "The Valory Music Co.",
+      "Republic Records",
+      "Columbia",
+      "Mercury Records",
+      "Panacea Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7188840,
+    "name": "Morgan Wallen",
+    "nb_fan": 270469,
+    "nb_album": 46,
+    "link": "https://www.deezer.com/artist/7188840",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f5450fe707a7a32f2fc8ed3cb80afa6c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Diplo",
+      "ERNEST",
+      "Eric Church",
+      "HARDY",
+      "Lil Durk",
+      "Post Malone",
+      "Tate McRae",
+      "Tim McGraw"
+    ],
+    "contributor_roles": {
+      "Tate McRae": [
+        "Main"
+      ],
+      "Lil Durk": [
+        "Main"
+      ],
+      "Post Malone": [
+        "Main"
+      ],
+      "HARDY": [
+        "Main"
+      ],
+      "Eric Church": [
+        "Main"
+      ],
+      "Tim McGraw": [
+        "Main"
+      ],
+      "ERNEST": [
+        "Featured"
+      ],
+      "Diplo": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "What I Want",
+      "I'm The Problem",
+      "Last Night",
+      "Wasted On You",
+      "Just In Case",
+      "Love Somebody",
+      "I Got Better",
+      "Whiskey Glasses",
+      "Broadway Girls (feat. Morgan Wallen)",
+      "I Ain't Comin' Back",
+      "20 Cigarettes",
+      "McArthur",
+      "Thinkin’ Bout Me",
+      "Cowgirls",
+      "I'm A Little Crazy",
+      "7 Summers",
+      "Chasin' You",
+      "Lies Lies Lies",
+      "Cover Me Up",
+      "Thought You Should Know",
+      "Heartless (feat. Morgan Wallen)",
+      "Stand By Me (feat. Morgan Wallen)",
+      "Smile",
+      "More Than My Hometown",
+      "Spin You Around (1/24)"
+    ],
+    "track_durations": [
+      184,
+      177,
+      163,
+      178,
+      166,
+      205,
+      205,
+      234,
+      188,
+      175,
+      160,
+      231,
+      177,
+      181,
+      199,
+      210,
+      205,
+      198,
+      292,
+      215,
+      169,
+      219,
+      224,
+      216,
+      209
+    ],
+    "track_ranks": [
+      753585,
+      628131,
+      731432,
+      533735,
+      660707,
+      687243,
+      529187,
+      554539,
+      513495,
+      597235,
+      492558,
+      613668,
+      527868,
+      543430,
+      456325,
+      531341,
+      503110,
+      485953,
+      493051,
+      465127,
+      435664,
+      416851,
+      562362,
+      476826,
+      491684
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 6,
+      "ep": 2,
+      "single": 38
+    },
+    "albums": [
+      {
+        "title": "I’m The Problem",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "One Thing At A Time",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dangerous: The Double Album (Bonus)",
+        "label": "",
+        "release_date": "2021-01-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dangerous: The Double Album",
+        "label": "",
+        "release_date": "2021-01-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dangerous: The Double Album",
+        "label": "",
+        "release_date": "2021-01-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "If I Know Me",
+        "label": "",
+        "release_date": "2018-04-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stand Alone (10th Anniversary Deluxe Edition)",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Stand Alone - EP",
+        "label": "",
+        "release_date": "2016-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "McArthur",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Graveyard Whistling",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miami",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Superman",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Ain't Comin' Back",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just In Case",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm A Little Crazy",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm The Problem",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smile",
+        "label": "",
+        "release_date": "2024-12-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Somebody",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lies Lies Lies",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spin You Around (1/24)",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "3 Songs At A Time Sampler",
+        "label": "",
+        "release_date": "2023-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Thing At A Time (Sampler)",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Proof",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thought You Should Know",
+        "label": "",
+        "release_date": "2022-05-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Think Jesus",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flower Shops (feat. Morgan Wallen)",
+        "label": "",
+        "release_date": "2021-12-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Broadway Girls (feat. Morgan Wallen)",
+        "label": "",
+        "release_date": "2021-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goin’ Nowhere (feat. HARDY, Morgan Wallen & Chris Shiflett)",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somebody’s Problem",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Goin Down",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6628105,
+    "name": "Morgan Wallen",
+    "profile": "Morgan Cole Wallen (born May 13, 1993) is an American country music singer and songwriter.",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/morgancwallen/",
+      "https://en.wikipedia.org/wiki/Morgan_Wallen"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 42,
+    "digital_only_releases": 58,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12xFile, MP3, Album",
+      "20xFile, ALAC, Album",
+      "2xCD, Comp",
+      "2xCD, Comp, Rad",
+      "2xFile, MP3, Promo, 320",
+      "3xCD, Comp",
+      "3xFile, AAC, Single, Smplr, 256",
+      "4\", Single, Ltd, Gat",
+      "4xFile, MP3, Promo, 320",
+      "5xCD, Comp, Dlx",
+      "7\"",
+      "7\", Single, Ltd, Whi",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Comp",
+      "CD, Comp, Num",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CDr, Comp",
+      "CDr, Comp, Promo",
+      "File, AAC, Single, 256",
+      "File, MP3, Single, 256",
+      "LP, Opa"
+    ],
+    "labels": [
+      "Alamo Records (5)",
+      "Big Loud Records",
+      "Big Loud Records, Mercury",
+      "Big Loud Records, Mercury, Republic Records",
+      "Big Loud Records, Republic Records",
+      "Broken Bow Records, BMG",
+      "CMG (13), N-Less Entertainment, Interscope Records",
+      "Columbia",
+      "DMC",
+      "DMC, DMC",
+      "EMI, Sony Music, EMI, Sony Music",
+      "Honeyhole Records",
+      "Label Panthéon, Universal Music France",
+      "Mad Decent",
+      "Mercury, Republic Records, Tiny Vinyl (2)",
+      "Not On Label",
+      "Not on Label",
+      "Polystar (3)",
+      "Polystar (3), Universal Music Group",
+      "Promo Only",
+      "Radio Programming And Management, Inc.",
+      "Republic Records",
+      "Sony Music",
+      "Sony Music, Sony Music, EMI, EMI",
+      "Sony Music, Universal Music",
+      "Sony Music, Universal Music Group",
+      "Ultimix",
+      "Universal Music Belgium",
+      "Universal Music Enterprises",
+      "Universal Music Group, Sony Music",
+      "Universal Music, Sony Music",
+      "Warner Music Central Europe",
+      "Warner Music France",
+      "Warner Music Italy"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Morgan Wallen",
+    "mbid": "2077273e-eaa1-4f49-903c-f286ededecb9",
+    "listeners": 952659,
+    "playcount": 86237989,
+    "listener_play_ratio": 90.52,
+    "bio_exists": true,
+    "bio_summary": "Morgan Wallen sets the pace in, and beyond, country music – with Billboard calling him \"one of the biggest stars in the music world right now\" and The New Yorker adding \"[he's] popular on a scale that seems to circumvent genre entirely.\" With 19 #1 singles at Country radio, 19 Billboard Music Awards to-date, 198 weeks spent atop Billboard's Top Country Albums chart (the most in country music history), the highest selling country tour under his belt and more, Wallen has propelled country music to",
+    "tags": [
+      "country",
+      "country pop",
+      "contemporary country",
+      "the voice",
+      "bro-country"
+    ],
+    "similar_artists": [
+      "Bailey Zimmerman",
+      "Luke Combs",
+      "Riley Green",
+      "Tucker Wetmore",
+      "HARDY"
+    ],
+    "top_tracks": [
+      {
+        "name": "Last Night",
+        "listeners": 405612,
+        "playcount": 4865893
+      },
+      {
+        "name": "Whiskey Glasses",
+        "listeners": 248752,
+        "playcount": 3126768
+      },
+      {
+        "name": "7 Summers",
+        "listeners": 234547,
+        "playcount": 4100999
+      },
+      {
+        "name": "You Proof",
+        "listeners": 217262,
+        "playcount": 2600633
+      },
+      {
+        "name": "What I Want (feat. Tate McRae)",
+        "listeners": 213015,
+        "playcount": 1601586
+      },
+      {
+        "name": "Chasin' You",
+        "listeners": 212564,
+        "playcount": 2897895
+      },
+      {
+        "name": "Wasted on You",
+        "listeners": 202265,
+        "playcount": 2609064
+      },
+      {
+        "name": "Thinkin’ Bout Me",
+        "listeners": 202093,
+        "playcount": 2448188
+      },
+      {
+        "name": "Love Somebody",
+        "listeners": 175239,
+        "playcount": 1595008
+      },
+      {
+        "name": "More Than My Hometown",
+        "listeners": 167936,
+        "playcount": 2554588
+      }
+    ],
+    "url": "https://www.last.fm/music/Morgan+Wallen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,130 @@
+{
+  "artist_name": "Algot Wiland",
+  "artist_id": "algot_wiland",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:52:01.338546+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 161104522,
+    "name": "Algot Wiland",
+    "nb_fan": 1,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/161104522",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/008de7b4b2e3f995c63c8bf515410add/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "If We Make it Through December",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For All We Know",
+        "label": "",
+        "release_date": "2022-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Butterflies",
+        "label": "",
+        "release_date": "2022-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Algot Wiland",
+    "mbid": "",
+    "listeners": 13342,
+    "playcount": 31811,
+    "listener_play_ratio": 2.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Algot+Wiland\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eternal Hands",
+      "Teodor Seti",
+      "Alex Lehtonen",
+      "Pam Hill",
+      "Timothy North"
+    ],
+    "top_tracks": [
+      {
+        "name": "If We Make It Through December",
+        "listeners": 5751,
+        "playcount": 15893
+      },
+      {
+        "name": "Butterflies",
+        "listeners": 5322,
+        "playcount": 9636
+      },
+      {
+        "name": "For All We Know",
+        "listeners": 2594,
+        "playcount": 6281
+      },
+      {
+        "name": "Immersed in Dreams",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Algot+Wiland"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

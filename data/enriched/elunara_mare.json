@@ -1,0 +1,170 @@
+{
+  "artist_name": "Elunara Mare",
+  "artist_id": "elunara_mare",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:26:27.392766+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327359561,
+    "name": "Elunara Mare",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/327359561",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3bddaafa4ce3a5581bacdcea0dd86cce/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Multiplied",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Resumption",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sun Child",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Stillpoint Between Waves",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silentum",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Valerian",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coral Sky",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft as the Night",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elunara Mare",
+    "mbid": "",
+    "listeners": 22422,
+    "playcount": 86686,
+    "listener_play_ratio": 3.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elunara+Mare\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Torun Lysander",
+      "SOLAR SONAR",
+      "Peyote Level",
+      "Rawiri Te Awa",
+      "Hazel Day"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Stillpoint Between Waves",
+        "listeners": 11217,
+        "playcount": 37876
+      },
+      {
+        "name": "Coral Sky",
+        "listeners": 6834,
+        "playcount": 30332
+      },
+      {
+        "name": "Valerian",
+        "listeners": 5820,
+        "playcount": 17132
+      },
+      {
+        "name": "Sun Child",
+        "listeners": 735,
+        "playcount": 1345
+      },
+      {
+        "name": "Resumption",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Elunara+Mare"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

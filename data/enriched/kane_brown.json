@@ -1,0 +1,620 @@
+{
+  "artist_name": "Kane Brown",
+  "artist_id": "kane_brown",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:44:34.275578+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a62e299b-4707-4ff5-ad53-d80b2b03319d",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1993-10-21",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "country",
+      "contemporary country",
+      "country pop",
+      "bro-country"
+    ],
+    "aliases": [
+      "Kane Allen Brown"
+    ],
+    "isnis": [
+      "0000000463111971"
+    ],
+    "ipis": [
+      "00748243525",
+      "00748243623"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003444653",
+      "discogs": "https://www.discogs.com/artist/5405126",
+      "free streaming": "https://www.deezer.com/artist/827425",
+      "last.fm": "https://www.last.fm/music/Kane+Brown",
+      "lyrics": "https://genius.com/artists/Kane-brown",
+      "official homepage": "https://www.kanebrownmusic.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2017016998",
+      "purchase for download": "https://music.apple.com/us/artist/930928857",
+      "social network": "https://www.instagram.com/kanebrown_music/",
+      "songkick": "https://www.songkick.com/artists/3587911",
+      "streaming": "https://tidal.com/artist/6160546",
+      "VIAF": "http://viaf.org/viaf/2886148269767705230007",
+      "wikidata": "https://www.wikidata.org/wiki/Q21620939",
+      "youtube": "https://www.youtube.com/channel/UC2QTDn02Xobvy_N2bb_Zzlw"
+    },
+    "labels": [
+      "Sony Music Nashville",
+      "Zone 4, Inc.",
+      "Patchwork Heart Records",
+      "Capitol Records Nashville",
+      "Atlantic",
+      "Sony Music",
+      "Zone 4",
+      "Loud Luxury Dance Recordings",
+      "RCA Nashville",
+      "Epic",
+      "apg",
+      "Socios Music, LLC",
+      "Joytime Collective",
+      "RCA"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 827425,
+    "name": "Kane Brown",
+    "nb_fan": 245206,
+    "nb_album": 61,
+    "link": "https://www.deezer.com/artist/827425",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0814321537330c4589086fde79b439f4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Becky G",
+      "Chris Young",
+      "Jelly Roll",
+      "Katelyn Brown",
+      "Khalid",
+      "Lauren Alaina",
+      "Marshmello",
+      "Swae Lee",
+      "Walker Hayes",
+      "blackbear"
+    ],
+    "contributor_roles": {
+      "Marshmello": [
+        "Main"
+      ],
+      "Katelyn Brown": [
+        "Main"
+      ],
+      "Lauren Alaina": [
+        "Featured"
+      ],
+      "Swae Lee": [
+        "Main"
+      ],
+      "Khalid": [
+        "Main"
+      ],
+      "Jelly Roll": [
+        "Main"
+      ],
+      "Becky G": [
+        "Main"
+      ],
+      "Walker Hayes": [
+        "Main"
+      ],
+      "Chris Young": [
+        "Main"
+      ],
+      "blackbear": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Heaven",
+      "Miles On It",
+      "Thank God",
+      "What Ifs (feat. Lauren Alaina)",
+      "One Thing Right",
+      "Be Like That (feat. Swae Lee & Khalid)",
+      "Like I Love Country Music",
+      "2 Pair",
+      "Haunted",
+      "Homesick",
+      "Fiddle in the Band",
+      "One Mississippi",
+      "Gorgeous",
+      "Good as You",
+      "Bury Me in Georgia",
+      "Backseat Driver",
+      "Lost in the Middle of Nowhere (feat. Becky G)",
+      "Lose It",
+      "Song For My Son (feat. Kane Brown)",
+      "Famous Friends",
+      "Like a Rodeo",
+      "What's Mine Is Yours",
+      "Memory",
+      "Worship You",
+      "Grand"
+    ],
+    "track_durations": [
+      177,
+      168,
+      175,
+      188,
+      182,
+      191,
+      234,
+      151,
+      263,
+      205,
+      172,
+      213,
+      185,
+      191,
+      241,
+      228,
+      188,
+      178,
+      181,
+      166,
+      201,
+      216,
+      153,
+      205,
+      179
+    ],
+    "track_ranks": [
+      474929,
+      706770,
+      480568,
+      444411,
+      518107,
+      461578,
+      500298,
+      555168,
+      438163,
+      384354,
+      392714,
+      460299,
+      434393,
+      348534,
+      298671,
+      372150,
+      294218,
+      307322,
+      507374,
+      407989,
+      323331,
+      297361,
+      362556,
+      299697,
+      296350
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 3,
+      "single": 53
+    },
+    "albums": [
+      {
+        "title": "The High Road",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Different Man",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Experiment Extended",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kane Brown",
+        "label": "",
+        "release_date": "2016-12-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kane Brown (Deluxe Edition)",
+        "label": "",
+        "release_date": "2017-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Be Like That (Remixes) - EP",
+        "label": "",
+        "release_date": "2020-09-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mixtape Vol. 1 - EP",
+        "label": "",
+        "release_date": "2020-08-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chapter 1 - EP",
+        "label": "",
+        "release_date": "2016-03-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Unspoken",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "2 Pair",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Says I Can (The High Road Tour Version)",
+        "label": "",
+        "release_date": "2025-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gorgeous",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Body Talk (Remixes)",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Body Talk",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Backseat Driver",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miles On It (Remixes)",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miles On It",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Georgia on My Mind",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fiddle in the Band",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Can Feel It (VAVO Remix)",
+        "label": "",
+        "release_date": "2023-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Christmas",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Can Feel It",
+        "label": "",
+        "release_date": "2023-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thank God (Live from Fenway)",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bury Me in Georgia (Single Edit)",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thank God (Spring Symphony)",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Christmas",
+        "label": "",
+        "release_date": "2022-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grand (TroyBoi Remix)",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Go Around",
+        "label": "",
+        "release_date": "2022-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grand",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Like I Love Country Music",
+        "label": "",
+        "release_date": "2022-05-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Jordan Davis",
+      "Thomas Rhett",
+      "Dylan Scott",
+      "Sam Hunt",
+      "Mitchell Tenpenny",
+      "Russell Dickerson",
+      "Old Dominion",
+      "Dustin Lynch",
+      "Brantley Gilbert",
+      "Florida Georgia Line"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5405126,
+    "name": "Kane Brown",
+    "profile": "Born on October 21, 1993 in Georgia, USA\r\nAmerican country music singer and songwriter\r\n",
+    "realname": "Kane Allen Brown",
+    "social_urls": [
+      "https://kanebrownmusic.com",
+      "http://www.twitter.com/kanebrown",
+      "http://www.instagram.com/kanebrown_music",
+      "https://www.youtube.com/channel/UC2QTDn02Xobvy_N2bb_Zzlw",
+      "https://www.facebook.com/KaneBrownCountry/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 58,
+    "digital_only_releases": 26,
+    "total_releases": 84,
+    "formats": [
+      "",
+      "12xFile, MP3, Album, 320",
+      "2xCD, Album, Comp",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Num",
+      "2xLP, Comp, Unofficial",
+      "3xCD, Comp",
+      "3xCDr, Comp, P/Mixed",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Comp, M/Print",
+      "CD, Comp",
+      "CD, Comp + DVD-V, Comp",
+      "CD, Comp, Club",
+      "CD, Comp, Num",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, EP",
+      "CDr, Comp",
+      "CDr, Comp, Promo",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single",
+      "File, FLAC, Single, Hi-",
+      "File, MP3, Single, 256",
+      "LP, Opa"
+    ],
+    "labels": [
+      "Capitol Nashville",
+      "DMC",
+      "DMC, DMC",
+      "Ministry Of Sound",
+      "Not On Label",
+      "Promo Only",
+      "RCA",
+      "RCA Records Label",
+      "RCA Records Label Nashville",
+      "Radio Programming And Management, Inc.",
+      "Sony Music",
+      "Sony Music Canada, Warner Music Canada Ltd",
+      "Sony Music Entertainment",
+      "Sony Music Entertainment (Canada) Inc.",
+      "Sony Music Entertainment Inc.",
+      "Sony Music Entertainment South Africa",
+      "Sony Music, Universal Music",
+      "Sony Music, Universal Music Canada",
+      "Sony Music, Universal Music Group",
+      "Ultimix",
+      "Universal",
+      "Universal Music (Pty) Ltd South Africa, Sony Music South Africa",
+      "Universal Music Belgium",
+      "Universal Music Enterprises",
+      "Universal Music Group, Sony Music",
+      "Universal Music, Sony Music",
+      "Warner Bros. Records, Warner Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kane Brown",
+    "mbid": "a62e299b-4707-4ff5-ad53-d80b2b03319d",
+    "listeners": 466206,
+    "playcount": 8510349,
+    "listener_play_ratio": 18.25,
+    "bio_exists": true,
+    "bio_summary": "Kane Brown is an American singer. He was born and raised in the Chattanooga, Tennessee area by a single mother, moving from Rossville to Fort Oglethorpe and LaFayette in Georgia, finally settling in Red Bank, Tennessee.\n\nHe attended Lakeview-Fort Oglethorpe High School where he sang in the choir with Lauren Alaina, the runner-up on season 10 of American Idol. He also attended Red Bank, Ridgeland, and Soddy Daisy High Schools, at all of which he was a stand out athlete at football, basketball and",
+    "tags": [
+      "country",
+      "country pop",
+      "bro-country",
+      "contemporary country",
+      "USA"
+    ],
+    "similar_artists": [
+      "Thomas Rhett",
+      "Cole Swindell",
+      "Dustin Lynch",
+      "Jordan Davis",
+      "Dylan Scott"
+    ],
+    "top_tracks": [
+      {
+        "name": "Be Like That - feat. Swae Lee & Khalid",
+        "listeners": 163007,
+        "playcount": 1039628
+      },
+      {
+        "name": "Heaven",
+        "listeners": 99938,
+        "playcount": 776519
+      },
+      {
+        "name": "Memory",
+        "listeners": 96520,
+        "playcount": 759549
+      },
+      {
+        "name": "What Ifs (feat. Lauren Alaina)",
+        "listeners": 84975,
+        "playcount": 719641
+      },
+      {
+        "name": "Thank God",
+        "listeners": 49572,
+        "playcount": 335755
+      },
+      {
+        "name": "Good as You",
+        "listeners": 42305,
+        "playcount": 291903
+      },
+      {
+        "name": "Homesick",
+        "listeners": 36839,
+        "playcount": 271081
+      },
+      {
+        "name": "Lose It",
+        "listeners": 36289,
+        "playcount": 286383
+      },
+      {
+        "name": "Like I Love Country Music",
+        "listeners": 30871,
+        "playcount": 207933
+      },
+      {
+        "name": "One Mississippi",
+        "listeners": 30853,
+        "playcount": 245671
+      }
+    ],
+    "url": "https://www.last.fm/music/Kane+Brown"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

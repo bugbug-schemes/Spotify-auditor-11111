@@ -1,0 +1,215 @@
+{
+  "artist_name": "Kumali",
+  "artist_id": "kumali",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:53:08.695940+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 88464,
+    "name": "Kumali",
+    "nb_fan": 2,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/88464",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7db7f891051fdfec4d41b77610a1c4b7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Koresma"
+    ],
+    "contributor_roles": {
+      "Koresma": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Wait and See",
+      "Run"
+    ],
+    "track_durations": [
+      217,
+      287
+    ],
+    "track_ranks": [
+      303314,
+      22142
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Kumali EP",
+        "label": "",
+        "release_date": "2017-06-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wait and See",
+        "label": "",
+        "release_date": "2025-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sparks",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where I Know",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Run (Banyan Remix)",
+        "label": "",
+        "release_date": "2021-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Run",
+        "label": "",
+        "release_date": "2021-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4529687,
+    "name": "Kumalibre",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 8,
+    "digital_only_releases": 1,
+    "total_releases": 9,
+    "formats": [
+      "7xFile, FLAC, EP",
+      "CD, Album",
+      "CDr, Mixed, Mixtape"
+    ],
+    "labels": [
+      "Blue Era Ent., Be Side Records",
+      "Hiphopsardo.com",
+      "Not On Label",
+      "Produzioni Oblio",
+      "Zero Cloni"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kumali",
+    "mbid": "",
+    "listeners": 1096,
+    "playcount": 2674,
+    "listener_play_ratio": 2.44,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kumali\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Equanimous",
+      "Skysia",
+      "Palladian",
+      "Seafei",
+      "Ruby Chase"
+    ],
+    "top_tracks": [
+      {
+        "name": "Run",
+        "listeners": 625,
+        "playcount": 1596
+      },
+      {
+        "name": "Run - Banyan Remix",
+        "listeners": 452,
+        "playcount": 957
+      },
+      {
+        "name": "Run (Banyan Remix)",
+        "listeners": 32,
+        "playcount": 67
+      },
+      {
+        "name": "Temple",
+        "listeners": 9,
+        "playcount": 13
+      },
+      {
+        "name": "Revive",
+        "listeners": 9,
+        "playcount": 11
+      },
+      {
+        "name": "Elements",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "Sunfall",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Kumali",
+        "listeners": 2,
+        "playcount": 15
+      },
+      {
+        "name": "Flamingoland",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Kumali"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

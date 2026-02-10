@@ -1,0 +1,161 @@
+{
+  "artist_name": "Nazomi",
+  "artist_id": "nazomi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:58:31.304741+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Nazomi', got 'Naomi Scott'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11101403,
+    "name": "Fromyourbed",
+    "profile": "Singer / songwriter from New Zealand, now based out of Olympia, Washington.\r\n\r\nRoslyn (they/em) was born in New Zealand but now resides in Washington. Inspired by many artists including the likes of Snow Patrol, Jeff Pianki, Bon Iver & The Paper Kites, Roslyn's music is an introspection on memories and a cathartic process. Typically just solo with vocals and an acoustic guitar, their songs center in the folk-pop realm.\r\n\r\nWhilst 17 and graduating high school, they recorded their first full length LP, 'Falling Up' and released in June, 2020. After some time and rediscovery, sophomore record 'cards' came out in in August, 2021.\r\n\r\n2022 saw the release of four new records & some songs here and there. In April, 'glimpses' & in August with album 'face and' created with Eli Utter.\r\nAnd in November, co-produced with Eli Utter & Talis Auseth titled, 'For Nazomi, On the Windowsill' released. The album featured many talents including 10 vocalists, musician friends Luka Simpson, Daniel Marcotte, ",
+    "realname": "Roslyn Winter Echo",
+    "social_urls": [
+      "https://solo.to/fromyourbed",
+      "https://fromyourbed.bandcamp.com",
+      "https://www.youtube.com/@fromyourbed_tunes"
+    ],
+    "members": [
+      "Jack Jay",
+      "Eli Utter",
+      "Fromyourbed",
+      "Roslyn Winter Echo"
+    ],
+    "groups": [
+      "Jack Jay",
+      "Eli Utter",
+      "Fromyourbed",
+      "Fern Spores",
+      "jonny's boy band"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 43,
+    "total_releases": 44,
+    "formats": [
+      "",
+      "10xFile, WAV, Album",
+      "12xFile, WAV, Album",
+      "14xFile, WAV, Album",
+      "15xFile, WAV, Album",
+      "16xFile, WAV, Album",
+      "2xFile, WAV, EP",
+      "30xFile, WAV, Album",
+      "32xFile, WAV, Album",
+      "3xFile, MP3, EP, 320",
+      "3xFile, WAV, EP",
+      "4xFile, WAV, EP",
+      "5xFile, MP3, EP, 320",
+      "5xFile, WAV, EP",
+      "6xFile, MP3, EP, 320",
+      "6xFile, WAV, MiniAlbum",
+      "8xFile, WAV, MiniAlbum",
+      "CD, Album, gat",
+      "File, MP3, EP",
+      "File, MP3, Single, 320",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "Fromyourbed",
+      "Not On Label",
+      "Not On Label (The Bridge Music Project Self-released)",
+      "The Three Jets Label, Fromyourbed"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nazomi",
+    "mbid": "",
+    "listeners": 8025,
+    "playcount": 21017,
+    "listener_play_ratio": 2.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nazomi\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Christopher Somnus Brooks",
+      "Claude Leon",
+      "Seren Rhys",
+      "Stace Brinorma",
+      "Emilio Abruzzo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sanshi Sumei",
+        "listeners": 4328,
+        "playcount": 8566
+      },
+      {
+        "name": "Sicilia",
+        "listeners": 3866,
+        "playcount": 12374
+      },
+      {
+        "name": "Kachou Fuugetsu",
+        "listeners": 64,
+        "playcount": 73
+      },
+      {
+        "name": "Aurora no Kaze ni notte",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Piriri to Yokou",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Splash Dream",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Birds Fly",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Nazomi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

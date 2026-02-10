@@ -1,0 +1,508 @@
+{
+  "artist_name": "Guitarricadelafuente",
+  "artist_id": "guitarricadelafuente",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:57:19.761198+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "68416724-6cc4-41ee-b81c-1ce169c00f03",
+    "type": "Person",
+    "country": "ES",
+    "area": "Spain",
+    "begin_date": "1997-08-27",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "queer",
+      "spanish"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/7214852",
+      "free streaming": "https://www.deezer.com/artist/52265922",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1438242777",
+      "streaming": "https://tidal.com/artist/10434200",
+      "wikidata": "https://www.wikidata.org/wiki/Q86694039"
+    },
+    "labels": [
+      "Sony Music Entertainment España, S.L.",
+      "Tumbalacasa",
+      "La Oficinica",
+      "Universal Music Spain, S.L.",
+      "[no label]",
+      "Sony Music",
+      "Madame Vodevil",
+      "Sony Music Entertainment (Spain) S.L."
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 52265922,
+    "name": "Guitarricadelafuente",
+    "nb_fan": 10504,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/52265922",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5d929270f32fcc30faf6da067f2def6c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Natalia Lacunza",
+      "Niño de Elche",
+      "Troye Sivan",
+      "pablopablo"
+    ],
+    "contributor_roles": {
+      "pablopablo": [
+        "Main"
+      ],
+      "Natalia Lacunza": [
+        "Main"
+      ],
+      "Troye Sivan": [
+        "Main"
+      ],
+      "Niño de Elche": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Sidekick",
+      "BABIECA!",
+      "nana triste",
+      "Guantanamera",
+      "Pipe dream",
+      "Mataleón",
+      "Mil y una noches",
+      "Full time papi",
+      "Vidalita del mar",
+      "Port Pelegrí",
+      "midsummer pipe dream",
+      "Agua y Mezcal",
+      "Futuros amantes",
+      "Ya mi mama me decía",
+      "Desde las Alturas",
+      "Quien encendió la luz",
+      "Malagueña Salerosa",
+      "Poses",
+      "Puerta del Sol",
+      "Abc",
+      "A Mi Manera",
+      "Los chicos del club",
+      "La Filipina",
+      "Cerrado Por Derribo",
+      "Antes de que quieras olvidar"
+    ],
+    "track_durations": [
+      176,
+      166,
+      183,
+      190,
+      158,
+      167,
+      219,
+      169,
+      221,
+      154,
+      158,
+      212,
+      166,
+      191,
+      223,
+      206,
+      281,
+      154,
+      203,
+      169,
+      240,
+      149,
+      193,
+      222,
+      202
+    ],
+    "track_ranks": [
+      521450,
+      567248,
+      516865,
+      448467,
+      330459,
+      382589,
+      287681,
+      496175,
+      166013,
+      356460,
+      316727,
+      467638,
+      391181,
+      312980,
+      378840,
+      232866,
+      215242,
+      366003,
+      393668,
+      349602,
+      304098,
+      347732,
+      241226,
+      274855,
+      211003
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 1,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Spanish Leather",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "La Cantera",
+        "label": "",
+        "release_date": "2022-05-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Caramullo",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "En la noche más fría",
+        "label": "",
+        "release_date": "2025-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "midsummer pipe dream",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BABIECA!",
+        "label": "",
+        "release_date": "2025-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pipe dream",
+        "label": "",
+        "release_date": "2025-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tramuntana",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Futuros amantes",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Full time papi",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sidekick",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Romancera",
+        "label": "",
+        "release_date": "2023-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Mi Manera",
+        "label": "",
+        "release_date": "2022-04-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quien encendió la luz",
+        "label": "",
+        "release_date": "2022-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vidalita del mar",
+        "label": "",
+        "release_date": "2022-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mil y una noches",
+        "label": "",
+        "release_date": "2021-07-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Límite",
+        "label": "",
+        "release_date": "2020-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Conticinio",
+        "label": "",
+        "release_date": "2020-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ya mi mama me decía",
+        "label": "",
+        "release_date": "2020-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desde las Alturas",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nacido Pa Ganar",
+        "label": "",
+        "release_date": "2019-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Abc",
+        "label": "",
+        "release_date": "2019-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Agua y Mezcal",
+        "label": "",
+        "release_date": "2019-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "nana triste",
+        "label": "",
+        "release_date": "2019-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sixtinain",
+        "label": "",
+        "release_date": "2018-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Catalina",
+        "label": "",
+        "release_date": "2018-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Guantanamera",
+        "label": "",
+        "release_date": "2018-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Amaia",
+      "Pol Granch",
+      "Rigoberta Bandini",
+      "Dani Martin",
+      "Natalia Lacunza",
+      "Amaral",
+      "Leiva",
+      "Dani Fernández",
+      "Taburete",
+      "Pole."
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7214852,
+    "name": "Guitarricadelafuente",
+    "profile": "Álvaro Lafuente Calvo aka Guitarricadelafuente is a Spanish artist born in Benicassim but living in Zaragoza (Aragón). Nowadays based in Valencia.",
+    "realname": "Álvaro Lafuente Calvo",
+    "social_urls": [
+      "https://www.instagram.com/guitarricadelafuente/",
+      "https://open.spotify.com/artist/0oBiYchunKTMDesVICwrvL",
+      "https://www.youtube.com/channel/UC2twHSJB8iEtjM0DG9HNCUw"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 22,
+    "total_releases": 23,
+    "formats": [
+      "",
+      "2xFile, AAC, Single, 256",
+      "3xCD, Comp",
+      "9xFile, AAC, Album, 256",
+      "File, MP3, Single",
+      "File, MP3, Single, 320",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "Jeanne d'Arc",
+      "La Oficinica Records",
+      "Not On Label (Guitarricadelafuente Self-released)",
+      "Sony Music",
+      "Sony Music Spain",
+      "Sony Music, Warner Music Spain",
+      "Universal Music Spain"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Guitarricadelafuente",
+    "mbid": "68416724-6cc4-41ee-b81c-1ce169c00f03",
+    "listeners": 123984,
+    "playcount": 4784070,
+    "listener_play_ratio": 38.59,
+    "bio_exists": true,
+    "bio_summary": "Álvaro Lafuente Calvo, better known by his stage name Guitarricadelafuente, is a Spanish singer-songwriter, guitarist and musician based in Barcelona. \nLafuente started posting covers on different social media platforms like Instagram in 2017 while being unsigned. Those covers attracted a modest number of people at first thanks to their mix of folk, rumba, and flamenco music. <a href=\"https://www.last.fm/music/Guitarricadelafuente\">Read more on Last.fm</a>",
+    "tags": [
+      "indie",
+      "folk",
+      "spanish",
+      "spain",
+      "guitar"
+    ],
+    "similar_artists": [
+      "pablopablo",
+      "Amaia",
+      "Belén Aguilera",
+      "Rigoberta Bandini",
+      "Natalia Lacunza"
+    ],
+    "top_tracks": [
+      {
+        "name": "midsummer pipe dream",
+        "listeners": 40112,
+        "playcount": 175329
+      },
+      {
+        "name": "Guantanamera",
+        "listeners": 36599,
+        "playcount": 379609
+      },
+      {
+        "name": "BABIECA!",
+        "listeners": 26902,
+        "playcount": 321355
+      },
+      {
+        "name": "Full time papi",
+        "listeners": 26489,
+        "playcount": 354724
+      },
+      {
+        "name": "Agua y Mezcal",
+        "listeners": 23901,
+        "playcount": 196386
+      },
+      {
+        "name": "Conticinio",
+        "listeners": 21938,
+        "playcount": 163813
+      },
+      {
+        "name": "ABC",
+        "listeners": 19913,
+        "playcount": 169678
+      },
+      {
+        "name": "Ya mi mama me decía",
+        "listeners": 18214,
+        "playcount": 158318
+      },
+      {
+        "name": "Futuros amantes",
+        "listeners": 17224,
+        "playcount": 208051
+      },
+      {
+        "name": "Pipe dream",
+        "listeners": 17071,
+        "playcount": 207055
+      }
+    ],
+    "url": "https://www.last.fm/music/Guitarricadelafuente"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

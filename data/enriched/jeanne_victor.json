@@ -1,0 +1,98 @@
+{
+  "artist_name": "Jeanne Victor",
+  "artist_id": "jeanne_victor",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:26:11.639823+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Jeanne Victor', got 'Jeune Victor'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4469171,
+    "name": "Victoria Jeanne Hogan",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label (The Fitted Shirt Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jeanne Victor",
+    "mbid": "",
+    "listeners": 1462,
+    "playcount": 17470,
+    "listener_play_ratio": 11.95,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jeanne+Victor\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rob Cradles",
+      "Francis Star",
+      "Milo Grímur",
+      "Rodi Mini",
+      "Snuggle Land"
+    ],
+    "top_tracks": [
+      {
+        "name": "Whisper Time",
+        "listeners": 1184,
+        "playcount": 11426
+      },
+      {
+        "name": "Star Trip",
+        "listeners": 747,
+        "playcount": 6044
+      }
+    ],
+    "url": "https://www.last.fm/music/Jeanne+Victor"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

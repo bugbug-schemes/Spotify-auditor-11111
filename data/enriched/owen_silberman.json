@@ -1,0 +1,146 @@
+{
+  "artist_name": "Owen Silberman",
+  "artist_id": "owen_silberman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:18:40.114511+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183390547,
+    "name": "Owen Silberman",
+    "nb_fan": 2,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/183390547",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5a14eb44bfdf4f7f524225fbcfe82ce9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Nothing To Lose (from The Party)",
+      "Theme From Midnight Cowboy"
+    ],
+    "track_durations": [
+      202,
+      254
+    ],
+    "track_ranks": [
+      164060,
+      26245
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Tenderloins",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hurry Up And Wait",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out of Tinseltown",
+        "label": "",
+        "release_date": "2020-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Owen Silberman",
+    "mbid": "",
+    "listeners": 21282,
+    "playcount": 49934,
+    "listener_play_ratio": 2.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Owen+Silberman\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Half Past Blue",
+      "The Indigo Trio",
+      "Trio In Transit",
+      "the velvet chords",
+      "Mill Basin"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tenderloins",
+        "listeners": 8324,
+        "playcount": 15397
+      },
+      {
+        "name": "Theme From Midnight Cowboy",
+        "listeners": 7188,
+        "playcount": 16684
+      },
+      {
+        "name": "Nothing To Lose (from The Party)",
+        "listeners": 5883,
+        "playcount": 13624
+      },
+      {
+        "name": "Theme From Rosemarys Baby",
+        "listeners": 2020,
+        "playcount": 4227
+      },
+      {
+        "name": "Hurry Up And Wait",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Owen+Silberman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

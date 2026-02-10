@@ -1,0 +1,373 @@
+{
+  "artist_name": "Carlos Neda",
+  "artist_id": "carlos_neda",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:59:17.247647+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6358412,
+    "name": "Carlos Neda",
+    "nb_fan": 139,
+    "nb_album": 28,
+    "link": "https://www.deezer.com/artist/6358412",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4aaf36f860a9705b10d50f5319424a13/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Carlitosss",
+      "GONZA SILVA"
+    ],
+    "contributor_roles": {
+      "GONZA SILVA": [
+        "Main"
+      ],
+      "Carlitosss": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Un Chingo",
+      "Mezcal",
+      "I-95",
+      "Arrecife (Para Lya, 1931-2024)"
+    ],
+    "track_durations": [
+      178,
+      173,
+      196,
+      204
+    ],
+    "track_ranks": [
+      156175,
+      280348,
+      21836,
+      34168
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 26
+    },
+    "albums": [
+      {
+        "title": "EVOLUCION",
+        "label": "",
+        "release_date": "2020-07-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Para Caídas",
+        "label": "",
+        "release_date": "2026-01-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Paraíso",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oveja Negra",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fuego",
+        "label": "",
+        "release_date": "2025-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "¿Qué Pasa?",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Indemnización",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volver a El Salvador",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gol De Messi",
+        "label": "",
+        "release_date": "2024-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I-95",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perlas con Diamantes",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Migajas",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Hay Vuelta Atrás (Improv)",
+        "label": "",
+        "release_date": "2022-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vientos De Octubre",
+        "label": "",
+        "release_date": "2022-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Chingo",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Último Café",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te Espero",
+        "label": "",
+        "release_date": "2021-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Legos",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mezcal",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Todos Los Hombres Somos Iguales",
+        "label": "",
+        "release_date": "2020-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Insostenible",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Influencer",
+        "label": "",
+        "release_date": "2020-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiero",
+        "label": "",
+        "release_date": "2019-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jodido Pero en Miami",
+        "label": "",
+        "release_date": "2019-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Hombre Que Te Ama",
+        "label": "",
+        "release_date": "2018-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sin Complejos De Disney",
+        "label": "",
+        "release_date": "2017-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Millennial Romantico",
+        "label": "",
+        "release_date": "2017-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jodido Pero En Miami",
+        "label": "",
+        "release_date": "2014-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Leo Rizzi",
+      "Kendall Peña",
+      "Paul Alone",
+      "Manuel Medrano",
+      "Marissa Mur",
+      "Dstance",
+      "TIMØ",
+      "Kurt",
+      "Pitizion",
+      "Lola Vila"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Carlos Neda",
+    "mbid": "",
+    "listeners": 7217,
+    "playcount": 32081,
+    "listener_play_ratio": 4.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Carlos+Neda\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "GONZA SILVA",
+      "Esteban Said",
+      "Mario Puglia",
+      "Yorghaki",
+      "SHEISA"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mezcal",
+        "listeners": 4432,
+        "playcount": 18405
+      },
+      {
+        "name": "Un Chingo",
+        "listeners": 1777,
+        "playcount": 4464
+      },
+      {
+        "name": "Legos",
+        "listeners": 492,
+        "playcount": 1500
+      },
+      {
+        "name": "Vientos De Octubre",
+        "listeners": 381,
+        "playcount": 688
+      },
+      {
+        "name": "Otro Reggaeton",
+        "listeners": 342,
+        "playcount": 944
+      },
+      {
+        "name": "I-95",
+        "listeners": 341,
+        "playcount": 1083
+      },
+      {
+        "name": "Sin Complejos De Disney",
+        "listeners": 242,
+        "playcount": 916
+      },
+      {
+        "name": "Perlas con Diamantes",
+        "listeners": 177,
+        "playcount": 317
+      },
+      {
+        "name": "Que Bonito",
+        "listeners": 162,
+        "playcount": 336
+      },
+      {
+        "name": "El Hombre Que Te Ama",
+        "listeners": 157,
+        "playcount": 835
+      }
+    ],
+    "url": "https://www.last.fm/music/Carlos+Neda"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

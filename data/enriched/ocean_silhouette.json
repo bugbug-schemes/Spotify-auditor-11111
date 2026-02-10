@@ -1,0 +1,139 @@
+{
+  "artist_name": "Ocean Silhouette",
+  "artist_id": "ocean_silhouette",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:10:19.063529+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 347166881,
+    "name": "Ocean Silhouette",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/347166881",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1e74005512314fe297065136afa395d9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Smooth Desire",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "traveling",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow Down",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Riding the Sky",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Hour Glow",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ocean Silhouette",
+    "mbid": "",
+    "listeners": 1615,
+    "playcount": 3396,
+    "listener_play_ratio": 2.1,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ocean+Silhouette\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Carlton Ranks",
+      "tow kee o",
+      "The Swaying Journey",
+      "Julian Ross",
+      "Noir Vista"
+    ],
+    "top_tracks": [
+      {
+        "name": "traveling",
+        "listeners": 1385,
+        "playcount": 2552
+      },
+      {
+        "name": "Late Hour Glow",
+        "listeners": 229,
+        "playcount": 512
+      },
+      {
+        "name": "Riding the Sky",
+        "listeners": 161,
+        "playcount": 332
+      }
+    ],
+    "url": "https://www.last.fm/music/Ocean+Silhouette"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

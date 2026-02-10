@@ -1,0 +1,224 @@
+{
+  "artist_name": "Tommies Trio",
+  "artist_id": "tommies_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:45:17.768827+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "40fe8a7c-0f5d-4d6b-b57d-fb31c13da551",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/137514262",
+      "purchase for download": "https://music.apple.com/us/artist/1575045640",
+      "streaming": "https://tidal.com/artist/26452468",
+      "youtube music": "https://music.youtube.com/channel/UC8eIO4NQmtYUA-k-pM45k-g"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 137514262,
+    "name": "Tommies Trio",
+    "nb_fan": 3,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/137514262",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/567fb0e3282df8dadf0f9549332b8a41/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Yesterday",
+      "Stella by Starlight"
+    ],
+    "track_durations": [
+      227,
+      237
+    ],
+    "track_ranks": [
+      58106,
+      43898
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Shining Flashlights",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Can’t Have This",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You are the sunshine of my life",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yesterday",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sarah Say No More",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "God Bless the Child",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someone to Watch Over Me",
+        "label": "",
+        "release_date": "2021-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take the 'A' Train",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stella by Starlight",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tommies Trio",
+    "mbid": "40fe8a7c-0f5d-4d6b-b57d-fb31c13da551",
+    "listeners": 21156,
+    "playcount": 49297,
+    "listener_play_ratio": 2.33,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tommies+Trio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Billy Charlotte",
+      "Theo Rollins",
+      "Astor Shelby",
+      "Jazz Tonality",
+      "Ted Jonson Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stella by Starlight",
+        "listeners": 18593,
+        "playcount": 41473
+      },
+      {
+        "name": "Yesterday",
+        "listeners": 3251,
+        "playcount": 7770
+      },
+      {
+        "name": "Someone to Watch Over Me",
+        "listeners": 20,
+        "playcount": 29
+      },
+      {
+        "name": "God Bless the Child",
+        "listeners": 6,
+        "playcount": 16
+      },
+      {
+        "name": "You Are the Sunshine of My Life",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Take the 'A' Train",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Shining Flashlights",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "You Can’t Have This",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Tommies+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,184 @@
+{
+  "artist_name": "Mark Lieder",
+  "artist_id": "mark_lieder",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:30:12.350651+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mark Lieder', got 'Mark Reeder'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2006010,
+    "name": "Mark Tucker (5)",
+    "profile": "Born: August 10, 1958 - England\r\n\r\nThe English tenor, Mark Tucker, studied at Cambridge and the Guildhall School of Music and Drama.\r\n\r\nMark Tucker's appearances in opera, concert and Lieder have been widely acclaimed, and he is now established as one of the foremost tenors of his generation. An outstanding interpreter in the baroque and classical repertoire, he has performed throughout Europe and recorded under leading conductors, such as Michel Corboz, John Eliot Gardiner, Nikolaus Harnoncourt, René Jacobs, Ton Koopman, Roger Norrington and Sigiswald Kuijken. He has appeared at the festivals of Aix-en-Provence, Beaune, Florence, Flanders and Utrecht. He sang the Evangelist in J.S. Bach's St Matthew Passion (BWV 244) at the Maltings, Snape, and in St John Passion (BWV 245) with the King's College Choir Cambridge under Stephen Cleobury, Monteverdi's Vespers at St Mark's Venice conducted by John Eliot Gardiner with the Monteverdi Choir. Other ensembles with which he has worked include t",
+    "realname": "Mark Tucker",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "La Sfera Armoniosa"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 30,
+    "digital_only_releases": 21,
+    "total_releases": 51,
+    "formats": [
+      "",
+      "105xCD, Comp + Box, Ltd",
+      "2xBlu-ray, Multichannel",
+      "2xCD",
+      "2xCD, Album",
+      "2xCD, Album, Comp",
+      "2xDVD-V, NTSC",
+      "2xDVD-V, PAL",
+      "3xCD, Album",
+      "4xCD, Comp + Box, + B",
+      "55xCD, Comp, Mono, RM + Box, Ltd",
+      "55xCD, Mono, RM + Box, Comp, Ltd",
+      "5xCD, Comp",
+      "64xCD, Album, RE + Box, Comp",
+      "6xCD + Box, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Album + Box, Sli",
+      "CD, Album, RE, RP",
+      "CD, Comp, Cla",
+      "CD, Comp, Promo",
+      "DVD-V, NTSC",
+      "DVD-V, Reg",
+      "LP, Album",
+      "Laserdisc, 12\", NTSC"
+    ],
+    "labels": [
+      "ABC Classics",
+      "Almaviva",
+      "Archiv Produktion",
+      "Archiv Produktion, Deutsche Grammophon",
+      "Cascavelle",
+      "Chaconne, Chandos",
+      "Challenge Classics",
+      "Chandos",
+      "Classic CD",
+      "Claves",
+      "Deutsche Grammophon",
+      "Deutsche Grammophon, Büchergilde Gutenberg",
+      "Deutsche Grammophon, Deutsche Grammophon",
+      "Dynamic (4)",
+      "Erato, Warner Classics",
+      "Le Monde",
+      "Long Arms Records",
+      "Onyx International Records",
+      "Opus Arte",
+      "Riverrun Records",
+      "Telarc"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mark Lieder",
+    "mbid": "",
+    "listeners": 14646,
+    "playcount": 58459,
+    "listener_play_ratio": 3.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mark+Lieder\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aldo Talete",
+      "Sorellien",
+      "Waylen Orson",
+      "Adrien Anviér",
+      "Aurelio Li"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fall a hundred times",
+        "listeners": 11159,
+        "playcount": 46436
+      },
+      {
+        "name": "No More Love to Give",
+        "listeners": 1427,
+        "playcount": 4392
+      },
+      {
+        "name": "Edgar's Garden",
+        "listeners": 1363,
+        "playcount": 3703
+      },
+      {
+        "name": "The Lantern Lighter",
+        "listeners": 783,
+        "playcount": 2374
+      },
+      {
+        "name": "Unquiet Tears",
+        "listeners": 509,
+        "playcount": 1089
+      },
+      {
+        "name": "No One Needs Rain",
+        "listeners": 218,
+        "playcount": 433
+      },
+      {
+        "name": "O Holy Night",
+        "listeners": 3,
+        "playcount": 8
+      },
+      {
+        "name": "Sunbeam Through Leaves",
+        "listeners": 2,
+        "playcount": 10
+      },
+      {
+        "name": "Fragments",
+        "listeners": 2,
+        "playcount": 5
+      },
+      {
+        "name": "Descent",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Mark+Lieder"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

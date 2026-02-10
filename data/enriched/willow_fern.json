@@ -1,0 +1,86 @@
+{
+  "artist_name": "Willow Fern",
+  "artist_id": "willow_fern",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:00:52.146266+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Willow Fern', got 'Wilson Fernández'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Willow Fern",
+    "mbid": "",
+    "listeners": 753,
+    "playcount": 4420,
+    "listener_play_ratio": 5.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Willow+Fern\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Theo Branch",
+      "Casper Wynn",
+      "Braiden Morrish",
+      "Limanda",
+      "Helge Ro"
+    ],
+    "top_tracks": [
+      {
+        "name": "Whispering Pines",
+        "listeners": 611,
+        "playcount": 2197
+      },
+      {
+        "name": "Song of the Clouds",
+        "listeners": 397,
+        "playcount": 2222
+      },
+      {
+        "name": "A Tiny Dream for You",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Willow+Fern"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

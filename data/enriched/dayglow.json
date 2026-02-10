@@ -1,0 +1,391 @@
+{
+  "artist_name": "Dayglow",
+  "artist_id": "dayglow",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:24:57.972727+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2bee95a7-1c0e-4b3c-99a5-4857d9d776dd",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1999-08-10",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie pop",
+      "bedroom pop"
+    ],
+    "aliases": [
+      "Sloan Struble"
+    ],
+    "isnis": [
+      "0000000492777940"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003894175",
+      "bandsintown": "https://www.bandsintown.com/a/9754075",
+      "free streaming": "https://www.deezer.com/artist/666476",
+      "last.fm": "https://www.last.fm/music/Dayglow",
+      "lyrics": "https://www.musixmatch.com/artist/Dayglow-2",
+      "official homepage": "https://dayglowband.com/",
+      "other databases": "https://rateyourmusic.com/artist/dayglow",
+      "social network": "https://www.instagram.com/dayglowband/",
+      "songkick": "https://www.songkick.com/artists/673657",
+      "soundcloud": "https://soundcloud.com/dayglowmusic",
+      "streaming": "https://us.napster.com/artist/dayglow",
+      "wikidata": "https://www.wikidata.org/wiki/Q105277210",
+      "wikipedia": "https://en.wikipedia.org/wiki/Sloan_Struble",
+      "youtube": "https://www.youtube.com/channel/UCvNaoBfCbOJ0QaiqHRhn0NQ"
+    },
+    "labels": [
+      "Very Nice Records",
+      "[no label]",
+      "Mercury Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 666476,
+    "name": "Dayglow",
+    "nb_fan": 76408,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/666476",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c55e5c15dca4247a037d9cbc65436d8b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Can I Call You Tonight?",
+      "Hot Rod",
+      "Close To You",
+      "Medicine",
+      "Run the World!!!",
+      "Listerine",
+      "Fuzzybrain",
+      "Then It All Goes Away",
+      "False Direction",
+      "Fair Game",
+      "Nicknames",
+      "Little Alien Spaceman",
+      "Mindless Creatures",
+      "Junior Varsity",
+      "Something",
+      "Every Little Thing I Say I Do",
+      "Balcony",
+      "Woah Man",
+      "Change Song",
+      "Dear Friend,",
+      "Nothing Ever Does!!!",
+      "Radio",
+      "Self-Esteem",
+      "Cocoon",
+      "Deep End"
+    ],
+    "track_durations": [
+      278,
+      204,
+      194,
+      229,
+      176,
+      215,
+      219,
+      183,
+      277,
+      262,
+      203,
+      228,
+      278,
+      252,
+      114,
+      180,
+      151,
+      208,
+      207,
+      142,
+      179,
+      194,
+      216,
+      217,
+      218
+    ],
+    "track_ranks": [
+      636679,
+      568012,
+      533552,
+      294842,
+      410001,
+      347233,
+      354645,
+      444929,
+      312927,
+      302654,
+      293097,
+      184991,
+      230477,
+      304756,
+      216312,
+      242568,
+      307398,
+      187725,
+      261622,
+      313866,
+      123059,
+      193674,
+      181527,
+      192106,
+      183130
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 5,
+      "ep": 1,
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Dayglow",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dayglow (Superbloom)",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "People In Motion",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Harmony House",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fuzzybrain",
+        "label": "",
+        "release_date": "2019-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Life In Motion",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Then It All Goes Away (Dancing)",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Second Nature",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep End",
+        "label": "",
+        "release_date": "2022-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Then It All Goes Away",
+        "label": "",
+        "release_date": "2022-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Balcony",
+        "label": "",
+        "release_date": "2021-05-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Woah Man",
+        "label": "",
+        "release_date": "2021-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Something",
+        "label": "",
+        "release_date": "2021-02-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Close To You",
+        "label": "",
+        "release_date": "2021-01-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Wallows",
+      "boy pablo",
+      "The Polar Boys",
+      "Absofacto",
+      "The Hails",
+      "Hunny",
+      "Goth Babe",
+      "Peach Pit",
+      "Gus Dapperton",
+      "Arlie"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2109953,
+    "name": "Dayglow",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp, Promo"
+    ],
+    "labels": [
+      "Daily Express"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dayglow",
+    "mbid": "2bee95a7-1c0e-4b3c-99a5-4857d9d776dd",
+    "listeners": 1377051,
+    "playcount": 36801600,
+    "listener_play_ratio": 26.72,
+    "bio_exists": true,
+    "bio_summary": "Sloan Struble, known professionally as Dayglow, is an American singer, songwriter, and producer from Aledo, Texas. He began his career by releasing songs on Soundcloud under the name 'Kindred', though he would adopt the name Dayglow soon after.\n\nIn 2018, Struble released his debut album 'Fuzzybrain' as he began attending the University of Texas. Fuzzybrain, propelled by social-media virality, was a quick success. This attention prompted Struble's exit from university in favor of focusing on his ",
+    "tags": [
+      "indie",
+      "indie pop",
+      "indie rock",
+      "alternative",
+      "american"
+    ],
+    "similar_artists": [
+      "Coin",
+      "Wallows",
+      "Hippo Campus",
+      "Last Dinosaurs",
+      "HUNNY"
+    ],
+    "top_tracks": [
+      {
+        "name": "Can I Call You Tonight?",
+        "listeners": 1055706,
+        "playcount": 12658025
+      },
+      {
+        "name": "Hot Rod",
+        "listeners": 645241,
+        "playcount": 6610905
+      },
+      {
+        "name": "Close to You",
+        "listeners": 371100,
+        "playcount": 3551636
+      },
+      {
+        "name": "Listerine",
+        "listeners": 263653,
+        "playcount": 1999236
+      },
+      {
+        "name": "Run the World!!!",
+        "listeners": 241635,
+        "playcount": 1725871
+      },
+      {
+        "name": "Fuzzybrain",
+        "listeners": 174254,
+        "playcount": 1214157
+      },
+      {
+        "name": "False Direction",
+        "listeners": 121947,
+        "playcount": 914934
+      },
+      {
+        "name": "Medicine",
+        "listeners": 119696,
+        "playcount": 851227
+      },
+      {
+        "name": "Then It All Goes Away",
+        "listeners": 113794,
+        "playcount": 785827
+      },
+      {
+        "name": "Something",
+        "listeners": 104146,
+        "playcount": 588084
+      }
+    ],
+    "url": "https://www.last.fm/music/Dayglow"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

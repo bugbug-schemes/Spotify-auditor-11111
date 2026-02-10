@@ -1,0 +1,90 @@
+{
+  "artist_name": "Harper Toews",
+  "artist_id": "harper_toews",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:02:37.258715+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Harper Toews",
+    "mbid": "",
+    "listeners": 2531,
+    "playcount": 28365,
+    "listener_play_ratio": 11.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Harper+Toews\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sienna Moon",
+      "Teddy Bloom",
+      "Bingos Bongos",
+      "Alder Bloom",
+      "Elio Rowan"
+    ],
+    "top_tracks": [
+      {
+        "name": "Close Your Eyes",
+        "listeners": 1919,
+        "playcount": 16714
+      },
+      {
+        "name": "Our Puppy",
+        "listeners": 718,
+        "playcount": 6009
+      },
+      {
+        "name": "Tired Eyes",
+        "listeners": 665,
+        "playcount": 5640
+      },
+      {
+        "name": "The Moon is Out",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Harper+Toews"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

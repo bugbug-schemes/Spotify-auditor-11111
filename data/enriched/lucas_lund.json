@@ -1,0 +1,165 @@
+{
+  "artist_name": "Lucas Lund",
+  "artist_id": "lucas_lund",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:15:29.606066+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lucas Lund', got 'Lucas Lucco'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 765118,
+    "name": "Lucas Lindholm",
+    "profile": "Swedish bassist, born on March 2, 1943 in Lund, Skåne; died May 4, 2025.\r\n\r\nLindholm grew up in a musical family and began playing cello and piano at the age of nine. At the age of 13 he switched to double bass; just one year later he played with dance and jazz bands. At the local music school, Lindholm received classical double bass lessons from the age of 15; soon he also played in the local youth orchestra.\r\n\r\nAfter completing his military service, he moved to Malmö, where he accompanied American jazz musicians such as [a251333] and [a145263]. With Gordon he played together for many years in different line-ups. In addition, he completed classical double bass studies at the conservatory; especially on the electric bass he was active at this time as a studio musician. He then moved to Stockholm, where he also worked with [a254945], [a120623], [a277537] and [a675601].\r\n\r\nIn 1970 Lindholm worked for the first time at [l96971]; the following year, [a328253] brought him into [url=https://",
+    "realname": "Lucas-Hans Lindholm-Eschen (Born as Hans Inge Lindholm)",
+    "social_urls": [
+      "https://www.hfmt-hamburg.de/die-hfmt/personen/?tx_hfmtdb_user%5Buser%5D=1829989611&tx_hfmtdb_user%5Baction%5D=detail&tx_hfmtdb_user%5Bcontroller%5D=User&cHash=6220ab8fee8b020ea0b369e156a3790e",
+      "https://de.wikipedia.org/wiki/Lucas_Lindholm"
+    ],
+    "members": [],
+    "groups": [
+      "Peter Herbolzheimer Rhythm Combination & Brass",
+      "Michael Naura Quintett",
+      "Brave New World (4)",
+      "The NDR Big Band",
+      "Klaus Weiss Orchestra",
+      "Orchestra Chris Reynolds",
+      "The Wolfgang Schlüter Combo",
+      "Heta Linjen",
+      "Wolfgang Schlüter's Swing Revival",
+      "Kai Bussenius Trio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 48,
+    "digital_only_releases": 44,
+    "total_releases": 92,
+    "formats": [
+      "",
+      "10xCD + Box",
+      "2xCD",
+      "2xCD, Album",
+      "2xCD, Comp, RM",
+      "2xCD, Ltd, Boo",
+      "3xCD, Album + Box, Comp",
+      "4xCD, Comp, RM",
+      "6xCD, Comp + Box, Ltd",
+      "7\"",
+      "CD",
+      "CD, Album",
+      "CD, Album, Club",
+      "CD, Comp",
+      "HDCD, Album",
+      "LP",
+      "LP, Album",
+      "LP, Album, Promo",
+      "LP, Comp"
+    ],
+    "labels": [
+      "105 Music",
+      "ACT (4)",
+      "Ahorn, Ahorn, Ahorn",
+      "Amigo",
+      "BBC Radioplay Music",
+      "CMO Jazz",
+      "Capri Records (6)",
+      "Columbia",
+      "Cuneiform Records",
+      "Delfina",
+      "Enja Records",
+      "Extra Records & Tapes",
+      "FuchsRecords",
+      "Fuzzy Moon Records",
+      "Hat Hut Records, du",
+      "Höfs Records",
+      "In+Out Records",
+      "Intersong",
+      "Intersound (2)",
+      "Labor",
+      "MPS Records",
+      "Mercury",
+      "Minor Music",
+      "Mons Records",
+      "Musica Jazz",
+      "Musiques Suisses, Migros-Genossenschafts-Bund",
+      "Odeon",
+      "Odin",
+      "Pata Music",
+      "Philips",
+      "Premium Publishing",
+      "Provocateur Records",
+      "RCA Victor, BMG Classics, Reverso",
+      "Rent A Dog",
+      "Round Up",
+      "SOJazz Records",
+      "SR Records, SR Records",
+      "Skip Records (2)",
+      "Soul Note",
+      "TCB Records (2)",
+      "Yellowbird"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lucas Lund",
+    "mbid": "",
+    "listeners": 268,
+    "playcount": 901,
+    "listener_play_ratio": 3.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lucas+Lund\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "My Lullaby Stories",
+      "Luna Floris",
+      "Levi Wilkens",
+      "Luma Tide",
+      "Fluffe Timber"
+    ],
+    "top_tracks": [
+      {
+        "name": "Garden of Dreams",
+        "listeners": 268,
+        "playcount": 901
+      }
+    ],
+    "url": "https://www.last.fm/music/Lucas+Lund"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,91 @@
+{
+  "artist_name": "Faux Moon",
+  "artist_id": "faux_moon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:35:41.648197+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Faux Moon', got 'Raymoon'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Faux Moon",
+    "mbid": "",
+    "listeners": 5486,
+    "playcount": 14104,
+    "listener_play_ratio": 2.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Faux+Moon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aemilune",
+      "Soulström",
+      "Eves Haven",
+      "Elysian Woods",
+      "Wanyes"
+    ],
+    "top_tracks": [
+      {
+        "name": "Allevating",
+        "listeners": 3259,
+        "playcount": 6787
+      },
+      {
+        "name": "Tall Signs",
+        "listeners": 1828,
+        "playcount": 6267
+      },
+      {
+        "name": "Foretold",
+        "listeners": 488,
+        "playcount": 1043
+      },
+      {
+        "name": "Grace",
+        "listeners": 1,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Faux+Moon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

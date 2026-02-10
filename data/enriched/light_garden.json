@@ -1,0 +1,146 @@
+{
+  "artist_name": "Light Garden",
+  "artist_id": "light_garden",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:08:20.773206+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Light Garden', got 'Back Garden Light'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 983058,
+    "name": "Gardens From Light",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Ian Sparke",
+      "Steven Illidge"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 5,
+    "total_releases": 5,
+    "formats": [
+      "5xFile, MP3, 320",
+      "6xFile, MP3, 128",
+      "6xFile, MP3, 160",
+      "File, FLAC, MP3, Comp",
+      "File, MP3, 192"
+    ],
+    "labels": [
+      "Resting Bell",
+      "Volume Voice"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Light Garden",
+    "mbid": "",
+    "listeners": 33690,
+    "playcount": 164295,
+    "listener_play_ratio": 4.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Light+Garden\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Letter one",
+      "Jovian Tides",
+      "Flying Rivers",
+      "The Binaural Mind",
+      "Light Vibrations"
+    ],
+    "top_tracks": [
+      {
+        "name": "Your Soul Knows (Theta Waves)",
+        "listeners": 17842,
+        "playcount": 105068
+      },
+      {
+        "name": "Intuition (Alpha Waves)",
+        "listeners": 11126,
+        "playcount": 38487
+      },
+      {
+        "name": "Gamma Pads",
+        "listeners": 2540,
+        "playcount": 6965
+      },
+      {
+        "name": "Ananda",
+        "listeners": 2329,
+        "playcount": 5553
+      },
+      {
+        "name": "Cave of Secrets",
+        "listeners": 1948,
+        "playcount": 5801
+      },
+      {
+        "name": "Infinite",
+        "listeners": 838,
+        "playcount": 2325
+      },
+      {
+        "name": "Astral Being",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "Lucid Shores",
+        "listeners": 4,
+        "playcount": 6
+      },
+      {
+        "name": "Contemplation",
+        "listeners": 3,
+        "playcount": 6
+      },
+      {
+        "name": "Dramatic Thunderstorm",
+        "listeners": 3,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Light+Garden"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

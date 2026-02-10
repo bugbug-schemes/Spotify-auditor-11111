@@ -1,0 +1,170 @@
+{
+  "artist_name": "Noise and Nature",
+  "artist_id": "noise_and_nature",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:05:03.219270+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Noise and Nature', got 'Best Café Chillout Mix, Lullaby Land, Sounds of Nature White Noise for Mindfulness Meditation and Relaxation'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 84008,
+    "name": "Debt Of Nature",
+    "profile": "Starting out back in August 1981 as Brad Laner's solo project, it wasnt long before he started bringing friends, Jim Goodall and Spencer Savage, and other players in and over the following years DEBT OF NATURE would expand into a much larger ensemble (featuring many other LAFMS members such as Rick Potts and Joseph Hammer, along with several unknown secret San Fernando Valley noise artists).\r\n\r\nThey appeared on numerous seminal Noise and Punk crossover compilations that emitted from California's West Coast on labels such as the Minutemen’s New Alliance imprint, New Underground, and Trance Port. Later other work appeared on Anomalous Records. Over the five to six years they existed the band played many shows throughout Los Angeles and up into the Bay Area.",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Brad Laner",
+      "Jim Goodall",
+      "Spencer Savage",
+      "Josh Laner",
+      "Harlow MacFarlane",
+      "Robert Martin (8)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 26,
+    "total_releases": 28,
+    "formats": [
+      "",
+      "4xCass, C90 + Comp, Ltd, Num",
+      "7\", EP",
+      "Cass",
+      "Cass, Album",
+      "Cass, Album, Ltd",
+      "Cass, Album, Ltd, C30",
+      "Cass, Album, Ltd, Num",
+      "Cass, C60",
+      "Cass, Comp",
+      "Cass, Comp, C90",
+      "Cass, Ltd, Unofficial",
+      "Cass, Promo",
+      "Cass, RE, Blu",
+      "LP",
+      "VHS, NTSC"
+    ],
+    "labels": [
+      "Bain Total",
+      "Goodall Tapes",
+      "Harbinger Sound",
+      "Hyster Tapes",
+      "Lal Lal Lal",
+      "Nazlo Records",
+      "New Alliance Records",
+      "Not On Label",
+      "Party Sound Tapes",
+      "Real Big Dog Tapes",
+      "Throne video, Throne Video"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Noise and Nature",
+    "mbid": "",
+    "listeners": 177837,
+    "playcount": 1974549,
+    "listener_play_ratio": 11.1,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. This could be because of a deal within a streaming service, where the musician is anonymous, or the name is just one of several psuedonyms used by a music producer. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"https://www.la",
+    "tags": [],
+    "similar_artists": [
+      "RAIN HARD",
+      "Splash n' Dash",
+      "Liquid Planet Recordings",
+      "The Earth Song",
+      "Northerly Nature"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rain Puddles",
+        "listeners": 94285,
+        "playcount": 748076
+      },
+      {
+        "name": "Reduced Energy Brown Noise",
+        "listeners": 46195,
+        "playcount": 288232
+      },
+      {
+        "name": "Consistent Rain",
+        "listeners": 43531,
+        "playcount": 284029
+      },
+      {
+        "name": "Coastal Thunderstorm",
+        "listeners": 34218,
+        "playcount": 225612
+      },
+      {
+        "name": "Trees in Rain",
+        "listeners": 14234,
+        "playcount": 59853
+      },
+      {
+        "name": "Verdigris (Green Noise)",
+        "listeners": 10843,
+        "playcount": 61871
+      },
+      {
+        "name": "Viridity (Green Noise)",
+        "listeners": 10672,
+        "playcount": 54260
+      },
+      {
+        "name": "Peaceful Rain Ambience",
+        "listeners": 10457,
+        "playcount": 32769
+      },
+      {
+        "name": "Smaragdine (Green Noise)",
+        "listeners": 7428,
+        "playcount": 21508
+      },
+      {
+        "name": "Pink Noise Dream Getaway",
+        "listeners": 7118,
+        "playcount": 29410
+      }
+    ],
+    "url": "https://www.last.fm/music/Noise+and+Nature"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

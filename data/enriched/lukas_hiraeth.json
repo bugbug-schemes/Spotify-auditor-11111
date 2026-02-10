@@ -1,0 +1,140 @@
+{
+  "artist_name": "Lukas Hiraeth",
+  "artist_id": "lukas_hiraeth",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:16:58.624449+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b51833b3-6558-4729-a113-735712706101",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0e6m03hmu9HNYQBaeFkn8D",
+      "streaming": "https://music.apple.com/gb/artist/1801768520"
+    },
+    "labels": [
+      "Score a Score"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 354209772,
+    "name": "Lukas Hiraeth",
+    "nb_fan": 1,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/354209772",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1
+    },
+    "albums": [
+      {
+        "title": "Hemispheres",
+        "label": "",
+        "release_date": "2026-02-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lukas Hiraeth",
+    "mbid": "",
+    "listeners": 6431,
+    "playcount": 20718,
+    "listener_play_ratio": 3.22,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lukas+Hiraeth\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Flower City",
+      "King Bøb",
+      "Jordan Moon",
+      "Phil Axes",
+      "Astrovox"
+    ],
+    "top_tracks": [
+      {
+        "name": "You Do You",
+        "listeners": 3790,
+        "playcount": 9208
+      },
+      {
+        "name": "Found",
+        "listeners": 3364,
+        "playcount": 8365
+      },
+      {
+        "name": "Miss You",
+        "listeners": 1299,
+        "playcount": 3142
+      },
+      {
+        "name": "Je Sais",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Evening Call",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lukas+Hiraeth"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,121 @@
+{
+  "artist_name": "Sleepwear",
+  "artist_id": "sleepwear",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:06:28.276874+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sleepwear', got 'Sleeper'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sleepwear",
+    "mbid": "",
+    "listeners": 81211,
+    "playcount": 661050,
+    "listener_play_ratio": 8.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sleepwear\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Amphose",
+      "Zephyrical",
+      "Coseae",
+      "Orion's Passage",
+      "Matt Deep"
+    ],
+    "top_tracks": [
+      {
+        "name": "Silk Dreams",
+        "listeners": 35913,
+        "playcount": 188131
+      },
+      {
+        "name": "Blanket",
+        "listeners": 25768,
+        "playcount": 138891
+      },
+      {
+        "name": "Silk",
+        "listeners": 25720,
+        "playcount": 140325
+      },
+      {
+        "name": "Purifier",
+        "listeners": 18203,
+        "playcount": 91698
+      },
+      {
+        "name": "Perfume",
+        "listeners": 16311,
+        "playcount": 78896
+      },
+      {
+        "name": "Seamless",
+        "listeners": 2126,
+        "playcount": 5660
+      },
+      {
+        "name": "Nightdress",
+        "listeners": 1767,
+        "playcount": 5653
+      },
+      {
+        "name": "Seda",
+        "listeners": 1486,
+        "playcount": 5830
+      },
+      {
+        "name": "Cold Nights",
+        "listeners": 131,
+        "playcount": 290
+      },
+      {
+        "name": "Folding Dreams",
+        "listeners": 110,
+        "playcount": 159
+      }
+    ],
+    "url": "https://www.last.fm/music/Sleepwear"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,372 @@
+{
+  "artist_name": "San Tosielo",
+  "artist_id": "san_tosielo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:53:55.326701+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "333121e1-5f63-4a16-8085-3f7566f3ecb5",
+    "type": "Group",
+    "country": "ES",
+    "area": "Spain",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/152679722",
+      "social network": "https://www.instagram.com/santosielosientotanto/",
+      "streaming": "https://tidal.com/artist/29482652"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 152679722,
+    "name": "San Tosielo",
+    "nb_fan": 98,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/152679722",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2a48f7f1b8e9f77eb44dcecd3f1f37b1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Cruz Cafuné",
+      "One Path"
+    ],
+    "contributor_roles": {
+      "One Path": [
+        "Main"
+      ],
+      "Cruz Cafuné": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "No Te Vi Venir",
+      "toy joya"
+    ],
+    "track_durations": [
+      191,
+      208
+    ],
+    "track_ranks": [
+      26431,
+      73016
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 2,
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "Vida es una",
+        "label": "",
+        "release_date": "2025-11-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Siento Tanto",
+        "label": "",
+        "release_date": "2023-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Vanpiro Esiten",
+        "label": "",
+        "release_date": "2024-10-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Emosido Versionado",
+        "label": "",
+        "release_date": "2022-02-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tú o nadie",
+        "label": "",
+        "release_date": "2025-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A dios no le pido",
+        "label": "",
+        "release_date": "2025-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good old days",
+        "label": "",
+        "release_date": "2025-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "no se si soy yo pero cuando pienso que estamos bien no se si estamos bien en plan bien bien o bien sin mas",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fake Glasses",
+        "label": "",
+        "release_date": "2024-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Es una pena",
+        "label": "",
+        "release_date": "2024-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te estuve esperando",
+        "label": "",
+        "release_date": "2024-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wishlist",
+        "label": "",
+        "release_date": "2024-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "toy joya",
+        "label": "",
+        "release_date": "2024-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hijo mio, piensa en tu futuro",
+        "label": "",
+        "release_date": "2024-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "VETE",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mañana",
+        "label": "",
+        "release_date": "2023-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "27",
+        "label": "",
+        "release_date": "2023-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te Llevo A Donde Sea",
+        "label": "",
+        "release_date": "2023-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RIP Cupido",
+        "label": "",
+        "release_date": "2023-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Llueve",
+        "label": "",
+        "release_date": "2022-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Navaja",
+        "label": "",
+        "release_date": "2022-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Te Vi Venir",
+        "label": "",
+        "release_date": "2022-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nada Que Ver",
+        "label": "",
+        "release_date": "2022-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Vuelvas",
+        "label": "",
+        "release_date": "2022-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Descenso",
+        "label": "",
+        "release_date": "2021-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Inazio",
+      "Guitarricadelafuente",
+      "Funambulista",
+      "Leiva",
+      "Dani Fernández",
+      "Pole.",
+      "Rigoberta Bandini",
+      "Besmaya",
+      "Daniel Sabater",
+      "Zahara"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "San Tosielo",
+    "mbid": "333121e1-5f63-4a16-8085-3f7566f3ecb5",
+    "listeners": 12593,
+    "playcount": 245571,
+    "listener_play_ratio": 19.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/San+Tosielo\">Read more on Last.fm</a>",
+    "tags": [
+      "alternative pop",
+      "Surf",
+      "spain",
+      "spanish",
+      "bedroom pop"
+    ],
+    "similar_artists": [
+      "Toldos Verdes",
+      "John Pollõn",
+      "C Marí",
+      "Indigo JAMS",
+      "LEÏTI"
+    ],
+    "top_tracks": [
+      {
+        "name": "toy joya",
+        "listeners": 6039,
+        "playcount": 64754
+      },
+      {
+        "name": "Navaja",
+        "listeners": 2652,
+        "playcount": 22336
+      },
+      {
+        "name": "Es una pena",
+        "listeners": 2287,
+        "playcount": 22047
+      },
+      {
+        "name": "Sin ti (no quiero)",
+        "listeners": 1678,
+        "playcount": 11935
+      },
+      {
+        "name": "Nunca mas",
+        "listeners": 1210,
+        "playcount": 6174
+      },
+      {
+        "name": "Nada Que Ver",
+        "listeners": 1204,
+        "playcount": 4993
+      },
+      {
+        "name": "RIP Cupido",
+        "listeners": 1184,
+        "playcount": 9327
+      },
+      {
+        "name": "Good old days",
+        "listeners": 1089,
+        "playcount": 6124
+      },
+      {
+        "name": "No Vuelvas",
+        "listeners": 935,
+        "playcount": 6238
+      },
+      {
+        "name": "Hijo mio, piensa en tu futuro",
+        "listeners": 932,
+        "playcount": 7525
+      }
+    ],
+    "url": "https://www.last.fm/music/San+Tosielo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

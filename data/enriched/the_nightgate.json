@@ -1,0 +1,121 @@
+{
+  "artist_name": "The Nightgate",
+  "artist_id": "the_nightgate",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:36:01.861858+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'The Nightgate', got 'The Night Game'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Nightgate",
+    "mbid": "",
+    "listeners": 58564,
+    "playcount": 351803,
+    "listener_play_ratio": 6.01,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Nightgate\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Malviti",
+      "Alegro Moya",
+      "Isah Atkins",
+      "Aca Malvina",
+      "Yeur"
+    ],
+    "top_tracks": [
+      {
+        "name": "As Day Fades Into Night",
+        "listeners": 27808,
+        "playcount": 163055
+      },
+      {
+        "name": "Sky Kissed Dreams",
+        "listeners": 20649,
+        "playcount": 109607
+      },
+      {
+        "name": "Connected By Stars",
+        "listeners": 6597,
+        "playcount": 21741
+      },
+      {
+        "name": "Summer Thunderstorm",
+        "listeners": 5511,
+        "playcount": 27319
+      },
+      {
+        "name": "Raining Through The Night",
+        "listeners": 5405,
+        "playcount": 26043
+      },
+      {
+        "name": "The Burning Sky",
+        "listeners": 1368,
+        "playcount": 3200
+      },
+      {
+        "name": "Twilight Phenomena",
+        "listeners": 145,
+        "playcount": 282
+      },
+      {
+        "name": "Calm Dreams (432 Hz)",
+        "listeners": 113,
+        "playcount": 177
+      },
+      {
+        "name": "During Sunset",
+        "listeners": 42,
+        "playcount": 123
+      },
+      {
+        "name": "Reflections 528 Hz",
+        "listeners": 15,
+        "playcount": 43
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Nightgate"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,207 @@
+{
+  "artist_name": "Pius Sylla",
+  "artist_id": "pius_sylla",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:29:06.606093+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 217624435,
+    "name": "Pius Sylla",
+    "nb_fan": 0,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/217624435",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/034aa0be1641a7a0f6b87d83b787fb55/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "YOGA Y MEDITACION AMBIENTE",
+        "label": "",
+        "release_date": "2024-01-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Next Step",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoing",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "solid",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forget Time",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Happy Moment",
+        "label": "",
+        "release_date": "2023-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Concentrapiano",
+        "label": "",
+        "release_date": "2023-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mondayhappy",
+        "label": "",
+        "release_date": "2023-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mansuetus",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fortuna Impendium",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Galea",
+        "label": "",
+        "release_date": "2023-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pius Sylla",
+    "mbid": "",
+    "listeners": 79052,
+    "playcount": 378437,
+    "listener_play_ratio": 4.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pius+Sylla\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Joudinoire",
+      "Lost Lumina",
+      "Kaiser Hulenstadt",
+      "Moon Whisperer",
+      "Astral Tides"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Next Step",
+        "listeners": 61050,
+        "playcount": 301273
+      },
+      {
+        "name": "Galea",
+        "listeners": 17397,
+        "playcount": 59320
+      },
+      {
+        "name": "Forget Time",
+        "listeners": 5467,
+        "playcount": 17819
+      },
+      {
+        "name": "Fortuna Impendium",
+        "listeners": 6,
+        "playcount": 6
+      },
+      {
+        "name": "Mansuetus",
+        "listeners": 5,
+        "playcount": 9
+      },
+      {
+        "name": "Concentrapiano",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "solid",
+        "listeners": 2,
+        "playcount": 5
+      },
+      {
+        "name": "Echoing",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Pius+Sylla"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

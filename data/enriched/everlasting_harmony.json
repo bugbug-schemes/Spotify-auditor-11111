@@ -1,0 +1,181 @@
+{
+  "artist_name": "Everlasting Harmony",
+  "artist_id": "everlasting_harmony",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:32:46.709396+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6833458d-77ba-432d-8672-a7f88448764b",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 236625881,
+    "name": "Everlasting Harmony",
+    "nb_fan": 2,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/236625881",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f11ba89aea665026c8c597f7af1b5166/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Santa Tell Me",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Creatures of Our God and King",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How Great Thou Art",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "'Tis So Sweet To Trust In Jesus",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Everlasting Harmony",
+    "mbid": "6833458d-77ba-432d-8672-a7f88448764b",
+    "listeners": 5916,
+    "playcount": 16083,
+    "listener_play_ratio": 2.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Everlasting+Harmony\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Silas Northwind",
+      "Eternal Hands",
+      "Alex Lehtonen",
+      "Teodor Seti",
+      "Eleanor Friedman"
+    ],
+    "top_tracks": [
+      {
+        "name": "'Tis So Sweet To Trust In Jesus",
+        "listeners": 5656,
+        "playcount": 14713
+      },
+      {
+        "name": "Holy Holy Holy",
+        "listeners": 215,
+        "playcount": 642
+      },
+      {
+        "name": "Day by Day",
+        "listeners": 201,
+        "playcount": 676
+      },
+      {
+        "name": "If You Don't Know Me by Now",
+        "listeners": 4,
+        "playcount": 9
+      },
+      {
+        "name": "The Girl From Ipanema",
+        "listeners": 3,
+        "playcount": 10
+      },
+      {
+        "name": "Santa Tell Me",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Perfidia",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Blue Moon",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Mona Lisa",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Somewhere My Love",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Everlasting+Harmony"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

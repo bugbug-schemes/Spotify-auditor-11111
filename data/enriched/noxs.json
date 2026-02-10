@@ -1,0 +1,146 @@
+{
+  "artist_name": "noxs",
+  "artist_id": "noxs",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:27:12.919645+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'noxs', got 'NOFX'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1556206,
+    "name": "Noxs",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "4xFile, MP3, EP, 320",
+      "6xFile, MP3, Single, 320"
+    ],
+    "labels": [
+      "Drag Music",
+      "Progrezo Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Noxs",
+    "mbid": "",
+    "listeners": 3372,
+    "playcount": 8090,
+    "listener_play_ratio": 2.4,
+    "bio_exists": true,
+    "bio_summary": "Creating new music, based on fusions and mixtures with different kind of genres. House, chillout, electronic... all combined with strange genres... just listen it!!!\n\n\n\nFor more info go to http://www.myspace.com/noxsartist <a href=\"https://www.last.fm/music/Noxs\">Read more on Last.fm</a>",
+    "tags": [
+      "chillout",
+      "ambient",
+      "electronic",
+      "House",
+      "dance"
+    ],
+    "similar_artists": [
+      "Voliac",
+      "Deep Haki",
+      "fluffluff",
+      "Arcangel M",
+      "Higen"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tango's House",
+        "listeners": 1748,
+        "playcount": 3728
+      },
+      {
+        "name": "Du Du Du",
+        "listeners": 769,
+        "playcount": 1217
+      },
+      {
+        "name": "Chill Test - First Approach",
+        "listeners": 685,
+        "playcount": 1053
+      },
+      {
+        "name": "In silence",
+        "listeners": 650,
+        "playcount": 1219
+      },
+      {
+        "name": "notturno",
+        "listeners": 286,
+        "playcount": 636
+      },
+      {
+        "name": "starlight",
+        "listeners": 43,
+        "playcount": 61
+      },
+      {
+        "name": "Ocean Sound",
+        "listeners": 17,
+        "playcount": 21
+      },
+      {
+        "name": "Lesson 1 - Original Mix",
+        "listeners": 15,
+        "playcount": 53
+      },
+      {
+        "name": "Lesson 1",
+        "listeners": 13,
+        "playcount": 15
+      },
+      {
+        "name": "Feel",
+        "listeners": 11,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Noxs"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,187 @@
+{
+  "artist_name": "Dream Agent",
+  "artist_id": "dream_agent",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:33:56.374000+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 318380701,
+    "name": "Dream Agent",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/318380701",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/601923d5ef873084fb322e063614109d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Soft Horizon",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nebula",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Inner Glow",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleep Haven",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Orchid",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 68951,
+    "name": "DJ Dream (2)",
+    "profile": "Former old skool, happy hardcore & bouncy techno DJ from Sheffield who used to be the resident DJ in the main room at [l=Club Kinetic] along with [a=DJ Ell]. He also ran a night called Bouncy, a label called [l=Bouncy Tunes] & had a weekly show on pirate radio station Fantasy 101.9 FM (in Sheffield). However he started DJing at Roxy Disco (now O2 Academy) in Sheffield under his real name & helped to run the club nights there. He now DJs & produces house & speed garage under the name [a=Re:Mad-e] & also produces under the name 3agent.",
+    "realname": "Craig Justice",
+    "social_urls": [
+      "http://www.myspace.com/remadee2008",
+      "",
+      "http://www.dancemusicremixed.net/"
+    ],
+    "members": [],
+    "groups": [
+      "Eye On Life",
+      "DJ Ell & Dream"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 11,
+    "digital_only_releases": 20,
+    "total_releases": 31,
+    "formats": [
+      "",
+      "12\"",
+      "12xCass, Ltd, Mixed, Unofficial",
+      "12xCass, Mixed, Unofficial",
+      "3xCD, Mixed + Box, Comp",
+      "5xCD, Mixed + Box",
+      "8xCass, Ltd, Mixed, Unofficial",
+      "8xCass, Mixed",
+      "8xCass, Mixed, Unofficial",
+      "Acetate, 10\", S/Sided",
+      "CD, Comp, Mixed",
+      "CD, P/Mixed",
+      "Cass, Ltd, Mixed, Unofficial",
+      "Cass, Mixed, Unofficial"
+    ],
+    "labels": [
+      "3D Productions",
+      "Bouncy Tunes",
+      "Club Kinetic",
+      "Dance Planet",
+      "Die Hard Records (2)",
+      "Extatic Records",
+      "Intercord Japan",
+      "Kickin Records",
+      "Massive Music Company",
+      "Not On Label",
+      "Off Yer Egg",
+      "Pandemonium (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dream Agent",
+    "mbid": "",
+    "listeners": 8303,
+    "playcount": 44923,
+    "listener_play_ratio": 5.41,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dream+Agent\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Fort Sleep Sara",
+      "Lunari Veil",
+      "Frida Ljungh",
+      "Sootherica",
+      "Twin Sleeps"
+    ],
+    "top_tracks": [
+      {
+        "name": "Night Orchid",
+        "listeners": 7642,
+        "playcount": 43110
+      },
+      {
+        "name": "Nebula",
+        "listeners": 745,
+        "playcount": 1812
+      },
+      {
+        "name": "Inner Glow",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Dream+Agent"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

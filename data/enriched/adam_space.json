@@ -1,0 +1,148 @@
+{
+  "artist_name": "Adam Space",
+  "artist_id": "adam_space",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:42:51.069258+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Adam Space', got 'AMSpace'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 542127,
+    "name": "Adam Sachs",
+    "profile": "Audio engineer at [l=Trout Recording].\r\n\r\nAdam has worked at Trout Recording, for over 8 years, where he holds the positions of: Engineer, Mixer, and head tech, seeing to the maintenance and upkeep of all the vintage equipment Trout has to offer.\r\n\r\nHe has engineered for a wide variety of artists such as Joan as Policewoman, Luna, The Swans, Apples in Stereo, The Dig, Space Hog, Smokey Hormel, The Netherlands, Ches Smith, Bryan Scary, Charlie Hunter, and Tom Rainey. He has also been known to spice up the odd track with his slick percussion skills. ",
+    "realname": "Adam Sachs",
+    "social_urls": [
+      "http://www.troutrecording.com/abou/"
+    ],
+    "members": [],
+    "groups": [
+      "Wives (5)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 26,
+    "digital_only_releases": 74,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, WAV, Album",
+      "7\"",
+      "7\", Ltd",
+      "CD, Album",
+      "CD, Comp, Promo",
+      "CD, EP",
+      "CD, EP, Ltd",
+      "CD, Single, Promo",
+      "CDr, Album",
+      "Cass, Album",
+      "File, AAC, FLAC, MP3, WAV, Album",
+      "LP, Album",
+      "LP, Album, RSD, Cok"
+    ],
+    "labels": [
+      "City Records (2)",
+      "Clean Feed",
+      "Command Records (2)",
+      "Communion Records (2)",
+      "Dead Oceans",
+      "Diluvian",
+      "In Store Recordings",
+      "Intakt Records",
+      "Les Inrockuptibles",
+      "Not On Label",
+      "Not On Label (Leeds Self-released)",
+      "Not On Label (Merritt Jacob Self-released)",
+      "Not On Label (The Dig Self-released)",
+      "Play It Again Sam, Play It Again Sam",
+      "Skirl Records",
+      "Sunnyside",
+      "The Royal Potato Family",
+      "Transphonic Records",
+      "Trash Casual",
+      "Web Of Mimicry",
+      "What's Your Rupture?",
+      "Whirlwind Recordings",
+      "Zewski Music Group",
+      "[PIAS] Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Adam Space",
+    "mbid": "",
+    "listeners": 31384,
+    "playcount": 72891,
+    "listener_play_ratio": 2.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Adam+Space\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nora Haze",
+      "Amai Beats",
+      "cloudsonmymind",
+      "stephanie dewalee",
+      "Chapter IX"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beam Me Up",
+        "listeners": 28331,
+        "playcount": 64245
+      },
+      {
+        "name": "Golden Hour",
+        "listeners": 2425,
+        "playcount": 5695
+      },
+      {
+        "name": "Skyfall",
+        "listeners": 1030,
+        "playcount": 1549
+      },
+      {
+        "name": "Dimensions",
+        "listeners": 584,
+        "playcount": 1402
+      }
+    ],
+    "url": "https://www.last.fm/music/Adam+Space"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

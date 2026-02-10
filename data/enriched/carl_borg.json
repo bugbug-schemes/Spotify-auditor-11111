@@ -1,0 +1,436 @@
+{
+  "artist_name": "Carl Borg",
+  "artist_id": "carl_borg",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:58:20.023139+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "44ffda79-5faa-4b86-94a0-f06e2ecab452",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/339741"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183889,
+    "name": "Carl Borg",
+    "nb_fan": 55,
+    "nb_album": 41,
+    "link": "https://www.deezer.com/artist/183889",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5c3cab22b6c7854ee962a12073ad82d9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Sparrow"
+    ],
+    "contributor_roles": {
+      "Sparrow": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Afterlight",
+      "Transpiration",
+      "Drifting Leaves",
+      "Good Earth",
+      "The Inner Sun"
+    ],
+    "track_durations": [
+      266,
+      172,
+      164,
+      135,
+      140
+    ],
+    "track_ranks": [
+      99273,
+      26111,
+      129513,
+      39132,
+      30637
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 3,
+      "single": 36
+    },
+    "albums": [
+      {
+        "title": "Tasteology Soundtrack",
+        "label": "",
+        "release_date": "2017-01-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Lektor Tapes",
+        "label": "",
+        "release_date": "2006-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hidden Focus EP",
+        "label": "",
+        "release_date": "2018-10-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "All Good Things EP",
+        "label": "",
+        "release_date": "2014-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Splinter Body Scene",
+        "label": "",
+        "release_date": "2005-09-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Crystal Hollow",
+        "label": "",
+        "release_date": "2026-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Neon Dust",
+        "label": "",
+        "release_date": "2026-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lumora",
+        "label": "",
+        "release_date": "2025-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drifting Leaves",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thought Within",
+        "label": "",
+        "release_date": "2025-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vintage Sunprint",
+        "label": "",
+        "release_date": "2025-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Horizon Tape",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nimara",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Arcana",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Introspection",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sundown Pass",
+        "label": "",
+        "release_date": "2024-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "window seat sketching",
+        "label": "",
+        "release_date": "2024-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Presence of Ages",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden Cataract",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Artifacts",
+        "label": "",
+        "release_date": "2024-02-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Inner Sun",
+        "label": "",
+        "release_date": "2024-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Landmarks",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Watercell",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emancipation",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Fall Out / After All",
+        "label": "",
+        "release_date": "2023-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unceasing",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zenaissance",
+        "label": "",
+        "release_date": "2022-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La cime de l'arbre",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aeonian Dream",
+        "label": "",
+        "release_date": "2022-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sèvres",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Flapjaques",
+      "Prabhu Nam Kaur",
+      "Hang Drum Player",
+      "Manose",
+      "Logos",
+      "Stevin McNamara",
+      "Shastro",
+      "Deepak Chopra",
+      "Sacred Earth",
+      "Margot Reisinger"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 339741,
+    "name": "Carl Borg",
+    "profile": "",
+    "realname": "Carl Åborg",
+    "social_urls": [
+      "http://www.sonarkollektiv.com/data.pl?artist=Carl%20Borg",
+      "http://myspace.com/carlborgmusic"
+    ],
+    "members": [],
+    "groups": [
+      "CLB (4)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 3,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "12\", EP",
+      "2x12\", Comp, Promo + 2xCD, Comp, Promo + Box, Prom",
+      "CD, Album",
+      "CD, Comp",
+      "CDr, Promo"
+    ],
+    "labels": [
+      "Hoob Jazz",
+      "Lira Lyssna",
+      "Sonar Kollektiv",
+      "Swedish Brandy",
+      "Zune"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Carl Borg",
+    "mbid": "44ffda79-5faa-4b86-94a0-f06e2ecab452",
+    "listeners": 100980,
+    "playcount": 413290,
+    "listener_play_ratio": 4.09,
+    "bio_exists": true,
+    "bio_summary": "Carl Borg is Swedish electronic producer Carl Aborg, releasing on German label Sonar Kollektiv. Together with Forss, another Swedish artist, he also appears as the duo Forss Versus Borg.\n <a href=\"https://www.last.fm/music/Carl+Borg\">Read more on Last.fm</a>",
+    "tags": [
+      "future jazz",
+      "soundcloud"
+    ],
+    "similar_artists": [
+      "Restful Minds",
+      "Paia Mooni",
+      "Novah Scotia",
+      "SALOTTO",
+      "Fourth Eye"
+    ],
+    "top_tracks": [
+      {
+        "name": "Connection",
+        "listeners": 29455,
+        "playcount": 108313
+      },
+      {
+        "name": "Winter Artifacts",
+        "listeners": 25755,
+        "playcount": 55243
+      },
+      {
+        "name": "Hidden Cataract",
+        "listeners": 21895,
+        "playcount": 50098
+      },
+      {
+        "name": "The Inner Sun",
+        "listeners": 11730,
+        "playcount": 29395
+      },
+      {
+        "name": "Arcana",
+        "listeners": 6639,
+        "playcount": 39843
+      },
+      {
+        "name": "Transpiration",
+        "listeners": 5630,
+        "playcount": 19282
+      },
+      {
+        "name": "Introspection",
+        "listeners": 5488,
+        "playcount": 36917
+      },
+      {
+        "name": "Seeds",
+        "listeners": 4761,
+        "playcount": 10566
+      },
+      {
+        "name": "Afterlight",
+        "listeners": 4642,
+        "playcount": 16473
+      },
+      {
+        "name": "Nimara",
+        "listeners": 4012,
+        "playcount": 11647
+      }
+    ],
+    "url": "https://www.last.fm/music/Carl+Borg"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

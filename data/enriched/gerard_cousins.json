@@ -1,0 +1,417 @@
+{
+  "artist_name": "Gerard Cousins",
+  "artist_id": "gerard_cousins",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:50:51.053980+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "56f1bb74-f9ce-48be-bffa-bcd6a960c26c",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "classical guitar",
+      "guitarist",
+      "spanish guitar"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://gerardcousins.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/2879100",
+      "official homepage": "http://www.gerardcousins.com/",
+      "soundcloud": "https://soundcloud.com/gerardcousins",
+      "wikidata": "https://www.wikidata.org/wiki/Q5549966"
+    },
+    "labels": [
+      "Galles Music",
+      "Orange Mountain Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1161276,
+    "name": "Gerard Cousins",
+    "nb_fan": 118,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/1161276",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5e6e4474ebd38d44491662926c6f8685/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Always Meant",
+      "The First Noel (Arr. for Guitar by Gerard Cousins) [Bedtime Guitar Version]",
+      "Colección 12a de Ejercicios: No. 9",
+      "Charme de la Nuit in A Major, Op. 36 \"Nocturne\" (Arr. for Guitar by Gerard Cousins)",
+      "The Poet Acts",
+      "Winterbourne Preludes: V. Serenity",
+      "Prayer for Peace",
+      "Simple Truths",
+      "Melody 10",
+      "Pensées du Soir in G Major, Op. 44 \"Nocturne\" (Arr. for Guitar by Gerard Cousins)"
+    ],
+    "track_durations": [
+      248,
+      186,
+      65,
+      200,
+      192,
+      153,
+      73,
+      228,
+      134,
+      181
+    ],
+    "track_ranks": [
+      113906,
+      45196,
+      38258,
+      59438,
+      104316,
+      32433,
+      85481,
+      92419,
+      27151,
+      31664
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 2,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "Simple Truths",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stay By My Side",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Poet Acts",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The First Beat Is the Last Sound",
+        "label": "",
+        "release_date": "2014-12-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hiraeth - Celtic Guitar Music from Wales",
+        "label": "",
+        "release_date": "2010-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Gift - Guitar Music of Leo Brouwer, John Tavener, Takashi Yoshimatsu & Mark-Anthony Turnage",
+        "label": "",
+        "release_date": "2008-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Charme de la Nuit",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lullabies",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Winterbourne Preludes: V. Serenity",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The First Noel (Arr. for Guitar by Gerard Cousins) [Bedtime Guitar Version]",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Simple Truths",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Four States of Being: I. Momentarily Flowering",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clive's Song",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quatre Bagatelles en forme de Suite Cosmique: IV. Loin dans le Noir",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Silver Light",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Only Marriage",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Dia de Noviembre",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Step Closer",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Guiding Light (Arr. for guitar by Gerard Cousins)",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heigh Ho Holiday (Arr. for Guitar by Gerard Cousins)",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Christmas Tree (Arr. for Guitar by Gerard Cousins)",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Sky and on the Ground",
+        "label": "",
+        "release_date": "2023-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Night (Cover Guitar Instrumental)",
+        "label": "",
+        "release_date": "2021-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sing Gently (Arr. for Guitar)",
+        "label": "",
+        "release_date": "2021-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodnight Moon (Arr. for Guitar)",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ricercar 3",
+        "label": "",
+        "release_date": "2021-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost Horizons",
+        "label": "",
+        "release_date": "2021-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2879100,
+    "name": "Gerard Cousins",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 6,
+    "digital_only_releases": 0,
+    "total_releases": 6,
+    "formats": [
+      "CD",
+      "CD, Album"
+    ],
+    "labels": [
+      "Acoustic Magazine",
+      "Galles Music",
+      "Orange Mountain Music",
+      "Ty Cerdd Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gerard Cousins",
+    "mbid": "56f1bb74-f9ce-48be-bffa-bcd6a960c26c",
+    "listeners": 6024,
+    "playcount": 29212,
+    "listener_play_ratio": 4.85,
+    "bio_exists": true,
+    "bio_summary": "Gerard Cousins is enjoying a growing reputation as one of Britain’s most exciting classical guitar talents. He has performed around the world, throughout Europe, Saudi Arabia, Peru, and Turkmenistan. His UK performances have included London's Purcell Room, Cardiff City Hall and the beautiful Dulwich Picture gallery. He has released two CDs, his debut of Spanish guitar repertoire - UNA LEYENDA has received excellent reviews and has featured both BBC Radio and Classic FM. <a href=\"https://www.last",
+    "tags": [
+      "Classical",
+      "instrumental",
+      "classical guitar",
+      "guitar",
+      "para trabajar"
+    ],
+    "similar_artists": [
+      "Plínio Fernandes",
+      "Francesco De Grazia & Arielle Krebs",
+      "Alexandra Whittingham",
+      "Raphaël Feuillâtre",
+      "Alis Huws"
+    ],
+    "top_tracks": [
+      {
+        "name": "Opening (from Glassworks)",
+        "listeners": 1750,
+        "playcount": 5032
+      },
+      {
+        "name": "Prayer for Peace",
+        "listeners": 1027,
+        "playcount": 2922
+      },
+      {
+        "name": "Truman Sleeps (from the Truman Show)",
+        "listeners": 552,
+        "playcount": 1343
+      },
+      {
+        "name": "Escape (from The Hours)",
+        "listeners": 413,
+        "playcount": 1096
+      },
+      {
+        "name": "Metamorphosis No.1",
+        "listeners": 412,
+        "playcount": 1113
+      },
+      {
+        "name": "Metamorphosis No.3",
+        "listeners": 335,
+        "playcount": 869
+      },
+      {
+        "name": "Torroba - Sonatina, Allegretto",
+        "listeners": 334,
+        "playcount": 707
+      },
+      {
+        "name": "One Step Away",
+        "listeners": 321,
+        "playcount": 630
+      },
+      {
+        "name": "Metamorphosis No.5",
+        "listeners": 316,
+        "playcount": 745
+      },
+      {
+        "name": "Knee Play 2 (from Einstein on the Beach)",
+        "listeners": 271,
+        "playcount": 765
+      }
+    ],
+    "url": "https://www.last.fm/music/Gerard+Cousins"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

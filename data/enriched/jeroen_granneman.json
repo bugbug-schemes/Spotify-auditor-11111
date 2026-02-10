@@ -1,0 +1,435 @@
+{
+  "artist_name": "Jeroen Granneman",
+  "artist_id": "jeroen_granneman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:27:25.054537+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9cda8817-f446-4ede-90d5-15d50595c5bc",
+    "type": "Person",
+    "country": "NL",
+    "area": "Netherlands",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0004310694",
+      "free streaming": "https://www.deezer.com/artist/57875372",
+      "official homepage": "https://www.jeroengranneman.nl/",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/jeroen-granneman/13071735",
+      "social network": "https://www.facebook.com/jeroengrannemanpiano",
+      "soundcloud": "https://soundcloud.com/jeroengranneman-music",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/jeroen-granneman/13071735",
+      "youtube": "https://www.youtube.com/user/jlgranneman",
+      "youtube music": "https://music.youtube.com/channel/UCX76yp3A7uIXlv-qDuiM_fQ"
+    },
+    "labels": [
+      "JKMC Label Services",
+      "Aragosta Piano"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 57875372,
+    "name": "Jeroen Granneman",
+    "nb_fan": 19,
+    "nb_album": 60,
+    "link": "https://www.deezer.com/artist/57875372",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fb46d07985036961a6bbdd959bb9eea6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Christmas Piano Instrumental"
+    ],
+    "contributor_roles": {
+      "Christmas Piano Instrumental": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Shades of grey",
+      "Once Upon A Waltz",
+      "Waltz of Memories",
+      "Once Upon A Dream",
+      "Dance Of The Birds",
+      "Music",
+      "Time Flies By",
+      "Fabienne",
+      "Sentiment",
+      "Last Christmas (felt piano version)",
+      "Pirouette",
+      "Winter Wonderland (felt piano version)",
+      "Have Yourself A Merry Little Christmas (felt piano version)",
+      "Merry Christmas (felt piano version)"
+    ],
+    "track_durations": [
+      150,
+      130,
+      114,
+      151,
+      138,
+      149,
+      156,
+      144,
+      171,
+      143,
+      124,
+      133,
+      163,
+      142
+    ],
+    "track_ranks": [
+      248096,
+      109816,
+      40985,
+      107295,
+      31106,
+      10702,
+      57594,
+      24948,
+      3460,
+      8943,
+      3160,
+      32873,
+      17376,
+      31935
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 5,
+      "single": 49
+    },
+    "albums": [
+      {
+        "title": "Pursuit Of Dreams",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Winter Wishes",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Merry Christmas",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "HOME",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "HOME",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Christmas (Instrumental Piano Music)",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Touch Of December",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Touch Of December",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Touch Of December",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Winter Wishes",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Christmas (Instrumental Piano Music)",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Little Butterfly",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Nocturne",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Touch Of December",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Touch Of December",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deck The Halls",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Precious Moments",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dance Of The Birds",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Frederic",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once Upon A Dream",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once Upon A Waltz",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pirouette",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fabienne",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waltz of Memories",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Prima Ballerina",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightingale's Lullaby",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Music",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Flies By",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For you",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirage",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jeroen Granneman",
+    "mbid": "9cda8817-f446-4ede-90d5-15d50595c5bc",
+    "listeners": 43934,
+    "playcount": 227574,
+    "listener_play_ratio": 5.18,
+    "bio_exists": true,
+    "bio_summary": "Jeroen Granneman is a Dutch 'peaceful pianist' from Berkel-Enschot, The Netherlands. He is a piano teacher in his daily life, runs his own music school and released his first neo-classical piano single, 'White Butterfly', in October 2022. <a href=\"https://www.last.fm/music/Jeroen+Granneman\">Read more on Last.fm</a>",
+    "tags": [
+      "dutch",
+      "piano",
+      "netherlands",
+      "pianist",
+      "peaceful piano"
+    ],
+    "similar_artists": [
+      "Tjeerd Oosterhuis",
+      "James Homard",
+      "Mina Amare",
+      "Taichi Chishaki",
+      "DeLange"
+    ],
+    "top_tracks": [
+      {
+        "name": "White Butterfly",
+        "listeners": 17729,
+        "playcount": 70839
+      },
+      {
+        "name": "Florence",
+        "listeners": 16966,
+        "playcount": 69255
+      },
+      {
+        "name": "Little Things",
+        "listeners": 5821,
+        "playcount": 16131
+      },
+      {
+        "name": "In The Bleak Midwinter",
+        "listeners": 4491,
+        "playcount": 10797
+      },
+      {
+        "name": "Gloria In Exelcis Deo",
+        "listeners": 4416,
+        "playcount": 7559
+      },
+      {
+        "name": "Little Drummer Boy",
+        "listeners": 3836,
+        "playcount": 6448
+      },
+      {
+        "name": "The First Noel",
+        "listeners": 3300,
+        "playcount": 6804
+      },
+      {
+        "name": "Time Flies By",
+        "listeners": 2896,
+        "playcount": 6631
+      },
+      {
+        "name": "September Sun",
+        "listeners": 1568,
+        "playcount": 4134
+      },
+      {
+        "name": "Jingle Bells",
+        "listeners": 1548,
+        "playcount": 2376
+      }
+    ],
+    "url": "https://www.last.fm/music/Jeroen+Granneman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

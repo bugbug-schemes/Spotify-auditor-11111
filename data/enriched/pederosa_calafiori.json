@@ -1,0 +1,139 @@
+{
+  "artist_name": "Pederosa Calafiori",
+  "artist_id": "pederosa_calafiori",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:24:24.411686+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 276691781,
+    "name": "Pederosa Calafiori",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/276691781",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2c761dd1e97071daf6091b31449235cd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Whisper",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Believe",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reimagined",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Magic of a Piano",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Secrets of Mystery Room",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pederosa Calafiori",
+    "mbid": "",
+    "listeners": 6542,
+    "playcount": 20306,
+    "listener_play_ratio": 3.1,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pederosa+Calafiori\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Thiago Izan",
+      "Claudia Schumann",
+      "Livia Marcella",
+      "Remy Rêve",
+      "Justin Dell"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Secrets of Mystery Room",
+        "listeners": 3548,
+        "playcount": 13839
+      },
+      {
+        "name": "The Magic of a Piano",
+        "listeners": 2828,
+        "playcount": 5551
+      },
+      {
+        "name": "Believe",
+        "listeners": 352,
+        "playcount": 916
+      }
+    ],
+    "url": "https://www.last.fm/music/Pederosa+Calafiori"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

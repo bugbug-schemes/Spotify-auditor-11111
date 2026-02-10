@@ -1,0 +1,751 @@
+{
+  "artist_name": "Daniel",
+  "artist_id": "daniel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:20:19.669369+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "fac566b2-7a0e-4977-ad92-533f43420975",
+    "type": "Person",
+    "country": "AR",
+    "area": "Argentina",
+    "begin_date": "1942-11-15",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "classical",
+      "argentinian",
+      "piano",
+      "conductor",
+      "pianist",
+      "beethoven"
+    ],
+    "aliases": [
+      "ダニエル・バレンボイム"
+    ],
+    "isnis": [
+      "0000000121462413"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000631790",
+      "discogs": "https://www.discogs.com/artist/424576",
+      "free streaming": "https://www.deezer.com/artist/65655",
+      "IMDb": "https://www.imdb.com/name/nm0054434/",
+      "last.fm": "https://www.last.fm/music/Daniel+Barenboim",
+      "official homepage": "https://danielbarenboim.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-n81042605",
+      "songkick": "https://www.songkick.com/artists/9819",
+      "streaming": "https://tidal.com/artist/12430",
+      "VIAF": "http://viaf.org/viaf/104029553",
+      "wikidata": "https://www.wikidata.org/wiki/Q152768",
+      "youtube": "https://www.youtube.com/@DanielBarenboim"
+    },
+    "labels": [
+      "Decca Records",
+      "Süddeutsche Zeitung",
+      "EMI",
+      "Decca Music Group",
+      "EMI Studio DRM",
+      "Philips Classics",
+      "Peral Music",
+      "HMV Classics",
+      "Altaya",
+      "Warner Classics International",
+      "Columbia Records",
+      "Guild Historical",
+      "Masterworks",
+      "EMI Digital",
+      "Esoteric",
+      "Angel Records",
+      "CBS/Sony",
+      "FP",
+      "Dutton Epoch",
+      "Sony Masterworks",
+      "RCA",
+      "Apex",
+      "Laserlight Classics",
+      "Elektra",
+      "Deutsche Grammophon",
+      "EMI Classics",
+      "EMI Records Ltd.",
+      "Warner Classics & Jazz",
+      "Select Musiek",
+      "London Records",
+      "CBS",
+      "Franklin Mint Record Society",
+      "EMI Eminence",
+      "BBC Legends",
+      "RCA Red Seal",
+      "Universal Classics",
+      "EMI Angel",
+      "London Classics",
+      "EMI Electrola",
+      "Decca Classics",
+      "BR-Klassik",
+      "Columbia Masterworks",
+      "CBS Odyssey",
+      "Musical Heritage Society",
+      "CBS Records Masterworks",
+      "TELDEC",
+      "Polydor",
+      "Electrola",
+      "elatus",
+      "Music Brokers",
+      "Sony Classical",
+      "Universal Music",
+      "His Master’s Voice",
+      "TELDEC Classics International GmbH",
+      "Classics for Pleasure",
+      "La Voix de son maître",
+      "Alpha Classics",
+      "Warner Classics",
+      "HMV",
+      "Esprit",
+      "EMI Music France",
+      "Erato",
+      "Resonance",
+      "BMG Direct Marketing, Inc.",
+      "EuroArts Music International",
+      "Pickwick International",
+      "EMI DRM",
+      "ERA",
+      "Diamond Cut"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 64998,
+    "name": "Daniel",
+    "nb_fan": 221852,
+    "nb_album": 82,
+    "link": "https://www.deezer.com/artist/64998",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6b98220508072cde8fa4dbf3262abc4b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Abel & Caim",
+      "Althaír & Alexandre",
+      "Bruno & Marrone",
+      "Carol Valentim",
+      "Cezar & Paulinho",
+      "Chitãozinho & Xororó",
+      "César Menotti & Fabiano",
+      "Edson & Hudson",
+      "Eric Silver",
+      "Fernando & Sorocaba",
+      "Gian & Giovani",
+      "Gino & Geno",
+      "Guilherme & Benuto",
+      "Guilherme e Santiago",
+      "Henrique & Juliano",
+      "Joao Neto & Frederico",
+      "Jorge &",
+      "Jorge & Mateus",
+      "José Camillo",
+      "João Bosco & Vinícius",
+      "Jéssica Reis",
+      "Lauana Prado",
+      "Leo & Junior",
+      "Luan Santana",
+      "Maiara & Maraisa",
+      "Marcos & Belutti",
+      "Michel Teló",
+      "Nayra Days",
+      "PARANA",
+      "Paula Fernandes",
+      "Pena Branca",
+      "Renato Borghetti",
+      "Rick & Renner",
+      "Rio Negro & Solimões",
+      "Rionegro & Solimões",
+      "Zé Henrique & Gabriel"
+    ],
+    "contributor_roles": {
+      "Luan Santana": [
+        "Main"
+      ],
+      "César Menotti & Fabiano": [
+        "Main"
+      ],
+      "Cezar & Paulinho": [
+        "Main",
+        "Featured"
+      ],
+      "Edson & Hudson": [
+        "Main"
+      ],
+      "Fernando & Sorocaba": [
+        "Main"
+      ],
+      "Gian & Giovani": [
+        "Main"
+      ],
+      "Guilherme e Santiago": [
+        "Main"
+      ],
+      "Henrique & Juliano": [
+        "Main"
+      ],
+      "João Bosco & Vinícius": [
+        "Main"
+      ],
+      "Joao Neto & Frederico": [
+        "Main"
+      ],
+      "Marcos & Belutti": [
+        "Main"
+      ],
+      "Michel Teló": [
+        "Main"
+      ],
+      "PARANA": [
+        "Main"
+      ],
+      "Rick & Renner": [
+        "Main"
+      ],
+      "Rionegro & Solimões": [
+        "Main"
+      ],
+      "Althaír & Alexandre": [
+        "Main"
+      ],
+      "Maiara & Maraisa": [
+        "Main"
+      ],
+      "Chitãozinho & Xororó": [
+        "Main"
+      ],
+      "Jorge &": [
+        "Main"
+      ],
+      "Bruno & Marrone": [
+        "Main",
+        "Featured"
+      ],
+      "Lauana Prado": [
+        "Main"
+      ],
+      "Paula Fernandes": [
+        "Main"
+      ],
+      "Carol Valentim": [
+        "Main"
+      ],
+      "Nayra Days": [
+        "Main"
+      ],
+      "Jorge & Mateus": [
+        "Main"
+      ],
+      "Leo & Junior": [
+        "Main"
+      ],
+      "Eric Silver": [
+        "Main"
+      ],
+      "Guilherme & Benuto": [
+        "Main"
+      ],
+      "Gino & Geno": [
+        "Featured"
+      ],
+      "Renato Borghetti": [
+        "Featured"
+      ],
+      "José Camillo": [
+        "Featured",
+        "Main"
+      ],
+      "Pena Branca": [
+        "Featured"
+      ],
+      "Rio Negro & Solimões": [
+        "Featured"
+      ],
+      "Abel & Caim": [
+        "Featured"
+      ],
+      "Jéssica Reis": [
+        "Main"
+      ],
+      "Zé Henrique & Gabriel": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Estou Apaixonado (Ao Vivo)",
+      "Acredite! Vai Passar",
+      "Quem diria, hein...?",
+      "Você Não Morre Mais (Ao Vivo)",
+      "Paixão dupla (Participação especial de Gino & Geno e Renato Borghetti)",
+      "Pagode em Brasília / Pagode do Alá / Tudo certo (Participação especial de Cézar & Paulinho)",
+      "Sertanejo de coração (Participação especial de Bruno & Marrone)",
+      "Ela Tem o Dom de Me Fazer Chorar (Ao Vivo)",
+      "Disparada",
+      "Uma coisa puxa outra",
+      "Mala amarela (Participação especial de José Camillo)",
+      "Mundo velho (Participação especial de José Camillo)",
+      "No Mesmo Lugar (Ao Vivo)",
+      "Cuitelinho (Participação especial de Pena Branca)",
+      "Desatino (Participação especial de Rio Negro & Solimões)",
+      "A Culpa é Sua (Ao Vivo)",
+      "Do Outro Lado do Rádio",
+      "Se Você Quiser Voltar (Ao Vivo)",
+      "Só Dá Você na Minha Vida/Adoro Amar Você",
+      "Dia de Visita (Ao Vivo)",
+      "A Loira do Carro Branco (Ao Vivo)",
+      "Caminheiro",
+      "Pescador e catireiro (Participação especial de Abel & Caim)",
+      "Minha Estrela Perdida (Ao Vivo)",
+      "Proposta (Participação especial de Zé Henrique & Gabriel)"
+    ],
+    "track_durations": [
+      283,
+      348,
+      179,
+      224,
+      179,
+      268,
+      262,
+      252,
+      228,
+      232,
+      168,
+      227,
+      202,
+      193,
+      248,
+      268,
+      219,
+      275,
+      337,
+      247,
+      221,
+      238,
+      223,
+      286,
+      171
+    ],
+    "track_ranks": [
+      642006,
+      674258,
+      316590,
+      278250,
+      279861,
+      341195,
+      340201,
+      423023,
+      284753,
+      305015,
+      402778,
+      341625,
+      311568,
+      337800,
+      344237,
+      338205,
+      348676,
+      381116,
+      378747,
+      325868,
+      418831,
+      464930,
+      372038,
+      381861,
+      346315
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 25,
+      "ep": 2,
+      "single": 55
+    },
+    "albums": [
+      {
+        "title": "Daniel 40 Anos: Celebra João Paulo & Daniel (Ao Vivo)",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Meu Reino Encantado - De Pai pra Filho",
+        "label": "",
+        "release_date": "2022-09-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Daniel em Casa",
+        "label": "",
+        "release_date": "2021-03-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Show Homenagem a Nossa Senhora Aparecida (Ao Vivo)",
+        "label": "",
+        "release_date": "2019-10-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Daniel In Concert em Brotas (Ao Vivo)",
+        "label": "",
+        "release_date": "2020-01-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "iCollection",
+        "label": "",
+        "release_date": "2012-04-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dose dupla",
+        "label": "",
+        "release_date": "2011-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pra ser Feliz",
+        "label": "",
+        "release_date": "2011-08-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Raízes",
+        "label": "",
+        "release_date": "2010-04-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Daniel - O Menino da Porteira",
+        "label": "",
+        "release_date": "2009-02-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Difícil Não Falar de Amor",
+        "label": "",
+        "release_date": "2008-05-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Amor Absoluto",
+        "label": "",
+        "release_date": "2006-07-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Meu reino encantado III",
+        "label": "",
+        "release_date": "2006-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Te amo cada vez mais (Ao vivo)",
+        "label": "",
+        "release_date": "2005-11-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Em Qualquer Lugar do Mundo",
+        "label": "",
+        "release_date": "2004-08-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Meu reino encantado II",
+        "label": "",
+        "release_date": "2003-04-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Um Homem Apaixonado",
+        "label": "",
+        "release_date": "2002-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Momentos Mágicos (Ao Vivo)",
+        "label": "",
+        "release_date": "2002-02-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ao Vivo",
+        "label": "",
+        "release_date": "2001-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Meu reino encantado I",
+        "label": "",
+        "release_date": "2000-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Daniel",
+        "label": "",
+        "release_date": "1998-08-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Quando o Coração Se Apaixona",
+        "label": "",
+        "release_date": "1998-08-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Español",
+        "label": "",
+        "release_date": "1998-08-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Vou Levando a Vida",
+        "label": "",
+        "release_date": "1998-08-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Daniel",
+        "label": "",
+        "release_date": "2016-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Daniel 30 Anos \"O Musical\"",
+        "label": "",
+        "release_date": "2014-07-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Maxi Single - O Menino da Porteira",
+        "label": "",
+        "release_date": "2009-02-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Te Cuida Coração (Ao Vivo)",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te Amo Cada Vez Mais (Duas Vozes)",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desejo de Amar (Duas Vozes)",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9857,
+    "name": "Daniel Miller",
+    "profile": "British music producer born 14/February/1951, Marylebone, City Of Westminster, Greater London, England - UNITED KINGDOM. Founder of [l=Mute Records Ltd.]",
+    "realname": "Daniel Otto Joachim Miller",
+    "social_urls": [
+      "https://mute.com/artists/daniel-miller-dj/",
+      "https://www.songkick.com/artists/978335-daniel-miller",
+      "https://en.wikipedia.org/wiki/Daniel_Miller_(music_producer)",
+      "https://soundcloud.com/daniel-miller-mute"
+    ],
+    "members": [],
+    "groups": [
+      "Sunroof",
+      "Come",
+      "Djxdj",
+      "Duet Emmo",
+      "Populist (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 16,
+    "digital_only_releases": 84,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "12\", W/Lbl",
+      "12xFile, AAC, Album, RM + 10xFile, AAC, Album, RM ",
+      "2xCD, Comp + DVD-V",
+      "3xFile, WAV",
+      "7\"",
+      "7\", Single, RE + 7\", Single, RE + 7\", Single, RE +",
+      "Box, Comp + 2xCD, Comp, RE, RM + CD, Comp, RE",
+      "CD + CD, Enh, Mixed + CD, Mixed + Comp, Promo",
+      "CD, Album, RE, RM + CD, Album, RE, RM + CD, Album,",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CDr, Comp, Mixed, Inh",
+      "CDr, P/Mixed, Transcription",
+      "CDr, Promo, Smplr",
+      "Cass, Comp",
+      "Cass, S/Sided",
+      "LP, Comp, Ltd, Num"
+    ],
+    "labels": [
+      "Ausfahrt, Ausfahrt",
+      "Blanco Y Negro (2)",
+      "City Slang",
+      "Cornerstone Promotion",
+      "Electronic Beats",
+      "Hot Mix Radio Network",
+      "Kreisel 99",
+      "Matador",
+      "Miller-Zillmer Foundation",
+      "Mute",
+      "Mute, Mute",
+      "Reactor (2)",
+      "SiGNLiZe",
+      "[PIAS]"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Daniel",
+    "mbid": "15f9fb0c-01d9-489a-9413-1ea28e4d3b12",
+    "listeners": 303347,
+    "playcount": 4285659,
+    "listener_play_ratio": 14.13,
+    "bio_exists": true,
+    "bio_summary": "There are several artists using the name Daniel:\n\n1. Kim Daniel (Kim Daniel)  was born on March 18th 1997, and is K-Indie artist, front man of  (wave to earth) (웨이브투어스) and (The Poles) (더폴스). He was born in France, but moved to South Korea when he was young.\nKim debuted with The Poles on September 8th 2017 with their EP 'From The Outset'. He made his solo debut in 2018 with the single 'blue Blue', and went on to release two more singles over the next two years. <a href=\"https://www.last.fm/music",
+    "tags": [
+      "sertanejo",
+      "brazilian country",
+      "musica brasileira",
+      "brazilian music",
+      "male vocal"
+    ],
+    "similar_artists": [
+      "Leonardo",
+      "João Paulo & Daniel",
+      "Zezé Di Camargo & Luciano",
+      "Chitãozinho & Xororó",
+      "Sérgio Reis"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lily of the Valley",
+        "listeners": 115265,
+        "playcount": 1363003
+      },
+      {
+        "name": "은방울 Lily of The Valley",
+        "listeners": 50885,
+        "playcount": 538195
+      },
+      {
+        "name": "Hi Bye, Goodnight",
+        "listeners": 44264,
+        "playcount": 300752
+      },
+      {
+        "name": "Estou apaixonado - ao vivo",
+        "listeners": 34178,
+        "playcount": 121113
+      },
+      {
+        "name": "O Menino da Porteira",
+        "listeners": 21595,
+        "playcount": 61734
+      },
+      {
+        "name": "Flower",
+        "listeners": 20064,
+        "playcount": 114430
+      },
+      {
+        "name": "Where My Loved One Stayed",
+        "listeners": 17165,
+        "playcount": 103832
+      },
+      {
+        "name": "Tocando Em Frente",
+        "listeners": 16005,
+        "playcount": 42650
+      },
+      {
+        "name": "Adoro Amar Você",
+        "listeners": 14750,
+        "playcount": 54817
+      },
+      {
+        "name": "and Forevermore",
+        "listeners": 13795,
+        "playcount": 62124
+      }
+    ],
+    "url": "https://www.last.fm/music/Daniel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,140 @@
+{
+  "artist_name": "Anna Moen",
+  "artist_id": "anna_moen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:01:15.411021+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Anna Moen', got 'Anna Leone'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7322822,
+    "name": "Sprattel-Gummorna",
+    "profile": "Sprattelgummorna, Kumla, Sweden (left order) Anna Grev-Smuhl, Nettan Blomgren, Helena Moen, Gunilla Persson and Lotta Robertsson",
+    "realname": "",
+    "social_urls": [
+      "https://kk.kulturhotell.se/items/show/4693"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "7\""
+    ],
+    "labels": [
+      "Efel"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Anna Moen",
+    "mbid": "",
+    "listeners": 4647,
+    "playcount": 73331,
+    "listener_play_ratio": 15.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Anna+Moen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Elma Korn",
+      "Sarah Bainscroft",
+      "Kim Akvileja",
+      "Ishaq Love",
+      "Jasper Sylvaire"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ode to Joy",
+        "listeners": 3161,
+        "playcount": 39641
+      },
+      {
+        "name": "The Babblers' Lullaby",
+        "listeners": 1826,
+        "playcount": 14942
+      },
+      {
+        "name": "Yankee Doodle",
+        "listeners": 1177,
+        "playcount": 16859
+      },
+      {
+        "name": "Away in a manger",
+        "listeners": 293,
+        "playcount": 861
+      },
+      {
+        "name": "Come thou fount of every blessing",
+        "listeners": 287,
+        "playcount": 818
+      },
+      {
+        "name": "O Holy Night",
+        "listeners": 43,
+        "playcount": 66
+      },
+      {
+        "name": "Sov Du Lilla Videung",
+        "listeners": 33,
+        "playcount": 51
+      },
+      {
+        "name": "Nearer, My God, To Thee",
+        "listeners": 9,
+        "playcount": 20
+      },
+      {
+        "name": "Il caffè della peppina",
+        "listeners": 9,
+        "playcount": 9
+      },
+      {
+        "name": "My Bonnie Lies Over The Ocean",
+        "listeners": 3,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Anna+Moen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

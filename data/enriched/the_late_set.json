@@ -1,0 +1,117 @@
+{
+  "artist_name": "The Late Set",
+  "artist_id": "the_late_set",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:34:56.231566+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'The Late Set', got 'The Jane Set'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1405706,
+    "name": "The Underground Set",
+    "profile": "Behind the Underground Set name hid, for contractual reasons, the musicians from [a593634]. But surely the mastermind behind them was composer [a=Gian Piero Reverberi], who was also the producer of [a=Le Orme].\r\nThe Underground Set were often thought to be an English group, their first album having been issued in many European countries. It's interesting to notice that the group has been mentioned as English in Vernon Joynson's Tapestry of Delight book.\r\nBut in an interview with [a1120093] on the Italian Musikbox magazine, the drummer was one of the first to reveal that the musicians playing on this band's two albums were in fact [a593634], as Radio Records (the label on which the first album and the singles appeared) was distributed by their label Ariston at the time.\r\nMainly instrumental, with just some choral vocal parts, the albums are typical of a late 60's organ-led psychy pop sound and some tracks were used as TV film themes. \r\n",
+    "realname": "",
+    "social_urls": [
+      "http://www.progarchives.com/artist.asp?id=6969",
+      "http://www.italianprog.com/a_undergroundset.htm"
+    ],
+    "members": [
+      "Gianfranco Reverberi"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 11,
+    "total_releases": 18,
+    "formats": [
+      "",
+      "7\"",
+      "CD, Comp",
+      "LP, Comp",
+      "LP, Comp, Promo"
+    ],
+    "labels": [
+      "Audio Archives",
+      "Belldisc Italiana",
+      "Boulevard",
+      "RPM retrodisc",
+      "Radio Records (3)",
+      "Tickle"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Late Set",
+    "mbid": "",
+    "listeners": 3454,
+    "playcount": 5029,
+    "listener_play_ratio": 1.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Late+Set\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Trio Lexington",
+      "The Blue Alley",
+      "New Dawn Jazz Trio",
+      "Season's Greetings",
+      "Gus Anderson"
+    ],
+    "top_tracks": [
+      {
+        "name": "We Wish You a Merry Christmas",
+        "listeners": 3452,
+        "playcount": 5022
+      },
+      {
+        "name": "Nick Calingaert",
+        "listeners": 1,
+        "playcount": 6
+      },
+      {
+        "name": "Forces of Nature, with Jack DeJohnette",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Late+Set"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

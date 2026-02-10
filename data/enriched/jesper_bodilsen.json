@@ -1,0 +1,617 @@
+{
+  "artist_name": "Jesper Bodilsen",
+  "artist_id": "jesper_bodilsen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:27:51.389952+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e013efb5-6806-4f81-82a2-3d4c85ec4842",
+    "type": "Person",
+    "country": "DK",
+    "area": "Denmark",
+    "begin_date": "1970-01-05",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000130255221"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000965625",
+      "discogs": "https://www.discogs.com/artist/690887",
+      "free streaming": "https://www.deezer.com/artist/385171",
+      "other databases": "https://d-nb.info/gnd/135272165",
+      "songkick": "https://www.songkick.com/artists/2652236",
+      "streaming": "https://tidal.com/artist/3685829",
+      "VIAF": "http://viaf.org/viaf/290843287",
+      "wikidata": "https://www.wikidata.org/wiki/Q1688085"
+    },
+    "labels": [
+      "Stunt Records",
+      "Arc Recordings",
+      "Mingus Records",
+      "Savvy",
+      "EmArcy",
+      "ECM Records",
+      "Abeat",
+      "Cowbell Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 385171,
+    "name": "Jesper Bodilsen",
+    "nb_fan": 228,
+    "nb_album": 44,
+    "link": "https://www.deezer.com/artist/385171",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6f6e825730c00cfe23a0118d9890ce98/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bill Frisell",
+      "Henrik Gunde",
+      "Lars Jansson",
+      "Mark Turner",
+      "Martin Maretti Andersen",
+      "Max Ionata",
+      "Morten Lund",
+      "Niclas Knudsen",
+      "Stefano Bollani"
+    ],
+    "contributor_roles": {
+      "Henrik Gunde": [
+        "Main"
+      ],
+      "Morten Lund": [
+        "Main"
+      ],
+      "Stefano Bollani": [
+        "Main"
+      ],
+      "Mark Turner": [
+        "Main"
+      ],
+      "Bill Frisell": [
+        "Main"
+      ],
+      "Lars Jansson": [
+        "Main"
+      ],
+      "Niclas Knudsen": [
+        "Main"
+      ],
+      "Max Ionata": [
+        "Main"
+      ],
+      "Martin Maretti Andersen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Softly as in a Morning Sunrise",
+      "Moon River",
+      "Blame It on My Youth",
+      "Easy Healing",
+      "Little Song",
+      "Too Naive And Confused",
+      "Marionette",
+      "Blue Pepper",
+      "Jingle Bells",
+      "Winter Wonderland",
+      "In a Sentimental Mood",
+      "Ol' Man River",
+      "The Windmills of Your Mind",
+      "Introduction",
+      "Kärlekens ögon",
+      "I Will Wait for You",
+      "My Funny Valentine",
+      "Solveigs Sang",
+      "Bye Bye Blackbird",
+      "Fanølyng",
+      "Oblivion"
+    ],
+    "track_durations": [
+      577,
+      346,
+      486,
+      565,
+      287,
+      393,
+      349,
+      200,
+      244,
+      232,
+      396,
+      342,
+      336,
+      69,
+      290,
+      415,
+      462,
+      247,
+      459,
+      318,
+      263
+    ],
+    "track_ranks": [
+      69336,
+      82061,
+      53089,
+      221430,
+      100000,
+      17925,
+      103508,
+      116289,
+      109882,
+      7796,
+      54091,
+      10242,
+      70542,
+      24399,
+      31553,
+      50635,
+      39866,
+      37093,
+      37010,
+      41414,
+      66828
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 32,
+      "single": 11,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Tivoli",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moods for Christmas",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live in Copenhagen",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Memory Lane",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Silent Moods",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Short Story Long",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dreamland",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Like",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moods, Vol. 2",
+        "label": "",
+        "release_date": "2023-07-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Life in a Major Key",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Quietly",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alone Together",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moods",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Songs from Home",
+        "label": "",
+        "release_date": "2021-07-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Between Below",
+        "label": "",
+        "release_date": "2021-06-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Book of Psalms, Volume 1",
+        "label": "",
+        "release_date": "2020-01-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Incontro",
+        "label": "",
+        "release_date": "2019-06-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pieris",
+        "label": "",
+        "release_date": "2018-04-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pinocchio e altri racconti",
+        "label": "",
+        "release_date": "2018-03-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jazz at Berlin Philharmonic VIII: Mediterraneo",
+        "label": "",
+        "release_date": "2017-10-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Santa Claus Is Coming to Town",
+        "label": "",
+        "release_date": "2016-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tid",
+        "label": "",
+        "release_date": "2016-07-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Joy In Spite Of Everything",
+        "label": "",
+        "release_date": "2014-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Scenografie",
+        "label": "",
+        "release_date": "2012-12-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Short Stories For Dreamers",
+        "label": "",
+        "release_date": "2009-12-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Meeting",
+        "label": "",
+        "release_date": "2009-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Gleda",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Facing The Sun",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mi Ritorni In Mente",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live in Stockholm",
+        "label": "",
+        "release_date": "2002-06-03",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 690887,
+    "name": "Jesper Bodilsen",
+    "profile": "Danish jazz bassist, born 5 January 1970 in Aarhus, Denmark.",
+    "realname": "",
+    "social_urls": [
+      "http://www.myspace.com/jesperbodilsen"
+    ],
+    "members": [],
+    "groups": [
+      "Kasper Villaume Quartet",
+      "Jesper Bodilsen trio",
+      "Ed Thigpen Scantet",
+      "Stefano Bollani Trio",
+      "Ed Thigpen Rhythm Features",
+      "Enrico Rava Jazzpar 2002 Sextet",
+      "Helle Hansen Group",
+      "Scott Hamilton Scandinavian Five",
+      "Scandinavian Summit",
+      "Jacob Christoffersen Trio",
+      "Thomas Fryland Quintet",
+      "Nordic Circles",
+      "Kasper Villaume Trio",
+      "Beijbom Kroner Big Band",
+      "Claes Crona Trio",
+      "Bridges (7)",
+      "The Ed Thigpen Trio",
+      "Max De Aloe Baltic Trio",
+      "Jacob Roved Quintet",
+      "Baker Boys (2)",
+      "Helle Hansen's Jazzy Present",
+      "The Dream Quintet",
+      "Bill Buchman Trio",
+      "Scandinavian Jazz Quartet",
+      "Mads Hansen Group",
+      "Sigurd Barrett & The Cigars",
+      "Katrine Madsen Swing Quintet",
+      "Mårten Lundgren Quintet",
+      "Henrik Gunde Trio",
+      "Takao Nagai Trio",
+      "Jakob Park Trio",
+      "Acoustic Lounge"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 83,
+    "digital_only_releases": 17,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Album",
+      "9xCD, Comp, RM + CD, Smplr + Box",
+      "CD",
+      "CD, Album",
+      "CD, Album + DVD",
+      "CD, Album, Car",
+      "CD, Album, Comp",
+      "CD, Album, Dig",
+      "CD, Album, gat",
+      "CD, Album, wit",
+      "CD, Comp",
+      "CD, Comp, Car",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, RM",
+      "CD, Dig",
+      "CD, Mini, Single, Promo",
+      "CD, Promo",
+      "CDr, Album",
+      "File, AAC, MP3, MPEG-4 Video, WAV, EP",
+      "File, MP3, Album",
+      "LP, Comp",
+      "LP, Num"
+    ],
+    "labels": [
+      "ACT (4)",
+      "AMP Music & Records",
+      "Abeat Records",
+      "Abovoice",
+      "Abovoice, Abovoice",
+      "Arc Recordings (2)",
+      "Art Is Poetry",
+      "Blackout Music (3)",
+      "Cope Records",
+      "Corriere Della Sera, La Gazzetta Dello Sport",
+      "Cowbell Music",
+      "Dragon (8)",
+      "ECM Records",
+      "Edizioni Carosello",
+      "EmArcy",
+      "Emme Record Label",
+      "Enja Records",
+      "Europe Jazz Odyssey",
+      "Exlibris",
+      "FIMIC",
+      "Gateway Music",
+      "GroovesVille Music Scandinavia",
+      "Marshmallow Export",
+      "Mingus Records",
+      "Music Mecca",
+      "Music Mecca, Family Music Production",
+      "Music Mecca, Music Mecca",
+      "Musica Jazz",
+      "Musica Jazz, Musica Jazz",
+      "My Way Music",
+      "Not On Label (Sigurd Barrett Self-released)",
+      "Pladeselskabet Marco Sound",
+      "Ploug Partnership Consulting",
+      "Prophone Records AB",
+      "Right Tone",
+      "Savvy",
+      "SteepleChase",
+      "Storyville",
+      "Stunt Records",
+      "Stunt Records, Jazz Magazine/Jazzman",
+      "Stunt Records, Stunt Records",
+      "Stunt Records, Sundance (2)",
+      "Sådan'sk",
+      "Terasima Records",
+      "Tiger (10)",
+      "Universal Music",
+      "onandoff records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jesper Bodilsen",
+    "mbid": "e013efb5-6806-4f81-82a2-3d4c85ec4842",
+    "listeners": 13079,
+    "playcount": 37494,
+    "listener_play_ratio": 2.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jesper+Bodilsen\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "Smooth Jazz",
+      "jazz bass",
+      "modern jazz",
+      "bass"
+    ],
+    "similar_artists": [
+      "Thomas Agergaard",
+      "Lo Greco Bros Quartet",
+      "Johan Lindvall trio",
+      "Lorenzo Tucci",
+      "Walt Weiskopf"
+    ],
+    "top_tracks": [
+      {
+        "name": "Blame It on My Youth",
+        "listeners": 5644,
+        "playcount": 12034
+      },
+      {
+        "name": "Winter Wonderland",
+        "listeners": 4256,
+        "playcount": 7687
+      },
+      {
+        "name": "Fanølyng",
+        "listeners": 1116,
+        "playcount": 1767
+      },
+      {
+        "name": "Moon River",
+        "listeners": 758,
+        "playcount": 2075
+      },
+      {
+        "name": "Away in a Manger",
+        "listeners": 683,
+        "playcount": 1016
+      },
+      {
+        "name": "My Funny Valentine",
+        "listeners": 632,
+        "playcount": 935
+      },
+      {
+        "name": "Caetano",
+        "listeners": 372,
+        "playcount": 1458
+      },
+      {
+        "name": "Kärlekens ögon",
+        "listeners": 346,
+        "playcount": 643
+      },
+      {
+        "name": "One Of A Kind",
+        "listeners": 341,
+        "playcount": 1425
+      },
+      {
+        "name": "Song For Her Being Here",
+        "listeners": 278,
+        "playcount": 1077
+      }
+    ],
+    "url": "https://www.last.fm/music/Jesper+Bodilsen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

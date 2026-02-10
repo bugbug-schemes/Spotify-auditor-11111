@@ -1,0 +1,183 @@
+{
+  "artist_name": "Third Rail Trio",
+  "artist_id": "third_rail_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:39:42.837708+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 330966121,
+    "name": "Third Rail Trio",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/330966121",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/287b1ba24442fdf3148737c286bfba4d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Whispered Secrets",
+      "Velvet ends",
+      "Starlight Stroll",
+      "The wind the time"
+    ],
+    "track_durations": [
+      175,
+      174,
+      170,
+      159
+    ],
+    "track_ranks": [
+      66736,
+      39792,
+      67090,
+      64083
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Starlight Stroll",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where the Wind Once Was",
+        "label": "",
+        "release_date": "2025-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet ends",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The wind the time",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispered Secrets",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4326463,
+    "name": "Third Rail (8)",
+    "profile": "Jazz fusion trio",
+    "realname": "",
+    "social_urls": [
+      "https://www.jazzrocktv.de/jazzrocktv-80-third-rail/",
+      "https://www.youtube.com/watch?v=Oo-hb0sWPWw"
+    ],
+    "members": [
+      "George Whitty",
+      "Tom Brechtlein",
+      "Janek Gwizdala"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Aerohead Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Third Rail Trio",
+    "mbid": "",
+    "listeners": 29358,
+    "playcount": 88912,
+    "listener_play_ratio": 3.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Third+Rail+Trio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Trio In Transit",
+      "Nocturne on 7th",
+      "The Fading Light Trio",
+      "Blue Hour Theory",
+      "Nighthawks Revisited"
+    ],
+    "top_tracks": [
+      {
+        "name": "Starlight Stroll",
+        "listeners": 14538,
+        "playcount": 28970
+      },
+      {
+        "name": "The wind the time",
+        "listeners": 14407,
+        "playcount": 30580
+      },
+      {
+        "name": "Velvet ends",
+        "listeners": 8753,
+        "playcount": 16133
+      },
+      {
+        "name": "Whispered secrets",
+        "listeners": 6801,
+        "playcount": 13229
+      }
+    ],
+    "url": "https://www.last.fm/music/Third+Rail+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

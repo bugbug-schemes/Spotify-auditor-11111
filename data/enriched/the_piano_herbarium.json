@@ -1,0 +1,194 @@
+{
+  "artist_name": "The Piano Herbarium",
+  "artist_id": "the_piano_herbarium",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:36:10.888835+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 349123441,
+    "name": "The Piano Herbarium",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/349123441",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Peace Lily",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verbena",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dropmore Scarlet",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Scilla Minor",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fumitory",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tiarella",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Delphinium",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8231030,
+    "name": "мʌvʌ",
+    "profile": "мʌvʌ is audiovisual artist who comes from Slovakia.\r\nPrior to songwriting, he had been writing poetry for several years. He never attended any music classes, so to compensate for it he started experimenting with different sounds, structures, rhythms and melodies. After recording some virtual piano demos at dorm which later turned into songs, he self-released debut album \"Sinusoidal\" under artistic name мʌvʌ in April 2016. Sonically, the record is a tilting mix of artificial and organic sounds, heaviness represented by grandiose church pipe and reed organs and lightness by uplifting solemn synth strings. \r\nIn 2017, short 4-track EP of covers titled \"Lues\" came to life. It comprises of his own renditions of popular tracks from the late 50’s and early 60’s era.\r\nTrying to improve his skills, мʌvʌ decided to teach himself acoustic guitar. These attempts gave birth to the sophomore acoustic record \"Enklávy bezlesia\" [in English \"Forest-free Enclaves\"]. All songs (unlike those on the first a",
+    "realname": "",
+    "social_urls": [
+      "https://li.sten.to/myaudiovisualart"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 1,
+    "total_releases": 4,
+    "formats": [
+      "6xFile, MP3, MiniAlbum, Comp, 320",
+      "CD-ROM, Album"
+    ],
+    "labels": [
+      "Self-Made Record",
+      "Thomas Imposter Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Piano Herbarium",
+    "mbid": "",
+    "listeners": 1448,
+    "playcount": 3214,
+    "listener_play_ratio": 2.22,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Piano+Herbarium\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Renza Cael",
+      "Clara Cummins",
+      "Elias Gianni",
+      "Thiméo Louis",
+      "Nicholai Janeret"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tiarella",
+        "listeners": 1048,
+        "playcount": 2230
+      },
+      {
+        "name": "Peace Lily",
+        "listeners": 409,
+        "playcount": 943
+      },
+      {
+        "name": "Scilla Minor",
+        "listeners": 20,
+        "playcount": 37
+      },
+      {
+        "name": "Delphinium",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Fumitory",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Dropmore Scarlet",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Verbena",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Piano+Herbarium"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

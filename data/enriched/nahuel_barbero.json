@@ -1,0 +1,139 @@
+{
+  "artist_name": "Nahuel Barbero",
+  "artist_id": "nahuel_barbero",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:55:07.412459+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "96ab49ff-62a8-42c6-9e4d-2eda55a0d203",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/2QQM8K8Eqkysh2Dn5Myv6I",
+      "social network": "https://www.instagram.com/nahuelhipnotica/"
+    },
+    "labels": [
+      "Distribución Digital Integral"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4828438,
+    "name": "Nahuel Barbero",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/4828438",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "La cima",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9213664,
+    "name": "Nahuel Barbero",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Album",
+      "CD, EP"
+    ],
+    "labels": [
+      "Eden Srl",
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nahuel Barbero",
+    "mbid": "96ab49ff-62a8-42c6-9e4d-2eda55a0d203",
+    "listeners": 18,
+    "playcount": 97,
+    "listener_play_ratio": 5.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nahuel+Barbero\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Julián Baglietto",
+      "Melanie Williams & El Cabloide",
+      "Clara Cava",
+      "Valdes",
+      "Sig Ragga"
+    ],
+    "top_tracks": [
+      {
+        "name": "Barrio Chino",
+        "listeners": 18,
+        "playcount": 97
+      }
+    ],
+    "url": "https://www.last.fm/music/Nahuel+Barbero"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,523 @@
+{
+  "artist_name": "Catching Flies",
+  "artist_id": "catching_flies",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:01:10.252627+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "56072b4f-f0e2-486a-b90c-7670ef24068d",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1991",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "electronic"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000465891940"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003487538",
+      "bandcamp": "https://catchingflies.bandcamp.com/",
+      "bandsintown": "https://www.bandsintown.com/a/4843380",
+      "discogs": "https://www.discogs.com/artist/3534079",
+      "free streaming": "https://www.deezer.com/artist/4523467",
+      "last.fm": "https://www.last.fm/music/Catching+Flies",
+      "lyrics": "https://genius.com/artists/Catching-flies",
+      "official homepage": "https://www.catchingflies.com/",
+      "other databases": "https://www.whosampled.com/Catching-Flies/",
+      "purchase for download": "https://www.beatport.com/artist/catching-flies/321285",
+      "social network": "https://www.mixcloud.com/CatchingFlies/",
+      "songkick": "https://www.songkick.com/artists/6406169",
+      "soundcloud": "https://soundcloud.com/catchingfliesmusic",
+      "streaming": "https://tidal.com/artist/4862716",
+      "wikidata": "https://www.wikidata.org/wiki/Q17037382"
+    },
+    "labels": [
+      "UPPM Records",
+      "Reflections",
+      "[no label]",
+      "Cercle Records",
+      "Indigo Soul",
+      "Anjunadeep"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4523467,
+    "name": "Catching Flies",
+    "nb_fan": 4796,
+    "nb_album": 61,
+    "link": "https://www.deezer.com/artist/4523467",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/80d1347ab2743c36aaffbeb55e68de97/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Parra For Cuva",
+      "The West Green Quartet"
+    ],
+    "contributor_roles": {
+      "The West Green Quartet": [
+        "Main"
+      ],
+      "Parra For Cuva": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Tides",
+      "Daymarks",
+      "Care 4 U",
+      "Diamonds",
+      "Sunrays [Strings]",
+      "Opals",
+      "Satisfied (Ambient Reprise)",
+      "Sunlite",
+      "Mt. Wolf - Life Size Ghosts (Catching Flies Remix)",
+      "Komorebi",
+      "Snow Day",
+      "Ojai",
+      "Magnolia",
+      "Sundial Avenue",
+      "The Last Phone Call (The West Green Quartet Rework)",
+      "1991",
+      "When The Sun Bursts",
+      "Mama's Wisdom",
+      "Orsay",
+      "On A Clear Day, You Can See Forever (Edit)",
+      "Falling Apart",
+      "GLY",
+      "Marseille",
+      "WORRY.",
+      "Hummingbird"
+    ],
+    "track_durations": [
+      216,
+      225,
+      230,
+      124,
+      209,
+      144,
+      195,
+      228,
+      254,
+      230,
+      208,
+      209,
+      153,
+      144,
+      124,
+      168,
+      259,
+      284,
+      246,
+      219,
+      208,
+      220,
+      145,
+      243,
+      191
+    ],
+    "track_ranks": [
+      313268,
+      429417,
+      239557,
+      137586,
+      155284,
+      184806,
+      290714,
+      360678,
+      250808,
+      305291,
+      73007,
+      296246,
+      339336,
+      98835,
+      43988,
+      202830,
+      170026,
+      124896,
+      254424,
+      271120,
+      168594,
+      202808,
+      431242,
+      183032,
+      203249
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "ep": 8,
+      "single": 46
+    },
+    "albums": [
+      {
+        "title": "Beats & Pieces",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tides [Reworks]",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tides",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Synth Alley | BLUE",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Silver Linings Remixed",
+        "label": "",
+        "release_date": "2020-04-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ghosts",
+        "label": "",
+        "release_date": "2019-12-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Silver Linings",
+        "label": "",
+        "release_date": "2019-07-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sunlite",
+        "label": "",
+        "release_date": "2026-01-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "1991",
+        "label": "",
+        "release_date": "2025-11-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hummingbird",
+        "label": "",
+        "release_date": "2025-10-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I Do",
+        "label": "",
+        "release_date": "2025-03-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "[Strings]",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Satisfied (The Remixes)",
+        "label": "",
+        "release_date": "2020-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Long Journey Home",
+        "label": "",
+        "release_date": "2013-11-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Stars",
+        "label": "",
+        "release_date": "2012-01-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "On A Clear Day, You Can See Forever",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Care 4 U",
+        "label": "",
+        "release_date": "2025-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Iajo",
+        "label": "",
+        "release_date": "2025-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marseille",
+        "label": "",
+        "release_date": "2025-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sundial Avenue",
+        "label": "",
+        "release_date": "2025-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "IMY",
+        "label": "",
+        "release_date": "2025-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ojai",
+        "label": "",
+        "release_date": "2024-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "WORRY.",
+        "label": "",
+        "release_date": "2024-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Opals [Strings]",
+        "label": "",
+        "release_date": "2024-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Satisfied [Strings]",
+        "label": "",
+        "release_date": "2024-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Falling Apart",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Trust My Love (Catching Flies Remix)",
+        "label": "",
+        "release_date": "2024-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Halo [Breathe]",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Last Phone Call (The West Green Quartet Rework)",
+        "label": "",
+        "release_date": "2024-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Halo (Actress' Untitled Mix)",
+        "label": "",
+        "release_date": "2024-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "George Fitzgerald",
+      "Il:lo",
+      "Parra For Cuva",
+      "Tourist",
+      "Christian Löffler",
+      "Lane 8",
+      "ODESZA",
+      "Angara",
+      "Caribou",
+      "Stereoclip"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1098970,
+    "name": "Catching Flies",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 5,
+    "digital_only_releases": 1,
+    "total_releases": 6,
+    "formats": [
+      "10xFile, MP3, Album, 320",
+      "2xCD, Comp",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Enh"
+    ],
+    "labels": [
+      "Artstar Records",
+      "Cobalt Music (2)",
+      "Not On Label",
+      "Rombox.com",
+      "UMS Records",
+      "Unlabel"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Catching Flies",
+    "mbid": "56072b4f-f0e2-486a-b90c-7670ef24068d",
+    "listeners": 339439,
+    "playcount": 4176889,
+    "listener_play_ratio": 12.31,
+    "bio_exists": true,
+    "bio_summary": "Catching Flies is a musician, DJ and record producer from London, England. He has self-released two EPs and done numerous remixes for artists like Wilkinson and Rainy Milo. His sound has been described as sitting on the \"smooth, mellow side of electronic music\" somewhere \"between Flying Lotus and Bonobo\" <a href=\"https://www.last.fm/music/Catching+Flies\">Read more on Last.fm</a>",
+    "tags": [
+      "dream pop",
+      "ambient",
+      "trip-hop",
+      "downtempo",
+      "electronic"
+    ],
+    "similar_artists": [
+      "Henry Green",
+      "Parra for Cuva",
+      "Tor",
+      "il:lo",
+      "Tourist"
+    ],
+    "top_tracks": [
+      {
+        "name": "Satisfied (Ambient Reprise)",
+        "listeners": 99251,
+        "playcount": 467408
+      },
+      {
+        "name": "Satisfied - Edit",
+        "listeners": 80454,
+        "playcount": 382497
+      },
+      {
+        "name": "Opals",
+        "listeners": 63761,
+        "playcount": 241472
+      },
+      {
+        "name": "GLY",
+        "listeners": 61713,
+        "playcount": 252815
+      },
+      {
+        "name": "Mt. Wolf - Life Size Ghosts - Catching Flies Remix",
+        "listeners": 57225,
+        "playcount": 270799
+      },
+      {
+        "name": "Daymarks",
+        "listeners": 56965,
+        "playcount": 228480
+      },
+      {
+        "name": "Komorebi",
+        "listeners": 48926,
+        "playcount": 181128
+      },
+      {
+        "name": "Stay Forever",
+        "listeners": 37736,
+        "playcount": 140783
+      },
+      {
+        "name": "Ghosts",
+        "listeners": 37091,
+        "playcount": 143555
+      },
+      {
+        "name": "Diamonds",
+        "listeners": 33784,
+        "playcount": 99602
+      }
+    ],
+    "url": "https://www.last.fm/music/Catching+Flies"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

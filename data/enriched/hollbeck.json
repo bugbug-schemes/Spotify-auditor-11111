@@ -1,0 +1,232 @@
+{
+  "artist_name": "Hollbeck",
+  "artist_id": "hollbeck",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:09:34.087251+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "75b7dd4d-6f39-4927-854d-acc594045bd7",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/98746572",
+      "purchase for download": "https://music.apple.com/us/artist/1520367313",
+      "streaming": "https://tidal.com/artist/20160478",
+      "youtube music": "https://music.youtube.com/channel/UCNqkbn5hDSNNeUQKrYXbgRw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 98746572,
+    "name": "Hollbeck",
+    "nb_fan": 9,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/98746572",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/84026a0b1e5d8ea038f536a04fbde044/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "I Saw You Across the Room",
+      "Blossom Serenade",
+      "Angels We Have Heard on High"
+    ],
+    "track_durations": [
+      233,
+      196,
+      146
+    ],
+    "track_ranks": [
+      38611,
+      37669,
+      30120
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Our Uptown Affair",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Ocean in Your Eyes",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Saw You Across the Room",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blossom Serenade",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The yellow note",
+        "label": "",
+        "release_date": "2023-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meet Me Around Noon",
+        "label": "",
+        "release_date": "2023-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Fall In Love Too Easily",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angels We Have Heard on High",
+        "label": "",
+        "release_date": "2020-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hollbeck",
+    "mbid": "75b7dd4d-6f39-4927-854d-acc594045bd7",
+    "listeners": 57391,
+    "playcount": 166870,
+    "listener_play_ratio": 2.91,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hollbeck\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Prism Trio",
+      "Trois Amis",
+      "Gene Hart Trio",
+      "Loft Trio",
+      "Kendrettes"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Yellow Note",
+        "listeners": 18332,
+        "playcount": 41505
+      },
+      {
+        "name": "Omväg",
+        "listeners": 14463,
+        "playcount": 39892
+      },
+      {
+        "name": "I Fall In Love Too Easily",
+        "listeners": 13652,
+        "playcount": 28539
+      },
+      {
+        "name": "I Saw You Across the Room",
+        "listeners": 10141,
+        "playcount": 21737
+      },
+      {
+        "name": "Angels We Have Heard on High",
+        "listeners": 8336,
+        "playcount": 16617
+      },
+      {
+        "name": "Blossom Serenade",
+        "listeners": 7312,
+        "playcount": 16682
+      },
+      {
+        "name": "Smile For Me",
+        "listeners": 322,
+        "playcount": 504
+      },
+      {
+        "name": "Aftonskugga",
+        "listeners": 298,
+        "playcount": 535
+      },
+      {
+        "name": "Gånglek från Solliden",
+        "listeners": 199,
+        "playcount": 486
+      },
+      {
+        "name": "Angels We Have Heard on High - Saxophone Solo",
+        "listeners": 67,
+        "playcount": 198
+      }
+    ],
+    "url": "https://www.last.fm/music/Hollbeck"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

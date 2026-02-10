@@ -1,0 +1,81 @@
+{
+  "artist_name": "Satin Air",
+  "artist_id": "satin_air",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:55:27.828548+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Satin Air', got 'setinai'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Satin Air",
+    "mbid": "",
+    "listeners": 658,
+    "playcount": 966,
+    "listener_play_ratio": 1.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Satin+Air\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Maison Lune",
+      "Echo Riviera",
+      "Pure Recall",
+      "Swayroom",
+      "Coco Siesta"
+    ],
+    "top_tracks": [
+      {
+        "name": "Aquarelle",
+        "listeners": 591,
+        "playcount": 842
+      },
+      {
+        "name": "Color Run",
+        "listeners": 78,
+        "playcount": 124
+      }
+    ],
+    "url": "https://www.last.fm/music/Satin+Air"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

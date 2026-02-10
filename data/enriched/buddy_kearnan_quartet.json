@@ -1,0 +1,179 @@
+{
+  "artist_name": "Buddy Kearnan Quartet",
+  "artist_id": "buddy_kearnan_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:52:47.802725+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170357337,
+    "name": "Buddy Kearnan Quartet",
+    "nb_fan": 1,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/170357337",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a3ce1e6503273e2230817ee2d816ebbb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Break the lines",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solitude's Embrace",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn's Lament",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Envelope",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Busy December",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Squirrels of Union Square",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Sharpness in the Air",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Water Maiden",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Museum of Broken Hearts",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bamboo Scaffolds",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Buddy Kearnan Quartet",
+    "mbid": "",
+    "listeners": 9090,
+    "playcount": 21483,
+    "listener_play_ratio": 2.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Buddy+Kearnan+Quartet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lennie Zimmerman + 3",
+      "Sand Quartet",
+      "Tommie Blayne",
+      "George Kuntz Four",
+      "Stewart Park Quartet"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Water Maiden",
+        "listeners": 7198,
+        "playcount": 18454
+      },
+      {
+        "name": "Break the lines",
+        "listeners": 2080,
+        "playcount": 3009
+      },
+      {
+        "name": "I'll Be Home For Christmas",
+        "listeners": 1,
+        "playcount": 19
+      },
+      {
+        "name": "Busy December",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Buddy+Kearnan+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

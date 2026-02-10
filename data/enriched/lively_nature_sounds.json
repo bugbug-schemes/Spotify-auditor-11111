@@ -1,0 +1,168 @@
+{
+  "artist_name": "Lively Nature Sounds",
+  "artist_id": "lively_nature_sounds",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:09:53.061228+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 133414562,
+    "name": "Lively Nature Sounds",
+    "nb_fan": 2,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/133414562",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1188e8aeb78d47f94511b11b3eeaf3b2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Summertime Chirps",
+        "label": "",
+        "release_date": "2025-07-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zen Spirits: Japanese Healing Sounds for Meditation and Peace",
+        "label": "",
+        "release_date": "2025-06-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nature Sounds For Sleep",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wild Life Birds and Rain",
+        "label": "",
+        "release_date": "2021-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lively Nature Sounds",
+    "mbid": "",
+    "listeners": 24662,
+    "playcount": 79369,
+    "listener_play_ratio": 3.22,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lively+Nature+Sounds\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Feathern",
+      "Neightbirds",
+      "Soul Healer",
+      "Hinterländer",
+      "Natural Awakening"
+    ],
+    "top_tracks": [
+      {
+        "name": "Birds Of the Rainforest",
+        "listeners": 24646,
+        "playcount": 79189
+      },
+      {
+        "name": "Still Joyful",
+        "listeners": 16,
+        "playcount": 22
+      },
+      {
+        "name": "Soft Rain with Birds Singing and Chirping",
+        "listeners": 13,
+        "playcount": 23
+      },
+      {
+        "name": "Wild Life Birds and Rain",
+        "listeners": 12,
+        "playcount": 21
+      },
+      {
+        "name": "Waking Blissful",
+        "listeners": 9,
+        "playcount": 15
+      },
+      {
+        "name": "Relaxing Nightfall",
+        "listeners": 6,
+        "playcount": 12
+      },
+      {
+        "name": "Dictionary of the Forest",
+        "listeners": 3,
+        "playcount": 13
+      },
+      {
+        "name": "Terminology of the Forest",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Waterplane Brook",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "The Lexicon of the Forest",
+        "listeners": 2,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Lively+Nature+Sounds"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

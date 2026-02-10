@@ -1,0 +1,96 @@
+{
+  "artist_name": "Z Izzard",
+  "artist_id": "z_izzard",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:06:26.846908+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Z Izzard', got 'Wizzard'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Z Izzard",
+    "mbid": "",
+    "listeners": 3763,
+    "playcount": 10140,
+    "listener_play_ratio": 2.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Z+Izzard\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "cb10",
+      "Revotek",
+      "Slow Circuit",
+      "Shaolin Healing Bowls",
+      "Spirit Garden"
+    ],
+    "top_tracks": [
+      {
+        "name": "Eternal Light",
+        "listeners": 1899,
+        "playcount": 4173
+      },
+      {
+        "name": "Meditacion Profunda 54 Hz",
+        "listeners": 886,
+        "playcount": 2510
+      },
+      {
+        "name": "Lost in Neverland 528 Hz",
+        "listeners": 749,
+        "playcount": 2093
+      },
+      {
+        "name": "Moon Flower 852 Hz",
+        "listeners": 367,
+        "playcount": 1362
+      },
+      {
+        "name": "Magnitude",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Z+Izzard"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

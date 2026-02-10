@@ -1,0 +1,593 @@
+{
+  "artist_name": "Populous",
+  "artist_id": "populous",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:31:07.149486+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e1ce2605-8406-4933-b7d8-89e106e3b6ed",
+    "type": "Person",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "electronic"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://populous.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/47088",
+      "free streaming": "https://www.deezer.com/artist/6855",
+      "myspace": "https://myspace.com/populous",
+      "social network": "https://www.facebook.com/populousmusic",
+      "soundcloud": "https://soundcloud.com/populous",
+      "streaming": "https://tidal.com/artist/4581596"
+    },
+    "labels": [
+      "Latinambient",
+      "A Number of Small Things",
+      "La tempesta",
+      "Morr Music",
+      "Wonderwheel Recordings",
+      "Bad Panda Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6855,
+    "name": "Populous",
+    "nb_fan": 3234,
+    "nb_album": 22,
+    "link": "https://www.deezer.com/artist/6855",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c79f81d6800eba7c104c6ca387854e98/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Barda",
+      "El Búho",
+      "Ela Minus",
+      "Emmanuelle",
+      "Fuera",
+      "Lucia Manca",
+      "Matilde Davoli",
+      "Nina Miranda",
+      "Riva",
+      "Short Stories"
+    ],
+    "contributor_roles": {
+      "Fuera": [
+        "Main"
+      ],
+      "Barda": [
+        "Main"
+      ],
+      "Ela Minus": [
+        "Featured"
+      ],
+      "Riva": [
+        "Main"
+      ],
+      "El Búho": [
+        "Main"
+      ],
+      "Emmanuelle": [
+        "Main"
+      ],
+      "Nina Miranda": [
+        "Featured"
+      ],
+      "Lucia Manca": [
+        "Main"
+      ],
+      "Matilde Davoli": [
+        "Featured"
+      ],
+      "Short Stories": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Luna ácida",
+      "Banda",
+      "Azul Oro",
+      "Objetos enterrados",
+      "Batismo",
+      "Racatin",
+      "Mi Sueño",
+      "Alala (El Búho Remix)",
+      "Alala",
+      "Umi",
+      "Voz Serena",
+      "Picón",
+      "Berlinese Dubplate",
+      "Flores No Mar (Radio Edit)",
+      "Cru",
+      "Caparica",
+      "Canoe Canoa",
+      "Roma",
+      "La isla diferente",
+      "Sundae Pitch",
+      "Bon Bon Pour Les Rappers",
+      "Steve",
+      "Breathes The Best (Album Version)",
+      "Shipwreck",
+      "L'Architettura del Mare"
+    ],
+    "track_durations": [
+      248,
+      198,
+      207,
+      290,
+      192,
+      217,
+      274,
+      260,
+      215,
+      181,
+      306,
+      252,
+      268,
+      263,
+      322,
+      217,
+      177,
+      373,
+      226,
+      164,
+      147,
+      69,
+      135,
+      96,
+      304
+    ],
+    "track_ranks": [
+      270698,
+      152410,
+      171791,
+      276577,
+      239060,
+      137167,
+      100211,
+      142189,
+      195903,
+      179441,
+      152307,
+      145998,
+      32619,
+      151637,
+      145213,
+      118967,
+      50910,
+      62445,
+      166385,
+      55412,
+      28409,
+      18592,
+      3524,
+      11661,
+      68277
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 2,
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "Isla diferente",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "W",
+        "label": "",
+        "release_date": "2020-05-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Azulejos",
+        "label": "",
+        "release_date": "2017-06-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Drawn In Basic",
+        "label": "",
+        "release_date": "2008-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Queue For Love",
+        "label": "",
+        "release_date": "2005-05-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Quipo",
+        "label": "",
+        "release_date": "2002-12-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Com Amigos (Remixes)",
+        "label": "",
+        "release_date": "2018-10-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Breathes The Best",
+        "label": "",
+        "release_date": "2006-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Picón (Mondocane Remix)",
+        "label": "",
+        "release_date": "2025-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Picón",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luna ácida (Balam Club Mix)",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luna ácida",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Objetos enterrados (San Ignacio Remix)",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Objetos enterrados",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonbaton Vol. 2",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonbaton Vol. 1",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "HOUSE OF KETA",
+        "label": "",
+        "release_date": "2020-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soy Lo Que Soy",
+        "label": "",
+        "release_date": "2020-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flores No Mar (Radio Edit)",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azulejos Remixes",
+        "label": "",
+        "release_date": "2017-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azul Oro",
+        "label": "",
+        "release_date": "2017-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azulejos",
+        "label": "",
+        "release_date": "2017-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Chancha Via Circuito",
+      "Yeahman",
+      "Thornato",
+      "Nicola Cruz",
+      "El Buho",
+      "Matanza",
+      "Lagartijeando",
+      "Islandman",
+      "BLOOM",
+      "Rodrigo Gallardo"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 47088,
+    "name": "Populous",
+    "profile": "Italian electronic music producer and live performer.",
+    "realname": "Andrea Mangia",
+    "social_urls": [
+      "https://populous.bandcamp.com/music",
+      "https://soundcloud.com/populous/tracks",
+      "https://www.facebook.com/populousmusic",
+      "https://twitter.com/populousmusic"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 41,
+    "digital_only_releases": 59,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, MP3, Comp, 320",
+      "11xFile, MP3, Comp",
+      "11xFile, MP3, Comp, 320",
+      "12\", EP",
+      "12\", EP, Ltd",
+      "12\", EP, Ltd, Num, Red",
+      "13xFile, MP3, Album",
+      "14xFile, MP3",
+      "14xFile, MP3, Comp, 320",
+      "17xFile, WAV, Comp",
+      "25xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp, Promo",
+      "3xFile, MP3, 320",
+      "3xLP, Comp, Ltd",
+      "40xFile, FLAC, Comp",
+      "52xFile, MP3, Comp, 256",
+      "5xFile, AAC, EP",
+      "5xFile, MP3, EP",
+      "5xFile, MP3, EP, 320",
+      "7\", Single",
+      "8xFile, MP3, WAV, Album",
+      "9xFile, AAC, MiniAlbum, 256",
+      "9xFile, FLAC",
+      "9xFile, FLAC, Comp",
+      "9xFile, MP3, EP, 320",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, Gat",
+      "CD, Comp",
+      "CD, Comp, Boo",
+      "CD, EP",
+      "CDr, Ltd, Num",
+      "DVD-V",
+      "File, AAC, Single",
+      "File, AAC, Single, 256",
+      "File, MP3, 320",
+      "File, MP3, Comp, Mixed, 265",
+      "File, MP3, Mixed, 320",
+      "File, WAV, RE",
+      "File, WAV, Single",
+      "LP",
+      "LP, Album",
+      "LP, Album, Ltd",
+      "LP, Album, Ltd, Blu",
+      "LP, Album, Ltd, Pur",
+      "LP, Album, Tur",
+      "LP, Comp, Ltd",
+      "LP, Ltd, Yel",
+      "LP, MiniAlbum, Promo",
+      "Lathe, 7\", Ltd, Pic, Squ"
+    ],
+    "labels": [
+      "42 Records, Don't Panic!",
+      "A Number Of Small Things",
+      "AMDISCS",
+      "Asian Fake",
+      "Bad Panda Records",
+      "Bad Panda Records, Bad Panda Records",
+      "Beat Machine Records",
+      "Blow Up Magazine",
+      "Columbia",
+      "Cornerstone Promotion",
+      "Disasters By Choice",
+      "Distraction Records",
+      "Enchufada",
+      "FWD.DJ",
+      "Hyperjazz Records",
+      "INQ Mag",
+      "Island Records",
+      "La Repubblica XL, Puglia Sounds",
+      "La Tempesta Dischi",
+      "La Valigetta",
+      "Labellascheggia",
+      "Latinambient",
+      "Legendary Music (5)",
+      "Legendary Music (5), Weedtracker Music",
+      "Lullabay Soundrecords",
+      "MagmatiQ Records",
+      "Man Recordings",
+      "Metatron",
+      "Mind Expansion",
+      "Modern Activism",
+      "Morr Music",
+      "Not On Label",
+      "Not On Label (16 Barre Self-released)",
+      "Not On Label (D_rradio Self-released)",
+      "Not On Label (Shank (7) Self-released)",
+      "Not On Label (Sun Glitters Self-released)",
+      "Not On Label (Teebs Self-released)",
+      "Not On Label (Thomas Knak Self-released)",
+      "Original Cultures",
+      "Peppermill Records",
+      "Persistencebit Records",
+      "Puglia Sounds",
+      "Rallye Label",
+      "Record Kicks",
+      "Rockit.it",
+      "Schema",
+      "Shika Shika",
+      "Sony Music",
+      "Suonaphone",
+      "Technowagon Recordings",
+      "To Lose La Track",
+      "Universal Music Group, La Tempesta Dischi, Motel Forlanini",
+      "V2, Etnagigante",
+      "V4V Records",
+      "Wonderwheel Recordings",
+      "Wonderwheel Recordings, La Tempesta Dischi",
+      "Wonderwheel Recordings, Wonderwheel Recordings",
+      "subversiv*rec"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Populous",
+    "mbid": "e1ce2605-8406-4933-b7d8-89e106e3b6ed",
+    "listeners": 166818,
+    "playcount": 1472109,
+    "listener_play_ratio": 8.82,
+    "bio_exists": true,
+    "bio_summary": "\nWith his debut album “Quipo”, Italian producer Populous already showed that he drew his very own conclusions from the jazzed-up beats and positive vibes of the Native-Tongues movement around A Tribe Called Quest and De La Soul. Whereas “Quipo” still displayed a mildly bulky attraction influenced by abstract electronica, “Queue For Love” now has a much more homogeneous atmosphere and a warmth fed by carefully selected samples from Soul-, Jazz- and Soundtrack records from the late 60s and early 7",
+    "tags": [
+      "electronic",
+      "idm",
+      "ambient",
+      "electronica",
+      "morr music"
+    ],
+    "similar_artists": [
+      "Islandman",
+      "Lusine",
+      "Rival Consoles",
+      "Felix Laband",
+      "Ochre"
+    ],
+    "top_tracks": [
+      {
+        "name": "Batismo",
+        "listeners": 27525,
+        "playcount": 101513
+      },
+      {
+        "name": "Canoe Canoa",
+        "listeners": 21791,
+        "playcount": 72353
+      },
+      {
+        "name": "Azul Oro",
+        "listeners": 20447,
+        "playcount": 77283
+      },
+      {
+        "name": "Alfama",
+        "listeners": 15088,
+        "playcount": 47790
+      },
+      {
+        "name": "Bon Bon Pour Les Rappers",
+        "listeners": 13089,
+        "playcount": 43498
+      },
+      {
+        "name": "Fall (feat. Cuushe)",
+        "listeners": 12469,
+        "playcount": 41759
+      },
+      {
+        "name": "The Breakfast Drama",
+        "listeners": 12417,
+        "playcount": 36800
+      },
+      {
+        "name": "Sundae Pitch",
+        "listeners": 11071,
+        "playcount": 29272
+      },
+      {
+        "name": "The Dixie Saga",
+        "listeners": 10913,
+        "playcount": 26919
+      },
+      {
+        "name": "Pawn Shop Close",
+        "listeners": 10523,
+        "playcount": 28460
+      }
+    ],
+    "url": "https://www.last.fm/music/Populous"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

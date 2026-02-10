@@ -1,0 +1,101 @@
+{
+  "artist_name": "raindrop delay",
+  "artist_id": "raindrop_delay",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:30:03.775886+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 365810142,
+    "name": "raindrop delay",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/365810142",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6a2c9295473a1c19cf7a7ab52b8a29ee/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "the great wall of china",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "raindrop delay",
+    "mbid": "",
+    "listeners": 3582,
+    "playcount": 6068,
+    "listener_play_ratio": 1.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/raindrop+delay\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "BenjieBoy",
+      "Cosmaze",
+      "Faded Amber",
+      "minoumi",
+      "Komiji"
+    ],
+    "top_tracks": [
+      {
+        "name": "the great wall of china",
+        "listeners": 3582,
+        "playcount": 6068
+      }
+    ],
+    "url": "https://www.last.fm/music/raindrop+delay"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

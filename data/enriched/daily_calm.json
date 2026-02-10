@@ -1,0 +1,167 @@
+{
+  "artist_name": "Daily Calm",
+  "artist_id": "daily_calm",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:18:56.963004+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Daily Calm', got 'Fally Ipupa'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 103491,
+    "name": "DJ Enemy",
+    "profile": "Herman Mohacsi aka DJ Enemy, was born in 1981 in hungary. With 8 years he came to switzerland. \r\n\r\nAs then he dreamt of something special and unique. With 11 years DJ Enemy discovered that electronic sound impresses him very much. Later he got a DJ set with everything included. \r\n\r\nDJ Enemy just needed 1 year until he got his first booking, at a schoolparty in St.Gallen. In the year 1993 his first events and partys started, with growing success. DJ Enemy made in his time as a newcomer Dj very much meetings and acquaintance which became very important for him. \r\n\r\n2001 Dj Enemy get to know the legendary Max B Grant. They became friends very fast. Herman became at art&noise gmbh his place in the team of Max B Grant. DJ Enemy was allowed to make commercials and flyers for art&noise partys. \r\n\r\nAnd so his dream began to awake. Dj Enemy prooved the team of art&noise that he has ambition and that he's pugnacious. So the full attention of the Team was pointed on him. \r\n\r\nThe time went by and ",
+    "realname": "Herman Mohacsi",
+    "social_urls": [
+      "http://www.myspace.com/enemychdj"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 5,
+    "digital_only_releases": 15,
+    "total_releases": 20,
+    "formats": [
+      "",
+      "12\"",
+      "13xFile, MP3, Comp, 320",
+      "18xFile, MP3, Comp, 320",
+      "19xFile, MP3",
+      "20xFile, MP3",
+      "21xFile, MP3, Comp, 320",
+      "25xFile, MP3",
+      "25xFile, MP3, Comp",
+      "26xFile, MP3",
+      "2xCD, Comp, Mixed",
+      "2xFile, MP3, 320",
+      "3xFile, MP3, 320",
+      "40xFile, MP3, Comp, 320",
+      "5xFile, MP3, 320",
+      "CD, Comp",
+      "CD, Comp, Mixed",
+      "CD, Mixed",
+      "File, MP3, Comp"
+    ],
+    "labels": [
+      "DJ Beat Records",
+      "ETX Editiontraxx",
+      "Electro Babes",
+      "Feiyr",
+      "Fette Bässe Records",
+      "Hardnation Records",
+      "NuketraXX Records",
+      "OXA",
+      "TBA",
+      "Tunnel Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Daily Calm",
+    "mbid": "",
+    "listeners": 121661,
+    "playcount": 1035472,
+    "listener_play_ratio": 8.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Daily+Calm\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nature Recordings",
+      "Nordic Rain",
+      "Splash n' Dash",
+      "DreamDrops",
+      "Northerly Nature"
+    ],
+    "top_tracks": [
+      {
+        "name": "Burst Of Rain",
+        "listeners": 50217,
+        "playcount": 392001
+      },
+      {
+        "name": "250 hz",
+        "listeners": 41760,
+        "playcount": 244163
+      },
+      {
+        "name": "500 hz",
+        "listeners": 17213,
+        "playcount": 65480
+      },
+      {
+        "name": "Cheerful Rain",
+        "listeners": 16128,
+        "playcount": 47882
+      },
+      {
+        "name": "Raining In The City At Night",
+        "listeners": 8612,
+        "playcount": 36173
+      },
+      {
+        "name": "Noise At Night",
+        "listeners": 7361,
+        "playcount": 30027
+      },
+      {
+        "name": "Lively Rainforest",
+        "listeners": 5588,
+        "playcount": 16463
+      },
+      {
+        "name": "Rainstorm",
+        "listeners": 4908,
+        "playcount": 22637
+      },
+      {
+        "name": "Perfect Noise",
+        "listeners": 4523,
+        "playcount": 149566
+      },
+      {
+        "name": "Simply Rain",
+        "listeners": 2112,
+        "playcount": 6607
+      }
+    ],
+    "url": "https://www.last.fm/music/Daily+Calm"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

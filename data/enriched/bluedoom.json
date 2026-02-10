@@ -1,0 +1,423 @@
+{
+  "artist_name": "Bluedoom",
+  "artist_id": "bluedoom",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:46:51.441591+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "61e64922-f54e-4f59-b502-bc59d10ce097",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://bluedoom95.bandcamp.com/",
+      "free streaming": "https://open.spotify.com/artist/1gFvHTW6FSJiw4FQ355I4K"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 49243432,
+    "name": "Bluedoom",
+    "nb_fan": 101,
+    "nb_album": 36,
+    "link": "https://www.deezer.com/artist/49243432",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8cba80ab309d27c3b3bfb0d70c696573/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Santana Cid"
+    ],
+    "contributor_roles": {
+      "Santana Cid": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "4:20 Pm",
+      "I Was Thinking About Us",
+      "Glasses Girl",
+      "Stars",
+      "Dreams",
+      "Uncertainty",
+      "Livin' Large",
+      "Baltimore",
+      "Pressure",
+      "Genesis"
+    ],
+    "track_durations": [
+      99,
+      157,
+      93,
+      66,
+      74,
+      133,
+      70,
+      62,
+      96,
+      121
+    ],
+    "track_ranks": [
+      207847,
+      107536,
+      7834,
+      211520,
+      62919,
+      18404,
+      50342,
+      30626,
+      4335,
+      30876
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 4,
+      "single": 29
+    },
+    "albums": [
+      {
+        "title": "42 or 43 Beats That Weren't Good Enough to Go on Our Other Albums",
+        "label": "",
+        "release_date": "2022-07-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "South Coast Compilation",
+        "label": "",
+        "release_date": "2020-10-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rebirth",
+        "label": "",
+        "release_date": "2019-05-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Eduard",
+        "label": "",
+        "release_date": "2019-10-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Last Cigarette",
+        "label": "",
+        "release_date": "2018-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chilled Samurai",
+        "label": "",
+        "release_date": "2018-08-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bluetrash",
+        "label": "",
+        "release_date": "2018-07-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Slow Burn",
+        "label": "",
+        "release_date": "2025-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dance for Me",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "De Tranqui",
+        "label": "",
+        "release_date": "2025-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pouring the Wine",
+        "label": "",
+        "release_date": "2025-07-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bring It On",
+        "label": "",
+        "release_date": "2025-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Miss You",
+        "label": "",
+        "release_date": "2025-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "They Tryna Race Me",
+        "label": "",
+        "release_date": "2025-03-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Catching Some Zzzs",
+        "label": "",
+        "release_date": "2025-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vermicelli",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Some Fancy Bling",
+        "label": "",
+        "release_date": "2024-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Collection",
+        "label": "",
+        "release_date": "2024-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Livin' Large",
+        "label": "",
+        "release_date": "2024-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mt Kosciuszko",
+        "label": "",
+        "release_date": "2023-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zebra Blue",
+        "label": "",
+        "release_date": "2022-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "9:22 P.M.",
+        "label": "",
+        "release_date": "2022-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We're Back",
+        "label": "",
+        "release_date": "2022-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alexa Blue",
+        "label": "",
+        "release_date": "2021-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Cold Outside",
+        "label": "",
+        "release_date": "2020-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Too Many Changes",
+        "label": "",
+        "release_date": "2020-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kaiserslautern",
+        "label": "",
+        "release_date": "2020-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Growing Up",
+        "label": "",
+        "release_date": "2020-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunlight Coming Through the Blinds (feat. Zac Chase)",
+        "label": "",
+        "release_date": "2023-12-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tres Acordes",
+        "label": "",
+        "release_date": "2020-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Pandrezz",
+      "Idealism",
+      "DLJ",
+      "Harris Cole",
+      "Dontcry",
+      "jhfly",
+      "Brenky",
+      "Delayde",
+      "J'San",
+      "Monma"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "bluedoom",
+    "mbid": "61e64922-f54e-4f59-b502-bc59d10ce097",
+    "listeners": 113772,
+    "playcount": 473466,
+    "listener_play_ratio": 4.16,
+    "bio_exists": true,
+    "bio_summary": "\n\n\n <a href=\"https://www.last.fm/music/bluedoom\">Read more on Last.fm</a>",
+    "tags": [
+      "Lo-Fi",
+      "instrumental",
+      "to tag",
+      "chillhop"
+    ],
+    "similar_artists": [
+      "Bokki",
+      "statistix",
+      "MVDB",
+      "JrD.",
+      "_tag"
+    ],
+    "top_tracks": [
+      {
+        "name": "4:20 PM",
+        "listeners": 72291,
+        "playcount": 236841
+      },
+      {
+        "name": "I was thinking about us",
+        "listeners": 21443,
+        "playcount": 73207
+      },
+      {
+        "name": "Dreams",
+        "listeners": 18207,
+        "playcount": 43233
+      },
+      {
+        "name": "Stars",
+        "listeners": 10007,
+        "playcount": 24643
+      },
+      {
+        "name": "Mississippi",
+        "listeners": 8400,
+        "playcount": 20077
+      },
+      {
+        "name": "Baltimore",
+        "listeners": 4170,
+        "playcount": 14808
+      },
+      {
+        "name": "Int47",
+        "listeners": 3393,
+        "playcount": 9050
+      },
+      {
+        "name": "Oblivion",
+        "listeners": 2988,
+        "playcount": 5335
+      },
+      {
+        "name": "We're Back",
+        "listeners": 2758,
+        "playcount": 5238
+      },
+      {
+        "name": "Sighs",
+        "listeners": 2512,
+        "playcount": 5289
+      }
+    ],
+    "url": "https://www.last.fm/music/bluedoom"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

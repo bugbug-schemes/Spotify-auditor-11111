@@ -1,0 +1,135 @@
+{
+  "artist_name": "Sir Dejvid",
+  "artist_id": "sir_dejvid",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:05:42.423642+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 174989387,
+    "name": "Sir Dejvid",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/174989387",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a33c09d9eb15a3af4586b4ff805a089c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Echoverse",
+        "label": "",
+        "release_date": "2025-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cipher",
+        "label": "",
+        "release_date": "2023-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aura",
+        "label": "",
+        "release_date": "2022-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sir Dejvid",
+    "mbid": "",
+    "listeners": 24287,
+    "playcount": 106286,
+    "listener_play_ratio": 4.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sir+Dejvid\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Merlin Loughty",
+      "Certificate 16",
+      "Nova Kral",
+      "Takhall",
+      "Anda Mané"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mindvibe",
+        "listeners": 23195,
+        "playcount": 103208
+      },
+      {
+        "name": "Echoverse",
+        "listeners": 1198,
+        "playcount": 3072
+      },
+      {
+        "name": "Infinitide",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Magnitune",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Aura",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sir+Dejvid"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

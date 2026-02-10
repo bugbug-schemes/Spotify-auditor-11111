@@ -1,0 +1,202 @@
+{
+  "artist_name": "Somniare",
+  "artist_id": "somniare",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:11:48.460579+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b942ef1e-191e-4c5e-a885-1cc250e9a5d7",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/235043"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 98787722,
+    "name": "Somniare",
+    "nb_fan": 2,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/98787722",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9decb03eb7f5c84751dd266ba0d980d0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Accursed Acolyte Evermore Casting",
+        "label": "",
+        "release_date": "2020-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lucens",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astra Soluna",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nova Bloom",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Promise",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Harmonic Haze",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 235043,
+    "name": "Somniare",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 6,
+    "digital_only_releases": 3,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "12\"",
+      "2xCD, Comp",
+      "3xCD, Mixed + Box",
+      "CDr, Mixed, Promo"
+    ],
+    "labels": [
+      "Hospital Records",
+      "Not On Label (Rob Roy (11) Self-released)",
+      "React",
+      "Warner Dance, Sony Music TV, Warner Dance"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Somniare",
+    "mbid": "b942ef1e-191e-4c5e-a885-1cc250e9a5d7",
+    "listeners": 63064,
+    "playcount": 408590,
+    "listener_play_ratio": 6.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Somniare\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "moonlace",
+      "Meloleon",
+      "Laurent Emmmerling",
+      "Foreglow",
+      "Emberlace"
+    ],
+    "top_tracks": [
+      {
+        "name": "Soft Promise",
+        "listeners": 50930,
+        "playcount": 280987
+      },
+      {
+        "name": "Harmonic Haze",
+        "listeners": 20912,
+        "playcount": 102264
+      },
+      {
+        "name": "Nova Bloom",
+        "listeners": 5254,
+        "playcount": 23013
+      },
+      {
+        "name": "Lucens",
+        "listeners": 1230,
+        "playcount": 2116
+      },
+      {
+        "name": "Astra Soluna",
+        "listeners": 62,
+        "playcount": 209
+      },
+      {
+        "name": "Yami",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Somniare"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

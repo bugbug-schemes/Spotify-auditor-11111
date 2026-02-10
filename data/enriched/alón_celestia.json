@@ -1,0 +1,204 @@
+{
+  "artist_name": "Alón Celestia",
+  "artist_id": "alón_celestia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:54:18.983590+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 267005382,
+    "name": "Alón Celestia",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/267005382",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bc35a5a4785b8a242e6597c520fe15d9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Perennial",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Interplanetary",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solice",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sole",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle River Flow",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Abbraccio",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eternity",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astronimo",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vega",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spherical",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alón Celestia",
+    "mbid": "",
+    "listeners": 14931,
+    "playcount": 49098,
+    "listener_play_ratio": 3.29,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Al%C3%B3n+Celestia\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Suevite",
+      "Cashmere Cove",
+      "Astra Sky",
+      "Joseph Vidal",
+      "Embershine Air"
+    ],
+    "top_tracks": [
+      {
+        "name": "Solice",
+        "listeners": 7106,
+        "playcount": 20952
+      },
+      {
+        "name": "Spherical",
+        "listeners": 4500,
+        "playcount": 11980
+      },
+      {
+        "name": "Abbraccio",
+        "listeners": 2547,
+        "playcount": 8651
+      },
+      {
+        "name": "Interplanetary",
+        "listeners": 1793,
+        "playcount": 3828
+      },
+      {
+        "name": "Gentle River Flow",
+        "listeners": 1047,
+        "playcount": 3053
+      },
+      {
+        "name": "Sole",
+        "listeners": 290,
+        "playcount": 504
+      },
+      {
+        "name": "Eternity",
+        "listeners": 49,
+        "playcount": 101
+      },
+      {
+        "name": "Astronimo",
+        "listeners": 7,
+        "playcount": 16
+      },
+      {
+        "name": "Vega",
+        "listeners": 3,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Al%C3%B3n+Celestia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

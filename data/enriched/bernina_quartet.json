@@ -1,0 +1,91 @@
+{
+  "artist_name": "Bernina Quartet",
+  "artist_id": "bernina_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:38:47.686987+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Bernina Quartet', got 'Quartetto Bernini'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bernina Quartet",
+    "mbid": "",
+    "listeners": 5458,
+    "playcount": 9800,
+    "listener_play_ratio": 1.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bernina+Quartet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Season's Greetings",
+      "Trio Lexington",
+      "Tiny Stills Quartet",
+      "New Dawn Jazz Trio",
+      "Gus Anderson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Man With The Bag",
+        "listeners": 5449,
+        "playcount": 9780
+      },
+      {
+        "name": "Last Christmas",
+        "listeners": 7,
+        "playcount": 9
+      },
+      {
+        "name": "Do You Hear What I Hear?",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "O Holy Night",
+        "listeners": 5,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Bernina+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

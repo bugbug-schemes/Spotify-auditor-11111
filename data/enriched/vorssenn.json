@@ -1,0 +1,168 @@
+{
+  "artist_name": "Vorssenn",
+  "artist_id": "vorssenn",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:59:07.670699+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13641713,
+    "name": "Vorssenn",
+    "nb_fan": 31,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/13641713",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ac9b55614d0ee685eac8e1a9729f48bc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Binaural Alpha Sinus 142 Hz - 152 Hz"
+    ],
+    "track_durations": [
+      195
+    ],
+    "track_ranks": [
+      168779
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Harmonious Focus",
+        "label": "",
+        "release_date": "2024-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Binaural Theta Sinus 300 Hz - 303 Hz",
+        "label": "",
+        "release_date": "2023-03-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vorssenn",
+        "label": "",
+        "release_date": "2021-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vorssenn",
+    "mbid": "",
+    "listeners": 29244,
+    "playcount": 171920,
+    "listener_play_ratio": 5.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Vorssenn\">Read more on Last.fm</a>",
+    "tags": [
+      "Binaural sounds"
+    ],
+    "similar_artists": [
+      "Higher Highs",
+      "Sonic Brainwaves",
+      "Synchrophonic",
+      "Therapeutic Reality",
+      "Ivo Phi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Alpha Sinus 100 Hz - 108 Hz",
+        "listeners": 18564,
+        "playcount": 72754
+      },
+      {
+        "name": "Binaural Alpha Sinus 142 Hz - 152 Hz",
+        "listeners": 11241,
+        "playcount": 33613
+      },
+      {
+        "name": "Binaural Alpha Sinus 150 Hz - 164 Hz",
+        "listeners": 9335,
+        "playcount": 37834
+      },
+      {
+        "name": "Binaural Alpha Sinus 120 Hz - 128 Hz",
+        "listeners": 7548,
+        "playcount": 25290
+      },
+      {
+        "name": "Phased Pan",
+        "listeners": 486,
+        "playcount": 932
+      },
+      {
+        "name": "Bin Cave",
+        "listeners": 399,
+        "playcount": 725
+      },
+      {
+        "name": "Focus Flutter",
+        "listeners": 331,
+        "playcount": 634
+      },
+      {
+        "name": "Metallic Pans",
+        "listeners": 45,
+        "playcount": 54
+      },
+      {
+        "name": "Electric Panning",
+        "listeners": 36,
+        "playcount": 39
+      },
+      {
+        "name": "Focus - Original mix",
+        "listeners": 10,
+        "playcount": 12
+      }
+    ],
+    "url": "https://www.last.fm/music/Vorssenn"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

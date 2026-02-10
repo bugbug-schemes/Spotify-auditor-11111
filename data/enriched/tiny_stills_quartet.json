@@ -1,0 +1,195 @@
+{
+  "artist_name": "Tiny Stills Quartet",
+  "artist_id": "tiny_stills_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:43:20.034368+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 87232522,
+    "name": "Tiny Stills Quartet",
+    "nb_fan": 9,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/87232522",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0495a13e004394970627c9e1b427c010/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Stompin' At The Savoy",
+      "The Christmas Waltz",
+      "Oh Christmas Tree",
+      "Take Five",
+      "The First Noel",
+      "Have Yourself A Merry Little Christmas",
+      "You're a Mean One, Mr Grinch",
+      "Stocking Stuffers"
+    ],
+    "track_durations": [
+      199,
+      164,
+      109,
+      243,
+      184,
+      293,
+      162,
+      196
+    ],
+    "track_ranks": [
+      32821,
+      8794,
+      64237,
+      15984,
+      7964,
+      21215,
+      11686,
+      31056
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Have Yourself A Merry Little Christmas",
+        "label": "",
+        "release_date": "2022-10-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "You're a Mean One, Mr Grinch",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stocking Stuffers",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stompin' At The Savoy",
+        "label": "",
+        "release_date": "2020-03-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tiny Stills Quartet",
+    "mbid": "",
+    "listeners": 28278,
+    "playcount": 88694,
+    "listener_play_ratio": 3.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tiny+Stills+Quartet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Bernina Quartet",
+      "Season's Greetings",
+      "Sian Sullivan",
+      "Trio Lexington",
+      "Owen Rochester Jazz"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Christmas Waltz",
+        "listeners": 10168,
+        "playcount": 19993
+      },
+      {
+        "name": "Oh Christmas Tree",
+        "listeners": 9905,
+        "playcount": 19204
+      },
+      {
+        "name": "Stompin' At The Savoy",
+        "listeners": 6820,
+        "playcount": 16041
+      },
+      {
+        "name": "Stocking Stuffers",
+        "listeners": 5475,
+        "playcount": 9367
+      },
+      {
+        "name": "You're a Mean One, Mr Grinch",
+        "listeners": 4690,
+        "playcount": 8023
+      },
+      {
+        "name": "St. Thomas",
+        "listeners": 2942,
+        "playcount": 6153
+      },
+      {
+        "name": "Take Five",
+        "listeners": 2692,
+        "playcount": 7005
+      },
+      {
+        "name": "The First Noel",
+        "listeners": 1594,
+        "playcount": 2513
+      },
+      {
+        "name": "Have Yourself A Merry Little Christmas",
+        "listeners": 189,
+        "playcount": 387
+      },
+      {
+        "name": "Joy to the World",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Tiny+Stills+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

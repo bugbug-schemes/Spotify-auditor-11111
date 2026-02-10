@@ -1,0 +1,208 @@
+{
+  "artist_name": "Velvet Reverie",
+  "artist_id": "velvet_reverie",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:56:20.965835+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 266591782,
+    "name": "Velvet Reverie",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/266591782",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/83052e56a58528c99884d96a3e61702d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Midnight Magination"
+    ],
+    "track_durations": [
+      172
+    ],
+    "track_ranks": [
+      61949
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Cloud Nine",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Embers of Desire",
+        "label": "",
+        "release_date": "2025-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Magination",
+        "label": "",
+        "release_date": "2024-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreams",
+        "label": "",
+        "release_date": "2024-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skyfall",
+        "label": "",
+        "release_date": "2024-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Is It Me",
+        "label": "",
+        "release_date": "2024-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sometimes",
+        "label": "",
+        "release_date": "2024-06-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luminous Echoes",
+        "label": "",
+        "release_date": "2024-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mday Jam",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Velvet Reverie",
+    "mbid": "",
+    "listeners": 12916,
+    "playcount": 69096,
+    "listener_play_ratio": 5.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Velvet+Reverie\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mentitoso",
+      "Alvaro Siesta",
+      "Dalliance Blues",
+      "Sleepy Siberia",
+      "Claddagh Glas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Midnight Magination",
+        "listeners": 10009,
+        "playcount": 64091
+      },
+      {
+        "name": "Cloud Nine",
+        "listeners": 2897,
+        "playcount": 4853
+      },
+      {
+        "name": "Luminous Echoes",
+        "listeners": 20,
+        "playcount": 30
+      },
+      {
+        "name": "Clockwork Masquerade",
+        "listeners": 16,
+        "playcount": 82
+      },
+      {
+        "name": "Mday Jam",
+        "listeners": 7,
+        "playcount": 7
+      },
+      {
+        "name": "Skyfall (spedup)",
+        "listeners": 6,
+        "playcount": 10
+      },
+      {
+        "name": "Is It Me",
+        "listeners": 6,
+        "playcount": 7
+      },
+      {
+        "name": "Dreams",
+        "listeners": 5,
+        "playcount": 7
+      },
+      {
+        "name": "Skyfall (Slowed)",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Skyfall",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Velvet+Reverie"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

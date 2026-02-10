@@ -1,0 +1,203 @@
+{
+  "artist_name": "Heloiza Parker",
+  "artist_id": "heloiza_parker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:05:23.637673+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 171809637,
+    "name": "Heloiza Parker",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/171809637",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7eca973eb48ae9832e1522bf3df98a7b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Fluff & The Stars"
+    ],
+    "track_durations": [
+      103
+    ],
+    "track_ranks": [
+      18311
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Puppy’s Pillow Song",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shiba's Slumber",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Donnie's Daydream",
+        "label": "",
+        "release_date": "2024-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marina's Moonbeam",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fluff & The Stars",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naptime Nocturne",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Charlie's Cradle",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lullaby for Caroline",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Friendly Butterflies",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Heloiza Parker",
+    "mbid": "",
+    "listeners": 3895,
+    "playcount": 51317,
+    "listener_play_ratio": 13.18,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Heloiza+Parker\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Leanne Haughey",
+      "Caiden Everly",
+      "Michael Chausson",
+      "Otis Meadow",
+      "Gil Sunniver"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fluff & The Stars",
+        "listeners": 2874,
+        "playcount": 34892
+      },
+      {
+        "name": "Friendly Butterflies",
+        "listeners": 732,
+        "playcount": 4856
+      },
+      {
+        "name": "Shiba's Slumber",
+        "listeners": 685,
+        "playcount": 11155
+      },
+      {
+        "name": "Helo Dreams of Ice Cream",
+        "listeners": 78,
+        "playcount": 187
+      },
+      {
+        "name": "Lullaby for Caroline",
+        "listeners": 56,
+        "playcount": 120
+      },
+      {
+        "name": "Charlie's Cradle",
+        "listeners": 22,
+        "playcount": 43
+      },
+      {
+        "name": "Naptime Nocturne",
+        "listeners": 22,
+        "playcount": 40
+      },
+      {
+        "name": "Marina's Moonbeam",
+        "listeners": 7,
+        "playcount": 17
+      },
+      {
+        "name": "Maple Syrup Song",
+        "listeners": 6,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Heloiza+Parker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,431 @@
+{
+  "artist_name": "Karl-Erik",
+  "artist_id": "karl-erik",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:45:14.428130+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "32ec12dc-66f1-4bf6-9b04-8f7f16f344f2",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "1929-08-23",
+    "end_date": "2013-01-10",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Cacka Israelsson",
+      "Karl-Erik \"Cacka\" Israelsson"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "biography": "http://www.sunkit.com/museum/artister/cacka-israelsson/index.shtml",
+      "discography page": "http://medlem.spray.se/SvenskRockandRoll/cackadiskografi.html",
+      "wikidata": "https://www.wikidata.org/wiki/Q5824886"
+    },
+    "labels": [
+      "EMI Music Sweden AB",
+      "Cupol",
+      "Hendrix music production",
+      "Parlophone Odeon",
+      "Odeon"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 188663737,
+    "name": "Karl-Erik Trio",
+    "nb_fan": 17,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/188663737",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6bcd050f1619dc931fe93a01ba6474e3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "English Rose",
+      "A Friend of Mine",
+      "I Still Think of Us",
+      "A Long Day",
+      "Stockholm",
+      "Eyes of a Child",
+      "The Quiet Change",
+      "Caçador de Mim",
+      "Go Tell It on the Mountain"
+    ],
+    "track_durations": [
+      186,
+      217,
+      179,
+      168,
+      182,
+      181,
+      199,
+      230,
+      168
+    ],
+    "track_ranks": [
+      192554,
+      54484,
+      41089,
+      267756,
+      43959,
+      64623,
+      30813,
+      90182,
+      39105
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Stockholm",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Friend of Mine",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At First Light",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In a Language We Forgot",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unfinished Conversations",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "But I'm Still Alone",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightfall",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Quiet Change",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer's End",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Go Tell It on the Mountain",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Última Canção",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caçador de Mim",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eyes of a Child",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Isle of Skye",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fun to Be Fooled",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How My Heart Sings",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Largo",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Long Day",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weary Whispers",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "English Rose",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nothing Will Ever Be The Same",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just Friends",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Still Think of Us",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 410273,
+    "name": "Karl-Erik Welin",
+    "profile": "Swedish composer, pianist and organist, born May 31, 1934 in Genarp, Skåne, Sweden, died May 30, 1992, on Mallorca, Spain.",
+    "realname": "Karl-Erik Welin",
+    "social_urls": [
+      "http://sv.wikipedia.org/wiki/Karl-Erik_Welin"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 47,
+    "digital_only_releases": 18,
+    "total_releases": 65,
+    "formats": [
+      "",
+      "2xCD",
+      "2xCD, Album",
+      "2xLP",
+      "2xLP, Comp",
+      "3xCD, Album, Comp",
+      "3xCD, Comp + Box",
+      "3xCD, Comp + CD",
+      "4xLP + Box",
+      "7\"",
+      "9xLP, Comp + Box",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, RE + CD, Album, RE, RM + CD, Album, RE,",
+      "File, AAC, Comp",
+      "LP",
+      "LP, Album",
+      "LP, Album, Comp",
+      "LP, Comp",
+      "LP, Gat",
+      "LP, Mono",
+      "LP, Mono, Promo"
+    ],
+    "labels": [
+      "BIS",
+      "BIS, BIS",
+      "Buda Musique",
+      "Caprice Records",
+      "Caprice Records, Caprice Records",
+      "Daphne Records",
+      "Expo Norr",
+      "Fermat",
+      "His Master's Voice",
+      "Interdisc (2)",
+      "Intim Musik",
+      "LCM",
+      "LVE",
+      "Malmö Audio Production",
+      "Not On Label",
+      "Olof Bright",
+      "Opus 3 (2)",
+      "Phono Suecia",
+      "Phono Suecia, Phono Suecia, Phono Suecia, Phono Suecia",
+      "Pogus Productions",
+      "Polskie Nagrania Muza, Polskie Nagrania Muza",
+      "Polskie Nagrania Muza, Polskie Nagrania Muza, Polskie Nagrania Muza, Polskie Nagrania Muza",
+      "Proprius",
+      "SFZ Records",
+      "SR Records",
+      "Seven Seas",
+      "Sonet",
+      "Sterling (2)",
+      "Swedish Society Discofil",
+      "Südwestfunk, Südwestfunk",
+      "WERGO",
+      "WERGO, WERGO"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Karl-Erik",
+    "mbid": "",
+    "listeners": 43555,
+    "playcount": 288999,
+    "listener_play_ratio": 6.64,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Karl-Erik\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "lou green",
+      "Henriette Martin",
+      "Ward Stetson",
+      "Kristian Hart",
+      "Kyrie Barnes"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Remember You",
+        "listeners": 24775,
+        "playcount": 109660
+      },
+      {
+        "name": "Lars",
+        "listeners": 13390,
+        "playcount": 67527
+      },
+      {
+        "name": "Streets of Gold",
+        "listeners": 8938,
+        "playcount": 44251
+      },
+      {
+        "name": "Who Could Have Known",
+        "listeners": 6682,
+        "playcount": 29390
+      },
+      {
+        "name": "I Wonder as I Wander",
+        "listeners": 4856,
+        "playcount": 13414
+      },
+      {
+        "name": "The Lady in Red",
+        "listeners": 4090,
+        "playcount": 12959
+      },
+      {
+        "name": "I'd Never Lie to You",
+        "listeners": 2614,
+        "playcount": 5474
+      },
+      {
+        "name": "Body & Soul",
+        "listeners": 2486,
+        "playcount": 5171
+      },
+      {
+        "name": "Clouds Got in Our Way",
+        "listeners": 437,
+        "playcount": 632
+      },
+      {
+        "name": "Dindi",
+        "listeners": 90,
+        "playcount": 180
+      }
+    ],
+    "url": "https://www.last.fm/music/Karl-Erik"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

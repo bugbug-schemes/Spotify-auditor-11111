@@ -1,0 +1,230 @@
+{
+  "artist_name": "Labyrinthines",
+  "artist_id": "labyrinthines",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:55:58.565865+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 306350831,
+    "name": "Labyrinthines",
+    "nb_fan": 1,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/306350831",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/08afa02c21d91ab494b6ffc8cb2ac8ae/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Strainless",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dimensional",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contemplative Poetry",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Circling Silence",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Altered Planes",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Transcendental",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silkki",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy to Remember",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beside Oneself",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Phosphorescent",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Circularity",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes of Being",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eclipse Douce",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "labyrinthines",
+    "mbid": "",
+    "listeners": 46231,
+    "playcount": 216777,
+    "listener_play_ratio": 4.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/labyrinthines\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Emberlace",
+      "Tristan Axvall",
+      "Oliver Ólafsson",
+      "Narnara",
+      "Lasant"
+    ],
+    "top_tracks": [
+      {
+        "name": "Circularity",
+        "listeners": 27348,
+        "playcount": 135652
+      },
+      {
+        "name": "Eclipse Douce",
+        "listeners": 13010,
+        "playcount": 46821
+      },
+      {
+        "name": "Echoes of Being",
+        "listeners": 5780,
+        "playcount": 16606
+      },
+      {
+        "name": "Altered Planes",
+        "listeners": 3989,
+        "playcount": 8675
+      },
+      {
+        "name": "Silkki",
+        "listeners": 1470,
+        "playcount": 4573
+      },
+      {
+        "name": "Transcendental",
+        "listeners": 1118,
+        "playcount": 3154
+      },
+      {
+        "name": "Contemplative Poetry",
+        "listeners": 600,
+        "playcount": 1288
+      },
+      {
+        "name": "Circling Silence",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Easy to Remember",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Crystal Somnolence",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/labyrinthines"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

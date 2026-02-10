@@ -1,0 +1,229 @@
+{
+  "artist_name": "J. Kahnberg",
+  "artist_id": "j__kahnberg",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:19:07.625088+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 261811061,
+    "name": "J. Kahnberg",
+    "nb_fan": 0,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/261811061",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/58cc6ec441da39ea2257f0217e0176a1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Lightkeeper"
+    ],
+    "track_durations": [
+      137
+    ],
+    "track_ranks": [
+      36981
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "The narrow road",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Lightkeeper",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hopefulness",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Dreamer",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slowhand",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Now is the time",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Melodic Poetry",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Disposition",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La maladie d'amour",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aftermath",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Suns Above",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feel The View",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "J. Kahnberg",
+    "mbid": "",
+    "listeners": 4209,
+    "playcount": 16107,
+    "listener_play_ratio": 3.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/J.+Kahnberg\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Max Stewart",
+      "Enzo Costa",
+      "Yolanda Rae",
+      "Jonas Björk",
+      "Fabian Lombardi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hopefulness",
+        "listeners": 2501,
+        "playcount": 7796
+      },
+      {
+        "name": "The Dreamer",
+        "listeners": 1580,
+        "playcount": 4219
+      },
+      {
+        "name": "Now is the time",
+        "listeners": 554,
+        "playcount": 1377
+      },
+      {
+        "name": "Sweet Disposition",
+        "listeners": 515,
+        "playcount": 1244
+      },
+      {
+        "name": "The Suns Above",
+        "listeners": 345,
+        "playcount": 850
+      },
+      {
+        "name": "The Lightkeeper",
+        "listeners": 306,
+        "playcount": 575
+      },
+      {
+        "name": "Feel The View",
+        "listeners": 12,
+        "playcount": 25
+      },
+      {
+        "name": "Aftermath",
+        "listeners": 9,
+        "playcount": 17
+      },
+      {
+        "name": "Melodic Poetry",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Slowhand",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/J.+Kahnberg"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,120 @@
+{
+  "artist_name": "Wilfred Field",
+  "artist_id": "wilfred_field",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:02:05.482802+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 859790,
+    "name": "Wilfred Fields",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Wilfred Field",
+    "mbid": "",
+    "listeners": 2633,
+    "playcount": 32254,
+    "listener_play_ratio": 12.25,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Wilfred+Field\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Loyd Niles",
+      "Poppy Penguin",
+      "Alicja Pawlowska",
+      "Nova Gröndahl",
+      "Snowy Bear"
+    ],
+    "top_tracks": [
+      {
+        "name": "Daytime Lullaby",
+        "listeners": 2297,
+        "playcount": 25746
+      },
+      {
+        "name": "My Lovely Teddybear",
+        "listeners": 577,
+        "playcount": 6379
+      },
+      {
+        "name": "Little Baby",
+        "listeners": 74,
+        "playcount": 115
+      },
+      {
+        "name": "Waterfalls in the Paradise",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "My First Day",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "My Bed, My Castle",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Dappy Dappy Wilson",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Wilfred+Field"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

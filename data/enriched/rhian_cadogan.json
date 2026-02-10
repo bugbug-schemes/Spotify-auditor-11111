@@ -1,0 +1,119 @@
+{
+  "artist_name": "Rhian Cadogan",
+  "artist_id": "rhian_cadogan",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:41:57.949481+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 261889711,
+    "name": "Rhian Cadogan",
+    "nb_fan": 1,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/261889711",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0aa6b97614d13fdd8e6b5526524d79b2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Almenno San Salvatore"
+    ],
+    "track_durations": [
+      167
+    ],
+    "track_ranks": [
+      109652
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Soft Balm",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Almenno San Salvatore",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rhian Cadogan",
+    "mbid": "",
+    "listeners": 23607,
+    "playcount": 105146,
+    "listener_play_ratio": 4.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rhian+Cadogan\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Niamh Shona",
+      "Florentin Davies",
+      "Lakes of Lagan",
+      "Shea Ada",
+      "Noah Hart"
+    ],
+    "top_tracks": [
+      {
+        "name": "Almenno San Salvatore",
+        "listeners": 23607,
+        "playcount": 105141
+      },
+      {
+        "name": "Rhian Cadogan - Almenno San Salvatore",
+        "listeners": 1,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Rhian+Cadogan"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

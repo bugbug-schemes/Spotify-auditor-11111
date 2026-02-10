@@ -1,0 +1,140 @@
+{
+  "artist_name": "Hausward",
+  "artist_id": "hausward",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:03:17.239411+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f7e3080a-5e4b-40db-af3b-41d7d1b1ff8f",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/23v5l9Xt9MklrDy9475aW0",
+      "streaming": "https://music.apple.com/gb/artist/1816612317"
+    },
+    "labels": [
+      "Chill Lemon"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Hausward', got 'RIAN'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hausward",
+    "mbid": "",
+    "listeners": 8685,
+    "playcount": 21639,
+    "listener_play_ratio": 2.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hausward\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Valea",
+      "Zaytune",
+      "Golden After",
+      "moe sizzle",
+      "Maison Lune"
+    ],
+    "top_tracks": [
+      {
+        "name": "Breakfast Club",
+        "listeners": 4464,
+        "playcount": 8368
+      },
+      {
+        "name": "Abstract",
+        "listeners": 1600,
+        "playcount": 3018
+      },
+      {
+        "name": "Hazy Morning",
+        "listeners": 1477,
+        "playcount": 3234
+      },
+      {
+        "name": "Turn Over",
+        "listeners": 1329,
+        "playcount": 2584
+      },
+      {
+        "name": "Joint Venture",
+        "listeners": 1269,
+        "playcount": 2070
+      },
+      {
+        "name": "aro",
+        "listeners": 1152,
+        "playcount": 1955
+      },
+      {
+        "name": "Empty House",
+        "listeners": 211,
+        "playcount": 368
+      },
+      {
+        "name": "Mango Dance",
+        "listeners": 21,
+        "playcount": 26
+      },
+      {
+        "name": "Deep Opal",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Louisiana",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Hausward"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

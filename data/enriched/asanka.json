@@ -1,0 +1,224 @@
+{
+  "artist_name": "Asanka",
+  "artist_id": "asanka",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:14:18.644925+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 60528992,
+    "name": "Asanka",
+    "nb_fan": 3,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/60528992",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/395ad5bcb4e8b30689cc858b8b8c1a2b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Evolving into Stillness",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Relieve My Suffering",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Devghar JaaIb Re Nanadi",
+        "label": "",
+        "release_date": "2024-06-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mellifluus",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sostenuto",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cryosleep Emotions",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "See It Feel It",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grain Of Sorrow",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "blue",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hundred Texts",
+        "label": "",
+        "release_date": "2021-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1373011,
+    "name": "Portoreghe' Anto Asanka Maeswere Phernando Per Gli Amici \"Kamal",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "asanka",
+    "mbid": "",
+    "listeners": 17276,
+    "playcount": 71342,
+    "listener_play_ratio": 4.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/asanka\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aisher Rami",
+      "Clyde Price",
+      "Divine Moments",
+      "Recov",
+      "Eos Astraeus"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sostenuto",
+        "listeners": 14429,
+        "playcount": 60196
+      },
+      {
+        "name": "Relieve My Suffering",
+        "listeners": 2803,
+        "playcount": 8214
+      },
+      {
+        "name": "Cryosleep Emotions",
+        "listeners": 881,
+        "playcount": 2486
+      },
+      {
+        "name": "Grains Of Sorrow",
+        "listeners": 6,
+        "playcount": 24
+      },
+      {
+        "name": "See It Feel It",
+        "listeners": 5,
+        "playcount": 22
+      },
+      {
+        "name": "Mellifluus",
+        "listeners": 3,
+        "playcount": 198
+      },
+      {
+        "name": "blue",
+        "listeners": 3,
+        "playcount": 10
+      },
+      {
+        "name": "Hundred Texts",
+        "listeners": 2,
+        "playcount": 14
+      },
+      {
+        "name": "vean vweanna",
+        "listeners": 2,
+        "playcount": 10
+      },
+      {
+        "name": "Roopa Biththi Pura",
+        "listeners": 2,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/asanka"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

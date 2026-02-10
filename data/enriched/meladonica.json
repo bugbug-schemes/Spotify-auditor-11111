@@ -1,0 +1,227 @@
+{
+  "artist_name": "Meladonica",
+  "artist_id": "meladonica",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:38:18.634347+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2b999c8a-0f14-4a65-8a9f-7572f55ceb29",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0CKBzB3A5cgDZhbdtbhQXv",
+      "streaming": "https://music.apple.com/gb/artist/1794612065"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 302130901,
+    "name": "Meladonica",
+    "nb_fan": 4,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/302130901",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/10352917054da4c61d32c218ac73a395/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Getting Away"
+    ],
+    "track_durations": [
+      141
+    ],
+    "track_ranks": [
+      291465
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Parisian Nights",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jazz Club",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Dance",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reminiscence",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Getting Away",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Breeze",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amour",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beautiful View",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coze",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Meladonica",
+    "mbid": "",
+    "listeners": 8851,
+    "playcount": 24785,
+    "listener_play_ratio": 2.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Meladonica\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nataya",
+      "Talaiio",
+      "Suuunday",
+      "Martin Bloumy",
+      "Niriko"
+    ],
+    "top_tracks": [
+      {
+        "name": "Coze",
+        "listeners": 7359,
+        "playcount": 17191
+      },
+      {
+        "name": "Beautiful View",
+        "listeners": 2185,
+        "playcount": 4372
+      },
+      {
+        "name": "Amour",
+        "listeners": 683,
+        "playcount": 1482
+      },
+      {
+        "name": "Summer Breeze",
+        "listeners": 317,
+        "playcount": 743
+      },
+      {
+        "name": "Reminiscence",
+        "listeners": 262,
+        "playcount": 475
+      },
+      {
+        "name": "Getting Away",
+        "listeners": 215,
+        "playcount": 467
+      },
+      {
+        "name": "Jazz Club",
+        "listeners": 32,
+        "playcount": 48
+      },
+      {
+        "name": "This Dance",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Autumn",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Meladonica"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

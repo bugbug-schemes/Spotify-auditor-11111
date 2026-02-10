@@ -1,0 +1,404 @@
+{
+  "artist_name": "Helmut Schenker",
+  "artist_id": "helmut_schenker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:05:16.611669+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 100042782,
+    "name": "Helmut Schenker",
+    "nb_fan": 60,
+    "nb_album": 43,
+    "link": "https://www.deezer.com/artist/100042782",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/35a27c26d4203b4d76b25b548d6eff1c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Alba",
+      "Ever Since",
+      "Silent Waves",
+      "Olga",
+      "Passing Clouds",
+      "Drift"
+    ],
+    "track_durations": [
+      152,
+      184,
+      149,
+      132,
+      160,
+      229
+    ],
+    "track_ranks": [
+      301217,
+      97279,
+      38439,
+      11637,
+      31189,
+      38550
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 42
+    },
+    "albums": [
+      {
+        "title": "Flows",
+        "label": "",
+        "release_date": "2023-12-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Alter Hero",
+        "label": "",
+        "release_date": "2025-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Uncharted Land",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deeplight",
+        "label": "",
+        "release_date": "2025-08-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drift",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Treasure Hunt",
+        "label": "",
+        "release_date": "2025-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden",
+        "label": "",
+        "release_date": "2025-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beams and Dust",
+        "label": "",
+        "release_date": "2025-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maiden Voyage",
+        "label": "",
+        "release_date": "2024-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thou Fount of Grace",
+        "label": "",
+        "release_date": "2024-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Distant Sunrise",
+        "label": "",
+        "release_date": "2024-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Long Awaited Journey",
+        "label": "",
+        "release_date": "2024-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Secret Spring",
+        "label": "",
+        "release_date": "2024-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dragonflies",
+        "label": "",
+        "release_date": "2024-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Momento",
+        "label": "",
+        "release_date": "2024-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "November Light",
+        "label": "",
+        "release_date": "2024-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon Glow",
+        "label": "",
+        "release_date": "2023-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Joyful Night",
+        "label": "",
+        "release_date": "2023-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh the Sky",
+        "label": "",
+        "release_date": "2023-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Passing Clouds",
+        "label": "",
+        "release_date": "2023-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Umbra",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sliding Doors",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Landscapes",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Sun in You",
+        "label": "",
+        "release_date": "2022-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where We Belong",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lux Aeterna",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At Ease",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Among the Clouds",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Different Clouds",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Itinere",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Dario Marianelli",
+      "Patrik Pietschmann",
+      "Angèle Dubeau",
+      "Amelia Warner",
+      "Philip Glass",
+      "Brussels Philharmonic",
+      "Johann Johannsson",
+      "Hans Zimmer",
+      "Tony Anderson",
+      "Michele Garruti"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15947400,
+    "name": "Helmut Schenker",
+    "profile": "Electronic ambient musician in Sweden.",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/helmutschenker/?hl=en",
+      "https://www.facebook.com/helmutschenker1995/",
+      "https://www.epidemicsound.com/artists/helmut-schenker/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "2xFile, AAC, Single, 256",
+      "3xFile, AAC, Single, 256"
+    ],
+    "labels": [
+      "Epidemic Sound"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Helmut Schenker",
+    "mbid": "",
+    "listeners": 46557,
+    "playcount": 213556,
+    "listener_play_ratio": 4.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Helmut+Schenker\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Claudio Polle",
+      "Jørg Sorensen",
+      "Lucién",
+      "Eric Sebastian",
+      "Ima Rayner"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alba",
+        "listeners": 37149,
+        "playcount": 166432
+      },
+      {
+        "name": "O Joyful Night",
+        "listeners": 3861,
+        "playcount": 10940
+      },
+      {
+        "name": "Ever Since",
+        "listeners": 3611,
+        "playcount": 9881
+      },
+      {
+        "name": "Among the Clouds",
+        "listeners": 2551,
+        "playcount": 7770
+      },
+      {
+        "name": "Dawnlight",
+        "listeners": 955,
+        "playcount": 2418
+      },
+      {
+        "name": "Olga",
+        "listeners": 446,
+        "playcount": 1731
+      },
+      {
+        "name": "Parallel",
+        "listeners": 319,
+        "playcount": 1339
+      },
+      {
+        "name": "Time to Time",
+        "listeners": 301,
+        "playcount": 663
+      },
+      {
+        "name": "Omnia",
+        "listeners": 247,
+        "playcount": 716
+      },
+      {
+        "name": "Evening Waltz",
+        "listeners": 247,
+        "playcount": 609
+      }
+    ],
+    "url": "https://www.last.fm/music/Helmut+Schenker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

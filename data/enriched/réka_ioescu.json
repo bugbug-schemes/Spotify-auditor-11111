@@ -1,0 +1,204 @@
+{
+  "artist_name": "Réka Ioescu",
+  "artist_id": "réka_ioescu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:50:16.894590+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 51515952,
+    "name": "Réka Ioescu",
+    "nb_fan": 22,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/51515952",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e8326c4cbeaa83f160717118d3cf32a3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Endymion",
+      "Amadeus"
+    ],
+    "track_durations": [
+      152,
+      95
+    ],
+    "track_ranks": [
+      187883,
+      41507
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Stay with me",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ave Maria",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Final Waltz",
+        "label": "",
+        "release_date": "2019-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amadeus",
+        "label": "",
+        "release_date": "2019-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Endymion",
+        "label": "",
+        "release_date": "2018-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bach Piano Classics",
+        "label": "",
+        "release_date": "2017-02-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Poppy Ackroyd",
+      "Fabrizio Paterlini",
+      "Luke Howard",
+      "Dmitry Evgrafov",
+      "Sophie Hutchings",
+      "Giovanni Allevi",
+      "Martin Herzberg",
+      "Dustin O'Halloran",
+      "James Heather",
+      "Helen Jane Long"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Réka Ioescu",
+    "mbid": "",
+    "listeners": 71847,
+    "playcount": 328413,
+    "listener_play_ratio": 4.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/R%C3%A9ka+Ioescu\">Read more on Last.fm</a>",
+    "tags": [
+      "calm",
+      "instrumental"
+    ],
+    "similar_artists": [
+      "Floriscope",
+      "Julius Aston",
+      "Sufi Sheman",
+      "Naturally Recurring",
+      "primer dia"
+    ],
+    "top_tracks": [
+      {
+        "name": "Endymion",
+        "listeners": 59477,
+        "playcount": 255643
+      },
+      {
+        "name": "Amadeus",
+        "listeners": 13150,
+        "playcount": 40018
+      },
+      {
+        "name": "Ave Maria",
+        "listeners": 5160,
+        "playcount": 14975
+      },
+      {
+        "name": "The Final Waltz",
+        "listeners": 4498,
+        "playcount": 10502
+      },
+      {
+        "name": "Stay with me",
+        "listeners": 937,
+        "playcount": 4301
+      },
+      {
+        "name": "Prelude No. 1, BWV 846: Ave Maria",
+        "listeners": 701,
+        "playcount": 1356
+      },
+      {
+        "name": "Goldberg Variations, BWV 988: Aria",
+        "listeners": 698,
+        "playcount": 1357
+      },
+      {
+        "name": "Fields of Alyssum",
+        "listeners": 46,
+        "playcount": 147
+      },
+      {
+        "name": "Tout Doucement",
+        "listeners": 44,
+        "playcount": 103
+      },
+      {
+        "name": "Shades of Autumn",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/R%C3%A9ka+Ioescu"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

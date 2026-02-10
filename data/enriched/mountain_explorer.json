@@ -1,0 +1,223 @@
+{
+  "artist_name": "Mountain Explorer",
+  "artist_id": "mountain_explorer",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:51:17.027485+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 299365711,
+    "name": "Mountain Explorer",
+    "nb_fan": 0,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/299365711",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7d5f64831859df290cb4b1213b6c1303/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "horisonten",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fog",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Earth",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solar",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eclipse",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Healing The Soul",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Relaxed Mind",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "blissful winds",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soothing Ocean",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blissful Dreams",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "lights",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "clarity",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kiruna",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2729904,
+    "name": "Walter Bonatti",
+    "profile": "Walter Bonatti (22 June 1930 in Bergamo – 13 September 2011 in Rome) was an Italian mountain climber, explorer and journalist.",
+    "realname": "",
+    "social_urls": [
+      "https://en.wikipedia.org/wiki/Walter_Bonatti",
+      "https://biografieonline.it/biografia-walter-bonatti"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "7\"",
+      "Flexi, 7\", Boo"
+    ],
+    "labels": [
+      "Epoca",
+      "Special Sonore"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mountain Explorer",
+    "mbid": "",
+    "listeners": 2610,
+    "playcount": 13587,
+    "listener_play_ratio": 5.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mountain+Explorer\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ava Twilight",
+      "Njarka",
+      "Piano Bloom",
+      "Tiam Aref",
+      "Roots Connection"
+    ],
+    "top_tracks": [
+      {
+        "name": "One Earth",
+        "listeners": 1438,
+        "playcount": 3591
+      },
+      {
+        "name": "lights",
+        "listeners": 974,
+        "playcount": 9483
+      },
+      {
+        "name": "Clarity",
+        "listeners": 261,
+        "playcount": 511
+      },
+      {
+        "name": "Blissful Dreams",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Mountain+Explorer"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

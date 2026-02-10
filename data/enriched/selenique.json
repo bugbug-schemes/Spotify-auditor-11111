@@ -1,0 +1,167 @@
+{
+  "artist_name": "Selenique",
+  "artist_id": "selenique",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:58:44.943141+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 330968891,
+    "name": "Selenique",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/330968891",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c77a081d598aaacf4c72bef18d0beb4b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Dream Appearance",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Recommence",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holding on",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lanae",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "illusory",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "As We Let Go",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlit Rivers",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waiting for Nightfall",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silver Dew",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Selenique",
+    "mbid": "",
+    "listeners": 14742,
+    "playcount": 50025,
+    "listener_play_ratio": 3.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Selenique\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ebon Meadow",
+      "Cinnamon Glass",
+      "SOLAR SONAR",
+      "Frans Dromenstadt",
+      "Linnea Arden"
+    ],
+    "top_tracks": [
+      {
+        "name": "illusory",
+        "listeners": 12219,
+        "playcount": 41340
+      },
+      {
+        "name": "Waiting for Nightfall",
+        "listeners": 2753,
+        "playcount": 8666
+      },
+      {
+        "name": "Holding on",
+        "listeners": 9,
+        "playcount": 19
+      }
+    ],
+    "url": "https://www.last.fm/music/Selenique"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

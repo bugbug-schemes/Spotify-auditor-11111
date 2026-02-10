@@ -1,0 +1,225 @@
+{
+  "artist_name": "Blake Burns",
+  "artist_id": "blake_burns",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:45:06.716225+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 80144822,
+    "name": "Blake Burns",
+    "nb_fan": 2,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/80144822",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3c2891e926a223d567d72e52cbcf7926/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "My Grandfather's Clock"
+    ],
+    "track_durations": [
+      109
+    ],
+    "track_ranks": [
+      8855
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "My Grandfather's Clock",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Espírito",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Christ Alone",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Raise Me Up",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kumbaya",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Horizon",
+        "label": "",
+        "release_date": "2023-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un éléphant qui se balançait",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vem kan segla förutan vind",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hush My Darling",
+        "label": "",
+        "release_date": "2022-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12945918,
+    "name": "Blakely Burns",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "17xFile, WAV, Album"
+    ],
+    "labels": [
+      "Not On Label (Starman Jr. Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Blake Burns",
+    "mbid": "",
+    "listeners": 6489,
+    "playcount": 89147,
+    "listener_play_ratio": 13.74,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Blake+Burns\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Marlene Soeren",
+      "The Stories We Tell",
+      "Mauve Dream",
+      "Amos Green",
+      "Robin Thames"
+    ],
+    "top_tracks": [
+      {
+        "name": "My Grandfather's Clock",
+        "listeners": 3113,
+        "playcount": 39979
+      },
+      {
+        "name": "Un éléphant qui se balançait",
+        "listeners": 3053,
+        "playcount": 29644
+      },
+      {
+        "name": "Hush My Darling",
+        "listeners": 1755,
+        "playcount": 16144
+      },
+      {
+        "name": "Vem kan segla förutan vind",
+        "listeners": 401,
+        "playcount": 2039
+      },
+      {
+        "name": "You Raise Me Up",
+        "listeners": 111,
+        "playcount": 293
+      },
+      {
+        "name": "Love Me Tender",
+        "listeners": 81,
+        "playcount": 242
+      },
+      {
+        "name": "Kumbaya",
+        "listeners": 76,
+        "playcount": 226
+      },
+      {
+        "name": "Adorável Doce",
+        "listeners": 76,
+        "playcount": 190
+      },
+      {
+        "name": "In Christ Alone",
+        "listeners": 63,
+        "playcount": 135
+      },
+      {
+        "name": "Arrorro",
+        "listeners": 63,
+        "playcount": 134
+      }
+    ],
+    "url": "https://www.last.fm/music/Blake+Burns"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

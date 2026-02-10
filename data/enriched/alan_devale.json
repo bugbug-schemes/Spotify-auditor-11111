@@ -1,0 +1,136 @@
+{
+  "artist_name": "Alan Devale",
+  "artist_id": "alan_devale",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:48:09.170135+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 168407377,
+    "name": "Alan Devale",
+    "nb_fan": 20,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/168407377",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fbbeebb312bd8ec9f19e953b33cbd72a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The right mood"
+    ],
+    "track_durations": [
+      192
+    ],
+    "track_ranks": [
+      161883
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Lights On",
+        "label": "",
+        "release_date": "2022-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Your Heart",
+        "label": "",
+        "release_date": "2022-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The right mood",
+        "label": "",
+        "release_date": "2022-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alan Devale",
+    "mbid": "",
+    "listeners": 5451,
+    "playcount": 20707,
+    "listener_play_ratio": 3.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Alan+Devale\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kate Paul",
+      "Saint Haux",
+      "Palm 3s",
+      "Sobbel Sosch",
+      "M1NT"
+    ],
+    "top_tracks": [
+      {
+        "name": "The right mood",
+        "listeners": 5366,
+        "playcount": 20418
+      },
+      {
+        "name": "Temptation",
+        "listeners": 69,
+        "playcount": 121
+      },
+      {
+        "name": "Lights On",
+        "listeners": 52,
+        "playcount": 87
+      },
+      {
+        "name": "In Your Heart",
+        "listeners": 47,
+        "playcount": 81
+      }
+    ],
+    "url": "https://www.last.fm/music/Alan+Devale"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

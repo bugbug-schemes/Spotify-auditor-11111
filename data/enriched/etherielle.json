@@ -1,0 +1,229 @@
+{
+  "artist_name": "Etherielle",
+  "artist_id": "etherielle",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:31:43.466340+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 314869681,
+    "name": "Etherielle",
+    "nb_fan": 1,
+    "nb_album": 15,
+    "link": "https://www.deezer.com/artist/314869681",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5124d4f7c3994010ab1df41d0720b034/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 15
+    },
+    "albums": [
+      {
+        "title": "Dimness",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Parity",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Of Your Dreams",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Longing",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Weight of Moonlight",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wrapped in Your Whispers",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lingering Dream",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Connecting Dreams",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Particles",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zen Solaris",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Heaven",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Galaxies",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glowing Twilight",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreams of Forgotten Light",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solara Drift",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Etherielle",
+    "mbid": "",
+    "listeners": 43286,
+    "playcount": 206884,
+    "listener_play_ratio": 4.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Etherielle\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "moonlace",
+      "Drift State",
+      "Meloleon",
+      "Astral Tides",
+      "Through Quiet Tides"
+    ],
+    "top_tracks": [
+      {
+        "name": "Particles",
+        "listeners": 31209,
+        "playcount": 137701
+      },
+      {
+        "name": "of Your Dreams",
+        "listeners": 11095,
+        "playcount": 34733
+      },
+      {
+        "name": "Lingering Dream",
+        "listeners": 5297,
+        "playcount": 17042
+      },
+      {
+        "name": "Glowing Twilight",
+        "listeners": 2016,
+        "playcount": 6576
+      },
+      {
+        "name": "Deep Heaven",
+        "listeners": 1716,
+        "playcount": 6124
+      },
+      {
+        "name": "The Longing",
+        "listeners": 1259,
+        "playcount": 3555
+      },
+      {
+        "name": "Solara Drift",
+        "listeners": 241,
+        "playcount": 1153
+      }
+    ],
+    "url": "https://www.last.fm/music/Etherielle"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

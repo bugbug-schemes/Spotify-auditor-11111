@@ -1,0 +1,558 @@
+{
+  "artist_name": "Alessandro Cortini",
+  "artist_id": "alessandro_cortini",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:49:12.935636+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7b88250d-891d-4186-9b16-b94c930be1b2",
+    "type": "Person",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "1976-05-24",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "rock",
+      "electronic",
+      "industrial",
+      "noise",
+      "ambient",
+      "idm",
+      "drone",
+      "dark ambient",
+      "progressive electronic"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000406522977"
+    ],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://cortini.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/756706",
+      "free streaming": "https://www.deezer.com/artist/4991018",
+      "myspace": "https://myspace.com/blindoldfreak",
+      "other databases": "https://rateyourmusic.com/artist/alessandro_cortini",
+      "social network": "https://www.last.fm/user/sonoioofficial",
+      "songkick": "https://www.songkick.com/artists/3196976",
+      "soundcloud": "https://soundcloud.com/alessandrocortini",
+      "streaming": "https://tidal.com/artist/5022500",
+      "wikidata": "https://www.wikidata.org/wiki/Q621294",
+      "youtube": "https://www.youtube.com/user/blindoldfreak"
+    },
+    "labels": [
+      "Phantasy Sound",
+      "Important Records",
+      "[no label]",
+      "Mount Analog",
+      "The Point of Departure Recording Company",
+      "Mute Artists Limited",
+      "Hospital Productions",
+      "Ubisoft Music",
+      "Make Noise Records",
+      "Room40",
+      "Mute"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4991018,
+    "name": "Alessandro Cortini",
+    "nb_fan": 3810,
+    "nb_album": 43,
+    "link": "https://www.deezer.com/artist/4991018",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4dc73b2d329cb610761e6f2cba00ae52/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Daniel Avery",
+      "Roll The Dice & Alessandro Cortini",
+      "Roll the Dice",
+      "Teodor Wolgers"
+    ],
+    "contributor_roles": {
+      "Daniel Avery": [
+        "Main"
+      ],
+      "Teodor Wolgers": [
+        "Main"
+      ],
+      "Roll the Dice": [
+        "Main"
+      ],
+      "Roll The Dice & Alessandro Cortini": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Illusion Of Time",
+      "Perdere",
+      "CORRI",
+      "Spettro III",
+      "Illusion Of Time (Teodor Wolgers Rework)",
+      "Bushido (Alessandro Cortini Re-Work)",
+      "Spettro I",
+      "Hydra",
+      "Enter Exit",
+      "VALVOLE",
+      "LET GO",
+      "Senza Aria",
+      "Scotta",
+      "Retta",
+      "Stella"
+    ],
+    "track_durations": [
+      262,
+      376,
+      257,
+      508,
+      215,
+      259,
+      518,
+      361,
+      328,
+      2274,
+      308,
+      769,
+      435,
+      414,
+      419
+    ],
+    "track_ranks": [
+      55111,
+      214299,
+      7579,
+      39536,
+      32593,
+      71352,
+      57407,
+      76388,
+      25132,
+      42132,
+      17153,
+      39590,
+      4215,
+      73653,
+      50590
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 23,
+      "ep": 2,
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "Il Mostro (Colonna sonora della serie Netflix)",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "VALVOLE",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "NATI INFINITI",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pre-Avanti (Live from Berghain 2016)",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Concordia University (Live) [Montreal 2009]",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "SCURO CHIARO",
+        "label": "",
+        "release_date": "2021-06-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Long Now",
+        "label": "",
+        "release_date": "2024-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spettri",
+        "label": "",
+        "release_date": "2023-12-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Memorie I",
+        "label": "",
+        "release_date": "2025-04-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Emosfere",
+        "label": "",
+        "release_date": "2024-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Movimento",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Illusion Of Time",
+        "label": "",
+        "release_date": "2020-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Prime Cose",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tom Clancy's Ghost Recon Breakpoint (Original Game Soundtrack)",
+        "label": "",
+        "release_date": "2019-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "VOLUME MASSIMO",
+        "label": "",
+        "release_date": "2019-09-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Immediate Horizon",
+        "label": "",
+        "release_date": "2018-11-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Avanti",
+        "label": "",
+        "release_date": "2017-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sonno: Nuit Noire Tape (Live)",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Risveglio",
+        "label": "",
+        "release_date": "2015-07-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forse 3",
+        "label": "",
+        "release_date": "2015-03-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sonno",
+        "label": "",
+        "release_date": "2014-07-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forse 2",
+        "label": "",
+        "release_date": "2013-11-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forse 1",
+        "label": "",
+        "release_date": "2013-07-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dirty A.D.",
+        "label": "",
+        "release_date": "2024-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "VERDE",
+        "label": "",
+        "release_date": "2021-05-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Heartless Places (AC Mix)",
+        "label": "",
+        "release_date": "2025-03-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pepe Ritorna",
+        "label": "",
+        "release_date": "2024-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "IV",
+        "label": "",
+        "release_date": "2024-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LO SPECCHIO",
+        "label": "",
+        "release_date": "2021-04-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CHIAROSCURO",
+        "label": "",
+        "release_date": "2021-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Luke Abbott",
+      "Lusine",
+      "Skee Mask",
+      "Telefon Tel Aviv",
+      "Forest Swords",
+      "Cosmetics",
+      "Trentemøller",
+      "Ital Tek",
+      "Plaid",
+      "The Black Dog"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 756706,
+    "name": "Alessandro Cortini",
+    "profile": "Italian musician and producer, born May 24, 1976 Bologna, Italy. Best known as a session and touring member for [a=Nine Inch Nails] and also as a solo artist.",
+    "realname": "Alessandro Cortini",
+    "social_urls": [
+      "https://www.facebook.com/alessandrocortiniofficial/",
+      "https://twitter.com/blindoldfreak",
+      "https://www.instagram.com/alehan/?hl=en",
+      "https://cortini.bandcamp.com",
+      "https://soundcloud.com/alessandrocortini",
+      "https://en.wikipedia.org/wiki/Alessandro_Cortini"
+    ],
+    "members": [],
+    "groups": [
+      "Nine Inch Nails",
+      "The Mayfield Four",
+      "Modwheelmood",
+      "The Purple Mixed Adult Choir"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 12,
+    "digital_only_releases": 88,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, WAV, Album",
+      "12\", Cle",
+      "2x12\", Album",
+      "2xFile, WAV",
+      "3xFile, MP3, 320",
+      "4xFile, FLAC",
+      "5xFile, FLAC",
+      "6xFile, FLAC",
+      "7\", Cle",
+      "7\", Single, Ltd",
+      "7\", W/Lbl",
+      "7xFile, FLAC",
+      "9xFile, FLAC, Album",
+      "9xFile, MP3, 320",
+      "CD, Album",
+      "CD, Album, RM + CD, Album, RM + CD, Album, RM + CD",
+      "CD, Comp",
+      "CDr, Num, Promo, Smplr, Wat",
+      "CDr, Single, Promo",
+      "Cass, Comp, Ltd",
+      "File, AIFF, 24-",
+      "File, FLAC",
+      "File, MP3, 320",
+      "File, MP3, Mixed, 320",
+      "File, WAV",
+      "LP, Ltd",
+      "LP, Ltd, Gat"
+    ],
+    "labels": [
+      "14th Floor Records, Atlantic",
+      "Atlantic Records",
+      "FACT Magazine",
+      "Important Records (2)",
+      "Lakeshore Records",
+      "Laton, Laton",
+      "Make Noise Records",
+      "Mute",
+      "Not On Label (Alessandro Cortini Self-released)",
+      "Not On Label (Daniel Avery Self-released), Not On Label (Alessandro Cortini Self-released)",
+      "Not On Label (Simon Fisher Turner Self-released), Not On Label (Edmund de Waal Self-released)",
+      "Puscifer Entertainment",
+      "Rad Cult",
+      "Resident Advisor",
+      "Rock Action Records",
+      "The New Black (2)",
+      "The Null Corporation",
+      "The Point Of Departure Recording Company",
+      "Trash Audio"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alessandro Cortini",
+    "mbid": "7b88250d-891d-4186-9b16-b94c930be1b2",
+    "listeners": 95006,
+    "playcount": 1500887,
+    "listener_play_ratio": 15.8,
+    "bio_exists": true,
+    "bio_summary": "Alessandro Cortini is an Italian electronic musician. Cortini has created remarkable, brooding work out of nothing.  He creates a rich and dreamlike sonic universe of surprisingly emotional sound scapes and textures.\nCortini is known for touring as the keyboardist for Nine Inch Nails from 2004 to 2008 and again from 2013. He is the frontman for the Los Angeles based electronic-alternative band Modwheelmood and was the rhythm guitarist for The Mayfield Four from 2000 to 2002. <a href=\"https://www",
+    "tags": [
+      "ambient",
+      "electronic",
+      "drone",
+      "experimental",
+      "dark ambient"
+    ],
+    "similar_artists": [
+      "Abul Mogard",
+      "Caterina Barbieri",
+      "Lawrence English",
+      "KMRU",
+      "Alva Noto"
+    ],
+    "top_tracks": [
+      {
+        "name": "Iniziare",
+        "listeners": 27117,
+        "playcount": 116161
+      },
+      {
+        "name": "AMORE AMARO",
+        "listeners": 26317,
+        "playcount": 86152
+      },
+      {
+        "name": "Scappa",
+        "listeners": 19793,
+        "playcount": 97369
+      },
+      {
+        "name": "CHIAROSCURO",
+        "listeners": 12525,
+        "playcount": 38686
+      },
+      {
+        "name": "Perdonare",
+        "listeners": 11562,
+        "playcount": 42951
+      },
+      {
+        "name": "La Sveglia",
+        "listeners": 11192,
+        "playcount": 37436
+      },
+      {
+        "name": "Stambecco",
+        "listeners": 9553,
+        "playcount": 28705
+      },
+      {
+        "name": "Vincere",
+        "listeners": 9503,
+        "playcount": 34325
+      },
+      {
+        "name": "LET GO",
+        "listeners": 9441,
+        "playcount": 33578
+      },
+      {
+        "name": "Conta",
+        "listeners": 9175,
+        "playcount": 33788
+      }
+    ],
+    "url": "https://www.last.fm/music/Alessandro+Cortini"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

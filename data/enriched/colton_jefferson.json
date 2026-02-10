@@ -1,0 +1,221 @@
+{
+  "artist_name": "Colton Jefferson",
+  "artist_id": "colton_jefferson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:12:55.204324+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "107823d9-23f1-49eb-b5ae-09da21c58787",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/153791632",
+      "streaming": "https://tidal.com/artist/29646483"
+    },
+    "labels": [
+      "Lonely Droid Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 153791632,
+    "name": "Colton Jefferson",
+    "nb_fan": 20,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/153791632",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/10ef4342e651523b4c52d36989d2ba29/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Curvature",
+      "Lavish Love",
+      "Tres Leches"
+    ],
+    "track_durations": [
+      153,
+      166,
+      171
+    ],
+    "track_ranks": [
+      142089,
+      7846,
+      55670
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Appetizer",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After Now",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tres Leches",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ambergris",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seamless",
+        "label": "",
+        "release_date": "2023-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lux",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Curvature",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lavish Love",
+        "label": "",
+        "release_date": "2022-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Colton Jefferson",
+    "mbid": "",
+    "listeners": 11646,
+    "playcount": 45734,
+    "listener_play_ratio": 3.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Colton+Jefferson\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Moon Groove",
+      "Alex R",
+      "Roffe & Friends",
+      "Beachwax",
+      "HGenius"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lux",
+        "listeners": 6123,
+        "playcount": 17266
+      },
+      {
+        "name": "Curvature",
+        "listeners": 4653,
+        "playcount": 17810
+      },
+      {
+        "name": "Tres Leches",
+        "listeners": 2810,
+        "playcount": 6923
+      },
+      {
+        "name": "After Now",
+        "listeners": 1028,
+        "playcount": 2222
+      },
+      {
+        "name": "Ambergris",
+        "listeners": 378,
+        "playcount": 731
+      },
+      {
+        "name": "Lavish Love",
+        "listeners": 295,
+        "playcount": 686
+      },
+      {
+        "name": "Seamless",
+        "listeners": 51,
+        "playcount": 81
+      },
+      {
+        "name": "Appetizer",
+        "listeners": 13,
+        "playcount": 14
+      },
+      {
+        "name": "Summergrooves",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Colton+Jefferson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

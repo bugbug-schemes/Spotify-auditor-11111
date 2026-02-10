@@ -1,0 +1,195 @@
+{
+  "artist_name": "Earium",
+  "artist_id": "earium",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:31:40.429062+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "35f8236e-b3e1-4f93-9a35-971484eba425",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "instrumental",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "boom bap",
+      "hip hop",
+      "downtempo"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/168224417",
+      "purchase for download": "https://music.apple.com/us/artist/1621673042",
+      "streaming": "https://tidal.com/artist/31900840"
+    },
+    "labels": [
+      "Audiowell"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 168224417,
+    "name": "Earium",
+    "nb_fan": 7,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/168224417",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/552e02e470535adab9214fe9d88f7b54/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "butterfly effect",
+        "label": "",
+        "release_date": "2025-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "kinda nice",
+        "label": "",
+        "release_date": "2024-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alternation",
+        "label": "",
+        "release_date": "2024-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "scratch that",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "thunder",
+        "label": "",
+        "release_date": "2023-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Foemeo",
+        "label": "",
+        "release_date": "2022-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Earium",
+    "mbid": "35f8236e-b3e1-4f93-9a35-971484eba425",
+    "listeners": 63451,
+    "playcount": 151224,
+    "listener_play_ratio": 2.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Earium\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Loe Brezy",
+      "Dustin Pierce",
+      "Nitta' Gritta'",
+      "Rapido_",
+      "lostoutside"
+    ],
+    "top_tracks": [
+      {
+        "name": "Foemeo",
+        "listeners": 33571,
+        "playcount": 81486
+      },
+      {
+        "name": "Kinda Nice",
+        "listeners": 32802,
+        "playcount": 69703
+      },
+      {
+        "name": "Alternation",
+        "listeners": 4,
+        "playcount": 10
+      },
+      {
+        "name": "scratch that",
+        "listeners": 4,
+        "playcount": 9
+      },
+      {
+        "name": "Thunder",
+        "listeners": 4,
+        "playcount": 8
+      },
+      {
+        "name": "butterfly effect",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Foemo",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Earium"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

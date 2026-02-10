@@ -1,0 +1,136 @@
+{
+  "artist_name": "Djupiter",
+  "artist_id": "djupiter",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:30:17.648168+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d1f74def-53ff-41c7-94c1-62b6703a6f82",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1773127"
+    },
+    "labels": [
+      "Reunion Netlabel"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Djupiter', got 'DJ Spider'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1773127,
+    "name": "DJupiter",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "File, MP3, VBR"
+    ],
+    "labels": [
+      "Reunion Netlabel"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "dJupiter",
+    "mbid": "",
+    "listeners": 6089,
+    "playcount": 32056,
+    "listener_play_ratio": 5.26,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/dJupiter\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hortalis",
+      "Somatika",
+      "Tristan Wilde",
+      "Verdant Nook",
+      "Echoes of Infinity"
+    ],
+    "top_tracks": [
+      {
+        "name": "Faded",
+        "listeners": 4504,
+        "playcount": 17181
+      },
+      {
+        "name": "meeting with change",
+        "listeners": 2922,
+        "playcount": 14558
+      },
+      {
+        "name": "Teacher 432 Hz",
+        "listeners": 85,
+        "playcount": 139
+      },
+      {
+        "name": "Studio Pen",
+        "listeners": 16,
+        "playcount": 65
+      },
+      {
+        "name": "Crossing The Atlantic",
+        "listeners": 15,
+        "playcount": 112
+      },
+      {
+        "name": "Brakkå",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/dJupiter"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

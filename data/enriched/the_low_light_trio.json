@@ -1,0 +1,180 @@
+{
+  "artist_name": "The Low Light Trio",
+  "artist_id": "the_low_light_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:35:30.199539+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 323026041,
+    "name": "The Low Light Trio",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/323026041",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f2360bd565c78b20e95dab81c5a94f72/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Contours"
+    ],
+    "track_durations": [
+      145
+    ],
+    "track_ranks": [
+      66433
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Moments Passed",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contours",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Train",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes of a Lonely Love",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Return",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dr. Jekyll",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3331836,
+    "name": "Humulus",
+    "profile": "Humulus is a Psych-Stoner power trio from Brescia/Bergamo (Italy), formed in 2009. Their frst self titled album was released by Go Down Records in december 2012. The ten tracks of this frst work fully refect the stoner attitude of the band and their aggressive sound that is best expressed during their live shows. In 2014 another great project, made of love and passion, sees the light: beer! Humulus produce their eponymous black stoner IPA, brewed in collaboration with ELAV Indipendent Brewery. In 2015, after a line-up change, Humulus are ready to write new\r\nsongs. A 3 songs EP called \"Electric Walrus EP\" sees the light in october 2015. The new Ep shows the new attitude of the band: more psychedelic and more dynamic than before. The Ep release is immediately followed by a series of new live shows, including the gig at the Keep It Low Festival in Munich, that confrm the tightness and power of the renewed line-up. 2016 is full of live gigs, and new songs are written and played on big and ",
+    "realname": "",
+    "social_urls": [
+      "https://humulus.bandcamp.com/",
+      "https://www.facebook.com/humulusband"
+    ],
+    "members": [
+      "Andrea Van Cleef",
+      "Massimiliano Boventi",
+      "Giorgio Bonacorsi",
+      "Thomas Mascheroni"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 7,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "183xFile, MP3, Comp",
+      "CD, Comp, Promo"
+    ],
+    "labels": [
+      "Go Down Records",
+      "Weedian"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Low Light Trio",
+    "mbid": "",
+    "listeners": 14747,
+    "playcount": 30074,
+    "listener_play_ratio": 2.04,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Low+Light+Trio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nighthawks Revisited",
+      "Deer Groves",
+      "The Soft Geometry",
+      "Chops & Coda",
+      "Downtown Café"
+    ],
+    "top_tracks": [
+      {
+        "name": "Echoes of a Lonely Love",
+        "listeners": 9440,
+        "playcount": 19899
+      },
+      {
+        "name": "Contours",
+        "listeners": 5280,
+        "playcount": 9042
+      },
+      {
+        "name": "Last Train",
+        "listeners": 605,
+        "playcount": 1133
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Low+Light+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

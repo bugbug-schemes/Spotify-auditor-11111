@@ -1,0 +1,194 @@
+{
+  "artist_name": "Christophe Piot",
+  "artist_id": "christophe_piot",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:08:40.677054+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e18bb8e9-952c-43ab-943f-925270bc2e48",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [
+      "00153500505"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/2740592",
+      "free streaming": "https://www.deezer.com/artist/2798161"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 2798161,
+    "name": "Christophe Piot",
+    "nb_fan": 15,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/2798161",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1
+    },
+    "albums": [
+      {
+        "title": "Organ Trio",
+        "label": "",
+        "release_date": "2021-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2740592,
+    "name": "Christophe Piot",
+    "profile": "Drummer, Percussionist, Composer, Acoustic BeatMaker, Teacher, Audionaturalist, Producer",
+    "realname": "",
+    "social_urls": [
+      "https://electroplume.wixsite.com/chrispiotdrummer"
+    ],
+    "members": [],
+    "groups": [
+      "Electroplume"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 8,
+    "total_releases": 15,
+    "formats": [
+      "",
+      "2xFile, MP3, Single, 320",
+      "CD, Advance, Album",
+      "CD, Album",
+      "CD, Album, Car",
+      "CD, Album, Dig"
+    ],
+    "labels": [
+      "Chiff Chaff",
+      "EnPhases",
+      "Iya (2)",
+      "Not On Label",
+      "Not On Label (Electroplume Self-Released)",
+      "Popride"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Christophe Piot",
+    "mbid": "e18bb8e9-952c-43ab-943f-925270bc2e48",
+    "listeners": 8,
+    "playcount": 31,
+    "listener_play_ratio": 3.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Christophe+Piot\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Rousserolle Turdoide",
+        "listeners": 2,
+        "playcount": 5
+      },
+      {
+        "name": "Horloge",
+        "listeners": 2,
+        "playcount": 5
+      },
+      {
+        "name": "Oizo Mig",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Birdworld Tribute to Joe Zawinul",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Follow the Light",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Merle",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Fluteur Pie",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Romeo et Juliette",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Merloriot",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Song for Robin",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Christophe+Piot"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

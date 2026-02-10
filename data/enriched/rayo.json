@@ -1,0 +1,472 @@
+{
+  "artist_name": "rayo",
+  "artist_id": "rayo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:30:20.068348+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "53c73bf4-da7e-413d-b971-0e6762ea0a49",
+    "type": "Group",
+    "country": "",
+    "area": "Madrid",
+    "begin_date": "2017",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://rrrayo.bandcamp.com/",
+      "social network": "https://www.instagram.com/rayoband/"
+    },
+    "labels": [
+      "Altafonte"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4617661,
+    "name": "Rayo",
+    "nb_fan": 223,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/4617661",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/13230ad49cb2f35fe16b3a27c5b1f78e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Abi Bernadoth",
+      "HIRALIRA",
+      "Huỳnh Văn",
+      "Nikekingg",
+      "Thanh Hung",
+      "Tsuwavii"
+    ],
+    "contributor_roles": {
+      "Tsuwavii": [
+        "Main"
+      ],
+      "Abi Bernadoth": [
+        "Main"
+      ],
+      "Huỳnh Văn": [
+        "Main"
+      ],
+      "Thanh Hung": [
+        "Main"
+      ],
+      "Nikekingg": [
+        "Main"
+      ],
+      "HIRALIRA": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "I'll Wait for You",
+      "Ciudad",
+      "Cẩm Tú Cầu",
+      "Gió Tầng Gió Mây Tầng Mây",
+      "Mapas",
+      "Cẩm Tú Cầu (Lofi Version)",
+      "Paranoia",
+      "MILLIONS"
+    ],
+    "track_durations": [
+      180,
+      227,
+      266,
+      303,
+      183,
+      313,
+      186,
+      191
+    ],
+    "track_ranks": [
+      216977,
+      8923,
+      117850,
+      26389,
+      22869,
+      25263,
+      25309,
+      6960
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 10,
+      "ep": 11,
+      "single": 79
+    },
+    "albums": [
+      {
+        "title": "SKYSCRAPER",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bajo el árbol",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "222",
+        "label": "",
+        "release_date": "2025-05-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Stay Here",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Turbocapitalismo 3000",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Guinevere",
+        "label": "",
+        "release_date": "2022-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "City Of Birds",
+        "label": "",
+        "release_date": "2021-06-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Despertame (En Vivo en la Tangente 12.02.20)",
+        "label": "",
+        "release_date": "2020-10-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Arcadia",
+        "label": "",
+        "release_date": "2020-01-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jungla",
+        "label": "",
+        "release_date": "2010-10-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alma de Bachata",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Borrachos de Amor",
+        "label": "",
+        "release_date": "2025-12-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mamá, esto es para ti",
+        "label": "",
+        "release_date": "2025-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "BAJO LA LUNA",
+        "label": "",
+        "release_date": "2025-12-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "LUZ DE MI VIDA",
+        "label": "",
+        "release_date": "2025-10-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Esta noche",
+        "label": "",
+        "release_date": "2025-09-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Something New",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "SER UNO MISMO",
+        "label": "",
+        "release_date": "2025-08-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "111",
+        "label": "",
+        "release_date": "2025-01-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Read Between The Lines",
+        "label": "",
+        "release_date": "2024-09-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Nubes de Agonía",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "La Mujer Que Me Inventó",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No sunshine",
+        "label": "",
+        "release_date": "2026-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SENTIMENTOS (feat. Sato)",
+        "label": "",
+        "release_date": "2026-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Toque (feat. Nahim Quiroga)",
+        "label": "",
+        "release_date": "2026-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paranoia",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MarraKeta",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mai pianto",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LOMPA",
+        "label": "",
+        "release_date": "2025-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bandida",
+        "label": "",
+        "release_date": "2025-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Son Tung M-TP",
+      "Phuong Ly",
+      "My Tam",
+      "Erik",
+      "ANH TRAI \"SAY HI\"",
+      "Ha Nhi",
+      "Karik",
+      "Binz",
+      "JustaTee",
+      "Erik"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5145535,
+    "name": "Rayo (4)",
+    "profile": "DJ & electronic music producer. from Odessa, Ukraine. \r\n\r\nAlso known as Raymond Obouvie",
+    "realname": "Anton Melikhov",
+    "social_urls": [
+      "https://www.facebook.com/Rayo1717/",
+      "https://soundcloud.com/rayo",
+      "https://ra.co/dj/rayo"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 2,
+    "total_releases": 11,
+    "formats": [
+      "",
+      "12\"",
+      "12\", 180",
+      "12\", EP",
+      "4xFile, MP3, Smplr, 320"
+    ],
+    "labels": [
+      "All Inn Black",
+      "Apotek Studio",
+      "Artreform",
+      "BodyParts Vinyl",
+      "Deepology Digital",
+      "Frequencies Records",
+      "Lescale Recordings",
+      "Propaganda Records (7)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rayo",
+    "mbid": "f6127730-d681-4447-ac9a-106c0a2d5d15",
+    "listeners": 12907,
+    "playcount": 67720,
+    "listener_play_ratio": 5.25,
+    "bio_exists": true,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rayo\">Read more on Last.fm</a>",
+    "tags": [
+      "Hip-Hop",
+      "shoegaze",
+      "Madrid",
+      "finnish",
+      "infrandergraun"
+    ],
+    "similar_artists": [
+      "Lasitud",
+      "DUVVII",
+      "Vaya Futuro",
+      "Cora Yako",
+      "coloreSantos"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mapas",
+        "listeners": 6382,
+        "playcount": 22686
+      },
+      {
+        "name": "Ciudad",
+        "listeners": 2493,
+        "playcount": 7086
+      },
+      {
+        "name": "Bella Kali",
+        "listeners": 1231,
+        "playcount": 2653
+      },
+      {
+        "name": "Hoguera",
+        "listeners": 947,
+        "playcount": 2528
+      },
+      {
+        "name": "Cẩm Tú Cầu",
+        "listeners": 697,
+        "playcount": 6988
+      },
+      {
+        "name": "ABces",
+        "listeners": 666,
+        "playcount": 3567
+      },
+      {
+        "name": "El Bosque",
+        "listeners": 565,
+        "playcount": 1619
+      },
+      {
+        "name": "Siglas y Bombas",
+        "listeners": 390,
+        "playcount": 1239
+      },
+      {
+        "name": "NEONES",
+        "listeners": 382,
+        "playcount": 846
+      },
+      {
+        "name": "Ositos y Perritos",
+        "listeners": 299,
+        "playcount": 1064
+      }
+    ],
+    "url": "https://www.last.fm/music/Rayo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

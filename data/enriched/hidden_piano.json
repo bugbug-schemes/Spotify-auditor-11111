@@ -1,0 +1,170 @@
+{
+  "artist_name": "Hidden Piano",
+  "artist_id": "hidden_piano",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:07:27.176696+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 411064,
+    "name": "Hidden Strength",
+    "profile": "Classic funk album from 1975 which will appeal to anyone who was ever into style of groups such as Brass Construction and BT Express. Originally Released on United Artists, this album has long been in demand and whilst relatively unknown is one of the best albums of its style.\r\nfunky soul from Hidden Strength — an uptempo 70s group with a very tight groove! The group are clearly in the mode of Earth Wind & Fire — extremely proficient instrumentally, grooving together in a righteous style that has plenty of jazz, but which is also going for a more straight ahead soul-based approach. Hidden Strength are best known for their classic groover “Hustle On Up (Do The Bump)” — a killer track with a nice funky bus stop groove and some great moog — but the whole album’s pretty darn sweet…\r\n\r\nRoy Herring : chant, chœurs\r\nAlvin Brown : basse, chœurs\r\nAl Thomas : batterie, percussions, chœurs\r\nGroover Underwood : Fender Rhodes piano, clavinet, orgue, Moog bass, vibes, chœurs\r\nKen Sullivan : piano ac",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Ray Anderson",
+      "Grover Underwood",
+      "Roy Herring",
+      "Robert Leach",
+      "Alvin Brown (3)",
+      "Ken Sullivan (2)",
+      "Al Thomas (12)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 17,
+    "digital_only_releases": 7,
+    "total_releases": 24,
+    "formats": [
+      "",
+      "12\"",
+      "3xCD, Comp",
+      "7\", Comp, Unofficial",
+      "7\", EP, Unofficial",
+      "CD, Album, Comp",
+      "CD, Comp",
+      "CD, Comp, Ltd, Promo, Unofficial",
+      "CD, Comp, Mixed",
+      "CD, Mixed",
+      "LP, Comp",
+      "LP, Comp, Promo"
+    ],
+    "labels": [
+      "4 Track Stereo Records",
+      "Connoisseur Collection",
+      "Disky",
+      "Express Songs",
+      "Funk - Direction",
+      "King Records",
+      "L.A. Funk Records",
+      "Not On Label",
+      "Off The Hook",
+      "Royalsound",
+      "Soul Brother Records (3)",
+      "Super Star (6)",
+      "United Artists Records",
+      "Universal Music",
+      "Vision Records (8)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hidden Piano",
+    "mbid": "",
+    "listeners": 26289,
+    "playcount": 71109,
+    "listener_play_ratio": 2.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hidden+Piano\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "James Here",
+      "Maxim Slanov",
+      "Sami Kaur",
+      "Leon Hartness",
+      "Haupu"
+    ],
+    "top_tracks": [
+      {
+        "name": "Little Things",
+        "listeners": 12153,
+        "playcount": 30446
+      },
+      {
+        "name": "Saudade",
+        "listeners": 10908,
+        "playcount": 23958
+      },
+      {
+        "name": "Fragile Lines",
+        "listeners": 2290,
+        "playcount": 5026
+      },
+      {
+        "name": "We Three Kings",
+        "listeners": 1806,
+        "playcount": 4270
+      },
+      {
+        "name": "trying to let go",
+        "listeners": 48,
+        "playcount": 229
+      },
+      {
+        "name": "Butterfly Serenade",
+        "listeners": 40,
+        "playcount": 185
+      },
+      {
+        "name": "a tale of love",
+        "listeners": 38,
+        "playcount": 196
+      },
+      {
+        "name": "Hidden",
+        "listeners": 36,
+        "playcount": 325
+      },
+      {
+        "name": "Thoughts",
+        "listeners": 36,
+        "playcount": 154
+      },
+      {
+        "name": "Dream State",
+        "listeners": 35,
+        "playcount": 203
+      }
+    ],
+    "url": "https://www.last.fm/music/Hidden+Piano"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

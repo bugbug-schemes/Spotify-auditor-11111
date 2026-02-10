@@ -1,0 +1,401 @@
+{
+  "artist_name": "Kristian Hart Trio",
+  "artist_id": "kristian_hart_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:52:17.527468+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4e45ca3f-1e75-4fa6-9d9c-699462b9a1a8",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/188661537",
+      "purchase for download": "https://music.apple.com/us/artist/1652726903",
+      "soundcloud": "https://soundcloud.com/kristianharttrio",
+      "streaming": "https://tidal.com/artist/35349296",
+      "youtube music": "https://music.youtube.com/channel/UCvNCYhyKkSU0OfUw7u0WGFw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 188661537,
+    "name": "Kristian Hart Trio",
+    "nb_fan": 19,
+    "nb_album": 32,
+    "link": "https://www.deezer.com/artist/188661537",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/81daf9b516a8521693ce5e160fc0674d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "A Poetic City",
+      "Adagio",
+      "Letters Never Posted",
+      "Waltz For Ola",
+      "Archway",
+      "Stargrass",
+      "Trouble In Paris"
+    ],
+    "track_durations": [
+      204,
+      176,
+      235,
+      134,
+      232,
+      192,
+      169
+    ],
+    "track_ranks": [
+      482873,
+      342943,
+      68710,
+      66392,
+      46854,
+      67428,
+      36997
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "Day By Day",
+        "label": "",
+        "release_date": "2023-06-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Life Can Be Hard",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wake Up To This",
+        "label": "",
+        "release_date": "2023-06-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dial Tone",
+        "label": "",
+        "release_date": "2023-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Highlights",
+        "label": "",
+        "release_date": "2023-03-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Inside Voice",
+        "label": "",
+        "release_date": "2023-03-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cold Shoulder",
+        "label": "",
+        "release_date": "2023-02-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Lights of Christmas",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Christmas Star",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Letters Never Posted",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unsent",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "As if You Were Here",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Archway",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Green Flash",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fragments",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flamingo",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Setembro",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Heard the Bells on Christmas Day",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rastro de Luz",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Laterna",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stargrass",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deja Vu",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Only Have Eyes for You",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sage",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Poetic City",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adagio",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That Lingering Feeling",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amaryllis",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There Is No Greater Love",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trouble In Paris",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kristian Hart Trio",
+    "mbid": "4e45ca3f-1e75-4fa6-9d9c-699462b9a1a8",
+    "listeners": 70185,
+    "playcount": 258494,
+    "listener_play_ratio": 3.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kristian+Hart+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "Smooth Jazz"
+    ],
+    "similar_artists": [
+      "Trio Del Norte",
+      "The Three Queens",
+      "Charles Daisey & Friends",
+      "Måns & Dotter",
+      "Novo Stella"
+    ],
+    "top_tracks": [
+      {
+        "name": "When We Were Young",
+        "listeners": 17542,
+        "playcount": 38347
+      },
+      {
+        "name": "As Long as I Live",
+        "listeners": 16256,
+        "playcount": 36645
+      },
+      {
+        "name": "Stargrass",
+        "listeners": 13145,
+        "playcount": 26051
+      },
+      {
+        "name": "Waltz For Ola",
+        "listeners": 13001,
+        "playcount": 27201
+      },
+      {
+        "name": "Archway",
+        "listeners": 12479,
+        "playcount": 26513
+      },
+      {
+        "name": "Setembro",
+        "listeners": 9482,
+        "playcount": 17932
+      },
+      {
+        "name": "Sage",
+        "listeners": 8800,
+        "playcount": 17094
+      },
+      {
+        "name": "Trouble In Paris",
+        "listeners": 8535,
+        "playcount": 18170
+      },
+      {
+        "name": "Letters Never Posted",
+        "listeners": 7732,
+        "playcount": 15526
+      },
+      {
+        "name": "A Poetic City",
+        "listeners": 3426,
+        "playcount": 7690
+      }
+    ],
+    "url": "https://www.last.fm/music/Kristian+Hart+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

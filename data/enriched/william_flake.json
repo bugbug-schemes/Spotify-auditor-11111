@@ -1,0 +1,118 @@
+{
+  "artist_name": "William Flake",
+  "artist_id": "william_flake",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:59:34.874582+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'William Flake', got 'William Clarke'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1937176,
+    "name": "William Albert Flakes",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "7\""
+    ],
+    "labels": [
+      "Calgar"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "William Flake",
+    "mbid": "",
+    "listeners": 3433,
+    "playcount": 40397,
+    "listener_play_ratio": 11.77,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/William+Flake\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Blue Bonnie",
+      "Everett Winslow",
+      "Caprice Henry",
+      "Naomi Nora",
+      "Snugglesnooze"
+    ],
+    "top_tracks": [
+      {
+        "name": "Coconut Lullaby",
+        "listeners": 1891,
+        "playcount": 18974
+      },
+      {
+        "name": "Good Night Sweet Lauren",
+        "listeners": 1713,
+        "playcount": 15542
+      },
+      {
+        "name": "Lovely Nights",
+        "listeners": 493,
+        "playcount": 5856
+      },
+      {
+        "name": "Little Prince",
+        "listeners": 6,
+        "playcount": 16
+      },
+      {
+        "name": "Feliz Navidad",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "Adorable Night",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/William+Flake"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

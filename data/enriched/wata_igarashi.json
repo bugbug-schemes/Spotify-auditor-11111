@@ -1,0 +1,434 @@
+{
+  "artist_name": "Wata Igarashi",
+  "artist_id": "wata_igarashi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:00:31.852593+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4088c783-576a-47dc-9434-1cd787589654",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "techno",
+      "experimental electronic"
+    ],
+    "aliases": [
+      "五十嵐渉",
+      "Wataru Igarashi",
+      "Wata",
+      "Wata Igarashi"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://wataigarashi.bandcamp.com/",
+      "blog": "http://wataruigarashi.wordpress.com/",
+      "discogs": "https://www.discogs.com/artist/2490888",
+      "free streaming": "https://www.deezer.com/artist/1264751",
+      "official homepage": "http://www.wataruigarashi.com/",
+      "purchase for download": "https://www.beatport.com/artist/wata-igarashi/152129",
+      "social network": "https://www.instagram.com/wataigarashi/",
+      "soundcloud": "https://soundcloud.com/wata",
+      "streaming": "https://music.apple.com/gb/artist/269348766",
+      "vgmdb": "https://vgmdb.net/artist/22690",
+      "youtube": "https://www.youtube.com/channel/UC_hbn8DFUkhmJDytTGErprA",
+      "youtube music": "https://music.youtube.com/channel/UC_hbn8DFUkhmJDytTGErprA"
+    },
+    "labels": [
+      "Statra Recordings",
+      "Reclaim Your City",
+      "Counter Pulse",
+      "Bitta",
+      "Delsin Records",
+      "Midgar",
+      "OMNIDISC",
+      "Figure",
+      "Dekmantel",
+      "The Bunker New York",
+      "fabric Originals",
+      "WIP",
+      "Time to Express",
+      "Kompakt",
+      "Sienna Obscure"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1264751,
+    "name": "Wata Igarashi",
+    "nb_fan": 686,
+    "nb_album": 15,
+    "link": "https://www.deezer.com/artist/1264751",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3bcf6cc8933efbfbabd18633ba64aef4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Mineral (Edit)",
+      "The Tunnel Dreams",
+      "Unleashed",
+      "Meltzone",
+      "Terra Incognita",
+      "Ceremony of the Dead",
+      "Supernova",
+      "Shockwave",
+      "One for EM",
+      "Skin",
+      "Agartha (Wata Igarashi Sorcery Acid Mix)"
+    ],
+    "track_durations": [
+      207,
+      369,
+      364,
+      299,
+      353,
+      427,
+      365,
+      338,
+      342,
+      287,
+      372
+    ],
+    "track_ranks": [
+      101712,
+      111650,
+      152889,
+      106815,
+      44511,
+      58398,
+      52902,
+      39693,
+      56984,
+      64842,
+      48944
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 5,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "My Supernova",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Agartha",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kioku",
+        "label": "",
+        "release_date": "2019-06-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "As It Is",
+        "label": "",
+        "release_date": "2011-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kaleidoscopic EP",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "New Dawn EP",
+        "label": "",
+        "release_date": "2021-02-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Traveling",
+        "label": "",
+        "release_date": "2020-08-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "9719 EP",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Counter Pulse Series, Vol. 8",
+        "label": "",
+        "release_date": "2013-04-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mineral (Edit)",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unleashed",
+        "label": "",
+        "release_date": "2025-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shockwave",
+        "label": "",
+        "release_date": "2025-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Agartha Remixe",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kaleidoscopic",
+        "label": "",
+        "release_date": "2024-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "\"Flares|泡 (Abuku)\"",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Heiko Laux",
+      "Oscar Mulero",
+      "Planetary Assault Systems",
+      "GiGi FM",
+      "exos",
+      "Truncate",
+      "Roman Poncet",
+      "Regent",
+      "Aurora Halal",
+      "Raär"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2490888,
+    "name": "Wata Igarashi",
+    "profile": "Producer/DJ\r\n\r\nWata Igarashi has quickly emerged as one of Japan’s leading DJs and producers. He has been exploring the deeper side of techno through well-received EPs on Midgar, The Bunker NY, and DJ Nobu’s Bitta label, as well as standout tracks on compilations on Semantica and Time to Express. By day, Igarashi works as a sound producer and the skills he has developed through his work are reflected in his productions, which are distinguished by their subtle and carefully polished feel. Igarashi pursues a similar sound in his DJ sets, developing a distinctive take on the more trippy and psychedelic brand of techno Japan has become known for. \r\n",
+    "realname": "Wataru Igarashi",
+    "social_urls": [
+      "https://wataigarashi.bandcamp.com/music",
+      "https://wataruigarashi.weebly.com/",
+      "https://www.residentadvisor.net/dj/wataigarashi",
+      "https://www.facebook.com/wataigarashi",
+      "https://twitter.com/wataigarashi",
+      "https://soundcloud.com/wata"
+    ],
+    "members": [],
+    "groups": [
+      "WAV (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 85,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, FLAC, Comp",
+      "11xFile, FLAC, 24-",
+      "12\"",
+      "12\", EP",
+      "16xFile, MP3, Comp, 320",
+      "20xFile, WAV, Comp",
+      "2x12\", EP, Ltd, S/Edition",
+      "2xFile, WAV",
+      "39xFile, MP3, Comp, 320",
+      "4xFile, MP3, 320",
+      "4xFile, WAV",
+      "56xFile, FLAC, Comp",
+      "6xFile, MP3, 320",
+      "6xFile, WAV, EP",
+      "7xLP + Box, Comp, Ltd",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CDr, Ltd, Mixed, Bla",
+      "File, FLAC, Mixed",
+      "File, MP3, Mixed",
+      "File, MP3, Mixed, 320",
+      "File, WAV, Mixed",
+      "M/Stick, AIFF, Comp, Ltd, USB"
+    ],
+    "labels": [
+      "Art Aquarium & Night Aquarium",
+      "Bassiani",
+      "Bitta",
+      "Black Chrysalis Archives",
+      "Butter Sessions",
+      "Clubberia",
+      "Cosmic Soup",
+      "Deep Electronics",
+      "Deep Space Helsinki",
+      "Dekmantel",
+      "Delsin",
+      "Dublab",
+      "EWE Records, EWE Records",
+      "Enisslab Studio",
+      "FACT Magazine",
+      "Groove",
+      "Gynoid Audio",
+      "Interdimensional Transmissions",
+      "Kompakt",
+      "Midgar",
+      "Not On Label (Santiago Salazar Self-released)",
+      "Orb Mag",
+      "Resident Advisor",
+      "Semantica Records",
+      "Shine On! Songs",
+      "Smoke Machine (2)",
+      "Square Enix Music",
+      "Synthetik Sounds",
+      "Technique (2)",
+      "The Bunker New York",
+      "The Bunker Podcast",
+      "Tra Tra Trax",
+      "Truants",
+      "WIP (2)",
+      "XLR8R, XLR8R Podcast",
+      "female:pressure"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Wata Igarashi",
+    "mbid": "4088c783-576a-47dc-9434-1cd787589654",
+    "listeners": 18030,
+    "playcount": 158715,
+    "listener_play_ratio": 8.8,
+    "bio_exists": true,
+    "bio_summary": "Wata Igarashi, producer/DJ, spent his childhood absorbing the cultural eclecticism of Tokyo, London, and Madrid. At fifteen, he began his music career in Madrid as a punk-guitarist for a skate-rock band called F.O.D., frequently playing at skate championships and live-houses and getting featured in Spanish Skate magazines.\n\nAfter his return to Tokyo, he shifted his musical focus to less convention-following free-improvisation and jazz, and formed an experimental instrumental band called Indigo C",
+    "tags": [
+      "techno",
+      "electronic",
+      "japanese",
+      "japan",
+      "ambient"
+    ],
+    "similar_artists": [
+      "Sa Pa",
+      "Polygonia",
+      "Blawan",
+      "Shinichi Atobe",
+      "Donato Dozzy"
+    ],
+    "top_tracks": [
+      {
+        "name": "Searching",
+        "listeners": 3868,
+        "playcount": 9513
+      },
+      {
+        "name": "Pronom",
+        "listeners": 2896,
+        "playcount": 8135
+      },
+      {
+        "name": "Abyss I",
+        "listeners": 2552,
+        "playcount": 5944
+      },
+      {
+        "name": "Abyss II",
+        "listeners": 2166,
+        "playcount": 4826
+      },
+      {
+        "name": "Subterranean Life",
+        "listeners": 2136,
+        "playcount": 4822
+      },
+      {
+        "name": "Ceremony of the Dead",
+        "listeners": 2047,
+        "playcount": 5044
+      },
+      {
+        "name": "泡 (Abuku)",
+        "listeners": 1992,
+        "playcount": 5678
+      },
+      {
+        "name": "Floating Against Time",
+        "listeners": 1911,
+        "playcount": 4499
+      },
+      {
+        "name": "One Way In",
+        "listeners": 1656,
+        "playcount": 2622
+      },
+      {
+        "name": "New Dawn",
+        "listeners": 1635,
+        "playcount": 5055
+      }
+    ],
+    "url": "https://www.last.fm/music/Wata+Igarashi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

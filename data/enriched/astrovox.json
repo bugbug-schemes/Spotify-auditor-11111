@@ -1,0 +1,138 @@
+{
+  "artist_name": "Astrovox",
+  "artist_id": "astrovox",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:16:28.458481+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "05ec6655-2471-45f2-9895-b38ecaf621d0",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/1zDQ4Lyy4QK1MKFaysBLqx",
+      "streaming": "https://music.apple.com/gb/artist/1476189458"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Astrovox', got 'A$tro Boi'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Astrovox",
+    "mbid": "",
+    "listeners": 3120,
+    "playcount": 9440,
+    "listener_play_ratio": 3.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Astrovox\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "King Bøb",
+      "Jajoi",
+      "Lukas Hiraeth",
+      "Jordan Moon",
+      "Mr Rawlings"
+    ],
+    "top_tracks": [
+      {
+        "name": "Phases",
+        "listeners": 2777,
+        "playcount": 6989
+      },
+      {
+        "name": "Gone",
+        "listeners": 717,
+        "playcount": 1541
+      },
+      {
+        "name": "Promise",
+        "listeners": 401,
+        "playcount": 892
+      },
+      {
+        "name": "Temptations",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Like a dog with a bone",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "It's Simple",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Hung Up",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Alone",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Friends",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Sun",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Astrovox"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

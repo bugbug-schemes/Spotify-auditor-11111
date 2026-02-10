@@ -1,0 +1,121 @@
+{
+  "artist_name": "Wazi Sleeps",
+  "artist_id": "wazi_sleeps",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:01:15.473376+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Wazi Sleeps', got 'Waking the Sleeping Bear'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Wazi Sleeps",
+    "mbid": "",
+    "listeners": 4580,
+    "playcount": 33315,
+    "listener_play_ratio": 7.27,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Wazi+Sleeps\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tiny Hush",
+      "Pajama Llama",
+      "Nigel Bloom",
+      "Sienna Moon",
+      "Noah Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Twinkle, Twinkle, Little Star",
+        "listeners": 4562,
+        "playcount": 32844
+      },
+      {
+        "name": "Pop Goes The Weasel",
+        "listeners": 15,
+        "playcount": 32
+      },
+      {
+        "name": "Mary Had A Little Lamb",
+        "listeners": 13,
+        "playcount": 28
+      },
+      {
+        "name": "Georgie Porgie",
+        "listeners": 12,
+        "playcount": 223
+      },
+      {
+        "name": "Are You Sleeping?",
+        "listeners": 10,
+        "playcount": 25
+      },
+      {
+        "name": "This Old Man",
+        "listeners": 9,
+        "playcount": 21
+      },
+      {
+        "name": "Counting Sheep",
+        "listeners": 9,
+        "playcount": 19
+      },
+      {
+        "name": "Hot Cross Buns",
+        "listeners": 8,
+        "playcount": 23
+      },
+      {
+        "name": "Three Blind Mice",
+        "listeners": 7,
+        "playcount": 23
+      },
+      {
+        "name": "Row Row Row Your Boat",
+        "listeners": 6,
+        "playcount": 19
+      }
+    ],
+    "url": "https://www.last.fm/music/Wazi+Sleeps"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

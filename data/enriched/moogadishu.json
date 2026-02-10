@@ -1,0 +1,180 @@
+{
+  "artist_name": "MOOGADISHU",
+  "artist_id": "moogadishu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:23:03.105649+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 114900632,
+    "name": "MOOGADISHU",
+    "nb_fan": 21,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/114900632",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1b3ea53b7284603b53b46bd1c73d475b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Feelings",
+      "Drowning",
+      "U Don't Know Me"
+    ],
+    "track_durations": [
+      168,
+      212,
+      124
+    ],
+    "track_ranks": [
+      31225,
+      98732,
+      112116
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Held in Motion",
+        "label": "",
+        "release_date": "2025-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calling Your Name",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Going Up",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feelings",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "U Don't Know Me",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flame",
+        "label": "",
+        "release_date": "2020-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drowning",
+        "label": "",
+        "release_date": "2020-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "MOOGADISHU",
+    "mbid": "",
+    "listeners": 19039,
+    "playcount": 84443,
+    "listener_play_ratio": 4.44,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/MOOGADISHU\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dan Awy",
+      "Chico Rocket",
+      "Divulgation",
+      "Souvren",
+      "Cámille"
+    ],
+    "top_tracks": [
+      {
+        "name": "U Don't Know Me",
+        "listeners": 13530,
+        "playcount": 49104
+      },
+      {
+        "name": "Feelings",
+        "listeners": 5999,
+        "playcount": 17866
+      },
+      {
+        "name": "Flame",
+        "listeners": 2647,
+        "playcount": 8225
+      },
+      {
+        "name": "Held in Motion",
+        "listeners": 2443,
+        "playcount": 4634
+      },
+      {
+        "name": "Drowning",
+        "listeners": 1357,
+        "playcount": 4069
+      },
+      {
+        "name": "Going Up",
+        "listeners": 223,
+        "playcount": 545
+      }
+    ],
+    "url": "https://www.last.fm/music/MOOGADISHU"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

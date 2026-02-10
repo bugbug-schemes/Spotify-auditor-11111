@@ -1,0 +1,120 @@
+{
+  "artist_name": "Miyasato Mana",
+  "artist_id": "miyasato_mana",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:46:36.297481+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Miyasato Mana",
+    "mbid": "",
+    "listeners": 15532,
+    "playcount": 71782,
+    "listener_play_ratio": 4.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Miyasato+Mana\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Neuron Minds",
+      "The Delta Architect",
+      "Binaural Delta Sleep",
+      "Binaural Pulsation",
+      "All-in Deltas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Alpha Waves 58-66 Hz",
+        "listeners": 5680,
+        "playcount": 15834
+      },
+      {
+        "name": "Binaural Delta Waves 101-103 Hz",
+        "listeners": 4463,
+        "playcount": 17246
+      },
+      {
+        "name": "Binaural Delta Waves 92.5-93 Hz",
+        "listeners": 4423,
+        "playcount": 16878
+      },
+      {
+        "name": "Reverie in the Trees (Sound Bath)",
+        "listeners": 4269,
+        "playcount": 12232
+      },
+      {
+        "name": "Delta Waves Sleep 126 Hz - 129 Hz",
+        "listeners": 1320,
+        "playcount": 3935
+      },
+      {
+        "name": "Inhalia",
+        "listeners": 1024,
+        "playcount": 3572
+      },
+      {
+        "name": "Binaural Theta Waves 90-94 Hz",
+        "listeners": 456,
+        "playcount": 1754
+      },
+      {
+        "name": "Binaural Theta Waves 116-120 Hz",
+        "listeners": 85,
+        "playcount": 158
+      },
+      {
+        "name": "Binaural Delta Waves 71-73 Hz",
+        "listeners": 14,
+        "playcount": 16
+      },
+      {
+        "name": "Delta Veydrift 2.5Hz",
+        "listeners": 9,
+        "playcount": 11
+      }
+    ],
+    "url": "https://www.last.fm/music/Miyasato+Mana"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

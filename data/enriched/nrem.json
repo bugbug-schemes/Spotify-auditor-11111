@@ -1,0 +1,143 @@
+{
+  "artist_name": "NREM",
+  "artist_id": "nrem",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:55:00.539668+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8b610631-43a1-4293-af66-b1ac58a44652",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "new age"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/91591952",
+      "purchase for download": "https://music.apple.com/us/artist/1508561509",
+      "streaming": "https://music.apple.com/us/artist/1508561509"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'NREM', got 'Bremer/McCoy'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "NREM",
+    "mbid": "8b610631-43a1-4293-af66-b1ac58a44652",
+    "listeners": 105140,
+    "playcount": 1088948,
+    "listener_play_ratio": 10.36,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. This could be because of a deal within a streaming service, where the musician is anonymous, or the name is just one of several psuedonyms used by a music producer. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"https://www.la",
+    "tags": [],
+    "similar_artists": [
+      "Dreamstatician",
+      "Astrofuss",
+      "Lavia 6",
+      "A.I.C 83",
+      "Delicatessen Noise"
+    ],
+    "top_tracks": [
+      {
+        "name": "somnus state",
+        "listeners": 29952,
+        "playcount": 200825
+      },
+      {
+        "name": "Natural Serenity Pink Noise",
+        "listeners": 21176,
+        "playcount": 140644
+      },
+      {
+        "name": "Light Static Pink Noise",
+        "listeners": 18400,
+        "playcount": 127474
+      },
+      {
+        "name": "Floating Freely Pink Noise",
+        "listeners": 18348,
+        "playcount": 133253
+      },
+      {
+        "name": "Green Noise River Stream",
+        "listeners": 16761,
+        "playcount": 99904
+      },
+      {
+        "name": "Mind Tranquility",
+        "listeners": 10451,
+        "playcount": 37771
+      },
+      {
+        "name": "Clear Mind",
+        "listeners": 10440,
+        "playcount": 36146
+      },
+      {
+        "name": "Green Noise Nature Background",
+        "listeners": 9120,
+        "playcount": 46326
+      },
+      {
+        "name": "Alpha (L-78.3Hz R-86.5Hz)",
+        "listeners": 9000,
+        "playcount": 30344
+      },
+      {
+        "name": "Green Noise Ambient Nature",
+        "listeners": 7882,
+        "playcount": 39164
+      }
+    ],
+    "url": "https://www.last.fm/music/NREM"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

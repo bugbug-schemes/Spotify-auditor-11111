@@ -1,0 +1,216 @@
+{
+  "artist_name": "Amos Stovall",
+  "artist_id": "amos_stovall",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:56:42.504914+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 260106331,
+    "name": "Amos Stovall",
+    "nb_fan": 3,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/260106331",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1485f5b92993f9585b00bdcaec49aebd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "So Far Away",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Renewal",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breath of Dawn",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pine and Vapor",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Erice",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Refuge",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Undertow",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evanescent",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Agadir",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Petrichor",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Four Isles",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amos Stovall",
+    "mbid": "",
+    "listeners": 43281,
+    "playcount": 188570,
+    "listener_play_ratio": 4.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Amos+Stovall\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Foramina Nigra",
+      "Sonorous Drone",
+      "ethereon",
+      "Lo Cendrisse",
+      "Sasha Coleman"
+    ],
+    "top_tracks": [
+      {
+        "name": "Erice",
+        "listeners": 21104,
+        "playcount": 103843
+      },
+      {
+        "name": "Evanescent",
+        "listeners": 17533,
+        "playcount": 52602
+      },
+      {
+        "name": "Petrichor",
+        "listeners": 4001,
+        "playcount": 15248
+      },
+      {
+        "name": "Renewal",
+        "listeners": 3395,
+        "playcount": 11804
+      },
+      {
+        "name": "Pine and Vapor",
+        "listeners": 1561,
+        "playcount": 5043
+      },
+      {
+        "name": "The Four Isles",
+        "listeners": 17,
+        "playcount": 18
+      },
+      {
+        "name": "Agadir",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Undertow",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Refuge",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Dark Stairwell",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Amos+Stovall"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

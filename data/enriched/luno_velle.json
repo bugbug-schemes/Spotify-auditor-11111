@@ -1,0 +1,86 @@
+{
+  "artist_name": "Luno Velle",
+  "artist_id": "luno_velle",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:19:28.727920+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Luno Velle', got 'Luna Elle'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Luno Velle",
+    "mbid": "",
+    "listeners": 3274,
+    "playcount": 5576,
+    "listener_play_ratio": 1.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Luno+Velle\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ramses Ravi",
+      "Dust Of Stars",
+      "Embershine Air",
+      "Cashmere Cove",
+      "Kaen Ohara"
+    ],
+    "top_tracks": [
+      {
+        "name": "Unforth",
+        "listeners": 1938,
+        "playcount": 3081
+      },
+      {
+        "name": "Amanter",
+        "listeners": 992,
+        "playcount": 1696
+      },
+      {
+        "name": "Skyful",
+        "listeners": 376,
+        "playcount": 799
+      }
+    ],
+    "url": "https://www.last.fm/music/Luno+Velle"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

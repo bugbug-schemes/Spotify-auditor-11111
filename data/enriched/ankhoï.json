@@ -1,0 +1,171 @@
+{
+  "artist_name": "Ankhoï",
+  "artist_id": "ankhoï",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:01:02.617561+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b36bdd37-5f54-40db-9e1a-10d0fd916d2c",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/97187452",
+      "purchase for download": "https://www.beatport.com/artist/ankhoi/895028",
+      "social network": "https://www.tiktok.com/@ankhoimusic",
+      "soundcloud": "https://soundcloud.com/ankhoi",
+      "streaming": "https://tidal.com/artist/23929617",
+      "youtube music": "https://music.youtube.com/channel/UCvBBlgvbGVJ60dfFDnxDrWg"
+    },
+    "labels": [
+      "DHB Records",
+      "Ninja Tune",
+      "Chaos"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Ankhoï', got 'Ankhoï'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12600584,
+    "name": "Ankhoï",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 3,
+    "total_releases": 6,
+    "formats": [
+      "12\"",
+      "12xFile, MP3, Comp, 320",
+      "2xFile, FLAC, Single",
+      "4xCD, Comp",
+      "File, FLAC, Single, 24-"
+    ],
+    "labels": [
+      "Anjunadeep",
+      "Chaos (7), Polydor",
+      "DHB (2)",
+      "MoBlack Records",
+      "Wagram Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "ANKHOÏ",
+    "mbid": "",
+    "listeners": 6096,
+    "playcount": 24043,
+    "listener_play_ratio": 3.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/ANKHO%C3%8F\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ajna (BE)",
+      "Juan Yarin",
+      "Badbwoy",
+      "&friends",
+      "Avö"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ohiboki",
+        "listeners": 2376,
+        "playcount": 6769
+      },
+      {
+        "name": "THE FUTURE",
+        "listeners": 2299,
+        "playcount": 6683
+      },
+      {
+        "name": "Hallelujah",
+        "listeners": 1341,
+        "playcount": 5036
+      },
+      {
+        "name": "After All",
+        "listeners": 822,
+        "playcount": 2741
+      },
+      {
+        "name": "Hidden Place",
+        "listeners": 518,
+        "playcount": 1385
+      },
+      {
+        "name": "THE FUTURE - Extended",
+        "listeners": 161,
+        "playcount": 490
+      },
+      {
+        "name": "Ohiboki - Mr. ID Remix",
+        "listeners": 72,
+        "playcount": 183
+      },
+      {
+        "name": "Entropy",
+        "listeners": 70,
+        "playcount": 147
+      },
+      {
+        "name": "Vertigo",
+        "listeners": 67,
+        "playcount": 225
+      },
+      {
+        "name": "Wait for Me",
+        "listeners": 24,
+        "playcount": 60
+      }
+    ],
+    "url": "https://www.last.fm/music/ANKHO%C3%8F"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

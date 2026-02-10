@@ -1,0 +1,111 @@
+{
+  "artist_name": "XYROS",
+  "artist_id": "xyros",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:02:50.365396+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'XYROS', got 'Cyrus'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Xyros",
+    "mbid": "",
+    "listeners": 13198,
+    "playcount": 67484,
+    "listener_play_ratio": 5.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Xyros\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lunari Veil",
+      "Fort Sleep Sara",
+      "echoes of embers",
+      "Dream Agent",
+      "Prodigieux"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hypnos",
+        "listeners": 13088,
+        "playcount": 67152
+      },
+      {
+        "name": "Erebus",
+        "listeners": 142,
+        "playcount": 325
+      },
+      {
+        "name": "Icecream - Preliminary Demo",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Session2-Track2",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Thought Process",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Something I Will Never Own.",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Littleshorty",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Dethrone",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Xyros"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

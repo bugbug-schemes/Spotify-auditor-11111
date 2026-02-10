@@ -1,0 +1,456 @@
+{
+  "artist_name": "our distant worlds",
+  "artist_id": "our_distant_worlds",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:28:15.325227+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "83e38324-5697-4126-9904-9121776f982e",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "new age"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/123079402",
+      "purchase for download": "https://music.apple.com/us/artist/1553227747",
+      "soundcloud": "https://soundcloud.com/ourdistantworlds-music",
+      "streaming": "https://tidal.com/artist/23474263",
+      "youtube music": "https://music.youtube.com/channel/UCjnihiS-YAX8BVQgn5zg3gA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 123079402,
+    "name": "our distant worlds",
+    "nb_fan": 55,
+    "nb_album": 64,
+    "link": "https://www.deezer.com/artist/123079402",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/543c708191bc91ec7cc03901d375db74/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "crystal creek",
+      "garden escape",
+      "invisible grace",
+      "wandering bird",
+      "quiet plateau",
+      "Christmas Time Is Here (Piano)",
+      "Silver Bells (Piano)",
+      "velvet void"
+    ],
+    "track_durations": [
+      147,
+      160,
+      167,
+      155,
+      152,
+      196,
+      144,
+      148
+    ],
+    "track_ranks": [
+      66783,
+      58953,
+      77274,
+      114585,
+      52821,
+      10151,
+      32243,
+      25871
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "ep": 10,
+      "single": 47
+    },
+    "albums": [
+      {
+        "title": "the light shining through",
+        "label": "",
+        "release_date": "2024-02-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "fireplace piano warmth",
+        "label": "",
+        "release_date": "2023-10-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "piano belvedere",
+        "label": "",
+        "release_date": "2023-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "piano windows",
+        "label": "",
+        "release_date": "2023-02-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "piano embers",
+        "label": "",
+        "release_date": "2023-01-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "the piano next door",
+        "label": "",
+        "release_date": "2022-11-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "we're home for Christmas (Piano)",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "vagabond of the sky",
+        "label": "",
+        "release_date": "2024-09-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "book of spirits",
+        "label": "",
+        "release_date": "2024-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "moments of serenity",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "aria",
+        "label": "",
+        "release_date": "2024-03-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "blossoming universe",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "morning sun",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "peaceful imperfect places",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Earth Song",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "climb the skies",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "sleeping moons",
+        "label": "",
+        "release_date": "2021-06-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Thousand Years",
+        "label": "",
+        "release_date": "2026-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "pretend it's paris",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Do You Hear What I Hear?",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "invisible grace",
+        "label": "",
+        "release_date": "2025-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "driftwood stillness",
+        "label": "",
+        "release_date": "2025-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "unknown answer (in the Rain)",
+        "label": "",
+        "release_date": "2025-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "stillness (in the Rain)",
+        "label": "",
+        "release_date": "2025-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "wading birds (in the rain)",
+        "label": "",
+        "release_date": "2025-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "stella's winter",
+        "label": "",
+        "release_date": "2024-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snowman",
+        "label": "",
+        "release_date": "2024-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Christmas",
+        "label": "",
+        "release_date": "2024-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "unknown answer",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "golden reflection",
+        "label": "",
+        "release_date": "2023-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 969078,
+    "name": "Mad and Spectral",
+    "profile": "Actually, this project was awaited logically...\r\nAfter numerous collaborations between these two artists – Mad Dee Jay and DJ Garry Spectrum, the consequence had to be a constant collaboration – a duo Mad and Spectral.\r\n\r\nThe production period of Mad and Spectral can be divided into two main parts: during the first one, the duo was concentrated on house, soulful and NY-deep production, and as a result the tracks such as \"Beautiful Dayz Of Our Life\", \"Funk Above\", \"Pop-Porn\", \"Le Plaisir Oceanique\" and \"Distant Starz\" were born. In the course of time, Mad and Spectral started to fuse and generate their main sound with the contemporary deep house and deep tech elements, shaping their trademark and recognizable sound.\r\n\r\nTunes such as \"Paradise\" (with Mad and Spectral's new discovery, female vocalist Lucia), as well as \"I_Love\", \"Nightlife\" and \"Let You Go\" blew the club charts and became the often guests of the various radio-shows and received dj-support from all over the world.\r\n\r\nIn th",
+    "realname": "Ashot Babayan, Garry Mkrtchyan",
+    "social_urls": [
+      "http://www.madandspectral.com",
+      "http://www.myspace.com/madandspectral",
+      "http://www.madandspectral.pdj.ru",
+      "https://www.beatport.com/artists/mad+and+spectral"
+    ],
+    "members": [
+      "Ashot Babayan",
+      "Garry Mkrtchyan",
+      "Krummstoff"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 24,
+    "total_releases": 26,
+    "formats": [
+      "12xFile, MP3, Comp, Mixed, 320",
+      "14xFile, MP3, Comp, 320",
+      "15xFile, FLAC, Comp, WEB",
+      "2xFile, MP3",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP",
+      "2xFile, MP3, EP, 320",
+      "3xFile, MP3, Comp, Smplr, 320",
+      "3xFile, MP3, EP, 320",
+      "4xFile, MP3, EP",
+      "4xFile, MP3, EP, 320",
+      "53xFile, MP3, Comp",
+      "5xFile, MP3, EP, 320",
+      "6xFile, MP3, 320",
+      "CD, Comp, Mixed",
+      "File, MP3, Comp, Mixed"
+    ],
+    "labels": [
+      "Big Mama Records (4)",
+      "Disclosure Project Recordings",
+      "FOEM",
+      "Groove Baby Digital",
+      "Loopzilla",
+      "Low Flow Records",
+      "Low Flow White",
+      "Manuscript Records Ukraine",
+      "Radio Record",
+      "SoulHeat Records",
+      "Soulful Mood Recordings",
+      "Stratospherik",
+      "Uplifto Records",
+      "Wet Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "our distant worlds",
+    "mbid": "83e38324-5697-4126-9904-9121776f982e",
+    "listeners": 119723,
+    "playcount": 602362,
+    "listener_play_ratio": 5.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/our+distant+worlds\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Harlan Silverman",
+      "NREM",
+      "Joseph Beg",
+      "Beau Shepherd",
+      "Elinaura"
+    ],
+    "top_tracks": [
+      {
+        "name": "apoapsis",
+        "listeners": 26714,
+        "playcount": 132746
+      },
+      {
+        "name": "beyond horizons",
+        "listeners": 19322,
+        "playcount": 93603
+      },
+      {
+        "name": "diamond star",
+        "listeners": 18601,
+        "playcount": 47028
+      },
+      {
+        "name": "Christmas Time Is Here - Piano",
+        "listeners": 13293,
+        "playcount": 40240
+      },
+      {
+        "name": "pebble brook - ambient room mix",
+        "listeners": 12753,
+        "playcount": 42538
+      },
+      {
+        "name": "wandering bird",
+        "listeners": 10136,
+        "playcount": 30299
+      },
+      {
+        "name": "quiet plateau",
+        "listeners": 9306,
+        "playcount": 19740
+      },
+      {
+        "name": "invisible grace",
+        "listeners": 9092,
+        "playcount": 37311
+      },
+      {
+        "name": "Silver Bells - Piano",
+        "listeners": 6741,
+        "playcount": 20493
+      },
+      {
+        "name": "crystal creek",
+        "listeners": 5183,
+        "playcount": 11386
+      }
+    ],
+    "url": "https://www.last.fm/music/our+distant+worlds"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

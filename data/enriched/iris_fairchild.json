@@ -1,0 +1,230 @@
+{
+  "artist_name": "Iris Fairchild",
+  "artist_id": "iris_fairchild",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:16:03.995306+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 270438162,
+    "name": "Iris Fairchild",
+    "nb_fan": 0,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/270438162",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/723b94c6955b672d72e3483a40d2daae/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Keep Calm",
+        "label": "",
+        "release_date": "2025-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At The Edge Of Time",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden Fields",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Mind",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "See you soon",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At the end of the rainbow",
+        "label": "",
+        "release_date": "2024-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The stars and the moon",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Little Cat",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You and me forever",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naptime",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Room",
+        "label": "",
+        "release_date": "2024-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My little dog",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Day At The Beach",
+        "label": "",
+        "release_date": "2024-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Iris Fairchild",
+    "mbid": "",
+    "listeners": 8289,
+    "playcount": 79494,
+    "listener_play_ratio": 9.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Iris+Fairchild\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Teddy Gorbella",
+      "The Stories We Tell",
+      "Oscar Z",
+      "All About The Children",
+      "Taylor S Brooks"
+    ],
+    "top_tracks": [
+      {
+        "name": "Open Mind",
+        "listeners": 3533,
+        "playcount": 7140
+      },
+      {
+        "name": "Naptime",
+        "listeners": 2378,
+        "playcount": 27707
+      },
+      {
+        "name": "You and me forever",
+        "listeners": 1974,
+        "playcount": 20170
+      },
+      {
+        "name": "A Day At The Beach",
+        "listeners": 955,
+        "playcount": 16834
+      },
+      {
+        "name": "My Little Cat",
+        "listeners": 781,
+        "playcount": 6506
+      },
+      {
+        "name": "Golden Fields",
+        "listeners": 630,
+        "playcount": 1044
+      },
+      {
+        "name": "At The Edge Of Time",
+        "listeners": 26,
+        "playcount": 41
+      },
+      {
+        "name": "Keep Calm",
+        "listeners": 25,
+        "playcount": 34
+      },
+      {
+        "name": "My little dog",
+        "listeners": 10,
+        "playcount": 12
+      },
+      {
+        "name": "The stars and the moon",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Iris+Fairchild"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,364 @@
+{
+  "artist_name": "Teide",
+  "artist_id": "teide",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:28:40.440643+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "09a92198-f65c-417f-9baf-72fb1fc8a100",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/126842252",
+      "purchase for download": "https://music.apple.com/us/artist/1559081927",
+      "soundcloud": "https://soundcloud.com/teide-music",
+      "streaming": "https://tidal.com/artist/24002096",
+      "youtube music": "https://music.youtube.com/channel/UC2sbPAyO2T_HDsHb7PtcO5w"
+    },
+    "labels": [
+      "[no label]",
+      "Chill Palm"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 126842252,
+    "name": "Teide",
+    "nb_fan": 16,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/126842252",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/be7134f360d17c69ef978df2e9d32f69/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Rhône",
+      "Amaryllis",
+      "Mitternacht",
+      "Yamasá",
+      "Lumière du Matin",
+      "Rhyl Sands",
+      "Snow-Bound"
+    ],
+    "track_durations": [
+      175,
+      141,
+      155,
+      171,
+      203,
+      182,
+      157
+    ],
+    "track_ranks": [
+      62141,
+      84966,
+      50107,
+      73797,
+      23026,
+      75433,
+      69040
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Chiaroscuro",
+        "label": "",
+        "release_date": "2025-12-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Luna Asoma",
+        "label": "",
+        "release_date": "2025-12-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sabana De La Mar",
+        "label": "",
+        "release_date": "2025-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Avioncito De Papel",
+        "label": "",
+        "release_date": "2025-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Half Of My Soul",
+        "label": "",
+        "release_date": "2025-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snow-Bound",
+        "label": "",
+        "release_date": "2024-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Precious Moments",
+        "label": "",
+        "release_date": "2024-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noir et Blanc (Rain)",
+        "label": "",
+        "release_date": "2024-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noir et Blanc",
+        "label": "",
+        "release_date": "2023-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liebchen",
+        "label": "",
+        "release_date": "2023-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morningside",
+        "label": "",
+        "release_date": "2023-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Uyuni",
+        "label": "",
+        "release_date": "2023-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ischia",
+        "label": "",
+        "release_date": "2023-04-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Filtered Light",
+        "label": "",
+        "release_date": "2022-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mitternacht",
+        "label": "",
+        "release_date": "2022-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yamasá",
+        "label": "",
+        "release_date": "2022-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Malerei",
+        "label": "",
+        "release_date": "2022-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lumière du Matin",
+        "label": "",
+        "release_date": "2022-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Girasole",
+        "label": "",
+        "release_date": "2022-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dione",
+        "label": "",
+        "release_date": "2022-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Storr",
+        "label": "",
+        "release_date": "2022-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dulcinea",
+        "label": "",
+        "release_date": "2022-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amaryllis",
+        "label": "",
+        "release_date": "2021-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12969768,
+    "name": "Teide",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp"
+    ],
+    "labels": [
+      "Utech Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Teide",
+    "mbid": "09a92198-f65c-417f-9baf-72fb1fc8a100",
+    "listeners": 86859,
+    "playcount": 366646,
+    "listener_play_ratio": 4.22,
+    "bio_exists": true,
+    "bio_summary": "Dwight Rivera is a Los Angeles-based keyboardist, musical director, and composer. Known for his extensive touring experience across Asia, Australia, New Zealand, and the Middle East, he has collaborated with various artists throughout his career. \n\nIn recent years, Dwight Rivera has shifted his focus towards composing and exploring his passion for the piano as a solo instrument. His piano compositions are characterized by beautiful and elegant melodies accompanied by intimate and peaceful ostina",
+    "tags": [],
+    "similar_artists": [
+      "Eberina",
+      "Amour Lesauvage",
+      "Gionata Accursio",
+      "Amira Bowden",
+      "Catherine Peterson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Amaryllis",
+        "listeners": 22832,
+        "playcount": 61591
+      },
+      {
+        "name": "Dione",
+        "listeners": 19224,
+        "playcount": 76182
+      },
+      {
+        "name": "Noir et Blanc",
+        "listeners": 11978,
+        "playcount": 30524
+      },
+      {
+        "name": "Rhyl Sands",
+        "listeners": 9486,
+        "playcount": 20618
+      },
+      {
+        "name": "Liebchen",
+        "listeners": 7758,
+        "playcount": 15759
+      },
+      {
+        "name": "Snow-Bound",
+        "listeners": 7433,
+        "playcount": 20792
+      },
+      {
+        "name": "Sinsonte",
+        "listeners": 6412,
+        "playcount": 14022
+      },
+      {
+        "name": "Half Of My Soul",
+        "listeners": 6044,
+        "playcount": 13053
+      },
+      {
+        "name": "Érase Una Vez",
+        "listeners": 5691,
+        "playcount": 11263
+      },
+      {
+        "name": "Mitternacht",
+        "listeners": 5487,
+        "playcount": 11647
+      }
+    ],
+    "url": "https://www.last.fm/music/Teide"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,141 @@
+{
+  "artist_name": "Aether Waves",
+  "artist_id": "aether_waves",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:44:43.476201+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a35f63af-24a9-46be-b0d0-f1da53956954",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://aetherwaves.bandcamp.com/"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 287123061,
+    "name": "Aether Waves",
+    "nb_fan": 2,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/287123061",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4a334ab8a690523913266ee4e9b186fa/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Full of Quiet",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mula Bandha",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calmly Abiding",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aether Waves",
+    "mbid": "",
+    "listeners": 3088,
+    "playcount": 10970,
+    "listener_play_ratio": 3.55,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aether+Waves\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sagamo",
+      "Hortalis",
+      "Ambientelles",
+      "Luminescence Love",
+      "Nightpools"
+    ],
+    "top_tracks": [
+      {
+        "name": "Full of Quiet",
+        "listeners": 3036,
+        "playcount": 10847
+      },
+      {
+        "name": "Calmly Abiding",
+        "listeners": 51,
+        "playcount": 122
+      },
+      {
+        "name": "Mula Bandha",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Aether+Waves"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

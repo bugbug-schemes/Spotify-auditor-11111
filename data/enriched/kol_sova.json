@@ -1,0 +1,81 @@
+{
+  "artist_name": "Kol Sova",
+  "artist_id": "kol_sova",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:51:03.325477+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Kol Sova', got 'Kool Savas'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kol Sova",
+    "mbid": "",
+    "listeners": 10282,
+    "playcount": 41269,
+    "listener_play_ratio": 4.01,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kol+Sova\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Velvet Hush",
+      "Mindful Meadow",
+      "Fhye",
+      "Eomir",
+      "Command Module"
+    ],
+    "top_tracks": [
+      {
+        "name": "Effortless",
+        "listeners": 7214,
+        "playcount": 33695
+      },
+      {
+        "name": "Great Wave",
+        "listeners": 3296,
+        "playcount": 7574
+      }
+    ],
+    "url": "https://www.last.fm/music/Kol+Sova"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,211 @@
+{
+  "artist_name": "Logan Jameison",
+  "artist_id": "logan_jameison",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:10:38.804264+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 116202942,
+    "name": "Logan Jameison",
+    "nb_fan": 3,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/116202942",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/774964d94f78b927871b2e6fb60cfe86/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Narrative Plots",
+      "My Slowing Beating Heart"
+    ],
+    "track_durations": [
+      151,
+      215
+    ],
+    "track_ranks": [
+      160710,
+      22477
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Living After",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Used to the Idea",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There on Purpose",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Slowing Beating Heart",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Writing Time",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Is It!",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It takes a man",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Narrative Plots",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Under a highway bridge",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Logan Jameison",
+    "mbid": "",
+    "listeners": 31154,
+    "playcount": 190251,
+    "listener_play_ratio": 6.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Logan+Jameison\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hamilton Jones",
+      "Jimmy Udonis",
+      "Jaden Cohen",
+      "Jonathán Bridges",
+      "Natalie Meir"
+    ],
+    "top_tracks": [
+      {
+        "name": "My Writing Time",
+        "listeners": 13156,
+        "playcount": 60512
+      },
+      {
+        "name": "Narrative Plots",
+        "listeners": 12873,
+        "playcount": 57640
+      },
+      {
+        "name": "As We Speak",
+        "listeners": 8279,
+        "playcount": 36410
+      },
+      {
+        "name": "Pines and Cedars",
+        "listeners": 4663,
+        "playcount": 15859
+      },
+      {
+        "name": "My Slowing Beating Heart",
+        "listeners": 4328,
+        "playcount": 19789
+      },
+      {
+        "name": "Used to the Idea",
+        "listeners": 4,
+        "playcount": 7
+      },
+      {
+        "name": "Ding Dong! Merrily On High!",
+        "listeners": 3,
+        "playcount": 21
+      },
+      {
+        "name": "Corcovado",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "There on Purpose",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Under a Highway Bridge",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Logan+Jameison"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

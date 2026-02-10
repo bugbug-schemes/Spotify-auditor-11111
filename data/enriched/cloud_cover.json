@@ -1,0 +1,185 @@
+{
+  "artist_name": "cloud cover",
+  "artist_id": "cloud_cover",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:14:04.479371+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7110fd21-0c5d-4573-a986-27ed06fce948",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/2916162",
+      "free streaming": "https://www.deezer.com/artist/12784287",
+      "purchase for download": "https://music.apple.com/us/artist/338341751",
+      "social network": "https://www.facebook.com/CloudCover",
+      "streaming": "https://music.apple.com/us/artist/338341751"
+    },
+    "labels": [
+      "Tone Tree Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'cloud cover', got 'Cloud Control'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2916162,
+    "name": "Cloud Cover",
+    "profile": "",
+    "realname": "Jenny Tuite",
+    "social_urls": [
+      "http://www.cloudcover.cloud",
+      "https://cloudcover.bandcamp.com",
+      "http://soundcloud.com/cloud_cover",
+      "http://youtube.com/cloudscoveryou",
+      "http://twitter.com/jenny_tuite",
+      "http://instagram.com/jenny_tuite",
+      "https://www.facebook.com/Cloud-Cover-169094856448632/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 6,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "12\"",
+      "3xCass",
+      "CD, EP",
+      "Cass",
+      "Cass, Comp, Ltd",
+      "Cass, Unofficial"
+    ],
+    "labels": [
+      "Disposable America",
+      "Family Time Records",
+      "Not On Label",
+      "Ritual Tapes"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cloud cover",
+    "mbid": "",
+    "listeners": 15249,
+    "playcount": 65803,
+    "listener_play_ratio": 4.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cloud+cover\">Read more on Last.fm</a>",
+    "tags": [
+      "instrumental",
+      "ambient",
+      "dream pop",
+      "piano",
+      "5432fun"
+    ],
+    "similar_artists": [
+      "Lucho Ripley",
+      "Porch Upright",
+      "Paddy Mulcahy",
+      "jeppa.",
+      "Somno Beats"
+    ],
+    "top_tracks": [
+      {
+        "name": "ignition",
+        "listeners": 2646,
+        "playcount": 5215
+      },
+      {
+        "name": "progression",
+        "listeners": 2217,
+        "playcount": 4732
+      },
+      {
+        "name": "once more",
+        "listeners": 2150,
+        "playcount": 3575
+      },
+      {
+        "name": "highlights",
+        "listeners": 1907,
+        "playcount": 3922
+      },
+      {
+        "name": "Horizon",
+        "listeners": 1771,
+        "playcount": 4448
+      },
+      {
+        "name": "nightshift",
+        "listeners": 1582,
+        "playcount": 3201
+      },
+      {
+        "name": "Ending",
+        "listeners": 1385,
+        "playcount": 3771
+      },
+      {
+        "name": "seasons",
+        "listeners": 1306,
+        "playcount": 2783
+      },
+      {
+        "name": "fractals",
+        "listeners": 1114,
+        "playcount": 2270
+      },
+      {
+        "name": "Helium",
+        "listeners": 1104,
+        "playcount": 3403
+      }
+    ],
+    "url": "https://www.last.fm/music/Cloud+cover"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

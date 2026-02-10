@@ -1,0 +1,98 @@
+{
+  "artist_name": "Sofia Ferra",
+  "artist_id": "sofia_ferra",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:09:20.997161+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sofia Ferra', got 'Sofia Carrasco'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14531638,
+    "name": "Sofia Ferraro",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Conqueror (5)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sofia Ferra",
+    "mbid": "",
+    "listeners": 3062,
+    "playcount": 41790,
+    "listener_play_ratio": 13.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sofia+Ferra\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Leo Star",
+      "Som Nus",
+      "John Rabbit",
+      "Francis Luna",
+      "Maja Hveiti"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleepy Serenade",
+        "listeners": 2725,
+        "playcount": 31009
+      },
+      {
+        "name": "Fading Blue",
+        "listeners": 1166,
+        "playcount": 10781
+      }
+    ],
+    "url": "https://www.last.fm/music/Sofia+Ferra"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

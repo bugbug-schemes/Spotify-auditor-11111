@@ -1,0 +1,445 @@
+{
+  "artist_name": "Polly Carter",
+  "artist_id": "polly_carter",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:30:10.471374+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7fb5fd9e-bcb2-44b1-bd06-623e3d886cd5",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/108930772",
+      "purchase for download": "https://music.apple.com/us/artist/1589981397",
+      "soundcloud": "https://soundcloud.com/pollycarter",
+      "streaming": "https://tidal.com/artist/21566284",
+      "youtube music": "https://music.youtube.com/channel/UCr0DpW21unt3KCd4TgxKDyg"
+    },
+    "labels": [
+      "1631 Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 108930772,
+    "name": "Polly Carter",
+    "nb_fan": 32,
+    "nb_album": 56,
+    "link": "https://www.deezer.com/artist/108930772",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8cc4682cb5e35d5b0be9bae5ee4121d6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Three Sleeping Owls",
+      "A Time Long Ago",
+      "While Mortals Sleep",
+      "Meditation",
+      "Butterflies",
+      "Velvet Clouds",
+      "Bluebird Waltz",
+      "In an afternoon reverie",
+      "Moonless Night",
+      "Summer Flowers",
+      "Alone",
+      "A Gentle Rainfall",
+      "Sense and Sensibility"
+    ],
+    "track_durations": [
+      123,
+      135,
+      132,
+      110,
+      146,
+      151,
+      89,
+      125,
+      178,
+      144,
+      154,
+      133,
+      172
+    ],
+    "track_ranks": [
+      102183,
+      144029,
+      43147,
+      22203,
+      232,
+      32894,
+      17765,
+      25412,
+      31071,
+      38385,
+      7853,
+      2003,
+      20905
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "single": 50
+    },
+    "albums": [
+      {
+        "title": "A Night Under The Stars",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "One Summer's Night",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Highland Notebooks",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Seafarer",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Velvet Clouds",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hand Woven Dreams",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "While Mortals Sleep",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Gentle Rainfall",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Burrowing Badger",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wisteria Dreams",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reminiscing",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tale of the Enchanted Pear Tree",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Clouds",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dancing In The Sky",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightfall",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seagulls On The Pier",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ode to the night sky",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chasing Fireflies",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Sketchbook",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Three Sleeping Owls",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Light Shines On The Fountain",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Skimpole's Parlour",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Downton Weir",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flowers From The Walled Garden",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepwalking Marionette",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lavender Winds",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond the Cherry Blossom Trees",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reading By A River",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lilies",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where Light Warms The Heather",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Wilson Trouvé",
+      "Una Luna",
+      "Jiří Horák",
+      "Sarah Watson",
+      "Holly Jones",
+      "Jozef De Schutter",
+      "Jordane Tumarinson",
+      "Christopher Dicker",
+      "Barry Hudson-Taylor",
+      "Allysium"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14139394,
+    "name": "Polly Carter",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "10xFile, FLAC, Album",
+      "13xFile, FLAC, Album"
+    ],
+    "labels": [
+      "1631 Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Polly Carter",
+    "mbid": "7fb5fd9e-bcb2-44b1-bd06-623e3d886cd5",
+    "listeners": 86437,
+    "playcount": 476011,
+    "listener_play_ratio": 5.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Polly+Carter\">Read more on Last.fm</a>",
+    "tags": [
+      "contemporary classical"
+    ],
+    "similar_artists": [
+      "Domi Nova",
+      "Martes Fiore",
+      "Allysium",
+      "Christian Janssen",
+      "Arlo Thiem"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Time Long Ago",
+        "listeners": 37785,
+        "playcount": 171384
+      },
+      {
+        "name": "Finding the Heavens",
+        "listeners": 19109,
+        "playcount": 90425
+      },
+      {
+        "name": "Waltz in a Dream",
+        "listeners": 18655,
+        "playcount": 60745
+      },
+      {
+        "name": "Three Sleeping Owls",
+        "listeners": 13971,
+        "playcount": 58260
+      },
+      {
+        "name": "Winds From The North",
+        "listeners": 10773,
+        "playcount": 27236
+      },
+      {
+        "name": "Old Stone Bridge",
+        "listeners": 6545,
+        "playcount": 13613
+      },
+      {
+        "name": "Sense and Sensibility",
+        "listeners": 3668,
+        "playcount": 8366
+      },
+      {
+        "name": "Velvet Clouds",
+        "listeners": 3527,
+        "playcount": 11605
+      },
+      {
+        "name": "Old Rocking Chair",
+        "listeners": 2187,
+        "playcount": 4507
+      },
+      {
+        "name": "A Cloud Passed",
+        "listeners": 1771,
+        "playcount": 4773
+      }
+    ],
+    "url": "https://www.last.fm/music/Polly+Carter"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

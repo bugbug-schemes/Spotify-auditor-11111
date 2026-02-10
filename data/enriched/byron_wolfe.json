@@ -1,0 +1,334 @@
+{
+  "artist_name": "Byron Wolfe",
+  "artist_id": "byron_wolfe",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:53:07.911405+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "078dd603-8ec3-42d4-9d08-f95e06f08ac3",
+    "type": "Orchestra",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003633876",
+      "discogs": "https://www.discogs.com/artist/4325636",
+      "other databases": "https://www.45cat.com/artist/byron-wolfes-orchestra"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 89807552,
+    "name": "Byron Wolfe",
+    "nb_fan": 12,
+    "nb_album": 20,
+    "link": "https://www.deezer.com/artist/89807552",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/29ba3792b1addf7f2b943574bc9c405f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Butterfly Baby (Guitar)",
+      "Virginia (Acoustic)",
+      "Open Fields",
+      "So Smooth",
+      "Graceful Moment",
+      "Last Christmas (Acoustic Guitar)"
+    ],
+    "track_durations": [
+      159,
+      140,
+      133,
+      133,
+      132,
+      280
+    ],
+    "track_ranks": [
+      70962,
+      40059,
+      90558,
+      58370,
+      37523,
+      8848
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 4,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "Hark! The Herald Angels Sing & I Saw Three Ships",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sedona",
+        "label": "",
+        "release_date": "2024-05-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Moments of Grace",
+        "label": "",
+        "release_date": "2021-02-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Solus",
+        "label": "",
+        "release_date": "2020-04-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Spring Dawn",
+        "label": "",
+        "release_date": "2026-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Christmas (Fireside)",
+        "label": "",
+        "release_date": "2025-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Antara",
+        "label": "",
+        "release_date": "2025-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Christmas & O Holy Night (Acoustic Guitar)",
+        "label": "",
+        "release_date": "2024-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Landing & Sunset Silhouette",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dark Lanterns",
+        "label": "",
+        "release_date": "2023-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Walking for Grace & Landing Home",
+        "label": "",
+        "release_date": "2023-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hometown Overpass",
+        "label": "",
+        "release_date": "2023-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Way From Home",
+        "label": "",
+        "release_date": "2023-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating Away & Gentle Landing",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wishful Thinking & Butterfly Baby",
+        "label": "",
+        "release_date": "2022-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Graceful Moment & Open Fields",
+        "label": "",
+        "release_date": "2021-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Virginia (Acoustic Guitar)",
+        "label": "",
+        "release_date": "2021-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer's End",
+        "label": "",
+        "release_date": "2020-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Garden Peace & Stravaig",
+        "label": "",
+        "release_date": "2020-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Behind Those Eyes",
+        "label": "",
+        "release_date": "2020-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6721066,
+    "name": "Byron Wolfe",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Byron Wolfe",
+    "mbid": "",
+    "listeners": 15034,
+    "playcount": 69019,
+    "listener_play_ratio": 4.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Byron+Wolfe\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Paris Pompey",
+      "Lennox Lorenzo",
+      "Peder Falk",
+      "Ava Olivia Bailey",
+      "Richie Kruz"
+    ],
+    "top_tracks": [
+      {
+        "name": "Graceful Moment",
+        "listeners": 5453,
+        "playcount": 20348
+      },
+      {
+        "name": "Virginia - Acoustic Guitar",
+        "listeners": 4779,
+        "playcount": 16307
+      },
+      {
+        "name": "Open Fields",
+        "listeners": 4373,
+        "playcount": 12538
+      },
+      {
+        "name": "So Smooth",
+        "listeners": 3142,
+        "playcount": 9416
+      },
+      {
+        "name": "Butterfly Baby - Guitar",
+        "listeners": 1445,
+        "playcount": 3646
+      },
+      {
+        "name": "Behind Those Eyes",
+        "listeners": 1092,
+        "playcount": 2562
+      },
+      {
+        "name": "Last Christmas - Acoustic Guitar",
+        "listeners": 595,
+        "playcount": 1118
+      },
+      {
+        "name": "Floating Away",
+        "listeners": 276,
+        "playcount": 642
+      },
+      {
+        "name": "Garden Peace",
+        "listeners": 263,
+        "playcount": 621
+      },
+      {
+        "name": "Montana",
+        "listeners": 171,
+        "playcount": 344
+      }
+    ],
+    "url": "https://www.last.fm/music/Byron+Wolfe"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

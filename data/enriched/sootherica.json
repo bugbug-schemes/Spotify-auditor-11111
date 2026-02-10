@@ -1,0 +1,132 @@
+{
+  "artist_name": "Sootherica",
+  "artist_id": "sootherica",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:13:15.272611+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 147744152,
+    "name": "Sootherica",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/147744152",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/45784fc9ec8fb29afaba7caa04c99157/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Interval",
+        "label": "",
+        "release_date": "2025-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eclipsa",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aubade",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Calm Within",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sootherica",
+    "mbid": "",
+    "listeners": 7993,
+    "playcount": 42867,
+    "listener_play_ratio": 5.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sootherica\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Primary Sense",
+      "Lunari Veil",
+      "Twin Sleeps",
+      "Dreamsource",
+      "Selma Moore"
+    ],
+    "top_tracks": [
+      {
+        "name": "Eclipsa",
+        "listeners": 6940,
+        "playcount": 35370
+      },
+      {
+        "name": "Interval",
+        "listeners": 2417,
+        "playcount": 7490
+      },
+      {
+        "name": "Compassion",
+        "listeners": 5,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Sootherica"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

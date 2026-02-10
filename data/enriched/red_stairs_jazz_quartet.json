@@ -1,0 +1,149 @@
+{
+  "artist_name": "Red Stairs Jazz Quartet",
+  "artist_id": "red_stairs_jazz_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:39:04.522211+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9c09771c-b248-42be-ad4d-996ca1e5fddc",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/87770392"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 87770392,
+    "name": "Red Stairs Jazz Quartet",
+    "nb_fan": 2,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/87770392",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b686b0b4ca35b82df446dc596cdf784a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Embracable You"
+    ],
+    "track_durations": [
+      154
+    ],
+    "track_ranks": [
+      21030
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Easy Living",
+        "label": "",
+        "release_date": "2020-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Red Stairs Jazz Quartet",
+    "mbid": "9c09771c-b248-42be-ad4d-996ca1e5fddc",
+    "listeners": 29405,
+    "playcount": 86526,
+    "listener_play_ratio": 2.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Red+Stairs+Jazz+Quartet\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Louis Silva Band",
+      "Leonard Peters",
+      "Timothy Kay Band",
+      "Hope Heights Jazz Band",
+      "Side Room Jazz Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Embracable You",
+        "listeners": 28385,
+        "playcount": 79892
+      },
+      {
+        "name": "Easy Living",
+        "listeners": 2852,
+        "playcount": 5862
+      },
+      {
+        "name": "If I Should Lose You",
+        "listeners": 387,
+        "playcount": 770
+      },
+      {
+        "name": "If I Should Lose You ||  || S || 07b0cf2a-2082-41b5-917c-dfa8be6037fb",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "2022-12-30 09:15",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Red+Stairs+Jazz+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

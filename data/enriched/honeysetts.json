@@ -1,0 +1,170 @@
+{
+  "artist_name": "Honeysetts",
+  "artist_id": "honeysetts",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:10:21.654633+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 281301041,
+    "name": "Honeysetts",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/281301041",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7996dee5723978830b69db1b06c6865b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Pale Horizon Line",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once Again, Somehow",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Bloom",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Second Echo",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Satin Dreams",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Come O Come Immanuel",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jingle Bells",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "To New Beginnings",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Honeysetts",
+    "mbid": "",
+    "listeners": 17554,
+    "playcount": 58811,
+    "listener_play_ratio": 3.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Honeysetts\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hugo Allessi",
+      "Galeazzo",
+      "Lecce Mchano",
+      "Alur Mcrose",
+      "Wiz Senega"
+    ],
+    "top_tracks": [
+      {
+        "name": "Once Again, Somehow",
+        "listeners": 12201,
+        "playcount": 23455
+      },
+      {
+        "name": "Quiet Bloom",
+        "listeners": 4902,
+        "playcount": 21470
+      },
+      {
+        "name": "Pale Horizon Line",
+        "listeners": 3492,
+        "playcount": 13498
+      },
+      {
+        "name": "Satin Dreams",
+        "listeners": 461,
+        "playcount": 845
+      },
+      {
+        "name": "Jingle Bells",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Honeysetts"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

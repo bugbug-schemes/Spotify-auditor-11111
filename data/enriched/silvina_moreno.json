@@ -1,0 +1,380 @@
+{
+  "artist_name": "Silvina Moreno",
+  "artist_id": "silvina_moreno",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:04:45.026564+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "033f2820-bf49-403c-9ae6-b92eb976560c",
+    "type": "Person",
+    "country": "AR",
+    "area": "Argentina",
+    "begin_date": "1987-09-08",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "jazz",
+      "pop",
+      "rock"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/2wMN1UAgISJA8yQusQL18G",
+      "other databases": "https://rateyourmusic.com/artist/silvina_moreno",
+      "setlistfm": "https://www.setlist.fm/setlists/silvina-moreno-33f640d9.html",
+      "social network": "https://www.instagram.com/silvinamoreno/",
+      "wikidata": "https://www.wikidata.org/wiki/Q29110060",
+      "youtube": "https://www.youtube.com/channel/UCFwaayRQRYQq2TjeOV1kD-g"
+    },
+    "labels": [
+      "Ariola",
+      "Son Buenos",
+      "MundosMusic"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 667166,
+    "name": "Silvina Moreno",
+    "nb_fan": 4197,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/667166",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d2bfcc9c11a87b683bdfba7e0022231b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Agarrate Catalina",
+      "Juan Pablo Vega"
+    ],
+    "contributor_roles": {
+      "Juan Pablo Vega": [
+        "Featured"
+      ],
+      "Agarrate Catalina": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Cuídame",
+      "Péndulo (feat. Juan Pablo Vega)",
+      "Esperanza (feat. Agarrate Catalina)"
+    ],
+    "track_durations": [
+      264,
+      185,
+      226
+    ],
+    "track_ranks": [
+      144867,
+      30608,
+      43705
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 1,
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "10 Años En Vivo",
+        "label": "",
+        "release_date": "2025-08-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Selva",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Herminia",
+        "label": "",
+        "release_date": "2019-11-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sofá",
+        "label": "",
+        "release_date": "2017-05-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Real",
+        "label": "",
+        "release_date": "2015-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mañana",
+        "label": "",
+        "release_date": "2012-08-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Selva Acústica",
+        "label": "",
+        "release_date": "2023-08-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Acá",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hielo Fino",
+        "label": "",
+        "release_date": "2025-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A LO BUENO",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Príncipe azul (En vivo)",
+        "label": "",
+        "release_date": "2025-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Puede ser (En vivo)",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me hablan de vos",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cuando Estemos Solos",
+        "label": "",
+        "release_date": "2022-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pedestal",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ley de Atracción",
+        "label": "",
+        "release_date": "2022-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Regina",
+        "label": "",
+        "release_date": "2021-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si Desafino",
+        "label": "",
+        "release_date": "2019-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En el 87",
+        "label": "",
+        "release_date": "2019-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tiempo",
+        "label": "",
+        "release_date": "2019-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frío en los Pies (feat. Kevin Johansen)",
+        "label": "",
+        "release_date": "2017-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Julieta Venegas",
+      "Jorge Drexler",
+      "Francisca Valenzuela",
+      "Marissa Mur",
+      "Carlos Sadness",
+      "Natalia Lafourcade",
+      "Denise Rosenthal",
+      "Kevin Johansen",
+      "Madame Récamier",
+      "El David Aguilar"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6299058,
+    "name": "Silvina Moreno",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 6,
+    "digital_only_releases": 2,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "2xCD, Album",
+      "CD, Album",
+      "CD-ROM, Album",
+      "LP, Album, Ora"
+    ],
+    "labels": [
+      "Ariola, Sony Music",
+      "Hot Records (27)",
+      "Not On Label (Silvina Moreno Self-released)",
+      "Sony Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Silvina Moreno",
+    "mbid": "033f2820-bf49-403c-9ae6-b92eb976560c",
+    "listeners": 8385,
+    "playcount": 59694,
+    "listener_play_ratio": 7.12,
+    "bio_exists": true,
+    "bio_summary": "Silvina Moreno es una joven cantante, multiinstrumentista y compositora. A los diez años descubrió su pasión por cantar y comenzó su búsqueda para desarrollarse. En la adolescencia fue voz de A New Brick In The Wall y London Eye (bandas tributo a Pink Floyd). Con ellas llegó a los teatros Ópera, Coliseo y Metro. \nDesde 2008, cuando ingresó al Berklee College of Music, tuvo como objetivo principal explotar y cultivar su talento. Ya egresada <a href=\"https://www.last.fm/music/Silvina+Moreno\">Read ",
+    "tags": [
+      "argentina",
+      "latin",
+      "female vocalists",
+      "pop",
+      "female vocalist"
+    ],
+    "similar_artists": [
+      "Natalie Perez",
+      "Benjamín Amadeo",
+      "Paz Carrara",
+      "Adrián Berra",
+      "Rosario Ortega"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cuídame",
+        "listeners": 3464,
+        "playcount": 13797
+      },
+      {
+        "name": "Esperanza (feat. Agarrate Catalina)",
+        "listeners": 1534,
+        "playcount": 5529
+      },
+      {
+        "name": "Péndulo (feat. Juan Pablo Vega)",
+        "listeners": 1296,
+        "playcount": 2967
+      },
+      {
+        "name": "Pedestal",
+        "listeners": 1122,
+        "playcount": 3324
+      },
+      {
+        "name": "Tiempo",
+        "listeners": 896,
+        "playcount": 2693
+      },
+      {
+        "name": "La Despedida",
+        "listeners": 892,
+        "playcount": 4691
+      },
+      {
+        "name": "Si Desafino",
+        "listeners": 420,
+        "playcount": 1659
+      },
+      {
+        "name": "Ya Lo Entendi",
+        "listeners": 393,
+        "playcount": 1382
+      },
+      {
+        "name": "En el 87",
+        "listeners": 393,
+        "playcount": 1060
+      },
+      {
+        "name": "Ley de Atracción",
+        "listeners": 346,
+        "playcount": 1075
+      }
+    ],
+    "url": "https://www.last.fm/music/Silvina+Moreno"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

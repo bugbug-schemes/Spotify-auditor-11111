@@ -1,0 +1,149 @@
+{
+  "artist_name": "Aldo Talete",
+  "artist_id": "aldo_talete",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:48:58.999492+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 264361742,
+    "name": "Aldo Talete",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/264361742",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/34224e2b210620dbd6900e6c262aaf7c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Farther Fields",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Celandine",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emanate",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoing Woods",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mellifluus",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aldo Talete",
+    "mbid": "",
+    "listeners": 26666,
+    "playcount": 128242,
+    "listener_play_ratio": 4.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aldo+Talete\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Saverio Lobeone",
+      "Sine Hats",
+      "Sorellien",
+      "Aurelio Li",
+      "Silicon Silence"
+    ],
+    "top_tracks": [
+      {
+        "name": "Celandine",
+        "listeners": 18177,
+        "playcount": 71437
+      },
+      {
+        "name": "Farther Fields",
+        "listeners": 13788,
+        "playcount": 51196
+      },
+      {
+        "name": "Emanate",
+        "listeners": 2829,
+        "playcount": 5577
+      },
+      {
+        "name": "Echoing Woods",
+        "listeners": 13,
+        "playcount": 16
+      },
+      {
+        "name": "Mellifluus",
+        "listeners": 12,
+        "playcount": 16
+      }
+    ],
+    "url": "https://www.last.fm/music/Aldo+Talete"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

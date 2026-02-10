@@ -1,0 +1,137 @@
+{
+  "artist_name": "Azure Fade",
+  "artist_id": "azure_fade",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:22:15.572433+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d0bc1999-92cc-4618-bd90-0d818876b09c",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/4WpAVFrzcBgiIgnAYTurvt",
+      "streaming": "https://music.apple.com/gb/artist/1849992826"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 353792892,
+    "name": "Azure Fade",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/353792892",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Weightless",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5371787,
+    "name": "Faded Azure",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "2xCD, Album",
+      "CDr, EP"
+    ],
+    "labels": [
+      "Not On Label (Faded Azure Self-Released)",
+      "極東海賊団Strikers"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Azure Fade",
+    "mbid": "",
+    "listeners": 633,
+    "playcount": 1175,
+    "listener_play_ratio": 1.86,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Azure+Fade\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Bishop Juice",
+      "Onda Kura",
+      "Léon Mirage",
+      "Monte Lux",
+      "Bantu Jafari"
+    ],
+    "top_tracks": [
+      {
+        "name": "Weightless",
+        "listeners": 633,
+        "playcount": 1175
+      }
+    ],
+    "url": "https://www.last.fm/music/Azure+Fade"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

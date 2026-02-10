@@ -1,0 +1,96 @@
+{
+  "artist_name": "celstia",
+  "artist_id": "celstia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:13:36.567556+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'celstia', got 'Celia Cruz'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Celstia",
+    "mbid": "",
+    "listeners": 2395,
+    "playcount": 15830,
+    "listener_play_ratio": 6.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Celstia\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Synaptic Drift",
+      "Vibrant Silence",
+      "Elin Lysvik",
+      "Epsila",
+      "Solfjord"
+    ],
+    "top_tracks": [
+      {
+        "name": "Delta Depth 105-109 Hz",
+        "listeners": 2186,
+        "playcount": 9909
+      },
+      {
+        "name": "Delta Focus 119.5-123 Hz",
+        "listeners": 1332,
+        "playcount": 5589
+      },
+      {
+        "name": "Inner Alpha 96.4-100.8 Hz",
+        "listeners": 159,
+        "playcount": 323
+      },
+      {
+        "name": "celstia",
+        "listeners": 1,
+        "playcount": 8
+      },
+      {
+        "name": "Spectra",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Celstia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

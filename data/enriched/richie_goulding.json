@@ -1,0 +1,160 @@
+{
+  "artist_name": "Richie Goulding",
+  "artist_id": "richie_goulding",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:42:48.761121+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327184191,
+    "name": "Richie Goulding",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/327184191",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1c21a8b7db7b473c723ab17d3f423af2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Time for Bed",
+        "label": "",
+        "release_date": "2025-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Cat",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wonderland",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodnight Reggie",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fairy Garden",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Sky and the Moon",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonrise Slumber",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Night Sky",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Richie Goulding",
+    "mbid": "",
+    "listeners": 2138,
+    "playcount": 26368,
+    "listener_play_ratio": 12.33,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Richie+Goulding\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Axel Moons",
+      "Ole Close",
+      "Elio Rowan",
+      "Elysia Blue",
+      "Teddy Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moonrise Slumber",
+        "listeners": 1161,
+        "playcount": 12035
+      },
+      {
+        "name": "Goodnight Reggie",
+        "listeners": 1041,
+        "playcount": 8723
+      },
+      {
+        "name": "Time for Bed",
+        "listeners": 787,
+        "playcount": 5610
+      }
+    ],
+    "url": "https://www.last.fm/music/Richie+Goulding"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

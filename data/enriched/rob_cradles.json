@@ -1,0 +1,94 @@
+{
+  "artist_name": "Rob Cradles",
+  "artist_id": "rob_cradles",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:44:02.566838+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Rob Cradles', got 'Rob Radley'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2235124,
+    "name": "Robin Cradles",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "CD, EP"
+    ],
+    "labels": [
+      "Fellaheen"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rob Cradles",
+    "mbid": "",
+    "listeners": 1480,
+    "playcount": 16050,
+    "listener_play_ratio": 10.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rob+Cradles\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Snuggle Land",
+      "Jeanne Victor",
+      "Francis Star",
+      "Kerstin Kempe",
+      "Kasimir Watts"
+    ],
+    "top_tracks": [
+      {
+        "name": "A little dream",
+        "listeners": 1480,
+        "playcount": 16050
+      }
+    ],
+    "url": "https://www.last.fm/music/Rob+Cradles"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

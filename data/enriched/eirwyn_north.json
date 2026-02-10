@@ -1,0 +1,218 @@
+{
+  "artist_name": "Eirwyn North",
+  "artist_id": "eirwyn_north",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:34:40.935811+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327184141,
+    "name": "Eirwyn North",
+    "nb_fan": 0,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/327184141",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9ccfc43396c1688a67c43efe477a9191/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Canyon Shadows",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spectra",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Opal",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mid Air",
+        "label": "",
+        "release_date": "2025-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Highlands",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equinox",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream Fountain",
+        "label": "",
+        "release_date": "2025-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stellar Nursery",
+        "label": "",
+        "release_date": "2025-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frozen Embers",
+        "label": "",
+        "release_date": "2025-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carnation Skyline",
+        "label": "",
+        "release_date": "2025-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bathyal Zone",
+        "label": "",
+        "release_date": "2025-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vibrancy",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Eirwyn North",
+    "mbid": "",
+    "listeners": 33008,
+    "playcount": 265034,
+    "listener_play_ratio": 8.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Eirwyn+North\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Quantum Veil",
+      "Stilly Night",
+      "Elio Vane",
+      "Peyote Level",
+      "Mariam Ember"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stellar Nursery",
+        "listeners": 21312,
+        "playcount": 90683
+      },
+      {
+        "name": "Dream Fountain",
+        "listeners": 16516,
+        "playcount": 66093
+      },
+      {
+        "name": "Equinox",
+        "listeners": 14091,
+        "playcount": 55274
+      },
+      {
+        "name": "Mid Air",
+        "listeners": 10728,
+        "playcount": 36818
+      },
+      {
+        "name": "Bathyal Zone",
+        "listeners": 3677,
+        "playcount": 11688
+      },
+      {
+        "name": "Spectra",
+        "listeners": 1357,
+        "playcount": 2901
+      },
+      {
+        "name": "Canyon Shadows",
+        "listeners": 698,
+        "playcount": 1339
+      },
+      {
+        "name": "Carnation Skyline",
+        "listeners": 97,
+        "playcount": 237
+      },
+      {
+        "name": "Opal",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Eirwyn+North"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

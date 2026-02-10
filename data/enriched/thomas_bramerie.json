@@ -1,0 +1,345 @@
+{
+  "artist_name": "Thomas Bramerie",
+  "artist_id": "thomas_bramerie",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:40:09.496381+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4d033341-75e7-434f-bb49-792c02ecc914",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "1965-09-18",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "000000007982909X"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/612436",
+      "free streaming": "https://www.deezer.com/artist/517405",
+      "other databases": "https://catalogue.bnf.fr/ark:/12148/cb139684968",
+      "social network": "https://www.instagram.com/thomasbramerie/",
+      "VIAF": "http://viaf.org/viaf/9488897",
+      "wikidata": "https://www.wikidata.org/wiki/Q59771396"
+    },
+    "labels": [
+      "Bonsaï Music",
+      "Camille Productions",
+      "Jazz Eleven"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 517405,
+    "name": "Thomas BRAMERIE",
+    "nb_fan": 249,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/517405",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5ed644a42695e58731baaaacbd9c023c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Dré Pallemaerts",
+      "Eric Legnini",
+      "Franck Amsallem",
+      "Hugo Lippi",
+      "Laurent Fickelson",
+      "Lionel Belmondo",
+      "Sacha Boutros",
+      "Stephane Belmondo",
+      "Tony Rabeson"
+    ],
+    "contributor_roles": {
+      "Sacha Boutros": [
+        "Main"
+      ],
+      "Hugo Lippi": [
+        "Main"
+      ],
+      "Franck Amsallem": [
+        "Main"
+      ],
+      "Tony Rabeson": [
+        "Main"
+      ],
+      "Lionel Belmondo": [
+        "Main"
+      ],
+      "Stephane Belmondo": [
+        "Main"
+      ],
+      "Eric Legnini": [
+        "Main"
+      ],
+      "Laurent Fickelson": [
+        "Main"
+      ],
+      "Dré Pallemaerts": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "La Javanaise",
+      "China Cat Sunflower",
+      "Dark Star",
+      "Stella Blue"
+    ],
+    "track_durations": [
+      266,
+      523,
+      382,
+      477
+    ],
+    "track_ranks": [
+      58736,
+      48284,
+      33450,
+      64616
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Six Strings Under",
+        "label": "",
+        "release_date": "2019-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Twenty",
+        "label": "",
+        "release_date": "2014-02-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Canzoni",
+        "label": "",
+        "release_date": "2010-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Storia",
+        "label": "",
+        "release_date": "2016-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dark Star",
+        "label": "",
+        "release_date": "2023-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stella Blue",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 612436,
+    "name": "Thomas Bramerie",
+    "profile": "French bassist.\r\n\r\nBorn in September 18, 1965 in Bergerac (France).\r\n",
+    "realname": "",
+    "social_urls": [
+      "http://www.nuevamusic.com/thomasbramerie.html"
+    ],
+    "members": [],
+    "groups": [
+      "Teddy Edwards Quartet",
+      "Belmondo Quintet",
+      "Olivier Hutman Trio",
+      "Thierry Maillard Trio",
+      "Thomas Bramerie Trio",
+      "Tristan Mélia Trio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 58,
+    "digital_only_releases": 28,
+    "total_releases": 86,
+    "formats": [
+      "",
+      "2xCD",
+      "2xCD, Album",
+      "2xCD, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp + DVD-V, NTSC, All",
+      "CD, Album, Dig",
+      "CD, Album, Promo",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CDr",
+      "CDr, Unofficial",
+      "DVD, NTSC, 4:3"
+    ],
+    "labels": [
+      "10H10, Cristal Records, Rue Stendhal",
+      "ACT (4)",
+      "Abeat Records",
+      "Aztec Musique",
+      "Backstage Production",
+      "Bonsaï Booking & Management",
+      "Bonsaï Music",
+      "CAMILLE PRODUCTIONS",
+      "Challenge Records (3)",
+      "Continuo Jazz",
+      "Cristal Records",
+      "Decca, Decca",
+      "Dreyfus Jazz",
+      "Elabeth",
+      "European Music Productions",
+      "From Paris With Jazz, Nocturne",
+      "Frémeaux & Associés",
+      "Jazz Eleven",
+      "Jazz Family",
+      "Jazz À Reims",
+      "Jazz&People",
+      "JosephRecord",
+      "Karonte, Contrabaix",
+      "Klaro Music",
+      "Living Jazz Archive",
+      "Naïve",
+      "Naïve, Naïve",
+      "NoMadMusic",
+      "Nocturne",
+      "Not On Label",
+      "OMX",
+      "PAN Music (2)",
+      "Pannonica Records",
+      "Plus Loin Music",
+      "RDC Records (2)",
+      "Sergent Major",
+      "Song X Jazz",
+      "Soul Kid Jazz",
+      "SteepleChase",
+      "Universal Classics & Jazz",
+      "Universal Music France",
+      "Verve Records",
+      "Verve Records, Gitanes Jazz Productions",
+      "Verve Records, Universal Music",
+      "treeLAWN Artists"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Thomas Bramerie",
+    "mbid": "4d033341-75e7-434f-bb49-792c02ecc914",
+    "listeners": 59,
+    "playcount": 284,
+    "listener_play_ratio": 4.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Thomas+Bramerie\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jesse Boyd",
+      "Chris Dingman",
+      "Roy Powell",
+      "Alan Pasqua",
+      "Ulf Wakenius, Carsten Dahl, Lars Danielsson, Morten Lund"
+    ],
+    "top_tracks": [
+      {
+        "name": "What Are Doing the Rest of Your Life ?",
+        "listeners": 21,
+        "playcount": 39
+      },
+      {
+        "name": "Tu t'laisses aller",
+        "listeners": 13,
+        "playcount": 19
+      },
+      {
+        "name": "Estate",
+        "listeners": 12,
+        "playcount": 19
+      },
+      {
+        "name": "La canzone di Marinella",
+        "listeners": 11,
+        "playcount": 21
+      },
+      {
+        "name": "You Must Believe In Spring",
+        "listeners": 10,
+        "playcount": 16
+      },
+      {
+        "name": "Les feuilles mortes",
+        "listeners": 9,
+        "playcount": 14
+      },
+      {
+        "name": "Jolies mômes de mon quartier",
+        "listeners": 8,
+        "playcount": 13
+      },
+      {
+        "name": "Fiore di maggio",
+        "listeners": 6,
+        "playcount": 12
+      },
+      {
+        "name": "Old Devil Moon",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "Chantez !",
+        "listeners": 6,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Thomas+Bramerie"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

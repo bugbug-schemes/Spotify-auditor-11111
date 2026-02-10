@@ -1,0 +1,115 @@
+{
+  "artist_name": "Serenna Rose",
+  "artist_id": "serenna_rose",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:59:31.361307+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 313003941,
+    "name": "Serenna Rose",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/313003941",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Silver Drops and Quiet Dreams",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nest of Whispers",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Summer Whisper",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Serenna Rose",
+    "mbid": "",
+    "listeners": 1378,
+    "playcount": 16226,
+    "listener_play_ratio": 11.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Serenna+Rose\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Charlie Gray",
+      "All About The Children",
+      "John Rabbit",
+      "A. Rustique",
+      "Philip berg"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gentle Summer Whisper",
+        "listeners": 1378,
+        "playcount": 16226
+      }
+    ],
+    "url": "https://www.last.fm/music/Serenna+Rose"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

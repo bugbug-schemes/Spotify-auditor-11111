@@ -1,0 +1,404 @@
+{
+  "artist_name": "Isaia Huron",
+  "artist_id": "isaia_huron",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:17:10.479653+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f14eb12d-d35d-4ce9-a6cb-b56d55f4206b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/80689342",
+      "social network": "https://www.facebook.com/isaiahuron",
+      "streaming": "https://tidal.com/artist/17667257"
+    },
+    "labels": [
+      "SLANG"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 80689342,
+    "name": "Isaia Huron",
+    "nb_fan": 399,
+    "nb_album": 17,
+    "link": "https://www.deezer.com/artist/80689342",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1d3d668d287dc948acead716f82434de/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "COLORS",
+      "Kehlani"
+    ],
+    "contributor_roles": {
+      "Kehlani": [
+        "Featured"
+      ],
+      "COLORS": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "FIDDY",
+      "I CHOSE YOU",
+      "SEE RIGHT THROUGH ME (feat. Kehlani)",
+      "CONCUBANIA!",
+      "I THINK SO?",
+      "THROUGH YOU? (INTERLUDE)",
+      "UNSURE",
+      "I CHOSE YOU - A COLORS SHOW",
+      "LIST CRAWLER",
+      "THE EVERYTHING SONG",
+      "HOML",
+      "ANYWAY",
+      "goodnight",
+      "Fallen/DGYLA",
+      "TEENAGE FEVER",
+      "THOTFUL",
+      "AISHA POTTER",
+      "One in a Million",
+      "TANGERINE",
+      "SELF 2",
+      "Self!",
+      "bell",
+      "Mary Ellen (02)",
+      "Mary Ellen",
+      "More (02)"
+    ],
+    "track_durations": [
+      222,
+      224,
+      256,
+      233,
+      71,
+      226,
+      217,
+      199,
+      186,
+      264,
+      192,
+      292,
+      248,
+      231,
+      256,
+      201,
+      235,
+      321,
+      127,
+      297,
+      230,
+      268,
+      198,
+      177,
+      205
+    ],
+    "track_ranks": [
+      234675,
+      280475,
+      323807,
+      200369,
+      169344,
+      174622,
+      164201,
+      150157,
+      196238,
+      155724,
+      180480,
+      116619,
+      96137,
+      125393,
+      88203,
+      168821,
+      89928,
+      74450,
+      64694,
+      76961,
+      115224,
+      76641,
+      66371,
+      40535,
+      38188
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 3,
+      "ep": 3,
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "CONCUBANIA",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I'LL FINISH THE LYRICS LATER",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "LIBBIE 02",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cerulean Tapes",
+        "label": "",
+        "release_date": "2021-12-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bound",
+        "label": "",
+        "release_date": "2021-08-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Libbie",
+        "label": "",
+        "release_date": "2020-03-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I CHOSE YOU - A COLORS SHOW",
+        "label": "",
+        "release_date": "2025-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "FIDDY",
+        "label": "",
+        "release_date": "2025-07-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LIST CRAWLER",
+        "label": "",
+        "release_date": "2025-06-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "goodnight",
+        "label": "",
+        "release_date": "2025-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "bell",
+        "label": "",
+        "release_date": "2024-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CIRCLE",
+        "label": "",
+        "release_date": "2024-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "GLT Freestyle",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One in a Million",
+        "label": "",
+        "release_date": "2021-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Self!",
+        "label": "",
+        "release_date": "2021-03-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somehow I knew",
+        "label": "",
+        "release_date": "2020-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Three",
+        "label": "",
+        "release_date": "2020-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Teyana Taylor",
+      "TheARTI$t",
+      "Elmiene",
+      "UMI",
+      "Dylan Sinclair",
+      "Jastin Martin",
+      "Ari Lennox",
+      "Syd",
+      "Destin Conrad",
+      "Isaiah falls"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15757266,
+    "name": "Isaia Huron",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 6,
+    "total_releases": 7,
+    "formats": [
+      "File, AAC, Album",
+      "File, AAC, Single",
+      "LP, Ltd"
+    ],
+    "labels": [
+      "Slang (7)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Isaia Huron",
+    "mbid": "f14eb12d-d35d-4ce9-a6cb-b56d55f4206b",
+    "listeners": 118416,
+    "playcount": 1091023,
+    "listener_play_ratio": 9.21,
+    "bio_exists": true,
+    "bio_summary": "A husky-voiced alternative R&B, soul, and pop singer, Isaia Huron cut his teeth as a drummer before stepping out on his own with a series of EPs including 2020's lush Three and 2021's Bound.\n\nA native of Greenville, South Carolina, Huron relocated to Nashville in 2018 and quickly became an in-demand drummer for various bands. During this time, he was also issuing his own music online, honing his skills, and growing in confidence as a singer, songwriter, and producer. <a href=\"https://www.last.fm",
+    "tags": [
+      "rnb",
+      "pop",
+      "alternative rnb",
+      "Neo-Soul",
+      "contemporary rnb"
+    ],
+    "similar_artists": [
+      "Khamari",
+      "Elmiene",
+      "Destin Conrad",
+      "kwn",
+      "Casper Sage"
+    ],
+    "top_tracks": [
+      {
+        "name": "Self!",
+        "listeners": 27723,
+        "playcount": 163803
+      },
+      {
+        "name": "Loving You Is a Mountain",
+        "listeners": 24251,
+        "playcount": 80528
+      },
+      {
+        "name": "Patient",
+        "listeners": 18116,
+        "playcount": 60478
+      },
+      {
+        "name": "TEENAGE FEVER",
+        "listeners": 17240,
+        "playcount": 94605
+      },
+      {
+        "name": "SEE RIGHT THROUGH ME (feat. Kehlani)",
+        "listeners": 14845,
+        "playcount": 56423
+      },
+      {
+        "name": "Oh Lord, Benefits!",
+        "listeners": 12346,
+        "playcount": 54517
+      },
+      {
+        "name": "Honeydew (02)",
+        "listeners": 7748,
+        "playcount": 36226
+      },
+      {
+        "name": "Mary Ellen",
+        "listeners": 6927,
+        "playcount": 25468
+      },
+      {
+        "name": "FIDDY",
+        "listeners": 6363,
+        "playcount": 27439
+      },
+      {
+        "name": "Honeydew",
+        "listeners": 5499,
+        "playcount": 22200
+      }
+    ],
+    "url": "https://www.last.fm/music/Isaia+Huron"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

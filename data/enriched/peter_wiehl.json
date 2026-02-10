@@ -1,0 +1,138 @@
+{
+  "artist_name": "Peter Wiehl",
+  "artist_id": "peter_wiehl",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:25:41.522972+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Peter Wiehl', got 'Peter Wehle'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7758397,
+    "name": "Peter Wiehl",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Red Baron"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Peter Wiehl",
+    "mbid": "",
+    "listeners": 17141,
+    "playcount": 38709,
+    "listener_play_ratio": 2.26,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Peter+Wiehl\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "We, the Navigators",
+      "Portal Plan",
+      "Polar Desert",
+      "Dawe Natauk",
+      "Serenity Within"
+    ],
+    "top_tracks": [
+      {
+        "name": "We Begin",
+        "listeners": 13078,
+        "playcount": 27368
+      },
+      {
+        "name": "Night Night",
+        "listeners": 2036,
+        "playcount": 6543
+      },
+      {
+        "name": "Nubilum",
+        "listeners": 1418,
+        "playcount": 2158
+      },
+      {
+        "name": "Solitude Symphony",
+        "listeners": 787,
+        "playcount": 2531
+      },
+      {
+        "name": "Misty Morning Meditation",
+        "listeners": 20,
+        "playcount": 93
+      },
+      {
+        "name": "Balance of Hearts",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Flow",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Tranquil Tapestry",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Contexts",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Fiction",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Peter+Wiehl"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

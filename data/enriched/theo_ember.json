@@ -1,0 +1,121 @@
+{
+  "artist_name": "Theo Ember",
+  "artist_id": "theo_ember",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:39:09.641378+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Theo Ember', got 'Theo Haber'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Theo Ember",
+    "mbid": "",
+    "listeners": 51663,
+    "playcount": 211510,
+    "listener_play_ratio": 4.09,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Theo+Ember\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hank Sky",
+      "Halcyon",
+      "Turquoise Waters",
+      "Starstrum",
+      "Oblivion"
+    ],
+    "top_tracks": [
+      {
+        "name": "Thoughts of Fall",
+        "listeners": 30794,
+        "playcount": 69125
+      },
+      {
+        "name": "Display",
+        "listeners": 20715,
+        "playcount": 45251
+      },
+      {
+        "name": "Tightrope",
+        "listeners": 17995,
+        "playcount": 35561
+      },
+      {
+        "name": "Conception",
+        "listeners": 13266,
+        "playcount": 33254
+      },
+      {
+        "name": "The Past",
+        "listeners": 7119,
+        "playcount": 15425
+      },
+      {
+        "name": "Theories",
+        "listeners": 4419,
+        "playcount": 8627
+      },
+      {
+        "name": "Times Changing",
+        "listeners": 1470,
+        "playcount": 3053
+      },
+      {
+        "name": "Shadow Circuit",
+        "listeners": 208,
+        "playcount": 395
+      },
+      {
+        "name": "Solaris",
+        "listeners": 144,
+        "playcount": 465
+      },
+      {
+        "name": "Uplifting Moments",
+        "listeners": 101,
+        "playcount": 145
+      }
+    ],
+    "url": "https://www.last.fm/music/Theo+Ember"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

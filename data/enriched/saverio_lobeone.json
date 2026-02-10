@@ -1,0 +1,146 @@
+{
+  "artist_name": "Saverio Lobeone",
+  "artist_id": "saverio_lobeone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:55:43.043469+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 317969441,
+    "name": "Saverio Lobeone",
+    "nb_fan": 2,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/317969441",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/914a6e32a0dcfbd3c7bae6736fc9fd07/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Contemplating the Horizon",
+      "Soft Rain"
+    ],
+    "track_durations": [
+      161,
+      136
+    ],
+    "track_ranks": [
+      176049,
+      141509
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Soft Rain",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just a Dream",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Walk Along the Seine",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contemplating the Horizon",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Saverio Lobeone",
+    "mbid": "",
+    "listeners": 38869,
+    "playcount": 221258,
+    "listener_play_ratio": 5.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Saverio+Lobeone\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sine Hats",
+      "Aldo Talete",
+      "Aurelio Li",
+      "Adrien Anviér",
+      "Silicon Silence"
+    ],
+    "top_tracks": [
+      {
+        "name": "Contemplating the Horizon",
+        "listeners": 34464,
+        "playcount": 147213
+      },
+      {
+        "name": "Soft Rain",
+        "listeners": 18925,
+        "playcount": 62435
+      },
+      {
+        "name": "A Walk Along the Seine",
+        "listeners": 2932,
+        "playcount": 10920
+      },
+      {
+        "name": "Just a Dream",
+        "listeners": 375,
+        "playcount": 690
+      }
+    ],
+    "url": "https://www.last.fm/music/Saverio+Lobeone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

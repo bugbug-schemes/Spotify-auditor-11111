@@ -1,0 +1,123 @@
+{
+  "artist_name": "Apech",
+  "artist_id": "apech",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:03:50.869285+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Apech', got 'Sech'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Apech",
+    "mbid": "",
+    "listeners": 34688,
+    "playcount": 232649,
+    "listener_play_ratio": 6.71,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Apech\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Felix Werner",
+      "Jack Rosslyn",
+      "Sami Muni",
+      "Chopade",
+      "Invisible Motion"
+    ],
+    "top_tracks": [
+      {
+        "name": "Self-Reflection",
+        "listeners": 25833,
+        "playcount": 162795
+      },
+      {
+        "name": "Windless",
+        "listeners": 6131,
+        "playcount": 39915
+      },
+      {
+        "name": "Feelstora",
+        "listeners": 5943,
+        "playcount": 25696
+      },
+      {
+        "name": "Turning Point",
+        "listeners": 334,
+        "playcount": 1048
+      },
+      {
+        "name": "Natural Reflection",
+        "listeners": 324,
+        "playcount": 675
+      },
+      {
+        "name": "Myths",
+        "listeners": 134,
+        "playcount": 379
+      },
+      {
+        "name": "Elysian Dream",
+        "listeners": 105,
+        "playcount": 590
+      },
+      {
+        "name": "Aerial",
+        "listeners": 99,
+        "playcount": 263
+      },
+      {
+        "name": "Calm At Night",
+        "listeners": 48,
+        "playcount": 98
+      },
+      {
+        "name": "Thus The World",
+        "listeners": 22,
+        "playcount": 44
+      }
+    ],
+    "url": "https://www.last.fm/music/Apech"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

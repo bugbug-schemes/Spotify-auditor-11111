@@ -1,0 +1,169 @@
+{
+  "artist_name": "cloudseven",
+  "artist_id": "cloudseven",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:14:13.767956+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 111700122,
+    "name": "Cloudseven",
+    "nb_fan": 11,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/111700122",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d9d6d9f3e201ea25af4dddcda881d340/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "6sept",
+      "Melina",
+      "Rayn"
+    ],
+    "contributor_roles": {
+      "Rayn": [
+        "Main"
+      ],
+      "Melina": [
+        "Main"
+      ],
+      "6sept": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "high love",
+      "feel good",
+      "hey now",
+      "feelings",
+      "clocks"
+    ],
+    "track_durations": [
+      153,
+      121,
+      131,
+      135,
+      172
+    ],
+    "track_ranks": [
+      316041,
+      410207,
+      258665,
+      197222,
+      63693
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "you",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "clocks",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "hey now",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "following the sun",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "feel good",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "high love",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "feelings",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cloudseven",
+    "mbid": "",
+    "listeners": 2,
+    "playcount": 2,
+    "listener_play_ratio": 1.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cloudseven\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Cloudseven",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Cloudseven"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

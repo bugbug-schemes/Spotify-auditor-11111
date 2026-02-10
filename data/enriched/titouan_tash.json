@@ -1,0 +1,122 @@
+{
+  "artist_name": "Titouan Tash",
+  "artist_id": "titouan_tash",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:43:38.286748+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 351921372,
+    "name": "Titouan Tash",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/351921372",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Seahorse Parade",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twinkle, Twinkle Little Star",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baa, Baa, Black Sheep",
+        "label": "",
+        "release_date": "2025-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Look at Dad's Boat",
+        "label": "",
+        "release_date": "2025-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Titouan Tash",
+    "mbid": "",
+    "listeners": 587,
+    "playcount": 2687,
+    "listener_play_ratio": 4.58,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Titouan+Tash\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Luma Tide",
+      "Henry Clein",
+      "Fluffe Timber",
+      "Marlo Tendre",
+      "Nigel Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Seahorse Parade",
+        "listeners": 587,
+        "playcount": 2687
+      }
+    ],
+    "url": "https://www.last.fm/music/Titouan+Tash"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

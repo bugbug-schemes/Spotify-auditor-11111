@@ -1,0 +1,443 @@
+{
+  "artist_name": "Paul Cherry",
+  "artist_id": "paul_cherry",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:23:23.080257+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8df68301-abe2-4311-a5da-34dfe8228666",
+    "type": "Person",
+    "country": "",
+    "area": "Chicago",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://paulcherry.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/4987082",
+      "free streaming": "https://www.deezer.com/artist/6059800",
+      "streaming": "https://music.apple.com/us/artist/404634323"
+    },
+    "labels": [
+      "FeelTrip",
+      "Nature's Candy",
+      "Born Losers Records",
+      "777 MUSIC"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6059800,
+    "name": "Paul Cherry",
+    "nb_fan": 566,
+    "nb_album": 15,
+    "link": "https://www.deezer.com/artist/6059800",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/db2826f6eac18e71ba37a034246cd6ae/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Eyedress",
+      "JW Francis",
+      "Jordana",
+      "Kate Bollinger",
+      "Nelson Devereaux",
+      "落日飛車 Sunset Rollercoaster"
+    ],
+    "contributor_roles": {
+      "Eyedress": [
+        "Main"
+      ],
+      "Kate Bollinger": [
+        "Featured"
+      ],
+      "落日飛車 Sunset Rollercoaster": [
+        "Featured"
+      ],
+      "Jordana": [
+        "Main"
+      ],
+      "JW Francis": [
+        "Main"
+      ],
+      "Nelson Devereaux": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Dancing with My Demons",
+      "Your Letter",
+      "Hey Girl",
+      "Like Yesterday",
+      "Minute",
+      "Between Me and Chicago",
+      "The Comeback",
+      "2 Minute",
+      "So Easy",
+      "OBO",
+      "This High",
+      "No News No Blues",
+      "Triumph, Love, Humanity",
+      "For The Birds",
+      "Modern Miracle",
+      "Playroom",
+      "Our Night",
+      "Rain Fugue",
+      "Back On The Music!",
+      "My Idol",
+      "Waverunner",
+      "Butterfly Beach",
+      "I Love You 2",
+      "It Happens All The Time",
+      "Taffer's Goodbye"
+    ],
+    "track_durations": [
+      222,
+      180,
+      138,
+      241,
+      144,
+      204,
+      187,
+      141,
+      187,
+      163,
+      236,
+      234,
+      184,
+      178,
+      189,
+      143,
+      244,
+      316,
+      207,
+      194,
+      251,
+      195,
+      147,
+      174,
+      214
+    ],
+    "track_ranks": [
+      235594,
+      145718,
+      167116,
+      185533,
+      37694,
+      59987,
+      32309,
+      22388,
+      37517,
+      79432,
+      88145,
+      40942,
+      193,
+      45658,
+      7635,
+      68052,
+      69787,
+      24290,
+      25018,
+      162176,
+      13079,
+      30858,
+      103413,
+      31278,
+      7865
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 1,
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Pure Grooves Vol. 1",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Back On the Music!",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flavour",
+        "label": "",
+        "release_date": "2018-03-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "On Top",
+        "label": "",
+        "release_date": "2014-12-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "ICED MERLOT",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Row Row",
+        "label": "",
+        "release_date": "2025-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Idol",
+        "label": "",
+        "release_date": "2024-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Los Angeles Story",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chicago",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back On The Music!",
+        "label": "",
+        "release_date": "2022-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moving Through Circles",
+        "label": "",
+        "release_date": "2022-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It Happens All The Time",
+        "label": "",
+        "release_date": "2022-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No News No Blues",
+        "label": "",
+        "release_date": "2022-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Letter",
+        "label": "",
+        "release_date": "2018-02-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Like Yesterday",
+        "label": "",
+        "release_date": "2017-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Crumb",
+      "Mild High Club",
+      "Mustard Service",
+      "Loving",
+      "Sunbeam Sound Machine",
+      "HOMESHAKE",
+      "Triathalon",
+      "Tokyo Tea Room",
+      "Gus Dapperton",
+      "No Vacation"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4987082,
+    "name": "Paul Cherry",
+    "profile": "Singer / songwriter and DJ from Chicago.",
+    "realname": "Paul Daniel Cherewick",
+    "social_urls": [
+      "https://paulcherry.today/",
+      "https://bornlosersrecords.com/collections/paul-cherry",
+      "https://www.facebook.com/paulcherry69/",
+      "https://www.facebook.com/paulcherry4ever",
+      "https://twitter.com/paulcherry69",
+      "https://www.instagram.com/paulcherry69",
+      "https://www.youtube.com/@paulcherry69",
+      "https://paulcherry.bandcamp.com/",
+      "https://soundcloud.com/paulcherry69"
+    ],
+    "members": [],
+    "groups": [
+      "Java (26)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 28,
+    "total_releases": 33,
+    "formats": [
+      "",
+      "10xFile, WAV, Album",
+      "2xFile, WAV, Single",
+      "7\", EP, Comp, Num + Box",
+      "7\", Single, Num, Bro",
+      "Box, Ltd + 14xCass, Album, Ltd",
+      "CD",
+      "Cass, Album, Ltd",
+      "Cass, Comp, Ltd",
+      "Cass, EP, Ltd",
+      "File, AAC, WAV, Single",
+      "File, FLAC",
+      "File, MP3, Single",
+      "LP, Album",
+      "LP, Comp, Cle"
+    ],
+    "labels": [
+      "Born Losers Records",
+      "Dumpster Tapes",
+      "FeelTrip",
+      "Fresh Selects",
+      "Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt, Maximum Pelt",
+      "Not On Label",
+      "Not On Label (Daguerreotype Self-released)",
+      "Not On Label (Temporex Self-Released)",
+      "Vinyl Post",
+      "夕陽音樂產業有限公司"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Paul Cherry",
+    "mbid": "8df68301-abe2-4311-a5da-34dfe8228666",
+    "listeners": 117471,
+    "playcount": 942852,
+    "listener_play_ratio": 8.03,
+    "bio_exists": true,
+    "bio_summary": "\n\n\n\n <a href=\"https://www.last.fm/music/Paul+Cherry\">Read more on Last.fm</a>",
+    "tags": [
+      "Psychedelic Rock",
+      "rock",
+      "indie rock",
+      "psychedelic",
+      "USA"
+    ],
+    "similar_artists": [
+      "The Holydrug Couple",
+      "Dumbo Gets Mad",
+      "Drugdealer",
+      "Sam Evian",
+      "Post Animal"
+    ],
+    "top_tracks": [
+      {
+        "name": "Like Yesterday",
+        "listeners": 61036,
+        "playcount": 317391
+      },
+      {
+        "name": "Your Letter",
+        "listeners": 37750,
+        "playcount": 154294
+      },
+      {
+        "name": "Hey Girl",
+        "listeners": 17065,
+        "playcount": 66685
+      },
+      {
+        "name": "Hello Again",
+        "listeners": 13751,
+        "playcount": 40762
+      },
+      {
+        "name": "This High",
+        "listeners": 12151,
+        "playcount": 48372
+      },
+      {
+        "name": "Minute",
+        "listeners": 11577,
+        "playcount": 32936
+      },
+      {
+        "name": "So Easy",
+        "listeners": 9432,
+        "playcount": 33633
+      },
+      {
+        "name": "No News No Blues",
+        "listeners": 7335,
+        "playcount": 27044
+      },
+      {
+        "name": "OBO (feat. Kate Bollinger)",
+        "listeners": 6863,
+        "playcount": 18903
+      },
+      {
+        "name": "Changing Times",
+        "listeners": 5220,
+        "playcount": 18056
+      }
+    ],
+    "url": "https://www.last.fm/music/Paul+Cherry"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

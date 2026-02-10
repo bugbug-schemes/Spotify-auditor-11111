@@ -1,0 +1,458 @@
+{
+  "artist_name": "Still Woozy",
+  "artist_id": "still_woozy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:21:01.686166+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bfa6929d-8375-488d-b027-8a0691c73643",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1992-06-23",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie",
+      "indie pop",
+      "indietronica",
+      "bedroom pop"
+    ],
+    "aliases": [
+      "Sven Eric Gamsky"
+    ],
+    "isnis": [
+      "0000000504313095"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/6816946",
+      "free streaming": "https://www.deezer.com/artist/12385914",
+      "IMDb": "https://www.imdb.com/name/nm11636088/",
+      "last.fm": "https://www.last.fm/music/Still+Woozy",
+      "lyrics": "https://genius.com/artists/Still-woozy",
+      "official homepage": "https://www.woozystill.com/",
+      "other databases": "https://imvdb.com/n/still-woozy",
+      "social network": "https://www.instagram.com/still_woozy/",
+      "soundcloud": "https://soundcloud.com/stillwoozy",
+      "streaming": "https://tidal.com/artist/8730374",
+      "wikidata": "https://www.wikidata.org/wiki/Q96406545",
+      "youtube": "https://www.youtube.com/channel/UCFvpiAtMwvCTCZuEM8Ua8Uw"
+    },
+    "labels": [
+      "[no label]",
+      "Interscope Records",
+      "Republic Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12385914,
+    "name": "Still Woozy",
+    "nb_fan": 21604,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/12385914",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/881b42a5ec7454b082b58a319f48ee1a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Elujay",
+      "ODIE",
+      "Omar Apollo",
+      "Remi Wolf"
+    ],
+    "contributor_roles": {
+      "ODIE": [
+        "Featured"
+      ],
+      "Remi Wolf": [
+        "Main"
+      ],
+      "Omar Apollo": [
+        "Featured"
+      ],
+      "Elujay": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Goodie Bag",
+      "Habit",
+      "Again",
+      "Cooks",
+      "Get Down",
+      "Window",
+      "Lucy",
+      "Foolsong",
+      "Shotput",
+      "Lava",
+      "Lemon",
+      "Drake",
+      "Vacation",
+      "That's Life",
+      "Kenny",
+      "Rocky",
+      "Pool",
+      "Ipanema",
+      "Get By",
+      "BS",
+      "Maybe She",
+      "Wolfcat",
+      "WTF",
+      "Anyone But You",
+      "All Along"
+    ],
+    "track_durations": [
+      146,
+      153,
+      173,
+      174,
+      171,
+      139,
+      142,
+      173,
+      170,
+      157,
+      230,
+      167,
+      233,
+      148,
+      194,
+      166,
+      223,
+      127,
+      146,
+      133,
+      169,
+      174,
+      193,
+      176,
+      148
+    ],
+    "track_ranks": [
+      564537,
+      307644,
+      457936,
+      385992,
+      315548,
+      381359,
+      408241,
+      280481,
+      420898,
+      285734,
+      427109,
+      254699,
+      239144,
+      373035,
+      331792,
+      439309,
+      361363,
+      212766,
+      296610,
+      298792,
+      236287,
+      281668,
+      207018,
+      412962,
+      150907
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 2,
+      "ep": 1,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "Loveseat",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "If This Isn’t Nice, I Don’t Know What Is",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lately EP",
+        "label": "",
+        "release_date": "2019-05-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lemon",
+        "label": "",
+        "release_date": "2024-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Your Life",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Again",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shotput",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anyone But You",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pool",
+        "label": "",
+        "release_date": "2022-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kenny",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rocky",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BS",
+        "label": "",
+        "release_date": "2020-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Window",
+        "label": "",
+        "release_date": "2020-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Habit",
+        "label": "",
+        "release_date": "2019-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lucy",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodie Bag",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wolfcat",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cooks",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vacation",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Gus Dapperton",
+      "Phum Viphurit",
+      "Cosmo Pyke",
+      "Feng Suave",
+      "Sports",
+      "hard life",
+      "boy pablo",
+      "JORDANN",
+      "Yellow Days",
+      "Ralph Castelli"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6816946,
+    "name": "Still Woozy",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 5,
+    "digital_only_releases": 14,
+    "total_releases": 19,
+    "formats": [
+      "",
+      "12\", Single, Ltd, Aqu",
+      "File, AAC, MP3, Single",
+      "File, MP3, EP",
+      "File, MP3, Single",
+      "File, MP3, Single, 320",
+      "LP, Comp, Club, Ltd, Num, Bla",
+      "LP, EP",
+      "LP, EP, Club, Ltd, Num, Bla"
+    ],
+    "labels": [
+      "Atlantic, Nice Life",
+      "Downtown",
+      "Interscope Records, Still Woozy Productions",
+      "Not On Label",
+      "Not On Label (Still Woozy Self-released)",
+      "Still Woozy",
+      "Vinyl Me, Please. Rising"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Still Woozy",
+    "mbid": "bfa6929d-8375-488d-b027-8a0691c73643",
+    "listeners": 1182616,
+    "playcount": 43309046,
+    "listener_play_ratio": 36.62,
+    "bio_exists": true,
+    "bio_summary": "Sven Eric Gamsky, known professionally as Still Woozy (born June 23, 1992), is an American singer and songwriter from Oakland, California. He is signed to to Interscope Records. Gamsky grew up in Moraga, California, in the San Francisco Bay Area. \n\nAfter he went viral with the R&B-inflected \"Goodie Bag\" in 2017, he continued to release one-off tracks until presenting the Lately EP in 2019. It included another streaming hit, \"Habit.\"\n\nGrowing up in Moraga <a href=\"https://www.last.fm/music/Still+",
+    "tags": [
+      "bedroom pop",
+      "Lo-Fi",
+      "indietronica",
+      "indie",
+      "indie pop"
+    ],
+    "similar_artists": [
+      "Gus Dapperton",
+      "Goth Babe",
+      "Current Blue",
+      "Ritt Momney",
+      "Jawny"
+    ],
+    "top_tracks": [
+      {
+        "name": "Goodie Bag",
+        "listeners": 799003,
+        "playcount": 8888153
+      },
+      {
+        "name": "Habit",
+        "listeners": 394635,
+        "playcount": 3599598
+      },
+      {
+        "name": "Cooks",
+        "listeners": 387806,
+        "playcount": 3205331
+      },
+      {
+        "name": "Window",
+        "listeners": 378527,
+        "playcount": 3358251
+      },
+      {
+        "name": "Lucy",
+        "listeners": 360705,
+        "playcount": 3054424
+      },
+      {
+        "name": "Lava",
+        "listeners": 245669,
+        "playcount": 1819809
+      },
+      {
+        "name": "wolfcat",
+        "listeners": 210449,
+        "playcount": 1601006
+      },
+      {
+        "name": "That's Life",
+        "listeners": 207083,
+        "playcount": 1677820
+      },
+      {
+        "name": "Rocky",
+        "listeners": 186732,
+        "playcount": 1391884
+      },
+      {
+        "name": "Kenny",
+        "listeners": 183150,
+        "playcount": 1303958
+      }
+    ],
+    "url": "https://www.last.fm/music/Still+Woozy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

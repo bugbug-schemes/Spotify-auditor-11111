@@ -1,0 +1,230 @@
+{
+  "artist_name": "Adrian Edblad",
+  "artist_id": "adrian_edblad",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:43:32.696266+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183264027,
+    "name": "Adrian Edblad",
+    "nb_fan": 4,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/183264027",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/eafd8ece5bced35708bf1fd84c18d069/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Visa vid vindens ängar",
+      "Nu har jag fått den jag vill ha",
+      "Greensleeves",
+      "Vem kan segla förutan vind",
+      "Calm River Drift"
+    ],
+    "track_durations": [
+      146,
+      181,
+      145,
+      85,
+      183
+    ],
+    "track_ranks": [
+      30842,
+      32250,
+      25410,
+      28141,
+      30923
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Calm River Drift",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Greensleeves",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En svalkande vind",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Confidencen",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Längtans tid",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stilla skymning",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fjärilens vals",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vem kan segla förutan vind",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Höstvisa",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Visa vid vindens ängar",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Adrian Edblad",
+    "mbid": "",
+    "listeners": 11835,
+    "playcount": 43906,
+    "listener_play_ratio": 3.71,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Adrian+Edblad\">Read more on Last.fm</a>",
+    "tags": [
+      "classical guitar",
+      "instrumental"
+    ],
+    "similar_artists": [
+      "Leandra Costa",
+      "Esmeralda Avery",
+      "Gabriel Femi",
+      "Joseph Sullinger",
+      "William Wilson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Confidencen",
+        "listeners": 3054,
+        "playcount": 10709
+      },
+      {
+        "name": "Calm River Drift",
+        "listeners": 2817,
+        "playcount": 9045
+      },
+      {
+        "name": "Trubbel",
+        "listeners": 2165,
+        "playcount": 6199
+      },
+      {
+        "name": "Visa vid vindens ängar",
+        "listeners": 1528,
+        "playcount": 3943
+      },
+      {
+        "name": "Nu har jag fått den jag vill ha",
+        "listeners": 1296,
+        "playcount": 3093
+      },
+      {
+        "name": "Fjärilens vals",
+        "listeners": 1114,
+        "playcount": 3801
+      },
+      {
+        "name": "Höstvisa",
+        "listeners": 963,
+        "playcount": 2513
+      },
+      {
+        "name": "Greensleeves",
+        "listeners": 649,
+        "playcount": 1397
+      },
+      {
+        "name": "Stilla skymning",
+        "listeners": 468,
+        "playcount": 1110
+      },
+      {
+        "name": "Vem kan segla förutan vind",
+        "listeners": 424,
+        "playcount": 1247
+      }
+    ],
+    "url": "https://www.last.fm/music/Adrian+Edblad"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

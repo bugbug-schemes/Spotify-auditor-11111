@@ -1,0 +1,108 @@
+{
+  "artist_name": "Silas Arden",
+  "artist_id": "silas_arden",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:03:17.425004+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 345523031,
+    "name": "Silas Arden",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/345523031",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1f5aef7f9cbd858c3334e09333eaaa64/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "I Heard The Bells On Christmas Day (Fireside)",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Heard The Bells On Christmas Day",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Silas Arden",
+    "mbid": "",
+    "listeners": 1449,
+    "playcount": 3520,
+    "listener_play_ratio": 2.43,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Silas+Arden\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jonah Thorne",
+      "Joe Hanson",
+      "Forrest St. Marie",
+      "Naia Catalán",
+      "Meadow Bryce"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Heard The Bells On Christmas Day",
+        "listeners": 1449,
+        "playcount": 3520
+      }
+    ],
+    "url": "https://www.last.fm/music/Silas+Arden"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,256 @@
+{
+  "artist_name": "Oak Glen",
+  "artist_id": "oak_glen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:09:32.910308+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 61584442,
+    "name": "Oak Glen",
+    "nb_fan": 34,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/61584442",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ead80d71ea6e5acb12e51e56f68b5f3e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Home"
+    ],
+    "track_durations": [
+      186
+    ],
+    "track_ranks": [
+      44257
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Love Racer",
+        "label": "",
+        "release_date": "2020-11-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dancing With Your Ghost",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We're Still Young",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corner Store",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Run Away",
+        "label": "",
+        "release_date": "2021-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Not Sorry",
+        "label": "",
+        "release_date": "2021-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cut It Loose",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Killing You (Acoustic)",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home",
+        "label": "",
+        "release_date": "2019-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Enemy",
+        "label": "",
+        "release_date": "2019-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 920218,
+    "name": "Glenroy Oakley",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Greyhound (4)"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 11,
+    "digital_only_releases": 7,
+    "total_releases": 18,
+    "formats": [
+      "",
+      "10\", Maxi, Cle",
+      "10\", red",
+      "12\"",
+      "12\", Single",
+      "7\"",
+      "CD",
+      "CD, Comp",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Charm",
+      "Exclusive (3)",
+      "Jet Star",
+      "Lamp Light Records",
+      "Martial",
+      "Not On Label",
+      "Pepper Pot Record",
+      "R-2"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Oak Glen",
+    "mbid": "",
+    "listeners": 5702,
+    "playcount": 31702,
+    "listener_play_ratio": 5.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Oak+Glen\">Read more on Last.fm</a>",
+    "tags": [
+      "Russia",
+      "english",
+      "3",
+      "russian",
+      "yandex music"
+    ],
+    "similar_artists": [
+      "Svoya",
+      "Morfil",
+      "VEiiLA",
+      "Anet Sai",
+      "Lina Lee"
+    ],
+    "top_tracks": [
+      {
+        "name": "Home",
+        "listeners": 4173,
+        "playcount": 25473
+      },
+      {
+        "name": "We're Still Young",
+        "listeners": 910,
+        "playcount": 1691
+      },
+      {
+        "name": "Enemy",
+        "listeners": 386,
+        "playcount": 1068
+      },
+      {
+        "name": "Dancing with Your Ghost",
+        "listeners": 258,
+        "playcount": 618
+      },
+      {
+        "name": "Wasted Love",
+        "listeners": 256,
+        "playcount": 1088
+      },
+      {
+        "name": "I'm Not Sorry",
+        "listeners": 135,
+        "playcount": 373
+      },
+      {
+        "name": "Cut It Loose",
+        "listeners": 102,
+        "playcount": 400
+      },
+      {
+        "name": "Run Away",
+        "listeners": 99,
+        "playcount": 181
+      },
+      {
+        "name": "Race Car",
+        "listeners": 78,
+        "playcount": 347
+      },
+      {
+        "name": "Corner Store",
+        "listeners": 68,
+        "playcount": 90
+      }
+    ],
+    "url": "https://www.last.fm/music/Oak+Glen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,159 @@
+{
+  "artist_name": "Lotus Laverne",
+  "artist_id": "lotus_laverne",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:13:58.847180+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 130264852,
+    "name": "Lotus Laverne",
+    "nb_fan": 3,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/130264852",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/af170c4135d732f7a99f3b0cee56fea1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Valse Mistral"
+    ],
+    "track_durations": [
+      172
+    ],
+    "track_ranks": [
+      67408
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Resting Hearts",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Valentines valse",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clear View",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Falling Leafs",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Valse Mistral",
+        "label": "",
+        "release_date": "2021-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mare Nostrum",
+        "label": "",
+        "release_date": "2021-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lotus Laverne",
+    "mbid": "",
+    "listeners": 33503,
+    "playcount": 168178,
+    "listener_play_ratio": 5.02,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lotus+Laverne\">Read more on Last.fm</a>",
+    "tags": [
+      "piano"
+    ],
+    "similar_artists": [
+      "Isabella Morales",
+      "Genevieve Melton",
+      "Lavendle",
+      "Oliver Peasley",
+      "Anne Franco"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mare Nostrum",
+        "listeners": 27937,
+        "playcount": 143216
+      },
+      {
+        "name": "Valse Mistral",
+        "listeners": 6437,
+        "playcount": 16400
+      },
+      {
+        "name": "Clear View",
+        "listeners": 2844,
+        "playcount": 8561
+      },
+      {
+        "name": "Resting Hearts",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lotus+Laverne"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

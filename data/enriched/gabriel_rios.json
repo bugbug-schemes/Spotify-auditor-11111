@@ -1,0 +1,502 @@
+{
+  "artist_name": "Gabriel Rios",
+  "artist_id": "gabriel_rios",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:46:56.664458+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "de2fbc46-e06b-4ce0-9cfc-d590d7a04d5c",
+    "type": "Person",
+    "country": "BE",
+    "area": "Belgium",
+    "begin_date": "1978-08-25",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie pop"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000406554055"
+    ],
+    "ipis": [
+      "00295063060",
+      "00295063158"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000735056",
+      "bandsintown": "https://www.bandsintown.com/a/46163",
+      "discogs": "https://www.discogs.com/artist/230024",
+      "free streaming": "https://www.deezer.com/artist/162",
+      "IMDb": "https://www.imdb.com/name/nm1771993/",
+      "last.fm": "https://www.last.fm/music/Gabriel%20R%C3%ADos",
+      "lyrics": "https://muzikum.eu/nl/gabriel-rios/biografie",
+      "official homepage": "http://www.gabrielrios.be/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2015051247/",
+      "purchase for download": "https://itunes.apple.com/be/artist/id33526730",
+      "secondhandsongs": "https://secondhandsongs.com/artist/32422",
+      "setlistfm": "https://www.setlist.fm/setlists/gabriel-rios-33d6185d.html",
+      "social network": "https://www.instagram.com/gabrielriosofficial/",
+      "songkick": "https://www.songkick.com/artists/282321",
+      "soundcloud": "https://soundcloud.com/gabrielriosofficial",
+      "streaming": "https://tidal.com/artist/3580019",
+      "VIAF": "http://viaf.org/viaf/316388792",
+      "wikidata": "https://www.wikidata.org/wiki/Q3093952",
+      "youtube": "https://www.youtube.com/channel/UCxE9KRQF_3TMcwwxUrQjRIA"
+    },
+    "labels": [
+      "Play It Again Sam",
+      "Angelhead",
+      "Universal Music Belgium",
+      "Sony Music",
+      "Megadisc",
+      "[PIAS] Recordings",
+      "Megadisc Recordings",
+      "Nettwerk",
+      "Sony Music Entertainment Belgium NV/SA"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 162,
+    "name": "Gabriel Rios",
+    "nb_fan": 9620,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/162",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/43ee7a3bdbb686b05e628c1073635d09/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Devendra Banhart",
+      "Thomas Jack"
+    ],
+    "contributor_roles": {
+      "Devendra Banhart": [
+        "Main"
+      ],
+      "Thomas Jack": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Broad Daylight",
+      "La torre (feat. Devendra Banhart)",
+      "Gold (Thomas Jack Radio Edit)",
+      "Gold",
+      "Let It Go (Live)",
+      "Pedacito de papel",
+      "Gold (Live)",
+      "Madstone (Live)",
+      "Song no.7",
+      "Swing Low",
+      "La bolsa"
+    ],
+    "track_durations": [
+      189,
+      234,
+      196,
+      251,
+      227,
+      266,
+      241,
+      242,
+      191,
+      207,
+      214
+    ],
+    "track_ranks": [
+      156227,
+      343222,
+      422985,
+      406027,
+      91466,
+      151339,
+      307155,
+      71395,
+      183720,
+      164782,
+      198055
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 8,
+      "ep": 2,
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Playa negra",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flore",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flore - Deluxe version",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Authentic Argentina: The South",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "This Marauder's Midnight (Deluxe Version)",
+        "label": "",
+        "release_date": "2014-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "This Marauder's Midnight",
+        "label": "",
+        "release_date": "2014-11-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "En Vivo (Live)",
+        "label": "",
+        "release_date": "2005-12-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ghostboy",
+        "label": "",
+        "release_date": "2008-10-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flores",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Alma mía (vuelta)",
+        "label": "",
+        "release_date": "2020-12-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Broad Daylight uit Live Live Live",
+        "label": "",
+        "release_date": "2026-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La bolsa",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marcela",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pedacito de papel",
+        "label": "",
+        "release_date": "2024-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flore - AZUL Rework",
+        "label": "",
+        "release_date": "2021-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jovem Astro",
+        "label": "",
+        "release_date": "2021-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Panteón de amor",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La torre (feat. Devendra Banhart)",
+        "label": "",
+        "release_date": "2021-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No soy de aquí, ni soy de allá",
+        "label": "",
+        "release_date": "2020-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seja Minha (Acústico)",
+        "label": "",
+        "release_date": "2019-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Toronto",
+        "label": "",
+        "release_date": "2019-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In My Days of Darkness (feat. Lieven Tavernier)",
+        "label": "",
+        "release_date": "2015-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gold (Thomas Jack Radio Edit)",
+        "label": "",
+        "release_date": "2014-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Emilíana Torrini",
+      "Devendra Banhart",
+      "Jehro",
+      "Piers Faccini",
+      "Jil Is Lucky",
+      "Feist",
+      "Melissa Laveaux",
+      "Sandra Nkaké",
+      "Lo-Fang",
+      "Valerie June"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 230024,
+    "name": "Gabriel Rios",
+    "profile": "Gabriel Ríos (b. San Juan, Puerto Rico, 25 august 1978) is a Puerto Rican-Belgian musician living in Ghent, Belgium. Was in The Nothing Bastards and L Santo, before going solo. Blends hip-hop, electronics and latin rhythms.",
+    "realname": "Gabriel Rios",
+    "social_urls": [
+      "http://www.gabrielrios.be/",
+      "http://www.myspace.com/gabrielrios",
+      "https://www.facebook.com/gabrielriosofficial/info"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 68,
+    "digital_only_releases": 32,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10\", EP",
+      "12\", EP",
+      "2xCD, Album, Comp",
+      "2xCD, Comp",
+      "2xCD, Comp + CD, Mixed",
+      "2xCD, Comp + CD, Mixed + Dig",
+      "2xCD, Comp, Mixed",
+      "2xCD, Mixed",
+      "2xLP, Comp, Ltd, Num",
+      "3xCD, Comp",
+      "3xCD, Mixed",
+      "42xFile, MP3, Comp, 320",
+      "44xFile, AAC, Comp, 256",
+      "4xCD, Comp",
+      "5xCD, Comp",
+      "5xCD, Comp + Box",
+      "Box + 5xCD, Comp",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp + DVD-V, Comp + Box",
+      "CD, Comp, Ltd",
+      "CD, MiniAlbum, Wal",
+      "CD, Mixed, P/Mixed",
+      "CD, RE",
+      "CD, Single",
+      "CDr, Single",
+      "CDr, Single, Promo"
+    ],
+    "labels": [
+      "ARS Entertainment",
+      "Absolute (2), Absolute (2)",
+      "BMG Belgium",
+      "CNR Music Belgium NV",
+      "Columbia, Sony Music",
+      "Digidance",
+      "EMI",
+      "EMI Music Catalogue Marketing",
+      "EMI, Humo",
+      "Emi Music Belgium, Het Laatste Nieuws",
+      "Flanders Music Centre",
+      "Geen Tekort",
+      "Megadisc Recordings",
+      "Megadisc Recordings, [PIAS] Recordings",
+      "Mostiko",
+      "My Music, Universal Music Polska",
+      "NOW MUSIC ANS.",
+      "Nova Records",
+      "On The Moon Records (2)",
+      "Petrol",
+      "Petrol, Megadisc Recordings",
+      "Play It Again Sam [PIAS]",
+      "Play It Again Sam [PIAS], Megadisc Recordings",
+      "Play Out!",
+      "Sony Music",
+      "Sony Music, Nostalgie (4)",
+      "Sony Music, TCM (4)",
+      "Universal",
+      "Universal Music",
+      "Universal Music Belgium",
+      "Universal Music Belgium, Radio 1 (3)",
+      "WARNER Music Benelux",
+      "WeZienWel Records",
+      "Zephyrus Records",
+      "[PIAS] Recordings",
+      "[PIAS] Recordings, Megadisc Recordings",
+      "[PIAS] Recordings, [PIAS] Recordings",
+      "[PIAS], Var",
+      "disco:wax, Sony Music, M!"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gabriel Rios",
+    "mbid": "",
+    "listeners": 236193,
+    "playcount": 2466009,
+    "listener_play_ratio": 10.44,
+    "bio_exists": true,
+    "bio_summary": "Born in 1978 in Puerto Rico, Gabriel Rios soon chose a path which few from his kin before him did. A blonde angel whispered that he should follow her lead. Young Gabriel kicked his heels and travelled through turbulent clouds, ending up in  a city that was not his, but which he embraced. Enter a new-found posse. Being a bunch of young wolves, they started playing music, created a way to communicate their thoughts to the outer world and christened themselves The Nothing Bastards. They toured the ",
+    "tags": [
+      "belgian",
+      "latin",
+      "pop",
+      "singer-songwriter",
+      "Belgium"
+    ],
+    "similar_artists": [
+      "Jasper Steverlinck",
+      "Daan",
+      "Absynthe Minded",
+      "Arsenal",
+      "The Van Jets"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gold - Thomas Jack Radio Edit",
+        "listeners": 83011,
+        "playcount": 434774
+      },
+      {
+        "name": "Broad Daylight",
+        "listeners": 82637,
+        "playcount": 529253
+      },
+      {
+        "name": "Gold",
+        "listeners": 29160,
+        "playcount": 164846
+      },
+      {
+        "name": "Ghostboy",
+        "listeners": 19112,
+        "playcount": 93821
+      },
+      {
+        "name": "Angelhead",
+        "listeners": 14443,
+        "playcount": 57770
+      },
+      {
+        "name": "La torre (feat. Devendra Banhart)",
+        "listeners": 13429,
+        "playcount": 53514
+      },
+      {
+        "name": "Unrock",
+        "listeners": 12001,
+        "playcount": 55137
+      },
+      {
+        "name": "Let it go",
+        "listeners": 10888,
+        "playcount": 47228
+      },
+      {
+        "name": "Tu no me quieres",
+        "listeners": 10863,
+        "playcount": 40275
+      },
+      {
+        "name": "I'm Gonna Die Tonight",
+        "listeners": 10003,
+        "playcount": 30592
+      }
+    ],
+    "url": "https://www.last.fm/music/Gabriel+Rios"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

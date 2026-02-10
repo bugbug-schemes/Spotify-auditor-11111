@@ -1,0 +1,176 @@
+{
+  "artist_name": "Signe Golin",
+  "artist_id": "signe_golin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:02:52.386060+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 148184052,
+    "name": "Signe Golin",
+    "nb_fan": 5,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/148184052",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0c0a7064c41b117986abf26baa8583c4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Second Self",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lugnande",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From A Letter",
+        "label": "",
+        "release_date": "2023-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Andrum",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vackra Fält",
+        "label": "",
+        "release_date": "2021-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Signe Golin",
+    "mbid": "",
+    "listeners": 56667,
+    "playcount": 346634,
+    "listener_play_ratio": 6.12,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Signe+Golin\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Arnkatla",
+      "Logan Docherty",
+      "Joseff Shields",
+      "Mari Cafferty",
+      "Pax Soloman"
+    ],
+    "top_tracks": [
+      {
+        "name": "Skymning",
+        "listeners": 34848,
+        "playcount": 216454
+      },
+      {
+        "name": "Vakna",
+        "listeners": 25709,
+        "playcount": 126301
+      },
+      {
+        "name": "Second Self",
+        "listeners": 892,
+        "playcount": 1790
+      },
+      {
+        "name": "Vackra Fält",
+        "listeners": 182,
+        "playcount": 480
+      },
+      {
+        "name": "Vackra fält - With Rain",
+        "listeners": 145,
+        "playcount": 1244
+      },
+      {
+        "name": "Andrum",
+        "listeners": 85,
+        "playcount": 154
+      },
+      {
+        "name": "Somna",
+        "listeners": 60,
+        "playcount": 168
+      },
+      {
+        "name": "Questions in the Night",
+        "listeners": 11,
+        "playcount": 17
+      },
+      {
+        "name": "From A Letter",
+        "listeners": 5,
+        "playcount": 17
+      },
+      {
+        "name": "Lugnande",
+        "listeners": 3,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Signe+Golin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

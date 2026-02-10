@@ -1,0 +1,214 @@
+{
+  "artist_name": "Orion Nights",
+  "artist_id": "orion_nights",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:16:05.076392+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288893951,
+    "name": "Orion Nights",
+    "nb_fan": 0,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/288893951",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/56b6c8a0b14285c5ba3c1c7d651613fd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "One Little Star"
+    ],
+    "track_durations": [
+      103
+    ],
+    "track_ranks": [
+      21879
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Full Moon Lullaby",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlit Whispers",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Night Boat",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamy Teddy",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispering Stars",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sky Full of Dreams",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Steps",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dancing Clouds",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Little Star",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Sleepy Star",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Clouds",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Stars, Soft Dreams",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Orion Nights",
+    "mbid": "",
+    "listeners": 3614,
+    "playcount": 47727,
+    "listener_play_ratio": 13.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Orion+Nights\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Milo Grímur",
+      "Rodi Mini",
+      "Elio Rowan",
+      "Alexis Montague",
+      "Richie Goulding"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleepy Clouds",
+        "listeners": 1931,
+        "playcount": 17941
+      },
+      {
+        "name": "Little Steps",
+        "listeners": 1404,
+        "playcount": 13925
+      },
+      {
+        "name": "Whispering Stars",
+        "listeners": 1126,
+        "playcount": 10701
+      },
+      {
+        "name": "Dreamy Teddy",
+        "listeners": 730,
+        "playcount": 5131
+      },
+      {
+        "name": "Silent Stars, Soft Dreams",
+        "listeners": 12,
+        "playcount": 16
+      },
+      {
+        "name": "The Sleepy Star",
+        "listeners": 9,
+        "playcount": 12
+      },
+      {
+        "name": "Dancing Clouds",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Orion+Nights"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

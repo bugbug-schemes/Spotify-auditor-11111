@@ -1,0 +1,197 @@
+{
+  "artist_name": "Silva Sax",
+  "artist_id": "silva_sax",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:04:17.888118+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b5110963-ade3-4f12-997d-3ad56433f2fe",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "instrumental",
+      "boom bap",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/145768372",
+      "purchase for download": "https://music.apple.com/us/artist/1586236336",
+      "soundcloud": "https://soundcloud.com/silvasax",
+      "streaming": "https://tidal.com/artist/28466266"
+    },
+    "labels": [
+      "Chill Caterpillar"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 145768372,
+    "name": "Silva Sax",
+    "nb_fan": 1,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/145768372",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/37a64816faa2eae3d7f90291567bfac7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Chanterelle"
+    ],
+    "track_durations": [
+      225
+    ],
+    "track_ranks": [
+      114765
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Cartoons & Cereal",
+        "label": "",
+        "release_date": "2021-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 564062,
+    "name": "Jorge Ferreira Da Silva",
+    "profile": "Flute and sax player from Brazil (Jorginho da Flauta)",
+    "realname": "Jorge Ferreira Borges Da Silva",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Orquestra Tabajara",
+      "Em Tempo de Jazz"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 24,
+    "digital_only_releases": 76,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "Box, Comp + 41xCD, Album, RE + DVD-A, RE",
+      "Box, Comp + CD, Album, RE + CD, Album, RE + CD, Al",
+      "Box, Comp, AB  + CD, Album, RE, RM, RP + CD, Album",
+      "CD, Album",
+      "CD, Album, Comp, Copy Prot.",
+      "CD, Comp",
+      "CD, Comp, RM",
+      "Cass, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "Atlantic",
+      "Continental (3)",
+      "Discobertas",
+      "EMI",
+      "EMI, EMI",
+      "Epic",
+      "Jangada",
+      "Mercury, Universal Music",
+      "Nova Força",
+      "Odeon",
+      "Philips",
+      "Philips, Philips",
+      "RCA Victor",
+      "Sony Music, Zeroneutro Corp.",
+      "Tapecar, Tapecar",
+      "WEA Music, Continental EastWest",
+      "Él, Cherry Red"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Silva Sax",
+    "mbid": "b5110963-ade3-4f12-997d-3ad56433f2fe",
+    "listeners": 26027,
+    "playcount": 59400,
+    "listener_play_ratio": 2.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Silva+Sax\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rio Nilo",
+      "O K O",
+      "Skeleton Panda",
+      "Little Lazy Lights",
+      "Sail & Weep"
+    ],
+    "top_tracks": [
+      {
+        "name": "Chanterelle",
+        "listeners": 19436,
+        "playcount": 44802
+      },
+      {
+        "name": "Cartoons & Cereal",
+        "listeners": 7717,
+        "playcount": 14587
+      },
+      {
+        "name": "Cartoons  Cereal",
+        "listeners": 3,
+        "playcount": 9
+      },
+      {
+        "name": "Cartoons & Cereal (2021)",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Silva+Sax"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

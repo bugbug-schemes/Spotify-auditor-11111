@@ -1,0 +1,70 @@
+{
+  "artist_name": "Noni Vaio",
+  "artist_id": "noni_vaio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:05:24.722227+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Noni Vaio', got 'Non Violent Communication'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Noni Vaio",
+    "mbid": "",
+    "listeners": 225,
+    "playcount": 612,
+    "listener_play_ratio": 2.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Noni+Vaio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Little Puff",
+        "listeners": 225,
+        "playcount": 612
+      }
+    ],
+    "url": "https://www.last.fm/music/Noni+Vaio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

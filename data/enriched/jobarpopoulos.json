@@ -1,0 +1,200 @@
+{
+  "artist_name": "Jobarpopoulos",
+  "artist_id": "jobarpopoulos",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:29:38.024633+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "0d93df76-c73d-40f8-b6f2-b797021e47f8",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6KmgiX5k5l3j6fEfUMs1Kz"
+    },
+    "labels": [
+      "Reflected Sounds"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 82895462,
+    "name": "Jobarpopoulos",
+    "nb_fan": 3,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/82895462",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5918c8a9d73dc6be5377f8d6ebbadfcf/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Kithára"
+    ],
+    "track_durations": [
+      162
+    ],
+    "track_ranks": [
+      146600
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Santorini Nights",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Electric Dreams",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "seafront",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kithára",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chill House x 3",
+        "label": "",
+        "release_date": "2022-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kata",
+        "label": "",
+        "release_date": "2020-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jobarpopoulos",
+    "mbid": "0d93df76-c73d-40f8-b6f2-b797021e47f8",
+    "listeners": 7285,
+    "playcount": 28424,
+    "listener_play_ratio": 3.9,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jobarpopoulos\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Far Orange",
+      "Goose Groovy",
+      "Milli V",
+      "Nico Belucci",
+      "Camisade"
+    ],
+    "top_tracks": [
+      {
+        "name": "Kithára",
+        "listeners": 4373,
+        "playcount": 16739
+      },
+      {
+        "name": "Kata (Edit)",
+        "listeners": 2733,
+        "playcount": 7517
+      },
+      {
+        "name": "Electric Dreams",
+        "listeners": 898,
+        "playcount": 1663
+      },
+      {
+        "name": "Kata",
+        "listeners": 715,
+        "playcount": 1980
+      },
+      {
+        "name": "seafront",
+        "listeners": 63,
+        "playcount": 311
+      },
+      {
+        "name": "Kithara",
+        "listeners": 51,
+        "playcount": 195
+      },
+      {
+        "name": "Santorini Nights",
+        "listeners": 10,
+        "playcount": 15
+      },
+      {
+        "name": "Rose (Edit)",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Origin (Edit)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Jobarpopoulos"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

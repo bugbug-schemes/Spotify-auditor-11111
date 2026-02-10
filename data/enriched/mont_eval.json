@@ -1,0 +1,115 @@
+{
+  "artist_name": "Mont Eval",
+  "artist_id": "mont_eval",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:48:41.320115+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mont Eval', got 'Montell Jordan'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8714,
+    "name": "Evaldo Montenovo",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://evaldo-montenovo.bandcamp.com"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 6,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "2x7\"",
+      "2xCD, Comp",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Calig",
+      "EMI Incentive, Nando's",
+      "Kick (5)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mont Eval",
+    "mbid": "",
+    "listeners": 1137,
+    "playcount": 2418,
+    "listener_play_ratio": 2.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mont+Eval\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kaspar Riedenthal",
+      "Ignacio Montoya",
+      "Michael Donnahue",
+      "Naskal",
+      "Adrian Solen"
+    ],
+    "top_tracks": [
+      {
+        "name": "Into the Unknown",
+        "listeners": 1106,
+        "playcount": 2354
+      },
+      {
+        "name": "Beyond the Rewards",
+        "listeners": 22,
+        "playcount": 29
+      },
+      {
+        "name": "Look Further",
+        "listeners": 17,
+        "playcount": 22
+      },
+      {
+        "name": "Thoughts in the Wind",
+        "listeners": 10,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Mont+Eval"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

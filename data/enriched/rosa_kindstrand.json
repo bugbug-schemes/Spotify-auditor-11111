@@ -1,0 +1,142 @@
+{
+  "artist_name": "Rosa Kindstrand",
+  "artist_id": "rosa_kindstrand",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:46:23.111309+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 334544301,
+    "name": "Rosa Kindstrand",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/334544301",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Enchanted Keys",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Nova",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beetle",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yawning",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Memories",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Sister",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rosa Kindstrand",
+    "mbid": "",
+    "listeners": 1037,
+    "playcount": 9469,
+    "listener_play_ratio": 9.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rosa+Kindstrand\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nathalie Mernot",
+      "Victor Arvelin",
+      "Elis Natt",
+      "Julian Starlight",
+      "Elowen Moon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Yawning",
+        "listeners": 1037,
+        "playcount": 9468
+      },
+      {
+        "name": "New Memories",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Rosa+Kindstrand"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

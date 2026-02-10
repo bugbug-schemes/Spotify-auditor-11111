@@ -1,0 +1,160 @@
+{
+  "artist_name": "Mio Santos",
+  "artist_id": "mio_santos",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:45:36.761042+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mio Santos', got 'Jay Santos'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3360627,
+    "name": "Carlos Santos (10)",
+    "profile": "Cantante de Salsa, Nacido en Cataño, Puerto Rico. Comenzó su carrera en 1968 con la orquesta de Louie Ray, luego con Manny Burgos y en el 1969 lo recluta Joey Pastrana; con quien hizo su primera grabación profesional, con pastrana. Trabajó y grabó con Kako Bastar y Su Trabuco; Conjunto Candela; Orquesta Ray Barretto (reemplazando a Adalberto Santiago); Conjunto Libre en sus comienzos (reemplazado luego por Tempo Alomar); entra a la Orquesta de Eddie Palmieri (en reemplazo a Lalo Rodríguez); Los Kimbos de Orestes Vilato, El Apollo Sound de Roberto Roena. Grabó un álbum como solista en 1982, bajo el sello Fania, titulado «Lo Mío». Trabajo y grabó con la Orquesta Madera Fina. Participó en el primer concierto que realizó Ralph Mercado en la ciudad de Nueva York. ",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Roberto Roena Y Su Apollo Sound",
+      "Conjunto Candela",
+      "Orquesta Willard"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 11,
+    "digital_only_releases": 24,
+    "total_releases": 35,
+    "formats": [
+      "",
+      "7\"",
+      "7\", Promo",
+      "7\", Single, Promo",
+      "CD",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, RM",
+      "LP, Comp",
+      "LP, Comp, Unofficial"
+    ],
+    "labels": [
+      "Antra Producciones",
+      "Asefra",
+      "Fania Records",
+      "Montuno Records (2)",
+      "Music House Ltd.",
+      "Rareza Music",
+      "Sonido Latino",
+      "Soul Posters",
+      "TR Records",
+      "Tico Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mio Santos",
+    "mbid": "",
+    "listeners": 6298,
+    "playcount": 91792,
+    "listener_play_ratio": 14.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mio+Santos\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Naéli Gosally",
+      "Anita Nightingale",
+      "Aryan Armstrong",
+      "DoRe Mi",
+      "Jordan Avery"
+    ],
+    "top_tracks": [
+      {
+        "name": "Soon You'll Be Sleeping",
+        "listeners": 5083,
+        "playcount": 68839
+      },
+      {
+        "name": "When You're Sleeping",
+        "listeners": 1403,
+        "playcount": 12470
+      },
+      {
+        "name": "Rocking Chair",
+        "listeners": 678,
+        "playcount": 4888
+      },
+      {
+        "name": "Last Night I Had the Strangest Dream",
+        "listeners": 441,
+        "playcount": 5319
+      },
+      {
+        "name": "Rabbit's Lullaby",
+        "listeners": 30,
+        "playcount": 45
+      },
+      {
+        "name": "Don't Forget My Teddy Bear",
+        "listeners": 26,
+        "playcount": 43
+      },
+      {
+        "name": "Sleep My Little Baby",
+        "listeners": 24,
+        "playcount": 41
+      },
+      {
+        "name": "The Muffin Man",
+        "listeners": 13,
+        "playcount": 32
+      },
+      {
+        "name": "Twinkle, Twinkle Little Star",
+        "listeners": 13,
+        "playcount": 28
+      },
+      {
+        "name": "Quiet Night",
+        "listeners": 10,
+        "playcount": 28
+      }
+    ],
+    "url": "https://www.last.fm/music/Mio+Santos"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

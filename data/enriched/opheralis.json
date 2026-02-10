@@ -1,0 +1,215 @@
+{
+  "artist_name": "Opheralis",
+  "artist_id": "opheralis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:14:44.433627+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 314869671,
+    "name": "Opheralis",
+    "nb_fan": 0,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/314869671",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bc3a678d32e62d635559d5e6000400ac/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Deep Connection",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skosh",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ejusdem",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shadows of Serenity",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Intentional",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Satin",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Replacing Time",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noctis Aura",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sonoria",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aetherial",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Static",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pale Echo",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memoria",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Opheralis",
+    "mbid": "",
+    "listeners": 32152,
+    "playcount": 172396,
+    "listener_play_ratio": 5.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Opheralis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eirwyn North",
+      "Peyote Level",
+      "Rawiri Te Awa",
+      "Mariam Ember",
+      "Edge Of Dreams"
+    ],
+    "top_tracks": [
+      {
+        "name": "Noctis Aura",
+        "listeners": 17953,
+        "playcount": 78437
+      },
+      {
+        "name": "Ejusdem",
+        "listeners": 11302,
+        "playcount": 35501
+      },
+      {
+        "name": "Aetherial",
+        "listeners": 8729,
+        "playcount": 45947
+      },
+      {
+        "name": "Memoria",
+        "listeners": 1454,
+        "playcount": 5103
+      },
+      {
+        "name": "Soft Static",
+        "listeners": 1130,
+        "playcount": 3615
+      },
+      {
+        "name": "Shadows of Serenity",
+        "listeners": 1125,
+        "playcount": 2913
+      },
+      {
+        "name": "Pale Echo",
+        "listeners": 353,
+        "playcount": 880
+      }
+    ],
+    "url": "https://www.last.fm/music/Opheralis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

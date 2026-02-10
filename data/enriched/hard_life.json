@@ -1,0 +1,530 @@
+{
+  "artist_name": "hard life",
+  "artist_id": "hard_life",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:18:54.006725+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "48fd666d-cf31-4a0b-91b0-59d11d445317",
+    "type": "Group",
+    "country": "",
+    "area": "Leicester",
+    "begin_date": "2017",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "indie pop"
+    ],
+    "aliases": [
+      "이지 라이프"
+    ],
+    "isnis": [
+      "0000000470885772"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002887492",
+      "bandsintown": "https://www.bandsintown.com/a/15364221",
+      "discogs": "https://www.discogs.com/artist/6289398",
+      "free streaming": "https://www.deezer.com/artist/826388",
+      "last.fm": "https://www.last.fm/music/Easy+Life",
+      "official homepage": "https://www.hardlifemusic.co.uk/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1362698163",
+      "setlistfm": "https://www.setlist.fm/setlists/easy-life-63cbba5f.html",
+      "social network": "https://www.snapchat.com/add/easylifemusic",
+      "soundcloud": "https://soundcloud.com/easylife-937134923",
+      "streaming": "https://tidal.com/artist/9765493",
+      "video channel": "https://www.vevo.com/artist/easy-life",
+      "wikidata": "https://www.wikidata.org/wiki/Q85684673",
+      "youtube": "https://www.youtube.com/channel/UCRSMQDSOBCZcU5AKwjoFAuQ"
+    },
+    "labels": [
+      "Chess Club Records",
+      "Island Records Group",
+      "Easy Co Limited",
+      "Universal Island Records Ltd.",
+      "Island",
+      "70Hz Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 826388,
+    "name": "hard life",
+    "nb_fan": 14692,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/826388",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e83799359ac27db8ce9adb5d83281a25/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Arlo Parks",
+      "BENEE",
+      "Kevin Abstract"
+    ],
+    "contributor_roles": {
+      "BENEE": [
+        "Main"
+      ],
+      "Kevin Abstract": [
+        "Main"
+      ],
+      "Arlo Parks": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "nightmares",
+      "peanut butter",
+      "nice guys",
+      "OTT",
+      "DEAR MISS HOLLOWAY",
+      "pockets",
+      "palmtreedays_1644.wav",
+      "dead celebrities",
+      "ocean view",
+      "daydreams",
+      "sangria",
+      "othello",
+      "mercury retrograde",
+      "ojpl",
+      "temporary love part 1",
+      "You're Still The One - InVersions 90s",
+      "sunday",
+      "homesickness",
+      "music to walk home to",
+      "skeletons",
+      "pockets (mixtape version)",
+      "have a great day",
+      "slow motion",
+      "temporary love part 2",
+      "GROWING PAINS"
+    ],
+    "track_durations": [
+      207,
+      160,
+      170,
+      157,
+      209,
+      208,
+      248,
+      193,
+      174,
+      162,
+      190,
+      192,
+      104,
+      180,
+      202,
+      185,
+      201,
+      213,
+      260,
+      178,
+      233,
+      202,
+      265,
+      201,
+      181
+    ],
+    "track_ranks": [
+      453631,
+      369403,
+      416354,
+      395611,
+      478077,
+      347791,
+      363299,
+      295276,
+      210697,
+      306521,
+      445768,
+      260128,
+      178084,
+      289265,
+      217354,
+      465838,
+      338598,
+      163363,
+      66389,
+      387289,
+      298985,
+      188951,
+      182571,
+      276850,
+      153851
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 6,
+      "single": 28
+    },
+    "albums": [
+      {
+        "title": "onion",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "MAYBE IN ANOTHER LIFE...",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "life's a beach",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "junk food",
+        "label": "",
+        "release_date": "2020-01-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ocean view",
+        "label": "",
+        "release_date": "2021-05-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "have a great day",
+        "label": "",
+        "release_date": "2021-05-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "skeletons (Y U QT remix)",
+        "label": "",
+        "release_date": "2021-05-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "skeletons",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "spaceships mixtape",
+        "label": "",
+        "release_date": "2019-03-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "creature habits mixtape",
+        "label": "",
+        "release_date": "2018-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "crickets!!!",
+        "label": "",
+        "release_date": "2025-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "y3llow bike",
+        "label": "",
+        "release_date": "2025-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "OGRE",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "othello",
+        "label": "",
+        "release_date": "2025-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "tears",
+        "label": "",
+        "release_date": "2024-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "trust exercises",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ultimate jutsu",
+        "label": "",
+        "release_date": "2023-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "palmtreedays_1644.wav",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ANTIFREEZE",
+        "label": "",
+        "release_date": "2022-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You're Still The One - InVersions 90s",
+        "label": "",
+        "release_date": "2022-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "OTT",
+        "label": "",
+        "release_date": "2022-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "DEAR MISS HOLLOWAY",
+        "label": "",
+        "release_date": "2022-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BEESWAX",
+        "label": "",
+        "release_date": "2022-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "music to walk home to",
+        "label": "",
+        "release_date": "2021-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "lifeboat",
+        "label": "",
+        "release_date": "2021-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "a message to myself",
+        "label": "",
+        "release_date": "2021-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Million$Bill (Edit)",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "daydreams",
+        "label": "",
+        "release_date": "2020-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "who gives a f**k?",
+        "label": "",
+        "release_date": "2020-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "see you later maybe never (demos)",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Bakar",
+      "Still Woozy",
+      "Gus Dapperton",
+      "BENEE",
+      "Binki",
+      "Tommy Newport",
+      "Phum Viphurit",
+      "Rex Orange County",
+      "Tame Impala",
+      "Alfie Templeman"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 145437,
+    "name": "Hard Life",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Poltergeist67"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 2,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "CD, Comp, Promo + CD, Comp, Enh, Mixed, Promo",
+      "CD, EP",
+      "CD, Maxi",
+      "Cass, Mixed, Mixtape",
+      "LP, Comp"
+    ],
+    "labels": [
+      "CRND",
+      "Cornerstone Promotion",
+      "Hard Life Production",
+      "Not On Label",
+      "Ouesch Productions"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hard Life",
+    "mbid": "",
+    "listeners": 133642,
+    "playcount": 2855608,
+    "listener_play_ratio": 21.37,
+    "bio_exists": true,
+    "bio_summary": "Hard Life (formerly known as Easy Life) is an indie pop/funk band hailing from Leicester, United Kingdom. The band was formed in 2017 by frontman Murray Matravers, together with bassist, saxophonist, singer and school friend Sam Hewitt. Also in their ranks are Afrobeat-influenced drummer Olly Cassidy, guitarist Lewis Berry and Jordan Birtles, on percussion, keys and backing vocals.\n\nThey released their debut single “Pockets” on November 22, 2017 through Chess Club Records. <a href=\"https://www.l",
+    "tags": [
+      "rnb",
+      "indie pop",
+      "funk",
+      "pop",
+      "pop rock"
+    ],
+    "similar_artists": [
+      "Easy Life",
+      "Tai Verdes",
+      "Oliver Tree",
+      "Binki",
+      "Alfie Templeman"
+    ],
+    "top_tracks": [
+      {
+        "name": "sangria",
+        "listeners": 35860,
+        "playcount": 200810
+      },
+      {
+        "name": "nightmares",
+        "listeners": 33438,
+        "playcount": 193050
+      },
+      {
+        "name": "skeletons",
+        "listeners": 27722,
+        "playcount": 189265
+      },
+      {
+        "name": "pockets",
+        "listeners": 22254,
+        "playcount": 139207
+      },
+      {
+        "name": "tears",
+        "listeners": 18642,
+        "playcount": 132593
+      },
+      {
+        "name": "daydreams",
+        "listeners": 15997,
+        "playcount": 91722
+      },
+      {
+        "name": "DEAR MISS HOLLOWAY",
+        "listeners": 15301,
+        "playcount": 79658
+      },
+      {
+        "name": "ocean view",
+        "listeners": 15011,
+        "playcount": 87645
+      },
+      {
+        "name": "sunday",
+        "listeners": 12809,
+        "playcount": 64215
+      },
+      {
+        "name": "othello",
+        "listeners": 12152,
+        "playcount": 98571
+      }
+    ],
+    "url": "https://www.last.fm/music/Hard+Life"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

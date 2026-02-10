@@ -1,0 +1,488 @@
+{
+  "artist_name": "Pearldiver",
+  "artist_id": "pearldiver",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:24:13.189619+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "78657e5c-db19-42e2-8bd3-8c9a82f0f367",
+    "type": "Person",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "1979",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "instrumental",
+      "downtempo",
+      "boom bap"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/150493",
+      "purchase for download": "https://www.traxsource.com/artist/12514",
+      "soundcloud": "https://soundcloud.com/pearldiverofficial",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/pearldiver/1129633",
+      "youtube music": "https://music.youtube.com/channel/UCt80y3S2kMbC_L0_QPFuu0g"
+    },
+    "labels": [
+      "On Canvas",
+      "Lofi Chill Records",
+      "GMM"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 150493,
+    "name": "Pearldiver",
+    "nb_fan": 72,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/150493",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9707dba069943c9aea1ff45928048d1b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Drxnk",
+      "ELLIBOI",
+      "Sátyr",
+      "Worldtraveller"
+    ],
+    "contributor_roles": {
+      "Worldtraveller": [
+        "Main"
+      ],
+      "Drxnk": [
+        "Main"
+      ],
+      "Sátyr": [
+        "Main"
+      ],
+      "ELLIBOI": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "The Feeling",
+      "Cozy",
+      "Sababay",
+      "In Bloom",
+      "Closed Eyes",
+      "Laidback Drive",
+      "Strange Dust",
+      "Radiant",
+      "Spirits",
+      "4 Little Birds",
+      "Cabin In The Woods"
+    ],
+    "track_durations": [
+      98,
+      130,
+      126,
+      125,
+      143,
+      127,
+      150,
+      108,
+      144,
+      259,
+      164
+    ],
+    "track_ranks": [
+      70108,
+      22058,
+      89552,
+      31116,
+      21535,
+      32272,
+      252073,
+      7762,
+      35271,
+      29319,
+      7840
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 9,
+      "ep": 3,
+      "single": 88
+    },
+    "albums": [
+      {
+        "title": "This Summer",
+        "label": "",
+        "release_date": "2026-05-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Kind of Warmth",
+        "label": "",
+        "release_date": "2025-07-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ikigai",
+        "label": "",
+        "release_date": "2024-11-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Morning Bloom",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Good Mood Music",
+        "label": "",
+        "release_date": "2019-03-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Chill Out Music Company",
+        "label": "",
+        "release_date": "2018-11-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pearldiver Essentials",
+        "label": "",
+        "release_date": "2018-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Good Mood Music Essentials 2017",
+        "label": "",
+        "release_date": "2017-10-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sun Drenched House",
+        "label": "",
+        "release_date": "2012-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Redefine Serenity",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Childhood Dreams",
+        "label": "",
+        "release_date": "2018-05-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Pearldiver",
+        "label": "",
+        "release_date": "2017-08-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Peace of Mind",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grounding",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Growing Still",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On 3.30 Am",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlight",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breath",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Friday",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tomorrow Will Be Nice",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shinjuku",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blooming",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stillness of the Night",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "4:40 Am",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slowflow",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After Tomorrow",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slowfire",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sky Swimming",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "5.50 Am",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luminescence",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Boozoo Bajou",
+      "Chris le Blanc",
+      "Jonny Nash",
+      "Gaussian Curve",
+      "Bunraku",
+      "Koresma",
+      "Alina Bzhezhinska",
+      "Rohne"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 894350,
+    "name": "Pearldiver",
+    "profile": "German sound engineer, DJ and producer born in 1979 in Germany. A DJ since the age of 15, he started producing electronic music in the late 1990s. In 2000, he founded Rockboxstudio. In 2007, he founded the label [l159600].",
+    "realname": "Ingolf Schapke",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 10,
+    "total_releases": 15,
+    "formats": [
+      "",
+      "11xFile, MP3, Comp, 320",
+      "12\", Unofficial, W/Lbl",
+      "12xFile, MP3, Comp",
+      "20xFile, MP3, Comp, 320",
+      "23xFile, MP3, Comp, 320",
+      "25xFile, MP3, Comp, 320",
+      "27xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "4xFile, MP3, Smplr, 320",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Ayia Napa",
+      "Catharsis",
+      "Diamondhouse Lounge",
+      "Milk & Sugar Recordings",
+      "Not On Label",
+      "Sandrew Metronome",
+      "Weltbild Music",
+      "ZYX Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pearldiver",
+    "mbid": "78657e5c-db19-42e2-8bd3-8c9a82f0f367",
+    "listeners": 54481,
+    "playcount": 211234,
+    "listener_play_ratio": 3.88,
+    "bio_exists": true,
+    "bio_summary": "Pearldivers' real name is Ingolf Schapke\nHe goes under aliases Ingolf Schapke and Living Room  <a href=\"https://www.last.fm/music/Pearldiver\">Read more on Last.fm</a>",
+    "tags": [
+      "lounge",
+      "chillout",
+      "ambient",
+      "electronic",
+      "electronica"
+    ],
+    "similar_artists": [
+      "Imagiro",
+      "Living Room",
+      "coldbrew",
+      "Kayba",
+      "edapollo"
+    ],
+    "top_tracks": [
+      {
+        "name": "5.50 Am",
+        "listeners": 14659,
+        "playcount": 32363
+      },
+      {
+        "name": "4:40 Am",
+        "listeners": 9255,
+        "playcount": 21994
+      },
+      {
+        "name": "Sumatra",
+        "listeners": 5737,
+        "playcount": 12138
+      },
+      {
+        "name": "Closed Eyes",
+        "listeners": 4455,
+        "playcount": 6840
+      },
+      {
+        "name": "Him & Her",
+        "listeners": 4357,
+        "playcount": 13088
+      },
+      {
+        "name": "Oaktree",
+        "listeners": 2921,
+        "playcount": 5456
+      },
+      {
+        "name": "Walchensee",
+        "listeners": 2484,
+        "playcount": 8017
+      },
+      {
+        "name": "Purrple Moon",
+        "listeners": 2200,
+        "playcount": 5887
+      },
+      {
+        "name": "Calm Morning",
+        "listeners": 2124,
+        "playcount": 5194
+      },
+      {
+        "name": "In Bloom",
+        "listeners": 1880,
+        "playcount": 5859
+      }
+    ],
+    "url": "https://www.last.fm/music/Pearldiver"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

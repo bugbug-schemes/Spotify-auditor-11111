@@ -1,0 +1,120 @@
+{
+  "artist_name": "Snuggle Land",
+  "artist_id": "snuggle_land",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:08:18.508226+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327377511,
+    "name": "Snuggle Land",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/327377511",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3ab090f78e77e33ff69b43964141266a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Under the Sleepy Sky",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Otter’s Blanket",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snuggle Star",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Snuggle Land",
+    "mbid": "",
+    "listeners": 1710,
+    "playcount": 19930,
+    "listener_play_ratio": 11.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Snuggle+Land\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rob Cradles",
+      "Kerstin Kempe",
+      "Jeanne Victor",
+      "Milo Grímur",
+      "Francis Star"
+    ],
+    "top_tracks": [
+      {
+        "name": "Under the Sleepy Sky",
+        "listeners": 1710,
+        "playcount": 19929
+      },
+      {
+        "name": "Snuggle Star",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Snuggle+Land"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

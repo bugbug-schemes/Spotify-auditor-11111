@@ -1,0 +1,212 @@
+{
+  "artist_name": "Nouvelle Marée",
+  "artist_id": "nouvelle_marée",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:07:04.043484+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 221294885,
+    "name": "Nouvelle Marée",
+    "nb_fan": 5,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/221294885",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2ea4acfebdec8ca5bc8b51275413b5b2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Something Is Off",
+      "Bluesette",
+      "Beyond Repair",
+      "As Long As You Will Be There"
+    ],
+    "track_durations": [
+      235,
+      205,
+      279,
+      237
+    ],
+    "track_ranks": [
+      61111,
+      59384,
+      15688,
+      37276
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Entity",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "As Long As You Will Be There",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By My Side",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Something Is Off",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond Repair",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Later And Later",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bluesette",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Bagatelle",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nouvelle Marée",
+    "mbid": "",
+    "listeners": 69295,
+    "playcount": 239015,
+    "listener_play_ratio": 3.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nouvelle+Mar%C3%A9e\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "London Dunes",
+      "Cara Myers Trio",
+      "Emily Green Trio",
+      "Shay Walsh",
+      "Nathan Hill Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bluesette",
+        "listeners": 38053,
+        "playcount": 93870
+      },
+      {
+        "name": "Something Is Off",
+        "listeners": 27047,
+        "playcount": 57198
+      },
+      {
+        "name": "Later And Later",
+        "listeners": 13410,
+        "playcount": 27125
+      },
+      {
+        "name": "As Long As You Will Be There",
+        "listeners": 12616,
+        "playcount": 26348
+      },
+      {
+        "name": "Late Bagatelle",
+        "listeners": 10614,
+        "playcount": 22025
+      },
+      {
+        "name": "By My Side",
+        "listeners": 4504,
+        "playcount": 8633
+      },
+      {
+        "name": "Beyond Repair",
+        "listeners": 1901,
+        "playcount": 3711
+      },
+      {
+        "name": "Entity",
+        "listeners": 61,
+        "playcount": 102
+      },
+      {
+        "name": "More for You",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Nouvelle Marée",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Nouvelle+Mar%C3%A9e"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

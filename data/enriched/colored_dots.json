@@ -1,0 +1,125 @@
+{
+  "artist_name": "Colored Dots",
+  "artist_id": "colored_dots",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:12:50.041824+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 304082411,
+    "name": "Colored Dots",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/304082411",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Opal",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Obsidian",
+        "label": "",
+        "release_date": "2025-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ivory",
+        "label": "",
+        "release_date": "2025-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Colored Dots",
+    "mbid": "",
+    "listeners": 2149,
+    "playcount": 5275,
+    "listener_play_ratio": 2.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Colored+Dots\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Karim Diaz",
+      "Toni Fairbanks",
+      "cb10",
+      "BRINDABELLA",
+      "Ancient Bowls"
+    ],
+    "top_tracks": [
+      {
+        "name": "Obsidian",
+        "listeners": 1259,
+        "playcount": 3300
+      },
+      {
+        "name": "Ivory",
+        "listeners": 915,
+        "playcount": 1972
+      },
+      {
+        "name": "Turquoise",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Colored+Dots"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,177 @@
+{
+  "artist_name": "Teddy Bloom",
+  "artist_id": "teddy_bloom",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:27:57.307470+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 100950652,
+    "name": "Teddy Bloom",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/100950652",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/287655a720b3e99a6e152ef229df2ec7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Teddy's Dream",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamy Bunny",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hush Little Star",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 753360,
+    "name": "Ted Blume",
+    "profile": "Credited as vioilinist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Gene Krupa And His Orchestra",
+      "Charlie Parker With Strings"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 18,
+    "total_releases": 33,
+    "formats": [
+      "",
+      "10xCD, Album + Box, Comp",
+      "10xLP, Mono + Box, Comp",
+      "22xLP, Comp, Mono + Box, Ltd, Num",
+      "2xCD, Comp",
+      "4xCD, Comp",
+      "CD, Comp",
+      "CD, Comp, Mono",
+      "CD, Comp, Unofficial",
+      "LP, Comp"
+    ],
+    "labels": [
+      "ASV, Living Era",
+      "Classics (11)",
+      "Disconforme SL, Definitive Records (2)",
+      "Elysium (2)",
+      "Giants Of Jazz",
+      "Hindsight Records (2)",
+      "House Of Jazz, T2 Entertainment",
+      "Nostalgia Arts",
+      "Not On Label",
+      "Philology",
+      "RLR Records",
+      "Recording Arts Reference Edition",
+      "United Archives, United Archives",
+      "Verve Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Teddy Bloom",
+    "mbid": "",
+    "listeners": 2662,
+    "playcount": 28119,
+    "listener_play_ratio": 10.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Teddy+Bloom\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Richie Goulding",
+      "Eli Amos",
+      "Bingos Bongos",
+      "Harper Toews",
+      "Noah Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dreamy Bunny",
+        "listeners": 1722,
+        "playcount": 14954
+      },
+      {
+        "name": "Teddy's Dream",
+        "listeners": 1014,
+        "playcount": 9881
+      },
+      {
+        "name": "Sleepy Bear",
+        "listeners": 411,
+        "playcount": 1904
+      },
+      {
+        "name": "Little Moonlight",
+        "listeners": 363,
+        "playcount": 1379
+      },
+      {
+        "name": "Hush Little Star",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Teddy+Bloom"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

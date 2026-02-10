@@ -1,0 +1,550 @@
+{
+  "artist_name": "Carl Winther",
+  "artist_id": "carl_winther",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:58:50.378213+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3a303220-8828-4187-9c11-7ed997b126f1",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1457278,
+    "name": "Carl Winther",
+    "nb_fan": 71,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/1457278",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/71a86d82bd300870b8fb609be2d3abc4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "ALEXANDER CLAFFY",
+      "Anders Mogensen",
+      "Andreas Lang",
+      "Ari Bragi Karason",
+      "Johnny Aman",
+      "Karl-Martin Almqvist",
+      "Pelle von Bülow",
+      "Randy Brecker",
+      "Richard Andersson",
+      "Rune Fog-Nielsen",
+      "Walt Weiskopf"
+    ],
+    "contributor_roles": {
+      "Karl-Martin Almqvist": [
+        "Main"
+      ],
+      "Anders Mogensen": [
+        "Main"
+      ],
+      "Johnny Aman": [
+        "Main"
+      ],
+      "Pelle von Bülow": [
+        "Main"
+      ],
+      "Richard Andersson": [
+        "Main"
+      ],
+      "Ari Bragi Karason": [
+        "Main"
+      ],
+      "Randy Brecker": [
+        "Main"
+      ],
+      "ALEXANDER CLAFFY": [
+        "Main"
+      ],
+      "Walt Weiskopf": [
+        "Main"
+      ],
+      "Andreas Lang": [
+        "Main"
+      ],
+      "Rune Fog-Nielsen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Autumn in New York",
+      "That's The Way It Is",
+      "Estate",
+      "For All We Know",
+      "To Brazil with Love",
+      "You Go to My Head",
+      "Young Dreamland",
+      "Lipstick",
+      "My Old Flame",
+      "Old Folks",
+      "You've Changed",
+      "Blood Diamond",
+      "Mary's Boy Child",
+      "Autumn In New York",
+      "I'll Be Around",
+      "A Portrait of Jennie",
+      "Blame it on my Youth",
+      "Solitude",
+      "Early Autumn",
+      "The Star-Crossed Lovers",
+      "Angel Eyes",
+      "Detour Ahead",
+      "I Should Care"
+    ],
+    "track_durations": [
+      179,
+      252,
+      315,
+      170,
+      191,
+      340,
+      156,
+      204,
+      378,
+      291,
+      254,
+      412,
+      126,
+      273,
+      246,
+      245,
+      264,
+      198,
+      287,
+      198,
+      268,
+      312,
+      229
+    ],
+    "track_ranks": [
+      208132,
+      210068,
+      47540,
+      33309,
+      266828,
+      116094,
+      89202,
+      20989,
+      40605,
+      30379,
+      86507,
+      143184,
+      41213,
+      55077,
+      55815,
+      41700,
+      21953,
+      123832,
+      41256,
+      63021,
+      69277,
+      85458,
+      70815
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 22,
+      "ep": 6,
+      "single": 9,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Back2Bag - Traneing In Again (Live)",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at Christiania Jazz Club, 2nd set",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Tribute To Jens Winther",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at Christiania Jazz Club, 1st set",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Steep Steps",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Standards by the Nordic Quintet",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Brooklyn",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "WAW!",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment: Fourth Dimension",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment: This Time",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Originals by The Nordic Quintet",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Jazzy Christmas Celebration",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Free Floating",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment: Second View",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Emotions",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Brazilian Moods",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "European Quartet: Diamonds and Other Jewels",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Fistfull of Ruff Cuts...",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Inner Journey",
+        "label": "",
+        "release_date": "2017-06-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Deconstructing Mr. X",
+        "label": "",
+        "release_date": "2016-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sonic Shapes",
+        "label": "",
+        "release_date": "2011-09-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "More Swingin'",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Soft Moods",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Swingin'",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "One for GP!",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sideways",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "European Quartet: Introspection",
+        "label": "",
+        "release_date": "2020-07-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Young Dreamland",
+        "label": "",
+        "release_date": "2026-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You've Changed",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Oscar Peterson",
+      "Dave Brubeck",
+      "Duke Ellington",
+      "Kenny Burrell",
+      "Chet Baker",
+      "Joey Alexander",
+      "Jaimee Paul",
+      "Hayley Sales",
+      "Joe Williams",
+      "Dexter Gordon"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3022136,
+    "name": "Carl Winther",
+    "profile": "Danish jazz pianist and composer, son of [a315709] and [a1839417], brother of [a484404]",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Jens Winther European Quartet",
+      "Carl Winther Quartet",
+      "Carl Winther Trio",
+      "Walt Weiskopf European Quartet",
+      "Per-Oscar Nilsson Group",
+      "Frederik Villmow Quartet",
+      "Tim Hagans Quintet",
+      "Modern Jazz Trio (3)",
+      "WAW (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 26,
+    "digital_only_releases": 13,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "16xFile, ALAC, FLAC, MP3, WAV",
+      "2xCD, Album, Promo",
+      "6xFile, FLAC, Album",
+      "6xFile, MP3, Album",
+      "6xFile, WAV, Album",
+      "7xFile, FLAC, Album",
+      "8xFile, FLAC, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "File, FLAC, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "AMM",
+      "Connective Records",
+      "Do Music Records",
+      "Hobby Horse Records",
+      "Moskito Records (2)",
+      "Orenda Records",
+      "RecArt",
+      "Savant",
+      "SteepleChase",
+      "SteepleChase LookOut",
+      "Stunt Records",
+      "Stunt Records, Stunt Records",
+      "Sundance Music (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Carl Winther",
+    "mbid": "81484149-67df-4d3a-b95d-7a1cf753a1ea",
+    "listeners": 40416,
+    "playcount": 90766,
+    "listener_play_ratio": 2.25,
+    "bio_exists": true,
+    "bio_summary": "Carl Winther Trio, introduces one of the most talented young pianist ever to emerge from the Scandinavian Jazzscene. Up-and-Coming, 25-year-old Carl Winther has cut his teeth on jamsessions in his hometown Copenhagen in Denmark, a town known for its love for jazz with international stars performing on regular basis.\n\nDespite his young age, Carl Winther, has a mature way of making music where he takes his time to tell his story. With a dazzling technique and a beautiful touch he can handle an imp",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Rob van Bavel",
+      "Ari Bragi Kárason",
+      "Rasmus H Thomsen Trio",
+      "Thomas Sejthen Trio",
+      "Giovanni Ceccarelli"
+    ],
+    "top_tracks": [
+      {
+        "name": "Autumn in New York",
+        "listeners": 14327,
+        "playcount": 29082
+      },
+      {
+        "name": "Mary's Boy Child",
+        "listeners": 14164,
+        "playcount": 22886
+      },
+      {
+        "name": "Prelude to a Kiss",
+        "listeners": 5408,
+        "playcount": 10139
+      },
+      {
+        "name": "Old Folks",
+        "listeners": 4226,
+        "playcount": 9486
+      },
+      {
+        "name": "Misty",
+        "listeners": 2956,
+        "playcount": 5774
+      },
+      {
+        "name": "Moonlight in Vermont",
+        "listeners": 2311,
+        "playcount": 3889
+      },
+      {
+        "name": "A Portrait of Jennie",
+        "listeners": 1973,
+        "playcount": 3126
+      },
+      {
+        "name": "Estate",
+        "listeners": 777,
+        "playcount": 1371
+      },
+      {
+        "name": "Falling",
+        "listeners": 521,
+        "playcount": 746
+      },
+      {
+        "name": "I'll Be Around",
+        "listeners": 270,
+        "playcount": 437
+      }
+    ],
+    "url": "https://www.last.fm/music/Carl+Winther"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

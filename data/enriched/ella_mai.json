@@ -1,0 +1,456 @@
+{
+  "artist_name": "Ella Mai",
+  "artist_id": "ella_mai",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:37:08.800474+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "89d42b97-8042-4c14-a596-a2ccaef5fc4c",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1994-11-03",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "pop",
+      "dance-pop",
+      "pop rap",
+      "contemporary r&b",
+      "alternative r&b",
+      "trap soul"
+    ],
+    "aliases": [
+      "Ella Mai Howell"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003506278",
+      "bandsintown": "https://www.bandsintown.com/a/9366254",
+      "discogs": "https://www.discogs.com/artist/5462046",
+      "free streaming": "https://www.deezer.com/artist/11116250",
+      "IMDb": "https://www.imdb.com/name/nm10001746/",
+      "last.fm": "https://www.last.fm/music/Ella+Mai",
+      "lyrics": "https://genius.com/artists/Ella-mai",
+      "official homepage": "https://ellamai.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2018126048",
+      "social network": "https://www.instagram.com/ellamai/",
+      "songkick": "https://www.songkick.com/artists/8940244",
+      "soundcloud": "https://soundcloud.com/itsellamai",
+      "streaming": "https://tidal.com/artist/8164544",
+      "VIAF": "http://viaf.org/viaf/4865153775057561550003",
+      "wikidata": "https://www.wikidata.org/wiki/Q29033458",
+      "youtube": "https://www.youtube.com/channel/UCy1qd93CcOTvOrQ-QM8_pyQ"
+    },
+    "labels": [
+      "Brand Usher",
+      "[no label]",
+      "Republic Records",
+      "Asylum Records UK",
+      "10 Summers Records",
+      "Capitol Records",
+      "RCA"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11116250,
+    "name": "Ella Mai",
+    "nb_fan": 809180,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/11116250",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e3a9840bc69d65dc7540ecd76f65b120/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "John Legend"
+    ],
+    "contributor_roles": {
+      "John Legend": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Might Just",
+      "There Goes My Heart",
+      "Little Things",
+      "My Mind",
+      "100",
+      "Somebody’s Son",
+      "First Day",
+      "Bonus",
+      "Tell Her",
+      "This Is",
+      "Luckiest Man",
+      "Outside",
+      "Chasing Circles",
+      "No Angels",
+      "Trip",
+      "Boo'd Up",
+      "Boo'd Up",
+      "Naked (Bonus Track)",
+      "DFMU",
+      "Hearts On Deck",
+      "Shot Clock",
+      "Everything",
+      "Power Of A Woman",
+      "Not Another Love Song",
+      "One Of These"
+    ],
+    "track_durations": [
+      223,
+      213,
+      174,
+      172,
+      234,
+      221,
+      214,
+      230,
+      199,
+      206,
+      235,
+      173,
+      248,
+      172,
+      217,
+      239,
+      256,
+      197,
+      198,
+      240,
+      201,
+      181,
+      213,
+      217,
+      224
+    ],
+    "track_ranks": [
+      840080,
+      658883,
+      676895,
+      626159,
+      619562,
+      616551,
+      573464,
+      562981,
+      532712,
+      578810,
+      594430,
+      591372,
+      548515,
+      541934,
+      590303,
+      607189,
+      503414,
+      564624,
+      559400,
+      478591,
+      490566,
+      451446,
+      587992,
+      477626,
+      428972
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 4,
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Do You Still Love Me?",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heart On My Sleeve",
+        "label": "",
+        "release_date": "2022-05-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heart On My Sleeve (Deluxe Edition)",
+        "label": "",
+        "release_date": "2023-02-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ella Mai",
+        "label": "",
+        "release_date": "2018-10-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "3 (EP)",
+        "label": "",
+        "release_date": "2024-11-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "READY",
+        "label": "",
+        "release_date": "2017-02-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "CHANGE",
+        "label": "",
+        "release_date": "2016-11-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Time",
+        "label": "",
+        "release_date": "2016-02-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "100",
+        "label": "",
+        "release_date": "2026-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tell Her",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Not Another Love Song",
+        "label": "",
+        "release_date": "2020-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boo'd Up (Remix)",
+        "label": "",
+        "release_date": "2018-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Kiana Ledé",
+      "Tink",
+      "Teyana Taylor",
+      "Queen Naija",
+      "Muni Long",
+      "Ann Marie",
+      "Kehlani",
+      "Jhené Aiko",
+      "H.E.R.",
+      "Jacquees"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5462046,
+    "name": "Ella Mai",
+    "profile": "Ella Mai is an English singer and songwriter. Originally from London, Mai moved to New York City at the age of 12 before returning to England after graduating from high school. Ella Mai uploaded a four-track solo EP of originals to SoundCloud. EP titled Troubled. After being discovered on Instagram, she signed to DJ Mustard’s 10 Summers label.",
+    "realname": "Ella Mai Howell",
+    "social_urls": [
+      "https://www.instagram.com/ellamai/?hl=en",
+      "https://www.timechangereadytour.com/",
+      "https://www.youtube.com/channel/UCdVlI3zsHhvKKH4OEQVHyHA ",
+      "https://soundcloud.com/itsellamai   ",
+      "https://twitter.com/ellamai",
+      "https://www.facebook.com/ellamai/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 39,
+    "digital_only_releases": 44,
+    "total_releases": 83,
+    "formats": [
+      "",
+      "10xFile, AAC, Comp, 320",
+      "12\", EP, Bla + 12\", EP, Tra + 12\", EP, Tra + Comp,",
+      "13xFile, AAC, Album, 256",
+      "14xFile, AAC, Album, 256",
+      "14xFile, AIFF, EP",
+      "14xFile, FLAC, Album, 24-",
+      "23xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp, Dig",
+      "2xCD, Comp, S/Edition",
+      "2xCDr, Comp, P/Mixed",
+      "2xCDr, Comp, Promo",
+      "2xLP, Unofficial, Cle",
+      "3xFile, FLAC",
+      "5xFile, AAC, EP, 256",
+      "CD",
+      "CD, Album",
+      "CD, Album, RE + CD, Album, Dlx, RE + Box, Comp, Lt",
+      "CD, Comp",
+      "CD, Comp, Ltd, Mixed, Promo",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CDr, Comp",
+      "CDr, Mixtape, Unofficial",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single",
+      "LP, Comp, Gra",
+      "LP, Comp, Ltd, Promo"
+    ],
+    "labels": [
+      "10 Summers Records",
+      "10 Summers Records, Interscope Records",
+      "A2O Entertainment",
+      "Boo'd Up Records",
+      "Box N Lock",
+      "Cash Motto",
+      "DLIP Records",
+      "DMC",
+      "DMC, DMC",
+      "Interscope Records",
+      "Interscope Records, 10 Summers Records",
+      "Magic Records",
+      "Music Trafficking DJ's",
+      "Not On Label",
+      "Polydor, Universal Music France",
+      "Promo Only",
+      "Radio Programming And Management, Inc.",
+      "Roc Nation",
+      "Sony Music",
+      "Sony Music, Universal Music Group",
+      "Sony Records Int'l, JEM Music Group, Wildstar Records",
+      "Starboy Entertainment",
+      "The Heavy Group, Republic Records",
+      "UMG Recordings, Inc.",
+      "Ultimix",
+      "Universal",
+      "Universal Music",
+      "Universal Music Group",
+      "Universal Music New Zealand Limited, Sony Music, Warner Music New Zealand",
+      "Warner Music France"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ella Mai",
+    "mbid": "89d42b97-8042-4c14-a596-a2ccaef5fc4c",
+    "listeners": 763003,
+    "playcount": 16848309,
+    "listener_play_ratio": 22.08,
+    "bio_exists": true,
+    "bio_summary": "Ella Mai Howell (born 3 November 1994) is an English singer-songwriter. Her musical career began at London's British and Irish Modern Music Institute in 2014, during which time she auditioned as part of a trio on the 11th season of The X Factor. In 2015, she uploaded a four-track solo EP of originals to SoundCloud titled Troubled, and was discovered on social media by American record producer Mustard and signed with his record label, 10 Summers Records. <a href=\"https://www.last.fm/music/Ella+Ma",
+    "tags": [
+      "rnb",
+      "soul",
+      "british",
+      "pop",
+      "Hip-Hop"
+    ],
+    "similar_artists": [
+      "Kiana Ledé",
+      "H.E.R.",
+      "Queen Naija",
+      "Kehlani",
+      "Muni Long"
+    ],
+    "top_tracks": [
+      {
+        "name": "Trip",
+        "listeners": 345271,
+        "playcount": 2727845
+      },
+      {
+        "name": "Boo'd Up",
+        "listeners": 307372,
+        "playcount": 2291245
+      },
+      {
+        "name": "She Don't (feat. Ty Dolla $ign)",
+        "listeners": 223224,
+        "playcount": 1708013
+      },
+      {
+        "name": "Shot Clock",
+        "listeners": 145177,
+        "playcount": 934788
+      },
+      {
+        "name": "Not Another Love Song",
+        "listeners": 101833,
+        "playcount": 664836
+      },
+      {
+        "name": "Naked - Bonus Track",
+        "listeners": 92125,
+        "playcount": 634193
+      },
+      {
+        "name": "Whatchamacallit (feat. Chris Brown)",
+        "listeners": 81282,
+        "playcount": 566923
+      },
+      {
+        "name": "DFMU",
+        "listeners": 75368,
+        "playcount": 514934
+      },
+      {
+        "name": "Little Things",
+        "listeners": 72574,
+        "playcount": 379314
+      },
+      {
+        "name": "This Is",
+        "listeners": 63365,
+        "playcount": 295431
+      }
+    ],
+    "url": "https://www.last.fm/music/Ella+Mai"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

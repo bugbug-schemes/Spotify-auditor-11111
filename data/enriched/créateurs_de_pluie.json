@@ -1,0 +1,119 @@
+{
+  "artist_name": "Créateurs De Pluie",
+  "artist_id": "créateurs_de_pluie",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:16:52.150520+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 154832491,
+    "name": "Créateurs De Pluie",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/154832491",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f227545e50f044504c163adb560cba25/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1
+    },
+    "albums": [
+      {
+        "title": "Pluie Confortable",
+        "label": "",
+        "release_date": "2022-01-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Créateurs De Pluie",
+    "mbid": "",
+    "listeners": 59502,
+    "playcount": 364483,
+    "listener_play_ratio": 6.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cr%C3%A9ateurs+De+Pluie\">Read more on Last.fm</a>",
+    "tags": [
+      "french",
+      "france"
+    ],
+    "similar_artists": [
+      "Christophe Frédérique",
+      "Pluie et tonnerre",
+      "Shipibo",
+      "Skyscration",
+      "Peceful Waters"
+    ],
+    "top_tracks": [
+      {
+        "name": "Averse Sombre",
+        "listeners": 59234,
+        "playcount": 325940
+      },
+      {
+        "name": "Pluie En Milieu De Journée",
+        "listeners": 294,
+        "playcount": 1899
+      },
+      {
+        "name": "Pluie Confortable",
+        "listeners": 293,
+        "playcount": 12467
+      },
+      {
+        "name": "Sons De Pluie Paisibles",
+        "listeners": 283,
+        "playcount": 24177
+      }
+    ],
+    "url": "https://www.last.fm/music/Cr%C3%A9ateurs+De+Pluie"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,121 @@
+{
+  "artist_name": "Pitouu",
+  "artist_id": "pitouu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:29:02.888162+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Pitouu', got 'Pitty'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pitouu",
+    "mbid": "",
+    "listeners": 31503,
+    "playcount": 168610,
+    "listener_play_ratio": 5.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pitouu\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lucinda Pasillas",
+      "Elsa Gudmundsdottir",
+      "Albert Lockwood",
+      "Ramos Goya",
+      "Unilow"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cloud Dance",
+        "listeners": 25863,
+        "playcount": 124876
+      },
+      {
+        "name": "Follow The Light",
+        "listeners": 10723,
+        "playcount": 35896
+      },
+      {
+        "name": "Faith In Motion",
+        "listeners": 1739,
+        "playcount": 3554
+      },
+      {
+        "name": "Dreamy Days",
+        "listeners": 850,
+        "playcount": 2408
+      },
+      {
+        "name": "Winds Of Hope",
+        "listeners": 377,
+        "playcount": 1095
+      },
+      {
+        "name": "Radiant 396 Hz",
+        "listeners": 10,
+        "playcount": 113
+      },
+      {
+        "name": "Knot of Peace",
+        "listeners": 7,
+        "playcount": 100
+      },
+      {
+        "name": "Fragments",
+        "listeners": 6,
+        "playcount": 101
+      },
+      {
+        "name": "Hush",
+        "listeners": 2,
+        "playcount": 104
+      },
+      {
+        "name": "Nescio",
+        "listeners": 2,
+        "playcount": 91
+      }
+    ],
+    "url": "https://www.last.fm/music/Pitouu"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

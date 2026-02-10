@@ -1,0 +1,585 @@
+{
+  "artist_name": "Karri",
+  "artist_id": "karri",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:45:48.777097+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "869df960-03ff-4663-907c-ec3a9a5f32cb",
+    "type": "Person",
+    "country": "",
+    "area": "Oakland",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "r&b",
+      "hip-hop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/13501801",
+      "last.fm": "https://www.last.fm/music/Karri",
+      "social network": "https://twitter.com/4karri",
+      "streaming": "https://tidal.com/artist/9219298",
+      "youtube": "https://www.youtube.com/channel/UCF4w4hSavUC2ifD_8uD0pNg"
+    },
+    "labels": [
+      "New 11",
+      "Geffen Records",
+      "Bankrol Records",
+      "Make The Girls Dance Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13501801,
+    "name": "Karri",
+    "nb_fan": 1199,
+    "nb_album": 37,
+    "link": "https://www.deezer.com/artist/13501801",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3d6c630449249cb1cdc2a041c2c61c7a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "HUGEL",
+      "Isaiah Falls",
+      "Joe Kay",
+      "Kalan.FrFr",
+      "Kehlani",
+      "Leon Bridges",
+      "Marc E. Bassy",
+      "Nic Nac",
+      "Nueve Lio",
+      "Pimmie",
+      "RAAHIIM"
+    ],
+    "contributor_roles": {
+      "Kehlani": [
+        "Featured"
+      ],
+      "RAAHIIM": [
+        "Main"
+      ],
+      "Pimmie": [
+        "Main"
+      ],
+      "Isaiah Falls": [
+        "Main"
+      ],
+      "HUGEL": [
+        "Main"
+      ],
+      "Kalan.FrFr": [
+        "Main"
+      ],
+      "Nueve Lio": [
+        "Main"
+      ],
+      "Marc E. Bassy": [
+        "Main"
+      ],
+      "Nic Nac": [
+        "Main"
+      ],
+      "Joe Kay": [
+        "Main"
+      ],
+      "Leon Bridges": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Oakland Pt. 2",
+      "go",
+      "Impromptu",
+      "swv",
+      "SLIDE4U (Hating)",
+      "Only U",
+      "3am in Oakland",
+      "unconditional interlude",
+      "Oakland Baby",
+      "risky",
+      "415 to the 6",
+      "FMX",
+      "Bambi (Feat. Kalan.FrFr)",
+      "CANDLES",
+      "Barbados",
+      "Only U (Hi' n Fly)",
+      "3am in Oakland (Lo' n Slo')",
+      "not a romantic",
+      "Hesitation (with Karri)",
+      "fmyx",
+      "is this love",
+      "Upperhand",
+      "Late Nite Slider Music",
+      "Rosetta",
+      "slauson ave"
+    ],
+    "track_durations": [
+      156,
+      142,
+      185,
+      162,
+      245,
+      146,
+      206,
+      117,
+      129,
+      155,
+      140,
+      144,
+      154,
+      175,
+      152,
+      115,
+      115,
+      158,
+      168,
+      118,
+      249,
+      118,
+      193,
+      153,
+      165
+    ],
+    "track_ranks": [
+      416861,
+      443766,
+      247061,
+      480972,
+      212986,
+      260722,
+      356693,
+      344250,
+      269068,
+      441418,
+      308264,
+      521678,
+      37650,
+      77325,
+      100000,
+      163356,
+      236185,
+      273560,
+      250082,
+      253676,
+      215022,
+      172393,
+      90797,
+      145678,
+      222374
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 3,
+      "single": 33
+    },
+    "albums": [
+      {
+        "title": "SLIDER II",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Late Nite Slider Music - EP",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Only U",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Kxrri",
+        "label": "",
+        "release_date": "2019-07-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Moscato (Remix)",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SLIDE4U (Hating)",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "risky",
+        "label": "",
+        "release_date": "2025-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "strip",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "FMX",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "go",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "fmyx/dirty diana",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oakland Baby",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "slauson ave",
+        "label": "",
+        "release_date": "2025-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cheeky",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mode",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mode",
+        "label": "",
+        "release_date": "2025-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CANDLES",
+        "label": "",
+        "release_date": "2025-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Nite Slider Music",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oakland Pt. 2",
+        "label": "",
+        "release_date": "2024-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Останусь здесь",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "chasing u",
+        "label": "",
+        "release_date": "2024-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Impromptu",
+        "label": "",
+        "release_date": "2024-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Муссон",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "can u?",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "lemonade",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Письмо",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Цепи",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "3am in Oakland (Lo' n Slo')",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "3am in Oakland",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Choose Me",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Bryson Tiller",
+      "Chase Shakur",
+      "Mariah the Scientist",
+      "Pimmie",
+      "Sahxl",
+      "Isaiah falls",
+      "Summer Walker",
+      "TheARTI$t",
+      "GIVĒON",
+      "Realestk"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 237239,
+    "name": "Karri Koira",
+    "profile": "",
+    "realname": "Karri Timo Mikael Sirén",
+    "social_urls": [
+      "http://www.karrikoira.com/",
+      "http://www.facebook.com/karrionkoira",
+      "https://instagram.com/karrionkoira/",
+      "https://fi.wikipedia.org/wiki/Karri_Koira"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 22,
+    "digital_only_releases": 51,
+    "total_releases": 73,
+    "formats": [
+      "",
+      "12\"",
+      "2xCD, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dou",
+      "CD, EP",
+      "CDr",
+      "CDr, Album",
+      "CDr, Mixed",
+      "CDr, Single, Promo",
+      "Cass",
+      "Cass, Album",
+      "Cass, Album, Comp",
+      "Cass, EP",
+      "Cass, Ltd",
+      "DVD-V",
+      "DVDr, DVD-V",
+      "File, AAC, Single, 256",
+      "File, MP3, 256",
+      "LP, Album",
+      "LP, Album, Ltd, Cle"
+    ],
+    "labels": [
+      "AXR Music",
+      "Funkiest Records",
+      "Gunplay Productions",
+      "Helleaalto",
+      "Johanna Kustannus",
+      "Koira Inc.",
+      "Lastenklinikoiden Kummit Ry",
+      "Lihamyrsky",
+      "Monsp Records",
+      "Monsp Records, Monsp Records",
+      "Not On Label",
+      "Not On Label (Karri Koira Self-released)",
+      "Not On Label (Vihreys Self-Released)",
+      "Not On Label (Werd Self-released)",
+      "Slowknow Production",
+      "Sony Music",
+      "Sunset Projects",
+      "Syvällä Pelissä",
+      "Universal Music Finland",
+      "Universal Music Group",
+      "Universal Music Oy",
+      "Warner Music Finland",
+      "Warner Music Finland, PME Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Karri",
+    "mbid": "869df960-03ff-4663-907c-ec3a9a5f32cb",
+    "listeners": 175568,
+    "playcount": 2457961,
+    "listener_play_ratio": 14.0,
+    "bio_exists": true,
+    "bio_summary": "Over the past six months, the young San Francisco native has been quickly solidifying himself as the most exciting voice in the new modern R&B era. His first single of 2023, “3AM in Oakland,” took over both Tik-Tok and Instagram Reels, creating a new aesthetic and garnering attention from artists, influencers, and his newly found fans. Karri returned with his new single “only u” showcasing his dynamic vocal abilities over a stripped down track, deepening his unique perspective on life, love, and",
+    "tags": [
+      "rnb",
+      "singer-songwriter",
+      "Hip-Hop",
+      "USA",
+      "american"
+    ],
+    "similar_artists": [
+      "Leo Waters",
+      "Nobu Woods",
+      "Chase Shakur",
+      "Pino",
+      "Dee Gatti"
+    ],
+    "top_tracks": [
+      {
+        "name": "Impromptu",
+        "listeners": 44770,
+        "playcount": 271836
+      },
+      {
+        "name": "Oakland Pt. 2",
+        "listeners": 37812,
+        "playcount": 261583
+      },
+      {
+        "name": "only u",
+        "listeners": 36849,
+        "playcount": 216010
+      },
+      {
+        "name": "SWV",
+        "listeners": 29913,
+        "playcount": 170358
+      },
+      {
+        "name": "3am in Oakland",
+        "listeners": 27685,
+        "playcount": 187619
+      },
+      {
+        "name": "Kiki",
+        "listeners": 24455,
+        "playcount": 136758
+      },
+      {
+        "name": "go",
+        "listeners": 21782,
+        "playcount": 105462
+      },
+      {
+        "name": "550's & Leon Dore",
+        "listeners": 20507,
+        "playcount": 97319
+      },
+      {
+        "name": "415 to the 6",
+        "listeners": 18242,
+        "playcount": 74876
+      },
+      {
+        "name": "Upperhand",
+        "listeners": 18023,
+        "playcount": 71785
+      }
+    ],
+    "url": "https://www.last.fm/music/Karri"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

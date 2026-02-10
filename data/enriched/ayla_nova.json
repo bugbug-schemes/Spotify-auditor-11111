@@ -1,0 +1,214 @@
+{
+  "artist_name": "Ayla Nova",
+  "artist_id": "ayla_nova",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:21:31.397526+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ed91772b-f008-4536-b2ef-be5257b11117",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "hip hop",
+      "downtempo",
+      "lo-fi",
+      "instrumental",
+      "boom bap",
+      "chillwave",
+      "lo-fi hip hop",
+      "instrumental hip hop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6AWCoA4NxV0y0FlXGhW4SQ",
+      "streaming": "https://tidal.com/artist/22506728"
+    },
+    "labels": [
+      "Duck Pond Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 115804742,
+    "name": "Ayla Nova",
+    "nb_fan": 18,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/115804742",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6f23287d91880e8c0230029f5f4ec922/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Gabriel Morais Jr"
+    ],
+    "contributor_roles": {
+      "Gabriel Morais Jr": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Waves",
+      "Lush"
+    ],
+    "track_durations": [
+      151,
+      186
+    ],
+    "track_ranks": [
+      282237,
+      54992
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Neon Dreams",
+        "label": "",
+        "release_date": "2025-07-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Gravity",
+        "label": "",
+        "release_date": "2025-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rebirth",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shoreline",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waves",
+        "label": "",
+        "release_date": "2021-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lush",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Your Arms",
+        "label": "",
+        "release_date": "2020-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ayla Nova",
+    "mbid": "ed91772b-f008-4536-b2ef-be5257b11117",
+    "listeners": 14641,
+    "playcount": 47387,
+    "listener_play_ratio": 3.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ayla+Nova\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "David Dumeau",
+      "flimr",
+      "MOOGADISHU",
+      "Thirsty ear",
+      "DANEGIAN"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lush",
+        "listeners": 9851,
+        "playcount": 31323
+      },
+      {
+        "name": "In Your Arms",
+        "listeners": 3948,
+        "playcount": 11846
+      },
+      {
+        "name": "Shoreline",
+        "listeners": 2135,
+        "playcount": 4089
+      },
+      {
+        "name": "Rebirth",
+        "listeners": 51,
+        "playcount": 83
+      },
+      {
+        "name": "Home",
+        "listeners": 25,
+        "playcount": 46
+      }
+    ],
+    "url": "https://www.last.fm/music/Ayla+Nova"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

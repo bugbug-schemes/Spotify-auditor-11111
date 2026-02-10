@@ -1,0 +1,180 @@
+{
+  "artist_name": "Phillipe Goldman",
+  "artist_id": "phillipe_goldman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:26:54.044425+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 103187752,
+    "name": "Phillipe Goldman",
+    "nb_fan": 1,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/103187752",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/19b8af2105cc89273ec043fe2ceb428e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Gloria",
+      "Arashiyama"
+    ],
+    "track_durations": [
+      119,
+      141
+    ],
+    "track_ranks": [
+      5429,
+      48133
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Lake Like a Mirror",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midsummer",
+        "label": "",
+        "release_date": "2024-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Behind Blue Eyes",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Arashiyama",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gloria",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodbye Yellow Brick Road",
+        "label": "",
+        "release_date": "2022-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Phillipe Goldman",
+    "mbid": "",
+    "listeners": 5341,
+    "playcount": 15396,
+    "listener_play_ratio": 2.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Phillipe+Goldman\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Douglas Ferdi",
+      "Adrian Strohm",
+      "Beau Hayes",
+      "Nylah Read",
+      "Lisa Helmer"
+    ],
+    "top_tracks": [
+      {
+        "name": "Arashiyama",
+        "listeners": 4095,
+        "playcount": 11588
+      },
+      {
+        "name": "Gloria",
+        "listeners": 809,
+        "playcount": 2037
+      },
+      {
+        "name": "Goodbye Yellow Brick Road",
+        "listeners": 578,
+        "playcount": 1748
+      },
+      {
+        "name": "Midsummer",
+        "listeners": 11,
+        "playcount": 14
+      },
+      {
+        "name": "Lake Like a Mirror",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Imelda's Waltz",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "La Chica de Ipanema",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Behind Blue Eyes",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Phillipe+Goldman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

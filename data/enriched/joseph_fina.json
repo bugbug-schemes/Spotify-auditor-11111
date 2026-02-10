@@ -1,0 +1,122 @@
+{
+  "artist_name": "Joseph Fina",
+  "artist_id": "joseph_fina",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:37:23.956224+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Joseph Fina', got 'Josephine'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1793779,
+    "name": "Ricardo Solfa",
+    "profile": "Ricardo Solfa is one of Jaume Sisa's alter egos, born in 1974. Sisa, Jordi Batiste, Gato Pérez & Manel Joseph decided to release their love for  \"retro\"& \"camp\" music. They founded a band to play everything, except jazz and prog music, that was what they did before: boleros, cumbias, italian & french songs, 50´s rock & roll, twist, tangos… The music they heard on radio when they were children. \r\nTheir band was named [a1235971], and their debut in 1974 was a success. Sisa (Ricardo Solfa in the orchestra) and [a1596631] (Rocky Muntanyola) would play some years with them, but finally on their records their singer was Manel Joseph (El Trilla).\r\nRicardo Solfa sang \"Bajo el cielo de Palma\", from Bonet de San Pedro. It was his first recording. The album included also a version of Sisa's \"L´home Dibuixat\", sang  by Muntanyola as a Cha-cha-chá. Albert Batiste (from [a1194248]) was the bassist and arranger.\r\n\r\nDiscography: \r\n1978 - \"Bajo el cielo de Palma\" [Orquestra Plateria: \"Orquestra Plateri",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Orquestra Plateria"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 10,
+    "digital_only_releases": 7,
+    "total_releases": 17,
+    "formats": [
+      "",
+      "12\", Maxi",
+      "3xCD, Comp",
+      "7\"",
+      "7\", Single, Promo",
+      "CD, Album, Boo",
+      "DVD-D, Comp"
+    ],
+    "labels": [
+      "Círculo Digital",
+      "Edicions De L'Eixample, FICOMIC",
+      "El Europeo Música",
+      "Eligeme Discos",
+      "Hi-Fi Discos Electrónica",
+      "Nuevos Medios",
+      "Nuevos Medios S.A."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Joseph Fina",
+    "mbid": "",
+    "listeners": 15087,
+    "playcount": 57884,
+    "listener_play_ratio": 3.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Joseph+Fina\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jiel",
+      "Henry Flower",
+      "Maynoir",
+      "Sigrid Vega",
+      "Sorellien"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Moment of Peace",
+        "listeners": 8639,
+        "playcount": 25007
+      },
+      {
+        "name": "Serenade of Silence",
+        "listeners": 8536,
+        "playcount": 26134
+      },
+      {
+        "name": "Letters to the Wind",
+        "listeners": 3521,
+        "playcount": 6739
+      },
+      {
+        "name": "Sea of Freedom",
+        "listeners": 3,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Joseph+Fina"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

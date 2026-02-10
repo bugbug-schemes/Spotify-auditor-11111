@@ -1,0 +1,445 @@
+{
+  "artist_name": "Isaac et Nora",
+  "artist_id": "isaac_et_nora",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:16:45.454470+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "24c375bc-51d4-4a82-80ab-40754be19faf",
+    "type": "Group",
+    "country": "",
+    "area": "Quimper",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://isaacetnora.bandcamp.com/",
+      "free streaming": "https://open.spotify.com/artist/0RtgAasyC15Sf1DXhtORls",
+      "social network": "https://www.facebook.com/Isaac-et-Nora-831785520544394",
+      "streaming": "https://tidal.com/artist/17522253",
+      "youtube": "https://www.youtube.com/channel/UCWHft6H90iAkeDB_deJOAEg"
+    },
+    "labels": [
+      "Madame Vodevil"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 79537142,
+    "name": "Isaac et Nora",
+    "nb_fan": 2319,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/79537142",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d3fe9c52ac775e77eb870e5941efbbb6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Daniel, Me Estás Matando",
+      "Fetén Fetén",
+      "Les Poppys",
+      "Manuel García",
+      "Polo & Pan"
+    ],
+    "contributor_roles": {
+      "Polo & Pan": [
+        "Main"
+      ],
+      "Les Poppys": [
+        "Main"
+      ],
+      "Daniel, Me Estás Matando": [
+        "Main"
+      ],
+      "Fetén Fetén": [
+        "Main"
+      ],
+      "Manuel García": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Charanga",
+      "Veinte Años",
+      "Arroz Con Coco",
+      "Lágrimas Negras",
+      "Dos Gardenias",
+      "Manha de Carnaval",
+      "Hasta la Raíz",
+      "Pero Que Bonito Siento",
+      "Sodade",
+      "El Cuarto de Tula",
+      "Gracias a la Vida",
+      "Vagabundo",
+      "No Digas Nada",
+      "Dónde Está Ese Amor",
+      "Nada Nos Va a Separar",
+      "Estrella",
+      "La Pelea con el Diablo",
+      "Qué Me Habrán Hecho",
+      "Quedará para Nosotros",
+      "Volver a los 17 (En Vivo)",
+      "Infinito",
+      "Tres Corazones",
+      "Volver a los 17"
+    ],
+    "track_durations": [
+      266,
+      212,
+      162,
+      208,
+      181,
+      200,
+      240,
+      184,
+      203,
+      253,
+      221,
+      153,
+      174,
+      179,
+      203,
+      190,
+      211,
+      176,
+      177,
+      270,
+      240,
+      171,
+      266
+    ],
+    "track_ranks": [
+      401654,
+      77772,
+      206292,
+      166555,
+      171194,
+      257905,
+      156079,
+      157096,
+      193342,
+      106396,
+      88944,
+      37544,
+      39236,
+      32193,
+      74461,
+      99245,
+      129087,
+      107417,
+      100635,
+      39136,
+      66575,
+      92766,
+      100212
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 23,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Premières Chansons",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "La Pelea con el Diablo",
+        "label": "",
+        "release_date": "2024-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vagabundo",
+        "label": "",
+        "release_date": "2024-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hoy",
+        "label": "",
+        "release_date": "2024-02-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luna de Xelajú",
+        "label": "",
+        "release_date": "2024-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tres Corazones",
+        "label": "",
+        "release_date": "2023-12-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volver a los 17 (En Vivo)",
+        "label": "",
+        "release_date": "2023-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirando al Mar",
+        "label": "",
+        "release_date": "2023-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Palmero Sube a La Palma",
+        "label": "",
+        "release_date": "2023-05-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lejanía",
+        "label": "",
+        "release_date": "2023-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Digas Nada",
+        "label": "",
+        "release_date": "2023-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volver a los 17",
+        "label": "",
+        "release_date": "2023-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dos Gardenias",
+        "label": "",
+        "release_date": "2022-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "¿Qué Me Habrán Hecho?",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Esta Morra No Se Vende",
+        "label": "",
+        "release_date": "2022-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Bruja",
+        "label": "",
+        "release_date": "2022-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Manha de Carnaval",
+        "label": "",
+        "release_date": "2021-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Cuarto de Tula",
+        "label": "",
+        "release_date": "2021-05-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solamente Tú",
+        "label": "",
+        "release_date": "2021-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Veinte Años",
+        "label": "",
+        "release_date": "2020-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lágrimas Negras",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En Tu Pelo",
+        "label": "",
+        "release_date": "2020-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gracias a la Vida",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sodade",
+        "label": "",
+        "release_date": "2020-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Latin & Love Studies",
+        "label": "",
+        "release_date": "2021-05-27",
+        "nb_tracks": 0,
+        "type": "compile"
+      }
+    ],
+    "related_artists": [
+      "Buika",
+      "Cesária Evora",
+      "Susana Baca",
+      "Chavela Vargas",
+      "Amparo Sánchez",
+      "Amparanoia",
+      "Agnès Jaoui",
+      "Raul Paz",
+      "Bebo Valdés",
+      "Monica Molina"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Isaac et Nora",
+    "mbid": "24c375bc-51d4-4a82-80ab-40754be19faf",
+    "listeners": 8422,
+    "playcount": 40522,
+    "listener_play_ratio": 4.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Isaac+et+Nora\">Read more on Last.fm</a>",
+    "tags": [
+      "france"
+    ],
+    "similar_artists": [
+      "Mafud",
+      "Chlöe's Clue",
+      "Guillem Roma",
+      "Isaac & Nora",
+      "Daphne Michelle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dos Gardenias",
+        "listeners": 4244,
+        "playcount": 16456
+      },
+      {
+        "name": "Veinte años",
+        "listeners": 1407,
+        "playcount": 4381
+      },
+      {
+        "name": "Hasta la Raíz",
+        "listeners": 1065,
+        "playcount": 2653
+      },
+      {
+        "name": "En Tu Pelo",
+        "listeners": 622,
+        "playcount": 1753
+      },
+      {
+        "name": "Lejanía",
+        "listeners": 577,
+        "playcount": 1858
+      },
+      {
+        "name": "Palmero Sube a La Palma",
+        "listeners": 559,
+        "playcount": 2135
+      },
+      {
+        "name": "Volver a los 17",
+        "listeners": 465,
+        "playcount": 1482
+      },
+      {
+        "name": "Sodade",
+        "listeners": 372,
+        "playcount": 970
+      },
+      {
+        "name": "Gracias a la Vida",
+        "listeners": 261,
+        "playcount": 745
+      },
+      {
+        "name": "Manha de Carnaval",
+        "listeners": 258,
+        "playcount": 648
+      }
+    ],
+    "url": "https://www.last.fm/music/Isaac+et+Nora"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

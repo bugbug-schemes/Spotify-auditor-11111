@@ -1,0 +1,166 @@
+{
+  "artist_name": "Sonic Brainwaves",
+  "artist_id": "sonic_brainwaves",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:12:21.725077+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 151652072,
+    "name": "Sonic Brainwaves",
+    "nb_fan": 8,
+    "nb_album": 0,
+    "link": "https://www.deezer.com/artist/151652072",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9e99c6d34f8c0a33c35d4c741fcaabfe/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {},
+    "albums": [],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 900742,
+    "name": "Reflected Illusions",
+    "profile": "Electro/Ambient/Experimental music-project Reflected Illusions creates textures and soundscapes that lead directly from the inner-workings of the mind of writer/producer Reza Najafi a.k.a., Rez, straight into your brainwaves to spark your imagination. With a multitude of sounds, atmospheres, energies and in-depth layers – Reflected Illusions aims to innovate the Electro-genres through the organic curiosity of exploration, enthusiasm for genuine discovery, and a seriously refined set of signature-skills that set the bar extremely-high for all to follow in the crystalline-quality of the ideas, production & performance of the music.\r\n\r\nBased in Toronto since 2001, Reflected Illusions first began to claim its sonic-terrain and otherworldly-atmospheres in 2004, going on to release the first album Psychosis. The chain of events to follow…the explosion of creativity and inspiring support from fans…the confirmation that the emotionally-layered instrumental, Ambient/Electro-music Rez was writin",
+    "realname": "Reza Najafi",
+    "social_urls": [
+      "https://www.reflectedillusions.net"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 9,
+    "total_releases": 12,
+    "formats": [
+      "10xFile, MP3",
+      "11xFile, MP3",
+      "12\"",
+      "3xFile, FLAC, MP3, EP",
+      "4xFile, FLAC, MP3, EP",
+      "5xFile, FLAC, MP3, EP",
+      "6xFile, MP3, EP, 320",
+      "7xFile, FLAC, MP3, EP",
+      "8xFile, FLAC, MP3, Album",
+      "9xFile, MP3",
+      "CD, Album",
+      "CD, Album + 6xFile, FLAC, MP3"
+    ],
+    "labels": [
+      "Reflected Illusions"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sonic Brainwaves",
+    "mbid": "",
+    "listeners": 23626,
+    "playcount": 85398,
+    "listener_play_ratio": 3.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sonic+Brainwaves\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Therapeutic Reality",
+      "Higher Highs",
+      "Vorssenn",
+      "The Monotone Droner",
+      "Synchrophonic"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Focus Drone",
+        "listeners": 18830,
+        "playcount": 60998
+      },
+      {
+        "name": "Binaural Alpha Drone",
+        "listeners": 5924,
+        "playcount": 22017
+      },
+      {
+        "name": "Brainwave 10 Hz",
+        "listeners": 610,
+        "playcount": 1495
+      },
+      {
+        "name": "Gamma Sinus 90 Hz - 190 Hz",
+        "listeners": 211,
+        "playcount": 420
+      },
+      {
+        "name": "Gamma Sinus 80 Hz - 120 Hz",
+        "listeners": 198,
+        "playcount": 420
+      },
+      {
+        "name": "Rhythmic Melodies Fire's Dance",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Healing Waves",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Rhythmic Fire Echoes Melody",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Blaze's Rhythmic Fire Tunes",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Melodies in Fire's Rhythm",
+        "listeners": 3,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Sonic+Brainwaves"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

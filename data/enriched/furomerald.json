@@ -1,0 +1,134 @@
+{
+  "artist_name": "Furomerald",
+  "artist_id": "furomerald",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:44:59.970757+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 281302541,
+    "name": "Furomerald",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/281302541",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Enduring",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nebula",
+        "label": "",
+        "release_date": "2025-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rose",
+        "label": "",
+        "release_date": "2025-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Flare",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Onyx",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Furomerald",
+    "mbid": "",
+    "listeners": 2556,
+    "playcount": 4311,
+    "listener_play_ratio": 1.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Furomerald\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Owen Bloom",
+      "Altered Echoes",
+      "Lún",
+      "Topozia",
+      "elveper"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nebula",
+        "listeners": 2554,
+        "playcount": 4309
+      },
+      {
+        "name": "Night Flare",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Furomerald"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

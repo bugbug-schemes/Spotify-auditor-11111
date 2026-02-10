@@ -1,0 +1,223 @@
+{
+  "artist_name": "Ethereal Nocturne",
+  "artist_id": "ethereal_nocturne",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:31:34.860485+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 266591772,
+    "name": "Ethereal Nocturne",
+    "nb_fan": 3,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/266591772",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e5fd8738298068d1e3940e76af20fd62/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Triune",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sun Dreams",
+        "label": "",
+        "release_date": "2025-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meadows",
+        "label": "",
+        "release_date": "2025-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noite Eterna",
+        "label": "",
+        "release_date": "2025-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunthread",
+        "label": "",
+        "release_date": "2024-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Translucide",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seraphic Dreams",
+        "label": "",
+        "release_date": "2024-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Distant Reverie",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Echoes of Love",
+        "label": "",
+        "release_date": "2024-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Novum Capitulum",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crepuscular",
+        "label": "",
+        "release_date": "2024-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lunar Belle",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "ETHEREAL NOCTURNE",
+    "mbid": "",
+    "listeners": 57522,
+    "playcount": 386412,
+    "listener_play_ratio": 6.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/ETHEREAL+NOCTURNE\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "iavú",
+      "Niranja",
+      "Manuel Wall",
+      "Aveniós",
+      "Sleepwear"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sunthread",
+        "listeners": 29128,
+        "playcount": 150913
+      },
+      {
+        "name": "Translucide",
+        "listeners": 21971,
+        "playcount": 122788
+      },
+      {
+        "name": "Seraphic Dreams",
+        "listeners": 15311,
+        "playcount": 93083
+      },
+      {
+        "name": "Meadows",
+        "listeners": 6347,
+        "playcount": 17457
+      },
+      {
+        "name": "Distant Reverie",
+        "listeners": 514,
+        "playcount": 1913
+      },
+      {
+        "name": "Novum Capitulum",
+        "listeners": 54,
+        "playcount": 69
+      },
+      {
+        "name": "Noite Eterna",
+        "listeners": 39,
+        "playcount": 76
+      },
+      {
+        "name": "Crepuscular",
+        "listeners": 30,
+        "playcount": 38
+      },
+      {
+        "name": "Soft Echoes of Love",
+        "listeners": 26,
+        "playcount": 36
+      },
+      {
+        "name": "Sun Dreams",
+        "listeners": 2,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/ETHEREAL+NOCTURNE"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

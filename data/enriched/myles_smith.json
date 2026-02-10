@@ -1,0 +1,544 @@
+{
+  "artist_name": "Myles Smith",
+  "artist_id": "myles_smith",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:53:05.462492+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "73d2a9d4-de5d-4bcd-9acb-ddf67dfd71ac",
+    "type": "Person",
+    "country": "",
+    "area": "England",
+    "begin_date": "1998-06-03",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "folk pop",
+      "stomp and holler"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0004581205",
+      "free streaming": "https://www.deezer.com/artist/12641355",
+      "official homepage": "https://www.mylessmith.co.uk/",
+      "streaming": "https://tidal.com/artist/8857512",
+      "wikidata": "https://www.wikidata.org/wiki/Q126076580",
+      "wikipedia": "https://en.wikipedia.org/wiki/Myles_Smith"
+    },
+    "labels": [
+      "Heartbreakriot",
+      "Sony Music Entertainment UK Limited",
+      "[no label]",
+      "Independent Records",
+      "Sony Music Entertainment UK",
+      "American Dogwood",
+      "Sony Music UK",
+      "RCA"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12641355,
+    "name": "Myles Smith",
+    "nb_fan": 56496,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/12641355",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/88bb713efdddb7df221fc5b82107c290/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "James Bay",
+      "Lainey Wilson",
+      "Niall Horan"
+    ],
+    "contributor_roles": {
+      "Niall Horan": [
+        "Main"
+      ],
+      "Lainey Wilson": [
+        "Main"
+      ],
+      "James Bay": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Drive Safe",
+      "Stargazing",
+      "Nice To Meet You",
+      "Stay (If You Wanna Dance)",
+      "Nice To Meet You (feat. Lainey Wilson)",
+      "Gold",
+      "Wait For You",
+      "My Home",
+      "Solo",
+      "My First Heartbreak",
+      "Sweater Weather",
+      "Dreamers",
+      "Whisper",
+      "Sweet Love",
+      "My Home (Recorded at Artistic Palace Studios, Paris)",
+      "River",
+      "Gold (Acoustic)",
+      "Little By Little",
+      "Behind",
+      "Stargazing (Moonlight Version)",
+      "Made For Me",
+      "Waste",
+      "BIRDS OF A FEATHER (Acoustic)",
+      "Nice To Meet You (Acoustic)",
+      "3am"
+    ],
+    "track_durations": [
+      201,
+      172,
+      176,
+      186,
+      176,
+      164,
+      201,
+      206,
+      199,
+      209,
+      155,
+      191,
+      194,
+      149,
+      256,
+      156,
+      171,
+      201,
+      198,
+      202,
+      226,
+      211,
+      202,
+      176,
+      159
+    ],
+    "track_ranks": [
+      453928,
+      915657,
+      952585,
+      863296,
+      620883,
+      672806,
+      759812,
+      650691,
+      668405,
+      524441,
+      542388,
+      487766,
+      568895,
+      561767,
+      518176,
+      469942,
+      712650,
+      432001,
+      429660,
+      467020,
+      528624,
+      510200,
+      345226,
+      323368,
+      462126
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 8,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "A Minute, A Moment...",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Minute...",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Stargazing (Moonlight Sessions)",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "You Promised A Lifetime (Acoustic)",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "You Promised A Lifetime",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Betting on Us",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "River",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Solo (Acoustic)",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Drive Safe",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay (If You Wanna Dance)",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gold (Acoustic)",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My First Heartbreak",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stargazing (Live at Eventim Apollo)",
+        "label": "",
+        "release_date": "2025-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nice To Meet You (feat. Lainey Wilson)",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nice To Meet You (Acoustic)",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nice To Meet You (Live from Chicago)",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nice To Meet You (Mistletoe Version)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whisper",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wait For You",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stargazing (Moonlight Version)",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stargazing (Live from Manchester)",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Home (Recorded at Artistic Palace Studios, Paris)",
+        "label": "",
+        "release_date": "2024-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stargazing",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solo (Piano Version)",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Behind",
+        "label": "",
+        "release_date": "2023-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solo",
+        "label": "",
+        "release_date": "2023-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Home (Acoustic)",
+        "label": "",
+        "release_date": "2023-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Home",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memories (I Don't Have)",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweater Weather",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Mark Ambor",
+      "Alex Warren",
+      "Picture This",
+      "Banners",
+      "Tors",
+      "Andy Grammer",
+      "Benson Boone",
+      "Dermot Kennedy",
+      "Zach Hood",
+      "Dean Lewis"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14476403,
+    "name": "Myles Smith",
+    "profile": "British singer and songwriter from Luton, England with jamaican heritage, born June 3, 1998.",
+    "realname": "",
+    "social_urls": [
+      "https://www.mylessmith.co.uk/about/",
+      "https://www.instagram.com/mylessmithuk/",
+      "https://x.com/MylesSmithUK",
+      "https://www.youtube.com/@MylesSmithT",
+      "https://www.tiktok.com/@mylessmithuk",
+      "https://en.wikipedia.org/wiki/Myles_Smith"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 39,
+    "digital_only_releases": 12,
+    "total_releases": 51,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "4xCD, Comp, Ltd, Édi",
+      "5xCD, Comp, Dlx",
+      "CD, Comp",
+      "CD, Comp, Club",
+      "File, AAC, Single",
+      "File, FLAC, Single",
+      "File, FLAC, Single, 24-",
+      "File, MP3, Single, 320",
+      "LP, EP"
+    ],
+    "labels": [
+      "American Dogwood",
+      "EMI, Sony Music, EMI, Sony Music",
+      "Label Panthéon, Universal Music France",
+      "Polystar (3)",
+      "Polystar (3), Sony Music, Universal Music Group",
+      "RCA Records Label",
+      "RCA, Sony Music",
+      "Sony Music",
+      "Sony Music Entertainment UK Limited",
+      "Sony Music, Sony Music, EMI, EMI",
+      "Universal",
+      "Universal Music Belgium",
+      "Universal Music France",
+      "Universal Music Special Markets",
+      "Universal Music, Sony Music",
+      "Warner Music Central Europe",
+      "Warner Music Central Europe, Universal Music Group, Sony Music",
+      "Warner Music France"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Myles Smith",
+    "mbid": "73d2a9d4-de5d-4bcd-9acb-ddf67dfd71ac",
+    "listeners": 564800,
+    "playcount": 8427547,
+    "listener_play_ratio": 14.92,
+    "bio_exists": true,
+    "bio_summary": "Myles Smith (born in Luton on 3 June 1998) is a British singer-songwriter. \n\nFrom a young age, Smith taught himself to play guitar and piano, and by the age of 12, he was performing at local open-mic nights. Smith began posting cover versions of songs on TikTok in August 2020. His acoustic cover of The Neighbourhood's \"Sweater Weather\" went viral in 2022, leading to its full release in February 2023. He gained significant attention with his covers, including Amber Run’s \"I Found\". <a href=\"https",
+    "tags": [
+      "folk",
+      "british",
+      "guitar",
+      "americana",
+      "alternative"
+    ],
+    "similar_artists": [
+      "Alex Warren",
+      "Mark Ambor",
+      "Michael Marcagi",
+      "Darren Kiely",
+      "Ed Sheeran"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stargazing",
+        "listeners": 428353,
+        "playcount": 3425783
+      },
+      {
+        "name": "Nice To Meet You",
+        "listeners": 146853,
+        "playcount": 948645
+      },
+      {
+        "name": "Solo",
+        "listeners": 137916,
+        "playcount": 1028470
+      },
+      {
+        "name": "My Home",
+        "listeners": 100932,
+        "playcount": 650842
+      },
+      {
+        "name": "Wait For You",
+        "listeners": 62884,
+        "playcount": 341404
+      },
+      {
+        "name": "Sweet Love",
+        "listeners": 46299,
+        "playcount": 183634
+      },
+      {
+        "name": "River",
+        "listeners": 37049,
+        "playcount": 195028
+      },
+      {
+        "name": "Gold",
+        "listeners": 36665,
+        "playcount": 168871
+      },
+      {
+        "name": "Stay (If You Wanna Dance)",
+        "listeners": 32440,
+        "playcount": 148348
+      },
+      {
+        "name": "Whisper",
+        "listeners": 31791,
+        "playcount": 138362
+      }
+    ],
+    "url": "https://www.last.fm/music/Myles+Smith"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

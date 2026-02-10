@@ -1,0 +1,578 @@
+{
+  "artist_name": "Michiel Borstlap",
+  "artist_id": "michiel_borstlap",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:41:54.694454+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "abe3c950-d066-4199-81c7-dfcc9f60ecf7",
+    "type": "Person",
+    "country": "NL",
+    "area": "Netherlands",
+    "begin_date": "1966-08-05",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz",
+      "avant-garde jazz"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000118773958"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000404553",
+      "discogs": "https://www.discogs.com/artist/340311",
+      "free streaming": "https://www.deezer.com/artist/134209",
+      "IMDb": "https://www.imdb.com/name/nm2505212/",
+      "myspace": "https://myspace.com/michielborstlap",
+      "official homepage": "http://www.michielborstlap.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2001017118",
+      "purchase for download": "https://music.apple.com/us/artist/13086168",
+      "social network": "https://www.instagram.com/michielborstlap/",
+      "songkick": "https://www.songkick.com/artists/547107",
+      "soundcloud": "https://soundcloud.com/michiel-borstlap",
+      "streaming": "https://tidal.com/artist/3575541",
+      "VIAF": "http://viaf.org/viaf/67652031",
+      "wikidata": "https://www.wikidata.org/wiki/Q1931233",
+      "youtube music": "https://music.youtube.com/channel/UCVmG419nMOoMuViEo6d-A7A"
+    },
+    "labels": [
+      "Summerfold Records",
+      "Andante Piano",
+      "harmonia mundi",
+      "Spectrum Music",
+      "Challenge Records",
+      "[PIAS] Holland",
+      "Gramercy Park Music",
+      "55 Records",
+      "Universal Classics & Jazz",
+      "EmArcy",
+      "55 RECORDS"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 134209,
+    "name": "Michiel Borstlap",
+    "nb_fan": 478,
+    "nb_album": 96,
+    "link": "https://www.deezer.com/artist/134209",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b75875c9634ead2865b385749b362b6e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bill Bruford"
+    ],
+    "contributor_roles": {
+      "Bill Bruford": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Water",
+      "Autumn (Andante Piano Sessions)",
+      "Parc / парк / 公园",
+      "Levantine",
+      "Prelude in D Minor",
+      "The 16 Kingdoms of the 5 Barbarians",
+      "Change",
+      "Sunday",
+      "Happy Tears",
+      "Air",
+      "Always in the Night",
+      "Rio de Janeiro",
+      "Encore (Velvet)"
+    ],
+    "track_durations": [
+      152,
+      208,
+      112,
+      343,
+      277,
+      525,
+      324,
+      179,
+      246,
+      164,
+      249,
+      147,
+      204
+    ],
+    "track_ranks": [
+      170062,
+      61386,
+      185849,
+      25171,
+      84512,
+      29292,
+      16025,
+      108520,
+      105402,
+      72135,
+      40097,
+      1802,
+      25123
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 28,
+      "ep": 5,
+      "single": 63
+    },
+    "albums": [
+      {
+        "title": "Reimagined",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "World Tour",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "PACE",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "MVSES",
+        "label": "",
+        "release_date": "2021-03-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Power of Music Plays Silence and Shadow Within",
+        "label": "",
+        "release_date": "2019-10-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Georg",
+        "label": "",
+        "release_date": "2018-10-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live - Special Edition - Velvet",
+        "label": "",
+        "release_date": "2018-03-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Velvet",
+        "label": "",
+        "release_date": "2017-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lady Sings the Blues (The Music of Billie Holiday)",
+        "label": "",
+        "release_date": "2016-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Arena (Live)",
+        "label": "",
+        "release_date": "2016-02-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Blue Seasons: Winter",
+        "label": "",
+        "release_date": "2015-12-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Chillout: The Best of Michiel Borstlap Solo Piano",
+        "label": "",
+        "release_date": "2015-01-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Frames",
+        "label": "",
+        "release_date": "2014-10-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Michiel Borstlap: Reflective",
+        "label": "",
+        "release_date": "2013-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "North Sea Jazz Legendary Concerts",
+        "label": "",
+        "release_date": "2013-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Blue (songs from father to daughter)",
+        "label": "",
+        "release_date": "2011-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solo 2010",
+        "label": "",
+        "release_date": "2010-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Monk Vol. 1",
+        "label": "",
+        "release_date": "2008-10-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Eldorado",
+        "label": "",
+        "release_date": "2012-01-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "In Two Minds",
+        "label": "",
+        "release_date": "2008-02-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "In Two Minds (Live)",
+        "label": "",
+        "release_date": "2008-02-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bbg",
+        "label": "",
+        "release_date": "2005-08-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Coffee and Jazz",
+        "label": "",
+        "release_date": "2005-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Every Step a Dance, Every Word a Song",
+        "label": "",
+        "release_date": "2004-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bruford - Borstlap: In Concert in Holland (Live)",
+        "label": "",
+        "release_date": "2004-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Every Step a Dance, Every Word a Song (Live, Europe 2003-4)",
+        "label": "",
+        "release_date": "2004-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Piano Solo Standards",
+        "label": "",
+        "release_date": "2004-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Sextet Live! (Live)",
+        "label": "",
+        "release_date": "2007-06-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Andante Piano Sessions: Michiel Borstlap",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Own Light",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "Maxence Cyrin",
+      "Büşra Kayıkçı",
+      "RIOPY",
+      "Carlos Cipa",
+      "Yiruma",
+      "Helen Jane Long",
+      "Aysedeniz Gokcin",
+      "Alexandra Streliski",
+      "Guillaume Poncelet",
+      "Jean-Michel Blais"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 340311,
+    "name": "Michiel Borstlap",
+    "profile": "Dutch pianist, born 5 August 1966 in The Hague.",
+    "realname": "Michiel Borstlap",
+    "social_urls": [
+      "http://www.michielborstlap.com/"
+    ],
+    "members": [],
+    "groups": [
+      "White House (2)",
+      "The Dutch Jazz Orchestra",
+      "Michiel Borstlap Trio",
+      "New Concert Big Band",
+      "Ad Colen Quartet",
+      "Michiel Borstlap Sextet",
+      "Meeting Point (4)",
+      "BBGtrio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 76,
+    "digital_only_releases": 24,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\", Maxi",
+      "12\", Maxi, Ltd",
+      "2xCD",
+      "2xCD, Album",
+      "2xCD, Comp",
+      "2xCD, Comp + CD, MiniAlbum + Box, Promo, Smplr",
+      "2xCD, Comp, Promo",
+      "2xCD, Comp, RM",
+      "2xCD, Promo",
+      "3xCD, Album",
+      "5xCD, Comp + Box",
+      "5xCD, Comp, Box",
+      "5xCD, Comp, Ltd + Box",
+      "6xCD, Comp",
+      "Box + 6xCD, Comp, RM",
+      "Box, Comp + 3xCD, Comp, RM",
+      "CD",
+      "CD, Album",
+      "CD, Album + DVD-V, NTSC",
+      "CD, Album + DVD-V, PAL",
+      "CD, Album, Comp",
+      "CD, Album, Dig",
+      "CD, Album, Enh",
+      "CD, Album, Jew",
+      "CD, Album, RE + DVD-V, RE + CD, Album, RE + CD, Al",
+      "CD, Boo",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, Comp, Smplr",
+      "CD, Single",
+      "CD, Single, car",
+      "CD, Smplr",
+      "DVD-V, Multichannel",
+      "LP, Album",
+      "LP, Comp"
+    ],
+    "labels": [
+      "55 Records",
+      "A-Records",
+      "APG Music",
+      "Art In Jazz",
+      "BMG",
+      "Baileo Music Productions",
+      "Bob City",
+      "Challenge Jazz",
+      "Challenge Records (3)",
+      "Coast to Coast B.V.",
+      "Cosmos (26)",
+      "CrisCrazz Records",
+      "EmArcy",
+      "EmArcy, Universal Classics & Jazz",
+      "EmArcy, Universal Music",
+      "Favorite (3)",
+      "GP Music (2)",
+      "Gramercy Park Music",
+      "Het Zuidelijk Toneel",
+      "Jazz Society Of Turkey",
+      "Jazzadelic",
+      "Jazzism Magazine",
+      "Jazzism Magazine, Jazzism Magazine",
+      "NM Extra",
+      "NM Special",
+      "NPS",
+      "NPS, Jazzism Magazine",
+      "NPS, Jazzism Magazine, North Sea Jazz Festival",
+      "NTR:",
+      "Not On Label",
+      "PAI (4)",
+      "Plattèl Music",
+      "Radio Nederland",
+      "Radio Nederland Wereldomroep",
+      "Rubinstein",
+      "STEP (Stichting Entertainmentretail Promotion), STEP (Stichting Entertainmentretail Promotion)",
+      "Spectrum Music (2), BMG Rights Management (UK) Limited",
+      "Stichting Nij",
+      "Summerfold",
+      "Terasima Records",
+      "Terasima Records, Yasukuni Terashima Presents",
+      "Tetra Records (5)",
+      "Universal",
+      "Universal Classics & Jazz",
+      "Universal Music",
+      "Universal Music B.V.",
+      "Universal, Verve Records, North Sea Jazz Festival, De Telegraaf",
+      "VIA",
+      "VIA Jazz",
+      "VIA, VIA Jazz",
+      "VPRO Eigenwijs",
+      "Verve Records, Universal Classics & Jazz"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Michiel Borstlap",
+    "mbid": "abe3c950-d066-4199-81c7-dfcc9f60ecf7",
+    "listeners": 68339,
+    "playcount": 418108,
+    "listener_play_ratio": 6.12,
+    "bio_exists": true,
+    "bio_summary": "Over the past decade, pianist and composer, Michiel Borstlap has gained international acclaim for his original music and his highly communicative interpretations of a broad musical scope between pop, jazz, dance and classical music.. \nBorstlap won the prestigious Thelonious Monk Award 1996, which brought him his first major international audience. Applauded at festivals in New York, Sydney, Beijing, Tokyo, Vienna, Berlin, Umbria, Chicago, Cape Town, London etc. <a href=\"https://www.last.fm/music",
+    "tags": [
+      "jazz",
+      "piano",
+      "dutch",
+      "dutch jazz",
+      "contemporary jazz"
+    ],
+    "similar_artists": [
+      "Matteo Myderwyk",
+      "Elias Kiefer",
+      "The Masked Pianoman",
+      "Büşra Kayıkçı",
+      "Aquilegia"
+    ],
+    "top_tracks": [
+      {
+        "name": "Water",
+        "listeners": 35653,
+        "playcount": 183885
+      },
+      {
+        "name": "Tokyo",
+        "listeners": 9811,
+        "playcount": 24642
+      },
+      {
+        "name": "Bloem / Λουλούδι / Virág",
+        "listeners": 3768,
+        "playcount": 9203
+      },
+      {
+        "name": "Barcelona",
+        "listeners": 3754,
+        "playcount": 8205
+      },
+      {
+        "name": "Velvet",
+        "listeners": 3695,
+        "playcount": 10713
+      },
+      {
+        "name": "Parc / парк / 公园",
+        "listeners": 2668,
+        "playcount": 7338
+      },
+      {
+        "name": "Earth",
+        "listeners": 2306,
+        "playcount": 5128
+      },
+      {
+        "name": "Sunday",
+        "listeners": 1542,
+        "playcount": 3868
+      },
+      {
+        "name": "Air",
+        "listeners": 1495,
+        "playcount": 3625
+      },
+      {
+        "name": "Lux",
+        "listeners": 1181,
+        "playcount": 3447
+      }
+    ],
+    "url": "https://www.last.fm/music/Michiel+Borstlap"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

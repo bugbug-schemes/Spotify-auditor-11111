@@ -1,0 +1,202 @@
+{
+  "artist_name": "Jacob Ledger",
+  "artist_id": "jacob_ledger",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:20:34.776679+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 166728637,
+    "name": "Jacob Ledger",
+    "nb_fan": 3,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/166728637",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6d275050441888ed6ee3f541ea37062b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Castlewood",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lake Ontario",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amanda's Rose",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Catamount Mountain",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Harvest",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emilia",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Airy",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Cold Trail",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Louise",
+        "label": "",
+        "release_date": "2020-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jacob Ledger",
+    "mbid": "",
+    "listeners": 7573,
+    "playcount": 26955,
+    "listener_play_ratio": 3.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jacob+Ledger\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Taylor Ellis",
+      "Marino Calle",
+      "Jonas Björk",
+      "Yumi Ima",
+      "Alexa Popov"
+    ],
+    "top_tracks": [
+      {
+        "name": "Castlewood",
+        "listeners": 3175,
+        "playcount": 10393
+      },
+      {
+        "name": "Emilia",
+        "listeners": 1570,
+        "playcount": 4941
+      },
+      {
+        "name": "Airy",
+        "listeners": 1408,
+        "playcount": 3744
+      },
+      {
+        "name": "Catamount Mountain",
+        "listeners": 1269,
+        "playcount": 3037
+      },
+      {
+        "name": "For Louise",
+        "listeners": 878,
+        "playcount": 2133
+      },
+      {
+        "name": "Harvest",
+        "listeners": 625,
+        "playcount": 1450
+      },
+      {
+        "name": "Amanda's Rose",
+        "listeners": 527,
+        "playcount": 1012
+      },
+      {
+        "name": "Another Cold Trail",
+        "listeners": 60,
+        "playcount": 170
+      },
+      {
+        "name": "Gratitude",
+        "listeners": 44,
+        "playcount": 71
+      },
+      {
+        "name": "Back to the Soil",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Jacob+Ledger"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

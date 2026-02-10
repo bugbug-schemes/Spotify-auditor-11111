@@ -1,0 +1,619 @@
+{
+  "artist_name": "James Blunt",
+  "artist_id": "james_blunt",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:22:13.955622+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ebee61b4-bbdd-4087-9bcb-d5aa099088ec",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1974-02-22",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "rock",
+      "pop",
+      "british",
+      "singer-songwriter",
+      "uk",
+      "folk rock",
+      "soft rock",
+      "acoustic rock",
+      "pop rock",
+      "piano rock",
+      "english",
+      "rhyming slang",
+      "pop and chart",
+      "singer/songwriter"
+    ],
+    "aliases": [
+      "James Blount",
+      "James Hillier Blount"
+    ],
+    "isnis": [
+      "0000000114407440"
+    ],
+    "ipis": [
+      "00430451694"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000391586",
+      "bandsintown": "https://www.bandsintown.com/a/119",
+      "BBC Music page": "https://www.bbc.co.uk/music/artists/ebee61b4-bbdd-4087-9bcb-d5aa099088ec",
+      "discogs": "https://www.discogs.com/artist/282864",
+      "fanpage": "http://www.jamesbluntfanclub.de/",
+      "free streaming": "https://www.deezer.com/artist/287",
+      "IMDb": "https://www.imdb.com/name/nm1955540/",
+      "last.fm": "https://www.last.fm/music/James+Blunt",
+      "lyrics": "http://muzikum.eu/en/122-4756/james-blunt/lyrics.html",
+      "myspace": "https://myspace.com/jamesblunt",
+      "official homepage": "http://www.jamesblunt.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2006012925",
+      "purchase for download": "https://www.qobuz.com/de-de/interpreter/-/81095",
+      "secondhandsongs": "https://secondhandsongs.com/artist/18910",
+      "setlistfm": "https://www.setlist.fm/setlists/james-blunt-13d6bd99.html",
+      "social network": "https://www.instagram.com/jamesblunt/",
+      "songkick": "https://www.songkick.com/artists/4331791",
+      "soundcloud": "https://soundcloud.com/jamesblunt",
+      "streaming": "https://www.qobuz.com/de-de/interpreter/-/81095",
+      "VIAF": "http://viaf.org/viaf/30746859",
+      "wikidata": "https://www.wikidata.org/wiki/Q130799",
+      "youtube": "https://www.youtube.com/channel/UCUg8KhMXhFxJm-YQzOQ7nPw"
+    },
+    "labels": [
+      "Warner Music France",
+      "Warner Music UK",
+      "Atlantic",
+      "Spinnin’ Records",
+      "MG Records",
+      "Warner Music Sweden",
+      "WEA Records",
+      "Atlantic Records UK",
+      "Lost & Cie",
+      "Custard",
+      "B1 Recordings",
+      "Warner Music",
+      "FFRR",
+      "Phonic",
+      "19 Recordings",
+      "Tonspiel",
+      "Warner Music Australia",
+      "WEA International",
+      "Atlantic Records UK Ltd"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 287,
+    "name": "James Blunt",
+    "nb_fan": 1543628,
+    "nb_album": 59,
+    "link": "https://www.deezer.com/artist/287",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7be2c6b39aa3bd15315d310fea099caf/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Cyril",
+      "Ward Thomas"
+    ],
+    "contributor_roles": {
+      "Ward Thomas": [
+        "Featured"
+      ],
+      "Cyril": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "You're Beautiful",
+      "Monsters",
+      "1973",
+      "Goodbye My Lover",
+      "High",
+      "I Came For Love",
+      "Carry You Home",
+      "Same Mistake",
+      "Cold",
+      "Wisemen",
+      "Stay the Night",
+      "Beside You",
+      "Tears and Rain",
+      "Bonfire Heart",
+      "Saving A Life",
+      "1973 (Acoustic)",
+      "The Girl That Never Was",
+      "Postcards",
+      "Halfway (feat. Ward Thomas)",
+      "Tears Dry Tonight",
+      "The Truth",
+      "All The Love That I Ever Needed",
+      "When I Find Love Again (Apollo Edition Version)",
+      "Bartender",
+      "Always Hate Me"
+    ],
+    "track_durations": [
+      209,
+      259,
+      280,
+      258,
+      244,
+      182,
+      234,
+      298,
+      208,
+      221,
+      212,
+      185,
+      244,
+      236,
+      175,
+      209,
+      193,
+      284,
+      191,
+      167,
+      222,
+      197,
+      184,
+      193,
+      217
+    ],
+    "track_ranks": [
+      776097,
+      583120,
+      783930,
+      369856,
+      272135,
+      551718,
+      624779,
+      703461,
+      262764,
+      264847,
+      639913,
+      454862,
+      220271,
+      228321,
+      463518,
+      541103,
+      428338,
+      251497,
+      446834,
+      591928,
+      381221,
+      569831,
+      464447,
+      73813,
+      106635
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 14,
+      "ep": 5,
+      "single": 40
+    },
+    "albums": [
+      {
+        "title": "Back To Bedlam (20th Anniversary Edition)",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Who We Used To Be (Deluxe)",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Stars Beneath My Feet (2004 - 2021)",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Once Upon a Mind",
+        "label": "",
+        "release_date": "2019-10-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Once Upon A Mind (Time Suspended Edition)",
+        "label": "",
+        "release_date": "2020-06-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Afterlove (Extended Version)",
+        "label": "",
+        "release_date": "2017-03-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Afterlove",
+        "label": "",
+        "release_date": "2017-03-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moon Landing",
+        "label": "",
+        "release_date": "2013-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Some Kind of Trouble",
+        "label": "",
+        "release_date": "2010-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Some Kind of Trouble (Deluxe Edition)",
+        "label": "",
+        "release_date": "2010-11-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "All the Lost Souls",
+        "label": "",
+        "release_date": "2007-09-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "All the Lost Souls (Deluxe Edition)",
+        "label": "",
+        "release_date": "2007-09-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Chasing Time: The Bedlam Sessions",
+        "label": "",
+        "release_date": "2005-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Back to Bedlam",
+        "label": "",
+        "release_date": "2005-08-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Smoke Signals EP",
+        "label": "",
+        "release_date": "2014-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "When I Find Love Again EP",
+        "label": "",
+        "release_date": "2014-10-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Heart to Heart EP",
+        "label": "",
+        "release_date": "2014-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bonfire Heart EP",
+        "label": "",
+        "release_date": "2013-10-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Superstar (Remixes)",
+        "label": "",
+        "release_date": "2012-03-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tears Dry Tonight (VIP Mix)",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tears Dry Tonight",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Standing All Alone (Bonus Demo)",
+        "label": "",
+        "release_date": "2024-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "High (Demo)",
+        "label": "",
+        "release_date": "2024-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wisemen (Demo)",
+        "label": "",
+        "release_date": "2024-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Girl That Never Was (Acoustic)",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Girl That Never Was",
+        "label": "",
+        "release_date": "2023-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All The Love That I Ever Needed",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beside You (Acoustic)",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beside You (Alle Farben Remix)",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beside You",
+        "label": "",
+        "release_date": "2023-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "James Morrison",
+      "P!nk",
+      "Ed Sheeran",
+      "Gavin James",
+      "Jason Mraz",
+      "Colbie Caillat",
+      "The Script",
+      "Coldplay",
+      "Boyce Avenue",
+      "Rag'n'Bone Man"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 282864,
+    "name": "James Blunt",
+    "profile": "James Hillier Blount (born 22 February 1974 Tidworth, Wiltshire, England), better known by his stage name James Blunt, is an English singer-songwriter and former army officer, whose debut album, Back to Bedlam and single releases, including \"You're Beautiful\" and \"Goodbye My Lover\", brought him to fame in 2005. His repertoire can be best described as a mix of acoustic-tinged pop, rock and folk. After recording on the independent American label Custard Records, Blunt won two Brit Awards, two MTV Video Music Awards, two Ivor Novello Awards, and by 2006 was nominated for five Grammy Awards. The following year, he released his second album All the Lost Souls (2007). Blunt's third studio album, Some Kind of Trouble, was released in November 2010. Worldwide, Blunt has sold over 18 million albums, and his debut album, Back to Bedlam, is the best-selling album of the 2000s in the UK.\r\nBlunt was an officer in the Life Guards, a cavalry regiment of the British Army, and served under NATO in Koso",
+    "realname": "James Hillier Blount",
+    "social_urls": [
+      "http://www.jamesblunt.com",
+      "https://www.facebook.com/jamesblunt",
+      "https://twitter.com/JamesBlunt",
+      "https://www.tiktok.com/@jamesblunt",
+      "http://en.wikipedia.org/wiki/James_Blunt",
+      "http://instagram.com/jamesblunt",
+      "https://soundcloud.com/jamesblunt",
+      "https://music.apple.com/gb/artist/james-blunt/27496674",
+      "https://musicbrainz.org/artist/ebee61b4-bbdd-4087-9bcb-d5aa099088ec",
+      "https://www.setlist.fm/setlists/james-blunt-13d6bd99.html",
+      "https://www.songkick.com/artists/4331791-james-blunt",
+      "https://play.spotify.com/artist/7KMqksf0UMdyA0UCf4R3ux",
+      "https://www.whosampled.com/James-Blunt/",
+      "https://www.allmusic.com/artist/james-blunt-mn0000391586"
+    ],
+    "members": [],
+    "groups": [
+      "Helping Haiti",
+      "Artists For Grenfell"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 22,
+    "digital_only_releases": 78,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xCDr, Album, Ltd, Dig",
+      "3xFile, AAC, EP, Copy Prot., 128",
+      "4xCD, Album + Box, Comp, Ltd",
+      "5xFile, AAC, EP, 256",
+      "5xFile, AAC, EP, Copy Prot., 128",
+      "6xFile, AAC, EP, 128",
+      "Betacam SP, Advance, Comp, PAL",
+      "Betacam SP, Advance, PAL",
+      "Box, Album, Comp, Ltd + CD, Album + CD, Album",
+      "CD, Album + CD, Album + CD, Album + CD, Album + Co",
+      "CD, Album + DVD-V",
+      "CD, Album, RE + CD, Album, RE + Box, Comp, Ltd",
+      "CD, Comp",
+      "CD, Comp, Club",
+      "CD, EP, Promo, Car",
+      "CD, EP, Promo, S/Edition",
+      "CD, Transcription",
+      "CDr, Comp, Promo",
+      "CDr, EP, Promo",
+      "CDr, Single, Promo",
+      "DVD, Promo",
+      "DVD-V, NTSC",
+      "EP + 3xFile, MP3, 256",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single",
+      "LP, RSD, Ltd, Che"
+    ],
+    "labels": [
+      "19 Recordings",
+      "Atlantic",
+      "Atlantic, Custard Records",
+      "Atlantic, Custard Records, Warner Music France, Wea Music, warnermusic.fr",
+      "BBC Radio International",
+      "Concert Live, Atlantic",
+      "Custard Records, Atlantic",
+      "Do It Yourself Multimedia Group",
+      "EMI",
+      "EMI Music Publishing (Film Soundtrack Division)",
+      "Forza Music",
+      "Polystar (3)",
+      "Polystar (3), Universal Music Group",
+      "Positiva, Virgin",
+      "Redroom Music, Platinum Music",
+      "Sony Music",
+      "Sony Music, Universal Music On Demand, Sony Music, Universal Music On Demand",
+      "Spinnin' Records",
+      "Warner Dance Labels",
+      "Warner Music Brasil",
+      "Warner Music Central Europe",
+      "Warner Music France",
+      "Warner Music France, Atlantic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "James Blunt",
+    "mbid": "ebee61b4-bbdd-4087-9bcb-d5aa099088ec",
+    "listeners": 2805691,
+    "playcount": 65793967,
+    "listener_play_ratio": 23.45,
+    "bio_exists": true,
+    "bio_summary": "James Blunt (born James Hillier Blount, 22 February 1974) is an English singer/songwriter whose debut album, Back to Bedlam, and single releases — especially the number one hit \"You're Beautiful\" — brought him to fame in 2005. He was born in Tidworth, Wiltshire, United Kingdom. His style is a mix of pop, rock and folk. Along with vocals, Blunt plays a wide variety of instruments including the piano, guitar, organ, marimba, and mellotron. \n\nBlunt was educated at Elstree School <a href=\"https://ww",
+    "tags": [
+      "pop",
+      "singer-songwriter",
+      "acoustic",
+      "indie",
+      "rock"
+    ],
+    "similar_artists": [
+      "James Morrison",
+      "Jason Mraz",
+      "James Bay",
+      "David Gray",
+      "Daniel Powter"
+    ],
+    "top_tracks": [
+      {
+        "name": "You're Beautiful",
+        "listeners": 1291277,
+        "playcount": 8792817
+      },
+      {
+        "name": "Goodbye My Lover",
+        "listeners": 809754,
+        "playcount": 5747619
+      },
+      {
+        "name": "1973",
+        "listeners": 600417,
+        "playcount": 4323876
+      },
+      {
+        "name": "High",
+        "listeners": 529312,
+        "playcount": 3240500
+      },
+      {
+        "name": "Wisemen",
+        "listeners": 496751,
+        "playcount": 2899862
+      },
+      {
+        "name": "Tears and Rain",
+        "listeners": 378939,
+        "playcount": 2229214
+      },
+      {
+        "name": "Same Mistake",
+        "listeners": 375094,
+        "playcount": 2782981
+      },
+      {
+        "name": "Carry You Home",
+        "listeners": 351435,
+        "playcount": 2393400
+      },
+      {
+        "name": "Cry",
+        "listeners": 330175,
+        "playcount": 1681481
+      },
+      {
+        "name": "Out of My Mind",
+        "listeners": 306549,
+        "playcount": 1527704
+      }
+    ],
+    "url": "https://www.last.fm/music/James+Blunt"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

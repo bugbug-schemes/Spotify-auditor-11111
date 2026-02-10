@@ -1,0 +1,172 @@
+{
+  "artist_name": "Sasha Coleman",
+  "artist_id": "sasha_coleman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:55:05.290550+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 273181882,
+    "name": "Sasha Coleman",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/273181882",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/886d682832f22ed0735329e4598472ea/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Weightless Hours",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glass Moons, Quiet Orbits",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eos",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Doethineb",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Singular",
+        "label": "",
+        "release_date": "2025-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I See Birches Bend",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crystal Shells",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Curio",
+        "label": "",
+        "release_date": "2024-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Relic",
+        "label": "",
+        "release_date": "2024-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sasha Coleman",
+    "mbid": "",
+    "listeners": 31084,
+    "playcount": 146914,
+    "listener_play_ratio": 4.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sasha+Coleman\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Alma Tranquilo",
+      "Tranquil Nova",
+      "Future Sky",
+      "Marc Veil",
+      "Foramina Nigra"
+    ],
+    "top_tracks": [
+      {
+        "name": "Crystal Shells",
+        "listeners": 24066,
+        "playcount": 125137
+      },
+      {
+        "name": "Singular",
+        "listeners": 5679,
+        "playcount": 14795
+      },
+      {
+        "name": "Glass Moons, Quiet Orbits",
+        "listeners": 2580,
+        "playcount": 6981
+      },
+      {
+        "name": "I See Birches Bend",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sasha+Coleman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,211 @@
+{
+  "artist_name": "Emberwaves",
+  "artist_id": "emberwaves",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:27:11.844080+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 265737632,
+    "name": "emberwaves",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/265737632",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a396c7d98d3eeb9cddaaf565e08b2840/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Nova Trace",
+      "Flare"
+    ],
+    "track_durations": [
+      130,
+      164
+    ],
+    "track_ranks": [
+      42882,
+      30372
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Hollow",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hovering Above",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Held by the Moment",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flare",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deepened",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noble",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nova Trace",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sapphire Shores",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blush",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "EmberWaves",
+    "mbid": "",
+    "listeners": 27965,
+    "playcount": 76145,
+    "listener_play_ratio": 2.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/EmberWaves\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "August Sands",
+      "Pete McMurray",
+      "Aiden Archer",
+      "Ólafur Apollo",
+      "Elysar"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nova Trace",
+        "listeners": 27040,
+        "playcount": 65569
+      },
+      {
+        "name": "Flare",
+        "listeners": 4783,
+        "playcount": 9706
+      },
+      {
+        "name": "Noble",
+        "listeners": 459,
+        "playcount": 825
+      },
+      {
+        "name": "Ember Waves - Look At Me Now (Remix)",
+        "listeners": 8,
+        "playcount": 8
+      },
+      {
+        "name": "Blush",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Hollow",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Held by the Moment",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Hovering Above",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Sapphire Shores",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Deepened",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/EmberWaves"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

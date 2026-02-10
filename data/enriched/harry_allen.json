@@ -1,0 +1,533 @@
+{
+  "artist_name": "Harry Allen",
+  "artist_id": "harry_allen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:02:51.314836+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2c7c6d82-73d3-454a-a4e0-94eb85b24393",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1966-10-12",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000080122585"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000668457",
+      "discogs": "https://www.discogs.com/artist/871631",
+      "free streaming": "https://www.deezer.com/artist/7511",
+      "other databases": "https://www.worldcat.org/identities/lccn-n94038655",
+      "secondhandsongs": "https://secondhandsongs.com/artist/21521",
+      "social network": "https://www.facebook.com/harry.allen.92775",
+      "songkick": "https://www.songkick.com/artists/253909",
+      "VIAF": "http://viaf.org/viaf/107040962",
+      "wikidata": "https://www.wikidata.org/wiki/Q1586368",
+      "youtube": "https://www.youtube.com/channel/UC1oHXwol6oZ4emheBC-LRaQ"
+    },
+    "labels": [
+      "BMG",
+      "Sackville",
+      "RCA Victor",
+      "Gac Records",
+      "Venus Records",
+      "寺島レコード",
+      "Stunt Records",
+      "Concord Records",
+      "Challenge Records",
+      "JazzJazz Records",
+      "Challenge",
+      "Slider Music",
+      "novus J",
+      "Styx Records",
+      "Nagel Heyer Records",
+      "RCA"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7511,
+    "name": "Harry Allen",
+    "nb_fan": 703,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/7511",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f94c8ba5a801743bf805766a3cde40bb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Andy Brown",
+      "Chuck Riggs",
+      "Dave Blenkhorn",
+      "EDDIE ERICKSON",
+      "Ehud Asherie",
+      "Jan Lundgren Quartet",
+      "Joel Forbes",
+      "Martin Sasse",
+      "Rossano Sportiello",
+      "The John Pizzarelli Trio",
+      "Warren Vache"
+    ],
+    "contributor_roles": {
+      "Rossano Sportiello": [
+        "Main"
+      ],
+      "Joel Forbes": [
+        "Main"
+      ],
+      "Chuck Riggs": [
+        "Main"
+      ],
+      "Ehud Asherie": [
+        "Main"
+      ],
+      "Warren Vache": [
+        "Featured"
+      ],
+      "Martin Sasse": [
+        "Main"
+      ],
+      "Jan Lundgren Quartet": [
+        "Main"
+      ],
+      "EDDIE ERICKSON": [
+        "Main"
+      ],
+      "Dave Blenkhorn": [
+        "Main"
+      ],
+      "Andy Brown": [
+        "Main"
+      ],
+      "The John Pizzarelli Trio": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Dindi",
+      "New York State of Mind",
+      "Captain Bacardi",
+      "Vignette",
+      "The Rose Tattoo",
+      "Down By The River",
+      "Minor Shift",
+      "When October Goes (Live)",
+      "Sure as You Are Born",
+      "Christmas Is Here Can You Feel It?",
+      "There's No Place For Me (Live)",
+      "Whispers Soft and Sweet",
+      "Dream Time",
+      "Just a Child",
+      "Dot's Cheesecake"
+    ],
+    "track_durations": [
+      448,
+      475,
+      256,
+      303,
+      294,
+      292,
+      485,
+      319,
+      417,
+      173,
+      320,
+      403,
+      271,
+      339,
+      343
+    ],
+    "track_ranks": [
+      78211,
+      102173,
+      15774,
+      31479,
+      114900,
+      38763,
+      100000,
+      81484,
+      70973,
+      21724,
+      115611,
+      41198,
+      50754,
+      41252,
+      55496
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 36,
+      "single": 64
+    },
+    "albums": [
+      {
+        "title": "Live At Bird's Eye (Live)",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Harry Allen & Dave Blenkhorn Play the Music of Phil Morrison",
+        "label": "",
+        "release_date": "2022-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "My Reverie by Special Request",
+        "label": "",
+        "release_date": "2022-01-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Milo's Illinois",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Under a Blanket of Blue",
+        "label": "",
+        "release_date": "2020-08-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Bloody Happy Song",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rhode Island Is Famous for You",
+        "label": "",
+        "release_date": "2019-03-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Can You Love Once More?",
+        "label": "",
+        "release_date": "2016-05-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live!",
+        "label": "",
+        "release_date": "2016-02-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Something About Jobim",
+        "label": "",
+        "release_date": "2015-11-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "For George, Cole and Duke",
+        "label": "",
+        "release_date": "2015-04-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flying Over Rio",
+        "label": "",
+        "release_date": "2014-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "How Long Has This Been Going On?",
+        "label": "",
+        "release_date": "2014-08-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Quietly There",
+        "label": "",
+        "release_date": "2015-02-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lower East Side",
+        "label": "",
+        "release_date": "2013-02-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Walk With Music",
+        "label": "",
+        "release_date": "2013-02-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Upper West Side",
+        "label": "",
+        "release_date": "2012-01-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Conversations",
+        "label": "",
+        "release_date": "2011-10-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "When I Grow Too Old to Dream",
+        "label": "",
+        "release_date": "2009-03-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Day Dream",
+        "label": "",
+        "release_date": "2009-03-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Once Upon a Summertime",
+        "label": "",
+        "release_date": "2009-03-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Can See Forever",
+        "label": "",
+        "release_date": "2009-03-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dreamer",
+        "label": "",
+        "release_date": "2009-03-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Eu Não Quero Dançar - I Won't Dance",
+        "label": "",
+        "release_date": "2009-03-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Love Mancini",
+        "label": "",
+        "release_date": "2007-12-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cole Porter Songbook",
+        "label": "",
+        "release_date": "2007-12-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Here's To Zoot",
+        "label": "",
+        "release_date": "2007-12-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hits By Brits",
+        "label": "",
+        "release_date": "2007-10-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Christmas In Swingtime",
+        "label": "",
+        "release_date": "2007-10-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cocktails for Two",
+        "label": "",
+        "release_date": "2007-08-12",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": [
+      "Kenny Burrell",
+      "Paolo Fresu Quintet",
+      "Red Garland",
+      "Wynton Marsalis",
+      "Hank Jones",
+      "Duke Pearson",
+      "Gene Ammons",
+      "Joe Pass",
+      "Cyrus Chestnut",
+      "John Coltrane Quartet"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 490131,
+    "name": "Harry Allen",
+    "profile": "Hip hop producer and activist.\r\n\r\nFor the tenor saxophonist, use [a871631].",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Community Research Initiative, Inc."
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 24,
+    "total_releases": 27,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Album, Enh, RE, RM + CD, Album, RE + Box, Comp",
+      "CD, Comp",
+      "VHS, Vid"
+    ],
+    "labels": [
+      "BMG Video",
+      "BMG, RCA",
+      "Def Jam Recordings Group Inc.",
+      "Extreme"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Harry Allen",
+    "mbid": "2c7c6d82-73d3-454a-a4e0-94eb85b24393",
+    "listeners": 62446,
+    "playcount": 248551,
+    "listener_play_ratio": 3.98,
+    "bio_exists": true,
+    "bio_summary": "Tenor saxophonist Harry Allen (Washington D.C.,1966) was raised in Los Angeles, CA and Burrillville, RI. He received a Bachelor of Arts degree in music in 1988 from Rutgers University in New Jersey, and currently resides in New York City.\n\nHarry is featured on many of John Pizzarelli's recordings including the soundtrack and an on-screen cameo in the feature film “The Out of Towners” starring Steve Martin and Goldie Hawn. He has also done a series of commercials for ESPN starring Robert Goulet. ",
+    "tags": [
+      "jazz",
+      "saxophone",
+      "jazz saxophone",
+      "instrumental",
+      "2000s"
+    ],
+    "similar_artists": [
+      "Scott Hamilton",
+      "Hans Ulrik",
+      "Modern Jazz Quartet",
+      "Houston Person",
+      "JD Allen"
+    ],
+    "top_tracks": [
+      {
+        "name": "There's No Place For Me - Live",
+        "listeners": 15845,
+        "playcount": 35621
+      },
+      {
+        "name": "The Rose Tattoo",
+        "listeners": 15028,
+        "playcount": 34649
+      },
+      {
+        "name": "When October Goes - Live",
+        "listeners": 9531,
+        "playcount": 21455
+      },
+      {
+        "name": "The Unknown",
+        "listeners": 8213,
+        "playcount": 15612
+      },
+      {
+        "name": "Christmas Is Here Can You Feel It?",
+        "listeners": 8212,
+        "playcount": 12617
+      },
+      {
+        "name": "There Should Be",
+        "listeners": 4374,
+        "playcount": 11500
+      },
+      {
+        "name": "New York State Of Mind",
+        "listeners": 1696,
+        "playcount": 4646
+      },
+      {
+        "name": "Corcovado",
+        "listeners": 1513,
+        "playcount": 4945
+      },
+      {
+        "name": "Duet on a Groove",
+        "listeners": 1511,
+        "playcount": 2509
+      },
+      {
+        "name": "Once I Loved",
+        "listeners": 1184,
+        "playcount": 3586
+      }
+    ],
+    "url": "https://www.last.fm/music/Harry+Allen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

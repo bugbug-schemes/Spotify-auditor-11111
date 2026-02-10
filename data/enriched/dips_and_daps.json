@@ -1,0 +1,174 @@
+{
+  "artist_name": "Dips And Daps",
+  "artist_id": "dips_and_daps",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:29:47.694485+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 133539532,
+    "name": "Dips And Daps",
+    "nb_fan": 2,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/133539532",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fb6466ee89a63c65964fa7a41589fb8d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Grounded",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Graceful Glide",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Momento",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smokey Star",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Binaural Alpha Sinus 432 Hz - L 442 Hz - R",
+        "label": "",
+        "release_date": "2021-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dips And Daps",
+    "mbid": "",
+    "listeners": 13530,
+    "playcount": 36872,
+    "listener_play_ratio": 2.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dips+And+Daps\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Melvin Miller Jones",
+      "Lufhavn",
+      "Sea Turtles",
+      "Hidden in Sound",
+      "Luna Waterfall"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Alpha Sinus 220 Hz - L 230 Hz - R",
+        "listeners": 9774,
+        "playcount": 29441
+      },
+      {
+        "name": "Grounded",
+        "listeners": 3805,
+        "playcount": 6952
+      },
+      {
+        "name": "Binaural Alpha Sinus 432 Hz - L 442 Hz - R",
+        "listeners": 251,
+        "playcount": 464
+      },
+      {
+        "name": "Momento",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Moments of Relaxing Peace",
+        "listeners": 1,
+        "playcount": 7
+      },
+      {
+        "name": "Smokey Star",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Serenity in Ambient Baby Moments",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Guided Serenity Slumbers",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Euphoric Moments of Peaceful Rest",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Music for Pets’ Stress-Free Day",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Dips+And+Daps"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

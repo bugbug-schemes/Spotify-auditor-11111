@@ -1,0 +1,121 @@
+{
+  "artist_name": "Aquagirl",
+  "artist_id": "aquagirl",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:04:10.269501+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Aquagirl', got 'Attagirl'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aquagirl",
+    "mbid": "",
+    "listeners": 138390,
+    "playcount": 1350457,
+    "listener_play_ratio": 9.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aquagirl\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dreamstatician",
+      "Smoothe Sounds",
+      "Astrofuss",
+      "Hypnotronica",
+      "Lavia 6"
+    ],
+    "top_tracks": [
+      {
+        "name": "Night Rain In The Garden",
+        "listeners": 44303,
+        "playcount": 303281
+      },
+      {
+        "name": "Suburban Forest Rain 2",
+        "listeners": 38898,
+        "playcount": 177347
+      },
+      {
+        "name": "Pink Noise Surface",
+        "listeners": 38467,
+        "playcount": 345047
+      },
+      {
+        "name": "Suburban Forest Rain 1",
+        "listeners": 32453,
+        "playcount": 213589
+      },
+      {
+        "name": "Pink Sub-Surface",
+        "listeners": 19542,
+        "playcount": 134396
+      },
+      {
+        "name": "Green Noise Spring Creek",
+        "listeners": 10881,
+        "playcount": 50988
+      },
+      {
+        "name": "Green Noise Water Relax",
+        "listeners": 9960,
+        "playcount": 47312
+      },
+      {
+        "name": "Planetary Green Noise",
+        "listeners": 8750,
+        "playcount": 46189
+      },
+      {
+        "name": "Suburban Forest Rain Long",
+        "listeners": 3439,
+        "playcount": 15321
+      },
+      {
+        "name": "Green Noise By The Creek",
+        "listeners": 1121,
+        "playcount": 3139
+      }
+    ],
+    "url": "https://www.last.fm/music/Aquagirl"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

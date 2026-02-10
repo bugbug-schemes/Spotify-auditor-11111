@@ -1,0 +1,175 @@
+{
+  "artist_name": "Herbird",
+  "artist_id": "herbird",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:06:22.057254+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 189848287,
+    "name": "Herbird",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/189848287",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3974a45d3cacb7e3e8173d34966c3c14/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "1 Quiet",
+        "label": "",
+        "release_date": "2022-11-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Canopy Whispers",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Birdsong Over Moss",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispering Nature Harmony",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Warmer Seasons",
+        "label": "",
+        "release_date": "2023-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Herbird",
+    "mbid": "",
+    "listeners": 48125,
+    "playcount": 235089,
+    "listener_play_ratio": 4.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Herbird\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Out & About",
+      "Four Elements Sounds",
+      "Sweet Nature",
+      "Thermal Element",
+      "State Of Rest"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nectar Rain",
+        "listeners": 22175,
+        "playcount": 114435
+      },
+      {
+        "name": "The Singing Birds",
+        "listeners": 16645,
+        "playcount": 47499
+      },
+      {
+        "name": "Relaxation & Sleep With The Brown Noise",
+        "listeners": 9659,
+        "playcount": 51033
+      },
+      {
+        "name": "Whispering Nature Harmony",
+        "listeners": 2132,
+        "playcount": 5068
+      },
+      {
+        "name": "Farifax Rain",
+        "listeners": 1298,
+        "playcount": 14199
+      },
+      {
+        "name": "Spring Approaches",
+        "listeners": 810,
+        "playcount": 2385
+      },
+      {
+        "name": "Dry Desert",
+        "listeners": 188,
+        "playcount": 247
+      },
+      {
+        "name": "Turbo Joy Time Music",
+        "listeners": 138,
+        "playcount": 202
+      },
+      {
+        "name": "Summer is Here",
+        "listeners": 1,
+        "playcount": 9
+      },
+      {
+        "name": "Soft Time Tune",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Herbird"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

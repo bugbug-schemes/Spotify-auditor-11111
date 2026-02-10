@@ -1,0 +1,226 @@
+{
+  "artist_name": "Kohsea",
+  "artist_id": "kohsea",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:50:45.891442+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 126920442,
+    "name": "Kohsea",
+    "nb_fan": 5,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/126920442",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/32493df7e5827fe0aad7350d97c2651e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ape Drums",
+      "Ginton",
+      "Palane"
+    ],
+    "contributor_roles": {
+      "Ginton": [
+        "Main"
+      ],
+      "Ape Drums": [
+        "Main"
+      ],
+      "Palane": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Anything (Ya Ya)"
+    ],
+    "track_durations": [
+      170
+    ],
+    "track_ranks": [
+      345580
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Love or Lust",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Belong",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flights",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anything (Ya Ya)",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sugar",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Freezer",
+        "label": "",
+        "release_date": "2024-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Want You",
+        "label": "",
+        "release_date": "2023-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Show Me",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Need You",
+        "label": "",
+        "release_date": "2021-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16371985,
+    "name": "Kohsea",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "File, MP3, Single, 320",
+      "LP, Album, Ora"
+    ],
+    "labels": [
+      "Spinnin' Deep",
+      "Woody Trees"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kohsea",
+    "mbid": "",
+    "listeners": 35,
+    "playcount": 78,
+    "listener_play_ratio": 2.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kohsea\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kold AF",
+      "Azanti",
+      "Taves",
+      "YKB",
+      "Leather Park"
+    ],
+    "top_tracks": [
+      {
+        "name": "Need You",
+        "listeners": 12,
+        "playcount": 20
+      },
+      {
+        "name": "Deep Freezer",
+        "listeners": 9,
+        "playcount": 11
+      },
+      {
+        "name": "Flights",
+        "listeners": 7,
+        "playcount": 32
+      },
+      {
+        "name": "Want You",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "Love or Lust",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Show Me",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Sugar",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Kohsea"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

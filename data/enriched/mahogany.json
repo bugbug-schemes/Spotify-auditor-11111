@@ -1,0 +1,458 @@
+{
+  "artist_name": "mahogany",
+  "artist_id": "mahogany",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:23:18.235605+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7ae235e2-429b-4162-9783-c038d820331a",
+    "type": "Group",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1995",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000469066809"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000197144",
+      "bandcamp": "https://mahoganyinthecity.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/79322",
+      "free streaming": "https://open.spotify.com/artist/4Ik5hkDngW1R1Y4aWdNumq",
+      "myspace": "https://myspace.com/mahoganyinthecity",
+      "official homepage": "http://www.mahogany.nu/",
+      "other databases": "https://rateyourmusic.com/artist/mahogany",
+      "purchase for download": "https://music.apple.com/us/artist/6949233",
+      "social network": "https://www.instagram.com/mahoganyintl/",
+      "wikidata": "https://www.wikidata.org/wiki/Q6734719",
+      "youtube": "https://www.youtube.com/user/cinesynchromie"
+    },
+    "labels": [
+      "Renovo",
+      "Burnt Hair",
+      "Les disques de simultanés",
+      "Elefant Records",
+      "Automatic Entertainment",
+      "Clairecords",
+      "Blackbean and Placenta Tape Club",
+      "Darla Records",
+      "Tinseltones"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7068517,
+    "name": "Mahogany Lox",
+    "nb_fan": 9730,
+    "nb_album": 22,
+    "link": "https://www.deezer.com/artist/7068517",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9e09083b0fd150c1382fd932d858fce4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "FxckYeah",
+      "Sky Blu",
+      "Sybling Ryvalry"
+    ],
+    "contributor_roles": {
+      "Sybling Ryvalry": [
+        "Main"
+      ],
+      "FxckYeah": [
+        "Main"
+      ],
+      "Sky Blu": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Take Your Man",
+      "QUEEN",
+      "Dance on Em",
+      "MERRY LiTMAS",
+      "GASLiGHT",
+      "Creepin'",
+      "Wylin'",
+      "Fatty Cake",
+      "loving you",
+      "Boom",
+      "Paper Hearts",
+      "Kiss Me Slow"
+    ],
+    "track_durations": [
+      117,
+      142,
+      131,
+      90,
+      143,
+      127,
+      141,
+      174,
+      206,
+      236,
+      194,
+      164
+    ],
+    "track_ranks": [
+      397697,
+      105110,
+      31877,
+      31167,
+      41254,
+      32888,
+      1420,
+      186659,
+      81929,
+      52295,
+      30204,
+      31186
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "BRICKWALL",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meet me at the Roxy",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "GASLiGHT",
+        "label": "",
+        "release_date": "2023-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "GASLiGHT (Radio Edit)",
+        "label": "",
+        "release_date": "2023-02-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MERRY LiTMAS (SPED UP)",
+        "label": "",
+        "release_date": "2022-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "QUEEN",
+        "label": "",
+        "release_date": "2022-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Creepin'",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "loving you",
+        "label": "",
+        "release_date": "2021-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MERRY LiTMAS",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fatty Cake",
+        "label": "",
+        "release_date": "2020-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wylin'",
+        "label": "",
+        "release_date": "2020-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dance on Em",
+        "label": "",
+        "release_date": "2020-05-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sike",
+        "label": "",
+        "release_date": "2020-03-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Your Man",
+        "label": "",
+        "release_date": "2019-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Your Man",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kiss Me Slow",
+        "label": "",
+        "release_date": "2019-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Deal",
+        "label": "",
+        "release_date": "2018-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It Is What It Is",
+        "label": "",
+        "release_date": "2017-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boom",
+        "label": "",
+        "release_date": "2017-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jealous - Single",
+        "label": "",
+        "release_date": "2014-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Steal My Girl - Single",
+        "label": "",
+        "release_date": "2014-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paper Hearts",
+        "label": "",
+        "release_date": "2014-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Qveen Herby",
+      "Baby Tate",
+      "Saweetie",
+      "Kayla Nicole",
+      "Tay Money",
+      "Princess Nokia",
+      "Iggy Azalea",
+      "Leikeli47",
+      "Rico Nasty",
+      "Megan Thee Stallion"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 26161,
+    "name": "Mahogany",
+    "profile": "Disco artist best known for funkdisco song [i]Ride On The Rhythm[/i].",
+    "realname": "Bernice Watkins",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 24,
+    "digital_only_releases": 22,
+    "total_releases": 46,
+    "formats": [
+      "",
+      "10xCD, Comp + CD, Mixed + Box",
+      "12\", Comp",
+      "12\", Ltd",
+      "12\", Unofficial",
+      "2x12\"",
+      "2xCD, Comp",
+      "2xCD, Comp, Promo",
+      "2xCD, Mixed",
+      "30xFile, WAV, Comp",
+      "4xCD, Comp",
+      "CD, Comp, Ltd, RM",
+      "CD, Comp, Unofficial",
+      "CD, Mixed",
+      "CD, Mixed + CD, Comp",
+      "CD, Mixed, Mixtape, Promo",
+      "CD, Mixtape, Unofficial",
+      "CDr, Comp",
+      "CDr, Ltd, Promo, Unofficial",
+      "CDr, Mixed",
+      "Cass, Comp, Promo",
+      "LP, Comp",
+      "LP, Comp, Mixed, Pic"
+    ],
+    "labels": [
+      "Arcade",
+      "CD Pool",
+      "DMC",
+      "Defected",
+      "Garage Records (3)",
+      "Good Vibes Productions (2)",
+      "Interdisc (5)",
+      "Not On Label",
+      "Octave Lab, West End Records",
+      "PTG Records, Vinyl Masterpiece",
+      "Priority Records (6)",
+      "RPM Discos C.A",
+      "Salsoul Records, West End Records",
+      "SmokeHouze Records",
+      "TSR Music GmbH",
+      "Unlimited Disco",
+      "West End Records",
+      "Yo! Bros Production",
+      "ZYX Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mahogany",
+    "mbid": "c964a771-f969-4680-84d8-6b4b47f395d1",
+    "listeners": 99817,
+    "playcount": 870332,
+    "listener_play_ratio": 8.72,
+    "bio_exists": true,
+    "bio_summary": "1. Dream pop band Mahogany was formed in December 1995 by Allysa Massais and Andrew Prinz, who shared a love for composers such as Debussy and bands such as Section 25. In February 1996, Larry Hofmann of Burnt Hair records saw the duo play one of their first shows in Lansing, Michigan and later released a split twelve-inch with fellow Lansing band Auburn Lull. After Prinz's sister Marissa joined on keyboards, Mahogany released the Dual-Group EP and received airplay on the John Peel show in the U",
+    "tags": [
+      "dream pop",
+      "shoegaze",
+      "indie",
+      "female vocalists",
+      "indie pop"
+    ],
+    "similar_artists": [
+      "Auburn Lull",
+      "Rumskib",
+      "Secret Shine",
+      "A Sunny Day in Glasgow",
+      "Pia Fraus"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nature Night-time",
+        "listeners": 21416,
+        "playcount": 66518
+      },
+      {
+        "name": "The View from the People Wall",
+        "listeners": 13673,
+        "playcount": 41103
+      },
+      {
+        "name": "One Plus One Equals Three or More",
+        "listeners": 13493,
+        "playcount": 43955
+      },
+      {
+        "name": "My Bed Is My Castle",
+        "listeners": 11574,
+        "playcount": 36871
+      },
+      {
+        "name": "Neo-Plastic Boogie-Woogie",
+        "listeners": 10995,
+        "playcount": 36261
+      },
+      {
+        "name": "Mantissa",
+        "listeners": 10137,
+        "playcount": 28558
+      },
+      {
+        "name": "Domino Ladder Beta",
+        "listeners": 10031,
+        "playcount": 31363
+      },
+      {
+        "name": "Slow Day In The Woods",
+        "listeners": 9165,
+        "playcount": 27770
+      },
+      {
+        "name": "Chance",
+        "listeners": 9148,
+        "playcount": 31253
+      },
+      {
+        "name": "Windmill International A",
+        "listeners": 9103,
+        "playcount": 24334
+      }
+    ],
+    "url": "https://www.last.fm/music/Mahogany"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

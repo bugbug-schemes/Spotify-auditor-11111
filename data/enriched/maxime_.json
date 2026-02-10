@@ -1,0 +1,457 @@
+{
+  "artist_name": "maxime.",
+  "artist_id": "maxime_",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:23:53.196598+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f6a3ad22-76ce-4131-ad97-da5a6bb3d1e8",
+    "type": "Person",
+    "country": "",
+    "area": "Ottawa",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "maxd",
+      "maxime"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://maximemakesmusic.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/11793275",
+      "free streaming": "https://www.deezer.com/artist/67118282",
+      "official homepage": "https://maximemakesmusic.com/",
+      "streaming": "https://tidal.com/artist/15963663"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 67118282,
+    "name": "maxime.",
+    "nb_fan": 185,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/67118282",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d573614f1bc92c5a4aaa13e5112f0457/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Internet Girl"
+    ],
+    "contributor_roles": {
+      "Internet Girl": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "‎rubber ‎checks",
+      "‎read ‎receipts",
+      "ergo sum",
+      "living far away",
+      "‎old ‎fast",
+      "‎bonnie ‎n ‎clyde",
+      "the apathy song",
+      "empty",
+      "luv",
+      "date michael",
+      "the life and death of a dog",
+      "something ! anything !",
+      "apartment402",
+      "hotliner",
+      "‎telephone ‎wires",
+      "get it together !",
+      "‎temperature",
+      "‎vacation",
+      "wys",
+      "hiccups (as an adult)",
+      "talk 2 me",
+      "‎cherry ‎stems",
+      "spooktober",
+      "‎mint ‎condition (‎good ‎as ‎new)",
+      "‎mile ‎end"
+    ],
+    "track_durations": [
+      118,
+      185,
+      171,
+      178,
+      124,
+      162,
+      146,
+      134,
+      216,
+      165,
+      215,
+      175,
+      257,
+      144,
+      170,
+      163,
+      170,
+      230,
+      179,
+      130,
+      243,
+      142,
+      159,
+      137,
+      192
+    ],
+    "track_ranks": [
+      26770,
+      53259,
+      100000,
+      54762,
+      31594,
+      27003,
+      174628,
+      65065,
+      22683,
+      108563,
+      39130,
+      30906,
+      23578,
+      30521,
+      53249,
+      21848,
+      47985,
+      32668,
+      34501,
+      115967,
+      38716,
+      30229,
+      33342,
+      39236,
+      31410
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 3,
+      "ep": 7,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "the life and death of a dog",
+        "label": "",
+        "release_date": "2024-07-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "‎cerulean",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "‎whatevernowiscalled",
+        "label": "",
+        "release_date": "2019-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "luv",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "harry houdini",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "mile ‎end (kiss ur friends)",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "‎rubber ‎checks",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "‎telephone ‎wires",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "pity party",
+        "label": "",
+        "release_date": "2019-09-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "crying in the club",
+        "label": "",
+        "release_date": "2019-04-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "ergo sum",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "hotliner",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "rémy",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "$101.17",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "something ! anything !",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "damn !!!",
+        "label": "",
+        "release_date": "2024-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "OUT OF MY HEAD",
+        "label": "",
+        "release_date": "2024-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "living far away",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the apathy song",
+        "label": "",
+        "release_date": "2019-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Peach Pit",
+      "The Backseat Lovers",
+      "HOAX",
+      "Jawny",
+      "Christian Leave",
+      "Vansire",
+      "Summer Salt",
+      "Dayglow",
+      "dad sports",
+      "Still Woozy"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 462803,
+    "name": "Maxime Schmitt",
+    "profile": "Capitol Records' label manager at Pathé Marconi EMI. Also producer of the French band [a126092]. He was given the job of promoting [a4654] to the French public. He soon became a close friend of the group as well as an advisor and collaborator.\r\n",
+    "realname": "Maxime Paul Leo Schmitt",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Le Poing"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 24,
+    "digital_only_releases": 76,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\", Comp, Promo",
+      "12\", Maxi",
+      "12\", Maxi, Promo",
+      "2xCD, Comp",
+      "2xLP, Comp, P/Mixed, Gat",
+      "7\"",
+      "7\", Single",
+      "Box, Comp + 4xCD, Comp",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Smplr",
+      "CD, Single, Promo, Car",
+      "Cass, Comp",
+      "LP, Album",
+      "LP, Comp, RE",
+      "LP, MiniAlbum"
+    ],
+    "labels": [
+      "Capitol Records",
+      "Carabine, Carabine, Carabine",
+      "Divine, Divine",
+      "Energy Rekords",
+      "Eurodisc, Eurodisc, Cochise, Cochise",
+      "Gaumont Musique, Gaumont",
+      "Gaumont Musique, Gaumont Musique",
+      "Gaumont Musique, WEA",
+      "HDN Music",
+      "Les Inrockuptibles",
+      "Lua Music",
+      "Madacy Music Group Inc., Madacy Music Group Inc., Madacy Music Group Inc.",
+      "Monster Mix",
+      "Multicolor Recordings",
+      "Open Records",
+      "Plus Point Records, HDN Music",
+      "Rock & Folk",
+      "Sono Trex",
+      "The Music Rack",
+      "Tring, Tring, Tring, Tring, Tring",
+      "Uncut (2)",
+      "Virgin",
+      "Wagram Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "maxime.",
+    "mbid": "f6a3ad22-76ce-4131-ad97-da5a6bb3d1e8",
+    "listeners": 127448,
+    "playcount": 1662343,
+    "listener_play_ratio": 13.04,
+    "bio_exists": true,
+    "bio_summary": "Ottawa native maxime. released his debut album whatevernowiscalled in 2019, firmly placing himself as a promising up-and-coming talent in the alt-pop scene. <a href=\"https://www.last.fm/music/maxime.\">Read more on Last.fm</a>",
+    "tags": [
+      "indie pop",
+      "dream pop",
+      "future bass",
+      "Canadian",
+      "electropop"
+    ],
+    "similar_artists": [
+      "Swansea Skag",
+      "Luke Wild",
+      "Zachary Knowles",
+      "Sipper",
+      "Huron John"
+    ],
+    "top_tracks": [
+      {
+        "name": "the apathy song",
+        "listeners": 37219,
+        "playcount": 292594
+      },
+      {
+        "name": "empty",
+        "listeners": 24033,
+        "playcount": 121730
+      },
+      {
+        "name": "‎telephone ‎wires",
+        "listeners": 16241,
+        "playcount": 107444
+      },
+      {
+        "name": "‎rubber ‎checks",
+        "listeners": 15066,
+        "playcount": 63799
+      },
+      {
+        "name": "‎read ‎receipts",
+        "listeners": 10653,
+        "playcount": 74143
+      },
+      {
+        "name": "the life and death of a dog",
+        "listeners": 9576,
+        "playcount": 52519
+      },
+      {
+        "name": "‎u and ‎everyone ‎u ‎know !",
+        "listeners": 8781,
+        "playcount": 50267
+      },
+      {
+        "name": "‎temperature",
+        "listeners": 7255,
+        "playcount": 37586
+      },
+      {
+        "name": "wys",
+        "listeners": 7028,
+        "playcount": 43460
+      },
+      {
+        "name": "spooktober",
+        "listeners": 6779,
+        "playcount": 37117
+      }
+    ],
+    "url": "https://www.last.fm/music/maxime."
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

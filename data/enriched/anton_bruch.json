@@ -1,0 +1,156 @@
+{
+  "artist_name": "Anton Bruch",
+  "artist_id": "anton_bruch",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:02:13.921643+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f55f983f-3144-4fcc-91f0-8c47a326536a",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Anton Bruch', got 'Anton TRUC'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7710810,
+    "name": "Anton Bruch",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Ab Syndrom"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 2,
+    "total_releases": 3,
+    "formats": [
+      "File, AAC, MP3, WAV, Maxi",
+      "File, MP3, WAV, Single",
+      "LP, Album"
+    ],
+    "labels": [
+      "Herr Direktor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Anton Bruch",
+    "mbid": "f55f983f-3144-4fcc-91f0-8c47a326536a",
+    "listeners": 11333,
+    "playcount": 159749,
+    "listener_play_ratio": 14.1,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Anton+Bruch\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Maverick Selby",
+      "Kim Savege",
+      "Eijah Nilson",
+      "Alice Greye",
+      "Iris Avory"
+    ],
+    "top_tracks": [
+      {
+        "name": "We Are Three Musicians",
+        "listeners": 9661,
+        "playcount": 115188
+      },
+      {
+        "name": "Teddy Bear's Dream",
+        "listeners": 2176,
+        "playcount": 21026
+      },
+      {
+        "name": "Have You Seen The Sandman?",
+        "listeners": 1262,
+        "playcount": 10412
+      },
+      {
+        "name": "Sweet Little Child",
+        "listeners": 1132,
+        "playcount": 7838
+      },
+      {
+        "name": "The Lily Pond",
+        "listeners": 456,
+        "playcount": 4996
+      },
+      {
+        "name": "Goodnight Little Friend",
+        "listeners": 51,
+        "playcount": 159
+      },
+      {
+        "name": "Mommy's Here",
+        "listeners": 18,
+        "playcount": 76
+      },
+      {
+        "name": "My Little Teddy",
+        "listeners": 15,
+        "playcount": 47
+      },
+      {
+        "name": "When You Fall Asleep",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "violin concerto - 1 - 1mvt- Gil Shaham-Giuseppi Sinop",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Anton+Bruch"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

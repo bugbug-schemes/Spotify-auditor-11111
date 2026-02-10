@@ -1,0 +1,379 @@
+{
+  "artist_name": "Sean Murphy",
+  "artist_id": "sean_murphy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:57:06.650488+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "45bffa2c-ab06-4def-b077-638ca548538b",
+    "type": "Person",
+    "country": "",
+    "area": "Banbridge",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000315972",
+      "discogs": "https://www.discogs.com/artist/1836895",
+      "free streaming": "https://www.deezer.com/artist/1095442",
+      "myspace": "https://myspace.com/seanmurphymusic19",
+      "purchase for download": "https://www.junodownload.com/artists/Sean+Murphy/",
+      "social network": "https://www.facebook.com/pages/Sean-Murphy-Music/111951518888320"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1095442,
+    "name": "Sean Murphy",
+    "nb_fan": 148,
+    "nb_album": 24,
+    "link": "https://www.deezer.com/artist/1095442",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c73f2bdea342241964c63caefbf49c18/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Best Lovers (Rain)",
+      "Best Lovers",
+      "Passing Time",
+      "My Melancholy Heart",
+      "I Stood Still",
+      "Too Easy To Love"
+    ],
+    "track_durations": [
+      225,
+      225,
+      185,
+      130,
+      222,
+      227
+    ],
+    "track_ranks": [
+      15967,
+      41008,
+      52006,
+      2399,
+      18832,
+      31697
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 1,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "All for One",
+        "label": "",
+        "release_date": "2024-09-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Broken Compass",
+        "label": "",
+        "release_date": "2024-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "11 Malas: Evening Didjeridu Meditation",
+        "label": "",
+        "release_date": "2024-11-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Rubber Band",
+        "label": "",
+        "release_date": "2022-11-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rediscovering Bauzin: Music for Saxophone and Piano",
+        "label": "",
+        "release_date": "2019-12-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Breath of Invocation",
+        "label": "",
+        "release_date": "2006-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Imbolc Ice",
+        "label": "",
+        "release_date": "2024-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ambient Light",
+        "label": "",
+        "release_date": "2026-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Too Easy To Love",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Song for Juliet",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baggage",
+        "label": "",
+        "release_date": "2025-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy Steps",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Best Lovers (Rain)",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Best Lovers",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Heart Stood Still",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Stood Still",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jolly o Saint Nicholas",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jazzy Italian Restaurant",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Passing Time",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Melancholy Heart",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Farewell Magie May",
+        "label": "",
+        "release_date": "2022-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wild Things",
+        "label": "",
+        "release_date": "2018-12-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pi Xiu",
+        "label": "",
+        "release_date": "2016-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sudden Warfare",
+        "label": "",
+        "release_date": "2012-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 130966,
+    "name": "Sean Murphy",
+    "profile": "[a=Soft Machine]'s manager\r\n\r\n• For the photographer, active since mid-1990's, please use [b][a=Sean Murphy (12)][/b].\r\n• For the producer/production director for VH1/MTV productions, please use [b][a=Sean Murphy (14)][/b].",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 5,
+    "digital_only_releases": 34,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "2xCD, Album, RM",
+      "2xCD, Comp",
+      "CD, Album",
+      "CD, EP"
+    ],
+    "labels": [
+      "Derry Records, Derry Records",
+      "Not On Label",
+      "Rolling Head Records",
+      "Voiceprint"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sean Murphy",
+    "mbid": "45bffa2c-ab06-4def-b077-638ca548538b",
+    "listeners": 50975,
+    "playcount": 135218,
+    "listener_play_ratio": 2.65,
+    "bio_exists": true,
+    "bio_summary": "SEAN MURPHY BIO\n\nSean Murphy is a unique artist.  Listening to his music, you will soon realize that he is truly one of a kind. A native of Lanikai, on the island of Oahu in Hawaii, Sean grew up loving the ocean, beaches and laidback serenity that shaped his hometown. But it was his early love for music that honed his career. The vibrant music community in Hawaii allowed Sean to take advantage of opportunities to practice and perform with local Hawaiian artists.  <a href=\"https://www.last.fm/mus",
+    "tags": [
+      "life changing",
+      "progressive trance",
+      "over now"
+    ],
+    "similar_artists": [
+      "Derek Hines Trio",
+      "Nouvelle Marée",
+      "Downtown Café",
+      "London Dunes",
+      "Trio Rosa"
+    ],
+    "top_tracks": [
+      {
+        "name": "Passing Time",
+        "listeners": 21051,
+        "playcount": 48749
+      },
+      {
+        "name": "Best Lovers",
+        "listeners": 15506,
+        "playcount": 32013
+      },
+      {
+        "name": "Too Easy To Love",
+        "listeners": 11822,
+        "playcount": 24048
+      },
+      {
+        "name": "Easy Steps",
+        "listeners": 7741,
+        "playcount": 14748
+      },
+      {
+        "name": "I Stood Still",
+        "listeners": 2599,
+        "playcount": 5317
+      },
+      {
+        "name": "Jolly o Saint Nicholas",
+        "listeners": 1000,
+        "playcount": 1568
+      },
+      {
+        "name": "Wild Things",
+        "listeners": 452,
+        "playcount": 1771
+      },
+      {
+        "name": "Wild Things (ASOT 893)",
+        "listeners": 320,
+        "playcount": 715
+      },
+      {
+        "name": "Pi Xiu",
+        "listeners": 223,
+        "playcount": 605
+      },
+      {
+        "name": "My Melancholy Heart",
+        "listeners": 220,
+        "playcount": 463
+      }
+    ],
+    "url": "https://www.last.fm/music/Sean+Murphy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,122 @@
+{
+  "artist_name": "Noah Cloud",
+  "artist_id": "noah_cloud",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:03:38.629405+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10895776,
+    "name": "Noah Clouds",
+    "nb_fan": 55,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/10895776",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1d577987ed17a1e0f560c10e380e64eb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Love Is Not Enough"
+    ],
+    "track_durations": [
+      209
+    ],
+    "track_ranks": [
+      7814
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1
+    },
+    "albums": [
+      {
+        "title": "Love Is Not Enough | EP",
+        "label": "",
+        "release_date": "2016-08-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Noah Cloud",
+    "mbid": "",
+    "listeners": 2079,
+    "playcount": 17919,
+    "listener_play_ratio": 8.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Noah+Cloud\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dario Shapovalov",
+      "Little Sweetheart",
+      "Isla and the Stars",
+      "The Slumbermill",
+      "Pepita Li"
+    ],
+    "top_tracks": [
+      {
+        "name": "Starry Moon",
+        "listeners": 2001,
+        "playcount": 16875
+      },
+      {
+        "name": "Unspoken",
+        "listeners": 296,
+        "playcount": 1042
+      },
+      {
+        "name": "Sleepy Garden",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "All Aboard the Sleep Train",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Noah+Cloud"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,628 @@
+{
+  "artist_name": "Priori",
+  "artist_id": "priori",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:32:01.878074+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "cc9f278d-d083-4370-b830-f2ee1f118489",
+    "type": "Person",
+    "country": "",
+    "area": "Montréal",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://prioricamp.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/5975825",
+      "free streaming": "https://www.deezer.com/artist/1687991",
+      "purchase for download": "https://www.beatport.com/artist/priori/655246",
+      "soundcloud": "https://soundcloud.com/priori-ties",
+      "streaming": "https://music.apple.com/gb/artist/368832395"
+    },
+    "labels": [
+      "TRULE",
+      "DustWORLD",
+      "ASL Singles Club",
+      "Kalahari Oyster Cult",
+      "[no label]",
+      "Courage Holdings Inc",
+      "Bambe",
+      "Midgar",
+      "Animalia",
+      "Echovolt Records",
+      "Little Flower",
+      "NAFF",
+      "Garmo"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1687991,
+    "name": "Priori",
+    "nb_fan": 418,
+    "nb_album": 51,
+    "link": "https://www.deezer.com/artist/1687991",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b3e72d7b391305458a2406d93c6b1c9e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anf",
+      "Avalon Emerson",
+      "B. McQueen",
+      "Bambounou",
+      "Cousin",
+      "Dust-e-1",
+      "Frankie Teardrop",
+      "Jump Source",
+      "Martyn Bootyspoon",
+      "OK EG",
+      "Patrick Holland",
+      "Paul St. Hilaire",
+      "Piezo",
+      "Sabola",
+      "james K"
+    ],
+    "contributor_roles": {
+      "james K": [
+        "Main"
+      ],
+      "B. McQueen": [
+        "Main"
+      ],
+      "Jump Source": [
+        "Main"
+      ],
+      "Patrick Holland": [
+        "Main"
+      ],
+      "Martyn Bootyspoon": [
+        "Main"
+      ],
+      "Frankie Teardrop": [
+        "Featured"
+      ],
+      "Bambounou": [
+        "Main"
+      ],
+      "OK EG": [
+        "Main"
+      ],
+      "Avalon Emerson": [
+        "Main"
+      ],
+      "Sabola": [
+        "Featured"
+      ],
+      "Paul St. Hilaire": [
+        "Main"
+      ],
+      "Anf": [
+        "Main"
+      ],
+      "Dust-e-1": [
+        "Main"
+      ],
+      "Piezo": [
+        "Main"
+      ],
+      "Cousin": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Wake",
+      "Ruins",
+      "Allergic",
+      "On",
+      "Winged",
+      "SCN 1",
+      "Get It Done",
+      "SCN 4",
+      "Bubble Mechanics",
+      "Serpentine 4",
+      "You're My World",
+      "Polyester Mood",
+      "Scrap",
+      "To See Our Secret Die",
+      "Send Them On",
+      "Mauna Kea",
+      "Chi-Motion",
+      "Onda",
+      "Infinity",
+      "Fly In Amber",
+      "Slip Logic",
+      "2 (Icy Dub)"
+    ],
+    "track_durations": [
+      276,
+      312,
+      329,
+      367,
+      233,
+      449,
+      354,
+      364,
+      284,
+      330,
+      380,
+      318,
+      346,
+      303,
+      306,
+      365,
+      240,
+      355,
+      366,
+      400,
+      350,
+      400
+    ],
+    "track_ranks": [
+      106699,
+      105698,
+      191385,
+      138886,
+      113106,
+      149698,
+      32699,
+      64371,
+      91586,
+      45604,
+      69486,
+      69029,
+      32084,
+      58483,
+      106156,
+      116688,
+      78527,
+      61818,
+      15873,
+      84252,
+      90215,
+      32259
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 26,
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "This but More",
+        "label": "",
+        "release_date": "2024-05-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nigh",
+        "label": "",
+        "release_date": "2022-07-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Your Own Power",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "On A Nimbus",
+        "label": "",
+        "release_date": "2020-02-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fly In Amber",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "This but More (Loidis Reconfiguration)",
+        "label": "",
+        "release_date": "2025-05-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "JS06",
+        "label": "",
+        "release_date": "2025-04-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Serpentine",
+        "label": "",
+        "release_date": "2025-04-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "C.R.U.S.H.",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lexica",
+        "label": "",
+        "release_date": "2024-10-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "JS04",
+        "label": "",
+        "release_date": "2024-02-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Numina",
+        "label": "",
+        "release_date": "2023-12-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "JS03",
+        "label": "",
+        "release_date": "2023-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "FLAW",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Costly Blooms On The Eve of Collapse",
+        "label": "",
+        "release_date": "2023-09-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Pareidolia",
+        "label": "",
+        "release_date": "2023-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Pareidolia (Remixed)",
+        "label": "",
+        "release_date": "2025-04-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chestnut People",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Your Own Power (Remixes)",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Little Flower",
+        "label": "",
+        "release_date": "2021-07-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "In Light, It Undoes Nothing…",
+        "label": "",
+        "release_date": "2021-04-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "RED",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "On A Nimbus Remixes",
+        "label": "",
+        "release_date": "2020-07-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "SCN EP",
+        "label": "",
+        "release_date": "2020-06-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "JS02",
+        "label": "",
+        "release_date": "2020-02-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "TV Science",
+        "label": "",
+        "release_date": "2019-09-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mauna Kea",
+        "label": "",
+        "release_date": "2019-03-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Anform",
+        "label": "",
+        "release_date": "2018-09-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Noogenesis EP",
+        "label": "",
+        "release_date": "2018-07-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "De um Extremo ao Outro",
+        "label": "",
+        "release_date": "2016-04-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "Andrea",
+      "Beatrice M.",
+      "Martinou",
+      "Alpha Maid",
+      "Hekla",
+      "Hydroplane",
+      "Mourning [A] BLKstar",
+      "Frank Bretschneider",
+      "KMRU",
+      "Roméo Poirier"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5975825,
+    "name": "Priori (2)",
+    "profile": "DJ and producer based in Montreal, Canada. Co-founder of [l=NAFF].",
+    "realname": "Francis Latreille",
+    "social_urls": [
+      "https://soundcloud.com/priori-ties",
+      "https://www.facebook.com/pri0ri",
+      "https://prioricamp.bandcamp.com",
+      "https://www.instagram.com/priori_tize/",
+      "https://ra.co/dj/priori"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 59,
+    "digital_only_releases": 41,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10\"",
+      "10\", Ltd, Lat",
+      "12\"",
+      "12\", Comp",
+      "12\", Comp, PET",
+      "12\", EP",
+      "12\", EP, Cle",
+      "12\", EP, Ltd",
+      "12\", MiniAlbum",
+      "12\", Single",
+      "12\", W/Lbl",
+      "15xFile, WAV, Comp",
+      "2x12\", Ltd",
+      "2xCD, Ltd, Mixed",
+      "2xFile, FLAC",
+      "2xLP, Comp",
+      "4xFile, FLAC",
+      "4xFile, MP3, WAV, EP",
+      "4xFile, WAV",
+      "4xLP, Comp, Ltd, Box + Box",
+      "6xFile, WAV, EP",
+      "File, FLAC, Single, 24-",
+      "File, MP3, Mixed, 320",
+      "File, WAV, Mixed",
+      "LP",
+      "LP, Album"
+    ],
+    "labels": [
+      "ASL Singles Club",
+      "Agrellomatica Records",
+      "Animalia (3), NAFF",
+      "Bambe",
+      "Bizarro Records (2)",
+      "Cosmic Tones Records",
+      "DIPUZON",
+      "Dead Oceans",
+      "Dekmantel",
+      "Delicate Records (2)",
+      "DustWORLD",
+      "Echovolt Records",
+      "FATi Records",
+      "Fast At Work",
+      "Garmo",
+      "Kalahari Oyster Cult",
+      "Kompakt",
+      "Kynant Records",
+      "La Rama Dubs Lmtd",
+      "Laen Disc",
+      "Late Night Burners",
+      "Midgar",
+      "Musar Recordings",
+      "NAFF",
+      "NAFF, Moonshoe Records",
+      "Nachtdigital",
+      "Needs - Not For Profit",
+      "Noire & Blanche, Délicieuse Records",
+      "Not On Label",
+      "Not On Label (Objekt Self-released)",
+      "Not On Label (Priori (2) Self-released)",
+      "One Eye Witness",
+      "Phonica Friends & Family Mix Series",
+      "Planet Euphorique",
+      "Plush Records Inc.",
+      "Radiant Love",
+      "Rhythm Büro Records",
+      "Salt Mines",
+      "Specials",
+      "Speed Dial",
+      "Spray (4)",
+      "Temple (8)",
+      "Trule",
+      "UTE.REC",
+      "air miles",
+      "p.istol"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Priori",
+    "mbid": "1c5b0dc6-1b69-446a-b3ed-f13feb66e5e7",
+    "listeners": 33853,
+    "playcount": 296039,
+    "listener_play_ratio": 8.74,
+    "bio_exists": true,
+    "bio_summary": "There are multiple artists called Priori.\n\n1. Priori is Francis Latreille, a DJ and producer based in Montreal, Canada.\n\n2. Priori is a producer from the southern United States. <a href=\"https://www.last.fm/music/Priori\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "techno",
+      "electronic",
+      "idm",
+      "trance"
+    ],
+    "similar_artists": [
+      "Purelink",
+      "Sleep D",
+      "Roza Terenzi",
+      "Ex-Terrestrial",
+      "Forest Drive West"
+    ],
+    "top_tracks": [
+      {
+        "name": "Think Not",
+        "listeners": 7581,
+        "playcount": 20042
+      },
+      {
+        "name": "Wake",
+        "listeners": 7426,
+        "playcount": 24354
+      },
+      {
+        "name": "Winged",
+        "listeners": 5742,
+        "playcount": 16124
+      },
+      {
+        "name": "Ruins",
+        "listeners": 3936,
+        "playcount": 8967
+      },
+      {
+        "name": "Learn to Fly",
+        "listeners": 3432,
+        "playcount": 10050
+      },
+      {
+        "name": "Silicate Tusks",
+        "listeners": 2311,
+        "playcount": 5969
+      },
+      {
+        "name": "Everything Forgotten Flows",
+        "listeners": 2140,
+        "playcount": 5682
+      },
+      {
+        "name": "Going Sour In The Heat",
+        "listeners": 2109,
+        "playcount": 4843
+      },
+      {
+        "name": "Oyl",
+        "listeners": 2011,
+        "playcount": 5796
+      },
+      {
+        "name": "Segue",
+        "listeners": 1949,
+        "playcount": 5217
+      }
+    ],
+    "url": "https://www.last.fm/music/Priori"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,175 @@
+{
+  "artist_name": "Jeb Lucky",
+  "artist_id": "jeb_lucky",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:26:16.974305+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 123562842,
+    "name": "Jeb Lucky",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/123562842",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5e4670a0a8084653047ca546c8a75317/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Willow Breeze",
+        "label": "",
+        "release_date": "2025-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hush",
+        "label": "",
+        "release_date": "2025-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Cradle Calls",
+        "label": "",
+        "release_date": "2025-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slumberland",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Little Snugglebug",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soothing Cradle Song",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Early in the morning",
+        "label": "",
+        "release_date": "2021-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When The Moon",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jeb Lucky",
+    "mbid": "",
+    "listeners": 8804,
+    "playcount": 131940,
+    "listener_play_ratio": 14.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jeb+Lucky\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Roly Lucian",
+      "Beverly Eldon",
+      "Chris Kit",
+      "Sheryl Moon",
+      "Aunt Blobbie"
+    ],
+    "top_tracks": [
+      {
+        "name": "Early in the morning",
+        "listeners": 5020,
+        "playcount": 53148
+      },
+      {
+        "name": "Slumberland",
+        "listeners": 2865,
+        "playcount": 28258
+      },
+      {
+        "name": "When The Moon",
+        "listeners": 2724,
+        "playcount": 24031
+      },
+      {
+        "name": "Listen to the Night",
+        "listeners": 2552,
+        "playcount": 26372
+      },
+      {
+        "name": "Soothing Cradle Song",
+        "listeners": 78,
+        "playcount": 109
+      },
+      {
+        "name": "My Little Snugglebug",
+        "listeners": 13,
+        "playcount": 22
+      }
+    ],
+    "url": "https://www.last.fm/music/Jeb+Lucky"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

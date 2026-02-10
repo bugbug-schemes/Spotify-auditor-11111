@@ -1,0 +1,192 @@
+{
+  "artist_name": "Healing High",
+  "artist_id": "healing_high",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:04:18.604760+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13641729,
+    "name": "Healing High",
+    "nb_fan": 2,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/13641729",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5b3c4fa0a218107c7d55987d3a0446d7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Alpha Sinus - Ethereal Drift - 130 Hz -138 Hz",
+        "label": "",
+        "release_date": "2023-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gamma Sinus 100 Hz - L 140 Hz - R",
+        "label": "",
+        "release_date": "2023-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Relax and focus - Alpha",
+        "label": "",
+        "release_date": "2022-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2919987,
+    "name": "Teknoaidi",
+    "profile": "Teknoaidi is a hardcore techno artist from Tampere, Finland. Stylistically his music is shamancore and psychedelic and experimental speedcore. The music takes influences from folk and world music as well as shamanic rhythms. The mission of the project is to restore our ancestors' knowledge of the positive and healing properties of high tempo rhythmic music using both new and old instruments.",
+    "realname": "Tuomas Kinnunen",
+    "social_urls": [
+      "http://teknoaidi.kovaydin.net",
+      "http://soundcloud.com/teknojta",
+      "http://teknoaidi.bandcamp.com",
+      "https://musicoin.org/artist/0x8e18b87110325b7cb27cf1d6d54bafe3fa15de5a",
+      "http://www.facebook.com/Teknojta",
+      "https://twitter.com/teknojta",
+      "https://www.instagram.com/teknojta"
+    ],
+    "members": [],
+    "groups": [
+      "Hiiden Virren Vinguttajat"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 14,
+    "total_releases": 14,
+    "formats": [
+      "",
+      "10xFile, WAV, Album",
+      "25xFile, MP3, Comp, 320",
+      "38xFile, MP3, Comp, 320"
+    ],
+    "labels": [
+      "K-NeT Label",
+      "Speedcore Worldwide Audio Netlabel",
+      "Speedcore Worldwide Audio Netlabel, gUtter cvnt"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Healing High",
+    "mbid": "",
+    "listeners": 5045,
+    "playcount": 22788,
+    "listener_play_ratio": 4.52,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Healing+High\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Binaural Creations",
+      "Binaural CPU",
+      "Inner Versum",
+      "Dramadoria",
+      "Panning Masters"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alpha Sinus - Ethereal Drift - 130 Hz -138 Hz",
+        "listeners": 2883,
+        "playcount": 8376
+      },
+      {
+        "name": "Meditation Binaural",
+        "listeners": 2043,
+        "playcount": 12375
+      },
+      {
+        "name": "Space Ship L-R",
+        "listeners": 588,
+        "playcount": 1214
+      },
+      {
+        "name": "425Hz Movemenet",
+        "listeners": 342,
+        "playcount": 674
+      },
+      {
+        "name": "Stress Relief Mod",
+        "listeners": 18,
+        "playcount": 73
+      },
+      {
+        "name": "Laundry Room Pan",
+        "listeners": 18,
+        "playcount": 71
+      },
+      {
+        "name": "Relax and Focus - Alpha 100 Hz - L 108 Hz - R",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Space Ship L - R",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Gentle Rub Sounds",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Soft Caress Sounds",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Healing+High"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

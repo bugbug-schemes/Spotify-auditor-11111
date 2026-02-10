@@ -1,0 +1,229 @@
+{
+  "artist_name": "Bejnou",
+  "artist_id": "bejnou",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:33:58.701689+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c429f69c-8743-48c7-93ad-c6dd7297dab1",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/131484462",
+      "streaming": "https://tidal.com/artist/24636474"
+    },
+    "labels": [
+      "Duck Pond Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 131484462,
+    "name": "Bejnou",
+    "nb_fan": 19,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/131484462",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/060124e5fd14f472d6da840504a9df9c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Aishiteru",
+      "Cloudburn",
+      "Escarpment",
+      "Sandbar"
+    ],
+    "track_durations": [
+      132,
+      150,
+      157,
+      137
+    ],
+    "track_ranks": [
+      105271,
+      178383,
+      17721,
+      18687
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Aishiteru",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sandbar",
+        "label": "",
+        "release_date": "2024-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Something Like This",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloudburn",
+        "label": "",
+        "release_date": "2021-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Escarpment",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pulsatility",
+        "label": "",
+        "release_date": "2021-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Saltwater",
+        "label": "",
+        "release_date": "2021-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aishiteru",
+        "label": "",
+        "release_date": "2025-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bejnou",
+    "mbid": "",
+    "listeners": 10960,
+    "playcount": 33414,
+    "listener_play_ratio": 3.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bejnou\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "King Bøb",
+      "Phil Axes",
+      "Lukas Hiraeth",
+      "Peqasus",
+      "Jordan Moon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Aishiteru",
+        "listeners": 6391,
+        "playcount": 17310
+      },
+      {
+        "name": "Escarpment",
+        "listeners": 2209,
+        "playcount": 5982
+      },
+      {
+        "name": "Saltwater",
+        "listeners": 1526,
+        "playcount": 3689
+      },
+      {
+        "name": "Sandbar",
+        "listeners": 1338,
+        "playcount": 2577
+      },
+      {
+        "name": "Cloudburn",
+        "listeners": 1306,
+        "playcount": 3537
+      },
+      {
+        "name": "Something Like This",
+        "listeners": 73,
+        "playcount": 124
+      },
+      {
+        "name": "Pulsatility",
+        "listeners": 63,
+        "playcount": 147
+      },
+      {
+        "name": "Cloudburn (Let Go)",
+        "listeners": 33,
+        "playcount": 43
+      },
+      {
+        "name": "Something Like Us",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Escarpment (2021)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Bejnou"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

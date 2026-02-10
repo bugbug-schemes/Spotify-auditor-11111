@@ -1,0 +1,441 @@
+{
+  "artist_name": "Jeremy Mayfield",
+  "artist_id": "jeremy_mayfield",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:27:06.611377+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 53708942,
+    "name": "Jeremy Mayfield",
+    "nb_fan": 34,
+    "nb_album": 68,
+    "link": "https://www.deezer.com/artist/53708942",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/36b33cf76b1dd903871c06be2b74c45c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Shawn Williams",
+      "Winston Church"
+    ],
+    "contributor_roles": {
+      "Shawn Williams": [
+        "Main"
+      ],
+      "Winston Church": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "In the Stars",
+      "Ashes",
+      "Pieces",
+      "Searching",
+      "Underneath",
+      "Rubble",
+      "Heavenly Blue",
+      "Memories",
+      "Danse des papillons",
+      "Abyss",
+      "la coccinelle",
+      "Presence",
+      "Once in a While",
+      "Even in This",
+      "Looking Glass Falls"
+    ],
+    "track_durations": [
+      156,
+      171,
+      114,
+      119,
+      111,
+      101,
+      108,
+      125,
+      76,
+      427,
+      100,
+      170,
+      97,
+      171,
+      181
+    ],
+    "track_ranks": [
+      527580,
+      235270,
+      261904,
+      164070,
+      178036,
+      198381,
+      203652,
+      173129,
+      70719,
+      21701,
+      142210,
+      33269,
+      30428,
+      49797,
+      2475
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 7,
+      "single": 55
+    },
+    "albums": [
+      {
+        "title": "The Spirit of Christmas",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ashes",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Comfort & Joy",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Take Me Home",
+        "label": "",
+        "release_date": "2024-06-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Still Waters, Vol. 1",
+        "label": "",
+        "release_date": "2022-07-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Little Heart (Soundtrack)",
+        "label": "",
+        "release_date": "2024-02-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Metanoia (Part 2)",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Metanoia (Part 1)",
+        "label": "",
+        "release_date": "2024-09-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Christmas Piano",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "la fleur",
+        "label": "",
+        "release_date": "2023-05-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "in the heights",
+        "label": "",
+        "release_date": "2023-04-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Minute Meds, Vol. 6",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Womb Suite",
+        "label": "",
+        "release_date": "2022-08-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Through Forest Glades I Wander",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We Met in the Summer",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "luce nella strada",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chikhai Bardo",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Andas",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sehnsucht",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Presence",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "la coccinelle",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once in a While",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si je tombe",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Danse des papillons",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Even in This",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pieces",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trouver ma voie",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heavenly Blue",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A New Start",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ashes",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Pieter Savenberg",
+      "Norman Dück",
+      "Morunas",
+      "Elliott Jack Sansom",
+      "Justus Rümenapp",
+      "Alavilla Mailla",
+      "Javi Lobe",
+      "Oskar Tena",
+      "Rich Mortimer",
+      "Rasmus H Thomsen"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4343168,
+    "name": "Jeremy Mayfield",
+    "profile": "Pianist, keyboardist, organist",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 0,
+    "total_releases": 4,
+    "formats": [
+      "CD, Album",
+      "CD, Album, RE",
+      "CD, EP"
+    ],
+    "labels": [
+      "Lone Chief Records",
+      "Not On Label (Chris Crump Self-released)",
+      "Randm Records (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jeremy Mayfield",
+    "mbid": "",
+    "listeners": 25687,
+    "playcount": 102475,
+    "listener_play_ratio": 3.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jeremy+Mayfield\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "André Dívou",
+      "Martes Fiore",
+      "Mijongya",
+      "Gianni Domenici",
+      "M. Ljungström"
+    ],
+    "top_tracks": [
+      {
+        "name": "In the Stars",
+        "listeners": 23453,
+        "playcount": 91864
+      },
+      {
+        "name": "Jingle Bells - Solo Piano",
+        "listeners": 482,
+        "playcount": 784
+      },
+      {
+        "name": "Christmas Time Is Here",
+        "listeners": 436,
+        "playcount": 899
+      },
+      {
+        "name": "Up on the Housetop - Solo Piano",
+        "listeners": 279,
+        "playcount": 452
+      },
+      {
+        "name": "Chikhai Bardo",
+        "listeners": 256,
+        "playcount": 566
+      },
+      {
+        "name": "It Came Upon the Midnight Clear - Solo Piano",
+        "listeners": 239,
+        "playcount": 303
+      },
+      {
+        "name": "O Tannenbaum",
+        "listeners": 231,
+        "playcount": 405
+      },
+      {
+        "name": "Joy to the World",
+        "listeners": 227,
+        "playcount": 343
+      },
+      {
+        "name": "Underneath",
+        "listeners": 219,
+        "playcount": 374
+      },
+      {
+        "name": "Searching",
+        "listeners": 210,
+        "playcount": 367
+      }
+    ],
+    "url": "https://www.last.fm/music/Jeremy+Mayfield"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

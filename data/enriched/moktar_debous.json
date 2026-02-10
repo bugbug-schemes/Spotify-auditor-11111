@@ -1,0 +1,170 @@
+{
+  "artist_name": "Moktar Debous",
+  "artist_id": "moktar_debous",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:47:22.520646+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 220385505,
+    "name": "Moktar Debous",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/220385505",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d1c330c94e5778948fc3cf5639a91dee/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Lucenor",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shams",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Selestial",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unfold Eternity",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eloudius",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mortalis",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serio Dormio",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magnous Dei",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Moktar Debous",
+    "mbid": "",
+    "listeners": 14180,
+    "playcount": 47839,
+    "listener_play_ratio": 3.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Moktar+Debous\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Arius Feva",
+      "calmwise",
+      "mokusei",
+      "Few z`s",
+      "Zitosphere"
+    ],
+    "top_tracks": [
+      {
+        "name": "Eloudius",
+        "listeners": 10543,
+        "playcount": 38030
+      },
+      {
+        "name": "Lucenor",
+        "listeners": 3516,
+        "playcount": 7775
+      },
+      {
+        "name": "Unfold Eternity",
+        "listeners": 376,
+        "playcount": 1544
+      },
+      {
+        "name": "Serio Dormio",
+        "listeners": 73,
+        "playcount": 489
+      },
+      {
+        "name": "Moktar Debous",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Moktar+Debous"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

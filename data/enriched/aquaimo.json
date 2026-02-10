@@ -1,0 +1,121 @@
+{
+  "artist_name": "Aquaimo",
+  "artist_id": "aquaimo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:04:12.325025+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Aquaimo', got 'Addison Rae'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aquaimo",
+    "mbid": "",
+    "listeners": 6951,
+    "playcount": 22471,
+    "listener_play_ratio": 3.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aquaimo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Matusi",
+      "Ezmae Forrest",
+      "Alina Hill",
+      "Embershine Air",
+      "Amosento"
+    ],
+    "top_tracks": [
+      {
+        "name": "Legacy Drift - Nature Noise Version",
+        "listeners": 4431,
+        "playcount": 17060
+      },
+      {
+        "name": "Unbound",
+        "listeners": 1776,
+        "playcount": 3579
+      },
+      {
+        "name": "Steps",
+        "listeners": 545,
+        "playcount": 1171
+      },
+      {
+        "name": "Gazing Beyond",
+        "listeners": 299,
+        "playcount": 461
+      },
+      {
+        "name": "Sustenance",
+        "listeners": 63,
+        "playcount": 114
+      },
+      {
+        "name": "Legacy Drift",
+        "listeners": 17,
+        "playcount": 32
+      },
+      {
+        "name": "Legacy Drift (Nature Noise Version)",
+        "listeners": 11,
+        "playcount": 13
+      },
+      {
+        "name": "Abliss",
+        "listeners": 4,
+        "playcount": 9
+      },
+      {
+        "name": "Dancing with The Tides",
+        "listeners": 2,
+        "playcount": 11
+      },
+      {
+        "name": "Velvet Dreamscapes",
+        "listeners": 1,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Aquaimo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

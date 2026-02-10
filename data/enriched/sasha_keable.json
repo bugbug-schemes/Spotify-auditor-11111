@@ -1,0 +1,546 @@
+{
+  "artist_name": "Sasha Keable",
+  "artist_id": "sasha_keable",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:55:10.468760+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c2b7f5ad-0db8-4e6d-b228-5598d6b17717",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1994",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000430349035"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3242909",
+      "free streaming": "https://www.deezer.com/artist/4750386",
+      "lyrics": "http://muzikum.eu/en/122-15030/sasha-keable/lyrics.html",
+      "official homepage": "http://www.sashakeable.com/",
+      "social network": "https://www.instagram.com/sashakeable/",
+      "soundcloud": "https://soundcloud.com/sasha-keable",
+      "streaming": "https://tidal.com/artist/6017246",
+      "wikidata": "https://www.wikidata.org/wiki/Q16745366",
+      "youtube": "https://www.youtube.com/user/sashakeable"
+    },
+    "labels": [
+      "The Flight Club",
+      "LVRS ONLY",
+      "Bad Music",
+      "Partisan Records",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4750386,
+    "name": "Sasha Keable",
+    "nb_fan": 5014,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/4750386",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ee0d51bb7821708b7a91482004d9c95f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "6LACK",
+      "BEAM",
+      "COLORS",
+      "Destin Conrad",
+      "Isaiah Falls",
+      "Jorja Smith",
+      "Leon Thomas",
+      "P90POPE",
+      "WhoJiggi"
+    ],
+    "contributor_roles": {
+      "Destin Conrad": [
+        "Main"
+      ],
+      "BEAM": [
+        "Main"
+      ],
+      "Isaiah Falls": [
+        "Main"
+      ],
+      "Leon Thomas": [
+        "Main"
+      ],
+      "Jorja Smith": [
+        "Main"
+      ],
+      "P90POPE": [
+        "Main"
+      ],
+      "WhoJiggi": [
+        "Featured"
+      ],
+      "COLORS": [
+        "Main"
+      ],
+      "6LACK": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "tell me what you want",
+      "heal something",
+      "nobody",
+      "WHY",
+      "AUCTION",
+      "can't stop",
+      "TAI CHI",
+      "ceiling fan",
+      "act right",
+      "work (feat. BEAM)",
+      "NIGHT OFF",
+      "move it along (feat. Leon Thomas)",
+      "heartbeat",
+      "FEEL SOMETHING",
+      "Hold Up",
+      "Killing Me",
+      "Killing Me (Acoustic)",
+      "WHY (WhoJiggi Remix)",
+      "WHY (A COLORS SHOW)",
+      "Take Your Time (feat. 6lack)",
+      "Don't Get Lost",
+      "Exception",
+      "Under Your Skin",
+      "Under Your Skin - Mahogany Sessions",
+      "My Mind"
+    ],
+    "track_durations": [
+      236,
+      183,
+      189,
+      179,
+      200,
+      180,
+      195,
+      93,
+      173,
+      195,
+      173,
+      195,
+      180,
+      152,
+      149,
+      205,
+      198,
+      205,
+      189,
+      235,
+      222,
+      246,
+      285,
+      288,
+      272
+    ],
+    "track_ranks": [
+      632020,
+      134155,
+      100000,
+      65484,
+      367850,
+      49839,
+      534742,
+      147246,
+      32598,
+      19273,
+      475072,
+      21773,
+      32757,
+      149165,
+      438547,
+      561705,
+      660938,
+      379553,
+      328282,
+      316676,
+      68832,
+      206891,
+      254657,
+      151739,
+      236399
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 2,
+      "ep": 2,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "ACT II",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Intermission",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "act right",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "MAN",
+        "label": "",
+        "release_date": "2019-04-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "tell me what you want",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TAI CHI",
+        "label": "",
+        "release_date": "2025-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "move it along (feat. Leon Thomas)",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "FEEL SOMETHING",
+        "label": "",
+        "release_date": "2025-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "act right",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "WHY (WhoJiggi Remix)",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NIGHT OFF",
+        "label": "",
+        "release_date": "2024-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "WHY",
+        "label": "",
+        "release_date": "2024-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "WHY (A COLORS SHOW)",
+        "label": "",
+        "release_date": "2024-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Your Time (feat. 6lack)",
+        "label": "",
+        "release_date": "2024-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "AUCTION",
+        "label": "",
+        "release_date": "2024-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold Up",
+        "label": "",
+        "release_date": "2024-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Killing Me (Acoustic)",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Never Knew Love (Acoustic)",
+        "label": "",
+        "release_date": "2022-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Killing Me",
+        "label": "",
+        "release_date": "2021-03-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Exception",
+        "label": "",
+        "release_date": "2021-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Get Lost",
+        "label": "",
+        "release_date": "2021-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just Friends",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Treat Me Like I'm All Yours / Under Your Skin ( Mahogany Sessions )",
+        "label": "",
+        "release_date": "2019-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loyalty (Acoustic)",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loyalty",
+        "label": "",
+        "release_date": "2019-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Treat Me Like I'm All Yours",
+        "label": "",
+        "release_date": "2019-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That's the Shit",
+        "label": "",
+        "release_date": "2018-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Leon Thomas",
+      "Naomi Sharon",
+      "Ama",
+      "Ari Lennox",
+      "Jenevieve",
+      "Jessie Reyez",
+      "Destin Conrad",
+      "Elmiene",
+      "Syd",
+      "SiR"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3242909,
+    "name": "Sasha Keable",
+    "profile": "Born: February 27, 1994, South London, London. British singer and songwriter of Colombian descent from South London, England.",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/SashaKeable"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 17,
+    "digital_only_releases": 15,
+    "total_releases": 32,
+    "formats": [
+      "",
+      "10\", Ltd, Red",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Promo",
+      "3xCD, Comp",
+      "3xCD, Comp, Mixed",
+      "3xCD, Comp, Mixed, Dig",
+      "3xCD, Mixed",
+      "4xCD, Comp",
+      "6xFile, MP3, EP, 320",
+      "8xFile, EP, 160",
+      "9xFile, FLAC, EP, 24-",
+      "CD, Album",
+      "CD, Comp, Promo",
+      "CDr, Comp, Club, Promo",
+      "File, AAC, Single, 256",
+      "File, MP3, VBR"
+    ],
+    "labels": [
+      "19 Recordings, RCA",
+      "541",
+      "Bad Music",
+      "CD Pool",
+      "DMC",
+      "Disturbing London Records",
+      "ITH Records",
+      "LVRS Only",
+      "LVRS Only LLC",
+      "Ministry Of Sound",
+      "Music Factory, Music Factory",
+      "New State Music",
+      "Parco Della Musica Records, Parco Della Musica Records",
+      "RCA",
+      "Rinse",
+      "Universal Music TV, Universal Music Operations Ltd."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sasha Keable",
+    "mbid": "c2b7f5ad-0db8-4e6d-b228-5598d6b17717",
+    "listeners": 137410,
+    "playcount": 1544273,
+    "listener_play_ratio": 11.24,
+    "bio_exists": true,
+    "bio_summary": "2010 set the bar impressively high for British music and now the new year has rolled around the level of talent seems to be on the increase. One of the hottest new acts to start attracting the spotlight is Sasha Keable.\n\nAt only 17-years-old, Sasha has been tearing up the scene for some time now and has already got a performance at 2009’s Wireless Festival and a full UK tour with chart-toppers N-Dubz and BRIT award-winning Tinie Tempah under her super stylish belt. <a href=\"https://www.last.fm/m",
+    "tags": [
+      "soul",
+      "pop",
+      "rnb",
+      "british",
+      "electronic"
+    ],
+    "similar_artists": [
+      "kwn",
+      "Elmiene",
+      "Destin Conrad",
+      "Tia Gordon",
+      "BOY SODA"
+    ],
+    "top_tracks": [
+      {
+        "name": "Why",
+        "listeners": 32578,
+        "playcount": 166627
+      },
+      {
+        "name": "Take Your Time (feat. 6LACK)",
+        "listeners": 28960,
+        "playcount": 120781
+      },
+      {
+        "name": "AUCTION",
+        "listeners": 24002,
+        "playcount": 159649
+      },
+      {
+        "name": "move it along (feat. Leon Thomas)",
+        "listeners": 23823,
+        "playcount": 92470
+      },
+      {
+        "name": "Killing Me",
+        "listeners": 23380,
+        "playcount": 113690
+      },
+      {
+        "name": "Hold Up",
+        "listeners": 19778,
+        "playcount": 121539
+      },
+      {
+        "name": "Act Right",
+        "listeners": 18663,
+        "playcount": 91016
+      },
+      {
+        "name": "Tai Chi",
+        "listeners": 15697,
+        "playcount": 57849
+      },
+      {
+        "name": "Feel Something",
+        "listeners": 14952,
+        "playcount": 54240
+      },
+      {
+        "name": "can't stop",
+        "listeners": 12700,
+        "playcount": 51109
+      }
+    ],
+    "url": "https://www.last.fm/music/Sasha+Keable"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,184 @@
+{
+  "artist_name": "Mareina",
+  "artist_id": "mareina",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:28:44.553108+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 141811222,
+    "name": "Mareina",
+    "nb_fan": 5,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/141811222",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/43a8339b4716714cd455ae6623c9efa9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Cove",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Therapeuo",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morph",
+        "label": "",
+        "release_date": "2023-03-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paysages de rêve",
+        "label": "",
+        "release_date": "2023-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ygeia",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Diamantina",
+        "label": "",
+        "release_date": "2021-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11594636,
+    "name": "Iris Mareina",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Comp",
+      "CDr, Album"
+    ],
+    "labels": [
+      "RS Records (15), Xanthi Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "mareina",
+    "mbid": "",
+    "listeners": 44741,
+    "playcount": 230772,
+    "listener_play_ratio": 5.16,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/mareina\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Joseff Shields",
+      "Arnkatla",
+      "Logan Docherty",
+      "Signe Golin",
+      "Monet Benitez"
+    ],
+    "top_tracks": [
+      {
+        "name": "Morph",
+        "listeners": 23600,
+        "playcount": 109373
+      },
+      {
+        "name": "Ygeia",
+        "listeners": 19392,
+        "playcount": 101413
+      },
+      {
+        "name": "Cove",
+        "listeners": 4993,
+        "playcount": 16844
+      },
+      {
+        "name": "Diamantina",
+        "listeners": 686,
+        "playcount": 2582
+      },
+      {
+        "name": "Paysages de rêve",
+        "listeners": 296,
+        "playcount": 526
+      },
+      {
+        "name": "Conscience secrète",
+        "listeners": 15,
+        "playcount": 30
+      },
+      {
+        "name": "Therapeuo",
+        "listeners": 1,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/mareina"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,196 @@
+{
+  "artist_name": "Dennis Riley-Jones",
+  "artist_id": "dennis_riley-jones",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:27:14.992502+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 95532732,
+    "name": "Dennis Riley-Jones",
+    "nb_fan": 3,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/95532732",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0b3b9f74de040eb10681bd151b9802a0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Christmas Time Is Here",
+      "Alfie",
+      "The Reasons That I Love You",
+      "O Little Town of Bethlehem"
+    ],
+    "track_durations": [
+      166,
+      163,
+      247,
+      153
+    ],
+    "track_ranks": [
+      37110,
+      66504,
+      16222,
+      6074
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Stargaze",
+        "label": "",
+        "release_date": "2026-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Sunday",
+        "label": "",
+        "release_date": "2025-12-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Little Town of Bethlehem",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Time Is Here",
+        "label": "",
+        "release_date": "2023-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Reasons That I Love You",
+        "label": "",
+        "release_date": "2022-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alfie",
+        "label": "",
+        "release_date": "2020-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dennis Riley-Jones",
+    "mbid": "",
+    "listeners": 80617,
+    "playcount": 260151,
+    "listener_play_ratio": 3.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dennis+Riley-Jones\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Milad Greenland",
+      "The Tonalité Trio",
+      "Green and Redd Duo",
+      "Ron de Lauren",
+      "Henri La Mer"
+    ],
+    "top_tracks": [
+      {
+        "name": "Christmas Time Is Here",
+        "listeners": 60293,
+        "playcount": 150900
+      },
+      {
+        "name": "Alfie",
+        "listeners": 15265,
+        "playcount": 69582
+      },
+      {
+        "name": "The Reasons That I Love You",
+        "listeners": 7426,
+        "playcount": 26125
+      },
+      {
+        "name": "O Little Town of Bethlehem",
+        "listeners": 5130,
+        "playcount": 8848
+      },
+      {
+        "name": "September Waltz",
+        "listeners": 1409,
+        "playcount": 2612
+      },
+      {
+        "name": "(I'm Afraid) The Masquerade Is Over",
+        "listeners": 998,
+        "playcount": 2054
+      },
+      {
+        "name": "At A Glance",
+        "listeners": 5,
+        "playcount": 13
+      },
+      {
+        "name": "A Bossa For My Sweetheart",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "The Chipmunk Song",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "A Golden Hue",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Dennis+Riley-Jones"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

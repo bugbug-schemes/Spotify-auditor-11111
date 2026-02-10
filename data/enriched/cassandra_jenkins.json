@@ -1,0 +1,469 @@
+{
+  "artist_name": "Cassandra Jenkins",
+  "artist_id": "cassandra_jenkins",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:00:49.009227+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1c5fb201-9555-4e94-94b6-d5ac6fccb64c",
+    "type": "Person",
+    "country": "",
+    "area": "Manhattan",
+    "begin_date": "1984",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "ambient pop",
+      "folk pop",
+      "indie pop",
+      "indie folk",
+      "indie rock",
+      "singer-songwriter"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002393817",
+      "bandcamp": "https://cassandrajenkins.bandcamp.com/",
+      "blog": "http://cassandrajenkins.tumblr.com/",
+      "discogs": "https://www.discogs.com/artist/3289679",
+      "free streaming": "https://www.deezer.com/artist/4592197",
+      "last.fm": "https://www.last.fm/music/Cassandra+Jenkins",
+      "official homepage": "http://cassandrajenkins.com/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id628623818",
+      "social network": "https://www.instagram.com/cassandrajenkins/",
+      "songkick": "https://www.songkick.com/artists/4756108",
+      "wikidata": "https://www.wikidata.org/wiki/Q105635611"
+    },
+    "labels": [
+      "Audiotree Music",
+      "Secretly Canadian",
+      "Weathervane Music",
+      "Ba Da Bing!",
+      "[no label]",
+      "Dead Oceans",
+      "Infinite Best",
+      "Kelsey Media"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4592197,
+    "name": "Cassandra Jenkins",
+    "nb_fan": 1883,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/4592197",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ea6fc18ab4c34811135e47279639274b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Babehoven",
+      "Bloomsday"
+    ],
+    "contributor_roles": {
+      "Bloomsday": [
+        "Main"
+      ],
+      "Babehoven": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Delphinium Blue",
+      "Clams Casino",
+      "Only One",
+      "Crosshairs",
+      "Petco",
+      "Omakase",
+      "Betelgeuse Masseuse",
+      "Delphinium Bliss",
+      "Wormhold Music",
+      "Bebop Extravaganza",
+      "Aurora, IL",
+      "Devotion",
+      "Tape and Tissue",
+      "Omakase of Time",
+      "Michelangelo",
+      "Attente Téléphonique",
+      "New Bikini",
+      "Hard Drive",
+      "The Ramble",
+      "Hailey",
+      "Caterpillar",
+      "Aaron",
+      "Hailey (premix)",
+      "Disco Death Dance",
+      "Some Time"
+    ],
+    "track_durations": [
+      218,
+      207,
+      189,
+      243,
+      183,
+      285,
+      246,
+      347,
+      312,
+      111,
+      217,
+      235,
+      263,
+      378,
+      209,
+      92,
+      262,
+      327,
+      428,
+      173,
+      241,
+      208,
+      186,
+      184,
+      261
+    ],
+    "track_ranks": [
+      382521,
+      484485,
+      358401,
+      219800,
+      168172,
+      308484,
+      135720,
+      190381,
+      177319,
+      154924,
+      143555,
+      176396,
+      151188,
+      181547,
+      76090,
+      129268,
+      94630,
+      164445,
+      96378,
+      62885,
+      33099,
+      76937,
+      11632,
+      38100,
+      41868
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 3,
+      "single": 15
+    },
+    "albums": [
+      {
+        "title": "My Light, My Massage Parlor",
+        "label": "",
+        "release_date": "2025-08-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "My Light, My Destroyer",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "(An Overview on) An Overview on Phenomenal Nature",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "An Overview on Phenomenal Nature",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Play Till You Win",
+        "label": "",
+        "release_date": "2017-04-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cassandra Jenkins (Audiotree Live)",
+        "label": "",
+        "release_date": "2018-03-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Live in Foxen Canyon",
+        "label": "",
+        "release_date": "2018-02-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "EP",
+        "label": "",
+        "release_date": "2013-04-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Delphinium Bliss",
+        "label": "",
+        "release_date": "2025-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Le fil (feat. Cassandra Jenkins)",
+        "label": "",
+        "release_date": "2025-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aaron",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pygmalion",
+        "label": "",
+        "release_date": "2022-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's You",
+        "label": "",
+        "release_date": "2022-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "American Spirits",
+        "label": "",
+        "release_date": "2021-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hailey (premix)",
+        "label": "",
+        "release_date": "2021-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crosshairs",
+        "label": "",
+        "release_date": "2021-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hard Drive",
+        "label": "",
+        "release_date": "2021-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Michelangelo",
+        "label": "",
+        "release_date": "2021-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Things to You",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hotel Lullaby (Acoustic)",
+        "label": "",
+        "release_date": "2019-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wild World",
+        "label": "",
+        "release_date": "2015-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perfect Day",
+        "label": "",
+        "release_date": "2014-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rabbit Single",
+        "label": "",
+        "release_date": "2014-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Weyes Blood",
+      "Big Thief",
+      "Nilüfer Yanya",
+      "Julia Jacklin",
+      "Soccer Mommy",
+      "Waxahatchee",
+      "Cmat",
+      "jasmine.4.t",
+      "Real Estate",
+      "Katy J Pearson"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2633272,
+    "name": "Cassandra Jenkins",
+    "profile": "Photographer",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 3,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "CD",
+      "CD, Album"
+    ],
+    "labels": [
+      "Deadly Gentle Records",
+      "Magdeburg Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cassandra Jenkins",
+    "mbid": "1c5fb201-9555-4e94-94b6-d5ac6fccb64c",
+    "listeners": 144866,
+    "playcount": 2750634,
+    "listener_play_ratio": 18.99,
+    "bio_exists": true,
+    "bio_summary": "Cassandra Jenkins is an American singer-songwriter and visual artist based in Brooklyn. <a href=\"https://www.last.fm/music/Cassandra+Jenkins\">Read more on Last.fm</a>",
+    "tags": [
+      "singer-songwriter",
+      "folk",
+      "indie",
+      "Alternative Folk",
+      "All"
+    ],
+    "similar_artists": [
+      "The Weather Station",
+      "Julie Byrne",
+      "Waxahatchee",
+      "Nilüfer Yanya",
+      "Jessica Pratt"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hard Drive",
+        "listeners": 64504,
+        "playcount": 433010
+      },
+      {
+        "name": "Michelangelo",
+        "listeners": 53348,
+        "playcount": 263553
+      },
+      {
+        "name": "Only One",
+        "listeners": 35612,
+        "playcount": 151119
+      },
+      {
+        "name": "Crosshairs",
+        "listeners": 30830,
+        "playcount": 172322
+      },
+      {
+        "name": "Delphinium Blue",
+        "listeners": 27520,
+        "playcount": 121786
+      },
+      {
+        "name": "New Bikini",
+        "listeners": 26609,
+        "playcount": 145166
+      },
+      {
+        "name": "Clams Casino",
+        "listeners": 25343,
+        "playcount": 113704
+      },
+      {
+        "name": "Ambiguous Norway",
+        "listeners": 22595,
+        "playcount": 124570
+      },
+      {
+        "name": "Hailey",
+        "listeners": 20435,
+        "playcount": 105667
+      },
+      {
+        "name": "Petco",
+        "listeners": 18958,
+        "playcount": 89306
+      }
+    ],
+    "url": "https://www.last.fm/music/Cassandra+Jenkins"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

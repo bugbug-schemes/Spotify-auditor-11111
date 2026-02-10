@@ -1,0 +1,213 @@
+{
+  "artist_name": "Nature Trudge",
+  "artist_id": "nature_trudge",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:58:16.159580+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 166624907,
+    "name": "Nature Trudge",
+    "nb_fan": 3,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/166624907",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cb16837754f6e922b7031e2ecf454ed3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 2,
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Storm While I Go to Work",
+        "label": "",
+        "release_date": "2024-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "African Nature Soundscapes",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "When It Pours It Rains",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Green Noise Tide",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Making Waves",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sea Of Green Noise",
+        "label": "",
+        "release_date": "2024-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Green Noise River Creek",
+        "label": "",
+        "release_date": "2023-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Streamflow",
+        "label": "",
+        "release_date": "2023-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Green Nature Noise",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Storms Out",
+        "label": "",
+        "release_date": "2023-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nature Trudge",
+    "mbid": "",
+    "listeners": 80697,
+    "playcount": 628664,
+    "listener_play_ratio": 7.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nature+Trudge\">Read more on Last.fm</a>",
+    "tags": [
+      "nature sounds"
+    ],
+    "similar_artists": [
+      "Ancient Rain",
+      "sumyeon uisa 수면 의사",
+      "Aqualogic",
+      "The Earth Song",
+      "El Tiempo Central"
+    ],
+    "top_tracks": [
+      {
+        "name": "Storms Out",
+        "listeners": 59213,
+        "playcount": 486285
+      },
+      {
+        "name": "Creek Rain With Brids And Thunder - Seamless",
+        "listeners": 19333,
+        "playcount": 73380
+      },
+      {
+        "name": "Chill Puddle Rain",
+        "listeners": 12105,
+        "playcount": 53071
+      },
+      {
+        "name": "Green Noise - Gentle Waves",
+        "listeners": 1682,
+        "playcount": 5383
+      },
+      {
+        "name": "Green Noise & Night Nature",
+        "listeners": 1204,
+        "playcount": 3032
+      },
+      {
+        "name": "Arroyo (River)",
+        "listeners": 902,
+        "playcount": 3137
+      },
+      {
+        "name": "Sleepy Insects In Hawaii - Seamless",
+        "listeners": 526,
+        "playcount": 786
+      },
+      {
+        "name": "Green Noise River Creek",
+        "listeners": 446,
+        "playcount": 654
+      },
+      {
+        "name": "Creek Rain With Brids And Thunder",
+        "listeners": 387,
+        "playcount": 992
+      },
+      {
+        "name": "River With Green Noise",
+        "listeners": 328,
+        "playcount": 462
+      }
+    ],
+    "url": "https://www.last.fm/music/Nature+Trudge"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

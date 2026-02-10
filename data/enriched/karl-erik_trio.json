@@ -1,0 +1,385 @@
+{
+  "artist_name": "Karl-Erik Trio",
+  "artist_id": "karl-erik_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:45:26.257632+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ce2a37d7-d285-42f3-996e-d9a73e8eff9c",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/188663737",
+      "purchase for download": "https://music.apple.com/us/artist/1652726512",
+      "soundcloud": "https://soundcloud.com/karl-eriktrio",
+      "streaming": "https://tidal.com/artist/35349982",
+      "youtube music": "https://music.youtube.com/channel/UCwby6Pb_vHeLguHXh571whQ"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 188663737,
+    "name": "Karl-Erik Trio",
+    "nb_fan": 17,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/188663737",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6bcd050f1619dc931fe93a01ba6474e3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "English Rose",
+      "A Friend of Mine",
+      "I Still Think of Us",
+      "A Long Day",
+      "Stockholm",
+      "Eyes of a Child",
+      "The Quiet Change",
+      "Caçador de Mim",
+      "Go Tell It on the Mountain"
+    ],
+    "track_durations": [
+      186,
+      217,
+      179,
+      168,
+      182,
+      181,
+      199,
+      230,
+      168
+    ],
+    "track_ranks": [
+      192554,
+      54484,
+      41089,
+      267756,
+      43959,
+      64623,
+      30813,
+      90182,
+      39105
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Stockholm",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Friend of Mine",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At First Light",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In a Language We Forgot",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unfinished Conversations",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "But I'm Still Alone",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightfall",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Quiet Change",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer's End",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Go Tell It on the Mountain",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Última Canção",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caçador de Mim",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eyes of a Child",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Isle of Skye",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fun to Be Fooled",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How My Heart Sings",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Largo",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Long Day",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weary Whispers",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "English Rose",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nothing Will Ever Be The Same",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just Friends",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Still Think of Us",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1596190,
+    "name": "Henschiens Trio",
+    "profile": "Trio formed in 1928 by Harald Henschien. Popular on both records and radio broadcasts. Made well over hundred gramophone recordings, both on their own as well as with refrain vocalists, including [a5543137]'s recording debut in 1934.\r\n\r\nThe original lineup included, in addition to Henschien himself, Trygve Olai Johannessen (1894-1939) on violin, and Gunnar Søberg (1903-1954) on piano. Often filling in for Johannessen in the beginning was Eilert Fuglesang (1915-2009), although he quit after a couple years to focus on his studies. Violinist Karl Andreas Kristiansen (1892-1974) was used as a replacement during a tour in the mid-1930s.\r\n\r\nWhen Johannessen passed away, violinist Jacob Scharff (1908-1942) took his place as a member of the trio. Scharff was jewish, and during the nazi occupation of Norway he and most of his family were deported to Auschwitz. Upon arrival, the children and female members of the family were taken directly to the gas chambers. The adult male members died some ti",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Harald Henschien",
+      "Jacob Scharff"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 21,
+    "digital_only_releases": 0,
+    "total_releases": 21,
+    "formats": [
+      "CD, Comp",
+      "Shellac, 10\"",
+      "Shellac, 10\", RP"
+    ],
+    "labels": [
+      "Brunswick",
+      "Columbia",
+      "His Master's Voice",
+      "Ideal (6)",
+      "Norild Records",
+      "Normann Records",
+      "Polydor",
+      "Victor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Karl-Erik Trio",
+    "mbid": "",
+    "listeners": 102672,
+    "playcount": 365081,
+    "listener_play_ratio": 3.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Karl-Erik+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Eternal Time Trio",
+      "The Southern Belle",
+      "Isac Solo Trio",
+      "Gabriel Gonzalez",
+      "Gottfried Barber Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "English Rose",
+        "listeners": 30190,
+        "playcount": 72921
+      },
+      {
+        "name": "Go Tell It on the Mountain",
+        "listeners": 26295,
+        "playcount": 54122
+      },
+      {
+        "name": "A Long Day",
+        "listeners": 19345,
+        "playcount": 43873
+      },
+      {
+        "name": "Eyes of a Child",
+        "listeners": 18827,
+        "playcount": 40112
+      },
+      {
+        "name": "Just Friends",
+        "listeners": 16373,
+        "playcount": 33552
+      },
+      {
+        "name": "I Still Think of Us",
+        "listeners": 13346,
+        "playcount": 29201
+      },
+      {
+        "name": "The Quiet Change",
+        "listeners": 11039,
+        "playcount": 22492
+      },
+      {
+        "name": "Isle of Skye",
+        "listeners": 8372,
+        "playcount": 15278
+      },
+      {
+        "name": "Sori",
+        "listeners": 6710,
+        "playcount": 15247
+      },
+      {
+        "name": "A Friend of Mine",
+        "listeners": 4903,
+        "playcount": 8402
+      }
+    ],
+    "url": "https://www.last.fm/music/Karl-Erik+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

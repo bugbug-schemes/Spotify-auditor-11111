@@ -1,0 +1,447 @@
+{
+  "artist_name": "The Listening Planet",
+  "artist_id": "the_listening_planet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:35:11.668788+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f2fba693-81ae-4463-9c20-e321a7a410d1",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/147502972",
+      "purchase for download": "https://music.apple.com/us/artist/1588978290",
+      "streaming": "https://music.apple.com/us/artist/1588978290"
+    },
+    "labels": [
+      "EarthPercent",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 147502972,
+    "name": "The Listening Planet",
+    "nb_fan": 59,
+    "nb_album": 78,
+    "link": "https://www.deezer.com/artist/147502972",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5b9b4dd7849999e2ae0fe4deee5a9fcc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Kingdom Orchestra",
+      "Stewart Copeland",
+      "Troy Miller"
+    ],
+    "contributor_roles": {
+      "Stewart Copeland": [
+        "Main"
+      ],
+      "Troy Miller": [
+        "Main"
+      ],
+      "Kingdom Orchestra": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "White Throated Sparrow (Is Happy On the Glacier)",
+      "Blackfoot Albatross (Lands On the Sonoma Coast)",
+      "Kookaburra and the Marbled Frogmouth (on Cape Tribulation)",
+      "Galapagos Seal (Meets Blue-Footed Boobies)",
+      "Hyena Party On the Skeleton Coast",
+      "Penguins in the Wind of Antarctica",
+      "Screaming Piha (Trolls the Titi Monkeys of the Andes Basin)",
+      "Barred Owl and the Frog Brigade",
+      "Guillemot Serenades the Red Deer",
+      "Indri and the Asian Barred Owl",
+      "Go Away Love (On the African Coast)"
+    ],
+    "track_durations": [
+      264,
+      208,
+      250,
+      303,
+      197,
+      252,
+      219,
+      242,
+      203,
+      248,
+      246
+    ],
+    "track_ranks": [
+      103357,
+      99360,
+      37709,
+      55914,
+      65697,
+      33346,
+      58566,
+      68653,
+      52136,
+      64119,
+      17887
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 42,
+      "ep": 14,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "Allied with Nature",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sonic Earth (Live from Kings Place)",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stewart Copeland: Wild Concerto",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Field Notes",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Imperfect Cadence",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Scandinavia",
+        "label": "",
+        "release_date": "2024-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Soothing Ocean Sounds",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rain Sounds Symphony",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Electric Thunderstorms",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Birds brilliant and bizarre",
+        "label": "",
+        "release_date": "2024-05-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The playlist that can’t be heard",
+        "label": "",
+        "release_date": "2022-12-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Winds across the Prairie",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Peruvian soundscape",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Boreal forest and Boreal owl",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Grand Tetons",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Belize storm",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tanzania Thunder and rain on the Savanna",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Punta Tombo Penguins",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Costa Rica dry jungle",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rainy seasons in Costa Rica",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Endangered animals NFT...(No f**king time)",
+        "label": "",
+        "release_date": "2022-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ocean Waves",
+        "label": "",
+        "release_date": "2022-03-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cévennes National Park",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Yellowstone Park",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Redwoods",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Puerto Rican Nights",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Olympic Forest",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dawn in the Sierra Nevadas",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Loons at Chetek lake",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Galapagos Islands",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16430308,
+    "name": "The Listening Planet",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "File, AAC, Single, 256"
+    ],
+    "labels": [
+      "EarthPercent, Sounds Right (2), Museum For The United Nations UN Live"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Listening Planet",
+    "mbid": "f2fba693-81ae-4463-9c20-e321a7a410d1",
+    "listeners": 14166,
+    "playcount": 44892,
+    "listener_play_ratio": 3.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Listening+Planet\">Read more on Last.fm</a>",
+    "tags": [
+      "new age",
+      "ambient",
+      "drone",
+      "birdsong",
+      "nature sounds"
+    ],
+    "similar_artists": [
+      "Jane Quin",
+      "Lively Nature Sounds",
+      "Zen Sound Bath",
+      "Relaxing The Mind",
+      "Shiroma Rin"
+    ],
+    "top_tracks": [
+      {
+        "name": "Birds of Papua New Guinea",
+        "listeners": 12319,
+        "playcount": 30303
+      },
+      {
+        "name": "High Winds in Tongane Kystfort",
+        "listeners": 394,
+        "playcount": 683
+      },
+      {
+        "name": "Sea Cliffs of Sangstrup and Karlby",
+        "listeners": 353,
+        "playcount": 599
+      },
+      {
+        "name": "The Rolling Tide I",
+        "listeners": 294,
+        "playcount": 393
+      },
+      {
+        "name": "The Pebbles Tune I",
+        "listeners": 278,
+        "playcount": 375
+      },
+      {
+        "name": "Rain across the plains I",
+        "listeners": 262,
+        "playcount": 435
+      },
+      {
+        "name": "Rain across the plains II",
+        "listeners": 255,
+        "playcount": 431
+      },
+      {
+        "name": "Mass Takeoff in Lerviken, Sweden",
+        "listeners": 202,
+        "playcount": 369
+      },
+      {
+        "name": "Ocean Serenity II",
+        "listeners": 200,
+        "playcount": 541
+      },
+      {
+        "name": "Sizzling Sea Spray I",
+        "listeners": 193,
+        "playcount": 377
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Listening+Planet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

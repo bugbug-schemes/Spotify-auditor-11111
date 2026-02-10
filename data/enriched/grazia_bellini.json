@@ -1,0 +1,162 @@
+{
+  "artist_name": "Grazia Bellini",
+  "artist_id": "grazia_bellini",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:56:46.402549+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 260961671,
+    "name": "Grazia Bellini",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/260961671",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/67ce065c022f237392e76710236dc5c1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Calolziocorte"
+    ],
+    "track_durations": [
+      140
+    ],
+    "track_ranks": [
+      48757
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Beneath the Oaks",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirume",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clouds Know the Way",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blenda",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Prayer",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calolziocorte",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Grazia Bellini",
+    "mbid": "",
+    "listeners": 13196,
+    "playcount": 45683,
+    "listener_play_ratio": 3.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Grazia+Bellini\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Livia Marcella",
+      "Van Kahloo",
+      "Marcello Fiorenza",
+      "Adiamo Mero",
+      "Afon Aéron"
+    ],
+    "top_tracks": [
+      {
+        "name": "Calolziocorte",
+        "listeners": 12350,
+        "playcount": 38214
+      },
+      {
+        "name": "Mirume",
+        "listeners": 2053,
+        "playcount": 7446
+      },
+      {
+        "name": "Quiet Prayer",
+        "listeners": 15,
+        "playcount": 18
+      },
+      {
+        "name": "Blenda",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Clouds Know the Way",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Grazia+Bellini"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

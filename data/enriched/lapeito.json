@@ -1,0 +1,116 @@
+{
+  "artist_name": "Lapeito",
+  "artist_id": "lapeito",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:57:48.189005+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lapeito', got 'La Pieta'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lapeito",
+    "mbid": "",
+    "listeners": 9658,
+    "playcount": 31780,
+    "listener_play_ratio": 3.29,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lapeito\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Night Syndicate",
+      "Aaron Aitken",
+      "Zitosphere",
+      "Arius Feva",
+      "Holzer & Kamura"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tranquil Tides",
+        "listeners": 8666,
+        "playcount": 28672
+      },
+      {
+        "name": "Alpha Binaural Celestial Drift",
+        "listeners": 681,
+        "playcount": 2102
+      },
+      {
+        "name": "Niyama",
+        "listeners": 248,
+        "playcount": 579
+      },
+      {
+        "name": "Parasomnia",
+        "listeners": 90,
+        "playcount": 181
+      },
+      {
+        "name": "Propiedad",
+        "listeners": 76,
+        "playcount": 226
+      },
+      {
+        "name": "Who Said?",
+        "listeners": 5,
+        "playcount": 17
+      },
+      {
+        "name": "Slaap",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Sueño Mortal",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Aguila Dorada",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lapeito"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

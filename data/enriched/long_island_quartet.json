@@ -1,0 +1,443 @@
+{
+  "artist_name": "Long Island Quartet",
+  "artist_id": "long_island_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:11:58.874865+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "03f12006-5835-4158-8d8d-c9e3330f9dc7",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183272787",
+      "purchase for download": "https://music.apple.com/us/artist/1648475070",
+      "soundcloud": "https://soundcloud.com/longislandquartet",
+      "streaming": "https://tidal.com/artist/34512604",
+      "youtube music": "https://music.youtube.com/channel/UCxfl7rBEZQKEhcN9p1q1IzA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183272787,
+    "name": "Long Island Quartet",
+    "nb_fan": 26,
+    "nb_album": 28,
+    "link": "https://www.deezer.com/artist/183272787",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/68cd588b81060ec47d0b6f4a84c123f6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Meu Sol",
+      "No More Tears For You",
+      "Dimness",
+      "Blame It On My Youth",
+      "When Love Is Gone",
+      "Memories Of You",
+      "Someone To Watch Over Me",
+      "Alfie",
+      "Could It Be You",
+      "I Remember Clifford"
+    ],
+    "track_durations": [
+      228,
+      271,
+      199,
+      298,
+      215,
+      285,
+      248,
+      217,
+      197,
+      183
+    ],
+    "track_ranks": [
+      25581,
+      31727,
+      54107,
+      32953,
+      31309,
+      31511,
+      36595,
+      32354,
+      2773,
+      31395
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Curated and Instigated",
+        "label": "",
+        "release_date": "2024-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Indigo Orchard",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Last Snowfall’s Fairytale",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fading Christmas Blues",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fever In September",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Leia´s Journey",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verve",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Santa's Slow Dance",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No More Tears For You",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dimness",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meu Sol",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Levitate",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When Love Is Gone",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late November",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blame It On My Youth - Rain",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fragile Love",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whitsunday Islands",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Arch",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Masquerade Is Over",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Northwood Hills",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After The Rain",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All To Soon",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Could It Be You",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Summer Knows",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cherokee",
+        "label": "",
+        "release_date": "2021-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blame It On My Youth",
+        "label": "",
+        "release_date": "2021-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someone To Watch Over Me",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Born in July",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "James Jackson Jazz Trio",
+      "Glass Trio",
+      "Dan Evans-Parker",
+      "Jazzy Coffee",
+      "Cozy Bedroom",
+      "Cozy Coffee Shop",
+      "Relaxing Jazz Piano"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 292804,
+    "name": "Guy Lumia",
+    "profile": "Violinist. One of the [a=Metropolitan Opera Orchestra]'s two concertmasters.\r\nMr. Lumia, who joined the orchestra in 1983, was also a member of the Greenwich Piano Quartet and the Long Island Chamber Ensemble and had been active as a soloist and chamber player since 1960. He died in 1988 at the age of 51.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Luv You Madly Orchestra",
+      "Pond Life (2)",
+      "The Wet String Quartet",
+      "The Pond Life Orchestra"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 91,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "2xCD, Comp",
+      "2xDVD-V, NTSC, DTS",
+      "3xCD, Comp",
+      "Box, Comp + CD, Album, RE, RM + CD, Album, RE, RM ",
+      "CD, Comp",
+      "Cass, Comp",
+      "LP, Album",
+      "LP, MP"
+    ],
+    "labels": [
+      "Barclay",
+      "Deutsche Grammophon",
+      "Efvee Records, Efvee Records",
+      "HQZ",
+      "LaserLight Digital",
+      "Polydor",
+      "Sony Jazz, Epic, CTI Records",
+      "T-Neck, Epic, Legacy, Sony Music",
+      "Warner Bros. Records",
+      "Windsong Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Long Island Quartet",
+    "mbid": "03f12006-5835-4158-8d8d-c9e3330f9dc7",
+    "listeners": 73884,
+    "playcount": 319354,
+    "listener_play_ratio": 4.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Long+Island+Quartet\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Wonder Eve",
+      "Ikigai",
+      "Lee Davis",
+      "More Than Jazz",
+      "Gillian Spencer Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dimness",
+        "listeners": 17245,
+        "playcount": 37576
+      },
+      {
+        "name": "Memories Of You",
+        "listeners": 16405,
+        "playcount": 41518
+      },
+      {
+        "name": "When Love Is Gone",
+        "listeners": 13230,
+        "playcount": 28689
+      },
+      {
+        "name": "Someone To Watch Over Me",
+        "listeners": 11724,
+        "playcount": 32070
+      },
+      {
+        "name": "I Remember Clifford",
+        "listeners": 10198,
+        "playcount": 29293
+      },
+      {
+        "name": "Alfie",
+        "listeners": 9648,
+        "playcount": 26978
+      },
+      {
+        "name": "All To Soon",
+        "listeners": 9244,
+        "playcount": 21746
+      },
+      {
+        "name": "Here´s That Rainy Day",
+        "listeners": 7726,
+        "playcount": 18221
+      },
+      {
+        "name": "Northwood Hills",
+        "listeners": 7306,
+        "playcount": 15608
+      },
+      {
+        "name": "Blame It On My Youth - Rain",
+        "listeners": 6606,
+        "playcount": 24822
+      }
+    ],
+    "url": "https://www.last.fm/music/Long+Island+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

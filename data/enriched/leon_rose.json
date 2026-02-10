@@ -1,0 +1,158 @@
+{
+  "artist_name": "Leon Rose",
+  "artist_id": "leon_rose",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:02:32.073921+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 100190722,
+    "name": "Leon Rose",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/100190722",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/26c0ccaf87003b772b553c7d2799987f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Moon Dance",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream Sweetly",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodnight Stars",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Really A God",
+        "label": "",
+        "release_date": "2022-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Really a God",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4879118,
+    "name": "Leon Rose",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 1,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Single"
+    ],
+    "labels": [
+      "Columbia"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Leon Rose",
+    "mbid": "",
+    "listeners": 1022,
+    "playcount": 7606,
+    "listener_play_ratio": 7.44,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Leon+Rose\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Luca Verini",
+      "Elin Noa",
+      "Rowan Finch",
+      "Brian Zeller",
+      "Noélina Faye"
+    ],
+    "top_tracks": [
+      {
+        "name": "Goodnight Stars",
+        "listeners": 897,
+        "playcount": 6112
+      },
+      {
+        "name": "Dream Sweetly",
+        "listeners": 409,
+        "playcount": 1492
+      },
+      {
+        "name": "Really a God",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Leon+Rose"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,188 @@
+{
+  "artist_name": "Jeremiah River",
+  "artist_id": "jeremiah_river",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:26:58.975553+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 321815471,
+    "name": "Jeremiah River",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/321815471",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/04a4f2a001882f68230262cf0e7ecfac/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Scintilla",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lady's Mantle",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lo, How a Rose E'er Blooming",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memories of Spring",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Your Arms",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Care",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Garden",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Herd",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4811078,
+    "name": "Jerry King & The Rivertown Ramblers",
+    "profile": "Jerry King and the Rivertown Ramblers was started by bass player Jeremiah Brockman.",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Jerry King (16)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 0,
+    "total_releases": 9,
+    "formats": [
+      "2xCD, Comp",
+      "7\", EP, Comp, Ltd",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Comp"
+    ],
+    "labels": [
+      "El Toro Records",
+      "Fury Records",
+      "Golly Gee Records, HumTone Records",
+      "Not On Label",
+      "V-8 Records",
+      "Wild Records (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jeremiah River",
+    "mbid": "",
+    "listeners": 1622,
+    "playcount": 4871,
+    "listener_play_ratio": 3.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jeremiah+River\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eric Nilson",
+      "Mateo Morel",
+      "F. Garling",
+      "David Sereno",
+      "Max Stewart"
+    ],
+    "top_tracks": [
+      {
+        "name": "Care",
+        "listeners": 1446,
+        "playcount": 4446
+      },
+      {
+        "name": "Memories of Spring",
+        "listeners": 216,
+        "playcount": 423
+      },
+      {
+        "name": "In Your Arms",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Jeremiah+River"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

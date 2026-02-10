@@ -1,0 +1,140 @@
+{
+  "artist_name": "Kelley Bern",
+  "artist_id": "kelley_bern",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:47:47.640291+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Kelley Bern', got 'Jellybean'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1330908,
+    "name": "Bernard Kelley",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Music Now Ensemble 1969"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Matchless Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kelley Bern",
+    "mbid": "",
+    "listeners": 3501,
+    "playcount": 11814,
+    "listener_play_ratio": 3.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kelley+Bern\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "David Snellbacher",
+      "Chris Goddard",
+      "Acoustic Guitar Songs,Classical Guitar Masters & Classical Christmas Music",
+      "Daniel Zeizz",
+      "Pamela Shay"
+    ],
+    "top_tracks": [
+      {
+        "name": "Have Yourself a Merry Little Christmas",
+        "listeners": 2041,
+        "playcount": 4175
+      },
+      {
+        "name": "Jesu, Joy of Man's Desiring",
+        "listeners": 1879,
+        "playcount": 4392
+      },
+      {
+        "name": "We Three Kings of Orient Are",
+        "listeners": 164,
+        "playcount": 352
+      },
+      {
+        "name": "The Holly and the Ivy",
+        "listeners": 137,
+        "playcount": 225
+      },
+      {
+        "name": "Angels We Have Heard on High",
+        "listeners": 123,
+        "playcount": 270
+      },
+      {
+        "name": "The First Noel",
+        "listeners": 88,
+        "playcount": 194
+      },
+      {
+        "name": "Bunessan (Morning Has Broken)",
+        "listeners": 86,
+        "playcount": 154
+      },
+      {
+        "name": "Carol of the Bells",
+        "listeners": 81,
+        "playcount": 187
+      },
+      {
+        "name": "Lo, How a Rose E'er Blooming",
+        "listeners": 76,
+        "playcount": 197
+      },
+      {
+        "name": "Away in a Manger",
+        "listeners": 76,
+        "playcount": 110
+      }
+    ],
+    "url": "https://www.last.fm/music/Kelley+Bern"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

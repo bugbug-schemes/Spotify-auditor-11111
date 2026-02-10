@@ -1,0 +1,234 @@
+{
+  "artist_name": "Abelin Lagarde",
+  "artist_id": "abelin_lagarde",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:41:18.836577+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ab8135fa-4cab-4a33-b1bf-48ed24c9270f",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/147307712",
+      "streaming": "https://music.apple.com/gb/artist/1599873191"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 147307712,
+    "name": "Abelin Lagarde",
+    "nb_fan": 7,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/147307712",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/dc986331b524328ad8d33466abe2e562/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Chanson De Berceau"
+    ],
+    "track_durations": [
+      101
+    ],
+    "track_ranks": [
+      11677
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Hush, Little Firefly",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Star for Every Wish",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cute Little Lambs",
+        "label": "",
+        "release_date": "2025-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Best Duck",
+        "label": "",
+        "release_date": "2025-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sky Stairs",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Le recueillement",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Avoir Envie",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chanson De Berceau",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Réveiller",
+        "label": "",
+        "release_date": "2022-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lumière du matin",
+        "label": "",
+        "release_date": "2021-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Abelin Lagarde",
+    "mbid": "ab8135fa-4cab-4a33-b1bf-48ed24c9270f",
+    "listeners": 51143,
+    "playcount": 247982,
+    "listener_play_ratio": 4.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Abelin+Lagarde\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Will Kaufman",
+      "Linn Hope",
+      "Jon Albreit",
+      "Mes Croquis",
+      "Tristaan Wilkes"
+    ],
+    "top_tracks": [
+      {
+        "name": "Le recueillement",
+        "listeners": 35053,
+        "playcount": 149553
+      },
+      {
+        "name": "Lumière Du Matin",
+        "listeners": 16730,
+        "playcount": 50337
+      },
+      {
+        "name": "My Best Duck",
+        "listeners": 2291,
+        "playcount": 27293
+      },
+      {
+        "name": "Chanson De Berceau",
+        "listeners": 1909,
+        "playcount": 20508
+      },
+      {
+        "name": "Réveiller",
+        "listeners": 120,
+        "playcount": 257
+      },
+      {
+        "name": "Le Recueillement (Piano & Rain)",
+        "listeners": 8,
+        "playcount": 10
+      },
+      {
+        "name": "Hush, Little Firefly",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Avoir Envie",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Sky Stairs",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Cute Little Lambs",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Abelin+Lagarde"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

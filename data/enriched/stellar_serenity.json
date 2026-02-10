@@ -1,0 +1,373 @@
+{
+  "artist_name": "Stellar Serenity",
+  "artist_id": "stellar_serenity",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:17:50.170669+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9e5bd106-bf03-4d5f-bd67-eebeb07741e7",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/219093775",
+      "streaming": "https://tidal.com/artist/40283141"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 219093775,
+    "name": "Stellar Serenity",
+    "nb_fan": 9,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/219093775",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a537269c46aa2d37ea5f7065a613395b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Evening"
+    ],
+    "track_durations": [
+      148
+    ],
+    "track_ranks": [
+      140358
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Cold Frame",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Ice",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet down",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evening",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meadow",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azure",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shore",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Closing Time",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sensible",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Empty Space",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Minuano",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cali Dreams",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Supernova",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solar",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naoshima",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pacific Waves",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonwalk",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sentimento",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When You Dream",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Small Steps",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coral Dusk",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amber Sun",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Afterglow",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 860941,
+    "name": "Roger Mouzakis",
+    "profile": "With the evolution of music, comes the acknowledgement of DJs who have kept up with their focus on becoming a true pioneer. Roger-M has established himself as a DJ and Producer who has strived to emphasize his presense in the music world. Using various monikers; Sieg & Mouzakis (Fritz Sieg & Roger-M), Aspuration (Ray Vera & Roger-M) & his own trademark name \"Roger-M\"; accomplishments are well noted. The debut Sieg & Mouzakis track; “Body Takes Control” immediately signing with Plastica in the UK & was charted # 1 by Balance Promote Group (which serves as the top progressive DJ pool in the world). Also great success & support on tracks \"By Your Side\" & \"Serenity\" on Neutone Recordings; along with the smash \"Fading Away\" on Tiesto's Black Hole Recordings (which all feature the stellar vocals of Eva). There has been tremendous support of his tracks by Tiesto, Danny Tenaglia, Superchumbo, Oscar G, Sander Kleinenberg, Deep Dish, Solarstone and so on. Whether it’s live or as you listen to on",
+    "realname": "Roger Mouzakis",
+    "social_urls": [
+      "http://www.djrogerm.com",
+      "http://www.myspace.com/rogerm",
+      "https://www.facebook.com/roger.mouzakis"
+    ],
+    "members": [],
+    "groups": [
+      "Sieg & Mouzakis"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 17,
+    "digital_only_releases": 15,
+    "total_releases": 32,
+    "formats": [
+      "",
+      "15xFile, WAV, Comp + File, WAV, Mixed",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Mixed, Sup",
+      "2xCD, Mixed",
+      "3xFile, MP3, Single, 320",
+      "6xFile, MP3, 320",
+      "9xFile, MP3, 320",
+      "CD, Comp",
+      "CD, Comp, Mixed",
+      "CD, Comp, Promo",
+      "CDr, Comp",
+      "CDr, Comp, Promo",
+      "File, MP3"
+    ],
+    "labels": [
+      "BIGbird Records",
+      "Black Hole Recordings, Black Hole Recordings, Black Hole Recordings",
+      "Grotesque DRK, Grotesque DRK",
+      "More Music And Media",
+      "More Music And Media, Da Music, TBA AG",
+      "Neutone Recordings",
+      "Plastic Fantastic",
+      "Songbird",
+      "ThriveDance",
+      "X-Mix"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Stellar Serenity",
+    "mbid": "",
+    "listeners": 105295,
+    "playcount": 736106,
+    "listener_play_ratio": 6.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Stellar+Serenity\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Matt Deep",
+      "Sleepwear",
+      "Benjamin Mounfield",
+      "Shimmerweave",
+      "Les Coralines"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moonwalk",
+        "listeners": 45200,
+        "playcount": 276362
+      },
+      {
+        "name": "Shore",
+        "listeners": 25136,
+        "playcount": 124765
+      },
+      {
+        "name": "Cali Dreams",
+        "listeners": 21121,
+        "playcount": 107208
+      },
+      {
+        "name": "Coral Dusk",
+        "listeners": 12844,
+        "playcount": 56629
+      },
+      {
+        "name": "Evening",
+        "listeners": 12007,
+        "playcount": 33956
+      },
+      {
+        "name": "Empty Space",
+        "listeners": 11747,
+        "playcount": 41458
+      },
+      {
+        "name": "Amber Sun",
+        "listeners": 9002,
+        "playcount": 25315
+      },
+      {
+        "name": "Minuano",
+        "listeners": 8180,
+        "playcount": 15249
+      },
+      {
+        "name": "Closing Time",
+        "listeners": 7427,
+        "playcount": 28259
+      },
+      {
+        "name": "Sensible",
+        "listeners": 6772,
+        "playcount": 19687
+      }
+    ],
+    "url": "https://www.last.fm/music/Stellar+Serenity"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

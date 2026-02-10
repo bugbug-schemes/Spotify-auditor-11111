@@ -1,0 +1,134 @@
+{
+  "artist_name": "Malik Mulk",
+  "artist_id": "malik_mulk",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:25:25.424000+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 302192611,
+    "name": "Malik Mulk",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/302192611",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c364d7051fdc9c083f16b668c829db94/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "When Dreams Fly",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When You Close Your Eyes",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Magic Door",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time For Bed",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Time",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Malik Mulk",
+    "mbid": "",
+    "listeners": 1371,
+    "playcount": 11505,
+    "listener_play_ratio": 8.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Malik+Mulk\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Charles Karmen",
+      "Tod Forest",
+      "Elowen Moon",
+      "Cameron Holmes",
+      "Louis Luz"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Magic Door",
+        "listeners": 1227,
+        "playcount": 9311
+      },
+      {
+        "name": "When You Close Your Eyes",
+        "listeners": 484,
+        "playcount": 2194
+      }
+    ],
+    "url": "https://www.last.fm/music/Malik+Mulk"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

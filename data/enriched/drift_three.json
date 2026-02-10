@@ -1,0 +1,201 @@
+{
+  "artist_name": "Drift three",
+  "artist_id": "drift_three",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:35:24.572015+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 268808252,
+    "name": "Drift three",
+    "nb_fan": 2,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/268808252",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4c8449d75268c1c79f646c411a81349a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Whisperwave",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nebula",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lightfall",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Bright Beyond",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chasing Moonbeams",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloud Image",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Radience",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Sensation",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alluvial",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "To Illuminate",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6743451,
+    "name": "The Drifters Three",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "7\", EP"
+    ],
+    "labels": [
+      "Century Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Drift three",
+    "mbid": "",
+    "listeners": 11927,
+    "playcount": 30945,
+    "listener_play_ratio": 2.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Drift+three\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Slumber Creek",
+      "OceanFinder",
+      "Tiam Aref",
+      "Njarka",
+      "Tonin"
+    ],
+    "top_tracks": [
+      {
+        "name": "To Illuminate",
+        "listeners": 5943,
+        "playcount": 16573
+      },
+      {
+        "name": "Lightfall",
+        "listeners": 4831,
+        "playcount": 12446
+      },
+      {
+        "name": "Nebula",
+        "listeners": 1372,
+        "playcount": 1914
+      },
+      {
+        "name": "Alluvial",
+        "listeners": 5,
+        "playcount": 8
+      },
+      {
+        "name": "Still Sensation",
+        "listeners": 3,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Drift+three"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

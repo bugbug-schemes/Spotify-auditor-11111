@@ -1,0 +1,125 @@
+{
+  "artist_name": "Suburban DZ",
+  "artist_id": "suburban_dz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:22:32.695126+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Suburban DZ', got 'Sub Urban'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Suburban DZ",
+    "mbid": "",
+    "listeners": 126239,
+    "playcount": 1376053,
+    "listener_play_ratio": 10.9,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Suburban+DZ\">Read more on Last.fm</a>",
+    "tags": [
+      "white noise",
+      "ambient",
+      "Non-music"
+    ],
+    "similar_artists": [
+      "Granular",
+      "Ozonezzz",
+      "ULXI",
+      "Sweet Sol",
+      "The Frequency Shifters"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ambient Noise 100 Hz",
+        "listeners": 68019,
+        "playcount": 364370
+      },
+      {
+        "name": "Pillows (Brown Noise)",
+        "listeners": 55242,
+        "playcount": 310090
+      },
+      {
+        "name": "Dozing Brown Noise",
+        "listeners": 36765,
+        "playcount": 209270
+      },
+      {
+        "name": "Clouds (Brown Noise)",
+        "listeners": 19087,
+        "playcount": 70005
+      },
+      {
+        "name": "Brown Noise Ocean",
+        "listeners": 11872,
+        "playcount": 43667
+      },
+      {
+        "name": "Auditory Aura (Alpha Binaural 67.8 Hz - 77 Hz)",
+        "listeners": 11658,
+        "playcount": 40971
+      },
+      {
+        "name": "Bloom Drops",
+        "listeners": 10463,
+        "playcount": 42948
+      },
+      {
+        "name": "Mosslight Rain",
+        "listeners": 9614,
+        "playcount": 41237
+      },
+      {
+        "name": "Ambient Noise 500 Hz",
+        "listeners": 8622,
+        "playcount": 30974
+      },
+      {
+        "name": "Silent Presence (Binaural Alpha 93.7 Hz - 85.7 Hz)",
+        "listeners": 7285,
+        "playcount": 24931
+      }
+    ],
+    "url": "https://www.last.fm/music/Suburban+DZ"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

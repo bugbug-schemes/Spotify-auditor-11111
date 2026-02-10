@@ -1,0 +1,172 @@
+{
+  "artist_name": "Mike Nora",
+  "artist_id": "mike_nora",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:43:02.314425+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "04c53a0e-a335-4309-b911-0e090783c1ff",
+    "type": "Person",
+    "country": "NO",
+    "area": "Norway",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/83268582",
+      "streaming": "https://tidal.com/artist/18005216",
+      "youtube music": "https://music.youtube.com/channel/UCPUtToR2D72ZLOyOGRrXx8A"
+    },
+    "labels": [
+      "urbanundergrounds"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mike Nora', got 'Mike Moreno'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 978169,
+    "name": "Ravens & Chimes",
+    "profile": "* Asher Lack - Vocals, Guitar, Harmonium\r\n* Brittany Anjou - Piano, Vocals, Glockenspiel\r\n* Avery Brooks - Synths, Keys\r\n* Abraham Pollack - Bass, Mandolin\r\n* Nora Kelleher - Flute, Vocals\r\n* Mike - Drums\r\n",
+    "realname": "",
+    "social_urls": [
+      "http://www.ravensandchimes.com/",
+      "http://www.myspace.com/ravensandchimes"
+    ],
+    "members": [
+      "Rich Levinson",
+      "Abraham Pollack",
+      "Asher Lack",
+      "Avery Brooks",
+      "Nora Kelleher",
+      "Michael Riddleberger"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 2,
+    "digital_only_releases": 4,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "20xFile, MP3, Comp, 320",
+      "CD, Comp",
+      "CD, Comp, Promo"
+    ],
+    "labels": [
+      "Filter Magazine",
+      "RethinkPopMusic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mike Nora",
+    "mbid": "",
+    "listeners": 11674,
+    "playcount": 41757,
+    "listener_play_ratio": 3.58,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mike+Nora\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mareel",
+      "yvwn.",
+      "Jackcem",
+      "Lil Francky",
+      "Cloudroom"
+    ],
+    "top_tracks": [
+      {
+        "name": "hello buddy",
+        "listeners": 8307,
+        "playcount": 18448
+      },
+      {
+        "name": "solitude",
+        "listeners": 7350,
+        "playcount": 15112
+      },
+      {
+        "name": "how long",
+        "listeners": 3877,
+        "playcount": 7248
+      },
+      {
+        "name": "away from home",
+        "listeners": 140,
+        "playcount": 247
+      },
+      {
+        "name": "talk more",
+        "listeners": 102,
+        "playcount": 344
+      },
+      {
+        "name": "away from home pt. 2",
+        "listeners": 88,
+        "playcount": 182
+      },
+      {
+        "name": "Flipped FM",
+        "listeners": 51,
+        "playcount": 99
+      },
+      {
+        "name": "Good Morning",
+        "listeners": 27,
+        "playcount": 37
+      },
+      {
+        "name": "Mentiras",
+        "listeners": 13,
+        "playcount": 16
+      },
+      {
+        "name": "letting go",
+        "listeners": 5,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Mike+Nora"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

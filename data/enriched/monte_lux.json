@@ -1,0 +1,162 @@
+{
+  "artist_name": "Monte Lux",
+  "artist_id": "monte_lux",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:48:54.000950+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2eb9c853-cf8d-4a48-955c-0019a9fb627b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0DU0hCMRwnxPLYH6a8D67m",
+      "streaming": "https://music.apple.com/gb/artist/1848351377"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 352576172,
+    "name": "Monte Lux",
+    "nb_fan": 2,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/352576172",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/034b1563b037a716b4afa02cd0086fe8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Contact"
+    ],
+    "track_durations": [
+      152
+    ],
+    "track_ranks": [
+      364443
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Blue Velvet",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contact",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4322282,
+    "name": "Lux Montes",
+    "profile": "",
+    "realname": "Lucile Beauvais",
+    "social_urls": [
+      "https://www.facebook.com/luxmontesmusic/",
+      "http://luxmontes.bandcamp.com/",
+      "http://www.luxmontes.com/",
+      "https://soundcloud.com/luxmontes"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 6,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "20xFile, MP3, Comp, 320",
+      "4xFile, MP3, EP, 320",
+      "6xFile, MP3, EP, 320",
+      "CD, Album",
+      "CD, Comp, Smplr"
+    ],
+    "labels": [
+      "Abus Dangereux",
+      "Boxon Records",
+      "Not On Label",
+      "Police Records (4)",
+      "Verdad Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Monte Lux",
+    "mbid": "",
+    "listeners": 1391,
+    "playcount": 2428,
+    "listener_play_ratio": 1.75,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Monte+Lux\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "gelato mac",
+      "Coco Siesta",
+      "Echo Riviera",
+      "Soljani",
+      "Bantu Jafari"
+    ],
+    "top_tracks": [
+      {
+        "name": "Contact",
+        "listeners": 1391,
+        "playcount": 2428
+      }
+    ],
+    "url": "https://www.last.fm/music/Monte+Lux"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

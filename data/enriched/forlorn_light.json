@@ -1,0 +1,219 @@
+{
+  "artist_name": "Forlorn Light",
+  "artist_id": "forlorn_light",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:40:32.001944+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 237426311,
+    "name": "Forlorn Light",
+    "nb_fan": 2,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/237426311",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/94027779cc03d027be8ea8ab99df0c15/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Gentle Caress (in the Rain)"
+    ],
+    "track_durations": [
+      172
+    ],
+    "track_ranks": [
+      25783
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Aira",
+        "label": "",
+        "release_date": "2025-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waking Peacefully (in the Rain)",
+        "label": "",
+        "release_date": "2025-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aqua Cascade (by a Forest Stream)",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Return to Center (in the Rain)",
+        "label": "",
+        "release_date": "2024-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Caress & Waking Peacefully",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aqua Cascade & Return to Center",
+        "label": "",
+        "release_date": "2023-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Caress & Waking Peacefully",
+        "label": "",
+        "release_date": "2023-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4626477,
+    "name": "Johnny Forlorn",
+    "profile": "Seattle (US) based darkwave / goth artist. Formerly of Shadow Light, Faith & Disease, and Prayers for the Raven.",
+    "realname": "John Clough",
+    "social_urls": [
+      "https://johnnyforlorn.com/",
+      "https://www.facebook.com/johnnyforlorn",
+      "https://johnnyforlorn.bandcamp.com/",
+      "https://soundcloud.com/johnny-forlorn"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "CD, Album"
+    ],
+    "labels": [
+      "Tragick Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Forlorn Light",
+    "mbid": "",
+    "listeners": 15496,
+    "playcount": 66643,
+    "listener_play_ratio": 4.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Forlorn+Light\">Read more on Last.fm</a>",
+    "tags": [
+      "USA"
+    ],
+    "similar_artists": [
+      "Collected Dreams",
+      "Heal Divisions",
+      "Ellisar Dalana",
+      "Nerea Vallée",
+      "Songlark"
+    ],
+    "top_tracks": [
+      {
+        "name": "Waking Peacefully (by a Forest Stream)",
+        "listeners": 11049,
+        "playcount": 43294
+      },
+      {
+        "name": "Aqua Cascade (by a Forest Stream)",
+        "listeners": 2421,
+        "playcount": 7074
+      },
+      {
+        "name": "Return to Center (in the Rain)",
+        "listeners": 1762,
+        "playcount": 4827
+      },
+      {
+        "name": "Aqua Cascade",
+        "listeners": 1041,
+        "playcount": 2714
+      },
+      {
+        "name": "Gentle Caress (in the Rain)",
+        "listeners": 1030,
+        "playcount": 4791
+      },
+      {
+        "name": "Waking Peacefully (in the Rain)",
+        "listeners": 773,
+        "playcount": 2466
+      },
+      {
+        "name": "Aira",
+        "listeners": 351,
+        "playcount": 776
+      },
+      {
+        "name": "Gentle Caress",
+        "listeners": 81,
+        "playcount": 629
+      },
+      {
+        "name": "Waking Peacefully",
+        "listeners": 18,
+        "playcount": 31
+      },
+      {
+        "name": "Sleep",
+        "listeners": 8,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/Forlorn+Light"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

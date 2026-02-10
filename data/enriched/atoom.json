@@ -1,0 +1,140 @@
+{
+  "artist_name": "Atoom",
+  "artist_id": "atoom",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:17:00.850398+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Atoom', got 'Atoms For Peace'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3828755,
+    "name": "Atoom De Luxe",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "4xCD, Comp"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "ATOOM",
+    "mbid": "",
+    "listeners": 76201,
+    "playcount": 756653,
+    "listener_play_ratio": 9.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/ATOOM\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Waves Of Sine",
+      "Milo Graves",
+      "Oliver Skye",
+      "Triangular Prism III",
+      "Places We Go"
+    ],
+    "top_tracks": [
+      {
+        "name": "Panacea",
+        "listeners": 21699,
+        "playcount": 74181
+      },
+      {
+        "name": "Delta Equinox 3 Hz",
+        "listeners": 14465,
+        "playcount": 83291
+      },
+      {
+        "name": "Delta Air 2 Hz",
+        "listeners": 12300,
+        "playcount": 72351
+      },
+      {
+        "name": "Delta Beam 4 Hz",
+        "listeners": 11039,
+        "playcount": 64596
+      },
+      {
+        "name": "Alpha Equinox 11 Hz",
+        "listeners": 10235,
+        "playcount": 35032
+      },
+      {
+        "name": "Beta Ship 15 Hz",
+        "listeners": 9676,
+        "playcount": 28102
+      },
+      {
+        "name": "Floating Through Solfeggio 528 Hz",
+        "listeners": 9396,
+        "playcount": 38651
+      },
+      {
+        "name": "Delta Ship 3 Hz",
+        "listeners": 9216,
+        "playcount": 50395
+      },
+      {
+        "name": "Alpha Zone 12 Hz",
+        "listeners": 8812,
+        "playcount": 30262
+      },
+      {
+        "name": "Solar Solfeggio 528 Hz",
+        "listeners": 8000,
+        "playcount": 34092
+      }
+    ],
+    "url": "https://www.last.fm/music/ATOOM"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

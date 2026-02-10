@@ -1,0 +1,195 @@
+{
+  "artist_name": "Midnight Window Trio",
+  "artist_id": "midnight_window_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:42:31.978496+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 335192221,
+    "name": "Midnight Window Trio",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/335192221",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/846eb5d4266222a588e76eba88e22c69/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Lets talk for Hours",
+      "Late Checkout",
+      "Above Clouds"
+    ],
+    "track_durations": [
+      204,
+      206,
+      207
+    ],
+    "track_ranks": [
+      125303,
+      143192,
+      47154
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Midnight Heart",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Wonderland",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn Drift",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Above Clouds",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Checkout",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lets talk for Hours",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Scenes in Rain",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Midnight Window Trio",
+    "mbid": "",
+    "listeners": 17970,
+    "playcount": 48486,
+    "listener_play_ratio": 2.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Midnight+Window+Trio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Trio In Transit",
+      "The Fading Light Trio",
+      "Blue Hour Theory",
+      "Third Rail Trio",
+      "Neil Dunker"
+    ],
+    "top_tracks": [
+      {
+        "name": "Late Checkout",
+        "listeners": 10100,
+        "playcount": 20536
+      },
+      {
+        "name": "Lets talk for Hours",
+        "listeners": 6221,
+        "playcount": 12716
+      },
+      {
+        "name": "Above Clouds",
+        "listeners": 4139,
+        "playcount": 8640
+      },
+      {
+        "name": "Midnight Heart",
+        "listeners": 4077,
+        "playcount": 6531
+      },
+      {
+        "name": "Winter Wonderland",
+        "listeners": 16,
+        "playcount": 32
+      },
+      {
+        "name": "Santa Claus Is Coming to Town",
+        "listeners": 10,
+        "playcount": 23
+      },
+      {
+        "name": "Scenes in Rain",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Midnight Window Trio",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Autumn Drift",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Midnight+Window+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

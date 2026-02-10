@@ -1,0 +1,101 @@
+{
+  "artist_name": "Lue Miles",
+  "artist_id": "lue_miles",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:16:48.289910+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lue Miles', got 'Lee Miles'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lue Miles",
+    "mbid": "",
+    "listeners": 5363,
+    "playcount": 71351,
+    "listener_play_ratio": 13.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lue+Miles\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Victoria Kane",
+      "lily lullaby",
+      "Leanne Haughey",
+      "Jordan Avery",
+      "Naéli Gosally"
+    ],
+    "top_tracks": [
+      {
+        "name": "Butterfly Song",
+        "listeners": 4641,
+        "playcount": 64980
+      },
+      {
+        "name": "Christmas Traditions",
+        "listeners": 773,
+        "playcount": 4214
+      },
+      {
+        "name": "Night Before Christmas Eve",
+        "listeners": 388,
+        "playcount": 2107
+      },
+      {
+        "name": "December Snow",
+        "listeners": 23,
+        "playcount": 36
+      },
+      {
+        "name": "Family Gathering",
+        "listeners": 9,
+        "playcount": 13
+      },
+      {
+        "name": "Night",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lue+Miles"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

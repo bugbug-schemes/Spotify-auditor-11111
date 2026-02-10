@@ -1,0 +1,523 @@
+{
+  "artist_name": "Elmiene",
+  "artist_id": "elmiene",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:25:32.573042+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1a610683-e359-4895-a4a7-e98cf314e502",
+    "type": "Person",
+    "country": "",
+    "area": "Oxford",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "r&b"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0004208835",
+      "free streaming": "https://www.deezer.com/artist/153953212",
+      "purchase for download": "https://music.apple.com/gb/artist/1599562425",
+      "streaming": "https://tidal.com/artist/29667862"
+    },
+    "labels": [
+      "Grand Line Music",
+      "R&R Digital",
+      "Polydor",
+      "COLORSxSTUDIOS",
+      "Polydor Records",
+      "Def Jam Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 153953212,
+    "name": "Elmiene",
+    "nb_fan": 3674,
+    "nb_album": 34,
+    "link": "https://www.deezer.com/artist/153953212",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3b43dc9193a6a119a27db1542c3cd1f6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Dahi",
+      "Jordan Ward",
+      "Muni Long",
+      "Rance 1500",
+      "Timbaland"
+    ],
+    "contributor_roles": {
+      "Dahi": [
+        "Main"
+      ],
+      "Timbaland": [
+        "Main"
+      ],
+      "Rance 1500": [
+        "Main"
+      ],
+      "Muni Long": [
+        "Main"
+      ],
+      "Jordan Ward": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Reclusive",
+      "Useless (Without You)",
+      "Someday",
+      "Shame",
+      "Crystal Tears",
+      "By Now",
+      "Someday (Remix)",
+      "Useless (Without You) (Begging Remix)",
+      "Cry Against The Wind",
+      "Mad At Fire",
+      "Until It's Dust",
+      "Damage Control",
+      "Endless No Mores - A COLORS SHOW",
+      "Different Too",
+      "Over You By Now (Live From 525)",
+      "Light Work",
+      "Miss Hot July",
+      "Damage Control",
+      "Why (Spare Me Tears)",
+      "Choose You",
+      "Sweetness",
+      "Open Light",
+      "So Into You (Live From Brussels)",
+      "Mad At Fire (Live at RAK Studios)",
+      "For The Deported"
+    ],
+    "track_durations": [
+      186,
+      167,
+      162,
+      152,
+      239,
+      168,
+      269,
+      188,
+      259,
+      232,
+      155,
+      148,
+      179,
+      167,
+      241,
+      217,
+      201,
+      150,
+      205,
+      251,
+      252,
+      216,
+      114,
+      241,
+      108
+    ],
+    "track_ranks": [
+      527938,
+      458249,
+      421151,
+      310720,
+      608996,
+      350443,
+      171485,
+      453731,
+      450429,
+      387239,
+      184295,
+      396692,
+      334845,
+      288871,
+      157321,
+      333089,
+      305810,
+      284319,
+      240501,
+      344678,
+      114247,
+      301922,
+      77965,
+      164827,
+      119492
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 9,
+      "ep": 1,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Heat The Streets Some Mo'",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live From Brussels",
+        "label": "",
+        "release_date": "2025-10-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heat The Streets",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "For The Deported",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anyway I Can",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live From 525",
+        "label": "",
+        "release_date": "2024-07-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Marking My Time (Again)",
+        "label": "",
+        "release_date": "2024-04-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at RAK Studios",
+        "label": "",
+        "release_date": "2024-01-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Marking My Time",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "EL-MEAN",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Reclusive",
+        "label": "",
+        "release_date": "2026-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cry Against The Wind",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miss Hot July",
+        "label": "",
+        "release_date": "2025-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Damage Control",
+        "label": "",
+        "release_date": "2025-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Useless (Without You) (Begging Remix)",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Useless (Without You)",
+        "label": "",
+        "release_date": "2025-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Is The Remix",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anyways (Live At The Belasco)",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anyways",
+        "label": "",
+        "release_date": "2024-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Light Work",
+        "label": "",
+        "release_date": "2024-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweetness",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweetness",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crystal Tears",
+        "label": "",
+        "release_date": "2024-03-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someday (Unplugged)",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lover, You Should’ve Come Over",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marking My Time (BADBADNOTGOOD Edit)",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someday",
+        "label": "",
+        "release_date": "2023-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shame",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marking My Time",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mama",
+        "label": "",
+        "release_date": "2023-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Ari Lennox",
+      "Leon Thomas",
+      "Alex Isley",
+      "UMI",
+      "Sasha Keable",
+      "Naomi Sharon",
+      "Jaz Karis",
+      "Destin Conrad",
+      "Teyana Taylor",
+      "Syd"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11740121,
+    "name": "Elmiene",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 6,
+    "digital_only_releases": 3,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "12\", EP, Ltd, Cle",
+      "12\", Maxi, Promo",
+      "2xLP, Comp, Ltd",
+      "CDr, Comp",
+      "CDr, Mixed",
+      "LP, Ltd, San"
+    ],
+    "labels": [
+      "Colorsxstudios",
+      "DMC, DMC",
+      "Not On Label",
+      "Polydor",
+      "Polydor, Def Jam Recordings, Two First Names"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elmiene",
+    "mbid": "1a610683-e359-4895-a4a7-e98cf314e502",
+    "listeners": 179013,
+    "playcount": 2076459,
+    "listener_play_ratio": 11.6,
+    "bio_exists": true,
+    "bio_summary": "Elmiene (born in Frankfurt) is Germany-born British-Sudanese soul singer Abdala Elamin who was raised in Oxford. He was placed fifth in the BBC Sound of 2024 poll and was nominated for the Brit Award for Rising Star in 2025. \n\nHe released the EP \"El-Mean\" in 2023. <a href=\"https://www.last.fm/music/Elmiene\">Read more on Last.fm</a>",
+    "tags": [
+      "rnb",
+      "pop",
+      "soul",
+      "UK",
+      "funk_add_to_lidarr_batch_9"
+    ],
+    "similar_artists": [
+      "Sasha Keable",
+      "Odeal",
+      "Dylan Sinclair",
+      "Lekan",
+      "Sinéad Harnett"
+    ],
+    "top_tracks": [
+      {
+        "name": "Someday",
+        "listeners": 53375,
+        "playcount": 263550
+      },
+      {
+        "name": "Mad At Fire",
+        "listeners": 42601,
+        "playcount": 277175
+      },
+      {
+        "name": "Crystal Tears",
+        "listeners": 30972,
+        "playcount": 135747
+      },
+      {
+        "name": "Marking My Time - BADBADNOTGOOD Edit",
+        "listeners": 30186,
+        "playcount": 107260
+      },
+      {
+        "name": "Light Work",
+        "listeners": 23743,
+        "playcount": 113229
+      },
+      {
+        "name": "Sweetness (feat. Leon Thomas)",
+        "listeners": 23508,
+        "playcount": 111610
+      },
+      {
+        "name": "Useless (Without You)",
+        "listeners": 22170,
+        "playcount": 95670
+      },
+      {
+        "name": "Why (Spare Me Tears)",
+        "listeners": 18796,
+        "playcount": 74419
+      },
+      {
+        "name": "Endless No Mores - A COLORS SHOW",
+        "listeners": 17523,
+        "playcount": 73584
+      },
+      {
+        "name": "Choose You",
+        "listeners": 16791,
+        "playcount": 61234
+      }
+    ],
+    "url": "https://www.last.fm/music/Elmiene"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

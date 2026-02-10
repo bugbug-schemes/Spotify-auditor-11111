@@ -1,0 +1,582 @@
+{
+  "artist_name": "COLIN",
+  "artist_id": "colin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:54:27.349475+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "944fb10e-9f71-4169-aa37-72184c69b751",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1943-06-08",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "doctor who",
+      "voice actor"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000064021709"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/5417588",
+      "free streaming": "https://open.spotify.com/artist/6qIyWS4OgIYiyEAPgN8JCI",
+      "IMDb": "https://www.imdb.com/name/nm0048346/",
+      "last.fm": "https://www.last.fm/music/Colin+Baker",
+      "official homepage": "http://www.colinbakeronline.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no96062155",
+      "social network": "https://twitter.com/SawbonesHex",
+      "songkick": "https://www.songkick.com/artists/488830",
+      "VIAF": "http://viaf.org/viaf/51287412",
+      "wikidata": "https://www.wikidata.org/wiki/Q440963"
+    },
+    "labels": [
+      "BBC Audiobooks",
+      "BBC",
+      "BBC Worldwide",
+      "BBC Radio Collection",
+      "Big Finish Productions",
+      "BBC Audio"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 117171882,
+    "name": "Colin",
+    "nb_fan": 538,
+    "nb_album": 91,
+    "link": "https://www.deezer.com/artist/117171882",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f8dd53f914363301b05619b57df430d2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Liam Jay",
+      "Monomy",
+      "Noile",
+      "Nokyo",
+      "SRTW"
+    ],
+    "contributor_roles": {
+      "Monomy": [
+        "Main"
+      ],
+      "SRTW": [
+        "Main"
+      ],
+      "Nokyo": [
+        "Featured"
+      ],
+      "Noile": [
+        "Main"
+      ],
+      "Liam Jay": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Quickly",
+      "Sound of The Sun",
+      "Kind of Love",
+      "Shine On",
+      "Swim",
+      "You and I",
+      "Pumped Up Kicks",
+      "Ann",
+      "Every Lifetime",
+      "Melancholy",
+      "Hot Stuff",
+      "A City",
+      "Ocean View",
+      "Seaside Drift",
+      "The Tide",
+      "Tapestry",
+      "Open",
+      "Winter Getaway",
+      "Sunrise",
+      "In Your Arms",
+      "Sunny",
+      "Slowly",
+      "To You",
+      "Lonely Nights",
+      "All I Need"
+    ],
+    "track_durations": [
+      169,
+      116,
+      166,
+      111,
+      127,
+      149,
+      122,
+      204,
+      128,
+      158,
+      122,
+      139,
+      110,
+      99,
+      121,
+      119,
+      131,
+      131,
+      117,
+      122,
+      147,
+      129,
+      121,
+      151,
+      138
+    ],
+    "track_ranks": [
+      165289,
+      156720,
+      129357,
+      115643,
+      250806,
+      160576,
+      196256,
+      157686,
+      215756,
+      117812,
+      176775,
+      177525,
+      303498,
+      191952,
+      144542,
+      232078,
+      92303,
+      160179,
+      253805,
+      114526,
+      86779,
+      82708,
+      163626,
+      91594,
+      33694
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "single": 91
+    },
+    "albums": [
+      {
+        "title": "Every Lifetime",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tapestry",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cyclone",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Tide",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Getaway",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold You",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Iris",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Find You",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Air",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By My Side",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dilemma",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clocks",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunny",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "About Love",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring Inside",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Polaroid",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aura",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Narcotic",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feel",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Castle in the Sky",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breathe",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Wonderland",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A City",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kiss Me",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweater Days",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If I Fall",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hot Chocolate",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sun and Moon",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Supergirl",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daydream",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "SRTW",
+      "Nimus",
+      "Nina Young",
+      "NLSN",
+      "Jam Patong",
+      "Pool Blue",
+      "Leviro",
+      "Luca",
+      "Shiek",
+      "nourii"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 365785,
+    "name": "Colin Greenwood",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "",
+    "physical_releases": 26,
+    "digital_only_releases": 74,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "11xFile, MP3, Album, VBR",
+      "17xFile, WAV, Album, Dlx",
+      "19xFile, AIFF, Album, Comp",
+      "24xFile, AIFF, Album",
+      "2xFile, MP3, Single, 320",
+      "2xLP, Album",
+      "2xLP, Comp",
+      "3xCD + Box, Comp",
+      "4xFile, AIFF, EP",
+      "6xDVD, Mono, Copy Prot., PAL",
+      "7\", Ltd, Gre",
+      "7\", RSD, Ltd, RSD",
+      "9xFile, FLAC",
+      "9xFile, FLAC, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album + CD, Album + CD, Album + Comp",
+      "CD, EP, Ltd",
+      "CD, Promo",
+      "File, AAC, Single, 256",
+      "File, AIFF, Comp",
+      "File, FLAC",
+      "File, FLAC, Single, RE",
+      "File, MP3, Single, 320",
+      "LP, Album",
+      "LP, Ltd, Num"
+    ],
+    "labels": [
+      "ACT (4)",
+      "Albany Records",
+      "Amalgam (2)",
+      "BMG",
+      "Basin Street Records",
+      "Beatservice Records",
+      "Capitol Records",
+      "Cherry Red",
+      "Demon Records",
+      "Dodicilune",
+      "Golden Ticket (2)",
+      "Lateralize Records",
+      "Neuklang",
+      "Not On Label",
+      "Not On Label (6:17 Self-released)",
+      "Not On Label (California Guitar Trio Self-released), Not On Label (Montreal Guitar Trio Self-released)",
+      "Not On Label (Doof Beagle Self-released)",
+      "Not On Label (Hardt'N Brook (2) Self-released)",
+      "Not On Label (Jerry Hilfiger Self-released)",
+      "Not On Label (John Ambrosini Self-released)",
+      "Not On Label (Nick Costa Self-released)",
+      "Not On Label (The Anchoress Self-released)",
+      "Not On Label (The Grand Scheme (2) Self-released)",
+      "Not On Label (mxmtoon Self-released)",
+      "Oblivion (2)",
+      "Oppilf Records",
+      "P-Roo",
+      "Pentatonix Inc.",
+      "Play It Again Sam, Bad Seed",
+      "ReR Megacorp, AnMa Productions",
+      "Signum Classics",
+      "Sony Music",
+      "Sony Music Entertainment Austria GmbH, Ariola",
+      "Sweet Cheetah, Poptek Records",
+      "TIS Rock Music Ltd",
+      "Thunderbird Releasing, Thunderbird Releasing",
+      "Verve Forecast",
+      "XL Recordings",
+      "bjurecords"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Colin",
+    "mbid": "e1855e07-3da8-4c01-a4b9-42939adf3a61",
+    "listeners": 53033,
+    "playcount": 762302,
+    "listener_play_ratio": 14.37,
+    "bio_exists": true,
+    "bio_summary": "Colin is a Dance artist from Ireland, his main genres are Disco, Eurodance, House, Turkish, Latin, Trance & Techno.\nColin released his first album in 2010 titled The City and has been releasing music frequently usually resulting in 2 album releases per year. <a href=\"https://www.last.fm/music/Colin\">Read more on Last.fm</a>",
+    "tags": [
+      "electronic",
+      "irish",
+      "ireland"
+    ],
+    "similar_artists": [
+      "Adam Jamar",
+      "Enza",
+      "Fallen Roses",
+      "Nora Van Elken",
+      "Ran the Man"
+    ],
+    "top_tracks": [
+      {
+        "name": "9 PM",
+        "listeners": 17490,
+        "playcount": 73004
+      },
+      {
+        "name": "Swim",
+        "listeners": 16179,
+        "playcount": 65991
+      },
+      {
+        "name": "Wait",
+        "listeners": 11737,
+        "playcount": 64671
+      },
+      {
+        "name": "Afraid to Love",
+        "listeners": 11171,
+        "playcount": 57606
+      },
+      {
+        "name": "You",
+        "listeners": 9142,
+        "playcount": 46796
+      },
+      {
+        "name": "Sunrise",
+        "listeners": 7429,
+        "playcount": 30362
+      },
+      {
+        "name": "In Your Arms",
+        "listeners": 4994,
+        "playcount": 14976
+      },
+      {
+        "name": "You and I",
+        "listeners": 4805,
+        "playcount": 11544
+      },
+      {
+        "name": "Amazing",
+        "listeners": 4745,
+        "playcount": 16923
+      },
+      {
+        "name": "I love You",
+        "listeners": 4483,
+        "playcount": 12313
+      }
+    ],
+    "url": "https://www.last.fm/music/Colin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

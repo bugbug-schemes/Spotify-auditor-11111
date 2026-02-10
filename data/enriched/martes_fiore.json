@@ -1,0 +1,235 @@
+{
+  "artist_name": "Martes Fiore",
+  "artist_id": "martes_fiore",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:30:53.528239+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 285358331,
+    "name": "Martes Fiore",
+    "nb_fan": 5,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/285358331",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6c229595f0574b33fe3db27d6983f067/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Returning Home",
+      "Clouds Coming",
+      "Overthinking"
+    ],
+    "track_durations": [
+      187,
+      146,
+      136
+    ],
+    "track_ranks": [
+      524105,
+      253562,
+      1797
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Fumature Lontane",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ortensia Viola",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vitigno",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Una Parola",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verdant",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fresco",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salida",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Overthinking",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Layers Of Light",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Returning Home",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rising Light",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clouds Coming",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Martes Fiore",
+    "mbid": "",
+    "listeners": 30866,
+    "playcount": 202991,
+    "listener_play_ratio": 6.58,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Martes+Fiore\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mijongya",
+      "Gianni Domenici",
+      "Nascondiglio",
+      "Li Zemin",
+      "Allysium"
+    ],
+    "top_tracks": [
+      {
+        "name": "Returning Home",
+        "listeners": 22161,
+        "playcount": 90815
+      },
+      {
+        "name": "Clouds Coming",
+        "listeners": 21299,
+        "playcount": 91601
+      },
+      {
+        "name": "Layers Of Light",
+        "listeners": 3067,
+        "playcount": 12750
+      },
+      {
+        "name": "Fresco",
+        "listeners": 2866,
+        "playcount": 6902
+      },
+      {
+        "name": "Overthinking",
+        "listeners": 221,
+        "playcount": 658
+      },
+      {
+        "name": "Salida",
+        "listeners": 83,
+        "playcount": 148
+      },
+      {
+        "name": "Fumature Lontane",
+        "listeners": 23,
+        "playcount": 46
+      },
+      {
+        "name": "Verdant",
+        "listeners": 15,
+        "playcount": 18
+      },
+      {
+        "name": "Una Parola",
+        "listeners": 12,
+        "playcount": 16
+      },
+      {
+        "name": "Ortensia Viola",
+        "listeners": 7,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/Martes+Fiore"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,121 @@
+{
+  "artist_name": "Soft Illy",
+  "artist_id": "soft_illy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:09:47.452921+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Soft Illy', got 'SOFT PLAY'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Soft Illy",
+    "mbid": "",
+    "listeners": 17786,
+    "playcount": 35270,
+    "listener_play_ratio": 1.98,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Soft+Illy\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "tonierki",
+      "Lyonti",
+      "Chillow Pillow",
+      "Velvet Static",
+      "Boxed Poems"
+    ],
+    "top_tracks": [
+      {
+        "name": "coffee",
+        "listeners": 12557,
+        "playcount": 24186
+      },
+      {
+        "name": "Carols",
+        "listeners": 5768,
+        "playcount": 11058
+      },
+      {
+        "name": "Last Christmas",
+        "listeners": 3,
+        "playcount": 14
+      },
+      {
+        "name": "waves",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "low light",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Lazy Morning",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Take it easy",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "red tulips",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "fading",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "What ifs & maybes",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Soft+Illy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

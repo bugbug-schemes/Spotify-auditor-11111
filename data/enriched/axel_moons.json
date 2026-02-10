@@ -1,0 +1,141 @@
+{
+  "artist_name": "Axel Moons",
+  "artist_id": "axel_moons",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:20:46.931081+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 347166861,
+    "name": "Axel Moons",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/347166861",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/541f7f76660e489182bde5a490b862b1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Goodnight Little Star",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Softly Through the Night",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating Through the Stars",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Wishing Tree",
+        "label": "",
+        "release_date": "2025-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That Evening Star",
+        "label": "",
+        "release_date": "2025-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Eyes",
+        "label": "",
+        "release_date": "2025-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Axel Moons",
+    "mbid": "",
+    "listeners": 1425,
+    "playcount": 14839,
+    "listener_play_ratio": 10.41,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Axel+Moons\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Richie Goulding",
+      "Ole Close",
+      "Elysia Blue",
+      "Henry Hamilton",
+      "Silas Ash"
+    ],
+    "top_tracks": [
+      {
+        "name": "That Evening Star",
+        "listeners": 1237,
+        "playcount": 11058
+      },
+      {
+        "name": "Softly Through the Night",
+        "listeners": 682,
+        "playcount": 3781
+      }
+    ],
+    "url": "https://www.last.fm/music/Axel+Moons"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

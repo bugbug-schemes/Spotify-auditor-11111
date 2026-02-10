@@ -1,0 +1,222 @@
+{
+  "artist_name": "The Afronaut",
+  "artist_id": "the_afronaut",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:30:19.010390+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "42c07802-59bc-4450-9486-2f0f29321fe8",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0RcAEaIg21iTmK6ru4WS9U",
+      "streaming": "https://music.apple.com/gb/artist/1772793071"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 284702241,
+    "name": "The Afronaut",
+    "nb_fan": 4,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/284702241",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bd82e6ba806141e10a641fe45b79a9d0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Nights of Zuri"
+    ],
+    "track_durations": [
+      126
+    ],
+    "track_ranks": [
+      287358
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Savannah Sundown",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tiger Hill",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sandcastles",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snake Oil",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Palace",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nights of Zuri",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 127274,
+    "name": "The Freaky Afronaut",
+    "profile": "German-born and US-raised, DJ-ing for 7 years as Chocolate: The Freaky Afro Naut he mixes up funky house, breaks, and slammin' tekno into one cohesive blend of fierce mayhem.",
+    "realname": "Brandon Harris",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 4,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "CDr, Album, Mixed"
+    ],
+    "labels": [
+      "OM Records esteemed"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Afronaut",
+    "mbid": "",
+    "listeners": 5461,
+    "playcount": 16633,
+    "listener_play_ratio": 3.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Afronaut\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "citron love",
+      "makers mask",
+      "Phil Axes",
+      "Chill Motion",
+      "Twin Iguana"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nights of Zuri",
+        "listeners": 2603,
+        "playcount": 5447
+      },
+      {
+        "name": "Snake Oil",
+        "listeners": 2469,
+        "playcount": 5940
+      },
+      {
+        "name": "Tiger Hill",
+        "listeners": 1241,
+        "playcount": 2195
+      },
+      {
+        "name": "Savannah Sundown",
+        "listeners": 749,
+        "playcount": 1423
+      },
+      {
+        "name": "Sandcastles",
+        "listeners": 716,
+        "playcount": 1517
+      },
+      {
+        "name": "Sahara Chills",
+        "listeners": 41,
+        "playcount": 76
+      },
+      {
+        "name": "Palace",
+        "listeners": 5,
+        "playcount": 25
+      },
+      {
+        "name": "BleedingHeart",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "4AM [Self Hate]",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Anxiety (Ohio Players)",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Afronaut"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

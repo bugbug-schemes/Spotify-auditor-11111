@@ -1,0 +1,152 @@
+{
+  "artist_name": "Elias Merin",
+  "artist_id": "elias_merin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:35:53.089034+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 332200281,
+    "name": "Elias Merin",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/332200281",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Pure Radiation",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Higher Conscience",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2414320,
+    "name": "Elías Merino",
+    "profile": "Elías Merino (born 1985) is an artist who works with sound and digital technology and lives in the UK. Currently his work is based on the exploration of computer-generated sound. Merino is interested in different approaches related with sound and digital arts, such abstract materiality, object- oriented sound, time, or posthumanities. Combining his personal activity, Elías is involved in collaborative projects and different aesthetics within unusual electronic music.\r\n \r\nElías presents his work in sound compositions and installations, which are exhibited, released, performed and diffused in the US, UK, Spain, Latinamerica, Italy, Germany,  Sweden, Poland, Finland or The Netherlands. He recently published his latest work in Leerraum and the next record will be released in the imprint Room40 in 2017.\r\n \r\nNowadays Elías Merino is a PhD researcher in Computer Music at University of Huddersfield (United Kingdom).",
+    "realname": "",
+    "social_urls": [
+      "http://www.eliasmerino.com/",
+      "https://eliasmerino.bandcamp.com/",
+      "https://eliasmerinodanieldelrio.bandcamp.com/",
+      "https://soundcloud.com/eliasmerino",
+      "https://facebook.com/eliasmerino.wounds",
+      "https://vimeo.com/synspecies"
+    ],
+    "members": [],
+    "groups": [
+      "Gur Bruo",
+      "Ogive"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 11,
+    "total_releases": 15,
+    "formats": [
+      "",
+      "11xFile, FLAC, Album",
+      "13xFile, FLAC, Comp",
+      "2xCDr, Comp",
+      "2xDVD-D, Comp",
+      "31xFile, MP3, VBR",
+      "32xFile, FLAC, Comp, 96  + File, MPEG-4 Video",
+      "3xFile, MP3, 192",
+      "6xFile, FLAC, EP",
+      "6xFile, MP3, 320",
+      "CD, EP",
+      "CDr",
+      "CDr, Album",
+      "File, FLAC",
+      "File, WAV"
+    ],
+    "labels": [
+      "$ pwgen 20",
+      "Audiotalaia",
+      "Buh Records",
+      "CentroCentro Cibeles De Cultura Y Ciudadania",
+      "Escala Netlabel",
+      "Leerraum [ ]",
+      "SUPERPANG",
+      "Surrism Phonoethics",
+      "TecnoNucleo",
+      "Truco Espárrago"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elias Merin",
+    "mbid": "",
+    "listeners": 31,
+    "playcount": 37,
+    "listener_play_ratio": 1.19,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elias+Merin\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Pure Radiation",
+        "listeners": 31,
+        "playcount": 37
+      }
+    ],
+    "url": "https://www.last.fm/music/Elias+Merin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,138 @@
+{
+  "artist_name": "Sand Rae",
+  "artist_id": "sand_rae",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:54:12.124677+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sand Rae', got 'Sandra'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16087182,
+    "name": "Sandy Raeside",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sand Rae",
+    "mbid": "",
+    "listeners": 27670,
+    "playcount": 135696,
+    "listener_play_ratio": 4.9,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sand+Rae\">Read more on Last.fm</a>",
+    "tags": [
+      "australia"
+    ],
+    "similar_artists": [
+      "Astrocalm",
+      "Tonal Topographies",
+      "Spacetiming",
+      "Lux Alba",
+      "Hulu Otto"
+    ],
+    "top_tracks": [
+      {
+        "name": "Heedance",
+        "listeners": 9696,
+        "playcount": 35384
+      },
+      {
+        "name": "Poise",
+        "listeners": 6637,
+        "playcount": 27288
+      },
+      {
+        "name": "Vide",
+        "listeners": 5703,
+        "playcount": 36525
+      },
+      {
+        "name": "Meridian",
+        "listeners": 4193,
+        "playcount": 13412
+      },
+      {
+        "name": "Close Reach",
+        "listeners": 2480,
+        "playcount": 6617
+      },
+      {
+        "name": "Alpine",
+        "listeners": 1938,
+        "playcount": 7381
+      },
+      {
+        "name": "Lapping",
+        "listeners": 793,
+        "playcount": 2759
+      },
+      {
+        "name": "Modes",
+        "listeners": 702,
+        "playcount": 2131
+      },
+      {
+        "name": "Halos",
+        "listeners": 675,
+        "playcount": 2554
+      },
+      {
+        "name": "Blue Ice",
+        "listeners": 512,
+        "playcount": 1407
+      }
+    ],
+    "url": "https://www.last.fm/music/Sand+Rae"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

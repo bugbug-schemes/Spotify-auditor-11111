@@ -1,0 +1,179 @@
+{
+  "artist_name": "Shaping Clouds",
+  "artist_id": "shaping_clouds",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:00:13.709452+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 158294692,
+    "name": "Shaping Clouds",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/158294692",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1d0b5fb94d902fd44c4ada83116e0c9a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Alpha Atmospheres",
+        "label": "",
+        "release_date": "2021-10-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Overture",
+        "label": "",
+        "release_date": "2026-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Theta mood 89 - 83hz",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glimmering heights",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weightless",
+        "label": "",
+        "release_date": "2025-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Orbital Flow",
+        "label": "",
+        "release_date": "2025-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tranquil Box Fan",
+        "label": "",
+        "release_date": "2023-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Shaping Clouds",
+    "mbid": "",
+    "listeners": 5059,
+    "playcount": 20742,
+    "listener_play_ratio": 4.1,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Shaping+Clouds\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Oasis of Calm",
+      "Fan Collector",
+      "DREAMCOVE",
+      "Outside White Noise",
+      "Mind Tickle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tranquil Box Fan",
+        "listeners": 2643,
+        "playcount": 12780
+      },
+      {
+        "name": "Orbital Flow",
+        "listeners": 2427,
+        "playcount": 7953
+      },
+      {
+        "name": "Mindset",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Sequence",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Alternative Future",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Equilibrium",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Linear Spring",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Relaxing Box Fan Rhythm",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Shaping+Clouds"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

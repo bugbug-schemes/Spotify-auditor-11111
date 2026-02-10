@@ -1,0 +1,111 @@
+{
+  "artist_name": "Andreas Björkstrand",
+  "artist_id": "andreas_björkstrand",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:58:18.109351+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 294446301,
+    "name": "Andreas Björkstrand",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/294446301",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Stillsam",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Andreas Björkstrand",
+    "mbid": "",
+    "listeners": 6274,
+    "playcount": 27545,
+    "listener_play_ratio": 4.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Andreas+Bj%C3%B6rkstrand\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Selenar Rex",
+      "Melvin Hull",
+      "C K Smith",
+      "Félix Frays",
+      "Siri Eijde"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tidlös",
+        "listeners": 5167,
+        "playcount": 23514
+      },
+      {
+        "name": "Omhuldad",
+        "listeners": 1261,
+        "playcount": 4030
+      },
+      {
+        "name": "Omtanke",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Andreas+Bj%C3%B6rkstrand"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

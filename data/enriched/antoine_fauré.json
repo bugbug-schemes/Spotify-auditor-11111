@@ -1,0 +1,121 @@
+{
+  "artist_name": "Antoine Fauré",
+  "artist_id": "antoine_fauré",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:01:54.026499+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "df6e2a05-06d2-4550-b7a9-35a00e87acc9",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Antoine Fauré', got 'Antoine Faure'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1126947,
+    "name": "Antoine Faure",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 1,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "13xCD, RM + Box, Comp, Ltd",
+      "CD, Comp, Ltd, Num, RM",
+      "CDr, Album"
+    ],
+    "labels": [
+      "Not On Label (Etienne Vincent Quartet Self-released)",
+      "Waystyx"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Antoine FAURÉ",
+    "mbid": "",
+    "listeners": 3437,
+    "playcount": 16455,
+    "listener_play_ratio": 4.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Antoine+FAUR%C3%89\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Adrian Solen",
+      "Magnus Sakamura",
+      "Heiko Kolt",
+      "Thiago Hernan",
+      "Naskal"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Sound of Light",
+        "listeners": 2951,
+        "playcount": 11998
+      },
+      {
+        "name": "Gentle Rain",
+        "listeners": 1381,
+        "playcount": 4454
+      },
+      {
+        "name": "A Way of Life",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Antoine+FAUR%C3%89"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

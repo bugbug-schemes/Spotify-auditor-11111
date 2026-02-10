@@ -1,0 +1,200 @@
+{
+  "artist_name": "Fernando Alegre",
+  "artist_id": "fernando_alegre",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:36:55.001883+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8e97db73-8949-4bb9-930c-6873f56a1a9b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/103068132",
+      "streaming": "https://tidal.com/artist/20786845",
+      "youtube music": "https://music.youtube.com/channel/UCo5A-KgsfydZMZd4NP5xJ1Q"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 103068132,
+    "name": "Fernando Alegre",
+    "nb_fan": 9,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/103068132",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1352670a2623f989dfd7eb721b04a867/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Poesia",
+      "Harmonie"
+    ],
+    "track_durations": [
+      125,
+      149
+    ],
+    "track_ranks": [
+      148289,
+      31626
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Floresta Calma",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Com Sono",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Poesia",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Harmonie",
+        "label": "",
+        "release_date": "2020-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Saudade",
+        "label": "",
+        "release_date": "2020-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8894242,
+    "name": "Fernando Alegretto",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP, Album"
+    ],
+    "labels": [
+      "Acoplamento"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Fernando Alegre",
+    "mbid": "8e97db73-8949-4bb9-930c-6873f56a1a9b",
+    "listeners": 50499,
+    "playcount": 209601,
+    "listener_play_ratio": 4.15,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Fernando+Alegre\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Miran",
+      "Frederico Morales",
+      "Ina Lawson",
+      "Aeyes Libe",
+      "Remi Sinclair"
+    ],
+    "top_tracks": [
+      {
+        "name": "Poesia",
+        "listeners": 34623,
+        "playcount": 163842
+      },
+      {
+        "name": "Harmonie",
+        "listeners": 12761,
+        "playcount": 28488
+      },
+      {
+        "name": "Saudade",
+        "listeners": 3981,
+        "playcount": 8161
+      },
+      {
+        "name": "Floresta Calma",
+        "listeners": 1779,
+        "playcount": 4758
+      },
+      {
+        "name": "Com Sono",
+        "listeners": 911,
+        "playcount": 4345
+      },
+      {
+        "name": "Fernando Alegre - Poesia",
+        "listeners": 1,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Fernando+Alegre"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

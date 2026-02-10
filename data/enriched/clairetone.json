@@ -1,0 +1,181 @@
+{
+  "artist_name": "Clairetone",
+  "artist_id": "clairetone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:09:27.437354+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183706187,
+    "name": "Clairetone",
+    "nb_fan": 2,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/183706187",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e705baf05fbe5d4e9837049c2f34b2d8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Time After Time"
+    ],
+    "track_durations": [
+      192
+    ],
+    "track_ranks": [
+      37909
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Tiny Glow",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "we can't be friends (wait for your love)",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mine Forever",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beautiful Things",
+        "label": "",
+        "release_date": "2024-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lose Control",
+        "label": "",
+        "release_date": "2024-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old Macdonald Had A Farm",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pastel Clouds",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time After Time",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Clairetone",
+    "mbid": "",
+    "listeners": 2263,
+    "playcount": 9297,
+    "listener_play_ratio": 4.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Clairetone\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Brian Zeller",
+      "Noélina Faye",
+      "Aurora Keys",
+      "Luca Verini",
+      "Leon Rose"
+    ],
+    "top_tracks": [
+      {
+        "name": "Time After Time",
+        "listeners": 1607,
+        "playcount": 5662
+      },
+      {
+        "name": "Tiny Glow",
+        "listeners": 644,
+        "playcount": 3512
+      },
+      {
+        "name": "Pastel Clouds",
+        "listeners": 15,
+        "playcount": 92
+      },
+      {
+        "name": "we can't be friends (wait for your love)",
+        "listeners": 6,
+        "playcount": 18
+      },
+      {
+        "name": "Old Macdonald Had A Farm",
+        "listeners": 5,
+        "playcount": 11
+      },
+      {
+        "name": "Lose Control",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Clairetone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,416 @@
+{
+  "artist_name": "Junior Mesa",
+  "artist_id": "junior_mesa",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:41:13.135013+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "41177164-3a8d-4131-a0ad-5f68a022f202",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "2000",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://juniormesa.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/7758676",
+      "free streaming": "https://www.deezer.com/artist/14826485",
+      "official homepage": "https://www.juniormesa.com/",
+      "other databases": "https://imvdb.com/n/junior-mesa",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1386814394",
+      "social network": "https://www.instagram.com/juniorrrjunior/",
+      "soundcloud": "https://soundcloud.com/junio-8",
+      "streaming": "https://tidal.com/artist/16427881"
+    },
+    "labels": [
+      "Nice Life",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14826485,
+    "name": "Junior Mesa",
+    "nb_fan": 186,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/14826485",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f2d00d881ece6b2272d0ff1f24a8abd9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Audiotree",
+      "Repetition"
+    ],
+    "contributor_roles": {
+      "Audiotree": [
+        "Main"
+      ],
+      "Repetition": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Losing My Grip",
+      "What's Enough pt.2",
+      "Caroline",
+      "Can You Hear The Sound",
+      "Will I love again?",
+      "im not your man",
+      "All Or Nothin",
+      "Listen Close",
+      "Bleacher Blues (Audiotree Live version)",
+      "Can I Trust You",
+      "Who Knows Where The Time Goes",
+      "patchecho003",
+      "You Are Alright",
+      "3 AM",
+      "Far Out",
+      "You Are Alright (Instrumental)",
+      "Intergalactic",
+      "Risen Up",
+      "Pushing Away",
+      "Paranoia Dreams",
+      "Ordinary"
+    ],
+    "track_durations": [
+      147,
+      182,
+      169,
+      113,
+      144,
+      195,
+      148,
+      164,
+      213,
+      202,
+      262,
+      103,
+      159,
+      225,
+      232,
+      159,
+      262,
+      244,
+      160,
+      140,
+      181
+    ],
+    "track_ranks": [
+      92235,
+      18921,
+      118837,
+      57073,
+      164046,
+      118128,
+      18637,
+      11785,
+      29332,
+      28878,
+      60734,
+      39371,
+      72637,
+      31179,
+      21724,
+      30627,
+      32263,
+      21127,
+      26251,
+      10162,
+      16449
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "ep": 5,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "Junior Mesa on Audiotree Live",
+        "label": "",
+        "release_date": "2023-12-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Quit Your Job, Runaway! (Instrumentals)",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Quit Your Job, Runaway!",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Cirque Du Freak",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Peace",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Will I love again?",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "im not your man",
+        "label": "",
+        "release_date": "2025-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Who Knows Where The Time Goes",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "good time",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can I Trust You (Instrumental)",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can I Trust You",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "3.10.23 “Caroline♥” Fort Collins, CO. (Live) The Aggie theatre ✄",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caroline (Instrumental)",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caroline",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bleacher Blues / Buta Fly",
+        "label": "",
+        "release_date": "2022-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Buta Fly",
+        "label": "",
+        "release_date": "2022-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Past Life (Junior Mesa Remix)",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pushing Away",
+        "label": "",
+        "release_date": "2021-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paranoia Dreams",
+        "label": "",
+        "release_date": "2021-06-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Listen Close",
+        "label": "",
+        "release_date": "2021-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing My Grip / Creep",
+        "label": "",
+        "release_date": "2020-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7758676,
+    "name": "Junior Mesa",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 0,
+    "total_releases": 3,
+    "formats": [
+      "12\", EP, Club, Ltd, Num",
+      "12\", EP, Club, Num, Tur",
+      "12\", EP, Mys"
+    ],
+    "labels": [
+      "Nice Life",
+      "Nice Life Recording Company"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Junior Mesa",
+    "mbid": "41177164-3a8d-4131-a0ad-5f68a022f202",
+    "listeners": 83818,
+    "playcount": 513094,
+    "listener_play_ratio": 6.12,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Junior+Mesa\">Read more on Last.fm</a>",
+    "tags": [
+      "soul",
+      "funk",
+      "psychedelic",
+      "folk",
+      "alternative"
+    ],
+    "similar_artists": [
+      "Labi Siffre",
+      "Lomelda",
+      "Hether",
+      "Little Beaver",
+      "A. K. Paul"
+    ],
+    "top_tracks": [
+      {
+        "name": "Quit Your Job, Runaway!",
+        "listeners": 27953,
+        "playcount": 117489
+      },
+      {
+        "name": "Caroline",
+        "listeners": 15401,
+        "playcount": 68299
+      },
+      {
+        "name": "What's Enough pt.2",
+        "listeners": 14002,
+        "playcount": 49092
+      },
+      {
+        "name": "All or Nothin",
+        "listeners": 13091,
+        "playcount": 42222
+      },
+      {
+        "name": "Losing My Grip",
+        "listeners": 11282,
+        "playcount": 48529
+      },
+      {
+        "name": "3 AM",
+        "listeners": 8229,
+        "playcount": 42372
+      },
+      {
+        "name": "im not your man",
+        "listeners": 6358,
+        "playcount": 23778
+      },
+      {
+        "name": "Will I love again?",
+        "listeners": 6080,
+        "playcount": 16556
+      },
+      {
+        "name": "good time",
+        "listeners": 5259,
+        "playcount": 17346
+      },
+      {
+        "name": "Pushing Away",
+        "listeners": 3632,
+        "playcount": 10532
+      }
+    ],
+    "url": "https://www.last.fm/music/Junior+Mesa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

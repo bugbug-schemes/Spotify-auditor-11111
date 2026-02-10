@@ -1,0 +1,218 @@
+{
+  "artist_name": "Paon Bleu",
+  "artist_id": "paon_bleu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:21:37.630148+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 199846927,
+    "name": "Paon Bleu",
+    "nb_fan": 5,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/199846927",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cfbdf391cba6b3d8f20a82a4fc6d02ca/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "cloudless",
+      "Apricity"
+    ],
+    "track_durations": [
+      183,
+      176
+    ],
+    "track_ranks": [
+      37088,
+      88706
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Parallel Lines",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Low Lights",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verna",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blooming",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Apricity",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Showbiz",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "rêve",
+        "label": "",
+        "release_date": "2023-12-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "rêve",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "cloudless",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "flux de vibrations",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Paon Bleu",
+    "mbid": "",
+    "listeners": 16765,
+    "playcount": 66983,
+    "listener_play_ratio": 4.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Paon+Bleu\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cámille",
+      "Nicolello",
+      "Kacey View",
+      "David Dumeau",
+      "Soft Sea"
+    ],
+    "top_tracks": [
+      {
+        "name": "Les Tropiques",
+        "listeners": 9452,
+        "playcount": 33310
+      },
+      {
+        "name": "flux de vibrations",
+        "listeners": 4294,
+        "playcount": 15043
+      },
+      {
+        "name": "cloudless",
+        "listeners": 3415,
+        "playcount": 9268
+      },
+      {
+        "name": "Apricity",
+        "listeners": 3137,
+        "playcount": 7645
+      },
+      {
+        "name": "Blooming",
+        "listeners": 596,
+        "playcount": 1361
+      },
+      {
+        "name": "Verna",
+        "listeners": 121,
+        "playcount": 201
+      },
+      {
+        "name": "Low Lights",
+        "listeners": 39,
+        "playcount": 55
+      },
+      {
+        "name": "Rêve",
+        "listeners": 29,
+        "playcount": 50
+      },
+      {
+        "name": "Showbiz",
+        "listeners": 22,
+        "playcount": 49
+      },
+      {
+        "name": "Parallel Lines",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Paon+Bleu"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

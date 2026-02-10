@@ -1,0 +1,192 @@
+{
+  "artist_name": "Juliette Laveaux",
+  "artist_id": "juliette_laveaux",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:39:58.079774+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 156439122,
+    "name": "Juliette Laveaux",
+    "nb_fan": 2,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/156439122",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cb2112f5cce611897c388592a0a07d64/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Static field",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hoshikuzu no Michi",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Star pulse",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Altea",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Through the quiet rift",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Visions",
+        "label": "",
+        "release_date": "2024-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solicitude",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paradiso Drone",
+        "label": "",
+        "release_date": "2022-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slumbertrain",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Juliette Laveaux",
+    "mbid": "",
+    "listeners": 9461,
+    "playcount": 31170,
+    "listener_play_ratio": 3.29,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Juliette+Laveaux\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cryptozoology",
+      "Fhye",
+      "Ambientelles",
+      "Jupiter Calm",
+      "Command Module"
+    ],
+    "top_tracks": [
+      {
+        "name": "Star pulse",
+        "listeners": 4731,
+        "playcount": 19413
+      },
+      {
+        "name": "Hoshikuzu no Michi",
+        "listeners": 3379,
+        "playcount": 7169
+      },
+      {
+        "name": "Altea",
+        "listeners": 848,
+        "playcount": 1398
+      },
+      {
+        "name": "Be Still My Gentle Dream",
+        "listeners": 762,
+        "playcount": 2473
+      },
+      {
+        "name": "Visions",
+        "listeners": 190,
+        "playcount": 550
+      },
+      {
+        "name": "Slumbertrain",
+        "listeners": 62,
+        "playcount": 90
+      },
+      {
+        "name": "Unforgettable Rest",
+        "listeners": 57,
+        "playcount": 76
+      },
+      {
+        "name": "Paradiso Drone",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Juliette+Laveaux"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

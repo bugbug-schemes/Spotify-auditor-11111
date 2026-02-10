@@ -1,0 +1,151 @@
+{
+  "artist_name": "Coco Siesta",
+  "artist_id": "coco_siesta",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:11:53.365128+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "062f7e6f-affc-4898-aa88-a83fe4f7db05",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/3iq6zztZJw1Ma8yHOEUYj5",
+      "streaming": "https://music.apple.com/gb/artist/1846560658"
+    },
+    "labels": [
+      "Azure Noon"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 351165042,
+    "name": "Coco Siesta",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/351165042",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/812d8843ac2b801fc2bd93305e125ca9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Terra Calm",
+        "label": "",
+        "release_date": "2026-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mediterrâneo",
+        "label": "",
+        "release_date": "2025-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lento Del Sol",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tilted Hour",
+        "label": "",
+        "release_date": "2025-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Coco Siesta",
+    "mbid": "",
+    "listeners": 1908,
+    "playcount": 4748,
+    "listener_play_ratio": 2.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Coco+Siesta\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aurove",
+      "Monte Lux",
+      "gelato mac",
+      "Maison Lune",
+      "Pure Recall"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tilted Hour",
+        "listeners": 1594,
+        "playcount": 2741
+      },
+      {
+        "name": "Lento Del Sol",
+        "listeners": 1126,
+        "playcount": 1873
+      },
+      {
+        "name": "Mediterrâneo",
+        "listeners": 81,
+        "playcount": 134
+      }
+    ],
+    "url": "https://www.last.fm/music/Coco+Siesta"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

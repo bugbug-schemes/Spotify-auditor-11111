@@ -1,0 +1,199 @@
+{
+  "artist_name": "Asher Stone",
+  "artist_id": "asher_stone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:14:37.156958+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 222603455,
+    "name": "Asher Stone",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/222603455",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e51807a28e08bcde403b5c1d3c87426f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Walden",
+        "label": "",
+        "release_date": "2025-10-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Aube Belle",
+        "label": "",
+        "release_date": "2024-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Whispering Dreams",
+        "label": "",
+        "release_date": "2023-07-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Leveling",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lunar Waves",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ambrosia",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5216496,
+    "name": "The Mighty Ibex",
+    "profile": "Born from the ashes of Angry Feet and Static Action, The Mighty Ibex created a bit of a racket with music that is confusing and catchy in equal measure. Take the Queens of the Stone Age discography, put it in a blender, blend for 4 and a half minutes until the contents resemble Russian Circles, At The Drive-In or early Biffy Clyro and you have The Mighty Ibex. The Liverpudlian band broke up in 2015.\r\n\r\nEdoardo Vittori (Drums)\r\nCharlie Gibbons (Bass)\r\nChris Catteral (Guitar)\r\nAsher Kenton (Guitar + Vox)",
+    "realname": "",
+    "social_urls": [
+      "https://themightyibex.bandcamp.com/releases",
+      "http://www.facebook.com/themightyibex"
+    ],
+    "members": [
+      "Edoardo Vittori"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CDr, EP"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Asher Stone",
+    "mbid": "",
+    "listeners": 2442,
+    "playcount": 3742,
+    "listener_play_ratio": 1.53,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Asher+Stone\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jo Anand",
+      "elveper",
+      "Lún",
+      "Novienne",
+      "Furomerald"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lunar Waves",
+        "listeners": 2432,
+        "playcount": 3674
+      },
+      {
+        "name": "Aurora's Embrace",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Enigmatic Euphony",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Blossom Wakes",
+        "listeners": 1,
+        "playcount": 56
+      },
+      {
+        "name": "Velvet Symphony",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Mel Brooks Explains The Democrats",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Serene Serenade",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Dreamweaver's Serenade",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Tranquil Twilight",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Asher+Stone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

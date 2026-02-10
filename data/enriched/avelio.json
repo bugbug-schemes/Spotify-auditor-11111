@@ -1,0 +1,111 @@
+{
+  "artist_name": "Avelio",
+  "artist_id": "avelio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:19:53.295086+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Avelio', got 'Amelie Lens'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6504914,
+    "name": "Avelio King",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Avelio",
+    "mbid": "",
+    "listeners": 7747,
+    "playcount": 22124,
+    "listener_play_ratio": 2.86,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Avelio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isoflimmasy",
+      "Cashmere Cove",
+      "Embershine Air",
+      "Cuatico",
+      "Dust Of Stars"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beginnings",
+        "listeners": 3185,
+        "playcount": 7347
+      },
+      {
+        "name": "Anticipation",
+        "listeners": 2572,
+        "playcount": 8244
+      },
+      {
+        "name": "Glowing Lights",
+        "listeners": 1056,
+        "playcount": 2641
+      },
+      {
+        "name": "Inner Thoughts",
+        "listeners": 890,
+        "playcount": 2464
+      },
+      {
+        "name": "Secondary",
+        "listeners": 603,
+        "playcount": 1428
+      }
+    ],
+    "url": "https://www.last.fm/music/Avelio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

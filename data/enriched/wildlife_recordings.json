@@ -1,0 +1,193 @@
+{
+  "artist_name": "Wildlife Recordings",
+  "artist_id": "wildlife_recordings",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:01:57.712868+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 133414732,
+    "name": "Wildlife Recordings",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/133414732",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/65c8a2423b875a8760051c6a21def7d1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Midsummer Calling",
+        "label": "",
+        "release_date": "2025-07-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Serenity in the Forest",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calming Nature Noise For Sleep",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Birds Chirp & Rain",
+        "label": "",
+        "release_date": "2021-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1986644,
+    "name": "Lawrence Shove",
+    "profile": "British wildlife field recordist - now deceased. Born near Dartmoor in Devon. He won first prize in the 1964 B.B.C./Council For Nature wildlife tape-recording competition and became one of Britain''s best known nature recordists in the 1960s. His British wildlife recordings are now in the National Sound Archive.",
+    "realname": "Lawrence Clive Shove",
+    "social_urls": [
+      "http://thelightroom.blogspot.com/2011/09/lawrence-shove.html",
+      "http://sounds.bl.uk/TextPage.aspx?page=backgroundBritish-wildlife-recordings"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 4,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "7\", EP",
+      "7\", EP, Lea",
+      "CD",
+      "CD, Comp"
+    ],
+    "labels": [
+      "British Library",
+      "Shell (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Wildlife Recordings",
+    "mbid": "",
+    "listeners": 10776,
+    "playcount": 43005,
+    "listener_play_ratio": 3.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Wildlife+Recordings\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Al Watts",
+      "Forest Sounds FX",
+      "Experience Nature",
+      "Soul Healer",
+      "Sonidos Del Bosques"
+    ],
+    "top_tracks": [
+      {
+        "name": "Forest Birdsong and Creek Ambience",
+        "listeners": 7207,
+        "playcount": 19829
+      },
+      {
+        "name": "Singing Birds - Light Rain",
+        "listeners": 3482,
+        "playcount": 10721
+      },
+      {
+        "name": "Birds Chirp & Rain",
+        "listeners": 2743,
+        "playcount": 9265
+      },
+      {
+        "name": "Protected Dawn",
+        "listeners": 184,
+        "playcount": 408
+      },
+      {
+        "name": "Avian Forest",
+        "listeners": 148,
+        "playcount": 344
+      },
+      {
+        "name": "Early Perching",
+        "listeners": 147,
+        "playcount": 295
+      },
+      {
+        "name": "Afternoon Birdsongs",
+        "listeners": 142,
+        "playcount": 273
+      },
+      {
+        "name": "Cheerful Paradise",
+        "listeners": 130,
+        "playcount": 250
+      },
+      {
+        "name": "Fowl Blissful",
+        "listeners": 130,
+        "playcount": 245
+      },
+      {
+        "name": "Rhythm of the Forest",
+        "listeners": 130,
+        "playcount": 231
+      }
+    ],
+    "url": "https://www.last.fm/music/Wildlife+Recordings"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

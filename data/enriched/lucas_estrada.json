@@ -1,0 +1,716 @@
+{
+  "artist_name": "Lucas Estrada",
+  "artist_id": "lucas_estrada",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:15:07.006444+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f123c8ab-0233-412e-8fd2-7880c8a88058",
+    "type": "Person",
+    "country": "",
+    "area": "Stockholm",
+    "begin_date": "1990-05-25",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "electronic",
+      "pop",
+      "chillout",
+      "dance",
+      "dance-pop",
+      "chill",
+      "edm"
+    ],
+    "aliases": [
+      "Lucas Carlson Estrada"
+    ],
+    "isnis": [
+      "0000000478235336"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003215405",
+      "discogs": "https://www.discogs.com/artist/7066594",
+      "free streaming": "https://www.deezer.com/artist/8343320",
+      "last.fm": "https://www.last.fm/music/Lucas+Estrada",
+      "lyrics": "https://www.musixmatch.com/artist/28879466",
+      "other databases": "https://www.whosampled.com/Lucas-Estrada/",
+      "purchase for download": "https://www.qobuz.com/se-en/interpreter/lucas-estrada/7820",
+      "social network": "https://www.facebook.com/LucasEstradaMusic",
+      "soundcloud": "https://soundcloud.com/lucasestrada",
+      "streaming": "https://www.qobuz.com/se-en/interpreter/lucas-estrada/7820",
+      "wikidata": "https://www.wikidata.org/wiki/Q105406360",
+      "youtube": "https://www.youtube.com/channel/UC4PYy0arPdb4zeMNh036DxQ",
+      "youtube music": "https://music.youtube.com/channel/UCbdxCfyuXAhZMVBXkod9e7w"
+    },
+    "labels": [
+      "One Seven Music",
+      "[no label]",
+      "LoudKult",
+      "Spinnin’ Records",
+      "Another Rhythm",
+      "LoudKult Div.",
+      "Nitron Music",
+      "Lilly Era"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 8343320,
+    "name": "Lucas Estrada",
+    "nb_fan": 2426,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/8343320",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ae4ade6d2becee58093cbbab0a9a20b3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "6AM",
+      "AJ Salvatore",
+      "Adam Woods",
+      "Alberto Ciccarini",
+      "Amadi Blue",
+      "Besomorph",
+      "Bhaskar",
+      "Brendan Mills",
+      "Calica",
+      "Cumbiafrica",
+      "DALEXO",
+      "Dan Caplen",
+      "Deepend",
+      "Edwin",
+      "Eeva",
+      "Firstclass",
+      "Henri Purnell",
+      "Jaimes",
+      "James Carter",
+      "James TW",
+      "John De Sohn",
+      "Joshua Robbie",
+      "Lenji",
+      "MKLA",
+      "Matvey Emerson",
+      "NEIMY",
+      "Naarly",
+      "Oceanside",
+      "Palm Monkey",
+      "Paradise Inc.",
+      "Poul",
+      "Roundrobin",
+      "Russi",
+      "SUPER-Hi",
+      "Steerner",
+      "Tanaka",
+      "Tobtok",
+      "Tom Enzy",
+      "Twopilots",
+      "VINAI",
+      "Vidojean X Oliver Loenn"
+    ],
+    "contributor_roles": {
+      "Joshua Robbie": [
+        "Main"
+      ],
+      "Vidojean X Oliver Loenn": [
+        "Main"
+      ],
+      "Edwin": [
+        "Main"
+      ],
+      "6AM": [
+        "Main"
+      ],
+      "Naarly": [
+        "Main"
+      ],
+      "Palm Monkey": [
+        "Main"
+      ],
+      "Russi": [
+        "Main"
+      ],
+      "DALEXO": [
+        "Main"
+      ],
+      "NEIMY": [
+        "Main"
+      ],
+      "Firstclass": [
+        "Main"
+      ],
+      "Tom Enzy": [
+        "Main"
+      ],
+      "Tanaka": [
+        "Main"
+      ],
+      "Lenji": [
+        "Main"
+      ],
+      "Amadi Blue": [
+        "Main"
+      ],
+      "Steerner": [
+        "Main"
+      ],
+      "AJ Salvatore": [
+        "Main"
+      ],
+      "Calica": [
+        "Featured"
+      ],
+      "Oceanside": [
+        "Main"
+      ],
+      "Cumbiafrica": [
+        "Main"
+      ],
+      "Paradise Inc.": [
+        "Main"
+      ],
+      "Poul": [
+        "Main"
+      ],
+      "Alberto Ciccarini": [
+        "Main"
+      ],
+      "Roundrobin": [
+        "Main"
+      ],
+      "Tobtok": [
+        "Main"
+      ],
+      "James TW": [
+        "Main"
+      ],
+      "VINAI": [
+        "Main"
+      ],
+      "John De Sohn": [
+        "Main"
+      ],
+      "Henri Purnell": [
+        "Main"
+      ],
+      "Adam Woods": [
+        "Featured"
+      ],
+      "Twopilots": [
+        "Main"
+      ],
+      "Brendan Mills": [
+        "Main"
+      ],
+      "Deepend": [
+        "Main"
+      ],
+      "Dan Caplen": [
+        "Main"
+      ],
+      "Bhaskar": [
+        "Main"
+      ],
+      "Eeva": [
+        "Main"
+      ],
+      "Besomorph": [
+        "Main"
+      ],
+      "Jaimes": [
+        "Main"
+      ],
+      "Matvey Emerson": [
+        "Main"
+      ],
+      "MKLA": [
+        "Main"
+      ],
+      "James Carter": [
+        "Featured"
+      ],
+      "SUPER-Hi": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "I Wanna Be Down",
+      "Matter",
+      "Ride",
+      "AWGAZI (Sunset Remix)",
+      "Ocean Quiet",
+      "Heat",
+      "Baddie",
+      "Weyu",
+      "Heaven Knows",
+      "Kiss Me",
+      "Uluwa",
+      "Morenita",
+      "youmakemeemotional",
+      "Looking (For You)",
+      "Anywhere",
+      "Ghost Town (Lucas Estrada Remix)",
+      "In My Fantasy",
+      "Moon (feat. Adam Woods)",
+      "Bloom (Brendan Mills Remix)",
+      "House Of Cards",
+      "Feel Your Love",
+      "Show Me The Way",
+      "Never Leave You",
+      "Bloom",
+      "Don't Look Down"
+    ],
+    "track_durations": [
+      184,
+      165,
+      162,
+      150,
+      167,
+      142,
+      150,
+      133,
+      154,
+      146,
+      137,
+      178,
+      141,
+      167,
+      143,
+      138,
+      171,
+      152,
+      156,
+      156,
+      182,
+      148,
+      174,
+      179,
+      165
+    ],
+    "track_ranks": [
+      534560,
+      523725,
+      515291,
+      576061,
+      382722,
+      438095,
+      436364,
+      520630,
+      419442,
+      96378,
+      349498,
+      448057,
+      351723,
+      353437,
+      409641,
+      225052,
+      229871,
+      268397,
+      406948,
+      354683,
+      226341,
+      318595,
+      72149,
+      429469,
+      255632
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 3,
+      "single": 96
+    },
+    "albums": [
+      {
+        "title": "Ocean Quiet",
+        "label": "",
+        "release_date": "2021-08-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fast Forward (Sped Up Versions)",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bad Together (Remixes)",
+        "label": "",
+        "release_date": "2021-12-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Figure It Out (Remixes)",
+        "label": "",
+        "release_date": "2018-12-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bloom (ERIICE Remix)",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "youmakemeemotional",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heaven Knows",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "AWGAZI",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Uluwa",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Looking (For You)",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just Like That",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ride",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Keep Me Waiting",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wonders",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Wanna Be Down",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Making Waves",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Sun (feat. Pawl)",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Matter",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slide (feat. Majeeed)",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Around The World (La La La)",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solo",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Touch Down",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weightless",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bami Soro",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Sunrise",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MIND GAMES",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After Dark",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pepele",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Give It To Me",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "WHY?",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "ERIICE",
+      "Madism",
+      "Matvey Emerson",
+      "James Carter",
+      "Hayden James",
+      "Tom Enzy",
+      "Pawl",
+      "Gorgon Breath",
+      "LVSN",
+      "F3de"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7066594,
+    "name": "Lucas Estrada",
+    "profile": "Stockholm, Sweden\r\nProducer at night, Label Director during the day",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/lucas_estrada/?hl=de",
+      "https://www.youtube.com/channel/UC4PYy0arPdb4zeMNh036DxQ",
+      "https://music.apple.com/us/artist/lucas-estrada/208621245",
+      "https://open.spotify.com/intl-de/artist/2tndYCXQneCV4jtoWRwVpz",
+      "https://soundcloud.com/lucasestrada"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 18,
+    "total_releases": 27,
+    "formats": [
+      "",
+      "2xCDr, Comp, Promo",
+      "2xFile, FLAC",
+      "4xCD, Comp",
+      "CD, Comp, Club",
+      "CD, Comp, Club, Ltd, Unofficial",
+      "CD, Comp, Promo",
+      "CDr, Comp",
+      "CDr, Comp, Promo",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC",
+      "File, FLAC, Single",
+      "File, FLAC, Single, 24-",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "541",
+      "Another Rhythm, LoudKult",
+      "DMC",
+      "DMC, DMC",
+      "Declared Major",
+      "Estrada Records",
+      "LoudKult",
+      "LoudKult Div.",
+      "Melogic Music",
+      "Nitron Music",
+      "Not On Label",
+      "One Seven",
+      "Promo Only",
+      "Sony Music",
+      "Spinnin' Records",
+      "TGR Music Group",
+      "Universal (3)",
+      "Virgin",
+      "disco:wax"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lucas Estrada",
+    "mbid": "f123c8ab-0233-412e-8fd2-7880c8a88058",
+    "listeners": 225584,
+    "playcount": 2270523,
+    "listener_play_ratio": 10.07,
+    "bio_exists": true,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lucas+Estrada\">Read more on Last.fm</a>",
+    "tags": [
+      "electronic",
+      "House",
+      "dance",
+      "EDM",
+      "tropical house"
+    ],
+    "similar_artists": [
+      "SRTW",
+      "Mauve",
+      "BOOSTEREO",
+      "Y.V.E. 48",
+      "PHURS"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bloom",
+        "listeners": 25039,
+        "playcount": 93493
+      },
+      {
+        "name": "Blinding Lights",
+        "listeners": 22403,
+        "playcount": 73795
+      },
+      {
+        "name": "White Flag",
+        "listeners": 18798,
+        "playcount": 60333
+      },
+      {
+        "name": "Ocean Quiet",
+        "listeners": 17786,
+        "playcount": 68955
+      },
+      {
+        "name": "Weyu",
+        "listeners": 17738,
+        "playcount": 54809
+      },
+      {
+        "name": "Bad Together",
+        "listeners": 17210,
+        "playcount": 49173
+      },
+      {
+        "name": "In My Fantasy",
+        "listeners": 16862,
+        "playcount": 67129
+      },
+      {
+        "name": "Everything With You",
+        "listeners": 16187,
+        "playcount": 70554
+      },
+      {
+        "name": "Won't Let Go",
+        "listeners": 15896,
+        "playcount": 65058
+      },
+      {
+        "name": "Thunder",
+        "listeners": 14752,
+        "playcount": 57300
+      }
+    ],
+    "url": "https://www.last.fm/music/Lucas+Estrada"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

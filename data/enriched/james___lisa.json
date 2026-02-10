@@ -1,0 +1,332 @@
+{
+  "artist_name": "James & LIsa",
+  "artist_id": "james___lisa",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:21:45.839729+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "57701001-427c-4c2c-ac11-9b9d774d2f29",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/191211597",
+      "purchase for download": "https://music.apple.com/us/artist/1671780785",
+      "streaming": "https://music.apple.com/us/artist/1671780785",
+      "youtube music": "https://music.youtube.com/channel/UCuGdW42d2UthZoIZS7x-ytw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 191211597,
+    "name": "James & LIsa",
+    "nb_fan": 7,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/191211597",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b9113fc36bb688d99b1f37dc48d68431/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Cherry Blossom Waltz",
+      "A Tale of Two Hearts",
+      "This Autumn",
+      "Dreams About Change"
+    ],
+    "track_durations": [
+      264,
+      202,
+      172,
+      197
+    ],
+    "track_ranks": [
+      77729,
+      70139,
+      35704,
+      102156
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "A Tale of Two Hearts",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Days Gone",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Swingin' Through the Spheres",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astrale",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreams About Change",
+        "label": "",
+        "release_date": "2023-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cherry Blossom Waltz",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astrale",
+        "label": "",
+        "release_date": "2023-01-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Autumn",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 828006,
+    "name": "Livingston & Evans",
+    "profile": "Songwriting and composing team who worked on movies, television and stage.\r\n\r\nJay Livingston and Ray Evans met at the Wharton School at the University of Pennsylvania, having met in a dance band. Their professional collaboration began in 1937. Livingston and Evans won the Academy Award for Best Original Song three times, in 1948 for the song \"Buttons and Bows\", written for the movie [i]The Paleface[/i]; in 1950 for the song \"Mona Lisa\", written for the movie [i]Captain Carey, U.S.A.[/i]; and in 1956 for the song \"Whatever Will Be, Will Be (Que Sera, Sera),\" featured in the movie [i]The Man Who Knew Too Much[/i]. Livingston and Evans wrote popular TV themes for shows including [i]Bonanza[/i] and [i]Mr. Ed[/i]. They also wrote the Christmas song \"Silver Bells\" in 1951 for the film [i]The Lemon Drop Kid[/i] as well as \"Never Let Me Go\" for the 1956 film [i]The Scarlet Hour[/i].\r\n\r\nThey received a star together on the Hollywood Walk of Fame.\r\n",
+    "realname": "",
+    "social_urls": [
+      "http://en.wikipedia.org/wiki/Livingston_%26_Evans",
+      "http://en.wikipedia.org/wiki/Jay_Livingston",
+      "http://en.wikipedia.org/wiki/Ray_Evans"
+    ],
+    "members": [
+      "Jay Livingston",
+      "Ray Evans"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 71,
+    "digital_only_releases": 29,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\", EP",
+      "15xCD, Album, RE + 4xCD, Comp + Box, Ltd",
+      "21xCD, Album, RE + Box, Comp, Ltd",
+      "2xCD, Album",
+      "2xCD, Album, Comp",
+      "2xCD, Album, Ltd, Num, RM",
+      "2xCD, Comp",
+      "2xLP",
+      "2xLP, RE + 2xLP, RE + Box, Comp, Dlx",
+      "2xLP, RSD, Comp, Ltd, Spl",
+      "3xCD, Album",
+      "3xCD, Comp",
+      "3xCD, Comp, Mono",
+      "4xCD, Comp",
+      "4xCD, Comp + Box",
+      "5xCD + Box, Comp",
+      "5xLP, Album, RM, Ran + Box, Dlx, Ltd",
+      "7\"",
+      "7\", Single",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Ltd, RE, RM",
+      "CD, Album, RE",
+      "CD, Album, RE, RM",
+      "CD, Comp",
+      "CD, Comp, Ltd",
+      "CD, Comp, Mono",
+      "CD, Comp, Promo",
+      "CD, Comp, RM",
+      "CDr, Album",
+      "HDCD, Album",
+      "LP, Album",
+      "LP, Comp",
+      "LP, RSD, Comp, Mono",
+      "LP, Red + LP, Gre + Comp, Ltd",
+      "SACD, Hybrid, Comp, Ltd, Num"
+    ],
+    "labels": [
+      "Acrobat",
+      "Atomicat Records",
+      "BMG",
+      "BMLG Records",
+      "CD-licious",
+      "Capri Records (6)",
+      "Captain Oi!",
+      "Carelia Records",
+      "Cellar Music (2)",
+      "Continental Europe",
+      "Copenhagen Music",
+      "Cult Legends",
+      "Decca",
+      "Discobertas",
+      "ECM Records",
+      "Ear Music",
+      "Electrola, Universal Music Group",
+      "GLG (3), Goodtime Media",
+      "Good Time Records (15)",
+      "Green Hill",
+      "Happy Sheep Records",
+      "HighNote Records, Inc.",
+      "Hit Parade Records (4)",
+      "ITI Records",
+      "Jinsy Records",
+      "Koko Mojo Records",
+      "La-La Land Records",
+      "Le Coq Records (2)",
+      "Liberation Hall",
+      "Lmlr",
+      "Mormon Tabernacle Choir",
+      "Motown, UMe",
+      "Not On Label",
+      "Not On Label (Adrien Marco Self-released)",
+      "Not On Label (City On A Hill Nashville Self-released)",
+      "One Too Tree Records",
+      "Polydor",
+      "Ponca Jazz Records, Ponca Jazz Records",
+      "Real Gone Music, Second Disc Records, Universal Music Special Markets",
+      "Return To Analog",
+      "Ride Symbol",
+      "Rip Cat Records",
+      "Segell Microscopi",
+      "Sepia Records (2)",
+      "Sing Records, IN Classics",
+      "Somethin' Cool, Somethin' Cool",
+      "Sony Music",
+      "Sony Music, UMC",
+      "Stage Door Records",
+      "SteepleChase",
+      "Sunnyside",
+      "Sunnyside, Groovin' High",
+      "Trojan Records, BMG",
+      "Universal Music",
+      "Universal Music Recordings, Sony Music",
+      "Valitut Palat",
+      "Vertical Records (4)",
+      "Waking Up Music",
+      "Челябинская Государственная Филармония"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "James & LIsa",
+    "mbid": "",
+    "listeners": 52140,
+    "playcount": 145974,
+    "listener_play_ratio": 2.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/James+&+LIsa\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Douglas Ruby Trio",
+      "Soft Brush Touches",
+      "London Dunes",
+      "Reed Stricklers",
+      "Ornette Haynes"
+    ],
+    "top_tracks": [
+      {
+        "name": "This Autumn",
+        "listeners": 21192,
+        "playcount": 46206
+      },
+      {
+        "name": "A Tale of Two Hearts",
+        "listeners": 19078,
+        "playcount": 41248
+      },
+      {
+        "name": "Dreams About Change",
+        "listeners": 16734,
+        "playcount": 38771
+      },
+      {
+        "name": "Cherry Blossom Waltz",
+        "listeners": 9030,
+        "playcount": 19729
+      },
+      {
+        "name": "Astrale",
+        "listeners": 5,
+        "playcount": 19
+      },
+      {
+        "name": "2022-12-31 14:58",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/James+&+LIsa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

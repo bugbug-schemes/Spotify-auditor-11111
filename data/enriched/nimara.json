@@ -1,0 +1,121 @@
+{
+  "artist_name": "Nimara",
+  "artist_id": "nimara",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:02:42.362354+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Nimara', got 'Maiara & Maraisa'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "NiMaRa",
+    "mbid": "",
+    "listeners": 21286,
+    "playcount": 103572,
+    "listener_play_ratio": 4.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/NiMaRa\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Xyros",
+      "Frida Ljungh",
+      "Kai Monroe",
+      "Insomnian",
+      "Twin Sleeps"
+    ],
+    "top_tracks": [
+      {
+        "name": "Colours In The Stars",
+        "listeners": 8102,
+        "playcount": 45669
+      },
+      {
+        "name": "Nightflora",
+        "listeners": 5325,
+        "playcount": 16841
+      },
+      {
+        "name": "Aurora",
+        "listeners": 3980,
+        "playcount": 12811
+      },
+      {
+        "name": "Prism",
+        "listeners": 2461,
+        "playcount": 6911
+      },
+      {
+        "name": "Axiom",
+        "listeners": 1953,
+        "playcount": 6893
+      },
+      {
+        "name": "Lunaflora",
+        "listeners": 1942,
+        "playcount": 5042
+      },
+      {
+        "name": "Amber Haze",
+        "listeners": 1442,
+        "playcount": 3125
+      },
+      {
+        "name": "Thought Gazing",
+        "listeners": 1300,
+        "playcount": 4297
+      },
+      {
+        "name": "Eclipse",
+        "listeners": 677,
+        "playcount": 1610
+      },
+      {
+        "name": "Nebula",
+        "listeners": 89,
+        "playcount": 368
+      }
+    ],
+    "url": "https://www.last.fm/music/NiMaRa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

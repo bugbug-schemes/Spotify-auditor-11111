@@ -1,0 +1,505 @@
+{
+  "artist_name": "Martin Landström",
+  "artist_id": "martin_landström",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:31:09.135372+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "fde9e730-f73c-45da-89be-feaf475c13a6",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "1977-04-11",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/10385846",
+      "purchase for download": "https://music.apple.com/us/artist/568532097",
+      "soundcloud": "https://soundcloud.com/martinlandstrom",
+      "streaming": "https://tidal.com/artist/13476433",
+      "vgmdb": "https://vgmdb.net/artist/16851",
+      "youtube music": "https://music.youtube.com/channel/UCnP3zL-GvXcnesCCnqaYA0g"
+    },
+    "labels": [
+      "Epidemic Sound"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10385846,
+    "name": "Martin Landström",
+    "nb_fan": 146,
+    "nb_album": 64,
+    "link": "https://www.deezer.com/artist/10385846",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/259bd68f0a6dfd7c65b55ac757583cce/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Gustav Lundgren"
+    ],
+    "contributor_roles": {
+      "Gustav Lundgren": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Maze of Tranquility",
+      "Come Lay beside Me",
+      "My Golden Hour",
+      "That Old Fashioned Moon",
+      "Bossa for Noa",
+      "Lazy Art",
+      "The Stylish Traveller",
+      "Spring Is in the Air",
+      "Think Forward",
+      "In a Deeper Sense",
+      "Working Buttons",
+      "Closer Together",
+      "A Delicate Move",
+      "Balustrade",
+      "Santa Barbara Afternoon",
+      "Bastille Unbound",
+      "Clear as Autumn Nights",
+      "You Never Say You're Sorry",
+      "Consequences",
+      "A Wishful Night",
+      "He's So Fine",
+      "Sneaky Breezy",
+      "A Caper Story",
+      "April's Fooling No One",
+      "The Boy From Leblon"
+    ],
+    "track_durations": [
+      262,
+      183,
+      138,
+      169,
+      209,
+      233,
+      155,
+      288,
+      270,
+      228,
+      270,
+      206,
+      269,
+      198,
+      230,
+      171,
+      301,
+      258,
+      336,
+      147,
+      173,
+      209,
+      171,
+      255,
+      127
+    ],
+    "track_ranks": [
+      484943,
+      99129,
+      115923,
+      97650,
+      162922,
+      27841,
+      91744,
+      96772,
+      38039,
+      31554,
+      69407,
+      32733,
+      30908,
+      32873,
+      25245,
+      21555,
+      133887,
+      164514,
+      28279,
+      22335,
+      33469,
+      33333,
+      60222,
+      90623,
+      25114
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 10,
+      "single": 48
+    },
+    "albums": [
+      {
+        "title": "A Variety of Sounds",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zoo Zoo",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nick Nacks",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hazy Reminiscence",
+        "label": "",
+        "release_date": "2021-02-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dirt Floor Boogie",
+        "label": "",
+        "release_date": "2021-01-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Saccharine Springs",
+        "label": "",
+        "release_date": "2016-01-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "So Good, So Nice",
+        "label": "",
+        "release_date": "2026-01-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Baggage Claim",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chasing Snakes",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "This Is What I Want for Christmas",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "In a Deeper Sense",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Night Howl",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Paris in the Rain",
+        "label": "",
+        "release_date": "2021-04-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Midside Notes",
+        "label": "",
+        "release_date": "2021-03-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "These Fingerprints",
+        "label": "",
+        "release_date": "2016-07-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tempestuoso",
+        "label": "",
+        "release_date": "2015-07-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Happy Hour Fiesta Time",
+        "label": "",
+        "release_date": "2026-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tokyo for an Evening",
+        "label": "",
+        "release_date": "2025-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feelin' Mischievous",
+        "label": "",
+        "release_date": "2025-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bossa for Two",
+        "label": "",
+        "release_date": "2025-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Funny Soul",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Mystery of a Murder",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unease for Piano",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Romancing the Tone",
+        "label": "",
+        "release_date": "2025-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The High Point (Live Brass Version)",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All About the Blues",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Box in the Attic",
+        "label": "",
+        "release_date": "2024-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden Pathways",
+        "label": "",
+        "release_date": "2024-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloudberry Mires",
+        "label": "",
+        "release_date": "2024-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bastille Unbound",
+        "label": "",
+        "release_date": "2024-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Paul Desmond",
+      "Coleman Hawkins",
+      "Cannonball Adderley",
+      "Bill Evans",
+      "Miles Davis",
+      "Ike Quebec",
+      "Gerry Mulligan",
+      "Herb Ellis",
+      "Dexter Gordon",
+      "Biréli Lagrène"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7788087,
+    "name": "Martin Landström",
+    "profile": "Keyboardist and organist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Echo (33)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 3,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "2xCD, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album, Boo",
+      "CD, EP",
+      "CD, Single"
+    ],
+    "labels": [
+      "Flying Dog",
+      "Gason",
+      "Kadokawa",
+      "Lantis",
+      "Lemur Skivor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Martin Landström",
+    "mbid": "fde9e730-f73c-45da-89be-feaf475c13a6",
+    "listeners": 159833,
+    "playcount": 816566,
+    "listener_play_ratio": 5.11,
+    "bio_exists": true,
+    "bio_summary": "Since moving to Stockholm in the late nineties Martin Landström (a.k.a Martin Persson) is regarded as one of the hardest working musicians/arrangers/producers in the business. His track record includes over 400 songs as arranger for the TV-show “Glee”, In-house producer for the most popular television programme in Sweden “Melodifestivalen”, touring musician with Belgian/Canadian artist Lara Fabian, arranging and composing alongside Rasmus Faber for the Japanese anime show “Asterisk Wars” <a href",
+    "tags": [
+      "jazz",
+      "swedish",
+      "instrumental",
+      "Sweden"
+    ],
+    "similar_artists": [
+      "Magpie Jazz Trio",
+      "Most Iverson",
+      "Hara Noda",
+      "The Three Queens",
+      "Ennio Máno"
+    ],
+    "top_tracks": [
+      {
+        "name": "Maze of Tranquility",
+        "listeners": 37226,
+        "playcount": 94935
+      },
+      {
+        "name": "Clear as Autumn Nights",
+        "listeners": 36216,
+        "playcount": 93821
+      },
+      {
+        "name": "You Never Say You're Sorry",
+        "listeners": 30642,
+        "playcount": 75637
+      },
+      {
+        "name": "Spring Is in the Air",
+        "listeners": 28202,
+        "playcount": 73721
+      },
+      {
+        "name": "My Golden Hour",
+        "listeners": 18907,
+        "playcount": 88418
+      },
+      {
+        "name": "Working Buttons",
+        "listeners": 18540,
+        "playcount": 42858
+      },
+      {
+        "name": "That Old Fashioned Moon",
+        "listeners": 15493,
+        "playcount": 70359
+      },
+      {
+        "name": "A Wishful Night",
+        "listeners": 14243,
+        "playcount": 27745
+      },
+      {
+        "name": "Closer Together",
+        "listeners": 13642,
+        "playcount": 32235
+      },
+      {
+        "name": "Come Lay beside Me",
+        "listeners": 13005,
+        "playcount": 56196
+      }
+    ],
+    "url": "https://www.last.fm/music/Martin+Landstr%C3%B6m"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

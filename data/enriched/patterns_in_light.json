@@ -1,0 +1,180 @@
+{
+  "artist_name": "Patterns in Light",
+  "artist_id": "patterns_in_light",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:23:04.010255+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 122969162,
+    "name": "Patterns in Light",
+    "nb_fan": 1,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/122969162",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9c489d2d69d1790e2e2afba9b0088635/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Delta Sleep",
+        "label": "",
+        "release_date": "2021-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Calm Around Me",
+        "label": "",
+        "release_date": "2021-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15787389,
+    "name": "Sky Patterns",
+    "profile": "Sky Patterns is the musical vision of Paul Lockett, based near South Manchester in the north of England.\r\n\r\nArmed with a love for atmospheric soundscapes and emotionally honest songwriting, Sky Patterns create music that feels both introspective and cinematic — the kind that turns late-night thoughts into widescreen moments.\r\n\r\nThe music is a moody blend of shadowy post-punk textures with sweeping alternative rock, pulling influences from the moody romanticism of The Cure, the industrial pulse of Depeche Mode, the soaring emotional sweep of The Verve, and the stark atmospheres of The Chameleons, Echo & The Bunnymen, and Joy Division. The result is a rich, shadowy sound — one that moves confidently between post-punk austerity and expansive alternative rock.\r\n\r\nThe second album 'Night Call' (February 2026) reaches deep into nocturnal territory — a world of half-spoken fears, flickering thoughts, and the uneasy sense of life seen through dim light. Where debut album 'Answers On A Postcard",
+    "realname": "Paul Lockett",
+    "social_urls": [
+      "https://skypatterns.co.uk/",
+      "https://skypatterns.bandcamp.com/",
+      "https://x.com/skypatternsband",
+      "https://bsky.app/profile/skypatterns.bsky.social",
+      "https://www.youtube.com/@SkyPatternsBand"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 5,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "2xFile, FLAC, Single",
+      "3xFile, FLAC, Single",
+      "4xFile, FLAC, EP",
+      "CDr, Album, Ltd"
+    ],
+    "labels": [
+      "Homeward Bound Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Patterns in Light",
+    "mbid": "",
+    "listeners": 11797,
+    "playcount": 39572,
+    "listener_play_ratio": 3.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Patterns+in+Light\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "AEX8",
+      "High Lotion",
+      "Twinbeet",
+      "Dramadoria",
+      "The Sound Around"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Alpha Sinus 110Hz - 121Hz",
+        "listeners": 11650,
+        "playcount": 38502
+      },
+      {
+        "name": "Sonnenuntergang Delta 91Hz - 94Hz",
+        "listeners": 243,
+        "playcount": 460
+      },
+      {
+        "name": "Light Particles 125Hz - 135Hz",
+        "listeners": 89,
+        "playcount": 145
+      },
+      {
+        "name": "Last Delta Rays 138Hz - 141Hz",
+        "listeners": 79,
+        "playcount": 164
+      },
+      {
+        "name": "Sleeping with Delta 171Hz - 173Hz",
+        "listeners": 74,
+        "playcount": 180
+      },
+      {
+        "name": "Alpha Patterns in Light",
+        "listeners": 31,
+        "playcount": 53
+      },
+      {
+        "name": "Binaural Harmony Focus Waves",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "Cognitive Tones for Focus",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Focus Binaural Morning Harmony",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Binaural Cognitive Study Tones",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Patterns+in+Light"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

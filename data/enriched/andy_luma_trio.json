@@ -1,0 +1,366 @@
+{
+  "artist_name": "Andy Luma Trio",
+  "artist_id": "andy_luma_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:00:19.985470+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "93a4dd32-3c0a-4283-bfae-28e120175b07",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/185665317",
+      "purchase for download": "https://music.apple.com/us/artist/1649153389",
+      "soundcloud": "https://soundcloud.com/andylumatrio",
+      "streaming": "https://tidal.com/artist/34827933",
+      "youtube music": "https://music.youtube.com/channel/UCQbGHzvbTuIVGqJkZUBDz3w"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 185665317,
+    "name": "Andy Luma Trio",
+    "nb_fan": 7,
+    "nb_album": 24,
+    "link": "https://www.deezer.com/artist/185665317",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/15eee7b23aea2dae13ad804eb78a94cd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Chuva",
+      "Milano",
+      "The Quiet Storm",
+      "Lonely Dreams",
+      "Silver Starlings",
+      "Cabin In The Sky",
+      "Follow Me Till the End of Time",
+      "Carry On",
+      "Diane",
+      "Heartstring"
+    ],
+    "track_durations": [
+      172,
+      238,
+      228,
+      217,
+      168,
+      204,
+      178,
+      194,
+      168,
+      168
+    ],
+    "track_ranks": [
+      40940,
+      30721,
+      101270,
+      163193,
+      10127,
+      90470,
+      191426,
+      40255,
+      25555,
+      24989
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "In Your Eyes",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Another World",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Quiet Storm",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Case You Don’t Return",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Timeless",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yellowstone",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silver Starlings",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carry On",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chuva",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Time Is Here",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angels from the Realms of Glory",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sopro do Silêncio",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bolles Vaggvisa",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonbows",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sailing Stones",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Diane",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lilac",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Milano",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heartstring",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet Sunrise",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Streetlight In Nighttime",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cabin In The Sky",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonely Dreams",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow Me Till the End of Time",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Andy Luma Trio",
+    "mbid": "93a4dd32-3c0a-4283-bfae-28e120175b07",
+    "listeners": 80644,
+    "playcount": 300448,
+    "listener_play_ratio": 3.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Andy+Luma+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Tim Franks Trio",
+      "The Belleville Band",
+      "Glass Trio",
+      "Isac Solo Trio",
+      "Urskogen Jazz"
+    ],
+    "top_tracks": [
+      {
+        "name": "Carry On",
+        "listeners": 23236,
+        "playcount": 51336
+      },
+      {
+        "name": "Cabin In The Sky",
+        "listeners": 23220,
+        "playcount": 50914
+      },
+      {
+        "name": "Follow Me Till the End of Time",
+        "listeners": 15634,
+        "playcount": 32992
+      },
+      {
+        "name": "Chuva",
+        "listeners": 15031,
+        "playcount": 31411
+      },
+      {
+        "name": "Lonely Dreams",
+        "listeners": 14722,
+        "playcount": 30406
+      },
+      {
+        "name": "Sailing Stones",
+        "listeners": 13890,
+        "playcount": 27602
+      },
+      {
+        "name": "The Quiet Storm",
+        "listeners": 12596,
+        "playcount": 26423
+      },
+      {
+        "name": "Moonbows",
+        "listeners": 5085,
+        "playcount": 9820
+      },
+      {
+        "name": "Yellowstone",
+        "listeners": 4583,
+        "playcount": 9082
+      },
+      {
+        "name": "Milano",
+        "listeners": 3586,
+        "playcount": 7153
+      }
+    ],
+    "url": "https://www.last.fm/music/Andy+Luma+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

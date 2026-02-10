@@ -1,0 +1,175 @@
+{
+  "artist_name": "Silas Northwind",
+  "artist_id": "silas_northwind",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:03:31.435293+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 239612721,
+    "name": "Silas Northwind",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/239612721",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/46ee35423b5291ddc71fe65fa6d047b8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Woolly Woods",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blueberry Pancakes",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Bird's Nest",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lull Time",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "White Christmas",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long, Long Ago",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Four Seasons",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Little Town of Bethlehem",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Silas Northwind",
+    "mbid": "",
+    "listeners": 7413,
+    "playcount": 36778,
+    "listener_play_ratio": 4.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Silas+Northwind\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Everlasting Harmony",
+      "Alex Lehtonen",
+      "Eternal Hands",
+      "Teodor Seti",
+      "Cedric Everglen"
+    ],
+    "top_tracks": [
+      {
+        "name": "O Little Town of Bethlehem",
+        "listeners": 5668,
+        "playcount": 14964
+      },
+      {
+        "name": "Blueberry Pancakes",
+        "listeners": 1464,
+        "playcount": 15209
+      },
+      {
+        "name": "Woolly Woods",
+        "listeners": 725,
+        "playcount": 6374
+      },
+      {
+        "name": "The Holly and the Ivy",
+        "listeners": 80,
+        "playcount": 203
+      },
+      {
+        "name": "White Christmas",
+        "listeners": 19,
+        "playcount": 26
+      },
+      {
+        "name": "Long, Long Ago",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Silas+Northwind"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

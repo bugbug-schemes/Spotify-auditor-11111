@@ -1,0 +1,500 @@
+{
+  "artist_name": "Johnny Yukon",
+  "artist_id": "johnny_yukon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:33:45.535179+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "140f24ef-09a8-464c-a49f-ebd9092cc65c",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "John Mitchell"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/5572899",
+      "free streaming": "https://www.deezer.com/artist/11273912"
+    },
+    "labels": [
+      "Atlantic",
+      "RCA"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11273912,
+    "name": "johnny yukon",
+    "nb_fan": 1527,
+    "nb_album": 35,
+    "link": "https://www.deezer.com/artist/11273912",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ff8d7869fa887ffa63a364589b35ce71/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "BNYX®",
+      "Naomi Scott"
+    ],
+    "contributor_roles": {
+      "Naomi Scott": [
+        "Main"
+      ],
+      "BNYX®": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "MADNESS!",
+      "Moment",
+      "Gloria !",
+      "Rhythm",
+      "Soon",
+      "Right now!",
+      "Lies",
+      "All Out",
+      "stArlight",
+      "girlfriend ..",
+      "All Night",
+      "Jealous",
+      "The Start",
+      "Paper",
+      "Can’t Get Enough",
+      "The End",
+      "Alibi",
+      "WATER",
+      "Laptop",
+      "Voices",
+      "Video Killed The Radio Star",
+      "I Like",
+      "Gave U My Love",
+      "Do You Feel It?",
+      "Snooze"
+    ],
+    "track_durations": [
+      145,
+      132,
+      124,
+      157,
+      189,
+      114,
+      170,
+      172,
+      142,
+      147,
+      170,
+      181,
+      188,
+      186,
+      163,
+      197,
+      166,
+      145,
+      198,
+      195,
+      137,
+      198,
+      98,
+      174,
+      179
+    ],
+    "track_ranks": [
+      333878,
+      417466,
+      391243,
+      226377,
+      153438,
+      277502,
+      194309,
+      85519,
+      329390,
+      217770,
+      238998,
+      117293,
+      142648,
+      149720,
+      248094,
+      88052,
+      58288,
+      264213,
+      56563,
+      63696,
+      21794,
+      99398,
+      66898,
+      121605,
+      131103
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 3,
+      "ep": 1,
+      "single": 31
+    },
+    "albums": [
+      {
+        "title": "MOVIES! WORLDWIDE: PART I",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flight Plan 001",
+        "label": "",
+        "release_date": "2021-08-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Installation I",
+        "label": "",
+        "release_date": "2018-05-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I'm having fun <3",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rhythm",
+        "label": "",
+        "release_date": "2025-07-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "girlfriend ..",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "stArlight",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MADNESS!",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Right now!",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heartbreak City",
+        "label": "",
+        "release_date": "2024-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Night",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lights, Camera, Action!",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jealous",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gloria !",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Do You Feel It?",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Comet",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just Say It (feat. Johnny Yukon)",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whatever You Want",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Video Killed The Radio Star",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moment",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Start",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Keys",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soon",
+        "label": "",
+        "release_date": "2021-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mystery",
+        "label": "",
+        "release_date": "2021-07-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Like",
+        "label": "",
+        "release_date": "2018-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Out",
+        "label": "",
+        "release_date": "2018-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Healing",
+        "label": "",
+        "release_date": "2018-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonely",
+        "label": "",
+        "release_date": "2018-03-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snooze (feat. Cousin Stizz)",
+        "label": "",
+        "release_date": "2018-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Aminé",
+      "GoldLink",
+      "Duckwrth",
+      "Jaden",
+      "Rejjie Snow",
+      "MAC MILLER",
+      "Smino",
+      "BROCKHAMPTON",
+      "Jay Prince",
+      "RUBII"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4116021,
+    "name": "Johnny Yukon",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 3,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "7\", EP",
+      "CD, Comp",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Classics Records (2)",
+      "Top Rank International",
+      "Top Rank International, Discophon"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Johnny Yukon",
+    "mbid": "140f24ef-09a8-464c-a49f-ebd9092cc65c",
+    "listeners": 145113,
+    "playcount": 1210473,
+    "listener_play_ratio": 8.34,
+    "bio_exists": true,
+    "bio_summary": "Johnny Yukon is a Los Angeles-based, Philadelphia-bred singer/songwriter and producer who began making waves in 2015 with his beat-heavy, urban pop confections on SoundCloud. As his internet profile increased, Yukon began drawing interest from labels, and eventually settled on Atlantic. In 2017 he issued a trio of singles that began with the infectious \"Laptop,\" which was co-produced by Drake collaborator Frank Dukes. He followed up that success two months later with \"Paper\" and \"Malibu Feels. <",
+    "tags": [
+      "rnb",
+      "pop",
+      "hip hop",
+      "rap",
+      "los angeles"
+    ],
+    "similar_artists": [
+      "Greek",
+      "Anfa Rose",
+      "Jordan Ward",
+      "Always Never",
+      "Tommy Richman"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moment",
+        "listeners": 52794,
+        "playcount": 229901
+      },
+      {
+        "name": "MADNESS!",
+        "listeners": 30457,
+        "playcount": 145523
+      },
+      {
+        "name": "Soon",
+        "listeners": 19675,
+        "playcount": 105822
+      },
+      {
+        "name": "Gloria !",
+        "listeners": 15608,
+        "playcount": 71242
+      },
+      {
+        "name": "Jealous",
+        "listeners": 13589,
+        "playcount": 44058
+      },
+      {
+        "name": "Right now!",
+        "listeners": 9547,
+        "playcount": 36451
+      },
+      {
+        "name": "stArlight",
+        "listeners": 8068,
+        "playcount": 32817
+      },
+      {
+        "name": "Snooze (feat. Cousin Stizz)",
+        "listeners": 7609,
+        "playcount": 35683
+      },
+      {
+        "name": "Lies",
+        "listeners": 7603,
+        "playcount": 57067
+      },
+      {
+        "name": "Gave U My Love",
+        "listeners": 7493,
+        "playcount": 19508
+      }
+    ],
+    "url": "https://www.last.fm/music/Johnny+Yukon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

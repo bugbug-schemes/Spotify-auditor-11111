@@ -1,0 +1,217 @@
+{
+  "artist_name": "Temperance Lloyd",
+  "artist_id": "temperance_lloyd",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:28:51.132884+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5076e075-c1eb-45ed-9eb5-a925a032ea8c",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/168820837",
+      "purchase for download": "https://music.apple.com/us/artist/1622437591",
+      "soundcloud": "https://soundcloud.com/temperancelloyd-music",
+      "streaming": "https://tidal.com/artist/31989877",
+      "youtube music": "https://music.youtube.com/channel/UCmVJJr5fKUeFL9GPE0Mbi5A"
+    },
+    "labels": [
+      "Periférica"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 168820837,
+    "name": "Temperance Lloyd",
+    "nb_fan": 3,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/168820837",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fe7d16557c4e9f6e97c065c6fb7c139f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Ink light fade",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Poetic mellow",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bygone times",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dent de lait",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jean Paul errant",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liegende",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The light that blinds us",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feels like home",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Temperance Lloyd",
+    "mbid": "5076e075-c1eb-45ed-9eb5-a925a032ea8c",
+    "listeners": 51320,
+    "playcount": 190701,
+    "listener_play_ratio": 3.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Temperance+Lloyd\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Josephe Burke",
+      "Moleno",
+      "North Connolly",
+      "Wendie Solomon",
+      "Ambrosiae"
+    ],
+    "top_tracks": [
+      {
+        "name": "Jean Paul errant",
+        "listeners": 30706,
+        "playcount": 90340
+      },
+      {
+        "name": "Bygone times",
+        "listeners": 13852,
+        "playcount": 43270
+      },
+      {
+        "name": "The light that blinds us",
+        "listeners": 12437,
+        "playcount": 46151
+      },
+      {
+        "name": "Feels like home",
+        "listeners": 3101,
+        "playcount": 8887
+      },
+      {
+        "name": "Liegende",
+        "listeners": 595,
+        "playcount": 1224
+      },
+      {
+        "name": "Poetic mellow",
+        "listeners": 336,
+        "playcount": 743
+      },
+      {
+        "name": "Dent de lait",
+        "listeners": 17,
+        "playcount": 32
+      },
+      {
+        "name": "İnadına Yenilmeden",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Nazar Drill",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "leon",
+        "listeners": 2,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/Temperance+Lloyd"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

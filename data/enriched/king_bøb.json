@@ -1,0 +1,172 @@
+{
+  "artist_name": "King Bøb",
+  "artist_id": "king_bøb",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:50:00.796002+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "df932a04-9200-43da-8cf2-f116894b9d6b",
+    "type": "Group",
+    "country": "",
+    "area": "Victoria",
+    "begin_date": "2020-08-01",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'King Bøb', got 'King Bob'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2279972,
+    "name": "Bob King (4)",
+    "profile": "Australian rock photographer since 1964, though he started his career professionally in the early 1970s.",
+    "realname": "",
+    "social_urls": [
+      "http://www.bobking.com.au/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 25,
+    "digital_only_releases": 66,
+    "total_releases": 91,
+    "formats": [
+      "",
+      "2xCD, Album, RE, RM, Dig + DVD, NTSC + Comp",
+      "2xCD, Comp",
+      "2xCD, Comp, RM",
+      "2xLP, Comp",
+      "4xCD, Album + Box, Comp",
+      "6xLP, Comp, Mono + Box",
+      "7\", Ltd, Num, Ora",
+      "7\", Single, Ltd",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Ltd",
+      "CD, Album, RE, RM + CD, Album, RE, RM + Box, Comp",
+      "CD, Album, RE, Unofficial, Dig",
+      "CD, Album, RM + CD, Album, RM + Box, Comp",
+      "CD, Comp",
+      "CD, Comp, RM, Dig",
+      "CD, Unofficial",
+      "DVD-V, NTSC + DVD-V, NTSC + Comp, Car",
+      "LP, Album",
+      "LP, Comp",
+      "LP, Comp, Mono, RM"
+    ],
+    "labels": [
+      "Albert Productions",
+      "Bang! Records, Bang! Records",
+      "CBS",
+      "Columbia",
+      "Columbia, Albert Productions",
+      "Eagle Vision, Universal Music Group",
+      "Festival Records",
+      "Forge Records",
+      "Geffen Records, Universal Music France",
+      "Genre B.Goode",
+      "Hamster Records (6)",
+      "Not On Label",
+      "RCA Victor, RCA International",
+      "Rainbow (4)",
+      "Raven Records",
+      "Rhino Records (2), Atlantic",
+      "Right On Records (5)",
+      "Rivet Records (3)",
+      "Shock (2), Savage Beat!",
+      "Sony BMG Music Entertainment",
+      "Sony BMG Music Entertainment, EMI Music Australia, Universal Music, Warner Music Australia",
+      "Sony Music",
+      "Sound And Media Limited, Virgin"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "King Bøb",
+    "mbid": "",
+    "listeners": 7176,
+    "playcount": 22656,
+    "listener_play_ratio": 3.16,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/King+B%C3%B8b\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Bejnou",
+      "Phil Axes",
+      "Lukas Hiraeth",
+      "Astrovox",
+      "Jordan Moon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Driftwave",
+        "listeners": 5491,
+        "playcount": 14190
+      },
+      {
+        "name": "Something for Nothing",
+        "listeners": 2078,
+        "playcount": 4699
+      },
+      {
+        "name": "One Day",
+        "listeners": 1103,
+        "playcount": 2422
+      },
+      {
+        "name": "Moonlight",
+        "listeners": 625,
+        "playcount": 1297
+      },
+      {
+        "name": "Never Not Today",
+        "listeners": 15,
+        "playcount": 48
+      }
+    ],
+    "url": "https://www.last.fm/music/King+B%C3%B8b"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

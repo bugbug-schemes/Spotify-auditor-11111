@@ -1,0 +1,527 @@
+{
+  "artist_name": "Mindchatter",
+  "artist_id": "mindchatter",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:45:00.909009+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "58047fc9-8b04-40a3-b32a-401c2c62e34e",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/8706442",
+      "free streaming": "https://www.deezer.com/artist/56771982",
+      "purchase for download": "https://www.beatport.com/artist/mindchatter/758169",
+      "soundcloud": "https://soundcloud.com/mindchatter",
+      "streaming": "https://tidal.com/artist/10791501"
+    },
+    "labels": [
+      "Mind of a Genius",
+      "Maison Arts",
+      "Headless Records",
+      "[no label]",
+      "Rules Don't Apply",
+      "TH3RD BRAIN",
+      "Spinnin’ Deep",
+      "Foreign Family Collective",
+      "Mind of a Genius Records",
+      "Maison Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 56771982,
+    "name": "Mindchatter",
+    "nb_fan": 1633,
+    "nb_album": 55,
+    "link": "https://www.deezer.com/artist/56771982",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0e80669474052f2e32bb42f8eb8a7f30/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Emmit Fenn",
+      "Poolside",
+      "Rome In Silver"
+    ],
+    "contributor_roles": {
+      "Poolside": [
+        "Main"
+      ],
+      "Emmit Fenn": [
+        "Main"
+      ],
+      "Rome In Silver": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Here I Go Again",
+      "Nothing On Me",
+      "Glide",
+      "It's Ok (it's Not Ok)",
+      "I Can Change",
+      "It's Been You",
+      "Drug In Us",
+      "Referees Don't Fall in Love",
+      "Scared to Go Home",
+      "Sticks and Stones",
+      "Too Little, Too Late",
+      "Hide Your Face",
+      "Inch Off The Earth",
+      "Hips",
+      "Days Go Slow",
+      "Choose a Side",
+      "Human Shape",
+      "Math",
+      "Voice Down",
+      "Starlight",
+      "Every Single Sound",
+      "I'll Keep Trying To Explain",
+      "Answer Me",
+      "Night Goggles (Rome in Silver Remix)",
+      "Google Thinks for Me"
+    ],
+    "track_durations": [
+      220,
+      154,
+      232,
+      186,
+      331,
+      193,
+      178,
+      148,
+      179,
+      87,
+      201,
+      212,
+      171,
+      224,
+      194,
+      235,
+      206,
+      213,
+      122,
+      222,
+      201,
+      130,
+      194,
+      201,
+      129
+    ],
+    "track_ranks": [
+      196183,
+      164549,
+      171765,
+      219238,
+      276084,
+      307984,
+      164712,
+      126034,
+      104973,
+      160502,
+      140888,
+      132832,
+      166021,
+      248421,
+      162146,
+      108145,
+      170641,
+      163054,
+      125495,
+      136463,
+      154347,
+      152718,
+      140720,
+      143625,
+      102024
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 8,
+      "single": 42
+    },
+    "albums": [
+      {
+        "title": "Giving Up On Words",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "DREAM SOUP (Remixes)",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "DREAM SOUP",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Imaginary Audience (Remixes)",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Imaginary Audience",
+        "label": "",
+        "release_date": "2020-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Inner Democracy",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Every Single Sound / Such A Shame",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Corporate Shakespeare",
+        "label": "",
+        "release_date": "2024-05-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "This Is A Reminder That You Are Not Behind Your Face",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Brain Pills",
+        "label": "",
+        "release_date": "2024-01-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Spiritual Puberty",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Just What The World Needs EP",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Just What The World Needs",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Don't Trust A Thought",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Laundry",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Funeral",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Said & Done",
+        "label": "",
+        "release_date": "2024-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Day Dreams (Mona Yim Remix)",
+        "label": "",
+        "release_date": "2024-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corporate Shakespeare (Azzecca Remix)",
+        "label": "",
+        "release_date": "2024-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brain Pills (Familiar Faces Remix)",
+        "label": "",
+        "release_date": "2024-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cash",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pull Me Back",
+        "label": "",
+        "release_date": "2023-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Day Dreams",
+        "label": "",
+        "release_date": "2023-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Growing Pains",
+        "label": "",
+        "release_date": "2023-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Young Folks",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glide (DJ Counselling Remix)",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glide (Kyle Walker Remix)",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Answer Me (Ranger Trucco Remix)",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Math (Westend Remix)",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here I Go Again (Slow Motion & Duarte Remix)",
+        "label": "",
+        "release_date": "2022-06-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Flight Facilities",
+      "Chet Faker",
+      "TEED",
+      "Isaac Delusion",
+      "Camel Power Club",
+      "Hot Chip",
+      "Caribou",
+      "Kazy Lambist",
+      "Elder Island",
+      "Jungle"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8706442,
+    "name": "Mindchatter",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 7,
+    "digital_only_releases": 16,
+    "total_releases": 23,
+    "formats": [
+      "10xFile, MP3, 320",
+      "20xFile, WAV, Album",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "3xFile, MP3, 320",
+      "File, MP3, Single, 320",
+      "File, WAV",
+      "LP",
+      "LP, Album",
+      "LP, Album, Ltd, S/Edition, Whi",
+      "LP, Album, S/Edition, Opa",
+      "LP, Album, S/Edition, Pin",
+      "LP, Comp",
+      "LP, Pur"
+    ],
+    "labels": [
+      "Confession",
+      "Foreign Family Collective",
+      "Maison Arts",
+      "Mind Of A Genius",
+      "Not On Label (Mindchatter Self-released)",
+      "Rules Don't Apply",
+      "Spinnin' Deep"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "mindchatter",
+    "mbid": "",
+    "listeners": 156868,
+    "playcount": 1678646,
+    "listener_play_ratio": 10.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/mindchatter\">Read more on Last.fm</a>",
+    "tags": [
+      "electronic",
+      "indie pop",
+      "experimental",
+      "indie",
+      "indie rnb"
+    ],
+    "similar_artists": [
+      "Neil Frances",
+      "Crooked Colours",
+      "Sad Night Dynamite",
+      "Emmit Fenn",
+      "Gilligan Moss"
+    ],
+    "top_tracks": [
+      {
+        "name": "Kerosene",
+        "listeners": 28141,
+        "playcount": 106505
+      },
+      {
+        "name": "It's Been You",
+        "listeners": 26830,
+        "playcount": 112437
+      },
+      {
+        "name": "I Can Change",
+        "listeners": 24466,
+        "playcount": 113377
+      },
+      {
+        "name": "Just Gonna Exist",
+        "listeners": 23853,
+        "playcount": 91202
+      },
+      {
+        "name": "It's Ok (It's Not Ok)",
+        "listeners": 20736,
+        "playcount": 72843
+      },
+      {
+        "name": "Human Shape",
+        "listeners": 19204,
+        "playcount": 72031
+      },
+      {
+        "name": "Here I Go Again",
+        "listeners": 15595,
+        "playcount": 67157
+      },
+      {
+        "name": "Lee’s Last Dance - Mindchatter Cover",
+        "listeners": 15305,
+        "playcount": 52977
+      },
+      {
+        "name": "trippy",
+        "listeners": 13051,
+        "playcount": 59382
+      },
+      {
+        "name": "Glide",
+        "listeners": 13018,
+        "playcount": 47998
+      }
+    ],
+    "url": "https://www.last.fm/music/mindchatter"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,180 @@
+{
+  "artist_name": "Out & About",
+  "artist_id": "out___about",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:18:11.145155+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "88a09656-6e0c-46c2-8cdd-7242891301be",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11478340,
+    "name": "Out & About",
+    "nb_fan": 20,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/11478340",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cdeb2837ed3307f160833d7ca3b5c738/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "L.I.E.B.E",
+        "label": "",
+        "release_date": "2017-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6318541,
+    "name": "Out & About",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 2,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "2xFile, MP3, 320",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Comsa",
+      "Illusion Music Records, Illusion Music Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Out & About",
+    "mbid": "88a09656-6e0c-46c2-8cdd-7242891301be",
+    "listeners": 41724,
+    "playcount": 192963,
+    "listener_play_ratio": 4.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Out+&+About\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Four Elements Sounds",
+      "Sweet Nature",
+      "Noise of H2O",
+      "bioacoustics",
+      "Thermal Element"
+    ],
+    "top_tracks": [
+      {
+        "name": "River Rain",
+        "listeners": 41117,
+        "playcount": 189956
+      },
+      {
+        "name": "Underwater Songs",
+        "listeners": 588,
+        "playcount": 2249
+      },
+      {
+        "name": "My Friend, the Orca",
+        "listeners": 120,
+        "playcount": 406
+      },
+      {
+        "name": "Radiant Piano Twilight Harmony",
+        "listeners": 16,
+        "playcount": 20
+      },
+      {
+        "name": "Extravaganza",
+        "listeners": 11,
+        "playcount": 48
+      },
+      {
+        "name": "It's Gonna Rain",
+        "listeners": 8,
+        "playcount": 49
+      },
+      {
+        "name": "Extravaganza (original mix)",
+        "listeners": 6,
+        "playcount": 11
+      },
+      {
+        "name": "Sal Vulcano on if Joe Gatto will ever return to Impractical Jokers",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "To Sleep in a Sea of Stars",
+        "listeners": 5,
+        "playcount": 8
+      },
+      {
+        "name": "Dancing Firelight Serenades",
+        "listeners": 5,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Out+&+About"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

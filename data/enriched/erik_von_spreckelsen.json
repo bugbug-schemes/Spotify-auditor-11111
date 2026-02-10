@@ -1,0 +1,405 @@
+{
+  "artist_name": "Erik von Spreckelsen",
+  "artist_id": "erik_von_spreckelsen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:30:23.590797+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 34841881,
+    "name": "Erik von Spreckelsen",
+    "nb_fan": 16,
+    "nb_album": 43,
+    "link": "https://www.deezer.com/artist/34841881",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7818bd0b0d66b6cdccb0960a46f6be6e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Marek Konarski"
+    ],
+    "contributor_roles": {
+      "Marek Konarski": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "In the Wee Small Hours of the Morning",
+      "Keep Cruising",
+      "Old Folks",
+      "Ask Me Now"
+    ],
+    "track_durations": [
+      281,
+      236,
+      291,
+      339
+    ],
+    "track_ranks": [
+      143967,
+      21497,
+      161587,
+      54463
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "single": 39
+    },
+    "albums": [
+      {
+        "title": "Town Talk",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Back to the Roots",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Friendship",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solo Piano Improvisations",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The One You Love",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Collision By Chance",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everything's Changed",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue World",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That Changes Everything",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's You",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Worries",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Traces",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Dream At All",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better Believe It",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Blink",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dusk",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Like You Like Me",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Checking In",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thrilled to Know You",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heartbeat",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Right Place",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feel It",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Keep Cruising",
+        "label": "",
+        "release_date": "2022-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The View from Above",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Turn It Up",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On the Right Track",
+        "label": "",
+        "release_date": "2022-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Starting All Over",
+        "label": "",
+        "release_date": "2022-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Voices of Truth",
+        "label": "",
+        "release_date": "2022-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Peaceful Thoughts",
+        "label": "",
+        "release_date": "2022-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Keep It Up",
+        "label": "",
+        "release_date": "2022-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2005176,
+    "name": "Erik Ørum von Spreckelsen",
+    "profile": "Danish jazz musician",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Erik Ørum von Spreckelsen Quartet",
+      "Page One (6)",
+      "Thomas Larsen Project"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 10,
+    "digital_only_releases": 2,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "CD",
+      "CD, Album",
+      "CD, Comp, Promo",
+      "CD, Comp, Smplr"
+    ],
+    "labels": [
+      "Dacapo (4)",
+      "Olufsen Records",
+      "Palæ Bar Records",
+      "Politiken",
+      "Stunt Records",
+      "Sundance (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Erik von Spreckelsen",
+    "mbid": "",
+    "listeners": 43951,
+    "playcount": 143421,
+    "listener_play_ratio": 3.26,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Erik+von+Spreckelsen\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "denmark",
+      "danish"
+    ],
+    "similar_artists": [
+      "The Mellowtones",
+      "Carl Bagge",
+      "David Ake",
+      "Rob van Bavel",
+      "Ola Åkerman"
+    ],
+    "top_tracks": [
+      {
+        "name": "Old Folks",
+        "listeners": 28852,
+        "playcount": 63576
+      },
+      {
+        "name": "In the Wee Small Hours of the Morning",
+        "listeners": 10869,
+        "playcount": 22096
+      },
+      {
+        "name": "Ask Me Now",
+        "listeners": 10184,
+        "playcount": 20240
+      },
+      {
+        "name": "Chance of a Day, Pt. 3",
+        "listeners": 6946,
+        "playcount": 15071
+      },
+      {
+        "name": "Keep Cruising",
+        "listeners": 6136,
+        "playcount": 14134
+      },
+      {
+        "name": "On the Right Track",
+        "listeners": 1670,
+        "playcount": 3217
+      },
+      {
+        "name": "Chance of a Day, Pt. 1",
+        "listeners": 1191,
+        "playcount": 2799
+      },
+      {
+        "name": "Keep It Up",
+        "listeners": 235,
+        "playcount": 350
+      },
+      {
+        "name": "Traces",
+        "listeners": 69,
+        "playcount": 142
+      },
+      {
+        "name": "Heartbeat",
+        "listeners": 63,
+        "playcount": 135
+      }
+    ],
+    "url": "https://www.last.fm/music/Erik+von+Spreckelsen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

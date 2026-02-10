@@ -1,0 +1,217 @@
+{
+  "artist_name": "Tadd Norman",
+  "artist_id": "tadd_norman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:24:16.830717+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170357417,
+    "name": "Tadd Norman",
+    "nb_fan": 8,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/170357417",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3ebf7108da68a7970e8ef6c2d8366615/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Lesters's Tears",
+      "Lazy Steps",
+      "Winter Lights on Christmas Eve",
+      "The Great Ennui"
+    ],
+    "track_durations": [
+      232,
+      228,
+      192,
+      201
+    ],
+    "track_ranks": [
+      247393,
+      49224,
+      7795,
+      10173
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Winter Lights on Christmas Eve",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Walk He Can't Forget",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Great Ennui",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let´s have lunch at the counter",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tide",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lesters's Tears",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Big Year",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lazy Steps",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How Long Has This Been Going On?",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tadd Norman",
+    "mbid": "",
+    "listeners": 42705,
+    "playcount": 119079,
+    "listener_play_ratio": 2.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tadd+Norman\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Belmont Central",
+      "Stewart Park Quartet",
+      "George Kuntz Four",
+      "Tommie Blayne",
+      "Kevin Waters Group"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lesters's Tears",
+        "listeners": 21902,
+        "playcount": 52452
+      },
+      {
+        "name": "The Great Ennui",
+        "listeners": 11452,
+        "playcount": 25408
+      },
+      {
+        "name": "Winter Lights on Christmas Eve",
+        "listeners": 8455,
+        "playcount": 15269
+      },
+      {
+        "name": "Lazy Steps",
+        "listeners": 5227,
+        "playcount": 13592
+      },
+      {
+        "name": "How Long Has This Been Going On?",
+        "listeners": 4913,
+        "playcount": 11280
+      },
+      {
+        "name": "The Big Year",
+        "listeners": 357,
+        "playcount": 655
+      },
+      {
+        "name": "Let'S Have Lunch at the Counter",
+        "listeners": 30,
+        "playcount": 174
+      },
+      {
+        "name": "Long Ago & Far Away",
+        "listeners": 17,
+        "playcount": 31
+      },
+      {
+        "name": "That Old Feeling",
+        "listeners": 15,
+        "playcount": 45
+      },
+      {
+        "name": "Let´s have lunch at the counter",
+        "listeners": 15,
+        "playcount": 31
+      }
+    ],
+    "url": "https://www.last.fm/music/Tadd+Norman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

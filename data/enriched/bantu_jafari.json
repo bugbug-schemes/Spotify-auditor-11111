@@ -1,0 +1,130 @@
+{
+  "artist_name": "Bantu Jafari",
+  "artist_id": "bantu_jafari",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:31:23.816283+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "18447c44-f964-4471-b2a2-5f90a07b94fb",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6yYZzgfZlTAZ5c5FDr78Zl",
+      "streaming": "https://music.apple.com/gb/artist/1775257129"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 286505981,
+    "name": "Bantu Jafari",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/286505981",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/dd42eb99dd56d9affcad653b5fe9acd6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "ANTILOOP",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Horizon",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bantu Jafari",
+    "mbid": "",
+    "listeners": 1723,
+    "playcount": 3385,
+    "listener_play_ratio": 1.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bantu+Jafari\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Coco Siesta",
+      "Léon Mirage",
+      "Monte Lux",
+      "Onda Kura",
+      "Aurove"
+    ],
+    "top_tracks": [
+      {
+        "name": "ANTILOOP",
+        "listeners": 1566,
+        "playcount": 3102
+      },
+      {
+        "name": "Horizon",
+        "listeners": 168,
+        "playcount": 283
+      }
+    ],
+    "url": "https://www.last.fm/music/Bantu+Jafari"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

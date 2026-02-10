@@ -1,0 +1,121 @@
+{
+  "artist_name": "Silvender",
+  "artist_id": "silvender",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:04:41.098004+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Silvender', got 'Gauvain Sers'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Silvender",
+    "mbid": "",
+    "listeners": 43850,
+    "playcount": 216346,
+    "listener_play_ratio": 4.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Silvender\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Noctivelle",
+      "Somnolentia",
+      "Mirelio",
+      "Eirwyn North",
+      "Gillirium"
+    ],
+    "top_tracks": [
+      {
+        "name": "Branches of Air",
+        "listeners": 26376,
+        "playcount": 108438
+      },
+      {
+        "name": "Neith",
+        "listeners": 12339,
+        "playcount": 42243
+      },
+      {
+        "name": "Esoteric",
+        "listeners": 12243,
+        "playcount": 31740
+      },
+      {
+        "name": "Softly, the Dawn",
+        "listeners": 4397,
+        "playcount": 15436
+      },
+      {
+        "name": "Silver Winds",
+        "listeners": 3527,
+        "playcount": 12128
+      },
+      {
+        "name": "Nocta",
+        "listeners": 1879,
+        "playcount": 4228
+      },
+      {
+        "name": "Weightless",
+        "listeners": 1006,
+        "playcount": 2027
+      },
+      {
+        "name": "Hollow Dreams",
+        "listeners": 80,
+        "playcount": 95
+      },
+      {
+        "name": "Dissolving",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Weightless Hours",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Silvender"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

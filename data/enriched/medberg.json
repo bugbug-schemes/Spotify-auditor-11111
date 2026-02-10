@@ -1,0 +1,197 @@
+{
+  "artist_name": "Medberg",
+  "artist_id": "medberg",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:36:57.799788+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dc2bf301-106c-46b9-b702-87f32244af04",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "1927-03-27",
+    "end_date": "1989",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1134474",
+      "wikidata": "https://www.wikidata.org/wiki/Q3443888"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Medberg', got 'møndberg'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1134474,
+    "name": "Gunnar Medberg",
+    "profile": "Swedish trombonist, composer and arranger, born 27 March 1927, died in 1989.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Radiojazzgruppen",
+      "Militärmusiksamfundets Musikkår"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 39,
+    "digital_only_releases": 14,
+    "total_releases": 53,
+    "formats": [
+      "",
+      "2xCD",
+      "2xCD, Album, Comp",
+      "2xLP, Album, Comp",
+      "4xCD, Comp",
+      "7\", EP",
+      "7\", Single",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, RE + CD + Comp",
+      "CD, Comp",
+      "CD, RE",
+      "LP",
+      "LP, Album",
+      "LP, Album, Gat",
+      "LP, Comp",
+      "LP, Comp, Mono"
+    ],
+    "labels": [
+      "ACT (4)",
+      "Bergen Digital Studio",
+      "Bonnier Music",
+      "Caprice Records",
+      "Columbia",
+      "DUX (2)",
+      "Decca",
+      "Dragon (8)",
+      "Fermat",
+      "Fermat, Fermat",
+      "Fusion Records (18)",
+      "Gazell, Gazell",
+      "Gemini Records (7)",
+      "Grammofonverket",
+      "Manöver",
+      "Marcia",
+      "Marcia, Marcia",
+      "Metronome",
+      "Not On Label",
+      "Not on label",
+      "Odeon",
+      "Philips",
+      "Phontastic",
+      "SR Records",
+      "Serpent",
+      "Swedish Society Discofil",
+      "Telestar",
+      "WEA"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "MEDBERG",
+    "mbid": "",
+    "listeners": 1102,
+    "playcount": 1939,
+    "listener_play_ratio": 1.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/MEDBERG\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Fantastic Mister Ox",
+      "puurvuur",
+      "Idra",
+      "M1NT",
+      "stay vaag"
+    ],
+    "top_tracks": [
+      {
+        "name": "1992",
+        "listeners": 1035,
+        "playcount": 1733
+      },
+      {
+        "name": "Colors At Night",
+        "listeners": 33,
+        "playcount": 43
+      },
+      {
+        "name": "Phant0m",
+        "listeners": 32,
+        "playcount": 71
+      },
+      {
+        "name": "t.i.d.e.",
+        "listeners": 22,
+        "playcount": 45
+      },
+      {
+        "name": "Where Was I",
+        "listeners": 7,
+        "playcount": 9
+      },
+      {
+        "name": "Softscar",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Flicker",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "ViSiONS",
+        "listeners": 1,
+        "playcount": 28
+      },
+      {
+        "name": "Mirrorfield",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/MEDBERG"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,231 @@
+{
+  "artist_name": "Henry Flower",
+  "artist_id": "henry_flower",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:05:53.574008+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5008902,
+    "name": "Henry Flower",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/5008902",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d38290a2669a86535512d6dfe252f975/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Golden Hour",
+      "This Moment",
+      "Daydream"
+    ],
+    "track_durations": [
+      141,
+      128,
+      141
+    ],
+    "track_ranks": [
+      60660,
+      53921,
+      128006
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "This Moment",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Over the Dunes",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daydream",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forgotten Skies",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden Hour",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Partial View",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Begin Again",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Song",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 320116,
+    "name": "Henry Flower",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "4xFile, MP3, 128",
+      "File, MP3"
+    ],
+    "labels": [
+      "Dreamland Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Henry Flower",
+    "mbid": "",
+    "listeners": 26422,
+    "playcount": 101781,
+    "listener_play_ratio": 3.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Henry+Flower\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "acoustic",
+      "experimental",
+      "noise",
+      "dark ambient"
+    ],
+    "similar_artists": [
+      "Sigrid Vega",
+      "Joseph Fina",
+      "Jiel",
+      "Maynoir",
+      "Sorellien"
+    ],
+    "top_tracks": [
+      {
+        "name": "Daydream",
+        "listeners": 15663,
+        "playcount": 49605
+      },
+      {
+        "name": "Golden Hour",
+        "listeners": 8053,
+        "playcount": 16959
+      },
+      {
+        "name": "This Moment",
+        "listeners": 7743,
+        "playcount": 21041
+      },
+      {
+        "name": "Begin Again",
+        "listeners": 1904,
+        "playcount": 3921
+      },
+      {
+        "name": "A Partial View",
+        "listeners": 1617,
+        "playcount": 6395
+      },
+      {
+        "name": "Over the Dunes",
+        "listeners": 1022,
+        "playcount": 3185
+      },
+      {
+        "name": "Love Island contestants discuss Brexit",
+        "listeners": 117,
+        "playcount": 152
+      },
+      {
+        "name": "Secret History",
+        "listeners": 20,
+        "playcount": 75
+      },
+      {
+        "name": "Non Resurgam",
+        "listeners": 18,
+        "playcount": 39
+      },
+      {
+        "name": "Tin Sea",
+        "listeners": 17,
+        "playcount": 44
+      }
+    ],
+    "url": "https://www.last.fm/music/Henry+Flower"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

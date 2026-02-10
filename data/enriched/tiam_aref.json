@@ -1,0 +1,86 @@
+{
+  "artist_name": "Tiam Aref",
+  "artist_id": "tiam_aref",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:41:54.494609+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Tiam Aref', got 'Tika Maree'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tiam Aref",
+    "mbid": "",
+    "listeners": 4112,
+    "playcount": 12127,
+    "listener_play_ratio": 2.95,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tiam+Aref\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Piano Bloom",
+      "OceanFinder",
+      "Drift three",
+      "Ava Twilight",
+      "Njarka"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dreamless Shore",
+        "listeners": 2653,
+        "playcount": 7733
+      },
+      {
+        "name": "Calm Sequencer",
+        "listeners": 1566,
+        "playcount": 4393
+      },
+      {
+        "name": "Spiritual growth",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Tiam+Aref"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

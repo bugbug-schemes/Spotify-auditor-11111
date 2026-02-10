@@ -1,0 +1,102 @@
+{
+  "artist_name": "Brian Zeller",
+  "artist_id": "brian_zeller",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:49:42.332872+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Brian Zeller', got 'Brian Kelley'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2964812,
+    "name": "Highstreet (2)",
+    "profile": "Canadian band from Sherbrooke, Québec, Canada.\r\n\r\nFormed 1968, disbanded 1981.\r\n\r\nBrian Monty (lead guitar), Desi McKeon (bass), John Berry (drums), Mick Hall (guitar, vocals, drums), Jim Zeller, Ted Hall (rhythm guitar, vocals), Jim Buck (bass, vocals), Butch Coulter (harmonica, acoustic guitar), Gordie Adamson (drums)",
+    "realname": "",
+    "social_urls": [
+      "https://citizenfreak.com/artists/96545-highstreet"
+    ],
+    "members": [
+      "Ted Hall (2)",
+      "Mick Hall",
+      "Jim Buck (2)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "7\"",
+      "LP, Album"
+    ],
+    "labels": [
+      "Epic",
+      "Music Lab Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Brian Zeller",
+    "mbid": "",
+    "listeners": 672,
+    "playcount": 3837,
+    "listener_play_ratio": 5.71,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Brian+Zeller\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Noélina Faye",
+      "Aurora Keys",
+      "Marlo Tendre",
+      "Leon Rose",
+      "Henry Clein"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mommy Bake a Cake",
+        "listeners": 672,
+        "playcount": 3837
+      }
+    ],
+    "url": "https://www.last.fm/music/Brian+Zeller"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

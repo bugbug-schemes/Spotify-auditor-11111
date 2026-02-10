@@ -1,0 +1,142 @@
+{
+  "artist_name": "Celestial Aura",
+  "artist_id": "celestial_aura",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:02:35.184349+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Celestial Aura', got 'Celestial Fury'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4048372,
+    "name": "Death Aura",
+    "profile": "Ambient/Depressive Black Metal (early); Black Metal/Shoegaze (later), Thessaloniki, Central Macedonia, Greece\r\n\r\nActive from - 2004-2007 (as Celestial), 2007-2010, 2010-present (as Daunenskalpel‎)",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "WS"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD"
+    ],
+    "labels": [
+      "Inner Voice Records",
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Celestial Aura",
+    "mbid": "",
+    "listeners": 76864,
+    "playcount": 427540,
+    "listener_play_ratio": 5.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Celestial+Aura\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Astral Steps",
+      "Divine Vibration",
+      "Emberlace",
+      "Manuel Wall",
+      "Tom Schiller"
+    ],
+    "top_tracks": [
+      {
+        "name": "Harmonia",
+        "listeners": 26601,
+        "playcount": 132520
+      },
+      {
+        "name": "A Special Place",
+        "listeners": 21308,
+        "playcount": 93710
+      },
+      {
+        "name": "A Reverie Unspoken",
+        "listeners": 11319,
+        "playcount": 34975
+      },
+      {
+        "name": "Zephira",
+        "listeners": 10784,
+        "playcount": 46813
+      },
+      {
+        "name": "Hushed",
+        "listeners": 8458,
+        "playcount": 29784
+      },
+      {
+        "name": "Stella",
+        "listeners": 8323,
+        "playcount": 26745
+      },
+      {
+        "name": "Falling Light",
+        "listeners": 5691,
+        "playcount": 12882
+      },
+      {
+        "name": "Falling Upwards",
+        "listeners": 4110,
+        "playcount": 18959
+      },
+      {
+        "name": "Dopamine",
+        "listeners": 3266,
+        "playcount": 8926
+      },
+      {
+        "name": "Calming Eternity",
+        "listeners": 2556,
+        "playcount": 8716
+      }
+    ],
+    "url": "https://www.last.fm/music/Celestial+Aura"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,201 @@
+{
+  "artist_name": "Amos Stremann",
+  "artist_id": "amos_stremann",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:56:48.488443+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 131028762,
+    "name": "Amos Stremann",
+    "nb_fan": 5,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/131028762",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/805d894cfa22ce6af7a03dcaf11f0a43/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "A fragile infinity",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Veins of the Earth",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fragments of stillness",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trust",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slower",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonesome Harbour",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "With me",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twofold",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ray of light",
+        "label": "",
+        "release_date": "2024-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonchild's First Flight",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Airwaving Goodbyes",
+        "label": "",
+        "release_date": "2021-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amos Stremann",
+    "mbid": "",
+    "listeners": 16968,
+    "playcount": 64792,
+    "listener_play_ratio": 3.82,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Amos+Stremann\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Vestigency",
+      "Evensia",
+      "Frida Miranda",
+      "Torun Lysander",
+      "SOLAR SONAR"
+    ],
+    "top_tracks": [
+      {
+        "name": "Veins of the Earth",
+        "listeners": 7341,
+        "playcount": 20788
+      },
+      {
+        "name": "Moonchild's First Flight",
+        "listeners": 5376,
+        "playcount": 22653
+      },
+      {
+        "name": "Trust",
+        "listeners": 4778,
+        "playcount": 20519
+      },
+      {
+        "name": "Lonesome Harbour",
+        "listeners": 389,
+        "playcount": 705
+      },
+      {
+        "name": "Vertical Amplitude",
+        "listeners": 68,
+        "playcount": 100
+      },
+      {
+        "name": "Airwaving Goodbyes",
+        "listeners": 8,
+        "playcount": 17
+      },
+      {
+        "name": "Twofold",
+        "listeners": 7,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Amos+Stremann"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

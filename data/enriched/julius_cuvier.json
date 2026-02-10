@@ -1,0 +1,232 @@
+{
+  "artist_name": "Julius Cuvier",
+  "artist_id": "julius_cuvier",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:40:20.347857+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170528357,
+    "name": "Julius Cuvier",
+    "nb_fan": 4,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/170528357",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a264b7c5c497564924de0d2639fea8c0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Taciturn",
+      "Once Upon A Star"
+    ],
+    "track_durations": [
+      179,
+      103
+    ],
+    "track_ranks": [
+      65332,
+      4221
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Soft as Your Smile",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Comfort",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Sleepy Train Choo-choo",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Quiet Sleep",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Richie the Elephant",
+        "label": "",
+        "release_date": "2025-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Fox",
+        "label": "",
+        "release_date": "2025-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Adventure",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Until Spring",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fetterless",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rapprochement",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once Upon A Star",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get To Know You",
+        "label": "",
+        "release_date": "2021-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Julius Cuvier",
+    "mbid": "",
+    "listeners": 38140,
+    "playcount": 256170,
+    "listener_play_ratio": 6.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Julius+Cuvier\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Valerie Renaud",
+      "Oliver Peasley",
+      "Max Walltine",
+      "Eugène Arnaud",
+      "Marlon Guild"
+    ],
+    "top_tracks": [
+      {
+        "name": "Get To Know You",
+        "listeners": 24182,
+        "playcount": 119992
+      },
+      {
+        "name": "Taciturn",
+        "listeners": 17794,
+        "playcount": 89669
+      },
+      {
+        "name": "Muse",
+        "listeners": 3889,
+        "playcount": 11580
+      },
+      {
+        "name": "Once Upon A Star",
+        "listeners": 3544,
+        "playcount": 30893
+      },
+      {
+        "name": "Winter Fox",
+        "listeners": 274,
+        "playcount": 3910
+      },
+      {
+        "name": "Forthcoming",
+        "listeners": 12,
+        "playcount": 25
+      },
+      {
+        "name": "Richie the Elephant",
+        "listeners": 10,
+        "playcount": 75
+      },
+      {
+        "name": "Soft as Your Smile",
+        "listeners": 7,
+        "playcount": 9
+      },
+      {
+        "name": "Tutu",
+        "listeners": 6,
+        "playcount": 7
+      },
+      {
+        "name": "Rapprochement",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Julius+Cuvier"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

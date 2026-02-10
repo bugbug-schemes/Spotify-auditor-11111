@@ -1,0 +1,200 @@
+{
+  "artist_name": "Mima Renard",
+  "artist_id": "mima_renard",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:44:17.849593+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 184168807,
+    "name": "Mima Renard",
+    "nb_fan": 9,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/184168807",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7b7158356f272727a42ab1cfafe97487/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Inmaterial color",
+      "Healing",
+      "Portrait of a shade"
+    ],
+    "track_durations": [
+      165,
+      127,
+      176
+    ],
+    "track_ranks": [
+      565651,
+      86472,
+      23793
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Boundless trace",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Inmaterial color",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Healing",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hondura",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Portrait of a shade",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stella",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That's why I stay",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mima Renard",
+    "mbid": "",
+    "listeners": 65122,
+    "playcount": 256464,
+    "listener_play_ratio": 3.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mima+Renard\">Read more on Last.fm</a>",
+    "tags": [
+      "instrumental",
+      "piano",
+      "Klavier",
+      "piyano"
+    ],
+    "similar_artists": [
+      "Andrea Prine",
+      "Arden Brooks",
+      "Anthony Jacobus",
+      "Wendie Solomon",
+      "Moises Daniel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Inmaterial color",
+        "listeners": 45226,
+        "playcount": 182310
+      },
+      {
+        "name": "Hondura",
+        "listeners": 11408,
+        "playcount": 28720
+      },
+      {
+        "name": "Healing",
+        "listeners": 11070,
+        "playcount": 28725
+      },
+      {
+        "name": "That's why I stay",
+        "listeners": 3401,
+        "playcount": 8197
+      },
+      {
+        "name": "Portrait of a shade",
+        "listeners": 2166,
+        "playcount": 5746
+      },
+      {
+        "name": "Stella",
+        "listeners": 1162,
+        "playcount": 2756
+      },
+      {
+        "name": "Mima Renard - Inmaterial color",
+        "listeners": 1,
+        "playcount": 8
+      },
+      {
+        "name": "A Time of Overture",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Sky",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Mima+Renard"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

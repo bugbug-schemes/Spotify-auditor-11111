@@ -1,0 +1,151 @@
+{
+  "artist_name": "Watersoothes",
+  "artist_id": "watersoothes",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:00:41.857284+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 157508602,
+    "name": "Watersoothes",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/157508602",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0b6c058561a7b051b10e5f23df505306/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Echomare",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luminara",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rationale",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reminiscence Realm",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elysian Embrace",
+        "label": "",
+        "release_date": "2024-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Warming Monsoon",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Watersoothes",
+    "mbid": "",
+    "listeners": 1882,
+    "playcount": 5783,
+    "listener_play_ratio": 3.07,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Watersoothes\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Andrea Forejtek",
+      "Sleepy Depp",
+      "Ashagen",
+      "Mitsu Wan",
+      "Cosmo Strings"
+    ],
+    "top_tracks": [
+      {
+        "name": "Warming Monsoon",
+        "listeners": 1603,
+        "playcount": 5170
+      },
+      {
+        "name": "Echomare",
+        "listeners": 245,
+        "playcount": 441
+      },
+      {
+        "name": "Rationale",
+        "listeners": 50,
+        "playcount": 170
+      },
+      {
+        "name": "Elysian Embrace",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Watersoothes"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

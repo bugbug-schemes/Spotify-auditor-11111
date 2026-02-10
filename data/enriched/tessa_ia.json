@@ -1,0 +1,479 @@
+{
+  "artist_name": "Tessa Ia",
+  "artist_id": "tessa_ia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:29:38.285005+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "fc02f9ba-6c3d-4f6d-91d3-f0abae2cfa83",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "1995-04-03",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/6672134",
+      "free streaming": "https://open.spotify.com/artist/2Bo0gW1bqWSjD27xOcVtjg"
+    },
+    "labels": [
+      "OCESA Seitrack",
+      "Circe de EEA",
+      "Promotodo México, S.A. de C.V."
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9935972,
+    "name": "Tessa Ia",
+    "nb_fan": 3385,
+    "nb_album": 24,
+    "link": "https://www.deezer.com/artist/9935972",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e969d3c2e74d9f8589ef87050419223e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Carla Morrison",
+      "Luis Humberto Navejas",
+      "Trans-X",
+      "Valgur",
+      "Ximena Sariñana",
+      "Zemmoa"
+    ],
+    "contributor_roles": {
+      "Luis Humberto Navejas": [
+        "Featured"
+      ],
+      "Ximena Sariñana": [
+        "Main"
+      ],
+      "Carla Morrison": [
+        "Featured"
+      ],
+      "Zemmoa": [
+        "Main"
+      ],
+      "Trans-X": [
+        "Featured"
+      ],
+      "Valgur": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Cascabel",
+      "Quimeras",
+      "Acicálame",
+      "De Alcatraces y Estampidas",
+      "Diva",
+      "Ultravioleta",
+      "Cooleros",
+      "Tú y Yo",
+      "Mi Amor Soy Yo",
+      "Incendio",
+      "Yo No Canto",
+      "Narciso",
+      "La Niña Escopeta",
+      "Bajo Tu Ala",
+      "Elefantes",
+      "Cariño",
+      "Virgen Del Apocalipsis",
+      "Tessa Terremoto",
+      "Luciérnagas",
+      "Cerdo",
+      "Circo",
+      "Antigris",
+      "Morpho Menelaus",
+      "Búfalo"
+    ],
+    "track_durations": [
+      142,
+      174,
+      202,
+      198,
+      172,
+      207,
+      160,
+      202,
+      171,
+      174,
+      217,
+      223,
+      207,
+      162,
+      164,
+      192,
+      236,
+      166,
+      220,
+      169,
+      218,
+      214,
+      205,
+      193
+    ],
+    "track_ranks": [
+      65683,
+      180840,
+      238462,
+      210563,
+      122593,
+      121404,
+      66455,
+      138765,
+      109733,
+      65114,
+      41954,
+      10284,
+      33138,
+      68981,
+      100167,
+      72310,
+      72680,
+      6977,
+      18945,
+      120139,
+      21928,
+      87862,
+      37341,
+      188283
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 3,
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "Correspondencia",
+        "label": "",
+        "release_date": "2016-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "BREVE II",
+        "label": "",
+        "release_date": "2020-04-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Cooleros",
+        "label": "",
+        "release_date": "2020-02-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "BREVE",
+        "label": "",
+        "release_date": "2019-06-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "DEVASTACIÓN TOTAL",
+        "label": "",
+        "release_date": "2026-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CLARA DEMENTE",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stillness",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Virgen Del Apocalipsis",
+        "label": "",
+        "release_date": "2023-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Querer Querer",
+        "label": "",
+        "release_date": "2022-12-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Narciso",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Niña Escopeta",
+        "label": "",
+        "release_date": "2022-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yo No Canto (M1STR TR1XSTR Remix)",
+        "label": "",
+        "release_date": "2021-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naïf",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morpho Menelaus",
+        "label": "",
+        "release_date": "2020-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "De Alcatraces y Estampidas",
+        "label": "",
+        "release_date": "2019-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bajo Tu Ala",
+        "label": "",
+        "release_date": "2019-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quimeras",
+        "label": "",
+        "release_date": "2019-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Nada",
+        "label": "",
+        "release_date": "2019-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luciérnagas",
+        "label": "",
+        "release_date": "2019-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tú y Yo",
+        "label": "",
+        "release_date": "2018-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Circo",
+        "label": "",
+        "release_date": "2016-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Acicálame",
+        "label": "",
+        "release_date": "2016-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elefantes",
+        "label": "",
+        "release_date": "2016-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Búfalo",
+        "label": "",
+        "release_date": "2016-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Juanpalitoschinos",
+      "Vanessa Zamora",
+      "Daniela Spalla",
+      "Esteman",
+      "Fármacos",
+      "Young Tender",
+      "Ramona",
+      "Rayos Láser",
+      "Mi Sobrino Memo",
+      "Molinette Cinema"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6672134,
+    "name": "Tessa Ia",
+    "profile": "Comenzó a componer a los 13 años de edad, además de escribir poesía, cosa que caracteriza las letras de sus canciones.\r\n\r\nInterpreta junto a Los Ángeles Azules la canción \"Hermoso bebé\", incluida en el álbum de dicha banda De plaza en plaza, publicado en 2016.\r\n\r\nEn ese mismo año edita su primer sencillo bajo el título Búfalo.\r\n\r\nEl 28 de octubre de 2016 publicó su primer álbum, titulado Correspondencia, siendo el primer sencillo de este trabajo la canción \"Acicálame\".​ En este álbum se incluyen diez canciones, incluida \"Búfalo\"",
+    "realname": "Tessa Ia González Norvind",
+    "social_urls": [
+      "https://open.spotify.com/artist/2Bo0gW1bqWSjD27xOcVtjg?si=7cFr1AhhQ9Wv6mrfBDoeNw&utm_source=copy-link",
+      "https://youtube.com/user/TessaIaVEVO"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 4,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Comp, Promo",
+      "File, MP3, EP"
+    ],
+    "labels": [
+      "Alternativa Representa",
+      "Circe de EEA",
+      "Promotodo México, S.A. De C.V.",
+      "Radio Express",
+      "Sony Music, Strategic Marketing, Ocesa Seitrack",
+      "Tribu Records",
+      "Warner Music Mexico"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tessa Ia",
+    "mbid": "fc02f9ba-6c3d-4f6d-91d3-f0abae2cfa83",
+    "listeners": 30993,
+    "playcount": 577564,
+    "listener_play_ratio": 18.64,
+    "bio_exists": true,
+    "bio_summary": "Tessa Ía González Norvind (3 de abril de 1995 en la Ciudad de México), hija de Nailea Norvind y Fernando González Parra,1​ es una actriz mexicana y cantante de ascendencia materna noruega.\n\nComenzó a componer a los 13 años de edad, además de escribir poesía, cosa que caracteriza las letras de sus canciones.\n\nInterpreta junto a Los Ángeles Azules la canción Hermoso bebé, la cual está incluida en el álbum de dicha banda De plaza en plaza, publicado en 2016. <a href=\"https://www.last.fm/music/Tessa",
+    "tags": [
+      "mexico",
+      "rock",
+      "female vocalists",
+      "indie",
+      "latin"
+    ],
+    "similar_artists": [
+      "Ruzzi",
+      "Ximena Sariñana",
+      "Vanessa Zamora",
+      "Hello Seahorse!",
+      "Valgur"
+    ],
+    "top_tracks": [
+      {
+        "name": "Acicálame",
+        "listeners": 16796,
+        "playcount": 123328
+      },
+      {
+        "name": "Quimeras",
+        "listeners": 9238,
+        "playcount": 74232
+      },
+      {
+        "name": "Ultravioleta",
+        "listeners": 4075,
+        "playcount": 29777
+      },
+      {
+        "name": "Búfalo",
+        "listeners": 3921,
+        "playcount": 28678
+      },
+      {
+        "name": "Tú y Yo",
+        "listeners": 3918,
+        "playcount": 17998
+      },
+      {
+        "name": "De Alcatraces y Estampidas",
+        "listeners": 3822,
+        "playcount": 29647
+      },
+      {
+        "name": "Tú y Yo",
+        "listeners": 3755,
+        "playcount": 16198
+      },
+      {
+        "name": "Yo No Canto",
+        "listeners": 3518,
+        "playcount": 20876
+      },
+      {
+        "name": "Antigris",
+        "listeners": 3505,
+        "playcount": 20657
+      },
+      {
+        "name": "Cascabel",
+        "listeners": 3354,
+        "playcount": 22899
+      }
+    ],
+    "url": "https://www.last.fm/music/Tessa+Ia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,119 @@
+{
+  "artist_name": "Mute Surrender",
+  "artist_id": "mute_surrender",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:52:46.736893+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170528467,
+    "name": "Mute Surrender",
+    "nb_fan": 3,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/170528467",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/62709d45a3994576249d50f8e1286f4d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "You and You"
+    ],
+    "track_durations": [
+      201
+    ],
+    "track_ranks": [
+      134253
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Just Like That",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You and You",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mute Surrender",
+    "mbid": "",
+    "listeners": 6903,
+    "playcount": 23293,
+    "listener_play_ratio": 3.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mute+Surrender\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Miller Ford",
+      "Lak Host",
+      "Luca Tong",
+      "Isla Cruz",
+      "Reel Waves"
+    ],
+    "top_tracks": [
+      {
+        "name": "You and You",
+        "listeners": 6621,
+        "playcount": 22581
+      },
+      {
+        "name": "Just Like That",
+        "listeners": 324,
+        "playcount": 712
+      }
+    ],
+    "url": "https://www.last.fm/music/Mute+Surrender"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,131 @@
+{
+  "artist_name": "Binaural Dynamics",
+  "artist_id": "binaural_dynamics",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:43:53.283387+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 320121071,
+    "name": "Binaural Dynamics",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/320121071",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/59045c0dd3f99b2f2ee1cd36a8aa608b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Alpha Binaural Subtle Dimensions",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpha Binaural Sonic Serenity",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9596437,
+    "name": "Professor Edgar Choueiri",
+    "profile": "Professor Edgar Choueiri is the President and Chief Technology Officer at BACCH Laboratories. He is the inventor behind most of BACCH Labs’s IP portfolio, including BACCH® 3D Sound, the optimal crosstalk cancellation technology for 3D audio that is the heart and sound of the company.\r\n\r\nDr. Edgar Choueiri is Professor of Applied Physics at Princeton University, where he heads the 3D Audio and Applied Acoustics (3D3A) Lab  and the Electric Propulsion and Plasma Dynamics (EPPDyL) Lab .\r\n\r\nAt the 3D3A Lab of Princeton University, he heads a team of researchers  investigating such related topics as spatial hearing, auralization, 3-D audio, binaural audio through speakers, headphones sound externalization, HRTF modeling and extraction. sound field navigation,  controllable sound fields,  and other technologies that BACCH Labs may commercialize in the future.",
+    "realname": "Edgar Choueiri",
+    "social_urls": [
+      "http://www.princeton.edu/3D3A/",
+      "http://bacch.com"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Binaural Dynamics",
+    "mbid": "",
+    "listeners": 800,
+    "playcount": 2678,
+    "listener_play_ratio": 3.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Binaural+Dynamics\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cerebral Canvas",
+      "Lullsway",
+      "Sensory Flow",
+      "Dramadoria",
+      "Solfjord"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alpha Binaural Subtle Dimensions",
+        "listeners": 800,
+        "playcount": 2675
+      },
+      {
+        "name": "Alpha Binaural Sonic Serenity",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Binaural+Dynamics"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

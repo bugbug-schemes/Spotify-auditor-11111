@@ -1,0 +1,162 @@
+{
+  "artist_name": "Deer Groves",
+  "artist_id": "deer_groves",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:26:35.494435+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288073121,
+    "name": "Deer Groves",
+    "nb_fan": 2,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/288073121",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/15de84fe64abc7f354d2186accc212ad/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "I'm Glad There Is You"
+    ],
+    "track_durations": [
+      230
+    ],
+    "track_ranks": [
+      39225
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Smile",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mona's Lullaby",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm glad there is you",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Willow Weep for Me",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mika's Dream",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Way You Look Tonight",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Deer Groves",
+    "mbid": "",
+    "listeners": 17827,
+    "playcount": 48962,
+    "listener_play_ratio": 2.75,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Deer+Groves\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Chops & Coda",
+      "The Low Light Trio",
+      "The Stilltones",
+      "Nordklang Collective",
+      "James Leeluck"
+    ],
+    "top_tracks": [
+      {
+        "name": "I'm Glad There Is You",
+        "listeners": 11081,
+        "playcount": 22505
+      },
+      {
+        "name": "The Way You Look Tonight",
+        "listeners": 8772,
+        "playcount": 18031
+      },
+      {
+        "name": "Willow Weep for Me",
+        "listeners": 4011,
+        "playcount": 8408
+      },
+      {
+        "name": "Mika's Dream",
+        "listeners": 8,
+        "playcount": 9
+      },
+      {
+        "name": "Mona's Lullaby",
+        "listeners": 6,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/Deer+Groves"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

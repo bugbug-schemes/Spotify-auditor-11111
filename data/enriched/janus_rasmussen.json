@@ -1,0 +1,408 @@
+{
+  "artist_name": "Janus Rasmussen",
+  "artist_id": "janus_rasmussen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:24:25.939494+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "54116b3a-931e-4af8-a8a7-62bc0aa7f13d",
+    "type": "Person",
+    "country": "IS",
+    "area": "Iceland",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "electronic",
+      "deep house"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [
+      "00531480965"
+    ],
+    "urls": {
+      "bandcamp": "https://janusrasmussen.bandcamp.com/",
+      "bandsintown": "https://www.bandsintown.com/a/12275700",
+      "discogs": "https://www.discogs.com/artist/3561275",
+      "free streaming": "https://www.deezer.com/artist/5360295",
+      "official homepage": "https://www.janusrasmussen.net/",
+      "other databases": "https://ra.co/dj/janusrasmussen",
+      "patronage": "https://www.patreon.com/janusrasmussen",
+      "purchase for download": "https://www.beatport.com/artist/-/725832",
+      "social network": "https://www.instagram.com/janusrasmussen/",
+      "songkick": "https://www.songkick.com/artists/8324858",
+      "soundcloud": "https://soundcloud.com/janusrasmussen",
+      "wikidata": "https://www.wikidata.org/wiki/Q19961848",
+      "youtube": "https://www.youtube.com/channel/UCEadTMnvpdZmA9v_6kXADrA",
+      "youtube music": "https://music.youtube.com/channel/UCO82KRM_tkbkFPBfn8gossg"
+    },
+    "labels": [
+      "von der haardt",
+      "Ki Records",
+      "Blue Marble",
+      "Embassy One"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5360295,
+    "name": "Janus Rasmussen",
+    "nb_fan": 837,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/5360295",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cb3ff256634139b14e4b794a7a4d5ceb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anyma",
+      "David Bergmüller",
+      "Delhia De France",
+      "Ryan Davis"
+    ],
+    "contributor_roles": {
+      "Anyma": [
+        "Main"
+      ],
+      "Delhia De France": [
+        "Featured"
+      ],
+      "Ryan Davis": [
+        "Featured"
+      ],
+      "David Bergmüller": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Claire",
+      "14 (Ryan Davis Rework)",
+      "Murk",
+      "Green Wine",
+      "Ado",
+      "Whirl",
+      "Vertebra",
+      "Jörð",
+      "Roll",
+      "Lilla",
+      "Blóð",
+      "Wisp",
+      "Peg",
+      "Hegn",
+      "Neyð"
+    ],
+    "track_durations": [
+      287,
+      371,
+      247,
+      232,
+      195,
+      290,
+      213,
+      352,
+      188,
+      323,
+      295,
+      399,
+      251,
+      386,
+      274
+    ],
+    "track_ranks": [
+      353940,
+      247673,
+      222469,
+      158027,
+      146527,
+      171654,
+      283542,
+      219378,
+      137093,
+      259471,
+      126093,
+      232808,
+      185592,
+      2750,
+      26400
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 3,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Vín",
+        "label": "",
+        "release_date": "2019-03-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wirbel",
+        "label": "",
+        "release_date": "2023-07-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Slóð",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Vín Remixes",
+        "label": "",
+        "release_date": "2019-07-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Murk",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hegn",
+        "label": "",
+        "release_date": "2022-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slóð",
+        "label": "",
+        "release_date": "2022-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dagdraumur",
+        "label": "",
+        "release_date": "2021-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Neyð",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blóð",
+        "label": "",
+        "release_date": "2020-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jörð",
+        "label": "",
+        "release_date": "2020-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "14",
+        "label": "",
+        "release_date": "2019-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "March (Delhia De France Silent Waves Remix)",
+        "label": "",
+        "release_date": "2019-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Max Cooper",
+      "Icare Sandilas",
+      "Melokind",
+      "Jon Hopkins",
+      "Moderat",
+      "George Fitzgerald",
+      "Parra For Cuva",
+      "Kiasmos",
+      "Il:lo",
+      "HVOB"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3561275,
+    "name": "Janus Rasmussen",
+    "profile": "Electronic music producer based in Reykjavík, Iceland.",
+    "realname": "",
+    "social_urls": [
+      "https://www.janusrasmussen.net/",
+      "https://www.residentadvisor.net/dj/janusrasmussen",
+      "https://www.facebook.com/janusrasmussenmusic",
+      "https://www.instagram.com/janusrasmussen/",
+      "https://janusrasmussen.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [
+      "Bloodgroup",
+      "Kiasmos",
+      "Byrta"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 18,
+    "digital_only_releases": 43,
+    "total_releases": 61,
+    "formats": [
+      "",
+      "12\", EP",
+      "2xCD, Comp, Mixed, Dig",
+      "2xLP, Album",
+      "3xFile, AIFF, ALAC, FLAC, MP3, WAV, EP",
+      "3xFile, FLAC",
+      "8xFile, MP3, Album, 320",
+      "CD, Album",
+      "CD, Album, Sli",
+      "CD, Comp, Promo",
+      "CD, Mixed",
+      "File, AAC, Single, 256",
+      "File, MP3, Single, 320",
+      "LP, Album",
+      "LP, Ltd, Whi"
+    ],
+    "labels": [
+      "Beste! Unterhaltung, Broken Silence, Tutl",
+      "Dimma",
+      "Eat the Fruit",
+      "For A Memory",
+      "Ki Records (2)",
+      "Lifted House",
+      "Memm ehf",
+      "Mixmag",
+      "Musikexpress",
+      "Newpool Music",
+      "Reykjavík Record Shop, No Salad Records",
+      "Rose Avenue",
+      "Síld",
+      "Tutl",
+      "XXIM Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Janus Rasmussen",
+    "mbid": "54116b3a-931e-4af8-a8a7-62bc0aa7f13d",
+    "listeners": 51054,
+    "playcount": 345516,
+    "listener_play_ratio": 6.77,
+    "bio_exists": true,
+    "bio_summary": "The solo output of Reykjavik producer Janus Rasmussen can be best understood as a distillation of his many diverse collaborations to date. Originally from the Faroe Islands, Janus has spent the better part of the last decade creating, performing, and innovating with other artists across myriad musical genres, amassing a wealth of experience and inspiration that he now condenses into his own brand of experimental electronic music. \n\nJanus’s debut solo album Vín <a href=\"https://www.last.fm/music/",
+    "tags": [
+      "minimal",
+      "electronic",
+      "electronica",
+      "downtempo"
+    ],
+    "similar_artists": [
+      "Kiasmos",
+      "Aparde",
+      "Max Cooper",
+      "Christian Löffler",
+      "Melokind"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lilla",
+        "listeners": 9857,
+        "playcount": 34598
+      },
+      {
+        "name": "Jörð",
+        "listeners": 9501,
+        "playcount": 32760
+      },
+      {
+        "name": "Vertebra",
+        "listeners": 9438,
+        "playcount": 24617
+      },
+      {
+        "name": "Ado",
+        "listeners": 9110,
+        "playcount": 25053
+      },
+      {
+        "name": "Hegn",
+        "listeners": 8013,
+        "playcount": 24873
+      },
+      {
+        "name": "Peg",
+        "listeners": 6752,
+        "playcount": 19610
+      },
+      {
+        "name": "Whirl",
+        "listeners": 6596,
+        "playcount": 18001
+      },
+      {
+        "name": "Jörð",
+        "listeners": 5629,
+        "playcount": 19065
+      },
+      {
+        "name": "April",
+        "listeners": 5517,
+        "playcount": 21117
+      },
+      {
+        "name": "Green Wine",
+        "listeners": 5224,
+        "playcount": 19651
+      }
+    ],
+    "url": "https://www.last.fm/music/Janus+Rasmussen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

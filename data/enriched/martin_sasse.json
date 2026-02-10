@@ -1,0 +1,371 @@
+{
+  "artist_name": "Martin Sasse",
+  "artist_id": "martin_sasse",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:31:33.777221+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3a755c8b-7da4-4421-b069-3e718b1f6814",
+    "type": "Person",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "1968-03-02",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "post-bop",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000056439646"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000367338",
+      "discogs": "https://www.discogs.com/artist/993469",
+      "free streaming": "https://open.spotify.com/artist/4jmwrOP4JG1b5s7Jfzj5gT",
+      "official homepage": "http://www.martinsasse.de/pages/Willkommen.html",
+      "other databases": "https://d-nb.info/gnd/13491676X",
+      "songkick": "https://www.songkick.com/artists/77427",
+      "VIAF": "http://viaf.org/viaf/79854138",
+      "wikidata": "https://www.wikidata.org/wiki/Q15456467"
+    },
+    "labels": [
+      "Georg Löffler Musikverlag",
+      "Brilliant",
+      "JazzJazz Records",
+      "[no label]",
+      "yvp music",
+      "Mensik",
+      "Nagel Heyer Records",
+      "Planet Jazz Cologne"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1668877,
+    "name": "Martin Sasse",
+    "nb_fan": 28,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/1668877",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/60fbb53b36f91db404f1e6f5a7c5a01f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Harry Allen",
+      "Joost van Schaik",
+      "Marcus Bartelt",
+      "Martin Gjakonovski"
+    ],
+    "contributor_roles": {
+      "Marcus Bartelt": [
+        "Main"
+      ],
+      "Martin Gjakonovski": [
+        "Main"
+      ],
+      "Joost van Schaik": [
+        "Featured"
+      ],
+      "Harry Allen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Does The Sun Really Shine On The Moon",
+      "When October Goes (Live)",
+      "There's No Place For Me (Live)"
+    ],
+    "track_durations": [
+      451,
+      319,
+      320
+    ],
+    "track_ranks": [
+      86790,
+      81484,
+      115611
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Swinging Christmas",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Longing",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Trio Tales",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "With You",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Still Here",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live At Bird's Eye (Live)",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "At Ease",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Trio Classics 1",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Trio Classics 3",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Monk",
+        "label": "",
+        "release_date": "2021-02-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Trio Classics 2",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Into the Blue",
+        "label": "",
+        "release_date": "2012-01-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Soul of Jazz",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Here",
+        "label": "",
+        "release_date": "2022-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 993469,
+    "name": "Martin Sasse",
+    "profile": "German jazz pianist, keyboardist and composer, born 2 March 1968 in Hamm, Germany.",
+    "realname": "",
+    "social_urls": [
+      "http://www.martinsasse.de/",
+      "https://www.youtube.com/watch?v=x49ELa4I21Q"
+    ],
+    "members": [],
+    "groups": [
+      "Peter Protschka Quintet",
+      "Martin Sasse Trio",
+      "Gerd Dudek 4",
+      "Rolf Römer Quintet",
+      "Milt Jackson Project",
+      "Regina Mester Trio",
+      "Federation Of The Groove",
+      "Marcus Bartelt Quartet",
+      "Willy Ketzer Trio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 42,
+    "digital_only_releases": 14,
+    "total_releases": 56,
+    "formats": [
+      "",
+      "2xLP, Album, Ltd, Num",
+      "6xCD, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album, MiniAlbum, Dig",
+      "CD, Comp",
+      "CD, Comp + SACD",
+      "DVD-V",
+      "DVD-V + CD, Album",
+      "LP",
+      "LP, Album, Ltd, Num, 180"
+    ],
+    "labels": [
+      "A-Jazz",
+      "ANA Records",
+      "Arts-Tart",
+      "BPA Records",
+      "Click Records (12)",
+      "Double Moon Records",
+      "Dr. Jazz Records",
+      "Dynamo Music",
+      "Edition Collage",
+      "Fa.Huber Music",
+      "Georg Löffler Musikverlag",
+      "JazzJazz",
+      "JazzJazz Records",
+      "JazzSick Records",
+      "Laika Records",
+      "Mensik",
+      "Mons Records",
+      "Mr. D. Music",
+      "Nagel Heyer Records",
+      "Nagel Heyer Records, Nagel Heyer Records",
+      "Neuklang",
+      "Not On Label",
+      "Organic Music (3)",
+      "Planet Jazz Cologne",
+      "Telos Music",
+      "YVP Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Martin Sasse",
+    "mbid": "3a755c8b-7da4-4421-b069-3e718b1f6814",
+    "listeners": 1087,
+    "playcount": 5282,
+    "listener_play_ratio": 4.86,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Martin+Sasse\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jim Galloway & Jay McShann",
+      "Mark Shane & James Chirillo",
+      "Janice Harrington with Linda Fields",
+      "Lynn Seaton Trio",
+      "Chris Murrell & Robert Irving III"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hark! The Herald Angels Sing",
+        "listeners": 267,
+        "playcount": 518
+      },
+      {
+        "name": "A Child Is Born",
+        "listeners": 143,
+        "playcount": 289
+      },
+      {
+        "name": "Leise rieselt der Schnee",
+        "listeners": 132,
+        "playcount": 258
+      },
+      {
+        "name": "Still Still Still",
+        "listeners": 131,
+        "playcount": 309
+      },
+      {
+        "name": "Winter Wonderland",
+        "listeners": 105,
+        "playcount": 243
+      },
+      {
+        "name": "Maria durch ein Dornwald ging",
+        "listeners": 75,
+        "playcount": 221
+      },
+      {
+        "name": "The First Noel",
+        "listeners": 70,
+        "playcount": 136
+      },
+      {
+        "name": "Let It Snow, Let It Snow, Let It Snow",
+        "listeners": 69,
+        "playcount": 180
+      },
+      {
+        "name": "In Dulci Jubilo",
+        "listeners": 64,
+        "playcount": 135
+      },
+      {
+        "name": "A Groovy Affair",
+        "listeners": 52,
+        "playcount": 81
+      }
+    ],
+    "url": "https://www.last.fm/music/Martin+Sasse"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

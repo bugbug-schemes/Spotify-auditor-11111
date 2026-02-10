@@ -1,0 +1,456 @@
+{
+  "artist_name": "DOPE LEMON",
+  "artist_id": "dope_lemon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:18:29.002248+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "77c5db7c-6d5b-49c2-9ea6-82f3efcd1da2",
+    "type": "Group",
+    "country": "AU",
+    "area": "Australia",
+    "begin_date": "2016",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "indie",
+      "indie rock",
+      "psychedelic rock"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discography page": "https://www.discographien.de/alle_cds_von_Dope+Lemon.htm",
+      "discogs": "https://www.discogs.com/artist/5107911",
+      "free streaming": "https://www.deezer.com/artist/9962076",
+      "official homepage": "http://www.dopelemon.com/",
+      "other databases": "https://www.musik-sammler.de/artist/dope-lemon/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1087204900",
+      "social network": "https://www.instagram.com/dopelemonmusic/",
+      "streaming": "https://tidal.com/artist/7626557",
+      "wikidata": "https://www.wikidata.org/wiki/Q83598694",
+      "youtube": "https://www.youtube.com/channel/UCZ2Zs-OchH843UvJNZKecww"
+    },
+    "labels": [
+      "BMG",
+      "EMI",
+      "BMG Rights Management (Australia) Pty Ltd",
+      "Polydor",
+      "Universal Music Australia"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9962076,
+    "name": "Dope Lemon",
+    "nb_fan": 25695,
+    "nb_album": 22,
+    "link": "https://www.deezer.com/artist/9962076",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/584d973f5aaa60f0271575db4f6fcdd9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Cedric Gervais"
+    ],
+    "contributor_roles": {
+      "Cedric Gervais": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Marinade",
+      "Home Soon",
+      "Rose Pink Cadillac",
+      "Stonecutters",
+      "Kimosabè",
+      "Hey You",
+      "How Many Times",
+      "Salt & Pepper",
+      "Kids Fallin' In Love",
+      "God's Machete",
+      "Electric Green Lambo",
+      "Honey Bones",
+      "Hey Little Baby",
+      "Uptown Folks",
+      "Fuck Things Up",
+      "Dope & Smoke",
+      "Sugarcat",
+      "Lovesick Brain",
+      "Best Girl",
+      "Coyote",
+      "Golden God",
+      "Golden Wolf",
+      "Give Me Honey",
+      "Lonely Boys Paradise",
+      "Hey You (Cedric Gervais Remix)"
+    ],
+    "track_durations": [
+      238,
+      177,
+      261,
+      270,
+      276,
+      278,
+      285,
+      328,
+      227,
+      401,
+      155,
+      325,
+      317,
+      288,
+      271,
+      304,
+      174,
+      290,
+      397,
+      229,
+      362,
+      219,
+      218,
+      305,
+      275
+    ],
+    "track_ranks": [
+      635700,
+      453450,
+      530904,
+      555073,
+      439957,
+      472722,
+      376441,
+      429721,
+      424281,
+      207273,
+      466194,
+      356450,
+      370336,
+      436535,
+      330485,
+      386153,
+      345501,
+      184698,
+      399902,
+      309958,
+      186318,
+      364856,
+      318607,
+      247386,
+      126114
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 5,
+      "ep": 1,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "Golden Wolf",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kimosabè",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rose Pink Cadillac",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Smooth Big Cat",
+        "label": "",
+        "release_date": "2019-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Honey Bones",
+        "label": "",
+        "release_date": "2016-06-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hounds Tooth",
+        "label": "",
+        "release_date": "2017-02-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sugarcat",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Electric Green Lambo",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden Wolf",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miami Baby",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kimosabè",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rose Pink Cadillac (LARRY PINK THE HUMAN Remix)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stingray Pete",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rose Pink Cadillac",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kids Fallin' In Love",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Every Day Is A Holiday (feat. Winston Surfshirt) (The Magician Remix)",
+        "label": "",
+        "release_date": "2020-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Every Day Is A Holiday (The Magician Remix)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Every Day Is A Holiday",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Streets Of Your Town",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hey You (Dope Lemon vs Cedric Gervais / Cedric Gervais Remix)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salt & Pepper",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hey You",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Cotton Jones",
+      "Skinshape",
+      "Widowspeak",
+      "Andy Shauf",
+      "Palace",
+      "Chelou",
+      "Connan Mockasin",
+      "Cat Clyde",
+      "Still Corners",
+      "Cari Cari"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5107911,
+    "name": "Dope Lemon",
+    "profile": "Angus Stone (born 27 April 1986) is an Australian soul and pop singer, record producer and audio engineer. He is one half of the musical sibling duo Angus & Julia Stone, with whom he has released four studio albums. His debut solo album, Smoking Gun, was released in April 2009 under the pseudonym Lady of the Sunshine, and reached the top 50 on the ARIA Albums Chart. His second solo album, Broken Brights, was released under his name on 13 July 2012 and peaked at number 2. Stone currently records under the moniker of Dope Lemon.",
+    "realname": "Angus Stone",
+    "social_urls": [
+      "http://www.dopelemon.com",
+      "https://www.facebook.com/dopelemon/",
+      "https://www.instagram.com/dopelemonmusic/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 9,
+    "total_releases": 13,
+    "formats": [
+      "",
+      "7\", Single, Gol",
+      "7\", Single, Hot",
+      "7\", Single, Ltd, Aqu",
+      "7\", Single, Tra"
+    ],
+    "labels": [
+      "BMG Rights Management (Australia) Pty Ltd"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dope Lemon",
+    "mbid": "77c5db7c-6d5b-49c2-9ea6-82f3efcd1da2",
+    "listeners": 515019,
+    "playcount": 9727958,
+    "listener_play_ratio": 18.89,
+    "bio_exists": true,
+    "bio_summary": "DOPE LEMON is an indie rock band from Australia. It was created by singer-songwriter and multi-instrumentalist Angus Stone in 2015. Their sound is heavily influenced by blues and psychedelic rock. Stone's distinctive voice and laid-back style have drawn comparisons to other artists such as Baxter Dury, Jack Johnson and Ben Harper.\n\nText from the site: https://pianity.com/dope-lemon <a href=\"https://www.last.fm/music/Dope+Lemon\">Read more on Last.fm</a>",
+    "tags": [
+      "australian",
+      "indie",
+      "folk",
+      "alternative",
+      "australia"
+    ],
+    "similar_artists": [
+      "Angus Stone",
+      "Palace",
+      "Chelou",
+      "Angus & Julia Stone",
+      "Sticky Fingers"
+    ],
+    "top_tracks": [
+      {
+        "name": "Marinade",
+        "listeners": 244413,
+        "playcount": 1665798
+      },
+      {
+        "name": "Rose Pink Cadillac",
+        "listeners": 188784,
+        "playcount": 1135091
+      },
+      {
+        "name": "Stonecutters",
+        "listeners": 152938,
+        "playcount": 820001
+      },
+      {
+        "name": "Uptown Folks",
+        "listeners": 125458,
+        "playcount": 759856
+      },
+      {
+        "name": "Home Soon",
+        "listeners": 112166,
+        "playcount": 568540
+      },
+      {
+        "name": "Hey You",
+        "listeners": 86711,
+        "playcount": 431855
+      },
+      {
+        "name": "Kids Fallin' In Love",
+        "listeners": 84855,
+        "playcount": 332704
+      },
+      {
+        "name": "Salt & Pepper",
+        "listeners": 59932,
+        "playcount": 271437
+      },
+      {
+        "name": "Honey Bones",
+        "listeners": 50358,
+        "playcount": 250548
+      },
+      {
+        "name": "Kimosabè",
+        "listeners": 44804,
+        "playcount": 162650
+      }
+    ],
+    "url": "https://www.last.fm/music/Dope+Lemon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

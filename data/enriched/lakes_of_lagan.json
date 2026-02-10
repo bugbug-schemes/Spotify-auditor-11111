@@ -1,0 +1,172 @@
+{
+  "artist_name": "Lakes of Lagan",
+  "artist_id": "lakes_of_lagan",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:56:36.947910+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 261889861,
+    "name": "Lakes of Lagan",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/261889861",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e1eb2462d4908873979b41171f357037/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Unwind Dreams",
+      "Dalmine"
+    ],
+    "track_durations": [
+      172,
+      207
+    ],
+    "track_ranks": [
+      76259,
+      102487
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Rivers",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ashlight",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jennifer",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Guiding Spirit",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unwind Dreams",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once More",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dalmine",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lakes of Lagan",
+    "mbid": "",
+    "listeners": 27757,
+    "playcount": 114570,
+    "listener_play_ratio": 4.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lakes+of+Lagan\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Niamh Shona",
+      "Rhian Cadogan",
+      "Florentin Davies",
+      "Shea Ada",
+      "Noah Hart"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dalmine",
+        "listeners": 26616,
+        "playcount": 111317
+      },
+      {
+        "name": "Unwind Dreams",
+        "listeners": 1561,
+        "playcount": 3244
+      },
+      {
+        "name": "Lakes of Lagan - Dalmine",
+        "listeners": 1,
+        "playcount": 7
+      },
+      {
+        "name": "Once More",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Guiding Spirit",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lakes+of+Lagan"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

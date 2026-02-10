@@ -1,0 +1,134 @@
+{
+  "artist_name": "田中タリラ",
+  "artist_id": "田中タリラ",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:37:32.197840+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5134892b-7edc-41fa-944d-360633c81ca6",
+    "type": "Person",
+    "country": "JP",
+    "area": "Japan",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/1xQC7gNhUDSY1IfQvF8fou",
+      "social network": "https://www.threads.com/@tanaka_tarilla",
+      "youtube": "https://www.youtube.com/channel/UCFB0MNCE-ZbLImxxIBpB2yQ"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched '田中タリラ', got 'Watashi Kobayashi/Tanaka Tarilla'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "田中タリラ",
+    "mbid": "",
+    "listeners": 607,
+    "playcount": 1866,
+    "listener_play_ratio": 3.07,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/%E7%94%B0%E4%B8%AD%E3%82%BF%E3%83%AA%E3%83%A9\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kenshiro Matsuo",
+      "N nulls",
+      "Noxs",
+      "Ah. BLOOM",
+      "Sonic Abodes"
+    ],
+    "top_tracks": [
+      {
+        "name": "メニュウ",
+        "listeners": 292,
+        "playcount": 1145
+      },
+      {
+        "name": "還る",
+        "listeners": 280,
+        "playcount": 527
+      },
+      {
+        "name": "天才の遺伝子",
+        "listeners": 16,
+        "playcount": 72
+      },
+      {
+        "name": "やめて",
+        "listeners": 12,
+        "playcount": 16
+      },
+      {
+        "name": "ヒットナイトミュージック(欲望の)",
+        "listeners": 11,
+        "playcount": 35
+      },
+      {
+        "name": "大人未来図",
+        "listeners": 10,
+        "playcount": 18
+      },
+      {
+        "name": "世",
+        "listeners": 8,
+        "playcount": 34
+      },
+      {
+        "name": "Sayハロー日本",
+        "listeners": 8,
+        "playcount": 10
+      },
+      {
+        "name": "土星さん",
+        "listeners": 7,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/%E7%94%B0%E4%B8%AD%E3%82%BF%E3%83%AA%E3%83%A9"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

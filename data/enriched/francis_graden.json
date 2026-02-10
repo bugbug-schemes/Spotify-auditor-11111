@@ -1,0 +1,222 @@
+{
+  "artist_name": "Francis Graden",
+  "artist_id": "francis_graden",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:41:56.594626+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183268007,
+    "name": "Francis Graden",
+    "nb_fan": 12,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/183268007",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fbd43cdff51932fbf18a197b52acf365/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "On A Clear Day",
+      "I Didn't Know What Time It Was",
+      "I Could Write A Book",
+      "A Christmas Love Song",
+      "Where Dreams Go to Sleep"
+    ],
+    "track_durations": [
+      196,
+      158,
+      196,
+      158,
+      170
+    ],
+    "track_ranks": [
+      293378,
+      122419,
+      115904,
+      70280,
+      102046
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "What's New?",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where Dreams Go to Sleep",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shades of Green",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Christmas Love Song",
+        "label": "",
+        "release_date": "2023-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Didn't Know What Time It Was",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Hear A Rhapsody",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Could Write A Book",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On A Clear Day",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someday My Prince Will Come",
+        "label": "",
+        "release_date": "2021-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Francis Graden",
+    "mbid": "",
+    "listeners": 92200,
+    "playcount": 474296,
+    "listener_play_ratio": 5.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Francis+Graden\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Graydon Poole",
+      "Irvin Smith",
+      "Charlie James-Walker",
+      "Cole Peers trio",
+      "Ryder Quartet"
+    ],
+    "top_tracks": [
+      {
+        "name": "On A Clear Day",
+        "listeners": 39524,
+        "playcount": 186128
+      },
+      {
+        "name": "A Christmas Love Song",
+        "listeners": 37733,
+        "playcount": 87421
+      },
+      {
+        "name": "I Didn't Know What Time It Was",
+        "listeners": 11541,
+        "playcount": 47159
+      },
+      {
+        "name": "I Could Write A Book",
+        "listeners": 10565,
+        "playcount": 39666
+      },
+      {
+        "name": "Where Dreams Go to Sleep",
+        "listeners": 10514,
+        "playcount": 49051
+      },
+      {
+        "name": "Shades of Green",
+        "listeners": 10179,
+        "playcount": 51114
+      },
+      {
+        "name": "What's New?",
+        "listeners": 7386,
+        "playcount": 13453
+      },
+      {
+        "name": "I Hear A Rhapsody",
+        "listeners": 152,
+        "playcount": 294
+      },
+      {
+        "name": "Someday My Prince Will Come",
+        "listeners": 145,
+        "playcount": 332
+      },
+      {
+        "name": "Christmas Time Is Here",
+        "listeners": 34,
+        "playcount": 49
+      }
+    ],
+    "url": "https://www.last.fm/music/Francis+Graden"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

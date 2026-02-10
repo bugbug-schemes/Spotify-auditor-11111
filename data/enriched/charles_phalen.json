@@ -1,0 +1,123 @@
+{
+  "artist_name": "Charles Phalen",
+  "artist_id": "charles_phalen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:03:46.804478+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Charles Phalen', got 'Charles Valentin Alkan'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10302454,
+    "name": "Charles Phalen",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP, Album"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Charles Phalen",
+    "mbid": "",
+    "listeners": 2275,
+    "playcount": 5228,
+    "listener_play_ratio": 2.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Charles+Phalen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rainer Mafra",
+      "David Snellbacher",
+      "Ernie Rissmann",
+      "Pamela Shay",
+      "Acoustic Guitar Songs,Classical Guitar Masters & Classical Christmas Music"
+    ],
+    "top_tracks": [
+      {
+        "name": "Carol of the Strings (Bells)",
+        "listeners": 2272,
+        "playcount": 5218
+      },
+      {
+        "name": "Carol for a Yuletide Eve",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "A New Year Carol",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "O Come O Come Emmanuel",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Gloucestershire Wassail",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Miss Fogarty's Christmas Cake",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Each Winter as the Year Grows Older",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Charles+Phalen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

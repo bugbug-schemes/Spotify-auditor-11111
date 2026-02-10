@@ -1,0 +1,111 @@
+{
+  "artist_name": "Benjamin Bed",
+  "artist_id": "benjamin_bed",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:34:26.626686+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Benjamin Bed', got 'Breaking Benjamin'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 698439,
+    "name": "Benjamin Beddome",
+    "profile": "23 January 1717 - 23 September 1795. English Baptist hymn writer.",
+    "realname": "",
+    "social_urls": [
+      "http://www.cyberhymnal.org/bio/b/e/d/beddome_b.htm",
+      "http://en.wikipedia.org/wiki/Benjamin_Beddome"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 5,
+    "digital_only_releases": 4,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "3xCD",
+      "4xCass, Album, Smplr",
+      "CD, Album",
+      "CD, Album, Comp",
+      "LP, Album",
+      "LP, Smplr"
+    ],
+    "labels": [
+      "Lubbock Christian College",
+      "Not On Label",
+      "Reformed University Ministries",
+      "Rough Sounds Records (2)",
+      "Suomen Luterilainen Evankeliumiyhdistys"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Benjamin Bed",
+    "mbid": "",
+    "listeners": 595,
+    "playcount": 3808,
+    "listener_play_ratio": 6.4,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Benjamin+Bed\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Braiden Morrish",
+      "Abel Burrow",
+      "Helge Ro",
+      "Ellis Walker",
+      "Elowen Moon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Calm Clouds",
+        "listeners": 594,
+        "playcount": 3807
+      },
+      {
+        "name": "Soft Sheeps",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Benjamin+Bed"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

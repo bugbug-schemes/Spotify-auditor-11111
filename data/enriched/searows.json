@@ -1,0 +1,406 @@
+{
+  "artist_name": "Searows",
+  "artist_id": "searows",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:57:31.640184+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c1401838-551f-4176-8594-86f0ce28d3c2",
+    "type": "Person",
+    "country": "",
+    "area": "Portland",
+    "begin_date": "2000-03-02",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie folk"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://searows.bandcamp.com/",
+      "bandsintown": "https://www.bandsintown.com/a/15497205",
+      "discogs": "https://www.discogs.com/artist/12213025",
+      "free streaming": "https://www.deezer.com/artist/158683422",
+      "official homepage": "https://www.searows.com/",
+      "purchase for mail-order": "https://searows.terrible.group/",
+      "social network": "https://www.tiktok.com/@searows",
+      "soundcloud": "https://soundcloud.com/searows",
+      "streaming": "https://tidal.com/artist/30390066",
+      "wikidata": "https://www.wikidata.org/wiki/Q121493600",
+      "youtube": "https://www.youtube.com/channel/UCNObZkU2Jwp46PThgRcJPdg"
+    },
+    "labels": [
+      "Tonight Matthew",
+      "Searows",
+      "Last Recordings on Earth",
+      "Concord Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 158683422,
+    "name": "Searows",
+    "nb_fan": 3049,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/158683422",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5a5f738fcd75e1176b9750ca8e28d8c9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Daffo",
+      "Matt Maltese"
+    ],
+    "contributor_roles": {
+      "Matt Maltese": [
+        "Main"
+      ],
+      "Daffo": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "In Violet",
+      "End Of The World",
+      "Kill What You Eat",
+      "Photograph of a Cyclone",
+      "Junie",
+      "Dearly Missed",
+      "Philadelphia (with Searows)",
+      "Used To Be Friends",
+      "toothache",
+      "I have more than enough",
+      "martingale",
+      "Funny",
+      "calico",
+      "Poor Madeline (Alt. Version)",
+      "I Can and I Will",
+      "Older",
+      "[there is still time]",
+      "Crybaby",
+      "Haunted",
+      "North Star",
+      "Villain",
+      "Roadkill",
+      "to be seen",
+      "Coming Clean",
+      "Sleeping With The Lights On"
+    ],
+    "track_durations": [
+      249,
+      234,
+      300,
+      208,
+      334,
+      360,
+      182,
+      335,
+      208,
+      328,
+      257,
+      302,
+      268,
+      205,
+      389,
+      415,
+      217,
+      241,
+      269,
+      307,
+      289,
+      280,
+      203,
+      378,
+      233
+    ],
+    "track_ranks": [
+      592379,
+      506064,
+      441490,
+      451960,
+      402702,
+      428623,
+      445799,
+      387402,
+      326223,
+      309975,
+      393135,
+      404493,
+      483293,
+      421571,
+      343204,
+      244301,
+      216650,
+      311371,
+      271449,
+      283426,
+      332912,
+      276770,
+      331475,
+      250909,
+      310504
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 1,
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Death in the Business of Whaling",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "End Of The World",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Guard Dog",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "flush",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "In Violet",
+        "label": "",
+        "release_date": "2026-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dirt",
+        "label": "",
+        "release_date": "2026-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Photograph of a Cyclone",
+        "label": "",
+        "release_date": "2025-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dearly Missed",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Only Time (demo)",
+        "label": "",
+        "release_date": "2024-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Poor Madeline (Alt. Version)",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Philadelphia (with Searows)",
+        "label": "",
+        "release_date": "2024-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I have more than enough",
+        "label": "",
+        "release_date": "2023-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Older",
+        "label": "",
+        "release_date": "2023-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "House Song",
+        "label": "",
+        "release_date": "2023-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lizzy McAlpine",
+      "Phoebe Bridgers",
+      "Boygenius",
+      "Lucy Dacus",
+      "Julien Baker",
+      "Abby Powledge",
+      "Ethel Cain",
+      "Sydney Rose",
+      "Maya Hawke",
+      "Gigi Perez"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12213025,
+    "name": "Searows",
+    "profile": "Searows is an indie/folk singer-songwriter and guitarist based in the Pacific Northwest.",
+    "realname": "Alec Duckart",
+    "social_urls": [
+      "http://searows.com",
+      "https://searows.bandcamp.com/",
+      "https://www.instagram.com/saerows/",
+      "https://www.facebook.com/searows/",
+      "https://soundcloud.com/searows"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 3,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "12\", EP, Ltd, Swa",
+      "12\", S/Sided, EP, Etch, Ltd, Tra",
+      "8\", Ltd, Promo, Lis",
+      "CD, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "Last Recordings On Earth",
+      "Searows"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Searows",
+    "mbid": "c1401838-551f-4176-8594-86f0ce28d3c2",
+    "listeners": 464384,
+    "playcount": 16780561,
+    "listener_play_ratio": 36.14,
+    "bio_exists": true,
+    "bio_summary": "Searows is the indie/folk project of Alec Duckart (he/him), an American singer/songwriter and guitarist raised in the Pacific Northwest. His self-produced debut album, Guard Dog, came out September 30th, 2022. Alec wrote, recorded and mixed the 13-track album at home between his 21st and 22nd birthdays, releasing Used to be Friends and Walk Me Home as singles ahead of the record. Duckart followed Guard Dog with the release of his EP End of the World in 2023, featuring three singles including the",
+    "tags": [
+      "folk",
+      "indie",
+      "indie folk",
+      "singer-songwriter",
+      "slowcore"
+    ],
+    "similar_artists": [
+      "Leith Ross",
+      "Delaney Bailey",
+      "Lizzy McAlpine",
+      "runo plum",
+      "Phoebe Bridgers"
+    ],
+    "top_tracks": [
+      {
+        "name": "House Song",
+        "listeners": 303894,
+        "playcount": 3743849
+      },
+      {
+        "name": "End Of The World",
+        "listeners": 162866,
+        "playcount": 1391924
+      },
+      {
+        "name": "Keep The Rain",
+        "listeners": 135509,
+        "playcount": 1650053
+      },
+      {
+        "name": "I have more than enough",
+        "listeners": 92387,
+        "playcount": 704182
+      },
+      {
+        "name": "Used To Be Friends",
+        "listeners": 88198,
+        "playcount": 903168
+      },
+      {
+        "name": "Funny",
+        "listeners": 86450,
+        "playcount": 709113
+      },
+      {
+        "name": "Older",
+        "listeners": 70717,
+        "playcount": 581289
+      },
+      {
+        "name": "I Can and I Will",
+        "listeners": 56911,
+        "playcount": 468782
+      },
+      {
+        "name": "toothache",
+        "listeners": 54544,
+        "playcount": 371762
+      },
+      {
+        "name": "martingale",
+        "listeners": 50710,
+        "playcount": 408881
+      }
+    ],
+    "url": "https://www.last.fm/music/Searows"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,219 @@
+{
+  "artist_name": "Schamanen",
+  "artist_id": "schamanen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:56:04.996016+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "16244a8c-3600-4ff2-bf1a-6404762a7352",
+    "type": "",
+    "country": "CH",
+    "area": "Switzerland",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/548374",
+      "free streaming": "https://open.spotify.com/artist/57aJMjy9El4mSXv7QXdKPN"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183262537,
+    "name": "Schamanen",
+    "nb_fan": 3,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/183262537",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/53e92e1d352038c53c4d8fc48a2334d2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Breathe Alpha 72 Hz - Binaural Healing",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Embrace Who You Are 99 Hz",
+        "label": "",
+        "release_date": "2025-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Binaural Alpha Cosmos",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Last Gamma",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Synchronized Beta",
+        "label": "",
+        "release_date": "2021-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gamma Sounds",
+        "label": "",
+        "release_date": "2021-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 548374,
+    "name": "Schamanen Circel",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Graf J. Von Stollenwerk",
+      "Andy NEP",
+      "Huldrych"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Schamanen",
+    "mbid": "",
+    "listeners": 7387,
+    "playcount": 27110,
+    "listener_play_ratio": 3.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Schamanen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "AEX8",
+      "Dramadoria",
+      "Patterns in Light",
+      "High Lotion",
+      "Weightless Light"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alpha 8HZ",
+        "listeners": 6672,
+        "playcount": 22061
+      },
+      {
+        "name": "Gamma therapy",
+        "listeners": 686,
+        "playcount": 1535
+      },
+      {
+        "name": "4HZ_THETA",
+        "listeners": 428,
+        "playcount": 1869
+      },
+      {
+        "name": "Focus On The Sound",
+        "listeners": 312,
+        "playcount": 466
+      },
+      {
+        "name": "Binaural Rest",
+        "listeners": 216,
+        "playcount": 360
+      },
+      {
+        "name": "The Last Gamma",
+        "listeners": 199,
+        "playcount": 350
+      },
+      {
+        "name": "Therma tones",
+        "listeners": 89,
+        "playcount": 206
+      },
+      {
+        "name": "Synchronized Beta 6HZ",
+        "listeners": 79,
+        "playcount": 212
+      },
+      {
+        "name": "Binaural sounds",
+        "listeners": 13,
+        "playcount": 39
+      },
+      {
+        "name": "Hassan",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Schamanen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

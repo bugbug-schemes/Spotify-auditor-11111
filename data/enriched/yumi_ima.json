@@ -1,0 +1,101 @@
+{
+  "artist_name": "Yumi Ima",
+  "artist_id": "yumi_ima",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:06:16.003165+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Yumi Ima', got 'Yumi Arai'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8113651,
+    "name": "Yumiko Imai",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 3,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "20xCD + Box, Comp",
+      "2xBlu-ray, Album, Comp, Ltd, Num, Multichannel",
+      "5xCD, Album, Fir",
+      "CD, Album",
+      "DVD-V"
+    ],
+    "labels": [
+      "Ear Music",
+      "Prove Records",
+      "Sleigh Bells",
+      "Sonic Groove (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Yumi Ima",
+    "mbid": "",
+    "listeners": 2777,
+    "playcount": 8741,
+    "listener_play_ratio": 3.15,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Yumi+Ima\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cassian Haines",
+      "Jonas Björk",
+      "Max Stewart",
+      "Jack Haigh",
+      "Mateo Morel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Everwarm",
+        "listeners": 2777,
+        "playcount": 8741
+      }
+    ],
+    "url": "https://www.last.fm/music/Yumi+Ima"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

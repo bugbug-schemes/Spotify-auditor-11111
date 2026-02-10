@@ -1,0 +1,176 @@
+{
+  "artist_name": "Otto Virell",
+  "artist_id": "otto_virell",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:17:55.195597+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327399521,
+    "name": "Otto Virell",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/327399521",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/39da19088fc029c64b925a6c6224e5a4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Serene Fold",
+      "Vernelle Drift",
+      "Lumière of Thought",
+      "Continuum Leaf"
+    ],
+    "track_durations": [
+      126,
+      131,
+      168,
+      126
+    ],
+    "track_ranks": [
+      38836,
+      6818,
+      18490,
+      64905
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Ionosphere",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hollow Labyrinth of Light",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serene Fold",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Continuum Leaf",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vernelle Drift",
+        "label": "",
+        "release_date": "2025-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lumière of Thought",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Otto Virell",
+    "mbid": "",
+    "listeners": 10068,
+    "playcount": 38422,
+    "listener_play_ratio": 3.82,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Otto+Virell\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lost storys",
+      "Lucky Lorry",
+      "novi quiet",
+      "Ravndala",
+      "John Ember"
+    ],
+    "top_tracks": [
+      {
+        "name": "Continuum Leaf",
+        "listeners": 5716,
+        "playcount": 11122
+      },
+      {
+        "name": "Lumière of Thought",
+        "listeners": 5223,
+        "playcount": 10916
+      },
+      {
+        "name": "Serene Fold",
+        "listeners": 4879,
+        "playcount": 9144
+      },
+      {
+        "name": "Vernelle Drift",
+        "listeners": 3704,
+        "playcount": 7119
+      },
+      {
+        "name": "Hollow Labyrinth of Light",
+        "listeners": 76,
+        "playcount": 111
+      },
+      {
+        "name": "Ionosphere",
+        "listeners": 9,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Otto+Virell"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

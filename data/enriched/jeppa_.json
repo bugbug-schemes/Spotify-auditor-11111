@@ -1,0 +1,453 @@
+{
+  "artist_name": "jeppa.",
+  "artist_id": "jeppa_",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:20:25.779635+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f58e2121-f52c-41db-ae40-e60188495b69",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [
+      "Jesper Hoekstra"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/240747651",
+      "purchase for download": "https://music.apple.com/us/artist/1714645626",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/jeppa-1/20535757"
+    },
+    "labels": [
+      "purity label"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 240747651,
+    "name": "jeppa.",
+    "nb_fan": 1,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/240747651",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d20d566e3f4e19542a9474223f7b50cd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ahntow",
+      "nomar.wav"
+    ],
+    "contributor_roles": {
+      "nomar.wav": [
+        "Main"
+      ],
+      "Ahntow": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Highlands",
+      "With Care",
+      "Sunlight",
+      "skyline",
+      "Unstoppable",
+      "cloud nine",
+      "On My Way Home",
+      "Auroral Light",
+      "Foggy Mind",
+      "Late At Night",
+      "Rainfall",
+      "Calm Islands",
+      "Unraveled",
+      "Weary",
+      "Fading Echoes",
+      "Darkest Hour",
+      "Early Rise",
+      "Untold"
+    ],
+    "track_durations": [
+      128,
+      109,
+      116,
+      103,
+      116,
+      138,
+      100,
+      123,
+      118,
+      128,
+      122,
+      113,
+      142,
+      113,
+      124,
+      120,
+      131,
+      126
+    ],
+    "track_ranks": [
+      97605,
+      95485,
+      31652,
+      133757,
+      13505,
+      31387,
+      108337,
+      103189,
+      105083,
+      125132,
+      94717,
+      25442,
+      26437,
+      50311,
+      26987,
+      22049,
+      41485,
+      3425
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 30
+    },
+    "albums": [
+      {
+        "title": "Pink Whispers",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Darkest Hour",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Waves",
+        "label": "",
+        "release_date": "2025-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Early Rise",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unstoppable",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unraveled",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Nights",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonely At Sea",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm Islands",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Highlands",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weary",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fading Echoes",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunlight",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crispy Leaves",
+        "label": "",
+        "release_date": "2025-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Underground",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Untold",
+        "label": "",
+        "release_date": "2024-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "cloud nine",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Hours",
+        "label": "",
+        "release_date": "2025-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "polaroids",
+        "label": "",
+        "release_date": "2024-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Conundrum",
+        "label": "",
+        "release_date": "2024-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Low Battery",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "skyline",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breeze Through",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "With Care",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Foggy Mind",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On My Way Home",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late At Night",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rainfall",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Auroral Light",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Exhausted",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6109804,
+    "name": "Jeppa Heikenskiöld",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "jeppa.",
+    "mbid": "f58e2121-f52c-41db-ae40-e60188495b69",
+    "listeners": 30868,
+    "playcount": 90536,
+    "listener_play_ratio": 2.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/jeppa.\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "kichiro",
+      "Somno Beats",
+      "Another one",
+      "WaveSoul",
+      "Cloud cover"
+    ],
+    "top_tracks": [
+      {
+        "name": "Low Battery",
+        "listeners": 17539,
+        "playcount": 33927
+      },
+      {
+        "name": "Untold",
+        "listeners": 6809,
+        "playcount": 11866
+      },
+      {
+        "name": "Early Rise",
+        "listeners": 4773,
+        "playcount": 8671
+      },
+      {
+        "name": "Exhausted",
+        "listeners": 2644,
+        "playcount": 5495
+      },
+      {
+        "name": "Rainfall",
+        "listeners": 1590,
+        "playcount": 3078
+      },
+      {
+        "name": "Auroral Light",
+        "listeners": 1550,
+        "playcount": 2963
+      },
+      {
+        "name": "Fading Echoes",
+        "listeners": 1199,
+        "playcount": 2169
+      },
+      {
+        "name": "On My Way Home",
+        "listeners": 1153,
+        "playcount": 2259
+      },
+      {
+        "name": "cloud nine",
+        "listeners": 1116,
+        "playcount": 2227
+      },
+      {
+        "name": "Foggy Mind",
+        "listeners": 861,
+        "playcount": 1596
+      }
+    ],
+    "url": "https://www.last.fm/music/jeppa."
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

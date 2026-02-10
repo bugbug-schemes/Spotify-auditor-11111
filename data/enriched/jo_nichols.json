@@ -1,0 +1,202 @@
+{
+  "artist_name": "Jo Nichols",
+  "artist_id": "jo_nichols",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:29:16.678451+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Jo Nichols', got 'Joe Nichols'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1471603,
+    "name": "Joe Nichols",
+    "profile": "American country music singer and songwriter, born November 26, 1976 in Rogers, Arkansas.",
+    "realname": "Joseph Edward Nichols",
+    "social_urls": [
+      "https://www.joenichols.com",
+      "https://en.wikipedia.org/wiki/Joe_Nichols"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 64,
+    "digital_only_releases": 36,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "3xCDr, Transcription",
+      "4xCDr, Comp, Mixed, Promo, Transcription",
+      "5xCD, Comp",
+      "Blu-ray + DVD-V, Dol",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Enh",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, Comp, S/Edition",
+      "CD, Single",
+      "CD, Single, Promo",
+      "CDr",
+      "CDr, Comp, Promo",
+      "CDr, Single, Promo",
+      "DVD, Comp",
+      "DVD-V, Comp, NTSC",
+      "DVD-V, Comp, Promo, NTSC",
+      "DVD-V, Ltd, NTSC",
+      "File, FLAC, EP",
+      "File, FLAC, Single"
+    ],
+    "labels": [
+      "ABC Music, Universal Music Australia",
+      "Atlantic",
+      "BluGrascal Records, Music Catalogue Cracker Barrel Old Country Store",
+      "Broken Bow Records",
+      "Brunswick, Universal Music Group",
+      "CMT Home Entertainment, Universal Records South",
+      "Citadel Media",
+      "Compact Disc Xpress",
+      "Curb/Word Entertainment",
+      "Intersound",
+      "Krautpop!, Liquid/Static",
+      "M J Music",
+      "Mercury Studios (5)",
+      "Not On Label",
+      "Not On Label (Henry Smith (23) self-released)",
+      "Promo Only",
+      "Promo Only, Country Radio",
+      "Quartz Hill Records",
+      "Radio Programming And Management, Inc.",
+      "Red Bow Records",
+      "Reflections, Universal Music Special Markets",
+      "Screenplay",
+      "Shanachie",
+      "Show Dog-Universal Music",
+      "Sonoma Entertainment, Universal Music Special Markets",
+      "Sound Service, Sound Service",
+      "UMe",
+      "Union Square Music, USM Media, Universal UMC",
+      "Union Square Music, Universal UMC, BMG",
+      "Universal",
+      "Universal Music",
+      "Universal Music Group",
+      "Universal Music Special Markets, Universal Music Special Markets",
+      "Universal Records South",
+      "Universal South",
+      "Westwood One",
+      "Word, Curb Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jo Nichols",
+    "mbid": "",
+    "listeners": 7364,
+    "playcount": 107899,
+    "listener_play_ratio": 14.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jo+Nichols\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Robin Colt",
+      "Som Nus",
+      "Francis Luna",
+      "Valérian Rose",
+      "Alexis Montague"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dream Adventure",
+        "listeners": 4575,
+        "playcount": 50838
+      },
+      {
+        "name": "Your Cake",
+        "listeners": 1518,
+        "playcount": 13791
+      },
+      {
+        "name": "My Race Car",
+        "listeners": 1341,
+        "playcount": 13699
+      },
+      {
+        "name": "I Can Be Anything",
+        "listeners": 1032,
+        "playcount": 7468
+      },
+      {
+        "name": "The Waggly Dog",
+        "listeners": 1027,
+        "playcount": 9747
+      },
+      {
+        "name": "Christmas Morning",
+        "listeners": 700,
+        "playcount": 3274
+      },
+      {
+        "name": "Song of the Night Owl",
+        "listeners": 658,
+        "playcount": 3835
+      },
+      {
+        "name": "I'm Waiting for Tomorrow",
+        "listeners": 403,
+        "playcount": 5162
+      },
+      {
+        "name": "My Kindergarten Friends",
+        "listeners": 11,
+        "playcount": 13
+      },
+      {
+        "name": "My Running Rabbit",
+        "listeners": 8,
+        "playcount": 11
+      }
+    ],
+    "url": "https://www.last.fm/music/Jo+Nichols"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

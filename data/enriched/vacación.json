@@ -1,0 +1,307 @@
+{
+  "artist_name": "Vacación",
+  "artist_id": "vacación",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:53:30.358530+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "88c4b4c6-331e-44da-9156-b82c2980e7fb",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0VDRX95OX96cR7q15oaXgd",
+      "social network": "https://www.instagram.com/enlavacacion/"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 70095492,
+    "name": "Vacación",
+    "nb_fan": 350,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/70095492",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5f24ae50a4e3b0c928ec5e0343bd1bb4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Adanowsky",
+      "Juan Wauters",
+      "Marco Mares"
+    ],
+    "contributor_roles": {
+      "Adanowsky": [
+        "Main"
+      ],
+      "Marco Mares": [
+        "Main"
+      ],
+      "Juan Wauters": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Amor De Verano",
+      "Nieve De Arrayán",
+      "Ola Adiós",
+      "azul",
+      "Bichi"
+    ],
+    "track_durations": [
+      186,
+      218,
+      183,
+      165,
+      125
+    ],
+    "track_ranks": [
+      154161,
+      127042,
+      89358,
+      37314,
+      72221
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Tiempo Compartido",
+        "label": "",
+        "release_date": "2019-10-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "azul",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Té De Tila",
+        "label": "",
+        "release_date": "2019-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bichi",
+        "label": "",
+        "release_date": "2019-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ola Adiós",
+        "label": "",
+        "release_date": "2019-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nieve De Arrayán",
+        "label": "",
+        "release_date": "2019-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Caloncho",
+      "Alex Ferreira",
+      "Elsa y Elmar",
+      "Ramona",
+      "Mi Sobrino Memo",
+      "Sebastián Romero",
+      "La Isla Centeno",
+      "Molinette Cinema",
+      "Arroba Nat",
+      "Vanessa Zamora"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1335884,
+    "name": "Vacaciones",
+    "profile": "Spanish indie pop band from Murcia.\r\n\r\nThe band was formed in April 1998, when Ruth, Angel, Rafa and Jose Alberto decided to start writing happy, dreamy pop songs, inspired by some of their faves: Heavenly, Los Fresones Rebeldes, pop based on crystal-like guitars and naive female vocals. After composing a song called “Vacaciones En El Mar” they got the name for the band: Vacaciones - the Spanish for “holidays”. For them, holidays mean the best moments of the year, when we can escape from the daily grind. And because playing in a band is the funniest thing in the world.\r\n\r\n",
+    "realname": "",
+    "social_urls": [
+      "http://elefant.com/bands/vacaciones",
+      "http://lafonoteca.net/grupos/vacaciones/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 27,
+    "digital_only_releases": 9,
+    "total_releases": 36,
+    "formats": [
+      "",
+      "13xFile, MP3, Comp, 320",
+      "28xFile, MP3, Comp, 320",
+      "2xCD, Album, Comp",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "41xFile, FLAC, Comp",
+      "4xCD, Comp",
+      "7\", EP",
+      "CD, Album",
+      "CD, Album, Comp, Promo",
+      "CD, Album, Enh",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, Lim",
+      "CD, Comp, Ltd",
+      "CD, Comp, Promo",
+      "CD, Comp, Smplr",
+      "CD, EP",
+      "CD, Single",
+      "CDr, Comp",
+      "LP, Album"
+    ],
+    "labels": [
+      "Arcade Music Company España, S.A.",
+      "Buh Records",
+      "Discos De Paseo",
+      "Discos Imprescindibles",
+      "Discos de Kirlian",
+      "EMI",
+      "Elefant Records",
+      "Elefant Records, Autopop",
+      "Indietracks",
+      "March Records",
+      "Molecula Records",
+      "Rambling Records",
+      "Revista 69",
+      "Sala Maravillas",
+      "Sinedín Music",
+      "Sinedín Music, Elefant Records",
+      "Sponge Records (5), Mary Celeste (2)",
+      "Suave (5)",
+      "TKO New Music Corporation",
+      "Ventilador Music",
+      "Waterslide Records",
+      "[PIAS] Recordings, [PIAS] Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vacación",
+    "mbid": "88c4b4c6-331e-44da-9156-b82c2980e7fb",
+    "listeners": 18746,
+    "playcount": 123632,
+    "listener_play_ratio": 6.6,
+    "bio_exists": true,
+    "bio_summary": "Vacación is the long-awaited musical project by the respected Latin American musicians Calonchoy and El David Aguilar. With soft nuances, full of finesse and soundscapes that cover a wide variety of emotions and musical genres.\n\nTogether they have released more than 7 albums, performed in more than 13 countries, 7 Latin Grammy nominations in the last three years.\n\nIndividually they have collaborated with\nmusicians such as Natalia Lafourcade, Jorge Drexler, Kevin Johansen, Siddhartha, Mon Laferte",
+    "tags": [
+      "latin",
+      "rock"
+    ],
+    "similar_artists": [
+      "Pachará",
+      "Sofia Macchi",
+      "Maréh",
+      "Rosario Ortega",
+      "Pantoja"
+    ],
+    "top_tracks": [
+      {
+        "name": "Amor De Verano",
+        "listeners": 9299,
+        "playcount": 44828
+      },
+      {
+        "name": "Ola Adiós",
+        "listeners": 6412,
+        "playcount": 21989
+      },
+      {
+        "name": "Té De Tila",
+        "listeners": 4576,
+        "playcount": 14351
+      },
+      {
+        "name": "Bichi",
+        "listeners": 3287,
+        "playcount": 11143
+      },
+      {
+        "name": "Nieve De Arrayán",
+        "listeners": 2394,
+        "playcount": 11529
+      },
+      {
+        "name": "Capullo Capulín",
+        "listeners": 1997,
+        "playcount": 6836
+      },
+      {
+        "name": "Bailo Mientras Cocino",
+        "listeners": 1116,
+        "playcount": 4386
+      },
+      {
+        "name": "Santo Canto",
+        "listeners": 683,
+        "playcount": 2477
+      },
+      {
+        "name": "Las Caguas",
+        "listeners": 563,
+        "playcount": 2337
+      },
+      {
+        "name": "Caminando",
+        "listeners": 471,
+        "playcount": 1640
+      }
+    ],
+    "url": "https://www.last.fm/music/Vacaci%C3%B3n"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

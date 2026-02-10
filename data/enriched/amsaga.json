@@ -1,0 +1,225 @@
+{
+  "artist_name": "Amsaga",
+  "artist_id": "amsaga",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:56:54.322549+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 173779047,
+    "name": "Amsaga",
+    "nb_fan": 4,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/173779047",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c0e61f368ff9b4c47ac6551c6abf7f5c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Bris",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ögonblick",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes of Home",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Horizon",
+        "label": "",
+        "release_date": "2025-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lugnet",
+        "label": "",
+        "release_date": "2025-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stilla",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vila",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Novela",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fröjden",
+        "label": "",
+        "release_date": "2024-02-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frihet",
+        "label": "",
+        "release_date": "2022-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Längtan",
+        "label": "",
+        "release_date": "2022-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Väntan",
+        "label": "",
+        "release_date": "2022-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bergen",
+        "label": "",
+        "release_date": "2022-02-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amsaga",
+    "mbid": "",
+    "listeners": 24327,
+    "playcount": 96759,
+    "listener_play_ratio": 3.98,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Amsaga\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isoflimmasy",
+      "August Parks",
+      "Forsintha",
+      "Lonely silence",
+      "Celestine Steller"
+    ],
+    "top_tracks": [
+      {
+        "name": "Längtan",
+        "listeners": 13667,
+        "playcount": 58445
+      },
+      {
+        "name": "Novela",
+        "listeners": 9315,
+        "playcount": 27842
+      },
+      {
+        "name": "Vila",
+        "listeners": 1496,
+        "playcount": 6025
+      },
+      {
+        "name": "Lugnet",
+        "listeners": 1393,
+        "playcount": 4426
+      },
+      {
+        "name": "Helags",
+        "listeners": 8,
+        "playcount": 10
+      },
+      {
+        "name": "Dalen",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Bergen",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Vida slätter",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Frihet",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Amsaga"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

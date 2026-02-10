@@ -1,0 +1,469 @@
+{
+  "artist_name": "Ikigai",
+  "artist_id": "ikigai",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:13:54.713154+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a6cc174d-79b8-4842-b326-493174f47ae2",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/9681438",
+      "purchase for download": "https://music.apple.com/us/artist/1289036775",
+      "soundcloud": "https://soundcloud.com/ikigai-scmusic",
+      "streaming": "https://tidal.com/artist/7365533",
+      "youtube music": "https://music.youtube.com/channel/UC4iL1J8lZ_pVtM2KJA7jw9A"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9681438,
+    "name": "Ikigai",
+    "nb_fan": 529,
+    "nb_album": 88,
+    "link": "https://www.deezer.com/artist/9681438",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8c407c3b9b05a2ac9010e3f74b9a8c45/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "I awake",
+      "Bridges",
+      "Morning Story",
+      "A Fools Love",
+      "Ти співала щоб віддати",
+      "Flights",
+      "Забудь мене",
+      "Pictures and Memories",
+      "Quiet Weather",
+      "Yearning",
+      "Допоки серце бʼється",
+      "Птица",
+      "Forever And A Day",
+      "Rainless",
+      "Палаєш",
+      "Зелені Очі",
+      "My Darling",
+      "Echoes in the Alley"
+    ],
+    "track_durations": [
+      245,
+      173,
+      245,
+      236,
+      229,
+      226,
+      189,
+      243,
+      262,
+      179,
+      229,
+      219,
+      193,
+      247,
+      183,
+      194,
+      225,
+      217
+    ],
+    "track_ranks": [
+      305400,
+      324835,
+      31912,
+      18707,
+      299460,
+      5168,
+      308524,
+      18314,
+      37796,
+      72010,
+      141569,
+      91758,
+      29074,
+      51432,
+      246708,
+      171806,
+      53042,
+      89953
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 15,
+      "ep": 1,
+      "single": 72
+    },
+    "albums": [
+      {
+        "title": "Peacock",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "TEEN WELL BEING V1",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Healing Soundscapes & Forest Meditation",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "yes, this is background music",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Left My Lighter in Kyoto",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rose Mallow Blossoms",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Red Torii Sunrise",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Between Sea and Sky",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "FABLE",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moonlight and Whiskers",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Memories of Fuji",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "figlio della macchina",
+        "label": "",
+        "release_date": "2024-12-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Malsano",
+        "label": "",
+        "release_date": "2023-01-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Perception",
+        "label": "",
+        "release_date": "2019-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ikigai",
+        "label": "",
+        "release_date": "2019-03-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rollin (Remix EP)",
+        "label": "",
+        "release_date": "2023-02-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "BAD BEE",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Птица",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The First Rain",
+        "label": "",
+        "release_date": "2025-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever And A Day",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ти співала щоб віддати (Cover)",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Warriors Come Home",
+        "label": "",
+        "release_date": "2025-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Зелені Очі",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gyakusatsu no ie De",
+        "label": "",
+        "release_date": "2025-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ти співала щоб віддати (Nick de Grand Remix)",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Допоки серце бʼється",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ти співала щоб віддати",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kaise Samjhau",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Saved (feat. Noki)",
+        "label": "",
+        "release_date": "2025-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Всем",
+        "label": "",
+        "release_date": "2025-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "KOZAK SIROMAHA",
+      "Maryna Krut",
+      "YAKTAK",
+      "Tember Blanche",
+      "BRYKULETS",
+      "LATEXFAUNA",
+      "Vivienne Mort",
+      "Kler",
+      "Patsyki Z Franeka",
+      "FIЇNKA"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6303432,
+    "name": "Ikigai",
+    "profile": "Ikigai is a music duo formed by two Italian producers, formed in London back in 2014. ",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/Ikigaiofficialpage/",
+      "https://soundcloud.com/ikigaimusicofficial",
+      "https://www.instagram.com/ikigai.officialmusic/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "2xFile, MP3, 320",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Intensity Recordings (2)",
+      "Taste Of Honey Limited"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ikigai",
+    "mbid": "a6cc174d-79b8-4842-b326-493174f47ae2",
+    "listeners": 56992,
+    "playcount": 249820,
+    "listener_play_ratio": 4.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ikigai\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Long Island Quartet",
+      "More Than Jazz",
+      "Wonder Eve",
+      "Gillian Spencer Trio",
+      "Carla Anderson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Yearning",
+        "listeners": 17202,
+        "playcount": 38808
+      },
+      {
+        "name": "Bridges",
+        "listeners": 14457,
+        "playcount": 33993
+      },
+      {
+        "name": "I awake",
+        "listeners": 13354,
+        "playcount": 30286
+      },
+      {
+        "name": "Morning Story",
+        "listeners": 12984,
+        "playcount": 27121
+      },
+      {
+        "name": "Quiet Weather",
+        "listeners": 10049,
+        "playcount": 23585
+      },
+      {
+        "name": "Echoes in the Alley",
+        "listeners": 5410,
+        "playcount": 11090
+      },
+      {
+        "name": "Rainless",
+        "listeners": 5332,
+        "playcount": 21793
+      },
+      {
+        "name": "My Darling",
+        "listeners": 4333,
+        "playcount": 16120
+      },
+      {
+        "name": "Blue Lake",
+        "listeners": 1008,
+        "playcount": 1941
+      },
+      {
+        "name": "Забудь мене",
+        "listeners": 796,
+        "playcount": 4477
+      }
+    ],
+    "url": "https://www.last.fm/music/Ikigai"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

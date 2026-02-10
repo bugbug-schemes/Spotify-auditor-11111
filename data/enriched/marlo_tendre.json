@@ -1,0 +1,101 @@
+{
+  "artist_name": "Marlo Tendre",
+  "artist_id": "marlo_tendre",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:30:33.458813+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 341303811,
+    "name": "Marlo Tendre",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/341303811",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Close your eyes",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Marlo Tendre",
+    "mbid": "",
+    "listeners": 800,
+    "playcount": 4384,
+    "listener_play_ratio": 5.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Marlo+Tendre\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Henry Clein",
+      "Hushabye Sky",
+      "Aurora Keys",
+      "Elin Noa",
+      "Brian Zeller"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moonlit Cradle",
+        "listeners": 800,
+        "playcount": 4384
+      }
+    ],
+    "url": "https://www.last.fm/music/Marlo+Tendre"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

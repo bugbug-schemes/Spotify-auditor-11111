@@ -1,0 +1,431 @@
+{
+  "artist_name": "Eternal Time Trio",
+  "artist_id": "eternal_time_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:31:10.092242+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d6af7170-f4c4-4b96-aee2-3dfd5d9ea39b",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/187250817",
+      "purchase for download": "https://music.apple.com/us/artist/1652503797",
+      "streaming": "https://tidal.com/artist/35095227",
+      "youtube music": "https://music.youtube.com/channel/UCVLQRRCL7BvqUJp85pNA2hw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 187250817,
+    "name": "Eternal Time Trio",
+    "nb_fan": 8,
+    "nb_album": 31,
+    "link": "https://www.deezer.com/artist/187250817",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d0c5e6e41dff42cc9368acd14d867837/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Berlin",
+      "Lena",
+      "Anagram",
+      "Konrad",
+      "Christmas Serenade",
+      "Summer Romance"
+    ],
+    "track_durations": [
+      155,
+      182,
+      290,
+      165,
+      189,
+      152
+    ],
+    "track_ranks": [
+      22192,
+      38616,
+      37475,
+      15765,
+      6862,
+      53970
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 9,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "Never Ending",
+        "label": "",
+        "release_date": "2024-03-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "About Now",
+        "label": "",
+        "release_date": "2023-06-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Made Up",
+        "label": "",
+        "release_date": "2023-06-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "In Real Life",
+        "label": "",
+        "release_date": "2023-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Thanks But No Thanks",
+        "label": "",
+        "release_date": "2023-03-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Looking Back",
+        "label": "",
+        "release_date": "2023-03-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Yesterday",
+        "label": "",
+        "release_date": "2023-03-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Reaching The Peak",
+        "label": "",
+        "release_date": "2023-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Louder Than Words",
+        "label": "",
+        "release_date": "2023-02-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Snowflakes in December",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Serenade",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If We'll Ever Meet Again",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We Were Almost Real",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At Dawn",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desert Bloom",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Dew",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Can't Get Started",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dias de Chuva",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Holly and the Ivy",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lena",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anagram",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forest of Knives",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Didn't Know About You",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Berlin",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Konrad",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Camellia",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The View of Aurora",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Romance",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mend My Heart",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dolphin Dance",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3459846,
+    "name": "Eternal Storm",
+    "profile": "Eternal Storm is a Melodic Extreme Metal band that was created in late 2006 under the name of Death Valley by Kheryon (vocals) and Tephros (drums, ex-Beneath Your Fears) along with another musicians. The band pretended to play some kind of symphonic black metal but went into a hiatus shortly after. Some later, in late 2007, Kheryon (now playing bass too) and Tephros reformed Death Valley and brought Daniel Maganto as guitarist. After a few rehearsals Daniel invited his friend Jaime Torres to join as second guitarist: now that a line-up was established they started to write music in the vein of old school melodic death metal with some black metal touches and other traces of their own, blending aggression with melodic guitar work and epic riffs as well as atmospheric nuances. Tephros left the band some time after due to schedule problems. The band spent a short period as a trio and then a couple of months jamming with Carlos Gumuzio (currently in The Descent), who would eventually leave ",
+    "realname": "Eternal Storm",
+    "social_urls": [
+      "http://eternalstorm.bandcamp.com/",
+      "https://www.facebook.com/eternalstormofficial/info"
+    ],
+    "members": [
+      "Jaime Torres (3)",
+      "Kheryon",
+      "Daniel Maganto",
+      "Luis \"Lucho\" Rodríguez"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 8,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "10\", Ltd, Num",
+      "28xFile, FLAC, Comp",
+      "50xFile, FLAC, Comp",
+      "CD, Comp, Dig",
+      "Cass, Comp",
+      "File, MP3, Single, 320"
+    ],
+    "labels": [
+      "Dissension Records",
+      "Höllehammer Propaganda",
+      "Not On Label (Eternal Storm Self-released)",
+      "Transcending Obscurity Records",
+      "Tupatutupa"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Eternal Time Trio",
+    "mbid": "d6af7170-f4c4-4b96-aee2-3dfd5d9ea39b",
+    "listeners": 87086,
+    "playcount": 284591,
+    "listener_play_ratio": 3.27,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Eternal+Time+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Isac Solo Trio",
+      "Denzel Sachs",
+      "Dan Evans-Parker",
+      "Gabriel Gonzalez",
+      "Andy Luma Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Christmas Serenade",
+        "listeners": 27131,
+        "playcount": 54182
+      },
+      {
+        "name": "I'll Tell You When I Understand",
+        "listeners": 16080,
+        "playcount": 33547
+      },
+      {
+        "name": "Dolphin Dance",
+        "listeners": 13327,
+        "playcount": 25342
+      },
+      {
+        "name": "Lena",
+        "listeners": 13194,
+        "playcount": 27552
+      },
+      {
+        "name": "Morning Dew",
+        "listeners": 12710,
+        "playcount": 26624
+      },
+      {
+        "name": "Ladybird",
+        "listeners": 12187,
+        "playcount": 23388
+      },
+      {
+        "name": "Anagram",
+        "listeners": 10773,
+        "playcount": 21651
+      },
+      {
+        "name": "Summer Romance",
+        "listeners": 7211,
+        "playcount": 16603
+      },
+      {
+        "name": "Konrad",
+        "listeners": 7012,
+        "playcount": 15209
+      },
+      {
+        "name": "The View of Aurora",
+        "listeners": 5671,
+        "playcount": 12461
+      }
+    ],
+    "url": "https://www.last.fm/music/Eternal+Time+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

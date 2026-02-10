@@ -1,0 +1,230 @@
+{
+  "artist_name": "warmest depths",
+  "artist_id": "warmest_depths",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:35:42.117691+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 215466835,
+    "name": "warmest depths",
+    "nb_fan": 0,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/215466835",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/09b6d1ff4168bf531108193c50b2c98b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "the light returns"
+    ],
+    "track_durations": [
+      173
+    ],
+    "track_ranks": [
+      54341
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "years of flowers",
+        "label": "",
+        "release_date": "2024-07-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "slow bloom",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "away adrift (nature)",
+        "label": "",
+        "release_date": "2026-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Time Is Here",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the light returns",
+        "label": "",
+        "release_date": "2025-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "from the sun",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Underneath the Tree",
+        "label": "",
+        "release_date": "2024-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "stars full of sky",
+        "label": "",
+        "release_date": "2023-12-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "prelude to a dream",
+        "label": "",
+        "release_date": "2023-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ceiling clouds 432 Hz (Piano)",
+        "label": "",
+        "release_date": "2023-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "everything entirely 432 Hz (Piano)",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "invisible waters",
+        "label": "",
+        "release_date": "2023-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "warmest depths",
+    "mbid": "",
+    "listeners": 6499,
+    "playcount": 19952,
+    "listener_play_ratio": 3.07,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/warmest+depths\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lioren",
+      "Sebastian Young",
+      "Zale Foster",
+      "Meadow Bryce",
+      "Leonardo Paul"
+    ],
+    "top_tracks": [
+      {
+        "name": "Christmas Time Is Here",
+        "listeners": 2950,
+        "playcount": 7021
+      },
+      {
+        "name": "the light returns",
+        "listeners": 2062,
+        "playcount": 7501
+      },
+      {
+        "name": "flowers in the dark 432 Hz - Piano",
+        "listeners": 1374,
+        "playcount": 4104
+      },
+      {
+        "name": "Underneath the Tree",
+        "listeners": 142,
+        "playcount": 296
+      },
+      {
+        "name": "from the sun",
+        "listeners": 88,
+        "playcount": 163
+      },
+      {
+        "name": "stars full of sky",
+        "listeners": 38,
+        "playcount": 157
+      },
+      {
+        "name": "prelude to a dream",
+        "listeners": 33,
+        "playcount": 122
+      },
+      {
+        "name": "invisible waters",
+        "listeners": 29,
+        "playcount": 54
+      },
+      {
+        "name": "flowers in the dark 432 Hz (Piano)",
+        "listeners": 24,
+        "playcount": 70
+      },
+      {
+        "name": "ceiling clouds 432 Hz - Piano",
+        "listeners": 11,
+        "playcount": 105
+      }
+    ],
+    "url": "https://www.last.fm/music/warmest+depths"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,140 @@
+{
+  "artist_name": "Luanna Averie",
+  "artist_id": "luanna_averie",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:14:46.975468+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 161425862,
+    "name": "Luanna Averie",
+    "nb_fan": 1,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/161425862",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5aff2730e51b5545bfa95949c32296e0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Soothing Echoes",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Porla",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little red house",
+        "label": "",
+        "release_date": "2021-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Luanna Averie",
+    "mbid": "",
+    "listeners": 29303,
+    "playcount": 138215,
+    "listener_play_ratio": 4.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Luanna+Averie\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lotus Laverne",
+      "Placid Warren",
+      "Flavio Nisi",
+      "Isabella Morales",
+      "Freya Rääf"
+    ],
+    "top_tracks": [
+      {
+        "name": "A bed of tulips",
+        "listeners": 29292,
+        "playcount": 138071
+      },
+      {
+        "name": "Little red house",
+        "listeners": 37,
+        "playcount": 112
+      },
+      {
+        "name": "Porla",
+        "listeners": 4,
+        "playcount": 10
+      },
+      {
+        "name": "Compassion",
+        "listeners": 4,
+        "playcount": 8
+      },
+      {
+        "name": "Soothing Echoes",
+        "listeners": 3,
+        "playcount": 8
+      },
+      {
+        "name": "Frames",
+        "listeners": 3,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Luanna+Averie"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

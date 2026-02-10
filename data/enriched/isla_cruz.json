@@ -1,0 +1,206 @@
+{
+  "artist_name": "Isla Cruz",
+  "artist_id": "isla_cruz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:17:53.590682+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 122599572,
+    "name": "Isla Cruz",
+    "nb_fan": 19362,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/122599572",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/46bb15c174743d144fdcec7a03d66ed2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "The night is neon bright",
+        "label": "",
+        "release_date": "2025-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Do you feel it too",
+        "label": "",
+        "release_date": "2025-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Road",
+        "label": "",
+        "release_date": "2025-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Disco",
+        "label": "",
+        "release_date": "2025-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Star System",
+        "label": "",
+        "release_date": "2021-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sputnik",
+        "label": "",
+        "release_date": "2021-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3686365,
+    "name": "Jesus Monje Cruz \"Pijote\"",
+    "profile": "Spanish flamenco cantaor (died 11 Oct. 2018), brother of [a1022514]",
+    "realname": "",
+    "social_urls": [
+      "https://www.elcastillodesanfernando.es/2018/10/fallece-el-cantaor-jesus-monje-cruz-pijote-hermano-de-camaron-de-la-isla/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 2,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "3xCD, Comp",
+      "CD, Comp",
+      "CD, Comp, Club",
+      "CD, Comp, RM"
+    ],
+    "labels": [
+      "Club Internacional Del Libro",
+      "Music Brokers",
+      "Music Brokers, Music Brokers"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Isla Cruz",
+    "mbid": "",
+    "listeners": 7453,
+    "playcount": 26841,
+    "listener_play_ratio": 3.6,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Isla+Cruz\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Alinno",
+      "Lak Host",
+      "Miller Ford",
+      "Luca Tong",
+      "Mute Surrender"
+    ],
+    "top_tracks": [
+      {
+        "name": "Star System",
+        "listeners": 6304,
+        "playcount": 21680
+      },
+      {
+        "name": "Sputnik",
+        "listeners": 1394,
+        "playcount": 4730
+      },
+      {
+        "name": "Ocean Road",
+        "listeners": 83,
+        "playcount": 208
+      },
+      {
+        "name": "Dark",
+        "listeners": 14,
+        "playcount": 75
+      },
+      {
+        "name": "Silhouettes",
+        "listeners": 12,
+        "playcount": 37
+      },
+      {
+        "name": "Graceful",
+        "listeners": 12,
+        "playcount": 36
+      },
+      {
+        "name": "Mystery",
+        "listeners": 11,
+        "playcount": 35
+      },
+      {
+        "name": "Twilight",
+        "listeners": 11,
+        "playcount": 33
+      },
+      {
+        "name": "Star System -",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Star System (2021)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Isla+Cruz"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

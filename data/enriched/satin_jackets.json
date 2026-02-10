@@ -1,0 +1,655 @@
+{
+  "artist_name": "Satin Jackets",
+  "artist_id": "satin_jackets",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:55:31.586793+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e0432382-b245-4a30-b230-5558b36ac158",
+    "type": "Group",
+    "country": "",
+    "area": "München",
+    "begin_date": "2012",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "electronic",
+      "house",
+      "deep house",
+      "disco",
+      "munich",
+      "edm",
+      "nu disco"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002750377",
+      "bandcamp": "https://satinjackets.bandcamp.com/",
+      "bandsintown": "https://www.bandsintown.com/a/1339402",
+      "discogs": "https://www.discogs.com/artist/2071154",
+      "free streaming": "https://www.deezer.com/artist/388130",
+      "official homepage": "https://satin-jackets.com/",
+      "purchase for download": "https://www.beatport.com/artist/satin-jackets/141901",
+      "social network": "https://www.instagram.com/satin.jackets/",
+      "songkick": "https://www.songkick.com/artists/8280398",
+      "soundcloud": "https://soundcloud.com/satinjackets",
+      "streaming": "https://tidal.com/artist/3711021"
+    },
+    "labels": [
+      "Deep & Disco",
+      "Counter Records",
+      "Melodica Records",
+      "Blaufield Music",
+      "Golden Hour",
+      "Eskimo Recordings",
+      "Pole Position Recordings",
+      "Glam Jam Artists",
+      "Nervous Records",
+      "Golden Hour Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 388130,
+    "name": "Satin Jackets",
+    "nb_fan": 14638,
+    "nb_album": 90,
+    "link": "https://www.deezer.com/artist/388130",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/df557a9ab06a7559a76e228076775d7d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "David Bay",
+      "David Harks",
+      "Emma Brammer",
+      "I Will, I Swear",
+      "IsaacO",
+      "KLP",
+      "Kimchii",
+      "Nazzereene",
+      "Panama",
+      "Scavenger Hunt",
+      "Seint Monet",
+      "Tailor",
+      "Thunder",
+      "Usually Quiet"
+    ],
+    "contributor_roles": {
+      "Panama": [
+        "Main"
+      ],
+      "Kimchii": [
+        "Main"
+      ],
+      "Tailor": [
+        "Main"
+      ],
+      "Thunder": [
+        "Main"
+      ],
+      "Usually Quiet": [
+        "Main"
+      ],
+      "David Bay": [
+        "Main"
+      ],
+      "KLP": [
+        "Featured"
+      ],
+      "Nazzereene": [
+        "Main"
+      ],
+      "IsaacO": [
+        "Featured"
+      ],
+      "David Harks": [
+        "Main"
+      ],
+      "Seint Monet": [
+        "Featured"
+      ],
+      "Scavenger Hunt": [
+        "Main"
+      ],
+      "I Will, I Swear": [
+        "Featured"
+      ],
+      "Emma Brammer": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Electric Blue",
+      "The Future",
+      "Automatic",
+      "Bring On Up Our Love",
+      "Somewhere In Paradise",
+      "On My Own",
+      "Criminal",
+      "Voyage en rouge",
+      "Avalanche",
+      "For Days (Original Mix)",
+      "Closer To Me",
+      "Let Love Surround You",
+      "First Thing",
+      "Keep Moving On",
+      "Northern Lights",
+      "Control",
+      "Feel Good",
+      "Night Keys (Original Mix)",
+      "So High",
+      "So I Heard",
+      "Alive",
+      "Cala Banana",
+      "Coffee and Feels",
+      "Move On",
+      "We Can Talk"
+    ],
+    "track_durations": [
+      267,
+      224,
+      276,
+      229,
+      224,
+      270,
+      208,
+      264,
+      230,
+      345,
+      215,
+      212,
+      239,
+      251,
+      255,
+      222,
+      166,
+      371,
+      226,
+      392,
+      230,
+      360,
+      247,
+      266,
+      252
+    ],
+    "track_ranks": [
+      382757,
+      176506,
+      420115,
+      147039,
+      142301,
+      186161,
+      310655,
+      131634,
+      143015,
+      189310,
+      256565,
+      137349,
+      156577,
+      163307,
+      309936,
+      284894,
+      350301,
+      246417,
+      216615,
+      177232,
+      183933,
+      199734,
+      149481,
+      214927,
+      178929
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 7,
+      "single": 77
+    },
+    "albums": [
+      {
+        "title": "Cruise Control",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Reunion",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solar Nights - The Remixes",
+        "label": "",
+        "release_date": "2019-08-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solar Nights",
+        "label": "",
+        "release_date": "2019-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Diamonds Are Forever",
+        "label": "",
+        "release_date": "2018-04-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Panorama Pacifico",
+        "label": "",
+        "release_date": "2016-04-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Girl, Forever",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hidden Treasures EP",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Golden Cage EP",
+        "label": "",
+        "release_date": "2020-01-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Feel Good",
+        "label": "",
+        "release_date": "2016-05-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "We Can Talk",
+        "label": "",
+        "release_date": "2016-01-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shine On You",
+        "label": "",
+        "release_date": "2015-02-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Foreign Affair EP",
+        "label": "",
+        "release_date": "2014-08-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "You Get Me So High",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Criminal",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Use (Satin Jackets Remix)",
+        "label": "",
+        "release_date": "2025-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pull Together",
+        "label": "",
+        "release_date": "2025-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On My Own",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Avalanche",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Say Hi From Me",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Under My Skin",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Looking For You",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Double Reflections",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Know Me",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oceanside",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Not Your House",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Voyage en rouge",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let Love Surround You",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bring On Up Our Love",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somewhere In Paradise (Back Talk Remix)",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Ben Macklin",
+      "5 Reasons",
+      "Novika",
+      "Goldroom",
+      "Moullinex",
+      "Les Loups",
+      "Cherokee",
+      "Cavego",
+      "Jean Tonique",
+      "Kraak & Smaak"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2071154,
+    "name": "Satin Jackets",
+    "profile": "Satin Jackets is the House/Nu Disco project of German music producer Tim Bernhardt. \r\n",
+    "realname": "Tim Bernhardt",
+    "social_urls": [
+      "http://www.facebook.com/satinjackets",
+      "http://www.soundcloud.com/satinjackets",
+      "http://www.twitter.com/satinjackets",
+      "http://www.instagram.com/satin.jackets",
+      "https://satinjackets.bandcamp.com"
+    ],
+    "members": [
+      "Tim Bernhardt"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 22,
+    "digital_only_releases": 78,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP",
+      "17xFile, AAC, 256",
+      "20xFile, AAC, 256",
+      "2xCD, Album, Comp, Mixed",
+      "2xCD, Comp",
+      "2xCD, Comp + CD, Mixed",
+      "2xCD, Comp, Dig",
+      "2xCD, Comp, Mixed",
+      "2xCD, Mixed",
+      "2xFile, MP3, 320",
+      "2xFile, WAV",
+      "2xFile, WAV, Single",
+      "32xFile, MP3, Comp, 320 + File, MP3, Comp, Mixed, ",
+      "32xFile, MP3, Comp, 320 + File, MP3, Mixed, 320",
+      "3xCD, Comp",
+      "3xCD, Comp, Dig",
+      "3xCD, Comp, Mixed",
+      "3xCD, Comp, Mixed, Dig",
+      "3xFile, MP3, 320",
+      "3xFile, MP3, EP, 320",
+      "4xCD, Comp",
+      "4xFile, MP3, 320",
+      "4xFile, MP3, EP, 320",
+      "4xFile, MP3, Single, 320",
+      "4xFile, WAV",
+      "4xFile, WAV, EP",
+      "5xFile, MP3, 320",
+      "5xFile, WAV, Single",
+      "62xFile, MP3, Comp, 320 + 3xFile, MP3, Mixed, 320",
+      "6xFile, MP3, Album, 320",
+      "6xFile, MP3, EP, 320",
+      "8xFile, AAC, EP, 256",
+      "CD, Comp",
+      "CDr, Comp, Promo",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single",
+      "File, MP3, 320",
+      "File, MP3, Single, 320",
+      "File, WAV",
+      "File, WAV, Single",
+      "LP, Album, Pic"
+    ],
+    "labels": [
+      "541, Studio Brussel",
+      "Blaufield Music",
+      "Boogie Angst",
+      "Coco Beach Ibiza, Kontor Records",
+      "Crumpled Music",
+      "DMC",
+      "Deep & Disco Recordings",
+      "Discotexas",
+      "Double Tree Records",
+      "Embassy One",
+      "Eskimo Recordings",
+      "Eskimo Recordings, N.E.W.S.",
+      "Exploited",
+      "Glam Jam Artists",
+      "Golden Hour Recordings",
+      "Happy Music",
+      "Hed Kandi",
+      "Island Moods",
+      "Kontor Records",
+      "Kontor Records GmbH",
+      "Melodica Recordings",
+      "Ministry Of Sound",
+      "More Music And Media",
+      "Mullet Records",
+      "Nervous Records",
+      "Not On Label (Estate Self-released)",
+      "Nu Indee",
+      "Nurvous Records",
+      "Pole Jam Vinyl",
+      "Pole Position Recordings",
+      "Seamless Recordings",
+      "Serenades (2)",
+      "Skycreaker",
+      "Sony Music, Soundcolours, TCM (4)",
+      "Sublet Recordings",
+      "Toolroom Records",
+      "Universal Music",
+      "Wagram Music",
+      "Wavemusic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Satin Jackets",
+    "mbid": "e0432382-b245-4a30-b230-5558b36ac158",
+    "listeners": 237120,
+    "playcount": 2933953,
+    "listener_play_ratio": 12.37,
+    "bio_exists": true,
+    "bio_summary": "For a decade now the name Satin Jackets has been synonymous with sublimely laidback Balearic house and sun kissed disco. The brainchild of German producer Tim Bernhardt who, following a successful career producing house music under a variety of different aliases, launched Satin Jackets as a vehicle to explore his lifelong love of disco and the clean, polished productions of artists like CHIC and Trevor Horn.\n\n“I had always been fascinated by just how glossy people like Nile Rogers made their mus",
+    "tags": [
+      "nu disco",
+      "electropop",
+      "House",
+      "deep house",
+      "new wave"
+    ],
+    "similar_artists": [
+      "Ben Macklin",
+      "Le Flex",
+      "Goldroom",
+      "La Felix",
+      "Panama"
+    ],
+    "top_tracks": [
+      {
+        "name": "Northern Lights",
+        "listeners": 42697,
+        "playcount": 197256
+      },
+      {
+        "name": "You Make Me Feel Good - Original Mix",
+        "listeners": 39671,
+        "playcount": 162174
+      },
+      {
+        "name": "Girl, Forever - Original Mix",
+        "listeners": 26096,
+        "playcount": 63495
+      },
+      {
+        "name": "You Make Me Feel Good",
+        "listeners": 25238,
+        "playcount": 95873
+      },
+      {
+        "name": "Feel Good",
+        "listeners": 24080,
+        "playcount": 96403
+      },
+      {
+        "name": "Automatic",
+        "listeners": 20439,
+        "playcount": 96464
+      },
+      {
+        "name": "Mirage",
+        "listeners": 19136,
+        "playcount": 130976
+      },
+      {
+        "name": "The Future",
+        "listeners": 18697,
+        "playcount": 64589
+      },
+      {
+        "name": "For Days - Original Mix",
+        "listeners": 16917,
+        "playcount": 68606
+      },
+      {
+        "name": "Levante",
+        "listeners": 15044,
+        "playcount": 48345
+      }
+    ],
+    "url": "https://www.last.fm/music/Satin+Jackets"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

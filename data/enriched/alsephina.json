@@ -1,0 +1,223 @@
+{
+  "artist_name": "Alsephina",
+  "artist_id": "alsephina",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:53:50.799541+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 113910162,
+    "name": "Alsephina",
+    "nb_fan": 3,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/113910162",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/35830699536e8fb9ded61135f61aa8db/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Distant Halo",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rise Beyond",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caligo",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Neutrino",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lihnida",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I No Longer",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amble",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vacuity",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Reign",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sea of Ghosts",
+        "label": "",
+        "release_date": "2023-12-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dedicatum",
+        "label": "",
+        "release_date": "2021-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forgotten World",
+        "label": "",
+        "release_date": "2020-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alsephina",
+    "mbid": "",
+    "listeners": 57031,
+    "playcount": 338984,
+    "listener_play_ratio": 5.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Alsephina\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tom Schiller",
+      "ẹmi",
+      "Lasant",
+      "Fabuluxe",
+      "Astral Steps"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lihnida",
+        "listeners": 25012,
+        "playcount": 125803
+      },
+      {
+        "name": "Neutrino",
+        "listeners": 20275,
+        "playcount": 100929
+      },
+      {
+        "name": "Amble",
+        "listeners": 14452,
+        "playcount": 51506
+      },
+      {
+        "name": "I No Longer",
+        "listeners": 11108,
+        "playcount": 34252
+      },
+      {
+        "name": "Caligo",
+        "listeners": 6464,
+        "playcount": 18453
+      },
+      {
+        "name": "Distant Halo",
+        "listeners": 3280,
+        "playcount": 6812
+      },
+      {
+        "name": "Night Reign",
+        "listeners": 658,
+        "playcount": 1221
+      },
+      {
+        "name": "Vacuity",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Rise Beyond",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Forgotten World",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Alsephina"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

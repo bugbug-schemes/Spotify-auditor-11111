@@ -1,0 +1,148 @@
+{
+  "artist_name": "Zoe Reed",
+  "artist_id": "zoe_reed",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:09:03.024233+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Zoe Reed', got 'Zoë Reed'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 584249,
+    "name": "Justin Reed",
+    "profile": "Born in Evanston, Illinois Justin was raised on a steady diet of Chicago house, dance and golden era hiphop during his teenage years.  Chance exposures to [a=Brian Borden] and [a=Traxx] opened his eyes to the world of the dj in 1990.  Justin officially started his dj career in 1996 while attending Kalamazoo College.  This time it was exposure from Detroit and Windsor techno artists like [a=Rolando]/[a=Underground Resistance], [a=Richie Hawtin] and the [l=Plus 8] crew.  Shortly after starting on his first pair of practice decks in Kalamazoo Justin met and began collaborating with Midwest techno stalwarts [a=Jay Denham]/ [a=Donnel Knox] and [a=Fanon Flowers].  A series of events and endless inspiration would follow. After school Justin moved back to Chicago and had a stint on WNUR streetbeat with a weekly DJ show featuring house, techno and classics.  in 2000 he joined together with some like minded locals and formed illmeasures - a promotions crew that has become known for underground l",
+    "realname": "Justin Reed",
+    "social_urls": [
+      "http://www.illmeasures.com",
+      "http://www.mercurysoul.com",
+      "http://www.machinetonemusic.com"
+    ],
+    "members": [],
+    "groups": [
+      "Striz & The R",
+      "657 Connection"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 3,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "15xFile, MP3, Comp, 320",
+      "7\", Ltd"
+    ],
+    "labels": [
+      "Revolutionary Music",
+      "Tokyotronic Japanese Version Records, Minimalizm"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zoe Reed",
+    "mbid": "",
+    "listeners": 72880,
+    "playcount": 269480,
+    "listener_play_ratio": 3.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zoe+Reed\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "A & C",
+      "Bus Topp",
+      "Convivial",
+      "Maggotts&Becketts",
+      "Audio Phill"
+    ],
+    "top_tracks": [
+      {
+        "name": "the clearing",
+        "listeners": 45038,
+        "playcount": 111814
+      },
+      {
+        "name": "watercolour",
+        "listeners": 41963,
+        "playcount": 99918
+      },
+      {
+        "name": "night mood",
+        "listeners": 23656,
+        "playcount": 57223
+      },
+      {
+        "name": "Te Doy Todo",
+        "listeners": 270,
+        "playcount": 473
+      },
+      {
+        "name": "Perdida",
+        "listeners": 12,
+        "playcount": 33
+      },
+      {
+        "name": "Loom Of Stars",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Flor De Loto",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Whispers of Peace",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Llamas De Amor",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Brisas De La Galaxia",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Zoe+Reed"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

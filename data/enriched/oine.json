@@ -1,0 +1,165 @@
+{
+  "artist_name": "Oine",
+  "artist_id": "oine",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:10:57.731831+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7e445005-8ca0-421d-9ace-f8306197b006",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/3BnZE8V5fUS3QFE5mGSDGr"
+    },
+    "labels": [
+      "Sine Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Oine', got 'Pinegrove'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 586736,
+    "name": "Oinen Lebahaiska",
+    "profile": "",
+    "realname": "Oinen Lebahaiska",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Lemon Slide",
+      "Junior Goa Mob",
+      "Club Kooma",
+      "Road Band"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 3,
+    "total_releases": 4,
+    "formats": [
+      "11xFile, FLAC",
+      "6xFile, MP3, 256",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Adama Records",
+      "Antiscarp Records",
+      "Trance Bum Productions"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Oine",
+    "mbid": "7e445005-8ca0-421d-9ace-f8306197b006",
+    "listeners": 1305,
+    "playcount": 3956,
+    "listener_play_ratio": 3.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Oine\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Francis Skyes & Does it matter",
+      "STÖY & Seerine",
+      "gldnhr",
+      "Fejká & Henry Green",
+      "Mazde & Rubin Henkel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Origen",
+        "listeners": 639,
+        "playcount": 2267
+      },
+      {
+        "name": "Ocean",
+        "listeners": 114,
+        "playcount": 241
+      },
+      {
+        "name": "Enigma",
+        "listeners": 110,
+        "playcount": 182
+      },
+      {
+        "name": "You in My Head",
+        "listeners": 88,
+        "playcount": 179
+      },
+      {
+        "name": "About You",
+        "listeners": 76,
+        "playcount": 122
+      },
+      {
+        "name": "Mesura",
+        "listeners": 63,
+        "playcount": 113
+      },
+      {
+        "name": "Time",
+        "listeners": 57,
+        "playcount": 123
+      },
+      {
+        "name": "Fine Move",
+        "listeners": 50,
+        "playcount": 70
+      },
+      {
+        "name": "Ethereal",
+        "listeners": 47,
+        "playcount": 92
+      },
+      {
+        "name": "Dark Move",
+        "listeners": 42,
+        "playcount": 56
+      }
+    ],
+    "url": "https://www.last.fm/music/Oine"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

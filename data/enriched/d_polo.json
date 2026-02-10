@@ -1,0 +1,490 @@
+{
+  "artist_name": "D.Polo",
+  "artist_id": "d_polo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:18:02.491280+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "99069b45-f3a0-4608-b41f-676875847218",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/4PQtlNyUdOcwWl8VGWPcKB",
+      "social network": "https://www.threads.com/@dpoloofficial"
+    },
+    "labels": [
+      "Beat Dealer Records",
+      "Oasis."
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4266385,
+    "name": "D.Polo",
+    "nb_fan": 434,
+    "nb_album": 53,
+    "link": "https://www.deezer.com/artist/4266385",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/60e279c2426ca702df0d2f1705d05ddd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Kaan Pars",
+      "Koa",
+      "Passing Clouds"
+    ],
+    "contributor_roles": {
+      "Kaan Pars": [
+        "Main"
+      ],
+      "Koa": [
+        "Main"
+      ],
+      "Passing Clouds": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Nobody Knows",
+      "Another Life",
+      "Only You",
+      "Only One",
+      "You & I",
+      "Tides",
+      "Hit Me Up",
+      "Hold Me Down",
+      "Sun Goes Down",
+      "Skies",
+      "Where Did You Go",
+      "Ocean",
+      "Open Your Eyes",
+      "Last Time",
+      "Missing You",
+      "Take Me",
+      "You Said",
+      "Breeze",
+      "Let You Go",
+      "Moments",
+      "Stay",
+      "Side by Side",
+      "Drift",
+      "Away",
+      "Oasis"
+    ],
+    "track_durations": [
+      150,
+      148,
+      148,
+      147,
+      150,
+      150,
+      186,
+      148,
+      148,
+      150,
+      147,
+      151,
+      148,
+      152,
+      148,
+      147,
+      169,
+      146,
+      152,
+      147,
+      147,
+      148,
+      148,
+      148,
+      146
+    ],
+    "track_ranks": [
+      477337,
+      411723,
+      250368,
+      450227,
+      205269,
+      191437,
+      177374,
+      226618,
+      213865,
+      182643,
+      159260,
+      205908,
+      224209,
+      338217,
+      251389,
+      180796,
+      105398,
+      222513,
+      136519,
+      182835,
+      155318,
+      119315,
+      122516,
+      147512,
+      119246
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "ep": 1,
+      "single": 52
+    },
+    "albums": [
+      {
+        "title": "La Isla, Pt. 2",
+        "label": "",
+        "release_date": "2013-11-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Another Life",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Only You",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nobody Knows",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Time",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let You Go",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Your Eyes",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You & I",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skies",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tides",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drift",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where Did You Go",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Only One",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breeze",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moments",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Away",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Terra",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sun Goes Down",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay with Me",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sky",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Days Go By",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The One",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy To Love",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Side by Side",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Down",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Missing You",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold Me Down",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Sum Wave",
+      "Grafine",
+      "Chullo",
+      "Wavey",
+      "Bjarne Hendrik",
+      "Jake and the colors",
+      "Bye Ocean",
+      "Arley",
+      "Drics",
+      "Leo Chase"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6320577,
+    "name": "D.Polo",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "25xFile, MP3, Comp, 320"
+    ],
+    "labels": [
+      "LW Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "D.Polo",
+    "mbid": "99069b45-f3a0-4608-b41f-676875847218",
+    "listeners": 16267,
+    "playcount": 77169,
+    "listener_play_ratio": 4.74,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/D.Polo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aural",
+      "ALIIASES",
+      "Bjarne Hendrik",
+      "Boehm",
+      "Sum Wave & Bye Ocean"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hold Me Down",
+        "listeners": 3858,
+        "playcount": 12284
+      },
+      {
+        "name": "Missing You",
+        "listeners": 3562,
+        "playcount": 10421
+      },
+      {
+        "name": "You Said",
+        "listeners": 2278,
+        "playcount": 6891
+      },
+      {
+        "name": "Sun Goes Down",
+        "listeners": 2204,
+        "playcount": 5424
+      },
+      {
+        "name": "Only One",
+        "listeners": 1401,
+        "playcount": 3600
+      },
+      {
+        "name": "Take Me",
+        "listeners": 1096,
+        "playcount": 2927
+      },
+      {
+        "name": "Heart Went Boom",
+        "listeners": 1090,
+        "playcount": 2762
+      },
+      {
+        "name": "Breeze",
+        "listeners": 1034,
+        "playcount": 2398
+      },
+      {
+        "name": "Stay",
+        "listeners": 1008,
+        "playcount": 2719
+      },
+      {
+        "name": "Terra",
+        "listeners": 1004,
+        "playcount": 1776
+      }
+    ],
+    "url": "https://www.last.fm/music/D.Polo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

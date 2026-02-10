@@ -1,0 +1,126 @@
+{
+  "artist_name": "Sarah Février",
+  "artist_id": "sarah_février",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:54:59.268636+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 293692451,
+    "name": "Sarah Février",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/293692451",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Trickling Down",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sarah Février",
+    "mbid": "",
+    "listeners": 2256,
+    "playcount": 21708,
+    "listener_play_ratio": 9.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sarah+F%C3%A9vrier\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Franciscus Love",
+      "Bingos Bongos",
+      "Ellis Harlow",
+      "Teddy Bloom",
+      "John Sun"
+    ],
+    "top_tracks": [
+      {
+        "name": "Where Stars Sleep",
+        "listeners": 1182,
+        "playcount": 8042
+      },
+      {
+        "name": "The Blue Blanket",
+        "listeners": 1001,
+        "playcount": 9020
+      },
+      {
+        "name": "Soft Embrace",
+        "listeners": 347,
+        "playcount": 4635
+      },
+      {
+        "name": "The Sleeping Fawn",
+        "listeners": 6,
+        "playcount": 9
+      },
+      {
+        "name": "Dream Fox",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Moon Cubs",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sarah+F%C3%A9vrier"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

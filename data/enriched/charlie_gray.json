@@ -1,0 +1,153 @@
+{
+  "artist_name": "Charlie Gray",
+  "artist_id": "charlie_gray",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:04:12.113290+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e8f6ccab-22bc-4f57-a025-9742da9143e4",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Charlie Gray', got 'Carly Rae Jepsen'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 267360,
+    "name": "Charlie Gray",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 6,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "7\""
+    ],
+    "labels": [
+      "Clymax"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Charlie Gray",
+    "mbid": "e8f6ccab-22bc-4f57-a025-9742da9143e4",
+    "listeners": 2692,
+    "playcount": 38850,
+    "listener_play_ratio": 14.43,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Charlie+Gray\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Francis Luna",
+      "Cory Andon",
+      "Som Nus",
+      "Serenna Rose",
+      "John Rabbit"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Sleepy Sea",
+        "listeners": 1779,
+        "playcount": 21649
+      },
+      {
+        "name": "Umbrella for Two",
+        "listeners": 1143,
+        "playcount": 12312
+      },
+      {
+        "name": "The Sky Is Sleepy Too",
+        "listeners": 715,
+        "playcount": 4073
+      },
+      {
+        "name": "Had Enough",
+        "listeners": 80,
+        "playcount": 167
+      },
+      {
+        "name": "Eye Rolls",
+        "listeners": 39,
+        "playcount": 141
+      },
+      {
+        "name": "Evergreen Fields",
+        "listeners": 26,
+        "playcount": 28
+      },
+      {
+        "name": "Eborugon",
+        "listeners": 18,
+        "playcount": 22
+      },
+      {
+        "name": "A Short Story",
+        "listeners": 9,
+        "playcount": 10
+      },
+      {
+        "name": "Out My Head",
+        "listeners": 9,
+        "playcount": 9
+      },
+      {
+        "name": "Southside",
+        "listeners": 7,
+        "playcount": 14
+      }
+    ],
+    "url": "https://www.last.fm/music/Charlie+Gray"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

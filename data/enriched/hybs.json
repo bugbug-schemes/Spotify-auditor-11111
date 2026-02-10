@@ -1,0 +1,509 @@
+{
+  "artist_name": "HYBS",
+  "artist_id": "hybs",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:59:43.928661+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a8536fc7-5ec2-4921-bb0d-3753fba2a1c5",
+    "type": "Group",
+    "country": "",
+    "area": "Bangkok",
+    "begin_date": "2021-10-08",
+    "end_date": "2024-01-10",
+    "gender": "",
+    "genres": [
+      "t-pop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/12409867",
+      "social network": "https://www.instagram.com/hybsband/",
+      "youtube": "https://www.youtube.com/channel/UCAOhYX5_YjGg-77vlBzvsRQ"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 101921382,
+    "name": "HYBS",
+    "nb_fan": 3483,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/101921382",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4cab94477bd4bce02319db9964e23e7b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Billbilly01",
+      "Brain Melts",
+      "Doimountain",
+      "GANGGA",
+      "Machina",
+      "SIRUP",
+      "Slchld",
+      "asiatic.wav",
+      "brb.",
+      "pongypong"
+    ],
+    "contributor_roles": {
+      "Slchld": [
+        "Main"
+      ],
+      "asiatic.wav": [
+        "Main"
+      ],
+      "brb.": [
+        "Main"
+      ],
+      "Doimountain": [
+        "Featured"
+      ],
+      "GANGGA": [
+        "Main"
+      ],
+      "Billbilly01": [
+        "Featured"
+      ],
+      "SIRUP": [
+        "Main"
+      ],
+      "Brain Melts": [
+        "Main"
+      ],
+      "pongypong": [
+        "Featured"
+      ],
+      "Machina": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Tip Toe",
+      "Ride",
+      "Run Away",
+      "Dancing with my phone",
+      "Would You Mind",
+      "Killer",
+      "Rockstar",
+      "Prettiest To Me",
+      "Go Higher",
+      "Good Care",
+      "Serenity",
+      "No One",
+      "Prettiest To Me (Doimountain Remix)",
+      "My Dear",
+      "Satellite",
+      "Let It Rain",
+      "RIDE (Billbilly01 Remix)",
+      "Fantasy",
+      "Tip Toe (Sped Up)",
+      "I'm Blessed",
+      "Serious",
+      "I Don't Wanna Go Home",
+      "Would You Mind (pongypong Remix)",
+      "No One",
+      "Run Away (MACHINA Remix)"
+    ],
+    "track_durations": [
+      224,
+      181,
+      219,
+      203,
+      202,
+      198,
+      182,
+      202,
+      208,
+      194,
+      223,
+      157,
+      211,
+      159,
+      210,
+      210,
+      200,
+      211,
+      158,
+      218,
+      196,
+      166,
+      170,
+      241,
+      228
+    ],
+    "track_ranks": [
+      532566,
+      609015,
+      216711,
+      305763,
+      245069,
+      165941,
+      147714,
+      165570,
+      163419,
+      252048,
+      126158,
+      71801,
+      17894,
+      138086,
+      118213,
+      127559,
+      25171,
+      107432,
+      233719,
+      192517,
+      34598,
+      104205,
+      41252,
+      43830,
+      31218
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 2,
+      "single": 15
+    },
+    "albums": [
+      {
+        "title": "Well Done Concert",
+        "label": "",
+        "release_date": "2025-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "COLDCUTS (Remix)",
+        "label": "",
+        "release_date": "2023-06-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Making Steak",
+        "label": "",
+        "release_date": "2022-09-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "lofi beats (NOT TO) relax/study to",
+        "label": "",
+        "release_date": "2020-08-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tip Toe (Side Dish)",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "WELL DONE",
+        "label": "",
+        "release_date": "2024-02-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Serious",
+        "label": "",
+        "release_date": "2025-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Just Feeling",
+        "label": "",
+        "release_date": "2025-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Blessed",
+        "label": "",
+        "release_date": "2024-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let It Rain",
+        "label": "",
+        "release_date": "2023-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fantasy",
+        "label": "",
+        "release_date": "2023-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tip Toe",
+        "label": "",
+        "release_date": "2023-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rockstar (TELEx TELEXs Remix)",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Care",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RIDE (Billbilly01 Remix)",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "steak",
+        "label": "",
+        "release_date": "2022-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No One",
+        "label": "",
+        "release_date": "2022-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Killer",
+        "label": "",
+        "release_date": "2022-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Go Higher",
+        "label": "",
+        "release_date": "2022-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dancing with my phone",
+        "label": "",
+        "release_date": "2021-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ride",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Keshi",
+      "Wim",
+      "brb.",
+      "wave to earth",
+      "Yung Kai",
+      "Dept",
+      "검정치마",
+      "Bixby",
+      "Adoy",
+      "Takayoshi"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1004892,
+    "name": "Václav Hybš",
+    "profile": "Czech band leader, conductor, arranger, trumpet player. \r\nBorn June 3, 1935 in Police nad Metují (Náchod district, former Czechoslovakia). \r\nMember of [a=Zdeněk Barták Se Svým Orchestrem] 1954, [a=Ladislav Bezubka] Orchestra 1955, [a=Kamil Hála Se Svým Orchestrem] 1958–1959, [a=Czechoslovak Radio Dance Orchestra] / [a=Czechoslovak Radio Jazz Orchestra] 1960–1969. Leader of the [a=Václav Hybš Orchestra] since 1964.",
+    "realname": "",
+    "social_urls": [
+      "http://www.hybsorchestr.cz/",
+      "http://cs.wikipedia.org/wiki/V%C3%A1clav_Hyb%C5%A1"
+    ],
+    "members": [],
+    "groups": [
+      "Czechoslovak Radio Dance Orchestra",
+      "Václav Hybš Orchestra",
+      "Czechoslovak Radio Jazz Orchestra",
+      "Orchestr Karla Krautgartnera",
+      "Kamil Hála Se Svým Orchestrem",
+      "Zdeněk Barták Se Svým Orchestrem",
+      "Smyčcový Orchestr Václav Hybš",
+      "Václav Hybš Se Svými Sólisty",
+      "Sbor Václava Hybše",
+      "Václav Hybš And His Bohemians"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 45,
+    "digital_only_releases": 55,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xLP, Comp",
+      "4xCD, Comp",
+      "7\"",
+      "7\", EP, Mono",
+      "7\", Mono",
+      "CD, Album",
+      "CD, Album, Comp, RE",
+      "CD, Album, RE + CD, Album, RE + Comp",
+      "CD, Comp",
+      "CD, Comp, A5 ",
+      "CD, Comp, Dig",
+      "CD, Comp, Mono",
+      "CD, Comp, RM",
+      "DVD-V, RM, PAL, Reg"
+    ],
+    "labels": [
+      "Areca Multimedia, Areca Multimedia, Areca Multimedia",
+      "Artistic Agency Delfa",
+      "Axel Schindler s.r.o.",
+      "B&M Music",
+      "Bonton",
+      "Bonton, Bonton",
+      "Edit (2)",
+      "FR Producentské Centrum",
+      "FR Producentské Centrum, Supraphon, Český Rozhlas 2 Praha",
+      "Hitton Records",
+      "Indies Happy Trails",
+      "Multisonic",
+      "Multisonic, Multisonic",
+      "Musica (3)",
+      "Sony BMG Music Entertainment, Columbia",
+      "Supraphon",
+      "Tomáš Padevět",
+      "Universal Music Group",
+      "Český Rozhlas"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "HYBS",
+    "mbid": "a8536fc7-5ec2-4921-bb0d-3753fba2a1c5",
+    "listeners": 547947,
+    "playcount": 12402796,
+    "listener_play_ratio": 22.64,
+    "bio_exists": true,
+    "bio_summary": "HYBS (aka James Alyn Wee & Karn Kasidej) is a Bangkok-based duo, formed by two long lost friends who haven’t met each other for 8 years. They shared their love in laidback Pop/R&B tunes filled with special memories on their lives, layering with immaculate sound design in pursuit of their own HYBS’ vibes.\n\nHYBS stands for Have You Been Shrimp. <a href=\"https://www.last.fm/music/HYBS\">Read more on Last.fm</a>",
+    "tags": [
+      "rnb",
+      "synthpop",
+      "thai",
+      "pop",
+      "thailand"
+    ],
+    "similar_artists": [
+      "Luke Chiang",
+      "James Alyn",
+      "Christian Kuria",
+      "slchld",
+      "Hojean"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tip Toe",
+        "listeners": 387917,
+        "playcount": 4810533
+      },
+      {
+        "name": "Ride",
+        "listeners": 270415,
+        "playcount": 2287857
+      },
+      {
+        "name": "Dancing with my phone",
+        "listeners": 207817,
+        "playcount": 1720613
+      },
+      {
+        "name": "Killer",
+        "listeners": 100185,
+        "playcount": 686882
+      },
+      {
+        "name": "Would You Mind",
+        "listeners": 88790,
+        "playcount": 515926
+      },
+      {
+        "name": "Prettiest To Me",
+        "listeners": 72505,
+        "playcount": 487874
+      },
+      {
+        "name": "Go Higher",
+        "listeners": 63119,
+        "playcount": 351427
+      },
+      {
+        "name": "Good Care",
+        "listeners": 53615,
+        "playcount": 326404
+      },
+      {
+        "name": "My Dear",
+        "listeners": 41402,
+        "playcount": 174012
+      },
+      {
+        "name": "Rockstar",
+        "listeners": 35614,
+        "playcount": 201770
+      }
+    ],
+    "url": "https://www.last.fm/music/HYBS"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

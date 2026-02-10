@@ -1,0 +1,188 @@
+{
+  "artist_name": "Cryptozoology",
+  "artist_id": "cryptozoology",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:16:44.818623+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 314518451,
+    "name": "Cryptozoology",
+    "nb_fan": 9,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/314518451",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7389c716631ed45bf4c7636bffcd3622/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Restorative Pads",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zenthura",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Prophecy",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faith Vessel",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6401312,
+    "name": "Cryptozoology 101",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Michael B. Johnson",
+      "Rich Zapf"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CDr, Album",
+      "CDr, EP"
+    ],
+    "labels": [
+      "Not On Label (Cryptozoology 101 Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cryptozoology",
+    "mbid": "",
+    "listeners": 4617,
+    "playcount": 18753,
+    "listener_play_ratio": 4.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cryptozoology\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jupiter Calm",
+      "Ambientelles",
+      "Fhye",
+      "Eomir",
+      "Wander Paths"
+    ],
+    "top_tracks": [
+      {
+        "name": "Zenthura",
+        "listeners": 4391,
+        "playcount": 18197
+      },
+      {
+        "name": "My Perfect Cozy Start in Hardcore Minecraft!",
+        "listeners": 35,
+        "playcount": 39
+      },
+      {
+        "name": "Walls",
+        "listeners": 25,
+        "playcount": 40
+      },
+      {
+        "name": "I Survived 100 Days Building a Cozy UNDERGROUND BASE in Minecraft Hardcore",
+        "listeners": 20,
+        "playcount": 31
+      },
+      {
+        "name": "Minecraft Starter Storage House Tutorial",
+        "listeners": 16,
+        "playcount": 19
+      },
+      {
+        "name": "NATURAL",
+        "listeners": 13,
+        "playcount": 13
+      },
+      {
+        "name": "I Survived 100 Days on an Island in Hardcore Minecraft!",
+        "listeners": 12,
+        "playcount": 17
+      },
+      {
+        "name": "My Perfect Start in Minecraft's COLDEST MOD",
+        "listeners": 10,
+        "playcount": 15
+      },
+      {
+        "name": "Roof",
+        "listeners": 10,
+        "playcount": 14
+      },
+      {
+        "name": "I Built the Perfect Cozy Village in Hardcore Minecraft!",
+        "listeners": 10,
+        "playcount": 11
+      }
+    ],
+    "url": "https://www.last.fm/music/Cryptozoology"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

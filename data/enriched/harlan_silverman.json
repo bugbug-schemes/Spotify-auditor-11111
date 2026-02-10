@@ -1,0 +1,492 @@
+{
+  "artist_name": "Harlan Silverman",
+  "artist_id": "harlan_silverman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:02:12.456677+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b1b74648-2403-4b3d-bfc3-a23db898201f",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/2459293"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4897251,
+    "name": "Harlan Silverman",
+    "nb_fan": 51,
+    "nb_album": 46,
+    "link": "https://www.deezer.com/artist/4897251",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/120ef49a9dcd94af53b35424199e4e3f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Kennedy Verrett",
+      "Roman Norfleet",
+      "The Cosmic Tones Research Trio"
+    ],
+    "contributor_roles": {
+      "The Cosmic Tones Research Trio": [
+        "Main"
+      ],
+      "Roman Norfleet": [
+        "Main"
+      ],
+      "Kennedy Verrett": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Photosynthesis",
+      "Awakenings",
+      "Sankofa",
+      "Invocation",
+      "Spirit of Truth",
+      "Ba Hi Yah",
+      "Eternal Love",
+      "Kalapas",
+      "Willamette Falls",
+      "Twilight",
+      "Black Rest",
+      "Peace Prayer",
+      "Nada Brahma",
+      "Creation",
+      "Pacific Bliss",
+      "A Sleeping Planet",
+      "Annica"
+    ],
+    "track_durations": [
+      190,
+      171,
+      286,
+      219,
+      160,
+      262,
+      257,
+      165,
+      177,
+      223,
+      193,
+      281,
+      240,
+      420,
+      166,
+      148,
+      175
+    ],
+    "track_ranks": [
+      237023,
+      257093,
+      288328,
+      228930,
+      242098,
+      237686,
+      249927,
+      115911,
+      95996,
+      141142,
+      110813,
+      95372,
+      131484,
+      151327,
+      101966,
+      88373,
+      39973
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 11,
+      "ep": 3,
+      "single": 32
+    },
+    "albums": [
+      {
+        "title": "Music for Stillness",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Cosmic Tones Research Trio",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bloom",
+        "label": "",
+        "release_date": "2025-04-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jewel of Twilight",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Notes On Water (Nature Mixes)",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Notes On Water",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Harlan's Selects: Music for Sleep",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Earth Child Vol. 2",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Meditations",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Earth Child",
+        "label": "",
+        "release_date": "2021-06-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Visions",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "All is Sound",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mojave",
+        "label": "",
+        "release_date": "2021-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Moon Landing",
+        "label": "",
+        "release_date": "2019-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shadow in the Trees",
+        "label": "",
+        "release_date": "2026-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entrance to the Sanctuary",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamscape",
+        "label": "",
+        "release_date": "2025-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Sacred Place",
+        "label": "",
+        "release_date": "2025-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stillness is Beautiful",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spirit of Truth",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever Green",
+        "label": "",
+        "release_date": "2025-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sankofa",
+        "label": "",
+        "release_date": "2025-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slo",
+        "label": "",
+        "release_date": "2025-03-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emeralds",
+        "label": "",
+        "release_date": "2025-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nada Brahma",
+        "label": "",
+        "release_date": "2024-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Sleeping Planet",
+        "label": "",
+        "release_date": "2024-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rishikesh",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twilight",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salish",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Willamette Falls",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "BPMoore",
+      "Anne Müller",
+      "Melissa Parmenter",
+      "Francesca Guccione",
+      "Pieter De Graaf",
+      "Kristoffer Wallin",
+      "Ardie Son",
+      "Library Tapes",
+      "Becky Ainge",
+      "Sarah Neufeld"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2459293,
+    "name": "Harlan Silverman",
+    "profile": "Guitarist, multi-instrumentalist, based in Los Angeles, CA",
+    "realname": "Alex Harlan Silverman",
+    "social_urls": [
+      "http://www.harlanmusic.com",
+      "https://twitter.com/harlanLA",
+      "http://www.couldb.com/artists.php",
+      "https://soundcloud.com/harlanla",
+      "http://harlanla.tumblr.com",
+      "https://www.facebook.com/harlanLA"
+    ],
+    "members": [],
+    "groups": [
+      "Tiny Star",
+      "The Cosmic Tones Research Trio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 22,
+    "total_releases": 26,
+    "formats": [
+      "",
+      "4xFile, AAC, EP, 259",
+      "5xFile, FLAC, MP3, EP, 320",
+      "7\", Single",
+      "CD, Album",
+      "CD, EP",
+      "Cass, Album, Ltd, Blu + Cass, Album, Ltd, Ora + Ca",
+      "LP, Advance, Ltd, Mul"
+    ],
+    "labels": [
+      "Albina Music Trust",
+      "Girly Bits Pty Ltd",
+      "Inertia",
+      "Nadine Records",
+      "New West Records",
+      "Not On Label (Story Of The Running Wolf Self-Released)",
+      "Thirty Tigers, Rainwater Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Harlan Silverman",
+    "mbid": "b1b74648-2403-4b3d-bfc3-a23db898201f",
+    "listeners": 66171,
+    "playcount": 305770,
+    "listener_play_ratio": 4.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Harlan+Silverman\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "jazz",
+      "electronic",
+      "piano",
+      "flute"
+    ],
+    "similar_artists": [
+      "Marie Awadis",
+      "Laurie Torres",
+      "Amaranth Cove",
+      "Benjamin Gustafsson",
+      "Luchs"
+    ],
+    "top_tracks": [
+      {
+        "name": "Annica",
+        "listeners": 15636,
+        "playcount": 45095
+      },
+      {
+        "name": "Willamette Falls",
+        "listeners": 13735,
+        "playcount": 45906
+      },
+      {
+        "name": "Pacific Bliss",
+        "listeners": 10904,
+        "playcount": 52179
+      },
+      {
+        "name": "Halcyon",
+        "listeners": 6821,
+        "playcount": 17977
+      },
+      {
+        "name": "Kalapas",
+        "listeners": 5953,
+        "playcount": 20537
+      },
+      {
+        "name": "Peace",
+        "listeners": 5630,
+        "playcount": 25823
+      },
+      {
+        "name": "Ida",
+        "listeners": 5615,
+        "playcount": 19047
+      },
+      {
+        "name": "Sunlight",
+        "listeners": 4456,
+        "playcount": 15519
+      },
+      {
+        "name": "Lucid Cavern",
+        "listeners": 3777,
+        "playcount": 9891
+      },
+      {
+        "name": "Midnight Waves",
+        "listeners": 2864,
+        "playcount": 5912
+      }
+    ],
+    "url": "https://www.last.fm/music/Harlan+Silverman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

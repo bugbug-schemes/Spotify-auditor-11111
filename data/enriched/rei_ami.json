@@ -1,0 +1,457 @@
+{
+  "artist_name": "REI AMI",
+  "artist_id": "rei_ami",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:34:52.372238+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "59adde12-dd9d-40c6-9906-bd4357633915",
+    "type": "Person",
+    "country": "",
+    "area": "Los Angeles",
+    "begin_date": "1995-05-25",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [
+      "Sarah Lee",
+      "Sarah Yeeun Lee"
+    ],
+    "isnis": [],
+    "ipis": [
+      "00804741648"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/7593029",
+      "free streaming": "https://www.deezer.com/artist/67515242",
+      "other databases": "https://rateyourmusic.com/artist/rei-ami",
+      "purchase for download": "https://music.apple.com/us/artist/1468217918",
+      "social network": "https://www.instagram.com/rei.ami/",
+      "streaming": "https://tidal.com/artist/16015899",
+      "wikidata": "https://www.wikidata.org/wiki/Q104842557"
+    },
+    "labels": [
+      "neon gold records",
+      "[no label]",
+      "Bear & Owl",
+      "Visionary Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 67515242,
+    "name": "REI AMI",
+    "nb_fan": 10609,
+    "nb_album": 17,
+    "link": "https://www.deezer.com/artist/67515242",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a2bde1e9857f922615e89b67170a2186/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "AUDREY NUNA",
+      "Amine",
+      "Baby Tate",
+      "David Guetta",
+      "EJAE",
+      "HUNTR/X",
+      "KPop Demon Hunters Cast",
+      "Leyla Blue"
+    ],
+    "contributor_roles": {
+      "HUNTR/X": [
+        "Main"
+      ],
+      "EJAE": [
+        "Main"
+      ],
+      "AUDREY NUNA": [
+        "Main"
+      ],
+      "KPop Demon Hunters Cast": [
+        "Main"
+      ],
+      "David Guetta": [
+        "Main"
+      ],
+      "Amine": [
+        "Featured"
+      ],
+      "Leyla Blue": [
+        "Main"
+      ],
+      "Baby Tate": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Golden",
+      "How It’s Done",
+      "What It Sounds Like",
+      "Takedown",
+      "Golden (David Guetta REM/X)",
+      "Golden (Sing-Along)",
+      "What It Sounds Like (Sing-Along)",
+      "Golden (Glowin' Version)",
+      "Golden (David Guetta REM/X Extended)",
+      "What It Sounds Like (Acapella)",
+      "DICTATOR",
+      "body bag",
+      "Golden (Acapella)",
+      "How It’s Done (Acapella)",
+      "shhh",
+      "REI AMI",
+      "MAKE IT MINE",
+      "RUNAWAY",
+      "How It’s Done (Sing-Along)",
+      "yellow tape",
+      "do it right (feat. Aminé)",
+      "Takedown (Sing-Along)",
+      "Hot One",
+      "RICKY BOBBY",
+      "MAC & CHEESE"
+    ],
+    "track_durations": [
+      192,
+      176,
+      250,
+      182,
+      176,
+      192,
+      250,
+      190,
+      235,
+      250,
+      181,
+      142,
+      192,
+      176,
+      158,
+      156,
+      130,
+      164,
+      175,
+      140,
+      169,
+      182,
+      176,
+      157,
+      135
+    ],
+    "track_ranks": [
+      979012,
+      964919,
+      948365,
+      957695,
+      938885,
+      699962,
+      579174,
+      654181,
+      682539,
+      605698,
+      357891,
+      298211,
+      684329,
+      575053,
+      364421,
+      215098,
+      240533,
+      262671,
+      611617,
+      255732,
+      187239,
+      593193,
+      346270,
+      207480,
+      139137
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 15
+    },
+    "albums": [
+      {
+        "title": "FOIL",
+        "label": "",
+        "release_date": "2021-06-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "shhh",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I SEE RED (feat. REI AMI)",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "yellow tape",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "body bag",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "PLAYTHING",
+        "label": "",
+        "release_date": "2022-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hot One",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RICKY BOBBY",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "F.R.A.",
+        "label": "",
+        "release_date": "2021-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "THAT'S ON YOU!",
+        "label": "",
+        "release_date": "2021-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "do it right (feat. Aminé)",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MAC & CHEESE",
+        "label": "",
+        "release_date": "2020-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bye",
+        "label": "",
+        "release_date": "2020-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RUNAWAY",
+        "label": "",
+        "release_date": "2020-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "DICTATOR",
+        "label": "",
+        "release_date": "2019-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SNOWCONE",
+        "label": "",
+        "release_date": "2019-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MAKE IT MINE",
+        "label": "",
+        "release_date": "2019-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Naomi Jon",
+      "Ashnikko",
+      "Sophie Powers",
+      "bludnymph",
+      "Emei",
+      "Bella Poarch",
+      "Zand",
+      "GALXARA",
+      "Snow Wife",
+      "UPSAHL"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7593029,
+    "name": "REI AMI",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/ReiAmiMami",
+      "https://soundcloud.com/rei_ami",
+      "https://twitter.com/reiamimami",
+      "https://www.instagram.com/rei.ami"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 15,
+    "total_releases": 19,
+    "formats": [
+      "",
+      "4\", Single, Cle",
+      "7\", Single, Ltd, Pur",
+      "7xFile, MP3, VBR",
+      "CD, Album",
+      "CD, Mixtape, Car",
+      "File, AAC, EP",
+      "File, AAC, Single, 256",
+      "File, MP3, VBR"
+    ],
+    "labels": [
+      "AT AREA",
+      "Astralwerks",
+      "JYP Entertainment, Republic Records",
+      "Not On Label (Rei Ami Self-released)",
+      "Republic Records",
+      "Visionary Records (6)",
+      "Warner Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "REI AMI",
+    "mbid": "59adde12-dd9d-40c6-9906-bd4357633915",
+    "listeners": 222206,
+    "playcount": 3622682,
+    "listener_play_ratio": 16.3,
+    "bio_exists": true,
+    "bio_summary": "REI AMI was born in Seoul, South Korea, and moved stateside to Maryland when she was 6 years old. While her family adhered to a fairly strict Christian belief “where any ‘worldly’ music was banned,” she reflects, her upbringing became high-octane fuel. \n\nHer middle school days brought exploration of the so-called world music, from Destiny’s Child and Mariah Carey to Britney Spears, as well as a ton of K-POP. Later, she would seek out the catalogs of Kendrick Lamar <a href=\"https://www.last.fm/mu",
+    "tags": [
+      "pop",
+      "rap",
+      "Lo-Fi",
+      "alternative",
+      "alternative pop"
+    ],
+    "similar_artists": [
+      "Audrey Nuna",
+      "KiNG MALA",
+      "Ashnikko",
+      "UPSAHL",
+      "Baby Tate"
+    ],
+    "top_tracks": [
+      {
+        "name": "DICTATOR",
+        "listeners": 91273,
+        "playcount": 726724
+      },
+      {
+        "name": "SNOWCONE",
+        "listeners": 87457,
+        "playcount": 704026
+      },
+      {
+        "name": "MAKE IT MINE",
+        "listeners": 49166,
+        "playcount": 335858
+      },
+      {
+        "name": "RUNAWAY",
+        "listeners": 40724,
+        "playcount": 277066
+      },
+      {
+        "name": "do it right (feat. Aminé)",
+        "listeners": 32848,
+        "playcount": 256579
+      },
+      {
+        "name": "body bag",
+        "listeners": 21318,
+        "playcount": 153099
+      },
+      {
+        "name": "RICKY BOBBY",
+        "listeners": 21101,
+        "playcount": 175974
+      },
+      {
+        "name": "THAT'S ON YOU!",
+        "listeners": 20906,
+        "playcount": 159440
+      },
+      {
+        "name": "CHERRY CHAPSTICK (feat. Lolo Zouaï)",
+        "listeners": 14514,
+        "playcount": 85723
+      },
+      {
+        "name": "saturn emoji",
+        "listeners": 12654,
+        "playcount": 91390
+      }
+    ],
+    "url": "https://www.last.fm/music/REI+AMI"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

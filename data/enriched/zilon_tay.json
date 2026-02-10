@@ -1,0 +1,204 @@
+{
+  "artist_name": "Zilon Tay",
+  "artist_id": "zilon_tay",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:08:42.668437+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 166635507,
+    "name": "Zilon Tay",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/166635507",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c2170cbce416d6df5933c7b51c6a80cb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 2,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "432 Hz Healing Frequencies for Deep Meditation, Inner Peace, and Spiritual Awakening",
+        "label": "",
+        "release_date": "2025-02-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pure Evolution: Deep Healing & Growth Meditation Music",
+        "label": "",
+        "release_date": "2025-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Midnight Symphony",
+        "label": "",
+        "release_date": "2023-04-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Earthbound",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Healing 741 Hz",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fly High",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grounded",
+        "label": "",
+        "release_date": "2023-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden Beneath",
+        "label": "",
+        "release_date": "2022-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What If",
+        "label": "",
+        "release_date": "2021-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zilon Tay",
+    "mbid": "",
+    "listeners": 9554,
+    "playcount": 39852,
+    "listener_play_ratio": 4.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zilon+Tay\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hans Heeler",
+      "D'Verti",
+      "Floating Portal",
+      "Warm Decay",
+      "Matusi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Grounded",
+        "listeners": 4724,
+        "playcount": 15074
+      },
+      {
+        "name": "Midnight Symphony",
+        "listeners": 3144,
+        "playcount": 12566
+      },
+      {
+        "name": "Hidden Beneath",
+        "listeners": 1850,
+        "playcount": 7400
+      },
+      {
+        "name": "What If",
+        "listeners": 1638,
+        "playcount": 4396
+      },
+      {
+        "name": "Soothing Atmosphere",
+        "listeners": 101,
+        "playcount": 250
+      },
+      {
+        "name": "Flowing Miracles",
+        "listeners": 84,
+        "playcount": 105
+      },
+      {
+        "name": "Mysteries of Scandinavia",
+        "listeners": 26,
+        "playcount": 53
+      },
+      {
+        "name": "Beyond the Horizon",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Fly High",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Pure Serenity",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Zilon+Tay"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

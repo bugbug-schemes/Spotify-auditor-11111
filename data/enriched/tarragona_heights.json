@@ -1,0 +1,128 @@
+{
+  "artist_name": "Tarragona Heights",
+  "artist_id": "tarragona_heights",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:26:05.413649+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 146844312,
+    "name": "Tarragona Heights",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/146844312",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/22e231755fd7fcf7ec26410a6c0b6c1d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Deck The Halls"
+    ],
+    "track_durations": [
+      110
+    ],
+    "track_ranks": [
+      2116
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Carol of the Bells",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deck The Halls",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "1000 Years",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Colder Mornings",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tarragona Heights",
+    "mbid": "",
+    "listeners": 583,
+    "playcount": 1097,
+    "listener_play_ratio": 1.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tarragona+Heights\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Benjamin Kind",
+      "Lewis Knight",
+      "Vaughn Harper",
+      "Patrick Leon",
+      "Paul Van De Vlasakker"
+    ],
+    "top_tracks": [
+      {
+        "name": "Deck The Halls",
+        "listeners": 583,
+        "playcount": 1097
+      }
+    ],
+    "url": "https://www.last.fm/music/Tarragona+Heights"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

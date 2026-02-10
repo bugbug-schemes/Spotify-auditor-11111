@@ -1,0 +1,141 @@
+{
+  "artist_name": "Teodor Seti",
+  "artist_id": "teodor_seti",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:29:21.369061+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 234746951,
+    "name": "Teodor Seti",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/234746951",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/abbbb11c428ef4e4d18ff05865fb1ba3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Santa Claus Is Comin' to Town",
+      "Ding Dong Merrily on High"
+    ],
+    "track_durations": [
+      99,
+      157
+    ],
+    "track_ranks": [
+      7945,
+      10239
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Amazing Grace",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ding Dong Merrily on High",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Santa Claus Is Comin' to Town",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jingle Bells",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Teodor Seti",
+    "mbid": "",
+    "listeners": 10712,
+    "playcount": 37919,
+    "listener_play_ratio": 3.54,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Teodor+Seti\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eternal Hands",
+      "Diego de Galdeano",
+      "Timothy North",
+      "Everlasting Harmony",
+      "Pam Hill"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ding Dong Merrily on High",
+        "listeners": 7842,
+        "playcount": 19860
+      },
+      {
+        "name": "Santa Claus Is Comin' to Town",
+        "listeners": 7241,
+        "playcount": 18056
+      },
+      {
+        "name": "Jingle Bells",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Teodor+Seti"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

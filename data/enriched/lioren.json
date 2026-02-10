@@ -1,0 +1,106 @@
+{
+  "artist_name": "Lioren",
+  "artist_id": "lioren",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:09:27.888809+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lioren', got 'Lauren Daigle'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lioren",
+    "mbid": "",
+    "listeners": 3204,
+    "playcount": 7551,
+    "listener_play_ratio": 2.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lioren\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "warmest depths",
+      "Sebastian Young",
+      "Zale Foster",
+      "Meadow Bryce",
+      "Leonardo Paul"
+    ],
+    "top_tracks": [
+      {
+        "name": "Baby It's Cold Outside",
+        "listeners": 3197,
+        "playcount": 7541
+      },
+      {
+        "name": "De Mañana",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Quedarme así",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Echo Code",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Simulated Heart",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "A breath between worlds",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Witch’s Curse – Jenny Boiled Alive.#film #movie #fyp",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lioren"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

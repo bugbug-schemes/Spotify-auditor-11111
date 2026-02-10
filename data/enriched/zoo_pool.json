@@ -1,0 +1,189 @@
+{
+  "artist_name": "Zoo Pool",
+  "artist_id": "zoo_pool",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:09:15.441628+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 120149282,
+    "name": "Zoo Pool",
+    "nb_fan": 29,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/120149282",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ac226c28711748d31d930326aad4726b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Santa Fe"
+    ],
+    "track_durations": [
+      177
+    ],
+    "track_ranks": [
+      136896
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Summer Always",
+        "label": "",
+        "release_date": "2022-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Sun Time",
+        "label": "",
+        "release_date": "2022-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Birdsong Sunset",
+        "label": "",
+        "release_date": "2022-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sun Dial",
+        "label": "",
+        "release_date": "2021-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Sonica",
+        "label": "",
+        "release_date": "2021-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Santa Fe",
+        "label": "",
+        "release_date": "2021-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15538653,
+    "name": "Acid Zoo Pool",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "10xFile, AAC, Comp, 320"
+    ],
+    "labels": [
+      "BluMesa Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zoo Pool",
+    "mbid": "",
+    "listeners": 10303,
+    "playcount": 36366,
+    "listener_play_ratio": 3.53,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zoo+Pool\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Alinno",
+      "Marcos Berretini",
+      "LØC",
+      "Isla Cruz",
+      "Luca Tong"
+    ],
+    "top_tracks": [
+      {
+        "name": "Santa Fe",
+        "listeners": 9721,
+        "playcount": 33779
+      },
+      {
+        "name": "Birdsong Sunset",
+        "listeners": 560,
+        "playcount": 1235
+      },
+      {
+        "name": "El Sonica",
+        "listeners": 397,
+        "playcount": 818
+      },
+      {
+        "name": "It's Sun Time",
+        "listeners": 187,
+        "playcount": 387
+      },
+      {
+        "name": "Summer Always",
+        "listeners": 87,
+        "playcount": 133
+      },
+      {
+        "name": "Sun Dial",
+        "listeners": 7,
+        "playcount": 8
+      },
+      {
+        "name": "Santa Barbara",
+        "listeners": 5,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Zoo+Pool"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

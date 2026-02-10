@@ -1,0 +1,121 @@
+{
+  "artist_name": "Lunasphere",
+  "artist_id": "lunasphere",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:19:09.102691+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lunasphere', got 'Sheryfa Luna'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lunasphere",
+    "mbid": "",
+    "listeners": 1817,
+    "playcount": 5548,
+    "listener_play_ratio": 3.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lunasphere\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Collective Soundsculptures",
+      "Bit rain",
+      "Dramadoria",
+      "Inner Versum",
+      "Sine Soothers"
+    ],
+    "top_tracks": [
+      {
+        "name": "Omniverse (Alpha Waves)",
+        "listeners": 1808,
+        "playcount": 5480
+      },
+      {
+        "name": "Spacetime (Beta Waves)",
+        "listeners": 11,
+        "playcount": 23
+      },
+      {
+        "name": "Zen Alpha",
+        "listeners": 3,
+        "playcount": 19
+      },
+      {
+        "name": "Visionary.",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Orbit",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Alchemist скачать в mp3 бесплатно",
+        "listeners": 1,
+        "playcount": 15
+      },
+      {
+        "name": "Aurora Borealis",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Voyager",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Lunar Rain (Loopable Delta Waves)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Distant World (Theta Waves)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lunasphere"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,137 @@
+{
+  "artist_name": "M. Rose",
+  "artist_id": "m__rose",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:21:16.206889+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1d2fc761-2256-4fc6-af05-937964a657ad",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6q7w2wZ1Df3yxNziazAXHZ"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'M. Rose', got 'J. Cole'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2698880,
+    "name": "Lawrence M. Rosenthal",
+    "profile": "Executive producer",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 6,
+    "total_releases": 6,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "M. Rose",
+    "mbid": "",
+    "listeners": 1300,
+    "playcount": 5878,
+    "listener_play_ratio": 4.52,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/M.+Rose\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Matthew Kaff",
+      "Logan Connors",
+      "Jonka Ebony",
+      "Taylor Owen",
+      "Hanni Licht"
+    ],
+    "top_tracks": [
+      {
+        "name": "Simple Reverie",
+        "listeners": 810,
+        "playcount": 2511
+      },
+      {
+        "name": "Look Up",
+        "listeners": 676,
+        "playcount": 1955
+      },
+      {
+        "name": "Doors",
+        "listeners": 570,
+        "playcount": 1390
+      },
+      {
+        "name": "We Three Kings",
+        "listeners": 8,
+        "playcount": 11
+      },
+      {
+        "name": "No Corners",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "Boof N' Baff N' Biff (Thievery Corporation Remix)",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "I Dont Love You",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/M.+Rose"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

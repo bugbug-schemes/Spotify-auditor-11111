@@ -1,0 +1,567 @@
+{
+  "artist_name": "Miran",
+  "artist_id": "miran",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:45:43.192604+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7235a07b-6d67-4258-ab61-e74c62b553cc",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/2Nk5XPyODZYGkTpGPQel2Q"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1545788,
+    "name": "Lin-Manuel Miranda",
+    "nb_fan": 70846,
+    "nb_album": 88,
+    "link": "https://www.deezer.com/artist/1545788",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/501fb3a0aca56786f38aaad200636122/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ariana DeBose",
+      "Christopher Jackson",
+      "Daveed Diggs",
+      "Disney",
+      "Ephraim Sykes",
+      "Jasmine Cephas-Jones",
+      "Jon Rua",
+      "Leslie Odom Jr.",
+      "Okieriete Onaodowan",
+      "Opetaia Foa'i",
+      "Original Broadway Cast of Hamilton",
+      "Phillipa Soo",
+      "Renee Elise Goldsberry",
+      "Sasha Hutchings",
+      "Sydney James Harcourt",
+      "Thayne Jasperson"
+    ],
+    "contributor_roles": {
+      "Leslie Odom Jr.": [
+        "Main"
+      ],
+      "Daveed Diggs": [
+        "Main"
+      ],
+      "Okieriete Onaodowan": [
+        "Main"
+      ],
+      "Phillipa Soo": [
+        "Main"
+      ],
+      "Christopher Jackson": [
+        "Main"
+      ],
+      "Original Broadway Cast of Hamilton": [
+        "Main"
+      ],
+      "Thayne Jasperson": [
+        "Main"
+      ],
+      "Renee Elise Goldsberry": [
+        "Main"
+      ],
+      "Opetaia Foa'i": [
+        "Main"
+      ],
+      "Disney": [
+        "Main"
+      ],
+      "Jon Rua": [
+        "Main"
+      ],
+      "Jasmine Cephas-Jones": [
+        "Main"
+      ],
+      "Sydney James Harcourt": [
+        "Main"
+      ],
+      "Ariana DeBose": [
+        "Main"
+      ],
+      "Sasha Hutchings": [
+        "Main"
+      ],
+      "Ephraim Sykes": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Alexander Hamilton",
+      "My Shot",
+      "The Room Where It Happens",
+      "Aaron Burr, Sir",
+      "Right Hand Man",
+      "Farmer Refuted",
+      "The Story of Tonight",
+      "Dear Theodosia",
+      "Non-Stop",
+      "That Would Be Enough",
+      "Your Obedient Servant",
+      "History Has Its Eyes on You",
+      "We Know The Way",
+      "Ten Duel Commandments",
+      "A Winter's Ball",
+      "One Last Time",
+      "Say No to This",
+      "The Story of Tonight (Reprise)",
+      "Meet Me Inside",
+      "The World Was Wide Enough",
+      "Cabinet Battle #1",
+      "Cabinet Battle #2",
+      "Take a Break",
+      "We Know",
+      "Blow Us All Away"
+    ],
+    "track_durations": [
+      236,
+      333,
+      318,
+      156,
+      321,
+      112,
+      91,
+      184,
+      385,
+      178,
+      150,
+      97,
+      141,
+      106,
+      69,
+      296,
+      242,
+      115,
+      83,
+      302,
+      215,
+      142,
+      286,
+      142,
+      173
+    ],
+    "track_ranks": [
+      632108,
+      626702,
+      575595,
+      599669,
+      582747,
+      556187,
+      570466,
+      553531,
+      661400,
+      525991,
+      496030,
+      533988,
+      410239,
+      543777,
+      577215,
+      509396,
+      567361,
+      539981,
+      526433,
+      471356,
+      515405,
+      506373,
+      525354,
+      478822,
+      479338
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 70,
+      "ep": 6,
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Hamilton: 10 Shots (Highlights From The Original Broadway Cast Recording)",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hamildrops: The Complete Collection",
+        "label": "",
+        "release_date": "2025-05-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: Leijonakuningas (Alkuperäinen Suomalainen Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: Der König der Löwen (Deutscher Original Film-Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: Lejonkungen (Svenskt Original Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: Løvernes Konge (Originalt Dansk Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Vietnamese Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: Løvenes konge (Originalt Norsk Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: O Rei Leão (Trilha Sonora Original)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Tamil Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Telugu Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Original Motion Picture Soundtrack/Deluxe Edition)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Hebrew Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: El Rey León (Banda Sonora Original)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Korean Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Mandarin Chinese Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Originele Vlaamse Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: O Rei Leão (The Lion King) (Banda Sonora Original em Português)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: Król Lew (Muzyka z filmu)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Originele Nederlandstalige Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa : Le Roi Lion (Bande Originale Française du Film)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: El Rey León (Banda Sonora Original en Castellano)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: Il Re Leone (Colonna Sonora Originale)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Thai Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Hindi Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Arabic Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Kazakh Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Russian Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mufasa: The Lion King (Japanese Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": [
+      "Six",
+      "Christopher Jackson",
+      "Carrie Hope Fletcher",
+      "Andrew Garfield",
+      "Jonathan Groff",
+      "Jamie Muscato",
+      "Barlow & Bear",
+      "Phillipa Soo",
+      "André De Shields",
+      "Sophia Anne Caruso"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 408286,
+    "name": "Miran Kojian",
+    "profile": "Violinist.",
+    "realname": "",
+    "social_urls": [
+      "https://www.imdb.com/name/nm1321346/"
+    ],
+    "members": [],
+    "groups": [
+      "The Cleveland Orchestra"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 85,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "20xFile, AAC, Album, 256",
+      "2xCD, Album, Dlx, RE, RM, S/Edition",
+      "2xCD, Album, Ltd",
+      "4xCD, Album, Comp, Ltd",
+      "4xCD, Album, Ltd, RM",
+      "CD, Album",
+      "CD, Album, Dlx, Ltd, 20t",
+      "CD, Album, Dlx, RE, RM, S/Edition",
+      "CD, Album, Exp",
+      "CD, Album, Ltd"
+    ],
+    "labels": [
+      "Brody Distribution Group",
+      "Intrada",
+      "La-La Land Records",
+      "La-La Land Records, Universal Music Special Markets",
+      "Music Box Records (2)",
+      "Paramount Music",
+      "Varèse Sarabande"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Miran",
+    "mbid": "a995ed97-7f7c-4881-bbbb-da75a0e89b83",
+    "listeners": 51002,
+    "playcount": 270265,
+    "listener_play_ratio": 5.3,
+    "bio_exists": true,
+    "bio_summary": "Producer, songwriter and guitarist of lebanese post-rock band 'blend' (first album 'act one' released on EMI Arabia). Collaborations include Lebanese folk artist 'Tania Saleh' and Lebanese-Armenian rock artist 'Eileen Khatchadourian'\n <a href=\"https://www.last.fm/music/Miran\">Read more on Last.fm</a>",
+    "tags": [
+      "kazakh pop",
+      "kazakh",
+      "Karakalpak",
+      "Kazakhstan",
+      "turkic"
+    ],
+    "similar_artists": [
+      "Frederico Morales",
+      "Aeyes Libe",
+      "Fernando Alegre",
+      "North Connolly",
+      "Remi Sinclair"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lisser",
+        "listeners": 40900,
+        "playcount": 181927
+      },
+      {
+        "name": "Apricity",
+        "listeners": 18943,
+        "playcount": 70922
+      },
+      {
+        "name": "Clement",
+        "listeners": 2556,
+        "playcount": 7588
+      },
+      {
+        "name": "Hot Boy Summer",
+        "listeners": 877,
+        "playcount": 4012
+      },
+      {
+        "name": "Menak",
+        "listeners": 204,
+        "playcount": 2279
+      },
+      {
+        "name": "HOT BOY SUMMER - REMIX",
+        "listeners": 165,
+        "playcount": 601
+      },
+      {
+        "name": "Wanderer",
+        "listeners": 76,
+        "playcount": 471
+      },
+      {
+        "name": "First Light",
+        "listeners": 54,
+        "playcount": 74
+      },
+      {
+        "name": "Kopf Down",
+        "listeners": 36,
+        "playcount": 141
+      },
+      {
+        "name": "Crossings",
+        "listeners": 28,
+        "playcount": 42
+      }
+    ],
+    "url": "https://www.last.fm/music/Miran"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

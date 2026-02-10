@@ -1,0 +1,103 @@
+{
+  "artist_name": "Eric Nilson",
+  "artist_id": "eric_nilson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:29:23.327557+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Eric Nilson', got 'Ric Wilson'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8035246,
+    "name": "Eric Nilson",
+    "profile": "USA, vocals.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP, Album"
+    ],
+    "labels": [
+      "Proclamation Inc. Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Eric Nilson",
+    "mbid": "",
+    "listeners": 1660,
+    "playcount": 4544,
+    "listener_play_ratio": 2.74,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Eric+Nilson\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jeremiah River",
+      "F. Garling",
+      "David Sereno",
+      "Mateo Morel",
+      "Logan Connors"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fields",
+        "listeners": 1567,
+        "playcount": 4296
+      },
+      {
+        "name": "Windowpane",
+        "listeners": 124,
+        "playcount": 247
+      },
+      {
+        "name": "Polska från norra Jämtland",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Eric+Nilson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,496 @@
+{
+  "artist_name": "G Sounds",
+  "artist_id": "g_sounds",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:45:05.276175+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "abd1471d-2704-43c8-aebc-ef6a4e7893fe",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/65828672",
+      "streaming": "https://tidal.com/artist/15804322"
+    },
+    "labels": [
+      "[no label]",
+      "Acrylic Label"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 65828672,
+    "name": "G Sounds",
+    "nb_fan": 119,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/65828672",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2bda2a270f1a575763a8987dcd7631e8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "champagne",
+      "Pure Imagination (Lofi)",
+      "dozing off",
+      "romance garbage lofi 2",
+      "Guajira",
+      "musical feelings",
+      "coco loco",
+      "bae kajima",
+      "love love love 2",
+      "she is my sunshine",
+      "Point the Star"
+    ],
+    "track_durations": [
+      67,
+      65,
+      86,
+      123,
+      170,
+      112,
+      119,
+      87,
+      107,
+      108,
+      104
+    ],
+    "track_ranks": [
+      360844,
+      214632,
+      61909,
+      170093,
+      17150,
+      53104,
+      39157,
+      30700,
+      32751,
+      21275,
+      50490
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 6,
+      "single": 89
+    },
+    "albums": [
+      {
+        "title": "past feelings",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "life with her",
+        "label": "",
+        "release_date": "2025-02-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "because i love",
+        "label": "",
+        "release_date": "2024-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nostalgic Memories",
+        "label": "",
+        "release_date": "2024-06-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "1987",
+        "label": "",
+        "release_date": "2023-07-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "summer with u",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "recuerdos",
+        "label": "",
+        "release_date": "2025-10-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rj Pasin Samples 3",
+        "label": "",
+        "release_date": "2024-06-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "just wanna stay here forever",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "RJ Pasin Samples 5",
+        "label": "",
+        "release_date": "2023-08-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "autumn",
+        "label": "",
+        "release_date": "2023-05-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "old friends",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "love love love 2",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "amore mio 2",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "summer with u",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "noche de playa",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "she is my sunshine",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "you were everything",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "summer time",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the day we met",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "recuerdos - super slowed",
+        "label": "",
+        "release_date": "2025-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sleepy and tired",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the heaven inside u",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "my heart its yours",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "lovely morning",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "maybe one day",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "past feelings",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "summer!",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "noche de relax",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "alicia",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "core²",
+      "Flawed Mangoes",
+      "elie kombe",
+      "Paulie Leparik",
+      "Fleur de Pays",
+      "PRGMAT",
+      "miserable teens club",
+      "Lure Division",
+      "The World Is Yours",
+      "Odd Sweetheart"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 217403,
+    "name": "DJ Cipha Sounds",
+    "profile": "Bronx native, Cipha Sounds discovered his talent when his stepfather gave him some old turntables. Soon after, Cipha began pursuing his dream of becoming a professional DJ. He studied, and soon landed an internship with the Flip Squad, which opened up doors and launched his career as a first rate DJ. \r\n\r\nCipha went from interning to touring with Lil' Kim for a year and a half, later becoming part of Flex's Pit Bull crew of DJs. Cipha soon found himself playing gigs ranging from parties for the Notorious B.I.G., Jay-Z, Mariah Carey and Jermaine Dupri to Shaquille O'Neal. He's been seen on the small screen, making appearances on MTV Jams and MTV's Spring Break Cruise. Cipha also co-produced Funkmaster Flex's Mix Tape Volume III and currently has a solo project in the works.\r\n",
+    "realname": "Luis Diaz",
+    "social_urls": [
+      "http://www.hot97.com/airstaff/ciphasounds.aspx",
+      "http://www.myspace.com/ciphasounds",
+      "https://en.wikipedia.org/wiki/Cipha_Sounds"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 30,
+    "digital_only_releases": 70,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "12\", Unofficial",
+      "3xCD, Comp, Mixed",
+      "CD, Album",
+      "CD, Album, Mixtape, Promo",
+      "CD, Comp",
+      "CD, Comp, Mixed, Promo, car",
+      "CD, Comp, Promo",
+      "CD, Mixed",
+      "CD, Mixed, Mixtape, Promo + CD, Comp, Enh, Promo",
+      "CD, Mixed, Mixtape, Promo + CD, Comp, Promo",
+      "CD, Mixed, Promo",
+      "CD, Mixtape",
+      "CD-ROM, Comp, MP3",
+      "CDr, Comp, Mixed, Promo",
+      "CDr, EP, Ltd, Num",
+      "CDr, Mixed, Mixtape, Promo",
+      "CDr, Mixed, Unofficial",
+      "CDr, Mixtape, Promo",
+      "CDr, Mixtape, Promo + DVDr",
+      "Cass, Ltd, Mixtape",
+      "Cass, Mixed",
+      "Cass, Mixed, Mixtape",
+      "Cass, P/Mixed",
+      "Cass, Promo",
+      "Cass, Promo, Smplr",
+      "LP, Album, Ltd, Sil",
+      "VHS, Promo"
+    ],
+    "labels": [
+      "Ape Sounds",
+      "BMG Music Canada",
+      "Beat Street Recordings",
+      "Big Dawg Pitbulls",
+      "Big Dawg Pitbulls, Hot 97FM",
+      "Choke No Joke Productions",
+      "Cornerstone Promotion, Cornerstone Promotion",
+      "Cut Entertainment",
+      "Dub Station",
+      "Greensleeves Records",
+      "Hazime Mix Tape",
+      "La Conexion Music Company",
+      "MCA Records",
+      "MasterTapes",
+      "MasterTapes, Big Dawg Pitbulls, Hot 97FM",
+      "Not On Label",
+      "Not On Label (Wynne (2) Self-released)",
+      "Oarfin",
+      "Rap Mag",
+      "Rawkus",
+      "Renaissance",
+      "Rockstar Games, Live N Direct",
+      "Social Klub",
+      "Spiderhole Records",
+      "Star Trak Entertainment",
+      "Tape Kingz",
+      "The Killah Kuts",
+      "Tommy Boy"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "G Sounds",
+    "mbid": "abd1471d-2704-43c8-aebc-ef6a4e7893fe",
+    "listeners": 53919,
+    "playcount": 362770,
+    "listener_play_ratio": 6.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/G+Sounds\">Read more on Last.fm</a>",
+    "tags": [
+      "lofi"
+    ],
+    "similar_artists": [
+      "Hawys",
+      "G Sounds, BrosZZ",
+      "FiGDee",
+      "mellow fox",
+      "Lee"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pure Imagination Lofi",
+        "listeners": 9958,
+        "playcount": 39041
+      },
+      {
+        "name": "lovely morning",
+        "listeners": 9595,
+        "playcount": 24341
+      },
+      {
+        "name": "she is my sunshine",
+        "listeners": 8243,
+        "playcount": 17701
+      },
+      {
+        "name": "Pure Imagination (Lofi)",
+        "listeners": 8191,
+        "playcount": 37797
+      },
+      {
+        "name": "champagne",
+        "listeners": 7402,
+        "playcount": 39922
+      },
+      {
+        "name": "romance garbage lofi",
+        "listeners": 3475,
+        "playcount": 13975
+      },
+      {
+        "name": "romance garbage lofi 2",
+        "listeners": 2834,
+        "playcount": 9872
+      },
+      {
+        "name": "untitled love",
+        "listeners": 2620,
+        "playcount": 4429
+      },
+      {
+        "name": "skyblue",
+        "listeners": 2427,
+        "playcount": 7557
+      },
+      {
+        "name": "bae kajima",
+        "listeners": 2203,
+        "playcount": 10977
+      }
+    ],
+    "url": "https://www.last.fm/music/G+Sounds"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

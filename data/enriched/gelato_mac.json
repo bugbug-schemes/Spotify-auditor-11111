@@ -1,0 +1,178 @@
+{
+  "artist_name": "gelato mac",
+  "artist_id": "gelato_mac",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:18:35.996569+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "83459d4e-9d0e-4434-8c2e-921e3c9aa9a5",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [
+      "Overtone Studios"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 208119647,
+    "name": "gelato mac",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/208119647",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ea6d5be71f25c0683a4076b797becfd6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "lemonade"
+    ],
+    "track_durations": [
+      148
+    ],
+    "track_ranks": [
+      355415
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "lemonade",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "relaxing day",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "bamboo inn",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Breeze",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Purple Lane",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Limonene",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "gelato mac",
+    "mbid": "",
+    "listeners": 2793,
+    "playcount": 5916,
+    "listener_play_ratio": 2.12,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/gelato+mac\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Echo Riviera",
+      "Monte Lux",
+      "Pure Recall",
+      "Coco Siesta",
+      "Soljani"
+    ],
+    "top_tracks": [
+      {
+        "name": "lemonade",
+        "listeners": 1793,
+        "playcount": 3041
+      },
+      {
+        "name": "relaxing day",
+        "listeners": 756,
+        "playcount": 1342
+      },
+      {
+        "name": "New Breeze",
+        "listeners": 738,
+        "playcount": 1525
+      },
+      {
+        "name": "bamboo inn",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Limonene",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/gelato+mac"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

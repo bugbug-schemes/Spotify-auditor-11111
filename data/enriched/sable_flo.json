@@ -1,0 +1,139 @@
+{
+  "artist_name": "Sable Flo",
+  "artist_id": "sable_flo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:51:42.887705+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 340922601,
+    "name": "Sable Flo",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/340922601",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d65a21aeea3fdf9df30f1a3f15becaa9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Himmelaku",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marosso",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Haven Dream",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond Mist",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amble Light",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sable Flo",
+    "mbid": "",
+    "listeners": 4830,
+    "playcount": 13629,
+    "listener_play_ratio": 2.82,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sable+Flo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "sadeus",
+      "Joseph Vidal",
+      "Shizuka Woods",
+      "Lueen",
+      "Kuyenao"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beyond Mist",
+        "listeners": 4830,
+        "playcount": 13626
+      },
+      {
+        "name": "Amble Light",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Haven Dream",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sable+Flo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,180 @@
+{
+  "artist_name": "Edge of Dreams",
+  "artist_id": "edge_of_dreams",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:33:29.513409+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 331013721,
+    "name": "Edge of Dreams",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/331013721",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1ab4b03b758d527c4e27dc644bd5427a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Sleep Among the Stars of Earth",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gravity Bloom",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cycle of Now",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calma",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memora",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3631429,
+    "name": "Bad Dreams",
+    "profile": "This very few Latin American classic and progressive rock group from Argentina, formed 1990 in Buenos Aires, started their career performing mainly music of [a=Genesis] for a period of more than 10 years. After playing all over Latin America, they became well known enough, that they released own band material on now four studio albums as well as Live From The Edge since 2015. Bad Dreams performed on the Cruise To The Edge Festival in 2015, 2017 and 2018 as well as were opening act for concerts of [a=Marillion] and the of former Genesis band member [a=Steve Hackett]. Vocalist and songwriter [a=Gabriel Agudo] left the band at the end of 2017 and started 2019 his solo career with an album release (2020). Furthermore with gigs also at Cruise To The Edge and also at the [l=Night Of The Prog Festival]. (01-2020)",
+    "realname": "",
+    "social_urls": [
+      "http://www.baddreamsband.com/",
+      "https://www.Deezer.com/fi/artist/4130553 ",
+      "https://www.facebook.com/BadDreamsBandOfficial/",
+      "https://www.ProgArchives.com/artist.asp?id=10050",
+      "https://www.Proggnosis.com/Artist/13563",
+      "https://open.Spotify.com/artist/6zTMowPyqslSxGpDlX1jF6",
+      "https://twitter.com/baddreams_band",
+      "https://www.youtube.com/channel/UCMLeDE6hW4GuUxZUnzuzpaw ",
+      "https://www.youtube.com/channel/UCaDzZnoNsFePSgC_bAExzyg"
+    ],
+    "members": [
+      "Gabriel Agudo"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 3,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "CD, Album",
+      "DVD, Album + Blu-ray, Album"
+    ],
+    "labels": [
+      "Not On Label (Bad Dreams Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Edge Of Dreams",
+    "mbid": "",
+    "listeners": 25903,
+    "playcount": 116029,
+    "listener_play_ratio": 4.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Edge+Of+Dreams\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Leo Lindholm",
+      "Noyadest",
+      "Mariam Ember",
+      "Eirwyn North",
+      "Sleep Envoy"
+    ],
+    "top_tracks": [
+      {
+        "name": "Memora",
+        "listeners": 21586,
+        "playcount": 94479
+      },
+      {
+        "name": "Cycle of Now",
+        "listeners": 4440,
+        "playcount": 19559
+      },
+      {
+        "name": "Sleep Among the Stars of Earth",
+        "listeners": 962,
+        "playcount": 1980
+      },
+      {
+        "name": "Calma",
+        "listeners": 2,
+        "playcount": 6
+      },
+      {
+        "name": "Gravity Bloom",
+        "listeners": 1,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Edge+Of+Dreams"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

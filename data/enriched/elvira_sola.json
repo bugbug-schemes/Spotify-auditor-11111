@@ -1,0 +1,157 @@
+{
+  "artist_name": "Elvira Sola",
+  "artist_id": "elvira_sola",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:26:32.538180+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "57c32602-937c-4ea7-be58-85e1a4532114",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/172598327"
+    },
+    "labels": [
+      "[no label]",
+      "Firefly Entertainment AB"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Elvira Sola', got 'Elvira Voca'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12552053,
+    "name": "Elvira Del Solar",
+    "profile": "Argentinian tango singer, probably an alias of [a7114671] from her role in \"The Lights of Buenos Aires\"",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP, Comp"
+    ],
+    "labels": [
+      "Recuerdos"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elvira Sola",
+    "mbid": "57c32602-937c-4ea7-be58-85e1a4532114",
+    "listeners": 10333,
+    "playcount": 157130,
+    "listener_play_ratio": 15.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elvira+Sola\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rosalie Andersdotter",
+      "Jim Fauer",
+      "Ken Silverstar",
+      "John Felipe",
+      "The Stories We Tell"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleepy Eyes",
+        "listeners": 4408,
+        "playcount": 45513
+      },
+      {
+        "name": "Bedtime",
+        "listeners": 2502,
+        "playcount": 20680
+      },
+      {
+        "name": "Tiny Dreams",
+        "listeners": 2109,
+        "playcount": 19828
+      },
+      {
+        "name": "Good Night",
+        "listeners": 1986,
+        "playcount": 16087
+      },
+      {
+        "name": "You And Me",
+        "listeners": 1978,
+        "playcount": 19678
+      },
+      {
+        "name": "Dreams",
+        "listeners": 1389,
+        "playcount": 13877
+      },
+      {
+        "name": "Dream about lovely things",
+        "listeners": 1269,
+        "playcount": 12401
+      },
+      {
+        "name": "Slumber",
+        "listeners": 986,
+        "playcount": 6590
+      },
+      {
+        "name": "My Little Star",
+        "listeners": 276,
+        "playcount": 559
+      },
+      {
+        "name": "My Best Friend",
+        "listeners": 245,
+        "playcount": 520
+      }
+    ],
+    "url": "https://www.last.fm/music/Elvira+Sola"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

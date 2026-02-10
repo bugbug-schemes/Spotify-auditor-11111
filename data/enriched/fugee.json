@@ -1,0 +1,379 @@
+{
+  "artist_name": "Fugee",
+  "artist_id": "fugee",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:44:22.740996+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1d353c51-db57-4a24-bb97-cf5d4be9053a",
+    "type": "Person",
+    "country": "IL",
+    "area": "Israel",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "chillwave",
+      "instrumental hip hop",
+      "downtempo",
+      "boom bap",
+      "instrumental",
+      "hip hop",
+      "lo-fi",
+      "lo-fi hip hop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/6185500",
+      "free streaming": "https://www.deezer.com/artist/114426532",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/fugee/8224999",
+      "social network": "https://www.instagram.com/fugee_lofi/",
+      "soundcloud": "https://soundcloud.com/fugee-scmusic",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/fugee/8224999",
+      "youtube": "https://www.youtube.com/channel/UClx4uSCeKxItkFABqqVntVA",
+      "youtube music": "https://music.youtube.com/channel/UCYq4_a8EfPI7u1ovM6w1GzQ"
+    },
+    "labels": [
+      "Skyhop Records",
+      "Dreamhop Music",
+      "Fugeekura",
+      "Disruptive LoFi",
+      "The Jazz Hop Café",
+      "Globetrotting Music",
+      "Lofi Records",
+      "Chilled Cat Music",
+      "Etymology Records",
+      "Lofi Chill Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 629,
+    "name": "Fugees",
+    "nb_fan": 433769,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/629",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c18eeb8e8c65f43af90941506e91b678/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Diamond D",
+      "Dirty Harry",
+      "Jerry \"Te Bass\" Duplessis",
+      "John Forte",
+      "Lapreem",
+      "Omega",
+      "Outsidaz",
+      "Salaam Remi",
+      "Warren Riker"
+    ],
+    "contributor_roles": {
+      "Outsidaz": [
+        "Featured"
+      ],
+      "John Forte": [
+        "Featured"
+      ],
+      "Omega": [
+        "Featured"
+      ],
+      "Diamond D": [
+        "Featured"
+      ],
+      "Salaam Remi": [
+        "Featured"
+      ],
+      "Lapreem": [
+        "Featured"
+      ],
+      "Dirty Harry": [
+        "Featured"
+      ],
+      "Jerry \"Te Bass\" Duplessis": [
+        "Featured"
+      ],
+      "Warren Riker": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Killing Me Softly With His Song",
+      "Ready or Not",
+      "Killing Me Softly With His Song",
+      "Fu-Gee-La",
+      "No Woman, No Cry",
+      "How Many Mics",
+      "Fu-Gee-La",
+      "Zealots",
+      "Cowboys (feat. Outsidaz)",
+      "Family Business (feat. John Forté & Omega)",
+      "The Score (feat. Diamond D)",
+      "The Beast (includes Chinese restaurant skit)",
+      "The Mask",
+      "Fu-Gee-La (Sly & Robbie Mix)",
+      "Nappy Heads (Remix)",
+      "Fu-Gee-La (feat. John Forté) (Refugee Camp Remix)",
+      "Red Intro",
+      "No Woman, No Cry (L.P. Version)",
+      "How Many Mics",
+      "Mista Mista",
+      "No Woman, No Cry (Remix w/Steve Marley)",
+      "Vocab (Refugees Hip Hop Remix)",
+      "Fu-Gee-La (feat. John Forté) (Refugee Camp Global Mix)",
+      "Take It Easy (Radio Edit)",
+      "Manifest/Outro"
+    ],
+    "track_durations": [
+      290,
+      227,
+      290,
+      257,
+      273,
+      268,
+      257,
+      260,
+      323,
+      343,
+      302,
+      337,
+      290,
+      327,
+      321,
+      262,
+      111,
+      259,
+      268,
+      162,
+      327,
+      247,
+      260,
+      259,
+      359
+    ],
+    "track_ranks": [
+      753325,
+      674865,
+      493367,
+      699794,
+      562111,
+      567077,
+      272986,
+      521666,
+      409320,
+      522639,
+      483310,
+      459031,
+      472883,
+      373997,
+      405618,
+      415586,
+      439982,
+      189602,
+      79107,
+      351038,
+      297365,
+      171068,
+      448381,
+      227132,
+      413789
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 5,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Playlist: The Very Best of Fugees",
+        "label": "",
+        "release_date": "2012-05-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Greatest Hits",
+        "label": "",
+        "release_date": "2003-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Score (Expanded Edition)",
+        "label": "",
+        "release_date": "1996-02-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Score",
+        "label": "",
+        "release_date": "1996-04-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Blunted On Reality",
+        "label": "",
+        "release_date": "1994-02-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Take It Easy",
+        "label": "",
+        "release_date": "2005-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "The Roots",
+      "Jurassic 5",
+      "Cypress Hill",
+      "Wu-Tang Clan",
+      "Naughty by Nature",
+      "The Beatnuts",
+      "Delinquent Habits",
+      "Talib Kweli",
+      "Common",
+      "Mos Def"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6185500,
+    "name": "Fugee",
+    "profile": "Hip Hop / Reggae / Latin / Reggaeton artist",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 1,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "CD, Album, Comp",
+      "CD, Album, Mixed",
+      "LP, Comp, Ltd, Num, Tra"
+    ],
+    "labels": [
+      "Lofi Records (4)",
+      "U Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Fugees",
+    "mbid": "ea321799-9b1d-4e74-a074-a5facf597d82",
+    "listeners": 2183743,
+    "playcount": 26214779,
+    "listener_play_ratio": 12.0,
+    "bio_exists": true,
+    "bio_summary": "The Fugees are an American hip hop trio formed in 1990 in South Orange, New Jersey. Deriving its name from a shortening of the word \"refugees\", the group consists of Wyclef Jean, Pras Michel, and Lauryn Hill. The group rose to prominence in the mid-1990s for their pioneering blend of reggae, R&B, funk and hip hop, which eschewed gangsta rap and made them one of the most significant alternative hip hop acts. They occasionally rapped in Haitian Creole <a href=\"https://www.last.fm/music/Fugees\">Rea",
+    "tags": [
+      "Hip-Hop",
+      "rap",
+      "soul",
+      "rnb",
+      "hip hop"
+    ],
+    "similar_artists": [
+      "Lauryn Hill",
+      "Wyclef Jean",
+      "The Roots",
+      "OutKast",
+      "Ms. Lauryn Hill"
+    ],
+    "top_tracks": [
+      {
+        "name": "Killing Me Softly with His Song",
+        "listeners": 1175332,
+        "playcount": 8214496
+      },
+      {
+        "name": "Ready or Not",
+        "listeners": 845791,
+        "playcount": 4385887
+      },
+      {
+        "name": "Fu-Gee-La",
+        "listeners": 540640,
+        "playcount": 2698749
+      },
+      {
+        "name": "No Woman, No Cry",
+        "listeners": 297379,
+        "playcount": 1050111
+      },
+      {
+        "name": "Zealots",
+        "listeners": 273949,
+        "playcount": 1114303
+      },
+      {
+        "name": "Killing Me Softly",
+        "listeners": 270036,
+        "playcount": 1106372
+      },
+      {
+        "name": "How Many Mics",
+        "listeners": 261676,
+        "playcount": 931600
+      },
+      {
+        "name": "The Mask",
+        "listeners": 151840,
+        "playcount": 473370
+      },
+      {
+        "name": "Red Intro",
+        "listeners": 151746,
+        "playcount": 365471
+      },
+      {
+        "name": "The Score",
+        "listeners": 130028,
+        "playcount": 377041
+      }
+    ],
+    "url": "https://www.last.fm/music/Fugees"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,422 @@
+{
+  "artist_name": "lorleaf",
+  "artist_id": "lorleaf",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:22:27.064850+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "edbee7e7-6c44-4a3c-922a-00344e5a1121",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "instrumental hip hop",
+      "lo-fi",
+      "instrumental",
+      "hip hop",
+      "chillwave",
+      "lo-fi hip hop",
+      "boom bap",
+      "downtempo"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/139196902",
+      "purchase for download": "https://music.apple.com/us/artist/1576553510",
+      "social network": "https://www.instagram.com/lorleafmusic/",
+      "streaming": "https://tidal.com/artist/27023882",
+      "youtube music": "https://music.youtube.com/channel/UCzcPDpFKnDmR8oWYXmwrmTQ"
+    },
+    "labels": [
+      "okwow",
+      "Golden Ticket",
+      "The Theory Behind"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 139196902,
+    "name": "lorleaf",
+    "nb_fan": 26,
+    "nb_album": 85,
+    "link": "https://www.deezer.com/artist/139196902",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4d3c79b72a73cc4c8f309e2376830d88/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "KOMOREBI",
+      "Myríad"
+    ],
+    "contributor_roles": {
+      "Myríad": [
+        "Main"
+      ],
+      "KOMOREBI": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Cruisin'",
+      "Preti",
+      "Shibui",
+      "Tenkodo",
+      "Perseide",
+      "Isular",
+      "Millia",
+      "Apoi"
+    ],
+    "track_durations": [
+      126,
+      145,
+      132,
+      157,
+      133,
+      92,
+      140,
+      118
+    ],
+    "track_ranks": [
+      126618,
+      52788,
+      67103,
+      22362,
+      36769,
+      25051,
+      62119,
+      20900
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 83
+    },
+    "albums": [
+      {
+        "title": "Rhythmic Relaxation",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mellow Moments",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "vabani",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "tirana",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "kiko",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dhermi",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Colona",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ursalun",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Singa",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jánaa",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloé",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astro",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salome",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volta",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sotho",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mocuba",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lunar",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kanáan",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carnot",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boende",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Belvedere",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Accra",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zuni",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Umbria",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cumulus",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ciudad",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Albaizyn",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sueca",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kyabe",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Isular",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "lorleaf",
+    "mbid": "edbee7e7-6c44-4a3c-922a-00344e5a1121",
+    "listeners": 131165,
+    "playcount": 638279,
+    "listener_play_ratio": 4.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/lorleaf\">Read more on Last.fm</a>",
+    "tags": [
+      "lofi"
+    ],
+    "similar_artists": [
+      "Vincent Rayn",
+      "nearly monday",
+      "Fya Playce",
+      "yellofish",
+      "Duos On Mars"
+    ],
+    "top_tracks": [
+      {
+        "name": "Isular",
+        "listeners": 35396,
+        "playcount": 92293
+      },
+      {
+        "name": "Kanáan",
+        "listeners": 20335,
+        "playcount": 53076
+      },
+      {
+        "name": "Accra",
+        "listeners": 15581,
+        "playcount": 40152
+      },
+      {
+        "name": "Sueca",
+        "listeners": 14732,
+        "playcount": 28388
+      },
+      {
+        "name": "Banjul",
+        "listeners": 14069,
+        "playcount": 29284
+      },
+      {
+        "name": "Cambrai",
+        "listeners": 11806,
+        "playcount": 26527
+      },
+      {
+        "name": "Perseide",
+        "listeners": 10766,
+        "playcount": 25407
+      },
+      {
+        "name": "Tenkodo",
+        "listeners": 10433,
+        "playcount": 25513
+      },
+      {
+        "name": "Bali",
+        "listeners": 10116,
+        "playcount": 25682
+      },
+      {
+        "name": "Tarkwa",
+        "listeners": 9739,
+        "playcount": 18162
+      }
+    ],
+    "url": "https://www.last.fm/music/lorleaf"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,587 @@
+{
+  "artist_name": "Lenny Loops",
+  "artist_id": "lenny_loops",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:01:48.077959+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "416476ef-ca15-45da-8933-3baf6d442c14",
+    "type": "Person",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi hip hop",
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi",
+      "instrumental",
+      "downtempo",
+      "boom bap"
+    ],
+    "aliases": [
+      "Lorenzo Trombetta"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/10068724",
+      "free streaming": "https://www.deezer.com/artist/85080202",
+      "purchase for download": "https://www.traxsource.com/artist/603803",
+      "social network": "https://www.instagram.com/lennyloops/",
+      "soundcloud": "https://soundcloud.com/lennyloops",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/lenny-loops/8996690",
+      "youtube music": "https://music.youtube.com/channel/UCO7JRqoJIYlp4eXHakpvocg"
+    },
+    "labels": [
+      "LoFi Café Records",
+      "Music That Moves",
+      "Fortune Cookie Records",
+      "Salad Days",
+      "purity label",
+      "Lofi Records",
+      "Sleep Tales",
+      "ChilledCow Records",
+      "CLOVR Records",
+      "[no label]",
+      "Chillhop Music",
+      "Etymology Records",
+      "Lofi Chill Records",
+      "Lofi Jazz Records",
+      "Aviary Bridge Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 85080202,
+    "name": "Lenny Loops",
+    "nb_fan": 170,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/85080202",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/03c2da20c966ed0f39f918e612ff4071/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Gerardo Millán",
+      "Hoffy Beats",
+      "Hoogway",
+      "Max Power",
+      "Nowun",
+      "Peak Twilight",
+      "Ricardo Schneider",
+      "Softy",
+      "SwuM",
+      "Two Scents",
+      "after noon",
+      "alto",
+      "another silent weekend",
+      "stream_error"
+    ],
+    "contributor_roles": {
+      "Nowun": [
+        "Main"
+      ],
+      "Hoffy Beats": [
+        "Main"
+      ],
+      "after noon": [
+        "Main"
+      ],
+      "another silent weekend": [
+        "Main"
+      ],
+      "SwuM": [
+        "Main"
+      ],
+      "Softy": [
+        "Main"
+      ],
+      "alto": [
+        "Main"
+      ],
+      "Two Scents": [
+        "Main"
+      ],
+      "Gerardo Millán": [
+        "Featured"
+      ],
+      "Max Power": [
+        "Main"
+      ],
+      "stream_error": [
+        "Main"
+      ],
+      "Hoogway": [
+        "Featured"
+      ],
+      "Peak Twilight": [
+        "Main"
+      ],
+      "Ricardo Schneider": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Days Past",
+      "Reassuring Skies",
+      "Finding Solace",
+      "Cycles",
+      "Tunnels",
+      "Discovering The Edge",
+      "Wandering",
+      "world of balance",
+      "Oceans at Midnight",
+      "Event Horizon",
+      "Places",
+      "Lights In The Deepest Blue",
+      "For The Fallen",
+      "Mercury",
+      "Remembrance",
+      "Bisous",
+      "Cradled by the Sea",
+      "Before Sunrise",
+      "Dreamsailer",
+      "Warm Breeze",
+      "Elysia",
+      "Secret Departure",
+      "Daydreaming",
+      "Caring",
+      "The Ocean"
+    ],
+    "track_durations": [
+      168,
+      144,
+      155,
+      143,
+      130,
+      121,
+      120,
+      105,
+      132,
+      155,
+      144,
+      123,
+      158,
+      150,
+      135,
+      118,
+      156,
+      132,
+      119,
+      129,
+      193,
+      132,
+      146,
+      142,
+      144
+    ],
+    "track_ranks": [
+      431901,
+      460369,
+      306227,
+      405392,
+      246240,
+      326546,
+      254205,
+      134013,
+      142828,
+      196279,
+      203633,
+      241626,
+      303536,
+      305650,
+      286280,
+      143552,
+      71775,
+      85022,
+      142408,
+      86891,
+      317622,
+      208964,
+      94563,
+      182334,
+      247595
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 8,
+      "ep": 11,
+      "single": 81
+    },
+    "albums": [
+      {
+        "title": "Doodles in the Wild",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Ocean",
+        "label": "",
+        "release_date": "2023-11-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Melodies from Earth",
+        "label": "",
+        "release_date": "2023-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moments to remember",
+        "label": "",
+        "release_date": "2023-06-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Noctilucent",
+        "label": "",
+        "release_date": "2023-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Smiley Cloud",
+        "label": "",
+        "release_date": "2023-01-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Horizons",
+        "label": "",
+        "release_date": "2022-03-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cloud Paths",
+        "label": "",
+        "release_date": "2021-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "your own sweet way",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "gentle moon",
+        "label": "",
+        "release_date": "2026-01-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Timelapse",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "quiet moon",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Aquarius",
+        "label": "",
+        "release_date": "2024-07-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Everlasting",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dreamscapes",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Places",
+        "label": "",
+        "release_date": "2022-12-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Still Dreaming",
+        "label": "",
+        "release_date": "2021-10-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Windrose",
+        "label": "",
+        "release_date": "2020-11-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Realization",
+        "label": "",
+        "release_date": "2020-06-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "after yesterday",
+        "label": "",
+        "release_date": "2026-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "first hours of the morning",
+        "label": "",
+        "release_date": "2026-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the clouds are fading",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the middle",
+        "label": "",
+        "release_date": "2026-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "in our dreams",
+        "label": "",
+        "release_date": "2026-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unfold",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "make a wish",
+        "label": "",
+        "release_date": "2025-12-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "fleeting moments",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "when the sky gets quiet",
+        "label": "",
+        "release_date": "2025-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "aperture",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "autumn memory",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Mujo",
+      "Casiio",
+      "Hoogway",
+      "NO SPIRIT",
+      "Softy",
+      "Laffey",
+      "Dontcry",
+      "Dimension 32",
+      "S N U G",
+      "Oatmello"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10068724,
+    "name": "Lenny Loops",
+    "profile": "Producer of instrumental hip-hop, chillhop, and lo-fi music from Italy.",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/lennyloops/?hl=de",
+      "https://soundcloud.com/lennyloops"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 7,
+    "total_releases": 15,
+    "formats": [
+      "",
+      "10xLP, Comp + Box, Ltd, Num",
+      "10xLP, Comp, Ltd, Box",
+      "10xLP, Comp, Num + Box, Ltd, Num",
+      "12xFile, FLAC, Comp",
+      "2xLP, Comp, Ltd, Cre",
+      "2xLP, Comp, Ltd, Dar",
+      "32xFile, FLAC, Comp",
+      "3x12\", Comp, Ltd, Bla",
+      "4xFile, FLAC, EP, 24b",
+      "5xFile, FLAC, EP",
+      "LP",
+      "LP, Album, Ltd, Num, Mar"
+    ],
+    "labels": [
+      "Chillhop Music",
+      "Dreamhop Music",
+      "Lofi Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lenny Loops",
+    "mbid": "416476ef-ca15-45da-8933-3baf6d442c14",
+    "listeners": 257280,
+    "playcount": 2335132,
+    "listener_play_ratio": 9.08,
+    "bio_exists": true,
+    "bio_summary": "Lo-Fi Hip Hop producer from Italy. <a href=\"https://www.last.fm/music/Lenny+Loops\">Read more on Last.fm</a>",
+    "tags": [
+      "instrumental",
+      "electronic",
+      "italian",
+      "chill",
+      "Lo-Fi"
+    ],
+    "similar_artists": [
+      "Krynoze",
+      "Tibeauthetraveler",
+      "Loafy Building",
+      "Dimension 32",
+      "Softy"
+    ],
+    "top_tracks": [
+      {
+        "name": "Reassuring Skies",
+        "listeners": 60482,
+        "playcount": 149988
+      },
+      {
+        "name": "Days Past",
+        "listeners": 39582,
+        "playcount": 92384
+      },
+      {
+        "name": "Noctilucent",
+        "listeners": 35185,
+        "playcount": 80680
+      },
+      {
+        "name": "Cycles",
+        "listeners": 25054,
+        "playcount": 51362
+      },
+      {
+        "name": "I Saw Stars",
+        "listeners": 23608,
+        "playcount": 94851
+      },
+      {
+        "name": "at the blue hour",
+        "listeners": 21303,
+        "playcount": 81070
+      },
+      {
+        "name": "A Thousand Years Behind My Eyes",
+        "listeners": 20951,
+        "playcount": 88115
+      },
+      {
+        "name": "Caring",
+        "listeners": 19861,
+        "playcount": 63153
+      },
+      {
+        "name": "Everything We Were",
+        "listeners": 18954,
+        "playcount": 43926
+      },
+      {
+        "name": "Illusions We Shared",
+        "listeners": 18519,
+        "playcount": 43146
+      }
+    ],
+    "url": "https://www.last.fm/music/Lenny+Loops"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

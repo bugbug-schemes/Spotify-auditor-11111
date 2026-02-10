@@ -1,0 +1,81 @@
+{
+  "artist_name": "Sleepy Olof",
+  "artist_id": "sleepy_olof",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:06:31.870674+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sleepy Olof', got 'Sleepy Lofi'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sleepy Olof",
+    "mbid": "",
+    "listeners": 407,
+    "playcount": 4976,
+    "listener_play_ratio": 12.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sleepy+Olof\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sigrid Gunnarsson",
+      "Oscar Stormborn",
+      "Guille Subiré",
+      "Julie Isabey",
+      "Cael Everly"
+    ],
+    "top_tracks": [
+      {
+        "name": "My Flower",
+        "listeners": 405,
+        "playcount": 4974
+      },
+      {
+        "name": "Jolene´s Lullaby",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Sleepy+Olof"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

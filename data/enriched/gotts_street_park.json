@@ -1,0 +1,497 @@
+{
+  "artist_name": "Gotts Street Park",
+  "artist_id": "gotts_street_park",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:55:52.886261+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "0c91c655-444e-4ae7-a0a0-9e9cb160301c",
+    "type": "Group",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003613945",
+      "discogs": "https://www.discogs.com/artist/6083924",
+      "free streaming": "https://www.deezer.com/artist/12268180",
+      "last.fm": "https://www.last.fm/music/Gotts+Street+Park",
+      "purchase for download": "https://itunes.apple.com/tr/artist/id1224458689",
+      "social network": "https://www.instagram.com/gottsstreetpark/",
+      "soundcloud": "https://soundcloud.com/gottsstreetpark",
+      "streaming": "https://tidal.com/artist/8736865"
+    },
+    "labels": [
+      "Blue Flowers Music",
+      "Polydor",
+      "Blue Flowers Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12268180,
+    "name": "Gotts Street Park",
+    "nb_fan": 4291,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/12268180",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fbac351fb95e26eeb647923eec4bf0a0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Celeste",
+      "DiElle",
+      "ENNY",
+      "Flikka",
+      "Grand Pax",
+      "Olive Jones",
+      "Pip Millett",
+      "Rosie Lowe",
+      "Zilo",
+      "parthenope"
+    ],
+    "contributor_roles": {
+      "Olive Jones": [
+        "Main"
+      ],
+      "Celeste": [
+        "Main"
+      ],
+      "Pip Millett": [
+        "Main",
+        "Featured"
+      ],
+      "ENNY": [
+        "Main"
+      ],
+      "Flikka": [
+        "Main"
+      ],
+      "Rosie Lowe": [
+        "Main"
+      ],
+      "parthenope": [
+        "Main"
+      ],
+      "DiElle": [
+        "Featured"
+      ],
+      "Grand Pax": [
+        "Featured"
+      ],
+      "Zilo": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Tell Me Why",
+      "Both Sides Of The Moon",
+      "Lately",
+      "Fool For Love",
+      "Got To Be Good",
+      "Lately",
+      "Mountains",
+      "Fuego",
+      "Strawberry Dream",
+      "Favourite Kind Of Girl",
+      "Summer Breeze",
+      "Portofino",
+      "Shiloh",
+      "Purple",
+      "Are You Still A Friend?",
+      "Walk Away",
+      "Love in Bad Company",
+      "Everything",
+      "Change My Ways",
+      "Control",
+      "Sugar",
+      "Sleep",
+      "Bad",
+      "Ivory",
+      "Ozu"
+    ],
+    "track_durations": [
+      231,
+      253,
+      251,
+      216,
+      159,
+      252,
+      157,
+      202,
+      244,
+      277,
+      223,
+      153,
+      159,
+      131,
+      190,
+      219,
+      270,
+      215,
+      229,
+      179,
+      159,
+      127,
+      211,
+      134,
+      221
+    ],
+    "track_ranks": [
+      415475,
+      578788,
+      510160,
+      312566,
+      538950,
+      612541,
+      293607,
+      352955,
+      349052,
+      418635,
+      308129,
+      420831,
+      323478,
+      288102,
+      343244,
+      243921,
+      98936,
+      318800,
+      324717,
+      276473,
+      273233,
+      38550,
+      111898,
+      154773,
+      110367
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 3,
+      "ep": 3,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "On The Inside",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Volume Two",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Volume One",
+        "label": "",
+        "release_date": "2017-08-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tell Me Why",
+        "label": "",
+        "release_date": "2023-10-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Diego E.P.",
+        "label": "",
+        "release_date": "2021-09-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ivory",
+        "label": "",
+        "release_date": "2020-11-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mountains",
+        "label": "",
+        "release_date": "2023-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fuego",
+        "label": "",
+        "release_date": "2023-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Got To Be Good",
+        "label": "",
+        "release_date": "2023-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Breeze",
+        "label": "",
+        "release_date": "2022-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost & Found",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Diego",
+        "label": "",
+        "release_date": "2021-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Change My Ways",
+        "label": "",
+        "release_date": "2020-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everything",
+        "label": "",
+        "release_date": "2020-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At Times",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Favourite Kind Of Girl",
+        "label": "",
+        "release_date": "2020-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where You Going",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bad",
+        "label": "",
+        "release_date": "2019-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Both Sides Of The Moon",
+        "label": "",
+        "release_date": "2018-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Control",
+        "label": "",
+        "release_date": "2017-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love in Bad Company",
+        "label": "",
+        "release_date": "2017-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleep",
+        "label": "",
+        "release_date": "2017-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This World",
+        "label": "",
+        "release_date": "2017-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Joesef",
+      "Badbadnotgood",
+      "Jordan Rakei",
+      "Aaron Taylor",
+      "Sault",
+      "Tom Misch",
+      "St. Panther",
+      "Yazmin Lacey",
+      "Hiatus Kaiyote",
+      "Baby Rose"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6083924,
+    "name": "Gotts Street Park",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Josh Crocker",
+      "Joe Harris (27)",
+      "Tom Henry (11)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 6,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "100xFile, MP3, Comp, 320",
+      "12\", EP",
+      "2xCD, Comp",
+      "Cass, Album",
+      "LP"
+    ],
+    "labels": [
+      "Bleep (2)",
+      "Blue Flowers Music",
+      "Blue Flowers Records",
+      "Blue Flowers, [pias]",
+      "Soft Boy Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gotts Street Park",
+    "mbid": "0c91c655-444e-4ae7-a0a0-9e9cb160301c",
+    "listeners": 473992,
+    "playcount": 4541783,
+    "listener_play_ratio": 9.58,
+    "bio_exists": true,
+    "bio_summary": "The Leeds-based trio, comprised of producer/writers Josh Crocker (bass, production), Tom Henry (keys) and Joe Harris (guitar), met through Leeds flourishing live music circuit, playing in and around local bands and venues.\n\nIndividually, they have produced and written for the likes of Kali Uchis, Yellow Days, Celeste and Mabel. Combining on their shared love for “The idea of doing things live in one room”, the creation and recording of a song – a group of players walking into a room with nothing",
+    "tags": [
+      "soul",
+      "jazz",
+      "indie pop",
+      "funk",
+      "funk_add_to_lidarr_batch_11"
+    ],
+    "similar_artists": [
+      "Pale Jay",
+      "VBND",
+      "bina.",
+      "Yazmin Lacey",
+      "Jalen Ngonda"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tell Me Why",
+        "listeners": 304856,
+        "playcount": 1331446
+      },
+      {
+        "name": "Got To Be Good",
+        "listeners": 269323,
+        "playcount": 1258039
+      },
+      {
+        "name": "Everything",
+        "listeners": 135383,
+        "playcount": 467562
+      },
+      {
+        "name": "Mountains",
+        "listeners": 103496,
+        "playcount": 348014
+      },
+      {
+        "name": "Favourite Kind Of Girl",
+        "listeners": 63522,
+        "playcount": 215497
+      },
+      {
+        "name": "Summer Breeze",
+        "listeners": 62809,
+        "playcount": 188215
+      },
+      {
+        "name": "Ozu",
+        "listeners": 28557,
+        "playcount": 81268
+      },
+      {
+        "name": "Are You Still A Friend?",
+        "listeners": 26831,
+        "playcount": 67152
+      },
+      {
+        "name": "Change My Ways",
+        "listeners": 22542,
+        "playcount": 60166
+      },
+      {
+        "name": "Fool For Love",
+        "listeners": 21598,
+        "playcount": 51583
+      }
+    ],
+    "url": "https://www.last.fm/music/Gotts+Street+Park"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

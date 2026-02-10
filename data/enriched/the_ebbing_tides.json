@@ -1,0 +1,211 @@
+{
+  "artist_name": "The Ebbing Tides",
+  "artist_id": "the_ebbing_tides",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:32:30.103112+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "41f26191-4206-4783-a507-116386ababfa",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/98746482",
+      "purchase for download": "https://music.apple.com/us/artist/1520366602",
+      "streaming": "https://tidal.com/artist/20160469",
+      "youtube music": "https://music.youtube.com/channel/UCbQTZrDuSa1doV8cgeJjuiQ"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 98746482,
+    "name": "The Ebbing Tides",
+    "nb_fan": 3,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/98746482",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/41493f108b941feb46067e55e116ff3e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Love on a Lonely Street",
+      "Circular Motions",
+      "Carpet Ride"
+    ],
+    "track_durations": [
+      183,
+      212,
+      148
+    ],
+    "track_ranks": [
+      300319,
+      14910,
+      52120
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Midnight Mood",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Light in Your Window",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Circular Motions",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love on a Lonely Street",
+        "label": "",
+        "release_date": "2023-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Ebbing Tides",
+    "mbid": "41f26191-4206-4783-a507-116386ababfa",
+    "listeners": 60368,
+    "playcount": 194998,
+    "listener_play_ratio": 3.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Ebbing+Tides\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Kingsbury Station",
+      "Herman Fred Trio",
+      "Bernhard Cohen",
+      "Foster Davies",
+      "High North Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "You Know Its Me",
+        "listeners": 27108,
+        "playcount": 64148
+      },
+      {
+        "name": "Love on a Lonely Street",
+        "listeners": 26895,
+        "playcount": 65444
+      },
+      {
+        "name": "Carpet Ride",
+        "listeners": 13230,
+        "playcount": 40296
+      },
+      {
+        "name": "Echoes",
+        "listeners": 8646,
+        "playcount": 15487
+      },
+      {
+        "name": "Circular Motions",
+        "listeners": 3909,
+        "playcount": 8031
+      },
+      {
+        "name": "Midnight Mood",
+        "listeners": 611,
+        "playcount": 1082
+      },
+      {
+        "name": "Breaking Away",
+        "listeners": 227,
+        "playcount": 461
+      },
+      {
+        "name": "The Light in Your Window",
+        "listeners": 39,
+        "playcount": 43
+      },
+      {
+        "name": "Fellowship",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "You Know It's Me",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Ebbing+Tides"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

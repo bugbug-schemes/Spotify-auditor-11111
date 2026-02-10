@@ -1,0 +1,516 @@
+{
+  "artist_name": "Dreweybear",
+  "artist_id": "dreweybear",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:35:05.736914+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7d86b952-0895-4f74-8ea0-f4c99366b3ee",
+    "type": "Person",
+    "country": "",
+    "area": "Cincinnati",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental",
+      "boom bap"
+    ],
+    "aliases": [
+      "Drew Gregory Marcum"
+    ],
+    "isnis": [],
+    "ipis": [
+      "00835688001"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003753850",
+      "discogs": "https://www.discogs.com/artist/5600600",
+      "free streaming": "https://www.deezer.com/artist/10963880",
+      "last.fm": "https://www.last.fm/music/Dreweybear",
+      "lyrics": "https://genius.com/artists/Dreweybear",
+      "other databases": "https://rateyourmusic.com/artist/dreweybear",
+      "purchase for download": "https://music.apple.com/us/artist/1082828060",
+      "social network": "https://www.instagram.com/dreweybear/",
+      "songkick": "https://www.songkick.com/artists/9694729",
+      "soundcloud": "https://soundcloud.com/dreweybear",
+      "streaming": "https://tidal.com/artist/8101086",
+      "youtube music": "https://music.youtube.com/channel/UCtHhowRBFdRsj8P1fpIL_lQ"
+    },
+    "labels": [
+      "Elixir Records",
+      "JompaMusic Records",
+      "AESTHETE",
+      "The Jazz Hop Café",
+      "[no label]",
+      "Enhanced Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10963880,
+    "name": "Dreweybear",
+    "nb_fan": 134,
+    "nb_album": 68,
+    "link": "https://www.deezer.com/artist/10963880",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/26d3490cdb3ca5a54c125d8cc1a705cf/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "2scoops",
+      "Cafe Disko",
+      "Crunr",
+      "Graye",
+      "James Mercy",
+      "Jeris",
+      "Jules",
+      "Lauren McAndrew",
+      "Londin Thompson",
+      "Meggie York",
+      "Vaance"
+    ],
+    "contributor_roles": {
+      "Meggie York": [
+        "Main"
+      ],
+      "James Mercy": [
+        "Main"
+      ],
+      "Jeris": [
+        "Featured"
+      ],
+      "Londin Thompson": [
+        "Main"
+      ],
+      "Crunr": [
+        "Main"
+      ],
+      "Vaance": [
+        "Main"
+      ],
+      "Jules": [
+        "Featured"
+      ],
+      "Graye": [
+        "Featured"
+      ],
+      "Cafe Disko": [
+        "Main"
+      ],
+      "2scoops": [
+        "Main"
+      ],
+      "Lauren McAndrew": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Lost & Found",
+      "Learn To Love Again",
+      "The One (with Londin Thompson)",
+      "History (with Crunr)",
+      "Dark Blue",
+      "dream seeker",
+      "If It Isnt U (feat. Jules)",
+      "Follow You (feat. GRAYE)",
+      "Don't Let Go (feat. Doug Bako)",
+      "Letting Go"
+    ],
+    "track_durations": [
+      213,
+      211,
+      236,
+      213,
+      191,
+      146,
+      233,
+      210,
+      162,
+      181
+    ],
+    "track_ranks": [
+      102941,
+      109073,
+      63507,
+      82102,
+      103430,
+      73521,
+      39021,
+      32643,
+      25692,
+      30243
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "ep": 6,
+      "single": 62
+    },
+    "albums": [
+      {
+        "title": "venture",
+        "label": "",
+        "release_date": "2022-08-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "dream seeker",
+        "label": "",
+        "release_date": "2021-11-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bloom",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Spirit II",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Spirit",
+        "label": "",
+        "release_date": "2020-08-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Horizon",
+        "label": "",
+        "release_date": "2020-01-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sleepwalker",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shrines",
+        "label": "",
+        "release_date": "2025-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ON&ON",
+        "label": "",
+        "release_date": "2025-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "autumn rain",
+        "label": "",
+        "release_date": "2024-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seasons (Autumn)",
+        "label": "",
+        "release_date": "2024-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirrors",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Choices",
+        "label": "",
+        "release_date": "2024-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamless",
+        "label": "",
+        "release_date": "2024-06-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daydream",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i found you",
+        "label": "",
+        "release_date": "2024-03-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "pathways",
+        "label": "",
+        "release_date": "2024-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "if i had u",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tides",
+        "label": "",
+        "release_date": "2024-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Celestial",
+        "label": "",
+        "release_date": "2023-12-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Falling Lights",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Road",
+        "label": "",
+        "release_date": "2023-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes",
+        "label": "",
+        "release_date": "2023-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shelter",
+        "label": "",
+        "release_date": "2023-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where Are You",
+        "label": "",
+        "release_date": "2023-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "echoheart",
+        "label": "",
+        "release_date": "2023-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "skyseeker",
+        "label": "",
+        "release_date": "2023-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dark Blue",
+        "label": "",
+        "release_date": "2022-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "seasons (i don't want to change)",
+        "label": "",
+        "release_date": "2022-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Alex Baker",
+      "Faodail",
+      "Farves",
+      "Cloudcage",
+      "Blonde Maze",
+      "Luke Taylor",
+      "The NGHBRS",
+      "Béatrice Dupont",
+      "Luca",
+      "rshand"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5600600,
+    "name": "Dreweybear",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 10,
+    "total_releases": 11,
+    "formats": [
+      "13xFile, MP3, Album, 320",
+      "5xFile, MP3, EP, 320",
+      "File, MP3, Single, 320",
+      "LP, Comp, Ltd, Pur"
+    ],
+    "labels": [
+      "Artist Intelligence Agency",
+      "Artist Intelligence Agency, Wonderlust (2)",
+      "Enhanced Chill",
+      "Enhanced Recordings",
+      "Lost In Dreams",
+      "The Jazz Hop Cafe"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dreweybear",
+    "mbid": "7d86b952-0895-4f74-8ea0-f4c99366b3ee",
+    "listeners": 42299,
+    "playcount": 229626,
+    "listener_play_ratio": 5.43,
+    "bio_exists": true,
+    "bio_summary": "Dreweybear is the alias of Cincinnati-based composer and producer Drew Marcum. Drew is known for crafting emotion-filled soundscapes using field recordings and found sounds, modular synthesizers, and going back to his roots with guitar and piano. Drew found himself on Spotify's Viral 50 Chart in with his release Follow You and since then has composed music for various video games and for TV shows on Apple TV+, MTV, and many video games. <a href=\"https://www.last.fm/music/Dreweybear\">Read more on",
+    "tags": [
+      "electronic",
+      "american",
+      "United States"
+    ],
+    "similar_artists": [
+      "LZRD",
+      "BRKLYN",
+      "Prince Woods",
+      "Feki",
+      "Kate Paul"
+    ],
+    "top_tracks": [
+      {
+        "name": "dream seeker",
+        "listeners": 8607,
+        "playcount": 26003
+      },
+      {
+        "name": "Distance",
+        "listeners": 7493,
+        "playcount": 25267
+      },
+      {
+        "name": "Remember Us",
+        "listeners": 5053,
+        "playcount": 18733
+      },
+      {
+        "name": "History (with Crunr)",
+        "listeners": 4032,
+        "playcount": 22987
+      },
+      {
+        "name": "Midnight",
+        "listeners": 3677,
+        "playcount": 16049
+      },
+      {
+        "name": "Lost & Found",
+        "listeners": 3632,
+        "playcount": 24863
+      },
+      {
+        "name": "If It Isnt U (feat. Jules)",
+        "listeners": 2346,
+        "playcount": 9961
+      },
+      {
+        "name": "The One (with Julia Thompson)",
+        "listeners": 1363,
+        "playcount": 5021
+      },
+      {
+        "name": "The Rise",
+        "listeners": 1319,
+        "playcount": 6707
+      },
+      {
+        "name": "tree of life",
+        "listeners": 1300,
+        "playcount": 3039
+      }
+    ],
+    "url": "https://www.last.fm/music/Dreweybear"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,162 @@
+{
+  "artist_name": "Veda Orion",
+  "artist_id": "veda_orion",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:55:39.715189+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 290300741,
+    "name": "Veda Orion",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/290300741",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6a7f99b2aff89a2e66ac576e7bf5fa3a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "More"
+    ],
+    "track_durations": [
+      141
+    ],
+    "track_ranks": [
+      33052
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Blue Clouds",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Super Far",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crystal Echo",
+        "label": "",
+        "release_date": "2025-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "More",
+        "label": "",
+        "release_date": "2025-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gloom",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes of the Cosmos",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Veda Orion",
+    "mbid": "",
+    "listeners": 21155,
+    "playcount": 52248,
+    "listener_play_ratio": 2.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Veda+Orion\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Still Hour",
+      "AtmoLife",
+      "Lucky Lorry",
+      "novi quiet",
+      "Rhyaene"
+    ],
+    "top_tracks": [
+      {
+        "name": "More",
+        "listeners": 12097,
+        "playcount": 24093
+      },
+      {
+        "name": "Gloom",
+        "listeners": 6491,
+        "playcount": 12732
+      },
+      {
+        "name": "Echoes of the Cosmos",
+        "listeners": 3481,
+        "playcount": 11443
+      },
+      {
+        "name": "Super Far",
+        "listeners": 2199,
+        "playcount": 3750
+      },
+      {
+        "name": "Crystal Echo",
+        "listeners": 127,
+        "playcount": 230
+      }
+    ],
+    "url": "https://www.last.fm/music/Veda+Orion"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

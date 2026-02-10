@@ -1,0 +1,127 @@
+{
+  "artist_name": "Faded Amber",
+  "artist_id": "faded_amber",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:34:23.303187+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 356748862,
+    "name": "Faded Amber",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/356748862",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Leaning on Yesterday",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "half past monday",
+        "label": "",
+        "release_date": "2025-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "rooftop postcards",
+        "label": "",
+        "release_date": "2025-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "worn layers",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Faded Amber",
+    "mbid": "",
+    "listeners": 6913,
+    "playcount": 13364,
+    "listener_play_ratio": 1.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Faded+Amber\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cosmaze",
+      "Komiji",
+      "minoumi",
+      "Sunny Léo",
+      "raindrop delay"
+    ],
+    "top_tracks": [
+      {
+        "name": "half past monday",
+        "listeners": 6851,
+        "playcount": 13271
+      },
+      {
+        "name": "Leaning on Yesterday",
+        "listeners": 86,
+        "playcount": 93
+      }
+    ],
+    "url": "https://www.last.fm/music/Faded+Amber"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

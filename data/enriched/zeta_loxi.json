@@ -1,0 +1,155 @@
+{
+  "artist_name": "Zeta Loxi",
+  "artist_id": "zeta_loxi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:08:37.619195+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 122835822,
+    "name": "Zeta Loxi",
+    "nb_fan": 15,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/122835822",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/72e72f17fba990ff520dbead9575aa7d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Binaural Alpha Sinus 98Hz - 108Hz"
+    ],
+    "track_durations": [
+      212
+    ],
+    "track_ranks": [
+      162026
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Binaural Theta Sleep 80Hz - 86Hz",
+        "label": "",
+        "release_date": "2024-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Alpha Thoughts",
+        "label": "",
+        "release_date": "2021-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Interstellar Alpha 76Hz - 83Hz",
+        "label": "",
+        "release_date": "2021-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Binaural Dimensions",
+        "label": "",
+        "release_date": "2021-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zeta Loxi",
+    "mbid": "",
+    "listeners": 33016,
+    "playcount": 225504,
+    "listener_play_ratio": 6.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zeta+Loxi\">Read more on Last.fm</a>",
+    "tags": [
+      "drone"
+    ],
+    "similar_artists": [
+      "AEX8",
+      "The Sound Around",
+      "High Lotion",
+      "Eural",
+      "Lucy Dreamer"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Theta Sleep 80Hz - 86Hz",
+        "listeners": 19504,
+        "playcount": 146837
+      },
+      {
+        "name": "Alpha Flow State 131Hz - 143Hz",
+        "listeners": 12613,
+        "playcount": 44302
+      },
+      {
+        "name": "Binaural Alpha Sinus 98Hz - 108Hz",
+        "listeners": 6184,
+        "playcount": 20596
+      },
+      {
+        "name": "Interstellar Alpha 76Hz - 83Hz",
+        "listeners": 4069,
+        "playcount": 13333
+      },
+      {
+        "name": "Deep Alpha Thoughts 107Hz - 114Hz",
+        "listeners": 165,
+        "playcount": 330
+      },
+      {
+        "name": "Time Stands Still - Alpha Sinus 108Hz - 116Hz",
+        "listeners": 49,
+        "playcount": 106
+      }
+    ],
+    "url": "https://www.last.fm/music/Zeta+Loxi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,138 @@
+{
+  "artist_name": "Jorge Cajías",
+  "artist_id": "jorge_cajías",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:37:05.408851+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Jorge Cajías', got 'Jorge Cajias'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 17268820,
+    "name": "Jorge Cajías",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Dynamo Productions"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jorge Cajías",
+    "mbid": "",
+    "listeners": 2276,
+    "playcount": 5104,
+    "listener_play_ratio": 2.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jorge+Caj%C3%ADas\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Claire Delić",
+      "Mario Puglia",
+      "Sofía Paola",
+      "Tiare",
+      "Greta Ela"
+    ],
+    "top_tracks": [
+      {
+        "name": "Qué Dulce",
+        "listeners": 2099,
+        "playcount": 4561
+      },
+      {
+        "name": "Guillotina de Espuma",
+        "listeners": 123,
+        "playcount": 164
+      },
+      {
+        "name": "-Lo mismo-",
+        "listeners": 29,
+        "playcount": 35
+      },
+      {
+        "name": "No sé si te odio (o quiero ser tú)",
+        "listeners": 22,
+        "playcount": 44
+      },
+      {
+        "name": "Cafeína",
+        "listeners": 13,
+        "playcount": 22
+      },
+      {
+        "name": "Una Isla Para Dos",
+        "listeners": 10,
+        "playcount": 17
+      },
+      {
+        "name": "Girasol (al mundo salvar)",
+        "listeners": 9,
+        "playcount": 13
+      },
+      {
+        "name": "Cafeína pt. II/...pensarlo (cont.)",
+        "listeners": 8,
+        "playcount": 17
+      },
+      {
+        "name": "Cosa de Inercia",
+        "listeners": 7,
+        "playcount": 22
+      },
+      {
+        "name": "Semeruco",
+        "listeners": 7,
+        "playcount": 18
+      }
+    ],
+    "url": "https://www.last.fm/music/Jorge+Caj%C3%ADas"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

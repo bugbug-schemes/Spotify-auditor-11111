@@ -1,0 +1,221 @@
+{
+  "artist_name": "XO STHLM",
+  "artist_id": "xo_sthlm",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:02:41.676912+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "91436a84-563b-4497-8a42-a02c68e7d57f",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/59VJzq6xZWECSl0Gn3mRuK",
+      "soundcloud": "https://soundcloud.com/xosthlm",
+      "streaming": "https://music.apple.com/gb/artist/1729768282"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 253682772,
+    "name": "XO STHLM",
+    "nb_fan": 3,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/253682772",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/289c891dc9ed2387465a283233279dcd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "BLUE LIGHTS",
+      "DO SIT DOWN"
+    ],
+    "track_durations": [
+      141,
+      148
+    ],
+    "track_ranks": [
+      33038,
+      10321
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Waves",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last dance",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rooftop Sunset",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Designated Driver",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Royal Skyline",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Down Under",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Start",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightdriver",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "DO SIT DOWN",
+        "label": "",
+        "release_date": "2024-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BLUE LIGHTS",
+        "label": "",
+        "release_date": "2024-02-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "XO STHLM",
+    "mbid": "",
+    "listeners": 4337,
+    "playcount": 12178,
+    "listener_play_ratio": 2.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/XO+STHLM\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hackney",
+      "Leamouth",
+      "Vinewood Square",
+      "Hans Blu",
+      "In Diooo"
+    ],
+    "top_tracks": [
+      {
+        "name": "BLUE LIGHTS",
+        "listeners": 1648,
+        "playcount": 4146
+      },
+      {
+        "name": "Nightdriver",
+        "listeners": 1526,
+        "playcount": 3508
+      },
+      {
+        "name": "Last dance",
+        "listeners": 1327,
+        "playcount": 2841
+      },
+      {
+        "name": "DO SIT DOWN",
+        "listeners": 640,
+        "playcount": 1468
+      },
+      {
+        "name": "Designated Driver",
+        "listeners": 78,
+        "playcount": 126
+      },
+      {
+        "name": "Rooftop Sunset",
+        "listeners": 56,
+        "playcount": 88
+      },
+      {
+        "name": "Royal Skyline",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/XO+STHLM"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

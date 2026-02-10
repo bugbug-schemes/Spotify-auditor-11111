@@ -1,0 +1,611 @@
+{
+  "artist_name": "Banks",
+  "artist_id": "banks",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:31:09.545320+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "faa28a33-5470-4b90-90c3-e71955d93a44",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1988-06-16",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "trip hop",
+      "r&b",
+      "art pop",
+      "downtempo",
+      "songwriter",
+      "singer",
+      "electropop",
+      "contemporary r&b",
+      "indie",
+      "alternative r&b",
+      "alternative pop"
+    ],
+    "aliases": [
+      "Jillian Banks"
+    ],
+    "isnis": [
+      "0000000440299713"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003164331",
+      "bandsintown": "https://www.bandsintown.com/a/25254",
+      "discogs": "https://www.discogs.com/artist/3990523",
+      "free streaming": "https://www.deezer.com/artist/555816",
+      "IMDb": "https://www.imdb.com/name/nm1669700/",
+      "last.fm": "https://www.last.fm/music/Banks",
+      "lyrics": "https://genius.com/artists/Banks",
+      "myspace": "https://myspace.com/hernameisbanks",
+      "official homepage": "http://www.hernameisbanks.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2014135876",
+      "purchase for download": "https://www.junodownload.com/artists/Banks/releases/",
+      "setlistfm": "https://www.setlist.fm/setlists/banks-43dc0b4b.html",
+      "social network": "https://www.instagram.com/hernameisbanks/",
+      "songkick": "https://www.songkick.com/artists/675567",
+      "soundcloud": "https://soundcloud.com/banksbanksbanks",
+      "streaming": "https://tidal.com/artist/7187885",
+      "VIAF": "http://viaf.org/viaf/311574860",
+      "wikidata": "https://www.wikidata.org/wiki/Q16151028",
+      "youtube": "https://www.youtube.com/channel/UCDv75EpGUZjimTxJq25xClg"
+    },
+    "labels": [
+      "Good Years",
+      "IAMSOUND Records",
+      "Harvest Records",
+      "Her Name Is Banks, Inc",
+      "[no label]",
+      "COLORSxSTUDIOS",
+      "Harvest",
+      "Mom+Pop",
+      "Virgin EMI Records",
+      "Universal Music",
+      "Universal Music Group",
+      "Universal",
+      "Capitol Records",
+      "AWAL"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 555816,
+    "name": "Banks",
+    "nb_fan": 181263,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/555816",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d5b525a0708f8af59d5daa3d4508e168/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Doechii",
+      "Yseult"
+    ],
+    "contributor_roles": {
+      "Yseult": [
+        "Featured"
+      ],
+      "Doechii": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Waiting Game",
+      "Beggin For Thread",
+      "Gimme",
+      "Poltergeist",
+      "Brain",
+      "Drowning",
+      "Goddess",
+      "Candy",
+      "Guillotine",
+      "This Is What It Feels Like",
+      "Contaminated",
+      "Delulu",
+      "Move (feat. Yseult)",
+      "Godless",
+      "Best Friends",
+      "Teardrop",
+      "Love Is Unkind (Acoustic)",
+      "Delulu (Acoustic)",
+      "Meddle In The Mold",
+      "I Hate Your Ex-Girlfriend (feat. Doechii)",
+      "The Devil",
+      "Meddle In The Mold (Acoustic)",
+      "Misunderstood",
+      "River",
+      "Stay"
+    ],
+    "track_durations": [
+      208,
+      249,
+      219,
+      212,
+      280,
+      249,
+      242,
+      163,
+      114,
+      301,
+      280,
+      164,
+      161,
+      190,
+      241,
+      262,
+      209,
+      163,
+      187,
+      143,
+      167,
+      185,
+      101,
+      138,
+      170
+    ],
+    "track_ranks": [
+      424304,
+      557988,
+      259797,
+      306013,
+      414461,
+      337898,
+      320827,
+      214143,
+      281945,
+      346832,
+      443268,
+      339682,
+      219651,
+      329333,
+      241217,
+      295410,
+      155658,
+      154623,
+      191774,
+      221120,
+      353163,
+      144620,
+      171355,
+      195572,
+      264718
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 9,
+      "ep": 2,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Off With Her Head (Deluxe)",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Off With Her Head",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Serpentina",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "III",
+        "label": "",
+        "release_date": "2019-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Altar",
+        "label": "",
+        "release_date": "2016-09-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Goddess (Remixes)",
+        "label": "",
+        "release_date": "2015-03-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Goddess",
+        "label": "",
+        "release_date": "2014-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Goddess (Deluxe)",
+        "label": "",
+        "release_date": "2014-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Goddess: Unplugged",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live And Stripped",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Fall Over",
+        "label": "",
+        "release_date": "2013-02-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Teardrop",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meddle In The Mold - A COLORS SHOW",
+        "label": "",
+        "release_date": "2025-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Is Unkind",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Best Friends",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Hate Your Ex-Girlfriend (feat. Doechii)",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deadend",
+        "label": "",
+        "release_date": "2022-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meteorite",
+        "label": "",
+        "release_date": "2022-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Still Love You",
+        "label": "",
+        "release_date": "2022-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holding Back",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skinnydipped",
+        "label": "",
+        "release_date": "2021-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Devil",
+        "label": "",
+        "release_date": "2021-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If We Were Made of Water (Live And Stripped)",
+        "label": "",
+        "release_date": "2020-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stroke (Live And Stripped)",
+        "label": "",
+        "release_date": "2020-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contaminated (Live And Stripped)",
+        "label": "",
+        "release_date": "2020-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drowning (Live And Stripped)",
+        "label": "",
+        "release_date": "2020-03-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contaminated",
+        "label": "",
+        "release_date": "2019-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Look What You're Doing To Me",
+        "label": "",
+        "release_date": "2019-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gimme",
+        "label": "",
+        "release_date": "2019-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Underdog",
+        "label": "",
+        "release_date": "2017-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Bishop Briggs",
+      "Niykee Heaton",
+      "Two Feet",
+      "Ramsey",
+      "Everybody Loves an Outlaw",
+      "Black Atlass",
+      "Michele Morrone",
+      "The Rigs",
+      "TENDER",
+      "Rosenfeld"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 336885,
+    "name": "Tony Banks",
+    "profile": "Born: March 27, 1950, East Hoathly, Sussex, England\r\n\r\nFounding member and keyboardist of the band [a=Genesis]. Along with [a=Mike Rutherford], the only member to be present for the band's entire duration.",
+    "realname": "Anthony George Banks",
+    "social_urls": [
+      "https://www.facebook.com/tonybanksofficial/",
+      "https://twitter.com/tonybanksmusic",
+      "https://www.youtube.com/channel/UCmfGbS-YboR4e67CIZhhKTA",
+      "https://www.flickr.com/photos/77125483@N02/",
+      "https://en.wikipedia.org/wiki/Tony_Banks_(musician)",
+      "https://www.progarchives.com/artist.asp?id=833",
+      "https://www.allmusic.com/artist/tony-banks-mn0000633929"
+    ],
+    "members": [],
+    "groups": [
+      "Genesis",
+      "Bankstatement",
+      "Strictly Inc."
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 36,
+    "digital_only_releases": 64,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "14xFile, FLAC, Album, 24 ",
+      "23xFile, FLAC, Album",
+      "2xCD, Album",
+      "2xCD, Comp",
+      "2xCD, Dlx, Dou",
+      "2xLP, Album + DVD-V, Album",
+      "3xCD, Album + Box, Comp",
+      "3xCD, Comp + Box",
+      "3xCD, Comp, RM + Box",
+      "4xCD, Comp, RM",
+      "5xCD, Comp",
+      "7\", Promo",
+      "7\", Single",
+      "Box + CD, Album, RE, RM + CD, Album, RE, RM + CD, ",
+      "Box, Comp + 3xCD, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Comp, Num",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, Maxi, Promo",
+      "CD, Single, Promo",
+      "Cass, Album, Ltd",
+      "DVD-V, Album",
+      "DVD-V, Multichannel, NTSC",
+      "File, AIFF, Single",
+      "File, FLAC, Single",
+      "Flexi, 7\", Single",
+      "LP, Album, Promo, Smplr",
+      "LP, Ltd, Num + CD, Ltd, Num"
+    ],
+    "labels": [
+      "Atlantic",
+      "Atomic Fire",
+      "Barnum For Art",
+      "Big Stir Records",
+      "Charisma",
+      "Distortion Productions",
+      "EMI, Virgin",
+      "Esoteric Recordings",
+      "Everything Records (2)",
+      "FS Music Records (2)",
+      "GR1993 Records",
+      "GR1993 Records, GR1993 Records, GR1993 Records",
+      "Giant Records",
+      "Grapefruit Records",
+      "Kino Lorber",
+      "Music Collectors Anonymous",
+      "Naxos",
+      "Not On Label (Lunear Self-released)",
+      "Not On Label (Rocking Horse Music Club Self-released)",
+      "Not on Label (The Balls Project Self-released), Not On Label (dvdmovies123 Self-released)",
+      "Polydor",
+      "Pop / Melody Maker",
+      "Renaissance Records (3)",
+      "Solid Records (6)",
+      "Stereo & Video, Gala Records (5), EMI 100",
+      "Strawberry (26)",
+      "TMProductions",
+      "The Estate Of Kevin Gilbert",
+      "Unicorn Digital",
+      "Universal Music TV, Sony Music, Universal Music TV, Sony Music",
+      "Velut Luna",
+      "Virgin, EMI"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "BANKS",
+    "mbid": "faa28a33-5470-4b90-90c3-e71955d93a44",
+    "listeners": 1177006,
+    "playcount": 50278517,
+    "listener_play_ratio": 42.72,
+    "bio_exists": true,
+    "bio_summary": "Jillian Rose Banks, known mononymously as Banks (stylized in all caps), is an American singer and songwriter. Following the release of two EPs, Fall Over and London, in 2013, Banks released her debut album, Goddess, in 2014 to positive reviews from contemporary music critics. It reached number 12 on the US Billboard 200, while its most successful single, \"Beggin for Thread\", was certified platinum by the Recording Industry Association of America (RIAA). <a href=\"https://www.last.fm/music/BANKS\">",
+    "tags": [
+      "electronic",
+      "downtempo",
+      "pop",
+      "female vocalists",
+      "indie"
+    ],
+    "similar_artists": [
+      "MØ",
+      "Tove Lo",
+      "VÉRITÉ",
+      "Lykke Li",
+      "Broods"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beggin for Thread",
+        "listeners": 369860,
+        "playcount": 2943577
+      },
+      {
+        "name": "Waiting Game",
+        "listeners": 339601,
+        "playcount": 2557304
+      },
+      {
+        "name": "Gemini Feed",
+        "listeners": 229080,
+        "playcount": 2884190
+      },
+      {
+        "name": "Drowning",
+        "listeners": 186932,
+        "playcount": 1499681
+      },
+      {
+        "name": "Brain",
+        "listeners": 186424,
+        "playcount": 1872509
+      },
+      {
+        "name": "Goddess",
+        "listeners": 185914,
+        "playcount": 1466409
+      },
+      {
+        "name": "Someone New",
+        "listeners": 178690,
+        "playcount": 1380592
+      },
+      {
+        "name": "Warm Water",
+        "listeners": 171835,
+        "playcount": 1123109
+      },
+      {
+        "name": "This Is What It Feels Like",
+        "listeners": 164470,
+        "playcount": 1459098
+      },
+      {
+        "name": "Fuck with Myself",
+        "listeners": 138982,
+        "playcount": 1337166
+      }
+    ],
+    "url": "https://www.last.fm/music/BANKS"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

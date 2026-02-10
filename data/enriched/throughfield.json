@@ -1,0 +1,217 @@
+{
+  "artist_name": "throughfield",
+  "artist_id": "throughfield",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:33:52.296579+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 340536121,
+    "name": "throughfield",
+    "nb_fan": 0,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/340536121",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/eb925415eb2622716b73cbfccc7a7e7c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "Alpha Sync (116.54 - 123.47 Hz)",
+        "label": "",
+        "release_date": "2026-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ataraxia (Gamma Waves 98 - 135Hz)",
+        "label": "",
+        "release_date": "2026-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Radiance in Alpha (90-95 Hz)",
+        "label": "",
+        "release_date": "2026-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sanctum Delta Waves (107-110 Hz)",
+        "label": "",
+        "release_date": "2025-12-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flow in Alpha (82 - 90 Hz)",
+        "label": "",
+        "release_date": "2025-12-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Purity Alpha Waves (112 - 120 Hz)",
+        "label": "",
+        "release_date": "2025-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hypnos in Delta (90-92 Hz)",
+        "label": "",
+        "release_date": "2025-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equilibrium Theta Waves (130 - 137 Hz)",
+        "label": "",
+        "release_date": "2025-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamborn",
+        "label": "",
+        "release_date": "2025-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When Earth Whispers",
+        "label": "",
+        "release_date": "2025-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nourish",
+        "label": "",
+        "release_date": "2025-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Pause of Wind",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thoughts Made of Glass",
+        "label": "",
+        "release_date": "2025-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weightlessness",
+        "label": "",
+        "release_date": "2025-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "throughfield",
+    "mbid": "",
+    "listeners": 2650,
+    "playcount": 9680,
+    "listener_play_ratio": 3.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/throughfield\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Elin Lysvik",
+      "Celstia",
+      "Ala Sky",
+      "Selenic Vistas",
+      "Vibrant Silence"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hypnos in Delta (90-92 Hz)",
+        "listeners": 1419,
+        "playcount": 5871
+      },
+      {
+        "name": "Thoughts Made of Glass",
+        "listeners": 1136,
+        "playcount": 3495
+      },
+      {
+        "name": "Equilibrium Theta Waves (130 - 137 Hz)",
+        "listeners": 43,
+        "playcount": 85
+      },
+      {
+        "name": "Flow in Alpha (82 - 90 Hz)",
+        "listeners": 43,
+        "playcount": 73
+      },
+      {
+        "name": "When Earth Whispers",
+        "listeners": 28,
+        "playcount": 106
+      },
+      {
+        "name": "Purity Alpha Waves (112 - 120 Hz)",
+        "listeners": 26,
+        "playcount": 50
+      }
+    ],
+    "url": "https://www.last.fm/music/throughfield"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

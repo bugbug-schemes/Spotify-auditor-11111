@@ -1,0 +1,198 @@
+{
+  "artist_name": "thepicnik",
+  "artist_id": "thepicnik",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:33:46.751980+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 135631042,
+    "name": "thepicnik",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/135631042",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/88c626025f90d23843c059c3dee10eff/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Old Socks",
+        "label": "",
+        "release_date": "2023-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somewhere In The Middle",
+        "label": "",
+        "release_date": "2023-06-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take My Hug",
+        "label": "",
+        "release_date": "2022-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Proper Goodbye",
+        "label": "",
+        "release_date": "2022-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stranger With A Wall",
+        "label": "",
+        "release_date": "2022-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Already too late",
+        "label": "",
+        "release_date": "2022-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Screw It",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caroline",
+        "label": "",
+        "release_date": "2021-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "thepicnik",
+    "mbid": "",
+    "listeners": 1601,
+    "playcount": 5986,
+    "listener_play_ratio": 3.74,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/thepicnik\">Read more on Last.fm</a>",
+    "tags": [
+      "thailand",
+      "indie"
+    ],
+    "similar_artists": [
+      "quicksand bed",
+      "Television Off",
+      "YourMOOD",
+      "Yented",
+      "Themoonwillalwaysbewithme"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stranger With A Wall",
+        "listeners": 693,
+        "playcount": 1250
+      },
+      {
+        "name": "Take My Hug",
+        "listeners": 576,
+        "playcount": 1963
+      },
+      {
+        "name": "Proper Goodbye",
+        "listeners": 261,
+        "playcount": 799
+      },
+      {
+        "name": "Old Socks",
+        "listeners": 161,
+        "playcount": 716
+      },
+      {
+        "name": "Somewhere In The Middle",
+        "listeners": 155,
+        "playcount": 419
+      },
+      {
+        "name": "Caroline",
+        "listeners": 81,
+        "playcount": 359
+      },
+      {
+        "name": "Already too late",
+        "listeners": 59,
+        "playcount": 249
+      },
+      {
+        "name": "Screw It",
+        "listeners": 54,
+        "playcount": 204
+      },
+      {
+        "name": "Take My Hug (Instrumental)",
+        "listeners": 7,
+        "playcount": 8
+      },
+      {
+        "name": "Somewhere In The Middle (Instrumental)",
+        "listeners": 6,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/thepicnik"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,136 @@
+{
+  "artist_name": "Francis Luna",
+  "artist_id": "francis_luna",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:42:01.428093+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Francis Luna', got 'Francis Lai'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12161464,
+    "name": "Francisco X. De Luna",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Francis Luna",
+    "mbid": "",
+    "listeners": 4140,
+    "playcount": 96955,
+    "listener_play_ratio": 23.42,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Francis+Luna\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Som Nus",
+      "Sofia Ferra",
+      "Milo Grímur",
+      "Cory Andon",
+      "Zachary Keys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alone with the Universe",
+        "listeners": 2728,
+        "playcount": 34514
+      },
+      {
+        "name": "Horizon of Dreams",
+        "listeners": 2198,
+        "playcount": 27319
+      },
+      {
+        "name": "A Star’s Lullaby",
+        "listeners": 1647,
+        "playcount": 20587
+      },
+      {
+        "name": "Moonlit Adventure",
+        "listeners": 1097,
+        "playcount": 9376
+      },
+      {
+        "name": "Lucas’s Song",
+        "listeners": 791,
+        "playcount": 5084
+      },
+      {
+        "name": "Dreams of the Little Fox",
+        "listeners": 18,
+        "playcount": 29
+      },
+      {
+        "name": "Red Moon",
+        "listeners": 17,
+        "playcount": 22
+      },
+      {
+        "name": "Dreamy Night Skies",
+        "listeners": 10,
+        "playcount": 12
+      },
+      {
+        "name": "Butterfly Lullaby",
+        "listeners": 6,
+        "playcount": 6
+      },
+      {
+        "name": "Lullaby over the Hills",
+        "listeners": 4,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Francis+Luna"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

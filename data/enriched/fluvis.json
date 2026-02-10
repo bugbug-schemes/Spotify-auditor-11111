@@ -1,0 +1,121 @@
+{
+  "artist_name": "Fluvis",
+  "artist_id": "fluvis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:39:58.155510+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Fluvis', got 'Travis'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Fluvis",
+    "mbid": "",
+    "listeners": 44878,
+    "playcount": 143901,
+    "listener_play_ratio": 3.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Fluvis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kirabuo",
+      "Louaminé",
+      "Serenity Within",
+      "Skeru",
+      "Amber Sky"
+    ],
+    "top_tracks": [
+      {
+        "name": "River Flowing",
+        "listeners": 22641,
+        "playcount": 50624
+      },
+      {
+        "name": "Darker Area",
+        "listeners": 14065,
+        "playcount": 52696
+      },
+      {
+        "name": "Calm Within",
+        "listeners": 12028,
+        "playcount": 26618
+      },
+      {
+        "name": "Quiet Life",
+        "listeners": 4039,
+        "playcount": 6761
+      },
+      {
+        "name": "Mont Blanc",
+        "listeners": 2629,
+        "playcount": 5467
+      },
+      {
+        "name": "Knowing exactly",
+        "listeners": 293,
+        "playcount": 672
+      },
+      {
+        "name": "Star Eye",
+        "listeners": 237,
+        "playcount": 549
+      },
+      {
+        "name": "Homebound",
+        "listeners": 66,
+        "playcount": 86
+      },
+      {
+        "name": "Aesthete",
+        "listeners": 53,
+        "playcount": 405
+      },
+      {
+        "name": "Two Different Lives",
+        "listeners": 4,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Fluvis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

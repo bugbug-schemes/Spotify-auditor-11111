@@ -1,0 +1,166 @@
+{
+  "artist_name": "Dan Harper",
+  "artist_id": "dan_harper",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:19:55.550555+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ad88b853-1d37-40a1-bc2f-03aba4636e0c",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Dan Harper', got 'Sam Harper'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1550133,
+    "name": "Dan Harper",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 16,
+    "digital_only_releases": 4,
+    "total_releases": 20,
+    "formats": [
+      "",
+      "10\", EP, Ltd",
+      "7\"",
+      "CD, Album",
+      "CD, EP",
+      "CDr, Album",
+      "CDr, Album + File, AIFF, MP3, WAV, Album, Ban",
+      "Cass, Comp"
+    ],
+    "labels": [
+      "CD TAPES",
+      "Harper Diabate Records",
+      "Harper Diabate Records, WEATNU Records",
+      "Levity Disc",
+      "Psychic Ambulance",
+      "Radstock Records",
+      "Real World Records",
+      "Riverboat Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dan Harper",
+    "mbid": "ad88b853-1d37-40a1-bc2f-03aba4636e0c",
+    "listeners": 1676,
+    "playcount": 10820,
+    "listener_play_ratio": 6.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dan+Harper\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Brian Zeller",
+      "Noélina Faye",
+      "Leon Rose",
+      "Luca Verini",
+      "Aurora Keys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hiding Moon",
+        "listeners": 1070,
+        "playcount": 7209
+      },
+      {
+        "name": "Starry Skies",
+        "listeners": 640,
+        "playcount": 3512
+      },
+      {
+        "name": "Fattig Bonddräng",
+        "listeners": 7,
+        "playcount": 21
+      },
+      {
+        "name": "Sweet Slumber",
+        "listeners": 6,
+        "playcount": 18
+      },
+      {
+        "name": "Lille Katt",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Drink - Born To Fight - Rehearsal Dec 2007",
+        "listeners": 2,
+        "playcount": 10
+      },
+      {
+        "name": "Purple Blues",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Staying in Bed",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "I want you - faster",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Reeling",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Dan+Harper"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

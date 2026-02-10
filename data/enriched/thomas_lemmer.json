@@ -1,0 +1,614 @@
+{
+  "artist_name": "Thomas Lemmer",
+  "artist_id": "thomas_lemmer",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:40:20.673742+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ad92b2fb-687c-4982-9889-911315306389",
+    "type": "Person",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "1977-04-15",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1691843",
+      "free streaming": "https://www.deezer.com/artist/312833",
+      "IMDb": "https://www.imdb.com/name/nm2854040/",
+      "official homepage": "https://www.thomas-lemmer.com/",
+      "other databases": "https://d-nb.info/gnd/138553998",
+      "purchase for download": "https://www.beatport.com/artist/thomas-lemmer/98773",
+      "social network": "https://www.instagram.com/thomaslemmer/",
+      "streaming": "https://tidal.com/artist/3644338",
+      "VIAF": "http://viaf.org/viaf/90834039",
+      "wikidata": "https://www.wikidata.org/wiki/Q15850775"
+    },
+    "labels": [
+      "Sine Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 312833,
+    "name": "Thomas Lemmer",
+    "nb_fan": 1120,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/312833",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ca28451e8ea5014466541fe100fe4b5d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Christoph Sebastian Pabst",
+      "Dave Leck",
+      "Lena Belgart",
+      "Mark Sein",
+      "Naemi Joy",
+      "Oine",
+      "Sferix",
+      "Sinatic",
+      "Tauon",
+      "Tina Sona",
+      "Tony Sieber"
+    ],
+    "contributor_roles": {
+      "Oine": [
+        "Main"
+      ],
+      "Sferix": [
+        "Featured"
+      ],
+      "Tony Sieber": [
+        "Main"
+      ],
+      "Lena Belgart": [
+        "Featured"
+      ],
+      "Naemi Joy": [
+        "Featured"
+      ],
+      "Sinatic": [
+        "Main"
+      ],
+      "Christoph Sebastian Pabst": [
+        "Main"
+      ],
+      "Tina Sona": [
+        "Featured"
+      ],
+      "Tauon": [
+        "Featured"
+      ],
+      "Dave Leck": [
+        "Featured"
+      ],
+      "Mark Sein": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "1222 Miles (Sferix Remix)",
+      "Moments Between",
+      "Is It Too Late (Original Album Mix)",
+      "White Room (Gold Lounge in the Room Remix)",
+      "Peaceful",
+      "Dark Moon",
+      "Arise",
+      "Dunes",
+      "Ah!",
+      "There You'll Be Free",
+      "Inner Force",
+      "Drift",
+      "Gebirgsbachtürkis",
+      "Lost",
+      "Left Behind",
+      "Blissful Mind",
+      "Through My Father's Eyes",
+      "Confidence",
+      "Fatigué",
+      "Confidence (Tauon Remix)",
+      "Shifting Sands",
+      "Drift (Dave Leck Remix)",
+      "The Power of Love",
+      "Forever (Mark Sein Remix)",
+      "Lunar Eclipse"
+    ],
+    "track_durations": [
+      209,
+      154,
+      301,
+      302,
+      315,
+      201,
+      225,
+      209,
+      277,
+      254,
+      244,
+      211,
+      245,
+      219,
+      389,
+      255,
+      285,
+      276,
+      333,
+      246,
+      234,
+      456,
+      297,
+      234,
+      298
+    ],
+    "track_ranks": [
+      135153,
+      183059,
+      205324,
+      204134,
+      221063,
+      70779,
+      73427,
+      198292,
+      152625,
+      61928,
+      142856,
+      66608,
+      123841,
+      87015,
+      204974,
+      72302,
+      70964,
+      110924,
+      119700,
+      108762,
+      142923,
+      37126,
+      122469,
+      61222,
+      101312
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 24,
+      "ep": 21,
+      "single": 55
+    },
+    "albums": [
+      {
+        "title": "Perspectives",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dreamscapes",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "One Vision Remixed",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "One Vision",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hope",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pulse",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ambient Nights",
+        "label": "",
+        "release_date": "2021-01-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bergblick",
+        "label": "",
+        "release_date": "2020-10-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Night Travellers",
+        "label": "",
+        "release_date": "2019-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Meerblick",
+        "label": "",
+        "release_date": "2019-05-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A IV",
+        "label": "",
+        "release_date": "2017-08-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ambitronic",
+        "label": "",
+        "release_date": "2017-03-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A X",
+        "label": "",
+        "release_date": "2016-12-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pure",
+        "label": "",
+        "release_date": "2016-08-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lost",
+        "label": "",
+        "release_date": "2016-06-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forever",
+        "label": "",
+        "release_date": "2016-04-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Juno",
+        "label": "",
+        "release_date": "2015-01-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zero Gravity",
+        "label": "",
+        "release_date": "2014-12-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Still Remixed",
+        "label": "",
+        "release_date": "2014-07-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Relieve (Deluxe Edition)",
+        "label": "",
+        "release_date": "2014-05-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Still",
+        "label": "",
+        "release_date": "2013-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Is It Too Late",
+        "label": "",
+        "release_date": "2013-09-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Relieve",
+        "label": "",
+        "release_date": "2011-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Relieve Remix Edition",
+        "label": "",
+        "release_date": "2013-09-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Berlin",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Enigma",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Maybe (Remixed)",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I'm on My Way",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Drift (Remixed)",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Into the Light",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "Schwarz & Funk",
+      "Steen Thottrup",
+      "Gary B",
+      "Afterlife",
+      "Sven van Hees",
+      "Ludvig & Stelar",
+      "José Padilla",
+      "Mystic Diversions",
+      "Gelka",
+      "Peter Pearson"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1691843,
+    "name": "Thomas Lemmer",
+    "profile": "Electronic music producer from Bramsche, Germany.",
+    "realname": "Thomas Lemmer",
+    "social_urls": [
+      "https://www.thomas-lemmer.com/",
+      "https://linktr.ee/thomaslemmer"
+    ],
+    "members": [],
+    "groups": [
+      "Motif (6)",
+      "Just Two (4)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 28,
+    "digital_only_releases": 72,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, MP3, Album",
+      "11xFile, MP3, Comp, 320",
+      "12xFile, WAV, Comp",
+      "13xFile, MP3, Comp",
+      "16xFile, WAV, Album",
+      "18xFile, MP3, Comp, 320",
+      "19xFile, MP3, Comp, 320",
+      "20xFile, MP3, Comp, 320",
+      "21xFile, MP3, Comp",
+      "22xFile, MP3, Comp, 320",
+      "23xFile, MP3, Comp, 320",
+      "24xFile, MP3, Comp, 320",
+      "25xFile, MP3, Comp, 320",
+      "25xFile, WAV, Comp",
+      "26xFile, MP3, Comp, 320",
+      "27xFile, MP3, Comp, 320",
+      "29xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp, Ltd, Dig",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Mixed, Dig",
+      "2xCD, Ltd, Mixed",
+      "2xCD, Mixed",
+      "30xFile, MP3, Comp, 320",
+      "31xFile, MP3, Comp, 320",
+      "33xFile, MP3, Comp, 320",
+      "38xFile, MP3, Comp, 320",
+      "39xFile, MP3, Comp, 320",
+      "3xCD, Comp, Mixed",
+      "40xFile, MP3, Comp, 320",
+      "4xFile, MP3, 320",
+      "5xFile, MP3, 320",
+      "5xFile, MP3, EP, 320",
+      "9xFile, WAV, Comp",
+      "Blu-ray, Blu-ray-A, Album, Multichannel, Dol",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, Mixed",
+      "CD-ROM, Comp",
+      "File, MP3, Comp, 320",
+      "File, MP3, Comp, Mixed, 320",
+      "LP"
+    ],
+    "labels": [
+      "Abstrait Music",
+      "Armada Digital",
+      "Audio Lotion",
+      "Bloodsugar Records",
+      "Blue Tunes Chillout",
+      "Catharsis",
+      "Catwalk Records",
+      "Clubstar",
+      "Embassy One",
+      "Empress Recordings",
+      "High Music",
+      "KODEX · Suhshia Light",
+      "Kare Kraftwerk, Kare Design",
+      "Khb Music",
+      "LAD Publishing & Records",
+      "Lemongrassmusic",
+      "Luxury House",
+      "Music For Cocktails",
+      "Perfecto",
+      "Ragimusic",
+      "Royal Plastic",
+      "Schalldeluxe",
+      "Schweizerhof Lenzerheide",
+      "Seamless Recordings",
+      "Sine Music",
+      "Solphet Music",
+      "Stereo Deluxe, Abstrait",
+      "Suna Bar",
+      "United Recordings",
+      "ZAP Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Thomas Lemmer",
+    "mbid": "ad92b2fb-687c-4982-9889-911315306389",
+    "listeners": 50877,
+    "playcount": 426472,
+    "listener_play_ratio": 8.38,
+    "bio_exists": true,
+    "bio_summary": "Thomas Lemmer is known as an Electronic/Ambient music producer. With 14 albums, 11 Eps, 28 singles, and multiple appearances on top-class Chillout/Electronic compilations, Thomas Lemmer is considered one of the most active and established artists of his genre. Over 25 million streams on Spotify alone prove his relaxed sounds are highly on-demand in this fast and hectic world.\n\nHis two albums, STILL and ZERO GRAVITY, reached Germany’s iTunes Electronic Top 10. <a href=\"https://www.last.fm/music/T",
+    "tags": [
+      "chillout",
+      "ambient",
+      "german",
+      "downtempo",
+      "spotify"
+    ],
+    "similar_artists": [
+      "Klangstein",
+      "Sine",
+      "Jens Buchert",
+      "Polished Chrome",
+      "Eskadet"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fatigué",
+        "listeners": 4655,
+        "playcount": 15202
+      },
+      {
+        "name": "Peaceful",
+        "listeners": 4415,
+        "playcount": 17660
+      },
+      {
+        "name": "Ah!",
+        "listeners": 4277,
+        "playcount": 11751
+      },
+      {
+        "name": "I Like It",
+        "listeners": 2535,
+        "playcount": 8477
+      },
+      {
+        "name": "Fatigu",
+        "listeners": 2403,
+        "playcount": 9152
+      },
+      {
+        "name": "Savannah",
+        "listeners": 2206,
+        "playcount": 5152
+      },
+      {
+        "name": "A I",
+        "listeners": 2194,
+        "playcount": 7786
+      },
+      {
+        "name": "Soul Diver",
+        "listeners": 2133,
+        "playcount": 6529
+      },
+      {
+        "name": "Lost",
+        "listeners": 2025,
+        "playcount": 7341
+      },
+      {
+        "name": "Fatigue",
+        "listeners": 1873,
+        "playcount": 6445
+      }
+    ],
+    "url": "https://www.last.fm/music/Thomas+Lemmer"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,121 @@
+{
+  "artist_name": "Doctor Hz",
+  "artist_id": "doctor_hz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:30:37.890132+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Doctor Hz', got 'Spin Doctors'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Doctor Hz",
+    "mbid": "",
+    "listeners": 144366,
+    "playcount": 1837360,
+    "listener_play_ratio": 12.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Doctor+Hz\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "ULXI",
+      "Mind & Ears",
+      "Everywhere Brown Noise",
+      "exodar",
+      "Fortuna"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sands (Noise)",
+        "listeners": 59990,
+        "playcount": 365830
+      },
+      {
+        "name": "Gentle Fade Brown Noise",
+        "listeners": 46852,
+        "playcount": 278600
+      },
+      {
+        "name": "Brown Noise Healing",
+        "listeners": 40195,
+        "playcount": 236743
+      },
+      {
+        "name": "Alpha Waves 150 Hz - 158 Hz",
+        "listeners": 21651,
+        "playcount": 90089
+      },
+      {
+        "name": "Magical Pink Noise Serenity",
+        "listeners": 18291,
+        "playcount": 153263
+      },
+      {
+        "name": "Pink Noise Frequency Bliss",
+        "listeners": 17057,
+        "playcount": 118606
+      },
+      {
+        "name": "Pink Noise Medium Depth",
+        "listeners": 16872,
+        "playcount": 121455
+      },
+      {
+        "name": "Alchemy of Peace 528 Hz",
+        "listeners": 11869,
+        "playcount": 47482
+      },
+      {
+        "name": "Beta Waves 149 Hz - 171 Hz",
+        "listeners": 10553,
+        "playcount": 33114
+      },
+      {
+        "name": "Compass of Peace 528 Hz",
+        "listeners": 8782,
+        "playcount": 36174
+      }
+    ],
+    "url": "https://www.last.fm/music/Doctor+Hz"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

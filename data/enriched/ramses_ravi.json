@@ -1,0 +1,86 @@
+{
+  "artist_name": "Ramses Ravi",
+  "artist_id": "ramses_ravi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:36:44.144687+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Ramses Ravi', got 'Ramses Rico'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ramses Ravi",
+    "mbid": "",
+    "listeners": 3627,
+    "playcount": 8095,
+    "listener_play_ratio": 2.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ramses+Ravi\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Embershine Air",
+      "Dust Of Stars",
+      "Cashmere Cove",
+      "Aiden Solace",
+      "Brkati Madjinca"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lugnet",
+        "listeners": 2502,
+        "playcount": 5053
+      },
+      {
+        "name": "Destination dawn",
+        "listeners": 1154,
+        "playcount": 3041
+      },
+      {
+        "name": "Chakra Cortex",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Ramses+Ravi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

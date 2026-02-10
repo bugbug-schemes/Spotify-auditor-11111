@@ -1,0 +1,545 @@
+{
+  "artist_name": "Men I Trust",
+  "artist_id": "men_i_trust",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:39:24.439117+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "25ab7547-a4d2-480b-b028-c7f3497bc858",
+    "type": "Group",
+    "country": "CA",
+    "area": "Canada",
+    "begin_date": "2014-02-06",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "downtempo",
+      "pop",
+      "shoegaze",
+      "alternative",
+      "indie pop",
+      "neo-psychedelia",
+      "dream pop",
+      "indie dance",
+      "sophisti-pop",
+      "bedroom pop"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000471256580"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003730150",
+      "bandcamp": "https://menitrust.bandcamp.com/",
+      "bandsintown": "https://www.bandsintown.com/a/10983481",
+      "blog": "https://menitrust.tumblr.com/",
+      "discogs": "https://www.discogs.com/artist/3869640",
+      "free streaming": "https://www.deezer.com/artist/6390014",
+      "last.fm": "https://www.last.fm/music/Men+I+Trust",
+      "lyrics": "https://genius.com/artists/Men-i-trust",
+      "official homepage": "http://www.menitrust.com/",
+      "other databases": "https://rateyourmusic.com/artist/men-i-trust",
+      "setlistfm": "https://www.setlist.fm/setlists/men-i-trust-23cf6043.html",
+      "social network": "https://www.tiktok.com/@menitrust",
+      "songkick": "https://www.songkick.com/artists/8640089",
+      "soundcloud": "https://soundcloud.com/men-i-trust",
+      "streaming": "https://tidal.com/artist/5726607",
+      "wikidata": "https://www.wikidata.org/wiki/Q54901464",
+      "youtube": "https://www.youtube.com/channel/UCOzZL8Sd8V8yFGWqOHnVqFA"
+    },
+    "labels": [
+      "Rallye Label",
+      "Dead Oceans",
+      "Return to Analog",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6390014,
+    "name": "Men I Trust",
+    "nb_fan": 67327,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/6390014",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6ba5514f705f2d77a99ee62a28aa358a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Show Me How",
+      "Numb",
+      "Tree Among Shrubs",
+      "Billie Toppy",
+      "You Deserve This",
+      "Lauren",
+      "Sorbitol",
+      "Seven",
+      "Carried Away",
+      "Come Back Down",
+      "Sugar",
+      "Tailwhip",
+      "All Night",
+      "Hard To See",
+      "To Ease You",
+      "I Hope to Be Around",
+      "Found Me",
+      "I Come With Mud",
+      "Heavenly Flow",
+      "Serenade of Water",
+      "Ring Of Past (2025)",
+      "Ring of Past",
+      "All My Candles",
+      "Bethlehem",
+      "Frost Bite"
+    ],
+    "track_durations": [
+      215,
+      219,
+      188,
+      195,
+      185,
+      223,
+      179,
+      225,
+      207,
+      195,
+      176,
+      225,
+      188,
+      212,
+      192,
+      206,
+      212,
+      291,
+      174,
+      186,
+      202,
+      202,
+      169,
+      199,
+      161
+    ],
+    "track_ranks": [
+      699251,
+      514021,
+      541797,
+      512910,
+      490981,
+      568906,
+      604810,
+      522541,
+      415259,
+      514576,
+      444995,
+      531477,
+      406838,
+      485498,
+      485380,
+      460376,
+      369094,
+      430683,
+      463221,
+      422822,
+      415506,
+      382958,
+      442379,
+      465232,
+      367840
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 9,
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "Equus Caballus",
+        "label": "",
+        "release_date": "2025-05-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Equus Asinus",
+        "label": "",
+        "release_date": "2025-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forever Live Sessions, Vol. 2",
+        "label": "",
+        "release_date": "2025-01-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at RBC Echo Beach",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Untourable Album",
+        "label": "",
+        "release_date": "2023-12-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forever Live Sessions",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Oncle Jazz",
+        "label": "",
+        "release_date": "2019-09-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Headroom",
+        "label": "",
+        "release_date": "2024-08-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Men I Trust",
+        "label": "",
+        "release_date": "2014-05-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Husk",
+        "label": "",
+        "release_date": "2024-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ring of Past",
+        "label": "",
+        "release_date": "2024-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Girl",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Billie Toppy",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hard to Let Go",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tides",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lucky Sue",
+        "label": "",
+        "release_date": "2024-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Norton Commander (All We Need)",
+        "label": "",
+        "release_date": "2022-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Numb",
+        "label": "",
+        "release_date": "2024-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Say, Can You Hear",
+        "label": "",
+        "release_date": "2024-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tailwhip (Miki Bangs Remix)",
+        "label": "",
+        "release_date": "2018-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seven",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Show Me How",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Hope to Be Around",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tailwhip",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Deserve This",
+        "label": "",
+        "release_date": "2024-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Plain View",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lauren",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Humming Man",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Break For Lovers (feat. Helena Deland)",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Crumb",
+      "Mac Demarco",
+      "Alice Phoebe Lou",
+      "strongboi",
+      "The Marías",
+      "Loving",
+      "Tokyo Tea Room",
+      "Puma Blue",
+      "Hether",
+      "Mild High Club"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3869640,
+    "name": "Men I Trust",
+    "profile": "Indie pop band from Montreal, Québec, Canada.\r\n\r\nFounded by high school friends [a4767900] and [a5661419] in 2012. In 2013 the band was joined by the classically trained vocalist [a4685661], and in 2015 [a4685660] joined the band to form a quartet.",
+    "realname": "",
+    "social_urls": [
+      "http://www.menitrust.com",
+      "http://menitrust.bandcamp.com",
+      "https://soundcloud.com/men-i-trust",
+      "https://www.facebook.com/menitrust",
+      "https://www.instagram.com/menitrust/",
+      "https://twitter.com/menitrust",
+      "https://www.youtube.com/menitrust",
+      "https://www.setlist.fm/setlists/men-i-trust-23cf6043.html",
+      "https://genius.com/artists/Men-i-trust",
+      "https://en.wikipedia.org/wiki/Men_I_Trust"
+    ],
+    "members": [
+      "Emmanuelle Proulx",
+      "Odile Marmet-Rochefort",
+      "Jessy Caron",
+      "Dragos Chiriac"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 35,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "10xCD, Comp + Box, Comp",
+      "2xCass, Comp",
+      "30xFile, MP3, Comp",
+      "56xFile, MP3, Comp, 192",
+      "6xFile, FLAC, MiniAlbum",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "File, AAC, Single, 256",
+      "File, AIFF, Single",
+      "File, FLAC",
+      "File, FLAC, Single",
+      "File, FLAC, Single, 16-",
+      "File, FLAC, Single, 24-",
+      "File, MP3, Single, 320",
+      "File, MP3, WAV, S/Edition",
+      "LP, Comp, Yel"
+    ],
+    "labels": [
+      "BRBR",
+      "Festival OFF De Québec",
+      "HZRX",
+      "Not On Label (Men I Trust Self-released)",
+      "Nova Records",
+      "Nova Records, Wagram Music",
+      "Rallye Label",
+      "Return To Analog, Return To Analog",
+      "Vinyl Moon"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Men I Trust",
+    "mbid": "25ab7547-a4d2-480b-b028-c7f3497bc858",
+    "listeners": 2116102,
+    "playcount": 121962018,
+    "listener_play_ratio": 57.64,
+    "bio_exists": true,
+    "bio_summary": "Men I Trust is Dragos, Emma, Jessy, Mathieu and Alexis. Founded in 2014, the dance band from Montreal, Canada loves smooth sounds, calm melodies and simple rhythms that relax, but make your right foot tap and your chin bounce on the beats. They record, mix, master and shoot their music videos. \n\nJessy and Dragos knew each other since their fourth year of high school. Back then (mid-2000’s), Dragos had somewhat of a background in classical piano and Jessy mastered the dark and esoteric art of the",
+    "tags": [
+      "dream pop",
+      "indie pop",
+      "indie",
+      "Sophisti-Pop",
+      "downtempo"
+    ],
+    "similar_artists": [
+      "Tokyo Tea Room",
+      "strongboi",
+      "The Marías",
+      "MUNYA",
+      "Crumb"
+    ],
+    "top_tracks": [
+      {
+        "name": "Show Me How",
+        "listeners": 1603821,
+        "playcount": 26458753
+      },
+      {
+        "name": "Oncle Jazz",
+        "listeners": 816429,
+        "playcount": 6040569
+      },
+      {
+        "name": "Numb",
+        "listeners": 728839,
+        "playcount": 7006758
+      },
+      {
+        "name": "Tree Among Shrubs",
+        "listeners": 595955,
+        "playcount": 5430721
+      },
+      {
+        "name": "Sugar",
+        "listeners": 529720,
+        "playcount": 4519115
+      },
+      {
+        "name": "Lauren",
+        "listeners": 464655,
+        "playcount": 3426003
+      },
+      {
+        "name": "I Hope to Be Around",
+        "listeners": 453920,
+        "playcount": 3481267
+      },
+      {
+        "name": "Seven",
+        "listeners": 446147,
+        "playcount": 3350056
+      },
+      {
+        "name": "Billie Toppy",
+        "listeners": 334899,
+        "playcount": 2253914
+      },
+      {
+        "name": "All Night",
+        "listeners": 330200,
+        "playcount": 2274806
+      }
+    ],
+    "url": "https://www.last.fm/music/Men+I+Trust"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

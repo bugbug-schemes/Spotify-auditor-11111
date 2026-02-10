@@ -1,0 +1,211 @@
+{
+  "artist_name": "Sun Mirage",
+  "artist_id": "sun_mirage",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:30:13.274831+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 123830442,
+    "name": "Sun Mirage",
+    "nb_fan": 27,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/123830442",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f6563927c1917030020aa2b849b3b64c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "White Dust",
+      "Slow Rain"
+    ],
+    "track_durations": [
+      242,
+      230
+    ],
+    "track_ranks": [
+      152390,
+      84758
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Agadir",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desert Mirrors",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carressing The Space",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equality",
+        "label": "",
+        "release_date": "2021-05-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's all clear now",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "MÒZÂMBÎQÚE",
+      "Der Waldläufer",
+      "Beyhude",
+      "Riccardo Eberspacher",
+      "Satchmode",
+      "Eric Hilton",
+      "Thanassis Vassilopoulos",
+      "DJ Ravin",
+      "Aron Estocolmo",
+      "Jero Nougues"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8900614,
+    "name": "Sun Mirage",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "File, AAC"
+    ],
+    "labels": [
+      "Symphonos Italia"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sun Mirage",
+    "mbid": "",
+    "listeners": 17869,
+    "playcount": 75778,
+    "listener_play_ratio": 4.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sun+Mirage\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Zoo Pool",
+      "Kate Paul",
+      "Znoijk",
+      "Alinno",
+      "Plomb"
+    ],
+    "top_tracks": [
+      {
+        "name": "Slow Rain",
+        "listeners": 9078,
+        "playcount": 28811
+      },
+      {
+        "name": "White Dust",
+        "listeners": 7956,
+        "playcount": 29929
+      },
+      {
+        "name": "It's all clear now",
+        "listeners": 4377,
+        "playcount": 12743
+      },
+      {
+        "name": "Leaning Backwards",
+        "listeners": 1104,
+        "playcount": 3157
+      },
+      {
+        "name": "Confide In Me",
+        "listeners": 175,
+        "playcount": 367
+      },
+      {
+        "name": "Agadir",
+        "listeners": 83,
+        "playcount": 147
+      },
+      {
+        "name": "Desert Mirrors",
+        "listeners": 68,
+        "playcount": 124
+      },
+      {
+        "name": "The Puzzle",
+        "listeners": 66,
+        "playcount": 121
+      },
+      {
+        "name": "Equality",
+        "listeners": 56,
+        "playcount": 190
+      },
+      {
+        "name": "Carressing The Space",
+        "listeners": 39,
+        "playcount": 65
+      }
+    ],
+    "url": "https://www.last.fm/music/Sun+Mirage"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

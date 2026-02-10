@@ -1,0 +1,216 @@
+{
+  "artist_name": "Moonhollow",
+  "artist_id": "moonhollow",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:49:51.353532+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327399181,
+    "name": "Moonhollow",
+    "nb_fan": 1,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/327399181",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/474caab6fd1d67ec1150d76a1e3442f2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Lazy Night River",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ocarina of Time Sleep",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Midnight Skies",
+        "label": "",
+        "release_date": "2025-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nordic Legends",
+        "label": "",
+        "release_date": "2025-08-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Transforming in Still Waters",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unfolding Moon",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vento",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Afterlight Currents",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Orbital Drift",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "dreamscape of night",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft as We Remembered",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gravity Drift",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vila",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Moonhollow",
+    "mbid": "",
+    "listeners": 19901,
+    "playcount": 63664,
+    "listener_play_ratio": 3.2,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Moonhollow\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isoflimmasy",
+      "Lavona",
+      "Aurelia Drift",
+      "Muqamar",
+      "Astra Sky"
+    ],
+    "top_tracks": [
+      {
+        "name": "Vila",
+        "listeners": 11044,
+        "playcount": 26440
+      },
+      {
+        "name": "Soft as We Remembered",
+        "listeners": 3906,
+        "playcount": 10187
+      },
+      {
+        "name": "Orbital Drift",
+        "listeners": 2814,
+        "playcount": 14042
+      },
+      {
+        "name": "Afterlight Currents",
+        "listeners": 2598,
+        "playcount": 7008
+      },
+      {
+        "name": "dreamscape of night",
+        "listeners": 1104,
+        "playcount": 3154
+      },
+      {
+        "name": "Unfolding Moon",
+        "listeners": 892,
+        "playcount": 2832
+      },
+      {
+        "name": "Transforming in Still Waters",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Moonhollow"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,166 @@
+{
+  "artist_name": "Jasper Sylvaire",
+  "artist_id": "jasper_sylvaire",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:25:13.390199+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 243701782,
+    "name": "Jasper Sylvaire",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/243701782",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2bf2bba2c80e580efe3599593419cc94/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Teeny Tiny Baby Birds",
+      "The Working Maid",
+      "Go Tell Aunt Rhody"
+    ],
+    "track_durations": [
+      87,
+      101,
+      107
+    ],
+    "track_ranks": [
+      26609,
+      55518,
+      8892
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "The Little Harbor",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "仕事はじめ (ピアノ)『魔女の宅急便』より",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Working Maid",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Teeny Tiny Baby Birds",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Go Tell Aunt Rhody",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jasper Sylvaire",
+    "mbid": "",
+    "listeners": 7242,
+    "playcount": 184775,
+    "listener_play_ratio": 25.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jasper+Sylvaire\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Graham Lullington",
+      "Gil Sunniver",
+      "Otis Meadow",
+      "Ishaq Love",
+      "Leo Button"
+    ],
+    "top_tracks": [
+      {
+        "name": "Go Tell Aunt Rhody",
+        "listeners": 4673,
+        "playcount": 61114
+      },
+      {
+        "name": "The Working Maid",
+        "listeners": 4451,
+        "playcount": 61893
+      },
+      {
+        "name": "Teeny Tiny Baby Birds",
+        "listeners": 4174,
+        "playcount": 58396
+      },
+      {
+        "name": "The Little Harbor",
+        "listeners": 575,
+        "playcount": 3353
+      },
+      {
+        "name": "仕事はじめ (ピアノ)『魔女の宅急便』より",
+        "listeners": 14,
+        "playcount": 18
+      },
+      {
+        "name": "The Bear is Sleeping",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Jasper+Sylvaire"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

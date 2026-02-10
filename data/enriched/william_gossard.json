@@ -1,0 +1,136 @@
+{
+  "artist_name": "William Gossard",
+  "artist_id": "william_gossard",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:59:40.806351+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183393377,
+    "name": "William Gossard",
+    "nb_fan": 1,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/183393377",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/eb32b4ba3a0fc6f86c661fc36b48cfa3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Head To Toe"
+    ],
+    "track_durations": [
+      124
+    ],
+    "track_ranks": [
+      1313
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Peaches and Cream",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Head To Toe",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little One",
+        "label": "",
+        "release_date": "2020-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "William Gossard",
+    "mbid": "",
+    "listeners": 6995,
+    "playcount": 93970,
+    "listener_play_ratio": 13.43,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/William+Gossard\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Leanne Haughey",
+      "Michael Chausson",
+      "Tom Abott",
+      "Vincent Lundborg",
+      "Jordan Avery"
+    ],
+    "top_tracks": [
+      {
+        "name": "Peaches and Cream",
+        "listeners": 4395,
+        "playcount": 59666
+      },
+      {
+        "name": "Head To Toe",
+        "listeners": 2411,
+        "playcount": 24474
+      },
+      {
+        "name": "Little One",
+        "listeners": 1461,
+        "playcount": 9691
+      },
+      {
+        "name": "My Bunny",
+        "listeners": 29,
+        "playcount": 139
+      }
+    ],
+    "url": "https://www.last.fm/music/William+Gossard"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

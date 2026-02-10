@@ -1,0 +1,223 @@
+{
+  "artist_name": "Pass Sacaglia",
+  "artist_id": "pass_sacaglia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:22:17.482321+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 279486521,
+    "name": "Pass Sacaglia",
+    "nb_fan": 4,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/279486521",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/468856ca38dd74814427a2c8a887ea07/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Peter och Petra (julsagor av Astrid Lindgren)",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En Dag När Du Blir Stor",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Milestone",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fall",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Left",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goliath",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miss You",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somewhere In My Memory",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Voices",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nocturne",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Abandoned",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pass Sacaglia",
+    "mbid": "",
+    "listeners": 22461,
+    "playcount": 100413,
+    "listener_play_ratio": 4.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pass+Sacaglia\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Yeer Ifinies",
+      "Fryken",
+      "Dustin Tomas",
+      "Emilio Chiara",
+      "Jaime Jacobs"
+    ],
+    "top_tracks": [
+      {
+        "name": "Abandoned",
+        "listeners": 17378,
+        "playcount": 86282
+      },
+      {
+        "name": "Somewhere In My Memory",
+        "listeners": 3192,
+        "playcount": 8081
+      },
+      {
+        "name": "Nocturne",
+        "listeners": 2602,
+        "playcount": 6022
+      },
+      {
+        "name": "Miss You",
+        "listeners": 5,
+        "playcount": 11
+      },
+      {
+        "name": "En Dag När Du Blir Stor",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Voices",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Goliath",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Fall",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Echoes",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Left",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Pass+Sacaglia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

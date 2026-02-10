@@ -1,0 +1,198 @@
+{
+  "artist_name": "Sulah Jordan",
+  "artist_id": "sulah_jordan",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:26:39.077829+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d66e377d-0623-466c-9095-21c4407129b3",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 207093277,
+    "name": "Sulah Jordan",
+    "nb_fan": 49,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/207093277",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0bfbe7fb6bf2c8a39fd1305872e4546f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Sweetest Gift",
+      "Jasmine"
+    ],
+    "track_durations": [
+      213,
+      461
+    ],
+    "track_ranks": [
+      443598,
+      112073
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Lady Bug",
+        "label": "",
+        "release_date": "2023-06-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Sweetest Gift",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Intertwine",
+      "Jackson Mico Milas",
+      "Andy Shauf",
+      "RY X",
+      "Arooj Aftab",
+      "Patrick Watson",
+      "Peder",
+      "Dekker",
+      "Kings of Convenience",
+      "Jeff Alexander"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15948387,
+    "name": "Sulah Jordan",
+    "profile": "Artist based in Oakland, CA",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/sulahjordan/",
+      "https://sulahjordan.bandcamp.com/music"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "12\", EP"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sulah Jordan",
+    "mbid": "d66e377d-0623-466c-9095-21c4407129b3",
+    "listeners": 9471,
+    "playcount": 33126,
+    "listener_play_ratio": 3.5,
+    "bio_exists": true,
+    "bio_summary": "Long time Bay Area artistic collaborator. <a href=\"https://www.last.fm/music/Sulah+Jordan\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "jazz",
+      "san francisco",
+      "groove"
+    ],
+    "similar_artists": [
+      "Lone Mesa",
+      "Gonubie",
+      "Moon Mullins",
+      "Kirk Barley",
+      "foshe"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Sweetest Gift",
+        "listeners": 4916,
+        "playcount": 10729
+      },
+      {
+        "name": "Jasmine",
+        "listeners": 4731,
+        "playcount": 15553
+      },
+      {
+        "name": "Large Leaves from Old Trees",
+        "listeners": 1024,
+        "playcount": 2813
+      },
+      {
+        "name": "Musée Mélancolique",
+        "listeners": 908,
+        "playcount": 2919
+      },
+      {
+        "name": "Goodnight Buggy",
+        "listeners": 414,
+        "playcount": 1109
+      },
+      {
+        "name": "Jasmin",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "thirty one candles",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sulah+Jordan"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

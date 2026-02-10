@@ -1,0 +1,142 @@
+{
+  "artist_name": "bonaira",
+  "artist_id": "bonaira",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:12:32.968816+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "480b0924-3abc-4fca-b52e-85af6919605b",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0DSl0jXUEASDzduwv7VOgQ",
+      "streaming": "https://music.apple.com/gb/artist/1726563898"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'bonaira', got 'Gojira'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "bonaira",
+    "mbid": "",
+    "listeners": 12089,
+    "playcount": 36667,
+    "listener_play_ratio": 3.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/bonaira\">Read more on Last.fm</a>",
+    "tags": [
+      "House",
+      "chillout",
+      "electronic"
+    ],
+    "similar_artists": [
+      "Bear Frantz",
+      "liily day",
+      "Buysea",
+      "Yavuz Grill",
+      "sugar namnam"
+    ],
+    "top_tracks": [
+      {
+        "name": "One More Time",
+        "listeners": 6179,
+        "playcount": 14388
+      },
+      {
+        "name": "All Together",
+        "listeners": 3469,
+        "playcount": 7041
+      },
+      {
+        "name": "head east",
+        "listeners": 1707,
+        "playcount": 3840
+      },
+      {
+        "name": "Let It Ride",
+        "listeners": 1292,
+        "playcount": 2911
+      },
+      {
+        "name": "Unwritten",
+        "listeners": 1073,
+        "playcount": 2664
+      },
+      {
+        "name": "Falling Water",
+        "listeners": 1072,
+        "playcount": 2390
+      },
+      {
+        "name": "Dottie Ottie",
+        "listeners": 943,
+        "playcount": 1921
+      },
+      {
+        "name": "Paper Tiger",
+        "listeners": 638,
+        "playcount": 1477
+      },
+      {
+        "name": "Infititude",
+        "listeners": 19,
+        "playcount": 22
+      },
+      {
+        "name": "Sky High",
+        "listeners": 4,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/bonaira"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

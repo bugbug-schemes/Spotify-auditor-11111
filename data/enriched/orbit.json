@@ -1,0 +1,485 @@
+{
+  "artist_name": "orbit",
+  "artist_id": "orbit",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:28:00.589805+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b31f213c-fb1d-4acf-936e-38b7eb0edd75",
+    "type": "Group",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1994",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000107287380"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000405080",
+      "discogs": "https://www.discogs.com/artist/975506",
+      "official homepage": "http://www.orbitband.com/",
+      "other databases": "https://rateyourmusic.com/artist/orbit",
+      "social network": "https://www.facebook.com/orbitband",
+      "wikidata": "https://www.wikidata.org/wiki/Q7100031"
+    },
+    "labels": [
+      "A&M Records",
+      "Lunch Records",
+      "Breakfast Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 194410217,
+    "name": "orbit",
+    "nb_fan": 854,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/194410217",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3be6021757ec328ceca1039ac9bb405c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Parra For Cuva",
+      "Post Meridiem",
+      "Sillage",
+      "aiden gore"
+    ],
+    "contributor_roles": {
+      "Post Meridiem": [
+        "Main"
+      ],
+      "Parra For Cuva": [
+        "Main"
+      ],
+      "Sillage": [
+        "Main"
+      ],
+      "aiden gore": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Missing The Moon",
+      "Friday Night",
+      "Shining",
+      "Perspectives",
+      "Time in the Afternoon",
+      "Follow Don't Follow",
+      "You",
+      "Rewind",
+      "Awake",
+      "WildPlaces_Demo_140422_3",
+      "Ocean",
+      "Blue_Demo_100422_3",
+      "3AMStillAlive_Demo_120422_6",
+      "Berlin",
+      "Heat",
+      "Youth",
+      "Treasure",
+      "Acacia",
+      "Call Me at Midnight",
+      "Losing",
+      "Blind Eyed",
+      "makelovecauseyouregonnadie",
+      "Perspectives (Live at Studio Tessmar)",
+      "You Could Be",
+      "Regional Trains_Demo"
+    ],
+    "track_durations": [
+      212,
+      229,
+      214,
+      223,
+      227,
+      244,
+      242,
+      188,
+      192,
+      168,
+      242,
+      135,
+      433,
+      202,
+      224,
+      278,
+      185,
+      224,
+      160,
+      258,
+      329,
+      92,
+      327,
+      131,
+      246
+    ],
+    "track_ranks": [
+      273154,
+      395670,
+      222389,
+      330841,
+      257000,
+      181369,
+      273479,
+      357012,
+      230595,
+      51991,
+      310874,
+      87610,
+      196027,
+      277398,
+      231780,
+      286741,
+      163263,
+      215303,
+      108709,
+      229122,
+      174100,
+      115928,
+      215094,
+      126179,
+      127239
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 5,
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Countless Feelings But So Few Words",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Demos",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sunday by the River",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Fever Dreams",
+        "label": "",
+        "release_date": "2022-05-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Summer Someday",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Perspectives (Live Session)",
+        "label": "",
+        "release_date": "2020-10-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Perspectives",
+        "label": "",
+        "release_date": "2020-02-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Acacia",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heat",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rewind",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shining",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Friday Night (live)",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Around the World",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time in the Afternooon",
+        "label": "",
+        "release_date": "2021-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Catching Flies",
+      "Marsh",
+      "LE YOUTH",
+      "Eli & Fur",
+      "Leaving Laurel",
+      "Sultan + Shepard",
+      "Schoonebeek",
+      "Nora En Pure",
+      "TWO LANES",
+      "Robby East"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2728,
+    "name": "William Orbit",
+    "profile": "English dance music producer, born in Shoreditch, Hackney, on 15 December 1956. One of the founders of [l=Guerilla] Records, named after his studio, and [l=O Records (4)].",
+    "realname": "William Mark Wainwright",
+    "social_urls": [
+      "http://www.williamorbit.com",
+      "http://williamorbit.bandcamp.com",
+      "http://www.facebook.com/WilliamOrbit",
+      "http://www.flickr.com/photos/williamorbit",
+      "http://www.imdb.com/name/nm0649414",
+      "http://www.instagram.com/williamorbit",
+      "http://www.last.fm/music/William+Orbit",
+      "http://www.mixcloud.com/williamorbit",
+      "http://myspace.com/williamorbit",
+      "http://soundcloud.com/williamorbit",
+      "http://soundcloud.com/orbit-symphonic",
+      "http://www.tiktok.com/@williamorbit",
+      "http://twitter.com/WilliamOrbit",
+      "http://twitter.com/thebillybuttons",
+      "http://en.wikipedia.org/wiki/William_Orbit",
+      "http://www.youtube.com/channel/UCCRjh2zgym30QBK4QO9ZyMw",
+      "http://www.youtube.com/channel/UCA474NzbPJkfhMQPWz5kM2Q"
+    ],
+    "members": [],
+    "groups": [
+      "Bassomatic",
+      "Torch Song",
+      "Invisible (2)",
+      "Spill",
+      "L.A.P.D. (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 29,
+    "digital_only_releases": 69,
+    "total_releases": 98,
+    "formats": [
+      "",
+      "15xFile, FLAC, Album, 24-",
+      "15xFile, WAV, Album, 24-",
+      "16xFile, WAV, Album, 24-",
+      "2xCD, Comp",
+      "2xCD, Comp, Promo",
+      "2xLP, RSD, Comp, Cle",
+      "30xFile, AAC, Comp, Mixed",
+      "3xCD, Album + Box, Comp, Sli",
+      "3xCD, Comp",
+      "3xCDr, Comp, Mixed, Promo",
+      "4xFile, MP3, 256 + File, MPEG-4 Video, 310 + EP",
+      "7\", Promo",
+      "7\", Single, Promo",
+      "Acetate, 12\"",
+      "Box, Comp + 2xCD, Comp, RE, RM + CD, Comp, RE",
+      "Box, Comp, Ltd + 10\", Single, RM + LP, Album, RE, ",
+      "CD, Album, RE + CD, Album, RE + CD, Comp, RE + CD,",
+      "CD, Comp",
+      "CD, Comp, Ltd, RM",
+      "CD, Promo, Smplr",
+      "CDr, Comp",
+      "CDr, Promo, Smplr",
+      "CDr, Single, Promo",
+      "Cass, Comp, Promo, Smplr",
+      "Cass, Promo, Smplr",
+      "Cass, Smplr",
+      "Comp + 2xCD + DVD-V",
+      "File, FLAC, Mixed",
+      "File, FLAC, Single",
+      "File, MP3, Mixed, 320",
+      "File, MP3, Single, 320",
+      "File, WAV",
+      "File, WAV, 24-"
+    ],
+    "labels": [
+      "Anjunabeats",
+      "Crimson",
+      "Crimson, Crimson",
+      "DMC",
+      "Decca",
+      "Demon Records",
+      "EMI",
+      "Embassy Of Music",
+      "Heavy Disco (2)",
+      "Hi-Bias Records",
+      "I.R.S. No Speak",
+      "I.R.S. Records",
+      "KCRW",
+      "Kitchen Spasm Podcast",
+      "Kompakt",
+      "London Records",
+      "Maverick",
+      "Music Club Deluxe, Rhino Records (2)",
+      "Mute, Mute",
+      "New State Music",
+      "Not On Label",
+      "Not On Label (Steve Eagle Self-released)",
+      "Not On Label (William Orbit Self-released)",
+      "Rhino Records (2)",
+      "Sanctuary",
+      "Sony Music Entertainment Asia Inc.",
+      "Sony Music, Rhino Records (2), Universal Music TV",
+      "UMC, UMC",
+      "Universal Music Publishing, Rondor Music",
+      "Virgin Records Ltd.",
+      "WEA",
+      "Warner Music France",
+      "Warner Music Group, Atlantic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Orbit",
+    "mbid": "b31f213c-fb1d-4acf-936e-38b7eb0edd75",
+    "listeners": 101898,
+    "playcount": 1009374,
+    "listener_play_ratio": 9.91,
+    "bio_exists": true,
+    "bio_summary": "There are four acts that share the name Orbit:\n\nOrbit is an alternative rock band from Massachusetts active during the 1990s and early 2000s and headed by Jeff Robbins. The group began playing shows on the East Coast, building enough of a buzz to attract the attention of A&M Records, who released their 1997 debut LP Libido Speedway. The album spawned the single \"Medicine,\" which received modest radio and video play. The band toured the festival circuit nationally but eventually were dropped by A",
+    "tags": [
+      "indie",
+      "electronic",
+      "All",
+      "alternative rock",
+      "rock"
+    ],
+    "similar_artists": [
+      "Jerry Folk",
+      "passmurny",
+      "Zimmer",
+      "Henry Green",
+      "Sir Sly"
+    ],
+    "top_tracks": [
+      {
+        "name": "Friday Night",
+        "listeners": 27610,
+        "playcount": 152747
+      },
+      {
+        "name": "Perspectives",
+        "listeners": 17114,
+        "playcount": 117340
+      },
+      {
+        "name": "Follow Don't Follow",
+        "listeners": 14303,
+        "playcount": 56732
+      },
+      {
+        "name": "Ocean",
+        "listeners": 8611,
+        "playcount": 48861
+      },
+      {
+        "name": "Awake",
+        "listeners": 8172,
+        "playcount": 53243
+      },
+      {
+        "name": "Time In The Afternoon",
+        "listeners": 8022,
+        "playcount": 39326
+      },
+      {
+        "name": "Sunday by the River",
+        "listeners": 5950,
+        "playcount": 16894
+      },
+      {
+        "name": "Missing the Moon",
+        "listeners": 5575,
+        "playcount": 26666
+      },
+      {
+        "name": "Acacia",
+        "listeners": 5203,
+        "playcount": 15439
+      },
+      {
+        "name": "Medicine",
+        "listeners": 4912,
+        "playcount": 25897
+      }
+    ],
+    "url": "https://www.last.fm/music/Orbit"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

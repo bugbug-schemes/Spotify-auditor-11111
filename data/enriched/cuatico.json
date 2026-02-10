@@ -1,0 +1,192 @@
+{
+  "artist_name": "Cuatico",
+  "artist_id": "cuatico",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:16:57.083151+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 61342262,
+    "name": "Cuaticos Bro",
+    "nb_fan": 5,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/61342262",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/747f533cc3becdf0184a51163509b125/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Made In Pobla",
+        "label": "",
+        "release_date": "2024-02-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Del Principio al Final",
+        "label": "",
+        "release_date": "2022-08-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Admirar",
+        "label": "",
+        "release_date": "2025-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Original",
+        "label": "",
+        "release_date": "2025-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Causa",
+        "label": "",
+        "release_date": "2025-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hay Muchas Razones",
+        "label": "",
+        "release_date": "2025-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Triste Pero Cierto",
+        "label": "",
+        "release_date": "2024-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hay Mil Maneras",
+        "label": "",
+        "release_date": "2023-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "De La Rbro",
+        "label": "",
+        "release_date": "2023-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En la Cheno de los Tomuer",
+        "label": "",
+        "release_date": "2023-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Viejos Tiempos Volverán",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cuatico",
+    "mbid": "",
+    "listeners": 7121,
+    "playcount": 19043,
+    "listener_play_ratio": 2.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cuatico\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Celestine Steller",
+      "Isoflimmasy",
+      "Ayla Nenura",
+      "Ali Silva",
+      "Alembra"
+    ],
+    "top_tracks": [
+      {
+        "name": "Glass Air",
+        "listeners": 6405,
+        "playcount": 17468
+      },
+      {
+        "name": "Trace",
+        "listeners": 759,
+        "playcount": 1563
+      },
+      {
+        "name": "Unboxing Lapiz Táctil Pasivo CUATICO",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "The Falling",
+        "listeners": 1,
+        "playcount": 7
+      },
+      {
+        "name": "Eldertree",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Cuatico"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

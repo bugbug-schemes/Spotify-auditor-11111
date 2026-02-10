@@ -1,0 +1,119 @@
+{
+  "artist_name": "F. Garling",
+  "artist_id": "f__garling",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:33:32.598152+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 328057551,
+    "name": "F. Garling",
+    "nb_fan": 1,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/328057551",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b94534c024307073c96fd0cc0c18311d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Glimpse"
+    ],
+    "track_durations": [
+      125
+    ],
+    "track_ranks": [
+      72448
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Velvet Sky",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glimpse",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "F. Garling",
+    "mbid": "",
+    "listeners": 2291,
+    "playcount": 6727,
+    "listener_play_ratio": 2.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/F.+Garling\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "David Sereno",
+      "Eric Nilson",
+      "Jeremiah River",
+      "Jonas Kahnberg",
+      "Mateo Morel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Glimpse",
+        "listeners": 2068,
+        "playcount": 6061
+      },
+      {
+        "name": "Velvet Sky",
+        "listeners": 289,
+        "playcount": 666
+      }
+    ],
+    "url": "https://www.last.fm/music/F.+Garling"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

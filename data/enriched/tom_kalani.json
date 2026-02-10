@@ -1,0 +1,229 @@
+{
+  "artist_name": "Tom Kalani",
+  "artist_id": "tom_kalani",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:44:36.154508+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 113987842,
+    "name": "Tom Kalani",
+    "nb_fan": 5,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/113987842",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d325bbb1f6fc2868068041f69a6527f2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Bull’s Eye",
+      "Immersive",
+      "Target"
+    ],
+    "track_durations": [
+      150,
+      120,
+      183
+    ],
+    "track_ranks": [
+      62713,
+      33139,
+      96772
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Space Time",
+        "label": "",
+        "release_date": "2023-03-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Atmospheric",
+        "label": "",
+        "release_date": "2019-12-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "After This",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Immersive",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cordwood",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lighthouse",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Microverse",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Youth and Us",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bull’s Eye",
+        "label": "",
+        "release_date": "2022-02-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clusters",
+        "label": "",
+        "release_date": "2021-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Target",
+        "label": "",
+        "release_date": "2019-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tom Kalani",
+    "mbid": "",
+    "listeners": 30727,
+    "playcount": 79428,
+    "listener_play_ratio": 2.58,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tom+Kalani\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sulfur Springs",
+      "William Duhamel",
+      "Light of Sun",
+      "Threading Hair",
+      "La Acacia"
+    ],
+    "top_tracks": [
+      {
+        "name": "Target",
+        "listeners": 12205,
+        "playcount": 29004
+      },
+      {
+        "name": "Bull’s Eye",
+        "listeners": 9532,
+        "playcount": 22004
+      },
+      {
+        "name": "Immersive",
+        "listeners": 5307,
+        "playcount": 9497
+      },
+      {
+        "name": "Focal Point",
+        "listeners": 5232,
+        "playcount": 14524
+      },
+      {
+        "name": "Microverse",
+        "listeners": 994,
+        "playcount": 2122
+      },
+      {
+        "name": "Focused Projections",
+        "listeners": 825,
+        "playcount": 1872
+      },
+      {
+        "name": "Atmospheric",
+        "listeners": 106,
+        "playcount": 217
+      },
+      {
+        "name": "Look Inside",
+        "listeners": 44,
+        "playcount": 68
+      },
+      {
+        "name": "Abundance",
+        "listeners": 19,
+        "playcount": 50
+      },
+      {
+        "name": "Clusters",
+        "listeners": 7,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Tom+Kalani"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

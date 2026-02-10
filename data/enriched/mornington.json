@@ -1,0 +1,402 @@
+{
+  "artist_name": "Mornington",
+  "artist_id": "mornington",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:50:44.709713+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3265d2cf-520b-4a54-86dd-35b55c193d22",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/15178271",
+      "purchase for download": "https://music.apple.com/us/artist/1649023205",
+      "streaming": "https://tidal.com/artist/13681548",
+      "youtube music": "https://music.youtube.com/channel/UC26XPf5FRJVj9ZPMSdJempg"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 15178271,
+    "name": "Mornington",
+    "nb_fan": 2,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/15178271",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2af8880883c9f241756281ba9392473c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Blue Light",
+      "I Mean To Say",
+      "Lost in Love",
+      "Open Fields",
+      "Nickel For The Moon",
+      "Blues for Holly",
+      "Santa's Lonely Sleigh Miles"
+    ],
+    "track_durations": [
+      182,
+      217,
+      231,
+      225,
+      194,
+      212,
+      157
+    ],
+    "track_ranks": [
+      101653,
+      109001,
+      8913,
+      7879,
+      21170,
+      22759,
+      5961
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "Nickel For The Moon",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Santa's Lonely Sleigh Miles",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Auburn Letters",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Flew By",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Light",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gemini",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maeve",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blues for Holly",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Humid Windows",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost in Love",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Fields",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Agua de Rio",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Mean To Say",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Candela",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Why Did I Choose You",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In The Old Fashioned Way",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Windfall",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crossways",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lover Man",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Man I Love",
+        "label": "",
+        "release_date": "2021-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Embraceble You",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 509366,
+    "name": "Mornington Lockett",
+    "profile": "British jazz saxophonist, born 19 November 1961.",
+    "realname": "Mornington Edward Lockett",
+    "social_urls": [
+      "http://morningtonbloggit.blogspot.com/",
+      "https://en.wikipedia.org/wiki/Mornington_Lockett"
+    ],
+    "members": [],
+    "groups": [
+      "Sax Appeal",
+      "Stan Tracey Octet",
+      "Stan Tracey And His Orchestra",
+      "THE NEW COURIERS",
+      "The Andrea Vicari Band",
+      "The Don Weller Big Band",
+      "Gregory Fine Quintet"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 40,
+    "digital_only_releases": 40,
+    "total_releases": 80,
+    "formats": [
+      "",
+      "12\", EP",
+      "2xCD",
+      "2xCD, Album",
+      "2xCD, Comp",
+      "2xCD, Comp, S/Edition",
+      "CD",
+      "CD, Album",
+      "CD, Album, RE + CD, Album, RE + Comp",
+      "CD, Comp",
+      "CDr, Album, RM",
+      "Cass, Album",
+      "DVD-V, Comp, Reg",
+      "LP, Album"
+    ],
+    "labels": [
+      "33 Records",
+      "Avant Magazine",
+      "Background Radiation",
+      "Candid",
+      "Castle Pie",
+      "Chillifunk Records",
+      "Croatia Records, Jazzette",
+      "EFZ",
+      "EMI TV",
+      "Fallen Angel (2), Fallen Angel (2)",
+      "Fireball Records (8)",
+      "Jazz On CD",
+      "Jazzette",
+      "Jazzizit Records",
+      "M Records (4)",
+      "Mark Fletcher Records",
+      "Music Maker Records",
+      "Not On Label",
+      "Not On Label (25th Street Band Self-released)",
+      "Not On Label (Gregory Fine Self-released)",
+      "Passion Jazz",
+      "RSJH Music Ltd",
+      "Resteamed",
+      "Ronnie Scott's Jazz House",
+      "Secret Records (8)",
+      "Secret Records Limited",
+      "Slam Productions",
+      "Trio Records (3)",
+      "cdvine Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mornington",
+    "mbid": "3265d2cf-520b-4a54-86dd-35b55c193d22",
+    "listeners": 32667,
+    "playcount": 96167,
+    "listener_play_ratio": 2.94,
+    "bio_exists": true,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mornington\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Belmont Central",
+      "Odo Lefebvre",
+      "Mabon Clarke Quartet",
+      "Lennie Zimmerman + 3",
+      "The Boston Four"
+    ],
+    "top_tracks": [
+      {
+        "name": "In The Old Fashioned Way",
+        "listeners": 17767,
+        "playcount": 40302
+      },
+      {
+        "name": "Lost in Love",
+        "listeners": 5166,
+        "playcount": 9250
+      },
+      {
+        "name": "Blues for Holly",
+        "listeners": 4643,
+        "playcount": 8049
+      },
+      {
+        "name": "Watch What Happens",
+        "listeners": 4115,
+        "playcount": 11113
+      },
+      {
+        "name": "Windfall",
+        "listeners": 4105,
+        "playcount": 11412
+      },
+      {
+        "name": "I Mean To Say",
+        "listeners": 3147,
+        "playcount": 7623
+      },
+      {
+        "name": "Embraceble You",
+        "listeners": 1479,
+        "playcount": 4988
+      },
+      {
+        "name": "Nickel For The Moon",
+        "listeners": 652,
+        "playcount": 1173
+      },
+      {
+        "name": "Open Fields",
+        "listeners": 432,
+        "playcount": 776
+      },
+      {
+        "name": "Maeve",
+        "listeners": 94,
+        "playcount": 178
+      }
+    ],
+    "url": "https://www.last.fm/music/Mornington"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

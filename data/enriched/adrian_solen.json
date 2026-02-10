@@ -1,0 +1,163 @@
+{
+  "artist_name": "Adrian Solen",
+  "artist_id": "adrian_solen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:43:46.734805+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 329809301,
+    "name": "Adrian Solen",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/329809301",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/467ef7be2b92ae42c919ca06c5a1892a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Kites",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drift",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Distant Shorelines",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Longing",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meadows",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Story",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Adrian Solen",
+    "mbid": "",
+    "listeners": 2588,
+    "playcount": 11791,
+    "listener_play_ratio": 4.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Adrian+Solen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Antoine FAURÉ",
+      "Magnus Sakamura",
+      "Naskal",
+      "Thiago Hernan",
+      "Sigrid Vega"
+    ],
+    "top_tracks": [
+      {
+        "name": "Longing",
+        "listeners": 1886,
+        "playcount": 7270
+      },
+      {
+        "name": "Kites",
+        "listeners": 847,
+        "playcount": 2638
+      },
+      {
+        "name": "Dream",
+        "listeners": 293,
+        "playcount": 765
+      },
+      {
+        "name": "Meadows",
+        "listeners": 258,
+        "playcount": 524
+      },
+      {
+        "name": "Love Story",
+        "listeners": 232,
+        "playcount": 594
+      }
+    ],
+    "url": "https://www.last.fm/music/Adrian+Solen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,154 @@
+{
+  "artist_name": "Rex Miller",
+  "artist_id": "rex_miller",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:41:47.709632+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "409530cf-833b-4833-a39e-1d3aea0e1ab7",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Rex Miller', got 'Tor Miller'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2591037,
+    "name": "Rex Miller",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 0,
+    "total_releases": 3,
+    "formats": [
+      "CD, Album",
+      "LP"
+    ],
+    "labels": [
+      "Indiana Memorial Union Board",
+      "Kookamonga"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rex Miller",
+    "mbid": "8d548987-3ab5-42af-99f4-f75b1df25bbb",
+    "listeners": 9251,
+    "playcount": 56088,
+    "listener_play_ratio": 6.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rex+Miller\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Harris Barron",
+      "Troy Mair",
+      "Elsa Roberts",
+      "Brennan Lynch",
+      "Nilo Almeida"
+    ],
+    "top_tracks": [
+      {
+        "name": "Closing Time",
+        "listeners": 4398,
+        "playcount": 12350
+      },
+      {
+        "name": "Hark! The Herald Angels Sing",
+        "listeners": 1982,
+        "playcount": 8816
+      },
+      {
+        "name": "Suo Gan",
+        "listeners": 1720,
+        "playcount": 18289
+      },
+      {
+        "name": "I Gave my Love a Cherry",
+        "listeners": 1530,
+        "playcount": 13387
+      },
+      {
+        "name": "Away In A Manger",
+        "listeners": 814,
+        "playcount": 1853
+      },
+      {
+        "name": "Tiny Voyages",
+        "listeners": 353,
+        "playcount": 775
+      },
+      {
+        "name": "Star Pockets",
+        "listeners": 60,
+        "playcount": 319
+      },
+      {
+        "name": "What a Wonderful World",
+        "listeners": 59,
+        "playcount": 183
+      },
+      {
+        "name": "Pastel Moons",
+        "listeners": 31,
+        "playcount": 101
+      },
+      {
+        "name": "Ringo's Doctor",
+        "listeners": 6,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Rex+Miller"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

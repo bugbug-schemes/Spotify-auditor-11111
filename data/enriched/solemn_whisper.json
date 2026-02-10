@@ -1,0 +1,189 @@
+{
+  "artist_name": "Solemn Whisper",
+  "artist_id": "solemn_whisper",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:10:22.823447+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 128358922,
+    "name": "Solemn Whisper",
+    "nb_fan": 5,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/128358922",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bdee995d6c6ec56e280901b7eecd54af/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Ozoner"
+    ],
+    "track_durations": [
+      184
+    ],
+    "track_ranks": [
+      25218
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Blue Christmas",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BTBT",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Make It To Christmas",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Holly Jolly Christmas",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Makes Sense Now",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Tough Hand",
+        "label": "",
+        "release_date": "2021-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ozoner",
+        "label": "",
+        "release_date": "2021-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Solemn Whisper",
+    "mbid": "",
+    "listeners": 25751,
+    "playcount": 67010,
+    "listener_play_ratio": 2.6,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Solemn+Whisper\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jillian Wasser",
+      "Vanya Sogaya",
+      "Grace Valiery",
+      "Gioia Pisano",
+      "Loreto Bianco"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Tough Hand",
+        "listeners": 17014,
+        "playcount": 38919
+      },
+      {
+        "name": "Ozoner",
+        "listeners": 6604,
+        "playcount": 18317
+      },
+      {
+        "name": "Blue Christmas",
+        "listeners": 3947,
+        "playcount": 9728
+      },
+      {
+        "name": "All Makes Sense Now",
+        "listeners": 7,
+        "playcount": 11
+      },
+      {
+        "name": "A Holly Jolly Christmas",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Vallecito Road",
+        "listeners": 3,
+        "playcount": 21
+      },
+      {
+        "name": "Little Milena",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Xantoma",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Make It To Christmas",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Solemn+Whisper"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

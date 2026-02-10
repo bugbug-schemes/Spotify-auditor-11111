@@ -1,0 +1,548 @@
+{
+  "artist_name": "FLO",
+  "artist_id": "flo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:33:58.928167+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6ecae756-cfa6-4011-ae56-e8d9c4be447a",
+    "type": "Group",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "2019",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "girl-group",
+      "pop",
+      "r&b",
+      "british"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000507857426"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0004304941",
+      "discogs": "https://www.discogs.com/artist/11020616",
+      "free streaming": "https://www.deezer.com/artist/168790157",
+      "lyrics": "https://genius.com/artists/Flo",
+      "official homepage": "http://flolikethis.com/",
+      "purchase for download": "https://mora.jp/artist/1557766/",
+      "social network": "https://www.tiktok.com/@flolikethis",
+      "streaming": "https://tidal.com/artist/3729557",
+      "wikidata": "https://www.wikidata.org/wiki/Q111548374",
+      "youtube": "https://www.youtube.com/channel/UCncZTnZmk67PuIZowdGe5zw"
+    },
+    "labels": [
+      "Raedio LLC",
+      "Island Records Group",
+      "Atlantic",
+      "Universal Music TV",
+      "Island",
+      "0207 Def Jam"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 168790157,
+    "name": "FLO",
+    "nb_fan": 20404,
+    "nb_album": 28,
+    "link": "https://www.deezer.com/artist/168790157",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9c3ff301ca740ead421db64ba1cd8e66/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Chlöe",
+      "Chy Cartier",
+      "Dixson",
+      "GloRilla",
+      "Halle",
+      "Happi",
+      "KAYTRANADA",
+      "Missy Elliott"
+    ],
+    "contributor_roles": {
+      "Chy Cartier": [
+        "Main"
+      ],
+      "KAYTRANADA": [
+        "Main"
+      ],
+      "GloRilla": [
+        "Main"
+      ],
+      "Happi": [
+        "Main"
+      ],
+      "Missy Elliott": [
+        "Featured"
+      ],
+      "Dixson": [
+        "Main"
+      ],
+      "Chlöe": [
+        "Main"
+      ],
+      "Halle": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Check",
+      "Recently Deleted",
+      "Get It Till I’m Gone (Remix)",
+      "Walk Like This",
+      "The Mood",
+      "In My Bag",
+      "Cardboard Box (Happi Remix)",
+      "Caught Up",
+      "Say Less",
+      "Cardboard Box",
+      "Conceited",
+      "Fly Girl",
+      "Summertime",
+      "Soft",
+      "IWH2BMX",
+      "Not My Job",
+      "I'm Just A Girl",
+      "Bending My Rules (Unlocked)",
+      "Nocturnal",
+      "Bending My Rules",
+      "Shoulda Woulda Coulda",
+      "Do Too Much",
+      "Soft (Unlocked)",
+      "On & On",
+      "Feature Me"
+    ],
+    "track_durations": [
+      163,
+      228,
+      225,
+      197,
+      172,
+      188,
+      151,
+      230,
+      185,
+      161,
+      153,
+      205,
+      146,
+      130,
+      162,
+      178,
+      142,
+      286,
+      120,
+      223,
+      232,
+      200,
+      191,
+      202,
+      201
+    ],
+    "track_ranks": [
+      457280,
+      493857,
+      406778,
+      487494,
+      460637,
+      464703,
+      405352,
+      328170,
+      204886,
+      294740,
+      203387,
+      511049,
+      267992,
+      380872,
+      214390,
+      363232,
+      199651,
+      63257,
+      228050,
+      371364,
+      353205,
+      239791,
+      381677,
+      230877,
+      228793
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 3,
+      "ep": 6,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "Access All Areas",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Access All Areas: Unlocked",
+        "label": "",
+        "release_date": "2024-11-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Access All Areas: Unlocked",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Mood (Remixes)",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Check",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "3 of Us",
+        "label": "",
+        "release_date": "2023-07-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "3 of Us",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Lead",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Lead",
+        "label": "",
+        "release_date": "2022-09-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Mood",
+        "label": "",
+        "release_date": "2025-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get It Till I'm Gone (Remix)",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "AAA",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bending My Rules",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Check (Acoustic)",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caught Up",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Walk Like This",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Walk Like This (Strut Speed)",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fly Girl (Magicsticks Remix)",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fly Girl (Eliza Rose Remix)",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fly Girl",
+        "label": "",
+        "release_date": "2023-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing You",
+        "label": "",
+        "release_date": "2022-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cardboard Box (Happi Remix)",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Immature",
+        "label": "",
+        "release_date": "2022-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cardboard Box (Acoustic)",
+        "label": "",
+        "release_date": "2022-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cardboard Box",
+        "label": "",
+        "release_date": "2022-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cardboard Box (Studio Vocals)",
+        "label": "",
+        "release_date": "2023-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cardboard Box (Instrumental)",
+        "label": "",
+        "release_date": "2023-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cardboard Box (Sped Up)",
+        "label": "",
+        "release_date": "2023-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Normani",
+      "Chlöe",
+      "Halle",
+      "Tinashe",
+      "Kehlani",
+      "Chloe x Halle",
+      "Victoria Monét",
+      "Chxrry",
+      "No Guidnce",
+      "Amelia Moore"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11020616,
+    "name": "FLO (119)",
+    "profile": "Flo (stylised in uppercase) is a British girl group from London consisting of members Jorja Douglas, Stella Quaresma, and Renée Downer. \r\nThe group formed in 2019 and signed to Island Records. The trio released their debut single \"Cardboard Box\", which gained popularity on social media.\r\nThe single was featured on their extended play, The Lead (2022). The success of their extended play led the group to receive the 2023 Brit Award for Rising Star, becoming the first all female group to win the award.",
+    "realname": "",
+    "social_urls": [
+      "https://www.flolikethis.com",
+      "https://www.facebook.com/flolikethis",
+      "https://www.instagram.com/flolikethis",
+      "https://open.spotify.com/artist/0s4kXsjYeH0S1xRyVGN4NO?",
+      "https://www.tiktok.com/@flolikethis",
+      "https://en.wikipedia.org/wiki/Flo_(group)",
+      "https://x.com/flolikethis",
+      "http://www.youtube.com/@flolikethis"
+    ],
+    "members": [
+      "Jorja Douglas",
+      "Renée Downer",
+      "Stella Quaresma"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 17,
+    "total_releases": 24,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xCDr, Comp, Promo",
+      "9xFile, FLAC, EP, 24-",
+      "CDr, Comp",
+      "CDr, Comp, M/Print",
+      "CDr, Comp, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single"
+    ],
+    "labels": [
+      "DMC",
+      "DMC, DMC",
+      "DMC, DMC, DMC",
+      "EMI, Sony Music, EMI, Sony Music",
+      "Island Records",
+      "RCA"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "FLO",
+    "mbid": "6ecae756-cfa6-4011-ae56-e8d9c4be447a",
+    "listeners": 549561,
+    "playcount": 30698793,
+    "listener_play_ratio": 55.86,
+    "bio_exists": true,
+    "bio_summary": "FLO is a British R&B trio featuring Jorja Douglas, Stella Quaresma, and Renée Downer. They debuted in 2022 with the single \"Cardboard Box\" and released their first EP \"The Lead\" the same year, followed by \"3 of Us\" in 2023.\n\nIn 2024, FLO continued their rise to stardom with the bold single Walk Like This, which gained traction on TikTok with various dances. They followed up with the slower, guitar-focused Caught Up, and then shifted gears with Check, a fun, fast-paced pop track  which saw them s",
+    "tags": [
+      "rnb",
+      "pop",
+      "soul",
+      "dubstep",
+      "United Kingdom"
+    ],
+    "similar_artists": [
+      "Chlöe",
+      "Victoria Monét",
+      "Coco Jones",
+      "Jae Stephens",
+      "Normani"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cardboard Box",
+        "listeners": 218650,
+        "playcount": 3180995
+      },
+      {
+        "name": "Fly Girl (feat. Missy Elliott)",
+        "listeners": 174222,
+        "playcount": 1953645
+      },
+      {
+        "name": "Check",
+        "listeners": 152839,
+        "playcount": 2330697
+      },
+      {
+        "name": "Walk Like This",
+        "listeners": 150301,
+        "playcount": 2102625
+      },
+      {
+        "name": "Summertime",
+        "listeners": 146025,
+        "playcount": 1846802
+      },
+      {
+        "name": "Feature Me",
+        "listeners": 125320,
+        "playcount": 1609375
+      },
+      {
+        "name": "In My Bag (feat. GloRilla)",
+        "listeners": 124962,
+        "playcount": 1476811
+      },
+      {
+        "name": "Not My Job",
+        "listeners": 121932,
+        "playcount": 1637131
+      },
+      {
+        "name": "Immature",
+        "listeners": 119192,
+        "playcount": 1687411
+      },
+      {
+        "name": "Caught Up",
+        "listeners": 92664,
+        "playcount": 1031543
+      }
+    ],
+    "url": "https://www.last.fm/music/FLO"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

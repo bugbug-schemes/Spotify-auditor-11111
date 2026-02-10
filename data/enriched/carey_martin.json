@@ -1,0 +1,142 @@
+{
+  "artist_name": "Carey Martin",
+  "artist_id": "carey_martin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:58:01.828804+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Carey Martin', got 'Charly Martin'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10088725,
+    "name": "Carey Martin",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Carey Martin",
+    "mbid": "",
+    "listeners": 2732,
+    "playcount": 37370,
+    "listener_play_ratio": 13.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Carey+Martin\">Read more on Last.fm</a>",
+    "tags": [
+      "the real boss ass bitch of the universe spreading the words of god to us the basic white nonbelievers slay saint carey martin the truth teller",
+      "queen of pop",
+      "better than eminem he aint shit tha carey queen merry christmas all i want for christmas is to slay your fave drag them drag em hoes",
+      "slay them basics queen of pop drag them white bitches",
+      "wtf is a hotel"
+    ],
+    "similar_artists": [
+      "Mathilda Nuit",
+      "Ellis Harlow",
+      "Rob Cradles",
+      "Kim Savege",
+      "Snuggle Land"
+    ],
+    "top_tracks": [
+      {
+        "name": "Shoo Fly Don't Bother Me",
+        "listeners": 1066,
+        "playcount": 8182
+      },
+      {
+        "name": "Midnight Hush",
+        "listeners": 946,
+        "playcount": 8749
+      },
+      {
+        "name": "Ears Hang Low",
+        "listeners": 789,
+        "playcount": 13791
+      },
+      {
+        "name": "Butterfly Lullaby",
+        "listeners": 314,
+        "playcount": 1054
+      },
+      {
+        "name": "Humpty Dumpty",
+        "listeners": 285,
+        "playcount": 3866
+      },
+      {
+        "name": "Pop Goes the Weasel",
+        "listeners": 175,
+        "playcount": 1708
+      },
+      {
+        "name": "Sleepy Waltz",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Sweet Dreams",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Free Time / Kids Are a Waste (Intro)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Who Needs Kids?",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Carey+Martin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

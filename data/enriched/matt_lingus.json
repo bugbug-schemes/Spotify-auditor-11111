@@ -1,0 +1,244 @@
+{
+  "artist_name": "Matt Lingus",
+  "artist_id": "matt_lingus",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:33:30.092170+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 85251512,
+    "name": "Matt Lingus",
+    "nb_fan": 15,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/85251512",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cb9aaa817a4d980085e1e1b60a51455b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Autumn Leaves",
+      "You Don't Know What Love Is",
+      "Black Orpheus"
+    ],
+    "track_durations": [
+      206,
+      222,
+      220
+    ],
+    "track_ranks": [
+      100996,
+      105493,
+      116318
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Sleepless Hours",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dear Old Stockholm",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once Upon A Summertime",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Misty",
+        "label": "",
+        "release_date": "2022-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepless Hours",
+        "label": "",
+        "release_date": "2022-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Don't Know What Love Is",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hymn",
+        "label": "",
+        "release_date": "2022-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Don't Know What Love Is",
+        "label": "",
+        "release_date": "2021-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Black Orpheus",
+        "label": "",
+        "release_date": "2021-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Funny Valentine",
+        "label": "",
+        "release_date": "2021-02-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn Leaves",
+        "label": "",
+        "release_date": "2020-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once Upon A Summertime",
+        "label": "",
+        "release_date": "2020-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonely Woman",
+        "label": "",
+        "release_date": "2020-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Matt Lingus",
+    "mbid": "",
+    "listeners": 45005,
+    "playcount": 357641,
+    "listener_play_ratio": 7.95,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Matt+Lingus\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Stan Stead",
+      "Louie Martin",
+      "George Alec",
+      "Lee Bendroth",
+      "Edward France"
+    ],
+    "top_tracks": [
+      {
+        "name": "Autumn Leaves",
+        "listeners": 20429,
+        "playcount": 106027
+      },
+      {
+        "name": "Dear Old Stockholm",
+        "listeners": 14493,
+        "playcount": 67595
+      },
+      {
+        "name": "You Don't Know What Love Is",
+        "listeners": 13695,
+        "playcount": 69638
+      },
+      {
+        "name": "Hymn",
+        "listeners": 12261,
+        "playcount": 70113
+      },
+      {
+        "name": "Lonely Woman",
+        "listeners": 4384,
+        "playcount": 16219
+      },
+      {
+        "name": "Black Orpheus",
+        "listeners": 4312,
+        "playcount": 13853
+      },
+      {
+        "name": "Once Upon A Summertime",
+        "listeners": 3276,
+        "playcount": 7587
+      },
+      {
+        "name": "Sleepless Hours",
+        "listeners": 2131,
+        "playcount": 4684
+      },
+      {
+        "name": "My Funny Valentine",
+        "listeners": 1006,
+        "playcount": 1845
+      },
+      {
+        "name": "You Don't Know What Love Is (LOFI JAZZ)",
+        "listeners": 21,
+        "playcount": 42
+      }
+    ],
+    "url": "https://www.last.fm/music/Matt+Lingus"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

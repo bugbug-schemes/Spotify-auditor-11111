@@ -1,0 +1,519 @@
+{
+  "artist_name": "GlobulDub",
+  "artist_id": "globuldub",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:53:44.955649+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7925d23f-8817-4044-9c0d-e2e91a35d128",
+    "type": "Person",
+    "country": "",
+    "area": "Paris",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi hip hop",
+      "instrumental hip hop",
+      "lo-fi",
+      "hip hop",
+      "chillwave",
+      "instrumental",
+      "boom bap",
+      "downtempo"
+    ],
+    "aliases": [
+      "Alexandre Flavian"
+    ],
+    "isnis": [],
+    "ipis": [
+      "00391760834"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/5102660",
+      "free streaming": "https://www.deezer.com/artist/10107774",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/globuldub/2606707",
+      "soundcloud": "https://soundcloud.com/globuldub",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/globuldub/2606707",
+      "youtube music": "https://music.youtube.com/channel/UCpjX4EGpySHACXYC8AIeODg"
+    },
+    "labels": [
+      "Dreamhop Music",
+      "Lofi Records",
+      "The Jazz Hop Café",
+      "Stereofox Records",
+      "Chill Masters Records",
+      "Hip Dozer",
+      "ChilledCow Records",
+      "Soundplate Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10107774,
+    "name": "GlobulDub",
+    "nb_fan": 424,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/10107774",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2e902be2ef8f73f340cc91870fc7f1bc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Fred Paci"
+    ],
+    "contributor_roles": {
+      "Fred Paci": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Catnap",
+      "Late Night Tales",
+      "Sail",
+      "Heatwave",
+      "Foreign Exchange",
+      "Bus Ride",
+      "Hinterlands",
+      "Finally Breathing",
+      "Sweet Memories",
+      "Waves",
+      "Caffeine Clouds",
+      "Night Cat",
+      "First Snow",
+      "Deep Breath",
+      "Cushion Cloud",
+      "Outer Wilds",
+      "Signals",
+      "Limbo",
+      "La Habana",
+      "Quiet Lake",
+      "Comfort Nest",
+      "Cocoon",
+      "Warm Sip",
+      "Small Things",
+      "Fly Away"
+    ],
+    "track_durations": [
+      124,
+      178,
+      147,
+      129,
+      177,
+      151,
+      207,
+      204,
+      170,
+      194,
+      135,
+      164,
+      178,
+      145,
+      133,
+      146,
+      160,
+      216,
+      172,
+      147,
+      146,
+      142,
+      161,
+      144,
+      188
+    ],
+    "track_ranks": [
+      479835,
+      402219,
+      408913,
+      166353,
+      197240,
+      154237,
+      104408,
+      77861,
+      219657,
+      85977,
+      31828,
+      98622,
+      39873,
+      26422,
+      34175,
+      10833,
+      91385,
+      146079,
+      31203,
+      43977,
+      31688,
+      8950,
+      2221,
+      39530,
+      187248
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 7,
+      "single": 91
+    },
+    "albums": [
+      {
+        "title": "Timber Hearth",
+        "label": "",
+        "release_date": "2023-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Firewatch",
+        "label": "",
+        "release_date": "2021-12-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Treehouse Tapes",
+        "label": "",
+        "release_date": "2025-05-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Safe Inside",
+        "label": "",
+        "release_date": "2025-03-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Highlands EP",
+        "label": "",
+        "release_date": "2024-08-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Outer Wilds",
+        "label": "",
+        "release_date": "2021-03-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Blue Woods",
+        "label": "",
+        "release_date": "2021-02-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Self Care",
+        "label": "",
+        "release_date": "2019-07-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lost Beats",
+        "label": "",
+        "release_date": "2018-04-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bus Ride",
+        "label": "",
+        "release_date": "2026-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Signals",
+        "label": "",
+        "release_date": "2026-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caffeine Clouds",
+        "label": "",
+        "release_date": "2025-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ribbons",
+        "label": "",
+        "release_date": "2025-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Inner Currents",
+        "label": "",
+        "release_date": "2025-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bamboo Eyes",
+        "label": "",
+        "release_date": "2025-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sun Bleached",
+        "label": "",
+        "release_date": "2025-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heatwave",
+        "label": "",
+        "release_date": "2025-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Cove",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Week / Bedtime",
+        "label": "",
+        "release_date": "2025-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Breath",
+        "label": "",
+        "release_date": "2025-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Polar Hush",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Oak",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Comfort Blend",
+        "label": "",
+        "release_date": "2024-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snuggle",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fireside Brew",
+        "label": "",
+        "release_date": "2024-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After Hours",
+        "label": "",
+        "release_date": "2024-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evening Glow",
+        "label": "",
+        "release_date": "2024-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Malibu",
+        "label": "",
+        "release_date": "2024-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ipanema",
+        "label": "",
+        "release_date": "2024-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring Swing",
+        "label": "",
+        "release_date": "2024-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Casiio",
+      "Softy",
+      "S N U G",
+      "Mondo Loops",
+      "Hevi",
+      "Jhove",
+      "Dontcry",
+      "Tibeauthetraveler",
+      "Bcalm",
+      "J'San"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5102660,
+    "name": "GlobulDub",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 4,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "2xLP, Comp",
+      "2xLP, Comp, Ltd",
+      "2xLP, Comp, Num, Lig",
+      "LP, Album, Comp, Ltd"
+    ],
+    "labels": [
+      "Chillhop Music",
+      "Hip Dozer",
+      "Lofi Records (4)",
+      "The Jazz Hop Cafe"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "GlobulDub",
+    "mbid": "7925d23f-8817-4044-9c0d-e2e91a35d128",
+    "listeners": 137715,
+    "playcount": 587500,
+    "listener_play_ratio": 4.27,
+    "bio_exists": true,
+    "bio_summary": "\nHip Hop beat-maker living near Paris. Making beats just for pleasure offered for free at his Bandcamp page.\n\n\n\n <a href=\"https://www.last.fm/music/GlobulDub\">Read more on Last.fm</a>",
+    "tags": [
+      "chillhop",
+      "beats",
+      "french",
+      "france",
+      "instrumental hip-hop"
+    ],
+    "similar_artists": [
+      "Team Astro",
+      "Guggenz",
+      "kainbeats",
+      "Monma",
+      "Prithvi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sail",
+        "listeners": 60901,
+        "playcount": 146011
+      },
+      {
+        "name": "Gone Home",
+        "listeners": 16381,
+        "playcount": 32115
+      },
+      {
+        "name": "Sweet Memories",
+        "listeners": 15804,
+        "playcount": 31412
+      },
+      {
+        "name": "Night Cat",
+        "listeners": 15170,
+        "playcount": 29815
+      },
+      {
+        "name": "Finally Breathing",
+        "listeners": 14720,
+        "playcount": 31617
+      },
+      {
+        "name": "Foreign Exchange",
+        "listeners": 13464,
+        "playcount": 49345
+      },
+      {
+        "name": "Limbo",
+        "listeners": 8647,
+        "playcount": 28562
+      },
+      {
+        "name": "Waves",
+        "listeners": 8624,
+        "playcount": 29268
+      },
+      {
+        "name": "Hinterlands",
+        "listeners": 8618,
+        "playcount": 29530
+      },
+      {
+        "name": "First Rays",
+        "listeners": 7481,
+        "playcount": 24191
+      }
+    ],
+    "url": "https://www.last.fm/music/GlobulDub"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

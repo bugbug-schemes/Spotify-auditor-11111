@@ -1,0 +1,335 @@
+{
+  "artist_name": "Nordic Quartet",
+  "artist_id": "nordic_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:06:17.739298+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "451a28af-d2fd-4f3f-915a-a954f92fffda",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz",
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183261687",
+      "purchase for download": "https://music.apple.com/us/artist/1648790149",
+      "soundcloud": "https://soundcloud.com/nordicquartet",
+      "streaming": "https://tidal.com/artist/34528604",
+      "youtube music": "https://music.youtube.com/channel/UCXzMt1c-Cih88Tx7kZFbJRg"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183261687,
+    "name": "Nordic Quartet",
+    "nb_fan": 5,
+    "nb_album": 18,
+    "link": "https://www.deezer.com/artist/183261687",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a645bb1bbb1431f7db306b46e0b83732/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Sky Is Not the Limit",
+      "Back in Tulsa Again",
+      "Other plans",
+      "Memories of You and Me",
+      "Sunny Days",
+      "Carol of the bells"
+    ],
+    "track_durations": [
+      209,
+      188,
+      214,
+      218,
+      197,
+      169
+    ],
+    "track_ranks": [
+      49355,
+      17752,
+      36724,
+      6894,
+      70267,
+      8926
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "Mistletoe Jive",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carol of the bells",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Other plans",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dans Tes Bras",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From Me to You",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memories of You and Me",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Sky Is Not the Limit",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We Wish You A Merry Christmas (Bossa Version)",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Walking By",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back in Tulsa Again",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Insight",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunny Days",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I´ve Got My Love To Keep Me Warm",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All I Want For Christmas",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Black Narcissus",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Ago And Far Away",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Waltz",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smile",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5823426,
+    "name": "Nordic String Quartet",
+    "profile": "Classical ensemble formed in 2013 after studies at the Royal Danish Academy of Music.",
+    "realname": "",
+    "social_urls": [
+      "https://nordicstringquartet.com/about"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 5,
+    "digital_only_releases": 2,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "11xFile, FLAC, fro",
+      "CD, Album",
+      "SACD, Hybrid, Multichannel"
+    ],
+    "labels": [
+      "Dacapo (4)",
+      "Dacapo Records",
+      "OUR Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "nordic quartet",
+    "mbid": "",
+    "listeners": 34786,
+    "playcount": 92543,
+    "listener_play_ratio": 2.66,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/nordic+quartet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Blue Green",
+      "yorkville",
+      "Foster Davies",
+      "Sodermalm Strand",
+      "WE THREE TRIO"
+    ],
+    "top_tracks": [
+      {
+        "name": "Smile",
+        "listeners": 12709,
+        "playcount": 27751
+      },
+      {
+        "name": "The Sky Is Not the Limit",
+        "listeners": 10377,
+        "playcount": 22303
+      },
+      {
+        "name": "Memories of You and Me",
+        "listeners": 7019,
+        "playcount": 13919
+      },
+      {
+        "name": "Sunny Days",
+        "listeners": 4369,
+        "playcount": 10753
+      },
+      {
+        "name": "Carol of the bells",
+        "listeners": 3410,
+        "playcount": 5749
+      },
+      {
+        "name": "Insight",
+        "listeners": 2619,
+        "playcount": 4453
+      },
+      {
+        "name": "Back in Tulsa Again",
+        "listeners": 2500,
+        "playcount": 4321
+      },
+      {
+        "name": "Dans Tes Bras",
+        "listeners": 803,
+        "playcount": 1355
+      },
+      {
+        "name": "Walking By",
+        "listeners": 799,
+        "playcount": 1641
+      },
+      {
+        "name": "I´ve Got My Love To Keep Me Warm",
+        "listeners": 36,
+        "playcount": 46
+      }
+    ],
+    "url": "https://www.last.fm/music/nordic+quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,184 @@
+{
+  "artist_name": "Constantine",
+  "artist_id": "constantine",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:13:52.346470+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "32f1d5d7-f236-49cb-96e9-662efc3c6fbd",
+    "type": "Group",
+    "country": "FI",
+    "area": "Finland",
+    "begin_date": "2006",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "other databases": "https://www.metal-archives.com/bands/C%C3%B8nstantine/87366",
+      "social network": "https://www.facebook.com/constantineband"
+    },
+    "labels": [
+      "Palokka Records",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Constantine', got 'Cønstantine'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2260579,
+    "name": "Elaine Constantine",
+    "profile": "UK photographer and film director.\r\n(born October 9, 1965, Bury, Lancashire, UK)\r\n\r\n",
+    "realname": "",
+    "social_urls": [
+      "http://www.elaineconstantine.co.uk/",
+      "http://en.wikipedia.org/wiki/Elaine_Constantine",
+      "http://www.industryart.com/artists/elaineconstantine/",
+      "https://www.imdb.com/name/nm4311206/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 32,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "2xCD, Comp, Ltd",
+      "2xLP, Comp",
+      "2xLP, Comp, 180",
+      "6xDVD, Mono, Copy Prot., PAL",
+      "7\", Red + 7\", Gre + 7\", Yel + 7\", Blu + Box, Comp,",
+      "CD, Comp, RE, Sli",
+      "CD, Single, Promo",
+      "LP"
+    ],
+    "labels": [
+      "Demon Records",
+      "Heavenly",
+      "Island Records",
+      "Pearl",
+      "Rhino Records (2)",
+      "Sub Pop, Sub Pop",
+      "The Enclave",
+      "Thunderbird Releasing, Thunderbird Releasing"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Constantine",
+    "mbid": "63008716-28e6-4ebf-9e04-43d663d42182",
+    "listeners": 45810,
+    "playcount": 429670,
+    "listener_play_ratio": 9.38,
+    "bio_exists": true,
+    "bio_summary": "There are at least five artists known as Constantine:\n\n1) http://muppet.wikia.com/wiki/Constantine \n(2014-  )\nConstantine is the world's \"Number One\" criminal and a doppelgänger of Kermit the Frog. He is the main antagonist in the film Muppets Most Wanted, along with his sidekick Dominic Badguy (aka \"Number Two\"). Constantine sets out to steal an enormous diamond. However, mayhem ensues when he gets entangled with the Muppet troupe on their European tour. <a href=\"https://www.last.fm/music/Const",
+    "tags": [
+      "Progressive metal",
+      "instrumental",
+      "heavy metal",
+      "metal",
+      "pop"
+    ],
+    "similar_artists": [
+      "Threshold",
+      "Andy James",
+      "Circus Maximus",
+      "DGM",
+      "Adagio"
+    ],
+    "top_tracks": [
+      {
+        "name": "I'm Number One",
+        "listeners": 14791,
+        "playcount": 96458
+      },
+      {
+        "name": "I'll Get You What You Want (Cockatoo in Malibu)",
+        "listeners": 9081,
+        "playcount": 59340
+      },
+      {
+        "name": "Мозоль",
+        "listeners": 3739,
+        "playcount": 25686
+      },
+      {
+        "name": "Неоновая Ночь",
+        "listeners": 1947,
+        "playcount": 12297
+      },
+      {
+        "name": "Bust Down",
+        "listeners": 1476,
+        "playcount": 6183
+      },
+      {
+        "name": "Bohemian Rhapsody",
+        "listeners": 1462,
+        "playcount": 5900
+      },
+      {
+        "name": "Кровожадность",
+        "listeners": 1431,
+        "playcount": 12068
+      },
+      {
+        "name": "Get Swoll (feat. Kyndra Kennedy)",
+        "listeners": 1394,
+        "playcount": 5823
+      },
+      {
+        "name": "Дороги",
+        "listeners": 909,
+        "playcount": 4700
+      },
+      {
+        "name": "Стыдно",
+        "listeners": 850,
+        "playcount": 6864
+      }
+    ],
+    "url": "https://www.last.fm/music/Constantine"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

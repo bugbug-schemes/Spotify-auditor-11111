@@ -1,0 +1,103 @@
+{
+  "artist_name": "Sunny Léo",
+  "artist_id": "sunny_léo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:30:44.785862+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sunny Léo', got 'Sunny Lax'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12720398,
+    "name": "Sunny Leone",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "12\", Comp"
+    ],
+    "labels": [
+      "Strictly Hits Vinyl Service"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sunny Léo",
+    "mbid": "",
+    "listeners": 14159,
+    "playcount": 30906,
+    "listener_play_ratio": 2.18,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sunny+L%C3%A9o\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lil Francky",
+      "Plaxon",
+      "Dry Season",
+      "Cozeen",
+      "Mareel"
+    ],
+    "top_tracks": [
+      {
+        "name": "All Nighter",
+        "listeners": 12899,
+        "playcount": 28291
+      },
+      {
+        "name": "Ten",
+        "listeners": 1372,
+        "playcount": 2223
+      },
+      {
+        "name": "Naxos Beach",
+        "listeners": 228,
+        "playcount": 392
+      }
+    ],
+    "url": "https://www.last.fm/music/Sunny+L%C3%A9o"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

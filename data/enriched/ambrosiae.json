@@ -1,0 +1,229 @@
+{
+  "artist_name": "Ambrosiae",
+  "artist_id": "ambrosiae",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:55:40.579282+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "752e4a87-eaf3-44c1-b226-f7058c78e926",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183261357",
+      "purchase for download": "https://music.apple.com/us/artist/1649010339",
+      "streaming": "https://tidal.com/artist/34526472",
+      "youtube music": "https://music.youtube.com/channel/UCHrnkTngtvtY7aonp5QWafw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183261357,
+    "name": "Ambrosiae",
+    "nb_fan": 11,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/183261357",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8821d1ab4edff8859b58f4dd426ce172/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Forevermore"
+    ],
+    "track_durations": [
+      154
+    ],
+    "track_ranks": [
+      89819
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Making My Way",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Indispensable",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If I May",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Passed",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forevermore",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daybreak",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trust",
+        "label": "",
+        "release_date": "2022-04-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Places",
+        "label": "",
+        "release_date": "2022-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flow",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ambrosiae",
+    "mbid": "752e4a87-eaf3-44c1-b226-f7058c78e926",
+    "listeners": 88802,
+    "playcount": 386733,
+    "listener_play_ratio": 4.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ambrosiae\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Felix Tanguy",
+      "Alain Pironi",
+      "Moleno",
+      "Les Rêveries",
+      "Luiza Schmidt"
+    ],
+    "top_tracks": [
+      {
+        "name": "Forevermore",
+        "listeners": 56538,
+        "playcount": 203215
+      },
+      {
+        "name": "Trust",
+        "listeners": 37544,
+        "playcount": 124201
+      },
+      {
+        "name": "Places",
+        "listeners": 15086,
+        "playcount": 44865
+      },
+      {
+        "name": "Deep Blue",
+        "listeners": 4217,
+        "playcount": 8705
+      },
+      {
+        "name": "Time Passed",
+        "listeners": 2595,
+        "playcount": 5483
+      },
+      {
+        "name": "Daybreak",
+        "listeners": 40,
+        "playcount": 55
+      },
+      {
+        "name": "Beautiful",
+        "listeners": 30,
+        "playcount": 90
+      },
+      {
+        "name": "If I May",
+        "listeners": 30,
+        "playcount": 35
+      },
+      {
+        "name": "Flow",
+        "listeners": 12,
+        "playcount": 68
+      },
+      {
+        "name": "Indispensable",
+        "listeners": 8,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Ambrosiae"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

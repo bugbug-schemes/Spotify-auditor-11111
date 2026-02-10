@@ -1,0 +1,146 @@
+{
+  "artist_name": "Ethan Élgar",
+  "artist_id": "ethan_élgar",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:31:29.978225+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 294657861,
+    "name": "Ethan Élgar",
+    "nb_fan": 8,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/294657861",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/11ca74e8555e9638feacd3f6042f8abd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "fille ambre",
+        "label": "",
+        "release_date": "2025-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ethan Élgar",
+    "mbid": "",
+    "listeners": 60801,
+    "playcount": 463889,
+    "listener_play_ratio": 7.63,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ethan+%C3%89lgar\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lexi Bradley",
+      "Emmanuel Sapphire",
+      "Arlo Thiem",
+      "Lester Dann",
+      "Hudson Rull"
+    ],
+    "top_tracks": [
+      {
+        "name": "fleur au vent",
+        "listeners": 29120,
+        "playcount": 132309
+      },
+      {
+        "name": "ruisseau",
+        "listeners": 12501,
+        "playcount": 54715
+      },
+      {
+        "name": "lavande",
+        "listeners": 11683,
+        "playcount": 51362
+      },
+      {
+        "name": "chanson de bateau",
+        "listeners": 11667,
+        "playcount": 41007
+      },
+      {
+        "name": "automne",
+        "listeners": 9259,
+        "playcount": 23988
+      },
+      {
+        "name": "dans le parc",
+        "listeners": 7337,
+        "playcount": 34278
+      },
+      {
+        "name": "lumière",
+        "listeners": 6601,
+        "playcount": 15473
+      },
+      {
+        "name": "premier amour",
+        "listeners": 5428,
+        "playcount": 23293
+      },
+      {
+        "name": "voler",
+        "listeners": 5236,
+        "playcount": 26586
+      },
+      {
+        "name": "Berceuse",
+        "listeners": 5055,
+        "playcount": 10908
+      }
+    ],
+    "url": "https://www.last.fm/music/Ethan+%C3%89lgar"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

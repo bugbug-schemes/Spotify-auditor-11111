@@ -1,0 +1,218 @@
+{
+  "artist_name": "Nomad Spector",
+  "artist_id": "nomad_spector",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:05:13.004173+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 197743067,
+    "name": "Nomad Spector",
+    "nb_fan": 9,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/197743067",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1558785771482d687f7bf887e8c65593/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Tide",
+      "Somewhere",
+      "Nowhere",
+      "Intersonic",
+      "Presence",
+      "Cycles"
+    ],
+    "track_durations": [
+      150,
+      126,
+      205,
+      148,
+      152,
+      111
+    ],
+    "track_ranks": [
+      206882,
+      82538,
+      39888,
+      26705,
+      11751,
+      10588
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Pulsation",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somewhere",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Telescoop",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Behind the Moon",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Intersonic",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Presence",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tide",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cycles",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nowhere",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nomad Spector",
+    "mbid": "",
+    "listeners": 53952,
+    "playcount": 195330,
+    "listener_play_ratio": 3.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nomad+Spector\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Space Access",
+      "Wimmel",
+      "The Aiko",
+      "Lifou",
+      "Serenity Within"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tide",
+        "listeners": 24573,
+        "playcount": 64109
+      },
+      {
+        "name": "Somewhere",
+        "listeners": 24111,
+        "playcount": 59254
+      },
+      {
+        "name": "Nowhere",
+        "listeners": 22247,
+        "playcount": 57138
+      },
+      {
+        "name": "Telescoop",
+        "listeners": 5758,
+        "playcount": 10744
+      },
+      {
+        "name": "Intersonic",
+        "listeners": 1709,
+        "playcount": 3590
+      },
+      {
+        "name": "Presence",
+        "listeners": 162,
+        "playcount": 315
+      },
+      {
+        "name": "Cycles",
+        "listeners": 103,
+        "playcount": 158
+      },
+      {
+        "name": "Behind the Moon",
+        "listeners": 10,
+        "playcount": 10
+      },
+      {
+        "name": "Pulsation",
+        "listeners": 8,
+        "playcount": 12
+      }
+    ],
+    "url": "https://www.last.fm/music/Nomad+Spector"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

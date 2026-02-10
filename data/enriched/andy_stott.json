@@ -1,0 +1,453 @@
+{
+  "artist_name": "Andy Stott",
+  "artist_id": "andy_stott",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:00:41.760844+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ecf5ab37-019f-4cc1-9fdc-218de6a41b65",
+    "type": "Person",
+    "country": "",
+    "area": "Manchester",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "electronic",
+      "techno"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000462559141"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000975878",
+      "discography page": "http://www.modern-love.co.uk/artists/andy-stott",
+      "discogs": "https://www.discogs.com/artist/317019",
+      "free streaming": "https://www.deezer.com/artist/1338787",
+      "last.fm": "https://www.last.fm/music/Andy+Stott",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2015010432",
+      "purchase for download": "https://itunes.apple.com/us/artist/id282665089",
+      "social network": "https://www.facebook.com/pages/Andy-Stott/262174253793725",
+      "songkick": "https://www.songkick.com/artists/355537",
+      "streaming": "https://tidal.com/artist/4193227",
+      "VIAF": "http://viaf.org/viaf/307319856",
+      "wikidata": "https://www.wikidata.org/wiki/Q4761358"
+    },
+    "labels": [
+      "Boiler Room",
+      "Modern Love",
+      "[adult swim]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1338787,
+    "name": "Andy Stott",
+    "nb_fan": 7985,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/1338787",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/50d3fbba1ecaef4c392b1feaef19438d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alison Skidmore"
+    ],
+    "contributor_roles": {
+      "Alison Skidmore": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Faith in Strangers",
+      "Luxury Problems",
+      "Hatch the Plan",
+      "Damage",
+      "Science & Industry",
+      "Numb",
+      "Sleepless",
+      "Butterflies",
+      "Time Away",
+      "Lost and Found",
+      "New Romantic",
+      "No Surrender",
+      "It Should Be Us",
+      "Leaving",
+      "0L9",
+      "First Night",
+      "Forgotten",
+      "On My Mind",
+      "Never the right time",
+      "On Oath",
+      "Promises",
+      "Selfish",
+      "Dismantle",
+      "Versi",
+      "Answers"
+    ],
+    "track_durations": [
+      389,
+      303,
+      519,
+      275,
+      332,
+      390,
+      349,
+      263,
+      384,
+      366,
+      339,
+      298,
+      326,
+      222,
+      416,
+      344,
+      347,
+      376,
+      296,
+      488,
+      364,
+      274,
+      256,
+      326,
+      289
+    ],
+    "track_ranks": [
+      313616,
+      267221,
+      159252,
+      160958,
+      166491,
+      250965,
+      214308,
+      161096,
+      157653,
+      207456,
+      245210,
+      117008,
+      181770,
+      121238,
+      63070,
+      149918,
+      148488,
+      145000,
+      40056,
+      224077,
+      71294,
+      138279,
+      97582,
+      164091,
+      26381
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 3,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Never The Right Time",
+        "label": "",
+        "release_date": "2021-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Too Many Voices",
+        "label": "",
+        "release_date": "2016-04-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Faith in Strangers",
+        "label": "",
+        "release_date": "2014-11-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Luxury Problems",
+        "label": "",
+        "release_date": "2012-10-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Unknown Exception",
+        "label": "",
+        "release_date": "2008-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Merciless",
+        "label": "",
+        "release_date": "2006-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "It Should Be Us",
+        "label": "",
+        "release_date": "2019-11-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "We Stay Together",
+        "label": "",
+        "release_date": "2011-10-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Passed Me By",
+        "label": "",
+        "release_date": "2011-05-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hard to Tell",
+        "label": "",
+        "release_date": "2021-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The beginning",
+        "label": "",
+        "release_date": "2021-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Jewel",
+        "label": "",
+        "release_date": "2009-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Burial",
+      "Skee Mask",
+      "Four Tet",
+      "Nicolas Jaar",
+      "Aphex Twin",
+      "Two Lone Swordsmen",
+      "Lusine",
+      "Plaid",
+      "NOSAJ THING",
+      "Max Cooper"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 317019,
+    "name": "Andy Stott",
+    "profile": "British electronic music producer based in Manchester.",
+    "realname": "",
+    "social_urls": [
+      "http://www.facebook.com/pages/Andy-Stott/262174253793725 ",
+      "https://www.instagram.com/andystottmlove/",
+      "https://open.spotify.com/artist/6BuDxEE5rfuYeyhxQsl53K",
+      "http://www.myspace.com/andystott_modernlove",
+      "http://en.wikipedia.org/wiki/Andy_Stott",
+      "https://twitter.com/andystottmlove?"
+    ],
+    "members": [],
+    "groups": [
+      "Hate (14)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 24,
+    "digital_only_releases": 76,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10\", Ltd, W/Lbl",
+      "100xFile, FLAC, Comp",
+      "100xFile, MP3, Comp, 320",
+      "11xFile, MP3, Comp, 320",
+      "12\"",
+      "12\", EP",
+      "12\", S/Sided, Ltd, Tra",
+      "12xFile, WAV, Album + File, WAV, Mixed",
+      "14xFile, MP3, Comp, 320",
+      "18xFile, MP3, Mixed",
+      "2xCD, Comp, Promo",
+      "2xLP, Comp, Die",
+      "3xFile, MP3, Mixed, 320",
+      "5xFile, MP3, EP, 320",
+      "7\", Single",
+      "9xFile, MP3, EP, Comp, 320",
+      "CD, Comp",
+      "CD, Comp, Mixed, Promo",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, Mixed",
+      "CDr, EP, Ltd",
+      "CDr, Promo, Smplr",
+      "Cass, Ltd, Num, C80",
+      "Cass, Mixed, Mixtape, Tra",
+      "File, MP3, Comp, P/Mixed, 320",
+      "File, MP3, Mixed",
+      "File, MP3, Mixed, 160",
+      "File, MP3, Mixed, 192",
+      "File, MP3, Mixed, 320",
+      "File, MP3, Single, 256"
+    ],
+    "labels": [
+      "A Strangely Isolated Place",
+      "Alrealon Musique",
+      "BLCR Laboratories",
+      "Bleep (2)",
+      "Boomkat",
+      "Capsule",
+      "Chanel",
+      "De'fchild Productions",
+      "Domino",
+      "Dpress Industries",
+      "Electronic Explorations",
+      "FACT Magazine",
+      "Funcken Industry",
+      "Go Mag",
+      "Groove",
+      "Hate",
+      "Hypem",
+      "Modern Love",
+      "Mute",
+      "N.E.W.S.",
+      "Norsecircle",
+      "Not On Label",
+      "Not On Label (Sleep D Self-released)",
+      "Not On Label (Yamir Self-released)",
+      "Oath of Janta",
+      "On The Edge (2)",
+      "Pointten Records",
+      "Resident Advisor",
+      "Station Gazo",
+      "Stolen Kisses",
+      "The Revera Corporation",
+      "TheErraticPodcast",
+      "Tri Angle",
+      "[adult swim]",
+      "mnml ssgs"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Andy Stott",
+    "mbid": "ecf5ab37-019f-4cc1-9fdc-218de6a41b65",
+    "listeners": 278934,
+    "playcount": 8758344,
+    "listener_play_ratio": 31.4,
+    "bio_exists": true,
+    "bio_summary": "Manchester, England-based  Dj/producer Andy Stott is a purveyor of smudged and introspective dub techno with an approach that favours leaden tempos and unsettling, sample-based textures. \nin 2011, Stott released two full-length albums, Passed Me By and We Stay Together, both of which received attention from Pitchfork.com and other noteworthy music blogs.\n\n\n\n <a href=\"https://www.last.fm/music/Andy+Stott\">Read more on Last.fm</a>",
+    "tags": [
+      "dub techno",
+      "techno",
+      "minimal techno",
+      "minimal",
+      "electronic"
+    ],
+    "similar_artists": [
+      "Actress",
+      "Demdike Stare",
+      "Millie & Andrea",
+      "Basic Channel",
+      "Shinichi Atobe"
+    ],
+    "top_tracks": [
+      {
+        "name": "Faith In Strangers",
+        "listeners": 131725,
+        "playcount": 829716
+      },
+      {
+        "name": "Violence",
+        "listeners": 81475,
+        "playcount": 501606
+      },
+      {
+        "name": "New Romantic",
+        "listeners": 75587,
+        "playcount": 453600
+      },
+      {
+        "name": "Luxury Problems",
+        "listeners": 71575,
+        "playcount": 386103
+      },
+      {
+        "name": "Numb",
+        "listeners": 62149,
+        "playcount": 337013
+      },
+      {
+        "name": "Sleepless",
+        "listeners": 49643,
+        "playcount": 277656
+      },
+      {
+        "name": "Time Away",
+        "listeners": 48439,
+        "playcount": 209243
+      },
+      {
+        "name": "Leaving",
+        "listeners": 45408,
+        "playcount": 202911
+      },
+      {
+        "name": "Lost and Found",
+        "listeners": 45281,
+        "playcount": 238438
+      },
+      {
+        "name": "Hatch the Plan",
+        "listeners": 43201,
+        "playcount": 223072
+      }
+    ],
+    "url": "https://www.last.fm/music/Andy+Stott"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

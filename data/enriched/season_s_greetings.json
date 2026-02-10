@@ -1,0 +1,199 @@
+{
+  "artist_name": "Season's Greetings",
+  "artist_id": "season_s_greetings",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:57:43.441503+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4116413,
+    "name": "Season's Greetings",
+    "nb_fan": 2,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/4116413",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f3c3f8d3724c8ee6f8f79dbda1643bf4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "A December to Remember"
+    ],
+    "track_durations": [
+      219
+    ],
+    "track_ranks": [
+      6896
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "The Glittering Hollow of Midwinter",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Helping Santa",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A December to Remember",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It Came Upon A Midnight Clear",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Away In A Manger",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8055538,
+    "name": "Season's Greetings",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "Cass, Album, RE",
+      "Cass, Comp"
+    ],
+    "labels": [
+      "CA Productions",
+      "Enjoy (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Season's Greetings",
+    "mbid": "",
+    "listeners": 10879,
+    "playcount": 25207,
+    "listener_play_ratio": 2.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Season%27s+Greetings\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "New Dawn Jazz Trio",
+      "Trio Lexington",
+      "The Blue Alley",
+      "Bernina Quartet",
+      "Gus Anderson"
+    ],
+    "top_tracks": [
+      {
+        "name": "A December to Remember",
+        "listeners": 9345,
+        "playcount": 16561
+      },
+      {
+        "name": "Helping Santa",
+        "listeners": 5040,
+        "playcount": 8187
+      },
+      {
+        "name": "It Came Upon A Midnight Clear",
+        "listeners": 22,
+        "playcount": 38
+      },
+      {
+        "name": "The Glittering Hollow of Midwinter",
+        "listeners": 20,
+        "playcount": 25
+      },
+      {
+        "name": "The Sound Of August",
+        "listeners": 18,
+        "playcount": 29
+      },
+      {
+        "name": "Away In A Manger",
+        "listeners": 11,
+        "playcount": 20
+      },
+      {
+        "name": "Silent Night",
+        "listeners": 9,
+        "playcount": 22
+      },
+      {
+        "name": "The First Noel",
+        "listeners": 8,
+        "playcount": 19
+      },
+      {
+        "name": "a midwest emo christmas mix",
+        "listeners": 7,
+        "playcount": 12
+      },
+      {
+        "name": "God Rest Ye Merry Gentlemen",
+        "listeners": 6,
+        "playcount": 18
+      }
+    ],
+    "url": "https://www.last.fm/music/Season%27s+Greetings"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

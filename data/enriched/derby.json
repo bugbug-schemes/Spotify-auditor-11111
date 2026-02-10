@@ -1,0 +1,527 @@
+{
+  "artist_name": "DERBY",
+  "artist_id": "derby",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:18:15.013910+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9e0400ed-7005-4ba0-a5d8-227b7c643b44",
+    "type": "Group",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "2000",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000863703",
+      "bandcamp": "https://derbypdx.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/2539826",
+      "free streaming": "https://www.deezer.com/artist/405122",
+      "myspace": "https://myspace.com/derbyrock",
+      "official homepage": "http://www.derbyrock.com/",
+      "other databases": "https://rateyourmusic.com/artist/derby",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1481225855",
+      "social network": "https://www.facebook.com/DERBY-190416875886"
+    },
+    "labels": [
+      "Many Horses",
+      "[no label]",
+      "Green Submarine Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 405122,
+    "name": "Derby",
+    "nb_fan": 892,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/405122",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8a7854d39b085c3afc38900c9f32a96d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Kevin Abstract"
+    ],
+    "contributor_roles": {
+      "Kevin Abstract": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "I Wasn’t There",
+      "Two Step",
+      "Glow",
+      "Dolomite",
+      "Mother Mary",
+      "Deer in the Belly of the Snake",
+      "Money Fight",
+      "Move Like That",
+      "100°",
+      "Stop Stalling",
+      "Shotgun",
+      "Peace",
+      "Jenny",
+      "This Conversation",
+      "One Time Forever",
+      "Ultraviolet",
+      "Healing",
+      "Armored",
+      "Suit",
+      "Snake",
+      "Bonus Track",
+      "Dancing Dog",
+      "If Ever There's a Reason",
+      "Sunspot"
+    ],
+    "track_durations": [
+      127,
+      173,
+      147,
+      156,
+      158,
+      129,
+      156,
+      119,
+      187,
+      247,
+      159,
+      130,
+      131,
+      201,
+      109,
+      199,
+      148,
+      175,
+      148,
+      78,
+      66,
+      154,
+      239,
+      213
+    ],
+    "track_ranks": [
+      184208,
+      80144,
+      58688,
+      22007,
+      71341,
+      104265,
+      72485,
+      45665,
+      59499,
+      33182,
+      55158,
+      18733,
+      32742,
+      113838,
+      30941,
+      40261,
+      23763,
+      34009,
+      31738,
+      54645,
+      32374,
+      7765,
+      256732,
+      8756
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 10,
+      "ep": 3,
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "Vol. 1",
+        "label": "",
+        "release_date": "2025-08-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Slugger",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The first",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hiraeth",
+        "label": "",
+        "release_date": "2024-07-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dollhouse",
+        "label": "",
+        "release_date": "2020-12-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Am Derby",
+        "label": "",
+        "release_date": "2019-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Madeline",
+        "label": "",
+        "release_date": "2011-05-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Posters Fade",
+        "label": "",
+        "release_date": "2008-06-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "This is the New You",
+        "label": "",
+        "release_date": "2005-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Third Time's a Charm",
+        "label": "",
+        "release_date": "2003-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Second Fantasy",
+        "label": "",
+        "release_date": "2025-11-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "i can see the light",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "miss me",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Экран телефона",
+        "label": "",
+        "release_date": "2025-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "no es jazzz",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "no es jazz.",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "DERby",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "forever cold",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "drown",
+        "label": "",
+        "release_date": "2023-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Charles De Gaulle",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take It in Stride",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hypersphere.",
+        "label": "",
+        "release_date": "2021-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Together Again",
+        "label": "",
+        "release_date": "2020-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunset Story",
+        "label": "",
+        "release_date": "2020-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weekend",
+        "label": "",
+        "release_date": "2018-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chance",
+        "label": "",
+        "release_date": "2018-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "3-way Split",
+        "label": "",
+        "release_date": "2015-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Wylder",
+      "Cayson Renshaw",
+      "Ben Reneer",
+      "François Klark",
+      "Richard Walters",
+      "Aron Wright",
+      "Amy Stroup",
+      "Wildes",
+      "Sarah Proctor",
+      "Springtime Carnivore"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 268648,
+    "name": "Dave Derby",
+    "profile": "US indie bassist, vocalist, and producer.\r\nDerby's song \"Pilot Light\" is the outro music for U.S. political talk show \"The Majority Report with [a=Sam Seder]\".",
+    "realname": "David Philander Derby",
+    "social_urls": [
+      "https://www.myspace.com/davederby",
+      "https://en.wikipedia.org/wiki/Dave_Derby",
+      "https://gramercyarmsdavederby.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [
+      "Mascott",
+      "Derby & Kotch",
+      "The Dambuilders",
+      "Lloyd Cole & The Negatives",
+      "Self-Righteous Brothers",
+      "Gramercy Arms",
+      "Kam Lung",
+      "The Norfolk Downs"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 31,
+    "digital_only_releases": 40,
+    "total_releases": 71,
+    "formats": [
+      "",
+      "10\", Pin + 10\", Yel + Comp",
+      "12xFile, MP3, Comp, VBR",
+      "6xFile, FLAC, EP",
+      "7\"",
+      "7\", Cle",
+      "7\", Single",
+      "CD+G",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, EP, Ltd",
+      "CD, EP, Promo",
+      "CD, Promo",
+      "CD, Single, Promo",
+      "CDr, Single, Promo",
+      "Flexi, 7\"",
+      "LP, Album"
+    ],
+    "labels": [
+      "Badman Recording Co.",
+      "Boss Tuneage",
+      "Deep Reverb",
+      "EastWest Records America",
+      "Eastwest Records",
+      "Grimsey Records",
+      "Hep-Cat",
+      "Hep-Cat, Hep-Cat",
+      "Krunch! Records",
+      "Le Grand Magistery",
+      "Not On Label",
+      "Not On Label (Dave Derby Self-released), Not On Label (The Norfolk Downs Self-released)",
+      "Pop Narcotic",
+      "R2",
+      "Red Panda Records",
+      "Reveal Records",
+      "Revolver USA",
+      "Rockville",
+      "Rubber Records, BMG, 3RRR",
+      "Sound Affects",
+      "Vital Sales & Marketing",
+      "Walt Disney Records",
+      "spinART Records, spinART Records",
+      "¡Cuacha!, SPV"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Derby",
+    "mbid": "9e0400ed-7005-4ba0-a5d8-227b7c643b44",
+    "listeners": 51996,
+    "playcount": 770930,
+    "listener_play_ratio": 14.83,
+    "bio_exists": true,
+    "bio_summary": "There are several artists with this name\n\n1. Derby hail not from the English town of the same name but from Portland, Oregon; odd because their sound is so quintessentially English. Head over heels in love with the British Invasion, on Posters Fade, their sophomore set, the group resurrect in all its pert, melody rich glory. \n\n2. Derby is an Italian dance act produced by Federico Scavo, and Riccardo Menichetti.\nsingles: In The Colour (1995)\n\n3. Derby is an alternative rock band from South East L",
+    "tags": [
+      "indie",
+      "indie pop",
+      "portland",
+      "emo",
+      "punk rock"
+    ],
+    "similar_artists": [
+      "Mk.gee",
+      "QUICKLY, QUICKLY",
+      "Roy Blair",
+      "Dominic Fike",
+      "Blood Orange"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gold",
+        "listeners": 19947,
+        "playcount": 147610
+      },
+      {
+        "name": "Two Step",
+        "listeners": 12431,
+        "playcount": 62435
+      },
+      {
+        "name": "Money Fight",
+        "listeners": 10692,
+        "playcount": 54733
+      },
+      {
+        "name": "If Ever There's A Reason",
+        "listeners": 8109,
+        "playcount": 35713
+      },
+      {
+        "name": "Move Like That",
+        "listeners": 7700,
+        "playcount": 50596
+      },
+      {
+        "name": "100°",
+        "listeners": 7348,
+        "playcount": 37079
+      },
+      {
+        "name": "Glow",
+        "listeners": 7214,
+        "playcount": 44338
+      },
+      {
+        "name": "Gelora Asmara",
+        "listeners": 5813,
+        "playcount": 30646
+      },
+      {
+        "name": "Deer in the Belly of the Snake",
+        "listeners": 5710,
+        "playcount": 33213
+      },
+      {
+        "name": "Ultraviolet",
+        "listeners": 5372,
+        "playcount": 31516
+      }
+    ],
+    "url": "https://www.last.fm/music/Derby"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,480 @@
+{
+  "artist_name": "Robert Wells",
+  "artist_id": "robert_wells",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:44:25.875190+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "34040141-db80-4b58-b454-d5cbc4373a9a",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "1962-04-07",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002140685",
+      "discogs": "https://www.discogs.com/artist/720312",
+      "last.fm": "https://www.last.fm/music/Robert+Wells",
+      "VIAF": "http://viaf.org/viaf/77409212",
+      "wikidata": "https://www.wikidata.org/wiki/Q1236566"
+    },
+    "labels": [
+      "Philips",
+      "Warner Music Sweden",
+      "Arthur Music AB",
+      "Carlton Home Entertainment Limited",
+      "Edel Media & Entertainment GmbH",
+      "Independent Records Sweden AB",
+      "Capitol Records",
+      "Virgin"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288263,
+    "name": "Robert Wells",
+    "nb_fan": 179,
+    "nb_album": 34,
+    "link": "https://www.deezer.com/artist/288263",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6290234aa5c5018c1cbb2f048541c0f8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "André Previn",
+      "Frederica von Stade",
+      "Hugh Martin",
+      "James Saporito",
+      "Kathleen Battle",
+      "London Philharmonic Orchestra",
+      "Mel Tormé",
+      "Ralph Blane",
+      "Tony Falanga",
+      "Wynton Marsalis"
+    ],
+    "contributor_roles": {
+      "Kathleen Battle": [
+        "Main"
+      ],
+      "Frederica von Stade": [
+        "Main"
+      ],
+      "André Previn": [
+        "Main"
+      ],
+      "Hugh Martin": [
+        "Main"
+      ],
+      "Mel Tormé": [
+        "Main"
+      ],
+      "Ralph Blane": [
+        "Main"
+      ],
+      "James Saporito": [
+        "Main"
+      ],
+      "Wynton Marsalis": [
+        "Main"
+      ],
+      "Tony Falanga": [
+        "Main"
+      ],
+      "London Philharmonic Orchestra": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "A Misty Morning",
+      "Medley: The Christmas Song and Have Yourself a Merry Little Christmas",
+      "Christmas Song",
+      "A Very Merry Rockin' Good Christmas",
+      "Rockin' This Christmas",
+      "Bumble Bee Boogie"
+    ],
+    "track_durations": [
+      222,
+      285,
+      231,
+      249,
+      207,
+      150
+    ],
+    "track_ranks": [
+      45557,
+      16468,
+      30542,
+      37015,
+      25093,
+      15938
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 10,
+      "single": 22,
+      "compile": 2
+    },
+    "albums": [
+      {
+        "title": "Sun Studio Sessions",
+        "label": "",
+        "release_date": "2017-08-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Robert Wells",
+        "label": "",
+        "release_date": "2015-09-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Piano Concertos I-IX: Rhapsody in Rock",
+        "label": "",
+        "release_date": "2013-03-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Essential Robert Wells",
+        "label": "",
+        "release_date": "2011-10-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Close Up Classics",
+        "label": "",
+        "release_date": "2011-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Full House Boogie",
+        "label": "",
+        "release_date": "2006-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Best Of Rhapsody In Rock",
+        "label": "",
+        "release_date": "2003-06-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jingle Wells",
+        "label": "",
+        "release_date": "2000-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rhapsody In Rock",
+        "label": "",
+        "release_date": "2022-02-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Way I Feel",
+        "label": "",
+        "release_date": "1988-06-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "VIENNA",
+        "label": "",
+        "release_date": "2025-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "River Of Spring",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Believe I'm In Love With You",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nocturne",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Christmas Song",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beethoven: Piano Sonata No. 8 in C Minor, Op. 13, \"Pathétique\": II. Adagio cantabile (Arr. for piano and string orchestra by R. We",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Songs Without Words – Symphony Edition Act IV",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Songs Without Words – Symphony Edition Act III",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Songs Without Words – Symphony Edition Act 2",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Songs Without Words – Symphony Edition Act II",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Songs Without Words – Symphony Edition Act 1",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Songs Without Words – Symphony Edition Act I",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moving Art",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ballet Noir",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Levande Legender",
+        "label": "",
+        "release_date": "2021-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Misty Morning",
+        "label": "",
+        "release_date": "2022-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "April",
+        "label": "",
+        "release_date": "2022-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I december",
+        "label": "",
+        "release_date": "2020-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Rain",
+        "label": "",
+        "release_date": "2020-05-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Window To The Past",
+        "label": "",
+        "release_date": "2019-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 173236,
+    "name": "Robert Wells",
+    "profile": "[b]This is the American hip-hop producer.\r\nFor the American jazz composer, please use [a=Robert Wells (2)][/b].\r\n[b]For the Swedish pianist/entertainer, please use [a=Robert Wells (3)][/b].",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 34,
+    "total_releases": 43,
+    "formats": [
+      "",
+      "12\"",
+      "3xCD, Comp",
+      "Box, Comp, Mono, Ltd, RM + CD, Album, Mono, RE, RM",
+      "CD",
+      "CD, Comp",
+      "CD, Comp, Ltd, Num",
+      "Cass, Album, Comp, Dol"
+    ],
+    "labels": [
+      "Arthur Music, Prophone",
+      "Hambo",
+      "Llanfair Records",
+      "Madfish",
+      "Melee, EBC Records",
+      "Ministry Of Sound, Sony Music",
+      "Tommy Boy",
+      "Wire"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Robert Wells",
+    "mbid": "34040141-db80-4b58-b454-d5cbc4373a9a",
+    "listeners": 18161,
+    "playcount": 133695,
+    "listener_play_ratio": 7.36,
+    "bio_exists": true,
+    "bio_summary": "Robert Wells is a Swedish pianist, composer and singer, best known for his highly successful musical extravaganza Rhapsody in Rock which has achieved great prominence in Scandinavia. The musical contains elements of rock, Sunden, classical and boogie-woogie mixed together. <a href=\"https://www.last.fm/music/Robert+Wells\">Read more on Last.fm</a>",
+    "tags": [
+      "piano",
+      "swedish",
+      "scandinavian",
+      "Sweden",
+      "piano rock"
+    ],
+    "similar_artists": [
+      "Charlie Norman",
+      "Stefan Nilsson",
+      "Helen Sjöholm",
+      "Anders Ekborg",
+      "Sofia Källgren"
+    ],
+    "top_tracks": [
+      {
+        "name": "Chestnuts Roasting on an Open Fire",
+        "listeners": 5202,
+        "playcount": 11061
+      },
+      {
+        "name": "The Christmas Song",
+        "listeners": 1605,
+        "playcount": 3507
+      },
+      {
+        "name": "Rhapsody In Rock I",
+        "listeners": 1348,
+        "playcount": 6459
+      },
+      {
+        "name": "Mio Min Mio",
+        "listeners": 907,
+        "playcount": 4715
+      },
+      {
+        "name": "A Window To The Past",
+        "listeners": 865,
+        "playcount": 2116
+      },
+      {
+        "name": "Nut Rocker",
+        "listeners": 835,
+        "playcount": 3168
+      },
+      {
+        "name": "Roll Over Beethoven",
+        "listeners": 676,
+        "playcount": 2293
+      },
+      {
+        "name": "Rhapsody in Rock II",
+        "listeners": 649,
+        "playcount": 2551
+      },
+      {
+        "name": "Rhapsody in Rock IV",
+        "listeners": 632,
+        "playcount": 2280
+      },
+      {
+        "name": "Bumble-bee Boogie",
+        "listeners": 612,
+        "playcount": 2467
+      }
+    ],
+    "url": "https://www.last.fm/music/Robert+Wells"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

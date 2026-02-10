@@ -1,0 +1,189 @@
+{
+  "artist_name": "Sebastian Young",
+  "artist_id": "sebastian_young",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:57:50.086673+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 150939352,
+    "name": "Sebastian Young",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/150939352",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3925a9d1b4af430970608cf60d3c5af7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Beautiful Love",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angel Eyes",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Old Fashioned",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Misty",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1243912,
+    "name": "Sebastian Young",
+    "profile": "One half of electronic music duo [a=The Young Brothers (2)]",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "The Young Brothers (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 3,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "12\"",
+      "Cass, Album, Ltd"
+    ],
+    "labels": [
+      "Pronto Recordings",
+      "Protofuture"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sebastian Young",
+    "mbid": "",
+    "listeners": 6050,
+    "playcount": 21794,
+    "listener_play_ratio": 3.6,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sebastian+Young\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Leonardo Paul",
+      "Meadow Bryce",
+      "Lioren",
+      "Zale Foster",
+      "syrene"
+    ],
+    "top_tracks": [
+      {
+        "name": "Once In Royal David's City - Cover",
+        "listeners": 4571,
+        "playcount": 10600
+      },
+      {
+        "name": "Santa Claus Is Coming To Town",
+        "listeners": 2361,
+        "playcount": 5477
+      },
+      {
+        "name": "Away in a Manger - Cover",
+        "listeners": 1232,
+        "playcount": 2818
+      },
+      {
+        "name": "Sussex Carol - Cover",
+        "listeners": 510,
+        "playcount": 845
+      },
+      {
+        "name": "Bad Habits",
+        "listeners": 383,
+        "playcount": 968
+      },
+      {
+        "name": "I Just Called To Say I Love You",
+        "listeners": 265,
+        "playcount": 683
+      },
+      {
+        "name": "Dancing Queen - Cover",
+        "listeners": 62,
+        "playcount": 126
+      },
+      {
+        "name": "I'm Old Fashioned",
+        "listeners": 58,
+        "playcount": 101
+      },
+      {
+        "name": "Misty",
+        "listeners": 51,
+        "playcount": 91
+      },
+      {
+        "name": "Time After Time",
+        "listeners": 41,
+        "playcount": 71
+      }
+    ],
+    "url": "https://www.last.fm/music/Sebastian+Young"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

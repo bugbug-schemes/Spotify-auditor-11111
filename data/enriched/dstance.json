@@ -1,0 +1,451 @@
+{
+  "artist_name": "Dstance",
+  "artist_id": "dstance",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:36:28.193499+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7e1bf645-c676-4477-9fcc-3fd3942c5cc6",
+    "type": "Person",
+    "country": "MX",
+    "area": "Mexico",
+    "begin_date": "2000",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/1NxTfbylQiyMQ8yOFxG3x2",
+      "youtube": "https://www.youtube.com/channel/UCm-DCC0_38Z2KfyXJHYXz7w"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 51219002,
+    "name": "Dstance",
+    "nb_fan": 4439,
+    "nb_album": 36,
+    "link": "https://www.deezer.com/artist/51219002",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b1e387e8e5982955d23e1109478af0b8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "EVÍC",
+      "Juliana",
+      "Jósean Log",
+      "La Isla Centeno",
+      "Melissa Robles",
+      "Playa Limbo",
+      "Urbøi"
+    ],
+    "contributor_roles": {
+      "Melissa Robles": [
+        "Main"
+      ],
+      "EVÍC": [
+        "Main"
+      ],
+      "Juliana": [
+        "Main"
+      ],
+      "Playa Limbo": [
+        "Main"
+      ],
+      "Urbøi": [
+        "Main"
+      ],
+      "Jósean Log": [
+        "Featured"
+      ],
+      "La Isla Centeno": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Niña Bonita (Acústico)",
+      "Niña Bonita",
+      "A Mí y a Nadie Más",
+      "Hasta Que la Vida Diga Adiós",
+      "tal vez el amor",
+      "Si Quieres Marcharte Feat. Dstance (Cap. 1)",
+      "No Me Falta Nada",
+      "Y Aún Así Sonreír",
+      "Al Mundo Paz",
+      "Todo Está Bien",
+      "Labios de Imán",
+      "Fue para Más",
+      "Sobre el Mar"
+    ],
+    "track_durations": [
+      293,
+      263,
+      157,
+      249,
+      213,
+      170,
+      205,
+      209,
+      182,
+      170,
+      230,
+      212,
+      227
+    ],
+    "track_ranks": [
+      352644,
+      309206,
+      48837,
+      37142,
+      33124,
+      153431,
+      42149,
+      82418,
+      15929,
+      119555,
+      156249,
+      25348,
+      87209
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 2,
+      "single": 32
+    },
+    "albums": [
+      {
+        "title": "Falsas Expectativas",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hasta Que la Vida Diga Adiós",
+        "label": "",
+        "release_date": "2022-04-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "En un Futuro Lo Efímero No Se Quedará a la Mitad",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Estaciones",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tiempo a Solas",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Semillas de Vida",
+        "label": "",
+        "release_date": "2024-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Semillas de Vida",
+        "label": "",
+        "release_date": "2024-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calma",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Antes de Quedarme",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Esteban Maravilla",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dime",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me Hipnotizas",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Como Si Fuera La Primera Vez",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cuarto Caliente",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Se Quedará",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tu u u <3",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lo Efímero",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Debut",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En un Futuro",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si Fui Yo",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Todo Está Bien",
+        "label": "",
+        "release_date": "2022-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Me Falta Nada",
+        "label": "",
+        "release_date": "2022-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Llores",
+        "label": "",
+        "release_date": "2022-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fue para Más",
+        "label": "",
+        "release_date": "2022-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Final Feliz",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Y Aún Así Sonreír",
+        "label": "",
+        "release_date": "2022-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azotea",
+        "label": "",
+        "release_date": "2021-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Peor Droga de Todas",
+        "label": "",
+        "release_date": "2021-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Neta No",
+        "label": "",
+        "release_date": "2021-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sobre el Mar",
+        "label": "",
+        "release_date": "2021-07-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Carla Morrison",
+      "Pau Laggies",
+      "Kurt",
+      "Caztro",
+      "LÚA",
+      "Leo Rizzi",
+      "Marco Mares",
+      "Charlie Rodd",
+      "Manuel Medrano",
+      "Los Claxons"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "DSTANCE",
+    "mbid": "",
+    "listeners": 20414,
+    "playcount": 141089,
+    "listener_play_ratio": 6.91,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/DSTANCE\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lúa",
+      "Charlie Rodd",
+      "Caztro",
+      "Josue Alaniz",
+      "Urbøi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Niña Bonita - Acústico",
+        "listeners": 10347,
+        "playcount": 70650
+      },
+      {
+        "name": "Niña Bonita",
+        "listeners": 4362,
+        "playcount": 22908
+      },
+      {
+        "name": "A Mí y a Nadie Más",
+        "listeners": 1888,
+        "playcount": 7757
+      },
+      {
+        "name": "Todo Está Bien",
+        "listeners": 1167,
+        "playcount": 4469
+      },
+      {
+        "name": "soltarte (instrumental)",
+        "listeners": 1104,
+        "playcount": 2206
+      },
+      {
+        "name": "Fue para Más",
+        "listeners": 910,
+        "playcount": 2724
+      },
+      {
+        "name": "Al Mundo Paz",
+        "listeners": 897,
+        "playcount": 1601
+      },
+      {
+        "name": "Si Fui Yo",
+        "listeners": 758,
+        "playcount": 2703
+      },
+      {
+        "name": "La Peor Droga de Todas",
+        "listeners": 547,
+        "playcount": 3106
+      },
+      {
+        "name": "Debut",
+        "listeners": 526,
+        "playcount": 1771
+      }
+    ],
+    "url": "https://www.last.fm/music/DSTANCE"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

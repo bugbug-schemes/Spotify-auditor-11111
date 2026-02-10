@@ -1,0 +1,129 @@
+{
+  "artist_name": "Eleanor Friedman",
+  "artist_id": "eleanor_friedman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:35:22.980704+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183282757,
+    "name": "Eleanor Friedman",
+    "nb_fan": 3,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/183282757",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/95edcb6191a54359da01ea7fb8d72394/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Jingle Bells"
+    ],
+    "track_durations": [
+      164
+    ],
+    "track_ranks": [
+      130783
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "What Child Is This",
+        "label": "",
+        "release_date": "2023-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When Santa's Sleigh is Coming",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Eleanor Friedman",
+    "mbid": "",
+    "listeners": 7507,
+    "playcount": 22026,
+    "listener_play_ratio": 2.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Eleanor+Friedman\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dan Vogel",
+      "Alex Lehtonen",
+      "AMELIE Voss",
+      "Iris Spencer",
+      "Leon Bonné"
+    ],
+    "top_tracks": [
+      {
+        "name": "What Child Is This",
+        "listeners": 4438,
+        "playcount": 12197
+      },
+      {
+        "name": "When Santa's Sleigh is Coming",
+        "listeners": 3608,
+        "playcount": 9442
+      },
+      {
+        "name": "Jingle Bells",
+        "listeners": 112,
+        "playcount": 290
+      },
+      {
+        "name": "A Snowflake Falls",
+        "listeners": 59,
+        "playcount": 97
+      }
+    ],
+    "url": "https://www.last.fm/music/Eleanor+Friedman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

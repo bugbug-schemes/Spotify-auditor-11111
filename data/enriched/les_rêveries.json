@@ -1,0 +1,173 @@
+{
+  "artist_name": "Les Rêveries",
+  "artist_id": "les_rêveries",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:06:14.675134+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2ba01656-6e73-4169-909c-51763f116840",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183261757",
+      "purchase for download": "https://music.apple.com/us/artist/1648301122",
+      "streaming": "https://tidal.com/artist/34513469",
+      "youtube music": "https://music.youtube.com/channel/UCTi4_phA6WUZquwaAjQz7DA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Les Rêveries', got 'Les Reveries'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8264338,
+    "name": "Totalement Sublime",
+    "profile": "Totalement Sublime, composé de Marc-Antoine Barbier (Choses Sauvages), de Élie Raymond et de Thomas Bruneau Faubert (Frais Dispo, anciennement Foreign Diplomats), naît d’une envie de créer en se donnant carte blanche. Étant adeptes de concepts précis, ils s’imposent certaines restrictions comme l’utilisation exclusive d’une vieille boite à rythme ayant appartenu au père d’Élie comme base des enregistrements de leur premier album éponyme, offrant un son bien reconnaissable au projet. Ce premier projet, sorti en 2020 et réalisé en duo avant l’arrivée de Thomas dans les rangs du groupe, leur vaut une nomination à l’ADISQ dans la catégorie d’album électronique de l’année.\r\n\r\nAvec un microalbum, intitulé « ☼ » (ALT+15) et paru en 2022, le projet francophone, toujours en formule duo avec Marc-Antoine et Élie, retrouve son langage imagé et familier, inspiré de la nature, d’instants de contemplation et de rêveries. La musique, autant introspective que dansante et ouverte, est empreinte de touc",
+    "realname": "",
+    "social_urls": [
+      "https://www.totalementsublime.com/",
+      "https://www.instagram.com/totalementsublime/",
+      "https://www.facebook.com/totalementsublime"
+    ],
+    "members": [
+      "Elie Raymond",
+      "Marc-Antoine Barbier",
+      "Thomas Bruneau Faubert"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "LP, Album, Cle"
+    ],
+    "labels": [
+      "Bonbonbon Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Les Rêveries",
+    "mbid": "2ba01656-6e73-4169-909c-51763f116840",
+    "listeners": 106332,
+    "playcount": 557340,
+    "listener_play_ratio": 5.24,
+    "bio_exists": true,
+    "bio_summary": "JT Morton is a versatile pianist and composer known for their involvement in various musical projects, including Carluccio, Con Alma, Davignon, Les Rêveries, and Warble.\n\nAs part of their musical journey, JT Morton debuted their project Les Rêveries with the EP titled \"A Place I Remember,\" which was released on July 3, 2020. This EP served as a stepping stone for their exploration of piano-based compositions and further established their presence in the music scene. <a href=\"https://www.last.fm/",
+    "tags": [
+      "piano",
+      "french",
+      "france",
+      "modern classical"
+    ],
+    "similar_artists": [
+      "Niwa Nova",
+      "Anna Landström",
+      "Joseph Seabolt",
+      "Nate LaFleur",
+      "Luiza Schmidt"
+    ],
+    "top_tracks": [
+      {
+        "name": "Coulant",
+        "listeners": 40167,
+        "playcount": 140798
+      },
+      {
+        "name": "Tenderly",
+        "listeners": 27590,
+        "playcount": 88908
+      },
+      {
+        "name": "Printemps",
+        "listeners": 27111,
+        "playcount": 131871
+      },
+      {
+        "name": "Aviron",
+        "listeners": 27029,
+        "playcount": 68058
+      },
+      {
+        "name": "The Distant Path",
+        "listeners": 17585,
+        "playcount": 45402
+      },
+      {
+        "name": "Valse",
+        "listeners": 17284,
+        "playcount": 67484
+      },
+      {
+        "name": "Tout à Fait",
+        "listeners": 1679,
+        "playcount": 4642
+      },
+      {
+        "name": "Encercler",
+        "listeners": 1220,
+        "playcount": 2932
+      },
+      {
+        "name": "Golden Fields",
+        "listeners": 683,
+        "playcount": 2236
+      },
+      {
+        "name": "Nuit Claire",
+        "listeners": 550,
+        "playcount": 1380
+      }
+    ],
+    "url": "https://www.last.fm/music/Les+R%C3%AAveries"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

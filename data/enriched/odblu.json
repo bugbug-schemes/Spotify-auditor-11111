@@ -1,0 +1,514 @@
+{
+  "artist_name": "ODBLU",
+  "artist_id": "odblu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:09:21.241396+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b97af028-df4d-4a1c-bf1d-67b1e1f5a20b",
+    "type": "Person",
+    "country": "AT",
+    "area": "Austria",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/68353522",
+      "official homepage": "https://odblu.com/",
+      "social network": "https://www.instagram.com/odblu/",
+      "youtube": "https://www.youtube.com/channel/UCLFMMgrM22H-ZsJPStro-Ew"
+    },
+    "labels": [
+      "Soave Records",
+      "Fair Music Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 68353522,
+    "name": "ODBLU",
+    "nb_fan": 17,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/68353522",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cbb9e76cf739cb86f018cb255fe0d059/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "AALLAR",
+      "Aron Matthews",
+      "Audrey Floyd",
+      "Chaël",
+      "DIMEO",
+      "Donner",
+      "Giorgio Ragusa",
+      "James Lacey",
+      "Jane Good",
+      "John Skyfield",
+      "Lesley Rains",
+      "MISERO",
+      "Portugal Sunset",
+      "Rayn",
+      "Shoby",
+      "Sonnet",
+      "Thunder",
+      "Valia"
+    ],
+    "contributor_roles": {
+      "Jane Good": [
+        "Main"
+      ],
+      "Audrey Floyd": [
+        "Main"
+      ],
+      "James Lacey": [
+        "Main"
+      ],
+      "Thunder": [
+        "Main"
+      ],
+      "Valia": [
+        "Main"
+      ],
+      "AALLAR": [
+        "Main"
+      ],
+      "Shoby": [
+        "Main"
+      ],
+      "Portugal Sunset": [
+        "Main"
+      ],
+      "MISERO": [
+        "Main"
+      ],
+      "John Skyfield": [
+        "Main"
+      ],
+      "Giorgio Ragusa": [
+        "Main"
+      ],
+      "Lesley Rains": [
+        "Main"
+      ],
+      "Sonnet": [
+        "Main"
+      ],
+      "Chaël": [
+        "Main"
+      ],
+      "Rayn": [
+        "Main"
+      ],
+      "DIMEO": [
+        "Main"
+      ],
+      "Donner": [
+        "Main"
+      ],
+      "Aron Matthews": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Grey & Old",
+      "Feel Alright",
+      "Live a Lie",
+      "Houdini",
+      "greedy",
+      "Sunlight",
+      "Losing Myself (Misero Remix)",
+      "Easy",
+      "Morning Rain",
+      "Paper Plane",
+      "Sway",
+      "High Hopes",
+      "Your Love",
+      "fire me up",
+      "Jolt",
+      "So High"
+    ],
+    "track_durations": [
+      142,
+      159,
+      135,
+      153,
+      127,
+      158,
+      149,
+      166,
+      177,
+      148,
+      123,
+      141,
+      201,
+      134,
+      160,
+      142
+    ],
+    "track_ranks": [
+      340185,
+      364153,
+      377657,
+      286714,
+      148684,
+      216476,
+      120502,
+      398849,
+      186909,
+      140561,
+      244333,
+      110034,
+      141968,
+      87494,
+      163191,
+      112677
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 37
+    },
+    "albums": [
+      {
+        "title": "Feel Your Light",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Could You Imagine",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jolt",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Find My Way",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perhaps, Perhaps, Perhaps",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Rain",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "High Hopes",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunlight",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heartbreak Symphony",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Love",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hurt so Good",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Space + Time",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "greedy",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paper Plane",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "fire me up",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rainbow Gold",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sway",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Houdini",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gun",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mood",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sinking Feeling",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feel Alright",
+        "label": "",
+        "release_date": "2024-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "So High",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Instead of Gold",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grey & Old",
+        "label": "",
+        "release_date": "2023-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy (Sped Up)",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lighthouse On The Moon",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Live a Lie",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost On You",
+        "label": "",
+        "release_date": "2023-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7765299,
+    "name": "ODBLU",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "File, FLAC"
+    ],
+    "labels": [
+      "We Are Diamond"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "ODBLU",
+    "mbid": "b97af028-df4d-4a1c-bf1d-67b1e1f5a20b",
+    "listeners": 5450,
+    "playcount": 14399,
+    "listener_play_ratio": 2.64,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/ODBLU\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Goldaine",
+      "Tropical Tide",
+      "Edwardo Atlas",
+      "Madom",
+      "Luna Belle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Houdini",
+        "listeners": 1987,
+        "playcount": 5249
+      },
+      {
+        "name": "Find My Way",
+        "listeners": 1449,
+        "playcount": 2908
+      },
+      {
+        "name": "Hurt so Good",
+        "listeners": 719,
+        "playcount": 1095
+      },
+      {
+        "name": "Your Love",
+        "listeners": 473,
+        "playcount": 855
+      },
+      {
+        "name": "High Hopes",
+        "listeners": 468,
+        "playcount": 816
+      },
+      {
+        "name": "Sway",
+        "listeners": 366,
+        "playcount": 731
+      },
+      {
+        "name": "Instead of Gold",
+        "listeners": 335,
+        "playcount": 879
+      },
+      {
+        "name": "greedy",
+        "listeners": 320,
+        "playcount": 717
+      },
+      {
+        "name": "Morning Rain",
+        "listeners": 269,
+        "playcount": 493
+      },
+      {
+        "name": "Heartbreak Symphony",
+        "listeners": 175,
+        "playcount": 345
+      }
+    ],
+    "url": "https://www.last.fm/music/ODBLU"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

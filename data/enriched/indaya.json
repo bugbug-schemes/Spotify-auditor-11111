@@ -1,0 +1,138 @@
+{
+  "artist_name": "INDAYA",
+  "artist_id": "indaya",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:13:19.185509+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'INDAYA', got 'Inayah'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5563767,
+    "name": "Indaya",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "38xFile, MP3, Comp, 320"
+    ],
+    "labels": [
+      "Rebel Traxx"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Indaya",
+    "mbid": "",
+    "listeners": 18213,
+    "playcount": 59814,
+    "listener_play_ratio": 3.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Indaya\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Natural Awakening",
+      "Epic Nature Sounds",
+      "Himalaya Nature",
+      "Mandalay Hill",
+      "Manaus"
+    ],
+    "top_tracks": [
+      {
+        "name": "Forest Therapy",
+        "listeners": 17845,
+        "playcount": 56870
+      },
+      {
+        "name": "Rainforest Thunder",
+        "listeners": 147,
+        "playcount": 1534
+      },
+      {
+        "name": "Mountain Storm",
+        "listeners": 135,
+        "playcount": 349
+      },
+      {
+        "name": "Nature Heritage",
+        "listeners": 108,
+        "playcount": 150
+      },
+      {
+        "name": "Therapeutic Thunder",
+        "listeners": 75,
+        "playcount": 383
+      },
+      {
+        "name": "Rain and Thunder Days",
+        "listeners": 69,
+        "playcount": 119
+      },
+      {
+        "name": "Bring The Nature To Me",
+        "listeners": 67,
+        "playcount": 106
+      },
+      {
+        "name": "The Sun's Taking A Break",
+        "listeners": 45,
+        "playcount": 80
+      },
+      {
+        "name": "Don't Be Afraid Of The Thunder",
+        "listeners": 21,
+        "playcount": 29
+      },
+      {
+        "name": "I Bet You Look Good on the Dancefloor",
+        "listeners": 7,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Indaya"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,185 @@
+{
+  "artist_name": "Sulman Indigo",
+  "artist_id": "sulman_indigo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:28:53.606130+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 283422961,
+    "name": "Sulman Indigo",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/283422961",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9dc16a5174269fae285f30894a7fd0b3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Hymn for the Soul",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Long Road Ahead",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For All Of Us",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Connected",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From Coast To Coast",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adventure To Be Had",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Andújar",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Quiet Morning",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sulman Indigo",
+    "mbid": "",
+    "listeners": 34739,
+    "playcount": 124035,
+    "listener_play_ratio": 3.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sulman+Indigo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Néer",
+      "Shea Ada",
+      "everall",
+      "Niamh Shona",
+      "Blue George"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Quiet Morning",
+        "listeners": 20330,
+        "playcount": 88814
+      },
+      {
+        "name": "Andújar",
+        "listeners": 15704,
+        "playcount": 35197
+      },
+      {
+        "name": "From Coast To Coast",
+        "listeners": 4,
+        "playcount": 7
+      },
+      {
+        "name": "Adventure To Be Had",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "A Long Road Ahead",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Connected",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Sulman Indigo - A Quiet Morning",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "For All Of Us",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sulman+Indigo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

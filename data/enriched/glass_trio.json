@@ -1,0 +1,462 @@
+{
+  "artist_name": "Glass Trio",
+  "artist_id": "glass_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:53:24.388020+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ff17d43b-4de1-41f9-825d-830018d99fb9",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/200410207",
+      "purchase for download": "https://music.apple.com/us/artist/1670027838",
+      "soundcloud": "https://soundcloud.com/glasstrio",
+      "streaming": "https://tidal.com/artist/37185324",
+      "youtube music": "https://music.youtube.com/channel/UC4VezzkQGvKiZqjsClbtIcg"
+    },
+    "labels": [
+      "Chill Tone"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 200410207,
+    "name": "Glass Trio",
+    "nb_fan": 54,
+    "nb_album": 40,
+    "link": "https://www.deezer.com/artist/200410207",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2b295fccfb0fd0079291bdf28375f4ef/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Last Call",
+      "The Golden Hour",
+      "Vineyard",
+      "Wilting",
+      "Below",
+      "Hard Candy Christmas",
+      "Palimpsest",
+      "Breathe the Air",
+      "Same Old Song",
+      "Shadow Play",
+      "I Heard The Bells on Christmas Day"
+    ],
+    "track_durations": [
+      169,
+      188,
+      191,
+      271,
+      186,
+      175,
+      202,
+      225,
+      238,
+      225,
+      106
+    ],
+    "track_ranks": [
+      215644,
+      54943,
+      26904,
+      70214,
+      79893,
+      47920,
+      47137,
+      80218,
+      70020,
+      25599,
+      4342
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "single": 37
+    },
+    "albums": [
+      {
+        "title": "Rehomed",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Between the Lines",
+        "label": "",
+        "release_date": "2024-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ambient Jazz",
+        "label": "",
+        "release_date": "2024-07-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "On the Rocks",
+        "label": "",
+        "release_date": "2026-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Palimpsest",
+        "label": "",
+        "release_date": "2026-01-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cut from the Same Cloth",
+        "label": "",
+        "release_date": "2025-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boulevards",
+        "label": "",
+        "release_date": "2025-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Saint Nick",
+        "label": "",
+        "release_date": "2025-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Heard The Bells on Christmas Day",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Different Types of Hats",
+        "label": "",
+        "release_date": "2025-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Curliecue",
+        "label": "",
+        "release_date": "2025-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fine Line",
+        "label": "",
+        "release_date": "2025-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Same Old Song",
+        "label": "",
+        "release_date": "2025-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "End of the Road",
+        "label": "",
+        "release_date": "2025-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Worlds Apart",
+        "label": "",
+        "release_date": "2025-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Understory",
+        "label": "",
+        "release_date": "2025-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rowboat",
+        "label": "",
+        "release_date": "2025-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Below",
+        "label": "",
+        "release_date": "2025-03-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cameo",
+        "label": "",
+        "release_date": "2025-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Empty Gesture",
+        "label": "",
+        "release_date": "2024-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The First Noel",
+        "label": "",
+        "release_date": "2024-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rings",
+        "label": "",
+        "release_date": "2024-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunshower",
+        "label": "",
+        "release_date": "2024-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whirlpool",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aloft",
+        "label": "",
+        "release_date": "2024-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlit",
+        "label": "",
+        "release_date": "2024-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weeping Willow",
+        "label": "",
+        "release_date": "2024-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Featherlight",
+        "label": "",
+        "release_date": "2024-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wilting",
+        "label": "",
+        "release_date": "2024-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Always a Lady (Rain)",
+        "label": "",
+        "release_date": "2024-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "James Jackson Jazz Trio",
+      "Jazzy Coffee",
+      "Cozy Coffee Shop",
+      "Cozy Bedroom",
+      "Relaxing Jazz Piano",
+      "Cozy Apartment",
+      "Hans Ulrik",
+      "Dominick Farinacci",
+      "Snorre Kirk",
+      "Brandon Sanders"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1350741,
+    "name": "The Glass Sun",
+    "profile": "American psychedelic rock band from the Detroit suburb of Westland, Michigan, active in the early 1970s. The Roll brothers Rick (bass, vocals) and Bruce (guitar) joined forces in 1964 with their friend Danny Sills (drums) in The Cyclones, who played local dances and Battle Of The Bands type events with a repertoire of early rock'n'roll and Beatles covers. The brothers were then called up to serve in Vietnam: when they returned at the end of the 1960s, the trio reconvened in The Glass Sun.\r\n\r\nInfluenced by the new wave of heavy bands such as [a229621], [a48412], [a122458], [a34278], ... they recorded 2 singles for [a694349]' [l458096] label in 1971-1972, each pressed in a total quantity of 300 copies. But like most localised early 1970s singles, both 45s passed under the radar at the time before being discovered decades later by US garage/psych/hard fans. The trio continued to play together for many years, but without releasing anything.\r\n ",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/GlassSunBand/",
+      "https://www.psychedelicbabymag.com/2017/09/glass-sun-interview-with-rick-ro.html"
+    ],
+    "members": [
+      "Rick Roll",
+      "Bruce Roll",
+      "Danny Sills"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 12,
+    "total_releases": 21,
+    "formats": [
+      "",
+      "10xLP, Album, Comp, Ran + Box, Comp",
+      "2xCD, Comp, RE, Unofficial",
+      "3xCD, Comp, RM + Box",
+      "7\", Single",
+      "7xCD, Comp, RM, Unofficial + Box",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "Lathe, LP, Comp, Ltd, Unofficial, Cle + 8xCDr, Com"
+    ],
+    "labels": [
+      "Eva (8)",
+      "Grapefruit Records",
+      "Particles (2)",
+      "RidingEasy Records",
+      "Sound Patterns",
+      "Wah Wah Kombinat"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Glass Trio",
+    "mbid": "ff17d43b-4de1-41f9-825d-830018d99fb9",
+    "listeners": 209818,
+    "playcount": 933397,
+    "listener_play_ratio": 4.45,
+    "bio_exists": true,
+    "bio_summary": "Glass Trio is a New York City jazz band featuring Christian Li on piano, Roberto Giaquinto on drums and Martin Nevin on bass. <a href=\"https://www.last.fm/music/Glass+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "USA",
+      "jazz",
+      "NYC"
+    ],
+    "similar_artists": [
+      "James Jackson Jazz Trio",
+      "Carla Anderson",
+      "The Three Queens",
+      "Trio Del Norte",
+      "Wonder Eve"
+    ],
+    "top_tracks": [
+      {
+        "name": "Wilting",
+        "listeners": 86018,
+        "playcount": 236107
+      },
+      {
+        "name": "Last Call",
+        "listeners": 78833,
+        "playcount": 228055
+      },
+      {
+        "name": "Breathe the Air",
+        "listeners": 44324,
+        "playcount": 114015
+      },
+      {
+        "name": "Hard Candy Christmas",
+        "listeners": 33481,
+        "playcount": 82735
+      },
+      {
+        "name": "Rings",
+        "listeners": 13990,
+        "playcount": 25391
+      },
+      {
+        "name": "Weeping Willow",
+        "listeners": 12374,
+        "playcount": 24497
+      },
+      {
+        "name": "Always a Lady",
+        "listeners": 12004,
+        "playcount": 25719
+      },
+      {
+        "name": "The Golden Hour",
+        "listeners": 10147,
+        "playcount": 24579
+      },
+      {
+        "name": "Featherlight",
+        "listeners": 9098,
+        "playcount": 16867
+      },
+      {
+        "name": "Same Old Song",
+        "listeners": 8736,
+        "playcount": 18928
+      }
+    ],
+    "url": "https://www.last.fm/music/Glass+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

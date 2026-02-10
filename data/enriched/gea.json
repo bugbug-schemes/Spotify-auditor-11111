@@ -1,0 +1,481 @@
+{
+  "artist_name": "Gea",
+  "artist_id": "gea",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:49:05.943970+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3fa4b7cd-efc4-41c1-9aad-42c80552e31e",
+    "type": "Person",
+    "country": "",
+    "area": "Helsinki",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/4xBOiAyVldC1LywqtvACbU",
+      "official homepage": "http://geaofficial.com/",
+      "social network": "https://www.instagram.com/geamusicofficial/",
+      "soundcloud": "https://soundcloud.com/geasongs",
+      "youtube": "https://www.youtube.com/@geamusicofficial"
+    },
+    "labels": [
+      "Fragity Oy",
+      "Calm Lands Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1643683,
+    "name": "Gea",
+    "nb_fan": 688,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/1643683",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/94b0cc0d92a7fe0797b6855042c9c865/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Mandidextrous",
+      "gremlintown"
+    ],
+    "contributor_roles": {
+      "Mandidextrous": [
+        "Main"
+      ],
+      "gremlintown": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "The Beat",
+      "Awe-inspiring",
+      "AFTERPARTY",
+      "REPLAY",
+      "Enough In Escrow",
+      "Keep it movin'",
+      "ÁCIDA",
+      "Resta",
+      "Bassline",
+      "Remarkable Deeds",
+      "EL KONTROL",
+      "forget a little",
+      "Tirita"
+    ],
+    "track_durations": [
+      206,
+      144,
+      246,
+      271,
+      180,
+      155,
+      344,
+      204,
+      249,
+      155,
+      241,
+      161,
+      192
+    ],
+    "track_ranks": [
+      195450,
+      316443,
+      217872,
+      249254,
+      53011,
+      276224,
+      231427,
+      55814,
+      321511,
+      29802,
+      154097,
+      6179,
+      69921
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 17,
+      "ep": 5,
+      "single": 78
+    },
+    "albums": [
+      {
+        "title": "Remember? Remember? Remember.",
+        "label": "",
+        "release_date": "2025-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "in absolutes",
+        "label": "",
+        "release_date": "2024-09-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ammetto",
+        "label": "",
+        "release_date": "2024-02-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Gratitude",
+        "label": "",
+        "release_date": "2023-08-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "everyone is worried about me",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "daisies for ears",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Call for a Snake",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Još Te Mogu Iznenaditi",
+        "label": "",
+        "release_date": "2020-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Butterflies",
+        "label": "",
+        "release_date": "2017-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cisne",
+        "label": "",
+        "release_date": "2015-08-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Vuelos de Mercurio",
+        "label": "",
+        "release_date": "2012-11-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alle ore blu",
+        "label": "",
+        "release_date": "2012-03-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Vergeten Dromen",
+        "label": "",
+        "release_date": "2010-04-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "From Gea With Love",
+        "label": "",
+        "release_date": "2009-02-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bailamme generale",
+        "label": "",
+        "release_date": "2005-11-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sssh…blam!",
+        "label": "",
+        "release_date": "2002-09-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ruggine",
+        "label": "",
+        "release_date": "2001-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "SIMÉTRIKA",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Eternal Mirror",
+        "label": "",
+        "release_date": "2024-12-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "PURPLE",
+        "label": "",
+        "release_date": "2024-03-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lunatica",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Snow - EP",
+        "label": "",
+        "release_date": "2019-04-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Future Loops",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bride (feat. Gaston)",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ți-am promis",
+        "label": "",
+        "release_date": "2025-12-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Every hour after",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LLEVOLACARADEAYER",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rotten Tooth",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream Of You",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eye Contact",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Abr.",
+      "GiØ",
+      "Jacidorex",
+      "La Kajofol",
+      "Amygdala",
+      "Vizionn",
+      "ascendant vierge",
+      "NEIKA",
+      "TAKTSTÖRER",
+      "Blaame"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1450208,
+    "name": "Gea (2)",
+    "profile": "Nel febbraio 2001, dopo diversi anni di gavetta e esperienze musicali precedenti (Bug), Santeria pubblica il disco d'esordio dei Gea (Stefano Locatelli, chitarra e voce – Benny Brezzolari, batteria – Nicola Troiani – basso), \"Ruggine\", coadiuvato dal videoclip del singolo \"Ancora In Viaggio\" che ha ottenuto diversi passaggi sulle più importanti reti musicali italiane (VideoMusic, MTV)\r\nIl 2002 è anno fecondo per la band. I Gea partecipano al secondo volume della compilation “Loser, My Religion” interpretando un brano scritto per l’occasione “a quattro mani” con gli Hogwash, ovvero “Lazy Trap”. Inoltre, ad ottobre, esce il secondo album del gruppo, “Ssssh...Blam!”, che riceve ottimi responsi di pubblico e di critica, e per il quale è stato girato un secondo videoclip, ovvero “Cocktail”; anche questo video ottiene passaggi su canali Tv come Rock Tv, Viva All Music e Match Music.\r\nIl 2003 è anno di concerti intensi ma sopratutto di grandi cambiamenti; al termine dell’anno Nicola Troiani e",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/pages/GEA/291545524777"
+    ],
+    "members": [
+      "Stefano Locatelli",
+      "Raul Rota Nodari",
+      "Benny Brezzolari",
+      "Alessandro Ravasio",
+      "Nicola Troiani"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 10,
+    "digital_only_releases": 3,
+    "total_releases": 13,
+    "formats": [
+      "",
+      "9xFile, MP3, Comp",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Single, Promo",
+      "CD-ROM, Comp",
+      "LP"
+    ],
+    "labels": [
+      "Equilibrio Precario",
+      "Ilrenonsidiverte",
+      "Jestrai Records",
+      "Not On Label",
+      "Rock Sound",
+      "Rockstar",
+      "Santeria"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gea",
+    "mbid": "2aaa5b85-172a-42bb-b37c-868d8e00596f",
+    "listeners": 16213,
+    "playcount": 83986,
+    "listener_play_ratio": 5.18,
+    "bio_exists": true,
+    "bio_summary": "Nuova line-up, nuovi brani, vecchi valori: integrità, rock'n'roll, rumore, ricerca, intensità, melodia, volume, schiettezza, intelligenza ed ironia. Saliti all'onore delle cronache nel 2001 grazie al fortunato video \"Ancora in viaggio\", la storia dei Gea inizia almeno 9 anni prima, quando cinque ragazzi bergamaschi danno vita ai Bug. Sei anni all'insegna dell'hard-punk impreziositi da un album, diverse partecipazioni a compilation nazionali, ma sopratutto tantissimi concerti poi <a href=\"https:/",
+    "tags": [
+      "indie rock",
+      "rock",
+      "indie",
+      "electronic",
+      "finland"
+    ],
+    "similar_artists": [
+      "longwayfromhome",
+      "Mygg An",
+      "ERRÄ",
+      "Landayn",
+      "The Pleasure Principle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Freedom Banner",
+        "listeners": 3540,
+        "playcount": 8544
+      },
+      {
+        "name": "Enough In Escrow",
+        "listeners": 3205,
+        "playcount": 6713
+      },
+      {
+        "name": "Keep it movin'",
+        "listeners": 3093,
+        "playcount": 7923
+      },
+      {
+        "name": "Awe-inspiring",
+        "listeners": 1814,
+        "playcount": 3866
+      },
+      {
+        "name": "Give me a kiss",
+        "listeners": 1726,
+        "playcount": 3777
+      },
+      {
+        "name": "under the top",
+        "listeners": 1195,
+        "playcount": 2902
+      },
+      {
+        "name": "Every hour after",
+        "listeners": 1171,
+        "playcount": 1784
+      },
+      {
+        "name": "Remarkable Deeds",
+        "listeners": 1122,
+        "playcount": 2695
+      },
+      {
+        "name": "Eye Contact",
+        "listeners": 1040,
+        "playcount": 1771
+      },
+      {
+        "name": "Champagne Breakfast",
+        "listeners": 999,
+        "playcount": 2253
+      }
+    ],
+    "url": "https://www.last.fm/music/Gea"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

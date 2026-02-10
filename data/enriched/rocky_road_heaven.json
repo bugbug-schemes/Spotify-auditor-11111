@@ -1,0 +1,120 @@
+{
+  "artist_name": "Rocky Road Heaven",
+  "artist_id": "rocky_road_heaven",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:45:20.091618+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rocky Road Heaven",
+    "mbid": "",
+    "listeners": 11666,
+    "playcount": 45819,
+    "listener_play_ratio": 3.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rocky+Road+Heaven\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Quentin Noire",
+      "Riku Arai",
+      "Gregory Velvet",
+      "Yeer Ifinies",
+      "Harold Kay"
+    ],
+    "top_tracks": [
+      {
+        "name": "moonlight in my heart",
+        "listeners": 9175,
+        "playcount": 39738
+      },
+      {
+        "name": "Hark The Herald",
+        "listeners": 2565,
+        "playcount": 5634
+      },
+      {
+        "name": "Fading Frames",
+        "listeners": 189,
+        "playcount": 350
+      },
+      {
+        "name": "Ember's Love",
+        "listeners": 12,
+        "playcount": 23
+      },
+      {
+        "name": "growing",
+        "listeners": 8,
+        "playcount": 58
+      },
+      {
+        "name": "in motion",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Pixie Slumber",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "amber skylines",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Graceful Meadows",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "My Tender Heart",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Rocky+Road+Heaven"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

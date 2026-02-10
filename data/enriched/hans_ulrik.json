@@ -1,0 +1,576 @@
+{
+  "artist_name": "Hans Ulrik",
+  "artist_id": "hans_ulrik",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:01:50.883474+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a2937358-0e5a-4e9f-ab52-800005e4430b",
+    "type": "Person",
+    "country": "DK",
+    "area": "Denmark",
+    "begin_date": "1965-09-28",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000055514931"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000662921",
+      "discogs": "https://www.discogs.com/artist/318634",
+      "free streaming": "https://open.spotify.com/artist/1SdvVqfeIalD1XCYMO9HsF",
+      "myspace": "https://myspace.com/hansulrik",
+      "official homepage": "http://www.hansulrik.dk/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no98042458",
+      "secondhandsongs": "https://secondhandsongs.com/artist/23185",
+      "songkick": "https://www.songkick.com/artists/215275",
+      "VIAF": "http://viaf.org/viaf/31610661",
+      "wikidata": "https://www.wikidata.org/wiki/Q1582848"
+    },
+    "labels": [
+      "amm",
+      "Stunt Records",
+      "Music Mecca",
+      "Storyville Records",
+      "Cowbell Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 101039,
+    "name": "Hans Ulrik",
+    "nb_fan": 132,
+    "nb_album": 41,
+    "link": "https://www.deezer.com/artist/101039",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d3370bb9d34e03f8f1e2c2a6d6bcd222/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alex Riel",
+      "Anders Mogensen",
+      "Benjamin Koppel",
+      "Johnny Aman",
+      "Jon Balke",
+      "Jonas Johansen",
+      "Palle Danielsson",
+      "Steve Swallow",
+      "Ulrik/Koppel/Balke/Danielsson/Riel"
+    ],
+    "contributor_roles": {
+      "Jon Balke": [
+        "Main"
+      ],
+      "Alex Riel": [
+        "Main"
+      ],
+      "Benjamin Koppel": [
+        "Main"
+      ],
+      "Ulrik/Koppel/Balke/Danielsson/Riel": [
+        "Main"
+      ],
+      "Palle Danielsson": [
+        "Main"
+      ],
+      "Steve Swallow": [
+        "Main"
+      ],
+      "Jonas Johansen": [
+        "Main"
+      ],
+      "Johnny Aman": [
+        "Main"
+      ],
+      "Anders Mogensen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "The Great Open",
+      "Farewell My Heart, My House",
+      "On The Sunny Side Of The Street",
+      "Answer Me",
+      "A Nightingale Sang In Berkeley Square",
+      "You Must Believe In Spring",
+      "In a Sentimental Mood",
+      "Cavatina (Original Soundtrack from The Deer Hunter)"
+    ],
+    "track_durations": [
+      220,
+      252,
+      278,
+      210,
+      380,
+      298,
+      340,
+      217
+    ],
+    "track_ranks": [
+      66074,
+      66740,
+      55744,
+      146575,
+      66347,
+      37172,
+      33507,
+      46842
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 25,
+      "ep": 1,
+      "single": 12,
+      "compile": 3
+    },
+    "albums": [
+      {
+        "title": "Memory Lane",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Ballad Collection",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nightfall",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jazz Brazil",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Twilight Story",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "In a Sentimental Mood",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lyset skinner i mørket",
+        "label": "",
+        "release_date": "2020-10-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Meeting",
+        "label": "",
+        "release_date": "2020-05-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Suite of Time",
+        "label": "",
+        "release_date": "2015-12-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Christmas Song",
+        "label": "",
+        "release_date": "2013-11-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Equilibrium",
+        "label": "",
+        "release_date": "2013-01-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Slow Procession",
+        "label": "",
+        "release_date": "2009-11-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Meeting",
+        "label": "",
+        "release_date": "2009-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Believe In Spring",
+        "label": "",
+        "release_date": "2008-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tin Pan Aliens",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tribal Dance",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Human Factor (feat. Jeff Ballard)",
+        "label": "",
+        "release_date": "2005-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Blue & Purple",
+        "label": "",
+        "release_date": "2006-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": ">Trio<",
+        "label": "",
+        "release_date": "2006-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jazz & Latin Beats",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Danske Sange",
+        "label": "",
+        "release_date": "1998-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jazz And Mambo",
+        "label": "",
+        "release_date": "1998-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Strange World",
+        "label": "",
+        "release_date": "1994-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Day After Day",
+        "label": "",
+        "release_date": "1992-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fusion",
+        "label": "",
+        "release_date": "1989-12-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Christmas Moods",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "When Lights Are Low",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Five",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bella Notte",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Estate",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Snorre Kirk",
+      "Cozy Bedroom",
+      "Jazzy Coffee",
+      "Cozy Coffee Shop",
+      "Relaxing Jazz Piano",
+      "Cozy Apartment",
+      "Julia Hülsmann Quartet",
+      "James Jackson Jazz Trio",
+      "Glass Trio",
+      "Brandon Sanders"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 318634,
+    "name": "Hans Ulrik",
+    "profile": "Danish jazz tenor saxophonist and composer, born 28 September 1965 in Copenhagen, Denmark.",
+    "realname": "",
+    "social_urls": [
+      "http://hansulrik.com/",
+      "http://da.wikipedia.org/wiki/Hans_Ulrik"
+    ],
+    "members": [],
+    "groups": [
+      "Bentzon Brotherhood",
+      "Danish Radio Big Band",
+      "Marilyn Mazur's Future Song",
+      "Emborg / Larsen Group",
+      "Santa Cruz (6)",
+      "Emborg Larsen Quintet",
+      "Music Spoken Here",
+      "Hans Ulrik Quartet",
+      "A Circle Of Songs",
+      "Hans Ulrik's Jazz & Mambo",
+      "Hans Ulrik Group",
+      "Marilyn Mazur & Pulse Unit",
+      "Ulrik/Hess Quartet",
+      "Maggi Olin Sextet",
+      "Jesper Lundgaard Trio",
+      "Hans Ulrik & Friends",
+      "Fini Høstrup Quartet",
+      "Wombat (6)",
+      "The Doky/Ulrik Quartett",
+      "Morten Ramsbøl Group",
+      "Det Glatte Lag",
+      "Helle Hansen's Jazzy Present",
+      "Maggi Olin Quartet",
+      "Niels Nørager Invention",
+      "The Hans Ulrik / Steve Swallow / Jonas Johansen Trio",
+      "Human Factor (13)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 67,
+    "digital_only_releases": 33,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "11xFile, FLAC, Album",
+      "12\", Promo, Smplr",
+      "2xCD, Album, Comp",
+      "2xCD, Album, Dou",
+      "2xCD, Comp",
+      "6xFile, FLAC, EP",
+      "CD",
+      "CD, Album",
+      "CD, Album + CD, Comp + Comp",
+      "CD, Album, Comp",
+      "CD, Album, Dig",
+      "CD, Album, Promo",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Single",
+      "CD, Single, Promo, Car",
+      "CDr, Album",
+      "CDr, Album, Promo",
+      "CDr, Comp, Smplr",
+      "LP, Album",
+      "SACD, Multichannel, Album"
+    ],
+    "labels": [
+      "ACT (4)",
+      "ArtPeople",
+      "Bang & Olufsen",
+      "Blackout Music (3)",
+      "Bonfire Music",
+      "CMC",
+      "Calibrated",
+      "Cope Records",
+      "Copenhagen Records",
+      "Cowbell Music",
+      "DR, Sony Music",
+      "EMI, Red Dot Music",
+      "Eldorado (8)",
+      "Exlibris, Exlibris",
+      "Fclef Records",
+      "Gateway Music",
+      "ILK Music",
+      "Linx Music",
+      "Little Big Records (4)",
+      "Lá Lala Records",
+      "Mermaid Records (3)",
+      "Music For Dreams America",
+      "Music Mecca",
+      "Not On Label",
+      "Olufsen Records",
+      "Prophone",
+      "REDdot Music",
+      "Red Dot Music",
+      "Red Dot Music, EMI Music Denmark",
+      "Sony Music",
+      "Sony Music, DR",
+      "Storyville",
+      "Stunt Records",
+      "Sundance (2)",
+      "Sundance (2), Sundance (2)",
+      "Sunnyside",
+      "Touché Music",
+      "Universal Music",
+      "Universal, We Are Private",
+      "Virgin"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hans Ulrik",
+    "mbid": "a2937358-0e5a-4e9f-ab52-800005e4430b",
+    "listeners": 59785,
+    "playcount": 200363,
+    "listener_play_ratio": 3.35,
+    "bio_exists": true,
+    "bio_summary": "Danish composer/saxophonist born i Copenhagen in 1965. <a href=\"https://www.last.fm/music/Hans+Ulrik\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "saxophone",
+      "danish",
+      "nordic",
+      "Tenor Sax"
+    ],
+    "similar_artists": [
+      "Armel Dupas Trio",
+      "Dominick Farinacci",
+      "Snorre Kirk",
+      "Harry Allen",
+      "Jeremy Pelt"
+    ],
+    "top_tracks": [
+      {
+        "name": "Answer Me",
+        "listeners": 36293,
+        "playcount": 85733
+      },
+      {
+        "name": "A Nightingale Sang In Berkeley Square",
+        "listeners": 19969,
+        "playcount": 45909
+      },
+      {
+        "name": "Memory Lane",
+        "listeners": 4321,
+        "playcount": 7851
+      },
+      {
+        "name": "In a Sentimental Mood",
+        "listeners": 3794,
+        "playcount": 6810
+      },
+      {
+        "name": "Loose Caboose",
+        "listeners": 3452,
+        "playcount": 6731
+      },
+      {
+        "name": "The Great Open",
+        "listeners": 2439,
+        "playcount": 5633
+      },
+      {
+        "name": "You Must Believe in Spring",
+        "listeners": 751,
+        "playcount": 1507
+      },
+      {
+        "name": "Take 5",
+        "listeners": 643,
+        "playcount": 2010
+      },
+      {
+        "name": "Love Is Here To Stay",
+        "listeners": 393,
+        "playcount": 1385
+      },
+      {
+        "name": "Lazy Afternoon",
+        "listeners": 392,
+        "playcount": 675
+      }
+    ],
+    "url": "https://www.last.fm/music/Hans+Ulrik"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

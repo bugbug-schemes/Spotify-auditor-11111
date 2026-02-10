@@ -1,0 +1,175 @@
+{
+  "artist_name": "Diphthong",
+  "artist_id": "diphthong",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:29:39.837767+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288784841,
+    "name": "Diphthong",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/288784841",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a74ca0d96b8ef6b8d9ef04ce380b1d51/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Still Chasm",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Senses",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tranquess Aura",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Abundant World",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm Retreat",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Far Sight",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let Her In",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6073382,
+    "name": "Diphthongs",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "7\""
+    ],
+    "labels": [
+      "Magnetic Oblivion Records (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "diphthong",
+    "mbid": "",
+    "listeners": 20195,
+    "playcount": 90584,
+    "listener_play_ratio": 4.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/diphthong\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eirwyn North",
+      "Stilly Night",
+      "Remi Ainsley",
+      "Quantum Veil",
+      "Elio Vane"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tranquess Aura",
+        "listeners": 15588,
+        "playcount": 60288
+      },
+      {
+        "name": "Calm Retreat",
+        "listeners": 4953,
+        "playcount": 29418
+      },
+      {
+        "name": "Senses",
+        "listeners": 395,
+        "playcount": 877
+      },
+      {
+        "name": "2006-07-15 02:33",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/diphthong"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

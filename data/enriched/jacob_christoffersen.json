@@ -1,0 +1,489 @@
+{
+  "artist_name": "Jacob Christoffersen",
+  "artist_id": "jacob_christoffersen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:20:22.605609+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "23a4aee9-3ccc-4797-9d83-0efbf2387e14",
+    "type": "Person",
+    "country": "DK",
+    "area": "Denmark",
+    "begin_date": "1967-03-31",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000130209647"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/339486",
+      "VIAF": "http://viaf.org/viaf/305971804",
+      "wikidata": "https://www.wikidata.org/wiki/Q12318835"
+    },
+    "labels": [
+      "Stunt Records",
+      "Cowbell Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 116318,
+    "name": "Jacob Christoffersen",
+    "nb_fan": 14,
+    "nb_album": 20,
+    "link": "https://www.deezer.com/artist/116318",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c050500f70b5d42e718087a7c7985bd8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anders Jormin",
+      "Chris Minh Doky",
+      "Claus Waidtløw",
+      "Copenhagen Jazzexperience",
+      "Jacob Fischer",
+      "Katrine Madsen",
+      "Rasmus Kihlberg",
+      "Sinne Eeg",
+      "Thomas Fonnesbæk"
+    ],
+    "contributor_roles": {
+      "Sinne Eeg": [
+        "Main"
+      ],
+      "Jacob Fischer": [
+        "Main"
+      ],
+      "Chris Minh Doky": [
+        "Main"
+      ],
+      "Rasmus Kihlberg": [
+        "Main"
+      ],
+      "Copenhagen Jazzexperience": [
+        "Main"
+      ],
+      "Claus Waidtløw": [
+        "Main"
+      ],
+      "Katrine Madsen": [
+        "Main"
+      ],
+      "Anders Jormin": [
+        "Main"
+      ],
+      "Thomas Fonnesbæk": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Talking to Myself",
+      "Epiphany",
+      "Ithaka",
+      "Glemmer du",
+      "My One and Only Love",
+      "We'll Be Together Again",
+      "City Garden",
+      "Never Let Me Go",
+      "But Not for Me",
+      "Summer Night",
+      "Bargemon",
+      "Lush Life",
+      "Chelsea Bridge",
+      "Losing You",
+      "A Second Chance at Love",
+      "Don't Be so Blue",
+      "Better Than Anything",
+      "Maria"
+    ],
+    "track_durations": [
+      240,
+      213,
+      209,
+      374,
+      307,
+      308,
+      394,
+      323,
+      307,
+      305,
+      309,
+      366,
+      328,
+      327,
+      292,
+      287,
+      379,
+      291
+    ],
+    "track_ranks": [
+      210892,
+      142845,
+      69978,
+      193318,
+      210059,
+      72911,
+      37661,
+      61793,
+      32548,
+      73402,
+      21933,
+      8387,
+      38214,
+      65410,
+      55210,
+      17036,
+      38537,
+      104750
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 14,
+      "single": 5,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Summer Night",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Shikiori 想帰庵",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Good Day",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lazy Afternoon",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Everything I Love",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "City Garden",
+        "label": "",
+        "release_date": "2021-03-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "We Want You",
+        "label": "",
+        "release_date": "2016-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "JC3",
+        "label": "",
+        "release_date": "2011-05-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Don't Be so Blue",
+        "label": "",
+        "release_date": "2010-11-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kun En Drøm",
+        "label": "",
+        "release_date": "2008-04-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Remembering You",
+        "label": "",
+        "release_date": "2010-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Change Your Mind",
+        "label": "",
+        "release_date": "2007-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Facing The Sun",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jazzxperience",
+        "label": "",
+        "release_date": "1999-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Maria",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing You",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soba Flower",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Country",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bargemon",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En Sång I En Dröm – a Tribute to Monica Zetterlund",
+        "label": "",
+        "release_date": "2020-07-10",
+        "nb_tracks": 0,
+        "type": "compile"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 339486,
+    "name": "Jacob Christoffersen",
+    "profile": "Danish jazz/rock pianist and bandleader, born 31 March 1967 in Copenhagen.",
+    "realname": "Jacob Christoffersen",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Shu-Bi-Dua",
+      "Jonas Johansen Move",
+      "Decoy Quintet",
+      "Lars Møller Group",
+      "Hans Ulrik Quartet",
+      "Nothing Gulch Quartet",
+      "Jacob Christoffersen Trio",
+      "Rodney Green Quartet",
+      "Danish Delight",
+      "Steen Hansen Quartet",
+      "Mathias Heise Quintet"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 75,
+    "digital_only_releases": 25,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Album",
+      "2xCD, Comp",
+      "6xCD, Comp, Promo + Box, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Copy Prot.",
+      "CD, Album, Dig",
+      "CD, Album, Promo",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Smplr",
+      "CD, EP",
+      "CD, Single",
+      "CD, Single, Promo",
+      "CD, Single, Promo, Car",
+      "LP",
+      "LP, Album, Ltd, Num",
+      "SACD, Multichannel, Album"
+    ],
+    "labels": [
+      "Airborne Records (6)",
+      "Ambia",
+      "April Records, April Records",
+      "ArtPeople",
+      "Big Bang Records (14)",
+      "Blue Note",
+      "Bonfire Music",
+      "CMC",
+      "Calibrated",
+      "Copenhagen Records",
+      "Cowbell Music, Unit (8)",
+      "Det Kristne Forlag",
+      "Dragon (8)",
+      "Dyb Lyd Records",
+      "EMI-Medley",
+      "Egmont Music Club",
+      "Exlibris",
+      "Fønix Musik",
+      "Gateway Music",
+      "High Fidelity Magazine",
+      "Katrine Madsen (Denmark)",
+      "MXP",
+      "Medley Records",
+      "Mermaid Records (3), Mermaid Records (3)",
+      "Music Mecca",
+      "Not On Label",
+      "Prophone",
+      "Red Dot Music",
+      "Red Dot Music, Baresso Coffee Præsenterer, EMI",
+      "Scanbox Entertainment",
+      "Scandinavian Records",
+      "Storyville",
+      "Storyville Records",
+      "Stunt Records",
+      "Stunt Records, Jazz Magazine/Jazzman",
+      "Sundance (2)",
+      "Sundance Music (2)",
+      "Target (15)",
+      "Universal Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jacob Christoffersen",
+    "mbid": "23a4aee9-3ccc-4797-9d83-0efbf2387e14",
+    "listeners": 522,
+    "playcount": 5639,
+    "listener_play_ratio": 10.8,
+    "bio_exists": true,
+    "bio_summary": "Danish musician born March 31., 1967. Plays keyboard in Shu-bi-dua, a well known danish rock/pop band. Graduate from Rhytmic Music Conservatory in Copenhagen where he is now teaching . \n\nStarted out playing mostly jazz while growing up in Hillerød, Denmark. Now plays with his own trio, and with a host of other danish jazz musicians.\n\nReciever of danish Jazz-award \"Sørens penge\". <a href=\"https://www.last.fm/music/Jacob+Christoffersen\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz piano",
+      "piano",
+      "spotify"
+    ],
+    "similar_artists": [
+      "Enrico Pieranunzi",
+      "Kenny Barron",
+      "Jonas Johansen",
+      "Kasper Villaume",
+      "Niels Lan Doky"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bargemon",
+        "listeners": 148,
+        "playcount": 244
+      },
+      {
+        "name": "Country",
+        "listeners": 89,
+        "playcount": 188
+      },
+      {
+        "name": "Hva' gør vi nu, lille du",
+        "listeners": 88,
+        "playcount": 159
+      },
+      {
+        "name": "A Good Day",
+        "listeners": 86,
+        "playcount": 136
+      },
+      {
+        "name": "Lost in Rio",
+        "listeners": 53,
+        "playcount": 75
+      },
+      {
+        "name": "facing the sun",
+        "listeners": 52,
+        "playcount": 150
+      },
+      {
+        "name": "Long Tail Dexter",
+        "listeners": 52,
+        "playcount": 76
+      },
+      {
+        "name": "Break of Dawn",
+        "listeners": 49,
+        "playcount": 70
+      },
+      {
+        "name": "Land of Lydia",
+        "listeners": 48,
+        "playcount": 78
+      },
+      {
+        "name": "Baker's Blues",
+        "listeners": 46,
+        "playcount": 68
+      }
+    ],
+    "url": "https://www.last.fm/music/Jacob+Christoffersen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

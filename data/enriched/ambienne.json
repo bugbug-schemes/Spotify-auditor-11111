@@ -1,0 +1,142 @@
+{
+  "artist_name": "Ambienne",
+  "artist_id": "ambienne",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:55:09.613232+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170965197,
+    "name": "Ambienne",
+    "nb_fan": 2,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/170965197",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/832cebce812fa368c4718e8b3164ed2d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Northern Light",
+        "label": "",
+        "release_date": "2023-04-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Binaural Ambience",
+        "label": "",
+        "release_date": "2023-02-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Weightless Horizon",
+        "label": "",
+        "release_date": "2025-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Radiant Recovery",
+        "label": "",
+        "release_date": "2025-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Voyager",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Origin",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Days Beginning",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mountaintop",
+        "label": "",
+        "release_date": "2024-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aurora",
+        "label": "",
+        "release_date": "2022-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crossing Galaxies",
+        "label": "",
+        "release_date": "2022-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": false,
+    "raw": null
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "lastfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

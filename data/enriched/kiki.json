@@ -1,0 +1,507 @@
+{
+  "artist_name": "KIKI",
+  "artist_id": "kiki",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:42:59.784770+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "419576ca-d0d7-405f-ab14-632566d2bbad",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/9087",
+      "free streaming": "https://www.deezer.com/artist/12282",
+      "myspace": "https://myspace.com/kikibpitchcontrol",
+      "official homepage": "http://www.djkiki.de/",
+      "purchase for download": "https://www.beatport.com/artist/kiki/6260",
+      "streaming": "https://music.apple.com/gb/artist/1532800043"
+    },
+    "labels": [
+      "BPitch Control",
+      "Komfort.Musik",
+      "Find Your Harmony",
+      "elrow limited",
+      "Watergate Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 204048977,
+    "name": "KIKI",
+    "nb_fan": 83,
+    "nb_album": 24,
+    "link": "https://www.deezer.com/artist/204048977",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0da90f61cb37b27b40b629ef9b5240bc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "H 3 F",
+      "えんぷてい"
+    ],
+    "contributor_roles": {
+      "えんぷてい": [
+        "Featured"
+      ],
+      "H 3 F": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Baby",
+      "Baby",
+      "Love is so Unreal",
+      "Daydream",
+      "XOXO",
+      "Get Up",
+      "Don't Forget Me",
+      "Good Day",
+      "Back In The Game",
+      "Everybody",
+      "Oyster",
+      "Sick",
+      "Alive"
+    ],
+    "track_durations": [
+      257,
+      358,
+      281,
+      218,
+      221,
+      212,
+      197,
+      253,
+      208,
+      394,
+      286,
+      239,
+      217
+    ],
+    "track_ranks": [
+      26991,
+      86346,
+      58121,
+      30637,
+      25036,
+      54424,
+      32530,
+      90444,
+      69802,
+      71720,
+      35251,
+      33778,
+      26652
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 6,
+      "ep": 2,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "Loft Session 2025 (Live Version)",
+        "label": "",
+        "release_date": "2025-12-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Death of a Daisy & Birth of an Oyster",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "New Dawn No.01",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Daydream of Afterglow Concert (Live from Lido Connect)",
+        "label": "",
+        "release_date": "2024-04-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Post-existential Crisis",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Metamorphosis: Final Stage",
+        "label": "",
+        "release_date": "2022-05-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "LLK Live Session 2023 (Live Session)",
+        "label": "",
+        "release_date": "2023-08-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "We're blamed for who we are, and then we are forgotten",
+        "label": "",
+        "release_date": "2021-11-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sick",
+        "label": "",
+        "release_date": "2025-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oyster",
+        "label": "",
+        "release_date": "2025-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daisy",
+        "label": "",
+        "release_date": "2025-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everybody",
+        "label": "",
+        "release_date": "2025-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love is so Unreal",
+        "label": "",
+        "release_date": "2024-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby",
+        "label": "",
+        "release_date": "2024-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daydream",
+        "label": "",
+        "release_date": "2023-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "XOXO",
+        "label": "",
+        "release_date": "2023-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Antidote",
+        "label": "",
+        "release_date": "2023-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get Up",
+        "label": "",
+        "release_date": "2023-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back In The Game",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Metamorphosis",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Run to you (Christmas Special)",
+        "label": "",
+        "release_date": "2021-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Killjoy",
+        "label": "",
+        "release_date": "2021-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My World",
+        "label": "",
+        "release_date": "2021-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9087,
+    "name": "Kiki",
+    "profile": "DJ and producer born in Helsinki, Finland, now based in Berlin, Germany.",
+    "realname": "Joakim Ijäs",
+    "social_urls": [
+      "http://www.bpitch.de/artist/kiki",
+      "https://wearekiki.bandcamp.com/",
+      "http://www.bandsintown.com/Kiki",
+      "http://www.facebook.com/kikimusic",
+      "http://www.instagram.com/kikigoodvoodoo",
+      "http://linktr.ee/kikigoodvoodoo",
+      "http://www.myspace.com/kikibpitchcontrol",
+      "http://soundcloud.com/kikigoodvoodoo",
+      "http://twitter.com/KikiGoodVoodoo",
+      "http://www.youtube.com/channel/UC5nvM5az6GR4Wpn1KZex-TQ"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 25,
+    "digital_only_releases": 75,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, MP3, Comp, 320",
+      "12\"",
+      "12\", EP",
+      "12\", EP, Ltd",
+      "12\", Maxi",
+      "12\", Promo, W/Lbl",
+      "12\", Single",
+      "15xFile, MP3, Comp, 320",
+      "19xFile, MP3, Comp, 320",
+      "20xFile, MP3, 320",
+      "20xFile, MP3, Comp",
+      "20xFile, MP3, Comp, 320",
+      "2xCD, Comp, Mixed",
+      "2xFile, MP3, EP, 320",
+      "2xFile, MP3, Single, 320",
+      "31xFile, WAV, Comp + File, WAV, Mixed",
+      "3xFile, MP3, 320",
+      "3xFile, MP3, EP, 320",
+      "3xFile, WAV, EP",
+      "40xFile, MP3, Comp, 320",
+      "4xFile, MP3, 320",
+      "4xFile, MP3, Comp, 320",
+      "4xFile, MP3, EP, 320",
+      "4xFile, MP3, VBR",
+      "5xFile, MP3, EP, 320",
+      "6xFile, MP3, EP, 320",
+      "6xFile, MP3, EP, Comp, 320",
+      "6xFile, WAV, EP",
+      "7\"",
+      "CD, Comp, Mixed",
+      "CD, Mixed",
+      "File, MP3, 320",
+      "File, MP3, Comp, Mixed",
+      "File, MP3, Mixed, 160",
+      "File, MP3, Mixed, 320",
+      "File, MP3, Single"
+    ],
+    "labels": [
+      "Akbal Music",
+      "Akbal music",
+      "BCBtec",
+      "BPitch Control",
+      "Blended Music",
+      "Circus Recordings",
+      "Culprit",
+      "Data Transmission",
+      "Dear Deer Records",
+      "Der Turnbeutel",
+      "Dessous Recordings",
+      "Diskret Förlag",
+      "Eastern Standard",
+      "Eklektisch",
+      "Exploited",
+      "Fabric (2)",
+      "Gabcat Records",
+      "Galaktika Records",
+      "Get Physical Music",
+      "Great Stuff Recordings",
+      "Junk Yard",
+      "Komfort Musik",
+      "Kritik",
+      "Meant Records",
+      "Microzoo, Microzoo",
+      "Moodmusic",
+      "Moodmusic, Moodmusic",
+      "Musicismusic",
+      "My Favorite Robot Records",
+      "NRK Sound Division",
+      "No Fit State",
+      "Nordik Netrecords",
+      "Off Recordings",
+      "Precarious Records (2)",
+      "Push Communications",
+      "Rawax",
+      "Resident Advisor",
+      "Selador Recordings",
+      "Sisyphon",
+      "Sonnenhaus Recordings, Pepstone Records",
+      "Spaghetti Monster",
+      "Tenampa Recordings",
+      "Thisorder Records",
+      "Turbolenz Records",
+      "URSL",
+      "Union Jack Records (3)",
+      "Upon.You",
+      "Variety Music (2)",
+      "Watergate Records",
+      "liebe*detail digital"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kiki",
+    "mbid": "66d9d600-be2d-4aad-b826-d7a4f66be151",
+    "listeners": 129944,
+    "playcount": 974924,
+    "listener_play_ratio": 7.5,
+    "bio_exists": true,
+    "bio_summary": "At least 8 artists share the same name Kiki.\n\n1) Kicki Halmos from Sweden has produced music all her life, and has won acknowledgement for her participation in the new wave duo Masquer (who’s cover of You don’t own me was used in the latest Penny Dreadful trailer) Kiki’s unique voice has been featured on collaborations with dance producers such as The Field, Taragana Pyjarama, Aksel Friberg / Todd Terje, Andreas Tilliander and DJ Sasha. Now she’s finally making a solo debut <a href=\"https://www.",
+    "tags": [
+      "minimal",
+      "electronic",
+      "minimal techno",
+      "electro",
+      "BPitch Control"
+    ],
+    "similar_artists": [
+      "Goldielocks",
+      "Sascha Funke",
+      "Ellen Allien",
+      "Hugo",
+      "Rampa"
+    ],
+    "top_tracks": [
+      {
+        "name": "Personality",
+        "listeners": 17935,
+        "playcount": 38743
+      },
+      {
+        "name": "Atomic",
+        "listeners": 17742,
+        "playcount": 39287
+      },
+      {
+        "name": "The End of the World",
+        "listeners": 10231,
+        "playcount": 21916
+      },
+      {
+        "name": "Gas 126",
+        "listeners": 9587,
+        "playcount": 18139
+      },
+      {
+        "name": "Luv Sikk",
+        "listeners": 9403,
+        "playcount": 20756
+      },
+      {
+        "name": "Run With Me",
+        "listeners": 8639,
+        "playcount": 28042
+      },
+      {
+        "name": "Good Voodoo - Visionquest Remix",
+        "listeners": 6645,
+        "playcount": 12951
+      },
+      {
+        "name": "666",
+        "listeners": 6522,
+        "playcount": 93697
+      },
+      {
+        "name": "So Easy To Forget (Kiki Remix)",
+        "listeners": 6193,
+        "playcount": 11075
+      },
+      {
+        "name": "Up",
+        "listeners": 6014,
+        "playcount": 10638
+      }
+    ],
+    "url": "https://www.last.fm/music/Kiki"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

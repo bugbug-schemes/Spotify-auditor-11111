@@ -1,0 +1,132 @@
+{
+  "artist_name": "Alex Dawa",
+  "artist_id": "alex_dawa",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:49:58.979553+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 222700185,
+    "name": "Alex Dawa",
+    "nb_fan": 2,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/222700185",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/15a1a71d109567fd254c721e92c3d934/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Blissful Reverie"
+    ],
+    "track_durations": [
+      161
+    ],
+    "track_ranks": [
+      56236
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Blissful Reverie",
+        "label": "",
+        "release_date": "2023-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alex Dawa",
+    "mbid": "",
+    "listeners": 5161,
+    "playcount": 70293,
+    "listener_play_ratio": 13.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Alex+Dawa\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Emily McQueen",
+      "Georgia Faingold",
+      "Victoria Kane",
+      "Naéli Gosally",
+      "The Piano Hive"
+    ],
+    "top_tracks": [
+      {
+        "name": "Blissful Reverie",
+        "listeners": 5137,
+        "playcount": 70025
+      },
+      {
+        "name": "Dream Lullaby",
+        "listeners": 38,
+        "playcount": 87
+      },
+      {
+        "name": "Warm Twilight",
+        "listeners": 36,
+        "playcount": 65
+      },
+      {
+        "name": "Gentle Embrace",
+        "listeners": 35,
+        "playcount": 74
+      },
+      {
+        "name": "Peaceful Journey",
+        "listeners": 31,
+        "playcount": 39
+      },
+      {
+        "name": "Velvet Dreams",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Alex+Dawa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

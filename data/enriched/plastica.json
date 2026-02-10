@@ -1,0 +1,427 @@
+{
+  "artist_name": "PLASTICA",
+  "artist_id": "plastica",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:19:06.388966+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "290b165d-e7a8-401f-9c68-7ca0c64e693e",
+    "type": "Group",
+    "country": "PT",
+    "area": "Portugal",
+    "begin_date": "1998",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1328849",
+      "other databases": "https://rateyourmusic.com/artist/plastica"
+    },
+    "labels": [
+      "Metrodiscos",
+      "EMI",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 354106,
+    "name": "Plastica",
+    "nb_fan": 310,
+    "nb_album": 42,
+    "link": "https://www.deezer.com/artist/354106",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1eeeb4f258471b0c51afd2dcbddc8247/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ceri Wax",
+      "ELASI"
+    ],
+    "contributor_roles": {
+      "Ceri Wax": [
+        "Main"
+      ],
+      "ELASI": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "6500 Kelvin",
+      "Best Friend",
+      "¡Muak!",
+      "AMORE GODZILLA"
+    ],
+    "track_durations": [
+      223,
+      208,
+      284,
+      219
+    ],
+    "track_ranks": [
+      21721,
+      101166,
+      103085,
+      149845
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "ep": 5,
+      "single": 30
+    },
+    "albums": [
+      {
+        "title": "OX",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Niños de Hoy",
+        "label": "",
+        "release_date": "2025-07-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Artes Plásticas",
+        "label": "",
+        "release_date": "2024-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Contemplarte",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "So Deep So Close",
+        "label": "",
+        "release_date": "2006-10-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dream On",
+        "label": "",
+        "release_date": "2005-10-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Red Light Underground",
+        "label": "",
+        "release_date": "2013-03-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hasta siempre",
+        "label": "",
+        "release_date": "2024-08-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "UV",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Terciopelo Verde",
+        "label": "",
+        "release_date": "2020-01-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Negativo",
+        "label": "",
+        "release_date": "2019-06-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "01111001",
+        "label": "",
+        "release_date": "2019-01-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Best Friend",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "AMORE GODZILLA",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aiuto",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beauty Star",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Illusion",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "6500 Kelvin",
+        "label": "",
+        "release_date": "2024-12-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Siento Que Te Estorbo",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Teatro",
+        "label": "",
+        "release_date": "2024-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "¡Muak!",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BASTA SESSION N°2 (Plastica Remix)",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Estaciones",
+        "label": "",
+        "release_date": "2024-03-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solo",
+        "label": "",
+        "release_date": "2024-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Umbral",
+        "label": "",
+        "release_date": "2024-02-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oxígeno",
+        "label": "",
+        "release_date": "2023-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verano Azul (feat. Gran Radio Riviera)",
+        "label": "",
+        "release_date": "2023-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desde Que Llegaste",
+        "label": "",
+        "release_date": "2022-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Japón",
+        "label": "",
+        "release_date": "2022-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ruin",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 232403,
+    "name": "Plastica",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 1,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "12\"",
+      "2xCD, Comp",
+      "CD, Comp, Mixed",
+      "CD, Maxi"
+    ],
+    "labels": [
+      "Nutrition",
+      "Phoenix Found Records",
+      "VMP",
+      "Wretched Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Plastica",
+    "mbid": "290b165d-e7a8-401f-9c68-7ca0c64e693e",
+    "listeners": 7160,
+    "playcount": 32404,
+    "listener_play_ratio": 4.53,
+    "bio_exists": true,
+    "bio_summary": "1. Plastica (Izhevsk, Russia) - underground shoegaze project from Siberia, Russia. Izevsk is one of capital of Russian alternative music 90's. They recorded three albums, but released only one: Plastica - 1997 - The Man I Love (Self-Released, CDr). See video on youtube: Plastica - The Man I Love. Original lineup is: Вячеслав Широких [Vyacheslav Shirokih] (vocals, guitar); Алексей Зырянов [Alexey Zyryanov] (guitar); Алексей [Alexey aka НОС (guitar <a href=\"https://www.last.fm/music/Plastica\">Read",
+    "tags": [
+      "shoegaze",
+      "indie",
+      "russian",
+      "electronic",
+      "alternative"
+    ],
+    "similar_artists": [
+      "Rome in Reverse",
+      "Mercromina",
+      "Velvet and Velvet Dolls",
+      "the pumpkin fairies",
+      "Here"
+    ],
+    "top_tracks": [
+      {
+        "name": "6500 Kelvin - Instrumental",
+        "listeners": 3066,
+        "playcount": 6701
+      },
+      {
+        "name": "Aiuto",
+        "listeners": 384,
+        "playcount": 1074
+      },
+      {
+        "name": "United Lonely People",
+        "listeners": 365,
+        "playcount": 877
+      },
+      {
+        "name": "Beauty Star",
+        "listeners": 349,
+        "playcount": 1010
+      },
+      {
+        "name": "Bugs and astronauts",
+        "listeners": 289,
+        "playcount": 1185
+      },
+      {
+        "name": "FAME (feat. Laila Al Habash)",
+        "listeners": 279,
+        "playcount": 1146
+      },
+      {
+        "name": "Best Friend",
+        "listeners": 267,
+        "playcount": 597
+      },
+      {
+        "name": "Boys, Girls & Toys",
+        "listeners": 221,
+        "playcount": 658
+      },
+      {
+        "name": "Wise man says",
+        "listeners": 199,
+        "playcount": 345
+      },
+      {
+        "name": "silence since",
+        "listeners": 195,
+        "playcount": 448
+      }
+    ],
+    "url": "https://www.last.fm/music/Plastica"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

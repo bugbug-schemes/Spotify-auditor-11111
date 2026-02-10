@@ -1,0 +1,167 @@
+{
+  "artist_name": "Jovian Tides",
+  "artist_id": "jovian_tides",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:38:03.395684+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 126059552,
+    "name": "Jovian Tides",
+    "nb_fan": 2,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/126059552",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bb5f469dd31cb2886f936f9e999bb923/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Delta Binaural",
+        "label": "",
+        "release_date": "2023-04-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpha Tides",
+        "label": "",
+        "release_date": "2022-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpha Sea",
+        "label": "",
+        "release_date": "2022-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mind States",
+        "label": "",
+        "release_date": "2021-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jovian Tides",
+    "mbid": "",
+    "listeners": 17139,
+    "playcount": 93062,
+    "listener_play_ratio": 5.43,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jovian+Tides\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Sound Around",
+      "Light Vibrations",
+      "The Binaural Mind",
+      "Sound Calligraphy",
+      "Hidden in Sound"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sternschnuppen - Alpha Sinus 112Hz - 119Hz",
+        "listeners": 12357,
+        "playcount": 44271
+      },
+      {
+        "name": "Binaural Alpha Sinus 114Hz - 121Hz",
+        "listeners": 11280,
+        "playcount": 37974
+      },
+      {
+        "name": "Alpha State of Mind 106Hz - 116Hz",
+        "listeners": 3178,
+        "playcount": 10521
+      },
+      {
+        "name": "Alpha Mindset 121Hz - 128Hz",
+        "listeners": 34,
+        "playcount": 92
+      },
+      {
+        "name": "Alpha Sea 136Hz - 143Hz",
+        "listeners": 33,
+        "playcount": 120
+      },
+      {
+        "name": "Calm Mind with Delta 113Hz - 114Hz",
+        "listeners": 33,
+        "playcount": 44
+      },
+      {
+        "name": "Dreaming better with Delta 87Hz - 90Hz",
+        "listeners": 22,
+        "playcount": 32
+      },
+      {
+        "name": "Alpha Sinus for Concentration 86Hz - 95Hz",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Theta Dozing",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Alpha Tides 96Hz - 103Hz",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Jovian+Tides"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,133 @@
+{
+  "artist_name": "Bewegtes",
+  "artist_id": "bewegtes",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:39:52.212572+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 192357007,
+    "name": "Bewegtes",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/192357007",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Trigger",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fall Asleep To The Heartbeat",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bewegtes",
+    "mbid": "",
+    "listeners": 16616,
+    "playcount": 79717,
+    "listener_play_ratio": 4.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bewegtes\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Samsura",
+      "Bien Dorm",
+      "Cove De Tranquilo",
+      "Esperos",
+      "Fabrique Noise"
+    ],
+    "top_tracks": [
+      {
+        "name": "Drops Of Skies",
+        "listeners": 15713,
+        "playcount": 74381
+      },
+      {
+        "name": "Soothing Pulse",
+        "listeners": 696,
+        "playcount": 2680
+      },
+      {
+        "name": "Fall Asleep To The Heartbeat",
+        "listeners": 625,
+        "playcount": 2593
+      },
+      {
+        "name": "Deep Asleep",
+        "listeners": 40,
+        "playcount": 58
+      },
+      {
+        "name": "Eltern müssen auch schlafen",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Bewegtes weißes Rauschen vom Ozean",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Bewegtes"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

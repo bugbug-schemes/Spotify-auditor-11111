@@ -1,0 +1,152 @@
+{
+  "artist_name": "Leonardo Paul",
+  "artist_id": "leonardo_paul",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:03:12.141557+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7d167d53-94aa-4bbf-a277-9c05ea61a43e",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/4LE7Z7AiUvkJDoTw2a0N0b"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Leonardo Paul', got 'Leonardo Paniagua'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10529275,
+    "name": "Paul Leonardo",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Leonardo Paul",
+    "mbid": "7d167d53-94aa-4bbf-a277-9c05ea61a43e",
+    "listeners": 7393,
+    "playcount": 23982,
+    "listener_play_ratio": 3.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Leonardo+Paul\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sebastian Young",
+      "Meadow Bryce",
+      "Zale Foster",
+      "Lioren",
+      "syrene"
+    ],
+    "top_tracks": [
+      {
+        "name": "Deck the Halls",
+        "listeners": 4947,
+        "playcount": 12025
+      },
+      {
+        "name": "Christmas (Baby Please Come Home)",
+        "listeners": 2433,
+        "playcount": 5785
+      },
+      {
+        "name": "Joy to the World",
+        "listeners": 1340,
+        "playcount": 2715
+      },
+      {
+        "name": "Amazing Grace",
+        "listeners": 1279,
+        "playcount": 3027
+      },
+      {
+        "name": "Jingle Bell Rock (Ukulele)",
+        "listeners": 103,
+        "playcount": 213
+      },
+      {
+        "name": "Hark! The Herald Angels Sing (Guitar)",
+        "listeners": 34,
+        "playcount": 63
+      },
+      {
+        "name": "Santa Claus is Coming to Town",
+        "listeners": 24,
+        "playcount": 35
+      },
+      {
+        "name": "Joy to the World (Acoustic)",
+        "listeners": 13,
+        "playcount": 27
+      },
+      {
+        "name": "Amazing Grace (Acoustic)",
+        "listeners": 13,
+        "playcount": 20
+      },
+      {
+        "name": "Carol of the Bells - Piano",
+        "listeners": 7,
+        "playcount": 14
+      }
+    ],
+    "url": "https://www.last.fm/music/Leonardo+Paul"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

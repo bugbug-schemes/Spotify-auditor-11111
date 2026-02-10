@@ -1,0 +1,160 @@
+{
+  "artist_name": "Ravndala",
+  "artist_id": "ravndala",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:37:18.123263+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 195148767,
+    "name": "Ravndala",
+    "nb_fan": 1,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/195148767",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/018687d483c930ad249d5c7ec87a17da/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Spherical",
+      "Novation"
+    ],
+    "track_durations": [
+      193,
+      147
+    ],
+    "track_ranks": [
+      29090,
+      58990
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Novation",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spherical",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Transparancy",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perceptive",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Strings Attached",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unbroken",
+        "label": "",
+        "release_date": "2023-01-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ravndala",
+    "mbid": "",
+    "listeners": 10451,
+    "playcount": 29792,
+    "listener_play_ratio": 2.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ravndala\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Otto Virell",
+      "Lost storys",
+      "Dear Amore",
+      "novi quiet",
+      "Et Anima"
+    ],
+    "top_tracks": [
+      {
+        "name": "Spherical",
+        "listeners": 6768,
+        "playcount": 15513
+      },
+      {
+        "name": "Novation",
+        "listeners": 4451,
+        "playcount": 8513
+      },
+      {
+        "name": "Unbroken",
+        "listeners": 1596,
+        "playcount": 2964
+      },
+      {
+        "name": "Perceptive",
+        "listeners": 1487,
+        "playcount": 2802
+      }
+    ],
+    "url": "https://www.last.fm/music/Ravndala"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

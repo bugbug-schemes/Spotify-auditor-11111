@@ -1,0 +1,209 @@
+{
+  "artist_name": "Ashton Foster",
+  "artist_id": "ashton_foster",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:14:45.642368+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1f94004a-7ba9-4be2-aa8d-8af051cd862f",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/2174590"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4499443,
+    "name": "Ashton Foster",
+    "nb_fan": 5,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/4499443",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a3e775f96ecceee4334e6d767a34bf3f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "The Flower",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tree House",
+        "label": "",
+        "release_date": "2024-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Story of My Life",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somewhere Over the Rainbow",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ashton Foster",
+        "label": "",
+        "release_date": "2018-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2174590,
+    "name": "Ashton Foster",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 14,
+    "total_releases": 15,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "4xFile, FLAC, EP",
+      "File, AAC, ALAC, Single",
+      "File, FLAC"
+    ],
+    "labels": [
+      "Digital Picnic Records, Ashnikko",
+      "ICU Entertainment Limited",
+      "Perfect Havoc",
+      "Polystar (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ashton Foster",
+    "mbid": "1f94004a-7ba9-4be2-aa8d-8af051cd862f",
+    "listeners": 10475,
+    "playcount": 41438,
+    "listener_play_ratio": 3.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ashton+Foster\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "maseth",
+      "Romans Veiss",
+      "Jonas Björk",
+      "Yumi Ima",
+      "Mary Lou Stephens"
+    ],
+    "top_tracks": [
+      {
+        "name": "In My Feelings",
+        "listeners": 4752,
+        "playcount": 14306
+      },
+      {
+        "name": "SAD!",
+        "listeners": 3995,
+        "playcount": 14145
+      },
+      {
+        "name": "The Flower",
+        "listeners": 2893,
+        "playcount": 9492
+      },
+      {
+        "name": "Story of My Life",
+        "listeners": 1065,
+        "playcount": 2850
+      },
+      {
+        "name": "Tree House",
+        "listeners": 258,
+        "playcount": 578
+      },
+      {
+        "name": "Blinding Lights",
+        "listeners": 12,
+        "playcount": 30
+      },
+      {
+        "name": "INDUSTRY BABY",
+        "listeners": 10,
+        "playcount": 30
+      },
+      {
+        "name": "Somewhere Over the Rainbow",
+        "listeners": 2,
+        "playcount": 5
+      },
+      {
+        "name": "Trouble for Me",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Ashton+Foster"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

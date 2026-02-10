@@ -1,0 +1,206 @@
+{
+  "artist_name": "John Ember",
+  "artist_id": "john_ember",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:32:49.093934+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 261890061,
+    "name": "John Ember",
+    "nb_fan": 5,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/261890061",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6eb2ba3bbb97a2a1a84a9823fabcbbc9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "From Above"
+    ],
+    "track_durations": [
+      125
+    ],
+    "track_ranks": [
+      92865
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Echoform",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Driftwood",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From Above",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evening Drift",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Umbriel",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thalassa",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Circumfluo",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tectonics",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7273205,
+    "name": "John Emberle",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "John Ember",
+    "mbid": "",
+    "listeners": 13154,
+    "playcount": 37524,
+    "listener_play_ratio": 2.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/John+Ember\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Otto Virell",
+      "Lost storys",
+      "Ravndala",
+      "Lucky Lorry",
+      "novi quiet"
+    ],
+    "top_tracks": [
+      {
+        "name": "From Above",
+        "listeners": 4493,
+        "playcount": 8689
+      },
+      {
+        "name": "Evening Drift",
+        "listeners": 4369,
+        "playcount": 8269
+      },
+      {
+        "name": "Driftwood",
+        "listeners": 2480,
+        "playcount": 4194
+      },
+      {
+        "name": "Thalassa",
+        "listeners": 2222,
+        "playcount": 4961
+      },
+      {
+        "name": "Tectonics",
+        "listeners": 1953,
+        "playcount": 6453
+      },
+      {
+        "name": "Echoform",
+        "listeners": 912,
+        "playcount": 2853
+      },
+      {
+        "name": "Umbriel",
+        "listeners": 912,
+        "playcount": 2103
+      },
+      {
+        "name": "Circumfluo",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/John+Ember"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,150 @@
+{
+  "artist_name": "The Swaying Journey",
+  "artist_id": "the_swaying_journey",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:37:23.062564+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "61cc01c2-b05f-4824-b3ae-3fd9462ce0ae",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/267006152",
+      "streaming": "https://tidal.com/artist/48010383"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 267006152,
+    "name": "The Swaying Journey",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/267006152",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ffaabd63c4df5f86640cd9f779edbf93/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Sefiora",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunserene",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16612550,
+    "name": "Dalgakıran",
+    "profile": "Dalgakıran is a band caught in a collision — with the city, with the self, swaying between dreams and reality. They channel Turkish rock rooted in the spirit of the ‘90s, delivering it with a modern approach. The journey with Dalgakıran stretches from mythology to the present day, from beautiful dreams to real tremors, from defiance to disappointment.\r\n\r\nThe band's debut album, “Bu Bizim Nazik İsyanımız” (This Is Our Gentle Revolt), is more than just lyrics and music; it’s a piece of graffiti, a negotiation, a mirror in a drunken night, or a memory.\r\n\r\nDalgakıran is a new friend — one you feel you’ve known forever.",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/dalgakiran.band/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "12xFile, MP3, Album, 320",
+      "2xFile, MP3, Single, 320"
+    ],
+    "labels": [
+      "Tamar Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Swaying Journey",
+    "mbid": "",
+    "listeners": 1531,
+    "playcount": 3331,
+    "listener_play_ratio": 2.18,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Swaying+Journey\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Koula",
+      "Gofica",
+      "Noir Vista",
+      "Mac May",
+      "Static 99"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sefiora",
+        "listeners": 1530,
+        "playcount": 3329
+      },
+      {
+        "name": "Sunserene",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Swaying+Journey"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

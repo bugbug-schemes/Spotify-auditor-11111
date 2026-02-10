@@ -1,0 +1,127 @@
+{
+  "artist_name": "Neon Panda",
+  "artist_id": "neon_panda",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:59:51.489358+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Neon Panda', got 'Neon Paradise'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Neon Panda",
+    "mbid": "",
+    "listeners": 30817,
+    "playcount": 77104,
+    "listener_play_ratio": 2.5,
+    "bio_exists": true,
+    "bio_summary": "While living in his parent's basement, the Neon Panda makes magic. Age, gender, and location are unknown. <a href=\"https://www.last.fm/music/Neon+Panda\">Read more on Last.fm</a>",
+    "tags": [
+      "electro",
+      "House",
+      "ambient",
+      "rap",
+      "electronic"
+    ],
+    "similar_artists": [
+      "Sobbel Sosch",
+      "MooX",
+      "Sunsplash",
+      "Lush Hush",
+      "MUNI."
+    ],
+    "top_tracks": [
+      {
+        "name": "Solitude",
+        "listeners": 15898,
+        "playcount": 36916
+      },
+      {
+        "name": "Spaced",
+        "listeners": 5943,
+        "playcount": 10612
+      },
+      {
+        "name": "floating in space",
+        "listeners": 3997,
+        "playcount": 16820
+      },
+      {
+        "name": "Sink In",
+        "listeners": 3880,
+        "playcount": 5861
+      },
+      {
+        "name": "Deck the Lofi Halls",
+        "listeners": 1355,
+        "playcount": 1956
+      },
+      {
+        "name": "Cherry On Top",
+        "listeners": 1069,
+        "playcount": 2886
+      },
+      {
+        "name": "Slice of Life",
+        "listeners": 387,
+        "playcount": 1054
+      },
+      {
+        "name": "Blacktop Days",
+        "listeners": 259,
+        "playcount": 563
+      },
+      {
+        "name": "Slumber",
+        "listeners": 16,
+        "playcount": 35
+      },
+      {
+        "name": "Burnt Toast",
+        "listeners": 13,
+        "playcount": 43
+      }
+    ],
+    "url": "https://www.last.fm/music/Neon+Panda"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

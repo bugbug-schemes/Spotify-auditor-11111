@@ -1,0 +1,502 @@
+{
+  "artist_name": "Kapa Boy",
+  "artist_id": "kapa_boy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:44:54.541690+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "596ab196-f893-45ba-8a60-a5eaeb4e8e06",
+    "type": "Person",
+    "country": "UG",
+    "area": "Uganda",
+    "begin_date": "2003-11-25",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.boomplaymusic.com/share/music/67286331?srModel=COPYLINK&srList=ANDROID",
+      "purchase for download": "https://music.apple.com/us/artist/1495585818",
+      "soundcloud": "https://soundcloud.com/kapaboy/talk-to-me",
+      "streaming": "https://music.amazon.es/artists/B0841RLHBX"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 83605802,
+    "name": "Kapa Boy",
+    "nb_fan": 1050,
+    "nb_album": 79,
+    "link": "https://www.deezer.com/artist/83605802",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/985023ab12206a9248f06c2430954b70/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ciara Nicole",
+      "Exhibit",
+      "I'm a monster",
+      "Shiloh Beat",
+      "Shiloh Dynasty",
+      "The Explanation",
+      "Vagabond",
+      "Yusei"
+    ],
+    "contributor_roles": {
+      "Ciara Nicole": [
+        "Main"
+      ],
+      "Exhibit": [
+        "Main"
+      ],
+      "Vagabond": [
+        "Main"
+      ],
+      "Shiloh Beat": [
+        "Main",
+        "Featured"
+      ],
+      "Yusei": [
+        "Main"
+      ],
+      "Shiloh Dynasty": [
+        "Main"
+      ],
+      "I'm a monster": [
+        "Main"
+      ],
+      "The Explanation": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Hesitation (Slowed & Reverb)",
+      "Hesitation",
+      "Fine Line - Instrumental (Sped Up)",
+      "God's evolution",
+      "Nightfall",
+      "Aruarian Dance (interlude)",
+      "What falling in love feels like x turning page",
+      "Hesitation",
+      "Tell me pretty lies",
+      "Endless Love",
+      "Beautiful woman (Sped Up)",
+      "Congratulations - piano instrumental",
+      "i catch you",
+      "Escape (interlude)",
+      "a long time ago, i was happy",
+      "After Dark - Sped Up",
+      "Who Would You Die for!",
+      "Where's my love (Piano)",
+      "Our memories",
+      "After Dark - Slowed",
+      "slowed memories.",
+      "Hesitation (Sped Up)",
+      "unfair instrumental",
+      "i'll always be waiting for you",
+      "somebody who loves"
+    ],
+    "track_durations": [
+      180,
+      123,
+      88,
+      88,
+      91,
+      98,
+      73,
+      103,
+      106,
+      185,
+      106,
+      97,
+      142,
+      71,
+      180,
+      195,
+      86,
+      91,
+      90,
+      270,
+      121,
+      105,
+      167,
+      106,
+      81
+    ],
+    "track_ranks": [
+      227181,
+      308163,
+      269533,
+      112880,
+      271345,
+      54349,
+      115836,
+      219827,
+      184464,
+      58664,
+      49747,
+      110359,
+      32514,
+      109098,
+      83265,
+      244163,
+      33149,
+      84087,
+      283787,
+      123021,
+      292653,
+      269777,
+      221905,
+      11800,
+      2279
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 2,
+      "single": 76
+    },
+    "albums": [
+      {
+        "title": "Betrayal",
+        "label": "",
+        "release_date": "2023-07-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tastes Like Velvet",
+        "label": "",
+        "release_date": "2022-11-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tastes Like Velvet",
+        "label": "",
+        "release_date": "2022-11-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Married Life",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden Brown",
+        "label": "",
+        "release_date": "2026-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Arms (Interlude)",
+        "label": "",
+        "release_date": "2026-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Days (Piano)",
+        "label": "",
+        "release_date": "2026-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "one more day",
+        "label": "",
+        "release_date": "2026-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Perla (Instrumental)",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where's my love (Piano)",
+        "label": "",
+        "release_date": "2025-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All I Want For Christmas Is You (Instrumental)",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where is my mind (Piano)",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lights Are On (Instrumental)",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Runaway x Dead Man Walking",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sparks (Instrumental)",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sextape",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fallen Down - Slowed",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nop (slowed & reverb)",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What falling in love feels like x turning page",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Accomplished (Instrumental)",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember My Name (Piano Instrumental)",
+        "label": "",
+        "release_date": "2025-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take My Hand (piano instrumental)",
+        "label": "",
+        "release_date": "2025-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Le carrousel (interlude)",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "a long time ago, i was happy",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ordinary (piano instrumental)",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beanie (interlude)",
+        "label": "",
+        "release_date": "2024-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bleached (remixes)",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "not that i’m anywhere (remixes)",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nop",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bleached",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Shiloh Dynasty",
+      "Kochetkovv",
+      "Bonjr",
+      "James King",
+      "Øneheart",
+      "Instupendo",
+      "Daniel.mp3",
+      "Inan",
+      "die together in venus",
+      "Emptiness"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kapa Boy",
+    "mbid": "596ab196-f893-45ba-8a60-a5eaeb4e8e06",
+    "listeners": 364995,
+    "playcount": 3941079,
+    "listener_play_ratio": 10.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kapa+Boy\">Read more on Last.fm</a>",
+    "tags": [
+      "japan",
+      "ambient",
+      "electronic",
+      "instrumental",
+      "downtempo"
+    ],
+    "similar_artists": [
+      "TileKid",
+      "a vow",
+      "analog_mannequin",
+      "Other Nothing",
+      "leadwave"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fine line - Instrumental",
+        "listeners": 158462,
+        "playcount": 1039226
+      },
+      {
+        "name": "Hesitation",
+        "listeners": 131497,
+        "playcount": 883914
+      },
+      {
+        "name": "Not Allowed",
+        "listeners": 119567,
+        "playcount": 938803
+      },
+      {
+        "name": "Not Allowed (Slowed + Reverb)",
+        "listeners": 44114,
+        "playcount": 370170
+      },
+      {
+        "name": "safe now (interlude)",
+        "listeners": 14693,
+        "playcount": 65232
+      },
+      {
+        "name": "Fine line - Instrumental (Slowed & Reverb)",
+        "listeners": 10135,
+        "playcount": 70220
+      },
+      {
+        "name": "Not Allowed - Sped Up",
+        "listeners": 9937,
+        "playcount": 49937
+      },
+      {
+        "name": "Hesitation - Sped Up",
+        "listeners": 9764,
+        "playcount": 57920
+      },
+      {
+        "name": "Not Allowed (Speed Up + Reverb)",
+        "listeners": 9267,
+        "playcount": 54527
+      },
+      {
+        "name": "September (interlude)",
+        "listeners": 9233,
+        "playcount": 39113
+      }
+    ],
+    "url": "https://www.last.fm/music/Kapa+Boy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

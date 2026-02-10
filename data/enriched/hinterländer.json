@@ -1,0 +1,154 @@
+{
+  "artist_name": "Hinterländer",
+  "artist_id": "hinterländer",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:08:33.900141+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b84067e3-866d-4eae-aa91-2dd14e74b7cf",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Hinterländer', got 'Hinterland'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1564915,
+    "name": "Hinterlander",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Album",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Motion Recordings",
+      "Snail On A Stick"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hinterländer",
+    "mbid": "",
+    "listeners": 20295,
+    "playcount": 66319,
+    "listener_play_ratio": 3.27,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hinterl%C3%A4nder\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Soul Healer",
+      "Lively Nature Sounds",
+      "Feathern",
+      "Neightbirds",
+      "Natural Awakening"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pretty Birds",
+        "listeners": 14696,
+        "playcount": 41564
+      },
+      {
+        "name": "Spirit Of The Rainforest",
+        "listeners": 3380,
+        "playcount": 11641
+      },
+      {
+        "name": "Sweet Birds In A Gentle Rain",
+        "listeners": 2806,
+        "playcount": 9194
+      },
+      {
+        "name": "Steady Sweet Forest Rain",
+        "listeners": 876,
+        "playcount": 2044
+      },
+      {
+        "name": "Woodland River",
+        "listeners": 461,
+        "playcount": 1460
+      },
+      {
+        "name": "Bird Conversation",
+        "listeners": 39,
+        "playcount": 59
+      },
+      {
+        "name": "Birds By A Stream",
+        "listeners": 35,
+        "playcount": 45
+      },
+      {
+        "name": "Rain At The Cabin",
+        "listeners": 20,
+        "playcount": 66
+      },
+      {
+        "name": "Natural Cleansing Rain",
+        "listeners": 5,
+        "playcount": 66
+      },
+      {
+        "name": "Smoothest Rainfall",
+        "listeners": 3,
+        "playcount": 61
+      }
+    ],
+    "url": "https://www.last.fm/music/Hinterl%C3%A4nder"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

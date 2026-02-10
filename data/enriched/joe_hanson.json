@@ -1,0 +1,187 @@
+{
+  "artist_name": "Joe Hanson",
+  "artist_id": "joe_hanson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:30:10.274934+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8ce6b74b-979d-416a-af46-c57d4cc955ef",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "official homepage": "http://joehansonmusic.com/",
+      "social network": "https://twitter.com/joehansonmusic"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Joe Hanson', got 'Cody Johnson'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 671704,
+    "name": "Joel Hanson (2)",
+    "profile": "American singer, songwriter, musician and worship pastor, mainly known as the lead singer and guitarist for Christian rock band  [a334242]. Also the younger brother of [a746693].",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/Joel-Hanson-108041122583661/",
+      "https://twitter.com/joelhansonmusic?lang=en",
+      "https://en.wikipedia.org/wiki/Joel_Hanson",
+      "https://www.newreleasetoday.com/artistdetail.php?artist_id=1414"
+    ],
+    "members": [],
+    "groups": [
+      "PFR"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 20,
+    "digital_only_releases": 19,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "21xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Enh, Promo, Smplr",
+      "CD, Single",
+      "CD, Single, Promo",
+      "Cass, Album, Comp"
+    ],
+    "labels": [
+      "Fervent Records",
+      "JFH Music",
+      "Not On Label",
+      "Overflow, Inc.",
+      "Promo Only",
+      "Provident Music Group",
+      "Redpath Records",
+      "Sparrow Records",
+      "Sparrow Records, re:think, Sparrow Records",
+      "Squint Entertainment",
+      "Star Song",
+      "Star Song, Sparrow Records, Sparrow Song, Star Song",
+      "Suite 28 Records",
+      "Top Hits U.S.A.",
+      "Underdub Productions",
+      "Vireo Records",
+      "World Vision"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Joe Hanson",
+    "mbid": "8ce6b74b-979d-416a-af46-c57d4cc955ef",
+    "listeners": 2960,
+    "playcount": 7001,
+    "listener_play_ratio": 2.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Joe+Hanson\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Meadow Bryce",
+      "Forrest St. Marie",
+      "Naia Catalán",
+      "Silas Arden",
+      "Alain Charles"
+    ],
+    "top_tracks": [
+      {
+        "name": "This Christmas",
+        "listeners": 2889,
+        "playcount": 6793
+      },
+      {
+        "name": "If the World Was a Small Town",
+        "listeners": 35,
+        "playcount": 82
+      },
+      {
+        "name": "Broken If It Don't Break",
+        "listeners": 12,
+        "playcount": 36
+      },
+      {
+        "name": "Head Over Wheels",
+        "listeners": 7,
+        "playcount": 17
+      },
+      {
+        "name": "Maybe Christmas",
+        "listeners": 5,
+        "playcount": 16
+      },
+      {
+        "name": "When He Was Making Me",
+        "listeners": 5,
+        "playcount": 9
+      },
+      {
+        "name": "Part of Me - Remix",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "Part of Me",
+        "listeners": 4,
+        "playcount": 23
+      },
+      {
+        "name": "Wishlist",
+        "listeners": 4,
+        "playcount": 12
+      },
+      {
+        "name": "Young Got Old",
+        "listeners": 4,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Joe+Hanson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

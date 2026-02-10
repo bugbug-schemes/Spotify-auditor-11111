@@ -1,0 +1,143 @@
+{
+  "artist_name": "Teyio River",
+  "artist_id": "teyio_river",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:30:01.300110+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 279743151,
+    "name": "Teyio River",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/279743151",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9f17a407c75766d1656fba2e54e6a5c4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Anytime"
+    ],
+    "track_durations": [
+      130
+    ],
+    "track_ranks": [
+      75963
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Anytime",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Look No Further",
+        "label": "",
+        "release_date": "2024-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Turning Tides",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sky City",
+        "label": "",
+        "release_date": "2024-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Teyio River",
+    "mbid": "",
+    "listeners": 38609,
+    "playcount": 114257,
+    "listener_play_ratio": 2.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Teyio+River\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lumen Atlas",
+      "Aiden Archer",
+      "Cijon",
+      "Deep Club",
+      "Rhyaene"
+    ],
+    "top_tracks": [
+      {
+        "name": "Anytime",
+        "listeners": 29743,
+        "playcount": 74969
+      },
+      {
+        "name": "Look No Further",
+        "listeners": 16818,
+        "playcount": 39284
+      },
+      {
+        "name": "Sky City",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Turning Tides",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Teyio+River"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

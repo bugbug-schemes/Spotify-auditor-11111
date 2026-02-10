@@ -1,0 +1,171 @@
+{
+  "artist_name": "Tsuwavii",
+  "artist_id": "tsuwavii",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:50:07.004108+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 213197607,
+    "name": "Tsuwavii",
+    "nb_fan": 32,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/213197607",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4090bd001f8095c24a5eb355e23e374a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Abi Bernadoth",
+      "Rayo",
+      "Yo Trane"
+    ],
+    "contributor_roles": {
+      "Abi Bernadoth": [
+        "Main"
+      ],
+      "Rayo": [
+        "Main"
+      ],
+      "Yo Trane": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "I'll Wait for You",
+      "Behind the Walls"
+    ],
+    "track_durations": [
+      180,
+      175
+    ],
+    "track_ranks": [
+      216977,
+      139170
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Guilty",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Behind the Walls",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Me Higher",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'll Wait for You",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Kaptain",
+      "Birdy",
+      "Tom Rhodes",
+      "Madilyn",
+      "Jonathan Roy",
+      "Justin Webber",
+      "Skylar Grey",
+      "Arlissa",
+      "Ashley Marina",
+      "Aron Wright"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tsuwavii",
+    "mbid": "",
+    "listeners": 4032,
+    "playcount": 8674,
+    "listener_play_ratio": 2.15,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tsuwavii\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Crash Richard",
+      "Finn Falcon",
+      "Carolina Sarta",
+      "Sulah Jordan",
+      "White China"
+    ],
+    "top_tracks": [
+      {
+        "name": "I'll Wait for You",
+        "listeners": 3799,
+        "playcount": 7692
+      },
+      {
+        "name": "Behind the Walls",
+        "listeners": 196,
+        "playcount": 722
+      },
+      {
+        "name": "Guilty",
+        "listeners": 52,
+        "playcount": 180
+      },
+      {
+        "name": "Take Me Higher",
+        "listeners": 26,
+        "playcount": 80
+      }
+    ],
+    "url": "https://www.last.fm/music/Tsuwavii"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

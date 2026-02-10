@@ -1,0 +1,216 @@
+{
+  "artist_name": "Broadleaf Radio",
+  "artist_id": "broadleaf_radio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:50:46.365207+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 292757731,
+    "name": "Broadleaf Radio",
+    "nb_fan": 1,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/292757731",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e0bfaa740511bdd39de86774fd691d9d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Ephican",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocalya",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alperess",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Northbound",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightshade",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightshade",
+        "label": "",
+        "release_date": "2025-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chrysocolla",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Growth",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Healing Star",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond the Valley",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Atlantica",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Broadleaf Radio",
+    "mbid": "",
+    "listeners": 58145,
+    "playcount": 362723,
+    "listener_play_ratio": 6.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Broadleaf+Radio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aura Veil",
+      "Seth Sands",
+      "Long Lake",
+      "Calmative",
+      "Draumur"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beyond the Valley",
+        "listeners": 21489,
+        "playcount": 109668
+      },
+      {
+        "name": "Healing Star",
+        "listeners": 17154,
+        "playcount": 106385
+      },
+      {
+        "name": "Atlantica",
+        "listeners": 12715,
+        "playcount": 45391
+      },
+      {
+        "name": "New Growth",
+        "listeners": 11250,
+        "playcount": 38884
+      },
+      {
+        "name": "Chrysocolla",
+        "listeners": 7029,
+        "playcount": 41058
+      },
+      {
+        "name": "Ephican",
+        "listeners": 3891,
+        "playcount": 13072
+      },
+      {
+        "name": "Northbound",
+        "listeners": 1714,
+        "playcount": 4425
+      },
+      {
+        "name": "Ocalya",
+        "listeners": 1213,
+        "playcount": 3567
+      },
+      {
+        "name": "Alperess",
+        "listeners": 90,
+        "playcount": 153
+      },
+      {
+        "name": "Nightshade",
+        "listeners": 86,
+        "playcount": 120
+      }
+    ],
+    "url": "https://www.last.fm/music/Broadleaf+Radio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

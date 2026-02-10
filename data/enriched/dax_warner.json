@@ -1,0 +1,113 @@
+{
+  "artist_name": "Dax Warner",
+  "artist_id": "dax_warner",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:24:54.050693+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Dax Warner', got 'Rafu Warner'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7879265,
+    "name": "David Magdziarz",
+    "profile": "[b]David Magdziarz[/b] (b. July 1958) is an American art photographer, columnist, and editor from Chicago. He is best known for collaborating with the cult underground band [b][a=ONO][/b] in the early 1980s and was a long-standing contributor and editorial staff member of [i][b]UPTOWN[/b][/i], a Swedish-based fanzine dedicated to [a=Prince] and named after his early-1980s eponymous [url=/label/305982]home studio[/url]. Magdziarz worked with the publication for eleven years, first contributing to Issue №9 in July 1993 and joining the staff on №14 in July/September 1994. He served as [i]Uptown[/i]'s Contributing Editor between Issues №21 in October 1995 and the final №60 in March 2004. \r\n\r\nMagdziarz was extensively involved in a legal standoff between [i]UPTOWN[/i] and the artist that ensued in late February 1999 after [url=/label/441405]Paisley Park Enterprises[/url] filed a copyright infringement lawsuit on behalf of [a=Prince Rogers Nelson] against nine fan websites and two periodical",
+    "realname": "David J. Magdziarz",
+    "social_urls": [
+      "https://facebook.com/dave.magdziarz",
+      "https://dc.cod.edu/do/search/?q=David%20Magdziarz&start=0",
+      "https://archive.org/details/uptownfanzine?tab=collection&query=Magdziarz&sin=TXT",
+      "https://law.justia.com/cases/federal/district-courts/FSupp2/54/347/2520245/",
+      "https://web.archive.org/web/20081014192125/www.citypages.com/1999-06-23/news/the-people-formerly-known-as-fans/",
+      "https://www.ocweekly.com/the-people-formerly-known-as-fans-6395048/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dax Warner",
+    "mbid": "",
+    "listeners": 9338,
+    "playcount": 31093,
+    "listener_play_ratio": 3.33,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dax+Warner\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Moody Me",
+      "Hanni Licht",
+      "Leonardo Agusti",
+      "Lee Howard-Taylor",
+      "Adeben"
+    ],
+    "top_tracks": [
+      {
+        "name": "Kenmore",
+        "listeners": 7760,
+        "playcount": 26969
+      },
+      {
+        "name": "kleiner Regenbogen",
+        "listeners": 1743,
+        "playcount": 4111
+      },
+      {
+        "name": "The Berkshires",
+        "listeners": 6,
+        "playcount": 11
+      },
+      {
+        "name": "Mount Greylock",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Dax+Warner"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

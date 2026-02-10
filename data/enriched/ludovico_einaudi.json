@@ -1,0 +1,659 @@
+{
+  "artist_name": "Ludovico Einaudi",
+  "artist_id": "ludovico_einaudi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:16:21.308826+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "fa34b363-79df-434f-a5b8-be4e6898543f",
+    "type": "Person",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "1955-11-23",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "classical",
+      "italian",
+      "piano",
+      "pianist",
+      "composer",
+      "modern classical",
+      "italian composer",
+      "western classical"
+    ],
+    "aliases": [
+      "Ludovico Enaudi",
+      "Einaudi, Ludovico",
+      "Einaudi"
+    ],
+    "isnis": [
+      "0000000109219365"
+    ],
+    "ipis": [
+      "00057928146"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000083707",
+      "BBC Music page": "https://www.bbc.co.uk/music/artists/fa34b363-79df-434f-a5b8-be4e6898543f",
+      "discogs": "https://www.discogs.com/artist/369643",
+      "free streaming": "https://www.deezer.com/artist/4331",
+      "image": "https://commons.wikimedia.org/wiki/File:Ludovico_Einaudi_ep.jpg",
+      "IMDb": "https://www.imdb.com/name/nm0251801/",
+      "last.fm": "https://www.last.fm/music/Ludovico+Einaudi",
+      "myspace": "https://myspace.com/ludovicoeinaudispace",
+      "official homepage": "https://ludovicoeinaudi.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no91015812",
+      "purchase for download": "https://music.apple.com/us/artist/7420827",
+      "purchase for mail-order": "https://www.amazon.com/-/e/B00197K5SK",
+      "social network": "https://www.instagram.com/ludovico_einaudi/",
+      "songkick": "https://www.songkick.com/artists/114869",
+      "soundcloud": "https://soundcloud.com/ludovicoeinaudi",
+      "streaming": "https://tidal.com/artist/1669",
+      "VIAF": "http://viaf.org/viaf/85864760",
+      "wikidata": "https://www.wikidata.org/wiki/Q83182",
+      "youtube": "https://www.youtube.com/channel/UCQxsahIsaO7_nDwVlFRMQiA",
+      "youtube music": "https://music.youtube.com/channel/UCinzb98c2WE_NEkfX9pbrcQ"
+    },
+    "labels": [
+      "Decca Records",
+      "uDiscover Music",
+      "edel",
+      "EmArcy",
+      "Etcetera",
+      "Beat Records Company",
+      "FP",
+      "Ponderosa Music Records",
+      "Ponderosa Music & Art",
+      "BMG Classics",
+      "Sony Music",
+      "ATMA Classique",
+      "Analekta",
+      "Brilliant Classics",
+      "Decca Classics",
+      "OnClassical",
+      "UCJ",
+      "Challenge Classics",
+      "Sony Classical",
+      "Ricordi Oggi",
+      "Ankh Productions",
+      "Warner Classics",
+      "Ricordi",
+      "BMG UK & Ireland",
+      "La musica di Repubblica‐L’Espresso",
+      "Amadeus Arte",
+      "Portrait"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4331,
+    "name": "Ludovico Einaudi",
+    "nb_fan": 1417713,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/4331",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5aa391abaca4189309ca0087a2fed4e2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Daniel Hope",
+      "Federico Mecozzi",
+      "Floraleda Sacchi",
+      "Greta Svabo Bech",
+      "I Virtuosi Italiani",
+      "Redi Hasa",
+      "Starkey"
+    ],
+    "contributor_roles": {
+      "Daniel Hope": [
+        "Main"
+      ],
+      "I Virtuosi Italiani": [
+        "Main"
+      ],
+      "Federico Mecozzi": [
+        "Main"
+      ],
+      "Redi Hasa": [
+        "Main"
+      ],
+      "Floraleda Sacchi": [
+        "Main"
+      ],
+      "Greta Svabo Bech": [
+        "Main"
+      ],
+      "Starkey": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Einaudi: Una Mattina",
+      "Einaudi: Experience",
+      "Einaudi: Campfire Var. 1 (Day 5)",
+      "Memory One",
+      "Jay",
+      "L'insieme delle cose",
+      "Andare",
+      "Einaudi: Low Mist Var. 1 (Day 7)",
+      "Einaudi: Golden Butterflies Var. 1 (Day 7)",
+      "Primavera",
+      "Life",
+      "Son Combat (From \"La Tresse\" Soundtrack)",
+      "Divenire",
+      "Experience (Solo Piano)",
+      "Discovery At Night",
+      "Fly",
+      "Episode One",
+      "Circles (based on Ludovico Einaudi \"Experience\")",
+      "Experience (Starkey Remix)",
+      "85mm",
+      "Einaudi: A Sense of Symmetry (Day 2)",
+      "Einaudi: Fox Tracks (Day 3)",
+      "Pathos",
+      "Einaudi: Leo",
+      "Wind of March"
+    ],
+    "track_durations": [
+      203,
+      315,
+      203,
+      263,
+      192,
+      110,
+      438,
+      132,
+      117,
+      442,
+      263,
+      137,
+      402,
+      307,
+      266,
+      278,
+      351,
+      237,
+      343,
+      179,
+      156,
+      257,
+      426,
+      309,
+      248
+    ],
+    "track_ranks": [
+      872505,
+      731358,
+      599345,
+      889256,
+      700040,
+      603186,
+      673692,
+      554663,
+      574010,
+      754042,
+      511761,
+      550295,
+      753858,
+      694314,
+      331632,
+      783766,
+      561196,
+      704588,
+      440023,
+      575041,
+      351055,
+      484223,
+      622265,
+      470024,
+      427050
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 54,
+      "ep": 19,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Prelude to Autumn",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Einaudi Vs Einaudi",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Midsummer Echoes",
+        "label": "",
+        "release_date": "2025-08-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Summer Portraits",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Experience",
+        "label": "",
+        "release_date": "2024-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Cielo Abierto (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "La Tresse (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "La Petite (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Like A Breath",
+        "label": "",
+        "release_date": "2023-09-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Velvet Road",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Undiscovered Vol.2",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sounds of Calm",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Music of Care",
+        "label": "",
+        "release_date": "2023-02-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moments of Peace",
+        "label": "",
+        "release_date": "2023-01-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Underwater",
+        "label": "",
+        "release_date": "2022-01-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cinema",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Undiscovered",
+        "label": "",
+        "release_date": "2020-09-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "12 Songs From Home",
+        "label": "",
+        "release_date": "2020-05-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking (Day 7)",
+        "label": "",
+        "release_date": "2019-09-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking (Day 6)",
+        "label": "",
+        "release_date": "2019-08-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking (Day 5)",
+        "label": "",
+        "release_date": "2019-07-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking (Day 4)",
+        "label": "",
+        "release_date": "2019-06-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking (Day 3)",
+        "label": "",
+        "release_date": "2019-05-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking (Day 2)",
+        "label": "",
+        "release_date": "2019-04-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seven Days Walking (Day 1)",
+        "label": "",
+        "release_date": "2019-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Giorni dispari (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2018-06-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Elements (Deluxe)",
+        "label": "",
+        "release_date": "2015-10-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Elements",
+        "label": "",
+        "release_date": "2015-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Taranta Project",
+        "label": "",
+        "release_date": "2015-05-11",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": [
+      "Yann Tiersen",
+      "Roberto Cacciapaglia",
+      "Max Richter",
+      "Jonas Kvarnström (feat.Zo)",
+      "Maxence Cyrin",
+      "Yiruma",
+      "RIOPY",
+      "Fabrizio Paterlini",
+      "Helen Jane Long",
+      "Giovanni Allevi"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 369643,
+    "name": "Ludovico Einaudi",
+    "profile": "Italian contemporary music composer and pianist.\r\n\r\nHe was born 23 November 1955 in Turin, Piedmont, Italy.",
+    "realname": "Ludovico Maria Enrico Einaudi",
+    "social_urls": [
+      "https://ludovicoeinaudi.com/",
+      "https://www.facebook.com/ludovicoeinaudi",
+      "https://twitter.com/LudovicoEinaud",
+      "https://soundcloud.com/ludovicoeinaudi",
+      "https://www.famouscomposers.net/ludovico-einaudi",
+      "https://en.wikipedia.org/wiki/Ludovico_Einaudi",
+      "https://www.imdb.com/name/nm0251801/",
+      "https://www.allmusic.com/artist/ludovico-einaudi-mn0000083707"
+    ],
+    "members": [],
+    "groups": [
+      "Venegoni & Co.",
+      "Whitetree"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 51,
+    "digital_only_releases": 49,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, AAC, EP, 256",
+      "12\", EP, Gat",
+      "12\", EP, Ltd",
+      "12xFile, FLAC",
+      "24xFile, FLAC, Album",
+      "2xCD, Album, Comp",
+      "2xFile, MP3, Single, 320",
+      "2xLP, Album",
+      "2xLP, Album, Comp",
+      "2xLP, Album, Gat",
+      "2xLP, Album, Ltd, Red",
+      "2xLP, Album, Ltd, Sil",
+      "2xLP, Ltd, Mar",
+      "3xCD + Box, Comp",
+      "5xFile, FLAC, EP",
+      "7\", Ltd, Exc",
+      "7\", Single",
+      "7xCD, Album + Box",
+      "7xFile, AAC, EP",
+      "9xFile, AAC, 256 + 2xFile, MPEG-4 Video + EP",
+      "Box, Comp + 4xCD",
+      "Box, Comp + CD, Album + CD, Album + CD, Album + CD",
+      "CD",
+      "CD, Album",
+      "CD, Album, RE",
+      "CD, Album, RE + CD, Album, RE + CD, Album, RE + CD",
+      "CD, Comp",
+      "CD, EP",
+      "CD, MiniAlbum",
+      "CD, Promo",
+      "CD, Promo, Smplr",
+      "CD, Single",
+      "CD, Single, Promo",
+      "CDr",
+      "CDr, Advance, Album, Promo",
+      "CDr, Promo",
+      "CDr, Single, Promo",
+      "DVD-V",
+      "DVD-V, PAL",
+      "File, AAC, EP, 256",
+      "File, FLAC, MP3",
+      "File, MP3, 320",
+      "File, MP3, Album"
+    ],
+    "labels": [
+      "Albachiara",
+      "Amadeus Arte",
+      "Analekta",
+      "Ankh Productions",
+      "Atma Classique",
+      "BMG",
+      "Bang! Music",
+      "Beat Records Company",
+      "Brilliant Classics",
+      "Decca",
+      "Decca (UMO) (Classics)",
+      "Decca Classics",
+      "Edel",
+      "Erato",
+      "Fabbri Classica, Naxos",
+      "La Musica Di Repubblica - L'Espresso",
+      "Materiali Sonori, Materiali Sonori",
+      "Music Sales Film & TV, Music Sales Film & TV",
+      "Not On Label",
+      "Not On Label (Sizzlebird Self-released)",
+      "Olivia Belli",
+      "Ponderosa Music & Art",
+      "Ponderosa Music & Art, Asa Wa Kuru",
+      "Ponderosa Music Records",
+      "Ricordi",
+      "Ricordi, BMG",
+      "Ricordi, BMG Classics, Confini E Oltre",
+      "Sony BMG Music Entertainment",
+      "Sony BMG Music Entertainment, Sony Classical",
+      "Universal",
+      "Universal Music",
+      "Virgin, Emergency Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ludovico Einaudi",
+    "mbid": "fa34b363-79df-434f-a5b8-be4e6898543f",
+    "listeners": 1785990,
+    "playcount": 67094133,
+    "listener_play_ratio": 37.57,
+    "bio_exists": true,
+    "bio_summary": "Ludovico Maria Enrico Einaudi OMRI (born 23 November 1955) is an Italian pianist and composer. Trained at the Conservatorio Verdi in Milan, Einaudi began his career as a classical composer, later incorporating other styles and genres such as pop, rock, folk, and world music.\n\nEinaudi has composed the scores for a number of films and television productions, including This Is England, The Intouchables, I'm Still Here, the TV miniseries Doctor Zhivago, and Acquario (1996), for which he won the Grol",
+    "tags": [
+      "piano",
+      "Classical",
+      "contemporary classical",
+      "instrumental",
+      "ambient"
+    ],
+    "similar_artists": [
+      "Whitetree",
+      "Roberto Cacciapaglia",
+      "Dirk Maassen",
+      "Joep Beving",
+      "Fabrizio Paterlini"
+    ],
+    "top_tracks": [
+      {
+        "name": "Experience",
+        "listeners": 545416,
+        "playcount": 4848846
+      },
+      {
+        "name": "Nuvole Bianche",
+        "listeners": 452769,
+        "playcount": 3259263
+      },
+      {
+        "name": "Primavera",
+        "listeners": 358087,
+        "playcount": 2129123
+      },
+      {
+        "name": "Fly",
+        "listeners": 340117,
+        "playcount": 2184644
+      },
+      {
+        "name": "Divenire",
+        "listeners": 332154,
+        "playcount": 2319524
+      },
+      {
+        "name": "Una Mattina",
+        "listeners": 321954,
+        "playcount": 2165445
+      },
+      {
+        "name": "Le Onde",
+        "listeners": 275034,
+        "playcount": 1473237
+      },
+      {
+        "name": "I giorni",
+        "listeners": 250056,
+        "playcount": 1507076
+      },
+      {
+        "name": "Wind Song",
+        "listeners": 183921,
+        "playcount": 748407
+      },
+      {
+        "name": "Andare",
+        "listeners": 153867,
+        "playcount": 858237
+      }
+    ],
+    "url": "https://www.last.fm/music/Ludovico+Einaudi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

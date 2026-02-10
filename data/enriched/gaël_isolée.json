@@ -1,0 +1,109 @@
+{
+  "artist_name": "Gaël Isolée",
+  "artist_id": "gaël_isolée",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:48:59.090746+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8c5a0f73-89bc-48df-8395-72d3b1697acd",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/7BiXGun6Yv7YNJZKflQtOh"
+    },
+    "labels": [
+      "Duck Pond Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Gaël Isolée', got 'Gaël Isolée'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gaël Isolée",
+    "mbid": "",
+    "listeners": 4731,
+    "playcount": 12516,
+    "listener_play_ratio": 2.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ga%C3%ABl+Isol%C3%A9e\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Yoda Swings",
+      "Jordan Moon",
+      "Lukas Hiraeth",
+      "Peqasus",
+      "Les Trouble"
+    ],
+    "top_tracks": [
+      {
+        "name": "Change of Pace",
+        "listeners": 4492,
+        "playcount": 11771
+      },
+      {
+        "name": "Breeze In",
+        "listeners": 350,
+        "playcount": 729
+      },
+      {
+        "name": "Get Close",
+        "listeners": 10,
+        "playcount": 11
+      },
+      {
+        "name": "Body Talk",
+        "listeners": 2,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Ga%C3%ABl+Isol%C3%A9e"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

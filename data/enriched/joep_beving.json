@@ -1,0 +1,536 @@
+{
+  "artist_name": "Joep Beving",
+  "artist_id": "joep_beving",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:30:40.041918+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "26eaac94-68f0-482c-9479-931190092457",
+    "type": "Person",
+    "country": "NL",
+    "area": "Netherlands",
+    "begin_date": "1976-01-09",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "classical",
+      "modern classical",
+      "contemporary classical"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000460840001"
+    ],
+    "ipis": [
+      "00749153520"
+    ],
+    "urls": {
+      "bandsintown": "https://www.bandsintown.com/a/12020523",
+      "discogs": "https://www.discogs.com/artist/1140019",
+      "free streaming": "https://www.deezer.com/artist/7431198",
+      "IMDb": "https://www.imdb.com/name/nm3763546/",
+      "last.fm": "https://www.last.fm/music/Joep+Beving",
+      "official homepage": "http://joepbeving.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2019087876/",
+      "social network": "https://www.instagram.com/joepbeving/",
+      "songkick": "https://www.songkick.com/artists/8653959",
+      "soundcloud": "https://soundcloud.com/joep-beving",
+      "streaming": "https://tidal.com/artist/6467445",
+      "VIAF": "http://viaf.org/viaf/2149233588476512924",
+      "wikidata": "https://www.wikidata.org/wiki/Q29317677",
+      "youtube": "https://www.youtube.com/channel/UC-HWNte9KM0GH2V3MTh0iOw"
+    },
+    "labels": [
+      "LEITER",
+      "iaregiantrecords",
+      "Deutsche Grammophon",
+      "FP"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7431198,
+    "name": "Joep Beving",
+    "nb_fan": 26549,
+    "nb_album": 39,
+    "link": "https://www.deezer.com/artist/7431198",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/eda8e5773fab10faaf2fb33adf7f65d0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Grace Davidson",
+      "Sonderling Quartet"
+    ],
+    "contributor_roles": {
+      "Grace Davidson": [
+        "Main"
+      ],
+      "Sonderling Quartet": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Sonderling",
+      "Beving: Ala",
+      "Sleeping Lotus (redux)",
+      "Aika (From \"The Promised Land\" Soundtrack)",
+      "Solitude",
+      "Etude",
+      "Into the Dark Blue",
+      "Last Dance",
+      "Midwayer",
+      "Adrift in Aether",
+      "Le souvenir des temps gracieux",
+      "The Gift",
+      "Anima",
+      "Sleeping Lotus",
+      "An Amalgamation Waltz 1839",
+      "Sol And Luna (Piano Version)",
+      "Zoetrope",
+      "Ab Ovo",
+      "Wild Renaissance",
+      "An Amalgamation Waltz 1839 (Vocal Version)",
+      "Pax",
+      "Klangfall (Piano Version)",
+      "For Steven",
+      "The Man Who Carried the Wind",
+      "432"
+    ],
+    "track_durations": [
+      274,
+      120,
+      190,
+      218,
+      225,
+      275,
+      219,
+      189,
+      346,
+      201,
+      187,
+      225,
+      158,
+      152,
+      246,
+      265,
+      234,
+      288,
+      326,
+      250,
+      329,
+      351,
+      284,
+      225,
+      254
+    ],
+    "track_ranks": [
+      523372,
+      690305,
+      649118,
+      405037,
+      471922,
+      343925,
+      371593,
+      280736,
+      364483,
+      489092,
+      379970,
+      372958,
+      313855,
+      502900,
+      262573,
+      145089,
+      301469,
+      426759,
+      388353,
+      319815,
+      294125,
+      49966,
+      312680,
+      92145,
+      104578
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "ep": 3,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Liminal",
+        "label": "",
+        "release_date": "2026-03-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solipsism Redux",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "vision of contentment",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hermetism",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hermetism (Commentary Version)",
+        "label": "",
+        "release_date": "2022-06-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Trilogy",
+        "label": "",
+        "release_date": "2021-08-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ZERO (Hanging D Remixes)",
+        "label": "",
+        "release_date": "2021-07-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Henosis",
+        "label": "",
+        "release_date": "2019-04-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Henosis (Deluxe)",
+        "label": "",
+        "release_date": "2020-02-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Conatus",
+        "label": "",
+        "release_date": "2018-09-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Prehension",
+        "label": "",
+        "release_date": "2017-04-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solipsism",
+        "label": "",
+        "release_date": "2015-03-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "POST EP",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sleeping Lotus",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The London Session",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Friends making music",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A night in Reno",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "02:07",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pax",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "POST",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Passage",
+        "label": "",
+        "release_date": "2023-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpha",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Mark",
+        "label": "",
+        "release_date": "2022-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nocturnal",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "De Leven",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sinfonia (After Bach, BWV 248)",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Antoinette (From \"Mijn vader is een vliegtuig\")",
+        "label": "",
+        "release_date": "2021-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hanging D (Max Cooper Remix)",
+        "label": "",
+        "release_date": "2021-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hanging D (Polynation Remix)",
+        "label": "",
+        "release_date": "2021-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hanging D (Alva Noto Remodel)",
+        "label": "",
+        "release_date": "2021-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lambert",
+      "Oskar Schuster",
+      "Dirk Maassen",
+      "Jean-Michel Blais",
+      "Fabrizio Paterlini",
+      "Stephan Moccio",
+      "Alexandra Streliski",
+      "Ludovico Einaudi",
+      "Yiruma",
+      "RIOPY"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1140019,
+    "name": "Joep Beving",
+    "profile": "Dutch pianist, keyboard player and composer.",
+    "realname": "",
+    "social_urls": [
+      "http://www.joepbeving.com",
+      "https://www.facebook.com/joepbevingmusic",
+      "https://soundcloud.com/joep-beving"
+    ],
+    "members": [],
+    "groups": [
+      "Scallymatic Orchestra",
+      "Moody Allen"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 8,
+    "digital_only_releases": 25,
+    "total_releases": 33,
+    "formats": [
+      "",
+      "100xFile, WAV, Album, Comp, Ltd",
+      "2xCD, Comp",
+      "2xLP, Comp, 180",
+      "3xFile, AIFF, EP, 24-",
+      "4xCD, Comp + Box",
+      "7xLP, Comp, Ltd, Box",
+      "CD, Album",
+      "File, AAC, Single, 256",
+      "LP, Album, Ltd, RM, Eco"
+    ],
+    "labels": [
+      "Deutsche Grammophon",
+      "EarthPercent",
+      "Not On Label (Laurence Hill Self-released)",
+      "Polskie Radio",
+      "Stichting De Leven",
+      "Warner Classics"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Joep Beving",
+    "mbid": "26eaac94-68f0-482c-9479-931190092457",
+    "listeners": 716622,
+    "playcount": 9274143,
+    "listener_play_ratio": 12.94,
+    "bio_exists": true,
+    "bio_summary": "Joep Beving (born 9 January 1976 in Doetinchem, The Netherlands) is a Dutch pianist, originally from Doetinchem but now based in Amsterdam, The Netherlands. He makes \"simple music for complex emotions\". His piano work is often labelled as neo-classical. Beving has also produced music for TV and cinema commercials.\n\nHaving studied music, sociology and economics, Joep Beving started working as a copywriter in advertising. His love for music quickly led him to Amsterdam based company MassiveMusic i",
+    "tags": [
+      "piano",
+      "contemporary classical",
+      "modern classical",
+      "neoclassical",
+      "post-classical"
+    ],
+    "similar_artists": [
+      "Luke Howard",
+      "Sophie Hutchings",
+      "Federico Albanese",
+      "Chad Lawson",
+      "Dirk Maassen"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beving: Ala",
+        "listeners": 237722,
+        "playcount": 926229
+      },
+      {
+        "name": "Sleeping Lotus",
+        "listeners": 227510,
+        "playcount": 1004074
+      },
+      {
+        "name": "Ala",
+        "listeners": 152821,
+        "playcount": 695270
+      },
+      {
+        "name": "Ab Ovo",
+        "listeners": 123291,
+        "playcount": 546098
+      },
+      {
+        "name": "The Light She Brings",
+        "listeners": 108678,
+        "playcount": 403579
+      },
+      {
+        "name": "Midwayer",
+        "listeners": 104779,
+        "playcount": 427087
+      },
+      {
+        "name": "The Gift",
+        "listeners": 95014,
+        "playcount": 371735
+      },
+      {
+        "name": "Etude",
+        "listeners": 88981,
+        "playcount": 348325
+      },
+      {
+        "name": "Little Waltz",
+        "listeners": 81260,
+        "playcount": 243578
+      },
+      {
+        "name": "Zoetrope",
+        "listeners": 73763,
+        "playcount": 272890
+      }
+    ],
+    "url": "https://www.last.fm/music/Joep+Beving"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

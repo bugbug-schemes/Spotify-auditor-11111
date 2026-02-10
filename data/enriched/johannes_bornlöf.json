@@ -1,0 +1,171 @@
+{
+  "artist_name": "Johannes Bornlöf",
+  "artist_id": "johannes_bornlöf",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:31:16.902073+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c501a2f9-fc6e-4e9a-a1ec-499396bed033",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/4883967",
+      "last.fm": "https://www.last.fm/music/Johannes+Bornl%C3%B6f",
+      "official homepage": "https://www.johannesbornlof.com/",
+      "purchase for download": "https://music.apple.com/us/artist/1022572986",
+      "social network": "https://www.facebook.com/JohannesBornlofProductions",
+      "soundcloud": "https://soundcloud.com/johannes-bornl-f",
+      "streaming": "https://tidal.com/artist/9676410",
+      "youtube music": "https://music.youtube.com/channel/UCc-2tZXLBLnyKOWhDued_Og"
+    },
+    "labels": [
+      "Epidemic Sound",
+      "X5 Music Group",
+      "Mellotron Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Johannes Bornlöf', got 'Johannes Bornlof'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7687225,
+    "name": "Johannes Bornlof",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CDr, Album"
+    ],
+    "labels": [
+      "My Records (11)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Johannes Bornlöf",
+    "mbid": "c501a2f9-fc6e-4e9a-a1ec-499396bed033",
+    "listeners": 359803,
+    "playcount": 3094379,
+    "listener_play_ratio": 8.6,
+    "bio_exists": true,
+    "bio_summary": "Johannes Bornlöf is a Swedish  composer for Games, Movies, Television and commercials.\nHis versatile back catalog stretches over an impressive number of genres including solo piano, classic orchestral, 2010s pop and future bass. Born in Uppsala, Sweden, Bornlöf started to hone his craft at an early age. He was banging a drum set before he could talk and with musical talent running through the family, his older brother started giving him piano lessons at the age of eleven. <a href=\"https://www.la",
+    "tags": [
+      "piano",
+      "ambient",
+      "swedish",
+      "chillout",
+      "relax"
+    ],
+    "similar_artists": [
+      "Gavin Luke",
+      "Lo Mimieux",
+      "Arden Forest",
+      "Franz Gordon",
+      "Megan Wofford"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nocturnal Waltz",
+        "listeners": 123282,
+        "playcount": 479065
+      },
+      {
+        "name": "Reminiscence",
+        "listeners": 69525,
+        "playcount": 282026
+      },
+      {
+        "name": "Streams",
+        "listeners": 63356,
+        "playcount": 242427
+      },
+      {
+        "name": "Crystal Clear",
+        "listeners": 38742,
+        "playcount": 150949
+      },
+      {
+        "name": "Let's Run Away Together",
+        "listeners": 34115,
+        "playcount": 123022
+      },
+      {
+        "name": "As I Dream",
+        "listeners": 33427,
+        "playcount": 116767
+      },
+      {
+        "name": "Wolfpack",
+        "listeners": 29799,
+        "playcount": 107815
+      },
+      {
+        "name": "Flight",
+        "listeners": 29366,
+        "playcount": 101209
+      },
+      {
+        "name": "The Rose And The Thorn",
+        "listeners": 24248,
+        "playcount": 96112
+      },
+      {
+        "name": "Twinkle of the Lights",
+        "listeners": 22516,
+        "playcount": 79482
+      }
+    ],
+    "url": "https://www.last.fm/music/Johannes+Bornl%C3%B6f"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

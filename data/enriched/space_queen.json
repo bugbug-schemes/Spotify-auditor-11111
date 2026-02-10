@@ -1,0 +1,476 @@
+{
+  "artist_name": "Space Queen",
+  "artist_id": "space_queen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:15:32.140169+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bb8318ae-7e3b-499e-847e-6426d8e1d4fb",
+    "type": "Group",
+    "country": "CA",
+    "area": "Canada",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://wearespacequeen.bandcamp.com/",
+      "official homepage": "https://www.wearespacequeen.com/",
+      "social network": "https://www.instagram.com/wearespacequeen/",
+      "youtube": "https://www.youtube.com/channel/UCTFF5Ss8NdAMo7iJwT03tlA"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6555553,
+    "name": "Space Queen",
+    "nb_fan": 46,
+    "nb_album": 43,
+    "link": "https://www.deezer.com/artist/6555553",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4e1d309d03f97cd7eeb755d62258c087/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Calmas Records"
+    ],
+    "contributor_roles": {
+      "Calmas Records": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "On the Roof",
+      "Rare Moonglow",
+      "Bonita",
+      "Moving",
+      "Tempo",
+      "Stains",
+      "Hidden House",
+      "Water Cycle",
+      "Entwined",
+      "By the Hills",
+      "Weekend",
+      "The Guide to Wild Flowers",
+      "Pictures of the Floating World",
+      "Kauwela",
+      "Alaska",
+      "When Nature Dreams",
+      "De Coeur",
+      "Sunlit Dew",
+      "Smoking at the Beach",
+      "Dusk",
+      "Autochrome",
+      "Azulejo",
+      "Wading",
+      "Strains",
+      "Pleasure to Burn"
+    ],
+    "track_durations": [
+      154,
+      92,
+      114,
+      79,
+      96,
+      156,
+      151,
+      118,
+      120,
+      85,
+      160,
+      134,
+      145,
+      157,
+      102,
+      135,
+      128,
+      147,
+      127,
+      114,
+      132,
+      139,
+      99,
+      92,
+      73
+    ],
+    "track_ranks": [
+      6943,
+      33099,
+      25030,
+      31724,
+      26234,
+      32124,
+      48922,
+      20933,
+      31676,
+      37967,
+      32634,
+      2972,
+      32882,
+      7914,
+      21743,
+      11513,
+      23832,
+      3139,
+      31611,
+      33825,
+      25571,
+      22413,
+      127529,
+      7083,
+      21049
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 41
+    },
+    "albums": [
+      {
+        "title": "Torn Alien Ass",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nebula",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dream Sequence",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Digital Potions",
+        "label": "",
+        "release_date": "2025-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Violet",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bonita",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On the Roof",
+        "label": "",
+        "release_date": "2025-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rare Moonglow",
+        "label": "",
+        "release_date": "2025-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tempo",
+        "label": "",
+        "release_date": "2025-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Incantation",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By the Hills",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightcap",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moving",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Demon Queen",
+        "label": "",
+        "release_date": "2023-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wading",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What Life Was Like",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Charm",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Water Cycle",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autochrome",
+        "label": "",
+        "release_date": "2021-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "De Coeur",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frames",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azulejo",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fabric",
+        "label": "",
+        "release_date": "2021-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Guide to Wild Flowers",
+        "label": "",
+        "release_date": "2021-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In The Forest",
+        "label": "",
+        "release_date": "2021-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entwined",
+        "label": "",
+        "release_date": "2021-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden House",
+        "label": "",
+        "release_date": "2020-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stains",
+        "label": "",
+        "release_date": "2020-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weekend",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Space Queen",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14068462,
+    "name": "Space Queen",
+    "profile": "Hard Rock/Stoner Rock band from Vancouver, British Columbia, Canada.\r\n\r\nSpace Queen is:\r\nJenna Earle - vocals, guitar, baritone guitar and feedback/kicking doors closed\r\nSeah Maister - vocals, bass, organ and punch vibrato\r\nKarli MacIntosh - vocals, drums and Jesus bell",
+    "realname": "",
+    "social_urls": [
+      "https://wearespacequeen.bandcamp.com/",
+      "https://www.wearespacequeen.com/",
+      "https://www.facebook.com/wearespacequeen/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "532xFile, FLAC, MP3, Comp",
+      "LP, Comp, Ltd, Ora"
+    ],
+    "labels": [
+      "Bandwidth Records (3)",
+      "Path Of Doom Radio"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Space queen",
+    "mbid": "",
+    "listeners": 23865,
+    "playcount": 156721,
+    "listener_play_ratio": 6.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Space+queen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jaztorius",
+      "Ray Ben Rue",
+      "Weedthief",
+      "sodero",
+      "Sexy Lofi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Violet",
+        "listeners": 13211,
+        "playcount": 30916
+      },
+      {
+        "name": "Wading",
+        "listeners": 3073,
+        "playcount": 5875
+      },
+      {
+        "name": "The Guide to Wild Flowers",
+        "listeners": 2715,
+        "playcount": 6488
+      },
+      {
+        "name": "Moving",
+        "listeners": 2701,
+        "playcount": 5430
+      },
+      {
+        "name": "Dusk",
+        "listeners": 2447,
+        "playcount": 5029
+      },
+      {
+        "name": "Pictures of the Floating World",
+        "listeners": 2412,
+        "playcount": 5123
+      },
+      {
+        "name": "De Coeur",
+        "listeners": 2353,
+        "playcount": 4864
+      },
+      {
+        "name": "Frames",
+        "listeners": 2322,
+        "playcount": 4883
+      },
+      {
+        "name": "Stains",
+        "listeners": 2124,
+        "playcount": 4154
+      },
+      {
+        "name": "When Nature Dreams",
+        "listeners": 2036,
+        "playcount": 4142
+      }
+    ],
+    "url": "https://www.last.fm/music/Space+queen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

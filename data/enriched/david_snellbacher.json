@@ -1,0 +1,155 @@
+{
+  "artist_name": "David Snellbacher",
+  "artist_id": "david_snellbacher",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:24:37.046715+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5613721,
+    "name": "David Snellbacher",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/5613721",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/eac7858b2d49a892ac6b66df30547857/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Coventry Carol",
+      "Lo! How A Rose E' er Blooming"
+    ],
+    "track_durations": [
+      207,
+      184
+    ],
+    "track_ranks": [
+      7352,
+      22426
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1
+    },
+    "albums": [
+      {
+        "title": "All Acoustic Christmas",
+        "label": "",
+        "release_date": "2013-11-26",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "David Snellbacher",
+    "mbid": "",
+    "listeners": 2705,
+    "playcount": 10906,
+    "listener_play_ratio": 4.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/David+Snellbacher\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Acoustic Guitar Songs,Classical Guitar Masters & Classical Christmas Music",
+      "Rainer Mafra",
+      "Chris Goddard",
+      "Olivier Dernier",
+      "Kelley Bern"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lo! How A Rose E' er Blooming",
+        "listeners": 2227,
+        "playcount": 5187
+      },
+      {
+        "name": "Coventry Carol",
+        "listeners": 1956,
+        "playcount": 4649
+      },
+      {
+        "name": "The Holly and the Ivy/ Do You Hear What I Hear?",
+        "listeners": 83,
+        "playcount": 217
+      },
+      {
+        "name": "How Great Our Joy",
+        "listeners": 78,
+        "playcount": 173
+      },
+      {
+        "name": "O Come All Ye Faithful",
+        "listeners": 64,
+        "playcount": 157
+      },
+      {
+        "name": "Christmas Medley: Away in a Manger / Angels We Have Heard On High / God Rest Ye Merry Gentlemen / We Three Kings",
+        "listeners": 50,
+        "playcount": 85
+      },
+      {
+        "name": "O Come, O Come, Emmanuel",
+        "listeners": 23,
+        "playcount": 84
+      },
+      {
+        "name": "O Little Town of Bethlehem",
+        "listeners": 21,
+        "playcount": 55
+      },
+      {
+        "name": "In The Bleak Midwinter",
+        "listeners": 18,
+        "playcount": 40
+      },
+      {
+        "name": "We Wish You a Merry Christmas",
+        "listeners": 17,
+        "playcount": 37
+      }
+    ],
+    "url": "https://www.last.fm/music/David+Snellbacher"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,111 @@
+{
+  "artist_name": "nuuxm",
+  "artist_id": "nuuxm",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:27:19.195866+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'nuuxm', got 'HUUXX'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "nuuxm",
+    "mbid": "",
+    "listeners": 24077,
+    "playcount": 74879,
+    "listener_play_ratio": 3.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/nuuxm\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Vermund Solmund",
+      "Vädur",
+      "L O K P I K",
+      "Travertina",
+      "Pthalo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Twice As Much",
+        "listeners": 9932,
+        "playcount": 17647
+      },
+      {
+        "name": "Alice's Ambivalence",
+        "listeners": 9925,
+        "playcount": 47609
+      },
+      {
+        "name": "Ringing Your Door",
+        "listeners": 3758,
+        "playcount": 6684
+      },
+      {
+        "name": "Natsukashii",
+        "listeners": 1810,
+        "playcount": 2558
+      },
+      {
+        "name": "Look I'm Sorry",
+        "listeners": 151,
+        "playcount": 369
+      },
+      {
+        "name": "rain rain rain",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Chill Business",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Little Bro Tokyo",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/nuuxm"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

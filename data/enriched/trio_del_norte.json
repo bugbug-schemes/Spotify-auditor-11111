@@ -1,0 +1,442 @@
+{
+  "artist_name": "Trio Del Norte",
+  "artist_id": "trio_del_norte",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:48:24.558608+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bb7a95f2-a8a4-4a9d-8487-a8cc18ec33f9",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz",
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/172700547",
+      "purchase for download": "https://music.apple.com/us/artist/1628465892",
+      "soundcloud": "https://soundcloud.com/triodelnorte",
+      "streaming": "https://tidal.com/artist/32568348",
+      "youtube music": "https://music.youtube.com/channel/UCe6kAe_yRZfjk2p3-B5NbRg"
+    },
+    "labels": [
+      "Chill Tone",
+      "Chill Palm"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 172700547,
+    "name": "Trio Del Norte",
+    "nb_fan": 8,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/172700547",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/11b98955f90e4ae938523e73dda81561/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Stars",
+      "Early Morning Thoughts",
+      "Your Laugh",
+      "Little Boat",
+      "Waltz for O",
+      "Sweet Conversation",
+      "Someone Special",
+      "September Wind",
+      "Right Now Right Here",
+      "Blue Light",
+      "Blue Iris",
+      "Nothing Like a Spring",
+      "Can't Say the Word"
+    ],
+    "track_durations": [
+      481,
+      404,
+      262,
+      155,
+      205,
+      279,
+      190,
+      382,
+      207,
+      294,
+      281,
+      211,
+      258
+    ],
+    "track_ranks": [
+      140098,
+      117495,
+      222445,
+      21726,
+      43036,
+      24181,
+      42226,
+      98408,
+      7903,
+      27005,
+      65860,
+      62243,
+      100770
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 29
+    },
+    "albums": [
+      {
+        "title": "LAS COSAS DE MI SOBRINA",
+        "label": "",
+        "release_date": "1977-12-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "He Came To Me",
+        "label": "",
+        "release_date": "2024-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someone Special",
+        "label": "",
+        "release_date": "2024-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Will You Be Mine?",
+        "label": "",
+        "release_date": "2024-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Iris",
+        "label": "",
+        "release_date": "2024-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "September Wind",
+        "label": "",
+        "release_date": "2024-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Touch",
+        "label": "",
+        "release_date": "2024-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wondering The Streets",
+        "label": "",
+        "release_date": "2024-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waltz for O",
+        "label": "",
+        "release_date": "2024-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Conversation",
+        "label": "",
+        "release_date": "2024-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smile in Your Eyes",
+        "label": "",
+        "release_date": "2024-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magnolia Tree",
+        "label": "",
+        "release_date": "2024-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Sun",
+        "label": "",
+        "release_date": "2024-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Friday Afternoon",
+        "label": "",
+        "release_date": "2024-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Night",
+        "label": "",
+        "release_date": "2024-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow Your Dreams",
+        "label": "",
+        "release_date": "2024-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Because I Care",
+        "label": "",
+        "release_date": "2024-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Say the Word",
+        "label": "",
+        "release_date": "2023-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What If It's Not",
+        "label": "",
+        "release_date": "2023-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Only You!",
+        "label": "",
+        "release_date": "2023-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Laugh",
+        "label": "",
+        "release_date": "2023-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At Least I Know",
+        "label": "",
+        "release_date": "2023-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clear Skies",
+        "label": "",
+        "release_date": "2023-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Things To Look Forward To",
+        "label": "",
+        "release_date": "2023-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever Home",
+        "label": "",
+        "release_date": "2022-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "River of Dreams",
+        "label": "",
+        "release_date": "2022-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Early Morning Thoughts",
+        "label": "",
+        "release_date": "2022-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When You Return",
+        "label": "",
+        "release_date": "2022-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Love Again",
+        "label": "",
+        "release_date": "2022-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Candlelight",
+        "label": "",
+        "release_date": "2022-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4860590,
+    "name": "Trio Del Norte",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 1,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "10\", Red",
+      "LP"
+    ],
+    "labels": [
+      "Globe (15)",
+      "Sutton",
+      "Viking (6)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Trio Del Norte",
+    "mbid": "bb7a95f2-a8a4-4a9d-8487-a8cc18ec33f9",
+    "listeners": 107879,
+    "playcount": 459300,
+    "listener_play_ratio": 4.26,
+    "bio_exists": true,
+    "bio_summary": "Tri Del Norte is a Brooklyn, NYC-based jazz trio fronted by acclaimed composer and pianist Amina Figarova with Rudy Royston on drums and Joseph Lapore on the bass. <a href=\"https://www.last.fm/music/Trio+Del+Norte\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "USA"
+    ],
+    "similar_artists": [
+      "Kristian Hart Trio",
+      "Most Iverson",
+      "James Jackson Jazz Trio",
+      "Bladverk Band",
+      "The Groove Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lonely Streets",
+        "listeners": 23920,
+        "playcount": 55641
+      },
+      {
+        "name": "Early Morning Thoughts",
+        "listeners": 19404,
+        "playcount": 44226
+      },
+      {
+        "name": "Things To Look Forward To",
+        "listeners": 17069,
+        "playcount": 37891
+      },
+      {
+        "name": "Little Boat",
+        "listeners": 15149,
+        "playcount": 34947
+      },
+      {
+        "name": "When You're Here",
+        "listeners": 14805,
+        "playcount": 32942
+      },
+      {
+        "name": "Nothing Like a Spring",
+        "listeners": 11051,
+        "playcount": 25714
+      },
+      {
+        "name": "Late Night",
+        "listeners": 10008,
+        "playcount": 18084
+      },
+      {
+        "name": "Waltz for O",
+        "listeners": 9246,
+        "playcount": 19152
+      },
+      {
+        "name": "May Dance",
+        "listeners": 8492,
+        "playcount": 18580
+      },
+      {
+        "name": "River of Dreams",
+        "listeners": 7118,
+        "playcount": 17907
+      }
+    ],
+    "url": "https://www.last.fm/music/Trio+Del+Norte"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

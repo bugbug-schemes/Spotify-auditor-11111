@@ -1,0 +1,165 @@
+{
+  "artist_name": "H I K E",
+  "artist_id": "h_i_k_e",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:58:51.867278+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "27b4fb50-8bfd-46c4-b563-a0d005a4c5cf",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "chillwave",
+      "instrumental",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo",
+      "hip hop",
+      "boom bap"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/2dPdr5fuXY0sCOImew2UjM"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'H I K E', got 'Hike'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1057502,
+    "name": "C.H.E.C.K.P.O.I.N.T.",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Turducken Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "H I K E",
+    "mbid": "27b4fb50-8bfd-46c4-b563-a0d005a4c5cf",
+    "listeners": 104294,
+    "playcount": 351874,
+    "listener_play_ratio": 3.37,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [],
+    "similar_artists": [
+      "PIÑA PINK",
+      "yoranda",
+      "Idris Kelly",
+      "Hammocks & Lime",
+      "AUIIRA"
+    ],
+    "top_tracks": [
+      {
+        "name": "yo!",
+        "listeners": 46030,
+        "playcount": 102465
+      },
+      {
+        "name": "lostonbrick",
+        "listeners": 18255,
+        "playcount": 34007
+      },
+      {
+        "name": "gunners",
+        "listeners": 15301,
+        "playcount": 70790
+      },
+      {
+        "name": "AM FEAST",
+        "listeners": 12495,
+        "playcount": 27122
+      },
+      {
+        "name": "Shiny Cement - Garden",
+        "listeners": 9433,
+        "playcount": 17582
+      },
+      {
+        "name": "Mango",
+        "listeners": 7620,
+        "playcount": 13500
+      },
+      {
+        "name": "Cortado",
+        "listeners": 6573,
+        "playcount": 13862
+      },
+      {
+        "name": "Cloudy",
+        "listeners": 5488,
+        "playcount": 10985
+      },
+      {
+        "name": "eternallife",
+        "listeners": 4437,
+        "playcount": 9986
+      },
+      {
+        "name": "Gravel",
+        "listeners": 3964,
+        "playcount": 7458
+      }
+    ],
+    "url": "https://www.last.fm/music/H+I+K+E"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

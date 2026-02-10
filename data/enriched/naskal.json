@@ -1,0 +1,137 @@
+{
+  "artist_name": "Naskal",
+  "artist_id": "naskal",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:56:11.850221+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Naskal', got 'Khalid'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1726241,
+    "name": "Joonas Naskali",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Valovuosi",
+      "Pasi Ja Anssi",
+      "Toivon Kärki"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 7,
+    "total_releases": 16,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Single, Promo",
+      "CDr, EP",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256"
+    ],
+    "labels": [
+      "Beaner Recordings",
+      "Ratas Music Group",
+      "Sony Music, Sound Of Finland",
+      "Sound Of Finland, Sony Music",
+      "Sound Reel Finland",
+      "Warner Music Finland"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Naskal",
+    "mbid": "",
+    "listeners": 9194,
+    "playcount": 38317,
+    "listener_play_ratio": 4.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Naskal\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Antoine FAURÉ",
+      "Adrian Solen",
+      "Waylen Orson",
+      "Grazia Bellini",
+      "Magnus Sakamura"
+    ],
+    "top_tracks": [
+      {
+        "name": "Even So",
+        "listeners": 6044,
+        "playcount": 16956
+      },
+      {
+        "name": "Noctopédie",
+        "listeners": 4007,
+        "playcount": 15928
+      },
+      {
+        "name": "Quietude",
+        "listeners": 1357,
+        "playcount": 2384
+      },
+      {
+        "name": "Before",
+        "listeners": 1252,
+        "playcount": 2070
+      },
+      {
+        "name": "Autumn Tides",
+        "listeners": 407,
+        "playcount": 976
+      },
+      {
+        "name": "Nightfold",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "And Then",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Naskal"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,537 @@
+{
+  "artist_name": "Brijean",
+  "artist_id": "brijean",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:50:04.522093+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6ddbdf87-fd35-4a72-b3ff-8eabdc2ce46e",
+    "type": "Group",
+    "country": "",
+    "area": "Berkeley",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://brijean.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/7480158",
+      "free streaming": "https://www.deezer.com/artist/14536841",
+      "official homepage": "http://www.brijean.com/",
+      "other databases": "https://imvdb.com/n/brijean",
+      "social network": "https://www.instagram.com/heybrijean/",
+      "streaming": "https://tidal.com/artist/10056927",
+      "youtube": "https://www.youtube.com/brijean"
+    },
+    "labels": [
+      "A24 Music",
+      "Ghostly International",
+      "Native Cat",
+      "Pacific Standard Records",
+      "Brainfeeder"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14536841,
+    "name": "Brijean",
+    "nb_fan": 824,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/14536841",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4179c66b879aa88bea38479e2afc9ad1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Benjamin Gibbard",
+      "Kaitlyn Aurelia Smith",
+      "Pearl & The Oysters",
+      "Poolside",
+      "Salami Rose Joe Louis",
+      "Space Ghost",
+      "Toro Y Moi",
+      "Tycho"
+    ],
+    "contributor_roles": {
+      "Poolside": [
+        "Main"
+      ],
+      "Toro Y Moi": [
+        "Main"
+      ],
+      "Pearl & The Oysters": [
+        "Main"
+      ],
+      "Tycho": [
+        "Main"
+      ],
+      "Benjamin Gibbard": [
+        "Main"
+      ],
+      "Salami Rose Joe Louis": [
+        "Main"
+      ],
+      "Space Ghost": [
+        "Main"
+      ],
+      "Kaitlyn Aurelia Smith": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Hey Boy",
+      "Counting Sheep",
+      "Moody",
+      "Day Dreaming",
+      "Better When We're Close",
+      "Caldwell's Way",
+      "Ocean",
+      "Fundi",
+      "Roxy",
+      "Workin’ On It",
+      "Ooo La La",
+      "Euphoric Avenue",
+      "Genius of Love",
+      "Pacific Ave (Brijean Remix)",
+      "Shy Guy",
+      "Only Love (with Brijean)",
+      "Show and Tell",
+      "Counting",
+      "Propaganda",
+      "Wifi Beach",
+      "Bang Bang Boom",
+      "Lathered In Gold",
+      "Angelo (Space Ghost Remix)",
+      "Paradise",
+      "Take A Trip (Kaitlyn Aurelia Smith Remix)"
+    ],
+    "track_durations": [
+      195,
+      240,
+      134,
+      189,
+      213,
+      208,
+      261,
+      214,
+      182,
+      216,
+      158,
+      234,
+      205,
+      209,
+      193,
+      255,
+      278,
+      16,
+      152,
+      192,
+      221,
+      175,
+      343,
+      170,
+      185
+    ],
+    "track_ranks": [
+      465364,
+      464702,
+      211678,
+      392921,
+      292056,
+      162507,
+      90070,
+      53669,
+      38217,
+      115148,
+      282011,
+      70831,
+      139259,
+      50859,
+      111805,
+      20932,
+      214227,
+      48022,
+      135541,
+      70381,
+      48783,
+      69636,
+      36229,
+      35596,
+      21668
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 5,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "Macro",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Feelings",
+        "label": "",
+        "release_date": "2021-02-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Angelo",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Angelo (Deluxe)",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Feelings Remixes",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hey Boy",
+        "label": "",
+        "release_date": "2021-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Walkie Talkie",
+        "label": "",
+        "release_date": "2019-06-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Euphoric Avenue",
+        "label": "",
+        "release_date": "2024-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Genius of Love",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Roller Coaster",
+        "label": "",
+        "release_date": "2024-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Workin' On It",
+        "label": "",
+        "release_date": "2024-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angelo (Space Ghost Remix)",
+        "label": "",
+        "release_date": "2023-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Akousmatikous / Propaganda",
+        "label": "",
+        "release_date": "2023-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take A Trip (Kaitlyn Aurelia Smith Remix)",
+        "label": "",
+        "release_date": "2023-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ooo La La (bad tuner Remix)",
+        "label": "",
+        "release_date": "2023-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caldwell's Way",
+        "label": "",
+        "release_date": "2022-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ooo La La",
+        "label": "",
+        "release_date": "2022-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shy Guy",
+        "label": "",
+        "release_date": "2022-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better When We're Close",
+        "label": "",
+        "release_date": "2022-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Day Dreaming (Rick Wade Remix)",
+        "label": "",
+        "release_date": "2021-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hey Boy (DRAMA Remix)",
+        "label": "",
+        "release_date": "2021-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean (Sam Gendel Remix)",
+        "label": "",
+        "release_date": "2021-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moody (Buscabulla Remix)",
+        "label": "",
+        "release_date": "2021-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean",
+        "label": "",
+        "release_date": "2021-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cry No More",
+        "label": "",
+        "release_date": "2020-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Day Dreaming",
+        "label": "",
+        "release_date": "2020-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moody",
+        "label": "",
+        "release_date": "2020-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fortune Teller",
+        "label": "",
+        "release_date": "2019-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crushing on You",
+        "label": "",
+        "release_date": "2019-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "NEIL FRANCES",
+      "Miami Horror",
+      "Yuksek",
+      "Jean Tonique",
+      "Poolside",
+      "Later.",
+      "Kraak & Smaak",
+      "Drama",
+      "Jungle",
+      "Billy Bahama"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7480158,
+    "name": "Brijean",
+    "profile": "Brijean Murphy and Doug Stuart on Native Cat Recordings.",
+    "realname": "",
+    "social_urls": [
+      "http://www.brijean.com",
+      "http://brijean.bandcamp.com",
+      "http://www.facebook.com/brijeanband",
+      "http://instagram.com/heybrijean",
+      "http://twitter.com/BrijeanBand",
+      "http://www.youtube.com/c/brijean"
+    ],
+    "members": [
+      "Doug Stuart",
+      "Brijean Murphy"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 14,
+    "total_releases": 15,
+    "formats": [
+      "",
+      "100xFile, MP3, Comp, 320",
+      "119xFile, FLAC, Comp",
+      "2xCD",
+      "File, MP3, Mixed, 320"
+    ],
+    "labels": [
+      "Bleep (2)",
+      "FACT Magazine",
+      "Media Pro Classic",
+      "Resident Advisor",
+      "Tender Loving Empire, Friends And Friends Of Friends"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Brijean",
+    "mbid": "6ddbdf87-fd35-4a72-b3ff-8eabdc2ce46e",
+    "listeners": 109930,
+    "playcount": 743792,
+    "listener_play_ratio": 6.77,
+    "bio_exists": true,
+    "bio_summary": "Percussionist Brijean Murphy, who has worked with artists such as Poolside, Toro Y Moi, U.S. Girls, collaborates with multi-instrumentalist and producer Doug Stuart to create WALKIE TALKIE.  The duo delivers a dreamy, back-room disco; creating an elegant, 8-song EP with a rhythmic and harmonic palette that evokes 70s disco, 90s house, and sly pop sensibilities. <a href=\"https://www.last.fm/music/Brijean\">Read more on Last.fm</a>",
+    "tags": [
+      "House",
+      "indie pop",
+      "pop",
+      "jazz",
+      "electronic"
+    ],
+    "similar_artists": [
+      "Born At Midnite",
+      "Pearl & the Oysters",
+      "Rosie Lowe",
+      "Chris Cohen",
+      "Galcher Lustwerk"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moody",
+        "listeners": 35475,
+        "playcount": 100349
+      },
+      {
+        "name": "Ooo La La",
+        "listeners": 19744,
+        "playcount": 58588
+      },
+      {
+        "name": "Day Dreaming",
+        "listeners": 17027,
+        "playcount": 54773
+      },
+      {
+        "name": "Euphoric Avenue",
+        "listeners": 12909,
+        "playcount": 29901
+      },
+      {
+        "name": "Counting Sheep",
+        "listeners": 12652,
+        "playcount": 30460
+      },
+      {
+        "name": "Hey Boy",
+        "listeners": 12411,
+        "playcount": 36380
+      },
+      {
+        "name": "Workin’ On It",
+        "listeners": 11272,
+        "playcount": 33637
+      },
+      {
+        "name": "Wifi Beach",
+        "listeners": 11258,
+        "playcount": 33987
+      },
+      {
+        "name": "Ocean",
+        "listeners": 10925,
+        "playcount": 28476
+      },
+      {
+        "name": "Take A Trip",
+        "listeners": 9908,
+        "playcount": 28736
+      }
+    ],
+    "url": "https://www.last.fm/music/Brijean"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

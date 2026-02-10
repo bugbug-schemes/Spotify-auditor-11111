@@ -1,0 +1,139 @@
+{
+  "artist_name": "Fracta Aurea",
+  "artist_id": "fracta_aurea",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:41:33.087219+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bc87f135-cb91-4ecb-9e03-ee17e95a9454",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6IfjthXfdys0smRoO7rBGL",
+      "streaming": "https://tidal.com/artist/53954931"
+    },
+    "labels": [
+      "Score a Score"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Fracta Aurea",
+    "mbid": "",
+    "listeners": 46755,
+    "playcount": 131030,
+    "listener_play_ratio": 2.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Fracta+Aurea\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mareel",
+      "Butterfli",
+      "Photosynthetic",
+      "Low Pines",
+      "chanchito estafa"
+    ],
+    "top_tracks": [
+      {
+        "name": "Arcticano",
+        "listeners": 31952,
+        "playcount": 79421
+      },
+      {
+        "name": "Fizzdrop",
+        "listeners": 21890,
+        "playcount": 51506
+      },
+      {
+        "name": "Chlorosea",
+        "listeners": 8,
+        "playcount": 11
+      },
+      {
+        "name": "Palmrush",
+        "listeners": 6,
+        "playcount": 15
+      },
+      {
+        "name": "Solmelt",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Jazzy Keys",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Umbralis",
+        "listeners": 3,
+        "playcount": 6
+      },
+      {
+        "name": "Blisspark",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Bridge",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Meadroad",
+        "listeners": 3,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Fracta+Aurea"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

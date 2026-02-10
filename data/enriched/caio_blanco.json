@@ -1,0 +1,209 @@
+{
+  "artist_name": "Caio Blanco",
+  "artist_id": "caio_blanco",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:55:36.382695+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 130485772,
+    "name": "Caio Blanco",
+    "nb_fan": 14,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/130485772",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5fe3e91770b2dfde358f5d708e423a8f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Without Coordinates",
+        "label": "",
+        "release_date": "2025-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pasture",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Fold",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dusk Hues",
+        "label": "",
+        "release_date": "2024-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tersus",
+        "label": "",
+        "release_date": "2024-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Subtle Ember",
+        "label": "",
+        "release_date": "2023-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soothing Murmur",
+        "label": "",
+        "release_date": "2022-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clouded Calm (Ambient Meditation Version)",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nova Epoko",
+        "label": "",
+        "release_date": "2021-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remediable",
+        "label": "",
+        "release_date": "2021-04-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Caio Blanco",
+    "mbid": "",
+    "listeners": 9239,
+    "playcount": 27774,
+    "listener_play_ratio": 3.01,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Caio+Blanco\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Brkati Madjinca",
+      "Cashmere Cove",
+      "Embershine Air",
+      "Kol Sova",
+      "Dust Of Stars"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pasture",
+        "listeners": 4183,
+        "playcount": 9240
+      },
+      {
+        "name": "Without Coordinates",
+        "listeners": 2378,
+        "playcount": 7441
+      },
+      {
+        "name": "Clouded Calm - Ambient Meditation Version",
+        "listeners": 2294,
+        "playcount": 7885
+      },
+      {
+        "name": "Dusk Hues",
+        "listeners": 659,
+        "playcount": 3142
+      },
+      {
+        "name": "Nova Epoko",
+        "listeners": 7,
+        "playcount": 21
+      },
+      {
+        "name": "Soothing Murmur",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Remediable",
+        "listeners": 4,
+        "playcount": 11
+      },
+      {
+        "name": "É sobre isso. E tá tudo bem!",
+        "listeners": 4,
+        "playcount": 6
+      },
+      {
+        "name": "É sobre isso. E tá tudo bem",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Clouded Calm (Ambient Meditation Version)",
+        "listeners": 3,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Caio+Blanco"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

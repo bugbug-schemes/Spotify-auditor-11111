@@ -1,0 +1,140 @@
+{
+  "artist_name": "Benjamin Rhey",
+  "artist_id": "benjamin_rhey",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:35:11.758962+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8c7e97bb-c385-4faf-b3be-70551aa10bb3",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/114131882",
+      "streaming": "https://tidal.com/artist/22276488"
+    },
+    "labels": [
+      "Firefly Entertainment AB"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Benjamin Rhey', got 'BENJAMIN:KEY'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Benjamin Rhey",
+    "mbid": "",
+    "listeners": 108136,
+    "playcount": 865748,
+    "listener_play_ratio": 8.01,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Benjamin+Rhey\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Gjenklang",
+      "Shimmerweave",
+      "Benjamin Mounfield",
+      "Tuscany Flow",
+      "Les Coralines"
+    ],
+    "top_tracks": [
+      {
+        "name": "Manitoba",
+        "listeners": 32687,
+        "playcount": 186382
+      },
+      {
+        "name": "Endless",
+        "listeners": 28852,
+        "playcount": 160953
+      },
+      {
+        "name": "Blissful",
+        "listeners": 25388,
+        "playcount": 84705
+      },
+      {
+        "name": "Astral Mist",
+        "listeners": 23163,
+        "playcount": 119997
+      },
+      {
+        "name": "Eclipse",
+        "listeners": 15578,
+        "playcount": 67553
+      },
+      {
+        "name": "Trace",
+        "listeners": 10636,
+        "playcount": 30374
+      },
+      {
+        "name": "Still",
+        "listeners": 10567,
+        "playcount": 30469
+      },
+      {
+        "name": "Rest",
+        "listeners": 8645,
+        "playcount": 41069
+      },
+      {
+        "name": "Sakura",
+        "listeners": 7761,
+        "playcount": 45437
+      },
+      {
+        "name": "Twilight",
+        "listeners": 7697,
+        "playcount": 41764
+      }
+    ],
+    "url": "https://www.last.fm/music/Benjamin+Rhey"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

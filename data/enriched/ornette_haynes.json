@@ -1,0 +1,370 @@
+{
+  "artist_name": "Ornette Haynes",
+  "artist_id": "ornette_haynes",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:16:30.471125+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "46d80558-5af4-44a4-b812-feb50f84bee1",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/194503657",
+      "purchase for download": "https://music.apple.com/us/artist/1673055933",
+      "streaming": "https://tidal.com/artist/36318247",
+      "youtube music": "https://music.youtube.com/channel/UCxyx_h366ik3N4ImRHOfvtg"
+    },
+    "labels": [
+      "Calm Lands Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 194503657,
+    "name": "Ornette Haynes",
+    "nb_fan": 7,
+    "nb_album": 22,
+    "link": "https://www.deezer.com/artist/194503657",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/830daef797a9ec1a02ae252728035f8b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Is that you?",
+      "Make bad worse",
+      "The Light Over Chesapeake Bay",
+      "Missouri and Iowa",
+      "I gotta run"
+    ],
+    "track_durations": [
+      160,
+      160,
+      206,
+      205,
+      188
+    ],
+    "track_ranks": [
+      38286,
+      19005,
+      32777,
+      32795,
+      98925
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "Hold On The Surface",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Defined By Christmas Lights",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wring out the rain",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Surprise There",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Counting Stars",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The center view",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Competing with the radio",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Have Plans?",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whatever You Want",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You did well",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Is that you?",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nadar No Mar",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At the end of the day",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Light Over Chesapeake Bay",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Make bad worse",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Make good better",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What room you in?",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Very Entertaining",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I gotta run",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Missouri and Iowa",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Canadian Trees",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Tale of Bon Jean",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4071365,
+    "name": "Hardedge",
+    "profile": "[b]Hardedge[/b] [a=Velibor Pedevski], is a sound designer based in New York. His experimental approach to sound, space, and structure is inspired and based on the fundamental principles of the Chicago's [i]A.A.C.M.[/i] creative thinkers, especially their revolutionary multi-directional, non-progressive approach, and the use of silence as a musical element.\r\n\r\nFor many years, Pedevski had been extensively collaborating with many significant members of the A.A.C.M. (mostly as their representative), including [a=Muhal Richard Abrams], [a=Anthony Braxton], [a=Henry Threadgill], [a=Wadada Leo Smith], [a=Roscoe Mitchell], [a=Leroy Jenkins], [a=The Art Ensemble Of Chicago], and [a=George Lewis]. In 1996, he became a co-founder of [l=Braxton House] label, and produced several albums by [a=Anthony Braxton] on it, such as [r=3324472], [r=3325294], [r=1203212], [r=1203222], [r=2210175], and [r=3325194]. From 1993 to 2006, Velibor Pedevski had been teaching the music of Cecil Taylor, Albert Ayler,",
+    "realname": "Velibor Pedevski",
+    "social_urls": [
+      "https://www.hardedge.net"
+    ],
+    "members": [],
+    "groups": [
+      "Graham Haynes / Hardedge",
+      "DarkMatterHalo",
+      "Orange Wave Electric"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 18,
+    "digital_only_releases": 3,
+    "total_releases": 21,
+    "formats": [
+      "",
+      "5xFile, FLAC, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, Gat",
+      "CD, Album, Ltd",
+      "CD, Album, Ltd, Car",
+      "CD, Album, Ltd, Gat"
+    ],
+    "labels": [
+      "Hardedge",
+      "Kabell Records",
+      "Sunnyside",
+      "TUM Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ornette Haynes",
+    "mbid": "46d80558-5af4-44a4-b812-feb50f84bee1",
+    "listeners": 53537,
+    "playcount": 185236,
+    "listener_play_ratio": 3.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ornette+Haynes\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Cara Myers Trio",
+      "Leeluck & Co",
+      "Nouvelle Marée",
+      "Nathan Hill Trio",
+      "Tiril Brandt"
+    ],
+    "top_tracks": [
+      {
+        "name": "I gotta run",
+        "listeners": 16802,
+        "playcount": 36055
+      },
+      {
+        "name": "At the end of the day",
+        "listeners": 11905,
+        "playcount": 23937
+      },
+      {
+        "name": "Is that you?",
+        "listeners": 11366,
+        "playcount": 24906
+      },
+      {
+        "name": "What room you in?",
+        "listeners": 10884,
+        "playcount": 23855
+      },
+      {
+        "name": "Missouri and Iowa",
+        "listeners": 10549,
+        "playcount": 21280
+      },
+      {
+        "name": "Canadian Trees",
+        "listeners": 7600,
+        "playcount": 14750
+      },
+      {
+        "name": "You Have Plans?",
+        "listeners": 7132,
+        "playcount": 15089
+      },
+      {
+        "name": "The Tale of Bon Jean",
+        "listeners": 3509,
+        "playcount": 7871
+      },
+      {
+        "name": "Make bad worse",
+        "listeners": 3117,
+        "playcount": 6969
+      },
+      {
+        "name": "Make good better",
+        "listeners": 2405,
+        "playcount": 5044
+      }
+    ],
+    "url": "https://www.last.fm/music/Ornette+Haynes"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

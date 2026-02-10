@@ -1,0 +1,192 @@
+{
+  "artist_name": "Wander Paths",
+  "artist_id": "wander_paths",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:59:55.329222+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 340922441,
+    "name": "Wander Paths",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/340922441",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e40991d1638d5862e51d196f4fea7fa4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Terraform",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Penumbra",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Subserenade",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Satellite Path",
+        "label": "",
+        "release_date": "2025-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Woven Light",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tundra",
+        "label": "",
+        "release_date": "2025-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lunar Remedy",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Estuary",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Always Revolving",
+        "label": "",
+        "release_date": "2025-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10114564,
+    "name": "The Aeon Wanderers",
+    "profile": "The Aeon Wanderers were formed when Owen Hodgson and Andrea Kremer met in an online music collaboration collective.  Andrea joined in 2012 and was a frequent contributor for the first two years, but she took an hiatus in 2014, just as Owen joined.  Their paths crossed once or twice but it was to be another two years before they properly joined forces.  With just over 3000 miles between them, The Aeon Wanderers are one of the longest duos on the planet.",
+    "realname": "",
+    "social_urls": [
+      "http://aeonwanderers.com/",
+      "https://aeonwanderers.bandcamp.com/"
+    ],
+    "members": [
+      "Owen Hodgson",
+      "Andrea Kremer"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "12xFile, FLAC, Album",
+      "74xFile, MP3, Comp, 320"
+    ],
+    "labels": [
+      "Not On Label (The TM Collective Self-released)",
+      "Pop Garden Radio"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Wander Paths",
+    "mbid": "",
+    "listeners": 6933,
+    "playcount": 37133,
+    "listener_play_ratio": 5.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Wander+Paths\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Command Module",
+      "Ambientelles",
+      "Velvet Hush",
+      "Eomir",
+      "Sagamo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Estuary",
+        "listeners": 5706,
+        "playcount": 23778
+      },
+      {
+        "name": "Satellite Path",
+        "listeners": 3058,
+        "playcount": 9813
+      },
+      {
+        "name": "Penumbra",
+        "listeners": 1463,
+        "playcount": 3542
+      }
+    ],
+    "url": "https://www.last.fm/music/Wander+Paths"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

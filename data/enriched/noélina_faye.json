@@ -1,0 +1,75 @@
+{
+  "artist_name": "Noélina Faye",
+  "artist_id": "noélina_faye",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:08:23.613123+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Noélina Faye",
+    "mbid": "",
+    "listeners": 657,
+    "playcount": 3924,
+    "listener_play_ratio": 5.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/No%C3%A9lina+Faye\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Brian Zeller",
+      "Aurora Keys",
+      "Leon Rose",
+      "Luca Verini",
+      "Marlo Tendre"
+    ],
+    "top_tracks": [
+      {
+        "name": "Milo And The Moon",
+        "listeners": 657,
+        "playcount": 3924
+      }
+    ],
+    "url": "https://www.last.fm/music/No%C3%A9lina+Faye"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,198 @@
+{
+  "artist_name": "Oblivionis",
+  "artist_id": "oblivionis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:10:03.712947+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 298684101,
+    "name": "Oblivionis",
+    "nb_fan": 3,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/298684101",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c3f34a2583d163787b5281e98967f41a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Lunarion",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ethereal Waves",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astralis",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fading Into Dreams",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes of the Night",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Waves",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15284907,
+    "name": "Oblivionis",
+    "profile": "Fictional keyboardist, producer, and composer of Ave Mujica.  Currently voiced by [a5564141].",
+    "realname": "Sakiko Togawa",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Ave Mujica"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Oblivionis",
+    "mbid": "",
+    "listeners": 42828,
+    "playcount": 173260,
+    "listener_play_ratio": 4.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Oblivionis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dunsø",
+      "Horizon Mind",
+      "Lejo",
+      "Omnibrain",
+      "Nocturna Blooms"
+    ],
+    "top_tracks": [
+      {
+        "name": "Echoes of the Night",
+        "listeners": 29599,
+        "playcount": 99935
+      },
+      {
+        "name": "Fading into Dreams",
+        "listeners": 15182,
+        "playcount": 73293
+      },
+      {
+        "name": "Beneath The Silver Sky",
+        "listeners": 7,
+        "playcount": 7
+      },
+      {
+        "name": "Midnight Waves",
+        "listeners": 6,
+        "playcount": 7
+      },
+      {
+        "name": "Nightfall Whisper",
+        "listeners": 6,
+        "playcount": 6
+      },
+      {
+        "name": "Whispers Of The Moon",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Celestial Dreams",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Astralis",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Ethereal Waves",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Moonbeam",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Oblivionis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

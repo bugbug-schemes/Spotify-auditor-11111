@@ -1,0 +1,121 @@
+{
+  "artist_name": "Goldinia",
+  "artist_id": "goldinia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:54:35.638497+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Goldinia', got 'Houdini'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Goldinia",
+    "mbid": "",
+    "listeners": 4413,
+    "playcount": 72830,
+    "listener_play_ratio": 16.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Goldinia\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Freddie Leland",
+      "Ondine Bell",
+      "Yoni Laurent",
+      "Caprice Henry",
+      "Iris Avory"
+    ],
+    "top_tracks": [
+      {
+        "name": "Night Tunes",
+        "listeners": 2042,
+        "playcount": 19635
+      },
+      {
+        "name": "Magic Bubbles",
+        "listeners": 1839,
+        "playcount": 18326
+      },
+      {
+        "name": "All Play Together",
+        "listeners": 1615,
+        "playcount": 16248
+      },
+      {
+        "name": "Rays Of Gold",
+        "listeners": 748,
+        "playcount": 5872
+      },
+      {
+        "name": "Magnificent",
+        "listeners": 431,
+        "playcount": 5691
+      },
+      {
+        "name": "I See The Stars",
+        "listeners": 384,
+        "playcount": 4419
+      },
+      {
+        "name": "Once Upon A Dream",
+        "listeners": 182,
+        "playcount": 1527
+      },
+      {
+        "name": "A Short Rest",
+        "listeners": 116,
+        "playcount": 820
+      },
+      {
+        "name": "Piluttavisan",
+        "listeners": 53,
+        "playcount": 77
+      },
+      {
+        "name": "Kaleidoscope",
+        "listeners": 46,
+        "playcount": 64
+      }
+    ],
+    "url": "https://www.last.fm/music/Goldinia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

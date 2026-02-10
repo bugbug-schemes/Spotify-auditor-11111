@@ -1,0 +1,130 @@
+{
+  "artist_name": "Ferrosia",
+  "artist_id": "ferrosia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:37:11.609163+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a83b9c8f-a416-42d4-b944-faac6ffa4877",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6VjLJOIiiHRO4yMv5jOB3I",
+      "streaming": "https://music.apple.com/gb/artist/1813790715"
+    },
+    "labels": [
+      "Chill Lemon"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Ferrosia', got 'Varrosi'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ferrosia",
+    "mbid": "",
+    "listeners": 3208,
+    "playcount": 7999,
+    "listener_play_ratio": 2.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ferrosia\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lucien Fade",
+      "The Afronaut",
+      "Chrome Hours",
+      "Flower City",
+      "Lukas Hiraeth"
+    ],
+    "top_tracks": [
+      {
+        "name": "way up here",
+        "listeners": 1719,
+        "playcount": 3978
+      },
+      {
+        "name": "jumbo",
+        "listeners": 1222,
+        "playcount": 2127
+      },
+      {
+        "name": "pump it",
+        "listeners": 523,
+        "playcount": 1206
+      },
+      {
+        "name": "marathon",
+        "listeners": 120,
+        "playcount": 234
+      },
+      {
+        "name": "biology",
+        "listeners": 108,
+        "playcount": 167
+      },
+      {
+        "name": "go the distance",
+        "listeners": 80,
+        "playcount": 153
+      },
+      {
+        "name": "on the limit",
+        "listeners": 45,
+        "playcount": 133
+      },
+      {
+        "name": "take it",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Ferrosia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

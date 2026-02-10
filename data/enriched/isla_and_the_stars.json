@@ -1,0 +1,206 @@
+{
+  "artist_name": "Isla and the Stars",
+  "artist_id": "isla_and_the_stars",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:18:00.911383+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 304685241,
+    "name": "Isla and the Stars",
+    "nb_fan": 0,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/304685241",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f4a98fb82a031e5b40e9c88ab3ba4221/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Secret Star",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Happy Farmer",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Cow on the Moon",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zelda's Lullaby",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yesterday",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brahms Lullaby",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amazing Grace",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rock a Bye Baby",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daisy Daisy",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Saving All My Love for You",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Danny Boy",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Isla and the Stars",
+    "mbid": "",
+    "listeners": 2417,
+    "playcount": 27239,
+    "listener_play_ratio": 11.27,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Isla+and+the+Stars\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Noah Cloud",
+      "Pepita Li",
+      "Dario Shapovalov",
+      "Little Sweetheart",
+      "Caprice Henry"
+    ],
+    "top_tracks": [
+      {
+        "name": "Daisy Daisy",
+        "listeners": 2067,
+        "playcount": 17907
+      },
+      {
+        "name": "Danny Boy",
+        "listeners": 600,
+        "playcount": 9313
+      },
+      {
+        "name": "Yesterday",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Saving All My Love for You",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Rock a Bye Baby",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Amazing Grace",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Brahms Lullaby",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Secret Star",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Isla+and+the+Stars"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

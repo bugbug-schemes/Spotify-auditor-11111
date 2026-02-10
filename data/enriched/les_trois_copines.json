@@ -1,0 +1,213 @@
+{
+  "artist_name": "Les trois copines",
+  "artist_id": "les_trois_copines",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:06:24.858998+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "64ab55dd-e7bc-44d8-88d1-cd225126e7fc",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/191211407",
+      "purchase for download": "https://music.apple.com/us/artist/1671790935",
+      "streaming": "https://tidal.com/artist/35802110",
+      "youtube music": "https://music.youtube.com/channel/UCj-jDxvOm4MuDf-wSedP8qw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 191211407,
+    "name": "Les trois copines",
+    "nb_fan": 9,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/191211407",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/44619a6950f1682e0631fc0f00114ad1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Circles",
+      "Equilibrio",
+      "Here It Is"
+    ],
+    "track_durations": [
+      245,
+      151,
+      188
+    ],
+    "track_ranks": [
+      31909,
+      111416,
+      32323
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Still in motion",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here We Go Again",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Circles",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Touch of Dance",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Call",
+        "label": "",
+        "release_date": "2023-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here It Is",
+        "label": "",
+        "release_date": "2023-01-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equilibrio",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Les trois copines",
+    "mbid": "64ab55dd-e7bc-44d8-88d1-cd225126e7fc",
+    "listeners": 55067,
+    "playcount": 161806,
+    "listener_play_ratio": 2.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Les+trois+copines\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tanner King Trio",
+      "The Don Mason Trio",
+      "Garry Cooper Trio",
+      "The Lyon Hearts",
+      "Ben Lively"
+    ],
+    "top_tracks": [
+      {
+        "name": "Equilibrio",
+        "listeners": 26401,
+        "playcount": 60355
+      },
+      {
+        "name": "First Call",
+        "listeners": 14799,
+        "playcount": 32735
+      },
+      {
+        "name": "Touch of Dance",
+        "listeners": 13645,
+        "playcount": 25081
+      },
+      {
+        "name": "Here It Is",
+        "listeners": 11771,
+        "playcount": 26029
+      },
+      {
+        "name": "Circles",
+        "listeners": 5253,
+        "playcount": 11065
+      },
+      {
+        "name": "Still in motion",
+        "listeners": 4139,
+        "playcount": 6476
+      },
+      {
+        "name": "Here We Go Again",
+        "listeners": 50,
+        "playcount": 64
+      },
+      {
+        "name": "2022-12-11 13:34",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Les+trois+copines"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,121 @@
+{
+  "artist_name": "Digilake",
+  "artist_id": "digilake",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:28:35.809609+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Digilake', got 'Fog Lake'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Digilake",
+    "mbid": "",
+    "listeners": 34639,
+    "playcount": 156323,
+    "listener_play_ratio": 4.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Digilake\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sound Carrie",
+      "Audio signaal",
+      "René Watz",
+      "Wavelength Minds",
+      "멀리 이동하려면"
+    ],
+    "top_tracks": [
+      {
+        "name": "Clouds And Skies Of Noise",
+        "listeners": 24907,
+        "playcount": 103278
+      },
+      {
+        "name": "Rainy Nights",
+        "listeners": 6848,
+        "playcount": 33607
+      },
+      {
+        "name": "Smooth Brown Noise",
+        "listeners": 3198,
+        "playcount": 13998
+      },
+      {
+        "name": "White Noise in the Clouds",
+        "listeners": 902,
+        "playcount": 5028
+      },
+      {
+        "name": "Smooth White Noise",
+        "listeners": 9,
+        "playcount": 235
+      },
+      {
+        "name": "Dreams And White Noise",
+        "listeners": 8,
+        "playcount": 27
+      },
+      {
+        "name": "Above The White Noise",
+        "listeners": 7,
+        "playcount": 127
+      },
+      {
+        "name": "The White Noise of the Universe",
+        "listeners": 2,
+        "playcount": 8
+      },
+      {
+        "name": "White Noise and the Stars",
+        "listeners": 2,
+        "playcount": 7
+      },
+      {
+        "name": "Sea Whales",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Digilake"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,631 @@
+{
+  "artist_name": "Dennis Quin",
+  "artist_id": "dennis_quin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:27:02.928493+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2c337bba-445c-404c-a682-9775b5003eea",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Dennis Quinn"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3767049",
+      "free streaming": "https://www.deezer.com/artist/4732418",
+      "purchase for download": "https://www.beatport.com/artist/dennis-quin/188958",
+      "soundcloud": "https://soundcloud.com/dennis-quin-official",
+      "streaming": "https://tidal.com/artist/6853509"
+    },
+    "labels": [
+      "Constant Sound",
+      "Champion Records",
+      "Snatch! Records",
+      "Madhouse Records",
+      "DFTD",
+      "Dungeon Meat",
+      "Unknown to the Unknown",
+      "Kaoz Theory",
+      "Dennis Quin",
+      "Freeze Records",
+      "EARDRUMS"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4732418,
+    "name": "Dennis Quin",
+    "nb_fan": 669,
+    "nb_album": 78,
+    "link": "https://www.deezer.com/artist/4732418",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/98bcdc856330fd3f92053003955a1536/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Berget Lewis",
+      "Butch",
+      "Cheshy",
+      "Edwin Oosterwal",
+      "Faster Horses",
+      "Karmina Dai",
+      "Kerri Chandler",
+      "Low Steppa",
+      "PRUNK",
+      "Philip George",
+      "Plaster Hands",
+      "Roog",
+      "Shermanology",
+      "Troy Denari"
+    ],
+    "contributor_roles": {
+      "Kerri Chandler": [
+        "Main"
+      ],
+      "Troy Denari": [
+        "Main",
+        "Featured"
+      ],
+      "Faster Horses": [
+        "Featured"
+      ],
+      "PRUNK": [
+        "Main"
+      ],
+      "Philip George": [
+        "Main"
+      ],
+      "Roog": [
+        "Main"
+      ],
+      "Berget Lewis": [
+        "Featured"
+      ],
+      "Shermanology": [
+        "Main"
+      ],
+      "Low Steppa": [
+        "Main"
+      ],
+      "Cheshy": [
+        "Main"
+      ],
+      "Karmina Dai": [
+        "Featured"
+      ],
+      "Edwin Oosterwal": [
+        "Main"
+      ],
+      "Butch": [
+        "Main"
+      ],
+      "Plaster Hands": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Pushing Harder",
+      "Rock & Rule",
+      "You Are In My System (Club Mix)",
+      "You Are In My System (Faster Horses Sport Mix)",
+      "Drive",
+      "You Are In My System (Philip George Remix)",
+      "Igohart",
+      "Dedication To House Music",
+      "Move Out Of My Way (Radio Edit)",
+      "Playing Drunk",
+      "Treat You Right",
+      "Recurrent Thoughts",
+      "Piano Occasion (Original Mix)",
+      "Dedication To House Music (Extended Mix)",
+      "No Worries (Dennis Quin Remix)",
+      "Move Out Of My Way",
+      "Afters Groove",
+      "Wicked Love (Radio Edit)",
+      "Heal Me",
+      "Afters Groove (Edit)",
+      "Delicious",
+      "Saturated Thing (Edit)",
+      "Chante",
+      "New York Accent"
+    ],
+    "track_durations": [
+      195,
+      207,
+      185,
+      197,
+      239,
+      196,
+      303,
+      210,
+      180,
+      306,
+      236,
+      380,
+      381,
+      405,
+      213,
+      316,
+      325,
+      188,
+      343,
+      189,
+      207,
+      175,
+      304,
+      190
+    ],
+    "track_ranks": [
+      37953,
+      332967,
+      598158,
+      475493,
+      408041,
+      492397,
+      88563,
+      247864,
+      176968,
+      233239,
+      329244,
+      96746,
+      10127,
+      148809,
+      83961,
+      86992,
+      105782,
+      22125,
+      23264,
+      222967,
+      15855,
+      75690,
+      116666,
+      31442
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 33,
+      "single": 43
+    },
+    "albums": [
+      {
+        "title": "House Is Love EP",
+        "label": "",
+        "release_date": "2020-03-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Colours LP",
+        "label": "",
+        "release_date": "2016-06-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rock & Rule EP",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "New York to Amsterdam",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Liberation EP",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Good Stuff",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Imagination",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "False Promises",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Treat You Right EP",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "My Belief",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hottrax presents Tripleution Part 6",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Temptation EP",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Gryphon EP",
+        "label": "",
+        "release_date": "2023-04-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Life So Bright EP",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tools EP, Vol. 2 (Bandcamp Exclusive)",
+        "label": "",
+        "release_date": "2023-02-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tools EP (Bandcamp Exclusive)",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Backroom EP",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chante",
+        "label": "",
+        "release_date": "2021-01-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Change Is Gonna Come",
+        "label": "",
+        "release_date": "2020-09-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Stab Anthem EP",
+        "label": "",
+        "release_date": "2020-07-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Egoism EP",
+        "label": "",
+        "release_date": "2019-12-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Jealous EP",
+        "label": "",
+        "release_date": "2019-11-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "My Speciality EP",
+        "label": "",
+        "release_date": "2019-03-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dance Trax, Vol. 12",
+        "label": "",
+        "release_date": "2018-05-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Our Vibe EP",
+        "label": "",
+        "release_date": "2017-10-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "So Intense EP",
+        "label": "",
+        "release_date": "2017-09-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "About Last Night EP",
+        "label": "",
+        "release_date": "2017-06-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shape Up EP",
+        "label": "",
+        "release_date": "2017-04-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "This Must Be EP",
+        "label": "",
+        "release_date": "2017-03-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Boombox EP",
+        "label": "",
+        "release_date": "2016-12-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "Josh Butler",
+      "Sidney Charles",
+      "Kerri Chandler",
+      "Lemtom",
+      "M-High",
+      "Kolter",
+      "PRUNK",
+      "THEOS",
+      "Franky Rizardo",
+      "Stef Davidse"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3767049,
+    "name": "Dennis Quin",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "",
+    "physical_releases": 17,
+    "digital_only_releases": 83,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, MP3, Album, 320",
+      "12\"",
+      "12\", EP",
+      "12\", Gre",
+      "12xFile, WAV, Comp",
+      "20xFile, MP3, Comp, 320",
+      "2x12\", Album",
+      "2xCD, Comp, Mixed",
+      "2xCD, Mixed",
+      "2xCDr, Comp, P/Mixed",
+      "2xFile, FLAC",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "2xFile, MP3, Single, 320",
+      "2xLP",
+      "30xFile, MP3, Comp, 320",
+      "3xCD, Comp, Mixed",
+      "3xFile, MP3, 320",
+      "3xFile, MP3, EP, 320",
+      "3xFile, MP3, Mixed, 320 + 46xFile, MP3, Comp, 320",
+      "45xFile, WAV, Dlx",
+      "4xFile, MP3, 320",
+      "4xFile, MP3, EP, 320",
+      "4xFile, MP3, Smplr, 320",
+      "50xFile, MP3, Comp, 320",
+      "57xFile, WAV, Mixed",
+      "5xFile, MP3, 320",
+      "6xFile, FLAC, Single",
+      "6xFile, MP3, 320",
+      "CD, Comp + CD, Mixed",
+      "CDr, Comp, Promo",
+      "CDr, Promo",
+      "File, MP3",
+      "File, MP3, 320",
+      "File, MP3, EP, 320",
+      "File, MP3, Mixed, 320",
+      "File, MP3, Mixed, 320 + 19xFile, MP3, Comp, 320",
+      "File, MP3, Single",
+      "File, MP3, Single, 320"
+    ],
+    "labels": [
+      "Be Yourself Music",
+      "Brobot Records",
+      "Chuggy Traxx",
+      "Constant Sound",
+      "Country Club Disco",
+      "Cécille Records",
+      "DFTD",
+      "DMC",
+      "DMC, DMC",
+      "DQ",
+      "Dance Trax (4)",
+      "Defected",
+      "Defected, Universal Music",
+      "Dungeon Meat",
+      "Eastenderz",
+      "Factory 93 Records",
+      "Food Music",
+      "Freeze Records",
+      "Global Underground (3)",
+      "House Hats Records",
+      "Kaoz Theory",
+      "Kontor Records",
+      "Madhouse Records",
+      "Moxy Muzik",
+      "Nervous Records",
+      "Not On Label",
+      "ORIGINS RCRDS",
+      "PIV Records",
+      "Phoenix Music (13)",
+      "Reel People Music",
+      "Rejected (3)",
+      "Resident Advisor",
+      "Simma Black",
+      "Slabs",
+      "Snatch! Records",
+      "Solid Grooves Raw",
+      "Soulfuric Trax",
+      "Sound Sound",
+      "Static Music (5)",
+      "TurnItUp Muzik",
+      "Urbana Recordings",
+      "Vamos Music",
+      "disco:wax"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dennis Quin",
+    "mbid": "2c337bba-445c-404c-a682-9775b5003eea",
+    "listeners": 36338,
+    "playcount": 170633,
+    "listener_play_ratio": 4.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dennis+Quin\">Read more on Last.fm</a>",
+    "tags": [
+      "netherlands",
+      "House"
+    ],
+    "similar_artists": [
+      "Ruze",
+      "Demuir",
+      "Cinthie",
+      "Frits Wentink",
+      "Dam Swindle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Move out of My Way - Radio Edit",
+        "listeners": 11132,
+        "playcount": 38671
+      },
+      {
+        "name": "Change Is Gonna Come - Edit",
+        "listeners": 6085,
+        "playcount": 15544
+      },
+      {
+        "name": "Treat You Right",
+        "listeners": 5982,
+        "playcount": 17029
+      },
+      {
+        "name": "Saturated Thing - Edit",
+        "listeners": 5517,
+        "playcount": 15308
+      },
+      {
+        "name": "Dedication To House Music",
+        "listeners": 3912,
+        "playcount": 11217
+      },
+      {
+        "name": "Rock & Rule",
+        "listeners": 1868,
+        "playcount": 6748
+      },
+      {
+        "name": "Lucky Bastard",
+        "listeners": 1288,
+        "playcount": 2978
+      },
+      {
+        "name": "Temptation",
+        "listeners": 1186,
+        "playcount": 2788
+      },
+      {
+        "name": "Impressions",
+        "listeners": 1114,
+        "playcount": 2134
+      },
+      {
+        "name": "House Is Love - Edit",
+        "listeners": 1011,
+        "playcount": 2349
+      }
+    ],
+    "url": "https://www.last.fm/music/Dennis+Quin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

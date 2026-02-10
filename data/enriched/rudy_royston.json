@@ -1,0 +1,412 @@
+{
+  "artist_name": "Rudy Royston",
+  "artist_id": "rudy_royston",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:48:05.172434+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a7cf9248-c3ea-4ba3-87b5-d57ad52f1b35",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1970",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0001535256",
+      "discogs": "https://www.discogs.com/artist/621774",
+      "free streaming": "https://open.spotify.com/artist/0ILg6S11FRLlqKHKOfTJyY",
+      "myspace": "https://myspace.com/rudyroyston",
+      "official homepage": "http://www.rudyroyston.com/",
+      "other databases": "http://id.loc.gov/authorities/names/no99086362",
+      "social network": "https://www.facebook.com/rudyroyston",
+      "wikidata": "https://www.wikidata.org/wiki/Q47508268"
+    },
+    "labels": [
+      "Abeat Records",
+      "Greenleaf Music",
+      "Abeat",
+      "Posi-Tone",
+      "BMC Records",
+      "Blue Note"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 390142,
+    "name": "Rudy Royston",
+    "nb_fan": 78,
+    "nb_album": 15,
+    "link": "https://www.deezer.com/artist/390142",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e379676806d46449471db5edece3fb9b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Adam O'farrill",
+      "Dan McCarthy",
+      "Francois Moutin",
+      "Matt Mitchell",
+      "Rudresh Mahanthappa",
+      "Thomas Morgan"
+    ],
+    "contributor_roles": {
+      "Dan McCarthy": [
+        "Main"
+      ],
+      "Thomas Morgan": [
+        "Main"
+      ],
+      "Rudresh Mahanthappa": [
+        "Main"
+      ],
+      "Adam O'farrill": [
+        "Main"
+      ],
+      "Matt Mitchell": [
+        "Main"
+      ],
+      "Francois Moutin": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Sonder",
+      "Chillin'",
+      "Trail Marker"
+    ],
+    "track_durations": [
+      315,
+      483,
+      470
+    ],
+    "track_ranks": [
+      38332,
+      8912,
+      24500
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 9,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Day",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Place Where We Once Lived",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flatbed Buggy",
+        "label": "",
+        "release_date": "2018-10-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "American Trailer",
+        "label": "",
+        "release_date": "2017-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Roots 'n' Rain",
+        "label": "",
+        "release_date": "2017-01-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bird Calls",
+        "label": "",
+        "release_date": "2015-02-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "303 (feat. Nadje Noordhuis, Jon Irabagon, Sam Harris, Nir Felder, Mimi Jones & Yasushi Nakamura)",
+        "label": "",
+        "release_date": "2014-02-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Union Square",
+        "label": "",
+        "release_date": "2012-09-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Chronos",
+        "label": "",
+        "release_date": "2011-01-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A.M. Hours",
+        "label": "",
+        "release_date": "2023-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Five-Thirty Strut",
+        "label": "",
+        "release_date": "2023-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning",
+        "label": "",
+        "release_date": "2023-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hourglass",
+        "label": "",
+        "release_date": "2018-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bobblehead",
+        "label": "",
+        "release_date": "2018-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flatbed Buggy",
+        "label": "",
+        "release_date": "2018-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Matthew Shipp",
+      "Audrey Powne",
+      "Bruno Chevillon",
+      "Colin Steele Quartet",
+      "Sun-Mi Hong",
+      "Aleph Quintet",
+      "Kahil El'Zabar",
+      "Shake Stew",
+      "De Beren Gieren",
+      "Myra Melford"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 621774,
+    "name": "Rudy Royston",
+    "profile": "American jazz drummer, born in Ft. Worth, Texas, USA.",
+    "realname": "",
+    "social_urls": [
+      "http://www.rudyroyston.com/",
+      "https://www.moderndrummer.com/article/october-2014-rudy-royston/"
+    ],
+    "members": [],
+    "groups": [
+      "Dave Douglas Quintet",
+      "The Ron Miles Quartet",
+      "Bruce Barth Trio",
+      "Gregg August Sextet",
+      "Alex Norris Organ Quartet",
+      "JD Allen Trio",
+      "The Aruán Ortiz And Michael Janisch Quintet",
+      "Rudy Royston Trio",
+      "Rudy Linka Trio",
+      "Jon Irabagon Quartet",
+      "Ray Suhy - Lewis Porter Quartet",
+      "Michael-Louis Smith Quintet",
+      "Bill Frisell Trio",
+      "Organized Noise Trio",
+      "Something Blue (5)",
+      "Out To Dinner",
+      "Posi-Tone Swingtet",
+      "Imagine (21)",
+      "Flatbed Buggy",
+      "Albert Vila Trio",
+      "Daniel Nösig / Jure Pukl Quintet",
+      "Redshift Trio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 69,
+    "digital_only_releases": 31,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, FLAC, Album",
+      "11xFile, FLAC, Album",
+      "12xFile, FLAC, Album",
+      "15xFile, FLAC, Album",
+      "23xFile, MP3, VBR",
+      "2xLP, Album, Comp, Club + LP, Album, RE, RM + 10\",",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Ltd",
+      "CDr, Album, Num",
+      "LP",
+      "LP, Album, Ltd, Fir"
+    ],
+    "labels": [
+      "Abeat Records",
+      "Blue Note",
+      "Blue Note Review, Blue Note, Blue Note, Blue Note",
+      "Budapest Music Center Records",
+      "Criss Cross Jazz",
+      "Fresh Sound New Talent",
+      "Greenleaf Music",
+      "Newvelle Records",
+      "Not On Label",
+      "Not On Label (Kubri Self-released)",
+      "Not On Label (Noah Preminger Self-Released)",
+      "Not On Label (Rudy Royston Self-Released)",
+      "Nusica.org",
+      "Origin Records",
+      "Palmetto Records",
+      "Posi-Tone",
+      "Posi-Tone Records",
+      "Positone Records (2)",
+      "Ruby Slippers Productions",
+      "Savant",
+      "SmallsLIVE, SmallsLIVE",
+      "SteepleChase",
+      "Sunnyside",
+      "Sunnyside Communications",
+      "TMA Records (5)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rudy Royston",
+    "mbid": "a7cf9248-c3ea-4ba3-87b5-d57ad52f1b35",
+    "listeners": 6974,
+    "playcount": 23183,
+    "listener_play_ratio": 3.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rudy+Royston\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "drums",
+      "composer",
+      "instrumental",
+      "percussion"
+    ],
+    "similar_artists": [
+      "Matt Carmichael",
+      "Spike Wilner Trio",
+      "Christophe Marguet",
+      "Maridalen",
+      "MUSICMUSICMUSIC"
+    ],
+    "top_tracks": [
+      {
+        "name": "A.M. Hours",
+        "listeners": 5593,
+        "playcount": 10883
+      },
+      {
+        "name": "Mimi Sunrise",
+        "listeners": 359,
+        "playcount": 1162
+      },
+      {
+        "name": "303",
+        "listeners": 339,
+        "playcount": 702
+      },
+      {
+        "name": "High and Dry",
+        "listeners": 331,
+        "playcount": 914
+      },
+      {
+        "name": "Gangs of New York",
+        "listeners": 307,
+        "playcount": 841
+      },
+      {
+        "name": "Play on Words",
+        "listeners": 285,
+        "playcount": 701
+      },
+      {
+        "name": "Prayer (For the People)",
+        "listeners": 267,
+        "playcount": 696
+      },
+      {
+        "name": "Flatbed Buggy",
+        "listeners": 212,
+        "playcount": 419
+      },
+      {
+        "name": "Hourglass",
+        "listeners": 194,
+        "playcount": 373
+      },
+      {
+        "name": "Goodnight Kinyah",
+        "listeners": 169,
+        "playcount": 532
+      }
+    ],
+    "url": "https://www.last.fm/music/Rudy+Royston"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

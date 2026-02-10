@@ -1,0 +1,436 @@
+{
+  "artist_name": "Ciel",
+  "artist_id": "ciel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:08:51.060287+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1a46fe16-73f4-4c17-a827-0f60d4f8de24",
+    "type": "Character",
+    "country": "JP",
+    "area": "Japan",
+    "begin_date": "2021",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "biography": "https://kamitsubaki.jp/artist/ciel/",
+      "free streaming": "https://open.spotify.com/artist/3br9le9sNFSVAVBDTjdOn4",
+      "purchase for download": "https://mora.jp/artist/1404371/",
+      "social network": "https://www.tiktok.com/@ciel_vanillasky",
+      "streaming": "https://music.apple.com/jp/artist/1675332161",
+      "youtube": "https://www.youtube.com/channel/UCRvkXFtB70ZADg4L6A8L3wQ"
+    },
+    "labels": [
+      "KAMITSUBAKI RECORD",
+      "PHENOMENON RECORD"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 106544332,
+    "name": "CIEL",
+    "nb_fan": 390,
+    "nb_album": 18,
+    "link": "https://www.deezer.com/artist/106544332",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c9a8b2259c98fe85b7712600e453e447/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Back To The Feeling",
+      "Stay Along/Sail On",
+      "Make It Better",
+      "Will I Ever Feel Again",
+      "Call Me Silent",
+      "Swallowing Your Pride",
+      "Shut In My Body",
+      "Hold Onto You",
+      "Fine Everything",
+      "Talking On The Phone",
+      "Won't Obey",
+      "Thinking of You",
+      "Hear Me Out",
+      "Cruel",
+      "Circles",
+      "In Your Heart Again"
+    ],
+    "track_durations": [
+      181,
+      148,
+      154,
+      187,
+      191,
+      206,
+      132,
+      287,
+      188,
+      166,
+      185,
+      178,
+      186,
+      190,
+      189,
+      216
+    ],
+    "track_ranks": [
+      112038,
+      227350,
+      189711,
+      201273,
+      177756,
+      146202,
+      61863,
+      106672,
+      90529,
+      58093,
+      189839,
+      147075,
+      150480,
+      103215,
+      49947,
+      111517
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 3,
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "Call Me Silent",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rather Be Alone",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Make It Better",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Not In The Sun, Nor In The Dark",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Stay Along/Sail On",
+        "label": "",
+        "release_date": "2025-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Won't Obey",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Talking On The Phone",
+        "label": "",
+        "release_date": "2025-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Will I Ever Feel Again",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Swallowing Your Pride",
+        "label": "",
+        "release_date": "2025-05-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Call Me Silent",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shut In My Body",
+        "label": "",
+        "release_date": "2023-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Talk",
+        "label": "",
+        "release_date": "2023-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "So Scared",
+        "label": "",
+        "release_date": "2023-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somebody",
+        "label": "",
+        "release_date": "2023-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back To The Feeling",
+        "label": "",
+        "release_date": "2022-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seeking",
+        "label": "",
+        "release_date": "2022-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby Don't You Know",
+        "label": "",
+        "release_date": "2022-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fine Everything",
+        "label": "",
+        "release_date": "2022-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "shame",
+      "Sorry",
+      "bar italia",
+      "Sprints",
+      "Dust",
+      "Water From Your Eyes",
+      "Model/Actriz",
+      "English Teacher",
+      "Getdown Services",
+      "Porridge Radio"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6104384,
+    "name": "Ciel (5)",
+    "profile": "Producer, DJ, pianist, and composer from Toronto, Canada.",
+    "realname": "Cindy Li",
+    "social_urls": [
+      "https://cieltrax.bandcamp.com/",
+      "https://soundcloud.com/ciel_DJ",
+      "https://ciel.club/",
+      "https://ra.co/dj/cl-ca",
+      "https://www.youtube.com/@Ciel_DJ"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 21,
+    "digital_only_releases": 34,
+    "total_releases": 55,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP",
+      "12\", EP, Comp",
+      "12\", EP, Red",
+      "12\", Ltd",
+      "15xFile, MP3, Album, Comp, 320",
+      "24xFile, FLAC, Comp",
+      "2xLP",
+      "3xFile, MP3, Single, 320",
+      "3xFile, WAV, Maxi",
+      "4xFile, MP3, EP, 320",
+      "4xFile, WAV",
+      "5xFile, MP3, EP, 320",
+      "5xFile, WAV, Comp",
+      "9xFile, MP3, Album, 320",
+      "Cass, Ltd, Mixed",
+      "File, AIFF, MP3, WAV, Comp",
+      "File, AIFF, MP3, WAV, EP",
+      "File, MP3, Mixed",
+      "File, MP3, Mixed, 320",
+      "LP, Comp, Mut"
+    ],
+    "labels": [
+      "49North",
+      "Axe On Wax Records",
+      "Basement Floor Records",
+      "Be Told Lies",
+      "Breathing Room",
+      "Coastal Haze",
+      "Control Freak (4)",
+      "Dublab",
+      "FACT Magazine",
+      "H3 Records",
+      "Jacktone",
+      "Junted",
+      "KGLW",
+      "LuckyMe",
+      "Mantissa",
+      "NAFF",
+      "Out of Sorts",
+      "Panel Audio",
+      "Parallel Minds",
+      "Peach Discs",
+      "Resident Advisor",
+      "SUZI",
+      "Schmer",
+      "Second Hand Records (3)",
+      "Shy People",
+      "Spectral Sound",
+      "Studio Barnhus",
+      "Tartelet Records",
+      "Thanks For Enlightening Me",
+      "Trouble Maker",
+      "Unknown-Untitled",
+      "West Friends",
+      "female:pressure",
+      "flau"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ciel",
+    "mbid": "2dbd0bbc-a5da-4dd6-9e40-42549ed159a8",
+    "listeners": 98799,
+    "playcount": 1013275,
+    "listener_play_ratio": 10.26,
+    "bio_exists": true,
+    "bio_summary": "There are at least four artists / acts called Ciel or CIEL.\n\n1. CIEL is a post-punk / shoegaze, indie rock trio from Brighton, United Kingdom. It was originally the pseudonym of Dutch-born singer-songwriter Michelle Hindriks, who was active as CIEL in 2016 and 2017, then relocated to the United Kingdom and turned CIEL into a three-piece band. They released a long string of singles and three EPs from 2022 onwards. Their debut full-length, Call Me Silent finally came out in October 2025 on V2 Reco",
+    "tags": [
+      "electronic",
+      "House",
+      "japanese",
+      "UK",
+      "female vocalists"
+    ],
+    "similar_artists": [
+      "Empty old City",
+      "花鋏キョウ",
+      "dazbee",
+      "tuki.",
+      "Endorfin."
+    ],
+    "top_tracks": [
+      {
+        "name": "Fine Everything",
+        "listeners": 17367,
+        "playcount": 53012
+      },
+      {
+        "name": "Cascades",
+        "listeners": 10357,
+        "playcount": 20411
+      },
+      {
+        "name": "butterflies",
+        "listeners": 9704,
+        "playcount": 24470
+      },
+      {
+        "name": "Baby Don't You Know",
+        "listeners": 7461,
+        "playcount": 24719
+      },
+      {
+        "name": "Hundred Flowers Groove",
+        "listeners": 6573,
+        "playcount": 16327
+      },
+      {
+        "name": "Afterglow",
+        "listeners": 5736,
+        "playcount": 12340
+      },
+      {
+        "name": "窓を開けて",
+        "listeners": 5531,
+        "playcount": 55938
+      },
+      {
+        "name": "Echoes",
+        "listeners": 5351,
+        "playcount": 10731
+      },
+      {
+        "name": "etoile",
+        "listeners": 4166,
+        "playcount": 7333
+      },
+      {
+        "name": "WAXXON",
+        "listeners": 3628,
+        "playcount": 28252
+      }
+    ],
+    "url": "https://www.last.fm/music/Ciel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,224 @@
+{
+  "artist_name": "Echo Ark",
+  "artist_id": "echo_ark",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:32:25.142101+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 53808362,
+    "name": "Echo Ark",
+    "nb_fan": 50,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/53808362",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/15dca0d546ef90b5ba18246f2b873fc1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "World Above"
+    ],
+    "track_durations": [
+      155
+    ],
+    "track_ranks": [
+      94177
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Oblivious Calm",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elated",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Light",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Language of Rain",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Change",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maple Wood",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faithful Flight",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rhythms of Grace",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Divine Melody",
+        "label": "",
+        "release_date": "2024-03-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "World Above",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echo Ark",
+        "label": "",
+        "release_date": "2018-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Echo Ark",
+    "mbid": "",
+    "listeners": 39548,
+    "playcount": 112768,
+    "listener_play_ratio": 2.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Echo+Ark\">Read more on Last.fm</a>",
+    "tags": [
+      "to tag"
+    ],
+    "similar_artists": [
+      "joy parade",
+      "Space Access",
+      "Philó",
+      "Sisters Of Marks",
+      "Sounds of Ellinia"
+    ],
+    "top_tracks": [
+      {
+        "name": "World Above",
+        "listeners": 18824,
+        "playcount": 46192
+      },
+      {
+        "name": "Floral Hymn",
+        "listeners": 14320,
+        "playcount": 44027
+      },
+      {
+        "name": "Oblivious Calm",
+        "listeners": 3217,
+        "playcount": 6677
+      },
+      {
+        "name": "Elated",
+        "listeners": 2260,
+        "playcount": 6987
+      },
+      {
+        "name": "Maple Wood",
+        "listeners": 1826,
+        "playcount": 4343
+      },
+      {
+        "name": "A Change",
+        "listeners": 889,
+        "playcount": 2544
+      },
+      {
+        "name": "Depending on who?",
+        "listeners": 553,
+        "playcount": 1304
+      },
+      {
+        "name": "Imaginations",
+        "listeners": 276,
+        "playcount": 550
+      },
+      {
+        "name": "Graves Into Gardens",
+        "listeners": 6,
+        "playcount": 72
+      },
+      {
+        "name": "New Light",
+        "listeners": 2,
+        "playcount": 19
+      }
+    ],
+    "url": "https://www.last.fm/music/Echo+Ark"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

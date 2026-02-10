@@ -1,0 +1,598 @@
+{
+  "artist_name": "HAYM",
+  "artist_id": "haym",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:59:11.358853+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "442fdad2-d455-4d3c-acac-a66e40ca91be",
+    "type": "Person",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "1678-07-06",
+    "end_date": "1729-07-31",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "N.F. Haym"
+    ],
+    "isnis": [
+      "000000035486347X"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002172521",
+      "discogs": "https://www.discogs.com/artist/855762",
+      "free streaming": "https://open.spotify.com/artist/2Q87tvCNyFMgNQv79ZSEvo",
+      "IMSLP": "https://imslp.org/wiki/Category:Haym,_Nicola_Francesco",
+      "other databases": "https://www.worldcat.org/identities/lccn-n79072646",
+      "VIAF": "http://viaf.org/viaf/64111621",
+      "wikidata": "https://www.wikidata.org/wiki/Q1986170"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10584227,
+    "name": "Haym",
+    "nb_fan": 11,
+    "nb_album": 42,
+    "link": "https://www.deezer.com/artist/10584227",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0b338331edf336a4c20da78adf95e603/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Blakke",
+      "Chiara Amore",
+      "Divve",
+      "Duke Chaine",
+      "Gavin Moss",
+      "Jabe's Feelings",
+      "KEID",
+      "Mars Twins",
+      "Russi",
+      "Shelly Sony",
+      "Tom Polo",
+      "astrokidzz",
+      "cafenoire"
+    ],
+    "contributor_roles": {
+      "Gavin Moss": [
+        "Main"
+      ],
+      "Russi": [
+        "Main"
+      ],
+      "Shelly Sony": [
+        "Main"
+      ],
+      "Duke Chaine": [
+        "Main"
+      ],
+      "Jabe's Feelings": [
+        "Main"
+      ],
+      "Mars Twins": [
+        "Main"
+      ],
+      "Chiara Amore": [
+        "Featured"
+      ],
+      "Blakke": [
+        "Main"
+      ],
+      "cafenoire": [
+        "Main"
+      ],
+      "Tom Polo": [
+        "Main"
+      ],
+      "Divve": [
+        "Main"
+      ],
+      "KEID": [
+        "Main"
+      ],
+      "astrokidzz": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Boa Sorte",
+      "Happy Place",
+      "Know For Sure",
+      "Wanna Be Your First Love",
+      "Echo Sax End",
+      "In My Mind",
+      "By My Side",
+      "Cool Kids",
+      "Goodbye",
+      "Neon Glow"
+    ],
+    "track_durations": [
+      137,
+      123,
+      162,
+      123,
+      120,
+      119,
+      121,
+      135,
+      120,
+      125
+    ],
+    "track_ranks": [
+      536785,
+      254422,
+      279575,
+      11647,
+      205941,
+      22044,
+      74562,
+      23547,
+      76801,
+      33365
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 42
+    },
+    "albums": [
+      {
+        "title": "I Hear Your Name",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By My Side",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In My Mind",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everything I Need",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I See You Fly",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wanna Be Your First Love",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Her Arms",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Neon Glow",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flowers",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chasing Cars",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How Deep Is Your Love",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let Her Go",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Prayer in C",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Riptide",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hijack",
+        "label": "",
+        "release_date": "2024-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cool Kids",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feels like home",
+        "label": "",
+        "release_date": "2024-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echo Sax End",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing My Religion (Sped Up)",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing My Religion (Slowed)",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whiplash",
+        "label": "",
+        "release_date": "2024-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boa Sorte",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Big Jet Plane (Sped Up)",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Big Jet Plane (Slowed)",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skinny Love (Slowed)",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skinny Love (Sped Up)",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Catchup",
+        "label": "",
+        "release_date": "2024-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skinny Love",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodbye",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 640814,
+    "name": "Bob Haymes",
+    "profile": "American singer, songwriter, actor and radio and television host (March 29, 1923 - January 27, 1989).\r\n\r\nHe is best remembered today for co-writing the song \"That's All\", considered part of the Great American Songbook. He was the younger brother of singer and actor Dick Haymes.\r\n\r\nHaymes began his career in the early 1940s as a vocalist in the bands of Carl Hoff and Bob Chester.\r\n\r\nIn 1942 Haymes began work, under the name \"Bob Stanton\", for the radio show Gillette Cavalcade of Sports. He continued with the program until 1946, when it was turned into a television show on NBC; he then became the host of the television show until 1949. He also began to serve as the host of other NBC shows, all under the name \"Bob Stanton\", including game show Campus Hoopla during the show's run from 1946 to 1947, Television Screen Magazine in 1948, the country music show Village Barn in 1949, and the show Around the Town in 1950.\r\n\r\nDuring this time Haymes also began to appear in movies, including Is Eve",
+    "realname": "Robert William Haymes",
+    "social_urls": [
+      "http://en.wikipedia.org/wiki/Bob_Haymes",
+      "http://www.imdb.com/name/nm0371374/",
+      "http://repertoire.bmi.com/writer.asp?blnWriter=True&blnPublisher=True&blnArtist=True&page=1&fromrow=1&torow=25&querytype=WriterID&cae=13646012&affiliation=BMI&keyid=150249&keyname=HAYMES+ROBERT+W",
+      "",
+      "https://adp.library.ucsb.edu/names/110091"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 75,
+    "digital_only_releases": 25,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10\", Bar",
+      "10xCD, RE, RM + Box, Comp",
+      "2xCD, Album",
+      "2xCD, Album, Comp, Mono",
+      "2xCD, Comp",
+      "2xCD, Comp, Mono, RE, RM",
+      "2xCD, Comp, RM",
+      "2xFile, WAV, Single",
+      "3xCD, Album",
+      "3xCD, Comp, RM",
+      "3xCDr, Comp",
+      "4xCD, Album, Comp, RE",
+      "4xCD, Comp, RM",
+      "5xCD, Comp, RE",
+      "6xCD, Comp",
+      "7\"",
+      "7\", EP",
+      "7\", EP, Styrene",
+      "7\", S/Sided",
+      "7\", Single",
+      "Box, Comp, RM + 6xCD",
+      "CD",
+      "CD, Album",
+      "CD, Album + DVD-V",
+      "CD, Album, Comp",
+      "CD, Album, Comp, RE",
+      "CD, Album, Promo",
+      "CD, Album, RE, Exp + CD, Album, RE, Exp + CD, Albu",
+      "CD, Album, RM",
+      "CD, Comp, Mono",
+      "CD, Comp, Promo",
+      "CD, Comp, RE",
+      "CD, Comp, RE, RM",
+      "CD, Comp, RM",
+      "CDr",
+      "CDr, Album",
+      "CDr, Album, Promo",
+      "LP, Advance",
+      "LP, S/Sided",
+      "Shellac, 10\""
+    ],
+    "labels": [
+      "7 Dreams Records",
+      "Acrobat",
+      "AdOpen",
+      "Adelidae",
+      "Arbors Records",
+      "Atelier Sawano",
+      "Avid Jazz",
+      "Bell Records",
+      "Belter",
+      "Blujazz",
+      "Calle Mayor",
+      "Classics France",
+      "Clean Feed",
+      "Coast Music BV",
+      "Enlightenment (3)",
+      "Fantastic Voyage",
+      "Five Stars Records",
+      "Fresh Sound Records",
+      "Frémeaux & Associés",
+      "GSJQ Productions",
+      "Gala Records (2)",
+      "Harbinger Records",
+      "Hoodoo Records",
+      "Innervision Records (3)",
+      "JAZZAVENUE 1",
+      "Janzlife",
+      "Jasmine Records",
+      "Jazz Magazine (2)",
+      "King Records",
+      "King Records (3)",
+      "Losen Records",
+      "ML Records (12)",
+      "Magic Records",
+      "Miles High Records",
+      "Must Record",
+      "National Geographic",
+      "Nederlands Jazz Archief",
+      "New Vintage Records",
+      "Not On Label",
+      "Not On Label (Danny Mixon Self-Released)",
+      "Not On Label (Kari Van Der Kloot Self-released)",
+      "Not On Label (Riverboat Jazz Festival Self-released)",
+      "O.A.P. Records",
+      "Octason Records",
+      "Old Mill Road Recording",
+      "PS Classics",
+      "Pattyco Records",
+      "Pony Boy Records",
+      "Primo (2)",
+      "Prophone Records AB",
+      "Q-Rious Music",
+      "Radikula Art Production",
+      "Ronnex Records",
+      "Sepia Records (2)",
+      "SoulMusic Records",
+      "SteepleChase",
+      "Stunt Records",
+      "Sunnyside",
+      "Temps Record",
+      "Tengtones",
+      "The Intense Media",
+      "Tosky Records",
+      "Venus Records, Inc.",
+      "Viva Records Corporation",
+      "W.E.R.F.",
+      "WJ3 Records",
+      "Warner Music Italy",
+      "ZYX Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ham",
+    "mbid": "b52ba0c3-c7fd-477d-a212-a4c16658948a",
+    "listeners": 23913,
+    "playcount": 265900,
+    "listener_play_ratio": 11.12,
+    "bio_exists": true,
+    "bio_summary": "There are at least 4 artists with the name HAM.\n\n1) HAM is an Icelandic rock band which has been active since 1988, going on a hiatus in 1994 and returning to the spotlight in 2006. Today they command a cult following among many Icelandic rock enthusiasts. Their first studio album since 1989 was released on September 1st 2011.\n\n2) DJ Ham is a European Hardcore DJ, active since 1994. See also Brisk & Ham.\n\n3)  HAM is a Korean girl group under LeeYeon Entertainment. <a href=\"https://www.last.fm/mu",
+    "tags": [
+      "k-pop",
+      "icelandic",
+      "Korean",
+      "female vocalists",
+      "Kpop"
+    ],
+    "similar_artists": [
+      "Botnleðja",
+      "Dr. Spock",
+      "Ensími",
+      "XXX Rottweiler Hundar",
+      "Tvíhöfði"
+    ],
+    "top_tracks": [
+      {
+        "name": "So Sexy",
+        "listeners": 2630,
+        "playcount": 30472
+      },
+      {
+        "name": "Haf Trú",
+        "listeners": 1885,
+        "playcount": 3500
+      },
+      {
+        "name": "Goût De L'aventure",
+        "listeners": 1569,
+        "playcount": 2377
+      },
+      {
+        "name": "Partýbær",
+        "listeners": 1444,
+        "playcount": 6085
+      },
+      {
+        "name": "Angel Eyes - Original Mix",
+        "listeners": 1396,
+        "playcount": 7500
+      },
+      {
+        "name": "Voulez Vous",
+        "listeners": 1128,
+        "playcount": 2170
+      },
+      {
+        "name": "티티댄스 (T.T Dance)",
+        "listeners": 1074,
+        "playcount": 16057
+      },
+      {
+        "name": "Count of 3",
+        "listeners": 980,
+        "playcount": 3912
+      },
+      {
+        "name": "Working Up A Sweat",
+        "listeners": 952,
+        "playcount": 3756
+      },
+      {
+        "name": "Bass Kiks",
+        "listeners": 908,
+        "playcount": 3877
+      }
+    ],
+    "url": "https://www.last.fm/music/Ham"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

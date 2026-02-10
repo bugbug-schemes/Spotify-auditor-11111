@@ -1,0 +1,449 @@
+{
+  "artist_name": "MOOD boy",
+  "artist_id": "mood_boy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:22:51.177311+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "991ff3ac-c4ae-44d6-8be4-760bb71e01c8",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 107899822,
+    "name": "Mood Boy",
+    "nb_fan": 43,
+    "nb_album": 47,
+    "link": "https://www.deezer.com/artist/107899822",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/461ce90e457ccda04fc0fad1f8174b62/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "David Caraccio",
+      "sleen.",
+      "soave lofi"
+    ],
+    "contributor_roles": {
+      "sleen.": [
+        "Main"
+      ],
+      "David Caraccio": [
+        "Main"
+      ],
+      "soave lofi": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Red Shiny Moon",
+      "i...",
+      "HAVE A GOOD DAY",
+      "COME INTO MY LIFE",
+      "Bubblegum",
+      "Ocean Serenade",
+      "SAIKO",
+      "SUNGEI",
+      "LONG ISLAND",
+      "SUNDAY WALK",
+      "FEEL GOOD",
+      "Milkshake",
+      "Quiet Mind",
+      "ISHIKARI"
+    ],
+    "track_durations": [
+      117,
+      183,
+      136,
+      146,
+      118,
+      125,
+      175,
+      169,
+      176,
+      114,
+      157,
+      85,
+      99,
+      171
+    ],
+    "track_ranks": [
+      448904,
+      137702,
+      310928,
+      38801,
+      423075,
+      62454,
+      125619,
+      94127,
+      38439,
+      76609,
+      65424,
+      24824,
+      13464,
+      140613
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 6,
+      "single": 41
+    },
+    "albums": [
+      {
+        "title": "TIME FLIES",
+        "label": "",
+        "release_date": "2023-10-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "CHILDHOOD MEMORIES",
+        "label": "",
+        "release_date": "2023-04-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Printemps",
+        "label": "",
+        "release_date": "2023-03-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "SUMMER",
+        "label": "",
+        "release_date": "2022-09-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "FEEL GOOD",
+        "label": "",
+        "release_date": "2021-12-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rock That Ship",
+        "label": "",
+        "release_date": "2021-06-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "perfect afternoon",
+        "label": "",
+        "release_date": "2026-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "JAGUAR",
+        "label": "",
+        "release_date": "2025-06-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "THE MIDDLE",
+        "label": "",
+        "release_date": "2025-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Mind",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Cream",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SUNDAY STUDY",
+        "label": "",
+        "release_date": "2025-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daydream",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "PIXEL DREAM",
+        "label": "",
+        "release_date": "2024-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Polaroids",
+        "label": "",
+        "release_date": "2024-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NASA",
+        "label": "",
+        "release_date": "2024-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Serenade",
+        "label": "",
+        "release_date": "2024-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bubblegum",
+        "label": "",
+        "release_date": "2024-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lovely Day",
+        "label": "",
+        "release_date": "2024-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Milkshake",
+        "label": "",
+        "release_date": "2024-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clouds",
+        "label": "",
+        "release_date": "2024-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cheesy",
+        "label": "",
+        "release_date": "2024-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LULLABY",
+        "label": "",
+        "release_date": "2024-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RAINFALL",
+        "label": "",
+        "release_date": "2024-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "HAPPY MOOD",
+        "label": "",
+        "release_date": "2024-03-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "COME INTO MY LIFE",
+        "label": "",
+        "release_date": "2023-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NIWAKI",
+        "label": "",
+        "release_date": "2023-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "AWAY",
+        "label": "",
+        "release_date": "2023-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BLUE FOREST",
+        "label": "",
+        "release_date": "2023-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SPRING BREEZE",
+        "label": "",
+        "release_date": "2023-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "PBdR",
+      "Mike Beating",
+      "Peaceful Melody",
+      "Maadrhino",
+      "insømnia",
+      "Paxkalito",
+      "Plutones",
+      "sleen.",
+      "Temple",
+      "Astro Loud"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3647355,
+    "name": "Mood Boy",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mood Boy",
+    "mbid": "991ff3ac-c4ae-44d6-8be4-760bb71e01c8",
+    "listeners": 19630,
+    "playcount": 66464,
+    "listener_play_ratio": 3.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mood+Boy\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Noddi",
+      "Staysea",
+      "Midnight Sleep",
+      "Mowli",
+      "StormRoy"
+    ],
+    "top_tracks": [
+      {
+        "name": "FEEL GOOD",
+        "listeners": 13956,
+        "playcount": 31827
+      },
+      {
+        "name": "SUNLIGHT",
+        "listeners": 3766,
+        "playcount": 7559
+      },
+      {
+        "name": "TAHOE",
+        "listeners": 2485,
+        "playcount": 5025
+      },
+      {
+        "name": "YAKUSHIMA",
+        "listeners": 2313,
+        "playcount": 4523
+      },
+      {
+        "name": "BAIKAL",
+        "listeners": 1887,
+        "playcount": 3821
+      },
+      {
+        "name": "FUJI",
+        "listeners": 1406,
+        "playcount": 2711
+      },
+      {
+        "name": "SUNDAY WALK",
+        "listeners": 862,
+        "playcount": 1772
+      },
+      {
+        "name": "Red Shiny Moon",
+        "listeners": 693,
+        "playcount": 1710
+      },
+      {
+        "name": "MIDNIGHT THOUGHTS",
+        "listeners": 663,
+        "playcount": 1109
+      },
+      {
+        "name": "LAZY MONDAY",
+        "listeners": 625,
+        "playcount": 1037
+      }
+    ],
+    "url": "https://www.last.fm/music/Mood+Boy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,187 @@
+{
+  "artist_name": "Sarah Degny",
+  "artist_id": "sarah_degny",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:54:50.115027+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d784987c-1f3a-4934-8e7a-f71b3b094431",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [
+      "Lilly Era"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 245693762,
+    "name": "Sarah Degny",
+    "nb_fan": 188,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/245693762",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bd284c3528e274708b818f2ee005d1b6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alastair Lane"
+    ],
+    "contributor_roles": {
+      "Alastair Lane": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Roman d'Amour (Midnight Version)",
+      "Roman d'Amour",
+      "Rouge à lèvres",
+      "Ivresse Tristesse"
+    ],
+    "track_durations": [
+      211,
+      171,
+      144,
+      198
+    ],
+    "track_ranks": [
+      503426,
+      551726,
+      541541,
+      214512
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Ivresse Tristesse",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Roman d’Amour (Midnight Version)",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "je baille",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rouge à lèvres",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Roman d'Amour",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Arthur ELY",
+      "Cēzange",
+      "Illa",
+      "HINA",
+      "Mauvaise Bouche",
+      "Orlane",
+      "Mado",
+      "Olympe Chabert",
+      "Nochka",
+      "Aprile"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sarah Degny",
+    "mbid": "d784987c-1f3a-4934-8e7a-f71b3b094431",
+    "listeners": 166,
+    "playcount": 438,
+    "listener_play_ratio": 2.64,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sarah+Degny\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Enola Cox",
+      "Nina Battisti",
+      "Noée",
+      "Margot Abate",
+      "Devi"
+    ],
+    "top_tracks": [
+      {
+        "name": "je baille",
+        "listeners": 155,
+        "playcount": 417
+      },
+      {
+        "name": "Ivresse Tristesse",
+        "listeners": 13,
+        "playcount": 19
+      },
+      {
+        "name": "Roman d'Amour",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Sarah+Degny"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

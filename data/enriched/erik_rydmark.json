@@ -1,0 +1,224 @@
+{
+  "artist_name": "Erik Rydmark",
+  "artist_id": "erik_rydmark",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:30:15.724004+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10026876,
+    "name": "Erik Rydmark",
+    "nb_fan": 0,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/10026876",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e7bc20238972d8bc99c63189236c35cd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Things to Come",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Call of the Lake",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remembering You",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Most Wonderful (Xmas) Tunes of the Year",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ode to Joy",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desafinado (guitar)",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Touch of Sincerity",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seaside Café",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Shadow of Your Smile (guitar)",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nostalgia",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Balance",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5391267,
+    "name": "Erik Rydmark",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album, Enh"
+    ],
+    "labels": [
+      "Edel"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Erik Rydmark",
+    "mbid": "",
+    "listeners": 487,
+    "playcount": 953,
+    "listener_play_ratio": 1.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Erik+Rydmark\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rufus Mist",
+      "Theo Martinez",
+      "Lewis Knight",
+      "Tarragona Heights",
+      "Benjamin Kind"
+    ],
+    "top_tracks": [
+      {
+        "name": "Happy Xmas (War Is Over)",
+        "listeners": 296,
+        "playcount": 514
+      },
+      {
+        "name": "Bossa Vibe",
+        "listeners": 101,
+        "playcount": 158
+      },
+      {
+        "name": "Balance",
+        "listeners": 76,
+        "playcount": 187
+      },
+      {
+        "name": "Waltz in E Minor",
+        "listeners": 39,
+        "playcount": 74
+      },
+      {
+        "name": "Nostalgia",
+        "listeners": 8,
+        "playcount": 13
+      },
+      {
+        "name": "Mirage",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "It's the Most Wonderful Time of the Year",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Things to Come",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Erik+Rydmark"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

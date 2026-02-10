@@ -1,0 +1,400 @@
+{
+  "artist_name": "Francois Lé",
+  "artist_id": "francois_lé",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:42:24.518515+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "05bf6dcc-9ad6-4a42-a53e-64f27c4cf416",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "1955-10-30",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "french baritone",
+      "baritone",
+      "classical"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000078398451"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002566117",
+      "discogs": "https://www.discogs.com/artist/704073",
+      "IMDb": "https://www.imdb.com/name/nm0494582/",
+      "official homepage": "http://www.francoisleroux.net/",
+      "other databases": "https://www.worldcat.org/identities/lccn-n85076175",
+      "VIAF": "http://viaf.org/viaf/95336506",
+      "wikidata": "https://www.wikidata.org/wiki/Q3085133"
+    },
+    "labels": [
+      "Decca Records",
+      "Decca Classics",
+      "æon",
+      "REM",
+      "Deutsche Grammophon",
+      "BMG France",
+      "Telarc",
+      "EMI Classics",
+      "Erato",
+      "Chandos",
+      "ATMA Classique",
+      "Musikproduktion Dabringhaus und Grimm",
+      "Ligia Digital",
+      "EMI Digital",
+      "RCA Red Seal",
+      "SWR Classic",
+      "Naxos",
+      "Hyperion"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 255529592,
+    "name": "Francois Lé",
+    "nb_fan": 4,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/255529592",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/92b3837e23c6d77485d46d1360ac8b32/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Pink",
+      "Sandcastle",
+      "Maracuya"
+    ],
+    "track_durations": [
+      129,
+      134,
+      143
+    ],
+    "track_ranks": [
+      26707,
+      2481,
+      17952
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "Color",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hyped",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clockwork",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skate",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "People",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Mind",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clear",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Warmth",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vibe",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Watch",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Different",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fine",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Up",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bali",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reasons",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eternal",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Done",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "High",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maracuya",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sandcastle",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pink",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3791878,
+    "name": "François Lê Xuân",
+    "profile": "Producer, coordinator and sound engineer located in France, EU, who is known for working at [l2697104].",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 33,
+    "digital_only_releases": 67,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "15xCD, Comp, RM + Box, Ltd",
+      "2xCD, Album, Comp",
+      "2xCD, Comp",
+      "2xCD, Comp, Promo",
+      "2xCD, Comp, RM",
+      "3xCD, Album, Comp, RM",
+      "3xCD, Comp + Box",
+      "3xCD, Comp, Num",
+      "8xCD, Comp + Box",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Comp",
+      "CD, Comp, Ltd",
+      "CD, Comp, RM",
+      "CD, Comp, RM, Dig",
+      "CD, RE, RM",
+      "CD, RE, RM, Dig",
+      "LP, Album, Ltd, RM",
+      "LP, Album, Mono, Ltd, RM, 180",
+      "LP, Comp, Red",
+      "LP, Mono, Ltd, Num, 180"
+    ],
+    "labels": [
+      "Barclay",
+      "Casterman",
+      "Dark Tree",
+      "Gitanes Jazz Productions",
+      "Gitanes Jazz Productions, EmArcy",
+      "Gitanes Jazz Productions, Emarcy, Universal Music France",
+      "Gitanes Jazz Productions, Universal Music France, EmArcy",
+      "Gitanes Jazz Productions, Universal, EmArcy",
+      "Jazz Do It Association",
+      "Red Bull Music Academy",
+      "Saga",
+      "Sam Records (8)",
+      "Sam Records (8), INA",
+      "Sam Records (8), Saga",
+      "Universal Music France",
+      "Universal Music France, Universal Music Classics & Jazz France",
+      "Universal Music Jazz France",
+      "Universal, EmArcy, Gitanes Jazz Productions"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Francois Lé",
+    "mbid": "",
+    "listeners": 7239,
+    "playcount": 20035,
+    "listener_play_ratio": 2.77,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Francois+L%C3%A9\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Robinson Roe",
+      "Chill Motion",
+      "Mygg An",
+      "Yelloo Hill",
+      "Tilja"
+    ],
+    "top_tracks": [
+      {
+        "name": "My Mind",
+        "listeners": 2981,
+        "playcount": 5574
+      },
+      {
+        "name": "Clockwork",
+        "listeners": 1897,
+        "playcount": 3532
+      },
+      {
+        "name": "Pink",
+        "listeners": 1667,
+        "playcount": 3729
+      },
+      {
+        "name": "Sandcastle",
+        "listeners": 1512,
+        "playcount": 3078
+      },
+      {
+        "name": "Warmth",
+        "listeners": 754,
+        "playcount": 1655
+      },
+      {
+        "name": "Maracuya",
+        "listeners": 528,
+        "playcount": 1308
+      },
+      {
+        "name": "High",
+        "listeners": 234,
+        "playcount": 586
+      },
+      {
+        "name": "Skate",
+        "listeners": 170,
+        "playcount": 397
+      },
+      {
+        "name": "Open Up",
+        "listeners": 38,
+        "playcount": 168
+      },
+      {
+        "name": "Reasons",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Francois+L%C3%A9"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,163 @@
+{
+  "artist_name": "Chris Richter",
+  "artist_id": "chris_richter",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:07:35.422498+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5cc120bd-fd26-4336-9dfc-b489f5cd0c71",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "social network": "https://www.instagram.com/chrisfrichter/"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Chris Richter', got 'Chris Richer'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1719180,
+    "name": "Christof Richter",
+    "profile": "Colombian-born classically-trained violinist.\r\nA frequent performer in the Baltimore-Washington area, he also regularly returns to his native Colombia as Artistic Director of the Festival Internacional de Música Barroca de Barichara, for recitals, concerto appearances and master classes.",
+    "realname": "",
+    "social_urls": [
+      "http://www.newtrinitybaroque.org/biographies/musicians/christofrichter.html"
+    ],
+    "members": [],
+    "groups": [
+      "Tempesta Di Mare"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 3,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "CD",
+      "CD, Album"
+    ],
+    "labels": [
+      "Chaconne",
+      "Chandos, Chaconne"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Chris Richter",
+    "mbid": "5cc120bd-fd26-4336-9dfc-b489f5cd0c71",
+    "listeners": 6530,
+    "playcount": 31258,
+    "listener_play_ratio": 4.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Chris+Richter\">Read more on Last.fm</a>",
+    "tags": [
+      "guitar"
+    ],
+    "similar_artists": [
+      "William Wilson",
+      "Scott Kritzer",
+      "Joseph Sullinger",
+      "Adrian Edblad",
+      "David Snellbacher"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Wonder as I Wander",
+        "listeners": 2881,
+        "playcount": 6360
+      },
+      {
+        "name": "Feliz Navidad",
+        "listeners": 2265,
+        "playcount": 4861
+      },
+      {
+        "name": "Jingle Bell Rock",
+        "listeners": 1980,
+        "playcount": 4247
+      },
+      {
+        "name": "Auld Lang Syne",
+        "listeners": 261,
+        "playcount": 494
+      },
+      {
+        "name": "The Friendly Beasts",
+        "listeners": 245,
+        "playcount": 447
+      },
+      {
+        "name": "Patapan",
+        "listeners": 235,
+        "playcount": 423
+      },
+      {
+        "name": "The Christmas Song (Chestnuts Roasting on an Open Fire)",
+        "listeners": 207,
+        "playcount": 348
+      },
+      {
+        "name": "Flightless Bird, American Mouth",
+        "listeners": 190,
+        "playcount": 276
+      },
+      {
+        "name": "Bring a Torch, Jeanette, Isabella",
+        "listeners": 176,
+        "playcount": 325
+      },
+      {
+        "name": "It Came Upon a Midnight Clear",
+        "listeners": 120,
+        "playcount": 330
+      }
+    ],
+    "url": "https://www.last.fm/music/Chris+Richter"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

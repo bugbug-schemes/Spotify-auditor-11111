@@ -1,0 +1,178 @@
+{
+  "artist_name": "iomoo",
+  "artist_id": "iomoo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:19:50.851733+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4d7aa67e-e546-40e8-a387-2524695e5bef",
+    "type": "Person",
+    "country": "",
+    "area": "Santiago",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi",
+      "downtempo",
+      "boom bap",
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "instrumental"
+    ],
+    "aliases": [
+      "Vanys Clemente Valdés Muñoz"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "biography": "https://chillhop.com/artists/7738-iomoo/",
+      "discogs": "https://www.discogs.com/artist/12802793",
+      "free streaming": "https://www.deezer.com/artist/165625307",
+      "purchase for download": "https://music.apple.com/us/artist/1611486195",
+      "social network": "https://www.instagram.com/eeomoo/",
+      "soundcloud": "https://soundcloud.com/eyemoon",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/iomoo/15641424",
+      "youtube music": "https://music.youtube.com/channel/UCEPTre1rSPfbjHtPE7tQH7w"
+    },
+    "labels": [
+      "Chillhop Music",
+      "Stereofox Records",
+      "Etymology Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'iomoo', got 'Komodo'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12802793,
+    "name": "iomoo",
+    "profile": "Santiago, Chile based lofi project",
+    "realname": "",
+    "social_urls": [
+      "https://open.spotify.com/artist/1nCanHmL8zMpzm84QvyHuo",
+      "https://www.instagram.com/eeomoo/",
+      "https://soundcloud.com/eyemoon"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "iomoo",
+    "mbid": "4d7aa67e-e546-40e8-a387-2524695e5bef",
+    "listeners": 9705,
+    "playcount": 20523,
+    "listener_play_ratio": 2.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/iomoo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "nowimalamp",
+      "Elijah the Alchemist",
+      "Nosmoh",
+      "Shane Savala",
+      "Hippo Dreams"
+    ],
+    "top_tracks": [
+      {
+        "name": "trails",
+        "listeners": 5438,
+        "playcount": 8980
+      },
+      {
+        "name": "little horse",
+        "listeners": 3166,
+        "playcount": 5574
+      },
+      {
+        "name": "enigma",
+        "listeners": 2973,
+        "playcount": 4928
+      },
+      {
+        "name": "buru",
+        "listeners": 131,
+        "playcount": 273
+      },
+      {
+        "name": "drowsy",
+        "listeners": 44,
+        "playcount": 95
+      },
+      {
+        "name": "restoftime",
+        "listeners": 40,
+        "playcount": 70
+      },
+      {
+        "name": "innocence",
+        "listeners": 38,
+        "playcount": 94
+      },
+      {
+        "name": "tree",
+        "listeners": 30,
+        "playcount": 180
+      },
+      {
+        "name": "warmth",
+        "listeners": 21,
+        "playcount": 191
+      },
+      {
+        "name": "uglyform",
+        "listeners": 19,
+        "playcount": 31
+      }
+    ],
+    "url": "https://www.last.fm/music/iomoo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

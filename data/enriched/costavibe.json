@@ -1,0 +1,213 @@
+{
+  "artist_name": "Costavibe",
+  "artist_id": "costavibe",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:15:47.601295+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a8bf78c1-2e44-4b67-9194-accc02cad204",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/4HLlUXwO3kK48kH2iDfPpA",
+      "soundcloud": "https://soundcloud.com/costavibe-sc",
+      "streaming": "https://music.apple.com/gb/artist/1730793818"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 251516062,
+    "name": "Costavibe",
+    "nb_fan": 2,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/251516062",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5b92ffa7cfbcf42e4d772cf997e166a4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Kungsan",
+      "Purple Sand",
+      "Organic Future",
+      "Long Time"
+    ],
+    "track_durations": [
+      142,
+      131,
+      136,
+      137
+    ],
+    "track_ranks": [
+      22232,
+      43759,
+      37704,
+      17501
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Organic Future",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dyvlinge",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Icy Road",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Purple Sand",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Time",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Messy Room",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kungsan",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Costavibe",
+    "mbid": "",
+    "listeners": 7371,
+    "playcount": 23036,
+    "listener_play_ratio": 3.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Costavibe\">Read more on Last.fm</a>",
+    "tags": [
+      "chillout"
+    ],
+    "similar_artists": [
+      "Tales of Terra",
+      "Aixer",
+      "Tree House Club",
+      "Dr. Stu",
+      "Hamasi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Purple Sand",
+        "listeners": 3640,
+        "playcount": 9434
+      },
+      {
+        "name": "Kungsan",
+        "listeners": 2818,
+        "playcount": 6996
+      },
+      {
+        "name": "Organic Future",
+        "listeners": 1632,
+        "playcount": 4216
+      },
+      {
+        "name": "Long Time",
+        "listeners": 605,
+        "playcount": 1493
+      },
+      {
+        "name": "GRAVITY",
+        "listeners": 423,
+        "playcount": 874
+      },
+      {
+        "name": "Messy Room",
+        "listeners": 7,
+        "playcount": 11
+      },
+      {
+        "name": "Dyvlinge",
+        "listeners": 4,
+        "playcount": 9
+      },
+      {
+        "name": "Icy Road",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Costavibe"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

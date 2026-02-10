@@ -1,0 +1,523 @@
+{
+  "artist_name": "EKKSTACY",
+  "artist_id": "ekkstacy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:31:18.093159+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e897ca8f-03ff-4405-9cf2-c71ab2950ddb",
+    "type": "Person",
+    "country": "CA",
+    "area": "Canada",
+    "begin_date": "2002",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie pop",
+      "indie rock",
+      "post punk",
+      "new wave"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://ekkstacy.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/10801069",
+      "free streaming": "https://www.deezer.com/artist/73361492",
+      "last.fm": "https://www.last.fm/music/EKKSTACY",
+      "official homepage": "https://ekkstacy.online/",
+      "purchase for download": "https://www.beatport.com/artist/ekkstacy/1204871",
+      "social network": "https://www.tiktok.com/@ekkstacy",
+      "soundcloud": "https://soundcloud.com/ekkstacy",
+      "streaming": "https://tidal.com/artist/16749629",
+      "wikidata": "https://www.wikidata.org/wiki/Q118179875",
+      "youtube": "https://www.youtube.com/channel/UCrqojOYPaZ4v08TdZOMO8CA"
+    },
+    "labels": [
+      "Audiotree Music",
+      "Dine Alone Records",
+      "[no label]",
+      "UnitedMasters",
+      "Ultra Records, LLC",
+      "Loma Vista Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 73361492,
+    "name": "EKKSTACY",
+    "nb_fan": 8292,
+    "nb_album": 33,
+    "link": "https://www.deezer.com/artist/73361492",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d09985143204d8f4394adcf40584d668/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "HEALTH",
+      "Passion Mango",
+      "The Kid LAROI"
+    ],
+    "contributor_roles": {
+      "Passion Mango": [
+        "Main"
+      ],
+      "The Kid LAROI": [
+        "Main"
+      ],
+      "HEALTH": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "i walk this earth all by myself",
+      "Bloody Eyes",
+      "i walk this earth all by myself - live",
+      "shutting me out",
+      "im so happy",
+      "forever",
+      "goo lagoon",
+      "luv of my life",
+      "alright (feat. The Kid LAROI)",
+      "bella",
+      "then i met her",
+      "Starry Eyes",
+      "chemicals",
+      "it only gets worse, i promise",
+      "STILL BREATHING",
+      "i wish you were pretty on the inside",
+      "i gave you everything",
+      "if i had a gun",
+      "christian death",
+      "i guess we made it this far",
+      "she will be missed",
+      "i just want to hide my face",
+      "wish i was dead",
+      "at night (feat. Passion Mango)",
+      "seventeen"
+    ],
+    "track_durations": [
+      145,
+      160,
+      115,
+      146,
+      139,
+      140,
+      136,
+      101,
+      129,
+      199,
+      138,
+      132,
+      148,
+      154,
+      321,
+      127,
+      158,
+      152,
+      144,
+      118,
+      153,
+      132,
+      98,
+      92,
+      219
+    ],
+    "track_ranks": [
+      882248,
+      511515,
+      352583,
+      354264,
+      402193,
+      214197,
+      261815,
+      339686,
+      444592,
+      334433,
+      314176,
+      340992,
+      279232,
+      311992,
+      203646,
+      228479,
+      301785,
+      394449,
+      288778,
+      279218,
+      209936,
+      133879,
+      336881,
+      263165,
+      298666
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 6,
+      "ep": 4,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Midnight Pulse",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "FOREVER",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "forever and always",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "EKKSTACY",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "misery",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "NEGATIVE",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "chicago",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "shutting me out / goo lagoon",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "EKKSTACY on Audiotree Live",
+        "label": "",
+        "release_date": "2023-02-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "i just want to hide my face",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bloody Eyes",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i wish i could rip off this old face",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "head in the clouds",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "forever",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "keep my head down",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "she will be missed",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "seventeen",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mr. mole",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "bella / i can't find anyone",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "problems (feat. Trippie Redd)",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i want to die in your arms",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "wish i was dead",
+        "label": "",
+        "release_date": "2022-07-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Guess",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i gave you everything",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NEGATIVE (Live)",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "it only gets worse, i promise",
+        "label": "",
+        "release_date": "2021-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "in love",
+        "label": "",
+        "release_date": "2021-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i want to be by your side (feat. herhexx)",
+        "label": "",
+        "release_date": "2021-04-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i walk this earth all by myself",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "See You Later",
+        "label": "",
+        "release_date": "2020-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Eyedress",
+      "Yot Club",
+      "Dream, Ivory",
+      "Current Joys",
+      "60 juno",
+      "Pity Party (Girls Club)",
+      "Acid Ghost",
+      "Mac Demarco",
+      "Vundabar",
+      "Harmless"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10801069,
+    "name": "EKKSTACY",
+    "profile": "",
+    "realname": "Khyree Zienty",
+    "social_urls": [
+      "https://www.ekkstacy.com",
+      "https://www.soundcloud.com/ekkstacy",
+      "https://www.facebook.com/ekkstacy",
+      "https://www.youtube.com/channel/UCrqojOYPaZ4v08TdZOMO8CA/featured",
+      "https://www.instagram.com/ekkstacy",
+      "https://twitter.com/ekkstacy"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 9,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "File, FLAC, Single"
+    ],
+    "labels": [
+      "Loma Vista Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "EKKSTACY",
+    "mbid": "e897ca8f-03ff-4405-9cf2-c71ab2950ddb",
+    "listeners": 913485,
+    "playcount": 18688639,
+    "listener_play_ratio": 20.46,
+    "bio_exists": true,
+    "bio_summary": "EKKSTACY is Canadian singer-songwriter Khyree Zienty (born 2002) from Vancouver, BC. He describes his current sound as a fuse of indie, post punk, and synth wave. \n\nEkkstacy began creating music during high school, taking influence from film, and artists including Elliott Smith, The Drums, Bon Iver, and Bedroom. His music primarily involved youtube beats, in which he sang over. He released his debut EP Negative in November 2021, with the single \"I Walk This Earth All by Myself\" becoming what is ",
+    "tags": [
+      "emo",
+      "indie",
+      "post-punk",
+      "indie rock",
+      "bedroom pop"
+    ],
+    "similar_artists": [
+      "Yot Club",
+      "thornskin",
+      "kurffew",
+      "Mind’s Eye",
+      "Dxrkknght"
+    ],
+    "top_tracks": [
+      {
+        "name": "I walk this earth all by myself",
+        "listeners": 659386,
+        "playcount": 6103569
+      },
+      {
+        "name": "then i met her",
+        "listeners": 218505,
+        "playcount": 1318927
+      },
+      {
+        "name": "it only gets worse, i promise",
+        "listeners": 179293,
+        "playcount": 1150738
+      },
+      {
+        "name": "uncomparable",
+        "listeners": 150072,
+        "playcount": 1155381
+      },
+      {
+        "name": "im so happy",
+        "listeners": 128911,
+        "playcount": 716232
+      },
+      {
+        "name": "Alright (feat. The Kid Laroi)",
+        "listeners": 103673,
+        "playcount": 648800
+      },
+      {
+        "name": "starry eyes",
+        "listeners": 91963,
+        "playcount": 423666
+      },
+      {
+        "name": "i want to sleep for 1000 years",
+        "listeners": 85760,
+        "playcount": 432225
+      },
+      {
+        "name": "i just want to hide my face",
+        "listeners": 85678,
+        "playcount": 629112
+      },
+      {
+        "name": "I GAVE YOU EVERYTHING",
+        "listeners": 83458,
+        "playcount": 559056
+      }
+    ],
+    "url": "https://www.last.fm/music/EKKSTACY"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

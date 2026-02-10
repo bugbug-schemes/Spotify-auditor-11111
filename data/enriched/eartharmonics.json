@@ -1,0 +1,100 @@
+{
+  "artist_name": "Eartharmonics",
+  "artist_id": "eartharmonics",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:32:04.543368+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Eartharmonics",
+    "mbid": "",
+    "listeners": 15762,
+    "playcount": 51819,
+    "listener_play_ratio": 3.29,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Eartharmonics\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Linnea Arden",
+      "Ebon Meadow",
+      "SOLAR SONAR",
+      "in my daydreams",
+      "Selenique"
+    ],
+    "top_tracks": [
+      {
+        "name": "Safe Haven",
+        "listeners": 12625,
+        "playcount": 39184
+      },
+      {
+        "name": "Moonlit Path (528Hz)",
+        "listeners": 1950,
+        "playcount": 6749
+      },
+      {
+        "name": "Shimmer (432Hz)",
+        "listeners": 764,
+        "playcount": 2288
+      },
+      {
+        "name": "Eternal Balance (432Hz)",
+        "listeners": 672,
+        "playcount": 1757
+      },
+      {
+        "name": "Silent and Still",
+        "listeners": 524,
+        "playcount": 1103
+      },
+      {
+        "name": "Glacial Views",
+        "listeners": 253,
+        "playcount": 738
+      }
+    ],
+    "url": "https://www.last.fm/music/Eartharmonics"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,588 @@
+{
+  "artist_name": "Koma",
+  "artist_id": "koma",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:51:07.405843+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3c58d3ba-d444-40c6-8c3a-395f589f84d6",
+    "type": "Group",
+    "country": "ES",
+    "area": "Spain",
+    "begin_date": "1995",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "000000011530788X"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000109199",
+      "discogs": "https://www.discogs.com/artist/1815609",
+      "free streaming": "https://open.spotify.com/artist/0BuXzFwwPc1PM75vVC8K8u",
+      "myspace": "https://myspace.com/grupokoma",
+      "official homepage": "http://www.koma-grupo.com/",
+      "other databases": "https://www.metal-archives.com/bands/Koma/35541",
+      "purchase for download": "https://itunes.apple.com/es/artist/id120519911",
+      "VIAF": "http://viaf.org/viaf/168220398",
+      "wikidata": "https://www.wikidata.org/wiki/Q3757299"
+    },
+    "labels": [
+      "Pinhead Records",
+      "GOR",
+      "Maldito Records",
+      "Koma Records",
+      "Locomotive Records",
+      "Locomotive Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 2215,
+    "name": "Koma",
+    "nb_fan": 7626,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/2215",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/584adcb63943b9296843f62473328cc0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "C.Sen",
+      "Fabe",
+      "Georgio",
+      "Hologram Lo'",
+      "Kheops",
+      "Kohndo",
+      "Mokless",
+      "Morad",
+      "Roce",
+      "Scred Connexion",
+      "Viez"
+    ],
+    "contributor_roles": {
+      "Morad": [
+        "Featured"
+      ],
+      "Scred Connexion": [
+        "Main"
+      ],
+      "Kohndo": [
+        "Featured"
+      ],
+      "Roce": [
+        "Featured"
+      ],
+      "Fabe": [
+        "Main"
+      ],
+      "Kheops": [
+        "Main"
+      ],
+      "Mokless": [
+        "Main",
+        "Featured"
+      ],
+      "Viez": [
+        "Main"
+      ],
+      "Georgio": [
+        "Main"
+      ],
+      "C.Sen": [
+        "Main"
+      ],
+      "Hologram Lo'": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Et si chacun",
+      "Mi jefe",
+      "Avec c'qu'on vit",
+      "Un parmi des millions",
+      "Le Choix Des Armes",
+      "Merci",
+      "Humour noir",
+      "Paris North Face",
+      "Où j'veux quand j'veux",
+      "Époque de fou",
+      "Loin des rêves"
+    ],
+    "track_durations": [
+      222,
+      319,
+      242,
+      334,
+      241,
+      249,
+      221,
+      256,
+      247,
+      256,
+      242
+    ],
+    "track_ranks": [
+      343259,
+      187814,
+      308936,
+      103794,
+      147348,
+      289456,
+      260541,
+      217050,
+      180433,
+      194083,
+      368637
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 12,
+      "ep": 12,
+      "single": 76
+    },
+    "albums": [
+      {
+        "title": "Rose Tinted",
+        "label": "",
+        "release_date": "2025-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Love Ties",
+        "label": "",
+        "release_date": "2024-11-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Una ligera mejoría antes de la muerte",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Slangrockaz (Instrumental)",
+        "label": "",
+        "release_date": "2021-12-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Internment Failure",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Barbes All Star",
+        "label": "",
+        "release_date": "2017-01-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tout est calculé...",
+        "label": "",
+        "release_date": "2014-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Le réveil",
+        "label": "",
+        "release_date": "2011-12-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "El catador de vinagre",
+        "label": "",
+        "release_date": "1999-05-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "El infarto",
+        "label": "",
+        "release_date": "1997-11-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Koma",
+        "label": "",
+        "release_date": "1996-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hier Und Heute",
+        "label": "",
+        "release_date": "1983-06-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Queda De Um Revolucionário Egocêntrico",
+        "label": "",
+        "release_date": "2025-10-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dynamite",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Satyr Supervisor",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Key EP",
+        "label": "",
+        "release_date": "2024-03-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rebalance",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Above & Below, Vol. 01",
+        "label": "",
+        "release_date": "2022-12-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I>M>Y",
+        "label": "",
+        "release_date": "2022-12-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sinfonia da Desgraça",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Éclipse",
+        "label": "",
+        "release_date": "2024-08-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "DOGS",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Just Noise # 1",
+        "label": "",
+        "release_date": "2018-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Koma (Versión 1994)",
+        "label": "",
+        "release_date": "1994-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Feels Right",
+        "label": "",
+        "release_date": "2025-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alles",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Девочка-бунт",
+        "label": "",
+        "release_date": "2025-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "vuelve a mi",
+        "label": "",
+        "release_date": "2025-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coraline",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Big Brella (feat. Lil Yanus & Hampster)",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Akhenaton",
+      "Scred Connexion",
+      "ATK",
+      "La Rumeur",
+      "Les Sages Poètes de la Rue",
+      "Rocca",
+      "Busta Flex",
+      "IAM",
+      "Rocé",
+      "La Brigade"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 278273,
+    "name": "Koma (3)",
+    "profile": "French MC from Paris 18ème (75018)",
+    "realname": "Ahmed BENAISSA",
+    "social_urls": [
+      "http://www.facebook.com/AhmedKomaScredConnexion",
+      "http://plus.google.com/113877124963545317182",
+      "http://twitter.com/koma_ahmed",
+      "http://www.youtube.com/user/ahmedkomaofficiel ",
+      "https://lerapcetaitmieuxavant.fr/koma"
+    ],
+    "members": [],
+    "groups": [
+      "Scred Connexion",
+      "Le Complot Des Bas Fonds"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 52,
+    "digital_only_releases": 48,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "12\", Maxi",
+      "2xCD, Album, Mixed",
+      "2xCD, Comp",
+      "2xCD, Mixed",
+      "3xCD, Album, Comp, Mixtape",
+      "3xCD, Comp, RM, Box",
+      "4xCD, Comp",
+      "4xCD, Mixed",
+      "5xCD, Album + Box, Comp, Car",
+      "CD, Album",
+      "CD, Album, RE + CD, Album, RE + CD, Album, RE + CD",
+      "CD, Comp",
+      "CD, Comp + DVD-V",
+      "CD, Comp, Mixed",
+      "CD, Comp, Promo",
+      "CD, Comp, Smplr, Car",
+      "CD, EP",
+      "CD, Ltd, Mixtape",
+      "CD, Maxi, Ltd",
+      "CD, Mixed, Str",
+      "CD, Mixtape",
+      "CD, Single",
+      "CD, Str",
+      "CDr, Album, Ltd",
+      "CDr, Album, Promo, Smplr",
+      "Cass, Comp, Ltd, Mixed, Mixtape",
+      "Cass, Mixed, Mix",
+      "Cass, Mixed, Mixtape, Promo",
+      "Cass, Mixtape",
+      "DVD-V, PAL",
+      "File, MP3, Mixtape"
+    ],
+    "labels": [
+      "Abcdrduson",
+      "Addictive Music",
+      "Arts Et Spectacles, La Meute",
+      "Chronowax",
+      "Concept Urbain",
+      "Concept Urbain, CKC Music",
+      "DISKWORKSHOP",
+      "Dounga Production",
+      "Dégaine 2 Guépard",
+      "Elas",
+      "Freaks Records (2)",
+      "Gang Du Lyonnais",
+      "Guerilla Prod",
+      "HH Mixtapes",
+      "Hip Hop Support",
+      "Istyklel",
+      "K Productions (8)",
+      "Klan",
+      "Knuts Prod",
+      "L'Essentiel Prod, Wati B",
+      "L'Or Noir",
+      "L'Or Noir, Toujours Dans La Bonne Direction",
+      "L'Uzine Prod",
+      "Label Rouge Prod",
+      "Le Gouffre",
+      "Livin' Astro",
+      "Madeindizuit",
+      "Max6 & Don Hutch Prod.",
+      "Moonlight Cardinal",
+      "Muzik 2 L'homme Records",
+      "Not On Label",
+      "Not On Label (Fanatik Self-released)",
+      "Not On Label (La Rivale Self-released)",
+      "Néochrome",
+      "Offsiderz",
+      "Only Music (3)",
+      "P2S Records",
+      "Polydor",
+      "Rap Mag",
+      "Reel Up",
+      "Rootscore",
+      "Scred Connexion",
+      "Track List",
+      "Universal Licensing Music (ULM)",
+      "Wagram Music",
+      "Warner Music France",
+      "www.allskillz.com"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Koma",
+    "mbid": "3c58d3ba-d444-40c6-8c3a-395f589f84d6",
+    "listeners": 88349,
+    "playcount": 846979,
+    "listener_play_ratio": 9.59,
+    "bio_exists": true,
+    "bio_summary": "There are at least 8 bands with the name Koma:\n\n1. KOMA is a Thrash/Groove Metal band from Pamplona (Spain). They started in 1994 and recorded their first Demo in 1995. After they've recorded 8 albums mixing Groove Metal, Punk and Rock´n´Roll  with little touches of basque culture. \nhttp://www.koma.eshttp://es.wikipedia.org/wiki/Komahttps://www.facebook.com/komaoficialhttp://www.discogs.com/artist/1815609-Koma-16https://www.metal-archives.com/bands/Koma/35541 <a href=\"https://www.last.fm/music/K",
+    "tags": [
+      "thrash metal",
+      "metal",
+      "hardcore",
+      "rap",
+      "spanish"
+    ],
+    "similar_artists": [
+      "Soziedad Alkoholika",
+      "Hamlet",
+      "Rocca",
+      "Akhenaton",
+      "Angelus Apatrida"
+    ],
+    "top_tracks": [
+      {
+        "name": "Horizon City",
+        "listeners": 21205,
+        "playcount": 53086
+      },
+      {
+        "name": "Along the Way",
+        "listeners": 20579,
+        "playcount": 62736
+      },
+      {
+        "name": "One of Us Must Hang",
+        "listeners": 10580,
+        "playcount": 26859
+      },
+      {
+        "name": "Sofolix",
+        "listeners": 10103,
+        "playcount": 25646
+      },
+      {
+        "name": "Shining Star",
+        "listeners": 5530,
+        "playcount": 15994
+      },
+      {
+        "name": "Mi jefe",
+        "listeners": 4725,
+        "playcount": 24710
+      },
+      {
+        "name": "Avec C'qu'on Vit",
+        "listeners": 3019,
+        "playcount": 12306
+      },
+      {
+        "name": "Sakeo",
+        "listeners": 2645,
+        "playcount": 15160
+      },
+      {
+        "name": "El Sonajero",
+        "listeners": 2617,
+        "playcount": 12987
+      },
+      {
+        "name": "Aquí Huele Como Que Han Fumao",
+        "listeners": 2500,
+        "playcount": 10212
+      }
+    ],
+    "url": "https://www.last.fm/music/Koma"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

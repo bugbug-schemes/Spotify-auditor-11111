@@ -1,0 +1,86 @@
+{
+  "artist_name": "Elowen Moon",
+  "artist_id": "elowen_moon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:25:53.086478+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Elowen Moon', got 'Elemental Moods'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elowen Moon",
+    "mbid": "",
+    "listeners": 964,
+    "playcount": 6707,
+    "listener_play_ratio": 6.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elowen+Moon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Victor Arvelin",
+      "Elis Natt",
+      "Nathalie Mernot",
+      "Charles Karmen",
+      "Braiden Morrish"
+    ],
+    "top_tracks": [
+      {
+        "name": "Little Cloud",
+        "listeners": 778,
+        "playcount": 5820
+      },
+      {
+        "name": "Nighty Night",
+        "listeners": 267,
+        "playcount": 886
+      },
+      {
+        "name": "Owl's Lullaby",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Elowen+Moon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

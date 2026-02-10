@@ -1,0 +1,215 @@
+{
+  "artist_name": "Auðura",
+  "artist_id": "auðura",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:19:18.987818+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 209732867,
+    "name": "Auðura",
+    "nb_fan": 9,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/209732867",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c00e09f59764cb432913da96db163961/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Orange Sky"
+    ],
+    "track_durations": [
+      129
+    ],
+    "track_ranks": [
+      138869
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Diamond Bay",
+        "label": "",
+        "release_date": "2025-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Walking on Air",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Discovery",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Orange Sky (Soundbath)",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jupiter",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Round Shapes",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Orange Sky",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hovering Above",
+        "label": "",
+        "release_date": "2023-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spirit",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Way",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Auðura",
+    "mbid": "",
+    "listeners": 86233,
+    "playcount": 304409,
+    "listener_play_ratio": 3.53,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Au%C3%B0ura\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "BBG's",
+      "Tall Towers",
+      "Louaminé",
+      "Kirabuo",
+      "Lifou"
+    ],
+    "top_tracks": [
+      {
+        "name": "Orange Sky",
+        "listeners": 63925,
+        "playcount": 169834
+      },
+      {
+        "name": "Hovering Above",
+        "listeners": 27049,
+        "playcount": 71663
+      },
+      {
+        "name": "Walking on Air",
+        "listeners": 22079,
+        "playcount": 52824
+      },
+      {
+        "name": "The Way",
+        "listeners": 2582,
+        "playcount": 5223
+      },
+      {
+        "name": "Discovery",
+        "listeners": 1663,
+        "playcount": 2952
+      },
+      {
+        "name": "Jupiter",
+        "listeners": 630,
+        "playcount": 1125
+      },
+      {
+        "name": "Spirit",
+        "listeners": 270,
+        "playcount": 456
+      },
+      {
+        "name": "Orange Sky - Soundbath",
+        "listeners": 97,
+        "playcount": 160
+      },
+      {
+        "name": "Round Shapes",
+        "listeners": 61,
+        "playcount": 112
+      },
+      {
+        "name": "Diamond Bay",
+        "listeners": 36,
+        "playcount": 56
+      }
+    ],
+    "url": "https://www.last.fm/music/Au%C3%B0ura"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

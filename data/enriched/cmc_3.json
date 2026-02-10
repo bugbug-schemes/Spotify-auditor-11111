@@ -1,0 +1,348 @@
+{
+  "artist_name": "CMC 3",
+  "artist_id": "cmc_3",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:54:00.380266+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3a042ac1-cae7-43ac-a04c-36bf6da0c9ba",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183901187",
+      "purchase for download": "https://music.apple.com/us/artist/1650215361",
+      "streaming": "https://tidal.com/artist/34527153",
+      "youtube music": "https://music.youtube.com/channel/UC_w47Jzr0mwkX0FPWhkImtQ"
+    },
+    "labels": [
+      "CMC",
+      "[no label]",
+      "Overtone Studios"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183266617,
+    "name": "CMC 3",
+    "nb_fan": 1,
+    "nb_album": 18,
+    "link": "https://www.deezer.com/artist/183266617",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5f1ba71b0b599e7bd440a6263c4729d9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Who Can I Turn To",
+      "On Your Balcony",
+      "One I Had A Secret Love",
+      "I Do It For Your Love",
+      "Love Is Here To Stay",
+      "Jim's Café",
+      "Search For Peace",
+      "Dear Old Stockholm",
+      "Thursday Afternoon",
+      "Never Let Me Go",
+      "Everything To Me"
+    ],
+    "track_durations": [
+      264,
+      258,
+      258,
+      300,
+      262,
+      210,
+      306,
+      255,
+      198,
+      343,
+      324
+    ],
+    "track_ranks": [
+      54536,
+      30953,
+      89669,
+      59960,
+      74719,
+      21805,
+      75296,
+      51514,
+      10107,
+      31493,
+      66367
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 3,
+      "single": 15
+    },
+    "albums": [
+      {
+        "title": "Who Can I Turn To",
+        "label": "",
+        "release_date": "2020-12-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dear Old Stockholm",
+        "label": "",
+        "release_date": "2020-10-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Setembro",
+        "label": "",
+        "release_date": "2019-06-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Mutual Friend",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet And Lovely",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sigma Signs",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Times",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On Your Balcony",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Night",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home Away From Home",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bergman",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thursday Afternoon",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jim's Café",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I've Got a Crush On You",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Search For Peace",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring Came Early",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everything To Me",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Never Let Me Go",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 497113,
+    "name": "CMC (3)",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 3,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "CD, Album"
+    ],
+    "labels": [
+      "Night & Day"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "CMC 3",
+    "mbid": "3a042ac1-cae7-43ac-a04c-36bf6da0c9ba",
+    "listeners": 140771,
+    "playcount": 646021,
+    "listener_play_ratio": 4.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/CMC+3\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Mike Coen",
+      "Saphena Trio",
+      "The Belleville Band",
+      "Reuben Plays",
+      "The Holly Molly Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Everything To Me",
+        "listeners": 41921,
+        "playcount": 115308
+      },
+      {
+        "name": "Autumn Once Again",
+        "listeners": 32147,
+        "playcount": 78533
+      },
+      {
+        "name": "Once I Had A Secret Love",
+        "listeners": 29465,
+        "playcount": 87397
+      },
+      {
+        "name": "Just For Tonight",
+        "listeners": 28515,
+        "playcount": 66621
+      },
+      {
+        "name": "Never Let Me Go",
+        "listeners": 16991,
+        "playcount": 44465
+      },
+      {
+        "name": "Love Is Here To Stay",
+        "listeners": 16759,
+        "playcount": 44186
+      },
+      {
+        "name": "I Do It For Your Love",
+        "listeners": 15719,
+        "playcount": 43478
+      },
+      {
+        "name": "Spring Came Early",
+        "listeners": 14899,
+        "playcount": 31515
+      },
+      {
+        "name": "Summer Night",
+        "listeners": 10797,
+        "playcount": 21243
+      },
+      {
+        "name": "Thursday Afternoon",
+        "listeners": 9448,
+        "playcount": 19299
+      }
+    ],
+    "url": "https://www.last.fm/music/CMC+3"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

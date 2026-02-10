@@ -1,0 +1,189 @@
+{
+  "artist_name": "Arnar Egilsson",
+  "artist_id": "arnar_egilsson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:06:48.722197+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 228145005,
+    "name": "Arnar Egilsson",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/228145005",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8b120aa9aa7dc2206b68db23be171023/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Figuring out",
+      "Miles High"
+    ],
+    "track_durations": [
+      132,
+      137
+    ],
+    "track_ranks": [
+      46383,
+      7840
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Act Of Courtesy",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bookmark",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crescent",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Figuring out",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miles High",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dissonance",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tranquil",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Arnar Egilsson",
+    "mbid": "",
+    "listeners": 22537,
+    "playcount": 65720,
+    "listener_play_ratio": 2.92,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Arnar+Egilsson\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rhyaene",
+      "Aiden Archer",
+      "Veldas",
+      "Seijaku",
+      "Selren"
+    ],
+    "top_tracks": [
+      {
+        "name": "Crescent",
+        "listeners": 13976,
+        "playcount": 30197
+      },
+      {
+        "name": "Miles High",
+        "listeners": 12125,
+        "playcount": 28465
+      },
+      {
+        "name": "Act Of Courtesy",
+        "listeners": 2386,
+        "playcount": 3594
+      },
+      {
+        "name": "Bookmark",
+        "listeners": 1036,
+        "playcount": 1626
+      },
+      {
+        "name": "Figuring out",
+        "listeners": 858,
+        "playcount": 1835
+      },
+      {
+        "name": "Tranquil",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Floating",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Arnar+Egilsson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

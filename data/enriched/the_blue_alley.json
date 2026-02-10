@@ -1,0 +1,183 @@
+{
+  "artist_name": "The Blue Alley",
+  "artist_id": "the_blue_alley",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:31:14.413100+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 351385102,
+    "name": "The Blue Alley",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/351385102",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6a843e293f5cbe255f367dfc1e7ae676/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Steps in the Rain",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Traces Of You",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beaming Christmas",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deck the Halls",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Night, Holy Night",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4777567,
+    "name": "The Kilborn Alley Blues Band",
+    "profile": "American blues band",
+    "realname": "",
+    "social_urls": [
+      "http://www.kilbornalley.com/",
+      "https://de-de.facebook.com/kilbornalley/",
+      "http://andrewduncanson.com"
+    ],
+    "members": [
+      "Chris Breen (2)",
+      "Ed O'Hara (2)",
+      "Andrew Duncanson",
+      "Josh Stimmel"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 11,
+    "digital_only_releases": 0,
+    "total_releases": 11,
+    "formats": [
+      "2xCD, Comp, Ltd",
+      "CD",
+      "CD, Album",
+      "CD, Comp, Promo, Smplr"
+    ],
+    "labels": [
+      "Blue Bella Records",
+      "Bonedog Records",
+      "Peedee Records",
+      "Run It Back Records",
+      "Soul Bag (2)",
+      "Torburg Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Blue Alley",
+    "mbid": "",
+    "listeners": 7694,
+    "playcount": 12691,
+    "listener_play_ratio": 1.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Blue+Alley\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "New Dawn Jazz Trio",
+      "Trio Lexington",
+      "Season's Greetings",
+      "The Late Set",
+      "The Belgrave Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Deck the Halls",
+        "listeners": 6208,
+        "playcount": 10210
+      },
+      {
+        "name": "Steps in the Rain",
+        "listeners": 880,
+        "playcount": 1073
+      },
+      {
+        "name": "Chicago",
+        "listeners": 707,
+        "playcount": 1257
+      },
+      {
+        "name": "Silent Night, Holy Night",
+        "listeners": 110,
+        "playcount": 127
+      },
+      {
+        "name": "Beaming Christmas",
+        "listeners": 19,
+        "playcount": 24
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Blue+Alley"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

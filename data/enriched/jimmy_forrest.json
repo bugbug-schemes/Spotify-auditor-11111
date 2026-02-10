@@ -1,0 +1,491 @@
+{
+  "artist_name": "Jimmy Forrest",
+  "artist_id": "jimmy_forrest",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:28:48.125411+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4e1f405d-1a77-4e67-8523-6dd16d8c2b18",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1920-01-24",
+    "end_date": "1980-08-26",
+    "gender": "male",
+    "genres": [
+      "hard bop",
+      "jazz"
+    ],
+    "aliases": [
+      "James Robert Forrest",
+      "Jimmy Forest"
+    ],
+    "isnis": [
+      "000000005933644X"
+    ],
+    "ipis": [
+      "00010550049",
+      "00196829510"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000354769",
+      "discogs": "https://www.discogs.com/artist/272656",
+      "IMDb": "https://www.imdb.com/name/nm0286654/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no91009721",
+      "VIAF": "http://viaf.org/viaf/2667173",
+      "wikidata": "https://www.wikidata.org/wiki/Q961070"
+    },
+    "labels": [
+      "Avid Jazz",
+      "Analogue Productions",
+      "United",
+      "Muse Records",
+      "Prestige",
+      "Esquire Records",
+      "Original Jazz Classics",
+      "77 Records",
+      "New Jazz",
+      "Delmark Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 196796,
+    "name": "Jimmy Forrest",
+    "nb_fan": 221,
+    "nb_album": 16,
+    "link": "https://www.deezer.com/artist/196796",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bd6d5483a37951e982f33d14602238f4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Buck Clayton",
+      "Harry \"Sweets\" Edison",
+      "Harry Edison",
+      "King Curtis",
+      "Marvin Berry",
+      "Oliver Nelson",
+      "The Starlighters"
+    ],
+    "contributor_roles": {
+      "Oliver Nelson": [
+        "Main"
+      ],
+      "Marvin Berry": [
+        "Main"
+      ],
+      "The Starlighters": [
+        "Featured"
+      ],
+      "King Curtis": [
+        "Main"
+      ],
+      "Harry Edison": [
+        "Main"
+      ],
+      "Buck Clayton": [
+        "Main"
+      ],
+      "Harry \"Sweets\" Edison": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Bolo Blues",
+      "That's All",
+      "Anacruses",
+      "Night Train (From “Back To The Future” Soundtrack)",
+      "Misty",
+      "Come With Me",
+      "That's All",
+      "Blues At The Five Spot",
+      "Blues For M.F. (Mort Fega)",
+      "Matilda",
+      "Pussy Willow"
+    ],
+    "track_durations": [
+      249,
+      292,
+      342,
+      135,
+      167,
+      351,
+      294,
+      340,
+      574,
+      286,
+      451
+    ],
+    "track_ranks": [
+      46453,
+      22869,
+      16032,
+      106104,
+      18515,
+      2757,
+      3424,
+      23614,
+      40609,
+      32963,
+      18636
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 15,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Misty Noir, Vol. 17 - Late Night Jazz",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Soulful Tenor Sax - Blues Grooves & Jazz Classics",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The St. Louis Saxophone",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anthology: The Definitive Selection (Remastered)",
+        "label": "",
+        "release_date": "2021-08-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Black Forrest",
+        "label": "",
+        "release_date": "2017-07-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Our Delight",
+        "label": "",
+        "release_date": "2006-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Night Train",
+        "label": "",
+        "release_date": "1990-07-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Soul Street",
+        "label": "",
+        "release_date": "2014-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "All the Gin Is Gone",
+        "label": "",
+        "release_date": "2015-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Soul Battle (Remastered 1992)",
+        "label": "",
+        "release_date": "2019-02-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Presenting Jimmy Forrest",
+        "label": "",
+        "release_date": "1961-12-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Out Of The Forrest",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Most Much!",
+        "label": "",
+        "release_date": "2017-07-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sit Down And Relax With Jimmy Forrest",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forrest Fire",
+        "label": "",
+        "release_date": "2016-04-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Night Train Revisited",
+        "label": "",
+        "release_date": "1999-07-20",
+        "nb_tracks": 0,
+        "type": "compile"
+      }
+    ],
+    "related_artists": [
+      "Chet Baker",
+      "Bill Evans",
+      "Wynton Marsalis",
+      "McCoy Tyner",
+      "Dexter Gordon",
+      "Benny Golson",
+      "Scott Hamilton",
+      "Duke Ellington",
+      "Cannonball Adderley",
+      "Hank Mobley"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 272656,
+    "name": "Jimmy Forrest",
+    "profile": "American jazz saxophonist (tenor) and composer.\r\nBorn : January 24, 1920 in St. Louis, Missouri.\r\nDied : August 26, 1980 in Grand Rapids, Michigan\r\n\r\nWorked with : Eddie Johnson (pianist), Fate Marable, Don Albert, Jay McShann, Andy Kirk, Duke Ellington, Harry \"Sweets\" Edison, Count Basie, Al Grey and many others. His best known composition was 'Night Train', composed with [a=Lewis Simpkins] and [a=Oscar Washington].\r\n\r\nAt the time of his death, Forrest and Al Grey were the leaders of the [a2009728].\r\n\r\n",
+    "realname": "James Robert Forrest",
+    "social_urls": [
+      "https://adp.library.ucsb.edu/names/203331"
+    ],
+    "members": [],
+    "groups": [
+      "Count Basie Orchestra",
+      "Andy Kirk And His Orchestra",
+      "The Jimmy Forrest Quintet",
+      "The Mainstream Sextet",
+      "The Harry \"Sweets\" Edison Quintet",
+      "The Prestige Blues-Swingers",
+      "Al Grey Jazz All Stars",
+      "Al Grey / Jimmy Forrest",
+      "Jo Jones And His Orchestra",
+      "Jimmy Forrest And His All Star Combo",
+      "Jo Jones Sextet",
+      "Jimmy Forrest Orchestra",
+      "The Al Grey – Jimmy Forrest Quintet"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 53,
+    "digital_only_releases": 47,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, MP3, 320",
+      "11xFile, FLAC, Album",
+      "12xCD, Comp, Mono, Box",
+      "2xCD, Album, Comp",
+      "2xCD, Comp",
+      "2xCD, Comp, RE",
+      "2xCD, Comp, RM",
+      "2xCDr, Comp",
+      "2xLP, Comp",
+      "3xCD, Album, Comp, Sli",
+      "3xCD, Comp",
+      "3xCD, Comp, RM",
+      "4xCD, Comp, Dlx, RM, Dig",
+      "5xCD, Comp, RM",
+      "7\"",
+      "7\", Single",
+      "7\", Single, Pin",
+      "Box, Comp + 10xCD, Comp, RE",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, RE, RM + CD, Album, RE, RM + CD, RM + C",
+      "CD, Album, RE, RM + CD, Comp",
+      "CD, Comp",
+      "CD, Comp, Mono",
+      "CD, Comp, RE, RM",
+      "LP, Album",
+      "LP, Album, Ltd",
+      "LP, Album, S/Edition, Red",
+      "LP, Comp",
+      "LP, Comp, RM",
+      "LP, RSD, Comp"
+    ],
+    "labels": [
+      "Acoustic Music Records",
+      "Acrobat",
+      "Acrobat Music",
+      "American Jazz Classics",
+      "Avid Jazz",
+      "Avid Rock N Roll",
+      "BIG Blue Records (3)",
+      "Bellaphon, Golden Masterworks",
+      "Big3",
+      "Black And Blue",
+      "C+H Record Hollywood, C+H Records Hollywood",
+      "Cherry Red, New Ralph Too, MVD Audio",
+      "Cleophone Records",
+      "Doctor Bird",
+      "Flip Records (21)",
+      "Fresh Sound Records",
+      "Gonzo Multimedia",
+      "Greyforrest Records",
+      "Groove Hut Records",
+      "Hoodoo Records",
+      "Jazz Vogue",
+      "Koko Mojo Records",
+      "Manifesto (2)",
+      "Musica Jazz",
+      "Música Insólita",
+      "Nacarat Prod",
+      "Nagel Heyer Records",
+      "New Continent",
+      "Not Now Music",
+      "Not On Label",
+      "Not On Label (Jive Sharks Self-released)",
+      "Not On Label (Mosabacka Big Band Self-released)",
+      "Omnibus Records",
+      "Polskie Radio",
+      "Prestige",
+      "Real Gone Jazz",
+      "Repertoire Records (UK) Ltd",
+      "Rhino Records (2)",
+      "Rhythm & Blues Records",
+      "Stunt Records",
+      "Summit Records (3)",
+      "The Intense Media, Documents",
+      "Tipitina's Record Club",
+      "United (2)",
+      "Universal Music",
+      "Universal Music Belgium",
+      "VLMedia",
+      "Walt Disney Records, Walt Disney Records, Walt Disney Records",
+      "Wolf Records (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jimmy Forrest",
+    "mbid": "4e1f405d-1a77-4e67-8523-6dd16d8c2b18",
+    "listeners": 39716,
+    "playcount": 150660,
+    "listener_play_ratio": 3.79,
+    "bio_exists": true,
+    "bio_summary": "Jimmy Robert Forrest Jr. (January 24, 1920 - August 26, 1980) was a jazz musician who played tenor saxophone throughout his career.\n\nHe is famous for his first solo recording of \"Night Train\", with its irresistible hook and classic tenor solo. He recorded frequently as both a side man and a leader. \"Night Train\" reached # 1 on the R&B charts in March 1952, and stayed at the top for seven weeks. \"Hey Mrs. Jones\" (# 3 R&B) and \"Bolo Blues\" were his other major hits. <a href=\"https://www.last.fm/mu",
+    "tags": [
+      "jazz",
+      "saxophone",
+      "rhythm and blues",
+      "swing",
+      "All"
+    ],
+    "similar_artists": [
+      "Sonny Stitt",
+      "Hank Mobley",
+      "Harold Land",
+      "Coleman Hawkins",
+      "Lou Donaldson"
+    ],
+    "top_tracks": [
+      {
+        "name": "That's All",
+        "listeners": 24625,
+        "playcount": 75311
+      },
+      {
+        "name": "Night Train",
+        "listeners": 6874,
+        "playcount": 18181
+      },
+      {
+        "name": "Bolo Blues",
+        "listeners": 5092,
+        "playcount": 10845
+      },
+      {
+        "name": "That's All - Alternate Version",
+        "listeners": 2022,
+        "playcount": 3950
+      },
+      {
+        "name": "By the River Sainte Marie",
+        "listeners": 1392,
+        "playcount": 4709
+      },
+      {
+        "name": "This Can't Be Love",
+        "listeners": 1140,
+        "playcount": 2835
+      },
+      {
+        "name": "I've Got a Right to Cry",
+        "listeners": 762,
+        "playcount": 2466
+      },
+      {
+        "name": "Yesterdays",
+        "listeners": 644,
+        "playcount": 1374
+      },
+      {
+        "name": "I Cried for You (Now It's Your Turn to Cry Over Me)",
+        "listeners": 603,
+        "playcount": 1249
+      },
+      {
+        "name": "You Go to My Head",
+        "listeners": 577,
+        "playcount": 1769
+      }
+    ],
+    "url": "https://www.last.fm/music/Jimmy+Forrest"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

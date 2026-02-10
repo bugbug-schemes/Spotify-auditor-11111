@@ -1,0 +1,168 @@
+{
+  "artist_name": "Shiftshapers",
+  "artist_id": "shiftshapers",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:00:50.464747+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 164574367,
+    "name": "Shiftshapers",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/164574367",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3521cc31ca8b0b5892b7d4f8828a0c66/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Calmia Verde",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floraine",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dysgravitational",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gravitational",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Keep Close",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emberly",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Natural Adorance",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Shiftshapers",
+    "mbid": "",
+    "listeners": 608,
+    "playcount": 1983,
+    "listener_play_ratio": 3.26,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Shiftshapers\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Brave Olgot",
+      "Rothko Field",
+      "Yusuf Jarovski",
+      "Elysian Woods",
+      "Dwaci Phun"
+    ],
+    "top_tracks": [
+      {
+        "name": "Calmia Verde",
+        "listeners": 270,
+        "playcount": 439
+      },
+      {
+        "name": "Floraine",
+        "listeners": 193,
+        "playcount": 806
+      },
+      {
+        "name": "Gravitational",
+        "listeners": 77,
+        "playcount": 516
+      },
+      {
+        "name": "Natural Adorance - Surround",
+        "listeners": 55,
+        "playcount": 144
+      },
+      {
+        "name": "Emberly",
+        "listeners": 32,
+        "playcount": 75
+      },
+      {
+        "name": "Incredible",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Shiftshapers"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

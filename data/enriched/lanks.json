@@ -1,0 +1,522 @@
+{
+  "artist_name": "LANKS",
+  "artist_id": "lanks",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:54:10.336087+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a7d2a666-b768-48a6-b1ba-9bb9e48af172",
+    "type": "Person",
+    "country": "AU",
+    "area": "Australia",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000503345474"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/4422289",
+      "free streaming": "https://open.spotify.com/artist/6f5yObGSpFj9eJL55GBzrb",
+      "lyrics": "https://genius.com/artists/Lanks",
+      "purchase for download": "https://www.beatport.com/artist/lanks/605237",
+      "social network": "https://www.instagram.com/lanksmusic/",
+      "soundcloud": "https://soundcloud.com/lanksmusic",
+      "streaming": "https://tidal.com/artist/5401173"
+    },
+    "labels": [
+      "Lowly.",
+      "THAA Records",
+      "[no label]",
+      "This Never Happened"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5498721,
+    "name": "Lanks",
+    "nb_fan": 1040,
+    "nb_album": 33,
+    "link": "https://www.deezer.com/artist/5498721",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1ffb889aedbf03bbccc0e87f143792e1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Airling",
+      "Dirty South",
+      "JANEVA",
+      "Nick Hill",
+      "Sultan + Shepard",
+      "Tia Gostelow"
+    ],
+    "contributor_roles": {
+      "Sultan + Shepard": [
+        "Main"
+      ],
+      "Dirty South": [
+        "Featured"
+      ],
+      "Nick Hill": [
+        "Main"
+      ],
+      "JANEVA": [
+        "Featured"
+      ],
+      "Airling": [
+        "Featured"
+      ],
+      "Tia Gostelow": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Highest Love",
+      "Hold Me Closer",
+      "Bitter Leaf",
+      "Highest Love (ABGT578) (Dirty South Remix Mixed)",
+      "Rear View",
+      "Floating",
+      "Cold Blood",
+      "Rebound",
+      "Aurelia",
+      "April",
+      "Highest Love (ABGT567) (Mixed)",
+      "Stronger Than",
+      "Beach Houses",
+      "Strangers",
+      "Man",
+      "Spiritual Man",
+      "Brothers of the Mountain"
+    ],
+    "track_durations": [
+      297,
+      223,
+      190,
+      255,
+      235,
+      211,
+      236,
+      242,
+      244,
+      220,
+      309,
+      217,
+      194,
+      182,
+      256,
+      180,
+      279
+    ],
+    "track_ranks": [
+      275451,
+      116806,
+      194947,
+      13232,
+      309245,
+      32646,
+      31394,
+      90490,
+      92775,
+      53882,
+      38718,
+      160768,
+      111365,
+      108123,
+      8541,
+      78522,
+      66850
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 5,
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "SPIRITS PT.2",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "SPIRITS PT.1",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "twentyseven",
+        "label": "",
+        "release_date": "2018-04-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Highest Love",
+        "label": "",
+        "release_date": "2024-02-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Inoue",
+        "label": "",
+        "release_date": "2018-11-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Viet Rose",
+        "label": "",
+        "release_date": "2016-10-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Banquet EP",
+        "label": "",
+        "release_date": "2015-07-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Thousand Piece Puzzle",
+        "label": "",
+        "release_date": "2014-06-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Highest Love (Dirty South Remix)",
+        "label": "",
+        "release_date": "2024-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating",
+        "label": "",
+        "release_date": "2023-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i can't sleep",
+        "label": "",
+        "release_date": "2022-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All My Love (LANKS Remix)",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cold Blood",
+        "label": "",
+        "release_date": "2021-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "KING",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Embrace",
+        "label": "",
+        "release_date": "2020-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'd Do It All Again",
+        "label": "",
+        "release_date": "2020-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ghost",
+        "label": "",
+        "release_date": "2020-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sirens",
+        "label": "",
+        "release_date": "2020-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rebound",
+        "label": "",
+        "release_date": "2020-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spiritual Man",
+        "label": "",
+        "release_date": "2018-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yours",
+        "label": "",
+        "release_date": "2018-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Numb (triple j Like a Version)",
+        "label": "",
+        "release_date": "2018-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "twentyseven",
+        "label": "",
+        "release_date": "2018-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Own Mystery",
+        "label": "",
+        "release_date": "2017-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Comfortable",
+        "label": "",
+        "release_date": "2017-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Own Mystery (Chill Flip)",
+        "label": "",
+        "release_date": "2017-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "10/10",
+        "label": "",
+        "release_date": "2016-07-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holla",
+        "label": "",
+        "release_date": "2016-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bitter Leaf",
+        "label": "",
+        "release_date": "2016-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold Me Closer",
+        "label": "",
+        "release_date": "2015-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Mansionair",
+      "LAUREL",
+      "Tash Sultana",
+      "Ta-Ku",
+      "Cub Sport",
+      "Kimbra",
+      "Hein Cooper",
+      "TENDER",
+      "Felivand",
+      "Angus & Julia Stone"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4422289,
+    "name": "Lanks",
+    "profile": "LANKS is the solo project of Australian artist / writer / producer, Will Cuming.",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/lanksmusic/?fref=mentions"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 14,
+    "digital_only_releases": 10,
+    "total_releases": 24,
+    "formats": [
+      "",
+      "10xFile, MP3, Comp, 320",
+      "2xCD, Comp, Mixed",
+      "2xLP, Album, Comp, Ltd",
+      "2xLP, Album, Gre + 2xLP, Album, Blu + 2xLP, Album,",
+      "2xLP, Album, Tan",
+      "3xCD, Comp, Mixed",
+      "3xFile, MP3, Single, 320",
+      "6xFile, MP3, EP, 320",
+      "7\"",
+      "7\", Yel + 7\", Whi + 3x7\" + Box, Club",
+      "CD, Comp",
+      "CD, EP",
+      "CD, Single",
+      "CDr, Comp",
+      "CDr, MiniAlbum, Promo",
+      "File, MP3, Single, 320"
+    ],
+    "labels": [
+      "Flying Vinyl (2), Chess Club, Earache, PNKSLM, Beyond The Frequency",
+      "Mercedes-Benz",
+      "Ministry Of Sound",
+      "Not On Label",
+      "Not On Label (Lanks Self-released)",
+      "Not On Label (Woodes Self-released)",
+      "THAA Records",
+      "This Never Happened",
+      "Triple J",
+      "Triple J, ABC Music, Universal Music",
+      "etcetc"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lanks",
+    "mbid": "",
+    "listeners": 86507,
+    "playcount": 631281,
+    "listener_play_ratio": 7.3,
+    "bio_exists": true,
+    "bio_summary": "Lanks is the enigmatic solo electronic project of Melbourne musician, Will Cuming.\n\nWhile continuing to front his seven-piece band Farrow, Lanks is a mature new side project that has allowed him to play freely with traditional folk storytelling in the modern framework of electronic music; taking parts from Radiohead’s intricate grooves, Bon Iver’s vocal layering and Jamie XX’s famed dead space.\n\nHis debut EP is a collection of songs that rises and falls in pictures and words <a href=\"https://www",
+    "tags": [
+      "australian",
+      "electronic",
+      "indie",
+      "pop",
+      "indietronica"
+    ],
+    "similar_artists": [
+      "Mansionair",
+      "Hayden James",
+      "Fyfe",
+      "Crooked Colours",
+      "Kllo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stronger Than",
+        "listeners": 18908,
+        "playcount": 81841
+      },
+      {
+        "name": "Bitter Leaf",
+        "listeners": 12937,
+        "playcount": 57348
+      },
+      {
+        "name": "Spiritual Man",
+        "listeners": 12192,
+        "playcount": 63715
+      },
+      {
+        "name": "Golden Age",
+        "listeners": 10209,
+        "playcount": 27055
+      },
+      {
+        "name": "Hold Me Closer",
+        "listeners": 9678,
+        "playcount": 39103
+      },
+      {
+        "name": "Aurelia",
+        "listeners": 8356,
+        "playcount": 36050
+      },
+      {
+        "name": "Comfortable",
+        "listeners": 6180,
+        "playcount": 27675
+      },
+      {
+        "name": "Beach Houses",
+        "listeners": 6111,
+        "playcount": 17150
+      },
+      {
+        "name": "Holla",
+        "listeners": 5592,
+        "playcount": 23015
+      },
+      {
+        "name": "Rebound",
+        "listeners": 4438,
+        "playcount": 18874
+      }
+    ],
+    "url": "https://www.last.fm/music/Lanks"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

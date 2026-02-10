@@ -1,0 +1,358 @@
+{
+  "artist_name": "Ryder Quartet",
+  "artist_id": "ryder_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:49:52.993365+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "779a4e51-69cd-4ffc-9f9f-142e793b2fd2",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/195659567",
+      "purchase for download": "https://music.apple.com/us/artist/1662379546",
+      "soundcloud": "https://soundcloud.com/ryderquartet",
+      "streaming": "https://tidal.com/artist/36483750",
+      "youtube music": "https://music.youtube.com/channel/UCYVKPhhRDjm8y6lrcnjm9DQ"
+    },
+    "labels": [
+      "Chill Tone"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 195659567,
+    "name": "Ryder Quartet",
+    "nb_fan": 1,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/195659567",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9f0551105a1be8b9258ecf6b80ab3a38/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Way of the Winds",
+      "All That's Left Is A Song",
+      "Little Saint Nick",
+      "Suzy Snowflake"
+    ],
+    "track_durations": [
+      233,
+      165,
+      161,
+      190
+    ],
+    "track_ranks": [
+      72093,
+      33029,
+      63897,
+      55323
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Up on the Housetop",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh Holy Night",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One More Day",
+        "label": "",
+        "release_date": "2025-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vibrant Horizons",
+        "label": "",
+        "release_date": "2025-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drifting",
+        "label": "",
+        "release_date": "2025-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meet Cute",
+        "label": "",
+        "release_date": "2025-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Only For You",
+        "label": "",
+        "release_date": "2025-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Innocence",
+        "label": "",
+        "release_date": "2025-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Pidgeons",
+        "label": "",
+        "release_date": "2025-05-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Infinite Paths",
+        "label": "",
+        "release_date": "2025-04-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Saint Nick",
+        "label": "",
+        "release_date": "2024-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Merry Christmas",
+        "label": "",
+        "release_date": "2024-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Suzy Snowflake",
+        "label": "",
+        "release_date": "2024-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers In Velvet",
+        "label": "",
+        "release_date": "2024-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Our Time Together",
+        "label": "",
+        "release_date": "2024-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glowing Embrace",
+        "label": "",
+        "release_date": "2024-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ol' Pal Li",
+        "label": "",
+        "release_date": "2024-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All That's Left Is A Song",
+        "label": "",
+        "release_date": "2023-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holly Jolly Christmas",
+        "label": "",
+        "release_date": "2023-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marta's Way",
+        "label": "",
+        "release_date": "2023-07-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mindful in Solitude",
+        "label": "",
+        "release_date": "2023-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mindful in Solitude",
+        "label": "",
+        "release_date": "2023-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somewhere Only We Go",
+        "label": "",
+        "release_date": "2023-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 17051842,
+    "name": "Ryder Quartet",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP"
+    ],
+    "labels": [
+      "Chill Tone Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ryder Quartet",
+    "mbid": "779a4e51-69cd-4ffc-9f9f-142e793b2fd2",
+    "listeners": 64797,
+    "playcount": 233544,
+    "listener_play_ratio": 3.6,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ryder+Quartet\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Charlie James-Walker",
+      "Holborns",
+      "Flatland Park",
+      "The Mill Basin Band",
+      "Irvin Smith"
+    ],
+    "top_tracks": [
+      {
+        "name": "Suzy Snowflake",
+        "listeners": 37140,
+        "playcount": 81021
+      },
+      {
+        "name": "Little Saint Nick",
+        "listeners": 32676,
+        "playcount": 67010
+      },
+      {
+        "name": "Only in Whispers",
+        "listeners": 11062,
+        "playcount": 23244
+      },
+      {
+        "name": "Walk With Me",
+        "listeners": 7163,
+        "playcount": 14018
+      },
+      {
+        "name": "The Way of the Winds",
+        "listeners": 6359,
+        "playcount": 13067
+      },
+      {
+        "name": "Somewhere Only We Go",
+        "listeners": 4515,
+        "playcount": 10567
+      },
+      {
+        "name": "All That's Left Is A Song",
+        "listeners": 3153,
+        "playcount": 6225
+      },
+      {
+        "name": "Another Consciousness",
+        "listeners": 2426,
+        "playcount": 4377
+      },
+      {
+        "name": "Mindful in Solitude",
+        "listeners": 1867,
+        "playcount": 4118
+      },
+      {
+        "name": "Whispers In Velvet",
+        "listeners": 704,
+        "playcount": 1511
+      }
+    ],
+    "url": "https://www.last.fm/music/Ryder+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

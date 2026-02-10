@@ -1,0 +1,138 @@
+{
+  "artist_name": "Sassani",
+  "artist_id": "sassani",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:55:21.669448+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sassani', got 'SASAMI'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6949677,
+    "name": "Sassani",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "45xFile, MP3, Comp, 320"
+    ],
+    "labels": [
+      "Cian Orbe Netlabel"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sassani",
+    "mbid": "",
+    "listeners": 4921,
+    "playcount": 14840,
+    "listener_play_ratio": 3.02,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sassani\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sun Pixel",
+      "Waterfalls Overtune",
+      "Carlo Cipriani",
+      "Oren Vail",
+      "Amethyst Nimue"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Alpha Focus (104-112 Hz)",
+        "listeners": 1777,
+        "playcount": 4312
+      },
+      {
+        "name": "Night Visions",
+        "listeners": 1694,
+        "playcount": 5139
+      },
+      {
+        "name": "Sleeping Pines",
+        "listeners": 1113,
+        "playcount": 2884
+      },
+      {
+        "name": "Binaural Alpha Focus (119-127 Hz)",
+        "listeners": 709,
+        "playcount": 1690
+      },
+      {
+        "name": "Breathe And Let Go",
+        "listeners": 322,
+        "playcount": 671
+      },
+      {
+        "name": "Into The Heart",
+        "listeners": 44,
+        "playcount": 61
+      },
+      {
+        "name": "Spaced Out (the track)",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Binaural Alpha Focus (120-128 Hz Ocean Waves)",
+        "listeners": 1,
+        "playcount": 79
+      },
+      {
+        "name": "Journey",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Flowing Serenity",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sassani"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

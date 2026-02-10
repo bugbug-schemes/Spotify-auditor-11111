@@ -1,0 +1,410 @@
+{
+  "artist_name": "Ben Lively",
+  "artist_id": "ben_lively",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:34:15.251575+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8706f31c-86ed-4bf6-9d12-0463e798c015",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/15025939",
+      "purchase for download": "https://music.apple.com/us/artist/347247209",
+      "soundcloud": "https://soundcloud.com/benlively-music",
+      "streaming": "https://tidal.com/artist/11416673",
+      "youtube music": "https://music.youtube.com/channel/UCsfktn6dr_rswpWE2lG2CVQ"
+    },
+    "labels": [
+      "Calm Lands Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 15025939,
+    "name": "Ben Lively",
+    "nb_fan": 14,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/15025939",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/891c6d05ed22278acb8e7d3682fe0f97/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Numerous Occasions",
+      "Old Georgie",
+      "Up In Town",
+      "Out Of Shape",
+      "Kept running"
+    ],
+    "track_durations": [
+      211,
+      182,
+      257,
+      205,
+      164
+    ],
+    "track_ranks": [
+      108244,
+      104759,
+      31949,
+      48679,
+      131539
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 1,
+      "single": 26
+    },
+    "albums": [
+      {
+        "title": "Dealing Cards",
+        "label": "",
+        "release_date": "2024-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "What Is and What Isn't",
+        "label": "",
+        "release_date": "2013-11-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Intentions",
+        "label": "",
+        "release_date": "2020-09-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Out Of Shape",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Her lovely hand",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Next Weekend",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Safe to question",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before She Leaves",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The world behind",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The breaking",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Voicemail",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carrot Nose",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mandela Effect",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ink Ribbon",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My True Love",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For A Few Moments",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time to return",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Up In Town",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A little list",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Havana",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Distracting Myself",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "End of the room",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get Off A Sauce",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kept running",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old Georgie",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Numerous Occasions",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's so darn hot",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dipping Birds",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "But Beautiful",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1693612,
+    "name": "Ben Lively",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 2,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "CD, Album",
+      "LP, Album, Sil"
+    ],
+    "labels": [
+      "Not On Label",
+      "Not On Label (Zac Clark Self-released)",
+      "Projekt",
+      "Skylark Sounds"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ben Lively",
+    "mbid": "8706f31c-86ed-4bf6-9d12-0463e798c015",
+    "listeners": 67636,
+    "playcount": 228643,
+    "listener_play_ratio": 3.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ben+Lively\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Tore Lundblad",
+      "Marc Henley Trio",
+      "Songbird Trio",
+      "The Lyon Hearts",
+      "The Blue Green"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dipping Birds",
+        "listeners": 27816,
+        "playcount": 66757
+      },
+      {
+        "name": "Numerous Occasions",
+        "listeners": 23969,
+        "playcount": 55465
+      },
+      {
+        "name": "Ink Ribbon",
+        "listeners": 17756,
+        "playcount": 33939
+      },
+      {
+        "name": "Old Georgie",
+        "listeners": 12723,
+        "playcount": 26870
+      },
+      {
+        "name": "Kept running",
+        "listeners": 6242,
+        "playcount": 14557
+      },
+      {
+        "name": "Little Havana",
+        "listeners": 4987,
+        "playcount": 9177
+      },
+      {
+        "name": "Out Of Shape",
+        "listeners": 3028,
+        "playcount": 5017
+      },
+      {
+        "name": "Distracting Myself",
+        "listeners": 2710,
+        "playcount": 6362
+      },
+      {
+        "name": "Up In Town",
+        "listeners": 2590,
+        "playcount": 5167
+      },
+      {
+        "name": "For A Few Moments",
+        "listeners": 1899,
+        "playcount": 4197
+      }
+    ],
+    "url": "https://www.last.fm/music/Ben+Lively"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,141 @@
+{
+  "artist_name": "Mio Niño",
+  "artist_id": "mio_niño",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:45:30.396456+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mio Niño', got 'nimino'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6889438,
+    "name": "Ricardo Guzmán (3)",
+    "profile": "Ricardo Guzmán, was his stage name, his real name was Néstor Gustavo Núñez, he was born in the neighborhood of Floresta on June 10, 1941 and he died on September 20, 1987, he acted in great tango values and in the channel 9 special. , on circular Saturdays of channel 13 and radio programs. Some of his themes: Viejo Mío, Pato, Niño Bien, El último café, Quien Soy, Taconeando, etc, etc, in synthesis a great singer, who fought for the tango in times of the new wave.\r\n\r\nA true fighter, a man of tango resistance in the hardest moments in the development of our popular music. Together with Rubén Juárez, Rodolfo Lesica, Miguel Montero, they set up a front that continued to fight here, before going to other places taking advantage of the routes opened by other musicians and singers. Guzmán fought with nails and teeth for the performance of shows and to sing what he loved and liked. Together with his wife Cristina Conde, who rescued from the New Wave to make her sing Tangos, they toured all Lat",
+    "realname": "Néstor Gustavo Núñez",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "LP, Album",
+      "LP, Album, Mono"
+    ],
+    "labels": [
+      "Fonoral",
+      "Polydor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mio Niño",
+    "mbid": "",
+    "listeners": 3532,
+    "playcount": 75804,
+    "listener_play_ratio": 21.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mio+Ni%C3%B1o\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Marlene Soeren",
+      "Mylène Longet",
+      "Eijah Nilson",
+      "Little Mishka",
+      "Baby Queenie"
+    ],
+    "top_tracks": [
+      {
+        "name": "My Everything",
+        "listeners": 2117,
+        "playcount": 21580
+      },
+      {
+        "name": "The Magic Elephant",
+        "listeners": 1908,
+        "playcount": 19340
+      },
+      {
+        "name": "The Sun And The Moon",
+        "listeners": 1776,
+        "playcount": 17568
+      },
+      {
+        "name": "Mysteries",
+        "listeners": 528,
+        "playcount": 7211
+      },
+      {
+        "name": "Always With Me",
+        "listeners": 391,
+        "playcount": 4992
+      },
+      {
+        "name": "The Nightsong",
+        "listeners": 327,
+        "playcount": 4016
+      },
+      {
+        "name": "Like A Waterfall",
+        "listeners": 147,
+        "playcount": 275
+      },
+      {
+        "name": "Baby Steps",
+        "listeners": 110,
+        "playcount": 302
+      },
+      {
+        "name": "Never Ending",
+        "listeners": 63,
+        "playcount": 97
+      },
+      {
+        "name": "Hush My Little Child",
+        "listeners": 51,
+        "playcount": 142
+      }
+    ],
+    "url": "https://www.last.fm/music/Mio+Ni%C3%B1o"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,163 @@
+{
+  "artist_name": "Stace Brinorma",
+  "artist_id": "stace_brinorma",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:16:21.237844+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 286492231,
+    "name": "Stace Brinorma",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/286492231",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a77d1259be51646eab33a32be2cbb960/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "The Things We Left",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Poet's Heart",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Constant Flow",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sérénité",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Next To The Sea",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Guardafaro",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Stace Brinorma",
+    "mbid": "",
+    "listeners": 16733,
+    "playcount": 50185,
+    "listener_play_ratio": 3.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Stace+Brinorma\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Claude Leon",
+      "Emilio Abruzzo",
+      "Elois Jacq",
+      "Nazomi",
+      "Seren Rhys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Constant Flow",
+        "listeners": 7465,
+        "playcount": 15379
+      },
+      {
+        "name": "Guardafaro",
+        "listeners": 5501,
+        "playcount": 21518
+      },
+      {
+        "name": "Sérénité",
+        "listeners": 4958,
+        "playcount": 13286
+      },
+      {
+        "name": "A Poet's Heart",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "The Things We Left",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Stace+Brinorma"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

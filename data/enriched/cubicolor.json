@@ -1,0 +1,574 @@
+{
+  "artist_name": "Cubicolor",
+  "artist_id": "cubicolor",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:17:02.249649+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4902b09a-8fd8-4413-941d-a5c9247aaa5b",
+    "type": "Group",
+    "country": "NL",
+    "area": "Netherlands",
+    "begin_date": "2014",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "deep house"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003300358",
+      "bandcamp": "https://cubicolor.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/3812211",
+      "free streaming": "https://www.deezer.com/artist/6108690",
+      "purchase for download": "https://www.junodownload.com/artists/Cubicolor/",
+      "social network": "https://www.facebook.com/cubicolor",
+      "soundcloud": "https://soundcloud.com/cubicolor",
+      "streaming": "https://tidal.com/artist/6824944",
+      "wikidata": "https://www.wikidata.org/wiki/Q56761325"
+    },
+    "labels": [
+      "Reflections",
+      "Anjunadeep",
+      "Fayer"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6108690,
+    "name": "Cubicolor",
+    "nb_fan": 3904,
+    "nb_album": 35,
+    "link": "https://www.deezer.com/artist/6108690",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d1045f870e4917e1b69cc0bb954ab8fc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Adam Port",
+      "Cephas Azariah",
+      "Patrice Bäumel",
+      "Tale Of Us",
+      "Tim Digby-Bell"
+    ],
+    "contributor_roles": {
+      "Tim Digby-Bell": [
+        "Featured"
+      ],
+      "Adam Port": [
+        "Featured"
+      ],
+      "Tale Of Us": [
+        "Featured"
+      ],
+      "Cephas Azariah": [
+        "Featured"
+      ],
+      "Patrice Bäumel": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Got This Feeling (Original Mix)",
+      "Points Beyond",
+      "Once Around",
+      "Points Beyond (Mixed)",
+      "Got This Feeling (Mixed)",
+      "Soul Chords (Original Mix)",
+      "Falling [Record Of The Week] [ABGT162] (Mixed)",
+      "Magnum (Original Mix)",
+      "Points Beyond (Mixed)",
+      "Next Planet (Original Mix)",
+      "Wake Me Up (Extended Mix)",
+      "No Dancers (Adam Port Remix)",
+      "No Dancers (Adam Port Remix)",
+      "Airbeat",
+      "Lose Your Senses",
+      "Easy Mark",
+      "Summer & Smoke",
+      "Fictionalise (Anjunadeep 08 Mix)",
+      "Rituals",
+      "Melodies",
+      "Wake Me Up (Tale Of Us Remix Mixed)",
+      "Machine Keys (Cephas Azariah Revisit Mixed)",
+      "Sometime Not Now",
+      "Dead End Thrills (Patrice Bäumel Remix)",
+      "No Dancers"
+    ],
+    "track_durations": [
+      447,
+      326,
+      222,
+      199,
+      456,
+      281,
+      370,
+      526,
+      312,
+      456,
+      332,
+      295,
+      405,
+      290,
+      388,
+      288,
+      369,
+      275,
+      305,
+      302,
+      312,
+      240,
+      256,
+      443,
+      344
+    ],
+    "track_ranks": [
+      299272,
+      331836,
+      192916,
+      65141,
+      154309,
+      126760,
+      70829,
+      68146,
+      74683,
+      37581,
+      257445,
+      159405,
+      282075,
+      106287,
+      242887,
+      42204,
+      31437,
+      116128,
+      87457,
+      40293,
+      160563,
+      61885,
+      104671,
+      97180,
+      30388
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 6,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Sometime Not Now (Remixed)",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Summer & Smoke (The Remixes)",
+        "label": "",
+        "release_date": "2023-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sometime Not Now",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hardly A Day, Hardly A Night",
+        "label": "",
+        "release_date": "2020-02-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Brainsugar",
+        "label": "",
+        "release_date": "2016-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Falling",
+        "label": "",
+        "release_date": "2016-02-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cowboy",
+        "label": "",
+        "release_date": "2022-08-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hardly A Day, Hardly A Night",
+        "label": "",
+        "release_date": "2020-01-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Down The Wall EP",
+        "label": "",
+        "release_date": "2015-08-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Magnum EP",
+        "label": "",
+        "release_date": "2015-03-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Got This Feeling EP",
+        "label": "",
+        "release_date": "2014-09-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Next Planet EP",
+        "label": "",
+        "release_date": "2014-07-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Summer & Smoke (BluePaper Remix)",
+        "label": "",
+        "release_date": "2024-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "As You Fly (16BL Remix)",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Machine Keys (Cephas Azariah Revisit)",
+        "label": "",
+        "release_date": "2023-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Know",
+        "label": "",
+        "release_date": "2022-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy Mark",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer & Smoke",
+        "label": "",
+        "release_date": "2022-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lose Your Senses",
+        "label": "",
+        "release_date": "2022-05-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wake Me Up (Tale Of Us Remix)",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rituals",
+        "label": "",
+        "release_date": "2020-05-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Melodies",
+        "label": "",
+        "release_date": "2020-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wake Me Up",
+        "label": "",
+        "release_date": "2020-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Points Beyond",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Dancers (Adam Port Remix)",
+        "label": "",
+        "release_date": "2019-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Dancers",
+        "label": "",
+        "release_date": "2018-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boxed Out",
+        "label": "",
+        "release_date": "2018-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Counterpart",
+        "label": "",
+        "release_date": "2018-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dead End Thrills (Patrice Bäumel Remix)",
+        "label": "",
+        "release_date": "2017-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fictionalise (Lindstrom & Prins Thomas Remix)",
+        "label": "",
+        "release_date": "2016-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Whomadewho",
+      "Lane 8",
+      "Monolink",
+      "Joris Voorn",
+      "Eelke Kleijn",
+      "YOTTO",
+      "Kidnap",
+      "Helsloot",
+      "Marsh",
+      "Einmusik"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3812211,
+    "name": "Cubicolor",
+    "profile": "Based in Amsterdam founded by [a=Peter Kriek], [a=Ariaan Olieroock], [a=Tim Digby-Bell]",
+    "realname": "",
+    "social_urls": [
+      "https://soundcloud.com/cubicolor",
+      "https://www.facebook.com/cubicolor",
+      "https://twitter.com/Cubicolormusic"
+    ],
+    "members": [
+      "Peter Kriek",
+      "Ariaan Olieroock",
+      "Tim Digby-Bell"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 17,
+    "digital_only_releases": 82,
+    "total_releases": 99,
+    "formats": [
+      "",
+      "12\"",
+      "12xFile, MP3, Comp, 320",
+      "13xFile, MP3, Comp, 320",
+      "15xFile, MP3, Comp, 320",
+      "18xFile, MP3, Comp, 320",
+      "19xFile, MP3, Comp, 320",
+      "20xFile, MP3, Comp, 320",
+      "20xFile, WAV, Comp",
+      "24xFile, FLAC, Comp",
+      "24xFile, MP3, Comp, 320",
+      "24xFile, MP3, Comp, 320 + 2xFile, MP3, Comp, Mixed",
+      "26xFile, MP3, Comp, Mixed, 320",
+      "2xCD, Album, Comp, Mixed",
+      "2xCD, Comp, Ltd",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Mixed, Dig",
+      "2xCD, Comp, Promo, Smplr",
+      "30xFile, ALAC, Comp, Mixed",
+      "38xFile, MP3, Comp, Mixed, 320 + 63xFile, MP3, Com",
+      "3xCD, Comp",
+      "3xCD, Comp, Mixed",
+      "3xCD, Mixed",
+      "3xFile, FLAC",
+      "3xFile, MP3, 320",
+      "3xLP, Album",
+      "40xFile, MP3, Comp, 320",
+      "40xFile, WAV, Comp",
+      "4xFile, MP3, 320",
+      "6xFile, MP3, 320",
+      "Blu-ray",
+      "File, MP3, 320",
+      "File, MP3, Unofficial, 320"
+    ],
+    "labels": [
+      "Anjunabeats",
+      "Anjunachill",
+      "Anjunadeep",
+      "Armada Digital",
+      "Armada Electronic Elements",
+      "CNR",
+      "CNR Music",
+      "Clubstar",
+      "Fayer",
+      "George V Records",
+      "Keinemusik",
+      "Kontor Records",
+      "Ministry Of Sound",
+      "Ninja Tune",
+      "Not On Label (Cubicolor Self-released)",
+      "Open Gate Records",
+      "Reflections (18)",
+      "Stereo Deluxe, Abstrait",
+      "Tomorrow Land",
+      "Toolroom Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cubicolor",
+    "mbid": "4902b09a-8fd8-4413-941d-a5c9247aaa5b",
+    "listeners": 179890,
+    "playcount": 1742275,
+    "listener_play_ratio": 9.69,
+    "bio_exists": true,
+    "bio_summary": "A powerful sense of alchemy is at the heartbeat of Cubicolor; a fusion that finds its own unique sweet spot between the intimacy of your headphones and the introspection of the dancefloor. Somewhere between a band and an electronic act, between traditional song-writing and profound levels of studio innovation, between electronica and indie.\n\nThree men can be found at the heart of this heartbeat. Ariaan, Peter and Tim. A Dutch/Anglo trio hailing from vastly diverse backgrounds <a href=\"https://ww",
+    "tags": [
+      "House",
+      "electronic",
+      "deep house",
+      "dutch",
+      "downtempo"
+    ],
+    "similar_artists": [
+      "16Bl",
+      "16 Bit Lolitas",
+      "Luttrell",
+      "Croquet Club",
+      "Jon Gurd"
+    ],
+    "top_tracks": [
+      {
+        "name": "Once Around",
+        "listeners": 37720,
+        "playcount": 134064
+      },
+      {
+        "name": "Machine Keys",
+        "listeners": 36917,
+        "playcount": 96977
+      },
+      {
+        "name": "Intro",
+        "listeners": 36863,
+        "playcount": 86371
+      },
+      {
+        "name": "Falling",
+        "listeners": 28342,
+        "playcount": 83748
+      },
+      {
+        "name": "Points Beyond",
+        "listeners": 23732,
+        "playcount": 113000
+      },
+      {
+        "name": "Down The Wall - Original Mix",
+        "listeners": 22261,
+        "playcount": 95858
+      },
+      {
+        "name": "Airbeat",
+        "listeners": 17422,
+        "playcount": 60268
+      },
+      {
+        "name": "Dead End Thrills",
+        "listeners": 15155,
+        "playcount": 49836
+      },
+      {
+        "name": "Mirror Play",
+        "listeners": 14918,
+        "playcount": 52360
+      },
+      {
+        "name": "Got This Feeling - Original Mix",
+        "listeners": 12254,
+        "playcount": 62572
+      }
+    ],
+    "url": "https://www.last.fm/music/Cubicolor"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

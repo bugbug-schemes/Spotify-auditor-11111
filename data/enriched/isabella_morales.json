@@ -1,0 +1,221 @@
+{
+  "artist_name": "Isabella Morales",
+  "artist_id": "isabella_morales",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:16:59.930015+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183908317,
+    "name": "Isabella Morales",
+    "nb_fan": 5,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/183908317",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9cd05d53965bdc2db26e2fe4c5b7a4b8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "When you were near",
+      "Dancing in the moonlight",
+      "As it was"
+    ],
+    "track_durations": [
+      160,
+      179,
+      201
+    ],
+    "track_ranks": [
+      124787,
+      251408,
+      47415
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Abrazo Prometido",
+        "label": "",
+        "release_date": "2025-12-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amor Que Acompaña",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't know why",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Dark Midwinter",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dancing in the moonlight",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Laissez-moi danser",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Young and beautiful",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My heart's unrest",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rediscovered",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Rain",
+        "label": "",
+        "release_date": "2021-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Isabella Morales",
+    "mbid": "",
+    "listeners": 27946,
+    "playcount": 142536,
+    "listener_play_ratio": 5.1,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Isabella+Morales\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lotus Laverne",
+      "Genevieve Melton",
+      "Oliver Peasley",
+      "Isaac Cassidy",
+      "Joseph Vaux"
+    ],
+    "top_tracks": [
+      {
+        "name": "When you were near",
+        "listeners": 24000,
+        "playcount": 126441
+      },
+      {
+        "name": "As it was",
+        "listeners": 2330,
+        "playcount": 7337
+      },
+      {
+        "name": "Dancing in the moonlight",
+        "listeners": 2281,
+        "playcount": 6466
+      },
+      {
+        "name": "Heartbeats",
+        "listeners": 620,
+        "playcount": 2010
+      },
+      {
+        "name": "When the party’s over",
+        "listeners": 69,
+        "playcount": 110
+      },
+      {
+        "name": "Morning Rain",
+        "listeners": 38,
+        "playcount": 55
+      },
+      {
+        "name": "Sweet child o' mine",
+        "listeners": 8,
+        "playcount": 32
+      },
+      {
+        "name": "Young and beautiful",
+        "listeners": 8,
+        "playcount": 23
+      },
+      {
+        "name": "Willow",
+        "listeners": 7,
+        "playcount": 9
+      },
+      {
+        "name": "In our hearts",
+        "listeners": 6,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Isabella+Morales"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

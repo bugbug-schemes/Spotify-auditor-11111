@@ -1,0 +1,534 @@
+{
+  "artist_name": "Snorre Kirk",
+  "artist_id": "snorre_kirk",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:08:06.856682+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bbee1623-be99-468d-a8fd-9e8ffb67d791",
+    "type": "Person",
+    "country": "DK",
+    "area": "Denmark",
+    "begin_date": "1981",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002403123",
+      "discogs": "https://www.discogs.com/artist/3384227",
+      "free streaming": "https://www.deezer.com/artist/1648169",
+      "last.fm": "https://www.last.fm/music/Snorre+Kirk",
+      "myspace": "https://myspace.com/snorrekirk",
+      "official homepage": "http://snorrekirk.dk/",
+      "other databases": "https://www.worldcat.org/identities/lccn-n2019069175",
+      "social network": "https://www.facebook.com/snorrekirk",
+      "soundcloud": "https://soundcloud.com/snorrekirk",
+      "streaming": "https://tidal.com/artist/4527619",
+      "VIAF": "http://viaf.org/viaf/3146936730313782191",
+      "wikidata": "https://www.wikidata.org/wiki/Q96761270",
+      "youtube": "https://www.youtube.com/user/snorrekirk",
+      "youtube music": "https://music.youtube.com/channel/UCdMiq96t8CwEtJ1njgkrj8g"
+    },
+    "labels": [
+      "Double K Music",
+      "Calibrated Music",
+      "Stunt Records",
+      "Calibrated"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1648169,
+    "name": "Snorre Kirk",
+    "nb_fan": 380,
+    "nb_album": 31,
+    "link": "https://www.deezer.com/artist/1648169",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/db11fd50a926522bfe8181015116fb97/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anders Fjeldsted",
+      "Chris Minh Doky",
+      "Giacomo Smith",
+      "Joe Webb",
+      "Michael Blicher",
+      "Nikolaj Bentzon",
+      "Stephen Riley"
+    ],
+    "contributor_roles": {
+      "Stephen Riley": [
+        "Featured",
+        "Main"
+      ],
+      "Anders Fjeldsted": [
+        "Featured"
+      ],
+      "Joe Webb": [
+        "Featured"
+      ],
+      "Giacomo Smith": [
+        "Featured"
+      ],
+      "Chris Minh Doky": [
+        "Main"
+      ],
+      "Nikolaj Bentzon": [
+        "Main"
+      ],
+      "Michael Blicher": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "On Late Nights",
+      "Opening Night",
+      "The Capital Blues",
+      "Going Up",
+      "Palagio Shout",
+      "Festival Grease",
+      "Heartland",
+      "Zanzibar",
+      "Meditations In Blue",
+      "Blues Arabesque",
+      "The Christmas Ball",
+      "Santa Baby",
+      "Yesteryear",
+      "West Indian Flower"
+    ],
+    "track_durations": [
+      269,
+      395,
+      253,
+      275,
+      192,
+      318,
+      202,
+      194,
+      227,
+      280,
+      163,
+      224,
+      259,
+      291
+    ],
+    "track_ranks": [
+      138234,
+      64493,
+      35296,
+      23546,
+      39086,
+      76667,
+      30033,
+      9745,
+      50488,
+      46038,
+      30784,
+      37715,
+      59871,
+      144761
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "What A Day!",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "What A Day! (Bonus Edition)",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Top Dog",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Why Not",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Going Up",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tangerine Rhapsody",
+        "label": "",
+        "release_date": "2019-11-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beat",
+        "label": "",
+        "release_date": "2018-08-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Drummer & Composer",
+        "label": "",
+        "release_date": "2017-03-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beyond the Moon",
+        "label": "",
+        "release_date": "2016-11-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Europa",
+        "label": "",
+        "release_date": "2016-05-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Finding Home",
+        "label": "",
+        "release_date": "2014-09-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Blues Modernism",
+        "label": "",
+        "release_date": "2012-03-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Santa Baby",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unsentimental",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One For The Road",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sisters Are Doin' It For Themselves",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fontainebleau",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There Must Be An Angel",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Let It Bring You Down (Live at Jazzhus Montmartre)",
+        "label": "",
+        "release_date": "2024-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here Comes the Rain Again (Live at Jazzhus Montmartre)",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yesteryear",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On Late Nights",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Working the Night Shift",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Surrender Dear",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Streamline",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Power of Love",
+        "label": "",
+        "release_date": "2021-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Going Up",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unsentimental",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "West Indian Flower",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "18th & Vine",
+        "label": "",
+        "release_date": "2018-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Jan Harbeck Quartet",
+      "Dominick Farinacci",
+      "6th Street Jazz",
+      "James Jackson Jazz Trio",
+      "André Ceccarelli",
+      "Cyrus Chestnut",
+      "Gathering in Jazz",
+      "Julia Hülsmann Quartet",
+      "Red Garland",
+      "Roy Hargrove"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3384227,
+    "name": "Snorre Kirk",
+    "profile": "Danish jazz drummer and composer",
+    "realname": "",
+    "social_urls": [
+      "http://snorrekirk.dk/"
+    ],
+    "members": [],
+    "groups": [
+      "Mads Tolling Quartet",
+      "Magnus Hjorth Trio",
+      "Kristin Korb",
+      "Fredrik Kronkvist Sextet",
+      "Lasse Mørck Quartet",
+      "Snorre Kirk Quartet",
+      "Mads La Cour & Im Beruf"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 32,
+    "digital_only_releases": 20,
+    "total_releases": 52,
+    "formats": [
+      "",
+      "2xLP, Comp, RM",
+      "CD",
+      "CD, Album",
+      "CD, Album + File, WAV, Album",
+      "CD, Album, Car",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "File, WAV, Single",
+      "LP",
+      "LP, Album",
+      "LP, Comp",
+      "LP, Comp, Ltd, Num, Promo, Whi"
+    ],
+    "labels": [
+      "Aurora Music International",
+      "Calibrated",
+      "Connective Records",
+      "Double K Music",
+      "Gateway Music",
+      "Giant Sheep Music",
+      "Hitman Jazz",
+      "JazzDanmark",
+      "Madsman Records",
+      "Music Mecca",
+      "Not On Label (Lasse Mørck Quartet Self-released)",
+      "Not On Label (Lasse Mørck Self-Released)",
+      "Storyville",
+      "Stunt Records",
+      "Stunt Records, Stunt Records Compilation",
+      "Sundance (2), Stunt Records",
+      "Sundance Music (2)",
+      "Terasima Records",
+      "Thornberg's Music Production",
+      "Wagram Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Snorre Kirk",
+    "mbid": "bbee1623-be99-468d-a8fd-9e8ffb67d791",
+    "listeners": 79680,
+    "playcount": 294326,
+    "listener_play_ratio": 3.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Snorre+Kirk\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Brandon Sanders",
+      "Dominick Farinacci",
+      "Hans Ulrik",
+      "Jeremy Pelt",
+      "Harry Allen"
+    ],
+    "top_tracks": [
+      {
+        "name": "On Late Nights",
+        "listeners": 43414,
+        "playcount": 104506
+      },
+      {
+        "name": "Yesteryear",
+        "listeners": 35681,
+        "playcount": 87725
+      },
+      {
+        "name": "Unsentimental",
+        "listeners": 9081,
+        "playcount": 19242
+      },
+      {
+        "name": "Blues Arabesque",
+        "listeners": 7208,
+        "playcount": 15513
+      },
+      {
+        "name": "Going Up",
+        "listeners": 6069,
+        "playcount": 13212
+      },
+      {
+        "name": "West Indian Flower",
+        "listeners": 5002,
+        "playcount": 12769
+      },
+      {
+        "name": "Festival Grease",
+        "listeners": 3527,
+        "playcount": 6904
+      },
+      {
+        "name": "Fontainebleau",
+        "listeners": 1391,
+        "playcount": 2541
+      },
+      {
+        "name": "Monaco",
+        "listeners": 1257,
+        "playcount": 2790
+      },
+      {
+        "name": "Blues Jump",
+        "listeners": 1237,
+        "playcount": 2482
+      }
+    ],
+    "url": "https://www.last.fm/music/Snorre+Kirk"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

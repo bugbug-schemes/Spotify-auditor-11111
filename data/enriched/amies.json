@@ -1,0 +1,529 @@
+{
+  "artist_name": "amies",
+  "artist_id": "amies",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:10:13.298958+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5eb529d3-edb7-42a1-9402-86891df63ac7",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi",
+      "lo-fi hip hop",
+      "instrumental",
+      "downtempo",
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "boom bap"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/73356542",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/amies/4678476",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/amies/4678476",
+      "youtube music": "https://music.youtube.com/channel/UCigcz0gBeGb8N-tM26vOMJg"
+    },
+    "labels": [
+      "Fortune Cookie Records",
+      "purity label",
+      "Lofi Records",
+      "ChilledCow Records",
+      "[no label]",
+      "Overgrown Tapes",
+      "Effortless Audio",
+      "Etymology Records",
+      "darkstate"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 73356542,
+    "name": "amies",
+    "nb_fan": 533,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/73356542",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0e01a31ad87beecc9f9874659fcbed08/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Allem Iversom",
+      "Jxsn",
+      "Peak Twilight",
+      "cxlt."
+    ],
+    "contributor_roles": {
+      "Jxsn": [
+        "Main"
+      ],
+      "cxlt.": [
+        "Main"
+      ],
+      "Peak Twilight": [
+        "Main"
+      ],
+      "Allem Iversom": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Come Find Me",
+      "Solution",
+      "Lonely Journey",
+      "Those Nights",
+      "Destination Unknown",
+      "Fireflies",
+      "At The Campfire",
+      "Embrace",
+      "Until We Meet Again",
+      "Lumen",
+      "Imaginary",
+      "Heart Hope",
+      "Above the Clouds",
+      "Up & Up",
+      "Angels Above Us",
+      "Star Signs",
+      "Imaginary Worlds",
+      "Solstice",
+      "Awaken",
+      "Nighttide",
+      "Looking Through",
+      "Nocturne",
+      "It's Getting Late",
+      "Still Here",
+      "After All"
+    ],
+    "track_durations": [
+      206,
+      178,
+      188,
+      169,
+      172,
+      182,
+      180,
+      174,
+      189,
+      203,
+      147,
+      156,
+      198,
+      147,
+      157,
+      137,
+      123,
+      196,
+      202,
+      205,
+      184,
+      219,
+      210,
+      208,
+      150
+    ],
+    "track_ranks": [
+      440057,
+      464945,
+      517214,
+      445553,
+      430699,
+      341687,
+      437428,
+      371366,
+      197309,
+      104342,
+      322342,
+      270488,
+      356082,
+      100000,
+      214519,
+      278344,
+      243521,
+      109115,
+      128726,
+      218903,
+      295950,
+      131143,
+      121742,
+      75141,
+      236888
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 5,
+      "single": 89
+    },
+    "albums": [
+      {
+        "title": "Color Within Everything",
+        "label": "",
+        "release_date": "2024-09-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ethereal Echoes",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "After All",
+        "label": "",
+        "release_date": "2022-06-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Discoveries",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nocturne",
+        "label": "",
+        "release_date": "2021-07-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Oblivion",
+        "label": "",
+        "release_date": "2021-04-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Skies & Whispers",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Days Went By (The Remixes)",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Escapism",
+        "label": "",
+        "release_date": "2021-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Solitude",
+        "label": "",
+        "release_date": "2020-08-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Journey",
+        "label": "",
+        "release_date": "2020-02-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Up & Up",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Balance",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Together",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Overgrown",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Disappear",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daydream",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solution",
+        "label": "",
+        "release_date": "2025-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tomorrow",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Childhood",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bloom",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Part",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waters",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Way of Life",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Acceptance",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sakura",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Comforting",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Until Morning Comes",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Falling",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Kainbeats",
+      "Softy",
+      "NO SPIRIT",
+      "Dontcry",
+      "Casiio",
+      "Wys",
+      "Hoogway",
+      "Jhove",
+      "Hevi",
+      "Tabal"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1579367,
+    "name": "Toby Amies",
+    "profile": "British film maker, photographer and visual artist. ",
+    "realname": "",
+    "social_urls": [
+      "http://www.tobyamies.co.uk/",
+      "https://www.facebook.com/vidiotocracy/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 5,
+    "digital_only_releases": 7,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "9xCD, Comp, Mono, RM + Box",
+      "CD",
+      "CD, EP, Enh"
+    ],
+    "labels": [
+      "BBC Music",
+      "BBC Music Magazine",
+      "Deutsche Grammophon",
+      "Pickled Egg Records",
+      "Rhine Classics"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amies",
+    "mbid": "",
+    "listeners": 294397,
+    "playcount": 2765784,
+    "listener_play_ratio": 9.39,
+    "bio_exists": true,
+    "bio_summary": "amies, real name Arthur Spuijman, is a lofi / chill producer from Amsterdam. He started producing when he was 15 years old. He also collaborates with fellow Dutch producer cxlt. under the name of undercurrent. <a href=\"https://www.last.fm/music/Amies\">Read more on Last.fm</a>",
+    "tags": [
+      "Lo-Fi",
+      "electronic",
+      "netherlands",
+      "instrumental",
+      "chill"
+    ],
+    "similar_artists": [
+      "Softy",
+      "cxlt.",
+      "Mondo Loops",
+      "Tibeauthetraveler",
+      "Jhove"
+    ],
+    "top_tracks": [
+      {
+        "name": "Destination Unknown",
+        "listeners": 69143,
+        "playcount": 187222
+      },
+      {
+        "name": "Fireflies",
+        "listeners": 65775,
+        "playcount": 169545
+      },
+      {
+        "name": "The Day You Left",
+        "listeners": 60641,
+        "playcount": 168987
+      },
+      {
+        "name": "Come Find Me",
+        "listeners": 56035,
+        "playcount": 143572
+      },
+      {
+        "name": "Break Away",
+        "listeners": 50650,
+        "playcount": 129806
+      },
+      {
+        "name": "Above the Clouds",
+        "listeners": 37229,
+        "playcount": 97531
+      },
+      {
+        "name": "Imaginary",
+        "listeners": 34164,
+        "playcount": 83364
+      },
+      {
+        "name": "Nighttide",
+        "listeners": 24116,
+        "playcount": 55103
+      },
+      {
+        "name": "Eden",
+        "listeners": 23048,
+        "playcount": 52999
+      },
+      {
+        "name": "Dreams of Dusk",
+        "listeners": 22833,
+        "playcount": 47675
+      }
+    ],
+    "url": "https://www.last.fm/music/Amies"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

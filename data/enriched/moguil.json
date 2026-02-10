@@ -1,0 +1,141 @@
+{
+  "artist_name": "Moguil",
+  "artist_id": "moguil",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:47:16.368395+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Moguil', got 'Miguel'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3081258,
+    "name": "Marcelo Moguilevsky",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Comedia",
+      "Cuatro Vientos (2)",
+      "Klezmer En Buenos Aires",
+      "Será Una Noche"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 28,
+    "digital_only_releases": 13,
+    "total_releases": 41,
+    "formats": [
+      "",
+      "12\", EP, RE",
+      "2xCD, Album",
+      "2xCD, Comp, Promo",
+      "3xCD, Comp",
+      "Box, Album, Maxi, Comp, Ltd + 18xCD, Album, RE, Di",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Comp",
+      "File, DSF, Album",
+      "LP",
+      "LP, Album",
+      "LP, EP"
+    ],
+    "labels": [
+      "Alfiz Producciones Discograficas, Sony Music, Productora 23",
+      "Bau Records",
+      "Bear Family Records",
+      "Ciclo 3",
+      "Club Del Disco",
+      "DBN, Tabriz Music",
+      "Epsa Music",
+      "Koch Records",
+      "Londisc",
+      "Los Años Luz Discos",
+      "MA Recordings",
+      "Melopea Discos",
+      "O+ Music",
+      "Phono Special Edition",
+      "Sargfabrik",
+      "Universidad Nacional de Quilmes Editorial"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Moguil",
+    "mbid": "",
+    "listeners": 3092,
+    "playcount": 8705,
+    "listener_play_ratio": 2.82,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Moguil\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Otherlands",
+      "WonderGlow",
+      "ÆSCN",
+      "CosmicRush",
+      "Healing Hertz"
+    ],
+    "top_tracks": [
+      {
+        "name": "Inner Horizon Alpha 160.81 Hz - 168.81 Hz",
+        "listeners": 1520,
+        "playcount": 3495
+      },
+      {
+        "name": "Sense Of Relief 432 Hz",
+        "listeners": 1094,
+        "playcount": 3300
+      },
+      {
+        "name": "Clear Passage 396 Hz",
+        "listeners": 616,
+        "playcount": 1909
+      },
+      {
+        "name": "396 Hz Reaching Happiness",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Moguil"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

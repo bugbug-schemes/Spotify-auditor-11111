@@ -1,0 +1,184 @@
+{
+  "artist_name": "Clifford Randall",
+  "artist_id": "clifford_randall",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:10:28.039750+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 188655087,
+    "name": "Clifford Randall",
+    "nb_fan": 2,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/188655087",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fbbe7b19ae1babe14304704998534a1c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Love on a Lonely Street",
+      "The Mist and the Light"
+    ],
+    "track_durations": [
+      154,
+      204
+    ],
+    "track_ranks": [
+      111254,
+      37832
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Linen Skies",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sounds of Innsbruck",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gently",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Mist and the Light",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moments Awaken",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love on a Lonely Street",
+        "label": "",
+        "release_date": "2023-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the mood for love",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16763668,
+    "name": "Clifford Randall",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "5\", S/Sided, Pos"
+    ],
+    "labels": [
+      "Randall Records (7)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Clifford Randall",
+    "mbid": "",
+    "listeners": 24969,
+    "playcount": 82567,
+    "listener_play_ratio": 3.31,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Clifford+Randall\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hamilton Reed",
+      "Montenegro Garner",
+      "Alfie Walker",
+      "Luke Dunn",
+      "Stefan Scholz"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Mist and the Light",
+        "listeners": 12456,
+        "playcount": 28150
+      },
+      {
+        "name": "Love on a Lonely Street",
+        "listeners": 10924,
+        "playcount": 47120
+      },
+      {
+        "name": "In the mood for love",
+        "listeners": 2057,
+        "playcount": 4353
+      },
+      {
+        "name": "Linen skies",
+        "listeners": 1848,
+        "playcount": 2944
+      }
+    ],
+    "url": "https://www.last.fm/music/Clifford+Randall"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

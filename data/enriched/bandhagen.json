@@ -1,0 +1,169 @@
+{
+  "artist_name": "bandhagen",
+  "artist_id": "bandhagen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:11:14.014150+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d96bf412-7da8-43de-9cdf-9a7e8a770b57",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/333457901",
+      "streaming": "https://tidal.com/artist/62949325"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'bandhagen', got 'Van Halen'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5872216,
+    "name": "Bandhagens Musikförening",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://soundcloud.com/bandhagensmusikforening",
+      "https://www.facebook.com/bandhagensmf"
+    ],
+    "members": [
+      "Michel Isorinne",
+      "Martin Sander (3)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 9,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "10xFile, FLAC, Comp",
+      "10xFile, WAV, Comp",
+      "CDr, Comp, Ltd, Mixed, Gat",
+      "CDr, Ltd, Mixed, Bla",
+      "Cass, Comp",
+      "Cass, Comp, Ltd, Mixed"
+    ],
+    "labels": [
+      "Northern Electronics",
+      "Not On Label",
+      "Semantica Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "bandhagen",
+    "mbid": "",
+    "listeners": 8935,
+    "playcount": 19959,
+    "listener_play_ratio": 2.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/bandhagen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nataya",
+      "Valea",
+      "Meladonica",
+      "Suuunday",
+      "Mos Becka"
+    ],
+    "top_tracks": [
+      {
+        "name": "evolve",
+        "listeners": 7687,
+        "playcount": 16674
+      },
+      {
+        "name": "hills",
+        "listeners": 1340,
+        "playcount": 2479
+      },
+      {
+        "name": "magnolia",
+        "listeners": 432,
+        "playcount": 746
+      },
+      {
+        "name": "call my name",
+        "listeners": 4,
+        "playcount": 10
+      },
+      {
+        "name": "bjäller och klang",
+        "listeners": 3,
+        "playcount": 10
+      },
+      {
+        "name": "Julbord / Lustmord",
+        "listeners": 2,
+        "playcount": 11
+      },
+      {
+        "name": "jolablot",
+        "listeners": 2,
+        "playcount": 8
+      },
+      {
+        "name": "Konflikthantering",
+        "listeners": 1,
+        "playcount": 10
+      },
+      {
+        "name": "forskningsprojektet frikyrklig moralbildning - ett minisymposium",
+        "listeners": 1,
+        "playcount": 8
+      },
+      {
+        "name": "slowly",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/bandhagen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

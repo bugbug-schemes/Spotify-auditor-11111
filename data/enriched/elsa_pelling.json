@@ -1,0 +1,158 @@
+{
+  "artist_name": "Elsa Pelling",
+  "artist_id": "elsa_pelling",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:26:04.415111+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 85493972,
+    "name": "Elsa Pelling",
+    "nb_fan": 6,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/85493972",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2e31680a4f797c88942ad3578d1909be/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Portrait",
+      "Window"
+    ],
+    "track_durations": [
+      150,
+      122
+    ],
+    "track_ranks": [
+      101979,
+      42365
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Window",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "To Relieve",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Portrait",
+        "label": "",
+        "release_date": "2023-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden Silence",
+        "label": "",
+        "release_date": "2022-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fortified Heart",
+        "label": "",
+        "release_date": "2020-02-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elsa Pelling",
+    "mbid": "",
+    "listeners": 12979,
+    "playcount": 39613,
+    "listener_play_ratio": 3.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elsa+Pelling\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Colin Weary",
+      "Neve Baker",
+      "Leonardo Agusti",
+      "Matthias Trapp",
+      "Oscar Roland"
+    ],
+    "top_tracks": [
+      {
+        "name": "Window",
+        "listeners": 5103,
+        "playcount": 17329
+      },
+      {
+        "name": "Fortified Heart",
+        "listeners": 4625,
+        "playcount": 11464
+      },
+      {
+        "name": "Portrait",
+        "listeners": 4027,
+        "playcount": 8738
+      },
+      {
+        "name": "Golden Silence",
+        "listeners": 709,
+        "playcount": 1671
+      },
+      {
+        "name": "To Relieve",
+        "listeners": 158,
+        "playcount": 411
+      }
+    ],
+    "url": "https://www.last.fm/music/Elsa+Pelling"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

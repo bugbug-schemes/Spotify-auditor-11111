@@ -1,0 +1,488 @@
+{
+  "artist_name": "M1NT",
+  "artist_id": "m1nt",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:21:38.479619+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "823560f6-dfc7-482d-90ed-e80f3abac511",
+    "type": "Person",
+    "country": "BE",
+    "area": "Belgium",
+    "begin_date": "1991-10-30",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "house"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/162892987",
+      "purchase for download": "https://www.traxsource.com/artist/812877",
+      "soundcloud": "https://soundcloud.com/m1ntsonic-hotmail-com",
+      "streaming": "https://tidal.com/artist/31569841"
+    },
+    "labels": [
+      "Chill Ghost",
+      "Bamboo Artists",
+      "Besser‐Samstag",
+      "55 MUSIC"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 162892987,
+    "name": "M1NT",
+    "nb_fan": 23,
+    "nb_album": 79,
+    "link": "https://www.deezer.com/artist/162892987",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0b73aae70858541c7f88a49a4e399851/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "NRMNT",
+      "STRNGE",
+      "blnkspc_"
+    ],
+    "contributor_roles": {
+      "blnkspc_": [
+        "Main"
+      ],
+      "NRMNT": [
+        "Main"
+      ],
+      "STRNGE": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Cold",
+      "Coastline Cruise",
+      "taste",
+      "Lunar",
+      "company",
+      "On The Move",
+      "Coming for You",
+      "Harmonize",
+      "Cumulus",
+      "Echolon",
+      "Drifting Away",
+      "Celestial",
+      "Midnight Steez",
+      "Stellar",
+      "Deeptalk",
+      "Dirty Samba",
+      "New Horizons",
+      "Sundown",
+      "Twilight"
+    ],
+    "track_durations": [
+      196,
+      238,
+      162,
+      194,
+      195,
+      252,
+      280,
+      224,
+      187,
+      158,
+      255,
+      179,
+      276,
+      197,
+      160,
+      338,
+      408,
+      264,
+      175
+    ],
+    "track_ranks": [
+      274962,
+      261332,
+      325462,
+      92142,
+      134080,
+      277453,
+      191208,
+      55068,
+      8828,
+      260338,
+      37233,
+      31891,
+      264034,
+      6885,
+      94791,
+      80506,
+      8801,
+      39545,
+      26330
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 6,
+      "ep": 8,
+      "single": 65
+    },
+    "albums": [
+      {
+        "title": "Universe",
+        "label": "",
+        "release_date": "2025-10-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Passage of Time",
+        "label": "",
+        "release_date": "2024-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nimbus Nights",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moonbeam",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lunar",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Take a Breath",
+        "label": "",
+        "release_date": "2023-05-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Universe Pt. II",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Universe Pt. I",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "dreams",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "From Town To Town",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Heavenly",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Serene",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Twilight",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Nice To Meet You",
+        "label": "",
+        "release_date": "2022-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "New Horizons (Edmondson Remix)",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Harmonize",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Horizons",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cold",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rejection",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echolon",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "company",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Truthful",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Change",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hybrid",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mellow",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "taste",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Minolta",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deeptalk",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faithless",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lana",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Milan93",
+      "NRMNT",
+      "Tar Blanche",
+      "Nebulae Waves",
+      "Duan Wasi",
+      "Juando",
+      "Godblesscomputers",
+      "Chaos In the CBD",
+      "Alexander IV",
+      "Kareem Ali"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8601651,
+    "name": "M0NT1C",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://twitter.com/M0NT1C"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "10xFile, FLAC, Album",
+      "13xFile, FLAC, Album"
+    ],
+    "labels": [
+      "Not On Label (UNI DELUXE Self-Released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "M1NT",
+    "mbid": "823560f6-dfc7-482d-90ed-e80f3abac511",
+    "listeners": 25224,
+    "playcount": 87901,
+    "listener_play_ratio": 3.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/M1NT\">Read more on Last.fm</a>",
+    "tags": [
+      "electronic",
+      "House",
+      "Lo-Fi",
+      "lofi",
+      "deep house"
+    ],
+    "similar_artists": [
+      "NRMNT",
+      "Jazz Cool Guts",
+      "Kate Paul",
+      "Le Hutin",
+      "Alan Devale"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lunar",
+        "listeners": 12649,
+        "playcount": 29366
+      },
+      {
+        "name": "Further",
+        "listeners": 4491,
+        "playcount": 14608
+      },
+      {
+        "name": "Celestial",
+        "listeners": 2357,
+        "playcount": 6449
+      },
+      {
+        "name": "Into The Sun",
+        "listeners": 2110,
+        "playcount": 5640
+      },
+      {
+        "name": "Drifting Away",
+        "listeners": 1973,
+        "playcount": 4401
+      },
+      {
+        "name": "Serene",
+        "listeners": 1646,
+        "playcount": 3843
+      },
+      {
+        "name": "In the Sun",
+        "listeners": 1263,
+        "playcount": 2746
+      },
+      {
+        "name": "Sunrays",
+        "listeners": 845,
+        "playcount": 1839
+      },
+      {
+        "name": "Cumulus",
+        "listeners": 818,
+        "playcount": 1720
+      },
+      {
+        "name": "On & On",
+        "listeners": 794,
+        "playcount": 1639
+      }
+    ],
+    "url": "https://www.last.fm/music/M1NT"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

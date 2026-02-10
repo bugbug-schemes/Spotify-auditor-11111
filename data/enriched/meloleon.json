@@ -1,0 +1,223 @@
+{
+  "artist_name": "Meloleon",
+  "artist_id": "meloleon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:39:02.564656+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 304664301,
+    "name": "Meloleon",
+    "nb_fan": 1,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/304664301",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/95ae73299d942e911bc0de273707350b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Opal",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Observation",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beneath the Earth",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Sleep Whisper",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emotional Intelligence",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fractured Light",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little World",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amber Horizon",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Between Waves",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stillness Within",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Abyssal",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Mist",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Meloleon",
+    "mbid": "",
+    "listeners": 58479,
+    "playcount": 542516,
+    "listener_play_ratio": 9.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Meloleon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Drift State",
+      "Narnara",
+      "moonlace",
+      "Foreglow",
+      "Adrian Eden"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fractured Light",
+        "listeners": 29283,
+        "playcount": 138582
+      },
+      {
+        "name": "Deep Abyssal",
+        "listeners": 27165,
+        "playcount": 139809
+      },
+      {
+        "name": "Soft Sleep Whisper",
+        "listeners": 21681,
+        "playcount": 96738
+      },
+      {
+        "name": "Emotional Intelligence",
+        "listeners": 9861,
+        "playcount": 50663
+      },
+      {
+        "name": "Moonbeams",
+        "listeners": 9091,
+        "playcount": 52903
+      },
+      {
+        "name": "Little World",
+        "listeners": 8695,
+        "playcount": 47232
+      },
+      {
+        "name": "Beneath the Earth",
+        "listeners": 3659,
+        "playcount": 8281
+      },
+      {
+        "name": "Opal",
+        "listeners": 1760,
+        "playcount": 4318
+      },
+      {
+        "name": "Stillness Within",
+        "listeners": 1054,
+        "playcount": 3966
+      },
+      {
+        "name": "Observation",
+        "listeners": 21,
+        "playcount": 22
+      }
+    ],
+    "url": "https://www.last.fm/music/Meloleon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,165 @@
+{
+  "artist_name": "Pristeen",
+  "artist_id": "pristeen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:32:21.613382+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9965474,
+    "name": "Pristeen",
+    "nb_fan": 6,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/9965474",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/320bacb86136add67e18603d5b8afef7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Afloat",
+        "label": "",
+        "release_date": "2022-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9439939,
+    "name": "Pristeen",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, EP"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pristeen",
+    "mbid": "",
+    "listeners": 29441,
+    "playcount": 195301,
+    "listener_play_ratio": 6.63,
+    "bio_exists": true,
+    "bio_summary": "Pristeen are a Liverpool based 5 piece who write and perform songs about people’s lives through the thoughts of the people living them. If you like you music melodic, poignant but with an edge, Pristeen are the band for you.\n\nSome nice things people have said about us:-\n\"Amazing songs. Impressive, inspired and bold. Phenomenal voice.\" - Ray Davies (The Kinks).\n“Song after song, these lads hit it right on the nail. Big songs with huge choruses. They are definitely one to watch.\" - soundsxp.com. <",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Antero Lehto",
+      "Mei Wyatt",
+      "Frieda Walsch",
+      "Jasmine Bordeaux",
+      "Elder Tones"
+    ],
+    "top_tracks": [
+      {
+        "name": "Afloat",
+        "listeners": 26902,
+        "playcount": 184766
+      },
+      {
+        "name": "Echovault",
+        "listeners": 1296,
+        "playcount": 5033
+      },
+      {
+        "name": "As If Air",
+        "listeners": 1007,
+        "playcount": 2415
+      },
+      {
+        "name": "Amberrise",
+        "listeners": 609,
+        "playcount": 1018
+      },
+      {
+        "name": "Taigara",
+        "listeners": 445,
+        "playcount": 878
+      },
+      {
+        "name": "Mondegreen",
+        "listeners": 72,
+        "playcount": 351
+      },
+      {
+        "name": "Delta Trance 3 Hz",
+        "listeners": 46,
+        "playcount": 380
+      },
+      {
+        "name": "Theta Trance 7 Hz",
+        "listeners": 42,
+        "playcount": 192
+      },
+      {
+        "name": "Radiance",
+        "listeners": 29,
+        "playcount": 109
+      },
+      {
+        "name": "Moonscape",
+        "listeners": 25,
+        "playcount": 65
+      }
+    ],
+    "url": "https://www.last.fm/music/Pristeen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

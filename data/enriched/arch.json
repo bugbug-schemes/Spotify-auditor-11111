@@ -1,0 +1,203 @@
+{
+  "artist_name": "Arch",
+  "artist_id": "arch",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:04:43.060263+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c65c7769-8e42-44bd-b82e-0bf8919e2888",
+    "type": "Person",
+    "country": "JP",
+    "area": "Japan",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3468569",
+      "free streaming": "https://open.spotify.com/artist/7cRGVXBoMc17LSWXDyedn7",
+      "official homepage": "http://arch.moe/",
+      "social network": "https://twitter.com/_4rch"
+    },
+    "labels": [
+      "Lilium Records",
+      "Vivid Hardcore"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Arch', got 'Arcade Fire'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 381872,
+    "name": "Dave Arch",
+    "profile": "British musician, conductor, arranger and composer",
+    "realname": "David Arch Hughes",
+    "social_urls": [
+      "https://www.dave-arch.com/",
+      "https://en.wikipedia.org/wiki/David_Arch",
+      "https://www.imdb.com/name/nm0033575/"
+    ],
+    "members": [],
+    "groups": [
+      "The Michael Nyman Band"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 30,
+    "digital_only_releases": 70,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Album + DVD, NTSC",
+      "2xCD, Comp",
+      "4xCD, Comp, Club, Dig + Box",
+      "CD",
+      "CD, Album",
+      "CD, Album, Ltd",
+      "CD, Comp",
+      "CD, Dig",
+      "CD, Single",
+      "CDr, Album",
+      "LP, Comp, Ltd, Pic, Rai",
+      "LP, Red"
+    ],
+    "labels": [
+      "Bonne Pioche Music",
+      "Cavendish Music",
+      "Compact Disc Club",
+      "Diploma Records",
+      "Feral Records",
+      "KPM Music",
+      "La-La Land Records",
+      "La-La Land Records, Summit Entertainment",
+      "Linn",
+      "MN Records",
+      "Music Club",
+      "Not On Label",
+      "Sonoton",
+      "Sonoton Creative Sound Solutions",
+      "Sony Classical",
+      "Sony Music",
+      "Sony Music Commercial Music Group",
+      "Spirit Of Unicorn Music (2), Cherry Red",
+      "Universal Music",
+      "Universal Music Group"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Arch",
+    "mbid": "c65c7769-8e42-44bd-b82e-0bf8919e2888",
+    "listeners": 14208,
+    "playcount": 90046,
+    "listener_play_ratio": 6.34,
+    "bio_exists": true,
+    "bio_summary": "Arch formed circa 2002 in Louisville, KY. Combining members from Adaptor and Kinghorse, the band immediately set out upon a sonic quest. In April 2005 the band underwent its only line-up change and was sidelined for one week before returning to the stage. Former drummer Alex Rose now plays bass, leaving the throne to worthy newcomer Andy Cook. The sound is bigger and tighter than ever leading the band promisingly into its newest chapter of existence.  <a href=\"https://www.last.fm/music/Arch\">Rea",
+    "tags": [
+      "uk Hardcore",
+      "hard rock",
+      "j-core",
+      "japanese",
+      "shibuya-kei"
+    ],
+    "similar_artists": [
+      "hurce",
+      "Synagi",
+      "DJ Amane",
+      "Pollinosis",
+      "dj dia"
+    ],
+    "top_tracks": [
+      {
+        "name": "Warmly Ways",
+        "listeners": 1905,
+        "playcount": 7751
+      },
+      {
+        "name": "Kaal",
+        "listeners": 1571,
+        "playcount": 5542
+      },
+      {
+        "name": "Pune",
+        "listeners": 1198,
+        "playcount": 4205
+      },
+      {
+        "name": "wake up",
+        "listeners": 1171,
+        "playcount": 3305
+      },
+      {
+        "name": "Hæ",
+        "listeners": 1007,
+        "playcount": 2400
+      },
+      {
+        "name": "Evoltex - poppi'n extended mix",
+        "listeners": 599,
+        "playcount": 2276
+      },
+      {
+        "name": "Evoltex (Poppi'n Mix)",
+        "listeners": 523,
+        "playcount": 1958
+      },
+      {
+        "name": "Legendary",
+        "listeners": 510,
+        "playcount": 604
+      },
+      {
+        "name": "Midnight Serenade",
+        "listeners": 401,
+        "playcount": 1282
+      },
+      {
+        "name": "N.O.S.",
+        "listeners": 400,
+        "playcount": 1573
+      }
+    ],
+    "url": "https://www.last.fm/music/Arch"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

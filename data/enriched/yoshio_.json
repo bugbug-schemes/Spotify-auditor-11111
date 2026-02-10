@@ -1,0 +1,194 @@
+{
+  "artist_name": "yoshio.",
+  "artist_id": "yoshio_",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:36:31.188374+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "10646276-6511-437d-8ed8-024070ca2b0b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/166483527",
+      "streaming": "https://tidal.com/artist/31635264"
+    },
+    "labels": [
+      "津波"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'yoshio.', got 'Hoshi'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1252185,
+    "name": "Yoshio Suzuki",
+    "profile": "Japanese bassist and keyboardist, born March 21, 1946 in Nagano, Japan",
+    "realname": "鈴木良雄",
+    "social_urls": [
+      "https://chin-suzuki.com/"
+    ],
+    "members": [],
+    "groups": [
+      "Gil Evans And His Orchestra",
+      "Art Blakey & The Jazz Messengers",
+      "Yuji Ohno Trio",
+      "Tsuyoshi Yamamoto Trio",
+      "Kosuke Mine Quartet",
+      "Masabumi Kikuchi Sextet",
+      "Masabumi Kikuchi Quintet",
+      "Kosuke Mine Quintet",
+      "Takehiro Honda Trio",
+      "The 4 (The Quartet)",
+      "Squad (13)",
+      "Yoshio “Chin” Suzuki’s \"The Blend\"",
+      "The Trio (24)",
+      "Yoshio Suzuki Trio",
+      "Bass Talk",
+      "Yoshiaki Masuo Trio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 44,
+    "digital_only_releases": 56,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, FLAC, 16-",
+      "12\", EP",
+      "12xFile, FLAC, 16-",
+      "2xCD, Album",
+      "2xCD, Comp",
+      "2xLP, Comp, Promo, RE",
+      "2xLP, Transcription",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, RE, RM",
+      "CD, Comp",
+      "CD, Ltd",
+      "CD, Maxi, Ltd",
+      "Cass, Comp",
+      "LP, Album",
+      "LP, Album, Comp",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Blue Note, Somethin' Else",
+      "CBS/Sony",
+      "DIW",
+      "EWE Records",
+      "Electric Bird",
+      "Friends Music",
+      "Friends Music (3)",
+      "GRP",
+      "Insights",
+      "Invitation",
+      "Jazz City Spirit",
+      "King Records",
+      "NHK",
+      "One (4), 55 Records",
+      "One Voice (4)",
+      "Paddle Wheel",
+      "Solid Records (6)",
+      "Sonet",
+      "Studio Songs (2)",
+      "Sunshine Ave",
+      "Tact Music Publisher Inc.",
+      "Trio Records",
+      "UNDER CODE PRODUCTION",
+      "Vap",
+      "Verve Records",
+      "Verve Records, DMR, Universal, New World Productions Inc.",
+      "Victor",
+      "WAM",
+      "WEA Records",
+      "What'sNew Records, Swing Cat (2), Cafe Soul Records",
+      "art union"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "yoshio.",
+    "mbid": "10646276-6511-437d-8ed8-024070ca2b0b",
+    "listeners": 6727,
+    "playcount": 15953,
+    "listener_play_ratio": 2.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/yoshio.\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "St. Vrain",
+      "riviwi",
+      "pepe.",
+      "By the Way",
+      "Rapido_"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tokyo memories",
+        "listeners": 6469,
+        "playcount": 14805
+      },
+      {
+        "name": "a sailor's dream",
+        "listeners": 141,
+        "playcount": 532
+      },
+      {
+        "name": "sonam",
+        "listeners": 101,
+        "playcount": 312
+      },
+      {
+        "name": "kumo no sekai",
+        "listeners": 87,
+        "playcount": 304
+      }
+    ],
+    "url": "https://www.last.fm/music/yoshio."
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,86 @@
+{
+  "artist_name": "Guille Subiré",
+  "artist_id": "guille_subiré",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:57:16.134915+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Guille Subiré', got 'Guille Subiré'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Guille Subiré",
+    "mbid": "",
+    "listeners": 438,
+    "playcount": 5134,
+    "listener_play_ratio": 11.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Guille+Subir%C3%A9\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sleepy Olof",
+      "Sigrid Gunnarsson",
+      "Oscar Stormborn",
+      "Julie Isabey",
+      "Carey Martin"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sunshine Slumber",
+        "listeners": 379,
+        "playcount": 4921
+      },
+      {
+        "name": "Le pont Mirabeau",
+        "listeners": 49,
+        "playcount": 188
+      },
+      {
+        "name": "Magical Dream Forest",
+        "listeners": 14,
+        "playcount": 25
+      }
+    ],
+    "url": "https://www.last.fm/music/Guille+Subir%C3%A9"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

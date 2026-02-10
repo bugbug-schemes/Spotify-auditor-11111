@@ -1,0 +1,121 @@
+{
+  "artist_name": "Nolan Wren",
+  "artist_id": "nolan_wren",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:05:09.190435+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Nolan Wren', got 'Nola Wren'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nolan Wren",
+    "mbid": "",
+    "listeners": 10548,
+    "playcount": 234596,
+    "listener_play_ratio": 22.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nolan+Wren\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isaac Trager",
+      "Graham Lullington",
+      "Jasper Sylvaire",
+      "Amos Green",
+      "Robin Colt"
+    ],
+    "top_tracks": [
+      {
+        "name": "To the Store We Go",
+        "listeners": 6582,
+        "playcount": 86253
+      },
+      {
+        "name": "Au Clair de la Lune",
+        "listeners": 5767,
+        "playcount": 71177
+      },
+      {
+        "name": "I Had a Rooster",
+        "listeners": 5268,
+        "playcount": 68784
+      },
+      {
+        "name": "Puddle Parade",
+        "listeners": 998,
+        "playcount": 8151
+      },
+      {
+        "name": "Cuckoo",
+        "listeners": 81,
+        "playcount": 118
+      },
+      {
+        "name": "海の見える街 (ピアノ)『魔女の宅急便』より",
+        "listeners": 50,
+        "playcount": 70
+      },
+      {
+        "name": "Jade Nomad",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Amazonian",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "No Redemption",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Awake Circuits",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Nolan+Wren"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

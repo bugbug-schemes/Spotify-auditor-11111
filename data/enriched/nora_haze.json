@@ -1,0 +1,81 @@
+{
+  "artist_name": "nora haze",
+  "artist_id": "nora_haze",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:26:50.527192+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'nora haze', got 'Noir & Haze'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nora Haze",
+    "mbid": "",
+    "listeners": 36961,
+    "playcount": 83384,
+    "listener_play_ratio": 2.26,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nora+Haze\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Adam Space",
+      "Kadeen B",
+      "Coltsfoot",
+      "Amai Beats",
+      "cloudsonmymind"
+    ],
+    "top_tracks": [
+      {
+        "name": "So Very Much",
+        "listeners": 24275,
+        "playcount": 53035
+      },
+      {
+        "name": "settling in",
+        "listeners": 14811,
+        "playcount": 30349
+      }
+    ],
+    "url": "https://www.last.fm/music/Nora+Haze"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

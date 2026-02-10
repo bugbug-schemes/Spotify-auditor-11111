@@ -1,0 +1,170 @@
+{
+  "artist_name": "The Soulful Strut",
+  "artist_id": "the_soulful_strut",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:36:33.474238+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 346847231,
+    "name": "The Soulful Strut",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/346847231",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fd928d686d42b2101a380d3640977782/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Through the Glass",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everest",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Saw Mommy Kissing Santa Claus",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh Holy Night",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amber Skies",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5992994,
+    "name": "Soulfull Strutters",
+    "profile": "Soul band from North Carolina, USA\r\nMembers were : Felix Sawyer, Thomas Sawyer, Freddie Stocks, Kenneth Hall, Bruno Speight, Eddie Henderson and Willie G. Cribb (born September 15, 1953 - died January 30, 2020)",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Bruno Speight (2)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 0,
+    "total_releases": 4,
+    "formats": [
+      "7\"",
+      "7\", Single, Unofficial"
+    ],
+    "labels": [
+      "Strut",
+      "Strut Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Soulful Strut",
+    "mbid": "",
+    "listeners": 9706,
+    "playcount": 17897,
+    "listener_play_ratio": 1.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Soulful+Strut\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Trio Lexington",
+      "The Blue Alley",
+      "The Late Set",
+      "Autumn Steps",
+      "New Dawn Jazz Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Amber Skies",
+        "listeners": 5505,
+        "playcount": 10708
+      },
+      {
+        "name": "I Saw Mommy Kissing Santa Claus",
+        "listeners": 4478,
+        "playcount": 7186
+      },
+      {
+        "name": "Now That's What I Call Music 45",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "The Soulful Strut",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Oh Holy Night",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Soulful+Strut"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

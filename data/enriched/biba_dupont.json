@@ -1,0 +1,449 @@
+{
+  "artist_name": "Biba Dupont",
+  "artist_id": "biba_dupont",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:40:33.407024+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c1dbdecf-4bd8-4782-b2b7-ef02b126886f",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/7846929",
+      "free streaming": "https://www.deezer.com/artist/58137862",
+      "purchase for download": "https://music.apple.com/us/artist/1450374870",
+      "social network": "https://twitter.com/biba_dupont",
+      "soundcloud": "https://soundcloud.com/bibadupont-music",
+      "streaming": "https://tidal.com/artist/10896734",
+      "youtube music": "https://music.youtube.com/channel/UCynkI3F1kSb-Z37i2az6V4Q"
+    },
+    "labels": [
+      "Periférica"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 58137862,
+    "name": "Biba Dupont",
+    "nb_fan": 153,
+    "nb_album": 62,
+    "link": "https://www.deezer.com/artist/58137862",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5fd3dd77e08245ae80789306587c0547/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The House Opposite",
+      "Sonora",
+      "Home full of solipsism",
+      "Shared Shelter",
+      "Orangel",
+      "L'absinthe brûle",
+      "Mar De Ardora",
+      "Valse pour le premier jour du printemps",
+      "Silhouette",
+      "Say When",
+      "Ártabra",
+      "Bayou Says",
+      "Icicles"
+    ],
+    "track_durations": [
+      164,
+      206,
+      178,
+      162,
+      147,
+      142,
+      186,
+      206,
+      143,
+      155,
+      202,
+      98,
+      138
+    ],
+    "track_ranks": [
+      44544,
+      80258,
+      121550,
+      110784,
+      51447,
+      40642,
+      52140,
+      120598,
+      68290,
+      122012,
+      18743,
+      61814,
+      41800
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "ep": 2,
+      "single": 53
+    },
+    "albums": [
+      {
+        "title": "Everything is Trauma or Allegory",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solid State Songs",
+        "label": "",
+        "release_date": "2020-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Journey Between Us",
+        "label": "",
+        "release_date": "2019-12-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Sommerhaus Tapes",
+        "label": "",
+        "release_date": "2019-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Lost Works of Biba Dupont",
+        "label": "",
+        "release_date": "2019-03-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Great She-Goat",
+        "label": "",
+        "release_date": "2019-02-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Trich",
+        "label": "",
+        "release_date": "2019-02-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hétérotopies",
+        "label": "",
+        "release_date": "2020-06-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Suite",
+        "label": "",
+        "release_date": "2020-05-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Summerfall",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breakup in Bloom",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Afterwords",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Apricity",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "L'incroyable",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Après la fourche des jardins",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I crash as soft | Time by your side",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beloveds | The rest is confetti",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before it’s too late",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stones in my pocket",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Orangel",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Self-portrait with Leonora",
+        "label": "",
+        "release_date": "2023-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Down Below",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equinox",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Birthday",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flâneuses",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solarised",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kindness as dignity",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alchemy cubes",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It only took a month",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Longest days",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lo Mimieux",
+      "Arden Forest",
+      "Gavin Luke",
+      "Johannes Bornlof",
+      "Peter Sandberg",
+      "Fabrizio Paterlini",
+      "Oskar Schuster",
+      "Éric Christian",
+      "James Heather",
+      "Evgeny Grinko"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7846929,
+    "name": "Biba Dupont",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "File, ALAC, 24  + 2xFile, ALAC, 16  + 47xFile, ALA"
+    ],
+    "labels": [
+      "1631 Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Biba Dupont",
+    "mbid": "c1dbdecf-4bd8-4782-b2b7-ef02b126886f",
+    "listeners": 111841,
+    "playcount": 601671,
+    "listener_play_ratio": 5.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Biba+Dupont\">Read more on Last.fm</a>",
+    "tags": [
+      "piano",
+      "electronic",
+      "dance"
+    ],
+    "similar_artists": [
+      "Stephan Moccio",
+      "Aquilegia",
+      "Jef Martens",
+      "Elliott Jack Sansom",
+      "Jacob David"
+    ],
+    "top_tracks": [
+      {
+        "name": "Shared Shelter",
+        "listeners": 27021,
+        "playcount": 93997
+      },
+      {
+        "name": "Home full of solipsism",
+        "listeners": 17860,
+        "playcount": 56383
+      },
+      {
+        "name": "Sonora",
+        "listeners": 16845,
+        "playcount": 50952
+      },
+      {
+        "name": "Longest days",
+        "listeners": 13542,
+        "playcount": 48336
+      },
+      {
+        "name": "Mar De Ardora",
+        "listeners": 12818,
+        "playcount": 36392
+      },
+      {
+        "name": "L'absinthe brûle",
+        "listeners": 11150,
+        "playcount": 25511
+      },
+      {
+        "name": "Serán",
+        "listeners": 9876,
+        "playcount": 21806
+      },
+      {
+        "name": "Silhouette",
+        "listeners": 8681,
+        "playcount": 23158
+      },
+      {
+        "name": "Indigo",
+        "listeners": 8647,
+        "playcount": 24413
+      },
+      {
+        "name": "Stones in my pocket",
+        "listeners": 8121,
+        "playcount": 15716
+      }
+    ],
+    "url": "https://www.last.fm/music/Biba+Dupont"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

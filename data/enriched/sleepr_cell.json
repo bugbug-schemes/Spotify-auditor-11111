@@ -1,0 +1,264 @@
+{
+  "artist_name": "Sleepr Cell",
+  "artist_id": "sleepr_cell",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:06:19.103826+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "0fe50f24-ebc7-43ae-bcab-179174fd433e",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/186186177",
+      "streaming": "https://tidal.com/artist/34922998"
+    },
+    "labels": [
+      "aisle filler"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 186186177,
+    "name": "Sleepr Cell",
+    "nb_fan": 1,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/186186177",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/741acd36323bf7ecdb35a2e2944bb4ca/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "slow turn",
+      "pink dawn",
+      "Happy Christmas (War is Over)",
+      "gradual"
+    ],
+    "track_durations": [
+      127,
+      186,
+      122,
+      157
+    ],
+    "track_ranks": [
+      37798,
+      32846,
+      22794,
+      25756
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "wind chimes",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "slow turn",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Half Moon",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Burnt rancheria",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "tough",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "midnight in december and i'm lost",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "periphery",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "marzipan shuffle",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "gradual",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "pink dawn",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "melting slowly",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "soft crease",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Happy Christmas",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sleepr Cell",
+    "mbid": "",
+    "listeners": 87670,
+    "playcount": 316991,
+    "listener_play_ratio": 3.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sleepr+Cell\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "okayokay",
+      "Knock On Wood",
+      "HEVI",
+      "Justnormal",
+      "Drxnk"
+    ],
+    "top_tracks": [
+      {
+        "name": "slow turn",
+        "listeners": 27124,
+        "playcount": 68910
+      },
+      {
+        "name": "pink dawn",
+        "listeners": 25479,
+        "playcount": 51948
+      },
+      {
+        "name": "Half Moon",
+        "listeners": 25337,
+        "playcount": 67663
+      },
+      {
+        "name": "marzipan shuffle",
+        "listeners": 18670,
+        "playcount": 41068
+      },
+      {
+        "name": "periphery",
+        "listeners": 16329,
+        "playcount": 33451
+      },
+      {
+        "name": "gradual",
+        "listeners": 14426,
+        "playcount": 34979
+      },
+      {
+        "name": "soft crease",
+        "listeners": 4673,
+        "playcount": 9022
+      },
+      {
+        "name": "Happy Christmas (War is Over)",
+        "listeners": 4630,
+        "playcount": 9401
+      },
+      {
+        "name": "wind chimes",
+        "listeners": 168,
+        "playcount": 218
+      },
+      {
+        "name": "Burnt rancheria",
+        "listeners": 70,
+        "playcount": 86
+      }
+    ],
+    "url": "https://www.last.fm/music/Sleepr+Cell"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

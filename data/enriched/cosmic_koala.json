@@ -1,0 +1,545 @@
+{
+  "artist_name": "Cosmic Koala",
+  "artist_id": "cosmic_koala",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:14:51.159377+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5a64365d-e3d4-451e-a7d1-a6783d00f17b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "downtempo",
+      "instrumental",
+      "lo-fi hip hop",
+      "boom bap",
+      "instrumental hip hop",
+      "lo-fi"
+    ],
+    "aliases": [
+      "Ludovic Jean-Paul Honoré Raymond",
+      "Ludovic Raymond"
+    ],
+    "isnis": [],
+    "ipis": [
+      "00775777966"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/12123394",
+      "free streaming": "https://www.deezer.com/artist/136049742",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/cosmic-koala/9866942",
+      "streaming": "https://tidal.com/artist/25970899",
+      "youtube music": "https://music.youtube.com/channel/UCH6ZtBo6KSXcEIYuO6VlgKQ"
+    },
+    "labels": [
+      "Kindbrew",
+      "Lofi Records",
+      "Globetrotting Music",
+      "Soave lo-fi",
+      "Slowdown Records",
+      "Willow",
+      "Aviary Twilight",
+      "Feel Better Records",
+      "LoFi Café Records",
+      "Etymology Records",
+      "Bougie Records",
+      "Chill Select",
+      "Aviary Bridge Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 136049742,
+    "name": "Cosmic Koala",
+    "nb_fan": 136,
+    "nb_album": 59,
+    "link": "https://www.deezer.com/artist/136049742",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/db8319c905ebb68abe690095f23a4ea7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Dimension 32",
+      "Dinis",
+      "Dreamfield",
+      "Lucid Keys",
+      "Plutones",
+      "Wishes and Dreams"
+    ],
+    "contributor_roles": {
+      "Lucid Keys": [
+        "Main"
+      ],
+      "Dimension 32": [
+        "Main",
+        "Featured"
+      ],
+      "Wishes and Dreams": [
+        "Featured"
+      ],
+      "Dreamfield": [
+        "Main"
+      ],
+      "Plutones": [
+        "Main",
+        "Featured"
+      ],
+      "Dinis": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "What Once Was",
+      "Sweet Meetings",
+      "Brigit",
+      "Aereda",
+      "Toutatis",
+      "Aengus",
+      "Beautiful Days",
+      "Lunch On The Grass",
+      "You're Home",
+      "Wave",
+      "Abelio",
+      "Intensity In Silence",
+      "unbreakable",
+      "Fairy Tales",
+      "Uentos",
+      "Serenade in a Lost City",
+      "Protect You",
+      "Glanis",
+      "Lugh",
+      "Bricta",
+      "Noreia",
+      "Turtle Island",
+      "Dagda",
+      "Ogmios",
+      "The Cascade"
+    ],
+    "track_durations": [
+      121,
+      151,
+      166,
+      119,
+      148,
+      145,
+      148,
+      133,
+      122,
+      128,
+      126,
+      142,
+      165,
+      163,
+      153,
+      136,
+      118,
+      147,
+      141,
+      119,
+      136,
+      124,
+      140,
+      137,
+      124
+    ],
+    "track_ranks": [
+      342731,
+      382574,
+      203670,
+      335568,
+      306448,
+      116606,
+      300156,
+      284664,
+      169657,
+      295084,
+      201653,
+      203430,
+      204021,
+      223599,
+      82081,
+      265350,
+      190853,
+      90739,
+      287238,
+      133961,
+      165965,
+      254998,
+      97831,
+      168754,
+      114597
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "ep": 6,
+      "single": 46
+    },
+    "albums": [
+      {
+        "title": "A Long Journey",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Paname",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Surrender",
+        "label": "",
+        "release_date": "2024-02-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "When All Was Lost",
+        "label": "",
+        "release_date": "2024-02-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Tale of the Druids",
+        "label": "",
+        "release_date": "2022-12-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heroes",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Twinkling Stars",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wildflower",
+        "label": "",
+        "release_date": "2024-12-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Beautiful Days",
+        "label": "",
+        "release_date": "2022-11-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sweet Harmonies",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Let It Go",
+        "label": "",
+        "release_date": "2022-08-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Insouciance",
+        "label": "",
+        "release_date": "2022-07-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Distant Call",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lakewood / Fire Camp",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From the Big Bang",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All My Ghosts",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Death Bed",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wanna Go Surfin’",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tranquility",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Do You Remember",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ode To The Moon",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bastia",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Longer Nights",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dissolving Memories",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost In Blue",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unwind",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beaujolais",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dolce Vita",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wave",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I stepped on a cloud",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lucid Keys",
+      "Dimension 32",
+      "C4C",
+      "Softy",
+      "Kanisan",
+      "Raimu",
+      "Goson",
+      "Nadav Cohen",
+      "Kupla",
+      "Dosi"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12123394,
+    "name": "Cosmic Koala",
+    "profile": "French Lo-Fi beatmaker from Aix-en-Provence.",
+    "realname": "",
+    "social_urls": [
+      "https://open.spotify.com/artist/3ARvFGBfNt9K1SIDM9yMwu",
+      "https://www.facebook.com/CosmicKoalaRecords",
+      "https://www.instagram.com/cosmickoala.music/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 3,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "10xLP, Comp + Box, Ltd, Num",
+      "10xLP, Comp, Ltd, Box",
+      "LP",
+      "LP, Album, Ltd, Num",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Lofi Records (4)",
+      "Yawn Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cosmic Koala",
+    "mbid": "5a64365d-e3d4-451e-a7d1-a6783d00f17b",
+    "listeners": 149130,
+    "playcount": 1069694,
+    "listener_play_ratio": 7.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cosmic+Koala\">Read more on Last.fm</a>",
+    "tags": [
+      "lofi"
+    ],
+    "similar_artists": [
+      "So.lo",
+      "Krynoze",
+      "squeeda",
+      "Lenny Loops",
+      "Kanisan"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sweet Meetings",
+        "listeners": 41614,
+        "playcount": 100257
+      },
+      {
+        "name": "Toutatis",
+        "listeners": 34558,
+        "playcount": 77187
+      },
+      {
+        "name": "What Once Was",
+        "listeners": 32687,
+        "playcount": 72888
+      },
+      {
+        "name": "The Player",
+        "listeners": 25784,
+        "playcount": 73179
+      },
+      {
+        "name": "Fairy Tales",
+        "listeners": 17756,
+        "playcount": 35488
+      },
+      {
+        "name": "Noreia",
+        "listeners": 17006,
+        "playcount": 35044
+      },
+      {
+        "name": "Lugh",
+        "listeners": 16785,
+        "playcount": 33866
+      },
+      {
+        "name": "Aereda",
+        "listeners": 16699,
+        "playcount": 33913
+      },
+      {
+        "name": "Borvo",
+        "listeners": 16494,
+        "playcount": 32986
+      },
+      {
+        "name": "Sundials",
+        "listeners": 16287,
+        "playcount": 33081
+      }
+    ],
+    "url": "https://www.last.fm/music/Cosmic+Koala"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

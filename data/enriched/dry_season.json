@@ -1,0 +1,198 @@
+{
+  "artist_name": "Dry Season",
+  "artist_id": "dry_season",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:36:16.529695+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "749ac615-5057-4456-a605-fdfae79f0856",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/00RccdcAYZZR0ipZrXd7CT"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 401123,
+    "name": "The Dry Season",
+    "nb_fan": 598,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/401123",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d11f073e3f90d8d7bbee7d4dd1dfda4e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2
+    },
+    "albums": [
+      {
+        "title": "Sentient Planet",
+        "label": "",
+        "release_date": "2014-12-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Dry Season",
+        "label": "",
+        "release_date": "2011-05-13",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7578957,
+    "name": "The Dry Season",
+    "profile": "Neo-psychedelic post rock band from Austin, Texas. Formed in 2008 by Sammy Ragland and Madelyn Carr.",
+    "realname": "",
+    "social_urls": [
+      "https://thedryseason.com/"
+    ],
+    "members": [
+      "Sean Haezebrouck",
+      "Cody Modro",
+      "Sammy Ragland",
+      "Madelyn Carr"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 0,
+    "total_releases": 3,
+    "formats": [
+      "CD",
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label",
+      "Not On Label (The Dry Season Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dry Season",
+    "mbid": "",
+    "listeners": 9197,
+    "playcount": 20163,
+    "listener_play_ratio": 2.19,
+    "bio_exists": true,
+    "bio_summary": "Dry Season was a previous incarnation of a Baltimore based band now known as The Dry Sea.  They were a mostly instrumental “Strange Rock” group.  The band began in 2008 as an exploratory music project and has thus blossomed into epic psychedelic noise as they worked their way into the underground Baltimore music scene.  Their music evokes provocative mental landscapes, punctuated by esoteric string and wind instruments, often against textures of grinding circuit bends and sound manipulation. <a ",
+    "tags": [
+      "american",
+      "post-rock"
+    ],
+    "similar_artists": [
+      "Cozeen",
+      "Sunny Léo",
+      "Lil Francky",
+      "Plaxon",
+      "Mareel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Under the Streetlamp",
+        "listeners": 9103,
+        "playcount": 18835
+      },
+      {
+        "name": "World on Fire",
+        "listeners": 36,
+        "playcount": 183
+      },
+      {
+        "name": "Breast Milk",
+        "listeners": 29,
+        "playcount": 98
+      },
+      {
+        "name": "Dinner with the Executioner",
+        "listeners": 26,
+        "playcount": 71
+      },
+      {
+        "name": "Montuno",
+        "listeners": 20,
+        "playcount": 64
+      },
+      {
+        "name": "Sublatum",
+        "listeners": 20,
+        "playcount": 51
+      },
+      {
+        "name": "To Hell with Nevada: Part I",
+        "listeners": 19,
+        "playcount": 64
+      },
+      {
+        "name": "Seaux Yuu",
+        "listeners": 17,
+        "playcount": 53
+      },
+      {
+        "name": "Flashlight",
+        "listeners": 10,
+        "playcount": 114
+      },
+      {
+        "name": "This Charming Man",
+        "listeners": 9,
+        "playcount": 20
+      }
+    ],
+    "url": "https://www.last.fm/music/Dry+Season"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

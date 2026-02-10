@@ -1,0 +1,147 @@
+{
+  "artist_name": "Yoda Swings",
+  "artist_id": "yoda_swings",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:05:27.412211+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9aa22e35-0a02-4a90-adb5-399a36b9c8f7",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/2DYf2Dz8b2oFY7R9ULbpO8",
+      "streaming": "https://music.apple.com/gb/artist/1775251317"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 286505301,
+    "name": "Yoda Swings",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/286505301",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b6fa8495e441af91d224d4a5eee25221/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "SKYWALKER",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Millenium Drift",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mando Melodies",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Yoda Swings",
+    "mbid": "",
+    "listeners": 5149,
+    "playcount": 12459,
+    "listener_play_ratio": 2.42,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Yoda+Swings\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Azoraê",
+      "Bagarn",
+      "Gaël Isolée",
+      "Unific",
+      "Les Trouble"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mando Melodies",
+        "listeners": 3158,
+        "playcount": 7323
+      },
+      {
+        "name": "Millenium Drift",
+        "listeners": 1796,
+        "playcount": 4103
+      },
+      {
+        "name": "SKYWALKER",
+        "listeners": 628,
+        "playcount": 1023
+      },
+      {
+        "name": "Force of Nature",
+        "listeners": 3,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Yoda+Swings"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

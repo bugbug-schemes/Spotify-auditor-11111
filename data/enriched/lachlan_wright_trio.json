@@ -1,0 +1,404 @@
+{
+  "artist_name": "Lachlan Wright Trio",
+  "artist_id": "lachlan_wright_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:56:03.505589+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c403e308-f1fd-40c1-bd74-37b40c0d3b96",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/155892712",
+      "purchase for download": "https://music.apple.com/us/artist/1602600052",
+      "soundcloud": "https://soundcloud.com/lachlanwrighttrio",
+      "streaming": "https://tidal.com/artist/29967019",
+      "youtube music": "https://music.youtube.com/channel/UC-fM7_4PoELKB2jSlk-QP2Q"
+    },
+    "labels": [
+      "Chill Palm"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 155892712,
+    "name": "Lachlan Wright Trio",
+    "nb_fan": 38,
+    "nb_album": 33,
+    "link": "https://www.deezer.com/artist/155892712",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/62997e4613362f38301903e11fd7f6a9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "You're Just Full of Inspiration",
+      "Margaret Dances",
+      "Bobbi",
+      "The Flow of Your Way",
+      "In Another Universe"
+    ],
+    "track_durations": [
+      144,
+      210,
+      152,
+      206,
+      176
+    ],
+    "track_ranks": [
+      260375,
+      476803,
+      246122,
+      35906,
+      87210
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 10,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "Fading Rose Petals",
+        "label": "",
+        "release_date": "2025-07-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Atman Bright",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ballad In Countertime",
+        "label": "",
+        "release_date": "2025-04-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dawn Of Porcelain",
+        "label": "",
+        "release_date": "2025-03-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Between Heartbeats",
+        "label": "",
+        "release_date": "2025-02-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I Will Always Love You",
+        "label": "",
+        "release_date": "2025-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Echoes of Our Love",
+        "label": "",
+        "release_date": "2024-12-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "And What He Is Like",
+        "label": "",
+        "release_date": "2024-11-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Can't Help Falling in Love",
+        "label": "",
+        "release_date": "2024-11-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Romantic Trip",
+        "label": "",
+        "release_date": "2024-10-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Heartful Stillness",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When Lanterns Were Our Sun",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "An Imperial Kiss",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Spark In Your Eyes",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flashes In The Dark",
+        "label": "",
+        "release_date": "2024-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Small Details",
+        "label": "",
+        "release_date": "2024-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Way Of Feeling",
+        "label": "",
+        "release_date": "2024-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Good Love",
+        "label": "",
+        "release_date": "2024-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shooting Star On The Piano",
+        "label": "",
+        "release_date": "2024-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memories In Black And White",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twilight Harmonies",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Complete My Poem",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Passion In My Heart",
+        "label": "",
+        "release_date": "2024-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Favorite Place",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Are The Love Of My Life",
+        "label": "",
+        "release_date": "2024-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You My Universe",
+        "label": "",
+        "release_date": "2024-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Favorite Song",
+        "label": "",
+        "release_date": "2024-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Under the Starlit Sky",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Your Arms",
+        "label": "",
+        "release_date": "2024-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bobbi",
+        "label": "",
+        "release_date": "2022-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Erroll Garner",
+      "Bill Charlap Trio",
+      "Chet Baker",
+      "North West Trio",
+      "Keith Jarrett",
+      "Guillaume de Chassy & Christophe Marguet feat. Andy Sheppard",
+      "The Central Park North",
+      "Nouveau Jazz Trio",
+      "Stéphane Belmondo",
+      "Bill Evans"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lachlan Wright Trio",
+    "mbid": "c403e308-f1fd-40c1-bd74-37b40c0d3b96",
+    "listeners": 67382,
+    "playcount": 246363,
+    "listener_play_ratio": 3.66,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [],
+    "similar_artists": [
+      "The Groove Trio",
+      "Paul Moretti Trio",
+      "Arta Porting",
+      "Nick Osman Trio",
+      "Reuben Plays"
+    ],
+    "top_tracks": [
+      {
+        "name": "In Another Universe",
+        "listeners": 35882,
+        "playcount": 88426
+      },
+      {
+        "name": "You're Just Full of Inspiration",
+        "listeners": 26394,
+        "playcount": 60895
+      },
+      {
+        "name": "The Flow of Your Way",
+        "listeners": 24952,
+        "playcount": 57650
+      },
+      {
+        "name": "Margaret Dances",
+        "listeners": 9490,
+        "playcount": 24117
+      },
+      {
+        "name": "Bobbi",
+        "listeners": 5953,
+        "playcount": 14108
+      },
+      {
+        "name": "Nose to Nose",
+        "listeners": 172,
+        "playcount": 263
+      },
+      {
+        "name": "A Fresh Start",
+        "listeners": 64,
+        "playcount": 116
+      },
+      {
+        "name": "An Imperial Kiss",
+        "listeners": 42,
+        "playcount": 63
+      },
+      {
+        "name": "A Romantic Trip",
+        "listeners": 28,
+        "playcount": 33
+      },
+      {
+        "name": "The Clock",
+        "listeners": 27,
+        "playcount": 33
+      }
+    ],
+    "url": "https://www.last.fm/music/Lachlan+Wright+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

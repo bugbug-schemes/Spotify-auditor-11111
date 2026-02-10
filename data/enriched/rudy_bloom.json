@@ -1,0 +1,203 @@
+{
+  "artist_name": "Rudy Bloom",
+  "artist_id": "rudy_bloom",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:47:57.463187+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10573159,
+    "name": "Rudy Bloom",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/10573159",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/63fa40b275d3180f02ec5a7573e69103/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Before Sunset"
+    ],
+    "track_durations": [
+      131
+    ],
+    "track_ranks": [
+      22219
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Silent Tides",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unfolding",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "November Afternoon",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Embrace",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faded Memory",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sojourn",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A New Season",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quietude",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before Sunset",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14938103,
+    "name": "Rudy Bloom",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rudy Bloom",
+    "mbid": "",
+    "listeners": 5869,
+    "playcount": 24150,
+    "listener_play_ratio": 4.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rudy+Bloom\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Théo Laurent",
+      "Callum Dario",
+      "Magnus Sakamura",
+      "Adjoa Bekoe",
+      "Antoine FAURÉ"
+    ],
+    "top_tracks": [
+      {
+        "name": "Quietude",
+        "listeners": 2576,
+        "playcount": 10128
+      },
+      {
+        "name": "Before Sunset",
+        "listeners": 1794,
+        "playcount": 3844
+      },
+      {
+        "name": "Unfolding",
+        "listeners": 987,
+        "playcount": 1643
+      },
+      {
+        "name": "Faded Memory",
+        "listeners": 828,
+        "playcount": 8086
+      },
+      {
+        "name": "Embrace",
+        "listeners": 112,
+        "playcount": 274
+      },
+      {
+        "name": "November Afternoon",
+        "listeners": 49,
+        "playcount": 175
+      }
+    ],
+    "url": "https://www.last.fm/music/Rudy+Bloom"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

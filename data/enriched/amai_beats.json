@@ -1,0 +1,131 @@
+{
+  "artist_name": "Amai Beats",
+  "artist_id": "amai_beats",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:54:24.842631+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 272436112,
+    "name": "Amai Beats",
+    "nb_fan": 16,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/272436112",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1b2e55cc7178da08c370964029ddb6e2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Give Me a Slice"
+    ],
+    "track_durations": [
+      146
+    ],
+    "track_ranks": [
+      443398
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Give Me a Slice",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sugar Coated",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rumchata Chai Latte",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amai Beats",
+    "mbid": "",
+    "listeners": 17461,
+    "playcount": 40232,
+    "listener_play_ratio": 2.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Amai+Beats\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Soibú",
+      "cloudsonmymind",
+      "ffoorreesstt",
+      "Gaccio",
+      "Kadeen B"
+    ],
+    "top_tracks": [
+      {
+        "name": "Give Me a Slice",
+        "listeners": 17449,
+        "playcount": 40183
+      },
+      {
+        "name": "Sugar Coated",
+        "listeners": 41,
+        "playcount": 46
+      },
+      {
+        "name": "Rumchata Chai Latte",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Amai+Beats"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

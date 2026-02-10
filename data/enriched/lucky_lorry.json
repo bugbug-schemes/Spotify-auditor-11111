@@ -1,0 +1,218 @@
+{
+  "artist_name": "Lucky Lorry",
+  "artist_id": "lucky_lorry",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:16:16.300382+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 331012611,
+    "name": "Lucky Lorry",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/331012611",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9a2762091bc8bd8d422c6f3070cc83e7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Livenza",
+      "Bonamico"
+    ],
+    "track_durations": [
+      135,
+      134
+    ],
+    "track_ranks": [
+      40137,
+      57768
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Volturno",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Panaro",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Piave",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rienz",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ombrone",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chiese",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Livenza",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dora Baltea",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tagliamento",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bonamico",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lucky Lorry",
+    "mbid": "",
+    "listeners": 16279,
+    "playcount": 59710,
+    "listener_play_ratio": 3.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lucky+Lorry\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "novi quiet",
+      "The Still Hour",
+      "Otto Virell",
+      "AtmoLife",
+      "Lost storys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bonamico",
+        "listeners": 11984,
+        "playcount": 24255
+      },
+      {
+        "name": "Ombrone",
+        "listeners": 6497,
+        "playcount": 11867
+      },
+      {
+        "name": "Tagliamento",
+        "listeners": 5926,
+        "playcount": 12249
+      },
+      {
+        "name": "Livenza",
+        "listeners": 3250,
+        "playcount": 5978
+      },
+      {
+        "name": "Rienz",
+        "listeners": 2647,
+        "playcount": 4178
+      },
+      {
+        "name": "Chiese",
+        "listeners": 706,
+        "playcount": 1102
+      },
+      {
+        "name": "Panaro",
+        "listeners": 21,
+        "playcount": 28
+      },
+      {
+        "name": "Volturno",
+        "listeners": 18,
+        "playcount": 23
+      },
+      {
+        "name": "Piave",
+        "listeners": 6,
+        "playcount": 14
+      },
+      {
+        "name": "Dora Baltea",
+        "listeners": 2,
+        "playcount": 16
+      }
+    ],
+    "url": "https://www.last.fm/music/Lucky+Lorry"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

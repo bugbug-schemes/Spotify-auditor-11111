@@ -1,0 +1,582 @@
+{
+  "artist_name": "Roger Eno",
+  "artist_id": "roger_eno",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:45:32.052905+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "796dea98-57f0-4c92-8dce-990bdbc4510a",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1959",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "space ambient",
+      "modern classical",
+      "ambient"
+    ],
+    "aliases": [
+      "Roger Paul Eugene Eno"
+    ],
+    "isnis": [
+      "0000000078407426"
+    ],
+    "ipis": [
+      "00160528487"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000295443",
+      "bandcamp": "https://rogereno.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/23859",
+      "free streaming": "https://www.deezer.com/artist/214826",
+      "IMDb": "https://www.imdb.com/name/nm0257914/",
+      "myspace": "https://myspace.com/musicbyrogereno",
+      "official homepage": "https://www.rogereno.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-n92015401",
+      "songkick": "https://www.songkick.com/artists/360583",
+      "streaming": "https://music.apple.com/us/artist/49814751",
+      "VIAF": "http://viaf.org/viaf/54356886",
+      "wikidata": "https://www.wikidata.org/wiki/Q1351281"
+    },
+    "labels": [
+      "Gyroscope",
+      "Editions EG",
+      "Land Records",
+      "Fie! Records",
+      "Universal UMC",
+      "Virgin",
+      "All Saints Records",
+      "Deutsche Grammophon",
+      "La Cooka Ratcha",
+      "Opal Records",
+      "Backwater Records",
+      "UMC",
+      "Sine Records",
+      "Burning Shed",
+      "Recital",
+      "Painted Word Music",
+      "ArsNova",
+      "Hydrogen Dukebox",
+      "Heliopause",
+      "Materiali Sonori"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 214826,
+    "name": "Roger Eno",
+    "nb_fan": 3321,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/214826",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/36b8ec7241ececcb44d10f0bfb1812d2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Brian Eno",
+      "Scoring Berlin"
+    ],
+    "contributor_roles": {
+      "Scoring Berlin": [
+        "Main"
+      ],
+      "Brian Eno": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "The Turning Year",
+      "Blonde",
+      "Celeste",
+      "Bells",
+      "Iris",
+      "Violet",
+      "Low Cloud, Dark Skies",
+      "Dark Sienna",
+      "Obsidian",
+      "Cerulean Blue",
+      "Ultramarine",
+      "After Rain",
+      "The Moon and the Sea",
+      "Desert Sand",
+      "Snow",
+      "An Intimate Distance",
+      "Cinnabar",
+      "Above and Below",
+      "Marble",
+      "Vermilion",
+      "Spell",
+      "That Which Is Hidden",
+      "Reflections On IKB",
+      "A Place We Once Walked",
+      "Quicksilver"
+    ],
+    "track_durations": [
+      162,
+      250,
+      262,
+      203,
+      173,
+      235,
+      332,
+      228,
+      306,
+      242,
+      148,
+      244,
+      196,
+      290,
+      280,
+      260,
+      201,
+      413,
+      378,
+      204,
+      144,
+      205,
+      231,
+      365,
+      313
+    ],
+    "track_ranks": [
+      493251,
+      592867,
+      524639,
+      428428,
+      126664,
+      110798,
+      70638,
+      148232,
+      152682,
+      85677,
+      114448,
+      77875,
+      68672,
+      121698,
+      138421,
+      144761,
+      86982,
+      104982,
+      107391,
+      102852,
+      88211,
+      218312,
+      138993,
+      107473,
+      112656
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 11,
+      "ep": 2,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "Without Wind, Without Air",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "the skies: rarities",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Skies, they shift like chords…",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Turning Year – Rarities",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Turning Year",
+        "label": "",
+        "release_date": "2022-04-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mixing Colours",
+        "label": "",
+        "release_date": "2020-03-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mixing Colours (Expanded)",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Remote: Opening Doors",
+        "label": "",
+        "release_date": "2004-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Remote: The Big Chill 2004 Live",
+        "label": "",
+        "release_date": "2004-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Appointed Hour",
+        "label": "",
+        "release_date": "2003-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Voices",
+        "label": "",
+        "release_date": "2008-12-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rarities - Quartets",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rarities - Piano",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Deep Blue Day (Piano Version)",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strangely, I Dreamt",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chordal Drift",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tidescape",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strangely, I Dreamt",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Through The Blue (Piano Version)",
+        "label": "",
+        "release_date": "2023-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Above and Below",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rarities - Bells",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bells",
+        "label": "",
+        "release_date": "2022-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Place We Once Walked",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Turning Year",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wanting To Believe (Oh Holy Night)",
+        "label": "",
+        "release_date": "2021-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Travelling Sandwich (Für Elise) – Beethoven Recomposed",
+        "label": "",
+        "release_date": "2021-03-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Manganese",
+        "label": "",
+        "release_date": "2020-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow Movement: Sand",
+        "label": "",
+        "release_date": "2020-03-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blonde",
+        "label": "",
+        "release_date": "2020-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Celeste",
+        "label": "",
+        "release_date": "2020-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Joep Beving",
+      "Ludovico Einaudi",
+      "Ola Gjeilo",
+      "Luke Howard",
+      "Oskar Schuster",
+      "Dustin O'Halloran",
+      "Stephan Moccio",
+      "Jean-Michel Blais",
+      "Yiruma",
+      "Lambert"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 23859,
+    "name": "Roger Eno",
+    "profile": "Roger Eno (born 29 April 1959) is known primarily as an \"ambient\" composer through his collaborations with brother [a=Brian Eno] and producers [a=Michael Brook] and [a=Daniel Lanois], but his depth as a musician defies categorization. A multi-instrumentalist, Eno has composed many memorable scores for film and TV including \"Dune\", \"Nine And A Half Weeks\" and \"Warm Summer Rain\". His love of classical piano is evident in his many critically acclaimed solo works which feature his unique ambient chamber music style. His piano also figured prominently in the group [a=Channel Light Vessel], an ambient super-group featuring [a=Kate St. John], [a=Bill Nelson] and [a=Laraaji]. In addition to those projects, Roger Eno has worked with an illustrious assortment of musicians including [a=Michael Brook], [a=John Cale] and [a=Lol Hammond].",
+    "realname": "Roger Eugene Eno",
+    "social_urls": [
+      "http://www.rogereno.com/",
+      "https://rogereno.bandcamp.com/",
+      "https://en.wikipedia.org/wiki/Roger_Eno",
+      "http://www.starsend.org/rogereno.html",
+      "https://trouserpress.com/reviews/roger-eno/",
+      "https://www.scaruffi.com/avant/reno.html",
+      "http://www.amazings.com/galleries/gallery0041.html"
+    ],
+    "members": [],
+    "groups": [
+      "Channel Light Vessel"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 24,
+    "digital_only_releases": 76,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "2xCD, Album",
+      "2xCD, Album, Enh, Multichannel",
+      "2xFile, MP3, 320",
+      "3xCD, Comp, Mixed",
+      "4xFile, FLAC, 24-",
+      "5xFile, FLAC, EP",
+      "7\", Promo",
+      "CD, Album",
+      "CD, Album, Enh",
+      "CD, Album, Ltd",
+      "CD, Comp",
+      "CD, Copy Prot., Promo, Smplr",
+      "CD, EP, Ltd",
+      "CD, Single, Promo",
+      "CDr, Album",
+      "CDr, Single, Promo",
+      "Cass, Comp",
+      "File, FLAC, Single, 24-",
+      "LP, Album",
+      "LP, Album + CD, Album"
+    ],
+    "labels": [
+      "All Saints Records (2)",
+      "Backwater Records",
+      "Beatner FM",
+      "Burning Shed",
+      "Cooking Vinyl",
+      "Cream, Cream, Virgin, Virgin, EMI, EMI, New State, New State",
+      "Deutsche Grammophon",
+      "Die Stadt, Janet Records",
+      "EG",
+      "Experience (3)",
+      "Heliopause",
+      "Konsequenz (2)",
+      "La Cooka Ratcha",
+      "Neutral Music",
+      "Notting Hill Music",
+      "Opal Records",
+      "Recital (2)",
+      "Universal Music Recordings",
+      "Virgin",
+      "Virgin Records (India) Pvt. Ltd.",
+      "Virgin, Virgin"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Roger Eno",
+    "mbid": "796dea98-57f0-4c92-8dce-990bdbc4510a",
+    "listeners": 284318,
+    "playcount": 3114228,
+    "listener_play_ratio": 10.95,
+    "bio_exists": true,
+    "bio_summary": "Roger Eugene Eno was born in Woodbridge, England in 1959. He is known primarily as an ambient composer.\n\nHe began euphonium lessons at twelve and at sixteen entered Colchester College to study music. On graduating and after a period of busking in London he returned to Colchester to run a music therapy course at a local hospital for the mentally handicapped.\n\nHis first recording experience was with his brother Brian Eno and Daniel Lanois for the album Apollo at Lanois' Grant Avenue Studios in Can",
+    "tags": [
+      "ambient",
+      "new age",
+      "ethereal",
+      "atmospheric",
+      "visions"
+    ],
+    "similar_artists": [
+      "Harold Budd",
+      "Brian Eno",
+      "Harold Budd/Brian Eno",
+      "Roger Eno & Brian Eno",
+      "Nils Frahm"
+    ],
+    "top_tracks": [
+      {
+        "name": "Voices",
+        "listeners": 52371,
+        "playcount": 180229
+      },
+      {
+        "name": "Through The Blue - Piano Version",
+        "listeners": 50217,
+        "playcount": 211949
+      },
+      {
+        "name": "Celeste",
+        "listeners": 49464,
+        "playcount": 172982
+      },
+      {
+        "name": "Iris",
+        "listeners": 38075,
+        "playcount": 122224
+      },
+      {
+        "name": "Blonde",
+        "listeners": 36412,
+        "playcount": 125833
+      },
+      {
+        "name": "The Turning Year",
+        "listeners": 28947,
+        "playcount": 80763
+      },
+      {
+        "name": "Verdigris",
+        "listeners": 28809,
+        "playcount": 106013
+      },
+      {
+        "name": "Fleeting Smile",
+        "listeners": 28621,
+        "playcount": 108389
+      },
+      {
+        "name": "Spring Frost",
+        "listeners": 28074,
+        "playcount": 100347
+      },
+      {
+        "name": "Through The Blue",
+        "listeners": 24288,
+        "playcount": 74368
+      }
+    ],
+    "url": "https://www.last.fm/music/Roger+Eno"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

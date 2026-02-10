@@ -1,0 +1,131 @@
+{
+  "artist_name": "Adiamo Mero",
+  "artist_id": "adiamo_mero",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:43:14.221089+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 258947492,
+    "name": "Adiamo Mero",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/258947492",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/759432293821c694d48bad444ed3f1ad/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Mirabella"
+    ],
+    "track_durations": [
+      161
+    ],
+    "track_ranks": [
+      24953
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Morning Shimmer",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glory Keys",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirabella",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Adiamo Mero",
+    "mbid": "",
+    "listeners": 9580,
+    "playcount": 33492,
+    "listener_play_ratio": 3.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Adiamo+Mero\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Théo Laurent",
+      "Grazia Bellini",
+      "Redd Mae",
+      "Van Kahloo",
+      "Livia Marcella"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mirabella",
+        "listeners": 9578,
+        "playcount": 33485
+      },
+      {
+        "name": "Morning Shimmer",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Glory Keys",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Adiamo+Mero"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

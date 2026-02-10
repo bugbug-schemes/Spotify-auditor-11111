@@ -1,0 +1,405 @@
+{
+  "artist_name": "Erik Moreau",
+  "artist_id": "erik_moreau",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:30:02.471200+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "35166a6b-6cfe-4b53-b4a9-1d650ced9f81",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/186190837",
+      "purchase for download": "https://music.apple.com/us/artist/1653783691",
+      "soundcloud": "https://soundcloud.com/erikmoreau",
+      "streaming": "https://tidal.com/artist/34923864",
+      "youtube music": "https://music.youtube.com/channel/UCnMatYb-XjW-AS95RqCCxqQ"
+    },
+    "labels": [
+      "Calm Lands Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 186190837,
+    "name": "Erik Moreau",
+    "nb_fan": 21,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/186190837",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/773a66692835ae77f7ed18dc6e6869ab/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Faded Moment",
+      "He Said She Got It Going",
+      "He Knows I'm Sophisticated",
+      "A Vacant Seat",
+      "Reminded On Sundays",
+      "When You Wish Upon a Star",
+      "Not Enough Reason"
+    ],
+    "track_durations": [
+      158,
+      158,
+      167,
+      249,
+      220,
+      167,
+      223
+    ],
+    "track_ranks": [
+      69641,
+      292626,
+      40999,
+      63909,
+      22320,
+      8972,
+      25283
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 29
+    },
+    "albums": [
+      {
+        "title": "Still hurts",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reminded On Sundays",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The silent refrain",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Few Against Many",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Had No Purpose",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Face to face",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Spotlight",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Vacant Seat",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deeply Touched",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Live Apart",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It’s forgotten",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For now especially",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember the time",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Not Going Back",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Not Enough Reason",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old way of dating",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better than this",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Room to swing",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Second Chances",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Speak of the devil",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quite a lot",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Movie Ideas",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We may never know",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faded Moment",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Put on the Badge",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fever For The Mood",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "He Knows I'm Sophisticated",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "He Said She Got It Going",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When You Wish Upon a Star",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 355,
+    "name": "Unknown Artist",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "",
+    "physical_releases": 0,
+    "digital_only_releases": 0,
+    "total_releases": 0,
+    "formats": [],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Erik Moreau",
+    "mbid": "35166a6b-6cfe-4b53-b4a9-1d650ced9f81",
+    "listeners": 47566,
+    "playcount": 140890,
+    "listener_play_ratio": 2.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Erik+Moreau\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Bernhard Cohen",
+      "The Lyon Hearts",
+      "Ben Lively",
+      "Fortune Morel Trio",
+      "Songbird Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "He Knows I'm Sophisticated",
+        "listeners": 15833,
+        "playcount": 32542
+      },
+      {
+        "name": "He Said She Got It Going",
+        "listeners": 12207,
+        "playcount": 30703
+      },
+      {
+        "name": "Faded Moment",
+        "listeners": 10877,
+        "playcount": 22485
+      },
+      {
+        "name": "When You Wish Upon a Star",
+        "listeners": 9186,
+        "playcount": 18385
+      },
+      {
+        "name": "Fever For The Mood",
+        "listeners": 5905,
+        "playcount": 10827
+      },
+      {
+        "name": "Speak of the devil",
+        "listeners": 4125,
+        "playcount": 7722
+      },
+      {
+        "name": "Live Apart",
+        "listeners": 1686,
+        "playcount": 4407
+      },
+      {
+        "name": "Not Enough Reason",
+        "listeners": 1609,
+        "playcount": 3427
+      },
+      {
+        "name": "Room to swing",
+        "listeners": 1573,
+        "playcount": 2946
+      },
+      {
+        "name": "Put on the Badge",
+        "listeners": 1549,
+        "playcount": 2785
+      }
+    ],
+    "url": "https://www.last.fm/music/Erik+Moreau"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

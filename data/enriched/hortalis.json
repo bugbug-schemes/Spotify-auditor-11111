@@ -1,0 +1,86 @@
+{
+  "artist_name": "Hortalis",
+  "artist_id": "hortalis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:10:56.545548+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Hortalis', got 'The Herbaliser'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hortalis",
+    "mbid": "",
+    "listeners": 4651,
+    "playcount": 17803,
+    "listener_play_ratio": 3.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hortalis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "dJupiter",
+      "Aether Waves",
+      "Sagamo",
+      "Ambientelles",
+      "Wander Paths"
+    ],
+    "top_tracks": [
+      {
+        "name": "Exosphere",
+        "listeners": 4647,
+        "playcount": 17787
+      },
+      {
+        "name": "Winter's Glow",
+        "listeners": 4,
+        "playcount": 11
+      },
+      {
+        "name": "Silent Night",
+        "listeners": 4,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Hortalis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

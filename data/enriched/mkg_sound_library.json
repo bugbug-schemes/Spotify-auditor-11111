@@ -1,0 +1,211 @@
+{
+  "artist_name": "MKG Sound Library",
+  "artist_id": "mkg_sound_library",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:22:34.775717+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 158813562,
+    "name": "MKG Sound Library",
+    "nb_fan": 3,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/158813562",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/61d9ea7501316adef3504d6c8875ef13/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 6,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Nature White Noise",
+        "label": "",
+        "release_date": "2025-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sleepy Ambience for Restful Nights",
+        "label": "",
+        "release_date": "2024-05-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Soothing Green Noise",
+        "label": "",
+        "release_date": "2023-03-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Whispers of the Fan",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "HD Pink Noise Vol. 1",
+        "label": "",
+        "release_date": "2021-11-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "HD White Noise Vol. 1",
+        "label": "",
+        "release_date": "2021-11-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "More Pink Noise",
+        "label": "",
+        "release_date": "2021-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "More White Noise",
+        "label": "",
+        "release_date": "2021-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "HD Pink Noise Vol. 2",
+        "label": "",
+        "release_date": "2021-10-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rainy Cabin & Bird Sounds",
+        "label": "",
+        "release_date": "2024-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "MKG Sound Library",
+    "mbid": "",
+    "listeners": 55039,
+    "playcount": 1244219,
+    "listener_play_ratio": 22.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/MKG+Sound+Library\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ablation",
+      "JBE Noise Factory",
+      "The BD Noise Maker",
+      "HQ-10",
+      "Noyze Freq"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rainy River - Green Noise",
+        "listeners": 18602,
+        "playcount": 115319
+      },
+      {
+        "name": "River Birds (Green Noise 220Hz HP)",
+        "listeners": 12722,
+        "playcount": 38237
+      },
+      {
+        "name": "Still River - Green Noise",
+        "listeners": 9725,
+        "playcount": 29807
+      },
+      {
+        "name": "Perfect Calming Fan",
+        "listeners": 9557,
+        "playcount": 594434
+      },
+      {
+        "name": "Birds By The River - Green Noise",
+        "listeners": 8375,
+        "playcount": 23706
+      },
+      {
+        "name": "Green Noise - Waterfall",
+        "listeners": 8254,
+        "playcount": 42221
+      },
+      {
+        "name": "Morning Rain - Green Noise",
+        "listeners": 7426,
+        "playcount": 39425
+      },
+      {
+        "name": "Cozy Fan Soundscape (Remastered)",
+        "listeners": 5873,
+        "playcount": 195777
+      },
+      {
+        "name": "Black Noise Thunderstorm",
+        "listeners": 5366,
+        "playcount": 21718
+      },
+      {
+        "name": "Black Noise For Studying",
+        "listeners": 4139,
+        "playcount": 14692
+      }
+    ],
+    "url": "https://www.last.fm/music/MKG+Sound+Library"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

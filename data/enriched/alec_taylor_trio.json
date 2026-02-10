@@ -1,0 +1,411 @@
+{
+  "artist_name": "Alec Taylor Trio",
+  "artist_id": "alec_taylor_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:49:04.608433+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a71f0193-d9bf-4ce7-9fca-0cc96578e8d2",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/185663357",
+      "purchase for download": "https://music.apple.com/us/artist/1649156717",
+      "soundcloud": "https://soundcloud.com/alectaylortrio",
+      "streaming": "https://tidal.com/artist/34827818",
+      "youtube music": "https://music.youtube.com/channel/UCMBg-jrLySLj6fgCLQXr-ww"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 185663357,
+    "name": "Alec Taylor Trio",
+    "nb_fan": 24,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/185663357",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/38ecfadb1f935577e5c4c23539d3cff1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Out of Nowhere",
+      "Weary Whispers",
+      "Skyline",
+      "My Words Are Not Enough",
+      "Evening Sun",
+      "I Remember You",
+      "Have Faith in Me"
+    ],
+    "track_durations": [
+      168,
+      178,
+      196,
+      162,
+      175,
+      182,
+      232
+    ],
+    "track_ranks": [
+      454710,
+      359596,
+      120746,
+      103268,
+      118608,
+      69964,
+      52877
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 28
+    },
+    "albums": [
+      {
+        "title": "Today or Tomorrow",
+        "label": "",
+        "release_date": "2024-09-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Full of Nothing",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "If You Thought You Knew",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evening Sun",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Parentheses",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Were Almost a Song",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Your Arms",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Indigo Sky",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serenity",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Veil of Maya",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Have Faith in Me",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noite de Luzes Perdidas",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skyline",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "September Moon",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Annas Visa",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Black Sun",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Milford Sound",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Between Stories",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Confessin' (that I Love You)",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Moments",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out of Nowhere",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gloomy Sunday",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weary Whispers",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Horizon",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Took Advantage of Me",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Words Are Not Enough",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Simple",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Easier Than You Might Think",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Broken",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Remember You",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Bill Evans",
+      "Chick Corea",
+      "Erroll Garner",
+      "Miles Davis",
+      "McCoy Tyner",
+      "Kenny Dorham",
+      "Lester Young",
+      "Sonny Stitt",
+      "Gerry Mulligan",
+      "Wes Montgomery"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alec Taylor Trio",
+    "mbid": "a71f0193-d9bf-4ce7-9fca-0cc96578e8d2",
+    "listeners": 76190,
+    "playcount": 266589,
+    "listener_play_ratio": 3.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Alec+Taylor+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "The Three Queens",
+      "Irvin Smith Group",
+      "Lia Riggs Trio",
+      "Reuben Plays",
+      "CMC 3"
+    ],
+    "top_tracks": [
+      {
+        "name": "Evening Sun",
+        "listeners": 19395,
+        "playcount": 40719
+      },
+      {
+        "name": "My Words Are Not Enough",
+        "listeners": 15521,
+        "playcount": 32140
+      },
+      {
+        "name": "It's Easier Than You Might Think",
+        "listeners": 14814,
+        "playcount": 31308
+      },
+      {
+        "name": "I Remember You",
+        "listeners": 12804,
+        "playcount": 26239
+      },
+      {
+        "name": "Skyline",
+        "listeners": 11362,
+        "playcount": 22266
+      },
+      {
+        "name": "Weary Whispers",
+        "listeners": 10448,
+        "playcount": 24590
+      },
+      {
+        "name": "Have Faith in Me",
+        "listeners": 7108,
+        "playcount": 14614
+      },
+      {
+        "name": "Gloomy Sunday",
+        "listeners": 6110,
+        "playcount": 14550
+      },
+      {
+        "name": "Annas Visa",
+        "listeners": 6030,
+        "playcount": 11461
+      },
+      {
+        "name": "Black Sun",
+        "listeners": 5650,
+        "playcount": 10709
+      }
+    ],
+    "url": "https://www.last.fm/music/Alec+Taylor+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

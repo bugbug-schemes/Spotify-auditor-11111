@@ -1,0 +1,506 @@
+{
+  "artist_name": "Kelbin",
+  "artist_id": "kelbin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:47:37.340378+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "917f6e39-a0b6-4c7c-bd0e-e92869c984b9",
+    "type": "Person",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "non-binary",
+    "genres": [
+      "uk garage",
+      "house",
+      "wonky",
+      "electronic",
+      "experimental",
+      "idm",
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://kelbin.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/10392583",
+      "free streaming": "https://www.deezer.com/artist/88680602",
+      "other databases": "https://rateyourmusic.com/artist/kelbin",
+      "patronage": "https://www.patreon.com/imkelbin",
+      "purchase for download": "https://www.beatport.com/artist/kelbin/920517",
+      "social network": "https://www.instagram.com/imkelbin/",
+      "soundcloud": "https://soundcloud.com/imkelbin",
+      "streaming": "https://tidal.com/artist/18731983"
+    },
+    "labels": [
+      "Renraku",
+      "The Tabula Rasa Record Company",
+      "[no label]",
+      "UKF",
+      "Future Classic"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 88680602,
+    "name": "Kelbin",
+    "nb_fan": 47,
+    "nb_album": 43,
+    "link": "https://www.deezer.com/artist/88680602",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f647faf20e1b00e6ffd51c67365a5d78/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Canary Yellow",
+      "Harry Hayes",
+      "Kinoteki",
+      "Nikki Nair",
+      "Rohaan",
+      "Thys, Nikki Nair, Kelbin",
+      "thys"
+    ],
+    "contributor_roles": {
+      "Rohaan": [
+        "Main"
+      ],
+      "Kinoteki": [
+        "Main"
+      ],
+      "Harry Hayes": [
+        "Main"
+      ],
+      "Thys, Nikki Nair, Kelbin": [
+        "Main"
+      ],
+      "thys": [
+        "Main"
+      ],
+      "Nikki Nair": [
+        "Main"
+      ],
+      "Canary Yellow": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "run away",
+      "Vital Loop",
+      "Cease and Desist",
+      "Everything Infinite",
+      "The Whisper",
+      "MissU2",
+      "Cheese Interface (Original)",
+      "The Wasp (Original)",
+      "The Whisper (Kelbin VIP)",
+      "Follow Me",
+      "Turn It Up",
+      "N-Zap"
+    ],
+    "track_durations": [
+      192,
+      236,
+      367,
+      422,
+      212,
+      220,
+      291,
+      253,
+      415,
+      360,
+      193,
+      207
+    ],
+    "track_ranks": [
+      131782,
+      100042,
+      32270,
+      55880,
+      18676,
+      101720,
+      24232,
+      24878,
+      37189,
+      11094,
+      18846,
+      2751
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 6,
+      "single": 35
+    },
+    "albums": [
+      {
+        "title": "Silence Kills",
+        "label": "",
+        "release_date": "2022-06-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "EFYL",
+        "label": "",
+        "release_date": "2021-11-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "KUMO 2025 - Remix Pack",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ion Pulse Advent Calendar",
+        "label": "",
+        "release_date": "2022-12-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Blood on Velvet",
+        "label": "",
+        "release_date": "2022-11-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wav Forest",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Balance (Remixes)",
+        "label": "",
+        "release_date": "2021-04-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": ".ARP",
+        "label": "",
+        "release_date": "2020-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Matter (5how remix)",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Micro",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Indigo",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Matter (polyfawn Remix)",
+        "label": "",
+        "release_date": "2025-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vital Loop",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Assumptions",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Matter",
+        "label": "",
+        "release_date": "2025-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "PIOGGIA ULTRA (Acquazzone)",
+        "label": "",
+        "release_date": "2025-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MissU2",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Always",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Second Window",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Turn It Up / N-Zap",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow Me",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "An Opal Echo",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "run away",
+        "label": "",
+        "release_date": "2023-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wait4",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Over U",
+        "label": "",
+        "release_date": "2023-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You & I",
+        "label": "",
+        "release_date": "2023-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Want2 (Additive Mix)",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Air River",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Searchlight",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Make It",
+        "label": "",
+        "release_date": "2023-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10392583,
+    "name": "Kelbin",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://kelbin.bandcamp.com/music",
+      "https://twitter.com/imKelbin",
+      "https://soundcloud.com/imkelbin"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 41,
+    "total_releases": 42,
+    "formats": [
+      "",
+      "100xFile, MP3, Comp, 320",
+      "12xFile, FLAC, Album",
+      "15xFile, WAV, Comp",
+      "27xFile, MP3, Comp, 320",
+      "2xFile, MP3, 320",
+      "3xFile, FLAC, EP",
+      "4xFile, FLAC, Comp",
+      "5xFile, FLAC, EP",
+      "8xFile, FLAC, Album",
+      "9xFile, FLAC, Album",
+      "CDr, Comp, Ltd",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Bleep (2)",
+      "Imprint For Charity",
+      "Moveltraxx",
+      "Not On Label",
+      "Not On Label (Kelbin Self-released)",
+      "Renraku",
+      "Satellite Era",
+      "Tabula Rasa (7)",
+      "The Tabula Rasa Record Company",
+      "UKF Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kelbin",
+    "mbid": "917f6e39-a0b6-4c7c-bd0e-e92869c984b9",
+    "listeners": 7696,
+    "playcount": 35638,
+    "listener_play_ratio": 4.63,
+    "bio_exists": true,
+    "bio_summary": "Kelbin is modular music in its most sincere, unpretentious form. An electronic musician, producer and artist based in Italy, Kelbin first started dabbling in music in 2015. They've since developed an enveloping organic sound, which stems from pushing modular synth emulation and MIDI programming to its limits. \n\nKelbin's smooth take on genres like IDM, future garage and other forms of contemporary bass music is inspired equally by the abstract, carefully sculpted soundscapes of Eprom <a href=\"htt",
+    "tags": [
+      "electronic",
+      "ambient",
+      "downtempo",
+      "idm",
+      "drone"
+    ],
+    "similar_artists": [
+      "Canary Yellow",
+      "RamonPang",
+      "Maya Q",
+      "Sv1",
+      "Vier"
+    ],
+    "top_tracks": [
+      {
+        "name": "Vital Loop",
+        "listeners": 3117,
+        "playcount": 5707
+      },
+      {
+        "name": "Turn It Up",
+        "listeners": 817,
+        "playcount": 2247
+      },
+      {
+        "name": "N-ZAP",
+        "listeners": 640,
+        "playcount": 1543
+      },
+      {
+        "name": "The Whisper (Kelbin VIP)",
+        "listeners": 612,
+        "playcount": 1812
+      },
+      {
+        "name": "Balance - Dj Floor Remix",
+        "listeners": 471,
+        "playcount": 1000
+      },
+      {
+        "name": "Always",
+        "listeners": 451,
+        "playcount": 1059
+      },
+      {
+        "name": "Second Window",
+        "listeners": 417,
+        "playcount": 1344
+      },
+      {
+        "name": "Wait4",
+        "listeners": 399,
+        "playcount": 1311
+      },
+      {
+        "name": "Driver",
+        "listeners": 382,
+        "playcount": 659
+      },
+      {
+        "name": "Want2 (Additive Mix)",
+        "listeners": 346,
+        "playcount": 1052
+      }
+    ],
+    "url": "https://www.last.fm/music/Kelbin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

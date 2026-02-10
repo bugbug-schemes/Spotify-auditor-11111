@@ -1,0 +1,180 @@
+{
+  "artist_name": "Avery Tormichael",
+  "artist_id": "avery_tormichael",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:20:04.719519+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 219084645,
+    "name": "Avery Tormichael",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/219084645",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/94d240d544c39ee4a5501ddcfde65143/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Jingle Bells",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frosty the Snowman (Fireplace)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ding Dong! Merrily on High (Fireplace Version)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Valse Nouvelle",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frosty the Snowman",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ding Dong! Merrily on High",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Willow Weep For Me",
+        "label": "",
+        "release_date": "2023-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Fine Romance",
+        "label": "",
+        "release_date": "2023-08-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Avery Tormichael",
+    "mbid": "",
+    "listeners": 15493,
+    "playcount": 58179,
+    "listener_play_ratio": 3.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Avery+Tormichael\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "In-No-Scence",
+      "Hveiti Brauo",
+      "Lecce Mchano",
+      "Galeazzo",
+      "A. Mayven"
+    ],
+    "top_tracks": [
+      {
+        "name": "New Years Ahead",
+        "listeners": 8337,
+        "playcount": 37370
+      },
+      {
+        "name": "Frosty the Snowman",
+        "listeners": 6743,
+        "playcount": 18658
+      },
+      {
+        "name": "Jingle Bells",
+        "listeners": 542,
+        "playcount": 964
+      },
+      {
+        "name": "Ding Dong! Merrily on High",
+        "listeners": 506,
+        "playcount": 1180
+      },
+      {
+        "name": "Valse Nouvelle",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Willow Weep for Me",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "A Fine Romance",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Avery+Tormichael"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

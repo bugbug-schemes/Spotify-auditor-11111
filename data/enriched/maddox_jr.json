@@ -1,0 +1,198 @@
+{
+  "artist_name": "Maddox JR",
+  "artist_id": "maddox_jr",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:23:56.686955+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c1d684e2-a0aa-419c-997b-d36eedc35da4",
+    "type": "Person",
+    "country": "",
+    "area": "Georgia",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "James Wesley Maddox, Jr."
+    ],
+    "isnis": [
+      "0000000507986367"
+    ],
+    "ipis": [
+      "00533736940"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1697187",
+      "IMDb": "https://www.imdb.com/name/nm14740425/",
+      "interview": "https://voyageatl.com/interview/meet-james-homebwoi-maddox-metro-southern-media-metro-atlanta/"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 166607097,
+    "name": "Maddox JR",
+    "nb_fan": 3,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/166607097",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a4873b70479ab1f80b67099259240d80/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Lingering",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Passing Light",
+        "label": "",
+        "release_date": "2025-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Radiance",
+        "label": "",
+        "release_date": "2025-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Incognito",
+        "label": "",
+        "release_date": "2022-02-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Legacy",
+        "label": "",
+        "release_date": "2021-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 956181,
+    "name": "James Maddox",
+    "profile": "Member of the ADC band, lead vocalist and percussions.",
+    "realname": "James Maddox Jr.",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "ADC Band"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 11,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "12\""
+    ],
+    "labels": [
+      "Arrogant Records (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Maddox JR",
+    "mbid": "",
+    "listeners": 39156,
+    "playcount": 166458,
+    "listener_play_ratio": 4.25,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Maddox+JR\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ervin Alba",
+      "Dhriti Tiwari",
+      "The Nowhows",
+      "Aisha Akebono",
+      "Elsa Whage"
+    ],
+    "top_tracks": [
+      {
+        "name": "Incognito",
+        "listeners": 16398,
+        "playcount": 61449
+      },
+      {
+        "name": "When we looked at the stars",
+        "listeners": 13268,
+        "playcount": 64801
+      },
+      {
+        "name": "Nothing else mattered",
+        "listeners": 11899,
+        "playcount": 33270
+      },
+      {
+        "name": "Radiance",
+        "listeners": 1812,
+        "playcount": 5785
+      },
+      {
+        "name": "Placidity",
+        "listeners": 314,
+        "playcount": 1073
+      },
+      {
+        "name": "Legacy",
+        "listeners": 16,
+        "playcount": 80
+      }
+    ],
+    "url": "https://www.last.fm/music/Maddox+JR"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

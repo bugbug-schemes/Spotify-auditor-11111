@@ -1,0 +1,96 @@
+{
+  "artist_name": "Selren",
+  "artist_id": "selren",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:58:50.167267+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Selren', got 'Selena Gomez'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Selren",
+    "mbid": "",
+    "listeners": 12797,
+    "playcount": 33189,
+    "listener_play_ratio": 2.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Selren\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Arnar Egilsson",
+      "Rhyaene",
+      "August Sands",
+      "Veldas",
+      "Nómis"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Wait",
+        "listeners": 9751,
+        "playcount": 22462
+      },
+      {
+        "name": "Thoughtful",
+        "listeners": 4279,
+        "playcount": 7240
+      },
+      {
+        "name": "When We Fall",
+        "listeners": 1835,
+        "playcount": 2774
+      },
+      {
+        "name": "This is The Time",
+        "listeners": 269,
+        "playcount": 444
+      },
+      {
+        "name": "Rising Up",
+        "listeners": 157,
+        "playcount": 269
+      }
+    ],
+    "url": "https://www.last.fm/music/Selren"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

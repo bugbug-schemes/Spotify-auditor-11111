@@ -1,0 +1,542 @@
+{
+  "artist_name": "Hovvdy",
+  "artist_id": "hovvdy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:11:21.698594+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "545fce1f-f8d6-46e8-8e01-60a911216541",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://hovvdy.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/5193371",
+      "free streaming": "https://www.deezer.com/artist/9706644",
+      "streaming": "https://tidal.com/artist/7544068",
+      "wikidata": "https://www.wikidata.org/wiki/Q85767506",
+      "wikipedia": "https://www.wikidata.org/wiki/Q85767506"
+    },
+    "labels": [
+      "Audiotree Music",
+      "Merdurhaus Records",
+      "Saddle Creek Records",
+      "[no label]",
+      "Grand Jury Music",
+      "Double Double Whammy",
+      "Arts & Crafts Productions Inc.",
+      "Arts & Crafts"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9706644,
+    "name": "Hovvdy",
+    "nb_fan": 968,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/9706644",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/adf2de5aecb5d16517b4b7cf24a00bc3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Lomelda",
+      "runo plum"
+    ],
+    "contributor_roles": {
+      "runo plum": [
+        "Main"
+      ],
+      "Lomelda": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Lifted",
+      "Cathedral",
+      "Blindsided",
+      "True Love",
+      "Make Ya Proud",
+      "Warning Sign",
+      "Shooting Star",
+      "Jean (Julie's Version)",
+      "One Bottle",
+      "Talk",
+      "GSM",
+      "Ruby",
+      "The Only Exception",
+      "Portrait",
+      "Junior Day League",
+      "Give It Up",
+      "Left Out",
+      "Jean",
+      "Pretend",
+      "Forever",
+      "Lake June",
+      "Runner",
+      "Problem",
+      "Bad News",
+      "Everything"
+    ],
+    "track_durations": [
+      193,
+      184,
+      222,
+      251,
+      210,
+      282,
+      143,
+      194,
+      189,
+      74,
+      211,
+      183,
+      218,
+      182,
+      203,
+      231,
+      183,
+      181,
+      154,
+      208,
+      154,
+      224,
+      154,
+      174,
+      197
+    ],
+    "track_ranks": [
+      216399,
+      38287,
+      158292,
+      156509,
+      325039,
+      25698,
+      345822,
+      32942,
+      41758,
+      54641,
+      21990,
+      32827,
+      18381,
+      240725,
+      63725,
+      22082,
+      19997,
+      64254,
+      57372,
+      157491,
+      47967,
+      84825,
+      42144,
+      102147,
+      32248
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "ep": 5,
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "Hovvdy",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "True Love",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heavy Lifter",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Heavy Lifter Demos",
+        "label": "",
+        "release_date": "2019-09-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cranberry",
+        "label": "",
+        "release_date": "2018-02-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hovvdy (Audiotree Live)",
+        "label": "",
+        "release_date": "2017-10-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Taster",
+        "label": "",
+        "release_date": "2017-04-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at Julie's",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "billboard for my feelings",
+        "label": "",
+        "release_date": "2022-05-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Covers 2",
+        "label": "",
+        "release_date": "2021-01-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Covers",
+        "label": "",
+        "release_date": "2019-06-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Stay Warm",
+        "label": "",
+        "release_date": "2016-08-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shooting Star",
+        "label": "",
+        "release_date": "2025-02-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bubba (Julie's Version)",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jean (Julie's Version)",
+        "label": "",
+        "release_date": "2024-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Every Exchange (Edit)",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Portrait",
+        "label": "",
+        "release_date": "2024-01-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bubba",
+        "label": "",
+        "release_date": "2024-01-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jean",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "To Me It Was (Hovvdy Version)",
+        "label": "",
+        "release_date": "2023-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ruby",
+        "label": "",
+        "release_date": "2022-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hide",
+        "label": "",
+        "release_date": "2022-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Town",
+        "label": "",
+        "release_date": "2022-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everything",
+        "label": "",
+        "release_date": "2022-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blindsided",
+        "label": "",
+        "release_date": "2021-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Around Again / Junior Day League",
+        "label": "",
+        "release_date": "2021-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "True Love",
+        "label": "",
+        "release_date": "2021-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Sorry",
+        "label": "",
+        "release_date": "2024-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Runner",
+        "label": "",
+        "release_date": "2024-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy/Turns Blue",
+        "label": "",
+        "release_date": "2018-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Julia Jacklin",
+      "Motel Radio",
+      "Flyte",
+      "Soccer Mommy",
+      "Haley Heynderickx",
+      "Skullcrusher",
+      "Madi Diaz",
+      "Westerman",
+      "Big Thief",
+      "Lucius"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5193371,
+    "name": "Hovvdy",
+    "profile": "Hovvdy (pronounced \"Howdy\") is a duo known for creating a nostalgic, comforting blend of indie rock, folk and pop. \r\n\r\nBased in Austin, Texas, members [a6199124] and [a6199127] met in 2014 at a baseball game and formed the band that same year. Primarily drummers at the time, the two each had material intended for solo projects, but they decided to merge as a group instead after noticing their musical compatibility. \r\n\r\nTowards the end of 2014, they released their first EP (simply titled \"ep\"), which was recorded in various bedrooms across their home state. Their debut album \"Taster\" was released in 2016, originally through Sports Day Records. The following year, they signed to Double Double Whammy, who reissued \"Taster\" and released Hovvdy’s second album \"Cranberry\" in 2018. \"Heavy Lifter,\" their third album (released in 2019, also through Double Double Whammy), found the band expanding their slowcore-driven approach into more upbeat, folk-pop territory. \r\n\r\nAfter two self-released sin",
+    "realname": "",
+    "social_urls": [
+      "https://hovvdy.bandcamp.com",
+      "https://www.facebook.com/hovvdy/",
+      "https://www.hovvdy.com/",
+      "https://instagram.com/hovvdy",
+      "https://grandjurymusic.com/artist/hovvdy/"
+    ],
+    "members": [
+      "Will Taylor (13)",
+      "Charlie Martin (5)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 29,
+    "total_releases": 36,
+    "formats": [
+      "",
+      "10xFile, FLAC",
+      "4xFile, FLAC",
+      "7\", Single",
+      "8xFile, MP3, EP, 320",
+      "CD",
+      "CD, Smplr",
+      "CDr",
+      "CDr, Promo, Smplr",
+      "Cass, Album, Comp, Ltd, Num",
+      "Cass, Comp",
+      "Cass, Single, Cle",
+      "File, AAC, Single, 320",
+      "File, MP3, 320",
+      "File, MP3, Single, 320",
+      "File, MPEG-4 Video, Comp, 124 + Pos",
+      "LP, Album, Comp, Ltd, Pin",
+      "LP, Comp, Club, Cre"
+    ],
+    "labels": [
+      "Arts & Crafts",
+      "Audiotree Music",
+      "Grand Jury",
+      "KUTX 98.9 FM",
+      "KVRX",
+      "Lost Map Records",
+      "Magnolia Music",
+      "Merdurhaus",
+      "Not On Label",
+      "Not On Label (Hovvdy Self-released)",
+      "Peach Bloom",
+      "Polyvinyl Record Company, Double Double Whammy",
+      "Ruination Record Co.",
+      "Specialist Subject Records, Double Double Whammy"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hovvdy",
+    "mbid": "545fce1f-f8d6-46e8-8e01-60a911216541",
+    "listeners": 315256,
+    "playcount": 5441601,
+    "listener_play_ratio": 17.26,
+    "bio_exists": true,
+    "bio_summary": "Based in Austin, Texas, Hovvdy (pronounced “howdy”) is the writing and recording project of Charlie Martin and Will Taylor. The duo, both primarily drummers, first met in the fall of 2014 and quickly bonded over a love for quiet music. Within a few weeks, they had combined songs and began recording their first EP in bedrooms and family homes across Texas. <a href=\"https://www.last.fm/music/Hovvdy\">Read more on Last.fm</a>",
+    "tags": [
+      "Lo-Fi",
+      "slowcore",
+      "shoegaze",
+      "indie rock",
+      "indie pop"
+    ],
+    "similar_artists": [
+      "Wishy",
+      "This is Lorelei",
+      "Trace Mountains",
+      "Another Michael",
+      "Dehd"
+    ],
+    "top_tracks": [
+      {
+        "name": "Talk",
+        "listeners": 91963,
+        "playcount": 287913
+      },
+      {
+        "name": "True Love",
+        "listeners": 61784,
+        "playcount": 388829
+      },
+      {
+        "name": "Pretend",
+        "listeners": 60664,
+        "playcount": 246819
+      },
+      {
+        "name": "Problem",
+        "listeners": 47916,
+        "playcount": 194506
+      },
+      {
+        "name": "Blindsided",
+        "listeners": 45251,
+        "playcount": 255423
+      },
+      {
+        "name": "Late",
+        "listeners": 38625,
+        "playcount": 129817
+      },
+      {
+        "name": "In the Sun",
+        "listeners": 35772,
+        "playcount": 131278
+      },
+      {
+        "name": "Cathedral",
+        "listeners": 34944,
+        "playcount": 165379
+      },
+      {
+        "name": "1999",
+        "listeners": 33648,
+        "playcount": 156133
+      },
+      {
+        "name": "Swing (softway)",
+        "listeners": 33141,
+        "playcount": 80023
+      }
+    ],
+    "url": "https://www.last.fm/music/Hovvdy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

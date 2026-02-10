@@ -1,0 +1,360 @@
+{
+  "artist_name": "Bill Parker",
+  "artist_id": "bill_parker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:41:41.735939+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ce6b28f7-cbfd-4e84-ab14-f365576f2175",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/3760461",
+      "purchase for download": "https://music.apple.com/us/artist/16411689",
+      "soundcloud": "https://soundcloud.com/billparker-sc",
+      "streaming": "https://tidal.com/artist/4696853",
+      "youtube music": "https://music.youtube.com/channel/UCMiwEnc1FhnvayHyzX6itLQ"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 3760461,
+    "name": "Bill Parker",
+    "nb_fan": 27,
+    "nb_album": 20,
+    "link": "https://www.deezer.com/artist/3760461",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/056163f083cf2a5e452cc8cfc326860a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Echoes of Elegance",
+      "Little Drummer Boy",
+      "I Should Care",
+      "I'm Yours"
+    ],
+    "track_durations": [
+      176,
+      180,
+      174,
+      257
+    ],
+    "track_ranks": [
+      39826,
+      10155,
+      99218,
+      31598
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "Texas Tales, Vol. 1",
+        "label": "",
+        "release_date": "2010-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nederland",
+        "label": "",
+        "release_date": "2015-03-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Evening Letters",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloudy Skies",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers in the morning",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Relent",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Wonderland",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Yours",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Share Your Thoughts",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "East Of The Moon",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Drummer Boy",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes of Elegance",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Hear A Rapsody",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Fall In Love To Easily",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost In Your Eyes",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Should Care",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring Is Here",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Always You",
+        "label": "",
+        "release_date": "2022-07-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Look For The Silver Lining",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Momentum",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 393905,
+    "name": "Bill Parker",
+    "profile": "American musician, drummer, composer, and producer, born in Lake Charles, Louisiana; died March 11, 2003 in Lake Charles, Louisiana. Lived in Oklahoma City where he ran his own label, [l500869]. Also owned [l=Optune Records].",
+    "realname": "William Parker Guidry Jr.",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 8,
+    "total_releases": 23,
+    "formats": [
+      "",
+      "12xCD, Comp, Mono, Box",
+      "2xCD, Comp",
+      "7\"",
+      "7\", Single",
+      "CD",
+      "CD, Album",
+      "CD, Album, Promo, Smplr",
+      "CD, Comp",
+      "CD, Comp, Mono",
+      "Cass, Comp, Mixed, Unofficial",
+      "LP"
+    ],
+    "labels": [
+      "Ace",
+      "Collectables, Collectables",
+      "Dorian Recordings",
+      "Goldband Records",
+      "Jador Records",
+      "Komet Musikbar",
+      "Not On Label",
+      "Optune Records",
+      "Past Perfect Silver Line",
+      "RST Records",
+      "Rhythm & Blues Records",
+      "Showboat Records (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bill Parker",
+    "mbid": "f7faa9ad-e2cd-4700-af13-196c55b3aa09",
+    "listeners": 74241,
+    "playcount": 256048,
+    "listener_play_ratio": 3.45,
+    "bio_exists": true,
+    "bio_summary": "It’s \"The Old Story\": good-looking, impressionable kid grows up on a diet of polka music and English rock & roll, leaves home after high school, ingests large doses of country music and the blues, then spends the rest of his life trying to make sense of it all. As a follow-up to \"31 minutes\", this disc contains 13 solid senders, by-products and reminders of a gloriously mis-spent youth. With the exception of \"Funky in the Bunkhouse #2\", these are guitar/vocal presentations, living-room loose. <a",
+    "tags": [],
+    "similar_artists": [
+      "Joyce Trio",
+      "Old Town Trio",
+      "Charlie Regan Three",
+      "Jonas Olofsson",
+      "Norris Walker Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Look For The Silver Lining",
+        "listeners": 24502,
+        "playcount": 58884
+      },
+      {
+        "name": "Momentum",
+        "listeners": 20289,
+        "playcount": 44601
+      },
+      {
+        "name": "Relent",
+        "listeners": 15904,
+        "playcount": 32074
+      },
+      {
+        "name": "It's Always You",
+        "listeners": 13006,
+        "playcount": 26905
+      },
+      {
+        "name": "I Should Care",
+        "listeners": 11938,
+        "playcount": 25706
+      },
+      {
+        "name": "I´m Yours",
+        "listeners": 8812,
+        "playcount": 18605
+      },
+      {
+        "name": "Little Drummer Boy",
+        "listeners": 8428,
+        "playcount": 16790
+      },
+      {
+        "name": "Echoes of Elegance",
+        "listeners": 4294,
+        "playcount": 9261
+      },
+      {
+        "name": "East Of The Moon",
+        "listeners": 3770,
+        "playcount": 7832
+      },
+      {
+        "name": "Lost In Your Eyes",
+        "listeners": 3061,
+        "playcount": 6661
+      }
+    ],
+    "url": "https://www.last.fm/music/Bill+Parker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

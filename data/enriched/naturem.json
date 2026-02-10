@@ -1,0 +1,136 @@
+{
+  "artist_name": "NatuREM",
+  "artist_id": "naturem",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:57:12.001012+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'NatuREM', got 'Bob Marley & The Wailers'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11666435,
+    "name": "Natural Remedies",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "NatuREM",
+    "mbid": "",
+    "listeners": 287795,
+    "playcount": 3878653,
+    "listener_play_ratio": 13.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/NatuREM\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "R. Guru",
+      "Liquid Planet Recordings",
+      "Rain Rec.",
+      "Northerly Nature",
+      "Nature Vibrations"
+    ],
+    "top_tracks": [
+      {
+        "name": "Wide Skies (Noise)",
+        "listeners": 94177,
+        "playcount": 619749
+      },
+      {
+        "name": "Forest Spirits (Rain)",
+        "listeners": 83252,
+        "playcount": 650669
+      },
+      {
+        "name": "REM Cycle Rain",
+        "listeners": 80124,
+        "playcount": 610969
+      },
+      {
+        "name": "Low Brown (Noise)",
+        "listeners": 64333,
+        "playcount": 361619
+      },
+      {
+        "name": "Foggy Day - Rain",
+        "listeners": 57386,
+        "playcount": 287114
+      },
+      {
+        "name": "Seaside Harbor - Rain",
+        "listeners": 49250,
+        "playcount": 346681
+      },
+      {
+        "name": "Steady Rural Rain",
+        "listeners": 41693,
+        "playcount": 252637
+      },
+      {
+        "name": "Blissful Brook (Rain)",
+        "listeners": 17498,
+        "playcount": 82121
+      },
+      {
+        "name": "Ocean Tranquility",
+        "listeners": 12210,
+        "playcount": 48572
+      },
+      {
+        "name": "Manhattan Beach Waves",
+        "listeners": 11373,
+        "playcount": 49389
+      }
+    ],
+    "url": "https://www.last.fm/music/NatuREM"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

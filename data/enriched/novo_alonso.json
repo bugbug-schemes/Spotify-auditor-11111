@@ -1,0 +1,193 @@
+{
+  "artist_name": "Novo Alonso",
+  "artist_id": "novo_alonso",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:08:10.930834+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 215180425,
+    "name": "Novo Alonso",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/215180425",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7a4ad0c50610126efcd74823b8b0dd64/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Small World",
+      "Between the Streets"
+    ],
+    "track_durations": [
+      125,
+      180
+    ],
+    "track_ranks": [
+      160564,
+      62639
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "A Leading Light",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow Wonder",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bird of Passage",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Between the Streets",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Voyage",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noticed Moments",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Subatlantic",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Scenical",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Small World",
+        "label": "",
+        "release_date": "2023-06-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Novo Alonso",
+    "mbid": "",
+    "listeners": 21474,
+    "playcount": 119460,
+    "listener_play_ratio": 5.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Novo+Alonso\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "russell preston",
+      "Julian Emerson",
+      "Joel Owen",
+      "Kyrie Barnes",
+      "Randall Peterson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Between the Streets",
+        "listeners": 11173,
+        "playcount": 55113
+      },
+      {
+        "name": "Small World",
+        "listeners": 5936,
+        "playcount": 25652
+      },
+      {
+        "name": "Noticed Moments",
+        "listeners": 5455,
+        "playcount": 25821
+      },
+      {
+        "name": "Before You",
+        "listeners": 4358,
+        "playcount": 12672
+      },
+      {
+        "name": "Little Voyage",
+        "listeners": 129,
+        "playcount": 201
+      },
+      {
+        "name": "Slow Wonder",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Novo+Alonso"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

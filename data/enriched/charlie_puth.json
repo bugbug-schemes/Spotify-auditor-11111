@@ -1,0 +1,628 @@
+{
+  "artist_name": "Charlie Puth",
+  "artist_id": "charlie_puth",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:04:34.738709+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1991-12-02",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "pop",
+      "funk",
+      "soul",
+      "ballad",
+      "dance-pop",
+      "neo soul",
+      "pop soul",
+      "contemporary pop/rock",
+      "contemporary r&b",
+      "soft pop",
+      "social media pop"
+    ],
+    "aliases": [
+      "찰리푸스",
+      "찰리 푸스",
+      "Charles Otto Puth Jr."
+    ],
+    "isnis": [
+      "0000000448806927"
+    ],
+    "ipis": [
+      "00640672748",
+      "00640672846",
+      "00858767370"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003345212",
+      "bandsintown": "https://www.bandsintown.com/a/1497108",
+      "discogs": "https://www.discogs.com/artist/4061019",
+      "free streaming": "https://www.deezer.com/artist/285049911",
+      "image": "https://commons.wikimedia.org/wiki/File:Life%E2%80%99s_Good_%EC%BA%A0%ED%8E%98%EC%9D%B8_%EC%98%81%EC%83%81_1%EC%96%B5%EB%B7%B0_%EB%8F%8C%ED%8C%8C_(cropped).jpg",
+      "IMDb": "https://www.imdb.com/name/nm7202853/",
+      "last.fm": "https://www.last.fm/music/Charlie+Puth",
+      "lyrics": "https://www.musixmatch.com/artist/Charlie-Puth",
+      "official homepage": "http://www.charlieputh.tv/",
+      "other databases": "http://www.maniadb.com/artist/425626",
+      "purchase for download": "https://www.melon.com/artist/detail.htm?artistId=838654",
+      "secondhandsongs": "https://secondhandsongs.com/artist/95230",
+      "setlistfm": "https://www.setlist.fm/setlists/charlie-puth-3db89e3.html",
+      "social network": "https://www.tiktok.com/@charlieputh",
+      "songkick": "https://www.songkick.com/artists/5318433",
+      "soundcloud": "https://soundcloud.com/charlieputh",
+      "streaming": "https://www.melon.com/artist/detail.htm?artistId=838654",
+      "VIAF": "http://viaf.org/viaf/315944428",
+      "wikidata": "https://www.wikidata.org/wiki/Q19810390",
+      "youtube": "https://www.youtube.com/channel/UCwppdrjsBPAZg5_cUwQjfMQ"
+    },
+    "labels": [
+      "Warner Music Nashville",
+      "EMI",
+      "Loudr",
+      "Charlie Puth Music Publishing",
+      "Johar Records",
+      "Atlantic",
+      "Artist Partner",
+      "[no label]",
+      "Rumson Records",
+      "5SOS",
+      "Republic Records",
+      "sped up nightcore",
+      "apg",
+      "RCA"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1362735,
+    "name": "Charlie Puth",
+    "nb_fan": 2267917,
+    "nb_album": 95,
+    "link": "https://www.deezer.com/artist/1362735",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c355b366638e0c5f20f4b265f0f12646/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "BTS",
+      "Dan + Shay",
+      "Jung Kook",
+      "Kehlani",
+      "Kenny G",
+      "Lil Wayne",
+      "Meghan Trainor",
+      "Selena Gomez",
+      "Stray Kids"
+    ],
+    "contributor_roles": {
+      "Selena Gomez": [
+        "Featured"
+      ],
+      "Kehlani": [
+        "Featured"
+      ],
+      "Stray Kids": [
+        "Main"
+      ],
+      "Meghan Trainor": [
+        "Featured"
+      ],
+      "Lil Wayne": [
+        "Main"
+      ],
+      "Kenny G": [
+        "Main"
+      ],
+      "Jung Kook": [
+        "Main"
+      ],
+      "BTS": [
+        "Main"
+      ],
+      "Dan + Shay": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "We Don't Talk Anymore (feat. Selena Gomez)",
+      "Attention",
+      "Beat Yourself Up",
+      "How Long",
+      "One Call Away",
+      "Done for Me (feat. Kehlani)",
+      "Changes",
+      "Light Switch",
+      "Lose My Breath (Feat. Charlie Puth)",
+      "Marvin Gaye (feat. Meghan Trainor)",
+      "The Way I Am",
+      "Nothing but Trouble (Instagram Models)",
+      "Cry",
+      "Dangerously",
+      "Left and Right (Feat. Jung Kook of BTS)",
+      "Suffer",
+      "Light Switch (Acoustic)",
+      "That's Hilarious",
+      "BOY",
+      "That’s Not How This Works (feat. Dan + Shay)",
+      "I Warned Myself",
+      "Girlfriend",
+      "Empty Cups",
+      "LA Girls",
+      "Smells Like Me"
+    ],
+    "track_durations": [
+      217,
+      211,
+      178,
+      198,
+      192,
+      180,
+      184,
+      185,
+      166,
+      187,
+      186,
+      217,
+      187,
+      199,
+      154,
+      210,
+      186,
+      144,
+      263,
+      165,
+      159,
+      177,
+      170,
+      197,
+      204
+    ],
+    "track_ranks": [
+      390264,
+      879414,
+      676815,
+      708568,
+      533654,
+      612882,
+      679518,
+      717546,
+      640325,
+      775825,
+      564996,
+      357553,
+      100000,
+      223099,
+      652536,
+      320424,
+      679901,
+      461672,
+      460804,
+      473158,
+      433085,
+      380287,
+      383710,
+      409666,
+      293793
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 6,
+      "ep": 1,
+      "single": 88
+    },
+    "albums": [
+      {
+        "title": "Whatever's Clever!",
+        "label": "",
+        "release_date": "2026-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "CHARLIE",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Voicenotes",
+        "label": "",
+        "release_date": "2018-05-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nine Track Mind",
+        "label": "",
+        "release_date": "2016-01-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nine Track Mind (Deluxe Edition)",
+        "label": "",
+        "release_date": "2015-11-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nine Track Mind (Special Edition)",
+        "label": "",
+        "release_date": "2015-11-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Some Type of Love",
+        "label": "",
+        "release_date": "2015-05-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Cry",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beat Yourself Up",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Changes",
+        "label": "",
+        "release_date": "2025-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "December 25th",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hero",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hero",
+        "label": "",
+        "release_date": "2024-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lose My Breath (Feat. Charlie Puth)",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lipstick",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That’s Not How This Works (feat. Dan + Shay & Sabrina Carpenter) (Sabrina’s Version)",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That’s Not How This Works (feat. Dan + Shay)",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Charlie Be Quiet!",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Don’t Think That I Like Her",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smells Like Me",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Left and Right (feat. Jung Kook of BTS) (Galantis Remix)",
+        "label": "",
+        "release_date": "2022-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Left and Right (Feat. Jung Kook of BTS) (Acapella)",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Left and Right (feat. Jung Kook of BTS) (Sam Feldt Remix)",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Left and Right (Feat. Jung Kook of BTS)",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Left and Right (feat. Jung Kook of BTS) (Instrumental)",
+        "label": "",
+        "release_date": "2022-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That's Hilarious",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That's Hilarious",
+        "label": "",
+        "release_date": "2022-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Light Switch (Tiësto Remix)",
+        "label": "",
+        "release_date": "2022-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Light Switch (Acoustic)",
+        "label": "",
+        "release_date": "2022-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Light Switch",
+        "label": "",
+        "release_date": "2022-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Katy Perry",
+      "Maroon 5",
+      "Ellie Goulding",
+      "Zara Larsson",
+      "Dua Lipa",
+      "Ed Sheeran",
+      "Anne-Marie",
+      "Nick Jonas",
+      "Shawn Mendes",
+      "Sam Smith"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4061019,
+    "name": "Charlie Puth",
+    "profile": "US singer, songwriter and producer, born December 2, 1991,  in Rumson, NJ, USA, currently living in Los Angeles, CA, USA.\r\n\r\nBecame famous after posting several cover videos and original comedy-music material on Youtube, which eventually leading to Puth signing with [l681] in 2015 and a feature and co-writing credit on the [url=https://www.discogs.com/master/905016]\"Furious 7\" soundtrack[/url] single “See You Again,” which had massive airplay and reached number one on several charts worldwide. It was the best-selling track of 2015 and won several music awards.\r\n\r\nIn January 2016, Puth released his third full-length album \"[m=951000]\".",
+    "realname": "Charles Otto Puth Jr.",
+    "social_urls": [
+      "http://www.charlieputh.com",
+      "https://www.facebook.com/charlieputh",
+      "https://www.twitter.com/charlieputh",
+      "https://www.instagram.com/charlieputh",
+      "https://www.youtube.com/charlieputh",
+      "http://en.wikipedia.org/wiki/Charlie_Puth"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 85,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, AAC, Album, 256",
+      "10xFile, WAV, Album",
+      "12xFile, MP3, Album, 320",
+      "15xFile, AAC, Album, Single, 256",
+      "2xCD, Comp",
+      "7xFile, AAC, Album, 256",
+      "CD, Album",
+      "CD, Album, RE + CD, Album, RE + Box, Comp, Ltd",
+      "CD, Comp",
+      "CD, Single",
+      "CDr, Comp, Promo, Smplr",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single",
+      "File, MP3, Single, 320",
+      "File, MP3, Single, 329",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "Arista",
+      "Artist Partner Group, Inc.",
+      "Artist Partners",
+      "Atlantic",
+      "Cash Money Records",
+      "Charlie Puth",
+      "Charlie Puth, Emily Luther",
+      "EMI",
+      "EMI, Sony Music, EMI, Sony Music",
+      "Elektra Records",
+      "Gustafsson Records",
+      "Interscope Records",
+      "JYP Entertainment, Imperial Records (13)",
+      "Loudr",
+      "Major Music",
+      "Mostlaube Records",
+      "Not On Label (Charlie Puth Self-Released)",
+      "Polystar (3), Sony Music, Universal Music Group",
+      "Polystar (3), Warner Music Central Europe",
+      "Polystar (3), Warner Music Group Central Europe",
+      "RCA",
+      "Sony Music",
+      "Sony Music, Universal Music Canada",
+      "Sony Music, Universal Music Group, Warner Music Central Europe",
+      "Storm Music (12)",
+      "TELAMO",
+      "Trekker Music",
+      "Warner",
+      "Warner Bros. Records, Warner Music",
+      "Warner Music France",
+      "Warner Music Japan",
+      "Whistling Dog Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Charlie Puth",
+    "mbid": "525f1f1c-03f0-4bc8-8dfd-e7521f87631b",
+    "listeners": 2381393,
+    "playcount": 131028033,
+    "listener_play_ratio": 55.02,
+    "bio_exists": true,
+    "bio_summary": "Charles Otto Puth Jr. is an American singer, songwriter and record producer. His initial exposure came through the viral success of his song videos uploaded to YouTube.\n\nPuth initially signed with the record label eleveneleven after performing on The Ellen DeGeneres Show, while songwriting and producing for other artists. With primary intent on a solo career, Atlantic Records and Artist Partner Group eventually sought the artist and released his debut single, \"Marvin Gaye\" (featuring Meghan Trai",
+    "tags": [
+      "pop",
+      "rnb",
+      "soul",
+      "american",
+      "USA"
+    ],
+    "similar_artists": [
+      "Lauv",
+      "Bazzi",
+      "V",
+      "Maroon 5",
+      "Bruno Mars"
+    ],
+    "top_tracks": [
+      {
+        "name": "Attention",
+        "listeners": 1178035,
+        "playcount": 10857083
+      },
+      {
+        "name": "We Don't Talk Anymore (feat. Selena Gomez)",
+        "listeners": 1052589,
+        "playcount": 9267195
+      },
+      {
+        "name": "Left and Right (feat. Jung Kook of BTS)",
+        "listeners": 614890,
+        "playcount": 59706411
+      },
+      {
+        "name": "How Long",
+        "listeners": 565440,
+        "playcount": 4660554
+      },
+      {
+        "name": "Light Switch",
+        "listeners": 492504,
+        "playcount": 4855388
+      },
+      {
+        "name": "One Call Away",
+        "listeners": 430690,
+        "playcount": 2649825
+      },
+      {
+        "name": "Marvin Gaye (feat. Meghan Trainor)",
+        "listeners": 416947,
+        "playcount": 2535712
+      },
+      {
+        "name": "Done for Me (feat. Kehlani)",
+        "listeners": 346141,
+        "playcount": 3123758
+      },
+      {
+        "name": "Dangerously",
+        "listeners": 291593,
+        "playcount": 2264868
+      },
+      {
+        "name": "Cheating on You",
+        "listeners": 250257,
+        "playcount": 2102244
+      }
+    ],
+    "url": "https://www.last.fm/music/Charlie+Puth"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

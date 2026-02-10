@@ -1,0 +1,415 @@
+{
+  "artist_name": "Dina Ögon",
+  "artist_id": "dina_ögon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:28:53.629371+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dd682352-d506-4d75-90cc-ff8daa0af05a",
+    "type": "Group",
+    "country": "",
+    "area": "Stockholm",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0004256160",
+      "discogs": "https://www.discogs.com/artist/10744891",
+      "free streaming": "https://open.spotify.com/artist/55Juru3AZOT8GrCxOaV3EI",
+      "last.fm": "https://www.last.fm/music/Dina+%C3%96gon",
+      "other databases": "https://rateyourmusic.com/artist/dina-ogon",
+      "social network": "https://www.facebook.com/dinaogonband",
+      "songkick": "https://www.songkick.com/artists/10193182"
+    },
+    "labels": [
+      "Sing a Song Fighter",
+      "Playground Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 130705932,
+    "name": "Dina Ögon",
+    "nb_fan": 1230,
+    "nb_album": 17,
+    "link": "https://www.deezer.com/artist/130705932",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/261e7b90fdd5edcda71af9f7565b8214/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Där huden är tunnast",
+      "Du tappa dä",
+      "Hélena",
+      "Du ska va kvar",
+      "Verdandi",
+      "Varandra",
+      "Undantag",
+      "Människobarn",
+      "Orden brann",
+      "Mormor",
+      "Mellanrum",
+      "Sol",
+      "Juvel",
+      "Hack i häl",
+      "Jag vill ha allt",
+      "Firad",
+      "Tombola 94",
+      "Margaretas sång",
+      "Grå labyrint",
+      "Det läcker",
+      "Mellan de sju fjällen",
+      "Dolus & Culpa",
+      "Milton",
+      "Dålig teve",
+      "Tomma lådor"
+    ],
+    "track_durations": [
+      200,
+      191,
+      153,
+      191,
+      167,
+      269,
+      238,
+      218,
+      247,
+      240,
+      346,
+      196,
+      245,
+      226,
+      206,
+      278,
+      237,
+      252,
+      189,
+      259,
+      184,
+      252,
+      208,
+      219,
+      125
+    ],
+    "track_ranks": [
+      590143,
+      414424,
+      315024,
+      399197,
+      364930,
+      322635,
+      318727,
+      425343,
+      368144,
+      421485,
+      242213,
+      188636,
+      333226,
+      292443,
+      207428,
+      214979,
+      242622,
+      340062,
+      365315,
+      293957,
+      185330,
+      206440,
+      165041,
+      302506,
+      183678
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Människobarn",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Orion",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Oas",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dina Ögon",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Du tappa dä",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hack i häl",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Margaretas sång",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dålig teve",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sparvöga / I skydd av mörkret",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Det läcker (Sebastian Furrer Edit)",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Det läcker",
+        "label": "",
+        "release_date": "2023-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fri till slut",
+        "label": "",
+        "release_date": "2023-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glitter",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mellan slagen",
+        "label": "",
+        "release_date": "2023-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mormor",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oas",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tombola 94 (Funky Loffe Remix)",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Khruangbin",
+      "Benny Sings",
+      "Papooz",
+      "LEISURE",
+      "Parcels",
+      "Peter Cat Recording Co.",
+      "Yin Yin",
+      "El Michels Affair",
+      "Toro Y Moi",
+      "Say She She"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10744891,
+    "name": "Dina Ögon",
+    "profile": "Pop/rock group founded 2020 in Stockholm, Sweden. ",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/dinaogonband",
+      "https://www.instagram.com/dinaogon/",
+      "https://sv.wikipedia.org/wiki/Dina_%C3%96gon_(musikgrupp)"
+    ],
+    "members": [
+      "Love Örsan",
+      "Christopher Cantillo",
+      "Daniel Ögren",
+      "Anna Ahnlund"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 5,
+    "total_releases": 11,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "7\", Single",
+      "CD, Album",
+      "CD, Comp",
+      "LP, Album",
+      "LP, Comp, Dlx, S/Edition, vin"
+    ],
+    "labels": [
+      "Csetvei Pincészet",
+      "Magic Records",
+      "Playground Music",
+      "Rolling Stone",
+      "Songlines"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dina Ögon",
+    "mbid": "",
+    "listeners": 70035,
+    "playcount": 1423978,
+    "listener_play_ratio": 20.33,
+    "bio_exists": true,
+    "bio_summary": "Dina Ögon is a music group from Stockholm, Sweden, known for their blend of pop, psychedelic rock, jazz, and soul. The band, formed in 2020, consists of Anna Ahnlund (vocals, guitar), Daniel Ögren (guitar), Christopher Cantillo (drums), and Love Örsan (bass). They describe their music as \"a love child between Fleetwood Mac, Khruangbin, and obscure Motown B-sides.\" Dina Ögon's music is characterized by a playful nostalgia, drawing influences from <a href=\"https://www.last.fm/music/Dina+%C3%96gon\"",
+    "tags": [
+      "soul",
+      "soft rock",
+      "swedish",
+      "pop",
+      "psychedelic pop"
+    ],
+    "similar_artists": [
+      "Amanda Bergman",
+      "Håkan Hellström",
+      "Veronica Maggio",
+      "Markus Krunegård",
+      "The KBCS"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mormor",
+        "listeners": 21622,
+        "playcount": 114138
+      },
+      {
+        "name": "Tombola 94",
+        "listeners": 20096,
+        "playcount": 99996
+      },
+      {
+        "name": "Undantag",
+        "listeners": 17145,
+        "playcount": 116659
+      },
+      {
+        "name": "Jag vill ha allt",
+        "listeners": 15019,
+        "playcount": 75152
+      },
+      {
+        "name": "Berget",
+        "listeners": 14226,
+        "playcount": 99963
+      },
+      {
+        "name": "Sol",
+        "listeners": 13479,
+        "playcount": 64911
+      },
+      {
+        "name": "Det läcker",
+        "listeners": 12527,
+        "playcount": 77645
+      },
+      {
+        "name": "Mellanrum",
+        "listeners": 12121,
+        "playcount": 52761
+      },
+      {
+        "name": "Oas",
+        "listeners": 10469,
+        "playcount": 80742
+      },
+      {
+        "name": "Ficktjuven",
+        "listeners": 9058,
+        "playcount": 31072
+      }
+    ],
+    "url": "https://www.last.fm/music/Dina+%C3%96gon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

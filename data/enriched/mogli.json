@@ -1,0 +1,530 @@
+{
+  "artist_name": "Mogli",
+  "artist_id": "mogli",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:47:05.787287+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6e847856-6599-4620-a9d7-5bd2e59ced21",
+    "type": "Person",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "1993",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "singer-songwriter",
+      "alternative",
+      "folk"
+    ],
+    "aliases": [
+      "Selima Taibi"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/5093625",
+      "free streaming": "https://www.deezer.com/artist/4397415",
+      "IMDb": "https://www.imdb.com/name/nm8872043/",
+      "official homepage": "http://www.mogli.tv/",
+      "other databases": "https://d-nb.info/gnd/1128160323",
+      "purchase for download": "https://www.beatport.com/artist/mogli/313532",
+      "social network": "https://www.threads.com/@mogliofficial",
+      "songkick": "https://www.songkick.com/artists/7852824",
+      "soundcloud": "https://soundcloud.com/mogliofficial",
+      "streaming": "https://tidal.com/artist/4918226",
+      "VIAF": "http://viaf.org/viaf/375149066608465601525",
+      "wikidata": "https://www.wikidata.org/wiki/Q29508973",
+      "youtube": "https://www.youtube.com/user/mogliofficial"
+    },
+    "labels": [
+      "Studio Ewig",
+      "[no label]",
+      "Ki Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4397415,
+    "name": "Mogli",
+    "nb_fan": 11076,
+    "nb_album": 36,
+    "link": "https://www.deezer.com/artist/4397415",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4c305d976f6cdf028088c4ef8445b216/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Christian Löffler",
+      "Jan Blomqvist",
+      "Kilian & Jo",
+      "LIAS"
+    ],
+    "contributor_roles": {
+      "Jan Blomqvist": [
+        "Featured"
+      ],
+      "Christian Löffler": [
+        "Main",
+        "Featured"
+      ],
+      "Kilian & Jo": [
+        "Featured"
+      ],
+      "LIAS": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Milky Eyes",
+      "Summer Love (Jan Blomqvist Remix)",
+      "soft-shell crab",
+      "yes",
+      "paradox",
+      "Road Holes",
+      "Portals",
+      "Earth",
+      "cupped and open",
+      "Waterfall",
+      "Another Life",
+      "Wanderer",
+      "Winter Sun",
+      "Strobe Lights",
+      "Ghost",
+      "Spirits",
+      "Aftermath",
+      "frida",
+      "Alaska",
+      "Two Lungs",
+      "Envy",
+      "Mirror (Christian Löffler Remix)",
+      "Flood",
+      "raiders",
+      "Riverside"
+    ],
+    "track_durations": [
+      244,
+      349,
+      279,
+      233,
+      309,
+      276,
+      231,
+      204,
+      236,
+      297,
+      233,
+      238,
+      122,
+      236,
+      253,
+      178,
+      211,
+      185,
+      255,
+      204,
+      247,
+      215,
+      219,
+      248,
+      249
+    ],
+    "track_ranks": [
+      347229,
+      139370,
+      228188,
+      232498,
+      292231,
+      440690,
+      473718,
+      776517,
+      297875,
+      334969,
+      267201,
+      404333,
+      413379,
+      197570,
+      114214,
+      340729,
+      300845,
+      294663,
+      390966,
+      372209,
+      317630,
+      249644,
+      305570,
+      184940,
+      345539
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 5,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "paradox",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ravage",
+        "label": "",
+        "release_date": "2022-05-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wanderer (Expedition Happiness Soundtrack)",
+        "label": "",
+        "release_date": "2017-05-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bird",
+        "label": "",
+        "release_date": "2015-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Bunch Of Random Songs",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ravage (Acoustic)",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Changes Acoustic Session",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mogli on Audiotree Live",
+        "label": "",
+        "release_date": "2019-06-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Patience",
+        "label": "",
+        "release_date": "2019-03-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "frida",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Portals",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Love (Jan Blomqvist Remix)",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Love",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Envy",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirror (Christian Löffler Remix)",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ghost (Fejká Remix)",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirror",
+        "label": "",
+        "release_date": "2022-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Animal",
+        "label": "",
+        "release_date": "2022-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aftermath",
+        "label": "",
+        "release_date": "2022-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bones",
+        "label": "",
+        "release_date": "2022-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ghost",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Current",
+        "label": "",
+        "release_date": "2021-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echo",
+        "label": "",
+        "release_date": "2021-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wanderer (Acoustic Version)",
+        "label": "",
+        "release_date": "2021-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Milky Eyes (Acoustic Version)",
+        "label": "",
+        "release_date": "2021-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alaska (Acoustic Version)",
+        "label": "",
+        "release_date": "2021-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Wild Honey Pie Buzzsession",
+        "label": "",
+        "release_date": "2019-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mogli: The Wild Honey Pie Buzzsession",
+        "label": "",
+        "release_date": "2019-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Life",
+        "label": "",
+        "release_date": "2019-02-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strobe Lights (feat. Kilian & Jo) (Henry Green Remix)",
+        "label": "",
+        "release_date": "2018-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Xavier Rudd",
+      "Trevor Hall",
+      "Robot Koch",
+      "RY X",
+      "Ocie Elliott",
+      "HAEVN",
+      "NAHKO AND MEDICINE FOR THE PEOPLE",
+      "Peter Bradley Adams",
+      "The Wailin' Jennys",
+      "Plàsi"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 217155,
+    "name": "Mogli",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Walter Merziger",
+      "Philipp Jung",
+      "Arno Kammermeier",
+      "Patrick Bodmer"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 1,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "CD, Comp, Mixed",
+      "CD, Mixed",
+      "CDr"
+    ],
+    "labels": [
+      "Central Station",
+      "Global AMBition",
+      "Mooster Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mogli",
+    "mbid": "c85e82af-399f-4de5-8aab-b407bde3c387",
+    "listeners": 70870,
+    "playcount": 822298,
+    "listener_play_ratio": 11.6,
+    "bio_exists": true,
+    "bio_summary": "\nthere are at least 2 artists called \"mogli\".\n\n(1) Selima Taibi is a german singer-songwriter from Berlin, Germany. In 2012 she gained popularity as a contestant on The Voice of Germany. In 2015 she released her debut album \"Bird\" under the name Mogli. In 2017 her single \"Alaska\" became a success in Germany. Her second album \"Wanderer\" was released in 2017.\n\n(2) mogli david grew up on the eastern shore of nova scotia & spent her childhood speaking french to ducks & bringing frozen reptiles back ",
+    "tags": [
+      "folk",
+      "folk punk",
+      "acoustic",
+      "indie",
+      "female vocalists"
+    ],
+    "similar_artists": [
+      "Dekker",
+      "Bear's Den",
+      "Charlie Cunningham",
+      "Emily Jane White",
+      "Blanco White"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ghost - Fejká Remix",
+        "listeners": 13173,
+        "playcount": 43096
+      },
+      {
+        "name": "Wanderer",
+        "listeners": 12330,
+        "playcount": 64904
+      },
+      {
+        "name": "Alaska",
+        "listeners": 11030,
+        "playcount": 56742
+      },
+      {
+        "name": "Earth",
+        "listeners": 10070,
+        "playcount": 52651
+      },
+      {
+        "name": "Intro",
+        "listeners": 8072,
+        "playcount": 35118
+      },
+      {
+        "name": "Road Holes",
+        "listeners": 7757,
+        "playcount": 44159
+      },
+      {
+        "name": "Winter Sun",
+        "listeners": 7288,
+        "playcount": 37501
+      },
+      {
+        "name": "Aftermath",
+        "listeners": 7259,
+        "playcount": 29921
+      },
+      {
+        "name": "Two Lungs",
+        "listeners": 4727,
+        "playcount": 27100
+      },
+      {
+        "name": "Earth - Rey&Kjavik Version",
+        "listeners": 4519,
+        "playcount": 19357
+      }
+    ],
+    "url": "https://www.last.fm/music/Mogli"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

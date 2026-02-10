@@ -1,0 +1,438 @@
+{
+  "artist_name": "Broken Peak",
+  "artist_id": "broken_peak",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:51:03.676644+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ccc599f7-a797-4085-84b9-c06d34947332",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://brokenpeak.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/12056614",
+      "free streaming": "https://www.deezer.com/artist/14104987",
+      "purchase for download": "https://music.apple.com/us/artist/1346132535",
+      "streaming": "https://tidal.com/artist/9516101"
+    },
+    "labels": [
+      "Echoes in the Valley",
+      "Valley View Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14104987,
+    "name": "Broken Peak",
+    "nb_fan": 100,
+    "nb_album": 95,
+    "link": "https://www.deezer.com/artist/14104987",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/aa3f73337d4e92d22f71cad78858b919/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Gelka",
+      "Niclas Lundqvist"
+    ],
+    "contributor_roles": {
+      "Niclas Lundqvist": [
+        "Main"
+      ],
+      "Gelka": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "The Arctic Circle",
+      "Daydreamer",
+      "Andrum",
+      "Quiet Path",
+      "Nocturnal Whispers (Meditation Version)",
+      "Most"
+    ],
+    "track_durations": [
+      190,
+      161,
+      211,
+      219,
+      197,
+      192
+    ],
+    "track_ranks": [
+      53794,
+      125189,
+      25157,
+      37262,
+      31426,
+      31042
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 9,
+      "ep": 17,
+      "single": 69
+    },
+    "albums": [
+      {
+        "title": "Silva Somnia",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Motions",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Retrospective",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Airytales",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Morning Mist",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Embrace",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Daydreamer",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Horizon",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Above the Plain",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Between Night and Silence",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Seam",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shoreline Memories",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Fragments",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Understanding",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Evig",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ro",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Quiet Matter",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Peaceful Places",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Four Seasons",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Etern",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bring Back Time",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Resting Place",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Outpost",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Waves",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Waterfall",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Daybreak",
+        "label": "",
+        "release_date": "2019-05-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "greenfield",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rooftop Sunrise",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carry You",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Retland",
+      "Good Weather For An Airstrike",
+      "Human Is Alive",
+      "Applefish",
+      "I.M.D",
+      "Bahrambient",
+      "Michele Nobler",
+      "Kyle Preston"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12056614,
+    "name": "Broken Peak",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "8xFile, FLAC, Album",
+      "9xFile, MP3, Album, 320"
+    ],
+    "labels": [
+      "Ambient Soundscapes (2)",
+      "Not On Label (Suntapes Self-released)",
+      "Valley View Records (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Broken Peak",
+    "mbid": "ccc599f7-a797-4085-84b9-c06d34947332",
+    "listeners": 83729,
+    "playcount": 640537,
+    "listener_play_ratio": 7.65,
+    "bio_exists": true,
+    "bio_summary": "Broken Peak is the musical project of Swedish composer Oscar Hildingsson, who creates instrumental ambient and neoclassical music designed for relaxation and meditation. His work is known for its serene, reflective qualities and is often inspired by the natural landscapes of his home region in Sweden. <a href=\"https://www.last.fm/music/Broken+Peak\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Retland",
+      "Matt Tondut",
+      "Domy Castellano",
+      "Cardamom",
+      "Memories of the Forgotten"
+    ],
+    "top_tracks": [
+      {
+        "name": "Somnisonic",
+        "listeners": 20918,
+        "playcount": 92832
+      },
+      {
+        "name": "Longing",
+        "listeners": 18753,
+        "playcount": 111277
+      },
+      {
+        "name": "Blunda",
+        "listeners": 17549,
+        "playcount": 108983
+      },
+      {
+        "name": "Lavender",
+        "listeners": 8287,
+        "playcount": 22991
+      },
+      {
+        "name": "Dhyana",
+        "listeners": 6222,
+        "playcount": 19272
+      },
+      {
+        "name": "Drömskog",
+        "listeners": 5416,
+        "playcount": 13866
+      },
+      {
+        "name": "Midnight Rain",
+        "listeners": 4648,
+        "playcount": 14828
+      },
+      {
+        "name": "Dreamweaver",
+        "listeners": 3820,
+        "playcount": 9033
+      },
+      {
+        "name": "Meet You There",
+        "listeners": 3556,
+        "playcount": 11085
+      },
+      {
+        "name": "Daydreamer",
+        "listeners": 3401,
+        "playcount": 11084
+      }
+    ],
+    "url": "https://www.last.fm/music/Broken+Peak"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

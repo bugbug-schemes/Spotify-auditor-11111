@@ -1,0 +1,143 @@
+{
+  "artist_name": "Ortio",
+  "artist_id": "ortio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:16:40.357126+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Ortio', got 'Gerardo Ortiz'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1820118,
+    "name": "Pierre Ortion",
+    "profile": "French keyboardist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Saïno"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 2,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "Cass, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "Art & Musique",
+      "Not On Label (Saïno Self-Released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ortio",
+    "mbid": "",
+    "listeners": 14032,
+    "playcount": 59096,
+    "listener_play_ratio": 4.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ortio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "SOLAR SONAR",
+      "in my daydreams",
+      "Linnea Arden",
+      "Ebon Meadow",
+      "Cinnamon Glass"
+    ],
+    "top_tracks": [
+      {
+        "name": "Luminous",
+        "listeners": 9291,
+        "playcount": 29972
+      },
+      {
+        "name": "Triangulum",
+        "listeners": 2258,
+        "playcount": 9256
+      },
+      {
+        "name": "Sanctuary",
+        "listeners": 2109,
+        "playcount": 8953
+      },
+      {
+        "name": "Silent Drift",
+        "listeners": 1439,
+        "playcount": 4672
+      },
+      {
+        "name": "Astral Lullaby",
+        "listeners": 987,
+        "playcount": 3183
+      },
+      {
+        "name": "Abiding Serenity",
+        "listeners": 891,
+        "playcount": 1783
+      },
+      {
+        "name": "Infinity",
+        "listeners": 358,
+        "playcount": 846
+      },
+      {
+        "name": "Recovery",
+        "listeners": 193,
+        "playcount": 426
+      },
+      {
+        "name": "Maestoso",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Callisto",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Ortio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

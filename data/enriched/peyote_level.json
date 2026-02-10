@@ -1,0 +1,223 @@
+{
+  "artist_name": "Peyote Level",
+  "artist_id": "peyote_level",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:25:48.440739+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 171985477,
+    "name": "Peyote Level",
+    "nb_fan": 1,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/171985477",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9d0c6ece5a8ee45c2740259367696b43/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Shah Sharinn",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Well Being",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drift Passage",
+        "label": "",
+        "release_date": "2025-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Radiance",
+        "label": "",
+        "release_date": "2025-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breath Trough",
+        "label": "",
+        "release_date": "2025-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dawnveil",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fading Soul",
+        "label": "",
+        "release_date": "2024-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Repose",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Left Outside Alone In My Dream",
+        "label": "",
+        "release_date": "2024-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Asanas",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soul enhancer",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Star Above Parvati",
+        "label": "",
+        "release_date": "2023-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fantast Land",
+        "label": "",
+        "release_date": "2022-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clonazepam",
+        "label": "",
+        "release_date": "2022-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Peyote Level",
+    "mbid": "",
+    "listeners": 25968,
+    "playcount": 127177,
+    "listener_play_ratio": 4.9,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Peyote+Level\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eirwyn North",
+      "Stilly Night",
+      "Quantum Veil",
+      "Elio Vane",
+      "Mariam Ember"
+    ],
+    "top_tracks": [
+      {
+        "name": "Breath Trough",
+        "listeners": 15815,
+        "playcount": 66635
+      },
+      {
+        "name": "Drift Passage",
+        "listeners": 10332,
+        "playcount": 35244
+      },
+      {
+        "name": "Dawnveil",
+        "listeners": 5210,
+        "playcount": 16910
+      },
+      {
+        "name": "Left Outside Alone In My Dream",
+        "listeners": 1856,
+        "playcount": 5171
+      },
+      {
+        "name": "Well Being",
+        "listeners": 789,
+        "playcount": 1606
+      },
+      {
+        "name": "Star Above Parvati",
+        "listeners": 393,
+        "playcount": 1610
+      },
+      {
+        "name": "Heartwarming 236hz",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Peyote+Level"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

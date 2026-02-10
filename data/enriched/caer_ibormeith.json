@@ -1,0 +1,172 @@
+{
+  "artist_name": "Caer Ibormeith",
+  "artist_id": "caer_ibormeith",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:55:24.007555+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288073091,
+    "name": "Caer Ibormeith",
+    "nb_fan": 2,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/288073091",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/65869d63a05abe1622f748c5ff7910b7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Auric Horizons",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Empyrean",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4695844,
+    "name": "Caer Ibormeith",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 0,
+    "total_releases": 3,
+    "formats": [
+      "CD, Dig",
+      "CD, EP",
+      "CDr"
+    ],
+    "labels": [
+      "Not On Label (Caer Ibormeith Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Caer Ibormeith",
+    "mbid": "",
+    "listeners": 15639,
+    "playcount": 77079,
+    "listener_play_ratio": 4.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Caer+Ibormeith\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Solar Collective",
+      "A Clear Path",
+      "Dorian Froste",
+      "Quiescent State",
+      "Holzer & Kamura"
+    ],
+    "top_tracks": [
+      {
+        "name": "Auric Horizons",
+        "listeners": 8403,
+        "playcount": 52223
+      },
+      {
+        "name": "Sleep Love",
+        "listeners": 3547,
+        "playcount": 12117
+      },
+      {
+        "name": "Feathers in Echo",
+        "listeners": 3372,
+        "playcount": 10197
+      },
+      {
+        "name": "Snowlight Dream",
+        "listeners": 1278,
+        "playcount": 2311
+      },
+      {
+        "name": "Desnuda (acoustic)",
+        "listeners": 6,
+        "playcount": 40
+      },
+      {
+        "name": "Deepness",
+        "listeners": 5,
+        "playcount": 25
+      },
+      {
+        "name": "Life Goes On",
+        "listeners": 4,
+        "playcount": 10
+      },
+      {
+        "name": "Desnuda",
+        "listeners": 4,
+        "playcount": 9
+      },
+      {
+        "name": "Sheltered",
+        "listeners": 3,
+        "playcount": 28
+      },
+      {
+        "name": "Children Of The Day",
+        "listeners": 3,
+        "playcount": 14
+      }
+    ],
+    "url": "https://www.last.fm/music/Caer+Ibormeith"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

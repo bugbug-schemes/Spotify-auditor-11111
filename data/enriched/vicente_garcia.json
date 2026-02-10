@@ -1,0 +1,401 @@
+{
+  "artist_name": "Vicente Garcia",
+  "artist_id": "vicente_garcia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:57:13.513767+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2f1507e5-6e8b-4a67-828e-5ce3f75c1281",
+    "type": "Person",
+    "country": "DO",
+    "area": "Dominican Republic",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "bachata",
+      "merengue",
+      "latin"
+    ],
+    "aliases": [
+      "Vicente García Guillén"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002553748",
+      "discogs": "https://www.discogs.com/artist/5169830",
+      "free streaming": "https://www.deezer.com/artist/649309",
+      "official homepage": "http://www.vicentegarciamusica.com/",
+      "social network": "https://www.instagram.com/vicentegarcia/",
+      "streaming": "https://tidal.com/artist/5997476",
+      "wikidata": "https://www.wikidata.org/wiki/Q6161130"
+    },
+    "labels": [
+      "Sony BMG Music Entertainment",
+      "Merca",
+      "Vicente García Music",
+      "Merlín Studios Producciones",
+      "[no label]",
+      "Sony Music",
+      "Sony Music | Latin",
+      "Borojó Music",
+      "Columbia"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 649309,
+    "name": "Vicente Garcia",
+    "nb_fan": 79052,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/649309",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ed43bbcb2ed522b24b5201a3b422d617/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Cultura Profética",
+      "Juan Luis Guerra 4.40",
+      "Los Gaiteros de San Jacinto",
+      "Macaco",
+      "Santiago Cruz",
+      "Ximena Sariñana"
+    ],
+    "contributor_roles": {
+      "Cultura Profética": [
+        "Featured"
+      ],
+      "Los Gaiteros de San Jacinto": [
+        "Featured"
+      ],
+      "Santiago Cruz": [
+        "Main"
+      ],
+      "Macaco": [
+        "Main"
+      ],
+      "Juan Luis Guerra 4.40": [
+        "Main"
+      ],
+      "Ximena Sariñana": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "San Bá",
+      "Carmesí",
+      "Como Has Logrado",
+      "Dulcito e Coco",
+      "Bachata En Kingston",
+      "Un Conuco y Una Flor",
+      "Mi Balcon",
+      "Espuma y Arrecife (feat. Los Gaiteros de San Jacinto)",
+      "Entre Luca Y Juan Mejía",
+      "Vida de Mis Vidas",
+      "Una Conexión",
+      "Loma de Cayenas",
+      "Te Soñé",
+      "Mambo Violento",
+      "El Yeyo",
+      "Ahí Ahí",
+      "Mal De Amore",
+      "Puñito de Yocahú",
+      "Amar en el Yuna",
+      "Voy en Coche",
+      "Dos Y Siete",
+      "Boca e' Nigua",
+      "Buscar Otra Cosa",
+      "Ningún Ningún",
+      "Poquito A Poquito"
+    ],
+    "track_durations": [
+      194,
+      181,
+      225,
+      189,
+      239,
+      244,
+      258,
+      244,
+      227,
+      210,
+      210,
+      225,
+      205,
+      161,
+      172,
+      210,
+      209,
+      188,
+      156,
+      164,
+      255,
+      131,
+      263,
+      136,
+      282
+    ],
+    "track_ranks": [
+      387163,
+      424856,
+      270852,
+      468684,
+      340771,
+      256988,
+      339529,
+      397449,
+      325010,
+      268655,
+      128997,
+      378918,
+      407113,
+      296235,
+      254402,
+      327900,
+      252775,
+      258145,
+      108786,
+      127005,
+      210815,
+      83299,
+      155041,
+      95900,
+      180120
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 1,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Puñito de Yocahú",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Candela",
+        "label": "",
+        "release_date": "2019-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A la Mar",
+        "label": "",
+        "release_date": "2016-08-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Melodrama",
+        "label": "",
+        "release_date": "2011-06-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Camino al Sol",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Desde Otro Malecón",
+        "label": "",
+        "release_date": "2023-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sonido Bestial",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Una Conexión",
+        "label": "",
+        "release_date": "2022-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loma de Cayenas",
+        "label": "",
+        "release_date": "2018-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entre Luca Y Juan Mejía",
+        "label": "",
+        "release_date": "2015-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kumbalae",
+        "label": "",
+        "release_date": "2011-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "El Caribefunk",
+      "Juan Pablo Vega",
+      "Maréh",
+      "Monsieur Perine",
+      "Macaco",
+      "Alex Cuba",
+      "Simon Grossmann",
+      "Mike Bahia",
+      "El Kanka",
+      "Manuel Medrano"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3625942,
+    "name": "Vicente Garcia",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 1,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "CD, Album, Car",
+      "CD, EP",
+      "DVD, Comp, NTSC + CD, Comp"
+    ],
+    "labels": [
+      "Not On Label (The Livid Kittens Self-released)",
+      "Sony Music",
+      "Sony Music Entertainment Colombia S.A.",
+      "Universal Music Polska"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vicente Garcia",
+    "mbid": "",
+    "listeners": 108059,
+    "playcount": 1700446,
+    "listener_play_ratio": 15.74,
+    "bio_exists": true,
+    "bio_summary": "Vicente Luis García Guillén (Santo Domingo, 30 de marzo de 1983) es un compositor, músico y cantante dominicano con una sensibilidad especial hacia la música dominicana y del Caribe. En 2017 gana 3 Latin GRAMMYS en las categorías Mejor Nuevo Artista, Mejor Álbum Cantautor con su disco A la Mar y Mejor Canción Tropical con el sencillo Bachata en Kingston.  Comienza su carrera como solista en el 2011 y edita su primer disco Melodrama.  En el 2014 estrena Te soñé <a href=\"https://www.last.fm/music/",
+    "tags": [
+      "bachata",
+      "latin",
+      "All",
+      "reggae",
+      "dominican republic"
+    ],
+    "similar_artists": [
+      "Juan Luis Guerra 4.40",
+      "Fonseca",
+      "Santiago Cruz",
+      "Vicente García",
+      "Alex Cuba"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dulcito e Coco",
+        "listeners": 40074,
+        "playcount": 223171
+      },
+      {
+        "name": "Carmesí",
+        "listeners": 37540,
+        "playcount": 244230
+      },
+      {
+        "name": "Entre Luca Y Juan Mejía",
+        "listeners": 25173,
+        "playcount": 119344
+      },
+      {
+        "name": "Mi Balcon",
+        "listeners": 20050,
+        "playcount": 119315
+      },
+      {
+        "name": "San Bá",
+        "listeners": 17905,
+        "playcount": 108352
+      },
+      {
+        "name": "Te Soñé - Bonus Track",
+        "listeners": 15683,
+        "playcount": 97320
+      },
+      {
+        "name": "Espuma y Arrecife (feat. Los Gaiteros de San Jacinto)",
+        "listeners": 12527,
+        "playcount": 73344
+      },
+      {
+        "name": "Dulcito e Coco - Recorded at Spotify Studios NYC",
+        "listeners": 11518,
+        "playcount": 49184
+      },
+      {
+        "name": "Loma de Cayenas",
+        "listeners": 10917,
+        "playcount": 50519
+      },
+      {
+        "name": "El Yeyo",
+        "listeners": 9369,
+        "playcount": 35020
+      }
+    ],
+    "url": "https://www.last.fm/music/Vicente+Garcia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

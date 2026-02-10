@@ -1,0 +1,512 @@
+{
+  "artist_name": "Beyhude",
+  "artist_id": "beyhude",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:40:00.792672+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "85737020-4d76-4219-8f9a-3612796f7ee0",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [
+      "Umut Çağdaş Coşkun"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/6576327",
+      "free streaming": "https://www.deezer.com/artist/15336507",
+      "purchase for download": "https://www.beatport.com/artist/beyhude/698257",
+      "streaming": "https://music.apple.com/gb/artist/1397827551"
+    },
+    "labels": [
+      "Shango Records",
+      "Metanoia"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 15336507,
+    "name": "Beyhude",
+    "nb_fan": 408,
+    "nb_album": 59,
+    "link": "https://www.deezer.com/artist/15336507",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/58086fc8472cbd7598db0e3d744e1930/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anatolian Sessions",
+      "Audiotones",
+      "Dr. Parnassus",
+      "Felix Raphael",
+      "Foxall",
+      "JPattersson",
+      "Qualista",
+      "Yannek Maunz",
+      "monohøle"
+    ],
+    "contributor_roles": {
+      "Foxall": [
+        "Featured"
+      ],
+      "Dr. Parnassus": [
+        "Featured"
+      ],
+      "monohøle": [
+        "Main"
+      ],
+      "Qualista": [
+        "Main"
+      ],
+      "Felix Raphael": [
+        "Featured"
+      ],
+      "Yannek Maunz": [
+        "Featured"
+      ],
+      "Audiotones": [
+        "Featured"
+      ],
+      "JPattersson": [
+        "Featured"
+      ],
+      "Anatolian Sessions": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Uroboros",
+      "Amazon (Original Mix)",
+      "Alabora (Foxall Pale Blue Remix)",
+      "Karma",
+      "Atmosfer (Dr. Parnassus Remix)",
+      "Névoa",
+      "Erkete",
+      "Alabora",
+      "Yakamoz",
+      "Karmanyola",
+      "Alabora (Yannek Maunz & Felix Raphael Remix)",
+      "Alabora (Audiotones Remix)",
+      "Alabora (JPattersson Remix)",
+      "Karabatak",
+      "Almus",
+      "Maske"
+    ],
+    "track_durations": [
+      285,
+      544,
+      470,
+      547,
+      420,
+      280,
+      312,
+      423,
+      437,
+      471,
+      422,
+      475,
+      304,
+      335,
+      380,
+      325
+    ],
+    "track_ranks": [
+      205914,
+      220476,
+      110213,
+      186709,
+      82976,
+      130422,
+      176556,
+      281509,
+      136489,
+      128721,
+      64804,
+      32443,
+      62830,
+      22122,
+      22673,
+      98443
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 3,
+      "single": 51
+    },
+    "albums": [
+      {
+        "title": "Biraz Geç Kaldım",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alabora (Remixed)",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "muzır neşriyat",
+        "label": "",
+        "release_date": "2024-08-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alabora",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Amazon",
+        "label": "",
+        "release_date": "2019-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Münferit lise kafası (demo albüm)",
+        "label": "",
+        "release_date": "2023-02-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Karma",
+        "label": "",
+        "release_date": "2019-05-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Yakamoz EP",
+        "label": "",
+        "release_date": "2019-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Névoa",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gittiğin O Yaz (feat. Vurgun)",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Haberin Olsun",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SON YAZ",
+        "label": "",
+        "release_date": "2025-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Susuz (Beyhude Remix)",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Mantra",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Mantra (Zigan Aldi Remix)",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "20000 Fersah",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Samsara",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alabora (Anatolian Sessions Remix)",
+        "label": "",
+        "release_date": "2024-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alabora (JPattersson Remix)",
+        "label": "",
+        "release_date": "2024-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alabora (Yannek Maunz & Felix Raphael Remix)",
+        "label": "",
+        "release_date": "2024-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alabora (Iorie Symbolism Rework)",
+        "label": "",
+        "release_date": "2024-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kronos",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kali Yuga (Beyhude Remix)",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Petra",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "berceste",
+        "label": "",
+        "release_date": "2023-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "berceste (remastered)",
+        "label": "",
+        "release_date": "2023-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Uroboros (Trippin Jaguar Remix)",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bahari (Beyhude Remix)",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Kid (Beyhude Remix)",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seyyah",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "PAAX (Tulum)",
+      "Seba Campos",
+      "Jarl Flamar",
+      "Sahalé",
+      "Amentia",
+      "Calavera & Manya",
+      "Mashti",
+      "Trippin Jaguar",
+      "Christos Fourkis",
+      "Rasi Z"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6576327,
+    "name": "Beyhude",
+    "profile": "Electronic music producer based in Istanbul, Turkey.",
+    "realname": "Umut Çağdaş Coşkun",
+    "social_urls": [
+      "https://soundcloud.com/beyhudemusic"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 9,
+    "total_releases": 9,
+    "formats": [
+      "11xFile, WAV, Comp",
+      "17xFile, MP3, Comp, 320",
+      "2xFile, MP3, EP, 320",
+      "3xFile, WAV, EP",
+      "4xFile, MP3, EP, 320",
+      "5xFile, MP3, 320",
+      "5xFile, MP3, EP, 320",
+      "5xFile, WAV"
+    ],
+    "labels": [
+      "Fine Beatz",
+      "Palvora",
+      "Ready Mix Records",
+      "Shango Records (4)",
+      "Shango Records (4), Shango Records (4)",
+      "down."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "beyhude",
+    "mbid": "",
+    "listeners": 41369,
+    "playcount": 250813,
+    "listener_play_ratio": 6.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/beyhude\">Read more on Last.fm</a>",
+    "tags": [
+      "electronic",
+      "downtempo",
+      "ambient",
+      "organic",
+      "turkish"
+    ],
+    "similar_artists": [
+      "Geju",
+      "Okuma",
+      "Xique-Xique",
+      "Landhouse",
+      "Trippin Jaguar"
+    ],
+    "top_tracks": [
+      {
+        "name": "Alabora",
+        "listeners": 17283,
+        "playcount": 68281
+      },
+      {
+        "name": "Amazon",
+        "listeners": 7486,
+        "playcount": 26577
+      },
+      {
+        "name": "Peyote",
+        "listeners": 6703,
+        "playcount": 19237
+      },
+      {
+        "name": "Atmosfer - Dr. Parnassus Remix",
+        "listeners": 5727,
+        "playcount": 19668
+      },
+      {
+        "name": "Karma",
+        "listeners": 5690,
+        "playcount": 21877
+      },
+      {
+        "name": "Alabora - Foxall Pale Blue Remix",
+        "listeners": 4019,
+        "playcount": 19057
+      },
+      {
+        "name": "Uroboros",
+        "listeners": 2799,
+        "playcount": 10172
+      },
+      {
+        "name": "Yakamoz",
+        "listeners": 2034,
+        "playcount": 6374
+      },
+      {
+        "name": "Maske",
+        "listeners": 1837,
+        "playcount": 5177
+      },
+      {
+        "name": "Erkete",
+        "listeners": 1713,
+        "playcount": 4954
+      }
+    ],
+    "url": "https://www.last.fm/music/beyhude"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

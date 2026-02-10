@@ -1,0 +1,155 @@
+{
+  "artist_name": "The Islanauts",
+  "artist_id": "the_islanauts",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:33:54.759214+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f5626975-53ef-4135-9fd8-f27fb0b42d4b",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/52647652"
+    },
+    "labels": [
+      "La Buena Fortuna Music LLC"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 52647652,
+    "name": "The Islanauts",
+    "nb_fan": 8,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/52647652",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4ceaf2fc97f47aed777e01f6e63011e7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Black Dog (feat. Don Carmelo & Dr. Digital Aché)",
+        "label": "",
+        "release_date": "2020-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mango Haze (feat. DJ Drozer)",
+        "label": "",
+        "release_date": "2019-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6162593,
+    "name": "Don Carmelo",
+    "profile": "Carmelo \"Don Carmelo\" Romero es el cantante de la banda de reggae roots puertorriqueña Gomba Jahbari desde el 1998 al presente. Ha compartido tarima con artistas tales cómo: Gallego, Apple Gabriel (de Israel Vibration), International Dub Ambassadors, PJ Sin Suela, Guillermo Boneto (de Los Cafres), Alberto Montenegro (de Rawayana), Guelo Star, The Islanauts, SOJA, I Majesty, Algarete, Ras Sparrow, Newton, Auudi y Gustavo Laureano (de La Secta Allstar) entre otros.",
+    "realname": "Carmelo Romero",
+    "social_urls": [],
+    "members": [
+      "Gomba Jahbari"
+    ],
+    "groups": [
+      "Gomba Jahbari"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 1,
+    "total_releases": 8,
+    "formats": [
+      "6½\", Album",
+      "CD",
+      "CD, Album",
+      "CDr, Album",
+      "LP"
+    ],
+    "labels": [
+      "Gomba Music (2)",
+      "I Grade Records",
+      "ION M usic",
+      "International Dub Ambassadors",
+      "International Dub Ambassadors & Gomba Jahbari",
+      "Soja Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Islanauts",
+    "mbid": "f5626975-53ef-4135-9fd8-f27fb0b42d4b",
+    "listeners": 11,
+    "playcount": 66,
+    "listener_play_ratio": 6.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Islanauts\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Mango Haze",
+        "listeners": 8,
+        "playcount": 40
+      },
+      {
+        "name": "Black Dog",
+        "listeners": 7,
+        "playcount": 26
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Islanauts"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

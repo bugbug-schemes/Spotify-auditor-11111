@@ -1,0 +1,97 @@
+{
+  "artist_name": "Paul Van De Vlasakker",
+  "artist_id": "paul_van_de_vlasakker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:23:44.487291+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6292076,
+    "name": "Paul Van De Vlasakker",
+    "nb_fan": 0,
+    "nb_album": 0,
+    "link": "https://www.deezer.com/artist/6292076",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "One December Night"
+    ],
+    "track_durations": [
+      187
+    ],
+    "track_ranks": [
+      7907
+    ],
+    "has_explicit": false,
+    "album_types": {},
+    "albums": [],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Paul Van De Vlasakker",
+    "mbid": "",
+    "listeners": 517,
+    "playcount": 1054,
+    "listener_play_ratio": 2.04,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Paul+Van+De+Vlasakker\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tarragona Heights",
+      "Benjamin Kind",
+      "Philipe Goldman",
+      "Lewis Knight",
+      "Thomas McLaughlin"
+    ],
+    "top_tracks": [
+      {
+        "name": "One December Night",
+        "listeners": 517,
+        "playcount": 1054
+      }
+    ],
+    "url": "https://www.last.fm/music/Paul+Van+De+Vlasakker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

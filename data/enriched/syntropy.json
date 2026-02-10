@@ -1,0 +1,166 @@
+{
+  "artist_name": "Syntropy",
+  "artist_id": "syntropy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:32:44.348298+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "10cd92b1-9e86-40f7-8d07-5551f53c08af",
+    "type": "Group",
+    "country": "AU",
+    "area": "Australia",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://syntropyband.bandcamp.com/"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Syntropy', got 'SYNTHONY'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4355180,
+    "name": "Syntropy Audio",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 1,
+    "total_releases": 4,
+    "formats": [
+      "2xCD, Comp",
+      "CD, Album",
+      "Cass, Album",
+      "HDCD, Album"
+    ],
+    "labels": [
+      "B.S. Miracle Recordings",
+      "Declare Music, Hyena Records",
+      "Monarch Records (2)",
+      "TuSco"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Syntropy",
+    "mbid": "10cd92b1-9e86-40f7-8d07-5551f53c08af",
+    "listeners": 88604,
+    "playcount": 546556,
+    "listener_play_ratio": 6.17,
+    "bio_exists": true,
+    "bio_summary": "Death metal band from Adelaide, South Australia. <a href=\"https://www.last.fm/music/Syntropy\">Read more on Last.fm</a>",
+    "tags": [
+      "death metal",
+      "Technical Death Metal",
+      "Healing Sounds"
+    ],
+    "similar_artists": [
+      "Floating",
+      "Places We Go",
+      "Waves Of Sine",
+      "Triangular Prism III",
+      "Misted Minds"
+    ],
+    "top_tracks": [
+      {
+        "name": "Raga for HAL",
+        "listeners": 19008,
+        "playcount": 48475
+      },
+      {
+        "name": "Samadhi (Alpha 10 hz)",
+        "listeners": 18959,
+        "playcount": 79257
+      },
+      {
+        "name": "Binaural Cloud (Alpha 7 Hz)",
+        "listeners": 16695,
+        "playcount": 59493
+      },
+      {
+        "name": "Crystalimbic (Beta Waves)",
+        "listeners": 12026,
+        "playcount": 39699
+      },
+      {
+        "name": "Clairvoyance (Alpha Waves 8 hz)",
+        "listeners": 11068,
+        "playcount": 42542
+      },
+      {
+        "name": "Binaural Concentration Alpha 100 Hz - 108 Hz",
+        "listeners": 11013,
+        "playcount": 39604
+      },
+      {
+        "name": "Calmly Delta 68.9 Hz - 69.7 Hz",
+        "listeners": 10786,
+        "playcount": 61513
+      },
+      {
+        "name": "Third Eye Opening (Alpha 12 hz)",
+        "listeners": 10049,
+        "playcount": 24206
+      },
+      {
+        "name": "Deeper Delta 61.54 Hz - 61.94 Hz",
+        "listeners": 8432,
+        "playcount": 46297
+      },
+      {
+        "name": "Theta Waves 144 hz",
+        "listeners": 6423,
+        "playcount": 19044
+      }
+    ],
+    "url": "https://www.last.fm/music/Syntropy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

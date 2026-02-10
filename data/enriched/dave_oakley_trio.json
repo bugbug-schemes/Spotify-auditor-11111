@@ -1,0 +1,408 @@
+{
+  "artist_name": "Dave Oakley trio",
+  "artist_id": "dave_oakley_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:22:48.528961+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "620bd7e0-114e-481f-9d86-65b11768c97b",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/194447957",
+      "purchase for download": "https://music.apple.com/us/artist/1673048400",
+      "soundcloud": "https://soundcloud.com/daveoakleytrio",
+      "streaming": "https://tidal.com/artist/36312156",
+      "youtube music": "https://music.youtube.com/channel/UCw71xcpqn3iSY1NmefxP72A"
+    },
+    "labels": [
+      "Montagne Flum"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 194447957,
+    "name": "Dave Oakley trio",
+    "nb_fan": 9,
+    "nb_album": 40,
+    "link": "https://www.deezer.com/artist/194447957",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/62f9cb866a60879f22445faf54c8fba4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Misty skies",
+      "At your place",
+      "Up before the dawn",
+      "Autumn serenade",
+      "December in Stockholm",
+      "Time to say farewell",
+      "Portia and Rocco",
+      "Madrigal",
+      "Vamos lá",
+      "Lingonberry street"
+    ],
+    "track_durations": [
+      185,
+      198,
+      213,
+      195,
+      193,
+      197,
+      196,
+      195,
+      152,
+      232
+    ],
+    "track_ranks": [
+      84290,
+      66234,
+      103227,
+      64971,
+      114918,
+      62659,
+      54490,
+      82876,
+      30393,
+      77044
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 40
+    },
+    "albums": [
+      {
+        "title": "Sunday waltz",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Piece by piece",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Again and again",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Together again",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Le bon vieux temps",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Misty skies",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning sun",
+        "label": "",
+        "release_date": "2025-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One day in May",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My one and only",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dear Astrid",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The first time",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Une journée à la mer",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At your place",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baila conmigo",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Danse au clair de lune",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Post scriptum",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn serenade",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter wonderland",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lingonberry street",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moments with you",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vamos lá",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Portia and Rocco",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time to say farewell",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You and me song",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rain in Stockholm",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Parc de Belleville",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thursday afternoon",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rue Robert",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "December in Stockholm",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "my first kiss - vinyl",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dave Oakley trio",
+    "mbid": "620bd7e0-114e-481f-9d86-65b11768c97b",
+    "listeners": 67877,
+    "playcount": 249466,
+    "listener_play_ratio": 3.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dave+Oakley+trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Carla Anderson",
+      "The Holly Molly Trio",
+      "Isac Solo Trio",
+      "Kristian Hart Trio",
+      "Mino Conte & Co"
+    ],
+    "top_tracks": [
+      {
+        "name": "At your place",
+        "listeners": 18622,
+        "playcount": 39833
+      },
+      {
+        "name": "Up before the dawn",
+        "listeners": 18346,
+        "playcount": 41427
+      },
+      {
+        "name": "Time to say farewell",
+        "listeners": 14715,
+        "playcount": 30376
+      },
+      {
+        "name": "My first kiss",
+        "listeners": 13676,
+        "playcount": 29054
+      },
+      {
+        "name": "Misty skies",
+        "listeners": 10575,
+        "playcount": 21886
+      },
+      {
+        "name": "Madrigal",
+        "listeners": 7907,
+        "playcount": 16383
+      },
+      {
+        "name": "Autumn serenade",
+        "listeners": 5554,
+        "playcount": 12151
+      },
+      {
+        "name": "Lingonberry street",
+        "listeners": 5506,
+        "playcount": 19612
+      },
+      {
+        "name": "Rain in Stockholm",
+        "listeners": 4806,
+        "playcount": 19920
+      },
+      {
+        "name": "Vamos lá",
+        "listeners": 2844,
+        "playcount": 6897
+      }
+    ],
+    "url": "https://www.last.fm/music/Dave+Oakley+trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

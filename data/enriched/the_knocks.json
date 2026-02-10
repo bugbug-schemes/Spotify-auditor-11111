@@ -1,0 +1,675 @@
+{
+  "artist_name": "The Knocks",
+  "artist_id": "the_knocks",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:34:34.803038+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9157ad72-3893-47da-986a-0aa7313f7429",
+    "type": "Group",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "2007",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "electropop",
+      "queer",
+      "nu-disco"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000469583849"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000918111",
+      "discogs": "https://www.discogs.com/artist/1094278",
+      "free streaming": "https://www.deezer.com/artist/862972",
+      "last.fm": "https://www.last.fm/music/The+Knocks",
+      "myspace": "https://myspace.com/itstheknocks",
+      "official homepage": "https://www.theknocks.com/",
+      "other databases": "https://rateyourmusic.com/artist/the_knocks_f1",
+      "purchase for download": "https://www.beatport.com/artist/the-knocks/202704",
+      "social network": "https://www.instagram.com/the_knocks/",
+      "songkick": "https://www.songkick.com/artists/706733",
+      "soundcloud": "https://soundcloud.com/theknocks",
+      "streaming": "https://tidal.com/artist/3940345",
+      "wikidata": "https://www.wikidata.org/wiki/Q7744878",
+      "youtube": "https://www.youtube.com/user/itstheknocks"
+    },
+    "labels": [
+      "Because London Records",
+      "Octone Records",
+      "Atlantic",
+      "Kitsuné",
+      "Merge Records",
+      "RCA",
+      "Sweat It Out!",
+      "Ultra Records",
+      "Heavy Roc",
+      "neon gold records",
+      "Foreign Family Collective",
+      "Positiva",
+      "Polydor",
+      "[no label]",
+      "Astralwerks",
+      "Black Clay",
+      "Ultra Records, LLC",
+      "VERO Music",
+      "Warner Music",
+      "A&M/Octone Records",
+      "Big Beat",
+      "Interscope Records",
+      "Ultra Music",
+      "Neon Gold",
+      "Sofi Tukker, LLC",
+      "Republic Records",
+      "Legacy"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 862972,
+    "name": "The Knocks",
+    "nb_fan": 19660,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/862972",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d5e33e4be06109d9b07ee012e86ac8a3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alisa Ueno",
+      "Bronski Beat",
+      "Carly Rae Jepsen",
+      "Dolores Forever",
+      "Dragonette",
+      "Foster The People",
+      "Kungs",
+      "Lemaitre",
+      "MUNA",
+      "Moss Kena",
+      "NERVO",
+      "POWERS",
+      "Perfume Genius",
+      "Purple Disco Machine",
+      "SOFI TUKKER",
+      "Tycho",
+      "Wyclef Jean"
+    ],
+    "contributor_roles": {
+      "SOFI TUKKER": [
+        "Main",
+        "Featured"
+      ],
+      "NERVO": [
+        "Featured"
+      ],
+      "Alisa Ueno": [
+        "Featured"
+      ],
+      "Wyclef Jean": [
+        "Featured"
+      ],
+      "Foster The People": [
+        "Featured",
+        "Main"
+      ],
+      "Carly Rae Jepsen": [
+        "Featured"
+      ],
+      "Dragonette": [
+        "Main",
+        "Featured"
+      ],
+      "Purple Disco Machine": [
+        "Main"
+      ],
+      "Moss Kena": [
+        "Featured"
+      ],
+      "POWERS": [
+        "Featured"
+      ],
+      "MUNA": [
+        "Main"
+      ],
+      "Tycho": [
+        "Featured"
+      ],
+      "Lemaitre": [
+        "Main"
+      ],
+      "Bronski Beat": [
+        "Main"
+      ],
+      "Perfume Genius": [
+        "Featured"
+      ],
+      "Dolores Forever": [
+        "Main"
+      ],
+      "Kungs": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Best Friend",
+      "Kiss the Sky (feat. Wyclef Jean)",
+      "All About You (feat. Foster The People)",
+      "Brazilian Soul (feat. Sofi Tukker)",
+      "Ride or Die (feat. Foster the People)",
+      "One On One",
+      "Love Me Like That (feat. Carly Rae Jepsen)",
+      "Dreams",
+      "Fireworks",
+      "Foolish Pleasure",
+      "Love Me Alive",
+      "Classic (feat. POWERS)",
+      "Brazilian Soul (feat. Sofi Tukker) (Acoustic Bossa Version)",
+      "Love Me Like That (feat. Carly Rae Jepsen) (The Knocks 55.5 VIP Mix)",
+      "Bittersweet Symphony",
+      "South Side",
+      "Bodies (Tycho Remix)",
+      "We Got U",
+      "Smalltown Boy (feat. Perfume Genius)",
+      "Thorn",
+      "LOVER",
+      "Classic (feat. POWERS) (POWERS Sunset Version)",
+      "People",
+      "Slow Song (with Dragonette)",
+      "The Hero"
+    ],
+    "track_durations": [
+      184,
+      215,
+      216,
+      197,
+      242,
+      212,
+      271,
+      189,
+      200,
+      161,
+      205,
+      248,
+      250,
+      375,
+      280,
+      184,
+      289,
+      205,
+      274,
+      201,
+      189,
+      250,
+      224,
+      253,
+      227
+    ],
+    "track_ranks": [
+      211355,
+      174166,
+      208537,
+      505240,
+      357448,
+      489177,
+      159326,
+      194089,
+      187460,
+      196011,
+      294343,
+      276746,
+      514737,
+      132053,
+      242213,
+      159504,
+      173589,
+      299546,
+      480167,
+      179716,
+      241186,
+      107534,
+      343262,
+      365697,
+      183934
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 7,
+      "ep": 13,
+      "single": 80
+    },
+    "albums": [
+      {
+        "title": "Revelation",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "HISTORY (Deluxe)",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "HISTORY (Deluxe)",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "HISTORY",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "New York Narcotic",
+        "label": "",
+        "release_date": "2018-09-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "55",
+        "label": "",
+        "release_date": "2016-03-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Brightside",
+        "label": "",
+        "release_date": "2011-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Melody & Silence",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Summer Series: 2019",
+        "label": "",
+        "release_date": "2019-12-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Brazilian Soul (feat. Sofi Tukker) (Remixes)",
+        "label": "",
+        "release_date": "2018-12-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Goodbyes (feat. Method Man) (Remixes)",
+        "label": "",
+        "release_date": "2018-11-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "House Party (Remixes)",
+        "label": "",
+        "release_date": "2017-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "HEAT The Remixes",
+        "label": "",
+        "release_date": "2017-05-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "TESTIFY",
+        "label": "",
+        "release_date": "2017-02-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "55.5",
+        "label": "",
+        "release_date": "2016-07-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Collect My Love (feat. Alex Newell) (Remixes)",
+        "label": "",
+        "release_date": "2015-09-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "So Classic EP",
+        "label": "",
+        "release_date": "2015-05-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Modern Hearts (The Remixes)",
+        "label": "",
+        "release_date": "2013-05-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Feeling (Remix EP)",
+        "label": "",
+        "release_date": "2012-09-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Magic",
+        "label": "",
+        "release_date": "2011-01-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Thorn",
+        "label": "",
+        "release_date": "2025-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreams",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Foolish Pleasure",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Hero",
+        "label": "",
+        "release_date": "2025-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Revelation",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All the time / Tout le temps (Remixes)",
+        "label": "",
+        "release_date": "2024-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smalltown Boy (feat. Perfume Genius)",
+        "label": "",
+        "release_date": "2024-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All the time / Tout le temps (googly eyes Remix)",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All the time / Tout le temps",
+        "label": "",
+        "release_date": "2024-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LOVER",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Olly Alexander (Years & Years)",
+      "Roosevelt",
+      "CHVRCHES",
+      "Capital Cities",
+      "Jessie Ware",
+      "Dragonette",
+      "MØ",
+      "Dua Lipa",
+      "SG Lewis",
+      "Snakehips"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1094278,
+    "name": "The Knocks",
+    "profile": "The Knocks are a nu-disco duo based New York City in the United States.",
+    "realname": "",
+    "social_urls": [
+      "http://theknocks.com/",
+      "http://www.theknocksstore.com/",
+      "https://www.facebook.com/theknocksnyc/",
+      "https://twitter.com/theknocks",
+      "https://www.instagram.com/the_knocks/",
+      "https://plus.google.com/+theknocks",
+      "https://myspace.com/theknocks",
+      "https://soundcloud.com/theknocks",
+      "https://www.youtube.com/user/itstheknocks",
+      "https://www.youtube.com/user/TheKnocksVEVO",
+      "https://en.wikipedia.org/wiki/The_Knocks"
+    ],
+    "members": [
+      "Ben Ruttner",
+      "James Patterson Jr. III"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 23,
+    "digital_only_releases": 77,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "11xFile, MP3, Album, 192",
+      "12\", EP, Ltd, Pur",
+      "2x12\", Album",
+      "2xCD, Comp + CD, Comp, Mixed",
+      "2xCD, Comp, Car",
+      "2xCD, Comp, Promo",
+      "2xFile, AAC, Single, 256",
+      "2xFile, MP3, 320",
+      "3xCD, Comp",
+      "4xFile, FLAC, EP",
+      "4xFile, MP3, Maxi, 320",
+      "5xFile, MP3, EP, 320",
+      "6xFile, MP3, EP, 320",
+      "7\", Ltd",
+      "7\", Single, Ltd",
+      "8xFile, AAC, EP, 256",
+      "CD, Comp",
+      "CD, Comp + CD, Comp, Mixed",
+      "CD, Comp, Ltd, Promo",
+      "CD, Comp, Mixed, Promo, Sli",
+      "CD, EP, Promo",
+      "CD, Single",
+      "CDr, Comp, Promo",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC, MP3, MP3Sur, Single",
+      "File, FLAC, Single",
+      "File, MP3",
+      "File, MP3, Comp, Mixed, 192",
+      "File, MP3, Comp, P/Mixed, 320",
+      "File, MP3, Single, 256",
+      "File, MP3, Single, 320",
+      "File, WAV"
+    ],
+    "labels": [
+      "A&M Octone Records",
+      "Big Beat",
+      "Big Beat Records, Inc.",
+      "Big Beat, Neon Gold",
+      "Black Clay",
+      "Capitol Records",
+      "DMC, DMC, DMC",
+      "Dee Jay Mix Club",
+      "Fool's Gold Clubhouse",
+      "Fool's Gold Records",
+      "Foreign Family Collective",
+      "HeavyRoc Music",
+      "Hypem",
+      "Interscope Records, School Boy Records, 604 Records",
+      "Les Inrockuptibles, Les Inrockuptibles",
+      "Neon Gold",
+      "Neon Gold, HeavyRoc Music",
+      "New Yorker Music & Media, Kontor Records",
+      "Not On Label",
+      "Not On Label (Amelia Airhorn Self-released)",
+      "Not On Label (The Knocks Self-released)",
+      "Pledge Music",
+      "Promo Only",
+      "Skies Above",
+      "Sony Music",
+      "Sony Music Entertainment",
+      "Sony Music Entertainment Malaysia Sdn Bhd",
+      "Warner Dance Labels",
+      "Warner Dance Labels, Warner Music Sweden"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Knocks",
+    "mbid": "9157ad72-3893-47da-986a-0aa7313f7429",
+    "listeners": 703663,
+    "playcount": 9489596,
+    "listener_play_ratio": 13.49,
+    "bio_exists": true,
+    "bio_summary": "The Knocks are a production and DJ duo who specialize in melodic, carefree dance music that draws from soul, funk, disco, rap, and pop. Making their name with several singles and remixes, as well as EPs like 2011's Magic, they made their full-length debut in 2016 with 55, which featured a diverse array of guests such as Cam'ron, Carly Rae Jepsen, Wyclef Jean, and Walk the Moon. Following side project diversions that delved into future funk (Amelia Airhorn) and tropical house (the Mary Nixons) <a",
+    "tags": [
+      "electronic",
+      "synthpop",
+      "street punk",
+      "indie dance",
+      "dance"
+    ],
+    "similar_artists": [
+      "Roosevelt",
+      "Cannons",
+      "Sofi Tukker",
+      "Dragonette",
+      "St. Lucia"
+    ],
+    "top_tracks": [
+      {
+        "name": "Classic (feat. Powers)",
+        "listeners": 128924,
+        "playcount": 723955
+      },
+      {
+        "name": "Ride Or Die (feat. Foster the People)",
+        "listeners": 108615,
+        "playcount": 668771
+      },
+      {
+        "name": "Bodies",
+        "listeners": 85034,
+        "playcount": 592332
+      },
+      {
+        "name": "Brazilian Soul (feat. Sofi Tukker) - Acoustic Bossa Version",
+        "listeners": 72819,
+        "playcount": 413815
+      },
+      {
+        "name": "Slow Song (with Dragonette)",
+        "listeners": 58981,
+        "playcount": 436966
+      },
+      {
+        "name": "Dancing With The DJ",
+        "listeners": 47501,
+        "playcount": 223834
+      },
+      {
+        "name": "Walking On Water (feat. Totally Enormous Extinct Dinosaurs)",
+        "listeners": 45040,
+        "playcount": 189980
+      },
+      {
+        "name": "Bedroom Eyes (feat. Studio Killers)",
+        "listeners": 43710,
+        "playcount": 247197
+      },
+      {
+        "name": "R U HIGH (feat. Mallrat)",
+        "listeners": 36741,
+        "playcount": 224561
+      },
+      {
+        "name": "All About You (feat. Foster The People)",
+        "listeners": 36371,
+        "playcount": 184752
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Knocks"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

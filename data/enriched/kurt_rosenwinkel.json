@@ -1,0 +1,633 @@
+{
+  "artist_name": "Kurt Rosenwinkel",
+  "artist_id": "kurt_rosenwinkel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:53:27.875934+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "fc43556b-9657-4680-8809-e50295380f98",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1970-10-28",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz",
+      "jazz fusion",
+      "post-bop",
+      "contemporary jazz"
+    ],
+    "aliases": [
+      "Kurt Rosenwinkle"
+    ],
+    "isnis": [
+      "0000000114414704"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000115399",
+      "blog": "http://web.me.com/actidemann/The_Kurt_Rosenwinkel_Blog/Welcome.html",
+      "discogs": "https://www.discogs.com/artist/179574",
+      "free streaming": "https://open.spotify.com/artist/253GMpCNwx1TJtASNAeDoP",
+      "official homepage": "http://www.kurtrosenwinkel.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no99047024",
+      "social network": "https://twitter.com/kurtrosenwinkel",
+      "songkick": "https://www.songkick.com/artists/227386",
+      "VIAF": "http://viaf.org/viaf/34657353",
+      "wikidata": "https://www.wikidata.org/wiki/Q552849"
+    },
+    "labels": [
+      "Savant Records",
+      "Stunt Records",
+      "Criss Cross Jazz",
+      "Verve Music Group",
+      "Savant",
+      "Motéma",
+      "Word of Mouth Music",
+      "Heartcore Records",
+      "Sunnyside",
+      "WOMMUSIC"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 8444,
+    "name": "Kurt Rosenwinkel",
+    "nb_fan": 6813,
+    "nb_album": 53,
+    "link": "https://www.deezer.com/artist/8444",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9817ed573494773fc68f4b9948f65001/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Avishai Cohen",
+      "Ben Van Gelder",
+      "DOMi & JD BECK",
+      "Francesco Ciniglio",
+      "Geri Allen",
+      "Jean-Paul Brodbeck",
+      "Joe Martin",
+      "Jorge Rossy",
+      "Kit Downes",
+      "Lukas Traxel",
+      "Michael Kanan",
+      "Niklas Lukassen",
+      "Tim Pleasant"
+    ],
+    "contributor_roles": {
+      "Niklas Lukassen": [
+        "Main"
+      ],
+      "Kit Downes": [
+        "Featured"
+      ],
+      "Ben Van Gelder": [
+        "Featured"
+      ],
+      "Francesco Ciniglio": [
+        "Featured"
+      ],
+      "DOMi & JD BECK": [
+        "Main"
+      ],
+      "Michael Kanan": [
+        "Featured"
+      ],
+      "Joe Martin": [
+        "Featured"
+      ],
+      "Tim Pleasant": [
+        "Featured"
+      ],
+      "Jean-Paul Brodbeck": [
+        "Main"
+      ],
+      "Lukas Traxel": [
+        "Featured"
+      ],
+      "Jorge Rossy": [
+        "Featured"
+      ],
+      "Avishai Cohen": [
+        "Featured"
+      ],
+      "Geri Allen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Rainbow Surfer",
+      "WHOA",
+      "Zhivago",
+      "Passarim (Bonus Track)",
+      "Summertime",
+      "Intermezzo, Op. 118, No. 2",
+      "Blue Line",
+      "Hungarian Dance No. 1",
+      "Minor Blues",
+      "Heartcore",
+      "East Coast Love Affair",
+      "Simple #2",
+      "Wiegenlied",
+      "Ballade, Op. 10, No. 4",
+      "All The Way To Rajasthan",
+      "Open-Handed Reach",
+      "Ease It",
+      "Self Portrait in Three Colors",
+      "A Flower is a Lovesome Thing (Radio Edit)",
+      "Your Vision",
+      "Intermezzo, Op. 117, No. 2",
+      "Symphony No. 3 – III. Poco allegretto",
+      "Turn Out The Stars",
+      "Ugly Beauty",
+      "Peace Please"
+    ],
+    "track_durations": [
+      217,
+      243,
+      544,
+      360,
+      445,
+      490,
+      371,
+      494,
+      354,
+      516,
+      497,
+      472,
+      395,
+      436,
+      418,
+      595,
+      354,
+      444,
+      418,
+      516,
+      388,
+      504,
+      323,
+      390,
+      88
+    ],
+    "track_ranks": [
+      247243,
+      176711,
+      110989,
+      83265,
+      64027,
+      73429,
+      75872,
+      124411,
+      165852,
+      147378,
+      91711,
+      17959,
+      107797,
+      62960,
+      75539,
+      18119,
+      125894,
+      94737,
+      13250,
+      89605,
+      82202,
+      73712,
+      107545,
+      115393,
+      138784
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 19,
+      "ep": 3,
+      "single": 31
+    },
+    "albums": [
+      {
+        "title": "The Brahms Project",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Our Secret World (Live At CARA, 2021)",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Lovesome Thing (Radio Edits)",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Next Step Band (Live at Smalls, 1996)",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Lovesome Thing",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Undercover (Live at the Village Vanguard)",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Berlin Baritone",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Chopin Project",
+        "label": "",
+        "release_date": "2022-04-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kurt Rosenwinkel Plays Piano",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kurt Rosenwinkel Trio: Angels Around",
+        "label": "",
+        "release_date": "2020-05-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Searching the Continuum",
+        "label": "",
+        "release_date": "2019-10-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Caipi",
+        "label": "",
+        "release_date": "2017-02-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kris Bauman Quartet",
+        "label": "",
+        "release_date": "2009-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Intuit",
+        "label": "",
+        "release_date": "2009-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Deep Song",
+        "label": "",
+        "release_date": "2005-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heartcore",
+        "label": "",
+        "release_date": "2003-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Next Step",
+        "label": "",
+        "release_date": "2000-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Enemies Of Energy",
+        "label": "",
+        "release_date": "2000-01-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "East Coast Love Affair",
+        "label": "",
+        "release_date": "1996-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dream Of The Old (Live At CARA, 2021)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Use of Light (Live at Smalls, 1996)",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Do It 1992",
+        "label": "",
+        "release_date": "2019-05-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rainbow Surfer",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Intermezzo, Op. 117, No. 2",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Intermezzo, Op. 118, No. 2",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hungarian Dance No. 1",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Use Of Light (Live At CARA, 2021)",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Turns (Live At CARA, 2021)",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Embraceable You (Radio Edit)",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ruby My Dear (Radio Edit)",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Mulgrew Miller",
+      "Mark Turner",
+      "Joe Farnsworth",
+      "Niels-Henning Ørsted Pedersen",
+      "Alex Grenier",
+      "Alan Pasqua",
+      "Eric Alexander",
+      "Steve Coleman",
+      "Tom Harrell",
+      "Sonny Troupé Quartet Add 2"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 179574,
+    "name": "Kurt Rosenwinkel",
+    "profile": "Jazz guitarist, born October 28, 1970, originally from Philadelphia, later moved to Brooklyn, NYC. He currently lives in Berlin. In 2016 he founded the company [l=Heartcore Records (4)].",
+    "realname": "",
+    "social_urls": [
+      "http://www.kurtrosenwinkel.com/",
+      "https://kurtrosenwinkel.bandcamp.com/",
+      "https://kurtrosenwinkelgeriallen.bandcamp.com/",
+      "http://www.heartcore-records.com/"
+    ],
+    "members": [],
+    "groups": [
+      "Brian Blade Fellowship",
+      "Human Feel",
+      "The Electric Bebop Band",
+      "Kurt Rosenwinkel Group",
+      "Chris Cheek Quartet",
+      "Gary Burton & Friends",
+      "Kurt Rosenwinkel Standards Trio",
+      "The Chris Potter Quartet",
+      "Kurt Rosenwinkel Trio",
+      "Metta Quintet",
+      "Jakob Dinesen Quartet",
+      "Matthias Lupri Group",
+      "Seamus Blake Quintet",
+      "Joel Frahm Quartet",
+      "Eli Degibri Quintet",
+      "Mimmo Cafiero Quintet",
+      "Mark Turner Quintet",
+      "Kurt Rosenwinkel Quartet",
+      "Bandit 65",
+      "Kris Bauman Quartet",
+      "Ozmosys (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 51,
+    "digital_only_releases": 49,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xFile, FLAC",
+      "3xFile, FLAC, EP",
+      "5xFile, FLAC",
+      "Box + 3xCD",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, Ltd",
+      "CD, EP",
+      "CDr, Album",
+      "LP",
+      "LP, Album, Ltd, Num",
+      "LP, Num, /50"
+    ],
+    "labels": [
+      "19_Enja, 19_Enja",
+      "CARA (6)",
+      "Cellar Music (2)",
+      "Challenge Records (3)",
+      "Challenge Records International",
+      "Earshift Records",
+      "Fresh Sound New Talent",
+      "Gateway Music",
+      "General Records (4)",
+      "GroundUP Music (2)",
+      "Heartcore Records (4)",
+      "Henni Records",
+      "HighNote Records, Inc.",
+      "Jazz Club Ferrara",
+      "LP3 45 Records",
+      "MPS Records",
+      "Not On Label",
+      "Not On Label (Human Feel Self-released)",
+      "Not On Label (Kyra Garey Self-released)",
+      "Not On Label (Lex Korten Self-released)",
+      "Okeh",
+      "Ozmosis Records",
+      "Pi Recordings (2)",
+      "Ring Road Recordings",
+      "SMK Jazz",
+      "Smoke Sessions Records",
+      "Stiletto Records",
+      "Stunt Records",
+      "Stunt Records, Sundance (2)",
+      "Sunnyside",
+      "Wommusic",
+      "dB Studios (13)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kurt Rosenwinkel",
+    "mbid": "fc43556b-9657-4680-8809-e50295380f98",
+    "listeners": 167808,
+    "playcount": 1558068,
+    "listener_play_ratio": 9.28,
+    "bio_exists": true,
+    "bio_summary": "Kurt Rosenwinkel (born October 28, 1970) is a jazz guitarist who came to prominence in the 1990s. His improvising style was initially influenced by guitarists such as Pat Metheny and John Scofield, but has emerged as an individual stylist whose lines are lengthy and linear, recalling the styles of Lennie Tristano in the 1940s and 50s. His chordal language is advanced, touching on ideas from George Van Eps and Ben Monder. He attended the Berklee School <a href=\"https://www.last.fm/music/Kurt+Rose",
+    "tags": [
+      "jazz",
+      "contemporary jazz",
+      "guitar",
+      "jazz guitar",
+      "Fusion"
+    ],
+    "similar_artists": [
+      "Jonathan Kreisberg",
+      "Mark Turner",
+      "Walter Smith III",
+      "Gilad Hekselman",
+      "Pat Martino"
+    ],
+    "top_tracks": [
+      {
+        "name": "You've changed",
+        "listeners": 70250,
+        "playcount": 188851
+      },
+      {
+        "name": "Zhivago",
+        "listeners": 25395,
+        "playcount": 85451
+      },
+      {
+        "name": "Fall",
+        "listeners": 18529,
+        "playcount": 45726
+      },
+      {
+        "name": "Minor Blues",
+        "listeners": 16470,
+        "playcount": 47759
+      },
+      {
+        "name": "Use Of Light",
+        "listeners": 15844,
+        "playcount": 46325
+      },
+      {
+        "name": "The Next Step",
+        "listeners": 13390,
+        "playcount": 37136
+      },
+      {
+        "name": "Caipi",
+        "listeners": 13216,
+        "playcount": 40698
+      },
+      {
+        "name": "You Go To My Head",
+        "listeners": 12574,
+        "playcount": 36548
+      },
+      {
+        "name": "Reflections",
+        "listeners": 12111,
+        "playcount": 39380
+      },
+      {
+        "name": "Blue Line",
+        "listeners": 11987,
+        "playcount": 29756
+      }
+    ],
+    "url": "https://www.last.fm/music/Kurt+Rosenwinkel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

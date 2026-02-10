@@ -1,0 +1,212 @@
+{
+  "artist_name": "Beach Villa",
+  "artist_id": "beach_villa",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:32:56.671306+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170552577,
+    "name": "Beach Villa",
+    "nb_fan": 2,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/170552577",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/aca26743ebc01704a05d40f49bac94fe/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "nightlife",
+      "cocktail",
+      "Cosmopolitan"
+    ],
+    "track_durations": [
+      219,
+      179,
+      143
+    ],
+    "track_ranks": [
+      22082,
+      25697,
+      40864
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Touch of Indigo",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "High Tide",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Riviera",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "cocktail",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "nightlife",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cosmopolitan",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2310926,
+    "name": "Pancho Villa (3)",
+    "profile": "Rapper from Galveston, TX. Former member of [a=Lifestyl] and CEO of [l=Salty Water Records].\r\n\r\n",
+    "realname": "Richard Bustamante, Jr.",
+    "social_urls": [
+      "http://www.panchov.com",
+      "https://www.facebook.com/panchovsworld",
+      "https://www.twitter.com/panchovsworld",
+      "https://www.reverbnation.com/panchovsworld",
+      "https://www.soundcloud.com/panchovsworld",
+      "http://www.soundclick.com/bands/page_music.cfm?bandID=1278228",
+      "https://instagram.com/panchotheplug?igshid=4fa0s346yrsb"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 25,
+    "total_releases": 32,
+    "formats": [
+      "",
+      "13xFile, MP3, Album, CBR",
+      "2xCD, Comp",
+      "CD, Album",
+      "CDr, Mixed, Mixtape"
+    ],
+    "labels": [
+      "Dope House Records",
+      "Kriminar Entertainment",
+      "No Set Trippin Records",
+      "Salty Water Records",
+      "Steak N' Shrimp Records",
+      "Unforgiven Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Beach Villa",
+    "mbid": "",
+    "listeners": 9802,
+    "playcount": 30733,
+    "listener_play_ratio": 3.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Beach+Villa\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Reya Silk",
+      "Ben Travel",
+      "2go",
+      "Gueves",
+      "Chico Rocket"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cosmopolitan",
+        "listeners": 6517,
+        "playcount": 19757
+      },
+      {
+        "name": "nightlife",
+        "listeners": 3034,
+        "playcount": 7637
+      },
+      {
+        "name": "Touch of Indigo",
+        "listeners": 795,
+        "playcount": 1296
+      },
+      {
+        "name": "cocktail",
+        "listeners": 739,
+        "playcount": 1984
+      },
+      {
+        "name": "High Tide",
+        "listeners": 28,
+        "playcount": 52
+      },
+      {
+        "name": "Riviera",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "Cocktail ||  || S || 5b89eb04-7cf6-4d88-97c3-61cdb987e10c",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Beach+Villa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

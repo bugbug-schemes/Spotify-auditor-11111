@@ -1,0 +1,150 @@
+{
+  "artist_name": "Isaques Blues",
+  "artist_id": "isaques_blues",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:17:40.325295+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 145563432,
+    "name": "Isaques Blues",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/145563432",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/87f7f583be38b40be9bec97ae6317dbd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Sleepy Space"
+    ],
+    "track_durations": [
+      126
+    ],
+    "track_ranks": [
+      74242
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Eternal, Unchanging, We Sing",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Need You Christmas",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waiting by the window",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Space",
+        "label": "",
+        "release_date": "2021-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Isaques Blues",
+    "mbid": "",
+    "listeners": 23880,
+    "playcount": 133528,
+    "listener_play_ratio": 5.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Isaques+Blues\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Taylor Stephens",
+      "Phlieng",
+      "Meine Sela",
+      "Jenna Talenti",
+      "Odette Place"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleepy Space",
+        "listeners": 17440,
+        "playcount": 114861
+      },
+      {
+        "name": "I Need You Christmas",
+        "listeners": 4726,
+        "playcount": 13231
+      },
+      {
+        "name": "Waiting by the Window",
+        "listeners": 2160,
+        "playcount": 5363
+      },
+      {
+        "name": "Desert Drone",
+        "listeners": 29,
+        "playcount": 57
+      },
+      {
+        "name": "Eternal, Unchanging, We Sing",
+        "listeners": 6,
+        "playcount": 16
+      }
+    ],
+    "url": "https://www.last.fm/music/Isaques+Blues"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

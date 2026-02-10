@@ -1,0 +1,518 @@
+{
+  "artist_name": "Komorebi",
+  "artist_id": "komorebi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:51:33.831132+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "cbc7e517-1011-4048-ba19-bc5956b96e35",
+    "type": "Person",
+    "country": "",
+    "area": "New Delhi",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [
+      "Tarana Marwah"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://komorebi-crr.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/4271260",
+      "free streaming": "https://www.deezer.com/artist/5948862",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1436083183",
+      "social network": "https://www.instagram.com/komorebi.music/",
+      "soundcloud": "https://soundcloud.com/komorebitunes",
+      "streaming": "https://tidal.com/artist/5729888"
+    },
+    "labels": [
+      "Chicken Ranch Records",
+      "Amazon Content Services",
+      "Gravity Sounds"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5948862,
+    "name": "Komorebi",
+    "nb_fan": 184,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/5948862",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a427d46449217ed130682c17e7ea285e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Idyllic",
+      "SHOU",
+      "Whimsical"
+    ],
+    "contributor_roles": {
+      "Idyllic": [
+        "Main"
+      ],
+      "Whimsical": [
+        "Main"
+      ],
+      "SHOU": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Giri Giri",
+      "Game Master",
+      "Water Circles",
+      "Sequences",
+      "Forget the Past",
+      "Second Chance",
+      "Calling You",
+      "My Funny Valentine",
+      "Ghosts",
+      "9",
+      "Sunset Blues",
+      "Tokyo Sunrise",
+      "Fallen Angels",
+      "Bruises",
+      "Chanda",
+      "Lost In The Woods",
+      "Sliding Doors",
+      "In Your Arms",
+      "Take Me Back",
+      "Endless Spring",
+      "Yesterday",
+      "Stay Around",
+      "While We Wait",
+      "Nicely Nostalgic",
+      "After Hours"
+    ],
+    "track_durations": [
+      134,
+      113,
+      117,
+      120,
+      97,
+      109,
+      83,
+      161,
+      108,
+      79,
+      121,
+      130,
+      120,
+      80,
+      266,
+      123,
+      129,
+      100,
+      117,
+      123,
+      132,
+      121,
+      109,
+      114,
+      111
+    ],
+    "track_ranks": [
+      85286,
+      88408,
+      144782,
+      141490,
+      56818,
+      108050,
+      213262,
+      118987,
+      114478,
+      139012,
+      93865,
+      144861,
+      122014,
+      101834,
+      145636,
+      109958,
+      106643,
+      131808,
+      152939,
+      96043,
+      88486,
+      100084,
+      144709,
+      119751,
+      159408
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 13,
+      "ep": 11,
+      "single": 76
+    },
+    "albums": [
+      {
+        "title": "Dabba Cartel (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2025-05-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Elements of Influence",
+        "label": "",
+        "release_date": "2025-01-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Fall (Remixed)",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bushbungalow Sessions",
+        "label": "",
+        "release_date": "2024-05-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anita Dongre Rewild",
+        "label": "",
+        "release_date": "2023-11-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Fall",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Made in Heaven Season 2 (Original Series Soundtrack)",
+        "label": "",
+        "release_date": "2023-08-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "KS22",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Chanda",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nature's Relic",
+        "label": "",
+        "release_date": "2021-11-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Midnight Thoughts",
+        "label": "",
+        "release_date": "2020-11-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ninshiki",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Soliloquy",
+        "label": "",
+        "release_date": "2017-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "以爱之名",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Anita Dongre Rewild 2026",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "道·别",
+        "label": "",
+        "release_date": "2026-01-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Against Time",
+        "label": "",
+        "release_date": "2026-01-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hands of Fate",
+        "label": "",
+        "release_date": "2025-12-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Keep a Place for Me",
+        "label": "",
+        "release_date": "2025-08-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "ORBIS",
+        "label": "",
+        "release_date": "2025-07-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dither",
+        "label": "",
+        "release_date": "2025-06-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Kobusa",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Birds And Bees",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Green Tea",
+        "label": "",
+        "release_date": "2020-01-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Unknown",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faster As You Can",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "So Let Me Go",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One a Month",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still In Love With You",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dramatic",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "S N U G",
+      "Jhove",
+      "brillion.",
+      "Takeo",
+      "tender spring",
+      "Hevi",
+      "eugenio izzi",
+      "Flovry",
+      "Dontcry",
+      "Ambulo"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5196703,
+    "name": "Komorebi",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Morihide Sawada",
+      "Aosaki Shizuku"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 3,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "CDr",
+      "CDr, EP",
+      "CDr, EP, Ltd",
+      "Cass",
+      "File, AAC, Single",
+      "LP, Album"
+    ],
+    "labels": [
+      "Attenuation Circuit",
+      "Deutsche Grammophon",
+      "Not On Label",
+      "Not On Label (Komorebi Self-released)",
+      "Unpop-media"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Komorebi",
+    "mbid": "dca3f5b6-2830-48cc-b5c3-b14ef37355fb",
+    "listeners": 109061,
+    "playcount": 518946,
+    "listener_play_ratio": 4.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Komorebi\">Read more on Last.fm</a>",
+    "tags": [
+      "techno",
+      "electronic",
+      "pop",
+      "psytrance",
+      "electropop"
+    ],
+    "similar_artists": [
+      "Shou",
+      "Breger",
+      "Natsu",
+      "Akasha",
+      "Dekel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tonde Iru Tori",
+        "listeners": 27209,
+        "playcount": 53941
+      },
+      {
+        "name": "My Funny Valentine",
+        "listeners": 15408,
+        "playcount": 40260
+      },
+      {
+        "name": "Dai jobu desu",
+        "listeners": 12899,
+        "playcount": 24327
+      },
+      {
+        "name": "Cherry Blossom",
+        "listeners": 11475,
+        "playcount": 20540
+      },
+      {
+        "name": "Adenine",
+        "listeners": 10247,
+        "playcount": 17577
+      },
+      {
+        "name": "Ghosts",
+        "listeners": 9403,
+        "playcount": 23838
+      },
+      {
+        "name": "Tori Sora",
+        "listeners": 8951,
+        "playcount": 19900
+      },
+      {
+        "name": "Desert Chase",
+        "listeners": 7693,
+        "playcount": 15847
+      },
+      {
+        "name": "Sliding Doors",
+        "listeners": 6313,
+        "playcount": 13557
+      },
+      {
+        "name": "Keyframe",
+        "listeners": 6212,
+        "playcount": 13455
+      }
+    ],
+    "url": "https://www.last.fm/music/Komorebi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

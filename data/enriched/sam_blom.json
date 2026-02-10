@@ -1,0 +1,116 @@
+{
+  "artist_name": "Sam Blom",
+  "artist_id": "sam_blom",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:52:50.024714+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sam Blom', got 'Sambô'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11077721,
+    "name": "Sam Blomgren",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 7,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "10xFile, FLAC, Album",
+      "7xFile, FLAC, Album, 24-",
+      "8xFile, FLAC, Album",
+      "9xFile, FLAC, Album",
+      "9xFile, FLAC, Album, 16-",
+      "Cass, Ltd, Gol"
+    ],
+    "labels": [
+      "Greenway Records (2)",
+      "Not On Label (Nolan Potter Self-released)",
+      "Not On Label (Nolan Potter's Nightmare Band Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sam Blom",
+    "mbid": "",
+    "listeners": 3702,
+    "playcount": 11908,
+    "listener_play_ratio": 3.22,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sam+Blom\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sam’s Creek",
+      "Logan Connors",
+      "Timothy Hall",
+      "Milan Heyes",
+      "Em Monet"
+    ],
+    "top_tracks": [
+      {
+        "name": "Now and Always",
+        "listeners": 1594,
+        "playcount": 4706
+      },
+      {
+        "name": "Summit",
+        "listeners": 1468,
+        "playcount": 3634
+      },
+      {
+        "name": "Staying In",
+        "listeners": 1051,
+        "playcount": 2583
+      },
+      {
+        "name": "Quiet Reflections",
+        "listeners": 435,
+        "playcount": 985
+      }
+    ],
+    "url": "https://www.last.fm/music/Sam+Blom"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

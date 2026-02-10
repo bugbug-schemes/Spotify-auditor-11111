@@ -1,0 +1,168 @@
+{
+  "artist_name": "Vinga",
+  "artist_id": "vinga",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:58:01.357561+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "cab60cf6-bc50-4c1d-8b88-96095e2ecf1e",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/171283387",
+      "streaming": "https://tidal.com/artist/32358126"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Vinga', got '7 Minutoz'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 797714,
+    "name": "Andreas Vingaard",
+    "profile": "Founder of [l=Frederiksberg Records].",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Queen Eve And The Kings",
+      "Rolando Posen"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 23,
+    "total_releases": 28,
+    "formats": [
+      "",
+      "7\"",
+      "CD, Album, Comp, Promo",
+      "CD, Comp",
+      "File, AIFF, FLAC, WAV",
+      "File, AIFF, WAV",
+      "LP"
+    ],
+    "labels": [
+      "Acid Jazz",
+      "Frederiksberg Records",
+      "Melting Pot Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "VINGA",
+    "mbid": "",
+    "listeners": 8974,
+    "playcount": 133284,
+    "listener_play_ratio": 14.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/VINGA\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Evelina Krueger",
+      "Angelo Grant",
+      "Leo Button",
+      "Brandie Herbert",
+      "William Gossard"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rubbing my eyes",
+        "listeners": 5983,
+        "playcount": 69474
+      },
+      {
+        "name": "Hug me",
+        "listeners": 4226,
+        "playcount": 56859
+      },
+      {
+        "name": "How I Miss You-MusicBox",
+        "listeners": 899,
+        "playcount": 5930
+      },
+      {
+        "name": "Tickle Toes",
+        "listeners": 89,
+        "playcount": 178
+      },
+      {
+        "name": "Sleepy willow",
+        "listeners": 76,
+        "playcount": 174
+      },
+      {
+        "name": "My Little Miracle",
+        "listeners": 67,
+        "playcount": 144
+      },
+      {
+        "name": "Man on the Moon",
+        "listeners": 60,
+        "playcount": 122
+      },
+      {
+        "name": "Hug me-Musicbox",
+        "listeners": 45,
+        "playcount": 96
+      },
+      {
+        "name": "Ding Dong Song-MusicBox",
+        "listeners": 37,
+        "playcount": 87
+      },
+      {
+        "name": "Sleepy willow-Musicbox",
+        "listeners": 31,
+        "playcount": 63
+      }
+    ],
+    "url": "https://www.last.fm/music/VINGA"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

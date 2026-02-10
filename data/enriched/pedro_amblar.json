@@ -1,0 +1,226 @@
+{
+  "artist_name": "Pedro Amblar",
+  "artist_id": "pedro_amblar",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:24:40.326970+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "fc482aa1-7509-41f9-bb7e-1c13badbeeff",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7866356,
+    "name": "Pedro Amblar",
+    "nb_fan": 28,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/7866356",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e83d237d905e71f62eb4e7b6091706dc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Newark",
+      "Las Ramblas"
+    ],
+    "track_durations": [
+      142,
+      197
+    ],
+    "track_ranks": [
+      21269,
+      18847
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Early Rise",
+        "label": "",
+        "release_date": "2019-12-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Chillout",
+        "label": "",
+        "release_date": "2015-09-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Atogo",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Newark",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Julybreeze",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maya",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepless Nights",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Sky",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Las Ramblas",
+        "label": "",
+        "release_date": "2015-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pedro Amblar",
+    "mbid": "fc482aa1-7509-41f9-bb7e-1c13badbeeff",
+    "listeners": 8212,
+    "playcount": 23520,
+    "listener_play_ratio": 2.86,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pedro+Amblar\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Speed Tentacles",
+      "Il Greco",
+      "Elton Ames",
+      "Delaware Saints",
+      "Steve Blame"
+    ],
+    "top_tracks": [
+      {
+        "name": "Las Ramblas",
+        "listeners": 4374,
+        "playcount": 13961
+      },
+      {
+        "name": "Newark",
+        "listeners": 2571,
+        "playcount": 5901
+      },
+      {
+        "name": "Atogo",
+        "listeners": 870,
+        "playcount": 2379
+      },
+      {
+        "name": "Maya",
+        "listeners": 498,
+        "playcount": 953
+      },
+      {
+        "name": "El Toro",
+        "listeners": 158,
+        "playcount": 295
+      },
+      {
+        "name": "Moonshine",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Night Watch",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "On Lake Michigan",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "A Deep Cave",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Good Morning Glory",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Pedro+Amblar"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

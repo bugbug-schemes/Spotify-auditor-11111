@@ -1,0 +1,132 @@
+{
+  "artist_name": "Sigrid Gunnarsson",
+  "artist_id": "sigrid_gunnarsson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:02:57.317452+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 191213257,
+    "name": "Sigrid Gunnarsson",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/191213257",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/450b63f62ffdb76832452cc6b68dc0f2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "My Raincoat",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold My Hand",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bro, bro breja",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Litet bo jag sätta vill",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sigrid Gunnarsson",
+    "mbid": "",
+    "listeners": 1035,
+    "playcount": 9498,
+    "listener_play_ratio": 9.18,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sigrid+Gunnarsson\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sleepy Olof",
+      "Oscar Stormborn",
+      "Guille Subiré",
+      "Zack Allen",
+      "Sandy Mann"
+    ],
+    "top_tracks": [
+      {
+        "name": "Litet bo jag sätta vill",
+        "listeners": 645,
+        "playcount": 4168
+      },
+      {
+        "name": "My Raincoat",
+        "listeners": 401,
+        "playcount": 5265
+      },
+      {
+        "name": "Bro, bro breja",
+        "listeners": 17,
+        "playcount": 65
+      }
+    ],
+    "url": "https://www.last.fm/music/Sigrid+Gunnarsson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

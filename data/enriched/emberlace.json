@@ -1,0 +1,231 @@
+{
+  "artist_name": "Emberlace",
+  "artist_id": "emberlace",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:27:01.370013+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 306350771,
+    "name": "Emberlace",
+    "nb_fan": 3,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/306350771",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7d50c1b3d564ae6a2a3ffa50daca552e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Always Wear A Crown",
+        "label": "",
+        "release_date": "2025-08-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Presence of Mind",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Silence",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chrysalism",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dust Line",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lightshed",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Night Rain",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Isiltasuna",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brighter Dawn",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fragments of Dawn",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sundial in the Fog",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Shape of Us",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost in Midnight Blue",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Emberlace",
+    "mbid": "",
+    "listeners": 78387,
+    "playcount": 477355,
+    "listener_play_ratio": 6.09,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Emberlace\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Foreglow",
+      "Drift State",
+      "Astral Steps",
+      "Tom Schiller",
+      "moonlace"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lightshed",
+        "listeners": 31489,
+        "playcount": 124671
+      },
+      {
+        "name": "Sundial in the Fog",
+        "listeners": 28306,
+        "playcount": 140884
+      },
+      {
+        "name": "Brighter Dawn",
+        "listeners": 20527,
+        "playcount": 67934
+      },
+      {
+        "name": "Lost in Midnight Blue",
+        "listeners": 16676,
+        "playcount": 71565
+      },
+      {
+        "name": "The Shape of Us",
+        "listeners": 12623,
+        "playcount": 67042
+      },
+      {
+        "name": "Soft Silence",
+        "listeners": 935,
+        "playcount": 2140
+      },
+      {
+        "name": "Presence of Mind",
+        "listeners": 822,
+        "playcount": 1385
+      },
+      {
+        "name": "Fragments of Dawn",
+        "listeners": 559,
+        "playcount": 1140
+      },
+      {
+        "name": "Chrysalism",
+        "listeners": 152,
+        "playcount": 241
+      },
+      {
+        "name": "Dust Line",
+        "listeners": 118,
+        "playcount": 159
+      }
+    ],
+    "url": "https://www.last.fm/music/Emberlace"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

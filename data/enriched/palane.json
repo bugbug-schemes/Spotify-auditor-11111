@@ -1,0 +1,431 @@
+{
+  "artist_name": "Palane",
+  "artist_id": "palane",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:20:36.865979+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ca717707-3528-4fec-bd49-df9a42bb634d",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/393dtQjlemWfdJUUGRKbRr"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 119176312,
+    "name": "Palane",
+    "nb_fan": 60,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/119176312",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/eb2e9da31c1d8398aa3626b3c21f7a60/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ape Drums",
+      "Badbwoy",
+      "Cheque",
+      "Ginton",
+      "JUMPR",
+      "June Freedom",
+      "Kohsea",
+      "Lil Cobaine",
+      "Murphy",
+      "Oumou Sangaré"
+    ],
+    "contributor_roles": {
+      "Ginton": [
+        "Main"
+      ],
+      "Ape Drums": [
+        "Main"
+      ],
+      "Kohsea": [
+        "Main"
+      ],
+      "Badbwoy": [
+        "Main"
+      ],
+      "June Freedom": [
+        "Main"
+      ],
+      "Cheque": [
+        "Main"
+      ],
+      "Murphy": [
+        "Main"
+      ],
+      "Oumou Sangaré": [
+        "Main"
+      ],
+      "Lil Cobaine": [
+        "Main"
+      ],
+      "JUMPR": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Anything (Ya Ya)",
+      "Seraphina",
+      "Are You Still You? (Badbwoy & Palane Extended Remix)",
+      "De Soweto",
+      "Into My Ocean",
+      "Les Saints",
+      "Danze Sur",
+      "Sabu",
+      "Be There For You",
+      "Daybreak (Let It Play)",
+      "Need You Like",
+      "La Melodia"
+    ],
+    "track_durations": [
+      170,
+      444,
+      330,
+      299,
+      225,
+      316,
+      253,
+      184,
+      328,
+      162,
+      227,
+      283
+    ],
+    "track_ranks": [
+      345580,
+      268477,
+      384348,
+      407312,
+      199282,
+      265650,
+      185570,
+      390167,
+      142579,
+      190920,
+      200778,
+      137621
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 2,
+      "ep": 4,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "Subsonik Instrumentals, Vol. 2",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Subsonik Instrumentals, Vol. 1",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Onchano EP",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Seraphina EP",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Les Saints EP",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Pieces Of You EP",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Journey",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Are You Still You? (Badbwoy & Palane Remix)",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Manamana",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Into My Ocean",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anything (Ya Ya)",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daybreak (Let It Play)",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sabu",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angama",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mad World",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Be There For You",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wonderful Life (JOSEPH Remix)",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Danze Sur",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Need You Like",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wonderful Life",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Melodia",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Scaramanga",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Live And Die Together",
+        "label": "",
+        "release_date": "2021-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "SubLife",
+      "Eran Hersh",
+      "Badbwoy",
+      "Da Mike",
+      "LE YORA",
+      "Anorre",
+      "Shadu",
+      "SOMMERS (UK)",
+      "Themba",
+      "Ajna (BE)"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16371982,
+    "name": "Palane",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "File, MP3, Single, 320",
+      "LP, Album, Ora"
+    ],
+    "labels": [
+      "Spinnin' Deep",
+      "Woody Trees"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Palane",
+    "mbid": "ca717707-3528-4fec-bd49-df9a42bb634d",
+    "listeners": 3353,
+    "playcount": 11530,
+    "listener_play_ratio": 3.44,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Palane\">Read more on Last.fm</a>",
+    "tags": [
+      "japan"
+    ],
+    "similar_artists": [
+      "YAWDEL",
+      "Serion",
+      "JNel",
+      "Elijah Hill",
+      "L I F E / L I N E"
+    ],
+    "top_tracks": [
+      {
+        "name": "Live And Die Together",
+        "listeners": 3101,
+        "playcount": 10839
+      },
+      {
+        "name": "Onchano",
+        "listeners": 71,
+        "playcount": 131
+      },
+      {
+        "name": "Aurum",
+        "listeners": 66,
+        "playcount": 122
+      },
+      {
+        "name": "Manamana",
+        "listeners": 62,
+        "playcount": 169
+      },
+      {
+        "name": "Wholesome",
+        "listeners": 57,
+        "playcount": 105
+      },
+      {
+        "name": "Angama",
+        "listeners": 29,
+        "playcount": 73
+      },
+      {
+        "name": "Journey",
+        "listeners": 13,
+        "playcount": 15
+      },
+      {
+        "name": "Here For You",
+        "listeners": 10,
+        "playcount": 37
+      },
+      {
+        "name": "Azure - Instrumental Mix",
+        "listeners": 9,
+        "playcount": 10
+      },
+      {
+        "name": "Running",
+        "listeners": 8,
+        "playcount": 15
+      }
+    ],
+    "url": "https://www.last.fm/music/Palane"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

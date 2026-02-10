@@ -1,0 +1,217 @@
+{
+  "artist_name": "Calm Lecce",
+  "artist_id": "calm_lecce",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:56:26.800255+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 173635667,
+    "name": "Calm Lecce",
+    "nb_fan": 1,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/173635667",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/44df15a32cd11fef322d46645f1b974f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "After The Stars",
+        "label": "",
+        "release_date": "2023-07-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Antidote",
+        "label": "",
+        "release_date": "2023-01-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Enter Eternity",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Source of health",
+        "label": "",
+        "release_date": "2025-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quitude",
+        "label": "",
+        "release_date": "2025-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Healing Spectrum 432HZ",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost Angel Eyes",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trow Dream",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sono Deep",
+        "label": "",
+        "release_date": "2022-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Game",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Botanical Gardens",
+        "label": "",
+        "release_date": "2022-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Calm Lecce",
+    "mbid": "",
+    "listeners": 7529,
+    "playcount": 24176,
+    "listener_play_ratio": 3.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Calm+Lecce\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aaron Lynn",
+      "Seimar",
+      "Deruinga",
+      "Tranquility Spa",
+      "Pascal Dirac"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fantasy Rose",
+        "listeners": 6057,
+        "playcount": 20750
+      },
+      {
+        "name": "Enter Eternity",
+        "listeners": 1473,
+        "playcount": 3168
+      },
+      {
+        "name": "Shakti Shakta",
+        "listeners": 28,
+        "playcount": 52
+      },
+      {
+        "name": "Dream Mirror",
+        "listeners": 25,
+        "playcount": 37
+      },
+      {
+        "name": "Pas Animatronic 446hz wav",
+        "listeners": 18,
+        "playcount": 66
+      },
+      {
+        "name": "Sleepy Game",
+        "listeners": 17,
+        "playcount": 23
+      },
+      {
+        "name": "Botanical Gardens",
+        "listeners": 15,
+        "playcount": 21
+      },
+      {
+        "name": "The Shamanix",
+        "listeners": 11,
+        "playcount": 22
+      },
+      {
+        "name": "Antidote",
+        "listeners": 7,
+        "playcount": 20
+      },
+      {
+        "name": "While Enjoying",
+        "listeners": 4,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Calm+Lecce"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

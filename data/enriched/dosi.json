@@ -1,0 +1,558 @@
+{
+  "artist_name": "Dosi",
+  "artist_id": "dosi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:32:26.219070+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e7ae4c82-3adf-443b-b2f6-1de8a80cba48",
+    "type": "Person",
+    "country": "",
+    "area": "Nice",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "downtempo",
+      "instrumental",
+      "hip hop",
+      "lo-fi",
+      "boom bap",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi hip hop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [
+      "01061192980"
+    ],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/9510775",
+      "free streaming": "https://www.deezer.com/artist/10379906",
+      "purchase for download": "https://us.7digital.com/artist/dosi",
+      "social network": "https://www.instagram.com/dosibeats/",
+      "streaming": "https://tidal.com/artist/19042489",
+      "youtube music": "https://music.youtube.com/channel/UCqpMnUH9Rf0ybfGDSqGIV4g"
+    },
+    "labels": [
+      "Kindbrew",
+      "Aviary Day",
+      "PLYGRND",
+      "purity label",
+      "Lofi Records",
+      "Retro Jungle",
+      "Hip Dozer",
+      "Chill Beats Records",
+      "Aviary Bridge Records",
+      "Etymology Records",
+      "Lofi Chill Records",
+      "Lofi Jazz Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10379906,
+    "name": "Dosi",
+    "nb_fan": 260,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/10379906",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c5e5d04087049a6fd486b65ebda227ed/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bastien Brison",
+      "Florent Garcia",
+      "Hoogway",
+      "Lofi Girl",
+      "So.Lo",
+      "Tonion",
+      "Ødyssee"
+    ],
+    "contributor_roles": {
+      "So.Lo": [
+        "Main"
+      ],
+      "Bastien Brison": [
+        "Main"
+      ],
+      "Hoogway": [
+        "Main"
+      ],
+      "Ødyssee": [
+        "Main"
+      ],
+      "Florent Garcia": [
+        "Main"
+      ],
+      "Tonion": [
+        "Featured"
+      ],
+      "Lofi Girl": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "With Your Eyes Closed",
+      "Close The Box",
+      "Steps",
+      "Sunday Memories",
+      "Spring Buds",
+      "Destiny",
+      "Purity",
+      "Shivers",
+      "Something Missing",
+      "Cruelty",
+      "Last Day At The Seaside",
+      "Old Time",
+      "Sunday's Lullaby",
+      "Mistral",
+      "When The Sun Rises",
+      "Summer At The Lake",
+      "Hot Chocolate",
+      "Playground",
+      "When I Remember You",
+      "Part of Us",
+      "Introvert",
+      "Faubourgs",
+      "Abandoned Graveyard",
+      "Shadows",
+      "Spooky Forest"
+    ],
+    "track_durations": [
+      135,
+      114,
+      145,
+      120,
+      147,
+      163,
+      184,
+      148,
+      155,
+      160,
+      176,
+      171,
+      184,
+      133,
+      171,
+      158,
+      166,
+      144,
+      163,
+      204,
+      142,
+      182,
+      183,
+      158,
+      120
+    ],
+    "track_ranks": [
+      636801,
+      567262,
+      571572,
+      587632,
+      547907,
+      587738,
+      405206,
+      567932,
+      574239,
+      518489,
+      568760,
+      490151,
+      338523,
+      100000,
+      508877,
+      435650,
+      469549,
+      438753,
+      475496,
+      427017,
+      121375,
+      348896,
+      254880,
+      291080,
+      31830
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 8,
+      "ep": 19,
+      "single": 73
+    },
+    "albums": [
+      {
+        "title": "Magic Box",
+        "label": "",
+        "release_date": "2026-01-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A State of Mind",
+        "label": "",
+        "release_date": "2025-07-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fallen Souls",
+        "label": "",
+        "release_date": "2024-04-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Under The Stars",
+        "label": "",
+        "release_date": "2024-03-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Arodasio",
+        "label": "",
+        "release_date": "2023-01-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Evanescent",
+        "label": "",
+        "release_date": "2022-01-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Crimson Leaves",
+        "label": "",
+        "release_date": "2021-11-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Impossible Love",
+        "label": "",
+        "release_date": "2021-08-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Silver Lining",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Home Warmth",
+        "label": "",
+        "release_date": "2025-08-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Road To The Sun",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Busy Bee",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Anger",
+        "label": "",
+        "release_date": "2024-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "forsaken",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "a reason",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Nostalgia",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Quiet Thoughts",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Haunted Castle",
+        "label": "",
+        "release_date": "2022-12-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Idle Cuddle",
+        "label": "",
+        "release_date": "2022-10-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Far Away",
+        "label": "",
+        "release_date": "2022-09-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Night Times",
+        "label": "",
+        "release_date": "2022-07-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Plenitude",
+        "label": "",
+        "release_date": "2022-04-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Brighter Days",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Double Path",
+        "label": "",
+        "release_date": "2021-04-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Eternal Journey",
+        "label": "",
+        "release_date": "2021-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chill Beats",
+        "label": "",
+        "release_date": "2020-12-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Departure",
+        "label": "",
+        "release_date": "2020-11-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mistral",
+        "label": "",
+        "release_date": "2026-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back From Holidays",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Softy",
+      "Tibeauthetraveler",
+      "NO SPIRIT",
+      "Mondo Loops",
+      "Casiio",
+      "Mujo",
+      "Living Room",
+      "xander.",
+      "Prithvi",
+      "Blue Fox"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9510775,
+    "name": "Dosi",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 20,
+    "digital_only_releases": 5,
+    "total_releases": 25,
+    "formats": [
+      "",
+      "10xLP, Comp + Box, Ltd, Num",
+      "10xLP, Comp, Ltd, Box",
+      "10xLP, Comp, Num + Box, Ltd, Num",
+      "12\", Comp",
+      "12\", EP, 180",
+      "2x12\", Comp, Ltd, Gre",
+      "2xLP, Comp, Ltd",
+      "2xLP, Comp, Ltd, 180",
+      "2xLP, Comp, Ltd, Dar",
+      "2xLP, Comp, Ltd, Tra",
+      "2xLP, Ltd, Num, Sta",
+      "3x12\", Comp, Ltd, Bla",
+      "CDr, Mixed",
+      "Cass, Cas",
+      "LP",
+      "LP, Album, Ltd, Num, Mar",
+      "LP, Comp, Ltd",
+      "LP, Comp, Ltd, Num, Tra",
+      "LP, Comp, Off"
+    ],
+    "labels": [
+      "Hip Dozer, Inner Ocean Records",
+      "Lofi Girl",
+      "Lofi Records (4)",
+      "Not On Label",
+      "Qrates",
+      "Retro Jungle"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "dosi",
+    "mbid": "",
+    "listeners": 259377,
+    "playcount": 2009069,
+    "listener_play_ratio": 7.75,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/dosi\">Read more on Last.fm</a>",
+    "tags": [
+      "instrumental hip-hop"
+    ],
+    "similar_artists": [
+      "Sátyr",
+      "Tibeauthetraveler",
+      "Kanisan",
+      "Lucid Keys",
+      "Swink"
+    ],
+    "top_tracks": [
+      {
+        "name": "Isolation",
+        "listeners": 50182,
+        "playcount": 128625
+      },
+      {
+        "name": "Shadows",
+        "listeners": 45973,
+        "playcount": 113650
+      },
+      {
+        "name": "Cruelty",
+        "listeners": 29121,
+        "playcount": 61345
+      },
+      {
+        "name": "Purity",
+        "listeners": 25422,
+        "playcount": 89827
+      },
+      {
+        "name": "Civilisation",
+        "listeners": 20725,
+        "playcount": 43282
+      },
+      {
+        "name": "Reminiscing",
+        "listeners": 18273,
+        "playcount": 36551
+      },
+      {
+        "name": "Forgotten Past",
+        "listeners": 18117,
+        "playcount": 37382
+      },
+      {
+        "name": "Nocturn Doubts",
+        "listeners": 16834,
+        "playcount": 35580
+      },
+      {
+        "name": "Fear",
+        "listeners": 16724,
+        "playcount": 32427
+      },
+      {
+        "name": "Another Era",
+        "listeners": 16703,
+        "playcount": 34732
+      }
+    ],
+    "url": "https://www.last.fm/music/dosi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

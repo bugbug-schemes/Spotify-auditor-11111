@@ -1,0 +1,169 @@
+{
+  "artist_name": "Naturalis",
+  "artist_id": "naturalis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:57:42.523307+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ea723ed8-c439-450b-8e56-d531b1b6d58a",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://naturalis.bandcamp.com/"
+    },
+    "labels": [
+      "Experimental Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Naturalis', got 'Bob Marley & The Wailers'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3705,
+    "name": "Naturalist",
+    "profile": "",
+    "realname": "Uwe Schmidt",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 4,
+    "digital_only_releases": 5,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "18xFile, MP3, Comp, 320",
+      "7xFile, FLAC",
+      "CD, Comp",
+      "CD, Comp, Ltd",
+      "CDr, CD-ROM, Comp, Unofficial, MP3",
+      "CDr, Comp, Mixed"
+    ],
+    "labels": [
+      "Aedi Records",
+      "Caipirinha Productions, Caipirinha Productions, Caipirinha Productions",
+      "MP3SERVICE",
+      "Not On Label",
+      "Rather Interesting"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Naturalis",
+    "mbid": "",
+    "listeners": 89701,
+    "playcount": 693944,
+    "listener_play_ratio": 7.74,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Naturalis\">Read more on Last.fm</a>",
+    "tags": [
+      "Sleep",
+      "nature sounds"
+    ],
+    "similar_artists": [
+      "Ocean Bank",
+      "Zen Master",
+      "NATURE NOISE",
+      "Oceanica",
+      "Wonderful Escape"
+    ],
+    "top_tracks": [
+      {
+        "name": "Distant Thunder in the East of the City",
+        "listeners": 19178,
+        "playcount": 67305
+      },
+      {
+        "name": "Gathering Strenght (Alpha Waves)",
+        "listeners": 12821,
+        "playcount": 45201
+      },
+      {
+        "name": "Sleeping on the Veranda, Woken by Thunder",
+        "listeners": 11991,
+        "playcount": 74692
+      },
+      {
+        "name": "Solutions (Gamma Waves)",
+        "listeners": 10814,
+        "playcount": 36675
+      },
+      {
+        "name": "Rise (3 Minute Loopable Tibetan Bowl Timer)",
+        "listeners": 10302,
+        "playcount": 32404
+      },
+      {
+        "name": "Fragments (2 Minute Loopable Tibetan Bowl Timer)",
+        "listeners": 9982,
+        "playcount": 30212
+      },
+      {
+        "name": "The Windy Sea and the Magic Black Clow",
+        "listeners": 9839,
+        "playcount": 31455
+      },
+      {
+        "name": "We're Under the Umbrella, Waiting",
+        "listeners": 9123,
+        "playcount": 38544
+      },
+      {
+        "name": "Morning Bird Symphony",
+        "listeners": 7283,
+        "playcount": 29239
+      },
+      {
+        "name": "The Process (Beta Waves)",
+        "listeners": 6325,
+        "playcount": 19442
+      }
+    ],
+    "url": "https://www.last.fm/music/Naturalis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

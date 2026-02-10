@@ -1,0 +1,189 @@
+{
+  "artist_name": "Stanford Cheung",
+  "artist_id": "stanford_cheung",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:16:26.491557+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 252507252,
+    "name": "Stanford Cheung",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/252507252",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/40bc61465dbd017d496984154a64f6e3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 2,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Folios of Light (Music by Contemporary Japanese Composers)",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Till Next",
+        "label": "",
+        "release_date": "2025-01-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "ENDROLL",
+        "label": "",
+        "release_date": "2024-05-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "When we Flatline and Soar",
+        "label": "",
+        "release_date": "2024-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12742277,
+    "name": "Stanford Cheung",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://stanfordcheung.bandcamp.com/",
+      "https://stanfordcheung.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "Cass, EP, Ltd, Num"
+    ],
+    "labels": [
+      "Machine Tribe Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Stanford Cheung",
+    "mbid": "",
+    "listeners": 50,
+    "playcount": 162,
+    "listener_play_ratio": 3.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Stanford+Cheung\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Bela String Quartet",
+      "François Mardirossian",
+      "Maurizio Iannuzzi",
+      "Athelas Sinfonietta Copenhagen",
+      "My Beautiful Decay 1973"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pleiades Dances, Vol. I, Op. 71: No. 1, Prelude to Little Spring",
+        "listeners": 28,
+        "playcount": 39
+      },
+      {
+        "name": "Merry Christmas, Mr. Lawrence",
+        "listeners": 8,
+        "playcount": 11
+      },
+      {
+        "name": "Piano Folio...Homage to the Departed Pleiades",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "Pleiades Dances, Vol. I, Op. 71: No. 6, Winter Pastoral",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "Pleiades Dances, Vol. I, Op. 71: No. 5, Autumn Barcarolle",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Spring & Asura (Akashi Cadenza)",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Aqua",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Pleiades Dances IX, Op. 85_ No. 6, Dreaming Arabesque",
+        "listeners": 2,
+        "playcount": 5
+      },
+      {
+        "name": "Pleiades Dances, Vol. I, Op. 71_ No. 1, Prelude to Little Spring",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Pleiades Dances, Vol. I, Op. 71_ No. 4, Romance to Languid Summer",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Stanford+Cheung"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

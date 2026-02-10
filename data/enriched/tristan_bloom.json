@@ -1,0 +1,173 @@
+{
+  "artist_name": "Tristan Bloom",
+  "artist_id": "tristan_bloom",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:49:33.773059+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 343594301,
+    "name": "Tristan Bloom",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/343594301",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Hide and Seek",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Besties",
+        "label": "",
+        "release_date": "2025-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamy Goodnight",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beach day",
+        "label": "",
+        "release_date": "2025-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calming River",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sailboat Smiles",
+        "label": "",
+        "release_date": "2025-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wishing on the Moon",
+        "label": "",
+        "release_date": "2025-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tristan Bloom",
+    "mbid": "",
+    "listeners": 853,
+    "playcount": 6293,
+    "listener_play_ratio": 7.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tristan+Bloom\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sophie Amélie",
+      "Corall",
+      "Lila Novelle",
+      "Julie Isabey",
+      "Ellie Frosting"
+    ],
+    "top_tracks": [
+      {
+        "name": "Besties",
+        "listeners": 517,
+        "playcount": 2400
+      },
+      {
+        "name": "Hide and Seek",
+        "listeners": 339,
+        "playcount": 1201
+      },
+      {
+        "name": "Dreamy Goodnight",
+        "listeners": 275,
+        "playcount": 1532
+      },
+      {
+        "name": "Beach day",
+        "listeners": 188,
+        "playcount": 1153
+      },
+      {
+        "name": "Wishing on the Moon",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Sailboat Smiles",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Was this insane!? #tristanbloom #trampolinegymnastics #acrobatics #trending #flip #gym #fyp #athlete",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Tristan+Bloom"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

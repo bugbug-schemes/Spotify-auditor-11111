@@ -1,0 +1,475 @@
+{
+  "artist_name": "sombr",
+  "artist_id": "sombr",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:33:04.520878+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "502cf908-9921-48bc-bf0e-265c881c0156",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "2005-07-05",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie pop",
+      "pop rock",
+      "2020s",
+      "gen z"
+    ],
+    "aliases": [
+      "Shane Michael Boose",
+      "Shane Boose"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandsintown": "https://www.bandsintown.com/a/15560450",
+      "free streaming": "https://www.deezer.com/artist/145468192",
+      "last.fm": "https://www.last.fm/music/sombr",
+      "official homepage": "https://www.sombrmusic.com/",
+      "social network": "https://www.tiktok.com/@somb.r",
+      "soundcloud": "https://soundcloud.com/sombrsongs",
+      "streaming": "https://tidal.com/artist/28398607",
+      "wikidata": "https://www.wikidata.org/wiki/Q133839234",
+      "youtube": "https://www.youtube.com/channel/UCXlqFQmZZOb78teSnAqhuwA"
+    },
+    "labels": [
+      "Parlophone",
+      "triple j",
+      "Warner Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 145468192,
+    "name": "sombr",
+    "nb_fan": 118082,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/145468192",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/82ef9a2db0c80f8588569d955c78d695/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Homewrecker",
+      "back to friends",
+      "12 to 12",
+      "undressed",
+      "we never dated",
+      "under the mat",
+      "i wish i knew how to quit you",
+      "crushing",
+      "would've been you",
+      "canal street",
+      "come closer",
+      "perfume",
+      "dime",
+      "i don't know you anymore",
+      "do i ever cross your mind",
+      "savior",
+      "makes me want you",
+      "caroline",
+      "don't let me down",
+      "never find u",
+      "in your arms",
+      "willow",
+      "burner phone",
+      "ivy",
+      "through it all"
+    ],
+    "track_durations": [
+      209,
+      199,
+      242,
+      182,
+      196,
+      284,
+      232,
+      207,
+      183,
+      302,
+      194,
+      191,
+      225,
+      227,
+      168,
+      180,
+      160,
+      198,
+      223,
+      166,
+      199,
+      212,
+      231,
+      247,
+      210
+    ],
+    "track_ranks": [
+      985722,
+      980345,
+      991896,
+      986762,
+      823602,
+      700670,
+      725321,
+      720262,
+      799498,
+      662376,
+      680489,
+      659556,
+      620967,
+      718527,
+      802586,
+      666961,
+      604326,
+      554804,
+      481719,
+      536478,
+      605264,
+      470779,
+      497672,
+      549910,
+      432062
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "I Barely Know Her",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "in another life",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Homewrecker",
+        "label": "",
+        "release_date": "2026-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "12 to 12",
+        "label": "",
+        "release_date": "2025-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "we never dated",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "undressed",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "back to friends",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "makes me want you",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "do i ever cross your mind",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "perfume",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "savior",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i'll remember tonight",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "in your arms",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "i don't know you anymore",
+        "label": "",
+        "release_date": "2023-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "would've been you",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "my house is warm",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "silhouette",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "never find u",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "alibi",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "weak",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "willow",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "caroline",
+        "label": "",
+        "release_date": "2022-06-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "through it all",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "fine",
+        "label": "",
+        "release_date": "2022-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "nothing left to say",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "FINNEAS",
+      "Gigi Perez",
+      "Storm Henshaw",
+      "Stephen Dawes",
+      "Sydney Rose",
+      "Conan Gray",
+      "Lyn Lapid",
+      "Lorde",
+      "girl in red",
+      "Nessa Barrett"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16170010,
+    "name": "Sombr (2)",
+    "profile": "Shane Michael Boose (born July 5, 2005), known professionally as Sombr (sometimes stylized in lowercase), is an American singer, songwriter, and record producer.",
+    "realname": "",
+    "social_urls": [
+      "https://www.sombrmusic.com/",
+      "https://www.facebook.com/s0mbr",
+      "https://www.instagram.com/sombr",
+      "https://www.tiktok.com/@sombr",
+      "https://en.wikipedia.org/wiki/Sombr"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 3,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "Cass, Comp, Ltd, Mixtape"
+    ],
+    "labels": [
+      "EMI, Sony Music, EMI, Sony Music",
+      "Sombre Rituel Productions",
+      "Sony Music",
+      "Warner Music Central Europe, Universal Music Group, Sony Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "sombr",
+    "mbid": "502cf908-9921-48bc-bf0e-265c881c0156",
+    "listeners": 1687919,
+    "playcount": 71172074,
+    "listener_play_ratio": 42.17,
+    "bio_exists": true,
+    "bio_summary": "Shane Michael Boose (New York City, July 5, 2005.) better known as his stage name sombr, is a singer-songwriter, producer, and multi-instrumentalist. \n\nShane told 1883magazine that he adopted his stage name after releasing his debut single in 2021, \"Nothing Left to Say\" which reflects the initials of his name as an acronym.\n\nReleased on June 15, 2022, sombr's first single to blow up was \"caroline\", boasting an upwards of 30 million streams today. Due to his platform on TikTok, he has grown a lar",
+    "tags": [
+      "indie",
+      "alternative",
+      "rock",
+      "singer-songwriter",
+      "indie rock"
+    ],
+    "similar_artists": [
+      "Gigi Perez",
+      "The Neighbourhood",
+      "Brenn!",
+      "Finn Wolfhard",
+      "Balu Brigada"
+    ],
+    "top_tracks": [
+      {
+        "name": "back to friends",
+        "listeners": 1303776,
+        "playcount": 21451845
+      },
+      {
+        "name": "undressed",
+        "listeners": 1027983,
+        "playcount": 13962383
+      },
+      {
+        "name": "12 to 12",
+        "listeners": 689900,
+        "playcount": 7416605
+      },
+      {
+        "name": "would've been you",
+        "listeners": 506461,
+        "playcount": 4116253
+      },
+      {
+        "name": "we never dated",
+        "listeners": 481545,
+        "playcount": 4525061
+      },
+      {
+        "name": "do i ever cross your mind",
+        "listeners": 479223,
+        "playcount": 3517903
+      },
+      {
+        "name": "i don't know you anymore",
+        "listeners": 291895,
+        "playcount": 1962646
+      },
+      {
+        "name": "i wish i knew how to quit you",
+        "listeners": 274135,
+        "playcount": 1367581
+      },
+      {
+        "name": "crushing",
+        "listeners": 211679,
+        "playcount": 1227974
+      },
+      {
+        "name": "caroline",
+        "listeners": 177022,
+        "playcount": 1200461
+      }
+    ],
+    "url": "https://www.last.fm/music/sombr"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

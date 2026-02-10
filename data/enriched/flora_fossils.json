@@ -1,0 +1,171 @@
+{
+  "artist_name": "Flora Fossils",
+  "artist_id": "flora_fossils",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:39:14.600086+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 283423761,
+    "name": "Flora Fossils",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/283423761",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4b69e78681c6d7476bf857315ae173e6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "639 Hz Resonace of Heart",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "528 Hz Miracle Bloom",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Immeasurable",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elevating",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rising Up",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Higher Consciousness",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Expanding",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Flora Fossils",
+    "mbid": "",
+    "listeners": 8691,
+    "playcount": 27534,
+    "listener_play_ratio": 3.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Flora+Fossils\">Read more on Last.fm</a>",
+    "tags": [
+      "flowers",
+      "flower"
+    ],
+    "similar_artists": [
+      "Allness",
+      "Destinatus",
+      "Semi Sphere",
+      "Lunar Rover",
+      "Pause Infinite"
+    ],
+    "top_tracks": [
+      {
+        "name": "Higher Consciousness",
+        "listeners": 6727,
+        "playcount": 21456
+      },
+      {
+        "name": "Rising Up",
+        "listeners": 2013,
+        "playcount": 5747
+      },
+      {
+        "name": "639 Hz Resonace of Heart",
+        "listeners": 102,
+        "playcount": 297
+      },
+      {
+        "name": "Elevating",
+        "listeners": 23,
+        "playcount": 29
+      },
+      {
+        "name": "528 Hz Miracle Bloom",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Immeasurable",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Flora+Fossils"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

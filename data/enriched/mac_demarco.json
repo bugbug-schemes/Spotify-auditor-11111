@@ -1,0 +1,606 @@
+{
+  "artist_name": "Mac DeMarco",
+  "artist_id": "mac_demarco",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:23:36.381007+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f2492c31-54a8-4347-a1fc-f81f72873bbf",
+    "type": "Person",
+    "country": "CA",
+    "area": "Canada",
+    "begin_date": "1990-04-30",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie rock",
+      "indie pop",
+      "psychedelic pop",
+      "jangle pop",
+      "folk pop",
+      "singer/songwriter",
+      "lo-fi indie",
+      "jizz jazz"
+    ],
+    "aliases": [
+      "MacDeMarco",
+      "Mac De Marco",
+      "Mac DeMarco",
+      "McBriare Samuel Lanyon DeMarco",
+      "Vernor Winfield McBriare Smith IV"
+    ],
+    "isnis": [
+      "0000000434300220"
+    ],
+    "ipis": [
+      "00682250252"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002872922",
+      "bandcamp": "https://macdemarco.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/2568722",
+      "free streaming": "https://www.deezer.com/artist/1619572",
+      "image": "https://commons.wikimedia.org/wiki/File:Mac_DeMarco_2019_(48210650642)_(cropped).jpg",
+      "IMDb": "https://www.imdb.com/name/nm6762590/",
+      "interview": "http://noisey.vice.com/en_ca/blog/no-canada-mac-demarco-is-on-an-enchanting-adventure",
+      "last.fm": "https://www.last.fm/music/Mac+DeMarco",
+      "lyrics": "https://genius.com/artists/Mac-demarco",
+      "myspace": "https://myspace.com/macdemarco",
+      "official homepage": "http://www.mac-demarco.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2014050282/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id501437762",
+      "secondhandsongs": "https://secondhandsongs.com/artist/114467",
+      "social network": "https://www.instagram.com/macdemarco/",
+      "songkick": "https://www.songkick.com/artists/5105188",
+      "soundcloud": "https://soundcloud.com/mac-demarco-official",
+      "streaming": "https://tidal.com/artist/4496618",
+      "VIAF": "http://viaf.org/viaf/308698151",
+      "wikidata": "https://www.wikidata.org/wiki/Q14517",
+      "youtube": "https://www.youtube.com/channel/UCqnMk5GA1spXDiHYFcPN-eA"
+    },
+    "labels": [
+      "Because Music",
+      "Ed Banger Records",
+      "Mom+Pop",
+      "RCA",
+      "Daytrotter",
+      "Royal Mountain Records",
+      "Jurassic Pop Records",
+      "Epitaph",
+      "Dum-Dum LLP",
+      "[adult swim]",
+      "[no label]",
+      "BBC Television",
+      "P+",
+      "Captured Tracks",
+      "Stones Throw Records",
+      "Bayonet Records",
+      "Mac’s Record Label",
+      "Blackened",
+      "Light in the Attic Records",
+      "Captured Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1619572,
+    "name": "Mac Demarco",
+    "nb_fan": 515417,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/1619572",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b468329467ac01256a85e0925026715d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Chamber Of Reflection",
+      "Heart To Heart",
+      "My Kind of Woman",
+      "Freaking Out the Neighborhood",
+      "For the First Time",
+      "Moonlight on the River",
+      "On the Level",
+      "Watching Him Fade Away",
+      "One More Love Song",
+      "Still Beating",
+      "Another One",
+      "No Other Heart",
+      "Phantom",
+      "20201203",
+      "Ode to Viceroy",
+      "Sweeter",
+      "20191009 I Like Her",
+      "Blue Boy",
+      "Salad Days",
+      "Preoccupied",
+      "Shining",
+      "Home",
+      "Passing Out Pieces",
+      "Nightmare",
+      "Rock And Roll"
+    ],
+    "track_durations": [
+      232,
+      211,
+      191,
+      174,
+      182,
+      423,
+      228,
+      143,
+      241,
+      182,
+      161,
+      173,
+      110,
+      259,
+      234,
+      179,
+      137,
+      126,
+      146,
+      239,
+      188,
+      131,
+      167,
+      136,
+      182
+    ],
+    "track_ranks": [
+      851099,
+      766266,
+      728368,
+      737909,
+      739853,
+      711709,
+      616520,
+      663206,
+      646228,
+      639737,
+      625564,
+      664790,
+      525642,
+      582325,
+      529019,
+      455908,
+      545167,
+      562316,
+      559706,
+      477053,
+      452890,
+      363859,
+      564301,
+      394850,
+      367224
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 16,
+      "ep": 2,
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "Guitar",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Light in the Attic & Friends",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "One Wayne G",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Five Easy Hot Dogs",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Other Here Comes The Cowboy Demos",
+        "label": "",
+        "release_date": "2020-10-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Here Comes The Cowboy Demos",
+        "label": "",
+        "release_date": "2020-06-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Here Comes The Cowboy",
+        "label": "",
+        "release_date": "2019-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Old Dog Demos",
+        "label": "",
+        "release_date": "2018-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "This Old Dog",
+        "label": "",
+        "release_date": "2017-05-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Another One",
+        "label": "",
+        "release_date": "2015-08-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Another (Demo) One",
+        "label": "",
+        "release_date": "2016-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Salad Days Demos",
+        "label": "",
+        "release_date": "2014-06-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Salad Days",
+        "label": "",
+        "release_date": "2014-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live & Acoustic Vol. 1",
+        "label": "",
+        "release_date": "2013-12-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "2 Demos",
+        "label": "",
+        "release_date": "2013-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "2",
+        "label": "",
+        "release_date": "2012-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Some Other Ones",
+        "label": "",
+        "release_date": "2023-11-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rock and Roll Night Club",
+        "label": "",
+        "release_date": "2012-03-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Phantom",
+        "label": "",
+        "release_date": "2025-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holy",
+        "label": "",
+        "release_date": "2025-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home",
+        "label": "",
+        "release_date": "2025-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still What I'm Looking For",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boku Wa Chotto",
+        "label": "",
+        "release_date": "2024-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Simple Jeep (feat. Mac DeMarco)",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Simply Paradise",
+        "label": "",
+        "release_date": "2023-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Dark Prince (feat. Mac DeMarco)",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On The Square",
+        "label": "",
+        "release_date": "2019-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Of Our Yesterdays",
+        "label": "",
+        "release_date": "2019-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nobody",
+        "label": "",
+        "release_date": "2019-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Honey Moon",
+        "label": "",
+        "release_date": "2018-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Men I Trust",
+      "Vacations",
+      "Eyedress",
+      "Strawberry Guy",
+      "Mild High Club",
+      "Crumb",
+      "cults",
+      "Current Joys",
+      "Alice Phoebe Lou",
+      "Beach House"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2568722,
+    "name": "Mac Demarco",
+    "profile": "Canadian musician, singer, songwriter and producer, born 30 April 1990 in Duncan, British Columbia, Canada.\r\nChanged name to Mac DeMarco from 'Vernor Winfield McBriare Smith IV' at age 5 after his mother's maiden name (Agnes DeMarco). \r\nReleased Bandcamp and cassette releases under the alias Makeout Videotape (which also included Alex Calder for live performances) prior to signing w/ Captured Tracks and going by his real name. \r\n",
+    "realname": "McBriare Samuel Lanyon DeMarco",
+    "social_urls": [
+      "http://www.mac-demarco.com",
+      "https://www.facebook.com/MacDeMarco/",
+      "http://macdemarco.bandcamp.com/",
+      "https://www.youtube.com/@macdemarco",
+      "https://soundcloud.com/mac-demarco-official",
+      "http://en.wikipedia.org/wiki/Mac_DeMarco",
+      "https://whatgear.com/pro/mac-demarco"
+    ],
+    "members": [],
+    "groups": [
+      "Makeout Videotape",
+      "Shitfather"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 32,
+    "digital_only_releases": 68,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10x7\", Comp, Club, Col",
+      "2xFile, AIFF, Single",
+      "4xFile, FLAC, EP",
+      "4xFile, FLAC, MP3, WAV",
+      "6xFile, MP3, 320",
+      "7\"",
+      "7\", Club",
+      "7\", Club, Gre",
+      "7\", Maxi, Ltd, Num, S/Edition",
+      "7\", RSD, Single, Cle",
+      "7\", Shape, Single, Ltd, Pic",
+      "7\", Single",
+      "7\", Single, Ltd, Blu",
+      "7\", Single, Ltd, Cle",
+      "7\", Single, Ltd, Ora",
+      "7\", Single, Ltd, Red",
+      "7\", Single, Ltd, Tra",
+      "7\", Single, Ltd, Whi",
+      "7\", Single, Red",
+      "7\", Single, Yel",
+      "CD, Album, Smplr",
+      "CD, Comp",
+      "CD-ROM, Album, Num, Smplr",
+      "CDr, Single, Promo",
+      "Cass, Album, Ltd, Bla",
+      "Cass, Comp",
+      "Cass, EP, Ltd",
+      "File, AAC, Single, 256",
+      "File, AIFF",
+      "File, AIFF, Single",
+      "File, MP3, Single",
+      "File, MP3, Single, 256",
+      "LP, Album",
+      "LP, Album, Ltd",
+      "VHS, Comp, Ltd",
+      "VHS, Comp, NTSC"
+    ],
+    "labels": [
+      "Bayonet Records",
+      "Blackened Recordings",
+      "Blood Service",
+      "Captured Tracks",
+      "DUM-DUM LLP",
+      "Daytrotter",
+      "JET SET (3)",
+      "Jurassic Pop",
+      "Kakubarhythm, Bayon Production",
+      "Les Inrockuptibles",
+      "Light In The Attic",
+      "Mac's Record Label",
+      "Mom + Pop",
+      "Mothland",
+      "Not On Label",
+      "Not On Label (Mac DeMarco Self-released)",
+      "Not On Label (Samantha Urbani Self-released)",
+      "Polaris Music Prize",
+      "Pray More Studios",
+      "Retro Release Video",
+      "[adult swim]"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mac DeMarco",
+    "mbid": "f2492c31-54a8-4347-a1fc-f81f72873bbf",
+    "listeners": 3171441,
+    "playcount": 333530694,
+    "listener_play_ratio": 105.17,
+    "bio_exists": true,
+    "bio_summary": "Mac DeMarco (born Vernor Winfield MacBriare Smith IV in Duncan, BC, on 30 April 1990) is a Canadian singer-songwriter, multi-instrumentalist and producer. DeMarco has released nine full-length studio albums, his debut Rock and Roll Night Club (2012), 2 (2012), Salad Days (2014), Another One (2015), This Old Dog (2017), Here Comes the Cowboy (2019), Five Easy Hot Dogs (2023), One Wayne G (2023) and Guitar (2025)\n\nDuring high school DeMarco was in several bands <a href=\"https://www.last.fm/music/M",
+    "tags": [
+      "Lo-Fi",
+      "indie",
+      "post-punk",
+      "experimental",
+      "indie rock"
+    ],
+    "similar_artists": [
+      "LOVING",
+      "VACATIONS",
+      "Current Joys",
+      "HOMESHAKE",
+      "Good Morning"
+    ],
+    "top_tracks": [
+      {
+        "name": "Chamber of Reflection",
+        "listeners": 1787167,
+        "playcount": 26502169
+      },
+      {
+        "name": "My Kind of Woman",
+        "listeners": 1714973,
+        "playcount": 27186214
+      },
+      {
+        "name": "For the First Time",
+        "listeners": 1553862,
+        "playcount": 24778724
+      },
+      {
+        "name": "Heart to Heart",
+        "listeners": 1430161,
+        "playcount": 22511363
+      },
+      {
+        "name": "Freaking Out the Neighborhood",
+        "listeners": 1282911,
+        "playcount": 14975490
+      },
+      {
+        "name": "Moonlight on the River",
+        "listeners": 1034743,
+        "playcount": 14384370
+      },
+      {
+        "name": "Still Beating",
+        "listeners": 954912,
+        "playcount": 10200821
+      },
+      {
+        "name": "No Other Heart",
+        "listeners": 916232,
+        "playcount": 11089036
+      },
+      {
+        "name": "Watching Him Fade Away",
+        "listeners": 878175,
+        "playcount": 10519396
+      },
+      {
+        "name": "Salad Days",
+        "listeners": 821852,
+        "playcount": 7502364
+      }
+    ],
+    "url": "https://www.last.fm/music/Mac+DeMarco"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

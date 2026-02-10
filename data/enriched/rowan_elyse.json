@@ -1,0 +1,75 @@
+{
+  "artist_name": "Rowan Elyse",
+  "artist_id": "rowan_elyse",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:47:22.871631+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rowan Elyse",
+    "mbid": "",
+    "listeners": 1930,
+    "playcount": 4065,
+    "listener_play_ratio": 2.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rowan+Elyse\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isidorus",
+      "Maynoir",
+      "Jiel",
+      "Sigrid Vega",
+      "Joseph Fina"
+    ],
+    "top_tracks": [
+      {
+        "name": "Roots And Rain",
+        "listeners": 1930,
+        "playcount": 4065
+      }
+    ],
+    "url": "https://www.last.fm/music/Rowan+Elyse"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

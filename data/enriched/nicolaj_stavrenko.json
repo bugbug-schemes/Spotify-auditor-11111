@@ -1,0 +1,137 @@
+{
+  "artist_name": "Nicolaj Stavrenko",
+  "artist_id": "nicolaj_stavrenko",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:01:19.610641+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 166631867,
+    "name": "Nicolaj Stavrenko",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/166631867",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/476dead3804b768c52c67adc6d58810e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Luminous Fade",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightfall",
+        "label": "",
+        "release_date": "2025-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dimmed Lights",
+        "label": "",
+        "release_date": "2023-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Redemption",
+        "label": "",
+        "release_date": "2021-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nicolaj Stavrenko",
+    "mbid": "",
+    "listeners": 42374,
+    "playcount": 231108,
+    "listener_play_ratio": 5.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nicolaj+Stavrenko\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Celine Brandt",
+      "Neave Abeline",
+      "Felices Sueños",
+      "David Bengloff",
+      "Ocean Pulse"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dimmed Lights",
+        "listeners": 26500,
+        "playcount": 154005
+      },
+      {
+        "name": "Luminous Fade",
+        "listeners": 12170,
+        "playcount": 41120
+      },
+      {
+        "name": "Nightfall",
+        "listeners": 7830,
+        "playcount": 35978
+      },
+      {
+        "name": "Redemption",
+        "listeners": 4,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Nicolaj+Stavrenko"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

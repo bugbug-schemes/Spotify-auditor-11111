@@ -1,0 +1,366 @@
+{
+  "artist_name": "Carla Anderson",
+  "artist_id": "carla_anderson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:59:04.195018+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "89c22c1a-9c68-4604-8ed4-d14c4e7f4c40",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/13228119",
+      "purchase for download": "https://music.apple.com/us/artist/1648517618",
+      "soundcloud": "https://soundcloud.com/carlaanderson-music",
+      "streaming": "https://tidal.com/artist/11589401",
+      "youtube music": "https://music.youtube.com/channel/UCZyieFxSnq5IkfEleivZGlA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13228119,
+    "name": "Carla Anderson",
+    "nb_fan": 5,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/13228119",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/59d349d2c22d1dd576b50e6d68607336/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "I Hear You Now",
+      "On My Own",
+      "Bright Drops",
+      "Silent Thunder",
+      "Till There Was You",
+      "Amble",
+      "The Story of Santa Claus",
+      "Hessdalen Lights",
+      "Sentimental Moon",
+      "South River",
+      "Far Out East"
+    ],
+    "track_durations": [
+      223,
+      226,
+      284,
+      279,
+      181,
+      252,
+      202,
+      171,
+      244,
+      185,
+      168
+    ],
+    "track_ranks": [
+      53568,
+      26464,
+      25977,
+      64429,
+      57923,
+      82834,
+      15031,
+      22168,
+      24978,
+      59738,
+      75537
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "Far Out East",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Story of Santa Claus",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "South River",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Very Last Time",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On My Own",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After The Rain With You",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Hear You Now",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Conversations",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sentimental Moon",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bright Drops",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evening Dance",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amble",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Freesia",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Thunder",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ballad For S",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hessdalen Lights",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smoke Gets In Your Eyes",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Get Along With You Very Well",
+        "label": "",
+        "release_date": "2021-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Song For You",
+        "label": "",
+        "release_date": "2021-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reminds Me Of You",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Conversations",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2482414,
+    "name": "Carla Anderson",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label (Jimmy Anderson Blues Band Self-Released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Carla Anderson",
+    "mbid": "89c22c1a-9c68-4604-8ed4-d14c4e7f4c40",
+    "listeners": 84445,
+    "playcount": 292109,
+    "listener_play_ratio": 3.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Carla+Anderson\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Mino Conte & Co",
+      "Greydon Park Band",
+      "Gillian Spencer Trio",
+      "Måns & Dotter",
+      "Charles Daisey & Friends"
+    ],
+    "top_tracks": [
+      {
+        "name": "Raya's Riddle",
+        "listeners": 27942,
+        "playcount": 61016
+      },
+      {
+        "name": "Silent Thunder",
+        "listeners": 18114,
+        "playcount": 41699
+      },
+      {
+        "name": "Amble",
+        "listeners": 15141,
+        "playcount": 32784
+      },
+      {
+        "name": "Freesia",
+        "listeners": 12865,
+        "playcount": 30389
+      },
+      {
+        "name": "The Story of Santa Claus",
+        "listeners": 11633,
+        "playcount": 21183
+      },
+      {
+        "name": "South River",
+        "listeners": 7031,
+        "playcount": 25864
+      },
+      {
+        "name": "On My Own",
+        "listeners": 5618,
+        "playcount": 10505
+      },
+      {
+        "name": "Till There Was You",
+        "listeners": 5597,
+        "playcount": 14180
+      },
+      {
+        "name": "Far Out East",
+        "listeners": 4641,
+        "playcount": 16308
+      },
+      {
+        "name": "I Hear You Now",
+        "listeners": 4223,
+        "playcount": 8881
+      }
+    ],
+    "url": "https://www.last.fm/music/Carla+Anderson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

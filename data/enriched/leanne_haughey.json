@@ -1,0 +1,210 @@
+{
+  "artist_name": "Leanne Haughey",
+  "artist_id": "leanne_haughey",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:00:12.330007+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 145745522,
+    "name": "Leanne Haughey",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/145745522",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d63005a48eb6f1a2737eb6200a43f03b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Bee & Boo's Lullaby"
+    ],
+    "track_durations": [
+      103
+    ],
+    "track_ranks": [
+      28071
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Goodnight Hug",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tales & Twinkles",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Dreamer's Tale",
+        "label": "",
+        "release_date": "2024-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bee & Boo's Lullaby",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bee & Boo's Lullaby",
+        "label": "",
+        "release_date": "2024-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Juno & Mira",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Night Freddy",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamtime for Delilah",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Little Ghost",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wishing Tree",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Leanne Haughey",
+    "mbid": "",
+    "listeners": 4284,
+    "playcount": 63192,
+    "listener_play_ratio": 14.75,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Leanne+Haughey\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Michael Chausson",
+      "Vincent Lundborg",
+      "Jordan Avery",
+      "Snuggly Sam",
+      "Fruity Koala"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bee & Boo's Lullaby",
+        "listeners": 4188,
+        "playcount": 60850
+      },
+      {
+        "name": "Sleepy Little Ghost",
+        "listeners": 209,
+        "playcount": 2297
+      },
+      {
+        "name": "Ava's Song",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Magical Journey",
+        "listeners": 3,
+        "playcount": 10
+      },
+      {
+        "name": "Dreamtime for Delilah",
+        "listeners": 3,
+        "playcount": 10
+      },
+      {
+        "name": "Dreamy Hills",
+        "listeners": 3,
+        "playcount": 8
+      },
+      {
+        "name": "Wishing Tree",
+        "listeners": 2,
+        "playcount": 8
+      },
+      {
+        "name": "Good Night Freddy",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Mira's Melody",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Leanne+Haughey"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

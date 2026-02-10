@@ -1,0 +1,171 @@
+{
+  "artist_name": "Dave Gordon Trio",
+  "artist_id": "dave_gordon_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:22:40.746383+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 256529362,
+    "name": "Dave Gordon Trio",
+    "nb_fan": 2,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/256529362",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/425e7104b1616d94ec26068f0a0d82a2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "One Last Drink"
+    ],
+    "track_durations": [
+      160
+    ],
+    "track_ranks": [
+      20743
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "It's Raining Again",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Affectionate Mood",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waiting For Love",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Last Drink",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Momentary Philosophy",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3671827,
+    "name": "The Funnyboners",
+    "profile": "“The Funneyboners [sic]; a trio of more than somewhat eccentric youths heard currently over WABC and the Columbia network.”\r\n\r\nShort-lived pop trio consisting of members Bunny Coughlin, Dave Grant, and Gordon Graham",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 2,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "2x12\", Comp, Mono",
+      "Shellac, 10\""
+    ],
+    "labels": [
+      "CBS",
+      "His Master's Voice",
+      "Victor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dave Gordon Trio",
+    "mbid": "",
+    "listeners": 13011,
+    "playcount": 30298,
+    "listener_play_ratio": 2.33,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dave+Gordon+Trio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Noodlin' Collective",
+      "Smith and Anderzzon",
+      "Lotus trio",
+      "Blue Hour Theory",
+      "Diminished Fusion"
+    ],
+    "top_tracks": [
+      {
+        "name": "One Last Drink",
+        "listeners": 11423,
+        "playcount": 25160
+      },
+      {
+        "name": "It's Raining Again",
+        "listeners": 2328,
+        "playcount": 5094
+      },
+      {
+        "name": "Waiting For Love",
+        "listeners": 24,
+        "playcount": 42
+      },
+      {
+        "name": "Momentary Philosophy",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Dave+Gordon+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,86 @@
+{
+  "artist_name": "Sorellien",
+  "artist_id": "sorellien",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:13:42.013618+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Sorellien', got 'Sorelle'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sorellien",
+    "mbid": "",
+    "listeners": 9548,
+    "playcount": 31895,
+    "listener_play_ratio": 3.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sorellien\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jiel",
+      "Maynoir",
+      "Waylen Orson",
+      "Aldo Talete",
+      "Aurelio Li"
+    ],
+    "top_tracks": [
+      {
+        "name": "Night Beneath Us",
+        "listeners": 9548,
+        "playcount": 31888
+      },
+      {
+        "name": "Resting Place",
+        "listeners": 1,
+        "playcount": 6
+      },
+      {
+        "name": "Winter's Light",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sorellien"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,168 @@
+{
+  "artist_name": "Benjamin Dobbs",
+  "artist_id": "benjamin_dobbs",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:34:42.620283+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 145382372,
+    "name": "Benjamin Dobbs",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/145382372",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/64ced18cf0509b1444e29e169cfbaf97/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Wishes"
+    ],
+    "track_durations": [
+      122
+    ],
+    "track_ranks": [
+      39051
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "November Sun",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wishes",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ours",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Benjamin Dobbs",
+    "mbid": "",
+    "listeners": 22228,
+    "playcount": 85147,
+    "listener_play_ratio": 3.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Benjamin+Dobbs\">Read more on Last.fm</a>",
+    "tags": [
+      "piano"
+    ],
+    "similar_artists": [
+      "Marceau Sartre",
+      "Allison Stuart",
+      "Jean DeVoite",
+      "Frida Frisk",
+      "Corinne Beilinson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ours",
+        "listeners": 9735,
+        "playcount": 51288
+      },
+      {
+        "name": "Wishes",
+        "listeners": 9352,
+        "playcount": 21924
+      },
+      {
+        "name": "The Most Wonderful Gift",
+        "listeners": 4002,
+        "playcount": 11112
+      },
+      {
+        "name": "Ladoga",
+        "listeners": 249,
+        "playcount": 721
+      },
+      {
+        "name": "God Rest You Merry, Gentlemen",
+        "listeners": 16,
+        "playcount": 21
+      },
+      {
+        "name": "Sleepy Eyes - Relaxation and Meditation",
+        "listeners": 11,
+        "playcount": 25
+      },
+      {
+        "name": "O Tannenbaum",
+        "listeners": 9,
+        "playcount": 14
+      },
+      {
+        "name": "Lena Pillars",
+        "listeners": 8,
+        "playcount": 25
+      },
+      {
+        "name": "Hark! The Herald Angels Sing",
+        "listeners": 7,
+        "playcount": 11
+      },
+      {
+        "name": "A Frosty Night",
+        "listeners": 5,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Benjamin+Dobbs"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,404 @@
+{
+  "artist_name": "This Is Moving",
+  "artist_id": "this_is_moving",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:39:50.020380+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7923ba78-9d30-4601-95e1-6546e8b046d6",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "boom bap",
+      "lo-fi",
+      "lo-fi hip hop",
+      "instrumental",
+      "hip hop",
+      "chillwave",
+      "downtempo",
+      "instrumental hip hop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183265897",
+      "purchase for download": "https://music.apple.com/us/artist/1649011268",
+      "soundcloud": "https://soundcloud.com/thisismoving",
+      "streaming": "https://tidal.com/artist/34514290",
+      "youtube music": "https://music.youtube.com/channel/UC1Se-bGZ-eaqNxMjQOBThBw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183265897,
+    "name": "This Is Moving",
+    "nb_fan": 7,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/183265897",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f8e4f772ebe4183b6cea985c0ccbc38a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Mooging Away",
+      "Freudian slippin"
+    ],
+    "track_durations": [
+      145,
+      172
+    ],
+    "track_ranks": [
+      382839,
+      16199
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "Isla Reunion",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Swarm",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skeletonic",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rock Solid",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crust",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Garden of presidents",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Table by the Window",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Cavities",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh my",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Freudian slippin",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "dub it",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Washer",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get out of town",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For You",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring Ahead",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mooging Away",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Space Pace",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blooming",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BreakPause",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloudy Sunday",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Letters",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Safe",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Taking care of space",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay In Bed",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gardeners Secret",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1151566,
+    "name": "Moving Mountains",
+    "profile": "Moving Mountains was an alternative rock/post-hardcore band from from Purchase, New York. Founded in Westchester, New York in 2005.\r\n\r\nA self-titled demo EP was leaked to the public in early 2006 and their debut album Pneuma was released independently in early 2007. Later that year, Frank Graniero (guitar/vocals) and Mitchell Lee (bass) completed the band's line-up. In 2008, Pneuma was reissued by Deep Elm. In Fall 2008, the band self-released the EP \"Foreword\".\r\n\r\nTheir second full-length album Waves was released May 10, 2011 on Triple Crown Records. The band has stated that Triple Crown Records let them record and write the album however they wanted to. The lyrics were written by Gregory Dunn, some of which, like Pneuma, were again written about his friend that had died. He has stated that this is the last album with lyrics about his deceased friend. With the album they wanted to create an album that would reflect how they play live. \r\n\r\nIn December, 2015, Moving Mountains announced ",
+    "realname": "",
+    "social_urls": [
+      "https://web.archive.org/web/20100410030410/https://www.movmou.com/",
+      "https://movingmountains.bandcamp.com",
+      "https://www.instagram.com/movmou",
+      "https://x.com/movmou",
+      "https://facebook.com/MovingMountains",
+      "https://myspace.com/movingmountainsmusic",
+      "https://en.wikipedia.org/wiki/Moving_Mountains_(band)",
+      "https://open.spotify.com/artist/7xJHGz571pfkVGNxzPO9NY",
+      "https://music.apple.com/us/artist/moving-mountains/272339904"
+    ],
+    "members": [
+      "Gregory Dunn",
+      "Frank Graniero",
+      "Mitchell Lee",
+      "Nicholas Pizzolato",
+      "Joshua Kirby"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 6,
+    "digital_only_releases": 16,
+    "total_releases": 22,
+    "formats": [
+      "",
+      "16xFile, MP3, Comp, 256",
+      "16xFile, MP3, Smplr, 192",
+      "7\", EP, Ltd",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "File, MP3, 250",
+      "File, MP3, Mixed, 320",
+      "File, MP3, S/Edition"
+    ],
+    "labels": [
+      "A Strangely Isolated Place",
+      "Big Five",
+      "Deep Elm Records",
+      "No Sleep Records, Topshelf Records (2)",
+      "Not On Label (Moving Mountains Self-released)",
+      "Polyvinyl Record Company",
+      "Rock Sound",
+      "Topshelf Records (2)",
+      "Triple Crown Records",
+      "Visions Magazine"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "This Is Moving",
+    "mbid": "7923ba78-9d30-4601-95e1-6546e8b046d6",
+    "listeners": 50316,
+    "playcount": 141151,
+    "listener_play_ratio": 2.81,
+    "bio_exists": true,
+    "bio_summary": "This is one of many projects by Mike Landing, real name Mikael Landén. He is a musician, sound designer and podcaster from Stockholm, Sweden. He releases music as Breakfast for Brunch, Dasunny, Duos on Mars, Gooee, Lydtakt, Mikael Landén, RainDear, Rooftop Shenanigans and This Is Moving.\n\nHe also has a kraut pop / surf rock band with Gustav Cederberg called Beast Beast. <a href=\"https://www.last.fm/music/This+Is+Moving\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Vidstige",
+      "Dasunny",
+      "enix lee",
+      "Nacho Datúr",
+      "Zonyo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Freudian slippin",
+        "listeners": 19451,
+        "playcount": 42614
+      },
+      {
+        "name": "Blooming",
+        "listeners": 10852,
+        "playcount": 19618
+      },
+      {
+        "name": "Garden of presidents",
+        "listeners": 8941,
+        "playcount": 16645
+      },
+      {
+        "name": "Safe",
+        "listeners": 7015,
+        "playcount": 15837
+      },
+      {
+        "name": "Someday",
+        "listeners": 6718,
+        "playcount": 11471
+      },
+      {
+        "name": "Letters",
+        "listeners": 5798,
+        "playcount": 11306
+      },
+      {
+        "name": "Mooging Away",
+        "listeners": 4678,
+        "playcount": 9958
+      },
+      {
+        "name": "Crust",
+        "listeners": 3243,
+        "playcount": 6430
+      },
+      {
+        "name": "Stay In Bed",
+        "listeners": 1553,
+        "playcount": 3027
+      },
+      {
+        "name": "BreakPause",
+        "listeners": 1177,
+        "playcount": 2334
+      }
+    ],
+    "url": "https://www.last.fm/music/This+Is+Moving"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

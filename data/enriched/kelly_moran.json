@@ -1,0 +1,418 @@
+{
+  "artist_name": "Kelly Moran",
+  "artist_id": "kelly_moran",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:47:53.776691+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b794b18d-5d40-46cc-9a55-4dd15ac37e30",
+    "type": "Person",
+    "country": "",
+    "area": "Brooklyn",
+    "begin_date": "1988-02-17",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "electronic",
+      "classical",
+      "ambient",
+      "experimental",
+      "avant-garde metal",
+      "neoclassicism",
+      "post-minimalism"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003596876",
+      "bandcamp": "https://kellymoran.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/5514073",
+      "free streaming": "https://www.deezer.com/artist/11866597",
+      "IMDb": "https://www.imdb.com/name/nm5492762/",
+      "last.fm": "https://www.last.fm/music/Kelly+Moran",
+      "official homepage": "http://kellymoran.co/",
+      "other databases": "https://rateyourmusic.com/artist/kelly-moran",
+      "social network": "https://www.instagram.com/kellymoran__/",
+      "songkick": "https://www.songkick.com/artists/9667214",
+      "soundcloud": "https://soundcloud.com/kellymoran",
+      "streaming": "https://tidal.com/artist/8490022",
+      "VIAF": "http://viaf.org/viaf/303150468224004170794",
+      "wikidata": "https://www.wikidata.org/wiki/Q56686036"
+    },
+    "labels": [
+      "Obsolete Units",
+      "Warp",
+      "[adult swim]",
+      "Telegraph Harp",
+      "[no label]",
+      "Hospital Productions",
+      "No Tricks"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11866597,
+    "name": "Kelly Moran",
+    "nb_fan": 1032,
+    "nb_album": 16,
+    "link": "https://www.deezer.com/artist/11866597",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cebf90bd7ca09357814a927a50fdc4c2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bibio",
+      "Fyn Dobson",
+      "Loraine James"
+    ],
+    "contributor_roles": {
+      "Loraine James": [
+        "Featured"
+      ],
+      "Fyn Dobson": [
+        "Featured"
+      ],
+      "Bibio": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Superhuman (Loraine James & Fyn Dobson Remix)",
+      "Butterfly Phase",
+      "Sans sodalis",
+      "Prism drift",
+      "Lunar wave",
+      "Don’t Trust Mirrors (ft. Bibio)",
+      "Helix II",
+      "Systems",
+      "Halogen (Una Corda)",
+      "Reflexive Music (Autowave)",
+      "Don't Trust Mirrors"
+    ],
+    "track_durations": [
+      228,
+      170,
+      215,
+      290,
+      203,
+      294,
+      202,
+      268,
+      402,
+      163,
+      389
+    ],
+    "track_ranks": [
+      168383,
+      159884,
+      178505,
+      214766,
+      145715,
+      157194,
+      11111,
+      109689,
+      59669,
+      63333,
+      185778
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 3,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Don't Trust Mirrors",
+        "label": "",
+        "release_date": "2025-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moves in the Field",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ultraviolet",
+        "label": "",
+        "release_date": "2018-11-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bloodroot",
+        "label": "",
+        "release_date": "2017-03-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Vesela",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "WXAXRXP Session",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Origin EP",
+        "label": "",
+        "release_date": "2019-05-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Echo in the Field",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Superhuman (Loraine James & Fyn Dobson Remix)",
+        "label": "",
+        "release_date": "2024-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sodalis (II)",
+        "label": "",
+        "release_date": "2024-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Butterfly Phase",
+        "label": "",
+        "release_date": "2024-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vesela",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Birds, Night Birds, Devil-Birds",
+        "label": "",
+        "release_date": "2019-05-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Music",
+        "label": "",
+        "release_date": "2019-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Parallel",
+        "label": "",
+        "release_date": "2018-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Helix (Edit)",
+        "label": "",
+        "release_date": "2018-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "@",
+      "Anastasia Coope",
+      "james K",
+      "Lucrecia Dalt",
+      "They Are Gutting a Body of Water",
+      "Nourished by Time",
+      "Friendship",
+      "Cabane",
+      "Fine",
+      "Cate Le Bon"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5514073,
+    "name": "Kelly Moran",
+    "profile": "Kelly Moran is a composer and pianist from New York.",
+    "realname": "",
+    "social_urls": [
+      "https://kellymoran.warp.net/",
+      "https://kellymoran.bandcamp.com/music",
+      "https://www.facebook.com/kellymoranmusic/",
+      "https://soundcloud.com/kellymoran/tracks",
+      "https://twitter.com/kellymoran"
+    ],
+    "members": [],
+    "groups": [
+      "Cellular Chaos"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 5,
+    "digital_only_releases": 44,
+    "total_releases": 49,
+    "formats": [
+      "",
+      "100xFile, MP3, Comp, 320",
+      "10x12\" + Box, Comp, Ltd",
+      "23xFile, AIFF",
+      "4xFile, MP3, EP, 320",
+      "5xFile, FLAC, Album",
+      "7xFile, FLAC, Album",
+      "8xFile, FLAC, Album",
+      "CD, Comp, Ltd, Smplr",
+      "File, AIFF, 24-",
+      "File, ALAC",
+      "File, FLAC, RE + 2xFile, MPEG-4 Video, Promo, S/Ed",
+      "File, MP3, 160",
+      "File, MP3, 320",
+      "File, MP3, Mixed, 320",
+      "File, MP3, Single, 320",
+      "File, WAV",
+      "LP, Album, Comp, Ltd, Cle",
+      "LP, Album, Whi"
+    ],
+    "labels": [
+      "Bleep (2)",
+      "FACT Magazine",
+      "Not On Label (Kelly Moran Self-released)",
+      "Not On Label (Malibu (17) Self-released)",
+      "Not On Label (Toby Driver Self-released)",
+      "One Little Independent Records",
+      "Park The Van Records",
+      "UNO",
+      "Universal Music Australia Pty Ltd",
+      "Warp Records",
+      "section 1 (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kelly Moran",
+    "mbid": "b794b18d-5d40-46cc-9a55-4dd15ac37e30",
+    "listeners": 90365,
+    "playcount": 919410,
+    "listener_play_ratio": 10.17,
+    "bio_exists": true,
+    "bio_summary": "Kelly Moran, b. 1988, is a composer, performer, improviser, sound designer and multimedia artist from Long Island, New York.  She completed her undergraduate degree in Performing Arts Technology at the University of Michigan-Ann Arbor where she studied piano with Stephen Rush and Louis Nagel and composition with Bright Sheng and Erik Santos.  Kelly was granted a fellowship to study Integrated Composition, Improvisation and Technology at the University of California-Irvine, where she currently re",
+    "tags": [
+      "experimental",
+      "ambient",
+      "contemporary classical",
+      "electronic",
+      "modern classical"
+    ],
+    "similar_artists": [
+      "Malibu",
+      "Emily A. Sprague",
+      "Kara-Lis Coverdale",
+      "Oneohtrix Point Never",
+      "Lucrecia Dalt"
+    ],
+    "top_tracks": [
+      {
+        "name": "Water Music",
+        "listeners": 25477,
+        "playcount": 81825
+      },
+      {
+        "name": "Butterfly Phase",
+        "listeners": 22402,
+        "playcount": 61765
+      },
+      {
+        "name": "Autowave",
+        "listeners": 20616,
+        "playcount": 63311
+      },
+      {
+        "name": "Helix (Edit)",
+        "listeners": 18492,
+        "playcount": 60773
+      },
+      {
+        "name": "Radian",
+        "listeners": 16488,
+        "playcount": 44100
+      },
+      {
+        "name": "Helix",
+        "listeners": 14356,
+        "playcount": 54069
+      },
+      {
+        "name": "In Parallel",
+        "listeners": 10228,
+        "playcount": 29604
+      },
+      {
+        "name": "Echo in the Field",
+        "listeners": 9684,
+        "playcount": 24485
+      },
+      {
+        "name": "Love Birds, Night Birds, Devil-Birds",
+        "listeners": 8243,
+        "playcount": 19046
+      },
+      {
+        "name": "Nereid",
+        "listeners": 7007,
+        "playcount": 21048
+      }
+    ],
+    "url": "https://www.last.fm/music/Kelly+Moran"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,439 @@
+{
+  "artist_name": "CARMEN MARÍA",
+  "artist_id": "carmen_maría",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:53:40.431230+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "69bd9219-7952-489c-af61-df8d87eba718",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "1984-07-11",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "french",
+      "jazz",
+      "manouche"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000001561273"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1545573",
+      "free streaming": "https://www.deezer.com/artist/152757",
+      "last.fm": "https://www.last.fm/music/Carmen+Maria+Vega",
+      "lyrics": "https://genius.com/artists/Carmen-maria-vega",
+      "myspace": "https://myspace.com/carmenmariavega",
+      "official homepage": "http://www.carmenmariavega.fr/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id274126151",
+      "VIAF": "http://viaf.org/viaf/10183576",
+      "video channel": "https://www.dailymotion.com/carmenmariavega",
+      "wikidata": "https://www.wikidata.org/wiki/Q2939611",
+      "youtube": "https://www.youtube.com/user/CarmenMariaVega"
+    },
+    "labels": [
+      "Capitol Music France",
+      "AT(h)OME",
+      "Capitol Records",
+      "Cartell Music",
+      "AZ"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7660966,
+    "name": "Carmen María",
+    "nb_fan": 288,
+    "nb_album": 26,
+    "link": "https://www.deezer.com/artist/7660966",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/38faf92794ca4986933eb1aa71bae12f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Los Rumberos"
+    ],
+    "contributor_roles": {
+      "Los Rumberos": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "AHÍ PA' LA OTRA",
+      "TANTO PARA NADA",
+      "Corazón Partío",
+      "No Me Hace Falta Nada",
+      "Echo Flux",
+      "EL TECHITO",
+      "¿DÓNDE COMIENZA TU AMOR?",
+      "Cuenta la Historia",
+      "CAFE Y ALCOHOL",
+      "Ojalá",
+      "Ciudadana del Mundo",
+      "Bendita Suerte",
+      "No Que No",
+      "Como Te Voy a Olvidar"
+    ],
+    "track_durations": [
+      166,
+      160,
+      223,
+      213,
+      122,
+      214,
+      181,
+      238,
+      186,
+      222,
+      256,
+      199,
+      227,
+      216
+    ],
+    "track_ranks": [
+      313706,
+      252778,
+      128701,
+      11507,
+      32540,
+      71515,
+      126834,
+      52703,
+      111739,
+      102366,
+      25880,
+      106085,
+      21371,
+      65757
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "RUBEDO",
+        "label": "",
+        "release_date": "2024-05-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Toloache",
+        "label": "",
+        "release_date": "2019-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Piensa en Mí y Otros Grandes Boleros",
+        "label": "",
+        "release_date": "2015-04-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "AHÍ PA' LA OTRA",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echo Flux",
+        "label": "",
+        "release_date": "2024-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "HUMO DE SENTIR",
+        "label": "",
+        "release_date": "2024-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "¿DÓNDE COMIENZA TU AMOR?",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RIO",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TANTO PARA NADA",
+        "label": "",
+        "release_date": "2023-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ojos Tristes/No Sé Nadar (En Vivo: De Puerto En Puerto)",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tan Básico (En Vivo: De Puerto En Puerto)",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aventura de Nada - Voice Note",
+        "label": "",
+        "release_date": "2021-07-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aventura de Nada",
+        "label": "",
+        "release_date": "2021-06-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Recitaré",
+        "label": "",
+        "release_date": "2021-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bendita Suerte",
+        "label": "",
+        "release_date": "2021-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ciudadana del Mundo",
+        "label": "",
+        "release_date": "2020-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bipolar",
+        "label": "",
+        "release_date": "2019-02-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ángel Caído",
+        "label": "",
+        "release_date": "2018-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ojalá",
+        "label": "",
+        "release_date": "2018-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dame un Beso",
+        "label": "",
+        "release_date": "2018-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Me Hace Falta Nada",
+        "label": "",
+        "release_date": "2018-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pasos de Cero",
+        "label": "",
+        "release_date": "2018-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corazón Partío",
+        "label": "",
+        "release_date": "2018-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cuenta la Historia",
+        "label": "",
+        "release_date": "2018-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soul of a Woman",
+        "label": "",
+        "release_date": "2017-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bella Tijuana",
+        "label": "",
+        "release_date": "2016-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Laura Perez",
+      "Lagos",
+      "Manuel Medrano",
+      "Marco Mares",
+      "RENEE",
+      "PARDOPARDO",
+      "Jose y el Toro",
+      "Andrés Obregón",
+      "HUMBE",
+      "Manuel Lizarazo"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7956472,
+    "name": "Carmen Maria Machado",
+    "profile": "American critic, essayist, and short story author. Born July 3, 1986 in Allentown, Pennsylvania.",
+    "realname": "",
+    "social_urls": [
+      "https://carmenmariamachado.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Carmen María",
+    "mbid": "",
+    "listeners": 5308,
+    "playcount": 46733,
+    "listener_play_ratio": 8.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Carmen+Mar%C3%ADa\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Agris",
+      "Me Dicen Jos",
+      "Laura Pérez",
+      "Escarlata",
+      "GONZA SILVA"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tanto Para Nada",
+        "listeners": 2612,
+        "playcount": 17416
+      },
+      {
+        "name": "¿DÓNDE COMIENZA TU AMOR?",
+        "listeners": 1232,
+        "playcount": 4120
+      },
+      {
+        "name": "RIO",
+        "listeners": 757,
+        "playcount": 2329
+      },
+      {
+        "name": "Ojalá",
+        "listeners": 732,
+        "playcount": 2041
+      },
+      {
+        "name": "CAFE Y ALCOHOL",
+        "listeners": 619,
+        "playcount": 2884
+      },
+      {
+        "name": "Bendita Suerte",
+        "listeners": 512,
+        "playcount": 2704
+      },
+      {
+        "name": "HUMO DE SENTIR",
+        "listeners": 371,
+        "playcount": 1915
+      },
+      {
+        "name": "Pasos de Cero",
+        "listeners": 366,
+        "playcount": 1802
+      },
+      {
+        "name": "AHÍ PA' LA OTRA",
+        "listeners": 318,
+        "playcount": 1394
+      },
+      {
+        "name": "A LA MITAD",
+        "listeners": 268,
+        "playcount": 1194
+      }
+    ],
+    "url": "https://www.last.fm/music/Carmen+Mar%C3%ADa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

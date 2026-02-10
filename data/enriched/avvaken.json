@@ -1,0 +1,204 @@
+{
+  "artist_name": "Avvaken",
+  "artist_id": "avvaken",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:20:34.113057+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 323031191,
+    "name": "Avvaken",
+    "nb_fan": 3,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/323031191",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/62390878d39c7d41a1dcfb923486181f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Kelivum",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blooming",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blues and Greys",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Familiar Hues",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Portals",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Indigo Evening",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloud Swimmer",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lightbeams",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5584218,
+    "name": "Avvaken Trio",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Album",
+      "CD, Comp, Unofficial"
+    ],
+    "labels": [
+      "Not On Label",
+      "Trinity Production (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Avvaken",
+    "mbid": "",
+    "listeners": 13811,
+    "playcount": 84783,
+    "listener_play_ratio": 6.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Avvaken\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Le Coralie",
+      "Opal Skies",
+      "Dorian Froste",
+      "Meta Theta",
+      "Somatika"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lightbeams",
+        "listeners": 10852,
+        "playcount": 61078
+      },
+      {
+        "name": "Portals",
+        "listeners": 3062,
+        "playcount": 16860
+      },
+      {
+        "name": "Kelivum",
+        "listeners": 1500,
+        "playcount": 3045
+      },
+      {
+        "name": "Blooming",
+        "listeners": 669,
+        "playcount": 1113
+      },
+      {
+        "name": "Indigo Evening",
+        "listeners": 461,
+        "playcount": 1561
+      },
+      {
+        "name": "Familiar Hues",
+        "listeners": 364,
+        "playcount": 1072
+      },
+      {
+        "name": "Blues and Greys",
+        "listeners": 10,
+        "playcount": 53
+      },
+      {
+        "name": "Cloud Swimmer",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Avvaken"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

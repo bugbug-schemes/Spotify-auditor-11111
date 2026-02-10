@@ -1,0 +1,472 @@
+{
+  "artist_name": "daniel sabater",
+  "artist_id": "daniel_sabater",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:16:20.187490+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "75e0e85f-d7ce-42a7-92ce-39666be2b612",
+    "type": "Person",
+    "country": "ES",
+    "area": "Spain",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/5yTNm3JFNfBa79zLIRKVwN"
+    },
+    "labels": [
+      "Sony BMG Music Entertainment",
+      "Warner Music Spain"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 57634302,
+    "name": "Daniel Sabater",
+    "nb_fan": 536,
+    "nb_album": 39,
+    "link": "https://www.deezer.com/artist/57634302",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/933c4fd85d68751732fec39a7eea6b04/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alba Reche",
+      "Flavio",
+      "GOKO!",
+      "ROJAZ",
+      "Walls",
+      "Yarea"
+    ],
+    "contributor_roles": {
+      "ROJAZ": [
+        "Main"
+      ],
+      "Yarea": [
+        "Main"
+      ],
+      "Flavio": [
+        "Main"
+      ],
+      "Walls": [
+        "Main"
+      ],
+      "GOKO!": [
+        "Main"
+      ],
+      "Alba Reche": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "cómo quieres que me enfade",
+      "EMBABIAO",
+      "Ya",
+      "calor",
+      "CABI",
+      "helado",
+      "bolero de desamor",
+      "CARDIO",
+      "talk",
+      "no estás",
+      "como si no importara",
+      "un poco más"
+    ],
+    "track_durations": [
+      160,
+      167,
+      197,
+      193,
+      142,
+      180,
+      188,
+      142,
+      179,
+      164,
+      210,
+      138
+    ],
+    "track_ranks": [
+      214302,
+      187619,
+      142165,
+      190674,
+      114095,
+      21080,
+      148160,
+      123384,
+      118451,
+      37402,
+      103926,
+      25497
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 3,
+      "single": 34
+    },
+    "albums": [
+      {
+        "title": "danito",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ya se me pasará",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "NO ME QUIERO PEGAR",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "NO ME QUIERO PEGAR",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "tenemos que quedar",
+        "label": "",
+        "release_date": "2021-04-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "danito",
+        "label": "",
+        "release_date": "2025-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NO SÉ DE AMOR",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ACLÁRATE",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ESTRÉS",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "EMBABIAO",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NO ME QUIERO PEGAR",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "INCONFORMISTA",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "UN AÑO DE MIERDA",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CARDIO",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CABI RMX",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CABI",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "como si no importara",
+        "label": "",
+        "release_date": "2022-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "nadie más",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "suave",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "un poco más",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "canción de amor",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "limón y sal",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Despertador",
+        "label": "",
+        "release_date": "2021-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Americanadas",
+        "label": "",
+        "release_date": "2021-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "nosotros 2",
+        "label": "",
+        "release_date": "2021-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cute",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "menta",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "este año era el bueno",
+        "label": "",
+        "release_date": "2020-12-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "calor (remix)",
+        "label": "",
+        "release_date": "2020-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ya",
+        "label": "",
+        "release_date": "2020-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Jimena Amarillo",
+      "Pol Granch",
+      "Yarea",
+      "dani dicostas",
+      "Alice Wonder",
+      "C. Tangana",
+      "Guitarricadelafuente",
+      "Natalia Lacunza",
+      "Rigoberta Bandini",
+      "Sen Senra"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 13942468,
+    "name": "Daniel Sabater",
+    "profile": "Daniel Sabater (Murcia) es cantante, compositor y productor, un auténtico representante del do it yourself.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 3,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "CD, Album"
+    ],
+    "labels": [
+      "Helsinkipro",
+      "Universal Music Group",
+      "Warner Music Spain S.L."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "daniel sabater",
+    "mbid": "",
+    "listeners": 25636,
+    "playcount": 416270,
+    "listener_play_ratio": 16.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/daniel+sabater\">Read more on Last.fm</a>",
+    "tags": [
+      "spain",
+      "pop",
+      "indie pop",
+      "alternative",
+      "pop rock"
+    ],
+    "similar_artists": [
+      "Sebastián Cortés",
+      "trashi",
+      "Yarea",
+      "Maria Blaya",
+      "Xavibo"
+    ],
+    "top_tracks": [
+      {
+        "name": "cómo quieres que me enfade",
+        "listeners": 8910,
+        "playcount": 50165
+      },
+      {
+        "name": "2010",
+        "listeners": 3622,
+        "playcount": 15409
+      },
+      {
+        "name": "el sofá",
+        "listeners": 3481,
+        "playcount": 14315
+      },
+      {
+        "name": "calor",
+        "listeners": 3441,
+        "playcount": 15634
+      },
+      {
+        "name": "no estás",
+        "listeners": 3303,
+        "playcount": 16053
+      },
+      {
+        "name": "limón y sal",
+        "listeners": 3260,
+        "playcount": 23377
+      },
+      {
+        "name": "un poco más",
+        "listeners": 3246,
+        "playcount": 15836
+      },
+      {
+        "name": "qué pasó? ya te olvidaste de mi?",
+        "listeners": 3239,
+        "playcount": 15495
+      },
+      {
+        "name": "Americanadas",
+        "listeners": 2676,
+        "playcount": 23743
+      },
+      {
+        "name": "nosotros 2",
+        "listeners": 2397,
+        "playcount": 17353
+      }
+    ],
+    "url": "https://www.last.fm/music/daniel+sabater"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

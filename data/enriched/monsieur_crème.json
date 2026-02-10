@@ -1,0 +1,164 @@
+{
+  "artist_name": "Monsieur Crème",
+  "artist_id": "monsieur_crème",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:48:33.330677+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f07da9b4-906c-478c-8956-9da4e4f7f606",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental",
+      "boom bap",
+      "hip hop",
+      "chillwave"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/169895427",
+      "streaming": "https://tidal.com/artist/32146900",
+      "youtube music": "https://music.youtube.com/channel/UC4F7-UxqpKxY-v5owoZF4_A"
+    },
+    "labels": [
+      "Defective Tomato"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 169895427,
+    "name": "Monsieur Crème",
+    "nb_fan": 2,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/169895427",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5e133147d853ed1f2cd0a3fee49344d6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Talk The Talk (Rain Version)",
+        "label": "",
+        "release_date": "2024-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rewards",
+        "label": "",
+        "release_date": "2023-03-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marble Syrup",
+        "label": "",
+        "release_date": "2022-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Talk The Talk",
+        "label": "",
+        "release_date": "2022-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Monsieur Crème",
+    "mbid": "f07da9b4-906c-478c-8956-9da4e4f7f606",
+    "listeners": 15832,
+    "playcount": 31622,
+    "listener_play_ratio": 2.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Monsieur+Cr%C3%A8me\">Read more on Last.fm</a>",
+    "tags": [
+      "chill",
+      "lofi"
+    ],
+    "similar_artists": [
+      "yamarcus",
+      "Mo Rana",
+      "Beatriction",
+      "Nathaniel Azul",
+      "Iddy P"
+    ],
+    "top_tracks": [
+      {
+        "name": "Talk the Talk",
+        "listeners": 10676,
+        "playcount": 22437
+      },
+      {
+        "name": "Marble Syrup",
+        "listeners": 3120,
+        "playcount": 4666
+      },
+      {
+        "name": "Rewards",
+        "listeners": 2702,
+        "playcount": 4519
+      }
+    ],
+    "url": "https://www.last.fm/music/Monsieur+Cr%C3%A8me"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

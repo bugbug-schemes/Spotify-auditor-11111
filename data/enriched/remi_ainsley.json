@@ -1,0 +1,153 @@
+{
+  "artist_name": "Remi Ainsley",
+  "artist_id": "remi_ainsley",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:40:07.730543+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 278154901,
+    "name": "Remi Ainsley",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/278154901",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3dde387371acdc0128aa147d398f1fb5/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Ascension",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let Go",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unsaid",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luminance",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Laminar Flow",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Riverbed",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Breeze",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Remi Ainsley",
+    "mbid": "",
+    "listeners": 19292,
+    "playcount": 71577,
+    "listener_play_ratio": 3.71,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Remi+Ainsley\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Stilly Night",
+      "Eirwyn North",
+      "Quantum Veil",
+      "Elio Vane",
+      "steve stanton"
+    ],
+    "top_tracks": [
+      {
+        "name": "Let Go",
+        "listeners": 17430,
+        "playcount": 66251
+      },
+      {
+        "name": "Unsaid",
+        "listeners": 1992,
+        "playcount": 5324
+      },
+      {
+        "name": "Quiet Breeze",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Remi+Ainsley"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

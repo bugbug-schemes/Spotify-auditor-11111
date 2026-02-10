@@ -1,0 +1,547 @@
+{
+  "artist_name": "Fejká",
+  "artist_id": "fejká",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:36:04.330507+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "94c53ea5-9917-41cc-84a7-079ca3ddd38a",
+    "type": "Person",
+    "country": "",
+    "area": "Stuttgart",
+    "begin_date": "1996",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Brian Zajak"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://fejka.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6000495",
+      "free streaming": "https://www.deezer.com/artist/11545433",
+      "other databases": "https://ra.co/dj/fejka",
+      "purchase for download": "https://www.beatport.com/artist/fejka/587589",
+      "social network": "https://www.instagram.com/fejkaofficial/",
+      "soundcloud": "https://soundcloud.com/fejka",
+      "streaming": "https://tidal.com/artist/8290432",
+      "video channel": "https://vimeo.com/brianzajak",
+      "youtube": "https://www.youtube.com/user/OfficialFejka"
+    },
+    "labels": [
+      "Ki Records",
+      "Deutsche Grammophon",
+      "Coexist",
+      "von der haardt",
+      "[no label]",
+      "Colorize",
+      "Indigo Soul"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11545433,
+    "name": "Fejká",
+    "nb_fan": 2446,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/11545433",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8c862a9db92a2f38e7513128b3984f71/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Hania Rani",
+      "Johanson",
+      "Kim Van Loo",
+      "Marie Angerer",
+      "Natascha Polké",
+      "Rökkurró",
+      "Verboten Berlin"
+    ],
+    "contributor_roles": {
+      "Kim Van Loo": [
+        "Featured"
+      ],
+      "Rökkurró": [
+        "Featured"
+      ],
+      "Johanson": [
+        "Main"
+      ],
+      "Natascha Polké": [
+        "Main"
+      ],
+      "Hania Rani": [
+        "Main"
+      ],
+      "Marie Angerer": [
+        "Featured"
+      ],
+      "Verboten Berlin": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Océana",
+      "Hiraeth (feat. Kim Van Loo)",
+      "Svanur (feat. Rökkurró)",
+      "Illumination",
+      "Cortège (Fejká Rework)",
+      "Glow",
+      "Jubal",
+      "Unfold",
+      "Tape_X247",
+      "Azur",
+      "Olson",
+      "Echoes",
+      "Youth",
+      "Pulsing",
+      "Solana",
+      "No Goodbye",
+      "Infinity (feat. Marie Angerer)",
+      "Reunion (feat. Marie Angerer)",
+      "Moonlight",
+      "Tigotan",
+      "Maara",
+      "Dawn Of Truth (Fejká Remix)",
+      "Bloom",
+      "Skye (feat. Marie Angerer)",
+      "Incision"
+    ],
+    "track_durations": [
+      264,
+      299,
+      296,
+      314,
+      248,
+      290,
+      252,
+      221,
+      156,
+      279,
+      298,
+      229,
+      232,
+      237,
+      246,
+      252,
+      252,
+      296,
+      259,
+      230,
+      236,
+      292,
+      284,
+      284,
+      248
+    ],
+    "track_ranks": [
+      525618,
+      124840,
+      548995,
+      213560,
+      78595,
+      324787,
+      249623,
+      139226,
+      149611,
+      279757,
+      220541,
+      268155,
+      207384,
+      254159,
+      251220,
+      256406,
+      333255,
+      291000,
+      358317,
+      170538,
+      243585,
+      175082,
+      109209,
+      234300,
+      258357
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 1,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Azur",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hiraeth Remixes",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hiraeth",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Reunion",
+        "label": "",
+        "release_date": "2019-09-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Twilight",
+        "label": "",
+        "release_date": "2017-07-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Océana",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes",
+        "label": "",
+        "release_date": "2025-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solana",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faro",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azur",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maara",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cortège (Fejká Rework)",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Recover (Teho Remix)",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hiraeth (feat. Kim Van Loo) (Niklas Paschburg Rework)",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shades of You (Tor Remix)",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bloom",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fjäll",
+        "label": "",
+        "release_date": "2022-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pulsing",
+        "label": "",
+        "release_date": "2022-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jubal",
+        "label": "",
+        "release_date": "2022-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hiraeth (feat. Kim Van Loo)",
+        "label": "",
+        "release_date": "2022-04-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amarcord (Fejká's Daydream Version)",
+        "label": "",
+        "release_date": "2021-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Goodbye",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dawn Of Truth (Fejká Remix)",
+        "label": "",
+        "release_date": "2020-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unfold",
+        "label": "",
+        "release_date": "2020-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Incision",
+        "label": "",
+        "release_date": "2019-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Svanur",
+        "label": "",
+        "release_date": "2019-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Infinity",
+        "label": "",
+        "release_date": "2018-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ghostlight",
+        "label": "",
+        "release_date": "2017-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlight",
+        "label": "",
+        "release_date": "2016-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Christian Löffler",
+      "Parra For Cuva",
+      "pølaroit",
+      "Angara",
+      "Lane 8",
+      "Douran",
+      "Romain Garcia",
+      "Max Cooper",
+      "Aparde",
+      "Gone"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6000495,
+    "name": "Fejká",
+    "profile": "Electronic producer from Germany.",
+    "realname": "Brian Zajak",
+    "social_urls": [
+      "https://facebook.com/fejkamusic/",
+      "https://soundcloud.com/fejka",
+      "https://www.youtube.com/user/OfficialFejka"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 15,
+    "total_releases": 22,
+    "formats": [
+      "",
+      "11xFile, AIFF, Album, Comp",
+      "2xCD, Comp, Mixed",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, Single, 320",
+      "2xLP, Album",
+      "2xLP, Comp, Gre",
+      "30xFile, MP3, Comp, 320",
+      "3xCD, Comp, Mixed",
+      "File, MP3, 320",
+      "File, WAV, GU ",
+      "LP, Album",
+      "LP, Comp, Ltd, Num, Cle"
+    ],
+    "labels": [
+      "Anjunadeep",
+      "Cercle Records (2)",
+      "Coexist Records, Fondue Music",
+      "Elder Island",
+      "George V Records, Wagram Music",
+      "Global Underground (3)",
+      "Ki Records (2)",
+      "Kontor Records",
+      "Labo T.",
+      "Modern Recordings (2)",
+      "Stone Free Berlin"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Fejká",
+    "mbid": "94c53ea5-9917-41cc-84a7-079ca3ddd38a",
+    "listeners": 69635,
+    "playcount": 627570,
+    "listener_play_ratio": 9.01,
+    "bio_exists": true,
+    "bio_summary": "Captivated by the atmospheric vibe and the calm of ambient music, as well as the state of absolute ecstasy that provokes the powerful beat of techno, Fejká decided to explore the perfect balance between both.   Brian Zajak, aka Fejká began his musical career at the age of 17. Torn between the dreamy soft atmosphere of ambient music, and the hard punchy vibe of techno, Fejká couldn’t decide which direction his music production would take. “Day/night, dream/dance, slow/fast – music was always spli",
+    "tags": [
+      "deep house",
+      "electronic",
+      "ambient",
+      "techno",
+      "chillout"
+    ],
+    "similar_artists": [
+      "Parra for Cuva",
+      "Aparde",
+      "pølaroit",
+      "Christian Löffler",
+      "Ben Böhmer"
+    ],
+    "top_tracks": [
+      {
+        "name": "Svanur (feat. Rökkurró)",
+        "listeners": 20959,
+        "playcount": 87770
+      },
+      {
+        "name": "Hiraeth (feat. Kim Van Loo)",
+        "listeners": 13287,
+        "playcount": 46088
+      },
+      {
+        "name": "Pulsing",
+        "listeners": 11243,
+        "playcount": 44459
+      },
+      {
+        "name": "Unfold",
+        "listeners": 10764,
+        "playcount": 40151
+      },
+      {
+        "name": "Jubal",
+        "listeners": 10359,
+        "playcount": 32726
+      },
+      {
+        "name": "Infinity (feat. Marie Angerer)",
+        "listeners": 9278,
+        "playcount": 37346
+      },
+      {
+        "name": "Sunlight",
+        "listeners": 6895,
+        "playcount": 29998
+      },
+      {
+        "name": "Youth",
+        "listeners": 5712,
+        "playcount": 19390
+      },
+      {
+        "name": "Moonlight",
+        "listeners": 5663,
+        "playcount": 23777
+      },
+      {
+        "name": "Echoes",
+        "listeners": 4423,
+        "playcount": 12578
+      }
+    ],
+    "url": "https://www.last.fm/music/Fejk%C3%A1"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

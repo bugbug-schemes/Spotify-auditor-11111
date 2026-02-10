@@ -1,0 +1,462 @@
+{
+  "artist_name": "Spacey Jane",
+  "artist_id": "spacey_jane",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:15:50.938669+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "496100ef-b264-4b7b-9d7c-bf90a2f9c9ef",
+    "type": "Group",
+    "country": "",
+    "area": "Perth",
+    "begin_date": "2016",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "indie pop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://spaceyjane.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/7373665",
+      "free streaming": "https://www.deezer.com/artist/13065017",
+      "official homepage": "https://spaceyjane.com.au/",
+      "other databases": "https://www.abc.net.au/triplejunearthed/artist/spacey-jane",
+      "purchase for download": "https://itunes.apple.com/au/artist/id1274804750",
+      "setlistfm": "https://www.setlist.fm/setlists/spacey-jane-3bca00d8.html",
+      "social network": "https://www.instagram.com/spacey_jane/",
+      "songkick": "https://www.songkick.com/artists/9208539",
+      "soundcloud": "https://soundcloud.com/spacey-jane",
+      "streaming": "https://web.napster.com/artist/art.273072285",
+      "wikidata": "https://www.wikidata.org/wiki/Q83601061",
+      "youtube": "https://www.youtube.com/channel/UCxB59G-y-J6sNQSWzMXsPLw"
+    },
+    "labels": [
+      "triple j",
+      "[no label]",
+      "AWAL",
+      "Concord Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13065017,
+    "name": "Spacey Jane",
+    "nb_fan": 3306,
+    "nb_album": 22,
+    "link": "https://www.deezer.com/artist/13065017",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5d0712cf9b7f777238722b09a22f6279/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "BENEE"
+    ],
+    "contributor_roles": {
+      "BENEE": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Booster Seat",
+      "Lots of Nothing",
+      "Whateverrrr",
+      "All the Noise",
+      "Feeding the Family",
+      "Lots of Nothing",
+      "Sunlight",
+      "So Much Taller",
+      "Thrills",
+      "Lunchtime",
+      "Through My Teeth",
+      "Never Been Sure Of Anything",
+      "Sawteeth",
+      "Haircut",
+      "Estimated Delivery",
+      "Skin",
+      "Good for You",
+      "Sitting Up",
+      "How to Kill Houseplants",
+      "Ily the Most",
+      "Pulling Through",
+      "The More That it Hurts",
+      "Neoprene",
+      "Trucks",
+      "Feels Better"
+    ],
+    "track_durations": [
+      268,
+      193,
+      178,
+      179,
+      284,
+      196,
+      128,
+      200,
+      209,
+      198,
+      205,
+      210,
+      240,
+      224,
+      205,
+      194,
+      174,
+      189,
+      208,
+      169,
+      235,
+      182,
+      252,
+      192,
+      277
+    ],
+    "track_ranks": [
+      490822,
+      295724,
+      352745,
+      310770,
+      313502,
+      296947,
+      156432,
+      137160,
+      252796,
+      198733,
+      246751,
+      75559,
+      180453,
+      97509,
+      241410,
+      300844,
+      256278,
+      161191,
+      217553,
+      158785,
+      166195,
+      189500,
+      45211,
+      159474,
+      103954
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 3,
+      "single": 15
+    },
+    "albums": [
+      {
+        "title": "If That Makes Sense",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Here Comes Everybody",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Here Comes Everybody (Deluxe)",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sunlight",
+        "label": "",
+        "release_date": "2020-06-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "In the Slight",
+        "label": "",
+        "release_date": "2018-11-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "In the Meantime",
+        "label": "",
+        "release_date": "2018-04-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "No Way to Treat an Animal",
+        "label": "",
+        "release_date": "2017-11-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Estimated Delivery (magic megamix)",
+        "label": "",
+        "release_date": "2025-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Through My Teeth",
+        "label": "",
+        "release_date": "2025-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How to Kill Houseplants",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All the Noise",
+        "label": "",
+        "release_date": "2025-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Bad Day",
+        "label": "",
+        "release_date": "2024-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lots of Nothing",
+        "label": "",
+        "release_date": "2023-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lunchtime",
+        "label": "",
+        "release_date": "2021-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lots of Nothing",
+        "label": "",
+        "release_date": "2021-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Booster Seat (Edit)",
+        "label": "",
+        "release_date": "2021-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here Comes the Sun (triple j Like A Version)",
+        "label": "",
+        "release_date": "2021-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Head Cold",
+        "label": "",
+        "release_date": "2019-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good for You",
+        "label": "",
+        "release_date": "2019-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Grief",
+        "label": "",
+        "release_date": "2019-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cold Feet",
+        "label": "",
+        "release_date": "2018-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feeding the Family",
+        "label": "",
+        "release_date": "2017-07-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "The Rions",
+      "Lime Cordiale",
+      "Teenage Dads",
+      "Skegss",
+      "Old Mervs",
+      "Ocean Alley",
+      "The Jungle Giants",
+      "Hockey Dad",
+      "San Cisco",
+      "Sticky Fingers"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7373665,
+    "name": "Spacey Jane",
+    "profile": "Pop/Indie rock band from Western Australia.\r\nFormed 2016\r\n\r\n[b]Members:[/b]\r\nAshton Hardman-Le Cornu – Lead guitar (2016–)\r\nCaleb Harper – Vocals/Rhythm guitar (2016–)\r\nKieran Lama – Drums (2016–)\r\nPeppa Lane – Bass/Backing vocals (2019–)\r\n\r\n[b]Past Members:[/b]\r\nAmelia Murray – Bass/Backing vocals (2016–2019)\r\n",
+    "realname": "",
+    "social_urls": [
+      "Website - https://spaceyjane.com.au/",
+      "Facebook - https://www.facebook.com/JaneySpace/",
+      "Instagram - https://www.instagram.com/spacey_jane/",
+      "YouTube - https://m.youtube.com/channel/UCZT2BAh-X6WGjokXfVJbryQ",
+      "Wiki - https://en.m.wikipedia.org/wiki/Spacey_Jane"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 9,
+    "total_releases": 13,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "7\", Blu + 7\", gre + 3x7\"",
+      "7\", Single, Blu",
+      "File, AAC, Single, 256",
+      "LP, Ltd, Neo"
+    ],
+    "labels": [
+      "Flying Vinyl (2)",
+      "Not On Label (Spacey Jane Self-released)",
+      "Rhubarb Records (6)",
+      "Triple J, ABC Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Spacey Jane",
+    "mbid": "496100ef-b264-4b7b-9d7c-bf90a2f9c9ef",
+    "listeners": 351247,
+    "playcount": 13192574,
+    "listener_play_ratio": 37.56,
+    "bio_exists": true,
+    "bio_summary": "\nSpacey Jane came to life in 2016 when mates Caleb and Kieran re-visited their teenage musical ambitions. Ashton and Meils were picked up through uni friendships and the ball rolled on from there. Since their first show in Caleb’s backyard, the band has shared the stage with the likes of Car Seat Headrest, Alex Lahey, British India and The Stems, along with festival appearances at Wave Rock Weekender, Gizzfest 2017 and Falls Downtown and the recently announced SOTA Festival, hitting Elizabeth Qu",
+    "tags": [
+      "indie rock",
+      "indie",
+      "pop",
+      "rock",
+      "australia"
+    ],
+    "similar_artists": [
+      "The Rions",
+      "Lime Cordiale",
+      "Old Mervs",
+      "Pacific Avenue",
+      "Rum Jungle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Booster Seat",
+        "listeners": 167030,
+        "playcount": 1920797
+      },
+      {
+        "name": "Feeding the Family",
+        "listeners": 86895,
+        "playcount": 944018
+      },
+      {
+        "name": "Lots of Nothing",
+        "listeners": 72626,
+        "playcount": 736836
+      },
+      {
+        "name": "Good For You",
+        "listeners": 69854,
+        "playcount": 760710
+      },
+      {
+        "name": "Skin",
+        "listeners": 64376,
+        "playcount": 658316
+      },
+      {
+        "name": "Whateverrrr",
+        "listeners": 50074,
+        "playcount": 306761
+      },
+      {
+        "name": "Lots of Nothing (feat. BENEE)",
+        "listeners": 46706,
+        "playcount": 192651
+      },
+      {
+        "name": "All The Noise",
+        "listeners": 43092,
+        "playcount": 289715
+      },
+      {
+        "name": "Head Cold",
+        "listeners": 41951,
+        "playcount": 448145
+      },
+      {
+        "name": "Sawteeth",
+        "listeners": 38765,
+        "playcount": 329310
+      }
+    ],
+    "url": "https://www.last.fm/music/Spacey+Jane"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

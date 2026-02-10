@@ -1,0 +1,204 @@
+{
+  "artist_name": "Suevite",
+  "artist_id": "suevite",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:26:33.779901+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 220396155,
+    "name": "Suevite",
+    "nb_fan": 2,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/220396155",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2b29b143f33165cb978ca40183aa3e38/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Naiad",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ganymede",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nirodha",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cenotes",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All in Harmony",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caelestia",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corollary",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Scenic",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From Within",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meadows",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Suevite",
+    "mbid": "",
+    "listeners": 26968,
+    "playcount": 101879,
+    "listener_play_ratio": 3.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Suevite\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Poery",
+      "Iyaam Ibe",
+      "Solitary Sun",
+      "Lonely silence",
+      "Faye Brinkmann"
+    ],
+    "top_tracks": [
+      {
+        "name": "Caelestia",
+        "listeners": 16484,
+        "playcount": 41021
+      },
+      {
+        "name": "Cenotes",
+        "listeners": 13714,
+        "playcount": 40403
+      },
+      {
+        "name": "Nirodha",
+        "listeners": 4974,
+        "playcount": 16197
+      },
+      {
+        "name": "Naiad",
+        "listeners": 1348,
+        "playcount": 4213
+      },
+      {
+        "name": "All in Harmony",
+        "listeners": 12,
+        "playcount": 15
+      },
+      {
+        "name": "From Within",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Meadows",
+        "listeners": 1,
+        "playcount": 25
+      },
+      {
+        "name": "Scenic",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Corollary",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Suevite"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

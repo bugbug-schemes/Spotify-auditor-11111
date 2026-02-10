@@ -1,0 +1,155 @@
+{
+  "artist_name": "oakbear",
+  "artist_id": "oakbear",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:27:23.423456+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "914d2ec3-92dc-4352-99fd-cb54b9538eb9",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental",
+      "boom bap",
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi"
+    ],
+    "aliases": [
+      "Billy Evan Utama"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/150755722",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/oakbear/13337603",
+      "soundcloud": "https://soundcloud.com/oakbear-music",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/oakbear/13337603",
+      "youtube music": "https://music.youtube.com/channel/UCGwULsu2YlmCmmseVrbooOQ"
+    },
+    "labels": [
+      "Chill Ghost",
+      "The Jazz Hop Café"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'oakbear', got 'Poo Bear'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "oakbear",
+    "mbid": "914d2ec3-92dc-4352-99fd-cb54b9538eb9",
+    "listeners": 3645,
+    "playcount": 89232,
+    "listener_play_ratio": 24.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/oakbear\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isake",
+      "Lofi Sleep Society",
+      "Chill Space",
+      "Tomborda",
+      "b e r t h"
+    ],
+    "top_tracks": [
+      {
+        "name": "Teardrops",
+        "listeners": 843,
+        "playcount": 1931
+      },
+      {
+        "name": "Leaving The Place",
+        "listeners": 667,
+        "playcount": 2444
+      },
+      {
+        "name": "overthinker",
+        "listeners": 462,
+        "playcount": 1404
+      },
+      {
+        "name": "After Midnight",
+        "listeners": 436,
+        "playcount": 1057
+      },
+      {
+        "name": "Timeless Reflections",
+        "listeners": 347,
+        "playcount": 684
+      },
+      {
+        "name": "flying over",
+        "listeners": 305,
+        "playcount": 627
+      },
+      {
+        "name": "between the stars",
+        "listeners": 268,
+        "playcount": 599
+      },
+      {
+        "name": "guidance",
+        "listeners": 246,
+        "playcount": 409
+      },
+      {
+        "name": "Spirit Traces",
+        "listeners": 222,
+        "playcount": 4640
+      },
+      {
+        "name": "burning forest",
+        "listeners": 207,
+        "playcount": 463
+      }
+    ],
+    "url": "https://www.last.fm/music/oakbear"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

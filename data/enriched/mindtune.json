@@ -1,0 +1,209 @@
+{
+  "artist_name": "Mindtune",
+  "artist_id": "mindtune",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:45:18.111664+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 303441701,
+    "name": "Mindtune",
+    "nb_fan": 1,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/303441701",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b54352ae199060406047fdb7788eab78/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Soft Shiver",
+        "label": "",
+        "release_date": "2025-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Silence",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liquid Dream",
+        "label": "",
+        "release_date": "2025-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Drops",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forest Dream",
+        "label": "",
+        "release_date": "2025-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamlight",
+        "label": "",
+        "release_date": "2025-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonrest",
+        "label": "",
+        "release_date": "2025-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Bloom",
+        "label": "",
+        "release_date": "2025-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rainy Dream",
+        "label": "",
+        "release_date": "2025-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Celestial Whispers",
+        "label": "",
+        "release_date": "2025-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mindtune",
+    "mbid": "",
+    "listeners": 3921,
+    "playcount": 18747,
+    "listener_play_ratio": 4.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mindtune\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Knot Released",
+      "anahata symphony",
+      "Quiet View",
+      "Ari Einarsson",
+      "Elaifas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Forest Dream",
+        "listeners": 1996,
+        "playcount": 6881
+      },
+      {
+        "name": "Celestial Whispers",
+        "listeners": 1819,
+        "playcount": 6544
+      },
+      {
+        "name": "Night Bloom",
+        "listeners": 1047,
+        "playcount": 4043
+      },
+      {
+        "name": "Soft Drops",
+        "listeners": 194,
+        "playcount": 659
+      },
+      {
+        "name": "Moonrest",
+        "listeners": 173,
+        "playcount": 400
+      },
+      {
+        "name": "Liquid Dream",
+        "listeners": 54,
+        "playcount": 174
+      },
+      {
+        "name": "Deep calm",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Open Silence",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "963Hz Solfeggio frequency",
+        "listeners": 1,
+        "playcount": 17
+      },
+      {
+        "name": "852Hz Solfeggio frequency",
+        "listeners": 1,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/Mindtune"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

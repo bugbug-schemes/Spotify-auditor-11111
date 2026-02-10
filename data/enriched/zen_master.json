@@ -1,0 +1,165 @@
+{
+  "artist_name": "Zen Master",
+  "artist_id": "zen_master",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:08:17.302408+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bf96c96a-3c8f-48cf-8e0d-b9d3252281dd",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/4102513"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Zen Master', got 'zenmaster'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4102513,
+    "name": "Zen Master",
+    "profile": "",
+    "realname": "Kashyyyk & Paralocks",
+    "social_urls": [],
+    "members": [
+      "Pablo Valdes Cortes",
+      "Jerry van den Heever"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 10,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "15xFile, MP3, Album",
+      "19xFile, FLAC, Comp",
+      "20xFile, WAV, Comp",
+      "22xFile, MP3, Album, Comp",
+      "8xFile, MP3, WMV, EP",
+      "File, AAC, AIFF, FLAC, MP3, ogg, WAV, WMA, Album, "
+    ],
+    "labels": [
+      "Anomalistic Records",
+      "Kamino Records",
+      "Vonz Tech Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zen Master",
+    "mbid": "bf96c96a-3c8f-48cf-8e0d-b9d3252281dd",
+    "listeners": 51502,
+    "playcount": 431733,
+    "listener_play_ratio": 8.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zen+Master\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tura Cos",
+      "FX Makers",
+      "Naturalis",
+      "Wonderful Escape",
+      "Nature Lab"
+    ],
+    "top_tracks": [
+      {
+        "name": "Spring Shower Bird Songs",
+        "listeners": 13723,
+        "playcount": 42140
+      },
+      {
+        "name": "Forest Bird Sounds",
+        "listeners": 12126,
+        "playcount": 34824
+      },
+      {
+        "name": "Birds In Forest Rainfall",
+        "listeners": 11630,
+        "playcount": 36218
+      },
+      {
+        "name": "Thundershowers",
+        "listeners": 11026,
+        "playcount": 33519
+      },
+      {
+        "name": "Big Sky",
+        "listeners": 7919,
+        "playcount": 42857
+      },
+      {
+        "name": "Zen Thunder",
+        "listeners": 7650,
+        "playcount": 42007
+      },
+      {
+        "name": "Cozy Rain",
+        "listeners": 6972,
+        "playcount": 123972
+      },
+      {
+        "name": "Birds & the Bees",
+        "listeners": 6393,
+        "playcount": 23782
+      },
+      {
+        "name": "Summer Rain",
+        "listeners": 3062,
+        "playcount": 11069
+      },
+      {
+        "name": "First Rain Of The Season",
+        "listeners": 2977,
+        "playcount": 9631
+      }
+    ],
+    "url": "https://www.last.fm/music/Zen+Master"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

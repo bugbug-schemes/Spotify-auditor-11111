@@ -1,0 +1,210 @@
+{
+  "artist_name": "Sam’s Creek",
+  "artist_id": "sam_s_creek",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:53:47.728548+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 294305041,
+    "name": "Sam’s Creek",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/294305041",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/100886b56c8e535fdebdb31ca0ec0cb1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Lullaby"
+    ],
+    "track_durations": [
+      174
+    ],
+    "track_ranks": [
+      25295
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "As Moments Go By",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost in the Moment",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Familiar Faces",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon Waltz",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lullaby",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Ago",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For You",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1774424,
+    "name": "Sam Wilson",
+    "profile": "Born at Frozen Creek, Breathitt County, Kentucky, on December 31, 1948, Wilson played guitar and sang in the mournful, mountain bluegrass style of  [a448037].  Occasionally he played with Ralph Stanley and  [a1355815].  Sadly he passed away on February 25, 2018, at the relatively young age of 69.  ",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/goodmusic222/"
+    ],
+    "members": [],
+    "groups": [
+      "Caedmon (2)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 12,
+    "total_releases": 21,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, MiniAlbum",
+      "Cass, Album"
+    ],
+    "labels": [
+      "Caedmon's Return",
+      "Courthouse",
+      "Fogo Records",
+      "LIghtspeed (2)",
+      "Loona-Sol Records",
+      "Not On Label",
+      "River Track Studio, Louisa, KY"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sam’s Creek",
+    "mbid": "",
+    "listeners": 5044,
+    "playcount": 20322,
+    "listener_play_ratio": 4.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sam%E2%80%99s+Creek\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sam Blom",
+      "Mattias Blom",
+      "Logan Connors",
+      "Jonka Ebony",
+      "Malik Ramirez"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lullaby",
+        "listeners": 2641,
+        "playcount": 8257
+      },
+      {
+        "name": "Long Ago",
+        "listeners": 1891,
+        "playcount": 4663
+      },
+      {
+        "name": "Lost in the Moment",
+        "listeners": 1489,
+        "playcount": 3543
+      },
+      {
+        "name": "Familiar Faces",
+        "listeners": 788,
+        "playcount": 2020
+      },
+      {
+        "name": "For You",
+        "listeners": 494,
+        "playcount": 1108
+      },
+      {
+        "name": "Moon Waltz",
+        "listeners": 348,
+        "playcount": 723
+      },
+      {
+        "name": "As Moments Go By",
+        "listeners": 6,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/Sam%E2%80%99s+Creek"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

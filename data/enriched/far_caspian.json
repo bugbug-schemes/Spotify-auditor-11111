@@ -1,0 +1,512 @@
+{
+  "artist_name": "Far Caspian",
+  "artist_id": "far_caspian",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:34:53.963371+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1b53a424-2bea-4210-9318-32eac0758f49",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "2018-02-01",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "rock",
+      "pop",
+      "indie rock",
+      "lo-fi",
+      "indie pop",
+      "dream pop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://farcaspian.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6960441",
+      "free streaming": "https://www.deezer.com/artist/14208293",
+      "last.fm": "https://www.last.fm/music/Far+Caspian",
+      "lyrics": "https://www.musixmatch.com/artist/Far-Caspian",
+      "official homepage": "http://www.farcaspian.org/",
+      "social network": "https://www.instagram.com/farcaspian/",
+      "songkick": "https://www.songkick.com/artists/9426634",
+      "soundcloud": "https://soundcloud.com/far-caspian",
+      "streaming": "https://tidal.com/artist/9591508",
+      "youtube": "https://www.youtube.com/channel/UCjdeG9oyEp8w9WKsV9Ynyvg"
+    },
+    "labels": [
+      "Audiotree Music",
+      "Dance to the Radio",
+      "[no label]",
+      "AllPoints",
+      "Tiny Library Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14208293,
+    "name": "Far Caspian",
+    "nb_fan": 7613,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/14208293",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b12c36e87005df28d9aae8166ab24fb3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "These Times",
+      "Let's Go Outside",
+      "A Dream of You",
+      "Between Days",
+      "The Place",
+      "Whim",
+      "Conversations",
+      "Ditch",
+      "Finding My Way Home",
+      "The Heights",
+      "Astoria",
+      "The Sound Of Changing Place",
+      "Questions",
+      "July",
+      "Blue",
+      "Brother",
+      "Following the Trend",
+      "Get Along",
+      "Come Down and Waste With Me",
+      "First Day",
+      "Attempt",
+      "Plans",
+      "Conversations (Alternative Version)",
+      "Pool",
+      "Moon Tower"
+    ],
+    "track_durations": [
+      191,
+      276,
+      258,
+      190,
+      257,
+      317,
+      199,
+      208,
+      249,
+      194,
+      246,
+      233,
+      220,
+      223,
+      205,
+      173,
+      188,
+      202,
+      247,
+      212,
+      282,
+      237,
+      205,
+      258,
+      305
+    ],
+    "track_ranks": [
+      277441,
+      387884,
+      369821,
+      386751,
+      284722,
+      374888,
+      178127,
+      141743,
+      266195,
+      189394,
+      189514,
+      199242,
+      139604,
+      163999,
+      357859,
+      122957,
+      113856,
+      132909,
+      164000,
+      125203,
+      326963,
+      78536,
+      65765,
+      200157,
+      33370
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 3,
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "Autofiction",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Last Remaining Light",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Last Remaining Light (Bonus Track Version)",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ways To Get Out",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ways To Get Out (Deluxe)",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Far Caspian on Audiotree Live",
+        "label": "",
+        "release_date": "2024-02-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Heights",
+        "label": "",
+        "release_date": "2019-06-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Between Days",
+        "label": "",
+        "release_date": "2018-11-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Whim",
+        "label": "",
+        "release_date": "2025-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autofiction",
+        "label": "",
+        "release_date": "2025-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "An Outstretched Hand / Rain From Here to Kerry",
+        "label": "",
+        "release_date": "2025-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Day",
+        "label": "",
+        "release_date": "2025-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pennyroyal Tea",
+        "label": "",
+        "release_date": "2024-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pet Architect",
+        "label": "",
+        "release_date": "2023-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pet Architect/Heirloom Pt. 1 & 2",
+        "label": "",
+        "release_date": "2023-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Own",
+        "label": "",
+        "release_date": "2023-05-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Last Remaining Light",
+        "label": "",
+        "release_date": "2023-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Arbitrary Task",
+        "label": "",
+        "release_date": "2023-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Following The Trend / Sun Room",
+        "label": "",
+        "release_date": "2022-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "House",
+        "label": "",
+        "release_date": "2021-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Warning Sign (Alt Version)",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Warning Sign",
+        "label": "",
+        "release_date": "2020-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Today",
+        "label": "",
+        "release_date": "2020-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "July",
+        "label": "",
+        "release_date": "2019-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Conversations (Alternative Version)",
+        "label": "",
+        "release_date": "2019-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astoria",
+        "label": "",
+        "release_date": "2019-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Dream of You",
+        "label": "",
+        "release_date": "2019-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Conversations",
+        "label": "",
+        "release_date": "2019-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holding On",
+        "label": "",
+        "release_date": "2018-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Beach Fossils",
+      "No Vacation",
+      "Meltt",
+      "CASTLEBEAT",
+      "Willis",
+      "Summer Salt",
+      "Craft Spells",
+      "boy pablo",
+      "Vansire",
+      "Hibou"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6960441,
+    "name": "Far Caspian",
+    "profile": "Solo Project of Irish producer/musician Joel Johnston.",
+    "realname": "",
+    "social_urls": [
+      "https://www.farcaspian.org",
+      "https://www.facebook.com/FarCaspian/",
+      "https://twitter.com/farcaspian",
+      "https://www.instagram.com/farcaspian/",
+      "https://soundcloud.com/far-caspian"
+    ],
+    "members": [
+      "Joel Johnston (2)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 13,
+    "total_releases": 17,
+    "formats": [
+      "",
+      "CD, Album",
+      "File, MP3, Single, 320",
+      "Flexi, 5\", Shape, S/Sided",
+      "LP, Comp, Ltd, Pin",
+      "LP, Comp, RP, S/Edition",
+      "LP, Ltd, Num, Bla"
+    ],
+    "labels": [
+      "Dance To The Radio",
+      "Dance To The Radio, A Tiny Library Recording",
+      "GM Records (23)",
+      "Vinyl Post"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Far Caspian",
+    "mbid": "1b53a424-2bea-4210-9318-32eac0758f49",
+    "listeners": 348626,
+    "playcount": 5235812,
+    "listener_play_ratio": 15.02,
+    "bio_exists": true,
+    "bio_summary": "Far Caspian's foundations were built in producer and frontman Joel Johnston's University halls. His Lo-fi sound was picked up by Blogs such as Indie Shuffle and thelazylazyme. Since graduating, Johnston has called on Alessio and Jof to turn his bedroom sound into something bolder. Now as a band, they are crafting their new sound as they play shows in the UK including Live at Leeds, Gold sounds festival and Leeds Festival. Following the release of their debut EP 'Between Days' the band have been ",
+    "tags": [
+      "dream pop",
+      "indie pop",
+      "indie",
+      "Lo-Fi",
+      "alternative"
+    ],
+    "similar_artists": [
+      "Castlebeat",
+      "Jaguar Sun",
+      "Tokyo Tea Room",
+      "Day Wave",
+      "Vansire"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Dream of You",
+        "listeners": 96173,
+        "playcount": 657658
+      },
+      {
+        "name": "Built By Design",
+        "listeners": 88710,
+        "playcount": 303638
+      },
+      {
+        "name": "Blue",
+        "listeners": 87854,
+        "playcount": 482306
+      },
+      {
+        "name": "Brother",
+        "listeners": 68239,
+        "playcount": 263955
+      },
+      {
+        "name": "Between Days",
+        "listeners": 58552,
+        "playcount": 323566
+      },
+      {
+        "name": "Let's Go Outside",
+        "listeners": 44901,
+        "playcount": 306402
+      },
+      {
+        "name": "Questions",
+        "listeners": 43174,
+        "playcount": 193732
+      },
+      {
+        "name": "Finding My Way Home",
+        "listeners": 42468,
+        "playcount": 266630
+      },
+      {
+        "name": "Attempt",
+        "listeners": 37334,
+        "playcount": 175482
+      },
+      {
+        "name": "Our Past Lives",
+        "listeners": 36244,
+        "playcount": 163505
+      }
+    ],
+    "url": "https://www.last.fm/music/Far+Caspian"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

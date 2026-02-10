@@ -1,0 +1,136 @@
+{
+  "artist_name": "A. Rustique",
+  "artist_id": "a__rustique",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T18:52:08.294065+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 260437591,
+    "name": "A. Rustique",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/260437591",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Cradles",
+        "label": "",
+        "release_date": "2026-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "greensleeves",
+        "label": "",
+        "release_date": "2025-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mary had a little lamb",
+        "label": "",
+        "release_date": "2025-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "scarborough fair",
+        "label": "",
+        "release_date": "2025-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gently Swaying",
+        "label": "",
+        "release_date": "2025-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh My Darling, Clementine",
+        "label": "",
+        "release_date": "2024-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "A. Rustique",
+    "mbid": "",
+    "listeners": 655,
+    "playcount": 9798,
+    "listener_play_ratio": 14.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/A.+Rustique\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mathilda Nuit",
+      "ZOE WELLS",
+      "Kenau Woods",
+      "Serenna Rose",
+      "Ollie The Bear"
+    ],
+    "top_tracks": [
+      {
+        "name": "Drifting Off",
+        "listeners": 655,
+        "playcount": 9798
+      }
+    ],
+    "url": "https://www.last.fm/music/A.+Rustique"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

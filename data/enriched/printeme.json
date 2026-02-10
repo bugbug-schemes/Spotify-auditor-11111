@@ -1,0 +1,139 @@
+{
+  "artist_name": "Printeme",
+  "artist_id": "printeme",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:31:53.852289+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "42296be3-53ab-4338-b35c-9418666a80dc",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "hip hop",
+      "lo-fi hip hop",
+      "instrumental",
+      "boom bap",
+      "chillwave",
+      "downtempo",
+      "instrumental hip hop",
+      "lo-fi"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/173571257",
+      "streaming": "https://tidal.com/artist/32726182"
+    },
+    "labels": [
+      "Firefly Entertainment"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 173571257,
+    "name": "Printeme",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/173571257",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8b032cd069b85dc9beb1d48dd492ff54/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Magnifique",
+        "label": "",
+        "release_date": "2022-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Printeme",
+    "mbid": "42296be3-53ab-4338-b35c-9418666a80dc",
+    "listeners": 8502,
+    "playcount": 16041,
+    "listener_play_ratio": 1.89,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Printeme\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jerrick Lamar",
+      "Horscht",
+      "Glenn.",
+      "Under Surface Express",
+      "Finera"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dijon Lofi",
+        "listeners": 8499,
+        "playcount": 15915
+      },
+      {
+        "name": "Rue Cadet",
+        "listeners": 31,
+        "playcount": 78
+      },
+      {
+        "name": "Magnifique",
+        "listeners": 20,
+        "playcount": 48
+      }
+    ],
+    "url": "https://www.last.fm/music/Printeme"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,176 @@
+{
+  "artist_name": "Orbit Trio",
+  "artist_id": "orbit_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:15:08.152834+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 361928302,
+    "name": "Orbit Trio",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/361928302",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Slow Motion Sky",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "August's End",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Bus Uptown",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 975506,
+    "name": "Orbit (7)",
+    "profile": "Orbit is a Boston, Massachusetts-based power trio. Formed in 1994, the band went on hiatus in late 2001. According to the official website, the band reunited as of December 11th, 2010.  The members are:\r\n\r\nJeff Robbins, lead singer and guitarist.\r\nPaul Buckley, drummer\r\nLinda Bean, bassist (???? - present)\r\nFred Archambault, guitarist\r\nWally Gagel, bassist (1995 - present)\r\n\r\nFormer members:\r\nMark Brookner, bassist (1994-1995)\r\n\r\nOriginal band members Jeff Robbins and Paul Buckley were the only constant band members during Orbit's active years. Fred Archambault and Linda Bean joined before the release of the EP \"Tonedeaf\", released on Lunch Records.\r\n",
+    "realname": "",
+    "social_urls": [
+      "http://www.orbitband.com",
+      "http://www.facebook.com/orbitband"
+    ],
+    "members": [
+      "Wally Gagel",
+      "Paul Buckley",
+      "Jeff Lowe Robbins"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 39,
+    "digital_only_releases": 12,
+    "total_releases": 51,
+    "formats": [
+      "",
+      "13xFile, MP3, Album",
+      "2xCD, Comp, Promo",
+      "7\"",
+      "7\", MP, Num, Whi",
+      "7\", Num, Gre",
+      "7\", Promo, Whi + CD, EP, Promo",
+      "7\", Whi",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Ltd, Promo",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, Comp, Smplr",
+      "CD, EP",
+      "CD, EP, Promo, Smplr",
+      "CD, Promo, Smplr",
+      "CD, Single, Promo, Car",
+      "CD, Smplr",
+      "Cass, Comp, Smplr, Dol",
+      "Cass, Promo, Smplr",
+      "Umatic, Comp, Promo",
+      "VHS, Comp, Promo, NTSC"
+    ],
+    "labels": [
+      "A&M Records",
+      "A&M Records, Island Records, Motown",
+      "A&M Records, Lunch Records",
+      "A&M Records, Polydor, DV8 Records, Perspective Records",
+      "Castle von Buhler",
+      "College Music Journal",
+      "ETV Network",
+      "Friday Morning Quarterback Album Report Inc.",
+      "Hits",
+      "Lunch Records",
+      "Mercury, EMI, Virgin",
+      "Mercury, Raks Müzik",
+      "Musician",
+      "Next Magazine",
+      "PolyGram",
+      "PolyGram Group Distribution",
+      "Polydor",
+      "Polygram Special Markets",
+      "S.I.N.",
+      "The Album Network",
+      "WBCN FM Boston",
+      "lunch records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Orbit Trio",
+    "mbid": "",
+    "listeners": 847,
+    "playcount": 1007,
+    "listener_play_ratio": 1.19,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Orbit+Trio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Slow Motion Sky",
+        "listeners": 847,
+        "playcount": 1007
+      }
+    ],
+    "url": "https://www.last.fm/music/Orbit+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

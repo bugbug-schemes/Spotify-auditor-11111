@@ -1,0 +1,96 @@
+{
+  "artist_name": "Njarka",
+  "artist_id": "njarka",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:03:09.235646+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Njarka', got 'Barak'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 651469,
+    "name": "Guidado Diallo",
+    "profile": "Njarka Violinist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Njarka",
+    "mbid": "",
+    "listeners": 1637,
+    "playcount": 4024,
+    "listener_play_ratio": 2.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Njarka\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ava Twilight",
+      "Mountain Explorer",
+      "OceanFinder",
+      "Piano Bloom",
+      "Tiam Aref"
+    ],
+    "top_tracks": [
+      {
+        "name": "Elarith",
+        "listeners": 1637,
+        "playcount": 4023
+      },
+      {
+        "name": "Drauki",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Njarka"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

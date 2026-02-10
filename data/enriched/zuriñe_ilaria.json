@@ -1,0 +1,120 @@
+{
+  "artist_name": "Zuriñe Ilaria",
+  "artist_id": "zuriñe_ilaria",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:09:34.059131+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zuriñe Ilaria",
+    "mbid": "",
+    "listeners": 4081,
+    "playcount": 63549,
+    "listener_play_ratio": 15.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zuri%C3%B1e+Ilaria\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Fruity Koala",
+      "All About The Children",
+      "Philip berg",
+      "Alicja Pawlowska",
+      "Moonlit Nursery Rhymes"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fly Butterfly",
+        "listeners": 2557,
+        "playcount": 33082
+      },
+      {
+        "name": "Quiet Night",
+        "listeners": 2305,
+        "playcount": 30212
+      },
+      {
+        "name": "Across The Sky",
+        "listeners": 80,
+        "playcount": 97
+      },
+      {
+        "name": "You're So Sweet",
+        "listeners": 18,
+        "playcount": 23
+      },
+      {
+        "name": "Our Universe",
+        "listeners": 17,
+        "playcount": 29
+      },
+      {
+        "name": "Sleep By My Side",
+        "listeners": 15,
+        "playcount": 18
+      },
+      {
+        "name": "Catching Stars",
+        "listeners": 11,
+        "playcount": 18
+      },
+      {
+        "name": "Closer",
+        "listeners": 7,
+        "playcount": 13
+      },
+      {
+        "name": "See A Victory",
+        "listeners": 4,
+        "playcount": 49
+      },
+      {
+        "name": "Shining Bright",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Zuri%C3%B1e+Ilaria"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,184 @@
+{
+  "artist_name": "Atlas Dusk",
+  "artist_id": "atlas_dusk",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:16:40.470905+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 351385072,
+    "name": "Atlas Dusk",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/351385072",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Zenline",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amphitrite",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skies Below",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1612833,
+    "name": "Atlas Dusk",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 5,
+    "digital_only_releases": 1,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Comp",
+      "CDr, EP"
+    ],
+    "labels": [
+      "Listen! Records",
+      "Project Atlas Entertainment"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Atlas Dusk",
+    "mbid": "",
+    "listeners": 2423,
+    "playcount": 8103,
+    "listener_play_ratio": 3.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Atlas+Dusk\">Read more on Last.fm</a>",
+    "tags": [
+      "underground hip-hop",
+      "funk"
+    ],
+    "similar_artists": [
+      "Furomerald",
+      "Owen Bloom",
+      "Aeris Holt",
+      "Topozia",
+      "Lún"
+    ],
+    "top_tracks": [
+      {
+        "name": "Skies Below",
+        "listeners": 2124,
+        "playcount": 3623
+      },
+      {
+        "name": "Pro Party Bros (Featuring Pigeon John)",
+        "listeners": 136,
+        "playcount": 334
+      },
+      {
+        "name": "Heads",
+        "listeners": 90,
+        "playcount": 248
+      },
+      {
+        "name": "Hometown Phantoms",
+        "listeners": 88,
+        "playcount": 284
+      },
+      {
+        "name": "Conman",
+        "listeners": 84,
+        "playcount": 234
+      },
+      {
+        "name": "The Show",
+        "listeners": 81,
+        "playcount": 230
+      },
+      {
+        "name": "Mutherfunkin'",
+        "listeners": 71,
+        "playcount": 203
+      },
+      {
+        "name": "You",
+        "listeners": 71,
+        "playcount": 170
+      },
+      {
+        "name": "24",
+        "listeners": 68,
+        "playcount": 184
+      },
+      {
+        "name": "Tails",
+        "listeners": 66,
+        "playcount": 159
+      }
+    ],
+    "url": "https://www.last.fm/music/Atlas+Dusk"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

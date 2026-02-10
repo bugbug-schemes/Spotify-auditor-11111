@@ -1,0 +1,629 @@
+{
+  "artist_name": "Teyana Taylor",
+  "artist_id": "teyana_taylor",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:29:49.227921+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c7eb03c1-f8cb-4815-afc8-46df3b253129",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1990-12-10",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000139352255"
+    ],
+    "ipis": [
+      "00511038208"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0001984584",
+      "discogs": "https://www.discogs.com/artist/1301110",
+      "free streaming": "https://www.deezer.com/artist/1701774",
+      "IMDb": "https://www.imdb.com/name/nm3692520/",
+      "last.fm": "https://www.last.fm/music/Teyana%20Taylor",
+      "lyrics": "https://genius.com/artists/Teyana-taylor",
+      "official homepage": "https://teyanataylor.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2011140710",
+      "purchase for download": "https://itunes.apple.com/us/artist/id216698214",
+      "social network": "https://www.instagram.com/teyanataylor/",
+      "songkick": "https://www.songkick.com/artists/861863",
+      "soundcloud": "https://soundcloud.com/teyana-taylor-official",
+      "streaming": "https://tidal.com/artist/5734523",
+      "VIAF": "http://viaf.org/viaf/175706453",
+      "wikidata": "https://www.wikidata.org/wiki/Q7708542",
+      "youtube": "https://www.youtube.com/channel/UCjidxaqM2swsqmi-dgTLJPA"
+    },
+    "labels": [
+      "TaylorMade Music",
+      "Interscope Records",
+      "Alamo Records",
+      "UMe Digital",
+      "G.O.O.D. Music",
+      "Roc‐A‐Fella Records",
+      "FP",
+      "Def Jam Recordings"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1701774,
+    "name": "Teyana Taylor",
+    "nb_fan": 199494,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/1701774",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d0c417b62e74f4d580190bd76b4445e7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Chris Brown",
+      "Erykah Badu",
+      "Future",
+      "Ghostface Killah",
+      "IMAN",
+      "Jill Scott",
+      "Kehlani",
+      "King Combs",
+      "Lucky Daye",
+      "Method Man",
+      "Missy Elliott",
+      "Pusha T",
+      "Raekwon",
+      "Tasha Smith",
+      "Tyla",
+      "Yo Gotti"
+    ],
+    "contributor_roles": {
+      "Kehlani": [
+        "Main"
+      ],
+      "Lucky Daye": [
+        "Main"
+      ],
+      "IMAN": [
+        "Featured"
+      ],
+      "King Combs": [
+        "Featured"
+      ],
+      "Ghostface Killah": [
+        "Featured"
+      ],
+      "Method Man": [
+        "Featured"
+      ],
+      "Raekwon": [
+        "Featured"
+      ],
+      "Chris Brown": [
+        "Featured"
+      ],
+      "Missy Elliott": [
+        "Featured"
+      ],
+      "Future": [
+        "Featured"
+      ],
+      "Tasha Smith": [
+        "Main"
+      ],
+      "Erykah Badu": [
+        "Featured"
+      ],
+      "Jill Scott": [
+        "Main"
+      ],
+      "Tyla": [
+        "Main"
+      ],
+      "Pusha T": [
+        "Featured"
+      ],
+      "Yo Gotti": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Bare Wit Me",
+      "Gonna Love Me",
+      "Morning",
+      "Hard Part",
+      "Issues/Hold On",
+      "Wake Up Love",
+      "How You Want It?",
+      "Gonna Love Me (Remix)",
+      "Rose In Harlem",
+      "Bed of Roses",
+      "Long Time",
+      "Do Not Disturb",
+      "Fire Girl",
+      "3Way",
+      "Boomin",
+      "Back To Life",
+      "Morning",
+      "Lowkey",
+      "Pum Pum Jump",
+      "Maybe",
+      "Concrete",
+      "Google Me",
+      "69",
+      "Never Would Have Made It",
+      "Final Destination"
+    ],
+    "track_durations": [
+      129,
+      167,
+      253,
+      158,
+      186,
+      215,
+      222,
+      289,
+      222,
+      149,
+      114,
+      252,
+      159,
+      203,
+      331,
+      194,
+      287,
+      258,
+      160,
+      246,
+      238,
+      198,
+      161,
+      159,
+      192
+    ],
+    "track_ranks": [
+      532298,
+      523552,
+      423166,
+      471729,
+      402735,
+      377838,
+      465765,
+      251320,
+      414233,
+      275644,
+      411715,
+      350348,
+      367732,
+      332799,
+      263124,
+      294133,
+      236515,
+      280869,
+      302813,
+      306837,
+      219745,
+      143861,
+      337971,
+      260335,
+      242437
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 7,
+      "ep": 1,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "Escape Room",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Album",
+        "label": "",
+        "release_date": "2024-01-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Album",
+        "label": "",
+        "release_date": "2024-01-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "K.T.S.E.",
+        "label": "",
+        "release_date": "2024-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "K.T.S.E.",
+        "label": "",
+        "release_date": "2024-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "VII",
+        "label": "",
+        "release_date": "2014-11-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "VII (Deluxe)",
+        "label": "",
+        "release_date": "2014-11-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "WTP (Remixes)",
+        "label": "",
+        "release_date": "2019-02-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Long Time (Roddy Lima Remix)",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Time (Roddy Lima Remix / SD)",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Time (Kaleena Zanders & No Bills Remix)",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bed of Roses",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Narration by Issa Rae Part 2",
+        "label": "",
+        "release_date": "2025-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Narration by La La",
+        "label": "",
+        "release_date": "2025-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Time",
+        "label": "",
+        "release_date": "2025-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gimme Love (Remix)",
+        "label": "",
+        "release_date": "2024-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Above The Law",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wake Up Love",
+        "label": "",
+        "release_date": "2020-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Made It",
+        "label": "",
+        "release_date": "2020-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bare Wit Me",
+        "label": "",
+        "release_date": "2020-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We Got Love",
+        "label": "",
+        "release_date": "2020-03-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We Got Love",
+        "label": "",
+        "release_date": "2019-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gimme Love",
+        "label": "",
+        "release_date": "2019-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How You Want It?",
+        "label": "",
+        "release_date": "2019-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gonna Love Me (Remix)",
+        "label": "",
+        "release_date": "2018-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Google Me",
+        "label": "",
+        "release_date": "2008-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Kiana Ledé",
+      "Tink",
+      "Queen Naija",
+      "Kehlani",
+      "dvsn",
+      "Lucky Daye",
+      "H.E.R.",
+      "Tone Stith",
+      "Ella Mai",
+      "Jhené Aiko"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1301110,
+    "name": "Teyana Taylor",
+    "profile": "Teyana Taylor (born December 10, 1990) is an American recording artist, actress, dancer, and model from Harlem. In 2007, Taylor signed a record deal with American musician Pharrell Williams' Star Trak Entertainment imprint, before making her first national appearance on MTV's My Super Sweet 16. In 2012, she signed to Kanye West's GOOD Music label through Def Jam, after asking for her release from Star Trak.",
+    "realname": "",
+    "social_urls": [
+      "http://www.teyanataylor.com/ ",
+      "https://www.instagram.com/teyanataylor/?hl=en ",
+      "https://twitter.com/teyanataylor  ",
+      "https://www.facebook.com/teyanataylor",
+      "https://www.youtube.com/user/TeyanaTaylorVEVO"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 29,
+    "digital_only_releases": 71,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, AAC, Comp, 320",
+      "12\", Comp",
+      "12\", Promo",
+      "12xFile, AAC, Mixtape, 256",
+      "20xFile, AAC, Album, 256",
+      "29xFile, FLAC, Mixtape, P/Mixed",
+      "2xCD, Comp",
+      "2xCD, Mixed, Mixtape, Promo",
+      "2xFile, AAC, Single, 256",
+      "2xLP, Mixtape, Unofficial, Red",
+      "2xLP, Unofficial,  Re",
+      "3xCD, Comp, Promo",
+      "4xFile, AAC, EP, 256",
+      "5xFile, AAC, EP, 256",
+      "5xFile, MP3, EP, Mixtape",
+      "6xFile, AAC, EP, 256",
+      "6xFile, MP3, EP",
+      "9xFile, MP3, Mixtape, 320",
+      "CD, Album",
+      "CD, Comp, M/Print, Mixed, Promo",
+      "CD, Comp, Mixed",
+      "CD, Comp, Promo",
+      "CD, Ltd, Mixed, Promo",
+      "CD, Mixed, Mixtape, Promo + CD, Comp, Promo",
+      "CD, Mixtape",
+      "CDr, Album, Promo",
+      "CDr, Comp, Ltd",
+      "CDr, Comp, Mixed, Mixtape",
+      "CDr, Comp, Mixtape",
+      "CDr, Comp, Promo",
+      "CDr, Mixed",
+      "CDr, Mixtape",
+      "CDr, Mixtape, Promo",
+      "CDr, Promo, Smplr",
+      "File, AAC, Single, 256",
+      "File, MP3, Mixed, 320"
+    ],
+    "labels": [
+      "Airtight Record",
+      "Cornerstone Promotion",
+      "Cornerstone Promotion, Cornerstone Promotion",
+      "Deadeye Enterprises",
+      "Def Jam Recordings",
+      "Def Jam Recordings, Mass Appeal, From The Dirt",
+      "Def Jam Recordings, Ruff Ryders, D-Block Records",
+      "ERG Music",
+      "FACT Magazine",
+      "Geffen Records",
+      "Getting Out Our Dreams",
+      "Getting Out Our Dreams, Def Jam Recordings",
+      "HitDisc",
+      "Interscope Records, Geffen, A&M Records",
+      "Maybach Music Group",
+      "Mixtape Millionaires JPN",
+      "Not On Label",
+      "Not On Label (J-Love Self-released)",
+      "Not On Label (Kanye West)",
+      "Not On Label (Trey Songz Self-released)",
+      "Opening Ceremony",
+      "Promo Only",
+      "R4 So Valid",
+      "Rcslum Recordings",
+      "Royalty (2)",
+      "Shakedown Entertainment",
+      "Slip-N-Slide Records",
+      "Tapemasters Inc",
+      "Think Differently Music, Black Stone Of Mecca",
+      "Thump",
+      "UMG Recordings, Inc.",
+      "Universal Music",
+      "Universal Music (Denmark), Ideal Promotion",
+      "Universal Music Group Distribution",
+      "Universal Music Group International",
+      "Your Favorite Song"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Teyana Taylor",
+    "mbid": "c7eb03c1-f8cb-4815-afc8-46df3b253129",
+    "listeners": 652727,
+    "playcount": 12878572,
+    "listener_play_ratio": 19.73,
+    "bio_exists": true,
+    "bio_summary": "Teyana M.J. Taylor (born December 10, 1990) is an American socialite, singer, rapper, choreographer, dancer and actress from Harlem, New York. She was signed to Star Trak Entertainment/Interscope Records and released her debut single, \"Google Me\" in 2007. In 2011, she appeared in Tyler Perry's Madea's Big Happy Family opposite rapper/actor Bow Wow. Now a free agent, Teyana has just released a mixtape: \"The Misunderstanding of Teyana Taylor,\" that is available as a free download on her website:  ",
+    "tags": [
+      "rnb",
+      "Hip-Hop",
+      "pop",
+      "female vocalists",
+      "hip hop"
+    ],
+    "similar_artists": [
+      "Coco Jones",
+      "Summer Walker",
+      "Jazmine Sullivan",
+      "H.E.R.",
+      "Kehlani"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gonna Love Me",
+        "listeners": 361568,
+        "playcount": 3265153
+      },
+      {
+        "name": "Issues/Hold On",
+        "listeners": 198945,
+        "playcount": 1536822
+      },
+      {
+        "name": "Rose in Harlem",
+        "listeners": 118798,
+        "playcount": 828914
+      },
+      {
+        "name": "Bare Wit Me",
+        "listeners": 117711,
+        "playcount": 867114
+      },
+      {
+        "name": "Hurry",
+        "listeners": 80314,
+        "playcount": 424884
+      },
+      {
+        "name": "WTP",
+        "listeners": 79130,
+        "playcount": 523057
+      },
+      {
+        "name": "No Manners",
+        "listeners": 63427,
+        "playcount": 353311
+      },
+      {
+        "name": "3Way",
+        "listeners": 56600,
+        "playcount": 274080
+      },
+      {
+        "name": "Never Would Have Made It",
+        "listeners": 53586,
+        "playcount": 291481
+      },
+      {
+        "name": "Morning",
+        "listeners": 50734,
+        "playcount": 263231
+      }
+    ],
+    "url": "https://www.last.fm/music/Teyana+Taylor"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

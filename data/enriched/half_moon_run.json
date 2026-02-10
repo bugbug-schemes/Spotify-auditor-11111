@@ -1,0 +1,524 @@
+{
+  "artist_name": "Half Moon Run",
+  "artist_id": "half_moon_run",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:00:08.075837+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b48e0b4e-587b-4fb4-9706-78dfd1a5ea92",
+    "type": "Group",
+    "country": "CA",
+    "area": "Canada",
+    "begin_date": "2010-04",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "indie rock",
+      "indie pop",
+      "indie folk"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000469886030"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002953233",
+      "bandcamp": "https://halfmoonrun.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/2940210",
+      "free streaming": "https://www.deezer.com/artist/1059333",
+      "IMDb": "https://www.imdb.com/name/nm6440014/",
+      "last.fm": "https://www.last.fm/music/Half+Moon+Run",
+      "lyrics": "http://muzikum.eu/en/122-12801/half-moon-run/lyrics.html",
+      "myspace": "https://myspace.com/halfmoonrun",
+      "official homepage": "http://www.halfmoonrun.com/",
+      "other databases": "https://www.muziekweb.nl/Link/M00000420271/POPULAR/",
+      "purchase for download": "https://www.qobuz.com/fr-fr/interpreter/half-moon-run/download-streaming-albums",
+      "social network": "https://www.tiktok.com/@halfmoonrunofficial",
+      "soundcloud": "https://soundcloud.com/halfmoonrun",
+      "streaming": "https://www.qobuz.com/fr-fr/interpreter/half-moon-run/download-streaming-albums",
+      "video channel": "https://vimeo.com/halfmoonrun",
+      "wikidata": "https://www.wikidata.org/wiki/Q5641722",
+      "youtube": "https://www.youtube.com/user/halfmoonrunning"
+    },
+    "labels": [
+      "BMG",
+      "Communion Records",
+      "Glassnote",
+      "Indica Records",
+      "BMG Rights Management Canada",
+      "Crystal Math Music",
+      "Anjunadeep",
+      "The Pepper Gang Inc."
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1059333,
+    "name": "Half Moon Run",
+    "nb_fan": 47708,
+    "nb_album": 26,
+    "link": "https://www.deezer.com/artist/1059333",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2c75cc7fe76038c4fb6031300b1dc48b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Full Circle",
+      "Call Me In the Afternoon",
+      "Fire Escape",
+      "Favourite Boy",
+      "Grow into Love",
+      "Loose Ends",
+      "Warmest Regards",
+      "Need It",
+      "Monster",
+      "21 Gun Salute",
+      "Judgement",
+      "You Can Let Go",
+      "Unofferable",
+      "Give Up",
+      "Turn Your Love",
+      "Sun Leads Me On",
+      "Drug You",
+      "It Works Itself Out",
+      "She Wants To Know",
+      "Hotel in Memphis",
+      "The Message",
+      "Alco",
+      "Narrow Margins",
+      "Nerve",
+      "Back on the Road"
+    ],
+    "track_durations": [
+      181,
+      183,
+      174,
+      242,
+      162,
+      181,
+      194,
+      205,
+      156,
+      292,
+      186,
+      186,
+      246,
+      230,
+      241,
+      245,
+      227,
+      247,
+      251,
+      216,
+      171,
+      228,
+      250,
+      197,
+      144
+    ],
+    "track_ranks": [
+      179001,
+      152611,
+      176559,
+      376678,
+      348106,
+      470927,
+      391135,
+      148722,
+      207697,
+      110811,
+      122626,
+      363098,
+      117318,
+      189277,
+      307611,
+      238968,
+      91911,
+      286020,
+      144863,
+      321069,
+      284585,
+      260769,
+      323085,
+      74253,
+      326676
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 5,
+      "ep": 4,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "Salt",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Blemish in the Great Light",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sun Leads Me On",
+        "label": "",
+        "release_date": "2015-10-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dark Eyes",
+        "label": "",
+        "release_date": "2013-06-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Covideo Sessions",
+        "label": "",
+        "release_date": "2020-09-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Another Woman",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Live from the Treehouse",
+        "label": "",
+        "release_date": "2024-03-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Inwards & Onwards",
+        "label": "",
+        "release_date": "2021-06-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Seasons of Change",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shadows of Night (From the Netflix Series The Witcher)",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Message",
+        "label": "",
+        "release_date": "2025-03-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back on the Road",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boots of Spanish Leather",
+        "label": "",
+        "release_date": "2024-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loose Ends",
+        "label": "",
+        "release_date": "2024-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Stop Loving You (Live from the Treehouse)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crawl Back In (Live from the Treehouse)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "9beat (Live from the Treehouse)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "adore u (Live from the Treehouse)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everyone's Moving Out East",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alco",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Can Let Go",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fatal Line",
+        "label": "",
+        "release_date": "2022-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On & On",
+        "label": "",
+        "release_date": "2021-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How Come My Body",
+        "label": "",
+        "release_date": "2021-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jello on my Mind (more sugar mix)",
+        "label": "",
+        "release_date": "2020-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deezer Session",
+        "label": "",
+        "release_date": "2020-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "The National",
+      "alt-J",
+      "Andrew Bird",
+      "Local Natives",
+      "Beirut",
+      "Sharon Van Etten",
+      "Villagers",
+      "Fink",
+      "Band of Horses",
+      "Father John Misty"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2940210,
+    "name": "Half Moon Run",
+    "profile": "Half Moon Run are a Canadian indie rock band based in Montreal. The band members, who previously lived in Comox, British Columbia and in Ottawa, Ontario; are singer Devon Portielje on vocals, guitar and percussion; Conner Molander on vocals, guitar and keyboard; Dylan Phillips on vocals, drums and keyboard; and Isaac Symonds on vocals, percussions, mandolin, keyboard and guitar. The group is known for their heavy use of percussion, and playing multiple instruments during live performances.",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/halfmoonrun",
+      "http://halfmoonrun.bandcamp.com",
+      "https://en.wikipedia.org/wiki/Half_Moon_Run",
+      "https://www.halfmoonrun.com/"
+    ],
+    "members": [
+      "Dylan Phillips",
+      "Isaac Symonds",
+      "Devon Portielje",
+      "Conner Molander"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 22,
+    "digital_only_releases": 17,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "10\", EP",
+      "12xFile, MP3, Comp, 320",
+      "15xFile, AAC, Comp, 256",
+      "19xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp, Dig",
+      "7\", Single, Ltd",
+      "8xFile, MP3, 320",
+      "CD",
+      "CD, Comp",
+      "CD, Comp, Promo, Car",
+      "CD, Comp, Promo, Smplr",
+      "CD, RSD, Comp, Promo",
+      "CD-ROM, Smplr",
+      "CDr, Single, Promo",
+      "File, MP3, Single, 320",
+      "LP, Ltd",
+      "LP, RSD, Comp, Ltd"
+    ],
+    "labels": [
+      "ABKCO Music And Records, Inc.",
+      "Anjunadeep",
+      "Caroline Records",
+      "Communion Records (2)",
+      "Crystal Math Music",
+      "Glassnote (2)",
+      "Glassnote (2), Communion Records (2)",
+      "KBCO",
+      "Les Inrockuptibles",
+      "Not On Label",
+      "Not On Label (Half Moon Run Self-released)",
+      "Silent Recordings",
+      "Universal Music Belgium",
+      "Universal Music Group",
+      "Universal Music TV"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Half Moon Run",
+    "mbid": "b48e0b4e-587b-4fb4-9706-78dfd1a5ea92",
+    "listeners": 526170,
+    "playcount": 9019207,
+    "listener_play_ratio": 17.14,
+    "bio_exists": true,
+    "bio_summary": "Half Moon Run is a band from Ottawa, Ontario and Comox, British Columbia. It was in a practice studio situated in Montreal’s Mile-End district, through the hardships of time constraints and flat-lined bank accounts, that the trio bonded and created their unique sound, fusing together the restless elements of indie, pop and folk with beautiful rhythmic harmonies, delicate guitar lines and a hint of warm electronica.\n\nArmed with solid training and raw talent, they mix and combine their different m",
+    "tags": [
+      "indie",
+      "indie rock",
+      "Canadian",
+      "shoegaze",
+      "rock"
+    ],
+    "similar_artists": [
+      "Patrick Watson",
+      "The Barr Brothers",
+      "Leif Vollebekk",
+      "Balthazar",
+      "Manchester Orchestra"
+    ],
+    "top_tracks": [
+      {
+        "name": "Full Circle",
+        "listeners": 209188,
+        "playcount": 1414057
+      },
+      {
+        "name": "Call Me In The Afternoon",
+        "listeners": 159427,
+        "playcount": 886239
+      },
+      {
+        "name": "Throes",
+        "listeners": 108240,
+        "playcount": 402791
+      },
+      {
+        "name": "Need It",
+        "listeners": 90120,
+        "playcount": 465231
+      },
+      {
+        "name": "Fire Escape",
+        "listeners": 74825,
+        "playcount": 358752
+      },
+      {
+        "name": "Turn Your Love",
+        "listeners": 69905,
+        "playcount": 301465
+      },
+      {
+        "name": "She Wants To Know",
+        "listeners": 61071,
+        "playcount": 376572
+      },
+      {
+        "name": "Nerve",
+        "listeners": 48291,
+        "playcount": 287764
+      },
+      {
+        "name": "No More Losing The War",
+        "listeners": 45082,
+        "playcount": 242346
+      },
+      {
+        "name": "Drug You",
+        "listeners": 44462,
+        "playcount": 247172
+      }
+    ],
+    "url": "https://www.last.fm/music/Half+Moon+Run"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

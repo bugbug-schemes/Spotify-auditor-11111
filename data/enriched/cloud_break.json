@@ -1,0 +1,408 @@
+{
+  "artist_name": "Cloud Break",
+  "artist_id": "cloud_break",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:11:05.311211+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b29a51fc-7424-4cf7-98bc-af5a94e433c1",
+    "type": "Person",
+    "country": "",
+    "area": "Utrecht",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "boom bap",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental"
+    ],
+    "aliases": [
+      "Lars Broekhuijse"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/50103302",
+      "purchase for download": "https://us.7digital.com/artist/cloud-break",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/cloud-break/4723147",
+      "youtube music": "https://music.youtube.com/channel/UC_UNYSEUayd5nYkOAYHmfNA"
+    },
+    "labels": [
+      "Fortune Cookie Records",
+      "purity label",
+      "Retro Jungle",
+      "Chill Beats Records",
+      "Effortless Audio"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 50103302,
+    "name": "Cloud Break",
+    "nb_fan": 31,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/50103302",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1c9f33dc115533a8244c67fdd946c191/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Banks",
+      "Full Skies",
+      "Teo",
+      "Theo Aabel"
+    ],
+    "contributor_roles": {
+      "Full Skies": [
+        "Main"
+      ],
+      "Theo Aabel": [
+        "Main"
+      ],
+      "Teo": [
+        "Main"
+      ],
+      "Banks": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Nimbus",
+      "Lakefront",
+      "Fields",
+      "Lunar",
+      "Day Drifting",
+      "Our Youth"
+    ],
+    "track_durations": [
+      172,
+      165,
+      116,
+      115,
+      154,
+      127
+    ],
+    "track_ranks": [
+      98454,
+      31492,
+      53464,
+      26146,
+      30184,
+      100000
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 2,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "Transitions",
+        "label": "",
+        "release_date": "2018-08-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Selene",
+        "label": "",
+        "release_date": "2022-08-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Above the Clouds",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Our Youth",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Warmth",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bubbles",
+        "label": "",
+        "release_date": "2025-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reverse Thoughts",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Motions",
+        "label": "",
+        "release_date": "2025-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evergreen",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Reflections",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trip",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nimbus",
+        "label": "",
+        "release_date": "2022-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lunar",
+        "label": "",
+        "release_date": "2022-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Talk",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breakaway",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Above the Clouds",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Birds Eye View",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stories",
+        "label": "",
+        "release_date": "2021-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weightless",
+        "label": "",
+        "release_date": "2021-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lakefront",
+        "label": "",
+        "release_date": "2021-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fields",
+        "label": "",
+        "release_date": "2020-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Day Drifting",
+        "label": "",
+        "release_date": "2020-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Isolation",
+        "label": "",
+        "release_date": "2020-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Without Me",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Failsafe",
+        "label": "",
+        "release_date": "2019-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12803045,
+    "name": "Cloud Break",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP"
+    ],
+    "labels": [
+      "Retro Jungle"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cloud Break",
+    "mbid": "b29a51fc-7424-4cf7-98bc-af5a94e433c1",
+    "listeners": 13740,
+    "playcount": 65224,
+    "listener_play_ratio": 4.75,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cloud+Break\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mellowy",
+      "JK the Sage",
+      "Fohrenbach",
+      "Tah.",
+      "isaac."
+    ],
+    "top_tracks": [
+      {
+        "name": "Mantle",
+        "listeners": 2862,
+        "playcount": 4820
+      },
+      {
+        "name": "Weightless",
+        "listeners": 2502,
+        "playcount": 8067
+      },
+      {
+        "name": "Above the Clouds",
+        "listeners": 2217,
+        "playcount": 7185
+      },
+      {
+        "name": "Breakaway",
+        "listeners": 1868,
+        "playcount": 5227
+      },
+      {
+        "name": "Unwind",
+        "listeners": 1469,
+        "playcount": 4134
+      },
+      {
+        "name": "Birds Eye View",
+        "listeners": 1461,
+        "playcount": 4473
+      },
+      {
+        "name": "Talk",
+        "listeners": 958,
+        "playcount": 2482
+      },
+      {
+        "name": "Lonely Boat",
+        "listeners": 897,
+        "playcount": 2851
+      },
+      {
+        "name": "Isolation",
+        "listeners": 877,
+        "playcount": 3318
+      },
+      {
+        "name": "Lavender Sky",
+        "listeners": 822,
+        "playcount": 2080
+      }
+    ],
+    "url": "https://www.last.fm/music/Cloud+Break"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

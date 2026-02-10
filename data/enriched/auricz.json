@@ -1,0 +1,121 @@
+{
+  "artist_name": "Auricz",
+  "artist_id": "auricz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:18:21.248365+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Auricz', got 'Agriculture'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Auricz",
+    "mbid": "",
+    "listeners": 23919,
+    "playcount": 90904,
+    "listener_play_ratio": 3.8,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Auricz\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Avelio",
+      "Aisher Rami",
+      "Waves of life",
+      "Joseph Rain",
+      "I thought about time"
+    ],
+    "top_tracks": [
+      {
+        "name": "Slow breathing",
+        "listeners": 8869,
+        "playcount": 26935
+      },
+      {
+        "name": "Gong like wind",
+        "listeners": 8865,
+        "playcount": 38884
+      },
+      {
+        "name": "Cloches d'Arbres",
+        "listeners": 4452,
+        "playcount": 13876
+      },
+      {
+        "name": "Westerfall",
+        "listeners": 1679,
+        "playcount": 5691
+      },
+      {
+        "name": "Seiun",
+        "listeners": 1492,
+        "playcount": 3750
+      },
+      {
+        "name": "Nuexos",
+        "listeners": 849,
+        "playcount": 1555
+      },
+      {
+        "name": "John Comes Around",
+        "listeners": 55,
+        "playcount": 66
+      },
+      {
+        "name": "On Approach to the Ring",
+        "listeners": 35,
+        "playcount": 115
+      },
+      {
+        "name": "Lunar cycle",
+        "listeners": 9,
+        "playcount": 12
+      },
+      {
+        "name": "Velvet",
+        "listeners": 9,
+        "playcount": 12
+      }
+    ],
+    "url": "https://www.last.fm/music/Auricz"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

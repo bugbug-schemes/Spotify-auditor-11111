@@ -1,0 +1,576 @@
+{
+  "artist_name": "Y.V.E. 48",
+  "artist_id": "y_v_e__48",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:03:03.422075+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c2ddf453-e778-4579-8a8b-0688b7362480",
+    "type": "Group",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3960245",
+      "free streaming": "https://www.deezer.com/artist/5894348",
+      "social network": "https://www.instagram.com/yve48music/",
+      "soundcloud": "https://soundcloud.com/y-v-e-48",
+      "streaming": "https://tidal.com/artist/5684948"
+    },
+    "labels": [
+      "Y.V.E. 48",
+      "Music for Dreamers",
+      "[no label]",
+      "The Bearded Man",
+      "disco:wax"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5894348,
+    "name": "Y.V.E. 48",
+    "nb_fan": 1758,
+    "nb_album": 44,
+    "link": "https://www.deezer.com/artist/5894348",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/278ce19e8464f793b13e58a4cf4b5d4a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Gabriel Benjamin",
+      "Hier",
+      "Johnny Manuel",
+      "LOE",
+      "LissA",
+      "Nick Yume",
+      "Parula",
+      "Tom Ferry"
+    ],
+    "contributor_roles": {
+      "Gabriel Benjamin": [
+        "Featured"
+      ],
+      "Parula": [
+        "Featured"
+      ],
+      "Nick Yume": [
+        "Featured"
+      ],
+      "LOE": [
+        "Featured"
+      ],
+      "Hier": [
+        "Featured"
+      ],
+      "LissA": [
+        "Featured"
+      ],
+      "Tom Ferry": [
+        "Featured"
+      ],
+      "Johnny Manuel": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Wicked Game",
+      "Close To Me",
+      "Without You",
+      "Fast Car",
+      "Let You Know",
+      "Days Go By",
+      "Tale of Rise and Fall (feat. Parula)",
+      "By My Side",
+      "On Your Own (feat. Nick Yume)",
+      "All This Time",
+      "Alone With You",
+      "Waiting for You",
+      "Right Here Right Now",
+      "Let You Know (Summer Edit)",
+      "Summertime Sadness",
+      "On The Road (Original Mix)",
+      "Would You",
+      "On The Road",
+      "Better Off Alone",
+      "Nothing to Say (feat. LissA)",
+      "Alone with You (feat. Loé) (Tom Ferry Remix)",
+      "Records (feat. Hier)",
+      "You've Got The Love",
+      "Overnight",
+      "Big Sur"
+    ],
+    "track_durations": [
+      166,
+      155,
+      183,
+      157,
+      173,
+      159,
+      152,
+      139,
+      211,
+      140,
+      153,
+      152,
+      149,
+      149,
+      142,
+      278,
+      146,
+      203,
+      173,
+      206,
+      164,
+      214,
+      147,
+      173,
+      192
+    ],
+    "track_ranks": [
+      329337,
+      288430,
+      116280,
+      356720,
+      204180,
+      332499,
+      226104,
+      163122,
+      193854,
+      239756,
+      316708,
+      287809,
+      255229,
+      315106,
+      217934,
+      3349,
+      208716,
+      348454,
+      183437,
+      222106,
+      37150,
+      189961,
+      297905,
+      68821,
+      40093
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 4,
+      "single": 40
+    },
+    "albums": [
+      {
+        "title": "The Remixes",
+        "label": "",
+        "release_date": "2020-03-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Records (Remixes)",
+        "label": "",
+        "release_date": "2018-01-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "All You Need (Remixes)",
+        "label": "",
+        "release_date": "2015-05-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "All You Need",
+        "label": "",
+        "release_date": "2014-12-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "By My Side (Summer Edit)",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Find My Way",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Would You (Summer Edit)",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feel So Close",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Right Here Right Now",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By My Side",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All This Time",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summertime Sadness",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Would You",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Close To Me",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There For You",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You've Got The Love",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let You Know (Summer Edit)",
+        "label": "",
+        "release_date": "2021-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Time",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wicked Game",
+        "label": "",
+        "release_date": "2021-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let You Know",
+        "label": "",
+        "release_date": "2020-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Life (Y.V.E. 48 Remix)",
+        "label": "",
+        "release_date": "2020-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fast Car",
+        "label": "",
+        "release_date": "2020-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Days Go By",
+        "label": "",
+        "release_date": "2020-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let You Know",
+        "label": "",
+        "release_date": "2020-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holding On",
+        "label": "",
+        "release_date": "2020-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waiting for You",
+        "label": "",
+        "release_date": "2020-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alone with You (feat. Loé)",
+        "label": "",
+        "release_date": "2020-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Along the Coast",
+        "label": "",
+        "release_date": "2020-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better Off Alone",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alone With You",
+        "label": "",
+        "release_date": "2019-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Tep No",
+      "SRTW",
+      "Adon",
+      "Sons Of Maria",
+      "Sole Sole",
+      "Thomas Jack",
+      "Möwe",
+      "Eklo",
+      "Campsite Dream",
+      "Sébastien"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3960245,
+    "name": "Y.V.E. 48",
+    "profile": "Electronic music DJ & producer duo from Berlin, Germany\r\n\r\nContact info:\r\ne-mail: office@yve48.com",
+    "realname": "",
+    "social_urls": [
+      "https://soundcloud.com/y-v-e-48",
+      "https://www.facebook.com/yve48music",
+      "https://www.instagram.com/yve48music/"
+    ],
+    "members": [
+      "Rafael Schmid",
+      "Leo Schmid"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 26,
+    "digital_only_releases": 23,
+    "total_releases": 49,
+    "formats": [
+      "",
+      "10xFile, MP3, Comp, 320",
+      "15xFile, MP3, Comp, 320",
+      "17xFile, MP3, Comp, 320",
+      "20xFile, MP3, Comp, 320",
+      "25xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp + CD, Comp, Mixed",
+      "2xCD, Comp + CD, Mixed",
+      "2xCD, Comp, Mixed",
+      "2xCD, Mixed",
+      "2xFile, AAC, Single, 256",
+      "3xCD, Comp",
+      "3xCD, Comp, Mixed",
+      "3xCD, Comp, Mixed, Dig",
+      "3xCD, Comp, P/Mixed",
+      "40xFile, MP3, Comp, 320",
+      "45xFile, MP3, Comp, 320 + 3xFile, MP3, Mixed, 320",
+      "4xCD, Comp",
+      "5xCD, Comp",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Ltd, Promo",
+      "CD, Comp, Mixed, Exp",
+      "CDr, Promo",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Armada (4)",
+      "Armada Digital",
+      "Armada Music B.V.",
+      "Club Tools",
+      "Dee Jay Mix Club",
+      "Do It Yourself Multimedia Group",
+      "Garuda",
+      "Hed Kandi, Sony Music",
+      "I Love This Sound",
+      "Kontor Records",
+      "Kontor Records GmbH",
+      "Lydia Records",
+      "Magic Records",
+      "More Music And Media",
+      "More Music And Media, AL!VE",
+      "More Music And Media, Mix!",
+      "Sony Music",
+      "Sony Music Entertainment Canada Inc.",
+      "The Bearded Man",
+      "The Bearded Man, Armada Digital",
+      "The Bearded Man, Armada Various",
+      "Wagram Music",
+      "disco:wax"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Y.V.E. 48",
+    "mbid": "c2ddf453-e778-4579-8a8b-0688b7362480",
+    "listeners": 170127,
+    "playcount": 1373580,
+    "listener_play_ratio": 8.07,
+    "bio_exists": true,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Y.V.E.+48\">Read more on Last.fm</a>",
+    "tags": [
+      "deep house",
+      "House",
+      "soul",
+      "Berlin",
+      "electronic"
+    ],
+    "similar_artists": [
+      "SRTW",
+      "Mauve",
+      "Cale",
+      "Lucas Estrada",
+      "PHURS"
+    ],
+    "top_tracks": [
+      {
+        "name": "Montrose Ave",
+        "listeners": 28864,
+        "playcount": 87640
+      },
+      {
+        "name": "Let You Know - Summer Edit",
+        "listeners": 22530,
+        "playcount": 75534
+      },
+      {
+        "name": "Would You",
+        "listeners": 21994,
+        "playcount": 84202
+      },
+      {
+        "name": "Alone with You",
+        "listeners": 21351,
+        "playcount": 85233
+      },
+      {
+        "name": "Waiting for You",
+        "listeners": 20603,
+        "playcount": 72835
+      },
+      {
+        "name": "By My Side",
+        "listeners": 15933,
+        "playcount": 60668
+      },
+      {
+        "name": "You've Got The Love",
+        "listeners": 15421,
+        "playcount": 48251
+      },
+      {
+        "name": "There For You",
+        "listeners": 14230,
+        "playcount": 40815
+      },
+      {
+        "name": "All This Time",
+        "listeners": 13368,
+        "playcount": 49571
+      },
+      {
+        "name": "Let You Know",
+        "listeners": 12533,
+        "playcount": 43301
+      }
+    ],
+    "url": "https://www.last.fm/music/Y.V.E.+48"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

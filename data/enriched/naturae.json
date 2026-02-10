@@ -1,0 +1,160 @@
+{
+  "artist_name": "Naturae",
+  "artist_id": "naturae",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:57:17.989068+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c8124e7f-6532-4cb1-98af-2329ffad1c3b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/12231235",
+      "purchase for download": "https://www.beatport.com/artist/naturae/1039325"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Naturae', got 'Bob Marley & The Wailers'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12231235,
+    "name": "Naturae",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 5,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "16xFile, MP3, Comp, 320",
+      "40xFile, MP3, Comp, 320",
+      "50xFile, MP3, Comp, 320"
+    ],
+    "labels": [
+      "Forward Music (6)",
+      "Rynth",
+      "Rynth, Rynth"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Naturae",
+    "mbid": "",
+    "listeners": 21571,
+    "playcount": 80572,
+    "listener_play_ratio": 3.74,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Naturae\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Drifting Streams",
+      "Nia Butler",
+      "Hinterländer",
+      "Healing Nature FX",
+      "Earthly Sounds"
+    ],
+    "top_tracks": [
+      {
+        "name": "Overflowing Stream",
+        "listeners": 16209,
+        "playcount": 55736
+      },
+      {
+        "name": "Calmed by the Rain",
+        "listeners": 4458,
+        "playcount": 18358
+      },
+      {
+        "name": "Sundown in the Tropics",
+        "listeners": 754,
+        "playcount": 1648
+      },
+      {
+        "name": "Tropical Droplets",
+        "listeners": 565,
+        "playcount": 1519
+      },
+      {
+        "name": "Morning Pour",
+        "listeners": 454,
+        "playcount": 2276
+      },
+      {
+        "name": "Muffled Rain",
+        "listeners": 241,
+        "playcount": 487
+      },
+      {
+        "name": "Landslide",
+        "listeners": 17,
+        "playcount": 27
+      },
+      {
+        "name": "Forest Peace: Calming Sounds of Trees and Birds",
+        "listeners": 15,
+        "playcount": 19
+      },
+      {
+        "name": "Roof Rain",
+        "listeners": 14,
+        "playcount": 15
+      },
+      {
+        "name": "Falls",
+        "listeners": 8,
+        "playcount": 19
+      }
+    ],
+    "url": "https://www.last.fm/music/Naturae"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

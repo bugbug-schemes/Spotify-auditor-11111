@@ -1,0 +1,161 @@
+{
+  "artist_name": "Red Ripples",
+  "artist_id": "red_ripples",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:38:58.264984+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Red Ripples', got 'Red Apples'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 60606,
+    "name": "Clyde",
+    "profile": "Clyde, is a Derby original. In his teens he was in several local bands, and it's noteworthy that as part of The Underdogs he supported UK chart toppers Dr & the Medics (The Underdogs were much better, even if Clyde's axe was feeding back like a mutha fu**a). Clyde also played an integral role in the setting up of Mantis Recordings, and remixed Atjazz on the first ever release. He made further musical ripples with his remix of Mikeal Fitzpatrick's ‘Wish' on Yellow Productions, and appeared on Mantis again, this time with a shadowy and anxious mix of Kimbu Kimra's ‘Raise the Dead'. \r\n\r\nAfter spending years trying to convince Clyde to give the world more of his distinct style of music, Mantis finally persuaded him to write an album, by bribing him with food and breasts. The debut single 'Serve it Up' featured San Francisco-based rapper Capitol A who's flowing rhymes told a familiar tale of a night out at the club. It certainly struck a chord with many dancefloors, both musically and lyric",
+    "realname": "Clive Astin",
+    "social_urls": [
+      "https://www.instagram.com/clyde_beats/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 29,
+    "digital_only_releases": 30,
+    "total_releases": 59,
+    "formats": [
+      "",
+      "12\"",
+      "12\", Promo, Smplr",
+      "12\", RE",
+      "12xFile, MP3, 320",
+      "2x12\", Comp",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "2xCD, Mixed",
+      "2xCD, Mixed + CD, Comp",
+      "2xCD, Mixed, Promo",
+      "4xCD, Comp",
+      "4xFile, MP3, EP",
+      "4xFile, MP3, Single, 320",
+      "5xCD, Mixed",
+      "6xFile, MP3, Single, 320",
+      "9xFile, MP3, EP, 320",
+      "Acetate, 12\"",
+      "CD, Comp",
+      "CD, Comp, Mixed",
+      "CD, Mixed",
+      "CD, Mixed, Promo",
+      "CD, Promo",
+      "CD-ROM, Comp, Mixed, MP3",
+      "CDr, Comp",
+      "CDr, Comp, Promo",
+      "File, AIFF, ALAC, FLAC, MP3, WAV",
+      "File, MP3",
+      "File, MP3, Mixed, 160"
+    ],
+    "labels": [
+      "Atjazz Record Company",
+      "BBE",
+      "BMG New Zealand Ltd.",
+      "BigCityBeats",
+      "Espiral (2), Colmillo (2)",
+      "Farside",
+      "Floating Point Music",
+      "ITH Records",
+      "Jockey Slut",
+      "Knife Edge",
+      "M8MC",
+      "M8MC, Mantis Recordings",
+      "MacroVision Records, Nitrous Promotion Group",
+      "Mantis Recordings",
+      "Mantis Recordings, Mantis Recordings",
+      "Ministry Of Sound",
+      "Mood Media",
+      "OM Records",
+      "Resident Advisor",
+      "Sine Language Records",
+      "Solid Records (6)",
+      "Sonar Kollektiv",
+      "Soul Candi",
+      "Straight Ahead",
+      "Subcontact",
+      "Tearbridge Records",
+      "Time Records",
+      "V2, V2",
+      "XMAG"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Red Ripples",
+    "mbid": "",
+    "listeners": 9325,
+    "playcount": 44353,
+    "listener_play_ratio": 4.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Red+Ripples\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "A Clear Path",
+      "Velvet Reverie",
+      "Arya Shae",
+      "Dorian Froste",
+      "efrim"
+    ],
+    "top_tracks": [
+      {
+        "name": "Time and Tide",
+        "listeners": 7318,
+        "playcount": 37602
+      },
+      {
+        "name": "Sami",
+        "listeners": 1353,
+        "playcount": 3849
+      },
+      {
+        "name": "Evolving",
+        "listeners": 1304,
+        "playcount": 2902
+      }
+    ],
+    "url": "https://www.last.fm/music/Red+Ripples"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,397 @@
+{
+  "artist_name": "pete castle",
+  "artist_id": "pete_castle",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:28:36.168603+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "90bf871d-fc26-40d6-b56b-429c36a6a1e4",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Pieter Anton Kasteleyn"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/10011086",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/pete-castle/9357798",
+      "soundcloud": "https://soundcloud.com/petecastle-sc",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/pete-castle/9357798",
+      "youtube music": "https://music.youtube.com/channel/UCZFGZpNGFBtf9B0t0kOT_Pg"
+    },
+    "labels": [
+      "Chill Ghost",
+      "Bougie Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 10011086,
+    "name": "Pete Castle",
+    "nb_fan": 7,
+    "nb_album": 26,
+    "link": "https://www.deezer.com/artist/10011086",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d242857f474c5dfe377c30809ccb44bb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "lightfades"
+    ],
+    "contributor_roles": {
+      "lightfades": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "drifting on",
+      "when the skies clear",
+      "what remains",
+      "where we were"
+    ],
+    "track_durations": [
+      131,
+      122,
+      123,
+      122
+    ],
+    "track_ranks": [
+      8837,
+      26339,
+      91007,
+      15432
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Rambling Robin",
+        "label": "",
+        "release_date": "2021-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "a place to rest",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "olas",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Dimension",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "after today",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "between the lines",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "far from here",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "what remains",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "last light",
+        "label": "",
+        "release_date": "2025-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "hiding place",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "in an open field",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Free Again",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "through the fog",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "when the skies clear",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "until then",
+        "label": "",
+        "release_date": "2025-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "without a trace",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "chasing shadows",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "moments like these",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "in passing",
+        "label": "",
+        "release_date": "2025-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "stepping stones",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "drifting on",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the dawn is yours",
+        "label": "",
+        "release_date": "2025-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "still growing",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "where we were",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the space within",
+        "label": "",
+        "release_date": "2025-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "comfortably waiting",
+        "label": "",
+        "release_date": "2025-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3748096,
+    "name": "Pete Castle",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 8,
+    "digital_only_releases": 2,
+    "total_releases": 10,
+    "formats": [
+      "CD, Album",
+      "Cass",
+      "Cass, Album",
+      "LP",
+      "LP, Album",
+      "LP, Album, Mono"
+    ],
+    "labels": [
+      "Burlington",
+      "Dingle's Records",
+      "Mizon",
+      "Steel Carpet Music",
+      "VFM"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pete Castle",
+    "mbid": "",
+    "listeners": 16157,
+    "playcount": 44915,
+    "listener_play_ratio": 2.78,
+    "bio_exists": true,
+    "bio_summary": "There is more than one artist with this name, including: \n1) a British folk singer and storyteller; \n2) a musician born Pieter Anton Kasteleyn. \n\n1) Pete Castle is a British folk singer and storyteller. He is based in Belper, Derbyshire. He released \"The Hard Times Of Old England\" in 1979. \n\n2) Pete Castle is a musician born Pieter Anton Kasteleyn. <a href=\"https://www.last.fm/music/Pete+Castle\">Read more on Last.fm</a>",
+    "tags": [
+      "folk"
+    ],
+    "similar_artists": [
+      "Lil Francky",
+      "Plaxon",
+      "Mareel",
+      "Mike Nora",
+      "Sunny Léo"
+    ],
+    "top_tracks": [
+      {
+        "name": "in an open field",
+        "listeners": 11304,
+        "playcount": 24287
+      },
+      {
+        "name": "until then",
+        "listeners": 3407,
+        "playcount": 11567
+      },
+      {
+        "name": "the space within",
+        "listeners": 558,
+        "playcount": 1043
+      },
+      {
+        "name": "the dawn is yours",
+        "listeners": 543,
+        "playcount": 1158
+      },
+      {
+        "name": "drifting on",
+        "listeners": 495,
+        "playcount": 823
+      },
+      {
+        "name": "through the fog",
+        "listeners": 463,
+        "playcount": 771
+      },
+      {
+        "name": "without a trace",
+        "listeners": 356,
+        "playcount": 639
+      },
+      {
+        "name": "stepping stones",
+        "listeners": 356,
+        "playcount": 615
+      },
+      {
+        "name": "comfortably waiting",
+        "listeners": 346,
+        "playcount": 568
+      },
+      {
+        "name": "where we were",
+        "listeners": 335,
+        "playcount": 676
+      }
+    ],
+    "url": "https://www.last.fm/music/Pete+Castle"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

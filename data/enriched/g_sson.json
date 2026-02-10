@@ -1,0 +1,201 @@
+{
+  "artist_name": "G:sson",
+  "artist_id": "g_sson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:45:18.025308+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "82e3714e-ff60-42a9-9c24-609270781cf5",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "instrumental",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "boom bap",
+      "hip hop",
+      "chillwave",
+      "downtempo"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/124570282",
+      "purchase for download": "https://music.apple.com/us/artist/1555454593",
+      "streaming": "https://tidal.com/artist/23675202"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 124570282,
+    "name": "G:sson",
+    "nb_fan": 8,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/124570282",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/620b90c876d8c445bc5c490ece474f08/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Shifting Sands"
+    ],
+    "track_durations": [
+      147
+    ],
+    "track_ranks": [
+      87704
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Lullaby",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shifting Sands",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bye Felicia!",
+        "label": "",
+        "release_date": "2021-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5903890,
+    "name": "Gurra G:sson",
+    "profile": "Artist and song-writer. Tarre and Glenn play with Gurra G:sson sometimes.",
+    "realname": "Gustaf Löwenstein, Martin Taranger, Glenn Jonsson",
+    "social_urls": [
+      "https://www.facebook.com/gurragsson",
+      "https://soundcloud.com/gurragsson",
+      "https://open.spotify.com/artist/0rW3r9Gv66HrxWTxpdvjmJ?si=aleqOkaPTTmVDz9hRBlppQ",
+      "https://www.youtube.com/@gurragsson",
+      "https://mailchi.mp/4782ec0d3f63/gurra-gsson",
+      "https://www.tiktok.com/@gurra_gsson",
+      "https://twitter.com/glwenstein",
+      "https://myspace.com/gurragsson"
+    ],
+    "members": [
+      "Martin Taranger",
+      "Glenn Jonsson",
+      "Gustaf Löwenstein"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 5,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "26xFile, MP3",
+      "VHS"
+    ],
+    "labels": [
+      "GURRA G:SSON",
+      "Gurra G:sson"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "G:sson",
+    "mbid": "82e3714e-ff60-42a9-9c24-609270781cf5",
+    "listeners": 65277,
+    "playcount": 173631,
+    "listener_play_ratio": 2.66,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/G:sson\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "lofi"
+    ],
+    "similar_artists": [
+      "SLOW BOUNCE",
+      "Audio Phill",
+      "Zatsuma",
+      "Chill Def",
+      "M.I Hakone"
+    ],
+    "top_tracks": [
+      {
+        "name": "Shifting Sands",
+        "listeners": 55784,
+        "playcount": 131034
+      },
+      {
+        "name": "Lullaby",
+        "listeners": 12134,
+        "playcount": 24167
+      },
+      {
+        "name": "Bye Felicia!",
+        "listeners": 4216,
+        "playcount": 10640
+      },
+      {
+        "name": "Clogs And Pods",
+        "listeners": 3438,
+        "playcount": 7790
+      }
+    ],
+    "url": "https://www.last.fm/music/G:sson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

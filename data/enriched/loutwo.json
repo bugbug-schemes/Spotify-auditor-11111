@@ -1,0 +1,142 @@
+{
+  "artist_name": "loutwo",
+  "artist_id": "loutwo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:22:45.971450+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "960f20be-4292-493a-a4f8-5b1c7f2aa451",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/300034641",
+      "streaming": "https://tidal.com/artist/53628435"
+    },
+    "labels": [
+      "Chill Caterpillar"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'loutwo', got 'Pluto'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "loutwo",
+    "mbid": "",
+    "listeners": 53592,
+    "playcount": 193305,
+    "listener_play_ratio": 3.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/loutwo\">Read more on Last.fm</a>",
+    "tags": [
+      "lofi"
+    ],
+    "similar_artists": [
+      "Mellow Mirror",
+      "Lil Leaf",
+      "Breezonic",
+      "Sleepr Cell",
+      "Floating Basket"
+    ],
+    "top_tracks": [
+      {
+        "name": "blizz",
+        "listeners": 25148,
+        "playcount": 58834
+      },
+      {
+        "name": "if you do",
+        "listeners": 18429,
+        "playcount": 42618
+      },
+      {
+        "name": "far far away",
+        "listeners": 16812,
+        "playcount": 43156
+      },
+      {
+        "name": "aromatics",
+        "listeners": 15347,
+        "playcount": 32867
+      },
+      {
+        "name": "thrift shoppin",
+        "listeners": 3968,
+        "playcount": 7846
+      },
+      {
+        "name": "mango mood",
+        "listeners": 1921,
+        "playcount": 3580
+      },
+      {
+        "name": "afternoon moon",
+        "listeners": 1684,
+        "playcount": 2903
+      },
+      {
+        "name": "guarana",
+        "listeners": 620,
+        "playcount": 1187
+      },
+      {
+        "name": "total eclipse",
+        "listeners": 89,
+        "playcount": 108
+      },
+      {
+        "name": "vibrant hues",
+        "listeners": 62,
+        "playcount": 81
+      }
+    ],
+    "url": "https://www.last.fm/music/loutwo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

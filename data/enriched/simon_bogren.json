@@ -1,0 +1,111 @@
+{
+  "artist_name": "Simon Bogren",
+  "artist_id": "simon_bogren",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:04:55.851257+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Simon Bogren', got 'Simion Bogdan-Mihai'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Simon Bogren",
+    "mbid": "",
+    "listeners": 2292,
+    "playcount": 22790,
+    "listener_play_ratio": 9.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Simon+Bogren\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Silas Ash",
+      "Nigel Bloom",
+      "Elin Noa",
+      "Tiny Hush",
+      "Tiny Tunesmiths"
+    ],
+    "top_tracks": [
+      {
+        "name": "Kitty's Nest",
+        "listeners": 1472,
+        "playcount": 8981
+      },
+      {
+        "name": "Peppa's Sleepytime",
+        "listeners": 878,
+        "playcount": 6482
+      },
+      {
+        "name": "Come Closer",
+        "listeners": 521,
+        "playcount": 5028
+      },
+      {
+        "name": "Birdie Lullaby",
+        "listeners": 494,
+        "playcount": 2280
+      },
+      {
+        "name": "Bear Crawl",
+        "listeners": 9,
+        "playcount": 15
+      },
+      {
+        "name": "My Forever Friend",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Elmo's Starlight",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Teddy Cuddles",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Simon+Bogren"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

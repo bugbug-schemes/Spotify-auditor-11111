@@ -1,0 +1,138 @@
+{
+  "artist_name": "Elberry",
+  "artist_id": "elberry",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:35:16.699104+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Elberry', got 'El Gerry Oficial'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15593121,
+    "name": "Jon Elberry",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "not on label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elberry",
+    "mbid": "",
+    "listeners": 6931,
+    "playcount": 34799,
+    "listener_play_ratio": 5.02,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elberry\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "passingtime",
+      "Relaxing The Mind",
+      "Zen Sound Bath",
+      "Wildlife Recordings",
+      "Our Glorious Nature"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Millpond XI",
+        "listeners": 4966,
+        "playcount": 20019
+      },
+      {
+        "name": "The Millpond VI",
+        "listeners": 1755,
+        "playcount": 3880
+      },
+      {
+        "name": "The Millpond VII",
+        "listeners": 1658,
+        "playcount": 3580
+      },
+      {
+        "name": "The Millpond VIII",
+        "listeners": 1258,
+        "playcount": 3157
+      },
+      {
+        "name": "The Millpond XIV",
+        "listeners": 1072,
+        "playcount": 2343
+      },
+      {
+        "name": "Summer's Dusk I",
+        "listeners": 835,
+        "playcount": 1595
+      },
+      {
+        "name": "Summer's Dusk IV",
+        "listeners": 90,
+        "playcount": 161
+      },
+      {
+        "name": "The Millpond II",
+        "listeners": 5,
+        "playcount": 10
+      },
+      {
+        "name": "The Millpond I",
+        "listeners": 5,
+        "playcount": 9
+      },
+      {
+        "name": "The Millpond III",
+        "listeners": 5,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Elberry"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

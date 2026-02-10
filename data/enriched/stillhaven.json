@@ -1,0 +1,222 @@
+{
+  "artist_name": "Stillhaven",
+  "artist_id": "stillhaven",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:21:17.837951+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 120112792,
+    "name": "StillHaven",
+    "nb_fan": 6,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/120112792",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4ff19d729e0ce5d26c100f93b4cbf863/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Aether",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Outlines",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Low Tide",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Centered",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tidelands",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Dawn",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frostline",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breaking Barriers",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Singularity",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8106811,
+    "name": "Stillhaven",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp"
+    ],
+    "labels": [
+      "Rock Out Records (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "stillhaven",
+    "mbid": "",
+    "listeners": 4723,
+    "playcount": 10833,
+    "listener_play_ratio": 2.29,
+    "bio_exists": true,
+    "bio_summary": "Recipe For stillhaven:\nTake a town called, Mahwah, in NJ\nAdd:\nRicci Castro - Vocals\nSimon Dwyer - Guitar\nJesse Messineo- Guitar\nArash Darian - Bass\nMike Nicholas - Drums\nMix it up, and out comes !!!\n <a href=\"https://www.last.fm/music/stillhaven\">Read more on Last.fm</a>",
+    "tags": [
+      "post-hardcore",
+      "Tri-State"
+    ],
+    "similar_artists": [
+      "The Still Hour",
+      "Lún",
+      "elveper",
+      "AtmoLife",
+      "Owen Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Aether",
+        "listeners": 4279,
+        "playcount": 7130
+      },
+      {
+        "name": "Quiet Dawn",
+        "listeners": 221,
+        "playcount": 596
+      },
+      {
+        "name": "My Mechanics of Nothing",
+        "listeners": 64,
+        "playcount": 316
+      },
+      {
+        "name": "veins are teleports",
+        "listeners": 63,
+        "playcount": 489
+      },
+      {
+        "name": "Break Her Well",
+        "listeners": 58,
+        "playcount": 254
+      },
+      {
+        "name": "Strings from below",
+        "listeners": 46,
+        "playcount": 435
+      },
+      {
+        "name": "Outside the Gray",
+        "listeners": 46,
+        "playcount": 229
+      },
+      {
+        "name": "this energy's evolving",
+        "listeners": 40,
+        "playcount": 256
+      },
+      {
+        "name": "silver butterfly",
+        "listeners": 26,
+        "playcount": 128
+      },
+      {
+        "name": "This energys evolving",
+        "listeners": 25,
+        "playcount": 163
+      }
+    ],
+    "url": "https://www.last.fm/music/stillhaven"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

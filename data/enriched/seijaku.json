@@ -1,0 +1,151 @@
+{
+  "artist_name": "Seijaku",
+  "artist_id": "seijaku",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:58:21.328594+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Seijaku', got 'Ami Faku'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1982348,
+    "name": "静寂",
+    "profile": "",
+    "realname": "Seijaku (Transcription)",
+    "social_urls": [],
+    "members": [
+      "Keiji Haino",
+      "Mitsuru Nasuno",
+      "Yoshimitsu Ichiraku"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 1,
+    "total_releases": 6,
+    "formats": [
+      "2xCD, Album",
+      "CD, Album",
+      "CDr, Ltd, Promo",
+      "DVDr, DVD-V, Promo"
+    ],
+    "labels": [
+      "Doubtmusic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Seijaku",
+    "mbid": "",
+    "listeners": 20577,
+    "playcount": 82696,
+    "listener_play_ratio": 4.02,
+    "bio_exists": true,
+    "bio_summary": "Correct artist name: 静寂\n\nKeiji Haino (灰野敬二) with Mitsuru Nasuno on bass and Yoshimitsu Ichiraku on drums. They released two studio albums in 2010. <a href=\"https://www.last.fm/music/Seijaku\">Read more on Last.fm</a>",
+    "tags": [
+      "experimental",
+      "Avant-Garde",
+      "noise-rock",
+      "rock",
+      "pure blues"
+    ],
+    "similar_artists": [
+      "Bluescape",
+      "Dear Amore",
+      "Rhyaene",
+      "Wilfred Fredig",
+      "Veldas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gravity and Grace",
+        "listeners": 12305,
+        "playcount": 29194
+      },
+      {
+        "name": "Infinity",
+        "listeners": 11892,
+        "playcount": 29982
+      },
+      {
+        "name": "Pathways",
+        "listeners": 4274,
+        "playcount": 9850
+      },
+      {
+        "name": "Distant Drift",
+        "listeners": 2583,
+        "playcount": 4395
+      },
+      {
+        "name": "Liquid Light",
+        "listeners": 1971,
+        "playcount": 3001
+      },
+      {
+        "name": "Forced to Think You Love",
+        "listeners": 246,
+        "playcount": 477
+      },
+      {
+        "name": "It Is Not That First Day",
+        "listeners": 244,
+        "playcount": 417
+      },
+      {
+        "name": "Let's Make It Clear",
+        "listeners": 203,
+        "playcount": 368
+      },
+      {
+        "name": "Not Too Bright (#1)",
+        "listeners": 193,
+        "playcount": 360
+      },
+      {
+        "name": "Seijaku (# 2)",
+        "listeners": 188,
+        "playcount": 315
+      }
+    ],
+    "url": "https://www.last.fm/music/Seijaku"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

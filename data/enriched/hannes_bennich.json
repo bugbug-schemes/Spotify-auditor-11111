@@ -1,0 +1,218 @@
+{
+  "artist_name": "Hannes Bennich",
+  "artist_id": "hannes_bennich",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:01:24.174870+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 49034821,
+    "name": "Hannes Bennich",
+    "nb_fan": 10,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/49034821",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/335d127187a6fdd234491462aa8c13c2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Art Roho"
+    ],
+    "contributor_roles": {
+      "Art Roho": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Ack Värmeland, Du Sköna"
+    ],
+    "track_durations": [
+      252
+    ],
+    "track_ranks": [
+      140504
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Art Roho Serving Hannes Bennich",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "When Losing a Dream to Reality",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Billy's Charm",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It Ends Now",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Non-Religious",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9192112,
+    "name": "Hannes N. Bennich",
+    "profile": "Swedish saxophonist, born in 1994",
+    "realname": "",
+    "social_urls": [
+      "https://www.hannesbennich.com/",
+      "https://hannesbennich-whirlwind.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [
+      "Shrine (14)",
+      "Kathrine Windfeld Sextet",
+      "Lage Nordling Electric Ensemble"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 2,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "CD, Album",
+      "LP",
+      "LP, Album, Ltd, Num, S/Edition"
+    ],
+    "labels": [
+      "AMP Music & Records",
+      "Whirlwind Recordings, Second Records",
+      "ZenneZ Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hannes Bennich",
+    "mbid": "",
+    "listeners": 1884,
+    "playcount": 4299,
+    "listener_play_ratio": 2.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hannes+Bennich\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "María Esteban Quintet",
+      "Yotam Ishay",
+      "Louise Bøttern",
+      "Judy Whitmore",
+      "Rebekka Blöndal"
+    ],
+    "top_tracks": [
+      {
+        "name": "It Ends Now",
+        "listeners": 1712,
+        "playcount": 3020
+      },
+      {
+        "name": "Billy's Charm",
+        "listeners": 116,
+        "playcount": 293
+      },
+      {
+        "name": "Non-Religious",
+        "listeners": 98,
+        "playcount": 207
+      },
+      {
+        "name": "Not American",
+        "listeners": 71,
+        "playcount": 163
+      },
+      {
+        "name": "The Traveller",
+        "listeners": 53,
+        "playcount": 116
+      },
+      {
+        "name": "Non-Religious (Intro)",
+        "listeners": 48,
+        "playcount": 115
+      },
+      {
+        "name": "For Essie",
+        "listeners": 48,
+        "playcount": 109
+      },
+      {
+        "name": "A Flower's Last Wish",
+        "listeners": 37,
+        "playcount": 102
+      },
+      {
+        "name": "Interlude // In Peace",
+        "listeners": 33,
+        "playcount": 85
+      },
+      {
+        "name": "It Ends Now (feat. Helen Salim)",
+        "listeners": 21,
+        "playcount": 39
+      }
+    ],
+    "url": "https://www.last.fm/music/Hannes+Bennich"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

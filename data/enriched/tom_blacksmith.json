@@ -1,0 +1,222 @@
+{
+  "artist_name": "Tom Blacksmith",
+  "artist_id": "tom_blacksmith",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:44:13.043205+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "caaf8530-8680-4da5-a3a9-a0303f23fe2a",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/5EFjLl4MUtvtBnRUTKr1I7",
+      "official homepage": "http://www.tomblacksmith.de/",
+      "streaming": "https://music.apple.com/gb/artist/1385552376"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14801899,
+    "name": "Tom Blacksmith",
+    "nb_fan": 3,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/14801899",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/30f88910afd5daac614a238e59cc9712/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Rodolex",
+      "Deeper"
+    ],
+    "track_durations": [
+      159,
+      155
+    ],
+    "track_ranks": [
+      37802,
+      64337
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Lemonade",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chrysalis",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rodolex",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get Down",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deeper",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cascais",
+        "label": "",
+        "release_date": "2018-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6759871,
+    "name": "Tom Blacksmith",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Album",
+      "CD, Album, Car"
+    ],
+    "labels": [
+      "Cozmic Records",
+      "Raumer Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tom Blacksmith",
+    "mbid": "caaf8530-8680-4da5-a3a9-a0303f23fe2a",
+    "listeners": 8206,
+    "playcount": 23361,
+    "listener_play_ratio": 2.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tom+Blacksmith\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tree House Club",
+      "Baron Malice",
+      "WickedWish",
+      "Hamasi",
+      "Miriamy"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rodolex",
+        "listeners": 4002,
+        "playcount": 11720
+      },
+      {
+        "name": "Cascais",
+        "listeners": 3373,
+        "playcount": 7806
+      },
+      {
+        "name": "Deeper",
+        "listeners": 1049,
+        "playcount": 2570
+      },
+      {
+        "name": "Get Down",
+        "listeners": 289,
+        "playcount": 743
+      },
+      {
+        "name": "Lemonade",
+        "listeners": 235,
+        "playcount": 505
+      },
+      {
+        "name": "Chrysalis",
+        "listeners": 5,
+        "playcount": 8
+      },
+      {
+        "name": "Cascais (2019)",
+        "listeners": 2,
+        "playcount": 7
+      },
+      {
+        "name": "Blues goes Funky",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "This Time",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Tom+Blacksmith"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

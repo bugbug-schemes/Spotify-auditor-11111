@@ -1,0 +1,206 @@
+{
+  "artist_name": "Taennchel",
+  "artist_id": "taennchel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:24:23.859651+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 79473832,
+    "name": "Taennchel",
+    "nb_fan": 13,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/79473832",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f15962f06d37960427b7705abfad9f7c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Terre Lointaine",
+        "label": "",
+        "release_date": "2016-11-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "My Bonnie Lies over the Ocean",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleep well, sweetheart",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Over the Hills",
+        "label": "",
+        "release_date": "2024-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "L'envolée",
+        "label": "",
+        "release_date": "2024-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Doux Rivage",
+        "label": "",
+        "release_date": "2024-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A la croisée des chemins",
+        "label": "",
+        "release_date": "2022-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5556166,
+    "name": "Taennchel",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Taennchel"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Taennchel",
+    "mbid": "",
+    "listeners": 2606,
+    "playcount": 44502,
+    "listener_play_ratio": 17.08,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Taennchel\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Flore Habendum",
+      "Sofia Ferra",
+      "MarziTan",
+      "Zachary Keys",
+      "Jeanne Victor"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleep well, sweetheart",
+        "listeners": 1811,
+        "playcount": 21518
+      },
+      {
+        "name": "My Bonnie Lies over the Ocean",
+        "listeners": 1513,
+        "playcount": 14055
+      },
+      {
+        "name": "All is quiet",
+        "listeners": 695,
+        "playcount": 5387
+      },
+      {
+        "name": "Night night",
+        "listeners": 591,
+        "playcount": 3387
+      },
+      {
+        "name": "La voix de la montagne",
+        "listeners": 5,
+        "playcount": 18
+      },
+      {
+        "name": "La voie du soleil",
+        "listeners": 4,
+        "playcount": 16
+      },
+      {
+        "name": "Au-delà des montagnes",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Et nos voiles",
+        "listeners": 3,
+        "playcount": 9
+      },
+      {
+        "name": "La traversée",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Tempête",
+        "listeners": 2,
+        "playcount": 17
+      }
+    ],
+    "url": "https://www.last.fm/music/Taennchel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

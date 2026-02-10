@@ -1,0 +1,176 @@
+{
+  "artist_name": "Tod Forest",
+  "artist_id": "tod_forest",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:43:53.973964+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 228140955,
+    "name": "Tod Forest",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/228140955",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3feccdf4126c58b73d00a779278438d4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Gentle Things",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Candle",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Bird",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1294895,
+    "name": "Common Eider, King Eider",
+    "profile": "Common Eider, King Eider is a music and art collective based in San Francisco, California. Members include [b]Rob Fisk[/b] ([a556018], [a466880], ex-[a75299]), [b]Andee Connors[/b] ([a98415], [a263257], [a1755803], [a424035], ex-[a290718]), [b]Andrew Weathers[/b] and [b]Blaan Tod[/b]. Former members include [b]George Chen[/b] ([a368875], [a466880], [a696441]), [b]Gregory Hagan[/b] (Pale Reverse), musician/designer [b]Vicky Fong[/b] (Lake of Blood).\r\n\r\nThey are interested in soundtrack work for film and theater.",
+    "realname": "",
+    "social_urls": [
+      "https://commoneiderkingeider.bandcamp.com",
+      "https://web.archive.org/web/20130401165852/http://commoneiderkingeider.com/releases/"
+    ],
+    "members": [
+      "Rob Fisk",
+      "Andee Connors",
+      "George Chen",
+      "Andrew Weathers",
+      "Gregory Hagan",
+      "Vicky Fong",
+      "Blaine Todd"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 21,
+    "total_releases": 27,
+    "formats": [
+      "",
+      "11xFile, FLAC, Comp",
+      "14xFile, MP3, Comp, 320",
+      "2xCD, Album",
+      "2xCD, Comp, Ltd, Smplr",
+      "2xCass, Bla",
+      "3xCass, Comp, C40",
+      "CD, Album",
+      "CD, Album, Ltd",
+      "CD, Smplr",
+      "Cass, C43",
+      "Cass, Comp",
+      "Cass, EP, Ltd, alt",
+      "Cass, S/Sided, Ltd, C90"
+    ],
+    "labels": [
+      "Alchemy Labor Unit",
+      "Black Horizons",
+      "Boomkat",
+      "Cold Spring",
+      "Feathered Coyote Records",
+      "Neolithic Mind Warp",
+      "Not On Label",
+      "Not On Label (Common Eider, King Eider Self-released)",
+      "Root Strata",
+      "Tendresse & Passion",
+      "Yik Yak"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tod Forest",
+    "mbid": "",
+    "listeners": 1861,
+    "playcount": 19951,
+    "listener_play_ratio": 10.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tod+Forest\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Elowen Moon",
+      "Charles Karmen",
+      "Malik Mulk",
+      "Theo Lys",
+      "Franciscus Love"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gentle Things",
+        "listeners": 1480,
+        "playcount": 11508
+      },
+      {
+        "name": "Candle",
+        "listeners": 529,
+        "playcount": 8439
+      },
+      {
+        "name": "Sleepy Bird",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Tod+Forest"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,147 @@
+{
+  "artist_name": "Evolutio Cosmica",
+  "artist_id": "evolutio_cosmica",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:33:01.340527+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 267309752,
+    "name": "Evolutio Cosmica",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/267309752",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/94d3635775fc7202ad251867ba24d0f6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Sakkara"
+    ],
+    "track_durations": [
+      159
+    ],
+    "track_ranks": [
+      32470
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Glacial",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sakkara",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cressida",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aestus",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nectar",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maritimus",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Evolutio Cosmica",
+    "mbid": "",
+    "listeners": 4689,
+    "playcount": 9506,
+    "listener_play_ratio": 2.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Evolutio+Cosmica\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Foster Zeta",
+      "Charlie Blue",
+      "Doug Saint",
+      "All the world",
+      "Lost storys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sakkara",
+        "listeners": 4374,
+        "playcount": 8624
+      },
+      {
+        "name": "Cressida",
+        "listeners": 490,
+        "playcount": 882
+      }
+    ],
+    "url": "https://www.last.fm/music/Evolutio+Cosmica"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

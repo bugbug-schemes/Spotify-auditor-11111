@@ -1,0 +1,216 @@
+{
+  "artist_name": "Frail Horizon",
+  "artist_id": "frail_horizon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:41:40.373051+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 268809212,
+    "name": "Frail Horizon",
+    "nb_fan": 1,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/268809212",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bd67f75ca9f2a72da917217b267d77fb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Quiet Fields",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tideveil",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Celestia",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twilight Sea",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anheral Motions",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloud Drift",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Humility",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lingering Peace",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Theory of Calm",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sky Sphere",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dome of Light",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Frail Horizon",
+    "mbid": "",
+    "listeners": 61055,
+    "playcount": 534804,
+    "listener_play_ratio": 8.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Frail+Horizon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Foreglow",
+      "Fabuluxe",
+      "Indigo Moon",
+      "Niranja",
+      "Joudinoire"
+    ],
+    "top_tracks": [
+      {
+        "name": "Humility",
+        "listeners": 52588,
+        "playcount": 286030
+      },
+      {
+        "name": "Anheral Motions",
+        "listeners": 31297,
+        "playcount": 175932
+      },
+      {
+        "name": "Celestia",
+        "listeners": 17467,
+        "playcount": 66571
+      },
+      {
+        "name": "Tideveil",
+        "listeners": 2339,
+        "playcount": 5982
+      },
+      {
+        "name": "Dome of Light",
+        "listeners": 94,
+        "playcount": 197
+      },
+      {
+        "name": "Quiet Fields",
+        "listeners": 53,
+        "playcount": 69
+      },
+      {
+        "name": "Theory of Calm",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Sky Sphere",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Lingering Peace",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Cloud Drift",
+        "listeners": 1,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Frail+Horizon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

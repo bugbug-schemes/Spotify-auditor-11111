@@ -1,0 +1,423 @@
+{
+  "artist_name": "Gia Margaret",
+  "artist_id": "gia_margaret",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:51:22.666055+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "098dea79-7258-427f-af67-5626a6f38965",
+    "type": "Person",
+    "country": "",
+    "area": "Chicago",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [
+      "0000000475646682"
+    ],
+    "ipis": [
+      "00550689684"
+    ],
+    "urls": {
+      "bandcamp": "https://giamargaret.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/5286566",
+      "free streaming": "https://www.deezer.com/artist/390452",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1460162196",
+      "social network": "https://www.instagram.com/giamargaret/",
+      "soundcloud": "https://soundcloud.com/giamargaret",
+      "streaming": "https://music.apple.com/us/artist/1460162196"
+    },
+    "labels": [
+      "Audiotree Music",
+      "Kannibalen Records",
+      "Jagjaguwar",
+      "Dalliance Recordings",
+      "AllPoints",
+      "Inpartment",
+      "Orindal Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 390452,
+    "name": "Gia Margaret",
+    "nb_fan": 2847,
+    "nb_album": 14,
+    "link": "https://www.deezer.com/artist/390452",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3ec40f4927d263ea15623963b30710fe/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Novo Amor"
+    ],
+    "contributor_roles": {
+      "Novo Amor": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Everyone Around Me Dancing",
+      "Lucky for You",
+      "Cicadas",
+      "A Stretch",
+      "no sleep no dream",
+      "sadballad",
+      "City Song",
+      "lesson",
+      "Guitar Piece",
+      "barely there",
+      "for Zoya in China",
+      "ash",
+      "Juno",
+      "Cinnamon",
+      "3 movements",
+      "La langue de l’amitié",
+      "2017",
+      "April to April",
+      "No Fun",
+      "For Flora",
+      "Wayne",
+      "Smoke (Acoustic)",
+      "Birthday",
+      "Groceries",
+      "Goodnight"
+    ],
+    "track_durations": [
+      185,
+      136,
+      134,
+      99,
+      105,
+      101,
+      222,
+      97,
+      112,
+      154,
+      173,
+      160,
+      120,
+      118,
+      253,
+      191,
+      223,
+      107,
+      211,
+      104,
+      136,
+      152,
+      227,
+      214,
+      174
+    ],
+    "track_ranks": [
+      494236,
+      307879,
+      223011,
+      151234,
+      159328,
+      118520,
+      205543,
+      90085,
+      133565,
+      125616,
+      113001,
+      126623,
+      160504,
+      214042,
+      117787,
+      124961,
+      122825,
+      162321,
+      324201,
+      77212,
+      96749,
+      52119,
+      33067,
+      94749,
+      91034
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 1,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Romantic Piano",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mia Gargaret",
+        "label": "",
+        "release_date": "2020-06-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "There's Always Glimmer",
+        "label": "",
+        "release_date": "2019-03-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "There's Always Glimmer (Deluxe Version)",
+        "label": "",
+        "release_date": "2019-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Gia Margaret (Audiotree Live)",
+        "label": "",
+        "release_date": "2018-11-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Everyone Around Me Dancing",
+        "label": "",
+        "release_date": "2026-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mourning Dove",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solid Heart",
+        "label": "",
+        "release_date": "2021-04-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solid Heart",
+        "label": "",
+        "release_date": "2021-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TRANQUILIZED (Gia Margaret Remix)",
+        "label": "",
+        "release_date": "2020-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Babies",
+        "label": "",
+        "release_date": "2019-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smoke (Acoustic)",
+        "label": "",
+        "release_date": "2019-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Fun / Lucky for You",
+        "label": "",
+        "release_date": "2019-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smoke",
+        "label": "",
+        "release_date": "2016-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Keaton Henson",
+      "Jérôme Quériaud",
+      "Jordane Tumarinson",
+      "Remko Kühne",
+      "SYML",
+      "Ali Toygar",
+      "Laurence Ipsum",
+      "Jiří Horák",
+      "Wide Eyed",
+      "Daigo Hanada"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5286566,
+    "name": "Gia Margaret",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://giamargaret.net",
+      "https://giamargaret.bandcamp.com/",
+      "https://www.facebook.com/gia.margaret/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 31,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "21xFile, FLAC, Comp",
+      "2xFile, AAC, Single, 256",
+      "2xFile, MP3, 320",
+      "5xFile, FLAC, EP",
+      "6xFile, AAC, 256",
+      "CD",
+      "CD, Comp",
+      "Cass, Album, Ltd",
+      "File, AAC, Single, 256",
+      "File, MP3, Single, 320",
+      "LP",
+      "LP, Album, Opa",
+      "LP, Album, Tra",
+      "LP, Comp, Ltd, Bon"
+    ],
+    "labels": [
+      "AllPoints",
+      "Allograph Records",
+      "Audiotree",
+      "Dalliance Recordings",
+      "Danger Collective Records",
+      "Jagjaguwar",
+      "Kannibalen Records",
+      "Not On Label",
+      "Not On Label (Dakota Sillyman Self-released)",
+      "Not On Label (Gia Margaret Self-released)",
+      "Orindal Records",
+      "Run For Cover Records (2)",
+      "Sleep Rock",
+      "Throne Age",
+      "Uncut (2), Uncut (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gia Margaret",
+    "mbid": "098dea79-7258-427f-af67-5626a6f38965",
+    "listeners": 387905,
+    "playcount": 5082176,
+    "listener_play_ratio": 13.1,
+    "bio_exists": true,
+    "bio_summary": "Gia Margaret is an American singer-songwriter and producer from Chicago, Illinois. She describes the genre of her music as “sleep rock”. \n\nShe was trained in classical piano as a child and began pursuing a degree in music before ending both endeavors. \n\nShe built an initial following through her home-recorded pop & folk tunes on her Soundcloud & YouTube pages. She released her first full length album, There’s Always Glimmer, in July of 2018. <a href=\"https://www.last.fm/music/Gia+Margaret\">Read ",
+    "tags": [
+      "ambient",
+      "singer-songwriter",
+      "piano",
+      "indie",
+      "USA"
+    ],
+    "similar_artists": [
+      "Hana Stretton",
+      "Ann Annie",
+      "The Vernon Spring",
+      "North Americans",
+      "yes/and"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hinoki Wood",
+        "listeners": 218612,
+        "playcount": 1456227
+      },
+      {
+        "name": "lakes",
+        "listeners": 102604,
+        "playcount": 463625
+      },
+      {
+        "name": "no sleep no dream",
+        "listeners": 77097,
+        "playcount": 349175
+      },
+      {
+        "name": "apathy",
+        "listeners": 66376,
+        "playcount": 311951
+      },
+      {
+        "name": "lesson",
+        "listeners": 44852,
+        "playcount": 158375
+      },
+      {
+        "name": "body",
+        "listeners": 43298,
+        "playcount": 186067
+      },
+      {
+        "name": "For Flora",
+        "listeners": 34931,
+        "playcount": 113687
+      },
+      {
+        "name": "Smoke - Acoustic",
+        "listeners": 31136,
+        "playcount": 90561
+      },
+      {
+        "name": "Birthday",
+        "listeners": 29321,
+        "playcount": 111250
+      },
+      {
+        "name": "3 movements",
+        "listeners": 24393,
+        "playcount": 114634
+      }
+    ],
+    "url": "https://www.last.fm/music/Gia+Margaret"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

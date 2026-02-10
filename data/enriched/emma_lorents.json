@@ -1,0 +1,170 @@
+{
+  "artist_name": "Emma Lorents",
+  "artist_id": "emma_lorents",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:27:57.236309+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288894281,
+    "name": "Emma Lorents",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/288894281",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/20d838e488756bbdfa73fbdd4b479b98/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Too Sweet",
+      "Frosty The Snowman"
+    ],
+    "track_durations": [
+      194,
+      168
+    ],
+    "track_ranks": [
+      33130,
+      6101
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Too Sweet",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lose Control",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Messy",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unwritten",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fairytale of New York",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frosty The Snowman",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Emma Lorents",
+    "mbid": "",
+    "listeners": 4389,
+    "playcount": 10672,
+    "listener_play_ratio": 2.43,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Emma+Lorents\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Joe Hanson",
+      "Forrest St. Marie",
+      "Alain Charles",
+      "Meadow Bryce",
+      "Naia Catalán"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fairytale of New York",
+        "listeners": 2482,
+        "playcount": 5912
+      },
+      {
+        "name": "Too Sweet",
+        "listeners": 1569,
+        "playcount": 3484
+      },
+      {
+        "name": "Messy",
+        "listeners": 344,
+        "playcount": 624
+      },
+      {
+        "name": "Unwritten",
+        "listeners": 236,
+        "playcount": 630
+      },
+      {
+        "name": "Frosty The Snowman",
+        "listeners": 15,
+        "playcount": 21
+      },
+      {
+        "name": "Jingle Bell Rock",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Emma+Lorents"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

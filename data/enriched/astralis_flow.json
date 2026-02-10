@@ -1,0 +1,173 @@
+{
+  "artist_name": "Astralis Flow",
+  "artist_id": "astralis_flow",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:15:59.735936+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 317968981,
+    "name": "Astralis Flow",
+    "nb_fan": 3,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/317968981",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1767e1b2cbc8f7076ad4ec42dd2b2cc9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Blissful Nights",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Between Times",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elysian",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ascension",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blurry Lines",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cruising Altitude",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "cosmology",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Astralis Flow",
+    "mbid": "",
+    "listeners": 26586,
+    "playcount": 152025,
+    "listener_play_ratio": 5.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Astralis+Flow\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Prodigieux",
+      "Edvin Novak",
+      "Velvet Hush",
+      "Kepler Tapestry",
+      "Lejo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cruising Altitude",
+        "listeners": 16996,
+        "playcount": 89528
+      },
+      {
+        "name": "Elysian",
+        "listeners": 8685,
+        "playcount": 23295
+      },
+      {
+        "name": "Blissful Nights",
+        "listeners": 4633,
+        "playcount": 22720
+      },
+      {
+        "name": "Ascension",
+        "listeners": 2854,
+        "playcount": 8912
+      },
+      {
+        "name": "Between Times",
+        "listeners": 2357,
+        "playcount": 7487
+      },
+      {
+        "name": "cosmology",
+        "listeners": 29,
+        "playcount": 49
+      },
+      {
+        "name": "Blurry Lines",
+        "listeners": 21,
+        "playcount": 34
+      }
+    ],
+    "url": "https://www.last.fm/music/Astralis+Flow"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,187 @@
+{
+  "artist_name": "Hello Carmelo",
+  "artist_id": "hello_carmelo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:05:06.520603+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 333815851,
+    "name": "Hello Carmelo",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/333815851",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d067e4da5f881978f96acc2219ec32e3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Homebody",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet Breath",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drifting Clouds",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Motion",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Changing Seasons",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Awakening",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Windows",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Any Love",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Higher",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hello Carmelo",
+    "mbid": "",
+    "listeners": 4238,
+    "playcount": 8333,
+    "listener_play_ratio": 1.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hello+Carmelo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "albu",
+      "Golden After",
+      "Nova Glitch",
+      "Maison Lune",
+      "Air Department"
+    ],
+    "top_tracks": [
+      {
+        "name": "Windows",
+        "listeners": 2055,
+        "playcount": 3531
+      },
+      {
+        "name": "Higher",
+        "listeners": 1280,
+        "playcount": 2265
+      },
+      {
+        "name": "Drifting Clouds",
+        "listeners": 636,
+        "playcount": 890
+      },
+      {
+        "name": "Velvet Breath",
+        "listeners": 422,
+        "playcount": 696
+      },
+      {
+        "name": "Changing Seasons",
+        "listeners": 396,
+        "playcount": 674
+      },
+      {
+        "name": "Awakening",
+        "listeners": 118,
+        "playcount": 275
+      },
+      {
+        "name": "Any Love",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Hello+Carmelo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,188 @@
+{
+  "artist_name": "Mossfrid",
+  "artist_id": "mossfrid",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:51:03.834143+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 166527047,
+    "name": "Mossfrid",
+    "nb_fan": 2,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/166527047",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1d21357939cbdc4b93923514e8ea5951/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Nature is Singing"
+    ],
+    "track_durations": [
+      168
+    ],
+    "track_ranks": [
+      39340
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Among the Trees",
+        "label": "",
+        "release_date": "2025-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Stream",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nature is Singing",
+        "label": "",
+        "release_date": "2025-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Day of Spring",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forest Embrace",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tystnaden",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Andetag",
+        "label": "",
+        "release_date": "2022-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Av Omtanke",
+        "label": "",
+        "release_date": "2022-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Omsluten",
+        "label": "",
+        "release_date": "2022-02-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mossfrid",
+    "mbid": "",
+    "listeners": 6734,
+    "playcount": 25324,
+    "listener_play_ratio": 3.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mossfrid\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Xo Liam",
+      "Eriao",
+      "El Shavindar",
+      "Ashia Kashyap",
+      "Vabali"
+    ],
+    "top_tracks": [
+      {
+        "name": "Omsluten",
+        "listeners": 4714,
+        "playcount": 17511
+      },
+      {
+        "name": "Forest Embrace",
+        "listeners": 1576,
+        "playcount": 5031
+      },
+      {
+        "name": "Nature is Singing",
+        "listeners": 440,
+        "playcount": 1281
+      },
+      {
+        "name": "Quiet Stream",
+        "listeners": 399,
+        "playcount": 1017
+      },
+      {
+        "name": "Among the Trees",
+        "listeners": 201,
+        "playcount": 468
+      },
+      {
+        "name": "Av omtanke",
+        "listeners": 11,
+        "playcount": 16
+      }
+    ],
+    "url": "https://www.last.fm/music/Mossfrid"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

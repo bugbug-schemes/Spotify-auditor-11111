@@ -1,0 +1,115 @@
+{
+  "artist_name": "Shizuka Woods",
+  "artist_id": "shizuka_woods",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:01:24.243121+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 309629751,
+    "name": "Shizuka Woods",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/309629751",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/39c53165ddc5a8bbe2f736e459dee5aa/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Deferred",
+        "label": "",
+        "release_date": "2025-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unspoken",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tengu’s Rest",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Shizuka Woods",
+    "mbid": "",
+    "listeners": 3751,
+    "playcount": 11548,
+    "listener_play_ratio": 3.08,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Shizuka+Woods\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Joseph Vidal",
+      "Monduen",
+      "Kuyenao",
+      "Sable Flo",
+      "Casaluna"
+    ],
+    "top_tracks": [
+      {
+        "name": "Deferred",
+        "listeners": 3751,
+        "playcount": 11548
+      }
+    ],
+    "url": "https://www.last.fm/music/Shizuka+Woods"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

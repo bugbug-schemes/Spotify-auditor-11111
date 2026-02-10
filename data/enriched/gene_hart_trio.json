@@ -1,0 +1,330 @@
+{
+  "artist_name": "Gene Hart Trio",
+  "artist_id": "gene_hart_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:49:39.904365+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6d550700-2c16-4e64-b1e3-46e0e69bea80",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183283987",
+      "purchase for download": "https://music.apple.com/us/artist/1648534524",
+      "soundcloud": "https://soundcloud.com/geneharttrio",
+      "streaming": "https://tidal.com/artist/34512413",
+      "youtube music": "https://music.youtube.com/channel/UCRX8geAMBWTOG3BdOO04BXA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183283987,
+    "name": "Gene Hart Trio",
+    "nb_fan": 18,
+    "nb_album": 20,
+    "link": "https://www.deezer.com/artist/183283987",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bcd8d1444fd906c6a5241ce0f9619297/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Love Walked In",
+      "Isfahan",
+      "September Serenade",
+      "I'm Glad There's You",
+      "Gone With The Wind",
+      "I'm Getting Sentimental Over You",
+      "Satin Waltz"
+    ],
+    "track_durations": [
+      220,
+      233,
+      167,
+      241,
+      221,
+      237,
+      169
+    ],
+    "track_ranks": [
+      34330,
+      169131,
+      63477,
+      66425,
+      47727,
+      40469,
+      25686
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "As Close as Possible",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "One of the Good Ones",
+        "label": "",
+        "release_date": "2024-09-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rebel Hearts",
+        "label": "",
+        "release_date": "2024-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Day Dream",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer In Central Park",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "French Waltz",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Heaven's Sake",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Inside a Silent Tear",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Satin Waltz",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Wonderland",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "September Serenade",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What's The Story?",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Isfahan",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gone With The Wind",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Getting Sentimental Over You",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What's New?",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Glad There's You",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Walked In",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Destination Moon",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Way You Look Tonight",
+        "label": "",
+        "release_date": "2020-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gene Hart Trio",
+    "mbid": "6d550700-2c16-4e64-b1e3-46e0e69bea80",
+    "listeners": 73385,
+    "playcount": 251321,
+    "listener_play_ratio": 3.42,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "The Blue Green",
+      "Tore Lundblad",
+      "Norris Walker Trio",
+      "Jonas Olofsson",
+      "Ben Lively"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pensativa",
+        "listeners": 26843,
+        "playcount": 61282
+      },
+      {
+        "name": "I'm Glad There's You",
+        "listeners": 20001,
+        "playcount": 44125
+      },
+      {
+        "name": "September Serenade",
+        "listeners": 17357,
+        "playcount": 37298
+      },
+      {
+        "name": "Isfahan",
+        "listeners": 13889,
+        "playcount": 29801
+      },
+      {
+        "name": "I'm Getting Sentimental Over You",
+        "listeners": 7299,
+        "playcount": 14992
+      },
+      {
+        "name": "Love Walked In",
+        "listeners": 6104,
+        "playcount": 13737
+      },
+      {
+        "name": "The Way You Look Tonight",
+        "listeners": 3790,
+        "playcount": 10196
+      },
+      {
+        "name": "Gone With The Wind",
+        "listeners": 3598,
+        "playcount": 7986
+      },
+      {
+        "name": "Satin Waltz",
+        "listeners": 3568,
+        "playcount": 7960
+      },
+      {
+        "name": "Silverballaden",
+        "listeners": 3305,
+        "playcount": 7440
+      }
+    ],
+    "url": "https://www.last.fm/music/Gene+Hart+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

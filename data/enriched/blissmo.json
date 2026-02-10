@@ -1,0 +1,215 @@
+{
+  "artist_name": "Blissmo",
+  "artist_id": "blissmo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:45:57.907709+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 124389902,
+    "name": "Blissmo",
+    "nb_fan": 13,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/124389902",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5cf14bfe92b81545f6bfb546116e5569/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Palm Beach"
+    ],
+    "track_durations": [
+      165
+    ],
+    "track_ranks": [
+      37704
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Capri",
+        "label": "",
+        "release_date": "2025-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cala Nova",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Opal Waves",
+        "label": "",
+        "release_date": "2025-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Setup",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cosmic Lounge",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Holographic",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Our Special Place",
+        "label": "",
+        "release_date": "2021-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Palm Beach",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring Hills",
+        "label": "",
+        "release_date": "2021-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 802292,
+    "name": "Blissmonkey 6000",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp, Ltd"
+    ],
+    "labels": [
+      "Genuine Particle"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Blissmo",
+    "mbid": "",
+    "listeners": 5120,
+    "playcount": 15928,
+    "listener_play_ratio": 3.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Blissmo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Azoraê",
+      "Seawiew",
+      "BVRKLEY",
+      "Delta O",
+      "Unific"
+    ],
+    "top_tracks": [
+      {
+        "name": "Palm Beach",
+        "listeners": 2366,
+        "playcount": 7296
+      },
+      {
+        "name": "Opal Waves",
+        "listeners": 1742,
+        "playcount": 4022
+      },
+      {
+        "name": "Spring Hills",
+        "listeners": 1054,
+        "playcount": 2998
+      },
+      {
+        "name": "Capri",
+        "listeners": 700,
+        "playcount": 1163
+      },
+      {
+        "name": "Our Special Place",
+        "listeners": 150,
+        "playcount": 334
+      },
+      {
+        "name": "Cosmic Lounge",
+        "listeners": 54,
+        "playcount": 94
+      },
+      {
+        "name": "Holographic",
+        "listeners": 6,
+        "playcount": 20
+      },
+      {
+        "name": "The Setup",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Blissmo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

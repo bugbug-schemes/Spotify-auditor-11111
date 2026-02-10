@@ -1,0 +1,227 @@
+{
+  "artist_name": "Vincent Fanguro",
+  "artist_id": "vincent_fanguro",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:57:34.023858+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 112972902,
+    "name": "Vincent Fanguro",
+    "nb_fan": 13,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/112972902",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8b50d07d76a8f27e9228e1400af0e626/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Stars Above",
+      "Bed of Roses - Piano Version"
+    ],
+    "track_durations": [
+      203,
+      257
+    ],
+    "track_ranks": [
+      86440,
+      49231
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 4,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Cello Sonatas",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Calm Piano Covers no 1",
+        "label": "",
+        "release_date": "2022-11-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Nightfall",
+        "label": "",
+        "release_date": "2020-08-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Skies of Azure Blue",
+        "label": "",
+        "release_date": "2020-02-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Nocturne",
+        "label": "",
+        "release_date": "2019-11-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Kindness",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Colors Of Spring",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heathens Phonk",
+        "label": "",
+        "release_date": "2024-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn Sky",
+        "label": "",
+        "release_date": "2023-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nova",
+        "label": "",
+        "release_date": "2022-06-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm Skies",
+        "label": "",
+        "release_date": "2021-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vincent Fanguro",
+    "mbid": "",
+    "listeners": 60788,
+    "playcount": 270531,
+    "listener_play_ratio": 4.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Vincent+Fanguro\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "North Connolly",
+      "Arden Brooks",
+      "Will Kaufman",
+      "Reinhard Krause",
+      "Jack Pelayo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Autumn Sky",
+        "listeners": 40192,
+        "playcount": 175899
+      },
+      {
+        "name": "Peace Within",
+        "listeners": 12866,
+        "playcount": 49320
+      },
+      {
+        "name": "Stars Above",
+        "listeners": 5046,
+        "playcount": 19358
+      },
+      {
+        "name": "Calm Skies",
+        "listeners": 2645,
+        "playcount": 6416
+      },
+      {
+        "name": "Bed of Roses - Piano Version",
+        "listeners": 2004,
+        "playcount": 5743
+      },
+      {
+        "name": "Heaven - Piano Version",
+        "listeners": 1163,
+        "playcount": 3741
+      },
+      {
+        "name": "Hallelujah - Piano Version",
+        "listeners": 804,
+        "playcount": 2576
+      },
+      {
+        "name": "Colors Of Spring",
+        "listeners": 722,
+        "playcount": 1591
+      },
+      {
+        "name": "Bridge Over Troubled Water - Piano Version",
+        "listeners": 689,
+        "playcount": 1994
+      },
+      {
+        "name": "Dreamland",
+        "listeners": 456,
+        "playcount": 967
+      }
+    ],
+    "url": "https://www.last.fm/music/Vincent+Fanguro"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,182 @@
+{
+  "artist_name": "Lucas Moon",
+  "artist_id": "lucas_moon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:15:37.393055+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lucas Moon', got 'Lucas Morato'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3841569,
+    "name": "Moon Tripper",
+    "profile": "Psy-Trance alias of Dubai-based Ambient, Psychill and Uplifting/Tech-Trance DJ/producer Brad Ashtar, started in 2013.\r\n\r\nHe has played live on Radio One Dubai, at local events such as Ravelations, Serenity and Sonic Sessions in Dubai and at major international events like Gatecrasher. His music has been supported by famous artists such as Paul Oakenfold, Airwave, Ovnimoon, Ascent, Lucas and Helber Gun. He previously hosted a monthly radio show 'Cosmic Hour' on DI.FM under this Moon Tripper alias.\r\n\r\nContact email for bookings, promos and press: bradashtar@gmail.com",
+    "realname": "Brad Ashtar",
+    "social_urls": [
+      "https://soundcloud.com/moontripper-hypnoia",
+      "http://www.facebook.com/moontripperofficial",
+      "http://twitter.com/moontripper1",
+      "https://moon-tripper.bandcamp.com"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 36,
+    "total_releases": 43,
+    "formats": [
+      "",
+      "100xFile, AAC, Comp",
+      "101xFile, FLAC, Comp",
+      "10xFile, FLAC, Album",
+      "10xFile, MP3, Album, 320",
+      "10xFile, WAV",
+      "10xFile, WAV, Album",
+      "10xFile, WAV, Comp",
+      "13xFile, WAV, Comp",
+      "14xFile, MP3, Comp, 320",
+      "28xFile, WAV, Comp, 24 ",
+      "2xCD, Comp",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "2xFile, WAV, EP",
+      "3xFile, FLAC, EP, 24b",
+      "3xFile, MP3, EP, 320",
+      "40xFile, WAV, Comp",
+      "9xFile, FLAC",
+      "9xFile, MP3, Comp, 320",
+      "CD, Album",
+      "File, WAV, Mixed + 22xFile, WAV, Comp"
+    ],
+    "labels": [
+      "101 Dance Hits",
+      "Altar Records",
+      "BMSS Records",
+      "EDM Records (4)",
+      "Fresh Frequencies",
+      "Goa Records",
+      "Grasshopper Records (3)",
+      "JOOF Mantra",
+      "Joof Recordings",
+      "Joof V2",
+      "Mind Music",
+      "Not On Label (Lemonchill Self-released)",
+      "Not On Label (Ovnimoon Self-released)",
+      "Ovnimoon Records",
+      "Progg'N'Roll Records",
+      "Quantum Sorcery Records",
+      "Sting Records (5)",
+      "Yellow Sunshine Explosion",
+      "Yellow Sunshine Explosion, Yellow Sunshine Explosion"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lucas Moon",
+    "mbid": "",
+    "listeners": 4282,
+    "playcount": 56972,
+    "listener_play_ratio": 13.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lucas+Moon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "David Finnegan",
+      "Pajama Llama",
+      "Naomi Nora",
+      "Caprice Henry",
+      "Pepita Li"
+    ],
+    "top_tracks": [
+      {
+        "name": "Under the Endless Sky",
+        "listeners": 2427,
+        "playcount": 22834
+      },
+      {
+        "name": "The Sleeping Valley",
+        "listeners": 1710,
+        "playcount": 13273
+      },
+      {
+        "name": "Sweet Night",
+        "listeners": 1414,
+        "playcount": 14842
+      },
+      {
+        "name": "Peaceful Dreams",
+        "listeners": 877,
+        "playcount": 6005
+      },
+      {
+        "name": "In a Cabin in a Wood",
+        "listeners": 7,
+        "playcount": 8
+      },
+      {
+        "name": "Goodnight, Little One",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Dreamland Meadows",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Lucas Moon for Richmond",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "2AM Pinball",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Magic in your Eyes",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lucas+Moon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

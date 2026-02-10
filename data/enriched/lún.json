@@ -1,0 +1,162 @@
+{
+  "artist_name": "Lún",
+  "artist_id": "lún",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:20:59.180133+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "62220287-508c-42dc-9433-158ce4d8ed95",
+    "type": "Person",
+    "country": "CA",
+    "area": "Canada",
+    "begin_date": "1987-04-11",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/8904352",
+      "free streaming": "https://www.deezer.com/artist/2571071",
+      "official homepage": "https://www.luntunes.com/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1555747703",
+      "social network": "https://www.instagram.com/luntunes/",
+      "soundcloud": "https://soundcloud.com/luntunes",
+      "streaming": "https://tidal.com/artist/23668520",
+      "youtube": "https://www.youtube.com/channel/UCmhYTzFyfWN_NL89hFbq-Cg"
+    },
+    "labels": [
+      "HypnoVizion",
+      "Westwood Recordings",
+      "[no label]",
+      "mau5trap",
+      "Fueled by Ramen"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lún', got 'Lun'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 262189,
+    "name": "Lun",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "NOK (3)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 19,
+    "total_releases": 28,
+    "formats": [
+      "",
+      "12\", EP, Ltd",
+      "2xCD, Album, Comp, RE",
+      "2xFile, MP3, Comp, Mixed, 320",
+      "CD, Album",
+      "CD, Smplr",
+      "CDr, Comp, Mixed",
+      "CDr, MiniAlbum",
+      "Cass, Album",
+      "Cass, Album, Ltd",
+      "Comp, Gat + 2xLP, Album, RE + 2xLP, Album, RE",
+      "LP, Ltd"
+    ],
+    "labels": [
+      "58Muzik",
+      "Bad Vibes, Leipziger Schule",
+      "Funkverteidiger",
+      "Funkverteidiger, WTM (3)",
+      "Hurrican E. Productions",
+      "Leipziger Schule, WTM (3)",
+      "Mofo Airlines",
+      "Not On Label (Whzky Frngs Self-released)",
+      "Rap Aus Frust, I Luv Money Records",
+      "Snuffproduction",
+      "Snuffproduction, Methlabor",
+      "Spoken View",
+      "Tennleuwö Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lún",
+    "mbid": "",
+    "listeners": 3518,
+    "playcount": 5995,
+    "listener_play_ratio": 1.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/L%C3%BAn\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "elveper",
+      "Owen Bloom",
+      "Furomerald",
+      "Asher Stone",
+      "Altered Echoes"
+    ],
+    "top_tracks": [
+      {
+        "name": "Shattered",
+        "listeners": 3490,
+        "playcount": 5772
+      },
+      {
+        "name": "Dead Inside, Pt. 2",
+        "listeners": 26,
+        "playcount": 213
+      },
+      {
+        "name": "Dead Inside, Pt. 2  \"? Deluxe\"",
+        "listeners": 2,
+        "playcount": 9
+      },
+      {
+        "name": "bitches",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/L%C3%BAn"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

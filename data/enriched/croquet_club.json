@@ -1,0 +1,406 @@
+{
+  "artist_name": "Croquet Club",
+  "artist_id": "croquet_club",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:16:32.951963+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9e4f4b49-3244-4637-8821-c379a91ef691",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3384073",
+      "free streaming": "https://www.deezer.com/artist/5008708",
+      "purchase for download": "https://www.beatport.com/artist/croquet-club/353369",
+      "social network": "https://www.facebook.com/croquetclubmusic",
+      "soundcloud": "https://soundcloud.com/croquet-club",
+      "streaming": "https://tidal.com/artist/5498467"
+    },
+    "labels": [
+      "Reflections",
+      "Anjunadeep",
+      "Anjunachill",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5008708,
+    "name": "Croquet Club",
+    "nb_fan": 899,
+    "nb_album": 17,
+    "link": "https://www.deezer.com/artist/5008708",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/dacbb555b8703879589b7d2411fc8d3a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Stelios Vassiloudis"
+    ],
+    "contributor_roles": {
+      "Stelios Vassiloudis": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Careless Love",
+      "Only You Can Tell (Stelios Vassiloudis Revisit)",
+      "Slowly (Instrumental)",
+      "Only You Can Tell (Original Mix)",
+      "Fugue In Twilight",
+      "Solace (Mixed)",
+      "Summer",
+      "Night Lights",
+      "Cardigan",
+      "Slowly",
+      "Swirl",
+      "Cardigan (Original Mix)",
+      "Jacuzzi (Original Mix)",
+      "Awake (Original Mix)",
+      "Slow Mo"
+    ],
+    "track_durations": [
+      294,
+      292,
+      213,
+      271,
+      264,
+      80,
+      232,
+      184,
+      269,
+      230,
+      254,
+      260,
+      274,
+      269,
+      175
+    ],
+    "track_ranks": [
+      395844,
+      107480,
+      157411,
+      112624,
+      104395,
+      38182,
+      166968,
+      83884,
+      99486,
+      118238,
+      21659,
+      87559,
+      134973,
+      110379,
+      188220
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 3,
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "25 Years Of Anjuna Mixed By Croquet Club",
+        "label": "",
+        "release_date": "2025-07-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fugue In Twilight",
+        "label": "",
+        "release_date": "2024-03-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fugue In Twilight (Instrumentals)",
+        "label": "",
+        "release_date": "2024-12-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fugue In Twilight (Instrumentals)",
+        "label": "",
+        "release_date": "2024-05-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Love Exposure",
+        "label": "",
+        "release_date": "2016-06-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Jacuzzi EP",
+        "label": "",
+        "release_date": "2014-07-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Only You Can Tell (Stelios Vassiloudis Revisit)",
+        "label": "",
+        "release_date": "2025-12-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slowly (Odeon Remix)",
+        "label": "",
+        "release_date": "2024-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love In Our Hands (Omfeel Remix)",
+        "label": "",
+        "release_date": "2024-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Say (Talee's Pool Party Mix)",
+        "label": "",
+        "release_date": "2024-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Say",
+        "label": "",
+        "release_date": "2024-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love In Our Hands",
+        "label": "",
+        "release_date": "2024-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slowly",
+        "label": "",
+        "release_date": "2024-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solace",
+        "label": "",
+        "release_date": "2023-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Only You Can Tell",
+        "label": "",
+        "release_date": "2014-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Awake / Cardigan",
+        "label": "",
+        "release_date": "2013-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Night Sunset",
+        "label": "",
+        "release_date": "2012-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Klangkarussell",
+      "Lane 8",
+      "Nora En Pure",
+      "Massane",
+      "LE YOUTH",
+      "16BL",
+      "Nils Hoffmann",
+      "Ben Böhmer",
+      "Sultan + Shepard",
+      "Catching Flies"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3384073,
+    "name": "Croquet Club",
+    "profile": "Stage name of French electronic music producer and performer [a3384074] from Southern France. Named after the croquet-based listening parties, he organised with his friends.",
+    "realname": "Jeremy Villecourt",
+    "social_urls": [
+      "https://www.facebook.com/pages/Croquet-Club/454543821239482",
+      "https://soundcloud.com/croquet-club",
+      "http://croquet-club.tumblr.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 56,
+    "total_releases": 58,
+    "formats": [
+      "",
+      "10xFile, MP3, Comp, 320",
+      "12xFile, MP3, Comp, 320",
+      "15xFile, MP3, Comp, Mixed, 320",
+      "19xFile, MP3, Comp, 320",
+      "20xFile, MP3, Comp, 320",
+      "20xFile, WAV, Comp",
+      "21xFile, ALAC, Comp, Mixed",
+      "22xFile, AAC, Comp, 256",
+      "24xFile, MP3, Comp, 320",
+      "24xFile, MP3, Comp, 320 + 2xFile, MP3, Comp, Mixed",
+      "25xFile, MP3, Comp, 320",
+      "26xFile, MP3, Album, Comp, Mixed, 320",
+      "28xFile, AAC, Comp, 256",
+      "2xCD, Comp, Mixed",
+      "30xFile, ALAC, Comp, Mixed",
+      "4xFile, AIFF, EP",
+      "65xFile, MP3, Comp, 320",
+      "File, MP3, 320",
+      "File, MP3, Single, 320",
+      "File, WAV"
+    ],
+    "labels": [
+      "Anjunabeats",
+      "Anjunachill",
+      "Anjunadeep",
+      "Armada Digital",
+      "Hed Kandi",
+      "Ministry Of Sound Recordings Ltd.",
+      "Not On Label (Croquet Club Self-released)",
+      "Open Gate Records",
+      "Reflections (18)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Croquet Club",
+    "mbid": "9e4f4b49-3244-4637-8821-c379a91ef691",
+    "listeners": 70475,
+    "playcount": 464386,
+    "listener_play_ratio": 6.59,
+    "bio_exists": true,
+    "bio_summary": "Croquet Club is an electronic music initiative by Jeremy Villecourt (Paris, France, 2012) creating songs and remixes out of love. <a href=\"https://www.last.fm/music/Croquet+Club\">Read more on Last.fm</a>",
+    "tags": [
+      "House",
+      "electronic",
+      "deep house",
+      "electronica",
+      "trance"
+    ],
+    "similar_artists": [
+      "Cubicolor",
+      "Braxton",
+      "16 Bit Lolitas",
+      "Luttrell",
+      "Simon Doty"
+    ],
+    "top_tracks": [
+      {
+        "name": "You Left Me",
+        "listeners": 20406,
+        "playcount": 55701
+      },
+      {
+        "name": "Summer",
+        "listeners": 10789,
+        "playcount": 43255
+      },
+      {
+        "name": "Careless Love",
+        "listeners": 9366,
+        "playcount": 37226
+      },
+      {
+        "name": "Only You Can Tell - Original Mix",
+        "listeners": 8189,
+        "playcount": 39331
+      },
+      {
+        "name": "Night Lights",
+        "listeners": 7430,
+        "playcount": 25089
+      },
+      {
+        "name": "Slow Mo",
+        "listeners": 5618,
+        "playcount": 20060
+      },
+      {
+        "name": "Cardigan",
+        "listeners": 5195,
+        "playcount": 20163
+      },
+      {
+        "name": "Jacuzzi - Original Mix",
+        "listeners": 4606,
+        "playcount": 20204
+      },
+      {
+        "name": "Awake - Original Mix",
+        "listeners": 4486,
+        "playcount": 16799
+      },
+      {
+        "name": "Andante",
+        "listeners": 4152,
+        "playcount": 13098
+      }
+    ],
+    "url": "https://www.last.fm/music/Croquet+Club"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

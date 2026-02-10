@@ -1,0 +1,238 @@
+{
+  "artist_name": "Thomas Sejthen Trio",
+  "artist_id": "thomas_sejthen_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:40:55.104107+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "718596d3-ad17-4fa7-ae6a-6ba1870f1915",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/77593522",
+      "soundcloud": "https://soundcloud.com/thomassejthentrio",
+      "streaming": "https://tidal.com/artist/17258739",
+      "youtube music": "https://music.youtube.com/channel/UCtcjpWnsr2AwZHNiogyKQKQ"
+    },
+    "labels": [
+      "Gateway Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 77593522,
+    "name": "Thomas Sejthen Trio",
+    "nb_fan": 7,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/77593522",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7532a01d1621acd06e02b587a659463a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Jesper Bo Knudsen",
+      "Mads Ole Erhardsen",
+      "Søren Bigum",
+      "Thomas Sejthen"
+    ],
+    "contributor_roles": {
+      "Thomas Sejthen": [
+        "Main"
+      ],
+      "Mads Ole Erhardsen": [
+        "Main"
+      ],
+      "Jesper Bo Knudsen": [
+        "Main"
+      ],
+      "Søren Bigum": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "This Is Our Year"
+    ],
+    "track_durations": [
+      371
+    ],
+    "track_ranks": [
+      99213
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "This Is Our Year",
+        "label": "",
+        "release_date": "2023-02-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Thomas Sejthen Trio",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Kind of Blues",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Is Our Year",
+        "label": "",
+        "release_date": "2023-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 17219104,
+    "name": "Thomas Sejthen Trio",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Jesper Bo Knudsen",
+      "Thomas Sejthen",
+      "Mads-Ole Erhardsen"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "10xFile, MP3, Album"
+    ],
+    "labels": [
+      "Not On Label (Thomas Sejthen Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Thomas Sejthen Trio",
+    "mbid": "718596d3-ad17-4fa7-ae6a-6ba1870f1915",
+    "listeners": 25664,
+    "playcount": 57477,
+    "listener_play_ratio": 2.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Thomas+Sejthen+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Art Roho",
+      "The Mellowtones",
+      "Copenhagen Jazzexperience",
+      "Rob van Bavel",
+      "Gathering in Jazz"
+    ],
+    "top_tracks": [
+      {
+        "name": "This Is Our Year",
+        "listeners": 22095,
+        "playcount": 49655
+      },
+      {
+        "name": "11 Made inTrige",
+        "listeners": 1785,
+        "playcount": 2785
+      },
+      {
+        "name": "Monkish",
+        "listeners": 1738,
+        "playcount": 2743
+      },
+      {
+        "name": "Fra Nu Af",
+        "listeners": 420,
+        "playcount": 702
+      },
+      {
+        "name": "Goodbye Charlie",
+        "listeners": 377,
+        "playcount": 577
+      },
+      {
+        "name": "Birdy",
+        "listeners": 75,
+        "playcount": 127
+      },
+      {
+        "name": "Maggy",
+        "listeners": 59,
+        "playcount": 117
+      },
+      {
+        "name": "A Kind of Blues",
+        "listeners": 55,
+        "playcount": 105
+      },
+      {
+        "name": "Bobby",
+        "listeners": 42,
+        "playcount": 87
+      },
+      {
+        "name": "Minor Idea Part II",
+        "listeners": 41,
+        "playcount": 85
+      }
+    ],
+    "url": "https://www.last.fm/music/Thomas+Sejthen+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

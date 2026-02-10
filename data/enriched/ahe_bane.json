@@ -1,0 +1,197 @@
+{
+  "artist_name": "Ahe Bane",
+  "artist_id": "ahe_bane",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:45:19.123387+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5acfd01f-ee61-4266-b6ef-a365f523bdb8",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/3UERyQ4VEbAEy8qfc6OwvU"
+    },
+    "labels": [
+      "[no label]",
+      "Firefly Entertainment"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 112960672,
+    "name": "Ahe Bane",
+    "nb_fan": 8,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/112960672",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bbdeb85511ef6ddab8cc40008052777c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Hawaii",
+      "Galu"
+    ],
+    "track_durations": [
+      171,
+      123
+    ],
+    "track_ranks": [
+      111480,
+      96461
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Amu",
+        "label": "",
+        "release_date": "2022-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maulu",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kai",
+        "label": "",
+        "release_date": "2020-05-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hawaii",
+        "label": "",
+        "release_date": "2020-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ahe Bane",
+    "mbid": "5acfd01f-ee61-4266-b6ef-a365f523bdb8",
+    "listeners": 42750,
+    "playcount": 105562,
+    "listener_play_ratio": 2.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ahe+Bane\">Read more on Last.fm</a>",
+    "tags": [
+      "Lo-Fi"
+    ],
+    "similar_artists": [
+      "itsjrad",
+      "Low Phil",
+      "The Jazzister",
+      "G O L",
+      "kent mills"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hawaii",
+        "listeners": 26222,
+        "playcount": 61825
+      },
+      {
+        "name": "Galu",
+        "listeners": 10823,
+        "playcount": 25351
+      },
+      {
+        "name": "Amu",
+        "listeners": 8423,
+        "playcount": 14930
+      },
+      {
+        "name": "Bae Area",
+        "listeners": 1265,
+        "playcount": 3165
+      },
+      {
+        "name": "Rainy B_ach",
+        "listeners": 122,
+        "playcount": 170
+      },
+      {
+        "name": "Maulu",
+        "listeners": 16,
+        "playcount": 24
+      },
+      {
+        "name": "Lagona (Feelings)",
+        "listeners": 12,
+        "playcount": 17
+      },
+      {
+        "name": "Kai (Ocean)",
+        "listeners": 11,
+        "playcount": 24
+      },
+      {
+        "name": "Lolota (Deep)",
+        "listeners": 9,
+        "playcount": 21
+      },
+      {
+        "name": "Iatalata",
+        "listeners": 8,
+        "playcount": 21
+      }
+    ],
+    "url": "https://www.last.fm/music/Ahe+Bane"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

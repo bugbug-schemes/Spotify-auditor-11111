@@ -1,0 +1,126 @@
+{
+  "artist_name": "Nómis",
+  "artist_id": "nómis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:09:11.982142+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "96f3bf6b-9bd5-48a7-bc5a-fc6102823b5d",
+    "type": "Person",
+    "country": "",
+    "area": "California",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "lyrics": "https://genius.com/artists/Nomis-rapper",
+      "official homepage": "http://nomishiphop.com/",
+      "social network": "https://www.instagram.com/nomishiphop/",
+      "soundcloud": "https://soundcloud.com/nomishiphop"
+    },
+    "labels": [
+      "Anklo Atlas",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Nómis', got 'Nomis'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6469993,
+    "name": "Nomis (14)",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "10\", EP"
+    ],
+    "labels": [
+      "Decca"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nómis",
+    "mbid": "",
+    "listeners": 6028,
+    "playcount": 14253,
+    "listener_play_ratio": 2.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/N%C3%B3mis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Astral Voyager",
+      "Foster Zeta",
+      "Lost storys",
+      "Evolutio Cosmica",
+      "elveper"
+    ],
+    "top_tracks": [
+      {
+        "name": "Last Train",
+        "listeners": 4117,
+        "playcount": 8203
+      },
+      {
+        "name": "The Outer Rim",
+        "listeners": 3148,
+        "playcount": 5245
+      },
+      {
+        "name": "Searchlight",
+        "listeners": 406,
+        "playcount": 805
+      }
+    ],
+    "url": "https://www.last.fm/music/N%C3%B3mis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

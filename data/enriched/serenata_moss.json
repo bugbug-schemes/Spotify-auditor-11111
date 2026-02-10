@@ -1,0 +1,164 @@
+{
+  "artist_name": "Serenata Moss",
+  "artist_id": "serenata_moss",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:59:26.177446+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 216057025,
+    "name": "Serenata Moss",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/216057025",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/60fc67a7e27864db6b51c1acb52fc55a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Some Other Spring"
+    ],
+    "track_durations": [
+      148
+    ],
+    "track_ranks": [
+      119261
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "All I Want for Christmas (Is My Two Front Teeth) (Fireplace)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Christian Men Rejoice (Fireplace)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All I Want for Christmas (Is My Two Front Teeth)",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good Christian Men Rejoice",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wrap Your Troubles In Dreams",
+        "label": "",
+        "release_date": "2023-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lady Bird",
+        "label": "",
+        "release_date": "2023-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Some Other Spring",
+        "label": "",
+        "release_date": "2023-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Serenata Moss",
+    "mbid": "",
+    "listeners": 15191,
+    "playcount": 68868,
+    "listener_play_ratio": 4.53,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Serenata+Moss\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "R. Embers",
+      "Alex Lehtonen",
+      "Eleanor Friedman",
+      "Calmer Still",
+      "Everlasting Harmony"
+    ],
+    "top_tracks": [
+      {
+        "name": "Some Other Spring",
+        "listeners": 9838,
+        "playcount": 45653
+      },
+      {
+        "name": "Good Christian Men Rejoice",
+        "listeners": 4590,
+        "playcount": 12805
+      },
+      {
+        "name": "All I Want For Christmas (Is My Two Front Teeth)",
+        "listeners": 3705,
+        "playcount": 10409
+      },
+      {
+        "name": "Lady Bird",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Serenata+Moss"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

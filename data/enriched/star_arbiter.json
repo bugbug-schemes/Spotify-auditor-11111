@@ -1,0 +1,155 @@
+{
+  "artist_name": "Star Arbiter",
+  "artist_id": "star_arbiter",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:16:49.762904+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 172777587,
+    "name": "Star Arbiter",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/172777587",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Moonbeam Array",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Urban Biome",
+        "label": "",
+        "release_date": "2025-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fluttering",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Invisibility",
+        "label": "",
+        "release_date": "2024-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Leaves & Rain",
+        "label": "",
+        "release_date": "2024-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The End Of A Long Day",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Saw Mommy Kissing Santa Claus",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Gift Contains A Tiny Piano",
+        "label": "",
+        "release_date": "2022-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Star Arbiter",
+    "mbid": "",
+    "listeners": 620,
+    "playcount": 1844,
+    "listener_play_ratio": 2.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Star+Arbiter\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Knot Released",
+      "Quiet View",
+      "morgondis",
+      "Mindtune",
+      "Wiilo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Urban Biome",
+        "listeners": 601,
+        "playcount": 1740
+      },
+      {
+        "name": "I Saw Mommy Kissing Santa Claus",
+        "listeners": 19,
+        "playcount": 104
+      }
+    ],
+    "url": "https://www.last.fm/music/Star+Arbiter"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,211 @@
+{
+  "artist_name": "Max Arnolds",
+  "artist_id": "max_arnolds",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:34:59.290326+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6cc71fb0-44c2-4e84-9325-9430340dce29",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 160023462,
+    "name": "Max Arnolds",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/160023462",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/97ea27629fc119f067bb10bf261bfb87/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Ethereal Notions",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trust",
+        "label": "",
+        "release_date": "2024-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slumbering",
+        "label": "",
+        "release_date": "2024-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Almost There",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If We Could Only Fly",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late One Afternoon",
+        "label": "",
+        "release_date": "2023-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Natural Sweetness",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Delicate",
+        "label": "",
+        "release_date": "2022-04-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Max Arnolds",
+    "mbid": "6cc71fb0-44c2-4e84-9325-9430340dce29",
+    "listeners": 14183,
+    "playcount": 49625,
+    "listener_play_ratio": 3.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Max+Arnolds\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Verney Pépin",
+      "McCadden",
+      "Christian Peterson-Bergling",
+      "Rebecca Kruse",
+      "Maël Alexandrienne"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Longer I Wait",
+        "listeners": 12915,
+        "playcount": 45779
+      },
+      {
+        "name": "Delicate",
+        "listeners": 969,
+        "playcount": 2377
+      },
+      {
+        "name": "Ethereal Notions",
+        "listeners": 446,
+        "playcount": 1455
+      },
+      {
+        "name": "The Speed of Each Species",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "How Is Your Heart",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Little Wonder",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Late One Afternoon",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Sweet Sloth",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "If We Could Only Fly",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Slumbering",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Max+Arnolds"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

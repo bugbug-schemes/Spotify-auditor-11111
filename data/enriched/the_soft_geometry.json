@@ -1,0 +1,124 @@
+{
+  "artist_name": "The Soft Geometry",
+  "artist_id": "the_soft_geometry",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:36:29.454536+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 347941511,
+    "name": "The Soft Geometry",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/347941511",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4a5edee9c72d14ea9dd7d789489b5863/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Midnight Dialogue"
+    ],
+    "track_durations": [
+      169
+    ],
+    "track_ranks": [
+      37475
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Midnight Dialogue",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beautiful Ways",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Soft Geometry",
+    "mbid": "",
+    "listeners": 4670,
+    "playcount": 8536,
+    "listener_play_ratio": 1.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Soft+Geometry\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Low Light Trio",
+      "Nighthawks Revisited",
+      "Deer Groves",
+      "James Leeluck",
+      "Chops & Coda"
+    ],
+    "top_tracks": [
+      {
+        "name": "Midnight Dialogue",
+        "listeners": 4669,
+        "playcount": 8534
+      },
+      {
+        "name": "Plasterplex [DEMO-NO VOX]",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "False Hood [DEMO]",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Soft+Geometry"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

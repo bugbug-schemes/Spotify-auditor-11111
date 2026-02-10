@@ -1,0 +1,212 @@
+{
+  "artist_name": "Astra",
+  "artist_id": "astra",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:15:10.143708+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3f4d45ba-4984-4edc-8e6d-c616f019011d",
+    "type": "Group",
+    "country": "IT",
+    "area": "Italy",
+    "begin_date": "2001",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "progressive metal"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002061398",
+      "discogs": "https://www.discogs.com/artist/1335124",
+      "free streaming": "https://www.deezer.com/artist/85779992",
+      "other databases": "https://www.progarchives.com/artist.asp?id=3803",
+      "purchase for download": "https://itunes.apple.com/gb/artist/id1472403373"
+    },
+    "labels": [
+      "Burning Star Records",
+      "Rise Above Records",
+      "Lion Music",
+      "Scarlet Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 85780042,
+    "name": "Astra",
+    "nb_fan": 131,
+    "nb_album": 0,
+    "link": "https://www.deezer.com/artist/85780042",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6c78c9d7ad1b8200a1e2e4e3e91fd641/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {},
+    "albums": [],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 27376,
+    "name": "Astra",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Pete Pritchard",
+      "Ben Keen",
+      "Richard Bottom"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 8,
+    "total_releases": 16,
+    "formats": [
+      "",
+      "12\"",
+      "20xFile, MP3, Album",
+      "2xCD, Mixed",
+      "CD, Comp, Mixed",
+      "CD, Comp, Promo",
+      "CD, Mixed",
+      "CD-ROM, Comp, Mixed, Unofficial, 128",
+      "CD-ROM, Comp, Mixed, Unofficial, MP3",
+      "CDr, CD-ROM, Comp, Unofficial, MP3",
+      "Cass, Mixed, Unofficial",
+      "Cass, Single",
+      "M/Stick, Comp"
+    ],
+    "labels": [
+      "Fast Car Magazine",
+      "Gent2men Entertainment Concept",
+      "Lion Music",
+      "MP3SERVICE",
+      "Megaлайнер Рекордз",
+      "Not On Label",
+      "Nukleuz",
+      "SLAM! (4)",
+      "Skills Recordings",
+      "Virgin, Virgin",
+      "Навигатор"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Astra",
+    "mbid": "8cf73a9c-a9d2-4ea9-81d9-693f28b6ab40",
+    "listeners": 61368,
+    "playcount": 632856,
+    "listener_play_ratio": 10.31,
+    "bio_exists": true,
+    "bio_summary": "There are at least three artists named 'Astra':\n1) American psych/prog rock, now known as Birth. \n2) Italian progressive metal. \n3) Estonian electronic/dance. \n4) Brazilian producer. \n\n1) Astra formed in San Diego, CA in the year 2001 as Silver Sunshine. They released their eponymous debut album in 2004 on Empyrean Records, followed by \"A Small Pocket of Pure Spirit\" - their evolved EP in 2005 on the same label. With the departure of original Silver Sunshine drummer Iain Andrew Sclater <a href=\"",
+    "tags": [
+      "Progressive rock",
+      "Psychedelic Rock",
+      "Progressive metal",
+      "Stoner Rock",
+      "psychedelic"
+    ],
+    "similar_artists": [
+      "Eloy",
+      "Nektar",
+      "Bigelf",
+      "Phideaux",
+      "Porcupine Tree"
+    ],
+    "top_tracks": [
+      {
+        "name": "Casual",
+        "listeners": 12740,
+        "playcount": 31260
+      },
+      {
+        "name": "Shade",
+        "listeners": 10581,
+        "playcount": 20550
+      },
+      {
+        "name": "The Rising of the Black Sun",
+        "listeners": 8846,
+        "playcount": 37310
+      },
+      {
+        "name": "The Weirding",
+        "listeners": 8279,
+        "playcount": 39594
+      },
+      {
+        "name": "Silent Sleep",
+        "listeners": 6940,
+        "playcount": 30073
+      },
+      {
+        "name": "The River Under",
+        "listeners": 6666,
+        "playcount": 27934
+      },
+      {
+        "name": "Broken Glass",
+        "listeners": 6268,
+        "playcount": 28361
+      },
+      {
+        "name": "Ouroboros",
+        "listeners": 6179,
+        "playcount": 26038
+      },
+      {
+        "name": "Cocoon",
+        "listeners": 5607,
+        "playcount": 22904
+      },
+      {
+        "name": "Beyond to Slight the Maze",
+        "listeners": 5524,
+        "playcount": 24039
+      }
+    ],
+    "url": "https://www.last.fm/music/Astra"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

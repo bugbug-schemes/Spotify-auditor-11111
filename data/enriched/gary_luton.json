@@ -1,0 +1,248 @@
+{
+  "artist_name": "Gary Luton",
+  "artist_id": "gary_luton",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:48:24.084725+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dcc4f992-3a35-436e-a096-d5fd6434c90b",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/12740199",
+      "purchase for download": "https://music.apple.com/us/artist/1254019556"
+    },
+    "labels": [
+      "Reflected Sounds",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12740199,
+    "name": "Gary Luton",
+    "nb_fan": 76,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/12740199",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/aa3b5418293d1fd30fa5b20e9eb22d24/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Dreams - Edit",
+      "Horizon",
+      "Shore"
+    ],
+    "track_durations": [
+      165,
+      216,
+      219
+    ],
+    "track_ranks": [
+      337909,
+      158747,
+      99917
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Cloud Drift",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreams - Edit",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hope",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aurora",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreams",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shore",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shadows - Glizzinger Edit",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kashmir (Edit)",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moscow (Edit)",
+        "label": "",
+        "release_date": "2021-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moscow",
+        "label": "",
+        "release_date": "2019-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shadows",
+        "label": "",
+        "release_date": "2018-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gary Luton",
+    "mbid": "dcc4f992-3a35-436e-a096-d5fd6434c90b",
+    "listeners": 32845,
+    "playcount": 139176,
+    "listener_play_ratio": 4.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gary+Luton\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Crade",
+      "Samba Twins",
+      "Fresh Faces",
+      "Toby Tech",
+      "Tekkla"
+    ],
+    "top_tracks": [
+      {
+        "name": "Horizon",
+        "listeners": 23026,
+        "playcount": 81928
+      },
+      {
+        "name": "Shadows",
+        "listeners": 8520,
+        "playcount": 24773
+      },
+      {
+        "name": "Kashmir (Edit)",
+        "listeners": 4763,
+        "playcount": 12731
+      },
+      {
+        "name": "Dreams - Edit",
+        "listeners": 2986,
+        "playcount": 6134
+      },
+      {
+        "name": "Shadows - Glizzinger Edit",
+        "listeners": 1739,
+        "playcount": 4054
+      },
+      {
+        "name": "Cloud Drift",
+        "listeners": 1319,
+        "playcount": 2503
+      },
+      {
+        "name": "Shore",
+        "listeners": 1283,
+        "playcount": 4832
+      },
+      {
+        "name": "Moscow",
+        "listeners": 411,
+        "playcount": 1413
+      },
+      {
+        "name": "Hope",
+        "listeners": 163,
+        "playcount": 411
+      },
+      {
+        "name": "Kashmir",
+        "listeners": 97,
+        "playcount": 297
+      }
+    ],
+    "url": "https://www.last.fm/music/Gary+Luton"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,162 @@
+{
+  "artist_name": "Max Laugland",
+  "artist_id": "max_laugland",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:35:20.313715+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 145441222,
+    "name": "Max Laugland",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/145441222",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c67ced974d555c63fb002c81f497134b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "All I Want for Christmas (Is My Two Front Teeth)"
+    ],
+    "track_durations": [
+      121
+    ],
+    "track_ranks": [
+      21327
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Summer Rain",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Homecoming Blackbirds",
+        "label": "",
+        "release_date": "2024-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thank You",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All I Want for Christmas (Is My Two Front Teeth)",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Creep",
+        "label": "",
+        "release_date": "2023-01-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What Child Is This",
+        "label": "",
+        "release_date": "2021-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Max Laugland",
+    "mbid": "",
+    "listeners": 1021,
+    "playcount": 2373,
+    "listener_play_ratio": 2.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Max+Laugland\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Philipe Goldman",
+      "Duerme Bebe",
+      "Taylor Bernette",
+      "David Snellbacher",
+      "Phillipe Goldman"
+    ],
+    "top_tracks": [
+      {
+        "name": "All I Want For Christmas (Is My Two Front Teeth)",
+        "listeners": 478,
+        "playcount": 1057
+      },
+      {
+        "name": "Creep",
+        "listeners": 333,
+        "playcount": 875
+      },
+      {
+        "name": "Summer Rain",
+        "listeners": 209,
+        "playcount": 413
+      },
+      {
+        "name": "Homecoming Blackbirds",
+        "listeners": 13,
+        "playcount": 20
+      },
+      {
+        "name": "What Child Is This",
+        "listeners": 8,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/Max+Laugland"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

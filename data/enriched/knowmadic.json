@@ -1,0 +1,561 @@
+{
+  "artist_name": "Knowmadic",
+  "artist_id": "knowmadic",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:50:35.214274+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ab4082e2-11ab-481e-9d39-b7b11a0a0fde",
+    "type": "Person",
+    "country": "",
+    "area": "California",
+    "begin_date": "1993-07-17",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "downtempo",
+      "boom bap",
+      "spoken word",
+      "comedy",
+      "instrumental",
+      "chillwave",
+      "hip hop"
+    ],
+    "aliases": [
+      "Michael Skulich"
+    ],
+    "isnis": [],
+    "ipis": [
+      "01193106963"
+    ],
+    "urls": {
+      "bandcamp": "https://knowmadicbeats.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/4977116",
+      "free streaming": "https://www.deezer.com/artist/12209928",
+      "last.fm": "https://www.last.fm/music/knowmadic",
+      "purchase for download": "https://www.beatport.com/artist/knowmadic/612856",
+      "social network": "https://www.instagram.com/knowmadic_/",
+      "soundcloud": "https://soundcloud.com/knowmadicbeats",
+      "streaming": "https://tidal.com/artist/8639067"
+    },
+    "labels": [
+      "FGHK",
+      "Chillhop Music",
+      "Inner Ocean Records",
+      "[no label]",
+      "Mellow",
+      "Nettwerk",
+      "Hip Dozer",
+      "Repost Network",
+      "Chillhop Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12209928,
+    "name": "Knowmadic",
+    "nb_fan": 532,
+    "nb_album": 49,
+    "link": "https://www.deezer.com/artist/12209928",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5a26003d096154b131d5ff36c7ef9c61/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Atlantic Chill",
+      "Shy Guy",
+      "Various Artists"
+    ],
+    "contributor_roles": {
+      "Atlantic Chill": [
+        "Main"
+      ],
+      "Shy Guy": [
+        "Main"
+      ],
+      "Various Artists": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Inertia",
+      "Someone",
+      "What You Left Behind",
+      "ghostin",
+      "Fade",
+      "Faces",
+      "Street Lights",
+      "Element",
+      "constant",
+      "Do Not Go",
+      "Summer Walk",
+      "Passing",
+      "Disconnect",
+      "Living",
+      "Ripple Effect",
+      "Passing Time",
+      "First Contact",
+      "leaving",
+      "digital dreams",
+      "Nod.Off",
+      "Stares",
+      "Changing Winds",
+      ".",
+      "Course",
+      "The Breeze"
+    ],
+    "track_durations": [
+      149,
+      134,
+      131,
+      133,
+      157,
+      133,
+      122,
+      125,
+      106,
+      115,
+      146,
+      129,
+      109,
+      131,
+      110,
+      129,
+      147,
+      112,
+      171,
+      97,
+      100,
+      106,
+      72,
+      138,
+      123
+    ],
+    "track_ranks": [
+      186274,
+      399772,
+      139054,
+      126268,
+      174579,
+      150650,
+      36308,
+      152874,
+      122970,
+      63171,
+      96219,
+      30470,
+      30471,
+      46559,
+      55363,
+      36993,
+      97572,
+      39212,
+      62827,
+      15544,
+      15372,
+      31610,
+      26120,
+      89214,
+      11445
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 11,
+      "ep": 7,
+      "single": 31
+    },
+    "albums": [
+      {
+        "title": "Irons in the Fire",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "rain check",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Moving Mountains",
+        "label": "",
+        "release_date": "2022-12-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nostalgia",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Departure",
+        "label": "",
+        "release_date": "2019-08-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Reflections",
+        "label": "",
+        "release_date": "2018-12-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Coming Up for Air",
+        "label": "",
+        "release_date": "2018-10-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nowhere",
+        "label": "",
+        "release_date": "2017-04-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "better off",
+        "label": "",
+        "release_date": "2017-09-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "bumps",
+        "label": "",
+        "release_date": "2017-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lately",
+        "label": "",
+        "release_date": "2017-01-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Maybe I'll Change",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wildflower",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Echos",
+        "label": "",
+        "release_date": "2020-02-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Drifting",
+        "label": "",
+        "release_date": "2019-04-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hydrangea",
+        "label": "",
+        "release_date": "2018-07-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Spring Loops",
+        "label": "",
+        "release_date": "2018-04-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Strays",
+        "label": "",
+        "release_date": "2018-01-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "No rush",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slide",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grey",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Constellations",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "So It Goes",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Light",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Irons in the Fire",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Notes",
+        "label": "",
+        "release_date": "2025-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Comingback",
+        "label": "",
+        "release_date": "2025-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Free fall",
+        "label": "",
+        "release_date": "2024-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take a breath",
+        "label": "",
+        "release_date": "2024-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Arbour",
+      "H.1",
+      "Wun two",
+      "Oatmello",
+      "Sleepdealer",
+      "Halberd",
+      "Brenky",
+      "Jinsang",
+      "J'San",
+      "Idealism"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4977116,
+    "name": "knowmadic",
+    "profile": "Producer of instrumental hip-hop and lo-fi beats from San Jose, California.",
+    "realname": "",
+    "social_urls": [
+      "https://knowmadicbeats.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 28,
+    "total_releases": 32,
+    "formats": [
+      "",
+      "11xFile, FLAC, Album",
+      "14xFile, FLAC, Album",
+      "19xFile, FLAC, Comp",
+      "19xFile, MP3, Comp",
+      "20xFile, WAV, Comp",
+      "21xFile, MP3, Comp",
+      "22xFile, WAV, Comp",
+      "26xFile, WAV, Comp",
+      "2x12\", Comp, Ltd, Gat",
+      "2xCass, Comp, Ltd",
+      "2xLP, Comp, Ltd",
+      "34xFile, MP3, Comp, 320",
+      "7xFile, FLAC, 16b",
+      "9xFile, FLAC, 16b",
+      "9xFile, FLAC, Album, 16b",
+      "Cass, Album",
+      "Cass, Album, Comp",
+      "Cass, Album, Comp, Ltd, Yel",
+      "Cass, Album, Ltd",
+      "Cass, Comp",
+      "File, FLAC, Single, 16b",
+      "LP, Album, Ltd",
+      "LP, Comp, Ltd, Num, Tra"
+    ],
+    "labels": [
+      "Chillhop Music",
+      "Chillhop Records",
+      "Fuzzoscope",
+      "HHV, Radio Juicy, Urban Waves Records",
+      "Hip Dozer",
+      "Inner Ocean Records",
+      "Inner Ocean Records, O-Nei-Ric Tapes, Saikei Collective",
+      "Not On Label (Cauzndefx Self-released)",
+      "Radio Juicy",
+      "Radio.wavs",
+      "lofi.hiphop",
+      "radio.wavs"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "knowmadic",
+    "mbid": "",
+    "listeners": 304325,
+    "playcount": 2728826,
+    "listener_play_ratio": 8.97,
+    "bio_exists": true,
+    "bio_summary": "There are at least two artists sharing the name Knowmadic: 1)  An American producer of lofi hip hop one who's music is mostly listed here  2) A  Somali-Canadian poet, writer, actor,  and youth activist. <a href=\"https://www.last.fm/music/knowmadic\">Read more on Last.fm</a>",
+    "tags": [
+      "instrumental hip-hop",
+      "beats",
+      "Hip-Hop",
+      "instrumental",
+      "hip hop"
+    ],
+    "similar_artists": [
+      "nohidea",
+      "fujitsu",
+      "idealism",
+      "sleepdealer",
+      "Chief."
+    ],
+    "top_tracks": [
+      {
+        "name": "faces",
+        "listeners": 95382,
+        "playcount": 368260
+      },
+      {
+        "name": "Fade",
+        "listeners": 90812,
+        "playcount": 403974
+      },
+      {
+        "name": "idkanymore",
+        "listeners": 53111,
+        "playcount": 200982
+      },
+      {
+        "name": "hydrangea",
+        "listeners": 46457,
+        "playcount": 159307
+      },
+      {
+        "name": "omw",
+        "listeners": 41836,
+        "playcount": 94206
+      },
+      {
+        "name": "ghostin",
+        "listeners": 35286,
+        "playcount": 138733
+      },
+      {
+        "name": "Pyr",
+        "listeners": 34575,
+        "playcount": 94202
+      },
+      {
+        "name": "Beginnings",
+        "listeners": 31193,
+        "playcount": 109165
+      },
+      {
+        "name": "Solitude",
+        "listeners": 29243,
+        "playcount": 70827
+      },
+      {
+        "name": "spliff",
+        "listeners": 29204,
+        "playcount": 105003
+      }
+    ],
+    "url": "https://www.last.fm/music/knowmadic"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

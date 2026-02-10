@@ -1,0 +1,124 @@
+{
+  "artist_name": "Pixeo",
+  "artist_id": "pixeo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:29:12.496397+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Pixeo', got 'The Pigeon Detectives'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pixeo",
+    "mbid": "",
+    "listeners": 32878,
+    "playcount": 197006,
+    "listener_play_ratio": 5.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pixeo\">Read more on Last.fm</a>",
+    "tags": [
+      "drone",
+      "binaural beats"
+    ],
+    "similar_artists": [
+      "Qhol",
+      "DreamDeeper",
+      "Mission Venus",
+      "Binaural Explorer",
+      "Blue Triangles"
+    ],
+    "top_tracks": [
+      {
+        "name": "focus - Alpha Sinus 82Hz - 90Hz",
+        "listeners": 19819,
+        "playcount": 77770
+      },
+      {
+        "name": "subconcious Delta Sinus 81 Hz - 83Hz",
+        "listeners": 13741,
+        "playcount": 84600
+      },
+      {
+        "name": "reflection - Binaural Alpha Sinus 90Hz - 98Hz",
+        "listeners": 9723,
+        "playcount": 33949
+      },
+      {
+        "name": "Himalayan Delta Sinus - 130Hz - 133Hz",
+        "listeners": 166,
+        "playcount": 322
+      },
+      {
+        "name": "Delta Rain - 125Hz - 126Hz",
+        "listeners": 106,
+        "playcount": 210
+      },
+      {
+        "name": "Delta Sleep Phases - 65Hz - 68Hz",
+        "listeners": 21,
+        "playcount": 29
+      },
+      {
+        "name": "Art of the Flow - Alpha 83Hz - 90Hz",
+        "listeners": 12,
+        "playcount": 29
+      },
+      {
+        "name": "Rain Binaural Dogs Waves",
+        "listeners": 8,
+        "playcount": 8
+      },
+      {
+        "name": "Dogs Binaural Rain Nights",
+        "listeners": 8,
+        "playcount": 8
+      },
+      {
+        "name": "Alpha Connections 80Hz - 90Hz",
+        "listeners": 6,
+        "playcount": 14
+      }
+    ],
+    "url": "https://www.last.fm/music/Pixeo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

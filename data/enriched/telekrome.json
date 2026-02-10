@@ -1,0 +1,121 @@
+{
+  "artist_name": "TELEKROME",
+  "artist_id": "telekrome",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:22:54.192265+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'TELEKROME', got 'Teleforme'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "TELEKROME",
+    "mbid": "",
+    "listeners": 29168,
+    "playcount": 160781,
+    "listener_play_ratio": 5.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/TELEKROME\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sea Bright Waves",
+      "Waves Of Costa Del Sol",
+      "Soothing Waves Of Nerja",
+      "Pacific Ocean Wave Sounds",
+      "XLX Library"
+    ],
+    "top_tracks": [
+      {
+        "name": "Big Waves",
+        "listeners": 13334,
+        "playcount": 48966
+      },
+      {
+        "name": "Rain in The Forest",
+        "listeners": 11108,
+        "playcount": 33388
+      },
+      {
+        "name": "Soothing Pacific Waves pt. 1",
+        "listeners": 8249,
+        "playcount": 32632
+      },
+      {
+        "name": "Luscious Wave Sounds",
+        "listeners": 2760,
+        "playcount": 12692
+      },
+      {
+        "name": "Hear The Ocean",
+        "listeners": 2531,
+        "playcount": 12176
+      },
+      {
+        "name": "Cold Rain Sounds",
+        "listeners": 2376,
+        "playcount": 7073
+      },
+      {
+        "name": "Smooth Rain",
+        "listeners": 2011,
+        "playcount": 5619
+      },
+      {
+        "name": "European Rain",
+        "listeners": 598,
+        "playcount": 1144
+      },
+      {
+        "name": "In the Forest (Rain Sounds)",
+        "listeners": 395,
+        "playcount": 866
+      },
+      {
+        "name": "Soothing Pacific Waves Pt. 3",
+        "listeners": 381,
+        "playcount": 851
+      }
+    ],
+    "url": "https://www.last.fm/music/TELEKROME"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,91 @@
+{
+  "artist_name": "Plaxon",
+  "artist_id": "plaxon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:29:54.750337+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Plaxon', got 'Michel Plasson'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Plaxon",
+    "mbid": "",
+    "listeners": 13634,
+    "playcount": 29061,
+    "listener_play_ratio": 2.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Plaxon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sunny Léo",
+      "Lil Francky",
+      "Dry Season",
+      "Cozeen",
+      "minoumi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Surreal",
+        "listeners": 10838,
+        "playcount": 22730
+      },
+      {
+        "name": "Midway Through",
+        "listeners": 3273,
+        "playcount": 5600
+      },
+      {
+        "name": "Getting There",
+        "listeners": 591,
+        "playcount": 730
+      },
+      {
+        "name": "T-77",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Plaxon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

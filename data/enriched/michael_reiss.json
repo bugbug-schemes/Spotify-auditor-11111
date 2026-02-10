@@ -1,0 +1,173 @@
+{
+  "artist_name": "Michael Reiss",
+  "artist_id": "michael_reiss",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:41:28.665911+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d43d5637-2e08-48eb-b835-36eae6220aae",
+    "type": "Person",
+    "country": "NO",
+    "area": "Norway",
+    "begin_date": "1956-11-25",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Georg Reiss"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "wikidata": "https://www.wikidata.org/wiki/Q17106759"
+    },
+    "labels": [
+      "Curling Legs"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Michael Reiss', got 'Michael Reiß'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 955814,
+    "name": "Michael Reiss",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 15,
+    "digital_only_releases": 12,
+    "total_releases": 27,
+    "formats": [
+      "",
+      "CD",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Mixed",
+      "CD, Comp, Promo",
+      "CD, Promo, Smplr",
+      "CD, Single, Promo",
+      "CD, Smplr"
+    ],
+    "labels": [
+      "Flip Records (2)",
+      "Helicon Records",
+      "MCA Records",
+      "Mercury",
+      "New Line Records",
+      "Not On Label",
+      "Pro Audio Usa Inc.",
+      "Universal Music México, S.A. de C.V."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Michael Reiss",
+    "mbid": "",
+    "listeners": 13428,
+    "playcount": 53943,
+    "listener_play_ratio": 4.02,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Michael+Reiss\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Duo MR",
+      "K.C Brown",
+      "Oceane Bardot",
+      "Andreas Horschel",
+      "Miko Yoshida"
+    ],
+    "top_tracks": [
+      {
+        "name": "Winter Dreamin'",
+        "listeners": 4419,
+        "playcount": 14825
+      },
+      {
+        "name": "Wetterstein",
+        "listeners": 2613,
+        "playcount": 6258
+      },
+      {
+        "name": "Whispering Winds",
+        "listeners": 2581,
+        "playcount": 7260
+      },
+      {
+        "name": "Waimea Falls",
+        "listeners": 2316,
+        "playcount": 6533
+      },
+      {
+        "name": "Siena Dreamin'",
+        "listeners": 1958,
+        "playcount": 5452
+      },
+      {
+        "name": "Winter Solstice",
+        "listeners": 1193,
+        "playcount": 2734
+      },
+      {
+        "name": "Isaar im Mondschein",
+        "listeners": 1050,
+        "playcount": 2655
+      },
+      {
+        "name": "You Don't Know Me",
+        "listeners": 869,
+        "playcount": 1602
+      },
+      {
+        "name": "Pumori",
+        "listeners": 661,
+        "playcount": 1655
+      },
+      {
+        "name": "Am Falkenstein",
+        "listeners": 436,
+        "playcount": 1115
+      }
+    ],
+    "url": "https://www.last.fm/music/Michael+Reiss"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

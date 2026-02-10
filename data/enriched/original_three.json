@@ -1,0 +1,269 @@
+{
+  "artist_name": "Original Three",
+  "artist_id": "original_three",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:15:53.667448+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "365d0a06-066a-47a5-840e-2dc8a92ee227",
+    "type": "Group",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1562508"
+    },
+    "labels": [
+      "P. Trash Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 221294875,
+    "name": "Original Three",
+    "nb_fan": 29,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/221294875",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/42e48d9a18a0decd876ef3cf58fb6af0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "You Gave Me The Look",
+      "The Days Go Slowly By",
+      "If You Wish For My Despair",
+      "You're All I Can Think Of",
+      "Missed The Last Dance With You"
+    ],
+    "track_durations": [
+      304,
+      221,
+      213,
+      298,
+      304
+    ],
+    "track_ranks": [
+      312508,
+      65318,
+      38619,
+      31632,
+      63227
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Hoping Slowly",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loving You Is Everything",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Days Go Slowly By",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If You Wish For My Despair",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yes Sir, That's My Baby",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Missed The Last Dance With You",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Gave Me The Look",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serenade To Spring",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You're All I Can Think Of",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Nouveau Jazz Trio",
+      "North West Trio",
+      "Lachlan Wright Trio",
+      "Melina Paxinos",
+      "Julie Erikssen",
+      "Helen Merrill",
+      "Kyle Eastwood",
+      "Louis Hayes",
+      "Mary Lou Williams",
+      "Betty Carter"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1866646,
+    "name": "Original Three",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Original Three",
+    "mbid": "",
+    "listeners": 83626,
+    "playcount": 288363,
+    "listener_play_ratio": 3.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Original+Three\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "All",
+      "check",
+      "base hit"
+    ],
+    "similar_artists": [
+      "Rossdale Junction",
+      "Luke Marantz Trio",
+      "Most Iverson",
+      "Gabriel Gonzalez",
+      "Magpie Jazz Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "You Gave Me That Look",
+        "listeners": 41245,
+        "playcount": 99538
+      },
+      {
+        "name": "Missed The Last Dance With You",
+        "listeners": 36043,
+        "playcount": 82910
+      },
+      {
+        "name": "You're All I Can Think Of",
+        "listeners": 27656,
+        "playcount": 69478
+      },
+      {
+        "name": "The Days Go Slowly By",
+        "listeners": 11686,
+        "playcount": 25519
+      },
+      {
+        "name": "If You Wish For My Despair",
+        "listeners": 2763,
+        "playcount": 5412
+      },
+      {
+        "name": "Hoping Slowly",
+        "listeners": 1649,
+        "playcount": 3355
+      },
+      {
+        "name": "You Gave Me The Look",
+        "listeners": 218,
+        "playcount": 461
+      },
+      {
+        "name": "Yes Sir, That's My Baby",
+        "listeners": 99,
+        "playcount": 123
+      },
+      {
+        "name": "Serenade To Spring",
+        "listeners": 85,
+        "playcount": 116
+      },
+      {
+        "name": "Been There",
+        "listeners": 75,
+        "playcount": 192
+      }
+    ],
+    "url": "https://www.last.fm/music/Original+Three"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

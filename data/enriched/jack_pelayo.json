@@ -1,0 +1,151 @@
+{
+  "artist_name": "Jack Pelayo",
+  "artist_id": "jack_pelayo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:19:51.174315+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "cd8608be-e5dc-4751-ab4a-755c71408043",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183260547,
+    "name": "Jack Pelayo",
+    "nb_fan": 3,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/183260547",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/203df40cdffe3595a47140ba62159138/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Coming Day",
+      "Inside Of Me"
+    ],
+    "track_durations": [
+      152,
+      158
+    ],
+    "track_ranks": [
+      99746,
+      65279
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "The Coming Day",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Inside Of Me",
+        "label": "",
+        "release_date": "2020-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jack Pelayo",
+    "mbid": "cd8608be-e5dc-4751-ab4a-755c71408043",
+    "listeners": 30547,
+    "playcount": 140841,
+    "listener_play_ratio": 4.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jack+Pelayo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Will Kaufman",
+      "Jon Albreit",
+      "Taganema",
+      "Tristaan Wilkes",
+      "Rhian Cadogan"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Coming Day",
+        "listeners": 26078,
+        "playcount": 124108
+      },
+      {
+        "name": "Inside Of Me",
+        "listeners": 5206,
+        "playcount": 16692
+      },
+      {
+        "name": "If You Were Here",
+        "listeners": 27,
+        "playcount": 31
+      },
+      {
+        "name": "Your Words",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Jack Pelayo - The Coming Day",
+        "listeners": 1,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Jack+Pelayo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

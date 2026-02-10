@@ -1,0 +1,181 @@
+{
+  "artist_name": "Dark Forest Effects",
+  "artist_id": "dark_forest_effects",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:21:58.985491+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 263607731,
+    "name": "Dark Forest Effects",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/263607731",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/753dd170f9051b00acfdb2396fc670b6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Ancient Oaks",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Odyssey",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eyrie",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bráen",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Water",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The flowering of Viennese",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10185946,
+    "name": "Ziohm",
+    "profile": "Psychedelic Trance DJ producer based in Brasília, Brazil \r\n\r\nInspired by old school Psytrance and modern/classic genres such as the European Full-on scene with Tristan, Electric Universe, Avalon and Ajja, the Israeli Progressive scene with Astrix, Ace Ventura and Infected Mushroom, and the DarkPsy scene with Goa Gil, Hyperekplexia and Atriohm. Combining styles and producing mostly 150 bpm tracks, the Ziohm project aims to deliver aggressive basslines, sometimes rhythmically similar to the progressive/Full-On styles, but synthesized as the Darkpsy bass. Melodic and forest/Dark Leads are also present as the tracks progresses.The music tends to be packed with effects, ambiences and leads, inspired by the darker night styles. All the tracks are 100% produced, mixed and mastered by Ziohm.\r\n\r\nContact: l.ricardorod@gmail.com",
+    "realname": "Ricardo Rodrigues ",
+    "social_urls": [
+      "https://www.facebook.com/ricardo.rodrigues.526875",
+      "https://www.facebook.com/Ziohmpsy",
+      "https://soundcloud.com/ziohmpsy"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "2xFile, WAV",
+      "File, WAV",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "Infinity-Tunes",
+      "Let It Out",
+      "Rudá Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dark Forest Effects",
+    "mbid": "",
+    "listeners": 9216,
+    "playcount": 25715,
+    "listener_play_ratio": 2.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dark+Forest+Effects\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cashmere Cove",
+      "Brkati Madjinca",
+      "Muqamar",
+      "Caio Blanco",
+      "Embershine Air"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ancient Oaks",
+        "listeners": 4559,
+        "playcount": 9969
+      },
+      {
+        "name": "The flowering of Viennese",
+        "listeners": 2695,
+        "playcount": 7812
+      },
+      {
+        "name": "Eyrie",
+        "listeners": 2401,
+        "playcount": 7932
+      },
+      {
+        "name": "Open Water",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Odyssey",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Dark+Forest+Effects"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

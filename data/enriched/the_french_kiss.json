@@ -1,0 +1,195 @@
+{
+  "artist_name": "The French Kiss",
+  "artist_id": "the_french_kiss",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:32:59.989794+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6a9fdbd1-b843-4c45-8087-35d91677d724",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "1969-05-10",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Chris \"Da French Kiss\""
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/23059"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 129293322,
+    "name": "The French Kiss",
+    "nb_fan": 37,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/129293322",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/693067018e279abc7973e2f524c21334/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Adanowsky"
+    ],
+    "contributor_roles": {
+      "Adanowsky": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Vértigo De Amor",
+      "El Solitario Amor"
+    ],
+    "track_durations": [
+      207,
+      175
+    ],
+    "track_ranks": [
+      16662,
+      146583
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2
+    },
+    "albums": [
+      {
+        "title": "Mis Grandes Éxitos",
+        "label": "",
+        "release_date": "2022-08-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mis Grandes Éxitos",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 147006,
+    "name": "The French Kiss",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The French Kiss",
+    "mbid": "",
+    "listeners": 17,
+    "playcount": 87,
+    "listener_play_ratio": 5.12,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+French+Kiss\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Dream a Little Dream of me",
+        "listeners": 2,
+        "playcount": 35
+      },
+      {
+        "name": "Close to Modern",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Piano",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Bloodred Tears",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "The Trial Of The Century",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Dom",
+        "listeners": 1,
+        "playcount": 10
+      },
+      {
+        "name": "Gabriel Rios - Gold (Thomas Jack Remix)",
+        "listeners": 1,
+        "playcount": 9
+      },
+      {
+        "name": "You Could Not Decide",
+        "listeners": 1,
+        "playcount": 6
+      },
+      {
+        "name": "Capitol",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "All is better with you",
+        "listeners": 1,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/The+French+Kiss"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

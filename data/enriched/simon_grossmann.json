@@ -1,0 +1,512 @@
+{
+  "artist_name": "Simon Grossmann",
+  "artist_id": "simon_grossmann",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:04:59.447768+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f5e8e568-2f49-4eb0-bbbe-e66782bd9f71",
+    "type": "Person",
+    "country": "",
+    "area": "Miami",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6t38N9HASTn9ca0PIxfReQ",
+      "official homepage": "https://www.simongrossmann.net/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1160960360",
+      "social network": "https://www.instagram.com/simongrossmann/",
+      "soundcloud": "https://soundcloud.com/simongrossmann",
+      "streaming": "https://tidal.com/artist/9466890",
+      "youtube": "https://www.youtube.com/channel/UCvcDBIJQAQOEnQ8JS4QUSwA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11377982,
+    "name": "Simon Grossmann",
+    "nb_fan": 1475,
+    "nb_album": 41,
+    "link": "https://www.deezer.com/artist/11377982",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b17e025b28c490c5d2af70e1a33306c7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bebo Dumont",
+      "Camila Orantes",
+      "Gamboa",
+      "Los Rivera Destino",
+      "Rawayana",
+      "maye"
+    ],
+    "contributor_roles": {
+      "Rawayana": [
+        "Main"
+      ],
+      "Los Rivera Destino": [
+        "Main"
+      ],
+      "Bebo Dumont": [
+        "Main"
+      ],
+      "Gamboa": [
+        "Main"
+      ],
+      "maye": [
+        "Main"
+      ],
+      "Camila Orantes": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Café con Leche",
+      "Bebé",
+      "Agüitaecoco",
+      "Patineta",
+      "jardín de flores",
+      "Luna Llena",
+      "Parte de Mi",
+      "Copa Del Mundo",
+      "Pienso",
+      "Sin Vergüenza",
+      "Ciclo",
+      "Brazil",
+      "Quiero Agradecer",
+      "Limón y Sal",
+      "Daikiri",
+      "Amor Nuevo",
+      "Bolerito Sad",
+      "A la Madrugada",
+      "Mujer Eléctrica",
+      "Nawebona",
+      "Corolla 94",
+      "Lindo Placer",
+      "Waterproof",
+      "Mi Locura",
+      "Nitro - HIDDEN ROOM #7"
+    ],
+    "track_durations": [
+      113,
+      175,
+      199,
+      192,
+      199,
+      191,
+      175,
+      191,
+      234,
+      241,
+      172,
+      160,
+      305,
+      280,
+      237,
+      265,
+      181,
+      262,
+      211,
+      196,
+      201,
+      182,
+      185,
+      186,
+      177
+    ],
+    "track_ranks": [
+      209433,
+      197191,
+      249779,
+      56353,
+      41774,
+      202681,
+      109229,
+      122597,
+      188707,
+      167804,
+      154253,
+      226241,
+      84114,
+      164303,
+      117918,
+      168181,
+      218111,
+      117209,
+      111068,
+      58135,
+      157224,
+      92405,
+      61759,
+      111621,
+      27236
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 3,
+      "ep": 4,
+      "single": 34
+    },
+    "albums": [
+      {
+        "title": "Empezar Ganando",
+        "label": "",
+        "release_date": "2025-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bahía Margarita",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mujer Eléctrica",
+        "label": "",
+        "release_date": "2018-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Aperol Queen",
+        "label": "",
+        "release_date": "2025-05-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mostly Fresh Live Session",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mostly Fresh",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ciclo",
+        "label": "",
+        "release_date": "2017-03-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Palo Santo",
+        "label": "",
+        "release_date": "2025-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Copa Del Mundo",
+        "label": "",
+        "release_date": "2025-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cazafantasmas",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nitro - HIDDEN ROOM #7",
+        "label": "",
+        "release_date": "2025-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carnaval",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brazil",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perreo Acústico",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te Hice Un Reggae",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Supernova",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Atardecer (Live Session)",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Balas Perdidas (Dub Remix)",
+        "label": "",
+        "release_date": "2024-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gringuita",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Milanoche",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bebé",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nawebona",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waterproof",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corolla 94",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sin 0",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "jardín de flores",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Facendo L'Amore",
+        "label": "",
+        "release_date": "2021-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daikiri",
+        "label": "",
+        "release_date": "2021-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Patineta",
+        "label": "",
+        "release_date": "2021-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Canción de Amor",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Marissa Mur",
+      "Silvana Estrada",
+      "Sebastián Romero",
+      "Juan Pablo Vega",
+      "Alex Ferreira",
+      "Alex Cuba",
+      "Marco Mares",
+      "Natalia Lafourcade",
+      "Pantoja",
+      "El Otro Polo"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 13570420,
+    "name": "Simon Grossmann",
+    "profile": "Venezuelan singer, guitarist, songwriter (based in living in Miami, Florida)",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP"
+    ],
+    "labels": [
+      "Not on Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Simon Grossmann",
+    "mbid": "f5e8e568-2f49-4eb0-bbbe-e66782bd9f71",
+    "listeners": 72548,
+    "playcount": 605892,
+    "listener_play_ratio": 8.35,
+    "bio_exists": true,
+    "bio_summary": "Simon Grossmann is a Miami based Venezuelan-American singer-songwriter who, like many, started his adventure playing guitar and writing songs on the edge of his bed. His first “break” came when he started performing his songs at the summer camp where he was working as a counselor. When summer ended, the kids and his fellow counselors started sharing voice-notes of his songs with their friends back home. Surprised with the feedback, Simon decided to record those songs professionally, giving birth",
+    "tags": [
+      "latin",
+      "pop",
+      "venezuela",
+      "latino"
+    ],
+    "similar_artists": [
+      "Rawayana",
+      "Los Amigos Invisibles",
+      "Los Mesoneros",
+      "Lagos",
+      "Irepelusa"
+    ],
+    "top_tracks": [
+      {
+        "name": "Café Con Leche",
+        "listeners": 40352,
+        "playcount": 149918
+      },
+      {
+        "name": "Ciclo",
+        "listeners": 12603,
+        "playcount": 47908
+      },
+      {
+        "name": "Agüitaecoco",
+        "listeners": 10827,
+        "playcount": 54051
+      },
+      {
+        "name": "Luna Llena",
+        "listeners": 9776,
+        "playcount": 38376
+      },
+      {
+        "name": "Parte de Mi",
+        "listeners": 8550,
+        "playcount": 29851
+      },
+      {
+        "name": "Mujer Eléctrica",
+        "listeners": 6483,
+        "playcount": 27909
+      },
+      {
+        "name": "De Nosotros",
+        "listeners": 5732,
+        "playcount": 16607
+      },
+      {
+        "name": "Daikiri",
+        "listeners": 5461,
+        "playcount": 25148
+      },
+      {
+        "name": "Bolerito Sad",
+        "listeners": 4839,
+        "playcount": 14979
+      },
+      {
+        "name": "Pienso",
+        "listeners": 3921,
+        "playcount": 25699
+      }
+    ],
+    "url": "https://www.last.fm/music/Simon+Grossmann"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

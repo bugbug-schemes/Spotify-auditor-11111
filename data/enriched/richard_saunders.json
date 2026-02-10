@@ -1,0 +1,478 @@
+{
+  "artist_name": "Richard Saunders",
+  "artist_id": "richard_saunders",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:42:37.637016+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dc6d6ee0-c9bc-4644-aef2-0ebb60679a37",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/2706726"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 2717431,
+    "name": "Richard Saunders",
+    "nb_fan": 34,
+    "nb_album": 33,
+    "link": "https://www.deezer.com/artist/2717431",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6454dc05fc03dbdeaa56d0e766dd8736/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "3ee",
+      "Amaria",
+      "Amelia Rose",
+      "Solomon"
+    ],
+    "contributor_roles": {
+      "Amelia Rose": [
+        "Main"
+      ],
+      "Amaria": [
+        "Main"
+      ],
+      "Solomon": [
+        "Main"
+      ],
+      "3ee": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Pull Apart the Pieces of My Heart",
+      "Stay With It",
+      "way you want it",
+      "Haven",
+      "Butterflies",
+      "Ms. Jackson",
+      "Falling Backwards",
+      "Trouble",
+      "The Only Exception (live stream 4/13/22)",
+      "You Don't Care",
+      "I wanna go home",
+      "Chamber Of Reflection (live stream 5/19/23)",
+      "Lying With You",
+      "Chanel",
+      "Grossily (high school voice memo)",
+      "Less I Feel Real",
+      "SUGAR"
+    ],
+    "track_durations": [
+      165,
+      268,
+      143,
+      180,
+      171,
+      103,
+      208,
+      232,
+      277,
+      187,
+      278,
+      153,
+      139,
+      221,
+      244,
+      141,
+      151
+    ],
+    "track_ranks": [
+      71816,
+      162243,
+      101516,
+      70594,
+      54969,
+      43044,
+      37255,
+      69062,
+      31335,
+      31158,
+      27189,
+      40510,
+      31470,
+      192600,
+      18678,
+      18792,
+      69881
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 2,
+      "ep": 2,
+      "single": 29
+    },
+    "albums": [
+      {
+        "title": "Foggy Morning",
+        "label": "",
+        "release_date": "2025-04-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "none",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Proof of Your Love",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Butterflies",
+        "label": "",
+        "release_date": "2024-07-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I wanna go home",
+        "label": "",
+        "release_date": "2026-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stories (Acoustic)",
+        "label": "",
+        "release_date": "2025-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Diamond (feat. Elijah Fox)",
+        "label": "",
+        "release_date": "2025-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trying Again",
+        "label": "",
+        "release_date": "2025-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SUGAR",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "way you want it",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Haven",
+        "label": "",
+        "release_date": "2025-07-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "loops",
+        "label": "",
+        "release_date": "2025-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Not",
+        "label": "",
+        "release_date": "2025-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sigo em Frente",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cry on the Train",
+        "label": "",
+        "release_date": "2025-03-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "me + u",
+        "label": "",
+        "release_date": "2025-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Falling Backwards",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perfectionist",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Look My Way",
+        "label": "",
+        "release_date": "2024-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chamber Of Reflection (live stream 5/19/23)",
+        "label": "",
+        "release_date": "2023-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's All Love",
+        "label": "",
+        "release_date": "2023-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Foggy Morning in Bed-Stuy",
+        "label": "",
+        "release_date": "2023-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kinda Like Paradise",
+        "label": "",
+        "release_date": "2023-06-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Me Away (Extended mix)",
+        "label": "",
+        "release_date": "2023-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gay Face",
+        "label": "",
+        "release_date": "2023-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tennessee Whiskey",
+        "label": "",
+        "release_date": "2023-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trouble",
+        "label": "",
+        "release_date": "2023-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sped ups",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Only Exception (live stream 4/13/22)",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ms. Jackson / You Don't Care",
+        "label": "",
+        "release_date": "2022-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Fins Ara",
+      "Danny Knutelsky",
+      "Mehro",
+      "Cullen",
+      "Delaney Bailey",
+      "New West",
+      "Emilia Ali",
+      "Simon Robert French",
+      "Alice Shone",
+      "Mia Smith"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 888801,
+    "name": "Richard Saunders",
+    "profile": "Saxophonist",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 4,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "4xCD, Comp, RM, Box",
+      "7xFile, MP3, MiniAlbum",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Musica Jazz",
+      "Not On Label (Eryn Allen Kane Self-released)",
+      "Proper Records (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Richard Saunders",
+    "mbid": "bacb134d-493f-4eb9-af40-9a7a4ecfff96",
+    "listeners": 9377,
+    "playcount": 49327,
+    "listener_play_ratio": 5.26,
+    "bio_exists": true,
+    "bio_summary": "1) Richard Saunders, Podcaster (Skeptic Zone), Vodcaster and TV Skeptic as seen on 'THE ONE', Richard is also Vice President of Australian Skeptics NSW. In his free time (free time?) he is also part of the Mystery Investigators show for schools.\n\nRichard is also an origami expert and author of 30 books for children. He travels often to the USA to speak at conventions and meetings.\n\nRichard founded Sydney Skeptics in the Pub.\nfrom http://www.skepticzone.tv/aboutus.htm <a href=\"https://www.last.fm",
+    "tags": [
+      "podcast",
+      "Skeptic",
+      "experimental",
+      "pop",
+      "lesser known yet streamable artists"
+    ],
+    "similar_artists": [
+      "Brian Dunning",
+      "Mark Crislip",
+      "SGU Productions",
+      "Skepticality: The Official Podcast of Skeptic Magazine",
+      "D.J. Grothe"
+    ],
+    "top_tracks": [
+      {
+        "name": "SUGAR",
+        "listeners": 2528,
+        "playcount": 4769
+      },
+      {
+        "name": "Trouble",
+        "listeners": 2108,
+        "playcount": 7616
+      },
+      {
+        "name": "Butterflies",
+        "listeners": 964,
+        "playcount": 2138
+      },
+      {
+        "name": "Less I Feel Real",
+        "listeners": 923,
+        "playcount": 2516
+      },
+      {
+        "name": "all I'll do is love you more",
+        "listeners": 913,
+        "playcount": 3133
+      },
+      {
+        "name": "Perfectionist",
+        "listeners": 847,
+        "playcount": 2205
+      },
+      {
+        "name": "Don't Look My Way",
+        "listeners": 789,
+        "playcount": 1675
+      },
+      {
+        "name": "Kinda Like Paradise",
+        "listeners": 685,
+        "playcount": 1764
+      },
+      {
+        "name": "Chamber Of Reflection - live stream 5/19/23",
+        "listeners": 545,
+        "playcount": 1205
+      },
+      {
+        "name": "Foggy Morning in Bed-Stuy",
+        "listeners": 519,
+        "playcount": 1087
+      }
+    ],
+    "url": "https://www.last.fm/music/Richard+Saunders"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,506 @@
+{
+  "artist_name": "Galdive",
+  "artist_id": "galdive",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:47:30.334283+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "00cf07d5-8aa3-4adb-90b2-48323f572dc2",
+    "type": "Group",
+    "country": "ID",
+    "area": "Indonesia",
+    "begin_date": "2018",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "electronic",
+      "electronica",
+      "electropop",
+      "indie pop",
+      "dream pop",
+      "jazz pop",
+      "classical crossover",
+      "indietronica",
+      "r&b"
+    ],
+    "aliases": [
+      "Galdive"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://galdive.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/13854490",
+      "free streaming": "https://www.deezer.com/artist/54144672",
+      "last.fm": "https://www.last.fm/music/galdive/",
+      "streaming": "https://tidal.com/artist/10598140"
+    },
+    "labels": [
+      "College Music Records",
+      "Galdive"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 54144672,
+    "name": "Galdive",
+    "nb_fan": 2075,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/54144672",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/11eda5f32749535250a3caa066e6e8b7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Chase Shakur",
+      "Osvaldorio",
+      "Polo & Pan",
+      "Quinn Oulton",
+      "Wiana",
+      "love-sadKID"
+    ],
+    "contributor_roles": {
+      "Wiana": [
+        "Main"
+      ],
+      "Osvaldorio": [
+        "Main"
+      ],
+      "Chase Shakur": [
+        "Featured"
+      ],
+      "Quinn Oulton": [
+        "Featured"
+      ],
+      "Polo & Pan": [
+        "Featured"
+      ],
+      "love-sadKID": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Bloom",
+      "Teach Me How To Love",
+      "Stay",
+      "Cinema",
+      "Tell Me",
+      "20 Weeks",
+      "Pocket",
+      "Ghost",
+      "Too Much",
+      "Night Charade",
+      "Maybe I",
+      "Nescience",
+      "Window",
+      "A Friend",
+      "Blew Me",
+      "Sorbet",
+      "Cloud",
+      "Teach Me How To Love (feat. Chase Shakur)",
+      "A Seat For You (feat. Quinn Oulton)",
+      "Teach Me How To Love (Polo & Pan Remix)",
+      "Lotus",
+      "Poetry (feat. love-sadKiD)",
+      "The Joker",
+      "5AM",
+      "Puzzle"
+    ],
+    "track_durations": [
+      233,
+      182,
+      219,
+      179,
+      160,
+      178,
+      241,
+      193,
+      192,
+      188,
+      195,
+      238,
+      216,
+      200,
+      211,
+      198,
+      232,
+      157,
+      190,
+      205,
+      227,
+      204,
+      161,
+      204,
+      178
+    ],
+    "track_ranks": [
+      579934,
+      444516,
+      288374,
+      219186,
+      171169,
+      272254,
+      192752,
+      160438,
+      232986,
+      265782,
+      151318,
+      136573,
+      95884,
+      146134,
+      222061,
+      157935,
+      231747,
+      216038,
+      197324,
+      90328,
+      102041,
+      148760,
+      221838,
+      147363,
+      112551
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 2,
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "Blue",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Canvas",
+        "label": "",
+        "release_date": "2021-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "20 Weeks",
+        "label": "",
+        "release_date": "2026-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Teach Me How To Love (Alice Ivy Remix)",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Teach Me How To Love (Polo & Pan Remix)",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Teach Me How To Love (feat. Chase Shakur)",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Seat For You (feat. Quinn Oulton)",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Teach Me How To Love",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay (feat. RINI)",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Charade",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bloom",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cinema",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay",
+        "label": "",
+        "release_date": "2024-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Window/Dormer",
+        "label": "",
+        "release_date": "2024-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Friend",
+        "label": "",
+        "release_date": "2024-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crazy Driving",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Puzzle",
+        "label": "",
+        "release_date": "2021-06-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fond Adieu",
+        "label": "",
+        "release_date": "2020-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maybe I",
+        "label": "",
+        "release_date": "2020-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nescience",
+        "label": "",
+        "release_date": "2020-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "5AM",
+        "label": "",
+        "release_date": "2020-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloud",
+        "label": "",
+        "release_date": "2022-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dear Matias",
+        "label": "",
+        "release_date": "2024-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sorbet",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sway",
+        "label": "",
+        "release_date": "2019-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blew Me",
+        "label": "",
+        "release_date": "2019-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lotus",
+        "label": "",
+        "release_date": "2018-12-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Yaya Bey",
+      "Ravyn Lenae",
+      "Amaria",
+      "Orion Sun",
+      "Daniel Caesar",
+      "Cleo Sol",
+      "Yebba",
+      "Omar Apollo",
+      "Kali Uchis",
+      "Leon Thomas"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 13854490,
+    "name": "Galdive",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 2,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "2xLP, Album, Ltd, RE, RP, Blu",
+      "File, MP3, 320",
+      "LP, Blu + LP, Blu + Album, Ltd, Num",
+      "LP, LP "
+    ],
+    "labels": [
+      "Mom + Pop"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "galdive",
+    "mbid": "00cf07d5-8aa3-4adb-90b2-48323f572dc2",
+    "listeners": 178358,
+    "playcount": 2718331,
+    "listener_play_ratio": 15.24,
+    "bio_exists": true,
+    "bio_summary": "Galdive is a music group from Jakarta, Indonesia which consists of Osvaldorio and Wiana. Previously, Osvaldorio had released many singles both in Indonesia and outside Indonesia by working with labels or music collectives from the US. Meanwhile, Wiana is a talented singer and lyricist. Previously they had collaborated with each other's names on a song with Save Me and had topped the views list on one of the US regional digital music providers. <a href=\"https://www.last.fm/music/galdive\">Read mor",
+    "tags": [
+      "electronic",
+      "chillout",
+      "dream pop",
+      "indietronica",
+      "indie pop"
+    ],
+    "similar_artists": [
+      "Paper Idol",
+      "Delorians",
+      "Mina Okabe",
+      "Lyn Lapid",
+      "Galimatias"
+    ],
+    "top_tracks": [
+      {
+        "name": "Teach Me How To Love",
+        "listeners": 54817,
+        "playcount": 322601
+      },
+      {
+        "name": "Sorbet",
+        "listeners": 45015,
+        "playcount": 359539
+      },
+      {
+        "name": "Stay",
+        "listeners": 37690,
+        "playcount": 146067
+      },
+      {
+        "name": "Bloom",
+        "listeners": 35299,
+        "playcount": 156228
+      },
+      {
+        "name": "Stay (feat. RINI)",
+        "listeners": 33680,
+        "playcount": 131356
+      },
+      {
+        "name": "Night Charade",
+        "listeners": 25048,
+        "playcount": 116502
+      },
+      {
+        "name": "A Friend",
+        "listeners": 20125,
+        "playcount": 124541
+      },
+      {
+        "name": "Cloud",
+        "listeners": 14499,
+        "playcount": 129779
+      },
+      {
+        "name": "Blue",
+        "listeners": 12962,
+        "playcount": 43505
+      },
+      {
+        "name": "Maybe I",
+        "listeners": 11881,
+        "playcount": 96824
+      }
+    ],
+    "url": "https://www.last.fm/music/galdive"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,521 @@
+{
+  "artist_name": "Johanson",
+  "artist_id": "johanson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:31:26.964810+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "85da9a14-1f84-4be9-957f-3dfe4761b2d8",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/5066058",
+      "streaming": "https://tidal.com/artist/9233688"
+    },
+    "labels": [
+      "Armada Music",
+      "Bull In A China Shop",
+      "Vybrant Deep"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5066058,
+    "name": "Johanson",
+    "nb_fan": 57,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/5066058",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/817f7ec533b264296bd9f19177163386/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Brascon",
+      "David Lindmer",
+      "Deeparture",
+      "Fejká",
+      "Felix Raphael",
+      "Feral Garden",
+      "Jan Krišs",
+      "Matchy",
+      "Sunmoon",
+      "Yannek Maunz",
+      "wavecrvsh"
+    ],
+    "contributor_roles": {
+      "Felix Raphael": [
+        "Main"
+      ],
+      "Fejká": [
+        "Main"
+      ],
+      "Jan Krišs": [
+        "Main"
+      ],
+      "Sunmoon": [
+        "Main"
+      ],
+      "wavecrvsh": [
+        "Main"
+      ],
+      "Yannek Maunz": [
+        "Main"
+      ],
+      "Brascon": [
+        "Main"
+      ],
+      "Feral Garden": [
+        "Main"
+      ],
+      "Deeparture": [
+        "Main"
+      ],
+      "Matchy": [
+        "Main"
+      ],
+      "David Lindmer": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Pieces of You (Edit)",
+      "Azur",
+      "Where I Begin",
+      "Over You",
+      "Apart",
+      "Get Out",
+      "Almost",
+      "These Days",
+      "These Days (ABGT614) (Mixed)",
+      "Be There",
+      "Ghosts",
+      "Omen"
+    ],
+    "track_durations": [
+      267,
+      279,
+      221,
+      158,
+      427,
+      221,
+      343,
+      251,
+      211,
+      224,
+      314,
+      292
+    ],
+    "track_ranks": [
+      213542,
+      279757,
+      13199,
+      228891,
+      164086,
+      100471,
+      67236,
+      8805,
+      40884,
+      240024,
+      7755,
+      39140
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 28
+    },
+    "albums": [
+      {
+        "title": "Apart",
+        "label": "",
+        "release_date": "2019-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forget",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azur",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost My Mind",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nature",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Madhouse",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All The Things He Said",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Castaway",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost in You",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lifeline",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Over You",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Be There (Feat. Johanson)",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Over The Sea",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get Out",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Almost",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vertigo (Tony Casanova Remix)",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entropy",
+        "label": "",
+        "release_date": "2022-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vertigo (Fabian Sprungk Remix)",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breathless",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ghosts",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vertigo (CIOZ Remix)",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Fall",
+        "label": "",
+        "release_date": "2021-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Omen",
+        "label": "",
+        "release_date": "2021-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dark Fantasy",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vertigo",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pieces of You",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Away Remixes",
+        "label": "",
+        "release_date": "2020-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Red River",
+        "label": "",
+        "release_date": "2020-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 675606,
+    "name": "Jai Johanny Johanson",
+    "profile": "American drummer and percussionist, he was a founding member of The Allman Brothers Band and later the Sea Level.\r\n\r\nBorn: July 8, 1944 in Ocean Springs, Mississippi, USA.",
+    "realname": "Johnny Lee Johnson",
+    "social_urls": [
+      "http://repertoire.bmi.com/Catalog.aspx?detail=writerid&page=1&fromrow=1&torow=25&keyid=743951&subid=1"
+    ],
+    "members": [],
+    "groups": [
+      "The Allman Brothers Band",
+      "Sea Level",
+      "Jaimoe's Jasssz Band",
+      "Les Brers",
+      "The Brothers 50"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 24,
+    "digital_only_releases": 76,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Album, Unofficial",
+      "2xCD, Comp, RE",
+      "2xCD, Comp, RM + Box, Sli",
+      "2xCD, Promo, Unofficial",
+      "2xCD, Unofficial",
+      "2xCDr, Unofficial",
+      "2xLP, Comp",
+      "4xCD, Album",
+      "4xCD, Album, Unofficial",
+      "7xHDCD + Box, Unofficial",
+      "9xCD, Unofficial + Box",
+      "Box, Comp, Ltd, Num, RM, Pea + 2xLP, Album, RE, RM",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp, RE, RM, Sou",
+      "CD, Comp",
+      "CD, Comp, Enh",
+      "CD, Comp, RM",
+      "CD, Comp, Unofficial",
+      "CD, Unofficial"
+    ],
+    "labels": [
+      "Allman Brothers Band Recording Company",
+      "Arcturus",
+      "Aziя Records",
+      "BGO Records",
+      "Boom Edit",
+      "Capricorn Records, Capricorn Records, Capricorn Records",
+      "Era Records",
+      "Gold Standard",
+      "Laser Media",
+      "Live Wire Productions (2)",
+      "Living Legend Records, Living Legend Records",
+      "Mercury, UMe",
+      "Midnight Dreamer",
+      "Polydor",
+      "Real Gone Music, Universal Music Special Markets",
+      "Refractor Records",
+      "Sandoz (3)",
+      "Sawrite Records",
+      "Smithsonian Folkways",
+      "Süddeutsche Zeitung",
+      "Watch Tower",
+      "White Clay Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jay-Jay Johanson",
+    "mbid": "99e9b8ff-b8ea-4019-a073-acc9fbc93bbe",
+    "listeners": 348409,
+    "playcount": 6620350,
+    "listener_play_ratio": 19.0,
+    "bio_exists": true,
+    "bio_summary": "Jäje Johansson (born 11 October 1969), better known by his stage name Jay-Jay Johanson, is a Swedish singer-songwriter, known for his melancholic vocals. His music has integrated the trip hop genre until he switched his sound to a more electroclash-oriented direction with his 2002 album Antenna, which featured \"On the Radio\". After this album, he came back to his characteristic sound after he released The Long Term Physical Effects Are Not Yet Known in 2007.  <a href=\"https://www.last.fm/music/J",
+    "tags": [
+      "trip-hop",
+      "electronic",
+      "synthpop",
+      "swedish",
+      "electronica"
+    ],
+    "similar_artists": [
+      "Oi Va Voi",
+      "Émilie Simon",
+      "The Grus",
+      "Elsiane",
+      "Archive"
+    ],
+    "top_tracks": [
+      {
+        "name": "She Doesn't Live Here Anymore",
+        "listeners": 49865,
+        "playcount": 260175
+      },
+      {
+        "name": "Heard Somebody Whistle",
+        "listeners": 47882,
+        "playcount": 232246
+      },
+      {
+        "name": "On The Radio",
+        "listeners": 34964,
+        "playcount": 176521
+      },
+      {
+        "name": "Believe in Us",
+        "listeners": 34242,
+        "playcount": 142724
+      },
+      {
+        "name": "It Hurts Me So",
+        "listeners": 28638,
+        "playcount": 103330
+      },
+      {
+        "name": "As Good As It Gets",
+        "listeners": 28597,
+        "playcount": 89082
+      },
+      {
+        "name": "The Girl with the Sun in Her Eyes",
+        "listeners": 27383,
+        "playcount": 97555
+      },
+      {
+        "name": "Keep It A Secret",
+        "listeners": 26999,
+        "playcount": 85487
+      },
+      {
+        "name": "Suffering",
+        "listeners": 26505,
+        "playcount": 104811
+      },
+      {
+        "name": "Far Away",
+        "listeners": 26071,
+        "playcount": 116600
+      }
+    ],
+    "url": "https://www.last.fm/music/Jay-Jay+Johanson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

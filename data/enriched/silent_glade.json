@@ -1,0 +1,177 @@
+{
+  "artist_name": "Silent Glade",
+  "artist_id": "silent_glade",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:03:54.504717+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 333424721,
+    "name": "Silent Glade",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/333424721",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Moonfern",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lunareth",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet Grove",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Whisper",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Embermoss",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1531154,
+    "name": "Craigus Barry",
+    "profile": "Composer, Singer, multi instrumentalist, producer, and engineer. \r\nHas a large output of self released material, now edging 25 releases. \r\nLatest been 2020s Day Of The Stranger OST,  'Arcane Almanac' , 'Sonata For The Unprepared' , 'Melissa's Underworld' \r\nAnd 'Mother Of Pearl'\r\nHas scored the films \r\nTemple Steps To Wooded Glade (Unwelcome Human films 2016)\r\nBella In the Wych Elm silent cut (Carnie Features 2017),\r\nDay Of The Stranger (Carnie Films / Darkside Releasing 2020) \r\nPocket Film Of Superstitions (Carnie Films 2021)\r\n\r\nHas also recorded with Matthew Edwards & The Unfortunates (California Can You Wait? Single , Birmingham Poets Lp December Square 2019  guitars and omnichord)\r\nAnd Matthew Edwards and the Futurists (First Song Of The Revolution EP, Static Caravan 2020, guitars)\r\nAnd Matthew ",
+    "realname": "",
+    "social_urls": [
+      "https://theretinalcircus.bandcamp.com"
+    ],
+    "members": [],
+    "groups": [
+      "Meteor Street",
+      "The Retinal Circus",
+      "Matthew Edwards And The Unfortunates",
+      "Babal"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 3,
+    "total_releases": 11,
+    "formats": [
+      "",
+      "5xFile, MP3, EP",
+      "CD, Album",
+      "CD, Comp",
+      "CD, EP, Ltd",
+      "CDr, Album, Ltd",
+      "CDr, Album, Ltd, Han",
+      "CDr, Comp",
+      "CDr, EP",
+      "File, MP3, EP"
+    ],
+    "labels": [
+      "Chalice Chapel Productions",
+      "Cut Out Sound",
+      "Dgenerate Records",
+      "Not On Label",
+      "Not On Label (Craigus Barry Self-released)",
+      "Sawmill Steelmill"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Silent Glade",
+    "mbid": "",
+    "listeners": 761,
+    "playcount": 2622,
+    "listener_play_ratio": 3.45,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Silent+Glade\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Crystal Sanctum",
+      "Elysian Woods",
+      "Brave Olgot",
+      "Cautious Voice",
+      "Elaifas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Quiet Whisper",
+        "listeners": 490,
+        "playcount": 1742
+      },
+      {
+        "name": "Lunareth",
+        "listeners": 344,
+        "playcount": 652
+      },
+      {
+        "name": "Velvet Grove",
+        "listeners": 88,
+        "playcount": 228
+      }
+    ],
+    "url": "https://www.last.fm/music/Silent+Glade"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

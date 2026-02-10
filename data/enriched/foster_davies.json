@@ -1,0 +1,293 @@
+{
+  "artist_name": "Foster Davies",
+  "artist_id": "foster_davies",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:40:55.110135+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3b251578-caea-4f11-beb6-a712f43c5b79",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/103763922",
+      "purchase for download": "https://music.apple.com/us/artist/1527552248",
+      "streaming": "https://tidal.com/artist/20885399",
+      "youtube music": "https://music.youtube.com/channel/UCVixxByhXsoBS-v4t8zSrmw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 103763922,
+    "name": "Foster Davies",
+    "nb_fan": 14,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/103763922",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a22df354821a2d15508eabaccd91d124/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Café Conversations",
+      "Tell Me",
+      "Moments in Moonlight",
+      "The Fairies",
+      "Hark! The Herald Angels Sing",
+      "Romancing"
+    ],
+    "track_durations": [
+      224,
+      264,
+      168,
+      180,
+      162,
+      220
+    ],
+    "track_ranks": [
+      32569,
+      120508,
+      69723,
+      47930,
+      20186,
+      101944
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "A Cat and Its Owner",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nolita",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moments in Moonlight",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Romancing",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Café Conversations",
+        "label": "",
+        "release_date": "2023-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tell Me (Rain)",
+        "label": "",
+        "release_date": "2023-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Romancing",
+        "label": "",
+        "release_date": "2021-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hark! The Herald Angels Sing",
+        "label": "",
+        "release_date": "2020-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "She Said Yes",
+        "label": "",
+        "release_date": "2020-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Fairies",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3232704,
+    "name": "Bob Mummert",
+    "profile": "American drummer. Born in York, Pennsylvania. Died August 26, 2023 in Mt. Juliet, Tennessee.\r\nMoved to Nashville in 1975.\r\nMummert worked with many artists, including Gail Davies, Sweethearts of the Rodeo, Reba McIntire, Trace Adkins, Roy Orbison, Ronnie Milsap, Ricky Skaggs, Jimmy Fortune, Kevin Welch, Radney Foster, Foster and Lloyd, and Dailey & Vincent. He was also a session musician and a drummer for the Grand Ole Opry.",
+    "realname": "Robert Lee Mummert",
+    "social_urls": [
+      "https://bluegrasstoday.com/bob-mummert-passes/"
+    ],
+    "members": [],
+    "groups": [
+      "Bandana (3)",
+      "Wild Choir",
+      "Dailey & Vincent"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 11,
+    "digital_only_releases": 17,
+    "total_releases": 28,
+    "formats": [
+      "",
+      "2xCD, Album, Comp",
+      "CD, Album",
+      "HDCD, Album",
+      "LP, Transcription"
+    ],
+    "labels": [
+      "Alcazar",
+      "BFD",
+      "East Side Digital",
+      "Koch Music",
+      "Not On Label (Clint Alphin Self-released)",
+      "Not on Label",
+      "Pillar Stone Records, Music Catalogue Cracker Barrel Old Country Store",
+      "Pinecastle Recording Company",
+      "Red River Entertainment",
+      "Rounder Records, Rounder Records",
+      "Westwood One Radio Networks"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Foster Davies",
+    "mbid": "3b251578-caea-4f11-beb6-a712f43c5b79",
+    "listeners": 81322,
+    "playcount": 282630,
+    "listener_play_ratio": 3.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Foster+Davies\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "High North Trio",
+      "Sodermalm Strand",
+      "Tannenbaum Trio",
+      "Herman Fred Trio",
+      "Ballroom Jazz Collective"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moments in Moonlight",
+        "listeners": 28979,
+        "playcount": 68264
+      },
+      {
+        "name": "Romancing",
+        "listeners": 26197,
+        "playcount": 62886
+      },
+      {
+        "name": "Tell Me",
+        "listeners": 16365,
+        "playcount": 36435
+      },
+      {
+        "name": "The Fairies",
+        "listeners": 15781,
+        "playcount": 39339
+      },
+      {
+        "name": "Café Conversations",
+        "listeners": 15141,
+        "playcount": 35137
+      },
+      {
+        "name": "Tell Me - Rain",
+        "listeners": 7516,
+        "playcount": 28139
+      },
+      {
+        "name": "Nolita",
+        "listeners": 2314,
+        "playcount": 4868
+      },
+      {
+        "name": "Hark! The Herald Angels Sing",
+        "listeners": 2136,
+        "playcount": 3440
+      },
+      {
+        "name": "She Said Yes",
+        "listeners": 1555,
+        "playcount": 4116
+      },
+      {
+        "name": "Tell Me (Rain)",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Foster+Davies"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

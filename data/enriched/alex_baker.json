@@ -1,0 +1,550 @@
+{
+  "artist_name": "Alex Baker",
+  "artist_id": "alex_baker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:49:24.821059+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ef9e180f-1011-49cd-b59e-fd2f0c4853de",
+    "type": "Person",
+    "country": "",
+    "area": "New York",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "electronic"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/4681264",
+      "purchase for download": "https://music.apple.com/us/artist/1436862539",
+      "social network": "https://www.instagram.com/bakinbakes/",
+      "streaming": "https://music.apple.com/us/artist/1436862539",
+      "youtube": "https://www.youtube.com/channel/UCswpoGlGx6uxMbaLoRg7EDw"
+    },
+    "labels": [
+      "Neverwake Records",
+      "[no label]",
+      "Enhanced Chill",
+      "Beyond Rec",
+      "Tep No Records",
+      "Beyond.",
+      "Monstercat",
+      "DayGlow Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4681264,
+    "name": "Alex Baker",
+    "nb_fan": 644,
+    "nb_album": 42,
+    "link": "https://www.deezer.com/artist/4681264",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3970871c8ad801d86fe6fe811da97a8b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ayelle",
+      "Bailey",
+      "Banyan",
+      "Blonde Maze",
+      "Hanging Valleys",
+      "Harmless Night",
+      "ICELANDIA",
+      "Midnight Pass",
+      "Robertson",
+      "Sahara Moon",
+      "Slowtide",
+      "XIXI"
+    ],
+    "contributor_roles": {
+      "Hanging Valleys": [
+        "Featured",
+        "Main"
+      ],
+      "Sahara Moon": [
+        "Main"
+      ],
+      "Banyan": [
+        "Main"
+      ],
+      "Ayelle": [
+        "Featured"
+      ],
+      "Slowtide": [
+        "Main"
+      ],
+      "Robertson": [
+        "Main"
+      ],
+      "ICELANDIA": [
+        "Featured"
+      ],
+      "Blonde Maze": [
+        "Main"
+      ],
+      "Bailey": [
+        "Main"
+      ],
+      "XIXI": [
+        "Main"
+      ],
+      "Harmless Night": [
+        "Main"
+      ],
+      "Midnight Pass": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Anchor",
+      "Clocks",
+      "Better Off Alone",
+      "Typhoon",
+      "Awaken",
+      "With You",
+      "Fireflies",
+      "Parallel",
+      "Beyond",
+      "Lights",
+      "One Moment",
+      "Stars",
+      "I Remember",
+      "Closer Away",
+      "Bloom",
+      "Walk The Line",
+      "Presence",
+      "Essence",
+      "Expanse",
+      "Reflections",
+      "If Only",
+      "Each Day",
+      "Discovery",
+      "Let Go (Midnight Pass Remix)",
+      "Spoondrift"
+    ],
+    "track_durations": [
+      206,
+      230,
+      212,
+      214,
+      205,
+      222,
+      238,
+      242,
+      213,
+      245,
+      218,
+      162,
+      229,
+      194,
+      201,
+      198,
+      228,
+      224,
+      225,
+      176,
+      252,
+      196,
+      177,
+      182,
+      152
+    ],
+    "track_ranks": [
+      726159,
+      485153,
+      374017,
+      361676,
+      156364,
+      296710,
+      325071,
+      317078,
+      25660,
+      373443,
+      258758,
+      360404,
+      11656,
+      17629,
+      24972,
+      191383,
+      76764,
+      207789,
+      123614,
+      53673,
+      319588,
+      376482,
+      127218,
+      165388,
+      90437
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 8,
+      "single": 30
+    },
+    "albums": [
+      {
+        "title": "Graveclothes",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Those Who Wrestle with God",
+        "label": "",
+        "release_date": "2025-11-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Parallel",
+        "label": "",
+        "release_date": "2025-06-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Emotions",
+        "label": "",
+        "release_date": "2018-01-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Discovery",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Revolve",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Reflections",
+        "label": "",
+        "release_date": "2024-02-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Closer Away",
+        "label": "",
+        "release_date": "2023-06-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Elsewhere",
+        "label": "",
+        "release_date": "2022-04-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Soft Focus",
+        "label": "",
+        "release_date": "2021-06-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Time Shift",
+        "label": "",
+        "release_date": "2023-10-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Somewhere Familiar",
+        "label": "",
+        "release_date": "2023-10-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Walk The Line",
+        "label": "",
+        "release_date": "2026-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anchor",
+        "label": "",
+        "release_date": "2025-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dawn",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Passing Through",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coral Reef",
+        "label": "",
+        "release_date": "2025-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stars",
+        "label": "",
+        "release_date": "2025-07-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "With You",
+        "label": "",
+        "release_date": "2025-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let Go (Midnight Pass Remix)",
+        "label": "",
+        "release_date": "2025-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shapes",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memory",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Away",
+        "label": "",
+        "release_date": "2024-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better Off Alone",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let Go",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunrise (feat. Madeline Megery) (Alex Baker Remix)",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clocks (Ambient)",
+        "label": "",
+        "release_date": "2024-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luminate",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reflections",
+        "label": "",
+        "release_date": "2023-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Luca",
+      "Julien Pastel",
+      "Lonely in the Rain",
+      "MR TOUT LE MONDE",
+      "Alex Keeper",
+      "heylucas",
+      "Mizmo",
+      "Ourson",
+      "Klaverson",
+      "edapollo"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1158550,
+    "name": "Alex Baker",
+    "profile": "\r\n\r\nFor the classical Viola da Gamba player use [a=Alex Baker (14)]",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "earthtone9",
+      "Seven Summers"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 3,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "CD, Promo, Smplr",
+      "CDr"
+    ],
+    "labels": [
+      "Not On Label (Horn (10) Self-released)",
+      "Seven Summers"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alex Baker",
+    "mbid": "e3bd80e7-4960-4be7-8c82-318e55173e28",
+    "listeners": 65667,
+    "playcount": 407236,
+    "listener_play_ratio": 6.2,
+    "bio_exists": true,
+    "bio_summary": "Alex Baker, a NYC-based electronic producer, fuses together dreamy electronica and deep house elements. His signature sound evokes a surreal sense of escapism and curious introspection, delivering an earnest soundscape of euphoric reflections. <a href=\"https://www.last.fm/music/Alex+Baker\">Read more on Last.fm</a>",
+    "tags": [
+      "chillout",
+      "electronic",
+      "Chill House",
+      "american"
+    ],
+    "similar_artists": [
+      "Lonely in the Rain",
+      "Altero",
+      "BEAUVOIS",
+      "Arley",
+      "Aljosha Konstanty"
+    ],
+    "top_tracks": [
+      {
+        "name": "Clocks",
+        "listeners": 24258,
+        "playcount": 72934
+      },
+      {
+        "name": "Each Day",
+        "listeners": 14555,
+        "playcount": 37257
+      },
+      {
+        "name": "Lights",
+        "listeners": 12148,
+        "playcount": 32644
+      },
+      {
+        "name": "Water Colors",
+        "listeners": 10601,
+        "playcount": 33876
+      },
+      {
+        "name": "Awaken",
+        "listeners": 7790,
+        "playcount": 25742
+      },
+      {
+        "name": "Spoondrift",
+        "listeners": 6818,
+        "playcount": 18570
+      },
+      {
+        "name": "Better Off Alone",
+        "listeners": 5816,
+        "playcount": 15947
+      },
+      {
+        "name": "Soft Focus",
+        "listeners": 5062,
+        "playcount": 13911
+      },
+      {
+        "name": "Lights - Hessian Remix",
+        "listeners": 4815,
+        "playcount": 11534
+      },
+      {
+        "name": "Typhoon",
+        "listeners": 4015,
+        "playcount": 9060
+      }
+    ],
+    "url": "https://www.last.fm/music/Alex+Baker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

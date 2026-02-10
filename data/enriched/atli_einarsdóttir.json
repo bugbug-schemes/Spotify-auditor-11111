@@ -1,0 +1,205 @@
+{
+  "artist_name": "Atli Einarsdóttir",
+  "artist_id": "atli_einarsdóttir",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:16:49.312176+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 153441392,
+    "name": "Atli Einarsdóttir",
+    "nb_fan": 2,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/153441392",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0aa1b25c5c54c082427506939e956133/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "No Signal"
+    ],
+    "track_durations": [
+      132
+    ],
+    "track_ranks": [
+      32654
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "No Signal",
+        "label": "",
+        "release_date": "2025-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Being",
+        "label": "",
+        "release_date": "2025-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drift Above",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coda",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpenglow",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serenium",
+        "label": "",
+        "release_date": "2024-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fornyðing",
+        "label": "",
+        "release_date": "2023-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Myrkrið",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Innri Ró",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tárvotur",
+        "label": "",
+        "release_date": "2021-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Atli Einarsdóttir",
+    "mbid": "",
+    "listeners": 15023,
+    "playcount": 52123,
+    "listener_play_ratio": 3.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Atli+Einarsd%C3%B3ttir\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Linus Fortej",
+      "Mages of Chronos",
+      "Starten",
+      "Mr Hardfelt",
+      "Harry Valentin"
+    ],
+    "top_tracks": [
+      {
+        "name": "Serenium",
+        "listeners": 10155,
+        "playcount": 35114
+      },
+      {
+        "name": "Tárvotur",
+        "listeners": 2722,
+        "playcount": 7967
+      },
+      {
+        "name": "No Signal",
+        "listeners": 2406,
+        "playcount": 7460
+      },
+      {
+        "name": "Innri Ró",
+        "listeners": 176,
+        "playcount": 1215
+      },
+      {
+        "name": "Innri Ró (Ambient Noise Version)",
+        "listeners": 21,
+        "playcount": 302
+      },
+      {
+        "name": "Myrkrið",
+        "listeners": 15,
+        "playcount": 20
+      },
+      {
+        "name": "Innri Ró - Ambient Noise Version",
+        "listeners": 13,
+        "playcount": 42
+      },
+      {
+        "name": "00. Innri Ró",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Atli+Einarsd%C3%B3ttir"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

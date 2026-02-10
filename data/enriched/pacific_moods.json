@@ -1,0 +1,134 @@
+{
+  "artist_name": "Pacific Moods",
+  "artist_id": "pacific_moods",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:19:56.181978+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 341304311,
+    "name": "Pacific Moods",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/341304311",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "is better without you",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Log",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5098471,
+    "name": "The Various Moods Of.",
+    "profile": "Music, production and artwork project of Nathan Gibson which he refers to as 'portable disko'. It also includes members of [a3046833], [a4105115], [a3940637], [a2690027] and others around the Pacific Northwest and greater west coast of the USA. ",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/jollydrones",
+      "https://soundcloud.com/variousmoods",
+      "https://variousmoods.bandcamp.com/",
+      "http://strawberryeels.tumblr.com/"
+    ],
+    "members": [
+      "Nathan Gibson"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "Cass, Album",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Not On Label (The Various Moods Of. Self-released)",
+      "ウヒラウヒラ UHIRA UHIRA"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pacific Moods",
+    "mbid": "",
+    "listeners": 13464,
+    "playcount": 28556,
+    "listener_play_ratio": 2.12,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pacific+Moods\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "ourchase",
+      "jzbts",
+      "niteloops",
+      "Jean Opal",
+      "Another Night"
+    ],
+    "top_tracks": [
+      {
+        "name": "Log",
+        "listeners": 13464,
+        "playcount": 28556
+      }
+    ],
+    "url": "https://www.last.fm/music/Pacific+Moods"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

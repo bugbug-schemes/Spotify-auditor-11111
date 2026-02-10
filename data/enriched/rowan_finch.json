@@ -1,0 +1,146 @@
+{
+  "artist_name": "Rowan Finch",
+  "artist_id": "rowan_finch",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:47:25.494507+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 361851302,
+    "name": "Rowan Finch",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/361851302",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1
+    },
+    "albums": [
+      {
+        "title": "River Between",
+        "label": "",
+        "release_date": "2026-01-25",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rowan Finch",
+    "mbid": "",
+    "listeners": 1389,
+    "playcount": 10769,
+    "listener_play_ratio": 7.75,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rowan+Finch\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Luca Verini",
+      "Leon Rose",
+      "Nils Olov",
+      "Elin Noa",
+      "Stina Edblad"
+    ],
+    "top_tracks": [
+      {
+        "name": "Meadow Dreams",
+        "listeners": 966,
+        "playcount": 6601
+      },
+      {
+        "name": "The Dreaming Kitty",
+        "listeners": 523,
+        "playcount": 1917
+      },
+      {
+        "name": "Little Snuggles",
+        "listeners": 371,
+        "playcount": 2207
+      },
+      {
+        "name": "Where Dreams Begin to Shatter",
+        "listeners": 11,
+        "playcount": 18
+      },
+      {
+        "name": "Stories Written in Rain",
+        "listeners": 5,
+        "playcount": 7
+      },
+      {
+        "name": "A Memory Beneath the Clouds",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Fragments of a Fading Fire",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Falling Through Time’s Embrace",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Breathing in the Starlight",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "The Sleeping Fawn",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Rowan+Finch"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

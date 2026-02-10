@@ -1,0 +1,542 @@
+{
+  "artist_name": "Jasper Tygner",
+  "artist_id": "jasper_tygner",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:25:18.426663+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a94f3763-2ee2-4cc4-a176-978dc8bf96e3",
+    "type": "Person",
+    "country": "",
+    "area": "London",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "idm",
+      "future garage"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://jaspertygner.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6606413",
+      "free streaming": "https://www.deezer.com/artist/53756732",
+      "last.fm": "https://www.last.fm/music/Jasper+Tygner",
+      "other databases": "https://rateyourmusic.com/artist/jasper-tygner",
+      "purchase for download": "https://www.beatport.com/artist/jasper-tygner/863822",
+      "social network": "https://www.tiktok.com/@jaspertygner",
+      "songkick": "https://www.songkick.com/artists/10227625",
+      "soundcloud": "https://soundcloud.com/jasper-tygner",
+      "streaming": "https://tidal.com/artist/12769023",
+      "youtube": "https://www.youtube.com/channel/UCKcYH-ODrqgKBJJ6tQEhwng",
+      "youtube music": "https://music.youtube.com/channel/UCHjTTvKwRl414Mb-60EPgqQ"
+    },
+    "labels": [
+      "in blue",
+      "[no label]",
+      "Silver Bear Recordings",
+      "Needwant Recordings",
+      "Shall Not Fade",
+      "Technicolour"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 53756732,
+    "name": "Jasper Tygner",
+    "nb_fan": 531,
+    "nb_album": 39,
+    "link": "https://www.deezer.com/artist/53756732",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/de85aee409c11f9c477d8e703f52de6b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Art School Girlfriend",
+      "Holly Walker",
+      "Joe Hertz",
+      "Maribou State",
+      "Pretty Girl",
+      "Ruby Wood",
+      "holybones"
+    ],
+    "contributor_roles": {
+      "Joe Hertz": [
+        "Main"
+      ],
+      "holybones": [
+        "Main"
+      ],
+      "Pretty Girl": [
+        "Main",
+        "Featured"
+      ],
+      "Art School Girlfriend": [
+        "Featured",
+        "Main"
+      ],
+      "Maribou State": [
+        "Main"
+      ],
+      "Holly Walker": [
+        "Main"
+      ],
+      "Ruby Wood": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Equals",
+      "First Light",
+      "Before Me",
+      "Felt That Way",
+      "Blue",
+      "Deny It",
+      "28 Eyes",
+      "Phase",
+      "All Good (Jasper Tygner Remix)",
+      "All I Need",
+      "Ready",
+      "Ready (Pretty Girl Remix)",
+      "Voices",
+      "Hold You",
+      "Otherside (Jasper Tygner Remix)",
+      "Life Expected",
+      "Just Us",
+      "92",
+      "FTLOG",
+      "Equals (Kiimi Remix - Extended Mix)",
+      "Something Else (feat. Ruby Wood)",
+      "Problem",
+      "Second Thought",
+      "The End",
+      "ME!"
+    ],
+    "track_durations": [
+      286,
+      274,
+      173,
+      216,
+      217,
+      242,
+      226,
+      194,
+      243,
+      163,
+      227,
+      200,
+      206,
+      217,
+      243,
+      204,
+      191,
+      250,
+      248,
+      312,
+      280,
+      85,
+      254,
+      244,
+      191
+    ],
+    "track_ranks": [
+      112374,
+      346274,
+      299569,
+      268213,
+      224813,
+      239873,
+      149391,
+      218790,
+      149266,
+      199281,
+      308177,
+      42810,
+      74317,
+      303232,
+      314617,
+      158328,
+      11439,
+      30214,
+      48378,
+      75249,
+      15690,
+      63558,
+      25633,
+      62596,
+      54273
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 7,
+      "single": 31
+    },
+    "albums": [
+      {
+        "title": "I'll Stay",
+        "label": "",
+        "release_date": "2020-05-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Felt That Way",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Things to Come",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "When Ur Near",
+        "label": "",
+        "release_date": "2024-06-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Off Season",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Real Time",
+        "label": "",
+        "release_date": "2023-02-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Blush EP",
+        "label": "",
+        "release_date": "2022-04-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Eyes Open EP",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Life Expected",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "28 Eyes",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Phase",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Light",
+        "label": "",
+        "release_date": "2025-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold You",
+        "label": "",
+        "release_date": "2025-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue",
+        "label": "",
+        "release_date": "2025-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Otherside (Jasper Tygner Remix)",
+        "label": "",
+        "release_date": "2024-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eyes (Villager Remix)",
+        "label": "",
+        "release_date": "2024-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eyes",
+        "label": "",
+        "release_date": "2024-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before Me",
+        "label": "",
+        "release_date": "2024-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ready (Pretty Girl Remix)",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "92 (Extended Mix)",
+        "label": "",
+        "release_date": "2023-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Voices",
+        "label": "",
+        "release_date": "2023-08-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Good (Jasper Tygner Remix)",
+        "label": "",
+        "release_date": "2023-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Limes",
+        "label": "",
+        "release_date": "2023-06-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Need You",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equals (Kiimi Remix)",
+        "label": "",
+        "release_date": "2022-12-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deny It",
+        "label": "",
+        "release_date": "2022-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nylon",
+        "label": "",
+        "release_date": "2022-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "92",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blush (LUXE Remix)",
+        "label": "",
+        "release_date": "2022-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blush",
+        "label": "",
+        "release_date": "2022-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Atrip",
+      "Swimming Paul",
+      "Angrybaby",
+      "LP Giobbi",
+      "Babsy.",
+      "19Clouds",
+      "nimino",
+      "pluko",
+      "Vandelux",
+      "Lavern"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6606413,
+    "name": "Jasper Tygner",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 6,
+    "digital_only_releases": 3,
+    "total_releases": 9,
+    "formats": [
+      "12\"",
+      "12\", EP",
+      "12\", Gre",
+      "2xFile, MP3, 320",
+      "CDr, EP",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Impavid Records",
+      "LG105",
+      "Needwant Recordings",
+      "Ninja Tune",
+      "Running Back",
+      "Shall Not Fade"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jasper Tygner",
+    "mbid": "a94f3763-2ee2-4cc4-a176-978dc8bf96e3",
+    "listeners": 117492,
+    "playcount": 896837,
+    "listener_play_ratio": 7.63,
+    "bio_exists": true,
+    "bio_summary": "Hailing from North London, 25-year old producer/composer and multi instrumentalist Jasper Tygner takes influence from the UK electronic music scene melding sounds from Garage, House and Break Beat with Neo-Soul and Trip-Hop. With training in electronic music and Jazz Drums from Guildhall School of Music, Jasper cites James Blake, EL-B, Ross From Friends, Burial and Kaytranada as current influences on his production. Equipped with a range of studio skills both behind and in-front of the mic <a hr",
+    "tags": [
+      "UK Garage",
+      "House",
+      "electronic",
+      "trip-hop",
+      "outsider house"
+    ],
+    "similar_artists": [
+      "ATRIP",
+      "Lawrence Hart",
+      "O'Flynn",
+      "Tom VR",
+      "Elkka"
+    ],
+    "top_tracks": [
+      {
+        "name": "With You",
+        "listeners": 45122,
+        "playcount": 144661
+      },
+      {
+        "name": "Kashmer",
+        "listeners": 23904,
+        "playcount": 77242
+      },
+      {
+        "name": "Equals",
+        "listeners": 19357,
+        "playcount": 64069
+      },
+      {
+        "name": "Before Me",
+        "listeners": 12519,
+        "playcount": 41570
+      },
+      {
+        "name": "Deny It",
+        "listeners": 12435,
+        "playcount": 44265
+      },
+      {
+        "name": "Me!",
+        "listeners": 12043,
+        "playcount": 39608
+      },
+      {
+        "name": "All I Need",
+        "listeners": 11520,
+        "playcount": 36259
+      },
+      {
+        "name": "Voices",
+        "listeners": 11518,
+        "playcount": 31194
+      },
+      {
+        "name": "Ready (feat. Art School Girlfriend)",
+        "listeners": 11386,
+        "playcount": 36131
+      },
+      {
+        "name": "Limes",
+        "listeners": 11222,
+        "playcount": 32994
+      }
+    ],
+    "url": "https://www.last.fm/music/Jasper+Tygner"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

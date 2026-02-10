@@ -1,0 +1,179 @@
+{
+  "artist_name": "Barkérby",
+  "artist_id": "barkérby",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:31:38.538295+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 247604412,
+    "name": "Barkérby",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/247604412",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ef88ff642d45f9068cf8382d16cdcbf4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Fade",
+      "Long Distances"
+    ],
+    "track_durations": [
+      124,
+      124
+    ],
+    "track_ranks": [
+      25920,
+      22326
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Fade",
+        "label": "",
+        "release_date": "2025-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wind Sweep",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fallen Leaves",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Neon Wave",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beaming",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aureolin",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long Distances",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sycamore",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Barkérby",
+    "mbid": "",
+    "listeners": 34261,
+    "playcount": 89399,
+    "listener_play_ratio": 2.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bark%C3%A9rby\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Skeru",
+      "Francis Flo",
+      "Harry Bloom",
+      "Louaminé",
+      "Víolet Dawn"
+    ],
+    "top_tracks": [
+      {
+        "name": "Long Distances",
+        "listeners": 32823,
+        "playcount": 82860
+      },
+      {
+        "name": "Fade",
+        "listeners": 3521,
+        "playcount": 6513
+      },
+      {
+        "name": "Sycamore",
+        "listeners": 9,
+        "playcount": 13
+      },
+      {
+        "name": "Aureolin",
+        "listeners": 6,
+        "playcount": 12
+      },
+      {
+        "name": "Fallen Leaves",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Bark%C3%A9rby"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

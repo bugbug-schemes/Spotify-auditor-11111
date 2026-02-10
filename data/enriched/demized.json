@@ -1,0 +1,121 @@
+{
+  "artist_name": "Demized",
+  "artist_id": "demized",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:26:58.639701+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Demized', got 'Deluxe'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Demized",
+    "mbid": "",
+    "listeners": 17423,
+    "playcount": 38071,
+    "listener_play_ratio": 2.19,
+    "bio_exists": true,
+    "bio_summary": "Established in November 2003, DEMIZED is a melodic/death metal band based in Bronx, New York City that transcends many boundaries within metal. Their music, translates how the members feel about society. Is all based on the aggression, tragedy, misfortune, betrayal, hatred amongst humanity. In range, chaotic/brutal, aggressive riffs to a tragic melodies devastating to your ears with its own distin...(tharr be more)ct and cohesive sound. \n\nDEMIZED has shared the stage with: Local /national & inte",
+    "tags": [],
+    "similar_artists": [
+      "sumwut",
+      "jzbts",
+      "Moodal",
+      "rosewd",
+      "ourchase"
+    ],
+    "top_tracks": [
+      {
+        "name": "Wandering at Midnight",
+        "listeners": 14695,
+        "playcount": 32564
+      },
+      {
+        "name": "Bus 471",
+        "listeners": 3028,
+        "playcount": 5057
+      },
+      {
+        "name": "Burnt Stars",
+        "listeners": 50,
+        "playcount": 55
+      },
+      {
+        "name": "Ether",
+        "listeners": 45,
+        "playcount": 50
+      },
+      {
+        "name": "Silkecho",
+        "listeners": 34,
+        "playcount": 44
+      },
+      {
+        "name": "Empty Cinema",
+        "listeners": 29,
+        "playcount": 33
+      },
+      {
+        "name": "Tokyo",
+        "listeners": 27,
+        "playcount": 30
+      },
+      {
+        "name": "Decimating the Trend",
+        "listeners": 14,
+        "playcount": 46
+      },
+      {
+        "name": "Decay Amongst Society (Breaking the will of the hopeless)",
+        "listeners": 13,
+        "playcount": 59
+      },
+      {
+        "name": "Tropical Rain",
+        "listeners": 13,
+        "playcount": 17
+      }
+    ],
+    "url": "https://www.last.fm/music/Demized"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

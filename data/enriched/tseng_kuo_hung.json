@@ -1,0 +1,150 @@
+{
+  "artist_name": "Tseng Kuo Hung",
+  "artist_id": "tseng_kuo_hung",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:49:57.372787+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 88051122,
+    "name": "Tseng Kuo Hung",
+    "nb_fan": 8,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/88051122",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/302fea2ab392b7755bb5688a8dc480db/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Kuo",
+      "Pearl & The Oysters"
+    ],
+    "contributor_roles": {
+      "Pearl & The Oysters": [
+        "Main"
+      ],
+      "Kuo": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Soft Science (feat. Kuo)"
+    ],
+    "track_durations": [
+      178
+    ],
+    "track_ranks": [
+      25173
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "LONGONE",
+        "label": "",
+        "release_date": "2020-03-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Merry Midnight",
+        "label": "",
+        "release_date": "2021-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7219026,
+    "name": "Tseng Kuo Hung",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "落日飛車"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 8,
+    "total_releases": 11,
+    "formats": [
+      "",
+      "5xFile, FLAC, EP",
+      "CD",
+      "CD, Album",
+      "LP, Comp, Ltd"
+    ],
+    "labels": [
+      "Audiotree Music",
+      "B'tween Music",
+      "Flying Dog",
+      "Not On Label (Inner Wave Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tseng Kuo Hung",
+    "mbid": "",
+    "listeners": 3,
+    "playcount": 3,
+    "listener_play_ratio": 1.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tseng+Kuo+Hung\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Soft Science",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Merry Midnight",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Tseng+Kuo+Hung"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

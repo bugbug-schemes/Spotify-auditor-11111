@@ -1,0 +1,202 @@
+{
+  "artist_name": "Robinson Roe",
+  "artist_id": "robinson_roe",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:45:00.825703+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Robinson Roe', got 'Robinson Monteiro'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 136277,
+    "name": "Tommy Roe",
+    "profile": "Singer/songwriter known for his bubblegum records, born May 9, 1942, Atlanta, Georgia, USA. His first hit was \"Sheila\", recorded in 1960 but not a success until two years later, and (despite his career being put on hold from 1963-6 while he was serving as an electrician in the US Army) he scored several more hits during the 1960's including the 1969 transatlantic number one, \"Dizzy\".\r\n\r\nMarried to [a14947787]",
+    "realname": "Thomas David Roe",
+    "social_urls": [
+      "http://tommyroe.com/",
+      "https://en.wikipedia.org/wiki/Tommy_Roe"
+    ],
+    "members": [],
+    "groups": [
+      "Tommy Roe & The Satins"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 45,
+    "digital_only_releases": 55,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "20xFile, MP3, Comp, Enh, 256",
+      "6xFile, AAC, EP, Comp, 256",
+      "7\"",
+      "7\", Promo",
+      "7\", RE",
+      "7\", Single",
+      "7\", Single, Promo",
+      "7\", Single, RE",
+      "7\", Transcription",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, RM",
+      "CD, Comp, Smplr",
+      "Cass, Comp",
+      "LP, Comp",
+      "LP, Comp, Club"
+    ],
+    "labels": [
+      "ABC Records",
+      "AIM (2)",
+      "Accord (2)",
+      "Airebelle",
+      "Awesome Records (5)",
+      "BGO Records",
+      "Babylon (2)",
+      "Bellaphon",
+      "Bellaphon, Bellaphon",
+      "Black Cat (6)",
+      "Brook",
+      "Connoisseur Collection",
+      "Curb Records",
+      "Dance Plant Records",
+      "Digimode Entertainment Ltd., Life Time",
+      "Direct Source Special Products Inc.",
+      "Essential Media Group",
+      "Federal (5)",
+      "Golden Circle, Inc.",
+      "Golden Sandy Records",
+      "Gusto Records (2)",
+      "Gusto Records, Inc.",
+      "Hallmark Music & Entertainment",
+      "Hallmark Records",
+      "Jasmine Records",
+      "K-Tel",
+      "LaserLight Digital",
+      "Look Back",
+      "MCA Records",
+      "MCA Records, MCA Records",
+      "Mercury",
+      "Monument",
+      "Not On Label",
+      "One Media Publishing",
+      "Rama Lama Music",
+      "Renaissance Records (3)",
+      "Retro Music",
+      "Rev-Ola",
+      "Startek Records",
+      "Sweet 16",
+      "TELDEC Schallplatten GmbH, MCA Records",
+      "TRAV",
+      "United Audio Entertainment",
+      "ZYX Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Robinson Roe",
+    "mbid": "",
+    "listeners": 6674,
+    "playcount": 21783,
+    "listener_play_ratio": 3.26,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Robinson+Roe\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Francois Lé",
+      "Chill Motion",
+      "Mygg An",
+      "Ellef Antenn",
+      "Yelloo Hill"
+    ],
+    "top_tracks": [
+      {
+        "name": "Simmer",
+        "listeners": 2472,
+        "playcount": 4582
+      },
+      {
+        "name": "Tides of Change",
+        "listeners": 2234,
+        "playcount": 4503
+      },
+      {
+        "name": "Loving It",
+        "listeners": 2024,
+        "playcount": 4255
+      },
+      {
+        "name": "Always Around",
+        "listeners": 1570,
+        "playcount": 3907
+      },
+      {
+        "name": "Dusk Bop",
+        "listeners": 1324,
+        "playcount": 2820
+      },
+      {
+        "name": "Morning Breeze",
+        "listeners": 483,
+        "playcount": 695
+      },
+      {
+        "name": "Sometimes",
+        "listeners": 336,
+        "playcount": 577
+      },
+      {
+        "name": "Petalwood",
+        "listeners": 279,
+        "playcount": 393
+      },
+      {
+        "name": "Ultimatum",
+        "listeners": 23,
+        "playcount": 29
+      },
+      {
+        "name": "Midnight Hour",
+        "listeners": 14,
+        "playcount": 17
+      }
+    ],
+    "url": "https://www.last.fm/music/Robinson+Roe"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

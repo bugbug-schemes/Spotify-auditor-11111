@@ -1,0 +1,121 @@
+{
+  "artist_name": "Neightbirds",
+  "artist_id": "neightbirds",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:58:46.073221+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Neightbirds', got 'Nightbirde'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Neightbirds",
+    "mbid": "",
+    "listeners": 17158,
+    "playcount": 50718,
+    "listener_play_ratio": 2.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Neightbirds\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Feathern",
+      "The Land Seven",
+      "Lively Nature Sounds",
+      "Hinterländer",
+      "Heal Your Soul"
+    ],
+    "top_tracks": [
+      {
+        "name": "Birds In The Rain",
+        "listeners": 17136,
+        "playcount": 50542
+      },
+      {
+        "name": "In The Tides",
+        "listeners": 97,
+        "playcount": 150
+      },
+      {
+        "name": "Gentle Rainforest Birdsong",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Serene Spa Session for Furry Friends",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Soothing Spa Relaxation Ritual",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Relaxed Spa Raindrops",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Blissful Spa Oasis",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Relaxing Spa Ambience",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Birdsong Bliss",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Birds in the Park",
+        "listeners": 1,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Neightbirds"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,179 @@
+{
+  "artist_name": "Axel Pedersen",
+  "artist_id": "axel_pedersen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:20:53.655779+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 230605655,
+    "name": "Axel Pedersen",
+    "nb_fan": 1,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/230605655",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7724879d7c828a0e68fc2537aadb6c14/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Twinkle Twinkle Little Star",
+      "Feels Like Heaven"
+    ],
+    "track_durations": [
+      193,
+      195
+    ],
+    "track_ranks": [
+      2222,
+      2516
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Twinkle Twinkle Little Star",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feels Like Heaven",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7271852,
+    "name": "Axel Pedersen",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "7\", Single"
+    ],
+    "labels": [
+      "Kalmar Sound"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Axel Pedersen",
+    "mbid": "",
+    "listeners": 11520,
+    "playcount": 202270,
+    "listener_play_ratio": 17.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Axel+Pedersen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isaac Trager",
+      "Robin Colt",
+      "Oscar Z",
+      "Amos Green",
+      "Leo Button"
+    ],
+    "top_tracks": [
+      {
+        "name": "Twinkle Twinkle Little Star",
+        "listeners": 9151,
+        "playcount": 128501
+      },
+      {
+        "name": "Feels Like Heaven",
+        "listeners": 5281,
+        "playcount": 73553
+      },
+      {
+        "name": "Hush Little Baby",
+        "listeners": 20,
+        "playcount": 45
+      },
+      {
+        "name": "Brahms lullaby",
+        "listeners": 4,
+        "playcount": 9
+      },
+      {
+        "name": "Slumber",
+        "listeners": 3,
+        "playcount": 18
+      },
+      {
+        "name": "Sweet dreams",
+        "listeners": 3,
+        "playcount": 9
+      },
+      {
+        "name": "Peaceful Sleep",
+        "listeners": 2,
+        "playcount": 11
+      },
+      {
+        "name": "Sonata da chiesa",
+        "listeners": 2,
+        "playcount": 10
+      },
+      {
+        "name": "Mozart lullabies andante",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "La clemenza di tito duetto",
+        "listeners": 1,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/Axel+Pedersen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

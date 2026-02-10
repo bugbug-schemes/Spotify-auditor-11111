@@ -1,0 +1,534 @@
+{
+  "artist_name": "Rob Van Bavel",
+  "artist_id": "rob_van_bavel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:44:08.834739+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "087b0eb7-c688-4774-9d9b-3102b5d0d905",
+    "type": "Person",
+    "country": "NL",
+    "area": "Netherlands",
+    "begin_date": "1965-01-16",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000113769",
+      "bandcamp": "https://robvanbavel.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/1543704",
+      "free streaming": "https://open.spotify.com/artist/1hoKG6Fb0T7qUj1yL8MPsN",
+      "official homepage": "http://www.robvanbavel.com/",
+      "other databases": "https://rateyourmusic.com/artist/rob-van-bavel",
+      "secondhandsongs": "https://secondhandsongs.com/artist/92768"
+    },
+    "labels": [
+      "LEEway Music & Media",
+      "Pinehill",
+      "Munich Records",
+      "Daybreak",
+      "Gki Music",
+      "[no label]",
+      "8192 Records",
+      "Limetree Records",
+      "Dox Records",
+      "SEGI Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1162496,
+    "name": "Rob van Bavel",
+    "nb_fan": 67,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/1162496",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bced623905c30f6f712b0576860dec5f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Joris Teepe"
+    ],
+    "contributor_roles": {
+      "Joris Teepe": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "De Tor Ahead",
+      "In a Sentimental Mood",
+      "A Summer's Day"
+    ],
+    "track_durations": [
+      290,
+      315,
+      320
+    ],
+    "track_ranks": [
+      123271,
+      103730,
+      25082
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 26,
+      "ep": 1,
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "From the Heart",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sweet Sixty",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "From the Heart (High Resolution Version)",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Swinging at the haven",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dutch Weather",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anniversary",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Ghost, the King and I: We Got Rhythm",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Time For Ballads: The Solo Sessions",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dutch Connection",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Christmas Three (Deluxe Edition)",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Quatre Mains",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "En Blanc Et Noir 11",
+        "label": "",
+        "release_date": "2009-01-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Time For Ballads - The Studio Sessions",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Plays Chick Corea",
+        "label": "",
+        "release_date": "2022-06-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Time for Ballads - The Maene Sessions",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Plays Horace Silver",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Just Me",
+        "label": "",
+        "release_date": "2014-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Like Father, Like Son",
+        "label": "",
+        "release_date": "2016-03-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Christmas Three",
+        "label": "",
+        "release_date": "2015-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Ghost, The King & I: Live in Seoul (Live)",
+        "label": "",
+        "release_date": "2013-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Ghost, The King & I",
+        "label": "",
+        "release_date": "2011-03-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Generations",
+        "label": "",
+        "release_date": "2009-03-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solo Piano 'Jazz At The Pinehill'",
+        "label": "",
+        "release_date": "2000-04-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Other Side",
+        "label": "",
+        "release_date": "1991-07-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rob van Bavel Trio",
+        "label": "",
+        "release_date": "1990-03-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Oleo",
+        "label": "",
+        "release_date": "1989-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Games People Play",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "How Long Has This Been Going On",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "September in the Rain",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here's That Rainy Day",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Cory Weeds",
+      "Harry Allen",
+      "Snorre Kirk",
+      "Paolo Fresu",
+      "Copenhagen Jazzexperience",
+      "Jim Snidero",
+      "Danny Grissett",
+      "Dominick Farinacci",
+      "Cyrus Chestnut",
+      "Julia Hülsmann Quartet"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1543704,
+    "name": "Rob Van Bavel",
+    "profile": "Dutch pianist. Born in 1965 in Breda, he studied classical piano. He plays with his own orchestra, trio and sextet, as well as accompanying jazz celebrities like [a=Rita Reys]. He teaches piano at several Dutch Conservatories.",
+    "realname": "Rob van Bavel",
+    "social_urls": [
+      "http://www.muziekencyclopedie.nl/action/entry/Rob+van+Bavel"
+    ],
+    "members": [],
+    "groups": [
+      "Das Klaus Weiss Trio",
+      "Tineke Postma Quartet",
+      "The Dutch Jazz Orchestra",
+      "The Eric Ineke Jazzxpress",
+      "The Pitch Pine Project",
+      "Piet Noordijk Quartet",
+      "Ad Colen Quartet",
+      "Thomas Fryland Quartet",
+      "Ben Van Den Dungen / Jarmo Hoogendijk Quintet",
+      "Isotope (5)",
+      "Rob Van Bavel Septet",
+      "Trio Fezz",
+      "Rob Van Bavel Trio",
+      "Loet Van Der Lee Quintet",
+      "Transatlantic Highway",
+      "EBU/UER Big Band",
+      "The New Rob Van Bavel Trio",
+      "Don Braden / Joris Teepe Quartet"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 84,
+    "digital_only_releases": 16,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xCD, Comp, Mono + Box, Comp, Mono",
+      "2xCD, Album",
+      "2xCD, Promo",
+      "2xDVD-V",
+      "5xCD, Album",
+      "CD",
+      "CD, 20 ",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Comp, Ltd",
+      "CD, Album, Dig",
+      "CD, Album, Ltd",
+      "CD, Album, Ltd, RM",
+      "CD, Comp",
+      "CD, Comp, Promo, Dig",
+      "CD, EP",
+      "CD, Promo",
+      "CD-ROM, Album",
+      "CDr, Album",
+      "DVD-V",
+      "LP, Album",
+      "SACD, Album",
+      "SACD, Hybrid, Multichannel + Blu-ray, Blu-ray-A + ",
+      "SACD, Hybrid, Multichannel, Album"
+    ],
+    "labels": [
+      "A-Records",
+      "Apollon & Evterpa",
+      "Azica",
+      "Cast Productions",
+      "Challenge Classics",
+      "Challenge Records (3)",
+      "Concertgebouw, Amsterdam",
+      "Daybreak",
+      "EBU-UER",
+      "Fonds Podium Kunsten Performing Arts Fund NL",
+      "GKI Records (2)",
+      "Ghost (5)",
+      "Groove (20)",
+      "Gut String Records",
+      "Herkules Records",
+      "Hillstreet Jazz",
+      "Irmel Records",
+      "Jazz 'N Pulz",
+      "Lyrae Records",
+      "M Music (2)",
+      "Maxanter Records",
+      "Mercury",
+      "Munich Records",
+      "Munich Records BV",
+      "Munich Records, Munich Records",
+      "Music Partner",
+      "NTR:, Jazzism Magazine",
+      "New Trombone Collective",
+      "Not On Label",
+      "Not On Label (Rik Mol Self-Released)",
+      "NotNowMom! Records",
+      "O.A.P. Records",
+      "One Spirit (2)",
+      "Pinehill",
+      "RN Discs",
+      "Radio Nederland Wereldomroep",
+      "Rainbowcd.com",
+      "Riff, Koch International",
+      "Rik Blomme Entertainment",
+      "SENA Muziekproductiefonds",
+      "Scheltema",
+      "Solid Records (6)",
+      "Sonoton Creative Sound Solutions",
+      "Stichting Metropole Orkest",
+      "Sweet Briar Tapes",
+      "The Sand Records",
+      "Timeless (9)",
+      "Timeless Records (3)",
+      "Timeless Records (3), Bellaphon",
+      "TomLaLa Records",
+      "Turtle Records (3), dCS (2)",
+      "U-Turn Records",
+      "VIA Jazz",
+      "ZenneZ Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rob van Bavel",
+    "mbid": "087b0eb7-c688-4774-9d9b-3102b5d0d905",
+    "listeners": 34239,
+    "playcount": 89039,
+    "listener_play_ratio": 2.6,
+    "bio_exists": true,
+    "bio_summary": "Rob van Bavel (1965) is a pianist, teacher, composer and arranger. He graduated from the Rotterdam Conservatory in 1987 with the highest distinction and won several prizes, including second prize at the first Thelonious Monk Jazzpiano Competition in Washington DC, soloist prizes in Germany and Belgium, the Wessel Ilcken Prize and an Edison for the CD Rob van Bavel Trio. As a sideman and band leader he has released more than hodnerd CDs and toured throughout Europe, Canada, USA, Japan, Vietnam, I",
+    "tags": [
+      "jazz",
+      "new age piano",
+      "new age",
+      "piano",
+      "netherlands"
+    ],
+    "similar_artists": [
+      "Erik von Spreckelsen",
+      "Carl Bagge",
+      "The Modern Jazz Trio",
+      "Mareike Wiening",
+      "Lorenzo Tucci"
+    ],
+    "top_tracks": [
+      {
+        "name": "De Tor Ahead",
+        "listeners": 19142,
+        "playcount": 42112
+      },
+      {
+        "name": "In A Sentimental Mood",
+        "listeners": 10534,
+        "playcount": 25076
+      },
+      {
+        "name": "Manhattan",
+        "listeners": 2170,
+        "playcount": 3990
+      },
+      {
+        "name": "Every time we say goodbye",
+        "listeners": 1537,
+        "playcount": 2224
+      },
+      {
+        "name": "Always and Forever",
+        "listeners": 806,
+        "playcount": 1253
+      },
+      {
+        "name": "Elegie",
+        "listeners": 652,
+        "playcount": 1398
+      },
+      {
+        "name": "Slow Boat to China",
+        "listeners": 586,
+        "playcount": 1117
+      },
+      {
+        "name": "Your Nocturne",
+        "listeners": 450,
+        "playcount": 952
+      },
+      {
+        "name": "Malcolm's Minuet",
+        "listeners": 376,
+        "playcount": 532
+      },
+      {
+        "name": "Roaring Heights",
+        "listeners": 313,
+        "playcount": 530
+      }
+    ],
+    "url": "https://www.last.fm/music/Rob+van+Bavel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,451 @@
+{
+  "artist_name": "Sam Stone",
+  "artist_id": "sam_stone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:53:08.827787+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "df5edb3f-3186-4a3c-a2e4-30d075d43c66",
+    "type": "Person",
+    "country": "",
+    "area": "Madison",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "non-binary",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/69kc4GkWGVWqzN9rkOmrqc"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4750039,
+    "name": "Sam Stone",
+    "nb_fan": 59,
+    "nb_album": 53,
+    "link": "https://www.deezer.com/artist/4750039",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c6910867a91827c79e00101e27c6184d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Eleven Thirty Seven",
+      "outofsage"
+    ],
+    "contributor_roles": {
+      "outofsage": [
+        "Featured"
+      ],
+      "Eleven Thirty Seven": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Call ACab",
+      "Question to Answer",
+      "i am normal",
+      "Tonal Elegance",
+      "Direction of Light",
+      "saltwater (feat. outofsage)",
+      "The Night We Met",
+      "once",
+      "escape! // empty streets",
+      "the great god pan (feat. eleven thirty seven)",
+      "love me",
+      "Dew and Fog"
+    ],
+    "track_durations": [
+      137,
+      156,
+      167,
+      155,
+      143,
+      125,
+      156,
+      98,
+      144,
+      158,
+      98,
+      172
+    ],
+    "track_ranks": [
+      299904,
+      22240,
+      58725,
+      27809,
+      34971,
+      3096,
+      8941,
+      29995,
+      27109,
+      20699,
+      6116,
+      8170
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 7,
+      "ep": 3,
+      "single": 43
+    },
+    "albums": [
+      {
+        "title": "good times",
+        "label": "",
+        "release_date": "2025-12-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "NOWHERE.",
+        "label": "",
+        "release_date": "2025-05-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Still Winds",
+        "label": "",
+        "release_date": "2023-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Untitled Too",
+        "label": "",
+        "release_date": "2023-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "One Man Crew",
+        "label": "",
+        "release_date": "2022-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ZERO, an open door",
+        "label": "",
+        "release_date": "2022-04-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Greenhouse Dweller (Remaster)",
+        "label": "",
+        "release_date": "2018-02-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cross That Line (Remixes)",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Liquid Alice",
+        "label": "",
+        "release_date": "2019-03-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Perfect for Me EP",
+        "label": "",
+        "release_date": "2014-04-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Something More Than Rest",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still I Sing",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ride with me",
+        "label": "",
+        "release_date": "2026-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tonal Elegance",
+        "label": "",
+        "release_date": "2026-01-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lives for the Sound",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Direction of Light",
+        "label": "",
+        "release_date": "2025-12-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love That Asks For Nothing",
+        "label": "",
+        "release_date": "2025-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just the Night",
+        "label": "",
+        "release_date": "2025-12-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perfect Balance",
+        "label": "",
+        "release_date": "2025-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Night We Met",
+        "label": "",
+        "release_date": "2025-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dew and Fog",
+        "label": "",
+        "release_date": "2025-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Yours Today",
+        "label": "",
+        "release_date": "2025-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fairytale of New York",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Question to Answer",
+        "label": "",
+        "release_date": "2025-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Now Let's Move On",
+        "label": "",
+        "release_date": "2025-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "vibecheck.",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating Fingers",
+        "label": "",
+        "release_date": "2025-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Several Layers",
+        "label": "",
+        "release_date": "2025-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Eye",
+        "label": "",
+        "release_date": "2025-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Relationship",
+        "label": "",
+        "release_date": "2025-04-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Moon Walker",
+      "Destructo Disk",
+      "Pinkshift",
+      "Seb Lowe",
+      "NOAHFINNCE",
+      "Dog Park Dissidents",
+      "Jer",
+      "GRLwood",
+      "Willowbrook",
+      "Super Cassette"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5532546,
+    "name": "Sam Stone",
+    "profile": "Vocalist on [m=1112057]. \r\n\r\nFor the project assistant for [l=rhino records (2)] releases, please use [a=Sam Stone (7)].",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD, Album",
+      "LP, Album, Aut"
+    ],
+    "labels": [
+      "Interscope Records",
+      "Muve Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sam Stone",
+    "mbid": "5bf972a6-2e1e-4493-baa2-310a13033b11",
+    "listeners": 14621,
+    "playcount": 130756,
+    "listener_play_ratio": 8.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sam+Stone\">Read more on Last.fm</a>",
+    "tags": [
+      "punk",
+      "folk",
+      "USA"
+    ],
+    "similar_artists": [
+      "Carsie Blanton",
+      "Mal Blum",
+      "Bug Hunter",
+      "Roe Kapara",
+      "Mischief Brew"
+    ],
+    "top_tracks": [
+      {
+        "name": "Call ACAB",
+        "listeners": 10436,
+        "playcount": 116337
+      },
+      {
+        "name": "Several Layers",
+        "listeners": 1804,
+        "playcount": 4763
+      },
+      {
+        "name": "Now Let's Move On",
+        "listeners": 1327,
+        "playcount": 3970
+      },
+      {
+        "name": "Mindset",
+        "listeners": 601,
+        "playcount": 1205
+      },
+      {
+        "name": "Nordic Glow",
+        "listeners": 541,
+        "playcount": 1276
+      },
+      {
+        "name": "The Lowest Point",
+        "listeners": 231,
+        "playcount": 437
+      },
+      {
+        "name": "Question to Answer",
+        "listeners": 180,
+        "playcount": 344
+      },
+      {
+        "name": "John Prine",
+        "listeners": 145,
+        "playcount": 192
+      },
+      {
+        "name": "Dew and Fog",
+        "listeners": 136,
+        "playcount": 267
+      },
+      {
+        "name": "Your Eye",
+        "listeners": 69,
+        "playcount": 135
+      }
+    ],
+    "url": "https://www.last.fm/music/Sam+Stone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

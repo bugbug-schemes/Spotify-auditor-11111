@@ -1,0 +1,136 @@
+{
+  "artist_name": "Meadow Bryce",
+  "artist_id": "meadow_bryce",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:36:37.469231+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 348771411,
+    "name": "Meadow Bryce",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/348771411",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1
+    },
+    "albums": [
+      {
+        "title": "Christmas On The Keys",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Meadow Bryce",
+    "mbid": "",
+    "listeners": 3676,
+    "playcount": 8417,
+    "listener_play_ratio": 2.29,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Meadow+Bryce\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Joe Hanson",
+      "Forrest St. Marie",
+      "Zale Foster",
+      "syrene",
+      "Sebastian Young"
+    ],
+    "top_tracks": [
+      {
+        "name": "Feliz Navidad - Cover",
+        "listeners": 3647,
+        "playcount": 8367
+      },
+      {
+        "name": "Ding Dong Merrily on High",
+        "listeners": 26,
+        "playcount": 39
+      },
+      {
+        "name": "There is a Fountain Filled with Blood",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Feliz Navidad",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Angels We Have Heard on High",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Feliz Navidad (Cover)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Deck the Halls",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Mele Kalikimaka",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Meadow+Bryce"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

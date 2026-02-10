@@ -1,0 +1,200 @@
+{
+  "artist_name": "Caylee Luna",
+  "artist_id": "caylee_luna",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:01:47.765290+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 147383152,
+    "name": "Caylee Luna",
+    "nb_fan": 2,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/147383152",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/aeff26b24ac5a1a0333c6524e1ad0cea/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Sighs in the Night"
+    ],
+    "track_durations": [
+      137
+    ],
+    "track_ranks": [
+      25353
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Mist",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Susurros de Amor",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Horizon Calls",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Scintillio",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sine",
+        "label": "",
+        "release_date": "2024-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sighs in the Night",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moments",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn Evening",
+        "label": "",
+        "release_date": "2023-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fantasia in Bb Major",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn Evening",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Caylee Luna",
+    "mbid": "",
+    "listeners": 7989,
+    "playcount": 30702,
+    "listener_play_ratio": 3.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Caylee+Luna\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Riley Howe",
+      "K.C Brown",
+      "Auguste Braun",
+      "Sven Simons",
+      "Oceane Bardot"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moments",
+        "listeners": 5337,
+        "playcount": 19246
+      },
+      {
+        "name": "Sighs in the Night",
+        "listeners": 2022,
+        "playcount": 6831
+      },
+      {
+        "name": "Fantasia in Bb Major",
+        "listeners": 1394,
+        "playcount": 3511
+      },
+      {
+        "name": "Autumn Evening",
+        "listeners": 407,
+        "playcount": 1109
+      },
+      {
+        "name": "Sine",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Horizon Calls",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Scintillio",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Caylee+Luna"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

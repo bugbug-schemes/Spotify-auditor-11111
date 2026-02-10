@@ -1,0 +1,209 @@
+{
+  "artist_name": "Zyair Price",
+  "artist_id": "zyair_price",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:09:38.786858+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 263607911,
+    "name": "Zyair Price",
+    "nb_fan": 1,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/263607911",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/844ab0e1cdfe3536c5718d958240a196/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Slow Return",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entity",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elara",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glacial Essence",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nivalis",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Illume",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Murmur",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pneuma",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fortitude",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corinth",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zyair Price",
+    "mbid": "",
+    "listeners": 43688,
+    "playcount": 183704,
+    "listener_play_ratio": 4.2,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zyair+Price\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jinada Shane",
+      "Monte Aria",
+      "leo dey",
+      "Gillirium",
+      "Noctivelle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Entity",
+        "listeners": 19376,
+        "playcount": 68592
+      },
+      {
+        "name": "Corinth",
+        "listeners": 12414,
+        "playcount": 39754
+      },
+      {
+        "name": "Illume",
+        "listeners": 9420,
+        "playcount": 33008
+      },
+      {
+        "name": "Nivalis",
+        "listeners": 8260,
+        "playcount": 30828
+      },
+      {
+        "name": "Glacial Essence",
+        "listeners": 2802,
+        "playcount": 9095
+      },
+      {
+        "name": "Elara",
+        "listeners": 650,
+        "playcount": 1472
+      },
+      {
+        "name": "Murmur",
+        "listeners": 459,
+        "playcount": 945
+      },
+      {
+        "name": "Pneuma",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Fortitude",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Slow Return",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Zyair+Price"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

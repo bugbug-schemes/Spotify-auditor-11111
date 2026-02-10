@@ -1,0 +1,498 @@
+{
+  "artist_name": "Vale",
+  "artist_id": "vale",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:54:03.580340+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3a49bb49-0e7b-4381-94b3-fab8069dcf10",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1930-07-08",
+    "end_date": "2014-05-18",
+    "gender": "male",
+    "genres": [
+      "traditional pop",
+      "ballad",
+      "american"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000060833398",
+      "000000007926923X"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000338887",
+      "discogs": "https://www.discogs.com/artist/268926",
+      "free streaming": "https://www.deezer.com/artist/73486",
+      "IMDb": "https://www.imdb.com/name/nm0883890/",
+      "lyrics": "http://muzikum.eu/en/122-11206/jerry-vale/lyrics.html",
+      "myspace": "https://myspace.com/jerryvale12345",
+      "other databases": "https://www.45cat.com/vinyl/artist/jerry-vale",
+      "VIAF": "http://viaf.org/viaf/86589810",
+      "wikidata": "https://www.wikidata.org/wiki/Q764622",
+      "youtube": "https://www.youtube.com/watch?v=P2vL1pH6hGA"
+    },
+    "labels": [
+      "Collectors’ Choice Music",
+      "Sony Music",
+      "Buddah Records",
+      "Fratelli Fabbri Editori",
+      "Columbia",
+      "Curb Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 105858992,
+    "name": "Vale",
+    "nb_fan": 160,
+    "nb_album": 26,
+    "link": "https://www.deezer.com/artist/105858992",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/684b7060405560b1999a6a1dd0493551/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "BORJA",
+      "Marco Mares",
+      "YEИDRY"
+    ],
+    "contributor_roles": {
+      "Marco Mares": [
+        "Main"
+      ],
+      "YEИDRY": [
+        "Main"
+      ],
+      "BORJA": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Luminosa",
+      "Suficiente",
+      "Puente",
+      "Primavera",
+      "Espero Que Estés Bien",
+      "Línea Recta",
+      "Máquina Del Tiempo",
+      "Pasatiempo",
+      "Aguaceros",
+      "Si Nos Vamos",
+      "Escándalo",
+      "Cuando Estoy Contigo",
+      "terco",
+      "Para Verte",
+      "Agradezco Cada Paso",
+      "Dulce Amargo"
+    ],
+    "track_durations": [
+      193,
+      114,
+      180,
+      165,
+      187,
+      202,
+      213,
+      182,
+      218,
+      195,
+      152,
+      177,
+      147,
+      181,
+      149,
+      206
+    ],
+    "track_ranks": [
+      427783,
+      214573,
+      77698,
+      65840,
+      47096,
+      17831,
+      69145,
+      104866,
+      72908,
+      21788,
+      193495,
+      30676,
+      18850,
+      94776,
+      35579,
+      8963
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 5,
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "Todo Lo Que Yo Quería",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Contraluz",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Línea Recta",
+        "label": "",
+        "release_date": "2021-08-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Algo Que Darte",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Suficiente",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Abismos",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Acoustic (3D Audio For Headphones)",
+        "label": "",
+        "release_date": "2021-03-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Iridiscente",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Luminosa",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Escándalo",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corazón Entero",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "terco",
+        "label": "",
+        "release_date": "2023-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te Vi Mudar",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Máquina Del Tiempo",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Algo Me Pasa",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cruel",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Se Acaba Todo",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Agradezco Cada Paso",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ganas",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Este Viaje",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cuando Estoy Contigo/Dulce Amargo",
+        "label": "",
+        "release_date": "2021-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En El Pecho",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Para Verte",
+        "label": "",
+        "release_date": "2021-05-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Puente",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magia",
+        "label": "",
+        "release_date": "2020-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Primavera",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "RIZA",
+      "El Riqué",
+      "RaiNao",
+      "ROBI",
+      "Yarge",
+      "Paula Cendejas",
+      "Marc Segui",
+      "Colectivo Da Silva",
+      "restinga",
+      "Bratty"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 268926,
+    "name": "Jerry Vale",
+    "profile": "American singer, born July 8, 1932, The Bronx, New York - died May 18, 2014, Palm Desert, California.\r\n\r\nIn the early-1950s, [a3359881] heard Vale singing in a New York nightclub and signed him to a management contract. Vale subsequently signed a recording contract with [l1866]. His version of the \"The Star-Spangled Banner\", recorded in 1963, was a fixture at sporting events for many years.",
+    "realname": "Gennaro Louis Vitaliano",
+    "social_urls": [
+      "http://en.wikipedia.org/wiki/Jerry_Vale",
+      "http://www.myspace.com/jerryvale12345",
+      "https://www.imdb.com/name/nm0883890/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 36,
+    "digital_only_releases": 64,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "3xCD, Comp + Box",
+      "4xCD, Album, Comp, RM",
+      "4xLP, Comp + Box",
+      "7\"",
+      "7\", EP, Mono",
+      "7\", Jukebox",
+      "7\", Promo",
+      "7\", Single",
+      "CD, Album, Comp",
+      "CD, Album, Comp, RE",
+      "CD, Comp",
+      "CD, Comp, Mono",
+      "CD, Comp, RE",
+      "LP, Album",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Acrobat Music",
+      "CBS",
+      "Collectables",
+      "Collectables, Collectables",
+      "Collectables, Sony BMG Music Entertainment",
+      "Collectors' Choice Music, Collectors' Choice Music",
+      "Columbia",
+      "Columbia Special Products",
+      "Columbia, Legacy",
+      "Curb Records",
+      "Discovery (14)",
+      "Fratelli Fabbri Editori",
+      "Not On Label",
+      "RAJON",
+      "Real Gone",
+      "Remember",
+      "The Easton Press"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vale",
+    "mbid": "63c28456-938d-4b0f-baad-323b104266e9",
+    "listeners": 32481,
+    "playcount": 319130,
+    "listener_play_ratio": 9.83,
+    "bio_exists": true,
+    "bio_summary": "There is more than one artist with this name;\n\n1) Black metal / crust from Oakland, California.\n\n2) Atmospheric black metal / post rock from Pittsburgh, Pennsylvania.\n\n3) Colombian duo of singer-songwriter sisters Valeria and Valentina Perez.\n\n4) There are countless bands that embody and thus perpetuate the image of their own locale, time, even genre—Vale is not one of them. Rebelling against the restrictions of the Orange County image, Vale plants their roots deeper: 1980’s British rock, to be ",
+    "tags": [
+      "black metal",
+      "crust punk",
+      "Crust",
+      "rock",
+      "hardcore"
+    ],
+    "similar_artists": [
+      "Unreqvited",
+      "Dödsrit",
+      "Ghost Bath",
+      "déhà",
+      "Yellow Eyes"
+    ],
+    "top_tracks": [
+      {
+        "name": "Puente",
+        "listeners": 4169,
+        "playcount": 15023
+      },
+      {
+        "name": "Aguaceros",
+        "listeners": 3221,
+        "playcount": 14874
+      },
+      {
+        "name": "Escándalo",
+        "listeners": 3017,
+        "playcount": 8930
+      },
+      {
+        "name": "Para Verte",
+        "listeners": 2996,
+        "playcount": 9922
+      },
+      {
+        "name": "Se Acaba Todo",
+        "listeners": 1719,
+        "playcount": 4313
+      },
+      {
+        "name": "BATERIA",
+        "listeners": 1689,
+        "playcount": 19409
+      },
+      {
+        "name": "Mamaliga",
+        "listeners": 1625,
+        "playcount": 15851
+      },
+      {
+        "name": "Ganas",
+        "listeners": 1394,
+        "playcount": 3490
+      },
+      {
+        "name": "Rich bitch",
+        "listeners": 1320,
+        "playcount": 8944
+      },
+      {
+        "name": "Lo Que Me Harías En Otra Parte",
+        "listeners": 1263,
+        "playcount": 4044
+      }
+    ],
+    "url": "https://www.last.fm/music/Vale"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

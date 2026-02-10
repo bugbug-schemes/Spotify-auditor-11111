@@ -1,0 +1,145 @@
+{
+  "artist_name": "Christian Menke",
+  "artist_id": "christian_menke",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:08:07.120423+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Christian Menke', got 'Christa Menke'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6392661,
+    "name": "Christiane Menke",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 7,
+    "digital_only_releases": 0,
+    "total_releases": 7,
+    "formats": [
+      "2xCD, Comp",
+      "CD, Album",
+      "LP",
+      "LP, Album, RSD"
+    ],
+    "labels": [
+      "Because Music",
+      "Disques Pierre Verany",
+      "EMI Classics",
+      "Koch Schwann Musica Mundi",
+      "MDG"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Christian Menke",
+    "mbid": "",
+    "listeners": 22702,
+    "playcount": 72784,
+    "listener_play_ratio": 3.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Christian+Menke\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Casimir Roux",
+      "Allard Sidonia",
+      "Jonam Breuer",
+      "Rory Lewis",
+      "Max Goethe"
+    ],
+    "top_tracks": [
+      {
+        "name": "Erzählung",
+        "listeners": 11626,
+        "playcount": 36543
+      },
+      {
+        "name": "Wiedersehen",
+        "listeners": 10168,
+        "playcount": 25557
+      },
+      {
+        "name": "If We Knew, We Would",
+        "listeners": 2007,
+        "playcount": 7545
+      },
+      {
+        "name": "Liedchen",
+        "listeners": 1364,
+        "playcount": 3115
+      },
+      {
+        "name": "Schmetterling",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Turning Pages",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Frühlingsrauschen",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Narzissen",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "As I Lay Next To You",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Pathétique",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Christian+Menke"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

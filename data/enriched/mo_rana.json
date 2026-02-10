@@ -1,0 +1,142 @@
+{
+  "artist_name": "Mo Rana",
+  "artist_id": "mo_rana",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:46:39.983392+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mo Rana', got 'Morana'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 707371,
+    "name": "Mo-I-Rana",
+    "profile": "Danish rock band, which was active in the 1970s.",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Nils Henriksen",
+      "Ken Gudman",
+      "Ole Prehn",
+      "Hans Lauridsen",
+      "Bill Hazen",
+      "Thorkild Nielsen"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 11,
+    "digital_only_releases": 6,
+    "total_releases": 17,
+    "formats": [
+      "",
+      "10xCD, Album, RE + CD, Comp, Bon + Box, Comp",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "7\", Single",
+      "CD, Comp",
+      "CD, Comp, Mixed, Promo",
+      "Flexi, 7\", Comp, Num, Promo"
+    ],
+    "labels": [
+      "Egmont Music Club",
+      "Polydor",
+      "Polydor, Polydor",
+      "Sonet",
+      "Sonet, Sonet",
+      "Universal",
+      "Universal Music Group",
+      "Vi Unge, Phonogram, Polydor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mo Rana",
+    "mbid": "",
+    "listeners": 23744,
+    "playcount": 57012,
+    "listener_play_ratio": 2.4,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mo+Rana\">Read more on Last.fm</a>",
+    "tags": [
+      "lofi",
+      "chill"
+    ],
+    "similar_artists": [
+      "Monsieur Crème",
+      "Iddy P",
+      "yamarcus",
+      "Run2me",
+      "still yung"
+    ],
+    "top_tracks": [
+      {
+        "name": "measure",
+        "listeners": 18804,
+        "playcount": 42256
+      },
+      {
+        "name": "Beauty",
+        "listeners": 5680,
+        "playcount": 13999
+      },
+      {
+        "name": "dreams unfold",
+        "listeners": 473,
+        "playcount": 717
+      },
+      {
+        "name": "End of the Fairytale",
+        "listeners": 3,
+        "playcount": 38
+      },
+      {
+        "name": "Beauty (2021)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Mo Rana - Beauty",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Mo+Rana"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

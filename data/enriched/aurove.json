@@ -1,0 +1,125 @@
+{
+  "artist_name": "Aurove",
+  "artist_id": "aurove",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:18:51.906998+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2c18e648-fbd7-44cb-9a92-fecab3d41dfe",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/5mZ3zJnbcuCLfBWUoBRFdA",
+      "streaming": "https://music.apple.com/gb/artist/1834917759"
+    },
+    "labels": [
+      "Azure Noon"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Aurove', got 'AURORA'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aurove",
+    "mbid": "",
+    "listeners": 2595,
+    "playcount": 6326,
+    "listener_play_ratio": 2.44,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aurove\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Coco Siesta",
+      "Static 99",
+      "Koula",
+      "Léon Mirage",
+      "Gofica"
+    ],
+    "top_tracks": [
+      {
+        "name": "Granules",
+        "listeners": 929,
+        "playcount": 1574
+      },
+      {
+        "name": "Left in the Quiet",
+        "listeners": 811,
+        "playcount": 1465
+      },
+      {
+        "name": "Lucent",
+        "listeners": 727,
+        "playcount": 1357
+      },
+      {
+        "name": "Moonlight Drift",
+        "listeners": 683,
+        "playcount": 1499
+      },
+      {
+        "name": "Urban House",
+        "listeners": 132,
+        "playcount": 234
+      },
+      {
+        "name": "Private Echo",
+        "listeners": 71,
+        "playcount": 89
+      },
+      {
+        "name": "Blissful Beats",
+        "listeners": 66,
+        "playcount": 108
+      }
+    ],
+    "url": "https://www.last.fm/music/Aurove"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

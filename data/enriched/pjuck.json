@@ -1,0 +1,218 @@
+{
+  "artist_name": "Pjuck",
+  "artist_id": "pjuck",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:29:28.067925+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2a139ef2-f30d-4da8-be80-ec445da728f4",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/4y7TV9mGqoi2fHB1RLhqZm",
+      "soundcloud": "https://soundcloud.com/pjuck-music"
+    },
+    "labels": [
+      "Duck Pond Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 125909892,
+    "name": "Pjuck",
+    "nb_fan": 3,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/125909892",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3bcff68fc7ea065f28733609b5eec69d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Dream Of You",
+      "Triplo",
+      "Beggin'",
+      "Immersive"
+    ],
+    "track_durations": [
+      146,
+      128,
+      141,
+      184
+    ],
+    "track_ranks": [
+      21714,
+      21072,
+      21868,
+      33125
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Poolside हवा",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Drift",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cirtusy",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Triplo",
+        "label": "",
+        "release_date": "2024-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Break My Heart",
+        "label": "",
+        "release_date": "2023-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beggin'",
+        "label": "",
+        "release_date": "2022-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Immersive",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream Of You",
+        "label": "",
+        "release_date": "2021-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pjuck",
+    "mbid": "",
+    "listeners": 28282,
+    "playcount": 67853,
+    "listener_play_ratio": 2.4,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pjuck\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "instrumental",
+      "Hip-Hop"
+    ],
+    "similar_artists": [
+      "Gotharoo",
+      "Wavy Naps",
+      "very noise person",
+      "PH-Wert",
+      "K-Def"
+    ],
+    "top_tracks": [
+      {
+        "name": "Triplo",
+        "listeners": 9691,
+        "playcount": 21404
+      },
+      {
+        "name": "Immersive",
+        "listeners": 7704,
+        "playcount": 17319
+      },
+      {
+        "name": "Beggin'",
+        "listeners": 6762,
+        "playcount": 12250
+      },
+      {
+        "name": "Ocean Drift",
+        "listeners": 3129,
+        "playcount": 7012
+      },
+      {
+        "name": "Dream Of You",
+        "listeners": 2648,
+        "playcount": 7379
+      },
+      {
+        "name": "Break My Heart",
+        "listeners": 1327,
+        "playcount": 2481
+      },
+      {
+        "name": "Cirtusy",
+        "listeners": 2,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/Pjuck"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

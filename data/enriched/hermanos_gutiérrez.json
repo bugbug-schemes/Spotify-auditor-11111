@@ -1,0 +1,189 @@
+{
+  "artist_name": "Hermanos Gutiérrez",
+  "artist_id": "hermanos_gutiérrez",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:06:33.103658+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "82b922a4-410d-4b89-ac2e-c0d1f00136cd",
+    "type": "Group",
+    "country": "CH",
+    "area": "Switzerland",
+    "begin_date": "2015",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "pop",
+      "instrumental rock",
+      "neo-psychedelia",
+      "latin",
+      "colombian",
+      "worldwide",
+      "cumbia",
+      "alternative latin",
+      "cumbia mexicana",
+      "salvadoran",
+      "ambient americana",
+      "central american traditions",
+      "mexican traditions"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000294858",
+      "bandcamp": "https://hermanosgutierrez.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/7128718",
+      "free streaming": "https://www.deezer.com/artist/4617291",
+      "image": "https://commons.wikimedia.org/wiki/File:Hermanos_Guti%C3%A9rrez.jpg",
+      "last.fm": "https://www.last.fm/music/Hermanos+Gutierrez",
+      "official homepage": "http://www.hermanosgutierrez.ch/",
+      "other databases": "https://rateyourmusic.com/artist/hermanos-gutierrez",
+      "purchase for download": "https://ototoy.jp/_/default/a/1145135",
+      "social network": "https://www.instagram.com/hermanosgutierrez/",
+      "songkick": "https://www.songkick.com/artists/9880009",
+      "streaming": "https://tidal.com/artist/9835680",
+      "wikidata": "https://www.wikidata.org/wiki/Q117025323"
+    },
+    "labels": [
+      "Easy Eye Sound",
+      "[no label]",
+      "ATO Records",
+      "Jack Johnson Soundtrack"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Hermanos Gutiérrez', got 'Hermanos Gutierrez'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4473203,
+    "name": "Hermanos Gutiérrez",
+    "profile": "DO NOT USE - duplicates of other profiles",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hermanos Gutiérrez",
+    "mbid": "82b922a4-410d-4b89-ac2e-c0d1f00136cd",
+    "listeners": 356834,
+    "playcount": 9106190,
+    "listener_play_ratio": 25.52,
+    "bio_exists": true,
+    "bio_summary": "Hermanos Gutiérrez (Spanish for \"Gutiérrez Brothers\") is a Latin instrumental band formed in 2015 in Zürich by Ecuadorian-Swiss brothers Alejandro Gutiérrez (guitar and lap steel) and Estevan Gutiérrez (guitar and percussion). \n\nAround age nine, Estevan Gutiérrez learned to play classical guitar in Latin styles such as milonga and salsa. Alejandro  Gutiérrez, who is eight years younger, taught himself guitar by watching tutorial videos on YouTube.  <a href=\"https://www.last.fm/music/Hermanos+Gut",
+    "tags": [
+      "instrumental",
+      "latin",
+      "psychedelic",
+      "guitar",
+      "swiss"
+    ],
+    "similar_artists": [
+      "LA LOM",
+      "Adrian Quesada",
+      "Los Bitchos",
+      "Emapea",
+      "City of the Sun"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cerca De Ti",
+        "listeners": 206989,
+        "playcount": 1183179
+      },
+      {
+        "name": "Low Sun",
+        "listeners": 114456,
+        "playcount": 491499
+      },
+      {
+        "name": "Mesa Redonda",
+        "listeners": 102689,
+        "playcount": 505364
+      },
+      {
+        "name": "Hijos Del Sol",
+        "listeners": 99028,
+        "playcount": 437873
+      },
+      {
+        "name": "Tres Hermanos",
+        "listeners": 90814,
+        "playcount": 388069
+      },
+      {
+        "name": "Hoy Como Ayer",
+        "listeners": 69893,
+        "playcount": 303888
+      },
+      {
+        "name": "El Jardin",
+        "listeners": 56909,
+        "playcount": 237424
+      },
+      {
+        "name": "El Bueno Y El Malo",
+        "listeners": 50736,
+        "playcount": 234148
+      },
+      {
+        "name": "Hermosa Drive",
+        "listeners": 49396,
+        "playcount": 217787
+      },
+      {
+        "name": "Until We Meet Again",
+        "listeners": 48625,
+        "playcount": 183497
+      }
+    ],
+    "url": "https://www.last.fm/music/Hermanos+Guti%C3%A9rrez"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

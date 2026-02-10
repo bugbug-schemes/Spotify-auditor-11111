@@ -1,0 +1,197 @@
+{
+  "artist_name": "Celyn Awstin",
+  "artist_id": "celyn_awstin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:02:51.215074+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 145553892,
+    "name": "Celyn Awstin",
+    "nb_fan": 6,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/145553892",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/15b0d7c10582f4c355256aedbdfb2614/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Ease In",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm Avidity",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silence and Stillness",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lustrous",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Effigy",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Formosity",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wondersome",
+        "label": "",
+        "release_date": "2023-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kingdom Of The Night",
+        "label": "",
+        "release_date": "2023-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forest Night",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Celyn Awstin",
+    "mbid": "",
+    "listeners": 55297,
+    "playcount": 330433,
+    "listener_play_ratio": 5.98,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Celyn+Awstin\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Angelo Garnier",
+      "Leonid Antonov",
+      "Siri Belle",
+      "Kaua Correia",
+      "Rebecka Aether"
+    ],
+    "top_tracks": [
+      {
+        "name": "Forest Night",
+        "listeners": 26042,
+        "playcount": 140668
+      },
+      {
+        "name": "Simplistica",
+        "listeners": 24598,
+        "playcount": 125391
+      },
+      {
+        "name": "Ease in",
+        "listeners": 17542,
+        "playcount": 63389
+      },
+      {
+        "name": "Lustrous",
+        "listeners": 561,
+        "playcount": 854
+      },
+      {
+        "name": "Effigy",
+        "listeners": 64,
+        "playcount": 113
+      },
+      {
+        "name": "Wondersome",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Kingdom Of The Night",
+        "listeners": 2,
+        "playcount": 10
+      },
+      {
+        "name": "Formosity",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Silence and Stillness",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Celyn+Awstin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

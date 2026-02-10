@@ -1,0 +1,192 @@
+{
+  "artist_name": "Athyer Cane",
+  "artist_id": "athyer_cane",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:16:34.804477+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 272320402,
+    "name": "Athyer Cane",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/272320402",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3d2c3c784ffe7644f15da8fece89ccd4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Golden Drift",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Glow",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Through Orion",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet Silence",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marigold",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon Phase",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aura Pulse",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reverberant",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Early Meadow",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Athyer Cane",
+    "mbid": "",
+    "listeners": 38967,
+    "playcount": 237734,
+    "listener_play_ratio": 6.1,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Athyer+Cane\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Narnara",
+      "Seth Sands",
+      "Don Becker",
+      "Meloleon",
+      "Volta Celeste"
+    ],
+    "top_tracks": [
+      {
+        "name": "Through Orion",
+        "listeners": 28253,
+        "playcount": 134363
+      },
+      {
+        "name": "Marigold",
+        "listeners": 9467,
+        "playcount": 59100
+      },
+      {
+        "name": "Velvet Silence",
+        "listeners": 5825,
+        "playcount": 36981
+      },
+      {
+        "name": "Quiet Glow",
+        "listeners": 1540,
+        "playcount": 4006
+      },
+      {
+        "name": "Moon Phase",
+        "listeners": 1452,
+        "playcount": 3055
+      },
+      {
+        "name": "Golden Drift",
+        "listeners": 192,
+        "playcount": 222
+      },
+      {
+        "name": "Reverberant",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Early Meadow",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Athyer+Cane"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

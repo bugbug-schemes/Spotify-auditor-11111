@@ -1,0 +1,224 @@
+{
+  "artist_name": "Alexander Gresham",
+  "artist_id": "alexander_gresham",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:50:49.302053+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 132527752,
+    "name": "Alexander Gresham",
+    "nb_fan": 3,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/132527752",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9363527192d64a571df0d337a3b2c614/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "When I Was Your Man",
+      "Tiny Dancer",
+      "Daylight",
+      "You're Gonna Live Forever In Me"
+    ],
+    "track_durations": [
+      189,
+      191,
+      194,
+      174
+    ],
+    "track_ranks": [
+      54848,
+      32695,
+      66393,
+      66383
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "When I Was Your Man",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tiny Dancer",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Die With A Smile",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thank You For The Music",
+        "label": "",
+        "release_date": "2024-05-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grown-Up Christmas List",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daylight",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You've Got A Friend In Me",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You're Gonna Live Forever In Me",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everglow",
+        "label": "",
+        "release_date": "2021-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Has Broken",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alexander Gresham",
+    "mbid": "",
+    "listeners": 14739,
+    "playcount": 61293,
+    "listener_play_ratio": 4.16,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Alexander+Gresham\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dan Goten",
+      "Samantha Foster",
+      "Winston Brey",
+      "Simone Morelli",
+      "Man In The Moon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Everglow",
+        "listeners": 4451,
+        "playcount": 13590
+      },
+      {
+        "name": "Grown-Up Christmas List",
+        "listeners": 4078,
+        "playcount": 11490
+      },
+      {
+        "name": "Tiny Dancer",
+        "listeners": 3677,
+        "playcount": 10534
+      },
+      {
+        "name": "You're Gonna Live Forever In Me",
+        "listeners": 3283,
+        "playcount": 10681
+      },
+      {
+        "name": "Daylight",
+        "listeners": 3037,
+        "playcount": 9606
+      },
+      {
+        "name": "When I Was Your Man",
+        "listeners": 1908,
+        "playcount": 4684
+      },
+      {
+        "name": "You've Got A Friend In Me",
+        "listeners": 220,
+        "playcount": 548
+      },
+      {
+        "name": "Morning Has Broken",
+        "listeners": 57,
+        "playcount": 120
+      },
+      {
+        "name": "Die With A Smile",
+        "listeners": 19,
+        "playcount": 31
+      },
+      {
+        "name": "Thank You For The Music",
+        "listeners": 7,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Alexander+Gresham"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

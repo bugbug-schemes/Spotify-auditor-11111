@@ -1,0 +1,196 @@
+{
+  "artist_name": "nite sky",
+  "artist_id": "nite_sky",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:26:41.542874+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "485cff38-614f-4a2a-afe0-37d0af2f5874",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/89807132",
+      "purchase for download": "https://music.apple.com/us/artist/1507563048",
+      "streaming": "https://music.apple.com/us/artist/1507563048"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'nite sky', got 'Mitski'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 265534,
+    "name": "John Congleton",
+    "profile": "Independent producer, engineer and composer and owner of Elmwood Recording Studios in Dallas. Principal songwriter of The Paper Chase and The Nighty Nite. Producer for St Vincent, Explosions in the Sky, Decemberists, Future Islands and others, now based in Los Angeles, USA.",
+    "realname": "",
+    "social_urls": [
+      "http://nextwavemanagement.com"
+    ],
+    "members": [],
+    "groups": [
+      "The Paper Chase",
+      "The Nighty Nite"
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 10,
+    "digital_only_releases": 90,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "5xFile, FLAC, Single",
+      "7\", Club, Ltd",
+      "7\", Ltd",
+      "7\", RSD, Single, Ltd, Tra",
+      "7\", S/Sided, Single, Etch, Ltd",
+      "7\", Single, Cle",
+      "CD, Comp",
+      "CD, RSD, Comp, Promo, Smplr",
+      "File, AAC, Single",
+      "File, FLAC, EP, 24-",
+      "File, FLAC, Single",
+      "File, FLAC, Single, 24-",
+      "File, MP3, Single",
+      "File, MP3, Single, 320",
+      "File, WAV, Single, 320",
+      "LP, Album",
+      "LP, Album, Ltd, Bub",
+      "LP, RSD, Comp, Ltd, Num"
+    ],
+    "labels": [
+      "Atlantic",
+      "BMG",
+      "Columbia",
+      "Epitaph",
+      "Fat Possum Records",
+      "Human Season Records",
+      "Jagjaguwar",
+      "Mushroom Music",
+      "Not On Label",
+      "Not On Label (The Accidentals (4) Self-released)",
+      "Rounder Records",
+      "Uncut (2), Kelsey Media",
+      "WXPN",
+      "Warner Bros. Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "nite sky",
+    "mbid": "485cff38-614f-4a2a-afe0-37d0af2f5874",
+    "listeners": 134973,
+    "playcount": 1333100,
+    "listener_play_ratio": 9.88,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. This could be because of a deal within a streaming service, where the musician is anonymous, or the name is just one of several psuedonyms used by a music producer. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"https://www.la",
+    "tags": [],
+    "similar_artists": [
+      "A.I.C 83",
+      "Lavia 6",
+      "Kilo Herz",
+      "True White",
+      "Astrofuss"
+    ],
+    "top_tracks": [
+      {
+        "name": "moon reflection white noise",
+        "listeners": 44207,
+        "playcount": 257557
+      },
+      {
+        "name": "Easy Pink Noise Slumber",
+        "listeners": 26976,
+        "playcount": 179353
+      },
+      {
+        "name": "delta state",
+        "listeners": 19497,
+        "playcount": 110004
+      },
+      {
+        "name": "Healing Pink Noise",
+        "listeners": 18964,
+        "playcount": 136462
+      },
+      {
+        "name": "sierra star",
+        "listeners": 18599,
+        "playcount": 108388
+      },
+      {
+        "name": "Flat Even Pink Noise",
+        "listeners": 17381,
+        "playcount": 126218
+      },
+      {
+        "name": "unwinding mind 528 Hz",
+        "listeners": 16909,
+        "playcount": 73460
+      },
+      {
+        "name": "Deeper Sleepy Pink Noise",
+        "listeners": 14083,
+        "playcount": 99449
+      },
+      {
+        "name": "nite delta pattern",
+        "listeners": 10381,
+        "playcount": 51543
+      },
+      {
+        "name": "distant star",
+        "listeners": 8802,
+        "playcount": 30176
+      }
+    ],
+    "url": "https://www.last.fm/music/nite+sky"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

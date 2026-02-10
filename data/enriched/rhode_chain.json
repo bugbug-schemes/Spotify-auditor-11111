@@ -1,0 +1,110 @@
+{
+  "artist_name": "Rhode Chain",
+  "artist_id": "rhode_chain",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:42:03.909042+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Rhode Chain', got 'Rosechain'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16856719,
+    "name": "Chain Pulling Man",
+    "profile": "Hardcore Metal band from Providence, Rhode Island.",
+    "realname": "",
+    "social_urls": [
+      "https://chainpullingman.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "2xFile, MP3, 320"
+    ],
+    "labels": [
+      "Not On Label (Chain Pulling Man Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rhode Chain",
+    "mbid": "",
+    "listeners": 16899,
+    "playcount": 42533,
+    "listener_play_ratio": 2.52,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rhode+Chain\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "sidezz",
+      "Lovely Rascals",
+      "Lobby Lingu!n!",
+      "sourja",
+      "beatthump"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cryon",
+        "listeners": 14989,
+        "playcount": 35257
+      },
+      {
+        "name": "Klok",
+        "listeners": 2852,
+        "playcount": 7220
+      },
+      {
+        "name": "Rhode Chain",
+        "listeners": 33,
+        "playcount": 54
+      },
+      {
+        "name": "Cryon (2021)",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Rhode+Chain"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,398 @@
+{
+  "artist_name": "Hannah Cohen",
+  "artist_id": "hannah_cohen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:01:01.448234+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "21137b4f-85b6-4c7e-8840-d9ab5483891f",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1986-10-25",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "indie pop"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000434305849"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002539837",
+      "bandcamp": "https://hannahcohen.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/2614982",
+      "free streaming": "https://www.deezer.com/artist/1678295",
+      "last.fm": "https://www.last.fm/music/Hannah%20Cohen",
+      "myspace": "https://myspace.com/hannahcmusic",
+      "other databases": "https://rateyourmusic.com/artist/hannah_cohen",
+      "social network": "https://www.facebook.com/HannahCohenChildBride",
+      "streaming": "https://tidal.com/artist/4544588",
+      "wikidata": "https://www.wikidata.org/wiki/Q5648805"
+    },
+    "labels": [
+      "Bella Union",
+      "Fat Possum Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1678295,
+    "name": "Hannah Cohen",
+    "nb_fan": 2218,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/1678295",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7f32c3fadbc7f4de133de7b7e5c2f076/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Jonathan Wilson",
+      "Mild High Club",
+      "Sam Evian"
+    ],
+    "contributor_roles": {
+      "Sam Evian": [
+        "Main"
+      ],
+      "Mild High Club": [
+        "Main"
+      ],
+      "Jonathan Wilson": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Mountain",
+      "Earthstar",
+      "Summer Sweat",
+      "Draggin'",
+      "Dusty",
+      "Una Spiaggia",
+      "Rag",
+      "Baby You're Lying",
+      "Wasting My Time",
+      "Shoe",
+      "Sold Me a Dream (Terry Tracksuit Edit)",
+      "This Is Your Life",
+      "Dream Free",
+      "Dog Years",
+      "Old Bruiser",
+      "Dissolving",
+      "Don't Say",
+      "Detroit or Buffalo",
+      "Get In Line",
+      "All I Wanted",
+      "Baby",
+      "What's This All About",
+      "Holding On",
+      "Return Room",
+      "California"
+    ],
+    "track_durations": [
+      239,
+      243,
+      246,
+      275,
+      245,
+      105,
+      185,
+      202,
+      238,
+      203,
+      170,
+      253,
+      258,
+      290,
+      244,
+      217,
+      230,
+      265,
+      234,
+      286,
+      337,
+      202,
+      255,
+      268,
+      181
+    ],
+    "track_ranks": [
+      192481,
+      156723,
+      150380,
+      110228,
+      125540,
+      91178,
+      87501,
+      86653,
+      219470,
+      97715,
+      300790,
+      71451,
+      303170,
+      59794,
+      103247,
+      75713,
+      66606,
+      74028,
+      88823,
+      51061,
+      116820,
+      71353,
+      51693,
+      67855,
+      27144
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Earthstar Mountain",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Welcome Home",
+        "label": "",
+        "release_date": "2019-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pleasure Boy",
+        "label": "",
+        "release_date": "2015-03-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Child Bride",
+        "label": "",
+        "release_date": "2012-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cast You Out",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Living Sacrifice",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sold Me a Dream (Terry Tracksuit Edit)",
+        "label": "",
+        "release_date": "2022-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream Free",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All I Wanted",
+        "label": "",
+        "release_date": "2019-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wasting My Time",
+        "label": "",
+        "release_date": "2019-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Is Your Life",
+        "label": "",
+        "release_date": "2019-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Japanese Breakfast",
+      "Nilüfer Yanya",
+      "Alice Phoebe Lou",
+      "Stella Donnelly",
+      "Whitney",
+      "Weyes Blood",
+      "Big Thief",
+      "Perfume Genius",
+      "The Saxophones",
+      "Unknown Mortal Orchestra"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2614982,
+    "name": "Hannah Cohen",
+    "profile": "American singer-songwriter born October 25, 1986 in San Francisco and based in New York City.",
+    "realname": "Hannah Cohen",
+    "social_urls": [
+      "https://bellaunion.com/artists/hannah-cohen/",
+      "https://hannahcohen.bandcamp.com/music",
+      "https://www.myspace.com/hannahcmusic",
+      "https://www.facebook.com/pages/Hannah-Cohen/247034815337526",
+      "https://en.wikipedia.org/wiki/Hannah_Cohen_(singer)"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 31,
+    "total_releases": 46,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "CD, Comp",
+      "CD, Comp, Ltd",
+      "CD, Single, Promo",
+      "CDr, Comp, Promo",
+      "CDr, Single, Promo",
+      "File, MP3, Single, 320",
+      "LP, Cok"
+    ],
+    "labels": [
+      "Asthmatic Kitty",
+      "Bella Union",
+      "Les Inrockuptibles",
+      "Lost Balloon Recordings",
+      "Love Da Records",
+      "Not On Label (Denison Witmer Self-released)",
+      "Rolling Stone",
+      "Sonic Magazine",
+      "Uncut (2), Uncut (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hannah Cohen",
+    "mbid": "21137b4f-85b6-4c7e-8840-d9ab5483891f",
+    "listeners": 204386,
+    "playcount": 1388158,
+    "listener_play_ratio": 6.79,
+    "bio_exists": true,
+    "bio_summary": "Hannah Cohen (born October 25, 1986), is an American singer and model. \n\nV Magazine and Vogue photographer Matthu Placek made the video for her debut single, “Child Bride.” Based in New York, Cohen was first encouraged to pick up a guitar after falling in with a group of the city’s most-anointed musicians, including Grammy-award-winner Jesse Harris and cabaret artist Justin Bond. “For the past five years I have been mostly listening to Brazilian vinyl from the 60s and 70s,” the sultry artist say",
+    "tags": [
+      "singer-songwriter",
+      "female vocalists",
+      "folk",
+      "indie",
+      "melancholy"
+    ],
+    "similar_artists": [
+      "Hand Habits",
+      "Dana Gavanski",
+      "Foxwarren",
+      "Molly Burch",
+      "Billie Marten"
+    ],
+    "top_tracks": [
+      {
+        "name": "Summer Sweat",
+        "listeners": 75574,
+        "playcount": 178263
+      },
+      {
+        "name": "Earthstar",
+        "listeners": 42775,
+        "playcount": 123826
+      },
+      {
+        "name": "Dissolving",
+        "listeners": 30095,
+        "playcount": 108957
+      },
+      {
+        "name": "This Is Your Life",
+        "listeners": 28240,
+        "playcount": 106667
+      },
+      {
+        "name": "Mountain",
+        "listeners": 27894,
+        "playcount": 82931
+      },
+      {
+        "name": "All I Wanted",
+        "listeners": 25553,
+        "playcount": 126621
+      },
+      {
+        "name": "Don't Say",
+        "listeners": 20878,
+        "playcount": 71612
+      },
+      {
+        "name": "Dusty",
+        "listeners": 19662,
+        "playcount": 57648
+      },
+      {
+        "name": "Draggin'",
+        "listeners": 11475,
+        "playcount": 35898
+      },
+      {
+        "name": "Baby",
+        "listeners": 10709,
+        "playcount": 38457
+      }
+    ],
+    "url": "https://www.last.fm/music/Hannah+Cohen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

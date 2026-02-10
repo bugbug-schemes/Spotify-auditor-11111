@@ -1,0 +1,162 @@
+{
+  "artist_name": "Silentro",
+  "artist_id": "silentro",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:04:06.440192+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Silentro', got 'Freya Skye'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4789624,
+    "name": "Silentroom",
+    "profile": "Japanese composer. Also performs as [a=polycube].",
+    "realname": "",
+    "social_urls": [
+      "https://silentroom.tumblr.com",
+      "https://soundcloud.com/polycube",
+      "https://twitter.com/plcube",
+      "https://www.youtube.com/Silentroom",
+      "https://silentrm.net/",
+      "https://slrm.bandcamp.com"
+    ],
+    "members": [],
+    "groups": [
+      "Memoryheads",
+      "やどるむ",
+      "SUPER MWC KART"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 12,
+    "digital_only_releases": 24,
+    "total_releases": 36,
+    "formats": [
+      "",
+      "10xFile, MP3, Comp, 320",
+      "10xFile, MP3, EP, 320",
+      "11xFile, MP3, Comp, 320",
+      "15xFile, MP3, MiniAlbum, 320",
+      "16xFile, MP3, Comp, 320",
+      "20xFile, MP3, Comp, 320",
+      "2xCD, Album",
+      "2xCD, Comp",
+      "30xFile, MP3, Comp, 320",
+      "40xFile, MP3, Comp, 320",
+      "42xFile, MP3, Comp, 320",
+      "48xFile, MP3, Comp",
+      "5xFile, FLAC",
+      "68xFile, MP3, Comp, 320",
+      "6xFile, MP3, Comp, 320",
+      "6xFile, MP3, EP, 320",
+      "7xFile, MP3, Comp, 320",
+      "8xFile, FLAC, MiniAlbum",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Comp",
+      "File, MP3, Single",
+      "File, MP3, Single, 320"
+    ],
+    "labels": [
+      "BM9820A",
+      "Binzokomegane Girls Union",
+      "Bit192",
+      "Demaescape",
+      "Diverse System",
+      "Groundbreaking",
+      "Masamune",
+      "Myorph",
+      "Not On Label",
+      "Not On Label (SUPER MWC KART Self-Released)",
+      "Silentrm.net",
+      "Silentrm.net, Silentrm.net",
+      "Spacelectro",
+      "Unisphere (2)",
+      "Unisphere (2), Unisphere (2), Unisphere (2), Unisphere (2), Unisphere (2)",
+      "lowiro"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "SilentRO",
+    "mbid": "",
+    "listeners": 7319,
+    "playcount": 18254,
+    "listener_play_ratio": 2.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/SilentRO\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Machabara",
+      "Medicaid",
+      "Hyperix",
+      "spcejnk",
+      "Tamacto"
+    ],
+    "top_tracks": [
+      {
+        "name": "Circular",
+        "listeners": 5234,
+        "playcount": 10507
+      },
+      {
+        "name": "Orchid",
+        "listeners": 2209,
+        "playcount": 4456
+      },
+      {
+        "name": "Jasmine",
+        "listeners": 1470,
+        "playcount": 3286
+      },
+      {
+        "name": "UpdaterMusic",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Silentro - Circular",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/SilentRO"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,162 @@
+{
+  "artist_name": "Love Palmer",
+  "artist_id": "love_palmer",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:14:31.669776+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Love Palmer', got 'Keke Palmer'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 86622,
+    "name": "Tim Palmer",
+    "profile": "Producer/mixer Tim Palmer is one of alternative rock's unsung heroes.\r\nIn the early '80s, Palmer worked as an assistant engineer at [l266218] in London, England, helping musicians like [a=Mark Knopfler] and [a=Dead Or Alive].\r\nIn the latter half of the '80s, Palmer became a producer, and his keen ears and technical knowledge contributed to edgy post-punk group such as [a=The Mighty Lemon Drops], [a=The Mission], [a131497], and [a=House Of love] acquiring airplay on U.S. modern rock stations; Palmer gaves the band a radio-friendly sheen that didn't mollify their sound.\r\nIn 1989, Palmer produced [a=David Bowie]'s debut LP with [a=Tin Machine].\r\nMuch of Bowie's output in the '80s was chastised for its slick pop, but Palmer emphasized [a=Tin Machine]'s scrappy guitars and thunderous drums, laying the foundation for Bowie's artistic comeback in the '90s.\r\nPalmer started to focus more on mixing and remixing in the '90s, offering his skills to diverse alternative groups like [a261560], [a=Pea",
+    "realname": "Timothy J. Palmer",
+    "social_urls": [
+      "http://www.timpalmer.com/",
+      "http://en.wikipedia.org/wiki/Tim_Palmer"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 21,
+    "digital_only_releases": 79,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "12\", Promo",
+      "17xFile, AAC, Album, 256",
+      "2xCDr, Mixed, Mixtape",
+      "3xCD, Mixed",
+      "4xFile, AAC, EP, 256",
+      "5xCD, Comp",
+      "7\", S/Sided, Promo",
+      "7\", Single",
+      "Box, Comp + CD, Album, RE, RM + CD, Album, RE, RM ",
+      "CD, Album",
+      "CD, Album, RE + CD, Album, RE + CD, Album, RE + Bo",
+      "CD, Album, RE + CD, Album, RE + CD, Album, RE + CD",
+      "CD, Comp, Copy Prot.",
+      "CD, Comp, Promo",
+      "CD, EP",
+      "CD, Single",
+      "CD, Single, Promo",
+      "CDr, Single, Promo",
+      "Cass, Promo, Smplr, Dol",
+      "Cass, Promo, Smplr, SR ",
+      "File, AAC, Single, 256",
+      "LP, Comp, Promo"
+    ],
+    "labels": [
+      "Cherry Red",
+      "Ear Music, Up/Down Records",
+      "EastWest",
+      "Eastworld",
+      "Es Paranza Records",
+      "Fontana",
+      "Level 7",
+      "Ministry Of Sound",
+      "Not On Label (Courrier Self-released)",
+      "Not On Label (Figure 8 (4) Self-released)",
+      "Not On Label (Zeistencroix Self-released)",
+      "Parlophone",
+      "RCA, Sony Music",
+      "Screwed Up Records & Tapes",
+      "Suur Etikett",
+      "Think Like A Key Music",
+      "Tim/Kerr Records, Revolution (6)",
+      "Universal Music",
+      "Universal TV",
+      "Universal UMC, Union Square Music",
+      "Virgin",
+      "Virgin Dance",
+      "Warner Bros. Records",
+      "Whatever..."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Love Palmer",
+    "mbid": "",
+    "listeners": 6918,
+    "playcount": 20687,
+    "listener_play_ratio": 2.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Love+Palmer\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eina Duran",
+      "Distant Melodies",
+      "Paulo May",
+      "Wintera Torres",
+      "Viro Marix"
+    ],
+    "top_tracks": [
+      {
+        "name": "Adeptio Adamo",
+        "listeners": 4659,
+        "playcount": 16456
+      },
+      {
+        "name": "transformer",
+        "listeners": 2317,
+        "playcount": 4029
+      },
+      {
+        "name": "Rain Over Bow",
+        "listeners": 3,
+        "playcount": 198
+      },
+      {
+        "name": "Silent Echoes",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "supernova",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Love+Palmer"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

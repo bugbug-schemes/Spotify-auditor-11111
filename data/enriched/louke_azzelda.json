@@ -1,0 +1,118 @@
+{
+  "artist_name": "Louke Azzelda",
+  "artist_id": "louke_azzelda",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:14:26.531436+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 263705971,
+    "name": "Louke Azzelda",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/263705971",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b99ab0e15878de08e4bf8a562067eb37/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Plushie",
+        "label": "",
+        "release_date": "2025-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mrs Eggies",
+        "label": "",
+        "release_date": "2024-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Louke Azzelda",
+    "mbid": "",
+    "listeners": 2038,
+    "playcount": 24242,
+    "listener_play_ratio": 11.89,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Louke+Azzelda\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Heiki Mäkinen",
+      "Madeline Lavender",
+      "H. Jacoby",
+      "Finn Montgomery",
+      "Vivienne Honey"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mrs Eggies",
+        "listeners": 1750,
+        "playcount": 17631
+      },
+      {
+        "name": "A La Claire Fontaine",
+        "listeners": 283,
+        "playcount": 3346
+      },
+      {
+        "name": "Alouette",
+        "listeners": 281,
+        "playcount": 3265
+      }
+    ],
+    "url": "https://www.last.fm/music/Louke+Azzelda"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

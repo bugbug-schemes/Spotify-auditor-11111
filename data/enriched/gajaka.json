@@ -1,0 +1,231 @@
+{
+  "artist_name": "Gajaka",
+  "artist_id": "gajaka",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:47:20.264885+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 258353002,
+    "name": "Gajaka",
+    "nb_fan": 4,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/258353002",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/841ae7f1b3dd0d4ac812313520c7de50/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Interiore",
+      "Ligera",
+      "Arroyo",
+      "Aerial"
+    ],
+    "track_durations": [
+      153,
+      142,
+      139,
+      132
+    ],
+    "track_ranks": [
+      65707,
+      44464,
+      5417,
+      52815
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Hopeful Future",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rivers",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Interiore",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ligera",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Arroyo",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aidea",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solstice",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Halo",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Right Here, Right now",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ripples",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aerial",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gajaka",
+    "mbid": "",
+    "listeners": 28063,
+    "playcount": 108690,
+    "listener_play_ratio": 3.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gajaka\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Áluinn",
+      "Køsk Skriner",
+      "Harry Bloom",
+      "Ezra Santos",
+      "Magnus Hartman"
+    ],
+    "top_tracks": [
+      {
+        "name": "Aerial",
+        "listeners": 18741,
+        "playcount": 49826
+      },
+      {
+        "name": "Ripples",
+        "listeners": 15478,
+        "playcount": 38478
+      },
+      {
+        "name": "Interiore",
+        "listeners": 4658,
+        "playcount": 9260
+      },
+      {
+        "name": "Rivers",
+        "listeners": 1581,
+        "playcount": 2421
+      },
+      {
+        "name": "Halo",
+        "listeners": 1572,
+        "playcount": 3280
+      },
+      {
+        "name": "Solstice",
+        "listeners": 1456,
+        "playcount": 2978
+      },
+      {
+        "name": "Arroyo",
+        "listeners": 729,
+        "playcount": 1464
+      },
+      {
+        "name": "Ligera",
+        "listeners": 495,
+        "playcount": 892
+      },
+      {
+        "name": "Hopeful Future",
+        "listeners": 54,
+        "playcount": 72
+      },
+      {
+        "name": "Aidea",
+        "listeners": 8,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Gajaka"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

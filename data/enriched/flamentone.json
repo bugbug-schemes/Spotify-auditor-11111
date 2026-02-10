@@ -1,0 +1,207 @@
+{
+  "artist_name": "Flamentone",
+  "artist_id": "flamentone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:38:34.486574+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a3f4c5f7-bb9d-4fe3-955d-6bb919d17e56",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/130718942",
+      "soundcloud": "https://soundcloud.com/flamentone"
+    },
+    "labels": [
+      "Duck Pond Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 130718942,
+    "name": "Flamentone",
+    "nb_fan": 10,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/130718942",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6c1442faaf3beda2f5ee2cfd6bba0cde/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Pitanga",
+      "Liquid Sun",
+      "Salty",
+      "Afterbeach"
+    ],
+    "track_durations": [
+      148,
+      176,
+      150,
+      173
+    ],
+    "track_ranks": [
+      533401,
+      54336,
+      31063,
+      34860
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Pitanga",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liquid Sun",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salty",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Broken Skies",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Afterbeach",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Belinda",
+        "label": "",
+        "release_date": "2021-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Primavera",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Flamentone",
+    "mbid": "",
+    "listeners": 16598,
+    "playcount": 52283,
+    "listener_play_ratio": 3.15,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Flamentone\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Hayzei",
+      "Dan Awy",
+      "Werlie",
+      "OYOANNE",
+      "Slashio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Afterbeach",
+        "listeners": 10135,
+        "playcount": 32631
+      },
+      {
+        "name": "Liquid Sun",
+        "listeners": 4906,
+        "playcount": 11312
+      },
+      {
+        "name": "Pitanga",
+        "listeners": 2858,
+        "playcount": 6538
+      },
+      {
+        "name": "Salty",
+        "listeners": 707,
+        "playcount": 1660
+      },
+      {
+        "name": "Primavera",
+        "listeners": 39,
+        "playcount": 69
+      },
+      {
+        "name": "Broken Skies",
+        "listeners": 27,
+        "playcount": 47
+      },
+      {
+        "name": "Belinda",
+        "listeners": 14,
+        "playcount": 26
+      }
+    ],
+    "url": "https://www.last.fm/music/Flamentone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

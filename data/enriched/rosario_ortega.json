@@ -1,0 +1,385 @@
+{
+  "artist_name": "Rosario Ortega",
+  "artist_id": "rosario_ortega",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:46:46.114582+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "0e8f0e64-4975-4625-a599-e7a0b2c065cf",
+    "type": "Person",
+    "country": "AR",
+    "area": "Argentina",
+    "begin_date": "1985-11-09",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "IMDb": "https://www.imdb.com/name/nm3684045/",
+      "other databases": "http://rock.com.ar/artistas/rosario-ortega",
+      "wikidata": "https://www.wikidata.org/wiki/Q6112393"
+    },
+    "labels": [
+      "Columbia"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 2583261,
+    "name": "Rosario Ortega",
+    "nb_fan": 1477,
+    "nb_album": 18,
+    "link": "https://www.deezer.com/artist/2583261",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1be2c5eca34210ef8cfba881aed2078e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Caloncho",
+      "Meteoros",
+      "Nahuel Barbero",
+      "Silvestre Y La Naranja"
+    ],
+    "contributor_roles": {
+      "Caloncho": [
+        "Main"
+      ],
+      "Nahuel Barbero": [
+        "Featured"
+      ],
+      "Meteoros": [
+        "Main"
+      ],
+      "Silvestre Y La Naranja": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Otro Lado",
+      "Hablo Con Vos (feat. Nahuel Barbero)",
+      "Canción Animal",
+      "Espuma",
+      "Vacaciones de Mi Mente",
+      "Luminosidad",
+      "Amores Callejeros (Bolero Remix)"
+    ],
+    "track_durations": [
+      237,
+      231,
+      199,
+      217,
+      192,
+      117,
+      204
+    ],
+    "track_ranks": [
+      138179,
+      33134,
+      13294,
+      32084,
+      34534,
+      81887,
+      67181
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 1,
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "Del Otro Lado Sessions",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Otro Lado",
+        "label": "",
+        "release_date": "2020-12-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Viento y Sombra",
+        "label": "",
+        "release_date": "2012-06-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Track",
+        "label": "",
+        "release_date": "2023-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Punta Cana",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Sal",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cómo Te Extraño Mi Amor",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tú",
+        "label": "",
+        "release_date": "2022-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tardes de Verano (feat. Nahuel Barbero & Acus) (Del Otro Lado Sessions)",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trueno",
+        "label": "",
+        "release_date": "2020-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Canción Animal",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Destiempo (Blackforest Sessions)",
+        "label": "",
+        "release_date": "2020-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Como Quieras (Blackforest Sessions)",
+        "label": "",
+        "release_date": "2020-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Otro Lado",
+        "label": "",
+        "release_date": "2020-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Como Quieras",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vacaciones de Mi Mente",
+        "label": "",
+        "release_date": "2018-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Espuma",
+        "label": "",
+        "release_date": "2018-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No te vayas",
+        "label": "",
+        "release_date": "2017-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Caloncho",
+      "Carlos Sadness",
+      "Vacación",
+      "Elsa y Elmar",
+      "Esteman",
+      "Luz Pinos",
+      "Technicolor Fabrics",
+      "Ximena Sarinana",
+      "Alex Ferreira",
+      "Vanessa Zamora"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1656747,
+    "name": "Rosario Ortega",
+    "profile": "Born 9 November 1985, Miami, FL, USA. Argentinian singer/songwriter. Daughter of [a202563] and [a=Evangelina Salazar] and sister of [a=Emanuel Ortega].",
+    "realname": "Rosario Ortega",
+    "social_urls": [
+      "http://www.rosarioortega.com/",
+      "http://es.wikipedia.org/wiki/Rosario_Ortega"
+    ],
+    "members": [],
+    "groups": [
+      "Entre Ríos"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 17,
+    "digital_only_releases": 8,
+    "total_releases": 25,
+    "formats": [
+      "",
+      "14xFile, MP3, Album",
+      "5xFile, MP3, EP, 256",
+      "CD, Album",
+      "CD, Album + DVD-V, NTSC, Reg",
+      "CD, Comp",
+      "CD, EP",
+      "CDr, Album",
+      "LP, Album",
+      "LP, Gat"
+    ],
+    "labels": [
+      "BMG Argentina, Ariola, BMG Argentina, Ariola",
+      "Costa Futuro",
+      "Crack Rok",
+      "Cromos",
+      "EMI",
+      "Geiser Discos",
+      "Indice Virgen",
+      "Not On Label",
+      "Sony Music",
+      "Tiamat Records",
+      "UltraPop (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rosario Ortega",
+    "mbid": "0e8f0e64-4975-4625-a599-e7a0b2c065cf",
+    "listeners": 13267,
+    "playcount": 70821,
+    "listener_play_ratio": 5.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rosario+Ortega\">Read more on Last.fm</a>",
+    "tags": [
+      "latin",
+      "pop",
+      "argentina"
+    ],
+    "similar_artists": [
+      "Malena Villa",
+      "Francisca y los Exploradores",
+      "Silvina Moreno",
+      "Juan Ingaramo",
+      "Vacación"
+    ],
+    "top_tracks": [
+      {
+        "name": "Luminosidad",
+        "listeners": 4833,
+        "playcount": 20827
+      },
+      {
+        "name": "Otro Lado",
+        "listeners": 4528,
+        "playcount": 14919
+      },
+      {
+        "name": "Hablo Con Vos (feat. Nahuel Barbero)",
+        "listeners": 2250,
+        "playcount": 5145
+      },
+      {
+        "name": "Cómo Te Extraño Mi Amor",
+        "listeners": 790,
+        "playcount": 2350
+      },
+      {
+        "name": "Como Quieras",
+        "listeners": 681,
+        "playcount": 2196
+      },
+      {
+        "name": "El Pozo",
+        "listeners": 467,
+        "playcount": 1937
+      },
+      {
+        "name": "Viento y Sombra",
+        "listeners": 438,
+        "playcount": 1986
+      },
+      {
+        "name": "Espuma",
+        "listeners": 424,
+        "playcount": 2466
+      },
+      {
+        "name": "Agua de Río (feat. El Principe Idiota)",
+        "listeners": 392,
+        "playcount": 1022
+      },
+      {
+        "name": "Se Va",
+        "listeners": 391,
+        "playcount": 1138
+      }
+    ],
+    "url": "https://www.last.fm/music/Rosario+Ortega"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

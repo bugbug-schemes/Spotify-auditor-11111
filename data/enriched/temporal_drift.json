@@ -1,0 +1,197 @@
+{
+  "artist_name": "Temporal Drift",
+  "artist_id": "temporal_drift",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:29:00.835759+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 295053991,
+    "name": "Temporal Drift",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/295053991",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/35ac5e13d528604b924c914f98acf173/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Contrasts"
+    ],
+    "track_durations": [
+      114
+    ],
+    "track_ranks": [
+      51599
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Flickers of Forgotten Light",
+        "label": "",
+        "release_date": "2024-12-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flickers of Forgotten Light (Detroit vibe)",
+        "label": "",
+        "release_date": "2024-12-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Redshift",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contrasts",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5366509,
+    "name": "Yosuke Kitazawa",
+    "profile": "Co-founder of [l=Temporal Drift] alongside [a=Patrick McCarthy]. Formerly Reissue Producer & Mechanical License Administrator for [l=Light In The Attic].\r\n\r\n",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 40,
+    "total_releases": 43,
+    "formats": [
+      "",
+      "3xCD, Album, RE, RM + Box, Comp",
+      "7\", Single",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Aldelight",
+      "Manimal Vinyl Records",
+      "Ship To Shore Phonograph Co., Light In The Attic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Temporal Drift",
+    "mbid": "",
+    "listeners": 5529,
+    "playcount": 10721,
+    "listener_play_ratio": 1.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Temporal+Drift\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Charlie Blue",
+      "Foster Zeta",
+      "Otto Virell",
+      "AtmoLife",
+      "Lucky Lorry"
+    ],
+    "top_tracks": [
+      {
+        "name": "Contrasts",
+        "listeners": 5517,
+        "playcount": 10628
+      },
+      {
+        "name": "D3 03 Twist & Shout - Miyako Ochi",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "D3 07 帰らなくちゃ (Kaeranakucha) - Acid Seven",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "D3 08 ピエロがやってきた (Piero Ga Yatte Kita) - Acid Seven",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "D3 04 寿の朝 (Kotobuki No Asa) - Acid Seven",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "D3 05 もう帰らない (Mou Kaeranai) - Acid Seven",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "D3 06 風よ吹きまくれ涙は枯れる光の中に (Kaze Yo Fukimakure Namida Wa Kareru Hikari No Naka Ni) - Acid Seven",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "D3 09 横浜へおいでよ (Yokohama E Oideyo) - Acid Seven",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "D2 04 海が見えるあの丘へ (Improvisation) - Masato Minami",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "D2 05 愛の絆 (Ai No Kizuna) - Masato Minami",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Temporal+Drift"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

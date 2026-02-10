@@ -1,0 +1,413 @@
+{
+  "artist_name": "Jenny Jones",
+  "artist_id": "jenny_jones",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:26:40.195614+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bf05c82a-aa77-42b0-bc3c-692ce9d21aa5",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 195783,
+    "name": "Jenny Jones",
+    "nb_fan": 179,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/195783",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0c30cdbc9f4ccfa1933a66148e430d14/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Compassion",
+      "I'll Be Seeing You",
+      "Yet Another Heartbreak",
+      "All The Things We Were",
+      "Never Mattered"
+    ],
+    "track_durations": [
+      251,
+      213,
+      192,
+      271,
+      223
+    ],
+    "track_ranks": [
+      65807,
+      115371,
+      7465,
+      892,
+      30999
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "You Make Me Feel",
+        "label": "",
+        "release_date": "2016-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Your love (Radio Edit)",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Never Mattered",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "We Loved Each Other (Lee Butler VIP Remix)",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sexy Body",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tact It Requires",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Funambulist",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yet Another Heartbreak",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Die With You",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Une Histoire Flamande",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Girl I Love",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All The Things We Were",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Glass Of Wine In The Park",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Prez Delight",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anse Source d'Argent",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Numb",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Give Me That Feeling",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Compassion",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Theme For Ernie",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Our Love Is Here To Stay",
+        "label": "",
+        "release_date": "2022-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'll Be Seeing You",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shine",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Never Alone Again",
+        "label": "",
+        "release_date": "2018-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Battlefield",
+        "label": "",
+        "release_date": "2014-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sexy Body",
+        "label": "",
+        "release_date": "2009-08-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Newington Green",
+      "The Groove Trio",
+      "Magpie Jazz Trio",
+      "Bladverk Band",
+      "Tate Jackson Trio",
+      "Astoria Three",
+      "The Blue Green",
+      "Mandevilla"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 161386,
+    "name": "Jenny Jones",
+    "profile": "Jenny Jones is a cellist, composer and singer, currently based in Barcelona.  She now regularly collaborates with DJ/Rupture, and is a member of [a=Nettle].",
+    "realname": "Jenny Jones",
+    "social_urls": [
+      "http://www.myspace.com/jennyj0ne5"
+    ],
+    "members": [],
+    "groups": [
+      "Nettle"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 18,
+    "digital_only_releases": 9,
+    "total_releases": 27,
+    "formats": [
+      "",
+      "12\"",
+      "2xCD, Comp",
+      "3xCD, Album, Comp",
+      "4xFile, MP3, Comp, 320",
+      "7\"",
+      "CD, Album",
+      "CD, Album, Mixed",
+      "CD, Comp",
+      "CD, Comp, Ltd, Promo",
+      "CD, Comp, Transcription",
+      "CD, Mini",
+      "CD, Single, Promo",
+      "CDr, Comp, Promo",
+      "CDr, Promo, Smplr",
+      "File, MP3, Mixed, P/Unofficial, 192"
+    ],
+    "labels": [
+      "Broklyn Beats",
+      "DJ Promotion",
+      "Decadance Recordings",
+      "Dekorder",
+      "Fine Tunes",
+      "Magic Records",
+      "Not On Label (Bradien Self-released), Not On Label (Dosimat Self-released)",
+      "Orange Groove Recordings",
+      "Raresong Recordings",
+      "Rock Over London",
+      "Room40",
+      "Spannered",
+      "Spinout Records (2)",
+      "Traxx, Universal Music Group",
+      "spa.RK",
+      "theAgriculture"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jenny Jones",
+    "mbid": "0f540443-af38-4029-8d14-e2625cba0963",
+    "listeners": 59308,
+    "playcount": 219251,
+    "listener_play_ratio": 3.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jenny+Jones\">Read more on Last.fm</a>",
+    "tags": [
+      "DIsco House",
+      "House",
+      "dance",
+      "electronic",
+      "electronica"
+    ],
+    "similar_artists": [
+      "Wawa & Herd",
+      "Slumdogz",
+      "No Halo",
+      "Warren Clarke & Tara Mcdonald",
+      "Armand de france"
+    ],
+    "top_tracks": [
+      {
+        "name": "I'll Be Seeing You",
+        "listeners": 25120,
+        "playcount": 66113
+      },
+      {
+        "name": "Anse Source d'Argent",
+        "listeners": 17845,
+        "playcount": 44171
+      },
+      {
+        "name": "Compassion",
+        "listeners": 14279,
+        "playcount": 33709
+      },
+      {
+        "name": "Prez Delight",
+        "listeners": 6633,
+        "playcount": 14690
+      },
+      {
+        "name": "Don't Walk Away (Shave Remix)",
+        "listeners": 3361,
+        "playcount": 13394
+      },
+      {
+        "name": "All The Things We Were",
+        "listeners": 3072,
+        "playcount": 5986
+      },
+      {
+        "name": "Une Histoire Flamande",
+        "listeners": 2483,
+        "playcount": 5333
+      },
+      {
+        "name": "Capilano Bridge",
+        "listeners": 2412,
+        "playcount": 7460
+      },
+      {
+        "name": "Don't Walk Away",
+        "listeners": 1311,
+        "playcount": 4461
+      },
+      {
+        "name": "Don't Walk Away (Ali Payami Edit)",
+        "listeners": 1083,
+        "playcount": 4709
+      }
+    ],
+    "url": "https://www.last.fm/music/Jenny+Jones"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

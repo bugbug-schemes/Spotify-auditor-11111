@@ -1,0 +1,151 @@
+{
+  "artist_name": "Maja Balder",
+  "artist_id": "maja_balder",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:25:01.592472+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183284707,
+    "name": "Maja Balder",
+    "nb_fan": 1,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/183284707",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b53bdf38645d11279e5871810e394a9d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Caelum Aqua",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cykler",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Denali",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heden",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Impulser",
+        "label": "",
+        "release_date": "2021-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Arild",
+        "label": "",
+        "release_date": "2020-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Maja Balder",
+    "mbid": "",
+    "listeners": 16622,
+    "playcount": 64887,
+    "listener_play_ratio": 3.9,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Maja+Balder\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Songlark",
+      "Joseph Rain",
+      "Aisher Rami",
+      "Nerea Vallée",
+      "Aurora Season"
+    ],
+    "top_tracks": [
+      {
+        "name": "Caelum Aqua",
+        "listeners": 11833,
+        "playcount": 45348
+      },
+      {
+        "name": "Arild",
+        "listeners": 2963,
+        "playcount": 9554
+      },
+      {
+        "name": "Impulser",
+        "listeners": 2330,
+        "playcount": 9983
+      },
+      {
+        "name": "Heden",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Maja+Balder"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

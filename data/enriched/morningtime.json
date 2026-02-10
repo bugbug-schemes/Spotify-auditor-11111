@@ -1,0 +1,548 @@
+{
+  "artist_name": "morningtime",
+  "artist_id": "morningtime",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:25:41.596510+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2a872150-ad48-4b74-8cab-0ce29c24f01e",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental",
+      "boom bap",
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/134508442",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/morningtime/11648463",
+      "social network": "https://www.threads.com/@morningtimelofi",
+      "soundcloud": "https://soundcloud.com/morningtimelofi",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/morningtime/11648463",
+      "youtube music": "https://music.youtube.com/channel/UCwWm3tsKs22--YHlPwDNtow"
+    },
+    "labels": [
+      "Kindbrew",
+      "Chillhop Music",
+      "Lofi Records",
+      "urbanundergrounds",
+      "Stereofox Records",
+      "Lopills",
+      "Hip Dozer",
+      "Etymology Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 134508442,
+    "name": "morningtime",
+    "nb_fan": 117,
+    "nb_album": 73,
+    "link": "https://www.deezer.com/artist/134508442",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/66e4428d2f5430b2f193efc6fc86d0d4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Blue Wednesday",
+      "Chillwme",
+      "Jost Esser",
+      "Jxsn",
+      "Lofi Girl",
+      "NSX",
+      "Snazzy",
+      "Van El",
+      "fnonose"
+    ],
+    "contributor_roles": {
+      "fnonose": [
+        "Main"
+      ],
+      "Jxsn": [
+        "Main"
+      ],
+      "Blue Wednesday": [
+        "Main"
+      ],
+      "Snazzy": [
+        "Main"
+      ],
+      "Chillwme": [
+        "Main"
+      ],
+      "NSX": [
+        "Main"
+      ],
+      "Lofi Girl": [
+        "Main"
+      ],
+      "Jost Esser": [
+        "Main"
+      ],
+      "Van El": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "late summit",
+      "Oceans, Mountains",
+      "It Takes Time",
+      "libby's song",
+      "look at you",
+      "road home",
+      "(for) happiness",
+      "too dark",
+      "Willow",
+      "Brush Strokes",
+      "first glance",
+      "gradual decay",
+      "Lofty",
+      "Sunny",
+      "big enough",
+      "nearsighted",
+      "from dust",
+      "golden blue",
+      "Coffee Break",
+      "good morning",
+      "Fauna",
+      "expanse",
+      "trail running",
+      "the morning rests",
+      "felt"
+    ],
+    "track_durations": [
+      125,
+      138,
+      199,
+      179,
+      156,
+      139,
+      171,
+      161,
+      160,
+      153,
+      165,
+      104,
+      142,
+      166,
+      164,
+      178,
+      166,
+      143,
+      144,
+      151,
+      135,
+      133,
+      166,
+      153,
+      151
+    ],
+    "track_ranks": [
+      270542,
+      366015,
+      480076,
+      330231,
+      321514,
+      271939,
+      251956,
+      248597,
+      267829,
+      110138,
+      244007,
+      139514,
+      309309,
+      111712,
+      127700,
+      210469,
+      163184,
+      112397,
+      54105,
+      178749,
+      215343,
+      26110,
+      76240,
+      190148,
+      109732
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 11,
+      "single": 56
+    },
+    "albums": [
+      {
+        "title": "sketches",
+        "label": "",
+        "release_date": "2025-11-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "the art of balance",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "happiness",
+        "label": "",
+        "release_date": "2024-08-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "the cliff",
+        "label": "",
+        "release_date": "2024-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Apeirogon",
+        "label": "",
+        "release_date": "2022-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nature Between",
+        "label": "",
+        "release_date": "2022-07-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "snowed in",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hideaway",
+        "label": "",
+        "release_date": "2025-10-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Winter",
+        "label": "",
+        "release_date": "2025-02-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "contentment",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "weathered",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "perspective",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "a reason",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "lean in",
+        "label": "",
+        "release_date": "2023-10-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Soften",
+        "label": "",
+        "release_date": "2023-05-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Cyan",
+        "label": "",
+        "release_date": "2022-04-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sun Burst",
+        "label": "",
+        "release_date": "2022-02-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "humle",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "boundless",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Quiet Kind",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coffee Break",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Friends",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sparrow",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mountain wide",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tangerine",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lofty",
+        "label": "",
+        "release_date": "2025-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "maine in fall",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azul",
+        "label": "",
+        "release_date": "2025-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "come and go",
+        "label": "",
+        "release_date": "2025-05-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noon Haze",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "NO SPIRIT",
+      "Mondo Loops",
+      "Softy",
+      "squeeda",
+      "Loafy Building",
+      "Mujo",
+      "M e a d o w",
+      "Lawrence Walther",
+      "Oatmello",
+      "Dimension 32"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14531461,
+    "name": "morningtime",
+    "profile": "Lofi producer",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/morningtimelofi",
+      "https://open.spotify.com/artist/7xwOP2sBEig4hhduDiYwHS"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 1,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "10xLP, Comp, Ltd, Box",
+      "2x12\", Comp, Ltd, Gre",
+      "2xLP, Comp, Ltd",
+      "2xLP, Comp, Ltd, 180",
+      "2xLP, Comp, Ltd, Dar",
+      "2xLP, Comp, Ltd, Ora",
+      "LP"
+    ],
+    "labels": [
+      "Lofi Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Morningtime",
+    "mbid": "",
+    "listeners": 117844,
+    "playcount": 596625,
+    "listener_play_ratio": 5.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Morningtime\">Read more on Last.fm</a>",
+    "tags": [
+      "electronic",
+      "instrumental",
+      "Lo-Fi"
+    ],
+    "similar_artists": [
+      "LUQĘT",
+      "cxlt.",
+      "iamalex",
+      "nothingtosay",
+      "Softy"
+    ],
+    "top_tracks": [
+      {
+        "name": "headway",
+        "listeners": 46199,
+        "playcount": 110983
+      },
+      {
+        "name": "look at you",
+        "listeners": 25336,
+        "playcount": 50933
+      },
+      {
+        "name": "the rain",
+        "listeners": 10750,
+        "playcount": 19474
+      },
+      {
+        "name": "(for) happiness",
+        "listeners": 10552,
+        "playcount": 18716
+      },
+      {
+        "name": "solely",
+        "listeners": 9971,
+        "playcount": 21925
+      },
+      {
+        "name": "flat tire",
+        "listeners": 9628,
+        "playcount": 17755
+      },
+      {
+        "name": "big enough",
+        "listeners": 9232,
+        "playcount": 16825
+      },
+      {
+        "name": "roller blading",
+        "listeners": 9010,
+        "playcount": 16173
+      },
+      {
+        "name": "felt",
+        "listeners": 8890,
+        "playcount": 16083
+      },
+      {
+        "name": "good morning",
+        "listeners": 8866,
+        "playcount": 15773
+      }
+    ],
+    "url": "https://www.last.fm/music/Morningtime"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

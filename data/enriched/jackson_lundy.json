@@ -1,0 +1,423 @@
+{
+  "artist_name": "Jackson Lundy",
+  "artist_id": "jackson_lundy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:19:59.220283+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "02d07bcd-2c9f-4835-9996-03e7285ad817",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/12131602",
+      "streaming": "https://tidal.com/artist/8606601"
+    },
+    "labels": [
+      "Jackson Lundy",
+      "UnderCurrent",
+      "Nettwerk"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12131602,
+    "name": "Jackson Lundy",
+    "nb_fan": 285,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/12131602",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3424213b7caddac16cfe1a4a9c62f6bb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "ABENA",
+      "Brasstracks",
+      "Charles Gaines",
+      "Juliana Chahayed",
+      "Julius Rodriguez",
+      "Sarah Kang",
+      "Tarriona 'Tank' Ball"
+    ],
+    "contributor_roles": {
+      "Brasstracks": [
+        "Main"
+      ],
+      "Tarriona 'Tank' Ball": [
+        "Main"
+      ],
+      "Julius Rodriguez": [
+        "Main"
+      ],
+      "Juliana Chahayed": [
+        "Main"
+      ],
+      "Charles Gaines": [
+        "Main"
+      ],
+      "Sarah Kang": [
+        "Main"
+      ],
+      "ABENA": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Calypso",
+      "Loverboy",
+      "Not Far Away",
+      "Eyes on You",
+      "work friends",
+      "I'm Only Me",
+      "inside",
+      "medicine",
+      "{intermission}",
+      "no place i'd rather be",
+      "miller lite",
+      "come by",
+      "happy (got 1)",
+      "mom",
+      "old me",
+      "runnin'",
+      "Dandelions",
+      "slowly",
+      "Pure Imagination",
+      "Three Steps"
+    ],
+    "track_durations": [
+      244,
+      171,
+      258,
+      158,
+      205,
+      136,
+      120,
+      138,
+      46,
+      145,
+      159,
+      220,
+      185,
+      174,
+      248,
+      152,
+      147,
+      186,
+      189,
+      197
+    ],
+    "track_ranks": [
+      437735,
+      73542,
+      64663,
+      145518,
+      22081,
+      67496,
+      44717,
+      89297,
+      58188,
+      26560,
+      32971,
+      50812,
+      63762,
+      37825,
+      30262,
+      33373,
+      97425,
+      77296,
+      38112,
+      55836
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "PEACHY KEEN",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stella, My Dear",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "slowly",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mom",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "no place i'd rather be",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "runnin'",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "inside",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "come by",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "old me",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "miller lite",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "happy (got 1)",
+        "label": "",
+        "release_date": "2024-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "medicine",
+        "label": "",
+        "release_date": "2023-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dandelions",
+        "label": "",
+        "release_date": "2022-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pure Imagination",
+        "label": "",
+        "release_date": "2024-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jackson Lundy Presents \"Loverboy\" and \"Me & You\"",
+        "label": "",
+        "release_date": "2024-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "9 to 5",
+        "label": "",
+        "release_date": "2019-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drown in the Fire",
+        "label": "",
+        "release_date": "2019-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Time",
+        "label": "",
+        "release_date": "2018-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calypso",
+        "label": "",
+        "release_date": "2017-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Benny Sings",
+      "Tom Misch",
+      "Busty and the Bass",
+      "Jordan Rakei",
+      "Kubla",
+      "Aaron Taylor",
+      "LEISURE",
+      "Cool Company",
+      "Moods",
+      "Joesef"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9037327,
+    "name": "Jackson Lundy",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 1,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "2xLP, Album, Dlx, Gol",
+      "LP, Album, Ltd, Blu",
+      "LP, Album, Moc"
+    ],
+    "labels": [
+      "After Hours Records (5)",
+      "Capitol Records",
+      "Not On Label (Brasstracks Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jackson Lundy",
+    "mbid": "02d07bcd-2c9f-4835-9996-03e7285ad817",
+    "listeners": 59170,
+    "playcount": 366291,
+    "listener_play_ratio": 6.19,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jackson+Lundy\">Read more on Last.fm</a>",
+    "tags": [
+      "american"
+    ],
+    "similar_artists": [
+      "Dre'es",
+      "Souly Had",
+      "Honeywhip",
+      "Jordy Searcy",
+      "Sarah and the Sundays"
+    ],
+    "top_tracks": [
+      {
+        "name": "Loverboy",
+        "listeners": 16188,
+        "playcount": 95011
+      },
+      {
+        "name": "Calypso",
+        "listeners": 15324,
+        "playcount": 84514
+      },
+      {
+        "name": "Dandelions",
+        "listeners": 7388,
+        "playcount": 21889
+      },
+      {
+        "name": "Sophie",
+        "listeners": 6355,
+        "playcount": 16921
+      },
+      {
+        "name": "medicine",
+        "listeners": 5254,
+        "playcount": 11650
+      },
+      {
+        "name": "Eyes on You",
+        "listeners": 5153,
+        "playcount": 26488
+      },
+      {
+        "name": "Morning Time",
+        "listeners": 4101,
+        "playcount": 10835
+      },
+      {
+        "name": "9 to 5",
+        "listeners": 2949,
+        "playcount": 14273
+      },
+      {
+        "name": "come by",
+        "listeners": 2605,
+        "playcount": 8560
+      },
+      {
+        "name": "Nightfall",
+        "listeners": 2386,
+        "playcount": 10795
+      }
+    ],
+    "url": "https://www.last.fm/music/Jackson+Lundy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

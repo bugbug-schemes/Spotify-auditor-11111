@@ -1,0 +1,121 @@
+{
+  "artist_name": "Elias Mía",
+  "artist_id": "elias_mía",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:36:00.963750+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Elias Mía', got 'Hussain Al Jassmi'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elias Mía",
+    "mbid": "",
+    "listeners": 37572,
+    "playcount": 192115,
+    "listener_play_ratio": 5.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elias+M%C3%ADa\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Crimson Sky Theory",
+      "Gabriel Verci",
+      "Simeon Oliver",
+      "Xiada",
+      "Elisha Raymond"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ionosphere",
+        "listeners": 21769,
+        "playcount": 123972
+      },
+      {
+        "name": "Ecliptica",
+        "listeners": 9651,
+        "playcount": 37358
+      },
+      {
+        "name": "Morphology of 528 Hz",
+        "listeners": 6545,
+        "playcount": 26302
+      },
+      {
+        "name": "Perennial",
+        "listeners": 1590,
+        "playcount": 4434
+      },
+      {
+        "name": "Delta Ray 3 Hz",
+        "listeners": 19,
+        "playcount": 26
+      },
+      {
+        "name": "Through Halflight",
+        "listeners": 4,
+        "playcount": 6
+      },
+      {
+        "name": "Nyxia",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Theta Ray 6 Hz",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Alpha Ray 9 Hz",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Beta Ray 15 Hz",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Elias+M%C3%ADa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

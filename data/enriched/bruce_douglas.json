@@ -1,0 +1,224 @@
+{
+  "artist_name": "Bruce Douglas",
+  "artist_id": "bruce_douglas",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:51:16.497587+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 63136852,
+    "name": "Bruce Douglas",
+    "nb_fan": 12,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/63136852",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b6e62701c1df4e8085199c65208bc09b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "How High Is the Moon"
+    ],
+    "track_durations": [
+      143
+    ],
+    "track_ranks": [
+      36285
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Fly Me to the Jazz",
+        "label": "",
+        "release_date": "2024-03-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Santa Baby (Fireplace Version)",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Santa Baby",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Can't Get Started",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How High Is the Moon",
+        "label": "",
+        "release_date": "2023-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Beggining to Look a Lot like Christmas",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Standards",
+        "label": "",
+        "release_date": "2022-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 672016,
+    "name": "Bruce Douglas",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "The Reaction",
+      "The Shits (7)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 3,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "12\"",
+      "7\", Single",
+      "VHS, PAL"
+    ],
+    "labels": [
+      "Lightning Records (2)",
+      "Planet Dog",
+      "The Lone Corporation"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bruce Douglas",
+    "mbid": "",
+    "listeners": 28690,
+    "playcount": 122512,
+    "listener_play_ratio": 4.27,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bruce+Douglas\">Read more on Last.fm</a>",
+    "tags": [
+      "piano",
+      "instrumental",
+      "calm"
+    ],
+    "similar_artists": [
+      "Malcolm Schultze",
+      "Edward Jefferson",
+      "Hip Jazz Collective",
+      "Maude De Geyndt",
+      "Charlotte Benton"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fly Me To The Moon",
+        "listeners": 13203,
+        "playcount": 35373
+      },
+      {
+        "name": "Fancy Fancy",
+        "listeners": 11517,
+        "playcount": 31752
+      },
+      {
+        "name": "How High Is the Moon",
+        "listeners": 5929,
+        "playcount": 24032
+      },
+      {
+        "name": "I Can't Get Started",
+        "listeners": 4886,
+        "playcount": 20452
+      },
+      {
+        "name": "Santa Baby",
+        "listeners": 3469,
+        "playcount": 8556
+      },
+      {
+        "name": "Lights Of Dawn",
+        "listeners": 909,
+        "playcount": 2261
+      },
+      {
+        "name": "How High the Moon",
+        "listeners": 22,
+        "playcount": 56
+      },
+      {
+        "name": "It's Beggining to Look a Lot like Christmas",
+        "listeners": 6,
+        "playcount": 19
+      },
+      {
+        "name": "Bruce Douglas - Fly Me To The Moon",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Bruce Douglas - Fancy Fancy",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Bruce+Douglas"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

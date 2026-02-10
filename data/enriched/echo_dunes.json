@@ -1,0 +1,195 @@
+{
+  "artist_name": "Echo Dunes",
+  "artist_id": "echo_dunes",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:32:30.377568+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 340922121,
+    "name": "Echo Dunes",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/340922121",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a54ef3592574122d5be83310bd83b55c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Air",
+      "Sunshine"
+    ],
+    "track_durations": [
+      154,
+      157
+    ],
+    "track_ranks": [
+      37564,
+      43457
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Weightless",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Darker",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Further Ahead",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Day",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunset Clouds",
+        "label": "",
+        "release_date": "2025-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunshine",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Steps",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Air",
+        "label": "",
+        "release_date": "2025-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1732695,
+    "name": "Lunar Dunes",
+    "profile": "Formed by the west London trio of guitarist [a=Adam Blake (2)] ([a=Treatment (2)], Natacha Atlas, Cornershop) and [a=Solus3] founder members drummer Hami ([a=Transglobal Underground]) and bassist Ian Blackaby, Lunar Dunes released their debut album ‘From Above’ in November 2007. They have since been joined by vocalist [a=Krupa] (Transglobal Underground and Solus3) and Larry Whelan on sax and keys (Natacha Atlas) plus a floating pool of guest musicians. \r\n\r\nReview for \"From Above\" debut album:\r\nBorn out of 100 years of passionate listening and a shared love of Coltrane, Krautrock and the many and varied eccentricities of English Psychedelia, 'From Above' is a record with many antecedents but precious few contemporaries. \r\nEmerging from the landscape of Iker Spozio's other-worldly cover painting (itself an echo of the Nubian utopia created by Mati Klarwein for Miles Davis) through to the final idiot funk spasms of 'Scatter', the Lunar Dunes' debut album is that very same pagan yawp - sev",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/lunardunesband/",
+      "http://www.progarchives.com/artist.asp?id=4084"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 1,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xLP, Comp, Ltd",
+      "CD, Album",
+      "CDr"
+    ],
+    "labels": [
+      "Heavenly",
+      "Lunar Dunes",
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Echo Dunes",
+    "mbid": "",
+    "listeners": 3739,
+    "playcount": 6815,
+    "listener_play_ratio": 1.82,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Echo+Dunes\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nocturnal Wave",
+      "Temporal Drift",
+      "Foster Zeta",
+      "Charlie Blue",
+      "Evolutio Cosmica"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sunshine",
+        "listeners": 3664,
+        "playcount": 6590
+      },
+      {
+        "name": "Air",
+        "listeners": 126,
+        "playcount": 224
+      },
+      {
+        "name": "Further Ahead",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Echo+Dunes"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

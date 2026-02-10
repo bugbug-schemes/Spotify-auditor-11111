@@ -1,0 +1,584 @@
+{
+  "artist_name": "Los Rumberos",
+  "artist_id": "los_rumberos",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:13:18.867265+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9cf99ba3-12a8-4aa7-877b-a519d1ff44d5",
+    "type": "Group",
+    "country": "MX",
+    "area": "Mexico",
+    "begin_date": "2013",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "latin pop",
+      "latin"
+    ],
+    "aliases": [
+      "Los Rumberos de Massachusetts"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/4772467",
+      "official homepage": "http://www.losrumberos.mx/",
+      "purchase for download": "https://itunes.apple.com/mx/artist/id336955588",
+      "social network": "https://www.instagram.com/losrumberos/",
+      "wikidata": "https://www.wikidata.org/wiki/Q5980328"
+    },
+    "labels": [
+      "The MUSIC Agents",
+      "Viel Music Latin"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 317552,
+    "name": "Los Rumberos",
+    "nb_fan": 7307,
+    "nb_album": 91,
+    "link": "https://www.deezer.com/artist/317552",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ec5c223be46e51c0d6ffe5638467a455/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Andrés Cepeda",
+      "Andrés Obregón",
+      "Bolela",
+      "Daniel, Me Estás Matando",
+      "ElArturo",
+      "Escarlata",
+      "Juan Pablo Vega",
+      "Juliana",
+      "Los Rumberos & Daniel, Me Estás Matando",
+      "Majo Aguilar",
+      "Margarita La Diosa De La Cumbia",
+      "Meler",
+      "Monsieur Perine",
+      "Nora González",
+      "Sabino",
+      "TIMØ",
+      "Tony Succar"
+    ],
+    "contributor_roles": {
+      "Juan Pablo Vega": [
+        "Featured"
+      ],
+      "Bolela": [
+        "Main"
+      ],
+      "Andrés Cepeda": [
+        "Main"
+      ],
+      "Los Rumberos & Daniel, Me Estás Matando": [
+        "Main"
+      ],
+      "Daniel, Me Estás Matando": [
+        "Main"
+      ],
+      "Nora González": [
+        "Main"
+      ],
+      "Monsieur Perine": [
+        "Main"
+      ],
+      "Margarita La Diosa De La Cumbia": [
+        "Main"
+      ],
+      "TIMØ": [
+        "Main"
+      ],
+      "Tony Succar": [
+        "Main"
+      ],
+      "Andrés Obregón": [
+        "Main"
+      ],
+      "Majo Aguilar": [
+        "Main"
+      ],
+      "ElArturo": [
+        "Main"
+      ],
+      "Escarlata": [
+        "Main"
+      ],
+      "Juliana": [
+        "Main"
+      ],
+      "Meler": [
+        "Main"
+      ],
+      "Sabino": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Si por Mí Fuera",
+      "Tu Espejo Es Mentiroso",
+      "Esquivé La Bala",
+      "Serenatas Frente al Mar",
+      "Tú Escríbeme",
+      "Preso (Grabado en ONErpm Studios)",
+      "Dime Que Sí",
+      "No Me Acostumbro",
+      "Llorando Frente al Mar",
+      "Fuiste Mía",
+      "Corazón Partío",
+      "Si Te Animas (Acústica)",
+      "Nunca Deja de Llover",
+      "Si Te Animas",
+      "Igual Me Aviento",
+      "Hasta Que Regreses",
+      "Tanto Amor",
+      "Juro Feat. Los Rumberos (Cap. 3)",
+      "Un Baile Pa’ Sanar",
+      "Lo Peor de Quererte",
+      "Torpe",
+      "Historia Entre Tus Dedos",
+      "La Última y Nos Vamos",
+      "El Guión",
+      "Ninguna"
+    ],
+    "track_durations": [
+      212,
+      174,
+      144,
+      197,
+      193,
+      175,
+      177,
+      187,
+      157,
+      184,
+      199,
+      193,
+      170,
+      262,
+      183,
+      185,
+      186,
+      248,
+      166,
+      173,
+      252,
+      324,
+      182,
+      202,
+      241
+    ],
+    "track_ranks": [
+      200816,
+      123091,
+      199596,
+      311809,
+      330077,
+      68732,
+      275158,
+      215216,
+      134366,
+      161776,
+      87083,
+      76220,
+      143588,
+      188397,
+      184769,
+      152563,
+      184458,
+      157248,
+      73439,
+      108238,
+      212804,
+      109204,
+      67029,
+      87353,
+      202225
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 10,
+      "ep": 1,
+      "single": 80
+    },
+    "albums": [
+      {
+        "title": "Canciones Para Llorar Bailando (Deluxo)",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Canciones Para Llorar Bailando",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Todos a Bordo",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "En Vivo: De Puerto en Puerto (En Vivo: De Puerto En Puerto)",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Piratas, Pero Románticos (Con Ritmos Chidos)",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cuba Pintada",
+        "label": "",
+        "release_date": "2019-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Galaxia Tropical",
+        "label": "",
+        "release_date": "2017-06-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Vuelve a la Vida",
+        "label": "",
+        "release_date": "2016-09-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spanish Rumbas Collection (Volume 10)",
+        "label": "",
+        "release_date": "2015-04-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Los Rumberos",
+        "label": "",
+        "release_date": "1997-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Galaxia Tropical, Vol. 1",
+        "label": "",
+        "release_date": "2017-05-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Esquivé La Bala",
+        "label": "",
+        "release_date": "2026-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caso Perdido",
+        "label": "",
+        "release_date": "2025-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tu Espejo Es Mentiroso",
+        "label": "",
+        "release_date": "2025-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Despertamos a los Vecinos",
+        "label": "",
+        "release_date": "2025-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Esa Mujer Que Ves",
+        "label": "",
+        "release_date": "2025-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lo Peor de Quererte",
+        "label": "",
+        "release_date": "2025-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Me Acostumbro",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si Te Animas",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si Se Trata de Ella",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tú Escríbeme",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Son Horas",
+        "label": "",
+        "release_date": "2024-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lo Mejor",
+        "label": "",
+        "release_date": "2024-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Me Parece",
+        "label": "",
+        "release_date": "2024-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Compañera",
+        "label": "",
+        "release_date": "2024-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mi Loca",
+        "label": "",
+        "release_date": "2024-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Baile Pa’ Sanar",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lo Intentamos",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Todo Es Suficiente",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Por Si No Sabías",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "La Isla Centeno",
+      "Daniel, Me Estás Matando",
+      "Sebastián Romero",
+      "Escarlata",
+      "Caloncho",
+      "Alex Ferreira",
+      "Mi Sobrino Memo",
+      "Ramona",
+      "Simon Grossmann",
+      "Pantoja"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1620875,
+    "name": "Los Rumberos",
+    "profile": "French flamenco/jazz band.",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Charles Julli",
+      "Felix Uhlmann",
+      "André Lacroix"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 7,
+    "total_releases": 16,
+    "formats": [
+      "",
+      "8xFile, AIFF, Album, S/Edition",
+      "Box, Comp, Ltd, S/Edition + 3xLP",
+      "CD, Album, Enh, Mixed",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CDr, Comp, Unofficial, MP3",
+      "Cass, Album",
+      "LP, Album",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Aries (7)",
+      "Creaciones Mickey",
+      "Music Brokers, Music Brokers",
+      "Negro Music Productions",
+      "Not On Label",
+      "Ola (3)",
+      "Perl Serie",
+      "Polydor",
+      "Polydor, Polydor, Polydor",
+      "Sonosur",
+      "Strässle Collection"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Los Rumberos",
+    "mbid": "9cf99ba3-12a8-4aa7-877b-a519d1ff44d5",
+    "listeners": 37725,
+    "playcount": 526753,
+    "listener_play_ratio": 13.96,
+    "bio_exists": true,
+    "bio_summary": "Un día de primavera en el 2013, Lito De La Isla, Paul Sefchovich y Ángel Céspedes (estudiantes de Berklee College of Music en Boston) deciden probar su talento en las calles de la ciudad, como un descanso de la teoría musical y las clases; con solo una guitarra de nylon, un djembé y sus voces, logran cautivar la atención del público involuntario, interpretando sus covers favoritos de rock latino. Al poco tiempo, la fusión acústica de rumba y estilos latinos comienza a expandirse a bares <a href=",
+    "tags": [
+      "latin",
+      "rumba",
+      "mexico",
+      "pop",
+      "bolero"
+    ],
+    "similar_artists": [
+      "La Isla Centeno",
+      "Daniel, Me Estás Matando",
+      "Caloncho",
+      "La Garfield",
+      "Alex Cuba"
+    ],
+    "top_tracks": [
+      {
+        "name": "Serenatas Frente al Mar",
+        "listeners": 15196,
+        "playcount": 95538
+      },
+      {
+        "name": "Dime Que Sí",
+        "listeners": 6921,
+        "playcount": 39912
+      },
+      {
+        "name": "Torpe",
+        "listeners": 4460,
+        "playcount": 40734
+      },
+      {
+        "name": "Si por Mi Fuera",
+        "listeners": 4046,
+        "playcount": 22275
+      },
+      {
+        "name": "Ninguna",
+        "listeners": 3280,
+        "playcount": 23114
+      },
+      {
+        "name": "Riéndose de Mí",
+        "listeners": 2760,
+        "playcount": 9551
+      },
+      {
+        "name": "Fuiste Mía",
+        "listeners": 2520,
+        "playcount": 15320
+      },
+      {
+        "name": "Solo Amigos",
+        "listeners": 2437,
+        "playcount": 12673
+      },
+      {
+        "name": "Hola, Buenas Noches",
+        "listeners": 2276,
+        "playcount": 15292
+      },
+      {
+        "name": "Canta Rie Bebe",
+        "listeners": 2017,
+        "playcount": 3184
+      }
+    ],
+    "url": "https://www.last.fm/music/Los+Rumberos"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

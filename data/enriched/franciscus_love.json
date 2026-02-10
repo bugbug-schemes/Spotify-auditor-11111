@@ -1,0 +1,182 @@
+{
+  "artist_name": "Franciscus Love",
+  "artist_id": "franciscus_love",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:42:19.399700+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 292791861,
+    "name": "Franciscus Love",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/292791861",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b9e3f92bf7675e48eeaf04c41844924a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Moon in a Bottle",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Lullaby",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bedtime Glow",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Constellation Dreams",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Garden of Dreams",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rainbow Dreams",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers of the Moon",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Under the Sleepy Moon",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cosmic Dreams",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Franciscus Love",
+    "mbid": "",
+    "listeners": 2394,
+    "playcount": 25552,
+    "listener_play_ratio": 10.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Franciscus+Love\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Moira Lune",
+      "Sarah Février",
+      "Theo Lys",
+      "Bingos Bongos",
+      "Tod Forest"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rainbow Dreams",
+        "listeners": 1440,
+        "playcount": 12701
+      },
+      {
+        "name": "Bedtime Glow",
+        "listeners": 877,
+        "playcount": 6497
+      },
+      {
+        "name": "Constellation Dreams",
+        "listeners": 762,
+        "playcount": 6341
+      },
+      {
+        "name": "Under the Sleepy Moon",
+        "listeners": 6,
+        "playcount": 6
+      },
+      {
+        "name": "Ocean Lullaby",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Little Garden of Dreams",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Franciscus+Love"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

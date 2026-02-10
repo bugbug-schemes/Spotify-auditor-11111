@@ -1,0 +1,176 @@
+{
+  "artist_name": "Local Abroad",
+  "artist_id": "local_abroad",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:10:24.967367+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 265463152,
+    "name": "Local Abroad",
+    "nb_fan": 1,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/265463152",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Immersive Meditation Music",
+        "label": "",
+        "release_date": "2024-05-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Immersive Wind Chime",
+        "label": "",
+        "release_date": "2024-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7539533,
+    "name": "The Study Abroad",
+    "profile": "The Study Abroad are an indie / shoegaze / alt-rock band that initially started as a solo project in Denver, Colorado by lead vocalist/guitarist Christian Fickling in early 2017. After releasing the debut single \"Dreamcatcher\" on July 17th, 2017, The Study Abroad went on a brief hiatus. In January of 2019, The Study Abroad ended their hiatus adding John Wilson on drums. After months of writing, The Study Abroad were finally ready to record their second single, \"Picturesque\", at Rusty Sun Audio in Parker, CO.\r\n\r\n\"Picturesque\" was released on May 24th, 2019 across all streaming and social media platforms.\r\n\r\nTheir dreamy, shoegaze-inspired sound makes them an immediate standout from your average local indie act; and with the two singles now available (\"Dreamcatcher\" and \"Picturesque\"), The Study Abroad are gearing up for their debut album release.\r\n\r\nThe Study Abroad released their debut album, 'Sleep Well', on December 13th, 2019. 'Sleep Well' was released on all streaming platforms and",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/thestudyabroad"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "File, AAC, Album",
+      "File, AAC, Single"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Local Abroad",
+    "mbid": "",
+    "listeners": 25938,
+    "playcount": 122828,
+    "listener_play_ratio": 4.74,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Local+Abroad\">Read more on Last.fm</a>",
+    "tags": [
+      "to tag"
+    ],
+    "similar_artists": [
+      "RE:LX",
+      "José Sparks",
+      "pax million",
+      "Aisher Rami",
+      "anayys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Liminal",
+        "listeners": 13620,
+        "playcount": 62038
+      },
+      {
+        "name": "Plucked Strings Near the Fountain",
+        "listeners": 10735,
+        "playcount": 46980
+      },
+      {
+        "name": "Reflecting",
+        "listeners": 1198,
+        "playcount": 4667
+      },
+      {
+        "name": "Mind",
+        "listeners": 979,
+        "playcount": 3223
+      },
+      {
+        "name": "Laying in a Calm Forest",
+        "listeners": 834,
+        "playcount": 2474
+      },
+      {
+        "name": "Forest Binaural 31HZ Gamma 80HZ - 49HZ",
+        "listeners": 825,
+        "playcount": 2001
+      },
+      {
+        "name": "4HZ Theta - 67HZ - 71HZ - Binaural Sines",
+        "listeners": 462,
+        "playcount": 1337
+      },
+      {
+        "name": "1HZ Delta - 55HZ - 56HZ - Binaural Sines",
+        "listeners": 3,
+        "playcount": 79
+      },
+      {
+        "name": "Goodnight Julia - Musicbox Version (from Cowboy Bebop)",
+        "listeners": 3,
+        "playcount": 6
+      },
+      {
+        "name": "Windowshade",
+        "listeners": 3,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Local+Abroad"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

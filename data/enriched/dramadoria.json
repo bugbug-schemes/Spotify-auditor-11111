@@ -1,0 +1,141 @@
+{
+  "artist_name": "Dramadoria",
+  "artist_id": "dramadoria",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:33:53.847238+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 133539872,
+    "name": "Dramadoria",
+    "nb_fan": 1,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/133539872",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d2c6f92de0beb89086f67036c9606221/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Binaural Alpha Sinus 220 Hz - L 230 Hz - R",
+        "label": "",
+        "release_date": "2021-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dramadoria",
+    "mbid": "",
+    "listeners": 6241,
+    "playcount": 22355,
+    "listener_play_ratio": 3.58,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dramadoria\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Weightless Light",
+      "Bit rain",
+      "Patterns in Light",
+      "Schamanen",
+      "Inner Versum"
+    ],
+    "top_tracks": [
+      {
+        "name": "Binaural Alpha Sinus 220 Hz - L 230 Hz - R",
+        "listeners": 6175,
+        "playcount": 21912
+      },
+      {
+        "name": "Binaural Alpha Sinus 120 Hz - L 128 Hz - R",
+        "listeners": 237,
+        "playcount": 428
+      },
+      {
+        "name": "Elegance Drifts Through Air",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Timeless Beauty in Sound",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Notes Dance With Grace",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Symphony Blooms in Silence",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Classic Touch Resounds Softly",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Grace Notes Under Moon",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Soft Echoes Carry Far",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Dramadoria"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

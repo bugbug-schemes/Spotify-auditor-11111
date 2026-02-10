@@ -1,0 +1,150 @@
+{
+  "artist_name": "Jules Billé",
+  "artist_id": "jules_billé",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:39:21.407851+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "391c27b4-30d0-4d2b-b886-2e7f09fbef32",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/169435967",
+      "social network": "https://www.instagram.com/julesbille.contrebasse/",
+      "streaming": "https://tidal.com/artist/32141034",
+      "youtube": "https://www.youtube.com/channel/UC8h7_mE2EwMWu5QIJCbB2MA"
+    },
+    "labels": [
+      "MIRARE",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 169435967,
+    "name": "Jules Billé",
+    "nb_fan": 8,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/169435967",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e90816fee5fc449712a4e8d00a4e9552/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Joséphine Ambroselli",
+      "Margaux Poguet"
+    ],
+    "contributor_roles": {
+      "Margaux Poguet": [
+        "Main"
+      ],
+      "Joséphine Ambroselli": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Youkali"
+    ],
+    "track_durations": [
+      413
+    ],
+    "track_ranks": [
+      77728
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Dans notre nuit",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Weill: Marie Galante: Le train du ciel",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weill: Youkali",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 17287086,
+    "name": "Jules Fransman, Gijs Engels, Willy Billekens en Bart Janssen",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD"
+    ],
+    "labels": [
+      "Marlstone Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": false,
+    "raw": null
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "lastfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

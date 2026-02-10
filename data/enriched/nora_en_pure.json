@@ -1,0 +1,593 @@
+{
+  "artist_name": "Nora En Pure",
+  "artist_id": "nora_en_pure",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:05:28.615769+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f81ace47-638d-4729-a155-1be48dc2fa48",
+    "type": "Person",
+    "country": "CH",
+    "area": "Switzerland",
+    "begin_date": "1990-07-20",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "deep house",
+      "progressive house"
+    ],
+    "aliases": [
+      "Daniela Niederer",
+      "Daniela Di Lillo"
+    ],
+    "isnis": [
+      "0000000461312075"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1860502",
+      "free streaming": "https://www.deezer.com/artist/1018038",
+      "official homepage": "https://www.noraenpure.com/",
+      "purchase for download": "https://www.beatport.com/artist/nora-en-pure/124254",
+      "social network": "https://www.instagram.com/noraenpure/",
+      "songkick": "https://www.songkick.com/artists/8481198",
+      "soundcloud": "https://soundcloud.com/NoraEnPure",
+      "streaming": "https://tidal.com/artist/3707455",
+      "wikidata": "https://www.wikidata.org/wiki/Q21484134"
+    },
+    "labels": [
+      "Tokenish",
+      "Spinnin' Remixes",
+      "Ultra Records",
+      "Sirup Music",
+      "Enormous Tunes",
+      "Unreleased Digital",
+      "Spinnin’ Deep",
+      "GNKP Goodnight Kiss Productions GmbH",
+      "Enormous Chills",
+      "Spinnin’ Records",
+      "Kontor Records",
+      "Big Beat"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1018038,
+    "name": "Nora En Pure",
+    "nb_fan": 192578,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/1018038",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/43249d304342f9e467f80e9a61a5d782/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Croatia Squad",
+      "Donna Lewis",
+      "Lika Morgan",
+      "Robinson"
+    ],
+    "contributor_roles": {
+      "Lika Morgan": [
+        "Main"
+      ],
+      "Croatia Squad": [
+        "Featured"
+      ],
+      "Robinson": [
+        "Main"
+      ],
+      "Donna Lewis": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Come with Me (Radio Mix)",
+      "Oblivion",
+      "Delta",
+      "Aquatic",
+      "Life on Hold",
+      "Watermark",
+      "In The Air Tonight (Croatia Squad Remix)",
+      "Let the Light In (Original Mix)",
+      "Tribe of Kindness",
+      "All I Need",
+      "Altered Destiny (Chill Mix)",
+      "Enchantment",
+      "Lake Arrowhead (Radio Mix)",
+      "Hyperreal (Middle of the Night)",
+      "Sherwood Forest",
+      "Tranquility",
+      "Wholehearted",
+      "In Your Eyes",
+      "I Love You Always Forever (Nora's Version)",
+      "Wetlands",
+      "You Are My Pride : You Are My Pride",
+      "Lake Arrowhead (Original Mix)",
+      "Senses of Comfort",
+      "The Other Side",
+      "Do No More"
+    ],
+    "track_durations": [
+      173,
+      229,
+      204,
+      226,
+      207,
+      226,
+      184,
+      372,
+      222,
+      191,
+      185,
+      223,
+      215,
+      165,
+      175,
+      224,
+      206,
+      196,
+      196,
+      143,
+      192,
+      336,
+      191,
+      196,
+      162
+    ],
+    "track_ranks": [
+      517939,
+      422737,
+      352617,
+      372792,
+      411432,
+      412115,
+      307044,
+      203151,
+      342363,
+      316293,
+      233281,
+      379818,
+      308051,
+      356264,
+      182146,
+      330329,
+      295926,
+      319991,
+      393038,
+      351881,
+      123204,
+      218983,
+      385929,
+      285463,
+      215790
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 7,
+      "ep": 30,
+      "single": 63
+    },
+    "albums": [
+      {
+        "title": "Birthright (The Remixes)",
+        "label": "",
+        "release_date": "2019-09-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Polynesia EP",
+        "label": "",
+        "release_date": "2018-11-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Come With Me (Remixes)",
+        "label": "",
+        "release_date": "2013-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Come with Me (The Remixes)",
+        "label": "",
+        "release_date": "2013-09-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "You Make Me Float - Remixes",
+        "label": "",
+        "release_date": "2012-12-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "5 Years Unreleased Digital Ep (Technoids)",
+        "label": "",
+        "release_date": "2012-06-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mykonos 2011",
+        "label": "",
+        "release_date": "2011-07-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Senses of Comfort",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wholehearted EP (Extended Mixes)",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wholehearted EP",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Monsoon EP (The Extended Mixes)",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Monsoon EP",
+        "label": "",
+        "release_date": "2021-01-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Delta / Bartok EP",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "See The End (Nora En Pure Remix)",
+        "label": "",
+        "release_date": "2019-11-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Homebound EP",
+        "label": "",
+        "release_date": "2019-10-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Homebound EP",
+        "label": "",
+        "release_date": "2019-11-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Pure Remixes, Vol. 1",
+        "label": "",
+        "release_date": "2019-08-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Trailblazer - The Remixes",
+        "label": "",
+        "release_date": "2018-08-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Don't Look Back EP",
+        "label": "",
+        "release_date": "2018-07-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sphinx",
+        "label": "",
+        "release_date": "2018-02-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Conquer Yosemite - EP",
+        "label": "",
+        "release_date": "2017-01-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lake Arrowhead EP",
+        "label": "",
+        "release_date": "2016-05-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Morning Dew",
+        "label": "",
+        "release_date": "2016-01-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "U Got My Body (The Remixes)",
+        "label": "",
+        "release_date": "2015-11-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Into the Wild",
+        "label": "",
+        "release_date": "2015-06-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Uruguay - The Remixes",
+        "label": "",
+        "release_date": "2015-01-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Satisfy",
+        "label": "",
+        "release_date": "2014-12-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "True - The Remixes",
+        "label": "",
+        "release_date": "2014-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "True",
+        "label": "",
+        "release_date": "2014-08-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sweet Melody",
+        "label": "",
+        "release_date": "2013-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "Klangkarussell",
+      "Tinlicker",
+      "Eelke Kleijn",
+      "Elderbrook",
+      "Lane 8",
+      "Spada",
+      "YOTTO",
+      "Eli & Fur",
+      "Jan Blomqvist",
+      "Lexer"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1860502,
+    "name": "Nora En Pure",
+    "profile": "Daniela Di Lillo (formerly Niederer, born 20 July 1990) better known by her stage name Nora En Pure, is a South African-Swees DJ and deep house producer. She first received recognition for her 2013 single \"Come With Me\". Further popular releases are \"Morning Dew\", \"Lake Arrowhead\", and \"Tears In Your Eyes.\" In July 2016, she was invited to put together a two-hour long mix for Pete Tong's \"BBC's Essential Mix\".\r\n\r\n",
+    "realname": "Daniela Di Lillo (neé Niederer)",
+    "social_urls": [
+      "https://www.noraenpure.com/",
+      "http://soundcloud.com/noraenpure",
+      "http://www.facebook.com/NoraEnPure",
+      "https://www.youtube.com/channel/UCdUXAN90UQV4sxNehj5Vflw",
+      "https://www.instagram.com/noraenpure/",
+      "http://twitter.com/NoraEnPure",
+      "https://en.wikipedia.org/wiki/Nora_En_Pure"
+    ],
+    "members": [],
+    "groups": [
+      "Helvetic Nerds"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 25,
+    "digital_only_releases": 75,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "11xFile, MP3, Album, 320",
+      "20xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Mixtape",
+      "2xCDr, Comp, Promo",
+      "2xFile, AAC, Single, 256",
+      "2xFile, FLAC",
+      "2xFile, FLAC, Single",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "2xFile, WAV",
+      "36xFile, MP3, Comp, 320",
+      "3xCD, Comp, Mixed",
+      "3xCD, Comp, Mixed, Dig",
+      "3xFile, MP3, 320",
+      "3xFile, MP3, EP",
+      "3xFile, MP3, EP, 320",
+      "3xFile, WAV, EP",
+      "3xFile, WAV, Single",
+      "4xFile, MP3, 320",
+      "4xFile, MP3, EP, 320",
+      "CD, Album + CD, Mixed + Dig",
+      "CD, Comp",
+      "CDr, Promo",
+      "File, FLAC, Single, 24-",
+      "File, MP3, 320",
+      "File, MP3, Comp, 320",
+      "File, MP3, Single",
+      "File, MP3, Single, 320",
+      "File, WAV"
+    ],
+    "labels": [
+      "Armada Music B.V.",
+      "Big Beat",
+      "Blanco Y Negro (2)",
+      "Days Like Nights",
+      "Do It Yourself Multimedia Group",
+      "Do It Yourself Multimedia Group S.r.l.",
+      "Enormous Tunes",
+      "Enormous Tunes, Enormous Tunes",
+      "Hed Kandi, Sony Music",
+      "Kontor Records",
+      "Ministry Of Sound",
+      "Ministry of Sound",
+      "Molto Recordings, Sony Music Entertainment Italy S.p.A.",
+      "More Music And Media",
+      "New State Music",
+      "No Music No Life (2), No Music No Life (2)",
+      "Not On Label (Vasovski Self-released)",
+      "Pacha Recordings",
+      "Promo Only",
+      "Rhino Atlantic",
+      "Sony Music, Columbia",
+      "Spinnin' Deep",
+      "Time (2)",
+      "Tokenish",
+      "Vidisco",
+      "Virgin EMI Records, Universal Music On Demand",
+      "disco:wax"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nora En Pure",
+    "mbid": "",
+    "listeners": 371264,
+    "playcount": 5228449,
+    "listener_play_ratio": 14.08,
+    "bio_exists": true,
+    "bio_summary": "At the core of Indie Dance and Deep House music, Swiss based Nora En Pure is on a quest to fulfil her need to arouse feelings of bliss and inject unconventional and serene sensations to be carried out into the world. The vivid South African has already proven to be quite productive, what resulted in deep and funky works of audible engineering for the label Enormous Tunes and Tokenish since 2009. Besides her passion for Africa, only music has been <a href=\"https://www.last.fm/music/Nora+En+Pure\">",
+    "tags": [
+      "House",
+      "deep house",
+      "electronic",
+      "swiss",
+      "dance"
+    ],
+    "similar_artists": [
+      "Sultan + Shepard",
+      "Sons Of Maria",
+      "Passenger 10",
+      "Eli & Fur",
+      "Lane 8"
+    ],
+    "top_tracks": [
+      {
+        "name": "Come With Me - Radio Mix",
+        "listeners": 88615,
+        "playcount": 409631
+      },
+      {
+        "name": "Tears In Your Eyes",
+        "listeners": 32716,
+        "playcount": 158356
+      },
+      {
+        "name": "Birthright",
+        "listeners": 31202,
+        "playcount": 141735
+      },
+      {
+        "name": "Saltwater - 2015 Radio Rework",
+        "listeners": 28733,
+        "playcount": 83057
+      },
+      {
+        "name": "Fibonacci",
+        "listeners": 27697,
+        "playcount": 115109
+      },
+      {
+        "name": "Spring Embers",
+        "listeners": 26000,
+        "playcount": 89686
+      },
+      {
+        "name": "Morning Dew - Radio Mix",
+        "listeners": 25983,
+        "playcount": 71353
+      },
+      {
+        "name": "Life On Hold",
+        "listeners": 23165,
+        "playcount": 105059
+      },
+      {
+        "name": "Heart Beating",
+        "listeners": 21329,
+        "playcount": 91577
+      },
+      {
+        "name": "On the Beach - Short Edit",
+        "listeners": 20522,
+        "playcount": 69455
+      }
+    ],
+    "url": "https://www.last.fm/music/Nora+En+Pure"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

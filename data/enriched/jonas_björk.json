@@ -1,0 +1,139 @@
+{
+  "artist_name": "Jonas Björk",
+  "artist_id": "jonas_björk",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:35:06.327627+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Jonas Björk', got 'Jon Bjork'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3291211,
+    "name": "Berglind Björk Jónasdóttir",
+    "profile": "Berglind Björk Jónasdóttir. Icelandic.",
+    "realname": "Berglind Björk Jónasdóttir",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Borgardætur"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 24,
+    "digital_only_releases": 7,
+    "total_releases": 31,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "3xCD, Album",
+      "4xCD, Album, Comp",
+      "4xCD, Album, Comp, RE, Box",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CDr, Album",
+      "VHS, Album"
+    ],
+    "labels": [
+      "Alda Music",
+      "Barnaheill",
+      "FROST Music ehf",
+      "Fjölskylduhjálp Íslands",
+      "Garðyrkjustöðin Reyn",
+      "Geimsteinn",
+      "Hrafn Pálsson",
+      "Hrynjandi",
+      "Japis",
+      "Kvenfélag Sauðarkróks",
+      "Not On Label (Ylja Self-released)",
+      "Not On Label (Ómar Ragnarsson Self-released)",
+      "Pálmi Sigurhjartarson",
+      "Ríkisútvarpið, Zonet ehf",
+      "SLÍM ehf",
+      "September (4)",
+      "September Hljóðver",
+      "Skifan Hf.",
+      "Skífan",
+      "Sonet",
+      "Spor H.F.",
+      "Umhyggja",
+      "VJA",
+      "Zonet ehf",
+      "Íslenskir Tónar, Sena, Íslenskir Tónar"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jonas Björk",
+    "mbid": "",
+    "listeners": 3463,
+    "playcount": 10683,
+    "listener_play_ratio": 3.08,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jonas+Bj%C3%B6rk\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cassian Haines",
+      "Yumi Ima",
+      "Max Stewart",
+      "Jack Haigh",
+      "Manuel Maria Rojas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gullunge",
+        "listeners": 3307,
+        "playcount": 10310
+      },
+      {
+        "name": "At a Glance",
+        "listeners": 199,
+        "playcount": 372
+      },
+      {
+        "name": "Death on the B string",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Jonas+Bj%C3%B6rk"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,558 @@
+{
+  "artist_name": "Girlfriend",
+  "artist_id": "girlfriend",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:52:48.041572+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "03fde226-b4d5-460c-98c7-d8c28c0e2b3c",
+    "type": "Group",
+    "country": "JP",
+    "area": "Japan",
+    "begin_date": "2015",
+    "end_date": "2021-04-30",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/6998687",
+      "official homepage": "http://www.girlfriend.band/",
+      "social network": "https://www.instagram.com/girlfriendjapan/",
+      "wikidata": "https://www.wikidata.org/wiki/Q27687179",
+      "youtube": "https://www.youtube.com/channel/UCuFW_SrYtpktBaShHay174A"
+    },
+    "labels": [
+      "Yellow Box",
+      "avex trax",
+      "binyl records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 121056,
+    "name": "GIRLFRIEND",
+    "nb_fan": 784,
+    "nb_album": 31,
+    "link": "https://www.deezer.com/artist/121056",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/07f4fcdcb54db45969d47a4c74bd05d4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bay Swag",
+      "Chase Shakur",
+      "Jermain Reese Jr.",
+      "Maiya The Don",
+      "Tierra Whack"
+    ],
+    "contributor_roles": {
+      "Jermain Reese Jr.": [
+        "Main"
+      ],
+      "Chase Shakur": [
+        "Main"
+      ],
+      "Bay Swag": [
+        "Main"
+      ],
+      "Maiya The Don": [
+        "Main"
+      ],
+      "Tierra Whack": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Can't Explain It",
+      "Sideways",
+      "Emergency",
+      "Deep",
+      "Sticky Situation",
+      "where da luv",
+      "Touch & Go",
+      "Everybody But Me",
+      "Blank Space",
+      "Higher",
+      "OG",
+      "Tell Me Again",
+      "Obsessive",
+      "Come Thru",
+      "sky & blue",
+      "Missin U",
+      "Father Time",
+      "Your Love",
+      "Body",
+      "Ride or Die",
+      "Attention",
+      "BWH",
+      "Feelin",
+      "Shirt off Outside",
+      "Bon Voyage"
+    ],
+    "track_durations": [
+      171,
+      163,
+      160,
+      161,
+      180,
+      172,
+      200,
+      150,
+      144,
+      162,
+      174,
+      163,
+      143,
+      162,
+      238,
+      138,
+      118,
+      183,
+      184,
+      142,
+      201,
+      182,
+      140,
+      219,
+      182
+    ],
+    "track_ranks": [
+      508008,
+      455849,
+      428474,
+      277571,
+      228738,
+      186860,
+      245890,
+      210096,
+      254702,
+      180872,
+      202549,
+      153399,
+      111513,
+      156113,
+      290578,
+      147762,
+      219593,
+      245330,
+      55461,
+      39784,
+      74927,
+      237451,
+      86857,
+      79660,
+      118830
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 7,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Rebel",
+        "label": "",
+        "release_date": "2026-01-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Honey Water",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "It's Complicated",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The New Me",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Girlfriend",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "HOUSE",
+        "label": "",
+        "release_date": "2020-04-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Real to Reel",
+        "label": "",
+        "release_date": "1995-04-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Deep",
+        "label": "",
+        "release_date": "2025-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sticky Situation",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Explain It",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Come Thru (G-mix)",
+        "label": "",
+        "release_date": "2025-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bon Voyage",
+        "label": "",
+        "release_date": "2025-04-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Obsessive",
+        "label": "",
+        "release_date": "2025-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feelin",
+        "label": "",
+        "release_date": "2024-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feelin",
+        "label": "",
+        "release_date": "2024-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tell Me Again",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tell Me Again",
+        "label": "",
+        "release_date": "2024-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Body",
+        "label": "",
+        "release_date": "2024-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "life",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "to the bones",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pick Up The Phone",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "FWY",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Love Luv",
+        "label": "",
+        "release_date": "2021-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Girls",
+        "label": "",
+        "release_date": "2021-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sky & blue",
+        "label": "",
+        "release_date": "2019-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Covernet",
+        "label": "",
+        "release_date": "2019-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cheeze Toast",
+        "label": "",
+        "release_date": "2019-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out of Touch",
+        "label": "",
+        "release_date": "2023-12-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ミライリスト",
+        "label": "",
+        "release_date": "2018-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "นักศึกษา",
+        "label": "",
+        "release_date": "2009-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Teyana Taylor",
+      "TheARTI$t",
+      "Jaymin",
+      "2BYG",
+      "Ann Marie",
+      "Breez Kennedy",
+      "Larissa Lambert",
+      "Jastin Martin",
+      "Bjrnck",
+      "Queen Naija"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1130551,
+    "name": "Girlfriend (4)",
+    "profile": "All female pop group from Australia.\r\nFormed 1991 and disbanded 1994\r\n\r\n[b]Line-up[/b]\r\nRobyn Loau (1991-1994)\r\nMelanie Alexander (1991-1994)\r\nLorinda “Rindy” Noble (1991-1994)\r\nSiobhánn Heidenreich (1991-1994)\r\nJacqueline “Jacqui” Cowell (1991-1994)\r\n\r\nThe band reformed as “[a=GF4]” when member Robyn Loau left the group.",
+    "realname": "",
+    "social_urls": [
+      "MySpace - http://www.myspace.com/officialgirlfriendgf4",
+      "Wiki - https://en.m.wikipedia.org/wiki/Girlfriend_(group)"
+    ],
+    "members": [
+      "Robyn Loau",
+      "Melanie Alexander",
+      "Lorinda Noble",
+      "Siobhánn Heidenreich",
+      "Jacqui Cowell"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 38,
+    "digital_only_releases": 45,
+    "total_releases": 83,
+    "formats": [
+      "",
+      "12\", Promo",
+      "2xCD, Comp",
+      "2xCD, Comp, Ltd, Num, Promo, Gol",
+      "2xCass, Comp",
+      "3xCD, Comp",
+      "4xCD, Comp + Box",
+      "4xCD, Comp, Ltd, Promo, S/Edition, Unofficial",
+      "CD, Album, RE + CD, Album, RE + Comp",
+      "CD, Album, S/Edition",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Dig",
+      "CD, Comp, Promo, Smplr",
+      "CD, Smplr",
+      "Cass, Comp",
+      "Cass, Comp, Promo, Smplr",
+      "Cass, Smplr",
+      "VHS, Comp, PAL",
+      "VHS, Comp, Promo, PAL"
+    ],
+    "labels": [
+      "Ariola, BMG",
+      "Arista",
+      "BMG",
+      "BMG Australia",
+      "BMG Victor Inc.",
+      "BMG Video, RCA",
+      "CEL Music",
+      "Columbia",
+      "Concept Records (6)",
+      "EMI Records Australia",
+      "GERmusic",
+      "Hit Bound Records",
+      "J & B Records",
+      "OzzMixx, OzzMixx",
+      "PMAF Video Magazine Publications, Roadshow Video Publishing",
+      "Possum Records",
+      "Qantas",
+      "RCA",
+      "Reader's Digest",
+      "Sony BMG Music Entertainment",
+      "Sony Music",
+      "Startel Entertainment",
+      "Virgin"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Girlfriend",
+    "mbid": "44bef860-1594-43c5-9bd9-9e2986220379",
+    "listeners": 75714,
+    "playcount": 693448,
+    "listener_play_ratio": 9.16,
+    "bio_exists": true,
+    "bio_summary": "There is more than one artist / band / group with the same name.\n\n1. Girlfriend was a five-girl pop group from Australia, formed in 1991. Their debut album Make It Come True was released in 1992 and contained four ARIA top 50 singles, including the #1 hit, \"Take It From Me\". The group also became recognised for its fashion sense, with their flower hats becoming a symbol of the band; at one point, they had their own clothing line. After the departure of lead vocalist Robyn Loau, the group changed",
+    "tags": [
+      "J-rock",
+      "jrock",
+      "japanese",
+      "japan",
+      "girl band"
+    ],
+    "similar_artists": [
+      "Scandal",
+      "Kankaku Piero",
+      "DISH//",
+      "Lenny code fiction",
+      "UVERworld"
+    ],
+    "top_tracks": [
+      {
+        "name": "sky & blue",
+        "listeners": 25379,
+        "playcount": 222428
+      },
+      {
+        "name": "Emergency",
+        "listeners": 17482,
+        "playcount": 78233
+      },
+      {
+        "name": "Deep",
+        "listeners": 6556,
+        "playcount": 14865
+      },
+      {
+        "name": "Sticky Situation",
+        "listeners": 6401,
+        "playcount": 17269
+      },
+      {
+        "name": "Obsessive",
+        "listeners": 4989,
+        "playcount": 11686
+      },
+      {
+        "name": "sky & blue - アニメサイズver.",
+        "listeners": 4610,
+        "playcount": 21180
+      },
+      {
+        "name": "Hide & Seek",
+        "listeners": 4102,
+        "playcount": 30201
+      },
+      {
+        "name": "Sideways",
+        "listeners": 4082,
+        "playcount": 7890
+      },
+      {
+        "name": "Come Thru",
+        "listeners": 3933,
+        "playcount": 9637
+      },
+      {
+        "name": "Bon Voyage (with Tierra Whack)",
+        "listeners": 3554,
+        "playcount": 9218
+      }
+    ],
+    "url": "https://www.last.fm/music/Girlfriend"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

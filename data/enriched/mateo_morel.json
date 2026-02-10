@@ -1,0 +1,169 @@
+{
+  "artist_name": "Mateo Morel",
+  "artist_id": "mateo_morel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:32:51.337665+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mateo Morel', got 'Mateo Moreno'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1428900,
+    "name": "Trio Reynoso",
+    "profile": "Trio Reynoso is considered to be one of the best musical groups of \"perico ripiao\" or \"merengue tipico\" from the Dominican Republic. Trio Reynoso was composed of singer/accordionist [a=Pedro Reynoso], percussionist Francisco Esquea, singer and güira player [a=Domingo Reynoso], and marimbero and güirero Milcíades Hernandez, who is known as one of the best güireros of all time. They were considered the most popular Latin group during the Trujillo and Post-Trujillo era. They became a well-known group in parts of Latin America other than the Dominican Republic such as Cuba and Puerto Rico. After the death of Pedro Reynoso on July 18th of 1965, Trio Reynoso had to get a new accordionist and lead singer. In the end, it came out to be [a=Tatico Henriquez], who in 1966, recorded his first song with the group called \"Lo Que Tu Me Pidas\". Some notable songs that they have recorded were \"Juana Mecho\", \"El Gallo Floreao\", \"Canto De Hacha\", \"Juanita Morel\", \"Alevántate\", \"Chanflin\", \"Mi Mujer De Or",
+    "realname": "",
+    "social_urls": [
+      "https://en.wikipedia.org/wiki/Trio_Reynoso"
+    ],
+    "members": [
+      "Pedro Reynoso",
+      "Domingo Reynoso",
+      "Tavito Vásquez"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 48,
+    "digital_only_releases": 20,
+    "total_releases": 68,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "7\"",
+      "7\", Single",
+      "CD, Album, RM",
+      "CD, Comp",
+      "CD, Comp, Ltd",
+      "LP",
+      "LP, Album",
+      "LP, Album, Comp, Mono",
+      "LP, Album, Mono",
+      "LP, Comp",
+      "Shellac, 10\"",
+      "Shellac, 10\", Single, Mono"
+    ],
+    "labels": [
+      "AJ Records, Inc.",
+      "Alberti",
+      "B.M.C. (2)",
+      "Borinquen",
+      "Calle Mayor",
+      "Canomar Records",
+      "Discolandia (4)",
+      "Discolor Records",
+      "Eight-Seventeen",
+      "Familia De La Mota",
+      "Fonseca Records",
+      "Gemini (27)",
+      "Gemini Records Dominicana",
+      "Generation Records (3)",
+      "Grabaciones San Ramon",
+      "Ibersound",
+      "La Rosa Records (2)",
+      "Leo (16)",
+      "Merenguita",
+      "Music Plus Records Inc.",
+      "Nascente",
+      "Not On Label",
+      "Perla (2)",
+      "Seeco Tropical",
+      "Solano",
+      "Unico (2)",
+      "Verne",
+      "Yaquelin"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mateo Morel",
+    "mbid": "",
+    "listeners": 1959,
+    "playcount": 6284,
+    "listener_play_ratio": 3.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mateo+Morel\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jeremiah River",
+      "Max Stewart",
+      "F. Garling",
+      "Cassian Haines",
+      "Eric Nilson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Grandpa's Old Guitar",
+        "listeners": 1904,
+        "playcount": 6005
+      },
+      {
+        "name": "Sleep, Dear Child, Sleep",
+        "listeners": 42,
+        "playcount": 234
+      },
+      {
+        "name": "Meet You By The River",
+        "listeners": 26,
+        "playcount": 33
+      },
+      {
+        "name": "Clear Skies Ahead",
+        "listeners": 1,
+        "playcount": 6
+      },
+      {
+        "name": "Shadows and Light",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "While My Guitar Gently Weeps",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "The Shape of Waiting",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Mateo+Morel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,121 @@
+{
+  "artist_name": "Tony Delvin",
+  "artist_id": "tony_delvin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:46:29.390396+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Tony Delvin', got 'Tony Levin'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tony Delvin",
+    "mbid": "",
+    "listeners": 18034,
+    "playcount": 249740,
+    "listener_play_ratio": 13.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tony+Delvin\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Steinar Lugn",
+      "Otis Meadow",
+      "Isaac Trager",
+      "Leo Button",
+      "Ishaq Love"
+    ],
+    "top_tracks": [
+      {
+        "name": "Carol of the bells",
+        "listeners": 7135,
+        "playcount": 19154
+      },
+      {
+        "name": "Sunshine jewel",
+        "listeners": 4944,
+        "playcount": 55973
+      },
+      {
+        "name": "Three little cats",
+        "listeners": 4686,
+        "playcount": 66771
+      },
+      {
+        "name": "Fluffy pillow",
+        "listeners": 2649,
+        "playcount": 27013
+      },
+      {
+        "name": "Sweet dreams",
+        "listeners": 1797,
+        "playcount": 17468
+      },
+      {
+        "name": "White Christmas",
+        "listeners": 1586,
+        "playcount": 3725
+      },
+      {
+        "name": "Little pony",
+        "listeners": 1571,
+        "playcount": 28194
+      },
+      {
+        "name": "Dear buddy",
+        "listeners": 1494,
+        "playcount": 10953
+      },
+      {
+        "name": "Who’s afraid of the big bad wolf?",
+        "listeners": 992,
+        "playcount": 12619
+      },
+      {
+        "name": "O Holy Night",
+        "listeners": 793,
+        "playcount": 1659
+      }
+    ],
+    "url": "https://www.last.fm/music/Tony+Delvin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

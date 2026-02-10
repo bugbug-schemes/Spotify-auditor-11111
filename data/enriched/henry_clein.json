@@ -1,0 +1,86 @@
+{
+  "artist_name": "Henry Clein",
+  "artist_id": "henry_clein",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:05:50.683961+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Henry Clein', got 'Henry Calvin'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Henry Clein",
+    "mbid": "",
+    "listeners": 930,
+    "playcount": 5121,
+    "listener_play_ratio": 5.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Henry+Clein\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Marlo Tendre",
+      "Hushabye Sky",
+      "Elin Noa",
+      "Aurora Keys",
+      "Silas Ash"
+    ],
+    "top_tracks": [
+      {
+        "name": "Drowsy River",
+        "listeners": 920,
+        "playcount": 5094
+      },
+      {
+        "name": "Dear Little Carpenter",
+        "listeners": 11,
+        "playcount": 26
+      },
+      {
+        "name": "My Green Leaf",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Henry+Clein"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

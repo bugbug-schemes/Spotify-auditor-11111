@@ -1,0 +1,183 @@
+{
+  "artist_name": "Benét",
+  "artist_id": "benét",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:36:31.458051+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "393a69f9-e373-49db-a6c3-c214ae830999",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "non-binary",
+    "genres": [],
+    "aliases": [
+      "Benét Nutall"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://benantics.bandcamp.com/",
+      "free streaming": "https://www.deezer.com/artist/1484577",
+      "social network": "https://www.instagram.com/benantics/",
+      "soundcloud": "https://soundcloud.com/benet-music",
+      "streaming": "https://tidal.com/artist/17455730"
+    },
+    "labels": [
+      "Bayonet Records",
+      "Citrus City Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Benét', got 'Benet'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 263352,
+    "name": "Benét",
+    "profile": "Milwaukee, Wisconsin sibling R&B vocal duo comprised of Lisa Benét Jordan (later Lisa Jordan Weathers) and [a18329]. ",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Eric Benét",
+      "Lisa Jordan-Weathers"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 6,
+    "total_releases": 13,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr",
+      "CD, Single, Promo",
+      "Cass, Comp, Promo, Smplr"
+    ],
+    "labels": [
+      "Capitol Records, EMI",
+      "EMI",
+      "EMI (Malaysia) Sdn Bhd",
+      "EMI Records Group North America",
+      "Jazz FM Records",
+      "Koch Records, EMI Music Special Markets"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Benét",
+    "mbid": "a88c2334-7a4a-4b07-86ef-c851a1544edd",
+    "listeners": 136325,
+    "playcount": 616706,
+    "listener_play_ratio": 4.52,
+    "bio_exists": true,
+    "bio_summary": "Benét is a Black trans non-binary artist from Richmond, Virginia but currently based in Brooklyn, NY. Raised in a musically inclined family, Benét‘s ear for music is finely tuned. “My mom would always say ‘Don’t sing my part’” Benét says. “I had to come up with another line when singing together.” Being challenged vocally, Benét’s melodic writing formed an incredible sense of harmony out of necessity. Beyond clear vocal talent, Benét’s lyrics continue to pursue the audience long after the first ",
+    "tags": [
+      "pop",
+      "rnb",
+      "soul",
+      "indie pop",
+      "90s"
+    ],
+    "similar_artists": [
+      "Amie Blu",
+      "Babyface",
+      "Emotional Oranges",
+      "Lola Young",
+      "orion sun"
+    ],
+    "top_tracks": [
+      {
+        "name": "Make 'Em Laugh",
+        "listeners": 51217,
+        "playcount": 158110
+      },
+      {
+        "name": "Killing Eve",
+        "listeners": 44007,
+        "playcount": 184725
+      },
+      {
+        "name": "Funny (feat. Childish Major)",
+        "listeners": 23557,
+        "playcount": 116741
+      },
+      {
+        "name": "Overpowering",
+        "listeners": 10693,
+        "playcount": 25283
+      },
+      {
+        "name": "Lose U",
+        "listeners": 8138,
+        "playcount": 17602
+      },
+      {
+        "name": "Funny (feat. Teddy Meanface)",
+        "listeners": 7955,
+        "playcount": 23964
+      },
+      {
+        "name": "Will I See U?",
+        "listeners": 5397,
+        "playcount": 13416
+      },
+      {
+        "name": "Glee",
+        "listeners": 3647,
+        "playcount": 9209
+      },
+      {
+        "name": "Shoot Your Shot - Kooze Remix",
+        "listeners": 2487,
+        "playcount": 7883
+      },
+      {
+        "name": "The Real Me",
+        "listeners": 2178,
+        "playcount": 5272
+      }
+    ],
+    "url": "https://www.last.fm/music/Ben%C3%A9t"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

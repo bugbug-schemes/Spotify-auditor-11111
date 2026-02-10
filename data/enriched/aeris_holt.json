@@ -1,0 +1,101 @@
+{
+  "artist_name": "Aeris Holt",
+  "artist_id": "aeris_holt",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:44:30.803750+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 353764822,
+    "name": "Aeris Holt",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/353764822",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Fractals of Quiet",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aeris Holt",
+    "mbid": "",
+    "listeners": 2663,
+    "playcount": 4439,
+    "listener_play_ratio": 1.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aeris+Holt\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Furomerald",
+      "Owen Bloom",
+      "Lún",
+      "elveper",
+      "Aurora Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fractals of Quiet",
+        "listeners": 2663,
+        "playcount": 4439
+      }
+    ],
+    "url": "https://www.last.fm/music/Aeris+Holt"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

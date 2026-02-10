@@ -1,0 +1,579 @@
+{
+  "artist_name": "Mandy",
+  "artist_id": "mandy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:26:18.906417+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b55f7b2e-3310-4eaf-94e1-9b21ba5ee1e1",
+    "type": "Group",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000809948",
+      "biography": "http://physical-music.com/artists/mandy/mandy_bio_e.php",
+      "discogs": "https://www.discogs.com/artist/67532",
+      "free streaming": "https://www.deezer.com/artist/110642",
+      "myspace": "https://myspace.com/getmandy",
+      "other databases": "https://rateyourmusic.com/artist/m_a_n_d_y_",
+      "purchase for download": "https://www.onkyomusic.com/DE/artist/m-a-n-d-y",
+      "social network": "https://plus.google.com/105236030556268217121",
+      "soundcloud": "https://soundcloud.com/m-a-n-d-y",
+      "streaming": "https://tidal.com/artist/3544386",
+      "wikidata": "https://www.wikidata.org/wiki/Q1880748",
+      "youtube": "https://www.youtube.com/user/getmandyfilms"
+    },
+    "labels": [
+      "fabric",
+      "Renaissance",
+      "Apollo Recordings",
+      "PMI Dance",
+      "Get Physical Music",
+      "Resist Music",
+      "Living The Dream",
+      "Sous Music",
+      "Mixmag",
+      "D:vision Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 312734,
+    "name": "Mandy",
+    "nb_fan": 1887,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/312734",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bfc54f7d0250d2ccd837b4975356e21e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "CRC",
+      "Cuarto Contacto",
+      "First Class",
+      "Freddo Lucky Bossi",
+      "John Martin",
+      "KX CHR",
+      "Kaaze",
+      "Los 4",
+      "Mandi Nishtulla",
+      "S and N",
+      "Steve Aoki"
+    ],
+    "contributor_roles": {
+      "KX CHR": [
+        "Main"
+      ],
+      "CRC": [
+        "Main"
+      ],
+      "Los 4": [
+        "Main"
+      ],
+      "Freddo Lucky Bossi": [
+        "Main"
+      ],
+      "Cuarto Contacto": [
+        "Featured"
+      ],
+      "S and N": [
+        "Main"
+      ],
+      "Mandi Nishtulla": [
+        "Main"
+      ],
+      "First Class": [
+        "Featured"
+      ],
+      "Steve Aoki": [
+        "Main"
+      ],
+      "John Martin": [
+        "Main"
+      ],
+      "Kaaze": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Everybody Dance Now",
+      "G pas fait mieux",
+      "Confusion",
+      "Todavia Duele",
+      "A Gentle Dance",
+      "Que Paso Ayer",
+      "Pleurer",
+      "Reminiscence Promenade",
+      "Space Weather (rain)",
+      "Ku Ku",
+      "Desperately",
+      "Santa la Diabla",
+      "Aching",
+      "Three",
+      "Won't Forget This Time ft. John Martin (MANDY Remix)"
+    ],
+    "track_durations": [
+      153,
+      109,
+      189,
+      231,
+      222,
+      279,
+      158,
+      354,
+      206,
+      191,
+      175,
+      225,
+      229,
+      225,
+      215
+    ],
+    "track_ranks": [
+      581111,
+      341955,
+      87214,
+      120552,
+      61966,
+      209856,
+      328830,
+      40618,
+      30323,
+      173776,
+      49867,
+      25235,
+      32334,
+      14074,
+      92468
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 11,
+      "ep": 3,
+      "single": 86
+    },
+    "albums": [
+      {
+        "title": "Die Herrin ist mein Hirte",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "UN VERANO EN PR",
+        "label": "",
+        "release_date": "2024-11-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Neuanfang - Deine Reise beginnt jetzt",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lawn Girl",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Café Toppers No.2",
+        "label": "",
+        "release_date": "2023-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Music Fever",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Vol.01",
+        "label": "",
+        "release_date": "2022-02-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "La Trayectoria",
+        "label": "",
+        "release_date": "2017-04-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wiedersehn im nächsten Jahr",
+        "label": "",
+        "release_date": "2016-07-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Universe",
+        "label": "",
+        "release_date": "2016-05-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "When We Want To Be Project",
+        "label": "",
+        "release_date": "2004-08-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Creepy simple horror ambiet (horror)",
+        "label": "",
+        "release_date": "2024-06-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "why do u love me",
+        "label": "",
+        "release_date": "2020-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Flying Close to the Sun",
+        "label": "",
+        "release_date": "2019-07-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hoor",
+        "label": "",
+        "release_date": "2026-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Karakter",
+        "label": "",
+        "release_date": "2026-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CONEXXXION",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Objection",
+        "label": "",
+        "release_date": "2026-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heroine",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unbounded",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wiodow Wife",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everybody Dance Now",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hariya",
+        "label": "",
+        "release_date": "2025-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Roop Suhana",
+        "label": "",
+        "release_date": "2025-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ku Ku 2",
+        "label": "",
+        "release_date": "2025-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dalim",
+        "label": "",
+        "release_date": "2025-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bus number 0",
+        "label": "",
+        "release_date": "2025-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te premtoj",
+        "label": "",
+        "release_date": "2025-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "KICKS",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solitariamente Frio",
+        "label": "",
+        "release_date": "2025-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Zany",
+      "The Prophet",
+      "Francesco Zeta",
+      "Dj Isaac",
+      "Gammer",
+      "Zatox",
+      "Darren Styles"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 384377,
+    "name": "Mandy Parnell",
+    "profile": "British mastering engineer, based in London, UK. \r\n\r\nCritically acclaimed Mandy Parnell and her team currently work at [l=Black Saloon Studios], North East London, UK. \r\n\r\nPreviously a mastering and cutting engineer at [l=The Exchange], recognizable by the etching \"MANDY THE EXCHANGE\". She has also worked for [l=Electric Mastering], recognizable by the etching \"ELECTRIC MANDY PARNELL\", before leaving there to launched her own mastering and recording company [l=Black Saloon Studios].\r\n\r\nMastering Engineer of the Year 2012, 2015 and 2017 at the Music Producers' Guild Awards.",
+    "realname": "Amanda Parnell",
+    "social_urls": [
+      "https://web.archive.org/web/20150118005205/http://www.mandyparnell.com:80/Blacksaloon%20Home%20.html",
+      "https://en.wikipedia.org/wiki/Mandy_Parnell",
+      "https://myspace.com/mandyparnell"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 26,
+    "digital_only_releases": 74,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10\"",
+      "12\"",
+      "12\", EP",
+      "12\", EP, Ltd, Num",
+      "12\", Ltd",
+      "12\", MiniAlbum, S/Edition",
+      "121xCD, Comp, Mono, RM + Blu-ray, Blu-ray-A + Box,",
+      "12xFile, AIFF, Album",
+      "12xFile, FLAC, Album",
+      "2xLP, Album + CD, Album",
+      "4xFile, MP3, EP",
+      "6xFile, MP3, EP, Promo",
+      "7\", EP, Num",
+      "7\", Pin + 3x7\" + 7\", Ora",
+      "7\", Single",
+      "7\", Single, M/Print, Num, Des",
+      "7\", Single, Num, Neo",
+      "9xFile, FLAC, Album, 24b",
+      "Box, Comp + CD, Album, RE + CD, Album, RE + CD, Al",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Comp, Promo, Smplr",
+      "CDr, Single, Promo",
+      "File, AAC, AIFF, FLAC, MP3, WAV, Single",
+      "File, AAC, WAV, Single",
+      "File, FLAC, MP3, WAV, Single",
+      "File, FLAC, MP3, WAV, Single + 12\", Single",
+      "File, FLAC, Single",
+      "LP",
+      "LP, Album",
+      "LP, Album + CD, Album",
+      "LP, Album, 180"
+    ],
+    "labels": [
+      "Accidental",
+      "Awal",
+      "Because Music, Because Music",
+      "Brendan & Alison Turner",
+      "Buttercup Records (4)",
+      "Capsule",
+      "Cinq 7, Wagram Music",
+      "Deutsche Grammophon",
+      "Dog Holiday, Absolute",
+      "Eternal Dragonz",
+      "Flying Vinyl (2), Modern Sky UK",
+      "Go Slowly Records",
+      "Hectic Eclectic Records",
+      "Hidden Notes Records",
+      "Hide Inside Records",
+      "Hlym Records",
+      "Macaw Recordings",
+      "Not On Label",
+      "Not On Label (Yakul Self-released)",
+      "Psychedelic Dungeon Records",
+      "Seahorse Music (2)",
+      "Society of Sound Music",
+      "Spray Can",
+      "Village Studio Records",
+      "Warp Records",
+      "Welde Media",
+      "Wet Nurse Records",
+      "Young Turks",
+      "Zoot Records (5)",
+      "spraycan records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "M.A.N.D.Y.",
+    "mbid": "b55f7b2e-3310-4eaf-94e1-9b21ba5ee1e1",
+    "listeners": 144065,
+    "playcount": 796604,
+    "listener_play_ratio": 5.53,
+    "bio_exists": true,
+    "bio_summary": "There are multiple artists with the name M.A.N.D.Y., please be respectful and do not delete them.\n\n1) mandy (born February 24, 2006), is the side project of Jayden Yen Dumont, better known by his stage name jaydes. The side project, best known for the involvement with the collective gothangelz, was described by jaydes as his \"worst music.\" He produces songs that are mostly filled with him singing lyrics about depressing situations and his own personal problems over calm <a href=\"https://www.last",
+    "tags": [
+      "minimal",
+      "electronic",
+      "minimal techno",
+      "House",
+      "electro"
+    ],
+    "similar_artists": [
+      "Booka Shade",
+      "Kollektiv Turmstrasse",
+      "Gui Boratto",
+      "DJ T.",
+      "Stimming"
+    ],
+    "top_tracks": [
+      {
+        "name": "Home Again",
+        "listeners": 37548,
+        "playcount": 89983
+      },
+      {
+        "name": "Body Language",
+        "listeners": 34590,
+        "playcount": 106283
+      },
+      {
+        "name": "Words Don't Come Easy",
+        "listeners": 11830,
+        "playcount": 26141
+      },
+      {
+        "name": "Put Put Put",
+        "listeners": 8967,
+        "playcount": 25100
+      },
+      {
+        "name": "Body Language - Original Remaster",
+        "listeners": 8629,
+        "playcount": 24236
+      },
+      {
+        "name": "Donut - Gui Boratto Remix",
+        "listeners": 7265,
+        "playcount": 19941
+      },
+      {
+        "name": "Body Language (Tocadisco Remix)",
+        "listeners": 6773,
+        "playcount": 12987
+      },
+      {
+        "name": "Achaat",
+        "listeners": 5899,
+        "playcount": 11498
+      },
+      {
+        "name": "Body Language (Konrad Black Remix)",
+        "listeners": 4242,
+        "playcount": 6633
+      },
+      {
+        "name": "Body Language (Funkagenda's \"Tell 'Em About The Cobs\" Mix)",
+        "listeners": 4104,
+        "playcount": 6058
+      }
+    ],
+    "url": "https://www.last.fm/music/M.A.N.D.Y."
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

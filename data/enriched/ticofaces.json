@@ -1,0 +1,170 @@
+{
+  "artist_name": "ticofaces",
+  "artist_id": "ticofaces",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:33:57.692299+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c75caf7b-405d-4419-a8cc-6937cda84703",
+    "type": "Person",
+    "country": "NL",
+    "area": "Netherlands",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental",
+      "boom bap"
+    ],
+    "aliases": [
+      "Tico Fabio Splinter"
+    ],
+    "isnis": [],
+    "ipis": [
+      "01065061780"
+    ],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/55398422",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/ticofaces/9266715",
+      "social network": "https://www.instagram.com/ticofaces/",
+      "soundcloud": "https://soundcloud.com/ticofaces",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/ticofaces/9266715",
+      "youtube music": "https://music.youtube.com/channel/UCuEjVjWHU7-Bsre29ly0oXQ"
+    },
+    "labels": [
+      "Kindbrew",
+      "purity label",
+      "Lofi Records",
+      "urbanundergrounds",
+      "[no label]",
+      "notationbeats",
+      "Chill Beats Records",
+      "Lofi Jazz Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'ticofaces', got 'Rico Ace'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ticofaces",
+    "mbid": "",
+    "listeners": 157906,
+    "playcount": 828283,
+    "listener_play_ratio": 5.25,
+    "bio_exists": true,
+    "bio_summary": "Tico Splinter (24), also known as ticofaces, is a hip hop producer from The Netherlands. Inspired by artists like J Dilla, Madlib and Nujabes he started making beats in 2015. Expect smooth keys, soft synths, mood setting ambience and laid back drums when listening to his music. <a href=\"https://www.last.fm/music/Ticofaces\">Read more on Last.fm</a>",
+    "tags": [
+      "netherlands",
+      "electronic",
+      "chillout",
+      "instrumental",
+      "chill"
+    ],
+    "similar_artists": [
+      "Loafy Building",
+      "HEVI",
+      "Krynoze",
+      "Charlee Nguyen",
+      "Tibeauthetraveler"
+    ],
+    "top_tracks": [
+      {
+        "name": "Arrival",
+        "listeners": 61038,
+        "playcount": 147341
+      },
+      {
+        "name": "Ash",
+        "listeners": 44568,
+        "playcount": 108533
+      },
+      {
+        "name": "Jungle",
+        "listeners": 29668,
+        "playcount": 63259
+      },
+      {
+        "name": "Lunar Sight",
+        "listeners": 25838,
+        "playcount": 54826
+      },
+      {
+        "name": "Crescent",
+        "listeners": 24187,
+        "playcount": 49519
+      },
+      {
+        "name": "The Isle",
+        "listeners": 22859,
+        "playcount": 46812
+      },
+      {
+        "name": "Close By",
+        "listeners": 22158,
+        "playcount": 44797
+      },
+      {
+        "name": "Painted World",
+        "listeners": 19225,
+        "playcount": 41357
+      },
+      {
+        "name": "Cinder",
+        "listeners": 17491,
+        "playcount": 36058
+      },
+      {
+        "name": "Shrine",
+        "listeners": 15517,
+        "playcount": 30902
+      }
+    ],
+    "url": "https://www.last.fm/music/Ticofaces"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

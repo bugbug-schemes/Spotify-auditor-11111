@@ -1,0 +1,427 @@
+{
+  "artist_name": "Kylan",
+  "artist_id": "kylan",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:53:54.648264+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "873555b8-7ee9-450c-93cd-7111a189ddec",
+    "type": "Person",
+    "country": "RU",
+    "area": "Russia",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "downtempo",
+      "instrumental",
+      "hip hop",
+      "lo-fi",
+      "boom bap",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "zero tracks on tidal"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/7522944",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/kylan/2137275",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/kylan/2137275",
+      "youtube music": "https://music.youtube.com/channel/UCre8Q1e5KUPGb5QTp1SZErQ"
+    },
+    "labels": [
+      "Mutombo Records",
+      "urbanundergrounds"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7522944,
+    "name": "Kylan",
+    "nb_fan": 16,
+    "nb_album": 42,
+    "link": "https://www.deezer.com/artist/7522944",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/be8b75d3e04df56913ea479338fd1ad0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Flowless",
+      "Mozzie",
+      "skrn"
+    ],
+    "contributor_roles": {
+      "Flowless": [
+        "Main"
+      ],
+      "skrn": [
+        "Main"
+      ],
+      "Mozzie": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Creamy",
+      "Orange",
+      "carmine"
+    ],
+    "track_durations": [
+      138,
+      109,
+      107
+    ],
+    "track_ranks": [
+      64370,
+      18772,
+      8840
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 2,
+      "single": 39
+    },
+    "albums": [
+      {
+        "title": "My First Album (Ex Me, Myself and I)",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Blue Christmas",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "BitterSweet",
+        "label": "",
+        "release_date": "2025-06-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "There’s A Fella In The Moon",
+        "label": "",
+        "release_date": "2026-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "coconut",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Panties",
+        "label": "",
+        "release_date": "2026-01-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mint",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "canvas",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "32 Degrees",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ivory",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flow",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "dementor",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "WitchUp",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ballons",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet or Sour?",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "carmine",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MARMALADE",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BitterSweet",
+        "label": "",
+        "release_date": "2025-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirage",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Thought of You",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sundown",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lily",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vanilla",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Snow Angel (Kylan Remix)",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Phantom",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magic",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Creamy",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Charlie, The Plastic Boy! (Kylan Remix)",
+        "label": "",
+        "release_date": "2025-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lotus",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "wish",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2785773,
+    "name": "Kylan",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "LP, Comp, Com"
+    ],
+    "labels": [
+      "InfoGram"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kylan",
+    "mbid": "873555b8-7ee9-450c-93cd-7111a189ddec",
+    "listeners": 1145,
+    "playcount": 4651,
+    "listener_play_ratio": 4.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kylan\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Yoshen",
+      "MITCH MURRY",
+      "Midnight Martini",
+      "chrlie",
+      "Lucie Cravero"
+    ],
+    "top_tracks": [
+      {
+        "name": "WitchUp",
+        "listeners": 364,
+        "playcount": 571
+      },
+      {
+        "name": "dementor",
+        "listeners": 231,
+        "playcount": 335
+      },
+      {
+        "name": "mint",
+        "listeners": 188,
+        "playcount": 395
+      },
+      {
+        "name": "ballons",
+        "listeners": 177,
+        "playcount": 326
+      },
+      {
+        "name": "Sweet or Sour?",
+        "listeners": 166,
+        "playcount": 303
+      },
+      {
+        "name": "There's a Nigger in the Moon  by John W. Dick arr. by Emil Biermann",
+        "listeners": 102,
+        "playcount": 183
+      },
+      {
+        "name": "King - Remixed Sound Version",
+        "listeners": 72,
+        "playcount": 117
+      },
+      {
+        "name": "Phantom",
+        "listeners": 56,
+        "playcount": 98
+      },
+      {
+        "name": "There's a Nigger in the Moon (1897) by John W. Dick arr. by Emil Biermann",
+        "listeners": 33,
+        "playcount": 69
+      },
+      {
+        "name": "Every Nigger Had a Lady But Me  by Karl St. Clair",
+        "listeners": 22,
+        "playcount": 33
+      }
+    ],
+    "url": "https://www.last.fm/music/Kylan"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

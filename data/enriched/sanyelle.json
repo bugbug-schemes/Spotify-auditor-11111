@@ -1,0 +1,226 @@
+{
+  "artist_name": "Sanyelle",
+  "artist_id": "sanyelle",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:54:35.580609+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 339259081,
+    "name": "Sanyelle",
+    "nb_fan": 1,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/339259081",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5c2d3e027b5cd6e27a78a964f4bd7a45/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Hot Stones"
+    ],
+    "track_durations": [
+      142
+    ],
+    "track_ranks": [
+      66248
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Visions",
+        "label": "",
+        "release_date": "2026-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wandering",
+        "label": "",
+        "release_date": "2026-01-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meekness",
+        "label": "",
+        "release_date": "2025-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pressure Points",
+        "label": "",
+        "release_date": "2025-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breathe Easy",
+        "label": "",
+        "release_date": "2025-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Levitating",
+        "label": "",
+        "release_date": "2025-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Landscapes",
+        "label": "",
+        "release_date": "2025-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hot Stones",
+        "label": "",
+        "release_date": "2025-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sound Bath",
+        "label": "",
+        "release_date": "2025-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soothe",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nearness of You",
+        "label": "",
+        "release_date": "2025-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirrors",
+        "label": "",
+        "release_date": "2025-08-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14101153,
+    "name": "Sanyelle",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label (Ravel Rodrigues Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sanyelle",
+    "mbid": "",
+    "listeners": 6454,
+    "playcount": 17819,
+    "listener_play_ratio": 2.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sanyelle\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kuyenao",
+      "Sable Flo",
+      "Shizuka Woods",
+      "Lueen",
+      "sadeus"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hot Stones",
+        "listeners": 4155,
+        "playcount": 12044
+      },
+      {
+        "name": "Pressure Points",
+        "listeners": 1056,
+        "playcount": 2407
+      },
+      {
+        "name": "Landscapes",
+        "listeners": 776,
+        "playcount": 1909
+      },
+      {
+        "name": "Meekness",
+        "listeners": 318,
+        "playcount": 685
+      },
+      {
+        "name": "Nearness of You",
+        "listeners": 227,
+        "playcount": 421
+      },
+      {
+        "name": "Soothe",
+        "listeners": 128,
+        "playcount": 353
+      }
+    ],
+    "url": "https://www.last.fm/music/Sanyelle"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

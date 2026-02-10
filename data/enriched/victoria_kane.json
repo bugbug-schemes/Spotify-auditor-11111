@@ -1,0 +1,116 @@
+{
+  "artist_name": "Victoria Kane",
+  "artist_id": "victoria_kane",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:57:23.632708+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Victoria Kane', got 'Victoria Monét'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4642669,
+    "name": "Victoria Kane",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Victoria Kane",
+    "mbid": "",
+    "listeners": 4541,
+    "playcount": 69979,
+    "listener_play_ratio": 15.41,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Victoria+Kane\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Piano Hive",
+      "Emily McQueen",
+      "Leanne Haughey",
+      "Naéli Gosally",
+      "Jordan Avery"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fuzzy Blanket",
+        "listeners": 4239,
+        "playcount": 59091
+      },
+      {
+        "name": "Once I Caught a Fish Alive",
+        "listeners": 654,
+        "playcount": 9666
+      },
+      {
+        "name": "Sol, vind och vatten",
+        "listeners": 138,
+        "playcount": 954
+      },
+      {
+        "name": "The Willow Lullaby",
+        "listeners": 35,
+        "playcount": 97
+      },
+      {
+        "name": "Twinckle Little Lights",
+        "listeners": 32,
+        "playcount": 97
+      },
+      {
+        "name": "Hush My Darling",
+        "listeners": 23,
+        "playcount": 74
+      }
+    ],
+    "url": "https://www.last.fm/music/Victoria+Kane"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

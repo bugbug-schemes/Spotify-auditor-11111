@@ -1,0 +1,225 @@
+{
+  "artist_name": "Vernon Sanders",
+  "artist_id": "vernon_sanders",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:57:00.686898+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 75480032,
+    "name": "Vernon Sanders",
+    "nb_fan": 26,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/75480032",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/93b5c9502e4287f518beec66672df72a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Uncovered",
+      "Finders Keepers",
+      "Everytime around",
+      "Désespérés",
+      "Cherie"
+    ],
+    "track_durations": [
+      149,
+      160,
+      325,
+      221,
+      248
+    ],
+    "track_ranks": [
+      102438,
+      62378,
+      75380,
+      68547,
+      20327
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Joe",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Finders Keepers",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Uncovered",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Valentine",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Désespérés",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cherie",
+        "label": "",
+        "release_date": "2020-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everytime around",
+        "label": "",
+        "release_date": "2019-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14213773,
+    "name": "Vernon Sanders",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "10\""
+    ],
+    "labels": [
+      "Columbia, Columbia Masterworks"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vernon Sanders",
+    "mbid": "",
+    "listeners": 62709,
+    "playcount": 230530,
+    "listener_play_ratio": 3.68,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Robert Elovsson Quartet",
+      "The Red Robin Quartet",
+      "Henry Lindon",
+      "Phillip Love",
+      "Leonard Peters"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cherie",
+        "listeners": 25155,
+        "playcount": 76308
+      },
+      {
+        "name": "Everytime around",
+        "listeners": 17054,
+        "playcount": 46262
+      },
+      {
+        "name": "Uncovered",
+        "listeners": 10791,
+        "playcount": 50556
+      },
+      {
+        "name": "Désespérés",
+        "listeners": 9019,
+        "playcount": 24374
+      },
+      {
+        "name": "Finders Keepers",
+        "listeners": 7451,
+        "playcount": 13595
+      },
+      {
+        "name": "Désespérés",
+        "listeners": 7084,
+        "playcount": 16406
+      },
+      {
+        "name": "Stanky",
+        "listeners": 1285,
+        "playcount": 2689
+      },
+      {
+        "name": "Joe",
+        "listeners": 81,
+        "playcount": 99
+      },
+      {
+        "name": "My Funny Valentine",
+        "listeners": 57,
+        "playcount": 84
+      },
+      {
+        "name": "All The Things You Are",
+        "listeners": 46,
+        "playcount": 73
+      }
+    ],
+    "url": "https://www.last.fm/music/Vernon+Sanders"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

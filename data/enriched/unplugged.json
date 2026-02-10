@@ -1,0 +1,482 @@
+{
+  "artist_name": "Unplugged",
+  "artist_id": "unplugged",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:52:45.818538+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1bdf4e0d-89d5-49e8-8119-7e7a144cf19b",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/420857",
+      "streaming": "https://tidal.com/artist/4254449"
+    },
+    "labels": [
+      "GameChops"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 420857,
+    "name": "Unplugged",
+    "nb_fan": 600,
+    "nb_album": 42,
+    "link": "https://www.deezer.com/artist/420857",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/273291e686aa220858cd4770e352d0ff/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "GameChops",
+      "Super Piano 64",
+      "The Deku Trio"
+    ],
+    "contributor_roles": {
+      "Super Piano 64": [
+        "Main"
+      ],
+      "GameChops": [
+        "Main"
+      ],
+      "The Deku Trio": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Lost Woods",
+      "The Stables",
+      "Hateno Village",
+      "Gerudo Night",
+      "Windfall Island",
+      "Tarrey Town",
+      "Tatl & Tael",
+      "The Light Dragon",
+      "Korok Forest",
+      "Reuniting with Mipha",
+      "Wasteland",
+      "The Lost Woods",
+      "Lurelin Village",
+      "Title Theme",
+      "Tears of the Kingdom",
+      "Ballad of the Wind Fish",
+      "My Dream Home",
+      "Zora's Domain",
+      "Revali, Solitary Warrior",
+      "Kass's Theme",
+      "Sidon's Theme",
+      "Outset Island",
+      "Enter the Twilight Realm",
+      "Fi's Farewell",
+      "The Great Sea"
+    ],
+    "track_durations": [
+      173,
+      144,
+      210,
+      169,
+      199,
+      136,
+      183,
+      164,
+      164,
+      195,
+      165,
+      98,
+      125,
+      174,
+      152,
+      240,
+      203,
+      153,
+      149,
+      173,
+      171,
+      221,
+      218,
+      246,
+      292
+    ],
+    "track_ranks": [
+      365099,
+      288857,
+      201462,
+      211349,
+      198031,
+      170168,
+      192325,
+      172722,
+      198783,
+      164990,
+      175268,
+      169032,
+      164435,
+      255218,
+      164340,
+      180335,
+      156812,
+      178853,
+      160137,
+      182893,
+      163302,
+      261735,
+      160676,
+      204960,
+      162105
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 22,
+      "ep": 1,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "Zelda & Jazz III",
+        "label": "",
+        "release_date": "2025-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Piano & Sleep: Silksong",
+        "label": "",
+        "release_date": "2025-10-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Piano & Sleep: Deltarune",
+        "label": "",
+        "release_date": "2025-09-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "For Those Who Come After (Clair Obscur: Expedition 33 Piano Collection)",
+        "label": "",
+        "release_date": "2025-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stardew & Sleep",
+        "label": "",
+        "release_date": "2025-07-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live from Pallet Town",
+        "label": "",
+        "release_date": "2025-05-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Sleep 3",
+        "label": "",
+        "release_date": "2025-03-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Jazz II",
+        "label": "",
+        "release_date": "2024-10-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Sleep: Ensemble Collection",
+        "label": "",
+        "release_date": "2024-09-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Sleep 2",
+        "label": "",
+        "release_date": "2024-05-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Jazz",
+        "label": "",
+        "release_date": "2024-10-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Phoenix Down: Piano Lullabies from Final Fantasy",
+        "label": "",
+        "release_date": "2024-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mario & Sleep",
+        "label": "",
+        "release_date": "2023-12-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Poké & Sleep",
+        "label": "",
+        "release_date": "2023-08-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Piano III",
+        "label": "",
+        "release_date": "2023-06-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Poké & Piano",
+        "label": "",
+        "release_date": "2023-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Sleep",
+        "label": "",
+        "release_date": "2023-01-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Piano II – Ocarina of Time",
+        "label": "",
+        "release_date": "2022-07-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Samus & Piano",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Zelda & Piano",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sagittarius",
+        "label": "",
+        "release_date": "2019-10-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Acoustic Christmas",
+        "label": "",
+        "release_date": "2013-02-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Петля",
+        "label": "",
+        "release_date": "2025-03-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Зая",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Забуду Под Утро",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Паранойя",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pokémon Center Jazz",
+        "label": "",
+        "release_date": "2025-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Спать",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Сирень",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mii Channel Jazz",
+        "label": "",
+        "release_date": "2025-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 142300,
+    "name": "Unplugged",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Comp, Mixed"
+    ],
+    "labels": [
+      "Muve Recordings",
+      "Κίνησις"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Unplugged",
+    "mbid": "00315b5a-e908-4baa-a591-d09d68eabe96",
+    "listeners": 8282,
+    "playcount": 55630,
+    "listener_play_ratio": 6.72,
+    "bio_exists": true,
+    "bio_summary": "1. Martin Havlík, Pepa Fojta, Janička a další podobný...\nHold óóóóónnn!!!!!!\n2. Band from Przemyśl, Poland. <a href=\"https://www.last.fm/music/Unplugged\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dirtyfake",
+      "We Die Young",
+      "Singapore Rice",
+      "Robert Bobby",
+      "done.Amy"
+    ],
+    "top_tracks": [
+      {
+        "name": "Infant Holy, Infant Lowly",
+        "listeners": 2120,
+        "playcount": 4918
+      },
+      {
+        "name": "Soldier of Love - Pearl Jam",
+        "listeners": 860,
+        "playcount": 1760
+      },
+      {
+        "name": "Pokémon Center",
+        "listeners": 732,
+        "playcount": 1341
+      },
+      {
+        "name": "Title Screen",
+        "listeners": 693,
+        "playcount": 1223
+      },
+      {
+        "name": "Friday Im In Love - The Cure",
+        "listeners": 512,
+        "playcount": 3124
+      },
+      {
+        "name": "National Park",
+        "listeners": 512,
+        "playcount": 953
+      },
+      {
+        "name": "Sinnoh Pokémon League",
+        "listeners": 500,
+        "playcount": 884
+      },
+      {
+        "name": "Mauville City",
+        "listeners": 472,
+        "playcount": 838
+      },
+      {
+        "name": "Littleroot Town",
+        "listeners": 456,
+        "playcount": 791
+      },
+      {
+        "name": "Eterna Forest",
+        "listeners": 419,
+        "playcount": 739
+      }
+    ],
+    "url": "https://www.last.fm/music/Unplugged"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

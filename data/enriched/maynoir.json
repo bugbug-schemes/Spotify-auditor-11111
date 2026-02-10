@@ -1,0 +1,91 @@
+{
+  "artist_name": "Maynoir",
+  "artist_id": "maynoir",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:36:23.934864+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Maynoir', got 'The Manor'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Maynoir",
+    "mbid": "",
+    "listeners": 6875,
+    "playcount": 20415,
+    "listener_play_ratio": 2.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Maynoir\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jiel",
+      "Sorellien",
+      "Sigrid Vega",
+      "Joseph Fina",
+      "Henry Flower"
+    ],
+    "top_tracks": [
+      {
+        "name": "Field Dreams",
+        "listeners": 6855,
+        "playcount": 20373
+      },
+      {
+        "name": "Amazing Grace",
+        "listeners": 13,
+        "playcount": 33
+      },
+      {
+        "name": "Mountain Rose",
+        "listeners": 7,
+        "playcount": 8
+      },
+      {
+        "name": "Stop Time",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Maynoir"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

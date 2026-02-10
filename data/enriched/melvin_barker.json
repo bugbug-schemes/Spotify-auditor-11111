@@ -1,0 +1,162 @@
+{
+  "artist_name": "Melvin Barker",
+  "artist_id": "melvin_barker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:39:06.607862+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 193213447,
+    "name": "Melvin Barker",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/193213447",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/db67d23cd4e65ced67a94961cd7e3e77/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Hybernation"
+    ],
+    "track_durations": [
+      163
+    ],
+    "track_ranks": [
+      29146
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Skybound",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hybernation",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shooting Star",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Dew",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glowing",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beginnings",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Melvin Barker",
+    "mbid": "",
+    "listeners": 19893,
+    "playcount": 47090,
+    "listener_play_ratio": 2.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Melvin+Barker\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tim Gourolis",
+      "Stones Sailing",
+      "Astronaut In The Desert",
+      "Haltura Arnadottir",
+      "Isaak Young"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beginnings",
+        "listeners": 14358,
+        "playcount": 33751
+      },
+      {
+        "name": "Hybernation",
+        "listeners": 5709,
+        "playcount": 10937
+      },
+      {
+        "name": "Morning Dew",
+        "listeners": 1294,
+        "playcount": 2372
+      },
+      {
+        "name": "Shooting Star",
+        "listeners": 4,
+        "playcount": 6
+      },
+      {
+        "name": "Glowing",
+        "listeners": 3,
+        "playcount": 24
+      }
+    ],
+    "url": "https://www.last.fm/music/Melvin+Barker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

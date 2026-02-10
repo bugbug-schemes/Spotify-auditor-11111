@@ -1,0 +1,206 @@
+{
+  "artist_name": "AKA BK",
+  "artist_id": "aka_bk",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T19:40:15.691318+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ec6bb05d-4c2e-4ee1-950c-4bde5bf1976f",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/262324091"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 262324091,
+    "name": "AKA BK",
+    "nb_fan": 9,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/262324091",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/de3509e1a3154ddf2ddc83bd5689ea0c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "HANNAH"
+    ],
+    "track_durations": [
+      160
+    ],
+    "track_ranks": [
+      2140
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "ep": 1,
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "MUSH",
+        "label": "",
+        "release_date": "2025-11-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Barefoot Hopscotch",
+        "label": "",
+        "release_date": "2025-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MUSH",
+        "label": "",
+        "release_date": "2025-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "HANNAH",
+        "label": "",
+        "release_date": "2025-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amphibian (Frog Song)",
+        "label": "",
+        "release_date": "2024-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Y",
+        "label": "",
+        "release_date": "2024-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "AKA BK",
+    "mbid": "ec6bb05d-4c2e-4ee1-950c-4bde5bf1976f",
+    "listeners": 5727,
+    "playcount": 13829,
+    "listener_play_ratio": 2.41,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/AKA+BK\">Read more on Last.fm</a>",
+    "tags": [
+      "USA"
+    ],
+    "similar_artists": [
+      "Leyla Ebrahimi",
+      "coleiiio",
+      "Jeff Lamb",
+      "Theo Moss",
+      "GLOOMIE"
+    ],
+    "top_tracks": [
+      {
+        "name": "HANNAH",
+        "listeners": 3015,
+        "playcount": 5771
+      },
+      {
+        "name": "Stuck",
+        "listeners": 1587,
+        "playcount": 2358
+      },
+      {
+        "name": "MUSH",
+        "listeners": 1046,
+        "playcount": 2386
+      },
+      {
+        "name": "Amphibian (Frog Song)",
+        "listeners": 464,
+        "playcount": 1426
+      },
+      {
+        "name": "Barefoot Hopscotch",
+        "listeners": 214,
+        "playcount": 591
+      },
+      {
+        "name": "We Said We Wouldn't Do This",
+        "listeners": 124,
+        "playcount": 704
+      },
+      {
+        "name": "Y",
+        "listeners": 112,
+        "playcount": 519
+      },
+      {
+        "name": "maybe in the next one",
+        "listeners": 33,
+        "playcount": 71
+      },
+      {
+        "name": "Amphibian (Frog Somg)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "AKA BK - HANNAH (Official Video)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/AKA+BK"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

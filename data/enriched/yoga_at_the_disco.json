@@ -1,0 +1,412 @@
+{
+  "artist_name": "Yoga at the Disco",
+  "artist_id": "yoga_at_the_disco",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:05:36.949788+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dfd99ae6-2ee6-41ba-9d60-bf47f3d551e6",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "instrumental hip hop",
+      "instrumental",
+      "lo-fi",
+      "hip hop",
+      "chillwave",
+      "lo-fi hip hop",
+      "boom bap",
+      "downtempo"
+    ],
+    "aliases": [
+      "Jacob Woods"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183264707",
+      "purchase for download": "https://music.apple.com/us/artist/1647879005",
+      "streaming": "https://tidal.com/artist/34526403",
+      "youtube music": "https://music.youtube.com/channel/UCsAxUjj6cOPbB5Ux24Yueyw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183264707,
+    "name": "Yoga At The Disco",
+    "nb_fan": 11,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/183264707",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5aae20abfd616a47a131eb758ff18594/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Woollen Potato",
+      "Hands"
+    ],
+    "track_durations": [
+      150,
+      134
+    ],
+    "track_ranks": [
+      37005,
+      152418
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "Hiking",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers of the Wind",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Introspective",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Sunset",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fro",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Honeybee Parade",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forest For Rest",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bea Wea",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunshine",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Woollen Potato",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Air",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Panda",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hands",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fresh Fruit Brunch",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Square",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Living Check",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Steady",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wood",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smoother Twisting",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Night",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Utopias",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Swimma",
+        "label": "",
+        "release_date": "2022-06-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Careforce",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "it's messed up right?",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Espresso at hairdresser’s",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 42991,
+    "name": "Lamott Atkins",
+    "profile": "American actor, yoga instructor and former American Football player. Man of many personalities. In the 1980s and 1990s lived in Europe and collaborated with Italo Disco producers as a singer.",
+    "realname": "",
+    "social_urls": [
+      "https://www.instagram.com/lamottatkins/"
+    ],
+    "members": [],
+    "groups": [
+      "Sharada House Gang"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 23,
+    "digital_only_releases": 30,
+    "total_releases": 53,
+    "formats": [
+      "",
+      "12\"",
+      "12\", Comp, Unofficial",
+      "12\", Mixed",
+      "12\", Promo",
+      "2xLP, Comp, Mixed",
+      "CD, Comp",
+      "CD, Comp, Ltd, S/Edition",
+      "CD, Comp, Mixed",
+      "CD, Comp, P/Mixed + 2xCD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Smplr, Car",
+      "CD, Comp, RM",
+      "CD, Comp, Smplr",
+      "Cass, Album",
+      "Cass, Comp",
+      "LP, Comp, Unofficial"
+    ],
+    "labels": [
+      "Airplay Records",
+      "Blanco Y Negro (2)",
+      "Box Records Ltd.",
+      "Bungalow Productions, Bungalow Productions",
+      "DMM - Dance Music Magazine",
+      "Dee Jay Mail",
+      "Flying Records",
+      "House No.",
+      "Jocks Mag",
+      "Max Music",
+      "Media Records",
+      "Music-Box",
+      "Power Productions (11)",
+      "Principal Records",
+      "Staff Records (11)",
+      "Vallemania Recording, Vallemania Recording",
+      "Vidisco",
+      "X-Energy Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Yoga at the Disco",
+    "mbid": "dfd99ae6-2ee6-41ba-9d60-bf47f3d551e6",
+    "listeners": 111245,
+    "playcount": 382445,
+    "listener_play_ratio": 3.44,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Yoga+at+the+Disco\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "lofi"
+    ],
+    "similar_artists": [
+      "herbstreit",
+      "mutedvibes",
+      "Gooee",
+      "Zupa Fitz",
+      "Pi Teddy"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Careforce",
+        "listeners": 36044,
+        "playcount": 83795
+      },
+      {
+        "name": "Woollen Potato",
+        "listeners": 25946,
+        "playcount": 62283
+      },
+      {
+        "name": "Whispers of the Wind",
+        "listeners": 19619,
+        "playcount": 41073
+      },
+      {
+        "name": "Forest For Rest",
+        "listeners": 18039,
+        "playcount": 37024
+      },
+      {
+        "name": "Bea Wea",
+        "listeners": 15878,
+        "playcount": 33639
+      },
+      {
+        "name": "Fro",
+        "listeners": 11782,
+        "playcount": 24404
+      },
+      {
+        "name": "Smoother Twisting",
+        "listeners": 10738,
+        "playcount": 19366
+      },
+      {
+        "name": "Fresh Fruit Brunch",
+        "listeners": 7851,
+        "playcount": 16629
+      },
+      {
+        "name": "Living Check",
+        "listeners": 7266,
+        "playcount": 14210
+      },
+      {
+        "name": "it's messed up right?",
+        "listeners": 5969,
+        "playcount": 22963
+      }
+    ],
+    "url": "https://www.last.fm/music/Yoga+at+the+Disco"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

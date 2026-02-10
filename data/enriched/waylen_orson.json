@@ -1,0 +1,183 @@
+{
+  "artist_name": "Waylen Orson",
+  "artist_id": "waylen_orson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:01:10.461176+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 272205382,
+    "name": "Waylen Orson",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/272205382",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/030a350a2742b1684d366e80b425d2e4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Veloura"
+    ],
+    "track_durations": [
+      146
+    ],
+    "track_ranks": [
+      120252
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Melyon",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Veloura",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes Of Yesterday",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marianne",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ever After",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On My Way",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Will Tell",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember Me",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Letter From Home",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Waylen Orson",
+    "mbid": "",
+    "listeners": 13756,
+    "playcount": 48347,
+    "listener_play_ratio": 3.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Waylen+Orson\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sorellien",
+      "Aurelio Li",
+      "Aldo Talete",
+      "Maynoir",
+      "Henry Flower"
+    ],
+    "top_tracks": [
+      {
+        "name": "Veloura",
+        "listeners": 13385,
+        "playcount": 43735
+      },
+      {
+        "name": "Melyon",
+        "listeners": 1383,
+        "playcount": 4566
+      },
+      {
+        "name": "Ever After",
+        "listeners": 11,
+        "playcount": 42
+      },
+      {
+        "name": "Echoes Of Yesterday",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "On My Way",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Waylen+Orson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

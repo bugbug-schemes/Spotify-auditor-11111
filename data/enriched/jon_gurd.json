@@ -1,0 +1,575 @@
+{
+  "artist_name": "Jon Gurd",
+  "artist_id": "jon_gurd",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:34:00.721460+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e3819ee2-a536-43fc-80ad-2802866ecbc9",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://jongurd.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/382140",
+      "free streaming": "https://www.deezer.com/artist/565371",
+      "other databases": "https://ra.co/dj/jongurd",
+      "purchase for download": "https://www.beatport.com/artist/jon-gurd/10954",
+      "social network": "https://www.instagram.com/jon.gurd/",
+      "soundcloud": "https://soundcloud.com/jon-gurd",
+      "streaming": "https://tidal.com/artist/3915915",
+      "video channel": "https://www.twitch.tv/jongurd"
+    },
+    "labels": [
+      "Anjunadeep",
+      "Anjunadeep Explorations",
+      "Space Between",
+      "Anjunabeats"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 565371,
+    "name": "Jon Gurd",
+    "nb_fan": 3280,
+    "nb_album": 61,
+    "link": "https://www.deezer.com/artist/565371",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8b5b802ba60ad0113de6404296677522/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Reset Robot"
+    ],
+    "contributor_roles": {
+      "Reset Robot": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Forest",
+      "Waiting For The Love",
+      "Akura",
+      "The Dream",
+      "Star",
+      "Together (Mixed)",
+      "It's Over",
+      "Rise",
+      "The Dream (Instrumental Mixed)",
+      "Eclipse",
+      "Rise (Mixed)",
+      "Five",
+      "Five (Mixed)",
+      "Ashen (Mixed)",
+      "Lion (Mixed)",
+      "No More Tears",
+      "Let Go",
+      "Takerimba"
+    ],
+    "track_durations": [
+      203,
+      186,
+      209,
+      283,
+      302,
+      292,
+      215,
+      323,
+      380,
+      190,
+      247,
+      197,
+      170,
+      201,
+      288,
+      213,
+      330,
+      218
+    ],
+    "track_ranks": [
+      173587,
+      149670,
+      155702,
+      56095,
+      144143,
+      62617,
+      149717,
+      31910,
+      41680,
+      149985,
+      79460,
+      71455,
+      98332,
+      71508,
+      39159,
+      65713,
+      10563,
+      22269
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 13,
+      "single": 43
+    },
+    "albums": [
+      {
+        "title": "Phoenix (The Remixes)",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Phoenix",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lion (The Remixes)",
+        "label": "",
+        "release_date": "2020-12-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lion",
+        "label": "",
+        "release_date": "2020-08-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "After It All",
+        "label": "",
+        "release_date": "2019-03-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Akura EP",
+        "label": "",
+        "release_date": "2025-10-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Allure",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Be the One",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Gr-1",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Five EP",
+        "label": "",
+        "release_date": "2025-03-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Coda",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "You Make Me",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Expansion EP",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "It's Over EP",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ashen EP",
+        "label": "",
+        "release_date": "2023-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Spaces EP",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Dream",
+        "label": "",
+        "release_date": "2020-07-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Inner Sphere EP",
+        "label": "",
+        "release_date": "2018-08-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Forest",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eclipse",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No More Tears",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ain't Looking Back",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can U Feel It",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coda",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Talk",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Push",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moth",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Butterfly",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waves",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glass",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "16BL",
+      "Durante",
+      "Nils Hoffmann",
+      "Ben Böhmer",
+      "Lane 8",
+      "AMTRAC",
+      "Angara",
+      "16BL",
+      "Jan Blomqvist",
+      "Fejká"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 382140,
+    "name": "Jon Gurd",
+    "profile": "DJ, Techno producer, music engineer from UK.",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/jongurd",
+      "https://soundcloud.com/jon-gurd",
+      "https://twitter.com/jongurd",
+      "https://www.instagram.com/jon.gurd/",
+      "https://www.residentadvisor.net/dj/jongurd",
+      "https://jongurd.bandcamp.com/releases",
+      "http://web.archive.org/web/20130612154237/http://www.myspace.com/jongurd",
+      "http://web.archive.org/web/20110208135859/http://www.myspace.com/jongurd"
+    ],
+    "members": [],
+    "groups": [
+      "The Rendition"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 21,
+    "digital_only_releases": 79,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP",
+      "12\", EP, Ltd",
+      "12\", W/Lbl, Yel",
+      "12\", col",
+      "12xFile, MP3, Comp",
+      "12xFile, MP3, Comp, 320",
+      "12xFile, WAV, Comp",
+      "21xFile, Comp",
+      "22xFile, MP3, Comp, 320",
+      "24xFile, MP3, Comp, 320 + 2xFile, MP3, Comp, Mixed",
+      "25xFile, MP3, Comp, 320",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Promo",
+      "2xFile, FLAC",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "2xFile, MP3, Single",
+      "2xFile, MP3, Single, 320",
+      "3xFile, MP3",
+      "3xFile, MP3, 320",
+      "3xFile, MP3, EP, 320",
+      "3xFile, MP3, Single",
+      "3xFile, MP3, Single, 320",
+      "4xFile, MP3, 320",
+      "4xFile, MP3, EP, 320",
+      "50xFile, MP3, Comp, 320",
+      "7xFile, MP3",
+      "CD, Album, Mixed",
+      "CD, Comp",
+      "CD, Comp, Mixed",
+      "CD, Comp, Promo",
+      "CDr, Promo",
+      "File, MP3",
+      "File, MP3, EP",
+      "File, MP3, EP, 320"
+    ],
+    "labels": [
+      "!Organism",
+      "8 Sided Dice Recordings",
+      "Anjunabeats",
+      "Anjunadeep",
+      "Anjunadeep Explorations (2)",
+      "Apex Faction",
+      "Babylon Records",
+      "Baroque Records",
+      "Baroque Records, Baroque Back Catalogue",
+      "CD Pool",
+      "Cr2 Records",
+      "Creepy Finger Records",
+      "DMC",
+      "Derelicht",
+      "Det Sync",
+      "Doppelgänger",
+      "Driving Forces Recordings",
+      "ESD Records",
+      "Ego Music, Hysterical",
+      "Fone Audio",
+      "Groovement",
+      "Hotfingers",
+      "Jocks Music",
+      "Killawatt",
+      "Last Night On Earth",
+      "Local Music",
+      "Lot49",
+      "M.O.D.E.",
+      "Mija Recordings",
+      "Moscow Dancefloor Records",
+      "Mutekki",
+      "New State Recordings",
+      "Octopus (2)",
+      "Octopus Black Label",
+      "Phobiq Recordings",
+      "Poor Records",
+      "Primal Rhythm",
+      "Punch Funk Records",
+      "Reload Black Label",
+      "Spin Out Records",
+      "Sprout Music",
+      "Starlight Unlimited",
+      "Stripped Recordings (2)",
+      "TBA, OXA",
+      "Tretmuehle",
+      "Tribal Rage",
+      "Tropical Beats Records",
+      "Twisted Frequency Recordings",
+      "Unlove Music",
+      "Unlove Recordings",
+      "W&O Street Tracks",
+      "Стиль Рекордс, Freestyle Records (7), Moscow Dancefloor Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jon Gurd",
+    "mbid": "e3819ee2-a536-43fc-80ad-2802866ecbc9",
+    "listeners": 27205,
+    "playcount": 207618,
+    "listener_play_ratio": 7.63,
+    "bio_exists": true,
+    "bio_summary": "With a CV that already boasts its own record label, radio show, world class productions and DJ appearances alongside many of the DJ greats, it’s evident that at the age of just 22 Jon Gurd has already matured into a highly respected artist. He pushes an intelligent, underground sound that encompasses house and electro, delivered in a very distinctive fashion. As a former resident at Slinky in Bournemouth, Jon has starred alongside the likes of Dave Clarke <a href=\"https://www.last.fm/music/Jon+G",
+    "tags": [
+      "Progressive House",
+      "House",
+      "electronic",
+      "techno",
+      "UK"
+    ],
+    "similar_artists": [
+      "Warung",
+      "Braxton",
+      "Simon Doty",
+      "Nox Vahn",
+      "Jody Wisternoff"
+    ],
+    "top_tracks": [
+      {
+        "name": "Star",
+        "listeners": 4283,
+        "playcount": 13512
+      },
+      {
+        "name": "It's Over",
+        "listeners": 3517,
+        "playcount": 9294
+      },
+      {
+        "name": "Five",
+        "listeners": 3122,
+        "playcount": 6934
+      },
+      {
+        "name": "Ashen - Mixed",
+        "listeners": 1953,
+        "playcount": 7857
+      },
+      {
+        "name": "Expansion",
+        "listeners": 1948,
+        "playcount": 4802
+      },
+      {
+        "name": "Together",
+        "listeners": 1868,
+        "playcount": 6555
+      },
+      {
+        "name": "Open - Mixed",
+        "listeners": 1556,
+        "playcount": 5978
+      },
+      {
+        "name": "Rise - Mixed",
+        "listeners": 1539,
+        "playcount": 6051
+      },
+      {
+        "name": "Five - Mixed",
+        "listeners": 1451,
+        "playcount": 5167
+      },
+      {
+        "name": "Together - Mixed",
+        "listeners": 1400,
+        "playcount": 5732
+      }
+    ],
+    "url": "https://www.last.fm/music/Jon+Gurd"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,291 @@
+{
+  "artist_name": "The Dox Band",
+  "artist_id": "the_dox_band",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:32:18.200333+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d0218da6-65b8-4137-a2ee-cb4bee7599ab",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/103764002",
+      "purchase for download": "https://music.apple.com/us/artist/1527552187",
+      "streaming": "https://tidal.com/artist/20885397",
+      "youtube music": "https://music.youtube.com/channel/UCyxmQbJ-4AIrXTFswSLrs-g"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 103764002,
+    "name": "The Dox Band",
+    "nb_fan": 3,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/103764002",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f6fdb4e495b533151e3b6ebabb54c340/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "When the day shows",
+      "Curtains Half Drawn",
+      "Forever and Always",
+      "I Heard the Bells on Christmas Day",
+      "Shores"
+    ],
+    "track_durations": [
+      199,
+      230,
+      238,
+      149,
+      174
+    ],
+    "track_ranks": [
+      100000,
+      69795,
+      103171,
+      47786,
+      34958
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "When the day shows",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Curtains Half Drawn",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shores",
+        "label": "",
+        "release_date": "2024-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When a child is born",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grown Up Christmas List",
+        "label": "",
+        "release_date": "2023-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever and Always",
+        "label": "",
+        "release_date": "2023-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ruby My Dear",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seventh Avenue South",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Heard the Bells on Christmas Day",
+        "label": "",
+        "release_date": "2020-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That Beatnik Jive",
+        "label": "",
+        "release_date": "2020-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volga",
+        "label": "",
+        "release_date": "2020-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2842989,
+    "name": "The Doxies",
+    "profile": "A band from Columbia, Missouri. The Doxies started playing in Columbia when the band members were undergrads at Mizzou.",
+    "realname": "",
+    "social_urls": [
+      "http://www.thedoxies.com/"
+    ],
+    "members": [
+      "Bryan Maness",
+      "Brent Maness",
+      "Phylshawn Johnson",
+      "Tim Lloyd (3)",
+      "Wes Wingate",
+      "Kevin Siebenaler"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 0,
+    "total_releases": 8,
+    "formats": [
+      "2xCD, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Promo"
+    ],
+    "labels": [
+      "Co-opt Records, Emergency Umbrella Records",
+      "Emergency Umbrella Records",
+      "Painfully Midwestern Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Dox Band",
+    "mbid": "d0218da6-65b8-4137-a2ee-cb4bee7599ab",
+    "listeners": 91987,
+    "playcount": 265503,
+    "listener_play_ratio": 2.89,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Halcyon Jazz Band",
+      "Basinettes",
+      "FRED HAYES",
+      "Ray Love Trio",
+      "Tree Nomads"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Heard the Bells on Christmas Day",
+        "listeners": 36664,
+        "playcount": 92764
+      },
+      {
+        "name": "Shores",
+        "listeners": 32999,
+        "playcount": 74312
+      },
+      {
+        "name": "Forever and Always",
+        "listeners": 22512,
+        "playcount": 49370
+      },
+      {
+        "name": "Ruby My Dear",
+        "listeners": 13669,
+        "playcount": 26639
+      },
+      {
+        "name": "Curtains Half Drawn",
+        "listeners": 7479,
+        "playcount": 14511
+      },
+      {
+        "name": "That Beatnik Jive",
+        "listeners": 2761,
+        "playcount": 6943
+      },
+      {
+        "name": "Seventh Avenue South",
+        "listeners": 435,
+        "playcount": 688
+      },
+      {
+        "name": "Volga",
+        "listeners": 83,
+        "playcount": 120
+      },
+      {
+        "name": "Its Final Dawning",
+        "listeners": 69,
+        "playcount": 92
+      },
+      {
+        "name": "Grown up christmas list",
+        "listeners": 15,
+        "playcount": 31
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Dox+Band"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

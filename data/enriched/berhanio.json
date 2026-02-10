@@ -1,0 +1,135 @@
+{
+  "artist_name": "Berhanio",
+  "artist_id": "berhanio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:38:24.679120+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "15e0a22f-4b28-45cc-924e-aeea1cf7ed25",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/278872461",
+      "streaming": "https://tidal.com/artist/49944124"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Berhanio', got 'Maria Bethânia'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Berhanio",
+    "mbid": "15e0a22f-4b28-45cc-924e-aeea1cf7ed25",
+    "listeners": 49061,
+    "playcount": 157399,
+    "listener_play_ratio": 3.21,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Berhanio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Invisible Beach",
+      "Dreamwavez",
+      "BeatsBySindri",
+      "Reve brumeux",
+      "zoemoon."
+    ],
+    "top_tracks": [
+      {
+        "name": "Make It",
+        "listeners": 28703,
+        "playcount": 67504
+      },
+      {
+        "name": "Wassup",
+        "listeners": 20115,
+        "playcount": 51094
+      },
+      {
+        "name": "Honey",
+        "listeners": 13252,
+        "playcount": 31555
+      },
+      {
+        "name": "Memory Game",
+        "listeners": 3469,
+        "playcount": 7086
+      },
+      {
+        "name": "Fancy",
+        "listeners": 92,
+        "playcount": 127
+      },
+      {
+        "name": "Top Floor",
+        "listeners": 15,
+        "playcount": 29
+      },
+      {
+        "name": "Milkshakes",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Tell Me",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Main Street",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Berhanio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

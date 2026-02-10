@@ -1,0 +1,595 @@
+{
+  "artist_name": "Helado Negro",
+  "artist_id": "helado_negro",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:04:49.835766+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "aa0a54b3-d37e-4c1d-a53f-b3b94a3dfcad",
+    "type": "Person",
+    "country": "",
+    "area": "Brooklyn",
+    "begin_date": "1980",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "indie rock",
+      "indietronica",
+      "post-rock"
+    ],
+    "aliases": [
+      "Roberto Carlos Lange"
+    ],
+    "isnis": [
+      "0000000461146425"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002136842",
+      "bandcamp": "https://heladonegro.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/1577970",
+      "free streaming": "https://www.deezer.com/artist/391178",
+      "last.fm": "https://www.last.fm/music/Helado%20Negro",
+      "lyrics": "https://genius.com/artists/Helado-negro",
+      "official homepage": "http://heladonegro.com/",
+      "other databases": "https://rateyourmusic.com/artist/helado-negro",
+      "purchase for download": "https://itunes.apple.com/us/artist/id321238719",
+      "social network": "https://www.instagram.com/heladonegro/",
+      "songkick": "https://www.songkick.com/artists/2428711",
+      "soundcloud": "https://soundcloud.com/heladonegro",
+      "streaming": "https://tidal.com/artist/4830250",
+      "VIAF": "http://viaf.org/viaf/157510771",
+      "wikidata": "https://www.wikidata.org/wiki/Q46305646",
+      "youtube": "https://www.youtube.com/channel/UCLr9Gs9fSHO9zWzgkFY23kw"
+    },
+    "labels": [
+      "[adult swim]",
+      "RVNG Intl.",
+      "Super Records",
+      "P‐VINE RECORDS",
+      "Asthmatic Kitty Records",
+      "Mom+Pop",
+      "4AD",
+      "BBE",
+      "Big Dada"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 391178,
+    "name": "Helado Negro",
+    "nb_fan": 5437,
+    "nb_album": 37,
+    "link": "https://www.deezer.com/artist/391178",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7012c171ea875e23cad98b99e34f5d77/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Buscabulla",
+      "Flock of Dimes",
+      "Shura"
+    ],
+    "contributor_roles": {
+      "Buscabulla": [
+        "Featured"
+      ],
+      "Shura": [
+        "Main"
+      ],
+      "Flock of Dimes": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Best For You and Me",
+      "Colores Del Mar",
+      "More",
+      "I Just Want To Wake Up With You",
+      "Pais Nublado",
+      "Protector",
+      "Agosto",
+      "Don’t Give It Up Now",
+      "Sender Receiver",
+      "Out There",
+      "Es Una Fantasia",
+      "Imagining What to Do",
+      "Running",
+      "Echo Tricks Me",
+      "Flores",
+      "There Must Be a Song Like You",
+      "If You Don't Believe In Love (feat. Helado Negro)",
+      "Wish You Could Be Here",
+      "More (Edit)",
+      "La Naranja",
+      "LFO (Lupe Finds Oliveros)",
+      "Lotta Love",
+      "Sound and Vision",
+      "Dance Ghost",
+      "Are I Here"
+    ],
+    "track_durations": [
+      185,
+      224,
+      188,
+      230,
+      272,
+      257,
+      284,
+      284,
+      189,
+      294,
+      302,
+      203,
+      265,
+      249,
+      199,
+      290,
+      254,
+      233,
+      177,
+      330,
+      186,
+      197,
+      201,
+      266,
+      213
+    ],
+    "track_ranks": [
+      496989,
+      474893,
+      204057,
+      151728,
+      461964,
+      224114,
+      112504,
+      192110,
+      167362,
+      157216,
+      138603,
+      184886,
+      285762,
+      160853,
+      108362,
+      175643,
+      131486,
+      164940,
+      140541,
+      151239,
+      201241,
+      309192,
+      110781,
+      61880,
+      44077
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 10,
+      "ep": 5,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "PHASOR",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Far In",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "This Is How You Smile",
+        "label": "",
+        "release_date": "2019-03-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Island Universe Story Four",
+        "label": "",
+        "release_date": "2018-01-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Private Energy (Expanded)",
+        "label": "",
+        "release_date": "2017-05-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Private Energy",
+        "label": "",
+        "release_date": "2016-10-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Double Youth",
+        "label": "",
+        "release_date": "2014-09-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Invisible Life",
+        "label": "",
+        "release_date": "2013-02-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Canta Lechuza",
+        "label": "",
+        "release_date": "2013-02-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Awe Owe",
+        "label": "",
+        "release_date": "2013-02-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Last Sound On Earth",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Live at KCRW",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Island Universe Story Three",
+        "label": "",
+        "release_date": "2014-05-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Island Universe Story Two",
+        "label": "",
+        "release_date": "2013-08-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Island Universe Story One",
+        "label": "",
+        "release_date": "2012-02-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sender Receiver",
+        "label": "",
+        "release_date": "2025-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Protector",
+        "label": "",
+        "release_date": "2025-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "More",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "VI. Just Last Night (Acceptance)",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lejos De Más",
+        "label": "",
+        "release_date": "2024-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Best For You and Me",
+        "label": "",
+        "release_date": "2024-01-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Just Want To Wake Up With You",
+        "label": "",
+        "release_date": "2023-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LFO (Lupe Finds Oliveros)",
+        "label": "",
+        "release_date": "2023-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ya no estoy aquí",
+        "label": "",
+        "release_date": "2022-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Outside the Outside",
+        "label": "",
+        "release_date": "2021-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gemini and Leo",
+        "label": "",
+        "release_date": "2021-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Futurism",
+        "label": "",
+        "release_date": "2021-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sound and Vision",
+        "label": "",
+        "release_date": "2021-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Free Association (Helado Negro Remix)",
+        "label": "",
+        "release_date": "2021-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lotta Love",
+        "label": "",
+        "release_date": "2020-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Skinshape",
+      "Khruangbin",
+      "Oracle Sisters",
+      "Common Saints",
+      "Nilüfer Yanya",
+      "Dope Lemon",
+      "El Michels Affair",
+      "Warhaus",
+      "Arlo Parks",
+      "Connan Mockasin"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1577970,
+    "name": "Helado Negro",
+    "profile": "Roberto Carlos Lange (born 1980), better known by his stage name Helado Negro, is an American musician. In 2019 he was awarded a United States Artists Fellow in Music and also the recipient of a 2019 Grants to Artists award in Music from the Foundation for Contemporary Arts. In 2015 he received a Joyce Foundation award.\r\n\r\nA South Florida native, born to Ecuadorian immigrants and based in Brooklyn, Roberto Carlos Lange’s upbringing provides essential elements to his songwriting, including his consistently bilingual—English and Spanish—lyrics. Exploring the expressivity within intense states of being, Latinx identity, and pluralistic sensibilities, his music as Helado Negro is an engrossing statement achieved through lyrically personal and political avant-pop music. Half a decade and half a dozen albums since Helado Negro’s 2009 debut album Awe Owe, and multiple projects under various aliases, Lange has cultivated an untraditional approach to songcraft that places his voice on an advent",
+    "realname": "Roberto Carlos Lange",
+    "social_urls": [
+      "http://www.heladonegro.com",
+      "https://heladonegro.bandcamp.com",
+      "https://igetrvng.com/shop/rvngnl39e/",
+      "https://privateenergy.myshopify.com"
+    ],
+    "members": [],
+    "groups": [
+      "ROM (2)",
+      "OMBRE (4)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 12,
+    "digital_only_releases": 70,
+    "total_releases": 82,
+    "formats": [
+      "",
+      "100xFile, MP3, Comp, 320",
+      "11xFile, MP3, Comp, 320",
+      "12\", EP, Ltd, Pin",
+      "12\", EP, Ltd, Whi",
+      "12xFile, FLAC, Comp",
+      "14xFile, MP3, Comp, 320",
+      "19xFile, MP3, Comp, 320",
+      "26xFile, MP3, Comp, 320",
+      "2xCDr, Comp, Promo, Smplr",
+      "2xCass, Comp, Ltd",
+      "30xFile, AAC, Album, Comp, 256",
+      "3xFile, MP3, 320",
+      "40xFile, MP3, Comp, 320",
+      "5xFile, MP3, EP, 320",
+      "64xFile, MP3, Comp, 320",
+      "6xFile, MP3, Single",
+      "7xFile, FLAC, EP",
+      "8xFile, MiniAlbum",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, RE + CD, Comp, RE",
+      "CD, Comp, Smplr",
+      "CDr, Single, Promo",
+      "Cass, Album, Gre",
+      "Cass, Album, Pur",
+      "Cass, Red",
+      "DVD, Comp, Promo, NTSC",
+      "File, AAC, FLAC, MP3, EP",
+      "File, MP3, 320",
+      "File, MP3, Comp, Mixed, 320",
+      "File, MP3, Mixed, 224",
+      "File, MP3, VBR",
+      "Flexi, Single, Blu",
+      "LP",
+      "Lathe, 7\", Single, Ltd, Num"
+    ],
+    "labels": [
+      "30 Days, 30 Songs",
+      "4AD",
+      "Antiopic",
+      "Asthmatic Kitty Records",
+      "Big Dada Recordings, Private Energy",
+      "Bleep (2)",
+      "Cherry Red",
+      "Good Music (20)",
+      "In Context Music",
+      "Lives Through Magic",
+      "Mojo Magazine",
+      "Mysteries Of The Deep",
+      "NRMAL",
+      "Nonesuch",
+      "Not On Label (Helado Negro Self-released)",
+      "Not On Label (Mouse On Mars Self-Released)",
+      "Onkyovizion, Disques Corde",
+      "RVNG Intl.",
+      "Republic Of Music",
+      "Rvng Intl.",
+      "Rvng Intl., Beats In Space Records, Freedom To Spend",
+      "Secretly Canadian",
+      "Sgustok Magazine",
+      "Sinedín Music",
+      "Something In Construction",
+      "Stones Throw Records",
+      "Weathervane Music (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Helado Negro",
+    "mbid": "aa0a54b3-d37e-4c1d-a53f-b3b94a3dfcad",
+    "listeners": 284696,
+    "playcount": 5121931,
+    "listener_play_ratio": 17.99,
+    "bio_exists": true,
+    "bio_summary": "Helado Negro is the pseudonym of North American musician Roberto Carlos Lange (born 1980 in Florida, U.S.A.). \n\nHis parents were immigrants from Ecuador, but Roberto grew up in the materialistic lifestyle of southern Florida, U.S.A. Pounding bass beats from passing cars, boom boxes bouncing down the block, and late-night parties provided a foundation for Lange’s interest in sound.\n\nLange has collaborated with visual and sound artist David Ellis to compose a new series of kinetic sound sculptures",
+    "tags": [
+      "experimental",
+      "folk",
+      "electronic",
+      "psychedelic",
+      "latin"
+    ],
+    "similar_artists": [
+      "Amen Dunes",
+      "Y La Bamba",
+      "Astrid Sonne",
+      "Devendra Banhart",
+      "Blue Lake"
+    ],
+    "top_tracks": [
+      {
+        "name": "Running",
+        "listeners": 90847,
+        "playcount": 459543
+      },
+      {
+        "name": "Please Won’t Please",
+        "listeners": 63232,
+        "playcount": 269369
+      },
+      {
+        "name": "Pais Nublado",
+        "listeners": 59518,
+        "playcount": 348770
+      },
+      {
+        "name": "Best For You and Me",
+        "listeners": 45547,
+        "playcount": 178209
+      },
+      {
+        "name": "Gemini and Leo",
+        "listeners": 37499,
+        "playcount": 169006
+      },
+      {
+        "name": "Imagining What To Do",
+        "listeners": 37276,
+        "playcount": 185929
+      },
+      {
+        "name": "I Just Want To Wake Up With You",
+        "listeners": 29053,
+        "playcount": 106981
+      },
+      {
+        "name": "Lotta Love",
+        "listeners": 28641,
+        "playcount": 81467
+      },
+      {
+        "name": "Seen My Aura",
+        "listeners": 28453,
+        "playcount": 127489
+      },
+      {
+        "name": "Fantasma Vaga",
+        "listeners": 27801,
+        "playcount": 135398
+      }
+    ],
+    "url": "https://www.last.fm/music/Helado+Negro"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

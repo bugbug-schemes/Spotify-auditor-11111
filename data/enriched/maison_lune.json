@@ -1,0 +1,227 @@
+{
+  "artist_name": "Maison Lune",
+  "artist_id": "maison_lune",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:24:52.528949+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a01bdc78-48ee-42cb-9741-6019589a2af4",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/6QxpDDnrrYLloULqIeJAOw",
+      "streaming": "https://music.apple.com/gb/artist/1834908369"
+    },
+    "labels": [
+      "Azure Noon"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 342407071,
+    "name": "Maison Lune",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/342407071",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/effb72488bb160602ed86645afd6dd90/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Coral Leaf"
+    ],
+    "track_durations": [
+      150
+    ],
+    "track_ranks": [
+      375748
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Tropical Geometry",
+        "label": "",
+        "release_date": "2026-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Green Mirage",
+        "label": "",
+        "release_date": "2025-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silva Sonata",
+        "label": "",
+        "release_date": "2025-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jardin Chromatique",
+        "label": "",
+        "release_date": "2025-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coral Leaf",
+        "label": "",
+        "release_date": "2025-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verde Aura",
+        "label": "",
+        "release_date": "2025-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet Skies",
+        "label": "",
+        "release_date": "2025-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean's Lullaby",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cloud Nine",
+        "label": "",
+        "release_date": "2025-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Maison Lune",
+    "mbid": "",
+    "listeners": 4852,
+    "playcount": 11948,
+    "listener_play_ratio": 2.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Maison+Lune\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Echo Riviera",
+      "Pure Recall",
+      "Coco Siesta",
+      "Zaytune",
+      "Hausward"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ocean's Lullaby",
+        "listeners": 1980,
+        "playcount": 3429
+      },
+      {
+        "name": "Coral Leaf",
+        "listeners": 1308,
+        "playcount": 2744
+      },
+      {
+        "name": "Velvet Skies",
+        "listeners": 1095,
+        "playcount": 1919
+      },
+      {
+        "name": "Verde Aura",
+        "listeners": 733,
+        "playcount": 1168
+      },
+      {
+        "name": "Green Mirage",
+        "listeners": 717,
+        "playcount": 1018
+      },
+      {
+        "name": "Cloud Nine",
+        "listeners": 495,
+        "playcount": 1011
+      },
+      {
+        "name": "Silva Sonata",
+        "listeners": 439,
+        "playcount": 633
+      },
+      {
+        "name": "Tropical Geometry",
+        "listeners": 19,
+        "playcount": 24
+      },
+      {
+        "name": "Jardin Chromatique",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Coral Leaf - 0:00",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Maison+Lune"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

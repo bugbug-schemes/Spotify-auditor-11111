@@ -1,0 +1,108 @@
+{
+  "artist_name": "Foster Zeta",
+  "artist_id": "foster_zeta",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:41:05.575433+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Foster Zeta', got 'Foster & Allen'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6586594,
+    "name": "Astroboy (10)",
+    "profile": "The one-man band of Astroboy aka Astro Boy was started as a side for Shapeshifter Legacy noisemaker Ady Simmonds (also goes under the name of Ady Gordon occasionally) -- who had no idea that there was a Japanese cartoon from the 1970s under the same name. By using a variety of synthesizers, drum machines, tape loops, Commodore 64 noises, and even a Speak and Spell, Simmonds would record a number of experimental sounds on a four-track recorder that would result in a number of demo releases. Ennui Tapes would eventually release two full-lengths -- including 1999's Hex and 2000's In the Ghost of Your Mind -- before the Belgium-based [l28264] followed with 2001's Innocent Tears.\r\n\r\nAdy also played as Shapeshifters along with Bryan Shore (aka Cpt.Zeta Jones) as well as in Brat along with Simon Foster (previously in Devious Conjurers) and in Thee Hysterikals with Al Fasoli.",
+    "realname": "Ady Simmonds",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CDr, Comp"
+    ],
+    "labels": [
+      "Flux (5)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Foster Zeta",
+    "mbid": "",
+    "listeners": 6577,
+    "playcount": 13081,
+    "listener_play_ratio": 1.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Foster+Zeta\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Charlie Blue",
+      "Temporal Drift",
+      "Lost storys",
+      "novi quiet",
+      "Lucky Lorry"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fool Me Twice",
+        "listeners": 6532,
+        "playcount": 12941
+      },
+      {
+        "name": "Inner Spaces",
+        "listeners": 46,
+        "playcount": 122
+      },
+      {
+        "name": "Far Out",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Begin Again",
+        "listeners": 1,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Foster+Zeta"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

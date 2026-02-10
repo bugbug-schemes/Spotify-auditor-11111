@@ -1,0 +1,188 @@
+{
+  "artist_name": "Dinner Club Band",
+  "artist_id": "dinner_club_band",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:29:15.556045+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "39cd7fa9-faf6-47f4-bf53-b5e56a8efabc",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/164550197",
+      "purchase for download": "https://music.apple.com/us/artist/1615824193",
+      "soundcloud": "https://soundcloud.com/dinnerclubband",
+      "streaming": "https://tidal.com/artist/31338237",
+      "youtube music": "https://music.youtube.com/channel/UC6FAyR8aMVe3gW8-SLelvWg"
+    },
+    "labels": [
+      "Chill Palm"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 164550197,
+    "name": "Dinner Club Band",
+    "nb_fan": 3,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/164550197",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/483eaeb9c73580e7e342c324745a95b5/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "In Unforgettable Ways"
+    ],
+    "track_durations": [
+      171
+    ],
+    "track_ranks": [
+      33340
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Beneath the Tide",
+        "label": "",
+        "release_date": "2022-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1052564,
+    "name": "Sunday Evening Dinner Club",
+    "profile": "Short-lived Louisville, KY hardcore band that would become [a=Thirty-Two Frames].",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Jay Palumbo",
+      "Denny Grey",
+      "Jim Dzurovcak",
+      "Lee Grant (3)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD",
+      "CD, Comp"
+    ],
+    "labels": [
+      "2 Steps Forward",
+      "2 Steps Forward, I Stand Alone Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dinner Club Band",
+    "mbid": "39cd7fa9-faf6-47f4-bf53-b5e56a8efabc",
+    "listeners": 20394,
+    "playcount": 43858,
+    "listener_play_ratio": 2.15,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dinner+Club+Band\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Sally's Trio",
+      "Tosh Rhann Band",
+      "Goldilocks Trio",
+      "Josh Lavender Trio",
+      "Bridgerton Vail"
+    ],
+    "top_tracks": [
+      {
+        "name": "In Unforgettable Ways",
+        "listeners": 20387,
+        "playcount": 43835
+      },
+      {
+        "name": "Beneath the Tide",
+        "listeners": 10,
+        "playcount": 15
+      },
+      {
+        "name": "Minetta's",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "My Funny Valentine",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Pillow Talk",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "I Love You",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "2022-12-31 12:11",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Dinner+Club+Band"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

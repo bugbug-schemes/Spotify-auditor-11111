@@ -1,0 +1,155 @@
+{
+  "artist_name": "Snuggly Sam",
+  "artist_id": "snuggly_sam",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:08:23.837524+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 217460585,
+    "name": "Snuggly Sam",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/217460585",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3d3acf49512c728dafc2fed702e67724/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Goodnight Mister Bunny"
+    ],
+    "track_durations": [
+      116
+    ],
+    "track_ranks": [
+      27004
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "さくら",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Chunky Monkey and His Donkey",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodnight Mister Bunny",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dad's favorite Song",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mom's Favorite Song",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Snuggly Sam",
+    "mbid": "",
+    "listeners": 4087,
+    "playcount": 51035,
+    "listener_play_ratio": 12.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Snuggly+Sam\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Vincent Lundborg",
+      "Michael Chausson",
+      "Leanne Haughey",
+      "Jian Morét",
+      "Otis Meadow"
+    ],
+    "top_tracks": [
+      {
+        "name": "Goodnight Mister Bunny",
+        "listeners": 4050,
+        "playcount": 50932
+      },
+      {
+        "name": "Mom's Favorite Song",
+        "listeners": 25,
+        "playcount": 41
+      },
+      {
+        "name": "The Chunky Monkey and His Donkey",
+        "listeners": 18,
+        "playcount": 33
+      },
+      {
+        "name": "Dad's favorite Song",
+        "listeners": 17,
+        "playcount": 24
+      },
+      {
+        "name": "Happy Guests",
+        "listeners": 5,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Snuggly+Sam"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

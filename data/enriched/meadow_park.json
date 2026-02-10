@@ -1,0 +1,345 @@
+{
+  "artist_name": "Meadow Park",
+  "artist_id": "meadow_park",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:36:42.308055+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3d368735-3a3a-411b-a60e-af195b401491",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183265977",
+      "purchase for download": "https://music.apple.com/us/artist/1649018660",
+      "soundcloud": "https://soundcloud.com/meadowpark-sc",
+      "streaming": "https://tidal.com/artist/34512263",
+      "youtube music": "https://music.youtube.com/channel/UCNn4SA3FF1NkvPTYPwW8fmA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183265977,
+    "name": "Meadow Park",
+    "nb_fan": 5,
+    "nb_album": 20,
+    "link": "https://www.deezer.com/artist/183265977",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b86fb208331c809718046d0a771b8001/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "My Confidant",
+      "Without A Song",
+      "Forever Yours",
+      "Moon River",
+      "When I Fall In Love"
+    ],
+    "track_durations": [
+      180,
+      236,
+      178,
+      215,
+      289
+    ],
+    "track_ranks": [
+      163970,
+      114961,
+      32720,
+      18440,
+      41766
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 8,
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Twlight Over The Fields",
+        "label": "",
+        "release_date": "2024-10-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Over the Rainbows",
+        "label": "",
+        "release_date": "2024-09-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "No Rush",
+        "label": "",
+        "release_date": "2023-10-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Open Season",
+        "label": "",
+        "release_date": "2023-06-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Owning It All",
+        "label": "",
+        "release_date": "2023-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bed Of Roses",
+        "label": "",
+        "release_date": "2023-02-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Level Up",
+        "label": "",
+        "release_date": "2023-02-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Letting It Slip",
+        "label": "",
+        "release_date": "2023-02-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I'll Find A Way",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Upstairs",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It’s You Or No One",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon River",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever Yours",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once In A Serenade",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Confidant",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Truly Yours",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Without A Song",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "September Song",
+        "label": "",
+        "release_date": "2022-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When I Fall In Love",
+        "label": "",
+        "release_date": "2021-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Is Passing By",
+        "label": "",
+        "release_date": "2021-04-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6973910,
+    "name": "North Meadow Park",
+    "profile": "Metalcore band from Cleveland, Ohio, formed in 1999.",
+    "realname": "",
+    "social_urls": [
+      "https://northmeadowpark.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Meadow Park",
+    "mbid": "3d368735-3a3a-411b-a60e-af195b401491",
+    "listeners": 107959,
+    "playcount": 451177,
+    "listener_play_ratio": 4.18,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Cecil Andrews",
+      "Southside Trio",
+      "Bernstein Square",
+      "Arto Ferrara",
+      "The Holly Molly Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Without A Song",
+        "listeners": 53592,
+        "playcount": 145137
+      },
+      {
+        "name": "When I Fall In Love",
+        "listeners": 25687,
+        "playcount": 64100
+      },
+      {
+        "name": "September Song",
+        "listeners": 16986,
+        "playcount": 37353
+      },
+      {
+        "name": "I'll Find A Way",
+        "listeners": 14326,
+        "playcount": 28294
+      },
+      {
+        "name": "My Confidant",
+        "listeners": 12672,
+        "playcount": 58609
+      },
+      {
+        "name": "Once In A Serenade",
+        "listeners": 12189,
+        "playcount": 56382
+      },
+      {
+        "name": "Upstairs",
+        "listeners": 11579,
+        "playcount": 25654
+      },
+      {
+        "name": "Forever Yours",
+        "listeners": 10423,
+        "playcount": 22462
+      },
+      {
+        "name": "Moon River",
+        "listeners": 5687,
+        "playcount": 10870
+      },
+      {
+        "name": "Something In The Cellar",
+        "listeners": 159,
+        "playcount": 510
+      }
+    ],
+    "url": "https://www.last.fm/music/Meadow+Park"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,512 @@
+{
+  "artist_name": "Ruffnux",
+  "artist_id": "ruffnux",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:48:26.243588+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "47036736-9c58-4d07-a5cf-7789df3b2fac",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/102207222",
+      "streaming": "https://tidal.com/artist/20658399"
+    },
+    "labels": [
+      "Lilly Era"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 102207222,
+    "name": "Ruffnux",
+    "nb_fan": 78,
+    "nb_album": 33,
+    "link": "https://www.deezer.com/artist/102207222",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e197928c439fe1aa6392f6828d448921/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Aural",
+      "Holochrome",
+      "Kusko",
+      "Le Moon",
+      "Midnight Pass",
+      "NEIMY",
+      "Nattica",
+      "Raeya",
+      "Rico 56",
+      "Sam Wiseman",
+      "Soleil",
+      "Thunder",
+      "bailey",
+      "sunsett."
+    ],
+    "contributor_roles": {
+      "Midnight Pass": [
+        "Main"
+      ],
+      "Raeya": [
+        "Main"
+      ],
+      "Rico 56": [
+        "Main"
+      ],
+      "Kusko": [
+        "Main"
+      ],
+      "bailey": [
+        "Main"
+      ],
+      "Aural": [
+        "Main"
+      ],
+      "Nattica": [
+        "Main"
+      ],
+      "Le Moon": [
+        "Main"
+      ],
+      "Soleil": [
+        "Main"
+      ],
+      "NEIMY": [
+        "Main"
+      ],
+      "sunsett.": [
+        "Main"
+      ],
+      "Sam Wiseman": [
+        "Main"
+      ],
+      "Thunder": [
+        "Main"
+      ],
+      "Holochrome": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Remember",
+      "Fragments",
+      "Set Me Free",
+      "Reverie",
+      "Up on Me",
+      "The Stars We Lost",
+      "Home",
+      "For You",
+      "Kyoto",
+      "Chasing Moonlight",
+      "Out of Body",
+      "Your Touch",
+      "This Sunset",
+      "Everything I Had",
+      "Like a Fever",
+      "One Step at a Time",
+      "Back To Us"
+    ],
+    "track_durations": [
+      178,
+      159,
+      182,
+      156,
+      148,
+      153,
+      146,
+      146,
+      150,
+      158,
+      145,
+      148,
+      152,
+      158,
+      150,
+      161,
+      157
+    ],
+    "track_ranks": [
+      228659,
+      206360,
+      282616,
+      69655,
+      88660,
+      106605,
+      116300,
+      35163,
+      70280,
+      116005,
+      164586,
+      180682,
+      142450,
+      119940,
+      130258,
+      119649,
+      73341
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 32
+    },
+    "albums": [
+      {
+        "title": "LUMINANCE",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Fragments",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back to You",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waiting For Signs",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Sunset",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Step at a Time",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Me Deeper",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chasing Moonlight",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everything I Had",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That Feeling",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Stars We Lost",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kyoto",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back to Us",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reverie",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For You",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay With Me",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serotonin",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold Me Close",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "With You",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Away",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Like a Fever",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Set Me Free",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out of Body",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gravity",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Up on Me",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Sky",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tell Me",
+        "label": "",
+        "release_date": "2022-04-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Bailey",
+      "MVCA",
+      "Luvless",
+      "rshand",
+      "Norra",
+      "Hne",
+      "Alex Keeper",
+      "Refeci",
+      "Banyan",
+      "Noetic"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 13313406,
+    "name": "Ruffnux",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "2xFile, FLAC, Single",
+      "File, FLAC, Single"
+    ],
+    "labels": [
+      "Lilly Era"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ruffnux",
+    "mbid": "47036736-9c58-4d07-a5cf-7789df3b2fac",
+    "listeners": 50231,
+    "playcount": 265524,
+    "listener_play_ratio": 5.29,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ruffnux\">Read more on Last.fm</a>",
+    "tags": [
+      "Chill House"
+    ],
+    "similar_artists": [
+      "Row",
+      "Rayasa",
+      "Tom Kha",
+      "mölly",
+      "James Lacey"
+    ],
+    "top_tracks": [
+      {
+        "name": "Out of Body",
+        "listeners": 34692,
+        "playcount": 127658
+      },
+      {
+        "name": "Away",
+        "listeners": 6213,
+        "playcount": 15623
+      },
+      {
+        "name": "Night Sky",
+        "listeners": 4584,
+        "playcount": 11059
+      },
+      {
+        "name": "Up on Me",
+        "listeners": 4558,
+        "playcount": 11326
+      },
+      {
+        "name": "Gravity",
+        "listeners": 4226,
+        "playcount": 9828
+      },
+      {
+        "name": "Set Me Free",
+        "listeners": 3156,
+        "playcount": 8617
+      },
+      {
+        "name": "Home",
+        "listeners": 3074,
+        "playcount": 7248
+      },
+      {
+        "name": "Your Touch",
+        "listeners": 3046,
+        "playcount": 7260
+      },
+      {
+        "name": "Born to Be Free",
+        "listeners": 2496,
+        "playcount": 6012
+      },
+      {
+        "name": "Kyoto",
+        "listeners": 2271,
+        "playcount": 6407
+      }
+    ],
+    "url": "https://www.last.fm/music/Ruffnux"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

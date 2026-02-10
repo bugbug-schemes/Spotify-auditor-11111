@@ -1,0 +1,400 @@
+{
+  "artist_name": "Ted Ross Quartet",
+  "artist_id": "ted_ross_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:27:46.852829+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b1273cec-16d8-48d7-833c-05c7cd21c15f",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/170357427",
+      "purchase for download": "https://music.apple.com/us/artist/1625331510",
+      "streaming": "https://tidal.com/artist/32218884",
+      "youtube music": "https://music.youtube.com/channel/UCmT7luGHRn9Ein2KFg9TLXA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170357427,
+    "name": "Ted Ross Quartet",
+    "nb_fan": 9,
+    "nb_album": 24,
+    "link": "https://www.deezer.com/artist/170357427",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3cc91c3f0f79f9f7ed57bf6c9258ab66/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Late Nocturne",
+      "Skip a Beat",
+      "I Should Care",
+      "On Green Avenue",
+      "A Final Cocktail"
+    ],
+    "track_durations": [
+      235,
+      222,
+      207,
+      236,
+      154
+    ],
+    "track_ranks": [
+      31176,
+      24808,
+      95505,
+      67607,
+      71568
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Skip a Beat",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let's Bail",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Options",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noir Lisbon",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On Green Avenue",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before We Leave",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kiss Goodbye",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ava",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Empty Promises",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Real Edge",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sculptors of the Past",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slightly Askew",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pack Your Bags and Go",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Indulge Me",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "An Afternoon in Terra Haute",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tickets for Two Please",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Nocturne",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "As I Ponder",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out To Pasture",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Final Cocktail",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Should Care",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eventide",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Socks And Sandals",
+        "label": "",
+        "release_date": "2022-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Italia",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1348945,
+    "name": "Mario Percudani",
+    "profile": "Musician, Songwriter, Producer and Chairman of Tanzan Music\r\n\r\nStudio and live collaborations include Hardline, Mitch Malloy, Bobby Kimball (Toto), Vinnie Appice (Black Sabbath, Dio), Deen Castronovo (Journey, Dead Daisies, Vasco), Johnny Gioeli, Axe, Bobby Barth (Blackfoot), Bob Harris (Frank Zappa, Steve Vai), Ted Poley (Danger Danger), Jim Peterik (Survivor), Lee Fields, Tyra Hammond, Rhiannon Giddens, Lyrics Born, Glen David Andrews, Naomi Shelton & The Gospel Queens, Michelle David, Kylie Auldist, Bonfire, Alessandro Del Vecchio (Hardline, Ian Paice, Glenn Hughes), Bruno Ravel (Danger Danger), Lars Sasfund (Work of Art), Bruce Gaitsch (Chicago), Dan Reed, David Reece, Richard Roundtree, Noel McKoy (James Taylor Quartet), Anna Portalupi (TarjaTurunen, Hardline), Alessandro Mori (Glenn Hughes, Kee Marcello), Nik Mazzucconi (Ian Paice, Ellade Bandini), Ria Currie, Folkstone, Kelly Keeling, Jessie Galante, Paolo Apollo Negri, Marco Tansini, Nicolò Fragile (Gotthard), Nigel Bailey, Iss",
+    "realname": "",
+    "social_urls": [
+      "http://www.mariopercudani.com"
+    ],
+    "members": [],
+    "groups": [
+      "Hardline (3)",
+      "HungryHeart",
+      "Shining Line",
+      "Blueville",
+      "Lionville"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 35,
+    "digital_only_releases": 65,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "40xFile, MP3, Comp, 320",
+      "7\", Single",
+      "CD",
+      "CD, Album",
+      "CD, Album + DVD-V, Multichannel, NTSC + Dlx",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, EP",
+      "CD, Single",
+      "Cass, EP",
+      "DVD + CD, Dig",
+      "File, MP3, Album",
+      "File, MP3, Single",
+      "Single"
+    ],
+    "labels": [
+      "Art Of Melody Music",
+      "Classic Rock",
+      "Freemood Promotion",
+      "Frontiers Music SRL",
+      "Hammondbeat",
+      "MelodicRock Records",
+      "NEH Records",
+      "Powerplay Magazine",
+      "Pyramide",
+      "Tanzan Music",
+      "Tanzan Music, Fastball Music",
+      "Underground Symphony",
+      "Warner Music Italia Srl"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ted Ross Quartet",
+    "mbid": "b1273cec-16d8-48d7-833c-05c7cd21c15f",
+    "listeners": 51633,
+    "playcount": 156594,
+    "listener_play_ratio": 3.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ted+Ross+Quartet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Felix McCoy Quartet",
+      "Tommie Blayne",
+      "Belmont Central",
+      "Billy Hicks Quartet",
+      "Derek Hines Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "On Green Avenue",
+        "listeners": 17417,
+        "playcount": 37829
+      },
+      {
+        "name": "A Final Cocktail",
+        "listeners": 12099,
+        "playcount": 27937
+      },
+      {
+        "name": "Socks And Sandals",
+        "listeners": 11936,
+        "playcount": 28425
+      },
+      {
+        "name": "I Should Care",
+        "listeners": 10021,
+        "playcount": 23226
+      },
+      {
+        "name": "As I Ponder",
+        "listeners": 8071,
+        "playcount": 16136
+      },
+      {
+        "name": "Tickets for Two Please",
+        "listeners": 5913,
+        "playcount": 10844
+      },
+      {
+        "name": "Late Nocturne",
+        "listeners": 3056,
+        "playcount": 6024
+      },
+      {
+        "name": "Indulge Me",
+        "listeners": 2649,
+        "playcount": 6022
+      },
+      {
+        "name": "Sculptors of the Past",
+        "listeners": 18,
+        "playcount": 22
+      },
+      {
+        "name": "Ava",
+        "listeners": 13,
+        "playcount": 66
+      }
+    ],
+    "url": "https://www.last.fm/music/Ted+Ross+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

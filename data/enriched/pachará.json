@@ -1,0 +1,185 @@
+{
+  "artist_name": "Pachará",
+  "artist_id": "pachará",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:19:49.553864+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Pachará', got 'Pachara'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1132391,
+    "name": "Los Pacharacos",
+    "profile": "Peruvian folk ensemble",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Julio Rosales",
+      "César Zárate",
+      "Berardo Hernández",
+      "Freddy Centty Tejada",
+      "Daniel Gonzales (4)",
+      "Modesto Pastor",
+      "Jaime Hito",
+      "Juan Falcón"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 56,
+    "digital_only_releases": 11,
+    "total_releases": 67,
+    "formats": [
+      "",
+      "2xLP, Album, Comp, Gat",
+      "2xLP, Comp, Gat",
+      "7\"",
+      "7\", EP",
+      "7\", EP, Mono",
+      "7\", EP, Single, Promo",
+      "7\", Mono",
+      "7\", Single",
+      "7\", Single, Mono",
+      "7\", Single, Mono, Promo",
+      "7\", Single, Promo",
+      "8xLP, Comp",
+      "CD",
+      "CD, Album, Comp",
+      "LP, Album",
+      "LP, Comp",
+      "LP, Comp, Mono",
+      "LP, Mono"
+    ],
+    "labels": [
+      "Dinsa",
+      "Discos Fuentes",
+      "Discos Heriba, Discos Heriba",
+      "Discos Sono Radio, Discos Sono Radio",
+      "Estrella Record",
+      "Ex Libris",
+      "Iempsa",
+      "Joda (2), Virrey",
+      "Melpro",
+      "Not On Label",
+      "Odeon Del Peru",
+      "Peerless (2)",
+      "Philips",
+      "Polydor",
+      "Rosita Producciones",
+      "Sono Radio",
+      "Virrey",
+      "Virrey, Virrey"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pachará",
+    "mbid": "",
+    "listeners": 5252,
+    "playcount": 20646,
+    "listener_play_ratio": 3.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pachar%C3%A1\">Read more on Last.fm</a>",
+    "tags": [
+      "latin",
+      "pop"
+    ],
+    "similar_artists": [
+      "Pau Sotomayor",
+      "OjosPielCanela",
+      "Luz Pinos",
+      "Vacación",
+      "Fideo y los del Mondo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Espiritual",
+        "listeners": 2777,
+        "playcount": 7272
+      },
+      {
+        "name": "Me Sale Bien",
+        "listeners": 1798,
+        "playcount": 5454
+      },
+      {
+        "name": "Cenizas y Miel",
+        "listeners": 1072,
+        "playcount": 2610
+      },
+      {
+        "name": "Tropical",
+        "listeners": 839,
+        "playcount": 2600
+      },
+      {
+        "name": "Tropical (feat. Ondina)",
+        "listeners": 740,
+        "playcount": 1478
+      },
+      {
+        "name": "Puerto E",
+        "listeners": 192,
+        "playcount": 459
+      },
+      {
+        "name": "Amanecí",
+        "listeners": 173,
+        "playcount": 321
+      },
+      {
+        "name": "El Escultor",
+        "listeners": 74,
+        "playcount": 168
+      },
+      {
+        "name": "Sal De Mar",
+        "listeners": 60,
+        "playcount": 160
+      },
+      {
+        "name": "Aromaplaya",
+        "listeners": 18,
+        "playcount": 68
+      }
+    ],
+    "url": "https://www.last.fm/music/Pachar%C3%A1"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

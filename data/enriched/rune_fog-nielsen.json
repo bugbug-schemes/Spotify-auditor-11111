@@ -1,0 +1,171 @@
+{
+  "artist_name": "Rune Fog-Nielsen",
+  "artist_id": "rune_fog-nielsen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:48:54.209260+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "cd3c5d81-47a5-4f6c-8ee0-f39216587c40",
+    "type": "Person",
+    "country": "DK",
+    "area": "Denmark",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/8287429"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 61471332,
+    "name": "Rune Fog-Nielsen",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/61471332",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f1055c0fefe0338755a88fbf1d4b3da3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anders Mogensen",
+      "Carl Winther"
+    ],
+    "contributor_roles": {
+      "Carl Winther": [
+        "Main"
+      ],
+      "Anders Mogensen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "You've Changed",
+      "Autumn In New York",
+      "A Portrait of Jennie",
+      "Blame it on my Youth"
+    ],
+    "track_durations": [
+      254,
+      273,
+      245,
+      264
+    ],
+    "track_ranks": [
+      86507,
+      55077,
+      41700,
+      21953
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Back2Bag - Traneing In Again (Live)",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "You've Changed",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Portrait of Jennie",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blame it on my Youth",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autumn In New York",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8287429,
+    "name": "Rune Fog Nielsen",
+    "profile": "Danish jazz bassist",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Catpack"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 0,
+    "total_releases": 4,
+    "formats": [
+      "CD, Album",
+      "CD, Comp"
+    ],
+    "labels": [
+      "After Beat Records",
+      "Storyville",
+      "Stunt Records",
+      "Stunt Records, Sundance (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": false,
+    "raw": null
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "lastfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

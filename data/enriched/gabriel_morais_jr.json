@@ -1,0 +1,224 @@
+{
+  "artist_name": "Gabriel Morais Jr",
+  "artist_id": "gabriel_morais_jr",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:46:49.807812+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f4b03461-1295-4515-9cb5-ab8effe215e5",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi hip hop",
+      "boom bap",
+      "hip hop",
+      "chillwave",
+      "lo-fi",
+      "instrumental hip hop",
+      "downtempo",
+      "instrumental"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/131484582",
+      "streaming": "https://tidal.com/artist/24636476",
+      "youtube music": "https://music.youtube.com/channel/UCVn0la78miETYcqn5UF69Gg"
+    },
+    "labels": [
+      "Duck Pond Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 131484582,
+    "name": "Gabriel Morais Jr",
+    "nb_fan": 23,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/131484582",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6f23287d91880e8c0230029f5f4ec922/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ayla Nova"
+    ],
+    "contributor_roles": {
+      "Ayla Nova": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Waves"
+    ],
+    "track_durations": [
+      151
+    ],
+    "track_ranks": [
+      282237
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Salva",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Isolée",
+        "label": "",
+        "release_date": "2024-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Olhos Verdes",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pós Sol",
+        "label": "",
+        "release_date": "2022-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ripple",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waves",
+        "label": "",
+        "release_date": "2021-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nuestra Luna",
+        "label": "",
+        "release_date": "2021-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gabriel Morais Jr",
+    "mbid": "f4b03461-1295-4515-9cb5-ab8effe215e5",
+    "listeners": 16543,
+    "playcount": 54318,
+    "listener_play_ratio": 3.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gabriel+Morais+Jr\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lak Host",
+      "Luca Tong",
+      "Miller Ford",
+      "Nyhuis",
+      "Reel Waves"
+    ],
+    "top_tracks": [
+      {
+        "name": "Waves",
+        "listeners": 15319,
+        "playcount": 50403
+      },
+      {
+        "name": "Pós Sol",
+        "listeners": 837,
+        "playcount": 1982
+      },
+      {
+        "name": "Salva",
+        "listeners": 577,
+        "playcount": 1250
+      },
+      {
+        "name": "Olhos Verdes",
+        "listeners": 325,
+        "playcount": 626
+      },
+      {
+        "name": "Ripple",
+        "listeners": 24,
+        "playcount": 30
+      },
+      {
+        "name": "Nuestra Luna",
+        "listeners": 12,
+        "playcount": 24
+      },
+      {
+        "name": "Ripple (feat. Damian Parker)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Jr : Waves",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Jr: Waves",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Gabriel+Morais+Jr"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

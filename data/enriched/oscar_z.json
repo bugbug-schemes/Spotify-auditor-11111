@@ -1,0 +1,138 @@
+{
+  "artist_name": "Oscar Z",
+  "artist_id": "oscar_z",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:17:19.441644+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Oscar Z', got 'Óscar Maydon'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6777736,
+    "name": "Oscar Z",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp, Promo"
+    ],
+    "labels": [
+      "Heavy Rock"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Oscar Z",
+    "mbid": "",
+    "listeners": 7226,
+    "playcount": 150906,
+    "listener_play_ratio": 20.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Oscar+Z\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Peyton Malloye",
+      "Isaac Trager",
+      "Robin Colt",
+      "Jordan Mitchell-Haines",
+      "Taylor S Brooks"
+    ],
+    "top_tracks": [
+      {
+        "name": "A-tisket, A-tasket",
+        "listeners": 3783,
+        "playcount": 52069
+      },
+      {
+        "name": "Moonbeam Melodies",
+        "listeners": 2966,
+        "playcount": 37130
+      },
+      {
+        "name": "Fathoms Below",
+        "listeners": 1949,
+        "playcount": 22808
+      },
+      {
+        "name": "Meet Me at the Moon",
+        "listeners": 1659,
+        "playcount": 14456
+      },
+      {
+        "name": "Down the Hill",
+        "listeners": 1419,
+        "playcount": 14331
+      },
+      {
+        "name": "My Favourite Lullaby",
+        "listeners": 519,
+        "playcount": 7236
+      },
+      {
+        "name": "My Sleepy Bear",
+        "listeners": 428,
+        "playcount": 2448
+      },
+      {
+        "name": "What a Day",
+        "listeners": 32,
+        "playcount": 55
+      },
+      {
+        "name": "Good Morning",
+        "listeners": 32,
+        "playcount": 51
+      },
+      {
+        "name": "Barefoot on Grass",
+        "listeners": 15,
+        "playcount": 20
+      }
+    ],
+    "url": "https://www.last.fm/music/Oscar+Z"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

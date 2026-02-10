@@ -1,0 +1,91 @@
+{
+  "artist_name": "Cory Andon",
+  "artist_id": "cory_andon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:14:32.047797+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Cory Andon', got 'Doryan Ben'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cory Andon",
+    "mbid": "",
+    "listeners": 3484,
+    "playcount": 69376,
+    "listener_play_ratio": 19.91,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cory+Andon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Peyton Malloye",
+      "Valérian Rose",
+      "Francis Luna",
+      "Taylor S Brooks",
+      "Oscar Z"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Garden Gnome",
+        "listeners": 2310,
+        "playcount": 29631
+      },
+      {
+        "name": "Embers Fade",
+        "listeners": 2043,
+        "playcount": 26381
+      },
+      {
+        "name": "The Hedgehog Serenade",
+        "listeners": 1500,
+        "playcount": 13363
+      },
+      {
+        "name": "Green Apple Trees",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Cory+Andon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

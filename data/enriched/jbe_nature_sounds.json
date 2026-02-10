@@ -1,0 +1,187 @@
+{
+  "artist_name": "JBE Nature Sounds",
+  "artist_id": "jbe_nature_sounds",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:19:13.024110+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 113970342,
+    "name": "JBE Nature Sounds",
+    "nb_fan": 11,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/113970342",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4771cc11cb6ace3f41cb2624b00442df/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6
+    },
+    "albums": [
+      {
+        "title": "Tranquil Raindrop Reflections: Binaural Meditation with Nature",
+        "label": "",
+        "release_date": "2023-08-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rain: Positive Zen Meditation Soundscapes Vol. 1",
+        "label": "",
+        "release_date": "2023-04-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Piano Rain: Dreamy Music for Restful Sleep Vol. 1",
+        "label": "",
+        "release_date": "2023-02-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Relaxing Essence of Piano Music Vol. 1",
+        "label": "",
+        "release_date": "2023-01-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Relaxation: Satisfying Rain Sound to Destress Vol. 1",
+        "label": "",
+        "release_date": "2023-01-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "2020 Best: Relaxing Frogs Noise and Deep Sleep",
+        "label": "",
+        "release_date": "2021-01-08",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "JBE Nature Sounds",
+    "mbid": "",
+    "listeners": 70275,
+    "playcount": 576871,
+    "listener_play_ratio": 8.21,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. This could be because of a deal within a streaming service, where the musician is anonymous, or the name is just one of several psuedonyms used by a music producer. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"https://www.la",
+    "tags": [
+      "relax",
+      "relaxing",
+      "nature sounds",
+      "calm",
+      "nature sound"
+    ],
+    "similar_artists": [
+      "Nano Sounds",
+      "KEI NATURE",
+      "Seas of Dreams",
+      "Streams & Mist",
+      "Ambrook Glacier"
+    ],
+    "top_tracks": [
+      {
+        "name": "Streaming Brook",
+        "listeners": 14596,
+        "playcount": 45487
+      },
+      {
+        "name": "Birds In The Woods",
+        "listeners": 13315,
+        "playcount": 47771
+      },
+      {
+        "name": "Cracks of Thunder And Rainstorm",
+        "listeners": 13030,
+        "playcount": 83445
+      },
+      {
+        "name": "Forest Rain",
+        "listeners": 12527,
+        "playcount": 50817
+      },
+      {
+        "name": "Morning Rain",
+        "listeners": 12187,
+        "playcount": 63439
+      },
+      {
+        "name": "Baltic Ocean Wave Sounds",
+        "listeners": 8281,
+        "playcount": 49237
+      },
+      {
+        "name": "Soothing Waves",
+        "listeners": 7935,
+        "playcount": 48291
+      },
+      {
+        "name": "Windy Night By The Ocean",
+        "listeners": 6683,
+        "playcount": 37119
+      },
+      {
+        "name": "Forest Birds",
+        "listeners": 6582,
+        "playcount": 24786
+      },
+      {
+        "name": "Rain Falling On Tree",
+        "listeners": 4861,
+        "playcount": 16130
+      }
+    ],
+    "url": "https://www.last.fm/music/JBE+Nature+Sounds"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

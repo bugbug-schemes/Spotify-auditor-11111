@@ -1,0 +1,140 @@
+{
+  "artist_name": "Max Moller",
+  "artist_id": "max_moller",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:35:34.878995+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Max Moller', got 'Max Möller'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 653585,
+    "name": "Max Möller",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Juice Leskinen & Coitus Int."
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 4,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xDVD-V, PAL",
+      "Box + 6xCD, Comp"
+    ],
+    "labels": [
+      "Hot One Musiikkijakelu",
+      "Love Records (4)",
+      "Megamania"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Max Moller",
+    "mbid": "",
+    "listeners": 16416,
+    "playcount": 70641,
+    "listener_play_ratio": 4.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Max+Moller\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Robi Dixie",
+      "Artivastix",
+      "Dronia",
+      "Amanda Wildt",
+      "Aveline Auclair"
+    ],
+    "top_tracks": [
+      {
+        "name": "Infinito",
+        "listeners": 10994,
+        "playcount": 51775
+      },
+      {
+        "name": "Calendulum",
+        "listeners": 4492,
+        "playcount": 14752
+      },
+      {
+        "name": "Interspheres",
+        "listeners": 780,
+        "playcount": 2383
+      },
+      {
+        "name": "Inner Watchfulness",
+        "listeners": 347,
+        "playcount": 1499
+      },
+      {
+        "name": "Mobius",
+        "listeners": 70,
+        "playcount": 221
+      },
+      {
+        "name": "Unfold",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Joy of Spring",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Glory",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Momentum",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Max+Moller"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

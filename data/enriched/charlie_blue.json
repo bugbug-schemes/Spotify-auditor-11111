@@ -1,0 +1,451 @@
+{
+  "artist_name": "Charlie Blue",
+  "artist_id": "charlie_blue",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:04:03.965815+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7080873,
+    "name": "Charlie Blue",
+    "nb_fan": 4,
+    "nb_album": 39,
+    "link": "https://www.deezer.com/artist/7080873",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ee657bcf86dfdca5d0eb5265ae0f112a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Aeme",
+      "Sr Pablo"
+    ],
+    "contributor_roles": {
+      "Sr Pablo": [
+        "Main"
+      ],
+      "Aeme": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Caña de Azúcar",
+      "Sea",
+      "Si Vivo Es Pa´ Querer"
+    ],
+    "track_durations": [
+      239,
+      141,
+      176
+    ],
+    "track_ranks": [
+      68601,
+      40234,
+      11641
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "single": 36
+    },
+    "albums": [
+      {
+        "title": "晨光",
+        "label": "",
+        "release_date": "2025-12-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "海风里的你",
+        "label": "",
+        "release_date": "2025-12-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "MM/DD/YYYY",
+        "label": "",
+        "release_date": "2024-03-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Gone",
+        "label": "",
+        "release_date": "2026-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "RISKY",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stars",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Face It",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chispa",
+        "label": "",
+        "release_date": "2026-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sky Fall",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You and I",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Más Allá",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love U",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si Vivo Es Pa´ Querer",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TE GUSTA",
+        "label": "",
+        "release_date": "2025-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Atmosphere",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TENDER",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CUIDA DE MI FE",
+        "label": "",
+        "release_date": "2025-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wind Breeze",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Error",
+        "label": "",
+        "release_date": "2025-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sea",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Five",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh Shit, Holmes",
+        "label": "",
+        "release_date": "2025-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Water",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Último Baile",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fog",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "United In Political Power",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "VOLANDO",
+        "label": "",
+        "release_date": "2025-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mind Do You Mind",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Neptunian",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calma",
+        "label": "",
+        "release_date": "2025-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 266139,
+    "name": "Charlie Feathers",
+    "profile": "American country and rockabilly singer/guitarist. A picture of him appears on the [a=Carl Perkins]' \"Blue Suede Shoes\" sheet music.\r\nb. June 12, 1932 (Holly Springs, MS, USA) - d. August 29, 1998 (Memphis, TN, USA)\r\nHusband of [a5750876]\r\nFather of [a951746] and [a2672665]. \r\nBrother of [a5672586]. ",
+    "realname": "Charles Arthur Feathers",
+    "social_urls": [
+      "http://en.wikipedia.org/wiki/Charlie_Feathers",
+      "https://sunrecords.com/artists/charlie-feathers/",
+      "https://www.pcuf.fi/~tapiov/discographies/charliefeathers.htm",
+      "http://countrydiscoghraphy2.blogspot.com/2017/09/charlie-feathers.html"
+    ],
+    "members": [],
+    "groups": [
+      "Charlie Feathers & The Musical Warriors"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 61,
+    "digital_only_releases": 39,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10\", Comp",
+      "10\", Comp, TP",
+      "10\", Ltd",
+      "13x7\", Comp, Ltd, Num, Box",
+      "2xCD, Comp",
+      "2xLP, Comp, Cle",
+      "7\", EP, Comp",
+      "7\", EP, Ltd, Bro",
+      "7\", EP, Mono, RE",
+      "7\", EP, RSD, Mono, RM",
+      "7\", Single",
+      "7\", Single, Gre",
+      "7\", Single, Ltd",
+      "7\", Single, Mono",
+      "7\", Single, RE",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, RM",
+      "Cass, Ltd",
+      "LP, Album",
+      "LP, Comp",
+      "LP, Comp, 180",
+      "LP, MiniAlbum"
+    ],
+    "labels": [
+      "Ace",
+      "Bear Family Records",
+      "Bullseye (2)",
+      "CJRO Records",
+      "Charly Records",
+      "Cowboy Carl Records",
+      "Crazy Fox Records",
+      "Double A (3)",
+      "Doxy",
+      "Eagle Records (8)",
+      "Edsel Records",
+      "El Toro Records",
+      "Feathers Records",
+      "Fogman Detroit, Remove Records",
+      "Hoodoo Records",
+      "Kamaric Music",
+      "King Records (19), King Records (19)",
+      "König",
+      "Multigroove Records (2)",
+      "New Rose Records",
+      "Norton Records (2)",
+      "Not On Label",
+      "Perfect (3)",
+      "Pompadour",
+      "Redneck",
+      "Renegade Records (14)",
+      "RockStar Records (2)",
+      "Sleazy Records",
+      "Southern Records (11)",
+      "Star Records (98)",
+      "SunJay",
+      "Vetco Records",
+      "Zu-Zazz Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Charlie Blue",
+    "mbid": "",
+    "listeners": 6409,
+    "playcount": 12922,
+    "listener_play_ratio": 2.02,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Charlie+Blue\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Foster Zeta",
+      "Temporal Drift",
+      "Lost storys",
+      "Evolutio Cosmica",
+      "novi quiet"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sea",
+        "listeners": 5561,
+        "playcount": 10750
+      },
+      {
+        "name": "Five",
+        "listeners": 1082,
+        "playcount": 1769
+      },
+      {
+        "name": "Snow",
+        "listeners": 28,
+        "playcount": 82
+      },
+      {
+        "name": "the haikyuu dub is a work of art",
+        "listeners": 19,
+        "playcount": 28
+      },
+      {
+        "name": "I'm Gonna Kill That Hen",
+        "listeners": 12,
+        "playcount": 16
+      },
+      {
+        "name": "Temptation",
+        "listeners": 8,
+        "playcount": 24
+      },
+      {
+        "name": "Leave Me Now",
+        "listeners": 5,
+        "playcount": 11
+      },
+      {
+        "name": "kageyama making the hq dub better for three and a half minutes",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Eyesore",
+        "listeners": 3,
+        "playcount": 41
+      },
+      {
+        "name": "Billete de Ida",
+        "listeners": 3,
+        "playcount": 18
+      }
+    ],
+    "url": "https://www.last.fm/music/Charlie+Blue"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

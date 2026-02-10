@@ -1,0 +1,137 @@
+{
+  "artist_name": "Solmer",
+  "artist_id": "solmer",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:10:57.541393+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5b3c52fe-4b31-496f-b815-1c1629ffaaf1",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Solmer', got 'Slayer'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6038588,
+    "name": "António Solmer",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "7\", EP"
+    ],
+    "labels": [
+      "Alvorada"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Solmer",
+    "mbid": "",
+    "listeners": 3820,
+    "playcount": 22923,
+    "listener_play_ratio": 6.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Solmer\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Broadsand",
+      "Eric Fields",
+      "Watertowers",
+      "Sollay",
+      "Waveseekers"
+    ],
+    "top_tracks": [
+      {
+        "name": "Focus Waves",
+        "listeners": 2075,
+        "playcount": 7019
+      },
+      {
+        "name": "Waves in Montauk",
+        "listeners": 1340,
+        "playcount": 5666
+      },
+      {
+        "name": "Calming Pacific Waves",
+        "listeners": 1192,
+        "playcount": 4722
+      },
+      {
+        "name": "Birds at the River Mouth",
+        "listeners": 1051,
+        "playcount": 2356
+      },
+      {
+        "name": "Waves in Westhampton Beach",
+        "listeners": 403,
+        "playcount": 1855
+      },
+      {
+        "name": "Waves in Capbreton",
+        "listeners": 261,
+        "playcount": 802
+      },
+      {
+        "name": "Peaceful Ocean Waves",
+        "listeners": 204,
+        "playcount": 503
+      }
+    ],
+    "url": "https://www.last.fm/music/Solmer"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

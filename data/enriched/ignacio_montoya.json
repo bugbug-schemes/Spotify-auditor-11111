@@ -1,0 +1,186 @@
+{
+  "artist_name": "Ignacio Montoya",
+  "artist_id": "ignacio_montoya",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:13:43.540118+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d5d84ef1-e8f1-47c3-af75-405cfaee9692",
+    "type": "Person",
+    "country": "",
+    "area": "Olavarría",
+    "begin_date": "1978",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "official homepage": "http://ignaciomontoyacarlotto.com/",
+      "social network": "https://www.instagram.com/ignaciomontoyacarlotto/"
+    },
+    "labels": [
+      "RGS Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 239210441,
+    "name": "Ignacio Montoya",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/239210441",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8d6755a41017f2652c678339b578b27d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Ducklings’ Bedtime",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Selune",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "White Christmas",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Time is Here",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Christmas",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleigh Ride",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Horizonte",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soledad",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11787005,
+    "name": "Ignacio Montoya Carlotto",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Collectif ¿Por Qué No?"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ignacio Montoya",
+    "mbid": "",
+    "listeners": 1258,
+    "playcount": 2751,
+    "listener_play_ratio": 2.19,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ignacio+Montoya\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kaspar Riedenthal",
+      "Mont Eval",
+      "Michael Donnahue",
+      "Naskal",
+      "Adrian Solen"
+    ],
+    "top_tracks": [
+      {
+        "name": "Selune",
+        "listeners": 1258,
+        "playcount": 2751
+      }
+    ],
+    "url": "https://www.last.fm/music/Ignacio+Montoya"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

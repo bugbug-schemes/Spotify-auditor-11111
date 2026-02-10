@@ -1,0 +1,542 @@
+{
+  "artist_name": "T.Check",
+  "artist_id": "t_check",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:22:43.454081+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "89647675-ea8f-4083-a951-157d291dbee6",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "lo-fi",
+      "hip hop",
+      "boom bap",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental"
+    ],
+    "aliases": [
+      "Timur Saed-Shakh"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/11487736",
+      "official homepage": "https://musicvine.com/browse/artist/t-check",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/t-check/3215064",
+      "social network": "https://www.instagram.com/timcheck/",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/t-check/3215064",
+      "youtube music": "https://music.youtube.com/channel/UCVU3Ja4lpNXP3fniEqN7cFQ"
+    },
+    "labels": [
+      "Chillhop Music",
+      "urbanundergrounds",
+      "Vinyl Digital",
+      "Oiyo Records",
+      "Hip Dozer",
+      "Mutombo Records",
+      "Inner Ocean Records",
+      "Luft Recordings",
+      "Lofi Chill Records",
+      "Lofi Jazz Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11487736,
+    "name": "T.Check",
+    "nb_fan": 56,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/11487736",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/de63c8f32bfaaf5c063abb9267f64fad/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      ".Eehou",
+      "Jam'addict",
+      "JazzyHan",
+      "Kofi Anonymous",
+      "Lowkey",
+      "Screen Jazzmaster",
+      "Zmeyev"
+    ],
+    "contributor_roles": {
+      "Zmeyev": [
+        "Main"
+      ],
+      "Kofi Anonymous": [
+        "Main"
+      ],
+      "Screen Jazzmaster": [
+        "Main"
+      ],
+      ".Eehou": [
+        "Main"
+      ],
+      "Jam'addict": [
+        "Main"
+      ],
+      "Lowkey": [
+        "Main"
+      ],
+      "JazzyHan": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "dopeness miles",
+      "Malleable",
+      "Garden Trees",
+      "Folded Daylight",
+      "Lush",
+      "Evening Pages",
+      "crossroads",
+      "Fav Kicks",
+      "Lifted Life",
+      "The Realest",
+      "One Step Higher",
+      "Universal Unreal",
+      "Moon Shades",
+      "Smiling Through",
+      "Make Sense",
+      "Precious Gift",
+      "Likewise",
+      "Osomi",
+      "Pali Island",
+      "Garland",
+      "Orbit",
+      "Hidden Shore",
+      "schweppes",
+      "Ocean Breath",
+      "Smoothie"
+    ],
+    "track_durations": [
+      137,
+      124,
+      132,
+      96,
+      149,
+      105,
+      130,
+      125,
+      107,
+      125,
+      121,
+      146,
+      120,
+      98,
+      118,
+      111,
+      120,
+      109,
+      129,
+      104,
+      104,
+      114,
+      115,
+      105,
+      121
+    ],
+    "track_ranks": [
+      106808,
+      144225,
+      96905,
+      58654,
+      64167,
+      100000,
+      97908,
+      870,
+      63330,
+      163063,
+      26486,
+      80506,
+      36133,
+      38157,
+      31002,
+      50593,
+      30833,
+      30856,
+      25154,
+      22483,
+      35354,
+      38986,
+      31720,
+      18708,
+      26155
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 6,
+      "single": 92
+    },
+    "albums": [
+      {
+        "title": "Питер-Москва",
+        "label": "",
+        "release_date": "2022-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solstice Quest",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "shiva",
+        "label": "",
+        "release_date": "2023-08-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "parallel world",
+        "label": "",
+        "release_date": "2023-05-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "late night train",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "dude etude",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "there was something",
+        "label": "",
+        "release_date": "2022-11-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "sunset colours",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Evening Pages",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lifted Life",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smiling Through",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On Point",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlit Alley",
+        "label": "",
+        "release_date": "2026-01-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden Shore",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Ease",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Between Lines",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "inner tide",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sparkling Snowflakes",
+        "label": "",
+        "release_date": "2025-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Caipirinha",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "schweppes",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slam Dunk",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Choplin",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Folded Daylight",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Divers",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sonder",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Likewise",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ring A Bell",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fav Kicks",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "duende",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cakewalk",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lvnt",
+      "Screen Jazzmaster",
+      "Shierro",
+      "CMJ",
+      "BƱBBLE",
+      "milligon",
+      "Brxvs",
+      "Yestalgia",
+      "Mindeliq",
+      "Ødyssee"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9007372,
+    "name": "T.Check",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 5,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "13xFile, AAC, Album, 196",
+      "13xFile, MP3, Album",
+      "CD, Album",
+      "CDr, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "Gazgolder Records",
+      "Lo-Factory",
+      "Not On Label",
+      "Not On Label (ОдноНо Self-released)",
+      "Союз"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "T.Check",
+    "mbid": "89647675-ea8f-4083-a951-157d291dbee6",
+    "listeners": 99545,
+    "playcount": 390246,
+    "listener_play_ratio": 3.92,
+    "bio_exists": true,
+    "bio_summary": "T. Check — музыкант, мс, sound producer.\nЕго треки проникнуты солнечной энергией soul музыки и гуманизмом восточной философии. Творчество Чека выходит за рамки «позитивной музыки» — в них чувствуется мощный урбанистический бит, современное продюсирование, изящная и осмысленная поэтичность. <a href=\"https://www.last.fm/music/T.Check\">Read more on Last.fm</a>",
+    "tags": [
+      "rap",
+      "Hip-Hop"
+    ],
+    "similar_artists": [
+      "Kubi",
+      "Burrito Brown",
+      "gknister",
+      "Loufish",
+      "JOSA"
+    ],
+    "top_tracks": [
+      {
+        "name": "juicy fruit",
+        "listeners": 30324,
+        "playcount": 66132
+      },
+      {
+        "name": "Precious Gift",
+        "listeners": 19626,
+        "playcount": 44318
+      },
+      {
+        "name": "flame fluids",
+        "listeners": 13918,
+        "playcount": 26814
+      },
+      {
+        "name": "late night train",
+        "listeners": 11705,
+        "playcount": 23205
+      },
+      {
+        "name": "dopeness miles",
+        "listeners": 11250,
+        "playcount": 20227
+      },
+      {
+        "name": "forest gump",
+        "listeners": 6767,
+        "playcount": 12671
+      },
+      {
+        "name": "saffron flowers",
+        "listeners": 6564,
+        "playcount": 11909
+      },
+      {
+        "name": "peace on earth",
+        "listeners": 5948,
+        "playcount": 10556
+      },
+      {
+        "name": "first kiss",
+        "listeners": 5209,
+        "playcount": 9683
+      },
+      {
+        "name": "Charm Shades",
+        "listeners": 4842,
+        "playcount": 13524
+      }
+    ],
+    "url": "https://www.last.fm/music/T.Check"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,169 @@
+{
+  "artist_name": "Josephine August",
+  "artist_id": "josephine_august",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:37:50.744715+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 158935452,
+    "name": "Josephine August",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/158935452",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Ruby Tuesday",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Supernova",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2745668,
+    "name": "Josephine (14)",
+    "profile": "Josephine found something to say and a way to say it. Lithium Records picked on this in 2000, and things happened - records were released, radio stations played them, television programmes showed them, magazines and newspapers wrote about them. Radio 1 voted them Session of the Year 2001. Jockrock voted them Best Newcomers 2002. T in the Park was 2004, Best of T Break next. Then in 2005 they met Bracken Records, and got married. It was a big step, but things are harmonious. The first offspring is expected August 22nd 2005. Things look happening.",
+    "realname": "Keith Gerrard, Roz Davies, Ian Mutch & Derek Butters",
+    "social_urls": [
+      "http://www.myspace.com/josephineglasgow"
+    ],
+    "members": [
+      "Roz Davies",
+      "Derek Butters",
+      "Iain Mutch",
+      "Keith Gerrard"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 1,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "10\", EP, Ltd, Num",
+      "4xCD, Comp",
+      "7\", Ltd, Num",
+      "7\", Single, Ltd, Num",
+      "CD, Album",
+      "CD, Comp, Promo",
+      "CDr, Comp"
+    ],
+    "labels": [
+      "Big Issue",
+      "Is This Music?",
+      "Joe's Grille",
+      "Lithium Records (4)",
+      "Music Week",
+      "Spunk"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Josephine August",
+    "mbid": "",
+    "listeners": 1251,
+    "playcount": 9880,
+    "listener_play_ratio": 7.9,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Josephine+August\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Elowen Moon",
+      "Victor Arvelin",
+      "Malik Mulk",
+      "Elis Natt",
+      "Nathalie Mernot"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pillow Planet",
+        "listeners": 995,
+        "playcount": 8366
+      },
+      {
+        "name": "Goodnight, Little Bear",
+        "listeners": 389,
+        "playcount": 1394
+      },
+      {
+        "name": "Supernova",
+        "listeners": 10,
+        "playcount": 23
+      },
+      {
+        "name": "Spooky",
+        "listeners": 6,
+        "playcount": 48
+      },
+      {
+        "name": "MushRun",
+        "listeners": 4,
+        "playcount": 39
+      },
+      {
+        "name": "Cussy",
+        "listeners": 2,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Josephine+August"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

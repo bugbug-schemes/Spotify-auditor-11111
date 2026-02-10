@@ -1,0 +1,609 @@
+{
+  "artist_name": "FKJ",
+  "artist_id": "fkj",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:33:48.371242+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8ef74994-73f6-459c-a10c-56a16e07b362",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "1991-03-27",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "neo-soul"
+    ],
+    "aliases": [
+      "Vincent Fenton",
+      "French Kiwi Juice"
+    ],
+    "isnis": [
+      "0000000463195394"
+    ],
+    "ipis": [
+      "00721979516"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003338239",
+      "bandcamp": "https://frenchkiwijuice.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/3554229",
+      "free streaming": "https://www.deezer.com/artist/4738512",
+      "image": "https://commons.wikimedia.org/wiki/File:Fkj_presspic.jpg",
+      "IMDb": "https://www.imdb.com/name/nm12586631/",
+      "last.fm": "https://www.last.fm/music/FKJ",
+      "lyrics": "https://genius.com/artists/French-kiwi-juice",
+      "official homepage": "https://frenchkiwijuice.com/",
+      "other databases": "http://www.maniadb.com/artist/434509",
+      "purchase for download": "https://itunes.apple.com/us/artist/id644688726",
+      "social network": "https://www.instagram.com/frenchkiwijuice/",
+      "songkick": "https://www.songkick.com/artists/6310939",
+      "soundcloud": "https://soundcloud.com/fkj-2",
+      "streaming": "https://tidal.com/artist/4989012",
+      "VIAF": "http://viaf.org/viaf/50167863640922740621",
+      "wikidata": "https://www.wikidata.org/wiki/Q30457256",
+      "youtube": "https://www.youtube.com/channel/UCxqkOxQYocXRtSqlotgXh7w"
+    },
+    "labels": [
+      "Roche Musique",
+      "EQT Recordings, LLC",
+      "[no label]",
+      "Universal Music Korea",
+      "AWAL Recordings Ltd",
+      "COLORSxSTUDIOS",
+      "The Sundrop Garden",
+      "Mom+Pop",
+      "Columbia"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4738512,
+    "name": "FKJ",
+    "nb_fan": 151258,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/4738512",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b7a107212355a38217df243bea601305/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "((( O )))",
+      "Bas",
+      "COLORS",
+      "JENNIE",
+      "Jordan Rakei",
+      "Masego",
+      "Santana",
+      "Tom Misch"
+    ],
+    "contributor_roles": {
+      "Masego": [
+        "Main"
+      ],
+      "((( O )))": [
+        "Main"
+      ],
+      "Bas": [
+        "Main"
+      ],
+      "Santana": [
+        "Main"
+      ],
+      "JENNIE": [
+        "Main"
+      ],
+      "Tom Misch": [
+        "Main"
+      ],
+      "Jordan Rakei": [
+        "Featured"
+      ],
+      "COLORS": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Tadow (feat. FKJ)",
+      "Ylang Ylang",
+      "Vibin' Out",
+      "Risk",
+      "Greener",
+      "Intro : JANE with FKJ",
+      "Way Out",
+      "Losing My Way",
+      "Tadow (Edit)",
+      "Skyline",
+      "Leave My Home",
+      "Omw",
+      "Instant Need",
+      "Why Are There Boundaries",
+      "Us",
+      "Learn to Fly",
+      "Lying Together",
+      "Us - A COLORS SHOW",
+      "10 Years Ago",
+      "iFeel",
+      "The Mission",
+      "Last Hour (Just Piano Version)",
+      "Anthem (Just Piano Version)",
+      "Better Give U Up",
+      "Cashew (Just Piano Version)"
+    ],
+    "track_durations": [
+      301,
+      213,
+      311,
+      240,
+      234,
+      98,
+      200,
+      259,
+      214,
+      249,
+      222,
+      238,
+      270,
+      182,
+      236,
+      268,
+      268,
+      373,
+      200,
+      269,
+      193,
+      162,
+      156,
+      256,
+      140
+    ],
+    "track_ranks": [
+      725064,
+      280854,
+      496321,
+      378239,
+      193628,
+      539401,
+      102593,
+      533970,
+      491165,
+      449455,
+      113373,
+      460123,
+      475322,
+      511414,
+      119982,
+      348637,
+      558617,
+      496647,
+      168919,
+      443417,
+      94790,
+      155953,
+      161504,
+      438845,
+      137995
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 4,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "22_23 Live Sessions",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "V I N C E N T",
+        "label": "",
+        "release_date": "2022-06-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "French Kiwi Juice",
+        "label": "",
+        "release_date": "2017-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Just Piano",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ylang Ylang EP",
+        "label": "",
+        "release_date": "2019-11-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Take Off",
+        "label": "",
+        "release_date": "2014-07-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Time for a Change",
+        "label": "",
+        "release_date": "2013-07-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Moments",
+        "label": "",
+        "release_date": "2025-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lying Together (Live from Coachella)",
+        "label": "",
+        "release_date": "2024-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paris Special (Live from Le Zénith)",
+        "label": "",
+        "release_date": "2024-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Us - A COLORS SHOW",
+        "label": "",
+        "release_date": "2022-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let's Live",
+        "label": "",
+        "release_date": "2022-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Moment Of Mystery (feat. Toro y Moi)",
+        "label": "",
+        "release_date": "2022-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Way Out",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Greener",
+        "label": "",
+        "release_date": "2022-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "iFeel",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tadow",
+        "label": "",
+        "release_date": "2020-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Risk (Galimatias Version)",
+        "label": "",
+        "release_date": "2020-05-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Risk",
+        "label": "",
+        "release_date": "2019-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing My Way",
+        "label": "",
+        "release_date": "2019-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perfect Timing",
+        "label": "",
+        "release_date": "2019-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Leave My Home",
+        "label": "",
+        "release_date": "2019-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Is Magic Gone",
+        "label": "",
+        "release_date": "2018-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TUI",
+        "label": "",
+        "release_date": "2018-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Why Are There Boundaries",
+        "label": "",
+        "release_date": "2017-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skyline",
+        "label": "",
+        "release_date": "2017-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Go Back Home",
+        "label": "",
+        "release_date": "2017-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better Give U Up - Single",
+        "label": "",
+        "release_date": "2015-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ô",
+        "label": "",
+        "release_date": "2015-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lying Together",
+        "label": "",
+        "release_date": "2014-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Tom Misch",
+      "Duñe",
+      "((( O )))",
+      "53 Thieves",
+      "Tora",
+      "Two Another",
+      "Jordan Rakei",
+      "Winston Surfshirt",
+      "June Marieezy",
+      "Noah Slee"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3554229,
+    "name": "FKJ (French Kiwi Juice)",
+    "profile": "French DJ/producer, also known as French Kiwi Juice.",
+    "realname": "Vincent Fenton",
+    "social_urls": [
+      "https://soundcloud.com/fkj-2",
+      "https://www.facebook.com/frenchkiwijuice/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 27,
+    "digital_only_releases": 39,
+    "total_releases": 66,
+    "formats": [
+      "",
+      "12\", Single",
+      "12xFile, FLAC, Album",
+      "12xFile, MP3, Mixtape, 192",
+      "2x12\", Comp, Ltd",
+      "2xCD, Comp",
+      "2xCD, Comp, Dig",
+      "2xCD, Comp, Mixed",
+      "2xCD, Comp, Promo",
+      "2xFile, MP3, Single, 320",
+      "3xCD, Comp",
+      "40xFile, MP3, Comp, VBR",
+      "4xFile, MP3, 320",
+      "7\", EP, Ltd",
+      "8xFile, AAC, 320",
+      "9xFile, MP3, WAV, EP",
+      "CD",
+      "CD, Album, Unofficial",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, Mixed",
+      "CD, Comp, Mixed, Promo",
+      "CD, Comp, Promo",
+      "CD, EP, Promo",
+      "CD, Ltd, Mixed, Promo",
+      "CD, Mixed, Mixtape, Promo",
+      "CDr, Comp",
+      "CDr, Mixtape",
+      "EP",
+      "File, FLAC, Single",
+      "File, MP3, Mixed, 192",
+      "File, MP3, Mixed, 320",
+      "LP, Album",
+      "LP, Comp"
+    ],
+    "labels": [
+      "11154",
+      "AEI Music",
+      "AWAL Recordings Ltd, AWAL Recordings Ltd",
+      "Because Music",
+      "Columbia",
+      "DMC, DMC",
+      "Dekmantel",
+      "Discogs",
+      "Mom + Pop",
+      "Moneymaker (2)",
+      "Ninja Tune",
+      "Not On Label",
+      "Not On Label (DJ Kuroneko (2) Self-released)",
+      "Nova Records",
+      "Rambling Records",
+      "Roche Musique",
+      "Sony Music France",
+      "Tarifa Records",
+      "Terres Du Son",
+      "The Sundrop Garden",
+      "TheSoundYouNeed",
+      "Tornado Records (15)",
+      "Universal Music Enterprises",
+      "Wagram Music",
+      "ZAP Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "FKJ",
+    "mbid": "8ef74994-73f6-459c-a10c-56a16e07b362",
+    "listeners": 811824,
+    "playcount": 14589669,
+    "listener_play_ratio": 17.97,
+    "bio_exists": true,
+    "bio_summary": "French Kiwi Juice, or FKJ for short, is the moniker of Vincent Fenton, a nod to his Gallic mother and New Zealander father. He grew up in a small French village outside of Tours, isolated from his friends, and so he turned to music for company. He got hooked on his parents’ records by Pink Floyd, Billie Holliday, Nina Simone and Queen, and took up guitar; then, aged seven, the saxophone. “I would play with whatever toys were around, and that helped develop my imagination <a href=\"https://www.las",
+    "tags": [
+      "electronic",
+      "funk",
+      "downtempo",
+      "nu jazz",
+      "indie"
+    ],
+    "similar_artists": [
+      "FKJ, ((( O )))",
+      "Leisure",
+      "Alina Baraz & Galimatias",
+      "Franc Moody",
+      "Jungle"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ylang Ylang",
+        "listeners": 325946,
+        "playcount": 2800358
+      },
+      {
+        "name": "Risk",
+        "listeners": 148907,
+        "playcount": 1107037
+      },
+      {
+        "name": "Vibin' Out",
+        "listeners": 142950,
+        "playcount": 937939
+      },
+      {
+        "name": "Better Give U Up",
+        "listeners": 140676,
+        "playcount": 710062
+      },
+      {
+        "name": "Why Are There Boundaries",
+        "listeners": 117608,
+        "playcount": 486849
+      },
+      {
+        "name": "Skyline",
+        "listeners": 92442,
+        "playcount": 474114
+      },
+      {
+        "name": "Instant Need",
+        "listeners": 81622,
+        "playcount": 360691
+      },
+      {
+        "name": "Lying Together",
+        "listeners": 78646,
+        "playcount": 415223
+      },
+      {
+        "name": "Losing My Way",
+        "listeners": 75316,
+        "playcount": 409662
+      },
+      {
+        "name": "Go Back Home",
+        "listeners": 74565,
+        "playcount": 377429
+      }
+    ],
+    "url": "https://www.last.fm/music/FKJ"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

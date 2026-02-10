@@ -1,0 +1,171 @@
+{
+  "artist_name": "Deszcz",
+  "artist_id": "deszcz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:27:41.634637+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2c44ac3c-e32f-40f7-90ec-f503ea1a1cac",
+    "type": "Group",
+    "country": "",
+    "area": "Poznań",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://deszcz.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/4276168",
+      "social network": "https://www.instagram.com/deszczpunx/"
+    },
+    "labels": [
+      "Left Hand Sounds",
+      "Studio Riot"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Deszcz', got 'Rezz'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4276168,
+    "name": "Deszcz",
+    "profile": "Neocrust/hardcore punk band from Poznań, Poland.",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/deszczpunx",
+      "https://deszcz.bandcamp.com",
+      "https://www.youtube.com/channel/UCGMoXWrDQFiuOqwgtCEQCvg",
+      "https://open.spotify.com/artist/1b7x6WZ85NjzbbwGqlBaTk?si=Hog8SJwfQQ6L7A0PUPvH6g"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 4,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "31xFile, MP3, Album, Comp"
+    ],
+    "labels": [
+      "Brutal Basarabia"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Deszcz",
+    "mbid": "2c44ac3c-e32f-40f7-90ec-f503ea1a1cac",
+    "listeners": 67254,
+    "playcount": 549473,
+    "listener_play_ratio": 8.17,
+    "bio_exists": true,
+    "bio_summary": "Three piece band founded in 2013 in Poznań, Poland. Playing blend of neocrust, hardcore and metal with depressive and pissed attitude. Deszcz bet on melodic guitars, explosive drums, fast tempo and two vocals loaded with emotions. Members: Jakub (vox/guitar)\nWojtek (vox/bass)\nMichał (drums) <a href=\"https://www.last.fm/music/Deszcz\">Read more on Last.fm</a>",
+    "tags": [
+      "neocrust",
+      "Crust",
+      "dark hardcore",
+      "hardcore",
+      "polish"
+    ],
+    "similar_artists": [
+      "Alpinist",
+      "From Ashes Rise",
+      "Ictus",
+      "Fall of Efrafa",
+      "Rats in Paradise"
+    ],
+    "top_tracks": [
+      {
+        "name": "Spring Rain",
+        "listeners": 50829,
+        "playcount": 401977
+      },
+      {
+        "name": "Gentle Rain",
+        "listeners": 13637,
+        "playcount": 46495
+      },
+      {
+        "name": "Afterlife",
+        "listeners": 2519,
+        "playcount": 13476
+      },
+      {
+        "name": "No Sense",
+        "listeners": 2501,
+        "playcount": 12199
+      },
+      {
+        "name": "Storm Is Coming",
+        "listeners": 1930,
+        "playcount": 9079
+      },
+      {
+        "name": "False Promises",
+        "listeners": 1812,
+        "playcount": 9245
+      },
+      {
+        "name": "The Grey",
+        "listeners": 1788,
+        "playcount": 9142
+      },
+      {
+        "name": "Unwanted",
+        "listeners": 1681,
+        "playcount": 8923
+      },
+      {
+        "name": "Fall",
+        "listeners": 1486,
+        "playcount": 6912
+      },
+      {
+        "name": "Black Eyes",
+        "listeners": 1228,
+        "playcount": 5564
+      }
+    ],
+    "url": "https://www.last.fm/music/Deszcz"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,146 @@
+{
+  "artist_name": "Elijah Reeves",
+  "artist_id": "elijah_reeves",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:36:23.070631+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 126690332,
+    "name": "Elijah Reeves",
+    "nb_fan": 5,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/126690332",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/93247616e96520e74bd559fe933ce955/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Feuille",
+      "Somewhere"
+    ],
+    "track_durations": [
+      153,
+      185
+    ],
+    "track_ranks": [
+      20425,
+      101979
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Nuages",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feuille",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somewhere",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Dew",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elijah Reeves",
+    "mbid": "",
+    "listeners": 37153,
+    "playcount": 121308,
+    "listener_play_ratio": 3.27,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elijah+Reeves\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Chad Hammond",
+      "Junie Oakes",
+      "Frederico Morales",
+      "Wendie Solomon",
+      "Ryley Moss"
+    ],
+    "top_tracks": [
+      {
+        "name": "Somewhere",
+        "listeners": 34043,
+        "playcount": 111950
+      },
+      {
+        "name": "Feuille",
+        "listeners": 3892,
+        "playcount": 9189
+      },
+      {
+        "name": "Morning Dew",
+        "listeners": 63,
+        "playcount": 161
+      },
+      {
+        "name": "Nuages",
+        "listeners": 5,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/Elijah+Reeves"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

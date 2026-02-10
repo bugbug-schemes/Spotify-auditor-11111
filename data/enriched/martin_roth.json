@@ -1,0 +1,616 @@
+{
+  "artist_name": "Martin Roth",
+  "artist_id": "martin_roth",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:31:19.622022+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ed94ddc6-17ea-4886-8dfc-0476811838af",
+    "type": "Person",
+    "country": "",
+    "area": "Berlin",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://martinroth.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/102781",
+      "free streaming": "https://www.deezer.com/artist/471121",
+      "myspace": "https://myspace.com/martinroth",
+      "official homepage": "https://www.martinroth.net/",
+      "purchase for download": "https://www.beatport.com/artist/martin-roth/13732",
+      "social network": "https://www.instagram.com/djmartinroth/",
+      "soundcloud": "https://soundcloud.com/djmartinroth",
+      "streaming": "https://tidal.com/artist/4039510",
+      "youtube": "https://www.youtube.com/channel/UClFSZy3PHiwsXY7acXavuaA"
+    },
+    "labels": [
+      "lunatique music",
+      "Lunatique Records",
+      "Reflections",
+      "Club Tunes",
+      "Vandit Records",
+      "Soundcolours",
+      "Sirup",
+      "Gang Go Music",
+      "Anjunadeep"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 471121,
+    "name": "Martin Roth",
+    "nb_fan": 3270,
+    "nb_album": 49,
+    "link": "https://www.deezer.com/artist/471121",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5378702921242d4da3627e8231ec7ac7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Eco",
+      "Trilucid"
+    ],
+    "contributor_roles": {
+      "Eco": [
+        "Main"
+      ],
+      "Trilucid": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Beautiful Life",
+      "An Analog Guy in a Digital World",
+      "Love Theme",
+      "An Analog Guy in a Digital World",
+      "Late Night in Paris",
+      "Just Sine Waves",
+      "Aquatic Ambience",
+      "Tonight Is Forever (Martin Roth Edit)",
+      "Organic Cold Brewed Hipster Funk",
+      "Shockwaves (Summer's Here Mix)",
+      "Teenage Dreams",
+      "Escape",
+      "Synth City",
+      "Freudentränen",
+      "Make Love To Me Baby (Original Mix)",
+      "Beautiful Life (Mixed)",
+      "Waves",
+      "Be All Yours (Mixed)",
+      "Adagio for Strings",
+      "Keep It Movin'",
+      "Time Is the Music Planets Make",
+      "Mel (Original Mix)",
+      "Empty Streets",
+      "Liminal",
+      "Endless Moment (Martin Roth Remix)"
+    ],
+    "track_durations": [
+      494,
+      534,
+      243,
+      527,
+      304,
+      166,
+      127,
+      497,
+      235,
+      377,
+      208,
+      314,
+      217,
+      82,
+      572,
+      362,
+      320,
+      280,
+      592,
+      210,
+      411,
+      450,
+      590,
+      160,
+      414
+    ],
+    "track_ranks": [
+      67445,
+      298307,
+      220414,
+      417666,
+      294996,
+      445120,
+      308863,
+      32712,
+      130115,
+      22042,
+      137045,
+      310268,
+      149628,
+      65518,
+      275834,
+      179089,
+      227475,
+      146925,
+      223248,
+      589105,
+      219904,
+      171087,
+      215811,
+      154524,
+      76485
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 15,
+      "ep": 6,
+      "single": 28
+    },
+    "albums": [
+      {
+        "title": "25 Years Of Anjuna Mixed By Martin Roth",
+        "label": "",
+        "release_date": "2025-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Raff: Die Eifersüchtigen, WoO 54",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Synth City",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mono No Aware",
+        "label": "",
+        "release_date": "2022-09-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "An Analog Guy in a Digital World",
+        "label": "",
+        "release_date": "2020-09-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Die Schöpfung (Konzertaufnahme Singschule Chur)",
+        "label": "",
+        "release_date": "2019-10-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Perspectives Best of 2018",
+        "label": "",
+        "release_date": "2018-12-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Progressive Collection, Vol. 10",
+        "label": "",
+        "release_date": "2018-05-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Perspectives Best of 2017",
+        "label": "",
+        "release_date": "2017-12-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "6 Years Sound Avenue",
+        "label": "",
+        "release_date": "2017-07-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mel / Maya",
+        "label": "",
+        "release_date": "2014-09-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "KooKoo",
+        "label": "",
+        "release_date": "2010-10-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Inhouse Vol. 1 - Finest House Flavour",
+        "label": "",
+        "release_date": "2008-10-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wooden Tunes 2008",
+        "label": "",
+        "release_date": "2008-09-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beach Tunes 2008",
+        "label": "",
+        "release_date": "2008-07-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "La Luna - EP",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Moving On EP",
+        "label": "",
+        "release_date": "2025-05-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Anjunadeep 11: Sampler Part 2",
+        "label": "",
+        "release_date": "2020-02-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Organic Cold Brewed Hipster Funk EP",
+        "label": "",
+        "release_date": "2019-08-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hypno Seq EP",
+        "label": "",
+        "release_date": "2018-02-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Less = More EP",
+        "label": "",
+        "release_date": "2014-02-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Aquatic Ambience",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drifture",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ID Drops",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adagio for Strings",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Came and Changed the Weather",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waves",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Plage",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Liminal",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Less",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Christian Löffler",
+      "Jon Hopkins",
+      "Max Cooper",
+      "Rival Consoles",
+      "Worakls",
+      "Dominik Eulberg",
+      "George Fitzgerald",
+      "NTO",
+      "Parra For Cuva",
+      "Rone"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 102781,
+    "name": "Martin Roth",
+    "profile": "Producer, DJ & live act from Germany\r\nBorn in Frankfurt / Main (Germany)\r\nBased in Berlin ",
+    "realname": "Martin Roth",
+    "social_urls": [
+      "http://martinroth.bandcamp.com",
+      "http://www.martinroth.net",
+      "https://www.instagram.com/martin.analog",
+      "http://www.facebook.com/martinrothofficial",
+      "http://soundcloud.com/djmartinroth",
+      "http://twitter.com/djmartinroth",
+      "https://myspace.com/martinroth",
+      "https://www.discogs.com/user/martin_analog"
+    ],
+    "members": [],
+    "groups": [
+      "Xenayo",
+      "Disc-O-Thek",
+      "Pro-Tech",
+      "Virtual Atmosfear",
+      "EQT",
+      "M-Traxx",
+      "Spacelab (2)",
+      "Y (3)",
+      "Fragile 2001",
+      "Techno-Punk",
+      "Cop'n Creek",
+      "Magenta (6)",
+      "Maga & Star",
+      "T.B.C. (The Berlin Connection)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 95,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, MP3, Comp, 320",
+      "11xFile, MP3, Comp, 320",
+      "12xFile, MP3, Comp, 320",
+      "12xFile, WAV, Comp",
+      "14xFile, WAV, Album",
+      "15xFile, MP3, Comp, 320",
+      "15xFile, WAV, Comp",
+      "16xFile, MP3, Comp, 320",
+      "18xFile, MP3, Album, 320",
+      "20xCD, Mixed + Box, Ltd",
+      "20xFile, MP3, Comp, 320",
+      "24xFile, MP3, Comp, 320",
+      "25xFile, MP3, Album, Comp, 320",
+      "25xFile, MP3, Comp, 320",
+      "28xFile, WAV, Comp",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "2xCD, RE + CD, RE + Comp, Mixed",
+      "2xFile, MP3",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "2xFile, MP3, Mixed, 320 + 23xFile, MP3, Comp, 320",
+      "2xFile, MP3, Mixed, 320 + 26xFile, MP3, Comp, 320",
+      "30xFile, MP3, Comp, 320",
+      "38xFile, MP3, Comp, Mixed, 320 + 63xFile, MP3, Com",
+      "3xFile, MP3, 320",
+      "3xFile, MP3, EP",
+      "3xFile, MP3, EP, 320",
+      "40xFile, MP3, Comp, 320",
+      "44xFile, MP3, Comp, 320 + 2xFile, MP3, Mixed, 320",
+      "4xFile, MP3, 320",
+      "4xFile, MP3, EP, 320",
+      "4xFile, MP3, Single, 320",
+      "4xFile, WAV, EP",
+      "7xFile, FLAC",
+      "File, FLAC",
+      "File, FLAC, Mixed",
+      "File, MP3, 320",
+      "File, MP3, Mixed, 320",
+      "File, WAV"
+    ],
+    "labels": [
+      "303Lovers",
+      "Afterglow Deep",
+      "Anjunadeep",
+      "Anjunadeep, Anjunadeep",
+      "Armada (4)",
+      "Armada Digital",
+      "Armada Music B.V.",
+      "Armada Various",
+      "Be Crazy Music",
+      "Blue Soho Recordings, Blue Soho Recordings",
+      "Click Records (6), Click Records (6)",
+      "Cloud 9 Dance",
+      "Constant Circles",
+      "Crossfrontier Audio",
+      "Diez Mil Records",
+      "Farbenfroh Records",
+      "Fleek Records",
+      "Forward Music (6)",
+      "Global Underground (3)",
+      "Groove Park Records (2)",
+      "Heinz Music (2)",
+      "Iboga Records",
+      "Iconyc",
+      "Intricate Records",
+      "Jee Productions",
+      "Lunatique Music",
+      "Lunatique Records",
+      "MNL",
+      "Not On Label (Steve Eagle Self-released)",
+      "Nurvous Records",
+      "Parquet Recordings, Parquet Recordings",
+      "Perspectives Digital",
+      "Pino Music",
+      "Plattenbank",
+      "Reflections (18)",
+      "Soho Yacht Club",
+      "Sound Avenue",
+      "Soundcolours",
+      "Subjekt Recordings",
+      "Submarine Vibes",
+      "Sudbeat",
+      "Timeless Moment",
+      "Truesounds Music",
+      "Visceral",
+      "ZYX Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Martin Roth",
+    "mbid": "ed94ddc6-17ea-4886-8dfc-0476811838af",
+    "listeners": 117930,
+    "playcount": 853608,
+    "listener_play_ratio": 7.24,
+    "bio_exists": true,
+    "bio_summary": "The Frankfurt born, Berlin based pianist, composer, record producer & live act Martin Roth had ben in the electronic music scene spotlight since the early 2000’s with his underground peak in 2009 when he was crowned alongside Eric Prydz,\nSasha and Deadmau5 Beatport Star of 2009 as a result of topping their sales chart no less than 5 times that year, achieving an incredible 16 Top 10 positions and receiving 3 nominations at the Beatport Annual Awards for his productions and <a href=\"https://www.l",
+    "tags": [
+      "trance",
+      "electronica",
+      "Hard Trance",
+      "Progressive House",
+      "uplifting trance"
+    ],
+    "similar_artists": [
+      "Genix",
+      "PROFF",
+      "Luttrell",
+      "Jody Wisternoff",
+      "Leaving Laurel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Synth City",
+        "listeners": 28068,
+        "playcount": 112798
+      },
+      {
+        "name": "An Analog Guy in a Digital World",
+        "listeners": 24624,
+        "playcount": 138768
+      },
+      {
+        "name": "Just Sine Waves",
+        "listeners": 12706,
+        "playcount": 30992
+      },
+      {
+        "name": "Simplicité",
+        "listeners": 10939,
+        "playcount": 33318
+      },
+      {
+        "name": "Organic Cold Brewed Hipster Funk",
+        "listeners": 9929,
+        "playcount": 34573
+      },
+      {
+        "name": "Beautiful Life - Original Mix",
+        "listeners": 8011,
+        "playcount": 27914
+      },
+      {
+        "name": "Beautiful Life",
+        "listeners": 6763,
+        "playcount": 29176
+      },
+      {
+        "name": "Teenage Dreams",
+        "listeners": 5768,
+        "playcount": 18291
+      },
+      {
+        "name": "Love Theme",
+        "listeners": 4575,
+        "playcount": 13855
+      },
+      {
+        "name": "Deep Style - Original Mix",
+        "listeners": 4097,
+        "playcount": 16096
+      }
+    ],
+    "url": "https://www.last.fm/music/Martin+Roth"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

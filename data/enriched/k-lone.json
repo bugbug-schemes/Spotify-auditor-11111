@@ -1,0 +1,604 @@
+{
+  "artist_name": "K-Lone",
+  "artist_id": "k-lone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:42:13.838733+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6e1b1094-2126-4bb9-b59f-15d58af0a986",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "electronic",
+      "pop",
+      "dubstep",
+      "uk garage",
+      "garage",
+      "dub techno",
+      "jazz house",
+      "indie electronic",
+      "uk funky",
+      "alternative/indie rock"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003238813",
+      "blog": "http://k-lone.tumblr.com/",
+      "discogs": "https://www.discogs.com/artist/3921008",
+      "free streaming": "https://www.deezer.com/artist/4054895",
+      "purchase for download": "https://www.beatport.com/artist/k-lone/295260",
+      "social network": "https://www.facebook.com/pages/K-LONE/220832844653419",
+      "soundcloud": "https://soundcloud.com/k-lone93",
+      "streaming": "https://tidal.com/artist/7462262"
+    },
+    "labels": [
+      "Tempa",
+      "Wych",
+      "Kankyō Records",
+      "Aus Music",
+      "Cuttin' Headz",
+      "Soundman Chronicles",
+      "Dr Banana",
+      "Blip Discs",
+      "Practical Rhythms",
+      "Idle Hands",
+      "Wisdom Teeth",
+      "Resident Advisor",
+      "Vitamin D Records",
+      "Badimup",
+      "Sweet N Tasty",
+      "fabric Originals",
+      "Incienso"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4054895,
+    "name": "K-Lone",
+    "nb_fan": 564,
+    "nb_album": 49,
+    "link": "https://www.deezer.com/artist/4054895",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/de1cb5e461493a3bb63a393947526e61/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Eliza Rose",
+      "Shanti Celeste",
+      "Tour-Maubourg",
+      "Wilfy D"
+    ],
+    "contributor_roles": {
+      "Wilfy D": [
+        "Main"
+      ],
+      "Eliza Rose": [
+        "Featured"
+      ],
+      "Shanti Celeste": [
+        "Main"
+      ],
+      "Tour-Maubourg": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Yelli",
+      "Squelch",
+      "Strawberries",
+      "slk",
+      "someone else",
+      "slide by side",
+      "sslip",
+      "Old Fashioned",
+      "Batucada",
+      "fauna",
+      "With U",
+      "On The Down Low",
+      "Bombo",
+      "Give It Up",
+      "Cinco",
+      "STR8 UP",
+      "The Falls",
+      "Cape Cira",
+      "gurgle",
+      "Ice Cream Dream Boy (K-Lone Creamix)",
+      "Barbarossa",
+      "Floating on Silence (K-Lone Remix)",
+      "sonder",
+      "rezz",
+      "fair enough 2 be fair"
+    ],
+    "track_durations": [
+      423,
+      236,
+      270,
+      300,
+      396,
+      315,
+      246,
+      613,
+      309,
+      218,
+      264,
+      265,
+      265,
+      397,
+      276,
+      265,
+      290,
+      377,
+      274,
+      200,
+      301,
+      277,
+      272,
+      329,
+      266
+    ],
+    "track_ranks": [
+      407057,
+      93147,
+      372322,
+      140508,
+      195763,
+      89922,
+      100542,
+      94703,
+      21874,
+      111885,
+      105636,
+      71318,
+      164886,
+      52576,
+      54112,
+      37757,
+      39162,
+      136844,
+      71693,
+      158707,
+      178141,
+      180401,
+      68125,
+      90914,
+      90946
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 15,
+      "single": 31
+    },
+    "albums": [
+      {
+        "title": "sorry i thought you were someone else",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Swells",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cape Cira",
+        "label": "",
+        "release_date": "2020-04-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pressure EP",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Matter Of Time EP",
+        "label": "",
+        "release_date": "2025-06-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Loca",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Catching Wild, Pt. 2",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Catching Wild, Pt. 1",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "TASTY003 - Drum Tools",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Balloons / Bubble Trouble",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Zodiac / 4 More",
+        "label": "",
+        "release_date": "2023-05-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Falls",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "VITD004",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "TASTY001",
+        "label": "",
+        "release_date": "2021-08-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sine Language",
+        "label": "",
+        "release_date": "2019-05-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "In The Dust EP",
+        "label": "",
+        "release_date": "2017-10-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "On Line, Vol 1",
+        "label": "",
+        "release_date": "2017-03-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rare Jewels",
+        "label": "",
+        "release_date": "2016-10-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "sslip",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vida Loca",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "slk",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "someone else",
+        "label": "",
+        "release_date": "2025-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Upside Down",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pressure",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sud America",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dance Alone (K-Lone Remix)",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Get Over (K-LONE Remix)",
+        "label": "",
+        "release_date": "2025-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "(=o_o=) / Each Story",
+        "label": "",
+        "release_date": "2025-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ice Cream Dream Boy (K-Lone Creamix)",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating on Silence (K-Lone Remix)",
+        "label": "",
+        "release_date": "2024-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "DJ Koze",
+      "Laurence Guy",
+      "Logic1000",
+      "Romare",
+      "Four Tet",
+      "Kelly Lee Owens",
+      "Poté",
+      "Ross from Friends",
+      "Model Man",
+      "Leon Vynehall"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3921008,
+    "name": "K-Lone",
+    "profile": "Electronic music producer from UK.",
+    "realname": "Josiah Gladwell",
+    "social_urls": [
+      "https://www.facebook.com/kloneuk/",
+      "https://soundcloud.com/k-lone93"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 36,
+    "digital_only_releases": 44,
+    "total_releases": 80,
+    "formats": [
+      "",
+      "100xFile, MP3, Comp, 320",
+      "10xFile, FLAC, Album",
+      "10xFile, MP3, Comp, 320",
+      "12\"",
+      "12\", EP",
+      "12\", EP, W/Lbl",
+      "12\", Ltd, W/Lbl",
+      "12\", Ltd, W/Lbl, Gre",
+      "12\", Single",
+      "12\", Smplr, Tur",
+      "12\", W/Lbl",
+      "12\", W/Lbl, Sta",
+      "14xFile, MP3, Comp, 320",
+      "14xFile, MP3, WAV",
+      "15xFile, WAV, Comp",
+      "2x12\", Comp",
+      "2x12\", Ltd",
+      "2xFile, FLAC, EP",
+      "2xFile, WAV",
+      "2xLP, Album",
+      "43xFile, FLAC, Comp",
+      "45xFile, FLAC",
+      "4xFile, MP3, Single",
+      "4xFile, WAV, EP",
+      "5xFile, FLAC, EP",
+      "7xFile, ALAC, Comp",
+      "9xFile, MP3, WAV, Comp",
+      "Cass, Ltd, Mixed, Mixtape",
+      "File, MP3, Mixed, 320",
+      "File, MP3, Mixed, Mixtape, 320",
+      "File, MP3, WAV, Comp",
+      "Lathe, 10\", Ltd, Num, Han"
+    ],
+    "labels": [
+      "Above Board Projects",
+      "Albion Collective",
+      "Aus Music",
+      "Badimup",
+      "Banoffee Pies",
+      "Bleep (2)",
+      "Care4Life",
+      "Chord Marauders",
+      "Cuttin' Headz",
+      "Dekmantel",
+      "Dr Banana",
+      "Europa Europa",
+      "FACT Magazine",
+      "FWD.DJ",
+      "For The Massive",
+      "Heist (2)",
+      "Idle Hands",
+      "Incienso",
+      "LuckyMe",
+      "Method 808, Peach Discs",
+      "Mindstep Music",
+      "Mindwaves Music",
+      "Noire & Blanche, Délicieuse Records",
+      "PRS For Music",
+      "Practical Rhythms",
+      "R & S Records",
+      "Rebirth",
+      "Resident Advisor",
+      "Silver Bear Recordings",
+      "Soundman Chronicles",
+      "Sweet 'n' Tasty",
+      "Tempa",
+      "Vitamin D",
+      "Wisdom Teeth",
+      "Wych",
+      "Young (5)",
+      "fabric Originals"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "K-Lone",
+    "mbid": "6e1b1094-2126-4bb9-b59f-15d58af0a986",
+    "listeners": 69860,
+    "playcount": 572252,
+    "listener_play_ratio": 8.19,
+    "bio_exists": true,
+    "bio_summary": "London-based electronic producer Josiah Gladwell (aka K-Lone) is an enigmatic studio presence known for his experimental, often abstract soundscapes. \n\nAlong with computers, K-Lone also utilizes field recordings, synthesizers, and a bevy of percussion instruments to craft his evocative tracks. Initially, K-Lone played drums in various punk and noise-rock outfits before discovering his interest in creating electronic soundscapes.\n\nAdopting his production handle <a href=\"https://www.last.fm/music/",
+    "tags": [
+      "ambient",
+      "electronic",
+      "UK Garage",
+      "House",
+      "uk bass"
+    ],
+    "similar_artists": [
+      "Anthony Naples",
+      "Facta",
+      "Purelink",
+      "Akasha System",
+      "Jorg Kuning"
+    ],
+    "top_tracks": [
+      {
+        "name": "Strawberries",
+        "listeners": 16020,
+        "playcount": 81091
+      },
+      {
+        "name": "Yelli",
+        "listeners": 12043,
+        "playcount": 33588
+      },
+      {
+        "name": "Cape Cira",
+        "listeners": 11959,
+        "playcount": 36426
+      },
+      {
+        "name": "Love Me A Little",
+        "listeners": 7977,
+        "playcount": 28097
+      },
+      {
+        "name": "Barbarossa",
+        "listeners": 7397,
+        "playcount": 25276
+      },
+      {
+        "name": "Bluefin",
+        "listeners": 5439,
+        "playcount": 18567
+      },
+      {
+        "name": "With U",
+        "listeners": 5270,
+        "playcount": 14092
+      },
+      {
+        "name": "Honey",
+        "listeners": 5030,
+        "playcount": 15991
+      },
+      {
+        "name": "In The Pines",
+        "listeners": 4833,
+        "playcount": 14543
+      },
+      {
+        "name": "Cocoa",
+        "listeners": 4700,
+        "playcount": 13682
+      }
+    ],
+    "url": "https://www.last.fm/music/K-Lone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

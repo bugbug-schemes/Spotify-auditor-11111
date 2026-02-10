@@ -1,0 +1,137 @@
+{
+  "artist_name": "Silentia Dua",
+  "artist_id": "silentia_dua",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:04:02.123062+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 345744401,
+    "name": "Silentia Dua",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/345744401",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f3339568cb84b3552b534a9589c5e856/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Solitude",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quietly",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lull",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stillness",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Silentia Dua",
+    "mbid": "",
+    "listeners": 5087,
+    "playcount": 16819,
+    "listener_play_ratio": 3.31,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Silentia+Dua\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sagamo",
+      "Nightpools",
+      "Luminescence Love",
+      "Aether Waves",
+      "Ambientelles"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lull",
+        "listeners": 3360,
+        "playcount": 13237
+      },
+      {
+        "name": "Solitude",
+        "listeners": 1232,
+        "playcount": 2124
+      },
+      {
+        "name": "Quietly",
+        "listeners": 590,
+        "playcount": 1337
+      },
+      {
+        "name": "Stillness",
+        "listeners": 25,
+        "playcount": 121
+      }
+    ],
+    "url": "https://www.last.fm/music/Silentia+Dua"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

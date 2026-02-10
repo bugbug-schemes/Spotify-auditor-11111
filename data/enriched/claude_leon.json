@@ -1,0 +1,125 @@
+{
+  "artist_name": "Claude Leon",
+  "artist_id": "claude_leon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:09:52.054529+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Claude Leon', got 'Claude VonStroke'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1330278,
+    "name": "Claude Léon",
+    "profile": "French drummer",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 3,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "7\", EP",
+      "CD, Comp",
+      "LP, Comp",
+      "Shellac, 10\""
+    ],
+    "labels": [
+      "EPM Littérature",
+      "Epic, Epic",
+      "La Voix De Son Maître",
+      "Swing (3)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Claude Leon",
+    "mbid": "",
+    "listeners": 7988,
+    "playcount": 21701,
+    "listener_play_ratio": 2.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Claude+Leon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Emilio Abruzzo",
+      "Seren Rhys",
+      "Nazomi",
+      "Stace Brinorma",
+      "Elion Headford"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lost in the Library",
+        "listeners": 5744,
+        "playcount": 11378
+      },
+      {
+        "name": "Whispers of Spring",
+        "listeners": 2353,
+        "playcount": 10087
+      },
+      {
+        "name": "Whispers In Spring",
+        "listeners": 143,
+        "playcount": 233
+      },
+      {
+        "name": "Home at Last",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "chapters of life",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Moonlight Lullaby",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Claude+Leon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

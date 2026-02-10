@@ -1,0 +1,157 @@
+{
+  "artist_name": "Amos Coelllo",
+  "artist_id": "amos_coelllo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:56:28.414343+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 143811962,
+    "name": "Amos Coelllo",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/143811962",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6719b762eb7ef4a0bee5913c7a9801c9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Sequoia"
+    ],
+    "track_durations": [
+      166
+    ],
+    "track_ranks": [
+      63660
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Ochre",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fading Dawn",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tristitia",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marlina",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sequoia",
+        "label": "",
+        "release_date": "2021-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amos Coelllo",
+    "mbid": "",
+    "listeners": 15107,
+    "playcount": 81390,
+    "listener_play_ratio": 5.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Amos+Coelllo\">Read more on Last.fm</a>",
+    "tags": [
+      "piano"
+    ],
+    "similar_artists": [
+      "Leonard Czernay",
+      "Henry Gadacz",
+      "Noel Oliver",
+      "Drömqvist",
+      "Corinne Blanchard"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sequoia",
+        "listeners": 14893,
+        "playcount": 80650
+      },
+      {
+        "name": "Marlina",
+        "listeners": 182,
+        "playcount": 375
+      },
+      {
+        "name": "Caligo",
+        "listeners": 77,
+        "playcount": 359
+      },
+      {
+        "name": "Tristitia",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Fading Dawn",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Amos+Coelllo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

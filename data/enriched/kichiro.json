@@ -1,0 +1,174 @@
+{
+  "artist_name": "Kichiro",
+  "artist_id": "kichiro",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:49:07.621004+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "891968d9-cace-4269-a8f8-a6545f25a6ea",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental",
+      "boom bap"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/199354647",
+      "purchase for download": "https://www.traxsource.com/artist/705534",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/kichiro/17191208",
+      "youtube music": "https://music.youtube.com/channel/UC-IB_Qpaozswkq-fWwQi-3Q"
+    },
+    "labels": [
+      "Fortune Cookie Records",
+      "Settle / @settlefm",
+      "purity label",
+      "Chill Ghost",
+      "Etymology Records",
+      "Lofi Chill Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Kichiro', got 'Lil Hero'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4406984,
+    "name": "Kichiro Sugino",
+    "profile": "Japanese jazz pianist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 4,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "LP"
+    ],
+    "labels": [
+      "Lob"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "kichiro",
+    "mbid": "",
+    "listeners": 24521,
+    "playcount": 103091,
+    "listener_play_ratio": 4.2,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/kichiro\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "jeppa.",
+      "Another one",
+      "Somno Beats",
+      "WaveSoul",
+      "Lost But Found"
+    ],
+    "top_tracks": [
+      {
+        "name": ". . . good night . . .",
+        "listeners": 4335,
+        "playcount": 19118
+      },
+      {
+        "name": "Finding Peace",
+        "listeners": 4003,
+        "playcount": 8879
+      },
+      {
+        "name": "Undaunted",
+        "listeners": 3236,
+        "playcount": 6910
+      },
+      {
+        "name": "Sunshine Meadows",
+        "listeners": 1891,
+        "playcount": 4555
+      },
+      {
+        "name": "Intertwined Hearts",
+        "listeners": 1715,
+        "playcount": 3453
+      },
+      {
+        "name": "Sky Dancing",
+        "listeners": 1524,
+        "playcount": 2677
+      },
+      {
+        "name": "Haku's Lullaby",
+        "listeners": 1445,
+        "playcount": 2912
+      },
+      {
+        "name": "floating",
+        "listeners": 1310,
+        "playcount": 2606
+      },
+      {
+        "name": "lovers",
+        "listeners": 1296,
+        "playcount": 1885
+      },
+      {
+        "name": "Spring Blossom",
+        "listeners": 1051,
+        "playcount": 2233
+      }
+    ],
+    "url": "https://www.last.fm/music/kichiro"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

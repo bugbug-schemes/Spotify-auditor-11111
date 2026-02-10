@@ -1,0 +1,163 @@
+{
+  "artist_name": "Willian Mcgrow",
+  "artist_id": "willian_mcgrow",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:00:37.690289+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 266914202,
+    "name": "Willian Mcgrow",
+    "nb_fan": 5,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/266914202",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8b0ac2d321f17d8bcb269f29da9fc0f2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Bliss",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lyon",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Peaceful Sleep",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Meditation",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mindful Thoughts",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Day Dreaming",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Willian Mcgrow",
+    "mbid": "",
+    "listeners": 15518,
+    "playcount": 98281,
+    "listener_play_ratio": 6.33,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Willian+Mcgrow\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lunari Veil",
+      "Fort Sleep Sara",
+      "Dorian Froste",
+      "A Deeper Sense",
+      "Florian Porterfield"
+    ],
+    "top_tracks": [
+      {
+        "name": "Morning Meditation",
+        "listeners": 13720,
+        "playcount": 81269
+      },
+      {
+        "name": "Calm",
+        "listeners": 4373,
+        "playcount": 16963
+      },
+      {
+        "name": "Mindful Thoughts",
+        "listeners": 21,
+        "playcount": 22
+      },
+      {
+        "name": "Day Dreaming",
+        "listeners": 20,
+        "playcount": 22
+      },
+      {
+        "name": "Lyon",
+        "listeners": 5,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Willian+Mcgrow"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

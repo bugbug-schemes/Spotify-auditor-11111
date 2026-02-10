@@ -1,0 +1,121 @@
+{
+  "artist_name": "Laurel Hoh",
+  "artist_id": "laurel_hoh",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:59:08.811712+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Laurel Hoh', got 'Laurel Halo'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Laurel Hoh",
+    "mbid": "",
+    "listeners": 6461,
+    "playcount": 104089,
+    "listener_play_ratio": 16.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Laurel+Hoh\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jim Fauer",
+      "DoRe Mi",
+      "Celeste Saga",
+      "Lille Du",
+      "Alicja Pawlowska"
+    ],
+    "top_tracks": [
+      {
+        "name": "Three Little Foxes",
+        "listeners": 3235,
+        "playcount": 33174
+      },
+      {
+        "name": "My Secret Place",
+        "listeners": 2586,
+        "playcount": 29485
+      },
+      {
+        "name": "One, Two, Buckle My Shoe",
+        "listeners": 1817,
+        "playcount": 19954
+      },
+      {
+        "name": "Yankee Doodle",
+        "listeners": 990,
+        "playcount": 8539
+      },
+      {
+        "name": "snowflakes",
+        "listeners": 854,
+        "playcount": 7259
+      },
+      {
+        "name": "Picture Book",
+        "listeners": 250,
+        "playcount": 2793
+      },
+      {
+        "name": "Sloop John B",
+        "listeners": 226,
+        "playcount": 2783
+      },
+      {
+        "name": "All the Pretty Little Horses",
+        "listeners": 29,
+        "playcount": 36
+      },
+      {
+        "name": "Gentle Breeze",
+        "listeners": 17,
+        "playcount": 25
+      },
+      {
+        "name": "My Cuddly Toys",
+        "listeners": 9,
+        "playcount": 18
+      }
+    ],
+    "url": "https://www.last.fm/music/Laurel+Hoh"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

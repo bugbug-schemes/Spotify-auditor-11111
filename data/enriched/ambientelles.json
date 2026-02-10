@@ -1,0 +1,139 @@
+{
+  "artist_name": "Ambientelles",
+  "artist_id": "ambientelles",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:55:34.707454+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 131028842,
+    "name": "Ambientelles",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/131028842",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a0711cff9be2ef8f9857c6aa5ed82c8f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Aurora roots",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ascending",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magellanic clouds",
+        "label": "",
+        "release_date": "2024-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Endless Evenings",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bending Time Inwards",
+        "label": "",
+        "release_date": "2021-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ambientelles",
+    "mbid": "",
+    "listeners": 4954,
+    "playcount": 21387,
+    "listener_play_ratio": 4.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ambientelles\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Wander Paths",
+      "Sagamo",
+      "Cryptozoology",
+      "Command Module",
+      "Velvet Hush"
+    ],
+    "top_tracks": [
+      {
+        "name": "Aurora roots",
+        "listeners": 4883,
+        "playcount": 20956
+      },
+      {
+        "name": "Endless Evenings",
+        "listeners": 73,
+        "playcount": 420
+      },
+      {
+        "name": "Bending Time Inwards",
+        "listeners": 8,
+        "playcount": 11
+      }
+    ],
+    "url": "https://www.last.fm/music/Ambientelles"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

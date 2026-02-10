@@ -1,0 +1,121 @@
+{
+  "artist_name": "Deep Sleep FX",
+  "artist_id": "deep_sleep_fx",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:26:31.239487+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Deep Sleep FX', got 'The Deep Sleep Scientists'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Deep Sleep FX",
+    "mbid": "",
+    "listeners": 37344,
+    "playcount": 313223,
+    "listener_play_ratio": 8.39,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Deep+Sleep+FX\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aqua Mori",
+      "Sounds from Above",
+      "Tailormade Ocean Waves",
+      "TELEKROME",
+      "Coastal Sounds"
+    ],
+    "top_tracks": [
+      {
+        "name": "River Creek with Birds",
+        "listeners": 13730,
+        "playcount": 37836
+      },
+      {
+        "name": "Soothing Sleep Ocean",
+        "listeners": 13206,
+        "playcount": 62973
+      },
+      {
+        "name": "Sailing",
+        "listeners": 9858,
+        "playcount": 46438
+      },
+      {
+        "name": "Big Ocean Waves",
+        "listeners": 6449,
+        "playcount": 155216
+      },
+      {
+        "name": "Sounds Soothing Waves",
+        "listeners": 2133,
+        "playcount": 9696
+      },
+      {
+        "name": "Rain Sounds: Block out Background Noise",
+        "listeners": 50,
+        "playcount": 88
+      },
+      {
+        "name": "Calm Shore",
+        "listeners": 21,
+        "playcount": 118
+      },
+      {
+        "name": "Cabin Mountain Sleep Sound",
+        "listeners": 16,
+        "playcount": 17
+      },
+      {
+        "name": "Aural Waves",
+        "listeners": 12,
+        "playcount": 13
+      },
+      {
+        "name": "Rainy Silence Lullaby Serenity",
+        "listeners": 10,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Deep+Sleep+FX"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

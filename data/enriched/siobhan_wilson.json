@@ -1,0 +1,407 @@
+{
+  "artist_name": "Siobhan Wilson",
+  "artist_id": "siobhan_wilson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:05:32.639553+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c506e556-0ee9-4baf-9ee9-f0bb87fa75d1",
+    "type": "Person",
+    "country": "",
+    "area": "Scotland",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "indie dance",
+      "progressive house",
+      "edm",
+      "alternative folk",
+      "melodic techno",
+      "melodic house",
+      "organic house"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1952535",
+      "free streaming": "https://www.deezer.com/artist/506194",
+      "official homepage": "https://www.siobhan-wilson.com/",
+      "patronage": "https://www.patreon.com/fanspace",
+      "purchase for download": "https://www.beatport.com/artist/siobhan-wilson/296709",
+      "social network": "https://www.tiktok.com/@siobhanthewilson",
+      "soundcloud": "https://soundcloud.com/siobhanwilson",
+      "streaming": "https://tidal.com/artist/4497267",
+      "video channel": "https://www.twitch.tv/siobhanwilson"
+    },
+    "labels": [
+      "Suffering Fools Records",
+      "BBC Radio Scotland",
+      "[no label]",
+      "Song, by Toad Records",
+      "My Major Company",
+      "Anjunadeep"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 506194,
+    "name": "Siobhan Wilson",
+    "nb_fan": 2736,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/506194",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/345cc9f612d570c6fc5cf8756023c7cc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Window Song",
+      "Getting Me Down",
+      "Song for Anthony",
+      "Snowflakes"
+    ],
+    "track_durations": [
+      173,
+      156,
+      188,
+      217
+    ],
+    "track_ranks": [
+      102373,
+      146700,
+      177940,
+      52701
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "ep": 1,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Thaw",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cinematic Indie Folk",
+        "label": "",
+        "release_date": "2025-02-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "B-Sides",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "FLOWERCORE Vol. 3",
+        "label": "",
+        "release_date": "2024-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "FLOWERCORE Vol. 2",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "FLOWERCORE Vol. 1",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Recording Of Myself In A Room Of My Own",
+        "label": "",
+        "release_date": "2023-05-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Seeing with Music in Nature",
+        "label": "",
+        "release_date": "2023-05-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Survivre",
+        "label": "",
+        "release_date": "2021-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Plastic Grave",
+        "label": "",
+        "release_date": "2019-12-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "There Are No Saints",
+        "label": "",
+        "release_date": "2017-07-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Songs",
+        "label": "",
+        "release_date": "2010-06-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Glorified Demons",
+        "label": "",
+        "release_date": "2014-11-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Beeswing",
+        "label": "",
+        "release_date": "2025-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Little Shelter (Original Score)",
+        "label": "",
+        "release_date": "2025-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unload the Gun",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unst Boat Song",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quand La Vie Fait Mal",
+        "label": "",
+        "release_date": "2022-12-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Terrible Woman",
+        "label": "",
+        "release_date": "2015-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Emilíana Torrini",
+      "Feist",
+      "Sophie Hunger",
+      "An Pierlé",
+      "Chris Garneau",
+      "Ane Brun",
+      "Revolver",
+      "Dark Dark Dark",
+      "Peter Von Poehl",
+      "Antony & The Johnsons"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1952535,
+    "name": "Siobhan Wilson",
+    "profile": "Scottish singer songwriter from Glasgow. She was occasionally known as Ella The Bird too.",
+    "realname": "",
+    "social_urls": [
+      "https://soundcloud.com/siobhanwilson",
+      "http://ellathebird.bandcamp.com",
+      "https://siobhanwilsonmusic.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 21,
+    "digital_only_releases": 24,
+    "total_releases": 45,
+    "formats": [
+      "",
+      "12\"",
+      "20xFile, MP3, Comp, Mixed, 320",
+      "29xFile, MP3, Comp, 320",
+      "2xCD, Album, Comp, Promo",
+      "2xCD, Album, Dlx, Ltd, S/Edition",
+      "3xFile, MP3, Single, 320",
+      "4xCD, Comp",
+      "6xFile, MP3, Single, 320",
+      "7\", RSD, Ltd, Lig",
+      "CD",
+      "CD, Album, Ltd",
+      "CD, Album, Ltd, Num",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, EP",
+      "CD, Ltd, S/Edition",
+      "CDr, Album, Promo",
+      "CDr, EP, Ltd",
+      "CDr, Single",
+      "CDr, Single, Promo",
+      "Cass, Album, Ltd",
+      "File, MP3, Comp, Mixed, 192",
+      "File, MP3, Single, 320",
+      "File, MP3, WAV, Single",
+      "M/Stick, MP3"
+    ],
+    "labels": [
+      "Anjunadeep",
+      "Armellodie Records",
+      "BAF Musique",
+      "Bakeneko",
+      "LP Records (8)",
+      "Les Inrockuptibles",
+      "Neu! Reekie! Records",
+      "Not On Label",
+      "Olive Grove Records",
+      "Pledge Music",
+      "Reveal Records",
+      "Song, By Toad Records",
+      "Sonic Cathedral",
+      "Suffering Fools Records",
+      "Sufrecs",
+      "Wagram Music",
+      "Wavemusic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Siobhan Wilson",
+    "mbid": "c506e556-0ee9-4baf-9ee9-f0bb87fa75d1",
+    "listeners": 10614,
+    "playcount": 87737,
+    "listener_play_ratio": 8.27,
+    "bio_exists": true,
+    "bio_summary": "Siobhan Wilson is a Scottish singer-songwriter from Glasgow.\n\nWilson's EP, Glorified Demons, was an independent release. It was recorded in the bedroom of Gordon Skene (Frightened Rabbit, The Moth and the Mirror), who produced and plays on the record. \n\nWilson’s story begins in Scotland, whilst studying classical music at school by day and prying apart her father’s record collection by night. The likes of Joni Mitchell, John Martyn and Nina Simone informed her inquisitive young ears <a href=\"htt",
+    "tags": [
+      "folk",
+      "singer-songwriter",
+      "female vocalists",
+      "indie",
+      "female vocalist"
+    ],
+    "similar_artists": [
+      "Alan Corbel",
+      "Okou",
+      "June & Lula",
+      "Susan Justice",
+      "Roken Is Dodelijk"
+    ],
+    "top_tracks": [
+      {
+        "name": "Whatever Helps",
+        "listeners": 4722,
+        "playcount": 12116
+      },
+      {
+        "name": "Getting Me Down",
+        "listeners": 1419,
+        "playcount": 6090
+      },
+      {
+        "name": "All Dressed Up",
+        "listeners": 933,
+        "playcount": 2823
+      },
+      {
+        "name": "Dear God",
+        "listeners": 929,
+        "playcount": 2855
+      },
+      {
+        "name": "Getting Me Down (Anoraak Rework)",
+        "listeners": 758,
+        "playcount": 2874
+      },
+      {
+        "name": "Window Song",
+        "listeners": 701,
+        "playcount": 2607
+      },
+      {
+        "name": "There Are No Saints",
+        "listeners": 690,
+        "playcount": 2006
+      },
+      {
+        "name": "Paris Est Blanche",
+        "listeners": 672,
+        "playcount": 2087
+      },
+      {
+        "name": "Voir Un Ami Pleurer",
+        "listeners": 620,
+        "playcount": 2385
+      },
+      {
+        "name": "Song For Anthony",
+        "listeners": 545,
+        "playcount": 2179
+      }
+    ],
+    "url": "https://www.last.fm/music/Siobhan+Wilson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

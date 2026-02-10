@@ -1,0 +1,162 @@
+{
+  "artist_name": "Nursery Notes",
+  "artist_id": "nursery_notes",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:08:49.154712+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288890751,
+    "name": "Nursery Notes",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/288890751",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Lullaby Dreams",
+        "label": "",
+        "release_date": "2025-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2223288,
+    "name": "Kent Bowman",
+    "profile": "Born on September 2, 1923 in Hilo on the Big Island of Hawai'i, Bowman was, according to the \"No Talk Stink\" liner notes, an ethnic blend of French, Hawaiian, Scottish, and English.  He was a graduate of 'Iolani High School and enrolled in the military during World War II.  Upon returning, he worked with some of the top businesses in Honolulu and earned such roles as vice president and general manager, roles that he would keep until he retired in 1990.\r\n\r\nFor fun, he used his comedic talents over the radio airwaves with Hula Records' founder Don McDiarmid, Jr., which lead to him developing routines and re-interpreting popular nursery rhymes into the Hawaiian \"pigdin English\" dialect.  While he stopped making recordings after 1969, he would continue to do public performances using the characters he brought to his records, all while maintaining his proper day jobs.  He did make one last recording in 1998, reviving his old K.K. Ka'umania character, his first and only album recorded digita",
+    "realname": "Kent Hamilton Bowman",
+    "social_urls": [
+      "http://the.honoluluadvertiser.com/article/2007/Dec/24/br/br8623519470.html"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 9,
+    "digital_only_releases": 5,
+    "total_releases": 14,
+    "formats": [
+      "",
+      "10\"",
+      "7\"",
+      "7\", EP",
+      "7\", Single",
+      "CD, Album",
+      "Cass, Comp",
+      "LP, Album",
+      "LP, Album, Mono"
+    ],
+    "labels": [
+      "49th State Hawaii Record Co.",
+      "Hashi Records, Hashi Records, Hashi Records",
+      "Hawaiian Village Records",
+      "Hula Records",
+      "Royal Hawaiian Shopping Center"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nursery Notes",
+    "mbid": "",
+    "listeners": 5190,
+    "playcount": 72227,
+    "listener_play_ratio": 13.92,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nursery+Notes\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Taennchel",
+      "MarziTan",
+      "Sofia Ferra",
+      "Flore Habendum",
+      "Zachary Keys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lullaby Dreams",
+        "listeners": 4344,
+        "playcount": 60884
+      },
+      {
+        "name": "Moonlight Snuggles",
+        "listeners": 844,
+        "playcount": 6392
+      },
+      {
+        "name": "Yankee Doodle (Music Box Version)",
+        "listeners": 487,
+        "playcount": 3331
+      },
+      {
+        "name": "My Bonnie Lies Over the Ocean (Music Box Version)",
+        "listeners": 227,
+        "playcount": 1525
+      },
+      {
+        "name": "Little One",
+        "listeners": 25,
+        "playcount": 85
+      },
+      {
+        "name": "Moonlight Snuggles (White Noise Version)",
+        "listeners": 6,
+        "playcount": 9
+      },
+      {
+        "name": "Sleepy Eyes",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Nursery+Notes"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

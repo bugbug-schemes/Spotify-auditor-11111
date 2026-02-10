@@ -1,0 +1,551 @@
+{
+  "artist_name": "So.Lo",
+  "artist_id": "so_lo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:08:37.425801+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "1d068a37-f27a-49c7-a7a6-5b4b3a283d9d",
+    "type": "Person",
+    "country": "",
+    "area": "Torino",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi",
+      "lo-fi hip hop",
+      "downtempo",
+      "instrumental",
+      "boom bap"
+    ],
+    "aliases": [
+      "Federico Puttilli"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/84303912",
+      "purchase for download": "https://www.traxsource.com/artist/653417",
+      "social network": "https://www.instagram.com/So.Lo_music/",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/solo-12/9307005",
+      "youtube music": "https://music.youtube.com/channel/UCVI6aQ7adbqgrINjzoAxofw"
+    },
+    "labels": [
+      "LoFi Café Records",
+      "Fortune Cookie Records",
+      "Dreamhop Music",
+      "Calm Beats",
+      "purity label",
+      "Lofi Records",
+      "Stereofox Records",
+      "Aviary Bridge Records",
+      "Etymology Records",
+      "Lofi Chill Records",
+      "Lofi Jazz Records",
+      "Chill Select"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 84303912,
+    "name": "So.Lo",
+    "nb_fan": 172,
+    "nb_album": 60,
+    "link": "https://www.deezer.com/artist/84303912",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c50eb44b14b893497031c74ec2630ca8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Dosi",
+      "Goson",
+      "Lawrence Walther",
+      "Phlocalyst",
+      "Tibeauthetraveler"
+    ],
+    "contributor_roles": {
+      "Goson": [
+        "Main"
+      ],
+      "Dosi": [
+        "Main"
+      ],
+      "Lawrence Walther": [
+        "Main"
+      ],
+      "Phlocalyst": [
+        "Main"
+      ],
+      "Tibeauthetraveler": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Into The Fog",
+      "Shivers",
+      "Summer At The Lake",
+      "With Your Eyes Closed",
+      "Sunday Memories",
+      "Close The Box",
+      "Steps",
+      "Spring Buds",
+      "Sentiero",
+      "When The Sun Rises",
+      "Something Missing",
+      "Last Day At The Seaside",
+      "When I Remember You",
+      "Old Time",
+      "Careless",
+      "Hot Chocolate",
+      "Playground",
+      "Bulb",
+      "Rododendri",
+      "Teleport",
+      "Driblando Na Praia",
+      "Goodnight",
+      "Giapooh",
+      "Under The Sea",
+      "Green World"
+    ],
+    "track_durations": [
+      141,
+      148,
+      158,
+      135,
+      120,
+      114,
+      145,
+      147,
+      157,
+      171,
+      155,
+      176,
+      163,
+      171,
+      129,
+      166,
+      144,
+      145,
+      169,
+      147,
+      177,
+      176,
+      146,
+      138,
+      169
+    ],
+    "track_ranks": [
+      556160,
+      567932,
+      435650,
+      636801,
+      587632,
+      567262,
+      571572,
+      547907,
+      407443,
+      508877,
+      574239,
+      568760,
+      475496,
+      490151,
+      296335,
+      469549,
+      438753,
+      300065,
+      185258,
+      257557,
+      217629,
+      383283,
+      234070,
+      204352,
+      189183
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 4,
+      "single": 54
+    },
+    "albums": [
+      {
+        "title": "Magic Box",
+        "label": "",
+        "release_date": "2026-01-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "QuietPath Vol.2",
+        "label": "",
+        "release_date": "2024-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beyond the Bookends",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "In Sounds",
+        "label": "",
+        "release_date": "2022-07-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "QuietPath",
+        "label": "",
+        "release_date": "2022-07-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Humano",
+        "label": "",
+        "release_date": "2021-07-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "off grid",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Valley",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Collapse",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Day",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Treetop Tales",
+        "label": "",
+        "release_date": "2024-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Night with Santa",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glimmer",
+        "label": "",
+        "release_date": "2024-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Radiant Mornings",
+        "label": "",
+        "release_date": "2023-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Intricacies",
+        "label": "",
+        "release_date": "2023-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By The Brook",
+        "label": "",
+        "release_date": "2023-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Onda Do Mar",
+        "label": "",
+        "release_date": "2023-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meliaia",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sad Blue",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drumbo",
+        "label": "",
+        "release_date": "2023-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Illusions",
+        "label": "",
+        "release_date": "2023-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faster Than I Thought",
+        "label": "",
+        "release_date": "2023-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reprise",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blank Pages",
+        "label": "",
+        "release_date": "2023-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Scent of Paper",
+        "label": "",
+        "release_date": "2023-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Always Lose My Spot",
+        "label": "",
+        "release_date": "2023-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everything I Wanted",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Try To Relax",
+        "label": "",
+        "release_date": "2023-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flor De Verão",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Potion",
+        "label": "",
+        "release_date": "2022-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Softy",
+      "Bcalm",
+      "Nadav Cohen",
+      "Raimu",
+      "Dimension 32",
+      "Osaki",
+      "Jhove",
+      "Purrple Cat",
+      "Kupla",
+      "Wys"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 132219,
+    "name": "Carl So-Lowe",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "K.C.M. INC."
+    ],
+    "data_quality": "Correct",
+    "physical_releases": 12,
+    "digital_only_releases": 88,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\", Promo, Smplr",
+      "2xCD, Comp",
+      "5xCD, Comp",
+      "Box, Comp, Ltd,   + 10x12\", Promo",
+      "CD, Comp",
+      "CD, Comp, P/Mixed",
+      "CD, Comp, Promo",
+      "CD, Comp, RM",
+      "CD, Single, Promo",
+      "Cass, Promo, Smplr"
+    ],
+    "labels": [
+      "BMG Music Canada",
+      "Big Beat",
+      "Columbia",
+      "Columbia, Urban Division",
+      "Epic",
+      "Jive",
+      "So So Def",
+      "Sony Music Media",
+      "Sony Music Media, Sony Music Media",
+      "Union Square Production, Rhino Records (2)",
+      "Universal Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "So.lo",
+    "mbid": "",
+    "listeners": 140071,
+    "playcount": 834918,
+    "listener_play_ratio": 5.96,
+    "bio_exists": true,
+    "bio_summary": "So.Lo is the stage name of Federico Puttilli, a lo-fi beats producer hailing from Turin, Northern Italy. With a background as a touring and session guitar player spanning the last decade, So.Lo's music draws inspiration from neo soul licks, boom bap beats, and lo-fi rustle.\n\nHis musical journey began with the release of his debut single \"Morning\" on July 14, 2020. Since then, he has been steadily building his discography with multiple single releases in 2020 and 2021. <a href=\"https://www.last.f",
+    "tags": [
+      "noise rock",
+      "italian",
+      "Italy",
+      "duo",
+      "musica per gente che non sta bene di testa"
+    ],
+    "similar_artists": [
+      "eugenio izzi",
+      "Bert",
+      "Cosmic Koala",
+      "squeeda",
+      "Lawrence Walther"
+    ],
+    "top_tracks": [
+      {
+        "name": "Into The Fog",
+        "listeners": 59097,
+        "playcount": 218162
+      },
+      {
+        "name": "Sentiero",
+        "listeners": 26497,
+        "playcount": 57887
+      },
+      {
+        "name": "Bulb",
+        "listeners": 22686,
+        "playcount": 44989
+      },
+      {
+        "name": "Rododendri",
+        "listeners": 21497,
+        "playcount": 46575
+      },
+      {
+        "name": "Teleport",
+        "listeners": 21032,
+        "playcount": 44283
+      },
+      {
+        "name": "Belmondo",
+        "listeners": 20508,
+        "playcount": 41517
+      },
+      {
+        "name": "Giapooh",
+        "listeners": 19148,
+        "playcount": 38294
+      },
+      {
+        "name": "L'Aperitivo In Piazza",
+        "listeners": 11270,
+        "playcount": 21072
+      },
+      {
+        "name": "Pôr Do Sol Vermelho",
+        "listeners": 11249,
+        "playcount": 24952
+      },
+      {
+        "name": "Even After",
+        "listeners": 9266,
+        "playcount": 34764
+      }
+    ],
+    "url": "https://www.last.fm/music/So.lo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,225 @@
+{
+  "artist_name": "Nicolello",
+  "artist_id": "nicolello",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:01:34.922698+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 124389882,
+    "name": "Nicolello",
+    "nb_fan": 18,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/124389882",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9d47f7186e4ec3bb3731488dfd23adfc/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Floating In Space",
+      "Reflections",
+      "A New Leap"
+    ],
+    "track_durations": [
+      152,
+      157,
+      150
+    ],
+    "track_ranks": [
+      198634,
+      21975,
+      59619
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Chase The Sun",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A New Leap",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Be With You",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reflections",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Notice",
+        "label": "",
+        "release_date": "2022-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bling",
+        "label": "",
+        "release_date": "2022-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating In Space",
+        "label": "",
+        "release_date": "2021-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me + U",
+        "label": "",
+        "release_date": "2021-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4283079,
+    "name": "Vincenzo Nicolello",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 5,
+    "total_releases": 5,
+    "formats": [
+      "",
+      "2xDVD-V"
+    ],
+    "labels": [
+      "Ver1 Musica"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nicolello",
+    "mbid": "",
+    "listeners": 21466,
+    "playcount": 89106,
+    "listener_play_ratio": 4.15,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nicolello\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kate Paul",
+      "Paon Bleu",
+      "Cámille",
+      "Sun Mirage",
+      "Chico Rocket"
+    ],
+    "top_tracks": [
+      {
+        "name": "Floating In Space",
+        "listeners": 18405,
+        "playcount": 73275
+      },
+      {
+        "name": "A New Leap",
+        "listeners": 2600,
+        "playcount": 5123
+      },
+      {
+        "name": "Reflections",
+        "listeners": 2340,
+        "playcount": 6014
+      },
+      {
+        "name": "Me + U",
+        "listeners": 1252,
+        "playcount": 3131
+      },
+      {
+        "name": "Chase The Sun",
+        "listeners": 556,
+        "playcount": 1180
+      },
+      {
+        "name": "Bling",
+        "listeners": 105,
+        "playcount": 159
+      },
+      {
+        "name": "Notice",
+        "listeners": 94,
+        "playcount": 166
+      },
+      {
+        "name": "Be With You",
+        "listeners": 36,
+        "playcount": 56
+      },
+      {
+        "name": "Floating In Space (2021)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Summergrooves",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Nicolello"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

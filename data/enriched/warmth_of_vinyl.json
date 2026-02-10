@@ -1,0 +1,173 @@
+{
+  "artist_name": "Warmth of Vinyl",
+  "artist_id": "warmth_of_vinyl",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:00:23.802660+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 211698937,
+    "name": "Warmth of Vinyl",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/211698937",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b29df2f51a6de69a7c887cf2f430e653/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Maracuyá",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cabin Noise Vol. 1",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Selected Noise Vol 1",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5437331,
+    "name": "Cotonete",
+    "profile": "French jazz-funk group. \r\n\r\nOriginally starting out in mid 2000s, Cotonete are a Paris-based 8 piece, originally gaining fame for renditions of tracks from their contemporaries, the likes of: [a=Deodato], [a=Lalo Schiffrin], and [a=Banda Black Rio]. Replicating the heavy grooves, sweaty jazz-funk, with a nod to the Brazilian warmth and beach breeze. Before bowing out of the game thinking the fun was over. \r\n\r\nFast forward to more recent times, having had their flame reignited by [a=Melik Bencheikh], head honcho of Paris vinyl emporium, Heartbeat Vinyl. He encouraged the band to get back together, and over the last two years the band released four EPs of original material –including a collaboration with master disco DJ/producer [a=Dimitri From Paris]– quickly becoming collectors items, and now they finally presenting a full body of work, with their album debut \"[m=1482963]\" (2019). \r\n\r\nGroup members: Frank Chatona (Saxophones), Farid Baha (Guitar), Jean Claude Kebaili (Bass), Benoît Gif",
+    "realname": "",
+    "social_urls": [
+      "http://www.facebook.com/Cotonetemusic",
+      "https://cotonete.bandcamp.com/",
+      "https://www.instagram.com/cotoneteparis/"
+    ],
+    "members": [
+      "Florian Pellissier",
+      "Jean-Claude Kebaïli",
+      "David Georgelet",
+      "Franck Chatona",
+      "Paul Bouclier",
+      "Christophe Touzalin",
+      "Benoit Giffard",
+      "Farid Baha"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 22,
+    "total_releases": 37,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP, Ltd",
+      "12\", Ltd",
+      "12\", Ltd, Promo, W/Lbl",
+      "12\", Ltd, Smplr",
+      "18xFile, FLAC, Comp",
+      "20xFile, FLAC, Comp",
+      "6xCD, Comp + Box",
+      "7\"",
+      "CD, Album",
+      "CD, Comp",
+      "LP, Album"
+    ],
+    "labels": [
+      "Caja Arquitetura Cultural, Prado Records",
+      "Heavenly Sweetness",
+      "Heavenly Sweetness, Heartbeat Vinyl",
+      "Jalapeno Records",
+      "Nova Records, Wagram Music",
+      "Prado Records",
+      "Som Livre"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Warmth of Vinyl",
+    "mbid": "",
+    "listeners": 767,
+    "playcount": 1364,
+    "listener_play_ratio": 1.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Warmth+of+Vinyl\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Julian Ross",
+      "tow kee o",
+      "Carlton Ranks",
+      "The Swaying Journey",
+      "Koula"
+    ],
+    "top_tracks": [
+      {
+        "name": "Maracuyá",
+        "listeners": 767,
+        "playcount": 1362
+      },
+      {
+        "name": "First Class Slumber - Cabin Noise",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Cruising Cloudcover - Cabin Noise",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Warmth+of+Vinyl"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

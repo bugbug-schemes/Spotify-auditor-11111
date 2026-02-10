@@ -1,0 +1,419 @@
+{
+  "artist_name": "dani dicostas",
+  "artist_id": "dani_dicostas",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:16:04.568322+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "34da5bb7-30ec-494a-882d-c9ae86536035",
+    "type": "Person",
+    "country": "ES",
+    "area": "Spain",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [
+      "dani",
+      "Daniela Díaz Costas"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/229228245",
+      "streaming": "https://tidal.com/artist/41742826"
+    },
+    "labels": [
+      "El Volcán Música"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 229228245,
+    "name": "dani dicostas",
+    "nb_fan": 139,
+    "nb_album": 28,
+    "link": "https://www.deezer.com/artist/229228245",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/27e82f8a8d08f5ce162a8d93b175eea8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "A L K E",
+      "D3llano",
+      "Kimberley Tell",
+      "Oscar Anton",
+      "Rusowsky"
+    ],
+    "contributor_roles": {
+      "Oscar Anton": [
+        "Main"
+      ],
+      "Rusowsky": [
+        "Main"
+      ],
+      "A L K E": [
+        "Main"
+      ],
+      "D3llano": [
+        "Main"
+      ],
+      "Kimberley Tell": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "homesick",
+      "Si te vas",
+      "Dónde estás (Rusowsky remix)",
+      "Dónde estás",
+      "Dónde estás (A L K E remix)",
+      "Drum & Bossa",
+      "Dolce Banana"
+    ],
+    "track_durations": [
+      171,
+      223,
+      176,
+      203,
+      236,
+      184,
+      142
+    ],
+    "track_ranks": [
+      329533,
+      192997,
+      180828,
+      16262,
+      22483,
+      95232,
+      95836
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 2,
+      "single": 22
+    },
+    "albums": [
+      {
+        "title": "Amores pasajeros",
+        "label": "",
+        "release_date": "2025-11-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Posdata",
+        "label": "",
+        "release_date": "2023-01-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Villancicos, Vol. III",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "veinte",
+        "label": "",
+        "release_date": "2020-07-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Drum & Bossa",
+        "label": "",
+        "release_date": "2022-11-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "dd sts rmxs",
+        "label": "",
+        "release_date": "2020-05-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Estadios",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bye bye",
+        "label": "",
+        "release_date": "2025-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mucho para ti",
+        "label": "",
+        "release_date": "2025-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desde otro lugar",
+        "label": "",
+        "release_date": "2025-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clímax",
+        "label": "",
+        "release_date": "2025-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ni una sola palabra",
+        "label": "",
+        "release_date": "2024-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "YO TAMBIÉN ME PORTO MAL",
+        "label": "",
+        "release_date": "2023-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ceras rosas (Remix DELVAL)",
+        "label": "",
+        "release_date": "2023-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NO SÉ QUÉ DECIRTE",
+        "label": "",
+        "release_date": "2023-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Códigos",
+        "label": "",
+        "release_date": "2022-10-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lento",
+        "label": "",
+        "release_date": "2022-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ceras rosas",
+        "label": "",
+        "release_date": "2022-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "postcard from Madrid",
+        "label": "",
+        "release_date": "2022-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rumore (From “Nasdrovia”)",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dolce Banana",
+        "label": "",
+        "release_date": "2021-06-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me da igual",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si te vas (Remix La Casa Azul)",
+        "label": "",
+        "release_date": "2020-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si te vas (Remix Ortiga)",
+        "label": "",
+        "release_date": "2020-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si te vas",
+        "label": "",
+        "release_date": "2020-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dónde estás",
+        "label": "",
+        "release_date": "2020-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lágrimas",
+        "label": "",
+        "release_date": "2020-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mira",
+        "label": "",
+        "release_date": "2019-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Alizzz",
+      "Alba Reche",
+      "fuel fandango",
+      "Delaporte",
+      "K!ngdom",
+      "Daniel Sabater",
+      "Cupido",
+      "La Bien Querida",
+      "Delafé y las flores azules",
+      "Carolina Durante"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "dani dicostas",
+    "mbid": "34da5bb7-30ec-494a-882d-c9ae86536035",
+    "listeners": 5190,
+    "playcount": 35263,
+    "listener_play_ratio": 6.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/dani+dicostas\">Read more on Last.fm</a>",
+    "tags": [
+      "spanish",
+      "spain"
+    ],
+    "similar_artists": [
+      "Pipiolas",
+      "Colectivo DA SILVA",
+      "_juno",
+      "vangoura",
+      "BlackPanda"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ni una sola palabra",
+        "listeners": 1068,
+        "playcount": 4348
+      },
+      {
+        "name": "Si te vas",
+        "listeners": 1060,
+        "playcount": 3772
+      },
+      {
+        "name": "YO TAMBIÉN ME PORTO MAL",
+        "listeners": 782,
+        "playcount": 3019
+      },
+      {
+        "name": "Clímax",
+        "listeners": 757,
+        "playcount": 1985
+      },
+      {
+        "name": "Lágrimas",
+        "listeners": 736,
+        "playcount": 2697
+      },
+      {
+        "name": "Ceras rosas",
+        "listeners": 692,
+        "playcount": 3324
+      },
+      {
+        "name": "Drum & Bossa",
+        "listeners": 542,
+        "playcount": 1379
+      },
+      {
+        "name": "Nubes",
+        "listeners": 421,
+        "playcount": 1808
+      },
+      {
+        "name": "Bye bye",
+        "listeners": 404,
+        "playcount": 884
+      },
+      {
+        "name": "Mira",
+        "listeners": 384,
+        "playcount": 1344
+      }
+    ],
+    "url": "https://www.last.fm/music/dani+dicostas"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

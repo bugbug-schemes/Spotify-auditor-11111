@@ -1,0 +1,682 @@
+{
+  "artist_name": "Post Malone",
+  "artist_id": "post_malone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:31:30.604708+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1995-07-04",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "country",
+      "pop rap",
+      "english",
+      "r&b",
+      "contemporary r&b",
+      "2010s",
+      "alternative r&b",
+      "trap",
+      "cloud rap",
+      "2020s"
+    ],
+    "aliases": [
+      "포스트 말론",
+      "Austin Post",
+      "Austin Richard Post",
+      "Austin Richard Post"
+    ],
+    "isnis": [
+      "0000000463129709"
+    ],
+    "ipis": [
+      "00786271111"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003426458",
+      "bandsintown": "https://www.bandsintown.com/a/7931668",
+      "BBC Music page": "https://www.bbc.co.uk/music/artists/b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
+      "discogs": "https://www.discogs.com/artist/4964238",
+      "fanpage": "https://www.theaudiodb.com/artist/145363",
+      "free streaming": "https://www.deezer.com/artist/7543848",
+      "image": "https://commons.wikimedia.org/wiki/File:Post_Malone_at_the_2019_American_Music_Awards.png",
+      "IMDb": "https://www.imdb.com/name/nm8203589/",
+      "last.fm": "https://www.last.fm/music/Post+Malone",
+      "lyrics": "https://www.musixmatch.com/artist/Post-Malone",
+      "official homepage": "http://www.postmalone.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2017000306",
+      "purchase for download": "https://mora.jp/artist/504678/all",
+      "purchase for mail-order": "https://www.cdjapan.co.jp/person/700745424",
+      "secondhandsongs": "https://secondhandsongs.com/artist/117123",
+      "setlistfm": "https://www.setlist.fm/setlists/post-malone-63c7def7.html",
+      "social network": "https://www.tiktok.com/@postmalone",
+      "songkick": "https://www.songkick.com/artists/8508053",
+      "soundcloud": "https://soundcloud.com/postmalone",
+      "streaming": "https://us.napster.com/artist/post-malone",
+      "ticketing": "https://www.ticketmaster.com/artist/2119390",
+      "VIAF": "http://viaf.org/viaf/81148449925215692823",
+      "video channel": "https://www.twitch.tv/postmalone",
+      "wikidata": "https://www.wikidata.org/wiki/Q21621919",
+      "youtube": "https://www.youtube.com/user/postmalone",
+      "youtube music": "https://music.youtube.com/channel/UCyD3XWRK9ko-izf2nBSFitw"
+    },
+    "labels": [
+      "PM:AM Recordings",
+      "Artistry Records",
+      "Grade A Productions",
+      "Atlantic",
+      "Epic",
+      "Universal Republic Records",
+      "Universal Records",
+      "Ultra Records",
+      "Taylor Swift",
+      "[no label]",
+      "Universal Music",
+      "Bad Boy Entertainment",
+      "Columbia",
+      "Universal",
+      "Big Loud Records",
+      "John Varvatos Records",
+      "Via Records",
+      "Republic Records",
+      "Mercury Records",
+      "Universal Music New Zealand"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7543848,
+    "name": "Post Malone",
+    "nb_fan": 4124722,
+    "nb_album": 39,
+    "link": "https://www.deezer.com/artist/7543848",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a5a8cca44e7eab2db7d44e039bed2574/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "21 Savage",
+      "BigXthaPlug",
+      "Blake Shelton",
+      "Doja Cat",
+      "Hank Williams Jr.",
+      "Jelly Roll",
+      "Luke Combs",
+      "Morgan Wallen",
+      "Noah Kahan",
+      "Ozzy Osbourne",
+      "Quavo",
+      "Swae Lee",
+      "Tim McGraw",
+      "Travis Scott",
+      "Ty Dolla $ign",
+      "Young Thug"
+    ],
+    "contributor_roles": {
+      "Swae Lee": [
+        "Main"
+      ],
+      "Morgan Wallen": [
+        "Featured",
+        "Main"
+      ],
+      "21 Savage": [
+        "Featured"
+      ],
+      "Young Thug": [
+        "Featured"
+      ],
+      "Noah Kahan": [
+        "Main"
+      ],
+      "Ty Dolla $ign": [
+        "Featured"
+      ],
+      "Quavo": [
+        "Featured"
+      ],
+      "Ozzy Osbourne": [
+        "Featured"
+      ],
+      "Travis Scott": [
+        "Featured"
+      ],
+      "Blake Shelton": [
+        "Featured"
+      ],
+      "Tim McGraw": [
+        "Featured"
+      ],
+      "Doja Cat": [
+        "Featured"
+      ],
+      "BigXthaPlug": [
+        "Main"
+      ],
+      "Luke Combs": [
+        "Featured"
+      ],
+      "Jelly Roll": [
+        "Featured"
+      ],
+      "Hank Williams Jr.": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Sunflower (Spider-Man: Into the Spider-Verse)",
+      "I Had Some Help",
+      "Better Now",
+      "rockstar",
+      "Goodbyes",
+      "I Ain't Comin' Back",
+      "Wow.",
+      "Dial Drunk",
+      "White Iverson",
+      "Circles",
+      "Psycho",
+      "I Fall Apart",
+      "Congratulations",
+      "Take What You Want",
+      "Pour Me A Drink",
+      "Wrong Ones",
+      "I Like You (A Happier Song)",
+      "Cold (feat. Post Malone)",
+      "Guy For That",
+      "Candy Paint",
+      "Go Flex",
+      "Losers",
+      "Chemical",
+      "Finer Things",
+      "Motley Crew"
+    ],
+    "track_durations": [
+      158,
+      178,
+      230,
+      219,
+      174,
+      175,
+      150,
+      213,
+      254,
+      215,
+      221,
+      226,
+      221,
+      231,
+      195,
+      196,
+      195,
+      188,
+      164,
+      229,
+      180,
+      209,
+      184,
+      183,
+      184
+    ],
+    "track_ranks": [
+      911954,
+      827612,
+      775321,
+      845803,
+      723370,
+      597235,
+      737238,
+      654579,
+      694580,
+      735474,
+      708850,
+      629312,
+      779403,
+      745342,
+      601846,
+      611913,
+      655052,
+      564777,
+      482038,
+      571261,
+      606061,
+      626368,
+      681862,
+      498372,
+      586730
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 12,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "F-1 Trillion",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "F-1 Trillion: Long Bed",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "AUSTIN",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "AUSTIN (Bonus)",
+        "label": "",
+        "release_date": "2023-08-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Diamond Collection",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Diamond Collection (Deluxe)",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Twelve Carat Toothache",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Twelve Carat Toothache (Deluxe)",
+        "label": "",
+        "release_date": "2022-06-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hollywood's Bleeding",
+        "label": "",
+        "release_date": "2019-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "beerbongs & bentleys",
+        "label": "",
+        "release_date": "2018-04-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stoney (Deluxe)",
+        "label": "",
+        "release_date": "2016-12-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stoney (Complete Edition)",
+        "label": "",
+        "release_date": "2021-12-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cold (feat. Post Malone)",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brother",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Ain't Comin' Back",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Don't Know How To Say Goodbye (Bang Bang Boom Boom)",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Guy For That",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pour Me A Drink",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Had Some Help",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dial Drunk",
+        "label": "",
+        "release_date": "2023-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Overdrive",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mourning",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chemical",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cooped Up / Return Of The Mack",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cooped Up",
+        "label": "",
+        "release_date": "2022-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Right Now",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Motley Crew",
+        "label": "",
+        "release_date": "2021-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Life's A Mess II",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Only Wanna Be With You (Pokémon 25 Version)",
+        "label": "",
+        "release_date": "2021-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tommy Lee (feat. SAINt JHN & Post Malone) (Remix)",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Russ",
+      "Wiz Khalifa",
+      "Drake",
+      "SAINt JHN",
+      "Ty Dolla $ign",
+      "Future",
+      "DJ Khaled",
+      "Young Thug",
+      "G-Eazy",
+      "Jack Harlow"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4016434,
+    "name": "Post Malone",
+    "profile": "Austin Richard Post (born July 4, 1995), known professionally as Post Malone, is an American rapper, singer, songwriter, record producer, and guitarist. He first gained major recognition in February 2015, after the release of his debut single \"White Iverson\". In August 2015, Malone landed a record deal with Republic Records. On December 9, 2016, he released his debut studio album Stoney.\r\n\r\nMalone was born in Syracuse, New York. When he was 9 years old, he and his family moved to Grapevine, Texas. He enjoyed playing basketball and watching sports. His father was the Dallas Cowboys' assistant director of food and beverage, so Malone was able to get free food and tickets to their games. Malone began to play the guitar and auditioned for the band Crown the Empire in 2010, but was rejected after his guitar strings broke during the audition. He credited his initial interest in learning guitar to the popular video game Guitar Hero.\r\n\r\nMalone first began learning how to produce music through ",
+    "realname": "Austin Richard Post",
+    "social_urls": [
+      "http://www.postmalone.com",
+      "",
+      "http://discord.com/invite/post-malone",
+      "http://www.facebook.com/postmalone",
+      "http://www.instagram.com/postmalone",
+      "",
+      "http://soundcloud.com/postmalone",
+      "http://www.tiktok.com/@postmalone",
+      "http://www.twitch.tv/postmalone",
+      "http://twitter.com/PostMalone",
+      "http://en.wikipedia.org/wiki/Post_Malone",
+      "http://www.youtube.com/POSTMALONE"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 14,
+    "digital_only_releases": 86,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, MP3, Album, VBR",
+      "11xFile, AAC, Album, 256",
+      "12\", RSD, Single, Ltd, Red",
+      "15xFile, AAC, Album, 256",
+      "15xFile, MP3, Album",
+      "25xFile, AAC, Album, 256",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "3\", S/Sided, Single",
+      "3\", S/Sided, Single, Tra + 3\", S/Sided, Single, Tr",
+      "34xFile, MP3, Comp, Mixtape",
+      "3xCD, Mixed",
+      "4\", Single, Ltd, Gat",
+      "5xFile, AAC, EP, 256",
+      "6xCD, Comp + Box",
+      "6xFile, AAC, EP, 256",
+      "6xFile, MP3, EP, 320",
+      "Album, Atm + File, AAC, WAV, MP3Sur, Album",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CD, Comp, Club",
+      "CDr, Comp, Promo, Smplr",
+      "CDr, Mixtape",
+      "CDr, Single, Promo",
+      "File, AAC, Single, 256",
+      "File, FLAC, Single, 24 ",
+      "File, FLAC, Single, 24-",
+      "File, MP3, WAV, MP3Sur, Single",
+      "LP, Comp, Hot + LP, Comp, Yel",
+      "Single + File, AAC, MP3, WAV, Single"
+    ],
+    "labels": [
+      "Atlantic",
+      "BLKCARD",
+      "Chesky Records",
+      "Columbia, Sony Music",
+      "Indieboom Music Group",
+      "MTAP",
+      "Mercury, Republic Records",
+      "Mercury, Republic Records, Tiny Vinyl (2)",
+      "Ministry Of Sound",
+      "Nacional Records",
+      "Not On Label",
+      "Not On Label (D At Sea Self-released)",
+      "Positiva",
+      "RCA",
+      "Republic Records",
+      "Republic Records, Republic Records",
+      "The Sausage Factory",
+      "UMG Recordings, Inc.",
+      "Universal Music",
+      "Universal Music Group",
+      "Universal Music Group, Sony Music",
+      "Universal Music Group, Warner Music Spain, Sony Music",
+      "Universal Music, Brunswick",
+      "Warner Music Germany, Sony Music, Universal Music Group",
+      "Warner Music Japan",
+      "We Are Triumphant",
+      "Young Money",
+      "mudhutdigital.com"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Post Malone",
+    "mbid": "b1e26560-60e5-4236-bbdb-9aa5a8d5ee19",
+    "listeners": 3458110,
+    "playcount": 323668071,
+    "listener_play_ratio": 93.6,
+    "bio_exists": true,
+    "bio_summary": "Austin Richard Post, known professionally as Post Malone, is an American rapper, singer, songwriter, record producer, and actor, born on July 4, 1995. He is recognized for blending a variety of music genres, including hip-hop, pop, R&B, trap, and country. His stage name was created by entering his birth name into a rap name generator.\n\nPost Malone began his music career in 2011 and gained significant attention with his debut single \"White Iverson\" in 2015, which peaked at number 14 on the Billbo",
+    "tags": [
+      "Hip-Hop",
+      "rap",
+      "trap",
+      "cloud rap",
+      "pop"
+    ],
+    "similar_artists": [
+      "Tyla Yaweh",
+      "The Kid LAROI",
+      "iann dior",
+      "24kGoldn",
+      "G-Eazy"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sunflower - Spider-Man: Into the Spider-Verse",
+        "listeners": 1718099,
+        "playcount": 25351071
+      },
+      {
+        "name": "Circles",
+        "listeners": 1477518,
+        "playcount": 21353018
+      },
+      {
+        "name": "rockstar (feat. 21 Savage)",
+        "listeners": 1183182,
+        "playcount": 12667080
+      },
+      {
+        "name": "Congratulations",
+        "listeners": 1078536,
+        "playcount": 10759927
+      },
+      {
+        "name": "Better Now",
+        "listeners": 1048790,
+        "playcount": 11970309
+      },
+      {
+        "name": "Wow.",
+        "listeners": 908287,
+        "playcount": 10266001
+      },
+      {
+        "name": "White Iverson",
+        "listeners": 810106,
+        "playcount": 8370103
+      },
+      {
+        "name": "I Like You (A Happier Song) (with Doja Cat)",
+        "listeners": 744185,
+        "playcount": 7841137
+      },
+      {
+        "name": "I Fall Apart",
+        "listeners": 727656,
+        "playcount": 7604435
+      },
+      {
+        "name": "Goodbyes (feat. Young Thug)",
+        "listeners": 712000,
+        "playcount": 8867924
+      }
+    ],
+    "url": "https://www.last.fm/music/Post+Malone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

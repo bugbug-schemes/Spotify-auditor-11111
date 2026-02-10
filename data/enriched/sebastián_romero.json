@@ -1,0 +1,517 @@
+{
+  "artist_name": "Sebastián Romero",
+  "artist_id": "sebastián_romero",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:57:58.248786+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4dfbca2e-d8be-41d2-84af-4cbd57c9dbe0",
+    "type": "Person",
+    "country": "MX",
+    "area": "Mexico",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/5414788",
+      "purchase for download": "https://rarible.com/sebastianromero",
+      "social network": "https://www.threads.com/@sebastianromeromusica",
+      "streaming": "https://music.apple.com/fr/artist/778899241",
+      "youtube": "https://www.youtube.com/channel/UCSZBqqpYeW0uyCy1WNptc7w"
+    },
+    "labels": [
+      "Sebastián Romero"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5414788,
+    "name": "Sebastián Romero",
+    "nb_fan": 7986,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/5414788",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8d7325b3e2043868a61322e0d1146ace/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Daniel, Me Estás Matando",
+      "Kevin Kaarl",
+      "Les Cafeteres",
+      "Recoversión",
+      "Sebastian Romero",
+      "Thyan V",
+      "Una Canción Bonita"
+    ],
+    "contributor_roles": {
+      "Sebastian Romero": [
+        "Main"
+      ],
+      "Una Canción Bonita": [
+        "Main"
+      ],
+      "Daniel, Me Estás Matando": [
+        "Main"
+      ],
+      "Recoversión": [
+        "Main"
+      ],
+      "Kevin Kaarl": [
+        "Main"
+      ],
+      "Thyan V": [
+        "Main"
+      ],
+      "Les Cafeteres": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "¿A Qué Te Sabe el Café?",
+      "Catorce",
+      "Bonita",
+      "Cada Vez Te Extraño Menos",
+      "Mejor Como Amigos",
+      "La Mujer Perfecta",
+      "Cómplices",
+      "Visiones",
+      "Delincuente",
+      "Tu Juguete Favorito",
+      "Platícame de Ti",
+      "La Canción",
+      "Si Te Preguntan por Mí",
+      "Si Tú Quieres (Aprenderte)",
+      "Imagíname",
+      "Esta Canción Es para Ti (Electroshock)",
+      "Comenzó a Llover",
+      "Más y Más",
+      "Oye, Me Gustas",
+      "Mil Vidas",
+      "¿Te Acuerdas?",
+      "Hasta Viejos",
+      "¿A Qué Te Sabe el Café? (Demo)",
+      "Sola (Bolero)",
+      "Ocupada"
+    ],
+    "track_durations": [
+      211,
+      224,
+      221,
+      162,
+      138,
+      273,
+      183,
+      157,
+      158,
+      170,
+      250,
+      253,
+      212,
+      235,
+      201,
+      204,
+      192,
+      208,
+      178,
+      136,
+      183,
+      230,
+      207,
+      115,
+      147
+    ],
+    "track_ranks": [
+      213247,
+      245549,
+      195870,
+      159263,
+      128492,
+      19604,
+      165821,
+      156209,
+      19906,
+      66990,
+      139680,
+      79545,
+      207339,
+      91959,
+      67418,
+      7879,
+      61159,
+      224267,
+      104374,
+      77266,
+      141018,
+      148808,
+      118025,
+      18378,
+      66282
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 15,
+      "ep": 7,
+      "single": 78
+    },
+    "albums": [
+      {
+        "title": "SAD MAFIA",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Comenzó Con un Café",
+        "label": "",
+        "release_date": "2025-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Todo Lo Que Te Escribí",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alguien Me Quiere",
+        "label": "",
+        "release_date": "2025-01-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Las Canciones Más Hermosas Son para Ti",
+        "label": "",
+        "release_date": "2024-04-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hice Esta Playlist Pensando en Ti",
+        "label": "",
+        "release_date": "2023-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Carta de Amor (Acústico)",
+        "label": "",
+        "release_date": "2023-09-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solo Café, Vol. 2 (Piano)",
+        "label": "",
+        "release_date": "2023-07-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Solo Café (Volumen Uno) (Acústico)",
+        "label": "",
+        "release_date": "2023-01-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "GKM Presenta: La Manada",
+        "label": "",
+        "release_date": "2023-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Canciones Sobre el Océano",
+        "label": "",
+        "release_date": "2022-10-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Midnight Vibez",
+        "label": "",
+        "release_date": "2022-09-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Por Si No Te Vuelvo a Ver, Te Quiero",
+        "label": "",
+        "release_date": "2021-03-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Habitación",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Conversaciones Ajenas en un Café",
+        "label": "",
+        "release_date": "2019-05-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Le Conté de Ti a las Flores",
+        "label": "",
+        "release_date": "2025-04-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Carmesí (En Vivo)",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Frida",
+        "label": "",
+        "release_date": "2023-09-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "5Mentarios, Vol. 1",
+        "label": "",
+        "release_date": "2023-07-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mientras Bailamos Bajo la Lluvia",
+        "label": "",
+        "release_date": "2022-11-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Cada Vez Te Extraño Menos",
+        "label": "",
+        "release_date": "2022-11-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "triste pero no tantO",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "La Más Bonita Del Party",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si Te Preguntan por Mí",
+        "label": "",
+        "release_date": "2026-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Visiones",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mejor Como Amigos",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Así Llegaste",
+        "label": "",
+        "release_date": "2026-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "¿Qué Me Hiciste?",
+        "label": "",
+        "release_date": "2026-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tus Besos Me Gustan Más",
+        "label": "",
+        "release_date": "2025-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Una Mariposa",
+        "label": "",
+        "release_date": "2025-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Santi Muk",
+      "Jose y el Toro",
+      "Mi Sobrino Memo",
+      "Marco Mares",
+      "La Isla Centeno",
+      "Simon Grossmann",
+      "Sous-Sol",
+      "Arroba Nat",
+      "Bratty",
+      "Jósean Log"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2189666,
+    "name": "Sebastián Romero",
+    "profile": "Jazz pianist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 0,
+    "total_releases": 5,
+    "formats": [
+      "2xCD, Comp",
+      "CD, Album, Enh",
+      "CD, EP, Pri + File, MP3"
+    ],
+    "labels": [
+      "Free Code Jazz Records",
+      "LosPetitFellas",
+      "Vinagreberry Fields"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sebastián Romero",
+    "mbid": "4dfbca2e-d8be-41d2-84af-4cbd57c9dbe0",
+    "listeners": 37175,
+    "playcount": 386713,
+    "listener_play_ratio": 10.4,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sebasti%C3%A1n+Romero\">Read more on Last.fm</a>",
+    "tags": [
+      "latin",
+      "singer-songwriter",
+      "mexico"
+    ],
+    "similar_artists": [
+      "Mi Sobrino Memo",
+      "Daniel, Me Estás Matando",
+      "Caloncho",
+      "León Larregui",
+      "Los Rumberos"
+    ],
+    "top_tracks": [
+      {
+        "name": "Catorce",
+        "listeners": 13412,
+        "playcount": 98591
+      },
+      {
+        "name": "¿A Qué Te Sabe El Café?",
+        "listeners": 8147,
+        "playcount": 47188
+      },
+      {
+        "name": "Bonita",
+        "listeners": 7320,
+        "playcount": 40673
+      },
+      {
+        "name": "Cada Vez Te Extraño Menos",
+        "listeners": 6194,
+        "playcount": 28349
+      },
+      {
+        "name": "Más y Más",
+        "listeners": 5763,
+        "playcount": 30516
+      },
+      {
+        "name": "¿A Qué Te Sabe el Café? - Demo",
+        "listeners": 1914,
+        "playcount": 12760
+      },
+      {
+        "name": "La Canción",
+        "listeners": 1853,
+        "playcount": 6561
+      },
+      {
+        "name": "Hasta Viejos",
+        "listeners": 1616,
+        "playcount": 9945
+      },
+      {
+        "name": "Ya Casi Te Olvido",
+        "listeners": 1311,
+        "playcount": 6954
+      },
+      {
+        "name": "Me Haces Muy Bien - Acústico",
+        "listeners": 1121,
+        "playcount": 3191
+      }
+    ],
+    "url": "https://www.last.fm/music/Sebasti%C3%A1n+Romero"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,115 @@
+{
+  "artist_name": "Patrick Leon",
+  "artist_id": "patrick_leon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:22:57.712543+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Patrick Leon', got 'Patrick Hernandez'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5354771,
+    "name": "Patrick Leon",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Les Difficiles De New York"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP, Album"
+    ],
+    "labels": [
+      "Maggy Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Patrick Leon",
+    "mbid": "",
+    "listeners": 2154,
+    "playcount": 4449,
+    "listener_play_ratio": 2.07,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Patrick+Leon\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lewis Knight",
+      "Tarragona Heights",
+      "Benjamin Kind",
+      "Vaughn Harper",
+      "Malik Ramirez"
+    ],
+    "top_tracks": [
+      {
+        "name": "Morning Sunshine",
+        "listeners": 981,
+        "playcount": 2170
+      },
+      {
+        "name": "White Christmas",
+        "listeners": 835,
+        "playcount": 1487
+      },
+      {
+        "name": "The Garden",
+        "listeners": 388,
+        "playcount": 762
+      },
+      {
+        "name": "Björnen sover",
+        "listeners": 3,
+        "playcount": 19
+      },
+      {
+        "name": "On the Other Side",
+        "listeners": 3,
+        "playcount": 11
+      }
+    ],
+    "url": "https://www.last.fm/music/Patrick+Leon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

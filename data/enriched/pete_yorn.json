@@ -1,0 +1,565 @@
+{
+  "artist_name": "Pete Yorn",
+  "artist_id": "pete_yorn",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:25:15.898867+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3533dea4-218c-4fc9-ab6e-2e3dc0ffde6e",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1974-07-27",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "rock"
+    ],
+    "aliases": [
+      "Peter Joseph Yorn"
+    ],
+    "isnis": [
+      "0000000055187299"
+    ],
+    "ipis": [
+      "00344551568"
+    ],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000844043",
+      "bandcamp": "https://peteyorn.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/253426",
+      "free streaming": "https://www.deezer.com/artist/2205",
+      "IMDb": "https://www.imdb.com/name/nm0948832/",
+      "last.fm": "https://www.last.fm/music/Pete+Yorn",
+      "myspace": "https://myspace.com/peteyorn",
+      "official homepage": "http://www.peteyorn.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2002040899",
+      "social network": "https://www.facebook.com/peteyorn",
+      "songkick": "https://www.songkick.com/artists/2030465",
+      "streaming": "https://tidal.com/artist/954",
+      "VIAF": "http://viaf.org/viaf/59285064",
+      "wikidata": "https://www.wikidata.org/wiki/Q939105",
+      "youtube": "https://www.youtube.com/channel/UCBtU53978eaEmCbwUsucgWA"
+    },
+    "labels": [
+      "Sony BMG Music Entertainment",
+      "Vagrant Records",
+      "ATCO Records",
+      "Shelly Music",
+      "Warner Music France",
+      "Rhino",
+      "Because Music",
+      "Boyletown Music",
+      "Capital Records",
+      "Earwolf",
+      "Sony Records International",
+      "Columbia",
+      "Capitol Records",
+      "Legacy",
+      "Columbia Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 2205,
+    "name": "Pete Yorn",
+    "nb_fan": 13664,
+    "nb_album": 50,
+    "link": "https://www.deezer.com/artist/2205",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/104d44a4bf2299bdd8cbc24e794fdb88/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Scarlett Johansson"
+    ],
+    "contributor_roles": {
+      "Scarlett Johansson": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Relator",
+      "Just Another",
+      "The Hard Way",
+      "Strange Condition",
+      "Life On a Chain",
+      "Lose You",
+      "Long Way Down",
+      "For Nancy ('Cos It Already Is)",
+      "Ever Fallen In Love (From the Motion Picture \"Shrek 2\")",
+      "Elizabeth Taylor",
+      "Never Go",
+      "Also, Roses",
+      "Closet",
+      "Black",
+      "Search Your Heart",
+      "June",
+      "Blood",
+      "Miss Alien",
+      "Stay Away",
+      "Ransom",
+      "Fred & Wilma",
+      "'Til The End",
+      "Blackie's Dead",
+      "On Your Side",
+      "Bad Dreams"
+    ],
+    "track_durations": [
+      153,
+      194,
+      236,
+      237,
+      225,
+      275,
+      218,
+      210,
+      153,
+      195,
+      156,
+      202,
+      183,
+      251,
+      181,
+      154,
+      213,
+      207,
+      195,
+      236,
+      188,
+      219,
+      157,
+      302,
+      204
+    ],
+    "track_ranks": [
+      669453,
+      237346,
+      538455,
+      377786,
+      254694,
+      324843,
+      135666,
+      122319,
+      348691,
+      40414,
+      134021,
+      106270,
+      99652,
+      101752,
+      227176,
+      72080,
+      105170,
+      88380,
+      84766,
+      85582,
+      102678,
+      67933,
+      280714,
+      199858,
+      313205
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 20,
+      "ep": 12,
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "The Hard Way",
+        "label": "",
+        "release_date": "2024-08-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pete Yorn: Live From Philadelphia 11.24.01",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pete Yorn: Live At The Fonda",
+        "label": "",
+        "release_date": "2022-09-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hawaii",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pete Yorn Sings the Classics",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at the Troubadour",
+        "label": "",
+        "release_date": "2020-06-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Caretakers",
+        "label": "",
+        "release_date": "2019-08-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ArrangingTime",
+        "label": "",
+        "release_date": "2016-03-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at KCRW 3/27/2001",
+        "label": "",
+        "release_date": "2011-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pete Yorn",
+        "label": "",
+        "release_date": "2010-09-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pete Yorn",
+        "label": "",
+        "release_date": "2010-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pete Yorn (Deluxe Version)",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Back and Fourth (Expanded Edition)",
+        "label": "",
+        "release_date": "2009-06-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Break Up",
+        "label": "",
+        "release_date": "2009-08-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nightcrawler",
+        "label": "",
+        "release_date": "2009-03-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nightcrawler (Expanded Edition)",
+        "label": "",
+        "release_date": "2006-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Day I Forgot (Expanded Edition)",
+        "label": "",
+        "release_date": "2003-04-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at the Roxy",
+        "label": "",
+        "release_date": "2001-06-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "musicforthemorningafter",
+        "label": "",
+        "release_date": "2001-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "musicforthemorningafter (Expanded Edition)",
+        "label": "",
+        "release_date": "2001-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Cardboard Sessions",
+        "label": "",
+        "release_date": "2025-12-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ever Fallen In Love EP",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rooftop EP (20 years of musicforthemorningafter)",
+        "label": "",
+        "release_date": "2021-05-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Day I Forgot: Live From LA 2003 EP",
+        "label": "",
+        "release_date": "2020-08-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Strange Isolation EP",
+        "label": "",
+        "release_date": "2020-05-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Apart",
+        "label": "",
+        "release_date": "2018-06-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Westerns",
+        "label": "",
+        "release_date": "2017-02-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Demos EP: Garage Sessions Vol. 1",
+        "label": "",
+        "release_date": "2009-09-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Live at Lollapalooza 2007",
+        "label": "",
+        "release_date": "2007-09-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Live in LA - 2006",
+        "label": "",
+        "release_date": "2006-10-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "Eels",
+      "Revolver",
+      "Robert Francis",
+      "Matt Costa",
+      "Ryan Adams",
+      "Kate Nash",
+      "John Butler Trio",
+      "The Shins",
+      "The National",
+      "Regina Spektor"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 253426,
+    "name": "Pete Yorn",
+    "profile": "American singer and songwriter, born 27 July 1974 in Montville, New Jersey, USA.",
+    "realname": "Peter Joseph Yorn",
+    "social_urls": [
+      "http://www.peteyorn.com/",
+      "https://peteyorn.bandcamp.com/",
+      "https://www.facebook.com/peteyorn",
+      "http://myspace.com/peteyorn",
+      "http://en.wikipedia.org/wiki/Pete_Yorn"
+    ],
+    "members": [],
+    "groups": [
+      "The Olms",
+      "The Lonely Hearts Choir"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 50,
+    "digital_only_releases": 50,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "11xFile, AAC, 256",
+      "2xCDr, Transcription",
+      "5xCDr, Album, Ltd",
+      "5xFile, AAC, EP, 256",
+      "5xFile, MP3, 320",
+      "6xFile, MP3, EP",
+      "7\", Single, Ltd, Num, Blu",
+      "CD, Album, RE + CD, Album, RE + Box, Comp, Lim",
+      "CD, Comp, Enh, Promo",
+      "CD, EP",
+      "CD, EP, Ltd",
+      "CD, EP, Promo",
+      "CD, Enh, Promo, Smplr",
+      "CD, Promo",
+      "CD, Promo, Smplr",
+      "CD, Single, Promo",
+      "CDr, EP",
+      "CDr, EP, Ltd",
+      "CDr, EP, Promo",
+      "CDr, Promo, Smplr",
+      "CDr, Single, Promo",
+      "File, FLAC, Single"
+    ],
+    "labels": [
+      "Atco Records",
+      "Columbia",
+      "Columbia, Columbia",
+      "Columbia, Red Ink",
+      "Columbia, Visions Magazine",
+      "Daytrotter",
+      "Music For The Masses",
+      "Red Ink",
+      "Red Ink, Columbia",
+      "Shelly Music (2)",
+      "Warner Music France, ATCO Records, ATCO Records",
+      "Westwood One"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pete Yorn",
+    "mbid": "3533dea4-218c-4fc9-ab6e-2e3dc0ffde6e",
+    "listeners": 729531,
+    "playcount": 9675713,
+    "listener_play_ratio": 13.26,
+    "bio_exists": true,
+    "bio_summary": "Pete Yorn (b. July 27, 1974) is an American singer-songwriter and guitarist originally from Montville, New Jersey, United States.\n\nYorn started as a drummer who also played guitar. In 1990, he was drumming for his band in a high school talent contest when someone suggested he sing the Replacements song \"Talent Show.\" That went over so well, a competing band asked him to sing Neil Young’s \"Rockin' In the Free World\" with them.\n\nHe was first recognized when the Farrelly brothers picked \"Strange Co",
+    "tags": [
+      "singer-songwriter",
+      "indie",
+      "alternative",
+      "rock",
+      "indie rock"
+    ],
+    "similar_artists": [
+      "Ryan Adams & The Cardinals",
+      "Ryan Adams",
+      "Guster",
+      "Better Than Ezra",
+      "Pete Yorn & Scarlett Johansson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lose You",
+        "listeners": 109041,
+        "playcount": 702295
+      },
+      {
+        "name": "Strange Condition",
+        "listeners": 104682,
+        "playcount": 514898
+      },
+      {
+        "name": "Just Another",
+        "listeners": 103607,
+        "playcount": 476103
+      },
+      {
+        "name": "Life On A Chain",
+        "listeners": 98556,
+        "playcount": 427202
+      },
+      {
+        "name": "Ever Fallen In Love",
+        "listeners": 89786,
+        "playcount": 449131
+      },
+      {
+        "name": "On Your Side",
+        "listeners": 76492,
+        "playcount": 292908
+      },
+      {
+        "name": "Relator",
+        "listeners": 61397,
+        "playcount": 250708
+      },
+      {
+        "name": "EZ",
+        "listeners": 56478,
+        "playcount": 227198
+      },
+      {
+        "name": "June",
+        "listeners": 55074,
+        "playcount": 187832
+      },
+      {
+        "name": "Black",
+        "listeners": 54919,
+        "playcount": 201441
+      }
+    ],
+    "url": "https://www.last.fm/music/Pete+Yorn"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

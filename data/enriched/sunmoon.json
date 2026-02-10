@@ -1,0 +1,500 @@
+{
+  "artist_name": "Sunmoon",
+  "artist_id": "sunmoon",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:30:31.854385+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2ed47462-fac8-4eed-a5a2-44a4babd5ee3",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/13221660",
+      "free streaming": "https://open.spotify.com/artist/5AUNYfOEjduhpVTnozqYxv",
+      "social network": "https://www.instagram.com/sunmoon.official/"
+    },
+    "labels": [
+      "vybrant"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7179824,
+    "name": "Sunmoon",
+    "nb_fan": 230,
+    "nb_album": 56,
+    "link": "https://www.deezer.com/artist/7179824",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b085017bad69d4ab83b13f129715253e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Johanson",
+      "Julianna Townsend",
+      "S:NE",
+      "wavecrvsh"
+    ],
+    "contributor_roles": {
+      "wavecrvsh": [
+        "Main"
+      ],
+      "Johanson": [
+        "Main"
+      ],
+      "S:NE": [
+        "Main"
+      ],
+      "Julianna Townsend": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Messy",
+      "Memories",
+      "In My World",
+      "Ooo La La La",
+      "In My House",
+      "Go Insane",
+      "Over You",
+      "Dreamin'",
+      "Feelings",
+      "Just the Two of Us",
+      "Wonder",
+      "Miami Beach",
+      "Can't Get You out of My Head",
+      "Blank Space",
+      "When Love Takes Over",
+      "Wish I Told You So",
+      "Better with You"
+    ],
+    "track_durations": [
+      155,
+      167,
+      164,
+      162,
+      181,
+      130,
+      158,
+      149,
+      154,
+      137,
+      145,
+      129,
+      145,
+      162,
+      152,
+      167,
+      155
+    ],
+    "track_ranks": [
+      316577,
+      218718,
+      299315,
+      510857,
+      335385,
+      210731,
+      228891,
+      332013,
+      258235,
+      277673,
+      183372,
+      306535,
+      316117,
+      167566,
+      230876,
+      103198,
+      89817
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 3,
+      "single": 52
+    },
+    "albums": [
+      {
+        "title": "And the Stars",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Your Light",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Moon",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Headspace",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shade",
+        "label": "",
+        "release_date": "2026-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bossa Rosa",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bubble",
+        "label": "",
+        "release_date": "2025-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vell",
+        "label": "",
+        "release_date": "2025-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweater Weather",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night walk",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maple",
+        "label": "",
+        "release_date": "2025-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Delete",
+        "label": "",
+        "release_date": "2025-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grass",
+        "label": "",
+        "release_date": "2025-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "22:22",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jellyfish",
+        "label": "",
+        "release_date": "2025-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I slide",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Over and Over Again",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "В душе война",
+        "label": "",
+        "release_date": "2025-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Señorita",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Too Good to You",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Skies",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Messy",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gravity",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mean It",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stars",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Light",
+        "label": "",
+        "release_date": "2024-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Got Me",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Show Me How to Love",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feelings",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamin'",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "John Skyfield",
+      "Nexeri",
+      "Cupido",
+      "Fini",
+      "Namté",
+      "Namic",
+      "James Lacey",
+      "James Stefano",
+      "Viva La Panda",
+      "Eneko Artola"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1265798,
+    "name": "Sunmoon",
+    "profile": "",
+    "realname": "Sorin Paun",
+    "social_urls": [
+      "http://thespacepod.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 8,
+    "total_releases": 14,
+    "formats": [
+      "",
+      "10xFile, MP3, Album, 192 + 2xFile, MP3, Album, 320",
+      "15xFile, MP3, Comp",
+      "35xFile, MP3, Comp, 320",
+      "3xFile, MP3, Album, 256",
+      "CD, Comp, Promo, Car",
+      "CDr",
+      "CDr, Album, Ltd",
+      "CDr, Ltd",
+      "CDr, Mini",
+      "CDr, Promo, Smplr",
+      "File, MP3",
+      "File, MP3, 160 + File, MP3, 192 + 2xFile, MP3, 256",
+      "File, MP3, Mixed, VBR"
+    ],
+    "labels": [
+      "Amduscias Records",
+      "Audiotalaia",
+      "Disctronics",
+      "Drô6n Records",
+      "Essentia Mundi",
+      "INQ Mag",
+      "Not On Label",
+      "Timetheory",
+      "Witte Dood Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sunmoon",
+    "mbid": "2ed47462-fac8-4eed-a5a2-44a4babd5ee3",
+    "listeners": 28779,
+    "playcount": 163231,
+    "listener_play_ratio": 5.67,
+    "bio_exists": true,
+    "bio_summary": "http://thespacepod.bandcamp.com <a href=\"https://www.last.fm/music/Sunmoon\">Read more on Last.fm</a>",
+    "tags": [
+      "dark ambient",
+      "ambient",
+      "House",
+      "noise",
+      "under 2000 listeners"
+    ],
+    "similar_artists": [
+      "MNTN RVR",
+      "sunsets & sandals",
+      "Moon Groove",
+      "Mellowdy",
+      "MUNICH MONSTRS"
+    ],
+    "top_tracks": [
+      {
+        "name": "Just the Two of Us",
+        "listeners": 9790,
+        "playcount": 34370
+      },
+      {
+        "name": "Go Insane",
+        "listeners": 6478,
+        "playcount": 17579
+      },
+      {
+        "name": "When Love Takes Over",
+        "listeners": 6471,
+        "playcount": 22412
+      },
+      {
+        "name": "Over You",
+        "listeners": 5542,
+        "playcount": 16276
+      },
+      {
+        "name": "Memories",
+        "listeners": 3193,
+        "playcount": 10915
+      },
+      {
+        "name": "Ooo La La La",
+        "listeners": 2142,
+        "playcount": 8384
+      },
+      {
+        "name": "Can't Get You out of My Head",
+        "listeners": 2007,
+        "playcount": 5680
+      },
+      {
+        "name": "Your Light",
+        "listeners": 1752,
+        "playcount": 4128
+      },
+      {
+        "name": "Wonder",
+        "listeners": 1359,
+        "playcount": 2511
+      },
+      {
+        "name": "In My World",
+        "listeners": 1276,
+        "playcount": 3274
+      }
+    ],
+    "url": "https://www.last.fm/music/Sunmoon"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

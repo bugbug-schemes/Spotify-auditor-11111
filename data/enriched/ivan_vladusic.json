@@ -1,0 +1,252 @@
+{
+  "artist_name": "Ivan Vladusic",
+  "artist_id": "ivan_vladusic",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:18:31.490861+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "0610fbe2-b016-4802-af83-a1fafdba56bf",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183266087",
+      "purchase for download": "https://music.apple.com/us/artist/1648472420",
+      "streaming": "https://tidal.com/artist/34514055",
+      "youtube music": "https://music.youtube.com/channel/UCpdgfG0DgwiyzApakryS1jw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183266087,
+    "name": "Ivan Vladusic",
+    "nb_fan": 8,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/183266087",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/30761600a007d5c4b92eb4aa54d3965f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Volga",
+      "Grand Canyon",
+      "In Essence",
+      "All Glory, Laud and Honour"
+    ],
+    "track_durations": [
+      169,
+      170,
+      224,
+      200
+    ],
+    "track_ranks": [
+      77117,
+      109979,
+      12682,
+      3424
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "All Glory, Laud and Honour",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What A Friend We Have In Jesus",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At the Cross",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grand Canyon",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Settlers",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ambiguos",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volga",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Greetings From Earth",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miracles",
+        "label": "",
+        "release_date": "2021-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter´s Passing",
+        "label": "",
+        "release_date": "2020-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Conversation",
+        "label": "",
+        "release_date": "2020-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ivan Vladusic",
+    "mbid": "0610fbe2-b016-4802-af83-a1fafdba56bf",
+    "listeners": 66443,
+    "playcount": 327939,
+    "listener_play_ratio": 4.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ivan+Vladusic\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Valentina Romano",
+      "Abelin Lagarde",
+      "Damien Jeunet",
+      "Reinhard Krause",
+      "Taganema"
+    ],
+    "top_tracks": [
+      {
+        "name": "Grand Canyon",
+        "listeners": 24963,
+        "playcount": 117225
+      },
+      {
+        "name": "Volga",
+        "listeners": 22273,
+        "playcount": 62400
+      },
+      {
+        "name": "Quiet Conversation",
+        "listeners": 8647,
+        "playcount": 32245
+      },
+      {
+        "name": "In Essence",
+        "listeners": 8285,
+        "playcount": 30214
+      },
+      {
+        "name": "Ambiguos",
+        "listeners": 7312,
+        "playcount": 16517
+      },
+      {
+        "name": "Song of Solitude",
+        "listeners": 6922,
+        "playcount": 30888
+      },
+      {
+        "name": "Revelation",
+        "listeners": 4139,
+        "playcount": 17069
+      },
+      {
+        "name": "Woodlands",
+        "listeners": 3627,
+        "playcount": 10690
+      },
+      {
+        "name": "Involution",
+        "listeners": 1694,
+        "playcount": 4478
+      },
+      {
+        "name": "Winter´s Passing",
+        "listeners": 946,
+        "playcount": 1832
+      }
+    ],
+    "url": "https://www.last.fm/music/Ivan+Vladusic"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

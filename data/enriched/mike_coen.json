@@ -1,0 +1,340 @@
+{
+  "artist_name": "Mike Coen",
+  "artist_id": "mike_coen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:42:45.748115+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f2b9c487-02bb-4605-a5c5-dd05bf94536b",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/9220720",
+      "purchase for download": "https://music.apple.com/us/artist/450241582",
+      "soundcloud": "https://soundcloud.com/mikecoen",
+      "streaming": "https://tidal.com/artist/13619352",
+      "youtube music": "https://music.youtube.com/channel/UC3DusF4h_DgGKmwfxYqCe1A"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9220720,
+    "name": "Mike Coen",
+    "nb_fan": 17,
+    "nb_album": 18,
+    "link": "https://www.deezer.com/artist/9220720",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5e557ce4d83fbd7c2e469434fe32226c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "This Is New",
+      "Spring Can Really Hang You Up The Most",
+      "Reunited",
+      "Easy To Love",
+      "Endless Days",
+      "Ask Me Now",
+      "You've Changed",
+      "Margot In May",
+      "Clowns And Crowns"
+    ],
+    "track_durations": [
+      213,
+      169,
+      213,
+      203,
+      209,
+      281,
+      424,
+      226,
+      241
+    ],
+    "track_ranks": [
+      106589,
+      106787,
+      323638,
+      159556,
+      65667,
+      90513,
+      14746,
+      73671,
+      77958
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "Trying Times",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Make Your Mind Up",
+        "label": "",
+        "release_date": "2024-09-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tram No. 3",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Is New",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waltz For Dave",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "So Many Stars",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Duke Ellington's Sound of Love",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Endless Days",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring Can Really Hang You Up The Most",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Margot In May",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thank God It's Friday",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ask Me Now",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reunited",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clowns And Crowns",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Second Time Around",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy To Love",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You've Changed",
+        "label": "",
+        "release_date": "2019-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6298192,
+    "name": "Mike Coen",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label (Midatlantic Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mike Coen",
+    "mbid": "f2b9c487-02bb-4605-a5c5-dd05bf94536b",
+    "listeners": 120207,
+    "playcount": 428764,
+    "listener_play_ratio": 3.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mike+Coen\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "CMC 3",
+      "Mino Conte & Co",
+      "Reuben Plays",
+      "Cecil Andrews",
+      "Sparrow & Bird"
+    ],
+    "top_tracks": [
+      {
+        "name": "Spring Can Really Hang You Up The Most",
+        "listeners": 37577,
+        "playcount": 84572
+      },
+      {
+        "name": "This Is New",
+        "listeners": 28320,
+        "playcount": 61302
+      },
+      {
+        "name": "Thank God It's Friday",
+        "listeners": 26833,
+        "playcount": 57310
+      },
+      {
+        "name": "Clowns And Crowns",
+        "listeners": 23223,
+        "playcount": 55598
+      },
+      {
+        "name": "Easy To Love",
+        "listeners": 21748,
+        "playcount": 55952
+      },
+      {
+        "name": "Endless Days",
+        "listeners": 15915,
+        "playcount": 30975
+      },
+      {
+        "name": "Margot In May",
+        "listeners": 11235,
+        "playcount": 23701
+      },
+      {
+        "name": "Ask Me Now",
+        "listeners": 10556,
+        "playcount": 21996
+      },
+      {
+        "name": "Reunited",
+        "listeners": 9865,
+        "playcount": 20729
+      },
+      {
+        "name": "You've Changed",
+        "listeners": 6582,
+        "playcount": 14095
+      }
+    ],
+    "url": "https://www.last.fm/music/Mike+Coen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

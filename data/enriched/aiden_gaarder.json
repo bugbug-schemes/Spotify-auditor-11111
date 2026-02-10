@@ -1,0 +1,189 @@
+{
+  "artist_name": "Aiden Gaarder",
+  "artist_id": "aiden_gaarder",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:45:42.827469+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 169832647,
+    "name": "Aiden Gaarder",
+    "nb_fan": 6,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/169832647",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/04fd720998a8f96359c774549149250d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Painted Illusions",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Reflections",
+        "label": "",
+        "release_date": "2022-06-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "What Remains Quiet",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cyclical",
+        "label": "",
+        "release_date": "2025-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Synergy",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quire",
+        "label": "",
+        "release_date": "2023-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Prism",
+        "label": "",
+        "release_date": "2022-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aiden Gaarder",
+    "mbid": "",
+    "listeners": 61504,
+    "playcount": 293964,
+    "listener_play_ratio": 4.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aiden+Gaarder\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mystery Ark",
+      "Treasures Meditation Flow",
+      "South Noon",
+      "Gabriel Derus",
+      "Jonas Sandberg"
+    ],
+    "top_tracks": [
+      {
+        "name": "Spherical",
+        "listeners": 36694,
+        "playcount": 182022
+      },
+      {
+        "name": "Hiraeth",
+        "listeners": 17334,
+        "playcount": 68840
+      },
+      {
+        "name": "Cyclical",
+        "listeners": 7800,
+        "playcount": 21892
+      },
+      {
+        "name": "Gleam",
+        "listeners": 5279,
+        "playcount": 20423
+      },
+      {
+        "name": "Pareidolia",
+        "listeners": 58,
+        "playcount": 221
+      },
+      {
+        "name": "Earthward",
+        "listeners": 44,
+        "playcount": 107
+      },
+      {
+        "name": "Once",
+        "listeners": 41,
+        "playcount": 105
+      },
+      {
+        "name": "Prism",
+        "listeners": 37,
+        "playcount": 96
+      },
+      {
+        "name": "Oblivion",
+        "listeners": 34,
+        "playcount": 112
+      },
+      {
+        "name": "Arisue",
+        "listeners": 19,
+        "playcount": 46
+      }
+    ],
+    "url": "https://www.last.fm/music/Aiden+Gaarder"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,108 @@
+{
+  "artist_name": "Valérian Rose",
+  "artist_id": "valérian_rose",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:54:55.521068+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Valérian Rose', got 'Valeria Rossi'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8171933,
+    "name": "Rose Valeriani",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Valérian Rose",
+    "mbid": "",
+    "listeners": 3978,
+    "playcount": 69699,
+    "listener_play_ratio": 17.52,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Val%C3%A9rian+Rose\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Peyton Malloye",
+      "Cory Andon",
+      "Taylor S Brooks",
+      "Oscar Z",
+      "Ogden Enqvist"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stay Awake",
+        "listeners": 2907,
+        "playcount": 33274
+      },
+      {
+        "name": "The Second Star to the Right",
+        "listeners": 2481,
+        "playcount": 32672
+      },
+      {
+        "name": "Au claire de la lune",
+        "listeners": 415,
+        "playcount": 3752
+      },
+      {
+        "name": "Peace to you",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Val%C3%A9rian+Rose"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

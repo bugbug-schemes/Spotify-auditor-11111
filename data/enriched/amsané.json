@@ -1,0 +1,233 @@
+{
+  "artist_name": "Amsané",
+  "artist_id": "amsané",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:56:57.323258+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c02163b1-330c-49ad-a964-fa7cd80fa4c9",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/3ySQ8l1Tp4kYr62AEYJVF0",
+      "streaming": "https://music.apple.com/gb/artist/1682058859"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 209721377,
+    "name": "Amsané",
+    "nb_fan": 2,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/209721377",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cb9469319dd494c15ef8865c49e13a39/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Ocean Eyes",
+      "Uhuru",
+      "Take Off"
+    ],
+    "track_durations": [
+      145,
+      161,
+      155
+    ],
+    "track_ranks": [
+      23563,
+      25646,
+      37599
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Cap Blue",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Diwan Deli",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean Eyes",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "leche",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hawei",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "VIEW 4AM (2023)",
+        "label": "",
+        "release_date": "2024-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Renaissance",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Off",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Falling",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Uhuru",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amsané",
+    "mbid": "",
+    "listeners": 15750,
+    "playcount": 51086,
+    "listener_play_ratio": 3.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Amsan%C3%A9\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rick Groove",
+      "rigii",
+      "Mikayl Blu",
+      "Sean Rivers",
+      "Mechagnome"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ocean Eyes",
+        "listeners": 7512,
+        "playcount": 17194
+      },
+      {
+        "name": "Hawei",
+        "listeners": 4804,
+        "playcount": 9780
+      },
+      {
+        "name": "Take Off",
+        "listeners": 4629,
+        "playcount": 13735
+      },
+      {
+        "name": "Uhuru",
+        "listeners": 3368,
+        "playcount": 10353
+      },
+      {
+        "name": "Renaissance",
+        "listeners": 6,
+        "playcount": 11
+      },
+      {
+        "name": "Cap Blue",
+        "listeners": 4,
+        "playcount": 7
+      },
+      {
+        "name": "Falling",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "leche",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Diwan Deli",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Amsan%C3%A9"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

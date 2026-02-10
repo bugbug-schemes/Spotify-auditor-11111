@@ -1,0 +1,226 @@
+{
+  "artist_name": "burger/ink",
+  "artist_id": "burger_ink",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:13:13.683005+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "cba11cf3-c7e0-48ec-a9a7-aa06c0486f1a",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [
+      "BurgerInk"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/26369"
+    },
+    "labels": [
+      "Matador",
+      "Harvest",
+      "Kompakt Klassiks"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 75895,
+    "name": "burger/ink",
+    "nb_fan": 156,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/75895",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/aa3aae0900934da1322831ccdf1c17f7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Milk & Honey",
+      "The Jealous Guy From Memphis",
+      "Avalon",
+      "Love Is The Drug (Paris Texas)",
+      "Swiss Made",
+      "Do The Strand"
+    ],
+    "track_durations": [
+      297,
+      398,
+      405,
+      662,
+      397,
+      498
+    ],
+    "track_ranks": [
+      140362,
+      18748,
+      30771,
+      39487,
+      32484,
+      39576
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1
+    },
+    "albums": [
+      {
+        "title": "[las vegas]",
+        "label": "",
+        "release_date": "1998-09-08",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 26369,
+    "name": "Burger / Ink",
+    "profile": "German minimal techno duo from Cologne.",
+    "realname": "Jörg Burger & Wolfgang Voigt",
+    "social_urls": [],
+    "members": [
+      "Wolfgang Voigt",
+      "Jörg Burger"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 10,
+    "total_releases": 16,
+    "formats": [
+      "",
+      "12\"",
+      "17xFile, MP3, Comp, Mixed, 320",
+      "Box + 6xCD, Comp, Ltd",
+      "CD, Comp, Promo",
+      "CD, Ltd, Mixed, Promo",
+      "File, AIFF, MP3, Mixed, 320"
+    ],
+    "labels": [
+      "CLR (2)",
+      "Harvest",
+      "Matador",
+      "Musikexpress, Harvest",
+      "Not On Label",
+      "Not On Label (Nmesh Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "burger/ink",
+    "mbid": "",
+    "listeners": 37813,
+    "playcount": 350138,
+    "listener_play_ratio": 9.26,
+    "bio_exists": true,
+    "bio_summary": "Jörg Burger and Wolfgang Voigt's one and only album (1996) set new standards in minimal techno music, resulting in the later explosion of Cologne's techno scene - the labels Kompakt, Trapez and Traum Schallplatten.\n\nDeep, dubby, slim  and long, the tracks of Burger/Ink are a must-hear for any techno lover. <a href=\"https://www.last.fm/music/burger%2Fink\">Read more on Last.fm</a>",
+    "tags": [
+      "minimal techno",
+      "ambient",
+      "techno",
+      "dub techno",
+      "electronica"
+    ],
+    "similar_artists": [
+      "Basic Channel",
+      "DeepChord & Echospace",
+      "DeepChord presents Echospace",
+      "Monolake",
+      "DeepChord"
+    ],
+    "top_tracks": [
+      {
+        "name": "Elvism",
+        "listeners": 23632,
+        "playcount": 98802
+      },
+      {
+        "name": "Twelve Miles High",
+        "listeners": 14569,
+        "playcount": 53796
+      },
+      {
+        "name": "Flesh & Bleed",
+        "listeners": 11914,
+        "playcount": 41267
+      },
+      {
+        "name": "Milk & Honey",
+        "listeners": 7394,
+        "playcount": 25512
+      },
+      {
+        "name": "Avalon",
+        "listeners": 6788,
+        "playcount": 24985
+      },
+      {
+        "name": "Do the Strand",
+        "listeners": 6545,
+        "playcount": 18483
+      },
+      {
+        "name": "The Jealous Guy from Memphis",
+        "listeners": 5770,
+        "playcount": 20939
+      },
+      {
+        "name": "Swiss Made",
+        "listeners": 4119,
+        "playcount": 12396
+      },
+      {
+        "name": "Love is the Drug (Paris Texas)",
+        "listeners": 4108,
+        "playcount": 13931
+      },
+      {
+        "name": "Bring Trance Back (To Las Vegas) (Blue hotel)",
+        "listeners": 3995,
+        "playcount": 14065
+      }
+    ],
+    "url": "https://www.last.fm/music/burger%2Fink"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

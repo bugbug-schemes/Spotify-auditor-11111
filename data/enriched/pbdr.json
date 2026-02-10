@@ -1,0 +1,539 @@
+{
+  "artist_name": "PBdR",
+  "artist_id": "pbdr",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:18:55.781913+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c8f39ef0-2f1b-46ff-bca2-3704f7424573",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "boom bap",
+      "chillwave",
+      "lo-fi",
+      "downtempo",
+      "lo-fi hip hop",
+      "instrumental hip hop",
+      "instrumental"
+    ],
+    "aliases": [
+      "Jean-Lou Riera"
+    ],
+    "isnis": [],
+    "ipis": [
+      "01109032012"
+    ],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/135060702",
+      "purchase for download": "https://www.traxsource.com/artist/696597",
+      "soundcloud": "https://soundcloud.com/pbdr-music",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/pbdr/9693326",
+      "youtube music": "https://music.youtube.com/channel/UCBh8bxYk8kgFeVF7FyDODjw"
+    },
+    "labels": [
+      "Kindbrew",
+      "Fortune Cookie Records",
+      "purity label",
+      "Lofi Records",
+      "Chill Moon Music",
+      "LoFi Café Records",
+      "Etymology Records",
+      "Bougie Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 135060702,
+    "name": "PBdR",
+    "nb_fan": 56,
+    "nb_album": 87,
+    "link": "https://www.deezer.com/artist/135060702",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b8ef3bd1d7057bfd64c9fe6cdc01ae2a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Astro Loud",
+      "Eliott Weingand",
+      "Lucid Keys",
+      "Mike Beating",
+      "Paul Indigo",
+      "Paxkalito",
+      "Softy",
+      "soave lofi"
+    ],
+    "contributor_roles": {
+      "Eliott Weingand": [
+        "Main"
+      ],
+      "Paxkalito": [
+        "Main"
+      ],
+      "Softy": [
+        "Main"
+      ],
+      "Lucid Keys": [
+        "Main"
+      ],
+      "Paul Indigo": [
+        "Main"
+      ],
+      "soave lofi": [
+        "Main"
+      ],
+      "Astro Loud": [
+        "Main"
+      ],
+      "Mike Beating": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Cœur en Seine",
+      "Sauvignon",
+      "Riesling",
+      "Winter Solstice",
+      "Lying On Sand",
+      "Magic Spell",
+      "Euforia",
+      "Cabernet",
+      "Hilltop Views",
+      "Creepy Cauldron",
+      "Nebula",
+      "Morning Light",
+      "Chardonnay",
+      "Pinot Noir",
+      "Merlot",
+      "Ugni Blanc",
+      "Still Summer",
+      "Free Time",
+      "Nostalgia",
+      "Waterfall",
+      "Zenith",
+      "Way Out",
+      "Parasol",
+      "Rainfall",
+      "Overview"
+    ],
+    "track_durations": [
+      140,
+      150,
+      128,
+      119,
+      135,
+      138,
+      141,
+      148,
+      133,
+      142,
+      151,
+      132,
+      132,
+      142,
+      141,
+      142,
+      151,
+      136,
+      133,
+      143,
+      138,
+      105,
+      127,
+      112,
+      135
+    ],
+    "track_ranks": [
+      199475,
+      374176,
+      314335,
+      199092,
+      157148,
+      100000,
+      112531,
+      207422,
+      282309,
+      41142,
+      272512,
+      223585,
+      225623,
+      244386,
+      282224,
+      307050,
+      88910,
+      72361,
+      115044,
+      109482,
+      299319,
+      19762,
+      100000,
+      67328,
+      86755
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 85
+    },
+    "albums": [
+      {
+        "title": "Wildflower",
+        "label": "",
+        "release_date": "2024-12-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Quiet Place",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Parasol",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magic Spell",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Summer",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lakewood / Fire Camp",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glint",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden Layers",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zenith",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Freezing Wind",
+        "label": "",
+        "release_date": "2025-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old Town Charm",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Pillow",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nebula",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "City Breeze",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hilltop Views",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ask Me Again",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Light",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "White Rabbit",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whatever Happens",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unexpected Meeting",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Overview",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Static",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunset Over Stones",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cathedral Shadows",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Free Time",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Favorite Spot",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nectar",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Birdcage",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "hometown",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Full Moon",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Mike Beating",
+      "Peaceful Melody",
+      "Mood Boy",
+      "Mister Decaf",
+      "Maadrhino",
+      "Plutones",
+      "sleen.",
+      "insømnia",
+      "Johny Luv",
+      "Psylone"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12521257,
+    "name": "PBdR",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 6,
+    "digital_only_releases": 1,
+    "total_releases": 7,
+    "formats": [
+      "",
+      "10xLP, Comp, Num + Box, Ltd, Num",
+      "2xLP, Comp, Ltd, Pin",
+      "2xLP, Comp, Ltd, Tra",
+      "2xLP, Ltd, Num, Sta",
+      "3x12\", Comp, Ltd, Bla",
+      "LP, Album, Ltd, Num, 180"
+    ],
+    "labels": [
+      "Lofi Girl",
+      "Lofi Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Pbdr",
+    "mbid": "",
+    "listeners": 53810,
+    "playcount": 328732,
+    "listener_play_ratio": 6.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Pbdr\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Worldtraveller",
+      "Phlocalyst",
+      "Two Scents",
+      "HOKØ",
+      "Peaceful Melody"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sauvignon",
+        "listeners": 30154,
+        "playcount": 94003
+      },
+      {
+        "name": "Cabernet",
+        "listeners": 4885,
+        "playcount": 16329
+      },
+      {
+        "name": "Pinot Noir",
+        "listeners": 4587,
+        "playcount": 15456
+      },
+      {
+        "name": "Ugni Blanc",
+        "listeners": 4475,
+        "playcount": 15254
+      },
+      {
+        "name": "Chardonnay",
+        "listeners": 4260,
+        "playcount": 14810
+      },
+      {
+        "name": "Merlot",
+        "listeners": 4201,
+        "playcount": 14713
+      },
+      {
+        "name": "Riesling",
+        "listeners": 4048,
+        "playcount": 14511
+      },
+      {
+        "name": "After You've Gone",
+        "listeners": 3866,
+        "playcount": 8009
+      },
+      {
+        "name": "Haunted Pumpkin",
+        "listeners": 3482,
+        "playcount": 9154
+      },
+      {
+        "name": "Rising Moon",
+        "listeners": 3053,
+        "playcount": 6439
+      }
+    ],
+    "url": "https://www.last.fm/music/Pbdr"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

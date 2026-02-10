@@ -1,0 +1,127 @@
+{
+  "artist_name": "Luca Verini",
+  "artist_id": "luca_verini",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:15:01.823648+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 344693381,
+    "name": "Luca Verini",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/344693381",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6b8034d49ac8ff52c575e2b9f8ebf250/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Cloud Steps",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Owl Song",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Secret Island",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Serenade",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Luca Verini",
+    "mbid": "",
+    "listeners": 974,
+    "playcount": 6664,
+    "listener_play_ratio": 6.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Luca+Verini\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Leon Rose",
+      "Rowan Finch",
+      "Nils Olov",
+      "Noélina Faye",
+      "Elin Noa"
+    ],
+    "top_tracks": [
+      {
+        "name": "My Secret Island",
+        "listeners": 972,
+        "playcount": 6661
+      },
+      {
+        "name": "Tiny Moons",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Luca+Verini"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

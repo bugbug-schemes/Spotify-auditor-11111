@@ -1,0 +1,138 @@
+{
+  "artist_name": "Soul Healer",
+  "artist_id": "soul_healer",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:13:45.727135+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Soul Healer', got 'SoulHealer'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3342216,
+    "name": "Soul Healer",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp"
+    ],
+    "labels": [
+      "Rock It! (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Soul Healer",
+    "mbid": "",
+    "listeners": 18417,
+    "playcount": 81989,
+    "listener_play_ratio": 4.45,
+    "bio_exists": true,
+    "bio_summary": "Teemu Aho, Bass\nJori Kärki, Vocals\nSami Mikkonen, Guitar\nTeemu Kuosmanen, Guitar\nTimo Immonen, Drums\n\n\nThe foundation for what was to become SoulHealer was laid in late 2009. After a few line-up changes, the last of them almost directly after the recordings, they released their first EP Dreamcatcher. The first 300 copies of the EP sold out in less than a fortnight which was a whole lot quicker than the band or anybody else had anticipated. \n\nAfter an EP launching gig SoulHealer did shows around ",
+    "tags": [],
+    "similar_artists": [
+      "Lively Nature Sounds",
+      "Al Watts",
+      "Hinterländer",
+      "Wildlife Recordings",
+      "Forest Sounds FX"
+    ],
+    "top_tracks": [
+      {
+        "name": "Soul Healing Birds",
+        "listeners": 12334,
+        "playcount": 36506
+      },
+      {
+        "name": "Amazing Rainforest",
+        "listeners": 3737,
+        "playcount": 10624
+      },
+      {
+        "name": "Raindrops In My Coffee",
+        "listeners": 2748,
+        "playcount": 8421
+      },
+      {
+        "name": "Magical Forest Birds In Light Rain",
+        "listeners": 2699,
+        "playcount": 8820
+      },
+      {
+        "name": "Forest Rain Birds",
+        "listeners": 2475,
+        "playcount": 8004
+      },
+      {
+        "name": "Tranquil Rainfall",
+        "listeners": 475,
+        "playcount": 1259
+      },
+      {
+        "name": "Calm Waves Songs pt. 4",
+        "listeners": 317,
+        "playcount": 611
+      },
+      {
+        "name": "Waves of Calm Music pt. 1",
+        "listeners": 279,
+        "playcount": 585
+      },
+      {
+        "name": "Waves of Calm Music pt. 2",
+        "listeners": 273,
+        "playcount": 605
+      },
+      {
+        "name": "Calm Ocean Noises Instant Dreams pt. 2",
+        "listeners": 266,
+        "playcount": 515
+      }
+    ],
+    "url": "https://www.last.fm/music/Soul+Healer"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

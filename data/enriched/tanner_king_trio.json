@@ -1,0 +1,237 @@
+{
+  "artist_name": "Tanner King Trio",
+  "artist_id": "tanner_king_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:25:58.654702+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "12b7b680-c1fc-457d-ba7b-3bb13181ad1c",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/198126657",
+      "purchase for download": "https://music.apple.com/us/artist/1671776402",
+      "streaming": "https://tidal.com/artist/36869251",
+      "youtube music": "https://music.youtube.com/channel/UC28QSQOT-9X_er7PuUuiLlg"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 198126657,
+    "name": "Tanner King Trio",
+    "nb_fan": 3,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/198126657",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0def0b552f9d610f965fa6b6579d8db4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Midnight Fairytale",
+      "Ruth's Theme",
+      "Solitude Symphony",
+      "Nocturnal Serenade"
+    ],
+    "track_durations": [
+      129,
+      171,
+      248,
+      252
+    ],
+    "track_ranks": [
+      92910,
+      65755,
+      39291,
+      112652
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Windowseat waltz",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Letters I Never Sent",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forgotten Melodies",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bagatelle",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solitude Symphony",
+        "label": "",
+        "release_date": "2024-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Fairytale",
+        "label": "",
+        "release_date": "2023-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nocturnal Serenade",
+        "label": "",
+        "release_date": "2023-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ruth's Theme",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Fairytale",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tanner King Trio",
+    "mbid": "12b7b680-c1fc-457d-ba7b-3bb13181ad1c",
+    "listeners": 42581,
+    "playcount": 136366,
+    "listener_play_ratio": 3.2,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tanner+King+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Jazmina Tozer Three",
+      "Kupiers & Winter",
+      "Maxime Leroy Trio",
+      "Eira Eld",
+      "Henry Albert Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ruth's Theme",
+        "listeners": 21030,
+        "playcount": 46829
+      },
+      {
+        "name": "Midnight Fairytale",
+        "listeners": 19830,
+        "playcount": 46360
+      },
+      {
+        "name": "Solitude Symphony",
+        "listeners": 11282,
+        "playcount": 21869
+      },
+      {
+        "name": "Nocturnal Serenade",
+        "listeners": 9571,
+        "playcount": 20962
+      },
+      {
+        "name": "Windowseat waltz",
+        "listeners": 280,
+        "playcount": 339
+      },
+      {
+        "name": "Bagatelle",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Faded Frame",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Forgotten Melodies",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Letters I Never Sent",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Tanner+King+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,170 @@
+{
+  "artist_name": "Léon Mirage",
+  "artist_id": "léon_mirage",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:20:41.115903+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a9080152-56c6-4a2d-9578-6a6dadc07817",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/7rpxtvxhE8niKR3p12vQq4",
+      "streaming": "https://music.apple.com/gb/artist/1834550779"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 342097231,
+    "name": "Léon Mirage",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/342097231",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "A Taste of France (vol. 6)",
+        "label": "",
+        "release_date": "2025-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pulse & Paradise",
+        "label": "",
+        "release_date": "2025-07-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Morning Coffee",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8602917,
+    "name": "Carlo Minuta",
+    "profile": "Carlo Minuta (Catania, 1994) is an Italian composer. He started his activity as a musician from a young age and devoted himself to composing music for ensembles and then for theatre. In 2013 he co-founded Symphonos Italia record label, collaborating with Twelwe, Ten Walls, Dye O, Molife, Bonsaye, minite, Far Orange, Sun Mirage, Cogitation, Raphael Creed, Thirsty Ear, Leon Jarvis. \r\n\r\nHis music has been placed on Lounge - Soft House, Coffee Beats, House Focus, Electronic Focus, 100% Lounge, Poolside Lounge, Relax Time, Lowkey Tech, Yoga & Meditation, Sleep, Deep Focus, Music For Concentration, Relaxing Music 2020 and others.\r\n\r\nHe participated with original compositions in The Music Festival of Nations, sponsored by Roma Capitale and in 2013 he composed the soundtrack for the film \"Un Amore selvaggio\" by Raffaele Viviani.  He composed Elpìs, a symphonic poem, performed by Teodor Currentzis at the Sainte-Chapelle in Paris and broadcast by Arte.tv.",
+    "realname": "Carlo Minuta",
+    "social_urls": [
+      "https://it.wikipedia.org/wiki/Carlo_Minuta",
+      "https://www.instagram.com/carlo.minuta/",
+      "https://www.facebook.com/Carlo-Minuta-105573148062635"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 12,
+    "total_releases": 12,
+    "formats": [
+      "File, AAC",
+      "File, AAC, 256",
+      "File, AAC, Single, 256",
+      "Single"
+    ],
+    "labels": [
+      "Symphonos Italia"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Léon Mirage",
+    "mbid": "",
+    "listeners": 727,
+    "playcount": 1359,
+    "listener_play_ratio": 1.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/L%C3%A9on+Mirage\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Bishop Juice",
+      "The Swaying Journey",
+      "Onda Kura",
+      "Koula",
+      "Aurove"
+    ],
+    "top_tracks": [
+      {
+        "name": "Forever",
+        "listeners": 727,
+        "playcount": 1358
+      },
+      {
+        "name": "Morning Coffee",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/L%C3%A9on+Mirage"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

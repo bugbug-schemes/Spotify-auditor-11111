@@ -1,0 +1,201 @@
+{
+  "artist_name": "Photosynthetic",
+  "artist_id": "photosynthetic",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:27:23.193663+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 332394111,
+    "name": "Photosynthetic",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/332394111",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/50b7771996ed48d63fb02716fd0deb9b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "skagen"
+    ],
+    "track_durations": [
+      137
+    ],
+    "track_ranks": [
+      75594
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "droplets",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maxe",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tea",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "PAGES",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Yuzu",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smiley",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "skagen",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "City Boy",
+        "label": "",
+        "release_date": "2025-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Photosynthetic",
+    "mbid": "",
+    "listeners": 25368,
+    "playcount": 63507,
+    "listener_play_ratio": 2.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Photosynthetic\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Big BAZ",
+      "Kamden Kids",
+      "Low Pines",
+      "constin",
+      "kdj_77"
+    ],
+    "top_tracks": [
+      {
+        "name": "skagen",
+        "listeners": 24839,
+        "playcount": 62025
+      },
+      {
+        "name": "City Boy",
+        "listeners": 424,
+        "playcount": 831
+      },
+      {
+        "name": "droplets",
+        "listeners": 271,
+        "playcount": 328
+      },
+      {
+        "name": "Down",
+        "listeners": 12,
+        "playcount": 39
+      },
+      {
+        "name": "Let Me Out",
+        "listeners": 11,
+        "playcount": 52
+      },
+      {
+        "name": "Another Day",
+        "listeners": 10,
+        "playcount": 48
+      },
+      {
+        "name": "What is Wrong",
+        "listeners": 9,
+        "playcount": 43
+      },
+      {
+        "name": "Beautiful Heartbreak",
+        "listeners": 8,
+        "playcount": 40
+      },
+      {
+        "name": "I'll Try",
+        "listeners": 8,
+        "playcount": 22
+      },
+      {
+        "name": "Smiley",
+        "listeners": 8,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Photosynthetic"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

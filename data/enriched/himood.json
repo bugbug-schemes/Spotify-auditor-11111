@@ -1,0 +1,513 @@
+{
+  "artist_name": "himood",
+  "artist_id": "himood",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:19:22.037810+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 146260332,
+    "name": "himood",
+    "nb_fan": 54,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/146260332",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/56a765017003d8818f6c67d2b759507d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "9T7",
+      "Carabide",
+      "Charry",
+      "Culpeo",
+      "Lambrusco",
+      "Lobé",
+      "Loky",
+      "Lotus Beats",
+      "Lynde",
+      "Reinúr Selson",
+      "Rubus",
+      "Sax Tapes",
+      "Sella Vie",
+      "Slomow",
+      "Smoodmood",
+      "Studio Haze",
+      "Teau",
+      "Wishia",
+      "Yellow Lime",
+      "ekboj",
+      "gainsome",
+      "sig.beats"
+    ],
+    "contributor_roles": {
+      "Reinúr Selson": [
+        "Main"
+      ],
+      "sig.beats": [
+        "Main"
+      ],
+      "Studio Haze": [
+        "Main"
+      ],
+      "Lynde": [
+        "Main"
+      ],
+      "9T7": [
+        "Main"
+      ],
+      "Carabide": [
+        "Main"
+      ],
+      "Culpeo": [
+        "Main"
+      ],
+      "Teau": [
+        "Main"
+      ],
+      "Lambrusco": [
+        "Main"
+      ],
+      "Yellow Lime": [
+        "Main"
+      ],
+      "Lobé": [
+        "Main"
+      ],
+      "Loky": [
+        "Main"
+      ],
+      "Charry": [
+        "Main"
+      ],
+      "Smoodmood": [
+        "Main"
+      ],
+      "Rubus": [
+        "Main"
+      ],
+      "Slomow": [
+        "Main"
+      ],
+      "Sella Vie": [
+        "Main"
+      ],
+      "Lotus Beats": [
+        "Main"
+      ],
+      "Sax Tapes": [
+        "Main"
+      ],
+      "ekboj": [
+        "Main"
+      ],
+      "Wishia": [
+        "Main"
+      ],
+      "gainsome": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Little moments",
+      "Time Flies",
+      "Sakura Dreams",
+      "Eres mi todo",
+      "Memories",
+      "Te Adoro",
+      "Cook With Me",
+      "Brasil",
+      "Happy Meal",
+      "Wonderful Life",
+      "Foodie",
+      "Arigato",
+      "Show Them",
+      "Lazy Days",
+      "Food For Life",
+      "Chief's Special",
+      "Vibe",
+      "Sweet Memories",
+      "Flowing",
+      "Vibe 2",
+      "Tutorial Tune",
+      "Catete",
+      "Vibe Check",
+      "Road Trip",
+      "Vanessa Atalanta"
+    ],
+    "track_durations": [
+      119,
+      79,
+      118,
+      146,
+      132,
+      124,
+      108,
+      84,
+      115,
+      74,
+      115,
+      117,
+      128,
+      128,
+      87,
+      125,
+      148,
+      160,
+      120,
+      123,
+      122,
+      109,
+      118,
+      112,
+      144
+    ],
+    "track_ranks": [
+      404286,
+      411532,
+      23267,
+      18724,
+      367954,
+      198622,
+      27125,
+      13522,
+      58187,
+      359015,
+      67417,
+      164066,
+      16997,
+      105470,
+      100614,
+      78497,
+      217806,
+      44240,
+      63781,
+      87677,
+      101976,
+      35440,
+      74822,
+      61960,
+      22264
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 10,
+      "single": 87
+    },
+    "albums": [
+      {
+        "title": "Sax Tapes Vol. 1",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Aquarelle",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I'm Sleepy",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Day Twelve EP",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Seemed Like A Good Idea, But Nah",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Yeah, You Got My Love",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Day Eleven EP",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Day Ten",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Day Nine EP",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Day Eight EP",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Day Seven EP",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "La Vie En Rose",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Verano De Amor",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Boat Camping",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Matcha Mood",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kiss",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunshine In My Pocket",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold On",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eres mi todo",
+        "label": "",
+        "release_date": "2025-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sea Breeze",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Garden Birds",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brasil",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amor Bonito",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Show Them",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Catching Waves",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sceptor",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summertime",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flow Flow Flow",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vice City",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "himood",
+    "mbid": "",
+    "listeners": 1,
+    "playcount": 17,
+    "listener_play_ratio": 17.0,
+    "bio_exists": true,
+    "bio_summary": "Hi.Mood is an independent record label facilitating the soundtrack to keep your mood hi.\nHi.Mood brings you a roster of diverse artists, maintaining a perfect balance and variety of sounds. \n\nAs an independent record label, their mission is not only to represent artists, but also to curate and host various playlists for every mood. Their playlists offer a broad-spectrum of background music to soundtrack your everyday life, as well as foreground music to get you hyped in the zone.  <a href=\"https",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "Just Woke Up (Mister Calm Edit) [Mixed]",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Coffee Corner (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Mellow Fellow (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Happy Birds (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Skate (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Summer Is Here (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Vanilla (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Gingerbread Breakfast (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Sao Paulo (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Paris, Tokyo (Mixed)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/himood"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

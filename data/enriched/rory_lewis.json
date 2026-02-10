@@ -1,0 +1,138 @@
+{
+  "artist_name": "Rory Lewis",
+  "artist_id": "rory_lewis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:46:15.255737+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Rory Lewis', got 'Trey Lewis'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2327402,
+    "name": "Rory Lewis",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "DVD-V, PAL"
+    ],
+    "labels": [
+      "Robot Records (7)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rory Lewis",
+    "mbid": "",
+    "listeners": 48222,
+    "playcount": 152535,
+    "listener_play_ratio": 3.16,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rory+Lewis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sara Hoffman",
+      "Casimir Roux",
+      "Iris Emmanuelle",
+      "Panner Garlix",
+      "Kisane"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Lights Around the Shore",
+        "listeners": 25054,
+        "playcount": 56727
+      },
+      {
+        "name": "Escallonia",
+        "listeners": 19072,
+        "playcount": 48984
+      },
+      {
+        "name": "Sophora",
+        "listeners": 4795,
+        "playcount": 19109
+      },
+      {
+        "name": "Open the Windows",
+        "listeners": 4567,
+        "playcount": 11116
+      },
+      {
+        "name": "Steady",
+        "listeners": 3726,
+        "playcount": 7236
+      },
+      {
+        "name": "Echoes after Rain",
+        "listeners": 3336,
+        "playcount": 5643
+      },
+      {
+        "name": "A Soulful Journey",
+        "listeners": 1581,
+        "playcount": 3000
+      },
+      {
+        "name": "For the Lost Ones",
+        "listeners": 244,
+        "playcount": 593
+      },
+      {
+        "name": "Hotel California",
+        "listeners": 20,
+        "playcount": 26
+      },
+      {
+        "name": "Teach Me",
+        "listeners": 19,
+        "playcount": 26
+      }
+    ],
+    "url": "https://www.last.fm/music/Rory+Lewis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,578 @@
+{
+  "artist_name": "Nils Wülker",
+  "artist_id": "nils_wülker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:02:31.522993+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6d7a0609-01e7-4c7c-a604-d98fea333533",
+    "type": "Person",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "1977-08-17",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "relaxed",
+      "smooth jazz",
+      "trumpet",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000055890873"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0001978556",
+      "discogs": "https://www.discogs.com/artist/1606116",
+      "free streaming": "https://www.deezer.com/artist/493651",
+      "image": "https://commons.wikimedia.org/wiki/File:NilsWuelker2010.jpg",
+      "last.fm": "https://www.last.fm/music/Nils+W%C3%BClker",
+      "myspace": "https://myspace.com/nilswuelker",
+      "official homepage": "http://www.nilswuelker.com/",
+      "other databases": "https://rateyourmusic.com/artist/nils-wulker",
+      "purchase for download": "https://music.apple.com/us/artist/83159529",
+      "social network": "https://www.facebook.com/pages/Nils-W%C3%BClker/54164395842",
+      "songkick": "https://www.songkick.com/artists/2794916",
+      "streaming": "https://tidal.com/artist/1289",
+      "VIAF": "http://viaf.org/viaf/80073090",
+      "wikidata": "https://www.wikidata.org/wiki/Q1992472",
+      "youtube": "https://www.youtube.com/channel/UC0fazn3ZefoSIoqFFrZpAtg"
+    },
+    "labels": [
+      "Warner Music Entertainment",
+      "Sony Jazz",
+      "BR-Klassik",
+      "Ear Treat Music",
+      "Wanderlust Entertainment",
+      "Warner Music Germany",
+      "Warner Music Central Europe",
+      "Warner Music International",
+      "Warner Music Group Germany",
+      "Sony Classical"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 493651,
+    "name": "Nils Wülker",
+    "nb_fan": 2165,
+    "nb_album": 41,
+    "link": "https://www.deezer.com/artist/493651",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/233949b3d584c1e3c2a876c1715b274e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Arne Jansen",
+      "Colorist",
+      "Rob Summerfield",
+      "Tim Allhoff"
+    ],
+    "contributor_roles": {
+      "Colorist": [
+        "Featured"
+      ],
+      "Tim Allhoff": [
+        "Main"
+      ],
+      "Arne Jansen": [
+        "Main"
+      ],
+      "Rob Summerfield": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Alpenglow",
+      "The Frame (Colorist Remix)",
+      "FOMO Fighter",
+      "Forces at Work",
+      "Faced with a Choice, Do Both (Colorist Remix)",
+      "Second Nature",
+      "All Hands on Deck",
+      "It’s Okay",
+      "It's Alright",
+      "Continuum",
+      "Time Will Tell",
+      "As Young as Your Faith",
+      "Cause & Effect",
+      "This Moment’s Rhythm",
+      "Grow (Live)",
+      "Rays of Winter Sun",
+      "Confluence",
+      "Conquering the Useless (Live)",
+      "Beyond the Bavarian Sky",
+      "Never Left at All (feat. Rob Summerfield)",
+      "Distorting Time",
+      "The Frame",
+      "Trust"
+    ],
+    "track_durations": [
+      269,
+      144,
+      359,
+      233,
+      150,
+      295,
+      324,
+      95,
+      198,
+      313,
+      183,
+      248,
+      487,
+      286,
+      267,
+      210,
+      386,
+      350,
+      232,
+      223,
+      290,
+      285,
+      275
+    ],
+    "track_ranks": [
+      492313,
+      279695,
+      362019,
+      309472,
+      238533,
+      341299,
+      361568,
+      323968,
+      326831,
+      328230,
+      340054,
+      350967,
+      121833,
+      338269,
+      69414,
+      380246,
+      194580,
+      90517,
+      63972,
+      174166,
+      138732,
+      83011,
+      94306
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 15,
+      "ep": 1,
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "Zuversicht",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "In Concert (Live)",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Closer",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Continuum",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Go",
+        "label": "",
+        "release_date": "2020-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Decade Live",
+        "label": "",
+        "release_date": "2018-09-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "On",
+        "label": "",
+        "release_date": "2017-06-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Up",
+        "label": "",
+        "release_date": "2015-02-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Just Here, Just Now",
+        "label": "",
+        "release_date": "2012-09-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live in Hamburg 2010",
+        "label": "",
+        "release_date": "2010-09-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "6",
+        "label": "",
+        "release_date": "2010-01-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Turning the Page",
+        "label": "",
+        "release_date": "2008-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Safely Falling",
+        "label": "",
+        "release_date": "2007-04-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "My Game",
+        "label": "",
+        "release_date": "2005-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "High Spirits",
+        "label": "",
+        "release_date": "2002-02-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rays of Winter Sun - EP",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "As Young as Your Faith",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Alright",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "This Moment’s Rhythm",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Hands on Deck",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let's Go Out Tonight (Live)",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wanderlust (Live)",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "YaYaYa (Live)",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rays of Winter Sun",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "YaYaYa",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hurt",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Dive",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beyond the Bavarian Sky",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Munich Afternoon",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nika's Dream",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Chet Baker",
+      "Holly Cole",
+      "Carmen Mcrae",
+      "Rhoda Scott",
+      "Norah Jones",
+      "Betty Carter",
+      "Dianne Reeves",
+      "Enrico Pieranunzi",
+      "André Ceccarelli",
+      "Chris Botti"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1606116,
+    "name": "Nils Wülker",
+    "profile": "German jazz trumpeter, born 17 August 1977 in Bonn, Germany",
+    "realname": "",
+    "social_urls": [
+      "http://www.nilswuelker.com",
+      "http://de.wikipedia.org/wiki/Nils_W%C3%BClker",
+      "http://de-de.facebook.com/pages/Nils-W%C3%BClker/54164395842"
+    ],
+    "members": [],
+    "groups": [
+      "BuJazzO",
+      "Nils Wülker Ensemble"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 49,
+    "digital_only_releases": 21,
+    "total_releases": 70,
+    "formats": [
+      "",
+      "2xCD",
+      "2xCD, Comp",
+      "2xCD, Comp, Copy Prot., Smplr",
+      "2xCD, Comp, Dig",
+      "2xCD, Comp, Promo",
+      "2xCDr, Promo, Smplr",
+      "3xCD, Comp",
+      "6xCD, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CDr, Single, Promo",
+      "LP"
+    ],
+    "labels": [
+      "Ballhaus Music, Warner Music Central Europe, RTL II",
+      "Bauer Studios Ludwigsburg",
+      "Bauer Studios Ludwigsburg, Jazz + World Partners",
+      "Butter & Fly Records, Rintintin Musik",
+      "C.A.R.E.",
+      "Chrysalis Music Group USA",
+      "Content Records, Edel:Kultur",
+      "Ear Treat Music",
+      "EarBooks",
+      "Edel Entertainment GmbH",
+      "Edel Germany GmbH",
+      "Edel Records",
+      "Edel:Kultur",
+      "Gala (12), Sony Classical, Sony Music",
+      "Gerling",
+      "Hinz&Kunzt, Edel:Kultur",
+      "Jazzbüro Hamburg E.V.",
+      "Minor Music",
+      "Mons Records",
+      "Not On Label",
+      "Opus Arts & Entertainment",
+      "Parashoot",
+      "Petra (2), Jahreszeiten Verlag, Edel",
+      "Rintintin Musik",
+      "Sony Classical",
+      "Sony Classical, Sony Classical",
+      "Sony Classical, Sony Music",
+      "Sony Jazz",
+      "Sony Music Media",
+      "Unit Records (2)",
+      "Warner Music",
+      "Warner Music Central Europe",
+      "Wave Music",
+      "Wavemusic"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nils Wülker",
+    "mbid": "6d7a0609-01e7-4c7c-a604-d98fea333533",
+    "listeners": 32129,
+    "playcount": 274850,
+    "listener_play_ratio": 8.55,
+    "bio_exists": true,
+    "bio_summary": "Nils Wülker (* August 17, 1977 in Bonn) is a German jazz trumpet player and composer. At the age of 7 he started taking piano lessons, at the age of 10 classical trumpet. \nIn 1994, while in the United States, Wülker was influenced by acid jazz and Miles Davis.\nBack in Germany, he joined the Landesjugendjazzorchester NRW, touring China in 1996 and 1998.\nIn 2005 Wülker established his own record label, Ear Treat Music.\n2008 Turning the Page\n2007 Safely Falling <a href=\"https://www.last.fm/music/Ni",
+    "tags": [
+      "jazz",
+      "trumpet",
+      "Smooth Jazz",
+      "chillout",
+      "contemporary jazz"
+    ],
+    "similar_artists": [
+      "Till Brönner",
+      "Tom Harrell",
+      "Paolo Fresu",
+      "Triosence",
+      "Tingvall Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Frame",
+        "listeners": 3217,
+        "playcount": 8030
+      },
+      {
+        "name": "It's Alright",
+        "listeners": 3076,
+        "playcount": 4959
+      },
+      {
+        "name": "Distorting Time",
+        "listeners": 2986,
+        "playcount": 7154
+      },
+      {
+        "name": "Change (feat. Marteria)",
+        "listeners": 2701,
+        "playcount": 10492
+      },
+      {
+        "name": "The You of Now",
+        "listeners": 2472,
+        "playcount": 5904
+      },
+      {
+        "name": "Munich Afternoon",
+        "listeners": 2243,
+        "playcount": 4991
+      },
+      {
+        "name": "Hurt",
+        "listeners": 2206,
+        "playcount": 5615
+      },
+      {
+        "name": "Safely Falling...",
+        "listeners": 2199,
+        "playcount": 7502
+      },
+      {
+        "name": "Hidden Intentions",
+        "listeners": 1733,
+        "playcount": 4266
+      },
+      {
+        "name": "Highline (feat. Theo Croker)",
+        "listeners": 1566,
+        "playcount": 3284
+      }
+    ],
+    "url": "https://www.last.fm/music/Nils+W%C3%BClker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,168 @@
+{
+  "artist_name": "Natural Awakening",
+  "artist_id": "natural_awakening",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:57:28.111360+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 159781802,
+    "name": "Natural Awakening",
+    "nb_fan": 3,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/159781802",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cbc7d941e8ca427f6860c3655e0bfcb8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2
+    },
+    "albums": [
+      {
+        "title": "Rain Loops",
+        "label": "",
+        "release_date": "2022-06-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rain Awakening",
+        "label": "",
+        "release_date": "2021-11-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5602130,
+    "name": "Natural Awakening",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Natural Awakening",
+    "mbid": "",
+    "listeners": 17995,
+    "playcount": 59047,
+    "listener_play_ratio": 3.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Natural+Awakening\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Indaya",
+      "Manaus",
+      "Lively Nature Sounds",
+      "Epic Nature Sounds",
+      "Soul Healer"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bird Chatter In Rainforest",
+        "listeners": 17913,
+        "playcount": 58544
+      },
+      {
+        "name": "Rain Awakening",
+        "listeners": 51,
+        "playcount": 100
+      },
+      {
+        "name": "Rain Meditation",
+        "listeners": 47,
+        "playcount": 96
+      },
+      {
+        "name": "Rainy Night",
+        "listeners": 23,
+        "playcount": 59
+      },
+      {
+        "name": "Gentle Rain Distant Thunder Loop",
+        "listeners": 11,
+        "playcount": 15
+      },
+      {
+        "name": "Deep River Rapid Flow",
+        "listeners": 9,
+        "playcount": 17
+      },
+      {
+        "name": "Purple Rain",
+        "listeners": 9,
+        "playcount": 11
+      },
+      {
+        "name": "Heavy Rain & Thunderstorm",
+        "listeners": 9,
+        "playcount": 10
+      },
+      {
+        "name": "River Relaxation",
+        "listeners": 8,
+        "playcount": 17
+      },
+      {
+        "name": "Quiet Forest Sleep Pond Of Sleep",
+        "listeners": 7,
+        "playcount": 16
+      }
+    ],
+    "url": "https://www.last.fm/music/Natural+Awakening"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

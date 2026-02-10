@@ -1,0 +1,218 @@
+{
+  "artist_name": "A Deeper Sense",
+  "artist_id": "a_deeper_sense",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T18:51:53.392318+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 202648127,
+    "name": "A Deeper Sense",
+    "nb_fan": 0,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/202648127",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/461bacb66dd0dcc7099c1a3b19df8a8d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Softly Unfolding",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breathing Cosmos",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dimensional Travels",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Into The Void",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pegasus",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cluster of Stars",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ambient Mood",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perpetual Light",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ancient Thoughts",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "741 Hz - Time To Cleanse",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "852 Hz - Transformative Journey",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oceans Breath",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "A Deeper Sense",
+    "mbid": "",
+    "listeners": 17480,
+    "playcount": 91908,
+    "listener_play_ratio": 5.26,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/A+Deeper+Sense\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Willian Mcgrow",
+      "Fort Sleep Sara",
+      "Dorian Froste",
+      "Lunari Veil",
+      "Dream Agent"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pegasus",
+        "listeners": 12107,
+        "playcount": 71535
+      },
+      {
+        "name": "852 Hz - Transformative Journey",
+        "listeners": 3228,
+        "playcount": 12027
+      },
+      {
+        "name": "Breathing Cosmos",
+        "listeners": 2281,
+        "playcount": 6500
+      },
+      {
+        "name": "Ambient Mood",
+        "listeners": 361,
+        "playcount": 1516
+      },
+      {
+        "name": "Oceans Breath",
+        "listeners": 95,
+        "playcount": 295
+      },
+      {
+        "name": "741 Hz - Time To Cleanse",
+        "listeners": 12,
+        "playcount": 14
+      },
+      {
+        "name": "Ancient Thoughts",
+        "listeners": 11,
+        "playcount": 19
+      },
+      {
+        "name": "Perpetual Light",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Into the Void",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/A+Deeper+Sense"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

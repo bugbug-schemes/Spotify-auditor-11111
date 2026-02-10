@@ -1,0 +1,463 @@
+{
+  "artist_name": "Stephen Riley",
+  "artist_id": "stephen_riley",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:19:41.933201+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8014c9be-88c4-4f23-89af-fea77abd8987",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1975-11-19",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz",
+      "post-bop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1597346",
+      "free streaming": "https://open.spotify.com/artist/6r96KF2Ucx8cUwBvgnxRYD",
+      "purchase for download": "https://music.apple.com/us/artist/58432978",
+      "streaming": "https://tidal.com/artist/8148816"
+    },
+    "labels": [
+      "Stunt Records",
+      "SteepleChase"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5241146,
+    "name": "Stephen Riley",
+    "nb_fan": 50,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/5241146",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e6c4f4dbb4ffc48670e24260db769a41/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Dayna Stephens",
+      "Eric McPherson",
+      "Ethan Iverson",
+      "Peter Zak",
+      "Snorre Kirk"
+    ],
+    "contributor_roles": {
+      "Snorre Kirk": [
+        "Main"
+      ],
+      "Dayna Stephens": [
+        "Main"
+      ],
+      "Eric McPherson": [
+        "Main"
+      ],
+      "Ethan Iverson": [
+        "Featured"
+      ],
+      "Peter Zak": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Going Up",
+      "Ruby My Dear (feat. Ethan Iverson, Stephen Riley & Eric McPhearson)",
+      "Festival Grease",
+      "Blues Arabesque",
+      "West Indian Flower",
+      "The Intimacy of the Blues"
+    ],
+    "track_durations": [
+      275,
+      375,
+      318,
+      280,
+      291,
+      320
+    ],
+    "track_ranks": [
+      23546,
+      38332,
+      76667,
+      46038,
+      144761,
+      22411
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 16,
+      "ep": 1,
+      "single": 5,
+      "compile": 5
+    },
+    "albums": [
+      {
+        "title": "Monk'D",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "My Romance",
+        "label": "",
+        "release_date": "2022-08-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Original Mind",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Remember You",
+        "label": "",
+        "release_date": "2021-06-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Going Up",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Friday the 13th",
+        "label": "",
+        "release_date": "2020-04-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tangerine Rhapsody",
+        "label": "",
+        "release_date": "2019-11-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Oleo",
+        "label": "",
+        "release_date": "2019-08-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hold 'Em Joe",
+        "label": "",
+        "release_date": "2018-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Baubles, Bangles and Beads",
+        "label": "",
+        "release_date": "2014-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lover",
+        "label": "",
+        "release_date": "2013-08-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hart-Beat",
+        "label": "",
+        "release_date": "2012-06-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lucky Seven",
+        "label": "",
+        "release_date": "2011-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "El Gaucho",
+        "label": "",
+        "release_date": "2010-02-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Easy to Remember",
+        "label": "",
+        "release_date": "2007-01-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Inside Out",
+        "label": "",
+        "release_date": "2005-10-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Impulso Sideral",
+        "label": "",
+        "release_date": "2021-05-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Light Blue",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Streamline",
+        "label": "",
+        "release_date": "2021-03-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Going Up",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unsentimental",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "West Indian Flower",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deuce",
+        "label": "",
+        "release_date": "2017-01-10",
+        "nb_tracks": 0,
+        "type": "compile"
+      },
+      {
+        "title": "Haunted Heart",
+        "label": "",
+        "release_date": "2015-10-01",
+        "nb_tracks": 0,
+        "type": "compile"
+      },
+      {
+        "title": "Tenor Treats Two",
+        "label": "",
+        "release_date": "2009-11-10",
+        "nb_tracks": 0,
+        "type": "compile"
+      },
+      {
+        "title": "Tenor Treats",
+        "label": "",
+        "release_date": "2009-01-10",
+        "nb_tracks": 0,
+        "type": "compile"
+      },
+      {
+        "title": "Once Upon a Dream",
+        "label": "",
+        "release_date": "2007-10-10",
+        "nb_tracks": 0,
+        "type": "compile"
+      }
+    ],
+    "related_artists": [
+      "Steve Turre",
+      "Sonny Red",
+      "Harold Vick",
+      "Steve Lacy",
+      "Tete Montoliu",
+      "Ozma – French Explosive Jazz",
+      "Don Ellis",
+      "Joey Calderazzo",
+      "Doug Raney",
+      "Gerald Wilson Orchestra"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1597346,
+    "name": "Stephen Riley",
+    "profile": "American saxophonist, born 19 November 1975 in Greenville, North Carolina, USA.",
+    "realname": "",
+    "social_urls": [
+      "https://www.smallslive.com/artists/1773-stephen-riley/",
+      "https://stephenrileyernestturner.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [
+      "Dave Stryker Organ Quartet",
+      "Marcus Roberts Nonet",
+      "GinmanBlachman!",
+      "Adam Shulman Septet",
+      "Marcus Roberts And The Modern Jazz Generation"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 39,
+    "digital_only_releases": 8,
+    "total_releases": 47,
+    "formats": [
+      "",
+      "2xLP, Album",
+      "2xLP, Comp, RM",
+      "2xLP, Gat",
+      "CD",
+      "CD, Album",
+      "CD, Album, 24 ",
+      "CD, Comp, Promo, Smplr",
+      "CDr",
+      "File, FLAC, MP3, EP"
+    ],
+    "labels": [
+      "Blue Note",
+      "CArlo Music Records",
+      "Cellar Live",
+      "Cellar Music (2)",
+      "Gut String Records",
+      "J-Master Records",
+      "Kayax",
+      "Mack Avenue Records",
+      "Nuevos Medios",
+      "Nuevos Medios S.L.",
+      "Prismatic Spectacular",
+      "Red Mule Records",
+      "Smalls Records",
+      "SteepleChase",
+      "Wagram Music",
+      "ZOHO"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Stephen Riley",
+    "mbid": "8014c9be-88c4-4f23-89af-fea77abd8987",
+    "listeners": 1024,
+    "playcount": 5506,
+    "listener_play_ratio": 5.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Stephen+Riley\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "saxophone"
+    ],
+    "similar_artists": [
+      "Jerry Bergonzi",
+      "Dayna Stephens",
+      "Eric Alexander Quartet",
+      "Dick Oatts",
+      "Joe Alterman"
+    ],
+    "top_tracks": [
+      {
+        "name": "You Stepped Out Of A Dream",
+        "listeners": 252,
+        "playcount": 516
+      },
+      {
+        "name": "Hoe Down",
+        "listeners": 142,
+        "playcount": 227
+      },
+      {
+        "name": "Light Blue",
+        "listeners": 124,
+        "playcount": 190
+      },
+      {
+        "name": "Among My Souvenirs",
+        "listeners": 67,
+        "playcount": 104
+      },
+      {
+        "name": "Haunted Heart",
+        "listeners": 57,
+        "playcount": 176
+      },
+      {
+        "name": "Baubles, Bangles and Beads",
+        "listeners": 56,
+        "playcount": 185
+      },
+      {
+        "name": "The Intimacy of the Blues",
+        "listeners": 49,
+        "playcount": 158
+      },
+      {
+        "name": "When It's Sleepy Time Down South",
+        "listeners": 43,
+        "playcount": 70
+      },
+      {
+        "name": "Doris",
+        "listeners": 34,
+        "playcount": 49
+      },
+      {
+        "name": "I Remember You",
+        "listeners": 33,
+        "playcount": 62
+      }
+    ],
+    "url": "https://www.last.fm/music/Stephen+Riley"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,533 @@
+{
+  "artist_name": "Alfie Templeman",
+  "artist_id": "alfie_templeman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:51:35.126472+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "62bddca9-11d7-48cd-ba2f-ac9e46530e7b",
+    "type": "Person",
+    "country": "",
+    "area": "England",
+    "begin_date": "2003-01-25",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "pop rock",
+      "slacker rock",
+      "alternative rock",
+      "dance-pop",
+      "indie pop",
+      "indie rock"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003785530",
+      "bandcamp": "https://alfietempleman.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6833570",
+      "free streaming": "https://www.deezer.com/artist/12099282",
+      "image": "https://commons.wikimedia.org/wiki/File:Alfie_Templeman_(49391999866)_(cropped).jpg",
+      "last.fm": "https://www.last.fm/music/Alfie+Templeman",
+      "official homepage": "https://www.alfietempleman.com/",
+      "purchase for download": "https://music.apple.com/us/artist/1199962512",
+      "social network": "https://www.instagram.com/alfietempleman/",
+      "soundcloud": "https://soundcloud.com/alfie-templeman",
+      "streaming": "https://tidal.com/artist/8609543",
+      "wikidata": "https://www.wikidata.org/wiki/Q98522214"
+    },
+    "labels": [
+      "Chess Club Records",
+      "[no label]",
+      "Haunted Attic Records",
+      "Chess",
+      "Prolifica",
+      "Fueled by Ramen",
+      "AWAL"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12099282,
+    "name": "Alfie Templeman",
+    "nb_fan": 7753,
+    "nb_album": 28,
+    "link": "https://www.deezer.com/artist/12099282",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0c31f95f7bca442c2bdfc4dd42490712/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anna of the North",
+      "April",
+      "Coach Party",
+      "Dom Valentino"
+    ],
+    "contributor_roles": {
+      "Coach Party": [
+        "Featured"
+      ],
+      "April": [
+        "Featured"
+      ],
+      "Dom Valentino": [
+        "Main"
+      ],
+      "Anna of the North": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Happiness In Liquid Form",
+      "Everybody Wants to Rule the World - InVersions",
+      "Leaving Today",
+      "Movies",
+      "Obvious Guy",
+      "Film Scene Daydream",
+      "My Best Friend",
+      "Circles",
+      "Things I Thought Were Mine",
+      "Forever Isn't Long Enough",
+      "Wait, I Lied",
+      "Everybody’s Gonna Love Somebody (Edit)",
+      "Stop Thinking (About Me)",
+      "Colour Me Blue",
+      "Yellow Flowers",
+      "3D Feelings",
+      "A Western",
+      "Used To Love",
+      "Who I Am",
+      "To You",
+      "Mellow Moon",
+      "Broken",
+      "One More Day",
+      "Young Folks",
+      "First Time"
+    ],
+    "track_durations": [
+      212,
+      194,
+      252,
+      197,
+      201,
+      248,
+      157,
+      151,
+      193,
+      203,
+      196,
+      196,
+      251,
+      196,
+      186,
+      197,
+      176,
+      215,
+      192,
+      255,
+      212,
+      192,
+      269,
+      249,
+      188
+    ],
+    "track_ranks": [
+      480177,
+      363560,
+      418100,
+      409171,
+      379353,
+      243325,
+      331241,
+      336665,
+      360329,
+      254425,
+      200375,
+      313461,
+      270543,
+      326258,
+      121390,
+      317445,
+      165871,
+      210276,
+      161309,
+      114466,
+      114191,
+      239360,
+      145524,
+      333099,
+      142516
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 7,
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "Radiosoul",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mellow Moon",
+        "label": "",
+        "release_date": "2022-05-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forever Isn't Long Enough",
+        "label": "",
+        "release_date": "2021-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Just a Dance",
+        "label": "",
+        "release_date": "2024-06-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Beckham",
+        "label": "",
+        "release_date": "2024-05-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Colour Me Blue",
+        "label": "",
+        "release_date": "2022-04-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Happiness in Liquid Form",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Don't Go Wasting Time",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sunday Morning Cereal",
+        "label": "",
+        "release_date": "2019-06-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wonderland Dreamin'",
+        "label": "",
+        "release_date": "2017-08-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dirty Laundry",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hello Lonely",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Radiosoul (Single Version)",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eyes Wide Shut",
+        "label": "",
+        "release_date": "2024-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No One Does It Better Than You",
+        "label": "",
+        "release_date": "2023-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Young Folks",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deezer Sessions",
+        "label": "",
+        "release_date": "2022-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Broken (Rezidential Remix)",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Broken",
+        "label": "",
+        "release_date": "2022-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "3D Feelings",
+        "label": "",
+        "release_date": "2021-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One More Day",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everybody's Gonna Love Somebody",
+        "label": "",
+        "release_date": "2021-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shady",
+        "label": "",
+        "release_date": "2020-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everybody Wants to Rule the World - InVersions",
+        "label": "",
+        "release_date": "2020-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever Isn't Long Enough",
+        "label": "",
+        "release_date": "2020-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Used To Love",
+        "label": "",
+        "release_date": "2019-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunday Morning Cereal",
+        "label": "",
+        "release_date": "2019-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stop Thinking (About Me)",
+        "label": "",
+        "release_date": "2019-04-09",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Goth Babe",
+      "Cassia",
+      "hard life",
+      "Jawny",
+      "Foster the People",
+      "Dayglow",
+      "Blu DeTiger",
+      "Oscar Scheller",
+      "Yumi Zouma",
+      "Gus Dapperton"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6833570,
+    "name": "Alfie Templeman",
+    "profile": "Born: Jan 26, 2003 in Carlton, Bedfordshire, England",
+    "realname": "Alfie George Templeman",
+    "social_urls": [
+      "http://www.alfietempleman.com/",
+      "http://www.facebook.com/atemplemanmusic/",
+      "http://www.instagram.com/alfietempleman/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 25,
+    "total_releases": 30,
+    "formats": [
+      "",
+      "10\", EP, Ltd, Cre",
+      "10\", EP, Pin",
+      "100xFile, WAV, Album, Comp, Ltd",
+      "12\", EP, Cle",
+      "18xFile, MP3, Comp, 320",
+      "CDr, Comp, Car",
+      "Cass, Comp, Ltd, Neo",
+      "Cass, S/Sided, Comp, Ltd, Num",
+      "File, AAC, EP",
+      "File, AAC, Single",
+      "File, MP3, EP",
+      "File, MP3, MiniAlbum",
+      "File, MP3, Single",
+      "LP, Album, Ltd, Blu"
+    ],
+    "labels": [
+      "Blood Records (14), Flying Vinyl (2)",
+      "Chess Club",
+      "Dirty Hit",
+      "EarthPercent",
+      "Haunted Attic Records",
+      "Not On Label",
+      "Stupid Decisions, Yerba Mala"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alfie Templeman",
+    "mbid": "62bddca9-11d7-48cd-ba2f-ac9e46530e7b",
+    "listeners": 424491,
+    "playcount": 7111879,
+    "listener_play_ratio": 16.75,
+    "bio_exists": true,
+    "bio_summary": "Alfie Templeman was born in a household blessed with musical talent - his sister is a pianist and plays trumpet, his dad is a zealous collector of guitars with more than twenty instruments scattered around at home - and it was inevitable that the curious young Alfie would ask for drum lessons aged just seven years old, having taken to rock and indie music avidly. Inspired by the rolling countryside around Carlton, the skies that passed across his window at night <a href=\"https://www.last.fm/musi",
+    "tags": [
+      "indie pop",
+      "indie rock",
+      "singer-songwriter",
+      "UK",
+      "british"
+    ],
+    "similar_artists": [
+      "Declan McKenna",
+      "Cassia",
+      "Dayglow",
+      "Sea Girls",
+      "Gus Dapperton"
+    ],
+    "top_tracks": [
+      {
+        "name": "Happiness In Liquid Form",
+        "listeners": 124507,
+        "playcount": 815193
+      },
+      {
+        "name": "Stop Thinking (About Me)",
+        "listeners": 85327,
+        "playcount": 472826
+      },
+      {
+        "name": "Movies",
+        "listeners": 76064,
+        "playcount": 414980
+      },
+      {
+        "name": "Things I Thought Were Mine",
+        "listeners": 69384,
+        "playcount": 442575
+      },
+      {
+        "name": "Circles",
+        "listeners": 69102,
+        "playcount": 371005
+      },
+      {
+        "name": "Obvious Guy",
+        "listeners": 57250,
+        "playcount": 350410
+      },
+      {
+        "name": "Film Scene Daydream",
+        "listeners": 54460,
+        "playcount": 289393
+      },
+      {
+        "name": "Everybody’s Gonna Love Somebody - Edit",
+        "listeners": 48683,
+        "playcount": 237508
+      },
+      {
+        "name": "3D Feelings",
+        "listeners": 46272,
+        "playcount": 316509
+      },
+      {
+        "name": "Like An Animal",
+        "listeners": 42397,
+        "playcount": 167846
+      }
+    ],
+    "url": "https://www.last.fm/music/Alfie+Templeman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,223 @@
+{
+  "artist_name": "Euforbia",
+  "artist_id": "euforbia",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:31:58.104352+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170763897,
+    "name": "Euforbia",
+    "nb_fan": 10,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/170763897",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0ea3c86996cb6e700751c15f90f86066/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "A Fair Wind"
+    ],
+    "track_durations": [
+      180
+    ],
+    "track_ranks": [
+      32942
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Breath of the Wild",
+        "label": "",
+        "release_date": "2024-11-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Save This Moment",
+        "label": "",
+        "release_date": "2025-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow",
+        "label": "",
+        "release_date": "2025-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Natural Beauty",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Euforbia Forest",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Forest Song",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strong",
+        "label": "",
+        "release_date": "2023-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stillness",
+        "label": "",
+        "release_date": "2023-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another sky",
+        "label": "",
+        "release_date": "2022-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet",
+        "label": "",
+        "release_date": "2022-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Fair Wind",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Euforbia",
+    "mbid": "",
+    "listeners": 46234,
+    "playcount": 191221,
+    "listener_play_ratio": 4.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Euforbia\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mellow Mountain",
+      "Amber Glow",
+      "Joanna Neriah",
+      "Malie Aolani",
+      "Caius Biel"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Fair Wind",
+        "listeners": 30544,
+        "playcount": 136043
+      },
+      {
+        "name": "Carry Me",
+        "listeners": 15370,
+        "playcount": 41847
+      },
+      {
+        "name": "Slow",
+        "listeners": 4734,
+        "playcount": 11679
+      },
+      {
+        "name": "Another sky",
+        "listeners": 73,
+        "playcount": 785
+      },
+      {
+        "name": "Show Me The Night",
+        "listeners": 63,
+        "playcount": 730
+      },
+      {
+        "name": "Strong",
+        "listeners": 37,
+        "playcount": 51
+      },
+      {
+        "name": "Quiet",
+        "listeners": 17,
+        "playcount": 52
+      },
+      {
+        "name": "Stillness",
+        "listeners": 9,
+        "playcount": 16
+      },
+      {
+        "name": "The Forest Song",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Carry Me (feat. Firefly Entertainment AB, Firefly Entertainment AB)",
+        "listeners": 1,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Euforbia"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

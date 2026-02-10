@@ -1,0 +1,225 @@
+{
+  "artist_name": "The Stilltones",
+  "artist_id": "the_stilltones",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:37:17.708278+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 103901762,
+    "name": "The Stilltones",
+    "nb_fan": 7,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/103901762",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d608e417dabc72abdaf0db56ae8c9997/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Julia",
+      "From Now on",
+      "Slow fox"
+    ],
+    "track_durations": [
+      232,
+      239,
+      215
+    ],
+    "track_ranks": [
+      153907,
+      102460,
+      139992
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Nocturne for No One",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers of a Lost Love",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunday Stroll",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Venice",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Terra",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Traveling Story",
+        "label": "",
+        "release_date": "2024-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From Now on",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reflections in the Rain",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow fox",
+        "label": "",
+        "release_date": "2023-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reflections in the Rain",
+        "label": "",
+        "release_date": "2023-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Julia",
+        "label": "",
+        "release_date": "2020-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Stilltones",
+    "mbid": "",
+    "listeners": 40663,
+    "playcount": 112296,
+    "listener_play_ratio": 2.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Stilltones\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Deer Groves",
+      "Chops & Coda",
+      "Tiril Brandt",
+      "Nouvelle Marée",
+      "Cara Myers Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Slow Fox",
+        "listeners": 16290,
+        "playcount": 35409
+      },
+      {
+        "name": "Julia",
+        "listeners": 10936,
+        "playcount": 29556
+      },
+      {
+        "name": "From Now on",
+        "listeners": 9163,
+        "playcount": 18118
+      },
+      {
+        "name": "Venice",
+        "listeners": 8873,
+        "playcount": 18374
+      },
+      {
+        "name": "Terra",
+        "listeners": 5792,
+        "playcount": 10829
+      },
+      {
+        "name": "Traveling Story",
+        "listeners": 4,
+        "playcount": 6
+      },
+      {
+        "name": "Nocturne for No One",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Reflections in the Rain",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Whispers of a Lost Love",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Stilltones"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

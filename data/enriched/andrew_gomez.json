@@ -1,0 +1,157 @@
+{
+  "artist_name": "Andrew Gomez",
+  "artist_id": "andrew_gomez",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:58:39.080193+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f2a19ce7-6097-4073-8fc9-fecb97d5b524",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1851846"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Andrew Gomez', got 'Andrés Gómez'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1851846,
+    "name": "Andrew Gomez",
+    "profile": "US musician known for playing the bass, guitars and keyboards.",
+    "realname": "Andrew Gomez",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Echobrain"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "Cass, S/Sided, EP"
+    ],
+    "labels": [
+      "Not On Label (The Hague (3) Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Andrew Gomez",
+    "mbid": "f2a19ce7-6097-4073-8fc9-fecb97d5b524",
+    "listeners": 621,
+    "playcount": 3747,
+    "listener_play_ratio": 6.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Andrew+Gomez\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ellis Walker",
+      "Helge Ro",
+      "Benjamin Bed",
+      "Braiden Morrish",
+      "Limanda"
+    ],
+    "top_tracks": [
+      {
+        "name": "Small Wonder",
+        "listeners": 525,
+        "playcount": 3421
+      },
+      {
+        "name": "Miami",
+        "listeners": 54,
+        "playcount": 84
+      },
+      {
+        "name": "Tara",
+        "listeners": 15,
+        "playcount": 33
+      },
+      {
+        "name": "The Bear Is Sleeping",
+        "listeners": 7,
+        "playcount": 15
+      },
+      {
+        "name": "She Will Be Loved",
+        "listeners": 5,
+        "playcount": 13
+      },
+      {
+        "name": "Troll Mother's Lullaby",
+        "listeners": 5,
+        "playcount": 11
+      },
+      {
+        "name": "Harp",
+        "listeners": 5,
+        "playcount": 7
+      },
+      {
+        "name": "My Song",
+        "listeners": 2,
+        "playcount": 10
+      },
+      {
+        "name": "My Song 3",
+        "listeners": 2,
+        "playcount": 8
+      },
+      {
+        "name": "Badd Thonng",
+        "listeners": 2,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Andrew+Gomez"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

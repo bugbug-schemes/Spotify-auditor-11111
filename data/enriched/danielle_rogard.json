@@ -1,0 +1,217 @@
+{
+  "artist_name": "Danielle Rogard",
+  "artist_id": "danielle_rogard",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:21:27.947291+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 139317772,
+    "name": "Danielle Rogard",
+    "nb_fan": 0,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/139317772",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/05ce82b76d83b5fa68e2fac69ee789b8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Bella the Blue Whale"
+    ],
+    "track_durations": [
+      95
+    ],
+    "track_ranks": [
+      18524
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Blanket Of Dreams",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Friend In Me",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Stardust",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moondrops",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Riding My Bike",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Penny & Penelope",
+        "label": "",
+        "release_date": "2024-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sharky's Toothbrush",
+        "label": "",
+        "release_date": "2023-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bella the Blue Whale",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daphne, The Dolphin",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Sleepy King",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Lonely Cloud",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Danielle Rogard",
+    "mbid": "",
+    "listeners": 7907,
+    "playcount": 141513,
+    "listener_play_ratio": 17.9,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Danielle+Rogard\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Gil Sunniver",
+      "Otis Meadow",
+      "Jasper Sylvaire",
+      "Leo Button",
+      "DoRe Mi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Bella the Blue Whale",
+        "listeners": 4253,
+        "playcount": 54997
+      },
+      {
+        "name": "Sharky's Toothbrush",
+        "listeners": 3978,
+        "playcount": 56254
+      },
+      {
+        "name": "The Lonely Cloud",
+        "listeners": 1858,
+        "playcount": 19796
+      },
+      {
+        "name": "A Friend In Me",
+        "listeners": 832,
+        "playcount": 6788
+      },
+      {
+        "name": "Penny & Penelope",
+        "listeners": 259,
+        "playcount": 3344
+      },
+      {
+        "name": "My Favorite Colors",
+        "listeners": 71,
+        "playcount": 132
+      },
+      {
+        "name": "Sleepy Stardust",
+        "listeners": 60,
+        "playcount": 100
+      },
+      {
+        "name": "Daphne, the Dolphin",
+        "listeners": 51,
+        "playcount": 66
+      },
+      {
+        "name": "The Sleepy King",
+        "listeners": 19,
+        "playcount": 36
+      }
+    ],
+    "url": "https://www.last.fm/music/Danielle+Rogard"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

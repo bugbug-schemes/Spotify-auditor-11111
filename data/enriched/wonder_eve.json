@@ -1,0 +1,407 @@
+{
+  "artist_name": "Wonder Eve",
+  "artist_id": "wonder_eve",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:01:35.848765+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "24409499-4b66-4807-a4af-ea601c0c2768",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183895747",
+      "purchase for download": "https://music.apple.com/us/artist/1648786067",
+      "streaming": "https://tidal.com/artist/34526414",
+      "youtube music": "https://music.youtube.com/channel/UCHrJx64pFhqGBgUnVipJs9w"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183895747,
+    "name": "Wonder Eve",
+    "nb_fan": 45,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/183895747",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/65bc03a71be29a8abb67221392f13692/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Esperança",
+      "Tis the season",
+      "Twelve Oaks",
+      "My Secrets",
+      "They Said",
+      "My One And Only Love",
+      "Remembering The Rain",
+      "Santa's Holiday",
+      "Tears",
+      "Grey December",
+      "Marlowe",
+      "Winter Wonderland"
+    ],
+    "track_durations": [
+      177,
+      214,
+      246,
+      208,
+      218,
+      222,
+      202,
+      139,
+      212,
+      184,
+      159,
+      150
+    ],
+    "track_ranks": [
+      21135,
+      38843,
+      60444,
+      9192,
+      46684,
+      71869,
+      22682,
+      21692,
+      24878,
+      18507,
+      31619,
+      11433
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "Marlowe",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "December Afterlight",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Have Met You Before",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twelve Oaks",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nektar",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Secrets",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grey December",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Santa's Holiday",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tears",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Esperança",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evelyn",
+        "label": "",
+        "release_date": "2023-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "They Said",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Supine",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remembering The Rain",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Mean Us",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My One And Only Love",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tis the season",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Child Is Born",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It´s Finally Christmas",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 136888,
+    "name": "Everton Nelson",
+    "profile": "Violinist. Having toured extensively throughout the world with the Ryuichi Sakamoto Trio and band, Everton is now much in demand as a session musician. With 20 years of experience under his belt he has recorded with some of the world’s leading recording artists including: Adele, Sam Smith, Ed Sheeran, Amy Winehouse, Sade, Peter Gabriel, Mary J Blige, Sting, Gregory Porter, Stevie Wonder, Alicia Keyes, Florence and the Machine and Joni Mitchell.\r\n\r\nAs an orchestral leader Everton has lead movie soundtrack recordings for film composers including:\r\nCarter Burwell (Three Billboards Outside Ebbing, Missouri, Wonderstruck, The Twilight Saga: Breaking Dawn Part 1 & 2, Seven Psychopaths)\r\nDanny Elfman ( Alice Through the Looking Glass, Hitchcock)\r\nHenry Jackman (Kingsman: The Golden Circle, Captain America, Puss in Boots)\r\nMarc Streitenfeld (Prometheus)\r\nHeitor Pereira (Angry Birds)\r\nRamin Djawadi (The Great Wall, Warcraft, Safe House)\r\nSteven Price (Gravity, Attack the Block)\r\nAlberto Inglesi",
+    "realname": "Everton K.C. Nelson",
+    "social_urls": [
+      "https://www.facebook.com/Everton-Nelson-290316868548596/",
+      "https://www.facebook.com/everton.k.nelson",
+      "https://www.imdb.com/name/nm0625362/"
+    ],
+    "members": [],
+    "groups": [
+      "Instrumental",
+      "The London Session Orchestra",
+      "Millennia Strings",
+      "Strings Without Frontiers",
+      "ESP Strings",
+      "The Millennia Ensemble",
+      "The Heritage Orchestra",
+      "Reggae Philharmonic Orchestra",
+      "The Michael Nyman Orchestra",
+      "London Festival Orchestra",
+      "Everton Nelson Orchestra",
+      "The London Scratch Orchestra",
+      "Sonia Slany String And Wind Ensemble",
+      "The Chamber Orchestra Of London",
+      "Orchestre de Grandeur",
+      "The Valve Bone Woe Ensemble"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 10,
+    "digital_only_releases": 90,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "11xFile, FLAC, Album, 24-",
+      "2x7\", Single, Ltd, RM",
+      "2xCDr, Album",
+      "2xLP, Met",
+      "3xCD, Comp",
+      "3xFile, FLAC, EP",
+      "7\"",
+      "7\", Single, Ltd, Red",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "File, FLAC",
+      "File, FLAC, 24-",
+      "File, FLAC, Single",
+      "File, FLAC, Single, 24-",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Barclay",
+      "Charlatan Record Cartel",
+      "Columbia",
+      "Epic",
+      "Glitterbox",
+      "Hollywood Records",
+      "Lakeshore Records",
+      "Laws Of Motion",
+      "Milan",
+      "Ministry Of Sound Recordings",
+      "Not On Label",
+      "Omnivore Recordings",
+      "Organon (4), WEA Japan",
+      "PMR Records (2), EMI",
+      "Rambling Records",
+      "Real World Records",
+      "WaterTower Music",
+      "Wonderfulsound"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Wonder Eve",
+    "mbid": "24409499-4b66-4807-a4af-ea601c0c2768",
+    "listeners": 84419,
+    "playcount": 267766,
+    "listener_play_ratio": 3.17,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Wonder+Eve\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Long Island Quartet",
+      "The Mill Basin Band",
+      "Holborns",
+      "Red Brick Lane",
+      "Ikigai"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tis the season",
+        "listeners": 40237,
+        "playcount": 103349
+      },
+      {
+        "name": "They Said",
+        "listeners": 18913,
+        "playcount": 44531
+      },
+      {
+        "name": "Twelve Oaks",
+        "listeners": 14556,
+        "playcount": 31147
+      },
+      {
+        "name": "Remembering The Rain",
+        "listeners": 11777,
+        "playcount": 27594
+      },
+      {
+        "name": "My One And Only Love",
+        "listeners": 10233,
+        "playcount": 29440
+      },
+      {
+        "name": "Santa's Holiday",
+        "listeners": 7817,
+        "playcount": 14136
+      },
+      {
+        "name": "Tears",
+        "listeners": 5871,
+        "playcount": 10743
+      },
+      {
+        "name": "I Mean Us",
+        "listeners": 1227,
+        "playcount": 3022
+      },
+      {
+        "name": "Esperança",
+        "listeners": 1169,
+        "playcount": 2384
+      },
+      {
+        "name": "I Have Met You Before",
+        "listeners": 245,
+        "playcount": 422
+      }
+    ],
+    "url": "https://www.last.fm/music/Wonder+Eve"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,181 @@
+{
+  "artist_name": "Suno Light",
+  "artist_id": "suno_light",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:30:51.143072+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 197955827,
+    "name": "Suno Light",
+    "nb_fan": 0,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/197955827",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a8b58e4734b828171e37e061f7ca82c7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Rain Drops",
+        "label": "",
+        "release_date": "2025-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Down Stairs",
+        "label": "",
+        "release_date": "2025-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where We Were",
+        "label": "",
+        "release_date": "2025-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shaded Woods",
+        "label": "",
+        "release_date": "2024-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wistful Night",
+        "label": "",
+        "release_date": "2024-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Plain",
+        "label": "",
+        "release_date": "2024-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Suno Light",
+    "mbid": "",
+    "listeners": 6654,
+    "playcount": 31134,
+    "listener_play_ratio": 4.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Suno+Light\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Yolanda Rae",
+      "Taylor Ellis",
+      "Max Stewart",
+      "R.B James",
+      "Jonas Björk"
+    ],
+    "top_tracks": [
+      {
+        "name": "Open Plain",
+        "listeners": 3176,
+        "playcount": 10643
+      },
+      {
+        "name": "Wistful Night",
+        "listeners": 3035,
+        "playcount": 10117
+      },
+      {
+        "name": "Shaded Woods",
+        "listeners": 2376,
+        "playcount": 5836
+      },
+      {
+        "name": "Lavendel",
+        "listeners": 777,
+        "playcount": 1744
+      },
+      {
+        "name": "Dreaming of You",
+        "listeners": 771,
+        "playcount": 1950
+      },
+      {
+        "name": "Cerulean Coast",
+        "listeners": 316,
+        "playcount": 816
+      },
+      {
+        "name": "Where We Were",
+        "listeners": 6,
+        "playcount": 11
+      },
+      {
+        "name": "Down Stairs",
+        "listeners": 4,
+        "playcount": 11
+      },
+      {
+        "name": "Rain Drops",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Still Waters",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Suno+Light"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

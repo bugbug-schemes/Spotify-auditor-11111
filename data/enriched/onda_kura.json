@@ -1,0 +1,162 @@
+{
+  "artist_name": "Onda Kura",
+  "artist_id": "onda_kura",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:13:34.369018+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "586ef511-0539-4909-9e5d-f65aaec914f4",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/1KLWNkshpPh67SV3yyM1gJ",
+      "streaming": "https://music.apple.com/gb/artist/1846560205"
+    },
+    "labels": [
+      "Azure Noon"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 351164022,
+    "name": "Onda Kura",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/351164022",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/32d8f39fefbc5e63f2fe5d4088fa1d73/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Lowburn"
+    ],
+    "track_durations": [
+      168
+    ],
+    "track_ranks": [
+      370871
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Café al Sol",
+        "label": "",
+        "release_date": "2026-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden Idle",
+        "label": "",
+        "release_date": "2025-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Late Swim",
+        "label": "",
+        "release_date": "2025-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lowburn",
+        "label": "",
+        "release_date": "2025-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Onda Kura",
+    "mbid": "",
+    "listeners": 1012,
+    "playcount": 2210,
+    "listener_play_ratio": 2.18,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Onda+Kura\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Léon Mirage",
+      "Bishop Juice",
+      "Azure Fade",
+      "Carlton Ranks",
+      "Noir Vista"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lowburn",
+        "listeners": 861,
+        "playcount": 1700
+      },
+      {
+        "name": "Late Swim",
+        "listeners": 145,
+        "playcount": 241
+      },
+      {
+        "name": "Café al Sol",
+        "listeners": 94,
+        "playcount": 145
+      },
+      {
+        "name": "Golden Idle",
+        "listeners": 79,
+        "playcount": 124
+      }
+    ],
+    "url": "https://www.last.fm/music/Onda+Kura"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

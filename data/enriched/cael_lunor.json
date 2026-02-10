@@ -1,0 +1,127 @@
+{
+  "artist_name": "Cael Lunor",
+  "artist_id": "cael_lunor",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:55:19.964329+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 349640881,
+    "name": "Cael Lunor",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/349640881",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b20426795a481bdf6bf43f0b4c229c13/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Silent Waves",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Veiled Dreams",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stellar Breeze",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirage",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cael Lunor",
+    "mbid": "",
+    "listeners": 2473,
+    "playcount": 6363,
+    "listener_play_ratio": 2.57,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cael+Lunor\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Serelune",
+      "Rylan Oaks",
+      "Lunaura",
+      "Ala Sky",
+      "Atlantic Horizon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stellar Breeze",
+        "listeners": 1694,
+        "playcount": 4294
+      },
+      {
+        "name": "Mirage",
+        "listeners": 797,
+        "playcount": 2069
+      }
+    ],
+    "url": "https://www.last.fm/music/Cael+Lunor"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

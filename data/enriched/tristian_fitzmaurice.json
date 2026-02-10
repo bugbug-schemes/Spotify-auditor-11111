@@ -1,0 +1,209 @@
+{
+  "artist_name": "Tristian Fitzmaurice",
+  "artist_id": "tristian_fitzmaurice",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:49:38.611363+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183266237,
+    "name": "Tristian Fitzmaurice",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/183266237",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/70697e1963dfbf3996ed1252dc0348c7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Dozy Duckling",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drift Off Darling",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "もののけ姫 (ピアノ)『もののけ姫』より",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christ Is Made the Sure Foundation",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Hail The Power Of Jesus' Name",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Great Is Thy Faithfulness",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "To Be A Pilgrim",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sing A Song Of Sixpence",
+        "label": "",
+        "release_date": "2021-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When The Saints Go Marching In",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "British Nursery Rhymes For Piano",
+        "label": "",
+        "release_date": "2020-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tristian Fitzmaurice",
+    "mbid": "",
+    "listeners": 8816,
+    "playcount": 118379,
+    "listener_play_ratio": 13.43,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tristian+Fitzmaurice\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lenox Martin",
+      "Rosemary Lauter",
+      "Milo Higgins",
+      "Ronaldo Franke",
+      "Riff's Tunes"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Can Sing A Rainbow",
+        "listeners": 6904,
+        "playcount": 70297
+      },
+      {
+        "name": "Mary, Mary, Quite Contrary",
+        "listeners": 3002,
+        "playcount": 31765
+      },
+      {
+        "name": "Drift Off Darling",
+        "listeners": 959,
+        "playcount": 10174
+      },
+      {
+        "name": "Sing A Song Of Sixpence",
+        "listeners": 436,
+        "playcount": 4482
+      },
+      {
+        "name": "To Be A Pilgrim",
+        "listeners": 172,
+        "playcount": 497
+      },
+      {
+        "name": "London Bridge Is Burning Down",
+        "listeners": 146,
+        "playcount": 292
+      },
+      {
+        "name": "Skip To My Lou",
+        "listeners": 144,
+        "playcount": 450
+      },
+      {
+        "name": "Christ Is Made the Sure Foundation",
+        "listeners": 83,
+        "playcount": 318
+      },
+      {
+        "name": "When The Saints Go Marching In",
+        "listeners": 35,
+        "playcount": 80
+      },
+      {
+        "name": "Great Is Thy Faithfulness",
+        "listeners": 3,
+        "playcount": 11
+      }
+    ],
+    "url": "https://www.last.fm/music/Tristian+Fitzmaurice"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,76 @@
+{
+  "artist_name": "Lunabae",
+  "artist_id": "lunabae",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:18:42.882610+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lunabae', got 'Luna Blue'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lunabae",
+    "mbid": "",
+    "listeners": 1605,
+    "playcount": 3826,
+    "listener_play_ratio": 2.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lunabae\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Arctic Halo",
+      "Serelune",
+      "Lunaura",
+      "Cael Lunor",
+      "Ferngoord"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gradient",
+        "listeners": 1605,
+        "playcount": 3826
+      }
+    ],
+    "url": "https://www.last.fm/music/Lunabae"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

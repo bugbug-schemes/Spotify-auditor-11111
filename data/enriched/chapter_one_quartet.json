@@ -1,0 +1,153 @@
+{
+  "artist_name": "Chapter One Quartet",
+  "artist_id": "chapter_one_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:03:26.982642+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 258351622,
+    "name": "Chapter One Quartet",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/258351622",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Sweethearts",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "More of You",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Kiss",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Again",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3649528,
+    "name": "Bluegrass Student Union",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "",
+    "physical_releases": 21,
+    "digital_only_releases": 6,
+    "total_releases": 27,
+    "formats": [
+      "",
+      "2xCD, Album",
+      "2xLP, Album",
+      "CD, Album",
+      "LP",
+      "LP, Album",
+      "VHS"
+    ],
+    "labels": [
+      "Microscopi",
+      "Not On Label",
+      "ORF Radio Niederösterreich",
+      "S.P.E.B.S.Q.S.A."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Chapter One Quartet",
+    "mbid": "",
+    "listeners": 1473,
+    "playcount": 3092,
+    "listener_play_ratio": 2.1,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Chapter+One+Quartet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Catalano Trio",
+      "Dave Gordon Trio",
+      "Levi Hollis",
+      "Blue Hour Theory",
+      "Clifford Randall Sextet"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sweethearts",
+        "listeners": 1435,
+        "playcount": 2999
+      },
+      {
+        "name": "First Kiss",
+        "listeners": 40,
+        "playcount": 93
+      }
+    ],
+    "url": "https://www.last.fm/music/Chapter+One+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

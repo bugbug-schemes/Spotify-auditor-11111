@@ -1,0 +1,174 @@
+{
+  "artist_name": "bearé",
+  "artist_id": "bearé",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:11:37.552405+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6cf9ccc6-4070-400d-9103-41c01712df29",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://bearebeare.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6611811",
+      "social network": "https://twitter.com/dumfather",
+      "soundcloud": "https://soundcloud.com/ghostthompson"
+    },
+    "labels": [
+      "Elemental 97"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'bearé', got 'Beare'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1014741,
+    "name": "Sigi Beare",
+    "profile": "British saxophonist and composer",
+    "realname": "",
+    "social_urls": [
+      "https://www.sigibeare.com/bio"
+    ],
+    "members": [],
+    "groups": [
+      "Baby Charles",
+      "Valentina Fortunati Trio",
+      "Mr Noe"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 2,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "5xFile, FLAC",
+      "7\", Single",
+      "7\", Single, Ltd",
+      "CD, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "Audiobulb Records",
+      "Aut Records",
+      "CD Baby",
+      "Record Kicks",
+      "flau"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "bearé",
+    "mbid": "",
+    "listeners": 45063,
+    "playcount": 111854,
+    "listener_play_ratio": 2.48,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/bear%C3%A9\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Another Night",
+      "Sad Notes",
+      "wuy-wuy",
+      "ourchase",
+      "olbejom"
+    ],
+    "top_tracks": [
+      {
+        "name": "morning coffee",
+        "listeners": 27105,
+        "playcount": 55440
+      },
+      {
+        "name": "moonlit",
+        "listeners": 7377,
+        "playcount": 16931
+      },
+      {
+        "name": "night walk",
+        "listeners": 7090,
+        "playcount": 14748
+      },
+      {
+        "name": "drowse",
+        "listeners": 5383,
+        "playcount": 10229
+      },
+      {
+        "name": "softly",
+        "listeners": 3324,
+        "playcount": 11457
+      },
+      {
+        "name": "canvas",
+        "listeners": 895,
+        "playcount": 1495
+      },
+      {
+        "name": "night reading",
+        "listeners": 440,
+        "playcount": 971
+      },
+      {
+        "name": "nightly",
+        "listeners": 190,
+        "playcount": 216
+      },
+      {
+        "name": "weekend trip",
+        "listeners": 35,
+        "playcount": 352
+      },
+      {
+        "name": "bed light",
+        "listeners": 10,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/bear%C3%A9"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

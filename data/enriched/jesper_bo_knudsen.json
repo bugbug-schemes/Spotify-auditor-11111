@@ -1,0 +1,158 @@
+{
+  "artist_name": "Jesper Bo Knudsen",
+  "artist_id": "jesper_bo_knudsen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:27:42.533531+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ce529438-93c1-4b2d-a0c2-e1a996f0739b",
+    "type": "Person",
+    "country": "DK",
+    "area": "Denmark",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1384660",
+      "free streaming": "https://open.spotify.com/artist/767zb5lIt0ZuBdDbiBbSUO",
+      "other databases": "https://rateyourmusic.com/artist/jesper-bo-knudsen",
+      "social network": "https://www.facebook.com/jb.knudsen.9"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 77593532,
+    "name": "Jesper Bo Knudsen",
+    "nb_fan": 1,
+    "nb_album": 0,
+    "link": "https://www.deezer.com/artist/77593532",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Mads Ole Erhardsen",
+      "Søren Bigum",
+      "Thomas Sejthen",
+      "Thomas Sejthen Trio"
+    ],
+    "contributor_roles": {
+      "Thomas Sejthen Trio": [
+        "Main"
+      ],
+      "Thomas Sejthen": [
+        "Main"
+      ],
+      "Mads Ole Erhardsen": [
+        "Main"
+      ],
+      "Søren Bigum": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "This Is Our Year"
+    ],
+    "track_durations": [
+      371
+    ],
+    "track_ranks": [
+      99213
+    ],
+    "has_explicit": false,
+    "album_types": {},
+    "albums": [],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1384660,
+    "name": "Jesper Bo Knudsen",
+    "profile": "Danish drummer",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Niels Ryde Septet",
+      "Holger Laumann Band",
+      "The Contemporary Workshop Ensemble",
+      "Kwella Concept",
+      "Thomas Sejthen Trio"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 8,
+    "total_releases": 23,
+    "formats": [
+      "",
+      "10xFile, MP3",
+      "10xFile, MP3, Album",
+      "7\", Single",
+      "CD",
+      "CD, Album",
+      "CD, Single, Car",
+      "CDr, Album",
+      "LP",
+      "LP, Album"
+    ],
+    "labels": [
+      "Intermusic (10)",
+      "LongLife Records",
+      "Music Mecca",
+      "Not On Label",
+      "Not On Label (Thomas Sejthen Self-released)",
+      "Olga",
+      "Olufsen Records",
+      "Polydor",
+      "RECA",
+      "Right Tone",
+      "Rosen",
+      "Stunt Records",
+      "Sundance (2)",
+      "The Raven Speaks"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": false,
+    "raw": null
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "lastfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

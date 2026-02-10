@@ -1,0 +1,164 @@
+{
+  "artist_name": "Les Coralines",
+  "artist_id": "les_coralines",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:06:09.466590+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 288736031,
+    "name": "Les Coralines",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/288736031",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/20d3bee879590f70ad6c6c22eea90a77/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Entier",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Littoral",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ciel de minuit",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fleeting Moments",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Opaline Haze",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Les Coralines",
+    "mbid": "",
+    "listeners": 49032,
+    "playcount": 367405,
+    "listener_play_ratio": 7.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Les+Coralines\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Benjamin Rhey",
+      "Vau Dio",
+      "Tuscany Flow",
+      "Benjamin Mounfield",
+      "Leon White"
+    ],
+    "top_tracks": [
+      {
+        "name": "Marbre D’aube",
+        "listeners": 34969,
+        "playcount": 192254
+      },
+      {
+        "name": "Opaline Haze",
+        "listeners": 22726,
+        "playcount": 108854
+      },
+      {
+        "name": "Fleeting Moments",
+        "listeners": 14064,
+        "playcount": 57044
+      },
+      {
+        "name": "Littoral",
+        "listeners": 1835,
+        "playcount": 4828
+      },
+      {
+        "name": "Amarante Spaces",
+        "listeners": 1275,
+        "playcount": 4336
+      },
+      {
+        "name": "Ciel De Minuit",
+        "listeners": 76,
+        "playcount": 85
+      },
+      {
+        "name": "Élysée",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Marbre D'aube",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Les+Coralines"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

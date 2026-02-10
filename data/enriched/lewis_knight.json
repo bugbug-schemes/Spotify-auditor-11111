@@ -1,0 +1,169 @@
+{
+  "artist_name": "Lewis Knight",
+  "artist_id": "lewis_knight",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:07:06.858513+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 205278967,
+    "name": "Lewis Knight",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/205278967",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "O Come All Ye Faithful"
+    ],
+    "track_durations": [
+      172
+    ],
+    "track_ranks": [
+      7023
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "The Gift",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Come All Ye Faithful",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 391727,
+    "name": "The Lewis Sisters",
+    "profile": "Sisters Helen and Kay Lewis had cut a slew of niche and novelty records with a classical bent, but they came to Motown’s West Coast office in Los Angeles as songwriters and backing vocalists, rather than artists in their own right. The siblings' first song was published and recorded in 1952 and they previously recorded on Liberty, Verve, and World Pacific Records. LA producer Hal Davis liked the ladies’ voices a lot, and so they ended up with an artist contract too; billed, bafflingly, as The Singing School Teachers (even though neither of them were actually teachers), aka The Soul Teasers. Their 2 Motown singles failed to inspire much interest, despite the direct involvement of Motown president Berry Gordy Jr. and the rare privilege of seeing release in Europe. Thereafter, Helen and Kay stuck to songwriting, penning several excellent songs for more established Motown acts. The siblings wrote Just Walk In My Shoes for Gladys Knight & the Pips, Baby, Baby (not to be confused with Ooo, B",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Helen Lewis",
+      "Kay Lewis"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 26,
+    "digital_only_releases": 28,
+    "total_releases": 54,
+    "formats": [
+      "",
+      "28xFile, FLAC, Comp, 16-",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "3xCD, Comp, Vol",
+      "7\", EP",
+      "7\", Single, Mono, Promo",
+      "CD, Comp",
+      "CD, Comp, RM",
+      "CDr, Comp, Unofficial",
+      "LP",
+      "LP, Mono"
+    ],
+    "labels": [
+      "Ace",
+      "Bar Records (2)",
+      "Barrington Recordings",
+      "Bestway Records",
+      "CBC Radio Canada Broadcast Recording",
+      "Caroline Records, Caroline Records",
+      "Century Advent Recording",
+      "Digimode Entertainment Ltd.",
+      "Down Town",
+      "Fantastic Voyage",
+      "Light-Shine Productions",
+      "Motorcity Records",
+      "Not On Label",
+      "Reader's Digest",
+      "Red Onion Records (3)",
+      "Sony Music, Universal Music Recordings",
+      "SoulMusic Records",
+      "Tamla Motown",
+      "Universal Music Group",
+      "Verve Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lewis Knight",
+    "mbid": "",
+    "listeners": 709,
+    "playcount": 1217,
+    "listener_play_ratio": 1.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lewis+Knight\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Vaughn Harper",
+      "Tarragona Heights",
+      "Benjamin Kind",
+      "Patrick Leon",
+      "Otar Dunley"
+    ],
+    "top_tracks": [
+      {
+        "name": "O Come All Ye Faithful",
+        "listeners": 709,
+        "playcount": 1214
+      },
+      {
+        "name": "The Gift",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Lewis+Knight"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

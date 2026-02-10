@@ -1,0 +1,139 @@
+{
+  "artist_name": "Chill Palm",
+  "artist_id": "chill_palm",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:06:14.476405+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Chill Palm', got 'Chillpac'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3083100,
+    "name": "Chilli Palmer",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Selles"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Chill Palm",
+    "mbid": "",
+    "listeners": 325,
+    "playcount": 587,
+    "listener_play_ratio": 1.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Chill+Palm\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Zealandia Te Māra a Tāne",
+      "Birdsongst",
+      "Heavy Blossom",
+      "S. Key",
+      "When Doves Cry (FX)"
+    ],
+    "top_tracks": [
+      {
+        "name": "Summer Birds",
+        "listeners": 312,
+        "playcount": 539
+      },
+      {
+        "name": "Chill Jazz Music:  Relaxing, Chill Jazz Music",
+        "listeners": 4,
+        "playcount": 24
+      },
+      {
+        "name": "Relaxing Guitar Instrumental Music: For Study, Relaxation, Focus, Stress Relief, Meditation, Yoga",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Christmas Jazz: A Festive Collection of Christmas Jazz Music",
+        "listeners": 2,
+        "playcount": 6
+      },
+      {
+        "name": "Relaxing Ambient Instrumental Music: For Focus, Meditation, Yoga, Spa, Concentration",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Relaxing Guitar Instrumental Music: For Study, Focus, Stress Relief, Meditation, Yoga",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Peaceful Christmas Piano: A Festive Collection of Peaceful Piano Music",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Calming Hawaiian Stream: Gentle Running Water Sounds",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Calming Neoclassical Guitar Instrumental: For Study, Meditation, Relaxation, Focus, Sleep",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "There’s something special about coming together in stillness🧘‍♀️ #shorts",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Chill+Palm"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

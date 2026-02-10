@@ -1,0 +1,121 @@
+{
+  "artist_name": "Gittiye",
+  "artist_id": "gittiye",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:53:00.239495+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Gittiye', got 'Titiyo'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gittiye",
+    "mbid": "",
+    "listeners": 35504,
+    "playcount": 95257,
+    "listener_play_ratio": 2.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gittiye\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Violet Blanca",
+      "Summer Clarke",
+      "Upah Beats",
+      "Cereal Party",
+      "anoxyma"
+    ],
+    "top_tracks": [
+      {
+        "name": "Car Ride",
+        "listeners": 31768,
+        "playcount": 77374
+      },
+      {
+        "name": "Getaway Shack",
+        "listeners": 7092,
+        "playcount": 14490
+      },
+      {
+        "name": "In Town",
+        "listeners": 1021,
+        "playcount": 2106
+      },
+      {
+        "name": "Beyond",
+        "listeners": 507,
+        "playcount": 1234
+      },
+      {
+        "name": "Into The Night",
+        "listeners": 9,
+        "playcount": 12
+      },
+      {
+        "name": "Companion",
+        "listeners": 8,
+        "playcount": 18
+      },
+      {
+        "name": "Lobby Gossip",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Vienna",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Not Displayed",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Larger",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Gittiye"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

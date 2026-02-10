@@ -1,0 +1,121 @@
+{
+  "artist_name": "Takhall",
+  "artist_id": "takhall",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:25:21.011593+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Takhall', got 'Lvbel C5'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Takhall",
+    "mbid": "",
+    "listeners": 22987,
+    "playcount": 105804,
+    "listener_play_ratio": 4.6,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Takhall\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nova Kral",
+      "Merlin Loughty",
+      "Certificate 16",
+      "Momenti",
+      "Sir Dejvid"
+    ],
+    "top_tracks": [
+      {
+        "name": "Your Are The Calm",
+        "listeners": 20540,
+        "playcount": 98180
+      },
+      {
+        "name": "Sunhalo",
+        "listeners": 2571,
+        "playcount": 7547
+      },
+      {
+        "name": "Element",
+        "listeners": 14,
+        "playcount": 22
+      },
+      {
+        "name": "Telepathic",
+        "listeners": 9,
+        "playcount": 16
+      },
+      {
+        "name": "Beyond The Mask",
+        "listeners": 9,
+        "playcount": 16
+      },
+      {
+        "name": "The Good Place",
+        "listeners": 6,
+        "playcount": 13
+      },
+      {
+        "name": "Fall Nights",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "The Countdown",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "Del Mar",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "The Script",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Takhall"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

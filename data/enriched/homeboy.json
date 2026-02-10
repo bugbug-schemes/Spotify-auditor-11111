@@ -1,0 +1,452 @@
+{
+  "artist_name": "Homeboy",
+  "artist_id": "homeboy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:10:09.040667+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "35825e8d-50f6-4aa0-8977-3674a733ceed",
+    "type": "Person",
+    "country": "EE",
+    "area": "Estonia",
+    "begin_date": "1985",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [
+      "Tarmo Aun"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "biography": "http://ehh.ee/?main_id=12&text_id=461&first=0&sort=t&sub=est",
+      "official homepage": "http://hbrecords.webnode.com/",
+      "social network": "https://www.facebook.com/pages/Homeboy/129926567172212",
+      "youtube": "https://www.youtube.com/user/tahb85"
+    },
+    "labels": [
+      "HBRecords"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1000098,
+    "name": "Homeboy",
+    "nb_fan": 395,
+    "nb_album": 77,
+    "link": "https://www.deezer.com/artist/1000098",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/89a86b0d3c486ea5e900172828d9c4c1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Iamprince",
+      "Kaater",
+      "Navaan Sandhu",
+      "Wonstein"
+    ],
+    "contributor_roles": {
+      "Wonstein": [
+        "Main"
+      ],
+      "Navaan Sandhu": [
+        "Main"
+      ],
+      "Kaater": [
+        "Main"
+      ],
+      "Iamprince": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "#seoulcitypopfreestyle",
+      "Ambarsaria",
+      "Future Days Ahead",
+      "The Magic of Yuletide",
+      "Star's Name (narr.Mommyson)",
+      "평화에 살아요 (feat. IAMPRINCe)"
+    ],
+    "track_durations": [
+      162,
+      212,
+      174,
+      217,
+      178,
+      206
+    ],
+    "track_ranks": [
+      163119,
+      233800,
+      68041,
+      32136,
+      37190,
+      26471
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 5,
+      "single": 66,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "No Fear of God",
+        "label": "",
+        "release_date": "2023-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "INFINITE",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "memories...",
+        "label": "",
+        "release_date": "2020-05-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I'm sorry",
+        "label": "",
+        "release_date": "2018-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spread Love",
+        "label": "",
+        "release_date": "2011-07-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "AGHARTA 1",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sunset Samples Experiment",
+        "label": "",
+        "release_date": "2021-06-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Memory EP",
+        "label": "",
+        "release_date": "2018-03-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Homepauer",
+        "label": "",
+        "release_date": "2017-11-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Halfway",
+        "label": "",
+        "release_date": "2012-01-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "horse",
+        "label": "",
+        "release_date": "2026-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Qalam",
+        "label": "",
+        "release_date": "2025-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Holiday Melody",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "beautiful",
+        "label": "",
+        "release_date": "2025-10-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Future Days Ahead",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby Si Tu",
+        "label": "",
+        "release_date": "2025-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At Last",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "AMG",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "none",
+        "label": "",
+        "release_date": "2025-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cura",
+        "label": "",
+        "release_date": "2025-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "T Vas o T Quedas",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loverboy?",
+        "label": "",
+        "release_date": "2025-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kim Gi Hoon's solitude",
+        "label": "",
+        "release_date": "2024-12-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volveré",
+        "label": "",
+        "release_date": "2024-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Magic of Yuletide",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "#seoulcitypopfreestyle",
+        "label": "",
+        "release_date": "2019-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sad News (Instrumental)",
+        "label": "",
+        "release_date": "2024-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pass Me the Cana",
+        "label": "",
+        "release_date": "2024-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sad News",
+        "label": "",
+        "release_date": "2024-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Signal's",
+        "label": "",
+        "release_date": "2024-10-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 30205,
+    "name": "Homeboy",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 6,
+    "digital_only_releases": 11,
+    "total_releases": 17,
+    "formats": [
+      "",
+      "12\", W/Lbl",
+      "14xCD, Comp, Ltd, Num, P/Unofficial + Box",
+      "2xCD, Album",
+      "CD, Comp + CD, Mixed",
+      "CD, Mixed",
+      "CD-ROM, Comp, Unofficial, MP3",
+      "Cass, Album, Comp",
+      "Cass, Comp, Promo, Smplr"
+    ],
+    "labels": [
+      "C.T. Records, C.T. Records",
+      "Instinct Records",
+      "MIXMUSIC (3)",
+      "Mistemacbari",
+      "Musicast",
+      "Not On Label",
+      "Soulstar",
+      "Sprechen"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Homeboy",
+    "mbid": "119c9ba9-5ac7-4f5d-82eb-5c58ce439ae2",
+    "listeners": 65184,
+    "playcount": 213422,
+    "listener_play_ratio": 3.27,
+    "bio_exists": true,
+    "bio_summary": "There are at least three artists with the name Homeboy.\n\n1. Homeboy (aka AK-Industry with his brother DJ Mayhem) is a hardcore producer and the owner of Nekrolog1k & Agnost1k record labels. \n\n2. Homeboy, house producer from Croatia, and co-owner of House Is OK records. \n\n3. South korean artist who is part of Wet Boyz.\n\nBio for 2.:\nA naturally gifted musician and composer, Homeboy spends 99% of his life eating, breathing and even sweating music. He’s equally at home crafting music for commercial ",
+    "tags": [
+      "Crossbreed",
+      "Drum and bass",
+      "hardcore",
+      "pop",
+      "british"
+    ],
+    "similar_artists": [
+      "Limit",
+      "Brilliant Supervision",
+      "Smooth Heisters",
+      "The 52nd Street Club",
+      "Voluntary Dreamers"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Magic of Yuletide",
+        "listeners": 28903,
+        "playcount": 58815
+      },
+      {
+        "name": "Future Days Ahead",
+        "listeners": 18943,
+        "playcount": 40276
+      },
+      {
+        "name": "모습이 변했니? (feat. 원슈타인)",
+        "listeners": 7369,
+        "playcount": 22442
+      },
+      {
+        "name": "#seoulcitypopfreestyle",
+        "listeners": 3150,
+        "playcount": 20971
+      },
+      {
+        "name": "나의 따스한 집",
+        "listeners": 2742,
+        "playcount": 7196
+      },
+      {
+        "name": "Do the Love",
+        "listeners": 1472,
+        "playcount": 7163
+      },
+      {
+        "name": "Star's Name (narr.Mommyson)",
+        "listeners": 1255,
+        "playcount": 4582
+      },
+      {
+        "name": "take it slow",
+        "listeners": 1199,
+        "playcount": 4705
+      },
+      {
+        "name": "At Last",
+        "listeners": 1174,
+        "playcount": 2402
+      },
+      {
+        "name": "소풍 (feat. 원슈타인)",
+        "listeners": 977,
+        "playcount": 5563
+      }
+    ],
+    "url": "https://www.last.fm/music/Homeboy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

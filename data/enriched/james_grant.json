@@ -1,0 +1,609 @@
+{
+  "artist_name": "James Grant",
+  "artist_id": "james_grant",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:22:47.981663+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7a837972-4fee-4e33-adec-1dc17c4b2c5a",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002363767",
+      "discogs": "https://www.discogs.com/artist/1293405",
+      "free streaming": "https://www.deezer.com/artist/109316",
+      "purchase for download": "https://www.traxsource.com/artist/103409",
+      "social network": "https://www.linkedin.com/in/jamesgrant3/",
+      "soundcloud": "https://soundcloud.com/jamesanjunadeep",
+      "streaming": "https://tidal.com/artist/3609600"
+    },
+    "labels": [
+      "Reflections",
+      "Anjunadeep",
+      "Anjunachill",
+      "Anjunabeats"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 109316,
+    "name": "James Grant",
+    "nb_fan": 3095,
+    "nb_album": 55,
+    "link": "https://www.deezer.com/artist/109316",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3eefe8f616e827b689ddc37c826147bf/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Andrew Bayer",
+      "Because of Art",
+      "Boxer",
+      "Braxton",
+      "Ezequiel Arias",
+      "Jinadu",
+      "Jody Wisternoff",
+      "Legato",
+      "MOTSA",
+      "MXV",
+      "Proff",
+      "Siobhan Wilson",
+      "Takeshi Furukawa"
+    ],
+    "contributor_roles": {
+      "Jody Wisternoff": [
+        "Main"
+      ],
+      "Boxer": [
+        "Main"
+      ],
+      "Proff": [
+        "Main"
+      ],
+      "Takeshi Furukawa": [
+        "Main"
+      ],
+      "Siobhan Wilson": [
+        "Featured"
+      ],
+      "Jinadu": [
+        "Featured"
+      ],
+      "Braxton": [
+        "Main"
+      ],
+      "Ezequiel Arias": [
+        "Featured"
+      ],
+      "MOTSA": [
+        "Main"
+      ],
+      "Legato": [
+        "Main"
+      ],
+      "Andrew Bayer": [
+        "Main"
+      ],
+      "Because of Art": [
+        "Main"
+      ],
+      "MXV": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Dapple (Extended Mix)",
+      "Sun Kissed (Mixed)",
+      "Mui (Mixed)",
+      "Dapple",
+      "Evangeline",
+      "Dapple (Mixed)",
+      "Nightwhisper",
+      "Blue Space (Extended Mix)",
+      "SpaceTime (Ezequiel Arias Extended Mix)",
+      "Nightwhisper (Mixed)",
+      "Mui (ABGT625) (Ezequiel Arias Remix Mixed)",
+      "SpaceTime (Ezequiel Arias Remix)",
+      "Dapple (Mixed)",
+      "SpaceTime (Extended Mix)",
+      "Feel This Way",
+      "Mui",
+      "Petals (Mixed)",
+      "Living (Flashback) [ABGT575]",
+      "Free",
+      "Pursuit Of Happiness",
+      "Pursuit Of Happiness (Mixed)",
+      "Dapple (Mixed)",
+      "Blue Space",
+      "Feel This Way (Mixed)",
+      "Nightwhisper (Chill Mix)"
+    ],
+    "track_durations": [
+      368,
+      309,
+      300,
+      208,
+      161,
+      318,
+      217,
+      280,
+      419,
+      267,
+      263,
+      239,
+      240,
+      312,
+      237,
+      243,
+      309,
+      363,
+      206,
+      240,
+      156,
+      173,
+      224,
+      327,
+      240
+    ],
+    "track_ranks": [
+      32130,
+      118755,
+      190504,
+      266829,
+      78419,
+      195871,
+      203294,
+      146841,
+      71237,
+      65777,
+      48071,
+      112872,
+      133705,
+      61746,
+      207048,
+      142947,
+      140425,
+      32078,
+      132234,
+      76116,
+      158154,
+      126462,
+      40617,
+      150668,
+      161246
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 37,
+      "ep": 4,
+      "single": 14
+    },
+    "albums": [
+      {
+        "title": "25 Years Of Anjuna Mixed By James Grant",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Movement Vol. 5 (Live from Lagos, Portugal)",
+        "label": "",
+        "release_date": "2025-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ambient City Vibes",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 15",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 14",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "POP PUNK",
+        "label": "",
+        "release_date": "2023-03-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 13",
+        "label": "",
+        "release_date": "2022-03-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Anjunadeep Edition 384 with James Grant",
+        "label": "",
+        "release_date": "2022-01-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Anjunadeep Edition 360 with James Grant",
+        "label": "",
+        "release_date": "2021-07-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rage Rock",
+        "label": "",
+        "release_date": "2021-05-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Game Show Tension",
+        "label": "",
+        "release_date": "2021-05-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Anjunadeep Edition 345",
+        "label": "",
+        "release_date": "2021-04-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 12",
+        "label": "",
+        "release_date": "2021-02-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Anjunadeep Edition 325",
+        "label": "",
+        "release_date": "2020-10-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Anjunadeep Edition 308",
+        "label": "",
+        "release_date": "2020-06-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Anjunadeep Edition 300",
+        "label": "",
+        "release_date": "2020-04-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 11",
+        "label": "",
+        "release_date": "2020-02-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 11",
+        "label": "",
+        "release_date": "2020-02-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 10",
+        "label": "",
+        "release_date": "2019-02-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 09",
+        "label": "",
+        "release_date": "2017-10-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 08",
+        "label": "",
+        "release_date": "2016-12-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "James Grant & The Hallelujah Strings",
+        "label": "",
+        "release_date": "2018-04-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "James Grant and the Hallelujah Strings",
+        "label": "",
+        "release_date": "2018-04-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Detour",
+        "label": "",
+        "release_date": "2016-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 07",
+        "label": "",
+        "release_date": "2015-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 06 Unmixed & DJ Ready",
+        "label": "",
+        "release_date": "2015-03-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 06",
+        "label": "",
+        "release_date": "2014-09-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 05",
+        "label": "",
+        "release_date": "2013-07-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 04 (Unmixed & DJ Ready)",
+        "label": "",
+        "release_date": "2012-08-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "James Grant's Anjunadeep:03 Sampler",
+        "label": "",
+        "release_date": "2011-03-22",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": [
+      "Marsh",
+      "Lane 8",
+      "LE YOUTH",
+      "Luttrell",
+      "Ben Böhmer",
+      "YOTTO",
+      "Nils Hoffmann",
+      "Spencer Brown",
+      "Massane",
+      "Jerro"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 587239,
+    "name": "James Grant",
+    "profile": "[b]NOT TO CONFUSE with London-based [a=James Grant (4)], A&R and co-founder of label [l=Anjunadeep].[/b]\r\n\r\nJames Grant's music career began in 1982 as songwriter and guitarist in [a=Friends Again]. When they split in 1985 he formed [a=Love And Money] and split in 1994. During this time they released four albums. They reformed in 2011.\r\nHe then went solo and has released 5 studio albums and has scored the film The Near Room and collaborated with [a=Karen Matheson] on her solo albums. ",
+    "realname": "",
+    "social_urls": [
+      "http://jamesgrantsongbook.com/",
+      "http://www.myspace.com/jamesgrant99",
+      "https://www.facebook.com/jamthrawn/"
+    ],
+    "members": [],
+    "groups": [
+      "Love And Money",
+      "Friends Again",
+      "The Chain Gang (2)",
+      "The Korvids",
+      "Held By Trees",
+      "Butler, Blake & Grant"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 40,
+    "digital_only_releases": 60,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xCD, Comp, Promo",
+      "2xCD, Comp, Sli",
+      "3xCD, Comp",
+      "3xFile, MP3, Single",
+      "5xCD, Comp",
+      "5xFile, MP3, Single",
+      "7\", EP, Comp",
+      "7\", Jukebox",
+      "7\", Promo",
+      "CD, Album",
+      "CD, Comp",
+      "CD, EP",
+      "CD, MiniAlbum",
+      "CD, Promo",
+      "CD, Single",
+      "CD, Single, Dig",
+      "CD, Single, Promo",
+      "CDr, EP",
+      "CDr, Single, Promo",
+      "Cass, Comp",
+      "DVD-V, PAL",
+      "LP, Comp, Promo"
+    ],
+    "labels": [
+      "Cherry Red",
+      "Concept Music",
+      "Flamingo West",
+      "Fontana",
+      "Fontana, Phonogram",
+      "Iona Gold",
+      "L&M Recordings",
+      "Manteca",
+      "Marina Records, Marina Records",
+      "Marlboro Music",
+      "Mercury",
+      "Nang Records",
+      "Phonogram",
+      "PolyGram",
+      "PolyGram - Kiosks",
+      "PolyGram Collections",
+      "Polydor, Polydor, PolyGram, PolyGram",
+      "Polygram",
+      "Real Balearic",
+      "Record Mirror, Record Mirror",
+      "Revel Records",
+      "Sound Canyon",
+      "Survival Records",
+      "TMSA",
+      "Time Life Music",
+      "Tweed Jacket Music Ltd",
+      "Uncut (2), Kelsey Media",
+      "Universal Music France, Label Panthéon",
+      "Universal Music TV",
+      "VG",
+      "Vertical Records (4)",
+      "Whirlie Records, Whirlie Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "James Grant",
+    "mbid": "d5644f55-acb8-4204-a9c1-acf27335d474",
+    "listeners": 7993,
+    "playcount": 68733,
+    "listener_play_ratio": 8.6,
+    "bio_exists": true,
+    "bio_summary": "James Grant's career began in the early eighties, when he formed Friends Again with Chris Thompson (The Bathers). Although short-lived, their influence was huge, helping to define the emerging sound of the Scottish bands that followed them. \n\nIt was in Love and Money that James found more widespread recognition; four albums, several hit singles, a world-wide following and silver discs in the UK helped seal his reputation as one of the best songwriters in the country.  <a href=\"https://www.last.f",
+    "tags": [
+      "House",
+      "singer-songwriter",
+      "electronic",
+      "dance",
+      "club"
+    ],
+    "similar_artists": [
+      "Jody Wisternoff",
+      "Jaytech & James Grant",
+      "Fluida",
+      "Beckwith",
+      "Solarity"
+    ],
+    "top_tracks": [
+      {
+        "name": "Far Away Place (ABGT253) - Jody Wisternoff & James Grant Remix",
+        "listeners": 1267,
+        "playcount": 3721
+      },
+      {
+        "name": "Dapple - Mixed",
+        "listeners": 635,
+        "playcount": 1331
+      },
+      {
+        "name": "This Could Be The Day",
+        "listeners": 399,
+        "playcount": 1284
+      },
+      {
+        "name": "Darkstar",
+        "listeners": 366,
+        "playcount": 1026
+      },
+      {
+        "name": "Before She Shot the Arrow",
+        "listeners": 361,
+        "playcount": 1138
+      },
+      {
+        "name": "Cure For Life",
+        "listeners": 355,
+        "playcount": 988
+      },
+      {
+        "name": "Evangeline",
+        "listeners": 355,
+        "playcount": 882
+      },
+      {
+        "name": "Heartbleed - Visage Remix",
+        "listeners": 325,
+        "playcount": 597
+      },
+      {
+        "name": "Anjunadeep 05 Minimix - mixed by Jody Wisternoff",
+        "listeners": 320,
+        "playcount": 457
+      },
+      {
+        "name": "Strange Flowers",
+        "listeners": 315,
+        "playcount": 907
+      }
+    ],
+    "url": "https://www.last.fm/music/James+Grant"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

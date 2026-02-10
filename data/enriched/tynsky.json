@@ -1,0 +1,424 @@
+{
+  "artist_name": "TYNSKY",
+  "artist_id": "tynsky",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:24:03.279492+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b968534d-2e3f-495e-a12f-e56eeb59461d",
+    "type": "Person",
+    "country": "PL",
+    "area": "Poland",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/11240438",
+      "free streaming": "https://www.deezer.com/artist/147612002",
+      "streaming": "https://tidal.com/artist/28742983"
+    },
+    "labels": [
+      "Magic Records",
+      "Universal Music Polska"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 147612002,
+    "name": "TYNSKY",
+    "nb_fan": 261,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/147612002",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/bf842eeb883a298d3b5fd88b1ecd24ed/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Jhn McFly"
+    ],
+    "contributor_roles": {
+      "Jhn McFly": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Winter Summer",
+      "Baby You’re the One I Need",
+      "Nothin’ to worry",
+      "Give Me Some Love",
+      "Californian Beach"
+    ],
+    "track_durations": [
+      132,
+      163,
+      162,
+      160,
+      188
+    ],
+    "track_ranks": [
+      250426,
+      32149,
+      1805,
+      342111,
+      56001
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "See what’s on my mind - the EP",
+        "label": "",
+        "release_date": "2022-11-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "It’s All About The Changes",
+        "label": "",
+        "release_date": "2024-10-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "TENSION",
+        "label": "",
+        "release_date": "2025-03-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miracle (Eurovision Version)",
+        "label": "",
+        "release_date": "2025-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miracle",
+        "label": "",
+        "release_date": "2024-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back for Good",
+        "label": "",
+        "release_date": "2023-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tide",
+        "label": "",
+        "release_date": "2023-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Half a Man",
+        "label": "",
+        "release_date": "2023-08-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everybody’s Lonely",
+        "label": "",
+        "release_date": "2023-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Put Me First",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spotlight",
+        "label": "",
+        "release_date": "2023-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Above the time",
+        "label": "",
+        "release_date": "2022-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I don’t care about the rain",
+        "label": "",
+        "release_date": "2022-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Running through the darkness",
+        "label": "",
+        "release_date": "2022-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon",
+        "label": "",
+        "release_date": "2022-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nothin’ to worry",
+        "label": "",
+        "release_date": "2022-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "See what’s on my mind",
+        "label": "",
+        "release_date": "2022-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Overdosed",
+        "label": "",
+        "release_date": "2022-06-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Californian Beach",
+        "label": "",
+        "release_date": "2022-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In front of You",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Summer",
+        "label": "",
+        "release_date": "2022-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Give Me Some Love",
+        "label": "",
+        "release_date": "2022-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magical",
+        "label": "",
+        "release_date": "2022-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby You’re the One I Need",
+        "label": "",
+        "release_date": "2022-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Story of the Time",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Q Song",
+        "label": "",
+        "release_date": "2022-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flowers in pot",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All I need is",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stop the Party",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Em Glasser",
+      "Thaylo",
+      "oneNess",
+      "Dayne S",
+      "orbit",
+      "Barmuda",
+      "Schoonebeek",
+      "Balynt",
+      "LVKE",
+      "Skai"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11240438,
+    "name": "Tynsky",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 6,
+    "digital_only_releases": 1,
+    "total_releases": 7,
+    "formats": [
+      "2xCD, Comp",
+      "3xFile, AAC, EP, 256",
+      "CD, Album, Sig",
+      "LP, EP, Ltd, Blu"
+    ],
+    "labels": [
+      "DB4 Management",
+      "Magic Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tynsky",
+    "mbid": "f348c204-fe50-4dae-806e-83c72abf9ae0",
+    "listeners": 21063,
+    "playcount": 86466,
+    "listener_play_ratio": 4.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tynsky\">Read more on Last.fm</a>",
+    "tags": [
+      "polish",
+      "indie"
+    ],
+    "similar_artists": [
+      "Marien",
+      "Lucas Flint",
+      "wolska",
+      "Kuba Dąbrowski",
+      "Paula Roma"
+    ],
+    "top_tracks": [
+      {
+        "name": "Put Me First - Spotify Singles",
+        "listeners": 4248,
+        "playcount": 10148
+      },
+      {
+        "name": "I don’t care about the rain",
+        "listeners": 3298,
+        "playcount": 7997
+      },
+      {
+        "name": "Give Me Some Love",
+        "listeners": 2737,
+        "playcount": 13449
+      },
+      {
+        "name": "Above the time",
+        "listeners": 2576,
+        "playcount": 5710
+      },
+      {
+        "name": "Californian Beach",
+        "listeners": 2204,
+        "playcount": 4605
+      },
+      {
+        "name": "Baby You’re the One I Need",
+        "listeners": 1727,
+        "playcount": 3546
+      },
+      {
+        "name": "Half a Man",
+        "listeners": 1713,
+        "playcount": 3804
+      },
+      {
+        "name": "Moon",
+        "listeners": 1690,
+        "playcount": 3467
+      },
+      {
+        "name": "Overdosed",
+        "listeners": 1594,
+        "playcount": 3496
+      },
+      {
+        "name": "Miracle - Eurovision Version",
+        "listeners": 1568,
+        "playcount": 4250
+      }
+    ],
+    "url": "https://www.last.fm/music/Tynsky"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

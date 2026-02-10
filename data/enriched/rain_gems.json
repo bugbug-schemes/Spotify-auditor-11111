@@ -1,0 +1,155 @@
+{
+  "artist_name": "Rain Gems",
+  "artist_id": "rain_gems",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:36:24.748432+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Rain Gems', got 'Tems'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7221603,
+    "name": "Dodson And Fogg",
+    "profile": "Dodson and Fogg is a music project started in 2012 by writer, comedian and musician Chris Wade. It has been described as acid folk, psychedelic folk rock and prog folk. The name seems to come from the novel \"The Pickwick Papers\" by Charles Dickens, where \"Dodson and Fogg\" is a firm of unscrupulous lawyers.\r\nThere have been appearances by Toyah Willcox, Nik Turner of Hawkwind, Celia Humphris of folk band Trees, Judy Dyble, Scarlet Rivera, and Nigel Planer.  \r\n\r\nDODSON AND FOGG ALBUMS\r\nDodson And Fogg (2012)\r\nDerring-Do (2013)\r\nSounds of Day and Night (2013)\r\nThe Call (2013)\r\nAfter the Fall (2014)\r\nAfter the Fall Out Takes (2014)\r\nIn A Strange Slumber (2014)\r\nAnd When the Light Ran Out (2015)\r\nWarning Signs (2015)\r\nRoaming (2016)\r\nWalk On (2016)\r\n​White House On the Hill (2016)\r\nFive Songs from the Cave (2017) EP\r\n​Down at the Beach (2017) EP\r\n​Follow the Path (2017)\r\n​Tales from the Hidden Village (2017)\r\n​A New Day (2018)\r\n​Awake (2018)\r\n​Tempus Fugit (2018)\r\nStopping to Admire the Flo",
+    "realname": "",
+    "social_urls": [
+      "https://en.wikipedia.org/wiki/Dodson_and_Fogg",
+      "http://wisdomtwinsbooks.weebly.com/dodson-and-fogg.html"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 10,
+    "total_releases": 14,
+    "formats": [
+      "",
+      "12xFile, WAV, Comp, Smplr",
+      "15xFile, FLAC, Comp",
+      "15xFile, MP3, Album, Comp, 320",
+      "15xFile, WAV, Comp, Smplr",
+      "16xFile, MP3, Album, Comp",
+      "17xFile, WAV, Comp",
+      "3xCD, Comp, Ltd, Num",
+      "CD, Album",
+      "CD, Album, Promo",
+      "CDr, Album, Ltd"
+    ],
+    "labels": [
+      "Starcrazy, Starcrazy, Starcrazy, Starcrazy",
+      "The Active Listener",
+      "Wisdom Twins Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rain Gems",
+    "mbid": "",
+    "listeners": 27334,
+    "playcount": 330451,
+    "listener_play_ratio": 12.09,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rain+Gems\">Read more on Last.fm</a>",
+    "tags": [
+      "nature sounds"
+    ],
+    "similar_artists": [
+      "Natural Awakening",
+      "Indaya",
+      "Soul Healer",
+      "Hinterländer",
+      "Manaus"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rainforest",
+        "listeners": 24352,
+        "playcount": 313733
+      },
+      {
+        "name": "It's Raining Outside",
+        "listeners": 3532,
+        "playcount": 15138
+      },
+      {
+        "name": "Dreaming with the Rain",
+        "listeners": 405,
+        "playcount": 1148
+      },
+      {
+        "name": "Rain Shelter",
+        "listeners": 51,
+        "playcount": 90
+      },
+      {
+        "name": "In The Rainforest",
+        "listeners": 50,
+        "playcount": 129
+      },
+      {
+        "name": "Rainy Afternoon by the Bayou",
+        "listeners": 31,
+        "playcount": 41
+      },
+      {
+        "name": "Rain on the Porch Roof",
+        "listeners": 29,
+        "playcount": 50
+      },
+      {
+        "name": "Big Rain Drops and Tropical Birds",
+        "listeners": 24,
+        "playcount": 34
+      },
+      {
+        "name": "Rain & Distant Thunder",
+        "listeners": 2,
+        "playcount": 25
+      },
+      {
+        "name": "Rain Downpour",
+        "listeners": 1,
+        "playcount": 25
+      }
+    ],
+    "url": "https://www.last.fm/music/Rain+Gems"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

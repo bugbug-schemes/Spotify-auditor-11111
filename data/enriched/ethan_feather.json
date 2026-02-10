@@ -1,0 +1,108 @@
+{
+  "artist_name": "Ethan Feather",
+  "artist_id": "ethan_feather",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:31:25.109076+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 359298682,
+    "name": "Ethan Feather",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/359298682",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Little Sister",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wonderful Things",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ethan Feather",
+    "mbid": "",
+    "listeners": 543,
+    "playcount": 2679,
+    "listener_play_ratio": 4.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ethan+Feather\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Amaya Ailey",
+      "Theo Branch",
+      "Benjamin Bed",
+      "Willow Fern",
+      "Abel Burrow"
+    ],
+    "top_tracks": [
+      {
+        "name": "Wonderful Things",
+        "listeners": 543,
+        "playcount": 2679
+      }
+    ],
+    "url": "https://www.last.fm/music/Ethan+Feather"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

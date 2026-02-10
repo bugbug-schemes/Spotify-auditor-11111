@@ -1,0 +1,161 @@
+{
+  "artist_name": "Aussie Main",
+  "artist_id": "aussie_main",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:19:00.901953+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13630779,
+    "name": "Aussie Main",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/13630779",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/176028d65d85ae09a311dcd28a7d78cb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Pouring Sea",
+        "label": "",
+        "release_date": "2022-03-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3577961,
+    "name": "First Light (10)",
+    "profile": "First Light were a concoction of mid-70's jazz-rock, jazz-fusion and progressive rock with prominent and proficient interplay between the sax, electric piano and the electric guitar with the occasional moog lead similar to other Aussie bands Mackenzie Theory and Crossfire. Their music was predominantly instrumental. Their one and only album was privately released on the M.F.S. label, which had been based out of the Music Farm Studios in Coorabell, Northern NSW. First Light consisted of most notably, Ron Carpenter on drums and mellotron, who was the main composer for Australian prog-rock band Aleph, and drummed for AC/DC at one point in time. John Gray and Harry Freeman were also in the progressive rock band Aeon.\r\n\r\nMembers\r\n\r\nJohn Gray (guitar) Harry Freeman (keyboards) Graham Jesse (sax, flute) Allan Freeman (bass)\r\nRon Carpenter (drums, mellotron)\r\n",
+    "realname": "",
+    "social_urls": [
+      "https://historyofaussiemusic.blogspot.com/2017/07/first-light.html",
+      "http://aussiefunk.blogspot.com/2010/11/first-light-and-music-farm-studios.html"
+    ],
+    "members": [
+      "John Helman"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aussie Main",
+    "mbid": "",
+    "listeners": 13980,
+    "playcount": 46854,
+    "listener_play_ratio": 3.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aussie+Main\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Healing Nature FX",
+      "Nia Butler",
+      "Alisha Pearce",
+      "Earthly Sounds",
+      "Berlin Rain"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pouring Sea",
+        "listeners": 11206,
+        "playcount": 35179
+      },
+      {
+        "name": "Intense Creek",
+        "listeners": 2126,
+        "playcount": 5511
+      },
+      {
+        "name": "Calming Stream",
+        "listeners": 1821,
+        "playcount": 5329
+      },
+      {
+        "name": "Relaxed By The Ocean Waves",
+        "listeners": 310,
+        "playcount": 506
+      },
+      {
+        "name": "Water Course",
+        "listeners": 141,
+        "playcount": 277
+      },
+      {
+        "name": "Sleeping Ocean",
+        "listeners": 17,
+        "playcount": 20
+      },
+      {
+        "name": "Oceanic Softness",
+        "listeners": 14,
+        "playcount": 17
+      },
+      {
+        "name": "Pouring Down",
+        "listeners": 8,
+        "playcount": 12
+      },
+      {
+        "name": "Thunderstorm Rain",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Aussie+Main"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

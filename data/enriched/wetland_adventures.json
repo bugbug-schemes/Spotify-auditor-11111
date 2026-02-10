@@ -1,0 +1,204 @@
+{
+  "artist_name": "Wetland Adventures",
+  "artist_id": "wetland_adventures",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:01:41.625924+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 146481352,
+    "name": "Wetland Adventures",
+    "nb_fan": 2,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/146481352",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1f6292dac3d58f8df512928319523c01/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "ep": 1,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Soothing Humid Waves",
+        "label": "",
+        "release_date": "2025-07-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heavy Wet Walks",
+        "label": "",
+        "release_date": "2025-07-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Glowing Everglade",
+        "label": "",
+        "release_date": "2025-06-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Roots and Rainfall",
+        "label": "",
+        "release_date": "2025-05-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Woodland Adventures",
+        "label": "",
+        "release_date": "2024-12-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Woodland Peace",
+        "label": "",
+        "release_date": "2024-08-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Wetland At Night",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Marsh Birds",
+        "label": "",
+        "release_date": "2023-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everglades National Park Rain",
+        "label": "",
+        "release_date": "2023-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Wetland Adventures",
+    "mbid": "",
+    "listeners": 63652,
+    "playcount": 341736,
+    "listener_play_ratio": 5.37,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Wetland+Adventures\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Temporada",
+      "Pluie Nordique",
+      "bioacoustics",
+      "Out & About",
+      "Relaxing Sound Factory"
+    ],
+    "top_tracks": [
+      {
+        "name": "Everglades National Park Rain",
+        "listeners": 38333,
+        "playcount": 242659
+      },
+      {
+        "name": "Wetland At Night",
+        "listeners": 29809,
+        "playcount": 97176
+      },
+      {
+        "name": "Wetland At Night - Seamless",
+        "listeners": 233,
+        "playcount": 968
+      },
+      {
+        "name": "Rainy Birdy Woodland",
+        "listeners": 177,
+        "playcount": 254
+      },
+      {
+        "name": "Rainy Birdy Woodland - Seamless",
+        "listeners": 150,
+        "playcount": 251
+      },
+      {
+        "name": "Marsh Birds",
+        "listeners": 70,
+        "playcount": 119
+      },
+      {
+        "name": "Lown Pine",
+        "listeners": 54,
+        "playcount": 63
+      },
+      {
+        "name": "Plentiful Rainforest",
+        "listeners": 14,
+        "playcount": 21
+      },
+      {
+        "name": "Lily Meaningful",
+        "listeners": 14,
+        "playcount": 17
+      },
+      {
+        "name": "Ripen Ripen",
+        "listeners": 4,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Wetland+Adventures"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

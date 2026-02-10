@@ -1,0 +1,513 @@
+{
+  "artist_name": "Bandit",
+  "artist_id": "bandit",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:24:22.028430+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "60f274a9-e55f-414a-b06e-f167c406ade7",
+    "type": "Person",
+    "country": "CH",
+    "area": "Switzerland",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/552627",
+      "free streaming": "https://open.spotify.com/artist/7yO7aulIRkkJxiaeflZ5FC",
+      "myspace": "https://myspace.com/banditaly",
+      "social network": "https://www.facebook.com/patrick.mitidieri.5",
+      "wikidata": "https://www.wikidata.org/wiki/Q806324"
+    },
+    "labels": [
+      "Nation Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 280018,
+    "name": "Bandit",
+    "nb_fan": 2501,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/280018",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cb099dc1e61b068c7beff8c931982a7b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "ALMIGHTY1",
+      "Belfort",
+      "Belters Only",
+      "Dread MC",
+      "Indo",
+      "Lost Frequencies",
+      "Rules",
+      "The Professional DJ"
+    ],
+    "contributor_roles": {
+      "Belters Only": [
+        "Main"
+      ],
+      "Lost Frequencies": [
+        "Main"
+      ],
+      "Rules": [
+        "Main"
+      ],
+      "ALMIGHTY1": [
+        "Main"
+      ],
+      "Belfort": [
+        "Main"
+      ],
+      "Dread MC": [
+        "Main"
+      ],
+      "Indo": [
+        "Main"
+      ],
+      "The Professional DJ": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Do 4 Luv",
+      "Dance In The Sunlight",
+      "Bitty",
+      "Where Is My Mind",
+      "Could Have Been So Good",
+      "Little Miss Innocent",
+      "Warsaw",
+      "7 Years Old",
+      "Jenny (Heaven Can You Hear Me)",
+      "Losing in a Sense",
+      "Kung Fu",
+      "Pushing",
+      "Oh My Darling (feat. Amy Lee Bennett)",
+      "Multiply (feat. BanDit)",
+      "Maybach",
+      "Vagabond",
+      "The Drive Home",
+      "All Men Are Dogs",
+      "Red Hot Salsa (Fiesta Mix!)",
+      "Siege of Self"
+    ],
+    "track_durations": [
+      167,
+      167,
+      123,
+      199,
+      206,
+      168,
+      51,
+      220,
+      195,
+      284,
+      186,
+      193,
+      228,
+      116,
+      140,
+      170,
+      143,
+      163,
+      185,
+      79
+    ],
+    "track_ranks": [
+      434817,
+      717267,
+      167184,
+      340463,
+      469396,
+      51592,
+      48832,
+      340215,
+      344058,
+      37607,
+      102215,
+      40859,
+      26196,
+      17733,
+      37451,
+      33227,
+      32316,
+      52330,
+      13392,
+      47417
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 33,
+      "ep": 7,
+      "single": 60
+    },
+    "albums": [
+      {
+        "title": "VITAL",
+        "label": "",
+        "release_date": "2025-12-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Crossroad Cowboy",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Grigia",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Losses To Wins Deluxe",
+        "label": "",
+        "release_date": "2024-07-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Freedom Revolution",
+        "label": "",
+        "release_date": "2024-06-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Quando la luce grande della discoteca",
+        "label": "",
+        "release_date": "2023-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hard Times",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Outdated Melodies",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Siege of Self",
+        "label": "",
+        "release_date": "2023-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "MENTALCHAOS, pt.2",
+        "label": "",
+        "release_date": "2022-10-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Neon Lights at Dusk",
+        "label": "",
+        "release_date": "2023-01-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "1 of 1: The Tape",
+        "label": "",
+        "release_date": "2024-03-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Samen",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Music",
+        "label": "",
+        "release_date": "2019-12-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Turiner Schule (Gangster Schlafen Tagsüber Volume 1)",
+        "label": "",
+        "release_date": "2019-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Warsaw",
+        "label": "",
+        "release_date": "2018-12-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Money Eighteen",
+        "label": "",
+        "release_date": "2018-11-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bandit Is Born",
+        "label": "",
+        "release_date": "2018-09-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Foundation",
+        "label": "",
+        "release_date": "2018-05-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heartbeat",
+        "label": "",
+        "release_date": "2018-04-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Self Inflicted (Bonus Version)",
+        "label": "",
+        "release_date": "2017-07-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pokerface",
+        "label": "",
+        "release_date": "2017-01-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Play Fast or Die",
+        "label": "",
+        "release_date": "2016-05-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bandit on Audiotree Live",
+        "label": "",
+        "release_date": "2015-12-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fresh Out the Steel Casket",
+        "label": "",
+        "release_date": "2015-08-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Get a Little Crazy",
+        "label": "",
+        "release_date": "2015-02-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Of Life",
+        "label": "",
+        "release_date": "2015-01-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Für immer",
+        "label": "",
+        "release_date": "2014-02-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Tura Songbook, Vol. 2",
+        "label": "",
+        "release_date": "2013-07-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Tura Songbook, Vol. 1 (Special Digital Edition)",
+        "label": "",
+        "release_date": "2012-02-18",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": [
+      "Scala & Kolacny Brothers",
+      "Sharleen Spiteri",
+      "BSO",
+      "Norman Palm",
+      "Peppermoon",
+      "Clare and the Reasons",
+      "Ane Brun",
+      "Mallin",
+      "Britta Phillips",
+      "Margaux de Fouchier"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2431,
+    "name": "Bandit",
+    "profile": "2000s House, Techno act.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 6,
+    "digital_only_releases": 0,
+    "total_releases": 6,
+    "formats": [
+      "12\"",
+      "12\", EP",
+      "2xCD, Comp",
+      "CD, Album, Dlx, Ltd",
+      "CD, Comp",
+      "CDr, Promo"
+    ],
+    "labels": [
+      "541",
+      "Chapter One (5)",
+      "Daily Star Sunday",
+      "Not On Label",
+      "Relief Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bandit",
+    "mbid": "bbd35f6e-a300-4319-b1a8-3e0121705aff",
+    "listeners": 58334,
+    "playcount": 543242,
+    "listener_play_ratio": 9.31,
+    "bio_exists": true,
+    "bio_summary": "There are multiple acts called 'Bandit'.\n\n1. Nashville indie-rock band. The brainchild of Angela Plake put out its debut full-length, 'Of Life,' in January of 2015 on Broken Circles records.\n\n2. Band from Liverpool active since 2019: amed as Radio 1’s Jack Saunders' 'Next Wave', and supported in DIY’s Neu section as “steadily rising the indie rock ranks”. Hailing from Liverpool, Bandit take influence from the likes of Fontaines D.C, Cage The Elephant <a href=\"https://www.last.fm/music/Bandit\">Re",
+    "tags": [
+      "grindcore",
+      "powerviolence",
+      "hard rock",
+      "hardcore",
+      "punk"
+    ],
+    "similar_artists": [
+      "Fluoride",
+      "Chepang",
+      "Weekend Nachos",
+      "Closet Witch",
+      "Gridlink"
+    ],
+    "top_tracks": [
+      {
+        "name": "Where Is My Mind",
+        "listeners": 9320,
+        "playcount": 46043
+      },
+      {
+        "name": "Pushing",
+        "listeners": 5455,
+        "playcount": 25254
+      },
+      {
+        "name": "Mean Streak",
+        "listeners": 4835,
+        "playcount": 30966
+      },
+      {
+        "name": "WARSAW",
+        "listeners": 4707,
+        "playcount": 19578
+      },
+      {
+        "name": "Jenny (Heaven Can You Hear Me)",
+        "listeners": 4334,
+        "playcount": 16838
+      },
+      {
+        "name": "Goth Queen",
+        "listeners": 3907,
+        "playcount": 20637
+      },
+      {
+        "name": "Where Is My Mind?",
+        "listeners": 3303,
+        "playcount": 13252
+      },
+      {
+        "name": "Losing In A Sense",
+        "listeners": 3203,
+        "playcount": 13871
+      },
+      {
+        "name": "Voyeur",
+        "listeners": 2851,
+        "playcount": 12073
+      },
+      {
+        "name": "New Rochelle",
+        "listeners": 2785,
+        "playcount": 11498
+      }
+    ],
+    "url": "https://www.last.fm/music/Bandit"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,189 @@
+{
+  "artist_name": "Mírabilis",
+  "artist_id": "mírabilis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:53:50.842280+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "db8e0af6-b73a-4fde-96cf-307436c3da6c",
+    "type": "Group",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "2001",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://mirabilis.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/177535",
+      "official homepage": "http://www.mirabilismusic.com/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id84106410",
+      "social network": "https://www.facebook.com/mirabilismusic",
+      "wikidata": "https://www.wikidata.org/wiki/Q6872319",
+      "youtube": "https://www.youtube.com/user/MirabilisVideos"
+    },
+    "labels": [
+      "Projekt",
+      "Middle Pillar Presents"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mírabilis', got 'Mirabilis'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 177535,
+    "name": "Mirabilis",
+    "profile": "Mirabilis is the neo-classical/ethereal musical project formed in 2001 by Dru Allen of This Ascension and Summer Bowman of the Machine in the Garden. Dru and Summer are the core members of Mirabilis, but they use the project as an avenue to bring in other like-minded artists as guest performers to create something that is extraordinary and unique. \r\n\r\nIn December of 2003, the band's first release, a limited edition 7-inch self-titled EP was released on Fossil Dungeon. They quickly followed up with a full-length debut CD in 2004 on the Middle Pillar Presents label. \r\n",
+    "realname": "",
+    "social_urls": [
+      "http://www.mirabilismusic.com/",
+      "http://mirabilis.bandcamp.com/"
+    ],
+    "members": [
+      "Dru",
+      "Summer Bowman"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 12,
+    "digital_only_releases": 8,
+    "total_releases": 20,
+    "formats": [
+      "",
+      "34xFile, MP3, Comp",
+      "4xFile, FLAC, Smplr",
+      "7\", EP, Ltd",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, RE + CD, Comp, RE + CD, Maxi, Comp + Box",
+      "CD, Comp, Unofficial",
+      "CD, Maxi, Comp",
+      "CD, Smplr, Dig",
+      "CD-ROM, Comp, Unofficial, MP3"
+    ],
+    "labels": [
+      "At Sea Compilations",
+      "Disco Club Records",
+      "Hyperium Records",
+      "Middle Pillar Presents",
+      "Not On Label",
+      "Not On Label (Mirabilis Self-released)",
+      "Projekt",
+      "Projekt, Projekt, Projekt",
+      "Projekt, Projekt, Projekt, Projekt",
+      "The Fossil Dungeon"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mírabilis",
+    "mbid": "",
+    "listeners": 65381,
+    "playcount": 347960,
+    "listener_play_ratio": 5.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/M%C3%ADrabilis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nature then Nurture",
+      "Lexi Bradley",
+      "Emmanuel Sapphire",
+      "Aquilegia",
+      "Joviano Carrera"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Dare Not Dream: Fantasia on a Theme",
+        "listeners": 20729,
+        "playcount": 89610
+      },
+      {
+        "name": "Chanson Pour Un Amour Perdu",
+        "listeners": 14639,
+        "playcount": 48212
+      },
+      {
+        "name": "L'hiver",
+        "listeners": 13066,
+        "playcount": 67362
+      },
+      {
+        "name": "I Know You",
+        "listeners": 10003,
+        "playcount": 21547
+      },
+      {
+        "name": "Homeward",
+        "listeners": 7651,
+        "playcount": 27344
+      },
+      {
+        "name": "Lever du Soleil",
+        "listeners": 6245,
+        "playcount": 13132
+      },
+      {
+        "name": "La Vie Est Un Rêve",
+        "listeners": 6156,
+        "playcount": 33572
+      },
+      {
+        "name": "A Place I Remember",
+        "listeners": 5781,
+        "playcount": 12798
+      },
+      {
+        "name": "Light Beyond the Sea",
+        "listeners": 4950,
+        "playcount": 9533
+      },
+      {
+        "name": "I Dare Not Dream",
+        "listeners": 4458,
+        "playcount": 8669
+      }
+    ],
+    "url": "https://www.last.fm/music/M%C3%ADrabilis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

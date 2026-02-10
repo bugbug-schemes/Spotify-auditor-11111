@@ -1,0 +1,194 @@
+{
+  "artist_name": "Stone Mirland",
+  "artist_id": "stone_mirland",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:21:37.846250+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 260823951,
+    "name": "Stone Mirland",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/260823951",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0cc844f7b47e911d0d885d85103a7291/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Petal Drift",
+      "Lysithea"
+    ],
+    "track_durations": [
+      149,
+      134
+    ],
+    "track_ranks": [
+      98607,
+      64837
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "In the Company of Rain",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirage of Solace",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Petal Drift",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tenderness",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sealand",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost Ocean",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calm Anthem",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lysithea",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Stone Mirland",
+    "mbid": "",
+    "listeners": 21303,
+    "playcount": 77263,
+    "listener_play_ratio": 3.63,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Stone+Mirland\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aldo Talete",
+      "Aurelio Li",
+      "Sine Hats",
+      "Waylen Orson",
+      "Silicon Silence"
+    ],
+    "top_tracks": [
+      {
+        "name": "Petal Drift",
+        "listeners": 12667,
+        "playcount": 48621
+      },
+      {
+        "name": "Lysithea",
+        "listeners": 7416,
+        "playcount": 20601
+      },
+      {
+        "name": "Tenderness",
+        "listeners": 2163,
+        "playcount": 5270
+      },
+      {
+        "name": "Mirage of Solace",
+        "listeners": 1242,
+        "playcount": 2761
+      },
+      {
+        "name": "Lost Ocean",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Sealand",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Calm Anthem",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "In the Company of Rain",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Stone+Mirland"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

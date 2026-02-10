@@ -1,0 +1,147 @@
+{
+  "artist_name": "les marais",
+  "artist_id": "les_marais",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:21:29.153773+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f748e133-8c6e-475e-a706-c07f70f32c37",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/267592952",
+      "streaming": "https://tidal.com/artist/48110349"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'les marais', got 'The Marías'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 575339,
+    "name": "Les Petits Chanteurs Du Marais",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "7\", EP"
+    ],
+    "labels": [
+      "Le Kiosque d'Orphée",
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "les marais",
+    "mbid": "",
+    "listeners": 32520,
+    "playcount": 92122,
+    "listener_play_ratio": 2.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/les+marais\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "AGoodDayMusic",
+      "zoemoon.",
+      "quiet arcade",
+      "Moofushi",
+      "Haku-San"
+    ],
+    "top_tracks": [
+      {
+        "name": "blossom",
+        "listeners": 16976,
+        "playcount": 44703
+      },
+      {
+        "name": "asleep",
+        "listeners": 12070,
+        "playcount": 27681
+      },
+      {
+        "name": "We Dream",
+        "listeners": 4457,
+        "playcount": 7503
+      },
+      {
+        "name": "City of mine",
+        "listeners": 3488,
+        "playcount": 6148
+      },
+      {
+        "name": "Frequencies",
+        "listeners": 1943,
+        "playcount": 3671
+      },
+      {
+        "name": "Star Map",
+        "listeners": 1122,
+        "playcount": 2393
+      },
+      {
+        "name": "mintymoons",
+        "listeners": 7,
+        "playcount": 12
+      },
+      {
+        "name": "reflets du matin",
+        "listeners": 5,
+        "playcount": 11
+      }
+    ],
+    "url": "https://www.last.fm/music/les+marais"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

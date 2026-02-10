@@ -1,0 +1,253 @@
+{
+  "artist_name": "Gathering in Jazz",
+  "artist_id": "gathering_in_jazz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:48:37.224370+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9f7bfd64-e6c4-47ec-b848-2b2d3bec2a51",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/12249016",
+      "free streaming": "https://www.deezer.com/artist/74142642",
+      "purchase for download": "https://music.apple.com/us/artist/1480246524",
+      "streaming": "https://tidal.com/artist/16843065",
+      "youtube music": "https://music.youtube.com/channel/UCBTCL6G1unzYlOQ1Djfiy1Q"
+    },
+    "labels": [
+      "amm"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 74142642,
+    "name": "Gathering in Jazz",
+    "nb_fan": 31,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/74142642",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/45941b4a04274fc8d6dd07b9f45f5bc6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anders Mogensen",
+      "Claus Waidtløw",
+      "Heine Hansen"
+    ],
+    "contributor_roles": {
+      "Claus Waidtløw": [
+        "Main"
+      ],
+      "Heine Hansen": [
+        "Main"
+      ],
+      "Anders Mogensen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Blue Sunday",
+      "The Shape of Blue",
+      "A Flower Is a Lovesome Thing"
+    ],
+    "track_durations": [
+      267,
+      197,
+      285
+    ],
+    "track_ranks": [
+      46486,
+      296295,
+      87712
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 1
+    },
+    "albums": [
+      {
+        "title": "Straight Road",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Second Strike",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stardust",
+        "label": "",
+        "release_date": "2020-02-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Southern Breeze",
+        "label": "",
+        "release_date": "2021-03-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "Dominick Farinacci",
+      "Snorre Kirk",
+      "6th Street Jazz",
+      "Immanuel Wilkins",
+      "Cyrus Chestnut",
+      "Danny Grissett",
+      "Gerry Mulligan",
+      "Jan Harbeck Quartet",
+      "Red Garland",
+      "James Jackson Jazz Trio"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12249016,
+    "name": "Gathering In Jazz",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Claus Waidtløw",
+      "Heine Hansen",
+      "Anders Mogensen",
+      "Kasper Tagel"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "7xFile, FLAC, Album"
+    ],
+    "labels": [
+      "AMM"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gathering in Jazz",
+    "mbid": "9f7bfd64-e6c4-47ec-b848-2b2d3bec2a51",
+    "listeners": 42274,
+    "playcount": 124252,
+    "listener_play_ratio": 2.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gathering+in+Jazz\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Art Roho",
+      "Thomas Sejthen Trio",
+      "Portraits in Jazz",
+      "Rob van Bavel",
+      "The Mellowtones"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Flower Is a Lovesome Thing",
+        "listeners": 21982,
+        "playcount": 50159
+      },
+      {
+        "name": "The Shape of Blue",
+        "listeners": 10748,
+        "playcount": 22528
+      },
+      {
+        "name": "Blue Sunday",
+        "listeners": 7869,
+        "playcount": 17492
+      },
+      {
+        "name": "Special One",
+        "listeners": 6087,
+        "playcount": 13269
+      },
+      {
+        "name": "Dancing Skies",
+        "listeners": 1820,
+        "playcount": 3450
+      },
+      {
+        "name": "Old News",
+        "listeners": 1602,
+        "playcount": 3063
+      },
+      {
+        "name": "Memory Man",
+        "listeners": 1525,
+        "playcount": 2977
+      },
+      {
+        "name": "Skies",
+        "listeners": 1202,
+        "playcount": 1920
+      },
+      {
+        "name": "Blues for All",
+        "listeners": 925,
+        "playcount": 1798
+      },
+      {
+        "name": "Sweet Tomato",
+        "listeners": 674,
+        "playcount": 1080
+      }
+    ],
+    "url": "https://www.last.fm/music/Gathering+in+Jazz"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

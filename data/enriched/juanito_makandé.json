@@ -1,0 +1,531 @@
+{
+  "artist_name": "Juanito Makandé",
+  "artist_id": "juanito_makandé",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:39:09.940669+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9eff6c92-430a-49b9-96ff-bffcf464d539",
+    "type": "Person",
+    "country": "ES",
+    "area": "Spain",
+    "begin_date": "1982-02-20",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3839092",
+      "free streaming": "https://www.deezer.com/artist/5794485",
+      "IMDb": "https://www.imdb.com/name/nm5569049/",
+      "official homepage": "https://juanitomakande.es/",
+      "social network": "https://www.instagram.com/juanito_makande/",
+      "songkick": "https://www.songkick.com/artists/853518",
+      "streaming": "https://tidal.com/artist/5500259",
+      "wikidata": "https://www.wikidata.org/wiki/Q20638574",
+      "youtube": "https://www.youtube.com/user/13yelow"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5794485,
+    "name": "Juanito Makandé",
+    "nb_fan": 8147,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/5794485",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/014d63009bae2891173c8f718bb24fa8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Josemi Carrasco",
+      "Juan Arance",
+      "La Plazuela",
+      "Lamari",
+      "Maita Vende Ca",
+      "Omar Alcaide",
+      "Popo Gabarre",
+      "Stay Homas",
+      "popo"
+    ],
+    "contributor_roles": {
+      "Stay Homas": [
+        "Main"
+      ],
+      "Josemi Carrasco": [
+        "Main"
+      ],
+      "La Plazuela": [
+        "Main"
+      ],
+      "Omar Alcaide": [
+        "Main"
+      ],
+      "Juan Arance": [
+        "Main"
+      ],
+      "Maita Vende Ca": [
+        "Main"
+      ],
+      "Lamari": [
+        "Main"
+      ],
+      "Popo Gabarre": [
+        "Main"
+      ],
+      "popo": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "La Llave",
+      "Dos Besos",
+      "Cuando Te Empecé a Querer",
+      "Pa' Qué Quiero Más",
+      "Arañando el Aire",
+      "Tocar las Nubes",
+      "Kamikaze",
+      "Niña Voladora",
+      "Mira La Niña",
+      "Sueña",
+      "Hierro",
+      "Calores",
+      "Vivir Sin Miedo",
+      "Me Quiero Colocar Contigo",
+      "About You",
+      "No Hay Luz Sin Día",
+      "Sácalo"
+    ],
+    "track_durations": [
+      248,
+      176,
+      225,
+      255,
+      193,
+      229,
+      217,
+      222,
+      247,
+      221,
+      195,
+      208,
+      253,
+      201,
+      365,
+      276,
+      173
+    ],
+    "track_ranks": [
+      139675,
+      115720,
+      170977,
+      68371,
+      118905,
+      101723,
+      78323,
+      251464,
+      134556,
+      59195,
+      44748,
+      39678,
+      90804,
+      183988,
+      3226,
+      190401,
+      15868
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "single": 24
+    },
+    "albums": [
+      {
+        "title": "Folclore Sintético",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "La Raíz del Viento",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "El Habitante de la Tarde Roja",
+        "label": "",
+        "release_date": "2018-10-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Muerte a los Pájaros Negros",
+        "label": "",
+        "release_date": "2015-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Las Canciones Que Escribí Mientras Volaba",
+        "label": "",
+        "release_date": "2014-11-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sueña",
+        "label": "",
+        "release_date": "2006-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sácalo",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En el silencio",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hierro",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Tango de las Ratas",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ganas de Fiesta",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Los Ríos",
+        "label": "",
+        "release_date": "2021-04-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Raíz del Viento",
+        "label": "",
+        "release_date": "2021-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Siete Espejos (Live Version)",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Loco Corazón",
+        "label": "",
+        "release_date": "2020-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "About You",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tras el cristal (Alex Guerrero Remix)",
+        "label": "",
+        "release_date": "2020-05-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tras el Cristal",
+        "label": "",
+        "release_date": "2020-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Todas las Hojas Son del Viento",
+        "label": "",
+        "release_date": "2020-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Domingo Eterno",
+        "label": "",
+        "release_date": "2020-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A los Inviernos los Mata el Amor",
+        "label": "",
+        "release_date": "2018-12-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh Mama",
+        "label": "",
+        "release_date": "2018-12-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Llanto de las Gallinas",
+        "label": "",
+        "release_date": "2018-11-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Vuelo de los Cuchillos",
+        "label": "",
+        "release_date": "2018-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entre Mi Casa y la Luna",
+        "label": "",
+        "release_date": "2018-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vivir Sin Miedo",
+        "label": "",
+        "release_date": "2018-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A los Inviernos los Mata el Amor",
+        "label": "",
+        "release_date": "2018-02-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alma Libre",
+        "label": "",
+        "release_date": "2018-01-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Llanto de las Gallinas",
+        "label": "",
+        "release_date": "2017-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entre Mi Casa y la Luna",
+        "label": "",
+        "release_date": "2017-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Chambao",
+      "El Barrio",
+      "Camarón de la Isla",
+      "La Hungara",
+      "Los Rebujitos",
+      "Fondo Flamenco",
+      "Miguel Campello",
+      "Los Delinqüentes",
+      "Niña Pastori",
+      "Elbicho"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3839092,
+    "name": "Juanito Makandé",
+    "profile": "Spanish artist making fusion between rock, jazz, reggae, blues, ska, flamenco, etc...",
+    "realname": "Juan Medina Herranz",
+    "social_urls": [
+      "http://www.juanitomakande.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 20,
+    "digital_only_releases": 15,
+    "total_releases": 35,
+    "formats": [
+      "",
+      "12\", Album, RM, Inc",
+      "2xCD, Album",
+      "2xCD, Album, Dig",
+      "2xCD, Album, Ltd, Dis + Comp, Boo",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, Jew",
+      "CD, Album, Promo, Car",
+      "CD, Album, S/Edition, Dig",
+      "CD, Mini, Album, Dig",
+      "CDr, Album",
+      "LP, Album + CD, Album",
+      "LP, Album, Ltd"
+    ],
+    "labels": [
+      "Adriático Records",
+      "BOA",
+      "Guspira Records",
+      "IR MUSIC",
+      "Independiente",
+      "Kankana Records",
+      "Maral Producciones Musicales",
+      "Matajare Records",
+      "Not On Label",
+      "Not On Label (Puto Largo Self-released)",
+      "Satélite K",
+      "Say It Loud Records",
+      "Spyro Music",
+      "Universal Music Group, Nuevos Medios",
+      "Warner Music Spain",
+      "World Music Factory S.L.",
+      "Youkali Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Juanito Makandé",
+    "mbid": "9eff6c92-430a-49b9-96ff-bffcf464d539",
+    "listeners": 16540,
+    "playcount": 231729,
+    "listener_play_ratio": 14.01,
+    "bio_exists": true,
+    "bio_summary": "Juanito Makandé: artista flamenco underground\nCantante, percusionista, compositor y productor <a href=\"https://www.last.fm/music/Juanito+Makand%C3%A9\">Read more on Last.fm</a>",
+    "tags": [
+      "Flamenco",
+      "spanish",
+      "singer-songwriter",
+      "folk",
+      "Nuevo Flamenco"
+    ],
+    "similar_artists": [
+      "El Canijo de Jerez",
+      "Miguel Campello",
+      "Antílopez",
+      "Nolasco",
+      "Tomasito"
+    ],
+    "top_tracks": [
+      {
+        "name": "Niña voladora",
+        "listeners": 11158,
+        "playcount": 63084
+      },
+      {
+        "name": "Cuando te empecé a querer",
+        "listeners": 3192,
+        "playcount": 16530
+      },
+      {
+        "name": "Eres para mí",
+        "listeners": 2732,
+        "playcount": 12405
+      },
+      {
+        "name": "Kamikaze",
+        "listeners": 2054,
+        "playcount": 8338
+      },
+      {
+        "name": "Arañando El Aire",
+        "listeners": 1707,
+        "playcount": 8536
+      },
+      {
+        "name": "No Te Alejes",
+        "listeners": 1532,
+        "playcount": 7233
+      },
+      {
+        "name": "El llanto de las gallinas",
+        "listeners": 1430,
+        "playcount": 4323
+      },
+      {
+        "name": "LA LLAVE",
+        "listeners": 1361,
+        "playcount": 7051
+      },
+      {
+        "name": "Tocar las nubes",
+        "listeners": 1189,
+        "playcount": 5226
+      },
+      {
+        "name": "CHURRETE Y RINGO",
+        "listeners": 1029,
+        "playcount": 4801
+      }
+    ],
+    "url": "https://www.last.fm/music/Juanito+Makand%C3%A9"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

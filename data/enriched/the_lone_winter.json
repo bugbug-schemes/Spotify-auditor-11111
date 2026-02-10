@@ -1,0 +1,201 @@
+{
+  "artist_name": "The Lone Winter",
+  "artist_id": "the_lone_winter",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:35:22.238903+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 205023577,
+    "name": "The Lone Winter",
+    "nb_fan": 4,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/205023577",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b601ad69664c825c6c7d74b945fd305a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Japan Dreams",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Next (The Lone Winter Rework)",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "OUTREMER (THE LONE WINTER REWORK Slowed + Reverb)",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Outremer (The Lone Winter Rework)",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Driving Home While The Sun Goes Down",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow Morning",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1080885,
+    "name": "Winterset",
+    "profile": "UK 'indie' band led by Martin Smith who gigged around London circa 1991-92. First gig was supporting Suede at the Camden Falcon in August 1991. They also opened for Dean Wareham's Luna at their first London show at Camden Underworld in February 1992. Their lone single was aired by John Peel on at least one occasion.",
+    "realname": "",
+    "social_urls": [
+      "https://greasepaintpeel.blogspot.com/2019/03/the-comedy-of-errors-winterset-horse-of.html"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "7\", S/Sided, Ltd"
+    ],
+    "labels": [
+      "Beechwood Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Lone Winter",
+    "mbid": "",
+    "listeners": 469,
+    "playcount": 838,
+    "listener_play_ratio": 1.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/The+Lone+Winter\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "enka.",
+      "Fadedwave",
+      "Cherubba",
+      "Jack on Jupiter",
+      "Hanakin"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gymnopédie No.1 - The Lone Winter Rework",
+        "listeners": 158,
+        "playcount": 252
+      },
+      {
+        "name": "I Want Love More Than Anything Else In This World",
+        "listeners": 98,
+        "playcount": 202
+      },
+      {
+        "name": "1984",
+        "listeners": 89,
+        "playcount": 161
+      },
+      {
+        "name": "I Want Love More Than Anything Else In This World - Instrumental Version",
+        "listeners": 31,
+        "playcount": 60
+      },
+      {
+        "name": "Slow Morning",
+        "listeners": 21,
+        "playcount": 37
+      },
+      {
+        "name": "Driving Home While The Sun Goes Down",
+        "listeners": 19,
+        "playcount": 30
+      },
+      {
+        "name": "Japan Dreams",
+        "listeners": 19,
+        "playcount": 24
+      },
+      {
+        "name": "Late Afternoon - Instrumental",
+        "listeners": 16,
+        "playcount": 30
+      },
+      {
+        "name": "1984 - Instrumental",
+        "listeners": 14,
+        "playcount": 18
+      },
+      {
+        "name": "Next (The Lone Winter Rework)",
+        "listeners": 7,
+        "playcount": 8
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Lone+Winter"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

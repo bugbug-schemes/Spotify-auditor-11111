@@ -1,0 +1,186 @@
+{
+  "artist_name": "Hawaii Rain",
+  "artist_id": "hawaii_rain",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:03:24.794246+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 159781542,
+    "name": "Hawaii Rain",
+    "nb_fan": 5,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/159781542",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/09c82336af3286a6e802084222058ba7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 2,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Hawaiian Rain: Exotic Rain",
+        "label": "",
+        "release_date": "2025-01-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Part Two",
+        "label": "",
+        "release_date": "2022-06-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Part 1",
+        "label": "",
+        "release_date": "2021-10-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tropical Thunderstorm",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3730744,
+    "name": "Hawaiian Rainbow",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 4,
+    "digital_only_releases": 0,
+    "total_releases": 4,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Pengtrade Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hawaii Rain",
+    "mbid": "",
+    "listeners": 22221,
+    "playcount": 96487,
+    "listener_play_ratio": 4.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hawaii+Rain\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dormida",
+      "Earthly Sounds",
+      "Rain Games",
+      "Healing Nature FX",
+      "Nia Butler"
+    ],
+    "top_tracks": [
+      {
+        "name": "Exotic Rain",
+        "listeners": 21168,
+        "playcount": 90072
+      },
+      {
+        "name": "Warm Rain",
+        "listeners": 1432,
+        "playcount": 4682
+      },
+      {
+        "name": "Rain & Banging Thunder",
+        "listeners": 174,
+        "playcount": 284
+      },
+      {
+        "name": "Pouring Maui Rain",
+        "listeners": 171,
+        "playcount": 316
+      },
+      {
+        "name": "Garden Rain",
+        "listeners": 141,
+        "playcount": 239
+      },
+      {
+        "name": "Thunderous Rainshower",
+        "listeners": 112,
+        "playcount": 207
+      },
+      {
+        "name": "Village Hut Rain",
+        "listeners": 105,
+        "playcount": 332
+      },
+      {
+        "name": "Flushing Rain & Thunder",
+        "listeners": 71,
+        "playcount": 142
+      },
+      {
+        "name": "Rain Under A Tiki Hut",
+        "listeners": 56,
+        "playcount": 117
+      },
+      {
+        "name": "Tropical Thunderstorm",
+        "listeners": 8,
+        "playcount": 96
+      }
+    ],
+    "url": "https://www.last.fm/music/Hawaii+Rain"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

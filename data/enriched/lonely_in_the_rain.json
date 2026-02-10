@@ -1,0 +1,603 @@
+{
+  "artist_name": "Lonely in the Rain",
+  "artist_id": "lonely_in_the_rain",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:11:46.286353+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ba2643bb-eafa-4c9b-9b60-c787766a4d77",
+    "type": "Person",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/12628105",
+      "official homepage": "https://lonelyintherain.fr/",
+      "purchase for download": "https://itunes.apple.com/us/artist/id1248936304",
+      "social network": "https://www.instagram.com/lonelyintherainmusic/",
+      "soundcloud": "https://soundcloud.com/lonelyintherain",
+      "streaming": "https://tidal.com/artist/8849148"
+    },
+    "labels": [
+      "Inside Records",
+      "Beyond Rec"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12628105,
+    "name": "Lonely in the Rain",
+    "nb_fan": 4278,
+    "nb_album": 71,
+    "link": "https://www.deezer.com/artist/12628105",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6887c00a5c46db4120a3ea87f888de9a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alex Colours",
+      "Appleby",
+      "Colours in the Street",
+      "Elsie Bay",
+      "Est",
+      "Francis Skyes",
+      "Fêlure",
+      "Jai Cuzco",
+      "Joel Stewart",
+      "LC Bay",
+      "Leo Stannard",
+      "Madeline",
+      "Magenta",
+      "NEIMY",
+      "NSH",
+      "NVRT",
+      "Nounours",
+      "Panama",
+      "Pearl",
+      "Sauvane",
+      "Shingo Nakamura",
+      "Somoh",
+      "Tommy Ashby",
+      "bailey",
+      "before saudade"
+    ],
+    "contributor_roles": {
+      "LC Bay": [
+        "Main"
+      ],
+      "Elsie Bay": [
+        "Main"
+      ],
+      "NEIMY": [
+        "Main"
+      ],
+      "Fêlure": [
+        "Main"
+      ],
+      "Pearl": [
+        "Main"
+      ],
+      "Panama": [
+        "Main"
+      ],
+      "Somoh": [
+        "Featured"
+      ],
+      "NVRT": [
+        "Featured"
+      ],
+      "Tommy Ashby": [
+        "Main"
+      ],
+      "Shingo Nakamura": [
+        "Main"
+      ],
+      "before saudade": [
+        "Main"
+      ],
+      "NSH": [
+        "Main"
+      ],
+      "Madeline": [
+        "Main"
+      ],
+      "bailey": [
+        "Main"
+      ],
+      "Est": [
+        "Featured"
+      ],
+      "Joel Stewart": [
+        "Main"
+      ],
+      "Magenta": [
+        "Featured"
+      ],
+      "Francis Skyes": [
+        "Main"
+      ],
+      "Leo Stannard": [
+        "Main"
+      ],
+      "Sauvane": [
+        "Featured"
+      ],
+      "Appleby": [
+        "Main"
+      ],
+      "Colours in the Street": [
+        "Main"
+      ],
+      "Alex Colours": [
+        "Main"
+      ],
+      "Nounours": [
+        "Main"
+      ],
+      "Jai Cuzco": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Haunt Me",
+      "Illuminate",
+      "Another Sad Song",
+      "Follow The Feeling",
+      "Feel This Way",
+      "Chasing My Dreams",
+      "Sky on Fire",
+      "Surface",
+      "Out Of Ten (Shingo Nakamura & before saudade Remix)",
+      "Elevating",
+      "Exception",
+      "Feels Like Paradise",
+      "Swallows",
+      "City Lights",
+      "Blue Lights",
+      "Breeze",
+      "Over And Over",
+      "Forever Now",
+      "Drifting",
+      "Traveling Alone",
+      "Emergency",
+      "Wasted",
+      "Far Away",
+      "City of Love",
+      "Shores"
+    ],
+    "track_durations": [
+      159,
+      191,
+      154,
+      176,
+      220,
+      155,
+      196,
+      155,
+      153,
+      183,
+      198,
+      194,
+      196,
+      161,
+      204,
+      158,
+      172,
+      167,
+      206,
+      197,
+      168,
+      208,
+      174,
+      179,
+      204
+    ],
+    "track_ranks": [
+      797115,
+      735134,
+      673515,
+      319060,
+      411351,
+      202335,
+      231515,
+      358800,
+      252046,
+      282260,
+      299028,
+      352621,
+      201236,
+      174018,
+      370089,
+      374230,
+      165019,
+      207154,
+      226054,
+      283907,
+      295118,
+      252346,
+      330365,
+      224385,
+      287335
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 4,
+      "single": 64
+    },
+    "albums": [
+      {
+        "title": "Endless Melancholia",
+        "label": "",
+        "release_date": "2026-03-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Odyssey Of Light",
+        "label": "",
+        "release_date": "2023-04-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Shades of Mind",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Clouds In Our Heads",
+        "label": "",
+        "release_date": "2024-02-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Always a Light On (Deluxe Edition)",
+        "label": "",
+        "release_date": "2022-02-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Always a Light On",
+        "label": "",
+        "release_date": "2022-01-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Falling into Sleep",
+        "label": "",
+        "release_date": "2021-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Haunt Me",
+        "label": "",
+        "release_date": "2026-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Exception",
+        "label": "",
+        "release_date": "2026-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Illuminate",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Sad Song",
+        "label": "",
+        "release_date": "2025-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wait For You / Sweet Feeling",
+        "label": "",
+        "release_date": "2025-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breeze",
+        "label": "",
+        "release_date": "2025-04-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Day",
+        "label": "",
+        "release_date": "2025-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out Of Ten (Shingo Nakamura & before saudade Remix)",
+        "label": "",
+        "release_date": "2025-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lose You",
+        "label": "",
+        "release_date": "2025-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shores",
+        "label": "",
+        "release_date": "2024-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elevating",
+        "label": "",
+        "release_date": "2024-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daryl",
+        "label": "",
+        "release_date": "2024-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Say Adieu",
+        "label": "",
+        "release_date": "2024-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out Of Ten",
+        "label": "",
+        "release_date": "2024-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Swallows",
+        "label": "",
+        "release_date": "2024-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow The Feeling",
+        "label": "",
+        "release_date": "2024-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Of You",
+        "label": "",
+        "release_date": "2024-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On Silent",
+        "label": "",
+        "release_date": "2024-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Surface",
+        "label": "",
+        "release_date": "2023-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nobody Cares",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Sky Is My Ocean",
+        "label": "",
+        "release_date": "2023-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Enough",
+        "label": "",
+        "release_date": "2023-10-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Words (edapollo Remix)",
+        "label": "",
+        "release_date": "2023-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "MR TOUT LE MONDE",
+      "PLÜM",
+      "Triomphe",
+      "Alex Keeper",
+      "Prigida",
+      "Mizmo",
+      "heylucas",
+      "Mateo",
+      "Alex Baker",
+      "Sara Costa"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9164872,
+    "name": "Lonely In The Rain",
+    "profile": "Electro-chill music producer from Toulouse, France",
+    "realname": "",
+    "social_urls": [
+      "https://soundcloud.com/lonelyintherain",
+      "https://open.spotify.com/artist/42KUul1wLmOdQCEYf3MweS",
+      "https://instagram.com/lonelyintherainmusic",
+      "https://www.facebook.com/lonelyintherain"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 6,
+    "total_releases": 10,
+    "formats": [
+      "12\", Album",
+      "12\", Album, Comp",
+      "12\", Comp",
+      "2xFile, FLAC, Single",
+      "CD, Comp",
+      "File, FLAC, Single"
+    ],
+    "labels": [
+      "Beyond (3)",
+      "Blueline Production",
+      "Fruits Music",
+      "Inside Records (75)",
+      "Th3rd Brain"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lonely in the Rain",
+    "mbid": "ba2643bb-eafa-4c9b-9b60-c787766a4d77",
+    "listeners": 126771,
+    "playcount": 1331648,
+    "listener_play_ratio": 10.5,
+    "bio_exists": true,
+    "bio_summary": "Lonely in the Rain is an emotion that we have all felt.\n\nEmbodied by a 3D character who evolves with his music, Lonely in the Rain makes music for summer sunsets, winter fireplaces and for each moment of introspection.\n\nMysterious and melancholic, he captures our emotions with ethereal melodies. <a href=\"https://www.last.fm/music/Lonely+in+the+Rain\">Read more on Last.fm</a>",
+    "tags": [
+      "chillout",
+      "electronic",
+      "french",
+      "france",
+      "electro-chill"
+    ],
+    "similar_artists": [
+      "buchs",
+      "puulse",
+      "NLSN",
+      "Sole Sole",
+      "Alex Baker"
+    ],
+    "top_tracks": [
+      {
+        "name": "Feel This Way",
+        "listeners": 34886,
+        "playcount": 108065
+      },
+      {
+        "name": "Chemicals",
+        "listeners": 26865,
+        "playcount": 82077
+      },
+      {
+        "name": "All The Stars",
+        "listeners": 20750,
+        "playcount": 56700
+      },
+      {
+        "name": "Breathe",
+        "listeners": 20297,
+        "playcount": 70294
+      },
+      {
+        "name": "Feels Like Paradise",
+        "listeners": 19815,
+        "playcount": 66799
+      },
+      {
+        "name": "Hangin Up",
+        "listeners": 17490,
+        "playcount": 54209
+      },
+      {
+        "name": "Far Away",
+        "listeners": 16902,
+        "playcount": 55043
+      },
+      {
+        "name": "In Love Again",
+        "listeners": 14222,
+        "playcount": 43226
+      },
+      {
+        "name": "Blue Lights",
+        "listeners": 13814,
+        "playcount": 48571
+      },
+      {
+        "name": "Tell Me",
+        "listeners": 13586,
+        "playcount": 39349
+      }
+    ],
+    "url": "https://www.last.fm/music/Lonely+in+the+Rain"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

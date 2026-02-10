@@ -1,0 +1,134 @@
+{
+  "artist_name": "Jasper Avelline",
+  "artist_id": "jasper_avelline",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:25:08.563476+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 335196831,
+    "name": "Jasper Avelline",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/335196831",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ce777dcf18c3ae36d9e35c46cb78ee31/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Slow Turning",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lasting Memories",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Playground",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evening Mood",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moments",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jasper Avelline",
+    "mbid": "",
+    "listeners": 3996,
+    "playcount": 11109,
+    "listener_play_ratio": 2.78,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jasper+Avelline\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Heim Lawson",
+      "Njord Klausen",
+      "Alexander Windale",
+      "Corbin LaRue",
+      "Magnus Edh"
+    ],
+    "top_tracks": [
+      {
+        "name": "Call Me Maybe",
+        "listeners": 2111,
+        "playcount": 4332
+      },
+      {
+        "name": "Evening Mood",
+        "listeners": 1926,
+        "playcount": 6777
+      }
+    ],
+    "url": "https://www.last.fm/music/Jasper+Avelline"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

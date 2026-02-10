@@ -1,0 +1,96 @@
+{
+  "artist_name": "tow kee o",
+  "artist_id": "tow_kee_o",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:34:28.857057+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'tow kee o', got 'Rokero'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "tow kee o",
+    "mbid": "",
+    "listeners": 1090,
+    "playcount": 2059,
+    "listener_play_ratio": 1.89,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/tow+kee+o\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Carlton Ranks",
+      "Julian Ross",
+      "Warmth of Vinyl",
+      "Ocean Silhouette",
+      "The Swaying Journey"
+    ],
+    "top_tracks": [
+      {
+        "name": "Midnight Martini",
+        "listeners": 878,
+        "playcount": 1592
+      },
+      {
+        "name": "Rockets",
+        "listeners": 142,
+        "playcount": 231
+      },
+      {
+        "name": "Night Sparkle (ナイトスパークル)",
+        "listeners": 91,
+        "playcount": 215
+      },
+      {
+        "name": "Night Changes",
+        "listeners": 1,
+        "playcount": 20
+      },
+      {
+        "name": "Night Creatures (夜の生き物)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/tow+kee+o"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

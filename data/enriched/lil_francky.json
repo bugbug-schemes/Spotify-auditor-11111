@@ -1,0 +1,113 @@
+{
+  "artist_name": "lil francky",
+  "artist_id": "lil_francky",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:21:38.643455+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 15111027,
+    "name": "Lil Francky",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/15111027",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b31cbb31f62aa589ad7943139c891e05/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Solstice",
+        "label": "",
+        "release_date": "2025-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "on the roof",
+        "label": "",
+        "release_date": "2025-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lil Francky",
+    "mbid": "",
+    "listeners": 13862,
+    "playcount": 30476,
+    "listener_play_ratio": 2.2,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lil+Francky\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sunny Léo",
+      "Plaxon",
+      "Dry Season",
+      "Mareel",
+      "Cozeen"
+    ],
+    "top_tracks": [
+      {
+        "name": "Solstice",
+        "listeners": 13859,
+        "playcount": 30472
+      },
+      {
+        "name": "on the roof",
+        "listeners": 4,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Lil+Francky"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

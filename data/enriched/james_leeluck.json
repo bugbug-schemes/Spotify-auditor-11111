@@ -1,0 +1,206 @@
+{
+  "artist_name": "James Leeluck",
+  "artist_id": "james_leeluck",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:23:21.828506+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 191212207,
+    "name": "James Leeluck",
+    "nb_fan": 1,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/191212207",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6f775ec71250e58219da1151d1ce21b9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Drift",
+      "Steps from the Nightingale"
+    ],
+    "track_durations": [
+      179,
+      154
+    ],
+    "track_ranks": [
+      54259,
+      59856
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Almost there",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean's Embrace",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drift",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spring in Copenhagen",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wanderings",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Café noir",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elysian",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Midnight",
+        "label": "",
+        "release_date": "2023-04-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Steps from the Nightingale",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "James Leeluck",
+    "mbid": "",
+    "listeners": 39469,
+    "playcount": 99502,
+    "listener_play_ratio": 2.52,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/James+Leeluck\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nordic Swing",
+      "Sodermalm Strand",
+      "Annie Berenson",
+      "The Blue Green",
+      "yorkville"
+    ],
+    "top_tracks": [
+      {
+        "name": "Drift",
+        "listeners": 12230,
+        "playcount": 22767
+      },
+      {
+        "name": "Elysian",
+        "listeners": 11519,
+        "playcount": 22423
+      },
+      {
+        "name": "Blue Midnight",
+        "listeners": 9762,
+        "playcount": 22175
+      },
+      {
+        "name": "Wanderings",
+        "listeners": 7453,
+        "playcount": 15636
+      },
+      {
+        "name": "Steps from the Nightingale",
+        "listeners": 6807,
+        "playcount": 13814
+      },
+      {
+        "name": "Ocean's Embrace",
+        "listeners": 1159,
+        "playcount": 1992
+      },
+      {
+        "name": "Café Noir",
+        "listeners": 366,
+        "playcount": 692
+      },
+      {
+        "name": "Spring in Copenhagen",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Almost there",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/James+Leeluck"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

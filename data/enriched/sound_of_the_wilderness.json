@@ -1,0 +1,165 @@
+{
+  "artist_name": "Sound of the Wilderness",
+  "artist_id": "sound_of_the_wilderness",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:14:21.839006+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 359736512,
+    "name": "Sound Of The Wilderness",
+    "nb_fan": 0,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/359736512",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1
+    },
+    "albums": [
+      {
+        "title": "Forest ASMR",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3383959,
+    "name": "The River Cry",
+    "profile": "Solo project of Dubliner [url=https://www.discogs.com/artist/637438-Hilary-Woods]Hilary Claire Woods[/url].\r\n\r\nAs a teenager Hilary was bass player in Irish indie band [a80392]. Signed to Columbia Records and having toured the world playing headline shows and support slots for bands such as Muse, U2 and PJ Harvey, Hilary left the band at twenty two to pursue her own artistic interests.\r\n\r\nShe went on to study fine art, literature and film and throughout this time she began songwriting and crafting her own sound. In the winter of 2012, she brought her songs along with her piano to the remote wilderness of West Cork to record her debut album. What culminated was a beguiling, mood driven emotive dream pop record, imbued with tender vocals, sparse instrumentation, wide open space and lush atmospherics.\r\n\r\nReleased on Betrothed Records on Valentine’s Day 2013, The River Cry has been received to critical acclaim for star-crossed lovers everywhere.",
+    "realname": "Hilary Claire Woods",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Betrothed Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sound of the Wilderness",
+    "mbid": "",
+    "listeners": 42358,
+    "playcount": 282082,
+    "listener_play_ratio": 6.66,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sound+of+the+Wilderness\">Read more on Last.fm</a>",
+    "tags": [
+      "nature sounds"
+    ],
+    "similar_artists": [
+      "Drakir Nature",
+      "Naturalia",
+      "650 Watts",
+      "Mountain Man Recordings",
+      "Oceanica"
+    ],
+    "top_tracks": [
+      {
+        "name": "Wind Storm, Rain & Far Thunder (Stereo & HD)",
+        "listeners": 17392,
+        "playcount": 134245
+      },
+      {
+        "name": "Birds Singing in the Morning Rain",
+        "listeners": 14757,
+        "playcount": 49490
+      },
+      {
+        "name": "Forestry - Birds and River",
+        "listeners": 7265,
+        "playcount": 22544
+      },
+      {
+        "name": "Birds Warning the arrival of thunder",
+        "listeners": 5518,
+        "playcount": 16248
+      },
+      {
+        "name": "Heavy Rain in Swiss Alps, Thunder Approaching",
+        "listeners": 5411,
+        "playcount": 29462
+      },
+      {
+        "name": "Early Rain, Birds Calling",
+        "listeners": 2784,
+        "playcount": 9024
+      },
+      {
+        "name": "French Forest - Wind and Birds",
+        "listeners": 1535,
+        "playcount": 3916
+      },
+      {
+        "name": "Treetops Songs",
+        "listeners": 503,
+        "playcount": 831
+      },
+      {
+        "name": "Midnight Storm",
+        "listeners": 435,
+        "playcount": 1208
+      },
+      {
+        "name": "Windy Rain & Birdsongs",
+        "listeners": 423,
+        "playcount": 1149
+      }
+    ],
+    "url": "https://www.last.fm/music/Sound+of+the+Wilderness"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

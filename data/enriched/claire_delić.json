@@ -1,0 +1,142 @@
+{
+  "artist_name": "Claire Delić",
+  "artist_id": "claire_delić",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:09:06.267654+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f2fd1675-2a87-43a5-95e9-d3b966e91894",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "social network": "https://www.facebook.com/claire.delic"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Claire Delić', got 'Claire Delic'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Claire Delić",
+    "mbid": "",
+    "listeners": 2576,
+    "playcount": 10593,
+    "listener_play_ratio": 4.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Claire+Deli%C4%87\">Read more on Last.fm</a>",
+    "tags": [
+      "indie pop",
+      "indie",
+      "chill",
+      "panamanian"
+    ],
+    "similar_artists": [
+      "SNENiE",
+      "Delić",
+      "lusillón",
+      "Jorge Cajías",
+      "Carlos Colosio"
+    ],
+    "top_tracks": [
+      {
+        "name": "No Te Voy a Ver",
+        "listeners": 1357,
+        "playcount": 3395
+      },
+      {
+        "name": "TUMBA'",
+        "listeners": 921,
+        "playcount": 2406
+      },
+      {
+        "name": "Tanto Blues",
+        "listeners": 286,
+        "playcount": 1101
+      },
+      {
+        "name": "No Es Cierto",
+        "listeners": 272,
+        "playcount": 1172
+      },
+      {
+        "name": "Tira la Puerta",
+        "listeners": 111,
+        "playcount": 380
+      },
+      {
+        "name": "Un Vestido Y Un Amor",
+        "listeners": 79,
+        "playcount": 155
+      },
+      {
+        "name": "Ven",
+        "listeners": 72,
+        "playcount": 256
+      },
+      {
+        "name": "Me Cuesta Tanto Olvidarte",
+        "listeners": 63,
+        "playcount": 157
+      },
+      {
+        "name": "Última Vez",
+        "listeners": 37,
+        "playcount": 306
+      },
+      {
+        "name": "Prefiéreme Así",
+        "listeners": 29,
+        "playcount": 261
+      }
+    ],
+    "url": "https://www.last.fm/music/Claire+Deli%C4%87"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

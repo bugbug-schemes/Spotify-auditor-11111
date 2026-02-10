@@ -1,0 +1,182 @@
+{
+  "artist_name": "Ole Close",
+  "artist_id": "ole_close",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:12:04.739692+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Ole Close', got 'OPEN CLOSE'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 692606,
+    "name": "The Cliffters",
+    "profile": "Danish group was inspired by guitar group The Drifters with Cliff Richard, also the name should sound close to this group. \r\nThe Cliffters was formed in 1959/60.\r\n\r\nMembers:\r\nJan Petersen, Lars Kofoed, Mogens Petersen, Johnny Reimar, Ole Rasmussen",
+    "realname": "",
+    "social_urls": [
+      "http://www.johnnyreimar.dk/Johnny_Reimar/Johnny_Reimar_og_The_Cliffters.html"
+    ],
+    "members": [
+      "Johnny Reimar",
+      "Rudolph Hansen",
+      "Preben Devantier",
+      "Torben Sardorf",
+      "Per Oluf 'Flob' Hansen",
+      "Mogens Petersen",
+      "Lars Kofoed",
+      "Jan Pedersen (3)",
+      "Steen Hansen (2)",
+      "Henning Schmager",
+      "Ole Rasmussen (3)"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 72,
+    "digital_only_releases": 28,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xCD, Comp",
+      "2xCD, Comp",
+      "2xCass, Comp, Dol",
+      "3xCD, Album, Comp",
+      "3xCD, Comp",
+      "4xCD, Comp",
+      "4xCD, Comp + DVD, Comp",
+      "7\"",
+      "7\", EP",
+      "7\", Mono",
+      "7\", Single",
+      "7\", Single, Mono",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Comp",
+      "CD, Comp, RE",
+      "CD, Comp, RM, RP",
+      "CD, Single",
+      "CDr, Comp",
+      "CDr, Comp, Mono",
+      "Cass, Comp",
+      "Cass, Comp, \"2L",
+      "File, AAC, Single, 256",
+      "LP",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Buzzz Muzik",
+      "CMC",
+      "CMC Entertainment",
+      "CMC Records (7)",
+      "CMC Records (7), Elap",
+      "CMC Special",
+      "Disky",
+      "EMI",
+      "EMI, Frituna",
+      "Elap Music",
+      "Eldorado (8)",
+      "Fontana",
+      "Frost Records",
+      "Frost Records, Karma Music (2), Grufus Records",
+      "Hamlet (2)",
+      "Harlekin",
+      "His Master's Voice",
+      "Jasmine Records",
+      "My Way Music",
+      "NTC Musik",
+      "NTC Musik, Nordisk Trading Company, Triola",
+      "Oldays Records",
+      "One Day Music",
+      "Philips",
+      "Psychic Circle",
+      "Sam Sam Music",
+      "Scranta",
+      "Sonet",
+      "Stylus Records (2)",
+      "Universal",
+      "Valitut Palat"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ole Close",
+    "mbid": "",
+    "listeners": 1240,
+    "playcount": 15387,
+    "listener_play_ratio": 12.41,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ole+Close\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Elysia Blue",
+      "Axel Moons",
+      "Richie Goulding",
+      "Silas Ash",
+      "Eli Amos"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleeping Stars",
+        "listeners": 957,
+        "playcount": 8084
+      },
+      {
+        "name": "Small Hearts",
+        "listeners": 755,
+        "playcount": 5369
+      },
+      {
+        "name": "Bed of Flowers",
+        "listeners": 433,
+        "playcount": 1930
+      },
+      {
+        "name": "Tiny Glow",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Dreamy Lights",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Ole+Close"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

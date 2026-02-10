@@ -1,0 +1,207 @@
+{
+  "artist_name": "Hanni Licht",
+  "artist_id": "hanni_licht",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:01:43.224672+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 124968632,
+    "name": "Hanni Licht",
+    "nb_fan": 4,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/124968632",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c478f524b7dd0a568092e203cb4b898f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Amor Perfeito",
+      "Simpatia"
+    ],
+    "track_durations": [
+      140,
+      166
+    ],
+    "track_ranks": [
+      67217,
+      72504
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "King's Cross",
+        "label": "",
+        "release_date": "2024-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desencontros",
+        "label": "",
+        "release_date": "2024-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Simpatia",
+        "label": "",
+        "release_date": "2023-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amor Perfeito",
+        "label": "",
+        "release_date": "2023-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Green Quartz",
+        "label": "",
+        "release_date": "2021-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Die Bachforelle",
+        "label": "",
+        "release_date": "2021-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 9670849,
+    "name": "Hanni Juon-Lichtenhahn",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hanni Licht",
+    "mbid": "",
+    "listeners": 15789,
+    "playcount": 88417,
+    "listener_play_ratio": 5.6,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hanni+Licht\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Adeben",
+      "Matthias Trapp",
+      "Vita Alexander",
+      "Leonardo Agusti",
+      "Lee Howard-Taylor"
+    ],
+    "top_tracks": [
+      {
+        "name": "Amor Perfeito",
+        "listeners": 7409,
+        "playcount": 26205
+      },
+      {
+        "name": "Simpatia",
+        "listeners": 7043,
+        "playcount": 22763
+      },
+      {
+        "name": "Green Quartz",
+        "listeners": 4745,
+        "playcount": 17493
+      },
+      {
+        "name": "Desencontros",
+        "listeners": 4477,
+        "playcount": 16842
+      },
+      {
+        "name": "Guahara",
+        "listeners": 1684,
+        "playcount": 4429
+      },
+      {
+        "name": "De Avond",
+        "listeners": 165,
+        "playcount": 348
+      },
+      {
+        "name": "King's Cross",
+        "listeners": 70,
+        "playcount": 168
+      },
+      {
+        "name": "Music to Listen to Before You Die",
+        "listeners": 45,
+        "playcount": 81
+      },
+      {
+        "name": "Suave",
+        "listeners": 28,
+        "playcount": 44
+      },
+      {
+        "name": "Die Bachforelle",
+        "listeners": 23,
+        "playcount": 34
+      }
+    ],
+    "url": "https://www.last.fm/music/Hanni+Licht"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

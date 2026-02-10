@@ -1,0 +1,611 @@
+{
+  "artist_name": "Alex Isley",
+  "artist_id": "alex_isley",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:50:05.167087+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "eb5a67bd-4cba-4ee9-88dc-5b8ce1394347",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "r&b",
+      "contemporary r&b",
+      "r&b/soul"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003418239",
+      "bandcamp": "https://lovealexisley.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/5973105",
+      "free streaming": "https://www.deezer.com/artist/4318626",
+      "image": "https://commons.wikimedia.org/wiki/File:Alex_Isley.jpg",
+      "purchase for download": "https://music.apple.com/us/artist/566610959",
+      "streaming": "https://tidal.com/artist/5142636"
+    },
+    "labels": [
+      "Secretly Canadian",
+      "Alex Isley",
+      "Atlantic",
+      "Verve Forecast",
+      "[no label]",
+      "Isley & Dine Records",
+      "Loma Vista Recordings",
+      "Verve",
+      "Free Lunch Records",
+      "Avant Garden",
+      "BMG Rights Management (US) LLC"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4318626,
+    "name": "Alex Isley",
+    "nb_fan": 7465,
+    "nb_album": 36,
+    "link": "https://www.deezer.com/artist/4318626",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/69900223b267eb987f8f1b0e70c180ae/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bas",
+      "COLORS",
+      "Destin Conrad",
+      "Isaiah Falls",
+      "Jack Dine",
+      "Lucky Daye",
+      "Masego",
+      "Robert Glasper",
+      "Terrace Martin",
+      "Terrell Grice"
+    ],
+    "contributor_roles": {
+      "Lucky Daye": [
+        "Main"
+      ],
+      "Masego": [
+        "Main"
+      ],
+      "Jack Dine": [
+        "Featured",
+        "Main"
+      ],
+      "Destin Conrad": [
+        "Main"
+      ],
+      "COLORS": [
+        "Main"
+      ],
+      "Robert Glasper": [
+        "Featured"
+      ],
+      "Terrace Martin": [
+        "Main"
+      ],
+      "Isaiah Falls": [
+        "Main"
+      ],
+      "Terrell Grice": [
+        "Main"
+      ],
+      "Bas": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Good & Plenty (Remix)",
+      "SAME MISTAKE",
+      "Good & Plenty",
+      "Love Again",
+      "Too Bad I Forget",
+      "Fool's Gold - A COLORS SHOW",
+      "Still Wonder (feat. Robert Glasper)",
+      "Mine",
+      "Gone",
+      "Under The Moon",
+      "Into Orbit",
+      "105",
+      "Such A Thing",
+      "Paradise",
+      "Mic On",
+      "JUST A DREAM",
+      "Say Yes / U Got It Bad",
+      "Colors",
+      "On & On",
+      "Water & Air",
+      "About Him",
+      "I Left My Heart In Ladera",
+      "Without",
+      "Hands",
+      "There Was Love"
+    ],
+    "track_durations": [
+      204,
+      178,
+      204,
+      154,
+      150,
+      192,
+      238,
+      212,
+      228,
+      223,
+      315,
+      241,
+      205,
+      218,
+      152,
+      141,
+      251,
+      185,
+      205,
+      300,
+      287,
+      286,
+      116,
+      172,
+      247
+    ],
+    "track_ranks": [
+      538661,
+      318715,
+      468356,
+      373282,
+      336329,
+      278316,
+      531185,
+      625557,
+      312035,
+      303760,
+      239621,
+      256504,
+      257619,
+      257970,
+      312590,
+      328941,
+      144686,
+      261695,
+      120208,
+      258886,
+      182635,
+      120562,
+      104977,
+      270859,
+      201361
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 5,
+      "ep": 4,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Live from NPR's Tiny Desk",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Left My Heart In Ladera",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Marigold",
+        "label": "",
+        "release_date": "2022-03-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dreams in Analog",
+        "label": "",
+        "release_date": "2013-08-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Love / Art Memoirs",
+        "label": "",
+        "release_date": "2017-05-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "WHEN",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wilton",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Beauty of Everything, Pt. 2",
+        "label": "",
+        "release_date": "2019-05-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Beauty of Everything, Pt. 1",
+        "label": "",
+        "release_date": "2023-09-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Christmas Song",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "JUST A DREAM",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thank You For A Lovely Time (Raphael Saadiq Version)",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remember Love",
+        "label": "",
+        "release_date": "2025-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fool's Gold - A COLORS SHOW",
+        "label": "",
+        "release_date": "2025-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hands (Sped Up)",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ms. Goody Two Shoes",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hands (Stripped Down)",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hands",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SAME MISTAKE",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paradise",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brown Eyed Girl",
+        "label": "",
+        "release_date": "2023-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I WANT YOU BUT YOU'LL NEVER KNOW... (feat. DRAM and Alex Isley)",
+        "label": "",
+        "release_date": "2022-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Again",
+        "label": "",
+        "release_date": "2022-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Wonder (feat. Robert Glasper)",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fellowship (Remix) ft. Ambré & Alex Isley",
+        "label": "",
+        "release_date": "2021-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Good & Plenty",
+        "label": "",
+        "release_date": "2021-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Toroka",
+        "label": "",
+        "release_date": "2023-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Interstellar.",
+        "label": "",
+        "release_date": "2020-12-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mine",
+        "label": "",
+        "release_date": "2020-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "People Get Ready (From \"I Can't Breathe / Music For the Movement\")",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lucky Daye",
+      "Snoh Aalegra",
+      "Ari Lennox",
+      "Xavier Omär",
+      "Tiana Major9",
+      "UMI",
+      "India Shawn",
+      "Joyce Wrice",
+      "SiR",
+      "MAETA"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5973105,
+    "name": "Alex Isley",
+    "profile": "R&B singer, songwriter and producer from New Jersey, USA. \r\nDaughter of [a=Ernie Isley].",
+    "realname": "Alexandra Isley",
+    "social_urls": [
+      "http://www.lovealexisley.com",
+      "https://www.facebook.com/LoveAlexIsley",
+      "https://www.instagram.com/LoveAlexIsley/",
+      "https://soundcloud.com/alex-isley",
+      "https://twitter.com/LoveAlexIsley",
+      "https://en.wikipedia.org/wiki/Alex_Isley",
+      "https://www.youtube.com/channel/UC-auxi0vkBdlFi-uPOEt0yg"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 16,
+    "digital_only_releases": 56,
+    "total_releases": 72,
+    "formats": [
+      "",
+      "10xFile, MP3, Album, 256",
+      "11xFile, AAC, Album, 256",
+      "12\", EP, Ltd",
+      "12\", EP, RSD, Ltd, Hot",
+      "12xFile, MP3, Album, 320",
+      "13xFile, MP3, Album, 320",
+      "17xFile, MP3, Mixtape, 320",
+      "2xLP",
+      "5xFile, FLAC, EP",
+      "5xFile, MP3, EP",
+      "5xFile, MP3, EP, 320",
+      "7xFile, MP3, EP, 160",
+      "8xFile, AAC, EP, 256",
+      "9xFile, FLAC, Album, 24-",
+      "9xFile, MP3, Album, 160",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, EP",
+      "CD, Mixed, Promo",
+      "CDr, Comp, Promo",
+      "CDr, Mixed",
+      "File, AAC, Single, 256",
+      "File, FLAC, MP3, Single",
+      "File, FLAC, Single, 24-",
+      "File, MP3",
+      "File, MP3, Single",
+      "File, MPEG-4 Video",
+      "LP, Advance, Bon",
+      "LP, Album, Ltd, Red"
+    ],
+    "labels": [
+      "Apres-Midi Records",
+      "Atlantic, R&B Money",
+      "Avant Garden (4)",
+      "BMG",
+      "BMG Rights Management (US) LLC",
+      "BSMF Records, Ropeadope",
+      "Empire",
+      "Hollywood Records",
+      "Indie (8)",
+      "Isley & Dine Records",
+      "JBR Creative Group",
+      "Jagjaguwar",
+      "Kennygotsoul",
+      "LVRS Only",
+      "Morton Records (2)",
+      "Not On Label",
+      "Not On Label (Alex Isley Self-Released)",
+      "Not On Label (Brandon Williams Self-released)",
+      "Not On Label (Destin Conrad Self-released)",
+      "Not On Label (Serpentwithfeet Self-released)",
+      "Not On Label (The Decoders Self-released)",
+      "Not On Label (Unkle Zaih Self-Released)",
+      "PBBA Records",
+      "RCA",
+      "Ropeadope",
+      "Soulection",
+      "Sounds Of Crenshaw",
+      "UMG Recordings, Inc.",
+      "Verve Forecast",
+      "Vibezelect Music",
+      "XO Creative Club"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alex Isley",
+    "mbid": "eb5a67bd-4cba-4ee9-88dc-5b8ce1394347",
+    "listeners": 288386,
+    "playcount": 3422919,
+    "listener_play_ratio": 11.87,
+    "bio_exists": true,
+    "bio_summary": "Singer-songwriter and producer Alex Isley was drawn to music and performing at an early age. Musical talent runs in her family roots, noting that Alex's father Ernie Isley, and her uncles together, make up the widely-known soul group The Isley Brothers. From beginning performances in the living room to elementary school talent shows, she started to develop a passion that would lead to a career as a musician. She began classical vocal training and at the age of 12 would later attend the LA County",
+    "tags": [
+      "soul",
+      "rnb",
+      "indie",
+      "alternative rnb",
+      "United States"
+    ],
+    "similar_artists": [
+      "Flwr Chyld",
+      "Amaria",
+      "Alex Isley & Jack Dine",
+      "Ambré",
+      "India Shawn"
+    ],
+    "top_tracks": [
+      {
+        "name": "Good & Plenty",
+        "listeners": 164713,
+        "playcount": 836376
+      },
+      {
+        "name": "Love Again",
+        "listeners": 77218,
+        "playcount": 404945
+      },
+      {
+        "name": "Too Bad I Forget",
+        "listeners": 58314,
+        "playcount": 226001
+      },
+      {
+        "name": "Mine",
+        "listeners": 53288,
+        "playcount": 252839
+      },
+      {
+        "name": "Into Orbit",
+        "listeners": 42359,
+        "playcount": 257754
+      },
+      {
+        "name": "Under The Moon",
+        "listeners": 41878,
+        "playcount": 204828
+      },
+      {
+        "name": "Such A Thing",
+        "listeners": 33431,
+        "playcount": 134237
+      },
+      {
+        "name": "Colors",
+        "listeners": 24145,
+        "playcount": 102461
+      },
+      {
+        "name": "Gone",
+        "listeners": 24118,
+        "playcount": 104309
+      },
+      {
+        "name": "Still Wonder",
+        "listeners": 20688,
+        "playcount": 80129
+      }
+    ],
+    "url": "https://www.last.fm/music/Alex+Isley"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

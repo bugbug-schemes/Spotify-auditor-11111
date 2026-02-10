@@ -1,0 +1,217 @@
+{
+  "artist_name": "Dylan Charbeneau",
+  "artist_id": "dylan_charbeneau",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:30:34.821000+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "749d2f66-9c29-4ba8-85eb-908a38c1af39",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1014227"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 8601644,
+    "name": "Dylan Charbeneau",
+    "nb_fan": 11,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/8601644",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/15fed1f12fb97b8681892bdf3130f067/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Delta Crossing 58.6Hz - 62.3Hz",
+        "label": "",
+        "release_date": "2022-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gamma Cassiopeiae 109Hz - 150Hz",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alpha Static 98Hz - 109Hz",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Delta Deep 80Hz - 84Hz",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breathe",
+        "label": "",
+        "release_date": "2022-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rebirth",
+        "label": "",
+        "release_date": "2022-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1014227,
+    "name": "Dylan Charbeneau",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 3,
+    "digital_only_releases": 3,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, EP, Ltd"
+    ],
+    "labels": [
+      "Not On Label (Alec Ogg Self-released)",
+      "Sessions Entertainment"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dylan Charbeneau",
+    "mbid": "749d2f66-9c29-4ba8-85eb-908a38c1af39",
+    "listeners": 84663,
+    "playcount": 635512,
+    "listener_play_ratio": 7.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dylan+Charbeneau\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kilo Herz",
+      "True White",
+      "A.I.C 83",
+      "Dreamstatician",
+      "Casper White"
+    ],
+    "top_tracks": [
+      {
+        "name": "Delta Crossing 58.6Hz - 62.3Hz",
+        "listeners": 18289,
+        "playcount": 107470
+      },
+      {
+        "name": "Delta Deep 80Hz - 84Hz",
+        "listeners": 16906,
+        "playcount": 102301
+      },
+      {
+        "name": "Drift Into Bliss",
+        "listeners": 11332,
+        "playcount": 42774
+      },
+      {
+        "name": "Clouds Of Pink",
+        "listeners": 10660,
+        "playcount": 73391
+      },
+      {
+        "name": "Ambient Pink Noise Sound",
+        "listeners": 10472,
+        "playcount": 71246
+      },
+      {
+        "name": "Field Of Pink",
+        "listeners": 10466,
+        "playcount": 70015
+      },
+      {
+        "name": "Dreamscape",
+        "listeners": 9592,
+        "playcount": 26528
+      },
+      {
+        "name": "The Holly And The Ivy",
+        "listeners": 6983,
+        "playcount": 18104
+      },
+      {
+        "name": "Isosceles",
+        "listeners": 6879,
+        "playcount": 30515
+      },
+      {
+        "name": "6 Figures",
+        "listeners": 5307,
+        "playcount": 15055
+      }
+    ],
+    "url": "https://www.last.fm/music/Dylan+Charbeneau"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

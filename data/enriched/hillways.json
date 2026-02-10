@@ -1,0 +1,121 @@
+{
+  "artist_name": "Hillways",
+  "artist_id": "hillways",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:08:12.563374+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Hillways', got 'Bill Fay'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hillways",
+    "mbid": "",
+    "listeners": 19323,
+    "playcount": 42208,
+    "listener_play_ratio": 2.18,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hillways\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "constin",
+      "Echo Iluné",
+      "Big BAZ",
+      "Mike Nora",
+      "Mareel"
+    ],
+    "top_tracks": [
+      {
+        "name": "Floating Memory",
+        "listeners": 13043,
+        "playcount": 30021
+      },
+      {
+        "name": "Snooze Button",
+        "listeners": 4562,
+        "playcount": 7644
+      },
+      {
+        "name": "Finger Painting",
+        "listeners": 3055,
+        "playcount": 4526
+      },
+      {
+        "name": "Auras",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Maybe More",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Seasons",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Milkshakes",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Valleys",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Sweater Weather",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Tropicanana",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Hillways"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,138 @@
+{
+  "artist_name": "Astred",
+  "artist_id": "astred",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:16:04.822124+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Astred', got 'Loren Allred'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 14613318,
+    "name": "Humbert Allen Astredo",
+    "profile": "Humbert Allen \"Bud\" Astredo, Jr. (April 4, 1929 – February 19, 2016) was an American stage, film, and television actor. He made several notable Broadway and Off-Broadway theatrical performances, but was best known for the numerous roles he performed on the daytime Gothic horror soap opera Dark Shadows, most notably that of the warlock Nicholas Blair. ",
+    "realname": "",
+    "social_urls": [
+      "https://en.wikipedia.org/wiki/Humbert_Allen_Astredo"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Astred",
+    "mbid": "",
+    "listeners": 44224,
+    "playcount": 270963,
+    "listener_play_ratio": 6.13,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Astred\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Magnolia Dreams",
+      "Hector Warrens",
+      "emiko",
+      "Long Lake",
+      "Ursae Minoris"
+    ],
+    "top_tracks": [
+      {
+        "name": "Strangers",
+        "listeners": 9601,
+        "playcount": 53386
+      },
+      {
+        "name": "Effervescence",
+        "listeners": 8807,
+        "playcount": 22830
+      },
+      {
+        "name": "Obscure",
+        "listeners": 7522,
+        "playcount": 21226
+      },
+      {
+        "name": "Dawn",
+        "listeners": 7048,
+        "playcount": 18697
+      },
+      {
+        "name": "Full Circle",
+        "listeners": 6949,
+        "playcount": 37171
+      },
+      {
+        "name": "Expansion",
+        "listeners": 6813,
+        "playcount": 23011
+      },
+      {
+        "name": "Inner Healing",
+        "listeners": 4956,
+        "playcount": 16753
+      },
+      {
+        "name": "Quiet Dreams",
+        "listeners": 4933,
+        "playcount": 15646
+      },
+      {
+        "name": "Reveries",
+        "listeners": 4637,
+        "playcount": 12008
+      },
+      {
+        "name": "Community",
+        "listeners": 3805,
+        "playcount": 11021
+      }
+    ],
+    "url": "https://www.last.fm/music/Astred"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

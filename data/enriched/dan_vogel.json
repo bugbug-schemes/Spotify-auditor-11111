@@ -1,0 +1,227 @@
+{
+  "artist_name": "Dan Vogel",
+  "artist_id": "dan_vogel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:20:03.878944+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 809543,
+    "name": "Dan Vogel",
+    "nb_fan": 2,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/809543",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1d6869e9c7f77d1d28b4c4432c438f22/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Christmas Tree Magic (Fireplace)"
+    ],
+    "track_durations": [
+      170
+    ],
+    "track_ranks": [
+      100892
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Transitions",
+        "label": "",
+        "release_date": "2010-09-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "September Serenade",
+        "label": "",
+        "release_date": "2006-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Centouno Dalmatian Street",
+        "label": "",
+        "release_date": "2024-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chestnuts",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oh Tannenbaum - By The Fire",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Tree Magic (Fireplace)",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Yuletide Elf",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pillowtime",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Tree Magic",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3562358,
+    "name": "Dan Vogel",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Innova Recordings",
+      "OODiscs"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dan Vogel",
+    "mbid": "",
+    "listeners": 7173,
+    "playcount": 20329,
+    "listener_play_ratio": 2.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dan+Vogel\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Eleanor Friedman",
+      "AMELIE Voss",
+      "Iris Spencer",
+      "Meghan Summers",
+      "Leon Bonné"
+    ],
+    "top_tracks": [
+      {
+        "name": "Christmas Tree Magic",
+        "listeners": 6653,
+        "playcount": 18622
+      },
+      {
+        "name": "Christmas Tree Magic (Fireplace)",
+        "listeners": 612,
+        "playcount": 1352
+      },
+      {
+        "name": "The Yuletide Elf",
+        "listeners": 83,
+        "playcount": 230
+      },
+      {
+        "name": "Oh Tannenbaum",
+        "listeners": 30,
+        "playcount": 46
+      },
+      {
+        "name": "Oh Tannenbaum - By The Fire",
+        "listeners": 26,
+        "playcount": 39
+      },
+      {
+        "name": "Brave New World",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Prayer for a Friend",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Joseph Smith: The Making of a Prophet",
+        "listeners": 1,
+        "playcount": 17
+      },
+      {
+        "name": "Calling the DJ Zone",
+        "listeners": 1,
+        "playcount": 8
+      },
+      {
+        "name": "Figure Eights",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Dan+Vogel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,338 @@
+{
+  "artist_name": "LaSalle Street Trio",
+  "artist_id": "lasalle_street_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:55:50.359748+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "0d19e5da-ca36-4156-8df3-28fe7beeb62a",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183303597",
+      "purchase for download": "https://music.apple.com/us/artist/1649026598",
+      "soundcloud": "https://soundcloud.com/lasallestreettrio",
+      "streaming": "https://tidal.com/artist/34526854",
+      "youtube music": "https://music.youtube.com/channel/UCNR3obDHjI4WscSOM7c_Khw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183303597,
+    "name": "LaSalle Street Trio",
+    "nb_fan": 25,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/183303597",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/abb1e7db561f9a23b602961bcf669172/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Deep Purple",
+      "I've Told Every Little Star",
+      "In my loneliness",
+      "The April Skies",
+      "Lemon Tart",
+      "Fading Lights",
+      "A Sharpness in the Air",
+      "Deep In A Dream"
+    ],
+    "track_durations": [
+      157,
+      253,
+      211,
+      213,
+      211,
+      226,
+      206,
+      282
+    ],
+    "track_ranks": [
+      70283,
+      196288,
+      124706,
+      132684,
+      53701,
+      67488,
+      8080,
+      158900
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 17
+    },
+    "albums": [
+      {
+        "title": "I Made a Mistake",
+        "label": "",
+        "release_date": "2024-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Deep In A Dream",
+        "label": "",
+        "release_date": "2021-01-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Look It Up",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frozen lakes in the distance",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before going under",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Deep Purple",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Sharpness in the Air",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In my loneliness",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just one more day",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Perennial Companion",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I don't like small talk",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You playin' me?",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Way Too Far",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lemon Tart",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "lower upper middle",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fine And Dandy",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The April Skies",
+        "label": "",
+        "release_date": "2022-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fading Lights",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nothing Lasts Forever",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Judson Hurd",
+      "Jozef Gatysik",
+      "Björn Gottschall",
+      "Takashi Kokubo",
+      "Anita Rosswell",
+      "Henrik Lindstrand",
+      "Otto A Totland",
+      "The Collective",
+      "De Maynes",
+      "Roland Pöntinen"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "LaSalle Street Trio",
+    "mbid": "0d19e5da-ca36-4156-8df3-28fe7beeb62a",
+    "listeners": 105574,
+    "playcount": 477973,
+    "listener_play_ratio": 4.53,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/LaSalle+Street+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Astoria Three",
+      "The Sweetgreens",
+      "Magpie Jazz Trio",
+      "Reuben Plays",
+      "The Three Queens"
+    ],
+    "top_tracks": [
+      {
+        "name": "I've Told Every Little Star",
+        "listeners": 29811,
+        "playcount": 86425
+      },
+      {
+        "name": "Everything Happens To Me",
+        "listeners": 28662,
+        "playcount": 74114
+      },
+      {
+        "name": "Deep In A Dream",
+        "listeners": 26295,
+        "playcount": 70027
+      },
+      {
+        "name": "The April Skies",
+        "listeners": 25586,
+        "playcount": 62959
+      },
+      {
+        "name": "When Sunny Gets Blue",
+        "listeners": 15069,
+        "playcount": 36706
+      },
+      {
+        "name": "Deep Purple",
+        "listeners": 11774,
+        "playcount": 26108
+      },
+      {
+        "name": "Fading Lights",
+        "listeners": 11665,
+        "playcount": 24446
+      },
+      {
+        "name": "In my loneliness",
+        "listeners": 10138,
+        "playcount": 20973
+      },
+      {
+        "name": "I don't like small talk",
+        "listeners": 8833,
+        "playcount": 18191
+      },
+      {
+        "name": "Lemon Tart",
+        "listeners": 8424,
+        "playcount": 19464
+      }
+    ],
+    "url": "https://www.last.fm/music/LaSalle+Street+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

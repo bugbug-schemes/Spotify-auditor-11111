@@ -1,0 +1,123 @@
+{
+  "artist_name": "Tornadoez",
+  "artist_id": "tornadoez",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:46:46.641077+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Tornadoez', got 'The Tornadoes'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tornadoez",
+    "mbid": "",
+    "listeners": 56429,
+    "playcount": 426670,
+    "listener_play_ratio": 7.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tornadoez\">Read more on Last.fm</a>",
+    "tags": [
+      "nature sounds"
+    ],
+    "similar_artists": [
+      "Four Winds",
+      "El Tiempo Central",
+      "Creatress",
+      "NATURE, Vozterra",
+      "Ciclo del Agua"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lightning in the Rain",
+        "listeners": 37384,
+        "playcount": 238684
+      },
+      {
+        "name": "Tempête profonde",
+        "listeners": 12315,
+        "playcount": 36116
+      },
+      {
+        "name": "Sonar Para Dormir",
+        "listeners": 7371,
+        "playcount": 45111
+      },
+      {
+        "name": "Pluie sauvage",
+        "listeners": 6574,
+        "playcount": 32912
+      },
+      {
+        "name": "Lightning in my Soul",
+        "listeners": 6357,
+        "playcount": 35858
+      },
+      {
+        "name": "Thunder in my Veins",
+        "listeners": 4969,
+        "playcount": 18940
+      },
+      {
+        "name": "Rainy Day Reflections",
+        "listeners": 4880,
+        "playcount": 17904
+      },
+      {
+        "name": "Listen To The Storm",
+        "listeners": 337,
+        "playcount": 473
+      },
+      {
+        "name": "Forest Storm",
+        "listeners": 336,
+        "playcount": 543
+      },
+      {
+        "name": "Thunder & Rain Sound",
+        "listeners": 41,
+        "playcount": 52
+      }
+    ],
+    "url": "https://www.last.fm/music/Tornadoez"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

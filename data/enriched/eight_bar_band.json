@@ -1,0 +1,268 @@
+{
+  "artist_name": "Eight Bar Band",
+  "artist_id": "eight_bar_band",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:34:15.945287+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "f237a720-c9c3-494d-86e8-7f0c2e1c1bbf",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/191212717",
+      "purchase for download": "https://music.apple.com/us/artist/1671775738",
+      "streaming": "https://tidal.com/artist/35802329",
+      "youtube music": "https://music.youtube.com/channel/UCdHp0f_9621ZqvYCOSULhNA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 191212717,
+    "name": "Eight Bar Band",
+    "nb_fan": 7,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/191212717",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f267a74663648dc2423456da96b00a57/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "You Were Waiting for Me",
+      "In Bloom",
+      "Midnight Moods",
+      "Deep Blue Calling",
+      "Passing Strangers"
+    ],
+    "track_durations": [
+      248,
+      199,
+      179,
+      163,
+      208
+    ],
+    "track_ranks": [
+      37230,
+      34596,
+      63757,
+      13603,
+      33777
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Deep Blue Calling",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Bloom",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Were Waiting for Me",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Passing Strangers",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floor 18",
+        "label": "",
+        "release_date": "2024-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let All You Do Be Done in Love",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Moods",
+        "label": "",
+        "release_date": "2023-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm glad there is you",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1410059,
+    "name": "Eight To The Bar",
+    "profile": "Connecticut (USA) swing/jazz band.",
+    "realname": "",
+    "social_urls": [
+      "http://www.eighttothebar.com/index.html"
+    ],
+    "members": [
+      "Collin Tilton",
+      "Cynthia Lyon",
+      "Paul Nigro"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 16,
+    "digital_only_releases": 6,
+    "total_releases": 22,
+    "formats": [
+      "",
+      "2xCD, Comp, Promo",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "LP, Album",
+      "LP, Comp"
+    ],
+    "labels": [
+      "DM Records",
+      "Diva Records (10)",
+      "Do It Yourself Entertainment Strategic Marketing",
+      "Hepcat Records",
+      "I-95 (2)",
+      "Jitter Bop Records",
+      "Jitter Bop! Records",
+      "Jitterbop! Records",
+      "Jitterbop! Records, Big Noise",
+      "Rolling Stone",
+      "Shag Archives",
+      "TNA Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Eight Bar Band",
+    "mbid": "f237a720-c9c3-494d-86e8-7f0c2e1c1bbf",
+    "listeners": 43536,
+    "playcount": 130674,
+    "listener_play_ratio": 3.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Eight+Bar+Band\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Tree Nomads",
+      "Hamilton Reed Quartet",
+      "FRED HAYES",
+      "Trio Rosa",
+      "Downtown Café"
+    ],
+    "top_tracks": [
+      {
+        "name": "Midnight Moods",
+        "listeners": 19259,
+        "playcount": 43504
+      },
+      {
+        "name": "Passing Strangers",
+        "listeners": 16071,
+        "playcount": 31734
+      },
+      {
+        "name": "You Were Waiting for Me",
+        "listeners": 12836,
+        "playcount": 27922
+      },
+      {
+        "name": "In Bloom",
+        "listeners": 10822,
+        "playcount": 21917
+      },
+      {
+        "name": "Deep Blue Calling",
+        "listeners": 1367,
+        "playcount": 2826
+      },
+      {
+        "name": "Floor 18",
+        "listeners": 1327,
+        "playcount": 2745
+      },
+      {
+        "name": "Let All You Do Be Done in Love",
+        "listeners": 10,
+        "playcount": 22
+      },
+      {
+        "name": "I'm Glad There Is You",
+        "listeners": 3,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Eight+Bar+Band"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

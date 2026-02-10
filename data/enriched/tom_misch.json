@@ -1,0 +1,636 @@
+{
+  "artist_name": "Tom Misch",
+  "artist_id": "tom_misch",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:44:41.410200+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "fc3e8983-1f51-4c80-b2b5-146bf2162dc2",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "1995-06-25",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "neo soul",
+      "jazz-funk",
+      "nu jazz"
+    ],
+    "aliases": [
+      "Thomas Abraham Misch"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003281433",
+      "bandcamp": "https://tommisch1.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/3814795",
+      "free streaming": "https://www.deezer.com/artist/6006756",
+      "last.fm": "https://www.last.fm/music/Tom+Misch",
+      "official homepage": "http://www.tommisch.com/",
+      "other databases": "https://imvdb.com/n/tom-misch",
+      "purchase for download": "https://www.junodownload.com/artists/Tom+Misch/",
+      "social network": "https://www.instagram.com/tommisch/",
+      "songkick": "https://www.songkick.com/artists/8341698",
+      "soundcloud": "https://soundcloud.com/tommisch",
+      "streaming": "https://tidal.com/artist/5806445",
+      "wikidata": "https://www.wikidata.org/wiki/Q50917233",
+      "youtube": "https://www.youtube.com/tommisch"
+    },
+    "labels": [
+      "Stones Throw Records",
+      "Beat Records",
+      "Brownswood Recordings",
+      "Beyond the Groove",
+      "Caroline Records",
+      "Soulection",
+      "Polydor",
+      "AWAL Recordings Ltd",
+      "Blue Note"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 6006756,
+    "name": "Tom Misch",
+    "nb_fan": 102575,
+    "nb_album": 40,
+    "link": "https://www.deezer.com/artist/6006756",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fa4ef37016d821bcb5207f8dcaad0b7a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "De La Soul",
+      "FKJ",
+      "Freddie Gibbs",
+      "GoldLink",
+      "Joel Culpepper",
+      "Jordan Rakei",
+      "Laura Misch",
+      "Loyle Carner",
+      "Michael Kiwanuka",
+      "Poppy Ajudha",
+      "Rocco Palladino",
+      "Yussef Dayes"
+    ],
+    "contributor_roles": {
+      "Poppy Ajudha": [
+        "Main"
+      ],
+      "De La Soul": [
+        "Main"
+      ],
+      "Michael Kiwanuka": [
+        "Main"
+      ],
+      "Yussef Dayes": [
+        "Main"
+      ],
+      "Freddie Gibbs": [
+        "Featured"
+      ],
+      "Loyle Carner": [
+        "Featured"
+      ],
+      "FKJ": [
+        "Main"
+      ],
+      "Joel Culpepper": [
+        "Main"
+      ],
+      "Laura Misch": [
+        "Featured"
+      ],
+      "Rocco Palladino": [
+        "Featured"
+      ],
+      "Jordan Rakei": [
+        "Main"
+      ],
+      "GoldLink": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Sisters With Me",
+      "Disco Yes",
+      "It Runs Through Me (feat. De La Soul)",
+      "Cinnamon Curls",
+      "Insecure",
+      "Money",
+      "Movie",
+      "Invincible",
+      "Tidal Wave",
+      "Nightrider",
+      "Colourblind",
+      "Losing My Way",
+      "Falling For You",
+      "South of the River",
+      "Free",
+      "The Real",
+      "Follow",
+      "Lift Off",
+      "Midnight Mischief (Tom Misch Remix)",
+      "Lost in Paris",
+      "Better Days",
+      "Red Moon",
+      "Kyiv",
+      "Festival",
+      "What Kinda Music"
+    ],
+    "track_durations": [
+      244,
+      280,
+      261,
+      246,
+      195,
+      291,
+      357,
+      207,
+      249,
+      300,
+      235,
+      259,
+      246,
+      269,
+      234,
+      161,
+      225,
+      318,
+      266,
+      194,
+      173,
+      212,
+      210,
+      282,
+      230
+    ],
+    "track_ranks": [
+      668986,
+      645498,
+      700730,
+      632209,
+      442164,
+      685571,
+      523456,
+      467282,
+      582378,
+      578123,
+      474519,
+      533970,
+      299742,
+      457483,
+      454631,
+      437098,
+      500823,
+      367468,
+      466092,
+      487433,
+      657115,
+      539579,
+      390240,
+      400315,
+      454054
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 5,
+      "ep": 6,
+      "single": 29
+    },
+    "albums": [
+      {
+        "title": "Quarantine Sessions",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "What Kinda Music",
+        "label": "",
+        "release_date": "2020-04-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Geography",
+        "label": "",
+        "release_date": "2018-04-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beat Tape 2",
+        "label": "",
+        "release_date": "2015-08-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beat Tape 1",
+        "label": "",
+        "release_date": "2019-12-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Six Songs",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "What Kinda Music (Bonus Tracks)",
+        "label": "",
+        "release_date": "2020-10-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "5 Day Mischon",
+        "label": "",
+        "release_date": "2017-03-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Deezer Next",
+        "label": "",
+        "release_date": "2017-01-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Reverie",
+        "label": "",
+        "release_date": "2016-07-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Out to Sea",
+        "label": "",
+        "release_date": "2014-12-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sisters With Me",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Red Moon",
+        "label": "",
+        "release_date": "2025-05-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old Man",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Free",
+        "label": "",
+        "release_date": "2023-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What Kinda Music (Jordan Rakei Remix)",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightrider",
+        "label": "",
+        "release_date": "2020-04-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kyiv",
+        "label": "",
+        "release_date": "2020-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lift Off",
+        "label": "",
+        "release_date": "2020-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What Kinda Music",
+        "label": "",
+        "release_date": "2020-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Losing My Way",
+        "label": "",
+        "release_date": "2019-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Money",
+        "label": "",
+        "release_date": "2019-06-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost in Paris",
+        "label": "",
+        "release_date": "2018-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It Runs Through Me",
+        "label": "",
+        "release_date": "2018-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Water Baby",
+        "label": "",
+        "release_date": "2018-01-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Movie",
+        "label": "",
+        "release_date": "2017-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "South of the River (Detroit Swindle Remix)",
+        "label": "",
+        "release_date": "2017-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "South of the River",
+        "label": "",
+        "release_date": "2017-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Watch Me Dance (Crackazat Remix)",
+        "label": "",
+        "release_date": "2016-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Mischief (Tom Misch Remix)",
+        "label": "",
+        "release_date": "2016-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "FKJ",
+      "Jordan Rakei",
+      "Two Another",
+      "Winston Surfshirt",
+      "Joy Crookes",
+      "Joesef",
+      "Sault",
+      "Hiatus Kaiyote",
+      "Arlo Parks",
+      "Sunni Colon"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3814795,
+    "name": "Tom Misch",
+    "profile": "Tom Misch (a.k.a. SuperShy) is a London-based producer, singer, and songwriter.\r\nHe blends hip-hop-inspired beats with soul vocals and guitar. \r\n",
+    "realname": "Thomas Abraham Misch",
+    "social_urls": [
+      "https://soundcloud.com/tommisch/",
+      "https://tommisch.bandcamp.com/",
+      "https://www.facebook.com/TomMisch",
+      "https://twitter.com/TomMisch",
+      "https://www.instagram.com/tommisch/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 33,
+    "digital_only_releases": 60,
+    "total_releases": 93,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP",
+      "12\", EP, Ltd",
+      "12\", Single",
+      "2x12\", Album",
+      "2x12\", Comp, Ltd",
+      "2xCD, Comp",
+      "2xCD, Comp, Dig",
+      "2xCD, Comp, Mixed",
+      "2xLP",
+      "2xLP, Comp",
+      "3xCD, Mixed",
+      "3xFile, MP3, EP, 320",
+      "4xFile, AAC",
+      "4xLP, Comp, Ltd, Num, Promo, S/Edition, 180",
+      "6xCD, Comp + Box",
+      "7\"",
+      "7xFile, WAV, Album, 16-",
+      "8xFile, MP3, Comp, 320",
+      "CD, Comp, Dig",
+      "CD, Mixed",
+      "CD, Mixtape, Promo",
+      "CD, RSD, Comp, Smplr",
+      "CDr, Comp",
+      "CDr, Comp, Ltd, Mixed",
+      "CDr, Comp, Mixed",
+      "CDr, Comp, Promo",
+      "CDr, MiniAlbum, Promo, Smplr",
+      "CDr, Single, Promo",
+      "Cass, Comp, Ltd",
+      "Cass, Mixtape, Unofficial",
+      "File, AAC, Single",
+      "File, MP3, Mixed, Mixtape, 320",
+      "File, MP3, Mixtape, 320",
+      "File, MP3, Single",
+      "File, Mixed",
+      "File, WAV, EP",
+      "LP, Comp"
+    ],
+    "labels": [
+      "AEI Music",
+      "AWAL Recordings Ltd, AWAL Recordings Ltd",
+      "Alura Records",
+      "Astrollage",
+      "Atlantic Records UK",
+      "Beat Mix Song",
+      "Beat Records",
+      "Beyond The Groove",
+      "Brownswood Recordings, Cashmere Thoughts Recordings, Warner Music Group",
+      "Buena onda tapes",
+      "DMC, DMC",
+      "Defected",
+      "Expansions Collective",
+      "Hed Kandi, Sony Music",
+      "Heist (2)",
+      "Indigo Soul",
+      "Junktion",
+      "KANS Entertainment",
+      "Magic Records",
+      "Marantz, Vinyl Me, Please",
+      "Moda Black",
+      "Montaime",
+      "Not On Label",
+      "Not On Label (Ali M'Fantom Self-released)",
+      "Nova Records, Wagram Music",
+      "Oil Works",
+      "P-Vine Records",
+      "Polydor",
+      "Record Store Day",
+      "Sony Music",
+      "Soulection",
+      "TheSoundYouNeed",
+      "Tru Community",
+      "Wagram Music",
+      "Yukichi Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tom Misch",
+    "mbid": "fc3e8983-1f51-4c80-b2b5-146bf2162dc2",
+    "listeners": 785622,
+    "playcount": 21160843,
+    "listener_play_ratio": 26.94,
+    "bio_exists": true,
+    "bio_summary": "“Apparently, I have a sound , and people can hear it,” Tom Misch claims modestly. For someone with a cohesive and sprawling body of mellow beats behind him, he seems mildly bewildered that this is the case. “I try so many genres that it’s hard sometimes to pinpoint. I guess my sound is uplifting, soulful, funky — and happy more than it is sad.” It’s a perfect description of his debut album, due in 2018, which brings together low-slung hip-hop beats, glittering disco, and noodling jazz instrument",
+    "tags": [
+      "soul",
+      "Hip-Hop",
+      "jazz",
+      "indie",
+      "instrumental"
+    ],
+    "similar_artists": [
+      "Tom Misch & Yussef Dayes",
+      "Jordan Rakei",
+      "Loyle Carner",
+      "Oscar Jerome",
+      "Barney Artist"
+    ],
+    "top_tracks": [
+      {
+        "name": "Movie",
+        "listeners": 201565,
+        "playcount": 1629711
+      },
+      {
+        "name": "It Runs Through Me",
+        "listeners": 180959,
+        "playcount": 1351820
+      },
+      {
+        "name": "Nightrider",
+        "listeners": 177012,
+        "playcount": 1073306
+      },
+      {
+        "name": "Disco Yes",
+        "listeners": 147183,
+        "playcount": 1135972
+      },
+      {
+        "name": "It Runs Through Me (feat. De La Soul)",
+        "listeners": 143115,
+        "playcount": 645739
+      },
+      {
+        "name": "Lost in Paris",
+        "listeners": 119980,
+        "playcount": 769315
+      },
+      {
+        "name": "Tidal Wave",
+        "listeners": 113279,
+        "playcount": 591261
+      },
+      {
+        "name": "What Kinda Music",
+        "listeners": 110234,
+        "playcount": 635736
+      },
+      {
+        "name": "South of the River",
+        "listeners": 107930,
+        "playcount": 656500
+      },
+      {
+        "name": "Beautiful Escape",
+        "listeners": 104863,
+        "playcount": 711227
+      }
+    ],
+    "url": "https://www.last.fm/music/Tom+Misch"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

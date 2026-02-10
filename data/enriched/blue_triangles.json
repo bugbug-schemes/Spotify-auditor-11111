@@ -1,0 +1,153 @@
+{
+  "artist_name": "Blue Triangles",
+  "artist_id": "blue_triangles",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:46:34.069530+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 127237452,
+    "name": "Blue Triangles",
+    "nb_fan": 5,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/127237452",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/339a4f1dba2f9e517689f02214ddc5d2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Alpha Traumwelt",
+        "label": "",
+        "release_date": "2022-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stille Binaural",
+        "label": "",
+        "release_date": "2021-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Blue Triangles",
+    "mbid": "",
+    "listeners": 24112,
+    "playcount": 141197,
+    "listener_play_ratio": 5.86,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Blue+Triangles\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "0neplus0ne",
+      "Goodness Gr8ness",
+      "Binaural Movements",
+      "Binaural State",
+      "Luna Waterfall"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stille - Alpha Sinus 134Hz - 141Hz",
+        "listeners": 18412,
+        "playcount": 73122
+      },
+      {
+        "name": "Sonnenaufgang - Alpha Sinus 85Hz - 92Hz",
+        "listeners": 17883,
+        "playcount": 67925
+      },
+      {
+        "name": "Marzocco in the am 102Hz - 109Hz",
+        "listeners": 29,
+        "playcount": 63
+      },
+      {
+        "name": "Traumwelt - Alpha Sinus 148Hz - 156Hz",
+        "listeners": 8,
+        "playcount": 11
+      },
+      {
+        "name": "Echoes Downstream Flow",
+        "listeners": 8,
+        "playcount": 9
+      },
+      {
+        "name": "Farblose Träumerei - Alpha Sinus 106Hz - 113Hz",
+        "listeners": 5,
+        "playcount": 21
+      },
+      {
+        "name": "Flowing Rhythmic Wave",
+        "listeners": 5,
+        "playcount": 7
+      },
+      {
+        "name": "Rushing Water Rhythm",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "forever and always",
+        "listeners": 1,
+        "playcount": 11
+      },
+      {
+        "name": "The Fall",
+        "listeners": 1,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/Blue+Triangles"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

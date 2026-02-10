@@ -1,0 +1,224 @@
+{
+  "artist_name": "Copenhagen Jazzexperience",
+  "artist_id": "copenhagen_jazzexperience",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:14:21.264280+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 218399595,
+    "name": "Copenhagen Jazzexperience",
+    "nb_fan": 29,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/218399595",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b3eebb5adcb76d978ae9aebf3a0f8869/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Claus Waidtløw",
+      "Jacob Christoffersen"
+    ],
+    "contributor_roles": {
+      "Claus Waidtløw": [
+        "Main"
+      ],
+      "Jacob Christoffersen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Epiphany",
+      "Ithaka",
+      "We'll Be Together Again",
+      "Never Let Me Go",
+      "Summer Night",
+      "Lush Life",
+      "Chelsea Bridge"
+    ],
+    "track_durations": [
+      213,
+      209,
+      308,
+      323,
+      305,
+      366,
+      328
+    ],
+    "track_ranks": [
+      142845,
+      69978,
+      72911,
+      61793,
+      73402,
+      8387,
+      38214
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3
+    },
+    "albums": [
+      {
+        "title": "Summer Night",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lazy Afternoon",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Everything I Love",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": [
+      "Snorre Kirk",
+      "Brandon Sanders",
+      "Julia Hülsmann Quartet",
+      "Cozy Bedroom",
+      "Jazzy Coffee",
+      "Relaxing Jazz Piano",
+      "Danny Grissett",
+      "Dominick Farinacci",
+      "Hans Ulrik",
+      "Portraits in Jazz"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15864797,
+    "name": "Copenhagen Jazzexperience",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Copenhagen Jazzexperience",
+    "mbid": "",
+    "listeners": 56591,
+    "playcount": 193218,
+    "listener_play_ratio": 3.41,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Copenhagen+Jazzexperience\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Erik von Spreckelsen",
+      "Ari Bragi Kárason",
+      "The Mellowtones",
+      "Art Roho",
+      "Thomas Sejthen Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ithaka",
+        "listeners": 39436,
+        "playcount": 88354
+      },
+      {
+        "name": "We'll Be Together Again",
+        "listeners": 18411,
+        "playcount": 40687
+      },
+      {
+        "name": "Never Let Me Go",
+        "listeners": 16374,
+        "playcount": 33684
+      },
+      {
+        "name": "Epiphany",
+        "listeners": 5758,
+        "playcount": 10429
+      },
+      {
+        "name": "Lush Life",
+        "listeners": 4269,
+        "playcount": 8278
+      },
+      {
+        "name": "Melody At Night",
+        "listeners": 3397,
+        "playcount": 5717
+      },
+      {
+        "name": "Chelsea Bridge",
+        "listeners": 1956,
+        "playcount": 3928
+      },
+      {
+        "name": "Lullaby of the Leaves",
+        "listeners": 150,
+        "playcount": 287
+      },
+      {
+        "name": "Summer Night",
+        "listeners": 138,
+        "playcount": 260
+      },
+      {
+        "name": "Lazy Afternoon",
+        "listeners": 134,
+        "playcount": 196
+      }
+    ],
+    "url": "https://www.last.fm/music/Copenhagen+Jazzexperience"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

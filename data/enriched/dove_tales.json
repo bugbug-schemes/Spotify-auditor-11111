@@ -1,0 +1,357 @@
+{
+  "artist_name": "Dove Tales",
+  "artist_id": "dove_tales",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:32:55.764888+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183263997,
+    "name": "Dove Tales",
+    "nb_fan": 4,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/183263997",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5600fc7184231fc173ce00b1bf018434/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Brokers",
+      "Dance Around",
+      "Secret Chords",
+      "Chateau",
+      "Beam",
+      "No Paris for me",
+      "Next in line"
+    ],
+    "track_durations": [
+      184,
+      146,
+      167,
+      183,
+      136,
+      213,
+      170
+    ],
+    "track_ranks": [
+      50241,
+      125362,
+      25441,
+      30819,
+      26876,
+      26727,
+      50200
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "Signature Cocktail",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There Other Options",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Addicted to each other",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Next in line",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Without Wits",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dance Around",
+        "label": "",
+        "release_date": "2024-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Till This Night",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Random House Party",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Surf off Malibu",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Paris for me",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pop-standards",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lavender and green",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Looped-tape excesses",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beam",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Brokers",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chateau",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "absence of something",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "off my back",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That Warms Your Planet",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Secret Chords",
+        "label": "",
+        "release_date": "2022-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paint The Sky",
+        "label": "",
+        "release_date": "2022-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From Under My Nose",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maddox",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Monty Hall",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flume",
+        "label": "",
+        "release_date": "2025-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2717883,
+    "name": "Steve Ditko",
+    "profile": "Steve is an American comic book artist and writer best known as the artist and co-creator, with Stan Lee, of the Marvel Comics heroes Spider-Man and Doctor Strange.\r\n\r\nDitko studied under Batman artist Jerry Robinson at the Cartoonist and Illustrators School in New York City. He began his professional career in 1953, working in the studio of Joe Simon and Jack Kirby, beginning as an inker and coming under the influence of artist Mort Meskin. During this time, he then began his long association with Charlton Comics, where he did work in the genres of science fiction, horror, and mystery. He also co-created the superhero Captain Atom in 1960.\r\n\r\nDuring the 1950s, Ditko also drew for Atlas Comics, the forerunner of Marvel Comics. He went on to contribute much significant work to Marvel, including co-creating Spider-Man, who would become the company's flagship character. Additionally, he created the supernatural hero Doctor Strange and made important contributions to the Hulk and Iron Man.",
+    "realname": "Stephen J. \"Steve\" Ditko",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "Cass, Dol"
+    ],
+    "labels": [
+      "Karussell",
+      "Universal"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dove Tales",
+    "mbid": "",
+    "listeners": 20914,
+    "playcount": 82947,
+    "listener_play_ratio": 3.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dove+Tales\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Yasumaru",
+      "The Pleasure Principle",
+      "It's Me.",
+      "Soft Sea",
+      "Milous"
+    ],
+    "top_tracks": [
+      {
+        "name": "Next in line",
+        "listeners": 7166,
+        "playcount": 14639
+      },
+      {
+        "name": "The Brokers",
+        "listeners": 4654,
+        "playcount": 14740
+      },
+      {
+        "name": "Dance Around",
+        "listeners": 3981,
+        "playcount": 10386
+      },
+      {
+        "name": "Chateau",
+        "listeners": 3315,
+        "playcount": 8248
+      },
+      {
+        "name": "Secret Chords",
+        "listeners": 3056,
+        "playcount": 10921
+      },
+      {
+        "name": "Cannonball",
+        "listeners": 2794,
+        "playcount": 8073
+      },
+      {
+        "name": "Without Wits",
+        "listeners": 1336,
+        "playcount": 2815
+      },
+      {
+        "name": "Beam",
+        "listeners": 1298,
+        "playcount": 3725
+      },
+      {
+        "name": "There Other Options",
+        "listeners": 856,
+        "playcount": 1633
+      },
+      {
+        "name": "Signature Cocktail",
+        "listeners": 689,
+        "playcount": 1184
+      }
+    ],
+    "url": "https://www.last.fm/music/Dove+Tales"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

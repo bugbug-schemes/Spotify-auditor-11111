@@ -1,0 +1,489 @@
+{
+  "artist_name": "Comet Blue",
+  "artist_id": "comet_blue",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:13:15.495688+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "46cff78d-d23f-4e01-886a-a099d99e7281",
+    "type": "Person",
+    "country": "NL",
+    "area": "Netherlands",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003471999",
+      "free streaming": "https://www.deezer.com/artist/9638300",
+      "purchase for download": "https://music.apple.com/us/artist/1062249616",
+      "social network": "https://www.facebook.com/CometBlueMusic",
+      "soundcloud": "https://soundcloud.com/cometblue",
+      "streaming": "https://tidal.com/artist/7414107",
+      "youtube music": "https://music.youtube.com/channel/UC-tnDXyN1dFBG8q7kFBy2lA"
+    },
+    "labels": [
+      "Big & Dirty",
+      "Be Yourself Music",
+      "Cost Plus Creative B.V."
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9638300,
+    "name": "Comet Blue",
+    "nb_fan": 2110,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/9638300",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6e973ea980af7126b4e3001650dbf6f6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Basto"
+    ],
+    "contributor_roles": {
+      "Basto": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Where The Clouds Go",
+      "For Alfie",
+      "The Scent Of New Days",
+      "Sand Between Our Fingers",
+      "One More Story",
+      "For You (feat. Comet Blue) (Club Mix)",
+      "Stars Light Up The Water",
+      "Watch The Sun",
+      "Sand Drawings",
+      "Spaceship",
+      "The First Touch",
+      "Shooting Star"
+    ],
+    "track_durations": [
+      148,
+      146,
+      142,
+      168,
+      140,
+      238,
+      136,
+      197,
+      120,
+      203,
+      166,
+      204
+    ],
+    "track_ranks": [
+      90912,
+      62092,
+      68735,
+      181801,
+      88044,
+      38886,
+      75775,
+      194515,
+      108095,
+      229457,
+      174972,
+      49035
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "single": 88
+    },
+    "albums": [
+      {
+        "title": "Random Thoughts",
+        "label": "",
+        "release_date": "2025-12-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Weightless",
+        "label": "",
+        "release_date": "2024-12-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "For Love Is",
+        "label": "",
+        "release_date": "2024-12-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ad Infinitum",
+        "label": "",
+        "release_date": "2024-11-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Equality",
+        "label": "",
+        "release_date": "2024-11-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "For All Of Us",
+        "label": "",
+        "release_date": "2024-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Songs Of Sundown",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Light From Your Eyes",
+        "label": "",
+        "release_date": "2023-05-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Songs Of Change",
+        "label": "",
+        "release_date": "2022-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "All I Could Want",
+        "label": "",
+        "release_date": "2021-12-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spring Will Come",
+        "label": "",
+        "release_date": "2021-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Songs We Never Got To Sing",
+        "label": "",
+        "release_date": "2021-01-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "In This Old Room",
+        "label": "",
+        "release_date": "2025-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Couldn't Stay",
+        "label": "",
+        "release_date": "2025-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Because Of This",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "To Whom It Might Concern",
+        "label": "",
+        "release_date": "2025-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Of A Certain Interest",
+        "label": "",
+        "release_date": "2025-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Brief Encounter",
+        "label": "",
+        "release_date": "2025-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mildly Entertaining",
+        "label": "",
+        "release_date": "2025-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Albeit Somewhat Strange",
+        "label": "",
+        "release_date": "2025-08-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ancient History",
+        "label": "",
+        "release_date": "2025-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nowhere Near",
+        "label": "",
+        "release_date": "2025-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Old Ways Of Tomorrow",
+        "label": "",
+        "release_date": "2025-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Far From The Madness",
+        "label": "",
+        "release_date": "2025-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Calmness Of Your Waters",
+        "label": "",
+        "release_date": "2025-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just Jericho",
+        "label": "",
+        "release_date": "2025-06-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Around The Long Bend",
+        "label": "",
+        "release_date": "2025-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If Anything Then What",
+        "label": "",
+        "release_date": "2025-05-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Five More Minutes",
+        "label": "",
+        "release_date": "2025-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Seconds Beating Slower",
+        "label": "",
+        "release_date": "2025-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Ali Toygar",
+      "Wilson Trouvé",
+      "Jiří Horák",
+      "Jordane Tumarinson",
+      "Peter Sandberg",
+      "Fabrizio Paterlini",
+      "Akira Kosemura",
+      "A R I Z O N A",
+      "Jef Martens",
+      "Edvard Kravchuk"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2223613,
+    "name": "Blue Comets",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Tadao Inoue",
+      "三原綱木",
+      "小田啓義",
+      "高橋健二",
+      "ジャッキー吉川"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 28,
+    "digital_only_releases": 11,
+    "total_releases": 39,
+    "formats": [
+      "",
+      "10\", Mono",
+      "2xCD, Comp, Mono",
+      "2xFlexi, 7\", Red",
+      "3xFlexi, 7\", Red",
+      "7\"",
+      "7\", EP",
+      "7\", Single",
+      "7\", Single, Mono",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Comp, Mono",
+      "CD, Comp",
+      "CDr, Comp, Unofficial",
+      "Flexi, 7\", S/Sided, Promo",
+      "LP, Comp",
+      "LP, Comp, Mono",
+      "LP, Comp, Unofficial",
+      "LP, Promo"
+    ],
+    "labels": [
+      "CBS",
+      "Chronicle",
+      "Columbia",
+      "Dolemite Records",
+      "Keibunsha",
+      "King Record",
+      "King Records",
+      "Not On Label",
+      "P-Vine Records",
+      "Power (2)",
+      "Solid Records (6)",
+      "Teichiku Records",
+      "Toshiba Records",
+      "Victor"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Comet Blue",
+    "mbid": "46cff78d-d23f-4e01-886a-a099d99e7281",
+    "listeners": 119813,
+    "playcount": 583259,
+    "listener_play_ratio": 4.87,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Comet+Blue\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "contemporary classical"
+    ],
+    "similar_artists": [
+      "Hideyuki Hashimoto",
+      "Niall Byrne",
+      "Chad Lawson",
+      "Carlos Cipa",
+      "Olivia Belli"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sand Between Our Fingers",
+        "listeners": 24666,
+        "playcount": 76576
+      },
+      {
+        "name": "Spaceship",
+        "listeners": 24164,
+        "playcount": 83323
+      },
+      {
+        "name": "One More Story",
+        "listeners": 23096,
+        "playcount": 111872
+      },
+      {
+        "name": "Where The Clouds Go",
+        "listeners": 16317,
+        "playcount": 51766
+      },
+      {
+        "name": "Watch The Sun",
+        "listeners": 12620,
+        "playcount": 43014
+      },
+      {
+        "name": "Stars Light Up The Water",
+        "listeners": 11251,
+        "playcount": 35334
+      },
+      {
+        "name": "I'll Be The One",
+        "listeners": 8987,
+        "playcount": 26406
+      },
+      {
+        "name": "Stay The Night",
+        "listeners": 8721,
+        "playcount": 30860
+      },
+      {
+        "name": "The Scent Of New Days",
+        "listeners": 8459,
+        "playcount": 19131
+      },
+      {
+        "name": "The Calm I Feel With You",
+        "listeners": 5695,
+        "playcount": 16054
+      }
+    ],
+    "url": "https://www.last.fm/music/Comet+Blue"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,121 @@
+{
+  "artist_name": "Amelie Tati",
+  "artist_id": "amelie_tati",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:56:04.379802+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Amelie Tati', got 'Amelie Jat'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Amelie Tati",
+    "mbid": "",
+    "listeners": 4501,
+    "playcount": 57125,
+    "listener_play_ratio": 12.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Amelie+Tati\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Moonlit Nursery Rhymes",
+      "All About The Children",
+      "Startwinklers",
+      "Lea Augustsson",
+      "Moa Schooner"
+    ],
+    "top_tracks": [
+      {
+        "name": "Marshmallow Tree",
+        "listeners": 2796,
+        "playcount": 35158
+      },
+      {
+        "name": "En Godnattsaga",
+        "listeners": 1300,
+        "playcount": 9704
+      },
+      {
+        "name": "Slumra Min Vän",
+        "listeners": 975,
+        "playcount": 7054
+      },
+      {
+        "name": "En Vacker Dröm",
+        "listeners": 743,
+        "playcount": 4967
+      },
+      {
+        "name": "Sweet dreams my darling",
+        "listeners": 63,
+        "playcount": 126
+      },
+      {
+        "name": "sov sött",
+        "listeners": 22,
+        "playcount": 47
+      },
+      {
+        "name": "Snart Du Drömmer",
+        "listeners": 18,
+        "playcount": 37
+      },
+      {
+        "name": "Gryning",
+        "listeners": 11,
+        "playcount": 26
+      },
+      {
+        "name": "Somna i Min Famn",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Never Forget",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Amelie+Tati"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

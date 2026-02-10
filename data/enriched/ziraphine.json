@@ -1,0 +1,223 @@
+{
+  "artist_name": "Ziraphine",
+  "artist_id": "ziraphine",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:08:48.114216+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 314011901,
+    "name": "Ziraphine",
+    "nb_fan": 0,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/314011901",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/80931ebb87ef7d7ff39867504e7462f7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Contra",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echoes Within",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightlong",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Reflection",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Below the Surface",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meridian",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Entities",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers at Dawn",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fading Into Lavender",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Field Without Edges",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Light that Lingers",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skyfold",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ziraphine",
+    "mbid": "",
+    "listeners": 40711,
+    "playcount": 205857,
+    "listener_play_ratio": 5.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ziraphine\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Alsephina",
+      "Tom Schiller",
+      "Somniare",
+      "Through Quiet Tides",
+      "Map Of My Mind"
+    ],
+    "top_tracks": [
+      {
+        "name": "Skyfold",
+        "listeners": 17789,
+        "playcount": 88138
+      },
+      {
+        "name": "Below the Surface",
+        "listeners": 16076,
+        "playcount": 67727
+      },
+      {
+        "name": "Meridian",
+        "listeners": 11297,
+        "playcount": 26001
+      },
+      {
+        "name": "Entities",
+        "listeners": 2599,
+        "playcount": 13287
+      },
+      {
+        "name": "Nightlong",
+        "listeners": 2495,
+        "playcount": 7137
+      },
+      {
+        "name": "The Light that Lingers",
+        "listeners": 1242,
+        "playcount": 3543
+      },
+      {
+        "name": "Contra",
+        "listeners": 3,
+        "playcount": 11
+      },
+      {
+        "name": "Echoes Within",
+        "listeners": 2,
+        "playcount": 10
+      },
+      {
+        "name": "Field Without Edges",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Silver Lining Hope",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Ziraphine"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

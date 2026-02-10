@@ -1,0 +1,140 @@
+{
+  "artist_name": "Ivan Malik",
+  "artist_id": "ivan_malik",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:18:25.074765+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Ivan Malik', got 'Ivan Malík'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4573639,
+    "name": "Ivan Malík",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "10\", Mono",
+      "LP, Album"
+    ],
+    "labels": [
+      "Supraphon"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ivan Malik",
+    "mbid": "",
+    "listeners": 38731,
+    "playcount": 160416,
+    "listener_play_ratio": 4.14,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ivan+Malik\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Remi Sinclair",
+      "Taganema",
+      "Ina Lawson",
+      "Frederico Morales",
+      "Jack Pelayo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mercury",
+        "listeners": 28922,
+        "playcount": 136641
+      },
+      {
+        "name": "Exhaler",
+        "listeners": 10485,
+        "playcount": 23318
+      },
+      {
+        "name": "Comme Nous",
+        "listeners": 196,
+        "playcount": 299
+      },
+      {
+        "name": "Iris",
+        "listeners": 48,
+        "playcount": 125
+      },
+      {
+        "name": "Rhikam",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Into The Frame",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Allein",
+        "listeners": 2,
+        "playcount": 6
+      },
+      {
+        "name": "Lonely Heart",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Vergessen",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Ivan Malik - Mercury",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Ivan+Malik"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

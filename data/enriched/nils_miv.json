@@ -1,0 +1,81 @@
+{
+  "artist_name": "Nils Miv",
+  "artist_id": "nils_miv",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:02:22.226625+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Nils Miv', got 'Nils Mey'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nils Miv",
+    "mbid": "",
+    "listeners": 1958,
+    "playcount": 22453,
+    "listener_play_ratio": 11.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nils+Miv\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mathilda Nuit",
+      "ZOE WELLS",
+      "Holy Day",
+      "Carey Martin",
+      "Magnus Silver"
+    ],
+    "top_tracks": [
+      {
+        "name": "Douce Harmonie",
+        "listeners": 1473,
+        "playcount": 11338
+      },
+      {
+        "name": "Tendresse",
+        "listeners": 685,
+        "playcount": 11115
+      }
+    ],
+    "url": "https://www.last.fm/music/Nils+Miv"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

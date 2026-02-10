@@ -1,0 +1,174 @@
+{
+  "artist_name": "Bishop Juice",
+  "artist_id": "bishop_juice",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:44:33.012484+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7b4223b3-91da-45fe-bc84-c0560e37fbda",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/2QgjgFue12ljosyqam1oAw",
+      "streaming": "https://music.apple.com/gb/artist/1847740712"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 351822342,
+    "name": "Bishop Juice",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/351822342",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/364252aa15c7dc98311c8fdb7b3ceb20/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Big Rims & Neon Signs"
+    ],
+    "track_durations": [
+      144
+    ],
+    "track_ranks": [
+      349917
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Bamboo Earrings",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back Seat Of My Jeep",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Barbershop Whispers",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Big Rims & Neon Signs",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1551617,
+    "name": "James Beard",
+    "profile": "Jay-Mac is a Multi Platinum Music producer/ writer/ singer/ film/ TV/ scorer, Jay-Mac  From a small town called Danville VA By a few places such as Flat Bush NY, Teaneck NJ, Lancing MI, St. Lo, La,etc He has worked with such artist & producers as Rick Ross, Juh Cure, Mavado, Sean Garrett, Bun B, (RIP)Pimp C, Jezzy, Nikki Manage, OJ The Juice Man, Guccie Mane, Yo Gotti, G-Fella, The Game, Nas, Poe, Joe, Nevia, 2Pac, The Outlawz, Too $hort, Keith Sweat, T.I., Gorilla Zoe, Monica, Joc, Brian M. Cox, Polo Tha Don,Akon & O, Jazzie Phe, Teddy Bishop, Eric Sermen, Dj Toomp, THE WOOD , HOUSEWIVES OF ATLANTA, DAME DASH SHOW, ECT.",
+    "realname": "James Beard",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 4,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "4xCD, Comp, RM",
+      "CD, Album",
+      "CD, Single, Promo",
+      "LP"
+    ],
+    "labels": [
+      "Joe Beard Productions",
+      "Quadromania",
+      "Rowdy Records, Capitol Records",
+      "SoBe Entertainment"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bishop Juice",
+    "mbid": "",
+    "listeners": 739,
+    "playcount": 1386,
+    "listener_play_ratio": 1.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bishop+Juice\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Léon Mirage",
+      "Onda Kura",
+      "The Swaying Journey",
+      "Azure Fade",
+      "Koula"
+    ],
+    "top_tracks": [
+      {
+        "name": "Big Rims & Neon Signs",
+        "listeners": 718,
+        "playcount": 1341
+      },
+      {
+        "name": "Barbershop Whispers",
+        "listeners": 27,
+        "playcount": 45
+      }
+    ],
+    "url": "https://www.last.fm/music/Bishop+Juice"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,76 @@
+{
+  "artist_name": "Luma Tide",
+  "artist_id": "luma_tide",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:17:58.685451+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Luma Tide', got 'Luna Tides'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Luma Tide",
+    "mbid": "",
+    "listeners": 390,
+    "playcount": 1377,
+    "listener_play_ratio": 3.53,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Luma+Tide\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Titouan Tash",
+      "Marlo Tendre",
+      "My Lullaby Stories",
+      "Henry Clein",
+      "Oliver Drift"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Sleepy Orchard",
+        "listeners": 390,
+        "playcount": 1377
+      }
+    ],
+    "url": "https://www.last.fm/music/Luma+Tide"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

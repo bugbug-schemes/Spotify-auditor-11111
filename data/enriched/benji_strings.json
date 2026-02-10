@@ -1,0 +1,205 @@
+{
+  "artist_name": "Benji Strings",
+  "artist_id": "benji_strings",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:35:50.259391+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 201516527,
+    "name": "Benji Strings",
+    "nb_fan": 4,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/201516527",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/185a1c82b98d52d44878b4d223d505a0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Storytelling"
+    ],
+    "track_durations": [
+      217
+    ],
+    "track_ranks": [
+      40137
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "You fooled me again",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonely Ride Through Christmas Nights",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Playing For Keeps",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Days of Longing",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "So That´s You",
+        "label": "",
+        "release_date": "2025-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Guess We Could",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Storytelling",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Too Late for Goodbyes",
+        "label": "",
+        "release_date": "2024-09-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In A Timely Manner",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coffee Break Blues",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Benji Strings",
+    "mbid": "",
+    "listeners": 21358,
+    "playcount": 51334,
+    "listener_play_ratio": 2.4,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Benji+Strings\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Urban Trio",
+      "Tree Nomads",
+      "Lunaros",
+      "Nordic Swing",
+      "Ada Harley"
+    ],
+    "top_tracks": [
+      {
+        "name": "Too Late for Goodbyes",
+        "listeners": 16753,
+        "playcount": 33505
+      },
+      {
+        "name": "Storytelling",
+        "listeners": 4325,
+        "playcount": 15592
+      },
+      {
+        "name": "In A Timely Manner",
+        "listeners": 506,
+        "playcount": 1122
+      },
+      {
+        "name": "Coffee Break Blues",
+        "listeners": 385,
+        "playcount": 715
+      },
+      {
+        "name": "I Guess We Could",
+        "listeners": 119,
+        "playcount": 257
+      },
+      {
+        "name": "You fooled me again",
+        "listeners": 100,
+        "playcount": 117
+      },
+      {
+        "name": "Lonely Ride Through Christmas Nights",
+        "listeners": 17,
+        "playcount": 25
+      },
+      {
+        "name": "So That´s You",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Benji+Strings"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

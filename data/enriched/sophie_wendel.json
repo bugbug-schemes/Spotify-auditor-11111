@@ -1,0 +1,151 @@
+{
+  "artist_name": "Sophie Wendel",
+  "artist_id": "sophie_wendel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:13:36.553055+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 82883722,
+    "name": "Sophie Wendel",
+    "nb_fan": 3,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/82883722",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ecae4c030bf97cf31a7195d49c49690e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "God Reveal Your Presence",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Donkey Carol",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Pluie",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Wing",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memories in Reverse",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Promises Kept",
+        "label": "",
+        "release_date": "2020-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sophie Wendel",
+    "mbid": "",
+    "listeners": 18566,
+    "playcount": 42983,
+    "listener_play_ratio": 2.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sophie+Wendel\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sigrid Asphaug",
+      "Lena Sievers",
+      "Adelinda",
+      "Moy Finneas",
+      "Alexander Panagopoulos"
+    ],
+    "top_tracks": [
+      {
+        "name": "Promises Kept",
+        "listeners": 14222,
+        "playcount": 30704
+      },
+      {
+        "name": "Donkey Carol",
+        "listeners": 4132,
+        "playcount": 11621
+      },
+      {
+        "name": "Van Gogh",
+        "listeners": 367,
+        "playcount": 657
+      },
+      {
+        "name": "Promises",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sophie+Wendel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

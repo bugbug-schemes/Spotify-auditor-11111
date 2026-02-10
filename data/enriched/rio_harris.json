@@ -1,0 +1,160 @@
+{
+  "artist_name": "Rio Harris",
+  "artist_id": "rio_harris",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:43:34.176781+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Rio Harris', got 'Dj Harris'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 149341,
+    "name": "Victor Gama",
+    "profile": "Victor Gama was born in Angola and currently lives between Luanda, Lisbon and Bogotá. His work of musical composition intersects areas as diverse as music, image, field recording, audiovisual installation and the design of contemporary musical instruments. Gama has been commissioned work by ensembles and institutions such as the Chicago Symphony Orchestra, the Kronos Performing Arts Association, the National Museums of Scotland, the Tenement Museum in New York, Prince Claus Fonds, the Amsterdam Fonds for the Arts, the Royal Opera House of London or the Kennedy Center in Washington DC.\r\n\r\nA graduate in Electronics Engineering and a Master's degree in Organology and Music Technology from the Sir John Cass College of Art, Architecture and Design at London Metropolitan University, he was recently guest artist at the Stanford University Center for Computer Research in Music and Acoustics in California and the MIT Center for Arts Science and Technology.\r\n\r\nHe composed for the [a=Kronos Quart",
+    "realname": "Victor Gama",
+    "social_urls": [
+      "http://www.victorgama.org/",
+      "https://victorgama.bandcamp.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 9,
+    "total_releases": 24,
+    "formats": [
+      "",
+      "25xFile, WAV, Comp",
+      "2xCD, Comp",
+      "2xCD, Promo, Smplr",
+      "CD",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "File, MP3, Comp, 320"
+    ],
+    "labels": [
+      "Calouste Gulbenkian Foundation",
+      "Calouste Gulbenkian Foundation, Wire Magazine",
+      "Gonzo Circus",
+      "Licht-Ung, 光の丘",
+      "Not On Label",
+      "Pangeiart",
+      "Pangeiart, Pangeiart",
+      "Sonic Arts Network",
+      "Tribute To John Peel",
+      "sitdownandance"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rio Harris",
+    "mbid": "",
+    "listeners": 3168,
+    "playcount": 39107,
+    "listener_play_ratio": 12.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rio+Harris\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ogden Enqvist",
+      "All About The Children",
+      "Philip berg",
+      "Greg Lattimore",
+      "Moonlit Nursery Rhymes"
+    ],
+    "top_tracks": [
+      {
+        "name": "Yellow & Blue",
+        "listeners": 2352,
+        "playcount": 26708
+      },
+      {
+        "name": "Dreamy Clouds",
+        "listeners": 502,
+        "playcount": 6449
+      },
+      {
+        "name": "Little Pumpkin",
+        "listeners": 355,
+        "playcount": 3611
+      },
+      {
+        "name": "Rabbit Ears",
+        "listeners": 173,
+        "playcount": 381
+      },
+      {
+        "name": "Sweetie Pie",
+        "listeners": 157,
+        "playcount": 1855
+      },
+      {
+        "name": "Honey Bunny",
+        "listeners": 33,
+        "playcount": 50
+      },
+      {
+        "name": "Rainbow Lullaby",
+        "listeners": 7,
+        "playcount": 19
+      },
+      {
+        "name": "Counting Sheep",
+        "listeners": 7,
+        "playcount": 15
+      },
+      {
+        "name": "Tiny Turtle",
+        "listeners": 4,
+        "playcount": 11
+      },
+      {
+        "name": "Sprinkles",
+        "listeners": 4,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Rio+Harris"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

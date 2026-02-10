@@ -1,0 +1,361 @@
+{
+  "artist_name": "Mandevilla",
+  "artist_id": "mandevilla",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:26:11.677814+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2f42320a-fac7-4d5a-a3d5-6cccd8fc3c8b",
+    "type": "",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/75927062",
+      "purchase for download": "https://music.apple.com/us/artist/1482929469",
+      "soundcloud": "https://soundcloud.com/mandevilla-music",
+      "streaming": "https://tidal.com/artist/17060532",
+      "youtube music": "https://music.youtube.com/channel/UCmoDmnpFFUA2KqoAuB9s9vw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 75927062,
+    "name": "Mandevilla",
+    "nb_fan": 36,
+    "nb_album": 22,
+    "link": "https://www.deezer.com/artist/75927062",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6582b5bd118915ca6095cff177f634c1/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "A Time For Love",
+      "The Midnight Sun Will Never Set",
+      "Sno Peas",
+      "Curl Up Under A Blanket",
+      "Winchester In Apple Blossom Time",
+      "East Of Eden",
+      "Reutlingen",
+      "Views Of Dawn",
+      "Someone to watch over me"
+    ],
+    "track_durations": [
+      308,
+      210,
+      172,
+      223,
+      198,
+      227,
+      283,
+      293,
+      258
+    ],
+    "track_ranks": [
+      74325,
+      64286,
+      69398,
+      31606,
+      114080,
+      7840,
+      42534,
+      160999,
+      38866
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "Maiden Voyage",
+        "label": "",
+        "release_date": "2021-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "On A Misty Night",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Driftwood Dreams",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Taking A Chance On Love",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Midnight Sun Will Never Set",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forever More",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amorgos",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Ideal",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Curl Up Under A Blanket",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Sight for Sore Eyes",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pat Martino",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "East Of Eden",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sometime Ago",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Body and Soul",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me And You",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reutlingen",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Views Of Dawn",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meadows in May",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Farewell",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nardis",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Have A Dream",
+        "label": "",
+        "release_date": "2019-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someone to watch over me",
+        "label": "",
+        "release_date": "2019-08-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Hara Noda",
+      "Bladverk Band",
+      "Magpie Jazz Trio",
+      "Scott Hamilton",
+      "Ennio Máno",
+      "Oakwood Station",
+      "Denis Solee",
+      "Norberg",
+      "The Groove Trio",
+      "Wayne Shorter"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mandevilla",
+    "mbid": "2f42320a-fac7-4d5a-a3d5-6cccd8fc3c8b",
+    "listeners": 114153,
+    "playcount": 464201,
+    "listener_play_ratio": 4.07,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mandevilla\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Sparrow & Bird",
+      "The Belleville Band",
+      "CMC 3",
+      "Måns & Dotter",
+      "Tate Jackson Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Winchester In Apple Blossom Time",
+        "listeners": 43282,
+        "playcount": 123022
+      },
+      {
+        "name": "Views Of Dawn",
+        "listeners": 30070,
+        "playcount": 68833
+      },
+      {
+        "name": "A Time For Love",
+        "listeners": 15696,
+        "playcount": 48683
+      },
+      {
+        "name": "Sno Peas",
+        "listeners": 14847,
+        "playcount": 38379
+      },
+      {
+        "name": "Farewell",
+        "listeners": 13831,
+        "playcount": 32576
+      },
+      {
+        "name": "Someone to watch over me",
+        "listeners": 13750,
+        "playcount": 38216
+      },
+      {
+        "name": "My Ideal",
+        "listeners": 12548,
+        "playcount": 25917
+      },
+      {
+        "name": "Reutlingen",
+        "listeners": 9676,
+        "playcount": 21625
+      },
+      {
+        "name": "The Midnight Sun Will Never Set",
+        "listeners": 8947,
+        "playcount": 18217
+      },
+      {
+        "name": "Body and Soul",
+        "listeners": 5471,
+        "playcount": 10015
+      }
+    ],
+    "url": "https://www.last.fm/music/Mandevilla"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

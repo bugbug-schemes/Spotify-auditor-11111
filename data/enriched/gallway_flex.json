@@ -1,0 +1,213 @@
+{
+  "artist_name": "Gallway Flex",
+  "artist_id": "gallway_flex",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:47:50.785153+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 91740802,
+    "name": "Gallway Flex",
+    "nb_fan": 13,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/91740802",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0c8133f7ab3dedfd9ea5513494b7cd44/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Lay Low",
+      "Moments of Clarity"
+    ],
+    "track_durations": [
+      186,
+      193
+    ],
+    "track_ranks": [
+      54466,
+      112654
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Glowfall",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tranquil Trails",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silence of the Cosmos",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Garden Whispers",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fragile Minds",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get Going",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lay Low",
+        "label": "",
+        "release_date": "2020-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moments of Clarity",
+        "label": "",
+        "release_date": "2020-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crazy For You",
+        "label": "",
+        "release_date": "2020-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gallway Flex",
+    "mbid": "",
+    "listeners": 24915,
+    "playcount": 72937,
+    "listener_play_ratio": 2.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gallway+Flex\">Read more on Last.fm</a>",
+    "tags": [
+      "lounge"
+    ],
+    "similar_artists": [
+      "Cratouille",
+      "Cedric Mercute",
+      "Permaculti",
+      "lightcore",
+      "Casaluna"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moments of Clarity",
+        "listeners": 10763,
+        "playcount": 35142
+      },
+      {
+        "name": "Lay Low",
+        "listeners": 5597,
+        "playcount": 9944
+      },
+      {
+        "name": "Tranquil Trails",
+        "listeners": 3240,
+        "playcount": 8327
+      },
+      {
+        "name": "Get Going",
+        "listeners": 2911,
+        "playcount": 8053
+      },
+      {
+        "name": "Glowfall",
+        "listeners": 2282,
+        "playcount": 5986
+      },
+      {
+        "name": "Fragile Minds",
+        "listeners": 2109,
+        "playcount": 5114
+      },
+      {
+        "name": "Common Goals",
+        "listeners": 69,
+        "playcount": 184
+      },
+      {
+        "name": "Crazy For You",
+        "listeners": 62,
+        "playcount": 167
+      },
+      {
+        "name": "Garden Whispers",
+        "listeners": 7,
+        "playcount": 13
+      },
+      {
+        "name": "Fragile Minds (2023)",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Gallway+Flex"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

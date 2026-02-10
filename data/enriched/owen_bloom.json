@@ -1,0 +1,151 @@
+{
+  "artist_name": "Owen Bloom",
+  "artist_id": "owen_bloom",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:18:22.474030+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 350185782,
+    "name": "Owen Bloom",
+    "nb_fan": 0,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/350185782",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "White Drift Mode",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Among Stars",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Startrail",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5494529,
+    "name": "Cruel Bloom",
+    "profile": "Canadian post-hardcore / noise rock band from Owen Sound, Ontario.",
+    "realname": "",
+    "social_urls": [
+      "https://theonlybandnever.bandcamp.com/",
+      "https://de-de.facebook.com/partysmasherofficialband/"
+    ],
+    "members": [
+      "Matthew Taylor (5)",
+      "Sean Noble",
+      "Richard Engelhardt",
+      "Russ Walsh"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 4,
+    "total_releases": 5,
+    "formats": [
+      "18xFile, FLAC, Comp",
+      "3xFile, MP3, EP, 320",
+      "6xFile, MP3, EP, 320",
+      "CD, EP",
+      "Cass, Comp, Promo"
+    ],
+    "labels": [
+      "3 Nines Compact Cassettes",
+      "Not On Label (Cruel Bloom Self-released)",
+      "Unsigned Not Unheard"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Owen Bloom",
+    "mbid": "",
+    "listeners": 2785,
+    "playcount": 4649,
+    "listener_play_ratio": 1.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Owen+Bloom\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Furomerald",
+      "Lún",
+      "Altered Echoes",
+      "elveper",
+      "Aeris Holt"
+    ],
+    "top_tracks": [
+      {
+        "name": "Startrail",
+        "listeners": 2759,
+        "playcount": 4587
+      },
+      {
+        "name": "Among Stars",
+        "listeners": 45,
+        "playcount": 62
+      }
+    ],
+    "url": "https://www.last.fm/music/Owen+Bloom"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

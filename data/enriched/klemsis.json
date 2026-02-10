@@ -1,0 +1,432 @@
+{
+  "artist_name": "Klemsis",
+  "artist_id": "klemsis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:50:23.942863+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3486e852-de26-4376-abad-d5d44d313d41",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "hip hop",
+      "instrumental",
+      "chillwave",
+      "lo-fi",
+      "boom bap",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "downtempo"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/85372152",
+      "purchase for download": "https://music.apple.com/us/artist/1500809897",
+      "streaming": "https://tidal.com/artist/45167121"
+    },
+    "labels": [
+      "Lofi Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 85372152,
+    "name": "klemsis",
+    "nb_fan": 20,
+    "nb_album": 26,
+    "link": "https://www.deezer.com/artist/85372152",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/377f270b7093b2b24d9c4302d94ced5f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Aboueb",
+      "J'san",
+      "Nothingtosay"
+    ],
+    "contributor_roles": {
+      "Nothingtosay": [
+        "Main"
+      ],
+      "Aboueb": [
+        "Main"
+      ],
+      "J'san": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Dreaming",
+      "Druid Guilds",
+      "No Return",
+      "Waterfall",
+      "Midnight Thoughts",
+      "December Wishes",
+      "Palm Beach",
+      "Snowy Tree",
+      "Blue Lagoon",
+      "Raven's Tale",
+      "spooky dream",
+      "Lost Cemetery",
+      "Roadtrip"
+    ],
+    "track_durations": [
+      110,
+      131,
+      189,
+      150,
+      165,
+      134,
+      132,
+      163,
+      197,
+      173,
+      114,
+      125,
+      107
+    ],
+    "track_ranks": [
+      442337,
+      339801,
+      315079,
+      290597,
+      292165,
+      41399,
+      150742,
+      45830,
+      78468,
+      103253,
+      61934,
+      91385,
+      121777
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 26
+    },
+    "albums": [
+      {
+        "title": "Campfire",
+        "label": "",
+        "release_date": "2026-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreaming",
+        "label": "",
+        "release_date": "2025-12-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamscapes",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "School Bus",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Graph paper",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Riverside (feat. madj)",
+        "label": "",
+        "release_date": "2025-09-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Juillet, c'est l'heure",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Afternoon at the lake (feat. Aboueb)",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wild Holidays",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Melt Body",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forest Village",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "tiny forest",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "bike ride",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "tea shop",
+        "label": "",
+        "release_date": "2025-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Breeze",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MISS U",
+        "label": "",
+        "release_date": "2024-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Milky Way",
+        "label": "",
+        "release_date": "2023-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Motivation",
+        "label": "",
+        "release_date": "2023-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon & Sun",
+        "label": "",
+        "release_date": "2022-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crush",
+        "label": "",
+        "release_date": "2022-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nitro Love",
+        "label": "",
+        "release_date": "2022-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Long way (feat. Hoag's)",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moves",
+        "label": "",
+        "release_date": "2021-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glam",
+        "label": "",
+        "release_date": "2021-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "West",
+        "label": "",
+        "release_date": "2021-08-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "HAGRABAD",
+        "label": "",
+        "release_date": "2021-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11386961,
+    "name": "Klemsis",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 8,
+    "digital_only_releases": 2,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "2x12\", Comp, Ltd, Gre",
+      "2xLP, Comp, Ltd",
+      "2xLP, Comp, Ltd, Dar",
+      "2xLP, Comp, Ltd, Num, 180",
+      "2xLP, Comp, Ltd, Tra",
+      "2xLP, Ltd, Num, Sta",
+      "3x12\", Comp, Ltd, Bla",
+      "LP, Comp, Ltd, Num, Tra"
+    ],
+    "labels": [
+      "Lofi Girl",
+      "Lofi Records (4)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "KLEMSIS",
+    "mbid": "",
+    "listeners": 16165,
+    "playcount": 39183,
+    "listener_play_ratio": 2.42,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/KLEMSIS\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "pines & pines",
+      "evndl",
+      "Vihta",
+      "Bashful",
+      "meadowy"
+    ],
+    "top_tracks": [
+      {
+        "name": "Palm Beach",
+        "listeners": 8240,
+        "playcount": 16185
+      },
+      {
+        "name": "Dreaming",
+        "listeners": 4656,
+        "playcount": 8058
+      },
+      {
+        "name": "Druid Guilds",
+        "listeners": 2800,
+        "playcount": 8343
+      },
+      {
+        "name": "Lost Cemetery",
+        "listeners": 1405,
+        "playcount": 4052
+      },
+      {
+        "name": "spooky dream",
+        "listeners": 550,
+        "playcount": 1552
+      },
+      {
+        "name": "Sherbet Land",
+        "listeners": 59,
+        "playcount": 92
+      },
+      {
+        "name": "Gentle Breeze",
+        "listeners": 45,
+        "playcount": 62
+      },
+      {
+        "name": "Crush",
+        "listeners": 37,
+        "playcount": 199
+      },
+      {
+        "name": "Nitro love",
+        "listeners": 26,
+        "playcount": 79
+      },
+      {
+        "name": "Long way",
+        "listeners": 21,
+        "playcount": 72
+      }
+    ],
+    "url": "https://www.last.fm/music/KLEMSIS"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

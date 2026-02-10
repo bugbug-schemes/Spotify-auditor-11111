@@ -1,0 +1,81 @@
+{
+  "artist_name": "morgondis",
+  "artist_id": "morgondis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:25:37.044943+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'morgondis', got 'Morgondimma'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "morgondis",
+    "mbid": "",
+    "listeners": 859,
+    "playcount": 2345,
+    "listener_play_ratio": 2.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/morgondis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Festooned",
+      "Star Arbiter",
+      "Wiilo",
+      "Elliot Dive",
+      "Vemedis"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mindara",
+        "listeners": 859,
+        "playcount": 2343
+      },
+      {
+        "name": "Lines 73.95 - 78.1hz",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/morgondis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

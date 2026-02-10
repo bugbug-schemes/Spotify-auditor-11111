@@ -1,0 +1,545 @@
+{
+  "artist_name": "CrazyJaZz",
+  "artist_id": "crazyjazz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:16:17.457817+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "27cdc210-0b78-4f04-bf64-464d8d06bdf7",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "lo-fi",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "chillwave",
+      "downtempo",
+      "instrumental",
+      "boom bap"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://kushgongvinyl.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6511708",
+      "free streaming": "https://www.deezer.com/artist/14902093",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/crazyjazz/4266677",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/crazyjazz/4266677",
+      "youtube music": "https://music.youtube.com/channel/UCgOF1NjSq0bq9M_khkDw-aw"
+    },
+    "labels": [
+      "okwow",
+      "flawsome",
+      "Aviary Day",
+      "Acantharea",
+      "The Jazz Hop Café",
+      "urbanundergrounds",
+      "TheMusicalcurrent",
+      "Vinyl Digital",
+      "The MusicalCurrent Records",
+      "Oiyo Records",
+      "KICKER®",
+      "United Common Records",
+      "Chill Beats Records",
+      "Kush Gong Vinyl",
+      "Mutombo Records",
+      "Aviary Bridge Records",
+      "Lofi Jazz Records",
+      "Chill Select"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14902093,
+    "name": "Crazyjazz",
+    "nb_fan": 156,
+    "nb_album": 100,
+    "link": "https://www.deezer.com/artist/14902093",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a78e79094caf35ca87fad1c8f088f293/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Charlie Calz Beats",
+      "Classik",
+      "Oilix"
+    ],
+    "contributor_roles": {
+      "Charlie Calz Beats": [
+        "Main"
+      ],
+      "Oilix": [
+        "Main"
+      ],
+      "Classik": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Piano D'JaZz",
+      "Late Nights",
+      "Do Not Stop",
+      "Jazz Thrills",
+      "Rain of Jazz",
+      "Far Ahead",
+      "Pense à Toi",
+      "Try to Do",
+      "Pastimes",
+      "Under the Sun",
+      "Jazz takes on",
+      "Romance",
+      "Blue Eyes",
+      "Forget the Past",
+      "Carefree",
+      "Happiness for All",
+      "One of Those Feelings",
+      "Lueur",
+      "Souvient Toi",
+      "Muggsy Bogues",
+      "Man At Heart",
+      "Shine Star",
+      "Move For Christmas",
+      "Best Time",
+      "90's Yeahh"
+    ],
+    "track_durations": [
+      120,
+      105,
+      225,
+      130,
+      127,
+      164,
+      128,
+      214,
+      212,
+      184,
+      151,
+      119,
+      127,
+      137,
+      127,
+      224,
+      156,
+      130,
+      99,
+      180,
+      134,
+      167,
+      138,
+      152,
+      160
+    ],
+    "track_ranks": [
+      253822,
+      292531,
+      73752,
+      155053,
+      37388,
+      69670,
+      31212,
+      90230,
+      66390,
+      37033,
+      64812,
+      31862,
+      40856,
+      103462,
+      68714,
+      15640,
+      159076,
+      23855,
+      83160,
+      98364,
+      102844,
+      32783,
+      26480,
+      65521,
+      26632
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "ep": 37,
+      "single": 60
+    },
+    "albums": [
+      {
+        "title": "Tail Slate",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Be Happy",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Summer Jazz",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "My Best Years 90's",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Come Back In The Best Years, 90's",
+        "label": "",
+        "release_date": "2025-12-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Christmas Jazz",
+        "label": "",
+        "release_date": "2025-12-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Good Memory",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Walks Alone",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Evil Pumpkin",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Work, Work, Work",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Halloween Party",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Chosen Well",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Détente",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Simply Jazz",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "One Life",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Jazz Backwards",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sweet Jazzy",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sweet Lovers",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tenderly Jazz",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Smooth Jazz of Happiness",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The 90's in Us",
+        "label": "",
+        "release_date": "2024-01-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Le Bonheur",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Hot Summer",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Good Time",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Give a Meaning",
+        "label": "",
+        "release_date": "2022-01-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Along The Way",
+        "label": "",
+        "release_date": "2021-12-14",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Carefree",
+        "label": "",
+        "release_date": "2021-12-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Between Two Seas",
+        "label": "",
+        "release_date": "2021-10-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A little jaZz air",
+        "label": "",
+        "release_date": "2021-09-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dans le ciel",
+        "label": "",
+        "release_date": "2021-08-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": [
+      "High John",
+      "Bertram Kvist",
+      "Glimlip",
+      "Oaty.",
+      "Oilix",
+      "Hans Hu$tle",
+      "Loland",
+      "Dualizm",
+      "Myríad",
+      "coldbrew"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6511708,
+    "name": "CrazyJaZz",
+    "profile": "beat maker from Paris/France",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 7,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "10\"",
+      "14xFile, MP3, Mixtape, 320",
+      "2xFile, FLAC",
+      "2xLP, Album, Ltd",
+      "2xLP, Comp",
+      "4xFile, MP3, 320",
+      "Cass, EP, Ltd, Lig",
+      "File, FLAC, Single, 16 ",
+      "File, MP3, Single, 320",
+      "Lathe, 7\", Ltd, Num"
+    ],
+    "labels": [
+      "Aviary Bridge Records",
+      "Dezi Belle Records",
+      "Effortless Audio",
+      "Kush Gong Vinyl",
+      "Mutombo Records",
+      "Not On Label (AzMattic Self-released)",
+      "Not On Label (Classik Self-released)",
+      "The Jazz Hop Cafe",
+      "Vinyl Digital",
+      "Vinyl Digital GmbH"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "CrazyJazz",
+    "mbid": "",
+    "listeners": 116340,
+    "playcount": 569127,
+    "listener_play_ratio": 4.89,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/CrazyJazz\">Read more on Last.fm</a>",
+    "tags": [
+      "chillhop",
+      "instrumental",
+      "Hip-Hop",
+      "instrumental hip-hop",
+      "france"
+    ],
+    "similar_artists": [
+      "Pabzzz",
+      "Oilix",
+      "Mister Decaf",
+      "Flughand",
+      "yeyts."
+    ],
+    "top_tracks": [
+      {
+        "name": "Do Not Stop",
+        "listeners": 15659,
+        "playcount": 38551
+      },
+      {
+        "name": "Forget the Past",
+        "listeners": 12466,
+        "playcount": 32472
+      },
+      {
+        "name": "Romance",
+        "listeners": 10649,
+        "playcount": 21569
+      },
+      {
+        "name": "Pastimes",
+        "listeners": 10438,
+        "playcount": 23090
+      },
+      {
+        "name": "Happiness",
+        "listeners": 9365,
+        "playcount": 21778
+      },
+      {
+        "name": "Nice Day",
+        "listeners": 8134,
+        "playcount": 18302
+      },
+      {
+        "name": "Souvient Toi",
+        "listeners": 7874,
+        "playcount": 20010
+      },
+      {
+        "name": "Reflet",
+        "listeners": 7617,
+        "playcount": 16835
+      },
+      {
+        "name": "Pense à Toi",
+        "listeners": 7544,
+        "playcount": 16434
+      },
+      {
+        "name": "Mood",
+        "listeners": 7518,
+        "playcount": 13539
+      }
+    ],
+    "url": "https://www.last.fm/music/CrazyJazz"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

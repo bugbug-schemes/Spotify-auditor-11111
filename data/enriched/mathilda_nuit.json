@@ -1,0 +1,150 @@
+{
+  "artist_name": "Mathilda Nuit",
+  "artist_id": "mathilda_nuit",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:33:03.893183+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 189370707,
+    "name": "Mathilda Nuit",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/189370707",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/dd23232924634064e1b30dd0ed157bad/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Over the Daisy Fields",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clara's Mermaid Dreams",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naptime for Bunny Frances",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naptime for Mom and Dad",
+        "label": "",
+        "release_date": "2024-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Moon and Sun",
+        "label": "",
+        "release_date": "2023-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cozy Kitten Cuddle",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mrs Frog's Daydream",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baby Swan Dreams",
+        "label": "",
+        "release_date": "2023-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mathilda Nuit",
+    "mbid": "",
+    "listeners": 755,
+    "playcount": 12320,
+    "listener_play_ratio": 16.32,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mathilda+Nuit\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "ZOE WELLS",
+      "A. Rustique",
+      "Magnus Silver",
+      "Ollie The Bear",
+      "Kenau Woods"
+    ],
+    "top_tracks": [
+      {
+        "name": "Naptime for Bunny Frances",
+        "listeners": 755,
+        "playcount": 12320
+      }
+    ],
+    "url": "https://www.last.fm/music/Mathilda+Nuit"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

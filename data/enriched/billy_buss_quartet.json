@@ -1,0 +1,198 @@
+{
+  "artist_name": "Billy Buss Quartet",
+  "artist_id": "billy_buss_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:43:47.742719+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 254180312,
+    "name": "Billy Buss Quartet",
+    "nb_fan": 15,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/254180312",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c58ef71ffc162617e7d120337fc39249/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Elegy",
+      "Little Birdy Bean",
+      "Alma",
+      "Only You In My Heart"
+    ],
+    "track_durations": [
+      231,
+      195,
+      264,
+      170
+    ],
+    "track_ranks": [
+      37006,
+      203705,
+      7341,
+      33454
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Only You In My Heart",
+        "label": "",
+        "release_date": "2024-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alma",
+        "label": "",
+        "release_date": "2024-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little Birdy Bean",
+        "label": "",
+        "release_date": "2024-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mystic Melancholy",
+        "label": "",
+        "release_date": "2024-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlit Serenade",
+        "label": "",
+        "release_date": "2024-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elegy",
+        "label": "",
+        "release_date": "2024-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velvet",
+        "label": "",
+        "release_date": "2023-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Billy Buss Quartet",
+    "mbid": "",
+    "listeners": 29738,
+    "playcount": 85024,
+    "listener_play_ratio": 2.86,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Billy+Buss+Quartet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nicholas Fischer",
+      "Jacky Bonnet Group",
+      "The Smooth Sounds",
+      "Jules Moreau",
+      "Stewart Park Quartet"
+    ],
+    "top_tracks": [
+      {
+        "name": "Elegy",
+        "listeners": 13197,
+        "playcount": 28479
+      },
+      {
+        "name": "Little Birdy Bean",
+        "listeners": 11380,
+        "playcount": 23797
+      },
+      {
+        "name": "Only You In My Heart",
+        "listeners": 9556,
+        "playcount": 20327
+      },
+      {
+        "name": "Mystic Melancholy",
+        "listeners": 3576,
+        "playcount": 6327
+      },
+      {
+        "name": "Alma",
+        "listeners": 3022,
+        "playcount": 5986
+      },
+      {
+        "name": "Moonlit Serenade",
+        "listeners": 24,
+        "playcount": 77
+      },
+      {
+        "name": "Velvet",
+        "listeners": 8,
+        "playcount": 17
+      },
+      {
+        "name": "Sustenuto",
+        "listeners": 7,
+        "playcount": 8
+      },
+      {
+        "name": "Crepuscular Rays",
+        "listeners": 5,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Billy+Buss+Quartet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,141 @@
+{
+  "artist_name": "hey daisy",
+  "artist_id": "hey_daisy",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:19:16.530598+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 289936181,
+    "name": "hey daisy",
+    "nb_fan": 149,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/289936181",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9b49a393d1769ae0fd5e3f7435ff9c3a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Loud Luxury",
+      "Nicky Youre"
+    ],
+    "contributor_roles": {
+      "Nicky Youre": [
+        "Main"
+      ],
+      "Loud Luxury": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Sunroof",
+      "Sunroof (Acoustic)",
+      "Sunroof (Loud Luxury Remix)"
+    ],
+    "track_durations": [
+      163,
+      135,
+      173
+    ],
+    "track_ranks": [
+      751242,
+      631211,
+      290902
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Sunroof (Remixes)",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hey Daisy",
+    "mbid": "",
+    "listeners": 15,
+    "playcount": 45,
+    "listener_play_ratio": 3.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hey+Daisy\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "bees & honey",
+      "Blast Off Music",
+      "Swae Lee"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sunroof",
+        "listeners": 11,
+        "playcount": 34
+      },
+      {
+        "name": "COMO FICAR RICO NO HEARTOPIA RÁPIDO! (O Segredo que Ninguém Te Conta)",
+        "listeners": 1,
+        "playcount": 8
+      },
+      {
+        "name": "Z",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Heartopia para Iniciantes (Não caia nas armadilhas!)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "É REAL! My Little Pony está chegando ao Heartopia! (Tudo o que sabemos)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Hey+Daisy"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

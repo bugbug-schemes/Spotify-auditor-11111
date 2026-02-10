@@ -1,0 +1,209 @@
+{
+  "artist_name": "Cokobi",
+  "artist_id": "cokobi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:12:02.980583+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 114800102,
+    "name": "Cokobi",
+    "nb_fan": 8,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/114800102",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/396d4916487dbb6521c45518ba088c53/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Low Sun",
+        "label": "",
+        "release_date": "2026-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echo of Ease",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Retreat",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ascend",
+        "label": "",
+        "release_date": "2024-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nightgrove",
+        "label": "",
+        "release_date": "2023-10-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blissful Roam",
+        "label": "",
+        "release_date": "2023-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamo 4004",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiescent",
+        "label": "",
+        "release_date": "2022-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepy Journey",
+        "label": "",
+        "release_date": "2020-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Habitable Worlds",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cokobi",
+    "mbid": "",
+    "listeners": 41876,
+    "playcount": 261332,
+    "listener_play_ratio": 6.24,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. This could be because of a deal within a streaming service, where the musician is anonymous, or the name is just one of several psuedonyms used by a music producer. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"https://www.la",
+    "tags": [],
+    "similar_artists": [
+      "Marie Protivová",
+      "Lorelle Paredes",
+      "Dream Flows",
+      "Eric Ardouin",
+      "Serene & Pax"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sleepy Journey",
+        "listeners": 35270,
+        "playcount": 241462
+      },
+      {
+        "name": "Ascend",
+        "listeners": 6842,
+        "playcount": 18202
+      },
+      {
+        "name": "Echo of Ease",
+        "listeners": 216,
+        "playcount": 571
+      },
+      {
+        "name": "Toi 700 D",
+        "listeners": 120,
+        "playcount": 663
+      },
+      {
+        "name": "Quiescent",
+        "listeners": 119,
+        "playcount": 178
+      },
+      {
+        "name": "Dreamo 4004",
+        "listeners": 71,
+        "playcount": 152
+      },
+      {
+        "name": "Habitable Worlds",
+        "listeners": 44,
+        "playcount": 79
+      },
+      {
+        "name": "Blissful Roam",
+        "listeners": 8,
+        "playcount": 9
+      },
+      {
+        "name": "Sleepy Journey (Deep Sleep)",
+        "listeners": 3,
+        "playcount": 8
+      },
+      {
+        "name": "Nightgrove",
+        "listeners": 3,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Cokobi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

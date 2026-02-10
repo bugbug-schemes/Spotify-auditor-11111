@@ -1,0 +1,362 @@
+{
+  "artist_name": "Andy Miller Group",
+  "artist_id": "andy_miller_group",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:00:29.995449+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dcc32254-b867-46d1-83ee-301112fe116c",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183267587",
+      "purchase for download": "https://music.apple.com/us/artist/1647858527",
+      "soundcloud": "https://soundcloud.com/andymillergroup-music",
+      "streaming": "https://tidal.com/artist/34513220",
+      "youtube music": "https://music.youtube.com/channel/UCg11dYGks19Ry0_hrUuC-6g"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183267587,
+    "name": "Andy Miller Group",
+    "nb_fan": 13,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/183267587",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/845d05dfc2456d0a5554f03f4f8892ca/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Can't Help Lovin' Dat Man",
+      "I Thought About Us",
+      "Have Yourself A Merry Little Christmas",
+      "Strawberry Snow Cones For Two",
+      "Coat and Hat",
+      "Flying Over",
+      "Mint juleps with you"
+    ],
+    "track_durations": [
+      196,
+      237,
+      227,
+      214,
+      198,
+      178,
+      210
+    ],
+    "track_ranks": [
+      40204,
+      62710,
+      82076,
+      32625,
+      26147,
+      18720,
+      10111
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "The Middle Man",
+        "label": "",
+        "release_date": "2023-05-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Getting Out Of Town",
+        "label": "",
+        "release_date": "2023-02-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sweetheart",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Picture Frame",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mint juleps with you",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just let it slide",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coat and Hat",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flying Over",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strawberry Snow Cones For Two",
+        "label": "",
+        "release_date": "2023-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Street At Night",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On My Easel",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Got It Bad",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Underbart Är Kort",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Now",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Thought About Us",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lake Natron",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stella By Starlight",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Christmas With You",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "As Time Goes By",
+        "label": "",
+        "release_date": "2021-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Leave Me Alone",
+        "label": "",
+        "release_date": "2021-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's All Right with Me",
+        "label": "",
+        "release_date": "2021-04-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2068131,
+    "name": "Jackie Miller",
+    "profile": "American singer and musician.\r\nBorn: August 13, 1937 Spokane, Washington.\r\n\r\nHaving started at age 15 in music as a church organist, then off to college at BYU, Jackie moved to southern California and joined the trio \"The Randy Sparks 3\".  They eventually became the Grammy Award winning \"The New Christy Minstrels\", and soon became regulars on \"The Andy Williams Show\".  As an NCM, Jackie sang with many well-known entertainers such as Sammy Davis Jr., Tennessee Ernie Ford, Kate Smith, Carol Channing, and others.  With the Minstrels, she had the honor of performing at the White House for President Johnson, Carnegie Hall with Alan Sherman, The Hollywood Bowl, and accompanied Al Hirt on her banjo at the Greek Theatre in Hollywood, California.\r\nA few years later, she and fellow NCM member, Gayle Caldwell, left the Minstrels to form the well known duo, \"Jackie and Gayle\". In their 2-year career together, they made 173 television appearances.  They were regulars on ABC's Shindig, The John Davi",
+    "realname": "Jacqueline Miller",
+    "social_urls": [
+      "https://www.jackieandgary.com/home",
+      "https://www.imdb.com/name/nm0588519/bio/?ref_=nm_ql_1"
+    ],
+    "members": [],
+    "groups": [
+      "The Johnny Mann Singers",
+      "The New Christy Minstrels",
+      "Jackie & Gayle"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 9,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "7\", Single"
+    ],
+    "labels": [
+      "Ramco"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Andy Miller Group",
+    "mbid": "dcc32254-b867-46d1-83ee-301112fe116c",
+    "listeners": 59950,
+    "playcount": 221131,
+    "listener_play_ratio": 3.69,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "The Boston Four",
+      "John B. Stewart",
+      "The City of Birches",
+      "Geeder",
+      "Andy Goodman"
+    ],
+    "top_tracks": [
+      {
+        "name": "If You Say Goodbye",
+        "listeners": 30372,
+        "playcount": 74318
+      },
+      {
+        "name": "Can't Help Lovin' Dat Man",
+        "listeners": 17811,
+        "playcount": 40787
+      },
+      {
+        "name": "I Thought About Us",
+        "listeners": 17768,
+        "playcount": 42281
+      },
+      {
+        "name": "Strawberry Snow Cones For Two",
+        "listeners": 8858,
+        "playcount": 21795
+      },
+      {
+        "name": "Flying Over",
+        "listeners": 6565,
+        "playcount": 14340
+      },
+      {
+        "name": "In the Street At Night",
+        "listeners": 5058,
+        "playcount": 12952
+      },
+      {
+        "name": "Lake Natron",
+        "listeners": 3642,
+        "playcount": 8169
+      },
+      {
+        "name": "Underbart Är Kort",
+        "listeners": 1594,
+        "playcount": 3727
+      },
+      {
+        "name": "It's All Right with Me",
+        "listeners": 399,
+        "playcount": 611
+      },
+      {
+        "name": "The Gentle Rain",
+        "listeners": 277,
+        "playcount": 435
+      }
+    ],
+    "url": "https://www.last.fm/music/Andy+Miller+Group"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

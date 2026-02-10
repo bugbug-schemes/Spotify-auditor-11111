@@ -1,0 +1,642 @@
+{
+  "artist_name": "Trinix",
+  "artist_id": "trinix",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:48:13.793589+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "5a691568-a34e-4fd8-b031-01e4c9e36070",
+    "type": "Group",
+    "country": "FR",
+    "area": "France",
+    "begin_date": "2012",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "electronic"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000479387921"
+    ],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/5453056",
+      "free streaming": "https://www.deezer.com/artist/5355382",
+      "official homepage": "http://www.trinixmusic.com/",
+      "other databases": "https://catalogue.bnf.fr/ark:/12148/cb17843615r",
+      "purchase for download": "https://www.beatport.com/artist/trinix/513795",
+      "social network": "https://www.instagram.com/trinixmusic/",
+      "streaming": "https://tidal.com/artist/7771842",
+      "VIAF": "http://viaf.org/viaf/323157342833610100006",
+      "wikidata": "https://www.wikidata.org/wiki/Q39072435"
+    },
+    "labels": [
+      "WEA Records",
+      "RCA Local",
+      "Warner Music France",
+      "SMART",
+      "Sony Music Entertainment France",
+      "[no label]",
+      "W Lab",
+      "Armada Music",
+      "Inside Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5355382,
+    "name": "Trinix",
+    "nb_fan": 84350,
+    "nb_album": 47,
+    "link": "https://www.deezer.com/artist/5355382",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/eecde2bef1468c13b1d1183a868f7971/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ablaye Cissoko",
+      "Akon",
+      "Alé Kumá",
+      "Aya Nakamura",
+      "Blvk H3ro",
+      "Bonga",
+      "Corneille",
+      "Fafá De Belém",
+      "Holly Henry",
+      "Jermaine Edwards",
+      "Lura",
+      "Memphis Blood",
+      "Natalia Doco",
+      "One-T",
+      "PLÜM",
+      "Queen D",
+      "Rushawn",
+      "Sofiane Pamart",
+      "Sofiya Nzau",
+      "Steve Aoki",
+      "The Macarons Project"
+    ],
+    "contributor_roles": {
+      "The Macarons Project": [
+        "Main"
+      ],
+      "Rushawn": [
+        "Main"
+      ],
+      "Jermaine Edwards": [
+        "Main"
+      ],
+      "Natalia Doco": [
+        "Main"
+      ],
+      "One-T": [
+        "Main"
+      ],
+      "Fafá De Belém": [
+        "Main"
+      ],
+      "Corneille": [
+        "Main"
+      ],
+      "Aya Nakamura": [
+        "Main"
+      ],
+      "Queen D": [
+        "Main"
+      ],
+      "Alé Kumá": [
+        "Main"
+      ],
+      "Lura": [
+        "Main"
+      ],
+      "Blvk H3ro": [
+        "Main"
+      ],
+      "Holly Henry": [
+        "Featured"
+      ],
+      "Bonga": [
+        "Main"
+      ],
+      "PLÜM": [
+        "Main"
+      ],
+      "Sofiane Pamart": [
+        "Featured"
+      ],
+      "Steve Aoki": [
+        "Main"
+      ],
+      "Akon": [
+        "Main"
+      ],
+      "Memphis Blood": [
+        "Featured"
+      ],
+      "Sofiya Nzau": [
+        "Featured"
+      ],
+      "Ablaye Cissoko": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Too Sweet",
+      "Beautiful Day (Thank You for Sunshine)",
+      "Quedate Luna",
+      "The Magic Key",
+      "Emorio",
+      "Avec classe (feat. Aya Nakamura & Trinix)",
+      "She Said (Big Jet Plane)",
+      "Nomad",
+      "Narina",
+      "Hotstepper",
+      "Go Down",
+      "Dernière danse",
+      "Sweet Dreams",
+      "Mona",
+      "Hey Ya!",
+      "Oro (feat. Sofiane Pamart)",
+      "Tainted Love",
+      "Rodeo",
+      "Locked Up (ft. Akon)",
+      "Waffle",
+      "Zawadi (feat. Sofiya Nzau)",
+      "Soutouro",
+      "No Sleep",
+      "Emorio (Remix)",
+      "5th Avenue"
+    ],
+    "track_durations": [
+      164,
+      168,
+      184,
+      171,
+      163,
+      186,
+      173,
+      181,
+      175,
+      141,
+      147,
+      171,
+      161,
+      187,
+      169,
+      165,
+      184,
+      159,
+      147,
+      194,
+      205,
+      188,
+      182,
+      178,
+      184
+    ],
+    "track_ranks": [
+      863763,
+      642895,
+      756846,
+      836518,
+      821034,
+      890971,
+      632823,
+      380283,
+      719431,
+      754946,
+      478646,
+      577982,
+      672519,
+      445298,
+      590024,
+      625557,
+      620248,
+      267523,
+      588127,
+      474748,
+      223354,
+      291079,
+      454781,
+      586747,
+      437721
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 2,
+      "single": 41
+    },
+    "albums": [
+      {
+        "title": "Altitude",
+        "label": "",
+        "release_date": "2021-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mayday",
+        "label": "",
+        "release_date": "2018-09-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hide",
+        "label": "",
+        "release_date": "2017-02-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Origin",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Rodeo (Remixes)",
+        "label": "",
+        "release_date": "2019-09-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hide EP",
+        "label": "",
+        "release_date": "2017-02-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Too Sweet",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oro (feat. Sofiane Pamart)",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aje",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Narina",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hey Ya!",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bécane (Remix)",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quedate Luna",
+        "label": "",
+        "release_date": "2024-08-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hotstepper",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Avec classe (feat. Aya Nakamura & Trinix)",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Born to Dance",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Born to Dance (Remix)",
+        "label": "",
+        "release_date": "2023-11-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Locked Up (ft. Akon)",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emorio (Remix)",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emorio",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Magic Key",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tainted Love",
+        "label": "",
+        "release_date": "2023-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beautiful Day (Thank You for Sunshine)",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunset Memories",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sewing",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Now or Never",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "5th Avenue",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dernière danse",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hold On",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "She Said (Big Jet Plane)",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Trinix Remix",
+      "PLÜM",
+      "Petit Biscuit",
+      "Bakermat",
+      "Møme",
+      "Tez Cadey",
+      "Feder",
+      "Sara Costa",
+      "Kungs",
+      "TEEMID"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5453056,
+    "name": "TRINIX",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "http://www.trinixmusic.com",
+      "",
+      "http://soundcloud.com/trinix1",
+      "",
+      "http://www.youtube.com/@Trinix",
+      "http://www.youtube.com/@trinixvevo4405",
+      "http://www.youtube.com/channel/UCogVpLLUnvQBtzc87pzAVZg"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 41,
+    "digital_only_releases": 13,
+    "total_releases": 54,
+    "formats": [
+      "",
+      "12\"",
+      "12\", Comp",
+      "20xFile, MP3, Comp, 320",
+      "25xFile, MP3, Comp, 320",
+      "2xCD, Comp",
+      "2xCDr, Comp, Promo",
+      "2xLP",
+      "3xCD, Comp",
+      "3xCD, Comp, Mixed",
+      "3xCD, Comp, Mixed + CD, Comp",
+      "40xFile, MP3, Comp, 320",
+      "4xCD, Comp, Ltd, Édi",
+      "5xCD, Comp",
+      "5xCD, Comp, Dig",
+      "5xCD, Comp, Dlx",
+      "CD, Comp",
+      "CD, Comp, P/Mixed",
+      "CD, Mixed, P/Mixed",
+      "CD, Promo",
+      "CDr, Comp, Mixed, Promo",
+      "CDr, Comp, Promo",
+      "CDr, Single, Promo",
+      "File, FLAC, Single, 24-",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Armada Digital",
+      "Armada Music B.V.",
+      "DMC",
+      "DMC - The Commercial Collection",
+      "FG Recordings, Universal Music Special Markets, MCA Records, Universal Music France",
+      "Inside Records (75)",
+      "Kontor Records",
+      "LW Recordings",
+      "Label Panthéon, Universal Music France",
+      "Ministry Of Sound",
+      "Parlophone",
+      "Polystar (3)",
+      "RCA Local",
+      "Smart (5)",
+      "Smart (5), Sony Music",
+      "Sony Music",
+      "Sony Music France",
+      "Supernova (6)",
+      "Universal Music France",
+      "Universal Music Strategic Marketing, MCA Records",
+      "Vapa Records",
+      "Wagram Music",
+      "Warner Music France",
+      "Warner Music France, Universal Music France, Label Panthéon"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Trinix",
+    "mbid": "5a691568-a34e-4fd8-b031-01e4c9e36070",
+    "listeners": 287294,
+    "playcount": 2593620,
+    "listener_play_ratio": 9.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Trinix\">Read more on Last.fm</a>",
+    "tags": [
+      "electro",
+      "france",
+      "House",
+      "french",
+      "tropical house"
+    ],
+    "similar_artists": [
+      "TEEMID",
+      "R3hab",
+      "Jungeli",
+      "Kungs",
+      "Synapson"
+    ],
+    "top_tracks": [
+      {
+        "name": "She Said (Big Jet Plane)",
+        "listeners": 96396,
+        "playcount": 394931
+      },
+      {
+        "name": "Emorio",
+        "listeners": 46083,
+        "playcount": 186805
+      },
+      {
+        "name": "Tainted Love",
+        "listeners": 40109,
+        "playcount": 136431
+      },
+      {
+        "name": "Replay",
+        "listeners": 25143,
+        "playcount": 99918
+      },
+      {
+        "name": "Sweet Dreams",
+        "listeners": 22778,
+        "playcount": 108920
+      },
+      {
+        "name": "Beautiful Day (Thank You for Sunshine)",
+        "listeners": 22697,
+        "playcount": 127405
+      },
+      {
+        "name": "No Sleep",
+        "listeners": 22489,
+        "playcount": 92143
+      },
+      {
+        "name": "5th Avenue",
+        "listeners": 21125,
+        "playcount": 61045
+      },
+      {
+        "name": "The Magic Key",
+        "listeners": 20700,
+        "playcount": 108801
+      },
+      {
+        "name": "Now or Never",
+        "listeners": 20002,
+        "playcount": 59909
+      }
+    ],
+    "url": "https://www.last.fm/music/Trinix"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,148 @@
+{
+  "artist_name": "Julie Isabey",
+  "artist_id": "julie_isabey",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:39:52.769732+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 244796742,
+    "name": "Julie Isabey",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/244796742",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/072cba70a4acc880aade70632fbe0fdb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Lullaby Bells",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Sweetheart",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silly Cat",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Favourite Place",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Little Things",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Longing For Tomorrow",
+        "label": "",
+        "release_date": "2024-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Bird Called Dot",
+        "label": "",
+        "release_date": "2023-12-11",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Julie Isabey",
+    "mbid": "",
+    "listeners": 530,
+    "playcount": 5647,
+    "listener_play_ratio": 10.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Julie+Isabey\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Corall",
+      "Tristan Bloom",
+      "Sophie Amélie",
+      "Ellie Frosting",
+      "Simon Hill"
+    ],
+    "top_tracks": [
+      {
+        "name": "Longing For Tomorrow",
+        "listeners": 369,
+        "playcount": 4687
+      },
+      {
+        "name": "Lullaby Bells",
+        "listeners": 165,
+        "playcount": 960
+      }
+    ],
+    "url": "https://www.last.fm/music/Julie+Isabey"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

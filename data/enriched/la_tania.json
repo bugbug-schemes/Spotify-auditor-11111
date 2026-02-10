@@ -1,0 +1,282 @@
+{
+  "artist_name": "La Tania",
+  "artist_id": "la_tania",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:55:38.931501+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a90a74e1-bef4-4892-a732-b91477d8393c",
+    "type": "Person",
+    "country": "",
+    "area": "California",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "official homepage": "http://lataniaflamenco.com/"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 269472502,
+    "name": "La Tania",
+    "nb_fan": 252,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/269472502",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1f6cb83378281af644ce7e48d343e1d6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Papa Levante",
+      "Yerai Cortés"
+    ],
+    "contributor_roles": {
+      "Yerai Cortés": [
+        "Main"
+      ],
+      "Papa Levante": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "LOS ALMENDROS",
+      "QUERELES",
+      "TETEO",
+      "MONIGOTE",
+      "BESITOS DE OTRO",
+      "AWITA",
+      "LA FLOR",
+      "PALACE",
+      "EL EMIGRANTE"
+    ],
+    "track_durations": [
+      166,
+      144,
+      153,
+      131,
+      183,
+      125,
+      120,
+      135,
+      251
+    ],
+    "track_ranks": [
+      530428,
+      303324,
+      325564,
+      232090,
+      138898,
+      105903,
+      116516,
+      203992,
+      172819
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "AMORIOS. LA VERDAD DE MI COPLILLA",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "PALACE",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TETEO",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LOS ALMENDROS",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BESITOS DE OTRO",
+        "label": "",
+        "release_date": "2024-12-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "QUERELES",
+        "label": "",
+        "release_date": "2024-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "AWITA",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "La Hungara",
+      "Lachispa",
+      "Niña Pastori",
+      "Maria José Llergo",
+      "Luis de Perikin",
+      "Yerai Cortés",
+      "Natalia Lacunza",
+      "Judeline",
+      "Las Migas",
+      "Chambao"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2353624,
+    "name": "Tania Velia",
+    "profile": "La verdad es que fue un verdadero lujo. Que la escena española de los años 60 acogiera la carrera musical de la insigne Tania. Porque fue en nuestro país donde grabó casi todos sus discos. Una faceta, la de cantante, que añadía a su ya entonces dilatada carrera profesional: Tania se había formado simultáneamente como aparejadora y como actriz, había sido nadadora olímpica, profesora de danza, modelo de Playboy, miss Yugoslavia y actriz de Hollywood, entre otras cosas, porque también hablaba 5 idiomas; todo ello antes de establecerse en España y de aprender además el castellano. Los textos incluidos en un par de discos suyos señalan que era de origen croata, nacida en Zagreb, con padres originarios, además, de la costa Dálmata, si bien en la red se ha popularizado la noticia de que era oriunda de Sipske, Moravice, actual Bosnia-Herzegovina... No hay duda, en cualquier caso, de que nació en la República Federativa Socialista de Yugoslavia, el 3 de abril de 1935.\r\n\r\nEn su primera juventud",
+    "realname": "Tanja Ivelja",
+    "social_urls": [
+      "http://www.imdb.com/name/nm0892495/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 5,
+    "total_releases": 11,
+    "formats": [
+      "",
+      "7\"",
+      "7\", EP",
+      "7\", Single",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Belter",
+      "Belter, Belter",
+      "Jugoton",
+      "Zafiro"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "La Tania",
+    "mbid": "a90a74e1-bef4-4892-a732-b91477d8393c",
+    "listeners": 5369,
+    "playcount": 47680,
+    "listener_play_ratio": 8.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/La+Tania\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ángeles Toledano",
+      "Juanfra Carrasco",
+      "Israel Fernández",
+      "Vera GRV",
+      "Ray Heredia"
+    ],
+    "top_tracks": [
+      {
+        "name": "LOS ALMENDROS - Directo",
+        "listeners": 3681,
+        "playcount": 20375
+      },
+      {
+        "name": "QUERELES",
+        "listeners": 1476,
+        "playcount": 5373
+      },
+      {
+        "name": "MONIGOTE",
+        "listeners": 1237,
+        "playcount": 4704
+      },
+      {
+        "name": "Besitos de otro",
+        "listeners": 1029,
+        "playcount": 3799
+      },
+      {
+        "name": "AWITA",
+        "listeners": 928,
+        "playcount": 3212
+      },
+      {
+        "name": "EL EMIGRANTE - La Tania en Paris",
+        "listeners": 624,
+        "playcount": 1814
+      },
+      {
+        "name": "UN BESO DE MI COMPARE - Gracias Pucho",
+        "listeners": 588,
+        "playcount": 2015
+      },
+      {
+        "name": "TETEO",
+        "listeners": 454,
+        "playcount": 2585
+      },
+      {
+        "name": "MAL D'AMORES",
+        "listeners": 439,
+        "playcount": 1173
+      },
+      {
+        "name": "PALACE",
+        "listeners": 295,
+        "playcount": 652
+      }
+    ],
+    "url": "https://www.last.fm/music/La+Tania"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

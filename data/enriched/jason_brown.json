@@ -1,0 +1,415 @@
+{
+  "artist_name": "Jason Brown",
+  "artist_id": "jason_brown",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:24:56.519094+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4352ae0a-5c2e-4361-beea-2054308bdc3b",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1867989",
+      "free streaming": "https://open.spotify.com/artist/0WSt6xUyHBsceCqUgcZTiv"
+    },
+    "labels": [
+      "Ubuntu Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 415201,
+    "name": "Jason Brown",
+    "nb_fan": 200,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/415201",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fcd99fc3cf9743df808f6f07732b8b32/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anthony Wonsey",
+      "DMITRY BAEVSKY",
+      "David Wong",
+      "Dwayne Burno",
+      "Jeb Patton",
+      "Todd Herbert"
+    ],
+    "contributor_roles": {
+      "DMITRY BAEVSKY": [
+        "Main"
+      ],
+      "Jeb Patton": [
+        "Main"
+      ],
+      "David Wong": [
+        "Main"
+      ],
+      "Anthony Wonsey": [
+        "Main"
+      ],
+      "Dwayne Burno": [
+        "Main"
+      ],
+      "Todd Herbert": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Dream Another Dream",
+      "Down With It",
+      "Years of Dreaming"
+    ],
+    "track_durations": [
+      204,
+      293,
+      510
+    ],
+    "track_ranks": [
+      88099,
+      31403,
+      26994
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 12,
+      "ep": 3,
+      "single": 9,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Holly Jolly Christmas",
+        "label": "",
+        "release_date": "2025-11-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pop'n That Thang",
+        "label": "",
+        "release_date": "2025-11-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fightin' Songs",
+        "label": "",
+        "release_date": "2025-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Land of The \"Free\"",
+        "label": "",
+        "release_date": "2025-04-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Gonna Fix This Broken System",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dirt Ballads",
+        "label": "",
+        "release_date": "2024-08-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Folk Songs n' Such",
+        "label": "",
+        "release_date": "2024-07-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Drink It In",
+        "label": "",
+        "release_date": "2019-02-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jason Brown",
+        "label": "",
+        "release_date": "2017-10-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "What Makes You Happy?",
+        "label": "",
+        "release_date": "2016-09-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Dream",
+        "label": "",
+        "release_date": "2014-05-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Your Story",
+        "label": "",
+        "release_date": "2013-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I’m Black And I’m Proud - Say It Loud",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Unbroken Promises",
+        "label": "",
+        "release_date": "2015-03-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Something Wonderful",
+        "label": "",
+        "release_date": "2014-01-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "I Stand Here All Alone",
+        "label": "",
+        "release_date": "2026-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Mind",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "She Took the Tempo With Her Tears",
+        "label": "",
+        "release_date": "2025-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Latitude x Longitude",
+        "label": "",
+        "release_date": "2024-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Night (We Have Waited)",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let It Go",
+        "label": "",
+        "release_date": "2021-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "God of Heaven",
+        "label": "",
+        "release_date": "2020-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old Soul",
+        "label": "",
+        "release_date": "2016-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hands up High",
+        "label": "",
+        "release_date": "2014-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Tree of Life",
+        "label": "",
+        "release_date": "2008-08-19",
+        "nb_tracks": 0,
+        "type": "compile"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 112733,
+    "name": "Jason Brown",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 8,
+    "digital_only_releases": 17,
+    "total_releases": 25,
+    "formats": [
+      "",
+      "12\"",
+      "12\", W/Lbl, Sti",
+      "14xFile, WAV, Album",
+      "19xFile, MP3, 320",
+      "CD, Album",
+      "CD, Comp, Mixed",
+      "CD, MiniAlbum",
+      "CD, Mixed",
+      "File, AAC, AIFF, ALAC, FLAC, MP3, ogg, WAV",
+      "File, MP3, 320"
+    ],
+    "labels": [
+      "Dog Eat Dog Records",
+      "Kaleidoscope Music (2)",
+      "Koralis Entertainment",
+      "Not On Label (Big Suck Self-released)",
+      "PK Records (6)",
+      "Painted Puppy Productions",
+      "Phattraxx Records, Inc.",
+      "The Resonance Project",
+      "USA Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jason Brown",
+    "mbid": "b87af166-7154-4435-9a04-188464352f8c",
+    "listeners": 986,
+    "playcount": 20330,
+    "listener_play_ratio": 20.62,
+    "bio_exists": true,
+    "bio_summary": "Jason Brown is a Country singer from Des Moines, Iowa.\n\n <a href=\"https://www.last.fm/music/Jason+Brown\">Read more on Last.fm</a>",
+    "tags": [
+      "All",
+      "country",
+      "breakbeat",
+      "Acid",
+      "florida breaks"
+    ],
+    "similar_artists": [
+      "Chriscontrol",
+      "D'Mixmasters",
+      "Werner Urban",
+      "Count Dee's Hit Explosion",
+      "The Gym All-Stars"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Reason",
+        "listeners": 146,
+        "playcount": 638
+      },
+      {
+        "name": "You Don't Play Fair",
+        "listeners": 97,
+        "playcount": 461
+      },
+      {
+        "name": "Light in the Night",
+        "listeners": 95,
+        "playcount": 138
+      },
+      {
+        "name": "Suspended Soul",
+        "listeners": 81,
+        "playcount": 122
+      },
+      {
+        "name": "Deep Guitar",
+        "listeners": 80,
+        "playcount": 128
+      },
+      {
+        "name": "In The Limousine",
+        "listeners": 72,
+        "playcount": 95
+      },
+      {
+        "name": "Mama Was A Rebel",
+        "listeners": 71,
+        "playcount": 426
+      },
+      {
+        "name": "Cool World",
+        "listeners": 70,
+        "playcount": 97
+      },
+      {
+        "name": "Touchdown",
+        "listeners": 66,
+        "playcount": 463
+      },
+      {
+        "name": "I'd Love You To Hate Me",
+        "listeners": 62,
+        "playcount": 275
+      }
+    ],
+    "url": "https://www.last.fm/music/Jason+Brown"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

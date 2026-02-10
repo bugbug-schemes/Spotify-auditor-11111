@@ -1,0 +1,143 @@
+{
+  "artist_name": "Tiny Hush",
+  "artist_id": "tiny_hush",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:43:13.551809+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Tiny Hush', got 'Tinush'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3107644,
+    "name": "+Hush+",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Holy Filament"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "3xFile, AIFF, EP",
+      "File, AAC, AIFF, FLAC, MP3, WAV, Single",
+      "File, AIFF, FLAC, MP3, Single"
+    ],
+    "labels": [
+      "Den Of Dead Trees Recordings",
+      "Den of Dead Trees Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tiny Hush",
+    "mbid": "",
+    "listeners": 3650,
+    "playcount": 43026,
+    "listener_play_ratio": 11.79,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tiny+Hush\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Silas Ash",
+      "Eli Amos",
+      "Pajama Llama",
+      "Elysia Blue",
+      "Nigel Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Baa Baa Black Sheep",
+        "listeners": 2682,
+        "playcount": 18921
+      },
+      {
+        "name": "Sandman",
+        "listeners": 1514,
+        "playcount": 13685
+      },
+      {
+        "name": "Little Dino",
+        "listeners": 741,
+        "playcount": 5336
+      },
+      {
+        "name": "Bedtime Book",
+        "listeners": 583,
+        "playcount": 3381
+      },
+      {
+        "name": "Magic Blocks",
+        "listeners": 475,
+        "playcount": 1673
+      },
+      {
+        "name": "The Up And Down Song",
+        "listeners": 11,
+        "playcount": 18
+      },
+      {
+        "name": "Twilight",
+        "listeners": 4,
+        "playcount": 7
+      },
+      {
+        "name": "Questions Of The Night",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Bumblebee",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Little Cottage of Mine",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Tiny+Hush"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

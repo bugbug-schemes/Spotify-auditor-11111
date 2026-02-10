@@ -1,0 +1,476 @@
+{
+  "artist_name": "Heine Hansen",
+  "artist_id": "heine_hansen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:04:40.196028+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "0bea3968-11a7-4ae7-b16c-f1374a6b3d21",
+    "type": "Person",
+    "country": "DK",
+    "area": "Denmark",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/421921",
+      "free streaming": "https://www.deezer.com/artist/4669059",
+      "official homepage": "http://www.heinehansen.com/",
+      "purchase for download": "https://music.apple.com/us/artist/404895231",
+      "streaming": "https://tidal.com/artist/6440021",
+      "youtube music": "https://music.youtube.com/channel/UCbU80qILuRqnixMBIl70GgQ"
+    },
+    "labels": [
+      "amm",
+      "Prisma Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4669059,
+    "name": "Heine Hansen",
+    "nb_fan": 17,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/4669059",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/564fb176a8abcd136df185001c777948/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anders Mogensen",
+      "Bastian Sjelberg",
+      "Claus Waidtløw",
+      "Ed Jones",
+      "Gathering in Jazz",
+      "Kristoffer Sjelberg"
+    ],
+    "contributor_roles": {
+      "Ed Jones": [
+        "Main"
+      ],
+      "Bastian Sjelberg": [
+        "Main"
+      ],
+      "Kristoffer Sjelberg": [
+        "Main"
+      ],
+      "Gathering in Jazz": [
+        "Main"
+      ],
+      "Claus Waidtløw": [
+        "Main"
+      ],
+      "Anders Mogensen": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Gnostic",
+      "Cheek to Cheek",
+      "A Flower Is a Lovesome Thing"
+    ],
+    "track_durations": [
+      216,
+      389,
+      285
+    ],
+    "track_ranks": [
+      95704,
+      41106,
+      87712
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 10,
+      "ep": 1,
+      "single": 18,
+      "compile": 1
+    },
+    "albums": [
+      {
+        "title": "Delayed in Space",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at Harders",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alpaca",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Straight Road",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cookin' at the Swing (Vol. 2)",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Cookin' at the Swing (Vol. 1)",
+        "label": "",
+        "release_date": "2022-03-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Second Strike",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bloom",
+        "label": "",
+        "release_date": "2020-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fingertips",
+        "label": "",
+        "release_date": "2019-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Still Waters",
+        "label": "",
+        "release_date": "1997-03-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Flavors of Flowers",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Undecided",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hello And Goodbye",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Folivora",
+        "label": "",
+        "release_date": "2023-06-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gnostic",
+        "label": "",
+        "release_date": "2023-05-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moon River",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweden",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Laurindo",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anthology",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fields",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "En Route",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Butterflies",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crystal",
+        "label": "",
+        "release_date": "2022-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Venezuela",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Luminary",
+        "label": "",
+        "release_date": "2022-04-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wind",
+        "label": "",
+        "release_date": "2022-02-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cosmos",
+        "label": "",
+        "release_date": "2021-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lucidity",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Exploration",
+        "label": "",
+        "release_date": "2021-05-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Signature",
+        "label": "",
+        "release_date": "2016-07-01",
+        "nb_tracks": 0,
+        "type": "compile"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 421921,
+    "name": "Heine Hansen",
+    "profile": "Danish keyboards and accordion player.",
+    "realname": "",
+    "social_urls": [
+      "http://www.heinehansen.com/index.htm"
+    ],
+    "members": [],
+    "groups": [
+      "Alex Riel Trio",
+      "The Pulse (9)",
+      "Helle Hansen / Heine Hansen Duo",
+      "Valdemar & Heine Duo",
+      "The Hugo Rasmussen Trio",
+      "Hugo Rasmussen All Starz",
+      "Heine Hansen Trio",
+      "GinmanBlachman!",
+      "Baba & The Tonebones",
+      "Gathering In Jazz"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 33,
+    "digital_only_releases": 11,
+    "total_releases": 44,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP",
+      "2xCD, Comp",
+      "7xFile, FLAC, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Comp",
+      "CDr, Comp, Promo",
+      "LP, Album"
+    ],
+    "labels": [
+      "AMM",
+      "Bonde Jazz",
+      "Cowbell Music",
+      "Gateway Music",
+      "Grænseforeningen",
+      "Heart Core Records",
+      "Magic Records",
+      "Marshmallow Export",
+      "Music Mecca",
+      "Not On Label (Baba & The Tonebones Self-released)",
+      "Raw Fusion Recordings",
+      "Ricky-Tick Records",
+      "Schema, Schema",
+      "Shiftin' Gears Records",
+      "SteepleChase",
+      "Storyville",
+      "Stunt Records",
+      "Terasima Records",
+      "Tiger Music, Cowbell Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Heine Hansen",
+    "mbid": "0bea3968-11a7-4ae7-b16c-f1374a6b3d21",
+    "listeners": 26393,
+    "playcount": 65866,
+    "listener_play_ratio": 2.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Heine+Hansen\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Mellow In Blue",
+      "romain pilon",
+      "Gerlo Hesselink Quartet",
+      "The New York Second",
+      "Hyuntae Kim"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gnostic",
+        "listeners": 16366,
+        "playcount": 35941
+      },
+      {
+        "name": "Lucidity",
+        "listeners": 7099,
+        "playcount": 15776
+      },
+      {
+        "name": "Moon River",
+        "listeners": 1559,
+        "playcount": 3050
+      },
+      {
+        "name": "Anthology",
+        "listeners": 1013,
+        "playcount": 1660
+      },
+      {
+        "name": "Exploration",
+        "listeners": 254,
+        "playcount": 1154
+      },
+      {
+        "name": "Fields",
+        "listeners": 242,
+        "playcount": 469
+      },
+      {
+        "name": "En Route",
+        "listeners": 240,
+        "playcount": 546
+      },
+      {
+        "name": "Undecided",
+        "listeners": 221,
+        "playcount": 808
+      },
+      {
+        "name": "Venezuela",
+        "listeners": 213,
+        "playcount": 541
+      },
+      {
+        "name": "Crystal",
+        "listeners": 202,
+        "playcount": 578
+      }
+    ],
+    "url": "https://www.last.fm/music/Heine+Hansen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,378 @@
+{
+  "artist_name": "Southside Trio",
+  "artist_id": "southside_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:15:09.598100+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ddedbb08-2a7b-412c-929a-3e5cf7e19b3e",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/183263177",
+      "purchase for download": "https://music.apple.com/us/artist/1648788662",
+      "soundcloud": "https://soundcloud.com/southsidetrio",
+      "streaming": "https://tidal.com/artist/34513410",
+      "youtube music": "https://music.youtube.com/channel/UCN8R--6rd8cAvFN40ObGjTQ"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183263177,
+    "name": "Southside Trio",
+    "nb_fan": 16,
+    "nb_album": 20,
+    "link": "https://www.deezer.com/artist/183263177",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/fbb683ff2b634c90a31c95bf8f980fbb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Law of Attraction",
+      "Look at the clock",
+      "Time Passing Slowly",
+      "Ain’t no sense",
+      "Kingfisher",
+      "Lily-white",
+      "Blue Eyes Crying In The Rain"
+    ],
+    "track_durations": [
+      151,
+      210,
+      218,
+      154,
+      197,
+      142,
+      252
+    ],
+    "track_ranks": [
+      523375,
+      73939,
+      157620,
+      52958,
+      47074,
+      42369,
+      31996
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "Are you in a rush?",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Lights of Candy Cane Lane",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Night To Remember",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Look at the clock",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Guilty",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Over Frozen Lakes",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Temporary Measure",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ain’t no sense",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Street at Night",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lily-white",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All the extras",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kingfisher",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Worth Your Time",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desafinado",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Eyes Crying In The Rain",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "These Last Years",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Help Falling in Love",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Time Passing Slowly",
+        "label": "",
+        "release_date": "2022-07-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Child is Born",
+        "label": "",
+        "release_date": "2022-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Law of Attraction",
+        "label": "",
+        "release_date": "2021-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2569810,
+    "name": "Southside House Collective",
+    "profile": "DJ and producer trio based in Malmö, Sweden. They are the founders of [l=Southside Recordings (3)].",
+    "realname": "",
+    "social_urls": [
+      "http://www.southsidehousecollective.se",
+      "http://www.facebook.com/SouthsideHouseCollective",
+      "http://www.soundcloud.com/djjunior",
+      "http://www.twitter.com/SouthsideHouseC",
+      "http://www.youtube.com/user/djjuniorswe"
+    ],
+    "members": [
+      "iTod",
+      "J.J. (19)",
+      "Junior (38)"
+    ],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 13,
+    "digital_only_releases": 7,
+    "total_releases": 20,
+    "formats": [
+      "",
+      "26xFile, MP3, Comp, 320",
+      "2xCD, Comp, Mixed",
+      "2xFile, MP3, 320",
+      "3xCD, Mixed",
+      "4xFile, MP3, EP, 320",
+      "CD, Comp",
+      "CD, Comp, Ltd, Promo",
+      "CD, Comp, Promo",
+      "CDr, Comp",
+      "CDr, Maxi, Promo",
+      "CDr, Promo",
+      "CDr, Single, Promo"
+    ],
+    "labels": [
+      "DJ Promotion",
+      "DMC, DMC",
+      "Dee Jay Mix Club",
+      "Hed Kandi",
+      "Pacha Recordings",
+      "Southside Recordings (3)",
+      "Southside Records (17)",
+      "The Dance Division",
+      "Uniform Beat",
+      "Warner Dance Labels",
+      "disco:wax"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Southside Trio",
+    "mbid": "ddedbb08-2a7b-412c-929a-3e5cf7e19b3e",
+    "listeners": 108015,
+    "playcount": 371331,
+    "listener_play_ratio": 3.44,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Meadow Park",
+      "Nick Osman Trio",
+      "Carl Bagge Trio",
+      "Nordic Light Trio",
+      "Dave Oakley trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Law of Attraction",
+        "listeners": 52730,
+        "playcount": 158534
+      },
+      {
+        "name": "Blue Eyes Crying In The Rain",
+        "listeners": 22056,
+        "playcount": 48602
+      },
+      {
+        "name": "Look at the clock",
+        "listeners": 17592,
+        "playcount": 36391
+      },
+      {
+        "name": "Lily-white",
+        "listeners": 16888,
+        "playcount": 37512
+      },
+      {
+        "name": "A Night To Remember",
+        "listeners": 16840,
+        "playcount": 32858
+      },
+      {
+        "name": "Ain’t no sense",
+        "listeners": 15103,
+        "playcount": 33453
+      },
+      {
+        "name": "Time Passing Slowly",
+        "listeners": 4994,
+        "playcount": 12740
+      },
+      {
+        "name": "Kingfisher",
+        "listeners": 3550,
+        "playcount": 7638
+      },
+      {
+        "name": "Desafinado",
+        "listeners": 562,
+        "playcount": 883
+      },
+      {
+        "name": "Silver Serenade",
+        "listeners": 376,
+        "playcount": 599
+      }
+    ],
+    "url": "https://www.last.fm/music/Southside+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

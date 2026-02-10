@@ -1,0 +1,194 @@
+{
+  "artist_name": "Lumen Atlas",
+  "artist_id": "lumen_atlas",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:18:02.842162+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 301455611,
+    "name": "Lumen Atlas",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/301455611",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/89828dda3cae12a00d582334fd887e6b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Eclosion",
+      "Etherea"
+    ],
+    "track_durations": [
+      131,
+      118
+    ],
+    "track_ranks": [
+      72812,
+      47199
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Exorae",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Fractals",
+        "label": "",
+        "release_date": "2025-10-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Auric Renewal",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eclosion",
+        "label": "",
+        "release_date": "2025-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verdant Haze",
+        "label": "",
+        "release_date": "2025-05-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Velmara",
+        "label": "",
+        "release_date": "2025-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Static Bloom",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Etherea",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lumen Atlas",
+    "mbid": "",
+    "listeners": 36934,
+    "playcount": 129055,
+    "listener_play_ratio": 3.49,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lumen+Atlas\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aiden Archer",
+      "Teyio River",
+      "Deep Club",
+      "August Sands",
+      "EmberWaves"
+    ],
+    "top_tracks": [
+      {
+        "name": "Etherea",
+        "listeners": 23151,
+        "playcount": 59137
+      },
+      {
+        "name": "Eclosion",
+        "listeners": 22727,
+        "playcount": 52834
+      },
+      {
+        "name": "Verdant Haze",
+        "listeners": 4552,
+        "playcount": 9764
+      },
+      {
+        "name": "Velmara",
+        "listeners": 3145,
+        "playcount": 5588
+      },
+      {
+        "name": "Static Bloom",
+        "listeners": 590,
+        "playcount": 1299
+      },
+      {
+        "name": "Exorae",
+        "listeners": 212,
+        "playcount": 331
+      },
+      {
+        "name": "Auric Renewal",
+        "listeners": 32,
+        "playcount": 68
+      },
+      {
+        "name": "Soft Fractals",
+        "listeners": 28,
+        "playcount": 34
+      }
+    ],
+    "url": "https://www.last.fm/music/Lumen+Atlas"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

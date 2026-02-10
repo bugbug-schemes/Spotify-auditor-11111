@@ -1,0 +1,566 @@
+{
+  "artist_name": "Lava La Rue",
+  "artist_id": "lava_la_rue",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:59:34.404899+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8ee9e6fe-a629-4ff9-a4d5-ecb79b637350",
+    "type": "Person",
+    "country": "",
+    "area": "London",
+    "begin_date": "1998-05-21",
+    "end_date": "",
+    "gender": "non-binary",
+    "genres": [
+      "alternative r&b",
+      "alternative hip-hop",
+      "indie pop",
+      "psychedelic hip hop",
+      "neo-psychedelia",
+      "psychedelic soul"
+    ],
+    "aliases": [
+      "Aiwa Laurel"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://lavalarue.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/6498632",
+      "free streaming": "https://www.deezer.com/artist/12888357",
+      "official homepage": "https://www.welcome2lavaland.com/",
+      "social network": "https://www.instagram.com/lavalarue/",
+      "soundcloud": "https://soundcloud.com/lavalarue",
+      "streaming": "https://tidal.com/artist/8966058",
+      "wikidata": "https://www.wikidata.org/wiki/Q123344764",
+      "youtube": "https://www.youtube.com/channel/UCoj0cZBCGdfz_X253eX_gVw"
+    },
+    "labels": [
+      "NiNE8",
+      "Dirty Hit",
+      "BMG Rights Management (UK) Ltd.",
+      "BMG Rights Management (UK) LTD (C)",
+      "Marathon Artists",
+      "Because Music",
+      "[no label]",
+      "Nettwerk Music Group"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12888357,
+    "name": "LAVA LA RUE",
+    "nb_fan": 3143,
+    "nb_album": 28,
+    "link": "https://www.deezer.com/artist/12888357",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3c4b4b8dc0650fac05ca6ab65c8fb7df/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Biig Piig",
+      "Congo Natty",
+      "Crystal Murray",
+      "Cuco",
+      "Danny Dwyer",
+      "Deb Never",
+      "Finn Foxell",
+      "Foster The People",
+      "Future Utopia",
+      "Nia Archives",
+      "Phoebs",
+      "p-rallel",
+      "tendai"
+    ],
+    "contributor_roles": {
+      "Foster The People": [
+        "Main"
+      ],
+      "Biig Piig": [
+        "Featured"
+      ],
+      "Deb Never": [
+        "Featured"
+      ],
+      "Danny Dwyer": [
+        "Main"
+      ],
+      "Future Utopia": [
+        "Main"
+      ],
+      "Cuco": [
+        "Main"
+      ],
+      "Finn Foxell": [
+        "Main"
+      ],
+      "Phoebs": [
+        "Featured"
+      ],
+      "Congo Natty": [
+        "Featured"
+      ],
+      "Nia Archives": [
+        "Featured"
+      ],
+      "Crystal Murray": [
+        "Main"
+      ],
+      "tendai": [
+        "Main"
+      ],
+      "p-rallel": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Push N Shuv",
+      "Girlfriend - InVersions 2000s",
+      "JET LAGGED",
+      "Don't Come Back",
+      "Magpie",
+      "Hi-Fidelity",
+      "Humanity",
+      "G.O.Y.D.",
+      "Angel",
+      "System Overload",
+      "Widdit",
+      "The Pleasure Trap",
+      "Better ft. Cuco",
+      "LOVEBITES",
+      "Motel",
+      "Manifestation Manifesto",
+      "Goofy Hearts Club",
+      "Mistery",
+      "Magpie (Nia Archives Remix)",
+      "Quick Thrill",
+      "Sandown Beach (Recorded at Artistic Palace Studios, Paris)",
+      "STARFACE’s Descent ft. tendai",
+      "99",
+      "TLSL (Stitches)",
+      "Renegade"
+    ],
+    "track_durations": [
+      211,
+      256,
+      195,
+      217,
+      214,
+      199,
+      200,
+      199,
+      236,
+      119,
+      151,
+      205,
+      177,
+      212,
+      209,
+      195,
+      297,
+      221,
+      268,
+      172,
+      155,
+      216,
+      261,
+      227,
+      174
+    ],
+    "track_ranks": [
+      523389,
+      604197,
+      371385,
+      350114,
+      330448,
+      433348,
+      245717,
+      187358,
+      229428,
+      138837,
+      113060,
+      152426,
+      230261,
+      70106,
+      153105,
+      151595,
+      159482,
+      149878,
+      131601,
+      178457,
+      140015,
+      118722,
+      206541,
+      256411,
+      152439
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 1,
+      "ep": 4,
+      "single": 23
+    },
+    "albums": [
+      {
+        "title": "STARFACE",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Poison Cookie ft. AUDREY NUNA",
+        "label": "",
+        "release_date": "2024-06-13",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Hi-Fidelity",
+        "label": "",
+        "release_date": "2022-07-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Butter-Fly",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Letra",
+        "label": "",
+        "release_date": "2018-06-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "JET LAGGED",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "easy come, easy go",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "System Overload (quickly, quickly Remix)",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Pleasure Trap",
+        "label": "",
+        "release_date": "2025-04-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quick Thrill",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "System Overload",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sandown Beach (Recorded at Artistic Palace Studios, Paris)",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Girlfriend - InVersions 2000s",
+        "label": "",
+        "release_date": "2024-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better ft. Cuco",
+        "label": "",
+        "release_date": "2024-07-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LOVEBITES",
+        "label": "",
+        "release_date": "2024-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Humanity",
+        "label": "",
+        "release_date": "2024-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Push N Shuv",
+        "label": "",
+        "release_date": "2024-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Renegade",
+        "label": "",
+        "release_date": "2023-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vest & Boxers",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For You",
+        "label": "",
+        "release_date": "2021-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Magpie (Nia Archives Remix)",
+        "label": "",
+        "release_date": "2021-05-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angel",
+        "label": "",
+        "release_date": "2020-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "G.O.Y.D.",
+        "label": "",
+        "release_date": "2020-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "TLSL (Stitches)",
+        "label": "",
+        "release_date": "2019-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MOSCHINO IN 83",
+        "label": "",
+        "release_date": "2019-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Burn",
+        "label": "",
+        "release_date": "2019-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Touch (My Mind)",
+        "label": "",
+        "release_date": "2018-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Widdit",
+        "label": "",
+        "release_date": "2018-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Genesis Owusu",
+      "PawPaw Rod",
+      "Sunni Colon",
+      "Biig Piig",
+      "Joesef",
+      "Michelle",
+      "Blu Samu",
+      "Hope Tala",
+      "Arlo Parks",
+      "Toro Y Moi"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6498632,
+    "name": "Lava La Rue",
+    "profile": "Lava La Rue is a visual artist, rapper and musician from London, founder of NiNE8 COLLECTIVE. ",
+    "realname": "Aiwa Laurel",
+    "social_urls": [
+      "http://www.lavalandtv.com",
+      "http://lavalarue.bandcamp.com",
+      "",
+      "http://www.facebook.com/lavalarue",
+      "http://www.instagram.com/lavalarue",
+      "",
+      "http://soundcloud.com/lavalarue",
+      "http://www.youtube.com/user/sugarRush3D"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 12,
+    "total_releases": 15,
+    "formats": [
+      "",
+      "22xFile, FLAC, Comp",
+      "CD, Comp, Promo",
+      "Cass",
+      "File, MP3, 320",
+      "File, MP3, Single",
+      "File, MP3, Single, 320",
+      "LP, EP, Club, Ltd, Num, Bla"
+    ],
+    "labels": [
+      "Marathon Artists",
+      "Musikexpress",
+      "Not On Label",
+      "Not On Label (Lava La Rue Self-released)",
+      "Nova Records",
+      "PLZ Make It Ruins"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lava La Rue",
+    "mbid": "8ee9e6fe-a629-4ff9-a4d5-ecb79b637350",
+    "listeners": 240109,
+    "playcount": 1993962,
+    "listener_play_ratio": 8.3,
+    "bio_exists": true,
+    "bio_summary": "Aiwa Laurel D-G (More commonly known as Ava Laurel, or stage name Lava La Rue) is a London based visual artist and musician and founder of NiNE8 collective. Lava La Rue, west London rapper and singer is a jack of all trades; Under their belt at the age of 20, they've set to continue making a positive impact on the UK art scene. Their pronouns are they/them/he/her. <a href=\"https://www.last.fm/music/Lava+La+Rue\">Read more on Last.fm</a>",
+    "tags": [
+      "rap",
+      "soul",
+      "rnb",
+      "Hip-Hop",
+      "hip hop"
+    ],
+    "similar_artists": [
+      "Rosie Lowe",
+      "Biig Piig",
+      "Dua Saleh",
+      "Yaya Bey",
+      "Say She She"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hi-Fidelity",
+        "listeners": 67461,
+        "playcount": 285852
+      },
+      {
+        "name": "Magpie",
+        "listeners": 53211,
+        "playcount": 238998
+      },
+      {
+        "name": "Angel",
+        "listeners": 42166,
+        "playcount": 180951
+      },
+      {
+        "name": "Vest & Boxers",
+        "listeners": 35324,
+        "playcount": 186777
+      },
+      {
+        "name": "G.O.Y.D.",
+        "listeners": 34187,
+        "playcount": 154319
+      },
+      {
+        "name": "Widdit",
+        "listeners": 26179,
+        "playcount": 125199
+      },
+      {
+        "name": "Don't Come Back",
+        "listeners": 23273,
+        "playcount": 88897
+      },
+      {
+        "name": "Push N Shuv",
+        "listeners": 22138,
+        "playcount": 66204
+      },
+      {
+        "name": "Better ft. Cuco",
+        "listeners": 21429,
+        "playcount": 58791
+      },
+      {
+        "name": "Magpie - Nia Archives Remix",
+        "listeners": 10623,
+        "playcount": 41528
+      }
+    ],
+    "url": "https://www.last.fm/music/Lava+La+Rue"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

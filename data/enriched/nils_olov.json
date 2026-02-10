@@ -1,0 +1,101 @@
+{
+  "artist_name": "Nils Olov",
+  "artist_id": "nils_olov",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:02:26.170073+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Nils Olov', got 'Nils Lofgren'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10070902,
+    "name": "Nils Olov Persson",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nils Olov",
+    "mbid": "",
+    "listeners": 1135,
+    "playcount": 6464,
+    "listener_play_ratio": 5.7,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nils+Olov\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Luca Verini",
+      "Rowan Finch",
+      "Leon Rose",
+      "Stina Edblad",
+      "Nattlys"
+    ],
+    "top_tracks": [
+      {
+        "name": "You Are My Sunshine",
+        "listeners": 845,
+        "playcount": 5963
+      },
+      {
+        "name": "God Rest Ye Merry Gentlemen",
+        "listeners": 292,
+        "playcount": 500
+      },
+      {
+        "name": "Dandelion Blues (in the Rain)",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Nils+Olov"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

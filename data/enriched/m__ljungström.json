@@ -1,0 +1,141 @@
+{
+  "artist_name": "M. Ljungström",
+  "artist_id": "m__ljungström",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:21:08.442035+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "39187b78-613f-4bd4-8d65-2a643a536ae6",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/173635397",
+      "streaming": "https://music.amazon.com/artists/B0B4P978WP",
+      "youtube music": "https://music.youtube.com/channel/UCoB5u6as0rffY57C4VdYV7w"
+    },
+    "labels": [
+      "Firefly Entertainment"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'M. Ljungström', got 'M. Ljungström'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "M. Ljungström",
+    "mbid": "39187b78-613f-4bd4-8d65-2a643a536ae6",
+    "listeners": 75404,
+    "playcount": 327840,
+    "listener_play_ratio": 4.35,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/M.+Ljungstr%C3%B6m\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Li Zemin",
+      "Gianni Domenici",
+      "Mijongya",
+      "Nascondiglio",
+      "Martes Fiore"
+    ],
+    "top_tracks": [
+      {
+        "name": "Allena",
+        "listeners": 32897,
+        "playcount": 98231
+      },
+      {
+        "name": "Quietly Into The Night",
+        "listeners": 31344,
+        "playcount": 114198
+      },
+      {
+        "name": "I Believe",
+        "listeners": 20562,
+        "playcount": 88906
+      },
+      {
+        "name": "Proposals",
+        "listeners": 9193,
+        "playcount": 18167
+      },
+      {
+        "name": "The Hours",
+        "listeners": 2964,
+        "playcount": 6969
+      },
+      {
+        "name": "Unspoken",
+        "listeners": 457,
+        "playcount": 947
+      },
+      {
+        "name": "Passing Us By",
+        "listeners": 74,
+        "playcount": 122
+      },
+      {
+        "name": "Memoriam",
+        "listeners": 41,
+        "playcount": 52
+      },
+      {
+        "name": "Nostalgia",
+        "listeners": 26,
+        "playcount": 44
+      },
+      {
+        "name": "Sunnanvind",
+        "listeners": 15,
+        "playcount": 23
+      }
+    ],
+    "url": "https://www.last.fm/music/M.+Ljungstr%C3%B6m"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

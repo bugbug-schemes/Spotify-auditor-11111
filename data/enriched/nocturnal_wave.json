@@ -1,0 +1,195 @@
+{
+  "artist_name": "Nocturnal Wave",
+  "artist_id": "nocturnal_wave",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:04:22.619365+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 152078402,
+    "name": "Nocturnal Wave",
+    "nb_fan": 3,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/152078402",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f97c6d374a949eb578039451e8929e3d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Stepping Stone",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tucked Away",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Falling Into Place",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lone Wolf",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Water Under The Bridge",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Into the Distance",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reminiscing",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Hindsight",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2230031,
+    "name": "Nocturnal (15)",
+    "profile": "Nocturnal was for most of its existence a solo undertaking releasing two demos in 1995, the debut self titled album in 1997 and the follow up, ‘To The Far Horizons’ in 2000. This steady procession of releases marked Nocturnal as one of the earliest and most pioneering yet sadly underrated Black Metal entities in the Australian underground. Then finally 19 years later, 'The Greater Emptiness' was unleashed in 2019. \r\nP. Solus describes the second wave of black metal from which Nocturnal began as “a really fertile time with so much inspiration and great music realized within a very short period of time”. Black Metal became his raison d'être, “Being free from the technical trappings of a dying death metal scene allowed me to be free to explore a more emotional, darker form of music”. Nocturnal delves deeply into emotion with a sound characterized by traditional 90’s black metal; scathing and icy cold with rasping vocals and a sublime sense of anguish and melancholia that sets Nocturnal ap",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/Nocturnal-328071243884210/",
+      "https://shop.seancerecords.com/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 1,
+    "total_releases": 4,
+    "formats": [
+      "CD, Album",
+      "CD, Album, Ltd",
+      "Cass, S/Sided, Ltd"
+    ],
+    "labels": [
+      "Chamber (10)",
+      "Dominator Records (2)",
+      "Not On Label",
+      "Seance Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nocturnal Wave",
+    "mbid": "",
+    "listeners": 4700,
+    "playcount": 8663,
+    "listener_play_ratio": 1.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nocturnal+Wave\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Foster Zeta",
+      "Echo Dunes",
+      "Charlie Blue",
+      "Pallendum",
+      "Lucky Lorry"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lone Wolf",
+        "listeners": 4109,
+        "playcount": 7320
+      },
+      {
+        "name": "Water Under The Bridge",
+        "listeners": 786,
+        "playcount": 1317
+      },
+      {
+        "name": "Into the Distance",
+        "listeners": 13,
+        "playcount": 18
+      },
+      {
+        "name": "In Hindsight",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Reminiscing",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Nocturnal+Wave"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,509 @@
+{
+  "artist_name": "Karl-Martin Almqvist",
+  "artist_id": "karl-martin_almqvist",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:45:36.872096+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b24d3566-a76d-49ac-90eb-c2a5f7a796f0",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1355891",
+      "myspace": "https://myspace.com/karlmartinalmqvist"
+    },
+    "labels": [
+      "Ropeadope",
+      "Edition Longplay"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 3357821,
+    "name": "Karl-Martin Almqvist",
+    "nb_fan": 47,
+    "nb_album": 21,
+    "link": "https://www.deezer.com/artist/3357821",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2e97593e22703425e575ee7b7ab40b43/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anders Mogensen",
+      "Ari Bragi Karason",
+      "Carl Winther",
+      "Hans Andersson",
+      "Jacob Karlzon",
+      "Johnny Aman",
+      "Jonas Holgersson",
+      "Matthias Petri",
+      "Peter Asplund",
+      "Rasmus Sørensen",
+      "The Modern Jazz Trio"
+    ],
+    "contributor_roles": {
+      "Carl Winther": [
+        "Main"
+      ],
+      "Ari Bragi Karason": [
+        "Main"
+      ],
+      "Anders Mogensen": [
+        "Main"
+      ],
+      "Rasmus Sørensen": [
+        "Featured"
+      ],
+      "Matthias Petri": [
+        "Featured"
+      ],
+      "The Modern Jazz Trio": [
+        "Main"
+      ],
+      "Johnny Aman": [
+        "Main"
+      ],
+      "Jacob Karlzon": [
+        "Main"
+      ],
+      "Peter Asplund": [
+        "Main"
+      ],
+      "Hans Andersson": [
+        "Main"
+      ],
+      "Jonas Holgersson": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Autumn in New York",
+      "How Could You Know What Love is?",
+      "OD",
+      "For All We Know",
+      "You Go to My Head",
+      "Old Folks",
+      "Sideways",
+      "Gollum's Song (Arr. For chamber ensemble)",
+      "I'll Be Around",
+      "Solitude",
+      "Early Autumn",
+      "The Star-Crossed Lovers",
+      "Angel Eyes"
+    ],
+    "track_durations": [
+      179,
+      99,
+      418,
+      170,
+      340,
+      291,
+      291,
+      427,
+      246,
+      198,
+      287,
+      198,
+      268
+    ],
+    "track_ranks": [
+      208132,
+      100000,
+      113619,
+      33309,
+      116094,
+      30379,
+      31974,
+      71870,
+      55815,
+      123832,
+      41256,
+      31161,
+      36123
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 17,
+      "ep": 1,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Unclear Family",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at Christiania Jazz Club, 2nd set",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live at Christiania Jazz Club, 1st set",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Standards by the Nordic Quintet",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Song for the Weary",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment: Fourth Dimension",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Travelers",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment: This Time",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Originals by The Nordic Quintet",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment: Second View",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Believe",
+        "label": "",
+        "release_date": "2022-07-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Ballad Moment",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kiosk",
+        "label": "",
+        "release_date": "2014-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Reruns, Vol. 1",
+        "label": "",
+        "release_date": "2013-02-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Good to Be",
+        "label": "",
+        "release_date": "2012-08-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Double Door",
+        "label": "",
+        "release_date": "2006-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Full Circle",
+        "label": "",
+        "release_date": "2000-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sideways",
+        "label": "",
+        "release_date": "2021-07-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Goodbye",
+        "label": "",
+        "release_date": "2025-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Johnny's Theme",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Give Me Your Name",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Stéphane Belmondo",
+      "Matt Carmichael",
+      "Rhoda Scott",
+      "Mary Lou Williams",
+      "Fred Nardin",
+      "The Monty Alexander Trio",
+      "Anthony Wilson",
+      "Francesca Tandoi Trio",
+      "Bill Charlap Trio",
+      "Joshua Redman Quartet"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1355891,
+    "name": "Karl-Martin Almqvist",
+    "profile": "Swedish saxophonist and composer, born 24 November 1968 in Karlstad, Sweden.",
+    "realname": "",
+    "social_urls": [
+      "https://sv.wikipedia.org/wiki/Karl-Martin_Almqvist"
+    ],
+    "members": [],
+    "groups": [
+      "Nils Landgren Funk Unit",
+      "Blanco Y Negro",
+      "Radiojazzgruppen",
+      "Kiosk (7)",
+      "Norrbotten Big Band",
+      "Moksha (6)",
+      "Peter Asplund And His Orchestra",
+      "Maggi Olin Band",
+      "The Stockholm Jazz Orchestra",
+      "Monday Night Big Band",
+      "Karl-Martin Almqvist Quartet",
+      "Mathias Landæus House Of Approximation",
+      "The Bjærv Encounters",
+      "Flame Jazz Messengers",
+      "Patrik Boman Seven Piece Machine",
+      "ASJO (2)",
+      "Kristian Lind Trio",
+      "Jacob Karlzon Big5",
+      "SAWS (2)",
+      "Karl-Martin Almqvist Ababhemu Quartet",
+      "Robert Erlandsson Quartet"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 78,
+    "digital_only_releases": 22,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "16xFile, FLAC, Album",
+      "2x8\", EP, Cle",
+      "2xCD, Album",
+      "2xCD, Promo",
+      "Box, Ltd, Num + 6xCD, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album + File, WAV, Album",
+      "CD, Album, Ltd",
+      "CD, Album, Promo",
+      "CD, Album, RE, Son",
+      "CD, Comp",
+      "File, WAV, Single",
+      "LP, Album",
+      "LP, Album, Ltd, Num"
+    ],
+    "labels": [
+      "Amigo",
+      "Antfarm Records (2)",
+      "Arietta Discs",
+      "Art Of Life Records",
+      "BST (2), Spice Of Life, Amuse",
+      "Brus & Knaster",
+      "Caprice Records",
+      "Connective Records",
+      "Daion Recordings",
+      "Devious Recordings",
+      "Do Music Records",
+      "Double K Music",
+      "Double Moon Records",
+      "Dragon (8)",
+      "Edition Longplay",
+      "El Dingo Records",
+      "Erlandsson Upright Music",
+      "Fredriksson Music",
+      "Giant Sheep Music",
+      "Gundu Entertainment",
+      "Hoob Jazz",
+      "ILK Music",
+      "Imogena Records",
+      "Imogena Records, Imogena Records",
+      "InfoGram, InfoGram",
+      "Jaskaa Tmi",
+      "KSJazz",
+      "Kopasetic",
+      "LJ Records (2)",
+      "Moserobie Music Production",
+      "Naxos",
+      "Not On Label",
+      "Pama Records (2)",
+      "Phono Suecia",
+      "Pitch Blue Records",
+      "Pitch Blue Records, Pitch Blue Records",
+      "Prophone",
+      "Reingold Records",
+      "Ropeadope Music Entertainment LLC",
+      "SFÄR",
+      "Sittel Records",
+      "Stockholm Jazz Records",
+      "Ze Pirats",
+      "fc jazz",
+      "pb7"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Karl-Martin Almqvist",
+    "mbid": "b24d3566-a76d-49ac-90eb-c2a5f7a796f0",
+    "listeners": 42377,
+    "playcount": 139929,
+    "listener_play_ratio": 3.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Karl-Martin+Almqvist\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Copenhagen Jazzexperience",
+      "Sebastian Gahler",
+      "Art Roho",
+      "The Mellowtones",
+      "Thomas Sejthen Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Autumn in New York",
+        "listeners": 12596,
+        "playcount": 29067
+      },
+      {
+        "name": "Penelope",
+        "listeners": 12585,
+        "playcount": 25931
+      },
+      {
+        "name": "Contemplation",
+        "listeners": 10995,
+        "playcount": 23757
+      },
+      {
+        "name": "OD",
+        "listeners": 6227,
+        "playcount": 13105
+      },
+      {
+        "name": "Chelsea Bridge",
+        "listeners": 4612,
+        "playcount": 12346
+      },
+      {
+        "name": "For All We Know",
+        "listeners": 3953,
+        "playcount": 11061
+      },
+      {
+        "name": "Moonlight in Vermont",
+        "listeners": 3740,
+        "playcount": 7395
+      },
+      {
+        "name": "Loneliness",
+        "listeners": 2313,
+        "playcount": 3386
+      },
+      {
+        "name": "Old Folks",
+        "listeners": 1971,
+        "playcount": 6128
+      },
+      {
+        "name": "Easy Living",
+        "listeners": 945,
+        "playcount": 1561
+      }
+    ],
+    "url": "https://www.last.fm/music/Karl-Martin+Almqvist"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

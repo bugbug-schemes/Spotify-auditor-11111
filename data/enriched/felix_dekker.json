@@ -1,0 +1,168 @@
+{
+  "artist_name": "Felix Dekker",
+  "artist_id": "felix_dekker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:36:31.293095+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 290943191,
+    "name": "Felix Dekker",
+    "nb_fan": 0,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/290943191",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/2211cca27aae3b8507c0ef22f7dd3379/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Trees Of The Woods",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rooted in the Rain 396 Hz",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Flare Of Dawn",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mellow Effulgence",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grow, My Dear",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "South From Here",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Signs of Life",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Felix Dekker",
+    "mbid": "",
+    "listeners": 6707,
+    "playcount": 33084,
+    "listener_play_ratio": 4.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Felix+Dekker\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lorien Sky",
+      "Infinity Drifter",
+      "Constant Future",
+      "Collected Dreams",
+      "Enchanted Blossom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Grow, My Dear",
+        "listeners": 5447,
+        "playcount": 26946
+      },
+      {
+        "name": "Mellow Effulgence",
+        "listeners": 1608,
+        "playcount": 5227
+      },
+      {
+        "name": "Flare Of Dawn",
+        "listeners": 270,
+        "playcount": 674
+      },
+      {
+        "name": "South From Here",
+        "listeners": 89,
+        "playcount": 210
+      },
+      {
+        "name": "Rooted in the Rain 396 Hz",
+        "listeners": 1,
+        "playcount": 14
+      },
+      {
+        "name": "Signs of Life",
+        "listeners": 1,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Felix+Dekker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

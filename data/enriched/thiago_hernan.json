@@ -1,0 +1,127 @@
+{
+  "artist_name": "Thiago Hernan",
+  "artist_id": "thiago_hernan",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:39:16.764545+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Thiago Hernan', got 'Thiago Vernal'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8218578,
+    "name": "Thiago Zacchi",
+    "profile": "Regarded as one of Brazil's most prominent DJ’s and producers, Thiago Zacchi aka [b]ZAC[/b] is elevating his career to new heights, captivating audiences worldwide.\r\n\r\nAt the heart of the Brazilian electronic music scene, ZAC not only commands the stage as a DJ, but also stands as an internationally renowned producer, director of the acclaimed label [Fluxo], and a revered professor of music production.\r\n\r\nHis influence extends far beyond his performance, as he leads, inspires, and empowers a whole new wave of electronic music creators.\r\n\r\nWith unwavering dedication spanning over 15 years, ZAC continues to achieve a remarkable level of recognition in his artistic career.\r\n\r\nHaving already released over 150 tracks, his path as a music producer is constantly showing concrete and impressive result, accumulating millions of streams and receiving support from legends such as Hernán Cattaneo, John Digweed, Joris Voorn, Vintage Culture, Solomun and Tale Of Us.\r\n\r\nAs resident DJ at his country'",
+    "realname": "Thiago Zacchi aka ZAC",
+    "social_urls": [
+      "https://www.dj-zac.com/",
+      "https://open.spotify.com/artist/5xUXAwPZ98FzFgjTNOIPyv",
+      "https://www.youtube.com/channel/UCskUFc1bB5Pef9hL_IUNoaQ",
+      "https://music.apple.com/us/artist/zac/1296879055",
+      "https://soundcloud.com/zac_djzac",
+      "https://www.instagram.com/dj.zac/",
+      "https://www.facebook.com/zac.thiagozacchi",
+      "https://open.spotify.com/playlist/37i9dQZF1DZ06evO3gsIiR",
+      "https://ra.co/dj/djzac",
+      "https://pt.wikipedia.org/wiki/ZAC",
+      "https://es.wikipedia.org/wiki/ZAC_(Dj)",
+      "https://www.beatport.com/artist/zac/50496",
+      "https://www.youtube.com/c/ZACTV",
+      "https://music.youtube.com/channel/UCskUFc1bB5Pef9hL_IUNoaQ",
+      "https://www.deezer.com/en/artist/277406371",
+      "https://x.com/thiago_zac",
+      "https://www.songkick.com/artists/552077",
+      "https://musicbrainz.org/artist/d3c14dd8-6c03-4745-8b3a-d44a06fc3a8b ",
+      "https://www.1001tracklists.com/dj/zac/index.html",
+      "https://www.1001tracklists.com/artist/25ytcwnw/zac/index.html",
+      "https://songstats.com/artist/nkci1reh/zac",
+      "https://www.shazam.com/artist/zac/1296879055",
+      "https://tidal.com/browse/artist/49748485",
+      "https://www.traxsource.com/artist/393874/zac",
+      "http://linktr.ee/dj.zac"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Thiago Hernan",
+    "mbid": "",
+    "listeners": 2829,
+    "playcount": 10552,
+    "listener_play_ratio": 3.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Thiago+Hernan\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Heiko Kolt",
+      "Magnus Sakamura",
+      "Antoine FAURÉ",
+      "Kuro Yama",
+      "Sonny Klimp"
+    ],
+    "top_tracks": [
+      {
+        "name": "Laura",
+        "listeners": 2299,
+        "playcount": 9389
+      },
+      {
+        "name": "Noeva",
+        "listeners": 566,
+        "playcount": 1162
+      },
+      {
+        "name": "Always and Forever",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Thiago+Hernan"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

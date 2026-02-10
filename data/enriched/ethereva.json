@@ -1,0 +1,121 @@
+{
+  "artist_name": "Ethereva",
+  "artist_id": "ethereva",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:31:39.704881+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Ethereva', got 'Sheeva'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ethereva",
+    "mbid": "",
+    "listeners": 28046,
+    "playcount": 148189,
+    "listener_play_ratio": 5.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ethereva\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Meta Theta",
+      "Kepler Tapestry",
+      "Astralis Flow",
+      "Florian Porterfield",
+      "Prodigieux"
+    ],
+    "top_tracks": [
+      {
+        "name": "Healing and Comfort (Ambient Sleep Version)",
+        "listeners": 17247,
+        "playcount": 99991
+      },
+      {
+        "name": "Place of Peace (ambient sleep)",
+        "listeners": 7000,
+        "playcount": 28060
+      },
+      {
+        "name": "Place of Peace (spa)",
+        "listeners": 2373,
+        "playcount": 6623
+      },
+      {
+        "name": "Tender Glow (spa)",
+        "listeners": 2019,
+        "playcount": 5293
+      },
+      {
+        "name": "Calming Waters (Meditation Version)",
+        "listeners": 957,
+        "playcount": 2136
+      },
+      {
+        "name": "Calming Waters (Ambient Version)",
+        "listeners": 897,
+        "playcount": 1876
+      },
+      {
+        "name": "Place of Peace (meditation)",
+        "listeners": 523,
+        "playcount": 1451
+      },
+      {
+        "name": "Healing and Comfort (Meditation Version)",
+        "listeners": 301,
+        "playcount": 706
+      },
+      {
+        "name": "Tranquil Dawn (spa)",
+        "listeners": 286,
+        "playcount": 596
+      },
+      {
+        "name": "Forest Bliss (Spa Version)",
+        "listeners": 245,
+        "playcount": 473
+      }
+    ],
+    "url": "https://www.last.fm/music/Ethereva"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

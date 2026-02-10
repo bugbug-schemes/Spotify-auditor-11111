@@ -1,0 +1,570 @@
+{
+  "artist_name": "Goland",
+  "artist_id": "goland",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:54:02.650260+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "47a75cd0-c19e-40e6-ac9f-e0f06934a608",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "hip hop",
+      "chillwave",
+      "downtempo",
+      "boom bap",
+      "instrumental hip hop",
+      "instrumental",
+      "lo-fi",
+      "lo-fi hip hop"
+    ],
+    "aliases": [
+      "Henrik Göransson"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/5350237",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/goland/217053",
+      "soundcloud": "https://soundcloud.com/golandlofi",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/goland/217053",
+      "youtube music": "https://music.youtube.com/channel/UCKkMUR1ypZwyzxO_lNrcZRg"
+    },
+    "labels": [
+      "LoFi Café Records",
+      "Kindbrew",
+      "[no label]",
+      "CLOVR Records",
+      "Lofi Chill Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5350237,
+    "name": "Goland",
+    "nb_fan": 21,
+    "nb_album": 48,
+    "link": "https://www.deezer.com/artist/5350237",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/428df9b2b053a6817aaa4b8e5a898dc9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Dreamfield",
+      "Fika Beats",
+      "Lo-Fi Luke",
+      "Marc Brave",
+      "Pakora"
+    ],
+    "contributor_roles": {
+      "Pakora": [
+        "Main"
+      ],
+      "Lo-Fi Luke": [
+        "Main"
+      ],
+      "Marc Brave": [
+        "Main"
+      ],
+      "Fika Beats": [
+        "Main"
+      ],
+      "Dreamfield": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Tomorrow",
+      "Side by Side",
+      "Call Me",
+      "Skyline",
+      "Daydrinks",
+      "Dozing Off",
+      "Thinking About It",
+      "Closure",
+      "Waiting for Coffee",
+      "Soft Feathers",
+      "Quietude",
+      "Blue Skies",
+      "Pulse",
+      "Journey",
+      "Borderline",
+      "Take Me Home",
+      "New Habits"
+    ],
+    "track_durations": [
+      111,
+      153,
+      134,
+      111,
+      131,
+      169,
+      138,
+      161,
+      142,
+      155,
+      180,
+      145,
+      127,
+      148,
+      150,
+      150,
+      132
+    ],
+    "track_ranks": [
+      266273,
+      233161,
+      236145,
+      26002,
+      74926,
+      21261,
+      62972,
+      32635,
+      38394,
+      6899,
+      10067,
+      21081,
+      53530,
+      25758,
+      21690,
+      1945,
+      62299
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 46
+    },
+    "albums": [
+      {
+        "title": "Seeking Solace",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Verve (Alternative Mixes)",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "шрамы (prod.by ksatab)",
+        "label": "",
+        "release_date": "2025-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Skies",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Girl In The Yellow Dress",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dahlia",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whirlwind",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fresco",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Journey",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "So Far So Good",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Borderline",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quietude",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verve",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Meliaia",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hearts Collide",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Shadow",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dream Follower",
+        "label": "",
+        "release_date": "2023-05-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Unknown",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bus Ride",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Feathers",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lucid Dreaming",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One More Time",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take Me Home",
+        "label": "",
+        "release_date": "2023-01-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Collide",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old Friend",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Floating On Clouds",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unwind",
+        "label": "",
+        "release_date": "2022-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Enchanted Rose",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serenity",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Canopy",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 474882,
+    "name": "Arnold Goland",
+    "profile": "American arranger, songwriter and orchestrator.\r\n\r\nBorn April 26, 1928 in Brooklyn, New York, USA\r\nDied September 24, 2021 in Van Nuys, California, USA\r\n\r\n",
+    "realname": "",
+    "social_urls": [
+      "https://www.imdb.com/name/nm0324883/",
+      "https://secondhandsongs.com/artist/21316"
+    ],
+    "members": [],
+    "groups": [
+      "Arnold Goland And Orchestra",
+      "The Arnold Goland Singers"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 55,
+    "digital_only_releases": 45,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "18xCD + DVD-V + Box, Comp, Ltd",
+      "18xFile, AAC, Comp, 256",
+      "2xCD, Album, Comp",
+      "2xCD, Comp",
+      "2xLP, Comp",
+      "3xCD, Comp",
+      "3xCD, Comp + Box",
+      "3xCD, Comp, Dlx, Ltd, 40t",
+      "4xCD, Album, Comp",
+      "4xCD, Comp",
+      "4xFile, FLAC",
+      "5xCD, Comp + Box",
+      "7\", Mono, Promo",
+      "7\", Single",
+      "7\", Single, Promo, Styrene",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, RE + 2xCD, Album, RE + 2xCD, Album, RE ",
+      "CD, Album, RE + CD, Album, RE + CD, Album, RE + CD",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, Mono",
+      "CD, Comp, Mono, RM",
+      "CD, Comp, RE",
+      "CD, Comp, RE + CD, Comp + Box",
+      "CD, Comp, RM",
+      "CD, MiniAlbum",
+      "File, MP3, Single",
+      "LP, Comp, RM, Pur",
+      "Reel, 4tr Stereo, 7\" Reel"
+    ],
+    "labels": [
+      "Ace",
+      "Alma Espanola",
+      "BGO Records",
+      "Butlers, Electric Lounge",
+      "Caja Arquitetura Cultural, Prado Records",
+      "Collectables, Sony BMG",
+      "Columbia",
+      "Coyote Records (14), Simone Records (2)",
+      "EMI",
+      "EMI Music France, Sony BMG Music Entertainment",
+      "Eternal Sunday",
+      "Funky French League Records",
+      "Globule Music Publishers, Inc.",
+      "Houei Music",
+      "Jasmine Records",
+      "Junnu Kylmälä Music",
+      "Mercury, Universal Music France",
+      "Mercury, Universal Music France, Label Panthéon",
+      "Monitor (2), Warner Music Czech Republic",
+      "Moon Records (5)",
+      "Music Club Deluxe",
+      "New Age (4)",
+      "Not On Label",
+      "Omagatoki",
+      "Orange Records (3), ポペロチカレコーズ",
+      "PolyGram Collections",
+      "Rapini & Seyssel, Soundelux",
+      "Real Gone Music",
+      "Real Gone Music, Real Gone Music, Real Gone Music",
+      "Redder Records",
+      "Righteous",
+      "Sire",
+      "Sonic Scenery",
+      "Sony BMG Music Entertainment, Bluebird (2)",
+      "Sony Music",
+      "Supraphon",
+      "Tchibo, Tchibo",
+      "Teensville Records",
+      "Teensville Records, Teensville Records",
+      "Top Quality Rock & Roll",
+      "Universal Music",
+      "Universal Music France, Label Panthéon, Mercury, Kachalou",
+      "Universal Music France, Mercury, Label Panthéon, Kachalou",
+      "Universal Music Strategic Marketing",
+      "VL-Musiikki Oy",
+      "Valitut Palat",
+      "Wagram Music",
+      "Warner Music France",
+      "Warner Music Group, Radio 1 (3)",
+      "X-Energy Records, Energy Production",
+      "Zipmix Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "GOLAND",
+    "mbid": "",
+    "listeners": 39529,
+    "playcount": 137318,
+    "listener_play_ratio": 3.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/GOLAND\">Read more on Last.fm</a>",
+    "tags": [
+      "lofi",
+      "lofi beats"
+    ],
+    "similar_artists": [
+      "Wishkid",
+      "Summerfields",
+      "Hendy",
+      "Reysi",
+      "Strong.AL&"
+    ],
+    "top_tracks": [
+      {
+        "name": "Collide",
+        "listeners": 12040,
+        "playcount": 24129
+      },
+      {
+        "name": "Old Friend",
+        "listeners": 8103,
+        "playcount": 18699
+      },
+      {
+        "name": "New Habits",
+        "listeners": 5723,
+        "playcount": 14771
+      },
+      {
+        "name": "Emotions",
+        "listeners": 5191,
+        "playcount": 8870
+      },
+      {
+        "name": "Floating On Clouds",
+        "listeners": 3898,
+        "playcount": 7443
+      },
+      {
+        "name": "Skyline",
+        "listeners": 3034,
+        "playcount": 7339
+      },
+      {
+        "name": "Dream Follower",
+        "listeners": 2356,
+        "playcount": 4192
+      },
+      {
+        "name": "Lazy",
+        "listeners": 2310,
+        "playcount": 4390
+      },
+      {
+        "name": "Waiting for Coffee",
+        "listeners": 2071,
+        "playcount": 4550
+      },
+      {
+        "name": "Past Love",
+        "listeners": 2060,
+        "playcount": 4227
+      }
+    ],
+    "url": "https://www.last.fm/music/GOLAND"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,332 @@
+{
+  "artist_name": "Gillian Spencer Trio",
+  "artist_id": "gillian_spencer_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:52:08.398686+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e26e70c5-b52f-4290-8f65-86fff5d5a8bd",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/98746512",
+      "purchase for download": "https://music.apple.com/us/artist/1520366753",
+      "soundcloud": "https://soundcloud.com/gillianspencertrio",
+      "streaming": "https://tidal.com/artist/20160472",
+      "youtube music": "https://music.youtube.com/channel/UCbh7g1XyxncSgzaJvEyEwkw"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 98746512,
+    "name": "Gillian Spencer Trio",
+    "nb_fan": 27,
+    "nb_album": 19,
+    "link": "https://www.deezer.com/artist/98746512",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/867c1618870637cad25143a636efc209/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Solace",
+      "Frosty the snowman",
+      "And All Is Well Now",
+      "Have You Seen Me Lately",
+      "Desire",
+      "I Promise to Love"
+    ],
+    "track_durations": [
+      176,
+      129,
+      189,
+      170,
+      240,
+      172
+    ],
+    "track_ranks": [
+      21780,
+      22342,
+      50876,
+      9758,
+      69301,
+      101383
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 6,
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Fresh Air",
+        "label": "",
+        "release_date": "2024-11-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Much of Nothing",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live and Let Live",
+        "label": "",
+        "release_date": "2024-09-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Forward Thinker",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Reward",
+        "label": "",
+        "release_date": "2024-03-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Late Night",
+        "label": "",
+        "release_date": "2023-02-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Something Wild",
+        "label": "",
+        "release_date": "2025-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost in Your Eyes",
+        "label": "",
+        "release_date": "2024-06-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Indigo",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solace",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Neon Nightscapes",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Azure Affair",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Swingin' Skylines",
+        "label": "",
+        "release_date": "2024-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Rain",
+        "label": "",
+        "release_date": "2023-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Have You Seen Me Lately",
+        "label": "",
+        "release_date": "2023-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jazz Lovin in the Rain",
+        "label": "",
+        "release_date": "2022-12-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rainy Days Jazz",
+        "label": "",
+        "release_date": "2022-12-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Desire",
+        "label": "",
+        "release_date": "2021-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here Comes Santa Claus",
+        "label": "",
+        "release_date": "2020-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Charlie Haden",
+      "Scott Hamilton",
+      "Bill Evans",
+      "Ben Webster",
+      "The Dave Brubeck Quartet",
+      "Red Garland",
+      "Wynton Marsalis",
+      "Keith Jarrett",
+      "Dexter Gordon",
+      "Bill Charlap Trio"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gillian Spencer Trio",
+    "mbid": "e26e70c5-b52f-4290-8f65-86fff5d5a8bd",
+    "listeners": 103106,
+    "playcount": 408774,
+    "listener_play_ratio": 3.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gillian+Spencer+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Greydon Park Band",
+      "More Than Jazz",
+      "Norberg",
+      "Red Brick Lane",
+      "Kuipers & Winter"
+    ],
+    "top_tracks": [
+      {
+        "name": "And All Is Well Now",
+        "listeners": 40890,
+        "playcount": 126063
+      },
+      {
+        "name": "Desire",
+        "listeners": 32779,
+        "playcount": 90991
+      },
+      {
+        "name": "I Promise to Love",
+        "listeners": 19317,
+        "playcount": 45466
+      },
+      {
+        "name": "In the Rain",
+        "listeners": 18875,
+        "playcount": 41689
+      },
+      {
+        "name": "Lost in Your Eyes",
+        "listeners": 16285,
+        "playcount": 35898
+      },
+      {
+        "name": "Frosty the snowman",
+        "listeners": 9917,
+        "playcount": 18958
+      },
+      {
+        "name": "Have You Seen Me Lately",
+        "listeners": 8615,
+        "playcount": 21458
+      },
+      {
+        "name": "Solace",
+        "listeners": 4884,
+        "playcount": 10849
+      },
+      {
+        "name": "I'm Glad I Met You",
+        "listeners": 3699,
+        "playcount": 8638
+      },
+      {
+        "name": "Swingin' Skylines",
+        "listeners": 3528,
+        "playcount": 7088
+      }
+    ],
+    "url": "https://www.last.fm/music/Gillian+Spencer+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

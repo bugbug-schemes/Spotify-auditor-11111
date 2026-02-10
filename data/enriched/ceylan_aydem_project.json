@@ -1,0 +1,161 @@
+{
+  "artist_name": "Ceylan Aydem Project",
+  "artist_id": "ceylan_aydem_project",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:02:22.595076+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 124810072,
+    "name": "Ceylan Aydem Project",
+    "nb_fan": 8,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/124810072",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e01183e092e5589f27129c1d20ac8e71/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Stiltje",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Light Veil",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Transience",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forward Momentum",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Celestial Chimes",
+        "label": "",
+        "release_date": "2023-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clear Blue",
+        "label": "",
+        "release_date": "2022-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ceylan Aydem Project",
+    "mbid": "",
+    "listeners": 43615,
+    "playcount": 240700,
+    "listener_play_ratio": 5.52,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ceylan+Aydem+Project\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mystery Ark",
+      "South Noon",
+      "Treasures Meditation Flow",
+      "Aiden Gaarder",
+      "Gabriel Derus"
+    ],
+    "top_tracks": [
+      {
+        "name": "Clear Blue",
+        "listeners": 28782,
+        "playcount": 155765
+      },
+      {
+        "name": "Forward Momentum",
+        "listeners": 15636,
+        "playcount": 67318
+      },
+      {
+        "name": "Nephology",
+        "listeners": 2168,
+        "playcount": 7286
+      },
+      {
+        "name": "Transience",
+        "listeners": 2055,
+        "playcount": 6354
+      },
+      {
+        "name": "Stiltje",
+        "listeners": 1966,
+        "playcount": 3952
+      },
+      {
+        "name": "Celestial Chimes",
+        "listeners": 20,
+        "playcount": 25
+      }
+    ],
+    "url": "https://www.last.fm/music/Ceylan+Aydem+Project"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,182 @@
+{
+  "artist_name": "Aari Kumar",
+  "artist_id": "aari_kumar",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:40:53.924342+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "23b7a2e0-fe9e-4330-93a2-c13e80634cd5",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/171771657",
+      "purchase for download": "https://music.apple.com/us/artist/1606760268"
+    },
+    "labels": [
+      "Firefly Entertainment AB"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 171771657,
+    "name": "Aari Kumar",
+    "nb_fan": 2,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/171771657",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1af84be875d3728f505d26f9360584ac/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Evermore",
+        "label": "",
+        "release_date": "2023-04-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Memories",
+        "label": "",
+        "release_date": "2025-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sisu",
+        "label": "",
+        "release_date": "2023-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Epiphany",
+        "label": "",
+        "release_date": "2022-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aari Kumar",
+    "mbid": "23b7a2e0-fe9e-4330-93a2-c13e80634cd5",
+    "listeners": 43222,
+    "playcount": 228332,
+    "listener_play_ratio": 5.28,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aari+Kumar\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Neoline Ewing",
+      "Ardah",
+      "Elliott Duncan",
+      "Alcine Sala",
+      "Tilman Stoiber"
+    ],
+    "top_tracks": [
+      {
+        "name": "Epiphany",
+        "listeners": 25378,
+        "playcount": 121303
+      },
+      {
+        "name": "Evermore",
+        "listeners": 20811,
+        "playcount": 100091
+      },
+      {
+        "name": "Memories",
+        "listeners": 2201,
+        "playcount": 6535
+      },
+      {
+        "name": "Cynosure",
+        "listeners": 89,
+        "playcount": 168
+      },
+      {
+        "name": "Milestone",
+        "listeners": 54,
+        "playcount": 90
+      },
+      {
+        "name": "Imaginative Reality",
+        "listeners": 44,
+        "playcount": 130
+      },
+      {
+        "name": "Foreseen",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Sisu",
+        "listeners": 2,
+        "playcount": 6
+      },
+      {
+        "name": "Aegis",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Aari+Kumar"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

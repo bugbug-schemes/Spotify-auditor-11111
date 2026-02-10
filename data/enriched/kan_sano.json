@@ -1,0 +1,580 @@
+{
+  "artist_name": "Kan Sano",
+  "artist_id": "kan_sano",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:44:24.007947+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ab3e9c05-3bb8-4f08-9a8d-ee5601ed9ab6",
+    "type": "Person",
+    "country": "JP",
+    "area": "Japan",
+    "begin_date": "1983-08-06",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz-funk"
+    ],
+    "aliases": [
+      "Kan Sano",
+      "佐野観"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0002552145",
+      "discogs": "https://www.discogs.com/artist/1233193",
+      "free streaming": "https://www.deezer.com/artist/488008",
+      "myspace": "https://myspace.com/kansano",
+      "official homepage": "http://kansano.com/",
+      "purchase for download": "https://itunes.apple.com/jp/artist/id291537675",
+      "social network": "https://www.instagram.com/k.an.s.an.o/",
+      "soundcloud": "https://soundcloud.com/kan-sano",
+      "vgmdb": "https://vgmdb.net/artist/31842",
+      "wikidata": "https://www.wikidata.org/wiki/Q17219169",
+      "youtube": "https://www.youtube.com/channel/UCST1kRV_vch4fFxRYAnrQiQ"
+    },
+    "labels": [
+      "VOZ Records",
+      "KADOKAWA",
+      "Solar Sound System",
+      "origami PRODUCTIONS",
+      "Circulations",
+      "Razor‐N‐Tape",
+      "HMV record shop",
+      "PARK"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 488008,
+    "name": "Kan Sano",
+    "nb_fan": 408,
+    "nb_album": 26,
+    "link": "https://www.deezer.com/artist/488008",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/72f4f6bbaf0e718608e3dc501cb91f3f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Bokoya",
+      "FloFilz",
+      "Jelisa",
+      "LUPIN THE THIRD JAM CREW",
+      "RYUTist",
+      "Sayuri Ishikawa",
+      "Sen Morimoto"
+    ],
+    "contributor_roles": {
+      "Sen Morimoto": [
+        "Main"
+      ],
+      "Bokoya": [
+        "Main"
+      ],
+      "FloFilz": [
+        "Main"
+      ],
+      "LUPIN THE THIRD JAM CREW": [
+        "Main"
+      ],
+      "Sayuri Ishikawa": [
+        "Featured"
+      ],
+      "Jelisa": [
+        "Main"
+      ],
+      "RYUTist": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "P-mamama",
+      "On My Way Home (Blue Lab Beats Remix)",
+      "Go",
+      "Woof (Kan Sano Remix)",
+      "My Girl -Live in Tokyo 2023",
+      "Senchimentaru Way",
+      "LOVE SQUALL feat. Sayuri Ishikawa - LUPIN THE THIRD JAM Remixed by Kan Sano",
+      "Dream In (TiMT Remix)",
+      "old folk house",
+      "I Don't Want To Leave",
+      "Think Twice",
+      "Stars In Your Eyes -Live in Tokyo 2023",
+      "Adam’s Apple’s Christmas",
+      "Jikan Dayo"
+    ],
+    "track_durations": [
+      336,
+      228,
+      230,
+      224,
+      193,
+      189,
+      210,
+      179,
+      128,
+      270,
+      268,
+      246,
+      218,
+      247
+    ],
+    "track_ranks": [
+      165764,
+      24931,
+      154901,
+      46592,
+      37775,
+      46239,
+      13848,
+      29636,
+      3184,
+      6872,
+      56100,
+      2175,
+      6981,
+      1802
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 1,
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "Live in Tokyo 2023",
+        "label": "",
+        "release_date": "2024-11-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Tokyo State Of Mind",
+        "label": "",
+        "release_date": "2022-04-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fantastic Farewell (2021 Remastered)",
+        "label": "",
+        "release_date": "2021-12-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sunshine EP",
+        "label": "",
+        "release_date": "2013-09-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kamisama no Melody",
+        "label": "",
+        "release_date": "2025-01-22",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "White Out feat. Maika Loubté & 柴田聡子",
+        "label": "",
+        "release_date": "2026-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "bedtime story",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "old folk house",
+        "label": "",
+        "release_date": "2025-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Don't Want To Leave",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sorekara",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trapped (Kan Sano Remix)",
+        "label": "",
+        "release_date": "2025-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "WHATAWON",
+        "label": "",
+        "release_date": "2024-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On My Way Home (Blue Lab Beats Remix)",
+        "label": "",
+        "release_date": "2024-05-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "透明なガール -Dye me- (feat. ひかり) (Kan Sano Remix)",
+        "label": "",
+        "release_date": "2023-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adam’s Apple’s Christmas",
+        "label": "",
+        "release_date": "2023-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Senchimentaru Way",
+        "label": "",
+        "release_date": "2023-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "P-mamama",
+        "label": "",
+        "release_date": "2023-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Go",
+        "label": "",
+        "release_date": "2023-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Woof (Kan Sano Remix)",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Show Me How (Kan Sano Remix)",
+        "label": "",
+        "release_date": "2021-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "2時のパレード Kan Sano Remix",
+        "label": "",
+        "release_date": "2021-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clown -douke- (Kan Sano Remix)",
+        "label": "",
+        "release_date": "2021-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "LOVE SQUALL feat. Sayuri Ishikawa - LUPIN THE THIRD JAM Remixed by Kan Sano",
+        "label": "",
+        "release_date": "2020-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midikayo",
+        "label": "",
+        "release_date": "2020-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Little LINE",
+        "label": "",
+        "release_date": "2018-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "MODERN LINE（Kan Sano LINE Remix）",
+        "label": "",
+        "release_date": "2017-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Jabberloop",
+      "Jazztronik",
+      "Chihiro Yamanaka",
+      "Manami Kakudo",
+      "ADAM at",
+      "toconoma",
+      "U-Zhaan",
+      "fox capture plan",
+      "Pachakuti",
+      "Yussef Dayes"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1233193,
+    "name": "Kan Sano",
+    "profile": "Keyboardist, track-maker, and producer, Kan Sano began his collegiate musical education studies of Jazz at Berklee College of Music in Boston, MA, USA, graduating in 2006.\r\n\r\nWhile being a leading figure in the beat-music scene, he enjoys the freedom of improvisations on the piano in his own unique style, which can be described as a fusion of jazz and classical music. In addition to his main instrument, the piano, Sano also adds the trumpet, bass, and drums to his musical arsenal during his live band performance sets, which bring the audience to a standing frenzy.\r\n\r\nHis released songs \"On My Way Home,\" \"DT pt. 2,\" and \"Sit At The Piano\" have each been streamed more than 10 million times on various platforms. While establishing himself specifically as a Japanese musician, he became the first Japanese Artist to release a song on the prestigious UK label, Decca Records.\r\n\r\nPreviously recognized as a member of the band HEX, Kan Sano is active in both domestic Japanese markets and internat",
+    "realname": "Kan Sano",
+    "social_urls": [
+      "http://kansano.com/",
+      "http://soundcloud.com/kan-sano",
+      "http://twitter.com/kansano",
+      "http://kansano.blog.shinobi.jp/",
+      "http://www.myspace.com/kansano",
+      "http://kansano.bandcamp.com"
+    ],
+    "members": [],
+    "groups": [
+      "Last Electro"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 57,
+    "digital_only_releases": 43,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "10xFile, FLAC, Comp",
+      "12\"",
+      "12\", EP",
+      "12\", Ltd",
+      "12xFile, MP3, 320",
+      "12xFile, MP3, Comp, 320",
+      "17xFile, FLAC, Album, Comp, Dlx, 24b",
+      "2xCD, Album + Blu-ray",
+      "2xCD, Album, Dlx, Pap",
+      "2xCD, Mixed",
+      "2xLP, Album, Comp",
+      "41xFile, AAC, Album",
+      "6xFile, WAV, EP",
+      "7\"",
+      "7\", EP",
+      "7\", Ltd",
+      "7\", RSD, Ltd",
+      "7\", Single",
+      "7\", Single, Ltd",
+      "7\", Yel",
+      "7xFile, FLAC",
+      "9xFile, MP3, 320",
+      "CD",
+      "CD, Album",
+      "CD, Album, Ltd, Mixed",
+      "CD, Comp",
+      "CD, Comp, Mixed",
+      "CD, M/Print + DVD-V, NTSC + Ltd",
+      "CD, Maxi",
+      "CD, Maxi + DVD-V, NTSC",
+      "CD, MiniAlbum",
+      "CD, Mixed",
+      "CD, Mixed, Mixtape",
+      "CD, Promo",
+      "CD, Smplr",
+      "CDi, Single",
+      "CDr, Mixed",
+      "DVDr, DVD-V, Ltd",
+      "File, FLAC, Single",
+      "File, MP3, 320",
+      "File, WAV + File, MP3",
+      "File, WAV, Single",
+      "LP",
+      "LP, Album",
+      "LP, Album, Ltd",
+      "LP, Dlx",
+      "LP, RSD, Comp, Ltd",
+      "Minimax"
+    ],
+    "labels": [
+      "AWDR/LR2",
+      "Avex Marketing Inc.",
+      "Avex Trax",
+      "Blue Note",
+      "Circulations",
+      "Dawn Dawn Dawn Records",
+      "Decca (UMO)",
+      "Disc Minor",
+      "Fetanu",
+      "Flying Dog",
+      "FreeForm Records",
+      "Freestyle Records (2)",
+      "HMV Record Shop",
+      "Happy Music",
+      "Insense Music Works Inc.",
+      "InterMusic (3)",
+      "Kaikoo, Kicks Lab.",
+      "Key Of Life+",
+      "King Records",
+      "Kissing Fish Records",
+      "Kissing Fish Records, Park (5)",
+      "Lo-Vibes Recordings",
+      "Lunch Time Record",
+      "Lunch Time, Tuff Beats",
+      "Manhattan Recordings",
+      "Manhattan Records (4)",
+      "Menace",
+      "Mono Creation",
+      "Moph Record",
+      "Ninetofive Records",
+      "Not On Label",
+      "Not On Label (Junes K Self-released)",
+      "Not On Label (Kan Sano Self-released)",
+      "OMAKE CLUB",
+      "Oil Works, Oilworks Film",
+      "Origami Productions",
+      "P-Vine Records",
+      "Pirates Records (4)",
+      "Progressive Form",
+      "Razor-N-Tape",
+      "Razor-N-Tape 45",
+      "SAR (3)",
+      "SME Records",
+      "Soul Unsigned",
+      "Tokyo Dawn Records",
+      "Tokyo Records (4)",
+      "Ubeat Records",
+      "Ultra Distribution",
+      "Ultra-Vybe, Inc.",
+      "Universal Music",
+      "Urban Discos",
+      "Wonderful Noise Productions"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "KAN SANO",
+    "mbid": "",
+    "listeners": 112360,
+    "playcount": 710538,
+    "listener_play_ratio": 6.32,
+    "bio_exists": true,
+    "bio_summary": "Kan was born in kobe, Japan in 1983 and started to play the piano at 1995. He studied piano & composition at the Berklee College of Music in Boston, USA. His own jazz group performed at Monterey Jazz Festival in 2003 & 2004. Kan has been working as pianist, composer, arranger, producer & DJ around Tokyo since 2006. He appeared on many labels such as Ubeat records, Soulunsigned, Origami Productions, Inter Music, Orange Voice Factory and Mercedes Benz mix tape. <a href=\"https://www.last.fm/music/K",
+    "tags": [
+      "japanese",
+      "glitch-hop",
+      "electronic",
+      "Hip-Hop",
+      "abstract hip-hop"
+    ],
+    "similar_artists": [
+      "CRCK/LCKS",
+      "Nulbarich",
+      "kiki vivi lily",
+      "tofubeats",
+      "SUKISHA"
+    ],
+    "top_tracks": [
+      {
+        "name": "On My Way Home",
+        "listeners": 42193,
+        "playcount": 121835
+      },
+      {
+        "name": "DT pt.2",
+        "listeners": 17147,
+        "playcount": 48536
+      },
+      {
+        "name": "My Girl",
+        "listeners": 17097,
+        "playcount": 87156
+      },
+      {
+        "name": "Sit At The Piano",
+        "listeners": 15263,
+        "playcount": 40895
+      },
+      {
+        "name": "Dream In - TiMT Remix",
+        "listeners": 10482,
+        "playcount": 21353
+      },
+      {
+        "name": "I MA",
+        "listeners": 6309,
+        "playcount": 28311
+      },
+      {
+        "name": "DT pt.3",
+        "listeners": 5576,
+        "playcount": 13744
+      },
+      {
+        "name": "Tech Mac Maya Com",
+        "listeners": 5524,
+        "playcount": 16592
+      },
+      {
+        "name": "Natsume",
+        "listeners": 5506,
+        "playcount": 23375
+      },
+      {
+        "name": "Stars In Your Eyes",
+        "listeners": 4953,
+        "playcount": 22952
+      }
+    ],
+    "url": "https://www.last.fm/music/KAN+SANO"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

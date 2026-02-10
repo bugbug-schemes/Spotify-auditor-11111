@@ -1,0 +1,229 @@
+{
+  "artist_name": "Solomon Davis",
+  "artist_id": "solomon_davis",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:11:08.046067+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "a4587364-1431-4167-a673-4b033b0a2029",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/3116187"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 8262800,
+    "name": "Solomon Davis",
+    "nb_fan": 2,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/8262800",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/16ac18ad992463ff090da7508e41dfe0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Drawing Closer",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Come Along With Me",
+        "label": "",
+        "release_date": "2024-06-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From The Watchtower",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beech Woods",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clarity",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before The Tide",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cape Verde",
+        "label": "",
+        "release_date": "2021-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Then We Danced",
+        "label": "",
+        "release_date": "2020-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3116187,
+    "name": "Solomon Davis",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "LP, Comp, Mono"
+    ],
+    "labels": [
+      "Coral"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Solomon Davis",
+    "mbid": "a4587364-1431-4167-a673-4b033b0a2029",
+    "listeners": 8025,
+    "playcount": 29473,
+    "listener_play_ratio": 3.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Solomon+Davis\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Valencia Torres",
+      "Jo Rochford",
+      "R.B James",
+      "Adeben",
+      "Argun North"
+    ],
+    "top_tracks": [
+      {
+        "name": "Come Along With Me",
+        "listeners": 2614,
+        "playcount": 9117
+      },
+      {
+        "name": "Then We Danced",
+        "listeners": 1936,
+        "playcount": 4944
+      },
+      {
+        "name": "Cape Verde",
+        "listeners": 1831,
+        "playcount": 4947
+      },
+      {
+        "name": "From The Watchtower",
+        "listeners": 1407,
+        "playcount": 3638
+      },
+      {
+        "name": "Before the Tide",
+        "listeners": 1346,
+        "playcount": 4202
+      },
+      {
+        "name": "Beech Woods",
+        "listeners": 800,
+        "playcount": 1675
+      },
+      {
+        "name": "Drawing Closer",
+        "listeners": 211,
+        "playcount": 399
+      },
+      {
+        "name": "Sarah's Dream",
+        "listeners": 106,
+        "playcount": 178
+      },
+      {
+        "name": "You Blossom",
+        "listeners": 101,
+        "playcount": 229
+      },
+      {
+        "name": "Solace",
+        "listeners": 68,
+        "playcount": 137
+      }
+    ],
+    "url": "https://www.last.fm/music/Solomon+Davis"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

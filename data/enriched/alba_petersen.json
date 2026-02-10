@@ -1,0 +1,225 @@
+{
+  "artist_name": "Alba Petersen",
+  "artist_id": "alba_petersen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:48:34.481841+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 123266062,
+    "name": "Alba Petersen",
+    "nb_fan": 10,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/123266062",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c2b3dc103a1d6175c231f1d880d1b7f8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Together Forever"
+    ],
+    "track_durations": [
+      132
+    ],
+    "track_ranks": [
+      52427
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Sticks & Stones",
+        "label": "",
+        "release_date": "2025-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dayglow",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salt Kiss",
+        "label": "",
+        "release_date": "2024-06-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Satori",
+        "label": "",
+        "release_date": "2023-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calling Your Name",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonely Voyage",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lonely Voyage",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "With Clear Intent",
+        "label": "",
+        "release_date": "2021-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Together Forever",
+        "label": "",
+        "release_date": "2021-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 10121776,
+    "name": "Alban Petersen",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Comp"
+    ],
+    "labels": [
+      "Vision Music (8)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Alba Petersen",
+    "mbid": "",
+    "listeners": 7387,
+    "playcount": 20278,
+    "listener_play_ratio": 2.75,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Alba+Petersen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Azoraê",
+      "BVRKLEY",
+      "frukks",
+      "Aneto",
+      "Blissmo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Together Forever",
+        "listeners": 4932,
+        "playcount": 14686
+      },
+      {
+        "name": "Dayglow",
+        "listeners": 2097,
+        "playcount": 4353
+      },
+      {
+        "name": "Sticks & Stones",
+        "listeners": 628,
+        "playcount": 846
+      },
+      {
+        "name": "Salt Kiss",
+        "listeners": 81,
+        "playcount": 110
+      },
+      {
+        "name": "With Clear Intent",
+        "listeners": 50,
+        "playcount": 92
+      },
+      {
+        "name": "Calling Your Name",
+        "listeners": 49,
+        "playcount": 117
+      },
+      {
+        "name": "Lonely Voyage - This Aint Love Remix",
+        "listeners": 10,
+        "playcount": 54
+      },
+      {
+        "name": "Lonely Voyage",
+        "listeners": 8,
+        "playcount": 17
+      },
+      {
+        "name": "Lonely Voyage (This Aint Love Remix)",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Satori",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Alba+Petersen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

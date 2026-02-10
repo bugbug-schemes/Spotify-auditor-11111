@@ -1,0 +1,206 @@
+{
+  "artist_name": "Stillgarden",
+  "artist_id": "stillgarden",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:21:12.720775+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 289425571,
+    "name": "Stillgarden",
+    "nb_fan": 1,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/289425571",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b786e45091044170133b1e244e85659c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Anechoic",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dim",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shruti",
+        "label": "",
+        "release_date": "2025-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Resonate",
+        "label": "",
+        "release_date": "2025-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equilibrium",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Evergreen",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oscillate",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cherished",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spaciousness",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Subtle",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quietude",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Stillgarden",
+    "mbid": "",
+    "listeners": 13655,
+    "playcount": 63664,
+    "listener_play_ratio": 4.66,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Stillgarden\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Twin Sleeps",
+      "Sootherica",
+      "Selma Moore",
+      "Prodigieux",
+      "Lunari Veil"
+    ],
+    "top_tracks": [
+      {
+        "name": "Evergreen",
+        "listeners": 7800,
+        "playcount": 40848
+      },
+      {
+        "name": "Equilibrium",
+        "listeners": 3093,
+        "playcount": 7133
+      },
+      {
+        "name": "Cherished",
+        "listeners": 2531,
+        "playcount": 8375
+      },
+      {
+        "name": "Oscillate",
+        "listeners": 1911,
+        "playcount": 7037
+      },
+      {
+        "name": "Anechoic",
+        "listeners": 163,
+        "playcount": 261
+      },
+      {
+        "name": "Spaciousness",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Quietude",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Subtle",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Stillgarden"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

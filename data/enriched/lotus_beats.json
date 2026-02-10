@@ -1,0 +1,196 @@
+{
+  "artist_name": "Lotus Beats",
+  "artist_id": "lotus_beats",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:13:49.921740+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4ff535e0-483c-493f-8093-5588b2ab5c36",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "downtempo",
+      "instrumental",
+      "hip hop",
+      "lo-fi",
+      "boom bap",
+      "chillwave",
+      "instrumental hip hop",
+      "lo-fi hip hop",
+      "zero tracks on tidal"
+    ],
+    "aliases": [
+      "Ben O'Connor",
+      "Ben Reggie O’Connor"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/13266307",
+      "official homepage": "https://benreggie.wixsite.com/website",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/lotus-beats/3295699",
+      "social network": "https://www.instagram.com/lotusbeatss/",
+      "soundcloud": "https://soundcloud.com/lotusbeatss",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/lotus-beats/3295699",
+      "youtube": "https://www.youtube.com/channel/UCstIUNd0-hXW_hbca4R8psQ",
+      "youtube music": "https://music.youtube.com/channel/UC0EZ-LEYmbGPWY3RHhGovxQ"
+    },
+    "labels": [
+      "Kindbrew",
+      "purity label",
+      "PLYGRND",
+      "urbanundergrounds",
+      "Lofi Records",
+      "Retro Jungle",
+      "Stereofox Records",
+      "Chill Moon Music",
+      "hi.mood records",
+      "College Music Records",
+      "NINETOFIVE",
+      "Chill Beats Records",
+      "Hip Dozer",
+      "Etymology Records",
+      "Lofi Jazz Records",
+      "Chill Select"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lotus Beats', got 'Luxusbeats'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6535234,
+    "name": "Lotus Beats",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CDr, Album"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lotus Beats",
+    "mbid": "4ff535e0-483c-493f-8093-5588b2ab5c36",
+    "listeners": 107120,
+    "playcount": 377494,
+    "listener_play_ratio": 3.52,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lotus+Beats\">Read more on Last.fm</a>",
+    "tags": [
+      "chillout",
+      "Hip-Hop",
+      "Jazz Hop",
+      "Lo-Fi"
+    ],
+    "similar_artists": [
+      "Shin-Ski",
+      "Sebastian Kamae",
+      "Sarah, the Illstrumentalist",
+      "jazzinuf",
+      "Justnormal"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sunset",
+        "listeners": 39380,
+        "playcount": 92019
+      },
+      {
+        "name": "Promises",
+        "listeners": 11850,
+        "playcount": 25766
+      },
+      {
+        "name": "Cloud Nine",
+        "listeners": 11674,
+        "playcount": 22876
+      },
+      {
+        "name": "Dusk",
+        "listeners": 10962,
+        "playcount": 21646
+      },
+      {
+        "name": "Limitless",
+        "listeners": 10290,
+        "playcount": 22388
+      },
+      {
+        "name": "Ascend",
+        "listeners": 7158,
+        "playcount": 13522
+      },
+      {
+        "name": "Head High",
+        "listeners": 4904,
+        "playcount": 9025
+      },
+      {
+        "name": "Notebooks",
+        "listeners": 4430,
+        "playcount": 7779
+      },
+      {
+        "name": "Bloom",
+        "listeners": 4161,
+        "playcount": 7072
+      },
+      {
+        "name": "Summer days",
+        "listeners": 3444,
+        "playcount": 6556
+      }
+    ],
+    "url": "https://www.last.fm/music/Lotus+Beats"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

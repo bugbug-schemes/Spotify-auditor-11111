@@ -1,0 +1,143 @@
+{
+  "artist_name": "Miller Ford",
+  "artist_id": "miller_ford",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:43:45.573917+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 88091472,
+    "name": "Miller Ford",
+    "nb_fan": 10,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/88091472",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cac866c3741b5b54e432e03f5e7ceb73/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "A Glitch",
+        "label": "",
+        "release_date": "2022-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Woodlands",
+        "label": "",
+        "release_date": "2020-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2068131,
+    "name": "Jackie Miller",
+    "profile": "American singer and musician.\r\nBorn: August 13, 1937 Spokane, Washington.\r\n\r\nHaving started at age 15 in music as a church organist, then off to college at BYU, Jackie moved to southern California and joined the trio \"The Randy Sparks 3\".  They eventually became the Grammy Award winning \"The New Christy Minstrels\", and soon became regulars on \"The Andy Williams Show\".  As an NCM, Jackie sang with many well-known entertainers such as Sammy Davis Jr., Tennessee Ernie Ford, Kate Smith, Carol Channing, and others.  With the Minstrels, she had the honor of performing at the White House for President Johnson, Carnegie Hall with Alan Sherman, The Hollywood Bowl, and accompanied Al Hirt on her banjo at the Greek Theatre in Hollywood, California.\r\nA few years later, she and fellow NCM member, Gayle Caldwell, left the Minstrels to form the well known duo, \"Jackie and Gayle\". In their 2-year career together, they made 173 television appearances.  They were regulars on ABC's Shindig, The John Davi",
+    "realname": "Jacqueline Miller",
+    "social_urls": [
+      "https://www.jackieandgary.com/home",
+      "https://www.imdb.com/name/nm0588519/bio/?ref_=nm_ql_1"
+    ],
+    "members": [],
+    "groups": [
+      "The Johnny Mann Singers",
+      "The New Christy Minstrels",
+      "Jackie & Gayle"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 9,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "7\", Single"
+    ],
+    "labels": [
+      "Ramco"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Miller Ford",
+    "mbid": "",
+    "listeners": 6572,
+    "playcount": 24533,
+    "listener_play_ratio": 3.73,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Miller+Ford\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mute Surrender",
+      "Luca Tong",
+      "Reel Waves",
+      "Lak Host",
+      "Isla Cruz"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Glitch",
+        "listeners": 6011,
+        "playcount": 21931
+      },
+      {
+        "name": "Woodlands",
+        "listeners": 671,
+        "playcount": 2601
+      },
+      {
+        "name": "Woodland",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Miller+Ford"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

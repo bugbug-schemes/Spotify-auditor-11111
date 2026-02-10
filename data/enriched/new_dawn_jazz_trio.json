@@ -1,0 +1,118 @@
+{
+  "artist_name": "New Dawn Jazz Trio",
+  "artist_id": "new_dawn_jazz_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:59:59.315085+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1954682,
+    "name": "Dawn Of Midi",
+    "profile": "Jazz trio from Brooklyn, New York.\r\n\r\nThe trio is composed by [a=Aakaash Israni] on bass, [a=Amino Belyamani] on piano and [a=Qasim Naqvi] on drums\r\nWith roots in Morocco, Pakistan and India, this eclectic jazz trio focus on creating Acoustic-Minimal music. \r\nWith their second album \"Dysnomia\" by only using acoustic instruments they were able to create textures that resembles the ones found in electronic music.",
+    "realname": "",
+    "social_urls": [
+      "http://www.dawnofmidi.com",
+      "https://soundcloud.com/dawn-of-midi",
+      "https://twitter.com/dawnofmidi",
+      "https://dawnofmidi.bandcamp.com/"
+    ],
+    "members": [
+      "Qasim Naqvi",
+      "Aakaash Israni",
+      "Amino Belyamani"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 5,
+    "total_releases": 9,
+    "formats": [
+      "",
+      "15xFile, MP3, Mixed, 320",
+      "CD, Album, Promo",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Accretions Records",
+      "Erased Tapes Records",
+      "Mojo Magazine",
+      "Not On Label (Vinyl Williams Self-released)",
+      "Wire Magazine"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "New Dawn Jazz Trio",
+    "mbid": "",
+    "listeners": 7757,
+    "playcount": 18179,
+    "listener_play_ratio": 2.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/New+Dawn+Jazz+Trio\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Season's Greetings",
+      "The Blue Alley",
+      "Trio Lexington",
+      "The Belgrave Trio",
+      "The Late Set"
+    ],
+    "top_tracks": [
+      {
+        "name": "Angels We Have Heard on High",
+        "listeners": 6262,
+        "playcount": 10166
+      },
+      {
+        "name": "Jingle Bell Rock",
+        "listeners": 4451,
+        "playcount": 7935
+      },
+      {
+        "name": "Stille Nacht",
+        "listeners": 65,
+        "playcount": 78
+      }
+    ],
+    "url": "https://www.last.fm/music/New+Dawn+Jazz+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

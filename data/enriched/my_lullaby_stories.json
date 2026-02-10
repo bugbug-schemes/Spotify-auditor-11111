@@ -1,0 +1,111 @@
+{
+  "artist_name": "My Lullaby Stories",
+  "artist_id": "my_lullaby_stories",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:52:51.811413+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 568188,
+    "name": "Maroochy Barambah",
+    "profile": "Maroochy Barambah (12 February 1955 – 28 January 2026) was an Aboriginal mezzo‑soprano, Songwoman, and Lore‑woman of the Turrbal Tribe. In 1993 she became the first Australian to perform on stage at the United Nations in New York, appearing during the International Year of the World’s Indigenous Peoples.\r\n\r\nBorn on the Cherbourg Aboriginal Reserve in the 1950s, Barambah was of Turrbal and Gubbi Gubbi ancestry, with further connections to Wakka Wakka, Kamilaroi, and Birri Gubba Country. She rose to national prominence in the Sydney Metropolitan Opera’s 1989 production of Black River, later adapted into a film that won the Grand Prix at Opera Bastille in Paris. Her performance career also included roles in the Indigenous musical Bran Nue Dae, and the landmark television series Women of the Sun (1981). An opera, Beach Dreaming, was written for her by Australian composer and jazz pianist Mark Isaacs in 1990.\r\n\r\nBarambah often reflected on the breadth of her musical upbringing and influence",
+    "realname": "",
+    "social_urls": [
+      "https://en.wikipedia.org/wiki/Maroochy_Barambah",
+      "https://www.turrbal.com.au/ningy-ningy/people",
+      "https://theglitterandgold.com.au/exploring-the-life-of-maroochy-barambah/",
+      "https://www.imdb.com/name/nm0052927/",
+      "https://youtu.be/xk7My_6VEwQ?si=3Qkr-PTUK9IjUJ-5",
+      "https://aiatsis.gov.au/ntpd-resource/964",
+      "https://nit.com.au/28-01-2026/22363/songwoman-maroochy-barambah-remembered-for-a-lifetime-of-cultural-and-artistic-work",
+      "https://markisaacs.com/works/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 9,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "2xCD, Comp, Promo",
+      "CD, Album",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Larrikin Records",
+      "MusicArtsDance",
+      "The Big Backyard"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "My Lullaby Stories",
+    "mbid": "",
+    "listeners": 318,
+    "playcount": 1140,
+    "listener_play_ratio": 3.58,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/My+Lullaby+Stories\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Luma Tide",
+      "Fluffe Timber",
+      "Titouan Tash",
+      "Aden Sawyer",
+      "Luna Floris"
+    ],
+    "top_tracks": [
+      {
+        "name": "Gentle Dreams",
+        "listeners": 318,
+        "playcount": 1139
+      },
+      {
+        "name": "Dreamtime Lounge",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/My+Lullaby+Stories"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,583 @@
+{
+  "artist_name": "Dinamarca",
+  "artist_id": "dinamarca",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:29:03.526659+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ad35e71a-b119-4856-bc87-a022ac6ce376",
+    "type": "Person",
+    "country": "",
+    "area": "Stockholm",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/4738917",
+      "free streaming": "https://www.deezer.com/artist/869356",
+      "soundcloud": "https://soundcloud.com/dinamarca117",
+      "streaming": "https://tidal.com/artist/6273544"
+    },
+    "labels": [
+      "Rinse",
+      "Staycore"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 869356,
+    "name": "Dinamarca",
+    "nb_fan": 1336,
+    "nb_album": 30,
+    "link": "https://www.deezer.com/artist/869356",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c4aa6b9bbb659aae5ac2151bfa9f1162/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "AKRIILA",
+      "Alsy",
+      "Amore",
+      "Chzter",
+      "Eartheater",
+      "El Bugg",
+      "Irenegarry",
+      "La Favi",
+      "Meth Math",
+      "Moonshine",
+      "Ms Nina",
+      "Ralphie Choo",
+      "Rusowsky",
+      "Yeyo",
+      "iza tkm"
+    ],
+    "contributor_roles": {
+      "Rusowsky": [
+        "Main"
+      ],
+      "Ralphie Choo": [
+        "Main"
+      ],
+      "Meth Math": [
+        "Main"
+      ],
+      "El Bugg": [
+        "Main"
+      ],
+      "iza tkm": [
+        "Main"
+      ],
+      "AKRIILA": [
+        "Main"
+      ],
+      "Amore": [
+        "Main"
+      ],
+      "Irenegarry": [
+        "Main"
+      ],
+      "Moonshine": [
+        "Main"
+      ],
+      "La Favi": [
+        "Main",
+        "Featured"
+      ],
+      "Chzter": [
+        "Main"
+      ],
+      "Ms Nina": [
+        "Featured"
+      ],
+      "Eartheater": [
+        "Featured"
+      ],
+      "Yeyo": [
+        "Main"
+      ],
+      "Alsy": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "mwah :3",
+      "fubu",
+      "chairo",
+      "III. Viviane Full",
+      "sexo virtual <3",
+      "favorita",
+      "diluvio",
+      "casandra",
+      "Culebra",
+      "papirrimi",
+      "shhh...",
+      "DTF",
+      "tú m kieres",
+      "Peces",
+      "swag",
+      "Jevi",
+      "savasana",
+      "Tú Y Yo",
+      "maltratame u.u",
+      "Sensitiva (Dinamarca Remix)",
+      "delixoxo",
+      "Sana Sana",
+      "Sol",
+      "Te Buscé",
+      "Rob Somebody"
+    ],
+    "track_durations": [
+      122,
+      153,
+      122,
+      200,
+      171,
+      127,
+      137,
+      140,
+      150,
+      158,
+      118,
+      95,
+      144,
+      144,
+      126,
+      168,
+      175,
+      219,
+      148,
+      134,
+      103,
+      186,
+      187,
+      126,
+      182
+    ],
+    "track_ranks": [
+      480899,
+      300563,
+      345143,
+      138221,
+      384524,
+      313016,
+      303486,
+      272729,
+      86363,
+      169481,
+      111624,
+      135096,
+      279253,
+      150860,
+      202464,
+      113147,
+      141527,
+      150794,
+      184784,
+      164141,
+      229998,
+      182888,
+      147247,
+      97766,
+      106944
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 6,
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "pachamami",
+        "label": "",
+        "release_date": "2025-05-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "soñao",
+        "label": "",
+        "release_date": "2023-04-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fantasilandia, Vol. 2",
+        "label": "",
+        "release_date": "2022-11-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fantasilandia",
+        "label": "",
+        "release_date": "2019-10-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Is It Real",
+        "label": "",
+        "release_date": "2020-10-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sol De Mi Vida: Vocalized",
+        "label": "",
+        "release_date": "2019-07-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sol De Mi Vida",
+        "label": "",
+        "release_date": "2018-06-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Holy",
+        "label": "",
+        "release_date": "2016-12-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "No Hay Break Remix EP",
+        "label": "",
+        "release_date": "2015-03-31",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "No Hay Break",
+        "label": "",
+        "release_date": "2014-12-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "III. Viviane Full",
+        "label": "",
+        "release_date": "2025-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "maltratame u.u",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "diluvio",
+        "label": "",
+        "release_date": "2025-04-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "chairo",
+        "label": "",
+        "release_date": "2025-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "headphones !",
+        "label": "",
+        "release_date": "2025-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "sexo virtual <3",
+        "label": "",
+        "release_date": "2025-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "casandra",
+        "label": "",
+        "release_date": "2024-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sensitiva (Dinamarca Remix)",
+        "label": "",
+        "release_date": "2023-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "FIGHT!",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "delixoxo",
+        "label": "",
+        "release_date": "2023-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "favorita",
+        "label": "",
+        "release_date": "2023-02-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coqueteo",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mwah :3",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Contestaste",
+        "label": "",
+        "release_date": "2020-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By My Side/Sana Sana",
+        "label": "",
+        "release_date": "2020-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moniboo",
+        "label": "",
+        "release_date": "2019-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Prins",
+        "label": "",
+        "release_date": "2019-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jevi",
+        "label": "",
+        "release_date": "2019-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Campana",
+        "label": "",
+        "release_date": "2019-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fine Day",
+        "label": "",
+        "release_date": "2017-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Judeline",
+      "Sen Senra",
+      "Amore",
+      "RaiNao",
+      "Yarge",
+      "Isabella LoveStory",
+      "Rusowsky",
+      "Ralphie Choo",
+      "Joalin",
+      "Maria Hein"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4738917,
+    "name": "Dinamarca",
+    "profile": "Stockholm, Sweden\r\nCo-founder of [l=Staycore]",
+    "realname": "",
+    "social_urls": [
+      "https://soundcloud.com/dinamarca117",
+      "https://www.facebook.com/dinamarca117",
+      "https://twitter.com/dinamarca117",
+      "https://www.instagram.com/dinamarca117/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 21,
+    "total_releases": 24,
+    "formats": [
+      "",
+      "10xFile, MP3, VBR",
+      "12\", Comp, Cle",
+      "12\", EP",
+      "12xFile, MP3, Comp, 320",
+      "13xFile, AIFF, Comp",
+      "13xFile, MP3, Comp, 320",
+      "2xFile, MP3, Single",
+      "5xFile, FLAC",
+      "5xFile, FLAC, EP",
+      "5xFile, MP3, EP, 320",
+      "5xFile, WAV, EP",
+      "6xFile, MP3, EP, 320",
+      "7xFile, AAC, EP",
+      "7xFile, MP3, EP, 320",
+      "8xFile, FLAC, Album",
+      "Cass, Album, Ltd",
+      "File, MP3, Mixed, 128",
+      "File, MP3, Mixed, 320",
+      "LP, Album"
+    ],
+    "labels": [
+      "@cellz",
+      "Cracki Records",
+      "Her Records (2)",
+      "In Real Life (2)",
+      "Klack Recordings",
+      "MAAS (2)",
+      "Not On Label",
+      "Not On Label (Dinamarca Self-released)",
+      "Not On Label (Partisan (4) Self-released)",
+      "Nuxxe",
+      "Rinse",
+      "Staycore"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dinamarca",
+    "mbid": "ad35e71a-b119-4856-bc87-a022ac6ce376",
+    "listeners": 118567,
+    "playcount": 2222494,
+    "listener_play_ratio": 18.74,
+    "bio_exists": true,
+    "bio_summary": "Swedish-Chilean DJ Cristian Dinamarca. <a href=\"https://www.last.fm/music/Dinamarca\">Read more on Last.fm</a>",
+    "tags": [
+      "electronic",
+      "bass",
+      "uk bass",
+      "Latin Electronic",
+      "jersey club"
+    ],
+    "similar_artists": [
+      "Meth Math",
+      "nusar3000",
+      "LYZZA",
+      "SAFETY TRANCE",
+      "Coucou Chloe"
+    ],
+    "top_tracks": [
+      {
+        "name": "favorita",
+        "listeners": 40340,
+        "playcount": 254933
+      },
+      {
+        "name": "delixoxo",
+        "listeners": 25747,
+        "playcount": 140717
+      },
+      {
+        "name": "sexo virtual <3",
+        "listeners": 23570,
+        "playcount": 227896
+      },
+      {
+        "name": "fubu",
+        "listeners": 18485,
+        "playcount": 85445
+      },
+      {
+        "name": "Tú y Yo",
+        "listeners": 18376,
+        "playcount": 99272
+      },
+      {
+        "name": "Prins",
+        "listeners": 17153,
+        "playcount": 73815
+      },
+      {
+        "name": "Sana Sana",
+        "listeners": 15792,
+        "playcount": 83811
+      },
+      {
+        "name": "tú m kieres",
+        "listeners": 13974,
+        "playcount": 138378
+      },
+      {
+        "name": "7",
+        "listeners": 13930,
+        "playcount": 48344
+      },
+      {
+        "name": "casandra",
+        "listeners": 13110,
+        "playcount": 41211
+      }
+    ],
+    "url": "https://www.last.fm/music/Dinamarca"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

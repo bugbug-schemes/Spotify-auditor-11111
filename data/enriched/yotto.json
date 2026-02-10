@@ -1,0 +1,632 @@
+{
+  "artist_name": "YOTTO",
+  "artist_id": "yotto",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:03:27.443191+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7355a02a-b14a-4719-aa09-477b1964b2a3",
+    "type": "Person",
+    "country": "FI",
+    "area": "Finland",
+    "begin_date": "1986-10-08",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "trance",
+      "downtempo",
+      "pop",
+      "fixme",
+      "dance",
+      "house",
+      "deep house",
+      "techno",
+      "electronica",
+      "progressive house",
+      "edm",
+      "melodic techno",
+      "melodic house",
+      "organic house"
+    ],
+    "aliases": [
+      "Otto Yliperttula"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003419000",
+      "bandcamp": "https://yotto.bandcamp.com/",
+      "discography page": "https://music.anjunabeats.com/artist/57441",
+      "discogs": "https://www.discogs.com/artist/1593106",
+      "free streaming": "https://www.deezer.com/artist/5209258",
+      "last.fm": "https://www.last.fm/music/Yotto",
+      "official homepage": "https://yottomusic.com/",
+      "purchase for download": "https://www.onkyomusic.com/artist/yotto",
+      "social network": "https://www.instagram.com/yottomusic/",
+      "songkick": "https://www.songkick.com/artists/8620979",
+      "soundcloud": "https://soundcloud.com/yotto",
+      "streaming": "https://tidal.com/artist/6008230",
+      "wikidata": "https://www.wikidata.org/wiki/Q23664961"
+    },
+    "labels": [
+      "This Never Happened",
+      "Odd One Out",
+      "Reflections",
+      "Pryda Presents",
+      "Green",
+      "London Music Stream",
+      "[no label]",
+      "Spectrum",
+      "Armada Music",
+      "SoSure Music",
+      "Anjunadeep",
+      "Afterlife"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5209258,
+    "name": "YOTTO",
+    "nb_fan": 13572,
+    "nb_album": 88,
+    "link": "https://www.deezer.com/artist/5209258",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/20ab7ad9d339807c46907461d885630a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Braev",
+      "Caps",
+      "Cassian",
+      "Cristoph",
+      "Da Hool",
+      "Joris Voorn",
+      "Julia Church",
+      "Lane 8",
+      "Laudic",
+      "Nils Hoffmann",
+      "Sansa",
+      "Something Good",
+      "SØNIN",
+      "TH;EN"
+    ],
+    "contributor_roles": {
+      "Cassian": [
+        "Main",
+        "Featured"
+      ],
+      "Da Hool": [
+        "Main"
+      ],
+      "SØNIN": [
+        "Main"
+      ],
+      "Something Good": [
+        "Main"
+      ],
+      "Lane 8": [
+        "Main"
+      ],
+      "Cristoph": [
+        "Main"
+      ],
+      "Sansa": [
+        "Featured",
+        "Main"
+      ],
+      "Caps": [
+        "Featured"
+      ],
+      "Julia Church": [
+        "Main"
+      ],
+      "Nils Hoffmann": [
+        "Main"
+      ],
+      "Joris Voorn": [
+        "Featured"
+      ],
+      "Laudic": [
+        "Main"
+      ],
+      "Braev": [
+        "Main"
+      ],
+      "TH;EN": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Love Parade",
+      "Nothing Like You (Extended Mix)",
+      "Rhythm (Of The Night)",
+      "Buggy",
+      "Aviate (Original Mix)",
+      "Another Riff For The Good Times",
+      "I / Y",
+      "Out Of Reach (feat. Sansa)",
+      "Wondering (Original Mix)",
+      "No Ending (Nils Hoffmann Remix)",
+      "Odd One Out",
+      "Grains",
+      "North",
+      "Walls (Joris Voorn Remix)",
+      "Skin (Extended Mix)",
+      "No Ending",
+      "Another Riff For The Good Times (Extended Mix)",
+      "I Want You",
+      "Slowly",
+      "Nova (Cassian Remix)",
+      "The Owls",
+      "Would You Like Fries With That?",
+      "Meadow (TH;EN Remix)",
+      "Wondering (Club Mix)",
+      "Personal Space (Extended Mix)"
+    ],
+    "track_durations": [
+      206,
+      353,
+      201,
+      300,
+      418,
+      228,
+      354,
+      255,
+      433,
+      259,
+      204,
+      284,
+      343,
+      220,
+      445,
+      257,
+      396,
+      258,
+      303,
+      284,
+      475,
+      245,
+      199,
+      305,
+      411
+    ],
+    "track_ranks": [
+      563009,
+      112282,
+      328539,
+      259651,
+      252074,
+      262591,
+      426530,
+      288875,
+      296850,
+      240944,
+      181576,
+      213513,
+      104495,
+      238587,
+      258154,
+      161059,
+      188611,
+      307406,
+      140682,
+      195274,
+      232549,
+      73562,
+      199043,
+      123825,
+      72143
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 9,
+      "ep": 14,
+      "single": 65
+    },
+    "albums": [
+      {
+        "title": "Odd Ones V3",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "VDP",
+        "label": "",
+        "release_date": "2024-08-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Growth",
+        "label": "",
+        "release_date": "2023-02-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Odd Ones V2",
+        "label": "",
+        "release_date": "2022-12-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Erased Dreams",
+        "label": "",
+        "release_date": "2022-07-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hyperfall (Remixed)",
+        "label": "",
+        "release_date": "2019-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Turn It Around",
+        "label": "",
+        "release_date": "2019-04-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Anjunadeep 10 Sampler: Part 1",
+        "label": "",
+        "release_date": "2019-03-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hyperfall",
+        "label": "",
+        "release_date": "2018-09-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ANTI 02",
+        "label": "",
+        "release_date": "2025-11-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "ANTI 01",
+        "label": "",
+        "release_date": "2025-10-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Songs You Might Remember From Some Parties v2",
+        "label": "",
+        "release_date": "2024-06-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "The Valley",
+        "label": "",
+        "release_date": "2022-05-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Songs You Might Remember from Some Parties",
+        "label": "",
+        "release_date": "2021-07-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "New Era EP",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Rogue",
+        "label": "",
+        "release_date": "2020-11-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Love Me",
+        "label": "",
+        "release_date": "2020-10-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Radiate EP",
+        "label": "",
+        "release_date": "2018-06-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Anything About You (Remixes)",
+        "label": "",
+        "release_date": "2018-01-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "North EP",
+        "label": "",
+        "release_date": "2017-10-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wilderness Girl (The Remixes)",
+        "label": "",
+        "release_date": "2017-07-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Wondering EP",
+        "label": "",
+        "release_date": "2015-08-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Anything About You",
+        "label": "",
+        "release_date": "2015-07-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Love Parade",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love Shop",
+        "label": "",
+        "release_date": "2025-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somebody To Love",
+        "label": "",
+        "release_date": "2025-03-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Most Precious Love",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Illusion",
+        "label": "",
+        "release_date": "2025-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "vdp deluxe",
+        "label": "",
+        "release_date": "2024-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Polar",
+        "label": "",
+        "release_date": "2024-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lane 8",
+      "Monolink",
+      "Booka Shade",
+      "Marsh",
+      "Stephan Bodzin",
+      "Ben Böhmer",
+      "Einmusik",
+      "Tinlicker",
+      "Joris Voorn",
+      "Jan Blomqvist"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1593106,
+    "name": "Yotto",
+    "profile": "Producer from Helsinki, Finland.\r\nBrother of [a=Caps (2)].",
+    "realname": "Otto Yliperttula",
+    "social_urls": [
+      "https://soundcloud.com/yotto",
+      "https://www.facebook.com/yottomusic",
+      "https://twitter.com/yottomusic",
+      "https://www.instagram.com/yottomusic"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 93,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "11xFile, MP3, Comp, 320",
+      "12\", EP",
+      "13xFile, MP3, Mixed, 320",
+      "15xFile, MP3, Comp, 320",
+      "16xFile, MP3, Album, 320",
+      "20xFile, MP3, Comp, 320",
+      "22xFile, MP3, Comp, 320",
+      "2xCD, Comp, Mixed",
+      "2xFile, MP3, 320",
+      "2xFile, MP3, EP, 320",
+      "2xFile, MP3, Single, 320",
+      "2xFile, WAV, Single",
+      "3xCD, Comp, Mixed",
+      "3xCDr, Comp, P/Mixed",
+      "3xFile, MP3, EP, 320",
+      "3xFile, MP3, Single, 320",
+      "3xFile, WAV",
+      "4xFile, MP3, EP, 320",
+      "51xFile, MP3, 320 + 3xFile, MP3, Mixed, 320",
+      "6xFile, MP3, 320",
+      "82xFile, MP3, 320 + 3xFile, MP3, Mixed, 320 + Comp",
+      "CDr, Comp",
+      "File, AAC, Single, 256",
+      "File, MP3, 320",
+      "File, MP3, Single, 320",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "Anjunabeats",
+      "Anjunadeep",
+      "Bedrock Records",
+      "Cr2 Records",
+      "DMC, DMC",
+      "Future Soundz",
+      "Green (2)",
+      "Kontor Records",
+      "London Music Stream",
+      "Mine Recordings",
+      "Odd One Out",
+      "Parlophone",
+      "Pryda Presents",
+      "Reflections (18)",
+      "Rose Avenue",
+      "SoSure Music",
+      "Spectrum (14)",
+      "Spectrum (14), Armada (4)",
+      "This Never Happened",
+      "Watergate Records",
+      "Young Alaska"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Yotto",
+    "mbid": "7355a02a-b14a-4719-aa09-477b1964b2a3",
+    "listeners": 195895,
+    "playcount": 2696599,
+    "listener_play_ratio": 13.77,
+    "bio_exists": true,
+    "bio_summary": "Otto Yliperttula (born October 8, 1986), known professionally by his stage name, Yotto, is a Finnish DJ, songwriter, and record producer. Currently residing in Helsinki, Finland, the 30-year-old is signed to English deep house label, Anjunadeep.\n\nYotto came to fruition with a string of remixes and originals that caught the ear of Anjunadeep label boss, James Grant. Deemed “a man of many sounds” by Billboard and “an experimental house talent” by Dancing Astronaut <a href=\"https://www.last.fm/musi",
+    "tags": [
+      "finnish",
+      "House",
+      "deep house",
+      "Progressive House",
+      "electronic"
+    ],
+    "similar_artists": [
+      "Luttrell",
+      "Marsh",
+      "Lane 8",
+      "16Bl",
+      "Joseph Ray"
+    ],
+    "top_tracks": [
+      {
+        "name": "Just Over",
+        "listeners": 32198,
+        "playcount": 119850
+      },
+      {
+        "name": "Personal Space",
+        "listeners": 30386,
+        "playcount": 117003
+      },
+      {
+        "name": "Odd One Out",
+        "listeners": 22548,
+        "playcount": 91022
+      },
+      {
+        "name": "Walls - Joris Voorn Remix",
+        "listeners": 20783,
+        "playcount": 80971
+      },
+      {
+        "name": "Slowly - Radio Edit",
+        "listeners": 18082,
+        "playcount": 47372
+      },
+      {
+        "name": "Another Riff For The Good Times",
+        "listeners": 16546,
+        "playcount": 68961
+      },
+      {
+        "name": "I Want You (feat. braev)",
+        "listeners": 13788,
+        "playcount": 53630
+      },
+      {
+        "name": "Just the Kinda Feeling",
+        "listeners": 13218,
+        "playcount": 62925
+      },
+      {
+        "name": "North",
+        "listeners": 13135,
+        "playcount": 60623
+      },
+      {
+        "name": "Aviate",
+        "listeners": 11779,
+        "playcount": 42314
+      }
+    ],
+    "url": "https://www.last.fm/music/Yotto"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

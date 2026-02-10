@@ -1,0 +1,171 @@
+{
+  "artist_name": "Lush Sand",
+  "artist_id": "lush_sand",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:19:55.234075+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lush Sand', got 'Lush & Simon'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2378025,
+    "name": "Ana Béjar",
+    "profile": "Spanish female singer and songwriter based in Madrid.\r\n\r\nShe is known to be a pioneer of the alternative Spanish music scene and a proven iconoclast and innovative artist. Her songs are mystical multi-faceted, sometimes experimental and folk, standing out of trends. She has been recording and performing for the past 25 years, touring Spain, Germany and Holland. \r\n\r\nHeading up Usura, Orlando, Todo and iO band, she has released over ten albums so far, among many compilations and  works with other musicians such Edith Alonso, Javier Arnal, Conrado Isasa, Julien Elsie, Anna Stereopoulou, Javier Almendral, Alberto Lucendo or Rick Treffers. \r\n\r\nShe has also opened or toured alongside renowned bands such as Yo La Tengo, Lush, Mojave 3, Jonathan Richman, American Music Club or Giant Sand.\r\n\r\nSolo records: The Good Man (Luscinia Discos, 2016), Everything I Say (Madrugada Records, 2019), Sahara Star (Discos Belamarh, 2020) ",
+    "realname": "",
+    "social_urls": [
+      "https://anabejarmusic.com/",
+      "https://www.facebook.com/ana.bejar.37/",
+      "https://www.facebook.com/anabejarmusic/",
+      "https://www.youtube.com/user/anabejarmusic/videos",
+      "https://open.spotify.com/artist/70BaKTjnKEPBm8lB6n93Tn?si=WFhe3K_JRMKsV4TBuHRg4A&nd=1",
+      "https://www.instagram.com/anabejar.music/?fbclid=IwAR1JTS56680T778HWY2KJ3xReuHGj0b2i8gqsk44_ePHVWYGC1vavXghXbc"
+    ],
+    "members": [],
+    "groups": [
+      "Usura",
+      "Orlando (5)",
+      "Todo (6)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 11,
+    "digital_only_releases": 10,
+    "total_releases": 21,
+    "formats": [
+      "",
+      "12\", 180",
+      "17xFile, MP3, Comp",
+      "25xFile, MP3, Album, Comp",
+      "2xCD, Album",
+      "2xCDr",
+      "4xFile, MP3, EP, 320",
+      "7\", EP",
+      "CD, Album",
+      "CD, Comp, Promo",
+      "CD, Single, Promo",
+      "File, MP3, Single, 320",
+      "LP, Ltd"
+    ],
+    "labels": [
+      "Discos Necesarios",
+      "El Muelle Records",
+      "Elefant Records",
+      "Lunar Discos",
+      "Luscinia",
+      "Madrugada Records",
+      "Miau Miau Music",
+      "No Aloha Records",
+      "Not On Label (Todo (6) Self-released)",
+      "Recordings From The Other Side",
+      "moreArtists, Jazz (26)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lush Sand",
+    "mbid": "",
+    "listeners": 11247,
+    "playcount": 39947,
+    "listener_play_ratio": 3.55,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lush+Sand\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Pat Jr",
+      "Aneto",
+      "CrayG",
+      "Nataya",
+      "Oldofredi"
+    ],
+    "top_tracks": [
+      {
+        "name": "12.05",
+        "listeners": 5914,
+        "playcount": 12711
+      },
+      {
+        "name": "Mediterranean",
+        "listeners": 4198,
+        "playcount": 10602
+      },
+      {
+        "name": "Beachy",
+        "listeners": 1942,
+        "playcount": 3259
+      },
+      {
+        "name": "Beach of Talamanca",
+        "listeners": 1811,
+        "playcount": 4424
+      },
+      {
+        "name": "Those Kinda Nights",
+        "listeners": 1712,
+        "playcount": 2992
+      },
+      {
+        "name": "Pink Sunset",
+        "listeners": 1322,
+        "playcount": 3315
+      },
+      {
+        "name": "Barefoot",
+        "listeners": 911,
+        "playcount": 1770
+      },
+      {
+        "name": "Nightcall",
+        "listeners": 304,
+        "playcount": 636
+      },
+      {
+        "name": "Shifting Lanes",
+        "listeners": 118,
+        "playcount": 191
+      },
+      {
+        "name": "Shubz",
+        "listeners": 7,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Lush+Sand"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

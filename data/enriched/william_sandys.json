@@ -1,0 +1,194 @@
+{
+  "artist_name": "William Sandys",
+  "artist_id": "william_sandys",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:00:04.021767+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 3476171,
+    "name": "William Sandys",
+    "nb_fan": 2,
+    "nb_album": 0,
+    "link": "https://www.deezer.com/artist/3476171",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {},
+    "albums": [],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 997737,
+    "name": "William B. Sandys",
+    "profile": "Born: October 29, 1792, London, England\r\nDied: February 18, 1874, London, England\r\n\r\nAn English solicitor, member of the Percy Society, fellow of the Society of Antiquaries of London, and remembered for his publication Christmas Carols Ancient and Modern (London, Richard Beckley, 1833), a collection of seasonal carols that Sandys had gathered and also apparently improvised.",
+    "realname": "",
+    "social_urls": [
+      "http://en.wikipedia.org/wiki/William_Sandys_%28antiquarian%29",
+      "http://www.hymnsandcarolsofchristmas.com/Hymns_and_Carols/Images/Sandys/william_sandys.htm",
+      "http://en.wikisource.org/wiki/Sandys,_William_%281792-1874%29_%28DNB00%29"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 22,
+    "digital_only_releases": 28,
+    "total_releases": 50,
+    "formats": [
+      "",
+      "12xCD, Comp + Box",
+      "13xFile, AAC, Album, 256",
+      "2xCD, Comp",
+      "3x10\", Album",
+      "7\", EP, Mono",
+      "7xFile, FLAC, Album",
+      "9xFile, MP3, Album",
+      "CD, Album",
+      "CD, Comp",
+      "LP",
+      "LP, Album",
+      "LP, Album, Mono, Emb",
+      "LP, Comp",
+      "Shellac, 10\""
+    ],
+    "labels": [
+      "AMM",
+      "Artists For Good, Artists For Good, Schweizerischer Blinden- Und Sehbehindertenverband, Schweizerischer Blinden- Und Sehbehindertenverband",
+      "Azzurra Music",
+      "Bad Records (13)",
+      "Bayer HealthCare, Barnaby Records",
+      "Deux-Elles",
+      "FM Recording Co.",
+      "Friendly City Records",
+      "Gennett",
+      "Gothic Records (5)",
+      "His Master's Voice, His Master's Voice",
+      "MGM Records",
+      "Madacy Entertainment, Universal Music Special Markets",
+      "Noel Records (6), Noel Records (6)",
+      "Not On Label (Matt Conner (3) Self-Released)",
+      "Not On Label (Wayne Wilkinson Self-released)",
+      "Oasis Records",
+      "Pacific Cascade Records",
+      "Palace (2)",
+      "Power Pak",
+      "Proper Records (2)",
+      "Silver Seal",
+      "TNN, Unison Music",
+      "Vogt Quality Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "William Sandys",
+    "mbid": "",
+    "listeners": 1259,
+    "playcount": 3626,
+    "listener_play_ratio": 2.88,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/William+Sandys\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Karl Leuner",
+      "Joseph Mohr",
+      "Harold Darke",
+      "Franz Xaver Gruber",
+      "John Amner"
+    ],
+    "top_tracks": [
+      {
+        "name": "Tomorrow shall be my dancing day",
+        "listeners": 624,
+        "playcount": 1468
+      },
+      {
+        "name": "The First Noel (Arr. for Guitar by Gerard Cousins) [Bedtime Guitar Version]",
+        "listeners": 237,
+        "playcount": 335
+      },
+      {
+        "name": "The First Noel",
+        "listeners": 214,
+        "playcount": 1426
+      },
+      {
+        "name": "First Noel",
+        "listeners": 60,
+        "playcount": 70
+      },
+      {
+        "name": "God Rest You Merry, Gentlemen",
+        "listeners": 45,
+        "playcount": 112
+      },
+      {
+        "name": "The first Nowell",
+        "listeners": 30,
+        "playcount": 41
+      },
+      {
+        "name": "God Rest Ye Merry Gentlemen",
+        "listeners": 27,
+        "playcount": 99
+      },
+      {
+        "name": "The First Noel - Original Mix",
+        "listeners": 7,
+        "playcount": 8
+      },
+      {
+        "name": "Peace / I Saw Three Ships",
+        "listeners": 5,
+        "playcount": 10
+      },
+      {
+        "name": "I Saw Three Ships - Piano",
+        "listeners": 4,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/William+Sandys"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

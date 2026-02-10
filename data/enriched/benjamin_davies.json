@@ -1,0 +1,155 @@
+{
+  "artist_name": "Benjamin Davies",
+  "artist_id": "benjamin_davies",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:34:34.050402+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "4f41a5cf-b32e-4e20-a01c-dbe88ef8e6d7",
+    "type": "Person",
+    "country": "GB",
+    "area": "United Kingdom",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Benjamin Davies', got 'Benjamin Dantès'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2303929,
+    "name": "Benjamin Davies",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 2,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD, Album, RE + CD, Album, RE + Comp"
+    ],
+    "labels": [
+      "Steamhammer"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Benjamin Davies",
+    "mbid": "4f41a5cf-b32e-4e20-a01c-dbe88ef8e6d7",
+    "listeners": 59440,
+    "playcount": 177857,
+    "listener_play_ratio": 2.99,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Benjamin+Davies\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Quinn Perry Trio",
+      "Nordic Swing",
+      "Herman Fred Trio",
+      "Eltingvilles",
+      "High North Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Golden Moments",
+        "listeners": 31258,
+        "playcount": 69408
+      },
+      {
+        "name": "Soft Gaze",
+        "listeners": 17478,
+        "playcount": 34653
+      },
+      {
+        "name": "Tranquility",
+        "listeners": 15821,
+        "playcount": 34594
+      },
+      {
+        "name": "Time Passes Quickly",
+        "listeners": 7117,
+        "playcount": 14411
+      },
+      {
+        "name": "Rainfall Serenade",
+        "listeners": 5508,
+        "playcount": 20314
+      },
+      {
+        "name": "Blue In The Morning",
+        "listeners": 1789,
+        "playcount": 3664
+      },
+      {
+        "name": "Close Enough",
+        "listeners": 159,
+        "playcount": 320
+      },
+      {
+        "name": "A Quiet Flame",
+        "listeners": 94,
+        "playcount": 141
+      },
+      {
+        "name": "Forever in Your Arms",
+        "listeners": 42,
+        "playcount": 56
+      },
+      {
+        "name": "The Truth of Everything (Animated)",
+        "listeners": 28,
+        "playcount": 31
+      }
+    ],
+    "url": "https://www.last.fm/music/Benjamin+Davies"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

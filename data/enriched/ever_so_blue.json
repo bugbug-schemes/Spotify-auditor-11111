@@ -1,0 +1,424 @@
+{
+  "artist_name": "Ever So Blue",
+  "artist_id": "ever_so_blue",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:32:36.903143+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c28217d4-2280-4caf-a1d6-d9372e8ea0ae",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/68360452",
+      "purchase for download": "https://music.apple.com/us/artist/1470800695",
+      "soundcloud": "https://soundcloud.com/eversoblue",
+      "streaming": "https://tidal.com/artist/16140855",
+      "youtube music": "https://music.youtube.com/channel/UCaJ5aQs8T5J4TLFoTI5lPfQ"
+    },
+    "labels": [
+      "Epidemic Sound"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 68360452,
+    "name": "Ever So Blue",
+    "nb_fan": 240,
+    "nb_album": 23,
+    "link": "https://www.deezer.com/artist/68360452",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f3368f57c3afbc93801ff0d68ab9d500/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "At Dawn",
+      "Okra",
+      "Remembering",
+      "Traces",
+      "Calme",
+      "Onthou",
+      "Concepts",
+      "Fragment",
+      "Letters",
+      "Progress",
+      "Verses",
+      "Cessura",
+      "Contrarium",
+      "Demure",
+      "Bookmarks",
+      "Sketches",
+      "Forgotten",
+      "Daylight",
+      "Symbios",
+      "Gray"
+    ],
+    "track_durations": [
+      136,
+      193,
+      121,
+      121,
+      155,
+      128,
+      150,
+      153,
+      193,
+      138,
+      195,
+      185,
+      129,
+      126,
+      169,
+      157,
+      172,
+      145,
+      173,
+      126
+    ],
+    "track_ranks": [
+      374535,
+      74511,
+      200162,
+      226819,
+      331957,
+      223049,
+      127903,
+      256123,
+      105291,
+      311309,
+      104650,
+      259466,
+      73009,
+      308831,
+      65638,
+      128125,
+      89539,
+      70160,
+      108089,
+      63545
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 2,
+      "single": 21
+    },
+    "albums": [
+      {
+        "title": "Traces",
+        "label": "",
+        "release_date": "2020-04-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Fragment",
+        "label": "",
+        "release_date": "2019-07-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Cradle",
+        "label": "",
+        "release_date": "2026-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Threads",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Whispers of Winter",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Redolent",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Relief",
+        "label": "",
+        "release_date": "2023-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Textures",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Okra",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Letters",
+        "label": "",
+        "release_date": "2022-10-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Concepts",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Biome",
+        "label": "",
+        "release_date": "2022-08-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Untold",
+        "label": "",
+        "release_date": "2022-07-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sketches",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Symbios",
+        "label": "",
+        "release_date": "2022-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Verses",
+        "label": "",
+        "release_date": "2021-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dvala",
+        "label": "",
+        "release_date": "2021-09-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daylight",
+        "label": "",
+        "release_date": "2021-07-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calme",
+        "label": "",
+        "release_date": "2021-04-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forgotten Bookmarks",
+        "label": "",
+        "release_date": "2021-01-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Remembering",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contrarium",
+        "label": "",
+        "release_date": "2020-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Johannes Bornlof",
+      "Fabrizio Paterlini",
+      "Gavin Luke",
+      "Lo Mimieux",
+      "Joep Beving",
+      "Evgeny Grinko",
+      "Austin Farwell",
+      "James Heather",
+      "Virginio Aiello",
+      "Borrtex"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2085655,
+    "name": "Blue Room Boys",
+    "profile": "The Blue Room Boys being the best Frisco \"house\" band this town could ever hope to offer, you have no excuses. The Blue Room Boys' recently released Driving You Crazy captures the sublime musicianship of Danny Armstrong, Ralph Carney, Noel Jewkes, Brian Kane, Bill Langlois, Michael McIntosh, and Kevin Mummey, whose ability to play jazz and jump-blues standards with one arm tied behind their backs makes you wonder what they're doing spending time in a group whose stock repertoire includes \"My Blue Heaven,\" \"Sugar in My Bowl,\" and \"You're Drivin' Me Crazy.\" I can tell you why: Tricia Thomas. If ever the voices of Bessie Smith and Victoria Spivey were to coalesce in the breast of a young woman in the year 2000, they've done so in her.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 0,
+    "total_releases": 4,
+    "formats": [
+      "CD, Album",
+      "CD, Comp"
+    ],
+    "labels": [
+      "DM Records",
+      "Deluxe Records (11)",
+      "Heptown Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ever So Blue",
+    "mbid": "c28217d4-2280-4caf-a1d6-d9372e8ea0ae",
+    "listeners": 243043,
+    "playcount": 1713479,
+    "listener_play_ratio": 7.05,
+    "bio_exists": true,
+    "bio_summary": "Ever So Blue is the brainchild of Swedish, Gothenburg-based songwriter Jakob Ahlbom. Whilst the output under his real name combines a life-long passion for piano improvisation with an everlasting love for post-rock music, Ever So Blue acts as his unequivocal homage to the piano as a solo instrument. One could say Ever So Blue is where it all begins. An origin, or inception, where simplicity meets intimacy. The beautiful melodies stemming from Jakob’s fingertips are left pure and uncluttered <a h",
+    "tags": [
+      "ambient",
+      "piano",
+      "Sweden",
+      "Background"
+    ],
+    "similar_artists": [
+      "Sirius Eyes",
+      "Gavin Luke",
+      "Clem Leek",
+      "Jakob Ahlbom",
+      "Leah Kardos"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fragment",
+        "listeners": 56996,
+        "playcount": 182645
+      },
+      {
+        "name": "Progress",
+        "listeners": 55856,
+        "playcount": 169553
+      },
+      {
+        "name": "At Dawn",
+        "listeners": 53656,
+        "playcount": 242802
+      },
+      {
+        "name": "Onthou",
+        "listeners": 51904,
+        "playcount": 177242
+      },
+      {
+        "name": "Remembering",
+        "listeners": 45599,
+        "playcount": 148435
+      },
+      {
+        "name": "Cessura",
+        "listeners": 36806,
+        "playcount": 139129
+      },
+      {
+        "name": "Sketches",
+        "listeners": 31791,
+        "playcount": 79093
+      },
+      {
+        "name": "Dvala",
+        "listeners": 27673,
+        "playcount": 147318
+      },
+      {
+        "name": "Symbios",
+        "listeners": 27185,
+        "playcount": 126441
+      },
+      {
+        "name": "Traces",
+        "listeners": 20486,
+        "playcount": 56193
+      }
+    ],
+    "url": "https://www.last.fm/music/Ever+So+Blue"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,106 @@
+{
+  "artist_name": "Naéli Gosally",
+  "artist_id": "naéli_gosally",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:58:37.714502+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Naéli Gosally', got 'Naéli Gosally'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Naéli Gosally",
+    "mbid": "",
+    "listeners": 5342,
+    "playcount": 76735,
+    "listener_play_ratio": 14.36,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Na%C3%A9li+Gosally\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Little Mishka",
+      "Eijah Nilson",
+      "Victoria Kane",
+      "Aryan Armstrong",
+      "Jordan Avery"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Moon and Me",
+        "listeners": 5105,
+        "playcount": 67712
+      },
+      {
+        "name": "Stardust Slumber",
+        "listeners": 1087,
+        "playcount": 8995
+      },
+      {
+        "name": "Good Night, Little Sheep",
+        "listeners": 12,
+        "playcount": 16
+      },
+      {
+        "name": "Una's Lullaby",
+        "listeners": 5,
+        "playcount": 8
+      },
+      {
+        "name": "Hush Little Roo",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Poppy's Dream",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Preston's Space Nap",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Na%C3%A9li+Gosally"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

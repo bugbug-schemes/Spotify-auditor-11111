@@ -1,0 +1,396 @@
+{
+  "artist_name": "Gottfried Barber Trio",
+  "artist_id": "gottfried_barber_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:55:45.522785+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c976d479-4e8e-49ca-bb70-8e7dcb98cad4",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz",
+      "ambient"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/175713907",
+      "purchase for download": "https://music.apple.com/us/artist/1634403067",
+      "soundcloud": "https://soundcloud.com/gottfriedbarbertrio",
+      "streaming": "https://tidal.com/artist/33096669",
+      "youtube music": "https://music.youtube.com/channel/UC_b6imwa94Mlyb8Tc58qXPQ"
+    },
+    "labels": [
+      "Calm Lands Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 175713907,
+    "name": "Gottfried Barber Trio",
+    "nb_fan": 20,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/175713907",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9ba18e4e74e90161423fc1dcc2b235d6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Again Tomorrow",
+      "Before The Thrill",
+      "What A Little Moonlight Can Do",
+      "Dark Suit and Necktie",
+      "Hometown Again",
+      "Cherry Stone",
+      "Before we leave",
+      "Someone Who Cares",
+      "Presumptuous of you"
+    ],
+    "track_durations": [
+      223,
+      201,
+      153,
+      212,
+      275,
+      203,
+      221,
+      216,
+      190
+    ],
+    "track_ranks": [
+      56909,
+      61945,
+      179333,
+      49061,
+      93563,
+      113913,
+      69921,
+      10250,
+      22387
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Before we leave",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The greatest gift we've got",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The due date",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hungry for conversation",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Before The Thrill",
+        "label": "",
+        "release_date": "2025-06-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someone Who Cares",
+        "label": "",
+        "release_date": "2025-05-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Something To Say",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Highly Reliable",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "To the whole world",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dark Suit and Necktie",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Again Tomorrow",
+        "label": "",
+        "release_date": "2024-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Six Copies",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cigarette Smoke",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blowing Dust",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "That’s What’s Up",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Presumptuous of you",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bad Spot",
+        "label": "",
+        "release_date": "2023-07-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Play it right",
+        "label": "",
+        "release_date": "2023-06-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Taste my freedom",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "They haven’t changed",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wichita Lineman",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "From the valley",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lighter",
+        "label": "",
+        "release_date": "2022-12-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cherry Stone",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hometown Again",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Ideal",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What A Little Moonlight Can Do",
+        "label": "",
+        "release_date": "2022-08-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "James Jackson Jazz Trio",
+      "The Uptown Players",
+      "Lachlan Wright Trio",
+      "Nouveau Jazz Trio",
+      "Astoria Three",
+      "Most Iverson",
+      "Saginaw Society",
+      "Brad Mehldau Trio",
+      "Martin Landström",
+      "Mark Roswell Trio"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gottfried Barber Trio",
+    "mbid": "c976d479-4e8e-49ca-bb70-8e7dcb98cad4",
+    "listeners": 100784,
+    "playcount": 363812,
+    "listener_play_ratio": 3.61,
+    "bio_exists": true,
+    "bio_summary": "No information is given about this artist on the web. The name might be just one of several psuedonyms by a music producer at a label. It could also be because the musicians remain anonymous via the label who distributes the music. This is usually done to save money in royalties, and drive down costs for the streaming service. Spotify has denied that they \"create fake artists\".\n\nYou can read more about these artists here:\nMusicbusinessworldwide.com\nDigitalmusicnews.com\nTheguardian.com <a href=\"h",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Irvin Smith Group",
+      "Nordic Light Trio",
+      "Denzel Sachs",
+      "The Three Queens",
+      "Holborns"
+    ],
+    "top_tracks": [
+      {
+        "name": "What a Little Moonlight Can Do",
+        "listeners": 36027,
+        "playcount": 90192
+      },
+      {
+        "name": "Hometown Again",
+        "listeners": 24773,
+        "playcount": 59588
+      },
+      {
+        "name": "The greatest gift we've got",
+        "listeners": 20013,
+        "playcount": 39065
+      },
+      {
+        "name": "Cherry Stone",
+        "listeners": 17645,
+        "playcount": 38820
+      },
+      {
+        "name": "Dark Suit and Necktie",
+        "listeners": 11482,
+        "playcount": 23783
+      },
+      {
+        "name": "Before The Thrill",
+        "listeners": 10819,
+        "playcount": 22745
+      },
+      {
+        "name": "Again Tomorrow",
+        "listeners": 9371,
+        "playcount": 20665
+      },
+      {
+        "name": "Six Copies",
+        "listeners": 8219,
+        "playcount": 15944
+      },
+      {
+        "name": "Someone Who Cares",
+        "listeners": 5873,
+        "playcount": 11776
+      },
+      {
+        "name": "Wichita Lineman",
+        "listeners": 5068,
+        "playcount": 10054
+      }
+    ],
+    "url": "https://www.last.fm/music/Gottfried+Barber+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

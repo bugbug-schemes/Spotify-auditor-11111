@@ -1,0 +1,155 @@
+{
+  "artist_name": "Berlin Rain",
+  "artist_id": "berlin_rain",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:38:35.052572+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Berlin Rain', got 'Berlin Radio Symphony Orchestra'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2418163,
+    "name": "Rain Dog",
+    "profile": "Electronic producer, and audio engineer from London,UK, based in Berlin, Germany.",
+    "realname": "Samuel Evans",
+    "social_urls": [
+      "https://projectmooncircle.com/artist/rain-dog/",
+      "https://soundcloud.com/rain_dog"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 7,
+    "digital_only_releases": 10,
+    "total_releases": 17,
+    "formats": [
+      "",
+      "14xFile, MP3, Comp, 320",
+      "20xFile, FLAC, Comp",
+      "2x10\", Ltd, Whi",
+      "2xLP, Album, smo",
+      "3xLP, Comp",
+      "4xCD + Box, Comp, Ltd, S/Edition",
+      "4xLP, Comp, Ltd, Whi + Box",
+      "Cass, Album, Comp, Ltd",
+      "File, MP3, Mixed, 320",
+      "LP"
+    ],
+    "labels": [
+      "Cut (2)",
+      "Night Tracks Mix",
+      "Not On Label",
+      "Not On Label (Plaid Self-released)",
+      "Project: Mooncircle"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Berlin Rain",
+    "mbid": "",
+    "listeners": 13910,
+    "playcount": 41394,
+    "listener_play_ratio": 2.98,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Berlin+Rain\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nia Butler",
+      "Healing Nature FX",
+      "Himalaya Nature",
+      "Jacob Woods",
+      "Earthly Sounds"
+    ],
+    "top_tracks": [
+      {
+        "name": "Vogelgezwitscher",
+        "listeners": 13860,
+        "playcount": 40882
+      },
+      {
+        "name": "Rain Forest (Bird Sounds)",
+        "listeners": 63,
+        "playcount": 286
+      },
+      {
+        "name": "Calming Thunderstorm Background",
+        "listeners": 10,
+        "playcount": 22
+      },
+      {
+        "name": "Heavy Wind Snow Gusts",
+        "listeners": 9,
+        "playcount": 9
+      },
+      {
+        "name": "Vogelgesang",
+        "listeners": 6,
+        "playcount": 9
+      },
+      {
+        "name": "Der Frühling im Wald",
+        "listeners": 4,
+        "playcount": 7
+      },
+      {
+        "name": "Die ersten Sonnenstrahlen",
+        "listeners": 4,
+        "playcount": 5
+      },
+      {
+        "name": "Im Rausch der Natur",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Waldgeräusche",
+        "listeners": 3,
+        "playcount": 6
+      },
+      {
+        "name": "Fröhliche Vögel",
+        "listeners": 3,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Berlin+Rain"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

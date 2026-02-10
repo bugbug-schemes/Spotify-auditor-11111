@@ -1,0 +1,157 @@
+{
+  "artist_name": "La Nature",
+  "artist_id": "la_nature",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:55:29.695204+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "438c551c-610f-479c-9602-3303e3a5c84a",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'La Nature', got 'George Benson'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3739758,
+    "name": "La Nature",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "http://lanature.bandcamp.com",
+      "https://myspace.com/lanaturetaime"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "11xFile, FLAC",
+      "CDr, MiniAlbum"
+    ],
+    "labels": [
+      "Not On Label (La Nature Self-released)",
+      "chat blanc records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "La nature",
+    "mbid": "",
+    "listeners": 18261,
+    "playcount": 74554,
+    "listener_play_ratio": 4.08,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/La+nature\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Relaxing The Mind",
+      "Jane Quin",
+      "Shiroma Rin",
+      "Berlin Rain",
+      "Nia Butler"
+    ],
+    "top_tracks": [
+      {
+        "name": "Amour D'oiseau",
+        "listeners": 17960,
+        "playcount": 65631
+      },
+      {
+        "name": "Morning Thunder",
+        "listeners": 214,
+        "playcount": 548
+      },
+      {
+        "name": "audrey",
+        "listeners": 23,
+        "playcount": 274
+      },
+      {
+        "name": "samuel",
+        "listeners": 20,
+        "playcount": 307
+      },
+      {
+        "name": "alex",
+        "listeners": 15,
+        "playcount": 276
+      },
+      {
+        "name": "pascale",
+        "listeners": 15,
+        "playcount": 237
+      },
+      {
+        "name": "carl",
+        "listeners": 15,
+        "playcount": 220
+      },
+      {
+        "name": "sarah & iskra",
+        "listeners": 15,
+        "playcount": 112
+      },
+      {
+        "name": "jocelyn",
+        "listeners": 14,
+        "playcount": 215
+      },
+      {
+        "name": "alexis & maxime",
+        "listeners": 14,
+        "playcount": 133
+      }
+    ],
+    "url": "https://www.last.fm/music/La+nature"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

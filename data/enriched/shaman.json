@@ -1,0 +1,597 @@
+{
+  "artist_name": "Shaman",
+  "artist_id": "shaman",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:00:02.982143+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "9ff3eacb-c52e-40c6-8f0d-b242b05061f0",
+    "type": "Group",
+    "country": "BR",
+    "area": "Brazil",
+    "begin_date": "2000",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "brazil",
+      "brasil",
+      "power metal",
+      "progressive metal"
+    ],
+    "aliases": [
+      "Shaaman"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/474157",
+      "free streaming": "https://www.deezer.com/artist/267922",
+      "myspace": "https://myspace.com/shamanimmortal",
+      "other databases": "https://www.metal-archives.com/bands/Shaman/1720",
+      "social network": "https://www.reverbnation.com/shamanimmortal",
+      "wikidata": "https://www.wikidata.org/wiki/Q212481"
+    },
+    "labels": [
+      "Manero Records",
+      "Universal Music Ltda.",
+      "[no label]",
+      "CD‐Maximum",
+      "Thurbo Music",
+      "Maldito Records",
+      "DeckDisc",
+      "Mercury Records",
+      "AFM Records",
+      "Scarlet Records",
+      "Lucretia Records International"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 116463722,
+    "name": "Shaman",
+    "nb_fan": 2125,
+    "nb_album": 53,
+    "link": "https://www.deezer.com/artist/116463722",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/42596f3218f95d10797a6dc8a7782b27/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Sergey Lazarev",
+      "Александр Маршал",
+      "Александр Ф. Скляр",
+      "Ая",
+      "Виктория Дайнеко",
+      "Григорий Лепс",
+      "Зара",
+      "Игорь Бутман",
+      "Лариса Долина",
+      "Надежда Бабкина",
+      "Николай Басков",
+      "Стас Михайлов"
+    ],
+    "contributor_roles": {
+      "Игорь Бутман": [
+        "Main"
+      ],
+      "Григорий Лепс": [
+        "Main"
+      ],
+      "Стас Михайлов": [
+        "Main"
+      ],
+      "Николай Басков": [
+        "Main"
+      ],
+      "Sergey Lazarev": [
+        "Main"
+      ],
+      "Надежда Бабкина": [
+        "Main"
+      ],
+      "Лариса Долина": [
+        "Main"
+      ],
+      "Александр Ф. Скляр": [
+        "Main"
+      ],
+      "Зара": [
+        "Main"
+      ],
+      "Александр Маршал": [
+        "Main"
+      ],
+      "Ая": [
+        "Main"
+      ],
+      "Виктория Дайнеко": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "ДО САМОГО НЕБА",
+      "УЛЕТАЙ",
+      "Я РУССКИЙ",
+      "САМЫЙ РУССКИЙ ХИТ",
+      "ВСТАНЕМ",
+      "ТЫ МОЯ",
+      "ИСПОВЕДЬ",
+      "ЛЁД",
+      "Я КРАСИВО ЖИВУ",
+      "МОЯ РОССИЯ",
+      "ТЕРЯЕМ МЫ ЛЮБОВЬ",
+      "МЫ",
+      "ДУША НАРАСПАШКУ",
+      "ВОРОНЫ МОИ",
+      "СЕРДЦЕ ПЛАЧЕТ И БОЛИТ",
+      "ВСПОМИНАЙ МЕНЯ",
+      "ГУЛЯЙ, РОССИЯ!",
+      "ВСТАНЕМ",
+      "ВЫЗОВ (Саундтрек к шоу ТНТ «Вызов»)",
+      "Я ОСТАНУСЬ С ТОБОЙ",
+      "МЕТЕЛИЦА",
+      "ЖИВОЙ",
+      "ЧЁРНЫЙ ВОРОН",
+      "ОНА ТОГО СТОИТ",
+      "ГИМН РОССИИ"
+    ],
+    "track_durations": [
+      180,
+      130,
+      210,
+      200,
+      243,
+      203,
+      155,
+      169,
+      181,
+      155,
+      184,
+      191,
+      160,
+      180,
+      195,
+      162,
+      196,
+      238,
+      197,
+      216,
+      135,
+      200,
+      210,
+      175,
+      210
+    ],
+    "track_ranks": [
+      282203,
+      265206,
+      339692,
+      250426,
+      240767,
+      311126,
+      191638,
+      73170,
+      111938,
+      226555,
+      179157,
+      215260,
+      247041,
+      174304,
+      230235,
+      93032,
+      116768,
+      202083,
+      71162,
+      219801,
+      135499,
+      148060,
+      155547,
+      164276,
+      302886
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 53
+    },
+    "albums": [
+      {
+        "title": "МЕТЕЛИЦА",
+        "label": "",
+        "release_date": "2025-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Я КРАСИВО ЖИВУ",
+        "label": "",
+        "release_date": "2025-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "БЕЛЫЙ ВЕТЕР",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ОНА ТОГО СТОИТ",
+        "label": "",
+        "release_date": "2025-07-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ГУЛЯЙ, РОССИЯ!",
+        "label": "",
+        "release_date": "2025-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ДРУГ",
+        "label": "",
+        "release_date": "2025-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ПЕРВАЯ ЛЮБОВЬ",
+        "label": "",
+        "release_date": "2025-05-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "БЫВШИЕ",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Я ОСТАНУСЬ С ТОБОЙ",
+        "label": "",
+        "release_date": "2024-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ОТЕЦ",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ДУША НАРАСПАШКУ",
+        "label": "",
+        "release_date": "2024-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ЛЮБИМАЯ ЖЕНЩИНА",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ЧЁРНЫЙ ВОРОН",
+        "label": "",
+        "release_date": "2024-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "РЕКВИЕМ 22.03.24",
+        "label": "",
+        "release_date": "2024-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "МАМА",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ЖИВОЙ",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "СЕРДЦЕ ПЛАЧЕТ И БОЛИТ",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ДА",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ГРЕШНАЯ ЛЮБОВЬ",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "СПАСИБО",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ДАЙ ЖАРУ",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "РОДНАЯ (новая версия)",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ЗА ТОБОЙ",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "МОЙ БОЙ",
+        "label": "",
+        "release_date": "2023-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "МЁД",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "МЫ",
+        "label": "",
+        "release_date": "2023-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "САМЫЙ РУССКИЙ ХИТ",
+        "label": "",
+        "release_date": "2023-03-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "МОЯ РОССИЯ",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ИСПОВЕДЬ",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "ГИМН РОССИИ",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Григорий Лепс",
+      "Стас Михайлов",
+      "Сергей Лазарев",
+      "Дима Билан",
+      "Loboda",
+      "Юлия Савичева",
+      "Руки Вверх",
+      "Ани Лорак",
+      "Слава",
+      "Руки Вверх!"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 46798,
+    "name": "Shaman",
+    "profile": "Swedish progressive/psytrance producer.",
+    "realname": "Andreas Henning",
+    "social_urls": [
+      "http://www.shamanbeats.com"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 36,
+    "digital_only_releases": 22,
+    "total_releases": 58,
+    "formats": [
+      "",
+      "12\"",
+      "12\", EP",
+      "2xCD, Album, Ltd",
+      "2xCD, Comp",
+      "2xCD, Comp, Dig",
+      "2xCD, Comp, Mixed, Cla",
+      "2xCD, Comp, Unofficial",
+      "2xCD, Mixed",
+      "2xFile, WAV, EP",
+      "50xFile, MP3, Comp, 320",
+      "Box, Comp, Ltd + 6xLP + 2x12\"",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, Dig",
+      "CD, Comp, Promo",
+      "CD, Comp, Unofficial",
+      "CD, Mixed",
+      "CD, Mixed, Unofficial",
+      "CD-ROM, Comp, Ltd, Unofficial, MP3",
+      "CDr, Mixed",
+      "File, WAV, Single"
+    ],
+    "labels": [
+      "Balalayka Records",
+      "Balloonia Ltd.",
+      "Dacru Records",
+      "Dance N Dust",
+      "Digital Structures",
+      "Domo Records",
+      "Egregor, Psyshine",
+      "Fantom Records (2)",
+      "George V Records",
+      "Guitar Player Magazine",
+      "Leguan",
+      "Manta Recordings",
+      "Moreau-Music",
+      "Natraj Temple",
+      "Plastik Park",
+      "Plusquam Records",
+      "Project Records (3)",
+      "Shamanik Records",
+      "Shiaure rec",
+      "Tribal Vision Records",
+      "Yellow Sunshine Explosion",
+      "Yellow Sunshine Explosion, Yellow Sunshine Explosion, Yellow Sunshine Explosion",
+      "Zillion Mental Anarchie Records",
+      "Навигатор"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Shaman",
+    "mbid": "9ff3eacb-c52e-40c6-8f0d-b242b05061f0",
+    "listeners": 325252,
+    "playcount": 6091586,
+    "listener_play_ratio": 18.73,
+    "bio_exists": true,
+    "bio_summary": "There are at least nine artists known under this name. For Yaroslav Dronov, please use Шаман\n \n- Brazilian Power Metal band (known as Shaaman, but has since reformed as Shaman).\n- German Progressive Trance Producer, \n- Russian rapper and beatmaker from group “Район Моей Мечты”, \n- South Korean brutal death metal band, \n- US Folk group.\n- Hungarian demoscene musician.\n- Andreas Henning, a Swedish progressive psytrance producer. <a href=\"https://www.last.fm/music/Shaman\">Read more on Last.fm</a>",
+    "tags": [
+      "folk metal",
+      "Power metal",
+      "metal",
+      "finnish",
+      "heavy metal"
+    ],
+    "similar_artists": [
+      "Angra",
+      "Andre Matos",
+      "Almah",
+      "Edu Falaschi",
+      "Hangar"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fairy Tale",
+        "listeners": 69722,
+        "playcount": 572339
+      },
+      {
+        "name": "For Tomorrow",
+        "listeners": 36268,
+        "playcount": 220549
+      },
+      {
+        "name": "Open Skies",
+        "listeners": 32541,
+        "playcount": 211596
+      },
+      {
+        "name": "Here I Am",
+        "listeners": 30759,
+        "playcount": 171052
+      },
+      {
+        "name": "Distant Thunder",
+        "listeners": 28902,
+        "playcount": 157688
+      },
+      {
+        "name": "Close to the River, Birds Watching",
+        "listeners": 28663,
+        "playcount": 90435
+      },
+      {
+        "name": "Northern Thunder",
+        "listeners": 26639,
+        "playcount": 347381
+      },
+      {
+        "name": "Almost Supernatural",
+        "listeners": 25670,
+        "playcount": 164220
+      },
+      {
+        "name": "Time Will Come",
+        "listeners": 24760,
+        "playcount": 126925
+      },
+      {
+        "name": "Ritual",
+        "listeners": 23871,
+        "playcount": 116979
+      }
+    ],
+    "url": "https://www.last.fm/music/Shaman"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

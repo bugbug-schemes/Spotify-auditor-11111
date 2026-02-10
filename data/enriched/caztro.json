@@ -1,0 +1,533 @@
+{
+  "artist_name": "Caztro",
+  "artist_id": "caztro",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:01:53.220919+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8237d1d0-a898-4ff1-92a0-f5faaeae6839",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/1YvkzmaJLVRHSJ8J5YzoaW",
+      "wikidata": "https://www.wikidata.org/wiki/Q113453468"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 9355294,
+    "name": "Caztro",
+    "nb_fan": 3997,
+    "nb_album": 45,
+    "link": "https://www.deezer.com/artist/9355294",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/b2c1df663bdb2a8ccf36bf8ad9fe648e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Adrian L Santos",
+      "Bruses",
+      "Callejo",
+      "Charles Ans",
+      "DAAZ",
+      "Efecto Pasillo",
+      "El Plan",
+      "Emi Muñiz",
+      "Jorge Cuellar",
+      "Kaia Lana",
+      "Leonel Garcia",
+      "Marissa Mur",
+      "Ms. Ambar",
+      "Paloma Morphy",
+      "Ruggero Pasquarelli",
+      "Yukun"
+    ],
+    "contributor_roles": {
+      "Jorge Cuellar": [
+        "Main"
+      ],
+      "Callejo": [
+        "Main"
+      ],
+      "DAAZ": [
+        "Main"
+      ],
+      "Kaia Lana": [
+        "Main"
+      ],
+      "Ruggero Pasquarelli": [
+        "Main"
+      ],
+      "Charles Ans": [
+        "Main"
+      ],
+      "Adrian L Santos": [
+        "Main"
+      ],
+      "El Plan": [
+        "Main"
+      ],
+      "Ms. Ambar": [
+        "Main"
+      ],
+      "Emi Muñiz": [
+        "Main"
+      ],
+      "Bruses": [
+        "Main"
+      ],
+      "Efecto Pasillo": [
+        "Main"
+      ],
+      "Leonel Garcia": [
+        "Main"
+      ],
+      "Yukun": [
+        "Main"
+      ],
+      "Paloma Morphy": [
+        "Main"
+      ],
+      "Marissa Mur": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "tqcm",
+      "Ese No Sé Qué",
+      "no me siento mejor",
+      "Dos Dos Tres",
+      "Acapulco En La Azotea",
+      "Serenata",
+      "Un Poquito de Amor",
+      "le valgo madre",
+      "hoy no me encuentro para nadie",
+      "Si el Mundo Se Acabara Hoy",
+      "Quererte Bien",
+      "SANTORINI",
+      "Nada de Nada",
+      "Pero Todo Bien",
+      "Fantasía",
+      "100m",
+      "Para Cuando Llegues Tú",
+      "Noche de Paz",
+      "Soñé Contigo",
+      "Mojo",
+      "OJO X OJO"
+    ],
+    "track_durations": [
+      158,
+      198,
+      183,
+      177,
+      154,
+      176,
+      212,
+      156,
+      164,
+      188,
+      158,
+      180,
+      198,
+      177,
+      188,
+      140,
+      199,
+      225,
+      188,
+      206,
+      127
+    ],
+    "track_ranks": [
+      225231,
+      280133,
+      421041,
+      183502,
+      142713,
+      185599,
+      130110,
+      125540,
+      78311,
+      111358,
+      38464,
+      21481,
+      68094,
+      86770,
+      92345,
+      44302,
+      103662,
+      64489,
+      35796,
+      77411,
+      16489
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 3,
+      "ep": 1,
+      "single": 41
+    },
+    "albums": [
+      {
+        "title": "mi compa y yo, vol.1",
+        "label": "",
+        "release_date": "2025-11-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Bambú",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Y el Mundo No Se Acabó",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lo Más Romántico de",
+        "label": "",
+        "release_date": "2021-02-10",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "DIA 81",
+        "label": "",
+        "release_date": "2025-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "SANTORINI",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quererte Bien",
+        "label": "",
+        "release_date": "2025-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Próximamente",
+        "label": "",
+        "release_date": "2024-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "le valgo madre",
+        "label": "",
+        "release_date": "2024-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "no me siento mejor",
+        "label": "",
+        "release_date": "2024-02-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "tqcm",
+        "label": "",
+        "release_date": "2024-02-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fantasía",
+        "label": "",
+        "release_date": "2024-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "100m",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noche de Paz",
+        "label": "",
+        "release_date": "2023-11-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serenata",
+        "label": "",
+        "release_date": "2023-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "cartulinas de colores",
+        "label": "",
+        "release_date": "2023-09-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "moneda sin valor",
+        "label": "",
+        "release_date": "2023-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "hoy no me encuentro para nadie",
+        "label": "",
+        "release_date": "2023-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Piensa Por los Dos",
+        "label": "",
+        "release_date": "2021-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pero Todo Bien",
+        "label": "",
+        "release_date": "2021-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Como una Obra de Arte",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "NTDDP",
+        "label": "",
+        "release_date": "2021-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quedito",
+        "label": "",
+        "release_date": "2021-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Diciembre Va",
+        "label": "",
+        "release_date": "2021-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ya No Queda Nada",
+        "label": "",
+        "release_date": "2021-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mojo",
+        "label": "",
+        "release_date": "2020-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Para Cuando Llegues Tú",
+        "label": "",
+        "release_date": "2020-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A la Mier** Los Que No Sepan Amar",
+        "label": "",
+        "release_date": "2020-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Poquito de Amor",
+        "label": "",
+        "release_date": "2020-06-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soñé Contigo",
+        "label": "",
+        "release_date": "2020-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Alex Ponce",
+      "Carla Morrison",
+      "Pau Laggies",
+      "Andrey Serrano",
+      "Kurt",
+      "Leonel Garcia",
+      "Marcos Menchaca",
+      "Elsa y Elmar",
+      "PATY CANTÚ",
+      "LÚA"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2902414,
+    "name": "Caztro",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 3,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "11xFile, AAC, Album",
+      "File, AAC, Single"
+    ],
+    "labels": [
+      "Not On Label",
+      "Sony Music Entertainment México, S.A. De C.V."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Caztro",
+    "mbid": "8237d1d0-a898-4ff1-92a0-f5faaeae6839",
+    "listeners": 21704,
+    "playcount": 240318,
+    "listener_play_ratio": 11.07,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Caztro\">Read more on Last.fm</a>",
+    "tags": [
+      "Espanish"
+    ],
+    "similar_artists": [
+      "dAAz",
+      "Alex Luna",
+      "Kendall Peña",
+      "Chucho Rivas",
+      "Charlie Rodd"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ese No Sé Qué",
+        "listeners": 7359,
+        "playcount": 52332
+      },
+      {
+        "name": "no me siento mejor",
+        "listeners": 6845,
+        "playcount": 86705
+      },
+      {
+        "name": "Dos Dos Tres",
+        "listeners": 3844,
+        "playcount": 21974
+      },
+      {
+        "name": "Pero Todo Bien",
+        "listeners": 2877,
+        "playcount": 12002
+      },
+      {
+        "name": "Mojo",
+        "listeners": 2281,
+        "playcount": 8595
+      },
+      {
+        "name": "Si el Mundo Se Acabara Hoy",
+        "listeners": 1585,
+        "playcount": 8066
+      },
+      {
+        "name": "hoy no me encuentro para nadie",
+        "listeners": 1268,
+        "playcount": 4335
+      },
+      {
+        "name": "Un Poquito de Amor",
+        "listeners": 1182,
+        "playcount": 6453
+      },
+      {
+        "name": "Flor de Mi Jardín",
+        "listeners": 1118,
+        "playcount": 5782
+      },
+      {
+        "name": "moneda sin valor",
+        "listeners": 791,
+        "playcount": 4067
+      }
+    ],
+    "url": "https://www.last.fm/music/Caztro"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

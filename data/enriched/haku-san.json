@@ -1,0 +1,135 @@
+{
+  "artist_name": "Haku-San",
+  "artist_id": "haku-san",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:00:01.176453+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "701703a2-cfa3-4eb0-9138-7d24d7b38262",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Haku-San', got 'Haku Pandora'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Haku-San",
+    "mbid": "",
+    "listeners": 29895,
+    "playcount": 85587,
+    "listener_play_ratio": 2.86,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Haku-San\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Soft Dunes",
+      "Jazzamass",
+      "yvwn.",
+      "Cloudroom",
+      "Low Pines"
+    ],
+    "top_tracks": [
+      {
+        "name": "Twilight",
+        "listeners": 21934,
+        "playcount": 57059
+      },
+      {
+        "name": "Midnight Dreams and Lights",
+        "listeners": 8630,
+        "playcount": 17865
+      },
+      {
+        "name": "Dusking",
+        "listeners": 4084,
+        "playcount": 7974
+      },
+      {
+        "name": "The Purple House",
+        "listeners": 870,
+        "playcount": 1154
+      },
+      {
+        "name": "Staying Overnight",
+        "listeners": 692,
+        "playcount": 1527
+      },
+      {
+        "name": "Look! A Factory On The Hill",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Spring",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Summer Station",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Night Drifter",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Fireflies In The Mist",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Haku-San"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

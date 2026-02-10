@@ -1,0 +1,160 @@
+{
+  "artist_name": "Gateway IV",
+  "artist_id": "gateway_iv",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:48:32.325155+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 297772131,
+    "name": "Gateway",
+    "nb_fan": 8,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/297772131",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7a6afd0017486d35aff7e55022d91759/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3
+    },
+    "albums": [
+      {
+        "title": "Gateway (Rückkehr nach Gateway)",
+        "label": "",
+        "release_date": "2004-08-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Gateway (Jenseits des blauen Horizonts)",
+        "label": "",
+        "release_date": "2004-08-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Gateway",
+        "label": "",
+        "release_date": "2004-08-01",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Gateway IV",
+    "mbid": "",
+    "listeners": 86834,
+    "playcount": 673950,
+    "listener_play_ratio": 7.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Gateway+IV\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Lay-Backs",
+      "Somnum Magnam",
+      "Armonía Astral",
+      "Eône",
+      "Fjordyn"
+    ],
+    "top_tracks": [
+      {
+        "name": "Soft Corals",
+        "listeners": 50765,
+        "playcount": 313479
+      },
+      {
+        "name": "Royal Cubit",
+        "listeners": 31683,
+        "playcount": 185878
+      },
+      {
+        "name": "Deep Sleep Binaural Delta 78.5Hz - 79.9Hz",
+        "listeners": 10599,
+        "playcount": 62800
+      },
+      {
+        "name": "Pink Noise Brook",
+        "listeners": 7944,
+        "playcount": 31628
+      },
+      {
+        "name": "Slope Angle",
+        "listeners": 7418,
+        "playcount": 21132
+      },
+      {
+        "name": "Deep Sleep Binaural Delta 82.9Hz - 84.2Hz",
+        "listeners": 6787,
+        "playcount": 29015
+      },
+      {
+        "name": "Upward Aim",
+        "listeners": 3498,
+        "playcount": 10051
+      },
+      {
+        "name": "Stellar Cluster",
+        "listeners": 2874,
+        "playcount": 7610
+      },
+      {
+        "name": "Exploring Textures",
+        "listeners": 2035,
+        "playcount": 5172
+      },
+      {
+        "name": "The Gaia Hypothesis",
+        "listeners": 1248,
+        "playcount": 4141
+      }
+    ],
+    "url": "https://www.last.fm/music/Gateway+IV"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,417 @@
+{
+  "artist_name": "Danny Grissett",
+  "artist_id": "danny_grissett",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:21:30.690977+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "d40c928c-7d78-48e0-a6fe-151295b1cc81",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "1975",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz",
+      "post-bop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1050506",
+      "official homepage": "http://dannygrissett.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no2004110831",
+      "songkick": "https://www.songkick.com/artists/544519",
+      "VIAF": "http://viaf.org/viaf/29252956",
+      "wikidata": "https://www.wikidata.org/wiki/Q21130201"
+    },
+    "labels": [
+      "Savant",
+      "HighNote Records",
+      "Criss Cross Jazz"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 3404081,
+    "name": "Danny Grissett",
+    "nb_fan": 131,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/3404081",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a4e414ac3e362ce675005d07b618669a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Ambrose Akinmusire",
+      "Jim Rotondi",
+      "Kendrick Scott",
+      "Marcus Gilmore",
+      "Seamus Blake",
+      "Steve Davis",
+      "Vicente Archer"
+    ],
+    "contributor_roles": {
+      "Vicente Archer": [
+        "Featured"
+      ],
+      "Marcus Gilmore": [
+        "Featured"
+      ],
+      "Jim Rotondi": [
+        "Main"
+      ],
+      "Steve Davis": [
+        "Main",
+        "Featured"
+      ],
+      "Ambrose Akinmusire": [
+        "Featured"
+      ],
+      "Seamus Blake": [
+        "Featured"
+      ],
+      "Kendrick Scott": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Two Sleepy People",
+      "Miller Time",
+      "Let's Face the Music and Dance",
+      "Cambridge Place",
+      "Woody'n You",
+      "Here's That Rainy Day",
+      "Everything Happens To Me",
+      "The Long Way Home",
+      "For Curtis"
+    ],
+    "track_durations": [
+      396,
+      499,
+      464,
+      423,
+      310,
+      321,
+      451,
+      324,
+      429
+    ],
+    "track_ranks": [
+      215871,
+      44783,
+      58372,
+      41192,
+      22305,
+      119265,
+      6885,
+      135629,
+      22052
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 11,
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Travelogue",
+        "label": "",
+        "release_date": "2025-05-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nostalgia In Vienna",
+        "label": "",
+        "release_date": "2024-08-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Going Easy",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Jazz Master Tracks, Vol. 1 (Standards Sessions)",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Remembrance",
+        "label": "",
+        "release_date": "2017-09-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The In-Between",
+        "label": "",
+        "release_date": "2015-09-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Songbook One: Mike Scharf & Urban Dreamtime",
+        "label": "",
+        "release_date": "2012-06-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Stride",
+        "label": "",
+        "release_date": "2011-06-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Form",
+        "label": "",
+        "release_date": "2009-08-13",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Promise",
+        "label": "",
+        "release_date": "2009-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Encounters",
+        "label": "",
+        "release_date": "2009-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "For Curtis",
+        "label": "",
+        "release_date": "2024-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jazz Master Tracks",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Red Garland",
+      "Art Pepper",
+      "Lee Konitz",
+      "Clifford Brown",
+      "George Cables",
+      "Ron Carter",
+      "Branford Marsalis Quartet",
+      "Sonny Rollins",
+      "Joe Henderson",
+      "Thelonious Monk"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1050506,
+    "name": "Danny Grissett",
+    "profile": "Jazz pianist and composer from Los Angeles, now based in New York",
+    "realname": "",
+    "social_urls": [
+      "http://www.dannygrissett.com/",
+      "http://www.myspace.com/dannygrissett"
+    ],
+    "members": [],
+    "groups": [
+      "The New Jazz Composers Octet",
+      "Anne Mette Iversen's Double Life",
+      "Lukáš Oravec Quartet",
+      "Felice Clemente Quartet",
+      "The Power Quintet",
+      "Raggi-Brillante Quintet",
+      "Tom Harrell Infinity Quartet",
+      "Theo Croker Quartet",
+      "Daniel Nösig / Jure Pukl Quintet",
+      "Jam Music Lab All-Stars"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 65,
+    "digital_only_releases": 22,
+    "total_releases": 87,
+    "formats": [
+      "",
+      "2xCD, Album",
+      "CD",
+      "CD, Album",
+      "CD, Album, dig",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Promo",
+      "CDr, Album",
+      "CDr, RM, Unofficial"
+    ],
+    "labels": [
+      "55 Records",
+      "ACT (4)",
+      "Atelier Sawano",
+      "Blue Lady Records",
+      "Candid",
+      "Capitol Records",
+      "Cellar Music (2)",
+      "Clarion Jazz",
+      "Criss Cross Jazz",
+      "Criss Cross Jazz, Criss Cross Jazz",
+      "Criss Cross Jazz, Criss Cross Jazz, Criss Cross Jazz",
+      "D-Musica",
+      "Du-Productions, Austro Mechana, Vandoren Paris, Thomastik-Infeld",
+      "Fresh Sound New Talent",
+      "Gam Records",
+      "Groves Grooves",
+      "Headless Hawk",
+      "HighNote Records, Inc.",
+      "Hudobný Fond",
+      "JMG Jazz",
+      "Jive Music",
+      "Karonte",
+      "LikewaterMusic",
+      "MAXJAZZ",
+      "MOCLOUD RECORDS",
+      "Minor Music",
+      "Nineteen-Eight Records",
+      "Not On Label",
+      "Okapi Records (4)",
+      "Origin Records",
+      "P-Vine Records",
+      "Picanto Records",
+      "Quintessential",
+      "Quinton",
+      "Savant Records, Inc.",
+      "Skip Records (2)",
+      "Sol Sound",
+      "Universal Music Classics & Jazz France, Universal Music France, EmArcy",
+      "Urban Dreamtime Records",
+      "Whaling City Sound",
+      "bjurecords"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Danny Grissett",
+    "mbid": "d40c928c-7d78-48e0-a6fe-151295b1cc81",
+    "listeners": 31797,
+    "playcount": 86033,
+    "listener_play_ratio": 2.71,
+    "bio_exists": true,
+    "bio_summary": "Originally from Los Angeles, California, pianist/composer Danny Grissett is a relatively new addition to the New York jazz scene. He started playing the piano at age five, and began studying classically when he turned six. Danny continued his classical training through high school and college, earning his B.A. in Music Education in 1998, while developing a love for jazz along the way. He further explored his love for jazz in graduate school, earning his M. <a href=\"https://www.last.fm/music/Dann",
+    "tags": [
+      "jazz",
+      "contemporary jazz",
+      "piano",
+      "jazz piano",
+      "pianists"
+    ],
+    "similar_artists": [
+      "Rob van Bavel",
+      "Carl Bagge",
+      "Dmitry Baevsky",
+      "Peter Edwards Trio",
+      "John Stetch"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cambridge Place",
+        "listeners": 11125,
+        "playcount": 21706
+      },
+      {
+        "name": "Here's That Rainy Day",
+        "listeners": 9037,
+        "playcount": 17327
+      },
+      {
+        "name": "Two Sleepy People",
+        "listeners": 6335,
+        "playcount": 10969
+      },
+      {
+        "name": "Autumn Nocturne",
+        "listeners": 2818,
+        "playcount": 7356
+      },
+      {
+        "name": "Everything Happens To Me",
+        "listeners": 1295,
+        "playcount": 5301
+      },
+      {
+        "name": "Spin Cycle",
+        "listeners": 866,
+        "playcount": 1476
+      },
+      {
+        "name": "Let's Face The Music and Dance",
+        "listeners": 664,
+        "playcount": 1471
+      },
+      {
+        "name": "Where Do We Go From Here?",
+        "listeners": 570,
+        "playcount": 1311
+      },
+      {
+        "name": "Moment's Notice",
+        "listeners": 387,
+        "playcount": 1158
+      },
+      {
+        "name": "Promise",
+        "listeners": 375,
+        "playcount": 830
+      }
+    ],
+    "url": "https://www.last.fm/music/Danny+Grissett"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

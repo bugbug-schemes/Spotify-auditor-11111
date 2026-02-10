@@ -1,0 +1,219 @@
+{
+  "artist_name": "Jacques Blanc",
+  "artist_id": "jacques_blanc",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:20:51.889938+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "6acb9423-37ad-4801-93d6-3868ff33fa17",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/11567911",
+      "purchase for download": "https://music.apple.com/us/artist/1496066787",
+      "soundcloud": "https://soundcloud.com/jacquesblanc-music",
+      "streaming": "https://tidal.com/artist/12715510",
+      "youtube music": "https://music.youtube.com/channel/UCURq7pIHtLg8jh6aFkcl3gA"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 11567911,
+    "name": "Jacques Blanc",
+    "nb_fan": 7,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/11567911",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f0e3326f6ca03916915c7e78d6035eb5/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Moving Slowly"
+    ],
+    "track_durations": [
+      119
+    ],
+    "track_ranks": [
+      90088
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Unwound",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hidden in the Sand",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adoration (With Rain Sounds)",
+        "label": "",
+        "release_date": "2024-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adoration",
+        "label": "",
+        "release_date": "2023-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Equality",
+        "label": "",
+        "release_date": "2023-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "As Long As You Are Here",
+        "label": "",
+        "release_date": "2022-10-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moving Slowly",
+        "label": "",
+        "release_date": "2021-11-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2182386,
+    "name": "Jacques Blanc",
+    "profile": "Classical hornist.",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Il Seminario Musicale",
+      "François Jeanneau Pandemonium"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 4,
+    "total_releases": 8,
+    "formats": [
+      "",
+      "CD",
+      "CD, Album",
+      "CD, RE",
+      "Cass, Album",
+      "LP, Album"
+    ],
+    "labels": [
+      "Accord",
+      "Adda",
+      "Owl Records (4)",
+      "Rikou Soner"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jacques Blanc",
+    "mbid": "6acb9423-37ad-4801-93d6-3868ff33fa17",
+    "listeners": 43460,
+    "playcount": 184089,
+    "listener_play_ratio": 4.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jacques+Blanc\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jaime Jacobs",
+      "Dustin Tomas",
+      "Max Walltine",
+      "Oliver Peasley",
+      "Monir Bresegeut"
+    ],
+    "top_tracks": [
+      {
+        "name": "Adoration",
+        "listeners": 21292,
+        "playcount": 108388
+      },
+      {
+        "name": "Moving Slowly",
+        "listeners": 20976,
+        "playcount": 63912
+      },
+      {
+        "name": "Bona Fide",
+        "listeners": 3816,
+        "playcount": 11347
+      },
+      {
+        "name": "As Long As You Are Here",
+        "listeners": 302,
+        "playcount": 441
+      },
+      {
+        "name": "In Equality",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Jacques+Blanc"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

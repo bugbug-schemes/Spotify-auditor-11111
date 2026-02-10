@@ -1,0 +1,160 @@
+{
+  "artist_name": "Twinbeet",
+  "artist_id": "twinbeet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:50:44.834184+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 130407032,
+    "name": "Twinbeet",
+    "nb_fan": 1,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/130407032",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ef695cf5f6ebf6d60342a82c276f1829/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Alpha Focus",
+        "label": "",
+        "release_date": "2022-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Delta Voices",
+        "label": "",
+        "release_date": "2022-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning Binaural",
+        "label": "",
+        "release_date": "2021-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Twinbeet",
+    "mbid": "",
+    "listeners": 15934,
+    "playcount": 68939,
+    "listener_play_ratio": 4.33,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Twinbeet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Sound Around",
+      "ÅÄÖ123",
+      "Jovian Tides",
+      "Hidden in Sound",
+      "Luna Waterfall"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sommernacht - Alpha Sinus 101Hz - 108Hz",
+        "listeners": 11515,
+        "playcount": 39132
+      },
+      {
+        "name": "Focus in the morning - Alpha Sinus 100Hz - 107Hz",
+        "listeners": 8695,
+        "playcount": 29349
+      },
+      {
+        "name": "Delta of Awareness 91Hz - 93Hz",
+        "listeners": 69,
+        "playcount": 188
+      },
+      {
+        "name": "Delta Voices 89Hz - 91Hz",
+        "listeners": 58,
+        "playcount": 119
+      },
+      {
+        "name": "Alpha Highlands 137Hz - 144Hz",
+        "listeners": 32,
+        "playcount": 74
+      },
+      {
+        "name": "Electric Wave Shift",
+        "listeners": 3,
+        "playcount": 9
+      },
+      {
+        "name": "Rain Drift for Peaceful Minds",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Gliding Above Water Alpha Sinus 102Hz - 109Hz",
+        "listeners": 2,
+        "playcount": 9
+      },
+      {
+        "name": "Tranquil Binaural Journey in Rain",
+        "listeners": 2,
+        "playcount": 6
+      },
+      {
+        "name": "Binaural Waves Relaxation Ocean",
+        "listeners": 2,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Twinbeet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

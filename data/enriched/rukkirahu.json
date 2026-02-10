@@ -1,0 +1,148 @@
+{
+  "artist_name": "Rukkirahu",
+  "artist_id": "rukkirahu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:48:48.918231+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 291013011,
+    "name": "Rukkirahu",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/291013011",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/439fe37d3a15d7c2fa4f4424fb40c5af/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Misty Morning",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Sunrise",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Shimmer",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Memorised Moments",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dawn",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Morning In June",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Light",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Rukkirahu",
+    "mbid": "",
+    "listeners": 6963,
+    "playcount": 24747,
+    "listener_play_ratio": 3.55,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Rukkirahu\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Felix Brightwood",
+      "Jack Ame",
+      "Grace Underwood",
+      "Mireia Lluna",
+      "Roasting Coffee Beans"
+    ],
+    "top_tracks": [
+      {
+        "name": "Morning In June",
+        "listeners": 4822,
+        "playcount": 13117
+      },
+      {
+        "name": "First Light",
+        "listeners": 2814,
+        "playcount": 11630
+      }
+    ],
+    "url": "https://www.last.fm/music/Rukkirahu"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

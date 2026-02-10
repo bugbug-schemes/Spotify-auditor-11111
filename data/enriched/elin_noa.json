@@ -1,0 +1,96 @@
+{
+  "artist_name": "Elin Noa",
+  "artist_id": "elin_noa",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:36:28.194645+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Elin Noa', got 'Eli Soares'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elin Noa",
+    "mbid": "",
+    "listeners": 1147,
+    "playcount": 8100,
+    "listener_play_ratio": 7.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elin+Noa\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Henry Clein",
+      "Leon Rose",
+      "Marlo Tendre",
+      "Silas Ash",
+      "Aurora Keys"
+    ],
+    "top_tracks": [
+      {
+        "name": "Starry Paws",
+        "listeners": 1122,
+        "playcount": 7445
+      },
+      {
+        "name": "Cozy Dreams",
+        "listeners": 248,
+        "playcount": 649
+      },
+      {
+        "name": "Dream Dust",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Sleepy Eyes",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Goodnight Moon",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Elin+Noa"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

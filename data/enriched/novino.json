@@ -1,0 +1,412 @@
+{
+  "artist_name": "Novino",
+  "artist_id": "novino",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:08:03.635895+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 106532052,
+    "name": "Novino",
+    "nb_fan": 93,
+    "nb_album": 31,
+    "link": "https://www.deezer.com/artist/106532052",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d303934603b07a52e14428a80f0d759a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Baked Moon",
+      "ELSKA",
+      "Fabienne Becker",
+      "Hanniou",
+      "Rya Rey"
+    ],
+    "contributor_roles": {
+      "Rya Rey": [
+        "Featured"
+      ],
+      "Hanniou": [
+        "Featured"
+      ],
+      "Fabienne Becker": [
+        "Featured"
+      ],
+      "ELSKA": [
+        "Featured"
+      ],
+      "Baked Moon": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Déjà Vu",
+      "You and Me (Instrumental Version)",
+      "Butterflies (Instrumental Version)",
+      "One Last Time (Instrumental Version)",
+      "Looking for You",
+      "Lights Down Low",
+      "For Your Eyes",
+      "Fire",
+      "Boardwalk"
+    ],
+    "track_durations": [
+      120,
+      133,
+      116,
+      112,
+      115,
+      120,
+      97,
+      108,
+      113
+    ],
+    "track_ranks": [
+      160095,
+      62753,
+      73521,
+      77729,
+      251615,
+      72052,
+      248733,
+      18161,
+      132955
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 31
+    },
+    "albums": [
+      {
+        "title": "End With a Kiss",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Boardwalk",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Drowning in Blue",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Til the Dawn",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow My Dreams",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back to You",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Nights",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Chasing the Night",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Favourite View",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunset Drive",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lights Down Low",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Endlessly",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Your Eyes",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Lost My Mind",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Counting Stars",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fire",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Light",
+        "label": "",
+        "release_date": "2022-04-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Be with You",
+        "label": "",
+        "release_date": "2022-02-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let It Go",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You & Me",
+        "label": "",
+        "release_date": "2021-11-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Butterflies",
+        "label": "",
+        "release_date": "2021-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "One Last Time",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Make You Stay",
+        "label": "",
+        "release_date": "2021-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better Days",
+        "label": "",
+        "release_date": "2021-07-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Far from Home",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fallin'",
+        "label": "",
+        "release_date": "2021-04-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Redo",
+        "label": "",
+        "release_date": "2021-03-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Looking for You",
+        "label": "",
+        "release_date": "2021-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let You Go",
+        "label": "",
+        "release_date": "2020-12-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Don't Want to Go",
+        "label": "",
+        "release_date": "2020-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Nimus",
+      "SRTW",
+      "nourii",
+      "NLSN",
+      "Leviro",
+      "Colin",
+      "YVO",
+      "Noile",
+      "GEPPS",
+      "Nina Young"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Novino",
+    "mbid": "",
+    "listeners": 27699,
+    "playcount": 370488,
+    "listener_play_ratio": 13.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Novino\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "seatime",
+      "Luvine",
+      "Nimus",
+      "SRTW",
+      "Yvo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Looking for You",
+        "listeners": 12326,
+        "playcount": 44479
+      },
+      {
+        "name": "One Last Time",
+        "listeners": 9279,
+        "playcount": 46536
+      },
+      {
+        "name": "Far from Home",
+        "listeners": 7940,
+        "playcount": 35356
+      },
+      {
+        "name": "The Light",
+        "listeners": 7799,
+        "playcount": 38058
+      },
+      {
+        "name": "Better Days",
+        "listeners": 7594,
+        "playcount": 34888
+      },
+      {
+        "name": "Let It Go",
+        "listeners": 6567,
+        "playcount": 28006
+      },
+      {
+        "name": "Make You Stay",
+        "listeners": 4723,
+        "playcount": 18602
+      },
+      {
+        "name": "Be with You",
+        "listeners": 4169,
+        "playcount": 19096
+      },
+      {
+        "name": "Butterflies",
+        "listeners": 4090,
+        "playcount": 14800
+      },
+      {
+        "name": "I Don't Want to Go",
+        "listeners": 2920,
+        "playcount": 9500
+      }
+    ],
+    "url": "https://www.last.fm/music/Novino"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

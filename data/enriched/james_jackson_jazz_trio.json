@@ -1,0 +1,489 @@
+{
+  "artist_name": "James Jackson Jazz Trio",
+  "artist_id": "james_jackson_jazz_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:23:11.587316+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dfe6f330-3916-401c-8579-47076675358a",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/88652762",
+      "purchase for download": "https://music.apple.com/us/artist/1582120705",
+      "soundcloud": "https://soundcloud.com/jamesjacksonjazztrio",
+      "streaming": "https://tidal.com/artist/18742188",
+      "youtube music": "https://music.youtube.com/channel/UCsFVbbrHNPdJqaXVcaTz-kw"
+    },
+    "labels": [
+      "Chill Tone",
+      "[no label]",
+      "Chill Palm"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 88652762,
+    "name": "James Jackson Jazz Trio",
+    "nb_fan": 114,
+    "nb_album": 33,
+    "link": "https://www.deezer.com/artist/88652762",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/847cf25636199b5787b03c48ca1e01c7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Thoughtful Proposal",
+      "Winter in Munich",
+      "Juniper Leaves",
+      "Stillness is a Gift",
+      "Coffee with My Baby",
+      "Back When",
+      "The Night Before Christmas",
+      "On a Clear Day (You Can See Forever)",
+      "Winter in New York",
+      "Pretty Are Your Eyes",
+      "In the Air",
+      "On 14th Street",
+      "Ludlow",
+      "Dance of the Sugar Plum Fairy",
+      "A Bossa for Love",
+      "For Bill",
+      "Long Ago (and Far Away)",
+      "A Future With You",
+      "Last Call",
+      "Frosty The Snowman",
+      "Last Autumn",
+      "When You Wish Upon a Star"
+    ],
+    "track_durations": [
+      194,
+      192,
+      205,
+      255,
+      167,
+      243,
+      146,
+      205,
+      123,
+      193,
+      207,
+      176,
+      183,
+      114,
+      210,
+      202,
+      209,
+      185,
+      201,
+      201,
+      174,
+      187
+    ],
+    "track_ranks": [
+      497522,
+      473427,
+      173693,
+      149381,
+      122706,
+      162700,
+      69402,
+      72362,
+      71236,
+      48045,
+      41662,
+      68965,
+      224082,
+      43835,
+      91012,
+      32081,
+      66613,
+      66625,
+      38565,
+      21955,
+      67832,
+      33469
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 32
+    },
+    "albums": [
+      {
+        "title": "Winter in New York",
+        "label": "",
+        "release_date": "2023-01-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "When You Wish Upon a Star",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Night Before Christmas",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In the Air",
+        "label": "",
+        "release_date": "2025-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Autumn",
+        "label": "",
+        "release_date": "2025-01-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Bill",
+        "label": "",
+        "release_date": "2025-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Little One",
+        "label": "",
+        "release_date": "2024-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coffee With My Baby (Rain)",
+        "label": "",
+        "release_date": "2024-02-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Back When",
+        "label": "",
+        "release_date": "2024-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lost",
+        "label": "",
+        "release_date": "2024-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take My Heart",
+        "label": "",
+        "release_date": "2024-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Call",
+        "label": "",
+        "release_date": "2023-12-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At A Glance",
+        "label": "",
+        "release_date": "2023-12-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frosty The Snowman",
+        "label": "",
+        "release_date": "2023-10-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wherever You Go I Follow",
+        "label": "",
+        "release_date": "2023-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Smile For Me",
+        "label": "",
+        "release_date": "2023-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I'm Here With You (Rain)",
+        "label": "",
+        "release_date": "2023-07-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Four-Letter Spell",
+        "label": "",
+        "release_date": "2023-03-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Easy Dreamin'",
+        "label": "",
+        "release_date": "2022-12-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On 14th Street",
+        "label": "",
+        "release_date": "2022-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Faded Skyline",
+        "label": "",
+        "release_date": "2022-11-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just a Thought",
+        "label": "",
+        "release_date": "2022-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anyone Can Dream",
+        "label": "",
+        "release_date": "2022-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "She Loves to Love",
+        "label": "",
+        "release_date": "2022-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Dream of a Sound",
+        "label": "",
+        "release_date": "2022-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Future With You",
+        "label": "",
+        "release_date": "2022-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stars in Your Eyes",
+        "label": "",
+        "release_date": "2022-08-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Purple Magnolia",
+        "label": "",
+        "release_date": "2022-07-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Baldwin's Tune",
+        "label": "",
+        "release_date": "2022-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Between Us",
+        "label": "",
+        "release_date": "2022-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "6th Street Jazz",
+      "Cyrus Chestnut",
+      "Snorre Kirk",
+      "Dominick Farinacci",
+      "The Groove Trio",
+      "Most Iverson",
+      "Cozy Coffee Shop",
+      "Jazzy Coffee",
+      "Relaxing Jazz Piano",
+      "Magnus Lindgren"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1768234,
+    "name": "Gene Diamond",
+    "profile": "Gene was born (April 18th, 1938) in Southern Illinois. After graduating from Douglass High School in Mounds, Illinois, where he was a “star member” of the basketball team, he moved to Chicago and married his high school sweetheart. It was while living in Chicago that he started his professional singing career.\r\nHis experience of singing in the Junior Choir of the family church served as a natural induction to working with James Cleveland Gospel Chimes and Mahalia Jackson. His transformation to a jazz singer occurred as he worked with The Ramsey Lewis Trio, Gene Harris and the Three Sounds, The Bobby Bryant Quintet, Quincy Jones’ Orchestra, Gerald Wilson’s Orchestra, H.B. Barnum, and numerous others.\r\nAfter moving to Portland, Oregon, he performed on television, in concerts, at intimate nightclubs, on radio, and at jazz festivals. His work with the music department at Portland Community College developed into what is now known as the Mt. Hood Jazz Festival. He was a premier performer wi",
+    "realname": "Eugene Hughes, Sr.",
+    "social_urls": [
+      "http://www.45cat.com/artist/gene-diamond"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 5,
+    "digital_only_releases": 1,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "7\"",
+      "7\", Rai",
+      "CD, Comp",
+      "CD, Comp, Unofficial"
+    ],
+    "labels": [
+      "Bradley For Mayor",
+      "Goldmine Soul Supply",
+      "Mothers Records & The Snarf Company",
+      "Soul World (2)",
+      "Tag Ltd."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "James Jackson Jazz Trio",
+    "mbid": "dfe6f330-3916-401c-8579-47076675358a",
+    "listeners": 234330,
+    "playcount": 1092942,
+    "listener_play_ratio": 4.66,
+    "bio_exists": true,
+    "bio_summary": "James Jackson Jazz Trio is a jazz collective based from New York City, led by composer and piano player Julian Shore. They have released their music via Chill Palm Sounds / Chill Tone Records.\n\nJulian Shore, who also performs as Alfons Daiminger, is a pianist and composer originally from Narragansett, Rhode Island, and currently based in New York. He has released 11 singles as Alfons Daiminger, while his six albums are released under his real name. <a href=\"https://www.last.fm/music/James+Jackso",
+    "tags": [
+      "jazz",
+      "instrumental",
+      "NYC",
+      "trio",
+      "enstrumantal"
+    ],
+    "similar_artists": [
+      "The Groove Trio",
+      "Glass Trio",
+      "Most Iverson",
+      "Trio Del Norte",
+      "Måns & Dotter"
+    ],
+    "top_tracks": [
+      {
+        "name": "Ludlow",
+        "listeners": 135881,
+        "playcount": 418064
+      },
+      {
+        "name": "On a Clear Day (You Can See Forever)",
+        "listeners": 36685,
+        "playcount": 102093
+      },
+      {
+        "name": "Dance of the Sugar Plum Fairy",
+        "listeners": 20694,
+        "playcount": 44926
+      },
+      {
+        "name": "Long Ago (and Far Away)",
+        "listeners": 18127,
+        "playcount": 49345
+      },
+      {
+        "name": "Take My Heart",
+        "listeners": 17064,
+        "playcount": 36408
+      },
+      {
+        "name": "Back When",
+        "listeners": 16533,
+        "playcount": 42385
+      },
+      {
+        "name": "Coffee with My Baby",
+        "listeners": 15828,
+        "playcount": 41310
+      },
+      {
+        "name": "On 14th Street",
+        "listeners": 15317,
+        "playcount": 38389
+      },
+      {
+        "name": "Juniper Leaves",
+        "listeners": 15296,
+        "playcount": 38139
+      },
+      {
+        "name": "I'm Here with You (Rain)",
+        "listeners": 15008,
+        "playcount": 52719
+      }
+    ],
+    "url": "https://www.last.fm/music/James+Jackson+Jazz+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,160 @@
+{
+  "artist_name": "Tiny Tunesmiths",
+  "artist_id": "tiny_tunesmiths",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:43:25.222388+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 266010772,
+    "name": "Tiny Tunesmiths",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/266010772",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9013a6f14ad826193ebd6ea149214bd5/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Slowly Slowly",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Petals Waltz",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Carousel Lullaby",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Light Skies",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Folklore Lullaby",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gentle Shepherd's Song",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Starry Slumber",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wish Of A Toddler",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tiny Tunesmiths",
+    "mbid": "",
+    "listeners": 1783,
+    "playcount": 19275,
+    "listener_play_ratio": 10.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tiny+Tunesmiths\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Livia Rivers",
+      "Ole Close",
+      "Little Zoe",
+      "Simon Bogren",
+      "Leon Rose"
+    ],
+    "top_tracks": [
+      {
+        "name": "Wish Of A Toddler",
+        "listeners": 1138,
+        "playcount": 10265
+      },
+      {
+        "name": "Carousel Lullaby",
+        "listeners": 772,
+        "playcount": 5260
+      },
+      {
+        "name": "Petals Waltz",
+        "listeners": 653,
+        "playcount": 3750
+      }
+    ],
+    "url": "https://www.last.fm/music/Tiny+Tunesmiths"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

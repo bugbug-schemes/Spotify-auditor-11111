@@ -1,0 +1,124 @@
+{
+  "artist_name": "Joviano Carrera",
+  "artist_id": "joviano_carrera",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:38:09.241737+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 260111701,
+    "name": "Joviano Carrera",
+    "nb_fan": 2,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/260111701",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7b53edcb8f88e75cb2f7c2a9f4b9fbf3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Biassono"
+    ],
+    "track_durations": [
+      151
+    ],
+    "track_ranks": [
+      182430
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Biassono",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fiesso d’Artico",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Joviano Carrera",
+    "mbid": "",
+    "listeners": 56699,
+    "playcount": 188952,
+    "listener_play_ratio": 3.33,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Joviano+Carrera\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dean Demir",
+      "Gjermund",
+      "Otto Noir",
+      "Hues of Ruby",
+      "Mírabilis"
+    ],
+    "top_tracks": [
+      {
+        "name": "Biassono",
+        "listeners": 55482,
+        "playcount": 184434
+      },
+      {
+        "name": "Fiesso d’Artico",
+        "listeners": 2097,
+        "playcount": 4512
+      },
+      {
+        "name": "Joviano Carrera - Biassono",
+        "listeners": 1,
+        "playcount": 6
+      }
+    ],
+    "url": "https://www.last.fm/music/Joviano+Carrera"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

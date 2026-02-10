@@ -1,0 +1,408 @@
+{
+  "artist_name": "Marcio Philomena",
+  "artist_id": "marcio_philomena",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:27:53.734025+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7184f383-7589-4a3b-a8c6-3ba16fd42288",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/7567343",
+      "free streaming": "https://www.deezer.com/artist/7417862",
+      "purchase for download": "https://music.apple.com/us/artist/432082063",
+      "soundcloud": "https://soundcloud.com/marciophilomena-music",
+      "streaming": "https://tidal.com/artist/6440005",
+      "youtube music": "https://music.youtube.com/channel/UCiXZGNKV6Cd4znnFJgyViTg"
+    },
+    "labels": [
+      "Chill Tone"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7417862,
+    "name": "Marcio Philomena",
+    "nb_fan": 22,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/7417862",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cc83c14ae258d6aba388fcb7c76c5da6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Andorinhas",
+      "Vanguarda",
+      "Nana",
+      "Solis",
+      "Feliz Navidad",
+      "Echo Park"
+    ],
+    "track_durations": [
+      207,
+      251,
+      273,
+      134,
+      145,
+      168
+    ],
+    "track_ranks": [
+      50101,
+      113606,
+      114042,
+      115376,
+      2802,
+      47135
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Trails",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A Jornada",
+        "label": "",
+        "release_date": "2015-04-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Juliet",
+        "label": "",
+        "release_date": "2026-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ritual",
+        "label": "",
+        "release_date": "2025-09-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Barra Grande",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feliz Navidad",
+        "label": "",
+        "release_date": "2025-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vanguarda",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Santuário",
+        "label": "",
+        "release_date": "2025-08-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Monte Real",
+        "label": "",
+        "release_date": "2025-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ao Mar e ao Vento",
+        "label": "",
+        "release_date": "2025-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Zumala",
+        "label": "",
+        "release_date": "2025-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heritage",
+        "label": "",
+        "release_date": "2025-05-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Isla",
+        "label": "",
+        "release_date": "2025-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solis",
+        "label": "",
+        "release_date": "2025-03-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adirondack",
+        "label": "",
+        "release_date": "2025-03-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emerald",
+        "label": "",
+        "release_date": "2024-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "White Christmas",
+        "label": "",
+        "release_date": "2024-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Donegal",
+        "label": "",
+        "release_date": "2023-10-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Toujours",
+        "label": "",
+        "release_date": "2023-09-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vibrações",
+        "label": "",
+        "release_date": "2023-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ourinhos",
+        "label": "",
+        "release_date": "2023-07-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Turquoise",
+        "label": "",
+        "release_date": "2023-02-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cafe des Anges",
+        "label": "",
+        "release_date": "2023-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nana",
+        "label": "",
+        "release_date": "2023-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weary Traveler",
+        "label": "",
+        "release_date": "2023-01-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Oak Street",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bruges",
+        "label": "",
+        "release_date": "2022-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Jay",
+        "label": "",
+        "release_date": "2022-05-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echo Park",
+        "label": "",
+        "release_date": "2022-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7567343,
+    "name": "Marcio Philomena",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Marcio Philomena",
+    "mbid": "7184f383-7589-4a3b-a8c6-3ba16fd42288",
+    "listeners": 31774,
+    "playcount": 114928,
+    "listener_play_ratio": 3.62,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Marcio+Philomena\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Camilo Branca",
+      "Dieter Huber",
+      "Finlep",
+      "Toni Barella",
+      "Fabian Lombardi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Oak Street",
+        "listeners": 12980,
+        "playcount": 25904
+      },
+      {
+        "name": "Toujours",
+        "listeners": 5657,
+        "playcount": 19787
+      },
+      {
+        "name": "Presságio",
+        "listeners": 4402,
+        "playcount": 10636
+      },
+      {
+        "name": "Nana",
+        "listeners": 3498,
+        "playcount": 7696
+      },
+      {
+        "name": "Solis",
+        "listeners": 3286,
+        "playcount": 10845
+      },
+      {
+        "name": "Donegal",
+        "listeners": 3165,
+        "playcount": 12214
+      },
+      {
+        "name": "Zumala",
+        "listeners": 2180,
+        "playcount": 5439
+      },
+      {
+        "name": "Echo Park",
+        "listeners": 1876,
+        "playcount": 5948
+      },
+      {
+        "name": "Weary Traveler",
+        "listeners": 1476,
+        "playcount": 4104
+      },
+      {
+        "name": "Andorinhas",
+        "listeners": 1027,
+        "playcount": 2714
+      }
+    ],
+    "url": "https://www.last.fm/music/Marcio+Philomena"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

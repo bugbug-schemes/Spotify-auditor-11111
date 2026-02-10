@@ -1,0 +1,153 @@
+{
+  "artist_name": "Jesse Houghton",
+  "artist_id": "jesse_houghton",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:28:07.597605+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170528217,
+    "name": "Jesse Houghton",
+    "nb_fan": 0,
+    "nb_album": 2,
+    "link": "https://www.deezer.com/artist/170528217",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6c11669f21a3387b41f7d9375f7071c8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 2
+    },
+    "albums": [
+      {
+        "title": "Soft Shadows",
+        "label": "",
+        "release_date": "2024-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sleepwalking",
+        "label": "",
+        "release_date": "2023-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Jesse Houghton",
+    "mbid": "",
+    "listeners": 7657,
+    "playcount": 16821,
+    "listener_play_ratio": 2.2,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Jesse+Houghton\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "William Shine",
+      "Ouija Chords",
+      "TossedOnion",
+      "Lovely Rascals",
+      "Taffey"
+    ],
+    "top_tracks": [
+      {
+        "name": "Soft Shadows",
+        "listeners": 4724,
+        "playcount": 10576
+      },
+      {
+        "name": "Unwind",
+        "listeners": 2948,
+        "playcount": 5869
+      },
+      {
+        "name": "Millway Holm",
+        "listeners": 106,
+        "playcount": 135
+      },
+      {
+        "name": "Millpond Refuge",
+        "listeners": 38,
+        "playcount": 54
+      },
+      {
+        "name": "Milthon Skerry",
+        "listeners": 23,
+        "playcount": 31
+      },
+      {
+        "name": "Milltham Islet",
+        "listeners": 10,
+        "playcount": 10
+      },
+      {
+        "name": "Supreme",
+        "listeners": 2,
+        "playcount": 27
+      },
+      {
+        "name": "This Lullabye",
+        "listeners": 1,
+        "playcount": 23
+      },
+      {
+        "name": "99 mp3",
+        "listeners": 1,
+        "playcount": 22
+      },
+      {
+        "name": "Creepy Breakbeat (electro)",
+        "listeners": 1,
+        "playcount": 12
+      }
+    ],
+    "url": "https://www.last.fm/music/Jesse+Houghton"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

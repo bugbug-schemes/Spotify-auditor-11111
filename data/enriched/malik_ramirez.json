@@ -1,0 +1,210 @@
+{
+  "artist_name": "Malik Ramirez",
+  "artist_id": "malik_ramirez",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:25:30.958505+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 154640911,
+    "name": "Malik Ramirez",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/154640911",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7334ada8a5ccf26d2021cd82a93ef78d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "O Holy Night"
+    ],
+    "track_durations": [
+      135
+    ],
+    "track_ranks": [
+      7842
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Short Notice",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Mornings",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Waiting in Peace",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daybreak",
+        "label": "",
+        "release_date": "2025-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Closer Between",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Lifetime",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Holy Night",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Run Away",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slipping Away",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Thinking of Tomorrow",
+        "label": "",
+        "release_date": "2024-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Malik Ramirez",
+    "mbid": "",
+    "listeners": 5501,
+    "playcount": 19737,
+    "listener_play_ratio": 3.59,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Malik+Ramirez\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mattias Blom",
+      "Sam’s Creek",
+      "Matthew Kaff",
+      "Quinn Sage",
+      "Emmanuel Fischer"
+    ],
+    "top_tracks": [
+      {
+        "name": "Another Lifetime",
+        "listeners": 2707,
+        "playcount": 6272
+      },
+      {
+        "name": "Daybreak",
+        "listeners": 2417,
+        "playcount": 6771
+      },
+      {
+        "name": "O Holy Night",
+        "listeners": 1062,
+        "playcount": 1900
+      },
+      {
+        "name": "Closer Between",
+        "listeners": 980,
+        "playcount": 3080
+      },
+      {
+        "name": "Summer Mornings",
+        "listeners": 409,
+        "playcount": 980
+      },
+      {
+        "name": "Waiting in Peace",
+        "listeners": 344,
+        "playcount": 725
+      },
+      {
+        "name": "Run Away",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "Slipping Away",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Thinking of Tomorrow",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Malik+Ramirez"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

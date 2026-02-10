@@ -1,0 +1,534 @@
+{
+  "artist_name": "Joe Martin",
+  "artist_id": "joe_martin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:30:20.497092+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "814b9402-a34f-4541-9e1a-7a2ec6877192",
+    "type": "Person",
+    "country": "",
+    "area": "New York",
+    "begin_date": "1970-09-30",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "jazz",
+      "post-bop"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000110697743"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0000247404",
+      "free streaming": "https://www.deezer.com/artist/119564",
+      "official homepage": "http://www.joemartinbass.com/",
+      "other databases": "https://www.worldcat.org/identities/lccn-no99028046",
+      "social network": "https://www.facebook.com/JoeMartinBass",
+      "streaming": "https://tidal.com/artist/3635623",
+      "VIAF": "http://viaf.org/viaf/71023036",
+      "wikidata": "https://www.wikidata.org/wiki/Q18626276"
+    },
+    "labels": [
+      "Smoke Sessions Records",
+      "Le Chant du Monde",
+      "ECM Records",
+      "ACT"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 119564,
+    "name": "Joe Martin",
+    "nb_fan": 322,
+    "nb_album": 38,
+    "link": "https://www.deezer.com/artist/119564",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/1dcaadbb811ac9e6c7f385a3340cbf79/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Brad Mehldau",
+      "Chris Potter",
+      "David Virelles",
+      "Emile Parisien",
+      "Gilad Hekselman",
+      "Isham Jones & His Orchestra",
+      "Jive Me",
+      "Joe Martin featuring Brad Mehldau, Chris Potter and Marcus Gilmore",
+      "Joe Venuti",
+      "Manu Codjia",
+      "Marcus Gilmore",
+      "Mark Turner",
+      "Nasheet Waits",
+      "ROBERTO NEGRO",
+      "Revel Harry",
+      "Theo Croker"
+    ],
+    "contributor_roles": {
+      "Chris Potter": [
+        "Main",
+        "Featured"
+      ],
+      "David Virelles": [
+        "Main"
+      ],
+      "Marcus Gilmore": [
+        "Main",
+        "Featured"
+      ],
+      "Revel Harry": [
+        "Main"
+      ],
+      "Joe Venuti": [
+        "Main"
+      ],
+      "Jive Me": [
+        "Featured"
+      ],
+      "Gilad Hekselman": [
+        "Main"
+      ],
+      "Mark Turner": [
+        "Main"
+      ],
+      "Emile Parisien": [
+        "Main"
+      ],
+      "Theo Croker": [
+        "Main"
+      ],
+      "ROBERTO NEGRO": [
+        "Main"
+      ],
+      "Manu Codjia": [
+        "Main"
+      ],
+      "Nasheet Waits": [
+        "Main"
+      ],
+      "Isham Jones & His Orchestra": [
+        "Main"
+      ],
+      "Joe Martin featuring Brad Mehldau, Chris Potter and Marcus Gilmore": [
+        "Main"
+      ],
+      "Brad Mehldau": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Sonic Anomaly",
+      "Heart In Hand",
+      "Doin' the Uptown Lowdown (Jive Me Remix)",
+      "The Dreamer Is The Dream",
+      "Flower",
+      "Ilimba",
+      "Louise",
+      "Doin' the Uptown Lowdown",
+      "Yasodhara",
+      "Il Giorno Della Civetta",
+      "Hazelnut Eyes",
+      "One More Song",
+      "Memory And Desire",
+      "Semente"
+    ],
+    "track_durations": [
+      334,
+      499,
+      210,
+      498,
+      296,
+      592,
+      347,
+      161,
+      607,
+      335,
+      449,
+      632,
+      472,
+      530
+    ],
+    "track_ranks": [
+      30020,
+      41493,
+      175499,
+      31778,
+      37871,
+      54604,
+      157769,
+      32792,
+      41285,
+      184818,
+      37218,
+      93988,
+      53425,
+      37485
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 13,
+      "ep": 5,
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "Empty Passenger Seat",
+        "label": "",
+        "release_date": "2023-05-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Legacy",
+        "label": "",
+        "release_date": "2020-08-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live At Smalls (Live)",
+        "label": "",
+        "release_date": "2019-10-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Some \"O\" My Stuff",
+        "label": "",
+        "release_date": "2018-05-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Dreamer Is The Dream",
+        "label": "",
+        "release_date": "2017-04-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Glory Road Songs",
+        "label": "",
+        "release_date": "2016-10-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Joe Martin Swings the Beatles - Live",
+        "label": "",
+        "release_date": "2012-11-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live au Tracteur",
+        "label": "",
+        "release_date": "2011-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Kickin It",
+        "label": "",
+        "release_date": "2009-11-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Not By Chance",
+        "label": "",
+        "release_date": "2009-09-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Passage",
+        "label": "",
+        "release_date": "2008-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Algorythm",
+        "label": "",
+        "release_date": "1999-11-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Missing You",
+        "label": "",
+        "release_date": "1996-01-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "there's just now",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Bound for Lonesome",
+        "label": "",
+        "release_date": "2021-06-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Loose Ends",
+        "label": "",
+        "release_date": "2018-01-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Small World",
+        "label": "",
+        "release_date": "2017-05-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Apocalypse",
+        "label": "",
+        "release_date": "2014-01-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Discriminación",
+        "label": "",
+        "release_date": "2025-12-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Emosido Engañados",
+        "label": "",
+        "release_date": "2025-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Can't Promise You The World",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strangers To Lovers",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Marriage of Figaro Overture",
+        "label": "",
+        "release_date": "2024-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just Hold On",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love is a Winding Path",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Team Trump & Vance",
+        "label": "",
+        "release_date": "2024-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Breathe",
+        "label": "",
+        "release_date": "2024-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Jetsons",
+        "label": "",
+        "release_date": "2023-12-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crocodile Tears",
+        "label": "",
+        "release_date": "2023-03-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Empty Passenger Seat",
+        "label": "",
+        "release_date": "2023-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Eric Harland",
+      "Kurt Rosenwinkel",
+      "Scott Colley",
+      "Kenny Kirkland",
+      "Dave Holland Big Band",
+      "Eric Reed Trio",
+      "Stefon Harris",
+      "Chris Cheek",
+      "Jure Pukl",
+      "Dave Holland Quintet"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 659668,
+    "name": "Joe Martin (2)",
+    "profile": "US engineer at [l=Manhattan Beach Recording Studios] and [l=Clinton Recording Studio]",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 23,
+    "total_releases": 25,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Comp"
+    ],
+    "labels": [
+      "Bygone Days",
+      "Some Time Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Joe Martin",
+    "mbid": "eb4d10d7-d310-4347-bc5c-3ecc88986a8e",
+    "listeners": 3278,
+    "playcount": 20152,
+    "listener_play_ratio": 6.15,
+    "bio_exists": true,
+    "bio_summary": "There is probably more than one Joe Martin, but from http://www.allaboutjazz.com/php/musician.php?id=16117\n\nBorn: 1970\n\nJoe Martin is one of the most sought-after bassists on the current New York City jazz scene. Known for his warm sound, facile ear, harmonic flexibility, and lyrical solos, he has performed with a diverse range of musicians. Most recently he has been an integral member of Kurt Rosenwinkel’s group, documented on a forthcoming live recording from the Village Vanguard. <a href=\"htt",
+    "tags": [
+      "jazz",
+      "instrumental",
+      "Atzenpop",
+      "electronic",
+      "atzen-pop"
+    ],
+    "similar_artists": [
+      "Bill Stewart",
+      "Scott Colley",
+      "Adam Rogers",
+      "Gary Versace",
+      "Kendrick Scott"
+    ],
+    "top_tracks": [
+      {
+        "name": "Want Me",
+        "listeners": 647,
+        "playcount": 2083
+      },
+      {
+        "name": "Sapphire",
+        "listeners": 473,
+        "playcount": 1685
+      },
+      {
+        "name": "Two Birds (with Mark Turner, Kevin Hays & Nasheet Waits)",
+        "listeners": 355,
+        "playcount": 1035
+      },
+      {
+        "name": "Semente",
+        "listeners": 149,
+        "playcount": 429
+      },
+      {
+        "name": "In The Meantime",
+        "listeners": 136,
+        "playcount": 498
+      },
+      {
+        "name": "How Deep Is The Ocean",
+        "listeners": 120,
+        "playcount": 196
+      },
+      {
+        "name": "Caché",
+        "listeners": 116,
+        "playcount": 380
+      },
+      {
+        "name": "A World Beyond",
+        "listeners": 113,
+        "playcount": 261
+      },
+      {
+        "name": "Poppy's Song",
+        "listeners": 107,
+        "playcount": 217
+      },
+      {
+        "name": "Conception",
+        "listeners": 106,
+        "playcount": 248
+      }
+    ],
+    "url": "https://www.last.fm/music/Joe+Martin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

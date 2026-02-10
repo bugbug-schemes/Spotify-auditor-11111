@@ -1,0 +1,593 @@
+{
+  "artist_name": "MVCA",
+  "artist_id": "mvca",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:23:16.091793+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dc4ae938-8a15-4ee6-b197-0d405641aaa8",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/7059137",
+      "free streaming": "https://open.spotify.com/artist/73C7eV9oN6yGgLSu8vIO4R",
+      "social network": "https://www.instagram.com/mvca.xo/"
+    },
+    "labels": [
+      "LoudKult",
+      "Soave Records",
+      "Lilly Era"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 12839867,
+    "name": "MVCA",
+    "nb_fan": 687,
+    "nb_album": 41,
+    "link": "https://www.deezer.com/artist/12839867",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/355aefde7fdbcefacd62a13068b6c07a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alba",
+      "Avi Snow",
+      "Ben Cina",
+      "Cairo",
+      "Fake ID",
+      "Happie",
+      "Iro",
+      "Joezi",
+      "Joseph Feinstein",
+      "Jugende",
+      "Julien Pockrandt",
+      "Jupiter's Eye",
+      "Lissa",
+      "Mahama",
+      "Mel Seme",
+      "Nothing In Common",
+      "Santana",
+      "Schwarz",
+      "Sean Doe",
+      "Sleo",
+      "Stella Santana",
+      "The Human Experience",
+      "Zeeba",
+      "Zorah",
+      "maybealice"
+    ],
+    "contributor_roles": {
+      "Avi Snow": [
+        "Main"
+      ],
+      "Zeeba": [
+        "Main"
+      ],
+      "maybealice": [
+        "Featured"
+      ],
+      "Mahama": [
+        "Main"
+      ],
+      "Santana": [
+        "Main"
+      ],
+      "Stella Santana": [
+        "Main"
+      ],
+      "Iro": [
+        "Main"
+      ],
+      "Fake ID": [
+        "Featured",
+        "Main"
+      ],
+      "Ben Cina": [
+        "Main",
+        "Featured"
+      ],
+      "Happie": [
+        "Main"
+      ],
+      "Alba": [
+        "Main"
+      ],
+      "Cairo": [
+        "Main"
+      ],
+      "Sean Doe": [
+        "Featured"
+      ],
+      "Nothing In Common": [
+        "Featured"
+      ],
+      "Joezi": [
+        "Featured"
+      ],
+      "Sleo": [
+        "Featured"
+      ],
+      "Joseph Feinstein": [
+        "Main"
+      ],
+      "Jugende": [
+        "Main"
+      ],
+      "Jupiter's Eye": [
+        "Main"
+      ],
+      "Julien Pockrandt": [
+        "Featured"
+      ],
+      "Lissa": [
+        "Main"
+      ],
+      "Zorah": [
+        "Main"
+      ],
+      "Schwarz": [
+        "Main"
+      ],
+      "Mel Seme": [
+        "Main"
+      ],
+      "The Human Experience": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Feel",
+      "I Might As Well Live In A Hotel Room (feat. Maybealice)",
+      "Letting You Go (feat. maybealice)",
+      "Breathing Underwater",
+      "Your Eyes (feat. Fake ID)",
+      "All I Need",
+      "Running Wild",
+      "Close",
+      "A Moment, A Feeling",
+      "Lady - Hear Me Tonight",
+      "My Love (feat. Fake ID)",
+      "Here Now",
+      "Make You Stay",
+      "The Meadow",
+      "Feel (Joezi Remix)",
+      "What Is Right (feat. Sleo)",
+      "Call Away",
+      "The Same",
+      "Running Nights (feat. Julien Pockrandt)",
+      "More",
+      "Where you have been",
+      "Nevermind",
+      "Hideaway Again",
+      "Your Eyes - Part II",
+      "By the Sea Again"
+    ],
+    "track_durations": [
+      167,
+      153,
+      180,
+      214,
+      153,
+      146,
+      162,
+      188,
+      214,
+      165,
+      160,
+      173,
+      161,
+      184,
+      191,
+      167,
+      149,
+      173,
+      185,
+      166,
+      193,
+      166,
+      169,
+      213,
+      196
+    ],
+    "track_ranks": [
+      487230,
+      105816,
+      264581,
+      200058,
+      371401,
+      238526,
+      306596,
+      162078,
+      165873,
+      409513,
+      340423,
+      194262,
+      167439,
+      32077,
+      242868,
+      161256,
+      288818,
+      276848,
+      137630,
+      95159,
+      237933,
+      128816,
+      30474,
+      339234,
+      140574
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 40
+    },
+    "albums": [
+      {
+        "title": "Feel (Remixes)",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "By the Sea Again",
+        "label": "",
+        "release_date": "2025-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where you have been",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Close",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Moment, A Feeling",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "More than you could give",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Same",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feel",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Different Places",
+        "label": "",
+        "release_date": "2024-09-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All we ever wanted",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Belong",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Open Waters",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Paradise",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Eyes - Part II",
+        "label": "",
+        "release_date": "2024-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Walk In The Park",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All I Need",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Meadow",
+        "label": "",
+        "release_date": "2022-08-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hideaway Again",
+        "label": "",
+        "release_date": "2022-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ocean (Outer Space)",
+        "label": "",
+        "release_date": "2022-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stay (Forever)",
+        "label": "",
+        "release_date": "2022-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For Granted",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miss You (Like Hell)",
+        "label": "",
+        "release_date": "2021-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Golden",
+        "label": "",
+        "release_date": "2021-05-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lady - Hear Me Tonight",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "My Love (feat. Fake ID)",
+        "label": "",
+        "release_date": "2020-11-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All The Time (feat. Joseph Feinstein & maybealice)",
+        "label": "",
+        "release_date": "2020-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Letting You Go (feat. maybealice)",
+        "label": "",
+        "release_date": "2020-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Running Wild",
+        "label": "",
+        "release_date": "2020-07-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Eyes (feat. Fake ID)",
+        "label": "",
+        "release_date": "2020-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Call Away",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Avi Snow",
+      "rshand",
+      "Norra",
+      "Hne",
+      "Ruffnux",
+      "Luvless",
+      "Bailey",
+      "Aural",
+      "Noetic",
+      "Refeci"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7059137,
+    "name": "MVCA",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 9,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "2xCD, Comp",
+      "2xFile, FLAC, Single",
+      "4xFile, MP3, Single",
+      "File, FLAC, Single"
+    ],
+    "labels": [
+      "Lilly Era",
+      "Polystar (3)",
+      "Soave Records",
+      "We Play"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "mvca",
+    "mbid": "",
+    "listeners": 47903,
+    "playcount": 248701,
+    "listener_play_ratio": 5.19,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/mvca\">Read more on Last.fm</a>",
+    "tags": [
+      "deep house",
+      "dance",
+      "Chill House"
+    ],
+    "similar_artists": [
+      "Patrick Lite",
+      "Jako Diaz",
+      "Meynberg",
+      "Panuma",
+      "Ruffnux"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Might As Well Live In A Hotel Room",
+        "listeners": 8645,
+        "playcount": 26031
+      },
+      {
+        "name": "My Love",
+        "listeners": 8377,
+        "playcount": 24284
+      },
+      {
+        "name": "Running Wild",
+        "listeners": 7300,
+        "playcount": 24767
+      },
+      {
+        "name": "Make You Stay",
+        "listeners": 5536,
+        "playcount": 16199
+      },
+      {
+        "name": "Weak",
+        "listeners": 4692,
+        "playcount": 10310
+      },
+      {
+        "name": "Here Now",
+        "listeners": 3914,
+        "playcount": 12734
+      },
+      {
+        "name": "Make You Stay [Jugende Remix]",
+        "listeners": 3839,
+        "playcount": 13021
+      },
+      {
+        "name": "All we ever wanted",
+        "listeners": 3427,
+        "playcount": 8017
+      },
+      {
+        "name": "Running Nights",
+        "listeners": 3392,
+        "playcount": 13188
+      },
+      {
+        "name": "Running Nights - Jugende RMX",
+        "listeners": 3142,
+        "playcount": 17114
+      }
+    ],
+    "url": "https://www.last.fm/music/mvca"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

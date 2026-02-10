@@ -1,0 +1,615 @@
+{
+  "artist_name": "beabadoobee",
+  "artist_id": "beabadoobee",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:11:24.409304+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "88d17133-abbc-42db-9526-4e2c1db60336",
+    "type": "Person",
+    "country": "",
+    "area": "England",
+    "begin_date": "2000-06-03",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "rock",
+      "pop",
+      "indie rock",
+      "lo-fi",
+      "indie pop",
+      "space rock",
+      "pop folk",
+      "bedroom pop",
+      "2020s",
+      "gen z"
+    ],
+    "aliases": [
+      "Bea Regner",
+      "Bea Ilejay",
+      "beabadoobee",
+      "Bea Kristi",
+      "Beatrice Laus"
+    ],
+    "isnis": [
+      "0000000478453798"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003780500",
+      "bandcamp": "https://radvxz.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/7519404",
+      "free streaming": "https://www.deezer.com/artist/13499081",
+      "last.fm": "https://www.last.fm/music/beabadoobee",
+      "lyrics": "https://genius.com/artists/Beabadoobee",
+      "official homepage": "https://beabadoobee.co.uk/",
+      "other databases": "https://www.whosampled.com/beabadoobee/",
+      "purchase for download": "https://www.beatport.com/artist/beabadoobee/843169",
+      "secondhandsongs": "https://secondhandsongs.com/artist/169210",
+      "setlistfm": "https://www.setlist.fm/setlists/beabadoobee-6bc8be2e.html",
+      "social network": "https://www.tiktok.com/@gnocchi500",
+      "songkick": "https://www.songkick.com/artists/9458139",
+      "soundcloud": "https://soundcloud.com/beabadoobee",
+      "streaming": "https://tidal.com/artist/9254258",
+      "VIAF": "http://viaf.org/viaf/7510167445390388860004",
+      "wikidata": "https://www.wikidata.org/wiki/Q66817366",
+      "youtube": "https://www.youtube.com/channel/UCOf6pX571cKC0rhOZqv2y7Q"
+    },
+    "labels": [
+      "Dee Gee",
+      "Dirty Hit",
+      "Sire Records",
+      "[no label]",
+      "In Real Life",
+      "Shadow of the City",
+      "Columbia",
+      "triple j",
+      "88rising"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 13499081,
+    "name": "beabadoobee",
+    "nb_fan": 174443,
+    "nb_album": 35,
+    "link": "https://www.deezer.com/artist/13499081",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9bb4484b224cedeb0d79d0517ab2a4a4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Clairo",
+      "Laufey",
+      "Oscar Lang",
+      "Powfu"
+    ],
+    "contributor_roles": {
+      "Powfu": [
+        "Main"
+      ],
+      "Laufey": [
+        "Main"
+      ],
+      "Clairo": [
+        "Main"
+      ],
+      "Oscar Lang": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "death bed (coffee for your head)",
+      "Apple Cider",
+      "the perfect pair",
+      "the way things go",
+      "A Night To Remember",
+      "Real Man",
+      "Beaches",
+      "Take A Bite",
+      "Glue Song (feat. Clairo)",
+      "Coffee",
+      "The Moon Song",
+      "Tired",
+      "Cologne",
+      "If You Want To",
+      "Lovesong",
+      "California",
+      "Coming Home",
+      "Talk",
+      "Sunny day",
+      "She Plays Bass",
+      "10:36",
+      "See you Soon",
+      "Dance with Me",
+      "Last Day On Earth",
+      "Girl Song"
+    ],
+    "track_durations": [
+      173,
+      178,
+      177,
+      187,
+      233,
+      160,
+      230,
+      158,
+      135,
+      126,
+      141,
+      199,
+      164,
+      223,
+      245,
+      172,
+      135,
+      158,
+      160,
+      207,
+      195,
+      206,
+      234,
+      222,
+      236
+    ],
+    "track_ranks": [
+      806068,
+      658993,
+      735284,
+      617984,
+      655797,
+      708381,
+      601762,
+      569129,
+      623946,
+      642441,
+      551318,
+      595304,
+      484265,
+      504769,
+      472077,
+      433380,
+      484467,
+      439453,
+      417461,
+      391572,
+      425222,
+      487540,
+      483388,
+      405251,
+      376246
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 4,
+      "ep": 6,
+      "single": 25
+    },
+    "albums": [
+      {
+        "title": "This Is How Tomorrow Moves",
+        "label": "",
+        "release_date": "2024-08-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live in LA",
+        "label": "",
+        "release_date": "2023-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Beatopia",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Fake It Flowers",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Our Extended Play",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Space Cadet",
+        "label": "",
+        "release_date": "2019-10-18",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Loveworm",
+        "label": "",
+        "release_date": "2019-04-26",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Loveworm (Bedroom Sessions)",
+        "label": "",
+        "release_date": "2019-07-09",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Patched Up",
+        "label": "",
+        "release_date": "2018-12-07",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lice",
+        "label": "",
+        "release_date": "2018-02-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sway (triple j Like A Version)",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Real Man",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It's Only A Paper Moon (The New Look: Season 1 (Apple TV+ Original Series Soundtrack))",
+        "label": "",
+        "release_date": "2024-03-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Fear Of Flying (feat. Aminé & beabadoobee)",
+        "label": "",
+        "release_date": "2023-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Night To Remember",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "the way things go",
+        "label": "",
+        "release_date": "2023-07-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glue Song (feat. Clairo)",
+        "label": "",
+        "release_date": "2023-04-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glue Song",
+        "label": "",
+        "release_date": "2023-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "CYBERKISS 2 U*",
+        "label": "",
+        "release_date": "2022-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "iScream",
+        "label": "",
+        "release_date": "2022-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silver Into Rain",
+        "label": "",
+        "release_date": "2022-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Last Day On Earth",
+        "label": "",
+        "release_date": "2021-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Wonderland",
+        "label": "",
+        "release_date": "2020-11-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "How Was Your Day?",
+        "label": "",
+        "release_date": "2020-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Worth It",
+        "label": "",
+        "release_date": "2020-09-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sorry",
+        "label": "",
+        "release_date": "2020-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Care",
+        "label": "",
+        "release_date": "2020-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beabadoobee - ASIA RISING FOREVER",
+        "label": "",
+        "release_date": "2020-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hurry Home (with beabadoobee & Jay Som)",
+        "label": "",
+        "release_date": "2020-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "death bed (coffee for your head)",
+        "label": "",
+        "release_date": "2020-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Clairo",
+      "Matt Maltese",
+      "Laufey",
+      "The Marías",
+      "Suki Waterhouse",
+      "The Japanese House",
+      "Sarah Kinsley",
+      "Ricky Montgomery",
+      "Tinyumbrellas",
+      "Maya Hawke"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6981007,
+    "name": "beabadoobee",
+    "profile": "Beabadoobee is a Filipino-British singer-songwriter born on June 3, 2000, in Iloilo City (Philippines), known for her nostalgic blend of ‘90s-inspired alt-rock, shoegaze, and bedroom pop. Born Beatrice Kristi Ilejay Laus in Iloilo City and raised in London, she began recording music in 2017 with her viral track “Coffee.” She followed with a series of lo-fi EPs—[m=2864134], [m=1622571], [m=1587837], and [m=1926555]—that showcased her raw, diary-like songwriting. Her debut album [m=1822698] (2020) marked a shift into grunge-infused rock, followed by the collaborative [m=2316448] (2021), co-written with [a3231113]'s [a3480219] and [a437154]. In 2022, she released [m=2708981], an ambitious, genre-blending record rooted in dream pop and introspection. Her third studio album [m=3563978] (2024) debuted at No. 1 in the UK, further establishing her evolution from lo-fi beginnings to indie rock prominence.",
+    "realname": "Beatrice Kristi Laus",
+    "social_urls": [
+      "https://www.beabadoobee.com/",
+      "https://www.instagram.com/radvxz/",
+      "https://x.com/beabad00bee",
+      "https://www.tiktok.com/@gnocchi500",
+      "https://www.facebook.com/radvxz/",
+      "https://open.spotify.com/artist/35l9BRT7MXmM8bv2WDQiyB",
+      "https://music.apple.com/us/artist/beabadoobee/1307650474",
+      "https://music.youtube.com/channel/UCcGMuu89vageEKV8zUKhwdA",
+      "https://soundcloud.com/beabadoobee",
+      "https://beabadoobee.bandcamp.com/",
+      "https://en.wikipedia.org/wiki/Beabadoobee"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 51,
+    "digital_only_releases": 30,
+    "total_releases": 81,
+    "formats": [
+      "",
+      "17xFile, AAC, Mixtape, 256",
+      "18xFile, MP3, Album, 320",
+      "2xCD, Comp",
+      "2xCDr, Comp",
+      "3xCD, Comp",
+      "4xCD, Comp",
+      "4xCD, Comp, Dlx",
+      "7\", S/Sided, Single, Etch, Ltd",
+      "CD",
+      "CD, Comp",
+      "CD, Comp + DVD-V, Comp",
+      "CD, Comp, CD-",
+      "CD, Comp, Promo",
+      "CD, Comp, Promo, Car",
+      "CD, Comp, Promo, Smplr",
+      "CDr, Comp",
+      "CDr, Comp, Unofficial",
+      "Cass, Comp, Club, Ltd",
+      "File, AAC, Single, 256",
+      "File, MP3, Single",
+      "Flexi, 7\", S/Sided, Ltd",
+      "Flexi, 7\", Single, Ltd",
+      "LP, Album, Dlx, Pin",
+      "LP, Mixtape, Yel",
+      "LP, RSD, Ltd, Red"
+    ],
+    "labels": [
+      "CNR Records Belgium",
+      "DMC, DMC",
+      "DMC, DMC, DMC",
+      "Dirty Hit",
+      "EMI, Sony Music, EMI, Sony Music",
+      "Les Inrockuptibles",
+      "MCA Records, Universal Music France",
+      "Magic Records",
+      "Musikexpress",
+      "Not On Label",
+      "Not On Label (EBK Jaaybo Self-released)",
+      "Not On Label (Girl In Red)",
+      "Polystar (3), Universal Music Group",
+      "Polystar (3), Universal Music Group, Sony Music",
+      "Promo Only",
+      "Radio Programming And Management, Inc.",
+      "Sire",
+      "Sony Music",
+      "Sony Music Entertainment",
+      "Sony Music Entertainment France S.A.S.",
+      "Sony Music, Columbia, 105 Radio Network",
+      "Sony Music, Do It Yourself Multimedia Group",
+      "Sony Music, RTL II",
+      "Sony Music, Sony Music, EMI, EMI",
+      "Sony Music, Universal Music",
+      "Sony Music, Universal Music On Demand, Sony Music, Universal Music On Demand",
+      "Spirit Goth Records",
+      "Universal Music Belgium",
+      "Universal Music France",
+      "Universal Music France, MCA Records, Sony Music, Warner Music France, TF1 Musique, NRJ Music",
+      "Universal Music Group",
+      "Universal Music Group, Sony Music",
+      "Universal Music Portugal",
+      "WFUV",
+      "Warner Music France",
+      "Warner Music Italy"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "beabadoobee",
+    "mbid": "88d17133-abbc-42db-9526-4e2c1db60336",
+    "listeners": 2528452,
+    "playcount": 303977745,
+    "listener_play_ratio": 120.22,
+    "bio_exists": true,
+    "bio_summary": "Beatrice Kristi Ilejay Laus (born 3 June 2000), known professionally as Beabadoobee, is a Filipino-British singer-songwriter. Between 2018 and 2021, she released five extended plays (EPs) on the independent label Dirty Hit: \"Lice\" (2018), \"Patched Up\" (2018), \"Loveworm\" (2019), \"Space Cadet\" (2019), and \"Our Extended Play\" (2021). Her debut studio album, \"Fake It Flowers,\" was released in October 2020 and received critical acclaim. Her second studio album, \"Beatopia,\" was released on 15 July 202",
+    "tags": [
+      "indie pop",
+      "indie rock",
+      "bedroom pop",
+      "indie",
+      "dream pop"
+    ],
+    "similar_artists": [
+      "Clairo",
+      "Shelly",
+      "The Marías",
+      "Unflirt",
+      "wave to earth"
+    ],
+    "top_tracks": [
+      {
+        "name": "the perfect pair",
+        "listeners": 1416737,
+        "playcount": 28511641
+      },
+      {
+        "name": "Glue Song",
+        "listeners": 1175344,
+        "playcount": 19125430
+      },
+      {
+        "name": "the way things go",
+        "listeners": 841200,
+        "playcount": 13649054
+      },
+      {
+        "name": "Glue Song (feat. Clairo)",
+        "listeners": 828723,
+        "playcount": 9923552
+      },
+      {
+        "name": "Apple Cider",
+        "listeners": 800798,
+        "playcount": 12557976
+      },
+      {
+        "name": "A Night To Remember",
+        "listeners": 776464,
+        "playcount": 11091345
+      },
+      {
+        "name": "real man",
+        "listeners": 773821,
+        "playcount": 10773069
+      },
+      {
+        "name": "Tired",
+        "listeners": 773610,
+        "playcount": 9017778
+      },
+      {
+        "name": "Beaches",
+        "listeners": 737952,
+        "playcount": 11060263
+      },
+      {
+        "name": "take a bite",
+        "listeners": 719117,
+        "playcount": 11142245
+      }
+    ],
+    "url": "https://www.last.fm/music/beabadoobee"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

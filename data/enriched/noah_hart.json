@@ -1,0 +1,211 @@
+{
+  "artist_name": "Noah Hart",
+  "artist_id": "noah_hart",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:03:43.910521+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 94082202,
+    "name": "Noah Hart",
+    "nb_fan": 4,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/94082202",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/19ffe965f134672393f12e7a3e5660ef/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Daydreamer"
+    ],
+    "track_durations": [
+      156
+    ],
+    "track_ranks": [
+      142415
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Auld Lang Syne",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coda",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Limestones",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Daydreamer",
+        "label": "",
+        "release_date": "2024-03-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Water Lilies",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skies",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stjärnöga",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8623692,
+    "name": "Noah Hartkopf",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Album"
+    ],
+    "labels": [
+      "RBC Records, Sound Records & Entertainment"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Noah Hart",
+    "mbid": "",
+    "listeners": 30937,
+    "playcount": 130875,
+    "listener_play_ratio": 4.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Noah+Hart\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rhian Cadogan",
+      "Niamh Shona",
+      "Florentin Davies",
+      "Lakes of Lagan",
+      "Shea Ada"
+    ],
+    "top_tracks": [
+      {
+        "name": "Daydreamer",
+        "listeners": 26481,
+        "playcount": 117656
+      },
+      {
+        "name": "Water Lilies",
+        "listeners": 3778,
+        "playcount": 10416
+      },
+      {
+        "name": "Stjärnöga",
+        "listeners": 1509,
+        "playcount": 2745
+      },
+      {
+        "name": "Auld Lang Syne",
+        "listeners": 5,
+        "playcount": 10
+      },
+      {
+        "name": "Mirage",
+        "listeners": 4,
+        "playcount": 9
+      },
+      {
+        "name": "Secret Thoughts",
+        "listeners": 4,
+        "playcount": 8
+      },
+      {
+        "name": "Skies",
+        "listeners": 3,
+        "playcount": 7
+      },
+      {
+        "name": "Circling above",
+        "listeners": 3,
+        "playcount": 6
+      },
+      {
+        "name": "Introspection",
+        "listeners": 3,
+        "playcount": 5
+      },
+      {
+        "name": "Limestones",
+        "listeners": 3,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Noah+Hart"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

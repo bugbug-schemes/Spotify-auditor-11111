@@ -1,0 +1,134 @@
+{
+  "artist_name": "Embershine Air",
+  "artist_id": "embershine_air",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:27:06.678030+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 349795822,
+    "name": "Embershine Air",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/349795822",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "A Gentle Home Within",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kindness Within Nightfall",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Fire in the Cold Air",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Turning Skies",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When the Layers Fall Away",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Embershine Air",
+    "mbid": "",
+    "listeners": 2044,
+    "playcount": 4211,
+    "listener_play_ratio": 2.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Embershine+Air\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dust Of Stars",
+      "Ramses Ravi",
+      "Cashmere Cove",
+      "Brkati Madjinca",
+      "Caio Blanco"
+    ],
+    "top_tracks": [
+      {
+        "name": "When the Layers Fall Away",
+        "listeners": 1883,
+        "playcount": 3927
+      },
+      {
+        "name": "Turning Skies",
+        "listeners": 214,
+        "playcount": 284
+      }
+    ],
+    "url": "https://www.last.fm/music/Embershine+Air"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

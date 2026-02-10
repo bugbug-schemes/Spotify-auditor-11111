@@ -1,0 +1,157 @@
+{
+  "artist_name": "Vozterra",
+  "artist_id": "vozterra",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:59:12.831184+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8d725e74-6eb3-4853-aea9-19453a983412",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/81309642"
+    },
+    "labels": [
+      "EarthPercent",
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Vozterra', got 'Bezerra Da Silva'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 16421407,
+    "name": "VozTerra",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "2xFile, AAC, Single, 256"
+    ],
+    "labels": [
+      "EarthPercent, Sounds Right (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vozterra",
+    "mbid": "8d725e74-6eb3-4853-aea9-19453a983412",
+    "listeners": 254,
+    "playcount": 1102,
+    "listener_play_ratio": 4.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Vozterra\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Conector",
+      "Las Áñez",
+      "The Listening Planet",
+      "Lucio Feuillet",
+      "Christopher Seufert"
+    ],
+    "top_tracks": [
+      {
+        "name": "Troptransformación",
+        "listeners": 58,
+        "playcount": 119
+      },
+      {
+        "name": "Mas Allá de la Ventana",
+        "listeners": 56,
+        "playcount": 96
+      },
+      {
+        "name": "Portrait III",
+        "listeners": 38,
+        "playcount": 46
+      },
+      {
+        "name": "Canción Confinada",
+        "listeners": 22,
+        "playcount": 178
+      },
+      {
+        "name": "Tetchi'arü'ngu - Eric Marky Terena remix",
+        "listeners": 13,
+        "playcount": 29
+      },
+      {
+        "name": "Humedal",
+        "listeners": 10,
+        "playcount": 11
+      },
+      {
+        "name": "Voz Humedal Conejera 4:50 AM",
+        "listeners": 9,
+        "playcount": 22
+      },
+      {
+        "name": "Speckled Chachalacas Up Close",
+        "listeners": 8,
+        "playcount": 11
+      },
+      {
+        "name": "Soul Of An Island",
+        "listeners": 8,
+        "playcount": 10
+      },
+      {
+        "name": "Waking up to Frogs",
+        "listeners": 7,
+        "playcount": 16
+      }
+    ],
+    "url": "https://www.last.fm/music/Vozterra"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,485 @@
+{
+  "artist_name": "The Groove Trio",
+  "artist_id": "the_groove_trio",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:33:26.300666+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "bb4a8713-44f1-4b15-86f8-a1476ea4a35a",
+    "type": "Group",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/189731947",
+      "purchase for download": "https://music.apple.com/us/artist/1654434548",
+      "soundcloud": "https://soundcloud.com/thegroovetrio",
+      "streaming": "https://tidal.com/artist/35563726",
+      "youtube music": "https://music.youtube.com/channel/UCD0x7eUgebesjO_ttxKFNzg"
+    },
+    "labels": [
+      "Chill Tone"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 189731947,
+    "name": "The Groove Trio",
+    "nb_fan": 131,
+    "nb_album": 43,
+    "link": "https://www.deezer.com/artist/189731947",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/50d1393d1a354d83e6a06342019f5e6a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Barney's",
+      "Last Time We Kissed",
+      "Moon Side",
+      "Life in Space",
+      "Pass the Salt",
+      "Almost December",
+      "Night Shadow",
+      "Winter Things",
+      "Indigo",
+      "Dietz Monnin",
+      "On Delancey",
+      "Cremona",
+      "Lonesome Flower"
+    ],
+    "track_durations": [
+      183,
+      254,
+      183,
+      167,
+      222,
+      150,
+      189,
+      179,
+      152,
+      141,
+      227,
+      174,
+      164
+    ],
+    "track_ranks": [
+      592225,
+      526480,
+      141746,
+      282955,
+      64423,
+      53691,
+      55955,
+      87470,
+      78875,
+      80882,
+      62322,
+      37347,
+      102402
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 42
+    },
+    "albums": [
+      {
+        "title": "Rue Crémieux",
+        "label": "",
+        "release_date": "2022-12-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sleeping Socks",
+        "label": "",
+        "release_date": "2025-07-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hopscotch",
+        "label": "",
+        "release_date": "2025-06-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I've Been Meaning To Tell You",
+        "label": "",
+        "release_date": "2025-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sunday with Gramps",
+        "label": "",
+        "release_date": "2025-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Borja's Bolero",
+        "label": "",
+        "release_date": "2025-05-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hanako",
+        "label": "",
+        "release_date": "2025-05-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Osiris",
+        "label": "",
+        "release_date": "2025-04-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Double Entendre",
+        "label": "",
+        "release_date": "2025-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Westholme Serenade",
+        "label": "",
+        "release_date": "2025-03-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Lover's Longing",
+        "label": "",
+        "release_date": "2025-02-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weaving Web",
+        "label": "",
+        "release_date": "2025-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cremona",
+        "label": "",
+        "release_date": "2025-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Make It To Christmas",
+        "label": "",
+        "release_date": "2024-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Almost December",
+        "label": "",
+        "release_date": "2024-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Things",
+        "label": "",
+        "release_date": "2024-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angels From the Realms of Glory",
+        "label": "",
+        "release_date": "2024-10-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Burgundian Carol",
+        "label": "",
+        "release_date": "2024-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Nights We Won't Forget",
+        "label": "",
+        "release_date": "2024-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hazeltine Beach",
+        "label": "",
+        "release_date": "2024-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Monica",
+        "label": "",
+        "release_date": "2024-08-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "At Sea",
+        "label": "",
+        "release_date": "2024-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Starlight Serenade",
+        "label": "",
+        "release_date": "2024-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pass the Salt",
+        "label": "",
+        "release_date": "2024-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Your Bread and Butter",
+        "label": "",
+        "release_date": "2024-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "In Our Garden",
+        "label": "",
+        "release_date": "2024-05-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Pulpo",
+        "label": "",
+        "release_date": "2024-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Old Fashioned (Rain)",
+        "label": "",
+        "release_date": "2024-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Adventures with Davey",
+        "label": "",
+        "release_date": "2024-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sincerely Yours",
+        "label": "",
+        "release_date": "2024-04-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lachlan Wright Trio",
+      "Newington Green",
+      "Rainy Days Trio",
+      "Three Four Trio",
+      "Nick Osman Trio",
+      "Bill Charlap Trio",
+      "Fred Nardin",
+      "Keith Jarrett",
+      "Bill Evans",
+      "Yaron Herman Trio"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 53340,
+    "name": "Groove Groove Melody",
+    "profile": "Italian producers team known for being behind the dance act [a=Black Box]. \r\nComprised by three Italian studio musicians: [a=Daniele Davoli], [a=Mirko Limoni] and [a=Valerio Semplici].\r\n\r\nSemplici was a clarinet teacher and played in the Music Orchestra in Bologna. Davoli was a well-known Italian club DJ (known as DJ Lelewel), and responsible for the hit single \"Grand Piano\", another prime example of \"Italo-house\", while Limoni was the computer and keyboard whizz kid of the trio.\r\n\r\nThe Groove Groove Melody team were established as one of the top production outfits in Italian dance music, churning out more than a dozen singles a year in their native country. They were also behind the production of Starlight's \"Numero Uno\", reaching the 9th position in the UK single charts. They turned out numerous further records under many other pseudonyms.",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Mirko Limoni",
+      "Valerio Semplici",
+      "Daniele Davoli"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 25,
+    "digital_only_releases": 75,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\"",
+      "2x12\"",
+      "2x12\", Comp",
+      "2xCD, Comp",
+      "2xCD, Comp, Mixed",
+      "3xCD, Mixed",
+      "4xCD, Comp",
+      "6xCD, Comp + Box",
+      "7\", Jukebox",
+      "CD, Comp",
+      "CD, Comp, M/Print",
+      "CD, Comp, RE",
+      "CD, Comp, RM",
+      "CD, Maxi",
+      "CD, MiniAlbum, Comp"
+    ],
+    "labels": [
+      "Ariola, BMG",
+      "Arista",
+      "BMG Music Canada Inc., Ariola",
+      "Camden",
+      "Cameo (4)",
+      "Compass Productions, BMG Special Products",
+      "DCC Compact Classics, Sony Music Special Products",
+      "Dance Division, Dance Division",
+      "Decadance UK",
+      "Deconstruction",
+      "Discomagic Records",
+      "Firm Music, Firm Music",
+      "K-Box Records",
+      "Music Factory",
+      "Not On Label",
+      "Out",
+      "PolyTel",
+      "Sony BMG Music Entertainment, Renaissance Recordings",
+      "Telstar TV",
+      "Thump Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Groove Trio",
+    "mbid": "bb4a8713-44f1-4b15-86f8-a1476ea4a35a",
+    "listeners": 111665,
+    "playcount": 444950,
+    "listener_play_ratio": 3.98,
+    "bio_exists": true,
+    "bio_summary": "New York City jazz band piano, bass, and drums <a href=\"https://www.last.fm/music/The+Groove+Trio\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz",
+      "instrumental"
+    ],
+    "similar_artists": [
+      "James Jackson Jazz Trio",
+      "Kristian Hart Trio",
+      "The Three Queens",
+      "Charles Daisey & Friends",
+      "Måns & Dotter"
+    ],
+    "top_tracks": [
+      {
+        "name": "Barney's",
+        "listeners": 67745,
+        "playcount": 188780
+      },
+      {
+        "name": "Life in Space",
+        "listeners": 17515,
+        "playcount": 39765
+      },
+      {
+        "name": "Moon Side",
+        "listeners": 16696,
+        "playcount": 39543
+      },
+      {
+        "name": "Last Time We Kissed",
+        "listeners": 16525,
+        "playcount": 37225
+      },
+      {
+        "name": "Cremona",
+        "listeners": 10986,
+        "playcount": 23904
+      },
+      {
+        "name": "Pass the Salt",
+        "listeners": 10548,
+        "playcount": 22509
+      },
+      {
+        "name": "Winter Things",
+        "listeners": 5710,
+        "playcount": 10357
+      },
+      {
+        "name": "Sunset over Paris",
+        "listeners": 5332,
+        "playcount": 10334
+      },
+      {
+        "name": "On Delancey",
+        "listeners": 5001,
+        "playcount": 11236
+      },
+      {
+        "name": "On My Mind",
+        "listeners": 3423,
+        "playcount": 8693
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Groove+Trio"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,205 @@
+{
+  "artist_name": "Dilandi",
+  "artist_id": "dilandi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:28:39.709367+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 267935362,
+    "name": "Dilandi",
+    "nb_fan": 1,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/267935362",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/73320943ae1cc9ae8635922b58af6001/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Dreamform",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tide",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Origo",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mane",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Skywriter",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Anima",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nidra",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 8642199,
+    "name": "Dilandia Acevedo",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CD, Single, Enh"
+    ],
+    "labels": [
+      "J Jorn, Cambi Sonidos Media Group"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Dilandi",
+    "mbid": "",
+    "listeners": 43290,
+    "playcount": 245732,
+    "listener_play_ratio": 5.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Dilandi\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Liv Joy",
+      "Athyer Cane",
+      "Foreglow",
+      "Emberlace",
+      "Indigo Moon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Mane",
+        "listeners": 27492,
+        "playcount": 133178
+      },
+      {
+        "name": "Anima",
+        "listeners": 11514,
+        "playcount": 71142
+      },
+      {
+        "name": "Skywriter",
+        "listeners": 3922,
+        "playcount": 23796
+      },
+      {
+        "name": "Tide",
+        "listeners": 3391,
+        "playcount": 11936
+      },
+      {
+        "name": "Nidra",
+        "listeners": 2646,
+        "playcount": 5613
+      },
+      {
+        "name": "Dreamform",
+        "listeners": 43,
+        "playcount": 49
+      },
+      {
+        "name": "Bright Mornings",
+        "listeners": 6,
+        "playcount": 9
+      },
+      {
+        "name": "Gentle Touch",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Happy Trails",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Soft Sunbeam",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Dilandi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

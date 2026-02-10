@@ -1,0 +1,111 @@
+{
+  "artist_name": "Haupu",
+  "artist_id": "haupu",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:03:13.628802+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Haupu', got 'Gaupa'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Haupu",
+    "mbid": "",
+    "listeners": 11452,
+    "playcount": 30734,
+    "listener_play_ratio": 2.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Haupu\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Isabelle Laurent",
+      "Sven Derler",
+      "Hidden Piano",
+      "Giovanna Petrini",
+      "Sami Kaur"
+    ],
+    "top_tracks": [
+      {
+        "name": "Stepwise",
+        "listeners": 6771,
+        "playcount": 16937
+      },
+      {
+        "name": "Idyll",
+        "listeners": 3432,
+        "playcount": 10248
+      },
+      {
+        "name": "12 Days of Christmas",
+        "listeners": 1298,
+        "playcount": 3156
+      },
+      {
+        "name": "Birds",
+        "listeners": 226,
+        "playcount": 382
+      },
+      {
+        "name": "Second chances",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "Centrepiece",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Dew Drops",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Fortunate",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Haupu"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

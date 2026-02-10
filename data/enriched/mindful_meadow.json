@@ -1,0 +1,165 @@
+{
+  "artist_name": "Mindful Meadow",
+  "artist_id": "mindful_meadow",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:45:13.110141+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 258947632,
+    "name": "Mindful Meadow",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/258947632",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8c7a07b627282951b583364af3910e12/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Phorosine",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lumo",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Castors Path",
+        "label": "",
+        "release_date": "2025-07-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dimensions",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Surface Waves",
+        "label": "",
+        "release_date": "2025-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Invision",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perspective",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dusk to Dream",
+        "label": "",
+        "release_date": "2024-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mindful Meadow",
+    "mbid": "",
+    "listeners": 13654,
+    "playcount": 49505,
+    "listener_play_ratio": 3.63,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mindful+Meadow\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Kol Sova",
+      "Fhye",
+      "Astra Sky",
+      "Velvet Hush",
+      "Ambientelles"
+    ],
+    "top_tracks": [
+      {
+        "name": "Dimensions",
+        "listeners": 6560,
+        "playcount": 17056
+      },
+      {
+        "name": "Castors Path",
+        "listeners": 5881,
+        "playcount": 28086
+      },
+      {
+        "name": "Phorosine",
+        "listeners": 1282,
+        "playcount": 2861
+      },
+      {
+        "name": "Lumo",
+        "listeners": 584,
+        "playcount": 1502
+      }
+    ],
+    "url": "https://www.last.fm/music/Mindful+Meadow"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

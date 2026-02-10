@@ -1,0 +1,492 @@
+{
+  "artist_name": "The Walters",
+  "artist_id": "the_walters",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:37:59.217062+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "61cdb045-7f89-4eb1-b3ed-35db94d9ab99",
+    "type": "Group",
+    "country": "",
+    "area": "Chicago",
+    "begin_date": "2013",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "indie rock",
+      "indie pop"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000468990688"
+    ],
+    "ipis": [],
+    "urls": {
+      "allmusic": "https://www.allmusic.com/artist/mn0003429901",
+      "bandcamp": "https://thewalters.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/5161420",
+      "free streaming": "https://www.deezer.com/artist/4522497",
+      "last.fm": "https://www.last.fm/music/The+Walters",
+      "lyrics": "https://genius.com/artists/The-walters",
+      "official homepage": "https://yourwalters.com/",
+      "other databases": "https://imvdb.com/n/the-walters",
+      "social network": "https://www.tiktok.com/@thewaltersband",
+      "songkick": "https://www.songkick.com/artists/5878244",
+      "streaming": "https://tidal.com/artist/6931208",
+      "wikidata": "https://www.wikidata.org/wiki/Q30634364",
+      "youtube": "https://www.youtube.com/channel/UCm54E8Hlf_z1GIpVUChBTQA"
+    },
+    "labels": [
+      "half•alive",
+      "Many Hats Distribution",
+      "Many Hats Music",
+      "Warner Bros. Records",
+      "[no label]",
+      "Amuseio AB",
+      "Warner Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 4522497,
+    "name": "The Walters",
+    "nb_fan": 32161,
+    "nb_album": 24,
+    "link": "https://www.deezer.com/artist/4522497",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a22984549f592e7e852905bc2798bf65/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "half·alive"
+    ],
+    "contributor_roles": {
+      "half·alive": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "I Love You So",
+      "R.I.P.",
+      "I Love You So (Acoustic)",
+      "Sweet Marie",
+      "Life",
+      "Goodbye Baby",
+      "Fancy Shoes",
+      "Cottage Roads",
+      "I Haven't Been True",
+      "What's Left",
+      "New Girl (Tom's Song)",
+      "Hunk Beach",
+      "Autumn Leaves",
+      "Million Little Problems",
+      "Black Moon",
+      "Silver Screens",
+      "She's Gonna Leave You",
+      "Make You Mine",
+      "City Blues",
+      "I Wanna Be Good",
+      "Sweet Leaf",
+      "Broken Hearts and Memories",
+      "Stuck In My Ways",
+      "By The Water",
+      "Tell Me"
+    ],
+    "track_durations": [
+      160,
+      184,
+      147,
+      137,
+      200,
+      152,
+      134,
+      181,
+      202,
+      204,
+      215,
+      181,
+      208,
+      146,
+      200,
+      201,
+      220,
+      149,
+      225,
+      200,
+      124,
+      206,
+      197,
+      169,
+      178
+    ],
+    "track_ranks": [
+      787140,
+      429503,
+      614942,
+      491242,
+      350743,
+      386611,
+      331826,
+      289298,
+      312639,
+      240119,
+      356677,
+      129937,
+      319745,
+      197190,
+      343011,
+      166867,
+      146878,
+      179492,
+      170736,
+      38114,
+      121113,
+      149116,
+      299782,
+      305410,
+      225846
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 5,
+      "ep": 1,
+      "single": 18
+    },
+    "albums": [
+      {
+        "title": "Good Company (Deluxe)",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Good Company",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Young Men",
+        "label": "",
+        "release_date": "2015-12-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hunk Beach / I Wanna Be Good",
+        "label": "",
+        "release_date": "2015-06-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Songs for Dads",
+        "label": "",
+        "release_date": "2014-11-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Try Again",
+        "label": "",
+        "release_date": "2022-05-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Silver Screens",
+        "label": "",
+        "release_date": "2025-10-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cheap Drugs",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "R.I.P.",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Broken Hearts and Memories",
+        "label": "",
+        "release_date": "2025-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Life On The Line",
+        "label": "",
+        "release_date": "2025-01-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "forever on my mind",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Better Off Alone",
+        "label": "",
+        "release_date": "2024-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wishing Well",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Running Around / All Of Our Days",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "By The Water",
+        "label": "",
+        "release_date": "2023-10-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stuck In My Ways",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Another Christmas",
+        "label": "",
+        "release_date": "2022-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Million Little Problems",
+        "label": "",
+        "release_date": "2022-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Love You So (King Henry Remix)",
+        "label": "",
+        "release_date": "2022-01-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Love You So (Acoustic)",
+        "label": "",
+        "release_date": "2021-11-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "She's Gonna Leave You",
+        "label": "",
+        "release_date": "2017-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Goodbye Baby",
+        "label": "",
+        "release_date": "2015-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Love You So",
+        "label": "",
+        "release_date": "2014-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "The Backseat Lovers",
+      "Current Joys",
+      "Mac Demarco",
+      "Yot Club",
+      "Peter McPoland",
+      "Vacations",
+      "Harmless",
+      "Vansire",
+      "dad sports",
+      "Pity Party (Girls Club)"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5161420,
+    "name": "The Walters",
+    "profile": "An unsigned five-piece indie rock band from Chicago, Illinois, composed of Luke Olson, Walter Kosner, Michael Tirabassi, Danny Wells, and Charlie Ekhaus.[1] As of 2017 they had released two albums and three singles and were touring the United States on their first national tour.\r\n\r\nThe band performed at prominent Chicago venues such as the Metro, House of Blues, Riot Fest Chicago, and the 2017 Lollapalooza Festival. Their first EP, Songs for Dads, placed on the United States Viral Top 50 list on Spotify. The Walters have described their music as \"cardigan rock\" and are generally classified as indie rock and new wave.\r\n\r\nOn September 23rd, the band announced via their Facebook page that they \"currently had no future plans to release new music as The Walters\".",
+    "realname": "",
+    "social_urls": [
+      "https://yourwalters.com/",
+      "https://www.facebook.com/TheWaltersband/",
+      "https://thewalters.bandcamp.com/"
+    ],
+    "members": [
+      "Michael James Tirabassi",
+      "Walter Kosner",
+      "Charlie Ekhaus",
+      "Danny Wells (4)",
+      "Luke Olson (4)"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 7,
+    "digital_only_releases": 9,
+    "total_releases": 16,
+    "formats": [
+      "",
+      "30xFile, AAC, Comp, 256",
+      "6xFile, FLAC, EP",
+      "7\", EP, Num, Blu",
+      "7xFile, FLAC, EP",
+      "CD, Album, Comp",
+      "CD, Comp, Promo",
+      "CDr, Comp, Promo",
+      "CDr, Comp, Promo, Smplr",
+      "File, MP3, Single"
+    ],
+    "labels": [
+      "Fourth Demention Records, Fourth Demention Records",
+      "Not on Label (The Walters Self-released)",
+      "Promo Only",
+      "Sony Music, Universal Music Group",
+      "Warner Music Group, X5 Music Group",
+      "Warner Music Japan"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "The Walters",
+    "mbid": "61cdb045-7f89-4eb1-b3ed-35db94d9ab99",
+    "listeners": 1819596,
+    "playcount": 34871762,
+    "listener_play_ratio": 19.16,
+    "bio_exists": true,
+    "bio_summary": "The Walters is an American indie pop band formed in 2014, from Chicago, Illinois, composed of lead vocalist Luke Olson, lead guitarist Walter Kosner, bassist Danny Wells, and drummer Charlie Ekhaus.\n\nThe Walters formed in Chicago, Illinois in 2014 after the band's guitarist and namesake Walter Kosner moved from Connecticut to Chicago to attend DePaul University. After dropping out of the school, Kosner recruited the rest of the band members who eventually would form The Walters. <a href=\"https:/",
+    "tags": [
+      "indie rock",
+      "indie",
+      "blues rock",
+      "indie pop",
+      "my top songs"
+    ],
+    "similar_artists": [
+      "Wabie",
+      "Summer Salt",
+      "Matt Maltese",
+      "VACATIONS",
+      "mellow fellow"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Love You So",
+        "listeners": 1672542,
+        "playcount": 26231369
+      },
+      {
+        "name": "Sweet Marie",
+        "listeners": 472375,
+        "playcount": 2919311
+      },
+      {
+        "name": "I Love You So - Acoustic",
+        "listeners": 192277,
+        "playcount": 917892
+      },
+      {
+        "name": "Fancy Shoes",
+        "listeners": 175252,
+        "playcount": 931164
+      },
+      {
+        "name": "Goodbye Baby",
+        "listeners": 135954,
+        "playcount": 670970
+      },
+      {
+        "name": "Life",
+        "listeners": 84033,
+        "playcount": 380473
+      },
+      {
+        "name": "Cottage Roads",
+        "listeners": 80625,
+        "playcount": 360812
+      },
+      {
+        "name": "New Girl (Tom's Song)",
+        "listeners": 71839,
+        "playcount": 410638
+      },
+      {
+        "name": "She's Gonna Leave You",
+        "listeners": 57487,
+        "playcount": 344358
+      },
+      {
+        "name": "What's Left",
+        "listeners": 44255,
+        "playcount": 220033
+      }
+    ],
+    "url": "https://www.last.fm/music/The+Walters"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

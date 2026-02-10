@@ -1,0 +1,134 @@
+{
+  "artist_name": "J Stepan",
+  "artist_id": "j_stepan",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:18:41.137322+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'J Stepan', got 'Kyteman'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4168979,
+    "name": "Mattie J.T. Stepanek",
+    "profile": "Mattie J.T. Stepanek (born July 17, 1990 – died June 22, 2004, Washington, D.C., USA) was an American poet who published seven best-selling books of poetry. He wanted to be remembered as \"a poet, a peacemaker, and a philosopher who played\". Before his death (at the age of 13) he had become known as a peace advocate and motivational speaker.",
+    "realname": "Matthew Joseph Thaddeus Stepanek",
+    "social_urls": [
+      "http://www.mattieonline.com/",
+      "https://en.wikipedia.org/wiki/Mattie_Stepanek"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "J Stepan",
+    "mbid": "",
+    "listeners": 4676,
+    "playcount": 12465,
+    "listener_play_ratio": 2.67,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/J+Stepan\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Forrest St. Marie",
+      "Naia Catalán",
+      "Sacred Keys",
+      "Joe Hanson",
+      "Alain Charles"
+    ],
+    "top_tracks": [
+      {
+        "name": "Skating - Cover",
+        "listeners": 3296,
+        "playcount": 8203
+      },
+      {
+        "name": "O Christmas Tree (Fireside)",
+        "listeners": 978,
+        "playcount": 2005
+      },
+      {
+        "name": "Tea Leaves",
+        "listeners": 346,
+        "playcount": 960
+      },
+      {
+        "name": "Holy One Where Art Though",
+        "listeners": 277,
+        "playcount": 883
+      },
+      {
+        "name": "Greener Pastures",
+        "listeners": 98,
+        "playcount": 395
+      },
+      {
+        "name": "Swirling Through the Air",
+        "listeners": 5,
+        "playcount": 16
+      },
+      {
+        "name": "Skating (Cover)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Wonderful Christmastime (Fireside)",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Skating",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/J+Stepan"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,106 @@
+{
+  "artist_name": "Theo Martinez",
+  "artist_id": "theo_martinez",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:39:12.410309+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Theo Martinez', got 'The Martinez Brothers'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Theo Martinez",
+    "mbid": "",
+    "listeners": 269,
+    "playcount": 461,
+    "listener_play_ratio": 1.71,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Theo+Martinez\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rufus Mist",
+      "Erik Rydmark",
+      "Tarragona Heights",
+      "Benjamin Kind",
+      "Vaughn Harper"
+    ],
+    "top_tracks": [
+      {
+        "name": "Silver Bells",
+        "listeners": 261,
+        "playcount": 445
+      },
+      {
+        "name": "Quantum Quest",
+        "listeners": 2,
+        "playcount": 9
+      },
+      {
+        "name": "Pixel Paradise",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Quest for Glory",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Trippin' Lately",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Psychedelic Techno",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Quest for Greatness",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Theo+Martinez"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,134 @@
+{
+  "artist_name": "Elio Moreno",
+  "artist_id": "elio_moreno",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T00:36:41.037694+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Elio Moreno', got 'Dario Moreno'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15377064,
+    "name": "Elio Moreno",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "CD, Album"
+    ],
+    "labels": [
+      "Pin-Up Recordings"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Elio Moreno",
+    "mbid": "",
+    "listeners": 50053,
+    "playcount": 232838,
+    "listener_play_ratio": 4.65,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Elio+Moreno\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "moonlace",
+      "Foreglow",
+      "Map Of My Mind",
+      "Astral Steps",
+      "Don Becker"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cynosure",
+        "listeners": 26613,
+        "playcount": 132225
+      },
+      {
+        "name": "Ebbing",
+        "listeners": 11407,
+        "playcount": 35483
+      },
+      {
+        "name": "without leaving",
+        "listeners": 8600,
+        "playcount": 23512
+      },
+      {
+        "name": "Esoteric",
+        "listeners": 6617,
+        "playcount": 20481
+      },
+      {
+        "name": "Temporarily",
+        "listeners": 5281,
+        "playcount": 16434
+      },
+      {
+        "name": "Vogelia",
+        "listeners": 1994,
+        "playcount": 4699
+      },
+      {
+        "name": "Paralimni",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Amelioration",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Avola",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Elio+Moreno"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

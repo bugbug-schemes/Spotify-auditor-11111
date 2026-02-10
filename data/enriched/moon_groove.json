@@ -1,0 +1,201 @@
+{
+  "artist_name": "Moon Groove",
+  "artist_id": "moon_groove",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:49:12.855126+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 184499847,
+    "name": "Moon Groove",
+    "nb_fan": 10,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/184499847",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cefe50a82147409e6f1068eaecf20424/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Night Wish",
+        "label": "",
+        "release_date": "2022-09-16",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2746652,
+    "name": "Delta Moon",
+    "profile": "Two slide guitars, a voice and a groove.\r\nA chance meeting in an Atlanta, GA music store brought the two founders, Tom Gray and Mark Johnson, together. After adding a rock-solid rhythm section, Delta Moon started playing nightclubs and festivals around South, quickly gathering a wall-full of local “best” awards, including winning the International Blues Challenge in Memphis in 2003. With much attention from the IBC Award, Delta Moon widened its travels to include the US, Canada, and Europe. In 2007 bassist Franher Joseph joined Delta Moon followed later by drummer Marlon Patton, completing the line up that remains today. The band’s work ethic of constant recording and touring continues into 2012 and beyond with tours scheduled for Germany, Italy, U.K., Benelux, Scandinavia, Canada, U.S. and more.",
+    "realname": "",
+    "social_urls": [
+      "http://www.deltamoon.com",
+      "http://www.facebook.com/deltamoon",
+      "http://soundcloud.com/delta-moon",
+      "http://www.instagram.com/delta_moon",
+      "http://www.youtube.com/user/deltamoonvideo",
+      "http://twitter.com/deltamoon",
+      "https://en.wikipedia.org/wiki/Delta_Moon",
+      "https://www.imdb.com/name/nm10744879/"
+    ],
+    "members": [
+      "Tom Gray",
+      "Mark Johnson (35)",
+      "Franher Joseph",
+      "Darren Stanley"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 33,
+    "digital_only_releases": 18,
+    "total_releases": 51,
+    "formats": [
+      "",
+      "12\", EP, Ltd",
+      "2xCD, Comp",
+      "CD",
+      "CD, Album",
+      "CD, Album, Unofficial",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD, Comp, Smplr",
+      "CD, Smplr",
+      "CDr, Comp",
+      "CDr, Comp, Ltd"
+    ],
+    "labels": [
+      "Ayia Napa",
+      "Blues Boulevard",
+      "Blues Revue",
+      "Country Roads",
+      "Jumping Jack Records (4)",
+      "Kitchener Blues Festival",
+      "Music & Melody",
+      "Not On Label",
+      "Relix Magazine",
+      "Southern Records Group & Management",
+      "WNCW 88.7",
+      "ZYX Music",
+      "homo swampus",
+      "homo swampus, Keep On Chooglin'"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Moon Groove",
+    "mbid": "",
+    "listeners": 6890,
+    "playcount": 23311,
+    "listener_play_ratio": 3.38,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Moon+Groove\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Roffe & Friends",
+      "HGenius",
+      "Colton Jefferson",
+      "Alex R",
+      "sunsets & sandals"
+    ],
+    "top_tracks": [
+      {
+        "name": "Night Wish",
+        "listeners": 6660,
+        "playcount": 22685
+      },
+      {
+        "name": "Beauty On Earth",
+        "listeners": 89,
+        "playcount": 179
+      },
+      {
+        "name": "Meteor",
+        "listeners": 89,
+        "playcount": 143
+      },
+      {
+        "name": "Ebridi",
+        "listeners": 37,
+        "playcount": 128
+      },
+      {
+        "name": "Plastic Island",
+        "listeners": 34,
+        "playcount": 47
+      },
+      {
+        "name": "Metamatic Ritual",
+        "listeners": 13,
+        "playcount": 19
+      },
+      {
+        "name": "Rise",
+        "listeners": 10,
+        "playcount": 18
+      },
+      {
+        "name": "Libra Sunrise",
+        "listeners": 9,
+        "playcount": 12
+      },
+      {
+        "name": "Constellation",
+        "listeners": 8,
+        "playcount": 13
+      },
+      {
+        "name": "Suikinkutsu",
+        "listeners": 7,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/Moon+Groove"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

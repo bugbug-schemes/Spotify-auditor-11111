@@ -1,0 +1,443 @@
+{
+  "artist_name": "Paula Arenas",
+  "artist_id": "paula_arenas",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:23:57.122776+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "2088799f-df57-4e21-a3b3-c4c983f1265d",
+    "type": "Person",
+    "country": "CO",
+    "area": "Colombia",
+    "begin_date": "1988-05-01",
+    "end_date": "",
+    "gender": "female",
+    "genres": [
+      "latin",
+      "pop",
+      "latin pop"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/4262253",
+      "free streaming": "https://www.deezer.com/artist/5429084",
+      "official homepage": "https://paulaarenas.com/",
+      "social network": "https://www.instagram.com/paulaarenasmusica/",
+      "streaming": "https://music.apple.com/co/artist/1087989645",
+      "wikidata": "https://www.wikidata.org/wiki/Q24450198",
+      "youtube": "https://www.youtube.com/channel/UC9dOuLcP-vzm43iggI8MZqg"
+    },
+    "labels": [
+      "Do Re Millions LLC",
+      "Art House",
+      "Do Re Millions"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 5429084,
+    "name": "Paula Arenas",
+    "nb_fan": 469,
+    "nb_album": 22,
+    "link": "https://www.deezer.com/artist/5429084",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8f1f13482ed5a2a389f5560b0597c902/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Esteman",
+      "Jesus Navarro",
+      "Juan Pablo Vega",
+      "Manuel Medrano",
+      "Santiago Cruz"
+    ],
+    "contributor_roles": {
+      "Jesus Navarro": [
+        "Main"
+      ],
+      "Manuel Medrano": [
+        "Main"
+      ],
+      "Esteman": [
+        "Featured"
+      ],
+      "Juan Pablo Vega": [
+        "Main"
+      ],
+      "Santiago Cruz": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Los Caminos De La Vida",
+      "Dejemos",
+      "Es Natural",
+      "Ahora Soy Libre",
+      "León",
+      "Bandida",
+      "Nada",
+      "A Tu Lado",
+      "Déjame Llorarte",
+      "Buena Para Nada (Versión Viña del Mar)",
+      "Buena Para Nada",
+      "Se Siente Bien",
+      "Miguel",
+      "Puro Sentimiento",
+      "Lo Que el Tiempo Dejó",
+      "Dos Corazones Rotos",
+      "Un Día Cualquiera",
+      "Una Vida Contigo",
+      "Hoy"
+    ],
+    "track_durations": [
+      231,
+      192,
+      235,
+      225,
+      176,
+      185,
+      229,
+      244,
+      189,
+      180,
+      197,
+      190,
+      163,
+      186,
+      256,
+      202,
+      218,
+      216,
+      257
+    ],
+    "track_ranks": [
+      140806,
+      65039,
+      55473,
+      65478,
+      37581,
+      134528,
+      18066,
+      75361,
+      138216,
+      158472,
+      156237,
+      69093,
+      38355,
+      174916,
+      139030,
+      57096,
+      21511,
+      76528,
+      32172
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 1,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "A Ciegas",
+        "label": "",
+        "release_date": "2023-05-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Visceral",
+        "label": "",
+        "release_date": "2019-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mis Amores",
+        "label": "",
+        "release_date": "2021-05-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dos Corazones Rotos",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Trilogía de Recuerdos",
+        "label": "",
+        "release_date": "2025-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Llueve",
+        "label": "",
+        "release_date": "2025-03-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Veneno Delicioso",
+        "label": "",
+        "release_date": "2024-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Miguel",
+        "label": "",
+        "release_date": "2024-08-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sin Medir Distancias",
+        "label": "",
+        "release_date": "2024-05-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lo Que Mis Ojos Ven",
+        "label": "",
+        "release_date": "2024-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Como la Cigarra",
+        "label": "",
+        "release_date": "2024-05-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Déjame Llorarte",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Ciegas",
+        "label": "",
+        "release_date": "2023-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Día a la Vez (Acústico)",
+        "label": "",
+        "release_date": "2022-12-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Día a la Vez",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Puro Sentimiento",
+        "label": "",
+        "release_date": "2022-05-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Volando Bajito",
+        "label": "",
+        "release_date": "2022-01-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Tu Lado",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Buena Para Nada (Versión Viña del Mar)",
+        "label": "",
+        "release_date": "2020-02-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nada (Deezer Hotel Sessions)",
+        "label": "",
+        "release_date": "2020-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un Día Cualquiera",
+        "label": "",
+        "release_date": "2014-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lo Que el Tiempo Dejó",
+        "label": "",
+        "release_date": "2013-03-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Jesse & Joy",
+      "Kany Garcia",
+      "Pablo Alboran",
+      "Gian Marco",
+      "Álex Ubago",
+      "Santiago Cruz",
+      "Noel Schajris",
+      "David Bisbal",
+      "Alejandro Sanz",
+      "Canal RCN"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4262253,
+    "name": "Paula Arenas",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 2,
+    "total_releases": 4,
+    "formats": [
+      "",
+      "CD, Album"
+    ],
+    "labels": [
+      "Sony Music",
+      "Top Stop Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Paula Arenas",
+    "mbid": "2088799f-df57-4e21-a3b3-c4c983f1265d",
+    "listeners": 10311,
+    "playcount": 107484,
+    "listener_play_ratio": 10.42,
+    "bio_exists": true,
+    "bio_summary": "Paula Arenas (born Paula Arenas Alvarez; May 1, 1988 in Bogotá, Colombia) is an alternative pop singer-songwriter.\n\n In 2011 and 2012 she released two extended plays with her name Paula Arenas, the following years she released a couple of singles as \"Me Hace Bien\", \"Sola\", \"Lo Que El Tiempo Dejó\" (featuring Esteman), \"Excesos\" and \"Un Día Cualquiera\". \"Lo Que El Tiempo Dejó\" was a top 10 hit in Colombia.  In 2016 released her first debut single called \"Nada\" produced by Julio Reyes Copello <a hr",
+    "tags": [
+      "pop",
+      "soul",
+      "jazz",
+      "alternative",
+      "Colombia"
+    ],
+    "similar_artists": [
+      "Anasol",
+      "Stephanie Cayo",
+      "Nina Rodriguez",
+      "Jimena Angel",
+      "Verónica Orozco"
+    ],
+    "top_tracks": [
+      {
+        "name": "Hoy",
+        "listeners": 2367,
+        "playcount": 12505
+      },
+      {
+        "name": "Puro Sentimiento",
+        "listeners": 1752,
+        "playcount": 5394
+      },
+      {
+        "name": "Ahora Soy Libre",
+        "listeners": 1225,
+        "playcount": 12617
+      },
+      {
+        "name": "Bandida",
+        "listeners": 917,
+        "playcount": 3257
+      },
+      {
+        "name": "A Tu Lado",
+        "listeners": 900,
+        "playcount": 2032
+      },
+      {
+        "name": "Buena Para Nada",
+        "listeners": 876,
+        "playcount": 2089
+      },
+      {
+        "name": "Nada",
+        "listeners": 795,
+        "playcount": 4857
+      },
+      {
+        "name": "Tanto Tanto",
+        "listeners": 673,
+        "playcount": 9180
+      },
+      {
+        "name": "Déjame Llorarte",
+        "listeners": 504,
+        "playcount": 1676
+      },
+      {
+        "name": "Tiempo al Viento",
+        "listeners": 464,
+        "playcount": 991
+      }
+    ],
+    "url": "https://www.last.fm/music/Paula+Arenas"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,173 @@
+{
+  "artist_name": "Lunaura",
+  "artist_id": "lunaura",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:19:23.441903+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 102441312,
+    "name": "Lunaura",
+    "nb_fan": 2,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/102441312",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c5360c89ac565c1a65459bd859682ad2/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "Beyond the Dream",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Stillness Above",
+        "label": "",
+        "release_date": "2026-01-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nattbris",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moonlit Haze",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bortom",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Karlavagnen",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Natthimmel",
+        "label": "",
+        "release_date": "2025-09-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lunaura",
+    "mbid": "",
+    "listeners": 1831,
+    "playcount": 5173,
+    "listener_play_ratio": 2.83,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lunaura\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Serelune",
+      "Ferngoord",
+      "Cael Lunor",
+      "Tuiren",
+      "Aether Waves"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moonlit Haze",
+        "listeners": 1778,
+        "playcount": 4681
+      },
+      {
+        "name": "Karlavagnen",
+        "listeners": 53,
+        "playcount": 136
+      },
+      {
+        "name": "Natthimmel",
+        "listeners": 34,
+        "playcount": 141
+      },
+      {
+        "name": "Nattbris",
+        "listeners": 22,
+        "playcount": 70
+      },
+      {
+        "name": "Bortom",
+        "listeners": 19,
+        "playcount": 88
+      },
+      {
+        "name": "The Stillness Above",
+        "listeners": 11,
+        "playcount": 54
+      },
+      {
+        "name": "Beyond the Dream",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Lunaura"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

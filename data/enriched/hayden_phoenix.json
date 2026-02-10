@@ -1,0 +1,222 @@
+{
+  "artist_name": "Hayden Phoenix",
+  "artist_id": "hayden_phoenix",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:03:39.955846+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 186387047,
+    "name": "Hayden Phoenix",
+    "nb_fan": 0,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/186387047",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/838fffb0e7665a53f0fe1b7ed8f3c981/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Unread Dreams"
+    ],
+    "track_durations": [
+      155
+    ],
+    "track_ranks": [
+      14838
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "In Shadows of Morning",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Until Then",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Slow Return",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unread Dreams",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Heart of Things",
+        "label": "",
+        "release_date": "2025-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unspoken",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue Notes",
+        "label": "",
+        "release_date": "2024-02-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All Along the Watchtower",
+        "label": "",
+        "release_date": "2023-09-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After the fact",
+        "label": "",
+        "release_date": "2023-08-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "When I'm With You",
+        "label": "",
+        "release_date": "2023-01-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Weekend Blues",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hayden Phoenix",
+    "mbid": "",
+    "listeners": 3097,
+    "playcount": 9152,
+    "listener_play_ratio": 2.96,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Hayden+Phoenix\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Dorian Skye",
+      "Jules Navarro",
+      "Jorge Huksos",
+      "Cecil Noss",
+      "Ivan Pirman"
+    ],
+    "top_tracks": [
+      {
+        "name": "Slow Return",
+        "listeners": 930,
+        "playcount": 2455
+      },
+      {
+        "name": "Unspoken",
+        "listeners": 786,
+        "playcount": 2626
+      },
+      {
+        "name": "Unread Dreams",
+        "listeners": 738,
+        "playcount": 1785
+      },
+      {
+        "name": "Until Then",
+        "listeners": 453,
+        "playcount": 811
+      },
+      {
+        "name": "When I'm With You",
+        "listeners": 379,
+        "playcount": 635
+      },
+      {
+        "name": "Weekend Blues",
+        "listeners": 293,
+        "playcount": 531
+      },
+      {
+        "name": "Common People",
+        "listeners": 146,
+        "playcount": 230
+      },
+      {
+        "name": "After the fact",
+        "listeners": 39,
+        "playcount": 69
+      },
+      {
+        "name": "All Along the Watchtower",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "Blue Notes",
+        "listeners": 2,
+        "playcount": 5
+      }
+    ],
+    "url": "https://www.last.fm/music/Hayden+Phoenix"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

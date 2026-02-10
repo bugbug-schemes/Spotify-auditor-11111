@@ -1,0 +1,211 @@
+{
+  "artist_name": "Tomas North",
+  "artist_id": "tomas_north",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:45:04.361129+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 118588432,
+    "name": "Tomas North",
+    "nb_fan": 2,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/118588432",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/61232f1ceab2f65e1369403fa24233f9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Reise um die Welt",
+      "Shifrin",
+      "In vino veritas"
+    ],
+    "track_durations": [
+      171,
+      193,
+      187
+    ],
+    "track_ranks": [
+      30861,
+      33430,
+      37339
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Saint Michel",
+        "label": "",
+        "release_date": "2024-02-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Sun",
+        "label": "",
+        "release_date": "2023-10-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "New Amsterdam",
+        "label": "",
+        "release_date": "2022-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Confessions",
+        "label": "",
+        "release_date": "2021-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reise um die Welt",
+        "label": "",
+        "release_date": "2021-01-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 2390468,
+    "name": "Joe Tomaszewski And His Northeasterners",
+    "profile": "Northeast Minneapolis",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Bill Czerniak",
+      "Tom Mrozinski",
+      "Bob Jackson (11)",
+      "Joe Tomaszewski",
+      "Harley Wells"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 8,
+    "digital_only_releases": 0,
+    "total_releases": 8,
+    "formats": [
+      "7\", Single",
+      "LP",
+      "LP, Album"
+    ],
+    "labels": [
+      "Studio 5 Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tomas North",
+    "mbid": "",
+    "listeners": 9492,
+    "playcount": 40364,
+    "listener_play_ratio": 4.25,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Tomas+North\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lee Howard-Taylor",
+      "Adeben",
+      "Hanni Licht",
+      "Jo Rochford",
+      "Leonardo Agusti"
+    ],
+    "top_tracks": [
+      {
+        "name": "Saint Michel",
+        "listeners": 3758,
+        "playcount": 12904
+      },
+      {
+        "name": "Midnight Sun",
+        "listeners": 2824,
+        "playcount": 10541
+      },
+      {
+        "name": "Reise um die Welt",
+        "listeners": 2457,
+        "playcount": 6005
+      },
+      {
+        "name": "Confessions",
+        "listeners": 2225,
+        "playcount": 6149
+      },
+      {
+        "name": "Shifrin",
+        "listeners": 1518,
+        "playcount": 3562
+      },
+      {
+        "name": "In vino veritas",
+        "listeners": 341,
+        "playcount": 618
+      },
+      {
+        "name": "Let It Snow",
+        "listeners": 237,
+        "playcount": 554
+      },
+      {
+        "name": "Scheveningen",
+        "listeners": 9,
+        "playcount": 11
+      },
+      {
+        "name": "Trigueirinho",
+        "listeners": 8,
+        "playcount": 11
+      },
+      {
+        "name": "Silver Bells",
+        "listeners": 2,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Tomas+North"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

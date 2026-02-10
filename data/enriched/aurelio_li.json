@@ -1,0 +1,153 @@
+{
+  "artist_name": "Aurelio Li",
+  "artist_id": "aurelio_li",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:18:12.545654+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 324821811,
+    "name": "Aurelio Li",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/324821811",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/be36c295200feffb5c9efea9ab62a8a9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Eternal Moon"
+    ],
+    "track_durations": [
+      148
+    ],
+    "track_ranks": [
+      200625
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Echoes of Solitude",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solitary Moments",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reflections at Dusk",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Eternal Moon",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3353306,
+    "name": "Aurelio Do Libom",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Aurelio Li",
+    "mbid": "",
+    "listeners": 16982,
+    "playcount": 57917,
+    "listener_play_ratio": 3.41,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Aurelio+Li\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sine Hats",
+      "Sorellien",
+      "Saverio Lobeone",
+      "Aldo Talete",
+      "Waylen Orson"
+    ],
+    "top_tracks": [
+      {
+        "name": "Eternal Moon",
+        "listeners": 16219,
+        "playcount": 54387
+      },
+      {
+        "name": "Reflections at Dusk",
+        "listeners": 1696,
+        "playcount": 3529
+      },
+      {
+        "name": "Solitary Moments",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Aurelio+Li"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

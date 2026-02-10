@@ -1,0 +1,189 @@
+{
+  "artist_name": "Cedric Everglen",
+  "artist_id": "cedric_everglen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T22:02:24.981097+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 239614211,
+    "name": "Cedric Everglen",
+    "nb_fan": 1,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/239614211",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/7fd6d29e3607131556a757d7de2546f8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Winter Wonderland",
+      "O Come, O Come, Emmanuel"
+    ],
+    "track_durations": [
+      153,
+      148
+    ],
+    "track_ranks": [
+      5395,
+      31524
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "Sprinkles",
+        "label": "",
+        "release_date": "2025-10-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Happy Farmer",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Poppy",
+        "label": "",
+        "release_date": "2025-02-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pebbles",
+        "label": "",
+        "release_date": "2024-12-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Wonderland",
+        "label": "",
+        "release_date": "2024-10-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strawberry Field",
+        "label": "",
+        "release_date": "2024-06-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hepaticas",
+        "label": "",
+        "release_date": "2024-04-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "O Come, O Come, Emmanuel",
+        "label": "",
+        "release_date": "2023-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Cedric Everglen",
+    "mbid": "",
+    "listeners": 8712,
+    "playcount": 66913,
+    "listener_play_ratio": 7.68,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Cedric+Everglen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Silas Northwind",
+      "Teddy Bloom",
+      "Pepita Li",
+      "Milo Sandbo",
+      "Harper Toews"
+    ],
+    "top_tracks": [
+      {
+        "name": "O Come, O Come, Emmanuel",
+        "listeners": 4034,
+        "playcount": 11240
+      },
+      {
+        "name": "The Happy Farmer",
+        "listeners": 3016,
+        "playcount": 24913
+      },
+      {
+        "name": "Pebbles",
+        "listeners": 2184,
+        "playcount": 26924
+      },
+      {
+        "name": "Sprinkles",
+        "listeners": 512,
+        "playcount": 3817
+      },
+      {
+        "name": "Winter Wonderland",
+        "listeners": 8,
+        "playcount": 13
+      },
+      {
+        "name": "The Wexford Carol",
+        "listeners": 2,
+        "playcount": 5
+      },
+      {
+        "name": "Hepaticas",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Cedric+Everglen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

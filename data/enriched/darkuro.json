@@ -1,0 +1,121 @@
+{
+  "artist_name": "Darkuro",
+  "artist_id": "darkuro",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:22:07.170930+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Darkuro', got 'Farruko'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Darkuro",
+    "mbid": "",
+    "listeners": 9245,
+    "playcount": 25144,
+    "listener_play_ratio": 2.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Darkuro\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Sven Derler",
+      "Sigrid Sigrdisdottir",
+      "Isabelle Laurent",
+      "Magnus Sakamura",
+      "Mika Chastain"
+    ],
+    "top_tracks": [
+      {
+        "name": "Judy's Song",
+        "listeners": 5333,
+        "playcount": 10738
+      },
+      {
+        "name": "A Moment Remembered",
+        "listeners": 2677,
+        "playcount": 10682
+      },
+      {
+        "name": "The Dusty Piano",
+        "listeners": 1364,
+        "playcount": 3100
+      },
+      {
+        "name": "The Purple Door",
+        "listeners": 170,
+        "playcount": 377
+      },
+      {
+        "name": "New Start",
+        "listeners": 30,
+        "playcount": 66
+      },
+      {
+        "name": "The Way of Doing",
+        "listeners": 24,
+        "playcount": 95
+      },
+      {
+        "name": "Wonders",
+        "listeners": 8,
+        "playcount": 77
+      },
+      {
+        "name": "Between Us",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "端程山x忘れてやらない",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Morning Kiss",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Darkuro"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

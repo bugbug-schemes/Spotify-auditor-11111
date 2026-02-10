@@ -1,0 +1,139 @@
+{
+  "artist_name": "Heiko Kolt",
+  "artist_id": "heiko_kolt",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:04:35.115416+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 289369411,
+    "name": "Heiko Kolt",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/289369411",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9cc94133045d87c111a62d7ea76284ac/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Glimpse of Happiness",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Beneath the Branches",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Glow",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Serenity’s Whisper",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "First Light",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Heiko Kolt",
+    "mbid": "",
+    "listeners": 2863,
+    "playcount": 11261,
+    "listener_play_ratio": 3.93,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Heiko+Kolt\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Thiago Hernan",
+      "Magnus Sakamura",
+      "Kuro Yama",
+      "Antoine FAURÉ",
+      "Adiamo Mero"
+    ],
+    "top_tracks": [
+      {
+        "name": "Still Glow",
+        "listeners": 2461,
+        "playcount": 10160
+      },
+      {
+        "name": "Serenity’s Whisper",
+        "listeners": 499,
+        "playcount": 1100
+      },
+      {
+        "name": "Glimpse of Happiness",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Heiko+Kolt"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

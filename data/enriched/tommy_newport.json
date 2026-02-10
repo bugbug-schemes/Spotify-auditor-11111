@@ -1,0 +1,481 @@
+{
+  "artist_name": "Tommy Newport",
+  "artist_id": "tommy_newport",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:45:25.452846+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "68590572-3cf5-4d44-a83e-9c77b48adecd",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/12801533",
+      "free streaming": "https://www.deezer.com/artist/14934849",
+      "streaming": "https://tidal.com/artist/9843766"
+    },
+    "labels": [
+      "apg",
+      "Real Dirty Boy",
+      "igroovemusic"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14934849,
+    "name": "Tommy Newport",
+    "nb_fan": 1244,
+    "nb_album": 25,
+    "link": "https://www.deezer.com/artist/14934849",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/cb3ee69bf51d4bf8da756122beccb3f8/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "21 Savage",
+      "Baby Nova",
+      "BigXthaPlug",
+      "DUCKWRTH",
+      "EARTHGANG",
+      "Mikky Ekko",
+      "Spillage Village"
+    ],
+    "contributor_roles": {
+      "21 Savage": [
+        "Main"
+      ],
+      "Mikky Ekko": [
+        "Main"
+      ],
+      "BigXthaPlug": [
+        "Main"
+      ],
+      "Baby Nova": [
+        "Main"
+      ],
+      "DUCKWRTH": [
+        "Main"
+      ],
+      "EARTHGANG": [
+        "Main"
+      ],
+      "Spillage Village": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "red sky",
+      "Movie Screen",
+      "Sunset For The Dead",
+      "Comes & Goes (feat. Tommy Newport)",
+      "Nicotine",
+      "Mr. Angel",
+      "Mister Domino",
+      "Risky Business",
+      "Tangerine",
+      "Following The Feeling",
+      "Yellow Lines",
+      "Fell Off The Earth",
+      "Secret Place",
+      "L'Amour",
+      "Fate",
+      "Vanilla & Light",
+      "On Top",
+      "PUT IN WORK",
+      "I Forgive You",
+      "Bad Choice My Boy",
+      "Sugar On My Tongue",
+      "Holy Water",
+      "Violet Days",
+      "Calabasas",
+      "Sweet Dream"
+    ],
+    "track_durations": [
+      176,
+      183,
+      203,
+      121,
+      168,
+      240,
+      189,
+      174,
+      203,
+      164,
+      126,
+      191,
+      182,
+      211,
+      202,
+      203,
+      196,
+      225,
+      177,
+      131,
+      152,
+      196,
+      203,
+      202,
+      160
+    ],
+    "track_ranks": [
+      499823,
+      236940,
+      449253,
+      269581,
+      168336,
+      202995,
+      121734,
+      278508,
+      252953,
+      103822,
+      166697,
+      222164,
+      293104,
+      31162,
+      174069,
+      189172,
+      22230,
+      56661,
+      179415,
+      117060,
+      105852,
+      143623,
+      88086,
+      110181,
+      88857
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 2,
+      "ep": 3,
+      "single": 20
+    },
+    "albums": [
+      {
+        "title": "Mister Domino",
+        "label": "",
+        "release_date": "2024-07-31",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Just To Be Ironic",
+        "label": "",
+        "release_date": "2018-11-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Liquid",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Ultra Mango",
+        "label": "",
+        "release_date": "2021-02-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Tommy Gun",
+        "label": "",
+        "release_date": "2019-10-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Risky Business",
+        "label": "",
+        "release_date": "2025-10-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nancy Dancing",
+        "label": "",
+        "release_date": "2025-09-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Roll Up My Love",
+        "label": "",
+        "release_date": "2025-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Following The Feeling",
+        "label": "",
+        "release_date": "2025-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sugar On My Tongue",
+        "label": "",
+        "release_date": "2024-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tangerine (Roosevelt Remix)",
+        "label": "",
+        "release_date": "2024-06-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Accidental Tourist",
+        "label": "",
+        "release_date": "2024-05-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "All My Time",
+        "label": "",
+        "release_date": "2024-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sweet Dream",
+        "label": "",
+        "release_date": "2024-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Secret Place",
+        "label": "",
+        "release_date": "2024-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Don't Mind",
+        "label": "",
+        "release_date": "2023-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tangerine",
+        "label": "",
+        "release_date": "2023-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Glasshead",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jackpot (feat. Jazz Cartier)",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Stargazer (with EARTHGANG)",
+        "label": "",
+        "release_date": "2021-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Someone Like Me",
+        "label": "",
+        "release_date": "2020-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Movie Screen - A COLORS SHOW",
+        "label": "",
+        "release_date": "2019-07-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Million",
+        "label": "",
+        "release_date": "2019-02-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mr. Angel",
+        "label": "",
+        "release_date": "2018-10-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Violet Days",
+        "label": "",
+        "release_date": "2018-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "hard life",
+      "Still Woozy",
+      "Sports",
+      "Cosmo Pyke",
+      "Ralph Castelli",
+      "Binki",
+      "Bakar",
+      "Gus Dapperton",
+      "PawPaw Rod",
+      "Phum Viphurit"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12801533,
+    "name": "Tommy Newport",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 5,
+    "total_releases": 6,
+    "formats": [
+      "",
+      "CD"
+    ],
+    "labels": [
+      "Real Dirty Boy / Silk Ivory"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Tommy Newport",
+    "mbid": "68590572-3cf5-4d44-a83e-9c77b48adecd",
+    "listeners": 231613,
+    "playcount": 2082747,
+    "listener_play_ratio": 8.99,
+    "bio_exists": true,
+    "bio_summary": "Born in Manchester, England and raised in Wichita, Kansas, Tommy Newport began playing guitar as an escape from teenage boredom. His EP \"Ultra Mango\" offers six varied tracks, all coming together to tell a lighthearted story of wistful youth. A follow-up to his 2018 debut \"Just Be Ironic\", \"Ultra Mango\" is a surprisingly deep and soulful experience with a distinctive far-out, retro feel. Producer 4th Pyramid explains: “The idea here was to take that DIY basement nostalgia feel and make records t",
+    "tags": [
+      "indie pop",
+      "indie rock",
+      "indie",
+      "rock",
+      "UK"
+    ],
+    "similar_artists": [
+      "Leisure",
+      "The Technicolors",
+      "Meltt",
+      "Jawny",
+      "The Jungle Giants"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sunset For The Dead",
+        "listeners": 74353,
+        "playcount": 349764
+      },
+      {
+        "name": "Tangerine",
+        "listeners": 72966,
+        "playcount": 307877
+      },
+      {
+        "name": "Movie Screen",
+        "listeners": 48507,
+        "playcount": 258227
+      },
+      {
+        "name": "Yellow Lines",
+        "listeners": 21583,
+        "playcount": 101020
+      },
+      {
+        "name": "Mr. Angel",
+        "listeners": 15791,
+        "playcount": 81637
+      },
+      {
+        "name": "Stargazer (with EARTHGANG)",
+        "listeners": 15110,
+        "playcount": 76378
+      },
+      {
+        "name": "Vanilla & Light",
+        "listeners": 14673,
+        "playcount": 62951
+      },
+      {
+        "name": "I Forgive You",
+        "listeners": 14397,
+        "playcount": 51422
+      },
+      {
+        "name": "Violet Days",
+        "listeners": 9878,
+        "playcount": 48980
+      },
+      {
+        "name": "Marigold",
+        "listeners": 9238,
+        "playcount": 30643
+      }
+    ],
+    "url": "https://www.last.fm/music/Tommy+Newport"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

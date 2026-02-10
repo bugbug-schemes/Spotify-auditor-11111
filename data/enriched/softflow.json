@@ -1,0 +1,121 @@
+{
+  "artist_name": "softflow",
+  "artist_id": "softflow",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:32:48.471588+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'softflow', got 'Soulflow'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "softflow",
+    "mbid": "",
+    "listeners": 25809,
+    "playcount": 53906,
+    "listener_play_ratio": 2.09,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/softflow\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lil Francky",
+      "Plaxon",
+      "Sunny Léo",
+      "Dry Season",
+      "Cozeen"
+    ],
+    "top_tracks": [
+      {
+        "name": "dream garden",
+        "listeners": 11159,
+        "playcount": 23610
+      },
+      {
+        "name": "nebula",
+        "listeners": 6568,
+        "playcount": 12319
+      },
+      {
+        "name": "after all",
+        "listeners": 4137,
+        "playcount": 6367
+      },
+      {
+        "name": "sapling",
+        "listeners": 3625,
+        "playcount": 6061
+      },
+      {
+        "name": "tides",
+        "listeners": 2530,
+        "playcount": 3846
+      },
+      {
+        "name": "ambivalence",
+        "listeners": 883,
+        "playcount": 1125
+      },
+      {
+        "name": "drift",
+        "listeners": 180,
+        "playcount": 213
+      },
+      {
+        "name": "ambedo",
+        "listeners": 162,
+        "playcount": 361
+      },
+      {
+        "name": "that'll do",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "could've been",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/softflow"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,86 @@
+{
+  "artist_name": "Nia Butler",
+  "artist_id": "nia_butler",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:00:36.019804+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Nia Butler', got 'Nia Boiler'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nia Butler",
+    "mbid": "",
+    "listeners": 12449,
+    "playcount": 36597,
+    "listener_play_ratio": 2.94,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nia+Butler\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Healing Nature FX",
+      "Berlin Rain",
+      "Earthly Sounds",
+      "Alisha Pearce",
+      "Experience Nature"
+    ],
+    "top_tracks": [
+      {
+        "name": "Pouring Jungles",
+        "listeners": 12400,
+        "playcount": 36467
+      },
+      {
+        "name": "Skies And Birdland",
+        "listeners": 62,
+        "playcount": 102
+      },
+      {
+        "name": "Rustling Leaves and Bird Chorus",
+        "listeners": 18,
+        "playcount": 28
+      }
+    ],
+    "url": "https://www.last.fm/music/Nia+Butler"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

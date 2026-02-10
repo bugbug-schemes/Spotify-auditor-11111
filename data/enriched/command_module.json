@@ -1,0 +1,216 @@
+{
+  "artist_name": "Command Module",
+  "artist_id": "command_module",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:13:28.094975+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 120734942,
+    "name": "Command Module",
+    "nb_fan": 0,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/120734942",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3513c8b704899fe3462b45f0a57239ad/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 8
+    },
+    "albums": [
+      {
+        "title": "The Glass Path",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wrapped in Linen",
+        "label": "",
+        "release_date": "2025-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dreamhold",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A New Home",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Being Present",
+        "label": "",
+        "release_date": "2023-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Safe Landing",
+        "label": "",
+        "release_date": "2023-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dormant Fusion",
+        "label": "",
+        "release_date": "2022-09-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Unknown Galaxies",
+        "label": "",
+        "release_date": "2021-03-10",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 4813276,
+    "name": "Command Module",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [
+      "Ethan Lebovics",
+      "J. F. Allen",
+      "Mario Costello"
+    ],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "CDr, EP"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Command Module",
+    "mbid": "",
+    "listeners": 7647,
+    "playcount": 61828,
+    "listener_play_ratio": 8.09,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Command+Module\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Wander Paths",
+      "Eomir",
+      "Velvet Hush",
+      "Ambientelles",
+      "Fhye"
+    ],
+    "top_tracks": [
+      {
+        "name": "Wrapped in Linen",
+        "listeners": 5950,
+        "playcount": 25295
+      },
+      {
+        "name": "Dreamhold",
+        "listeners": 4578,
+        "playcount": 22623
+      },
+      {
+        "name": "The Glass Path",
+        "listeners": 3809,
+        "playcount": 13404
+      },
+      {
+        "name": "Unknown Galaxies",
+        "listeners": 53,
+        "playcount": 300
+      },
+      {
+        "name": "A Safe Landing",
+        "listeners": 14,
+        "playcount": 47
+      },
+      {
+        "name": "blackmore hats",
+        "listeners": 7,
+        "playcount": 20
+      },
+      {
+        "name": "novatron",
+        "listeners": 7,
+        "playcount": 14
+      },
+      {
+        "name": "body cookie",
+        "listeners": 6,
+        "playcount": 14
+      },
+      {
+        "name": "missy jo",
+        "listeners": 6,
+        "playcount": 14
+      },
+      {
+        "name": "my heron",
+        "listeners": 6,
+        "playcount": 13
+      }
+    ],
+    "url": "https://www.last.fm/music/Command+Module"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

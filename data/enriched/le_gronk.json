@@ -1,0 +1,232 @@
+{
+  "artist_name": "le gronk",
+  "artist_id": "le_gronk",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:21:23.791030+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 186186217,
+    "name": "le gronk",
+    "nb_fan": 9,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/186186217",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/037169d2c682c4e687103fdc77847649/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "winter wonderland",
+      "Wave Rider"
+    ],
+    "track_durations": [
+      116,
+      142
+    ],
+    "track_ranks": [
+      174061,
+      136650
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "coasting",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "dawning",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "mirage",
+        "label": "",
+        "release_date": "2025-08-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spume",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heard",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wave Rider",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "falling",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "wading in",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "trail running",
+        "label": "",
+        "release_date": "2024-03-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "subnivian",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "you're standing on a cloud of sand",
+        "label": "",
+        "release_date": "2023-02-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "winter wonderland",
+        "label": "",
+        "release_date": "2022-10-21",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "le gronk",
+    "mbid": "",
+    "listeners": 59699,
+    "playcount": 165015,
+    "listener_play_ratio": 2.76,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/le+gronk\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "blank maxxymus",
+      "Illum Noyz",
+      "sienna whisper",
+      "joorla",
+      "Sihu"
+    ],
+    "top_tracks": [
+      {
+        "name": "trail running",
+        "listeners": 43650,
+        "playcount": 117356
+      },
+      {
+        "name": "winter wonderland",
+        "listeners": 11935,
+        "playcount": 26770
+      },
+      {
+        "name": "Wave Rider",
+        "listeners": 8902,
+        "playcount": 20723
+      },
+      {
+        "name": "you're standing on a cloud of sand",
+        "listeners": 51,
+        "playcount": 79
+      },
+      {
+        "name": "just",
+        "listeners": 8,
+        "playcount": 12
+      },
+      {
+        "name": "falling",
+        "listeners": 8,
+        "playcount": 11
+      },
+      {
+        "name": "wading in",
+        "listeners": 7,
+        "playcount": 14
+      },
+      {
+        "name": "Heard",
+        "listeners": 6,
+        "playcount": 24
+      },
+      {
+        "name": "subnivian",
+        "listeners": 6,
+        "playcount": 11
+      },
+      {
+        "name": "Spume",
+        "listeners": 3,
+        "playcount": 10
+      }
+    ],
+    "url": "https://www.last.fm/music/le+gronk"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

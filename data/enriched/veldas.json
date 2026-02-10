@@ -1,0 +1,121 @@
+{
+  "artist_name": "Veldas",
+  "artist_id": "veldas",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:55:54.615278+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Veldas', got 'The Bellas'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Veldas",
+    "mbid": "",
+    "listeners": 19060,
+    "playcount": 61567,
+    "listener_play_ratio": 3.23,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Veldas\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rhyaene",
+      "Arnar Egilsson",
+      "Et Anima",
+      "novi quiet",
+      "Seijaku"
+    ],
+    "top_tracks": [
+      {
+        "name": "Distance",
+        "listeners": 10246,
+        "playcount": 25548
+      },
+      {
+        "name": "Closed Orbit",
+        "listeners": 7106,
+        "playcount": 13131
+      },
+      {
+        "name": "Impressions",
+        "listeners": 5512,
+        "playcount": 13061
+      },
+      {
+        "name": "Stella",
+        "listeners": 3678,
+        "playcount": 6052
+      },
+      {
+        "name": "Night Shimmer",
+        "listeners": 2194,
+        "playcount": 3751
+      },
+      {
+        "name": "Skyward",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Of Rain And Moss",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Gone",
+        "listeners": 1,
+        "playcount": 5
+      },
+      {
+        "name": "Insights",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "Woe Eater",
+        "listeners": 1,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Veldas"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

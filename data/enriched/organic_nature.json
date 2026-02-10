@@ -1,0 +1,189 @@
+{
+  "artist_name": "Organic Nature",
+  "artist_id": "organic_nature",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:15:46.270868+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 159739722,
+    "name": "Organic Nature",
+    "nb_fan": 1,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/159739722",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/94dedf3552253c9beae12b31eaed6318/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Organic Rain",
+        "label": "",
+        "release_date": "2021-11-04",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "White Wagtail-Motacilla Alba",
+        "label": "",
+        "release_date": "2024-07-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strong Rain",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tropical Thunder",
+        "label": "",
+        "release_date": "2021-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 7978405,
+    "name": "Organic (26)",
+    "profile": "Organic is a new rock project, by nature of the individual members, continuously engaged in musical experimentation (with contamination of classic, electronic, ethnic, sacred elements and sounds) and in the exploration of different artistic fields - soundtracks for dance, cinema, theater and multimedia installations.",
+    "realname": "Organic",
+    "social_urls": [
+      "https://eng.formosus.show/. https://www.facebook.com/OrganicOfficialBand/."
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 0,
+    "total_releases": 2,
+    "formats": [
+      "CD-ROM, Album, EP",
+      "CD-ROM, Album, EP + File, WAV, Album, EP"
+    ],
+    "labels": [
+      "FdS Records (3)",
+      "FdS Records (3), Sorry Mom!"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Organic Nature",
+    "mbid": "",
+    "listeners": 36397,
+    "playcount": 183651,
+    "listener_play_ratio": 5.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Organic+Nature\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Brisa Matinal",
+      "Aire Vega",
+      "The Rain Seeker",
+      "Herbird",
+      "Precipitação"
+    ],
+    "top_tracks": [
+      {
+        "name": "Unaltered Rain",
+        "listeners": 15021,
+        "playcount": 46424
+      },
+      {
+        "name": "Organic Rain",
+        "listeners": 12345,
+        "playcount": 60835
+      },
+      {
+        "name": "Strong Rain",
+        "listeners": 12323,
+        "playcount": 75382
+      },
+      {
+        "name": "Pure Rain",
+        "listeners": 296,
+        "playcount": 971
+      },
+      {
+        "name": "Rain After Dark",
+        "listeners": 7,
+        "playcount": 23
+      },
+      {
+        "name": "Hz - Vital Nature",
+        "listeners": 7,
+        "playcount": 8
+      },
+      {
+        "name": "Rejuvenate Shell",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Tropical Thunder",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Tropical Rain",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Clear Thunderstorm",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Organic+Nature"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

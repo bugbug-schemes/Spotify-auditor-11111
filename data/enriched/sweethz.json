@@ -1,0 +1,121 @@
+{
+  "artist_name": "sweetHz",
+  "artist_id": "sweethz",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:33:15.180112+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'sweetHz', got 'Ava Max'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "sweetHz",
+    "mbid": "",
+    "listeners": 22952,
+    "playcount": 162089,
+    "listener_play_ratio": 7.06,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/sweetHz\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rerose",
+      "Solace Sonique",
+      "Inner Society",
+      "Naumanni",
+      "Starchaserz"
+    ],
+    "top_tracks": [
+      {
+        "name": "Astral Drift (Theta 84.8Hz-89.8Hz)",
+        "listeners": 8105,
+        "playcount": 27157
+      },
+      {
+        "name": "Improving Memory (Gamma 46Hz - 92.8Hz)",
+        "listeners": 7412,
+        "playcount": 25678
+      },
+      {
+        "name": "Deep Thought Resonance (Alpha 88.2Hz-97.3Hz)",
+        "listeners": 6554,
+        "playcount": 22009
+      },
+      {
+        "name": "Penumbra Dreams (Delta 88.1Hz-92.1Hz)",
+        "listeners": 5028,
+        "playcount": 29756
+      },
+      {
+        "name": "Before Consciousness (Delta 107.7Hz- 111.3Hz)",
+        "listeners": 3439,
+        "playcount": 12139
+      },
+      {
+        "name": "Gamma Apex Mind (Gamma 144.8Hz-198.15Hz)",
+        "listeners": 3410,
+        "playcount": 10496
+      },
+      {
+        "name": "Radiating Cognition (Beta 77.8Hz - 96.1Hz)",
+        "listeners": 3366,
+        "playcount": 9176
+      },
+      {
+        "name": "Fade (Delta 99.7Hz-102.9Hz)",
+        "listeners": 2785,
+        "playcount": 13390
+      },
+      {
+        "name": "Letting Go (Alpha 104Hz - 116Hz)",
+        "listeners": 1843,
+        "playcount": 5908
+      },
+      {
+        "name": "Soothe (Alpha 99.7Hz-108.2Hz)",
+        "listeners": 825,
+        "playcount": 2189
+      }
+    ],
+    "url": "https://www.last.fm/music/sweetHz"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

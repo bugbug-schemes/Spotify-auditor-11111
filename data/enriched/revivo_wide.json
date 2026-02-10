@@ -1,0 +1,236 @@
+{
+  "artist_name": "Revivo Wide",
+  "artist_id": "revivo_wide",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:41:32.441152+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 293983351,
+    "name": "Revivo Wide",
+    "nb_fan": 1,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/293983351",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6984b606538c135787c1441c7cc24221/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "A Quiet Distance"
+    ],
+    "track_durations": [
+      172
+    ],
+    "track_ranks": [
+      63431
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Germinate New",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "What We Leave Behind",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Quiet Distance",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Salve Regina",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aetheron",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Perennial",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nebulith",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Gratitude",
+        "label": "",
+        "release_date": "2025-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Art of Slow",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Twins",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Connect",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Conundrum",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Grounded",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Revivo Wide",
+    "mbid": "",
+    "listeners": 56063,
+    "playcount": 274182,
+    "listener_play_ratio": 4.89,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Revivo+Wide\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ljusnan",
+      "Etherielle",
+      "Slow journey",
+      "Sken",
+      "Adrien Magnusen"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nebulith",
+        "listeners": 24426,
+        "playcount": 106253
+      },
+      {
+        "name": "Conundrum",
+        "listeners": 23234,
+        "playcount": 77294
+      },
+      {
+        "name": "Connect",
+        "listeners": 7808,
+        "playcount": 43856
+      },
+      {
+        "name": "Aetheron",
+        "listeners": 5784,
+        "playcount": 17691
+      },
+      {
+        "name": "Twins",
+        "listeners": 4371,
+        "playcount": 11184
+      },
+      {
+        "name": "Salve Regina",
+        "listeners": 3645,
+        "playcount": 14321
+      },
+      {
+        "name": "A Quiet Distance",
+        "listeners": 1601,
+        "playcount": 3493
+      },
+      {
+        "name": "What We Leave Behind",
+        "listeners": 44,
+        "playcount": 69
+      },
+      {
+        "name": "Germinate New",
+        "listeners": 5,
+        "playcount": 5
+      },
+      {
+        "name": "Starman",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Revivo+Wide"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

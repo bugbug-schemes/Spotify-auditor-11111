@@ -1,0 +1,188 @@
+{
+  "artist_name": "The West Green Quartet",
+  "artist_id": "the_west_green_quartet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:38:32.652491+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "b49dea52-c075-4d37-9677-b94b7de2833d",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "purchase for download": "https://music.apple.com/us/artist/1746273807"
+    },
+    "labels": [
+      "Indigo Soul"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 265667022,
+    "name": "The West Green Quartet",
+    "nb_fan": 13,
+    "nb_album": 6,
+    "link": "https://www.deezer.com/artist/265667022",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8318b3c088bdb1b8a6ecd5103e67e03b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Catching Flies"
+    ],
+    "contributor_roles": {
+      "Catching Flies": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Ojai",
+      "Sundial Avenue",
+      "The Last Phone Call (The West Green Quartet Rework)",
+      "Nice Time Type Beat",
+      "Citrus",
+      "IMY",
+      "I Do",
+      "Oh!",
+      "All Night"
+    ],
+    "track_durations": [
+      209,
+      144,
+      124,
+      155,
+      129,
+      148,
+      130,
+      65,
+      111
+    ],
+    "track_ranks": [
+      296246,
+      98835,
+      79880,
+      109278,
+      97579,
+      71303,
+      68245,
+      77875,
+      78538
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 1,
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Beats & Pieces",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Do",
+        "label": "",
+        "release_date": "2025-03-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sundial Avenue",
+        "label": "",
+        "release_date": "2025-02-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "IMY",
+        "label": "",
+        "release_date": "2025-01-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ojai",
+        "label": "",
+        "release_date": "2024-11-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Last Phone Call (The West Green Quartet Rework)",
+        "label": "",
+        "release_date": "2024-06-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 15978006,
+    "name": "The West Green Quartet",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 1,
+    "total_releases": 2,
+    "formats": [
+      "17xFile, FLAC, Comp",
+      "LP, Album, Whi"
+    ],
+    "labels": [
+      "Café del Mar Music",
+      "Indigo Soul"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": false,
+    "raw": null
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "lastfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

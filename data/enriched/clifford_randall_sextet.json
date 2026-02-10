@@ -1,0 +1,172 @@
+{
+  "artist_name": "Clifford Randall Sextet",
+  "artist_id": "clifford_randall_sextet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:10:40.189662+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 170549327,
+    "name": "Clifford Randall Sextet",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/170549327",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/751b4afd285f130489606e52a0b6dea6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Riverbed Reverie",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astoria",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "April Showers",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Love on a Lonely Street",
+        "label": "",
+        "release_date": "2023-05-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "April Showers",
+        "label": "",
+        "release_date": "2023-04-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "April Showers",
+        "label": "",
+        "release_date": "2023-03-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "If you love me",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Astoria",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "It´s all cool",
+        "label": "",
+        "release_date": "2021-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Clifford Randall Sextet",
+    "mbid": "",
+    "listeners": 1903,
+    "playcount": 3869,
+    "listener_play_ratio": 2.03,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Clifford+Randall+Sextet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Charlie Hacket",
+      "Rossdale Juntion",
+      "Alicia Sterner",
+      "Kerrie Walton",
+      "Levi Hollis"
+    ],
+    "top_tracks": [
+      {
+        "name": "Riverbed Reverie",
+        "listeners": 1382,
+        "playcount": 2561
+      },
+      {
+        "name": "Love on a Lonely Street",
+        "listeners": 510,
+        "playcount": 1182
+      },
+      {
+        "name": "Astoria",
+        "listeners": 75,
+        "playcount": 125
+      },
+      {
+        "name": "April Showers",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Clifford+Randall+Sextet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

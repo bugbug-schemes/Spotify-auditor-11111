@@ -1,0 +1,161 @@
+{
+  "artist_name": "Whitby Snell",
+  "artist_id": "whitby_snell",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T19:01:52.000674+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 197373287,
+    "name": "Whitby Snell",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/197373287",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f0ff562dab77808661772e0e846d4d4b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Jolly Old Saint Nicholas",
+      "Angels We Have Heard on High"
+    ],
+    "track_durations": [
+      145,
+      160
+    ],
+    "track_ranks": [
+      7838,
+      17896
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "O Holy Night",
+        "label": "",
+        "release_date": "2025-09-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Once in Royal David's City",
+        "label": "",
+        "release_date": "2025-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angels We Have Heard on High",
+        "label": "",
+        "release_date": "2025-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Jolly Old Saint Nicholas",
+        "label": "",
+        "release_date": "2025-08-24",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Whitby Snell",
+    "mbid": "",
+    "listeners": 16434,
+    "playcount": 41131,
+    "listener_play_ratio": 2.5,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Whitby+Snell\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Smoke & Mirrors Trio",
+      "Greenwich Quartet",
+      "Rob Mansfield",
+      "Brand Nor",
+      "Augustus Step"
+    ],
+    "top_tracks": [
+      {
+        "name": "O Holy Night",
+        "listeners": 12369,
+        "playcount": 25169
+      },
+      {
+        "name": "Jolly Old Saint Nicholas",
+        "listeners": 7223,
+        "playcount": 12665
+      },
+      {
+        "name": "Angels We Have Heard on High",
+        "listeners": 1122,
+        "playcount": 1829
+      },
+      {
+        "name": "I Get Along Without You Very Well (Except Sometimes)",
+        "listeners": 181,
+        "playcount": 477
+      },
+      {
+        "name": "A Flower is a Lonesome Thing",
+        "listeners": 165,
+        "playcount": 440
+      },
+      {
+        "name": "I've Never Been in Love Before",
+        "listeners": 147,
+        "playcount": 548
+      },
+      {
+        "name": "Caminhos Cruzados (Rain)",
+        "listeners": 3,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Whitby+Snell"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,425 @@
+{
+  "artist_name": "Juan Pablo Vega",
+  "artist_id": "juan_pablo_vega",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:38:58.000303+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "03a9eb64-5fde-4a63-b923-bd59449782a8",
+    "type": "Person",
+    "country": "",
+    "area": "Bogotá",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1820263",
+      "free streaming": "https://www.deezer.com/artist/243057671",
+      "official homepage": "http://juanpablovega.com/",
+      "social network": "https://www.facebook.com/JPVegaOficial",
+      "soundcloud": "https://soundcloud.com/juan-pablo-vega",
+      "streaming": "https://tidal.com/artist/6729798",
+      "wikidata": "https://www.wikidata.org/wiki/Q28073919",
+      "youtube": "https://www.youtube.com/watch?v=8Sl0zgkQaSo"
+    },
+    "labels": [
+      "Fishaman Records",
+      "Discos de la Piña",
+      "Warner Chapell",
+      "Art House",
+      "Warner Music México",
+      "UNDSCLSD Publishing",
+      "Warner Music México, S.A. de C.V."
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 243057671,
+    "name": "Juan Pablo Vega",
+    "nb_fan": 12,
+    "nb_album": 18,
+    "link": "https://www.deezer.com/artist/243057671",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/66d07ce8bc19bf771265170d01d78699/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alvaro Ruiz",
+      "Catalina García",
+      "Mariel Mariel",
+      "Pilar Cabrera"
+    ],
+    "contributor_roles": {
+      "Catalina García": [
+        "Featured"
+      ],
+      "Alvaro Ruiz": [
+        "Main"
+      ],
+      "Mariel Mariel": [
+        "Featured"
+      ],
+      "Pilar Cabrera": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Despedida",
+      "Nada Personal",
+      "Hace Una Hora",
+      "Desde Que Tú No Estás",
+      "Las Olas",
+      "Ruido",
+      "Alas Rotas (canción original de la serie \"Delirio\" de Netflix)",
+      "Y Deja",
+      "El Rincón (ChachachaÌ)",
+      "Pruébame",
+      "Vicio",
+      "Lárgate",
+      "Cuando Te Tengo Cerca",
+      "Todo Está Mejor",
+      "Teresa",
+      "Mansong"
+    ],
+    "track_durations": [
+      286,
+      281,
+      293,
+      270,
+      199,
+      211,
+      230,
+      204,
+      231,
+      220,
+      261,
+      243,
+      281,
+      203,
+      214,
+      129
+    ],
+    "track_ranks": [
+      192466,
+      288226,
+      111947,
+      73262,
+      143076,
+      8807,
+      224854,
+      81878,
+      150943,
+      160992,
+      149418,
+      111603,
+      175060,
+      32678,
+      39871,
+      112787
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 3,
+      "single": 15
+    },
+    "albums": [
+      {
+        "title": "Cachacoleto",
+        "label": "",
+        "release_date": "2025-11-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nada Personal (Aniversario 10 Años)",
+        "label": "",
+        "release_date": "2024-04-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nada Personal",
+        "label": "",
+        "release_date": "2013-11-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Teresa",
+        "label": "",
+        "release_date": "2025-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Atravesado",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Alas Rotas (canción original de la serie \"Delirio\" de Netflix)",
+        "label": "",
+        "release_date": "2025-07-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ruido",
+        "label": "",
+        "release_date": "2025-01-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Punto de Comparación",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nunca Fuimos Al Mar",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Marbella",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vargas",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nada Personal (Sesión En Vivo)",
+        "label": "",
+        "release_date": "2024-04-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cuando Te Tengo Cerca (Sesión En Vivo)",
+        "label": "",
+        "release_date": "2024-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ahora Que Vas a Dejarme (Sesión En Vivo)",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hace Una Hora (Sesión En Vivo)",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Todo Está Mejor",
+        "label": "",
+        "release_date": "2023-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Las Olas",
+        "label": "",
+        "release_date": "2017-11-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vicio",
+        "label": "",
+        "release_date": "2016-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1820263,
+    "name": "Juan Pablo Vega",
+    "profile": "Colombian singer, songwriter, producer, engineer, bassist, guitarist, born 26. September 1985",
+    "realname": "",
+    "social_urls": [
+      "https://www.facebook.com/JPVegaOficial",
+      "https://www.instagram.com/juanpablovega/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 25,
+    "digital_only_releases": 29,
+    "total_releases": 54,
+    "formats": [
+      "",
+      "10xFile, MP3, Album",
+      "2xCD, Album, Har",
+      "2xCDr, Comp",
+      "4xFile, AAC, EP, 256",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, Sle",
+      "CD, Album, Sur",
+      "CD, Comp",
+      "CD, Comp, Promo",
+      "CD-ROM, Album",
+      "CDr",
+      "File, FLAC, MP3, Album",
+      "LP, Album + LP, Album, RM, RP",
+      "LP, Album, RM, S/Edition, 180"
+    ],
+    "labels": [
+      "Altafonte",
+      "Babel Discos",
+      "Codiscos, Da House Music",
+      "DMC",
+      "EMI Music Mexico, S.A. De C.V.",
+      "KUT",
+      "M3 Records (3)",
+      "Not On Label",
+      "Not On Label (Antubel (2) Self-released)",
+      "Promotodo México, S.A. De C.V.",
+      "Shock Music Inc.",
+      "Silvia O Música",
+      "Songlines",
+      "Sony Music",
+      "Sony Music, peermusic",
+      "Universal Music Group, EMI",
+      "Urabana Records",
+      "Warner Music Mexico",
+      "Zenú, Sony Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Juan Pablo Vega",
+    "mbid": "03a9eb64-5fde-4a63-b923-bd59449782a8",
+    "listeners": 50885,
+    "playcount": 553242,
+    "listener_play_ratio": 10.87,
+    "bio_exists": true,
+    "bio_summary": "Juan Pablo Vega nació en Bogotá, Colombia, en el seno de una familia orientada al trabajo en la música. Desde pequeño se inclinó por la guitarra y en su adolescencia fue un aficionado al metal. Al terminar su educación básica entró a estudiar Comunicación Social y Periodismo en la Universidad de la Sabana, pero decidió retirarse y dedicar todo su tiempo a la música después de conocer al productor Julio Reyes Copello, con quien empezó un proceso de aprendizaje como compositor, arreglista y produc",
+    "tags": [
+      "Colombia",
+      "soul",
+      "jazz",
+      "indie",
+      "latin"
+    ],
+    "similar_artists": [
+      "Diamante Eléctrico",
+      "Los Petit Fellas",
+      "Manuel Medrano",
+      "Monsieur Periné",
+      "Alcolirykoz"
+    ],
+    "top_tracks": [
+      {
+        "name": "Nada personal",
+        "listeners": 11588,
+        "playcount": 60173
+      },
+      {
+        "name": "Hace una hora",
+        "listeners": 6175,
+        "playcount": 20535
+      },
+      {
+        "name": "Nada personal (feat. Catalina García)",
+        "listeners": 5884,
+        "playcount": 28748
+      },
+      {
+        "name": "Eso Que Me Das",
+        "listeners": 5038,
+        "playcount": 26363
+      },
+      {
+        "name": "El rincón (Chachachá)",
+        "listeners": 4913,
+        "playcount": 18194
+      },
+      {
+        "name": "Pruébame",
+        "listeners": 4871,
+        "playcount": 22868
+      },
+      {
+        "name": "Lárgate",
+        "listeners": 4822,
+        "playcount": 19764
+      },
+      {
+        "name": "Conexión",
+        "listeners": 4771,
+        "playcount": 21436
+      },
+      {
+        "name": "Joderlo Todo",
+        "listeners": 4101,
+        "playcount": 16474
+      },
+      {
+        "name": "Cuando te tengo cerca",
+        "listeners": 4065,
+        "playcount": 21473
+      }
+    ],
+    "url": "https://www.last.fm/music/Juan+Pablo+Vega"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

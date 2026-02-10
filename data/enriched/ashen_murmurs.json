@@ -1,0 +1,122 @@
+{
+  "artist_name": "Ashen Murmurs",
+  "artist_id": "ashen_murmurs",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:14:31.484992+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 242974441,
+    "name": "Ashen Murmurs",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/242974441",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist//250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 4
+    },
+    "albums": [
+      {
+        "title": "Subtle Rumble Brown Noise",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Horizon",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pale Shades of White",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Summer Rain",
+        "label": "",
+        "release_date": "2024-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Ashen Murmurs",
+    "mbid": "",
+    "listeners": 1648,
+    "playcount": 2485,
+    "listener_play_ratio": 1.51,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Ashen+Murmurs\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Luno Velle",
+      "Jan Garlow",
+      "Luune",
+      "Whispering Dunes",
+      "Moon Lit"
+    ],
+    "top_tracks": [
+      {
+        "name": "Still Horizon",
+        "listeners": 1648,
+        "playcount": 2485
+      }
+    ],
+    "url": "https://www.last.fm/music/Ashen+Murmurs"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,564 @@
+{
+  "artist_name": "Matt Carlson",
+  "artist_id": "matt_carlson",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:33:09.079730+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "7474623d-b3db-4ed6-864e-7101c95d19a5",
+    "type": "Person",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/607374",
+      "other databases": "https://rateyourmusic.com/artist/matt-carlson"
+    },
+    "labels": [
+      "Gift Tapes",
+      "NNA Tapes",
+      "Draft Records",
+      "Shelter Press",
+      "Root Strata"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1120441,
+    "name": "Matt Carlson",
+    "nb_fan": 223,
+    "nb_album": 32,
+    "link": "https://www.deezer.com/artist/1120441",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/0f277a55ce03358a013a41d836f32e91/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Hymns",
+      "Instrumental Christian Songs",
+      "The O'Neill Brothers Group",
+      "The Ukulele Boys"
+    ],
+    "contributor_roles": {
+      "Instrumental Christian Songs": [
+        "Main"
+      ],
+      "Hymns": [
+        "Main"
+      ],
+      "The O'Neill Brothers Group": [
+        "Main"
+      ],
+      "The Ukulele Boys": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Tell Your Heart to Beat Again (Instrumental Version)",
+      "Holy Spirit (Instrumental Version)",
+      "You Make Me Brave (Instrumental Version)",
+      "Lead Me to the Cross (Instrumental Version)",
+      "This I Believe (The Creed) [Instrumental Version]",
+      "Blessed Be Your Name (Instrumental Version)",
+      "Trust in You (Instrumental Version)",
+      "Praise You in This Storm (Instrumental Version)",
+      "Amazing Grace (Instrumental Version)",
+      "How Can It Be (Instrumental Version)",
+      "Dear Younger Me (Instrumental Version)",
+      "Christ in Me (Instrumental Version)",
+      "Thy Will (Instrumental Version)",
+      "Who Am I (Instrumental Version)",
+      "My Savior, My God (Instrumental Version)",
+      "Give Thanks (Instrumental Version)",
+      "Time in a Bottle (Instrumental Version)",
+      "My Jesus I Love Thee (Instrumental Version)",
+      "Holly Jolly Christmas (Instrumental Version)",
+      "Home for the Holidays (Instrumental Version)",
+      "Coconut Tree (Instrumental Version)",
+      "Twelve Days of Christmas (Instrumental Version)",
+      "Away in a Manger (Instrumental Version)",
+      "Mary Did You Know (Instrumental Version)"
+    ],
+    "track_durations": [
+      206,
+      257,
+      209,
+      220,
+      178,
+      190,
+      186,
+      223,
+      159,
+      220,
+      179,
+      164,
+      178,
+      203,
+      202,
+      245,
+      182,
+      141,
+      140,
+      157,
+      149,
+      291,
+      87,
+      149
+    ],
+    "track_ranks": [
+      115772,
+      138805,
+      109512,
+      97623,
+      106969,
+      123774,
+      128441,
+      122086,
+      19599,
+      91536,
+      107727,
+      124485,
+      97090,
+      104623,
+      113925,
+      163726,
+      132090,
+      26936,
+      7847,
+      10028,
+      74899,
+      23793,
+      31705,
+      9021
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 31,
+      "single": 1
+    },
+    "albums": [
+      {
+        "title": "Peaceful Baby Songs on Ukulele",
+        "label": "",
+        "release_date": "2026-01-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Instrumental Ukulele Country Covers",
+        "label": "",
+        "release_date": "2025-11-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Instrumental Ukulele Covers: Hits of The Beatles",
+        "label": "",
+        "release_date": "2025-02-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ukulele Music for Holiday Parties",
+        "label": "",
+        "release_date": "2023-11-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Chill Covers on Ukulele - It's Alright",
+        "label": "",
+        "release_date": "2023-10-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Classic Love Ballads on Ukulele",
+        "label": "",
+        "release_date": "2023-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pop Country Hits on Ukulele: Same Boat",
+        "label": "",
+        "release_date": "2022-05-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ukulele Covers of Pop Hits",
+        "label": "",
+        "release_date": "2021-04-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Restful Sleep Music on Ukulele",
+        "label": "",
+        "release_date": "2020-02-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "15 Popular Christmas Carols on Ukulele",
+        "label": "",
+        "release_date": "2019-11-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lullaby Instrumentals on Ukulele",
+        "label": "",
+        "release_date": "2019-08-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Pop Country on Ukulele (Instrumental Versions)",
+        "label": "",
+        "release_date": "2019-05-21",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Lullabies for Little Ones on Ukulele",
+        "label": "",
+        "release_date": "2019-05-07",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Relaxing Ukulele Originals",
+        "label": "",
+        "release_date": "2019-03-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Country Christmas on Ukulele",
+        "label": "",
+        "release_date": "2018-12-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Christmas Background Music on Ukulele",
+        "label": "",
+        "release_date": "2018-11-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Family Christmas Favorites on Ukulele",
+        "label": "",
+        "release_date": "2018-11-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nursery Rhyme Classics on Ukulele",
+        "label": "",
+        "release_date": "2018-10-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Instrumental Ukulele Covers: 70s Hits",
+        "label": "",
+        "release_date": "2018-10-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Soft Ukulele Lullabies for Quiet Time",
+        "label": "",
+        "release_date": "2018-09-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heartfelt Hymns, Vol. 3",
+        "label": "",
+        "release_date": "2018-08-09",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heartfelt Hymns, Vol. 2",
+        "label": "",
+        "release_date": "2018-07-20",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Top Praise and Worship on Ukulele, Vol. 3",
+        "label": "",
+        "release_date": "2018-07-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Top Praise and Worship on Ukulele, Vol. 2",
+        "label": "",
+        "release_date": "2018-06-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "30 Soothing Lullabies on Ukulele",
+        "label": "",
+        "release_date": "2018-05-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Classic Hits on Ukulele",
+        "label": "",
+        "release_date": "2018-04-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Inspirational Acoustic Songs to Raise You Up",
+        "label": "",
+        "release_date": "2018-03-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Top Praise and Worship on Ukulele",
+        "label": "",
+        "release_date": "2018-02-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Christmas Christian Favorites on Ukulele",
+        "label": "",
+        "release_date": "2017-11-28",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Heartfelt Hymns",
+        "label": "",
+        "release_date": "2017-10-26",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": [
+      "Maranatha! Instrumental",
+      "Instrumental Worship Project from I’m In Records",
+      "Instrumental Hymns and Worship",
+      "Cicero Euclides",
+      "David Bauer",
+      "Ricardo Garcia Mota",
+      "Sons de Oração e Pregação",
+      "Fábio Costa",
+      "Worship Lounge",
+      "Holy Communion Instrumental Duo"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 607374,
+    "name": "Matt Carlson",
+    "profile": "",
+    "realname": "",
+    "social_urls": [
+      "https://soundcloud.com/matt-carlson"
+    ],
+    "members": [],
+    "groups": [
+      "Bonus (2)",
+      "Children of Mom",
+      "Parenthetical Girls",
+      "Golden Retriever (2)",
+      "Oregon Painting Society",
+      "PDX Ecstatic Singers",
+      "Dreamboat (4)"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 15,
+    "digital_only_releases": 47,
+    "total_releases": 62,
+    "formats": [
+      "",
+      "2xCass",
+      "3xFile, FLAC",
+      "7\", Ltd, Pic",
+      "7\", Single",
+      "CD, Album",
+      "CD, Album + DVD-V",
+      "CDr",
+      "CDr, Album, Ltd",
+      "CDr, Ltd",
+      "CDr, Promo",
+      "Cass",
+      "Cass, Album",
+      "Cass, Album, Ltd, C40",
+      "Cass, Comp, Ltd, Num",
+      "Cass, Ltd",
+      "Cass, Ltd, C10",
+      "Cass, Ltd, C26",
+      "Cass, Ltd, C31",
+      "Cass, Ltd, C35",
+      "Cass, Ltd, C36",
+      "Cass, MiniAlbum, Ltd",
+      "File, FLAC, EP",
+      "File, MP3, Album, 320",
+      "File, MP3, Mixed, 320",
+      "File, MP3, Mixed, Mixtape, 320",
+      "LP",
+      "LP, Album",
+      "LP, Album, Ltd",
+      "LP, Ltd"
+    ],
+    "labels": [
+      "Aagoo Records",
+      "Acoustic Rock Records",
+      "Agents Of Chaos",
+      "Alarm (3)",
+      "Bucket Factory",
+      "Creative Music Guild",
+      "Digitalis Limited",
+      "Discriminate Music",
+      "Draft",
+      "Father CD-R",
+      "Geographic North",
+      "Gift Tapes",
+      "Integrity Music",
+      "MIE Music",
+      "Mado",
+      "NNA Tapes",
+      "Not On Label",
+      "Not On Label (Sleep D Self-released)",
+      "Not on Label (Golden Retriever (2) Self-released)",
+      "Resident Advisor",
+      "Robots With Rockets Music",
+      "Root Strata",
+      "Shelter Press",
+      "Sonoris",
+      "UFO Mongo",
+      "Vauva",
+      "mnml ssgs"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Matt Carlson",
+    "mbid": "7474623d-b3db-4ed6-864e-7101c95d19a5",
+    "listeners": 13298,
+    "playcount": 114441,
+    "listener_play_ratio": 8.61,
+    "bio_exists": true,
+    "bio_summary": "[1]   Matt Carlson is a composer and musician who is an active participant in the underground and experimental music scene of Portland, Oregon. His work is deliberately difficult to summarize; his numerous collaborations include modal electro-acoustic improvisation with Golden Retriever, orchestral arrangements and synthesizers with pop group Parenthetical Girls, sound installations, video soundtracks and performance art with Oregon Painting Society <a href=\"https://www.last.fm/music/Matt+Carlso",
+    "tags": [
+      "ambient",
+      "experimental",
+      "drone",
+      "electronic"
+    ],
+    "similar_artists": [
+      "Rene Hell",
+      "Relaxing Guitar Group",
+      "Bee Mask",
+      "Panabrite",
+      "Ivy Ravenwood"
+    ],
+    "top_tracks": [
+      {
+        "name": "Home for the Holidays (Instrumental Version)",
+        "listeners": 2567,
+        "playcount": 5840
+      },
+      {
+        "name": "Holly Jolly Christmas (Instrumental Version)",
+        "listeners": 2485,
+        "playcount": 5556
+      },
+      {
+        "name": "Do You Want to Build a Snowman (Instrumental Version)",
+        "listeners": 1967,
+        "playcount": 5638
+      },
+      {
+        "name": "Baby Mine (Instrumental Version)",
+        "listeners": 984,
+        "playcount": 2487
+      },
+      {
+        "name": "A Dream Is a Wish Your Heart Makes (Instrumental Version)",
+        "listeners": 569,
+        "playcount": 1914
+      },
+      {
+        "name": "This Land Is Your Land (Instrumental Version)",
+        "listeners": 554,
+        "playcount": 1678
+      },
+      {
+        "name": "Clementine (Instrumental Version)",
+        "listeners": 528,
+        "playcount": 1423
+      },
+      {
+        "name": "I'm Yours (Instrumental Version)",
+        "listeners": 516,
+        "playcount": 1170
+      },
+      {
+        "name": "Here Comes the Sun (Instrumental Version)",
+        "listeners": 467,
+        "playcount": 1219
+      },
+      {
+        "name": "Brown Eyed Girl (Instrumental Version)",
+        "listeners": 464,
+        "playcount": 1163
+      }
+    ],
+    "url": "https://www.last.fm/music/Matt+Carlson"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

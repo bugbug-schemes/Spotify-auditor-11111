@@ -1,0 +1,215 @@
+{
+  "artist_name": "novi quiet",
+  "artist_id": "novi_quiet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:27:07.466838+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 303400511,
+    "name": "novi quiet",
+    "nb_fan": 0,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/303400511",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5490600ddea9579e54742e58302a0cb0/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Resonant Glow",
+      "Lumen Nest",
+      "Spiral Bloom",
+      "Hikari Drift",
+      "Equatorial Pulse"
+    ],
+    "track_durations": [
+      140,
+      136,
+      137,
+      141,
+      145
+    ],
+    "track_ranks": [
+      59285,
+      54054,
+      25447,
+      55686,
+      37003
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "In Lunar Focus",
+        "label": "",
+        "release_date": "2026-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quiet Axis",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Equatorial Pulse",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Spiral Bloom",
+        "label": "",
+        "release_date": "2025-08-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lumen Nest",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Hikari Drift",
+        "label": "",
+        "release_date": "2025-06-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Solvéra",
+        "label": "",
+        "release_date": "2025-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Resonant Glow",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Florune",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "novi quiet",
+    "mbid": "",
+    "listeners": 19676,
+    "playcount": 68105,
+    "listener_play_ratio": 3.46,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/novi+quiet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lucky Lorry",
+      "Otto Virell",
+      "Lost storys",
+      "AtmoLife",
+      "Veldas"
+    ],
+    "top_tracks": [
+      {
+        "name": "Resonant Glow",
+        "listeners": 8389,
+        "playcount": 16689
+      },
+      {
+        "name": "Equatorial Pulse",
+        "listeners": 7857,
+        "playcount": 14429
+      },
+      {
+        "name": "Lumen Nest",
+        "listeners": 7320,
+        "playcount": 15045
+      },
+      {
+        "name": "Hikari Drift",
+        "listeners": 5564,
+        "playcount": 12111
+      },
+      {
+        "name": "Spiral Bloom",
+        "listeners": 4066,
+        "playcount": 7316
+      },
+      {
+        "name": "Solvéra",
+        "listeners": 1274,
+        "playcount": 2407
+      },
+      {
+        "name": "Quiet Axis",
+        "listeners": 50,
+        "playcount": 63
+      },
+      {
+        "name": "In Lunar Focus",
+        "listeners": 36,
+        "playcount": 43
+      },
+      {
+        "name": "Florune",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/novi+quiet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

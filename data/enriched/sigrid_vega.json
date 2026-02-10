@@ -1,0 +1,226 @@
+{
+  "artist_name": "Sigrid Vega",
+  "artist_id": "sigrid_vega",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:03:02.892690+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 291012981,
+    "name": "Sigrid Vega",
+    "nb_fan": 1,
+    "nb_album": 13,
+    "link": "https://www.deezer.com/artist/291012981",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/66c3fe8a6cb090c3c16fc2a737d705b3/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "The Distance Between Us"
+    ],
+    "track_durations": [
+      123
+    ],
+    "track_ranks": [
+      64581
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 13
+    },
+    "albums": [
+      {
+        "title": "Gentle Petition",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Elder Poem",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feliz Navidad",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Distance Between Us",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Season Is Here",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Tenth Chance",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "The Shepherd's Care",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Post Last Effort",
+        "label": "",
+        "release_date": "2025-07-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Across Mere",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Resolving At Last",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Forward Prayers",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow The Light",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Angel's Tales",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Sigrid Vega",
+    "mbid": "",
+    "listeners": 8586,
+    "playcount": 28206,
+    "listener_play_ratio": 3.29,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Sigrid+Vega\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Jiel",
+      "Maynoir",
+      "Henry Flower",
+      "Joseph Fina",
+      "Sorellien"
+    ],
+    "top_tracks": [
+      {
+        "name": "The Distance Between Us",
+        "listeners": 7425,
+        "playcount": 20443
+      },
+      {
+        "name": "A Tenth Chance",
+        "listeners": 1935,
+        "playcount": 6641
+      },
+      {
+        "name": "Angel's Tales",
+        "listeners": 110,
+        "playcount": 297
+      },
+      {
+        "name": "Forward Prayers",
+        "listeners": 95,
+        "playcount": 399
+      },
+      {
+        "name": "Follow The Light",
+        "listeners": 81,
+        "playcount": 268
+      },
+      {
+        "name": "The Shepherd's Care",
+        "listeners": 53,
+        "playcount": 156
+      },
+      {
+        "name": "The Season Is Here",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Feliz Navidad",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Sigrid+Vega"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

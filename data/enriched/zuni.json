@@ -1,0 +1,179 @@
+{
+  "artist_name": "Zuni",
+  "artist_id": "zuni",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:09:23.898239+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "3575dd9c-21b8-4727-a29b-93f0c85d1d63",
+    "type": "Person",
+    "country": "",
+    "area": "Roma",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [
+      "Edizioni Leonardi S.R.L."
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Zuni', got 'Sunidhi Chauhan'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 190222,
+    "name": "Zuni",
+    "profile": "DJ/producer owner of Injun Ears & Tribal Waves based in Edinburgh, Scotland",
+    "realname": "James Barbour",
+    "social_urls": [
+      "https://www.facebook.com/ZuniTribalWaves",
+      "https://www.facebook.com/TribalWavesRecordings",
+      "http://tribalwaves.bandcamp.com/music",
+      "https://soundcloud.com/zuni-tribal-waves",
+      "https://www.residentadvisor.net/dj/zuni"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 2,
+    "digital_only_releases": 12,
+    "total_releases": 14,
+    "formats": [
+      "",
+      "12\"",
+      "2xFile, MP3, WAV, EP",
+      "4xFile, MP3, WAV",
+      "4xFile, MP3, WAV, EP",
+      "4xFile, MP3, WAV, EP, Smplr",
+      "5xFile, MP3, EP, 320",
+      "7xFile, MP3, EP, 320",
+      "File, AIFF, MP3, WAV, EP",
+      "File, MP3, 320",
+      "File, MP3, Mixed, 320"
+    ],
+    "labels": [
+      "BRAWLcast",
+      "Injun Ears",
+      "Mikrowave",
+      "Momb Records",
+      "Pulsar Music",
+      "Tribal Waves Recordings",
+      "Union Records (21)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Zuni",
+    "mbid": "3575dd9c-21b8-4727-a29b-93f0c85d1d63",
+    "listeners": 115557,
+    "playcount": 1078940,
+    "listener_play_ratio": 9.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Zuni\">Read more on Last.fm</a>",
+    "tags": [
+      "native american",
+      "idm"
+    ],
+    "similar_artists": [
+      "humidum",
+      "Ray N.Y",
+      "R. Guru",
+      "Nature Vibrations",
+      "RAIN HARD"
+    ],
+    "top_tracks": [
+      {
+        "name": "Rain Dancing",
+        "listeners": 76778,
+        "playcount": 490125
+      },
+      {
+        "name": "Longing for rain",
+        "listeners": 47459,
+        "playcount": 349020
+      },
+      {
+        "name": "Sleep in the rain",
+        "listeners": 31058,
+        "playcount": 164956
+      },
+      {
+        "name": "Taking Cover From Rain",
+        "listeners": 15791,
+        "playcount": 44399
+      },
+      {
+        "name": "Off The Wall - Radio Edit",
+        "listeners": 1063,
+        "playcount": 2785
+      },
+      {
+        "name": "Floating In Rain",
+        "listeners": 979,
+        "playcount": 1756
+      },
+      {
+        "name": "Rain So Soft",
+        "listeners": 936,
+        "playcount": 1545
+      },
+      {
+        "name": "Raining On Me",
+        "listeners": 884,
+        "playcount": 1880
+      },
+      {
+        "name": "Dripping Nights",
+        "listeners": 839,
+        "playcount": 1624
+      },
+      {
+        "name": "Keep Pouring",
+        "listeners": 783,
+        "playcount": 2381
+      }
+    ],
+    "url": "https://www.last.fm/music/Zuni"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

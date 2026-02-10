@@ -1,0 +1,116 @@
+{
+  "artist_name": "Som Nus",
+  "artist_id": "som_nus",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:11:31.342204+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Som Nus', got 'Somnus'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Som Nus",
+    "mbid": "",
+    "listeners": 3016,
+    "playcount": 69584,
+    "listener_play_ratio": 23.07,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Som+Nus\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Francis Luna",
+      "Milo Grímur",
+      "John Rabbit",
+      "Sofia Ferra",
+      "Leo Star"
+    ],
+    "top_tracks": [
+      {
+        "name": "Off to Sleep",
+        "listeners": 2481,
+        "playcount": 32383
+      },
+      {
+        "name": "Drift Away With Me",
+        "listeners": 1694,
+        "playcount": 20868
+      },
+      {
+        "name": "Back to Sleep",
+        "listeners": 1579,
+        "playcount": 16307
+      },
+      {
+        "name": "Wish Upon a Shooting Star",
+        "listeners": 8,
+        "playcount": 15
+      },
+      {
+        "name": "Moon Waltz",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "In My Dream Place",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Let the Dreams Come to You",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Stars And Dreams",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Your Dreams Are Waiting for You",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Som+Nus"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

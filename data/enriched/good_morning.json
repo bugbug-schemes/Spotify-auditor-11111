@@ -1,0 +1,504 @@
+{
+  "artist_name": "Good Morning",
+  "artist_id": "good_morning",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:54:58.819255+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "8d8de78f-8097-4e10-9d37-bf9b4aef614f",
+    "type": "Group",
+    "country": "",
+    "area": "Melbourne",
+    "begin_date": "2014",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "australian",
+      "indie rock",
+      "english",
+      "australia",
+      "australian rock",
+      "australian indie rock",
+      "australian indie"
+    ],
+    "aliases": [],
+    "isnis": [
+      "0000000469951314"
+    ],
+    "ipis": [],
+    "urls": {
+      "bandcamp": "https://goodmorningisaband.bandcamp.com/",
+      "discogs": "https://www.discogs.com/artist/4866719",
+      "free streaming": "https://www.deezer.com/artist/1072923",
+      "last.fm": "https://www.last.fm/music/Good+Morning",
+      "purchase for download": "https://www.amazon.com/gp/product/B0012BYNS6",
+      "social network": "https://www.instagram.com/goodfknmorning/",
+      "songkick": "https://www.songkick.com/artists/989312",
+      "soundcloud": "https://soundcloud.com/goodmorningisaband",
+      "streaming": "https://www.amazon.com/gp/product/B0012BYNS6",
+      "wikidata": "https://www.wikidata.org/wiki/Q109284950"
+    },
+    "labels": [
+      "Solitaire Recordings",
+      "Our Golden Friend",
+      "Sub Pop Records",
+      "[no label]",
+      "Good Morning Music Company Worldwide",
+      "Solitaire",
+      "Bedroom Suck Records",
+      "Polyvinyl",
+      "Caroline Australia"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1072923,
+    "name": "GOOD MORNING",
+    "nb_fan": 3529,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/1072923",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/f535aaf6de694c5fb8c9a1490954e522/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Warned You",
+      "$10",
+      "Don't Come Home Today",
+      "Oppsie",
+      "Country",
+      "You",
+      "Boy, I'm Just A Loser For Your Love",
+      "Cab Deg",
+      "Out To Pasture",
+      "On The Street",
+      "Escalator",
+      "Excalibur",
+      "Too Young To Quit",
+      "Once You Know",
+      "Time to Try Again",
+      "Soft Rock Band",
+      "Ahhhh (This Isn’t Ideal)",
+      "Dog Years",
+      "Toy",
+      "Thrills Of The Family Man",
+      "Radiovoice",
+      "You Said That to Me Tuesday",
+      "People Say",
+      "Dogs On The Beach",
+      "Queen of Comedy"
+    ],
+    "track_durations": [
+      136,
+      89,
+      191,
+      142,
+      240,
+      190,
+      195,
+      255,
+      155,
+      201,
+      214,
+      205,
+      216,
+      231,
+      109,
+      492,
+      109,
+      155,
+      144,
+      248,
+      174,
+      89,
+      107,
+      131,
+      208
+    ],
+    "track_ranks": [
+      360568,
+      284435,
+      197441,
+      157957,
+      244750,
+      182160,
+      200010,
+      163890,
+      234927,
+      198573,
+      64276,
+      109295,
+      40000,
+      211059,
+      161945,
+      208843,
+      115597,
+      70908,
+      68919,
+      93047,
+      184685,
+      64166,
+      41760,
+      47643,
+      18412
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 8,
+      "ep": 3,
+      "single": 16
+    },
+    "albums": [
+      {
+        "title": "The Accident",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Good Morning Seven",
+        "label": "",
+        "release_date": "2024-03-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Excalibur / Toy",
+        "label": "",
+        "release_date": "2024-02-29",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Barnyard",
+        "label": "",
+        "release_date": "2021-10-22",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Basketball Breakups",
+        "label": "",
+        "release_date": "2019-06-14",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "The Option",
+        "label": "",
+        "release_date": "2019-04-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Prize//Reward",
+        "label": "",
+        "release_date": "2018-05-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Glory",
+        "label": "",
+        "release_date": "2020-06-30",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Just In Time / Ahhhh (This Isn’t Ideal)",
+        "label": "",
+        "release_date": "2024-01-23",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "One Night / Real I’m Told",
+        "label": "",
+        "release_date": "2023-11-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Shawcross",
+        "label": "",
+        "release_date": "2020-06-30",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Soft Rock Band",
+        "label": "",
+        "release_date": "2024-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take a Picture",
+        "label": "",
+        "release_date": "2024-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dog Years / Queen of Comedy",
+        "label": "",
+        "release_date": "2023-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Out To Pasture / Misery",
+        "label": "",
+        "release_date": "2022-03-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mollyduker / Keep It",
+        "label": "",
+        "release_date": "2021-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rest in Peace My Feelings",
+        "label": "",
+        "release_date": "2020-11-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dead Eyes",
+        "label": "",
+        "release_date": "2020-08-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Take It Easy For Me, Stranger // Boy, I'm Just A Loser For Your Love",
+        "label": "",
+        "release_date": "2020-07-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "After You",
+        "label": "",
+        "release_date": "2018-05-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Just a Man",
+        "label": "",
+        "release_date": "2018-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "For a Little While",
+        "label": "",
+        "release_date": "2018-04-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Escalator",
+        "label": "",
+        "release_date": "2018-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mirror Freak",
+        "label": "",
+        "release_date": "2018-03-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Step Aside / Oppsie",
+        "label": "",
+        "release_date": "2020-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "On The Street / You",
+        "label": "",
+        "release_date": "2020-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Vessel / Radiovoice",
+        "label": "",
+        "release_date": "2020-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Summer Salt",
+      "Vansire",
+      "Beach Fossils",
+      "No Vacation",
+      "Crumb",
+      "Loving",
+      "Yellow House",
+      "Sales",
+      "Far Caspian",
+      "Triathalon"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1559253,
+    "name": "Good Morning",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 15,
+    "digital_only_releases": 5,
+    "total_releases": 20,
+    "formats": [
+      "",
+      "20xFile, MP3, Comp, 320",
+      "7\"",
+      "7\", Comp, Ltd + 7\", Comp, Ltd, RP",
+      "7\", EP",
+      "7\", EP, RE",
+      "CD",
+      "CD, Comp",
+      "CD, Comp, Ltd",
+      "CDr, Album",
+      "Cass"
+    ],
+    "labels": [
+      "Dilapidated Records",
+      "Dilapidated Records, Big Action Records",
+      "Dilapidated Records, Sterling Records (3)",
+      "Mother Of All Music",
+      "Mothrasegg Records",
+      "So Fuckin' Noise Records",
+      "Splatter Platter Records",
+      "Turkey Vulture Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Good Morning",
+    "mbid": "e5d55d8f-1105-4dbd-a782-9568a0236abc",
+    "listeners": 767186,
+    "playcount": 13757774,
+    "listener_play_ratio": 17.93,
+    "bio_exists": true,
+    "bio_summary": "Good Morning are a recording project from Melbourne, Australia, led by Stefan Blair and Liam Parsons. The two met in high school and have been writing songs ever since. In 2013, they went halvies in a Foxtex 4 track tape machine; Good Morning is the result of that investment. They have released two EPs, 2014's Shawcross and 2016's Glory. In 2018 their debut LP Prize // Reward was released via Bedroom Suck Records; the band followed that up with 2019's The Option <a href=\"https://www.last.fm/musi",
+    "tags": [
+      "Lo-Fi",
+      "indie",
+      "rock",
+      "emo",
+      "indie rock"
+    ],
+    "similar_artists": [
+      "LOVING",
+      "HOMESHAKE",
+      "Brad stank",
+      "Banes World",
+      "Cosmo Pyke"
+    ],
+    "top_tracks": [
+      {
+        "name": "Warned You",
+        "listeners": 472801,
+        "playcount": 3840322
+      },
+      {
+        "name": "$10",
+        "listeners": 329741,
+        "playcount": 1740220
+      },
+      {
+        "name": "Don't Come Home Today",
+        "listeners": 170079,
+        "playcount": 1033252
+      },
+      {
+        "name": "Out To Pasture",
+        "listeners": 129790,
+        "playcount": 475474
+      },
+      {
+        "name": "You",
+        "listeners": 117015,
+        "playcount": 778293
+      },
+      {
+        "name": "Oppsie",
+        "listeners": 101543,
+        "playcount": 453700
+      },
+      {
+        "name": "Cosmic Sass",
+        "listeners": 94396,
+        "playcount": 316463
+      },
+      {
+        "name": "Boy, I'm Just a Loser for Your Love",
+        "listeners": 92739,
+        "playcount": 609542
+      },
+      {
+        "name": "Radiovoice",
+        "listeners": 71563,
+        "playcount": 303155
+      },
+      {
+        "name": "Wednesday",
+        "listeners": 70419,
+        "playcount": 294587
+      }
+    ],
+    "url": "https://www.last.fm/music/Good+Morning"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

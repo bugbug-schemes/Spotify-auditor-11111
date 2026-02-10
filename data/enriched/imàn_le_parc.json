@@ -1,0 +1,203 @@
+{
+  "artist_name": "Imàn Le Parc",
+  "artist_id": "imàn_le_parc",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:14:29.772818+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 140101342,
+    "name": "Imàn Le Parc",
+    "nb_fan": 46,
+    "nb_album": 8,
+    "link": "https://www.deezer.com/artist/140101342",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/3a74fb0db91f7283135c10c1af9350bd/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Surfistas Del Sistema"
+    ],
+    "contributor_roles": {
+      "Surfistas Del Sistema": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Amantes",
+      "Llévame a bucear",
+      "Comment te dire"
+    ],
+    "track_durations": [
+      269,
+      246,
+      193
+    ],
+    "track_ranks": [
+      149052,
+      154188,
+      93500
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 7
+    },
+    "albums": [
+      {
+        "title": "COLORS",
+        "label": "",
+        "release_date": "2025-03-01",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Amantes",
+        "label": "",
+        "release_date": "2026-01-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Llévame a bucear",
+        "label": "",
+        "release_date": "2025-12-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Comment te dire",
+        "label": "",
+        "release_date": "2025-12-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me gusta",
+        "label": "",
+        "release_date": "2025-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nubes (Live at Krispy House) (Live)",
+        "label": "",
+        "release_date": "2025-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You",
+        "label": "",
+        "release_date": "2024-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nubes",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Imàn Le Parc",
+    "mbid": "",
+    "listeners": 77,
+    "playcount": 293,
+    "listener_play_ratio": 3.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Im%C3%A0n+Le+Parc\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [],
+    "top_tracks": [
+      {
+        "name": "On my skin",
+        "listeners": 38,
+        "playcount": 81
+      },
+      {
+        "name": "You",
+        "listeners": 20,
+        "playcount": 32
+      },
+      {
+        "name": "Nubes",
+        "listeners": 17,
+        "playcount": 71
+      },
+      {
+        "name": "You Get Me",
+        "listeners": 14,
+        "playcount": 33
+      },
+      {
+        "name": "Moonlight",
+        "listeners": 14,
+        "playcount": 23
+      },
+      {
+        "name": "Colors",
+        "listeners": 12,
+        "playcount": 28
+      },
+      {
+        "name": "Nubes (Live at Krispy House)",
+        "listeners": 3,
+        "playcount": 15
+      },
+      {
+        "name": "Ojos Tristes",
+        "listeners": 3,
+        "playcount": 6
+      },
+      {
+        "name": "Jamas Pensé",
+        "listeners": 1,
+        "playcount": 4
+      }
+    ],
+    "url": "https://www.last.fm/music/Im%C3%A0n+Le+Parc"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

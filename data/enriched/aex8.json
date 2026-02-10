@@ -1,0 +1,166 @@
+{
+  "artist_name": "AEX8",
+  "artist_id": "aex8",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T19:39:34.496759+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 129587692,
+    "name": "AEX8",
+    "nb_fan": 4,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/129587692",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c15e710e84f3f7e9deba4b2ff95eb801/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Silent Thoughts - Theta Sinus 136Hz - 141Hz"
+    ],
+    "track_durations": [
+      193
+    ],
+    "track_ranks": [
+      22251
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Theta Slumber 90Hz - 95Hz",
+        "label": "",
+        "release_date": "2024-01-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Silent Thoughts",
+        "label": "",
+        "release_date": "2022-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sound Bath",
+        "label": "",
+        "release_date": "2021-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "AEX8",
+    "mbid": "",
+    "listeners": 13578,
+    "playcount": 61882,
+    "listener_play_ratio": 4.56,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/AEX8\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Sound Around",
+      "High Lotion",
+      "Twinbeet",
+      "Jovian Tides",
+      "Lucy Dreamer"
+    ],
+    "top_tracks": [
+      {
+        "name": "Healing Alpha Sinus 106Hz - 113Hz",
+        "listeners": 9251,
+        "playcount": 32691
+      },
+      {
+        "name": "Alpha Sinus 103Hz - 111Hz",
+        "listeners": 6350,
+        "playcount": 21017
+      },
+      {
+        "name": "Theta Slumber 90Hz - 95Hz",
+        "listeners": 2035,
+        "playcount": 7690
+      },
+      {
+        "name": "FoCccus 96Hz - 103Hz",
+        "listeners": 96,
+        "playcount": 320
+      },
+      {
+        "name": "Silent Thoughts - Theta Sinus 136Hz - 141Hz",
+        "listeners": 51,
+        "playcount": 93
+      },
+      {
+        "name": "Stars - Theta Sinus 120Hz - 125Hz",
+        "listeners": 18,
+        "playcount": 43
+      },
+      {
+        "name": "Harmony Depths Calm",
+        "listeners": 7,
+        "playcount": 9
+      },
+      {
+        "name": "Stream Binaural Serenity",
+        "listeners": 6,
+        "playcount": 8
+      },
+      {
+        "name": "Depths Harmony Flow",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Binaural Stream Calm",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/AEX8"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,230 @@
+{
+  "artist_name": "Corinne Blanchard",
+  "artist_id": "corinne_blanchard",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:14:29.002532+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 151531082,
+    "name": "Corinne Blanchard",
+    "nb_fan": 2,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/151531082",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/8c7de43b134ac96ed7b62d24c262a129/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Sibylline"
+    ],
+    "track_durations": [
+      131
+    ],
+    "track_ranks": [
+      102862
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 1,
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Merveille",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Entre les plis",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ondine",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Naissantique",
+        "label": "",
+        "release_date": "2024-05-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Echos du Temps",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Viola",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Commencement",
+        "label": "",
+        "release_date": "2023-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blocage",
+        "label": "",
+        "release_date": "2022-11-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Brume sombre",
+        "label": "",
+        "release_date": "2022-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mondes parallèles",
+        "label": "",
+        "release_date": "2022-04-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sibylline",
+        "label": "",
+        "release_date": "2021-12-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Énigme",
+        "label": "",
+        "release_date": "2021-11-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Corinne Blanchard",
+    "mbid": "",
+    "listeners": 23335,
+    "playcount": 120087,
+    "listener_play_ratio": 5.15,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Corinne+Blanchard\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Valerie Renaud",
+      "Closed Lids",
+      "Noel Oliver",
+      "Sean Larson",
+      "Henry Gadacz"
+    ],
+    "top_tracks": [
+      {
+        "name": "Sibylline",
+        "listeners": 23317,
+        "playcount": 120002
+      },
+      {
+        "name": "Viola",
+        "listeners": 19,
+        "playcount": 26
+      },
+      {
+        "name": "Énigme",
+        "listeners": 12,
+        "playcount": 36
+      },
+      {
+        "name": "Merveille",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Wings Flutter",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Propinquity",
+        "listeners": 2,
+        "playcount": 3
+      },
+      {
+        "name": "Purple Iris",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Commencement",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Aurore",
+        "listeners": 1,
+        "playcount": 2
+      },
+      {
+        "name": "Brume sombre",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Corinne+Blanchard"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

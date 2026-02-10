@@ -1,0 +1,153 @@
+{
+  "artist_name": "Koula",
+  "artist_id": "koula",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:52:07.729018+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "27bd1ec4-b5b8-4724-8ac8-1e924c13cc1d",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/034RhN3Li8n0IrciAYGjSV",
+      "streaming": "https://music.apple.com/gb/artist/1248045662"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Koula', got 'Mula'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 631488,
+    "name": "Koula",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Koula",
+    "mbid": "",
+    "listeners": 1974,
+    "playcount": 5186,
+    "listener_play_ratio": 2.63,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Koula\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "The Swaying Journey",
+      "Noir Vista",
+      "Gofica",
+      "Mac May",
+      "Static 99"
+    ],
+    "top_tracks": [
+      {
+        "name": "phoenix",
+        "listeners": 1569,
+        "playcount": 3445
+      },
+      {
+        "name": "Love Sweet Love",
+        "listeners": 395,
+        "playcount": 1013
+      },
+      {
+        "name": "sandfall",
+        "listeners": 342,
+        "playcount": 589
+      },
+      {
+        "name": "Insight, Leftsight",
+        "listeners": 50,
+        "playcount": 83
+      },
+      {
+        "name": "I Wanna See You",
+        "listeners": 6,
+        "playcount": 34
+      },
+      {
+        "name": "Sean Na`auao",
+        "listeners": 6,
+        "playcount": 14
+      },
+      {
+        "name": "aman re taki",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "apostoli",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Borealis",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "In Light",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Koula"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

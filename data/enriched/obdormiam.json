@@ -1,0 +1,209 @@
+{
+  "artist_name": "Obdormiam",
+  "artist_id": "obdormiam",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:09:45.859057+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 282848581,
+    "name": "Obdormiam",
+    "nb_fan": 0,
+    "nb_album": 10,
+    "link": "https://www.deezer.com/artist/282848581",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e56b219d65142c7abf80766abe503289/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Aurora",
+        "label": "",
+        "release_date": "2025-11-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blue",
+        "label": "",
+        "release_date": "2025-11-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Northern Lights",
+        "label": "",
+        "release_date": "2025-10-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Moment",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "stars",
+        "label": "",
+        "release_date": "2025-04-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "lighter",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "cosmic",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "paradis",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "infinate",
+        "label": "",
+        "release_date": "2024-10-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "nuero",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Obdormiam",
+    "mbid": "",
+    "listeners": 44327,
+    "playcount": 170528,
+    "listener_play_ratio": 3.85,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Obdormiam\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "leo dey",
+      "Zyair Price",
+      "Monte Aria",
+      "Jinada Shane",
+      "Elunara Mare"
+    ],
+    "top_tracks": [
+      {
+        "name": "lighter",
+        "listeners": 16458,
+        "playcount": 41819
+      },
+      {
+        "name": "paradis",
+        "listeners": 15208,
+        "playcount": 52483
+      },
+      {
+        "name": "Northern Lights",
+        "listeners": 9869,
+        "playcount": 33906
+      },
+      {
+        "name": "stars",
+        "listeners": 6876,
+        "playcount": 39137
+      },
+      {
+        "name": "Moment",
+        "listeners": 1135,
+        "playcount": 2926
+      },
+      {
+        "name": "Aurora",
+        "listeners": 113,
+        "playcount": 194
+      },
+      {
+        "name": "Blue",
+        "listeners": 17,
+        "playcount": 26
+      },
+      {
+        "name": "infinate",
+        "listeners": 14,
+        "playcount": 20
+      },
+      {
+        "name": "Cosmic",
+        "listeners": 7,
+        "playcount": 10
+      },
+      {
+        "name": "nuero",
+        "listeners": 5,
+        "playcount": 7
+      }
+    ],
+    "url": "https://www.last.fm/music/Obdormiam"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,459 @@
+{
+  "artist_name": "Paul Alone",
+  "artist_id": "paul_alone",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:23:11.352222+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ab36cd1b-a619-45d9-be93-f48d8ac271dd",
+    "type": "",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 7954040,
+    "name": "Paul Alone",
+    "nb_fan": 1413,
+    "nb_album": 31,
+    "link": "https://www.deezer.com/artist/7954040",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/79d2cdb1116c32d1d9c57feb75fd314c/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Hey Kid",
+      "Nya de la Rubia"
+    ],
+    "contributor_roles": {
+      "Hey Kid": [
+        "Main"
+      ],
+      "Nya de la Rubia": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Me olvidé de lo bueno",
+      "Te acuerdas?",
+      "Tanto, tanto, tanto",
+      "Mentiroso",
+      "Quería",
+      "No Valgo Pa' Ciudad",
+      "No me rayes",
+      "Loca locura",
+      "y es bonito",
+      "Pequeña",
+      "Te voy a echar de menos",
+      "Qué bonito es vivir",
+      "Aunque Suene Raro",
+      "Sólo ven",
+      "Menos mal que te conocí"
+    ],
+    "track_durations": [
+      207,
+      183,
+      157,
+      160,
+      218,
+      186,
+      205,
+      214,
+      184,
+      194,
+      140,
+      229,
+      160,
+      202,
+      223
+    ],
+    "track_ranks": [
+      127256,
+      147833,
+      248614,
+      425941,
+      219578,
+      225574,
+      136528,
+      99955,
+      206915,
+      137008,
+      189648,
+      113588,
+      26689,
+      86303,
+      171796
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 2,
+      "ep": 2,
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Nada es verdad, todo está permitido",
+        "label": "",
+        "release_date": "2025-10-10",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Y yo qué sé?",
+        "label": "",
+        "release_date": "2022-11-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Me olvidé de lo bueno (EP)",
+        "label": "",
+        "release_date": "2019-03-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Loca locura (EP)",
+        "label": "",
+        "release_date": "2019-01-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Para Laura",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Qué bonito es vivir",
+        "label": "",
+        "release_date": "2025-07-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me caes fatal",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me caes fatal (K-Style Remix)",
+        "label": "",
+        "release_date": "2025-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tanto, tanto, tanto",
+        "label": "",
+        "release_date": "2024-12-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "y es bonito",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Menamorao (demo)",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Qué va a ser de mí?",
+        "label": "",
+        "release_date": "2023-12-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Si te vas",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A veces",
+        "label": "",
+        "release_date": "2023-09-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Aunque Suene Raro",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Un día más",
+        "label": "",
+        "release_date": "2023-05-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Quería",
+        "label": "",
+        "release_date": "2022-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "De Oca en Oca",
+        "label": "",
+        "release_date": "2022-07-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Menos mal que te conocí",
+        "label": "",
+        "release_date": "2022-03-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Contéstame o Mátame",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Y yo qué sé?",
+        "label": "",
+        "release_date": "2021-07-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Valgo Pa' Ciudad",
+        "label": "",
+        "release_date": "2021-04-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te acuerdas?",
+        "label": "",
+        "release_date": "2021-02-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Te voy a echar de menos",
+        "label": "",
+        "release_date": "2020-12-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pequeña",
+        "label": "",
+        "release_date": "2020-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ahí estás tú",
+        "label": "",
+        "release_date": "2020-09-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bailao' yo voy",
+        "label": "",
+        "release_date": "2020-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No me rayes",
+        "label": "",
+        "release_date": "2020-01-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Vuela",
+        "label": "",
+        "release_date": "2019-10-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Me siento vivo",
+        "label": "",
+        "release_date": "2019-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Leo Rizzi",
+      "Beret",
+      "Lasso",
+      "Gala Nell",
+      "Charlie USG",
+      "Pablo Alboran",
+      "Marta Soto",
+      "Valeria Castro",
+      "Efecto Pasillo",
+      "Dstance"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 5479017,
+    "name": "Paul Alone",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 3,
+    "digital_only_releases": 2,
+    "total_releases": 5,
+    "formats": [
+      "11xFile, WAV, Comp",
+      "2xCD, Comp",
+      "3xCD, Comp",
+      "40xFile, FLAC, Comp",
+      "LP, Album"
+    ],
+    "labels": [
+      "Acqustic",
+      "Network of Individualized Sonic Extremism",
+      "Not On Label (Headcleaner (8) Self-released)",
+      "Sony Music, Warner Music Spain",
+      "Warner Music Spain S.L."
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Paul Alone",
+    "mbid": "ab36cd1b-a619-45d9-be93-f48d8ac271dd",
+    "listeners": 11545,
+    "playcount": 97785,
+    "listener_play_ratio": 8.47,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Paul+Alone\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Cheti",
+      "Malmö 040",
+      "Ciao Marina",
+      "Paula Mattheus",
+      "Heykid"
+    ],
+    "top_tracks": [
+      {
+        "name": "Te acuerdas?",
+        "listeners": 3575,
+        "playcount": 13981
+      },
+      {
+        "name": "No Valgo Pa' Ciudad",
+        "listeners": 2706,
+        "playcount": 10787
+      },
+      {
+        "name": "Me olvidé de lo bueno",
+        "listeners": 1819,
+        "playcount": 7443
+      },
+      {
+        "name": "Sólo ven",
+        "listeners": 1211,
+        "playcount": 4765
+      },
+      {
+        "name": "Y yo qué sé?",
+        "listeners": 1157,
+        "playcount": 5319
+      },
+      {
+        "name": "Quería",
+        "listeners": 1092,
+        "playcount": 5101
+      },
+      {
+        "name": "Loca locura",
+        "listeners": 895,
+        "playcount": 3621
+      },
+      {
+        "name": "Tanto, tanto, tanto",
+        "listeners": 859,
+        "playcount": 4400
+      },
+      {
+        "name": "Mentiroso",
+        "listeners": 838,
+        "playcount": 3614
+      },
+      {
+        "name": "Me caes fatal",
+        "listeners": 824,
+        "playcount": 4061
+      }
+    ],
+    "url": "https://www.last.fm/music/Paul+Alone"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

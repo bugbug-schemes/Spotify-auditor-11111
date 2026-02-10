@@ -1,0 +1,111 @@
+{
+  "artist_name": "Leto Calo",
+  "artist_id": "leto_calo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:06:41.324199+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Leto Calo', got 'Lebocal'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Leto Calo",
+    "mbid": "",
+    "listeners": 4509,
+    "playcount": 16762,
+    "listener_play_ratio": 3.72,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Leto+Calo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Rerose",
+      "ÆSCN",
+      "Naumanni",
+      "sweetHz",
+      "Lapalillo"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beta Waves 110Hz - 130Hz",
+        "listeners": 3564,
+        "playcount": 10916
+      },
+      {
+        "name": "Beta Waves 136Hz - 150Hz",
+        "listeners": 1123,
+        "playcount": 2558
+      },
+      {
+        "name": "Alpha Concentration 107Hz - 115Hz",
+        "listeners": 654,
+        "playcount": 1589
+      },
+      {
+        "name": "Alpha Pulse - 92Hz - 100Hz",
+        "listeners": 447,
+        "playcount": 1230
+      },
+      {
+        "name": "Alpha Waves 136Hz - 143Hz",
+        "listeners": 63,
+        "playcount": 359
+      },
+      {
+        "name": "Close Your Eyes - Delta 102 Hz - 104 Hz",
+        "listeners": 5,
+        "playcount": 45
+      },
+      {
+        "name": "Sleeping on the Oceanfloor Delta 91Hz - 94Hz",
+        "listeners": 5,
+        "playcount": 34
+      },
+      {
+        "name": "Neue Wunder - Alpha",
+        "listeners": 2,
+        "playcount": 31
+      }
+    ],
+    "url": "https://www.last.fm/music/Leto+Calo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

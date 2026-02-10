@@ -1,0 +1,223 @@
+{
+  "artist_name": "forever day",
+  "artist_id": "forever_day",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:18:27.991205+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 266835432,
+    "name": "forever day",
+    "nb_fan": 7,
+    "nb_album": 9,
+    "link": "https://www.deezer.com/artist/266835432",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e87212fea9f0a497a7f9563c0854d58b/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "nocturnal summer"
+    ],
+    "track_durations": [
+      158
+    ],
+    "track_ranks": [
+      568404
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 9
+    },
+    "albums": [
+      {
+        "title": "Come On Eileen",
+        "label": "",
+        "release_date": "2026-01-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "santa doesn't know you like i do",
+        "label": "",
+        "release_date": "2025-09-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Here Comes Santa Claus",
+        "label": "",
+        "release_date": "2025-09-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "slow unfold",
+        "label": "",
+        "release_date": "2025-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "worn pages",
+        "label": "",
+        "release_date": "2025-07-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "fine print",
+        "label": "",
+        "release_date": "2024-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "nocturnal summer & road to isabelle",
+        "label": "",
+        "release_date": "2024-07-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "shadow eyes & gone with grace",
+        "label": "",
+        "release_date": "2024-06-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Have a Walk",
+        "label": "",
+        "release_date": "2023-04-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 6063880,
+    "name": "Forever Day",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      ""
+    ],
+    "labels": []
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Forever Day",
+    "mbid": "",
+    "listeners": 50539,
+    "playcount": 204354,
+    "listener_play_ratio": 4.04,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Forever+Day\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mijongya",
+      "Hudson Rull",
+      "Lester Dann",
+      "Gianni Domenici",
+      "Samuel Kees"
+    ],
+    "top_tracks": [
+      {
+        "name": "nocturnal summer",
+        "listeners": 48520,
+        "playcount": 197905
+      },
+      {
+        "name": "Here Comes Santa Claus",
+        "listeners": 2636,
+        "playcount": 6214
+      },
+      {
+        "name": "road to isabelle",
+        "listeners": 54,
+        "playcount": 109
+      },
+      {
+        "name": "shadow eyes",
+        "listeners": 15,
+        "playcount": 19
+      },
+      {
+        "name": "fine print",
+        "listeners": 13,
+        "playcount": 31
+      },
+      {
+        "name": "gone with grace",
+        "listeners": 12,
+        "playcount": 18
+      },
+      {
+        "name": "Doll House",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "A Love That Never Returned",
+        "listeners": 3,
+        "playcount": 19
+      },
+      {
+        "name": "santa doesn't know you like i do",
+        "listeners": 3,
+        "playcount": 4
+      },
+      {
+        "name": "slow unfold",
+        "listeners": 2,
+        "playcount": 3
+      }
+    ],
+    "url": "https://www.last.fm/music/Forever+Day"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

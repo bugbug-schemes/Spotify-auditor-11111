@@ -1,0 +1,91 @@
+{
+  "artist_name": "Vinyardo",
+  "artist_id": "vinyardo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:58:25.675348+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Vinyardo', got 'Ministério Vineyard'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vinyardo",
+    "mbid": "",
+    "listeners": 28465,
+    "playcount": 174038,
+    "listener_play_ratio": 6.11,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Vinyardo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Mentitoso",
+      "Alvaro Siesta",
+      "Claddagh Glas",
+      "stellanova",
+      "Noah Florence"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lacuna",
+        "listeners": 16865,
+        "playcount": 103163
+      },
+      {
+        "name": "Elude",
+        "listeners": 10908,
+        "playcount": 63686
+      },
+      {
+        "name": "Gradient",
+        "listeners": 3369,
+        "playcount": 7188
+      },
+      {
+        "name": "Anya",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Vinyardo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

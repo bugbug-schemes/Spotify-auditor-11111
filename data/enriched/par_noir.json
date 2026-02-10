@@ -1,0 +1,177 @@
+{
+  "artist_name": "Par Noir",
+  "artist_id": "par_noir",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:21:42.684154+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 266111312,
+    "name": "Par Noir",
+    "nb_fan": 1,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/266111312",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/ffe7f7d3e6138668be4f4a350ceb5c18/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Charm"
+    ],
+    "track_durations": [
+      181
+    ],
+    "track_ranks": [
+      21810
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Sooner or later",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clouded Mind",
+        "label": "",
+        "release_date": "2024-07-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Charm",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Get Busy Living",
+        "label": "",
+        "release_date": "2024-06-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Bad Timing",
+        "label": "",
+        "release_date": "2024-05-31",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1724261,
+    "name": "Paris Noir",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 2,
+    "digital_only_releases": 1,
+    "total_releases": 3,
+    "formats": [
+      "",
+      "CD, Album",
+      "CD, Comp, Ltd"
+    ],
+    "labels": [
+      "No Sign Of Life",
+      "Witchhammer Production"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Par Noir",
+    "mbid": "",
+    "listeners": 9142,
+    "playcount": 27145,
+    "listener_play_ratio": 2.97,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Par+Noir\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Mulberry St. Collective",
+      "Berliner Luft Quartet",
+      "Fig and the Fam",
+      "Dave Gordon Trio",
+      "Chestnut Street Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Clouded Mind",
+        "listeners": 4703,
+        "playcount": 11523
+      },
+      {
+        "name": "Bad Timing",
+        "listeners": 3690,
+        "playcount": 6617
+      },
+      {
+        "name": "Charm",
+        "listeners": 2424,
+        "playcount": 5565
+      },
+      {
+        "name": "Get Busy Living",
+        "listeners": 1470,
+        "playcount": 3438
+      },
+      {
+        "name": "Sooner or later",
+        "listeners": 2,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Par+Noir"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

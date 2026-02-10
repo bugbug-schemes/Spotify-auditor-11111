@@ -1,0 +1,241 @@
+{
+  "artist_name": "Endel",
+  "artist_id": "endel",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T13:28:19.554723+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "dfbf3630-192a-470a-bfe3-8c6b15412725",
+    "type": "Other",
+    "country": "DE",
+    "area": "Germany",
+    "begin_date": "2018-01-01",
+    "end_date": "",
+    "gender": "not applicable",
+    "genres": [
+      "ambient",
+      "new age"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/12597741",
+      "official homepage": "https://endel.io/",
+      "purchase for download": "https://www.qobuz.com/us-en/interpreter/endel/4321934",
+      "social network": "https://www.instagram.com/endelsound/",
+      "soundcloud": "https://soundcloud.com/endelapp",
+      "streaming": "https://www.qobuz.com/us-en/interpreter/endel/4321934",
+      "youtube music": "https://music.youtube.com/channel/UC9uTrVJguNU6d7wyQ5zDt-g"
+    },
+    "labels": [
+      "Platoon",
+      "Endel Sound GmbH",
+      "[no label]",
+      "Polydor",
+      "AllPoints",
+      "Future Classic",
+      "Spinnin’ Records",
+      "Republic Records",
+      "mau5trap",
+      "EXHALE",
+      "Warner Records"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1271889,
+    "name": "The Endellion String Quartet",
+    "nb_fan": 275,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/1271889",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/5c13658590d113d59493f4a4d831507d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Robert Cohen",
+      "Tim Boulton"
+    ],
+    "contributor_roles": {
+      "Tim Boulton": [
+        "Featured"
+      ],
+      "Robert Cohen": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Sting Quartet No.3 in E flat minor, Op.30: Allegro vivo e scherzando",
+      "Sting Quartet No.3 in E flat minor, Op.30: Andante funebre e doloroso",
+      "Four Early Pieces: Andante molto in G for sting quartet",
+      "String Sextet in D minor, Op.70 'Souvenir de Florence': Allegro con spirito",
+      "String Sextet in D minor, Op.70 'Souvenir de Florence': Adagio cantabile e con moto",
+      "String Sextet in D minor, Op.70 'Souvenir de Florence': Allegro vivace",
+      "String Sextet in D minor, Op.70 'Souvenir de Florence': Allegretto moderato"
+    ],
+    "track_durations": [
+      247,
+      619,
+      130,
+      621,
+      605,
+      431,
+      388
+    ],
+    "track_ranks": [
+      111915,
+      48372,
+      61987,
+      50865,
+      37285,
+      36611,
+      20247
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1
+    },
+    "albums": [
+      {
+        "title": "Tchaikovsky: Souvenir De Florence / String Quartet In E Flat Minor / Trio And quartet Fragmanets",
+        "label": "",
+        "release_date": "2007-05-15",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1713084,
+    "name": "Endel",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "File, AIFF, MP3, WAV, EP, Enh, Ltd, RM"
+    ],
+    "labels": [
+      "Monkey Puzzle Music"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Endel",
+    "mbid": "dfbf3630-192a-470a-bfe3-8c6b15412725",
+    "listeners": 60217,
+    "playcount": 1386775,
+    "listener_play_ratio": 23.03,
+    "bio_exists": true,
+    "bio_summary": "Endel is a computer algorithm to procedurally generate ambient music landscapes. It is developed by the company of the same name. <a href=\"https://www.last.fm/music/Endel\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient",
+      "AI",
+      "chillout",
+      "new age",
+      "relax"
+    ],
+    "similar_artists": [
+      "Innesti",
+      "Líom",
+      "Astron",
+      "Steven Halpern",
+      "Soothe My Soul"
+    ],
+    "top_tracks": [
+      {
+        "name": "Morning Repose",
+        "listeners": 14740,
+        "playcount": 52788
+      },
+      {
+        "name": "Spatial Sequence",
+        "listeners": 13705,
+        "playcount": 51051
+      },
+      {
+        "name": "Sand Drawing",
+        "listeners": 8595,
+        "playcount": 33108
+      },
+      {
+        "name": "Restful Petal - Spa",
+        "listeners": 5129,
+        "playcount": 13488
+      },
+      {
+        "name": "Sun Ascent",
+        "listeners": 4747,
+        "playcount": 14678
+      },
+      {
+        "name": "Gentle Gust - Spa",
+        "listeners": 4173,
+        "playcount": 10986
+      },
+      {
+        "name": "Lichen Pillow - Spa",
+        "listeners": 3571,
+        "playcount": 9834
+      },
+      {
+        "name": "Achievement Unlocked",
+        "listeners": 3547,
+        "playcount": 7830
+      },
+      {
+        "name": "Sand Drawing - Spa",
+        "listeners": 3127,
+        "playcount": 11115
+      },
+      {
+        "name": "Halcyon Clouds",
+        "listeners": 1877,
+        "playcount": 5684
+      }
+    ],
+    "url": "https://www.last.fm/music/Endel"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,157 @@
+{
+  "artist_name": "Benjamin Kind",
+  "artist_id": "benjamin_kind",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:34:48.558201+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Benjamin Kind', got 'Benjamin Ingrosso'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 922992,
+    "name": "Benjamín Brea",
+    "profile": "Benjamín Brea (b, Galicia, Spain, September 18, 1946 - d. Caracas, Venezuela, April 23, 2014)\r\nA versatile saxophonist and flautist, Benjamin Brea was born in Galicia, Spain, on september 18, 1946. In 1960 with his family  moved to Venezuela and became to Venezuelan in all extension of the expresion. Brea studied at José Ángel Lamas music School, in Caracas.\r\nBrea played all kind of popular music: pop, rock, jazz, salsa, gaitas, cañonera music group, etc. In that way he worked in a reeds sessions with [a=Orquesta Filarmónica de Caracas]   led by [a=Aldemaro Romero], RCTV's orchestra, [a=Gerry Weil] band, [a=Alberto Naranjo] and his Trabuco, [a=Los Balzehaguaos] of [a=Frank Quintero], Grupo Makoya, [a=Carlos \"Nené\" Quintero]'s Group, [a=Andy Durán] Latin Jazz Band, Orquesta Venezuela, Jazz Band 75, grupo Piano, and many more.\r\nBrea recorded three albums studio: Another Point Of View (1995), Un Viejo Amor (1997) y Christmas’ Saxes (1999)\r\nBenjamín Brea, the Marvelous Gallego,  passed awa",
+    "realname": "Benjamín Arsenio Brea Constenla",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 55,
+    "digital_only_releases": 39,
+    "total_releases": 94,
+    "formats": [
+      "",
+      "12\", Single",
+      "2xCD, Comp",
+      "7\", EP",
+      "7\", Single",
+      "7\", Single, Ltd, RM",
+      "7\", Single, Promo",
+      "CD",
+      "CD, Album",
+      "CD, Album, Dig",
+      "CD, Album, Enh, Dig",
+      "CD, Comp",
+      "CD, Comp, RE, RM",
+      "CD, Single, Promo",
+      "Cass, Album",
+      "HDCD, Album",
+      "LP",
+      "LP, Album",
+      "LP, Album, Gat",
+      "LP, Comp",
+      "LP, Comp, Ltd",
+      "LP, Gat",
+      "LP, Mixed"
+    ],
+    "labels": [
+      "AVR (4)",
+      "CBS",
+      "CBS, CBS",
+      "Cigarron",
+      "Cokó Records",
+      "Cordis",
+      "Disques Vogue",
+      "Fundación Bigott",
+      "JM Bros.",
+      "Leon",
+      "Lyric (2)",
+      "Lyric (2), Lyric (2)",
+      "Manoca Records",
+      "Matasuna Rec.",
+      "Mucer Internacional",
+      "Not On Label",
+      "Not On Label (Ami Mendez Self-released)",
+      "ObesoPacanins",
+      "Obesopacanins",
+      "Palacio",
+      "Polydor",
+      "Producciones Luis V.",
+      "RH, CAVN",
+      "Rodven",
+      "Santa Barbara S.R.L.",
+      "Sidor",
+      "Sono-Mundo",
+      "Sonografica",
+      "Sonolux, Sonolux",
+      "Sony BMG Music Entertainment",
+      "Top Hits",
+      "Traffic Records (3)",
+      "Tukeke Sound Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Benjamin Kind",
+    "mbid": "",
+    "listeners": 814,
+    "playcount": 1787,
+    "listener_play_ratio": 2.2,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Benjamin+Kind\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Tarragona Heights",
+      "Lewis Knight",
+      "Vaughn Harper",
+      "Patrick Leon",
+      "Thomas McLaughlin"
+    ],
+    "top_tracks": [
+      {
+        "name": "O Come All Ye Faithful",
+        "listeners": 642,
+        "playcount": 1180
+      },
+      {
+        "name": "Holly And The Ivy",
+        "listeners": 187,
+        "playcount": 606
+      },
+      {
+        "name": "Hark The Herald Angels Sing",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Benjamin+Kind"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

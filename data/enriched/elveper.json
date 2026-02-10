@@ -1,0 +1,91 @@
+{
+  "artist_name": "elveper",
+  "artist_id": "elveper",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:17:39.120585+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'elveper', got 'Elvis Perkins'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "elveper",
+    "mbid": "",
+    "listeners": 3294,
+    "playcount": 5576,
+    "listener_play_ratio": 1.69,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/elveper\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lún",
+      "Asher Stone",
+      "Furomerald",
+      "Jo Anand",
+      "Owen Bloom"
+    ],
+    "top_tracks": [
+      {
+        "name": "Clarity",
+        "listeners": 3257,
+        "playcount": 5479
+      },
+      {
+        "name": "Indian Summer",
+        "listeners": 69,
+        "playcount": 95
+      },
+      {
+        "name": "Sunset Rain",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Northern Voice",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/elveper"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 1
+}

@@ -1,0 +1,148 @@
+{
+  "artist_name": "Kim Chee",
+  "artist_id": "kim_chee",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:49:35.372062+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "c3ac8cff-70dc-48c5-a984-8fc3e2f28ab7",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Kim Chee', got 'Kim Churchill'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 962287,
+    "name": "Kim Chee",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [
+      "Pineal Ventana"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 3,
+    "digital_only_releases": 0,
+    "total_releases": 3,
+    "formats": [
+      "12\", Album",
+      "3xCD, Album, Comp",
+      "7\""
+    ],
+    "labels": [
+      "Awaken Lions Records",
+      "Electronic Music Foundation",
+      "Half Baked Records"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Kim chee",
+    "mbid": "",
+    "listeners": 6684,
+    "playcount": 13708,
+    "listener_play_ratio": 2.05,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Kim+chee\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Burlywood",
+      "Phoenix Rouge",
+      "PRFCT BLU3",
+      "Maydance",
+      "Lagonda"
+    ],
+    "top_tracks": [
+      {
+        "name": "Journey",
+        "listeners": 5873,
+        "playcount": 11690
+      },
+      {
+        "name": "Running Low",
+        "listeners": 689,
+        "playcount": 1283
+      },
+      {
+        "name": "Rendezvous",
+        "listeners": 393,
+        "playcount": 677
+      },
+      {
+        "name": "Serenity",
+        "listeners": 13,
+        "playcount": 14
+      },
+      {
+        "name": "Clouds",
+        "listeners": 12,
+        "playcount": 17
+      },
+      {
+        "name": "Last Night",
+        "listeners": 12,
+        "playcount": 14
+      },
+      {
+        "name": "Don't Tell Me",
+        "listeners": 4,
+        "playcount": 4
+      },
+      {
+        "name": "yun - I dreamt i dwelt in marble hall / balfe",
+        "listeners": 1,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/Kim+chee"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

@@ -1,0 +1,143 @@
+{
+  "artist_name": "Bien Dorm",
+  "artist_id": "bien_dorm",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T21:41:01.845966+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 14226295,
+    "name": "Bien Dormir & Canciones de Cuna Relax",
+    "nb_fan": 2,
+    "nb_album": 1,
+    "link": "https://www.deezer.com/artist/14226295",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a474c0f68e4280803033c13404d46fa4/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1
+    },
+    "albums": [
+      {
+        "title": "Dormir Tranquilos - Sonidos Relajantes, Músicas de Relajamiento Perfecta para Dormir, Meditar, Hacer Yoga, Estudiar o Leer",
+        "label": "",
+        "release_date": "2018-05-01",
+        "nb_tracks": 0,
+        "type": "album"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 12363355,
+    "name": "Bien Dormi",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 1,
+    "total_releases": 1,
+    "formats": [
+      "Cass, Album, Comp"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Bien Dorm",
+    "mbid": "",
+    "listeners": 14427,
+    "playcount": 89309,
+    "listener_play_ratio": 6.19,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Bien+Dorm\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Esperos",
+      "Fabrique Noise",
+      "Bewegtes",
+      "Samsura",
+      "Athmospherical FX"
+    ],
+    "top_tracks": [
+      {
+        "name": "Cool Air & Rain",
+        "listeners": 13287,
+        "playcount": 81973
+      },
+      {
+        "name": "The Womb Harmony",
+        "listeners": 755,
+        "playcount": 2678
+      },
+      {
+        "name": "Noise from Mother's Womb",
+        "listeners": 601,
+        "playcount": 2200
+      },
+      {
+        "name": "Mother Asleep",
+        "listeners": 592,
+        "playcount": 2185
+      },
+      {
+        "name": "Mind Calming Womb Sound",
+        "listeners": 159,
+        "playcount": 271
+      },
+      {
+        "name": "Pure Pink Noise",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Bien+Dorm"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

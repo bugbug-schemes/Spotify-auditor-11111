@@ -1,0 +1,198 @@
+{
+  "artist_name": "Duerme Bebe",
+  "artist_id": "duerme_bebe",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T23:36:47.550988+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 89717232,
+    "name": "Duerme Bebe",
+    "nb_fan": 7,
+    "nb_album": 7,
+    "link": "https://www.deezer.com/artist/89717232",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/6738c6a9ddf07eab6a5b5484504f664a/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Frosty The Snowman",
+      "A La Rorro Niño"
+    ],
+    "track_durations": [
+      129,
+      114
+    ],
+    "track_ranks": [
+      3832,
+      11668
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "single": 6
+    },
+    "albums": [
+      {
+        "title": "Ayude a su bebé a dormirse",
+        "label": "",
+        "release_date": "2021-12-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "All I Want For Christmas Is You",
+        "label": "",
+        "release_date": "2023-09-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Saw Mommy Kissing Santa Claus",
+        "label": "",
+        "release_date": "2023-07-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ol' Man River",
+        "label": "",
+        "release_date": "2022-09-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frosty The Snowman",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "VCR",
+        "label": "",
+        "release_date": "2020-05-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A La Rorro Niño",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Duerme Bebe",
+    "mbid": "",
+    "listeners": 1420,
+    "playcount": 6104,
+    "listener_play_ratio": 4.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Duerme+Bebe\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "DORMIR CANSADO",
+      "Kris Cummins",
+      "Denis Raum",
+      "Philipe Goldman",
+      "Sebastien Haut"
+    ],
+    "top_tracks": [
+      {
+        "name": "Frosty The Snowman",
+        "listeners": 1145,
+        "playcount": 2713
+      },
+      {
+        "name": "VCR",
+        "listeners": 215,
+        "playcount": 3240
+      },
+      {
+        "name": "The Man I Love",
+        "listeners": 47,
+        "playcount": 92
+      },
+      {
+        "name": "Mariposita",
+        "listeners": 9,
+        "playcount": 46
+      },
+      {
+        "name": "A La Rorro Niño",
+        "listeners": 5,
+        "playcount": 6
+      },
+      {
+        "name": "Ol' Man River",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "All I Want For Christmas Is You",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Abie Song Brahms’ Lullaby",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Abie song Frere Jacques",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Future Proof",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Duerme+Bebe"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

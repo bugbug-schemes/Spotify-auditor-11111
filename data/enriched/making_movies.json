@@ -1,0 +1,530 @@
+{
+  "artist_name": "Making Movies",
+  "artist_id": "making_movies",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:25:06.457730+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "550dae37-1c3e-4545-b6c8-c515dbff6b77",
+    "type": "Group",
+    "country": "US",
+    "area": "United States",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "bandsintown": "https://www.bandsintown.com/a/167605",
+      "discogs": "https://www.discogs.com/artist/3585597",
+      "official homepage": "http://mkngmvs.com/",
+      "social network": "https://www.instagram.com/mkngmvs/",
+      "wikidata": "https://www.wikidata.org/wiki/Q6739612",
+      "youtube": "https://www.youtube.com/user/makingmoviesband"
+    },
+    "labels": [
+      "United Interests",
+      "[no label]",
+      "Cosmica Artists"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 1026781,
+    "name": "Making Movies",
+    "nb_fan": 358,
+    "nb_album": 29,
+    "link": "https://www.deezer.com/artist/1026781",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/c16666e4a3f489adfabef9e4d08803d7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Flor de Toloache",
+      "Frankie Negrón",
+      "Las Cafeteras",
+      "Ruben Blades",
+      "Tennis"
+    ],
+    "contributor_roles": {
+      "Las Cafeteras": [
+        "Main",
+        "Featured"
+      ],
+      "Flor de Toloache": [
+        "Main",
+        "Featured"
+      ],
+      "Ruben Blades": [
+        "Featured",
+        "Main"
+      ],
+      "Frankie Negrón": [
+        "Main"
+      ],
+      "Tennis": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Montaña",
+      "Everybody Wants to Rule the World",
+      "Revolver",
+      "La Marcha",
+      "Ego Trip",
+      "Amor De Mis Amores",
+      "In Lak’Ech Ala K’In",
+      "Lo Que Quiero",
+      "Deriva",
+      "Ready for the Rain",
+      "Hasta el Día de Mi Muerte",
+      "Ciego Sin Querer",
+      "Luna",
+      "Cómo Perdonar",
+      "Cuna de Vida",
+      "Patria",
+      "Tormenta",
+      "Rebelión",
+      "No Te Calles",
+      "Tired Of Giving In",
+      "Chase Your Tail",
+      "Te Estaba Buscando",
+      "Porcelina (feat. Tennis)",
+      "XOPA",
+      "Pendulum Swing"
+    ],
+    "track_durations": [
+      134,
+      238,
+      321,
+      202,
+      223,
+      300,
+      91,
+      236,
+      232,
+      257,
+      292,
+      342,
+      294,
+      310,
+      183,
+      346,
+      254,
+      307,
+      193,
+      266,
+      278,
+      285,
+      249,
+      193,
+      168
+    ],
+    "track_ranks": [
+      30320,
+      55096,
+      51110,
+      22002,
+      33123,
+      105472,
+      32176,
+      52901,
+      17757,
+      21789,
+      2657,
+      53983,
+      26716,
+      16005,
+      35805,
+      22034,
+      5010,
+      18846,
+      37537,
+      11491,
+      33155,
+      10073,
+      1311,
+      18777,
+      64062
+    ],
+    "has_explicit": true,
+    "album_types": {
+      "album": 7,
+      "ep": 3,
+      "single": 19
+    },
+    "albums": [
+      {
+        "title": "Baúl De Las Movies (En Vivo En Parque Omar 2024)",
+        "label": "",
+        "release_date": "2024-11-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Baúl De Las Movies (En Vivo En Folly Theater 2023)",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "En La Sala (En Vivo)",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "XOPA",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "ameri'kana",
+        "label": "",
+        "release_date": "2019-05-24",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "I Am Another You",
+        "label": "",
+        "release_date": "2017-05-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "A la Deriva",
+        "label": "",
+        "release_date": "2013-03-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Baúl de las Movies (Rocky Mountain Folks Festival 2024) (En Vivo)",
+        "label": "",
+        "release_date": "2025-04-25",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Baúl De Las Movies (Macrofest 2023)",
+        "label": "",
+        "release_date": "2024-10-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Making Movies (Audiotree Live)",
+        "label": "",
+        "release_date": "2017-11-15",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Medicina",
+        "label": "",
+        "release_date": "2023-07-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "XOPA",
+        "label": "",
+        "release_date": "2022-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Porcelina (feat. Tennis)",
+        "label": "",
+        "release_date": "2022-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sala De Los Pecadores",
+        "label": "",
+        "release_date": "2022-04-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Calor",
+        "label": "",
+        "release_date": "2022-03-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "La Marcha",
+        "label": "",
+        "release_date": "2021-05-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Listening Wind",
+        "label": "",
+        "release_date": "2021-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Could You?",
+        "label": "",
+        "release_date": "2021-02-26",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tired of Giving In",
+        "label": "",
+        "release_date": "2020-10-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Everybody Wants to Rule the World",
+        "label": "",
+        "release_date": "2020-04-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Accidente",
+        "label": "",
+        "release_date": "2019-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Delilah",
+        "label": "",
+        "release_date": "2019-05-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cómo Perdonar",
+        "label": "",
+        "release_date": "2019-04-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No Te Calles",
+        "label": "",
+        "release_date": "2019-01-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Amor De Mis Amores",
+        "label": "",
+        "release_date": "2018-09-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ritmo De Mi Pueblo",
+        "label": "",
+        "release_date": "2018-07-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Montaña",
+        "label": "",
+        "release_date": "2018-06-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Feo Mas Bello",
+        "label": "",
+        "release_date": "2018-06-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Tormenta",
+        "label": "",
+        "release_date": "2018-05-25",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Pablo Lesuit",
+      "Carlos Puebla",
+      "Compay Segundo",
+      "Guy Barker",
+      "Pedro Bromfman",
+      "Henri Guedon",
+      "Bebo Valdés",
+      "Cuba Vista",
+      "Raul Paz",
+      "Afrodita"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 3585597,
+    "name": "Making Movies",
+    "profile": "Making Movies is an American band based out of Kansas City, Missouri. Built upon a heavy foundation of Afro-Latino rhythms, they have created a bilingual (English and Spanish), psychedelic re-envisioning of the Latin American “son.” The band consists of four members: Enrique Chi (guitar/vocals), Juan-Carlos Chaurand (percussion/keyboard), Brendan Culp (drums) and Diego Chi (bass).",
+    "realname": "",
+    "social_urls": [
+      "http://en.wikipedia.org/wiki/Making_Movies_(band)",
+      "http://www.makingmoviesband.com/"
+    ],
+    "members": [
+      "Brendan Culp",
+      "Enrique Javier Chi",
+      "Juan-Carlos Chaurand",
+      "Diego Chi"
+    ],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 6,
+    "digital_only_releases": 7,
+    "total_releases": 13,
+    "formats": [
+      "",
+      "12xFile, MP3, Comp, 320",
+      "16xFile, MP3, Comp, VBR",
+      "24xFile, MP3, Comp, VBR",
+      "7\", Single, Ltd, Num, Red",
+      "CD, Album, Promo",
+      "CD, Comp, Promo",
+      "CDr, Single, Promo",
+      "LP, Album",
+      "LP, Comp, Ltd"
+    ],
+    "labels": [
+      "Appeal Latino",
+      "Cosmica Artists",
+      "KTBG",
+      "Midwest Music Foundation",
+      "Not On Label",
+      "The Record Machine",
+      "ThinkKC",
+      "United Interests"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Making Movies",
+    "mbid": "550dae37-1c3e-4545-b6c8-c515dbff6b77",
+    "listeners": 14694,
+    "playcount": 73166,
+    "listener_play_ratio": 4.98,
+    "bio_exists": true,
+    "bio_summary": "Bi-lingual rock based out of Kansas City originally from Santiago, Panama. The band blends indie-rock influences with salsa and merengue rhythms and textures.  \n\nwww.myspace.com/makingmovies\nwww.makingmoviesband.com\nhttp://makingmovies.bandcamp.com/ <a href=\"https://www.last.fm/music/Making+Movies\">Read more on Last.fm</a>",
+    "tags": [
+      "latin",
+      "Kansas City",
+      "indie rock",
+      "salsa",
+      "Panama"
+    ],
+    "similar_artists": [
+      "Pachará",
+      "Vacación",
+      "Rosario Ortega",
+      "Maréh",
+      "Sofia Macchi"
+    ],
+    "top_tracks": [
+      {
+        "name": "Everybody Wants to Rule the World",
+        "listeners": 3891,
+        "playcount": 10524
+      },
+      {
+        "name": "Amor De Mis Amores",
+        "listeners": 2593,
+        "playcount": 6741
+      },
+      {
+        "name": "Spinning Out",
+        "listeners": 2062,
+        "playcount": 5336
+      },
+      {
+        "name": "Porcelina (feat. Tennis)",
+        "listeners": 2034,
+        "playcount": 4496
+      },
+      {
+        "name": "Cuna De Vida",
+        "listeners": 1864,
+        "playcount": 6344
+      },
+      {
+        "name": "Montaña",
+        "listeners": 1415,
+        "playcount": 2927
+      },
+      {
+        "name": "Pendulum Swing",
+        "listeners": 1166,
+        "playcount": 3384
+      },
+      {
+        "name": "Lo Que Quiero",
+        "listeners": 982,
+        "playcount": 2512
+      },
+      {
+        "name": "Ego Trip",
+        "listeners": 825,
+        "playcount": 2055
+      },
+      {
+        "name": "Chase Your Tail",
+        "listeners": 797,
+        "playcount": 2054
+      }
+    ],
+    "url": "https://www.last.fm/music/Making+Movies"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

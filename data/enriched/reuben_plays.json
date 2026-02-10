@@ -1,0 +1,405 @@
+{
+  "artist_name": "Reuben Plays",
+  "artist_id": "reuben_plays",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:41:13.195146+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "29ffcebf-eb87-4eee-b89d-1ecfacb719ab",
+    "type": "Person",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/175713937",
+      "purchase for download": "https://music.apple.com/us/artist/1634404106",
+      "soundcloud": "https://soundcloud.com/reubenplays",
+      "streaming": "https://tidal.com/artist/33096654",
+      "youtube music": "https://music.youtube.com/channel/UCelgThwKKjn-g5TRMhibiEA"
+    },
+    "labels": [
+      "Calm Lands Music"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 175713937,
+    "name": "Reuben Plays",
+    "nb_fan": 12,
+    "nb_album": 27,
+    "link": "https://www.deezer.com/artist/175713937",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a252f0d143b61491be28044727088ebb/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Polkadots And Moonbeams",
+      "A look of confusion",
+      "Across The Way",
+      "You Left Your Mark On Me",
+      "Then you appeared",
+      "Not the worst case",
+      "I had my reasons",
+      "An Old Friend"
+    ],
+    "track_durations": [
+      222,
+      215,
+      228,
+      224,
+      207,
+      229,
+      188,
+      177
+    ],
+    "track_ranks": [
+      141262,
+      31880,
+      38716,
+      64725,
+      86939,
+      10186,
+      34687,
+      31016
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 27
+    },
+    "albums": [
+      {
+        "title": "Off-season",
+        "label": "",
+        "release_date": "2026-01-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Follow The Star",
+        "label": "",
+        "release_date": "2025-12-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "No One Knows",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Turn That Page",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Not the worst case",
+        "label": "",
+        "release_date": "2025-07-11",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Early Morning Lies",
+        "label": "",
+        "release_date": "2025-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Across The Way",
+        "label": "",
+        "release_date": "2025-03-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "An Off Day",
+        "label": "",
+        "release_date": "2025-01-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I had my reasons",
+        "label": "",
+        "release_date": "2024-11-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Autograph",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Excellent Choice",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "An Old Friend",
+        "label": "",
+        "release_date": "2024-07-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A look of confusion",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Great New Star",
+        "label": "",
+        "release_date": "2024-01-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There Was Nothing Wrong",
+        "label": "",
+        "release_date": "2023-10-20",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Home In Time",
+        "label": "",
+        "release_date": "2023-09-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Start acceptin’",
+        "label": "",
+        "release_date": "2023-07-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Discussing Cuba",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ducks for cover",
+        "label": "",
+        "release_date": "2023-05-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There was a ship",
+        "label": "",
+        "release_date": "2023-04-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Strollin’ the Strip",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where is Jack?",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Low In The Sky",
+        "label": "",
+        "release_date": "2022-12-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Then you appeared",
+        "label": "",
+        "release_date": "2022-12-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "You Left Your Mark On Me",
+        "label": "",
+        "release_date": "2022-10-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "I Know Too Well",
+        "label": "",
+        "release_date": "2022-09-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Polkadots And Moonbeams",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 336267,
+    "name": "Perry Silverbird",
+    "profile": "Navajo/apache musician, usually plays the native american flute\r\n\r\nSon of [a=J. Reuben Silverbird]",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 4,
+    "digital_only_releases": 6,
+    "total_releases": 10,
+    "formats": [
+      "",
+      "CD",
+      "CD, Album",
+      "CD, Comp",
+      "Cass, Comp, S/Edition"
+    ],
+    "labels": [
+      "Celestial Harmonies",
+      "Infinitum Música",
+      "New Sounds Multimedia"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Reuben Plays",
+    "mbid": "29ffcebf-eb87-4eee-b89d-1ecfacb719ab",
+    "listeners": 74980,
+    "playcount": 285662,
+    "listener_play_ratio": 3.81,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Reuben+Plays\">Read more on Last.fm</a>",
+    "tags": [
+      "jazz"
+    ],
+    "similar_artists": [
+      "Jaden Berry",
+      "Lia Riggs Trio",
+      "KTZ Players",
+      "Kristian Hart Trio",
+      "The Uptown Players"
+    ],
+    "top_tracks": [
+      {
+        "name": "I Know Too Well",
+        "listeners": 20328,
+        "playcount": 46347
+      },
+      {
+        "name": "An Old Friend",
+        "listeners": 15821,
+        "playcount": 33811
+      },
+      {
+        "name": "A look of confusion",
+        "listeners": 14359,
+        "playcount": 30074
+      },
+      {
+        "name": "Polkadots And Moonbeams",
+        "listeners": 14190,
+        "playcount": 30255
+      },
+      {
+        "name": "You Left Your Mark On Me",
+        "listeners": 13771,
+        "playcount": 28711
+      },
+      {
+        "name": "I had my reasons",
+        "listeners": 13624,
+        "playcount": 28402
+      },
+      {
+        "name": "Then you appeared",
+        "listeners": 9583,
+        "playcount": 21788
+      },
+      {
+        "name": "Across The Way",
+        "listeners": 8643,
+        "playcount": 17467
+      },
+      {
+        "name": "Ducks for cover",
+        "listeners": 7517,
+        "playcount": 16356
+      },
+      {
+        "name": "Low In The Sky",
+        "listeners": 5195,
+        "playcount": 11385
+      }
+    ],
+    "url": "https://www.last.fm/music/Reuben+Plays"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

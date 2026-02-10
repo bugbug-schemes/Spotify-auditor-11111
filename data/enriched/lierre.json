@@ -1,0 +1,153 @@
+{
+  "artist_name": "Lierre",
+  "artist_id": "lierre",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:08:10.309782+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "09471cef-5608-433c-92ac-389cd2a1e626",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "male",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "discogs": "https://www.discogs.com/artist/1052132",
+      "social network": "https://www.linkedin.com/in/jean-baptiste-lierre/"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Lierre', got 'Pierre Garnier'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1052132,
+    "name": "J.B. Lierre",
+    "profile": "Sound engineer working at many London studios 1986-1989, including [l87246], [l264566], [l269784], [l266232], and [l264021]. \r\n\r\nOften credited as Jaybee or Jay Bee",
+    "realname": "Jean-Baptiste Lierre",
+    "social_urls": [
+      "https://www.linkedin.com/in/jean-baptiste-lierre/"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Correct",
+    "physical_releases": 1,
+    "digital_only_releases": 11,
+    "total_releases": 12,
+    "formats": [
+      "",
+      "4xCD, Album, Comp, RM + DVD-V, NTSC + Box"
+    ],
+    "labels": [
+      "Caroline International"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Lierre",
+    "mbid": "",
+    "listeners": 1418,
+    "playcount": 3258,
+    "listener_play_ratio": 2.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Lierre\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Aurora Sands",
+      "Caleb Ivers",
+      "Cautious Voice",
+      "The Nature Within",
+      "Healing Wind"
+    ],
+    "top_tracks": [
+      {
+        "name": "silver shimmer",
+        "listeners": 525,
+        "playcount": 1220
+      },
+      {
+        "name": "Out of Eden",
+        "listeners": 466,
+        "playcount": 841
+      },
+      {
+        "name": "softly softly",
+        "listeners": 422,
+        "playcount": 875
+      },
+      {
+        "name": "ethereal",
+        "listeners": 152,
+        "playcount": 274
+      },
+      {
+        "name": "silence at dawn",
+        "listeners": 32,
+        "playcount": 35
+      },
+      {
+        "name": "NBrooksville",
+        "listeners": 7,
+        "playcount": 7
+      },
+      {
+        "name": "the vegetarian myth",
+        "listeners": 1,
+        "playcount": 4
+      },
+      {
+        "name": "first love / late spring | mitski violin cover",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "sama being adorable",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Lierre"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

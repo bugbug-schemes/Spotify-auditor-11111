@@ -1,0 +1,186 @@
+{
+  "artist_name": "Relaxing The Mind",
+  "artist_id": "relaxing_the_mind",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:39:50.481055+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Relaxing The Mind', got 'Soft Sexy Guitar - Chill out Background Instrumental Music Songs, Ibiza Chill out Party, Relaxing Mindfulness Meditation Relaxation Maestro'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 777798,
+    "name": "Felix Pando",
+    "profile": "Felix Pando was born in Argentina and in the late 60's formed the rock group \"La Joven Guardia\" in which he played keyboards and sang. The group released more than 30 rock records in Spanish at a time when rock music was only done in English.\r\n\r\nIn the mid seventies Pando moved to Germany, where he would stay for the next 30 years. He studied sound engineering and became a famous movie, theatre & documentary composer as well as for the German version of Sesame Street. \r\n\r\nIn 1989 he composed the Anthem of the World Olympic Games that took place in Germany. He also did some production work with the German rock band BAP.\r\n\r\nIn the late nineties Pando set off to pursue projects that permitted him to create music with a purpose; to make life better and to make music available for all. The project titled “el arte de vivir” (the art of living) generated 2 albums full of instrumental pieces fusing many rhythms together in such a way that the listener enters a mind relaxing state. To this day,",
+    "realname": "Félix Pando",
+    "social_urls": [
+      "https://felixpando.com/"
+    ],
+    "members": [],
+    "groups": [
+      "La Joven Guardia",
+      "Gorrión"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 37,
+    "digital_only_releases": 30,
+    "total_releases": 67,
+    "formats": [
+      "",
+      "7\"",
+      "7\", EP",
+      "7\", Single",
+      "7\", Single, Promo",
+      "CD",
+      "CD, Album",
+      "CD, Comp",
+      "CD, Comp, RM",
+      "CD, EP",
+      "Cass",
+      "Cass, Album",
+      "LP, Album",
+      "LP, Comp"
+    ],
+    "labels": [
+      "Atração Fonográfica",
+      "BMG Argentina",
+      "Buenas Ondas Discos",
+      "Dabbelju Music",
+      "Gente Joven",
+      "Glückwünsche, Glückwünsche",
+      "Glückwünsche, Perleberg Verlags GmbH",
+      "Interdisc (5)",
+      "Karussell, Universal",
+      "Kiosk",
+      "Lluvia De Estrellas",
+      "Menschenkinder",
+      "Music Hall, Music Hall",
+      "Orchestrola (2)",
+      "P.P.E.",
+      "PANAP Music",
+      "Perleberg Verlags GmbH",
+      "Platinum Records (26)",
+      "Polydor",
+      "RCA",
+      "RCA Victor",
+      "RCA Victor, RCA Victor",
+      "RCA Vik",
+      "RCA/Ariola",
+      "Sony Music",
+      "T.H.I.M.P., P.P.E.",
+      "Tele Clic",
+      "Universal Music, Karussell",
+      "Vik"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Relaxing The Mind",
+    "mbid": "",
+    "listeners": 15263,
+    "playcount": 47112,
+    "listener_play_ratio": 3.09,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Relaxing+The+Mind\">Read more on Last.fm</a>",
+    "tags": [
+      "ambient"
+    ],
+    "similar_artists": [
+      "Jane Quin",
+      "Shiroma Rin",
+      "Berlin Rain",
+      "Mind & Body",
+      "Experience Nature"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Mediterranean Pine Forest On A Wednesday",
+        "listeners": 13429,
+        "playcount": 36774
+      },
+      {
+        "name": "With River Sounds Of The Pyrenean Mountains I",
+        "listeners": 1532,
+        "playcount": 6511
+      },
+      {
+        "name": "With Gentle Forest Sounds I",
+        "listeners": 952,
+        "playcount": 1913
+      },
+      {
+        "name": "Mediterranean Birds On A Monday",
+        "listeners": 278,
+        "playcount": 729
+      },
+      {
+        "name": "Tuesday's Nature In A Mediterranean Forest",
+        "listeners": 210,
+        "playcount": 679
+      },
+      {
+        "name": "Early Friday Morning In A Mediterranean Forest",
+        "listeners": 88,
+        "playcount": 204
+      },
+      {
+        "name": "Mediterranean Afternoon On A Thursday",
+        "listeners": 76,
+        "playcount": 216
+      },
+      {
+        "name": "Birds In The Andalusian Fields",
+        "listeners": 6,
+        "playcount": 12
+      },
+      {
+        "name": "Andalusian Nature In Spring",
+        "listeners": 3,
+        "playcount": 3
+      },
+      {
+        "name": "Ocean Breeze Calm",
+        "listeners": 2,
+        "playcount": 9
+      }
+    ],
+    "url": "https://www.last.fm/music/Relaxing+The+Mind"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

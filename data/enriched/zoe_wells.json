@@ -1,0 +1,105 @@
+{
+  "artist_name": "Zoe Wells",
+  "artist_id": "zoe_wells",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T20:09:09.044964+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Zoe Wells', got 'Zoe Wees'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 13422972,
+    "name": "Bryce Drew",
+    "profile": "Miami-born singer-songwriter Bryce Drew’s time has come to share her remarkable personal narratives with the world. The daughter of Trinidadian and American parents, Bryce sang in choir before picking up guitar at 16 to serenade her grandmother suffering from Alzheimer’s. She quickly learned the healing power of music, both for others and herself.\r\n\r\nThe emotional landscape of Bryce Drew's music is brilliantly unsteady, with peaks and valleys ascending from emotive ballads into rhythmic pop anthems that carry the heartbeat of her Caribbean roots. But in her soulful dexterity as an artist, and her innate ability to draw out complex emotions often hidden in the mundane, Bryce Drew shows she has all the elements of an icon in the making. With sonic support from producer and collaborator Greg Wells (Adele,Dua Lipa), the singer, songwriter, and multi-instrumentalist grafts vintage influences with the aesthetic and momentum of modern pop, reflecting inspiration from the likes of Joni Mitchel",
+    "realname": "",
+    "social_urls": [
+      "http://www.brycedrew.com",
+      "https://www.instagram.com/brycedrew/",
+      "https://www.youtube.com/brycedrew",
+      "https://www.tiktok.com/@brycedrew",
+      "https://open.spotify.com/artist/0voFFXMYiielT0CtNVPa34?si=bDG9XpysS1q9nIifEDoWug"
+    ],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Vote",
+    "physical_releases": 0,
+    "digital_only_releases": 5,
+    "total_releases": 5,
+    "formats": [
+      "File, MP3, WAV, Single"
+    ],
+    "labels": [
+      "NoiseWells",
+      "Noisewells"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "ZOE WELLS",
+    "mbid": "",
+    "listeners": 701,
+    "playcount": 11104,
+    "listener_play_ratio": 15.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/ZOE+WELLS\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Ollie The Bear",
+      "Mathilda Nuit",
+      "Magnus Silver",
+      "Dosy Baby Tunes",
+      "A. Rustique"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lavender Lullabies",
+        "listeners": 700,
+        "playcount": 10847
+      },
+      {
+        "name": "What Child is This",
+        "listeners": 1,
+        "playcount": 257
+      }
+    ],
+    "url": "https://www.last.fm/music/ZOE+WELLS"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

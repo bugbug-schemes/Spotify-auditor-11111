@@ -1,0 +1,149 @@
+{
+  "artist_name": "Starfield Echo",
+  "artist_id": "starfield_echo",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T17:16:55.438401+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 327359571,
+    "name": "Starfield Echo",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/327359571",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/def96b5db040caca58782865dd6f5994/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Slowfall",
+        "label": "",
+        "release_date": "2025-09-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Blur of the Deep",
+        "label": "",
+        "release_date": "2025-08-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "repos",
+        "label": "",
+        "release_date": "2025-08-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Somnara",
+        "label": "",
+        "release_date": "2025-07-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A Sky Inside",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Starfield Echo",
+    "mbid": "",
+    "listeners": 27821,
+    "playcount": 139144,
+    "listener_play_ratio": 5.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Starfield+Echo\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Lo Cendrisse",
+      "ethereon",
+      "Sonorous Drone",
+      "Whispering Dunes",
+      "greyling"
+    ],
+    "top_tracks": [
+      {
+        "name": "A Sky Inside",
+        "listeners": 22017,
+        "playcount": 100649
+      },
+      {
+        "name": "repos",
+        "listeners": 5515,
+        "playcount": 26796
+      },
+      {
+        "name": "Slowfall",
+        "listeners": 2423,
+        "playcount": 11690
+      },
+      {
+        "name": "Blur of the Deep",
+        "listeners": 8,
+        "playcount": 8
+      },
+      {
+        "name": "Somnara",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Starfield+Echo"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

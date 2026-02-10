@@ -1,0 +1,559 @@
+{
+  "artist_name": "Hiromi",
+  "artist_id": "hiromi",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T14:08:49.165642+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ab3e1803-033b-4a4e-9bff-133e106579cd",
+    "type": "Person",
+    "country": "JP",
+    "area": "Japan",
+    "begin_date": "",
+    "end_date": "2010-07-16",
+    "gender": "female",
+    "genres": [],
+    "aliases": [
+      "加藤博美",
+      "加藤博美",
+      "Hiromi"
+    ],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 15354,
+    "name": "Hiromi",
+    "nb_fan": 24601,
+    "nb_album": 32,
+    "link": "https://www.deezer.com/artist/15354",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/094d6838cd806acf3ec76a82765701f7/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Anthony Jackson",
+      "Oli Rockberger",
+      "Simon Phillips",
+      "Sonicwonder"
+    ],
+    "contributor_roles": {
+      "Sonicwonder": [
+        "Featured"
+      ],
+      "Anthony Jackson": [
+        "Featured"
+      ],
+      "Simon Phillips": [
+        "Featured"
+      ],
+      "Oli Rockberger": [
+        "Featured"
+      ]
+    },
+    "track_titles": [
+      "Wanted",
+      "Player",
+      "Capecod Chips",
+      "BQE",
+      "Up",
+      "Desire",
+      "Someday",
+      "Utopia",
+      "Dreamer",
+      "Wanderer",
+      "Place To Be",
+      "Yes! Ramen!!",
+      "If...",
+      "Kick off",
+      "Reminiscence",
+      "OUT THERE: Strollin'",
+      "Day by day",
+      "Take Me Away",
+      "Life Goes On",
+      "The Tom and Jerry Show",
+      "Summer Rain",
+      "Seeker",
+      "Kaleidoscope",
+      "Bern Baby Bern",
+      "Mr. C.C."
+    ],
+    "track_durations": [
+      432,
+      552,
+      341,
+      356,
+      537,
+      436,
+      325,
+      435,
+      511,
+      537,
+      399,
+      494,
+      430,
+      87,
+      383,
+      403,
+      101,
+      445,
+      409,
+      366,
+      367,
+      445,
+      486,
+      176,
+      367
+    ],
+    "track_ranks": [
+      309947,
+      217976,
+      130585,
+      79600,
+      170276,
+      210506,
+      121635,
+      185695,
+      293618,
+      204932,
+      129430,
+      221487,
+      112574,
+      109387,
+      179606,
+      172775,
+      142454,
+      116247,
+      147773,
+      127450,
+      204669,
+      314976,
+      217088,
+      96683,
+      144038
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 21,
+      "ep": 1,
+      "single": 10
+    },
+    "albums": [
+      {
+        "title": "Electrifying Piano",
+        "label": "",
+        "release_date": "2025-10-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Page30 (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2025-04-11",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "OUT THERE",
+        "label": "",
+        "release_date": "2025-04-04",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Step Into Paradise -LIVE IN TOKYO-",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Sonicwonderland",
+        "label": "",
+        "release_date": "2023-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "BLUE GIANT (Original Motion Picture Soundtrack)",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Silver Lining Suite",
+        "label": "",
+        "release_date": "2021-10-08",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spectrum",
+        "label": "",
+        "release_date": "2019-09-18",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Live In Montreal",
+        "label": "",
+        "release_date": "2017-10-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Ramen Na Onnatachi: Live in Tokyo",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spark",
+        "label": "",
+        "release_date": "2016-04-01",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Alive",
+        "label": "",
+        "release_date": "2014-06-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Move",
+        "label": "",
+        "release_date": "2013-02-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Voice",
+        "label": "",
+        "release_date": "2011-07-05",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Get Together - Live in Tokyo",
+        "label": "",
+        "release_date": "2011-11-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Place To Be",
+        "label": "",
+        "release_date": "2010-02-23",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hiromi's Sonicbloom: Beyond Standard",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Hiromi's Sonicbloom: Time Control",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Spiral",
+        "label": "",
+        "release_date": "2021-03-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Brain",
+        "label": "",
+        "release_date": "2004-05-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Another Mind",
+        "label": "",
+        "release_date": "2021-06-25",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Natuyorimonagai",
+        "label": "",
+        "release_date": "2020-06-03",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "OUT THERE: Strollin’ (Live at Sony Hall/ 2025)",
+        "label": "",
+        "release_date": "2025-12-12",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pendulum",
+        "label": "",
+        "release_date": "2025-02-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Balloon Pop",
+        "label": "",
+        "release_date": "2025-01-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Kawarushi (Live at Tokyo Opera City Concert Hall / 2024)",
+        "label": "",
+        "release_date": "2024-11-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reminiscence",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sonicwonderland",
+        "label": "",
+        "release_date": "2023-08-18",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "BLUE GIANT (From \"BLUE GIANT\" Soundtrack)",
+        "label": "",
+        "release_date": "2023-02-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cantabile",
+        "label": "",
+        "release_date": "2021-05-23",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Joshua Redman",
+      "Pat Metheny",
+      "Joey Alexander",
+      "Esbjörn Svensson Trio",
+      "Brad Mehldau Trio",
+      "Julien Lourau",
+      "Kyle Eastwood",
+      "Omer Avital",
+      "Eric Legnini Trio",
+      "Aldo Romano"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 780467,
+    "name": "Hiromi Yasuda",
+    "profile": "Japanese acoustic and electric guitarist and arranger, married to [a=Hako Yamasaki].\r\nBorn April 7 1948, died July 6 2020.",
+    "realname": "安田裕美 (Yasuda Hiromi)",
+    "social_urls": [
+      "https://ja.wikipedia.org/wiki/%E5%AE%89%E7%94%B0%E8%A3%95%E7%BE%8E"
+    ],
+    "members": [],
+    "groups": [
+      "Flying Kitty Band",
+      "六文銭"
+    ],
+    "data_quality": "Needs Vote",
+    "physical_releases": 44,
+    "digital_only_releases": 56,
+    "total_releases": 100,
+    "formats": [
+      "",
+      "12\", Single",
+      "24xCD, Comp, RM + Box, Ltd",
+      "2x7\", Single, Tra + 2x7\", Single, Yel + 2x7\", Sing",
+      "2xCD, Album",
+      "2xCD, Album, Comp, RE",
+      "2xCD, Comp, RM",
+      "3xCD, Comp, RM",
+      "7\", Single",
+      "7\", Single, Promo",
+      "CD, Album",
+      "CD, Album, Comp",
+      "CD, Album, Ltd, SHM + Blu-ray, Ltd",
+      "CD, Album, Promo",
+      "CD, Album, SHM + DVD-V",
+      "CD, Comp",
+      "CD, Maxi",
+      "CD, Mini, Single",
+      "CD, MiniAlbum",
+      "CDr, EP, Ltd",
+      "Cass, Comp",
+      "LP",
+      "LP, Album",
+      "LP, Comp",
+      "LP, Gat"
+    ],
+    "labels": [
+      "Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark, Aard-Vark",
+      "Aniplex",
+      "CBS/Sony",
+      "CBS/Sony, Sound Development",
+      "Columbia",
+      "Dreamusic",
+      "East (5), News (3)",
+      "Eastworld",
+      "Express",
+      "For Life Wing, For Life Records",
+      "Humming Bird (2)",
+      "Invitation",
+      "Japan Record",
+      "Kitty Records",
+      "Moon Records (5)",
+      "Panam",
+      "Panam, Panam",
+      "Platz",
+      "Polydor",
+      "Polydor, Monkey Five Records",
+      "Pony Canyon",
+      "Pony Canyon, Aard-Vark",
+      "Riv.Star Records",
+      "SMEJ",
+      "Stereo Sound (4)",
+      "Taurus (7)",
+      "Teichiku Records",
+      "Tokuma Japan Communications, Japan Record",
+      "Universal Music",
+      "Universal Music Group, HMV Record Shop",
+      "Vap",
+      "Yoo-Loo"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Hiromi",
+    "mbid": "91df368e-a22a-429e-853a-ce78bbc42e43",
+    "listeners": 194371,
+    "playcount": 3455479,
+    "listener_play_ratio": 17.78,
+    "bio_exists": true,
+    "bio_summary": "There are several artists with this name: 1) Hiromi Uehara, 2) Hiromi Miyake (宏実), 3) Hiromi Yanagihara, 4) Hiromi Kurosawa (黒沢ひろみ) and 5) Hiromi Iwasaki (岩崎宏美) . \n\n1) Hiromi  Uehara (上原ひろみ, born 26 March 1979) is a Japanese jazz composer and pianist. She is known for her virtuosic technique, energetic live performances and blend of jazz with other musical genres such as progressive rock, classical and fusion in her compositions. <a href=\"https://www.last.fm/music/Hiromi\">Read more on Last.fm</a",
+    "tags": [
+      "jazz",
+      "piano",
+      "jazz fusion",
+      "japanese",
+      "Fusion"
+    ],
+    "similar_artists": [
+      "Hiromi's Sonicbloom",
+      "Hiromi, Anthony Jackson, Simon Phillips",
+      "Chihiro Yamanaka",
+      "Yellowjackets",
+      "Chick Corea"
+    ],
+    "top_tracks": [
+      {
+        "name": "Beethoven's Piano Sonata No. 8, Pathetique",
+        "listeners": 35606,
+        "playcount": 115790
+      },
+      {
+        "name": "Another autumn",
+        "listeners": 26797,
+        "playcount": 75478
+      },
+      {
+        "name": "Voice",
+        "listeners": 25411,
+        "playcount": 97446
+      },
+      {
+        "name": "Seeker",
+        "listeners": 21495,
+        "playcount": 82330
+      },
+      {
+        "name": "Blackbird",
+        "listeners": 18446,
+        "playcount": 59022
+      },
+      {
+        "name": "XYZ",
+        "listeners": 16743,
+        "playcount": 54878
+      },
+      {
+        "name": "Desire",
+        "listeners": 14129,
+        "playcount": 59233
+      },
+      {
+        "name": "Summer Rain",
+        "listeners": 13190,
+        "playcount": 46711
+      },
+      {
+        "name": "Flashback",
+        "listeners": 12698,
+        "playcount": 49353
+      },
+      {
+        "name": "Joy",
+        "listeners": 11923,
+        "playcount": 36959
+      }
+    ],
+    "url": "https://www.last.fm/music/Hiromi"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

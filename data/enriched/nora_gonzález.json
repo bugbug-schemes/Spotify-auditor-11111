@@ -1,0 +1,520 @@
+{
+  "artist_name": "Nora González",
+  "artist_id": "nora_gonzález",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T16:05:41.213996+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "ed56bb93-db03-444a-9e45-b91ef6a22557",
+    "type": "Person",
+    "country": "",
+    "area": "",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/0BVCyIztXUUpw2Ek7REmd9"
+    },
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 87904862,
+    "name": "Nora González",
+    "nb_fan": 91,
+    "nb_album": 46,
+    "link": "https://www.deezer.com/artist/87904862",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/d04aed515e76642fb7ffe06c0b5b5252/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "Alex Inda",
+      "Bertín Osborne",
+      "Carmen Ruiz",
+      "Chico Che Chico",
+      "David Pena",
+      "Instituto Mexicano del Mariachi",
+      "Iskander",
+      "Jackie Coleman",
+      "Jessica Medina",
+      "Julie Acosta",
+      "Los Rumberos",
+      "Lupita Infante",
+      "Mai-Elka Prado",
+      "Nancy Sanchez",
+      "Olympia Tril",
+      "Sanjuan",
+      "Stephanie Bergara"
+    ],
+    "contributor_roles": {
+      "Lupita Infante": [
+        "Main"
+      ],
+      "Los Rumberos": [
+        "Main"
+      ],
+      "Bertín Osborne": [
+        "Main"
+      ],
+      "Instituto Mexicano del Mariachi": [
+        "Main",
+        "Featured"
+      ],
+      "Alex Inda": [
+        "Main"
+      ],
+      "Iskander": [
+        "Main"
+      ],
+      "Sanjuan": [
+        "Main"
+      ],
+      "Jessica Medina": [
+        "Main"
+      ],
+      "Julie Acosta": [
+        "Main"
+      ],
+      "Carmen Ruiz": [
+        "Main"
+      ],
+      "Olympia Tril": [
+        "Main"
+      ],
+      "Stephanie Bergara": [
+        "Main"
+      ],
+      "Mai-Elka Prado": [
+        "Main"
+      ],
+      "Nancy Sanchez": [
+        "Main"
+      ],
+      "Jackie Coleman": [
+        "Main"
+      ],
+      "David Pena": [
+        "Main"
+      ],
+      "Chico Che Chico": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Te Digo No",
+      "Hurt",
+      "Preso (Grabado en ONErpm Studios)",
+      "Mi Reflejo",
+      "Pero Me Acuerdo De Ti",
+      "Se Te Olvidó",
+      "Amor de Todos Mis Amores (En Vivo)",
+      "Se Rompió la Cuerda",
+      "Con Tu Recuerdo",
+      "Dime Si Es Normal",
+      "Sin Miedo A Nada",
+      "Cicatrices",
+      "El Burrito Sabanero",
+      "Tributo a Selena (Como la Flor / Amor Prohibido / Bidi Bidi Bom Bom)",
+      "Gracias A La Vida",
+      "Vuelve"
+    ],
+    "track_durations": [
+      154,
+      241,
+      175,
+      214,
+      255,
+      186,
+      168,
+      202,
+      177,
+      136,
+      241,
+      186,
+      231,
+      367,
+      207,
+      209
+    ],
+    "track_ranks": [
+      52889,
+      30891,
+      68732,
+      54826,
+      39387,
+      52068,
+      3911,
+      22266,
+      19072,
+      53090,
+      26987,
+      32484,
+      2767,
+      24834,
+      32546,
+      54570
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 4,
+      "ep": 1,
+      "single": 41
+    },
+    "albums": [
+      {
+        "title": "#RANCHICAN",
+        "label": "",
+        "release_date": "2025-05-26",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mariachi Bebecín",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Xtina",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "#Charramillennial - Lady",
+        "label": "",
+        "release_date": "2021-04-16",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Mi Corazoncito, Vol. II",
+        "label": "",
+        "release_date": "2019-01-11",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dime Si Es Normal",
+        "label": "",
+        "release_date": "2025-12-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corrido de Chihuahua",
+        "label": "",
+        "release_date": "2025-08-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "si me quito la pena",
+        "label": "",
+        "release_date": "2025-04-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "hasta ser viejitos",
+        "label": "",
+        "release_date": "2025-03-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Capricho Mío",
+        "label": "",
+        "release_date": "2024-08-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Enemigos",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soy de Parral (Versión Acústica)",
+        "label": "",
+        "release_date": "2024-03-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ese Tren Ya Se Fué (Acústico)",
+        "label": "",
+        "release_date": "2024-02-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Esa Señal (Versión Acústica)",
+        "label": "",
+        "release_date": "2024-01-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Secreto A Voces (Versión Acústica)",
+        "label": "",
+        "release_date": "2024-01-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Noche de paz (Regional Wonderland de Canela TV)",
+        "label": "",
+        "release_date": "2023-12-22",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Con Tu Recuerdo (Demo)",
+        "label": "",
+        "release_date": "2023-11-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Esa Señal",
+        "label": "",
+        "release_date": "2023-08-31",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soy de Parral",
+        "label": "",
+        "release_date": "2023-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Secreto a Voces",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Con Tu Recuerdo (Versión Acústica)",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Así Nomás",
+        "label": "",
+        "release_date": "2023-02-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Con Tu Recuerdo",
+        "label": "",
+        "release_date": "2022-12-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ella",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mi Reflejo",
+        "label": "",
+        "release_date": "2022-06-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Say Something",
+        "label": "",
+        "release_date": "2022-04-29",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Pero Me Acuerdo de Ti",
+        "label": "",
+        "release_date": "2022-03-25",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "El Burrito Sabanero",
+        "label": "",
+        "release_date": "2021-12-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Mojado",
+        "label": "",
+        "release_date": "2021-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Corazón De Madera",
+        "label": "",
+        "release_date": "2021-08-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Lila Downs",
+      "Flor de Toloache",
+      "Chava Flores",
+      "Daniel, Me Estás Matando",
+      "La Isla Centeno",
+      "Chlöe's Clue",
+      "Felipe Botello y El Sonoro Rugir",
+      "Bunbury",
+      "Panteón Rococó",
+      "Escarlata"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 11351243,
+    "name": "Nora González",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "LP, Album"
+    ],
+    "labels": [
+      "Velvet (2)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Nora González",
+    "mbid": "",
+    "listeners": 2340,
+    "playcount": 10166,
+    "listener_play_ratio": 4.34,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Nora+Gonz%C3%A1lez\">Read more on Last.fm</a>",
+    "tags": [
+      "regional",
+      "mexico"
+    ],
+    "similar_artists": [
+      "Irene del Rosario",
+      "Laraim",
+      "Marissa Mur",
+      "Las Marías",
+      "Cheli Madrid"
+    ],
+    "top_tracks": [
+      {
+        "name": "Preso (Grabado en ONErpm Studios)",
+        "listeners": 1016,
+        "playcount": 3012
+      },
+      {
+        "name": "Sin Miedo A Nada",
+        "listeners": 235,
+        "playcount": 679
+      },
+      {
+        "name": "Si Tú No Estás",
+        "listeners": 209,
+        "playcount": 497
+      },
+      {
+        "name": "Cicatrices",
+        "listeners": 204,
+        "playcount": 1750
+      },
+      {
+        "name": "Pero Me Acuerdo de Ti",
+        "listeners": 131,
+        "playcount": 263
+      },
+      {
+        "name": "Lady",
+        "listeners": 123,
+        "playcount": 216
+      },
+      {
+        "name": "Mi Reflejo",
+        "listeners": 109,
+        "playcount": 224
+      },
+      {
+        "name": "El Burrito Sabanero",
+        "listeners": 103,
+        "playcount": 152
+      },
+      {
+        "name": "Hurt",
+        "listeners": 96,
+        "playcount": 169
+      },
+      {
+        "name": "Say Something",
+        "listeners": 89,
+        "playcount": 159
+      }
+    ],
+    "url": "https://www.last.fm/music/Nora+Gonz%C3%A1lez"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

@@ -1,0 +1,171 @@
+{
+  "artist_name": "Mill Basin",
+  "artist_id": "mill_basin",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:43:38.089093+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "58290454-0fab-463d-978c-ba050f62394d",
+    "type": "Group",
+    "country": "SE",
+    "area": "Sweden",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "",
+    "genres": [
+      "ambient",
+      "jazz"
+    ],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://open.spotify.com/artist/4lMgo5IwaCdF1fRSdubcUU",
+      "streaming": "https://tidal.com/artist/20885402"
+    },
+    "labels": [
+      "[no label]"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 188743997,
+    "name": "Mill Basin",
+    "nb_fan": 0,
+    "nb_album": 5,
+    "link": "https://www.deezer.com/artist/188743997",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/a11dcde622b5f50803dc5779d43a8f6e/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 5
+    },
+    "albums": [
+      {
+        "title": "Without saying much",
+        "label": "",
+        "release_date": "2026-02-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "A touch of breeze",
+        "label": "",
+        "release_date": "2026-01-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Heartfelt",
+        "label": "",
+        "release_date": "2025-11-21",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "There's Always A Way",
+        "label": "",
+        "release_date": "2023-06-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "February Brings The Rain",
+        "label": "",
+        "release_date": "2023-04-06",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mill Basin",
+    "mbid": "",
+    "listeners": 9605,
+    "playcount": 19258,
+    "listener_play_ratio": 2.0,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mill+Basin\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Half Past Blue",
+      "the velvet chords",
+      "Trio In Transit",
+      "Nocturne on 7th",
+      "The Indigo Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Heartfelt",
+        "listeners": 7149,
+        "playcount": 13329
+      },
+      {
+        "name": "February Brings The Rain",
+        "listeners": 2002,
+        "playcount": 4425
+      },
+      {
+        "name": "Without saying much",
+        "listeners": 616,
+        "playcount": 738
+      },
+      {
+        "name": "A touch of breeze",
+        "listeners": 434,
+        "playcount": 764
+      },
+      {
+        "name": "NYC Sounds Covid-19",
+        "listeners": 1,
+        "playcount": 2
+      }
+    ],
+    "url": "https://www.last.fm/music/Mill+Basin"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

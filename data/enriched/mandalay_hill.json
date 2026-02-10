@@ -1,0 +1,181 @@
+{
+  "artist_name": "Mandalay Hill",
+  "artist_id": "mandalay_hill",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:26:02.434828+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "03e1efc0-227f-4fbb-b792-f41e2d5988b3",
+    "type": "Other",
+    "country": "MM",
+    "area": "Myanmar",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "not applicable",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {},
+    "labels": [],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 183265937,
+    "name": "Mandalay Hill",
+    "nb_fan": 0,
+    "nb_album": 4,
+    "link": "https://www.deezer.com/artist/183265937",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/e263ceed533a071dc398ad76b21015e5/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "ep": 4
+    },
+    "albums": [
+      {
+        "title": "East of the River",
+        "label": "",
+        "release_date": "2022-08-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Out in Myeik",
+        "label": "",
+        "release_date": "2022-06-24",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Sounds of Burma",
+        "label": "",
+        "release_date": "2022-05-20",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Myanmar Rain",
+        "label": "",
+        "release_date": "2022-01-28",
+        "nb_tracks": 0,
+        "type": "ep"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mandalay Hill",
+    "mbid": "03e1efc0-227f-4fbb-b792-f41e2d5988b3",
+    "listeners": 18302,
+    "playcount": 78750,
+    "listener_play_ratio": 4.3,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mandalay+Hill\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Manaus",
+      "Wildazon",
+      "Djunjo",
+      "Epic Nature Sounds",
+      "Nicolas Gutierrez G."
+    ],
+    "top_tracks": [
+      {
+        "name": "Rainforest During The Night",
+        "listeners": 13726,
+        "playcount": 41930
+      },
+      {
+        "name": "Late Night In The Rainforest",
+        "listeners": 3862,
+        "playcount": 10246
+      },
+      {
+        "name": "Wet Leaves",
+        "listeners": 2682,
+        "playcount": 7123
+      },
+      {
+        "name": "Rainforest Dreaming",
+        "listeners": 2644,
+        "playcount": 7164
+      },
+      {
+        "name": "Meet Me In The Woods",
+        "listeners": 2491,
+        "playcount": 6777
+      },
+      {
+        "name": "Rainforest Precipitation",
+        "listeners": 349,
+        "playcount": 1453
+      },
+      {
+        "name": "In the Woods of Burma",
+        "listeners": 275,
+        "playcount": 414
+      },
+      {
+        "name": "Healing Forest Rain",
+        "listeners": 267,
+        "playcount": 637
+      },
+      {
+        "name": "Sleep In The Rainforest",
+        "listeners": 250,
+        "playcount": 441
+      },
+      {
+        "name": "East of the River",
+        "listeners": 212,
+        "playcount": 299
+      }
+    ],
+    "url": "https://www.last.fm/music/Mandalay+Hill"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 3
+}

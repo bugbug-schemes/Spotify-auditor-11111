@@ -1,0 +1,129 @@
+{
+  "artist_name": "Mike Hense",
+  "artist_id": "mike_hense",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:42:56.266979+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": false,
+    "raw": null,
+    "disambiguation_note": "Name mismatch: searched 'Mike Hense', got 'Make Sense'"
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 1811866,
+    "name": "Mike Hense",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 0,
+    "digital_only_releases": 2,
+    "total_releases": 2,
+    "formats": [
+      "",
+      "Cass, Comp, Ltd"
+    ],
+    "labels": [
+      "Not On Label (Spiral Self-released)"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Mike Hense",
+    "mbid": "",
+    "listeners": 4147,
+    "playcount": 13218,
+    "listener_play_ratio": 3.19,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Mike+Hense\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Yumi Ima",
+      "Suno Light",
+      "Jonas Björk",
+      "Cassian Haines",
+      "Auguste Braun"
+    ],
+    "top_tracks": [
+      {
+        "name": "Fields",
+        "listeners": 2610,
+        "playcount": 9282
+      },
+      {
+        "name": "As Long as You Are By My Side",
+        "listeners": 1378,
+        "playcount": 3457
+      },
+      {
+        "name": "Peacemaker",
+        "listeners": 229,
+        "playcount": 405
+      },
+      {
+        "name": "Seconds",
+        "listeners": 26,
+        "playcount": 57
+      },
+      {
+        "name": "In Your Loving Arms",
+        "listeners": 5,
+        "playcount": 11
+      },
+      {
+        "name": "A Song of Love",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "This Fall",
+        "listeners": 1,
+        "playcount": 3
+      },
+      {
+        "name": "Caressed By Stars",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Mike+Hense"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "deezer",
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

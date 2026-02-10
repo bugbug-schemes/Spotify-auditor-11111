@@ -1,0 +1,230 @@
+{
+  "artist_name": "Neil Dunker",
+  "artist_id": "neil_dunker",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:58:59.116617+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 197741437,
+    "name": "Neil Dunker",
+    "nb_fan": 0,
+    "nb_album": 12,
+    "link": "https://www.deezer.com/artist/197741437",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/9fe22269a9797b89e9e06d2fd90e316d/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Innermost Thoughts",
+      "Rudolph the red nosed reindeer",
+      "Rudolph The Red Nosed Reindeer"
+    ],
+    "track_durations": [
+      188,
+      124,
+      151
+    ],
+    "track_ranks": [
+      64236,
+      18201,
+      22394
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 12
+    },
+    "albums": [
+      {
+        "title": "Bittersweet",
+        "label": "",
+        "release_date": "2026-01-16",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rudolph the red nosed reindeer",
+        "label": "",
+        "release_date": "2025-11-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Innermost Thoughts",
+        "label": "",
+        "release_date": "2025-09-05",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Soft Touch",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Do You Want to Build A Snowman?",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Let It Snow",
+        "label": "",
+        "release_date": "2024-11-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Share Your Thoughts",
+        "label": "",
+        "release_date": "2024-10-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Night Garden",
+        "label": "",
+        "release_date": "2024-05-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rudolph The Red Nosed Reindeer",
+        "label": "",
+        "release_date": "2023-11-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Midnight Stroll",
+        "label": "",
+        "release_date": "2023-06-23",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Harper Street Blues",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Wiegenlied",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Neil Dunker",
+    "mbid": "",
+    "listeners": 24551,
+    "playcount": 55114,
+    "listener_play_ratio": 2.24,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Neil+Dunker\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Nocturne on 7th",
+      "The Fading Light Trio",
+      "Third Rail Trio",
+      "Trio In Transit",
+      "Midnight Window Trio"
+    ],
+    "top_tracks": [
+      {
+        "name": "Innermost Thoughts",
+        "listeners": 16577,
+        "playcount": 35335
+      },
+      {
+        "name": "Rudolph The Red Nosed Reindeer",
+        "listeners": 5854,
+        "playcount": 11068
+      },
+      {
+        "name": "Bittersweet",
+        "listeners": 4150,
+        "playcount": 6964
+      },
+      {
+        "name": "Share Your Thoughts",
+        "listeners": 487,
+        "playcount": 1082
+      },
+      {
+        "name": "Harper Street Blues",
+        "listeners": 327,
+        "playcount": 657
+      },
+      {
+        "name": "Neil Dunker",
+        "listeners": 2,
+        "playcount": 4
+      },
+      {
+        "name": "The Sequoia",
+        "listeners": 2,
+        "playcount": 2
+      },
+      {
+        "name": "Wiegenlied",
+        "listeners": 1,
+        "playcount": 1
+      },
+      {
+        "name": "Midnight Stroll",
+        "listeners": 1,
+        "playcount": 1
+      }
+    ],
+    "url": "https://www.last.fm/music/Neil+Dunker"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

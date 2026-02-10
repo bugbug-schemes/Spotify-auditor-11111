@@ -1,0 +1,474 @@
+{
+  "artist_name": "Megan Wofford",
+  "artist_id": "megan_wofford",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T15:37:24.075269+00:00",
+  "musicbrainz": {
+    "found": true,
+    "raw": null,
+    "mbid": "e371caf0-d65a-4f08-a304-bd928b480e27",
+    "type": "Person",
+    "country": "",
+    "area": "Los Angeles",
+    "begin_date": "",
+    "end_date": "",
+    "gender": "female",
+    "genres": [],
+    "aliases": [],
+    "isnis": [],
+    "ipis": [],
+    "urls": {
+      "free streaming": "https://www.deezer.com/artist/73719072",
+      "purchase for download": "https://www.epidemicsound.com/artists/megan-wofford/",
+      "social network": "https://www.instagram.com/meganwoffordmusic/",
+      "soundcloud": "https://soundcloud.com/meganwofford",
+      "streaming": "https://tidal.com/artist/16787073",
+      "youtube music": "https://music.youtube.com/channel/UCVW1hpMdxzEH4JlXKAnhFqA"
+    },
+    "labels": [
+      "Epidemic Sound"
+    ],
+    "disambiguation_confidence": "high"
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 73719072,
+    "name": "Megan Wofford",
+    "nb_fan": 183,
+    "nb_album": 83,
+    "link": "https://www.deezer.com/artist/73719072",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/4eecb47b5d69f8400dc754a93e20514f/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [
+      "LVLY"
+    ],
+    "contributor_roles": {
+      "LVLY": [
+        "Main"
+      ]
+    },
+    "track_titles": [
+      "Renew",
+      "Diamond",
+      "An Elevation",
+      "Refreshing",
+      "In the Stillness",
+      "Overcome",
+      "Into the Clouds",
+      "Simplicity",
+      "Awake",
+      "Dreamy",
+      "Way Way Back (Acoustic Version)",
+      "Transform",
+      "Love Always",
+      "Little Memories",
+      "Enchanted",
+      "Ballad in D Minor",
+      "Nevermore",
+      "Cool Tidings",
+      "Flourishing"
+    ],
+    "track_durations": [
+      157,
+      158,
+      173,
+      147,
+      149,
+      195,
+      155,
+      118,
+      142,
+      144,
+      283,
+      188,
+      159,
+      157,
+      210,
+      157,
+      254,
+      230,
+      208
+    ],
+    "track_ranks": [
+      390086,
+      37972,
+      234968,
+      106459,
+      213648,
+      119183,
+      52843,
+      219502,
+      120283,
+      173556,
+      140385,
+      209699,
+      74188,
+      78306,
+      30826,
+      39880,
+      32443,
+      25420,
+      33543
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "album": 1,
+      "ep": 11,
+      "single": 71
+    },
+    "albums": [
+      {
+        "title": "Whispers of My Imagination",
+        "label": "",
+        "release_date": "2021-09-03",
+        "nb_tracks": 0,
+        "type": "album"
+      },
+      {
+        "title": "Nocturne in the Rain",
+        "label": "",
+        "release_date": "2023-04-21",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Temperate Phase",
+        "label": "",
+        "release_date": "2023-02-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Mornings After Rain",
+        "label": "",
+        "release_date": "2023-01-27",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Unbound Tales of Serenity",
+        "label": "",
+        "release_date": "2022-08-19",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Infinite Boundaries",
+        "label": "",
+        "release_date": "2022-06-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Dreamy",
+        "label": "",
+        "release_date": "2021-04-02",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Lullabies for Dreamers",
+        "label": "",
+        "release_date": "2021-02-12",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "A Peaceful Christmas",
+        "label": "",
+        "release_date": "2020-11-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Uprise",
+        "label": "",
+        "release_date": "2020-10-16",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Redefine",
+        "label": "",
+        "release_date": "2020-07-17",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Little Memories",
+        "label": "",
+        "release_date": "2019-12-06",
+        "nb_tracks": 0,
+        "type": "ep"
+      },
+      {
+        "title": "Reclaim",
+        "label": "",
+        "release_date": "2026-02-03",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dancing Embers",
+        "label": "",
+        "release_date": "2026-01-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Afternoon Mood",
+        "label": "",
+        "release_date": "2025-11-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Still Night",
+        "label": "",
+        "release_date": "2025-11-04",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "With Quiet Strength",
+        "label": "",
+        "release_date": "2025-10-02",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Where Light Waits",
+        "label": "",
+        "release_date": "2025-09-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Cool Tidings",
+        "label": "",
+        "release_date": "2025-08-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Misty Drift",
+        "label": "",
+        "release_date": "2025-08-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Frosted Dawn",
+        "label": "",
+        "release_date": "2025-06-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Dearest One",
+        "label": "",
+        "release_date": "2025-06-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Nothin' but the Blues",
+        "label": "",
+        "release_date": "2025-05-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Ever After",
+        "label": "",
+        "release_date": "2025-03-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Rise Beyond",
+        "label": "",
+        "release_date": "2025-01-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Reimagine",
+        "label": "",
+        "release_date": "2024-12-06",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Winter Dreams",
+        "label": "",
+        "release_date": "2024-09-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Christmas Magic",
+        "label": "",
+        "release_date": "2024-09-13",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Crimson Blues",
+        "label": "",
+        "release_date": "2024-08-30",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Sapphire Dreams",
+        "label": "",
+        "release_date": "2024-06-28",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": [
+      "Franz Gordon",
+      "Magnus Ludvigsson",
+      "S.A. Karl",
+      "Gavin Luke",
+      "Lo Mimieux",
+      "Lama House",
+      "Johannes Bornlof",
+      "Ever So Blue",
+      "Éric Christian",
+      "Arden Forest"
+    ]
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": true,
+    "raw": null,
+    "discogs_id": 17118439,
+    "name": "Megan Wofford",
+    "profile": "",
+    "realname": "",
+    "social_urls": [],
+    "members": [],
+    "groups": [],
+    "data_quality": "Needs Major Changes",
+    "physical_releases": 1,
+    "digital_only_releases": 0,
+    "total_releases": 1,
+    "formats": [
+      "100xCD, Album + 10xCass, Album"
+    ],
+    "labels": [
+      "Not On Label"
+    ]
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Megan Wofford",
+    "mbid": "e371caf0-d65a-4f08-a304-bd928b480e27",
+    "listeners": 118505,
+    "playcount": 665007,
+    "listener_play_ratio": 5.61,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Megan+Wofford\">Read more on Last.fm</a>",
+    "tags": [
+      "piano",
+      "instrumental",
+      "United States",
+      "contemporary classical",
+      "modern classical"
+    ],
+    "similar_artists": [
+      "Arden Forest",
+      "Lo Mimieux",
+      "Gavin Luke",
+      "S.A. Karl",
+      "Franz Gordon"
+    ],
+    "top_tracks": [
+      {
+        "name": "Moonlight Dreams",
+        "listeners": 20875,
+        "playcount": 121033
+      },
+      {
+        "name": "Refreshing",
+        "listeners": 20206,
+        "playcount": 113991
+      },
+      {
+        "name": "Awake",
+        "listeners": 15701,
+        "playcount": 46559
+      },
+      {
+        "name": "In the Stillness",
+        "listeners": 13121,
+        "playcount": 48342
+      },
+      {
+        "name": "Beginning",
+        "listeners": 12487,
+        "playcount": 32882
+      },
+      {
+        "name": "An Elevation",
+        "listeners": 11549,
+        "playcount": 37517
+      },
+      {
+        "name": "Diamond",
+        "listeners": 7674,
+        "playcount": 17557
+      },
+      {
+        "name": "Into the Clouds",
+        "listeners": 7440,
+        "playcount": 16960
+      },
+      {
+        "name": "Cool Tidings",
+        "listeners": 6988,
+        "playcount": 12976
+      },
+      {
+        "name": "Renew",
+        "listeners": 6614,
+        "playcount": 28785
+      }
+    ],
+    "url": "https://www.last.fm/music/Megan+Wofford"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "musicbrainz",
+    "deezer",
+    "discogs",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "genius",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 4
+}

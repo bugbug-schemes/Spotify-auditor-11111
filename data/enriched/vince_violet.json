@@ -1,0 +1,225 @@
+{
+  "artist_name": "Vince Violet",
+  "artist_id": "vince_violet",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-09T18:57:28.731949+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 204619717,
+    "name": "Vince Violet",
+    "nb_fan": 3,
+    "nb_album": 11,
+    "link": "https://www.deezer.com/artist/204619717",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/520b0b2785d932fe65f7c3cdc55815d6/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [
+      "Greenery",
+      "Coco Island"
+    ],
+    "track_durations": [
+      144,
+      142
+    ],
+    "track_ranks": [
+      43686,
+      27031
+    ],
+    "has_explicit": false,
+    "album_types": {
+      "single": 11
+    },
+    "albums": [
+      {
+        "title": "Sun City",
+        "label": "",
+        "release_date": "2025-09-19",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Lake View",
+        "label": "",
+        "release_date": "2025-03-14",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Greenery",
+        "label": "",
+        "release_date": "2025-01-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Raspberry",
+        "label": "",
+        "release_date": "2024-11-01",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Palermo",
+        "label": "",
+        "release_date": "2024-05-10",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Coco Island",
+        "label": "",
+        "release_date": "2024-03-08",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Portofino",
+        "label": "",
+        "release_date": "2023-09-15",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Maybe",
+        "label": "",
+        "release_date": "2023-06-09",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Clearly",
+        "label": "",
+        "release_date": "2023-04-28",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Papaya Jam",
+        "label": "",
+        "release_date": "2023-03-17",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Greenery",
+        "label": "",
+        "release_date": "2025-03-26",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Vince Violet",
+    "mbid": "",
+    "listeners": 14456,
+    "playcount": 42648,
+    "listener_play_ratio": 2.95,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Vince+Violet\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Phoenix Rouge",
+      "Generation.",
+      "Mygg An",
+      "Lndonfox",
+      "longwayfromhome"
+    ],
+    "top_tracks": [
+      {
+        "name": "Lake View",
+        "listeners": 7792,
+        "playcount": 15737
+      },
+      {
+        "name": "Greenery",
+        "listeners": 6601,
+        "playcount": 15956
+      },
+      {
+        "name": "Raspberry",
+        "listeners": 2439,
+        "playcount": 5594
+      },
+      {
+        "name": "Papaya Jam",
+        "listeners": 1128,
+        "playcount": 2639
+      },
+      {
+        "name": "Coco Island",
+        "listeners": 570,
+        "playcount": 1349
+      },
+      {
+        "name": "Clearly",
+        "listeners": 317,
+        "playcount": 704
+      },
+      {
+        "name": "Palermo",
+        "listeners": 225,
+        "playcount": 583
+      },
+      {
+        "name": "Sun City",
+        "listeners": 14,
+        "playcount": 17
+      },
+      {
+        "name": "Portofino",
+        "listeners": 10,
+        "playcount": 17
+      },
+      {
+        "name": "Maybe",
+        "listeners": 8,
+        "playcount": 46
+      }
+    ],
+    "url": "https://www.last.fm/music/Vince+Violet"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}

@@ -1,0 +1,130 @@
+{
+  "artist_name": "Adrien Magnusen",
+  "artist_id": "adrien_magnusen",
+  "seed_source": {
+    "origin": "pfc_playlist_scrape",
+    "note": "Extracted from 37 PFC editorial playlists"
+  },
+  "enrichment_timestamp": "2026-02-08T20:44:03.811149+00:00",
+  "musicbrainz": {
+    "found": false,
+    "raw": null
+  },
+  "deezer": {
+    "found": true,
+    "raw": null,
+    "deezer_id": 289837651,
+    "name": "Adrien Magnusen",
+    "nb_fan": 2,
+    "nb_album": 3,
+    "link": "https://www.deezer.com/artist/289837651",
+    "picture_url": "https://cdn-images.dzcdn.net/images/artist/30d83b42879ff6200e8ccc341100c5f9/250x250-000000-80-0-0.jpg",
+    "labels": [],
+    "contributors": [],
+    "contributor_roles": {},
+    "track_titles": [],
+    "track_durations": [],
+    "track_ranks": [],
+    "has_explicit": false,
+    "album_types": {
+      "single": 3
+    },
+    "albums": [
+      {
+        "title": "Gamma Eclipse",
+        "label": "",
+        "release_date": "2025-02-07",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Familiar Hemisphere",
+        "label": "",
+        "release_date": "2024-12-27",
+        "nb_tracks": 0,
+        "type": "single"
+      },
+      {
+        "title": "Binary Resonance",
+        "label": "",
+        "release_date": "2024-11-29",
+        "nb_tracks": 0,
+        "type": "single"
+      }
+    ],
+    "related_artists": []
+  },
+  "genius": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "discogs": {
+    "found": false,
+    "raw": null
+  },
+  "setlistfm": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "lastfm": {
+    "found": true,
+    "raw": null,
+    "name": "Adrien Magnusen",
+    "mbid": "",
+    "listeners": 57662,
+    "playcount": 278886,
+    "listener_play_ratio": 4.84,
+    "bio_exists": false,
+    "bio_summary": " <a href=\"https://www.last.fm/music/Adrien+Magnusen\">Read more on Last.fm</a>",
+    "tags": [],
+    "similar_artists": [
+      "Esotherum",
+      "Oliver Ólafsson",
+      "Lost Lumina",
+      "Moon Whisperer",
+      "Pius Sylla"
+    ],
+    "top_tracks": [
+      {
+        "name": "Familiar Hemisphere",
+        "listeners": 42014,
+        "playcount": 220199
+      },
+      {
+        "name": "Astronaut Scent",
+        "listeners": 15076,
+        "playcount": 49253
+      },
+      {
+        "name": "Gamma Eclipse",
+        "listeners": 2952,
+        "playcount": 9361
+      },
+      {
+        "name": "Binary Resonance",
+        "listeners": 2,
+        "playcount": 73
+      }
+    ],
+    "url": "https://www.last.fm/music/Adrien+Magnusen"
+  },
+  "bandsintown": {
+    "found": false,
+    "raw": null,
+    "status": "not_configured"
+  },
+  "platforms_found": [
+    "deezer",
+    "lastfm"
+  ],
+  "platforms_missing": [
+    "musicbrainz",
+    "genius",
+    "discogs",
+    "setlistfm",
+    "bandsintown"
+  ],
+  "platform_count": 2
+}
