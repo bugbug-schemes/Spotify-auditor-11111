@@ -21,6 +21,10 @@ venv/
 spotify_audit/data/cache.db
 spotify_audit/data/entities.db
 
+# Web server
+web/.server.pid
+web/server.log
+
 # OS
 .DS_Store
 Thumbs.db
