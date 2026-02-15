@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spotify Audit</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: #0f0f0f; color: #e0e0e0;
+    min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+    padding: 2rem 1rem;
+  }
+  .app { max-width: 640px; width: 100%; }
+
+  /* Header */
+  .logo { color: #1DB954; font-size: 2rem; font-weight: 800; margin-bottom: 0.3rem; }
+  .tagline { color: #888; font-size: 0.95rem; margin-bottom: 2rem; }
+
+  /* Form */
+  .scan-form {
+    background: #1a1a1a; border: 1px solid #333; border-radius: 12px;
+    padding: 1.5rem; margin-bottom: 1.5rem;
+  }
+  .form-label { display: block; color: #aaa; font-size: 0.85rem; margin-bottom: 0.4rem; font-weight: 500; }
+  .url-input {
+    width: 100%; padding: 0.75rem 1rem; border-radius: 8px;
+    border: 1px solid #444; background: #111; color: #fff;
+    font-size: 1rem; outline: none; transition: border-color 0.2s;
+  }
+  .url-input:focus { border-color: #1DB954; }
+  .url-input::placeholder { color: #555; }
+
+  .form-row { display: flex; gap: 0.8rem; margin-top: 1rem; align-items: end; }
+  .tier-group { flex: 0 0 auto; }
+  .tier-select {
+    padding: 0.7rem 0.8rem; border-radius: 8px;
+    border: 1px solid #444; background: #111; color: #fff;
+    font-size: 0.9rem; cursor: pointer;
+  }
+
+  .scan-btn {
+    flex: 1; padding: 0.75rem 1.5rem; border: none; border-radius: 8px;
+    background: #1DB954; color: #000; font-size: 1rem; font-weight: 700;
+    cursor: pointer; transition: background 0.2s;
+  }
+  .scan-btn:hover { background: #1ed760; }
+  .scan-btn:disabled { background: #333; color: #666; cursor: not-allowed; }
+
+  /* Progress */
+  .progress-panel {
+    display: none;
+    background: #1a1a1a; border: 1px solid #333; border-radius: 12px;
+    padding: 1.5rem; margin-bottom: 1.5rem;
+  }
+  .progress-panel.visible { display: block; }
+  .progress-header { display: flex; justify-content: space-between; margin-bottom: 0.8rem; }
+  .progress-phase { font-weight: 600; color: #1DB954; }
+  .progress-time { color: #666; font-size: 0.85rem; }
+  .progress-bar-bg {
+    height: 8px; background: #333; border-radius: 4px; overflow: hidden;
+    margin-bottom: 0.6rem;
+  }
+  .progress-bar-fill {
+    height: 100%; background: #1DB954; border-radius: 4px;
+    transition: width 0.3s ease;
+    width: 0%;
+  }
+  .progress-message { color: #aaa; font-size: 0.9rem; }
+
+  /* Error */
+  .error-panel {
+    display: none; background: #2a1010; border: 1px solid #5a2020;
+    border-radius: 12px; padding: 1.2rem; margin-bottom: 1.5rem;
+    color: #ff6b6b; font-size: 0.9rem;
+  }
+  .error-panel.visible { display: block; }
+
+  /* Result */
+  .result-panel {
+    display: none; background: #1a1a1a; border: 1px solid #333;
+    border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  .result-panel.visible { display: block; }
+  .result-panel h3 { color: #1DB954; margin-bottom: 0.8rem; }
+  .report-link {
+    display: inline-block; padding: 0.7rem 2rem; border-radius: 8px;
+    background: #1DB954; color: #000; font-weight: 700; text-decoration: none;
+    font-size: 1rem; transition: background 0.2s;
+  }
+  .report-link:hover { background: #1ed760; }
+  .new-scan-btn {
+    display: inline-block; margin-top: 0.8rem; padding: 0.5rem 1.2rem;
+    border: 1px solid #444; border-radius: 8px; background: transparent;
+    color: #aaa; cursor: pointer; font-size: 0.85rem;
+  }
+  .new-scan-btn:hover { color: #fff; border-color: #666; }
+
+  /* Footer */
+  .footer { margin-top: auto; padding-top: 2rem; color: #444; font-size: 0.75rem; text-align: center; }
+
+  /* Recent scans */
+  .recent { margin-top: 1.5rem; }
+  .recent h4 { color: #666; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; }
+  .recent-item {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 0.5rem 0; border-bottom: 1px solid #222; font-size: 0.85rem;
+  }
+  .recent-name { color: #ccc; }
+  .recent-link { color: #1DB954; text-decoration: none; font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<div class="app">
+  <div class="logo">Spotify Audit</div>
+  <p class="tagline">Detect fake, AI-generated, and ghost artists in Spotify playlists</p>
+
+  <div class="scan-form">
+    <label class="form-label" for="url">Playlist URL</label>
+    <input class="url-input" id="url" type="text"
+           placeholder="https://open.spotify.com/playlist/..." autofocus>
+    <div class="form-row">
+      <div class="tier-group">
+        <label class="form-label" for="tier">Analysis Tier</label>
+        <select class="tier-select" id="tier">
+          <option value="quick">Quick</option>
+          <option value="standard" selected>Standard</option>
+          <option value="deep">Deep</option>
+        </select>
+      </div>
+      <button class="scan-btn" id="scanBtn" onclick="startScan()">Scan Playlist</button>
+    </div>
+  </div>
+
+  <div class="progress-panel" id="progressPanel">
+    <div class="progress-header">
+      <span class="progress-phase" id="progressPhase">Starting...</span>
+      <span class="progress-time" id="progressTime">0s</span>
+    </div>
+    <div class="progress-bar-bg">
+      <div class="progress-bar-fill" id="progressBar"></div>
+    </div>
+    <div class="progress-message" id="progressMsg">Preparing scan...</div>
+  </div>
+
+  <div class="error-panel" id="errorPanel"></div>
+
+  <div class="result-panel" id="resultPanel">
+    <h3 id="resultTitle">Scan Complete</h3>
+    <a class="report-link" id="reportLink" href="#" target="_blank">View Full Report</a>
+    <br>
+    <button class="new-scan-btn" onclick="resetForm()">Scan Another Playlist</button>
+  </div>
+
+  <div class="recent" id="recentScans" style="display:none">
+    <h4>Recent Scans</h4>
+    <div id="recentList"></div>
+  </div>
+</div>
+
+<div class="footer">
+  Spotify Audit — No Spotify API key required. Data sourced from public endpoints + 7 music APIs.
+</div>
+
+<script>
+let currentScanId = null;
+let pollInterval = null;
+
+const PHASE_LABELS = {
+  'fetch': 'Fetching Playlist',
+  'resolve': 'Resolving Artists',
+  'evaluate': 'Evaluating Evidence',
+  'deep': 'Deep Analysis (Claude)',
+  'done': 'Complete',
+  'error': 'Error',
+  'starting': 'Starting...',
+};
+
+function startScan() {
+  const url = document.getElementById('url').value.trim();
+  const tier = document.getElementById('tier').value;
+
+  if (!url) {
+    showError('Please enter a Spotify playlist URL.');
+    return;
+  }
+
+  // Reset UI
+  hideError();
+  hideResult();
+  showProgress();
+  document.getElementById('scanBtn').disabled = true;
+
+  fetch('/api/scan', {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({url: url, tier: tier}),
+  })
+  .then(r => r.json())
+  .then(data => {
+    if (data.error) {
+      showError(data.error);
+      document.getElementById('scanBtn').disabled = false;
+      hideProgress();
+      return;
+    }
+    currentScanId = data.scan_id;
+    pollInterval = setInterval(() => pollStatus(data.scan_id), 1500);
+  })
+  .catch(err => {
+    showError('Failed to start scan: ' + err.message);
+    document.getElementById('scanBtn').disabled = false;
+    hideProgress();
+  });
+}
+
+function pollStatus(scanId) {
+  fetch('/api/scan/' + scanId)
+  .then(r => r.json())
+  .then(data => {
+    if (data.error && data.status !== 'error') {
+      // scan not found
+      clearInterval(pollInterval);
+      showError(data.error);
+      return;
+    }
+
+    // Update progress UI
+    const phase = PHASE_LABELS[data.phase] || data.phase;
+    document.getElementById('progressPhase').textContent = phase;
+    document.getElementById('progressTime').textContent = data.elapsed_seconds + 's';
+    document.getElementById('progressMsg').textContent = data.message || '';
+
+    if (data.total > 0) {
+      const pct = Math.round((data.current / data.total) * 100);
+      document.getElementById('progressBar').style.width = pct + '%';
+    } else {
+      // Indeterminate — pulse
+      document.getElementById('progressBar').style.width = '30%';
+    }
+
+    if (data.status === 'complete') {
+      clearInterval(pollInterval);
+      hideProgress();
+      showResult(scanId, data.playlist_name);
+      document.getElementById('scanBtn').disabled = false;
+      saveRecentScan(scanId, data.playlist_name);
+    } else if (data.status === 'error') {
+      clearInterval(pollInterval);
+      hideProgress();
+      showError(data.error || 'Scan failed with an unknown error.');
+      document.getElementById('scanBtn').disabled = false;
+    }
+  })
+  .catch(err => {
+    // Network error on poll — don't stop, just retry
+    console.warn('Poll error:', err);
+  });
+}
+
+function showProgress() { document.getElementById('progressPanel').classList.add('visible'); }
+function hideProgress() { document.getElementById('progressPanel').classList.remove('visible'); document.getElementById('progressBar').style.width = '0%'; }
+function showError(msg) { const el = document.getElementById('errorPanel'); el.textContent = msg; el.classList.add('visible'); }
+function hideError() { document.getElementById('errorPanel').classList.remove('visible'); }
+function hideResult() { document.getElementById('resultPanel').classList.remove('visible'); }
+
+function showResult(scanId, playlistName) {
+  document.getElementById('resultPanel').classList.add('visible');
+  document.getElementById('resultTitle').textContent = playlistName ? ('Scan Complete: ' + playlistName) : 'Scan Complete';
+  document.getElementById('reportLink').href = '/report/' + scanId;
+}
+
+function resetForm() {
+  hideResult();
+  hideError();
+  document.getElementById('url').value = '';
+  document.getElementById('url').focus();
+}
+
+// Recent scans (localStorage)
+function saveRecentScan(scanId, name) {
+  try {
+    let recent = JSON.parse(localStorage.getItem('recentScans') || '[]');
+    recent.unshift({id: scanId, name: name || 'Unknown', time: Date.now()});
+    recent = recent.slice(0, 10);
+    localStorage.setItem('recentScans', JSON.stringify(recent));
+    renderRecentScans();
+  } catch(e) {}
+}
+
+function renderRecentScans() {
+  try {
+    const recent = JSON.parse(localStorage.getItem('recentScans') || '[]');
+    if (recent.length === 0) return;
+    document.getElementById('recentScans').style.display = 'block';
+    const list = document.getElementById('recentList');
+    list.innerHTML = recent.map(s =>
+      '<div class="recent-item">' +
+        '<span class="recent-name">' + (s.name || 'Unknown') + '</span>' +
+        '<a class="recent-link" href="/report/' + s.id + '" target="_blank">View Report</a>' +
+      '</div>'
+    ).join('');
+  } catch(e) {}
+}
+
+// Allow Enter key to start scan
+document.getElementById('url').addEventListener('keydown', function(e) {
+  if (e.key === 'Enter') startScan();
+});
+
+// Load recent scans on page load
+renderRecentScans();
+</script>
+</body>
+</html>
