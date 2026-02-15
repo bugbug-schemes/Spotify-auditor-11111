@@ -17,8 +17,9 @@ venv/
 .idea/
 *.swp
 
-# Cache database
+# Databases
 spotify_audit/data/cache.db
+spotify_audit/data/entities.db
 
 # OS
 .DS_Store
