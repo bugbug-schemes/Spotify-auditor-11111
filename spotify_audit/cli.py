@@ -13,6 +13,7 @@ import dataclasses
 import logging
 import os
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import click
@@ -34,7 +35,7 @@ from spotify_audit.bandsintown_client import BandsintownClient
 from spotify_audit.lastfm_client import LastfmClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
-from spotify_audit.analyzers.standard import standard_scan, StandardScanResult
+from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
 from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, incorporate_deep_evidence
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
@@ -563,12 +564,21 @@ def _lookup_external_data(
     mb_client: MusicBrainzClient,
     lastfm: "LastfmClient | None" = None,
 ) -> ExternalData:
-    """Run all Standard-tier API lookups and return aggregated results."""
+    """Run all Standard-tier API lookups concurrently and return aggregated results.
+
+    Each API lookup runs in its own thread so network waits overlap.
+    Within each API the search+enrich calls stay sequential (enrich needs the
+    search result), but *different* APIs run in parallel.
+    """
     ext = ExternalData()
     search_name = artist_name.split(",")[0].strip() if "," in artist_name else artist_name
 
-    # Genius
-    if genius.enabled:
+    # Each helper writes directly to ``ext``.  Every helper touches a disjoint
+    # set of fields so there is no data race.
+
+    def _lookup_genius() -> None:
+        if not genius.enabled:
+            return
         try:
             ga = genius.search_artist(search_name)
             if ga:
@@ -585,28 +595,29 @@ def _lookup_external_data(
         except Exception as exc:
             logger.debug("Genius lookup failed for '%s': %s", search_name, exc)
 
-    # Discogs
-    try:
-        da = discogs.search_artist(search_name)
-        if da:
-            ext.discogs_found = True
-            da = discogs.enrich(da)
-            ext.discogs_physical_releases = da.physical_releases
-            ext.discogs_digital_releases = da.digital_only_releases
-            ext.discogs_total_releases = da.total_releases
-            ext.discogs_formats = da.formats
-            ext.discogs_labels = da.labels
-            ext.discogs_profile = da.profile
-            ext.discogs_realname = da.realname
-            ext.discogs_social_urls = da.social_urls
-            ext.discogs_members = da.members
-            ext.discogs_groups = da.groups
-            ext.discogs_data_quality = da.data_quality
-    except Exception as exc:
-        logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
+    def _lookup_discogs() -> None:
+        try:
+            da = discogs.search_artist(search_name)
+            if da:
+                ext.discogs_found = True
+                da = discogs.enrich(da)
+                ext.discogs_physical_releases = da.physical_releases
+                ext.discogs_digital_releases = da.digital_only_releases
+                ext.discogs_total_releases = da.total_releases
+                ext.discogs_formats = da.formats
+                ext.discogs_labels = da.labels
+                ext.discogs_profile = da.profile
+                ext.discogs_realname = da.realname
+                ext.discogs_social_urls = da.social_urls
+                ext.discogs_members = da.members
+                ext.discogs_groups = da.groups
+                ext.discogs_data_quality = da.data_quality
+        except Exception as exc:
+            logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
 
-    # Setlist.fm
-    if setlistfm.enabled:
+    def _lookup_setlistfm() -> None:
+        if not setlistfm.enabled:
+            return
         try:
             sa = setlistfm.search_artist(search_name)
             if sa:
@@ -622,8 +633,9 @@ def _lookup_external_data(
         except Exception as exc:
             logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
 
-    # Bandsintown
-    if bandsintown.enabled:
+    def _lookup_bandsintown() -> None:
+        if not bandsintown.enabled:
+            return
         try:
             ba = bandsintown.get_artist(search_name)
             if ba:
@@ -638,28 +650,29 @@ def _lookup_external_data(
         except Exception as exc:
             logger.debug("Bandsintown lookup failed for '%s': %s", search_name, exc)
 
-    # MusicBrainz
-    try:
-        mb = mb_client.search_artist(search_name)
-        if mb and mb.mbid:
-            ext.musicbrainz_found = True
-            ext.musicbrainz_type = mb.artist_type
-            ext.musicbrainz_country = mb.country
-            ext.musicbrainz_begin_date = mb.begin_date
-            ext.musicbrainz_gender = mb.gender
-            ext.musicbrainz_area = mb.area
-            ext.musicbrainz_aliases = mb.aliases
-            ext.musicbrainz_isnis = mb.isnis
-            ext.musicbrainz_ipis = mb.ipis
-            ext.musicbrainz_genres = mb.genres
-            mb = mb_client.enrich(mb)
-            ext.musicbrainz_labels = mb.labels
-            ext.musicbrainz_urls = mb.urls
-    except Exception as exc:
-        logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
+    def _lookup_musicbrainz() -> None:
+        try:
+            mb = mb_client.search_artist(search_name)
+            if mb and mb.mbid:
+                ext.musicbrainz_found = True
+                ext.musicbrainz_type = mb.artist_type
+                ext.musicbrainz_country = mb.country
+                ext.musicbrainz_begin_date = mb.begin_date
+                ext.musicbrainz_gender = mb.gender
+                ext.musicbrainz_area = mb.area
+                ext.musicbrainz_aliases = mb.aliases
+                ext.musicbrainz_isnis = mb.isnis
+                ext.musicbrainz_ipis = mb.ipis
+                ext.musicbrainz_genres = mb.genres
+                mb = mb_client.enrich(mb)
+                ext.musicbrainz_labels = mb.labels
+                ext.musicbrainz_urls = mb.urls
+        except Exception as exc:
+            logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 
-    # Last.fm
-    if lastfm and lastfm.enabled:
+    def _lookup_lastfm() -> None:
+        if not (lastfm and lastfm.enabled):
+            return
         try:
             la = lastfm.get_artist_info(search_name)
             if la:
@@ -675,6 +688,19 @@ def _lookup_external_data(
                 ext.lastfm_bio_exists = bool(la.bio and len(la.bio) > 50)
         except Exception as exc:
             logger.debug("Last.fm lookup failed for '%s': %s", search_name, exc)
+
+    # Fire all API lookups concurrently — each writes to disjoint ext fields
+    with ThreadPoolExecutor(max_workers=7, thread_name_prefix="api") as pool:
+        futures = [
+            pool.submit(_lookup_genius),
+            pool.submit(_lookup_discogs),
+            pool.submit(_lookup_setlistfm),
+            pool.submit(_lookup_bandsintown),
+            pool.submit(_lookup_musicbrainz),
+            pool.submit(_lookup_lastfm),
+        ]
+        for fut in as_completed(futures):
+            fut.result()  # propagate unexpected exceptions
 
     return ext
 
@@ -836,10 +862,10 @@ def _run_audit(
                     qr = quick_scan(artist, config.quick_weights)
                     quick_results[key] = qr
 
-                # Cache with full ArtistInfo for next run
+                # Cache with full ArtistInfo for next run (deferred commit)
                 qr = quick_results[key]
                 if cache:
-                    cache.put(key, "quick", {
+                    cache.put_deferred(key, "quick", {
                         "artist_id": qr.artist_id,
                         "artist_name": qr.artist_name,
                         "score": qr.score,
@@ -847,6 +873,10 @@ def _run_audit(
                     })
 
             progress.advance(task)
+
+    # Flush deferred cache writes in one commit
+    if cache:
+        cache.flush()
 
     parts = []
     if resolved_count:
@@ -898,17 +928,12 @@ def _run_audit(
                 ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
                 evaluations[key] = ev
 
-                # Also run legacy Standard weighted score
+                # Legacy Standard weighted score — reuse already-fetched data
                 qr = quick_results[key]
-                sr = standard_scan(
-                    artist_name=qr.artist_name,
+                sr = standard_scan_from_external(
                     quick_result=qr,
-                    genius=genius_client,
-                    discogs=discogs_client,
-                    setlistfm=setlistfm_client,
-                    bandsintown=bandsintown_client,
-                    mb_client=mb_client,
-                    deezer=deezer_client,
+                    ext=ext,
+                    deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
                     weights=config.standard_weights,
                 )
                 standard_results[key] = sr

@@ -64,6 +64,15 @@ class Cache:
         self.conn.execute(UPSERT, (key, json.dumps(value), time.time()))
         self.conn.commit()
 
+    def put_deferred(self, artist_id: str, tier: str, value: dict[str, Any]) -> None:
+        """Insert/update without committing — call flush() when the batch is done."""
+        key = self._key(artist_id, tier)
+        self.conn.execute(UPSERT, (key, json.dumps(value), time.time()))
+
+    def flush(self) -> None:
+        """Commit any pending deferred writes."""
+        self.conn.commit()
+
     def purge_expired(self) -> int:
         """Remove all entries older than TTL. Returns count deleted."""
         cutoff = time.time() - self.ttl_seconds

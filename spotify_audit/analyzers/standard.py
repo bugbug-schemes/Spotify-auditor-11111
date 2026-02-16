@@ -419,3 +419,146 @@ def standard_scan(
         score=composite,
         signals=signals,
     )
+
+
+# ---------------------------------------------------------------------------
+# Fast scorer from pre-fetched ExternalData (no API calls)
+# ---------------------------------------------------------------------------
+
+def standard_scan_from_external(
+    quick_result: QuickScanResult,
+    ext: "ExternalData",
+    deezer_fans: int = 0,
+    weights: StandardWeights | None = None,
+) -> StandardScanResult:
+    """Compute Standard-tier score from already-fetched ExternalData.
+
+    This avoids re-querying every API that _lookup_external_data() already
+    called, cutting total API calls roughly in half.
+    """
+    from spotify_audit.evidence import ExternalData  # avoid circular at module level
+
+    if weights is None:
+        weights = StandardWeights()
+
+    w = weights
+    total_weight = w.total()
+    signals: list[SignalResult] = []
+    total = 0.0
+
+    def _add(name: str, raw: float, nw: float, detail: str) -> None:
+        nonlocal total
+        weighted = raw * nw
+        total += weighted
+        signals.append(SignalResult(
+            name=name,
+            raw_score=round(raw, 1),
+            weight=round(nw, 4),
+            weighted_score=round(weighted, 2),
+            detail=detail,
+        ))
+
+    # Quick score carry-forward
+    _add("quick_score", float(quick_result.score),
+         w.quick_score / total_weight,
+         f"Quick tier score: {quick_result.score}")
+
+    # Genius (from ext)
+    if not ext.genius_found:
+        g_raw, g_detail = 75.0, "Not found on Genius"
+    elif ext.genius_song_count == 0:
+        g_raw, g_detail = 80.0, "Found on Genius but 0 songs"
+    elif ext.genius_song_count <= 3:
+        g_raw, g_detail = 50.0, f"Only {ext.genius_song_count} songs on Genius"
+    elif ext.genius_song_count <= 10:
+        g_raw, g_detail = 25.0, f"{ext.genius_song_count} songs on Genius"
+    else:
+        g_raw, g_detail = 5.0, f"{ext.genius_song_count} songs on Genius with credits"
+    _add("genius_credits", g_raw, w.genius_credits / total_weight, g_detail)
+
+    # Discogs (from ext)
+    if not ext.discogs_found:
+        d_raw, d_detail = 70.0, "Not found on Discogs"
+    elif ext.discogs_total_releases == 0:
+        d_raw, d_detail = 75.0, "Found on Discogs but 0 releases"
+    elif ext.discogs_physical_releases == 0:
+        if ext.discogs_digital_releases > 0:
+            d_raw = 55.0
+            d_detail = f"Digital-only: {ext.discogs_digital_releases} releases, no physical"
+        else:
+            d_raw, d_detail = 65.0, "No physical releases found"
+    elif ext.discogs_physical_releases >= 5:
+        d_raw = 0.0
+        d_detail = f"{ext.discogs_physical_releases} physical releases"
+    elif ext.discogs_physical_releases >= 2:
+        d_raw = 10.0
+        d_detail = f"{ext.discogs_physical_releases} physical releases"
+    else:
+        d_raw = 25.0
+        d_detail = f"{ext.discogs_physical_releases} physical release(s)"
+    _add("discogs_physical", d_raw, w.discogs_physical / total_weight, d_detail)
+
+    # Live shows (from ext)
+    live_total = (ext.setlistfm_total_shows or 0) + (ext.bandsintown_past_events or 0)
+    if live_total == 0:
+        l_raw, l_detail = 80.0, "No live shows found"
+    elif live_total <= 5:
+        l_raw, l_detail = 40.0, f"{live_total} total shows"
+    elif live_total <= 20:
+        l_raw, l_detail = 15.0, f"{live_total} total shows"
+    else:
+        l_raw, l_detail = 0.0, f"{live_total} total shows"
+    _add("live_show_history", l_raw, w.live_show_history / total_weight, l_detail)
+
+    # MusicBrainz (from ext)
+    if not ext.musicbrainz_found:
+        m_raw, m_detail = 70.0, "Not found on MusicBrainz"
+    else:
+        m_raw = 30.0
+        m_notes: list[str] = []
+        if ext.musicbrainz_type:
+            m_raw -= 10
+            m_notes.append(f"type={ext.musicbrainz_type}")
+        if ext.musicbrainz_country:
+            m_raw -= 5
+            m_notes.append(f"country={ext.musicbrainz_country}")
+        if ext.musicbrainz_begin_date:
+            m_raw -= 10
+            m_notes.append(f"active since {ext.musicbrainz_begin_date}")
+        m_raw = max(0, m_raw)
+        m_detail = "; ".join(m_notes) if m_notes else "Found on MusicBrainz"
+    _add("musicbrainz_presence", m_raw, w.musicbrainz_presence / total_weight, m_detail)
+
+    # Label blocklist (from ext)
+    blocklist = [d.lower() for d in pfc_distributors()]
+    mb_labels = ext.musicbrainz_labels or []
+    if not mb_labels:
+        bl_raw, bl_detail = 30.0, "No label info available for blocklist check"
+    else:
+        matches = [l for l in mb_labels if l.lower() in blocklist]
+        if matches:
+            bl_raw = 90.0
+            bl_detail = f"PFC distributor match: {', '.join(matches)}"
+        else:
+            bl_raw = 5.0
+            bl_detail = f"Labels ({', '.join(mb_labels[:5])}) not on PFC blocklist"
+    _add("label_blocklist_match", bl_raw, w.label_blocklist_match / total_weight, bl_detail)
+
+    # Deezer cross-check (from ArtistInfo.deezer_fans)
+    if deezer_fans == 0:
+        dz_raw, dz_detail = 60.0, "Deezer: 0 fans"
+    elif deezer_fans < 100:
+        dz_raw, dz_detail = 40.0, f"Deezer: {deezer_fans} fans (very low)"
+    elif deezer_fans < 1000:
+        dz_raw, dz_detail = 20.0, f"Deezer: {deezer_fans:,} fans"
+    else:
+        dz_raw, dz_detail = 5.0, f"Deezer: {deezer_fans:,} fans"
+    _add("deezer_cross_check", dz_raw, w.deezer_cross_check / total_weight, dz_detail)
+
+    composite = int(min(max(round(total), 0), 100))
+    return StandardScanResult(
+        artist_id=quick_result.artist_id,
+        artist_name=quick_result.artist_name,
+        score=composite,
+        signals=signals,
+    )

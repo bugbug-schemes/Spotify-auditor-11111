@@ -12,6 +12,7 @@ from __future__ import annotations
 
 import json
 from dataclasses import dataclass, field
+from functools import lru_cache
 from pathlib import Path
 
 # ---------------------------------------------------------------------------
@@ -161,18 +162,22 @@ def load_blocklist(name: str) -> list[str]:
         return json.load(f)
 
 
-# Convenience loaders
+# Convenience loaders — cached so file I/O only happens once per process
+@lru_cache(maxsize=None)
 def pfc_distributors() -> list[str]:
     return load_blocklist("pfc_distributors")
 
 
+@lru_cache(maxsize=None)
 def pfc_playlists() -> list[str]:
     return load_blocklist("pfc_playlists")
 
 
+@lru_cache(maxsize=None)
 def known_ai_artists() -> list[str]:
     return load_blocklist("known_ai_artists")
 
 
+@lru_cache(maxsize=None)
 def pfc_songwriters() -> list[str]:
     return load_blocklist("pfc_songwriters")
