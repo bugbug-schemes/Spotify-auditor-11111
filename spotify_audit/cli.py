@@ -31,7 +31,7 @@ from spotify_audit.musicbrainz_client import MusicBrainzClient
 from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
-from spotify_audit.bandsintown_client import BandsintownClient
+# Bandsintown removed from UX — no API access
 from spotify_audit.lastfm_client import LastfmClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
@@ -68,7 +68,6 @@ def _build_config() -> AuditConfig:
         genius_token=os.getenv("GENIUS_TOKEN", ""),
         discogs_token=os.getenv("DISCOGS_TOKEN", ""),
         setlistfm_api_key=os.getenv("SETLISTFM_API_KEY", ""),
-        bandsintown_app_id=os.getenv("BANDSINTOWN_APP_ID", ""),
     )
 
 
@@ -316,10 +315,10 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
             data_fields.append(f"Tours: {', '.join(ext.setlistfm_tour_names[:2])}")
         if ext.setlistfm_venue_countries:
             data_fields.append(f"Countries: {', '.join(ext.setlistfm_venue_countries[:4])}")
-        if ext.bandsintown_past_events:
-            data_fields.append(f"BIT events: {ext.bandsintown_past_events}")
-        if ext.bandsintown_tracker_count:
-            data_fields.append(f"BIT trackers: {ext.bandsintown_tracker_count:,}")
+        if ext.lastfm_found and ext.lastfm_listener_play_ratio > 0:
+            data_fields.append(f"Last.fm play/listener: {ext.lastfm_listener_play_ratio:.1f}")
+        if ext.lastfm_listeners:
+            data_fields.append(f"Last.fm listeners: {ext.lastfm_listeners:,}")
         if ext.musicbrainz_type:
             data_fields.append(f"MB type: {ext.musicbrainz_type}")
         if ext.musicbrainz_country:
@@ -339,8 +338,21 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
             social_links.append("IG")
         if ext.genius_twitter_name:
             social_links.append("X")
-        if ext.bandsintown_facebook_url:
-            social_links.append("FB(BIT)")
+        # MusicBrainz social links
+        for rel_type, url in ext.musicbrainz_urls.items():
+            url_lower = url.lower()
+            if "facebook" in url_lower and "FB(MB)" not in social_links:
+                social_links.append("FB(MB)")
+            elif "instagram" in url_lower and "IG(MB)" not in social_links:
+                social_links.append("IG(MB)")
+            elif ("twitter" in url_lower or "x.com" in url_lower) and "X(MB)" not in social_links:
+                social_links.append("X(MB)")
+            elif "youtube" in url_lower and "YT(MB)" not in social_links:
+                social_links.append("YT(MB)")
+            elif "bandcamp" in url_lower and "BC(MB)" not in social_links:
+                social_links.append("BC(MB)")
+            elif "soundcloud" in url_lower and "SC(MB)" not in social_links:
+                social_links.append("SC(MB)")
         if social_links:
             data_fields.append(f"Social: {', '.join(social_links)}")
         mb_links = []
@@ -560,7 +572,6 @@ def _lookup_external_data(
     genius: GeniusClient,
     discogs: DiscogsClient,
     setlistfm: SetlistFmClient,
-    bandsintown: BandsintownClient,
     mb_client: MusicBrainzClient,
     lastfm: "LastfmClient | None" = None,
 ) -> ExternalData:
@@ -593,7 +604,7 @@ def _lookup_external_data(
                 ext.genius_followers_count = ga.followers_count
                 ext.genius_alternate_names = ga.alternate_names
         except Exception as exc:
-            logger.debug("Genius lookup failed for '%s': %s", search_name, exc)
+            logger.warning("Genius lookup failed for '%s': %s", search_name, exc)
 
     def _lookup_discogs() -> None:
         try:
@@ -631,24 +642,7 @@ def _lookup_external_data(
                 ext.setlistfm_venue_countries = sa.venue_countries
                 ext.setlistfm_tour_names = sa.tour_names
         except Exception as exc:
-            logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
-
-    def _lookup_bandsintown() -> None:
-        if not bandsintown.enabled:
-            return
-        try:
-            ba = bandsintown.get_artist(search_name)
-            if ba:
-                ext.bandsintown_found = True
-                ba = bandsintown.enrich(ba)
-                ext.bandsintown_past_events = ba.past_events
-                ext.bandsintown_upcoming_events = ba.upcoming_events
-                ext.bandsintown_tracker_count = ba.tracker_count
-                ext.bandsintown_facebook_url = ba.facebook_page_url
-                ext.bandsintown_social_links = ba.social_links
-                ext.bandsintown_on_tour = ba.on_tour
-        except Exception as exc:
-            logger.debug("Bandsintown lookup failed for '%s': %s", search_name, exc)
+            logger.warning("Setlist.fm lookup failed for '%s': %s", search_name, exc)
 
     def _lookup_musicbrainz() -> None:
         try:
@@ -690,12 +684,11 @@ def _lookup_external_data(
             logger.debug("Last.fm lookup failed for '%s': %s", search_name, exc)
 
     # Fire all API lookups concurrently — each writes to disjoint ext fields
-    with ThreadPoolExecutor(max_workers=7, thread_name_prefix="api") as pool:
+    with ThreadPoolExecutor(max_workers=6, thread_name_prefix="api") as pool:
         futures = [
             pool.submit(_lookup_genius),
             pool.submit(_lookup_discogs),
             pool.submit(_lookup_setlistfm),
-            pool.submit(_lookup_bandsintown),
             pool.submit(_lookup_musicbrainz),
             pool.submit(_lookup_lastfm),
         ]
@@ -739,7 +732,6 @@ def _run_audit(
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
-    bandsintown_client = BandsintownClient(app_id=config.bandsintown_app_id, delay=0.3)
     lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
 
     # Set up Claude (Deep tier) if key available
@@ -759,8 +751,6 @@ def _run_audit(
         configured.append("Discogs")
     if setlistfm_client.enabled:
         configured.append("Setlist.fm")
-    if bandsintown_client.enabled:
-        configured.append("Bandsintown")
     if lastfm_client.enabled:
         configured.append("Last.fm")
     if anthropic_client:
@@ -768,7 +758,7 @@ def _run_audit(
     console.print(f"APIs: [green]{', '.join(configured)}[/green]")
 
     any_external = (genius_client.enabled or discogs_client.enabled
-                    or setlistfm_client.enabled or bandsintown_client.enabled)
+                    or setlistfm_client.enabled)
     if not any_external:
         console.print(
             "[yellow]No Standard-tier API keys configured. "
@@ -919,7 +909,6 @@ def _run_audit(
                     genius=genius_client,
                     discogs=discogs_client,
                     setlistfm=setlistfm_client,
-                    bandsintown=bandsintown_client,
                     mb_client=mb_client,
                     lastfm=lastfm_client,
                 )

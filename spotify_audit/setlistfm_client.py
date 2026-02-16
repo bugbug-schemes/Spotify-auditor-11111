@@ -70,20 +70,41 @@ class SetlistFmClient:
             data = self._get("/search/artists", {"artistName": name, "p": 1, "sort": "relevance"})
         except requests.HTTPError as exc:
             if exc.response is not None and exc.response.status_code == 404:
+                logger.debug("Setlist.fm: 404 for '%s'", name)
                 return None
+            logger.warning("Setlist.fm: HTTP %s for '%s'",
+                           exc.response.status_code if exc.response else "?", name)
             raise
 
         artists = data.get("artist", [])
         if not artists:
+            logger.warning("Setlist.fm: 0 results for '%s'", name)
             return None
 
         name_lower = name.lower().strip()
+
+        # Pass 1: exact match
         for a in artists:
             if a.get("name", "").lower().strip() == name_lower:
+                logger.debug("Setlist.fm: exact match '%s' → mbid %s", name, a.get("mbid", ""))
                 return SetlistArtist(
                     mbid=a.get("mbid", ""),
                     name=a.get("name", ""),
                 )
+
+        # Pass 2: containment match
+        for a in artists:
+            aname = a.get("name", "").lower().strip()
+            if name_lower in aname or aname in name_lower:
+                logger.debug("Setlist.fm: partial match '%s' → '%s'", name, a.get("name", ""))
+                return SetlistArtist(
+                    mbid=a.get("mbid", ""),
+                    name=a.get("name", ""),
+                )
+
+        logger.warning("Setlist.fm: no name match for '%s' in %d results: %s",
+                        name, len(artists),
+                        [a.get("name", "") for a in artists[:5]])
         return None
 
     def get_setlist_count(self, artist: SetlistArtist) -> SetlistArtist:

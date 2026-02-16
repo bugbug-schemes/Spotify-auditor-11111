@@ -140,7 +140,7 @@ class PlatformPresence:
     def count(self) -> int:
         return sum([
             self.spotify, self.deezer, self.musicbrainz,
-            self.genius, self.discogs, self.setlistfm, self.bandsintown,
+            self.genius, self.discogs, self.setlistfm,
             self.lastfm,
         ])
 
@@ -159,8 +159,6 @@ class PlatformPresence:
             platforms.append("Discogs")
         if self.setlistfm:
             platforms.append("Setlist.fm")
-        if self.bandsintown:
-            platforms.append("Bandsintown")
         if self.lastfm:
             platforms.append("Last.fm")
         return platforms
@@ -218,7 +216,7 @@ class ArtistEvaluation:
             "Discogs": ext.discogs_found,
             "MusicBrainz": ext.musicbrainz_found,
             "Setlist.fm": ext.setlistfm_found,
-            "Bandsintown": ext.bandsintown_found,
+            "Last.fm": ext.lastfm_found,
         }
 
 
@@ -256,12 +254,12 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     elif fans > 0:
         fan_pts = 5
 
-    # Bandsintown trackers
-    if ext.bandsintown_tracker_count >= 10_000:
+    # Last.fm scrobble engagement
+    if ext.lastfm_listener_play_ratio >= 10:
         fan_pts += 20
-    elif ext.bandsintown_tracker_count >= 1_000:
+    elif ext.lastfm_listener_play_ratio >= 4:
         fan_pts += 10
-    elif ext.bandsintown_tracker_count > 0:
+    elif ext.lastfm_listeners >= 100:
         fan_pts += 5
 
     # Genius followers
@@ -328,12 +326,6 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     elif ext.setlistfm_total_shows >= 1:
         live_pts += 10
 
-    # Bandsintown
-    if ext.bandsintown_past_events >= 10:
-        live_pts += 20
-    elif ext.bandsintown_past_events >= 1:
-        live_pts += 10
-
     # Tour names
     if ext.setlistfm_tour_names:
         live_pts += 15
@@ -359,8 +351,6 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     if ext.genius_instagram_name:
         social_count += 1
     if ext.genius_twitter_name:
-        social_count += 1
-    if ext.bandsintown_facebook_url:
         social_count += 1
     for u in ext.discogs_social_urls:
         social_count += 1
@@ -686,7 +676,7 @@ def _collect_duration_evidence(artist: ArtistInfo) -> list[Evidence]:
 
 
 def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
-    """Analyze release cadence."""
+    """Analyze release cadence, accounting for singles vs albums per month."""
     evidence: list[Evidence] = []
     dates = artist.release_dates
 
@@ -722,60 +712,156 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
         return evidence
 
     span_months = max(span_days / 30.0, 1)
-    releases_per_month = len(parsed) / span_months
 
-    if releases_per_month > 8:
-        evidence.append(Evidence(
-            finding=f"{releases_per_month:.1f} releases/month (extreme)",
-            source="Deezer",
-            evidence_type="red_flag",
-            strength="strong",
-            detail=f"Releasing {releases_per_month:.1f} times per month over "
-                   f"{span_months:.0f} months. Even prolific artists rarely exceed "
-                   "2-3 releases/month. This rate suggests automated production.",
-        ))
-    elif releases_per_month > 4:
-        evidence.append(Evidence(
-            finding=f"{releases_per_month:.1f} releases/month (high)",
-            source="Deezer",
-            evidence_type="red_flag",
-            strength="moderate",
-            detail=f"Releasing {releases_per_month:.1f} times per month — higher "
-                   "than most real artists.",
-        ))
-    elif releases_per_month <= 1 and len(parsed) >= 5:
-        evidence.append(Evidence(
-            finding=f"Steady release pace ({releases_per_month:.1f}/month over {span_months:.0f} months)",
-            source="Deezer",
-            evidence_type="green_flag",
-            strength="weak",
-            detail="Release cadence is consistent with a working musician.",
-        ))
+    # Separate singles vs albums for proper thresholds
+    albums = artist.album_count
+    singles = artist.single_count
+    total_releases = len(parsed)
+
+    # Calculate per-type rates when we have type breakdown
+    if albums + singles > 0:
+        albums_per_month = albums / span_months
+        singles_per_month = singles / span_months
+        releases_per_month = total_releases / span_months
+
+        # Albums: > 2/month is extreme, > 1/month is high
+        # Singles: > 6/month is extreme, > 3/month is high
+        if albums_per_month > 2:
+            evidence.append(Evidence(
+                finding=f"{albums_per_month:.1f} albums/month (extreme)",
+                source="Deezer",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Releasing {albums_per_month:.1f} albums per month over "
+                       f"{span_months:.0f} months ({albums} albums total). "
+                       "Albums require significant creative investment — this rate "
+                       "suggests automated production.",
+            ))
+        elif albums_per_month > 1 and albums >= 3:
+            evidence.append(Evidence(
+                finding=f"{albums_per_month:.1f} albums/month (high)",
+                source="Deezer",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"Releasing {albums_per_month:.1f} albums per month — "
+                       f"{albums} albums over {span_months:.0f} months is higher "
+                       "than most real artists.",
+            ))
+
+        if singles_per_month > 6:
+            evidence.append(Evidence(
+                finding=f"{singles_per_month:.1f} singles/month (extreme)",
+                source="Deezer",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Releasing {singles_per_month:.1f} singles per month over "
+                       f"{span_months:.0f} months ({singles} singles total). "
+                       "Even prolific artists rarely release more than 2-3 singles/month.",
+            ))
+        elif singles_per_month > 3 and singles >= 5:
+            evidence.append(Evidence(
+                finding=f"{singles_per_month:.1f} singles/month (high)",
+                source="Deezer",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"Releasing {singles_per_month:.1f} singles per month — "
+                       f"{singles} singles over {span_months:.0f} months.",
+            ))
+
+        # Normal pace with enough history
+        if releases_per_month <= 1.5 and total_releases >= 5:
+            breakdown = f"{albums} albums + {singles} singles" if albums and singles else f"{total_releases} releases"
+            evidence.append(Evidence(
+                finding=f"Steady release pace ({releases_per_month:.1f}/month, {breakdown})",
+                source="Deezer",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Release cadence of {releases_per_month:.1f}/month over "
+                       f"{span_months:.0f} months is consistent with a working musician.",
+            ))
+    else:
+        # Fallback: no type breakdown available
+        releases_per_month = total_releases / span_months
+        if releases_per_month > 8:
+            evidence.append(Evidence(
+                finding=f"{releases_per_month:.1f} releases/month (extreme)",
+                source="Deezer",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Releasing {releases_per_month:.1f} times per month over "
+                       f"{span_months:.0f} months. Even prolific artists rarely exceed "
+                       "2-3 releases/month. This rate suggests automated production.",
+            ))
+        elif releases_per_month > 4:
+            evidence.append(Evidence(
+                finding=f"{releases_per_month:.1f} releases/month (high)",
+                source="Deezer",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"Releasing {releases_per_month:.1f} times per month — higher "
+                       "than most real artists.",
+            ))
+        elif releases_per_month <= 1 and total_releases >= 5:
+            evidence.append(Evidence(
+                finding=f"Steady release pace ({releases_per_month:.1f}/month over {span_months:.0f} months)",
+                source="Deezer",
+                evidence_type="green_flag",
+                strength="weak",
+                detail="Release cadence is consistent with a working musician.",
+            ))
 
     return evidence
 
 
 def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
-    """Check labels against PFC distributor blocklist."""
+    """Check labels against all blocklists (PFC distributors, known AI, songwriters)."""
     evidence: list[Evidence] = []
     if not artist.labels:
         return evidence
 
     pfc_labels = [l.lower() for l in pfc_distributors()]
-    matched_labels = [l for l in artist.labels if l.lower() in pfc_labels]
+    ai_names = [n.lower() for n in known_ai_artists()]
+    pfc_writers = [w.lower() for w in pfc_songwriters()]
 
-    if matched_labels:
+    matched_pfc = [l for l in artist.labels if l.lower() in pfc_labels]
+    matched_ai = [l for l in artist.labels if l.lower() in ai_names]
+
+    if matched_pfc:
         evidence.append(Evidence(
-            finding=f"Label matches PFC blocklist: {', '.join(matched_labels)}",
+            finding=f"Label matches PFC blocklist: {', '.join(matched_pfc)}",
             source="Blocklist",
             evidence_type="red_flag",
             strength="strong",
-            detail=f"This artist is distributed by {', '.join(matched_labels)}, "
+            detail=f"This artist is distributed by {', '.join(matched_pfc)}, "
                    "which is associated with Perfect Fit Content (PFC) operations. "
                    "PFC distributors create playlist-optimized content that displaces "
                    "real independent artists.",
         ))
-    else:
+
+    if matched_ai:
+        evidence.append(Evidence(
+            finding=f"Label matches known AI blocklist: {', '.join(matched_ai)}",
+            source="Blocklist",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Label {', '.join(matched_ai)} is on the known AI artist/label blocklist.",
+        ))
+
+    # Check contributors against PFC songwriter blocklist
+    if artist.contributors and pfc_writers:
+        matched_writers = [c for c in artist.contributors if c.lower() in pfc_writers]
+        if matched_writers:
+            evidence.append(Evidence(
+                finding=f"Contributor matches PFC songwriter blocklist: {', '.join(matched_writers[:3])}",
+                source="Blocklist",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"This artist's credits include known PFC songwriters: "
+                       f"{', '.join(matched_writers[:5])}. "
+                       "PFC songwriters are associated with factory-produced content.",
+            ))
+
+    if not matched_pfc and not matched_ai:
         # Having a recognizable label is a green flag
         evidence.append(Evidence(
             finding=f"Labels: {', '.join(artist.labels[:3])}",
@@ -783,7 +869,7 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="neutral",
             strength="weak",
             detail=f"Distributed by: {', '.join(artist.labels)}. "
-                   "Not on the PFC blocklist.",
+                   "Not on any blocklist.",
         ))
 
     return evidence
@@ -1186,9 +1272,9 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
 
 
 def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
-    """Analyze concert/touring history from Setlist.fm and Bandsintown."""
+    """Analyze concert/touring history from Setlist.fm."""
     evidence: list[Evidence] = []
-    total_shows = ext.setlistfm_total_shows + ext.bandsintown_past_events
+    total_shows = ext.setlistfm_total_shows
 
     # Setlist.fm
     if ext.setlistfm_found:
@@ -1244,44 +1330,8 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
                    "studio-only artist, or could indicate a non-performing entity.",
         ))
 
-    # Bandsintown
-    if ext.bandsintown_found:
-        parts: list[str] = []
-        if ext.bandsintown_past_events > 0:
-            parts.append(f"{ext.bandsintown_past_events} past events")
-        if ext.bandsintown_upcoming_events > 0:
-            parts.append(f"{ext.bandsintown_upcoming_events} upcoming")
-        if ext.bandsintown_tracker_count > 0:
-            parts.append(f"{ext.bandsintown_tracker_count:,} trackers")
-
-        if ext.bandsintown_past_events >= 10:
-            evidence.append(Evidence(
-                finding=f"Bandsintown: {', '.join(parts)}",
-                source="Bandsintown",
-                evidence_type="green_flag",
-                strength="moderate",
-                detail=f"Active touring presence with {ext.bandsintown_past_events} past events "
-                       f"and {ext.bandsintown_tracker_count:,} trackers.",
-            ))
-        elif ext.bandsintown_past_events >= 1 or ext.bandsintown_tracker_count >= 100:
-            evidence.append(Evidence(
-                finding=f"Bandsintown: {', '.join(parts)}",
-                source="Bandsintown",
-                evidence_type="green_flag",
-                strength="weak",
-                detail=f"Some touring presence: {', '.join(parts)}.",
-            ))
-        elif ext.bandsintown_tracker_count > 0:
-            evidence.append(Evidence(
-                finding=f"Bandsintown: {ext.bandsintown_tracker_count:,} trackers, 0 events",
-                source="Bandsintown",
-                evidence_type="neutral",
-                strength="weak",
-                detail="Artist is tracked on Bandsintown but has no recorded events.",
-            ))
-
     # Combined live show assessment
-    if total_shows == 0 and not ext.setlistfm_found and not ext.bandsintown_found:
+    if total_shows == 0 and not ext.setlistfm_found:
         evidence.append(Evidence(
             finding="No live performance history found anywhere",
             source="Live shows",
@@ -1385,22 +1435,6 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
     if ext.genius_twitter_name:
         social_links["Twitter/X"] = "Genius"
 
-    # Bandsintown social links
-    if ext.bandsintown_facebook_url:
-        social_links.setdefault("Facebook", "Bandsintown")
-    for link in ext.bandsintown_social_links:
-        url = link.get("url", "").lower()
-        if "facebook" in url:
-            social_links.setdefault("Facebook", "Bandsintown")
-        elif "instagram" in url:
-            social_links.setdefault("Instagram", "Bandsintown")
-        elif "twitter" in url or "x.com" in url:
-            social_links.setdefault("Twitter/X", "Bandsintown")
-        elif "youtube" in url:
-            social_links.setdefault("YouTube", "Bandsintown")
-        elif "tiktok" in url:
-            social_links.setdefault("TikTok", "Bandsintown")
-
     # Discogs social URLs
     for url in ext.discogs_social_urls:
         url_lower = url.lower()
@@ -1473,7 +1507,6 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
         apis_checked = sum([
             ext.genius_found,
             ext.discogs_found,
-            ext.bandsintown_found,
             ext.musicbrainz_found,
         ])
         if apis_checked >= 2:
@@ -1482,7 +1515,7 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
                 source="Social media",
                 evidence_type="red_flag",
                 strength="moderate",
-                detail="Checked Genius, Discogs, Bandsintown, and MusicBrainz — "
+                detail="Checked Genius, Discogs, and MusicBrainz — "
                        "no social media profiles or official website found. "
                        "Real artists almost always have some web presence.",
             ))
@@ -1537,17 +1570,52 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
     """Analyze bio, real name, group membership, and identity signals."""
     evidence: list[Evidence] = []
 
-    # Discogs bio/profile
+    # Discogs bio/profile — analyze content, not just length
     if ext.discogs_profile:
-        bio_len = len(ext.discogs_profile)
-        if bio_len >= 200:
+        bio = ext.discogs_profile
+        bio_len = len(bio)
+        bio_lower = bio.lower()
+
+        # Look for substantive career indicators in the bio
+        career_keywords = [
+            "born", "grew up", "formed in", "founded", "member of",
+            "Grammy", "award", "toured", "festival", "performed at",
+            "signed to", "record deal", "debut album", "released",
+            "collaborated with", "produced by", "studied",
+            "conservatory", "university", "trained",
+        ]
+        career_hits = [kw for kw in career_keywords if kw.lower() in bio_lower]
+
+        # Detect year mentions (suggests real career timeline)
+        year_pattern = re.findall(r"\b(19[5-9]\d|20[0-2]\d)\b", bio)
+
+        if bio_len >= 200 and (len(career_hits) >= 3 or len(year_pattern) >= 2):
+            evidence.append(Evidence(
+                finding=f"Detailed Discogs bio with career history ({bio_len} chars)",
+                source="Discogs",
+                evidence_type="green_flag",
+                strength="strong",
+                detail=f"Bio contains career indicators ({', '.join(career_hits[:4])}) "
+                       f"and spans {len(year_pattern)} year reference(s). "
+                       f"Excerpt: \"{bio[:200]}{'...' if bio_len > 200 else ''}\"",
+            ))
+        elif bio_len >= 200:
             evidence.append(Evidence(
                 finding=f"Discogs bio ({bio_len} chars)",
                 source="Discogs",
                 evidence_type="green_flag",
                 strength="moderate",
                 detail=f"Has a detailed Discogs biography: "
-                       f"\"{ext.discogs_profile[:150]}{'...' if bio_len > 150 else ''}\"",
+                       f"\"{bio[:150]}{'...' if bio_len > 150 else ''}\"",
+            ))
+        elif bio_len >= 50 and career_hits:
+            evidence.append(Evidence(
+                finding=f"Discogs bio with career details ({bio_len} chars)",
+                source="Discogs",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"Bio mentions: {', '.join(career_hits[:3])}. "
+                       f"\"{bio[:120]}{'...' if bio_len > 120 else ''}\"",
             ))
         elif bio_len >= 50:
             evidence.append(Evidence(
@@ -1555,7 +1623,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
                 source="Discogs",
                 evidence_type="green_flag",
                 strength="weak",
-                detail=f"Has a brief Discogs biography: \"{ext.discogs_profile[:100]}\"",
+                detail=f"Has a brief Discogs biography: \"{bio[:100]}\"",
             ))
 
     # Real name (Discogs)
@@ -1708,14 +1776,6 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
                 detail=f"Each listener averages {ratio:.1f} plays. High replay value "
                        "indicates genuine fans who return to this artist's music.",
             ))
-        elif ratio >= 4:
-            evidence.append(Evidence(
-                finding=f"Moderate scrobble engagement (play/listener ratio: {ratio:.1f})",
-                source="Last.fm",
-                evidence_type="green_flag",
-                strength="weak",
-                detail=f"Each listener averages {ratio:.1f} plays. Moderate engagement.",
-            ))
         elif ext.lastfm_listeners >= 100 and ratio < 2:
             evidence.append(Evidence(
                 finding=f"Very low scrobble engagement (play/listener ratio: {ratio:.1f})",
@@ -1736,17 +1796,6 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
             strength="weak",
             detail="Extremely low Last.fm listener count suggests minimal organic "
                    "fanbase outside of Spotify algorithmic playlists.",
-        ))
-
-    # Similar artists as legitimacy signal
-    if ext.lastfm_similar_artists and len(ext.lastfm_similar_artists) >= 5:
-        evidence.append(Evidence(
-            finding=f"{len(ext.lastfm_similar_artists)} similar artists on Last.fm",
-            source="Last.fm",
-            evidence_type="green_flag",
-            strength="weak",
-            detail="Last.fm algorithmically links this artist to others based on "
-                   "listener behavior — suggests real listener overlap.",
         ))
 
     # Bio on Last.fm
@@ -2072,8 +2121,6 @@ def evaluate_artist(
         presence.discogs = True
     if ext.setlistfm_found:
         presence.setlistfm = True
-    if ext.bandsintown_found:
-        presence.bandsintown = True
     if ext.musicbrainz_found:
         presence.musicbrainz = True
     if ext.lastfm_found:

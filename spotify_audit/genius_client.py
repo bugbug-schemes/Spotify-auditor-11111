@@ -60,23 +60,60 @@ class GeniusClient:
         return r.json()
 
     def search_artist(self, name: str) -> GeniusArtist | None:
-        """Search for an artist by name."""
+        """Search for an artist by name.
+
+        Uses the /search endpoint (which returns songs) and extracts the
+        primary_artist from each hit.  First tries exact name match, then
+        falls back to case-insensitive containment so we handle slight
+        name variations between Spotify/Deezer and Genius.
+        """
         if not self.enabled:
             return None
-        data = self._get("/search", {"q": name, "per_page": 5})
+        data = self._get("/search", {"q": name, "per_page": 15})
         hits = data.get("response", {}).get("hits", [])
 
+        if not hits:
+            logger.warning("Genius: 0 search hits for '%s'", name)
+            return None
+
         name_lower = name.lower().strip()
+
+        # Pass 1: exact match
+        seen_ids: set[int] = set()
+        candidates: list[dict] = []
         for hit in hits:
             result = hit.get("result", {})
             primary = result.get("primary_artist", {})
-            if primary.get("name", "").lower().strip() == name_lower:
+            pid = primary.get("id", 0)
+            if pid and pid not in seen_ids:
+                seen_ids.add(pid)
+                candidates.append(primary)
+                if primary.get("name", "").lower().strip() == name_lower:
+                    logger.debug("Genius: exact match for '%s' → id %d", name, pid)
+                    return GeniusArtist(
+                        genius_id=pid,
+                        name=primary.get("name", ""),
+                        url=primary.get("url", ""),
+                        image_url=primary.get("image_url", ""),
+                    )
+
+        # Pass 2: containment match (handles "The National" vs "National")
+        for primary in candidates:
+            pname = primary.get("name", "").lower().strip()
+            if name_lower in pname or pname in name_lower:
+                pid = primary.get("id", 0)
+                logger.debug("Genius: partial match for '%s' → '%s' (id %d)",
+                             name, primary.get("name", ""), pid)
                 return GeniusArtist(
-                    genius_id=primary.get("id", 0),
+                    genius_id=pid,
                     name=primary.get("name", ""),
                     url=primary.get("url", ""),
                     image_url=primary.get("image_url", ""),
                 )
+
+        logger.warning("Genius: no name match for '%s' in %d candidates: %s",
+                        name, len(candidates),
+                        [c.get("name", "") for c in candidates[:5]])
         return None
 
     def get_artist_songs_count(self, genius_id: int, sort: str = "popularity") -> int:
@@ -85,13 +122,17 @@ class GeniusClient:
             return 0
         data = self._get(f"/artists/{genius_id}/songs", {"per_page": 1, "sort": sort})
         response = data.get("response", {})
-        # The API doesn't return a total count directly; we check if songs exist
         songs = response.get("songs", [])
         if not songs:
             return 0
-        # Paginate to count (limited to first page for speed)
+        # Use next_page to infer total: fetch page with per_page=50
         data = self._get(f"/artists/{genius_id}/songs", {"per_page": 50, "sort": sort})
-        return len(data.get("response", {}).get("songs", []))
+        page_songs = data.get("response", {}).get("songs", [])
+        next_page = data.get("response", {}).get("next_page")
+        if next_page:
+            # More than 50 songs — estimate conservatively
+            return max(len(page_songs) * 2, 50)
+        return len(page_songs)
 
     def enrich(self, artist: GeniusArtist) -> GeniusArtist:
         """Populate song count, credit info, social links, and identity data."""

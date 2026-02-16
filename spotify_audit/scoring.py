@@ -152,24 +152,68 @@ def finalize_artist_report(
         report.tiers_completed.append("deep")
         report.deep_signals = deep_result.get("signals", [])
 
-    # Final score = most advanced tier that ran
-    if report.deep_score is not None:
-        report.final_score = report.deep_score
-    elif report.standard_score is not None:
-        report.final_score = report.standard_score
-    elif report.quick_score is not None:
-        report.final_score = report.quick_score
-
-    # Label: derive from evidence verdict when available, legacy score otherwise
+    # Final score: derive from evidence verdict when available
     if report.evaluation:
+        report.final_score = _verdict_to_score(report.evaluation)
         report.label = report.evaluation.verdict.value
     else:
+        # Legacy fallback: invert old tier scores so higher = more legit
+        tier_score = None
+        if report.deep_score is not None:
+            tier_score = report.deep_score
+        elif report.standard_score is not None:
+            tier_score = report.standard_score
+        elif report.quick_score is not None:
+            tier_score = report.quick_score
+        report.final_score = max(0, 100 - (tier_score or 0))
         report.label = score_label(report.final_score)
     report.threat_category = _infer_threat_category(report)
     if report.threat_category is not None:
         report.threat_category_name = THREAT_CATEGORIES.get(report.threat_category, "")
 
     return report
+
+
+def _verdict_to_score(ev: ArtistEvaluation) -> int:
+    """Convert evidence verdict + flag balance into a 0-100 legitimacy score.
+
+    Score ranges:
+        Verified Artist:    80-100
+        Likely Authentic:   55-79
+        Inconclusive:       35-54
+        Suspicious:         15-34
+        Likely Artificial:  0-14
+    """
+    # Base score from verdict
+    base_ranges = {
+        Verdict.VERIFIED_ARTIST: (80, 100),
+        Verdict.LIKELY_AUTHENTIC: (55, 79),
+        Verdict.INCONCLUSIVE: (35, 54),
+        Verdict.SUSPICIOUS: (15, 34),
+        Verdict.LIKELY_ARTIFICIAL: (0, 14),
+    }
+    lo, hi = base_ranges.get(ev.verdict, (35, 54))
+
+    # Confidence shifts within range
+    conf_frac = {"high": 0.85, "medium": 0.55, "low": 0.25}.get(ev.confidence, 0.5)
+
+    # Adjust based on green/red flag balance
+    strong_greens = len(ev.strong_green_flags)
+    strong_reds = len(ev.strong_red_flags)
+    green_total = len(ev.green_flags)
+    red_total = len(ev.red_flags)
+
+    # Net signal: positive = more green, negative = more red
+    net = (strong_greens * 3 + green_total) - (strong_reds * 3 + red_total)
+    # Normalize net to [-1, 1] range
+    max_possible = max(strong_greens * 3 + green_total + strong_reds * 3 + red_total, 1)
+    net_frac = max(-1.0, min(1.0, net / max_possible))
+
+    # Blend: 70% confidence, 30% net signal
+    position = conf_frac * 0.7 + (net_frac + 1) / 2 * 0.3
+
+    score = int(lo + position * (hi - lo))
+    return max(0, min(100, score))
 
 
 def _infer_threat_category(report: ArtistReport) -> float | None:
@@ -294,11 +338,11 @@ def build_playlist_report(
         elif v == Verdict.LIKELY_ARTIFICIAL:
             pr.likely_artificial += 1
 
-    # Legacy breakdown (from weighted score) — uses separate counters
+    # Legacy breakdown (from legitimacy score) — uses separate counters
     for a in artist_reports:
-        if a.final_score <= 20:
+        if a.final_score >= 80:
             pr.verified_legit += 1
-        elif a.final_score <= 40:
+        elif a.final_score >= 55:
             pr.probably_fine += 1
         else:
             pr.likely_non_authentic += 1
