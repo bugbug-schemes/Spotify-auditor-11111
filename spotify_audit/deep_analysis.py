@@ -192,6 +192,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="strong",
             detail="The artist's biography explicitly references AI generation, "
                    "algorithms, or automated music creation. " + reasoning,
+            tags=["ai_mentioned_bio"],
         ))
 
     if verdict == "SUSPICIOUS":
@@ -201,6 +202,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             evidence_type="red_flag",
             strength=strength,
             detail=reasoning,
+            tags=["suspicious_bio"],
         ))
     elif verdict == "AUTHENTIC":
         evidence.append(Evidence(
@@ -209,6 +211,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             evidence_type="green_flag",
             strength=strength,
             detail=reasoning,
+            tags=["authentic_bio"],
         ))
     else:
         evidence.append(Evidence(
@@ -227,6 +230,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="weak",
             detail="Biography mentions specific locations, suggesting a real person "
                    "with verifiable roots.",
+            tags=["geo_specific_bio"],
         ))
     elif bio_text and not geo_specific:
         evidence.append(Evidence(
@@ -236,6 +240,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="weak",
             detail="Biography doesn't mention where the artist is from. "
                    "Real artists almost always reference their hometown or country.",
+            tags=["no_geo_bio"],
         ))
 
     if verifiable:
@@ -246,6 +251,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="moderate",
             detail="Biography references specific events, collaborators, venues, or dates "
                    "that could be independently verified.",
+            tags=["verifiable_claims"],
         ))
 
     return evidence
@@ -344,6 +350,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             evidence_type="red_flag",
             strength=strength,
             detail=reasoning,
+            tags=["ai_image_artifacts"],
         ))
     elif image_type == "AI_GENERATED":
         evidence.append(Evidence(
@@ -352,6 +359,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             evidence_type="red_flag",
             strength=strength,
             detail=reasoning,
+            tags=["ai_generated_image"],
         ))
     elif image_type in ("ABSTRACT_ART", "LOGO", "OTHER"):
         evidence.append(Evidence(
@@ -362,6 +370,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             detail="Profile uses abstract art, a logo, or non-human imagery instead of "
                    "a photo. While some real artists do this, it's more common with "
                    "fabricated profiles. " + reasoning,
+            tags=["abstract_image"],
         ))
     elif image_type == "STOCK_PHOTO":
         evidence.append(Evidence(
@@ -371,6 +380,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             strength="moderate",
             detail="Profile image looks like a stock photo rather than an authentic "
                    "artist photo. Ghost artists frequently use stock imagery. " + reasoning,
+            tags=["stock_photo"],
         ))
     elif image_type == "HUMAN_PHOTO" and ai_artifacts == "NO":
         evidence.append(Evidence(
@@ -379,6 +389,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             evidence_type="green_flag",
             strength=strength,
             detail=reasoning,
+            tags=["authentic_photo"],
         ))
     else:
         evidence.append(Evidence(
@@ -450,12 +461,14 @@ REASONING: [2-3 sentences summarizing the key evidence and your conclusion]"""
     reasoning = _extract_field(text, "REASONING", "")
 
     if category in ("PFC_GHOST", "AI_GENERATED"):
+        synth_tag = "synth_pfc_ghost" if category == "PFC_GHOST" else "synth_ai_generated"
         evidence.append(Evidence(
             finding=f"Claude synthesis: {category.replace('_', ' ').title()}",
             source="Claude synthesis",
             evidence_type="red_flag",
             strength="strong" if confidence == "HIGH" else "moderate",
             detail=reasoning,
+            tags=[synth_tag],
         ))
     elif category == "LEGITIMATE":
         evidence.append(Evidence(
@@ -464,6 +477,7 @@ REASONING: [2-3 sentences summarizing the key evidence and your conclusion]"""
             evidence_type="green_flag",
             strength="strong" if confidence == "HIGH" else "moderate",
             detail=reasoning,
+            tags=["synth_legitimate"],
         ))
     else:
         evidence.append(Evidence(
@@ -677,12 +691,14 @@ REASONING: [2-3 sentences]"""
 
             evidence = []
             if category in ("PFC_GHOST", "AI_GENERATED"):
+                synth_tag = "synth_pfc_ghost" if category == "PFC_GHOST" else "synth_ai_generated"
                 evidence.append(Evidence(
                     finding=f"Claude synthesis: {category.replace('_', ' ').title()}",
                     source="Claude synthesis",
                     evidence_type="red_flag",
                     strength="strong" if confidence == "HIGH" else "moderate",
                     detail=reasoning,
+                    tags=[synth_tag],
                 ))
             elif category == "LEGITIMATE":
                 evidence.append(Evidence(
@@ -691,6 +707,7 @@ REASONING: [2-3 sentences]"""
                     evidence_type="green_flag",
                     strength="strong" if confidence == "HIGH" else "moderate",
                     detail=reasoning,
+                    tags=["synth_legitimate"],
                 ))
             else:
                 evidence.append(Evidence(

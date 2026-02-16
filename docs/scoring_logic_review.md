@@ -495,10 +495,10 @@ total_red_strength   = strong_reds × 3 + moderate_reds × 2 + weak_reds × 1
 ### Rules (evaluated in order, first match wins)
 
 **Rule 1: Known AI Artist Name**
-If any strong red flag from "Blocklist" source contains "name" and "known AI artist" → **Likely Artificial** (high confidence)
+If any red flag has tag `known_ai_name` → **Likely Artificial** (high confidence)
 
 **Rule 2: PFC Label + Content Farm**
-If PFC blocklist label match AND content farm/stream farm pattern → **Likely Artificial** (high confidence)
+If any red flag has tag `pfc_label` AND any red flag has tag `content_farm` or `stream_farm` → **Likely Artificial** (high confidence)
 
 **Rule 3: Multiple Strong Reds, No Greens**
 If ≥3 strong red flags AND 0 strong greens AND 0 moderate greens → **Likely Artificial** (medium confidence)
@@ -524,7 +524,10 @@ If `green_strength > red_strength` → **Likely Authentic** (low confidence)
 **Rule 10: Red > Green**
 If `red_strength > green_strength` → **Suspicious** (low confidence)
 
-**Default: Inconclusive** (low confidence)
+**Default (when green == red):** Distinguishes three sub-cases:
+- If total flags < 5 → **Insufficient Data** (low confidence) — not enough evidence to judge
+- If both green_strength ≥ 4 and red_strength ≥ 4 → **Conflicting Signals** (low confidence) — plenty of evidence but it disagrees
+- Otherwise → **Inconclusive** (low confidence) — generic fallback
 
 ---
 
@@ -534,11 +537,13 @@ If `red_strength > green_strength` → **Suspicious** (low confidence)
 
 Each verdict maps to a score range:
 ```
-Verified Artist:    80-100
-Likely Authentic:   55-79
-Inconclusive:       35-54
-Suspicious:         15-34
-Likely Artificial:  0-14
+Verified Artist:      80-100
+Likely Authentic:     55-79
+Inconclusive:         35-54
+Insufficient Data:    35-54
+Conflicting Signals:  35-54
+Suspicious:           15-34
+Likely Artificial:    0-14
 ```
 
 Position within the range is determined by blending:
@@ -738,10 +743,7 @@ An optional SQLite database accumulates intelligence from prior scans. When avai
 
 ### Fixed Issues
 
-5. **~~Rule 1 operator precedence bug~~** — FIXED. Added parentheses so the `or` and `and` bind correctly:
-   ```python
-   if ("known AI artist" in r.finding.lower() or "blocklist" in r.finding.lower()) and r.strength == "strong":
-   ```
+5. **~~Rule 1 operator precedence bug~~** — FIXED (superseded by #16). Originally added parentheses for correct operator binding; now replaced entirely with tag-based check: `if _any_red_tag("known_ai_name")`.
 
 6. **~~Threat category legacy fallback inversion~~** — FIXED. Inverted the gate: now `if report.final_score >= 55: return None` (skip categories for legitimate artists). The threshold checks inside were also flipped to use `<=` for legitimacy scale (e.g., `report.final_score <= 35` for PFC Ghost).
 
@@ -751,7 +753,19 @@ An optional SQLite database accumulates intelligence from prior scans. When avai
     - ratio 4-10 → moderate green ("reasonable replay rate")
     - ratio 2-4 → weak neutral ("borderline")
 
-14. **~~Fragile string matching in Creative History category score~~** — FIXED. Refactored `compute_category_scores()` Creative History section to use `e.source` field (Deezer, Discogs, Genius) combined with broad keyword checks, instead of matching exact phrasings like `"albums in catalog"`.
+14. **~~Fragile string matching in Creative History category score~~** — FIXED (superseded by #16).
+
+16. **~~Fragile string matching throughout~~** — FIXED. Added `tags: list[str]` field to the `Evidence` dataclass with a ~50-tag controlled vocabulary (e.g., `pfc_label`, `content_farm`, `ai_generated_image`, `live_performance`, `known_ai_name`). All ~95 Evidence constructors across `evidence.py`, `deep_analysis.py`, and `entity_db.py` now carry structured tags. Refactored all four consumer locations to match on tags instead of prose:
+    - Decision tree (Rules 1-2): `_any_red_tag("known_ai_name")` instead of `"known AI artist" in finding`
+    - Threat category inference: tag set intersection instead of string concatenation
+    - Category scores: Creative History and Industry Signals use tag-based matching
+    - Formatter: PFC/content farm check uses `{"pfc_label", "content_farm"} & set(e.tags)`
+
+17. **~~Inconclusive verdict too broad~~** — FIXED. Split the Inconclusive verdict into three cases in the decision tree default:
+    - `Verdict.INSUFFICIENT_DATA` — fewer than 5 total flags collected (too little info to judge)
+    - `Verdict.CONFLICTING_SIGNALS` — both green and red strength ≥ 4 (plenty of data but it disagrees)
+    - `Verdict.INCONCLUSIVE` — generic fallback for everything else
+    All downstream consumers updated: `_VERDICT_ORDER`, `_verdict_to_score` base ranges, threat category gate, playlist health mapping, CLI colors/icons, and formatter explanations. Both new sub-verdicts map to the same 35-54 score range and health weight (50) as the original Inconclusive.
 
 ### Remaining Design Questions
 

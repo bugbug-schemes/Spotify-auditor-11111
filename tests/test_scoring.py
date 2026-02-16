@@ -46,13 +46,15 @@ def _make_evaluation(
 
 
 def _make_flag(finding: str, source: str = "test", strength: str = "moderate",
-               flag_type: str = "red_flag", detail: str = "") -> Evidence:
+               flag_type: str = "red_flag", detail: str = "",
+               tags: list[str] | None = None) -> Evidence:
     return Evidence(
         finding=finding,
         source=source,
         evidence_type=flag_type,
         strength=strength,
         detail=detail,
+        tags=tags or [],
     )
 
 
@@ -159,7 +161,8 @@ class TestInferThreatCategory:
             artist_id="t", artist_name="T",
             evaluation=_make_evaluation(
                 Verdict.SUSPICIOUS,
-                red_flags=[_make_flag("Label matches PFC blocklist", detail="PFC distributor")],
+                red_flags=[_make_flag("Label matches PFC blocklist",
+                                      tags=["pfc_label"])],
             ),
         )
         assert _infer_threat_category(report) == 1  # PFC Ghost Artist
@@ -169,7 +172,8 @@ class TestInferThreatCategory:
             artist_id="t", artist_name="T",
             evaluation=_make_evaluation(
                 Verdict.SUSPICIOUS,
-                red_flags=[_make_flag("AI-generated content", detail="ai_generated pattern")],
+                red_flags=[_make_flag("AI-generated content",
+                                      tags=["ai_generated_image"])],
             ),
         )
         assert _infer_threat_category(report) == 2  # Independent AI Artist
@@ -179,7 +183,8 @@ class TestInferThreatCategory:
             artist_id="t", artist_name="T",
             evaluation=_make_evaluation(
                 Verdict.SUSPICIOUS,
-                red_flags=[_make_flag("Possible impersonation", detail="impersonation detected")],
+                red_flags=[_make_flag("Possible impersonation",
+                                      tags=["impersonation"])],
             ),
         )
         assert _infer_threat_category(report) == 4  # AI Impersonation
@@ -189,8 +194,10 @@ class TestInferThreatCategory:
             artist_id="t", artist_name="T",
             evaluation=_make_evaluation(
                 Verdict.SUSPICIOUS,
-                red_flags=[_make_flag("PFC + AI hybrid",
-                                      detail="pfc content farm ai-generated")],
+                red_flags=[
+                    _make_flag("PFC label", tags=["pfc_label"]),
+                    _make_flag("AI image", tags=["ai_generated_image"]),
+                ],
             ),
         )
         assert _infer_threat_category(report) == 1.5  # PFC + AI Hybrid

@@ -78,6 +78,8 @@ _VERDICT_COLORS = {
     Verdict.VERIFIED_ARTIST: "green",
     Verdict.LIKELY_AUTHENTIC: "bright_green",
     Verdict.INCONCLUSIVE: "yellow",
+    Verdict.INSUFFICIENT_DATA: "yellow",
+    Verdict.CONFLICTING_SIGNALS: "yellow",
     Verdict.SUSPICIOUS: "dark_orange",
     Verdict.LIKELY_ARTIFICIAL: "red",
 }
@@ -86,6 +88,8 @@ _VERDICT_ICONS = {
     Verdict.VERIFIED_ARTIST: "[green]OK[/green]",
     Verdict.LIKELY_AUTHENTIC: "[bright_green]OK[/bright_green]",
     Verdict.INCONCLUSIVE: "[yellow]??[/yellow]",
+    Verdict.INSUFFICIENT_DATA: "[yellow]--[/yellow]",
+    Verdict.CONFLICTING_SIGNALS: "[yellow]!?[/yellow]",
     Verdict.SUSPICIOUS: "[dark_orange]!![/dark_orange]",
     Verdict.LIKELY_ARTIFICIAL: "[red]XX[/red]",
 }

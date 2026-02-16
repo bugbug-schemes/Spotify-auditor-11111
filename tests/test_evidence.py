@@ -554,12 +554,12 @@ class TestDecideVerdict:
         )
 
     def test_known_ai_name_likely_artificial(self):
-        reds = [self._flag("Name matches known AI artist blocklist", "strong", "red_flag")]
-        reds[0] = Evidence(
+        reds = [Evidence(
             finding="Name matches known AI artist blocklist",
             source="Blocklist",
             evidence_type="red_flag", strength="strong", detail="",
-        )
+            tags=["known_ai_name"],
+        )]
         path: list[str] = []
         verdict, conf = _decide_verdict(reds, [], PlatformPresence(), path)
         assert verdict == Verdict.LIKELY_ARTIFICIAL
@@ -567,8 +567,12 @@ class TestDecideVerdict:
 
     def test_pfc_plus_farm_likely_artificial(self):
         reds = [
-            self._flag("Label matches PFC blocklist", "strong", "red_flag"),
-            self._flag("content farm pattern", "strong", "red_flag"),
+            Evidence(finding="Label matches PFC blocklist", source="Blocklist",
+                     evidence_type="red_flag", strength="strong", detail="",
+                     tags=["pfc_label"]),
+            Evidence(finding="content farm pattern", source="Deezer",
+                     evidence_type="red_flag", strength="strong", detail="",
+                     tags=["content_farm"]),
         ]
         path: list[str] = []
         verdict, conf = _decide_verdict(reds, [], PlatformPresence(), path)
@@ -590,9 +594,28 @@ class TestDecideVerdict:
         verdict, conf = _decide_verdict([], [], presence, path)
         assert verdict == Verdict.VERIFIED_ARTIST
 
-    def test_balanced_evidence_inconclusive(self):
+    def test_few_balanced_flags_insufficient_data(self):
+        """Two balanced flags → too few signals to judge."""
         reds = [self._flag("r", "moderate", "red_flag")]
         greens = [self._flag("g", "moderate", "green_flag")]
+        path: list[str] = []
+        verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
+        assert verdict == Verdict.INSUFFICIENT_DATA
+
+    def test_many_balanced_flags_conflicting_signals(self):
+        """Many substantial flags on both sides → conflicting signals."""
+        reds = [self._flag(f"r{i}", "moderate", "red_flag") for i in range(3)]
+        greens = [self._flag(f"g{i}", "moderate", "green_flag") for i in range(3)]
+        path: list[str] = []
+        verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
+        assert verdict == Verdict.CONFLICTING_SIGNALS
+
+    def test_moderate_balanced_flags_inconclusive(self):
+        """Equal strengths, 5+ flags, both strengths < 4 → generic Inconclusive."""
+        # 3 weak reds = strength 3, 3 weak greens = strength 3
+        # Total flags = 6 (≥5), both strengths < 4 → Inconclusive
+        reds = [self._flag(f"r{i}", "weak", "red_flag") for i in range(3)]
+        greens = [self._flag(f"g{i}", "weak", "green_flag") for i in range(3)]
         path: list[str] = []
         verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
         assert verdict == Verdict.INCONCLUSIVE
