@@ -52,7 +52,7 @@ Higher score = more legitimate. Derived from evidence verdict + confidence + fla
 - **Always available** (no key): Deezer, MusicBrainz
 - **Requires free API key**: Genius (`GENIUS_TOKEN`), Discogs (`DISCOGS_TOKEN`), Setlist.fm (`SETLISTFM_API_KEY`), Last.fm (`LASTFM_API_KEY`)
 - **Requires paid key**: Claude/Anthropic (`ANTHROPIC_API_KEY`) — Deep tier only
-- **Removed from UX**: Bandsintown (no API access) — client code kept but not called
+- **No longer obtainable**: Bandsintown (`BANDSINTOWN_APP_ID`) — API keys can no longer be obtained; client code is integrated but gracefully no-ops when unconfigured
 
 ## Blocklists
 JSON files in `spotify_audit/blocklists/`:
@@ -72,7 +72,7 @@ Label evidence checks ALL three lists. Contributors checked against `pfc_songwri
 
 ## Recent Changes (v0.6)
 - Genius/Setlist.fm: 2-pass matching (exact + partial), WARNING-level logging
-- Bandsintown fully removed from UX
+- Bandsintown API keys no longer obtainable; client gracefully no-ops when unconfigured
 - Release pace: separate singles/month vs albums/month thresholds
 - Scores flipped to legitimacy scale (Verified >80, PFC <14)
 - Label checking expanded: PFC distributors + known AI + PFC songwriters
