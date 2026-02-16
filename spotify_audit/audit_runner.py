@@ -22,7 +22,6 @@ from spotify_audit.musicbrainz_client import MusicBrainzClient
 from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
-from spotify_audit.bandsintown_client import BandsintownClient
 from spotify_audit.lastfm_client import LastfmClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
@@ -64,7 +63,6 @@ def build_config() -> AuditConfig:
         genius_token=os.getenv("GENIUS_TOKEN", ""),
         discogs_token=os.getenv("DISCOGS_TOKEN", ""),
         setlistfm_api_key=os.getenv("SETLISTFM_API_KEY", ""),
-        bandsintown_app_id=os.getenv("BANDSINTOWN_APP_ID", ""),
     )
 
 
@@ -129,7 +127,6 @@ def _lookup_external_data(
     genius: GeniusClient,
     discogs: DiscogsClient,
     setlistfm: SetlistFmClient,
-    bandsintown: BandsintownClient,
     mb_client: MusicBrainzClient,
     lastfm: "LastfmClient | None" = None,
 ) -> ExternalData:
@@ -188,21 +185,6 @@ def _lookup_external_data(
                 ext.setlistfm_tour_names = sa.tour_names
         except Exception as exc:
             logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
-
-    if bandsintown.enabled:
-        try:
-            ba = bandsintown.get_artist(search_name)
-            if ba:
-                ext.bandsintown_found = True
-                ba = bandsintown.enrich(ba)
-                ext.bandsintown_past_events = ba.past_events
-                ext.bandsintown_upcoming_events = ba.upcoming_events
-                ext.bandsintown_tracker_count = ba.tracker_count
-                ext.bandsintown_facebook_url = ba.facebook_page_url
-                ext.bandsintown_social_links = ba.social_links
-                ext.bandsintown_on_tour = ba.on_tour
-        except Exception as exc:
-            logger.debug("Bandsintown lookup failed for '%s': %s", search_name, exc)
 
     try:
         mb = mb_client.search_artist(search_name)
@@ -310,7 +292,6 @@ def _run_audit_core(
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
-    bandsintown_client = BandsintownClient(app_id=config.bandsintown_app_id, delay=0.3)
     lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
 
     anthropic_client = None
@@ -404,7 +385,7 @@ def _run_audit_core(
             genius=genius_client,
             discogs=discogs_client,
             setlistfm=setlistfm_client,
-            bandsintown=bandsintown_client,
+
             mb_client=mb_client,
             lastfm=lastfm_client,
         )
@@ -419,7 +400,7 @@ def _run_audit_core(
             genius=genius_client,
             discogs=discogs_client,
             setlistfm=setlistfm_client,
-            bandsintown=bandsintown_client,
+
             mb_client=mb_client,
             deezer=deezer_client,
             weights=config.standard_weights,

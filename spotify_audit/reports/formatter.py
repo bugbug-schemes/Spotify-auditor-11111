@@ -701,10 +701,6 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
         fields.append(f"<strong>Tours:</strong> {_esc(', '.join(ext.setlistfm_tour_names[:3]))}")
     if ext.setlistfm_venue_countries:
         fields.append(f"<strong>Countries:</strong> {_esc(', '.join(ext.setlistfm_venue_countries[:5]))}")
-    if ext.bandsintown_past_events:
-        fields.append(f"<strong>BIT events:</strong> {ext.bandsintown_past_events}")
-    if ext.bandsintown_tracker_count:
-        fields.append(f"<strong>BIT trackers:</strong> {ext.bandsintown_tracker_count:,}")
     if ext.musicbrainz_type:
         fields.append(f"<strong>Type:</strong> {_esc(ext.musicbrainz_type)}")
     if ext.musicbrainz_country:
@@ -726,8 +722,6 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
         social.append("Instagram")
     if ext.genius_twitter_name:
         social.append("Twitter/X")
-    if ext.bandsintown_facebook_url:
-        social.append("Facebook(BIT)")
     for rt in ext.musicbrainz_urls:
         social.append(f"MB:{rt}")
     if social:

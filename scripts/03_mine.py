@@ -364,7 +364,7 @@ def analyze_temporal(profiles: list[dict]) -> dict:
 # 3.3 Cross-Platform Presence Matrix
 # ---------------------------------------------------------------------------
 
-PLATFORMS = ["musicbrainz", "deezer", "genius", "discogs", "setlistfm", "lastfm", "bandsintown"]
+PLATFORMS = ["musicbrainz", "deezer", "genius", "discogs", "setlistfm", "lastfm"]
 
 
 def analyze_platform_presence(profiles: list[dict]) -> dict:

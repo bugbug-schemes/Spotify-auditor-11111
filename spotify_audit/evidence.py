@@ -68,15 +68,6 @@ class ExternalData:
     setlistfm_venue_countries: list[str] = field(default_factory=list)
     setlistfm_tour_names: list[str] = field(default_factory=list)
 
-    # Bandsintown
-    bandsintown_found: bool = False
-    bandsintown_past_events: int = 0
-    bandsintown_upcoming_events: int = 0
-    bandsintown_tracker_count: int = 0
-    bandsintown_facebook_url: str = ""
-    bandsintown_social_links: list[dict] = field(default_factory=list)
-    bandsintown_on_tour: bool = False
-
     # MusicBrainz
     musicbrainz_found: bool = False
     musicbrainz_type: str = ""       # "Person", "Group", etc.
@@ -134,7 +125,6 @@ class PlatformPresence:
     genius: bool = False
     discogs: bool = False
     setlistfm: bool = False
-    bandsintown: bool = False
     lastfm: bool = False
 
     def count(self) -> int:
@@ -1337,7 +1327,7 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
             source="Live shows",
             evidence_type="red_flag",
             strength="moderate",
-            detail="No concerts found on Setlist.fm or Bandsintown. While some real "
+            detail="No concerts found on Setlist.fm. While some real "
                    "artists are studio-only, the absence of any live history is a "
                    "common pattern for ghost and AI-generated artists.",
         ))
@@ -2104,7 +2094,7 @@ def evaluate_artist(
     Args:
         artist: Core artist data (from Deezer/Spotify)
         external: Optional results from Standard-tier API lookups
-                  (Genius, Discogs, Setlist.fm, Bandsintown, MusicBrainz)
+                  (Genius, Discogs, Setlist.fm, MusicBrainz)
         entity_db: Optional entity intelligence database for prior knowledge
     """
     ext = external or ExternalData()

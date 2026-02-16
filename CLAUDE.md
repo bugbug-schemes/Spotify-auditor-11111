@@ -42,7 +42,7 @@ Higher score = more legitimate. Derived from evidence verdict + confidence + fla
 `_verdict_to_score()` in `scoring.py` blends verdict range + confidence (70%) + green/red flag balance (30%).
 
 ## Evidence Pipeline
-1. **Platform evidence**: Spotify, Deezer, MusicBrainz, Genius, Discogs, Setlist.fm, Last.fm (7 platforms)
+1. **Platform evidence**: Spotify, Deezer, MusicBrainz, Genius, Discogs, Setlist.fm, Last.fm (6 external platforms)
 2. **Core collectors**: followers, catalog, durations, releases (singles vs albums/month), labels, names, collabs, genres, ranks
 3. **External collectors**: genius credits, discogs physical/bio, live shows, musicbrainz metadata, social media, identity, Last.fm engagement, touring geography
 4. **Entity DB**: Prior intelligence from accumulated scans
@@ -52,7 +52,6 @@ Higher score = more legitimate. Derived from evidence verdict + confidence + fla
 - **Always available** (no key): Deezer, MusicBrainz
 - **Requires free API key**: Genius (`GENIUS_TOKEN`), Discogs (`DISCOGS_TOKEN`), Setlist.fm (`SETLISTFM_API_KEY`), Last.fm (`LASTFM_API_KEY`)
 - **Requires paid key**: Claude/Anthropic (`ANTHROPIC_API_KEY`) — Deep tier only
-- **No longer obtainable**: Bandsintown (`BANDSINTOWN_APP_ID`) — API keys can no longer be obtained; client code is integrated but gracefully no-ops when unconfigured
 
 ## Blocklists
 JSON files in `spotify_audit/blocklists/`:
@@ -63,7 +62,7 @@ JSON files in `spotify_audit/blocklists/`:
 Label evidence checks ALL three lists. Contributors checked against `pfc_songwriters`.
 
 ## Pipeline Scripts (scripts/)
-- `01_enrich.py` — Phase 1: 7-API enrichment per artist → `data/enriched/`
+- `01_enrich.py` — Phase 1: 6-API enrichment per artist → `data/enriched/`
 - `02_expand.py` — Phase 2: Entity graph expansion
 - `03_mine.py` — Phase 3: Pattern mining
 - `04_validate.py` — Phase 4: Statistical validation vs control group
@@ -72,7 +71,7 @@ Label evidence checks ALL three lists. Contributors checked against `pfc_songwri
 
 ## Recent Changes (v0.6)
 - Genius/Setlist.fm: 2-pass matching (exact + partial), WARNING-level logging
-- Bandsintown API keys no longer obtainable; client gracefully no-ops when unconfigured
+- Bandsintown client removed (API defunct, never returned data)
 - Release pace: separate singles/month vs albums/month thresholds
 - Scores flipped to legitimacy scale (Verified >80, PFC <14)
 - Label checking expanded: PFC distributors + known AI + PFC songwriters

@@ -74,7 +74,6 @@ CREATE TABLE IF NOT EXISTS artists (
     genius_id       INTEGER,
     discogs_id      INTEGER,
     setlistfm_id    TEXT,
-    bandsintown_id  TEXT,
     lastfm_url      TEXT,
     -- Per-API found flags
     found_spotify   INTEGER DEFAULT 0,
@@ -83,7 +82,6 @@ CREATE TABLE IF NOT EXISTS artists (
     found_genius    INTEGER DEFAULT 0,
     found_discogs   INTEGER DEFAULT 0,
     found_setlistfm INTEGER DEFAULT 0,
-    found_bandsintown INTEGER DEFAULT 0,
     found_lastfm    INTEGER DEFAULT 0,
     platform_count  INTEGER DEFAULT 0,
     -- Threat & verdict
@@ -232,7 +230,6 @@ class EntityDB:
         # Migrations: add columns that may be missing on older DBs
         for col, typ in [
             ("setlistfm_id", "TEXT"),
-            ("bandsintown_id", "TEXT"),
             ("lastfm_url", "TEXT"),
             ("found_spotify", "INTEGER DEFAULT 0"),
             ("found_deezer", "INTEGER DEFAULT 0"),
@@ -240,7 +237,6 @@ class EntityDB:
             ("found_genius", "INTEGER DEFAULT 0"),
             ("found_discogs", "INTEGER DEFAULT 0"),
             ("found_setlistfm", "INTEGER DEFAULT 0"),
-            ("found_bandsintown", "INTEGER DEFAULT 0"),
             ("found_lastfm", "INTEGER DEFAULT 0"),
             ("platform_count", "INTEGER DEFAULT 0"),
             ("deezer_fans", "INTEGER"),
@@ -280,7 +276,6 @@ class EntityDB:
         genius_id: int | None = None,
         discogs_id: int | None = None,
         setlistfm_id: str | None = None,
-        bandsintown_id: str | None = None,
         lastfm_url: str | None = None,
         # Per-API found flags
         found_spotify: bool | None = None,
@@ -289,7 +284,6 @@ class EntityDB:
         found_genius: bool | None = None,
         found_discogs: bool | None = None,
         found_setlistfm: bool | None = None,
-        found_bandsintown: bool | None = None,
         found_lastfm: bool | None = None,
         platform_count: int | None = None,
         # Metrics
@@ -318,7 +312,6 @@ class EntityDB:
         if genius_id: optional["genius_id"] = genius_id
         if discogs_id: optional["discogs_id"] = discogs_id
         if setlistfm_id: optional["setlistfm_id"] = setlistfm_id
-        if bandsintown_id: optional["bandsintown_id"] = bandsintown_id
         if lastfm_url: optional["lastfm_url"] = lastfm_url
         if found_spotify is not None: optional["found_spotify"] = int(found_spotify)
         if found_deezer is not None: optional["found_deezer"] = int(found_deezer)
@@ -326,7 +319,6 @@ class EntityDB:
         if found_genius is not None: optional["found_genius"] = int(found_genius)
         if found_discogs is not None: optional["found_discogs"] = int(found_discogs)
         if found_setlistfm is not None: optional["found_setlistfm"] = int(found_setlistfm)
-        if found_bandsintown is not None: optional["found_bandsintown"] = int(found_bandsintown)
         if found_lastfm is not None: optional["found_lastfm"] = int(found_lastfm)
         if platform_count is not None: optional["platform_count"] = platform_count
         if deezer_fans is not None: optional["deezer_fans"] = deezer_fans
@@ -844,7 +836,6 @@ class EntityDB:
         genius = profile.get("genius", {})
         discogs = profile.get("discogs", {})
         setlistfm = profile.get("setlistfm", {})
-        bandsintown = profile.get("bandsintown", {})
         lastfm = profile.get("lastfm", {})
 
         # Per-API found flags
@@ -853,12 +844,11 @@ class EntityDB:
         f_genius = bool(genius.get("found"))
         f_discogs = bool(discogs.get("found"))
         f_setlistfm = bool(setlistfm.get("found"))
-        f_bandsintown = bool(bandsintown.get("found"))
         f_lastfm = bool(lastfm.get("found"))
 
         platform_count = profile.get("platform_count") or sum([
             f_deezer, f_mb, f_genius, f_discogs,
-            f_setlistfm, f_bandsintown, f_lastfm,
+            f_setlistfm, f_lastfm,
         ])
 
         artist_id = self.upsert_artist(
@@ -869,7 +859,6 @@ class EntityDB:
             genius_id=genius.get("genius_id") if f_genius else None,
             discogs_id=discogs.get("discogs_id") if f_discogs else None,
             setlistfm_id=setlistfm.get("setlistfm_id") or setlistfm.get("mbid") if f_setlistfm else None,
-            bandsintown_id=bandsintown.get("bandsintown_id") if f_bandsintown else None,
             lastfm_url=lastfm.get("url") if f_lastfm else None,
             # Found flags
             found_deezer=f_deezer,
@@ -877,7 +866,6 @@ class EntityDB:
             found_genius=f_genius,
             found_discogs=f_discogs,
             found_setlistfm=f_setlistfm,
-            found_bandsintown=f_bandsintown,
             found_lastfm=f_lastfm,
             platform_count=platform_count,
             # Metrics

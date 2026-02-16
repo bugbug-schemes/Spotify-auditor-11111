@@ -98,7 +98,7 @@ class StandardWeights:
     quick_score: float = 0.40
     genius_credits: float = 0.12          # songwriter/producer credits
     discogs_physical: float = 0.12        # physical releases (vinyl/CD)
-    live_show_history: float = 0.12       # concert history (setlist.fm + bandsintown)
+    live_show_history: float = 0.12       # concert history (setlist.fm)
     musicbrainz_presence: float = 0.08    # MusicBrainz metadata quality
     label_blocklist_match: float = 0.10   # PFC distributor/label match
     deezer_cross_check: float = 0.06      # Deezer presence & fan validation
@@ -144,8 +144,6 @@ class AuditConfig:
     genius_token: str = ""              # Genius access token
     discogs_token: str = ""             # Discogs personal access token
     setlistfm_api_key: str = ""         # setlist.fm API key
-    bandsintown_app_id: str = ""        # Bandsintown app ID
-
     # Rate-limit / batching
     claude_batch_size: int = 5          # artists per Claude API call
     max_retries: int = 5

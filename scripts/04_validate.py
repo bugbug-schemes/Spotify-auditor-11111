@@ -46,7 +46,7 @@ SIGNAL_IMPORTANCE_FILE = FEATURES_DIR / "signal_importance.json"
 SCORING_WEIGHTS_FILE = FEATURES_DIR / "revised_scoring_weights.json"
 VALIDATION_SUMMARY_FILE = FEATURES_DIR / "_validation_summary.json"
 
-PLATFORMS = ["musicbrainz", "deezer", "genius", "discogs", "setlistfm", "lastfm", "bandsintown"]
+PLATFORMS = ["musicbrainz", "deezer", "genius", "discogs", "setlistfm", "lastfm"]
 
 
 # ---------------------------------------------------------------------------
@@ -151,11 +151,6 @@ def extract_features(profile: dict, entity_data: dict, is_control: bool = False)
     features["setlist_count"] = setlistfm.get("total_setlists", 0) or 0
     features["setlist_country_count"] = len(setlistfm.get("venue_countries", []) or [])
     features["has_setlists"] = 1 if features["setlist_count"] > 0 else 0
-
-    # --- Bandsintown ---
-    bit = profile.get("bandsintown", {})
-    features["bandsintown_trackers"] = bit.get("tracker_count", 0) or 0
-    features["has_bandsintown_events"] = 1 if (bit.get("past_events", 0) or 0) > 0 else 0
 
     # --- MusicBrainz ---
     mb = profile.get("musicbrainz", {})
@@ -315,9 +310,9 @@ def _chi2_cdf(x: float, k: int) -> float:
 
 BINARY_FEATURES = [
     "has_musicbrainz", "has_deezer", "has_genius", "has_discogs",
-    "has_setlistfm", "has_lastfm", "has_bandsintown",
+    "has_setlistfm", "has_lastfm",
     "has_discogs_physical", "lastfm_bio_exists", "has_setlists",
-    "has_bandsintown_events", "has_burst_releases", "has_isni", "has_ipi",
+    "has_burst_releases", "has_isni", "has_ipi",
     "known_bad_actor_producer", "known_bad_actor_label",
     "disambiguation_high", "disambiguation_ambiguous",
 ]
@@ -327,7 +322,7 @@ CONTINUOUS_FEATURES = [
     "singles_ratio", "avg_track_duration_sec", "release_cadence_cv",
     "career_lifespan_days", "lastfm_listeners_log",
     "lastfm_listener_play_ratio", "genius_song_count", "genius_followers",
-    "setlist_count", "setlist_country_count", "bandsintown_trackers",
+    "setlist_count", "setlist_country_count",
     "max_producer_corpus_pct", "label_exclusivity_score",
     "similar_artist_corpus_overlap", "name_word_count", "name_char_count",
     "discogs_physical_count",

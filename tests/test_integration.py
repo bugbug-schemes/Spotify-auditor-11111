@@ -78,7 +78,6 @@ def _profile_to_external_data(profile: dict) -> ExternalData:
     genius = profile.get("genius", {})
     discogs = profile.get("discogs", {})
     setlistfm = profile.get("setlistfm", {})
-    bandsintown = profile.get("bandsintown", {})
     mb = profile.get("musicbrainz", {})
     lastfm = profile.get("lastfm", {})
 
@@ -118,14 +117,6 @@ def _profile_to_external_data(profile: dict) -> ExternalData:
         setlistfm_venue_cities=setlistfm.get("venue_cities", []) or [],
         setlistfm_venue_countries=setlistfm.get("venue_countries", []) or [],
         setlistfm_tour_names=setlistfm.get("tour_names", []) or [],
-
-        bandsintown_found=bandsintown.get("found", False),
-        bandsintown_past_events=bandsintown.get("past_events", 0) or 0,
-        bandsintown_upcoming_events=bandsintown.get("upcoming_events", 0) or 0,
-        bandsintown_tracker_count=bandsintown.get("tracker_count", 0) or 0,
-        bandsintown_facebook_url=bandsintown.get("facebook_page_url", "") or "",
-        bandsintown_social_links=bandsintown.get("social_links", []) or [],
-        bandsintown_on_tour=bandsintown.get("on_tour", False),
 
         musicbrainz_found=mb.get("found", False),
         musicbrainz_type=mb.get("type", "") or "",

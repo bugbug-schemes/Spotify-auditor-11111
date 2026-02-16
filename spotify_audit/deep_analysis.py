@@ -103,9 +103,6 @@ def _build_artist_context(artist: ArtistInfo, ext: ExternalData) -> str:
         lines.append(f"Country (MusicBrainz): {ext.musicbrainz_country}")
     if ext.setlistfm_total_shows:
         lines.append(f"Live shows: {ext.setlistfm_total_shows}")
-    if ext.bandsintown_past_events:
-        lines.append(f"Bandsintown past events: {ext.bandsintown_past_events}")
-
     return "\n".join(lines)
 
 

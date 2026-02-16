@@ -5,7 +5,7 @@ Runs after Quick Scan for artists that score above the escalation threshold.
 Checks external sources that require free API keys:
   - Genius: songwriter/producer credits (ghost artists have none)
   - Discogs: physical releases (ghost artists never press vinyl/CDs)
-  - Setlist.fm + Bandsintown: live show history (ghost artists don't tour)
+  - Setlist.fm: live show history (ghost artists don't tour)
   - MusicBrainz: metadata quality, label info, distributor blocklist matching
   - Deezer: cross-validation of fan counts and catalog
 
@@ -27,7 +27,6 @@ from spotify_audit.analyzers.quick import QuickScanResult, SignalResult
 from spotify_audit.genius_client import GeniusClient, GeniusArtist
 from spotify_audit.discogs_client import DiscogsClient, DiscogsArtist
 from spotify_audit.setlistfm_client import SetlistFmClient, SetlistArtist
-from spotify_audit.bandsintown_client import BandsintownClient, BandsintownArtist
 from spotify_audit.musicbrainz_client import MusicBrainzClient, MBArtist
 from spotify_audit.deezer_client import DeezerClient, DeezerArtist
 
@@ -121,14 +120,12 @@ def _score_discogs_physical(artist_name: str, discogs: DiscogsClient) -> tuple[f
 def _score_live_show_history(
     artist_name: str,
     setlistfm: SetlistFmClient,
-    bandsintown: BandsintownClient,
 ) -> tuple[float, str]:
-    """Check concert history from setlist.fm and Bandsintown.
+    """Check concert history from setlist.fm.
     Ghost/AI artists have zero live performance history."""
     total_shows = 0
     details: list[str] = []
 
-    # Setlist.fm
     if setlistfm.enabled:
         try:
             sa = setlistfm.search_artist(artist_name)
@@ -150,36 +147,6 @@ def _score_live_show_history(
             logger.debug("Setlist.fm failed for '%s': %s", artist_name, exc)
             details.append(f"setlist.fm: error")
     else:
-        details.append("setlist.fm: not configured")
-
-    # Bandsintown
-    if bandsintown.enabled:
-        try:
-            ba = bandsintown.get_artist(artist_name)
-            if ba:
-                ba = bandsintown.enrich(ba)
-                total_shows += ba.past_events
-                parts = []
-                if ba.past_events > 0:
-                    parts.append(f"{ba.past_events} past events")
-                if ba.upcoming_events > 0:
-                    parts.append(f"{ba.upcoming_events} upcoming")
-                if ba.tracker_count > 0:
-                    parts.append(f"{ba.tracker_count:,} trackers")
-                details.append(
-                    f"bandsintown: {', '.join(parts)}" if parts
-                    else "bandsintown: 0 events"
-                )
-            else:
-                details.append("bandsintown: not found")
-        except Exception as exc:
-            logger.debug("Bandsintown failed for '%s': %s", artist_name, exc)
-            details.append("bandsintown: error")
-    else:
-        details.append("bandsintown: not configured")
-
-    # Neither configured
-    if not setlistfm.enabled and not bandsintown.enabled:
         return 50.0, "Live show APIs not configured (skipped)"
 
     detail = "; ".join(details)
@@ -301,7 +268,6 @@ def standard_scan(
     genius: GeniusClient,
     discogs: DiscogsClient,
     setlistfm: SetlistFmClient,
-    bandsintown: BandsintownClient,
     mb_client: MusicBrainzClient,
     deezer: DeezerClient,
     weights: StandardWeights | None = None,
@@ -356,7 +322,7 @@ def standard_scan(
     ))
 
     # --- Live show history ---
-    raw, detail = _score_live_show_history(artist_name, setlistfm, bandsintown)
+    raw, detail = _score_live_show_history(artist_name, setlistfm)
     nw = w.live_show_history / total_weight
     weighted = raw * nw
     total += weighted
@@ -499,7 +465,7 @@ def standard_scan_from_external(
     _add("discogs_physical", d_raw, w.discogs_physical / total_weight, d_detail)
 
     # Live shows (from ext)
-    live_total = (ext.setlistfm_total_shows or 0) + (ext.bandsintown_past_events or 0)
+    live_total = ext.setlistfm_total_shows or 0
     if live_total == 0:
         l_raw, l_detail = 80.0, "No live shows found"
     elif live_total <= 5:

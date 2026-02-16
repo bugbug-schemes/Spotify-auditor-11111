@@ -31,7 +31,6 @@ from spotify_audit.musicbrainz_client import MusicBrainzClient
 from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
-# Bandsintown removed from UX — no API access
 from spotify_audit.lastfm_client import LastfmClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult

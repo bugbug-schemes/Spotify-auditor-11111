@@ -109,7 +109,6 @@ API_LIMITERS: dict[str, APILimiter] = {
     "discogs": APILimiter(name="Discogs", min_delay=1.1),
     "setlistfm": APILimiter(name="Setlist.fm", min_delay=0.6),
     "lastfm": APILimiter(name="Last.fm", min_delay=0.25),
-    "bandsintown": APILimiter(name="Bandsintown", min_delay=1.1),
 }
 
 
