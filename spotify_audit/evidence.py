@@ -267,40 +267,31 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     engagement_score = _clamp(fan_pts)
 
     # --- Creative History (0-100) ---
+    # Uses source field and strength rather than fragile string matching
     creative_pts = 0
 
-    # Albums
-    album_count = len([e for e in ev.green_flags if "album" in e.finding.lower() and e.source == "Deezer"])
-    for e in ev.green_flags + ev.red_flags + ev.neutral_notes:
-        if "album" in e.finding.lower() and "catalog" not in e.finding.lower():
-            pass  # counted via labels below
-
-    # Use evidence directly for catalog signals
     for e in ev.green_flags:
-        if "albums in catalog" in e.finding.lower():
-            creative_pts += 25
-        elif "album(s) in catalog" in e.finding.lower():
-            creative_pts += 15
-        if "physical release" in e.finding.lower():
-            if e.strength == "strong":
-                creative_pts += 30
-            else:
-                creative_pts += 15
-        if "songs on Genius" in e.finding:
-            if e.strength == "strong":
-                creative_pts += 20
-            elif e.strength == "moderate":
-                creative_pts += 10
-            else:
-                creative_pts += 5
-        if "collaborator" in e.finding.lower():
+        f = e.finding.lower()
+        # Catalog (albums) — from Deezer source, mentions "album"
+        if e.source == "Deezer" and "album" in f and "catalog" in f:
+            creative_pts += 25 if e.strength in ("strong", "moderate") else 15
+        # Physical releases — from Discogs source
+        elif e.source == "Discogs" and "physical" in f:
+            creative_pts += 30 if e.strength == "strong" else 15
+        # Genius songwriter credits
+        elif e.source == "Genius" and "song" in f:
+            creative_pts += {"strong": 20, "moderate": 10}.get(e.strength, 5)
+        # Collaboration evidence — from Deezer source
+        elif e.source == "Deezer" and "collaborat" in f:
             creative_pts += 10
 
-    # Penalize content farm patterns
     for e in ev.red_flags:
-        if "content farm" in e.finding.lower():
+        f = e.finding.lower()
+        # Content farm / stream farm patterns
+        if "content farm" in f or "stream farm" in f:
             creative_pts -= 30
-        if "empty catalog" in e.finding.lower():
+        # Empty catalog
+        elif e.source in ("Deezer", "Spotify") and "empty catalog" in f:
             creative_pts -= 20
 
     creative_score = _clamp(creative_pts)
@@ -1766,7 +1757,25 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
                 detail=f"Each listener averages {ratio:.1f} plays. High replay value "
                        "indicates genuine fans who return to this artist's music.",
             ))
-        elif ext.lastfm_listeners >= 100 and ratio < 2:
+        elif ratio >= 4:
+            evidence.append(Evidence(
+                finding=f"Moderate scrobble engagement (play/listener ratio: {ratio:.1f})",
+                source="Last.fm",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"Each listener averages {ratio:.1f} plays. Reasonable replay "
+                       "rate suggesting some genuine fan engagement.",
+            ))
+        elif ratio >= 2:
+            evidence.append(Evidence(
+                finding=f"Low scrobble engagement (play/listener ratio: {ratio:.1f})",
+                source="Last.fm",
+                evidence_type="neutral",
+                strength="weak",
+                detail=f"Each listener averages {ratio:.1f} plays. Borderline — "
+                       "could indicate casual listeners or early-stage fanbase.",
+            ))
+        elif ext.lastfm_listeners >= 100:
             evidence.append(Evidence(
                 finding=f"Very low scrobble engagement (play/listener ratio: {ratio:.1f})",
                 source="Last.fm",
@@ -1870,7 +1879,7 @@ def _decide_verdict(
 
     # Rule 1: Known AI artist name → Likely Artificial
     for r in red_flags:
-        if "known AI artist" in r.finding.lower() or "blocklist" in r.finding.lower() and r.strength == "strong":
+        if ("known AI artist" in r.finding.lower() or "blocklist" in r.finding.lower()) and r.strength == "strong":
             if r.source == "Blocklist" and "name" in r.finding.lower():
                 decision_path.append("Name matches known AI artist blocklist → Likely Artificial")
                 return Verdict.LIKELY_ARTIFICIAL, "high"
@@ -1889,12 +1898,14 @@ def _decide_verdict(
         return Verdict.LIKELY_ARTIFICIAL, "medium"
 
     # Rule 4: Strong green flags dominate → high confidence authentic
-    if len(strong_greens) >= 2 and not strong_reds:
-        decision_path.append(f"{len(strong_greens)} strong green flags, no strong red flags → Verified Artist")
+    # Must also not have excessive moderate red flags (total red strength < green)
+    if len(strong_greens) >= 2 and not strong_reds and len(moderate_reds) <= len(strong_greens):
+        decision_path.append(f"{len(strong_greens)} strong green flags, no strong red flags, "
+                             f"{len(moderate_reds)} moderate reds → Verified Artist")
         return Verdict.VERIFIED_ARTIST, "high"
 
     # Rule 5: Good platform presence + fans + no strong red flags → Verified
-    if presence.count() >= 2 and presence.deezer_fans >= 50_000 and not strong_reds:
+    if presence.count() >= 2 and presence.deezer_fans >= 50_000 and not strong_reds and len(moderate_reds) <= 3:
         decision_path.append(f"Multi-platform + {presence.deezer_fans:,} fans, no strong reds → Verified Artist")
         return Verdict.VERIFIED_ARTIST, "high"
 

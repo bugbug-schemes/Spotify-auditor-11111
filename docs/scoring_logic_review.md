@@ -736,7 +736,24 @@ An optional SQLite database accumulates intelligence from prior scans. When avai
 
 ## 14. Open Questions & Known Issues
 
-### Design Questions
+### Fixed Issues
+
+5. **~~Rule 1 operator precedence bug~~** — FIXED. Added parentheses so the `or` and `and` bind correctly:
+   ```python
+   if ("known AI artist" in r.finding.lower() or "blocklist" in r.finding.lower()) and r.strength == "strong":
+   ```
+
+6. **~~Threat category legacy fallback inversion~~** — FIXED. Inverted the gate: now `if report.final_score >= 55: return None` (skip categories for legitimate artists). The threshold checks inside were also flipped to use `<=` for legitimacy scale (e.g., `report.final_score <= 35` for PFC Ghost).
+
+10/4. **~~Rule 4 ignoring moderate reds~~** — FIXED. Rule 4 now requires `len(moderate_reds) <= len(strong_greens)` so 2 strong greens can't override 10 moderate reds. Rule 5 now caps moderate reds at 3.
+
+11. **~~Last.fm play/listener ratio gap~~** — FIXED. Added two new tiers:
+    - ratio 4-10 → moderate green ("reasonable replay rate")
+    - ratio 2-4 → weak neutral ("borderline")
+
+14. **~~Fragile string matching in Creative History category score~~** — FIXED. Refactored `compute_category_scores()` Creative History section to use `e.source` field (Deezer, Discogs, Genius) combined with broad keyword checks, instead of matching exact phrasings like `"albums in catalog"`.
+
+### Remaining Design Questions
 
 1. **Dual scoring paths**: The system maintains both legacy weighted scores and the evidence pipeline. Is the legacy path still needed? It adds complexity and can produce different results than the evidence path. The evidence system is strictly more expressive.
 
@@ -744,36 +761,16 @@ An optional SQLite database accumulates intelligence from prior scans. When avai
 
 3. **Verdict-to-score mapping**: The `_verdict_to_score()` function converts a rich verdict back into a number. The confidence-weighted position within a range means a "Likely Authentic" with low confidence (score ~59) is almost the same as an "Inconclusive" with high confidence (score ~51). Is this the right behavior? Should confidence push scores across verdict boundaries?
 
-4. **Decision tree rule ordering**: Rule 4 ("≥2 strong greens, no strong reds → Verified") fires before Rule 6 (green outweighs). An artist with 2 strong greens and 10 moderate reds still gets "Verified Artist." Is this intended?
-
-5. **Rule 1 operator precedence bug**:
-   ```python
-   if "known AI artist" in r.finding.lower() or "blocklist" in r.finding.lower() and r.strength == "strong":
-   ```
-   Due to Python operator precedence (`and` binds tighter than `or`), this is parsed as:
-   ```python
-   "known AI artist" in ... or ("blocklist" in ... and r.strength == "strong")
-   ```
-   This means ANY red flag containing "known AI artist" triggers the rule regardless of strength. The subsequent `if r.source == "Blocklist" and "name" in r.finding.lower()` check mitigates this, but the logic is confusing.
-
-6. **Threat category legacy fallback inversion**: The legacy fallback says `if report.final_score < 30: return None` — this means artists with low legitimacy scores (i.e., the most suspicious ones) get NO threat category, while the less-suspicious ones might. This appears inverted.
-
 7. **Weight balance**: Quick tier gives follower_listener_ratio and release_cadence each 15% weight, but image_quality and name_pattern only 5%. The evidence pipeline gives equal treatment to all signals via the flag strength system, making the weighted scores potentially disagree with the evidence verdict.
 
 8. **"Not configured" as neutral**: When an API isn't configured, Standard signals default to 50 (neutral). This means unconfigured APIs don't affect the score at all. But the evidence pipeline generates red flags for "not found" which does affect the verdict. Should missing data be neutral or negative?
 
 9. **Deezer fans threshold**: Rule 5 in the decision tree uses ≥50K Deezer fans as "Verified." This seems high — many legitimate indie/niche artists have < 50K Deezer fans. Is this threshold right?
 
-10. **Strong green count for Verified**: Rule 4 requires only 2 strong greens with 0 strong reds. Since "Found on 3+ platforms" is a strong green, and "20+ Genius songs" is another strong green, an artist with only Genius presence and multi-platform listing gets Verified even with many moderate red flags.
-
-### Data Observations
-
-11. **Last.fm play/listener ratio**: The evidence pipeline treats ratio ≥ 10 as strong green ("genuine fans") and < 2 as moderate red. But the threshold between 2 and 10 produces no evidence at all — there's a gap.
+### Remaining Data Observations
 
 12. **Mood word detection**: The mood word list is hardcoded with ~50 English words. This is English-centric and might false-positive on ambient/electronic artists who are legitimate.
 
 13. **Release cadence doesn't account for artist age**: A 20-year career with 200 releases = 0.83/month (green). A 6-month career with 20 releases = 3.3/month (moderate red). But both could be legitimate in their context.
-
-14. **Category score for Creative History**: This score is computed by string-matching on evidence findings like `"albums in catalog"`. If the evidence wording changes slightly, the category score breaks. This is fragile.
 
 15. **Discogs bio career keywords**: The keyword list includes "Grammy" and "festival" but not other common career markers like "producer", "songwriter", "engineer", "remixer", etc.

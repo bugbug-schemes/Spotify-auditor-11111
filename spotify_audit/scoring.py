@@ -275,7 +275,8 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
         return 1
 
     # No evidence evaluation — legacy fallback using quick signals only
-    if report.final_score < 30:
+    # Only assign threat categories to suspicious artists (low legitimacy score)
+    if report.final_score >= 55:
         return None
 
     signals = {s["name"]: s for s in report.quick_signals}
@@ -288,9 +289,9 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
         return 2   # Independent AI Artist
     if cadence_raw >= 65 and duration_raw >= 50:
         return 3   # AI Fraud Farm
-    if catalog_raw >= 50 and report.final_score >= 40:
+    if catalog_raw >= 50 and report.final_score <= 35:
         return 1   # PFC Ghost Artist
-    if report.final_score >= 50:
+    if report.final_score <= 34:
         return 1
     return None
 
