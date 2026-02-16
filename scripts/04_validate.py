@@ -26,8 +26,9 @@ import logging
 import math
 import sys
 from collections import Counter
+from datetime import datetime
 from pathlib import Path
-from statistics import mean, median
+from statistics import mean, median, stdev as _stdev
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
@@ -91,7 +92,6 @@ def extract_features(profile: dict, entity_data: dict, is_control: bool = False)
     for a in albums:
         if isinstance(a, dict) and a.get("release_date"):
             try:
-                from datetime import datetime
                 dt = datetime.strptime(a["release_date"], "%Y-%m-%d")
                 release_dates.append(dt)
             except ValueError:
@@ -101,7 +101,6 @@ def extract_features(profile: dict, entity_data: dict, is_control: bool = False)
         intervals = [(release_dates[i] - release_dates[i - 1]).days
                       for i in range(1, len(release_dates)) if (release_dates[i] - release_dates[i - 1]).days > 0]
         if intervals and mean(intervals) > 0:
-            from statistics import stdev as _stdev
             features["release_cadence_cv"] = round(
                 (_stdev(intervals) / mean(intervals)) if len(intervals) >= 2 else 0.0, 3
             )

@@ -168,6 +168,11 @@ def train_simple_tree(
     }
 
 
+def mean(values):
+    """Simple mean."""
+    return sum(values) / len(values) if values else 0
+
+
 def cross_validate(
     X: list[dict[str, float]],
     y: list[int],
@@ -259,11 +264,6 @@ def cross_validate(
             "false_negative": fn,
         },
     }
-
-
-def mean(values):
-    """Simple mean."""
-    return sum(values) / len(values) if values else 0
 
 
 # ---------------------------------------------------------------------------
