@@ -22,39 +22,39 @@ from spotify_audit.config import (
 class TestScoreLabel:
     def test_verified_artist(self):
         assert score_label(100) == "Verified Artist"
-        assert score_label(80) == "Verified Artist"
+        assert score_label(82) == "Verified Artist"
         assert score_label(90) == "Verified Artist"
 
     def test_likely_authentic(self):
-        assert score_label(79) == "Likely Authentic"
-        assert score_label(55) == "Likely Authentic"
+        assert score_label(81) == "Likely Authentic"
+        assert score_label(58) == "Likely Authentic"
         assert score_label(65) == "Likely Authentic"
 
     def test_inconclusive(self):
-        assert score_label(54) == "Inconclusive"
-        assert score_label(35) == "Inconclusive"
+        assert score_label(57) == "Inconclusive"
+        assert score_label(38) == "Inconclusive"
         assert score_label(44) == "Inconclusive"
 
     def test_suspicious(self):
-        assert score_label(34) == "Suspicious"
-        assert score_label(15) == "Suspicious"
+        assert score_label(37) == "Suspicious"
+        assert score_label(18) == "Suspicious"
         assert score_label(25) == "Suspicious"
 
     def test_likely_artificial(self):
-        assert score_label(14) == "Likely Artificial"
+        assert score_label(17) == "Likely Artificial"
         assert score_label(0) == "Likely Artificial"
         assert score_label(7) == "Likely Artificial"
 
     def test_boundary_values(self):
         """Test exact boundaries between score ranges."""
-        assert score_label(80) == "Verified Artist"
-        assert score_label(79) == "Likely Authentic"
-        assert score_label(55) == "Likely Authentic"
-        assert score_label(54) == "Inconclusive"
-        assert score_label(35) == "Inconclusive"
-        assert score_label(34) == "Suspicious"
-        assert score_label(15) == "Suspicious"
-        assert score_label(14) == "Likely Artificial"
+        assert score_label(82) == "Verified Artist"
+        assert score_label(81) == "Likely Authentic"
+        assert score_label(58) == "Likely Authentic"
+        assert score_label(57) == "Inconclusive"
+        assert score_label(38) == "Inconclusive"
+        assert score_label(37) == "Suspicious"
+        assert score_label(18) == "Suspicious"
+        assert score_label(17) == "Likely Artificial"
 
     def test_out_of_range(self):
         assert score_label(-1) == "Unknown"

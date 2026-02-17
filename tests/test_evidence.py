@@ -14,6 +14,8 @@ from spotify_audit.evidence import (
     evaluate_artist,
     incorporate_deep_evidence,
     compute_category_scores,
+    is_obviously_legitimate,
+    fast_mode_evaluation,
     _collect_follower_evidence,
     _collect_catalog_evidence,
     _collect_duration_evidence,
@@ -558,7 +560,7 @@ class TestDecideVerdict:
             finding="Name matches known AI artist blocklist",
             source="Blocklist",
             evidence_type="red_flag", strength="strong", detail="",
-            tags=["known_ai_name"],
+            tags=["known_ai_artist"],
         )]
         path: list[str] = []
         verdict, conf = _decide_verdict(reds, [], PlatformPresence(), path)
@@ -589,9 +591,16 @@ class TestDecideVerdict:
         assert conf == "high"
 
     def test_multi_platform_plus_fans_verified(self):
-        presence = PlatformPresence(spotify=True, deezer=True, deezer_fans=100_000)
+        presence = PlatformPresence(
+            spotify=True, deezer=True, genius=True, deezer_fans=100_000,
+        )
+        greens = [Evidence(
+            finding="100,000 fans", source="Deezer",
+            evidence_type="green_flag", strength="strong", detail="",
+            tags=["genuine_fans"],
+        )]
         path: list[str] = []
-        verdict, conf = _decide_verdict([], [], presence, path)
+        verdict, conf = _decide_verdict([], greens, presence, path)
         assert verdict == Verdict.VERIFIED_ARTIST
 
     def test_few_balanced_flags_insufficient_data(self):
@@ -737,3 +746,73 @@ class TestCategoryScores:
         assert scores["Platform Presence"] >= 50
         assert scores["Live Performance"] >= 50
         assert scores["Industry Signals"] >= 30
+
+
+# ---------------------------------------------------------------------------
+# Fast Mode
+# ---------------------------------------------------------------------------
+
+class TestFastMode:
+    def test_obviously_legitimate(self):
+        artist = ArtistInfo(
+            artist_id="a", name="Big Star",
+            followers=1_000_000,
+            genres=["rock", "alternative", "indie"],
+            album_count=10, single_count=5,
+            external_urls={"wikipedia": "https://en.wikipedia.org/wiki/Big_Star"},
+            labels=["Sony Music"],
+        )
+        assert is_obviously_legitimate(artist) is True
+
+    def test_not_legitimate_low_followers(self):
+        artist = ArtistInfo(
+            artist_id="a", name="Small Artist",
+            followers=1_000,
+            genres=["rock", "alternative", "indie"],
+            album_count=10,
+            external_urls={"wikipedia": "https://en.wikipedia.org/wiki/Test"},
+        )
+        assert is_obviously_legitimate(artist) is False
+
+    def test_not_legitimate_no_wikipedia(self):
+        artist = ArtistInfo(
+            artist_id="a", name="No Wiki",
+            followers=1_000_000,
+            genres=["rock", "alternative", "indie"],
+            album_count=10,
+        )
+        assert is_obviously_legitimate(artist) is False
+
+    def test_not_legitimate_few_genres(self):
+        artist = ArtistInfo(
+            artist_id="a", name="Few Genres",
+            followers=1_000_000,
+            genres=["rock"],
+            album_count=10,
+            external_urls={"wikipedia": "https://en.wikipedia.org/wiki/Test"},
+        )
+        assert is_obviously_legitimate(artist) is False
+
+    def test_not_legitimate_few_albums(self):
+        artist = ArtistInfo(
+            artist_id="a", name="Few Albums",
+            followers=1_000_000,
+            genres=["rock", "alternative", "indie"],
+            album_count=2,
+            external_urls={"wikipedia": "https://en.wikipedia.org/wiki/Test"},
+        )
+        assert is_obviously_legitimate(artist) is False
+
+    def test_fast_mode_evaluation_returns_verified(self):
+        artist = ArtistInfo(
+            artist_id="a", name="Big Star",
+            followers=1_000_000,
+            genres=["rock", "alternative", "indie"],
+            album_count=10,
+            external_urls={"wikipedia": "https://en.wikipedia.org/wiki/Big_Star"},
+        )
+        ev = fast_mode_evaluation(artist)
+        assert ev.verdict == Verdict.VERIFIED_ARTIST
+        assert ev.confidence == "high"
+        assert len(ev.green_flags) >= 1
+        assert len(ev.red_flags) == 0

@@ -179,22 +179,22 @@ def finalize_artist_report(
 def _verdict_to_score(ev: ArtistEvaluation) -> int:
     """Convert evidence verdict + flag balance into a 0-100 legitimacy score.
 
-    Score ranges:
-        Verified Artist:    80-100
-        Likely Authentic:   55-79
-        Inconclusive:       35-54
-        Suspicious:         15-34
-        Likely Artificial:  0-14
+    Score ranges (simplified scoring architecture):
+        Verified Artist:    82-100
+        Likely Authentic:   58-81
+        Inconclusive:       38-57
+        Suspicious:         18-37
+        Likely Artificial:  0-17
     """
     # Base score from verdict
     base_ranges = {
-        Verdict.VERIFIED_ARTIST: (80, 100),
-        Verdict.LIKELY_AUTHENTIC: (55, 79),
-        Verdict.INCONCLUSIVE: (35, 54),
-        Verdict.INSUFFICIENT_DATA: (35, 54),
-        Verdict.CONFLICTING_SIGNALS: (35, 54),
-        Verdict.SUSPICIOUS: (15, 34),
-        Verdict.LIKELY_ARTIFICIAL: (0, 14),
+        Verdict.VERIFIED_ARTIST: (82, 100),
+        Verdict.LIKELY_AUTHENTIC: (58, 81),
+        Verdict.INCONCLUSIVE: (38, 57),
+        Verdict.INSUFFICIENT_DATA: (38, 57),
+        Verdict.CONFLICTING_SIGNALS: (38, 57),
+        Verdict.SUSPICIOUS: (18, 37),
+        Verdict.LIKELY_ARTIFICIAL: (0, 17),
     }
     lo, hi = base_ranges.get(ev.verdict, (35, 54))
 
@@ -246,9 +246,8 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
 
         has_pfc = bool(all_red_tags & {"pfc_label", "pfc_songwriter", "content_farm",
                                         "entity_bad_label", "synth_pfc_ghost"})
-        has_ai = bool(all_red_tags & {"ai_mentioned_bio", "ai_image_artifacts",
-                                       "ai_generated_image", "known_ai_label",
-                                       "synth_ai_generated"})
+        has_ai = bool(all_red_tags & {"ai_bio", "ai_generated_image",
+                                       "known_ai_label", "synth_ai_generated"})
         has_ghost = "synth_pfc_ghost" in all_red_tags
         has_impersonation = "impersonation" in all_red_tags
 
@@ -268,7 +267,7 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
             return 1   # PFC Ghost Artist
 
         # Fall through: look at pattern signals for fraud farm
-        if all_red_tags & {"high_release_cadence", "stream_farm"}:
+        if all_red_tags & {"high_release_rate", "stream_farm"}:
             signals = {s["name"]: s for s in report.quick_signals}
             cadence_raw = signals.get("release_cadence", {}).get("raw_score", 0)
             duration_raw = signals.get("track_duration_uniformity", {}).get("raw_score", 0)
@@ -346,9 +345,9 @@ def build_playlist_report(
 
     # Legacy breakdown (from legitimacy score) — uses separate counters
     for a in artist_reports:
-        if a.final_score >= 80:
+        if a.final_score >= 82:
             pr.verified_legit += 1
-        elif a.final_score >= 55:
+        elif a.final_score >= 58:
             pr.probably_fine += 1
         else:
             pr.likely_non_authentic += 1

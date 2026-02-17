@@ -193,7 +193,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="strong",
             detail="The artist's biography explicitly references AI generation, "
                    "algorithms, or automated music creation. " + reasoning,
-            tags=["ai_mentioned_bio"],
+            tags=["ai_bio"],
         ))
 
     if verdict == "SUSPICIOUS":
@@ -351,7 +351,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             evidence_type="red_flag",
             strength=strength,
             detail=reasoning,
-            tags=["ai_image_artifacts"],
+            tags=["ai_generated_image"],
         ))
     elif image_type == "AI_GENERATED":
         evidence.append(Evidence(

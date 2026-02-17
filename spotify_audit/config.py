@@ -3,11 +3,11 @@ Configuration and default scoring weights for spotify-audit.
 
 All weights are configurable. The scoring system produces a 0-100 legitimacy
 score where higher = more legitimate:
-  80-100 = Verified Artist
-  55-79  = Likely Authentic
-  35-54  = Inconclusive
-  15-34  = Suspicious
-  0-14   = Likely Artificial
+  82-100 = Verified Artist
+  58-81  = Likely Authentic
+  38-57  = Inconclusive
+  18-37  = Suspicious
+  0-17   = Likely Artificial
 """
 
 from __future__ import annotations
@@ -40,11 +40,11 @@ THREAT_CATEGORIES = {
 # Score range labels
 # ---------------------------------------------------------------------------
 SCORE_LABELS = {
-    (80, 100): "Verified Artist",
-    (55, 79):  "Likely Authentic",
-    (35, 54):  "Inconclusive",
-    (15, 34):  "Suspicious",
-    (0, 14):   "Likely Artificial",
+    (82, 100): "Verified Artist",
+    (58, 81):  "Likely Authentic",
+    (38, 57):  "Inconclusive",
+    (18, 37):  "Suspicious",
+    (0, 17):   "Likely Artificial",
 }
 
 

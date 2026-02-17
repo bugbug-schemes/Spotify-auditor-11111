@@ -115,29 +115,35 @@ class Evidence:
     (decision tree, threat category inference, category scores).  Using tags
     avoids fragile substring matching on human-readable ``finding`` text.
 
-    Controlled tag vocabulary — add new tags here when introducing new
-    evidence types:
+    Controlled tag vocabulary (aligned with simplified_scoring_architecture.md):
 
-    Identity / blocklist:
-        known_ai_name        — artist name on known-AI blocklist
-        pfc_label            — label/distributor on PFC blocklist
-        pfc_songwriter       — contributor on PFC songwriter blocklist
+    Blocklist matches:
+        pfc_label            — label/distributor matches pfc_distributors.json
+        known_ai_artist      — name matches known_ai_artists.json
+        pfc_songwriter       — contributor matches pfc_songwriters.json
         known_ai_label       — label on known-AI blocklist
-        impersonation        — evidence of artist impersonation
 
-    Production patterns:
-        content_farm         — singles-heavy, no-albums content farm pattern
-        stream_farm          — short-track stream-farming pattern
+    Behavioral patterns:
+        content_farm         — high-volume singles-only catalog
+        stream_farm          — short tracks near 30s payout threshold
+        cookie_cutter        — uniform track durations
+        playlist_stuffing    — streaming concentrated in top tracks
+        high_release_rate    — abnormal release cadence
+        same_day_release     — multiple releases on single day
         empty_catalog        — zero releases
-        uniform_duration     — cookie-cutter track lengths
-        high_release_cadence — abnormal release frequency
+
+    Positive signals:
+        live_performance     — concert/tour history exists
+        physical_release     — vinyl/CD releases exist
+        industry_registered  — ISNI/IPI codes found
+        verified_identity    — real name, aliases, group members known
+        wikipedia            — Wikipedia article exists
+        genuine_fans         — high play/listener ratio or follower count
 
     Creative signals:
         catalog_albums       — has album releases
-        physical_releases    — has physical media (vinyl/CD)
         genius_credits       — has Genius songwriter credits
         collaboration        — has collaborators / related artists
-        live_performance     — has concert/tour history
         touring_geography    — international touring spread
         named_tour           — has named tour(s)
 
@@ -146,28 +152,19 @@ class Evidence:
         single_platform      — only found on 1 platform
         social_media         — social media / web presence found
         no_social_media      — no social / web presence found
-        wikipedia            — has Wikipedia article
         genius_verified      — verified on Genius
-        real_name_known      — real name documented
-        group_members        — group membership documented
-        isni                 — has ISNI identifier
-        ipi                  — has IPI code
         career_bio           — bio with career details / history
         no_genres            — no genre tags assigned
 
     Fan engagement:
-        high_fans            — large fan/follower count
         low_fans             — very low fan count
-        listener_follower_mismatch — high listeners, low followers
-        high_scrobble_engagement   — high Last.fm replay ratio
-        low_scrobble_engagement    — low Last.fm replay ratio
-        track_rank_concentration   — top tracks hold disproportionate rank share
+        low_scrobble_engagement — low Last.fm replay ratio
 
-    AI analysis (deep tier):
-        ai_mentioned_bio     — bio text explicitly mentions AI/algorithmic creation
-        ai_image_artifacts   — AI generation artifacts in profile image
-        ai_generated_image   — profile image appears AI-generated
-        stock_photo          — profile image appears to be stock photo
+    AI-specific (from Claude analysis):
+        ai_generated_image   — profile image flagged as AI
+        ai_bio               — bio mentions AI or has ChatGPT style
+        stock_photo          — profile image is stock photography
+        impersonation        — content uploaded to wrong artist page
         abstract_image       — profile image is abstract/logo (not a person)
         authentic_photo      — profile image appears authentic
         authentic_bio        — bio text appears to describe a real artist
@@ -180,6 +177,10 @@ class Evidence:
         synth_pfc_ghost      — Claude synthesis: PFC Ghost
         synth_ai_generated   — Claude synthesis: AI Generated
         synth_legitimate     — Claude synthesis: Legitimate
+
+    Data availability:
+        api_unconfigured     — API was not queried (distinct from "not found")
+        not_found            — API was queried, artist not present
 
     Entity DB:
         entity_confirmed_bad — previously confirmed bad in entity DB
@@ -359,7 +360,7 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     for e in ev.green_flags:
         if "catalog_albums" in e.tags:
             creative_pts += 25 if e.strength in ("strong", "moderate") else 15
-        if "physical_releases" in e.tags:
+        if "physical_release" in e.tags:
             creative_pts += 30 if e.strength == "strong" else 15
         if "genius_credits" in e.tags:
             creative_pts += {"strong": 20, "moderate": 10}.get(e.strength, 5)
@@ -558,7 +559,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="green_flag",
             strength="strong",
             detail=f"Artist has {fans:,} fans — substantial organic following.",
-            tags=["high_fans"],
+            tags=["genuine_fans"],
         ))
     elif fans >= 10_000:
         evidence.append(Evidence(
@@ -567,7 +568,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Artist has {fans:,} fans — meaningful audience.",
-            tags=["high_fans"],
+            tags=["genuine_fans"],
         ))
     elif fans >= 1_000:
         evidence.append(Evidence(
@@ -608,7 +609,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
                        f"{artist.followers:,} followers ({ratio:.3%}). Real artists "
                        "typically convert 3-15% of listeners to followers. This "
                        "suggests playlist-driven streams without real fans.",
-                tags=["listener_follower_mismatch"],
+                tags=["playlist_stuffing"],
             ))
         elif ratio < 0.03:
             evidence.append(Evidence(
@@ -618,7 +619,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
                 strength="moderate",
                 detail=f"{artist.monthly_listeners:,} listeners, {artist.followers:,} followers "
                        f"({ratio:.1%}). On the low end for organic artists.",
-                tags=["listener_follower_mismatch"],
+                tags=["playlist_stuffing"],
             ))
 
     return evidence
@@ -733,7 +734,7 @@ def _collect_duration_evidence(artist: ArtistInfo) -> list[Evidence]:
             detail=f"Track durations have a standard deviation of only {stdev_s:.1f}s "
                    f"across {len(durations)} tracks. This suggests automated/templated "
                    "production rather than organic songwriting.",
-            tags=["uniform_duration"],
+            tags=["cookie_cutter"],
         ))
 
     # Normal duration range is a mild green flag
@@ -783,7 +784,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
             strength="strong",
             detail=f"All {len(parsed)} releases share the same date. "
                    "Legitimate artists space out releases; mass-uploading is a content farm signal.",
-            tags=["high_release_cadence", "content_farm"],
+            tags=["high_release_rate", "same_day_release", "content_farm"],
         ))
         return evidence
 
@@ -812,7 +813,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                        f"{span_months:.0f} months ({albums} albums total). "
                        "Albums require significant creative investment — this rate "
                        "suggests automated production.",
-                tags=["high_release_cadence"],
+                tags=["high_release_rate"],
             ))
         elif albums_per_month > 1 and albums >= 3:
             evidence.append(Evidence(
@@ -823,7 +824,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 detail=f"Releasing {albums_per_month:.1f} albums per month — "
                        f"{albums} albums over {span_months:.0f} months is higher "
                        "than most real artists.",
-                tags=["high_release_cadence"],
+                tags=["high_release_rate"],
             ))
 
         if singles_per_month > 6:
@@ -835,7 +836,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 detail=f"Releasing {singles_per_month:.1f} singles per month over "
                        f"{span_months:.0f} months ({singles} singles total). "
                        "Even prolific artists rarely release more than 2-3 singles/month.",
-                tags=["high_release_cadence"],
+                tags=["high_release_rate"],
             ))
         elif singles_per_month > 3 and singles >= 5:
             evidence.append(Evidence(
@@ -845,7 +846,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 strength="moderate",
                 detail=f"Releasing {singles_per_month:.1f} singles per month — "
                        f"{singles} singles over {span_months:.0f} months.",
-                tags=["high_release_cadence"],
+                tags=["high_release_rate"],
             ))
 
         # Normal pace with enough history
@@ -871,7 +872,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 detail=f"Releasing {releases_per_month:.1f} times per month over "
                        f"{span_months:.0f} months. Even prolific artists rarely exceed "
                        "2-3 releases/month. This rate suggests automated production.",
-                tags=["high_release_cadence"],
+                tags=["high_release_rate"],
             ))
         elif releases_per_month > 4:
             evidence.append(Evidence(
@@ -881,7 +882,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 strength="moderate",
                 detail=f"Releasing {releases_per_month:.1f} times per month — higher "
                        "than most real artists.",
-                tags=["high_release_cadence"],
+                tags=["high_release_rate"],
             ))
         elif releases_per_month <= 1 and total_releases >= 5:
             evidence.append(Evidence(
@@ -973,7 +974,7 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="red_flag",
             strength="strong",
             detail=f'"{name}" is on our list of known AI-generated artist names.',
-            tags=["known_ai_name"],
+            tags=["known_ai_artist"],
         ))
         return evidence
 
@@ -1179,7 +1180,7 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
                            f"{top2_share:.0%} of all popularity. This concentration pattern "
                            "is consistent with playlist stuffing — a couple of tracks placed "
                            "on playlists while the rest have near-zero organic plays.",
-                    tags=["track_rank_concentration"],
+                    tags=["playlist_stuffing"],
                 ))
 
     if avg_rank >= 500_000:
@@ -1311,7 +1312,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
                    f"(formats: {', '.join(ext.discogs_formats[:5])}). "
                    "Pressing vinyl or manufacturing CDs requires real investment — "
                    "this is very strong evidence of a legitimate artist.",
-            tags=["physical_releases"],
+            tags=["physical_release"],
         ))
     elif ext.discogs_physical_releases >= 3:
         evidence.append(Evidence(
@@ -1321,7 +1322,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             strength="strong",
             detail=f"Artist has {ext.discogs_physical_releases} physical releases "
                    f"({', '.join(ext.discogs_formats[:5])}). Physical media is strong proof of legitimacy.",
-            tags=["physical_releases"],
+            tags=["physical_release"],
         ))
     elif ext.discogs_physical_releases >= 1:
         evidence.append(Evidence(
@@ -1330,7 +1331,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"At least {ext.discogs_physical_releases} physical release exists.",
-            tags=["physical_releases"],
+            tags=["physical_release"],
         ))
     elif ext.discogs_digital_releases > 0:
         evidence.append(Evidence(
@@ -1744,7 +1745,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             strength="moderate",
             detail=f"Discogs records this artist's real name as \"{ext.discogs_realname}\". "
                    "Known real names indicate a documented, real person.",
-            tags=["real_name_known"],
+            tags=["verified_identity"],
         ))
 
     # Group members (Discogs)
@@ -1757,7 +1758,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             detail=f"Discogs lists group members: {', '.join(ext.discogs_members[:5])}"
                    f"{'...' if len(ext.discogs_members) > 5 else ''}. "
                    "Known members indicate a real group.",
-            tags=["group_members"],
+            tags=["verified_identity"],
         ))
 
     # Groups this artist belongs to (Discogs)
@@ -1790,7 +1791,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             detail="Artist has an International Standard Name Identifier (ISNI), "
                    "a globally unique identifier assigned to public identities. "
                    "This is very strong proof of a real, professionally registered artist.",
-            tags=["isni"],
+            tags=["industry_registered"],
         ))
 
     if ext.musicbrainz_ipis:
@@ -1802,7 +1803,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             detail="Artist has an Interested Parties Information (IPI) code, "
                    "assigned by collecting societies for royalty management. "
                    "This means they are registered as a rights holder.",
-            tags=["ipi"],
+            tags=["industry_registered"],
         ))
 
     # MusicBrainz gender (helps confirm type=Person)
@@ -1888,7 +1889,7 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="strong",
                 detail=f"Each listener averages {ratio:.1f} plays. High replay value "
                        "indicates genuine fans who return to this artist's music.",
-                tags=["high_scrobble_engagement"],
+                tags=["genuine_fans"],
             ))
         elif ratio >= 4:
             evidence.append(Evidence(
@@ -1898,7 +1899,7 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="moderate",
                 detail=f"Each listener averages {ratio:.1f} plays. Reasonable replay "
                        "rate suggesting some genuine fan engagement.",
-                tags=["high_scrobble_engagement"],
+                tags=["genuine_fans"],
             ))
         elif ratio >= 2:
             evidence.append(Evidence(
@@ -2024,7 +2025,7 @@ def _decide_verdict(
         return any(tag in e.tags for e in green_flags)
 
     # Rule 1: Known AI artist name → Likely Artificial
-    if _any_red_tag("known_ai_name"):
+    if _any_red_tag("known_ai_artist"):
         decision_path.append("Name matches known AI artist blocklist → Likely Artificial")
         return Verdict.LIKELY_ARTIFICIAL, "high"
 
@@ -2040,21 +2041,30 @@ def _decide_verdict(
         decision_path.append(f"{len(strong_reds)} strong red flags, no green flags → Likely Artificial")
         return Verdict.LIKELY_ARTIFICIAL, "medium"
 
+    # Compute weighted totals for rules 4+
+    weak_greens = [e for e in green_flags if e.strength == "weak"]
+    weak_reds = [e for e in red_flags if e.strength == "weak"]
+    total_green_strength = len(strong_greens) * 3 + len(moderate_greens) * 2 + len(weak_greens)
+    total_red_strength = len(strong_reds) * 3 + len(moderate_reds) * 2 + len(weak_reds)
+
     # Rule 4: Strong green flags dominate → high confidence authentic
-    # Must also not have excessive moderate red flags (total red strength < green)
-    if len(strong_greens) >= 2 and not strong_reds and len(moderate_reds) <= len(strong_greens):
+    # Guard: total_red < 4 prevents verification when moderate reds pile up
+    if len(strong_greens) >= 2 and not strong_reds and total_red_strength < 4:
         decision_path.append(f"{len(strong_greens)} strong green flags, no strong red flags, "
-                             f"{len(moderate_reds)} moderate reds → Verified Artist")
+                             f"total_red={total_red_strength} < 4 → Verified Artist")
         return Verdict.VERIFIED_ARTIST, "high"
 
-    # Rule 5: Good platform presence + fans + no strong red flags → Verified
-    if presence.count() >= 2 and presence.deezer_fans >= 50_000 and not strong_reds and len(moderate_reds) <= 3:
-        decision_path.append(f"Multi-platform + {presence.deezer_fans:,} fans, no strong reds → Verified Artist")
+    # Rule 5: Multi-platform + genuine fans + no strong reds → Verified
+    has_genuine_fans_strong = any(
+        "genuine_fans" in e.tags and e.strength == "strong"
+        for e in green_flags
+    )
+    if presence.count() >= 3 and has_genuine_fans_strong and not strong_reds:
+        decision_path.append(f"{presence.count()} platforms + genuine fans (strong), "
+                             f"no strong reds → Verified Artist")
         return Verdict.VERIFIED_ARTIST, "high"
 
-    # Rule 6: Moderate green flags dominate
-    total_green_strength = len(strong_greens) * 3 + len(moderate_greens) * 2 + len([e for e in green_flags if e.strength == "weak"])
-    total_red_strength = len(strong_reds) * 3 + len(moderate_reds) * 2 + len([e for e in red_flags if e.strength == "weak"])
+    # Rule 6: Green strongly outweighs red
 
     if total_green_strength >= total_red_strength * 2 and total_green_strength >= 4:
         decision_path.append(f"Green evidence ({total_green_strength}) strongly outweighs red ({total_red_strength}) → Likely Authentic")
@@ -2065,10 +2075,11 @@ def _decide_verdict(
         decision_path.append(f"Red evidence ({total_red_strength}) strongly outweighs green ({total_green_strength}) → Suspicious")
         return Verdict.SUSPICIOUS, "medium"
 
-    # Rule 8: PFC label alone → Suspicious
+    # Rule 8: PFC label alone → Suspicious (medium confidence —
+    # being on a confirmed PFC label is not a weak signal)
     if has_pfc_label:
         decision_path.append("PFC distributor match (without other strong signals) → Suspicious")
-        return Verdict.SUSPICIOUS, "low"
+        return Verdict.SUSPICIOUS, "medium"
 
     # Rule 9: More green than red → Likely Authentic
     if total_green_strength > total_red_strength:
@@ -2247,6 +2258,74 @@ def _collect_entity_db_evidence(
             ))
 
     return evidence
+
+
+# ---------------------------------------------------------------------------
+# Fast Mode — skip external APIs for obviously legitimate artists
+# ---------------------------------------------------------------------------
+
+def is_obviously_legitimate(artist: ArtistInfo) -> bool:
+    """Check if an artist is obviously legitimate from Spotify/Deezer data alone.
+
+    For large playlists, this allows skipping external API calls for artists
+    that clearly don't need them.  All conditions must be met:
+      - followers >= 500,000
+      - has Wikipedia link in external_urls
+      - has 3+ genres assigned
+      - has 5+ albums
+      - not on any blocklist
+    """
+    if artist.followers < 500_000:
+        return False
+    urls = artist.external_urls
+    has_wiki = any("wikipedia" in v.lower() for v in urls.values()) if urls else False
+    if not has_wiki:
+        return False
+    if len(artist.genres) < 3:
+        return False
+    if artist.album_count < 5:
+        return False
+    # Check blocklists
+    name_lower = artist.name.lower()
+    if name_lower in known_ai_artists():
+        return False
+    labels_lower = {l.lower() for l in artist.labels}
+    if labels_lower & pfc_distributors():
+        return False
+    return True
+
+
+def fast_mode_evaluation(artist: ArtistInfo) -> ArtistEvaluation:
+    """Return a pre-built VERIFIED ARTIST evaluation for obviously legitimate artists."""
+    presence = PlatformPresence(spotify=True)
+    if artist.deezer_fans > 0:
+        presence.deezer = True
+        presence.deezer_fans = artist.deezer_fans
+    green_flags = [
+        Evidence(
+            finding=f"{artist.followers:,} followers, {artist.album_count} albums, "
+                    f"{len(artist.genres)} genres, Wikipedia link",
+            source="Fast Mode",
+            evidence_type="green_flag",
+            strength="strong",
+            detail="Artist meets all Fast Mode criteria for obvious legitimacy: "
+                   "500K+ followers, Wikipedia link, 3+ genres, 5+ albums, clean blocklists.",
+            tags=["genuine_fans", "multi_platform"],
+        ),
+    ]
+    return ArtistEvaluation(
+        artist_id=artist.artist_id,
+        artist_name=artist.name,
+        verdict=Verdict.VERIFIED_ARTIST,
+        confidence="high",
+        platform_presence=presence,
+        red_flags=[],
+        green_flags=green_flags,
+        neutral_notes=[],
+        decision_path=["Fast Mode: all legitimacy criteria met → Verified Artist"],
+        labels=artist.labels,
+        contributors=artist.contributors,
+    )
 
 
 # ---------------------------------------------------------------------------

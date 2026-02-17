@@ -65,27 +65,27 @@ class TestVerdictToScore:
     def test_verified_artist_high_confidence(self):
         ev = _make_evaluation(Verdict.VERIFIED_ARTIST, "high")
         score = _verdict_to_score(ev)
-        assert 80 <= score <= 100
+        assert 82 <= score <= 100
 
     def test_likely_authentic_medium_confidence(self):
         ev = _make_evaluation(Verdict.LIKELY_AUTHENTIC, "medium")
         score = _verdict_to_score(ev)
-        assert 55 <= score <= 79
+        assert 58 <= score <= 81
 
     def test_inconclusive_low_confidence(self):
         ev = _make_evaluation(Verdict.INCONCLUSIVE, "low")
         score = _verdict_to_score(ev)
-        assert 35 <= score <= 54
+        assert 38 <= score <= 57
 
     def test_suspicious_medium_confidence(self):
         ev = _make_evaluation(Verdict.SUSPICIOUS, "medium")
         score = _verdict_to_score(ev)
-        assert 15 <= score <= 34
+        assert 18 <= score <= 37
 
     def test_likely_artificial_high_confidence(self):
         ev = _make_evaluation(Verdict.LIKELY_ARTIFICIAL, "high")
         score = _verdict_to_score(ev)
-        assert 0 <= score <= 14
+        assert 0 <= score <= 17
 
     def test_score_never_exceeds_100(self):
         ev = _make_evaluation(
@@ -213,7 +213,7 @@ class TestFinalizeArtistReport:
         assert report.artist_id == "a1"
         assert report.artist_name == "Artist One"
         assert report.label == "Verified Artist"
-        assert 80 <= report.final_score <= 100
+        assert 82 <= report.final_score <= 100
         assert report.evaluation is ev
 
     def test_legacy_fallback_without_evaluation(self):
@@ -311,9 +311,9 @@ class TestBuildPlaylistReport:
             self._make_artist_report(Verdict.LIKELY_ARTIFICIAL, 5),
         ]
         pr = build_playlist_report("Test", "p4", "owner", 30, False, artists)
-        assert pr.verified_legit == 1   # score >= 80
-        assert pr.probably_fine == 1    # score 55-79
-        assert pr.likely_non_authentic == 1  # score < 55
+        assert pr.verified_legit == 1   # score >= 82
+        assert pr.probably_fine == 1    # score 58-81
+        assert pr.likely_non_authentic == 1  # score < 58
 
 
 # ---------------------------------------------------------------------------
