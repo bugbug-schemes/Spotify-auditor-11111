@@ -32,6 +32,8 @@ from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
 from spotify_audit.lastfm_client import LastfmClient
+from spotify_audit.wikipedia_client import WikipediaClient
+from spotify_audit.songkick_client import SongkickClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
@@ -575,6 +577,8 @@ def _lookup_external_data(
     setlistfm: SetlistFmClient,
     mb_client: MusicBrainzClient,
     lastfm: "LastfmClient | None" = None,
+    wikipedia: "WikipediaClient | None" = None,
+    songkick: "SongkickClient | None" = None,
 ) -> ExternalData:
     """Run all Standard-tier API lookups concurrently and return aggregated results.
 
@@ -684,14 +688,54 @@ def _lookup_external_data(
         except Exception as exc:
             logger.debug("Last.fm lookup failed for '%s': %s", search_name, exc)
 
+    def _lookup_wikipedia() -> None:
+        if not (wikipedia and wikipedia.enabled):
+            return
+        try:
+            wa = wikipedia.search_artist(search_name)
+            if wa:
+                ext.wikipedia_found = True
+                wa = wikipedia.enrich(wa)
+                ext.wikipedia_title = wa.title
+                ext.wikipedia_length = wa.length
+                ext.wikipedia_extract = wa.extract
+                ext.wikipedia_description = wa.description
+                ext.wikipedia_categories = wa.categories
+                ext.wikipedia_monthly_views = wa.monthly_views
+                ext.wikipedia_url = wa.url
+        except Exception as exc:
+            logger.debug("Wikipedia lookup failed for '%s': %s", search_name, exc)
+
+    def _lookup_songkick() -> None:
+        if not (songkick and songkick.enabled):
+            return
+        try:
+            sa = songkick.search_artist(search_name)
+            if sa:
+                ext.songkick_found = True
+                sa = songkick.enrich(sa)
+                ext.songkick_on_tour = sa.on_tour
+                ext.songkick_total_past_events = sa.total_past_events
+                ext.songkick_total_upcoming_events = sa.total_upcoming_events
+                ext.songkick_first_event_date = sa.first_event_date
+                ext.songkick_last_event_date = sa.last_event_date
+                ext.songkick_venue_names = sa.venue_names
+                ext.songkick_venue_cities = sa.venue_cities
+                ext.songkick_venue_countries = sa.venue_countries
+                ext.songkick_event_types = sa.event_types
+        except Exception as exc:
+            logger.debug("Songkick lookup failed for '%s': %s", search_name, exc)
+
     # Fire all API lookups concurrently — each writes to disjoint ext fields
-    with ThreadPoolExecutor(max_workers=6, thread_name_prefix="api") as pool:
+    with ThreadPoolExecutor(max_workers=8, thread_name_prefix="api") as pool:
         futures = [
             pool.submit(_lookup_genius),
             pool.submit(_lookup_discogs),
             pool.submit(_lookup_setlistfm),
             pool.submit(_lookup_musicbrainz),
             pool.submit(_lookup_lastfm),
+            pool.submit(_lookup_wikipedia),
+            pool.submit(_lookup_songkick),
         ]
         for fut in as_completed(futures):
             fut.result()  # propagate unexpected exceptions
@@ -734,6 +778,8 @@ def _run_audit(
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
     lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
+    wikipedia_client = WikipediaClient(delay=0.2)
+    songkick_client = SongkickClient(api_key=os.getenv("SONGKICK_API_KEY", ""), delay=0.5)
 
     # Set up Claude if --deep and key available
     anthropic_client = None
@@ -745,7 +791,7 @@ def _run_audit(
             logger.warning("anthropic package not installed — deep analysis unavailable")
 
     # Show which APIs are configured
-    configured = ["Deezer", "MusicBrainz"]  # always available (no key needed)
+    configured = ["Deezer", "MusicBrainz", "Wikipedia"]  # always available (no key needed)
     if genius_client.enabled:
         configured.append("Genius")
     if discogs_client.enabled:
@@ -754,6 +800,8 @@ def _run_audit(
         configured.append("Setlist.fm")
     if lastfm_client.enabled:
         configured.append("Last.fm")
+    if songkick_client.enabled:
+        configured.append("Songkick")
     if anthropic_client:
         configured.append("Claude (Deep)")
     console.print(f"APIs: [green]{', '.join(configured)}[/green]")
@@ -915,6 +963,8 @@ def _run_audit(
                 setlistfm=setlistfm_client,
                 mb_client=mb_client,
                 lastfm=lastfm_client,
+                wikipedia=wikipedia_client,
+                songkick=songkick_client,
             )
             ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
             qr = quick_results[key]

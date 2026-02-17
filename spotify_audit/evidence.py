@@ -91,6 +91,28 @@ class ExternalData:
     lastfm_similar_artists: list[str] = field(default_factory=list)
     lastfm_bio_exists: bool = False
 
+    # Wikipedia (direct lookup, independent of MusicBrainz)
+    wikipedia_found: bool = False
+    wikipedia_title: str = ""
+    wikipedia_length: int = 0            # article byte length
+    wikipedia_extract: str = ""          # intro summary
+    wikipedia_description: str = ""      # Wikidata short description
+    wikipedia_categories: list[str] = field(default_factory=list)
+    wikipedia_monthly_views: int = 0     # average monthly page views
+    wikipedia_url: str = ""
+
+    # Songkick (concert/touring history)
+    songkick_found: bool = False
+    songkick_on_tour: bool = False
+    songkick_total_past_events: int = 0
+    songkick_total_upcoming_events: int = 0
+    songkick_first_event_date: str = ""
+    songkick_last_event_date: str = ""
+    songkick_venue_names: list[str] = field(default_factory=list)
+    songkick_venue_cities: list[str] = field(default_factory=list)
+    songkick_venue_countries: list[str] = field(default_factory=list)
+    songkick_event_types: list[str] = field(default_factory=list)
+
 
 # ---------------------------------------------------------------------------
 # Data structures
@@ -213,12 +235,14 @@ class PlatformPresence:
     discogs: bool = False
     setlistfm: bool = False
     lastfm: bool = False
+    wikipedia: bool = False
+    songkick: bool = False
 
     def count(self) -> int:
         return sum([
             self.spotify, self.deezer, self.musicbrainz,
             self.genius, self.discogs, self.setlistfm,
-            self.lastfm,
+            self.lastfm, self.wikipedia, self.songkick,
         ])
 
     def names(self) -> list[str]:
@@ -238,6 +262,10 @@ class PlatformPresence:
             platforms.append("Setlist.fm")
         if self.lastfm:
             platforms.append("Last.fm")
+        if self.wikipedia:
+            platforms.append("Wikipedia")
+        if self.songkick:
+            platforms.append("Songkick")
         return platforms
 
 
@@ -386,12 +414,24 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     elif ext.setlistfm_total_shows >= 1:
         live_pts += 10
 
+    # Songkick (additive — different data source)
+    if ext.songkick_total_past_events >= 50:
+        live_pts += 30
+    elif ext.songkick_total_past_events >= 10:
+        live_pts += 20
+    elif ext.songkick_total_past_events >= 1:
+        live_pts += 8
+
+    # Currently on tour (Songkick)
+    if ext.songkick_on_tour:
+        live_pts += 10
+
     # Tour names
     if ext.setlistfm_tour_names:
         live_pts += 15
 
-    # Geographic spread
-    countries = len(ext.setlistfm_venue_countries)
+    # Geographic spread (best of Setlist.fm or Songkick)
+    countries = max(len(ext.setlistfm_venue_countries), len(ext.songkick_venue_countries))
     if countries >= 5:
         live_pts += 25
     elif countries >= 2:
@@ -421,9 +461,12 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     social_count = min(social_count, 8)  # cap duplicates
     identity_pts += social_count * 5
 
-    # Wikipedia
-    has_wikipedia = any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values())
-    if has_wikipedia:
+    # Wikipedia (direct lookup or via MusicBrainz)
+    if ext.wikipedia_found:
+        identity_pts += 25
+        if ext.wikipedia_monthly_views >= 10_000:
+            identity_pts += 10
+    elif any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values()):
         identity_pts += 20
 
     # Discogs bio
@@ -1656,17 +1699,31 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
         ))
 
     # Wikipedia/Wikidata presence (from MusicBrainz URL rels)
-    has_wikipedia = any("wikipedia" in k.lower() or "wikipedia" in v.lower()
-                        for k, v in ext.musicbrainz_urls.items())
-    if has_wikipedia:
+    # Only emit this if the dedicated Wikipedia client didn't find an article
+    # (avoids double-counting the same signal).
+    if not ext.wikipedia_found:
+        has_wikipedia = any("wikipedia" in k.lower() or "wikipedia" in v.lower()
+                            for k, v in ext.musicbrainz_urls.items())
+        if has_wikipedia:
+            evidence.append(Evidence(
+                finding="Has Wikipedia article (via MusicBrainz)",
+                source="MusicBrainz",
+                evidence_type="green_flag",
+                strength="strong",
+                detail="Artist has a Wikipedia article linked from MusicBrainz. "
+                       "Wikipedia's notability requirements make this strong proof of legitimacy.",
+                tags=["wikipedia"],
+            ))
+    # Wikidata presence (separate from Wikipedia article)
+    has_wikidata = any("wikidata" in k.lower() or "wikidata" in v.lower()
+                       for k, v in ext.musicbrainz_urls.items())
+    if has_wikidata and not ext.wikipedia_found:
         evidence.append(Evidence(
-            finding="Has Wikipedia article",
+            finding="Has Wikidata entry",
             source="MusicBrainz",
             evidence_type="green_flag",
-            strength="strong",
-            detail="Artist has a Wikipedia article linked from MusicBrainz. "
-                   "Wikipedia's notability requirements make this strong proof of legitimacy.",
-            tags=["wikipedia"],
+            strength="weak",
+            detail="Artist has a Wikidata entry linked from MusicBrainz.",
         ))
 
     return evidence
@@ -1995,6 +2052,182 @@ def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
             strength="weak",
             detail=f"Venues in: {', '.join(cities[:5])}.",
             tags=["touring_geography"],
+        ))
+
+    return evidence
+
+
+def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Wikipedia presence — richer than the MusicBrainz URL check.
+
+    Provides article length, summary extract, page views, and categories.
+    """
+    evidence: list[Evidence] = []
+
+    if not ext.wikipedia_found:
+        # Don't emit a red flag — MusicBrainz already covers the binary check.
+        # This collector only fires when the dedicated Wikipedia client found data.
+        return evidence
+
+    # Article length — longer articles indicate more notability
+    length = ext.wikipedia_length
+    views = ext.wikipedia_monthly_views
+    extract = ext.wikipedia_extract
+
+    if length >= 20_000 and views >= 10_000:
+        evidence.append(Evidence(
+            finding=f"Substantial Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is {length:,} bytes with "
+                   f"{views:,} monthly page views. Large, actively-viewed articles indicate "
+                   f"significant public notability. Summary: \"{extract[:200]}{'...' if len(extract) > 200 else ''}\"",
+            tags=["wikipedia"],
+        ))
+    elif length >= 5_000 or views >= 1_000:
+        evidence.append(Evidence(
+            finding=f"Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Wikipedia article \"{ext.wikipedia_title}\" with {views:,} monthly views. "
+                   f"Wikipedia's notability requirements make this strong proof of legitimacy. "
+                   f"Summary: \"{extract[:150]}{'...' if len(extract) > 150 else ''}\"",
+            tags=["wikipedia"],
+        ))
+    elif length > 0:
+        evidence.append(Evidence(
+            finding=f"Wikipedia stub article ({length:,} bytes)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" ({length:,} bytes). "
+                   f"Even stub articles require notability per Wikipedia guidelines.",
+            tags=["wikipedia"],
+        ))
+
+    # High page views as an independent engagement signal
+    if views >= 50_000:
+        evidence.append(Evidence(
+            finding=f"Very high Wikipedia traffic ({views:,} monthly views)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Extremely high monthly page views indicate massive public interest.",
+            tags=["genuine_fans", "wikipedia"],
+        ))
+
+    # Wikidata description
+    if ext.wikipedia_description:
+        desc = ext.wikipedia_description.lower()
+        music_terms = ["musician", "singer", "band", "rapper", "composer",
+                       "songwriter", "DJ", "group", "artist", "producer"]
+        if any(term in desc for term in music_terms):
+            evidence.append(Evidence(
+                finding=f"Wikidata: \"{ext.wikipedia_description}\"",
+                source="Wikipedia",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Wikidata classifies this entity as \"{ext.wikipedia_description}\".",
+                tags=["verified_identity"],
+            ))
+
+    return evidence
+
+
+def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Songkick concert and touring history."""
+    evidence: list[Evidence] = []
+
+    if not ext.songkick_found:
+        return evidence
+
+    total = ext.songkick_total_past_events
+
+    # Concert history
+    if total >= 100:
+        evidence.append(Evidence(
+            finding=f"{total:,} past events on Songkick",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Songkick records {total:,} past events. "
+                   f"Extensive concert history is very strong proof of a real artist.",
+            tags=["live_performance"],
+        ))
+    elif total >= 20:
+        evidence.append(Evidence(
+            finding=f"{total:,} past events on Songkick",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Songkick records {total:,} past events, indicating real touring activity.",
+            tags=["live_performance"],
+        ))
+    elif total >= 1:
+        evidence.append(Evidence(
+            finding=f"{total} past event(s) on Songkick",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Songkick has {total} recorded event(s). Some live activity detected.",
+            tags=["live_performance"],
+        ))
+
+    # Currently on tour
+    if ext.songkick_on_tour:
+        evidence.append(Evidence(
+            finding="Currently on tour (Songkick)",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Artist is currently listed as on tour on Songkick "
+                   f"with {ext.songkick_total_upcoming_events} upcoming event(s).",
+            tags=["live_performance"],
+        ))
+
+    # Geographic spread (complements Setlist.fm touring geography)
+    countries = ext.songkick_venue_countries
+    cities = ext.songkick_venue_cities
+    if len(countries) >= 5:
+        evidence.append(Evidence(
+            finding=f"Songkick events in {len(countries)} countries",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"International touring: {', '.join(countries[:8])}.",
+            tags=["touring_geography"],
+        ))
+    elif len(countries) >= 2:
+        evidence.append(Evidence(
+            finding=f"Songkick events in {len(countries)} countries",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Touring in: {', '.join(countries[:5])}.",
+            tags=["touring_geography"],
+        ))
+    elif len(cities) >= 3:
+        evidence.append(Evidence(
+            finding=f"Songkick events in {len(cities)} cities",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Events in: {', '.join(cities[:5])}.",
+            tags=["touring_geography"],
+        ))
+
+    # Festival appearances
+    festival_count = ext.songkick_event_types.count("Festival")
+    if festival_count >= 3:
+        evidence.append(Evidence(
+            finding=f"{festival_count} festival appearances (Songkick)",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail="Festival bookings indicate industry recognition and real performance history.",
+            tags=["live_performance"],
         ))
 
     return evidence
@@ -2366,6 +2599,10 @@ def evaluate_artist(
         presence.musicbrainz = True
     if ext.lastfm_found:
         presence.lastfm = True
+    if ext.wikipedia_found:
+        presence.wikipedia = True
+    if ext.songkick_found:
+        presence.songkick = True
 
     # Re-generate platform evidence with updated counts
     platforms_found = presence.count()
@@ -2431,6 +2668,8 @@ def evaluate_artist(
     all_evidence.extend(_collect_identity_evidence(ext))
     all_evidence.extend(_collect_lastfm_evidence(ext))
     all_evidence.extend(_collect_touring_geography_evidence(ext))
+    all_evidence.extend(_collect_wikipedia_evidence(ext))
+    all_evidence.extend(_collect_songkick_evidence(ext))
 
     # Entity intelligence database (accumulated from prior scans)
     if entity_db:
