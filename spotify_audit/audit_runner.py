@@ -10,6 +10,7 @@ from __future__ import annotations
 import dataclasses
 import logging
 import os
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Callable, Optional
 
@@ -319,11 +320,12 @@ def _run_audit_core(
     total_artists = len(artist_keys)
     progress("resolve", 0, total_artists, f"Resolving {total_artists} artists via Deezer...")
 
-    # 3. Resolve + quick scan
+    # 3. Resolve + quick scan (parallelized)
     artist_infos: dict[str, ArtistInfo] = {}
     quick_results: dict[str, QuickScanResult] = {}
 
-    for i, (key, is_id) in enumerate(artist_keys):
+    def _resolve_single(key: str, is_id: bool) -> tuple[str, ArtistInfo | None, QuickScanResult | None, bool | None]:
+        """Resolve one artist. Returns (key, artist, cached_qr, is_cache_hit)."""
         cached_qr = None
         cached_artist = None
         if cache:
@@ -344,31 +346,45 @@ def _run_audit_core(
                         cached_artist = None
 
         if cached_artist:
-            artist_infos[key] = cached_artist
-            quick_results[key] = cached_qr
-        else:
-            if is_id:
-                artist = client.get_artist_info(key)
-            else:
-                artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
-            artist_infos[key] = artist
+            return (key, cached_artist, cached_qr, True)
 
-            if cached_qr:
+        if is_id:
+            artist = client.get_artist_info(key)
+        else:
+            artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
+        return (key, artist, cached_qr, False)
+
+    resolved_i = 0
+    with ThreadPoolExecutor(max_workers=4, thread_name_prefix="resolve") as pool:
+        futures = {
+            pool.submit(_resolve_single, key, is_id): key
+            for key, is_id in artist_keys
+        }
+        for fut in as_completed(futures):
+            key, artist, cached_qr, is_cache_hit = fut.result()
+            resolved_i += 1
+
+            if is_cache_hit:
+                artist_infos[key] = artist
                 quick_results[key] = cached_qr
             else:
-                qr = quick_scan(artist, config.quick_weights)
-                quick_results[key] = qr
+                artist_infos[key] = artist
+                if cached_qr:
+                    quick_results[key] = cached_qr
+                else:
+                    qr = quick_scan(artist, config.quick_weights)
+                    quick_results[key] = qr
 
-            qr = quick_results[key]
-            if cache:
-                cache.put(key, "quick", {
-                    "artist_id": qr.artist_id,
-                    "artist_name": qr.artist_name,
-                    "score": qr.score,
-                    "artist_info": dataclasses.asdict(artist),
-                })
+                qr = quick_results[key]
+                if cache:
+                    cache.put(key, "quick", {
+                        "artist_id": qr.artist_id,
+                        "artist_name": qr.artist_name,
+                        "score": qr.score,
+                        "artist_info": dataclasses.asdict(artist),
+                    })
 
-        progress("resolve", i + 1, total_artists, f"Resolved {artist_infos[key].name}")
+            progress("resolve", resolved_i, total_artists, f"Resolved {artist_infos[key].name}")
 
     # 4. External lookups + evidence evaluation
     evaluations: dict[str, ArtistEvaluation] = {}
@@ -379,20 +395,17 @@ def _run_audit_core(
 
     progress("evaluate", 0, len(artists_to_lookup), "Running external lookups + evidence...")
 
-    for i, (key, artist) in enumerate(artists_to_lookup):
+    def _lookup_and_evaluate(key: str, artist: ArtistInfo) -> tuple[str, ArtistEvaluation, StandardScanResult]:
+        """Run external lookups + evidence eval for one artist."""
         ext = _lookup_external_data(
             artist_name=artist.name,
             genius=genius_client,
             discogs=discogs_client,
             setlistfm=setlistfm_client,
-
             mb_client=mb_client,
             lastfm=lastfm_client,
         )
-
         ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
-        evaluations[key] = ev
-
         qr = quick_results[key]
         sr = standard_scan(
             artist_name=qr.artist_name,
@@ -400,14 +413,24 @@ def _run_audit_core(
             genius=genius_client,
             discogs=discogs_client,
             setlistfm=setlistfm_client,
-
             mb_client=mb_client,
             deezer=deezer_client,
             weights=config.standard_weights,
         )
-        standard_results[key] = sr
+        return (key, ev, sr)
 
-        progress("evaluate", i + 1, len(artists_to_lookup), f"Evaluated {artist.name}")
+    eval_completed = 0
+    with ThreadPoolExecutor(max_workers=3, thread_name_prefix="eval") as pool:
+        futures = {
+            pool.submit(_lookup_and_evaluate, key, artist): key
+            for key, artist in artists_to_lookup
+        }
+        for fut in as_completed(futures):
+            key, ev, sr = fut.result()
+            evaluations[key] = ev
+            standard_results[key] = sr
+            eval_completed += 1
+            progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name}")
 
     # Safety fallback
     for key in quick_results:
@@ -482,45 +505,46 @@ def _run_audit_core(
     all_evaluations = list(evaluations.values())
     blocklist_report = analyze_for_blocklist(all_evaluations) if all_evaluations else None
 
-    # 8. Populate entity database
+    # 8. Populate entity database (batched in single transaction)
     if entity_db:
         try:
-            scan_id = entity_db.start_scan(
-                playlist_id=meta.playlist_id,
-                playlist_name=meta.name,
-                scan_tier=max_tier,
-                artist_count=len(artist_reports),
-            )
-            for report in artist_reports:
-                ev = report.evaluation
-                if not ev:
-                    continue
-                aid = entity_db.upsert_artist(
-                    report.artist_name,
-                    threat_status=(
-                        "confirmed_bad" if ev.verdict == Verdict.LIKELY_ARTIFICIAL
-                        else "suspected" if ev.verdict == Verdict.SUSPICIOUS
-                        else "cleared" if ev.verdict == Verdict.VERIFIED_ARTIST
-                        else "unknown"
-                    ),
-                    threat_category=report.threat_category,
-                    latest_verdict=ev.verdict.value,
-                    latest_confidence=ev.confidence,
+            with entity_db.batch():
+                scan_id = entity_db.start_scan(
+                    playlist_id=meta.playlist_id,
+                    playlist_name=meta.name,
+                    scan_tier=max_tier,
+                    artist_count=len(artist_reports),
                 )
-                for lbl in ev.labels:
-                    lid = entity_db.upsert_label(lbl)
-                    entity_db.link_artist_label(aid, lid, source="scan")
-                for contrib in ev.contributors:
-                    sid = entity_db.upsert_songwriter(contrib)
-                    entity_db.link_artist_songwriter(aid, sid, source="scan")
-                for e in ev.strong_red_flags:
-                    entity_db.add_observation(
-                        "artist", aid, "red_flag", e.finding,
-                        detail=e.detail, source=e.source,
-                        strength=e.strength, scan_id=scan_id,
+                for report in artist_reports:
+                    ev = report.evaluation
+                    if not ev:
+                        continue
+                    aid = entity_db.upsert_artist(
+                        report.artist_name,
+                        threat_status=(
+                            "confirmed_bad" if ev.verdict == Verdict.LIKELY_ARTIFICIAL
+                            else "suspected" if ev.verdict == Verdict.SUSPICIOUS
+                            else "cleared" if ev.verdict == Verdict.VERIFIED_ARTIST
+                            else "unknown"
+                        ),
+                        threat_category=report.threat_category,
+                        latest_verdict=ev.verdict.value,
+                        latest_confidence=ev.confidence,
                     )
-            entity_db.refresh_entity_counts()
-            entity_db.complete_scan(scan_id)
+                    for lbl in ev.labels:
+                        lid = entity_db.upsert_label(lbl)
+                        entity_db.link_artist_label(aid, lid, source="scan")
+                    for contrib in ev.contributors:
+                        sid = entity_db.upsert_songwriter(contrib)
+                        entity_db.link_artist_songwriter(aid, sid, source="scan")
+                    for e in ev.strong_red_flags:
+                        entity_db.add_observation(
+                            "artist", aid, "red_flag", e.finding,
+                            detail=e.detail, source=e.source,
+                            strength=e.strength, scan_id=scan_id,
+                        )
+                entity_db.refresh_entity_counts()
+                entity_db.complete_scan(scan_id)
         except Exception as exc:
             logger.debug("Entity DB update failed (non-fatal): %s", exc)
         finally:

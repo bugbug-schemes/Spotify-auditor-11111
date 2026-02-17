@@ -163,22 +163,29 @@ def load_blocklist(name: str) -> list[str]:
         return json.load(f)
 
 
-# Convenience loaders — cached so file I/O only happens once per process
+def _load_blocklist_set(name: str) -> frozenset[str]:
+    """Load a blocklist as a frozenset for O(1) membership checks."""
+    items = load_blocklist(name)
+    return frozenset(item.lower() for item in items)
+
+
+# Convenience loaders — cached so file I/O only happens once per process.
+# Returns frozensets for O(1) membership testing instead of O(n) list scans.
 @lru_cache(maxsize=None)
-def pfc_distributors() -> list[str]:
-    return load_blocklist("pfc_distributors")
-
-
-@lru_cache(maxsize=None)
-def pfc_playlists() -> list[str]:
-    return load_blocklist("pfc_playlists")
-
-
-@lru_cache(maxsize=None)
-def known_ai_artists() -> list[str]:
-    return load_blocklist("known_ai_artists")
+def pfc_distributors() -> frozenset[str]:
+    return _load_blocklist_set("pfc_distributors")
 
 
 @lru_cache(maxsize=None)
-def pfc_songwriters() -> list[str]:
-    return load_blocklist("pfc_songwriters")
+def pfc_playlists() -> frozenset[str]:
+    return _load_blocklist_set("pfc_playlists")
+
+
+@lru_cache(maxsize=None)
+def known_ai_artists() -> frozenset[str]:
+    return _load_blocklist_set("known_ai_artists")
+
+
+@lru_cache(maxsize=None)
+def pfc_songwriters() -> frozenset[str]:
+    return _load_blocklist_set("pfc_songwriters")

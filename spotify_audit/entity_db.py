@@ -223,6 +223,7 @@ class EntityDB:
         self._conn.row_factory = sqlite3.Row
         self._conn.execute("PRAGMA journal_mode=WAL")
         self._conn.execute("PRAGMA foreign_keys=ON")
+        self._in_batch = False
         self._init_schema()
 
     def _init_schema(self) -> None:
@@ -255,12 +256,36 @@ class EntityDB:
     @contextmanager
     def _tx(self):
         """Transaction context manager."""
+        if self._in_batch:
+            # Inside a batch — skip per-call commit
+            yield self._conn
+            return
         try:
             yield self._conn
             self._conn.commit()
         except Exception:
             self._conn.rollback()
             raise
+
+    @contextmanager
+    def batch(self):
+        """Wrap multiple operations in a single transaction for performance.
+
+        Usage:
+            with entity_db.batch():
+                entity_db.upsert_artist(...)
+                entity_db.upsert_label(...)
+                entity_db.link_artist_label(...)
+        """
+        self._in_batch = True
+        try:
+            yield
+            self._conn.commit()
+        except Exception:
+            self._conn.rollback()
+            raise
+        finally:
+            self._in_batch = False
 
     # ------------------------------------------------------------------
     # Artists
@@ -509,6 +534,11 @@ class EntityDB:
     # Relationship links
     # ------------------------------------------------------------------
 
+    def _maybe_commit(self) -> None:
+        """Commit unless inside a batch()."""
+        if not self._in_batch:
+            self._conn.commit()
+
     def link_artist_label(
         self, artist_id: int, label_id: int, source: str = ""
     ) -> None:
@@ -519,7 +549,7 @@ class EntityDB:
                VALUES (?,?,?,?)""",
             (artist_id, label_id, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     def link_artist_songwriter(
         self, artist_id: int, songwriter_id: int,
@@ -532,7 +562,7 @@ class EntityDB:
                VALUES (?,?,?,?,?)""",
             (artist_id, songwriter_id, role, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     def link_artist_publisher(
         self, artist_id: int, publisher_id: int, source: str = ""
@@ -544,7 +574,7 @@ class EntityDB:
                VALUES (?,?,?,?)""",
             (artist_id, publisher_id, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     def link_artist_similar(
         self, artist_id: int, similar_artist_id: int, source: str = ""
@@ -556,7 +586,7 @@ class EntityDB:
                VALUES (?,?,?,?)""",
             (artist_id, similar_artist_id, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     # ------------------------------------------------------------------
     # Observations
@@ -582,7 +612,7 @@ class EntityDB:
             (entity_type, entity_id, obs_type, finding, detail,
              source, strength, scan_id, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
         return cur.lastrowid
 
     def get_observations(
@@ -614,7 +644,7 @@ class EntityDB:
                VALUES (?,?,?,?,?)""",
             (playlist_id, playlist_name, scan_tier, artist_count, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
         return cur.lastrowid
 
     def complete_scan(self, scan_id: int) -> None:
@@ -622,7 +652,7 @@ class EntityDB:
         self._conn.execute(
             "UPDATE scans SET completed_at = ? WHERE id = ?", (now, scan_id)
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     # ------------------------------------------------------------------
     # Queries — entity networks

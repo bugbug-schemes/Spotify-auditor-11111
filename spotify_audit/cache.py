@@ -2,6 +2,7 @@
 SQLite cache with configurable TTL for artist analysis results.
 
 Stores serialized JSON keyed by (artist_id, tier) with automatic expiry.
+Includes an in-memory layer to avoid repeated SQLite reads within a session.
 """
 
 from __future__ import annotations
@@ -33,9 +34,12 @@ SELECT = "SELECT value, created_at FROM cache WHERE key = ?;"
 
 DELETE_EXPIRED = "DELETE FROM cache WHERE created_at < ?;"
 
+# Sentinel to distinguish "not in memory cache" from "cached as None"
+_MISS = object()
+
 
 class Cache:
-    """Simple key-value cache backed by SQLite."""
+    """Key-value cache backed by SQLite with an in-memory read-through layer."""
 
     def __init__(self, db_path: Path, ttl_days: int = 7) -> None:
         self.ttl_seconds = ttl_days * 86400
@@ -43,31 +47,52 @@ class Cache:
         self.conn = sqlite3.connect(str(db_path))
         self.conn.execute(CREATE_TABLE)
         self.conn.commit()
+        # In-memory cache: {key: (parsed_value | None, created_at)}
+        self._mem: dict[str, tuple[dict[str, Any] | None, float]] = {}
 
     # -- public API ---------------------------------------------------------
 
     def get(self, artist_id: str, tier: str) -> dict[str, Any] | None:
         """Return cached result or None if missing / expired."""
         key = self._key(artist_id, tier)
+        now = time.time()
+
+        # Check memory first
+        mem_entry = self._mem.get(key, _MISS)
+        if mem_entry is not _MISS:
+            value, created_at = mem_entry
+            if value is None or now - created_at > self.ttl_seconds:
+                return None
+            return value
+
+        # Fall through to SQLite
         row = self.conn.execute(SELECT, (key,)).fetchone()
         if row is None:
+            self._mem[key] = (None, 0.0)  # Cache the miss
             return None
         value_json, created_at = row
-        if time.time() - created_at > self.ttl_seconds:
+        if now - created_at > self.ttl_seconds:
             logger.debug("Cache expired for %s", key)
+            self._mem[key] = (None, 0.0)
             return None
-        return json.loads(value_json)
+        parsed = json.loads(value_json)
+        self._mem[key] = (parsed, created_at)
+        return parsed
 
     def put(self, artist_id: str, tier: str, value: dict[str, Any]) -> None:
         """Insert or update a cache entry."""
         key = self._key(artist_id, tier)
-        self.conn.execute(UPSERT, (key, json.dumps(value), time.time()))
+        now = time.time()
+        self.conn.execute(UPSERT, (key, json.dumps(value), now))
         self.conn.commit()
+        self._mem[key] = (value, now)
 
     def put_deferred(self, artist_id: str, tier: str, value: dict[str, Any]) -> None:
         """Insert/update without committing — call flush() when the batch is done."""
         key = self._key(artist_id, tier)
-        self.conn.execute(UPSERT, (key, json.dumps(value), time.time()))
+        now = time.time()
+        self.conn.execute(UPSERT, (key, json.dumps(value), now))
+        self._mem[key] = (value, now)
 
     def flush(self) -> None:
         """Commit any pending deferred writes."""
@@ -78,10 +103,16 @@ class Cache:
         cutoff = time.time() - self.ttl_seconds
         cur = self.conn.execute(DELETE_EXPIRED, (cutoff,))
         self.conn.commit()
+        # Clear memory cache of expired entries too
+        self._mem = {
+            k: v for k, v in self._mem.items()
+            if v[1] >= cutoff
+        }
         return cur.rowcount
 
     def close(self) -> None:
         self.conn.close()
+        self._mem.clear()
 
     # -- internal -----------------------------------------------------------
 

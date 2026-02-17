@@ -204,7 +204,7 @@ def _score_label_blocklist(
     mb_artist: MBArtist | None = None,
 ) -> tuple[float, str]:
     """Check if the artist's labels/distributors match the PFC blocklist."""
-    blocklist = [d.lower() for d in pfc_distributors()]
+    blocklist = pfc_distributors()  # already lowercased frozenset
     if not blocklist:
         return 0.0, "No PFC distributor blocklist loaded"
 
@@ -496,7 +496,7 @@ def standard_scan_from_external(
     _add("musicbrainz_presence", m_raw, w.musicbrainz_presence / total_weight, m_detail)
 
     # Label blocklist (from ext)
-    blocklist = [d.lower() for d in pfc_distributors()]
+    blocklist = pfc_distributors()  # already lowercased frozenset
     mb_labels = ext.musicbrainz_labels or []
     if not mb_labels:
         bl_raw, bl_detail = 30.0, "No label info available for blocklist check"

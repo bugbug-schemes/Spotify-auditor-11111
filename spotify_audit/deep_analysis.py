@@ -14,6 +14,7 @@ from __future__ import annotations
 import base64
 import logging
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 
 import requests
@@ -754,11 +755,19 @@ def run_deep_analysis_batch(
         for key, evidence in bio_results.items():
             results[key].bio_analysis = evidence
 
-    # Phase 2: Individual image analysis (images too large to batch)
-    for key, artist, ext in artists:
-        results[key].image_analysis = analyze_image(client, artist, model=model)
-        if on_progress:
-            on_progress()
+    # Phase 2: Parallel image analysis (images too large to batch in one API call,
+    # but downloads + individual Claude calls can overlap)
+    def _analyze_one_image(item: tuple[str, ArtistInfo, ExternalData]) -> tuple[str, list]:
+        key, artist, ext = item
+        return key, analyze_image(client, artist, model=model)
+
+    with ThreadPoolExecutor(max_workers=4, thread_name_prefix="img") as pool:
+        futures = {pool.submit(_analyze_one_image, item): item[0] for item in artists}
+        for fut in as_completed(futures):
+            key, img_evidence = fut.result()
+            results[key].image_analysis = img_evidence
+            if on_progress:
+                on_progress()
 
     # Phase 3: Batch synthesis
     for i in range(0, len(artists), BATCH_SIZE):

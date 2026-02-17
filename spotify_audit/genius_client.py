@@ -47,6 +47,11 @@ class GeniusClient:
         self.session = requests.Session()
         self.session.headers["Authorization"] = f"Bearer {access_token}"
         self.session.headers["Accept"] = "application/json"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
         self.enabled = bool(access_token)
 

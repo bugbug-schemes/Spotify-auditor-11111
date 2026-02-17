@@ -261,8 +261,7 @@ def _score_name_pattern(artist: ArtistInfo) -> tuple[float, str]:
     name = artist.name
 
     # Check against known AI artist blocklist
-    known = [n.lower() for n in known_ai_artists()]
-    if name.lower() in known:
+    if name.lower() in known_ai_artists():
         return 100.0, "Name matches known AI artist blocklist"
 
     score = 0.0

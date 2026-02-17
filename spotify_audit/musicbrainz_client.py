@@ -59,6 +59,11 @@ class MusicBrainzClient:
         self.session = requests.Session()
         self.session.headers["User-Agent"] = USER_AGENT
         self.session.headers["Accept"] = "application/json"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
 
     def _get(self, path: str, params: dict | None = None) -> dict:

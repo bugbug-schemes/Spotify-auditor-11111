@@ -44,6 +44,11 @@ class LastfmClient:
         self.enabled = bool(api_key)
         self._session = requests.Session()
         self._session.headers["User-Agent"] = "spotify-audit/0.3 (research tool)"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self._session.mount("https://", adapter)
+        self._session.mount("http://", adapter)
 
     def _get(self, method: str, **params) -> dict | None:
         """Make a Last.fm API call."""

@@ -18,6 +18,7 @@ import sys
 import threading
 import time
 import uuid
+from collections import OrderedDict
 from pathlib import Path
 
 # Ensure project root is on path
@@ -32,15 +33,26 @@ from spotify_audit.reports.formatter import to_html
 app = Flask(__name__, template_folder="templates", static_folder="static")
 logger = logging.getLogger("spotify_audit.web")
 
-# In-memory scan store
-# {scan_id: {"status": str, "phase": str, "current": int, "total": int,
-#             "message": str, "result_html": str|None, "error": str|None,
-#             "started_at": float, "playlist_name": str|None}}
-scans: dict[str, dict] = {}
+# Bounded in-memory scan store — evicts oldest entries when full
+MAX_SCANS = 100
+MAX_CONCURRENT_SCANS = 5
+
+_scans_lock = threading.Lock()
+scans: OrderedDict[str, dict] = OrderedDict()
+_active_scan_count = 0
+
+
+def _evict_old_scans() -> None:
+    """Remove oldest completed scans when store exceeds MAX_SCANS."""
+    while len(scans) > MAX_SCANS:
+        # Remove the oldest entry
+        scans.popitem(last=False)
 
 
 def _run_scan_background(scan_id: str, playlist_url: str, tier: str) -> None:
     """Background thread: run the audit and store results."""
+    global _active_scan_count
+
     def on_progress(phase: str, current: int, total: int, message: str):
         scans[scan_id].update({
             "phase": phase,
@@ -73,6 +85,9 @@ def _run_scan_background(scan_id: str, playlist_url: str, tier: str) -> None:
             "error": str(exc),
             "message": f"Error: {exc}",
         })
+    finally:
+        with _scans_lock:
+            _active_scan_count -= 1
 
 
 @app.route("/")
@@ -82,6 +97,8 @@ def index():
 
 @app.route("/api/scan", methods=["POST"])
 def start_scan():
+    global _active_scan_count
+
     data = request.get_json(silent=True) or {}
     playlist_url = data.get("url", "").strip()
     tier = data.get("tier", "quick").strip().lower()
@@ -96,6 +113,14 @@ def start_scan():
     if tier not in ("quick", "standard", "deep"):
         tier = "quick"
 
+    # Check concurrent scan limit
+    with _scans_lock:
+        if _active_scan_count >= MAX_CONCURRENT_SCANS:
+            return jsonify({
+                "error": f"Server busy — {_active_scan_count} scans running. Please try again shortly."
+            }), 503
+        _active_scan_count += 1
+
     scan_id = uuid.uuid4().hex[:8]
     scans[scan_id] = {
         "status": "running",
@@ -108,6 +133,10 @@ def start_scan():
         "started_at": time.time(),
         "playlist_name": None,
     }
+
+    # Evict old completed scans if store is too large
+    with _scans_lock:
+        _evict_old_scans()
 
     thread = threading.Thread(
         target=_run_scan_background,

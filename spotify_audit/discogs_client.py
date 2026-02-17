@@ -49,6 +49,11 @@ class DiscogsClient:
         self.session.headers["Accept"] = "application/json"
         if token:
             self.session.headers["Authorization"] = f"Discogs token={token}"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
         self.enabled = True  # Discogs works without a token (lower rate limit)
 

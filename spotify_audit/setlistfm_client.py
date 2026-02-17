@@ -50,6 +50,11 @@ class SetlistFmClient:
         self.session.headers["Accept"] = "application/json"
         if api_key:
             self.session.headers["x-api-key"] = api_key
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
         self.enabled = bool(api_key)
 

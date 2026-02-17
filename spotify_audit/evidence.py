@@ -901,9 +901,8 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
     if not artist.labels:
         return evidence
 
-    pfc_labels = [l.lower() for l in pfc_distributors()]
-    ai_names = [n.lower() for n in known_ai_artists()]
-    pfc_writers = [w.lower() for w in pfc_songwriters()]
+    pfc_labels = pfc_distributors()
+    ai_names = known_ai_artists()
 
     matched_pfc = [l for l in artist.labels if l.lower() in pfc_labels]
     matched_ai = [l for l in artist.labels if l.lower() in ai_names]
@@ -966,8 +965,7 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
     name = artist.name
 
     # Known AI artist blocklist match
-    known = [n.lower() for n in known_ai_artists()]
-    if name.lower() in known:
+    if name.lower() in known_ai_artists():
         evidence.append(Evidence(
             finding="Name matches known AI artist blocklist",
             source="Blocklist",
@@ -1077,22 +1075,20 @@ def _collect_collaboration_evidence(artist: ArtistInfo) -> list[Evidence]:
 def _collect_credit_network_evidence(artist: ArtistInfo) -> list[Evidence]:
     """Check if track credits match known PFC ghost producers/songwriters."""
     evidence: list[Evidence] = []
-    watchlist = {n.lower(): n for n in pfc_songwriters()}
+    watchlist = pfc_songwriters()
     if not watchlist:
         return evidence
 
     # Check contributor names against songwriter watchlist
     matched: list[str] = []
     for contributor in artist.contributors:
-        clower = contributor.lower()
-        if clower in watchlist:
-            matched.append(watchlist[clower])
+        if contributor.lower() in watchlist:
+            matched.append(contributor)
 
     # Also check contributor_roles keys (may have names not in contributors list)
     for name in artist.contributor_roles:
-        nlower = name.lower()
-        if nlower in watchlist and watchlist[nlower] not in matched:
-            matched.append(watchlist[nlower])
+        if name.lower() in watchlist and name not in matched:
+            matched.append(name)
 
     if matched:
         evidence.append(Evidence(
@@ -1347,8 +1343,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
 
     # Discogs labels
     if ext.discogs_labels:
-        pfc_labels = [l.lower() for l in pfc_distributors()]
-        discogs_pfc_matches = [l for l in ext.discogs_labels if l.lower() in pfc_labels]
+        discogs_pfc_matches = [l for l in ext.discogs_labels if l.lower() in pfc_distributors()]
         if discogs_pfc_matches:
             evidence.append(Evidence(
                 finding=f"Discogs labels match PFC blocklist: {', '.join(discogs_pfc_matches)}",
@@ -1508,8 +1503,7 @@ def _collect_musicbrainz_evidence(ext: ExternalData) -> list[Evidence]:
 
     # MusicBrainz labels vs PFC blocklist
     if ext.musicbrainz_labels:
-        pfc_labels = [l.lower() for l in pfc_distributors()]
-        mb_pfc_matches = [l for l in ext.musicbrainz_labels if l.lower() in pfc_labels]
+        mb_pfc_matches = [l for l in ext.musicbrainz_labels if l.lower() in pfc_distributors()]
         if mb_pfc_matches:
             evidence.append(Evidence(
                 finding=f"MusicBrainz labels match PFC blocklist: {', '.join(mb_pfc_matches)}",
