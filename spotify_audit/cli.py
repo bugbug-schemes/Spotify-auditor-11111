@@ -72,6 +72,9 @@ def _build_config() -> AuditConfig:
         genius_token=os.getenv("GENIUS_TOKEN", ""),
         discogs_token=os.getenv("DISCOGS_TOKEN", ""),
         setlistfm_api_key=os.getenv("SETLISTFM_API_KEY", ""),
+        lastfm_api_key=os.getenv("LASTFM_API_KEY", ""),
+        songkick_api_key=os.getenv("SONGKICK_API_KEY", ""),
+        youtube_api_key=os.getenv("YOUTUBE_API_KEY", ""),
     )
 
 
@@ -802,10 +805,10 @@ def _run_audit(
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
-    lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
+    lastfm_client = LastfmClient(api_key=config.lastfm_api_key, delay=0.25)
     wikipedia_client = WikipediaClient(delay=0.2)
-    songkick_client = SongkickClient(api_key=os.getenv("SONGKICK_API_KEY", ""), delay=0.5)
-    youtube_client = YouTubeClient(api_key=os.getenv("YOUTUBE_API_KEY", ""), delay=0.3)
+    songkick_client = SongkickClient(api_key=config.songkick_api_key, delay=0.5)
+    youtube_client = YouTubeClient(api_key=config.youtube_api_key, delay=0.3)
     deezer_ai_checker = DeezerAIChecker(delay=1.5)
     pro_client = PRORegistryClient(delay=2.5)
 

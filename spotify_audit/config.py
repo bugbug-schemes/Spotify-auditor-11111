@@ -142,6 +142,9 @@ class AuditConfig:
     genius_token: str = ""              # Genius access token
     discogs_token: str = ""             # Discogs personal access token
     setlistfm_api_key: str = ""         # setlist.fm API key
+    lastfm_api_key: str = ""            # Last.fm API key
+    songkick_api_key: str = ""          # Songkick API key
+    youtube_api_key: str = ""           # YouTube Data API v3 key
     # Rate-limit / batching
     claude_batch_size: int = 5          # artists per Claude API call
     max_retries: int = 5
