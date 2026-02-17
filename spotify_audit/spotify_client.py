@@ -80,6 +80,8 @@ class ArtistInfo:
     contributor_roles: dict[str, list[str]] = field(default_factory=dict)  # {name: [roles]}
     related_artist_names: list[str] = field(default_factory=list)
     deezer_fans: int = 0
+    deezer_isrcs: list[str] = field(default_factory=list)           # ISRCs from Deezer tracks
+    deezer_isrc_registrants: list[str] = field(default_factory=list) # unique registrant codes
 
 
 @dataclass

@@ -146,6 +146,11 @@ class ExternalData:
     musicbrainz_official_website: str = ""
     musicbrainz_social_urls: dict[str, str] = field(default_factory=dict)
 
+    # Press coverage (Priority 6)
+    press_checked: bool = False
+    press_publications_found: list[str] = field(default_factory=list)
+    press_total_hits: int = 0
+
     # Pre-seeded evidence from known entity pre-check (Priority 1)
     pre_seeded_evidence: list[dict] = field(default_factory=list)
 
@@ -2531,6 +2536,59 @@ def _collect_isrc_evidence(ext: ExternalData) -> list[Evidence]:
     return evidence
 
 
+def _collect_press_coverage_evidence(ext: ExternalData, artist_monthly_listeners: int = 0) -> list[Evidence]:
+    """Analyze press coverage search results (Priority 6)."""
+    evidence: list[Evidence] = []
+
+    if not ext.press_checked:
+        return evidence
+
+    pubs = ext.press_publications_found
+    hits = ext.press_total_hits
+
+    if len(pubs) >= 2:
+        evidence.append(Evidence(
+            finding=f"Press coverage found in {len(pubs)} publications",
+            source="Press Coverage",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Found coverage in: {', '.join(pubs[:5])}. "
+                   f"Total press hits: {hits}.",
+            tags=["press_coverage"],
+        ))
+    elif len(pubs) == 1:
+        evidence.append(Evidence(
+            finding=f"Press coverage found in {pubs[0]}",
+            source="Press Coverage",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Found coverage in {pubs[0]}. Total hits: {hits}.",
+            tags=["press_coverage"],
+        ))
+    elif hits > 0:
+        evidence.append(Evidence(
+            finding=f"{hits} press mention(s) but not from major publications",
+            source="Press Coverage",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Found {hits} mention(s) but none from recognized music publications.",
+            tags=["press_coverage"],
+        ))
+    elif artist_monthly_listeners >= 100_000:
+        evidence.append(Evidence(
+            finding="No press coverage despite significant streaming audience",
+            source="Press Coverage",
+            evidence_type="red_flag",
+            strength="weak",
+            detail=f"No press coverage found for an artist with {artist_monthly_listeners:,} "
+                   "monthly listeners. Legitimate artists at this level typically have "
+                   "some coverage from music publications.",
+            tags=["no_press_coverage"],
+        ))
+
+    return evidence
+
+
 def _collect_cowriter_network_evidence(ext: ExternalData, entity_db: "EntityDB | None" = None, artist_name: str = "") -> list[Evidence]:
     """Check cowriter overlap with flagged artists in entity DB (Priority 1 enhancement)."""
     evidence: list[Evidence] = []
@@ -3036,6 +3094,9 @@ def evaluate_artist(
             detail=pre.get("detail", ""),
             tags=pre.get("tags", []),
         ))
+
+    # Press coverage (Priority 6)
+    all_evidence.extend(_collect_press_coverage_evidence(ext, artist.monthly_listeners))
 
     # Entity intelligence database (accumulated from prior scans)
     if entity_db:

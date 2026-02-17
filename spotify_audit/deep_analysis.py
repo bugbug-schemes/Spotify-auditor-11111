@@ -413,6 +413,8 @@ def _synthesize(
     model: str = "claude-sonnet-4-5-20250929",
 ) -> list[Evidence]:
     """Final synthesis: combine all signals into a threat assessment."""
+    from spotify_audit.press_coverage import build_claude_prompt
+
     context = _build_artist_context(artist, ext)
 
     # Summarize prior evidence
@@ -424,6 +426,9 @@ def _synthesize(
     if not prior_lines:
         return []
 
+    # Include press coverage investigation prompt (Priority 6)
+    press_prompt = build_claude_prompt(artist.name)
+
     prompt = f"""You are a music industry analyst investigating whether this is a real artist or a fabricated/ghost/AI artist.
 
 ARTIST DATA:
@@ -432,7 +437,10 @@ ARTIST DATA:
 EVIDENCE COLLECTED SO FAR:
 {chr(10).join(prior_lines)}
 
-Based on ALL the evidence above, provide a final synthesis assessment.
+ADDITIONAL INVESTIGATION:
+{press_prompt}
+
+Based on ALL the evidence above (including your press coverage findings), provide a final synthesis assessment.
 
 Classify into one of these threat categories:
 - PFC_GHOST: Fabricated artist identity created by a production company (like Epidemic Sound), music written by ghost producers under fake names

@@ -41,7 +41,7 @@ from spotify_audit.known_entities import run_pre_check, auto_promote_entity
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
-from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, incorporate_deep_evidence
+from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, Evidence, incorporate_deep_evidence
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
     finalize_artist_report,
@@ -561,6 +561,8 @@ def _resolve_artist_by_name(
                     contributor_roles=dz.contributor_roles,
                     related_artist_names=related_names,
                     deezer_fans=dz.nb_fan,
+                    deezer_isrcs=dz.track_isrcs,
+                    deezer_isrc_registrants=dz.isrc_registrants,
                 )
             else:
                 logger.debug(
@@ -1000,13 +1002,22 @@ def _run_audit(
             if pre.short_circuit:
                 # Short-circuit: skip all external lookups
                 ext = ExternalData(pre_seeded_evidence=pre.pre_seeded_evidence)
+                # Build red flags from pre-check so reports show WHY it was flagged
+                short_circuit_flags = [Evidence(
+                    finding=pre.reason,
+                    source="Pre-check",
+                    evidence_type="red_flag",
+                    strength="strong",
+                    detail=pre.reason,
+                    tags=["known_bad_actor"],
+                )]
                 ev = ArtistEvaluation(
                     artist_id=artist.artist_id,
                     artist_name=artist.name,
                     verdict=Verdict.LIKELY_ARTIFICIAL,
                     confidence="high",
                     platform_presence=_collect_quick_presence(artist),
-                    red_flags=[],
+                    red_flags=short_circuit_flags,
                     green_flags=[],
                     decision_path=[f"Pre-check: {pre.reason}"],
                 )
@@ -1033,6 +1044,18 @@ def _run_audit(
             # Inject pre-seeded evidence from pre-check
             if pre.pre_seeded_evidence:
                 ext.pre_seeded_evidence = pre.pre_seeded_evidence
+
+            # Priority 7: Merge Deezer ISRCs into ExternalData
+            if artist.deezer_isrcs:
+                for isrc in artist.deezer_isrcs:
+                    if isrc not in ext.isrcs:
+                        ext.isrcs.append(isrc)
+                # Merge registrant codes
+                existing = set(ext.isrc_registrants)
+                for reg in artist.deezer_isrc_registrants:
+                    if reg not in existing:
+                        ext.isrc_registrants.append(reg)
+                        existing.add(reg)
 
             # Conditional enrichment: only for artists with red flags
             # Run a preliminary flag count from pre-seeded evidence

@@ -65,6 +65,17 @@ class PRORegistryClient:
         if result.found_bmi or result.found_ascap:
             result.songwriter_registered = True
 
+        # Cross-reference discovered publishers against PFC blocklist
+        if result.publishers:
+            from spotify_audit.config import pfc_distributors
+            pfc_set = pfc_distributors()
+            pfc_matches = self.check_pfc_publishers(result.publishers, pfc_set)
+            if pfc_matches:
+                result.pfc_publisher_match = True
+                logger.info(
+                    "PRO publisher PFC match for '%s': %s", name, pfc_matches,
+                )
+
         return result
 
     def _search_bmi(self, name: str, result: PRORegistration) -> None:
