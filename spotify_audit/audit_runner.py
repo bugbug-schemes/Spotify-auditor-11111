@@ -25,6 +25,10 @@ from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
 from spotify_audit.lastfm_client import LastfmClient
 from spotify_audit.wikipedia_client import WikipediaClient
+from spotify_audit.youtube_client import YouTubeClient
+from spotify_audit.deezer_ai import DeezerAIChecker
+from spotify_audit.pro_registry import PRORegistryClient
+from spotify_audit.known_entities import run_pre_check, auto_promote_entity
 from spotify_audit.songkick_client import SongkickClient
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
@@ -206,6 +210,15 @@ def _lookup_external_data(
             mb = mb_client.enrich(mb)
             ext.musicbrainz_labels = mb.labels
             ext.musicbrainz_urls = mb.urls
+            # Priority 5: Enhanced URL categorization
+            ext.musicbrainz_youtube_url = mb.youtube_url
+            ext.musicbrainz_bandcamp_url = mb.bandcamp_url
+            ext.musicbrainz_official_website = mb.official_website
+            ext.musicbrainz_social_urls = mb.social_urls
+            # Priority 7: ISRCs
+            if mb.isrcs:
+                ext.isrcs.extend(mb.isrcs)
+                ext.isrc_registrants = mb.isrc_registrants
     except Exception as exc:
         logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 

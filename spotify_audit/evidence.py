@@ -113,6 +113,42 @@ class ExternalData:
     songkick_venue_countries: list[str] = field(default_factory=list)
     songkick_event_types: list[str] = field(default_factory=list)
 
+    # Deezer AI detection (Priority 2 — conditional enrichment)
+    deezer_ai_checked: bool = False
+    deezer_ai_tagged_albums: list[str] = field(default_factory=list)
+
+    # YouTube (Priority 4 — conditional enrichment)
+    youtube_checked: bool = False
+    youtube_channel_found: bool = False
+    youtube_subscriber_count: int = 0
+    youtube_video_count: int = 0
+    youtube_view_count: int = 0
+    youtube_music_videos_found: int = 0
+    youtube_match_confidence: float = 0.0
+
+    # PRO Registry (Priority 3 — conditional enrichment)
+    pro_checked: bool = False
+    pro_found_bmi: bool = False
+    pro_found_ascap: bool = False
+    pro_works_count: int = 0           # combined BMI + ASCAP
+    pro_publishers: list[str] = field(default_factory=list)
+    pro_songwriter_registered: bool = False
+    pro_pfc_publisher_match: bool = False
+    pro_zero_songwriter_share: bool = False
+
+    # ISRC data (Priority 7 — from Deezer + MusicBrainz)
+    isrcs: list[str] = field(default_factory=list)
+    isrc_registrants: list[str] = field(default_factory=list)
+
+    # MusicBrainz enhanced URLs (Priority 5)
+    musicbrainz_youtube_url: str = ""
+    musicbrainz_bandcamp_url: str = ""
+    musicbrainz_official_website: str = ""
+    musicbrainz_social_urls: dict[str, str] = field(default_factory=dict)
+
+    # Pre-seeded evidence from known entity pre-check (Priority 1)
+    pre_seeded_evidence: list[dict] = field(default_factory=list)
+
 
 # ---------------------------------------------------------------------------
 # Data structures
@@ -181,6 +217,21 @@ class Evidence:
     Fan engagement:
         low_fans             — very low fan count
         low_scrobble_engagement — low Last.fm replay ratio
+
+    New evidence sources (Priorities 2-7):
+        ai_generated_music   — Deezer AI tag detected on album
+        deezer_ai_clear      — Deezer checked, no AI tag found
+        youtube_presence     — YouTube channel found with subscribers
+        no_youtube           — no YouTube presence (suspicious for large artists)
+        youtube_disparity    — massive Spotify/YouTube listener gap
+        pro_registered       — registered songwriter with BMI/ASCAP
+        no_pro_registration  — not found in PRO databases
+        pfc_publisher        — publisher matches known PFC entity
+        no_songwriter_share  — 100% publisher share, 0% songwriter
+        bandcamp_presence    — Bandcamp page found (strong legitimacy)
+        press_coverage       — press coverage in recognized publications
+        isrc_pfc_registrant  — ISRC registrant matches PFC entity
+        cowriter_network     — shares producers with flagged artists
 
     AI-specific (from Claude analysis):
         ai_generated_image   — profile image flagged as AI
@@ -2233,6 +2284,298 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
     return evidence
 
 
+def _collect_deezer_ai_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Deezer AI content tag results (Priority 2)."""
+    evidence: list[Evidence] = []
+
+    if not ext.deezer_ai_checked:
+        return evidence
+
+    if ext.deezer_ai_tagged_albums:
+        albums_str = ", ".join(ext.deezer_ai_tagged_albums[:3])
+        evidence.append(Evidence(
+            finding=f"Deezer flagged {len(ext.deezer_ai_tagged_albums)} album(s) as AI-generated",
+            source="Deezer AI Detection",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Deezer's AI detection system (99.8% accuracy, patent-pending) has "
+                   f"classified album(s) as AI-generated: {albums_str}. "
+                   "Deezer processes 60K+ AI tracks daily and is the only platform that "
+                   "actively tags AI content.",
+            tags=["ai_generated_music"],
+        ))
+    else:
+        evidence.append(Evidence(
+            finding="No AI content tags detected on Deezer",
+            source="Deezer AI Detection",
+            evidence_type="green_flag",
+            strength="weak",
+            detail="Deezer's AI detection system did not flag any of this artist's albums.",
+            tags=["deezer_ai_clear"],
+        ))
+
+    return evidence
+
+
+def _collect_youtube_evidence(ext: ExternalData, artist_monthly_listeners: int = 0) -> list[Evidence]:
+    """Analyze YouTube cross-reference results (Priority 4)."""
+    evidence: list[Evidence] = []
+
+    if not ext.youtube_checked:
+        return evidence
+
+    if ext.youtube_channel_found:
+        subs = ext.youtube_subscriber_count
+        if subs >= 100_000:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with {subs:,} subscribers",
+                source="YouTube",
+                evidence_type="green_flag",
+                strength="strong",
+                detail=f"YouTube channel found with {subs:,} subscribers, "
+                       f"{ext.youtube_video_count} videos, "
+                       f"{ext.youtube_view_count:,} total views.",
+                tags=["youtube_presence", "genuine_fans"],
+            ))
+        elif subs >= 10_000:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with {subs:,} subscribers",
+                source="YouTube",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"YouTube channel found with {subs:,} subscribers "
+                       f"and {ext.youtube_video_count} videos.",
+                tags=["youtube_presence"],
+            ))
+        elif subs >= 100:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with {subs:,} subscribers",
+                source="YouTube",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"YouTube channel found with {subs:,} subscribers.",
+                tags=["youtube_presence"],
+            ))
+        else:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with only {subs} subscribers",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="weak",
+                detail="YouTube channel exists but has very few subscribers, "
+                       "suggesting auto-generated or placeholder channel.",
+                tags=["youtube_presence"],
+            ))
+
+        # Spotify/YouTube disparity check
+        if artist_monthly_listeners >= 500_000 and ext.youtube_view_count < 10_000:
+            evidence.append(Evidence(
+                finding=f"Massive Spotify/YouTube disparity: {artist_monthly_listeners:,} "
+                        f"listeners but only {ext.youtube_view_count:,} YouTube views",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Artist has {artist_monthly_listeners:,} Spotify monthly listeners but "
+                       f"only {ext.youtube_view_count:,} total YouTube views. Real artists with "
+                       "this level of Spotify audience always have proportional YouTube presence.",
+                tags=["youtube_disparity"],
+            ))
+
+    elif not ext.youtube_channel_found and ext.youtube_music_videos_found == 0:
+        if artist_monthly_listeners >= 100_000:
+            evidence.append(Evidence(
+                finding="No YouTube presence despite large Spotify audience",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"No YouTube channel or music videos found for an artist with "
+                       f"{artist_monthly_listeners:,} Spotify monthly listeners. "
+                       "This is very unusual for a legitimate artist.",
+                tags=["no_youtube"],
+            ))
+        else:
+            evidence.append(Evidence(
+                finding="No YouTube channel or music videos found",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="weak",
+                detail="No YouTube presence detected. Most real artists have at least "
+                       "some YouTube content.",
+                tags=["no_youtube"],
+            ))
+
+    return evidence
+
+
+def _collect_pro_registry_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze ASCAP/BMI performing rights registration (Priority 3)."""
+    evidence: list[Evidence] = []
+
+    if not ext.pro_checked:
+        return evidence
+
+    if ext.pro_songwriter_registered:
+        total_works = ext.pro_works_count
+        pro_name = "BMI" if ext.pro_found_bmi else "ASCAP"
+        if ext.pro_found_bmi and ext.pro_found_ascap:
+            pro_name = "BMI and ASCAP"
+
+        evidence.append(Evidence(
+            finding=f"Registered songwriter with {pro_name} ({total_works} works)",
+            source="PRO Registry",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Artist found as registered songwriter with {pro_name}, "
+                   f"{total_works} works registered. "
+                   "Professional songwriters collecting US royalties are registered with PROs.",
+            tags=["pro_registered"],
+        ))
+
+        # PFC publisher check
+        if ext.pro_pfc_publisher_match:
+            evidence.append(Evidence(
+                finding=f"PRO publisher matches known PFC entity",
+                source="PRO Registry",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Works registered under publisher(s) matching known PFC entities: "
+                       f"{', '.join(ext.pro_publishers[:3])}.",
+                tags=["pfc_publisher"],
+            ))
+
+        # Zero songwriter share
+        if ext.pro_zero_songwriter_share:
+            evidence.append(Evidence(
+                finding="0% songwriter share — 100% publisher ownership",
+                source="PRO Registry",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail="Registered works show 0% songwriter share with 100% publisher ownership. "
+                       "This is the structural signature of a work-for-hire / PFC arrangement.",
+                tags=["no_songwriter_share"],
+            ))
+    else:
+        evidence.append(Evidence(
+            finding="Not found in BMI or ASCAP databases",
+            source="PRO Registry",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="No works registered with BMI or ASCAP. Any professional songwriter "
+                   "collecting royalties in the US will be registered with a PRO.",
+            tags=["no_pro_registration"],
+        ))
+
+    return evidence
+
+
+def _collect_bandcamp_evidence(ext: ExternalData) -> list[Evidence]:
+    """Check for Bandcamp presence from MusicBrainz URLs (Priority 5)."""
+    evidence: list[Evidence] = []
+
+    if ext.musicbrainz_bandcamp_url:
+        evidence.append(Evidence(
+            finding="Artist has Bandcamp page",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Bandcamp presence: {ext.musicbrainz_bandcamp_url}. "
+                   "Bandcamp is a direct-to-fan sales platform. PFC/ghost artists "
+                   "never maintain Bandcamp pages.",
+            tags=["bandcamp_presence"],
+        ))
+
+    if ext.musicbrainz_official_website:
+        evidence.append(Evidence(
+            finding="Artist has official website",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Official website: {ext.musicbrainz_official_website}",
+            tags=["social_media"],
+        ))
+
+    return evidence
+
+
+def _collect_isrc_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze ISRC registrant data (Priority 7)."""
+    evidence: list[Evidence] = []
+
+    if not ext.isrcs:
+        return evidence
+
+    registrants = ext.isrc_registrants
+
+    if len(registrants) == 1:
+        evidence.append(Evidence(
+            finding=f"All tracks share ISRC registrant: {registrants[0]}",
+            source="ISRC Analysis",
+            evidence_type="neutral",
+            strength="weak",
+            detail=f"All {len(ext.isrcs)} tracks use the same ISRC registrant code "
+                   f"'{registrants[0]}'. Normal for single-label artists.",
+            tags=[],
+        ))
+    elif len(registrants) >= 3:
+        evidence.append(Evidence(
+            finding=f"Tracks span {len(registrants)} ISRC registrants",
+            source="ISRC Analysis",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Tracks use {len(registrants)} different ISRC registrant codes: "
+                   f"{', '.join(registrants)}. Multiple registrants suggest releases "
+                   "through different labels/distributors over time.",
+            tags=[],
+        ))
+
+    return evidence
+
+
+def _collect_cowriter_network_evidence(ext: ExternalData, entity_db: "EntityDB | None" = None, artist_name: str = "") -> list[Evidence]:
+    """Check cowriter overlap with flagged artists in entity DB (Priority 1 enhancement)."""
+    evidence: list[Evidence] = []
+
+    if not entity_db or not artist_name:
+        return evidence
+
+    try:
+        overlaps = entity_db.get_cowriter_overlap(artist_name)
+    except Exception:
+        return evidence
+
+    if not overlaps:
+        return evidence
+
+    total_flagged = sum(len(o["flagged_artists"]) for o in overlaps)
+
+    if total_flagged >= 3:
+        sw_names = [o["songwriter"] for o in overlaps if o["songwriter"]]
+        flagged_names = []
+        for o in overlaps:
+            flagged_names.extend(a["name"] for a in o["flagged_artists"][:2])
+        evidence.append(Evidence(
+            finding=f"Shares producers with {total_flagged} flagged artists",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Shared songwriter(s)/producer(s): {', '.join(sw_names[:3])}. "
+                   f"Connected to flagged artists: {', '.join(flagged_names[:5])}.",
+            tags=["cowriter_network"],
+        ))
+    elif total_flagged >= 1:
+        sw_names = [o["songwriter"] for o in overlaps if o["songwriter"]]
+        evidence.append(Evidence(
+            finding=f"Shares producer(s) with {total_flagged} flagged artist(s)",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail=f"Shared songwriter(s)/producer(s): {', '.join(sw_names[:3])}.",
+            tags=["cowriter_network"],
+        ))
+
+    return evidence
+
+
 # ---------------------------------------------------------------------------
 # Decision tree
 # ---------------------------------------------------------------------------
@@ -2260,6 +2603,11 @@ def _decide_verdict(
     # Rule 1: Known AI artist name → Likely Artificial
     if _any_red_tag("known_ai_artist"):
         decision_path.append("Name matches known AI artist blocklist → Likely Artificial")
+        return Verdict.LIKELY_ARTIFICIAL, "high"
+
+    # Rule 1.5: Deezer AI Content Flag → Likely Artificial
+    if _any_red_tag("ai_generated_music"):
+        decision_path.append("Deezer AI detection flagged content → Likely Artificial")
         return Verdict.LIKELY_ARTIFICIAL, "high"
 
     # Rule 2: PFC label + content farm patterns → Likely Artificial
@@ -2671,9 +3019,28 @@ def evaluate_artist(
     all_evidence.extend(_collect_wikipedia_evidence(ext))
     all_evidence.extend(_collect_songkick_evidence(ext))
 
+    # New evidence sources (Priorities 2-7)
+    all_evidence.extend(_collect_deezer_ai_evidence(ext))
+    all_evidence.extend(_collect_youtube_evidence(ext, artist.monthly_listeners))
+    all_evidence.extend(_collect_pro_registry_evidence(ext))
+    all_evidence.extend(_collect_bandcamp_evidence(ext))
+    all_evidence.extend(_collect_isrc_evidence(ext))
+
+    # Pre-seeded evidence from known entity pre-check (Priority 1)
+    for pre in ext.pre_seeded_evidence:
+        all_evidence.append(Evidence(
+            finding=pre.get("finding", ""),
+            source=pre.get("source", "Blocklist"),
+            evidence_type=pre.get("evidence_type", "red_flag"),
+            strength=pre.get("strength", "moderate"),
+            detail=pre.get("detail", ""),
+            tags=pre.get("tags", []),
+        ))
+
     # Entity intelligence database (accumulated from prior scans)
     if entity_db:
         all_evidence.extend(_collect_entity_db_evidence(artist, entity_db))
+        all_evidence.extend(_collect_cowriter_network_evidence(ext, entity_db, artist.name))
 
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]

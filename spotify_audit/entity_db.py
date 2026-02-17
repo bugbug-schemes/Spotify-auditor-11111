@@ -89,6 +89,8 @@ CREATE TABLE IF NOT EXISTS artists (
     threat_category REAL,            -- 1, 1.5, 2, 3, 4
     latest_verdict  TEXT,            -- e.g. "Likely Artificial"
     latest_confidence TEXT,
+    scan_count      INTEGER DEFAULT 0,  -- number of times scanned
+    auto_promoted_at TEXT,               -- ISO timestamp of auto-promotion
     country         TEXT,
     genres          TEXT,             -- JSON array
     deezer_fans     INTEGER,
@@ -243,6 +245,8 @@ class EntityDB:
             ("deezer_fans", "INTEGER"),
             ("lastfm_listeners", "INTEGER"),
             ("lastfm_playcount", "INTEGER"),
+            ("scan_count", "INTEGER DEFAULT 0"),
+            ("auto_promoted_at", "TEXT"),
         ]:
             try:
                 self._conn.execute(f"ALTER TABLE artists ADD COLUMN {col} {typ}")
@@ -400,6 +404,82 @@ class EntityDB:
             "SELECT * FROM artists WHERE id = ?", (artist_id,)
         ).fetchone()
         return dict(row) if row else None
+
+    def increment_scan_count(self, name: str, verdict: str = "", confidence: str = "") -> int:
+        """Increment scan_count for an artist and update verdict. Returns new count."""
+        norm = _normalize(name)
+        now = _now_iso()
+        with self._tx():
+            row = self._conn.execute(
+                "SELECT id, scan_count FROM artists WHERE normalized_name = ?",
+                (norm,),
+            ).fetchone()
+            if row:
+                new_count = (row["scan_count"] or 0) + 1
+                updates = ["scan_count = ?", "last_seen = ?"]
+                params: list = [new_count, now]
+                if verdict:
+                    updates.append("latest_verdict = ?")
+                    params.append(verdict)
+                if confidence:
+                    updates.append("latest_confidence = ?")
+                    params.append(confidence)
+                params.append(row["id"])
+                self._conn.execute(
+                    f"UPDATE artists SET {', '.join(updates)} WHERE id = ?",
+                    params,
+                )
+                return new_count
+        return 0
+
+    def get_cowriter_overlap(self, artist_name: str, min_shared: int = 1) -> list[dict]:
+        """Find artists sharing credited producers/songwriters with flagged artists.
+
+        Returns list of {songwriter, flagged_artists: [...], status} dicts.
+        """
+        norm = _normalize(artist_name)
+        row = self._conn.execute(
+            "SELECT id FROM artists WHERE normalized_name = ?", (norm,)
+        ).fetchone()
+        if not row:
+            return []
+
+        artist_id = row["id"]
+
+        # Get this artist's songwriters
+        sws = self._conn.execute(
+            "SELECT songwriter_id FROM artist_songwriters WHERE artist_id = ?",
+            (artist_id,),
+        ).fetchall()
+        sw_ids = [r["songwriter_id"] for r in sws]
+
+        if not sw_ids:
+            return []
+
+        overlaps: list[dict] = []
+        for sw_id in sw_ids:
+            # Find other artists sharing this songwriter
+            others = self._conn.execute(
+                """SELECT a.name, a.threat_status, s.name as sw_name
+                   FROM artist_songwriters asw
+                   JOIN artists a ON a.id = asw.artist_id
+                   JOIN songwriters s ON s.id = asw.songwriter_id
+                   WHERE asw.songwriter_id = ?
+                     AND asw.artist_id != ?
+                     AND a.threat_status IN ('confirmed_bad', 'suspected')""",
+                (sw_id, artist_id),
+            ).fetchall()
+
+            if len(others) >= min_shared:
+                overlaps.append({
+                    "songwriter": others[0]["sw_name"] if others else "",
+                    "flagged_artists": [
+                        {"name": r["name"], "status": r["threat_status"]}
+                        for r in others
+                    ],
+                })
+
+        return overlaps
 
     # ------------------------------------------------------------------
     # Labels

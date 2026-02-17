@@ -49,6 +49,9 @@ class DeezerArtist:
     related_artist_fans: list[tuple[str, int]] = field(default_factory=list)  # [(name, nb_fan)]
     album_release_dates: list[str] = field(default_factory=list)  # release dates per album
     contributor_roles: dict[str, list[str]] = field(default_factory=dict)  # {name: [roles]}
+    # ISRC data (Priority 7)
+    track_isrcs: list[str] = field(default_factory=list)       # ISRCs from tracks
+    isrc_registrants: list[str] = field(default_factory=list)  # unique registrant codes
 
 
 class DeezerClient:
@@ -174,6 +177,32 @@ class DeezerClient:
         artist.has_explicit = has_explicit
         artist.contributors = sorted(contributors_seen)
         artist.contributor_roles = contributor_roles
+
+        # --- ISRCs from top tracks (Priority 7) ---
+        isrcs: list[str] = []
+        for track in artist.top_tracks:
+            if isinstance(track, dict):
+                isrc = track.get("isrc", "")
+                if isrc:
+                    isrcs.append(isrc)
+                # If ISRC not in list response, try individual track lookup
+                elif track.get("id") and len(isrcs) < 10:
+                    try:
+                        track_data = self._get(f"/track/{track['id']}")
+                        track_isrc = track_data.get("isrc", "")
+                        if track_isrc:
+                            isrcs.append(track_isrc)
+                    except Exception:
+                        pass
+        artist.track_isrcs = isrcs
+        if isrcs:
+            # Extract registrant codes (chars 2-5 of ISRC)
+            registrants: set[str] = set()
+            for isrc in isrcs:
+                clean = isrc.replace("-", "")
+                if len(clean) >= 5:
+                    registrants.add(clean[2:5])
+            artist.isrc_registrants = sorted(registrants)
 
         # --- Related artists (with fan counts) ---
         try:

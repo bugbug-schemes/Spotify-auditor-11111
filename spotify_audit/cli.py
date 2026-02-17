@@ -34,6 +34,10 @@ from spotify_audit.setlistfm_client import SetlistFmClient
 from spotify_audit.lastfm_client import LastfmClient
 from spotify_audit.wikipedia_client import WikipediaClient
 from spotify_audit.songkick_client import SongkickClient
+from spotify_audit.youtube_client import YouTubeClient
+from spotify_audit.deezer_ai import DeezerAIChecker
+from spotify_audit.pro_registry import PRORegistryClient
+from spotify_audit.known_entities import run_pre_check, auto_promote_entity
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
@@ -570,6 +574,18 @@ def _resolve_artist_by_name(
     return ArtistInfo(artist_id=f"name:{name}", name=name)
 
 
+def _collect_quick_presence(artist: ArtistInfo):
+    """Build a minimal PlatformPresence from core artist data (for short-circuit path)."""
+    from spotify_audit.evidence import PlatformPresence
+    presence = PlatformPresence()
+    if not artist.artist_id.startswith("name:"):
+        presence.spotify = True
+    if artist.deezer_fans > 0:
+        presence.deezer = True
+        presence.deezer_fans = artist.deezer_fans
+    return presence
+
+
 def _lookup_external_data(
     artist_name: str,
     genius: GeniusClient,
@@ -666,6 +682,15 @@ def _lookup_external_data(
                 mb = mb_client.enrich(mb)
                 ext.musicbrainz_labels = mb.labels
                 ext.musicbrainz_urls = mb.urls
+                # Priority 5: Enhanced URL categorization
+                ext.musicbrainz_youtube_url = mb.youtube_url
+                ext.musicbrainz_bandcamp_url = mb.bandcamp_url
+                ext.musicbrainz_official_website = mb.official_website
+                ext.musicbrainz_social_urls = mb.social_urls
+                # Priority 7: ISRCs from MusicBrainz recordings
+                if mb.isrcs:
+                    ext.isrcs.extend(mb.isrcs)
+                    ext.isrc_registrants = mb.isrc_registrants
         except Exception as exc:
             logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 
@@ -780,6 +805,9 @@ def _run_audit(
     lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
     wikipedia_client = WikipediaClient(delay=0.2)
     songkick_client = SongkickClient(api_key=os.getenv("SONGKICK_API_KEY", ""), delay=0.5)
+    youtube_client = YouTubeClient(api_key=os.getenv("YOUTUBE_API_KEY", ""), delay=0.3)
+    deezer_ai_checker = DeezerAIChecker(delay=1.5)
+    pro_client = PRORegistryClient(delay=2.5)
 
     # Set up Claude if --deep and key available
     anthropic_client = None
@@ -802,6 +830,8 @@ def _run_audit(
         configured.append("Last.fm")
     if songkick_client.enabled:
         configured.append("Songkick")
+    if youtube_client.enabled:
+        configured.append("YouTube")
     if anthropic_client:
         configured.append("Claude (Deep)")
     console.print(f"APIs: [green]{', '.join(configured)}[/green]")
@@ -955,7 +985,37 @@ def _run_audit(
         )
 
         def _lookup_and_evaluate(key: str, artist: ArtistInfo) -> tuple[str, ExternalData, ArtistEvaluation, StandardScanResult]:
-            """Run external lookups + evidence eval for one artist (thread-safe)."""
+            """Run pre-check + external lookups + conditional enrichment + evidence eval."""
+
+            # Priority 1: Known entity pre-check (runs first)
+            pre = run_pre_check(
+                artist_name=artist.name,
+                labels=artist.labels,
+                contributors=artist.contributors,
+                entity_db=entity_db,
+            )
+            if pre.short_circuit:
+                # Short-circuit: skip all external lookups
+                ext = ExternalData(pre_seeded_evidence=pre.pre_seeded_evidence)
+                ev = ArtistEvaluation(
+                    artist_id=artist.artist_id,
+                    artist_name=artist.name,
+                    verdict=Verdict.LIKELY_ARTIFICIAL,
+                    confidence="high",
+                    platform_presence=_collect_quick_presence(artist),
+                    red_flags=[],
+                    green_flags=[],
+                    decision_path=[f"Pre-check: {pre.reason}"],
+                )
+                qr = quick_results[key]
+                sr = standard_scan_from_external(
+                    quick_result=qr, ext=ext,
+                    deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
+                    weights=config.standard_weights,
+                )
+                return (key, ext, ev, sr)
+
+            # Standard external lookups (concurrent)
             ext = _lookup_external_data(
                 artist_name=artist.name,
                 genius=genius_client,
@@ -966,7 +1026,81 @@ def _run_audit(
                 wikipedia=wikipedia_client,
                 songkick=songkick_client,
             )
+
+            # Inject pre-seeded evidence from pre-check
+            if pre.pre_seeded_evidence:
+                ext.pre_seeded_evidence = pre.pre_seeded_evidence
+
+            # Conditional enrichment: only for artists with red flags
+            # Run a preliminary flag count from pre-seeded evidence
+            has_red_flags = bool(pre.pfc_label_match) or any(
+                e.get("evidence_type") == "red_flag" for e in pre.pre_seeded_evidence
+            )
+
+            if has_red_flags:
+                # Priority 2: Deezer AI check
+                if hasattr(artist, 'deezer_fans') and artist.artist_id.startswith("deezer:"):
+                    try:
+                        deezer_id = int(artist.artist_id.split(":")[1]) if ":" in artist.artist_id else 0
+                        if deezer_id:
+                            ai_result = deezer_ai_checker.check_artist(deezer_id)
+                            if ai_result.checked:
+                                ext.deezer_ai_checked = True
+                                ext.deezer_ai_tagged_albums = ai_result.ai_tagged_albums
+                    except Exception as exc:
+                        logger.debug("Deezer AI check failed for '%s': %s", artist.name, exc)
+
+                # Priority 4: YouTube cross-reference
+                if youtube_client.enabled:
+                    try:
+                        yt_url = ext.musicbrainz_youtube_url or None
+                        yt_result = youtube_client.search_artist(artist.name, yt_url)
+                        if yt_result:
+                            ext.youtube_checked = True
+                            ext.youtube_channel_found = yt_result.channel_found
+                            ext.youtube_subscriber_count = yt_result.subscriber_count
+                            ext.youtube_video_count = yt_result.video_count
+                            ext.youtube_view_count = yt_result.view_count
+                            ext.youtube_music_videos_found = yt_result.music_videos_found
+                            ext.youtube_match_confidence = yt_result.match_confidence
+                    except Exception as exc:
+                        logger.debug("YouTube check failed for '%s': %s", artist.name, exc)
+
+                # Priority 3: PRO registry (only for moderate+ red flags)
+                if len([e for e in pre.pre_seeded_evidence
+                        if e.get("evidence_type") == "red_flag"
+                        and e.get("strength") in ("strong", "moderate")]) >= 1:
+                    try:
+                        pro_result = pro_client.search_writer(artist.name)
+                        ext.pro_checked = True
+                        ext.pro_found_bmi = pro_result.found_bmi
+                        ext.pro_found_ascap = pro_result.found_ascap
+                        ext.pro_works_count = pro_result.bmi_works_count + pro_result.ascap_works_count
+                        ext.pro_publishers = pro_result.publishers
+                        ext.pro_songwriter_registered = pro_result.songwriter_registered
+                        ext.pro_pfc_publisher_match = pro_result.pfc_publisher_match
+                        ext.pro_zero_songwriter_share = pro_result.zero_songwriter_share
+                    except Exception as exc:
+                        logger.debug("PRO registry check failed for '%s': %s", artist.name, exc)
+
+            # Run evidence evaluation
             ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
+
+            # Priority 1: Update entity DB after scan
+            if entity_db:
+                try:
+                    entity_db.increment_scan_count(
+                        artist.name,
+                        verdict=ev.verdict.value,
+                        confidence=ev.confidence,
+                    )
+                    auto_promote_entity(
+                        entity_db, artist.name,
+                        ev.verdict.value, ev.confidence,
+                    )
+                except Exception as exc:
+                    logger.debug("Entity DB update failed for '%s': %s", artist.name, exc)
+
             qr = quick_results[key]
             sr = standard_scan_from_external(
                 quick_result=qr,
