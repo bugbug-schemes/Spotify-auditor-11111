@@ -14,6 +14,10 @@ from dataclasses import dataclass, field
 
 import requests
 
+from spotify_audit.name_matching import (
+    pick_best_match, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 DISCOGS_API = "https://api.discogs.com"
@@ -64,27 +68,64 @@ class DiscogsClient:
         time.sleep(self.delay)
         return r.json()
 
-    def search_artist(self, name: str) -> DiscogsArtist | None:
-        """Search for an artist by name."""
+    def search_artist(self, name: str, discogs_id: str | None = None) -> DiscogsArtist | None:
+        """Search for an artist by name using shared name matching.
+
+        Args:
+            name: Artist name to search for.
+            discogs_id: Optional Discogs artist ID from MusicBrainz URL bridging.
+        """
+        # Platform ID bridging: skip search if we have a direct ID
+        if discogs_id:
+            try:
+                data = self._get(f"/artists/{discogs_id}")
+                if data.get("name"):
+                    log_match("Discogs", name, MatchResult(
+                        found=True, confidence=1.0,
+                        matched_name=data["name"],
+                        platform_id=str(discogs_id),
+                        match_method="platform_id",
+                    ))
+                    return DiscogsArtist(
+                        discogs_id=int(discogs_id),
+                        name=data["name"],
+                        url=data.get("resource_url", ""),
+                    )
+            except Exception as exc:
+                logger.debug("Discogs ID lookup failed for %s: %s", discogs_id, exc)
+
         data = self._get("/database/search", {"q": name, "type": "artist", "per_page": 5})
         results = data.get("results", [])
         if not results:
+            log_match("Discogs", name, MatchResult(found=False))
             return None
 
-        name_lower = name.lower().strip()
-        for r in results:
-            if r.get("title", "").lower().strip() == name_lower:
-                return DiscogsArtist(
-                    discogs_id=r.get("id", 0),
-                    name=r.get("title", ""),
-                    url=r.get("resource_url", ""),
-                )
-        # Fall back to first result
-        first = results[0]
+        candidates = [{
+            "name": r.get("title", ""),
+            "id": r.get("id", 0),
+            "url": r.get("resource_url", ""),
+        } for r in results]
+
+        match = pick_best_match(name, candidates)
+        log_match("Discogs", name, match)
+
+        if match.found and match.platform_id:
+            best = next(
+                (c for c in candidates if str(c["id"]) == match.platform_id),
+                candidates[0],
+            )
+            return DiscogsArtist(
+                discogs_id=best["id"],
+                name=best["name"],
+                url=best.get("url", ""),
+            )
+
+        # Fallback: return first result (Discogs sorts by relevance)
+        first = candidates[0]
         return DiscogsArtist(
-            discogs_id=first.get("id", 0),
-            name=first.get("title", ""),
-            url=first.get("resource_url", ""),
+            discogs_id=first["id"],
+            name=first["name"],
+            url=first.get("url", ""),
         )
 
     def enrich_profile(self, artist: DiscogsArtist) -> DiscogsArtist:

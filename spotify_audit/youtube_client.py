@@ -13,9 +13,12 @@ from __future__ import annotations
 import logging
 import time
 from dataclasses import dataclass, field
-from difflib import SequenceMatcher
 
 import requests
+
+from spotify_audit.name_matching import (
+    similarity_score, min_confidence_for_length, MatchResult, log_match,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -121,26 +124,36 @@ class YouTubeClient:
 
         if data:
             items = data.get("items", [])
-            name_lower = name.lower().strip()
+            min_conf = min_confidence_for_length(name)
+            # Use a somewhat lower bar for YouTube since channel names can differ
+            yt_threshold = max(min_conf - 0.08, 0.70)
+
             for item in items:
                 snippet = item.get("snippet", {})
                 channel_title = snippet.get("title", "")
                 channel_desc = snippet.get("description", "").lower()
 
-                # Fuzzy match channel name to artist name
-                ratio = SequenceMatcher(
-                    None, name_lower, channel_title.lower().strip()
-                ).ratio()
+                # Use shared similarity scoring
+                score = similarity_score(name, channel_title)
 
-                # Also accept if artist name appears in description
-                if name_lower in channel_desc:
-                    ratio = max(ratio, 0.8)
+                # Boost if artist name appears in description
+                if name.lower().strip() in channel_desc:
+                    score = max(score, 0.8)
 
-                if ratio >= 0.7:
+                if score >= yt_threshold:
                     result.channel_found = True
-                    result.channel_id = item.get("snippet", {}).get("channelId", "") or item.get("id", {}).get("channelId", "")
+                    result.channel_id = (
+                        item.get("snippet", {}).get("channelId", "")
+                        or item.get("id", {}).get("channelId", "")
+                    )
                     result.channel_name = channel_title
-                    result.match_confidence = ratio
+                    result.match_confidence = score
+                    log_match("YouTube", name, MatchResult(
+                        found=True, confidence=score,
+                        matched_name=channel_title,
+                        platform_id=result.channel_id,
+                        match_method="fuzzy",
+                    ))
                     break
 
         # Fetch channel statistics (1 unit)

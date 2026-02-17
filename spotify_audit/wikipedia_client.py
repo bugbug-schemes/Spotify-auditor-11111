@@ -19,6 +19,10 @@ from dataclasses import dataclass, field
 
 import requests
 
+from spotify_audit.name_matching import (
+    similarity_score, normalize_name, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 MEDIAWIKI_API = "https://en.wikipedia.org/w/api.php"
@@ -71,23 +75,58 @@ class WikipediaClient:
 
     # ------------------------------------------------------------------
 
-    def search_artist(self, name: str) -> WikipediaArticle | None:
+    def search_artist(self, name: str, wikipedia_title: str | None = None) -> WikipediaArticle | None:
         """Search Wikipedia for an artist page by name.
 
         Uses a two-pass approach:
         1. Direct page lookup (exact title match).
         2. Full-text search fallback with disambiguation filtering.
+
+        Args:
+            name: Artist name to search for.
+            wikipedia_title: Optional Wikipedia page title from MusicBrainz URL.
         """
         if not self.enabled:
             return None
 
+        # Platform ID bridging: direct lookup by known title
+        if wikipedia_title:
+            import urllib.parse
+            decoded = urllib.parse.unquote(wikipedia_title).replace("_", " ")
+            article = self._direct_lookup(decoded)
+            if article:
+                log_match("Wikipedia", name, MatchResult(
+                    found=True, confidence=1.0,
+                    matched_name=article.title,
+                    platform_id=str(article.page_id),
+                    match_method="platform_id",
+                ))
+                return article
+
         # Pass 1: direct page lookup — fastest, handles exact matches
         article = self._direct_lookup(name)
         if article:
+            log_match("Wikipedia", name, MatchResult(
+                found=True,
+                confidence=similarity_score(name, article.title),
+                matched_name=article.title,
+                platform_id=str(article.page_id),
+                match_method="exact",
+            ))
             return article
 
         # Pass 2: search API
         article = self._search_lookup(name)
+        if article:
+            log_match("Wikipedia", name, MatchResult(
+                found=True,
+                confidence=similarity_score(name, article.title),
+                matched_name=article.title,
+                platform_id=str(article.page_id),
+                match_method="fuzzy",
+            ))
+        else:
+            log_match("Wikipedia", name, MatchResult(found=False))
         return article
 
     def _direct_lookup(self, title: str) -> WikipediaArticle | None:

@@ -16,6 +16,11 @@ from dataclasses import dataclass, field
 
 import requests
 
+from spotify_audit.name_matching import (
+    normalize_name, similarity_score, min_confidence_for_length,
+    pick_best_match, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 MB_API = "https://musicbrainz.org/ws/2"
@@ -104,19 +109,45 @@ class MusicBrainzClient:
         return None
 
     def search_artist(self, name: str) -> MBArtist | None:
-        """Search for an artist by name."""
+        """Search for an artist by name using shared name matching."""
         data = self._get("/artist", {"query": f'artist:"{name}"', "limit": "5"})
         artists = data.get("artists", [])
         if not artists:
+            log_match("MusicBrainz", name, MatchResult(found=False))
             return None
 
-        # Prefer exact match
-        name_lower = name.lower().strip()
-        best = artists[0]
+        # Build candidate dicts for the matcher
+        candidates = []
         for a in artists:
-            if a.get("name", "").lower().strip() == name_lower:
-                best = a
-                break
+            aliases = [
+                al["name"] for al in a.get("aliases", [])
+                if isinstance(al, dict) and al.get("name")
+            ]
+            genres = [
+                t["name"] for t in a.get("tags", [])
+                if isinstance(t, dict) and t.get("name")
+            ]
+            candidates.append({
+                "name": a.get("name", ""),
+                "id": a.get("id", ""),
+                "aliases": aliases,
+                "genres": genres,
+                "country": a.get("country", ""),
+                "_raw": a,
+            })
+
+        match = pick_best_match(name, candidates)
+        log_match("MusicBrainz", name, match)
+
+        if match.found and match.platform_id:
+            # Find the original raw data for the matched candidate
+            best = next(
+                (c["_raw"] for c in candidates if c["id"] == match.platform_id),
+                artists[0],
+            )
+        else:
+            # Fallback to first result (MusicBrainz returns relevance-sorted)
+            best = artists[0]
 
         # Extract aliases from search result
         aliases = []

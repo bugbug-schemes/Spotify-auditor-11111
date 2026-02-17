@@ -14,6 +14,10 @@ from typing import Any
 
 import requests
 
+from spotify_audit.name_matching import (
+    pick_best_match, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 DEEZER_API = "https://api.deezer.com"
@@ -78,17 +82,30 @@ class DeezerClient:
         return data
 
     def search_artist(self, name: str) -> DeezerArtist | None:
-        """Search for an artist by name. Returns best match or None."""
+        """Search for an artist by name using shared name matching."""
         data = self._get("/search/artist", {"q": name, "limit": 5})
         results = data.get("data", [])
         if not results:
+            log_match("Deezer", name, MatchResult(found=False))
             return None
 
-        # Exact name match first, then best match
-        name_lower = name.lower().strip()
-        for r in results:
-            if r.get("name", "").lower().strip() == name_lower:
-                return self._parse_artist(r)
+        candidates = [{
+            "name": r.get("name", ""),
+            "id": r.get("id", 0),
+            "nb_fan": r.get("nb_fan", 0),
+        } for r in results]
+
+        match = pick_best_match(name, candidates)
+        log_match("Deezer", name, match)
+
+        if match.found and match.platform_id:
+            best_raw = next(
+                (r for r in results if str(r.get("id", 0)) == match.platform_id),
+                results[0],
+            )
+            return self._parse_artist(best_raw)
+
+        # Fallback: return first result (Deezer sorts by relevance)
         return self._parse_artist(results[0])
 
     def get_artist(self, deezer_id: int) -> DeezerArtist | None:

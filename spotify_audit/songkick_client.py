@@ -16,6 +16,10 @@ from dataclasses import dataclass, field
 
 import requests
 
+from spotify_audit.name_matching import (
+    pick_best_match, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 SONGKICK_API = "https://api.songkick.com/api/3.0"
@@ -74,13 +78,33 @@ class SongkickClient:
     # Search
     # ------------------------------------------------------------------
 
-    def search_artist(self, name: str) -> SongkickArtist | None:
-        """Search for an artist by name with two-pass matching."""
+    def search_artist(self, name: str, songkick_id: str | None = None) -> SongkickArtist | None:
+        """Search for an artist by name using shared name matching.
+
+        Args:
+            name: Artist name to search for.
+            songkick_id: Optional Songkick artist ID from MusicBrainz URL bridging.
+        """
         if not self.enabled:
             return None
 
+        # Platform ID bridging
+        if songkick_id:
+            data = self._get(f"/artists/{songkick_id}.json")
+            if data:
+                artist_data = data.get("resultsPage", {}).get("results", {}).get("artist", {})
+                if artist_data:
+                    log_match("Songkick", name, MatchResult(
+                        found=True, confidence=1.0,
+                        matched_name=artist_data.get("displayName", ""),
+                        platform_id=str(songkick_id),
+                        match_method="platform_id",
+                    ))
+                    return self._parse_artist(artist_data)
+
         data = self._get("/search/artists.json", {"query": name})
         if not data:
+            log_match("Songkick", name, MatchResult(found=False))
             return None
 
         results_page = data.get("resultsPage", {})
@@ -88,28 +112,24 @@ class SongkickClient:
         artists = results.get("artist", [])
 
         if not artists:
-            logger.debug("Songkick: 0 results for '%s'", name)
+            log_match("Songkick", name, MatchResult(found=False))
             return None
 
-        name_lower = name.lower().strip()
+        candidates = [{
+            "name": a.get("displayName", ""),
+            "id": a.get("id", 0),
+        } for a in artists]
 
-        # Pass 1: exact match
-        for a in artists:
-            if a.get("displayName", "").lower().strip() == name_lower:
-                return self._parse_artist(a)
+        match = pick_best_match(name, candidates)
+        log_match("Songkick", name, match)
 
-        # Pass 2: containment match
-        for a in artists:
-            a_name = a.get("displayName", "").lower().strip()
-            if name_lower in a_name or a_name in name_lower:
-                logger.debug("Songkick: partial match '%s' → '%s'", name, a.get("displayName"))
-                return self._parse_artist(a)
+        if match.found and match.platform_id:
+            best_raw = next(
+                (a for a in artists if str(a.get("id", 0)) == match.platform_id),
+                artists[0],
+            )
+            return self._parse_artist(best_raw)
 
-        logger.debug(
-            "Songkick: no name match for '%s' in %d results: %s",
-            name, len(artists),
-            [a.get("displayName", "") for a in artists[:5]],
-        )
         return None
 
     def _parse_artist(self, raw: dict) -> SongkickArtist:

@@ -610,14 +610,53 @@ def _lookup_external_data(
     ext = ExternalData()
     search_name = artist_name.split(",")[0].strip() if "," in artist_name else artist_name
 
-    # Each helper writes directly to ``ext``.  Every helper touches a disjoint
-    # set of fields so there is no data race.
+    # ------------------------------------------------------------------
+    # Phase 1: MusicBrainz first (provides platform IDs for other APIs)
+    # ------------------------------------------------------------------
+    from spotify_audit.name_matching import get_platform_ids_from_musicbrainz
+    platform_ids: dict[str, str] = {}
+
+    try:
+        mb = mb_client.search_artist(search_name)
+        if mb and mb.mbid:
+            ext.musicbrainz_found = True
+            ext.musicbrainz_type = mb.artist_type
+            ext.musicbrainz_country = mb.country
+            ext.musicbrainz_begin_date = mb.begin_date
+            ext.musicbrainz_gender = mb.gender
+            ext.musicbrainz_area = mb.area
+            ext.musicbrainz_aliases = mb.aliases
+            ext.musicbrainz_isnis = mb.isnis
+            ext.musicbrainz_ipis = mb.ipis
+            ext.musicbrainz_genres = mb.genres
+            mb = mb_client.enrich(mb)
+            ext.musicbrainz_labels = mb.labels
+            ext.musicbrainz_urls = mb.urls
+            # Priority 5: Enhanced URL categorization
+            ext.musicbrainz_youtube_url = mb.youtube_url
+            ext.musicbrainz_bandcamp_url = mb.bandcamp_url
+            ext.musicbrainz_official_website = mb.official_website
+            ext.musicbrainz_social_urls = mb.social_urls
+            # Priority 7: ISRCs from MusicBrainz recordings
+            if mb.isrcs:
+                ext.isrcs.extend(mb.isrcs)
+                ext.isrc_registrants = mb.isrc_registrants
+            # Extract platform IDs for bridging to other APIs
+            if mb.urls:
+                platform_ids = get_platform_ids_from_musicbrainz(mb.urls)
+                logger.debug("MusicBrainz platform IDs for '%s': %s", search_name, platform_ids)
+    except Exception as exc:
+        logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
+
+    # ------------------------------------------------------------------
+    # Phase 2: All other APIs concurrently (using platform IDs when available)
+    # ------------------------------------------------------------------
 
     def _lookup_genius() -> None:
         if not genius.enabled:
             return
         try:
-            ga = genius.search_artist(search_name)
+            ga = genius.search_artist(search_name, genius_id=platform_ids.get("genius"))
             if ga:
                 ext.genius_found = True
                 ga = genius.enrich(ga)
@@ -634,7 +673,7 @@ def _lookup_external_data(
 
     def _lookup_discogs() -> None:
         try:
-            da = discogs.search_artist(search_name)
+            da = discogs.search_artist(search_name, discogs_id=platform_ids.get("discogs"))
             if da:
                 ext.discogs_found = True
                 da = discogs.enrich(da)
@@ -656,7 +695,7 @@ def _lookup_external_data(
         if not setlistfm.enabled:
             return
         try:
-            sa = setlistfm.search_artist(search_name)
+            sa = setlistfm.search_artist(search_name, setlistfm_url=platform_ids.get("setlistfm"))
             if sa:
                 ext.setlistfm_found = True
                 sa = setlistfm.get_setlist_count(sa)
@@ -670,40 +709,11 @@ def _lookup_external_data(
         except Exception as exc:
             logger.warning("Setlist.fm lookup failed for '%s': %s", search_name, exc)
 
-    def _lookup_musicbrainz() -> None:
-        try:
-            mb = mb_client.search_artist(search_name)
-            if mb and mb.mbid:
-                ext.musicbrainz_found = True
-                ext.musicbrainz_type = mb.artist_type
-                ext.musicbrainz_country = mb.country
-                ext.musicbrainz_begin_date = mb.begin_date
-                ext.musicbrainz_gender = mb.gender
-                ext.musicbrainz_area = mb.area
-                ext.musicbrainz_aliases = mb.aliases
-                ext.musicbrainz_isnis = mb.isnis
-                ext.musicbrainz_ipis = mb.ipis
-                ext.musicbrainz_genres = mb.genres
-                mb = mb_client.enrich(mb)
-                ext.musicbrainz_labels = mb.labels
-                ext.musicbrainz_urls = mb.urls
-                # Priority 5: Enhanced URL categorization
-                ext.musicbrainz_youtube_url = mb.youtube_url
-                ext.musicbrainz_bandcamp_url = mb.bandcamp_url
-                ext.musicbrainz_official_website = mb.official_website
-                ext.musicbrainz_social_urls = mb.social_urls
-                # Priority 7: ISRCs from MusicBrainz recordings
-                if mb.isrcs:
-                    ext.isrcs.extend(mb.isrcs)
-                    ext.isrc_registrants = mb.isrc_registrants
-        except Exception as exc:
-            logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
-
     def _lookup_lastfm() -> None:
         if not (lastfm and lastfm.enabled):
             return
         try:
-            la = lastfm.get_artist_info(search_name)
+            la = lastfm.get_artist_info(search_name, lastfm_name=platform_ids.get("lastfm"))
             if la:
                 ext.lastfm_found = True
                 la = lastfm.enrich(la)
@@ -722,7 +732,7 @@ def _lookup_external_data(
         if not (wikipedia and wikipedia.enabled):
             return
         try:
-            wa = wikipedia.search_artist(search_name)
+            wa = wikipedia.search_artist(search_name, wikipedia_title=platform_ids.get("wikipedia"))
             if wa:
                 ext.wikipedia_found = True
                 wa = wikipedia.enrich(wa)
@@ -740,7 +750,7 @@ def _lookup_external_data(
         if not (songkick and songkick.enabled):
             return
         try:
-            sa = songkick.search_artist(search_name)
+            sa = songkick.search_artist(search_name, songkick_id=platform_ids.get("songkick"))
             if sa:
                 ext.songkick_found = True
                 sa = songkick.enrich(sa)
@@ -756,13 +766,12 @@ def _lookup_external_data(
         except Exception as exc:
             logger.debug("Songkick lookup failed for '%s': %s", search_name, exc)
 
-    # Fire all API lookups concurrently — each writes to disjoint ext fields
-    with ThreadPoolExecutor(max_workers=8, thread_name_prefix="api") as pool:
+    # Fire remaining API lookups concurrently (MusicBrainz already done in Phase 1)
+    with ThreadPoolExecutor(max_workers=7, thread_name_prefix="api") as pool:
         futures = [
             pool.submit(_lookup_genius),
             pool.submit(_lookup_discogs),
             pool.submit(_lookup_setlistfm),
-            pool.submit(_lookup_musicbrainz),
             pool.submit(_lookup_lastfm),
             pool.submit(_lookup_wikipedia),
             pool.submit(_lookup_songkick),

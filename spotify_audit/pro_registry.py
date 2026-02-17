@@ -19,6 +19,10 @@ from urllib.parse import quote_plus
 import requests
 from bs4 import BeautifulSoup
 
+from spotify_audit.name_matching import (
+    normalize_name, generate_candidates, log_match, MatchResult,
+)
+
 logger = logging.getLogger(__name__)
 
 BMI_SEARCH = "https://repertoire.bmi.com/Search/Search"
@@ -52,18 +56,47 @@ class PRORegistryClient:
         )
 
     def search_writer(self, name: str) -> PRORegistration:
-        """Search both BMI and ASCAP for a songwriter/artist name."""
+        """Search both BMI and ASCAP for a songwriter/artist name.
+
+        Tries the original name first, then the reversed "Last, First" form
+        since ASCAP/BMI store names in that format.
+        """
         result = PRORegistration()
 
-        # BMI search
-        self._search_bmi(name, result)
+        # Generate search variants including "Last, First" reversal
+        candidates = generate_candidates(name)
+        # Also add upper-case version (BMI uses all-caps)
+        candidates.append(normalize_name(name).upper())
+
+        # Try each variant until we get a hit on BMI
+        for variant in candidates[:3]:  # Limit to 3 variants (rate limiting)
+            self._search_bmi(variant, result)
+            if result.found_bmi:
+                break
+            time.sleep(self.delay)
+
         time.sleep(self.delay)
 
-        # ASCAP search
+        # ASCAP search with first variant
         self._search_ascap(name, result)
+        # Try reversed name if initial ASCAP search failed
+        if not result.found_ascap:
+            words = normalize_name(name).split()
+            if len(words) == 2:
+                reversed_name = f"{words[1]} {words[0]}"
+                time.sleep(self.delay)
+                self._search_ascap(reversed_name, result)
 
         if result.found_bmi or result.found_ascap:
             result.songwriter_registered = True
+            log_match("PRO Registry", name, MatchResult(
+                found=True,
+                confidence=1.0 if result.found_bmi and result.found_ascap else 0.85,
+                matched_name=name,
+                match_method="exact",
+            ))
+        else:
+            log_match("PRO Registry", name, MatchResult(found=False))
 
         # Cross-reference discovered publishers against PFC blocklist
         if result.publishers:

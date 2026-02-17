@@ -143,61 +143,19 @@ def _lookup_external_data(
     wikipedia: "WikipediaClient | None" = None,
     songkick: "SongkickClient | None" = None,
 ) -> ExternalData:
-    """Run all Standard-tier API lookups and return aggregated results."""
+    """Run all Standard-tier API lookups and return aggregated results.
+
+    Phase 1: MusicBrainz runs first to extract platform IDs for bridging.
+    Phase 2: All other APIs run sequentially, using platform IDs when available.
+    """
     ext = ExternalData()
     search_name = artist_name.split(",")[0].strip() if "," in artist_name else artist_name
 
-    if genius.enabled:
-        try:
-            ga = genius.search_artist(search_name)
-            if ga:
-                ext.genius_found = True
-                ga = genius.enrich(ga)
-                ext.genius_song_count = ga.song_count
-                ext.genius_description = ga.description_snippet
-                ext.genius_facebook_name = ga.facebook_name
-                ext.genius_instagram_name = ga.instagram_name
-                ext.genius_twitter_name = ga.twitter_name
-                ext.genius_is_verified = ga.is_verified
-                ext.genius_followers_count = ga.followers_count
-                ext.genius_alternate_names = ga.alternate_names
-        except Exception as exc:
-            logger.debug("Genius lookup failed for '%s': %s", search_name, exc)
-
-    try:
-        da = discogs.search_artist(search_name)
-        if da:
-            ext.discogs_found = True
-            da = discogs.enrich(da)
-            ext.discogs_physical_releases = da.physical_releases
-            ext.discogs_digital_releases = da.digital_only_releases
-            ext.discogs_total_releases = da.total_releases
-            ext.discogs_formats = da.formats
-            ext.discogs_labels = da.labels
-            ext.discogs_profile = da.profile
-            ext.discogs_realname = da.realname
-            ext.discogs_social_urls = da.social_urls
-            ext.discogs_members = da.members
-            ext.discogs_groups = da.groups
-            ext.discogs_data_quality = da.data_quality
-    except Exception as exc:
-        logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
-
-    if setlistfm.enabled:
-        try:
-            sa = setlistfm.search_artist(search_name)
-            if sa:
-                ext.setlistfm_found = True
-                sa = setlistfm.get_setlist_count(sa)
-                ext.setlistfm_total_shows = sa.total_setlists
-                ext.setlistfm_first_show = sa.first_show_date
-                ext.setlistfm_last_show = sa.last_show_date
-                ext.setlistfm_venues = sa.top_venues
-                ext.setlistfm_venue_cities = sa.venue_cities
-                ext.setlistfm_venue_countries = sa.venue_countries
-                ext.setlistfm_tour_names = sa.tour_names
-        except Exception as exc:
-            logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
+    # ------------------------------------------------------------------
+    # Phase 1: MusicBrainz first (provides platform IDs for other APIs)
+    # ------------------------------------------------------------------
+    from spotify_audit.name_matching import get_platform_ids_from_musicbrainz
+    platform_ids: dict[str, str] = {}
 
     try:
         mb = mb_client.search_artist(search_name)
@@ -220,16 +178,76 @@ def _lookup_external_data(
             ext.musicbrainz_bandcamp_url = mb.bandcamp_url
             ext.musicbrainz_official_website = mb.official_website
             ext.musicbrainz_social_urls = mb.social_urls
-            # Priority 7: ISRCs
+            # Priority 7: ISRCs from MusicBrainz recordings
             if mb.isrcs:
                 ext.isrcs.extend(mb.isrcs)
                 ext.isrc_registrants = mb.isrc_registrants
+            # Extract platform IDs for bridging to other APIs
+            if mb.urls:
+                platform_ids = get_platform_ids_from_musicbrainz(mb.urls)
+                logger.debug("MusicBrainz platform IDs for '%s': %s", search_name, platform_ids)
     except Exception as exc:
         logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 
+    # ------------------------------------------------------------------
+    # Phase 2: Remaining APIs (using platform IDs when available)
+    # ------------------------------------------------------------------
+
+    if genius.enabled:
+        try:
+            ga = genius.search_artist(search_name, genius_id=platform_ids.get("genius"))
+            if ga:
+                ext.genius_found = True
+                ga = genius.enrich(ga)
+                ext.genius_song_count = ga.song_count
+                ext.genius_description = ga.description_snippet
+                ext.genius_facebook_name = ga.facebook_name
+                ext.genius_instagram_name = ga.instagram_name
+                ext.genius_twitter_name = ga.twitter_name
+                ext.genius_is_verified = ga.is_verified
+                ext.genius_followers_count = ga.followers_count
+                ext.genius_alternate_names = ga.alternate_names
+        except Exception as exc:
+            logger.debug("Genius lookup failed for '%s': %s", search_name, exc)
+
+    try:
+        da = discogs.search_artist(search_name, discogs_id=platform_ids.get("discogs"))
+        if da:
+            ext.discogs_found = True
+            da = discogs.enrich(da)
+            ext.discogs_physical_releases = da.physical_releases
+            ext.discogs_digital_releases = da.digital_only_releases
+            ext.discogs_total_releases = da.total_releases
+            ext.discogs_formats = da.formats
+            ext.discogs_labels = da.labels
+            ext.discogs_profile = da.profile
+            ext.discogs_realname = da.realname
+            ext.discogs_social_urls = da.social_urls
+            ext.discogs_members = da.members
+            ext.discogs_groups = da.groups
+            ext.discogs_data_quality = da.data_quality
+    except Exception as exc:
+        logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
+
+    if setlistfm.enabled:
+        try:
+            sa = setlistfm.search_artist(search_name, setlistfm_url=platform_ids.get("setlistfm"))
+            if sa:
+                ext.setlistfm_found = True
+                sa = setlistfm.get_setlist_count(sa)
+                ext.setlistfm_total_shows = sa.total_setlists
+                ext.setlistfm_first_show = sa.first_show_date
+                ext.setlistfm_last_show = sa.last_show_date
+                ext.setlistfm_venues = sa.top_venues
+                ext.setlistfm_venue_cities = sa.venue_cities
+                ext.setlistfm_venue_countries = sa.venue_countries
+                ext.setlistfm_tour_names = sa.tour_names
+        except Exception as exc:
+            logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
+
     if lastfm and lastfm.enabled:
         try:
-            la = lastfm.get_artist_info(search_name)
+            la = lastfm.get_artist_info(search_name, lastfm_name=platform_ids.get("lastfm"))
             if la:
                 ext.lastfm_found = True
                 la = lastfm.enrich(la)
@@ -246,7 +264,7 @@ def _lookup_external_data(
 
     if wikipedia and wikipedia.enabled:
         try:
-            wa = wikipedia.search_artist(search_name)
+            wa = wikipedia.search_artist(search_name, wikipedia_title=platform_ids.get("wikipedia"))
             if wa:
                 ext.wikipedia_found = True
                 wa = wikipedia.enrich(wa)
@@ -262,7 +280,7 @@ def _lookup_external_data(
 
     if songkick and songkick.enabled:
         try:
-            sa = songkick.search_artist(search_name)
+            sa = songkick.search_artist(search_name, songkick_id=platform_ids.get("songkick"))
             if sa:
                 ext.songkick_found = True
                 sa = songkick.enrich(sa)
