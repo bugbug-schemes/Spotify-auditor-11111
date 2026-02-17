@@ -34,7 +34,6 @@ from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistRepo
 from spotify_audit.scoring import (
     finalize_artist_report,
     build_playlist_report,
-    should_escalate_to_standard,
     should_escalate_to_deep,
     ArtistReport,
     PlaylistReport,
@@ -228,10 +227,12 @@ def _lookup_external_data(
 
 def run_audit(
     playlist_url: str,
-    max_tier: str = "quick",
+    deep: bool = False,
     config: Optional[AuditConfig] = None,
     on_progress: Optional[ProgressCallback] = None,
     use_cache: bool = True,
+    # Legacy parameter — maps to deep=True when value is "deep"
+    max_tier: str | None = None,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
     """Run the full audit workflow. Returns (PlaylistReport, BlocklistReport).
 
@@ -239,15 +240,21 @@ def run_audit(
     ----------
     playlist_url : str
         Spotify playlist URL.
-    max_tier : str
-        Maximum analysis tier (quick / standard / deep).
+    deep : bool
+        Whether to run Claude AI deep analysis (requires ANTHROPIC_API_KEY).
     config : AuditConfig, optional
         Pre-built config. Loaded from env if not given.
     on_progress : callable, optional
         Called with (phase, current, total, message) for status updates.
     use_cache : bool
         Whether to use the SQLite cache.
+    max_tier : str, optional
+        Legacy parameter. If "deep", sets deep=True.
     """
+    # Legacy compatibility: convert max_tier to deep flag
+    if max_tier is not None:
+        deep = (max_tier == "deep")
+
     if config is None:
         config = build_config()
     progress = on_progress or _noop_progress
@@ -256,7 +263,7 @@ def run_audit(
     cache = Cache(config.db_path, config.cache_ttl_days) if use_cache else None
 
     try:
-        return _run_audit_core(client, cache, config, playlist_url, max_tier, progress)
+        return _run_audit_core(client, cache, config, playlist_url, deep, progress)
     finally:
         client.close()
         if cache:
@@ -268,10 +275,10 @@ def _run_audit_core(
     cache: Cache | None,
     config: AuditConfig,
     playlist_url: str,
-    max_tier: str,
+    deep: bool,
     progress: ProgressCallback,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
-    """Core workflow extracted from cli._run_audit, using callbacks instead of Rich."""
+    """Core workflow: fetch playlist -> collect evidence -> optional deep analysis."""
 
     # 1. Fetch playlist
     progress("fetch", 0, 1, "Fetching playlist from Spotify...")
@@ -296,7 +303,7 @@ def _run_audit_core(
     lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
 
     anthropic_client = None
-    if config.anthropic_api_key and max_tier == "deep":
+    if config.anthropic_api_key and deep:
         try:
             from anthropic import Anthropic
             anthropic_client = Anthropic(api_key=config.anthropic_api_key)
@@ -445,9 +452,9 @@ def _run_audit_core(
                 ev = evaluate_artist(minimal, entity_db=entity_db)
                 evaluations[key] = ev
 
-    # 5. Deep tier
+    # 5. Deep analysis (optional — Claude AI)
     deep_count = 0
-    if anthropic_client and max_tier == "deep":
+    if anthropic_client and deep:
         deep_candidates = []
         for key in quick_results:
             ev = evaluations.get(key)
@@ -478,8 +485,8 @@ def _run_audit_core(
                 deep_results = run_deep_analysis_batch(
                     anthropic_client, batch_input, on_progress=_deep_progress,
                 )
-                for key, deep in deep_results.items():
-                    all_deep_ev = deep.bio_analysis + deep.image_analysis + deep.synthesis
+                for key, deep_result in deep_results.items():
+                    all_deep_ev = deep_result.bio_analysis + deep_result.image_analysis + deep_result.synthesis
                     if all_deep_ev:
                         ev = evaluations.get(key)
                         if ev:
@@ -512,7 +519,7 @@ def _run_audit_core(
                 scan_id = entity_db.start_scan(
                     playlist_id=meta.playlist_id,
                     playlist_name=meta.name,
-                    scan_tier=max_tier,
+                    scan_tier="deep" if deep else "standard",
                     artist_count=len(artist_reports),
                 )
                 for report in artist_reports:

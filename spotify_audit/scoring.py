@@ -375,9 +375,6 @@ def build_playlist_report(
     return pr
 
 
-def should_escalate_to_standard(score: int, config: AuditConfig) -> bool:
-    return score > config.escalate_to_standard
-
-
 def should_escalate_to_deep(score: int, config: AuditConfig) -> bool:
+    """Decide if an artist should get Claude deep analysis based on score."""
     return score > config.escalate_to_deep

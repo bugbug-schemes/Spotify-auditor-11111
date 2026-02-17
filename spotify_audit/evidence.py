@@ -931,6 +931,7 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
         ))
 
     # Check contributors against PFC songwriter blocklist
+    pfc_writers = pfc_songwriters()
     if artist.contributors and pfc_writers:
         matched_writers = [c for c in artist.contributors if c.lower() in pfc_writers]
         if matched_writers:

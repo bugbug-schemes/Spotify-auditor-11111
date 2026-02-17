@@ -40,7 +40,6 @@ from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistRepo
 from spotify_audit.scoring import (
     finalize_artist_report,
     build_playlist_report,
-    should_escalate_to_standard,
     should_escalate_to_deep,
     ArtistReport,
     PlaylistReport,
@@ -427,10 +426,8 @@ def _render_blocklist_report(bl_report: BlocklistReport) -> None:
 @click.command()
 @click.argument("playlist_url")
 @click.option(
-    "--tier",
-    type=click.Choice(["quick", "standard", "deep"], case_sensitive=False),
-    default="quick",
-    help="Maximum analysis tier. 'quick' = Spotify only; higher tiers auto-escalate.",
+    "--deep", is_flag=True,
+    help="Enable Claude AI deep analysis (requires ANTHROPIC_API_KEY).",
 )
 @click.option(
     "--format", "fmt",
@@ -448,7 +445,7 @@ def _render_blocklist_report(bl_report: BlocklistReport) -> None:
 @click.option("--no-cache", is_flag=True, help="Bypass the SQLite cache.")
 def main(
     playlist_url: str,
-    tier: str,
+    deep: bool,
     fmt: str,
     output: str | None,
     verbose: bool,
@@ -456,7 +453,8 @@ def main(
 ) -> None:
     """Analyze a Spotify playlist for AI-generated, ghost, and fake artists.
 
-    No API keys required — data is scraped from Spotify's public embed endpoints.
+    Collects evidence from Spotify, Deezer, MusicBrainz, Genius, Discogs,
+    Setlist.fm, and Last.fm. Use --deep for additional Claude AI analysis.
     """
     logging.basicConfig(
         level=logging.DEBUG if verbose else logging.WARNING,
@@ -468,7 +466,7 @@ def main(
     cache = None if no_cache else Cache(config.db_path, config.cache_ttl_days)
 
     try:
-        playlist_report, blocklist_report = _run_audit(client, cache, config, playlist_url, tier)
+        playlist_report, blocklist_report = _run_audit(client, cache, config, playlist_url, deep)
     finally:
         client.close()
         if cache:
@@ -706,7 +704,7 @@ def _run_audit(
     cache: Cache | None,
     config: AuditConfig,
     playlist_url: str,
-    max_tier: str,
+    deep: bool = False,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
     """Core workflow: fetch playlist -> resolve artists -> external lookups -> evidence evaluation."""
 
@@ -737,14 +735,14 @@ def _run_audit(
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
     lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
 
-    # Set up Claude (Deep tier) if key available
+    # Set up Claude if --deep and key available
     anthropic_client = None
-    if config.anthropic_api_key and max_tier == "deep":
+    if config.anthropic_api_key and deep:
         try:
             from anthropic import Anthropic
             anthropic_client = Anthropic(api_key=config.anthropic_api_key)
         except ImportError:
-            logger.warning("anthropic package not installed — Deep tier unavailable")
+            logger.warning("anthropic package not installed — deep analysis unavailable")
 
     # Show which APIs are configured
     configured = ["Deezer", "MusicBrainz"]  # always available (no key needed)
@@ -764,7 +762,7 @@ def _run_audit(
                     or setlistfm_client.enabled)
     if not any_external:
         console.print(
-            "[yellow]No Standard-tier API keys configured. "
+            "[yellow]No external API keys configured. "
             "Set GENIUS_TOKEN, DISCOGS_TOKEN, SETLISTFM_API_KEY in .env "
             "for richer evidence.[/yellow]"
         )
@@ -968,9 +966,9 @@ def _run_audit(
                 ev = evaluate_artist(minimal, entity_db=entity_db)
                 evaluations[key] = ev
 
-    # 5. Deep tier — Claude bio + image analysis
+    # 5. Deep analysis — Claude bio + image analysis (optional)
     deep_count = 0
-    if anthropic_client and max_tier == "deep":
+    if anthropic_client and deep:
         # Find artists to deep-analyze: those scored Suspicious or worse,
         # or all artists if the playlist is small enough
         deep_candidates = []
@@ -1026,20 +1024,10 @@ def _run_audit(
                     logger.warning("Batch deep analysis failed: %s", exc)
 
             console.print(f"[magenta]-> Deep analysis completed for {deep_count} artists[/magenta]")
-    elif max_tier == "deep" and not anthropic_client:
-        # Count how many would have escalated
-        escalated_deep = sum(
-            1 for key, qr in quick_results.items()
-            if should_escalate_to_deep(
-                standard_results[key].score if key in standard_results else qr.score,
-                config,
-            )
+    elif deep and not anthropic_client:
+        console.print(
+            "[yellow]--deep requested but ANTHROPIC_API_KEY not set in .env[/yellow]"
         )
-        if escalated_deep:
-            console.print(
-                f"[yellow]-> {escalated_deep} artists need Deep analysis but "
-                f"ANTHROPIC_API_KEY not set in .env[/yellow]"
-            )
 
     # 6. Build reports
     artist_reports: list[ArtistReport] = []
@@ -1065,7 +1053,7 @@ def _run_audit(
                 scan_id = entity_db.start_scan(
                     playlist_id=meta.playlist_id,
                     playlist_name=meta.name,
-                    scan_tier=max_tier,
+                    scan_tier="deep" if deep else "standard",
                     artist_count=len(artist_reports),
                 )
                 for report in artist_reports:

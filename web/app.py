@@ -49,7 +49,7 @@ def _evict_old_scans() -> None:
         scans.popitem(last=False)
 
 
-def _run_scan_background(scan_id: str, playlist_url: str, tier: str) -> None:
+def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
     """Background thread: run the audit and store results."""
     global _active_scan_count
 
@@ -65,7 +65,7 @@ def _run_scan_background(scan_id: str, playlist_url: str, tier: str) -> None:
         config = build_config()
         playlist_report, blocklist_report = run_audit(
             playlist_url=playlist_url,
-            max_tier=tier,
+            deep=deep,
             config=config,
             on_progress=on_progress,
         )
@@ -101,7 +101,7 @@ def start_scan():
 
     data = request.get_json(silent=True) or {}
     playlist_url = data.get("url", "").strip()
-    tier = data.get("tier", "quick").strip().lower()
+    deep = bool(data.get("deep", False))
 
     if not playlist_url:
         return jsonify({"error": "Please provide a playlist URL"}), 400
@@ -109,9 +109,6 @@ def start_scan():
     # Accept various Spotify URL formats
     if "spotify.com" not in playlist_url and "spotify:" not in playlist_url:
         return jsonify({"error": "Please provide a valid Spotify playlist URL"}), 400
-
-    if tier not in ("quick", "standard", "deep"):
-        tier = "quick"
 
     # Check concurrent scan limit
     with _scans_lock:
@@ -140,7 +137,7 @@ def start_scan():
 
     thread = threading.Thread(
         target=_run_scan_background,
-        args=(scan_id, playlist_url, tier),
+        args=(scan_id, playlist_url, deep),
         daemon=True,
     )
     thread.start()

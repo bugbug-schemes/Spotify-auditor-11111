@@ -56,10 +56,9 @@ def score_label(score: int) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Escalation thresholds
+# Deep analysis threshold — artists scoring above this get Claude analysis
 # ---------------------------------------------------------------------------
-ESCALATE_TO_STANDARD = 30   # Quick score > this -> run Standard
-ESCALATE_TO_DEEP = 50       # Standard score > this -> run Deep
+ESCALATE_TO_DEEP = 50       # Score > this -> run Deep analysis
 
 
 # ---------------------------------------------------------------------------
@@ -132,7 +131,6 @@ class AuditConfig:
     standard_weights: StandardWeights = field(default_factory=StandardWeights)
     deep_weights: DeepWeights = field(default_factory=DeepWeights)
 
-    escalate_to_standard: int = ESCALATE_TO_STANDARD
     escalate_to_deep: int = ESCALATE_TO_DEEP
 
     cache_ttl_days: int = 7

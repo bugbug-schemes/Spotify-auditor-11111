@@ -32,12 +32,14 @@
   .url-input:focus { border-color: #1DB954; }
   .url-input::placeholder { color: #555; }
 
-  .form-row { display: flex; gap: 0.8rem; margin-top: 1rem; align-items: end; }
-  .tier-group { flex: 0 0 auto; }
-  .tier-select {
-    padding: 0.7rem 0.8rem; border-radius: 8px;
-    border: 1px solid #444; background: #111; color: #fff;
-    font-size: 0.9rem; cursor: pointer;
+  .form-row { display: flex; gap: 0.8rem; margin-top: 1rem; align-items: center; }
+  .deep-group { flex: 0 0 auto; }
+  .deep-label {
+    display: flex; align-items: center; gap: 0.5rem;
+    color: #aaa; font-size: 0.85rem; cursor: pointer;
+  }
+  .deep-label input[type="checkbox"] {
+    accent-color: #1DB954; width: 16px; height: 16px; cursor: pointer;
   }
 
   .scan-btn {
@@ -122,13 +124,10 @@
     <input class="url-input" id="url" type="text"
            placeholder="https://open.spotify.com/playlist/..." autofocus>
     <div class="form-row">
-      <div class="tier-group">
-        <label class="form-label" for="tier">Analysis Tier</label>
-        <select class="tier-select" id="tier">
-          <option value="quick">Quick</option>
-          <option value="standard" selected>Standard</option>
-          <option value="deep">Deep</option>
-        </select>
+      <div class="deep-group">
+        <label class="deep-label">
+          <input type="checkbox" id="deep"> Enable Claude AI deep analysis
+        </label>
       </div>
       <button class="scan-btn" id="scanBtn" onclick="startScan()">Scan Playlist</button>
     </div>
@@ -161,7 +160,7 @@
 </div>
 
 <div class="footer">
-  Spotify Audit — No Spotify API key required. Data sourced from public endpoints + 7 music APIs.
+  Spotify Audit — Data sourced from 7 music APIs. Optional Claude AI deep analysis.
 </div>
 
 <script>
@@ -180,7 +179,7 @@ const PHASE_LABELS = {
 
 function startScan() {
   const url = document.getElementById('url').value.trim();
-  const tier = document.getElementById('tier').value;
+  const deep = document.getElementById('deep').checked;
 
   if (!url) {
     showError('Please enter a Spotify playlist URL.');
@@ -196,7 +195,7 @@ function startScan() {
   fetch('/api/scan', {
     method: 'POST',
     headers: {'Content-Type': 'application/json'},
-    body: JSON.stringify({url: url, tier: tier}),
+    body: JSON.stringify({url: url, deep: deep}),
   })
   .then(r => r.json())
   .then(data => {

@@ -91,14 +91,12 @@ class TestWeights:
 class TestAuditConfig:
     def test_defaults(self):
         config = AuditConfig()
-        assert config.escalate_to_standard == 30
         assert config.escalate_to_deep == 50
         assert config.cache_ttl_days == 7
         assert config.max_retries == 5
 
     def test_custom_config(self):
-        config = AuditConfig(escalate_to_standard=40, escalate_to_deep=60)
-        assert config.escalate_to_standard == 40
+        config = AuditConfig(escalate_to_deep=60)
         assert config.escalate_to_deep == 60
 
 
@@ -126,17 +124,17 @@ class TestThreatCategories:
 class TestBlocklists:
     def test_load_existing_blocklist(self):
         pfc = pfc_distributors()
-        assert isinstance(pfc, list)
+        assert isinstance(pfc, frozenset)
         assert len(pfc) > 0
 
     def test_load_known_ai(self):
         ai = known_ai_artists()
-        assert isinstance(ai, list)
+        assert isinstance(ai, frozenset)
         assert len(ai) > 0
 
     def test_load_pfc_songwriters(self):
         writers = pfc_songwriters()
-        assert isinstance(writers, list)
+        assert isinstance(writers, frozenset)
 
     def test_load_nonexistent_blocklist(self):
         result = load_blocklist("does_not_exist")

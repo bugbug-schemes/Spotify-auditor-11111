@@ -18,7 +18,6 @@ from spotify_audit.scoring import (
     _infer_threat_category,
     finalize_artist_report,
     build_playlist_report,
-    should_escalate_to_standard,
     should_escalate_to_deep,
 )
 from spotify_audit.config import AuditConfig
@@ -322,12 +321,6 @@ class TestBuildPlaylistReport:
 # ---------------------------------------------------------------------------
 
 class TestEscalation:
-    def test_escalate_to_standard(self):
-        config = AuditConfig()
-        assert should_escalate_to_standard(31, config) is True
-        assert should_escalate_to_standard(30, config) is False
-        assert should_escalate_to_standard(29, config) is False
-
     def test_escalate_to_deep(self):
         config = AuditConfig()
         assert should_escalate_to_deep(51, config) is True

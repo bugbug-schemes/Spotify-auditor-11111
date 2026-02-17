@@ -207,7 +207,7 @@ class TestLabelEvidence:
         pfc = pfc_distributors()
         if not pfc:
             pytest.skip("No PFC distributors in blocklist")
-        artist = ArtistInfo(artist_id="a", name="A", labels=[pfc[0]])
+        artist = ArtistInfo(artist_id="a", name="A", labels=[next(iter(pfc))])
         ev = _collect_label_evidence(artist)
         reds = [e for e in ev if e.evidence_type == "red_flag" and "PFC" in e.finding]
         assert len(reds) >= 1
@@ -234,7 +234,7 @@ class TestNameEvidence:
         ai_names = known_ai_artists()
         if not ai_names:
             pytest.skip("No known AI artists in blocklist")
-        artist = ArtistInfo(artist_id="a", name=ai_names[0])
+        artist = ArtistInfo(artist_id="a", name=next(iter(ai_names)))
         ev = _collect_name_evidence(artist)
         reds = [e for e in ev if e.evidence_type == "red_flag"]
         assert any(e.strength == "strong" for e in reds)
