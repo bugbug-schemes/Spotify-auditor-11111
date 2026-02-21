@@ -19,8 +19,11 @@ from spotify_audit.entity_db import (
 
 @pytest.fixture()
 def db(tmp_path):
-    """Fresh in-memory EntityDB."""
-    return EntityDB(tmp_path / "test.db")
+    """Fresh EntityDB on a temp file.  sync_blocklists is stubbed to avoid
+    overwriting the real blocklist JSON files during tests."""
+    _db = EntityDB(tmp_path / "test.db")
+    _db.sync_blocklists = lambda: {}  # no-op stub
+    return _db
 
 
 def _add_label(db, name, threat_status="suspected", review_status=PENDING_REVIEW,
