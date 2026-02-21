@@ -36,6 +36,7 @@ from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
 from spotify_audit.lastfm_client import LastfmClient
+from spotify_audit.name_matching import get_platform_ids_from_musicbrainz
 from scripts.utils.rate_limiter import get_limiter, API_LIMITERS
 
 logger = logging.getLogger("enrich")
@@ -100,12 +101,13 @@ def _retry_call(fn, *args, api_name: str, **kwargs):
     return None
 
 
-def enrich_musicbrainz(mb: MusicBrainzClient, name: str) -> dict:
-    """Query MusicBrainz for artist data."""
+def enrich_musicbrainz(mb: MusicBrainzClient, name: str) -> tuple[dict, dict[str, str]]:
+    """Query MusicBrainz for artist data. Returns (result, platform_ids)."""
     result = {"found": False, "raw": None}
+    platform_ids: dict[str, str] = {}
     artist = _retry_call(mb.search_artist, name, api_name="musicbrainz")
     if not artist:
-        return result
+        return result, platform_ids
     result["found"] = True
     artist = _retry_call(mb.enrich, artist, api_name="musicbrainz") or artist
     result.update({
@@ -122,9 +124,13 @@ def enrich_musicbrainz(mb: MusicBrainzClient, name: str) -> dict:
         "ipis": artist.ipis,
         "urls": artist.urls,
         "labels": artist.labels,
-        "disambiguation_confidence": "high" if artist.mbid else "low",
+        "match_confidence": artist.match_confidence,
+        "match_method": artist.match_method,
     })
-    return result
+    # Extract platform IDs for bridging
+    if artist.urls:
+        platform_ids = get_platform_ids_from_musicbrainz(artist.urls)
+    return result, platform_ids
 
 
 def enrich_deezer(dz: DeezerClient, name: str) -> dict:
@@ -133,11 +139,9 @@ def enrich_deezer(dz: DeezerClient, name: str) -> dict:
     artist = _retry_call(dz.search_artist, name, api_name="deezer")
     if not artist:
         return result
-    # Basic name match check
-    if name.lower() not in artist.name.lower() and artist.name.lower() not in name.lower():
-        result["disambiguation_note"] = f"Name mismatch: searched '{name}', got '{artist.name}'"
-        return result
     result["found"] = True
+    result["match_confidence"] = artist.match_confidence
+    result["match_method"] = artist.match_method
     artist = _retry_call(dz.enrich, artist, api_name="deezer") or artist
     result.update({
         "deezer_id": artist.deezer_id,
@@ -173,16 +177,18 @@ def enrich_deezer(dz: DeezerClient, name: str) -> dict:
     return result
 
 
-def enrich_genius(genius: GeniusClient, name: str) -> dict:
+def enrich_genius(genius: GeniusClient, name: str, genius_id: str = "") -> dict:
     """Query Genius for artist data."""
     result = {"found": False, "raw": None}
     if not genius.enabled:
         result["status"] = "not_configured"
         return result
-    artist = _retry_call(genius.search_artist, name, api_name="genius")
+    artist = _retry_call(genius.search_artist, name, genius_id=genius_id or None, api_name="genius")
     if not artist:
         return result
     result["found"] = True
+    result["match_confidence"] = artist.match_confidence
+    result["match_method"] = artist.match_method
     artist = _retry_call(genius.enrich, artist, api_name="genius") or artist
     result.update({
         "genius_id": artist.genius_id,
@@ -200,13 +206,15 @@ def enrich_genius(genius: GeniusClient, name: str) -> dict:
     return result
 
 
-def enrich_discogs(discogs: DiscogsClient, name: str) -> dict:
+def enrich_discogs(discogs: DiscogsClient, name: str, discogs_id: str = "") -> dict:
     """Query Discogs for artist data."""
     result = {"found": False, "raw": None}
-    artist = _retry_call(discogs.search_artist, name, api_name="discogs")
+    artist = _retry_call(discogs.search_artist, name, discogs_id=discogs_id or None, api_name="discogs")
     if not artist:
         return result
     result["found"] = True
+    result["match_confidence"] = artist.match_confidence
+    result["match_method"] = artist.match_method
     artist = _retry_call(discogs.enrich, artist, api_name="discogs") or artist
     result.update({
         "discogs_id": artist.discogs_id,
@@ -226,16 +234,21 @@ def enrich_discogs(discogs: DiscogsClient, name: str) -> dict:
     return result
 
 
-def enrich_setlistfm(setlistfm: SetlistFmClient, name: str, mbid: str = "") -> dict:
+def enrich_setlistfm(setlistfm: SetlistFmClient, name: str, setlistfm_url: str = "") -> dict:
     """Query Setlist.fm for artist data."""
     result = {"found": False, "raw": None}
     if not setlistfm.enabled:
         result["status"] = "not_configured"
         return result
-    artist = _retry_call(setlistfm.search_artist, name, api_name="setlistfm")
+    artist = _retry_call(
+        setlistfm.search_artist, name,
+        setlistfm_url=setlistfm_url or None, api_name="setlistfm",
+    )
     if not artist:
         return result
     result["found"] = True
+    result["match_confidence"] = artist.match_confidence
+    result["match_method"] = artist.match_method
     artist = _retry_call(setlistfm.get_setlist_count, artist, api_name="setlistfm") or artist
     result.update({
         "total_setlists": artist.total_setlists,
@@ -249,16 +262,21 @@ def enrich_setlistfm(setlistfm: SetlistFmClient, name: str, mbid: str = "") -> d
     return result
 
 
-def enrich_lastfm(lastfm: LastfmClient, name: str) -> dict:
+def enrich_lastfm(lastfm: LastfmClient, name: str, lastfm_name: str = "") -> dict:
     """Query Last.fm for artist data."""
     result = {"found": False, "raw": None}
     if not lastfm.enabled:
         result["status"] = "not_configured"
         return result
-    artist = _retry_call(lastfm.get_artist_info, name, api_name="lastfm")
+    artist = _retry_call(
+        lastfm.get_artist_info, name,
+        lastfm_name=lastfm_name or None, api_name="lastfm",
+    )
     if not artist:
         return result
     result["found"] = True
+    result["match_confidence"] = artist.match_confidence
+    result["match_method"] = artist.match_method
     artist = _retry_call(lastfm.enrich, artist, api_name="lastfm") or artist
     # Compute listener-to-playcount ratio
     lp_ratio = (artist.playcount / artist.listeners) if artist.listeners > 0 else 0.0
@@ -288,7 +306,11 @@ def enrich_artist(
     setlistfm: SetlistFmClient,
     lastfm: LastfmClient,
 ) -> dict:
-    """Run all 6 API lookups for a single artist."""
+    """Run all 6 API lookups for a single artist.
+
+    Uses MusicBrainz-first pattern: MusicBrainz runs first to extract
+    platform IDs, which are then used for direct lookups on other APIs.
+    """
     profile = {
         "artist_name": name,
         "artist_id": _safe_id(name),
@@ -296,26 +318,31 @@ def enrich_artist(
         "enrichment_timestamp": datetime.now(timezone.utc).isoformat(),
     }
 
-    # Query in order per pipeline spec
+    # Phase 1: MusicBrainz first (provides platform IDs for bridging)
     logger.debug("  [1/6] MusicBrainz...")
-    profile["musicbrainz"] = enrich_musicbrainz(mb, name)
+    profile["musicbrainz"], platform_ids = enrich_musicbrainz(mb, name)
+    if platform_ids:
+        logger.debug("  Platform IDs from MusicBrainz: %s", platform_ids)
 
+    # Phase 2: Remaining APIs with platform ID bridging
     logger.debug("  [2/6] Deezer...")
     profile["deezer"] = enrich_deezer(dz, name)
 
     logger.debug("  [3/6] Genius...")
-    profile["genius"] = enrich_genius(genius, name)
+    profile["genius"] = enrich_genius(genius, name, genius_id=platform_ids.get("genius", ""))
 
     logger.debug("  [4/6] Discogs...")
-    profile["discogs"] = enrich_discogs(discogs, name)
+    profile["discogs"] = enrich_discogs(discogs, name, discogs_id=platform_ids.get("discogs", ""))
 
-    # Use MBID from MusicBrainz for Setlist.fm if available
-    mbid = profile["musicbrainz"].get("mbid", "")
     logger.debug("  [5/6] Setlist.fm...")
-    profile["setlistfm"] = enrich_setlistfm(setlistfm, name, mbid=mbid)
+    profile["setlistfm"] = enrich_setlistfm(
+        setlistfm, name, setlistfm_url=platform_ids.get("setlistfm", ""),
+    )
 
     logger.debug("  [6/6] Last.fm...")
-    profile["lastfm"] = enrich_lastfm(lastfm, name)
+    profile["lastfm"] = enrich_lastfm(
+        lastfm, name, lastfm_name=platform_ids.get("lastfm", ""),
+    )
 
     # Compute summary
     platforms_found = []
