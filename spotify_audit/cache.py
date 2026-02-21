@@ -44,7 +44,7 @@ class Cache:
     def __init__(self, db_path: Path, ttl_days: int = 7) -> None:
         self.ttl_seconds = ttl_days * 86400
         db_path.parent.mkdir(parents=True, exist_ok=True)
-        self.conn = sqlite3.connect(str(db_path))
+        self.conn = sqlite3.connect(str(db_path), check_same_thread=False)
         self.conn.execute(CREATE_TABLE)
         self.conn.commit()
         # In-memory cache: {key: (parsed_value | None, created_at)}
