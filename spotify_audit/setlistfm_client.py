@@ -34,6 +34,9 @@ class SetlistArtist:
     venue_cities: list[str] = None     # cities where they've played
     venue_countries: list[str] = None  # countries where they've played
     tour_names: list[str] = None       # named tours
+    # Match quality metadata (from name_matching)
+    match_confidence: float = 0.0
+    match_method: str = ""
 
     def __post_init__(self):
         if self.top_venues is None:
@@ -89,13 +92,17 @@ class SetlistFmClient:
             if m:
                 mbid = m.group(1)
                 # Convert short hex to full MBID format used by setlist.fm
-                log_match("Setlist.fm", name, MatchResult(
+                mr = MatchResult(
                     found=True, confidence=1.0,
                     matched_name=name,
                     platform_id=mbid,
                     match_method="platform_id",
-                ))
-                return SetlistArtist(mbid=mbid, name=name)
+                )
+                log_match("Setlist.fm", name, mr)
+                return SetlistArtist(
+                    mbid=mbid, name=name,
+                    match_confidence=mr.confidence, match_method=mr.match_method,
+                )
 
         try:
             data = self._get("/search/artists", {"artistName": name, "p": 1, "sort": "relevance"})
@@ -123,6 +130,8 @@ class SetlistFmClient:
             return SetlistArtist(
                 mbid=match.platform_id,
                 name=match.matched_name or name,
+                match_confidence=match.confidence,
+                match_method=match.match_method,
             )
 
         # Fallback: return first result
@@ -130,6 +139,8 @@ class SetlistFmClient:
         return SetlistArtist(
             mbid=first.get("mbid", ""),
             name=first.get("name", ""),
+            match_confidence=0.5,
+            match_method="fallback",
         )
 
     def get_setlist_count(self, artist: SetlistArtist) -> SetlistArtist:

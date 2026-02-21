@@ -42,6 +42,9 @@ class GeniusArtist:
     is_verified: bool = False
     followers_count: int = 0
     alternate_names: list[str] = field(default_factory=list)
+    # Match quality metadata (from name_matching)
+    match_confidence: float = 0.0
+    match_method: str = ""
 
 
 class GeniusClient:
@@ -85,17 +88,20 @@ class GeniusClient:
                 data = self._get(f"/artists/{genius_id}")
                 artist_data = data.get("response", {}).get("artist", {})
                 if artist_data:
-                    log_match("Genius", name, MatchResult(
+                    mr = MatchResult(
                         found=True, confidence=1.0,
                         matched_name=artist_data.get("name", ""),
                         platform_id=str(genius_id),
                         match_method="platform_id",
-                    ))
+                    )
+                    log_match("Genius", name, mr)
                     return GeniusArtist(
                         genius_id=int(genius_id) if str(genius_id).isdigit() else 0,
                         name=artist_data.get("name", ""),
                         url=artist_data.get("url", ""),
                         image_url=artist_data.get("image_url", ""),
+                        match_confidence=mr.confidence,
+                        match_method=mr.match_method,
                     )
             except Exception as exc:
                 logger.debug("Genius ID lookup failed for %s: %s", genius_id, exc)
@@ -143,6 +149,8 @@ class GeniusClient:
                 name=best["name"],
                 url=best.get("url", ""),
                 image_url=best.get("image_url", ""),
+                match_confidence=match.confidence,
+                match_method=match.match_method,
             )
 
         return None

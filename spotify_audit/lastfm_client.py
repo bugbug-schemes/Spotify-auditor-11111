@@ -37,6 +37,9 @@ class LastfmArtist:
     image_url: str = ""
     # Top tracks with listener counts
     top_tracks: list[dict] = field(default_factory=list)
+    # Match quality metadata (from name_matching)
+    match_confidence: float = 0.0
+    match_method: str = ""
 
 
 class LastfmClient:
@@ -109,6 +112,8 @@ class LastfmClient:
             name=returned_name,
             mbid=a.get("mbid", ""),
             url=a.get("url", ""),
+            match_confidence=confidence,
+            match_method=method,
         )
 
         # Stats

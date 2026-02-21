@@ -39,6 +39,9 @@ class WikipediaArticle:
     categories: list[str] = field(default_factory=list)
     monthly_views: int = 0              # average monthly page views (last 60 days)
     url: str = ""
+    # Match quality metadata (from name_matching)
+    match_confidence: float = 0.0
+    match_method: str = ""
 
 
 class WikipediaClient:
@@ -95,6 +98,8 @@ class WikipediaClient:
             decoded = urllib.parse.unquote(wikipedia_title).replace("_", " ")
             article = self._direct_lookup(decoded)
             if article:
+                article.match_confidence = 1.0
+                article.match_method = "platform_id"
                 log_match("Wikipedia", name, MatchResult(
                     found=True, confidence=1.0,
                     matched_name=article.title,
@@ -106,9 +111,12 @@ class WikipediaClient:
         # Pass 1: direct page lookup — fastest, handles exact matches
         article = self._direct_lookup(name)
         if article:
+            conf = similarity_score(name, article.title)
+            article.match_confidence = conf
+            article.match_method = "exact"
             log_match("Wikipedia", name, MatchResult(
                 found=True,
-                confidence=similarity_score(name, article.title),
+                confidence=conf,
                 matched_name=article.title,
                 platform_id=str(article.page_id),
                 match_method="exact",
@@ -118,9 +126,12 @@ class WikipediaClient:
         # Pass 2: search API
         article = self._search_lookup(name)
         if article:
+            conf = similarity_score(name, article.title)
+            article.match_confidence = conf
+            article.match_method = "fuzzy"
             log_match("Wikipedia", name, MatchResult(
                 found=True,
-                confidence=similarity_score(name, article.title),
+                confidence=conf,
                 matched_name=article.title,
                 platform_id=str(article.page_id),
                 match_method="fuzzy",

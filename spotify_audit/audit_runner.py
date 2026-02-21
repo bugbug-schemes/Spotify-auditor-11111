@@ -149,6 +149,7 @@ def _lookup_external_data(
     Phase 2: All other APIs run sequentially, using platform IDs when available.
     """
     ext = ExternalData()
+    ext.artist_name = artist_name
     search_name = artist_name.split(",")[0].strip() if "," in artist_name else artist_name
 
     # ------------------------------------------------------------------
@@ -161,6 +162,8 @@ def _lookup_external_data(
         mb = mb_client.search_artist(search_name)
         if mb and mb.mbid:
             ext.musicbrainz_found = True
+            ext.match_confidences["musicbrainz"] = mb.match_confidence
+            ext.match_methods["musicbrainz"] = mb.match_method
             ext.musicbrainz_type = mb.artist_type
             ext.musicbrainz_country = mb.country
             ext.musicbrainz_begin_date = mb.begin_date
@@ -194,10 +197,13 @@ def _lookup_external_data(
     # ------------------------------------------------------------------
 
     if genius.enabled:
+        ext.had_platform_ids["genius"] = bool(platform_ids.get("genius"))
         try:
             ga = genius.search_artist(search_name, genius_id=platform_ids.get("genius"))
             if ga:
                 ext.genius_found = True
+                ext.match_confidences["genius"] = ga.match_confidence
+                ext.match_methods["genius"] = ga.match_method
                 ga = genius.enrich(ga)
                 ext.genius_song_count = ga.song_count
                 ext.genius_description = ga.description_snippet
@@ -210,10 +216,13 @@ def _lookup_external_data(
         except Exception as exc:
             logger.debug("Genius lookup failed for '%s': %s", search_name, exc)
 
+    ext.had_platform_ids["discogs"] = bool(platform_ids.get("discogs"))
     try:
         da = discogs.search_artist(search_name, discogs_id=platform_ids.get("discogs"))
         if da:
             ext.discogs_found = True
+            ext.match_confidences["discogs"] = da.match_confidence
+            ext.match_methods["discogs"] = da.match_method
             da = discogs.enrich(da)
             ext.discogs_physical_releases = da.physical_releases
             ext.discogs_digital_releases = da.digital_only_releases
@@ -230,10 +239,13 @@ def _lookup_external_data(
         logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
 
     if setlistfm.enabled:
+        ext.had_platform_ids["setlistfm"] = bool(platform_ids.get("setlistfm"))
         try:
             sa = setlistfm.search_artist(search_name, setlistfm_url=platform_ids.get("setlistfm"))
             if sa:
                 ext.setlistfm_found = True
+                ext.match_confidences["setlistfm"] = sa.match_confidence
+                ext.match_methods["setlistfm"] = sa.match_method
                 sa = setlistfm.get_setlist_count(sa)
                 ext.setlistfm_total_shows = sa.total_setlists
                 ext.setlistfm_first_show = sa.first_show_date
@@ -246,10 +258,13 @@ def _lookup_external_data(
             logger.debug("Setlist.fm lookup failed for '%s': %s", search_name, exc)
 
     if lastfm and lastfm.enabled:
+        ext.had_platform_ids["lastfm"] = bool(platform_ids.get("lastfm"))
         try:
             la = lastfm.get_artist_info(search_name, lastfm_name=platform_ids.get("lastfm"))
             if la:
                 ext.lastfm_found = True
+                ext.match_confidences["lastfm"] = la.match_confidence
+                ext.match_methods["lastfm"] = la.match_method
                 la = lastfm.enrich(la)
                 ext.lastfm_listeners = la.listeners
                 ext.lastfm_playcount = la.playcount
@@ -263,10 +278,13 @@ def _lookup_external_data(
             logger.debug("Last.fm lookup failed for '%s': %s", search_name, exc)
 
     if wikipedia and wikipedia.enabled:
+        ext.had_platform_ids["wikipedia"] = bool(platform_ids.get("wikipedia"))
         try:
             wa = wikipedia.search_artist(search_name, wikipedia_title=platform_ids.get("wikipedia"))
             if wa:
                 ext.wikipedia_found = True
+                ext.match_confidences["wikipedia"] = wa.match_confidence
+                ext.match_methods["wikipedia"] = wa.match_method
                 wa = wikipedia.enrich(wa)
                 ext.wikipedia_title = wa.title
                 ext.wikipedia_length = wa.length
@@ -279,10 +297,13 @@ def _lookup_external_data(
             logger.debug("Wikipedia lookup failed for '%s': %s", search_name, exc)
 
     if songkick and songkick.enabled:
+        ext.had_platform_ids["songkick"] = bool(platform_ids.get("songkick"))
         try:
             sa = songkick.search_artist(search_name, songkick_id=platform_ids.get("songkick"))
             if sa:
                 ext.songkick_found = True
+                ext.match_confidences["songkick"] = sa.match_confidence
+                ext.match_methods["songkick"] = sa.match_method
                 sa = songkick.enrich(sa)
                 ext.songkick_on_tour = sa.on_tour
                 ext.songkick_total_past_events = sa.total_past_events
@@ -506,7 +527,7 @@ def _run_audit_core(
         )
         if pre.short_circuit:
             # Short-circuit: skip all external lookups
-            ext = ExternalData(pre_seeded_evidence=pre.pre_seeded_evidence)
+            ext = ExternalData(pre_seeded_evidence=pre.pre_seeded_evidence, artist_name=artist.name)
             # Build red flags from pre-check so reports show WHY it was flagged
             short_circuit_flags = [Evidence(
                 finding=pre.reason,

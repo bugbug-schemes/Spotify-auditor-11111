@@ -154,6 +154,14 @@ class ExternalData:
     # Pre-seeded evidence from known entity pre-check (Priority 1)
     pre_seeded_evidence: list[dict] = field(default_factory=list)
 
+    # Match quality metadata per platform (from name_matching)
+    # confidence: 0.0 = searched but not found, >0 = match confidence, -1 = not searched
+    # method: "platform_id", "exact", "normalized", "fuzzy", "autocorrect", "fallback"
+    match_confidences: dict[str, float] = field(default_factory=dict)
+    match_methods: dict[str, str] = field(default_factory=dict)
+    had_platform_ids: dict[str, bool] = field(default_factory=dict)
+    artist_name: str = ""  # for short-name detection in match quality helpers
+
 
 # ---------------------------------------------------------------------------
 # Data structures
@@ -587,6 +595,49 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
         "Online Identity": identity_score,
         "Industry Signals": industry_score,
     }
+
+
+# ---------------------------------------------------------------------------
+# Match quality helpers — modulate evidence strength based on search confidence
+# ---------------------------------------------------------------------------
+
+def _not_found_strength(ext: ExternalData, platform: str, artist_name: str = "") -> str:
+    """Determine how strong a 'not found' red flag should be.
+
+    Factors:
+    - If we had a platform ID (from MusicBrainz bridging) and still got no result,
+      that's a strong signal the artist truly isn't there.
+    - Name-only search for a very short name → weaker signal (matching uncertainty).
+    - Default is 'moderate' (current behavior preserved for backward compat).
+    """
+    had_id = ext.had_platform_ids.get(platform, False)
+    if had_id:
+        return "strong"
+
+    # Short names have high matching uncertainty
+    name_len = len(artist_name.strip()) if artist_name else 0
+    if 0 < name_len <= 3:
+        return "weak"
+
+    return "moderate"
+
+
+def _found_strength(base_strength: str, ext: ExternalData, platform: str) -> str:
+    """Optionally downgrade green flag strength for low-confidence matches.
+
+    If the match was fuzzy with low confidence, a green flag based on that data
+    is less trustworthy. Downgrade by one level for confidence < 0.85.
+    """
+    confidence = ext.match_confidences.get(platform, 1.0)
+    method = ext.match_methods.get(platform, "")
+
+    # Platform ID bridging and exact matches — full trust
+    if method in ("platform_id", "exact") or confidence >= 0.85:
+        return base_strength
+
+    # Low-confidence fuzzy match — downgrade one level
+    _downgrade = {"strong": "moderate", "moderate": "weak", "weak": "weak"}
+    return _downgrade.get(base_strength, base_strength)
 
 
 # ---------------------------------------------------------------------------
@@ -1316,10 +1367,11 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
             finding="Not found on Genius",
             source="Genius",
             evidence_type="red_flag",
-            strength="moderate",
+            strength=_not_found_strength(ext, "genius", ext.artist_name),
             detail="Artist has no page on Genius. Real songwriters and performers "
                    "almost always have lyrics/credits on Genius. Ghost and AI artists "
                    "typically have no Genius presence.",
+            tags=["not_found"],
         ))
         return evidence
 
@@ -1329,7 +1381,7 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
             finding=f"{ext.genius_song_count} songs on Genius",
             source="Genius",
             evidence_type="green_flag",
-            strength="strong",
+            strength=_found_strength("strong", ext, "genius"),
             detail=f"Artist has {ext.genius_song_count} songs with lyrics/credits on Genius. "
                    "This is strong evidence of a real artist with legitimate songwriting credits.",
             tags=["genius_credits"],
@@ -1339,7 +1391,7 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
             finding=f"{ext.genius_song_count} songs on Genius",
             source="Genius",
             evidence_type="green_flag",
-            strength="moderate",
+            strength=_found_strength("moderate", ext, "genius"),
             detail=f"Artist has {ext.genius_song_count} songs on Genius — real songwriting credits exist.",
             tags=["genius_credits"],
         ))
@@ -1348,7 +1400,7 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
             finding=f"{ext.genius_song_count} song(s) on Genius",
             source="Genius",
             evidence_type="green_flag",
-            strength="weak",
+            strength=_found_strength("weak", ext, "genius"),
             detail=f"Found {ext.genius_song_count} song(s) on Genius. Minimal but present.",
             tags=["genius_credits"],
         ))
@@ -1383,10 +1435,11 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             finding="Not found on Discogs",
             source="Discogs",
             evidence_type="red_flag",
-            strength="moderate",
+            strength=_not_found_strength(ext, "discogs", ext.artist_name),
             detail="No Discogs profile found. Discogs catalogs physical music releases "
                    "(vinyl, CD, cassette). Ghost and AI artists virtually never have "
                    "physical releases.",
+            tags=["not_found"],
         ))
         return evidence
 
@@ -1406,7 +1459,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             finding=f"{ext.discogs_physical_releases} physical releases on Discogs",
             source="Discogs",
             evidence_type="green_flag",
-            strength="strong",
+            strength=_found_strength("strong", ext, "discogs"),
             detail=f"Artist has {ext.discogs_physical_releases} physical releases "
                    f"(formats: {', '.join(ext.discogs_formats[:5])}). "
                    "Pressing vinyl or manufacturing CDs requires real investment — "
@@ -1418,7 +1471,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             finding=f"{ext.discogs_physical_releases} physical releases on Discogs",
             source="Discogs",
             evidence_type="green_flag",
-            strength="strong",
+            strength=_found_strength("strong", ext, "discogs"),
             detail=f"Artist has {ext.discogs_physical_releases} physical releases "
                    f"({', '.join(ext.discogs_formats[:5])}). Physical media is strong proof of legitimacy.",
             tags=["physical_release"],
@@ -1428,7 +1481,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             finding=f"{ext.discogs_physical_releases} physical release(s) on Discogs",
             source="Discogs",
             evidence_type="green_flag",
-            strength="moderate",
+            strength=_found_strength("moderate", ext, "discogs"),
             detail=f"At least {ext.discogs_physical_releases} physical release exists.",
             tags=["physical_release"],
         ))
@@ -1524,9 +1577,10 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
             finding="Not found on Setlist.fm",
             source="Setlist.fm",
             evidence_type="red_flag",
-            strength="weak",
+            strength=_not_found_strength(ext, "setlistfm", ext.artist_name),
             detail="No concert history found on Setlist.fm. Could be a new or "
                    "studio-only artist, or could indicate a non-performing entity.",
+            tags=["not_found"],
         ))
 
     # Combined live show assessment
@@ -1553,9 +1607,10 @@ def _collect_musicbrainz_evidence(ext: ExternalData) -> list[Evidence]:
             finding="Not found on MusicBrainz",
             source="MusicBrainz",
             evidence_type="red_flag",
-            strength="weak",
+            strength=_not_found_strength(ext, "musicbrainz", ext.artist_name),
             detail="No MusicBrainz entry found. MusicBrainz is a comprehensive "
                    "open-source music database. Established artists usually have entries.",
+            tags=["not_found"],
         ))
         return evidence
 
@@ -1972,10 +2027,11 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
             finding="Not found on Last.fm",
             source="Last.fm",
             evidence_type="red_flag",
-            strength="moderate",
+            strength=_not_found_strength(ext, "lastfm", ext.artist_name),
             detail="Artist has no Last.fm presence. Real artists with significant "
                    "Spotify streams almost always have Last.fm scrobble data. "
                    "Ghost artists typically have zero Last.fm activity.",
+            tags=["not_found"],
         ))
         return evidence
 

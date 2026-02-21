@@ -40,6 +40,9 @@ class SongkickArtist:
     venue_countries: list[str] = field(default_factory=list)
     event_types: list[str] = field(default_factory=list)   # Concert, Festival
     uri: str = ""                       # Songkick artist page URL
+    # Match quality metadata (from name_matching)
+    match_confidence: float = 0.0
+    match_method: str = ""
 
 
 class SongkickClient:
@@ -94,13 +97,17 @@ class SongkickClient:
             if data:
                 artist_data = data.get("resultsPage", {}).get("results", {}).get("artist", {})
                 if artist_data:
-                    log_match("Songkick", name, MatchResult(
+                    mr = MatchResult(
                         found=True, confidence=1.0,
                         matched_name=artist_data.get("displayName", ""),
                         platform_id=str(songkick_id),
                         match_method="platform_id",
-                    ))
-                    return self._parse_artist(artist_data)
+                    )
+                    log_match("Songkick", name, mr)
+                    artist = self._parse_artist(artist_data)
+                    artist.match_confidence = mr.confidence
+                    artist.match_method = mr.match_method
+                    return artist
 
         data = self._get("/search/artists.json", {"query": name})
         if not data:
@@ -128,7 +135,10 @@ class SongkickClient:
                 (a for a in artists if str(a.get("id", 0)) == match.platform_id),
                 artists[0],
             )
-            return self._parse_artist(best_raw)
+            artist = self._parse_artist(best_raw)
+            artist.match_confidence = match.confidence
+            artist.match_method = match.match_method
+            return artist
 
         return None
 
@@ -201,7 +211,7 @@ class SongkickClient:
         countries: list[str] = []
         event_types: list[str] = []
 
-        for ev in events[:30]:  # sample first 30 for variety
+        for ev in events[:30]:  # sample first 30 for venue/city variety
             # Venue
             venue = ev.get("venue", {})
             if isinstance(venue, dict):
@@ -228,14 +238,15 @@ class SongkickClient:
             if etype and etype not in event_types:
                 event_types.append(etype)
 
-            # Date tracking
+        # Date tracking — gigography returns events most-recent-first.
+        # Use first event for last_event_date, last event for first_event_date.
+        for ev in events:
             start = ev.get("start", {})
             date = start.get("date", "") if isinstance(start, dict) else ""
             if date:
-                # Events come most-recent-first in gigography
                 if not artist.last_event_date:
                     artist.last_event_date = date
-                artist.first_event_date = date  # keeps getting overwritten
+                artist.first_event_date = date
 
         artist.venue_names = venues
         artist.venue_cities = cities

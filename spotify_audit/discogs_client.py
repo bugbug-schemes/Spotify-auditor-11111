@@ -42,6 +42,9 @@ class DiscogsArtist:
     groups: list[str] = field(default_factory=list)        # groups this artist belongs to
     name_variations: list[str] = field(default_factory=list)
     data_quality: str = ""             # "Correct", "Needs Vote", etc.
+    # Match quality metadata (from name_matching)
+    match_confidence: float = 0.0
+    match_method: str = ""
 
 
 class DiscogsClient:
@@ -80,16 +83,19 @@ class DiscogsClient:
             try:
                 data = self._get(f"/artists/{discogs_id}")
                 if data.get("name"):
-                    log_match("Discogs", name, MatchResult(
+                    mr = MatchResult(
                         found=True, confidence=1.0,
                         matched_name=data["name"],
                         platform_id=str(discogs_id),
                         match_method="platform_id",
-                    ))
+                    )
+                    log_match("Discogs", name, mr)
                     return DiscogsArtist(
                         discogs_id=int(discogs_id),
                         name=data["name"],
                         url=data.get("resource_url", ""),
+                        match_confidence=mr.confidence,
+                        match_method=mr.match_method,
                     )
             except Exception as exc:
                 logger.debug("Discogs ID lookup failed for %s: %s", discogs_id, exc)
@@ -118,6 +124,8 @@ class DiscogsClient:
                 discogs_id=best["id"],
                 name=best["name"],
                 url=best.get("url", ""),
+                match_confidence=match.confidence,
+                match_method=match.match_method,
             )
 
         # Fallback: return first result (Discogs sorts by relevance)
@@ -126,6 +134,8 @@ class DiscogsClient:
             discogs_id=first["id"],
             name=first["name"],
             url=first.get("url", ""),
+            match_confidence=0.5,
+            match_method="fallback",
         )
 
     def enrich_profile(self, artist: DiscogsArtist) -> DiscogsArtist:

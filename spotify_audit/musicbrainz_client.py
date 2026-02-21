@@ -63,6 +63,9 @@ class MBArtist:
     bandcamp_url: str = ""                                # Bandcamp page URL
     official_website: str = ""                            # official homepage
     social_urls: dict[str, str] = field(default_factory=dict)  # platform -> URL
+    # Match quality metadata (from name_matching)
+    match_confidence: float = 0.0
+    match_method: str = ""
 
 
 class MusicBrainzClient:
@@ -179,6 +182,8 @@ class MusicBrainzClient:
             genres=genres,
             isnis=isnis if isinstance(isnis, list) else [],
             ipis=ipis if isinstance(ipis, list) else [],
+            match_confidence=match.confidence if match.found else 0.5,
+            match_method=match.match_method if match.found else "fallback",
         )
 
     def get_releases(self, mbid: str) -> list[MBRelease]:
