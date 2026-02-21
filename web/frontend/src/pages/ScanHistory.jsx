@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { api } from '../api';
+import ArtistCard from '../components/ArtistCard';
 
 export default function ScanHistory() {
   const { scanId } = useParams();
@@ -45,27 +46,15 @@ export default function ScanHistory() {
           </div>
         </div>
         {detail.results?.length > 0 && (
-          <div className="card" style={{ padding: 0 }}>
-            <table>
-              <thead>
-                <tr><th>Artist</th><th>Verdict</th><th>Score</th><th>Confidence</th><th>Category</th></tr>
-              </thead>
-              <tbody>
-                {detail.results.map((r, i) => {
-                  const cls = r.verdict === 'Likely Artificial' || r.verdict === 'Suspicious' ? 'status-red'
-                    : r.verdict === 'Verified Artist' || r.verdict === 'Likely Authentic' ? 'status-green' : 'status-dim';
-                  return (
-                    <tr key={i}>
-                      <td>{r.artist_name}</td>
-                      <td><span className={`status ${cls}`}>{r.verdict}</span></td>
-                      <td>{r.score}</td>
-                      <td>{r.confidence || '-'}</td>
-                      <td>{r.threat_category || '-'}</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+          <div className="artist-card-list">
+            {detail.results.map((r, i) => (
+              <ArtistCard key={i} result={r} />
+            ))}
+          </div>
+        )}
+        {(!detail.results || detail.results.length === 0) && (
+          <div className="card" style={{ textAlign: 'center', color: 'var(--text-dim)', padding: 32 }}>
+            No artist results for this scan.
           </div>
         )}
       </div>
