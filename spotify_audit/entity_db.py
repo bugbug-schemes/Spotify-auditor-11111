@@ -476,27 +476,34 @@ class EntityDB:
         if not sw_ids:
             return []
 
-        overlaps: list[dict] = []
-        for sw_id in sw_ids:
-            # Find other artists sharing this songwriter
-            others = self._conn.execute(
-                """SELECT a.name, a.threat_status, s.name as sw_name
-                   FROM artist_songwriters asw
-                   JOIN artists a ON a.id = asw.artist_id
-                   JOIN songwriters s ON s.id = asw.songwriter_id
-                   WHERE asw.songwriter_id = ?
-                     AND asw.artist_id != ?
-                     AND a.threat_status IN ('confirmed_bad', 'suspected')""",
-                (sw_id, artist_id),
-            ).fetchall()
+        # Single query to find all flagged artists sharing any songwriter
+        placeholders = ",".join("?" * len(sw_ids))
+        rows = self._conn.execute(
+            f"""SELECT s.id as sw_id, s.name as sw_name,
+                       a.name, a.threat_status
+                FROM artist_songwriters asw
+                JOIN artists a ON a.id = asw.artist_id
+                JOIN songwriters s ON s.id = asw.songwriter_id
+                WHERE asw.songwriter_id IN ({placeholders})
+                  AND asw.artist_id != ?
+                  AND a.threat_status IN ('confirmed_bad', 'suspected')""",
+            (*sw_ids, artist_id),
+        ).fetchall()
 
-            if len(others) >= min_shared:
+        # Group by songwriter
+        from collections import defaultdict
+        by_sw: dict[int, list[dict]] = defaultdict(list)
+        sw_names: dict[int, str] = {}
+        for r in rows:
+            by_sw[r["sw_id"]].append({"name": r["name"], "status": r["threat_status"]})
+            sw_names[r["sw_id"]] = r["sw_name"]
+
+        overlaps: list[dict] = []
+        for sw_id, flagged in by_sw.items():
+            if len(flagged) >= min_shared:
                 overlaps.append({
-                    "songwriter": others[0]["sw_name"] if others else "",
-                    "flagged_artists": [
-                        {"name": r["name"], "status": r["threat_status"]}
-                        for r in others
-                    ],
+                    "songwriter": sw_names[sw_id],
+                    "flagged_artists": flagged,
                 })
 
         return overlaps

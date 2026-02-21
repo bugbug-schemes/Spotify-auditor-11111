@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from enum import Enum
 
 from spotify_audit.spotify_client import ArtistInfo
-from spotify_audit.config import pfc_distributors, known_ai_artists, pfc_songwriters
+from spotify_audit.config import pfc_distributors, known_ai_artists, pfc_songwriters, MOOD_WORDS
 
 logger = logging.getLogger(__name__)
 
@@ -161,6 +161,9 @@ class ExternalData:
     match_methods: dict[str, str] = field(default_factory=dict)
     had_platform_ids: dict[str, bool] = field(default_factory=dict)
     artist_name: str = ""  # for short-name detection in match quality helpers
+
+    # Track which APIs errored (timeout/network) vs genuinely returned no results
+    api_errors: dict[str, str] = field(default_factory=dict)
 
 
 # ---------------------------------------------------------------------------
@@ -1055,8 +1058,11 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
     pfc_labels = pfc_distributors()
     ai_names = known_ai_artists()
 
-    matched_pfc = [l for l in artist.labels if l.lower() in pfc_labels]
-    matched_ai = [l for l in artist.labels if l.lower() in ai_names]
+    # Single lowercasing pass, then set intersection
+    labels_lower = {l.lower(): l for l in artist.labels}
+    labels_lower_set = labels_lower.keys()
+    matched_pfc = [labels_lower[l] for l in labels_lower_set & pfc_labels]
+    matched_ai = [labels_lower[l] for l in labels_lower_set & ai_names]
 
     if matched_pfc:
         evidence.append(Evidence(
@@ -1142,20 +1148,11 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
         ))
 
     # Mood-word track titles (PFC tracks use generic mood/atmosphere names)
-    mood_words = {
-        "calm", "peaceful", "gentle", "soft", "quiet", "serene", "tranquil",
-        "dreamy", "hazy", "misty", "ambient", "chill", "cozy", "warm",
-        "morning", "evening", "night", "dawn", "dusk", "sunset", "sunrise",
-        "rain", "ocean", "forest", "garden", "meadow", "river", "sky",
-        "clouds", "breeze", "wind", "snow", "light", "glow", "drift",
-        "float", "flow", "sleep", "rest", "relax", "breathe", "solitude",
-        "silence", "whisper", "echo", "reflection", "meditation",
-    }
     if artist.track_titles:
         mood_count = 0
         for title in artist.track_titles:
             title_words = set(title.lower().split())
-            if title_words & mood_words:
+            if title_words & MOOD_WORDS:
                 mood_count += 1
         mood_ratio = mood_count / len(artist.track_titles) if artist.track_titles else 0
         if mood_ratio >= 0.7 and len(artist.track_titles) >= 4:
@@ -2745,8 +2742,10 @@ def _decide_verdict(
     # Rule 4: Strong green flags dominate → high confidence authentic
     # Guard: total_red < 4 prevents verification when moderate reds pile up
     if len(strong_greens) >= 2 and not strong_reds and total_red_strength < 4:
-        decision_path.append(f"{len(strong_greens)} strong green flags, no strong red flags, "
-                             f"total_red={total_red_strength} < 4 → Verified Artist")
+        decision_path.append(
+            f"Multiple strong legitimacy signals ({len(strong_greens)}) "
+            f"with minimal concerns → Verified Artist"
+        )
         return Verdict.VERIFIED_ARTIST, "high"
 
     # Rule 5: Multi-platform + genuine fans + no strong reds → Verified
@@ -2755,19 +2754,24 @@ def _decide_verdict(
         for e in green_flags
     )
     if presence.count() >= 3 and has_genuine_fans_strong and not strong_reds:
-        decision_path.append(f"{presence.count()} platforms + genuine fans (strong), "
-                             f"no strong reds → Verified Artist")
+        decision_path.append(
+            f"Present on {presence.count()} platforms with strong fan engagement, "
+            f"no major red flags → Verified Artist"
+        )
         return Verdict.VERIFIED_ARTIST, "high"
 
     # Rule 6: Green strongly outweighs red
-
     if total_green_strength >= total_red_strength * 2 and total_green_strength >= 4:
-        decision_path.append(f"Green evidence ({total_green_strength}) strongly outweighs red ({total_red_strength}) → Likely Authentic")
+        decision_path.append(
+            f"Legitimacy evidence substantially outweighs concerns → Likely Authentic"
+        )
         return Verdict.LIKELY_AUTHENTIC, "medium"
 
     # Rule 7: Red flags dominate
     if total_red_strength >= total_green_strength * 2 and total_red_strength >= 4:
-        decision_path.append(f"Red evidence ({total_red_strength}) strongly outweighs green ({total_green_strength}) → Suspicious")
+        decision_path.append(
+            f"Suspicious indicators substantially outweigh legitimacy evidence → Suspicious"
+        )
         return Verdict.SUSPICIOUS, "medium"
 
     # Rule 8: PFC label alone → Suspicious (medium confidence —
@@ -2778,12 +2782,16 @@ def _decide_verdict(
 
     # Rule 9: More green than red → Likely Authentic
     if total_green_strength > total_red_strength:
-        decision_path.append(f"Green ({total_green_strength}) > Red ({total_red_strength}) → Likely Authentic")
+        decision_path.append(
+            "Slightly more legitimacy evidence than concerns → Likely Authentic"
+        )
         return Verdict.LIKELY_AUTHENTIC, "low"
 
     # Rule 10: More red than green → Suspicious
     if total_red_strength > total_green_strength:
-        decision_path.append(f"Red ({total_red_strength}) > Green ({total_green_strength}) → Suspicious")
+        decision_path.append(
+            "Slightly more concerns than legitimacy evidence → Suspicious"
+        )
         return Verdict.SUSPICIOUS, "low"
 
     # Default: Distinguish "not enough data" from "conflicting data"

@@ -22,6 +22,13 @@ from spotify_audit.analyzers.quick import QuickScanResult
 from spotify_audit.analyzers.standard import StandardScanResult
 from spotify_audit.evidence import ArtistEvaluation, Verdict
 
+# Confidence-to-fraction mapping for score blending.
+# Higher fraction places the score higher within the verdict's range.
+CONFIDENCE_FRACTIONS: dict[str, float] = {
+    "high": 0.85,
+    "medium": 0.55,
+    "low": 0.25,
+}
 
 # Map verdicts to sort order (most concerning first)
 _VERDICT_ORDER = {
@@ -199,7 +206,7 @@ def _verdict_to_score(ev: ArtistEvaluation) -> int:
     lo, hi = base_ranges.get(ev.verdict, (35, 54))
 
     # Confidence shifts within range
-    conf_frac = {"high": 0.85, "medium": 0.55, "low": 0.25}.get(ev.confidence, 0.5)
+    conf_frac = CONFIDENCE_FRACTIONS.get(ev.confidence, 0.5)
 
     # Adjust based on green/red flag balance
     strong_greens = len(ev.strong_green_flags)

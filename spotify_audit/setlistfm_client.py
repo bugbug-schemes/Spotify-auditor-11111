@@ -69,10 +69,18 @@ class SetlistFmClient:
         if not self.enabled:
             return {}
         url = f"{SETLIST_API}{path}"
-        r = self.session.get(url, params=params, timeout=15)
+        for attempt in range(3):
+            r = self.session.get(url, params=params, timeout=15)
+            if r.status_code == 429:
+                wait = 2 ** (attempt + 1)
+                logger.debug("Setlist.fm 429 rate-limited, backing off %ds", wait)
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            time.sleep(self.delay)
+            return r.json()
         r.raise_for_status()
-        time.sleep(self.delay)
-        return r.json()
+        return {}
 
     def search_artist(self, name: str, setlistfm_url: str | None = None) -> SetlistArtist | None:
         """Search for an artist by name using shared name matching.

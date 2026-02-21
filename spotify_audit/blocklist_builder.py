@@ -127,11 +127,13 @@ def analyze_for_blocklist(evaluations: list[ArtistEvaluation]) -> BlocklistRepor
     for contributor, artists in report.contributors_seen.items():
         suspicious_count = sum(1 for a in artists if a in flagged_names)
         if suspicious_count >= 2 and suspicious_count == len(artists):
+            # Higher count of exclusive suspicious appearances = higher confidence
+            conf = "high" if suspicious_count >= 5 else "medium" if suspicious_count >= 3 else "low"
             report.suggestions.append(BlocklistSuggestion(
                 value=contributor,
                 blocklist="suspicious_contributors",
                 reason=f"Appears exclusively on {suspicious_count} suspicious artists",
-                confidence="low",
+                confidence=conf,
                 seen_on=artists,
             ))
 

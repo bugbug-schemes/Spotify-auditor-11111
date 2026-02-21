@@ -862,7 +862,9 @@ def _build_key_stat(ev: ArtistEvaluation | None) -> str:
         green = len(ev.green_flags)
         return f"{green}G / {red}R flags"
 
-    return ", ".join(parts[:3])
+    if len(parts) > 3:
+        return ", ".join(parts[:3]) + f" +{len(parts) - 3} more"
+    return ", ".join(parts)
 
 
 def _build_artist_card_html(a: ArtistReport, ev: ArtistEvaluation, idx: int) -> tuple[str, str]:
@@ -1106,14 +1108,35 @@ def _build_explanation(ev: ArtistEvaluation) -> str:
     return f"Evaluated {name}: {green_count} green flags, {red_count} red flags."
 
 
+def _field(label: str, value: str | int | float | None, fmt: str = "esc") -> str | None:
+    """Build a single HTML field if value is truthy, or return None to skip."""
+    if not value:
+        return None
+    if fmt == "num":
+        return f"<strong>{label}:</strong> {_fmt_num(int(value))}"
+    if fmt == "raw":
+        return f"<strong>{label}:</strong> {value}"
+    return f"<strong>{label}:</strong> {_esc(str(value))}"
+
+
+def _fields_from_specs(specs: list[tuple[str, str | int | float | None, str]]) -> list[str]:
+    """Build field list from (label, value, format) specs, skipping falsy values."""
+    fields: list[str] = []
+    for label, value, fmt in specs:
+        rendered = _field(label, value, fmt)
+        if rendered:
+            fields.append(rendered)
+    return fields
+
+
 def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
     """Build data fields organized by platform source."""
     sections: list[str] = []
 
     # --- Spotify / Deezer (always available) ---
-    spotify_fields: list[str] = []
-    if ev.platform_presence.deezer_fans:
-        spotify_fields.append(f"<strong>Deezer fans:</strong> {_fmt_num(ev.platform_presence.deezer_fans)}")
+    spotify_fields = _fields_from_specs([
+        ("Deezer fans", ev.platform_presence.deezer_fans, "num"),
+    ])
     if ext.deezer_ai_checked:
         if ext.deezer_ai_tagged_albums:
             spotify_fields.append(f"<strong>AI tagged:</strong> {', '.join(_esc(a) for a in ext.deezer_ai_tagged_albums[:3])}")
@@ -1123,38 +1146,30 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
         sections.append(_platform_section("Spotify / Deezer", spotify_fields, ext, "deezer"))
 
     # --- Genius ---
-    genius_fields: list[str] = []
     if ext.genius_found:
-        if ext.genius_song_count:
-            genius_fields.append(f"<strong>Songs:</strong> {ext.genius_song_count}")
+        genius_fields = _fields_from_specs([
+            ("Songs", ext.genius_song_count, "raw"),
+            ("Followers", ext.genius_followers_count, "num"),
+            ("Facebook", ext.genius_facebook_name, "esc"),
+            ("Instagram", ext.genius_instagram_name, "esc"),
+            ("Twitter/X", ext.genius_twitter_name, "esc"),
+        ])
         if ext.genius_is_verified:
-            genius_fields.append("<strong>Status:</strong> Verified")
-        if ext.genius_followers_count:
-            genius_fields.append(f"<strong>Followers:</strong> {_fmt_num(ext.genius_followers_count)}")
-        if ext.genius_facebook_name:
-            genius_fields.append(f"<strong>Facebook:</strong> {_esc(ext.genius_facebook_name)}")
-        if ext.genius_instagram_name:
-            genius_fields.append(f"<strong>Instagram:</strong> {_esc(ext.genius_instagram_name)}")
-        if ext.genius_twitter_name:
-            genius_fields.append(f"<strong>Twitter/X:</strong> {_esc(ext.genius_twitter_name)}")
+            genius_fields.insert(1, "<strong>Status:</strong> Verified")
         if ext.genius_alternate_names:
             genius_fields.append(f"<strong>Also known as:</strong> {_esc(', '.join(ext.genius_alternate_names[:3]))}")
-    if genius_fields:
-        sections.append(_platform_section("Genius", genius_fields, ext, "genius"))
+        if genius_fields:
+            sections.append(_platform_section("Genius", genius_fields, ext, "genius"))
 
     # --- MusicBrainz ---
-    mb_fields: list[str] = []
     if ext.musicbrainz_found:
-        if ext.musicbrainz_type:
-            mb_fields.append(f"<strong>Type:</strong> {_esc(ext.musicbrainz_type)}")
-        if ext.musicbrainz_gender:
-            mb_fields.append(f"<strong>Gender:</strong> {_esc(ext.musicbrainz_gender)}")
-        if ext.musicbrainz_country:
-            mb_fields.append(f"<strong>Country:</strong> {_esc(ext.musicbrainz_country)}")
-        if ext.musicbrainz_area:
-            mb_fields.append(f"<strong>Area:</strong> {_esc(ext.musicbrainz_area)}")
-        if ext.musicbrainz_begin_date:
-            mb_fields.append(f"<strong>Active since:</strong> {_esc(ext.musicbrainz_begin_date)}")
+        mb_fields = _fields_from_specs([
+            ("Type", ext.musicbrainz_type, "esc"),
+            ("Gender", ext.musicbrainz_gender, "esc"),
+            ("Country", ext.musicbrainz_country, "esc"),
+            ("Area", ext.musicbrainz_area, "esc"),
+            ("Active since", ext.musicbrainz_begin_date, "esc"),
+        ])
         if ext.musicbrainz_genres:
             mb_fields.append(f"<strong>Genres:</strong> {_esc(', '.join(ext.musicbrainz_genres[:5]))}")
         if ext.musicbrainz_isnis:
@@ -1165,34 +1180,34 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
             mb_fields.append(f"<strong>Aliases:</strong> {_esc(', '.join(ext.musicbrainz_aliases[:3]))}")
         # Social / web links from MusicBrainz
         social_links: list[str] = []
-        if ext.musicbrainz_official_website:
-            social_links.append(f'<a href="{_esc(ext.musicbrainz_official_website)}" target="_blank" style="color:#1DB954">Website</a>')
-        if ext.musicbrainz_youtube_url:
-            social_links.append(f'<a href="{_esc(ext.musicbrainz_youtube_url)}" target="_blank" style="color:#1DB954">YouTube</a>')
-        if ext.musicbrainz_bandcamp_url:
-            social_links.append(f'<a href="{_esc(ext.musicbrainz_bandcamp_url)}" target="_blank" style="color:#1DB954">Bandcamp</a>')
+        for label, url in [
+            ("Website", ext.musicbrainz_official_website),
+            ("YouTube", ext.musicbrainz_youtube_url),
+            ("Bandcamp", ext.musicbrainz_bandcamp_url),
+        ]:
+            if url:
+                social_links.append(f'<a href="{_esc(url)}" target="_blank" style="color:#1DB954">{label}</a>')
         for rt, url in list(ext.musicbrainz_social_urls.items())[:4]:
             social_links.append(f'<a href="{_esc(url)}" target="_blank" style="color:#1DB954">{_esc(rt)}</a>')
         if social_links:
             mb_fields.append(f"<strong>Links:</strong> {' &middot; '.join(social_links)}")
-    if mb_fields:
-        sections.append(_platform_section("MusicBrainz", mb_fields, ext, "musicbrainz"))
+        if mb_fields:
+            sections.append(_platform_section("MusicBrainz", mb_fields, ext, "musicbrainz"))
 
     # --- Discogs ---
-    discogs_fields: list[str] = []
     if ext.discogs_found:
-        if ext.discogs_physical_releases:
-            discogs_fields.append(f"<strong>Physical releases:</strong> {ext.discogs_physical_releases}")
-        if ext.discogs_digital_releases:
-            discogs_fields.append(f"<strong>Digital releases:</strong> {ext.discogs_digital_releases}")
-        if ext.discogs_total_releases:
-            discogs_fields.append(f"<strong>Total releases:</strong> {ext.discogs_total_releases}")
+        discogs_fields = _fields_from_specs([
+            ("Physical releases", ext.discogs_physical_releases, "raw"),
+            ("Digital releases", ext.discogs_digital_releases, "raw"),
+            ("Total releases", ext.discogs_total_releases, "raw"),
+        ])
         if ext.discogs_formats:
             discogs_fields.append(f"<strong>Formats:</strong> {_esc(', '.join(ext.discogs_formats[:5]))}")
         if ext.discogs_labels:
             discogs_fields.append(f"<strong>Labels:</strong> {_esc(', '.join(ext.discogs_labels[:4]))}")
-        if ext.discogs_realname:
-            discogs_fields.append(f"<strong>Real name:</strong> {_esc(ext.discogs_realname)}")
+        discogs_fields.extend(_fields_from_specs([
+            ("Real name", ext.discogs_realname, "esc"),
+        ]))
         if ext.discogs_members:
             discogs_fields.append(f"<strong>Members:</strong> {_esc(', '.join(ext.discogs_members[:4]))}")
         if ext.discogs_groups:
@@ -1202,16 +1217,15 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
             if len(ext.discogs_profile) > 120:
                 bio_preview += "..."
             discogs_fields.append(f"<strong>Bio:</strong> {_esc(bio_preview)}")
-    if discogs_fields:
-        sections.append(_platform_section("Discogs", discogs_fields, ext, "discogs"))
+        if discogs_fields:
+            sections.append(_platform_section("Discogs", discogs_fields, ext, "discogs"))
 
     # --- Last.fm ---
-    lastfm_fields: list[str] = []
     if ext.lastfm_found:
-        if ext.lastfm_listeners:
-            lastfm_fields.append(f"<strong>Listeners:</strong> {_fmt_num(ext.lastfm_listeners)}")
-        if ext.lastfm_playcount:
-            lastfm_fields.append(f"<strong>Play count:</strong> {_fmt_num(ext.lastfm_playcount)}")
+        lastfm_fields = _fields_from_specs([
+            ("Listeners", ext.lastfm_listeners, "num"),
+            ("Play count", ext.lastfm_playcount, "num"),
+        ])
         if ext.lastfm_listener_play_ratio:
             lastfm_fields.append(f"<strong>Play/listener ratio:</strong> {ext.lastfm_listener_play_ratio:.1f}")
         if ext.lastfm_tags:
@@ -1220,51 +1234,50 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
             lastfm_fields.append(f"<strong>Similar to:</strong> {_esc(', '.join(ext.lastfm_similar_artists[:4]))}")
         if ext.lastfm_bio_exists:
             lastfm_fields.append("<strong>Bio:</strong> exists")
-    if lastfm_fields:
-        sections.append(_platform_section("Last.fm", lastfm_fields, ext, "lastfm"))
+        if lastfm_fields:
+            sections.append(_platform_section("Last.fm", lastfm_fields, ext, "lastfm"))
 
     # --- Wikipedia ---
-    wiki_fields: list[str] = []
     if ext.wikipedia_found:
-        if ext.wikipedia_title:
-            wiki_fields.append(f"<strong>Article:</strong> {_esc(ext.wikipedia_title)}")
-        if ext.wikipedia_monthly_views:
-            wiki_fields.append(f"<strong>Monthly views:</strong> {_fmt_num(ext.wikipedia_monthly_views)}")
+        wiki_fields = _fields_from_specs([
+            ("Article", ext.wikipedia_title, "esc"),
+            ("Monthly views", ext.wikipedia_monthly_views, "num"),
+        ])
         if ext.wikipedia_length:
             wiki_fields.append(f"<strong>Article length:</strong> {_fmt_num(ext.wikipedia_length)} bytes")
-        if ext.wikipedia_description:
-            wiki_fields.append(f"<strong>Description:</strong> {_esc(ext.wikipedia_description)}")
+        wiki_fields.extend(_fields_from_specs([
+            ("Description", ext.wikipedia_description, "esc"),
+        ]))
         if ext.wikipedia_categories:
             wiki_fields.append(f"<strong>Categories:</strong> {_esc(', '.join(ext.wikipedia_categories[:4]))}")
         if ext.wikipedia_url:
             wiki_fields.append(f'<strong>Link:</strong> <a href="{_esc(ext.wikipedia_url)}" target="_blank" style="color:#1DB954">Wikipedia</a>')
-    if wiki_fields:
-        sections.append(_platform_section("Wikipedia", wiki_fields, ext, "wikipedia"))
+        if wiki_fields:
+            sections.append(_platform_section("Wikipedia", wiki_fields, ext, "wikipedia"))
 
     # --- Setlist.fm + Songkick (concerts) ---
     concert_fields: list[str] = []
     if ext.setlistfm_found:
-        if ext.setlistfm_total_shows:
-            concert_fields.append(f"<strong>Setlist.fm shows:</strong> {ext.setlistfm_total_shows}")
-        if ext.setlistfm_first_show:
-            concert_fields.append(f"<strong>First show:</strong> {_esc(ext.setlistfm_first_show)}")
-        if ext.setlistfm_last_show:
-            concert_fields.append(f"<strong>Last show:</strong> {_esc(ext.setlistfm_last_show)}")
+        concert_fields.extend(_fields_from_specs([
+            ("Setlist.fm shows", ext.setlistfm_total_shows, "raw"),
+            ("First show", ext.setlistfm_first_show, "esc"),
+            ("Last show", ext.setlistfm_last_show, "esc"),
+        ]))
         if ext.setlistfm_tour_names:
             concert_fields.append(f"<strong>Tours:</strong> {_esc(', '.join(ext.setlistfm_tour_names[:3]))}")
         if ext.setlistfm_venue_countries:
             concert_fields.append(f"<strong>Countries:</strong> {_esc(', '.join(ext.setlistfm_venue_countries[:6]))}")
     if ext.songkick_found:
-        if ext.songkick_total_past_events:
-            concert_fields.append(f"<strong>Songkick events:</strong> {ext.songkick_total_past_events}")
-        if ext.songkick_total_upcoming_events:
-            concert_fields.append(f"<strong>Upcoming:</strong> {ext.songkick_total_upcoming_events}")
+        concert_fields.extend(_fields_from_specs([
+            ("Songkick events", ext.songkick_total_past_events, "raw"),
+            ("Upcoming", ext.songkick_total_upcoming_events, "raw"),
+        ]))
         if ext.songkick_on_tour:
             concert_fields.append("<strong>Status:</strong> Currently on tour")
-        if ext.songkick_first_event_date:
-            concert_fields.append(f"<strong>First event:</strong> {_esc(ext.songkick_first_event_date)}")
-        if ext.songkick_last_event_date:
-            concert_fields.append(f"<strong>Last event:</strong> {_esc(ext.songkick_last_event_date)}")
+        concert_fields.extend(_fields_from_specs([
+            ("First event", ext.songkick_first_event_date, "esc"),
+            ("Last event", ext.songkick_last_event_date, "esc"),
+        ]))
         if ext.songkick_venue_countries:
             sk_countries = [c for c in ext.songkick_venue_countries if c not in (ext.setlistfm_venue_countries or [])]
             if sk_countries:
@@ -1274,22 +1287,19 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
         sections.append(_platform_section("Concerts / Touring", concert_fields, ext, match_key))
 
     # --- YouTube ---
-    yt_fields: list[str] = []
     if ext.youtube_checked and ext.youtube_channel_found:
-        if ext.youtube_subscriber_count:
-            yt_fields.append(f"<strong>Subscribers:</strong> {_fmt_num(ext.youtube_subscriber_count)}")
-        if ext.youtube_video_count:
-            yt_fields.append(f"<strong>Videos:</strong> {_fmt_num(ext.youtube_video_count)}")
-        if ext.youtube_view_count:
-            yt_fields.append(f"<strong>Total views:</strong> {_fmt_num(ext.youtube_view_count)}")
-        if ext.youtube_music_videos_found:
-            yt_fields.append(f"<strong>Music videos:</strong> {ext.youtube_music_videos_found}")
-    if yt_fields:
-        sections.append(_platform_section("YouTube", yt_fields, ext, "youtube"))
+        yt_fields = _fields_from_specs([
+            ("Subscribers", ext.youtube_subscriber_count, "num"),
+            ("Videos", ext.youtube_video_count, "num"),
+            ("Total views", ext.youtube_view_count, "num"),
+            ("Music videos", ext.youtube_music_videos_found, "raw"),
+        ])
+        if yt_fields:
+            sections.append(_platform_section("YouTube", yt_fields, ext, "youtube"))
 
     # --- PRO Registry ---
-    pro_fields: list[str] = []
     if ext.pro_checked:
+        pro_fields: list[str] = []
         registries: list[str] = []
         if ext.pro_found_bmi:
             registries.append("BMI")
@@ -1297,38 +1307,38 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
             registries.append("ASCAP")
         if registries:
             pro_fields.append(f"<strong>Registered:</strong> {', '.join(registries)}")
-        elif ext.pro_checked:
+        else:
             pro_fields.append("<strong>Registered:</strong> not found in BMI/ASCAP")
-        if ext.pro_works_count:
-            pro_fields.append(f"<strong>Registered works:</strong> {ext.pro_works_count}")
+        pro_fields.extend(_fields_from_specs([
+            ("Registered works", ext.pro_works_count, "raw"),
+        ]))
         if ext.pro_publishers:
             pro_fields.append(f"<strong>Publishers:</strong> {_esc(', '.join(ext.pro_publishers[:3]))}")
         if ext.pro_pfc_publisher_match:
             pro_fields.append("<strong>PFC publisher:</strong> match found")
         if ext.pro_songwriter_registered:
             pro_fields.append("<strong>Songwriter:</strong> registered")
-    if pro_fields:
-        sections.append(_platform_section("PRO Registry", pro_fields, ext, None))
+        if pro_fields:
+            sections.append(_platform_section("PRO Registry", pro_fields, ext, None))
 
     # --- Press Coverage ---
-    press_fields: list[str] = []
     if ext.press_checked:
+        press_fields: list[str] = []
         if ext.press_publications_found:
             press_fields.append(f"<strong>Publications:</strong> {_esc(', '.join(ext.press_publications_found[:5]))}")
         if ext.press_total_hits:
             press_fields.append(f"<strong>Total coverage:</strong> {ext.press_total_hits} hits")
         if not ext.press_publications_found and not ext.press_total_hits:
             press_fields.append("<strong>Coverage:</strong> none found")
-    if press_fields:
-        sections.append(_platform_section("Press Coverage", press_fields, ext, None))
+        if press_fields:
+            sections.append(_platform_section("Press Coverage", press_fields, ext, None))
 
     # --- ISRC ---
-    isrc_fields: list[str] = []
     if ext.isrcs:
+        isrc_fields: list[str] = []
         if ext.isrc_registrants:
             isrc_fields.append(f"<strong>Registrants:</strong> {_esc(', '.join(ext.isrc_registrants[:4]))}")
         isrc_fields.append(f"<strong>ISRC codes:</strong> {len(ext.isrcs)} tracked")
-    if isrc_fields:
         sections.append(_platform_section("ISRC Data", isrc_fields, ext, None))
 
     if not sections:
