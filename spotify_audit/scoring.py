@@ -104,6 +104,11 @@ class PlaylistReport:
     suspicious: int = 0
     likely_artificial: int = 0
 
+    # Scan metadata (for report output)
+    scan_duration_seconds: float = 0.0
+    api_source_counts: dict[str, int] = field(default_factory=dict)  # source -> call count
+    blocklist_version: str = ""
+
     # Legacy breakdown (kept for backward compatibility)
     verified_legit: int = 0
     probably_fine: int = 0

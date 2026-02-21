@@ -38,7 +38,7 @@ def _make_evaluation(
         artist_name="Test Artist",
         verdict=verdict,
         confidence=confidence,
-        platform_presence=PlatformPresence(spotify=True),
+        platform_presence=PlatformPresence(deezer=True),
         red_flags=red_flags or [],
         green_flags=green_flags or [],
     )

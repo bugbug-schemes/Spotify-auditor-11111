@@ -284,7 +284,7 @@ class Evidence:
         mood_word_titles     — track titles dominated by mood/atmosphere words
     """
     finding: str          # Short summary (e.g. "Found on Deezer with 145,231 fans")
-    source: str           # Data source (e.g. "Deezer", "Spotify", "Blocklist")
+    source: str           # Data source (e.g. "Deezer", "MusicBrainz", "Blocklist")
     evidence_type: str    # "red_flag", "green_flag", "neutral"
     strength: str         # "strong", "moderate", "weak"
     detail: str           # Longer explanation for the user
@@ -294,7 +294,6 @@ class Evidence:
 @dataclass
 class PlatformPresence:
     """Where does this artist exist across music platforms?"""
-    spotify: bool = False
     deezer: bool = False
     deezer_fans: int = 0
     musicbrainz: bool = False
@@ -307,7 +306,7 @@ class PlatformPresence:
 
     def count(self) -> int:
         return sum([
-            self.spotify, self.deezer, self.musicbrainz,
+            self.deezer, self.musicbrainz,
             self.genius, self.discogs, self.setlistfm,
             self.lastfm, self.wikipedia, self.songkick,
         ])
@@ -315,8 +314,6 @@ class PlatformPresence:
     def names(self) -> list[str]:
         """Return list of platform names where artist was found."""
         platforms = []
-        if self.spotify:
-            platforms.append("Spotify")
         if self.deezer:
             platforms.append(f"Deezer ({self.deezer_fans:,} fans)" if self.deezer_fans else "Deezer")
         if self.musicbrainz:
@@ -382,7 +379,6 @@ class ArtistEvaluation:
         """Which API sources were successfully reached."""
         ext = self.external_data or ExternalData()
         return {
-            "Spotify": self.platform_presence.spotify,
             "Deezer": self.platform_presence.deezer,
             "Genius": ext.genius_found,
             "Discogs": ext.discogs_found,
@@ -652,10 +648,6 @@ def _collect_platform_evidence(artist: ArtistInfo) -> tuple[PlatformPresence, li
     presence = PlatformPresence()
     evidence: list[Evidence] = []
 
-    # Spotify — we always have at least a name
-    if not artist.artist_id.startswith("name:"):
-        presence.spotify = True
-
     # Deezer — check if we resolved via Deezer
     if artist.artist_id.startswith("deezer:") or artist.deezer_fans > 0:
         presence.deezer = True
@@ -703,77 +695,51 @@ def _collect_platform_evidence(artist: ArtistInfo) -> tuple[PlatformPresence, li
 def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
     """Analyze follower/fan counts."""
     evidence: list[Evidence] = []
-    fans = artist.deezer_fans or artist.followers
+    fans = artist.deezer_fans
 
     if fans >= 100_000:
         evidence.append(Evidence(
             finding=f"{fans:,} fans",
-            source="Deezer" if artist.deezer_fans else "Spotify",
+            source="Deezer",
             evidence_type="green_flag",
             strength="strong",
-            detail=f"Artist has {fans:,} fans — substantial organic following.",
+            detail=f"Artist has {fans:,} fans on Deezer — substantial organic following.",
             tags=["genuine_fans"],
         ))
     elif fans >= 10_000:
         evidence.append(Evidence(
             finding=f"{fans:,} fans",
-            source="Deezer" if artist.deezer_fans else "Spotify",
+            source="Deezer",
             evidence_type="green_flag",
             strength="moderate",
-            detail=f"Artist has {fans:,} fans — meaningful audience.",
+            detail=f"Artist has {fans:,} fans on Deezer — meaningful audience.",
             tags=["genuine_fans"],
         ))
     elif fans >= 1_000:
         evidence.append(Evidence(
             finding=f"{fans:,} fans",
-            source="Deezer" if artist.deezer_fans else "Spotify",
+            source="Deezer",
             evidence_type="neutral",
             strength="weak",
-            detail=f"Artist has {fans:,} fans — small but plausible audience.",
+            detail=f"Artist has {fans:,} fans on Deezer — small but plausible audience.",
         ))
     elif fans > 0:
         evidence.append(Evidence(
             finding=f"Only {fans:,} fans",
-            source="Deezer" if artist.deezer_fans else "Spotify",
+            source="Deezer",
             evidence_type="red_flag",
             strength="weak",
-            detail=f"Only {fans:,} fans. Could be a new artist or a ghost artist.",
+            detail=f"Only {fans:,} fans on Deezer. Could be a new artist or a ghost artist.",
             tags=["low_fans"],
         ))
     else:
         evidence.append(Evidence(
-            finding="No follower/fan data available",
-            source="Spotify",
+            finding="No fan data available",
+            source="Deezer",
             evidence_type="neutral",
             strength="weak",
             detail="Could not determine fan count from available data.",
         ))
-
-    # Monthly listeners vs followers mismatch (if available)
-    if artist.monthly_listeners > 0 and artist.followers > 0:
-        ratio = artist.followers / artist.monthly_listeners
-        if ratio < 0.005:
-            evidence.append(Evidence(
-                finding=f"Listeners-to-followers ratio: {ratio:.4f}",
-                source="Spotify",
-                evidence_type="red_flag",
-                strength="strong",
-                detail=f"{artist.monthly_listeners:,} monthly listeners but only "
-                       f"{artist.followers:,} followers ({ratio:.3%}). Real artists "
-                       "typically convert 3-15% of listeners to followers. This "
-                       "suggests playlist-driven streams without real fans.",
-                tags=["playlist_stuffing"],
-            ))
-        elif ratio < 0.03:
-            evidence.append(Evidence(
-                finding=f"Low listener-to-follower ratio: {ratio:.3f}",
-                source="Spotify",
-                evidence_type="red_flag",
-                strength="moderate",
-                detail=f"{artist.monthly_listeners:,} listeners, {artist.followers:,} followers "
-                       f"({ratio:.1%}). On the low end for organic artists.",
-                tags=["playlist_stuffing"],
-            ))
 
     return evidence
 
@@ -787,7 +753,7 @@ def _collect_catalog_evidence(artist: ArtistInfo) -> list[Evidence]:
     if albums == 0 and singles == 0:
         evidence.append(Evidence(
             finding="Empty catalog",
-            source="Deezer" if artist.deezer_fans else "Spotify",
+            source="Deezer",
             evidence_type="red_flag",
             strength="moderate",
             detail="No albums or singles found. Could be a very new or fabricated artist.",
@@ -942,108 +908,135 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
         return evidence
 
     span_months = max(span_days / 30.0, 1)
+    span_years = span_months / 12.0
+
+    # Human-readable time span
+    def _fmt_span(months: float) -> str:
+        if months >= 24:
+            return f"{months / 12:.0f} years"
+        elif months >= 12:
+            return f"{months / 12:.1f} years"
+        else:
+            return f"{months:.0f} months"
+
+    span_str = _fmt_span(span_months)
 
     # Separate singles vs albums for proper thresholds
     albums = artist.album_count
     singles = artist.single_count
     total_releases = len(parsed)
 
-    # Calculate per-type rates when we have type breakdown
+    # Calculate per-year rates when we have type breakdown
     if albums + singles > 0:
-        albums_per_month = albums / span_months
-        singles_per_month = singles / span_months
-        releases_per_month = total_releases / span_months
+        albums_per_year = albums / max(span_years, 1/12)
+        singles_per_year = singles / max(span_years, 1/12)
+        singles_per_album = singles / albums if albums > 0 else float('inf')
 
-        # Albums: > 2/month is extreme, > 1/month is high
-        # Singles: > 6/month is extreme, > 3/month is high
-        if albums_per_month > 2:
+        # Build human-readable rate summary
+        rate_parts: list[str] = []
+        if albums > 0:
+            rate_parts.append(f"{albums_per_year:.1f} albums/year")
+        if singles > 0:
+            rate_parts.append(f"{singles_per_year:.1f} singles/year")
+        if albums > 0 and singles > 0:
+            rate_parts.append(f"{singles_per_album:.1f} singles per album")
+        rate_summary = ", ".join(rate_parts)
+
+        # Albums: > 24/year is extreme, > 12/year is high
+        if albums_per_year > 24:
             evidence.append(Evidence(
-                finding=f"{albums_per_month:.1f} albums/month (extreme)",
+                finding=f"{albums} albums over {span_str} — {albums_per_year:.0f}/year (extreme)",
                 source="Deezer",
                 evidence_type="red_flag",
                 strength="strong",
-                detail=f"Releasing {albums_per_month:.1f} albums per month over "
-                       f"{span_months:.0f} months ({albums} albums total). "
+                detail=f"{rate_summary}. "
                        "Albums require significant creative investment — this rate "
                        "suggests automated production.",
                 tags=["high_release_rate"],
             ))
-        elif albums_per_month > 1 and albums >= 3:
+        elif albums_per_year > 12 and albums >= 3:
             evidence.append(Evidence(
-                finding=f"{albums_per_month:.1f} albums/month (high)",
+                finding=f"{albums} albums over {span_str} — {albums_per_year:.0f}/year (high)",
                 source="Deezer",
                 evidence_type="red_flag",
                 strength="moderate",
-                detail=f"Releasing {albums_per_month:.1f} albums per month — "
-                       f"{albums} albums over {span_months:.0f} months is higher "
-                       "than most real artists.",
+                detail=f"{rate_summary}. Higher than most real artists.",
                 tags=["high_release_rate"],
             ))
 
-        if singles_per_month > 6:
+        # Singles: > 72/year is extreme, > 36/year is high
+        if singles_per_year > 72:
             evidence.append(Evidence(
-                finding=f"{singles_per_month:.1f} singles/month (extreme)",
+                finding=f"{singles} singles over {span_str} — {singles_per_year:.0f}/year (extreme)",
                 source="Deezer",
                 evidence_type="red_flag",
                 strength="strong",
-                detail=f"Releasing {singles_per_month:.1f} singles per month over "
-                       f"{span_months:.0f} months ({singles} singles total). "
-                       "Even prolific artists rarely release more than 2-3 singles/month.",
+                detail=f"{rate_summary}. "
+                       "Even prolific artists rarely release more than 24-36 singles/year.",
                 tags=["high_release_rate"],
             ))
-        elif singles_per_month > 3 and singles >= 5:
+        elif singles_per_year > 36 and singles >= 5:
             evidence.append(Evidence(
-                finding=f"{singles_per_month:.1f} singles/month (high)",
+                finding=f"{singles} singles over {span_str} — {singles_per_year:.0f}/year (high)",
                 source="Deezer",
                 evidence_type="red_flag",
                 strength="moderate",
-                detail=f"Releasing {singles_per_month:.1f} singles per month — "
-                       f"{singles} singles over {span_months:.0f} months.",
+                detail=f"{rate_summary}.",
+                tags=["high_release_rate"],
+            ))
+
+        # Singles-to-album ratio: many singles per album can indicate content farming
+        if albums >= 2 and singles_per_album > 10:
+            evidence.append(Evidence(
+                finding=f"{singles_per_album:.0f} singles per album (high ratio)",
+                source="Deezer",
+                evidence_type="red_flag",
+                strength="weak",
+                detail=f"{singles} singles vs {albums} albums ({singles_per_album:.1f}:1 ratio). "
+                       "A very high singles-to-album ratio can indicate a content farm approach.",
                 tags=["high_release_rate"],
             ))
 
         # Normal pace with enough history
-        if releases_per_month <= 1.5 and total_releases >= 5:
-            breakdown = f"{albums} albums + {singles} singles" if albums and singles else f"{total_releases} releases"
+        releases_per_year = (albums + singles) / max(span_years, 1/12)
+        if releases_per_year <= 18 and total_releases >= 5:
             evidence.append(Evidence(
-                finding=f"Steady release pace ({releases_per_month:.1f}/month, {breakdown})",
+                finding=f"Steady release pace over {span_str} ({rate_summary})",
                 source="Deezer",
                 evidence_type="green_flag",
                 strength="weak",
-                detail=f"Release cadence of {releases_per_month:.1f}/month over "
-                       f"{span_months:.0f} months is consistent with a working musician.",
+                detail=f"{albums} albums + {singles} singles over {span_str} "
+                       "is consistent with a working musician.",
             ))
     else:
         # Fallback: no type breakdown available
-        releases_per_month = total_releases / span_months
-        if releases_per_month > 8:
+        releases_per_year = total_releases / max(span_years, 1/12)
+        if releases_per_year > 96:
             evidence.append(Evidence(
-                finding=f"{releases_per_month:.1f} releases/month (extreme)",
+                finding=f"{total_releases} releases over {span_str} — {releases_per_year:.0f}/year (extreme)",
                 source="Deezer",
                 evidence_type="red_flag",
                 strength="strong",
-                detail=f"Releasing {releases_per_month:.1f} times per month over "
-                       f"{span_months:.0f} months. Even prolific artists rarely exceed "
-                       "2-3 releases/month. This rate suggests automated production.",
+                detail=f"Even prolific artists rarely exceed 24-36 releases/year. "
+                       "This rate suggests automated production.",
                 tags=["high_release_rate"],
             ))
-        elif releases_per_month > 4:
+        elif releases_per_year > 48:
             evidence.append(Evidence(
-                finding=f"{releases_per_month:.1f} releases/month (high)",
+                finding=f"{total_releases} releases over {span_str} — {releases_per_year:.0f}/year (high)",
                 source="Deezer",
                 evidence_type="red_flag",
                 strength="moderate",
-                detail=f"Releasing {releases_per_month:.1f} times per month — higher "
-                       "than most real artists.",
+                detail=f"Higher than most real artists.",
                 tags=["high_release_rate"],
             ))
-        elif releases_per_month <= 1 and total_releases >= 5:
+        elif releases_per_year <= 12 and total_releases >= 5:
             evidence.append(Evidence(
-                finding=f"Steady release pace ({releases_per_month:.1f}/month over {span_months:.0f} months)",
+                finding=f"Steady release pace ({total_releases} releases over {span_str})",
                 source="Deezer",
                 evidence_type="green_flag",
                 strength="weak",
-                detail="Release cadence is consistent with a working musician.",
+                detail=f"{releases_per_year:.1f} releases/year is consistent with a working musician.",
             ))
 
     return evidence
@@ -1199,23 +1192,28 @@ def _collect_collaboration_evidence(artist: ArtistInfo) -> list[Evidence]:
         ))
 
     # Related artists on Deezer
+    # Note: Deezer's related artist algorithm uses collaborative filtering,
+    # which can generate links for any artist appearing on similar playlists —
+    # including artificial ones. Treat as a weak signal only.
     if len(artist.related_artist_names) >= 5:
         evidence.append(Evidence(
             finding=f"{len(artist.related_artist_names)} related artists on Deezer",
             source="Deezer",
             evidence_type="green_flag",
-            strength="moderate",
+            strength="weak",
             detail=f"Deezer links this artist to: "
                    f"{', '.join(artist.related_artist_names[:5])}. "
-                   "Related artist connections develop organically from listener behavior.",
+                   "Related artist connections can develop from listener behavior, "
+                   "but can also appear for playlist-placed artists.",
         ))
     elif len(artist.related_artist_names) >= 1:
         evidence.append(Evidence(
             finding=f"{len(artist.related_artist_names)} related artist(s) on Deezer",
             source="Deezer",
-            evidence_type="green_flag",
+            evidence_type="neutral",
             strength="weak",
-            detail=f"Related: {', '.join(artist.related_artist_names[:3])}.",
+            detail=f"Related: {', '.join(artist.related_artist_names[:3])}. "
+                   "Deezer related artists can appear for both real and artificial artists.",
         ))
 
     return evidence
@@ -1275,28 +1273,39 @@ def _collect_credit_network_evidence(artist: ArtistInfo) -> list[Evidence]:
     return evidence
 
 
-def _collect_genre_evidence(artist: ArtistInfo) -> list[Evidence]:
-    """Analyze genre data."""
+def _collect_genre_evidence(artist: ArtistInfo, ext: "ExternalData | None" = None) -> list[Evidence]:
+    """Analyze genre data from Deezer or MusicBrainz."""
     evidence: list[Evidence] = []
 
-    if not artist.genres:
+    # Prefer MusicBrainz genres (community-curated), fall back to Deezer/artist genres
+    genres = []
+    genre_source = "Deezer"
+    if ext and ext.musicbrainz_genres:
+        genres = ext.musicbrainz_genres
+        genre_source = "MusicBrainz"
+    elif artist.genres:
+        genres = artist.genres
+
+    if not genres:
+        # Only flag as red if we checked MusicBrainz and found nothing
+        if ext and ext.musicbrainz_found:
+            evidence.append(Evidence(
+                finding="No genres assigned",
+                source="MusicBrainz",
+                evidence_type="red_flag",
+                strength="weak",
+                detail="No genre tags found on MusicBrainz. Established artists "
+                       "typically have community-assigned genre tags.",
+                tags=["no_genres"],
+            ))
+    elif len(genres) >= 3:
         evidence.append(Evidence(
-            finding="No genres assigned",
-            source="Spotify",
-            evidence_type="red_flag",
-            strength="weak",
-            detail="Spotify auto-assigns genres to established artists. "
-                   "No genres could mean the artist is too new or not recognized.",
-            tags=["no_genres"],
-        ))
-    elif len(artist.genres) >= 3:
-        evidence.append(Evidence(
-            finding=f"{len(artist.genres)} genres: {', '.join(artist.genres[:4])}",
-            source="Spotify",
+            finding=f"{len(genres)} genres: {', '.join(genres[:4])}",
+            source=genre_source,
             evidence_type="green_flag",
             strength="weak",
-            detail="Multiple genre classifications suggest Spotify recognizes this "
-                   "as an established artist.",
+            detail=f"Multiple genre classifications on {genre_source} suggest "
+                   "this is a recognized artist.",
         ))
 
     return evidence
@@ -3000,7 +3009,7 @@ def is_obviously_legitimate(artist: ArtistInfo) -> bool:
 
 def fast_mode_evaluation(artist: ArtistInfo) -> ArtistEvaluation:
     """Return a pre-built VERIFIED ARTIST evaluation for obviously legitimate artists."""
-    presence = PlatformPresence(spotify=True)
+    presence = PlatformPresence(deezer=True)
     if artist.deezer_fans > 0:
         presence.deezer = True
         presence.deezer_fans = artist.deezer_fans
@@ -3126,7 +3135,7 @@ def evaluate_artist(
     all_evidence.extend(_collect_name_evidence(artist))
     all_evidence.extend(_collect_collaboration_evidence(artist))
     all_evidence.extend(_collect_credit_network_evidence(artist))
-    all_evidence.extend(_collect_genre_evidence(artist))
+    all_evidence.extend(_collect_genre_evidence(artist, ext))
     all_evidence.extend(_collect_track_rank_evidence(artist))
 
     # Collect evidence from external APIs (Standard tier)
