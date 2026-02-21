@@ -18,6 +18,7 @@ from __future__ import annotations
 import logging
 import re
 import sqlite3
+import threading
 from contextlib import contextmanager
 from datetime import datetime, timezone
 from pathlib import Path
@@ -216,17 +217,33 @@ CREATE INDEX IF NOT EXISTS idx_artist_songwriters_sw ON artist_songwriters(songw
 # ---------------------------------------------------------------------------
 
 class EntityDB:
-    """SQLite-backed relational store for suspicious entities."""
+    """SQLite-backed relational store for suspicious entities.
+
+    Thread-safe: each thread gets its own SQLite connection via threading.local().
+    """
 
     def __init__(self, db_path: str | Path | None = None):
         self.db_path = Path(db_path) if db_path else DEFAULT_DB_PATH
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
-        self._conn = sqlite3.connect(str(self.db_path))
-        self._conn.row_factory = sqlite3.Row
-        self._conn.execute("PRAGMA journal_mode=WAL")
-        self._conn.execute("PRAGMA foreign_keys=ON")
+        self._local = threading.local()
         self._in_batch = False
         self._init_schema()
+
+    def _get_conn(self) -> sqlite3.Connection:
+        """Get or create a thread-local SQLite connection."""
+        conn = getattr(self._local, "conn", None)
+        if conn is None:
+            conn = sqlite3.connect(str(self.db_path), check_same_thread=False)
+            conn.row_factory = sqlite3.Row
+            conn.execute("PRAGMA journal_mode=WAL")
+            conn.execute("PRAGMA foreign_keys=ON")
+            self._local.conn = conn
+        return conn
+
+    @property
+    def _conn(self) -> sqlite3.Connection:
+        """Thread-local connection property — drop-in replacement for self._conn."""
+        return self._get_conn()
 
     def _init_schema(self) -> None:
         self._conn.executescript(_SCHEMA)
@@ -255,7 +272,10 @@ class EntityDB:
         self._conn.commit()
 
     def close(self) -> None:
-        self._conn.close()
+        conn = getattr(self._local, "conn", None)
+        if conn is not None:
+            conn.close()
+            self._local.conn = None
 
     @contextmanager
     def _tx(self):
