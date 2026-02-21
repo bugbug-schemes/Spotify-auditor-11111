@@ -68,6 +68,8 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             deep=deep,
             config=config,
             on_progress=on_progress,
+            use_cache=False,
+            use_entity_db=False,
         )
         html = to_html(playlist_report)
         scans[scan_id].update({
