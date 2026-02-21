@@ -64,19 +64,26 @@ class LastfmClient:
             "api_key": self.api_key,
             "format": "json",
         })
-        try:
-            resp = self._session.get(LASTFM_BASE, params=params, timeout=10)
-            resp.raise_for_status()
-            data = resp.json()
-            if "error" in data:
-                logger.debug("Last.fm error for %s: %s", method, data.get("message", ""))
+        for attempt in range(3):
+            try:
+                resp = self._session.get(LASTFM_BASE, params=params, timeout=10)
+                if resp.status_code == 429:
+                    wait = 2 ** (attempt + 1)
+                    logger.debug("Last.fm 429 rate-limited, backing off %ds", wait)
+                    time.sleep(wait)
+                    continue
+                resp.raise_for_status()
+                data = resp.json()
+                if "error" in data:
+                    logger.debug("Last.fm error for %s: %s", method, data.get("message", ""))
+                    return None
+                return data
+            except Exception as exc:
+                logger.debug("Last.fm %s failed: %s", method, exc)
                 return None
-            return data
-        except Exception as exc:
-            logger.debug("Last.fm %s failed: %s", method, exc)
-            return None
-        finally:
-            time.sleep(self.delay)
+            finally:
+                time.sleep(self.delay)
+        return None
 
     def get_artist_info(self, name: str, lastfm_name: str | None = None) -> LastfmArtist | None:
         """Get artist info including listeners, playcount, bio, tags.

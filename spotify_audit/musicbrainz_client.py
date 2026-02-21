@@ -84,10 +84,18 @@ class MusicBrainzClient:
 
     def _get(self, path: str, params: dict | None = None) -> dict:
         url = f"{MB_API}{path}"
-        r = self.session.get(url, params={**(params or {}), "fmt": "json"}, timeout=15)
+        for attempt in range(3):
+            r = self.session.get(url, params={**(params or {}), "fmt": "json"}, timeout=15)
+            if r.status_code == 429 or r.status_code == 503:
+                wait = 2 ** (attempt + 1)
+                logger.debug("MusicBrainz %d rate-limited, backing off %ds", r.status_code, wait)
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            time.sleep(self.delay)
+            return r.json()
         r.raise_for_status()
-        time.sleep(self.delay)
-        return r.json()
+        return {}
 
     def lookup_by_spotify_url(self, spotify_artist_id: str) -> MBArtist | None:
         """Find a MusicBrainz artist from a Spotify artist ID."""

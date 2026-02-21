@@ -66,10 +66,18 @@ class GeniusClient:
         if not self.enabled:
             return {}
         url = f"{GENIUS_API}{path}"
-        r = self.session.get(url, params=params, timeout=15)
-        r.raise_for_status()
-        time.sleep(self.delay)
-        return r.json()
+        for attempt in range(3):
+            r = self.session.get(url, params=params, timeout=15)
+            if r.status_code == 429:
+                wait = 2 ** (attempt + 1)
+                logger.debug("Genius 429 rate-limited, backing off %ds", wait)
+                time.sleep(wait)
+                continue
+            r.raise_for_status()
+            time.sleep(self.delay)
+            return r.json()
+        r.raise_for_status()  # raise on final 429
+        return {}
 
     def search_artist(self, name: str, genius_id: str | None = None) -> GeniusArtist | None:
         """Search for an artist by name using shared name matching.

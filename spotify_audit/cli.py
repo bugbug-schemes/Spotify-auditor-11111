@@ -41,7 +41,7 @@ from spotify_audit.known_entities import run_pre_check, auto_promote_entity
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
-from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, Evidence, incorporate_deep_evidence
+from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, Evidence, incorporate_deep_evidence, is_obviously_legitimate, fast_mode_evaluation
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
     finalize_artist_report,
@@ -180,12 +180,15 @@ def _render_summary_table(report: PlaylistReport, blocklist_report: BlocklistRep
             color = _color_for_verdict(ev.verdict)
             icon = _VERDICT_ICONS.get(ev.verdict, "")
 
-            # API source status
+            # API source status — distinguish found / not-found / error
             sources = ev.sources_reached
+            api_errors = ev.external_data.api_errors if ev.external_data else {}
             source_parts = []
             for name, reached in sources.items():
                 if reached:
                     source_parts.append(f"[green]{name}[/green]")
+                elif name in api_errors:
+                    source_parts.append(f"[red]{name}![/red]")
                 else:
                     source_parts.append(f"[dim]{name}[/dim]")
             sources_str = " ".join(source_parts)
@@ -495,10 +498,15 @@ def main(
     if output:
         Path(output).write_text(report_text)
         console.print(f"\n[green]Report written to {output}[/green]")
-    else:
-        if fmt != "md":
-            console.print(f"\n[dim]--- {fmt.upper()} report ---[/dim]")
-            click.echo(report_text)
+    elif fmt != "md":
+        # Auto-generate filename for non-markdown formats
+        safe_name = "".join(
+            c if c.isalnum() or c in "-_ " else "" for c in playlist_report.playlist_name
+        ).strip().replace(" ", "_")[:50] or "report"
+        ext = {"html": "html", "json": "json"}.get(fmt, fmt)
+        auto_path = Path(f"{safe_name}.{ext}")
+        auto_path.write_text(report_text)
+        console.print(f"\n[green]{fmt.upper()} report written to {auto_path}[/green]")
 
 
 def _resolve_artist_by_name(
@@ -649,6 +657,7 @@ def _lookup_external_data(
                 platform_ids = get_platform_ids_from_musicbrainz(mb.urls)
                 logger.debug("MusicBrainz platform IDs for '%s': %s", search_name, platform_ids)
     except Exception as exc:
+        ext.api_errors["MusicBrainz"] = str(exc)
         logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 
     # ------------------------------------------------------------------
@@ -675,6 +684,7 @@ def _lookup_external_data(
                 ext.genius_followers_count = ga.followers_count
                 ext.genius_alternate_names = ga.alternate_names
         except Exception as exc:
+            ext.api_errors["Genius"] = str(exc)
             logger.warning("Genius lookup failed for '%s': %s", search_name, exc)
 
     def _lookup_discogs() -> None:
@@ -698,6 +708,7 @@ def _lookup_external_data(
                 ext.discogs_groups = da.groups
                 ext.discogs_data_quality = da.data_quality
         except Exception as exc:
+            ext.api_errors["Discogs"] = str(exc)
             logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
 
     def _lookup_setlistfm() -> None:
@@ -719,6 +730,7 @@ def _lookup_external_data(
                 ext.setlistfm_venue_countries = sa.venue_countries
                 ext.setlistfm_tour_names = sa.tour_names
         except Exception as exc:
+            ext.api_errors["Setlist.fm"] = str(exc)
             logger.warning("Setlist.fm lookup failed for '%s': %s", search_name, exc)
 
     def _lookup_lastfm() -> None:
@@ -741,6 +753,7 @@ def _lookup_external_data(
                 ext.lastfm_similar_artists = la.similar_artists
                 ext.lastfm_bio_exists = bool(la.bio and len(la.bio) > 50)
         except Exception as exc:
+            ext.api_errors["Last.fm"] = str(exc)
             logger.debug("Last.fm lookup failed for '%s': %s", search_name, exc)
 
     def _lookup_wikipedia() -> None:
@@ -762,6 +775,7 @@ def _lookup_external_data(
                 ext.wikipedia_monthly_views = wa.monthly_views
                 ext.wikipedia_url = wa.url
         except Exception as exc:
+            ext.api_errors["Wikipedia"] = str(exc)
             logger.debug("Wikipedia lookup failed for '%s': %s", search_name, exc)
 
     def _lookup_songkick() -> None:
@@ -785,6 +799,7 @@ def _lookup_external_data(
                 ext.songkick_venue_countries = sa.venue_countries
                 ext.songkick_event_types = sa.event_types
         except Exception as exc:
+            ext.api_errors["Songkick"] = str(exc)
             logger.debug("Songkick lookup failed for '%s': %s", search_name, exc)
 
     # Fire remaining API lookups concurrently (MusicBrainz already done in Phase 1)
@@ -1019,8 +1034,24 @@ def _run_audit(
             f"({', '.join(configured)})...[/bold cyan]"
         )
 
+        fast_mode_count = 0
+
         def _lookup_and_evaluate(key: str, artist: ArtistInfo) -> tuple[str, ExternalData, ArtistEvaluation, StandardScanResult]:
             """Run pre-check + external lookups + conditional enrichment + evidence eval."""
+            nonlocal fast_mode_count
+
+            # Fast Mode: skip external APIs for obviously legitimate artists
+            if is_obviously_legitimate(artist):
+                fast_mode_count += 1
+                ev = fast_mode_evaluation(artist)
+                ext = ExternalData()
+                qr = quick_results[key]
+                sr = standard_scan_from_external(
+                    quick_result=qr, ext=ext,
+                    deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
+                    weights=config.standard_weights,
+                )
+                return (key, ext, ev, sr)
 
             # Priority 1: Known entity pre-check (runs first)
             pre = run_pre_check(
@@ -1190,6 +1221,12 @@ def _run_audit(
                     evaluations[key] = ev
                     standard_results[key] = sr
                     progress.advance(ext_task)
+
+    if fast_mode_count:
+        console.print(
+            f"[dim]{fast_mode_count} artist(s) fast-tracked "
+            f"(500K+ followers, Wikipedia, 3+ genres, 5+ albums, clean blocklists)[/dim]"
+        )
 
     # Safety fallback: evaluate any artist that somehow missed Phase 2
     for key in quick_results:
