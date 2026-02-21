@@ -395,7 +395,7 @@ def _run_audit_core(
             entity_db = None
 
     # Set up API clients
-    deezer_client = DeezerClient(delay=0.3)
+    deezer_client = DeezerClient(delay=0.5)
     mb_client = MusicBrainzClient(delay=1.1)
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
@@ -464,7 +464,7 @@ def _run_audit_core(
         return (key, artist, cached_qr, False)
 
     resolved_i = 0
-    with ThreadPoolExecutor(max_workers=4, thread_name_prefix="resolve") as pool:
+    with ThreadPoolExecutor(max_workers=2, thread_name_prefix="resolve") as pool:
         futures = {
             pool.submit(_resolve_single, key, is_id): key
             for key, is_id in artist_keys

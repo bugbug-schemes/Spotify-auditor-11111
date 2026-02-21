@@ -7,6 +7,7 @@ outside Spotify and to check fan counts, discography, label info, and more.
 
 from __future__ import annotations
 
+import threading
 import time
 import logging
 from dataclasses import dataclass, field
@@ -58,8 +59,20 @@ class DeezerArtist:
     isrc_registrants: list[str] = field(default_factory=list)  # unique registrant codes
 
 
+class DeezerQuotaError(Exception):
+    """Raised when Deezer returns a quota limit exceeded error."""
+    pass
+
+
 class DeezerClient:
     """Thin wrapper around the Deezer public API."""
+
+    # Deezer allows ~50 requests per 5 seconds. Use a shared lock
+    # so concurrent threads don't collectively exceed the limit.
+    _rate_lock = threading.Lock()
+    _request_times: list[float] = []
+    _MAX_REQUESTS_PER_WINDOW = 40  # conservative (limit is 50)
+    _WINDOW_SECONDS = 5.0
 
     def __init__(self, delay: float = 0.5) -> None:
         self.session = requests.Session()
@@ -70,20 +83,64 @@ class DeezerClient:
         self.session.mount("https://", adapter)
         self.session.mount("http://", adapter)
         self.delay = delay
+        self._max_retries = 4
+
+    def _wait_for_rate_limit(self) -> None:
+        """Block until we're under the per-window request limit."""
+        with DeezerClient._rate_lock:
+            now = time.time()
+            cutoff = now - DeezerClient._WINDOW_SECONDS
+            # Prune old timestamps
+            DeezerClient._request_times = [
+                t for t in DeezerClient._request_times if t > cutoff
+            ]
+            if len(DeezerClient._request_times) >= DeezerClient._MAX_REQUESTS_PER_WINDOW:
+                # Wait until the oldest request in the window expires
+                sleep_time = DeezerClient._request_times[0] - cutoff + 0.1
+                if sleep_time > 0:
+                    logger.debug("Deezer rate limiter: sleeping %.1fs", sleep_time)
+                    time.sleep(sleep_time)
+            DeezerClient._request_times.append(time.time())
 
     def _get(self, path: str, params: dict | None = None) -> dict:
         url = f"{DEEZER_API}{path}"
-        r = self.session.get(url, params=params, timeout=15)
-        r.raise_for_status()
-        data = r.json()
-        if "error" in data:
-            logger.warning("Deezer API error: %s", data["error"])
-        time.sleep(self.delay)
-        return data
+        last_exc = None
+
+        for attempt in range(self._max_retries + 1):
+            self._wait_for_rate_limit()
+            r = self.session.get(url, params=params, timeout=15)
+            r.raise_for_status()
+            data = r.json()
+
+            if "error" in data:
+                error = data["error"]
+                # Quota limit exceeded — retry with exponential backoff
+                if error.get("code") == 4:
+                    wait = min(2 ** attempt, 16)
+                    logger.warning(
+                        "Deezer quota exceeded (attempt %d/%d), retrying in %ds...",
+                        attempt + 1, self._max_retries + 1, wait,
+                    )
+                    last_exc = DeezerQuotaError(str(error))
+                    time.sleep(wait)
+                    continue
+                # Other API errors — log and return (non-retryable)
+                logger.warning("Deezer API error: %s", error)
+
+            time.sleep(self.delay)
+            return data
+
+        # All retries exhausted
+        logger.error("Deezer quota limit exceeded after %d retries for %s", self._max_retries + 1, path)
+        raise last_exc or DeezerQuotaError("Quota limit exceeded")
 
     def search_artist(self, name: str) -> DeezerArtist | None:
         """Search for an artist by name using shared name matching."""
-        data = self._get("/search/artist", {"q": name, "limit": 5})
+        try:
+            data = self._get("/search/artist", {"q": name, "limit": 5})
+        except DeezerQuotaError:
+            logger.warning("Deezer quota hit searching for '%s', skipping", name)
+            return None
         results = data.get("data", [])
         if not results:
             log_match("Deezer", name, MatchResult(found=False))
@@ -128,9 +185,13 @@ class DeezerClient:
             logger.debug("Could not fetch full artist data for %s: %s", artist.name, exc)
 
         # --- Albums (with label info and release dates) ---
-        data = self._get(f"/artist/{artist.deezer_id}/albums", {"limit": 100})
-        artist.albums = data.get("data", [])
-        artist.nb_album = len(artist.albums)
+        try:
+            data = self._get(f"/artist/{artist.deezer_id}/albums", {"limit": 100})
+            artist.albums = data.get("data", [])
+            artist.nb_album = len(artist.albums)
+        except DeezerQuotaError:
+            logger.warning("Deezer quota hit fetching albums for %s, returning partial data", artist.name)
+            return artist
 
         # Extract labels, album type breakdown, and release dates
         labels_seen: set[str] = set()
@@ -152,7 +213,11 @@ class DeezerClient:
         artist.album_release_dates = release_dates
 
         # --- Top tracks (with duration, rank, contributors) ---
-        data = self._get(f"/artist/{artist.deezer_id}/top", {"limit": 25})
+        try:
+            data = self._get(f"/artist/{artist.deezer_id}/top", {"limit": 25})
+        except DeezerQuotaError:
+            logger.warning("Deezer quota hit fetching top tracks for %s, returning partial data", artist.name)
+            return artist
         artist.top_tracks = data.get("data", [])
 
         titles: list[str] = []
