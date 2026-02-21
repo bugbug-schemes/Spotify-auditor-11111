@@ -741,11 +741,12 @@ body {{
 .card:hover {{ border-color: #2a3a4a; }}
 .card-row {{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 12px 16px;
   gap: 12px;
   cursor: pointer;
   user-select: none;
+  flex-wrap: wrap;
 }}
 .score-badge {{
   width: 38px; height: 38px;
@@ -756,21 +757,18 @@ body {{
   flex-shrink: 0;
   color: #fff;
   font-variant-numeric: tabular-nums;
+  margin-top: 2px;
 }}
 .card-info {{ flex: 1; min-width: 0; }}
 .card-name {{
   font-weight: 600;
   color: var(--text-bright);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  word-break: break-word;
 }}
 .card-stats {{
   font-size: 0.78rem;
   color: var(--text-dim);
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  line-height: 1.6;
 }}
 .pill {{
   display: inline-block;
@@ -780,6 +778,7 @@ body {{
   font-weight: 600;
   white-space: nowrap;
   flex-shrink: 0;
+  margin-top: 2px;
 }}
 .threat-pill {{
   font-size: 0.68rem;
@@ -787,12 +786,14 @@ body {{
   border-radius: 10px;
   white-space: nowrap;
   flex-shrink: 0;
+  margin-top: 2px;
 }}
 .chevron {{
   color: var(--text-dim);
   font-size: 0.8rem;
   transition: transform 0.2s;
   flex-shrink: 0;
+  margin-top: 6px;
 }}
 .card.open .chevron {{ transform: rotate(180deg); }}
 
@@ -1025,8 +1026,7 @@ function toggleAll() {{
   }});
   btn.textContent = anyOpen ? 'Expand All' : 'Collapse All';
 }}
-// Auto-expand flagged artists
-document.querySelectorAll('.card[data-flagged="true"]').forEach(c => c.classList.add('open'));
+// All cards start collapsed — user clicks to expand
 </script>
 </body>
 </html>"""
@@ -1098,32 +1098,78 @@ def _build_card(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
 
 
 def _build_stats_line(a: ArtistReport, ev: ArtistEvaluation | None) -> str:
-    """Build the one-line stats summary for collapsed card."""
+    """Build the two-line stats summary for collapsed card.
+
+    Line 1: Bad actor check + PRO registry result (search/lookup indicators)
+    Line 2: Platform data (Deezer fans, Last.fm, shows, etc.)
+    """
     if not ev:
         return ""
     ext = ev.external_data or ExternalData()
-    parts: list[str] = []
+
+    # --- Line 1: Search/lookup indicators ---
+    search_parts: list[str] = []
+
+    # Bad actor / blocklist check
+    all_tags: set[str] = set()
+    for e in ev.red_flags + ev.green_flags:
+        if e.tags:
+            all_tags.update(e.tags)
+
+    if all_tags & {"entity_confirmed_bad", "known_bad_actor"}:
+        search_parts.append('<span style="color:#ef4444">&#9940; Bad actor match</span>')
+    elif all_tags & {"pfc_label", "known_ai_label", "pfc_songwriter", "known_ai_artist"}:
+        tag_names: list[str] = []
+        if all_tags & {"pfc_label", "known_ai_label"}:
+            tag_names.append("PFC label")
+        if all_tags & {"pfc_songwriter"}:
+            tag_names.append("PFC writer")
+        if all_tags & {"known_ai_artist"}:
+            tag_names.append("AI artist")
+        search_parts.append(f'<span style="color:#f59e0b">&#9888; {", ".join(tag_names)}</span>')
+    elif all_tags & {"entity_suspected"}:
+        search_parts.append('<span style="color:#f59e0b">&#9888; Suspected entity</span>')
+    else:
+        search_parts.append('<span style="color:#556">&#10003; Blocklist clear</span>')
+
+    # PRO registry (publishing databases)
+    if ext.pro_checked:
+        pro_names: list[str] = []
+        if ext.pro_found_bmi:
+            pro_names.append("BMI")
+        if ext.pro_found_ascap:
+            pro_names.append("ASCAP")
+        if pro_names:
+            works_str = f", {ext.pro_works_count} works" if ext.pro_works_count else ""
+            search_parts.append(f'<span style="color:#22c55e">PRO: {"+".join(pro_names)}{works_str}</span>')
+        else:
+            search_parts.append('<span style="color:#f59e0b">No PRO registration</span>')
+
+    # --- Line 2: Platform data ---
+    data_parts: list[str] = []
 
     if ev.platform_presence.deezer_fans:
-        parts.append(f"Deezer fans: {_fmt_num(ev.platform_presence.deezer_fans)}")
+        data_parts.append(f"Deezer fans: {_fmt_num(ev.platform_presence.deezer_fans)}")
     if ext.lastfm_listeners:
-        parts.append(f"Last.fm: {_fmt_num(ext.lastfm_listeners)} listeners")
+        data_parts.append(f"Last.fm: {_fmt_num(ext.lastfm_listeners)} listeners")
     if ext.setlistfm_total_shows:
-        parts.append(f"{ext.setlistfm_total_shows} shows")
+        data_parts.append(f"{ext.setlistfm_total_shows} shows")
     if ext.discogs_physical_releases:
-        parts.append(f"{ext.discogs_physical_releases} vinyl/CD")
+        data_parts.append(f"{ext.discogs_physical_releases} vinyl/CD")
     if ext.wikipedia_found:
-        parts.append("Wikipedia")
+        data_parts.append("Wikipedia")
 
     # Fallback
-    if not parts:
-        parts.append(f"{len(ev.green_flags)} green / {len(ev.red_flags)} red flags")
+    if not data_parts:
+        data_parts.append(f"{len(ev.green_flags)} green / {len(ev.red_flags)} red flags")
 
     # Labels
     if ev.labels:
-        parts.append(_esc(ev.labels[0]))
+        data_parts.append(_esc(ev.labels[0]))
 
-    return " &middot; ".join(parts[:4])
+    line1 = " &middot; ".join(search_parts)
+    line2 = " &middot; ".join(data_parts[:5])
+    return f'{line1}<br>{line2}'
 
 
 def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
