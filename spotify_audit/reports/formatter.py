@@ -2,14 +2,15 @@
 Report formatters: Markdown, HTML (with radar charts), and JSON output.
 
 The HTML report produces:
-- A summary table with all artists, sortable with click-to-expand
-- Per-artist detailed scorecards with radar charts, evidence flags,
-  data fields from all 10+ API sources, and match quality metadata
+- A summary dashboard with health gauge, verdict/threat bars, key metrics
+- Per-artist expandable detail cards with SVG radar charts, evidence flags,
+  metadata grids, and related entity connections
 """
 
 from __future__ import annotations
 
 import json
+import math
 import html as html_mod
 from datetime import datetime, timezone
 
@@ -209,14 +210,12 @@ def _evidence_to_dict(e: Evidence) -> dict:
 def to_markdown(report: PlaylistReport) -> str:
     lines: list[str] = []
 
-    lines.append(f"# Spotify Audit Report: {report.playlist_name}")
+    lines.append(f"# Playlist Audit Report: {report.playlist_name}")
     lines.append("")
     lines.append(f"**Playlist ID:** `{report.playlist_id}`")
     lines.append(f"**Owner:** {report.owner}")
     lines.append(f"**Total tracks:** {report.total_tracks}")
     lines.append(f"**Unique artists analyzed:** {report.total_unique_artists}")
-    if report.is_spotify_owned:
-        lines.append("**Spotify-owned playlist:** Yes")
     lines.append("")
 
     # Health score
@@ -287,17 +286,6 @@ def to_markdown(report: PlaylistReport) -> str:
                 lines.append(f"- {name}: {status}")
             lines.append("")
 
-            # Platform presence
-            platforms = ev.platform_presence.names()
-            if platforms:
-                lines.append(f"**Found on:** {', '.join(platforms)}")
-            lines.append("")
-
-            # Decision path
-            if ev.decision_path:
-                lines.append(f"**How we decided:** {' -> '.join(ev.decision_path)}")
-                lines.append("")
-
             # Red flags
             if ev.red_flags:
                 lines.append("**Red Flags:**")
@@ -347,28 +335,40 @@ def _md_key_evidence(ev: ArtistEvaluation) -> str:
 
 
 # ---------------------------------------------------------------------------
-# HTML — Summary table + expandable artist detail cards
+# HTML — Full report with summary dashboard + expandable artist detail cards
 # ---------------------------------------------------------------------------
 
-_VERDICT_COLORS_CSS = {
+_VERDICT_COLORS = {
     "Verified Artist": "#22c55e",
-    "Likely Authentic": "#84cc16",
-    "Inconclusive": "#eab308",
-    "Insufficient Data": "#a78bfa",
-    "Conflicting Signals": "#f59e0b",
-    "Suspicious": "#f97316",
+    "Likely Authentic": "#3b82f6",
+    "Inconclusive": "#94a3b8",
+    "Insufficient Data": "#94a3b8",
+    "Conflicting Signals": "#94a3b8",
+    "Suspicious": "#f59e0b",
     "Likely Artificial": "#ef4444",
 }
 
-_VERDICT_BG_CSS = {
-    "Verified Artist": "#f0fdf4",
-    "Likely Authentic": "#f7fee7",
-    "Inconclusive": "#fefce8",
-    "Insufficient Data": "#f5f3ff",
-    "Conflicting Signals": "#fffbeb",
-    "Suspicious": "#fff7ed",
-    "Likely Artificial": "#fef2f2",
+_THREAT_COLORS = {
+    "PFC Ghost Artist": "#f59e0b",
+    "PFC + AI Hybrid": "#f97316",
+    "Independent AI Artist": "#a78bfa",
+    "AI Fraud Farm": "#ef4444",
+    "AI Impersonation": "#ec4899",
 }
+
+_VERDICT_SORT = {
+    "Likely Artificial": 0, "Suspicious": 1, "Inconclusive": 2,
+    "Insufficient Data": 2, "Conflicting Signals": 2,
+    "Likely Authentic": 3, "Verified Artist": 4,
+}
+
+_VERDICT_HEALTH = {
+    "Verified Artist": 100, "Likely Authentic": 85, "Inconclusive": 50,
+    "Insufficient Data": 50, "Conflicting Signals": 50,
+    "Suspicious": 25, "Likely Artificial": 0,
+}
+
+_STRENGTH_PTS = {"strong": 3, "moderate": 2, "weak": 1}
 
 
 def _esc(text: str) -> str:
@@ -381,660 +381,799 @@ def _fmt_num(n: int) -> str:
     return f"{n:,}"
 
 
-def to_html(report: PlaylistReport) -> str:
-    """Generate a self-contained HTML report with summary table + expandable cards."""
-    artist_cards = []
-    chart_scripts = []
-    summary_rows = []
+def _strength_dots(strength: str, color_on: str = "#ef4444") -> str:
+    """Render strength indicator dots."""
+    pts = _STRENGTH_PTS.get(strength, 1)
+    on = f'<span style="color:{color_on}">&#9679;</span>'
+    off = '<span style="color:#333">&#9679;</span>'
+    label = strength.capitalize()
+    return f'{on * pts}{off * (3 - pts)} <span style="color:#666;font-size:0.75rem">{label}</span>'
 
-    for idx, a in enumerate(report.artists):
-        ev = a.evaluation
-        summary_rows.append(_build_summary_row(a, ev, idx))
-        if ev:
-            card_html, chart_js = _build_artist_card_html(a, ev, idx)
-            artist_cards.append(card_html)
-            chart_scripts.append(chart_js)
 
-    health = report.health_score
-    if health >= 80:
-        health_color = "#22c55e"
-    elif health >= 60:
-        health_color = "#eab308"
-    elif health >= 40:
-        health_color = "#f97316"
+# ---------------------------------------------------------------------------
+# SVG Radar Chart (inline, no JS library needed)
+# ---------------------------------------------------------------------------
+
+def _radar_svg(scores: dict[str, int], color: str, size: int = 260) -> str:
+    """Generate an inline SVG hexagonal radar chart."""
+    labels = list(scores.keys())
+    values = [scores[k] / 100.0 for k in labels]  # normalize to 0-1
+    n = len(labels)
+    if n < 3:
+        return ""
+
+    cx, cy = size / 2, size / 2
+    r = size / 2 - 30  # leave room for labels
+
+    def _point(angle_idx: int, radius_frac: float) -> tuple[float, float]:
+        angle = (2 * math.pi * angle_idx / n) - math.pi / 2
+        return cx + radius_frac * r * math.cos(angle), cy + radius_frac * r * math.sin(angle)
+
+    # Grid lines at 25%, 50%, 75%, 100%
+    grid_lines = ""
+    for frac in (0.25, 0.5, 0.75, 1.0):
+        pts = " ".join(f"{_point(i, frac)[0]:.1f},{_point(i, frac)[1]:.1f}" for i in range(n))
+        grid_lines += f'<polygon points="{pts}" fill="none" stroke="#1a2332" stroke-width="1"/>\n'
+
+    # Spoke lines
+    spokes = ""
+    for i in range(n):
+        x, y = _point(i, 1.0)
+        spokes += f'<line x1="{cx}" y1="{cy}" x2="{x:.1f}" y2="{y:.1f}" stroke="#1a2332" stroke-width="1"/>\n'
+
+    # Data polygon
+    data_pts = " ".join(f"{_point(i, max(v, 0.02))[0]:.1f},{_point(i, max(v, 0.02))[1]:.1f}"
+                        for i, v in enumerate(values))
+
+    # Labels
+    label_elems = ""
+    for i, label in enumerate(labels):
+        lx, ly = _point(i, 1.22)
+        anchor = "middle"
+        if lx < cx - 10:
+            anchor = "end"
+        elif lx > cx + 10:
+            anchor = "start"
+        score_val = scores[label]
+        label_elems += (
+            f'<text x="{lx:.1f}" y="{ly:.1f}" fill="#8899aa" font-size="9" '
+            f'text-anchor="{anchor}" dominant-baseline="middle">'
+            f'{_esc(label)}</text>\n'
+            f'<text x="{lx:.1f}" y="{ly + 12:.1f}" fill="{color}" font-size="10" '
+            f'font-weight="bold" text-anchor="{anchor}" dominant-baseline="middle">'
+            f'{score_val}</text>\n'
+        )
+
+    return f"""<svg viewBox="0 0 {size} {size}" width="{size}" height="{size}"
+     xmlns="http://www.w3.org/2000/svg" style="display:block">
+  {grid_lines}
+  {spokes}
+  <polygon points="{data_pts}" fill="{color}" fill-opacity="0.15"
+           stroke="{color}" stroke-width="2"/>
+  {label_elems}
+</svg>"""
+
+
+# ---------------------------------------------------------------------------
+# Health score gauge (SVG semicircle)
+# ---------------------------------------------------------------------------
+
+def _health_gauge_svg(score: int) -> str:
+    """Generate an SVG semicircular gauge for the health score."""
+    if score >= 75:
+        color = "#22c55e"
+    elif score >= 40:
+        color = "#f59e0b"
     else:
-        health_color = "#ef4444"
+        color = "#ef4444"
 
-    summary_table = "\n".join(summary_rows)
+    # Semicircle arc from 180 to 0 degrees
+    r = 70
+    cx, cy = 80, 85
+    circumference = math.pi * r
+    filled = circumference * score / 100
 
-    return f"""<!DOCTYPE html>
+    return f"""<svg viewBox="0 0 160 100" width="200" height="125" xmlns="http://www.w3.org/2000/svg">
+  <path d="M 10 85 A 70 70 0 0 1 150 85" fill="none" stroke="#1a2332" stroke-width="12" stroke-linecap="round"/>
+  <path d="M 10 85 A 70 70 0 0 1 150 85" fill="none" stroke="{color}" stroke-width="12"
+        stroke-linecap="round" stroke-dasharray="{filled:.1f} {circumference:.1f}"/>
+  <text x="{cx}" y="{cy - 10}" fill="{color}" font-size="36" font-weight="bold"
+        text-anchor="middle" dominant-baseline="middle">{score}</text>
+  <text x="{cx}" y="{cy + 12}" fill="#667" font-size="10"
+        text-anchor="middle">Health Score</text>
+</svg>"""
+
+
+# ---------------------------------------------------------------------------
+# Stacked bar helpers
+# ---------------------------------------------------------------------------
+
+def _stacked_bar(segments: list[tuple[str, int, str]], total: int) -> str:
+    """Render a horizontal stacked bar."""
+    if total == 0:
+        return '<div style="height:28px;background:#1a2332;border-radius:4px"></div>'
+    parts = []
+    for label, count, color in segments:
+        if count <= 0:
+            continue
+        pct = count / total * 100
+        parts.append(
+            f'<div style="width:{pct:.1f}%;background:{color};display:flex;align-items:center;'
+            f'justify-content:center;font-size:0.7rem;color:#fff;white-space:nowrap;'
+            f'min-width:20px" title="{_esc(label)}: {count}">{count}</div>'
+        )
+    return (
+        '<div style="display:flex;height:28px;border-radius:4px;overflow:hidden;gap:1px">'
+        + "".join(parts) + '</div>'
+    )
+
+
+# ---------------------------------------------------------------------------
+# Main HTML generator
+# ---------------------------------------------------------------------------
+
+def to_html(report: PlaylistReport) -> str:
+    """Generate a self-contained HTML report matching the output spec."""
+    now = datetime.now(timezone.utc)
+
+    # Sort artists: worst verdict first, then by score ascending
+    sorted_artists = sorted(
+        report.artists,
+        key=lambda a: (_VERDICT_SORT.get(a.verdict, 2), a.final_score),
+    )
+
+    # Compute threat category breakdown
+    threat_counts: dict[str, int] = {}
+    for a in sorted_artists:
+        if a.threat_category_name:
+            threat_counts[a.threat_category_name] = threat_counts.get(a.threat_category_name, 0) + 1
+
+    # Compute metrics
+    flagged = report.suspicious + report.likely_artificial
+    contamination = (flagged / report.total_unique_artists * 100) if report.total_unique_artists else 0
+    total_api_calls = sum(report.api_source_counts.values()) if report.api_source_counts else 0
+
+    # Build artist cards
+    artist_cards_html = []
+    for idx, a in enumerate(sorted_artists):
+        ev = a.evaluation
+        artist_cards_html.append(_build_card(a, ev, idx))
+
+    # Verdict bar segments
+    verdict_segments = [
+        ("Verified Artist", report.verified_artists, "#22c55e"),
+        ("Likely Authentic", report.likely_authentic, "#3b82f6"),
+        ("Inconclusive", report.inconclusive, "#94a3b8"),
+        ("Suspicious", report.suspicious, "#f59e0b"),
+        ("Likely Artificial", report.likely_artificial, "#ef4444"),
+    ]
+
+    # Threat bar segments
+    threat_segments = [
+        (name, threat_counts.get(name, 0), _THREAT_COLORS.get(name, "#888"))
+        for name in ["PFC Ghost Artist", "PFC + AI Hybrid", "Independent AI Artist",
+                      "AI Fraud Farm", "AI Impersonation"]
+    ]
+
+    # Data sources panel
+    sources_html = ""
+    if report.api_source_counts:
+        dots = []
+        for name, count in report.api_source_counts.items():
+            dots.append(f'<span class="src-dot"><span class="dot-ok"></span> {_esc(name)} ({count})</span>')
+        sources_html = '<div class="sources-row">' + " ".join(dots) + '</div>'
+        sources_html += f'<div style="color:#556;font-size:0.75rem;margin-top:4px">Total: {total_api_calls} API calls</div>'
+
+    # Duration
+    duration_str = ""
+    if report.scan_duration_seconds:
+        mins = int(report.scan_duration_seconds // 60)
+        secs = int(report.scan_duration_seconds % 60)
+        duration_str = f"{mins}m {secs}s" if mins else f"{secs}s"
+
+    page = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Spotify Audit: {_esc(report.playlist_name)}</title>
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+<title>Playlist Audit: {_esc(report.playlist_name)}</title>
 <style>
-  * {{ box-sizing: border-box; margin: 0; padding: 0; }}
-  body {{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-    background: #0f0f0f; color: #e0e0e0; padding: 2rem;
-  }}
-  .container {{ max-width: 1200px; margin: 0 auto; }}
-  h1 {{ color: #1DB954; font-size: 1.8rem; margin-bottom: 0.5rem; }}
-  .subtitle {{ color: #888; margin-bottom: 2rem; }}
+:root {{
+  --bg: #06090f;
+  --card: #0d1219;
+  --border: #1a2332;
+  --accent: #1DB954;
+  --text: #c8d0da;
+  --text-dim: #667788;
+  --text-bright: #e8eef4;
+}}
+*,*::before,*::after {{ box-sizing:border-box; margin:0; padding:0 }}
+body {{
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}}
+.container {{ max-width: 1200px; margin: 0 auto; padding: 24px 16px }}
 
-  /* Playlist header */
-  .playlist-header {{
-    background: #1a1a1a; border-radius: 12px; padding: 1.5rem; margin-bottom: 2rem;
-    border: 1px solid #333; display: flex; align-items: center; gap: 2rem;
-    flex-wrap: wrap;
-  }}
-  .health-block {{ text-align: center; min-width: 140px; }}
-  .health-score {{
-    font-size: 3rem; font-weight: 700;
-  }}
-  .health-label {{ color: #888; font-size: 0.85rem; margin-bottom: 0.3rem; }}
-  .verdict-grid {{
-    display: flex; gap: 0.5rem; flex-wrap: wrap; flex: 1;
-    justify-content: center; align-items: center;
-  }}
-  .verdict-pill {{
-    padding: 0.4rem 1rem; border-radius: 20px; font-size: 0.85rem;
-    font-weight: 600; text-align: center; color: #111;
-  }}
-  .playlist-meta {{
-    color: #888; font-size: 0.8rem; text-align: right; min-width: 160px;
-  }}
+/* Header */
+.header {{
+  text-align: center;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border);
+}}
+.header h1 {{
+  font-size: 1.5rem;
+  color: var(--text-bright);
+  margin-bottom: 4px;
+}}
+.header .subtitle {{
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}}
 
-  /* Summary table */
-  .summary-section {{ margin-bottom: 2rem; }}
-  .summary-section h2 {{
-    color: #aaa; font-size: 0.85rem; text-transform: uppercase;
-    letter-spacing: 0.08em; margin-bottom: 0.8rem;
-  }}
-  .summary-table {{
-    width: 100%; border-collapse: collapse; background: #1a1a1a;
-    border-radius: 12px; overflow: hidden; border: 1px solid #333;
-  }}
-  .summary-table th {{
-    padding: 0.7rem 1rem; text-align: left; font-size: 0.75rem;
-    text-transform: uppercase; letter-spacing: 0.05em; color: #666;
-    border-bottom: 1px solid #333; background: #151515;
-    cursor: pointer; user-select: none; white-space: nowrap;
-  }}
-  .summary-table th:hover {{ color: #aaa; }}
-  .summary-table th .sort-arrow {{ margin-left: 0.3rem; font-size: 0.7rem; }}
-  .summary-table td {{
-    padding: 0.6rem 1rem; font-size: 0.9rem; border-bottom: 1px solid #222;
-  }}
-  .summary-table tr {{ cursor: pointer; transition: background 0.15s; }}
-  .summary-table tr:hover {{ background: #222; }}
-  .summary-table tr.active {{ background: #1a2a1a; }}
+/* Summary section */
+.summary {{
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}}
+@media (max-width: 768px) {{
+  .summary {{ grid-template-columns: 1fr; }}
+}}
+.gauge-col {{ display: flex; flex-direction: column; align-items: center; }}
+.gauge-subtitle {{
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  text-align: center;
+  max-width: 200px;
+}}
+.metrics-col {{ display: flex; flex-direction: column; gap: 16px; }}
 
-  .verdict-dot {{
-    display: inline-block; width: 10px; height: 10px; border-radius: 50%;
-    margin-right: 0.5rem; vertical-align: middle;
-  }}
-  .verdict-text {{ font-size: 0.8rem; color: #bbb; }}
-  .threat-tag {{
-    font-size: 0.7rem; color: #f97316; background: #2a1a0a;
-    padding: 0.15rem 0.5rem; border-radius: 10px;
-  }}
-  .score-cell {{ font-weight: 600; font-variant-numeric: tabular-nums; }}
-  .platforms-cell {{ font-size: 0.8rem; color: #999; }}
-  .key-stat {{ font-size: 0.8rem; color: #aaa; }}
+/* Metric cards */
+.metric-row {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}}
+.metric-card {{
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}}
+.metric-value {{
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  font-variant-numeric: tabular-nums;
+}}
+.metric-label {{
+  font-size: 0.72rem;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}}
 
-  /* Detail section */
-  .detail-section {{ margin-bottom: 1rem; }}
-  .detail-section h2 {{
-    color: #aaa; font-size: 0.85rem; text-transform: uppercase;
-    letter-spacing: 0.08em; margin-bottom: 0.8rem;
-  }}
+/* Verdict / threat bars */
+.bar-section {{ margin-bottom: 12px; }}
+.bar-label {{
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}}
+.legend {{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 6px;
+  font-size: 0.72rem;
+  color: var(--text-dim);
+}}
+.legend-dot {{
+  display: inline-block;
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  margin-right: 3px;
+  vertical-align: middle;
+}}
 
-  /* Artist cards */
-  .artist-card {{
-    background: #1a1a1a; border-radius: 12px; margin-bottom: 1rem;
-    border: 1px solid #333; overflow: hidden;
-  }}
-  .artist-card.highlighted {{ border-color: #1DB954; }}
-  .card-header {{
-    padding: 1rem 1.5rem; display: flex; justify-content: space-between;
-    align-items: center; cursor: pointer; border-bottom: 1px solid transparent;
-    transition: background 0.15s;
-  }}
-  .card-header:hover {{ background: #222; }}
-  .card-header.open {{ border-bottom-color: #333; }}
-  .artist-name {{ font-size: 1.1rem; font-weight: 600; }}
-  .header-badges {{ display: flex; align-items: center; gap: 0.5rem; }}
-  .verdict-badge {{
-    padding: 0.25rem 0.7rem; border-radius: 16px; font-size: 0.78rem;
-    font-weight: 600; color: #111;
-  }}
-  .threat-badge {{
-    background: #333; color: #f97316; padding: 0.25rem 0.7rem;
-    border-radius: 16px; font-size: 0.72rem; font-weight: 600;
-  }}
-  .expand-icon {{
-    color: #555; font-size: 1.2rem; transition: transform 0.2s;
-    margin-left: 0.5rem;
-  }}
-  .card-header.open .expand-icon {{ transform: rotate(180deg); }}
+/* Sources */
+.sources-row {{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}}
+.src-dot {{ display: inline-flex; align-items: center; gap: 4px; }}
+.dot-ok {{
+  display: inline-block;
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #22c55e;
+}}
 
-  .card-body {{ padding: 1.5rem; display: none; }}
-  .card-body.open {{ display: block; }}
+/* Artist list controls */
+.list-controls {{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}}
+.list-controls h2 {{ font-size: 1.1rem; color: var(--text-bright); }}
+.toggle-btn {{
+  background: var(--card);
+  border: 1px solid var(--border);
+  color: var(--text-dim);
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  cursor: pointer;
+}}
+.toggle-btn:hover {{ border-color: var(--accent); color: var(--accent); }}
 
-  /* Two-column layout: chart + info */
-  .scorecard-grid {{
-    display: grid; grid-template-columns: 280px 1fr; gap: 2rem;
-    align-items: start;
-  }}
-  @media (max-width: 768px) {{
-    .scorecard-grid {{ grid-template-columns: 1fr; }}
-  }}
-  .chart-container {{ position: relative; width: 260px; height: 260px; }}
+/* Artist cards */
+.card {{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  transition: border-color 0.15s;
+}}
+.card:hover {{ border-color: #2a3a4a; }}
+.card-row {{
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}}
+.score-badge {{
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  flex-shrink: 0;
+  color: #fff;
+  font-variant-numeric: tabular-nums;
+}}
+.card-info {{ flex: 1; min-width: 0; }}
+.card-name {{
+  font-weight: 600;
+  color: var(--text-bright);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}}
+.card-stats {{
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}}
+.pill {{
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+}}
+.threat-pill {{
+  font-size: 0.68rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}}
+.chevron {{
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  transition: transform 0.2s;
+  flex-shrink: 0;
+}}
+.card.open .chevron {{ transform: rotate(180deg); }}
 
-  /* Explanation */
-  .explanation {{
-    background: #222; border-radius: 8px; padding: 1rem; margin-bottom: 1rem;
-    font-size: 0.93rem; line-height: 1.5; border-left: 4px solid;
-  }}
+/* Card body */
+.card-body {{
+  display: none;
+  padding: 0 16px 16px;
+  border-top: 1px solid var(--border);
+}}
+.card.open .card-body {{ display: block; }}
 
-  /* Sources grid */
-  .sources-grid {{
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
-    gap: 0.4rem; margin: 0.8rem 0;
-  }}
-  .source-item {{
-    padding: 0.35rem 0.5rem; border-radius: 6px; font-size: 0.75rem;
-    text-align: center; font-weight: 500;
-  }}
-  .source-ok {{ background: #052e16; color: #4ade80; border: 1px solid #166534; }}
-  .source-miss {{ background: #1c1c1c; color: #555; border: 1px solid #333; }}
-  .source-id {{ font-size: 0.65rem; color: #666; display: block; }}
+/* Explanation */
+.explanation {{
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 6px;
+  font-size: 0.88rem;
+  line-height: 1.55;
+}}
 
-  /* Signal category bars */
-  .signal-bar-row {{
-    display: flex; align-items: center; margin: 0.25rem 0; font-size: 0.82rem;
-  }}
-  .signal-label {{ width: 140px; color: #aaa; }}
-  .signal-bar-bg {{
-    flex: 1; height: 10px; background: #333; border-radius: 5px;
-    overflow: hidden; margin: 0 0.6rem;
-  }}
-  .signal-bar-fill {{ height: 100%; border-radius: 5px; transition: width 0.3s; }}
-  .signal-score {{ width: 40px; text-align: right; font-weight: 600; font-variant-numeric: tabular-nums; }}
+/* Scorecard grid */
+.scorecard {{
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+  margin: 12px 0;
+}}
+@media (max-width: 768px) {{
+  .scorecard {{ grid-template-columns: 1fr; }}
+}}
 
-  /* Flags */
-  .section-title {{
-    font-size: 0.82rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.05em; margin: 1.2rem 0 0.5rem 0; padding-bottom: 0.3rem;
-    border-bottom: 1px solid #333;
-  }}
-  .flag-item {{ padding: 0.4rem 0; border-bottom: 1px solid #222; }}
-  .flag-finding {{ font-weight: 500; font-size: 0.9rem; }}
-  .flag-detail {{ color: #888; font-size: 0.82rem; margin-top: 0.15rem; line-height: 1.4; }}
-  .flag-meta {{ color: #666; font-size: 0.72rem; margin-top: 0.1rem; }}
-  .strength-strong {{ color: #ef4444; }}
-  .strength-moderate {{ color: #f97316; }}
-  .strength-weak {{ color: #eab308; }}
-  .green .strength-strong {{ color: #22c55e; }}
-  .green .strength-moderate {{ color: #84cc16; }}
-  .green .strength-weak {{ color: #a3e635; }}
+/* Metadata grid */
+.meta-grid {{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 6px 16px;
+  font-size: 0.82rem;
+  margin: 12px 0;
+}}
+.meta-item {{ display: flex; gap: 6px; }}
+.meta-key {{ color: var(--text-dim); white-space: nowrap; }}
+.meta-val {{ color: var(--text); font-weight: 500; }}
 
-  /* Data fields — organized by platform */
-  .platform-data {{
-    margin: 0.8rem 0; padding: 0.8rem 1rem;
-    background: #151515; border-radius: 8px; border: 1px solid #2a2a2a;
-  }}
-  .platform-data-header {{
-    font-size: 0.78rem; font-weight: 700; text-transform: uppercase;
-    letter-spacing: 0.04em; color: #888; margin-bottom: 0.5rem;
-    display: flex; align-items: center; gap: 0.5rem;
-  }}
-  .platform-data-header .match-info {{
-    font-weight: 400; font-size: 0.7rem; color: #555;
-    text-transform: none; letter-spacing: 0;
-  }}
-  .data-grid {{
-    display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    gap: 0.3rem;
-  }}
-  .data-field {{
-    font-size: 0.78rem; padding: 0.2rem 0.4rem;
-    color: #bbb;
-  }}
-  .data-field strong {{ color: #ddd; }}
+/* Evidence section */
+.evidence-section {{
+  margin: 16px 0;
+}}
+.evidence-cols {{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}}
+@media (max-width: 768px) {{
+  .evidence-cols {{ grid-template-columns: 1fr; }}
+}}
+.evidence-col-header {{
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}}
+.flag-item {{
+  padding: 8px 0;
+  border-bottom: 1px solid #111820;
+  font-size: 0.82rem;
+}}
+.flag-finding {{
+  font-weight: 600;
+  color: var(--text-bright);
+  margin-bottom: 2px;
+}}
+.flag-detail {{
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}}
+.flag-meta {{
+  font-size: 0.7rem;
+  color: #445;
+  margin-top: 2px;
+}}
+.pts-summary {{
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  padding: 8px 0;
+  margin-top: 4px;
+  border-top: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
+}}
 
-  /* Footer */
-  .footer {{
-    text-align: center; color: #444; margin-top: 2rem;
-    font-size: 0.78rem; padding: 1rem;
-  }}
+/* Related entities */
+.entities {{
+  margin: 12px 0;
+  padding: 12px;
+  background: #0a0e14;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.82rem;
+}}
+.entity-item {{
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}}
+
+/* Signal bars */
+.signal-bars {{ margin: 8px 0; }}
+.signal-row {{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  font-size: 0.78rem;
+}}
+.signal-label {{ width: 120px; color: var(--text-dim); text-align: right; flex-shrink: 0; }}
+.signal-track {{
+  flex: 1;
+  height: 8px;
+  background: #111820;
+  border-radius: 4px;
+  overflow: hidden;
+}}
+.signal-fill {{ height: 100%; border-radius: 4px; transition: width 0.3s; }}
+.signal-val {{ width: 28px; color: var(--text-dim); font-variant-numeric: tabular-nums; }}
+
+/* Footer */
+.footer {{
+  margin-top: 40px;
+  padding: 20px 0;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  line-height: 1.7;
+}}
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>Spotify Audit Report</h1>
-  <p class="subtitle">{_esc(report.playlist_name)}</p>
 
-  <div class="playlist-header">
-    <div class="health-block">
-      <div class="health-label">Health Score</div>
-      <div class="health-score" style="color: {health_color}">{health}<span style="font-size: 1.2rem; color: #666">/100</span></div>
-    </div>
-    <div class="verdict-grid">
-      <span class="verdict-pill" style="background: #22c55e">Verified: {report.verified_artists}</span>
-      <span class="verdict-pill" style="background: #84cc16">Authentic: {report.likely_authentic}</span>
-      <span class="verdict-pill" style="background: #eab308">Inconclusive: {report.inconclusive}</span>
-      <span class="verdict-pill" style="background: #f97316">Suspicious: {report.suspicious}</span>
-      <span class="verdict-pill" style="background: #ef4444; color: #fff">Artificial: {report.likely_artificial}</span>
-    </div>
-    <div class="playlist-meta">
-      {_esc(report.owner)}<br>
-      {report.total_tracks} tracks<br>
-      {report.total_unique_artists} artists
-    </div>
-  </div>
-
-  <div class="summary-section">
-    <h2>Artist Summary</h2>
-    <table class="summary-table" id="summaryTable">
-      <thead>
-        <tr>
-          <th data-sort="name">Artist <span class="sort-arrow"></span></th>
-          <th data-sort="verdict">Verdict <span class="sort-arrow"></span></th>
-          <th data-sort="score">Score <span class="sort-arrow"></span></th>
-          <th data-sort="threat">Threat <span class="sort-arrow"></span></th>
-          <th data-sort="platforms">Platforms <span class="sort-arrow"></span></th>
-          <th data-sort="key">Key Stats</th>
-        </tr>
-      </thead>
-      <tbody>
-        {summary_table}
-      </tbody>
-    </table>
-  </div>
-
-  <div class="detail-section" id="detailSection">
-    <h2>Detailed Evidence</h2>
-    {"".join(artist_cards)}
-  </div>
-
+<!-- Header -->
+<div class="header">
+  <h1>Playlist Authenticity Report</h1>
+  <div class="subtitle">{_esc(report.playlist_name)} &middot; by {_esc(report.owner)} &middot; {now.strftime('%Y-%m-%d')}</div>
 </div>
 
-<script>
-// Toggle card open/close
-document.querySelectorAll('.card-header').forEach(h => {{
-  h.addEventListener('click', () => {{
-    const body = h.nextElementSibling;
-    body.classList.toggle('open');
-    h.classList.toggle('open');
-  }});
-}});
+<!-- Summary -->
+<div class="summary">
+  <div class="gauge-col">
+    {_health_gauge_svg(report.health_score)}
+    <div class="gauge-subtitle">
+      {report.health_score}% of artists show legitimacy signals
+    </div>
+  </div>
+  <div class="metrics-col">
+    <!-- Key metrics -->
+    <div class="metric-row">
+      <div class="metric-card">
+        <div class="metric-value">{report.total_tracks}</div>
+        <div class="metric-label">Tracks</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">{report.total_unique_artists}</div>
+        <div class="metric-label">Artists</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" style="color:{('#ef4444' if contamination > 30 else '#f59e0b' if contamination > 10 else '#22c55e')}">{contamination:.0f}%</div>
+        <div class="metric-label">Contamination</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value">{flagged}</div>
+        <div class="metric-label">Flagged</div>
+      </div>
+      {f'<div class="metric-card"><div class="metric-value">{duration_str}</div><div class="metric-label">Scan Time</div></div>' if duration_str else ''}
+      {f'<div class="metric-card"><div class="metric-value">{total_api_calls}</div><div class="metric-label">API Calls</div></div>' if total_api_calls else ''}
+    </div>
 
-// Summary row click → scroll to and expand artist card
-document.querySelectorAll('.summary-table tbody tr').forEach(row => {{
-  row.addEventListener('click', () => {{
-    const idx = row.dataset.idx;
-    const card = document.getElementById('artist-' + idx);
-    if (!card) return;
+    <!-- Verdict bar -->
+    <div class="bar-section">
+      <div class="bar-label">Verdict Breakdown</div>
+      {_stacked_bar(verdict_segments, report.total_unique_artists)}
+      <div class="legend">
+        <span><span class="legend-dot" style="background:#22c55e"></span>Verified</span>
+        <span><span class="legend-dot" style="background:#3b82f6"></span>Authentic</span>
+        <span><span class="legend-dot" style="background:#94a3b8"></span>Inconclusive</span>
+        <span><span class="legend-dot" style="background:#f59e0b"></span>Suspicious</span>
+        <span><span class="legend-dot" style="background:#ef4444"></span>Artificial</span>
+      </div>
+    </div>
 
-    // Highlight row
-    document.querySelectorAll('.summary-table tr.active').forEach(r => r.classList.remove('active'));
-    row.classList.add('active');
+    <!-- Threat bar (only if flagged artists) -->
+    {_threat_bar_section(threat_segments, flagged) if flagged else ''}
 
-    // Open card and scroll
-    const body = card.querySelector('.card-body');
-    const header = card.querySelector('.card-header');
-    if (body && !body.classList.contains('open')) {{
-      body.classList.add('open');
-      header.classList.add('open');
-    }}
-    card.classList.add('highlighted');
-    card.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
+    <!-- Data sources -->
+    {f'<div class="bar-section"><div class="bar-label">Data Sources</div>{sources_html}</div>' if sources_html else ''}
+  </div>
+</div>
 
-    // Remove highlight after animation
-    setTimeout(() => card.classList.remove('highlighted'), 2000);
-  }});
-}});
+<!-- Artist list -->
+<div class="list-controls">
+  <h2>Artist Analysis ({len(sorted_artists)})</h2>
+  <button class="toggle-btn" onclick="toggleAll()">Expand All</button>
+</div>
 
-// Column sorting
-(function() {{
-  const table = document.getElementById('summaryTable');
-  if (!table) return;
-  const headers = table.querySelectorAll('th[data-sort]');
-  let currentSort = null;
-  let ascending = true;
+{"".join(artist_cards_html)}
 
-  headers.forEach(th => {{
-    th.addEventListener('click', () => {{
-      const col = th.dataset.sort;
-      if (currentSort === col) {{
-        ascending = !ascending;
-      }} else {{
-        currentSort = col;
-        ascending = true;
-      }}
-
-      const tbody = table.querySelector('tbody');
-      const rows = Array.from(tbody.querySelectorAll('tr'));
-
-      rows.sort((a, b) => {{
-        let va = a.dataset[col] || '';
-        let vb = b.dataset[col] || '';
-        // Try numeric
-        const na = parseFloat(va);
-        const nb = parseFloat(vb);
-        if (!isNaN(na) && !isNaN(nb)) {{
-          return ascending ? na - nb : nb - na;
-        }}
-        return ascending ? va.localeCompare(vb) : vb.localeCompare(va);
-      }});
-
-      rows.forEach(r => tbody.appendChild(r));
-
-      // Update sort arrows
-      headers.forEach(h => {{
-        h.querySelector('.sort-arrow').textContent = '';
-      }});
-      th.querySelector('.sort-arrow').textContent = ascending ? '\\u25B2' : '\\u25BC';
-    }});
-  }});
-}})();
-
-// Render radar charts — lazy, only when card opens
-const chartRendered = {{}};
-function renderChart(idx) {{
-  if (chartRendered[idx]) return;
-  chartRendered[idx] = true;
-  const el = document.getElementById('chart_' + idx);
-  if (!el || !window._chartConfigs || !window._chartConfigs[idx]) return;
-  const cfg = window._chartConfigs[idx];
-  new Chart(el, cfg);
-}}
-
-// Observe card open to render charts lazily
-const observer = new MutationObserver(mutations => {{
-  mutations.forEach(m => {{
-    if (m.target.classList.contains('open')) {{
-      const canvas = m.target.querySelector('canvas');
-      if (canvas) {{
-        const idx = canvas.id.replace('chart_', '');
-        renderChart(parseInt(idx));
-      }}
-    }}
-  }});
-}});
-document.querySelectorAll('.card-body').forEach(body => {{
-  observer.observe(body, {{ attributes: true, attributeFilter: ['class'] }});
-}});
-
-// Chart configs
-window._chartConfigs = {{}};
-{"".join(chart_scripts)}
-</script>
-
+<!-- Footer -->
 <div class="footer">
-  Report generated {datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')} &mdash;
-  Data from {_count_sources(report)} sources
+  Generated by Playlist Authenticity Analyzer &middot; {now.strftime('%Y-%m-%d %H:%M UTC')}<br>
+  {_esc(report.blocklist_version) if report.blocklist_version else ''}{' &middot; ' if report.blocklist_version else ''}
+  {len(sorted_artists)} artists analyzed across {len([n for n, c in report.api_source_counts.items()]) if report.api_source_counts else 'multiple'} data sources
 </div>
+
+</div>
+<script>
+function toggleCard(el) {{
+  el.closest('.card').classList.toggle('open');
+}}
+function toggleAll() {{
+  const cards = document.querySelectorAll('.card');
+  const btn = document.querySelector('.toggle-btn');
+  const anyOpen = document.querySelector('.card.open');
+  cards.forEach(c => {{
+    if (anyOpen) c.classList.remove('open');
+    else c.classList.add('open');
+  }});
+  btn.textContent = anyOpen ? 'Expand All' : 'Collapse All';
+}}
+// Auto-expand flagged artists
+document.querySelectorAll('.card[data-flagged="true"]').forEach(c => c.classList.add('open'));
+</script>
 </body>
 </html>"""
+    return page
 
 
-def _count_sources(report: PlaylistReport) -> int:
-    """Count unique data sources used across all artists."""
-    sources: set[str] = set()
-    for a in report.artists:
-        if a.evaluation and a.evaluation.sources_reached:
-            for name, reached in a.evaluation.sources_reached.items():
-                if reached:
-                    sources.add(name)
-    return len(sources) if sources else 0
+def _threat_bar_section(segments: list[tuple[str, int, str]], total: int) -> str:
+    """Render threat category bar section."""
+    bar = _stacked_bar(segments, total)
+    legend_items = []
+    for name, count, color in segments:
+        if count > 0:
+            legend_items.append(f'<span><span class="legend-dot" style="background:{color}"></span>{_esc(name)}</span>')
+    legend = '<div class="legend">' + " ".join(legend_items) + '</div>' if legend_items else ''
+    return f'<div class="bar-section"><div class="bar-label">Threat Categories</div>{bar}{legend}</div>'
 
 
-def _build_summary_row(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
-    """Build a single <tr> for the summary table."""
-    verdict_str = ev.verdict.value if ev else a.label
-    verdict_color = _VERDICT_COLORS_CSS.get(verdict_str, "#888")
-    threat = a.threat_category_name or ""
+# ---------------------------------------------------------------------------
+# Artist card builder
+# ---------------------------------------------------------------------------
+
+def _build_card(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
+    """Build a complete artist card (collapsed + expandable detail)."""
+    verdict_str = a.verdict
     score = a.final_score
+    verdict_color = _VERDICT_COLORS.get(verdict_str, "#94a3b8")
+    is_flagged = verdict_str in ("Suspicious", "Likely Artificial")
 
+    # Score badge color
     if score >= 80:
-        score_color = "#22c55e"
+        badge_bg = "#22c55e"
     elif score >= 55:
-        score_color = "#84cc16"
+        badge_bg = "#3b82f6"
     elif score >= 35:
-        score_color = "#eab308"
-    elif score >= 15:
-        score_color = "#f97316"
+        badge_bg = "#94a3b8"
+    elif score >= 18:
+        badge_bg = "#f59e0b"
     else:
-        score_color = "#ef4444"
+        badge_bg = "#ef4444"
 
-    # Platforms count
-    platforms = ev.platform_presence.count() if ev else 0
+    # Collapsed stats line
+    stats = _build_stats_line(a, ev)
 
-    # Key stat: pick the most interesting metric
-    key_stat = _build_key_stat(ev)
+    # Threat pill
+    threat_html = ""
+    if a.threat_category_name:
+        t_color = _THREAT_COLORS.get(a.threat_category_name, "#888")
+        threat_html = f'<span class="threat-pill" style="background:{t_color}22;color:{t_color};border:1px solid {t_color}44">{_esc(a.threat_category_name)}</span>'
 
-    threat_html = f'<span class="threat-tag">{_esc(threat)}</span>' if threat else ""
+    # Card body (detail) — only if we have evaluation data
+    body_html = ""
+    if ev:
+        body_html = _build_card_body(a, ev)
 
-    # Verdict sort order for table sorting
-    verdict_order = {"Verified Artist": 0, "Likely Authentic": 1, "Inconclusive": 2,
-                     "Insufficient Data": 2, "Conflicting Signals": 2,
-                     "Suspicious": 3, "Likely Artificial": 4}.get(verdict_str, 2)
+    return f"""<div class="card" data-flagged="{'true' if is_flagged else 'false'}" data-idx="{idx}">
+  <div class="card-row" onclick="toggleCard(this)">
+    <div class="score-badge" style="background:{badge_bg}">{score}</div>
+    <div class="card-info">
+      <div class="card-name">{_esc(a.artist_name)}</div>
+      <div class="card-stats">{stats}</div>
+    </div>
+    <span class="pill" style="background:{verdict_color}22;color:{verdict_color};border:1px solid {verdict_color}44">{_esc(verdict_str)}</span>
+    {threat_html}
+    <span class="chevron">&#9660;</span>
+  </div>
+  <div class="card-body">{body_html}</div>
+</div>
+"""
 
-    return f"""<tr data-idx="{idx}" data-name="{_esc(a.artist_name)}" data-verdict="{verdict_order}" data-score="{score}" data-threat="{_esc(threat)}" data-platforms="{platforms}">
-  <td><strong>{_esc(a.artist_name)}</strong></td>
-  <td><span class="verdict-dot" style="background: {verdict_color}"></span><span class="verdict-text">{_esc(verdict_str)}</span></td>
-  <td class="score-cell" style="color: {score_color}">{score}</td>
-  <td>{threat_html}</td>
-  <td class="platforms-cell">{platforms} APIs</td>
-  <td class="key-stat">{key_stat}</td>
-</tr>"""
 
-
-def _build_key_stat(ev: ArtistEvaluation | None) -> str:
-    """Pick the most interesting stat for the summary table."""
+def _build_stats_line(a: ArtistReport, ev: ArtistEvaluation | None) -> str:
+    """Build the one-line stats summary for collapsed card."""
     if not ev:
         return ""
     ext = ev.external_data or ExternalData()
     parts: list[str] = []
 
-    if ev.platform_presence.deezer_fans and ev.platform_presence.deezer_fans > 0:
-        parts.append(f"{_fmt_num(ev.platform_presence.deezer_fans)} fans")
+    if ev.platform_presence.deezer_fans:
+        parts.append(f"Deezer fans: {_fmt_num(ev.platform_presence.deezer_fans)}")
     if ext.lastfm_listeners:
-        parts.append(f"{_fmt_num(ext.lastfm_listeners)} listeners")
+        parts.append(f"Last.fm: {_fmt_num(ext.lastfm_listeners)} listeners")
     if ext.setlistfm_total_shows:
         parts.append(f"{ext.setlistfm_total_shows} shows")
-    if ext.songkick_total_past_events:
-        parts.append(f"{ext.songkick_total_past_events} concerts")
-    if ext.wikipedia_found:
-        parts.append("Wikipedia")
-    if ext.youtube_channel_found:
-        parts.append(f"{_fmt_num(ext.youtube_subscriber_count)} subs")
     if ext.discogs_physical_releases:
         parts.append(f"{ext.discogs_physical_releases} vinyl/CD")
+    if ext.wikipedia_found:
+        parts.append("Wikipedia")
 
+    # Fallback
     if not parts:
-        red = len(ev.red_flags)
-        green = len(ev.green_flags)
-        return f"{green}G / {red}R flags"
+        parts.append(f"{len(ev.green_flags)} green / {len(ev.red_flags)} red flags")
 
-    return ", ".join(parts[:3])
+    # Labels
+    if ev.labels:
+        parts.append(_esc(ev.labels[0]))
+
+    return " &middot; ".join(parts[:4])
 
 
-def _build_artist_card_html(a: ArtistReport, ev: ArtistEvaluation, idx: int) -> tuple[str, str]:
-    """Build HTML card + Chart.js config for one artist."""
-    verdict_str = ev.verdict.value
-    verdict_color = _VERDICT_COLORS_CSS.get(verdict_str, "#888")
-    verdict_bg = _VERDICT_BG_CSS.get(verdict_str, "#1a1a1a")
-    scores = ev.category_scores
-    sources = ev.sources_reached
+def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
+    """Build the expanded card body with all detail sections."""
     ext = ev.external_data or ExternalData()
+    verdict_str = ev.verdict.value
+    verdict_color = _VERDICT_COLORS.get(verdict_str, "#94a3b8")
+    scores = ev.category_scores
 
-    # Threat category badge
-    threat_html = ""
-    if a.threat_category_name:
-        threat_html = f'<span class="threat-badge">{_esc(a.threat_category_name)}</span>'
-
-    # Plain-English explanation
+    # 1. Explanation
     explanation = _build_explanation(ev)
+    explanation_html = (
+        f'<div class="explanation" style="background:{verdict_color}0d;border-left:3px solid {verdict_color}">'
+        f'{_esc(explanation)}</div>'
+    )
 
-    # Source status with match quality annotation
-    source_html = ""
-    for name, reached in sources.items():
-        cls = "source-ok" if reached else "source-miss"
-        match_note = ""
-        platform_key = name.lower().replace(".", "").replace(" ", "")
-        # Map source display names to match_confidences keys
-        key_map = {"deezer": "deezer", "genius": "genius",
-                   "discogs": "discogs", "setlistfm": "setlistfm", "musicbrainz": "musicbrainz",
-                   "lastfm": "lastfm", "last.fm": "lastfm", "wikipedia": "wikipedia",
-                   "songkick": "songkick", "youtube": "youtube"}
-        mk = key_map.get(platform_key, platform_key)
-        if ext.match_methods.get(mk):
-            method = ext.match_methods[mk]
-            conf = ext.match_confidences.get(mk, 0)
-            if method == "platform_id":
-                match_note = '<span class="source-id">via ID</span>'
-            elif conf > 0:
-                match_note = f'<span class="source-id">{method} ({conf:.0%})</span>'
-        source_html += f'<span class="{cls}">{_esc(name)}{match_note}</span>\n'
+    # 2. Radar chart + signal bars
+    radar = _radar_svg(scores, verdict_color)
+    signal_bars = _build_signal_bars(scores)
 
-    # Signal bars
-    bars_html = ""
-    for cat, score in scores.items():
-        if score >= 60:
-            fill_color = "#22c55e"
-        elif score >= 30:
-            fill_color = "#eab308"
-        else:
-            fill_color = "#ef4444"
-        bars_html += f"""<div class="signal-bar-row">
-  <span class="signal-label">{_esc(cat)}</span>
-  <div class="signal-bar-bg"><div class="signal-bar-fill" style="width: {score}%; background: {fill_color}"></div></div>
-  <span class="signal-score">{score}</span>
-</div>\n"""
-
-    # Data fields organized by platform
-    data_fields_html = _build_data_fields_html(ev, ext)
-
-    # Red flags
-    red_html = ""
-    if ev.red_flags:
-        red_html += f'<div class="section-title" style="color: #ef4444">Red Flags ({len(ev.red_flags)})</div>\n'
-        for e in ev.red_flags:
-            strength_cls = f"strength-{e.strength}"
-            red_html += f"""<div class="flag-item">
-  <div class="flag-finding"><span class="{strength_cls}">[{_esc(e.strength.upper())}]</span> {_esc(e.finding)}</div>
-  <div class="flag-detail">{_esc(e.detail)}</div>
-  <div class="flag-meta">Source: {_esc(e.source)}</div>
-</div>\n"""
-
-    # Green flags
-    green_html = ""
-    if ev.green_flags:
-        green_html += f'<div class="section-title green" style="color: #22c55e">Green Flags ({len(ev.green_flags)})</div>\n'
-        for e in ev.green_flags:
-            strength_cls = f"strength-{e.strength}"
-            green_html += f"""<div class="flag-item green">
-  <div class="flag-finding"><span class="{strength_cls}">[{_esc(e.strength.upper())}]</span> {_esc(e.finding)}</div>
-  <div class="flag-detail">{_esc(e.detail)}</div>
-  <div class="flag-meta">Source: {_esc(e.source)}</div>
-</div>\n"""
-
-    # Neutral
-    neutral_html = ""
-    if ev.neutral_notes:
-        neutral_html += '<div class="section-title" style="color: #888">Notes</div>\n'
-        for e in ev.neutral_notes:
-            neutral_html += f'<div class="flag-item"><div class="flag-finding">{_esc(e.finding)} <span class="flag-meta">({_esc(e.source)})</span></div></div>\n'
-
-    canvas_id = f"chart_{idx}"
-
-    card_html = f"""<div class="artist-card" id="artist-{idx}">
-  <div class="card-header">
-    <span class="artist-name">{_esc(a.artist_name)}</span>
-    <div class="header-badges">
-      <span class="verdict-badge" style="background: {verdict_color}">{_esc(verdict_str)}</span>
-      {threat_html}
-      <span class="expand-icon">&#9660;</span>
-    </div>
+    scorecard = f"""<div class="scorecard">
+  <div>{radar}</div>
+  <div>
+    {signal_bars}
+    {_build_sources_grid(ev, ext)}
   </div>
-  <div class="card-body">
-    <div class="explanation" style="border-color: {verdict_color}; background: {verdict_bg}20">
-      <span style="color: #e0e0e0">{explanation}</span>
-    </div>
+</div>"""
 
-    <div class="scorecard-grid">
-      <div>
-        <div class="chart-container">
-          <canvas id="{canvas_id}"></canvas>
-        </div>
-      </div>
-      <div>
-        <div class="section-title" style="color: #aaa">Signal Scores</div>
-        {bars_html}
+    # 3. Metadata grid
+    meta = _build_metadata_grid(a, ev, ext)
 
-        <div class="section-title" style="color: #aaa">Data Sources</div>
-        <div class="sources-grid">
-          {source_html}
-        </div>
-      </div>
-    </div>
+    # 4. Evidence breakdown
+    evidence = _build_evidence_section(ev)
 
-    {data_fields_html}
-    {red_html}
-    {green_html}
-    {neutral_html}
-  </div>
-</div>\n"""
+    # 5. AI analysis (if available)
+    ai_html = ""
+    for sig in a.deep_signals:
+        if isinstance(sig, dict) and sig.get("detail"):
+            ai_html = (
+                f'<div class="explanation" style="background:#1a2332;border-left:3px solid #a78bfa">'
+                f'<div style="font-size:0.72rem;color:#a78bfa;text-transform:uppercase;margin-bottom:6px">'
+                f'AI Analysis</div>{_esc(sig["detail"])}</div>'
+            )
+            break
 
-    # Chart.js config — stored for lazy rendering
-    labels = list(scores.keys())
-    values = list(scores.values())
-    chart_js = f"""
-window._chartConfigs[{idx}] = {{
-  type: 'radar',
-  data: {{
-    labels: {json.dumps(labels)},
-    datasets: [{{
-      label: '{_esc(a.artist_name)}',
-      data: {json.dumps(values)},
-      backgroundColor: '{verdict_color}33',
-      borderColor: '{verdict_color}',
-      borderWidth: 2,
-      pointBackgroundColor: '{verdict_color}',
-      pointBorderColor: '#fff',
-      pointRadius: 4,
-    }}]
-  }},
-  options: {{
-    responsive: true,
-    maintainAspectRatio: true,
-    scales: {{
-      r: {{
-        beginAtZero: true,
-        max: 100,
-        ticks: {{ display: false }},
-        grid: {{ color: '#333' }},
-        angleLines: {{ color: '#333' }},
-        pointLabels: {{
-          color: '#aaa',
-          font: {{ size: 10 }},
-        }},
-      }}
-    }},
-    plugins: {{
-      legend: {{ display: false }},
-    }},
-  }}
-}};
-"""
+    # 6. Related entities
+    entities = _build_entities_section(ev, ext)
 
-    return card_html, chart_js
+    return f"""
+    {explanation_html}
+    {scorecard}
+    {meta}
+    {evidence}
+    {ai_html}
+    {entities}
+    """
 
 
 def _build_explanation(ev: ArtistEvaluation) -> str:
@@ -1046,311 +1185,272 @@ def _build_explanation(ev: ArtistEvaluation) -> str:
     red_count = len(ev.red_flags)
     green_count = len(ev.green_flags)
     strong_reds = len(ev.strong_red_flags)
-    strong_greens = len(ev.strong_green_flags)
 
     if verdict == Verdict.VERIFIED_ARTIST:
         parts = [f"{name} looks like a real, established artist."]
         if platforms >= 5:
-            parts.append(f"They were found on {platforms} different music platforms.")
+            parts.append(f"Found on {platforms} different music platforms.")
         if fans >= 100_000:
-            parts.append(f"They have {fans:,} fans on Deezer.")
+            parts.append(f"{fans:,} fans on Deezer.")
         if green_count >= 10:
-            parts.append(f"We found {green_count} positive signals and no serious concerns.")
+            parts.append(f"{green_count} positive signals and no serious concerns.")
         return " ".join(parts)
 
     elif verdict == Verdict.LIKELY_AUTHENTIC:
         parts = [f"{name} appears to be a legitimate artist."]
         if platforms >= 3:
             parts.append(f"Found on {platforms} platforms with mostly positive signals.")
-        parts.append(f"We found {green_count} green flags and {red_count} red flags.")
+        parts.append(f"{green_count} green flags and {red_count} red flags.")
         return " ".join(parts)
 
     elif verdict == Verdict.INSUFFICIENT_DATA:
-        parts = [f"We don't have enough data to evaluate {name}."]
+        parts = [f"Not enough data to evaluate {name}."]
         total = green_count + red_count
-        parts.append(f"Only {total} signal{'s' if total != 1 else ''} collected — too few to draw a conclusion.")
-        parts.append("This often happens with brand-new or very niche artists who haven't built an online footprint yet.")
+        parts.append(f"Only {total} signal{'s' if total != 1 else ''} collected.")
+        parts.append("This often happens with brand-new or very niche artists.")
         return " ".join(parts)
 
     elif verdict == Verdict.CONFLICTING_SIGNALS:
         parts = [f"The evidence on {name} is contradictory."]
-        parts.append(f"We found {green_count} positive and {red_count} negative signals, both substantial.")
-        parts.append("This can happen with real artists on PFC-associated labels, or legitimate acts with unusual release patterns.")
+        parts.append(f"{green_count} positive and {red_count} negative signals, both substantial.")
+        parts.append("This can happen with real artists on PFC-associated labels.")
         return " ".join(parts)
 
     elif verdict == Verdict.INCONCLUSIVE:
-        parts = [f"We couldn't make a confident determination about {name}."]
-        parts.append(f"The evidence is mixed: {green_count} positive and {red_count} negative signals.")
-        parts.append("This could be a new artist, a niche act, or something worth investigating further.")
+        parts = [f"Couldn't make a confident determination about {name}."]
+        parts.append(f"Mixed evidence: {green_count} positive and {red_count} negative signals.")
         return " ".join(parts)
 
     elif verdict == Verdict.SUSPICIOUS:
         parts = [f"{name} shows several warning signs."]
         if strong_reds:
-            parts.append(f"We found {strong_reds} strong red flag{'s' if strong_reds != 1 else ''}.")
+            parts.append(f"{strong_reds} strong red flag{'s' if strong_reds != 1 else ''}.")
         if platforms <= 2:
             parts.append(f"Only found on {platforms} platform{'s' if platforms != 1 else ''}.")
-        parts.append("This doesn't prove they're fake, but the pattern is worth scrutiny.")
+        parts.append("Pattern warrants scrutiny.")
         return " ".join(parts)
 
     elif verdict == Verdict.LIKELY_ARTIFICIAL:
-        parts = [f"{name} has strong indicators of being an artificial or manufactured artist."]
+        parts = [f"{name} has strong indicators of being artificial or manufactured."]
         if strong_reds >= 3:
-            parts.append(f"We found {strong_reds} strong red flags.")
+            parts.append(f"{strong_reds} strong red flags.")
         for e in ev.red_flags:
             if e.tags and {"pfc_label", "content_farm"} & set(e.tags):
-                parts.append("The release pattern and distributor match known content farm operations.")
+                parts.append("Release pattern and distributor match known content farm operations.")
                 break
         return " ".join(parts)
 
     return f"Evaluated {name}: {green_count} green flags, {red_count} red flags."
 
 
-def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
-    """Build data fields organized by platform source."""
-    sections: list[str] = []
-
-    # --- Deezer (always available) ---
-    deezer_fields: list[str] = []
-    if ev.platform_presence.deezer_fans:
-        deezer_fields.append(f"<strong>Deezer fans:</strong> {_fmt_num(ev.platform_presence.deezer_fans)}")
-    if ext.deezer_ai_checked:
-        if ext.deezer_ai_tagged_albums:
-            deezer_fields.append(f"<strong>AI tagged:</strong> {', '.join(_esc(a) for a in ext.deezer_ai_tagged_albums[:3])}")
+def _build_signal_bars(scores: dict[str, int]) -> str:
+    """Render signal bars for the 6 radar categories."""
+    rows = []
+    for cat, val in scores.items():
+        if val >= 60:
+            color = "#22c55e"
+        elif val >= 30:
+            color = "#f59e0b"
         else:
-            deezer_fields.append("<strong>AI tagged:</strong> none detected")
-    if deezer_fields:
-        sections.append(_platform_section("Deezer", deezer_fields, ext, "deezer"))
+            color = "#ef4444"
+        rows.append(
+            f'<div class="signal-row">'
+            f'<span class="signal-label">{_esc(cat)}</span>'
+            f'<div class="signal-track"><div class="signal-fill" style="width:{val}%;background:{color}"></div></div>'
+            f'<span class="signal-val">{val}</span>'
+            f'</div>'
+        )
+    return '<div class="signal-bars">' + "\n".join(rows) + '</div>'
 
-    # --- Genius ---
-    genius_fields: list[str] = []
-    if ext.genius_found:
-        if ext.genius_song_count:
-            genius_fields.append(f"<strong>Songs:</strong> {ext.genius_song_count}")
-        if ext.genius_is_verified:
-            genius_fields.append("<strong>Status:</strong> Verified")
-        if ext.genius_followers_count:
-            genius_fields.append(f"<strong>Followers:</strong> {_fmt_num(ext.genius_followers_count)}")
-        if ext.genius_facebook_name:
-            genius_fields.append(f"<strong>Facebook:</strong> {_esc(ext.genius_facebook_name)}")
-        if ext.genius_instagram_name:
-            genius_fields.append(f"<strong>Instagram:</strong> {_esc(ext.genius_instagram_name)}")
-        if ext.genius_twitter_name:
-            genius_fields.append(f"<strong>Twitter/X:</strong> {_esc(ext.genius_twitter_name)}")
-        if ext.genius_alternate_names:
-            genius_fields.append(f"<strong>Also known as:</strong> {_esc(', '.join(ext.genius_alternate_names[:3]))}")
-    if genius_fields:
-        sections.append(_platform_section("Genius", genius_fields, ext, "genius"))
 
-    # --- MusicBrainz ---
-    mb_fields: list[str] = []
-    if ext.musicbrainz_found:
-        if ext.musicbrainz_type:
-            mb_fields.append(f"<strong>Type:</strong> {_esc(ext.musicbrainz_type)}")
-        if ext.musicbrainz_gender:
-            mb_fields.append(f"<strong>Gender:</strong> {_esc(ext.musicbrainz_gender)}")
-        if ext.musicbrainz_country:
-            mb_fields.append(f"<strong>Country:</strong> {_esc(ext.musicbrainz_country)}")
-        if ext.musicbrainz_area:
-            mb_fields.append(f"<strong>Area:</strong> {_esc(ext.musicbrainz_area)}")
-        if ext.musicbrainz_begin_date:
-            mb_fields.append(f"<strong>Active since:</strong> {_esc(ext.musicbrainz_begin_date)}")
-        if ext.musicbrainz_genres:
-            mb_fields.append(f"<strong>Genres:</strong> {_esc(', '.join(ext.musicbrainz_genres[:5]))}")
-        if ext.musicbrainz_isnis:
-            mb_fields.append(f"<strong>ISNI:</strong> {_esc(ext.musicbrainz_isnis[0])}")
-        if ext.musicbrainz_ipis:
-            mb_fields.append(f"<strong>IPI:</strong> {_esc(ext.musicbrainz_ipis[0])}")
-        if ext.musicbrainz_aliases:
-            mb_fields.append(f"<strong>Aliases:</strong> {_esc(', '.join(ext.musicbrainz_aliases[:3]))}")
-        # Social / web links from MusicBrainz
-        social_links: list[str] = []
-        if ext.musicbrainz_official_website:
-            social_links.append(f'<a href="{_esc(ext.musicbrainz_official_website)}" target="_blank" style="color:#1DB954">Website</a>')
-        if ext.musicbrainz_youtube_url:
-            social_links.append(f'<a href="{_esc(ext.musicbrainz_youtube_url)}" target="_blank" style="color:#1DB954">YouTube</a>')
-        if ext.musicbrainz_bandcamp_url:
-            social_links.append(f'<a href="{_esc(ext.musicbrainz_bandcamp_url)}" target="_blank" style="color:#1DB954">Bandcamp</a>')
-        for rt, url in list(ext.musicbrainz_social_urls.items())[:4]:
-            social_links.append(f'<a href="{_esc(url)}" target="_blank" style="color:#1DB954">{_esc(rt)}</a>')
-        if social_links:
-            mb_fields.append(f"<strong>Links:</strong> {' &middot; '.join(social_links)}")
-    if mb_fields:
-        sections.append(_platform_section("MusicBrainz", mb_fields, ext, "musicbrainz"))
+def _build_sources_grid(ev: ArtistEvaluation, ext: ExternalData) -> str:
+    """Render data sources grid showing which APIs returned data."""
+    sources = ev.sources_reached
+    items = []
+    for name, reached in sources.items():
+        if reached:
+            icon = '<span style="color:#22c55e">&#9679;</span>'
+        else:
+            icon = '<span style="color:#333">&#9679;</span>'
+        # Match quality
+        mk = name.lower().replace(".", "").replace(" ", "")
+        key_map = {"deezer": "deezer", "genius": "genius", "discogs": "discogs",
+                    "setlistfm": "setlistfm", "musicbrainz": "musicbrainz",
+                    "lastfm": "lastfm", "wikipedia": "wikipedia", "songkick": "songkick"}
+        mk = key_map.get(mk, mk)
+        method = ext.match_methods.get(mk, "")
+        badge = ""
+        if method == "platform_id":
+            badge = ' <span style="color:#556;font-size:0.6rem">ID</span>'
+        elif method and ext.match_confidences.get(mk, 0) > 0:
+            conf = ext.match_confidences[mk]
+            badge = f' <span style="color:#556;font-size:0.6rem">{conf:.0%}</span>'
+        items.append(f'<span style="font-size:0.78rem">{icon} {_esc(name)}{badge}</span>')
 
-    # --- Discogs ---
-    discogs_fields: list[str] = []
-    if ext.discogs_found:
-        if ext.discogs_physical_releases:
-            discogs_fields.append(f"<strong>Physical releases:</strong> {ext.discogs_physical_releases}")
-        if ext.discogs_digital_releases:
-            discogs_fields.append(f"<strong>Digital releases:</strong> {ext.discogs_digital_releases}")
-        if ext.discogs_total_releases:
-            discogs_fields.append(f"<strong>Total releases:</strong> {ext.discogs_total_releases}")
-        if ext.discogs_formats:
-            discogs_fields.append(f"<strong>Formats:</strong> {_esc(', '.join(ext.discogs_formats[:5]))}")
-        if ext.discogs_labels:
-            discogs_fields.append(f"<strong>Labels:</strong> {_esc(', '.join(ext.discogs_labels[:4]))}")
-        if ext.discogs_realname:
-            discogs_fields.append(f"<strong>Real name:</strong> {_esc(ext.discogs_realname)}")
-        if ext.discogs_members:
-            discogs_fields.append(f"<strong>Members:</strong> {_esc(', '.join(ext.discogs_members[:4]))}")
-        if ext.discogs_groups:
-            discogs_fields.append(f"<strong>Groups:</strong> {_esc(', '.join(ext.discogs_groups[:3]))}")
-        if ext.discogs_profile:
-            bio_preview = ext.discogs_profile[:120].rstrip()
-            if len(ext.discogs_profile) > 120:
-                bio_preview += "..."
-            discogs_fields.append(f"<strong>Bio:</strong> {_esc(bio_preview)}")
-    if discogs_fields:
-        sections.append(_platform_section("Discogs", discogs_fields, ext, "discogs"))
+    return '<div style="display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:8px">' + " ".join(items) + '</div>'
 
-    # --- Last.fm ---
-    lastfm_fields: list[str] = []
-    if ext.lastfm_found:
-        if ext.lastfm_listeners:
-            lastfm_fields.append(f"<strong>Listeners:</strong> {_fmt_num(ext.lastfm_listeners)}")
-        if ext.lastfm_playcount:
-            lastfm_fields.append(f"<strong>Play count:</strong> {_fmt_num(ext.lastfm_playcount)}")
-        if ext.lastfm_listener_play_ratio:
-            lastfm_fields.append(f"<strong>Play/listener ratio:</strong> {ext.lastfm_listener_play_ratio:.1f}")
-        if ext.lastfm_tags:
-            lastfm_fields.append(f"<strong>Tags:</strong> {_esc(', '.join(ext.lastfm_tags[:5]))}")
-        if ext.lastfm_similar_artists:
-            lastfm_fields.append(f"<strong>Similar to:</strong> {_esc(', '.join(ext.lastfm_similar_artists[:4]))}")
-        if ext.lastfm_bio_exists:
-            lastfm_fields.append("<strong>Bio:</strong> exists")
-    if lastfm_fields:
-        sections.append(_platform_section("Last.fm", lastfm_fields, ext, "lastfm"))
 
-    # --- Wikipedia ---
-    wiki_fields: list[str] = []
-    if ext.wikipedia_found:
-        if ext.wikipedia_title:
-            wiki_fields.append(f"<strong>Article:</strong> {_esc(ext.wikipedia_title)}")
-        if ext.wikipedia_monthly_views:
-            wiki_fields.append(f"<strong>Monthly views:</strong> {_fmt_num(ext.wikipedia_monthly_views)}")
-        if ext.wikipedia_length:
-            wiki_fields.append(f"<strong>Article length:</strong> {_fmt_num(ext.wikipedia_length)} bytes")
-        if ext.wikipedia_description:
-            wiki_fields.append(f"<strong>Description:</strong> {_esc(ext.wikipedia_description)}")
-        if ext.wikipedia_categories:
-            wiki_fields.append(f"<strong>Categories:</strong> {_esc(', '.join(ext.wikipedia_categories[:4]))}")
-        if ext.wikipedia_url:
-            wiki_fields.append(f'<strong>Link:</strong> <a href="{_esc(ext.wikipedia_url)}" target="_blank" style="color:#1DB954">Wikipedia</a>')
-    if wiki_fields:
-        sections.append(_platform_section("Wikipedia", wiki_fields, ext, "wikipedia"))
+def _build_metadata_grid(a: ArtistReport, ev: ArtistEvaluation, ext: ExternalData) -> str:
+    """Build a 2-column key-value metadata grid."""
+    items: list[tuple[str, str]] = []
 
-    # --- Setlist.fm + Songkick (concerts) ---
-    concert_fields: list[str] = []
-    if ext.setlistfm_found:
-        if ext.setlistfm_total_shows:
-            concert_fields.append(f"<strong>Setlist.fm shows:</strong> {ext.setlistfm_total_shows}")
-        if ext.setlistfm_first_show:
-            concert_fields.append(f"<strong>First show:</strong> {_esc(ext.setlistfm_first_show)}")
-        if ext.setlistfm_last_show:
-            concert_fields.append(f"<strong>Last show:</strong> {_esc(ext.setlistfm_last_show)}")
-        if ext.setlistfm_tour_names:
-            concert_fields.append(f"<strong>Tours:</strong> {_esc(', '.join(ext.setlistfm_tour_names[:3]))}")
-        if ext.setlistfm_venue_countries:
-            concert_fields.append(f"<strong>Countries:</strong> {_esc(', '.join(ext.setlistfm_venue_countries[:6]))}")
-    if ext.songkick_found:
-        if ext.songkick_total_past_events:
-            concert_fields.append(f"<strong>Songkick events:</strong> {ext.songkick_total_past_events}")
-        if ext.songkick_total_upcoming_events:
-            concert_fields.append(f"<strong>Upcoming:</strong> {ext.songkick_total_upcoming_events}")
-        if ext.songkick_on_tour:
-            concert_fields.append("<strong>Status:</strong> Currently on tour")
-        if ext.songkick_first_event_date:
-            concert_fields.append(f"<strong>First event:</strong> {_esc(ext.songkick_first_event_date)}")
-        if ext.songkick_last_event_date:
-            concert_fields.append(f"<strong>Last event:</strong> {_esc(ext.songkick_last_event_date)}")
-        if ext.songkick_venue_countries:
-            sk_countries = [c for c in ext.songkick_venue_countries if c not in (ext.setlistfm_venue_countries or [])]
-            if sk_countries:
-                concert_fields.append(f"<strong>Songkick countries:</strong> {_esc(', '.join(sk_countries[:5]))}")
-    if concert_fields:
-        match_key = "setlistfm" if ext.setlistfm_found else "songkick"
-        sections.append(_platform_section("Concerts / Touring", concert_fields, ext, match_key))
+    # Fan counts
+    if ev.platform_presence.deezer_fans:
+        items.append(("Deezer fans", _fmt_num(ev.platform_presence.deezer_fans)))
+    if ext.lastfm_listeners:
+        items.append(("Last.fm listeners", _fmt_num(ext.lastfm_listeners)))
+    if ext.lastfm_playcount:
+        items.append(("Last.fm plays", _fmt_num(ext.lastfm_playcount)))
+    if ext.lastfm_listener_play_ratio:
+        items.append(("Play/listener ratio", f"{ext.lastfm_listener_play_ratio:.1f}x"))
 
-    # --- YouTube ---
-    yt_fields: list[str] = []
-    if ext.youtube_checked and ext.youtube_channel_found:
+    # Catalog
+    if ext.genius_song_count:
+        items.append(("Genius songs", str(ext.genius_song_count)))
+    if ext.discogs_physical_releases:
+        items.append(("Physical releases", str(ext.discogs_physical_releases)))
+    if ext.discogs_total_releases:
+        items.append(("Discogs releases", str(ext.discogs_total_releases)))
+
+    # Identity
+    if ext.musicbrainz_type:
+        items.append(("Type", ext.musicbrainz_type))
+    if ext.musicbrainz_country:
+        items.append(("Country", ext.musicbrainz_country))
+    if ext.musicbrainz_begin_date:
+        items.append(("Active since", ext.musicbrainz_begin_date))
+    if ext.discogs_realname:
+        items.append(("Real name", ext.discogs_realname))
+    if ext.musicbrainz_genres:
+        items.append(("Genres", ", ".join(ext.musicbrainz_genres[:4])))
+
+    # Labels
+    if ev.labels:
+        items.append(("Labels", ", ".join(ev.labels[:3])))
+
+    # Live
+    if ext.setlistfm_total_shows:
+        items.append(("Setlist.fm shows", str(ext.setlistfm_total_shows)))
+    if ext.setlistfm_venue_countries:
+        items.append(("Tour countries", ", ".join(ext.setlistfm_venue_countries[:5])))
+    if ext.songkick_total_past_events:
+        items.append(("Songkick events", str(ext.songkick_total_past_events)))
+
+    # YouTube
+    if ext.youtube_channel_found:
         if ext.youtube_subscriber_count:
-            yt_fields.append(f"<strong>Subscribers:</strong> {_fmt_num(ext.youtube_subscriber_count)}")
-        if ext.youtube_video_count:
-            yt_fields.append(f"<strong>Videos:</strong> {_fmt_num(ext.youtube_video_count)}")
-        if ext.youtube_view_count:
-            yt_fields.append(f"<strong>Total views:</strong> {_fmt_num(ext.youtube_view_count)}")
-        if ext.youtube_music_videos_found:
-            yt_fields.append(f"<strong>Music videos:</strong> {ext.youtube_music_videos_found}")
-    if yt_fields:
-        sections.append(_platform_section("YouTube", yt_fields, ext, "youtube"))
+            items.append(("YouTube subs", _fmt_num(ext.youtube_subscriber_count)))
 
-    # --- PRO Registry ---
-    pro_fields: list[str] = []
-    if ext.pro_checked:
-        registries: list[str] = []
-        if ext.pro_found_bmi:
-            registries.append("BMI")
-        if ext.pro_found_ascap:
-            registries.append("ASCAP")
-        if registries:
-            pro_fields.append(f"<strong>Registered:</strong> {', '.join(registries)}")
-        elif ext.pro_checked:
-            pro_fields.append("<strong>Registered:</strong> not found in BMI/ASCAP")
-        if ext.pro_works_count:
-            pro_fields.append(f"<strong>Registered works:</strong> {ext.pro_works_count}")
-        if ext.pro_publishers:
-            pro_fields.append(f"<strong>Publishers:</strong> {_esc(', '.join(ext.pro_publishers[:3]))}")
-        if ext.pro_pfc_publisher_match:
-            pro_fields.append("<strong>PFC publisher:</strong> match found")
-        if ext.pro_songwriter_registered:
-            pro_fields.append("<strong>Songwriter:</strong> registered")
-    if pro_fields:
-        sections.append(_platform_section("PRO Registry", pro_fields, ext, None))
+    # Wikipedia
+    if ext.wikipedia_found and ext.wikipedia_monthly_views:
+        items.append(("Wikipedia views/mo", _fmt_num(ext.wikipedia_monthly_views)))
 
-    # --- Press Coverage ---
-    press_fields: list[str] = []
-    if ext.press_checked:
-        if ext.press_publications_found:
-            press_fields.append(f"<strong>Publications:</strong> {_esc(', '.join(ext.press_publications_found[:5]))}")
-        if ext.press_total_hits:
-            press_fields.append(f"<strong>Total coverage:</strong> {ext.press_total_hits} hits")
-        if not ext.press_publications_found and not ext.press_total_hits:
-            press_fields.append("<strong>Coverage:</strong> none found")
-    if press_fields:
-        sections.append(_platform_section("Press Coverage", press_fields, ext, None))
-
-    # --- ISRC ---
-    isrc_fields: list[str] = []
-    if ext.isrcs:
-        if ext.isrc_registrants:
-            isrc_fields.append(f"<strong>Registrants:</strong> {_esc(', '.join(ext.isrc_registrants[:4]))}")
-        isrc_fields.append(f"<strong>ISRC codes:</strong> {len(ext.isrcs)} tracked")
-    if isrc_fields:
-        sections.append(_platform_section("ISRC Data", isrc_fields, ext, None))
-
-    if not sections:
+    if not items:
         return ""
 
-    return f'<div class="section-title" style="color: #aaa">Platform Data</div>\n' + "\n".join(sections)
+    cells = "".join(
+        f'<div class="meta-item"><span class="meta-key">{_esc(k)}:</span> <span class="meta-val">{_esc(v)}</span></div>'
+        for k, v in items
+    )
+    return f'<div class="meta-grid">{cells}</div>'
 
 
-def _platform_section(title: str, fields: list[str], ext: ExternalData, match_key: str | None) -> str:
-    """Wrap data fields in a platform-labeled section with optional match quality info."""
-    match_info = ""
-    if match_key and ext.match_methods.get(match_key):
-        method = ext.match_methods[match_key]
-        conf = ext.match_confidences.get(match_key, 0)
-        had_id = ext.had_platform_ids.get(match_key, False)
-        if method == "platform_id" or had_id:
-            match_info = '<span class="match-info">matched via platform ID</span>'
-        elif conf > 0:
-            match_info = f'<span class="match-info">matched via {method} ({conf:.0%})</span>'
+def _build_evidence_section(ev: ArtistEvaluation) -> str:
+    """Build the evidence breakdown with red/green columns and point totals."""
+    # Sort by strength descending
+    strength_order = {"strong": 0, "moderate": 1, "weak": 2}
+    reds = sorted(ev.red_flags, key=lambda e: strength_order.get(e.strength, 3))
+    greens = sorted(ev.green_flags, key=lambda e: strength_order.get(e.strength, 3))
 
-    items = "\n".join(f'<span class="data-field">{f}</span>' for f in fields)
-    return f"""<div class="platform-data">
-  <div class="platform-data-header">{_esc(title)} {match_info}</div>
-  <div class="data-grid">{items}</div>
+    # Point totals
+    red_pts = sum(_STRENGTH_PTS.get(e.strength, 1) for e in reds)
+    green_pts = sum(_STRENGTH_PTS.get(e.strength, 1) for e in greens)
+
+    def _count_by_strength(flags: list[Evidence]) -> str:
+        s = sum(1 for e in flags if e.strength == "strong")
+        m = sum(1 for e in flags if e.strength == "moderate")
+        w = sum(1 for e in flags if e.strength == "weak")
+        parts = []
+        if s:
+            parts.append(f"{s} strong")
+        if m:
+            parts.append(f"{m} moderate")
+        if w:
+            parts.append(f"{w} weak")
+        return ", ".join(parts)
+
+    # Red flags column
+    red_items = ""
+    for e in reds:
+        dots = _strength_dots(e.strength, "#ef4444")
+        red_items += f"""<div class="flag-item">
+  <div class="flag-finding">{dots} {_esc(e.finding)}</div>
+  <div class="flag-detail">{_esc(e.detail)}</div>
+  <div class="flag-meta">Source: {_esc(e.source)}</div>
 </div>"""
+
+    # Green flags column
+    green_items = ""
+    for e in greens:
+        dots = _strength_dots(e.strength, "#22c55e")
+        green_items += f"""<div class="flag-item">
+  <div class="flag-finding">{dots} {_esc(e.finding)}</div>
+  <div class="flag-detail">{_esc(e.detail)}</div>
+  <div class="flag-meta">Source: {_esc(e.source)}</div>
+</div>"""
+
+    pts_line = (
+        f'<div class="pts-summary">'
+        f'<span style="color:#ef4444">Red: {red_pts} pts</span> ({_count_by_strength(reds)}) '
+        f'&nbsp;|&nbsp; '
+        f'<span style="color:#22c55e">Green: {green_pts} pts</span> ({_count_by_strength(greens)})'
+        f'</div>'
+    )
+
+    return f"""<div class="evidence-section">
+  {pts_line}
+  <div class="evidence-cols">
+    <div>
+      <div class="evidence-col-header" style="color:#ef4444">Red Flags ({len(reds)})</div>
+      {red_items if red_items else '<div style="color:#445;font-size:0.82rem;padding:8px 0">None</div>'}
+    </div>
+    <div>
+      <div class="evidence-col-header" style="color:#22c55e">Green Flags ({len(greens)})</div>
+      {green_items if green_items else '<div style="color:#445;font-size:0.82rem;padding:8px 0">None</div>'}
+    </div>
+  </div>
+</div>"""
+
+
+def _build_entities_section(ev: ArtistEvaluation, ext: ExternalData) -> str:
+    """Build connected entities section from entity DB evidence."""
+    entity_items = []
+    for e in ev.red_flags + ev.green_flags:
+        if not e.tags:
+            continue
+        tag_set = set(e.tags)
+        if tag_set & {"entity_confirmed_bad", "entity_suspected", "entity_bad_label",
+                       "entity_bad_songwriter", "entity_bad_network"}:
+            icon = "&#9888;" if "confirmed_bad" in e.tags else "&#9888;"
+            color = "#ef4444" if "confirmed_bad" in " ".join(e.tags) else "#f59e0b"
+            entity_items.append(
+                f'<div class="entity-item">'
+                f'<span style="color:{color}">{icon}</span> {_esc(e.finding)}'
+                f'</div>'
+            )
+        elif "entity_cleared" in tag_set:
+            entity_items.append(
+                f'<div class="entity-item">'
+                f'<span style="color:#22c55e">&#10003;</span> {_esc(e.finding)}'
+                f'</div>'
+            )
+
+    if not entity_items:
+        return ""
+
+    return (
+        '<div class="entities">'
+        '<div style="font-size:0.72rem;color:#667;text-transform:uppercase;margin-bottom:6px">Connected Entities</div>'
+        + "".join(entity_items)
+        + '</div>'
+    )
