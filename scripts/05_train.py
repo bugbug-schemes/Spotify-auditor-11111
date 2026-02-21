@@ -77,16 +77,14 @@ def assign_ground_truth(features: dict, entity_data: dict) -> str:
     has_bad_label = features.get("known_bad_actor_label", 0) == 1
     has_physical = features.get("has_discogs_physical", 0) == 1
     has_setlists = features.get("has_setlists", 0) == 1
-    has_events = features.get("has_bandsintown_events", 0) == 1
-
-    missing_platforms = 7 - platform_count
+    missing_platforms = 6 - platform_count
 
     # CONFIRMED_PFC: Bad actor match + missing 4+ platforms
     if (has_bad_producer or has_bad_label) and missing_platforms >= 4:
         return LABEL_CONFIRMED_PFC
 
     # LIKELY_LEGIT: 5+ platforms + physical/live + no bad actors
-    if platform_count >= 5 and (has_physical or has_setlists or has_events) and not has_bad_producer and not has_bad_label:
+    if platform_count >= 5 and (has_physical or has_setlists) and not has_bad_producer and not has_bad_label:
         return LABEL_LIKELY_LEGIT
 
     # LIKELY_PFC: Missing 4+ platforms + high-PFC signals (even without bad actor match)
@@ -166,6 +164,11 @@ def train_simple_tree(
     return {
         "importances": dict(sorted(importances.items(), key=lambda x: x[1], reverse=True)),
     }
+
+
+def mean(values):
+    """Simple mean."""
+    return sum(values) / len(values) if values else 0
 
 
 def cross_validate(
@@ -259,11 +262,6 @@ def cross_validate(
             "false_negative": fn,
         },
     }
-
-
-def mean(values):
-    """Simple mean."""
-    return sum(values) / len(values) if values else 0
 
 
 # ---------------------------------------------------------------------------

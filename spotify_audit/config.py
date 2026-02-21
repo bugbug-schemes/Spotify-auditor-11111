@@ -3,11 +3,11 @@ Configuration and default scoring weights for spotify-audit.
 
 All weights are configurable. The scoring system produces a 0-100 legitimacy
 score where higher = more legitimate:
-  80-100 = Verified Artist
-  55-79  = Likely Authentic
-  35-54  = Inconclusive
-  15-34  = Suspicious
-  0-14   = Likely Artificial
+  82-100 = Verified Artist
+  58-81  = Likely Authentic
+  38-57  = Inconclusive
+  18-37  = Suspicious
+  0-17   = Likely Artificial
 """
 
 from __future__ import annotations
@@ -40,11 +40,11 @@ THREAT_CATEGORIES = {
 # Score range labels
 # ---------------------------------------------------------------------------
 SCORE_LABELS = {
-    (80, 100): "Verified Artist",
-    (55, 79):  "Likely Authentic",
-    (35, 54):  "Inconclusive",
-    (15, 34):  "Suspicious",
-    (0, 14):   "Likely Artificial",
+    (82, 100): "Verified Artist",
+    (58, 81):  "Likely Authentic",
+    (38, 57):  "Inconclusive",
+    (18, 37):  "Suspicious",
+    (0, 17):   "Likely Artificial",
 }
 
 
@@ -56,10 +56,9 @@ def score_label(score: int) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Escalation thresholds
+# Deep analysis threshold — artists scoring above this get Claude analysis
 # ---------------------------------------------------------------------------
-ESCALATE_TO_STANDARD = 30   # Quick score > this -> run Standard
-ESCALATE_TO_DEEP = 50       # Standard score > this -> run Deep
+ESCALATE_TO_DEEP = 50       # Score > this -> run Deep analysis
 
 
 # ---------------------------------------------------------------------------
@@ -98,7 +97,7 @@ class StandardWeights:
     quick_score: float = 0.40
     genius_credits: float = 0.12          # songwriter/producer credits
     discogs_physical: float = 0.12        # physical releases (vinyl/CD)
-    live_show_history: float = 0.12       # concert history (setlist.fm + bandsintown)
+    live_show_history: float = 0.12       # concert history (setlist.fm)
     musicbrainz_presence: float = 0.08    # MusicBrainz metadata quality
     label_blocklist_match: float = 0.10   # PFC distributor/label match
     deezer_cross_check: float = 0.06      # Deezer presence & fan validation
@@ -132,7 +131,6 @@ class AuditConfig:
     standard_weights: StandardWeights = field(default_factory=StandardWeights)
     deep_weights: DeepWeights = field(default_factory=DeepWeights)
 
-    escalate_to_standard: int = ESCALATE_TO_STANDARD
     escalate_to_deep: int = ESCALATE_TO_DEEP
 
     cache_ttl_days: int = 7
@@ -144,8 +142,9 @@ class AuditConfig:
     genius_token: str = ""              # Genius access token
     discogs_token: str = ""             # Discogs personal access token
     setlistfm_api_key: str = ""         # setlist.fm API key
-    bandsintown_app_id: str = ""        # Bandsintown app ID
-
+    lastfm_api_key: str = ""            # Last.fm API key
+    songkick_api_key: str = ""          # Songkick API key
+    youtube_api_key: str = ""           # YouTube Data API v3 key
     # Rate-limit / batching
     claude_batch_size: int = 5          # artists per Claude API call
     max_retries: int = 5
@@ -165,22 +164,29 @@ def load_blocklist(name: str) -> list[str]:
         return json.load(f)
 
 
-# Convenience loaders — cached so file I/O only happens once per process
+def _load_blocklist_set(name: str) -> frozenset[str]:
+    """Load a blocklist as a frozenset for O(1) membership checks."""
+    items = load_blocklist(name)
+    return frozenset(item.lower() for item in items)
+
+
+# Convenience loaders — cached so file I/O only happens once per process.
+# Returns frozensets for O(1) membership testing instead of O(n) list scans.
 @lru_cache(maxsize=None)
-def pfc_distributors() -> list[str]:
-    return load_blocklist("pfc_distributors")
-
-
-@lru_cache(maxsize=None)
-def pfc_playlists() -> list[str]:
-    return load_blocklist("pfc_playlists")
-
-
-@lru_cache(maxsize=None)
-def known_ai_artists() -> list[str]:
-    return load_blocklist("known_ai_artists")
+def pfc_distributors() -> frozenset[str]:
+    return _load_blocklist_set("pfc_distributors")
 
 
 @lru_cache(maxsize=None)
-def pfc_songwriters() -> list[str]:
-    return load_blocklist("pfc_songwriters")
+def pfc_playlists() -> frozenset[str]:
+    return _load_blocklist_set("pfc_playlists")
+
+
+@lru_cache(maxsize=None)
+def known_ai_artists() -> frozenset[str]:
+    return _load_blocklist_set("known_ai_artists")
+
+
+@lru_cache(maxsize=None)
+def pfc_songwriters() -> frozenset[str]:
+    return _load_blocklist_set("pfc_songwriters")

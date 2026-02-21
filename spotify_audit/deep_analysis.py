@@ -14,6 +14,7 @@ from __future__ import annotations
 import base64
 import logging
 import re
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 
 import requests
@@ -103,9 +104,6 @@ def _build_artist_context(artist: ArtistInfo, ext: ExternalData) -> str:
         lines.append(f"Country (MusicBrainz): {ext.musicbrainz_country}")
     if ext.setlistfm_total_shows:
         lines.append(f"Live shows: {ext.setlistfm_total_shows}")
-    if ext.bandsintown_past_events:
-        lines.append(f"Bandsintown past events: {ext.bandsintown_past_events}")
-
     return "\n".join(lines)
 
 
@@ -195,6 +193,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="strong",
             detail="The artist's biography explicitly references AI generation, "
                    "algorithms, or automated music creation. " + reasoning,
+            tags=["ai_bio"],
         ))
 
     if verdict == "SUSPICIOUS":
@@ -204,6 +203,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             evidence_type="red_flag",
             strength=strength,
             detail=reasoning,
+            tags=["suspicious_bio"],
         ))
     elif verdict == "AUTHENTIC":
         evidence.append(Evidence(
@@ -212,6 +212,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             evidence_type="green_flag",
             strength=strength,
             detail=reasoning,
+            tags=["authentic_bio"],
         ))
     else:
         evidence.append(Evidence(
@@ -230,6 +231,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="weak",
             detail="Biography mentions specific locations, suggesting a real person "
                    "with verifiable roots.",
+            tags=["geo_specific_bio"],
         ))
     elif bio_text and not geo_specific:
         evidence.append(Evidence(
@@ -239,6 +241,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="weak",
             detail="Biography doesn't mention where the artist is from. "
                    "Real artists almost always reference their hometown or country.",
+            tags=["no_geo_bio"],
         ))
 
     if verifiable:
@@ -249,6 +252,7 @@ def _parse_bio_response(response: str, bio_text: str) -> list[Evidence]:
             strength="moderate",
             detail="Biography references specific events, collaborators, venues, or dates "
                    "that could be independently verified.",
+            tags=["verifiable_claims"],
         ))
 
     return evidence
@@ -347,6 +351,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             evidence_type="red_flag",
             strength=strength,
             detail=reasoning,
+            tags=["ai_generated_image"],
         ))
     elif image_type == "AI_GENERATED":
         evidence.append(Evidence(
@@ -355,6 +360,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             evidence_type="red_flag",
             strength=strength,
             detail=reasoning,
+            tags=["ai_generated_image"],
         ))
     elif image_type in ("ABSTRACT_ART", "LOGO", "OTHER"):
         evidence.append(Evidence(
@@ -365,6 +371,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             detail="Profile uses abstract art, a logo, or non-human imagery instead of "
                    "a photo. While some real artists do this, it's more common with "
                    "fabricated profiles. " + reasoning,
+            tags=["abstract_image"],
         ))
     elif image_type == "STOCK_PHOTO":
         evidence.append(Evidence(
@@ -374,6 +381,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             strength="moderate",
             detail="Profile image looks like a stock photo rather than an authentic "
                    "artist photo. Ghost artists frequently use stock imagery. " + reasoning,
+            tags=["stock_photo"],
         ))
     elif image_type == "HUMAN_PHOTO" and ai_artifacts == "NO":
         evidence.append(Evidence(
@@ -382,6 +390,7 @@ def _parse_image_response(response: str) -> list[Evidence]:
             evidence_type="green_flag",
             strength=strength,
             detail=reasoning,
+            tags=["authentic_photo"],
         ))
     else:
         evidence.append(Evidence(
@@ -404,6 +413,8 @@ def _synthesize(
     model: str = "claude-sonnet-4-5-20250929",
 ) -> list[Evidence]:
     """Final synthesis: combine all signals into a threat assessment."""
+    from spotify_audit.press_coverage import build_claude_prompt
+
     context = _build_artist_context(artist, ext)
 
     # Summarize prior evidence
@@ -415,6 +426,9 @@ def _synthesize(
     if not prior_lines:
         return []
 
+    # Include press coverage investigation prompt (Priority 6)
+    press_prompt = build_claude_prompt(artist.name)
+
     prompt = f"""You are a music industry analyst investigating whether this is a real artist or a fabricated/ghost/AI artist.
 
 ARTIST DATA:
@@ -423,7 +437,10 @@ ARTIST DATA:
 EVIDENCE COLLECTED SO FAR:
 {chr(10).join(prior_lines)}
 
-Based on ALL the evidence above, provide a final synthesis assessment.
+ADDITIONAL INVESTIGATION:
+{press_prompt}
+
+Based on ALL the evidence above (including your press coverage findings), provide a final synthesis assessment.
 
 Classify into one of these threat categories:
 - PFC_GHOST: Fabricated artist identity created by a production company (like Epidemic Sound), music written by ghost producers under fake names
@@ -453,12 +470,14 @@ REASONING: [2-3 sentences summarizing the key evidence and your conclusion]"""
     reasoning = _extract_field(text, "REASONING", "")
 
     if category in ("PFC_GHOST", "AI_GENERATED"):
+        synth_tag = "synth_pfc_ghost" if category == "PFC_GHOST" else "synth_ai_generated"
         evidence.append(Evidence(
             finding=f"Claude synthesis: {category.replace('_', ' ').title()}",
             source="Claude synthesis",
             evidence_type="red_flag",
             strength="strong" if confidence == "HIGH" else "moderate",
             detail=reasoning,
+            tags=[synth_tag],
         ))
     elif category == "LEGITIMATE":
         evidence.append(Evidence(
@@ -467,6 +486,7 @@ REASONING: [2-3 sentences summarizing the key evidence and your conclusion]"""
             evidence_type="green_flag",
             strength="strong" if confidence == "HIGH" else "moderate",
             detail=reasoning,
+            tags=["synth_legitimate"],
         ))
     else:
         evidence.append(Evidence(
@@ -680,12 +700,14 @@ REASONING: [2-3 sentences]"""
 
             evidence = []
             if category in ("PFC_GHOST", "AI_GENERATED"):
+                synth_tag = "synth_pfc_ghost" if category == "PFC_GHOST" else "synth_ai_generated"
                 evidence.append(Evidence(
                     finding=f"Claude synthesis: {category.replace('_', ' ').title()}",
                     source="Claude synthesis",
                     evidence_type="red_flag",
                     strength="strong" if confidence == "HIGH" else "moderate",
                     detail=reasoning,
+                    tags=[synth_tag],
                 ))
             elif category == "LEGITIMATE":
                 evidence.append(Evidence(
@@ -694,6 +716,7 @@ REASONING: [2-3 sentences]"""
                     evidence_type="green_flag",
                     strength="strong" if confidence == "HIGH" else "moderate",
                     detail=reasoning,
+                    tags=["synth_legitimate"],
                 ))
             else:
                 evidence.append(Evidence(
@@ -740,11 +763,19 @@ def run_deep_analysis_batch(
         for key, evidence in bio_results.items():
             results[key].bio_analysis = evidence
 
-    # Phase 2: Individual image analysis (images too large to batch)
-    for key, artist, ext in artists:
-        results[key].image_analysis = analyze_image(client, artist, model=model)
-        if on_progress:
-            on_progress()
+    # Phase 2: Parallel image analysis (images too large to batch in one API call,
+    # but downloads + individual Claude calls can overlap)
+    def _analyze_one_image(item: tuple[str, ArtistInfo, ExternalData]) -> tuple[str, list]:
+        key, artist, ext = item
+        return key, analyze_image(client, artist, model=model)
+
+    with ThreadPoolExecutor(max_workers=4, thread_name_prefix="img") as pool:
+        futures = {pool.submit(_analyze_one_image, item): item[0] for item in artists}
+        for fut in as_completed(futures):
+            key, img_evidence = fut.result()
+            results[key].image_analysis = img_evidence
+            if on_progress:
+                on_progress()
 
     # Phase 3: Batch synthesis
     for i in range(0, len(artists), BATCH_SIZE):

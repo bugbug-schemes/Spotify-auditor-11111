@@ -14,6 +14,10 @@ from dataclasses import dataclass, field
 
 import requests
 
+from spotify_audit.name_matching import (
+    similarity_score, min_confidence_for_length, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 GENIUS_API = "https://api.genius.com"
@@ -47,6 +51,11 @@ class GeniusClient:
         self.session = requests.Session()
         self.session.headers["Authorization"] = f"Bearer {access_token}"
         self.session.headers["Accept"] = "application/json"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
         self.enabled = bool(access_token)
 
@@ -59,26 +68,46 @@ class GeniusClient:
         time.sleep(self.delay)
         return r.json()
 
-    def search_artist(self, name: str) -> GeniusArtist | None:
-        """Search for an artist by name.
+    def search_artist(self, name: str, genius_id: str | None = None) -> GeniusArtist | None:
+        """Search for an artist by name using shared name matching.
 
-        Uses the /search endpoint (which returns songs) and extracts the
-        primary_artist from each hit.  First tries exact name match, then
-        falls back to case-insensitive containment so we handle slight
-        name variations between Spotify/Deezer and Genius.
+        Args:
+            name: Artist name to search for.
+            genius_id: Optional Genius artist ID from MusicBrainz URL bridging.
+                       If provided, skips name search entirely.
         """
         if not self.enabled:
             return None
+
+        # Platform ID bridging: skip search if we have a direct ID
+        if genius_id:
+            try:
+                data = self._get(f"/artists/{genius_id}")
+                artist_data = data.get("response", {}).get("artist", {})
+                if artist_data:
+                    log_match("Genius", name, MatchResult(
+                        found=True, confidence=1.0,
+                        matched_name=artist_data.get("name", ""),
+                        platform_id=str(genius_id),
+                        match_method="platform_id",
+                    ))
+                    return GeniusArtist(
+                        genius_id=int(genius_id) if str(genius_id).isdigit() else 0,
+                        name=artist_data.get("name", ""),
+                        url=artist_data.get("url", ""),
+                        image_url=artist_data.get("image_url", ""),
+                    )
+            except Exception as exc:
+                logger.debug("Genius ID lookup failed for %s: %s", genius_id, exc)
+
         data = self._get("/search", {"q": name, "per_page": 15})
         hits = data.get("response", {}).get("hits", [])
 
         if not hits:
-            logger.warning("Genius: 0 search hits for '%s'", name)
+            log_match("Genius", name, MatchResult(found=False))
             return None
 
-        name_lower = name.lower().strip()
-
-        # Pass 1: exact match
+        # Deduplicate primary artists
         seen_ids: set[int] = set()
         candidates: list[dict] = []
         for hit in hits:
@@ -87,33 +116,35 @@ class GeniusClient:
             pid = primary.get("id", 0)
             if pid and pid not in seen_ids:
                 seen_ids.add(pid)
-                candidates.append(primary)
-                if primary.get("name", "").lower().strip() == name_lower:
-                    logger.debug("Genius: exact match for '%s' → id %d", name, pid)
-                    return GeniusArtist(
-                        genius_id=pid,
-                        name=primary.get("name", ""),
-                        url=primary.get("url", ""),
-                        image_url=primary.get("image_url", ""),
-                    )
+                candidates.append({
+                    "name": primary.get("name", ""),
+                    "id": pid,
+                    "url": primary.get("url", ""),
+                    "image_url": primary.get("image_url", ""),
+                    "aliases": primary.get("alternate_names", []) or [],
+                })
 
-        # Pass 2: containment match (handles "The National" vs "National")
-        for primary in candidates:
-            pname = primary.get("name", "").lower().strip()
-            if name_lower in pname or pname in name_lower:
-                pid = primary.get("id", 0)
-                logger.debug("Genius: partial match for '%s' → '%s' (id %d)",
-                             name, primary.get("name", ""), pid)
-                return GeniusArtist(
-                    genius_id=pid,
-                    name=primary.get("name", ""),
-                    url=primary.get("url", ""),
-                    image_url=primary.get("image_url", ""),
-                )
+        if not candidates:
+            log_match("Genius", name, MatchResult(found=False))
+            return None
 
-        logger.warning("Genius: no name match for '%s' in %d candidates: %s",
-                        name, len(candidates),
-                        [c.get("name", "") for c in candidates[:5]])
+        # Score all candidates using shared matching
+        from spotify_audit.name_matching import pick_best_match
+        match = pick_best_match(name, candidates)
+        log_match("Genius", name, match)
+
+        if match.found and match.platform_id:
+            best = next(
+                (c for c in candidates if str(c["id"]) == match.platform_id),
+                candidates[0],
+            )
+            return GeniusArtist(
+                genius_id=best["id"],
+                name=best["name"],
+                url=best.get("url", ""),
+                image_url=best.get("image_url", ""),
+            )
+
         return None
 
     def get_artist_songs_count(self, genius_id: int, sort: str = "popularity") -> int:

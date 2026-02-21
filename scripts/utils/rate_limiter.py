@@ -8,6 +8,7 @@ backs off exponentially (1s → 2s → 4s → ... → 60s max).
 from __future__ import annotations
 
 import logging
+import random
 import time
 from dataclasses import dataclass, field
 
@@ -70,11 +71,10 @@ class APILimiter:
             )
             return
 
-        # Exponential backoff: 1, 2, 4, 8 (capped at 8s, not 60s)
-        self._backoff = min(
-            2 ** (self._consecutive_errors - 1),
-            8.0,
-        )
+        # Exponential backoff with jitter: 1, 2, 4, 8 (capped at 8s)
+        # Jitter avoids thundering herd when multiple threads back off together
+        base_backoff = min(2 ** (self._consecutive_errors - 1), 8.0)
+        self._backoff = base_backoff * (0.8 + 0.4 * random.random())
         logger.warning(
             "[%s] Error #%d — backoff now %.1fs",
             self.name, self._consecutive_errors, self._backoff,
@@ -109,7 +109,6 @@ API_LIMITERS: dict[str, APILimiter] = {
     "discogs": APILimiter(name="Discogs", min_delay=1.1),
     "setlistfm": APILimiter(name="Setlist.fm", min_delay=0.6),
     "lastfm": APILimiter(name="Last.fm", min_delay=0.25),
-    "bandsintown": APILimiter(name="Bandsintown", min_delay=1.1),
 }
 
 

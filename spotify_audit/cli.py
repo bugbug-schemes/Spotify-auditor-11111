@@ -31,17 +31,21 @@ from spotify_audit.musicbrainz_client import MusicBrainzClient
 from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
-# Bandsintown removed from UX — no API access
 from spotify_audit.lastfm_client import LastfmClient
+from spotify_audit.wikipedia_client import WikipediaClient
+from spotify_audit.songkick_client import SongkickClient
+from spotify_audit.youtube_client import YouTubeClient
+from spotify_audit.deezer_ai import DeezerAIChecker
+from spotify_audit.pro_registry import PRORegistryClient
+from spotify_audit.known_entities import run_pre_check, auto_promote_entity
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
-from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, incorporate_deep_evidence
+from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, Evidence, incorporate_deep_evidence
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
     finalize_artist_report,
     build_playlist_report,
-    should_escalate_to_standard,
     should_escalate_to_deep,
     ArtistReport,
     PlaylistReport,
@@ -68,6 +72,9 @@ def _build_config() -> AuditConfig:
         genius_token=os.getenv("GENIUS_TOKEN", ""),
         discogs_token=os.getenv("DISCOGS_TOKEN", ""),
         setlistfm_api_key=os.getenv("SETLISTFM_API_KEY", ""),
+        lastfm_api_key=os.getenv("LASTFM_API_KEY", ""),
+        songkick_api_key=os.getenv("SONGKICK_API_KEY", ""),
+        youtube_api_key=os.getenv("YOUTUBE_API_KEY", ""),
     )
 
 
@@ -79,6 +86,8 @@ _VERDICT_COLORS = {
     Verdict.VERIFIED_ARTIST: "green",
     Verdict.LIKELY_AUTHENTIC: "bright_green",
     Verdict.INCONCLUSIVE: "yellow",
+    Verdict.INSUFFICIENT_DATA: "yellow",
+    Verdict.CONFLICTING_SIGNALS: "yellow",
     Verdict.SUSPICIOUS: "dark_orange",
     Verdict.LIKELY_ARTIFICIAL: "red",
 }
@@ -87,6 +96,8 @@ _VERDICT_ICONS = {
     Verdict.VERIFIED_ARTIST: "[green]OK[/green]",
     Verdict.LIKELY_AUTHENTIC: "[bright_green]OK[/bright_green]",
     Verdict.INCONCLUSIVE: "[yellow]??[/yellow]",
+    Verdict.INSUFFICIENT_DATA: "[yellow]--[/yellow]",
+    Verdict.CONFLICTING_SIGNALS: "[yellow]!?[/yellow]",
     Verdict.SUSPICIOUS: "[dark_orange]!![/dark_orange]",
     Verdict.LIKELY_ARTIFICIAL: "[red]XX[/red]",
 }
@@ -424,10 +435,8 @@ def _render_blocklist_report(bl_report: BlocklistReport) -> None:
 @click.command()
 @click.argument("playlist_url")
 @click.option(
-    "--tier",
-    type=click.Choice(["quick", "standard", "deep"], case_sensitive=False),
-    default="quick",
-    help="Maximum analysis tier. 'quick' = Spotify only; higher tiers auto-escalate.",
+    "--deep", is_flag=True,
+    help="Enable Claude AI deep analysis (requires ANTHROPIC_API_KEY).",
 )
 @click.option(
     "--format", "fmt",
@@ -445,7 +454,7 @@ def _render_blocklist_report(bl_report: BlocklistReport) -> None:
 @click.option("--no-cache", is_flag=True, help="Bypass the SQLite cache.")
 def main(
     playlist_url: str,
-    tier: str,
+    deep: bool,
     fmt: str,
     output: str | None,
     verbose: bool,
@@ -453,7 +462,8 @@ def main(
 ) -> None:
     """Analyze a Spotify playlist for AI-generated, ghost, and fake artists.
 
-    No API keys required — data is scraped from Spotify's public embed endpoints.
+    Collects evidence from Spotify, Deezer, MusicBrainz, Genius, Discogs,
+    Setlist.fm, and Last.fm. Use --deep for additional Claude AI analysis.
     """
     logging.basicConfig(
         level=logging.DEBUG if verbose else logging.WARNING,
@@ -465,7 +475,7 @@ def main(
     cache = None if no_cache else Cache(config.db_path, config.cache_ttl_days)
 
     try:
-        playlist_report, blocklist_report = _run_audit(client, cache, config, playlist_url, tier)
+        playlist_report, blocklist_report = _run_audit(client, cache, config, playlist_url, deep)
     finally:
         client.close()
         if cache:
@@ -551,6 +561,8 @@ def _resolve_artist_by_name(
                     contributor_roles=dz.contributor_roles,
                     related_artist_names=related_names,
                     deezer_fans=dz.nb_fan,
+                    deezer_isrcs=dz.track_isrcs,
+                    deezer_isrc_registrants=dz.isrc_registrants,
                 )
             else:
                 logger.debug(
@@ -567,6 +579,18 @@ def _resolve_artist_by_name(
     return ArtistInfo(artist_id=f"name:{name}", name=name)
 
 
+def _collect_quick_presence(artist: ArtistInfo):
+    """Build a minimal PlatformPresence from core artist data (for short-circuit path)."""
+    from spotify_audit.evidence import PlatformPresence
+    presence = PlatformPresence()
+    if not artist.artist_id.startswith("name:"):
+        presence.spotify = True
+    if artist.deezer_fans > 0:
+        presence.deezer = True
+        presence.deezer_fans = artist.deezer_fans
+    return presence
+
+
 def _lookup_external_data(
     artist_name: str,
     genius: GeniusClient,
@@ -574,6 +598,8 @@ def _lookup_external_data(
     setlistfm: SetlistFmClient,
     mb_client: MusicBrainzClient,
     lastfm: "LastfmClient | None" = None,
+    wikipedia: "WikipediaClient | None" = None,
+    songkick: "SongkickClient | None" = None,
 ) -> ExternalData:
     """Run all Standard-tier API lookups concurrently and return aggregated results.
 
@@ -584,14 +610,53 @@ def _lookup_external_data(
     ext = ExternalData()
     search_name = artist_name.split(",")[0].strip() if "," in artist_name else artist_name
 
-    # Each helper writes directly to ``ext``.  Every helper touches a disjoint
-    # set of fields so there is no data race.
+    # ------------------------------------------------------------------
+    # Phase 1: MusicBrainz first (provides platform IDs for other APIs)
+    # ------------------------------------------------------------------
+    from spotify_audit.name_matching import get_platform_ids_from_musicbrainz
+    platform_ids: dict[str, str] = {}
+
+    try:
+        mb = mb_client.search_artist(search_name)
+        if mb and mb.mbid:
+            ext.musicbrainz_found = True
+            ext.musicbrainz_type = mb.artist_type
+            ext.musicbrainz_country = mb.country
+            ext.musicbrainz_begin_date = mb.begin_date
+            ext.musicbrainz_gender = mb.gender
+            ext.musicbrainz_area = mb.area
+            ext.musicbrainz_aliases = mb.aliases
+            ext.musicbrainz_isnis = mb.isnis
+            ext.musicbrainz_ipis = mb.ipis
+            ext.musicbrainz_genres = mb.genres
+            mb = mb_client.enrich(mb)
+            ext.musicbrainz_labels = mb.labels
+            ext.musicbrainz_urls = mb.urls
+            # Priority 5: Enhanced URL categorization
+            ext.musicbrainz_youtube_url = mb.youtube_url
+            ext.musicbrainz_bandcamp_url = mb.bandcamp_url
+            ext.musicbrainz_official_website = mb.official_website
+            ext.musicbrainz_social_urls = mb.social_urls
+            # Priority 7: ISRCs from MusicBrainz recordings
+            if mb.isrcs:
+                ext.isrcs.extend(mb.isrcs)
+                ext.isrc_registrants = mb.isrc_registrants
+            # Extract platform IDs for bridging to other APIs
+            if mb.urls:
+                platform_ids = get_platform_ids_from_musicbrainz(mb.urls)
+                logger.debug("MusicBrainz platform IDs for '%s': %s", search_name, platform_ids)
+    except Exception as exc:
+        logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
+
+    # ------------------------------------------------------------------
+    # Phase 2: All other APIs concurrently (using platform IDs when available)
+    # ------------------------------------------------------------------
 
     def _lookup_genius() -> None:
         if not genius.enabled:
             return
         try:
-            ga = genius.search_artist(search_name)
+            ga = genius.search_artist(search_name, genius_id=platform_ids.get("genius"))
             if ga:
                 ext.genius_found = True
                 ga = genius.enrich(ga)
@@ -608,7 +673,7 @@ def _lookup_external_data(
 
     def _lookup_discogs() -> None:
         try:
-            da = discogs.search_artist(search_name)
+            da = discogs.search_artist(search_name, discogs_id=platform_ids.get("discogs"))
             if da:
                 ext.discogs_found = True
                 da = discogs.enrich(da)
@@ -630,7 +695,7 @@ def _lookup_external_data(
         if not setlistfm.enabled:
             return
         try:
-            sa = setlistfm.search_artist(search_name)
+            sa = setlistfm.search_artist(search_name, setlistfm_url=platform_ids.get("setlistfm"))
             if sa:
                 ext.setlistfm_found = True
                 sa = setlistfm.get_setlist_count(sa)
@@ -644,31 +709,11 @@ def _lookup_external_data(
         except Exception as exc:
             logger.warning("Setlist.fm lookup failed for '%s': %s", search_name, exc)
 
-    def _lookup_musicbrainz() -> None:
-        try:
-            mb = mb_client.search_artist(search_name)
-            if mb and mb.mbid:
-                ext.musicbrainz_found = True
-                ext.musicbrainz_type = mb.artist_type
-                ext.musicbrainz_country = mb.country
-                ext.musicbrainz_begin_date = mb.begin_date
-                ext.musicbrainz_gender = mb.gender
-                ext.musicbrainz_area = mb.area
-                ext.musicbrainz_aliases = mb.aliases
-                ext.musicbrainz_isnis = mb.isnis
-                ext.musicbrainz_ipis = mb.ipis
-                ext.musicbrainz_genres = mb.genres
-                mb = mb_client.enrich(mb)
-                ext.musicbrainz_labels = mb.labels
-                ext.musicbrainz_urls = mb.urls
-        except Exception as exc:
-            logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
-
     def _lookup_lastfm() -> None:
         if not (lastfm and lastfm.enabled):
             return
         try:
-            la = lastfm.get_artist_info(search_name)
+            la = lastfm.get_artist_info(search_name, lastfm_name=platform_ids.get("lastfm"))
             if la:
                 ext.lastfm_found = True
                 la = lastfm.enrich(la)
@@ -683,14 +728,53 @@ def _lookup_external_data(
         except Exception as exc:
             logger.debug("Last.fm lookup failed for '%s': %s", search_name, exc)
 
-    # Fire all API lookups concurrently — each writes to disjoint ext fields
-    with ThreadPoolExecutor(max_workers=6, thread_name_prefix="api") as pool:
+    def _lookup_wikipedia() -> None:
+        if not (wikipedia and wikipedia.enabled):
+            return
+        try:
+            wa = wikipedia.search_artist(search_name, wikipedia_title=platform_ids.get("wikipedia"))
+            if wa:
+                ext.wikipedia_found = True
+                wa = wikipedia.enrich(wa)
+                ext.wikipedia_title = wa.title
+                ext.wikipedia_length = wa.length
+                ext.wikipedia_extract = wa.extract
+                ext.wikipedia_description = wa.description
+                ext.wikipedia_categories = wa.categories
+                ext.wikipedia_monthly_views = wa.monthly_views
+                ext.wikipedia_url = wa.url
+        except Exception as exc:
+            logger.debug("Wikipedia lookup failed for '%s': %s", search_name, exc)
+
+    def _lookup_songkick() -> None:
+        if not (songkick and songkick.enabled):
+            return
+        try:
+            sa = songkick.search_artist(search_name, songkick_id=platform_ids.get("songkick"))
+            if sa:
+                ext.songkick_found = True
+                sa = songkick.enrich(sa)
+                ext.songkick_on_tour = sa.on_tour
+                ext.songkick_total_past_events = sa.total_past_events
+                ext.songkick_total_upcoming_events = sa.total_upcoming_events
+                ext.songkick_first_event_date = sa.first_event_date
+                ext.songkick_last_event_date = sa.last_event_date
+                ext.songkick_venue_names = sa.venue_names
+                ext.songkick_venue_cities = sa.venue_cities
+                ext.songkick_venue_countries = sa.venue_countries
+                ext.songkick_event_types = sa.event_types
+        except Exception as exc:
+            logger.debug("Songkick lookup failed for '%s': %s", search_name, exc)
+
+    # Fire remaining API lookups concurrently (MusicBrainz already done in Phase 1)
+    with ThreadPoolExecutor(max_workers=7, thread_name_prefix="api") as pool:
         futures = [
             pool.submit(_lookup_genius),
             pool.submit(_lookup_discogs),
             pool.submit(_lookup_setlistfm),
-            pool.submit(_lookup_musicbrainz),
             pool.submit(_lookup_lastfm),
+            pool.submit(_lookup_wikipedia),
+            pool.submit(_lookup_songkick),
         ]
         for fut in as_completed(futures):
             fut.result()  # propagate unexpected exceptions
@@ -703,7 +787,7 @@ def _run_audit(
     cache: Cache | None,
     config: AuditConfig,
     playlist_url: str,
-    max_tier: str,
+    deep: bool = False,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
     """Core workflow: fetch playlist -> resolve artists -> external lookups -> evidence evaluation."""
 
@@ -732,19 +816,24 @@ def _run_audit(
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
     discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
     setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
-    lastfm_client = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
+    lastfm_client = LastfmClient(api_key=config.lastfm_api_key, delay=0.25)
+    wikipedia_client = WikipediaClient(delay=0.2)
+    songkick_client = SongkickClient(api_key=config.songkick_api_key, delay=0.5)
+    youtube_client = YouTubeClient(api_key=config.youtube_api_key, delay=0.3)
+    deezer_ai_checker = DeezerAIChecker(delay=1.5)
+    pro_client = PRORegistryClient(delay=2.5)
 
-    # Set up Claude (Deep tier) if key available
+    # Set up Claude if --deep and key available
     anthropic_client = None
-    if config.anthropic_api_key and max_tier == "deep":
+    if config.anthropic_api_key and deep:
         try:
             from anthropic import Anthropic
             anthropic_client = Anthropic(api_key=config.anthropic_api_key)
         except ImportError:
-            logger.warning("anthropic package not installed — Deep tier unavailable")
+            logger.warning("anthropic package not installed — deep analysis unavailable")
 
     # Show which APIs are configured
-    configured = ["Deezer", "MusicBrainz"]  # always available (no key needed)
+    configured = ["Deezer", "MusicBrainz", "Wikipedia"]  # always available (no key needed)
     if genius_client.enabled:
         configured.append("Genius")
     if discogs_client.enabled:
@@ -753,6 +842,10 @@ def _run_audit(
         configured.append("Setlist.fm")
     if lastfm_client.enabled:
         configured.append("Last.fm")
+    if songkick_client.enabled:
+        configured.append("Songkick")
+    if youtube_client.enabled:
+        configured.append("YouTube")
     if anthropic_client:
         configured.append("Claude (Deep)")
     console.print(f"APIs: [green]{', '.join(configured)}[/green]")
@@ -761,7 +854,7 @@ def _run_audit(
                     or setlistfm_client.enabled)
     if not any_external:
         console.print(
-            "[yellow]No Standard-tier API keys configured. "
+            "[yellow]No external API keys configured. "
             "Set GENIUS_TOKEN, DISCOGS_TOKEN, SETLISTFM_API_KEY in .env "
             "for richer evidence.[/yellow]"
         )
@@ -793,6 +886,41 @@ def _run_audit(
     cached_count = 0
     fallback_count = 0
 
+    def _resolve_single(key: str, is_id: bool) -> tuple[str, ArtistInfo | None, QuickScanResult | None, bool | None]:
+        """Resolve one artist. Returns (key, artist_or_None, cached_qr_or_None, is_fallback_or_None).
+
+        If we get a full cache hit, artist is the cached ArtistInfo and is_fallback is None.
+        """
+        cached_qr = None
+        cached_artist = None
+        if cache:
+            cached = cache.get(key, "quick")
+            if cached:
+                cached_qr = QuickScanResult(
+                    artist_id=cached["artist_id"],
+                    artist_name=cached["artist_name"],
+                    score=cached["score"],
+                    signals=[],
+                    tier="quick",
+                )
+                ai_data = cached.get("artist_info")
+                if ai_data:
+                    try:
+                        cached_artist = ArtistInfo(**ai_data)
+                    except (TypeError, KeyError):
+                        cached_artist = None
+
+        if cached_artist:
+            return (key, cached_artist, cached_qr, None)
+
+        if is_id:
+            artist = client.get_artist_info(key)
+            return (key, artist, cached_qr, False)
+        else:
+            artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
+            is_fallback = artist.artist_id.startswith("name:")
+            return (key, artist, cached_qr, is_fallback)
+
     with Progress(
         SpinnerColumn(),
         TextColumn("[bold blue]{task.description}"),
@@ -804,65 +932,44 @@ def _run_audit(
             "Resolving artists (Deezer)...", total=len(artist_keys),
         )
 
-        for key, is_id in artist_keys:
-            # Check cache for both QuickScanResult AND ArtistInfo
-            cached_qr = None
-            cached_artist = None
-            if cache:
-                cached = cache.get(key, "quick")
-                if cached:
-                    cached_qr = QuickScanResult(
-                        artist_id=cached["artist_id"],
-                        artist_name=cached["artist_name"],
-                        score=cached["score"],
-                        signals=[],
-                        tier="quick",
-                    )
-                    ai_data = cached.get("artist_info")
-                    if ai_data:
-                        try:
-                            cached_artist = ArtistInfo(**ai_data)
-                        except (TypeError, KeyError):
-                            cached_artist = None  # stale cache format
+        # Parallel resolution: up to 4 concurrent Deezer lookups
+        with ThreadPoolExecutor(max_workers=4, thread_name_prefix="resolve") as pool:
+            futures = {
+                pool.submit(_resolve_single, key, is_id): key
+                for key, is_id in artist_keys
+            }
+            for fut in as_completed(futures):
+                key, artist, cached_qr, is_fallback = fut.result()
 
-            if cached_artist:
-                # Full cache hit — have both ArtistInfo and quick scan
-                artist = cached_artist
-                artist_infos[key] = artist
-                quick_results[key] = cached_qr
-                cached_count += 1
-            else:
-                # Need to resolve via Deezer (no cached ArtistInfo)
-                if is_id:
-                    artist = client.get_artist_info(key)
-                    resolved_count += 1
+                if is_fallback is None:
+                    # Full cache hit
+                    artist_infos[key] = artist
+                    quick_results[key] = cached_qr
+                    cached_count += 1
                 else:
-                    artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
-                    if artist.artist_id.startswith("name:"):
+                    if is_fallback:
                         fallback_count += 1
                     else:
                         resolved_count += 1
 
-                artist_infos[key] = artist
+                    artist_infos[key] = artist
 
-                if cached_qr:
-                    # Had cached quick result but no ArtistInfo — use cached score
-                    quick_results[key] = cached_qr
-                else:
-                    qr = quick_scan(artist, config.quick_weights)
-                    quick_results[key] = qr
+                    if cached_qr:
+                        quick_results[key] = cached_qr
+                    else:
+                        qr = quick_scan(artist, config.quick_weights)
+                        quick_results[key] = qr
 
-                # Cache with full ArtistInfo for next run (deferred commit)
-                qr = quick_results[key]
-                if cache:
-                    cache.put_deferred(key, "quick", {
-                        "artist_id": qr.artist_id,
-                        "artist_name": qr.artist_name,
-                        "score": qr.score,
-                        "artist_info": dataclasses.asdict(artist),
-                    })
+                    qr = quick_results[key]
+                    if cache:
+                        cache.put_deferred(key, "quick", {
+                            "artist_id": qr.artist_id,
+                            "artist_name": qr.artist_name,
+                            "score": qr.score,
+                            "artist_info": dataclasses.asdict(artist),
+                        })
 
-            progress.advance(task)
+                progress.advance(task)
 
     # Flush deferred cache writes in one commit
     if cache:
@@ -891,6 +998,153 @@ def _run_audit(
             f"({', '.join(configured)})...[/bold cyan]"
         )
 
+        def _lookup_and_evaluate(key: str, artist: ArtistInfo) -> tuple[str, ExternalData, ArtistEvaluation, StandardScanResult]:
+            """Run pre-check + external lookups + conditional enrichment + evidence eval."""
+
+            # Priority 1: Known entity pre-check (runs first)
+            pre = run_pre_check(
+                artist_name=artist.name,
+                labels=artist.labels,
+                contributors=artist.contributors,
+                entity_db=entity_db,
+            )
+            if pre.short_circuit:
+                # Short-circuit: skip all external lookups
+                ext = ExternalData(pre_seeded_evidence=pre.pre_seeded_evidence)
+                # Build red flags from pre-check so reports show WHY it was flagged
+                short_circuit_flags = [Evidence(
+                    finding=pre.reason,
+                    source="Pre-check",
+                    evidence_type="red_flag",
+                    strength="strong",
+                    detail=pre.reason,
+                    tags=["known_bad_actor"],
+                )]
+                ev = ArtistEvaluation(
+                    artist_id=artist.artist_id,
+                    artist_name=artist.name,
+                    verdict=Verdict.LIKELY_ARTIFICIAL,
+                    confidence="high",
+                    platform_presence=_collect_quick_presence(artist),
+                    red_flags=short_circuit_flags,
+                    green_flags=[],
+                    decision_path=[f"Pre-check: {pre.reason}"],
+                )
+                qr = quick_results[key]
+                sr = standard_scan_from_external(
+                    quick_result=qr, ext=ext,
+                    deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
+                    weights=config.standard_weights,
+                )
+                return (key, ext, ev, sr)
+
+            # Standard external lookups (concurrent)
+            ext = _lookup_external_data(
+                artist_name=artist.name,
+                genius=genius_client,
+                discogs=discogs_client,
+                setlistfm=setlistfm_client,
+                mb_client=mb_client,
+                lastfm=lastfm_client,
+                wikipedia=wikipedia_client,
+                songkick=songkick_client,
+            )
+
+            # Inject pre-seeded evidence from pre-check
+            if pre.pre_seeded_evidence:
+                ext.pre_seeded_evidence = pre.pre_seeded_evidence
+
+            # Priority 7: Merge Deezer ISRCs into ExternalData
+            if artist.deezer_isrcs:
+                for isrc in artist.deezer_isrcs:
+                    if isrc not in ext.isrcs:
+                        ext.isrcs.append(isrc)
+                # Merge registrant codes
+                existing = set(ext.isrc_registrants)
+                for reg in artist.deezer_isrc_registrants:
+                    if reg not in existing:
+                        ext.isrc_registrants.append(reg)
+                        existing.add(reg)
+
+            # Conditional enrichment: only for artists with red flags
+            # Run a preliminary flag count from pre-seeded evidence
+            has_red_flags = bool(pre.pfc_label_match) or any(
+                e.get("evidence_type") == "red_flag" for e in pre.pre_seeded_evidence
+            )
+
+            if has_red_flags:
+                # Priority 2: Deezer AI check
+                if hasattr(artist, 'deezer_fans') and artist.artist_id.startswith("deezer:"):
+                    try:
+                        deezer_id = int(artist.artist_id.split(":")[1]) if ":" in artist.artist_id else 0
+                        if deezer_id:
+                            ai_result = deezer_ai_checker.check_artist(deezer_id)
+                            if ai_result.checked:
+                                ext.deezer_ai_checked = True
+                                ext.deezer_ai_tagged_albums = ai_result.ai_tagged_albums
+                    except Exception as exc:
+                        logger.debug("Deezer AI check failed for '%s': %s", artist.name, exc)
+
+                # Priority 4: YouTube cross-reference
+                if youtube_client.enabled:
+                    try:
+                        yt_url = ext.musicbrainz_youtube_url or None
+                        yt_result = youtube_client.search_artist(artist.name, yt_url)
+                        if yt_result:
+                            ext.youtube_checked = True
+                            ext.youtube_channel_found = yt_result.channel_found
+                            ext.youtube_subscriber_count = yt_result.subscriber_count
+                            ext.youtube_video_count = yt_result.video_count
+                            ext.youtube_view_count = yt_result.view_count
+                            ext.youtube_music_videos_found = yt_result.music_videos_found
+                            ext.youtube_match_confidence = yt_result.match_confidence
+                    except Exception as exc:
+                        logger.debug("YouTube check failed for '%s': %s", artist.name, exc)
+
+                # Priority 3: PRO registry (only for moderate+ red flags)
+                if len([e for e in pre.pre_seeded_evidence
+                        if e.get("evidence_type") == "red_flag"
+                        and e.get("strength") in ("strong", "moderate")]) >= 1:
+                    try:
+                        pro_result = pro_client.search_writer(artist.name)
+                        ext.pro_checked = True
+                        ext.pro_found_bmi = pro_result.found_bmi
+                        ext.pro_found_ascap = pro_result.found_ascap
+                        ext.pro_works_count = pro_result.bmi_works_count + pro_result.ascap_works_count
+                        ext.pro_publishers = pro_result.publishers
+                        ext.pro_songwriter_registered = pro_result.songwriter_registered
+                        ext.pro_pfc_publisher_match = pro_result.pfc_publisher_match
+                        ext.pro_zero_songwriter_share = pro_result.zero_songwriter_share
+                    except Exception as exc:
+                        logger.debug("PRO registry check failed for '%s': %s", artist.name, exc)
+
+            # Run evidence evaluation
+            ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
+
+            # Priority 1: Update entity DB after scan
+            if entity_db:
+                try:
+                    entity_db.increment_scan_count(
+                        artist.name,
+                        verdict=ev.verdict.value,
+                        confidence=ev.confidence,
+                    )
+                    auto_promote_entity(
+                        entity_db, artist.name,
+                        ev.verdict.value, ev.confidence,
+                    )
+                except Exception as exc:
+                    logger.debug("Entity DB update failed for '%s': %s", artist.name, exc)
+
+            qr = quick_results[key]
+            sr = standard_scan_from_external(
+                quick_result=qr,
+                ext=ext,
+                deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
+                weights=config.standard_weights,
+            )
+            return (key, ext, ev, sr)
+
         with Progress(
             SpinnerColumn(),
             TextColumn("[bold cyan]{task.description}"),
@@ -902,32 +1156,19 @@ def _run_audit(
                 "External lookups + evidence...", total=len(artists_to_lookup),
             )
 
-            for key, artist in artists_to_lookup:
-                # Run all external API lookups
-                ext = _lookup_external_data(
-                    artist_name=artist.name,
-                    genius=genius_client,
-                    discogs=discogs_client,
-                    setlistfm=setlistfm_client,
-                    mb_client=mb_client,
-                    lastfm=lastfm_client,
-                )
-
-                # Run evidence evaluation with ALL data
-                ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
-                evaluations[key] = ev
-
-                # Legacy Standard weighted score — reuse already-fetched data
-                qr = quick_results[key]
-                sr = standard_scan_from_external(
-                    quick_result=qr,
-                    ext=ext,
-                    deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
-                    weights=config.standard_weights,
-                )
-                standard_results[key] = sr
-
-                progress.advance(ext_task)
+            # Parallelize across artists — each artist's APIs already run
+            # concurrently inside _lookup_external_data, so limit outer
+            # concurrency to avoid overwhelming rate limits
+            with ThreadPoolExecutor(max_workers=3, thread_name_prefix="eval") as pool:
+                futures = {
+                    pool.submit(_lookup_and_evaluate, key, artist): key
+                    for key, artist in artists_to_lookup
+                }
+                for fut in as_completed(futures):
+                    key, ext, ev, sr = fut.result()
+                    evaluations[key] = ev
+                    standard_results[key] = sr
+                    progress.advance(ext_task)
 
     # Safety fallback: evaluate any artist that somehow missed Phase 2
     for key in quick_results:
@@ -944,9 +1185,9 @@ def _run_audit(
                 ev = evaluate_artist(minimal, entity_db=entity_db)
                 evaluations[key] = ev
 
-    # 5. Deep tier — Claude bio + image analysis
+    # 5. Deep analysis — Claude bio + image analysis (optional)
     deep_count = 0
-    if anthropic_client and max_tier == "deep":
+    if anthropic_client and deep:
         # Find artists to deep-analyze: those scored Suspicious or worse,
         # or all artists if the playlist is small enough
         deep_candidates = []
@@ -1002,20 +1243,10 @@ def _run_audit(
                     logger.warning("Batch deep analysis failed: %s", exc)
 
             console.print(f"[magenta]-> Deep analysis completed for {deep_count} artists[/magenta]")
-    elif max_tier == "deep" and not anthropic_client:
-        # Count how many would have escalated
-        escalated_deep = sum(
-            1 for key, qr in quick_results.items()
-            if should_escalate_to_deep(
-                standard_results[key].score if key in standard_results else qr.score,
-                config,
-            )
+    elif deep and not anthropic_client:
+        console.print(
+            "[yellow]--deep requested but ANTHROPIC_API_KEY not set in .env[/yellow]"
         )
-        if escalated_deep:
-            console.print(
-                f"[yellow]-> {escalated_deep} artists need Deep analysis but "
-                f"ANTHROPIC_API_KEY not set in .env[/yellow]"
-            )
 
     # 6. Build reports
     artist_reports: list[ArtistReport] = []
@@ -1034,48 +1265,46 @@ def _run_audit(
     all_evaluations = list(evaluations.values())
     blocklist_report = analyze_for_blocklist(all_evaluations) if all_evaluations else None
 
-    # 8. Populate entity database with scan results
+    # 8. Populate entity database with scan results (batched in single transaction)
     if entity_db:
         try:
-            scan_id = entity_db.start_scan(
-                playlist_id=meta.playlist_id,
-                playlist_name=meta.name,
-                scan_tier=max_tier,
-                artist_count=len(artist_reports),
-            )
-            for report in artist_reports:
-                ev = report.evaluation
-                if not ev:
-                    continue
-                aid = entity_db.upsert_artist(
-                    report.artist_name,
-                    threat_status=(
-                        "confirmed_bad" if ev.verdict == Verdict.LIKELY_ARTIFICIAL
-                        else "suspected" if ev.verdict == Verdict.SUSPICIOUS
-                        else "cleared" if ev.verdict == Verdict.VERIFIED_ARTIST
-                        else "unknown"
-                    ),
-                    threat_category=report.threat_category,
-                    latest_verdict=ev.verdict.value,
-                    latest_confidence=ev.confidence,
+            with entity_db.batch():
+                scan_id = entity_db.start_scan(
+                    playlist_id=meta.playlist_id,
+                    playlist_name=meta.name,
+                    scan_tier="deep" if deep else "standard",
+                    artist_count=len(artist_reports),
                 )
-                # Link labels
-                for lbl in ev.labels:
-                    lid = entity_db.upsert_label(lbl)
-                    entity_db.link_artist_label(aid, lid, source="scan")
-                # Link contributors
-                for contrib in ev.contributors:
-                    sid = entity_db.upsert_songwriter(contrib)
-                    entity_db.link_artist_songwriter(aid, sid, source="scan")
-                # Store key red flags as observations
-                for e in ev.strong_red_flags:
-                    entity_db.add_observation(
-                        "artist", aid, "red_flag", e.finding,
-                        detail=e.detail, source=e.source,
-                        strength=e.strength, scan_id=scan_id,
+                for report in artist_reports:
+                    ev = report.evaluation
+                    if not ev:
+                        continue
+                    aid = entity_db.upsert_artist(
+                        report.artist_name,
+                        threat_status=(
+                            "confirmed_bad" if ev.verdict == Verdict.LIKELY_ARTIFICIAL
+                            else "suspected" if ev.verdict == Verdict.SUSPICIOUS
+                            else "cleared" if ev.verdict == Verdict.VERIFIED_ARTIST
+                            else "unknown"
+                        ),
+                        threat_category=report.threat_category,
+                        latest_verdict=ev.verdict.value,
+                        latest_confidence=ev.confidence,
                     )
-            entity_db.refresh_entity_counts()
-            entity_db.complete_scan(scan_id)
+                    for lbl in ev.labels:
+                        lid = entity_db.upsert_label(lbl)
+                        entity_db.link_artist_label(aid, lid, source="scan")
+                    for contrib in ev.contributors:
+                        sid = entity_db.upsert_songwriter(contrib)
+                        entity_db.link_artist_songwriter(aid, sid, source="scan")
+                    for e in ev.strong_red_flags:
+                        entity_db.add_observation(
+                            "artist", aid, "red_flag", e.finding,
+                            detail=e.detail, source=e.source,
+                            strength=e.strength, scan_id=scan_id,
+                        )
+                entity_db.refresh_entity_counts()
+                entity_db.complete_scan(scan_id)
         except Exception as exc:
             logger.debug("Entity DB update failed (non-fatal): %s", exc)
         finally:

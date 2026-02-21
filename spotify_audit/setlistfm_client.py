@@ -14,6 +14,10 @@ from dataclasses import dataclass
 
 import requests
 
+from spotify_audit.name_matching import (
+    pick_best_match, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 SETLIST_API = "https://api.setlist.fm/rest/1.0"
@@ -50,6 +54,11 @@ class SetlistFmClient:
         self.session.headers["Accept"] = "application/json"
         if api_key:
             self.session.headers["x-api-key"] = api_key
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
         self.enabled = bool(api_key)
 
@@ -62,50 +71,66 @@ class SetlistFmClient:
         time.sleep(self.delay)
         return r.json()
 
-    def search_artist(self, name: str) -> SetlistArtist | None:
-        """Search for an artist by name."""
+    def search_artist(self, name: str, setlistfm_url: str | None = None) -> SetlistArtist | None:
+        """Search for an artist by name using shared name matching.
+
+        Args:
+            name: Artist name to search for.
+            setlistfm_url: Optional setlist.fm URL from MusicBrainz URL bridging.
+        """
         if not self.enabled:
             return None
+
+        # Platform ID bridging: extract MBID from setlist.fm URL
+        if setlistfm_url:
+            import re
+            # URLs look like: https://www.setlist.fm/setlists/artist-name-mbid.html
+            m = re.search(r"-([0-9a-f]{8})\.html", setlistfm_url)
+            if m:
+                mbid = m.group(1)
+                # Convert short hex to full MBID format used by setlist.fm
+                log_match("Setlist.fm", name, MatchResult(
+                    found=True, confidence=1.0,
+                    matched_name=name,
+                    platform_id=mbid,
+                    match_method="platform_id",
+                ))
+                return SetlistArtist(mbid=mbid, name=name)
+
         try:
             data = self._get("/search/artists", {"artistName": name, "p": 1, "sort": "relevance"})
         except requests.HTTPError as exc:
             if exc.response is not None and exc.response.status_code == 404:
-                logger.debug("Setlist.fm: 404 for '%s'", name)
+                log_match("Setlist.fm", name, MatchResult(found=False))
                 return None
-            logger.warning("Setlist.fm: HTTP %s for '%s'",
-                           exc.response.status_code if exc.response else "?", name)
             raise
 
         artists = data.get("artist", [])
         if not artists:
-            logger.warning("Setlist.fm: 0 results for '%s'", name)
+            log_match("Setlist.fm", name, MatchResult(found=False))
             return None
 
-        name_lower = name.lower().strip()
+        candidates = [{
+            "name": a.get("name", ""),
+            "id": a.get("mbid", ""),
+            "country": a.get("country", {}).get("code", "") if isinstance(a.get("country"), dict) else "",
+        } for a in artists]
 
-        # Pass 1: exact match
-        for a in artists:
-            if a.get("name", "").lower().strip() == name_lower:
-                logger.debug("Setlist.fm: exact match '%s' → mbid %s", name, a.get("mbid", ""))
-                return SetlistArtist(
-                    mbid=a.get("mbid", ""),
-                    name=a.get("name", ""),
-                )
+        match = pick_best_match(name, candidates)
+        log_match("Setlist.fm", name, match)
 
-        # Pass 2: containment match
-        for a in artists:
-            aname = a.get("name", "").lower().strip()
-            if name_lower in aname or aname in name_lower:
-                logger.debug("Setlist.fm: partial match '%s' → '%s'", name, a.get("name", ""))
-                return SetlistArtist(
-                    mbid=a.get("mbid", ""),
-                    name=a.get("name", ""),
-                )
+        if match.found and match.platform_id:
+            return SetlistArtist(
+                mbid=match.platform_id,
+                name=match.matched_name or name,
+            )
 
-        logger.warning("Setlist.fm: no name match for '%s' in %d results: %s",
-                        name, len(artists),
-                        [a.get("name", "") for a in artists[:5]])
-        return None
+        # Fallback: return first result
+        first = artists[0]
+        return SetlistArtist(
+            mbid=first.get("mbid", ""),
+            name=first.get("name", ""),
+        )
 
     def get_setlist_count(self, artist: SetlistArtist) -> SetlistArtist:
         """Get total setlist count and date range for an artist."""

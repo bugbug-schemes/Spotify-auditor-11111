@@ -16,6 +16,11 @@ from dataclasses import dataclass, field
 
 import requests
 
+from spotify_audit.name_matching import (
+    normalize_name, similarity_score, min_confidence_for_length,
+    pick_best_match, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 MB_API = "https://musicbrainz.org/ws/2"
@@ -50,6 +55,14 @@ class MBArtist:
     ipis: list[str] = field(default_factory=list)         # Interested Parties Information codes
     area: str = ""                                        # origin area (more specific than country)
     gender: str = ""                                      # for Person type
+    # ISRC data (from recording-level lookups)
+    isrcs: list[str] = field(default_factory=list)        # ISRCs from recordings
+    isrc_registrants: list[str] = field(default_factory=list)  # unique registrant codes
+    # Enhanced URL categorization
+    youtube_url: str = ""                                 # direct YouTube channel URL
+    bandcamp_url: str = ""                                # Bandcamp page URL
+    official_website: str = ""                            # official homepage
+    social_urls: dict[str, str] = field(default_factory=dict)  # platform -> URL
 
 
 class MusicBrainzClient:
@@ -59,6 +72,11 @@ class MusicBrainzClient:
         self.session = requests.Session()
         self.session.headers["User-Agent"] = USER_AGENT
         self.session.headers["Accept"] = "application/json"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
 
     def _get(self, path: str, params: dict | None = None) -> dict:
@@ -91,19 +109,45 @@ class MusicBrainzClient:
         return None
 
     def search_artist(self, name: str) -> MBArtist | None:
-        """Search for an artist by name."""
+        """Search for an artist by name using shared name matching."""
         data = self._get("/artist", {"query": f'artist:"{name}"', "limit": "5"})
         artists = data.get("artists", [])
         if not artists:
+            log_match("MusicBrainz", name, MatchResult(found=False))
             return None
 
-        # Prefer exact match
-        name_lower = name.lower().strip()
-        best = artists[0]
+        # Build candidate dicts for the matcher
+        candidates = []
         for a in artists:
-            if a.get("name", "").lower().strip() == name_lower:
-                best = a
-                break
+            aliases = [
+                al["name"] for al in a.get("aliases", [])
+                if isinstance(al, dict) and al.get("name")
+            ]
+            genres = [
+                t["name"] for t in a.get("tags", [])
+                if isinstance(t, dict) and t.get("name")
+            ]
+            candidates.append({
+                "name": a.get("name", ""),
+                "id": a.get("id", ""),
+                "aliases": aliases,
+                "genres": genres,
+                "country": a.get("country", ""),
+                "_raw": a,
+            })
+
+        match = pick_best_match(name, candidates)
+        log_match("MusicBrainz", name, match)
+
+        if match.found and match.platform_id:
+            # Find the original raw data for the matched candidate
+            best = next(
+                (c["_raw"] for c in candidates if c["id"] == match.platform_id),
+                artists[0],
+            )
+        else:
+            # Fallback to first result (MusicBrainz returns relevance-sorted)
+            best = artists[0]
 
         # Extract aliases from search result
         aliases = []
@@ -185,6 +229,86 @@ class MusicBrainzClient:
                 urls[rel_type] = url
         return urls
 
+    def categorize_urls(self, urls: dict[str, str]) -> dict[str, str]:
+        """Categorize URL relations into typed buckets (Priority 5).
+
+        Returns dict with keys: youtube, bandcamp, soundcloud, official_website,
+        and social media platform names.
+        """
+        categorized: dict[str, str] = {}
+
+        for rel_type, url in urls.items():
+            url_lower = url.lower()
+            rel_lower = rel_type.lower()
+
+            if "youtube" in url_lower or "youtube" in rel_lower:
+                categorized["youtube"] = url
+            elif "bandcamp" in url_lower or "bandcamp" in rel_lower:
+                categorized["bandcamp"] = url
+            elif "soundcloud" in url_lower or "soundcloud" in rel_lower:
+                categorized["soundcloud"] = url
+            elif "instagram" in url_lower:
+                categorized["instagram"] = url
+            elif "twitter.com" in url_lower or "x.com" in url_lower:
+                categorized["twitter"] = url
+            elif "facebook" in url_lower:
+                categorized["facebook"] = url
+            elif "wikipedia" in url_lower:
+                categorized["wikipedia"] = url
+            elif "wikidata" in url_lower:
+                categorized["wikidata"] = url
+            elif "allmusic" in url_lower:
+                categorized["allmusic"] = url
+            elif rel_lower == "official homepage":
+                categorized["official_website"] = url
+
+        return categorized
+
+    def get_recording_isrcs(self, mbid: str, limit: int = 25) -> list[str]:
+        """Fetch ISRCs from an artist's recordings (Priority 7).
+
+        Args:
+            mbid: Artist MusicBrainz ID
+            limit: Max recordings to check (ISRC lookups are rate-limited)
+
+        Returns:
+            List of ISRC strings (e.g., 'USRC11700001')
+        """
+        try:
+            data = self._get(
+                "/recording",
+                {"artist": mbid, "limit": str(limit), "inc": "isrcs"},
+            )
+        except (requests.HTTPError, Exception) as exc:
+            logger.debug("MusicBrainz ISRC lookup failed for %s: %s", mbid, exc)
+            return []
+
+        isrcs: list[str] = []
+        for rec in data.get("recordings", []):
+            rec_isrcs = rec.get("isrcs", [])
+            if isinstance(rec_isrcs, list):
+                isrcs.extend(rec_isrcs)
+        return isrcs
+
+    @staticmethod
+    def parse_isrc_registrants(isrcs: list[str]) -> list[str]:
+        """Extract unique registrant codes from ISRCs.
+
+        ISRC format: CC-XXX-YY-NNNNN
+        - CC = country code (2 chars)
+        - XXX = registrant code (3 chars)
+        - YY = year (2 chars)
+        - NNNNN = designation (5 chars)
+        """
+        registrants: set[str] = set()
+        for isrc in isrcs:
+            # Remove dashes if present
+            clean = isrc.replace("-", "")
+            if len(clean) >= 5:
+                registrant = clean[2:5]
+                registrants.add(registrant)
+        return sorted(registrants)
+
     def get_genres(self, mbid: str) -> list[str]:
         """Fetch genres/tags for an artist."""
         try:
@@ -199,7 +323,7 @@ class MusicBrainzClient:
         return genres
 
     def enrich(self, artist: MBArtist) -> MBArtist:
-        """Populate releases, labels, URL relations, and genres."""
+        """Populate releases, labels, URL relations, genres, ISRCs, and categorized URLs."""
         if not artist.mbid:
             return artist
 
@@ -213,11 +337,30 @@ class MusicBrainzClient:
         except Exception as exc:
             logger.debug("MusicBrainz URL relations failed for %s: %s", artist.mbid, exc)
 
+        # Categorize URLs for downstream consumers (Priority 5)
+        if artist.urls:
+            categorized = self.categorize_urls(artist.urls)
+            artist.youtube_url = categorized.get("youtube", "")
+            artist.bandcamp_url = categorized.get("bandcamp", "")
+            artist.official_website = categorized.get("official_website", "")
+            # Collect social URLs
+            for platform in ("instagram", "twitter", "facebook", "soundcloud"):
+                if platform in categorized:
+                    artist.social_urls[platform] = categorized[platform]
+
         # Genres (if not already populated from search)
         if not artist.genres:
             try:
                 artist.genres = self.get_genres(artist.mbid)
             except Exception as exc:
                 logger.debug("MusicBrainz genres failed for %s: %s", artist.mbid, exc)
+
+        # ISRCs from recordings (Priority 7)
+        try:
+            artist.isrcs = self.get_recording_isrcs(artist.mbid)
+            if artist.isrcs:
+                artist.isrc_registrants = self.parse_isrc_registrants(artist.isrcs)
+        except Exception as exc:
+            logger.debug("MusicBrainz ISRC lookup failed for %s: %s", artist.mbid, exc)
 
         return artist

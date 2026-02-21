@@ -60,8 +60,8 @@ def analyze_for_blocklist(evaluations: list[ArtistEvaluation]) -> BlocklistRepor
     report = BlocklistReport()
 
     # Current blocklists for comparison
-    current_pfc = set(l.lower() for l in pfc_distributors())
-    current_ai = set(n.lower() for n in known_ai_artists())
+    current_pfc = pfc_distributors()  # already lowercased frozenset
+    current_ai = known_ai_artists()  # already lowercased frozenset
 
     # Collect all labels and contributors across artists
     for ev in evaluations:

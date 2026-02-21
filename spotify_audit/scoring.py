@@ -28,6 +28,8 @@ _VERDICT_ORDER = {
     Verdict.LIKELY_ARTIFICIAL: 0,
     Verdict.SUSPICIOUS: 1,
     Verdict.INCONCLUSIVE: 2,
+    Verdict.INSUFFICIENT_DATA: 2,
+    Verdict.CONFLICTING_SIGNALS: 2,
     Verdict.LIKELY_AUTHENTIC: 3,
     Verdict.VERIFIED_ARTIST: 4,
 }
@@ -177,20 +179,22 @@ def finalize_artist_report(
 def _verdict_to_score(ev: ArtistEvaluation) -> int:
     """Convert evidence verdict + flag balance into a 0-100 legitimacy score.
 
-    Score ranges:
-        Verified Artist:    80-100
-        Likely Authentic:   55-79
-        Inconclusive:       35-54
-        Suspicious:         15-34
-        Likely Artificial:  0-14
+    Score ranges (simplified scoring architecture):
+        Verified Artist:    82-100
+        Likely Authentic:   58-81
+        Inconclusive:       38-57
+        Suspicious:         18-37
+        Likely Artificial:  0-17
     """
     # Base score from verdict
     base_ranges = {
-        Verdict.VERIFIED_ARTIST: (80, 100),
-        Verdict.LIKELY_AUTHENTIC: (55, 79),
-        Verdict.INCONCLUSIVE: (35, 54),
-        Verdict.SUSPICIOUS: (15, 34),
-        Verdict.LIKELY_ARTIFICIAL: (0, 14),
+        Verdict.VERIFIED_ARTIST: (82, 100),
+        Verdict.LIKELY_AUTHENTIC: (58, 81),
+        Verdict.INCONCLUSIVE: (38, 57),
+        Verdict.INSUFFICIENT_DATA: (38, 57),
+        Verdict.CONFLICTING_SIGNALS: (38, 57),
+        Verdict.SUSPICIOUS: (18, 37),
+        Verdict.LIKELY_ARTIFICIAL: (0, 17),
     }
     lo, hi = base_ranges.get(ev.verdict, (35, 54))
 
@@ -229,29 +233,27 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
 
     # If we have an evidence-based verdict, use it as the gate
     if ev:
-        # Verified / Likely Authentic / Inconclusive → no threat category
+        # Verified / Likely Authentic / Inconclusive variants → no threat category
         if ev.verdict in (Verdict.VERIFIED_ARTIST, Verdict.LIKELY_AUTHENTIC,
-                          Verdict.INCONCLUSIVE):
+                          Verdict.INCONCLUSIVE, Verdict.INSUFFICIENT_DATA,
+                          Verdict.CONFLICTING_SIGNALS):
             return None
 
-        # Suspicious or Likely Artificial — dig into the red flags
-        red_findings = " ".join(
-            (e.finding + " " + e.detail).lower() for e in ev.red_flags
-        )
+        # Suspicious or Likely Artificial — use structured tags on red flags
+        all_red_tags: set[str] = set()
+        for e in ev.red_flags:
+            all_red_tags.update(e.tags)
 
-        has_pfc = "pfc" in red_findings or "content farm" in red_findings
-        has_ai = ("ai generat" in red_findings or "ai_generated" in red_findings
-                  or "ai-generated" in red_findings)
-        has_ghost = "ghost" in red_findings or "pfc_ghost" in red_findings
-        has_impersonation = "impersonat" in red_findings
+        has_pfc = bool(all_red_tags & {"pfc_label", "pfc_songwriter", "content_farm",
+                                        "entity_bad_label", "synth_pfc_ghost"})
+        has_ai = bool(all_red_tags & {"ai_bio", "ai_generated_image",
+                                       "known_ai_label", "synth_ai_generated"})
+        has_ghost = "synth_pfc_ghost" in all_red_tags
+        has_impersonation = "impersonation" in all_red_tags
 
-        # Check Claude synthesis if present
-        synth_findings = " ".join(
-            (e.finding + " " + e.detail).lower()
-            for e in ev.red_flags if e.source == "Claude synthesis"
-        )
-        synth_pfc = "pfc" in synth_findings
-        synth_ai = "ai" in synth_findings
+        # Check Claude synthesis tags specifically
+        synth_pfc = "synth_pfc_ghost" in all_red_tags
+        synth_ai = "synth_ai_generated" in all_red_tags
 
         if has_impersonation:
             return 4   # AI Impersonation
@@ -265,17 +267,19 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
             return 1   # PFC Ghost Artist
 
         # Fall through: look at pattern signals for fraud farm
-        signals = {s["name"]: s for s in report.quick_signals}
-        cadence_raw = signals.get("release_cadence", {}).get("raw_score", 0)
-        duration_raw = signals.get("track_duration_uniformity", {}).get("raw_score", 0)
-        if cadence_raw >= 65 and duration_raw >= 50:
-            return 3   # AI Fraud Farm
+        if all_red_tags & {"high_release_rate", "stream_farm"}:
+            signals = {s["name"]: s for s in report.quick_signals}
+            cadence_raw = signals.get("release_cadence", {}).get("raw_score", 0)
+            duration_raw = signals.get("track_duration_uniformity", {}).get("raw_score", 0)
+            if cadence_raw >= 65 and duration_raw >= 50:
+                return 3   # AI Fraud Farm
 
         # Default: PFC Ghost for Suspicious/Likely Artificial without specifics
         return 1
 
     # No evidence evaluation — legacy fallback using quick signals only
-    if report.final_score < 30:
+    # Only assign threat categories to suspicious artists (low legitimacy score)
+    if report.final_score >= 55:
         return None
 
     signals = {s["name"]: s for s in report.quick_signals}
@@ -288,9 +292,9 @@ def _infer_threat_category(report: ArtistReport) -> float | None:
         return 2   # Independent AI Artist
     if cadence_raw >= 65 and duration_raw >= 50:
         return 3   # AI Fraud Farm
-    if catalog_raw >= 50 and report.final_score >= 40:
+    if catalog_raw >= 50 and report.final_score <= 35:
         return 1   # PFC Ghost Artist
-    if report.final_score >= 50:
+    if report.final_score <= 34:
         return 1
     return None
 
@@ -331,7 +335,8 @@ def build_playlist_report(
             pr.verified_artists += 1
         elif v == Verdict.LIKELY_AUTHENTIC:
             pr.likely_authentic += 1
-        elif v == Verdict.INCONCLUSIVE:
+        elif v in (Verdict.INCONCLUSIVE, Verdict.INSUFFICIENT_DATA,
+                   Verdict.CONFLICTING_SIGNALS):
             pr.inconclusive += 1
         elif v == Verdict.SUSPICIOUS:
             pr.suspicious += 1
@@ -340,9 +345,9 @@ def build_playlist_report(
 
     # Legacy breakdown (from legitimacy score) — uses separate counters
     for a in artist_reports:
-        if a.final_score >= 80:
+        if a.final_score >= 82:
             pr.verified_legit += 1
-        elif a.final_score >= 55:
+        elif a.final_score >= 58:
             pr.probably_fine += 1
         else:
             pr.likely_non_authentic += 1
@@ -354,6 +359,8 @@ def build_playlist_report(
             Verdict.VERIFIED_ARTIST: 100,
             Verdict.LIKELY_AUTHENTIC: 85,
             Verdict.INCONCLUSIVE: 50,
+            Verdict.INSUFFICIENT_DATA: 50,
+            Verdict.CONFLICTING_SIGNALS: 50,
             Verdict.SUSPICIOUS: 25,
             Verdict.LIKELY_ARTIFICIAL: 0,
         }
@@ -367,9 +374,6 @@ def build_playlist_report(
     return pr
 
 
-def should_escalate_to_standard(score: int, config: AuditConfig) -> bool:
-    return score > config.escalate_to_standard
-
-
 def should_escalate_to_deep(score: int, config: AuditConfig) -> bool:
+    """Decide if an artist should get Claude deep analysis based on score."""
     return score > config.escalate_to_deep

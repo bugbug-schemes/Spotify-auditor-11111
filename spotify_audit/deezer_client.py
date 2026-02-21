@@ -14,6 +14,10 @@ from typing import Any
 
 import requests
 
+from spotify_audit.name_matching import (
+    pick_best_match, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 DEEZER_API = "https://api.deezer.com"
@@ -49,6 +53,9 @@ class DeezerArtist:
     related_artist_fans: list[tuple[str, int]] = field(default_factory=list)  # [(name, nb_fan)]
     album_release_dates: list[str] = field(default_factory=list)  # release dates per album
     contributor_roles: dict[str, list[str]] = field(default_factory=dict)  # {name: [roles]}
+    # ISRC data (Priority 7)
+    track_isrcs: list[str] = field(default_factory=list)       # ISRCs from tracks
+    isrc_registrants: list[str] = field(default_factory=list)  # unique registrant codes
 
 
 class DeezerClient:
@@ -57,6 +64,11 @@ class DeezerClient:
     def __init__(self, delay: float = 0.5) -> None:
         self.session = requests.Session()
         self.session.headers["Accept"] = "application/json"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self.session.mount("https://", adapter)
+        self.session.mount("http://", adapter)
         self.delay = delay
 
     def _get(self, path: str, params: dict | None = None) -> dict:
@@ -70,17 +82,30 @@ class DeezerClient:
         return data
 
     def search_artist(self, name: str) -> DeezerArtist | None:
-        """Search for an artist by name. Returns best match or None."""
+        """Search for an artist by name using shared name matching."""
         data = self._get("/search/artist", {"q": name, "limit": 5})
         results = data.get("data", [])
         if not results:
+            log_match("Deezer", name, MatchResult(found=False))
             return None
 
-        # Exact name match first, then best match
-        name_lower = name.lower().strip()
-        for r in results:
-            if r.get("name", "").lower().strip() == name_lower:
-                return self._parse_artist(r)
+        candidates = [{
+            "name": r.get("name", ""),
+            "id": r.get("id", 0),
+            "nb_fan": r.get("nb_fan", 0),
+        } for r in results]
+
+        match = pick_best_match(name, candidates)
+        log_match("Deezer", name, match)
+
+        if match.found and match.platform_id:
+            best_raw = next(
+                (r for r in results if str(r.get("id", 0)) == match.platform_id),
+                results[0],
+            )
+            return self._parse_artist(best_raw)
+
+        # Fallback: return first result (Deezer sorts by relevance)
         return self._parse_artist(results[0])
 
     def get_artist(self, deezer_id: int) -> DeezerArtist | None:
@@ -169,6 +194,32 @@ class DeezerClient:
         artist.has_explicit = has_explicit
         artist.contributors = sorted(contributors_seen)
         artist.contributor_roles = contributor_roles
+
+        # --- ISRCs from top tracks (Priority 7) ---
+        isrcs: list[str] = []
+        for track in artist.top_tracks:
+            if isinstance(track, dict):
+                isrc = track.get("isrc", "")
+                if isrc:
+                    isrcs.append(isrc)
+                # If ISRC not in list response, try individual track lookup
+                elif track.get("id") and len(isrcs) < 10:
+                    try:
+                        track_data = self._get(f"/track/{track['id']}")
+                        track_isrc = track_data.get("isrc", "")
+                        if track_isrc:
+                            isrcs.append(track_isrc)
+                    except Exception:
+                        pass
+        artist.track_isrcs = isrcs
+        if isrcs:
+            # Extract registrant codes (chars 2-5 of ISRC)
+            registrants: set[str] = set()
+            for isrc in isrcs:
+                clean = isrc.replace("-", "")
+                if len(clean) >= 5:
+                    registrants.add(clean[2:5])
+            artist.isrc_registrants = sorted(registrants)
 
         # --- Related artists (with fan counts) ---
         try:

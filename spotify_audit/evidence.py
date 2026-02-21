@@ -68,15 +68,6 @@ class ExternalData:
     setlistfm_venue_countries: list[str] = field(default_factory=list)
     setlistfm_tour_names: list[str] = field(default_factory=list)
 
-    # Bandsintown
-    bandsintown_found: bool = False
-    bandsintown_past_events: int = 0
-    bandsintown_upcoming_events: int = 0
-    bandsintown_tracker_count: int = 0
-    bandsintown_facebook_url: str = ""
-    bandsintown_social_links: list[dict] = field(default_factory=list)
-    bandsintown_on_tour: bool = False
-
     # MusicBrainz
     musicbrainz_found: bool = False
     musicbrainz_type: str = ""       # "Person", "Group", etc.
@@ -100,6 +91,69 @@ class ExternalData:
     lastfm_similar_artists: list[str] = field(default_factory=list)
     lastfm_bio_exists: bool = False
 
+    # Wikipedia (direct lookup, independent of MusicBrainz)
+    wikipedia_found: bool = False
+    wikipedia_title: str = ""
+    wikipedia_length: int = 0            # article byte length
+    wikipedia_extract: str = ""          # intro summary
+    wikipedia_description: str = ""      # Wikidata short description
+    wikipedia_categories: list[str] = field(default_factory=list)
+    wikipedia_monthly_views: int = 0     # average monthly page views
+    wikipedia_url: str = ""
+
+    # Songkick (concert/touring history)
+    songkick_found: bool = False
+    songkick_on_tour: bool = False
+    songkick_total_past_events: int = 0
+    songkick_total_upcoming_events: int = 0
+    songkick_first_event_date: str = ""
+    songkick_last_event_date: str = ""
+    songkick_venue_names: list[str] = field(default_factory=list)
+    songkick_venue_cities: list[str] = field(default_factory=list)
+    songkick_venue_countries: list[str] = field(default_factory=list)
+    songkick_event_types: list[str] = field(default_factory=list)
+
+    # Deezer AI detection (Priority 2 — conditional enrichment)
+    deezer_ai_checked: bool = False
+    deezer_ai_tagged_albums: list[str] = field(default_factory=list)
+
+    # YouTube (Priority 4 — conditional enrichment)
+    youtube_checked: bool = False
+    youtube_channel_found: bool = False
+    youtube_subscriber_count: int = 0
+    youtube_video_count: int = 0
+    youtube_view_count: int = 0
+    youtube_music_videos_found: int = 0
+    youtube_match_confidence: float = 0.0
+
+    # PRO Registry (Priority 3 — conditional enrichment)
+    pro_checked: bool = False
+    pro_found_bmi: bool = False
+    pro_found_ascap: bool = False
+    pro_works_count: int = 0           # combined BMI + ASCAP
+    pro_publishers: list[str] = field(default_factory=list)
+    pro_songwriter_registered: bool = False
+    pro_pfc_publisher_match: bool = False
+    pro_zero_songwriter_share: bool = False
+
+    # ISRC data (Priority 7 — from Deezer + MusicBrainz)
+    isrcs: list[str] = field(default_factory=list)
+    isrc_registrants: list[str] = field(default_factory=list)
+
+    # MusicBrainz enhanced URLs (Priority 5)
+    musicbrainz_youtube_url: str = ""
+    musicbrainz_bandcamp_url: str = ""
+    musicbrainz_official_website: str = ""
+    musicbrainz_social_urls: dict[str, str] = field(default_factory=dict)
+
+    # Press coverage (Priority 6)
+    press_checked: bool = False
+    press_publications_found: list[str] = field(default_factory=list)
+    press_total_hits: int = 0
+
+    # Pre-seeded evidence from known entity pre-check (Priority 1)
+    pre_seeded_evidence: list[dict] = field(default_factory=list)
+
 
 # ---------------------------------------------------------------------------
 # Data structures
@@ -110,18 +164,120 @@ class Verdict(Enum):
     VERIFIED_ARTIST = "Verified Artist"
     LIKELY_AUTHENTIC = "Likely Authentic"
     INCONCLUSIVE = "Inconclusive"
+    INSUFFICIENT_DATA = "Insufficient Data"      # too few signals to judge
+    CONFLICTING_SIGNALS = "Conflicting Signals"  # many signals but they disagree
     SUSPICIOUS = "Suspicious"
     LIKELY_ARTIFICIAL = "Likely Artificial"
 
 
 @dataclass
 class Evidence:
-    """A single piece of evidence about an artist."""
+    """A single piece of evidence about an artist.
+
+    The ``tags`` field carries structured metadata for downstream consumers
+    (decision tree, threat category inference, category scores).  Using tags
+    avoids fragile substring matching on human-readable ``finding`` text.
+
+    Controlled tag vocabulary (aligned with simplified_scoring_architecture.md):
+
+    Blocklist matches:
+        pfc_label            — label/distributor matches pfc_distributors.json
+        known_ai_artist      — name matches known_ai_artists.json
+        pfc_songwriter       — contributor matches pfc_songwriters.json
+        known_ai_label       — label on known-AI blocklist
+
+    Behavioral patterns:
+        content_farm         — high-volume singles-only catalog
+        stream_farm          — short tracks near 30s payout threshold
+        cookie_cutter        — uniform track durations
+        playlist_stuffing    — streaming concentrated in top tracks
+        high_release_rate    — abnormal release cadence
+        same_day_release     — multiple releases on single day
+        empty_catalog        — zero releases
+
+    Positive signals:
+        live_performance     — concert/tour history exists
+        physical_release     — vinyl/CD releases exist
+        industry_registered  — ISNI/IPI codes found
+        verified_identity    — real name, aliases, group members known
+        wikipedia            — Wikipedia article exists
+        genuine_fans         — high play/listener ratio or follower count
+
+    Creative signals:
+        catalog_albums       — has album releases
+        genius_credits       — has Genius songwriter credits
+        collaboration        — has collaborators / related artists
+        touring_geography    — international touring spread
+        named_tour           — has named tour(s)
+
+    Platform / identity:
+        multi_platform       — found on 3+ platforms
+        single_platform      — only found on 1 platform
+        social_media         — social media / web presence found
+        no_social_media      — no social / web presence found
+        genius_verified      — verified on Genius
+        career_bio           — bio with career details / history
+        no_genres            — no genre tags assigned
+
+    Fan engagement:
+        low_fans             — very low fan count
+        low_scrobble_engagement — low Last.fm replay ratio
+
+    New evidence sources (Priorities 2-7):
+        ai_generated_music   — Deezer AI tag detected on album
+        deezer_ai_clear      — Deezer checked, no AI tag found
+        youtube_presence     — YouTube channel found with subscribers
+        no_youtube           — no YouTube presence (suspicious for large artists)
+        youtube_disparity    — massive Spotify/YouTube listener gap
+        pro_registered       — registered songwriter with BMI/ASCAP
+        no_pro_registration  — not found in PRO databases
+        pfc_publisher        — publisher matches known PFC entity
+        no_songwriter_share  — 100% publisher share, 0% songwriter
+        bandcamp_presence    — Bandcamp page found (strong legitimacy)
+        press_coverage       — press coverage in recognized publications
+        isrc_pfc_registrant  — ISRC registrant matches PFC entity
+        cowriter_network     — shares producers with flagged artists
+
+    AI-specific (from Claude analysis):
+        ai_generated_image   — profile image flagged as AI
+        ai_bio               — bio mentions AI or has ChatGPT style
+        stock_photo          — profile image is stock photography
+        impersonation        — content uploaded to wrong artist page
+        abstract_image       — profile image is abstract/logo (not a person)
+        authentic_photo      — profile image appears authentic
+        authentic_bio        — bio text appears to describe a real artist
+        suspicious_bio       — bio has hallmarks of fabricated profile
+        geo_specific_bio     — bio includes geographic details
+        no_geo_bio           — bio lacks geographic specificity
+        verifiable_claims    — bio contains verifiable claims
+
+    Synthesis (deep tier):
+        synth_pfc_ghost      — Claude synthesis: PFC Ghost
+        synth_ai_generated   — Claude synthesis: AI Generated
+        synth_legitimate     — Claude synthesis: Legitimate
+
+    Data availability:
+        api_unconfigured     — API was not queried (distinct from "not found")
+        not_found            — API was queried, artist not present
+
+    Entity DB:
+        entity_confirmed_bad — previously confirmed bad in entity DB
+        entity_suspected     — previously suspected in entity DB
+        entity_cleared       — previously cleared in entity DB
+        entity_bad_label     — label flagged in entity DB
+        entity_bad_songwriter — songwriter flagged in entity DB
+        entity_bad_network   — connected to flagged artists via shared producers
+
+    Mood / name patterns:
+        generic_name         — generic two-word name pattern
+        mood_word_titles     — track titles dominated by mood/atmosphere words
+    """
     finding: str          # Short summary (e.g. "Found on Deezer with 145,231 fans")
     source: str           # Data source (e.g. "Deezer", "Spotify", "Blocklist")
     evidence_type: str    # "red_flag", "green_flag", "neutral"
     strength: str         # "strong", "moderate", "weak"
     detail: str           # Longer explanation for the user
+    tags: list[str] = field(default_factory=list)  # Structured metadata — see vocabulary above
 
 
 @dataclass
@@ -134,14 +290,15 @@ class PlatformPresence:
     genius: bool = False
     discogs: bool = False
     setlistfm: bool = False
-    bandsintown: bool = False
     lastfm: bool = False
+    wikipedia: bool = False
+    songkick: bool = False
 
     def count(self) -> int:
         return sum([
             self.spotify, self.deezer, self.musicbrainz,
             self.genius, self.discogs, self.setlistfm,
-            self.lastfm,
+            self.lastfm, self.wikipedia, self.songkick,
         ])
 
     def names(self) -> list[str]:
@@ -161,6 +318,10 @@ class PlatformPresence:
             platforms.append("Setlist.fm")
         if self.lastfm:
             platforms.append("Last.fm")
+        if self.wikipedia:
+            platforms.append("Wikipedia")
+        if self.songkick:
+            platforms.append("Songkick")
         return platforms
 
 
@@ -277,40 +438,23 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     engagement_score = _clamp(fan_pts)
 
     # --- Creative History (0-100) ---
+    # Uses structured tags — no string matching on finding text
     creative_pts = 0
 
-    # Albums
-    album_count = len([e for e in ev.green_flags if "album" in e.finding.lower() and e.source == "Deezer"])
-    for e in ev.green_flags + ev.red_flags + ev.neutral_notes:
-        if "album" in e.finding.lower() and "catalog" not in e.finding.lower():
-            pass  # counted via labels below
-
-    # Use evidence directly for catalog signals
     for e in ev.green_flags:
-        if "albums in catalog" in e.finding.lower():
-            creative_pts += 25
-        elif "album(s) in catalog" in e.finding.lower():
-            creative_pts += 15
-        if "physical release" in e.finding.lower():
-            if e.strength == "strong":
-                creative_pts += 30
-            else:
-                creative_pts += 15
-        if "songs on Genius" in e.finding:
-            if e.strength == "strong":
-                creative_pts += 20
-            elif e.strength == "moderate":
-                creative_pts += 10
-            else:
-                creative_pts += 5
-        if "collaborator" in e.finding.lower():
+        if "catalog_albums" in e.tags:
+            creative_pts += 25 if e.strength in ("strong", "moderate") else 15
+        if "physical_release" in e.tags:
+            creative_pts += 30 if e.strength == "strong" else 15
+        if "genius_credits" in e.tags:
+            creative_pts += {"strong": 20, "moderate": 10}.get(e.strength, 5)
+        if "collaboration" in e.tags:
             creative_pts += 10
 
-    # Penalize content farm patterns
     for e in ev.red_flags:
-        if "content farm" in e.finding.lower():
+        if "content_farm" in e.tags or "stream_farm" in e.tags:
             creative_pts -= 30
-        if "empty catalog" in e.finding.lower():
+        elif "empty_catalog" in e.tags:
             creative_pts -= 20
 
     creative_score = _clamp(creative_pts)
@@ -326,12 +470,24 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     elif ext.setlistfm_total_shows >= 1:
         live_pts += 10
 
+    # Songkick (additive — different data source)
+    if ext.songkick_total_past_events >= 50:
+        live_pts += 30
+    elif ext.songkick_total_past_events >= 10:
+        live_pts += 20
+    elif ext.songkick_total_past_events >= 1:
+        live_pts += 8
+
+    # Currently on tour (Songkick)
+    if ext.songkick_on_tour:
+        live_pts += 10
+
     # Tour names
     if ext.setlistfm_tour_names:
         live_pts += 15
 
-    # Geographic spread
-    countries = len(ext.setlistfm_venue_countries)
+    # Geographic spread (best of Setlist.fm or Songkick)
+    countries = max(len(ext.setlistfm_venue_countries), len(ext.songkick_venue_countries))
     if countries >= 5:
         live_pts += 25
     elif countries >= 2:
@@ -361,9 +517,12 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     social_count = min(social_count, 8)  # cap duplicates
     identity_pts += social_count * 5
 
-    # Wikipedia
-    has_wikipedia = any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values())
-    if has_wikipedia:
+    # Wikipedia (direct lookup or via MusicBrainz)
+    if ext.wikipedia_found:
+        identity_pts += 25
+        if ext.wikipedia_monthly_views >= 10_000:
+            identity_pts += 10
+    elif any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values()):
         identity_pts += 20
 
     # Discogs bio
@@ -415,7 +574,7 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
 
     # PFC label penalty
     for e in ev.red_flags:
-        if "PFC blocklist" in e.finding:
+        if "pfc_label" in e.tags:
             industry_pts -= 40
 
     industry_score = _clamp(industry_pts)
@@ -462,6 +621,7 @@ def _collect_platform_evidence(artist: ArtistInfo) -> tuple[PlatformPresence, li
             strength="strong",
             detail=f"Artist exists on: {', '.join(presence.names())}. "
                    "Artists present on multiple platforms are very likely real.",
+            tags=["multi_platform"],
         ))
     elif platforms_found >= 2:
         evidence.append(Evidence(
@@ -470,6 +630,7 @@ def _collect_platform_evidence(artist: ArtistInfo) -> tuple[PlatformPresence, li
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Found on: {', '.join(presence.names())}.",
+            tags=["multi_platform"],
         ))
     elif platforms_found <= 1:
         evidence.append(Evidence(
@@ -479,6 +640,7 @@ def _collect_platform_evidence(artist: ArtistInfo) -> tuple[PlatformPresence, li
             strength="weak",
             detail="Artist only verified on a single platform. "
                    "Could be new or could be a fabricated artist.",
+            tags=["single_platform"],
         ))
 
     return presence, evidence
@@ -496,6 +658,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="green_flag",
             strength="strong",
             detail=f"Artist has {fans:,} fans — substantial organic following.",
+            tags=["genuine_fans"],
         ))
     elif fans >= 10_000:
         evidence.append(Evidence(
@@ -504,6 +667,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Artist has {fans:,} fans — meaningful audience.",
+            tags=["genuine_fans"],
         ))
     elif fans >= 1_000:
         evidence.append(Evidence(
@@ -520,6 +684,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="red_flag",
             strength="weak",
             detail=f"Only {fans:,} fans. Could be a new artist or a ghost artist.",
+            tags=["low_fans"],
         ))
     else:
         evidence.append(Evidence(
@@ -543,6 +708,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
                        f"{artist.followers:,} followers ({ratio:.3%}). Real artists "
                        "typically convert 3-15% of listeners to followers. This "
                        "suggests playlist-driven streams without real fans.",
+                tags=["playlist_stuffing"],
             ))
         elif ratio < 0.03:
             evidence.append(Evidence(
@@ -552,6 +718,7 @@ def _collect_follower_evidence(artist: ArtistInfo) -> list[Evidence]:
                 strength="moderate",
                 detail=f"{artist.monthly_listeners:,} listeners, {artist.followers:,} followers "
                        f"({ratio:.1%}). On the low end for organic artists.",
+                tags=["playlist_stuffing"],
             ))
 
     return evidence
@@ -570,6 +737,7 @@ def _collect_catalog_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="red_flag",
             strength="moderate",
             detail="No albums or singles found. Could be a very new or fabricated artist.",
+            tags=["empty_catalog"],
         ))
         return evidence
 
@@ -582,6 +750,7 @@ def _collect_catalog_evidence(artist: ArtistInfo) -> list[Evidence]:
             strength="moderate",
             detail=f"Artist has released {albums} albums. Albums require significant "
                    "creative investment — this is typical of real artists.",
+            tags=["catalog_albums"],
         ))
     elif albums >= 1:
         evidence.append(Evidence(
@@ -590,6 +759,7 @@ def _collect_catalog_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="green_flag",
             strength="weak",
             detail=f"Artist has {albums} album(s). At least some long-form releases.",
+            tags=["catalog_albums"],
         ))
 
     # Singles-only with high volume → content farm pattern
@@ -602,6 +772,7 @@ def _collect_catalog_evidence(artist: ArtistInfo) -> list[Evidence]:
             detail=f"Artist has released {singles} singles but no albums. "
                    "This pattern is common in PFC/content farm operations that "
                    "mass-produce short tracks for playlist placement.",
+            tags=["content_farm"],
         ))
     elif albums == 0 and singles > 10:
         evidence.append(Evidence(
@@ -611,6 +782,7 @@ def _collect_catalog_evidence(artist: ArtistInfo) -> list[Evidence]:
             strength="moderate",
             detail=f"{singles} singles with no albums. Could be a singles-focused "
                    "artist or could indicate content farming.",
+            tags=["content_farm"],
         ))
 
     return evidence
@@ -639,6 +811,7 @@ def _collect_duration_evidence(artist: ArtistInfo) -> list[Evidence]:
             detail=f"Average track is only {avg_s:.0f}s. Stream farms create very short "
                    "tracks (just past the 30-second payout threshold) to maximize "
                    "royalties per stream. Normal songs average 3-4 minutes.",
+            tags=["stream_farm"],
         ))
     elif avg_s < 120:
         evidence.append(Evidence(
@@ -647,6 +820,7 @@ def _collect_duration_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="red_flag",
             strength="moderate",
             detail=f"Average track is {avg_s:.0f}s — shorter than typical songs (180-240s).",
+            tags=["stream_farm"],
         ))
 
     # Cookie-cutter uniform durations
@@ -659,6 +833,7 @@ def _collect_duration_evidence(artist: ArtistInfo) -> list[Evidence]:
             detail=f"Track durations have a standard deviation of only {stdev_s:.1f}s "
                    f"across {len(durations)} tracks. This suggests automated/templated "
                    "production rather than organic songwriting.",
+            tags=["cookie_cutter"],
         ))
 
     # Normal duration range is a mild green flag
@@ -708,6 +883,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
             strength="strong",
             detail=f"All {len(parsed)} releases share the same date. "
                    "Legitimate artists space out releases; mass-uploading is a content farm signal.",
+            tags=["high_release_rate", "same_day_release", "content_farm"],
         ))
         return evidence
 
@@ -736,6 +912,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                        f"{span_months:.0f} months ({albums} albums total). "
                        "Albums require significant creative investment — this rate "
                        "suggests automated production.",
+                tags=["high_release_rate"],
             ))
         elif albums_per_month > 1 and albums >= 3:
             evidence.append(Evidence(
@@ -746,6 +923,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 detail=f"Releasing {albums_per_month:.1f} albums per month — "
                        f"{albums} albums over {span_months:.0f} months is higher "
                        "than most real artists.",
+                tags=["high_release_rate"],
             ))
 
         if singles_per_month > 6:
@@ -757,6 +935,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 detail=f"Releasing {singles_per_month:.1f} singles per month over "
                        f"{span_months:.0f} months ({singles} singles total). "
                        "Even prolific artists rarely release more than 2-3 singles/month.",
+                tags=["high_release_rate"],
             ))
         elif singles_per_month > 3 and singles >= 5:
             evidence.append(Evidence(
@@ -766,6 +945,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 strength="moderate",
                 detail=f"Releasing {singles_per_month:.1f} singles per month — "
                        f"{singles} singles over {span_months:.0f} months.",
+                tags=["high_release_rate"],
             ))
 
         # Normal pace with enough history
@@ -791,6 +971,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 detail=f"Releasing {releases_per_month:.1f} times per month over "
                        f"{span_months:.0f} months. Even prolific artists rarely exceed "
                        "2-3 releases/month. This rate suggests automated production.",
+                tags=["high_release_rate"],
             ))
         elif releases_per_month > 4:
             evidence.append(Evidence(
@@ -800,6 +981,7 @@ def _collect_release_evidence(artist: ArtistInfo) -> list[Evidence]:
                 strength="moderate",
                 detail=f"Releasing {releases_per_month:.1f} times per month — higher "
                        "than most real artists.",
+                tags=["high_release_rate"],
             ))
         elif releases_per_month <= 1 and total_releases >= 5:
             evidence.append(Evidence(
@@ -819,9 +1001,8 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
     if not artist.labels:
         return evidence
 
-    pfc_labels = [l.lower() for l in pfc_distributors()]
-    ai_names = [n.lower() for n in known_ai_artists()]
-    pfc_writers = [w.lower() for w in pfc_songwriters()]
+    pfc_labels = pfc_distributors()
+    ai_names = known_ai_artists()
 
     matched_pfc = [l for l in artist.labels if l.lower() in pfc_labels]
     matched_ai = [l for l in artist.labels if l.lower() in ai_names]
@@ -836,6 +1017,7 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
                    "which is associated with Perfect Fit Content (PFC) operations. "
                    "PFC distributors create playlist-optimized content that displaces "
                    "real independent artists.",
+            tags=["pfc_label"],
         ))
 
     if matched_ai:
@@ -845,9 +1027,11 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="red_flag",
             strength="strong",
             detail=f"Label {', '.join(matched_ai)} is on the known AI artist/label blocklist.",
+            tags=["known_ai_label"],
         ))
 
     # Check contributors against PFC songwriter blocklist
+    pfc_writers = pfc_songwriters()
     if artist.contributors and pfc_writers:
         matched_writers = [c for c in artist.contributors if c.lower() in pfc_writers]
         if matched_writers:
@@ -859,6 +1043,7 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
                 detail=f"This artist's credits include known PFC songwriters: "
                        f"{', '.join(matched_writers[:5])}. "
                        "PFC songwriters are associated with factory-produced content.",
+                tags=["pfc_songwriter"],
             ))
 
     if not matched_pfc and not matched_ai:
@@ -881,14 +1066,14 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
     name = artist.name
 
     # Known AI artist blocklist match
-    known = [n.lower() for n in known_ai_artists()]
-    if name.lower() in known:
+    if name.lower() in known_ai_artists():
         evidence.append(Evidence(
             finding="Name matches known AI artist blocklist",
             source="Blocklist",
             evidence_type="red_flag",
             strength="strong",
             detail=f'"{name}" is on our list of known AI-generated artist names.',
+            tags=["known_ai_artist"],
         ))
         return evidence
 
@@ -902,6 +1087,7 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
             detail=f'"{name}" follows a common pattern for generated artist names '
                    "(Title Case Adjective + Noun). Many real artists also have "
                    "names like this, so this is only a weak signal.",
+            tags=["generic_name"],
         ))
 
     # Mood-word track titles (PFC tracks use generic mood/atmosphere names)
@@ -931,6 +1117,7 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
                        "from mood vocabulary (calm, peaceful, rain, morning, etc.). PFC music "
                        "is often named to match playlist moods rather than artistic expression. "
                        f"Sample titles: {', '.join(artist.track_titles[:5])}.",
+                tags=["mood_word_titles"],
             ))
 
     return evidence
@@ -951,6 +1138,7 @@ def _collect_collaboration_evidence(artist: ArtistInfo) -> list[Evidence]:
                    f"{', '.join(artist.contributors[:5])}"
                    f"{'...' if len(artist.contributors) > 5 else ''}. "
                    "Real artists collaborate; fake profiles typically don't.",
+            tags=["collaboration"],
         ))
     elif len(artist.contributors) >= 1:
         evidence.append(Evidence(
@@ -959,6 +1147,7 @@ def _collect_collaboration_evidence(artist: ArtistInfo) -> list[Evidence]:
             evidence_type="green_flag",
             strength="weak",
             detail=f"Collaborators: {', '.join(artist.contributors)}.",
+            tags=["collaboration"],
         ))
 
     # Related artists on Deezer
@@ -987,22 +1176,20 @@ def _collect_collaboration_evidence(artist: ArtistInfo) -> list[Evidence]:
 def _collect_credit_network_evidence(artist: ArtistInfo) -> list[Evidence]:
     """Check if track credits match known PFC ghost producers/songwriters."""
     evidence: list[Evidence] = []
-    watchlist = {n.lower(): n for n in pfc_songwriters()}
+    watchlist = pfc_songwriters()
     if not watchlist:
         return evidence
 
     # Check contributor names against songwriter watchlist
     matched: list[str] = []
     for contributor in artist.contributors:
-        clower = contributor.lower()
-        if clower in watchlist:
-            matched.append(watchlist[clower])
+        if contributor.lower() in watchlist:
+            matched.append(contributor)
 
     # Also check contributor_roles keys (may have names not in contributors list)
     for name in artist.contributor_roles:
-        nlower = name.lower()
-        if nlower in watchlist and watchlist[nlower] not in matched:
-            matched.append(watchlist[nlower])
+        if name.lower() in watchlist and name not in matched:
+            matched.append(name)
 
     if matched:
         evidence.append(Evidence(
@@ -1015,6 +1202,7 @@ def _collect_credit_network_evidence(artist: ArtistInfo) -> list[Evidence]:
                    "reporting as prolific ghost producers creating music under fabricated "
                    "artist names for PFC placement. This is strong evidence that this "
                    "artist profile may be a pseudonym.",
+            tags=["pfc_songwriter"],
         ))
 
     # Check for suspiciously few unique contributors with producer roles
@@ -1051,6 +1239,7 @@ def _collect_genre_evidence(artist: ArtistInfo) -> list[Evidence]:
             strength="weak",
             detail="Spotify auto-assigns genres to established artists. "
                    "No genres could mean the artist is too new or not recognized.",
+            tags=["no_genres"],
         ))
     elif len(artist.genres) >= 3:
         evidence.append(Evidence(
@@ -1090,6 +1279,7 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
                            f"{top2_share:.0%} of all popularity. This concentration pattern "
                            "is consistent with playlist stuffing — a couple of tracks placed "
                            "on playlists while the rest have near-zero organic plays.",
+                    tags=["playlist_stuffing"],
                 ))
 
     if avg_rank >= 500_000:
@@ -1142,6 +1332,7 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
             strength="strong",
             detail=f"Artist has {ext.genius_song_count} songs with lyrics/credits on Genius. "
                    "This is strong evidence of a real artist with legitimate songwriting credits.",
+            tags=["genius_credits"],
         ))
     elif ext.genius_song_count >= 5:
         evidence.append(Evidence(
@@ -1150,6 +1341,7 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Artist has {ext.genius_song_count} songs on Genius — real songwriting credits exist.",
+            tags=["genius_credits"],
         ))
     elif ext.genius_song_count >= 1:
         evidence.append(Evidence(
@@ -1158,6 +1350,7 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="weak",
             detail=f"Found {ext.genius_song_count} song(s) on Genius. Minimal but present.",
+            tags=["genius_credits"],
         ))
     else:
         evidence.append(Evidence(
@@ -1218,6 +1411,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
                    f"(formats: {', '.join(ext.discogs_formats[:5])}). "
                    "Pressing vinyl or manufacturing CDs requires real investment — "
                    "this is very strong evidence of a legitimate artist.",
+            tags=["physical_release"],
         ))
     elif ext.discogs_physical_releases >= 3:
         evidence.append(Evidence(
@@ -1227,6 +1421,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             strength="strong",
             detail=f"Artist has {ext.discogs_physical_releases} physical releases "
                    f"({', '.join(ext.discogs_formats[:5])}). Physical media is strong proof of legitimacy.",
+            tags=["physical_release"],
         ))
     elif ext.discogs_physical_releases >= 1:
         evidence.append(Evidence(
@@ -1235,6 +1430,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"At least {ext.discogs_physical_releases} physical release exists.",
+            tags=["physical_release"],
         ))
     elif ext.discogs_digital_releases > 0:
         evidence.append(Evidence(
@@ -1248,8 +1444,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
 
     # Discogs labels
     if ext.discogs_labels:
-        pfc_labels = [l.lower() for l in pfc_distributors()]
-        discogs_pfc_matches = [l for l in ext.discogs_labels if l.lower() in pfc_labels]
+        discogs_pfc_matches = [l for l in ext.discogs_labels if l.lower() in pfc_distributors()]
         if discogs_pfc_matches:
             evidence.append(Evidence(
                 finding=f"Discogs labels match PFC blocklist: {', '.join(discogs_pfc_matches)}",
@@ -1258,6 +1453,7 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="strong",
                 detail=f"Discogs confirms distribution by PFC-associated label(s): "
                        f"{', '.join(discogs_pfc_matches)}.",
+                tags=["pfc_label"],
             ))
         elif len(ext.discogs_labels) >= 2:
             evidence.append(Evidence(
@@ -1294,6 +1490,7 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
                        f"{venues_str} "
                        "Extensive concert history is the strongest possible proof of "
                        "a real artist — AI and ghost artists don't perform live.",
+                tags=["live_performance"],
             ))
         elif ext.setlistfm_total_shows >= 10:
             evidence.append(Evidence(
@@ -1303,6 +1500,7 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="strong",
                 detail=f"Artist has {ext.setlistfm_total_shows} recorded live performances. "
                        "Concert history is very strong proof of a real artist.",
+                tags=["live_performance"],
             ))
         elif ext.setlistfm_total_shows >= 1:
             evidence.append(Evidence(
@@ -1311,6 +1509,7 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
                 evidence_type="green_flag",
                 strength="moderate",
                 detail=f"At least {ext.setlistfm_total_shows} live performance(s) recorded.",
+                tags=["live_performance"],
             ))
         else:
             evidence.append(Evidence(
@@ -1337,7 +1536,7 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
             source="Live shows",
             evidence_type="red_flag",
             strength="moderate",
-            detail="No concerts found on Setlist.fm or Bandsintown. While some real "
+            detail="No concerts found on Setlist.fm. While some real "
                    "artists are studio-only, the absence of any live history is a "
                    "common pattern for ghost and AI-generated artists.",
         ))
@@ -1405,8 +1604,7 @@ def _collect_musicbrainz_evidence(ext: ExternalData) -> list[Evidence]:
 
     # MusicBrainz labels vs PFC blocklist
     if ext.musicbrainz_labels:
-        pfc_labels = [l.lower() for l in pfc_distributors()]
-        mb_pfc_matches = [l for l in ext.musicbrainz_labels if l.lower() in pfc_labels]
+        mb_pfc_matches = [l for l in ext.musicbrainz_labels if l.lower() in pfc_distributors()]
         if mb_pfc_matches:
             evidence.append(Evidence(
                 finding=f"MusicBrainz labels match PFC blocklist: {', '.join(mb_pfc_matches)}",
@@ -1415,6 +1613,7 @@ def _collect_musicbrainz_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="strong",
                 detail=f"MusicBrainz confirms distribution by PFC-associated label(s): "
                        f"{', '.join(mb_pfc_matches)}.",
+                tags=["pfc_label"],
             ))
 
     return evidence
@@ -1483,6 +1682,7 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
             strength="strong",
             detail=f"Artist has verified presence on: {platforms_str}. "
                    "A broad web footprint is strong evidence of a real artist.",
+            tags=["social_media"],
         ))
     elif len(social_links) >= 2:
         platforms_str = ", ".join(f"{k} (via {v})" for k, v in sorted(social_links.items()))
@@ -1492,6 +1692,7 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Found: {platforms_str}.",
+            tags=["social_media"],
         ))
     elif len(social_links) == 1:
         platforms_str = ", ".join(f"{k} (via {v})" for k, v in social_links.items())
@@ -1500,6 +1701,7 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
             source="Social media",
             evidence_type="green_flag",
             strength="weak",
+            tags=["social_media"],
             detail=f"Minimal web presence found: {platforms_str}.",
         ))
     else:
@@ -1518,6 +1720,7 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
                 detail="Checked Genius, Discogs, and MusicBrainz — "
                        "no social media profiles or official website found. "
                        "Real artists almost always have some web presence.",
+                tags=["no_social_media"],
             ))
 
     # Genius verified status
@@ -1529,6 +1732,7 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
             strength="moderate",
             detail="Artist has a verified Genius account, indicating they have claimed "
                    "their profile and likely manage their own credits/lyrics.",
+            tags=["genius_verified"],
         ))
 
     # Genius followers
@@ -1551,16 +1755,31 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
         ))
 
     # Wikipedia/Wikidata presence (from MusicBrainz URL rels)
-    has_wikipedia = any("wikipedia" in k.lower() or "wikipedia" in v.lower()
-                        for k, v in ext.musicbrainz_urls.items())
-    if has_wikipedia:
+    # Only emit this if the dedicated Wikipedia client didn't find an article
+    # (avoids double-counting the same signal).
+    if not ext.wikipedia_found:
+        has_wikipedia = any("wikipedia" in k.lower() or "wikipedia" in v.lower()
+                            for k, v in ext.musicbrainz_urls.items())
+        if has_wikipedia:
+            evidence.append(Evidence(
+                finding="Has Wikipedia article (via MusicBrainz)",
+                source="MusicBrainz",
+                evidence_type="green_flag",
+                strength="strong",
+                detail="Artist has a Wikipedia article linked from MusicBrainz. "
+                       "Wikipedia's notability requirements make this strong proof of legitimacy.",
+                tags=["wikipedia"],
+            ))
+    # Wikidata presence (separate from Wikipedia article)
+    has_wikidata = any("wikidata" in k.lower() or "wikidata" in v.lower()
+                       for k, v in ext.musicbrainz_urls.items())
+    if has_wikidata and not ext.wikipedia_found:
         evidence.append(Evidence(
-            finding="Has Wikipedia article",
+            finding="Has Wikidata entry",
             source="MusicBrainz",
             evidence_type="green_flag",
-            strength="strong",
-            detail="Artist has a Wikipedia article linked from MusicBrainz. "
-                   "Wikipedia's notability requirements make this strong proof of legitimacy.",
+            strength="weak",
+            detail="Artist has a Wikidata entry linked from MusicBrainz.",
         ))
 
     return evidence
@@ -1598,6 +1817,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
                 detail=f"Bio contains career indicators ({', '.join(career_hits[:4])}) "
                        f"and spans {len(year_pattern)} year reference(s). "
                        f"Excerpt: \"{bio[:200]}{'...' if bio_len > 200 else ''}\"",
+                tags=["career_bio"],
             ))
         elif bio_len >= 200:
             evidence.append(Evidence(
@@ -1607,6 +1827,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="moderate",
                 detail=f"Has a detailed Discogs biography: "
                        f"\"{bio[:150]}{'...' if bio_len > 150 else ''}\"",
+                tags=["career_bio"],
             ))
         elif bio_len >= 50 and career_hits:
             evidence.append(Evidence(
@@ -1616,6 +1837,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="moderate",
                 detail=f"Bio mentions: {', '.join(career_hits[:3])}. "
                        f"\"{bio[:120]}{'...' if bio_len > 120 else ''}\"",
+                tags=["career_bio"],
             ))
         elif bio_len >= 50:
             evidence.append(Evidence(
@@ -1624,6 +1846,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
                 evidence_type="green_flag",
                 strength="weak",
                 detail=f"Has a brief Discogs biography: \"{bio[:100]}\"",
+                tags=["career_bio"],
             ))
 
     # Real name (Discogs)
@@ -1635,6 +1858,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             strength="moderate",
             detail=f"Discogs records this artist's real name as \"{ext.discogs_realname}\". "
                    "Known real names indicate a documented, real person.",
+            tags=["verified_identity"],
         ))
 
     # Group members (Discogs)
@@ -1647,6 +1871,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             detail=f"Discogs lists group members: {', '.join(ext.discogs_members[:5])}"
                    f"{'...' if len(ext.discogs_members) > 5 else ''}. "
                    "Known members indicate a real group.",
+            tags=["verified_identity"],
         ))
 
     # Groups this artist belongs to (Discogs)
@@ -1679,6 +1904,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             detail="Artist has an International Standard Name Identifier (ISNI), "
                    "a globally unique identifier assigned to public identities. "
                    "This is very strong proof of a real, professionally registered artist.",
+            tags=["industry_registered"],
         ))
 
     if ext.musicbrainz_ipis:
@@ -1690,6 +1916,7 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
             detail="Artist has an Interested Parties Information (IPI) code, "
                    "assigned by collecting societies for royalty management. "
                    "This means they are registered as a rights holder.",
+            tags=["industry_registered"],
         ))
 
     # MusicBrainz gender (helps confirm type=Person)
@@ -1775,8 +2002,28 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
                 strength="strong",
                 detail=f"Each listener averages {ratio:.1f} plays. High replay value "
                        "indicates genuine fans who return to this artist's music.",
+                tags=["genuine_fans"],
             ))
-        elif ext.lastfm_listeners >= 100 and ratio < 2:
+        elif ratio >= 4:
+            evidence.append(Evidence(
+                finding=f"Moderate scrobble engagement (play/listener ratio: {ratio:.1f})",
+                source="Last.fm",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"Each listener averages {ratio:.1f} plays. Reasonable replay "
+                       "rate suggesting some genuine fan engagement.",
+                tags=["genuine_fans"],
+            ))
+        elif ratio >= 2:
+            evidence.append(Evidence(
+                finding=f"Low scrobble engagement (play/listener ratio: {ratio:.1f})",
+                source="Last.fm",
+                evidence_type="neutral",
+                strength="weak",
+                detail=f"Each listener averages {ratio:.1f} plays. Borderline — "
+                       "could indicate casual listeners or early-stage fanbase.",
+            ))
+        elif ext.lastfm_listeners >= 100:
             evidence.append(Evidence(
                 finding=f"Very low scrobble engagement (play/listener ratio: {ratio:.1f})",
                 source="Last.fm",
@@ -1785,6 +2032,7 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
                 detail=f"Despite {ext.lastfm_listeners:,} listeners, each averages only "
                        f"{ratio:.1f} plays. This suggests passive/algorithmic listening "
                        "rather than genuine fans — a common pattern with PFC content.",
+                tags=["low_scrobble_engagement"],
             ))
 
     # Low listener count vs Spotify presence
@@ -1827,6 +2075,7 @@ def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
             strength="moderate",
             detail=f"Named tours: {', '.join(ext.setlistfm_tour_names[:5])}. "
                    "Named tours indicate professional touring activity.",
+            tags=["named_tour", "touring_geography"],
         ))
 
     # Geographic spread
@@ -1840,6 +2089,7 @@ def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
             strength="strong",
             detail=f"International touring across: {', '.join(countries[:8])}. "
                    "International touring is very strong proof of a real artist.",
+            tags=["touring_geography"],
         ))
     elif len(countries) >= 2:
         evidence.append(Evidence(
@@ -1848,6 +2098,7 @@ def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Toured in: {', '.join(countries[:5])}.",
+            tags=["touring_geography"],
         ))
     elif len(cities) >= 3:
         evidence.append(Evidence(
@@ -1856,6 +2107,528 @@ def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="weak",
             detail=f"Venues in: {', '.join(cities[:5])}.",
+            tags=["touring_geography"],
+        ))
+
+    return evidence
+
+
+def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Wikipedia presence — richer than the MusicBrainz URL check.
+
+    Provides article length, summary extract, page views, and categories.
+    """
+    evidence: list[Evidence] = []
+
+    if not ext.wikipedia_found:
+        # Don't emit a red flag — MusicBrainz already covers the binary check.
+        # This collector only fires when the dedicated Wikipedia client found data.
+        return evidence
+
+    # Article length — longer articles indicate more notability
+    length = ext.wikipedia_length
+    views = ext.wikipedia_monthly_views
+    extract = ext.wikipedia_extract
+
+    if length >= 20_000 and views >= 10_000:
+        evidence.append(Evidence(
+            finding=f"Substantial Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is {length:,} bytes with "
+                   f"{views:,} monthly page views. Large, actively-viewed articles indicate "
+                   f"significant public notability. Summary: \"{extract[:200]}{'...' if len(extract) > 200 else ''}\"",
+            tags=["wikipedia"],
+        ))
+    elif length >= 5_000 or views >= 1_000:
+        evidence.append(Evidence(
+            finding=f"Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Wikipedia article \"{ext.wikipedia_title}\" with {views:,} monthly views. "
+                   f"Wikipedia's notability requirements make this strong proof of legitimacy. "
+                   f"Summary: \"{extract[:150]}{'...' if len(extract) > 150 else ''}\"",
+            tags=["wikipedia"],
+        ))
+    elif length > 0:
+        evidence.append(Evidence(
+            finding=f"Wikipedia stub article ({length:,} bytes)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" ({length:,} bytes). "
+                   f"Even stub articles require notability per Wikipedia guidelines.",
+            tags=["wikipedia"],
+        ))
+
+    # High page views as an independent engagement signal
+    if views >= 50_000:
+        evidence.append(Evidence(
+            finding=f"Very high Wikipedia traffic ({views:,} monthly views)",
+            source="Wikipedia",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Extremely high monthly page views indicate massive public interest.",
+            tags=["genuine_fans", "wikipedia"],
+        ))
+
+    # Wikidata description
+    if ext.wikipedia_description:
+        desc = ext.wikipedia_description.lower()
+        music_terms = ["musician", "singer", "band", "rapper", "composer",
+                       "songwriter", "DJ", "group", "artist", "producer"]
+        if any(term in desc for term in music_terms):
+            evidence.append(Evidence(
+                finding=f"Wikidata: \"{ext.wikipedia_description}\"",
+                source="Wikipedia",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Wikidata classifies this entity as \"{ext.wikipedia_description}\".",
+                tags=["verified_identity"],
+            ))
+
+    return evidence
+
+
+def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Songkick concert and touring history."""
+    evidence: list[Evidence] = []
+
+    if not ext.songkick_found:
+        return evidence
+
+    total = ext.songkick_total_past_events
+
+    # Concert history
+    if total >= 100:
+        evidence.append(Evidence(
+            finding=f"{total:,} past events on Songkick",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Songkick records {total:,} past events. "
+                   f"Extensive concert history is very strong proof of a real artist.",
+            tags=["live_performance"],
+        ))
+    elif total >= 20:
+        evidence.append(Evidence(
+            finding=f"{total:,} past events on Songkick",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Songkick records {total:,} past events, indicating real touring activity.",
+            tags=["live_performance"],
+        ))
+    elif total >= 1:
+        evidence.append(Evidence(
+            finding=f"{total} past event(s) on Songkick",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Songkick has {total} recorded event(s). Some live activity detected.",
+            tags=["live_performance"],
+        ))
+
+    # Currently on tour
+    if ext.songkick_on_tour:
+        evidence.append(Evidence(
+            finding="Currently on tour (Songkick)",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Artist is currently listed as on tour on Songkick "
+                   f"with {ext.songkick_total_upcoming_events} upcoming event(s).",
+            tags=["live_performance"],
+        ))
+
+    # Geographic spread (complements Setlist.fm touring geography)
+    countries = ext.songkick_venue_countries
+    cities = ext.songkick_venue_cities
+    if len(countries) >= 5:
+        evidence.append(Evidence(
+            finding=f"Songkick events in {len(countries)} countries",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"International touring: {', '.join(countries[:8])}.",
+            tags=["touring_geography"],
+        ))
+    elif len(countries) >= 2:
+        evidence.append(Evidence(
+            finding=f"Songkick events in {len(countries)} countries",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Touring in: {', '.join(countries[:5])}.",
+            tags=["touring_geography"],
+        ))
+    elif len(cities) >= 3:
+        evidence.append(Evidence(
+            finding=f"Songkick events in {len(cities)} cities",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Events in: {', '.join(cities[:5])}.",
+            tags=["touring_geography"],
+        ))
+
+    # Festival appearances
+    festival_count = ext.songkick_event_types.count("Festival")
+    if festival_count >= 3:
+        evidence.append(Evidence(
+            finding=f"{festival_count} festival appearances (Songkick)",
+            source="Songkick",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail="Festival bookings indicate industry recognition and real performance history.",
+            tags=["live_performance"],
+        ))
+
+    return evidence
+
+
+def _collect_deezer_ai_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze Deezer AI content tag results (Priority 2)."""
+    evidence: list[Evidence] = []
+
+    if not ext.deezer_ai_checked:
+        return evidence
+
+    if ext.deezer_ai_tagged_albums:
+        albums_str = ", ".join(ext.deezer_ai_tagged_albums[:3])
+        evidence.append(Evidence(
+            finding=f"Deezer flagged {len(ext.deezer_ai_tagged_albums)} album(s) as AI-generated",
+            source="Deezer AI Detection",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Deezer's AI detection system (99.8% accuracy, patent-pending) has "
+                   f"classified album(s) as AI-generated: {albums_str}. "
+                   "Deezer processes 60K+ AI tracks daily and is the only platform that "
+                   "actively tags AI content.",
+            tags=["ai_generated_music"],
+        ))
+    else:
+        evidence.append(Evidence(
+            finding="No AI content tags detected on Deezer",
+            source="Deezer AI Detection",
+            evidence_type="green_flag",
+            strength="weak",
+            detail="Deezer's AI detection system did not flag any of this artist's albums.",
+            tags=["deezer_ai_clear"],
+        ))
+
+    return evidence
+
+
+def _collect_youtube_evidence(ext: ExternalData, artist_monthly_listeners: int = 0) -> list[Evidence]:
+    """Analyze YouTube cross-reference results (Priority 4)."""
+    evidence: list[Evidence] = []
+
+    if not ext.youtube_checked:
+        return evidence
+
+    if ext.youtube_channel_found:
+        subs = ext.youtube_subscriber_count
+        if subs >= 100_000:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with {subs:,} subscribers",
+                source="YouTube",
+                evidence_type="green_flag",
+                strength="strong",
+                detail=f"YouTube channel found with {subs:,} subscribers, "
+                       f"{ext.youtube_video_count} videos, "
+                       f"{ext.youtube_view_count:,} total views.",
+                tags=["youtube_presence", "genuine_fans"],
+            ))
+        elif subs >= 10_000:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with {subs:,} subscribers",
+                source="YouTube",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"YouTube channel found with {subs:,} subscribers "
+                       f"and {ext.youtube_video_count} videos.",
+                tags=["youtube_presence"],
+            ))
+        elif subs >= 100:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with {subs:,} subscribers",
+                source="YouTube",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"YouTube channel found with {subs:,} subscribers.",
+                tags=["youtube_presence"],
+            ))
+        else:
+            evidence.append(Evidence(
+                finding=f"YouTube channel with only {subs} subscribers",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="weak",
+                detail="YouTube channel exists but has very few subscribers, "
+                       "suggesting auto-generated or placeholder channel.",
+                tags=["youtube_presence"],
+            ))
+
+        # Spotify/YouTube disparity check
+        if artist_monthly_listeners >= 500_000 and ext.youtube_view_count < 10_000:
+            evidence.append(Evidence(
+                finding=f"Massive Spotify/YouTube disparity: {artist_monthly_listeners:,} "
+                        f"listeners but only {ext.youtube_view_count:,} YouTube views",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Artist has {artist_monthly_listeners:,} Spotify monthly listeners but "
+                       f"only {ext.youtube_view_count:,} total YouTube views. Real artists with "
+                       "this level of Spotify audience always have proportional YouTube presence.",
+                tags=["youtube_disparity"],
+            ))
+
+    elif not ext.youtube_channel_found and ext.youtube_music_videos_found == 0:
+        if artist_monthly_listeners >= 100_000:
+            evidence.append(Evidence(
+                finding="No YouTube presence despite large Spotify audience",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail=f"No YouTube channel or music videos found for an artist with "
+                       f"{artist_monthly_listeners:,} Spotify monthly listeners. "
+                       "This is very unusual for a legitimate artist.",
+                tags=["no_youtube"],
+            ))
+        else:
+            evidence.append(Evidence(
+                finding="No YouTube channel or music videos found",
+                source="YouTube",
+                evidence_type="red_flag",
+                strength="weak",
+                detail="No YouTube presence detected. Most real artists have at least "
+                       "some YouTube content.",
+                tags=["no_youtube"],
+            ))
+
+    return evidence
+
+
+def _collect_pro_registry_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze ASCAP/BMI performing rights registration (Priority 3)."""
+    evidence: list[Evidence] = []
+
+    if not ext.pro_checked:
+        return evidence
+
+    if ext.pro_songwriter_registered:
+        total_works = ext.pro_works_count
+        pro_name = "BMI" if ext.pro_found_bmi else "ASCAP"
+        if ext.pro_found_bmi and ext.pro_found_ascap:
+            pro_name = "BMI and ASCAP"
+
+        evidence.append(Evidence(
+            finding=f"Registered songwriter with {pro_name} ({total_works} works)",
+            source="PRO Registry",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Artist found as registered songwriter with {pro_name}, "
+                   f"{total_works} works registered. "
+                   "Professional songwriters collecting US royalties are registered with PROs.",
+            tags=["pro_registered"],
+        ))
+
+        # PFC publisher check
+        if ext.pro_pfc_publisher_match:
+            evidence.append(Evidence(
+                finding=f"PRO publisher matches known PFC entity",
+                source="PRO Registry",
+                evidence_type="red_flag",
+                strength="strong",
+                detail=f"Works registered under publisher(s) matching known PFC entities: "
+                       f"{', '.join(ext.pro_publishers[:3])}.",
+                tags=["pfc_publisher"],
+            ))
+
+        # Zero songwriter share
+        if ext.pro_zero_songwriter_share:
+            evidence.append(Evidence(
+                finding="0% songwriter share — 100% publisher ownership",
+                source="PRO Registry",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail="Registered works show 0% songwriter share with 100% publisher ownership. "
+                       "This is the structural signature of a work-for-hire / PFC arrangement.",
+                tags=["no_songwriter_share"],
+            ))
+    else:
+        evidence.append(Evidence(
+            finding="Not found in BMI or ASCAP databases",
+            source="PRO Registry",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail="No works registered with BMI or ASCAP. Any professional songwriter "
+                   "collecting royalties in the US will be registered with a PRO.",
+            tags=["no_pro_registration"],
+        ))
+
+    return evidence
+
+
+def _collect_bandcamp_evidence(ext: ExternalData) -> list[Evidence]:
+    """Check for Bandcamp presence from MusicBrainz URLs (Priority 5)."""
+    evidence: list[Evidence] = []
+
+    if ext.musicbrainz_bandcamp_url:
+        evidence.append(Evidence(
+            finding="Artist has Bandcamp page",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Bandcamp presence: {ext.musicbrainz_bandcamp_url}. "
+                   "Bandcamp is a direct-to-fan sales platform. PFC/ghost artists "
+                   "never maintain Bandcamp pages.",
+            tags=["bandcamp_presence"],
+        ))
+
+    if ext.musicbrainz_official_website:
+        evidence.append(Evidence(
+            finding="Artist has official website",
+            source="MusicBrainz",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Official website: {ext.musicbrainz_official_website}",
+            tags=["social_media"],
+        ))
+
+    return evidence
+
+
+def _collect_isrc_evidence(ext: ExternalData) -> list[Evidence]:
+    """Analyze ISRC registrant data (Priority 7)."""
+    evidence: list[Evidence] = []
+
+    if not ext.isrcs:
+        return evidence
+
+    registrants = ext.isrc_registrants
+
+    if len(registrants) == 1:
+        evidence.append(Evidence(
+            finding=f"All tracks share ISRC registrant: {registrants[0]}",
+            source="ISRC Analysis",
+            evidence_type="neutral",
+            strength="weak",
+            detail=f"All {len(ext.isrcs)} tracks use the same ISRC registrant code "
+                   f"'{registrants[0]}'. Normal for single-label artists.",
+            tags=[],
+        ))
+    elif len(registrants) >= 3:
+        evidence.append(Evidence(
+            finding=f"Tracks span {len(registrants)} ISRC registrants",
+            source="ISRC Analysis",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Tracks use {len(registrants)} different ISRC registrant codes: "
+                   f"{', '.join(registrants)}. Multiple registrants suggest releases "
+                   "through different labels/distributors over time.",
+            tags=[],
+        ))
+
+    return evidence
+
+
+def _collect_press_coverage_evidence(ext: ExternalData, artist_monthly_listeners: int = 0) -> list[Evidence]:
+    """Analyze press coverage search results (Priority 6)."""
+    evidence: list[Evidence] = []
+
+    if not ext.press_checked:
+        return evidence
+
+    pubs = ext.press_publications_found
+    hits = ext.press_total_hits
+
+    if len(pubs) >= 2:
+        evidence.append(Evidence(
+            finding=f"Press coverage found in {len(pubs)} publications",
+            source="Press Coverage",
+            evidence_type="green_flag",
+            strength="strong",
+            detail=f"Found coverage in: {', '.join(pubs[:5])}. "
+                   f"Total press hits: {hits}.",
+            tags=["press_coverage"],
+        ))
+    elif len(pubs) == 1:
+        evidence.append(Evidence(
+            finding=f"Press coverage found in {pubs[0]}",
+            source="Press Coverage",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail=f"Found coverage in {pubs[0]}. Total hits: {hits}.",
+            tags=["press_coverage"],
+        ))
+    elif hits > 0:
+        evidence.append(Evidence(
+            finding=f"{hits} press mention(s) but not from major publications",
+            source="Press Coverage",
+            evidence_type="green_flag",
+            strength="weak",
+            detail=f"Found {hits} mention(s) but none from recognized music publications.",
+            tags=["press_coverage"],
+        ))
+    elif artist_monthly_listeners >= 100_000:
+        evidence.append(Evidence(
+            finding="No press coverage despite significant streaming audience",
+            source="Press Coverage",
+            evidence_type="red_flag",
+            strength="weak",
+            detail=f"No press coverage found for an artist with {artist_monthly_listeners:,} "
+                   "monthly listeners. Legitimate artists at this level typically have "
+                   "some coverage from music publications.",
+            tags=["no_press_coverage"],
+        ))
+
+    return evidence
+
+
+def _collect_cowriter_network_evidence(ext: ExternalData, entity_db: "EntityDB | None" = None, artist_name: str = "") -> list[Evidence]:
+    """Check cowriter overlap with flagged artists in entity DB (Priority 1 enhancement)."""
+    evidence: list[Evidence] = []
+
+    if not entity_db or not artist_name:
+        return evidence
+
+    try:
+        overlaps = entity_db.get_cowriter_overlap(artist_name)
+    except Exception:
+        return evidence
+
+    if not overlaps:
+        return evidence
+
+    total_flagged = sum(len(o["flagged_artists"]) for o in overlaps)
+
+    if total_flagged >= 3:
+        sw_names = [o["songwriter"] for o in overlaps if o["songwriter"]]
+        flagged_names = []
+        for o in overlaps:
+            flagged_names.extend(a["name"] for a in o["flagged_artists"][:2])
+        evidence.append(Evidence(
+            finding=f"Shares producers with {total_flagged} flagged artists",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="strong",
+            detail=f"Shared songwriter(s)/producer(s): {', '.join(sw_names[:3])}. "
+                   f"Connected to flagged artists: {', '.join(flagged_names[:5])}.",
+            tags=["cowriter_network"],
+        ))
+    elif total_flagged >= 1:
+        sw_names = [o["songwriter"] for o in overlaps if o["songwriter"]]
+        evidence.append(Evidence(
+            finding=f"Shares producer(s) with {total_flagged} flagged artist(s)",
+            source="Entity DB",
+            evidence_type="red_flag",
+            strength="moderate",
+            detail=f"Shared songwriter(s)/producer(s): {', '.join(sw_names[:3])}.",
+            tags=["cowriter_network"],
         ))
 
     return evidence
@@ -1878,17 +2651,26 @@ def _decide_verdict(
     strong_greens = [e for e in green_flags if e.strength == "strong"]
     moderate_greens = [e for e in green_flags if e.strength == "moderate"]
 
+    # Helper: check if any red flag carries a given tag
+    def _any_red_tag(tag: str) -> bool:
+        return any(tag in e.tags for e in red_flags)
+
+    def _any_green_tag(tag: str) -> bool:
+        return any(tag in e.tags for e in green_flags)
+
     # Rule 1: Known AI artist name → Likely Artificial
-    for r in red_flags:
-        if "known AI artist" in r.finding.lower() or "blocklist" in r.finding.lower() and r.strength == "strong":
-            if r.source == "Blocklist" and "name" in r.finding.lower():
-                decision_path.append("Name matches known AI artist blocklist → Likely Artificial")
-                return Verdict.LIKELY_ARTIFICIAL, "high"
+    if _any_red_tag("known_ai_artist"):
+        decision_path.append("Name matches known AI artist blocklist → Likely Artificial")
+        return Verdict.LIKELY_ARTIFICIAL, "high"
+
+    # Rule 1.5: Deezer AI Content Flag → Likely Artificial
+    if _any_red_tag("ai_generated_music"):
+        decision_path.append("Deezer AI detection flagged content → Likely Artificial")
+        return Verdict.LIKELY_ARTIFICIAL, "high"
 
     # Rule 2: PFC label + content farm patterns → Likely Artificial
-    has_pfc_label = any("PFC blocklist" in r.finding for r in red_flags)
-    has_farm_pattern = any("content farm" in r.finding.lower() or "stream farm" in r.finding.lower()
-                          for r in red_flags)
+    has_pfc_label = _any_red_tag("pfc_label")
+    has_farm_pattern = _any_red_tag("content_farm") or _any_red_tag("stream_farm")
     if has_pfc_label and has_farm_pattern:
         decision_path.append("PFC distributor + content farm pattern → Likely Artificial")
         return Verdict.LIKELY_ARTIFICIAL, "high"
@@ -1898,19 +2680,30 @@ def _decide_verdict(
         decision_path.append(f"{len(strong_reds)} strong red flags, no green flags → Likely Artificial")
         return Verdict.LIKELY_ARTIFICIAL, "medium"
 
+    # Compute weighted totals for rules 4+
+    weak_greens = [e for e in green_flags if e.strength == "weak"]
+    weak_reds = [e for e in red_flags if e.strength == "weak"]
+    total_green_strength = len(strong_greens) * 3 + len(moderate_greens) * 2 + len(weak_greens)
+    total_red_strength = len(strong_reds) * 3 + len(moderate_reds) * 2 + len(weak_reds)
+
     # Rule 4: Strong green flags dominate → high confidence authentic
-    if len(strong_greens) >= 2 and not strong_reds:
-        decision_path.append(f"{len(strong_greens)} strong green flags, no strong red flags → Verified Artist")
+    # Guard: total_red < 4 prevents verification when moderate reds pile up
+    if len(strong_greens) >= 2 and not strong_reds and total_red_strength < 4:
+        decision_path.append(f"{len(strong_greens)} strong green flags, no strong red flags, "
+                             f"total_red={total_red_strength} < 4 → Verified Artist")
         return Verdict.VERIFIED_ARTIST, "high"
 
-    # Rule 5: Good platform presence + fans + no strong red flags → Verified
-    if presence.count() >= 2 and presence.deezer_fans >= 50_000 and not strong_reds:
-        decision_path.append(f"Multi-platform + {presence.deezer_fans:,} fans, no strong reds → Verified Artist")
+    # Rule 5: Multi-platform + genuine fans + no strong reds → Verified
+    has_genuine_fans_strong = any(
+        "genuine_fans" in e.tags and e.strength == "strong"
+        for e in green_flags
+    )
+    if presence.count() >= 3 and has_genuine_fans_strong and not strong_reds:
+        decision_path.append(f"{presence.count()} platforms + genuine fans (strong), "
+                             f"no strong reds → Verified Artist")
         return Verdict.VERIFIED_ARTIST, "high"
 
-    # Rule 6: Moderate green flags dominate
-    total_green_strength = len(strong_greens) * 3 + len(moderate_greens) * 2 + len([e for e in green_flags if e.strength == "weak"])
-    total_red_strength = len(strong_reds) * 3 + len(moderate_reds) * 2 + len([e for e in red_flags if e.strength == "weak"])
+    # Rule 6: Green strongly outweighs red
 
     if total_green_strength >= total_red_strength * 2 and total_green_strength >= 4:
         decision_path.append(f"Green evidence ({total_green_strength}) strongly outweighs red ({total_red_strength}) → Likely Authentic")
@@ -1921,10 +2714,11 @@ def _decide_verdict(
         decision_path.append(f"Red evidence ({total_red_strength}) strongly outweighs green ({total_green_strength}) → Suspicious")
         return Verdict.SUSPICIOUS, "medium"
 
-    # Rule 8: PFC label alone → Suspicious
+    # Rule 8: PFC label alone → Suspicious (medium confidence —
+    # being on a confirmed PFC label is not a weak signal)
     if has_pfc_label:
         decision_path.append("PFC distributor match (without other strong signals) → Suspicious")
-        return Verdict.SUSPICIOUS, "low"
+        return Verdict.SUSPICIOUS, "medium"
 
     # Rule 9: More green than red → Likely Authentic
     if total_green_strength > total_red_strength:
@@ -1936,9 +2730,18 @@ def _decide_verdict(
         decision_path.append(f"Red ({total_red_strength}) > Green ({total_green_strength}) → Suspicious")
         return Verdict.SUSPICIOUS, "low"
 
-    # Default: Inconclusive
-    decision_path.append("Mixed or insufficient evidence → Inconclusive")
-    return Verdict.INCONCLUSIVE, "low"
+    # Default: Distinguish "not enough data" from "conflicting data"
+    total_flags = len(red_flags) + len(green_flags)
+    if total_flags < 5:
+        decision_path.append(f"Only {total_flags} flags collected — insufficient data to judge")
+        return Verdict.INSUFFICIENT_DATA, "low"
+    elif total_green_strength >= 4 and total_red_strength >= 4:
+        decision_path.append(f"Green ({total_green_strength}) and Red ({total_red_strength}) "
+                             "both substantial — conflicting signals")
+        return Verdict.CONFLICTING_SIGNALS, "low"
+    else:
+        decision_path.append("Mixed or insufficient evidence → Inconclusive")
+        return Verdict.INCONCLUSIVE, "low"
 
 
 # ---------------------------------------------------------------------------
@@ -1971,6 +2774,7 @@ def _collect_entity_db_evidence(
                 strength="strong",
                 detail=f"'{artist.name}' was previously flagged as confirmed_bad. "
                        f"Notes: {db_artist.get('notes', 'none')}",
+                tags=["entity_confirmed_bad"],
             ))
         elif status == "suspected":
             evidence.append(Evidence(
@@ -1980,6 +2784,7 @@ def _collect_entity_db_evidence(
                 strength="moderate",
                 detail=f"'{artist.name}' was flagged as suspected in a prior scan. "
                        f"Notes: {db_artist.get('notes', 'none')}",
+                tags=["entity_suspected"],
             ))
         elif status == "cleared":
             evidence.append(Evidence(
@@ -1989,6 +2794,7 @@ def _collect_entity_db_evidence(
                 strength="moderate",
                 detail=f"'{artist.name}' was manually cleared as legitimate. "
                        f"Notes: {db_artist.get('notes', 'none')}",
+                tags=["entity_cleared"],
             ))
 
     # 2. Check labels against entity DB
@@ -2012,6 +2818,7 @@ def _collect_entity_db_evidence(
             strength="strong",
             detail=f"Artist releases through label(s) that are confirmed bad actors "
                    f"in the entity intelligence database.",
+            tags=["entity_bad_label"],
         ))
     if suspected_labels:
         evidence.append(Evidence(
@@ -2021,6 +2828,7 @@ def _collect_entity_db_evidence(
             strength="moderate",
             detail=f"Artist releases through label(s) that are suspected in the "
                    f"entity intelligence database.",
+            tags=["entity_bad_label"],
         ))
 
     # 3. Check contributors against entity DB
@@ -2044,6 +2852,7 @@ def _collect_entity_db_evidence(
             strength="strong",
             detail=f"Track credits include songwriter(s)/producer(s) confirmed as bad "
                    f"actors in the entity intelligence database.",
+            tags=["entity_bad_songwriter"],
         ))
     if suspected_writers:
         evidence.append(Evidence(
@@ -2053,6 +2862,7 @@ def _collect_entity_db_evidence(
             strength="moderate",
             detail=f"Track credits include songwriter(s)/producer(s) flagged as "
                    f"suspected in the entity intelligence database.",
+            tags=["entity_bad_songwriter"],
         ))
 
     # 4. Check cowriter network — is this artist connected to known bad actors?
@@ -2073,6 +2883,7 @@ def _collect_entity_db_evidence(
                        f"{', '.join(names)}"
                        f"{f' and {len(bad_connections) - 5} more' if len(bad_connections) > 5 else ''}. "
                        f"This network pattern is common in PFC operations.",
+                tags=["entity_bad_network"],
             ))
         elif len(bad_connections) >= 1:
             names = [cw["name"] for cw in bad_connections]
@@ -2082,9 +2893,78 @@ def _collect_entity_db_evidence(
                 evidence_type="red_flag",
                 strength="weak",
                 detail=f"Shared songwriter/producer connections to: {', '.join(names)}.",
+                tags=["entity_bad_network"],
             ))
 
     return evidence
+
+
+# ---------------------------------------------------------------------------
+# Fast Mode — skip external APIs for obviously legitimate artists
+# ---------------------------------------------------------------------------
+
+def is_obviously_legitimate(artist: ArtistInfo) -> bool:
+    """Check if an artist is obviously legitimate from Spotify/Deezer data alone.
+
+    For large playlists, this allows skipping external API calls for artists
+    that clearly don't need them.  All conditions must be met:
+      - followers >= 500,000
+      - has Wikipedia link in external_urls
+      - has 3+ genres assigned
+      - has 5+ albums
+      - not on any blocklist
+    """
+    if artist.followers < 500_000:
+        return False
+    urls = artist.external_urls
+    has_wiki = any("wikipedia" in v.lower() for v in urls.values()) if urls else False
+    if not has_wiki:
+        return False
+    if len(artist.genres) < 3:
+        return False
+    if artist.album_count < 5:
+        return False
+    # Check blocklists
+    name_lower = artist.name.lower()
+    if name_lower in known_ai_artists():
+        return False
+    labels_lower = {l.lower() for l in artist.labels}
+    if labels_lower & pfc_distributors():
+        return False
+    return True
+
+
+def fast_mode_evaluation(artist: ArtistInfo) -> ArtistEvaluation:
+    """Return a pre-built VERIFIED ARTIST evaluation for obviously legitimate artists."""
+    presence = PlatformPresence(spotify=True)
+    if artist.deezer_fans > 0:
+        presence.deezer = True
+        presence.deezer_fans = artist.deezer_fans
+    green_flags = [
+        Evidence(
+            finding=f"{artist.followers:,} followers, {artist.album_count} albums, "
+                    f"{len(artist.genres)} genres, Wikipedia link",
+            source="Fast Mode",
+            evidence_type="green_flag",
+            strength="strong",
+            detail="Artist meets all Fast Mode criteria for obvious legitimacy: "
+                   "500K+ followers, Wikipedia link, 3+ genres, 5+ albums, clean blocklists.",
+            tags=["genuine_fans", "multi_platform"],
+        ),
+    ]
+    return ArtistEvaluation(
+        artist_id=artist.artist_id,
+        artist_name=artist.name,
+        verdict=Verdict.VERIFIED_ARTIST,
+        confidence="high",
+        platform_presence=presence,
+        red_flags=[],
+        green_flags=green_flags,
+        neutral_notes=[],
+        decision_path=["Fast Mode: all legitimacy criteria met → Verified Artist"],
+        labels=artist.labels,
+        contributors=artist.contributors,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -2104,7 +2984,7 @@ def evaluate_artist(
     Args:
         artist: Core artist data (from Deezer/Spotify)
         external: Optional results from Standard-tier API lookups
-                  (Genius, Discogs, Setlist.fm, Bandsintown, MusicBrainz)
+                  (Genius, Discogs, Setlist.fm, MusicBrainz)
         entity_db: Optional entity intelligence database for prior knowledge
     """
     ext = external or ExternalData()
@@ -2125,6 +3005,10 @@ def evaluate_artist(
         presence.musicbrainz = True
     if ext.lastfm_found:
         presence.lastfm = True
+    if ext.wikipedia_found:
+        presence.wikipedia = True
+    if ext.songkick_found:
+        presence.songkick = True
 
     # Re-generate platform evidence with updated counts
     platforms_found = presence.count()
@@ -2137,6 +3021,7 @@ def evaluate_artist(
             strength="strong",
             detail=f"Artist verified on: {', '.join(presence.names())}. "
                    "Broad cross-platform presence is very strong proof of a real artist.",
+            tags=["multi_platform"],
         ))
     elif platforms_found >= 3:
         platform_ev.append(Evidence(
@@ -2146,6 +3031,7 @@ def evaluate_artist(
             strength="strong",
             detail=f"Artist exists on: {', '.join(presence.names())}. "
                    "Artists present on multiple platforms are very likely real.",
+            tags=["multi_platform"],
         ))
     elif platforms_found >= 2:
         platform_ev.append(Evidence(
@@ -2154,6 +3040,7 @@ def evaluate_artist(
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Found on: {', '.join(presence.names())}.",
+            tags=["multi_platform"],
         ))
     elif platforms_found <= 1:
         platform_ev.append(Evidence(
@@ -2163,6 +3050,7 @@ def evaluate_artist(
             strength="weak",
             detail="Artist only verified on a single platform. "
                    "Could be new or could be a fabricated artist.",
+            tags=["single_platform"],
         ))
 
     all_evidence.extend(platform_ev)
@@ -2186,10 +3074,34 @@ def evaluate_artist(
     all_evidence.extend(_collect_identity_evidence(ext))
     all_evidence.extend(_collect_lastfm_evidence(ext))
     all_evidence.extend(_collect_touring_geography_evidence(ext))
+    all_evidence.extend(_collect_wikipedia_evidence(ext))
+    all_evidence.extend(_collect_songkick_evidence(ext))
+
+    # New evidence sources (Priorities 2-7)
+    all_evidence.extend(_collect_deezer_ai_evidence(ext))
+    all_evidence.extend(_collect_youtube_evidence(ext, artist.monthly_listeners))
+    all_evidence.extend(_collect_pro_registry_evidence(ext))
+    all_evidence.extend(_collect_bandcamp_evidence(ext))
+    all_evidence.extend(_collect_isrc_evidence(ext))
+
+    # Pre-seeded evidence from known entity pre-check (Priority 1)
+    for pre in ext.pre_seeded_evidence:
+        all_evidence.append(Evidence(
+            finding=pre.get("finding", ""),
+            source=pre.get("source", "Blocklist"),
+            evidence_type=pre.get("evidence_type", "red_flag"),
+            strength=pre.get("strength", "moderate"),
+            detail=pre.get("detail", ""),
+            tags=pre.get("tags", []),
+        ))
+
+    # Press coverage (Priority 6)
+    all_evidence.extend(_collect_press_coverage_evidence(ext, artist.monthly_listeners))
 
     # Entity intelligence database (accumulated from prior scans)
     if entity_db:
         all_evidence.extend(_collect_entity_db_evidence(artist, entity_db))
+        all_evidence.extend(_collect_cowriter_network_evidence(ext, entity_db, artist.name))
 
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]

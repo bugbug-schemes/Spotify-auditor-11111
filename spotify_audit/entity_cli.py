@@ -223,8 +223,6 @@ def lookup(ctx: click.Context, entity_type: str, name: str) -> None:
             ids.append(f"Discogs:{entity['discogs_id']}")
         if entity.get("setlistfm_id"):
             ids.append(f"Setlist.fm:{entity['setlistfm_id']}")
-        if entity.get("bandsintown_id"):
-            ids.append(f"BIT:{entity['bandsintown_id']}")
         if entity.get("lastfm_url"):
             ids.append(f"Last.fm:{entity['lastfm_url']}")
         if ids:
@@ -235,7 +233,7 @@ def lookup(ctx: click.Context, entity_type: str, name: str) -> None:
             ("found_spotify", "Spotify"), ("found_deezer", "Deezer"),
             ("found_musicbrainz", "MusicBrainz"), ("found_genius", "Genius"),
             ("found_discogs", "Discogs"), ("found_setlistfm", "Setlist.fm"),
-            ("found_bandsintown", "Bandsintown"), ("found_lastfm", "Last.fm"),
+            ("found_lastfm", "Last.fm"),
         ]
         found = [name for col, name in api_names if entity.get(col)]
         missing = [name for col, name in api_names if not entity.get(col)]

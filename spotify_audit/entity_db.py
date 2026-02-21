@@ -74,7 +74,6 @@ CREATE TABLE IF NOT EXISTS artists (
     genius_id       INTEGER,
     discogs_id      INTEGER,
     setlistfm_id    TEXT,
-    bandsintown_id  TEXT,
     lastfm_url      TEXT,
     -- Per-API found flags
     found_spotify   INTEGER DEFAULT 0,
@@ -83,7 +82,6 @@ CREATE TABLE IF NOT EXISTS artists (
     found_genius    INTEGER DEFAULT 0,
     found_discogs   INTEGER DEFAULT 0,
     found_setlistfm INTEGER DEFAULT 0,
-    found_bandsintown INTEGER DEFAULT 0,
     found_lastfm    INTEGER DEFAULT 0,
     platform_count  INTEGER DEFAULT 0,
     -- Threat & verdict
@@ -91,6 +89,8 @@ CREATE TABLE IF NOT EXISTS artists (
     threat_category REAL,            -- 1, 1.5, 2, 3, 4
     latest_verdict  TEXT,            -- e.g. "Likely Artificial"
     latest_confidence TEXT,
+    scan_count      INTEGER DEFAULT 0,  -- number of times scanned
+    auto_promoted_at TEXT,               -- ISO timestamp of auto-promotion
     country         TEXT,
     genres          TEXT,             -- JSON array
     deezer_fans     INTEGER,
@@ -225,6 +225,7 @@ class EntityDB:
         self._conn.row_factory = sqlite3.Row
         self._conn.execute("PRAGMA journal_mode=WAL")
         self._conn.execute("PRAGMA foreign_keys=ON")
+        self._in_batch = False
         self._init_schema()
 
     def _init_schema(self) -> None:
@@ -232,7 +233,6 @@ class EntityDB:
         # Migrations: add columns that may be missing on older DBs
         for col, typ in [
             ("setlistfm_id", "TEXT"),
-            ("bandsintown_id", "TEXT"),
             ("lastfm_url", "TEXT"),
             ("found_spotify", "INTEGER DEFAULT 0"),
             ("found_deezer", "INTEGER DEFAULT 0"),
@@ -240,12 +240,13 @@ class EntityDB:
             ("found_genius", "INTEGER DEFAULT 0"),
             ("found_discogs", "INTEGER DEFAULT 0"),
             ("found_setlistfm", "INTEGER DEFAULT 0"),
-            ("found_bandsintown", "INTEGER DEFAULT 0"),
             ("found_lastfm", "INTEGER DEFAULT 0"),
             ("platform_count", "INTEGER DEFAULT 0"),
             ("deezer_fans", "INTEGER"),
             ("lastfm_listeners", "INTEGER"),
             ("lastfm_playcount", "INTEGER"),
+            ("scan_count", "INTEGER DEFAULT 0"),
+            ("auto_promoted_at", "TEXT"),
         ]:
             try:
                 self._conn.execute(f"ALTER TABLE artists ADD COLUMN {col} {typ}")
@@ -259,12 +260,36 @@ class EntityDB:
     @contextmanager
     def _tx(self):
         """Transaction context manager."""
+        if self._in_batch:
+            # Inside a batch — skip per-call commit
+            yield self._conn
+            return
         try:
             yield self._conn
             self._conn.commit()
         except Exception:
             self._conn.rollback()
             raise
+
+    @contextmanager
+    def batch(self):
+        """Wrap multiple operations in a single transaction for performance.
+
+        Usage:
+            with entity_db.batch():
+                entity_db.upsert_artist(...)
+                entity_db.upsert_label(...)
+                entity_db.link_artist_label(...)
+        """
+        self._in_batch = True
+        try:
+            yield
+            self._conn.commit()
+        except Exception:
+            self._conn.rollback()
+            raise
+        finally:
+            self._in_batch = False
 
     # ------------------------------------------------------------------
     # Artists
@@ -280,7 +305,6 @@ class EntityDB:
         genius_id: int | None = None,
         discogs_id: int | None = None,
         setlistfm_id: str | None = None,
-        bandsintown_id: str | None = None,
         lastfm_url: str | None = None,
         # Per-API found flags
         found_spotify: bool | None = None,
@@ -289,7 +313,6 @@ class EntityDB:
         found_genius: bool | None = None,
         found_discogs: bool | None = None,
         found_setlistfm: bool | None = None,
-        found_bandsintown: bool | None = None,
         found_lastfm: bool | None = None,
         platform_count: int | None = None,
         # Metrics
@@ -318,7 +341,6 @@ class EntityDB:
         if genius_id: optional["genius_id"] = genius_id
         if discogs_id: optional["discogs_id"] = discogs_id
         if setlistfm_id: optional["setlistfm_id"] = setlistfm_id
-        if bandsintown_id: optional["bandsintown_id"] = bandsintown_id
         if lastfm_url: optional["lastfm_url"] = lastfm_url
         if found_spotify is not None: optional["found_spotify"] = int(found_spotify)
         if found_deezer is not None: optional["found_deezer"] = int(found_deezer)
@@ -326,7 +348,6 @@ class EntityDB:
         if found_genius is not None: optional["found_genius"] = int(found_genius)
         if found_discogs is not None: optional["found_discogs"] = int(found_discogs)
         if found_setlistfm is not None: optional["found_setlistfm"] = int(found_setlistfm)
-        if found_bandsintown is not None: optional["found_bandsintown"] = int(found_bandsintown)
         if found_lastfm is not None: optional["found_lastfm"] = int(found_lastfm)
         if platform_count is not None: optional["platform_count"] = platform_count
         if deezer_fans is not None: optional["deezer_fans"] = deezer_fans
@@ -383,6 +404,82 @@ class EntityDB:
             "SELECT * FROM artists WHERE id = ?", (artist_id,)
         ).fetchone()
         return dict(row) if row else None
+
+    def increment_scan_count(self, name: str, verdict: str = "", confidence: str = "") -> int:
+        """Increment scan_count for an artist and update verdict. Returns new count."""
+        norm = _normalize(name)
+        now = _now_iso()
+        with self._tx():
+            row = self._conn.execute(
+                "SELECT id, scan_count FROM artists WHERE normalized_name = ?",
+                (norm,),
+            ).fetchone()
+            if row:
+                new_count = (row["scan_count"] or 0) + 1
+                updates = ["scan_count = ?", "last_seen = ?"]
+                params: list = [new_count, now]
+                if verdict:
+                    updates.append("latest_verdict = ?")
+                    params.append(verdict)
+                if confidence:
+                    updates.append("latest_confidence = ?")
+                    params.append(confidence)
+                params.append(row["id"])
+                self._conn.execute(
+                    f"UPDATE artists SET {', '.join(updates)} WHERE id = ?",
+                    params,
+                )
+                return new_count
+        return 0
+
+    def get_cowriter_overlap(self, artist_name: str, min_shared: int = 1) -> list[dict]:
+        """Find artists sharing credited producers/songwriters with flagged artists.
+
+        Returns list of {songwriter, flagged_artists: [...], status} dicts.
+        """
+        norm = _normalize(artist_name)
+        row = self._conn.execute(
+            "SELECT id FROM artists WHERE normalized_name = ?", (norm,)
+        ).fetchone()
+        if not row:
+            return []
+
+        artist_id = row["id"]
+
+        # Get this artist's songwriters
+        sws = self._conn.execute(
+            "SELECT songwriter_id FROM artist_songwriters WHERE artist_id = ?",
+            (artist_id,),
+        ).fetchall()
+        sw_ids = [r["songwriter_id"] for r in sws]
+
+        if not sw_ids:
+            return []
+
+        overlaps: list[dict] = []
+        for sw_id in sw_ids:
+            # Find other artists sharing this songwriter
+            others = self._conn.execute(
+                """SELECT a.name, a.threat_status, s.name as sw_name
+                   FROM artist_songwriters asw
+                   JOIN artists a ON a.id = asw.artist_id
+                   JOIN songwriters s ON s.id = asw.songwriter_id
+                   WHERE asw.songwriter_id = ?
+                     AND asw.artist_id != ?
+                     AND a.threat_status IN ('confirmed_bad', 'suspected')""",
+                (sw_id, artist_id),
+            ).fetchall()
+
+            if len(others) >= min_shared:
+                overlaps.append({
+                    "songwriter": others[0]["sw_name"] if others else "",
+                    "flagged_artists": [
+                        {"name": r["name"], "status": r["threat_status"]}
+                        for r in others
+                    ],
+                })
+
+        return overlaps
 
     # ------------------------------------------------------------------
     # Labels
@@ -517,6 +614,11 @@ class EntityDB:
     # Relationship links
     # ------------------------------------------------------------------
 
+    def _maybe_commit(self) -> None:
+        """Commit unless inside a batch()."""
+        if not self._in_batch:
+            self._conn.commit()
+
     def link_artist_label(
         self, artist_id: int, label_id: int, source: str = ""
     ) -> None:
@@ -527,7 +629,7 @@ class EntityDB:
                VALUES (?,?,?,?)""",
             (artist_id, label_id, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     def link_artist_songwriter(
         self, artist_id: int, songwriter_id: int,
@@ -540,7 +642,7 @@ class EntityDB:
                VALUES (?,?,?,?,?)""",
             (artist_id, songwriter_id, role, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     def link_artist_publisher(
         self, artist_id: int, publisher_id: int, source: str = ""
@@ -552,7 +654,7 @@ class EntityDB:
                VALUES (?,?,?,?)""",
             (artist_id, publisher_id, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     def link_artist_similar(
         self, artist_id: int, similar_artist_id: int, source: str = ""
@@ -564,7 +666,7 @@ class EntityDB:
                VALUES (?,?,?,?)""",
             (artist_id, similar_artist_id, source, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     # ------------------------------------------------------------------
     # Observations
@@ -590,7 +692,7 @@ class EntityDB:
             (entity_type, entity_id, obs_type, finding, detail,
              source, strength, scan_id, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
         return cur.lastrowid
 
     def get_observations(
@@ -622,7 +724,7 @@ class EntityDB:
                VALUES (?,?,?,?,?)""",
             (playlist_id, playlist_name, scan_tier, artist_count, now),
         )
-        self._conn.commit()
+        self._maybe_commit()
         return cur.lastrowid
 
     def complete_scan(self, scan_id: int) -> None:
@@ -630,7 +732,7 @@ class EntityDB:
         self._conn.execute(
             "UPDATE scans SET completed_at = ? WHERE id = ?", (now, scan_id)
         )
-        self._conn.commit()
+        self._maybe_commit()
 
     # ------------------------------------------------------------------
     # Queries — entity networks
@@ -844,7 +946,6 @@ class EntityDB:
         genius = profile.get("genius", {})
         discogs = profile.get("discogs", {})
         setlistfm = profile.get("setlistfm", {})
-        bandsintown = profile.get("bandsintown", {})
         lastfm = profile.get("lastfm", {})
 
         # Per-API found flags
@@ -853,12 +954,11 @@ class EntityDB:
         f_genius = bool(genius.get("found"))
         f_discogs = bool(discogs.get("found"))
         f_setlistfm = bool(setlistfm.get("found"))
-        f_bandsintown = bool(bandsintown.get("found"))
         f_lastfm = bool(lastfm.get("found"))
 
         platform_count = profile.get("platform_count") or sum([
             f_deezer, f_mb, f_genius, f_discogs,
-            f_setlistfm, f_bandsintown, f_lastfm,
+            f_setlistfm, f_lastfm,
         ])
 
         artist_id = self.upsert_artist(
@@ -869,7 +969,6 @@ class EntityDB:
             genius_id=genius.get("genius_id") if f_genius else None,
             discogs_id=discogs.get("discogs_id") if f_discogs else None,
             setlistfm_id=setlistfm.get("setlistfm_id") or setlistfm.get("mbid") if f_setlistfm else None,
-            bandsintown_id=bandsintown.get("bandsintown_id") if f_bandsintown else None,
             lastfm_url=lastfm.get("url") if f_lastfm else None,
             # Found flags
             found_deezer=f_deezer,
@@ -877,7 +976,6 @@ class EntityDB:
             found_genius=f_genius,
             found_discogs=f_discogs,
             found_setlistfm=f_setlistfm,
-            found_bandsintown=f_bandsintown,
             found_lastfm=f_lastfm,
             platform_count=platform_count,
             # Metrics

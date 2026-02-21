@@ -14,6 +14,10 @@ from dataclasses import dataclass, field
 
 import requests
 
+from spotify_audit.name_matching import (
+    similarity_score, MatchResult, log_match,
+)
+
 logger = logging.getLogger(__name__)
 
 LASTFM_BASE = "https://ws.audioscrobbler.com/2.0/"
@@ -44,6 +48,11 @@ class LastfmClient:
         self.enabled = bool(api_key)
         self._session = requests.Session()
         self._session.headers["User-Agent"] = "spotify-audit/0.3 (research tool)"
+        adapter = requests.adapters.HTTPAdapter(
+            pool_connections=10, pool_maxsize=10,
+        )
+        self._session.mount("https://", adapter)
+        self._session.mount("http://", adapter)
 
     def _get(self, method: str, **params) -> dict | None:
         """Make a Last.fm API call."""
@@ -66,18 +75,38 @@ class LastfmClient:
         finally:
             time.sleep(self.delay)
 
-    def get_artist_info(self, name: str) -> LastfmArtist | None:
-        """Get artist info including listeners, playcount, bio, tags."""
+    def get_artist_info(self, name: str, lastfm_name: str | None = None) -> LastfmArtist | None:
+        """Get artist info including listeners, playcount, bio, tags.
+
+        Args:
+            name: Artist name to search for.
+            lastfm_name: Optional Last.fm artist name from MusicBrainz URL bridging.
+        """
         if not self.enabled:
             return None
 
-        data = self._get("artist.getinfo", artist=name, autocorrect="1")
+        # Use bridged name if available (from MusicBrainz Last.fm URL)
+        search_name = lastfm_name or name
+
+        data = self._get("artist.getinfo", artist=search_name, autocorrect="1")
         if not data or "artist" not in data:
+            log_match("Last.fm", name, MatchResult(found=False))
             return None
 
         a = data["artist"]
+        returned_name = a.get("name", name)
+
+        # Log match quality (Last.fm autocorrect may have changed the name)
+        confidence = similarity_score(name, returned_name)
+        method = "platform_id" if lastfm_name else "autocorrect"
+        log_match("Last.fm", name, MatchResult(
+            found=True, confidence=confidence,
+            matched_name=returned_name,
+            match_method=method,
+        ))
+
         artist = LastfmArtist(
-            name=a.get("name", name),
+            name=returned_name,
             mbid=a.get("mbid", ""),
             url=a.get("url", ""),
         )

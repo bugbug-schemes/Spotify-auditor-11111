@@ -66,8 +66,8 @@ def analyze(data: dict) -> str:
     all_artists = sorted(artist_playlists.keys())
 
     # Load blocklists
-    known_ai = {n.lower(): n for n in known_ai_artists()}
-    known_sw = {n.lower(): n for n in pfc_songwriters()}
+    known_ai = known_ai_artists()  # already lowercased frozenset
+    known_sw = pfc_songwriters()  # already lowercased frozenset
 
     # === Header ===
     out("=" * 70)

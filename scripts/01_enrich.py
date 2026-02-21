@@ -35,7 +35,6 @@ from spotify_audit.musicbrainz_client import MusicBrainzClient
 from spotify_audit.genius_client import GeniusClient
 from spotify_audit.discogs_client import DiscogsClient
 from spotify_audit.setlistfm_client import SetlistFmClient
-from spotify_audit.bandsintown_client import BandsintownClient
 from spotify_audit.lastfm_client import LastfmClient
 from scripts.utils.rate_limiter import get_limiter, API_LIMITERS
 
@@ -70,7 +69,7 @@ def _is_enriched(artist_name: str) -> bool:
             data = json.load(f)
         # Check all 7 platforms have been attempted
         for platform in ["musicbrainz", "deezer", "genius", "discogs",
-                         "setlistfm", "lastfm", "bandsintown"]:
+                         "setlistfm", "lastfm"]:
             if platform not in data:
                 return False
         return True
@@ -279,28 +278,6 @@ def enrich_lastfm(lastfm: LastfmClient, name: str) -> dict:
     return result
 
 
-def enrich_bandsintown(bit: BandsintownClient, name: str) -> dict:
-    """Query Bandsintown for artist data."""
-    result = {"found": False, "raw": None}
-    if not bit.enabled:
-        result["status"] = "not_configured"
-        return result
-    artist = _retry_call(bit.get_artist, name, api_name="bandsintown")
-    if not artist:
-        return result
-    result["found"] = True
-    artist = _retry_call(bit.enrich, artist, api_name="bandsintown") or artist
-    result.update({
-        "tracker_count": artist.tracker_count,
-        "past_events": artist.past_events,
-        "upcoming_events": artist.upcoming_events,
-        "facebook_page_url": artist.facebook_page_url,
-        "social_links": artist.social_links,
-        "on_tour": artist.on_tour,
-    })
-    return result
-
-
 def enrich_artist(
     name: str,
     seed: dict,
@@ -310,9 +287,8 @@ def enrich_artist(
     discogs: DiscogsClient,
     setlistfm: SetlistFmClient,
     lastfm: LastfmClient,
-    bit: BandsintownClient,
 ) -> dict:
-    """Run all 7 API lookups for a single artist."""
+    """Run all 6 API lookups for a single artist."""
     profile = {
         "artist_name": name,
         "artist_id": _safe_id(name),
@@ -321,33 +297,30 @@ def enrich_artist(
     }
 
     # Query in order per pipeline spec
-    logger.debug("  [1/7] MusicBrainz...")
+    logger.debug("  [1/6] MusicBrainz...")
     profile["musicbrainz"] = enrich_musicbrainz(mb, name)
 
-    logger.debug("  [2/7] Deezer...")
+    logger.debug("  [2/6] Deezer...")
     profile["deezer"] = enrich_deezer(dz, name)
 
-    logger.debug("  [3/7] Genius...")
+    logger.debug("  [3/6] Genius...")
     profile["genius"] = enrich_genius(genius, name)
 
-    logger.debug("  [4/7] Discogs...")
+    logger.debug("  [4/6] Discogs...")
     profile["discogs"] = enrich_discogs(discogs, name)
 
     # Use MBID from MusicBrainz for Setlist.fm if available
     mbid = profile["musicbrainz"].get("mbid", "")
-    logger.debug("  [5/7] Setlist.fm...")
+    logger.debug("  [5/6] Setlist.fm...")
     profile["setlistfm"] = enrich_setlistfm(setlistfm, name, mbid=mbid)
 
-    logger.debug("  [6/7] Last.fm...")
+    logger.debug("  [6/6] Last.fm...")
     profile["lastfm"] = enrich_lastfm(lastfm, name)
-
-    logger.debug("  [7/7] Bandsintown...")
-    profile["bandsintown"] = enrich_bandsintown(bit, name)
 
     # Compute summary
     platforms_found = []
     platforms_missing = []
-    for p in ["musicbrainz", "deezer", "genius", "discogs", "setlistfm", "lastfm", "bandsintown"]:
+    for p in ["musicbrainz", "deezer", "genius", "discogs", "setlistfm", "lastfm"]:
         if profile[p].get("found", False):
             platforms_found.append(p)
         else:
@@ -403,8 +376,6 @@ def main():
     discogs = DiscogsClient(token=os.getenv("DISCOGS_TOKEN", ""), delay=1.0)
     setlistfm = SetlistFmClient(api_key=os.getenv("SETLISTFM_API_KEY", ""), delay=0.6)
     lastfm = LastfmClient(api_key=os.getenv("LASTFM_API_KEY", ""), delay=0.25)
-    bit = BandsintownClient(app_id=os.getenv("BANDSINTOWN_APP_ID", ""), delay=1.0)
-
     # Show configured APIs
     configured = ["MusicBrainz", "Deezer"]
     if genius.enabled:
@@ -414,8 +385,6 @@ def main():
         configured.append("Setlist.fm")
     if lastfm.enabled:
         configured.append("Last.fm")
-    if bit.enabled:
-        configured.append("Bandsintown")
     logger.info("APIs configured: %s", ", ".join(configured))
 
     # Process artists
@@ -445,7 +414,7 @@ def main():
 
         try:
             profile = enrich_artist(
-                name, seed, mb, dz, genius, discogs, setlistfm, lastfm, bit,
+                name, seed, mb, dz, genius, discogs, setlistfm, lastfm,
             )
 
             # Save immediately

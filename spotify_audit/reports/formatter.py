@@ -645,6 +645,19 @@ def _build_explanation(ev: ArtistEvaluation) -> str:
         parts.append(f"We found {green_count} green flags and {red_count} red flags.")
         return " ".join(parts)
 
+    elif verdict == Verdict.INSUFFICIENT_DATA:
+        parts = [f"We don't have enough data to evaluate {name}."]
+        total = green_count + red_count
+        parts.append(f"Only {total} signal{'s' if total != 1 else ''} collected — too few to draw a conclusion.")
+        parts.append("This often happens with brand-new or very niche artists who haven't built an online footprint yet.")
+        return " ".join(parts)
+
+    elif verdict == Verdict.CONFLICTING_SIGNALS:
+        parts = [f"The evidence on {name} is contradictory."]
+        parts.append(f"We found {green_count} positive and {red_count} negative signals, both substantial.")
+        parts.append("This can happen with real artists on PFC-associated labels, or legitimate acts with unusual release patterns.")
+        return " ".join(parts)
+
     elif verdict == Verdict.INCONCLUSIVE:
         parts = [f"We couldn't make a confident determination about {name}."]
         parts.append(f"The evidence is mixed: {green_count} positive and {red_count} negative signals.")
@@ -665,7 +678,7 @@ def _build_explanation(ev: ArtistEvaluation) -> str:
         if strong_reds >= 3:
             parts.append(f"We found {strong_reds} strong red flags.")
         for e in ev.red_flags:
-            if "PFC" in e.finding or "content farm" in e.finding.lower():
+            if e.tags and {"pfc_label", "content_farm"} & set(e.tags):
                 parts.append("The release pattern and distributor match known content farm operations.")
                 break
         return " ".join(parts)
@@ -701,10 +714,6 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
         fields.append(f"<strong>Tours:</strong> {_esc(', '.join(ext.setlistfm_tour_names[:3]))}")
     if ext.setlistfm_venue_countries:
         fields.append(f"<strong>Countries:</strong> {_esc(', '.join(ext.setlistfm_venue_countries[:5]))}")
-    if ext.bandsintown_past_events:
-        fields.append(f"<strong>BIT events:</strong> {ext.bandsintown_past_events}")
-    if ext.bandsintown_tracker_count:
-        fields.append(f"<strong>BIT trackers:</strong> {ext.bandsintown_tracker_count:,}")
     if ext.musicbrainz_type:
         fields.append(f"<strong>Type:</strong> {_esc(ext.musicbrainz_type)}")
     if ext.musicbrainz_country:
@@ -726,8 +735,6 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
         social.append("Instagram")
     if ext.genius_twitter_name:
         social.append("Twitter/X")
-    if ext.bandsintown_facebook_url:
-        social.append("Facebook(BIT)")
     for rt in ext.musicbrainz_urls:
         social.append(f"MB:{rt}")
     if social:
