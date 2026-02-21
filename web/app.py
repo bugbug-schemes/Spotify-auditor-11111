@@ -68,6 +68,8 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             deep=deep,
             config=config,
             on_progress=on_progress,
+            use_cache=False,
+            use_entity_db=False,
         )
         html = to_html(playlist_report)
         scans[scan_id].update({
@@ -78,12 +80,14 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             "message": f"Done! Analyzed {playlist_report.total_unique_artists} artists.",
         })
     except Exception as exc:
+        import traceback
+        tb = traceback.format_exc()
         logger.exception("Scan %s failed", scan_id)
         scans[scan_id].update({
             "status": "error",
             "phase": "error",
             "error": str(exc),
-            "message": f"Error: {exc}",
+            "message": f"Error: {exc}\n\nTraceback:\n{tb}",
         })
     finally:
         with _scans_lock:

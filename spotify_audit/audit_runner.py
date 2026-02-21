@@ -326,6 +326,7 @@ def run_audit(
     config: Optional[AuditConfig] = None,
     on_progress: Optional[ProgressCallback] = None,
     use_cache: bool = True,
+    use_entity_db: bool = True,
     # Legacy parameter — maps to deep=True when value is "deep"
     max_tier: str | None = None,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
@@ -343,6 +344,8 @@ def run_audit(
         Called with (phase, current, total, message) for status updates.
     use_cache : bool
         Whether to use the SQLite cache.
+    use_entity_db : bool
+        Whether to use the SQLite entity intelligence DB.
     max_tier : str, optional
         Legacy parameter. If "deep", sets deep=True.
     """
@@ -358,7 +361,7 @@ def run_audit(
     cache = Cache(config.db_path, config.cache_ttl_days) if use_cache else None
 
     try:
-        return _run_audit_core(client, cache, config, playlist_url, deep, progress)
+        return _run_audit_core(client, cache, config, playlist_url, deep, progress, use_entity_db)
     finally:
         client.close()
         if cache:
@@ -372,6 +375,7 @@ def _run_audit_core(
     playlist_url: str,
     deep: bool,
     progress: ProgressCallback,
+    use_entity_db: bool = True,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
     """Core workflow: fetch playlist -> collect evidence -> optional deep analysis."""
 
@@ -382,12 +386,13 @@ def _run_audit_core(
 
     # Entity intelligence DB
     entity_db: EntityDB | None = None
-    try:
-        entity_db = EntityDB()
-        db_stats = entity_db.stats()
-        db_total = sum(db_stats[t] for t in ("artists", "labels", "songwriters", "publishers"))
-    except Exception:
-        entity_db = None
+    if use_entity_db:
+        try:
+            entity_db = EntityDB()
+            db_stats = entity_db.stats()
+            db_total = sum(db_stats[t] for t in ("artists", "labels", "songwriters", "publishers"))
+        except Exception:
+            entity_db = None
 
     # Set up API clients
     deezer_client = DeezerClient(delay=0.3)
