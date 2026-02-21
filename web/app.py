@@ -25,13 +25,31 @@ from pathlib import Path
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request, jsonify, render_template, send_from_directory
 
 from spotify_audit.audit_runner import run_audit, build_config
 from spotify_audit.reports.formatter import to_html
+from web.api import cms_api, init_db
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
+app.register_blueprint(cms_api)
 logger = logging.getLogger("spotify_audit.web")
+
+# Serve the Entity Review CMS React app at /cms
+CMS_DIR = Path(__file__).parent / "static" / "cms"
+
+
+@app.route("/cms")
+@app.route("/cms/<path:subpath>")
+def serve_cms(subpath=""):
+    """Serve the React CMS SPA. All routes fall through to index.html."""
+    # Try to serve a real file first (JS, CSS, assets)
+    if subpath:
+        file_path = CMS_DIR / subpath
+        if file_path.is_file():
+            return send_from_directory(CMS_DIR, subpath)
+    # Otherwise serve index.html for client-side routing
+    return send_from_directory(CMS_DIR, "index.html")
 
 # Bounded in-memory scan store — evicts oldest entries when full
 MAX_SCANS = 100
@@ -176,6 +194,8 @@ if __name__ == "__main__":
     parser.add_argument("--port", type=int, default=5000)
     parser.add_argument("--host", default="0.0.0.0")
     parser.add_argument("--debug", action="store_true")
+    parser.add_argument("--db", default=None,
+                        help="Path to entities.db (default: spotify_audit/data/entities.db)")
     args = parser.parse_args()
 
     logging.basicConfig(
@@ -183,5 +203,9 @@ if __name__ == "__main__":
         format="%(asctime)s %(levelname)s %(name)s: %(message)s",
     )
 
-    print(f"\n  Spotify Audit Web — http://{args.host}:{args.port}\n")
+    # Initialize the entity database for CMS routes
+    init_db(args.db)
+
+    print(f"\n  Spotify Audit Web — http://{args.host}:{args.port}")
+    print(f"  CMS API available at /api/cms/*\n")
     app.run(host=args.host, port=args.port, debug=args.debug)

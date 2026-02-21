@@ -1363,6 +1363,36 @@ def _run_audit(
                             detail=e.detail, source=e.source,
                             strength=e.strength, scan_id=scan_id,
                         )
+                    # Store per-artist scan result
+                    import json as _json
+                    evidence_json = ""
+                    try:
+                        evidence_list = []
+                        for flag_list in (ev.strong_red_flags, ev.moderate_red_flags,
+                                          ev.weak_red_flags, ev.strong_green_flags,
+                                          ev.moderate_green_flags, ev.weak_green_flags,
+                                          ev.neutral_evidence):
+                            for e in flag_list:
+                                evidence_list.append({
+                                    "finding": e.finding, "source": e.source,
+                                    "type": e.evidence_type, "strength": e.strength,
+                                    "tags": e.tags, "detail": e.detail,
+                                })
+                        evidence_json = _json.dumps(evidence_list)
+                    except Exception:
+                        pass
+                    entity_db.store_scan_result(
+                        scan_id=scan_id,
+                        artist_name=report.artist_name,
+                        verdict=ev.verdict.value,
+                        score=report.final_score or 0,
+                        confidence=ev.confidence,
+                        threat_category=str(report.threat_category or ""),
+                        evidence_json=evidence_json,
+                    )
+                    # Feedback loop: check if connected entities crossed thresholds
+                    if ev.verdict.value in ("Suspicious", "Likely Artificial"):
+                        entity_db.update_entity_connections_for_artist(report.artist_name)
                 entity_db.refresh_entity_counts()
                 entity_db.complete_scan(scan_id)
         except Exception as exc:
