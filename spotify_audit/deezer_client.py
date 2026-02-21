@@ -173,27 +173,77 @@ class DeezerClient:
         return self._parse_artist(data)
 
     def enrich(self, artist: DeezerArtist) -> DeezerArtist:
-        """Add albums, top tracks, related artists, and extract structured data."""
+        """Add albums, top tracks, related artists, and extract structured data.
+
+        Fetches albums, top tracks, related artists, and full artist data
+        concurrently to reduce total enrichment time.
+        """
         if artist.deezer_id == 0:
             return artist
 
-        # Fetch full artist data for radio flag
-        try:
-            full_data = self._get(f"/artist/{artist.deezer_id}")
-            artist.radio = bool(full_data.get("radio", False))
-        except Exception as exc:
-            logger.debug("Could not fetch full artist data for %s: %s", artist.name, exc)
+        from concurrent.futures import ThreadPoolExecutor, as_completed
 
-        # --- Albums (with label info and release dates) ---
-        try:
-            data = self._get(f"/artist/{artist.deezer_id}/albums", {"limit": 100})
-            artist.albums = data.get("data", [])
-            artist.nb_album = len(artist.albums)
-        except DeezerQuotaError:
-            logger.warning("Deezer quota hit fetching albums for %s, returning partial data", artist.name)
+        # Results containers for concurrent fetches
+        full_data_result: dict = {}
+        albums_data: list = []
+        tracks_data: list = []
+        related_data: list = []
+        quota_error = False
+
+        def _fetch_full() -> None:
+            nonlocal full_data_result
+            try:
+                full_data_result = self._get(f"/artist/{artist.deezer_id}")
+            except Exception as exc:
+                logger.debug("Could not fetch full artist data for %s: %s", artist.name, exc)
+
+        def _fetch_albums() -> None:
+            nonlocal albums_data, quota_error
+            try:
+                data = self._get(f"/artist/{artist.deezer_id}/albums", {"limit": 100})
+                albums_data = data.get("data", [])
+            except DeezerQuotaError:
+                logger.warning("Deezer quota hit fetching albums for %s", artist.name)
+                quota_error = True
+
+        def _fetch_tracks() -> None:
+            nonlocal tracks_data, quota_error
+            try:
+                data = self._get(f"/artist/{artist.deezer_id}/top", {"limit": 25})
+                tracks_data = data.get("data", [])
+            except DeezerQuotaError:
+                logger.warning("Deezer quota hit fetching top tracks for %s", artist.name)
+                quota_error = True
+
+        def _fetch_related() -> None:
+            nonlocal related_data
+            try:
+                data = self._get(f"/artist/{artist.deezer_id}/related", {"limit": 10})
+                related_data = data.get("data", [])
+            except Exception as exc:
+                logger.debug("Could not fetch related artists for %s: %s", artist.name, exc)
+
+        with ThreadPoolExecutor(max_workers=4, thread_name_prefix="dz-enrich") as pool:
+            futures = [
+                pool.submit(_fetch_full),
+                pool.submit(_fetch_albums),
+                pool.submit(_fetch_tracks),
+                pool.submit(_fetch_related),
+            ]
+            for fut in as_completed(futures):
+                fut.result()
+
+        if quota_error:
+            logger.warning("Returning partial data for %s due to Deezer quota", artist.name)
             return artist
 
-        # Extract labels, album type breakdown, and release dates
+        # Apply full artist data
+        if full_data_result:
+            artist.radio = bool(full_data_result.get("radio", False))
+
+        # Process albums
+        artist.albums = albums_data
+        artist.nb_album = len(artist.albums)
         labels_seen: set[str] = set()
         type_counts: dict[str, int] = {}
         release_dates: list[str] = []
@@ -212,14 +262,8 @@ class DeezerClient:
         artist.album_types = type_counts
         artist.album_release_dates = release_dates
 
-        # --- Top tracks (with duration, rank, contributors) ---
-        try:
-            data = self._get(f"/artist/{artist.deezer_id}/top", {"limit": 25})
-        except DeezerQuotaError:
-            logger.warning("Deezer quota hit fetching top tracks for %s, returning partial data", artist.name)
-            return artist
-        artist.top_tracks = data.get("data", [])
-
+        # Process top tracks
+        artist.top_tracks = tracks_data
         titles: list[str] = []
         durations: list[int] = []
         ranks: list[int] = []
@@ -241,7 +285,6 @@ class DeezerClient:
                 ranks.append(rank)
             if track.get("explicit_lyrics", False):
                 has_explicit = True
-            # Contributors (featured artists, producers) with roles
             for contrib in track.get("contributors", []):
                 if isinstance(contrib, dict):
                     cname = contrib.get("name", "")
@@ -260,14 +303,13 @@ class DeezerClient:
         artist.contributors = sorted(contributors_seen)
         artist.contributor_roles = contributor_roles
 
-        # --- ISRCs from top tracks (Priority 7) ---
+        # ISRCs from top tracks (Priority 7)
         isrcs: list[str] = []
         for track in artist.top_tracks:
             if isinstance(track, dict):
                 isrc = track.get("isrc", "")
                 if isrc:
                     isrcs.append(isrc)
-                # If ISRC not in list response, try individual track lookup
                 elif track.get("id") and len(isrcs) < 10:
                     try:
                         track_data = self._get(f"/track/{track['id']}")
@@ -278,7 +320,6 @@ class DeezerClient:
                         pass
         artist.track_isrcs = isrcs
         if isrcs:
-            # Extract registrant codes (chars 2-5 of ISRC)
             registrants: set[str] = set()
             for isrc in isrcs:
                 clean = isrc.replace("-", "")
@@ -286,17 +327,13 @@ class DeezerClient:
                     registrants.add(clean[2:5])
             artist.isrc_registrants = sorted(registrants)
 
-        # --- Related artists (with fan counts) ---
-        try:
-            data = self._get(f"/artist/{artist.deezer_id}/related", {"limit": 10})
-            artist.related_artists = data.get("data", [])
-            artist.related_artist_fans = [
-                (r.get("name", ""), r.get("nb_fan", 0))
-                for r in artist.related_artists
-                if isinstance(r, dict) and r.get("name")
-            ]
-        except Exception as exc:
-            logger.debug("Could not fetch related artists for %s: %s", artist.name, exc)
+        # Process related artists
+        artist.related_artists = related_data
+        artist.related_artist_fans = [
+            (r.get("name", ""), r.get("nb_fan", 0))
+            for r in artist.related_artists
+            if isinstance(r, dict) and r.get("name")
+        ]
 
         return artist
 

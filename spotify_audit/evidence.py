@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from enum import Enum
 
 from spotify_audit.spotify_client import ArtistInfo
-from spotify_audit.config import pfc_distributors, known_ai_artists, pfc_songwriters
+from spotify_audit.config import pfc_distributors, known_ai_artists, pfc_songwriters, MOOD_WORDS
 
 logger = logging.getLogger(__name__)
 
@@ -1058,8 +1058,11 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
     pfc_labels = pfc_distributors()
     ai_names = known_ai_artists()
 
-    matched_pfc = [l for l in artist.labels if l.lower() in pfc_labels]
-    matched_ai = [l for l in artist.labels if l.lower() in ai_names]
+    # Single lowercasing pass, then set intersection
+    labels_lower = {l.lower(): l for l in artist.labels}
+    labels_lower_set = labels_lower.keys()
+    matched_pfc = [labels_lower[l] for l in labels_lower_set & pfc_labels]
+    matched_ai = [labels_lower[l] for l in labels_lower_set & ai_names]
 
     if matched_pfc:
         evidence.append(Evidence(
@@ -1145,20 +1148,11 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
         ))
 
     # Mood-word track titles (PFC tracks use generic mood/atmosphere names)
-    mood_words = {
-        "calm", "peaceful", "gentle", "soft", "quiet", "serene", "tranquil",
-        "dreamy", "hazy", "misty", "ambient", "chill", "cozy", "warm",
-        "morning", "evening", "night", "dawn", "dusk", "sunset", "sunrise",
-        "rain", "ocean", "forest", "garden", "meadow", "river", "sky",
-        "clouds", "breeze", "wind", "snow", "light", "glow", "drift",
-        "float", "flow", "sleep", "rest", "relax", "breathe", "solitude",
-        "silence", "whisper", "echo", "reflection", "meditation",
-    }
     if artist.track_titles:
         mood_count = 0
         for title in artist.track_titles:
             title_words = set(title.lower().split())
-            if title_words & mood_words:
+            if title_words & MOOD_WORDS:
                 mood_count += 1
         mood_ratio = mood_count / len(artist.track_titles) if artist.track_titles else 0
         if mood_ratio >= 0.7 and len(artist.track_titles) >= 4:

@@ -105,6 +105,7 @@ def import_enriched(ctx: click.Context, directory: str) -> None:
 
     imported = 0
     errors = 0
+    failed_files: list[tuple[str, str]] = []
     with console.status(f"Importing {len(files)} profiles...") as status:
         for f in files:
             try:
@@ -115,13 +116,19 @@ def import_enriched(ctx: click.Context, directory: str) -> None:
             except Exception as exc:
                 logger.debug("Failed to import %s: %s", f.name, exc)
                 errors += 1
+                if len(failed_files) < 5:
+                    failed_files.append((f.name, str(exc)))
 
     db.refresh_entity_counts()
     s = db.stats()
 
     console.print(f"[green]Imported {imported} enriched profiles[/green]")
     if errors:
-        console.print(f"[yellow]{errors} files failed (use -v for details)[/yellow]")
+        console.print(f"[yellow]{errors} files failed:[/yellow]")
+        for fname, err in failed_files:
+            console.print(f"  [dim]{fname}: {err}[/dim]")
+        if errors > 5:
+            console.print(f"  [dim]... and {errors - 5} more (use -v for full details)[/dim]")
     console.print(f"  Artists: {s['artists']}")
     console.print(f"  Labels:  {s['labels']}")
     console.print(f"  Songwriters: {s['songwriters']}")

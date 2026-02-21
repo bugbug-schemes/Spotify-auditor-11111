@@ -803,7 +803,8 @@ def _lookup_external_data(
             logger.debug("Songkick lookup failed for '%s': %s", search_name, exc)
 
     # Fire remaining API lookups concurrently (MusicBrainz already done in Phase 1)
-    with ThreadPoolExecutor(max_workers=7, thread_name_prefix="api") as pool:
+    # Keep at 6 workers — called from outer pool of 2, giving ~12 total threads
+    with ThreadPoolExecutor(max_workers=6, thread_name_prefix="api") as pool:
         futures = [
             pool.submit(_lookup_genius),
             pool.submit(_lookup_discogs),
@@ -1209,9 +1210,10 @@ def _run_audit(
             )
 
             # Parallelize across artists — each artist's APIs already run
-            # concurrently inside _lookup_external_data, so limit outer
-            # concurrency to avoid overwhelming rate limits
-            with ThreadPoolExecutor(max_workers=3, thread_name_prefix="eval") as pool:
+            # concurrently inside _lookup_external_data (6 threads), so keep
+            # outer concurrency low to avoid overwhelming rate limits
+            # (2 outer × 6 inner = 12 total threads)
+            with ThreadPoolExecutor(max_workers=2, thread_name_prefix="eval") as pool:
                 futures = {
                     pool.submit(_lookup_and_evaluate, key, artist): key
                     for key, artist in artists_to_lookup

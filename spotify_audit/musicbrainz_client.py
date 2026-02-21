@@ -336,44 +336,75 @@ class MusicBrainzClient:
         return genres
 
     def enrich(self, artist: MBArtist) -> MBArtist:
-        """Populate releases, labels, URL relations, genres, ISRCs, and categorized URLs."""
+        """Populate releases, labels, URL relations, genres, ISRCs, and categorized URLs.
+
+        Runs independent API calls concurrently to reduce total enrichment time.
+        """
         if not artist.mbid:
             return artist
 
-        # Releases and labels
-        artist.releases = self.get_releases(artist.mbid)
+        from concurrent.futures import ThreadPoolExecutor, as_completed
+
+        releases_result: list[MBRelease] = []
+        urls_result: dict[str, str] = {}
+        genres_result: list[str] = []
+        isrcs_result: list[str] = []
+
+        def _fetch_releases() -> None:
+            nonlocal releases_result
+            releases_result = self.get_releases(artist.mbid)
+
+        def _fetch_urls() -> None:
+            nonlocal urls_result
+            try:
+                urls_result = self.get_url_relations(artist.mbid)
+            except Exception as exc:
+                logger.debug("MusicBrainz URL relations failed for %s: %s", artist.mbid, exc)
+
+        def _fetch_genres() -> None:
+            nonlocal genres_result
+            if not artist.genres:
+                try:
+                    genres_result = self.get_genres(artist.mbid)
+                except Exception as exc:
+                    logger.debug("MusicBrainz genres failed for %s: %s", artist.mbid, exc)
+
+        def _fetch_isrcs() -> None:
+            nonlocal isrcs_result
+            try:
+                isrcs_result = self.get_recording_isrcs(artist.mbid)
+            except Exception as exc:
+                logger.debug("MusicBrainz ISRC lookup failed for %s: %s", artist.mbid, exc)
+
+        with ThreadPoolExecutor(max_workers=4, thread_name_prefix="mb-enrich") as pool:
+            futures = [
+                pool.submit(_fetch_releases),
+                pool.submit(_fetch_urls),
+                pool.submit(_fetch_genres),
+                pool.submit(_fetch_isrcs),
+            ]
+            for fut in as_completed(futures):
+                fut.result()
+
+        # Apply results
+        artist.releases = releases_result
         artist.labels = list({r.label for r in artist.releases if r.label})
 
-        # URL relations (social media, official site, Wikipedia, etc.)
-        try:
-            artist.urls = self.get_url_relations(artist.mbid)
-        except Exception as exc:
-            logger.debug("MusicBrainz URL relations failed for %s: %s", artist.mbid, exc)
-
-        # Categorize URLs for downstream consumers (Priority 5)
+        artist.urls = urls_result
         if artist.urls:
             categorized = self.categorize_urls(artist.urls)
             artist.youtube_url = categorized.get("youtube", "")
             artist.bandcamp_url = categorized.get("bandcamp", "")
             artist.official_website = categorized.get("official_website", "")
-            # Collect social URLs
             for platform in ("instagram", "twitter", "facebook", "soundcloud"):
                 if platform in categorized:
                     artist.social_urls[platform] = categorized[platform]
 
-        # Genres (if not already populated from search)
-        if not artist.genres:
-            try:
-                artist.genres = self.get_genres(artist.mbid)
-            except Exception as exc:
-                logger.debug("MusicBrainz genres failed for %s: %s", artist.mbid, exc)
+        if genres_result:
+            artist.genres = genres_result
 
-        # ISRCs from recordings (Priority 7)
-        try:
-            artist.isrcs = self.get_recording_isrcs(artist.mbid)
-            if artist.isrcs:
-                artist.isrc_registrants = self.parse_isrc_registrants(artist.isrcs)
-        except Exception as exc:
-            logger.debug("MusicBrainz ISRC lookup failed for %s: %s", artist.mbid, exc)
+        artist.isrcs = isrcs_result
+        if artist.isrcs:
+            artist.isrc_registrants = self.parse_isrc_registrants(artist.isrcs)
 
         return artist

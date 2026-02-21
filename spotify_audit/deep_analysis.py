@@ -12,6 +12,7 @@ Requires ANTHROPIC_API_KEY in .env.
 from __future__ import annotations
 
 import base64
+import functools
 import logging
 import re
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -599,10 +600,20 @@ REASONING: [2-3 sentences]"""
         text = response.content[0].text.strip()
     except Exception as exc:
         logger.warning("Batch bio analysis failed: %s", exc)
-        # Fall back to individual calls
+        # Fall back to individual calls, capped to avoid runaway API spend
+        max_individual = 4
         results: dict[str, list[Evidence]] = {}
-        for key, artist, ext in batch:
-            results[key] = analyze_bio(client, artist, ext, model=model)
+        for i, (key, artist, ext) in enumerate(batch):
+            if i < max_individual:
+                results[key] = analyze_bio(client, artist, ext, model=model)
+            else:
+                results[key] = [Evidence(
+                    finding="Bio analysis skipped (batch fallback limit reached)",
+                    source="Claude (bio)",
+                    evidence_type="neutral",
+                    strength="weak",
+                    detail="Batch API call failed and individual retry cap was reached.",
+                )]
         return results
 
     # Parse response — split by artist blocks
@@ -685,10 +696,20 @@ REASONING: [2-3 sentences]"""
         text = response.content[0].text.strip()
     except Exception as exc:
         logger.debug("Batch synthesis failed: %s", exc)
-        # Fall back to individual
+        # Fall back to individual, capped to avoid runaway API spend
+        max_individual = 4
         results: dict[str, list[Evidence]] = {}
-        for key, artist, ext, bio_ev, img_ev in batch:
-            results[key] = _synthesize(client, artist, ext, bio_ev, img_ev, model=model)
+        for i, (key, artist, ext, bio_ev, img_ev) in enumerate(batch):
+            if i < max_individual:
+                results[key] = _synthesize(client, artist, ext, bio_ev, img_ev, model=model)
+            else:
+                results[key] = [Evidence(
+                    finding="Synthesis skipped (batch fallback limit reached)",
+                    source="Claude synthesis",
+                    evidence_type="neutral",
+                    strength="weak",
+                    detail="Batch API call failed and individual retry cap was reached.",
+                )]
         return results
 
     results: dict[str, list[Evidence]] = {}
@@ -793,10 +814,15 @@ def run_deep_analysis_batch(
     return results
 
 
+@functools.lru_cache(maxsize=32)
+def _compiled_field_pattern(field_name: str) -> re.Pattern:
+    """Cache compiled regex patterns for field extraction."""
+    return re.compile(rf"{field_name}:\s*(.+?)(?:\n|$)", re.IGNORECASE)
+
+
 def _extract_field(text: str, field_name: str, default: str = "") -> str:
     """Extract a field value from structured Claude response."""
-    pattern = rf"{field_name}:\s*(.+?)(?:\n|$)"
-    m = re.search(pattern, text, re.IGNORECASE)
+    m = _compiled_field_pattern(field_name).search(text)
     if m:
         return m.group(1).strip().strip("[]")
     return default
