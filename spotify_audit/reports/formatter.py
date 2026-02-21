@@ -539,6 +539,10 @@ def to_html(report: PlaylistReport) -> str:
     contamination = (flagged / report.total_unique_artists * 100) if report.total_unique_artists else 0
     total_api_calls = sum(report.api_source_counts.values()) if report.api_source_counts else 0
 
+    # Derive scan tier from artist data
+    has_deep = any("deep" in a.tiers_completed for a in report.artists)
+    scan_tier = "Deep Dive" if has_deep else "Full Analysis"
+
     # Build artist cards
     artist_cards_html = []
     for idx, a in enumerate(sorted_artists):
@@ -923,6 +927,147 @@ body {{
 .signal-fill {{ height: 100%; border-radius: 4px; transition: width 0.3s; }}
 .signal-val {{ width: 28px; color: var(--text-dim); font-variant-numeric: tabular-nums; }}
 
+/* Axis bucket grid (expanded card body) */
+.axis-grid {{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 12px 0;
+}}
+@media (max-width: 768px) {{
+  .axis-grid {{ grid-template-columns: 1fr; }}
+}}
+.axis-bucket {{
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+}}
+.axis-header {{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}}
+.axis-name {{
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: var(--text-bright);
+  flex: 1;
+}}
+.axis-score {{
+  font-size: 0.8rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}}
+.axis-bar {{
+  height: 4px;
+  background: #111820;
+  border-radius: 2px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}}
+.axis-bar-fill {{ height: 100%; border-radius: 2px; }}
+.axis-item {{
+  font-size: 0.78rem;
+  color: var(--text-dim);
+  padding: 2px 0;
+  display: flex;
+  gap: 6px;
+  align-items: flex-start;
+  line-height: 1.4;
+}}
+.axis-icon {{
+  flex-shrink: 0;
+  width: 14px;
+  text-align: center;
+  font-size: 0.72rem;
+}}
+
+/* Methodology section */
+.methodology {{
+  margin-bottom: 32px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}}
+.methodology summary {{
+  padding: 14px 20px;
+  cursor: pointer;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-dim);
+  background: var(--card);
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}}
+.methodology summary::-webkit-details-marker {{ display: none; }}
+.methodology summary::before {{
+  content: '\\25B6';
+  font-size: 0.6rem;
+  transition: transform 0.2s;
+}}
+.methodology[open] summary::before {{ transform: rotate(90deg); }}
+.methodology-body {{
+  padding: 20px;
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  font-size: 0.82rem;
+  color: var(--text);
+  line-height: 1.65;
+}}
+.methodology-body h3 {{
+  font-size: 0.82rem;
+  color: var(--text-bright);
+  margin: 16px 0 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}}
+.methodology-body h3:first-child {{ margin-top: 0; }}
+.q-grid {{
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  margin: 8px 0;
+}}
+.q-item {{
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}}
+.q-num {{
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.85rem;
+  flex-shrink: 0;
+  width: 18px;
+}}
+.q-text {{ color: var(--text-bright); font-weight: 600; }}
+.q-detail {{ color: var(--text-dim); font-size: 0.78rem; margin-top: 2px; }}
+.verdict-table {{
+  width: 100%;
+  border-collapse: collapse;
+  margin: 8px 0;
+  font-size: 0.78rem;
+}}
+.verdict-table th {{
+  text-align: left;
+  padding: 6px 10px;
+  color: var(--text-dim);
+  border-bottom: 1px solid var(--border);
+  font-weight: 600;
+}}
+.verdict-table td {{
+  padding: 6px 10px;
+  border-bottom: 1px solid #111820;
+}}
+.verdict-table td:first-child {{ font-weight: 600; }}
+
 /* Footer */
 .footer {{
   margin-top: 40px;
@@ -941,7 +1086,7 @@ body {{
 <!-- Header -->
 <div class="header">
   <h1>Playlist Authenticity Report</h1>
-  <div class="subtitle">{_esc(report.playlist_name)} &middot; by {_esc(report.owner)} &middot; {now.strftime('%Y-%m-%d')}</div>
+  <div class="subtitle">{_esc(report.playlist_name)} &middot; by {_esc(report.owner)} &middot; {scan_tier} &middot; {now.strftime('%Y-%m-%d')}</div>
 </div>
 
 <!-- Summary -->
@@ -996,6 +1141,73 @@ body {{
   </div>
 </div>
 
+<!-- How This Works -->
+<details class="methodology">
+  <summary>How This Works &mdash; Five Core Questions</summary>
+  <div class="methodology-body">
+    <p>For every artist on this playlist, we queried up to 8 independent platforms and checked against
+    a curated database of known bad actors. The analysis answers five questions:</p>
+
+    <div class="q-grid">
+      <div class="q-item">
+        <span class="q-num">1</span>
+        <div>
+          <div class="q-text">Is this a known bad actor?</div>
+          <div class="q-detail">Artist name, label, distributor, or credited songwriter checked against our investigated database of confirmed PFC providers and fake artists.</div>
+        </div>
+      </div>
+      <div class="q-item">
+        <span class="q-num">2</span>
+        <div>
+          <div class="q-text">Do real humans care about this artist?</div>
+          <div class="q-detail">Cross-platform fan engagement on Last.fm, Deezer, YouTube, and Genius. Ghost artists leave zero traces outside Spotify.</div>
+        </div>
+      </div>
+      <div class="q-item">
+        <span class="q-num">3</span>
+        <div>
+          <div class="q-text">Does this artist exist outside streaming?</div>
+          <div class="q-detail">Presence on MusicBrainz, Discogs, Genius, Wikipedia. Live concert history on Setlist.fm. Physical releases. ASCAP/BMI registration.</div>
+        </div>
+      </div>
+      <div class="q-item">
+        <span class="q-num">4</span>
+        <div>
+          <div class="q-text">Does the catalog look manufactured?</div>
+          <div class="q-detail">Release cadence, track durations, album-to-single ratio, title patterns. Content farms release 40+ short singles with no albums.</div>
+        </div>
+      </div>
+      <div class="q-item">
+        <span class="q-num">5</span>
+        <div>
+          <div class="q-text">Is the content AI-generated?</div>
+          <div class="q-detail">Deezer AI content tags, profile image analysis, bio authenticity checks{', and Claude AI synthesis' if has_deep else ''}.</div>
+        </div>
+      </div>
+    </div>
+
+    <h3>Verdicts</h3>
+    <table class="verdict-table">
+      <tr><th>Verdict</th><th>Score</th><th>Meaning</th></tr>
+      <tr><td style="color:#22c55e">Verified Artist</td><td>82&ndash;100</td><td>Strong evidence of legitimacy across multiple independent sources.</td></tr>
+      <tr><td style="color:#3b82f6">Likely Authentic</td><td>58&ndash;81</td><td>More green flags than red. Probably a real artist.</td></tr>
+      <tr><td style="color:#94a3b8">Inconclusive</td><td>38&ndash;57</td><td>Insufficient data or conflicting signals.</td></tr>
+      <tr><td style="color:#f59e0b">Suspicious</td><td>18&ndash;37</td><td>More red flags than green. Probably fraudulent.</td></tr>
+      <tr><td style="color:#ef4444">Likely Artificial</td><td>0&ndash;17</td><td>Known bad actor match, or overwhelming evidence of fraud.</td></tr>
+    </table>
+
+    <h3>Threat Categories</h3>
+    <table class="verdict-table">
+      <tr><th>Category</th><th>Description</th></tr>
+      <tr><td style="color:#f59e0b">PFC Ghost Artist</td><td>Human-made music commissioned by Spotify at a flat fee, published under fake names.</td></tr>
+      <tr><td style="color:#f97316">PFC + AI Hybrid</td><td>Same PFC infrastructure, but using AI tools instead of human session musicians.</td></tr>
+      <tr><td style="color:#a78bfa">Independent AI</td><td>AI-generated music uploaded by individuals, not affiliated with PFC pipeline.</td></tr>
+      <tr><td style="color:#ef4444">AI Fraud Farm</td><td>Mass-produced AI content uploaded with bots for streaming revenue fraud.</td></tr>
+      <tr><td style="color:#ec4899">AI Impersonation</td><td>AI-generated tracks uploaded to a real artist's page without consent.</td></tr>
+    </table>
+  </div>
+</details>
+
 <!-- Artist list -->
 <div class="list-controls">
   <h2>Artist Analysis ({len(sorted_artists)})</h2>
@@ -1006,9 +1218,11 @@ body {{
 
 <!-- Footer -->
 <div class="footer">
-  Generated by Playlist Authenticity Analyzer &middot; {now.strftime('%Y-%m-%d %H:%M UTC')}<br>
-  {_esc(report.blocklist_version) if report.blocklist_version else ''}{' &middot; ' if report.blocklist_version else ''}
+  Generated by Playlist Authenticity Analyzer &middot; {scan_tier} &middot; {now.strftime('%Y-%m-%d %H:%M UTC')}<br>
   {len(sorted_artists)} artists analyzed across {len(report.api_source_counts) if report.api_source_counts else 'multiple'} data sources
+  {f' &middot; {total_api_calls} API calls' if total_api_calls else ''}
+  {f' &middot; {duration_str}' if duration_str else ''}<br>
+  {f'{_esc(report.blocklist_version)}' if report.blocklist_version else ''}
 </div>
 
 </div>
@@ -1173,7 +1387,11 @@ def _build_stats_line(a: ArtistReport, ev: ArtistEvaluation | None) -> str:
 
 
 def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
-    """Build the expanded card body with all detail sections."""
+    """Build the expanded card body organized by 6 signal axes.
+
+    Each axis shows a score bar + 3-4 key signals (data points and
+    moderate/strong evidence flags). Weak signals are excluded.
+    """
     ext = ev.external_data or ExternalData()
     verdict_str = ev.verdict.value
     verdict_color = _VERDICT_COLORS.get(verdict_str, "#94a3b8")
@@ -1186,25 +1404,10 @@ def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
         f'{_esc(explanation)}</div>'
     )
 
-    # 2. Radar chart + signal bars
-    radar = _radar_svg(scores, verdict_color)
-    signal_bars = _build_signal_bars(scores)
+    # 2. Six-axis bucket grid
+    buckets_html = _build_axis_buckets(ev, ext, scores)
 
-    scorecard = f"""<div class="scorecard">
-  <div>{radar}</div>
-  <div>
-    {signal_bars}
-    {_build_sources_grid(ev, ext)}
-  </div>
-</div>"""
-
-    # 3. Metadata grid
-    meta = _build_metadata_grid(a, ev, ext)
-
-    # 4. Evidence breakdown
-    evidence = _build_evidence_section(ev)
-
-    # 5. AI analysis (if available)
+    # 3. AI analysis (if available)
     ai_html = ""
     for sig in a.deep_signals:
         if isinstance(sig, dict) and sig.get("detail"):
@@ -1215,17 +1418,250 @@ def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
             )
             break
 
-    # 6. Related entities
-    entities = _build_entities_section(ev, ext)
-
     return f"""
     {explanation_html}
-    {scorecard}
-    {meta}
-    {evidence}
+    {buckets_html}
     {ai_html}
-    {entities}
     """
+
+
+# ---------------------------------------------------------------------------
+# Axis bucket system — maps evidence + data to the 6 radar dimensions
+# ---------------------------------------------------------------------------
+
+# Tag-to-axis classification for evidence flags
+_TAG_TO_AXIS: dict[str, str] = {
+    # Platform Presence
+    "platform_presence": "Platform Presence",
+    "not_found": "Platform Presence",
+    # Fan Engagement
+    "genuine_fans": "Fan Engagement",
+    "low_engagement": "Fan Engagement",
+    "streaming_pattern": "Fan Engagement",
+    # Creative History
+    "catalog_albums": "Creative History",
+    "physical_release": "Creative History",
+    "genius_credits": "Creative History",
+    "collaboration": "Creative History",
+    "content_farm": "Creative History",
+    "stream_farm": "Creative History",
+    "empty_catalog": "Creative History",
+    "cookie_cutter": "Creative History",
+    "high_release_rate": "Creative History",
+    # Live Performance
+    "live_performance": "Live Performance",
+    "touring_geography": "Live Performance",
+    # Online Identity
+    "wikipedia": "Online Identity",
+    "verified_identity": "Online Identity",
+    "social_media": "Online Identity",
+    "ai_bio": "Online Identity",
+    "ai_generated_image": "Online Identity",
+    "stock_photo": "Online Identity",
+    "authentic_photo": "Online Identity",
+    "authentic_bio": "Online Identity",
+    "impersonation": "Online Identity",
+    # Industry Signals
+    "pfc_label": "Industry Signals",
+    "pfc_songwriter": "Industry Signals",
+    "known_ai_artist": "Industry Signals",
+    "known_ai_label": "Industry Signals",
+    "known_bad_actor": "Industry Signals",
+    "entity_confirmed_bad": "Industry Signals",
+    "entity_suspected": "Industry Signals",
+    "entity_cleared": "Industry Signals",
+    "entity_bad_label": "Industry Signals",
+    "entity_bad_songwriter": "Industry Signals",
+    "entity_bad_network": "Industry Signals",
+}
+
+# Fallback: classify by evidence source name
+_SOURCE_TO_AXIS: list[tuple[str, str]] = [
+    ("deezer", "Fan Engagement"),
+    ("last.fm", "Fan Engagement"),
+    ("lastfm", "Fan Engagement"),
+    ("genius", "Creative History"),
+    ("discogs", "Creative History"),
+    ("setlist", "Live Performance"),
+    ("songkick", "Live Performance"),
+    ("wikipedia", "Online Identity"),
+    ("musicbrainz", "Industry Signals"),
+    ("blocklist", "Industry Signals"),
+    ("entity", "Industry Signals"),
+    ("pre-check", "Industry Signals"),
+    ("pro ", "Industry Signals"),
+]
+
+
+def _classify_evidence(e: Evidence) -> str:
+    """Assign an evidence item to one of the 6 signal axes."""
+    if e.tags:
+        for tag in e.tags:
+            if tag in _TAG_TO_AXIS:
+                return _TAG_TO_AXIS[tag]
+    src = e.source.lower()
+    for keyword, axis in _SOURCE_TO_AXIS:
+        if keyword in src:
+            return axis
+    return "Platform Presence"
+
+
+def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[str, int]) -> str:
+    """Build a 2x3 grid of axis buckets, each with score bar + signals.
+
+    Each bucket shows top green signals first, then top red signals,
+    up to 5 total. Weak evidence is excluded entirely.
+    """
+    # Classify evidence into axes (exclude weak signals)
+    axis_greens: dict[str, list[Evidence]] = {name: [] for name in scores}
+    axis_reds: dict[str, list[Evidence]] = {name: [] for name in scores}
+    for e in ev.red_flags + ev.green_flags:
+        if e.strength == "weak":
+            continue
+        axis = _classify_evidence(e)
+        if axis not in scores:
+            continue
+        if e.evidence_type == "red_flag":
+            axis_reds[axis].append(e)
+        else:
+            axis_greens[axis].append(e)
+
+    # Also add data-derived signals (from ext) as synthetic items
+    _inject_data_signals(axis_greens, axis_reds, ev, ext)
+
+    axis_order = [
+        "Platform Presence", "Fan Engagement", "Creative History",
+        "Live Performance", "Online Identity", "Industry Signals",
+    ]
+    strength_order = {"strong": 0, "moderate": 1}
+
+    buckets: list[str] = []
+    for axis in axis_order:
+        score = scores.get(axis, 0)
+        color = "#22c55e" if score >= 60 else "#f59e0b" if score >= 30 else "#ef4444"
+
+        greens = sorted(axis_greens.get(axis, []), key=lambda e: strength_order.get(e.strength, 2))
+        reds = sorted(axis_reds.get(axis, []), key=lambda e: strength_order.get(e.strength, 2))
+
+        # Top greens first, then top reds, up to 5 total
+        items_html = ""
+        shown = 0
+        for e in greens:
+            if shown >= 5:
+                break
+            items_html += (
+                f'<div class="axis-item">'
+                f'<span class="axis-icon" style="color:#22c55e">&#10003;</span>'
+                f'{_esc(e.finding)}</div>'
+            )
+            shown += 1
+        for e in reds:
+            if shown >= 5:
+                break
+            items_html += (
+                f'<div class="axis-item">'
+                f'<span class="axis-icon" style="color:#ef4444">&#10007;</span>'
+                f'{_esc(e.finding)}</div>'
+            )
+            shown += 1
+
+        if not items_html:
+            items_html = '<div class="axis-item"><span style="color:#445">No data</span></div>'
+
+        buckets.append(f"""<div class="axis-bucket">
+  <div class="axis-header">
+    <span class="axis-name">{_esc(axis)}</span>
+    <span class="axis-score" style="color:{color}">{score}</span>
+  </div>
+  <div class="axis-bar"><div class="axis-bar-fill" style="width:{score}%;background:{color}"></div></div>
+  {items_html}
+</div>""")
+
+    return '<div class="axis-grid">' + "\n".join(buckets) + '</div>'
+
+
+def _inject_data_signals(
+    greens: dict[str, list[Evidence]],
+    reds: dict[str, list[Evidence]],
+    ev: ArtistEvaluation,
+    ext: ExternalData,
+) -> None:
+    """Inject concise data-derived signals into axis buckets.
+
+    These supplement the evidence flags with concrete numbers from the
+    API responses, formatted as short signal lines.
+    """
+    def _green(axis: str, finding: str) -> None:
+        greens[axis].append(Evidence(
+            finding=finding, source="data", evidence_type="green_flag",
+            strength="moderate", detail="",
+        ))
+
+    def _red(axis: str, finding: str) -> None:
+        reds[axis].append(Evidence(
+            finding=finding, source="data", evidence_type="red_flag",
+            strength="moderate", detail="",
+        ))
+
+    # Platform Presence
+    found = sum(1 for r in ev.sources_reached.values() if r)
+    total = len(ev.sources_reached)
+    if found >= 4:
+        _green("Platform Presence", f"Found on {found}/{total} platforms")
+    elif found <= 1:
+        _red("Platform Presence", f"Only {found}/{total} platforms")
+
+    # Fan Engagement
+    fans = ev.platform_presence.deezer_fans or 0
+    if fans >= 10_000:
+        _green("Fan Engagement", f"Deezer: {fans:,} fans")
+    elif fans == 0:
+        _red("Fan Engagement", "Deezer: 0 fans")
+
+    if ext.lastfm_listeners and ext.lastfm_listeners >= 1_000:
+        _green("Fan Engagement", f"Last.fm: {ext.lastfm_listeners:,} listeners")
+
+    # Creative History
+    if ext.discogs_physical_releases:
+        _green("Creative History", f"{ext.discogs_physical_releases} physical releases (Discogs)")
+    if ext.genius_song_count and ext.genius_song_count >= 5:
+        _green("Creative History", f"{ext.genius_song_count} songs on Genius")
+
+    # Live Performance
+    if ext.setlistfm_total_shows:
+        _green("Live Performance", f"{ext.setlistfm_total_shows} shows (Setlist.fm)")
+    if ext.songkick_total_past_events:
+        _green("Live Performance", f"{ext.songkick_total_past_events} events (Songkick)")
+    countries = ext.setlistfm_venue_countries or ext.songkick_venue_countries
+    if countries and len(countries) >= 3:
+        _green("Live Performance", f"Toured {len(countries)} countries")
+
+    # Online Identity
+    if ext.wikipedia_found:
+        if ext.wikipedia_monthly_views:
+            _green("Online Identity", f"Wikipedia ({ext.wikipedia_monthly_views:,} views/mo)")
+        else:
+            _green("Online Identity", "Wikipedia page exists")
+    if ext.discogs_realname:
+        _green("Online Identity", f"Real name: {ext.discogs_realname}")
+    if ext.genius_is_verified:
+        _green("Online Identity", "Genius verified artist")
+
+    # Industry Signals
+    if ext.musicbrainz_isnis:
+        _green("Industry Signals", "ISNI registered")
+    if ext.musicbrainz_ipis:
+        _green("Industry Signals", "IPI registered")
+    if ext.pro_checked:
+        pro: list[str] = []
+        if ext.pro_found_bmi:
+            pro.append("BMI")
+        if ext.pro_found_ascap:
+            pro.append("ASCAP")
+        if pro:
+            _green("Industry Signals", f"PRO: {'+'.join(pro)} ({ext.pro_works_count} works)")
+        else:
+            _red("Industry Signals", "Not in BMI or ASCAP")
 
 
 def _build_explanation(ev: ArtistEvaluation) -> str:
