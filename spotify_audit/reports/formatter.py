@@ -889,7 +889,7 @@ def _build_artist_card_html(a: ArtistReport, ev: ArtistEvaluation, idx: int) -> 
         match_note = ""
         platform_key = name.lower().replace(".", "").replace(" ", "")
         # Map source display names to match_confidences keys
-        key_map = {"spotify": "spotify", "deezer": "deezer", "genius": "genius",
+        key_map = {"deezer": "deezer", "genius": "genius",
                    "discogs": "discogs", "setlistfm": "setlistfm", "musicbrainz": "musicbrainz",
                    "lastfm": "lastfm", "last.fm": "lastfm", "wikipedia": "wikipedia",
                    "songkick": "songkick", "youtube": "youtube"}
@@ -1110,17 +1110,17 @@ def _build_data_fields_html(ev: ArtistEvaluation, ext: ExternalData) -> str:
     """Build data fields organized by platform source."""
     sections: list[str] = []
 
-    # --- Spotify / Deezer (always available) ---
-    spotify_fields: list[str] = []
+    # --- Deezer (always available) ---
+    deezer_fields: list[str] = []
     if ev.platform_presence.deezer_fans:
-        spotify_fields.append(f"<strong>Deezer fans:</strong> {_fmt_num(ev.platform_presence.deezer_fans)}")
+        deezer_fields.append(f"<strong>Deezer fans:</strong> {_fmt_num(ev.platform_presence.deezer_fans)}")
     if ext.deezer_ai_checked:
         if ext.deezer_ai_tagged_albums:
-            spotify_fields.append(f"<strong>AI tagged:</strong> {', '.join(_esc(a) for a in ext.deezer_ai_tagged_albums[:3])}")
+            deezer_fields.append(f"<strong>AI tagged:</strong> {', '.join(_esc(a) for a in ext.deezer_ai_tagged_albums[:3])}")
         else:
-            spotify_fields.append("<strong>AI tagged:</strong> none detected")
-    if spotify_fields:
-        sections.append(_platform_section("Spotify / Deezer", spotify_fields, ext, "deezer"))
+            deezer_fields.append("<strong>AI tagged:</strong> none detected")
+    if deezer_fields:
+        sections.append(_platform_section("Deezer", deezer_fields, ext, "deezer"))
 
     # --- Genius ---
     genius_fields: list[str] = []

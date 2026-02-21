@@ -189,6 +189,8 @@ def _lookup_external_data(
             if mb.urls:
                 platform_ids = get_platform_ids_from_musicbrainz(mb.urls)
                 logger.debug("MusicBrainz platform IDs for '%s': %s", search_name, platform_ids)
+            # Store MusicBrainz MBID for setlist.fm direct lookup
+            platform_ids["musicbrainz_mbid"] = mb.mbid
     except Exception as exc:
         logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 
@@ -239,9 +241,13 @@ def _lookup_external_data(
         logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
 
     if setlistfm.enabled:
-        ext.had_platform_ids["setlistfm"] = bool(platform_ids.get("setlistfm"))
+        ext.had_platform_ids["setlistfm"] = bool(platform_ids.get("setlistfm") or platform_ids.get("musicbrainz_mbid"))
         try:
-            sa = setlistfm.search_artist(search_name, setlistfm_url=platform_ids.get("setlistfm"))
+            sa = setlistfm.search_artist(
+                search_name,
+                setlistfm_url=platform_ids.get("setlistfm"),
+                musicbrainz_mbid=platform_ids.get("musicbrainz_mbid"),
+            )
             if sa:
                 ext.setlistfm_found = True
                 ext.match_confidences["setlistfm"] = sa.match_confidence
@@ -513,8 +519,6 @@ def _run_audit_core(
         """Build a minimal PlatformPresence from core artist data (for short-circuit path)."""
         from spotify_audit.evidence import PlatformPresence
         presence = PlatformPresence()
-        if not artist.artist_id.startswith("name:"):
-            presence.spotify = True
         if artist.deezer_fans > 0:
             presence.deezer = True
             presence.deezer_fans = artist.deezer_fans

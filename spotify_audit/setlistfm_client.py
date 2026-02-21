@@ -74,35 +74,37 @@ class SetlistFmClient:
         time.sleep(self.delay)
         return r.json()
 
-    def search_artist(self, name: str, setlistfm_url: str | None = None) -> SetlistArtist | None:
+    def search_artist(
+        self,
+        name: str,
+        setlistfm_url: str | None = None,
+        musicbrainz_mbid: str | None = None,
+    ) -> SetlistArtist | None:
         """Search for an artist by name using shared name matching.
 
         Args:
             name: Artist name to search for.
             setlistfm_url: Optional setlist.fm URL from MusicBrainz URL bridging.
+            musicbrainz_mbid: Optional full MusicBrainz UUID for direct lookup.
+                              Preferred over URL-extracted IDs since setlist.fm
+                              uses MusicBrainz UUIDs for their API.
         """
         if not self.enabled:
             return None
 
-        # Platform ID bridging: extract MBID from setlist.fm URL
-        if setlistfm_url:
-            import re
-            # URLs look like: https://www.setlist.fm/setlists/artist-name-mbid.html
-            m = re.search(r"-([0-9a-f]{8})\.html", setlistfm_url)
-            if m:
-                mbid = m.group(1)
-                # Convert short hex to full MBID format used by setlist.fm
-                mr = MatchResult(
-                    found=True, confidence=1.0,
-                    matched_name=name,
-                    platform_id=mbid,
-                    match_method="platform_id",
-                )
-                log_match("Setlist.fm", name, mr)
-                return SetlistArtist(
-                    mbid=mbid, name=name,
-                    match_confidence=mr.confidence, match_method=mr.match_method,
-                )
+        # Prefer full MusicBrainz UUID when available (most reliable)
+        if musicbrainz_mbid:
+            mr = MatchResult(
+                found=True, confidence=1.0,
+                matched_name=name,
+                platform_id=musicbrainz_mbid,
+                match_method="platform_id",
+            )
+            log_match("Setlist.fm", name, mr)
+            return SetlistArtist(
+                mbid=musicbrainz_mbid, name=name,
+                match_confidence=mr.confidence, match_method=mr.match_method,
+            )
 
         try:
             data = self._get("/search/artists", {"artistName": name, "p": 1, "sort": "relevance"})
