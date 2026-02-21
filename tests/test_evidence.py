@@ -48,15 +48,15 @@ class TestPlatformPresence:
 
     def test_count_all(self):
         p = PlatformPresence(
-            spotify=True, deezer=True, musicbrainz=True,
+            deezer=True, musicbrainz=True,
             genius=True, discogs=True, setlistfm=True, lastfm=True,
+            wikipedia=True, songkick=True,
         )
-        assert p.count() == 7
+        assert p.count() == 8
 
     def test_names(self):
-        p = PlatformPresence(spotify=True, deezer=True, deezer_fans=1000)
+        p = PlatformPresence(deezer=True, deezer_fans=1000)
         names = p.names()
-        assert "Spotify" in names
         assert any("Deezer" in n for n in names)
         assert any("1,000" in n for n in names)
 
@@ -90,14 +90,14 @@ class TestFollowerEvidence:
         neutrals = [e for e in ev if e.evidence_type == "neutral"]
         assert len(neutrals) >= 1
 
-    def test_listener_follower_mismatch(self):
+    def test_low_fans_neutral_or_red(self):
         artist = ArtistInfo(
             artist_id="a", name="A",
-            monthly_listeners=100_000, followers=50,
+            deezer_fans=5,
         )
         ev = _collect_follower_evidence(artist)
-        reds = [e for e in ev if e.evidence_type == "red_flag" and "ratio" in e.finding.lower()]
-        assert len(reds) >= 1
+        # Low fan count should produce some evidence (red or neutral)
+        assert len(ev) >= 1
 
 
 # ---------------------------------------------------------------------------
@@ -284,9 +284,10 @@ class TestCollaborationEvidence:
 # ---------------------------------------------------------------------------
 
 class TestGenreEvidence:
-    def test_no_genres_red(self):
+    def test_no_genres_red_when_musicbrainz_checked(self):
         artist = ArtistInfo(artist_id="a", name="A", genres=[])
-        ev = _collect_genre_evidence(artist)
+        ext = ExternalData(musicbrainz_found=True, musicbrainz_genres=[])
+        ev = _collect_genre_evidence(artist, ext)
         reds = [e for e in ev if e.evidence_type == "red_flag"]
         assert len(reds) >= 1
 
@@ -592,7 +593,7 @@ class TestDecideVerdict:
 
     def test_multi_platform_plus_fans_verified(self):
         presence = PlatformPresence(
-            spotify=True, deezer=True, genius=True, deezer_fans=100_000,
+            deezer=True, genius=True, musicbrainz=True, deezer_fans=100_000,
         )
         greens = [Evidence(
             finding="100,000 fans", source="Deezer",

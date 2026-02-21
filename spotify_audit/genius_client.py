@@ -114,43 +114,59 @@ class GeniusClient:
             except Exception as exc:
                 logger.debug("Genius ID lookup failed for %s: %s", genius_id, exc)
 
-        data = self._get("/search", {"q": name, "per_page": 15})
-        hits = data.get("response", {}).get("hits", [])
+        # Try multiple search variants to improve matching.
+        # Genius /search finds songs, not artists directly, so the artist name
+        # might not appear in song titles. Trying normalized/variant forms helps.
+        from spotify_audit.name_matching import (
+            pick_best_match, generate_candidates, normalize_name,
+        )
 
-        if not hits:
-            log_match("Genius", name, MatchResult(found=False))
-            return None
+        search_variants = [name]
+        # Add normalized variants (strips accents, punctuation, etc.)
+        for variant in generate_candidates(name):
+            if variant not in search_variants:
+                search_variants.append(variant)
+        # Limit to 3 API calls to avoid rate limiting
+        search_variants = search_variants[:3]
 
-        # Deduplicate primary artists
         seen_ids: set[int] = set()
-        candidates: list[dict] = []
-        for hit in hits:
-            result = hit.get("result", {})
-            primary = result.get("primary_artist", {})
-            pid = primary.get("id", 0)
-            if pid and pid not in seen_ids:
-                seen_ids.add(pid)
-                candidates.append({
-                    "name": primary.get("name", ""),
-                    "id": pid,
-                    "url": primary.get("url", ""),
-                    "image_url": primary.get("image_url", ""),
-                    "aliases": primary.get("alternate_names", []) or [],
-                })
+        all_candidates: list[dict] = []
 
-        if not candidates:
+        for query in search_variants:
+            data = self._get("/search", {"q": query, "per_page": 15})
+            hits = data.get("response", {}).get("hits", [])
+
+            for hit in hits:
+                result = hit.get("result", {})
+                primary = result.get("primary_artist", {})
+                pid = primary.get("id", 0)
+                if pid and pid not in seen_ids:
+                    seen_ids.add(pid)
+                    all_candidates.append({
+                        "name": primary.get("name", ""),
+                        "id": pid,
+                        "url": primary.get("url", ""),
+                        "image_url": primary.get("image_url", ""),
+                        "aliases": primary.get("alternate_names", []) or [],
+                    })
+
+            # If we already found a strong match, skip remaining variants
+            if all_candidates:
+                match = pick_best_match(name, all_candidates)
+                if match.found and match.confidence >= 0.95:
+                    break
+
+        if not all_candidates:
             log_match("Genius", name, MatchResult(found=False))
             return None
 
-        # Score all candidates using shared matching
-        from spotify_audit.name_matching import pick_best_match
-        match = pick_best_match(name, candidates)
+        match = pick_best_match(name, all_candidates)
         log_match("Genius", name, match)
 
         if match.found and match.platform_id:
             best = next(
-                (c for c in candidates if str(c["id"]) == match.platform_id),
-                candidates[0],
+                (c for c in all_candidates if str(c["id"]) == match.platform_id),
+                all_candidates[0],
             )
             return GeniusArtist(
                 genius_id=best["id"],

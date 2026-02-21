@@ -10,6 +10,7 @@ from __future__ import annotations
 import dataclasses
 import logging
 import os
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Callable, Optional
@@ -189,6 +190,8 @@ def _lookup_external_data(
             if mb.urls:
                 platform_ids = get_platform_ids_from_musicbrainz(mb.urls)
                 logger.debug("MusicBrainz platform IDs for '%s': %s", search_name, platform_ids)
+            # Store MusicBrainz MBID for setlist.fm direct lookup
+            platform_ids["musicbrainz_mbid"] = mb.mbid
     except Exception as exc:
         logger.debug("MusicBrainz lookup failed for '%s': %s", search_name, exc)
 
@@ -239,9 +242,13 @@ def _lookup_external_data(
         logger.debug("Discogs lookup failed for '%s': %s", search_name, exc)
 
     if setlistfm.enabled:
-        ext.had_platform_ids["setlistfm"] = bool(platform_ids.get("setlistfm"))
+        ext.had_platform_ids["setlistfm"] = bool(platform_ids.get("setlistfm") or platform_ids.get("musicbrainz_mbid"))
         try:
-            sa = setlistfm.search_artist(search_name, setlistfm_url=platform_ids.get("setlistfm"))
+            sa = setlistfm.search_artist(
+                search_name,
+                setlistfm_url=platform_ids.get("setlistfm"),
+                musicbrainz_mbid=platform_ids.get("musicbrainz_mbid"),
+            )
             if sa:
                 ext.setlistfm_found = True
                 ext.match_confidences["setlistfm"] = sa.match_confidence
@@ -378,6 +385,7 @@ def _run_audit_core(
     use_entity_db: bool = True,
 ) -> tuple[PlaylistReport, BlocklistReport | None]:
     """Core workflow: fetch playlist -> collect evidence -> optional deep analysis."""
+    scan_start = time.monotonic()
 
     # 1. Fetch playlist
     progress("fetch", 0, 1, "Fetching playlist from Spotify...")
@@ -513,8 +521,6 @@ def _run_audit_core(
         """Build a minimal PlatformPresence from core artist data (for short-circuit path)."""
         from spotify_audit.evidence import PlatformPresence
         presence = PlatformPresence()
-        if not artist.artist_id.startswith("name:"):
-            presence.spotify = True
         if artist.deezer_fans > 0:
             presence.deezer = True
             presence.deezer_fans = artist.deezer_fans
@@ -835,6 +841,25 @@ def _run_audit_core(
         is_spotify_owned=meta.is_spotify_owned,
         artist_reports=artist_reports,
     )
+
+    # Populate scan metadata for report output
+    playlist_report.scan_duration_seconds = time.monotonic() - scan_start
+    n_artists = len(artist_reports)
+    api_counts: dict[str, int] = {}
+    api_counts["Deezer"] = n_artists
+    api_counts["MusicBrainz"] = n_artists
+    api_counts["Wikipedia"] = n_artists
+    if lastfm_client.enabled:
+        api_counts["Last.fm"] = n_artists
+    if genius_client.enabled:
+        api_counts["Genius"] = n_artists
+    if discogs_client.enabled:
+        api_counts["Discogs"] = n_artists
+    if setlistfm_client.enabled:
+        api_counts["Setlist.fm"] = n_artists
+    if songkick_client.enabled:
+        api_counts["Songkick"] = n_artists
+    playlist_report.api_source_counts = {k: v for k, v in api_counts.items() if v > 0}
 
     progress("done", 1, 1, "Scan complete!")
     return playlist_report, blocklist_report
