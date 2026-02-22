@@ -12,6 +12,7 @@ Scan state is persisted to SQLite so:
 
 from __future__ import annotations
 
+import html as html_mod
 import logging
 import sqlite3
 import threading
@@ -27,6 +28,36 @@ _DEFAULT_DB = Path(__file__).resolve().parent.parent / "spotify_audit" / "data" 
 SCAN_TIMEOUT_SECONDS = 300       # 5 minutes max for a single scan
 STALE_HEARTBEAT_SECONDS = 45     # If no heartbeat for 45s, scan thread is dead
 CLEANUP_AGE_HOURS = 24           # Remove completed scans older than this
+
+
+def _timeout_report_html(title: str, message: str, elapsed_s: int) -> str:
+    """Generate a minimal HTML report page for timed-out / interrupted scans."""
+    safe_title = html_mod.escape(title)
+    safe_msg = html_mod.escape(message)
+    return f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{safe_title}</title>
+<style>
+  body {{ background:#06090f; color:#c8d0da; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; padding:24px 16px; line-height:1.5 }}
+  .container {{ max-width:800px; margin:0 auto }}
+  h1 {{ color:#f59e0b; margin-bottom:8px }}
+  .warn-box {{ background:#1a1510; border:1px solid #3d2e1a; border-radius:10px; padding:20px; margin:16px 0 }}
+  .retry {{ display:inline-block; margin-top:16px; padding:10px 24px; background:#1DB954; color:#000; border-radius:8px; text-decoration:none; font-weight:700 }}
+  .retry:hover {{ background:#1ed760 }}
+</style></head><body>
+<div class="container">
+  <h1>{safe_title}</h1>
+  <div class="warn-box">
+    <p style="color:#f59e0b;font-weight:600;margin-bottom:8px">{safe_msg}</p>
+    <p style="color:#94a3b8;font-size:0.85rem">
+      Elapsed time: {elapsed_s}s. This usually happens when the playlist has many
+      artists and the external API lookups take too long. You can try again &mdash;
+      some results may have been cached for next time.
+    </p>
+  </div>
+  <a class="retry" href="/">Try Again</a>
+</div></body></html>"""
 
 
 class ScanStore:
@@ -68,13 +99,15 @@ class ScanStore:
             """)
 
     def _recover_stale_scans(self) -> None:
-        """On startup, mark any still-running scans as interrupted."""
+        """On startup, mark any still-running scans as complete with an error report."""
+        msg = "The server restarted while this scan was running. Please try again."
+        html = _timeout_report_html("Scan Interrupted", msg, 0)
         with self._conn() as conn:
             cursor = conn.execute(
-                "UPDATE web_scans SET status='error', phase='error', "
-                "error='Scan interrupted (server restart)', "
-                "message='The server restarted while this scan was running. Please try again.' "
-                "WHERE status='running'"
+                "UPDATE web_scans SET status='complete', phase='done', "
+                "result_html=?, message=? "
+                "WHERE status='running'",
+                (html, msg),
             )
             if cursor.rowcount > 0:
                 logger.info("Recovered %d stale scans on startup", cursor.rowcount)
@@ -143,7 +176,9 @@ class ScanStore:
 
         result = dict(row)
 
-        # Check for stale/timed-out running scans
+        # Check for stale/timed-out running scans.
+        # When detected, generate an error report and mark as "complete"
+        # so the user always has a report page to view.
         if result["status"] == "running":
             now = time.time()
             elapsed = now - result["started_at"]
@@ -155,21 +190,27 @@ class ScanStore:
                     "The playlist may have too many artists for the server. "
                     "Try a smaller playlist or use the CLI tool."
                 )
-                self.mark_error(scan_id, "Scan timed out", error_msg)
-                result["status"] = "error"
-                result["phase"] = "error"
-                result["error"] = "Scan timed out"
+                html = _timeout_report_html("Scan Timed Out", error_msg, int(elapsed))
+                self.mark_complete(scan_id, result_html=html,
+                                   playlist_name=result.get("playlist_name"),
+                                   message=error_msg)
+                result["status"] = "complete"
+                result["phase"] = "done"
+                result["result_html"] = html
                 result["message"] = error_msg
             elif heartbeat_age > STALE_HEARTBEAT_SECONDS:
                 error_msg = (
                     "Scan was interrupted unexpectedly. "
-                    "The server may have run out of memory processing this playlist. "
-                    "Please try again."
+                    "The server may have run out of memory or the scan thread "
+                    "stopped responding. Please try again."
                 )
-                self.mark_error(scan_id, "Scan interrupted", error_msg)
-                result["status"] = "error"
-                result["phase"] = "error"
-                result["error"] = "Scan interrupted"
+                html = _timeout_report_html("Scan Interrupted", error_msg, int(elapsed))
+                self.mark_complete(scan_id, result_html=html,
+                                   playlist_name=result.get("playlist_name"),
+                                   message=error_msg)
+                result["status"] = "complete"
+                result["phase"] = "done"
+                result["result_html"] = html
                 result["message"] = error_msg
 
         return result

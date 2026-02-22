@@ -391,9 +391,19 @@ def _run_audit_core(
     """Core workflow: fetch playlist -> collect evidence -> optional deep analysis."""
     scan_start = time.monotonic()
 
-    # 1. Fetch playlist
+    # 1. Fetch playlist (with timeout — the scraper can hang on HTTP)
+    PLAYLIST_FETCH_TIMEOUT = 90  # seconds
     progress("fetch", 0, 1, "Fetching playlist from Spotify...")
-    meta, tracks = client.get_playlist(playlist_url)
+    with ThreadPoolExecutor(max_workers=1, thread_name_prefix="fetch") as fetch_pool:
+        fetch_future = fetch_pool.submit(client.get_playlist, playlist_url)
+        try:
+            meta, tracks = fetch_future.result(timeout=PLAYLIST_FETCH_TIMEOUT)
+        except TimeoutError:
+            raise TimeoutError(
+                f"Playlist fetch timed out after {PLAYLIST_FETCH_TIMEOUT}s. "
+                "The playlist may be too large or Spotify may be slow. "
+                "Try again later."
+            )
     progress("fetch", 1, 1, f"Loaded {meta.name} — {meta.total_tracks} tracks")
 
     # Entity intelligence DB
