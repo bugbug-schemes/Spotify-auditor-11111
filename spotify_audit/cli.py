@@ -1374,16 +1374,12 @@ def _run_audit(
                     evidence_json = ""
                     try:
                         evidence_list = []
-                        for flag_list in (ev.strong_red_flags, ev.moderate_red_flags,
-                                          ev.weak_red_flags, ev.strong_green_flags,
-                                          ev.moderate_green_flags, ev.weak_green_flags,
-                                          ev.neutral_evidence):
-                            for e in flag_list:
-                                evidence_list.append({
-                                    "finding": e.finding, "source": e.source,
-                                    "type": e.evidence_type, "strength": e.strength,
-                                    "tags": e.tags, "detail": e.detail,
-                                })
+                        for e in ev.red_flags + ev.green_flags + ev.neutral_notes:
+                            evidence_list.append({
+                                "finding": e.finding, "source": e.source,
+                                "type": e.evidence_type, "strength": e.strength,
+                                "tags": e.tags, "detail": e.detail,
+                            })
                         evidence_json = _json.dumps(evidence_list)
                     except Exception:
                         pass
