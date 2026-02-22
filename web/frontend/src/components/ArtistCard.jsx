@@ -115,7 +115,7 @@ const SOURCE_TO_SECTION = {
   Spotify: 'Platform Presence',
 };
 
-// Default "no data" signals per section (Task 3) — absence is itself a signal
+// Default "no data" signals per section — absence is itself a signal
 const NO_DATA_SIGNALS = {
   'Platform Presence': { finding: 'Not found on Deezer, MusicBrainz, or Genius', source: 'Analysis' },
   'Fan Engagement': { finding: 'No fan engagement data from Last.fm or Deezer', source: 'Analysis' },
@@ -123,6 +123,16 @@ const NO_DATA_SIGNALS = {
   'IRL Presence': { finding: 'No live performances on Setlist.fm and no physical releases on Discogs', source: 'Analysis' },
   'Online Identity': { finding: 'No Wikipedia article, social media, or verified profiles found', source: 'Analysis' },
   'Industry Signals': { finding: 'No industry registrations (ISNI, IPI, PRO) found', source: 'Analysis' },
+};
+
+// Section icons for visual identification
+const SECTION_ICONS = {
+  'Platform Presence': '\uD83C\uDF10',  // globe
+  'Fan Engagement': '\uD83D\uDC65',     // people
+  'Creative History': '\uD83C\uDFB5',   // musical note
+  'IRL Presence': '\uD83C\uDFE4',       // building
+  'Online Identity': '\uD83D\uDD0D',    // magnifying glass
+  'Industry Signals': '\uD83C\uDFAD',   // performing arts
 };
 
 // ---------------------------------------------------------------------------
@@ -164,13 +174,13 @@ function buildSections(evidenceList) {
       const bOrder = strengthOrder[b.strength] ?? 1;
       return aOrder - bOrder;
     });
-    // Cap at 5 most impactful per section (Task 3)
+    // Cap at 5 most impactful per section
     if (sections[name].length > 5) {
       sections[name] = sections[name].slice(0, 5);
     }
   }
 
-  // Ensure every section has at least 1 signal (Task 3)
+  // Ensure every section has at least 1 signal
   for (const name of SECTION_ORDER) {
     if (sections[name].length === 0) {
       const fallback = NO_DATA_SIGNALS[name];
@@ -189,7 +199,7 @@ function buildSections(evidenceList) {
 }
 
 function computeCategoryScores(sections, evidenceList, verdict) {
-  // Verdict-aware base scores (Task 5): verified artists start higher so
+  // Verdict-aware base scores: verified artists start higher so
   // their per-section scores reflect overall legitimacy properly
   const verdictBase = {
     'Verified Artist': 75,
@@ -216,6 +226,16 @@ function computeCategoryScores(sections, evidenceList, verdict) {
     scores[name] = Math.max(0, Math.min(100, pts));
   }
   return scores;
+}
+
+function countFlags(evidenceList) {
+  let green = 0;
+  let red = 0;
+  for (const ev of evidenceList) {
+    if (ev.type === 'green_flag') green++;
+    else if (ev.type === 'red_flag') red++;
+  }
+  return { green, red };
 }
 
 // ---------------------------------------------------------------------------
@@ -245,7 +265,7 @@ function buildCreativeMetrics(evidenceList) {
     const albumsMatch = combined.match(/(\d+)\s*albums?/i);
     if (albumsMatch) metrics.albums = parseInt(albumsMatch[1], 10);
 
-    // Avg duration — "average duration: 3:12" or "3:12 avg"
+    // Avg duration
     const durationMatch = combined.match(/(?:avg|average)\s*(?:duration|track length|song duration)[:\s]*(\d+:\d{2})/i);
     if (durationMatch) metrics.avgDuration = durationMatch[1];
 
@@ -253,7 +273,7 @@ function buildCreativeMetrics(evidenceList) {
     if (durationMatch2 && !metrics.avgDuration) metrics.avgDuration = durationMatch2[1];
 
     // Track duration variance / std dev
-    const varianceMatch = combined.match(/(?:σ|std|stdev|variance|deviation)[:\s=]*(\d+:\d{2}|\d+\.\d+s?)/i);
+    const varianceMatch = combined.match(/(?:\u03C3|std|stdev|variance|deviation)[:\s=]*(\d+:\d{2}|\d+\.\d+s?)/i);
     if (varianceMatch) metrics.durationVariance = varianceMatch[1];
 
     // Duration range
@@ -262,21 +282,19 @@ function buildCreativeMetrics(evidenceList) {
       metrics.durationRange = `${rangeMatch[1]}\u2013${rangeMatch[2]}`;
     }
 
-    // Years active — extract start year from various patterns
+    // Years active
     const activeMatch = combined.match(/(?:active|career|recording)\s*(?:since|from|span)[:\s]*(\d{4})/i);
     if (activeMatch && !metrics.startYear) metrics.startYear = parseInt(activeMatch[1], 10);
 
     const firstReleaseMatch = combined.match(/(?:first|earliest)\s*(?:release|track|recording)[:\s]*(?:in\s*)?(\d{4})/i);
     if (firstReleaseMatch && !metrics.startYear) metrics.startYear = parseInt(firstReleaseMatch[1], 10);
 
-    // Date ranges like "2019-2024" or "2019–present"
     const dateRangeMatch = combined.match(/(\d{4})\s*[-\u2013]\s*(?:(\d{4})|present)/i);
     if (dateRangeMatch && !metrics.startYear) {
       metrics.startYear = parseInt(dateRangeMatch[1], 10);
     }
   }
 
-  // Compute years active
   if (metrics.startYear) {
     const currentYear = new Date().getFullYear();
     metrics.yearsActive = Math.max(1, currentYear - metrics.startYear);
@@ -289,7 +307,6 @@ function formatCreativeSignals(metrics) {
   const extra = [];
   const yearsActive = metrics.yearsActive || null;
 
-  // Singles per year
   if (metrics.singles != null && yearsActive) {
     const spy = parseFloat((metrics.singles / yearsActive).toFixed(1));
     let level = 'weak_positive';
@@ -300,7 +317,6 @@ function formatCreativeSignals(metrics) {
     extra.push({ label: 'Singles per year', value: spy.toString(), level });
   }
 
-  // Albums per year
   if (metrics.albums != null && yearsActive) {
     const apy = parseFloat((metrics.albums / yearsActive).toFixed(1));
     let level = 'weak_negative';
@@ -309,7 +325,6 @@ function formatCreativeSignals(metrics) {
     extra.push({ label: 'Albums per year', value: apy.toString(), level });
   }
 
-  // Singles-to-album ratio
   if (metrics.singles != null && metrics.albums != null) {
     let value;
     let level;
@@ -326,7 +341,6 @@ function formatCreativeSignals(metrics) {
     extra.push({ label: 'Singles-to-album ratio', value, level });
   }
 
-  // Average song duration
   if (metrics.avgDuration) {
     const secs = parseDurationToSecs(metrics.avgDuration);
     let level = 'weak_positive';
@@ -338,7 +352,6 @@ function formatCreativeSignals(metrics) {
     extra.push({ label: 'Avg song duration', value: metrics.avgDuration, level });
   }
 
-  // Duration variance
   if (metrics.durationVariance) {
     const varStr = metrics.durationVariance;
     let level = 'weak_positive';
@@ -357,7 +370,6 @@ function formatCreativeSignals(metrics) {
 }
 
 function getSummaryText(verdict) {
-  // Task 5: positive summary text for legitimate artists
   switch (verdict) {
     case 'Verified Artist':
       return 'Strong cross-platform presence with genuine fan engagement and verified identity.';
@@ -399,11 +411,17 @@ function SignalItem({ evidence }) {
   const level = getSignalLevel(evidence.type, evidence.strength);
   const color = getSignalColor(level);
   const icon = getSignalIcon(level);
+  const showSource = evidence.source && evidence.source !== 'Analysis';
 
   return (
     <div className="signal-item" style={{ color }}>
       <span className="signal-icon">{icon}</span>
-      <span className="signal-text">{evidence.finding}</span>
+      <span className="signal-content">
+        <span className="signal-text">{evidence.finding}</span>
+        {showSource && (
+          <span className="signal-source">{evidence.source}</span>
+        )}
+      </span>
     </div>
   );
 }
@@ -411,11 +429,15 @@ function SignalItem({ evidence }) {
 function SectionBar({ name, score }) {
   const color = getScoreColor(score);
   const pct = Math.max(0, Math.min(100, score));
+  const icon = SECTION_ICONS[name] || '';
 
   return (
     <div className="section-header-bar">
       <div className="section-bar-label">
-        <span className="section-bar-name">{name}</span>
+        <span className="section-bar-name">
+          {icon && <span className="section-bar-icon">{icon}</span>}
+          {name}
+        </span>
         <span className="section-bar-score" style={{ color }}>{score}</span>
       </div>
       <div className="section-bar-track">
@@ -447,12 +469,32 @@ function CreativeMetricsGrid({ metrics }) {
   );
 }
 
+function FlagSummary({ green, red, confidence, verdictColor }) {
+  return (
+    <div className="artist-card-flag-summary">
+      <span className="flag-count flag-count--green">
+        {green} green
+      </span>
+      <span className="flag-count-divider">/</span>
+      <span className="flag-count flag-count--red">
+        {red} red
+      </span>
+      {confidence && (
+        <>
+          <span className="flag-count-divider">&middot;</span>
+          <span className="flag-count flag-count--conf">{confidence} conf.</span>
+        </>
+      )}
+    </div>
+  );
+}
+
 // ---------------------------------------------------------------------------
 // Main ArtistCard Component
 // ---------------------------------------------------------------------------
 
-export default function ArtistCard({ result }) {
-  const [expanded, setExpanded] = useState(false);
+export default function ArtistCard({ result, defaultExpanded = false }) {
+  const [expanded, setExpanded] = useState(defaultExpanded);
 
   // Parse evidence_json if it's a string
   const evidence = useMemo(() => {
@@ -473,14 +515,15 @@ export default function ArtistCard({ result }) {
   const threatCategory = result.threat_category || '';
   const verdictColor = getVerdictColor(verdict);
   const summaryText = getSummaryText(verdict);
+  const flags = useMemo(() => countFlags(evidence), [evidence]);
 
-  // Compute category scores — verdict-aware (Task 5)
+  // Compute category scores — verdict-aware
   const categoryScores = useMemo(
     () => computeCategoryScores(sections, evidence, verdict),
     [sections, evidence, verdict],
   );
 
-  // Creative metrics (Task 7)
+  // Creative metrics
   const creativeMetrics = useMemo(
     () => formatCreativeSignals(buildCreativeMetrics(evidence)),
     [evidence],
@@ -542,8 +585,16 @@ export default function ArtistCard({ result }) {
           {/* Top area: radar chart + summary, side-by-side on desktop */}
           <div className="artist-card-top">
             <RadarChart scores={categoryScores} color={verdictColor} />
-            <div className="artist-card-summary" style={{ color: verdictColor }}>
-              {summaryText}
+            <div className="artist-card-summary-area">
+              <div className="artist-card-summary" style={{ color: verdictColor }}>
+                {summaryText}
+              </div>
+              <FlagSummary
+                green={flags.green}
+                red={flags.red}
+                confidence={confidence}
+                verdictColor={verdictColor}
+              />
             </div>
           </div>
 
@@ -556,7 +607,7 @@ export default function ArtistCard({ result }) {
               <div key={sectionName} className="artist-section">
                 <SectionBar name={sectionName} score={sectionScore} />
 
-                {/* Creative History extra metrics (Task 7) */}
+                {/* Creative History extra metrics */}
                 {sectionName === 'Creative History' && (
                   <CreativeMetricsGrid metrics={creativeMetrics} />
                 )}

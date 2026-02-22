@@ -7,6 +7,7 @@ import EntityDetail from './pages/EntityDetail';
 import ScanHistory from './pages/ScanHistory';
 import BlocklistManager from './pages/BlocklistManager';
 import ReviewHistory from './pages/ReviewHistory';
+import Preview from './pages/Preview';
 
 function App() {
   const [pendingCount, setPendingCount] = useState(0);
@@ -33,6 +34,7 @@ function App() {
             <NavLink to="/scans">Scan History</NavLink>
             <NavLink to="/blocklists">Blocklists</NavLink>
             <NavLink to="/history">Audit Log</NavLink>
+            <NavLink to="/preview">Preview <span className="badge" style={{ background: 'var(--purple)', fontSize: 10 }}>Dev</span></NavLink>
           </nav>
         </aside>
         <main className="main">
@@ -44,6 +46,7 @@ function App() {
             <Route path="/scans/:scanId" element={<ScanHistory />} />
             <Route path="/blocklists" element={<BlocklistManager />} />
             <Route path="/history" element={<ReviewHistory />} />
+            <Route path="/preview" element={<Preview />} />
           </Routes>
         </main>
       </div>
