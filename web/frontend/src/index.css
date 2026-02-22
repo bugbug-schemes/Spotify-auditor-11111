@@ -306,13 +306,13 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
 /* Chevron — fixed right, larger tap target */
 .artist-card-chevron {
   flex-shrink: 0;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: rgba(139,148,158,0.10);
   border: none;
   color: var(--text-dim);
-  font-size: 14px;
+  font-size: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -328,11 +328,57 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
   padding: 16px;
 }
 
-/* Summary text */
+/* Summary text + area */
+.artist-card-summary-area {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
 .artist-card-summary {
   font-size: 13px;
-  margin-bottom: 16px;
   line-height: 1.5;
+}
+
+/* Flag summary (green/red counts) */
+.artist-card-flag-summary {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+.flag-count {
+  font-weight: 600;
+}
+.flag-count--green {
+  color: #22c55e;
+}
+.flag-count--red {
+  color: #ef4444;
+}
+.flag-count--conf {
+  color: var(--text-dim);
+  font-weight: 400;
+}
+.flag-count-divider {
+  color: var(--text-dim);
+  opacity: 0.5;
+}
+
+/* Top area: radar chart + summary */
+.artist-card-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+.artist-card-top .artist-card-summary-area {
+  text-align: center;
+}
+.artist-card-top .radar-chart-container {
+  margin-bottom: 0;
 }
 
 /* --- Radar chart --- */
@@ -350,6 +396,12 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
 /* --- Section bars --- */
 .artist-section {
   margin-bottom: 14px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(48, 54, 61, 0.5);
+}
+.artist-section:first-of-type {
+  border-top: none;
+  padding-top: 0;
 }
 .section-header-bar {
   margin-bottom: 6px;
@@ -365,6 +417,12 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
   font-weight: 600;
   text-transform: uppercase;
   color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.section-bar-icon {
+  font-size: 13px;
 }
 .section-bar-score {
   font-size: 13px;
@@ -400,12 +458,25 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
   text-align: center;
   font-size: 13px;
 }
+.signal-content {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  flex-wrap: wrap;
+  min-width: 0;
+}
 .signal-text {
   word-break: normal;
   overflow-wrap: break-word;
 }
+.signal-source {
+  font-size: 11px;
+  color: var(--text-dim);
+  opacity: 0.7;
+  white-space: nowrap;
+}
 
-/* --- Creative metrics grid (Task 7) --- */
+/* --- Creative metrics grid --- */
 .creative-metrics-grid {
   display: flex;
   flex-wrap: wrap;
@@ -427,11 +498,32 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
   font-weight: 600;
   color: var(--text);
 }
+.creative-metric-icon {
+  flex-shrink: 0;
+  font-size: 12px;
+}
 
 /* ==========================================================================
-   Mobile responsive — stack name above tags on <600px
+   Responsive
    ========================================================================== */
 
+/* Desktop: radar chart alongside summary */
+@media (min-width: 601px) {
+  .artist-card-top {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .artist-card-top .artist-card-summary-area {
+    flex: 1;
+    padding-top: 20px;
+    text-align: left;
+  }
+  .artist-card-top .radar-chart-container {
+    flex-shrink: 0;
+  }
+}
+
+/* Mobile responsive — stack name above tags on <600px */
 @media (max-width: 600px) {
   .artist-card-header-content {
     flex-direction: column;
