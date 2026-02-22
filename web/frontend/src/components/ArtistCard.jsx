@@ -11,7 +11,7 @@ import {
 import RadarChart from './RadarChart';
 
 // ---------------------------------------------------------------------------
-// Section definitions — ordered per Task 8
+// Section definitions
 // ---------------------------------------------------------------------------
 
 const SECTION_ORDER = [
@@ -23,17 +23,13 @@ const SECTION_ORDER = [
   'Industry Signals',
 ];
 
-// Maps evidence tags to the section they belong in (Task 6: IRL Presence combines live + discogs)
 const TAG_TO_SECTION = {
-  // Platform Presence
   multi_platform: 'Platform Presence',
   single_platform: 'Platform Presence',
-  // Fan Engagement
   genuine_fans: 'Fan Engagement',
   low_fans: 'Fan Engagement',
   low_scrobble_engagement: 'Fan Engagement',
   listener_playlist_ratio: 'Fan Engagement',
-  // Creative History
   catalog_albums: 'Creative History',
   empty_catalog: 'Creative History',
   content_farm: 'Creative History',
@@ -43,14 +39,12 @@ const TAG_TO_SECTION = {
   same_day_release: 'Creative History',
   genius_credits: 'Creative History',
   collaboration: 'Creative History',
-  // IRL Presence (combined live + discogs)
   live_performance: 'IRL Presence',
   physical_release: 'IRL Presence',
   concert_history: 'IRL Presence',
   touring_geography: 'IRL Presence',
   named_tour: 'IRL Presence',
   bandcamp_presence: 'IRL Presence',
-  // Online Identity
   wikipedia: 'Online Identity',
   social_media: 'Online Identity',
   no_social_media: 'Online Identity',
@@ -58,7 +52,6 @@ const TAG_TO_SECTION = {
   career_bio: 'Online Identity',
   verified_identity: 'Online Identity',
   no_genres: 'Online Identity',
-  // Industry Signals
   industry_registered: 'Industry Signals',
   isni_registered: 'Industry Signals',
   ipi_registered: 'Industry Signals',
@@ -72,13 +65,11 @@ const TAG_TO_SECTION = {
   no_songwriter_share: 'Industry Signals',
   isrc_pfc_registrant: 'Industry Signals',
   cowriter_network: 'Industry Signals',
-  // Entity DB
   entity_confirmed_bad: 'Industry Signals',
   entity_suspected: 'Industry Signals',
   entity_bad_label: 'Industry Signals',
   entity_bad_songwriter: 'Industry Signals',
   entity_bad_network: 'Industry Signals',
-  // AI-specific
   ai_generated_image: 'Online Identity',
   ai_bio: 'Online Identity',
   stock_photo: 'Online Identity',
@@ -87,21 +78,19 @@ const TAG_TO_SECTION = {
   suspicious_bio: 'Online Identity',
   ai_generated_music: 'Industry Signals',
   deezer_ai_clear: 'Industry Signals',
-  // YouTube / Press
   youtube_presence: 'Online Identity',
   no_youtube: 'Online Identity',
   youtube_disparity: 'Fan Engagement',
   press_coverage: 'Online Identity',
-  // Name patterns
   generic_name: 'Online Identity',
   mood_word_titles: 'Creative History',
 };
 
-// Source to section mapping for evidence without tags
 const SOURCE_TO_SECTION = {
   Deezer: 'Platform Presence',
   MusicBrainz: 'Platform Presence',
   Genius: 'Platform Presence',
+  Catalog: 'Creative History',
   Discogs: 'IRL Presence',
   'Setlist.fm': 'IRL Presence',
   'Last.fm': 'Fan Engagement',
@@ -115,7 +104,7 @@ const SOURCE_TO_SECTION = {
   Spotify: 'Platform Presence',
 };
 
-// Default "no data" signals per section — absence is itself a signal
+// Default "no data" fallbacks
 const NO_DATA_SIGNALS = {
   'Platform Presence': { finding: 'Not found on Deezer, MusicBrainz, or Genius', source: 'Analysis' },
   'Fan Engagement': { finding: 'No fan engagement data from Last.fm or Deezer', source: 'Analysis' },
@@ -125,14 +114,40 @@ const NO_DATA_SIGNALS = {
   'Industry Signals': { finding: 'No industry registrations (ISNI, IPI, PRO) found', source: 'Analysis' },
 };
 
-// Section icons for visual identification
+// Candidates for padding thin sections — only used when source is absent from ALL evidence
+const SECTION_PAD_CANDIDATES = {
+  'Platform Presence': [
+    { src: 'Deezer', finding: 'Not found on Deezer' },
+    { src: 'MusicBrainz', finding: 'Not found on MusicBrainz' },
+    { src: 'Genius', finding: 'Not found on Genius' },
+  ],
+  'Fan Engagement': [
+    { src: 'Last.fm', finding: 'No Last.fm listener data found' },
+    { src: 'YouTube', finding: 'No YouTube engagement data found' },
+  ],
+  'Creative History': [],
+  'IRL Presence': [
+    { src: 'Setlist.fm', finding: 'No concerts found on Setlist.fm' },
+    { src: 'Discogs', finding: 'No physical releases found on Discogs' },
+    { src: 'Bandsintown', finding: 'No events found on Bandsintown' },
+  ],
+  'Online Identity': [
+    { src: 'Wikipedia', finding: 'No Wikipedia article found' },
+    { src: 'YouTube', finding: 'No YouTube channel found' },
+  ],
+  'Industry Signals': [
+    { src: 'PRO Registry', finding: 'No PRO registration found' },
+    { src: 'Entity DB', finding: 'No prior intelligence in entity database' },
+  ],
+};
+
 const SECTION_ICONS = {
-  'Platform Presence': '\uD83C\uDF10',  // globe
-  'Fan Engagement': '\uD83D\uDC65',     // people
-  'Creative History': '\uD83C\uDFB5',   // musical note
-  'IRL Presence': '\uD83C\uDFE4',       // building
-  'Online Identity': '\uD83D\uDD0D',    // magnifying glass
-  'Industry Signals': '\uD83C\uDFAD',   // performing arts
+  'Platform Presence': '\uD83C\uDF10',
+  'Fan Engagement': '\uD83D\uDC65',
+  'Creative History': '\uD83C\uDFB5',
+  'IRL Presence': '\uD83C\uDFE4',
+  'Online Identity': '\uD83D\uDD0D',
+  'Industry Signals': '\uD83C\uDFAD',
 };
 
 // ---------------------------------------------------------------------------
@@ -148,7 +163,127 @@ function classifyEvidence(evidence) {
   if (evidence.source && SOURCE_TO_SECTION[evidence.source]) {
     return SOURCE_TO_SECTION[evidence.source];
   }
-  return 'Industry Signals'; // fallback
+  return 'Industry Signals';
+}
+
+function parseDurationToSecs(dur) {
+  if (!dur) return null;
+  const parts = dur.split(':');
+  if (parts.length !== 2) return null;
+  return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
+}
+
+// ---------------------------------------------------------------------------
+// Creative metrics — extract from evidence and generate natural-language signals
+// ---------------------------------------------------------------------------
+
+function buildCreativeMetrics(evidenceList) {
+  const metrics = {};
+
+  for (const ev of evidenceList) {
+    const f = ev.finding || '';
+    const d = ev.detail || '';
+    const combined = f + ' ' + d;
+
+    const singlesMatch = combined.match(/(\d+)\s*singles?/i);
+    if (singlesMatch) metrics.singles = parseInt(singlesMatch[1], 10);
+
+    const albumsMatch = combined.match(/(\d+)\s*albums?/i);
+    if (albumsMatch) metrics.albums = parseInt(albumsMatch[1], 10);
+
+    const durationMatch = combined.match(/(?:avg|average)\s*(?:duration|track length|song duration)[:\s]*(\d+:\d{2})/i);
+    if (durationMatch) metrics.avgDuration = durationMatch[1];
+
+    const durationMatch2 = combined.match(/(\d:\d{2})\s*(?:avg|average)/i);
+    if (durationMatch2 && !metrics.avgDuration) metrics.avgDuration = durationMatch2[1];
+
+    const varianceMatch = combined.match(/(?:\u03C3|std|stdev|variance|deviation)[:\s=]*(\d+:\d{2}|\d+\.\d+s?)/i);
+    if (varianceMatch) metrics.durationVariance = varianceMatch[1];
+
+    const rangeMatch = combined.match(/range[:\s]*(\d+:\d{2})\s*[-\u2013]\s*(\d+:\d{2})/i);
+    if (rangeMatch) metrics.durationRange = `${rangeMatch[1]}\u2013${rangeMatch[2]}`;
+
+    const activeMatch = combined.match(/(?:active|career|recording)\s*(?:since|from|span)[:\s]*(\d{4})/i);
+    if (activeMatch && !metrics.startYear) metrics.startYear = parseInt(activeMatch[1], 10);
+
+    const firstReleaseMatch = combined.match(/(?:first|earliest)\s*(?:release|track|recording)[:\s]*(?:in\s*)?(\d{4})/i);
+    if (firstReleaseMatch && !metrics.startYear) metrics.startYear = parseInt(firstReleaseMatch[1], 10);
+
+    const dateRangeMatch = combined.match(/(\d{4})\s*[-\u2013]\s*(?:(\d{4})|present)/i);
+    if (dateRangeMatch && !metrics.startYear) metrics.startYear = parseInt(dateRangeMatch[1], 10);
+  }
+
+  if (metrics.startYear) {
+    const currentYear = new Date().getFullYear();
+    metrics.yearsActive = Math.max(1, currentYear - metrics.startYear);
+  }
+
+  return metrics;
+}
+
+function buildCreativeSignals(metrics) {
+  const signals = [];
+  const yearsActive = metrics.yearsActive || null;
+
+  // --- Duration signal (natural language) ---
+  if (metrics.avgDuration) {
+    const secs = parseDurationToSecs(metrics.avgDuration);
+    let finding = `Avg song duration ${metrics.avgDuration}`;
+
+    if (metrics.durationVariance) {
+      const varSecs = parseDurationToSecs(metrics.durationVariance);
+      if (varSecs !== null) {
+        if (varSecs < 15) finding += ' with very low variation';
+        else if (varSecs < 30) finding += ' with low variation';
+        else if (varSecs < 60) finding += ' with normal variation';
+        else finding += ' with high variation';
+      }
+    } else if (metrics.durationRange) {
+      finding += ` (range: ${metrics.durationRange})`;
+    }
+
+    let type = 'green_flag';
+    let strength = 'weak';
+    if (secs !== null) {
+      if (secs < 120) { type = 'red_flag'; strength = 'strong'; }
+      else if (secs < 150) { type = 'red_flag'; strength = 'weak'; }
+      else if (secs >= 180) { type = 'green_flag'; strength = 'moderate'; }
+    }
+
+    signals.push({ finding, source: 'Catalog', type, strength, tags: ['duration_analysis'], detail: '' });
+  }
+
+  return signals;
+}
+
+// ---------------------------------------------------------------------------
+// Section building
+// ---------------------------------------------------------------------------
+
+function padSection(sectionName, signals, allEvidence, minCount = 3) {
+  if (signals.length >= minCount) return signals;
+
+  const candidates = SECTION_PAD_CANDIDATES[sectionName];
+  if (!candidates || !candidates.length) return signals;
+
+  // Only add "Not found on X" if X doesn't appear ANYWHERE in evidence
+  const allSources = new Set(allEvidence.map(e => e.source));
+  const padded = [...signals];
+
+  for (const cand of candidates) {
+    if (padded.length >= minCount) break;
+    if (allSources.has(cand.src)) continue;
+    padded.push({
+      finding: cand.finding,
+      source: cand.src,
+      type: 'red_flag',
+      strength: 'weak',
+      tags: [],
+      detail: '',
+    });
+  }
+
+  return padded;
 }
 
 function buildSections(evidenceList) {
@@ -166,7 +301,16 @@ function buildSections(evidenceList) {
     }
   }
 
-  // Sort signals within each section: strong first, then moderate, then weak
+  // Inject creative metric signals if not already covered by existing findings
+  const metrics = buildCreativeMetrics(evidenceList);
+  const creativeSignals = buildCreativeSignals(metrics);
+  const existingFindings = sections['Creative History'].map(e => (e.finding || '').toLowerCase()).join(' ');
+  for (const cs of creativeSignals) {
+    if (cs.tags.includes('duration_analysis') && /duration|avg/.test(existingFindings)) continue;
+    sections['Creative History'].push(cs);
+  }
+
+  // Sort by strength: strong first, then moderate, then weak
   const strengthOrder = { strong: 0, moderate: 1, weak: 2 };
   for (const name of SECTION_ORDER) {
     sections[name].sort((a, b) => {
@@ -174,13 +318,17 @@ function buildSections(evidenceList) {
       const bOrder = strengthOrder[b.strength] ?? 1;
       return aOrder - bOrder;
     });
-    // Cap at 5 most impactful per section
     if (sections[name].length > 5) {
       sections[name] = sections[name].slice(0, 5);
     }
   }
 
-  // Ensure every section has at least 1 signal
+  // Pad thin sections to at least 3 signals
+  for (const name of SECTION_ORDER) {
+    sections[name] = padSection(name, sections[name], evidenceList);
+  }
+
+  // Final ensure: every section has at least 1 signal
   for (const name of SECTION_ORDER) {
     if (sections[name].length === 0) {
       const fallback = NO_DATA_SIGNALS[name];
@@ -199,8 +347,6 @@ function buildSections(evidenceList) {
 }
 
 function computeCategoryScores(sections, evidenceList, verdict) {
-  // Verdict-aware base scores: verified artists start higher so
-  // their per-section scores reflect overall legitimacy properly
   const verdictBase = {
     'Verified Artist': 75,
     'Likely Authentic': 62,
@@ -236,137 +382,6 @@ function countFlags(evidenceList) {
     else if (ev.type === 'red_flag') red++;
   }
   return { green, red };
-}
-
-// ---------------------------------------------------------------------------
-// Creative metrics helpers (Task 7)
-// ---------------------------------------------------------------------------
-
-function parseDurationToSecs(dur) {
-  if (!dur) return null;
-  const parts = dur.split(':');
-  if (parts.length !== 2) return null;
-  return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
-}
-
-function buildCreativeMetrics(evidenceList) {
-  const metrics = {};
-
-  for (const ev of evidenceList) {
-    const f = ev.finding || '';
-    const d = ev.detail || '';
-    const combined = f + ' ' + d;
-
-    // Singles count
-    const singlesMatch = combined.match(/(\d+)\s*singles?/i);
-    if (singlesMatch) metrics.singles = parseInt(singlesMatch[1], 10);
-
-    // Albums count
-    const albumsMatch = combined.match(/(\d+)\s*albums?/i);
-    if (albumsMatch) metrics.albums = parseInt(albumsMatch[1], 10);
-
-    // Avg duration
-    const durationMatch = combined.match(/(?:avg|average)\s*(?:duration|track length|song duration)[:\s]*(\d+:\d{2})/i);
-    if (durationMatch) metrics.avgDuration = durationMatch[1];
-
-    const durationMatch2 = combined.match(/(\d:\d{2})\s*(?:avg|average)/i);
-    if (durationMatch2 && !metrics.avgDuration) metrics.avgDuration = durationMatch2[1];
-
-    // Track duration variance / std dev
-    const varianceMatch = combined.match(/(?:\u03C3|std|stdev|variance|deviation)[:\s=]*(\d+:\d{2}|\d+\.\d+s?)/i);
-    if (varianceMatch) metrics.durationVariance = varianceMatch[1];
-
-    // Duration range
-    const rangeMatch = combined.match(/range[:\s]*(\d+:\d{2})\s*[-\u2013]\s*(\d+:\d{2})/i);
-    if (rangeMatch) {
-      metrics.durationRange = `${rangeMatch[1]}\u2013${rangeMatch[2]}`;
-    }
-
-    // Years active
-    const activeMatch = combined.match(/(?:active|career|recording)\s*(?:since|from|span)[:\s]*(\d{4})/i);
-    if (activeMatch && !metrics.startYear) metrics.startYear = parseInt(activeMatch[1], 10);
-
-    const firstReleaseMatch = combined.match(/(?:first|earliest)\s*(?:release|track|recording)[:\s]*(?:in\s*)?(\d{4})/i);
-    if (firstReleaseMatch && !metrics.startYear) metrics.startYear = parseInt(firstReleaseMatch[1], 10);
-
-    const dateRangeMatch = combined.match(/(\d{4})\s*[-\u2013]\s*(?:(\d{4})|present)/i);
-    if (dateRangeMatch && !metrics.startYear) {
-      metrics.startYear = parseInt(dateRangeMatch[1], 10);
-    }
-  }
-
-  if (metrics.startYear) {
-    const currentYear = new Date().getFullYear();
-    metrics.yearsActive = Math.max(1, currentYear - metrics.startYear);
-  }
-
-  return metrics;
-}
-
-function formatCreativeSignals(metrics) {
-  const extra = [];
-  const yearsActive = metrics.yearsActive || null;
-
-  if (metrics.singles != null && yearsActive) {
-    const spy = parseFloat((metrics.singles / yearsActive).toFixed(1));
-    let level = 'weak_positive';
-    if (spy > 20) level = 'strong_negative';
-    else if (spy > 10) level = 'weak_negative';
-    else if (spy >= 2 && spy <= 8) level = 'weak_positive';
-    else if (spy < 2) level = 'strong_positive';
-    extra.push({ label: 'Singles per year', value: spy.toString(), level });
-  }
-
-  if (metrics.albums != null && yearsActive) {
-    const apy = parseFloat((metrics.albums / yearsActive).toFixed(1));
-    let level = 'weak_negative';
-    if (apy >= 0.3) level = 'strong_positive';
-    else if (apy > 0) level = 'weak_positive';
-    extra.push({ label: 'Albums per year', value: apy.toString(), level });
-  }
-
-  if (metrics.singles != null && metrics.albums != null) {
-    let value;
-    let level;
-    if (metrics.albums > 0) {
-      const ratio = metrics.singles / metrics.albums;
-      value = ratio.toFixed(1);
-      if (ratio < 5) level = 'strong_positive';
-      else if (ratio < 10) level = 'weak_positive';
-      else level = 'weak_negative';
-    } else {
-      value = '\u221E \u2014 no albums';
-      level = metrics.singles > 20 ? 'strong_negative' : 'weak_negative';
-    }
-    extra.push({ label: 'Singles-to-album ratio', value, level });
-  }
-
-  if (metrics.avgDuration) {
-    const secs = parseDurationToSecs(metrics.avgDuration);
-    let level = 'weak_positive';
-    if (secs !== null) {
-      if (secs < 120) level = 'strong_negative';
-      else if (secs < 150) level = 'weak_negative';
-      else if (secs >= 180) level = 'strong_positive';
-    }
-    extra.push({ label: 'Avg song duration', value: metrics.avgDuration, level });
-  }
-
-  if (metrics.durationVariance) {
-    const varStr = metrics.durationVariance;
-    let level = 'weak_positive';
-    const varSecs = parseDurationToSecs(varStr);
-    if (varSecs !== null) {
-      if (varSecs < 15) level = 'strong_negative';
-      else if (varSecs < 30) level = 'weak_negative';
-      else level = 'strong_positive';
-    }
-    extra.push({ label: 'Duration variance', value: `\u03C3 = ${varStr}`, level });
-  } else if (metrics.durationRange) {
-    extra.push({ label: 'Duration range', value: metrics.durationRange, level: 'weak_positive' });
-  }
-
-  return extra;
 }
 
 function getSummaryText(verdict) {
@@ -411,7 +426,9 @@ function SignalItem({ evidence }) {
   const level = getSignalLevel(evidence.type, evidence.strength);
   const color = getSignalColor(level);
   const icon = getSignalIcon(level);
-  const showSource = evidence.source && evidence.source !== 'Analysis';
+  const showSource = evidence.source
+    && evidence.source !== 'Analysis'
+    && evidence.source !== 'Spotify';
 
   return (
     <div className="signal-item" style={{ color }}>
@@ -450,26 +467,7 @@ function SectionBar({ name, score }) {
   );
 }
 
-function CreativeMetricsGrid({ metrics }) {
-  if (!metrics.length) return null;
-  return (
-    <div className="creative-metrics-grid">
-      {metrics.map((m, i) => {
-        const color = m.level ? getSignalColor(m.level) : 'var(--text)';
-        const icon = m.level ? getSignalIcon(m.level) : '';
-        return (
-          <div key={i} className="creative-metric">
-            {icon && <span className="creative-metric-icon" style={{ color }}>{icon}</span>}
-            <span className="creative-metric-label">{m.label}:</span>
-            <span className="creative-metric-value" style={{ color }}>{m.value}</span>
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-function FlagSummary({ green, red, confidence, verdictColor }) {
+function FlagSummary({ green, red, confidence }) {
   return (
     <div className="artist-card-flag-summary">
       <span className="flag-count flag-count--green">
@@ -496,7 +494,6 @@ function FlagSummary({ green, red, confidence, verdictColor }) {
 export default function ArtistCard({ result, defaultExpanded = false }) {
   const [expanded, setExpanded] = useState(defaultExpanded);
 
-  // Parse evidence_json if it's a string
   const evidence = useMemo(() => {
     if (!result.evidence_json) return [];
     if (typeof result.evidence_json === 'string') {
@@ -506,7 +503,6 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
     return Array.isArray(result.evidence_json) ? result.evidence_json : [];
   }, [result.evidence_json]);
 
-  // Build sections from evidence
   const sections = useMemo(() => buildSections(evidence), [evidence]);
 
   const verdict = result.verdict || 'Inconclusive';
@@ -517,19 +513,11 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
   const summaryText = getSummaryText(verdict);
   const flags = useMemo(() => countFlags(evidence), [evidence]);
 
-  // Compute category scores — verdict-aware
   const categoryScores = useMemo(
     () => computeCategoryScores(sections, evidence, verdict),
     [sections, evidence, verdict],
   );
 
-  // Creative metrics
-  const creativeMetrics = useMemo(
-    () => formatCreativeSignals(buildCreativeMetrics(evidence)),
-    [evidence],
-  );
-
-  // Classification tags
   const tags = [verdict];
   if (threatCategory && threatCategory !== 'None' && threatCategory !== '') {
     tags.push(threatCategory);
@@ -537,7 +525,6 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
 
   return (
     <div className="artist-card">
-      {/* Header — collapsed state: score badge, name, tags, chevron */}
       <div
         className={`artist-card-header ${expanded ? 'artist-card-header--expanded' : ''}`}
         onClick={() => setExpanded(!expanded)}
@@ -579,10 +566,8 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
         </button>
       </div>
 
-      {/* Expanded body */}
       {expanded && (
         <div className="artist-card-body">
-          {/* Top area: radar chart + summary, side-by-side on desktop */}
           <div className="artist-card-top">
             <RadarChart scores={categoryScores} color={verdictColor} />
             <div className="artist-card-summary-area">
@@ -593,12 +578,10 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
                 green={flags.green}
                 red={flags.red}
                 confidence={confidence}
-                verdictColor={verdictColor}
               />
             </div>
           </div>
 
-          {/* Sections */}
           {SECTION_ORDER.map(sectionName => {
             const signals = sections[sectionName];
             const sectionScore = categoryScores[sectionName] ?? 0;
@@ -606,12 +589,6 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
             return (
               <div key={sectionName} className="artist-section">
                 <SectionBar name={sectionName} score={sectionScore} />
-
-                {/* Creative History extra metrics */}
-                {sectionName === 'Creative History' && (
-                  <CreativeMetricsGrid metrics={creativeMetrics} />
-                )}
-
                 <div className="artist-section-signals">
                   {signals.map((ev, i) => (
                     <SignalItem key={i} evidence={ev} />
