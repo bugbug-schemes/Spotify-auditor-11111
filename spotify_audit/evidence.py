@@ -135,6 +135,8 @@ class ExternalData:
     pro_songwriter_registered: bool = False
     pro_pfc_publisher_match: bool = False
     pro_zero_songwriter_share: bool = False
+    pro_songwriter_share_pct: float = -1.0   # -1 = unknown, 0-100 = actual share
+    pro_publisher_share_pct: float = -1.0    # -1 = unknown, 0-100 = actual share
 
     # ISRC data (Priority 7 — from Deezer + MusicBrainz)
     isrcs: list[str] = field(default_factory=list)
@@ -161,6 +163,10 @@ class ExternalData:
     match_methods: dict[str, str] = field(default_factory=dict)
     had_platform_ids: dict[str, bool] = field(default_factory=dict)
     artist_name: str = ""  # for short-name detection in match quality helpers
+
+    # Release year summary for timeline visualization (populated by CLI)
+    # Format: {year: {"albums": N, "singles": N, "eps": N}}
+    release_year_summary: dict[int, dict[str, int]] = field(default_factory=dict)
 
     # Track which APIs errored (timeout/network) vs genuinely returned no results
     api_errors: dict[str, str] = field(default_factory=dict)
@@ -244,6 +250,7 @@ class Evidence:
         no_pro_registration  — not found in PRO databases
         pfc_publisher        — publisher matches known PFC entity
         no_songwriter_share  — 100% publisher share, 0% songwriter
+        normal_pro_split     — normal songwriter/publisher ownership split
         bandcamp_presence    — Bandcamp page found (strong legitimacy)
         press_coverage       — press coverage in recognized publications
         isrc_pfc_registrant  — ISRC registrant matches PFC entity
@@ -391,13 +398,17 @@ class ArtistEvaluation:
 def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     """Compute 0-100 scores for 6 signal categories.
 
-    Categories:
-        Platform Presence: How widely is the artist found across music databases?
-        Fan Engagement: Do real people follow and listen to this artist?
-        Creative History: Does the artist have a real body of work?
-        Live Performance: Has the artist performed live?
-        Online Identity: Does the artist have a real-world identity trail?
-        Industry Signals: Is the artist registered in professional systems?
+    Categories (v0.8 — Online Identity removed, Blocklist Status added):
+        Platform Presence: Where does this artist exist across the music ecosystem?
+        Fan Engagement: Do real humans listen to and engage with this artist?
+        Creative History: Does this artist have a legitimate creative body of work?
+        IRL Presence: Does this artist exist in the physical world?
+        Industry Signals: Is the artist recognized by the music industry infrastructure?
+        Blocklist Status: Does this artist match any known fraud databases?
+
+    Former "Online Identity" data points redistributed:
+        - YouTube, Wikipedia, social media → Platform Presence
+        - Discogs bio with career keywords → Industry Signals
     """
     ext = ev.external_data or ExternalData()
 
@@ -405,8 +416,45 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
         return max(0, min(100, int(v)))
 
     # --- Platform Presence (0-100) ---
-    # 7 platforms max; each adds ~14 pts
-    platform_score = _clamp(ev.platform_presence.count() * 14.3)
+    # Core platform count (8 platforms max: Deezer, MusicBrainz, Genius,
+    # Last.fm, Discogs, Setlist.fm, YouTube, Wikipedia)
+    platform_pts = ev.platform_presence.count() * 8  # base ~8 pts per platform
+
+    # YouTube (moved from Online Identity)
+    if ext.youtube_channel_found:
+        platform_pts += 10
+        if ext.youtube_subscriber_count >= 10_000:
+            platform_pts += 8
+
+    # Wikipedia (moved from Online Identity)
+    if ext.wikipedia_found:
+        platform_pts += 12
+        if ext.wikipedia_length >= 5000:
+            platform_pts += 5
+    elif any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values()):
+        platform_pts += 8
+
+    # Social media presence (moved from Online Identity)
+    social_count = 0
+    if ext.genius_facebook_name:
+        social_count += 1
+    if ext.genius_instagram_name:
+        social_count += 1
+    if ext.genius_twitter_name:
+        social_count += 1
+    for _u in ext.discogs_social_urls:
+        social_count += 1
+    for _rel_type, url in ext.musicbrainz_urls.items():
+        if any(s in url.lower() for s in ["facebook", "instagram", "twitter", "youtube", "bandcamp"]):
+            social_count += 1
+    social_count = min(social_count, 6)  # cap duplicates
+    platform_pts += social_count * 3
+
+    # Genius followers as platform signal
+    if ext.genius_followers_count >= 100:
+        platform_pts += 5
+
+    platform_score = _clamp(platform_pts)
 
     # --- Fan Engagement (0-100) ---
     fans = ev.platform_presence.deezer_fans or 0
@@ -466,7 +514,7 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
 
     creative_score = _clamp(creative_pts)
 
-    # --- Live Performance (0-100) ---
+    # --- IRL Presence (0-100) --- (renamed from Live Performance)
     live_pts = 0
 
     # Setlist.fm
@@ -489,6 +537,12 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     if ext.songkick_on_tour:
         live_pts += 10
 
+    # Physical releases on Discogs
+    if ext.discogs_physical_releases >= 5:
+        live_pts += 15
+    elif ext.discogs_physical_releases >= 1:
+        live_pts += 8
+
     # Tour names
     if ext.setlistfm_tour_names:
         live_pts += 15
@@ -504,64 +558,27 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
 
     live_score = _clamp(live_pts)
 
-    # --- Online Identity (0-100) ---
-    identity_pts = 0
-
-    # Social media count
-    social_count = 0
-    if ext.genius_facebook_name:
-        social_count += 1
-    if ext.genius_instagram_name:
-        social_count += 1
-    if ext.genius_twitter_name:
-        social_count += 1
-    for u in ext.discogs_social_urls:
-        social_count += 1
-    # MusicBrainz URL rels
-    for rel_type, url in ext.musicbrainz_urls.items():
-        if any(s in url.lower() for s in ["facebook", "instagram", "twitter", "youtube", "bandcamp"]):
-            social_count += 1
-    social_count = min(social_count, 8)  # cap duplicates
-    identity_pts += social_count * 5
-
-    # Wikipedia (direct lookup or via MusicBrainz)
-    if ext.wikipedia_found:
-        identity_pts += 25
-        if ext.wikipedia_monthly_views >= 10_000:
-            identity_pts += 10
-    elif any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values()):
-        identity_pts += 20
-
-    # Discogs bio
-    if len(ext.discogs_profile) >= 200:
-        identity_pts += 15
-    elif len(ext.discogs_profile) >= 50:
-        identity_pts += 8
-
-    # Real name known
-    if ext.discogs_realname:
-        identity_pts += 10
-
-    # Group members
-    if ext.discogs_members:
-        identity_pts += 10
-
-    # Genius verified
-    if ext.genius_is_verified:
-        identity_pts += 15
-
-    identity_score = _clamp(identity_pts)
-
     # --- Industry Signals (0-100) ---
     industry_pts = 0
 
     # ISNI
     if ext.musicbrainz_isnis:
-        industry_pts += 30
+        industry_pts += 20
 
     # IPI
     if ext.musicbrainz_ipis:
-        industry_pts += 30
+        industry_pts += 20
+
+    # ASCAP/BMI registration
+    if ext.pro_checked:
+        if ext.pro_songwriter_registered:
+            industry_pts += 15
+            if ext.pro_songwriter_share_pct >= 30:
+                industry_pts += 5  # normal split bonus
+        elif ext.musicbrainz_ipis:
+            pass  # already counted via IPI above
+        else:
+            industry_pts -= 10  # not found penalty
 
     # MusicBrainz metadata richness
     mb_rich = sum([
@@ -573,11 +590,23 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     ])
     industry_pts += mb_rich * 5
 
+    # Genius profile depth
+    if ext.genius_song_count >= 20:
+        industry_pts += 10
+    elif ext.genius_song_count >= 5:
+        industry_pts += 5
+
+    # Discogs bio with career keywords (moved from Online Identity)
+    if len(ext.discogs_profile) >= 200:
+        industry_pts += 10
+    elif len(ext.discogs_profile) >= 50:
+        industry_pts += 5
+
     # Discogs data quality
     if ext.discogs_data_quality == "Correct":
-        industry_pts += 10
-    elif ext.discogs_data_quality:
         industry_pts += 5
+    elif ext.discogs_data_quality:
+        industry_pts += 3
 
     # PFC label penalty
     for e in ev.red_flags:
@@ -586,13 +615,34 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
 
     industry_score = _clamp(industry_pts)
 
+    # --- Blocklist Status (0-100) --- (new category)
+    # 100 = completely clean, 0 = matched on all blocklists
+    blocklist_pts = 100  # start clean, deduct for hits
+
+    for e in ev.red_flags:
+        tag_set = set(e.tags) if e.tags else set()
+        if tag_set & {"known_ai_artist"}:
+            blocklist_pts -= 40
+        if tag_set & {"pfc_label", "known_ai_label"}:
+            blocklist_pts -= 30
+        if tag_set & {"pfc_songwriter"}:
+            blocklist_pts -= 20
+        if tag_set & {"entity_confirmed_bad"}:
+            blocklist_pts -= 30
+        if tag_set & {"entity_suspected"}:
+            blocklist_pts -= 15
+        if tag_set & {"pfc_publisher"}:
+            blocklist_pts -= 25
+
+    blocklist_score = _clamp(blocklist_pts)
+
     return {
         "Platform Presence": platform_score,
         "Fan Engagement": engagement_score,
         "Creative History": creative_score,
-        "Live Performance": live_score,
-        "Online Identity": identity_score,
+        "IRL Presence": live_score,
         "Industry Signals": industry_score,
+        "Blocklist Status": blocklist_score,
     }
 
 
@@ -2521,16 +2571,43 @@ def _collect_pro_registry_evidence(ext: ExternalData) -> list[Evidence]:
                        "This is the structural signature of a work-for-hire / PFC arrangement.",
                 tags=["no_songwriter_share"],
             ))
+        # Normal songwriter/publisher split
+        elif ext.pro_songwriter_share_pct >= 30:
+            sw = ext.pro_songwriter_share_pct
+            pub = ext.pro_publisher_share_pct
+            split_str = f"{sw:.0f}%/{pub:.0f}%" if pub >= 0 else f"{sw:.0f}% songwriter"
+            evidence.append(Evidence(
+                finding=f"Normal songwriter/publisher ownership split ({split_str})",
+                source="PRO Registry",
+                evidence_type="green_flag",
+                strength="weak",
+                detail="Standard splits are typically 50/50 between writer and publisher. "
+                       "This indicates a normal publishing arrangement.",
+                tags=["normal_pro_split"],
+            ))
     else:
-        evidence.append(Evidence(
-            finding="Not found in BMI or ASCAP databases",
-            source="PRO Registry",
-            evidence_type="red_flag",
-            strength="moderate",
-            detail="No works registered with BMI or ASCAP. Any professional songwriter "
-                   "collecting royalties in the US will be registered with a PRO.",
-            tags=["no_pro_registration"],
-        ))
+        # Non-US fallback: IPI code from MusicBrainz is equivalent to global PRO registration
+        if ext.musicbrainz_ipis:
+            evidence.append(Evidence(
+                finding=f"Not in BMI/ASCAP but has IPI code (non-US PRO registration)",
+                source="PRO Registry / MusicBrainz",
+                evidence_type="green_flag",
+                strength="weak",
+                detail="Artist not found in US PRO databases (BMI/ASCAP) but has an IPI code "
+                       "in MusicBrainz, confirming registration with a performing rights "
+                       "organization somewhere globally.",
+                tags=["pro_registered"],
+            ))
+        else:
+            evidence.append(Evidence(
+                finding="Not found in BMI or ASCAP databases",
+                source="PRO Registry",
+                evidence_type="red_flag",
+                strength="moderate",
+                detail="No works registered with BMI or ASCAP. Any professional songwriter "
+                       "collecting royalties in the US will be registered with a PRO.",
+                tags=["no_pro_registration"],
+            ))
 
     return evidence
 

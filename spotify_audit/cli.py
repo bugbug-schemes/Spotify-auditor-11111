@@ -1165,7 +1165,10 @@ def _run_audit(
                         if e.get("evidence_type") == "red_flag"
                         and e.get("strength") in ("strong", "moderate")]) >= 1:
                     try:
-                        pro_result = pro_client.search_writer(artist.name)
+                        pro_result = pro_client.search_writer(
+                            artist.name,
+                            track_titles=artist.track_titles[:3],
+                        )
                         ext.pro_checked = True
                         ext.pro_found_bmi = pro_result.found_bmi
                         ext.pro_found_ascap = pro_result.found_ascap
@@ -1174,8 +1177,33 @@ def _run_audit(
                         ext.pro_songwriter_registered = pro_result.songwriter_registered
                         ext.pro_pfc_publisher_match = pro_result.pfc_publisher_match
                         ext.pro_zero_songwriter_share = pro_result.zero_songwriter_share
+                        ext.pro_songwriter_share_pct = pro_result.songwriter_share_pct
+                        ext.pro_publisher_share_pct = pro_result.publisher_share_pct
                     except Exception as exc:
                         logger.debug("PRO registry check failed for '%s': %s", artist.name, exc)
+
+            # Build release year summary for timeline visualization
+            if artist.release_dates:
+                year_summary: dict[int, dict[str, int]] = {}
+                for d in artist.release_dates:
+                    try:
+                        year = int(d[:4])
+                    except (ValueError, IndexError):
+                        continue
+                    if year not in year_summary:
+                        year_summary[year] = {"albums": 0, "singles": 0}
+                # We don't have per-release type info from dates alone,
+                # so distribute album_count and single_count proportionally
+                # across years, or just count releases per year
+                from collections import Counter
+                year_counts = Counter(int(d[:4]) for d in artist.release_dates if len(d) >= 4)
+                for year, count in year_counts.items():
+                    year_summary[year] = {
+                        "albums": 0,
+                        "singles": 0,
+                        "releases": count,
+                    }
+                ext.release_year_summary = year_summary
 
             # Run evidence evaluation
             ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
