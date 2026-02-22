@@ -301,7 +301,33 @@ function renderRecentScans() {
         '<a class="recent-link" href="/report/' + s.id + '" target="_blank">View Report</a>' +
       '</div>'
     ).join('');
+    // Prune links whose reports no longer exist on the server
+    pruneRecentScans(recent);
   } catch(e) {}
+}
+
+function pruneRecentScans(recent) {
+  // Check each recent scan in parallel; remove ones that are truly gone
+  Promise.all(recent.map(s =>
+    fetch('/api/scan/' + s.id).then(r => r.ok ? s : null).catch(() => null)
+  )).then(results => {
+    const valid = results.filter(Boolean);
+    if (valid.length < recent.length) {
+      localStorage.setItem('recentScans', JSON.stringify(valid));
+      // Re-render list without pruning again to avoid infinite loop
+      const list = document.getElementById('recentList');
+      if (valid.length === 0) {
+        document.getElementById('recentScans').style.display = 'none';
+      } else {
+        list.innerHTML = valid.map(s =>
+          '<div class="recent-item">' +
+            '<span class="recent-name">' + (s.name || 'Unknown') + '</span>' +
+            '<a class="recent-link" href="/report/' + s.id + '" target="_blank">View Report</a>' +
+          '</div>'
+        ).join('');
+      }
+    }
+  });
 }
 
 // Allow Enter key to start scan

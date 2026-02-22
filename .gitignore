@@ -20,6 +20,7 @@ venv/
 # Databases
 spotify_audit/data/cache.db
 spotify_audit/data/entities.db
+spotify_audit/data/scan_reports.db
 
 # Web server
 web/.server.pid

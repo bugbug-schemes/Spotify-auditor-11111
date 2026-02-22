@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import logging
 import os
+import sqlite3
 import sys
 import threading
 import time
@@ -34,6 +35,73 @@ from web.api import cms_api, init_db
 app = Flask(__name__, template_folder="templates", static_folder="static")
 app.register_blueprint(cms_api)
 logger = logging.getLogger("spotify_audit.web")
+
+# ---------------------------------------------------------------------------
+# Persistent scan store — SQLite-backed so reports survive server restarts
+# ---------------------------------------------------------------------------
+SCAN_DB_PATH = Path(__file__).parent.parent / "spotify_audit" / "data" / "scan_reports.db"
+
+
+class ScanStore:
+    """SQLite store for completed scan reports."""
+
+    def __init__(self, db_path: Path = SCAN_DB_PATH):
+        db_path.parent.mkdir(parents=True, exist_ok=True)
+        self._db_path = str(db_path)
+        self._local = threading.local()
+        self._init_schema(self._get_conn())
+
+    def _get_conn(self) -> sqlite3.Connection:
+        conn = getattr(self._local, "conn", None)
+        if conn is None:
+            conn = sqlite3.connect(self._db_path)
+            conn.row_factory = sqlite3.Row
+            self._local.conn = conn
+        return conn
+
+    @staticmethod
+    def _init_schema(conn: sqlite3.Connection) -> None:
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS scan_reports (
+                scan_id       TEXT PRIMARY KEY,
+                status        TEXT NOT NULL,
+                result_html   TEXT,
+                playlist_name TEXT,
+                message       TEXT,
+                error         TEXT,
+                created_at    REAL NOT NULL
+            )
+        """)
+        conn.commit()
+
+    def save(self, scan_id: str, scan: dict) -> None:
+        conn = self._get_conn()
+        conn.execute("""
+            INSERT OR REPLACE INTO scan_reports
+                (scan_id, status, result_html, playlist_name, message, error, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """, (
+            scan_id,
+            scan["status"],
+            scan.get("result_html"),
+            scan.get("playlist_name"),
+            scan.get("message"),
+            scan.get("error"),
+            scan.get("started_at", time.time()),
+        ))
+        conn.commit()
+
+    def get(self, scan_id: str) -> dict | None:
+        conn = self._get_conn()
+        row = conn.execute(
+            "SELECT * FROM scan_reports WHERE scan_id = ?", (scan_id,)
+        ).fetchone()
+        if not row:
+            return None
+        return dict(row)
+
+
+scan_store = ScanStore()
 
 # Serve the Entity Review CMS React app at /cms
 CMS_DIR = Path(__file__).parent / "static" / "cms"
@@ -97,6 +165,8 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             "playlist_name": playlist_report.playlist_name,
             "message": f"Done! Analyzed {playlist_report.total_unique_artists} artists.",
         })
+        # Persist completed scan to SQLite so it survives server restarts
+        scan_store.save(scan_id, scans[scan_id])
     except Exception as exc:
         import traceback
         tb = traceback.format_exc()
@@ -107,6 +177,7 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             "error": str(exc),
             "message": f"Error: {exc}\n\nTraceback:\n{tb}",
         })
+        scan_store.save(scan_id, scans[scan_id])
     finally:
         with _scans_lock:
             _active_scan_count -= 1
@@ -169,24 +240,46 @@ def start_scan():
 
 @app.route("/api/scan/<scan_id>")
 def scan_status(scan_id):
+    # Check in-memory store first (for running scans with live progress)
     scan = scans.get(scan_id)
-    if not scan:
-        return jsonify({"error": "Scan not found"}), 404
+    if scan:
+        resp = {k: v for k, v in scan.items() if k != "result_html"}
+        resp["has_result"] = scan["result_html"] is not None
+        elapsed = time.time() - scan["started_at"]
+        resp["elapsed_seconds"] = round(elapsed, 1)
+        return jsonify(resp)
 
-    # Don't send the full HTML in status polls
-    resp = {k: v for k, v in scan.items() if k != "result_html"}
-    resp["has_result"] = scan["result_html"] is not None
-    elapsed = time.time() - scan["started_at"]
-    resp["elapsed_seconds"] = round(elapsed, 1)
-    return jsonify(resp)
+    # Fall back to SQLite for completed scans that survived a restart
+    saved = scan_store.get(scan_id)
+    if saved:
+        return jsonify({
+            "status": saved["status"],
+            "phase": "done" if saved["status"] == "complete" else "error",
+            "has_result": saved["result_html"] is not None,
+            "playlist_name": saved["playlist_name"],
+            "message": saved["message"],
+            "error": saved.get("error"),
+            "elapsed_seconds": 0,
+            "current": 0,
+            "total": 0,
+        })
+
+    return jsonify({"error": "Scan not found"}), 404
 
 
 @app.route("/report/<scan_id>")
 def view_report(scan_id):
+    # Check in-memory first
     scan = scans.get(scan_id)
-    if not scan or scan["status"] != "complete" or not scan["result_html"]:
-        return "Report not ready yet", 404
-    return scan["result_html"]
+    if scan and scan["status"] == "complete" and scan["result_html"]:
+        return scan["result_html"]
+
+    # Fall back to SQLite
+    saved = scan_store.get(scan_id)
+    if saved and saved["status"] == "complete" and saved["result_html"]:
+        return saved["result_html"]
+
+    return "Report not ready yet", 404
 
 
 if __name__ == "__main__":
