@@ -31,8 +31,6 @@ sys.path.insert(0, str(PROJECT_ROOT))
 
 from flask import Flask, request, jsonify, render_template, send_from_directory
 
-from spotify_audit.audit_runner import run_audit, build_config
-from spotify_audit.reports.formatter import to_html
 from web.api import cms_api, init_db
 from web.scan_store import ScanStore
 
@@ -109,6 +107,12 @@ def _build_error_report(playlist_url: str, exc: Exception, tb: str) -> str:
 
 def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
     """Background thread: run the audit and store results."""
+    # Lazy-import heavy scan machinery so the Flask app starts instantly.
+    # These imports pull in 13+ API clients and ML modules — too slow for
+    # worker init on Render's free tier where CPU is limited.
+    from spotify_audit.audit_runner import run_audit, build_config
+    from spotify_audit.reports.formatter import to_html
+
     # Track last heartbeat write to avoid hammering SQLite on every tick
     last_db_write = time.time()
     HEARTBEAT_INTERVAL = 10  # seconds between SQLite writes
@@ -203,6 +207,12 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             _active_scans.pop(scan_id, None)
 
         threading.Thread(target=_deferred_cleanup, daemon=True).start()
+
+
+@app.route("/healthz")
+def healthz():
+    """Lightweight health check for Render — no heavy imports needed."""
+    return jsonify({"status": "ok"}), 200
 
 
 @app.route("/")
