@@ -100,8 +100,25 @@ class ScanStore:
             return None
         return dict(row)
 
+    def recover_interrupted(self) -> int:
+        """Mark any scans left in 'running' state as interrupted (server died mid-scan)."""
+        conn = self._get_conn()
+        cursor = conn.execute("""
+            UPDATE scan_reports
+               SET status = 'error',
+                   error  = 'Scan interrupted by server restart. Please try again.',
+                   message = 'Scan interrupted by server restart. Please try again.'
+             WHERE status = 'running'
+        """)
+        conn.commit()
+        return cursor.rowcount
+
 
 scan_store = ScanStore()
+# On startup, mark any orphaned running scans as interrupted
+_recovered = scan_store.recover_interrupted()
+if _recovered:
+    logger.info("Recovered %d interrupted scan(s) from previous run", _recovered)
 
 # Serve the Entity Review CMS React app at /cms
 CMS_DIR = Path(__file__).parent / "static" / "cms"
@@ -223,6 +240,8 @@ def start_scan():
         "started_at": time.time(),
         "playlist_name": None,
     }
+    # Persist immediately so we can detect interrupted scans after a restart
+    scan_store.save(scan_id, scans[scan_id])
 
     # Evict old completed scans if store is too large
     with _scans_lock:
@@ -276,8 +295,11 @@ def view_report(scan_id):
 
     # Fall back to SQLite
     saved = scan_store.get(scan_id)
-    if saved and saved["status"] == "complete" and saved["result_html"]:
-        return saved["result_html"]
+    if saved:
+        if saved["status"] == "complete" and saved["result_html"]:
+            return saved["result_html"]
+        if saved["status"] == "error":
+            return saved.get("error") or "Scan failed", 410
 
     return "Report not ready yet", 404
 
