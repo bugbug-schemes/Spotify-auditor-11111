@@ -53,6 +53,10 @@ logger = logging.getLogger("spotify_audit")
 # Progress callback type: called with (phase, current, total, message)
 ProgressCallback = Callable[[str, int, int, str], None]
 
+# Per-phase timeouts — if a phase exceeds this, remaining artists are skipped
+RESOLVE_TIMEOUT = 120   # 2 min to resolve all artists
+EVALUATE_TIMEOUT = 180  # 3 min to evaluate all artists
+
 
 def _noop_progress(phase: str, current: int, total: int, message: str) -> None:
     pass
@@ -437,7 +441,20 @@ def _run_audit_core(
     total_artists = len(artist_keys)
     progress("resolve", 0, total_artists, f"Resolving {total_artists} artists via Deezer...")
 
-    # 3. Resolve + quick scan (parallelized)
+    # Build key→name mapping so we can name skipped artists
+    _key_names: dict[str, str] = {}
+    for t in tracks:
+        for aid, aname in zip(t.artist_ids, t.artist_names):
+            if aid and aname:
+                _key_names[aid] = aname
+        for name in t.artist_names:
+            if name:
+                _key_names[name] = name
+
+    # Skipped artists accumulator — shared across phases
+    skipped_artists: list[dict] = []
+
+    # 3. Resolve + quick scan (parallelized, with timeout)
     artist_infos: dict[str, ArtistInfo] = {}
     quick_results: dict[str, QuickScanResult] = {}
 
@@ -472,36 +489,59 @@ def _run_audit_core(
         return (key, artist, cached_qr, False)
 
     resolved_i = 0
+    resolved_keys: set[str] = set()
     with ThreadPoolExecutor(max_workers=2, thread_name_prefix="resolve") as pool:
         futures = {
             pool.submit(_resolve_single, key, is_id): key
             for key, is_id in artist_keys
         }
-        for fut in as_completed(futures):
-            key, artist, cached_qr, is_cache_hit = fut.result()
-            resolved_i += 1
+        try:
+            for fut in as_completed(futures, timeout=RESOLVE_TIMEOUT):
+                key = futures[fut]
+                try:
+                    key, artist, cached_qr, is_cache_hit = fut.result()
+                    resolved_keys.add(key)
+                    resolved_i += 1
 
-            if is_cache_hit:
-                artist_infos[key] = artist
-                quick_results[key] = cached_qr
-            else:
-                artist_infos[key] = artist
-                if cached_qr:
-                    quick_results[key] = cached_qr
-                else:
-                    qr = quick_scan(artist, config.quick_weights)
-                    quick_results[key] = qr
+                    if is_cache_hit:
+                        artist_infos[key] = artist
+                        quick_results[key] = cached_qr
+                    else:
+                        artist_infos[key] = artist
+                        if cached_qr:
+                            quick_results[key] = cached_qr
+                        else:
+                            qr = quick_scan(artist, config.quick_weights)
+                            quick_results[key] = qr
 
-                qr = quick_results[key]
-                if cache:
-                    cache.put(key, "quick", {
-                        "artist_id": qr.artist_id,
-                        "artist_name": qr.artist_name,
-                        "score": qr.score,
-                        "artist_info": dataclasses.asdict(artist),
-                    })
+                        qr = quick_results[key]
+                        if cache:
+                            cache.put(key, "quick", {
+                                "artist_id": qr.artist_id,
+                                "artist_name": qr.artist_name,
+                                "score": qr.score,
+                                "artist_info": dataclasses.asdict(artist),
+                            })
 
-            progress("resolve", resolved_i, total_artists, f"Resolved {artist_infos[key].name}")
+                    progress("resolve", resolved_i, total_artists, f"Resolved {artist_infos[key].name}")
+                except Exception as exc:
+                    resolved_keys.add(key)
+                    resolved_i += 1
+                    name = _key_names.get(key, key)
+                    logger.warning("Failed to resolve '%s': %s", name, exc)
+                    skipped_artists.append({"name": name, "reason": f"Resolve error: {exc}"})
+                    progress("resolve", resolved_i, total_artists, f"Skipped {name} (error)")
+        except TimeoutError:
+            logger.warning("Resolve phase timed out after %ds", RESOLVE_TIMEOUT)
+
+        # Track artists that never completed (timed out)
+        for fut, key in futures.items():
+            if key not in resolved_keys:
+                name = _key_names.get(key, key)
+                skipped_artists.append({"name": name, "reason": "Timed out during artist resolution"})
+                fut.cancel()
+                resolved_i += 1
+                progress("resolve", resolved_i, total_artists, f"Skipped {name} (timeout)")
 
     # 4. External lookups + evidence evaluation
     evaluations: dict[str, ArtistEvaluation] = {}
@@ -672,30 +712,62 @@ def _run_audit_core(
         return (key, ev, sr)
 
     eval_completed = 0
+    evaluated_keys: set[str] = set()
     with ThreadPoolExecutor(max_workers=3, thread_name_prefix="eval") as pool:
         futures = {
             pool.submit(_lookup_and_evaluate, key, artist): key
             for key, artist in artists_to_lookup
         }
-        for fut in as_completed(futures):
-            key, ev, sr = fut.result()
-            evaluations[key] = ev
-            standard_results[key] = sr
-            eval_completed += 1
-            progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name}")
+        try:
+            for fut in as_completed(futures, timeout=EVALUATE_TIMEOUT):
+                key = futures[fut]
+                try:
+                    key, ev, sr = fut.result()
+                    evaluations[key] = ev
+                    standard_results[key] = sr
+                    evaluated_keys.add(key)
+                    eval_completed += 1
+                    progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name}")
+                except Exception as exc:
+                    evaluated_keys.add(key)
+                    eval_completed += 1
+                    name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+                    logger.warning("Failed to evaluate '%s': %s", name, exc)
+                    skipped_artists.append({"name": name, "reason": f"Evaluation error: {exc}"})
+                    progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (error)")
+        except TimeoutError:
+            logger.warning("Evaluate phase timed out after %ds", EVALUATE_TIMEOUT)
 
-    # Safety fallback
+        # Track artists that never completed (timed out)
+        for fut, key in futures.items():
+            if key not in evaluated_keys:
+                name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+                skipped_artists.append({"name": name, "reason": "Timed out during evaluation"})
+                fut.cancel()
+                eval_completed += 1
+                progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (timeout)")
+
+    # Safety fallback — evaluate any resolved artists that weren't evaluated
     for key in quick_results:
         if key not in evaluations:
             artist = artist_infos.get(key)
             if artist:
-                ev = evaluate_artist(artist, entity_db=entity_db)
-                evaluations[key] = ev
+                try:
+                    ev = evaluate_artist(artist, entity_db=entity_db)
+                    evaluations[key] = ev
+                except Exception as exc:
+                    name = artist.name
+                    logger.warning("Fallback evaluation failed for '%s': %s", name, exc)
+                    skipped_artists.append({"name": name, "reason": f"Fallback evaluation error: {exc}"})
             else:
                 qr = quick_results[key]
-                minimal = ArtistInfo(artist_id=qr.artist_id, name=qr.artist_name)
-                ev = evaluate_artist(minimal, entity_db=entity_db)
-                evaluations[key] = ev
+                try:
+                    minimal = ArtistInfo(artist_id=qr.artist_id, name=qr.artist_name)
+                    ev = evaluate_artist(minimal, entity_db=entity_db)
+                    evaluations[key] = ev
+                except Exception as exc:
+                    logger.warning("Minimal evaluation failed for '%s': %s", qr.artist_name, exc)
+                    skipped_artists.append({"name": qr.artist_name, "reason": f"Minimal evaluation error: {exc}"})
 
     # 5. Deep analysis (optional — Claude AI)
     deep_count = 0
@@ -836,6 +908,7 @@ def _run_audit_core(
         total_tracks=meta.total_tracks,
         is_spotify_owned=meta.is_spotify_owned,
         artist_reports=artist_reports,
+        skipped_artists=skipped_artists,
     )
 
     # Populate scan metadata for report output

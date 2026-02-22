@@ -68,6 +68,45 @@ _active_scans: OrderedDict[str, dict] = OrderedDict()
 scan_store = ScanStore()
 
 
+def _build_error_report(playlist_url: str, exc: Exception, tb: str) -> str:
+    """Generate a minimal HTML error report so the user always sees something."""
+    import html as html_mod
+    safe_url = html_mod.escape(str(playlist_url))
+    safe_err = html_mod.escape(str(exc))
+    safe_tb = html_mod.escape(tb)
+    return f"""<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Scan Error Report</title>
+<style>
+  body {{ background:#06090f; color:#c8d0da; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; padding:24px 16px; line-height:1.5 }}
+  .container {{ max-width:800px; margin:0 auto }}
+  h1 {{ color:#ef4444; margin-bottom:8px }}
+  .error-box {{ background:#1a1010; border:1px solid #5a2020; border-radius:10px; padding:20px; margin:16px 0 }}
+  .url {{ color:#94a3b8; font-size:0.9rem; word-break:break-all }}
+  pre {{ background:#0d1219; border:1px solid #1a2332; border-radius:8px; padding:16px; overflow-x:auto; font-size:0.8rem; color:#667788 }}
+  .retry {{ display:inline-block; margin-top:16px; padding:10px 24px; background:#1DB954; color:#000; border-radius:8px; text-decoration:none; font-weight:700 }}
+  .retry:hover {{ background:#1ed760 }}
+</style></head><body>
+<div class="container">
+  <h1>Scan Failed</h1>
+  <p class="url">Playlist: {safe_url}</p>
+  <div class="error-box">
+    <p style="color:#ff6b6b;font-weight:600;margin-bottom:8px">Error: {safe_err}</p>
+    <p style="color:#94a3b8;font-size:0.85rem">
+      The scan could not complete. This is usually caused by the playlist being
+      too large for the server, a temporary API outage, or the Spotify endpoint
+      being unavailable. Try a smaller playlist or try again later.
+    </p>
+  </div>
+  <details style="margin-top:16px">
+    <summary style="cursor:pointer;color:#667788;font-size:0.85rem">Technical Details</summary>
+    <pre>{safe_tb}</pre>
+  </details>
+  <a class="retry" href="/">Try Another Scan</a>
+</div></body></html>"""
+
+
 def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
     """Background thread: run the audit and store results."""
     # Track last heartbeat write to avoid hammering SQLite on every tick
@@ -107,7 +146,16 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             use_entity_db=False,
         )
         html = to_html(playlist_report)
-        done_msg = f"Done! Analyzed {playlist_report.total_unique_artists} artists."
+
+        skipped_count = len(playlist_report.skipped_artists)
+        analyzed = playlist_report.total_unique_artists - skipped_count
+        if skipped_count:
+            done_msg = (
+                f"Done! Analyzed {analyzed} artists "
+                f"({skipped_count} skipped due to errors/timeouts)."
+            )
+        else:
+            done_msg = f"Done! Analyzed {analyzed} artists."
 
         # Update in-memory cache
         if scan_id in _active_scans:
@@ -129,18 +177,24 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
         import traceback
         tb = traceback.format_exc()
         logger.exception("Scan %s failed", scan_id)
+
+        # Even on total failure, try to generate a minimal error report
+        html = _build_error_report(playlist_url, exc, tb)
         error_str = str(exc)
-        error_msg = f"Error: {exc}\n\nTraceback:\n{tb}"
 
         if scan_id in _active_scans:
             _active_scans[scan_id].update({
-                "status": "error",
-                "phase": "error",
-                "error": error_str,
-                "message": error_msg,
+                "status": "complete",
+                "phase": "done",
+                "result_html": html,
+                "message": f"Scan failed: {error_str}",
             })
 
-        scan_store.mark_error(scan_id, error=error_str, message=error_msg)
+        scan_store.mark_complete(
+            scan_id, result_html=html,
+            playlist_name=None,
+            message=f"Scan failed: {error_str}",
+        )
     finally:
         # Clean up in-memory entry after a delay so the frontend
         # has time to see the final status before it's removed.
