@@ -730,7 +730,7 @@ class TestCategoryScores:
         scores = compute_category_scores(ev)
         expected_keys = {
             "Platform Presence", "Fan Engagement", "Creative History",
-            "Live Performance", "Online Identity", "Industry Signals",
+            "IRL Presence", "Industry Signals", "Blocklist Status",
         }
         assert set(scores.keys()) == expected_keys
 
@@ -745,7 +745,7 @@ class TestCategoryScores:
         scores = compute_category_scores(ev)
         # A well-known artist should score well on most categories
         assert scores["Platform Presence"] >= 50
-        assert scores["Live Performance"] >= 50
+        assert scores["IRL Presence"] >= 50
         assert scores["Industry Signals"] >= 30
 
 

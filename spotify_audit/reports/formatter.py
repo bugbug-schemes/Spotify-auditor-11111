@@ -164,12 +164,19 @@ def _external_data_to_dict(ext: ExternalData) -> dict:
         }
     # PRO Registry
     if ext.pro_checked:
-        d["pro_registry"] = {
+        pro_dict: dict = {
             "checked": True, "bmi": ext.pro_found_bmi, "ascap": ext.pro_found_ascap,
             "works": ext.pro_works_count, "publishers": ext.pro_publishers,
             "songwriter_registered": ext.pro_songwriter_registered,
             "pfc_publisher_match": ext.pro_pfc_publisher_match,
         }
+        if ext.pro_songwriter_share_pct >= 0:
+            pro_dict["songwriter_share_pct"] = ext.pro_songwriter_share_pct
+        if ext.pro_publisher_share_pct >= 0:
+            pro_dict["publisher_share_pct"] = ext.pro_publisher_share_pct
+        if ext.pro_zero_songwriter_share:
+            pro_dict["zero_songwriter_share"] = True
+        d["pro_registry"] = pro_dict
     # Press
     if ext.press_checked:
         d["press"] = {
@@ -1143,45 +1150,52 @@ body {{
 
 <!-- How This Works -->
 <details class="methodology">
-  <summary>How This Works &mdash; Five Core Questions</summary>
+  <summary>How This Works &mdash; Six Evidence Categories</summary>
   <div class="methodology-body">
     <p>For every artist on this playlist, we queried up to 8 independent platforms and checked against
-    a curated database of known bad actors. The analysis answers five questions:</p>
+    a curated database of known bad actors. The analysis evaluates six dimensions:</p>
 
     <div class="q-grid">
       <div class="q-item">
         <span class="q-num">1</span>
         <div>
-          <div class="q-text">Is this a known bad actor?</div>
-          <div class="q-detail">Artist name, label, distributor, or credited songwriter checked against our investigated database of confirmed PFC providers and fake artists.</div>
+          <div class="q-text">Platform Presence</div>
+          <div class="q-detail">Where does this artist exist? Deezer, MusicBrainz, Genius, Last.fm, Discogs, Setlist.fm, YouTube, Wikipedia, social media. Ghost artists leave zero traces outside Spotify.</div>
         </div>
       </div>
       <div class="q-item">
         <span class="q-num">2</span>
         <div>
-          <div class="q-text">Do real humans care about this artist?</div>
-          <div class="q-detail">Cross-platform fan engagement on Last.fm, Deezer, YouTube, and Genius. Ghost artists leave zero traces outside Spotify.</div>
+          <div class="q-text">Fan Engagement</div>
+          <div class="q-detail">Do real humans listen? Last.fm scrobbles and play/listener ratio, Deezer fans, Genius followers. Key metric: repeat listeners.</div>
         </div>
       </div>
       <div class="q-item">
         <span class="q-num">3</span>
         <div>
-          <div class="q-text">Does this artist exist outside streaming?</div>
-          <div class="q-detail">Presence on MusicBrainz, Discogs, Genius, Wikipedia. Live concert history on Setlist.fm. Physical releases. ASCAP/BMI registration.</div>
+          <div class="q-text">Creative History</div>
+          <div class="q-detail">Release cadence by year, track durations, album-to-single ratio, collaborative songwriting, title patterns. Content farms release 40+ short singles with no albums.</div>
         </div>
       </div>
       <div class="q-item">
         <span class="q-num">4</span>
         <div>
-          <div class="q-text">Does the catalog look manufactured?</div>
-          <div class="q-detail">Release cadence, track durations, album-to-single ratio, title patterns. Content farms release 40+ short singles with no albums.</div>
+          <div class="q-text">IRL Presence</div>
+          <div class="q-detail">Live concert history on Setlist.fm and Songkick. Physical releases on Discogs. Touring geography. Named tours. Upcoming shows.</div>
         </div>
       </div>
       <div class="q-item">
         <span class="q-num">5</span>
         <div>
-          <div class="q-text">Is the content AI-generated?</div>
-          <div class="q-detail">Deezer AI content tags, profile image analysis, bio authenticity checks{', and Claude AI synthesis' if has_deep else ''}.</div>
+          <div class="q-text">Industry Signals</div>
+          <div class="q-detail">MusicBrainz metadata (type, country, dates). ISNI/IPI codes. ASCAP/BMI songwriter registration with ownership splits. Genius profile depth. Discogs bio{', and Claude AI synthesis' if has_deep else ''}.</div>
+        </div>
+      </div>
+      <div class="q-item">
+        <span class="q-num">6</span>
+        <div>
+          <div class="q-text">Blocklist Status</div>
+          <div class="q-detail">Artist name, label, distributor, and credited songwriters checked against investigated databases of confirmed PFC providers, known AI artists, and PFC publishers.</div>
         </div>
       </div>
     </div>
@@ -1425,8 +1439,13 @@ def _build_stats_line(a: ArtistReport, ev: ArtistEvaluation | None) -> str:
 def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
     """Build the expanded card body organized by 6 signal axes.
 
-    Each axis shows a score bar + 3-4 key signals (data points and
-    moderate/strong evidence flags). Weak signals are excluded.
+    Layout:
+    1. Scorecard: Radar chart (left) + summary metrics area (right)
+       - Row 1: Verdict + Confidence
+       - Row 2: Platform Icons Row
+       - Row 3: Key Stats (scrobbles, fans, concerts, releases)
+    2. Six-axis bucket grid with evidence
+    3. AI analysis (if available)
     """
     ext = ev.external_data or ExternalData()
     verdict_str = ev.verdict.value
@@ -1440,10 +1459,28 @@ def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
         f'{_esc(explanation)}</div>'
     )
 
-    # 2. Six-axis bucket grid
+    # 2. Scorecard: Radar chart + summary metrics
+    radar_html = _radar_svg(scores, verdict_color, size=240)
+    platform_icons_html = _build_platform_icons(ev, ext)
+    key_stats_html = _build_key_stats(ev, ext)
+
+    scorecard_html = f"""<div class="scorecard">
+  <div>{radar_html}</div>
+  <div>
+    <div style="margin-bottom:12px">
+      <span class="score-badge" style="background:{verdict_color};display:inline-flex;width:32px;height:32px;font-size:0.8rem">{a.final_score}</span>
+      <span style="color:{verdict_color};font-weight:600;margin-left:8px">{_esc(verdict_str)}</span>
+      <span style="color:#667;font-size:0.78rem;margin-left:8px">{_esc(ev.confidence)} confidence</span>
+    </div>
+    {platform_icons_html}
+    {key_stats_html}
+  </div>
+</div>"""
+
+    # 3. Six-axis bucket grid
     buckets_html = _build_axis_buckets(ev, ext, scores)
 
-    # 3. AI analysis (if available)
+    # 4. AI analysis (if available)
     ai_html = ""
     for sig in a.deep_signals:
         if isinstance(sig, dict) and sig.get("detail"):
@@ -1456,9 +1493,93 @@ def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
 
     return f"""
     {explanation_html}
+    {scorecard_html}
     {buckets_html}
     {ai_html}
     """
+
+
+def _build_platform_icons(ev: ArtistEvaluation, ext: ExternalData) -> str:
+    """Build the Platform Icons Row showing found/not-found for each platform."""
+    platforms = [
+        ("Deezer", ev.platform_presence.deezer),
+        ("MusicBrainz", ext.musicbrainz_found),
+        ("Genius", ext.genius_found),
+        ("Last.fm", ext.lastfm_found),
+        ("Discogs", ext.discogs_found),
+        ("Setlist.fm", ext.setlistfm_found),
+        ("YouTube", ext.youtube_channel_found if ext.youtube_checked else None),
+        ("Wikipedia", ext.wikipedia_found),
+    ]
+
+    badges = []
+    for name, found in platforms:
+        if found is None:
+            # Not checked
+            icon = '<span style="color:#333">&#8226;</span>'
+            color = "#333"
+        elif found:
+            icon = '<span style="color:#22c55e">&#10003;</span>'
+            color = "#22c55e"
+        else:
+            icon = '<span style="color:#444">&#10007;</span>'
+            color = "#444"
+        badges.append(
+            f'<span style="display:inline-flex;align-items:center;gap:3px;'
+            f'padding:2px 6px;border:1px solid {color}33;border-radius:4px;'
+            f'font-size:0.7rem;color:{color}">'
+            f'{icon} {_esc(name)}</span>'
+        )
+    return (
+        '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px">'
+        + "".join(badges)
+        + '</div>'
+    )
+
+
+def _build_key_stats(ev: ArtistEvaluation, ext: ExternalData) -> str:
+    """Build the Key Stats row with 3-4 compact stat boxes."""
+    stats: list[tuple[str, str]] = []
+
+    # Last.fm scrobbles
+    if ext.lastfm_playcount:
+        stats.append((_fmt_num(ext.lastfm_playcount), "Scrobbles"))
+
+    # Deezer fans
+    if ev.platform_presence.deezer_fans:
+        stats.append((_fmt_num(ev.platform_presence.deezer_fans), "Deezer Fans"))
+
+    # Concerts (best of Setlist.fm or Songkick)
+    shows = ext.setlistfm_total_shows or ext.songkick_total_past_events
+    if shows:
+        stats.append((str(shows), "Shows"))
+
+    # Releases
+    # We don't have album/single breakdown in ext directly, but we can
+    # use discogs totals or other catalog data
+    if ext.discogs_total_releases:
+        parts = []
+        if ext.discogs_physical_releases:
+            parts.append(f"{ext.discogs_physical_releases} physical")
+        if ext.discogs_digital_releases:
+            parts.append(f"{ext.discogs_digital_releases} digital")
+        if parts:
+            stats.append((", ".join(parts), "Releases"))
+        else:
+            stats.append((str(ext.discogs_total_releases), "Releases"))
+
+    if not stats:
+        return ""
+
+    boxes = []
+    for value, label in stats[:4]:
+        boxes.append(
+            f'<div class="metric-card" style="padding:8px;min-width:80px">'
+            f'<div class="metric-value" style="font-size:1rem">{_esc(value)}</div>'
+            f'<div class="metric-label">{_esc(label)}</div>'
+            f'</div>'
+        )
+    return '<div style="display:flex;gap:8px;flex-wrap:wrap">' + "".join(boxes) + '</div>'
 
 
 # ---------------------------------------------------------------------------
@@ -1466,13 +1587,28 @@ def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
 # ---------------------------------------------------------------------------
 
 # Tag-to-axis classification for evidence flags
+# v0.8: Online Identity removed. YouTube/Wikipedia/social → Platform Presence,
+# bio → Industry Signals. Live Performance → IRL Presence. Blocklist Status added.
 _TAG_TO_AXIS: dict[str, str] = {
-    # Platform Presence
+    # Platform Presence (includes former Online Identity: YouTube, Wikipedia, social)
     "platform_presence": "Platform Presence",
     "not_found": "Platform Presence",
+    "multi_platform": "Platform Presence",
+    "single_platform": "Platform Presence",
+    "wikipedia": "Platform Presence",
+    "social_media": "Platform Presence",
+    "no_social_media": "Platform Presence",
+    "youtube_presence": "Platform Presence",
+    "no_youtube": "Platform Presence",
+    "youtube_disparity": "Platform Presence",
+    "verified_identity": "Platform Presence",
+    "genius_verified": "Platform Presence",
+    "bandcamp_presence": "Platform Presence",
     # Fan Engagement
     "genuine_fans": "Fan Engagement",
+    "low_fans": "Fan Engagement",
     "low_engagement": "Fan Engagement",
+    "low_scrobble_engagement": "Fan Engagement",
     "streaming_pattern": "Fan Engagement",
     # Creative History
     "catalog_albums": "Creative History",
@@ -1484,31 +1620,40 @@ _TAG_TO_AXIS: dict[str, str] = {
     "empty_catalog": "Creative History",
     "cookie_cutter": "Creative History",
     "high_release_rate": "Creative History",
-    # Live Performance
-    "live_performance": "Live Performance",
-    "touring_geography": "Live Performance",
-    # Online Identity
-    "wikipedia": "Online Identity",
-    "verified_identity": "Online Identity",
-    "social_media": "Online Identity",
-    "ai_bio": "Online Identity",
-    "ai_generated_image": "Online Identity",
-    "stock_photo": "Online Identity",
-    "authentic_photo": "Online Identity",
-    "authentic_bio": "Online Identity",
-    "impersonation": "Online Identity",
-    # Industry Signals
-    "pfc_label": "Industry Signals",
-    "pfc_songwriter": "Industry Signals",
-    "known_ai_artist": "Industry Signals",
-    "known_ai_label": "Industry Signals",
-    "known_bad_actor": "Industry Signals",
-    "entity_confirmed_bad": "Industry Signals",
-    "entity_suspected": "Industry Signals",
-    "entity_cleared": "Industry Signals",
-    "entity_bad_label": "Industry Signals",
-    "entity_bad_songwriter": "Industry Signals",
-    "entity_bad_network": "Industry Signals",
+    "same_day_release": "Creative History",
+    # IRL Presence (renamed from Live Performance)
+    "live_performance": "IRL Presence",
+    "touring_geography": "IRL Presence",
+    "named_tour": "IRL Presence",
+    # Industry Signals (includes former Online Identity: bio, real name)
+    "industry_registered": "Industry Signals",
+    "pro_registered": "Industry Signals",
+    "no_pro_registration": "Industry Signals",
+    "normal_pro_split": "Industry Signals",
+    "no_songwriter_share": "Industry Signals",
+    "pfc_publisher": "Industry Signals",
+    "career_bio": "Industry Signals",
+    "authentic_bio": "Industry Signals",
+    "ai_bio": "Industry Signals",
+    "ai_generated_image": "Industry Signals",
+    "stock_photo": "Industry Signals",
+    "authentic_photo": "Industry Signals",
+    "impersonation": "Industry Signals",
+    "press_coverage": "Industry Signals",
+    # Blocklist Status (new category)
+    "pfc_label": "Blocklist Status",
+    "pfc_songwriter": "Blocklist Status",
+    "known_ai_artist": "Blocklist Status",
+    "known_ai_label": "Blocklist Status",
+    "known_bad_actor": "Blocklist Status",
+    "entity_confirmed_bad": "Blocklist Status",
+    "entity_suspected": "Blocklist Status",
+    "entity_cleared": "Blocklist Status",
+    "entity_bad_label": "Blocklist Status",
+    "entity_bad_songwriter": "Blocklist Status",
+    "entity_bad_network": "Blocklist Status",
+    "isrc_pfc_registrant": "Blocklist Status",
+    "cowriter_network": "Blocklist Status",
 }
 
 # Fallback: classify by evidence source name
@@ -1518,14 +1663,16 @@ _SOURCE_TO_AXIS: list[tuple[str, str]] = [
     ("lastfm", "Fan Engagement"),
     ("genius", "Creative History"),
     ("discogs", "Creative History"),
-    ("setlist", "Live Performance"),
-    ("songkick", "Live Performance"),
-    ("wikipedia", "Online Identity"),
+    ("setlist", "IRL Presence"),
+    ("songkick", "IRL Presence"),
+    ("bandsintown", "IRL Presence"),
+    ("wikipedia", "Platform Presence"),
+    ("youtube", "Platform Presence"),
     ("musicbrainz", "Industry Signals"),
-    ("blocklist", "Industry Signals"),
-    ("entity", "Industry Signals"),
-    ("pre-check", "Industry Signals"),
     ("pro ", "Industry Signals"),
+    ("blocklist", "Blocklist Status"),
+    ("entity", "Blocklist Status"),
+    ("pre-check", "Blocklist Status"),
 ]
 
 
@@ -1567,7 +1714,7 @@ def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[st
 
     axis_order = [
         "Platform Presence", "Fan Engagement", "Creative History",
-        "Live Performance", "Online Identity", "Industry Signals",
+        "IRL Presence", "Industry Signals", "Blocklist Status",
     ]
     strength_order = {"strong": 0, "moderate": 1}
 
@@ -1604,16 +1751,82 @@ def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[st
         if not items_html:
             items_html = '<div class="axis-item"><span style="color:#445">No data</span></div>'
 
+        # Special treatment for Creative History: add release timeline
+        timeline_html = ""
+        if axis == "Creative History" and ext.release_year_summary:
+            timeline_html = _build_release_timeline(ext.release_year_summary)
+
+        # Special treatment for Blocklist Status: show banner
+        banner_html = ""
+        if axis == "Blocklist Status":
+            if not reds:
+                banner_html = (
+                    '<div style="background:#22c55e15;border:1px solid #22c55e33;'
+                    'border-radius:4px;padding:6px 10px;margin-bottom:6px;'
+                    'font-size:0.78rem;color:#22c55e;font-weight:600">'
+                    '&#10003; Clean across all blocklists</div>'
+                )
+            else:
+                banner_html = (
+                    f'<div style="background:#ef444415;border:1px solid #ef444433;'
+                    f'border-radius:4px;padding:6px 10px;margin-bottom:6px;'
+                    f'font-size:0.78rem;color:#ef4444;font-weight:600">'
+                    f'&#9888; {len(reds)} blocklist hit{"s" if len(reds) != 1 else ""}</div>'
+                )
+
         buckets.append(f"""<div class="axis-bucket">
   <div class="axis-header">
     <span class="axis-name">{_esc(axis)}</span>
     <span class="axis-score" style="color:{color}">{score}</span>
   </div>
   <div class="axis-bar"><div class="axis-bar-fill" style="width:{score}%;background:{color}"></div></div>
+  {banner_html}
+  {timeline_html}
   {items_html}
 </div>""")
 
     return '<div class="axis-grid">' + "\n".join(buckets) + '</div>'
+
+
+def _build_release_timeline(year_summary: dict[int, dict[str, int]]) -> str:
+    """Render a compact per-year release timeline for Creative History."""
+    if not year_summary:
+        return ""
+
+    sorted_years = sorted(year_summary.keys())
+    if len(sorted_years) < 1:
+        return ""
+
+    max_count = max(
+        (d.get("releases", 0) or (d.get("albums", 0) + d.get("singles", 0)))
+        for d in year_summary.values()
+    )
+    if max_count == 0:
+        return ""
+
+    rows = []
+    for year in sorted_years:
+        data = year_summary[year]
+        count = data.get("releases", 0) or (data.get("albums", 0) + data.get("singles", 0))
+        bar_width = int(count / max_count * 100) if max_count else 0
+        # Color: normal = green, high (>6) = amber, extreme (>12) = red
+        bar_color = "#22c55e" if count <= 6 else "#f59e0b" if count <= 12 else "#ef4444"
+        rows.append(
+            f'<div style="display:flex;align-items:center;gap:6px;font-size:0.72rem">'
+            f'<span style="width:32px;color:#667;text-align:right">{year}</span>'
+            f'<div style="flex:1;height:6px;background:#111820;border-radius:3px;overflow:hidden">'
+            f'<div style="width:{bar_width}%;height:100%;background:{bar_color};border-radius:3px"></div></div>'
+            f'<span style="width:24px;color:#889">{count}</span>'
+            f'</div>'
+        )
+
+    return (
+        '<div style="margin:6px 0 8px;padding:6px 0;border-top:1px solid #1a2332">'
+        '<div style="font-size:0.68rem;color:#556;text-transform:uppercase;margin-bottom:4px">'
+        'Releases by Year</div>'
+        + "\n".join(rows)
+        + '</div>'
+    )
 
 
 def _inject_data_signals(
@@ -1639,13 +1852,26 @@ def _inject_data_signals(
             strength="moderate", detail="",
         ))
 
-    # Platform Presence
+    # Platform Presence (now includes YouTube, Wikipedia, social media)
     found = sum(1 for r in ev.sources_reached.values() if r)
     total = len(ev.sources_reached)
     if found >= 4:
         _green("Platform Presence", f"Found on {found}/{total} platforms")
     elif found <= 1:
         _red("Platform Presence", f"Only {found}/{total} platforms")
+
+    if ext.wikipedia_found:
+        if ext.wikipedia_monthly_views:
+            _green("Platform Presence", f"Wikipedia ({ext.wikipedia_monthly_views:,} views/mo)")
+        else:
+            _green("Platform Presence", "Wikipedia page exists")
+    if ext.youtube_channel_found:
+        if ext.youtube_subscriber_count:
+            _green("Platform Presence", f"YouTube ({ext.youtube_subscriber_count:,} subs)")
+        else:
+            _green("Platform Presence", "YouTube channel exists")
+    if ext.genius_is_verified:
+        _green("Platform Presence", "Genius verified artist")
 
     # Fan Engagement
     fans = ev.platform_presence.deezer_fans or 0
@@ -1663,27 +1889,18 @@ def _inject_data_signals(
     if ext.genius_song_count and ext.genius_song_count >= 5:
         _green("Creative History", f"{ext.genius_song_count} songs on Genius")
 
-    # Live Performance
+    # IRL Presence (renamed from Live Performance)
     if ext.setlistfm_total_shows:
-        _green("Live Performance", f"{ext.setlistfm_total_shows} shows (Setlist.fm)")
+        _green("IRL Presence", f"{ext.setlistfm_total_shows} shows (Setlist.fm)")
     if ext.songkick_total_past_events:
-        _green("Live Performance", f"{ext.songkick_total_past_events} events (Songkick)")
+        _green("IRL Presence", f"{ext.songkick_total_past_events} events (Songkick)")
     countries = ext.setlistfm_venue_countries or ext.songkick_venue_countries
     if countries and len(countries) >= 3:
-        _green("Live Performance", f"Toured {len(countries)} countries")
+        _green("IRL Presence", f"Toured {len(countries)} countries")
+    if ext.discogs_physical_releases:
+        _green("IRL Presence", f"{ext.discogs_physical_releases} vinyl/CD (Discogs)")
 
-    # Online Identity
-    if ext.wikipedia_found:
-        if ext.wikipedia_monthly_views:
-            _green("Online Identity", f"Wikipedia ({ext.wikipedia_monthly_views:,} views/mo)")
-        else:
-            _green("Online Identity", "Wikipedia page exists")
-    if ext.discogs_realname:
-        _green("Online Identity", f"Real name: {ext.discogs_realname}")
-    if ext.genius_is_verified:
-        _green("Online Identity", "Genius verified artist")
-
-    # Industry Signals
+    # Industry Signals (now includes Discogs bio, real name)
     if ext.musicbrainz_isnis:
         _green("Industry Signals", "ISNI registered")
     if ext.musicbrainz_ipis:
@@ -1695,9 +1912,29 @@ def _inject_data_signals(
         if ext.pro_found_ascap:
             pro.append("ASCAP")
         if pro:
-            _green("Industry Signals", f"PRO: {'+'.join(pro)} ({ext.pro_works_count} works)")
+            works_label = f" ({ext.pro_works_count} works)" if ext.pro_works_count else ""
+            share_label = ""
+            if ext.pro_songwriter_share_pct >= 0:
+                share_label = f", {ext.pro_songwriter_share_pct:.0f}% writer share"
+            _green("Industry Signals", f"PRO: {'+'.join(pro)}{works_label}{share_label}")
         else:
             _red("Industry Signals", "Not in BMI or ASCAP")
+    if ext.discogs_realname:
+        _green("Industry Signals", f"Real name: {ext.discogs_realname}")
+    if len(ext.discogs_profile) >= 200:
+        _green("Industry Signals", "Detailed Discogs bio")
+
+    # Blocklist Status (new category)
+    all_tags: set[str] = set()
+    for e in ev.red_flags + ev.green_flags:
+        if e.tags:
+            all_tags.update(e.tags)
+    blocklist_hits = all_tags & {
+        "pfc_label", "pfc_songwriter", "known_ai_artist", "known_ai_label",
+        "entity_confirmed_bad", "entity_suspected", "pfc_publisher",
+    }
+    if not blocklist_hits:
+        _green("Blocklist Status", "Clean across all blocklists")
 
 
 def _build_explanation(ev: ArtistEvaluation) -> str:

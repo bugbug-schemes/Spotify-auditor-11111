@@ -40,6 +40,9 @@ class PRORegistration:
     songwriter_registered: bool = False   # artist found as registered songwriter
     pfc_publisher_match: bool = False     # publisher matches known PFC entity
     zero_songwriter_share: bool = False   # 100% publisher, 0% songwriter
+    songwriter_share_pct: float = -1.0   # -1 = unknown, 0-100 = actual share
+    publisher_share_pct: float = -1.0    # -1 = unknown, 0-100 = actual share
+    normal_split: bool = False           # True if ~50/50 songwriter/publisher split
     error: str = ""
 
 
@@ -55,11 +58,18 @@ class PRORegistryClient:
             "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
 
-    def search_writer(self, name: str) -> PRORegistration:
+    def search_writer(
+        self,
+        name: str,
+        track_titles: list[str] | None = None,
+    ) -> PRORegistration:
         """Search both BMI and ASCAP for a songwriter/artist name.
 
         Tries the original name first, then the reversed "Last, First" form
         since ASCAP/BMI store names in that format.
+
+        If writer search returns nothing and ``track_titles`` are provided,
+        falls back to searching by title for up to 3 tracks.
         """
         result = PRORegistration()
 
@@ -87,6 +97,14 @@ class PRORegistryClient:
                 time.sleep(self.delay)
                 self._search_ascap(reversed_name, result)
 
+        # Fallback: title-based search if writer search returned nothing
+        if not result.found_bmi and not result.found_ascap and track_titles:
+            for title in track_titles[:3]:
+                time.sleep(self.delay)
+                self._search_bmi_by_title(title, name, result)
+                if result.found_bmi:
+                    break
+
         if result.found_bmi or result.found_ascap:
             result.songwriter_registered = True
             log_match("PRO Registry", name, MatchResult(
@@ -97,6 +115,9 @@ class PRORegistryClient:
             ))
         else:
             log_match("PRO Registry", name, MatchResult(found=False))
+
+        # Analyze share split
+        self._analyze_share_split(result)
 
         # Cross-reference discovered publishers against PFC blocklist
         if result.publishers:
@@ -148,13 +169,22 @@ class PRORegistryClient:
                 if not result.bmi_works_count:
                     result.bmi_works_count = len(rows)
 
-            # Extract publisher names from results
+            # Extract publisher names and share percentages from results
             for row in rows[:10]:
                 cells = row.find_all("td")
                 for cell in cells:
                     text = cell.get_text(strip=True)
                     if text and "publishing" in text.lower():
                         result.publishers.append(text)
+                    # Look for share percentages (e.g., "50.00" in share columns)
+                    share_match = re.match(r"^(\d{1,3}(?:\.\d+)?)%?$", text)
+                    if share_match:
+                        share_val = float(share_match.group(1))
+                        # Heuristic: writer shares are typically listed before publisher shares
+                        if result.songwriter_share_pct < 0:
+                            result.songwriter_share_pct = share_val
+                        elif result.publisher_share_pct < 0:
+                            result.publisher_share_pct = share_val
 
         except Exception as exc:
             logger.debug("BMI parse failed for '%s': %s", name, exc)
@@ -203,6 +233,65 @@ class PRORegistryClient:
             logger.debug("ASCAP parse failed for '%s': %s", name, exc)
 
         time.sleep(self.delay)
+
+    def _search_bmi_by_title(
+        self, title: str, artist_name: str, result: PRORegistration,
+    ) -> None:
+        """Fallback: search BMI by song title, then verify the writer matches."""
+        try:
+            resp = self._session.get(
+                BMI_SEARCH,
+                params={
+                    "Main_Search_Text": title,
+                    "Main_Search_Type": "SongTitle",
+                    "Search_Type": "all",
+                },
+                timeout=15,
+            )
+            resp.raise_for_status()
+            html = resp.text
+        except Exception as exc:
+            logger.debug("BMI title search failed for '%s': %s", title, exc)
+            return
+
+        try:
+            soup = BeautifulSoup(html, "html.parser")
+            page_text = soup.get_text().lower()
+            # Check if the artist name appears in the results
+            artist_lower = normalize_name(artist_name).lower()
+            if artist_lower in page_text:
+                result.found_bmi = True
+                if not result.bmi_works_count:
+                    result.bmi_works_count = 1
+                logger.debug(
+                    "BMI title fallback matched '%s' for artist '%s'",
+                    title, artist_name,
+                )
+        except Exception as exc:
+            logger.debug("BMI title parse failed for '%s': %s", title, exc)
+
+        time.sleep(self.delay)
+
+    def _analyze_share_split(self, result: PRORegistration) -> None:
+        """Determine if the songwriter/publisher split is normal or suspicious."""
+        writer_pct = result.songwriter_share_pct
+        pub_pct = result.publisher_share_pct
+
+        if writer_pct < 0 and pub_pct < 0:
+            return  # No share data available
+
+        # Detect zero songwriter share (100% publisher = work-for-hire)
+        if writer_pct == 0 and pub_pct > 0:
+            result.zero_songwriter_share = True
+        elif pub_pct < 0 and writer_pct == 0:
+            result.zero_songwriter_share = True
+
+        # Detect normal split (typically ~50/50 but allow 30-70 range)
+        if writer_pct >= 30 and pub_pct >= 0:
+            result.normal_split = True
+        elif writer_pct >= 30 and pub_pct < 0:
+            # Have writer share but no publisher data — assume normal if share is reasonable
+            result.normal_split = True
 
     def check_pfc_publishers(
         self, publishers: list[str], pfc_entities: set[str],
