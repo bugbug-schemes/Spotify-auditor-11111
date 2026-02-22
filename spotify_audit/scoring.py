@@ -109,6 +109,9 @@ class PlaylistReport:
     api_source_counts: dict[str, int] = field(default_factory=dict)  # source -> call count
     blocklist_version: str = ""
 
+    # Artists that were skipped due to timeout / error during scan
+    skipped_artists: list[dict] = field(default_factory=list)  # [{name, reason}]
+
     # Legacy breakdown (kept for backward compatibility)
     verified_legit: int = 0
     probably_fine: int = 0
@@ -322,6 +325,7 @@ def build_playlist_report(
     total_tracks: int,
     is_spotify_owned: bool,
     artist_reports: list[ArtistReport],
+    skipped_artists: list[dict] | None = None,
 ) -> PlaylistReport:
     """Aggregate individual artist reports into a playlist health report."""
     # Sort by verdict severity (most concerning first), then by score
@@ -335,9 +339,10 @@ def build_playlist_report(
         playlist_id=playlist_id,
         owner=owner,
         total_tracks=total_tracks,
-        total_unique_artists=len(artist_reports),
+        total_unique_artists=len(artist_reports) + len(skipped_artists or []),
         is_spotify_owned=is_spotify_owned,
         artists=sorted_reports,
+        skipped_artists=skipped_artists or [],
     )
 
     # Evidence-based breakdown
