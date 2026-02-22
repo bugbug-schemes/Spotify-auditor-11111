@@ -267,19 +267,36 @@ def start_scan():
 
 @app.route("/api/scan/<scan_id>")
 def scan_status(scan_id):
-    # Fast path: check in-memory cache first (for active scans in this worker)
-    cached = _active_scans.get(scan_id)
-    if cached:
-        resp = {k: v for k, v in cached.items() if k != "result_html"}
-        resp["has_result"] = cached["result_html"] is not None
-        elapsed = time.time() - cached["started_at"]
-        resp["elapsed_seconds"] = round(elapsed, 1)
-        return jsonify(resp)
-
-    # Slow path: check SQLite (handles worker restarts, stale detection)
+    # Always check SQLite first — it is the source of truth and has
+    # stale/timeout detection that catches hung scan threads.
     scan = scan_store.get(scan_id)
     if not scan:
         return jsonify({"error": "Scan not found"}), 404
+
+    # If SQLite says the scan is still running, overlay fresher progress
+    # data from the in-memory cache (updated on every progress tick).
+    if scan["status"] == "running":
+        cached = _active_scans.get(scan_id)
+        if cached:
+            if cached["status"] in ("complete", "error"):
+                # Thread finished but SQLite hasn't been updated yet — use in-memory
+                scan = dict(cached)
+            else:
+                # Thread is alive — use in-memory progress (more current than
+                # the SQLite heartbeats which only write every 10s)
+                scan["phase"] = cached.get("phase", scan["phase"])
+                scan["current"] = cached.get("current", scan["current"])
+                scan["total"] = cached.get("total", scan["total"])
+                scan["message"] = cached.get("message", scan["message"])
+    elif scan["status"] == "error" and scan_id in _active_scans:
+        # SQLite detected stale/timeout — sync to in-memory so the
+        # deferred cleanup thread and report endpoint stay consistent.
+        _active_scans[scan_id].update({
+            "status": scan["status"],
+            "phase": scan.get("phase", "error"),
+            "error": scan.get("error", ""),
+            "message": scan.get("message", ""),
+        })
 
     resp = {k: v for k, v in scan.items() if k not in ("result_html",)}
     resp["has_result"] = scan.get("result_html") is not None
