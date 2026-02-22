@@ -3,8 +3,9 @@ services:
     name: spotify-audit
     runtime: python
     plan: free
-    buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn web.app:app --bind 0.0.0.0:$PORT --workers 1 --threads 4 --timeout 120
+    buildCommand: pip install -r requirements.txt && pip install -e .
+    startCommand: gunicorn web.app:app --bind 0.0.0.0:10000 --workers 1 --threads 4 --timeout 120
+    port: 10000
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.11
