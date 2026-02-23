@@ -305,10 +305,10 @@ def to_markdown(report: PlaylistReport) -> str:
                 lines.append(f"**How we decided:** {' -> '.join(ev.decision_path)}")
                 lines.append("")
 
-            # PRO Registry (ASCAP/BMI)
+            # Industry Signals: PRO Registry (ASCAP/BMI)
             ext = ev.external_data
             if ext and ext.pro_checked:
-                lines.append("**PRO Registry (ASCAP/BMI):**")
+                lines.append("**Industry Signals — PRO Registry (ASCAP/BMI):**")
                 lines.append("")
                 if ext.pro_songwriter_registered:
                     registries = []
@@ -316,7 +316,7 @@ def to_markdown(report: PlaylistReport) -> str:
                         registries.append("BMI")
                     if ext.pro_found_ascap:
                         registries.append("ASCAP")
-                    reg_str = " + ".join(registries) if registries else "PRO"
+                    reg_str = "+".join(registries) if registries else "PRO"
                     parts = [f"Registered with {reg_str}"]
                     if ext.pro_works_count:
                         parts.append(f"{ext.pro_works_count} works")

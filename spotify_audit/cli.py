@@ -376,46 +376,42 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
         if mb_links:
             data_fields.append(f"MB links: {', '.join(mb_links[:4])}")
 
+        # PRO Registry (ASCAP/BMI) — part of Industry Signals
+        if ext.pro_checked:
+            if ext.pro_songwriter_registered:
+                registries = []
+                if ext.pro_found_bmi:
+                    registries.append("BMI")
+                if ext.pro_found_ascap:
+                    registries.append("ASCAP")
+                reg_str = "+".join(registries) if registries else "PRO"
+                pro_parts = [f"[green]PRO: {reg_str}[/green]"]
+                if ext.pro_works_count:
+                    pro_parts.append(f"{ext.pro_works_count} works")
+                if ext.pro_publishers:
+                    pro_parts.append(f"pub: {', '.join(ext.pro_publishers[:3])}")
+                if ext.pro_songwriter_share_pct >= 0:
+                    if ext.pro_zero_songwriter_share:
+                        pro_parts.append("[red]0% writer / 100% pub[/red]")
+                    elif ext.pro_publisher_share_pct >= 0:
+                        pro_parts.append(f"{ext.pro_songwriter_share_pct:.0f}% writer / {ext.pro_publisher_share_pct:.0f}% pub")
+                    else:
+                        pro_parts.append(f"{ext.pro_songwriter_share_pct:.0f}% writer share")
+                data_fields.append(", ".join(pro_parts))
+                if ext.pro_pfc_publisher_match:
+                    data_fields.append("[red]PRO publisher matches known PFC entity[/red]")
+            else:
+                data_fields.append("[dim]PRO: Not in BMI or ASCAP[/dim]")
+                if ext.musicbrainz_ipis:
+                    data_fields.append("[yellow]PRO: Has IPI code (non-US registration)[/yellow]")
+
         if data_fields:
             lines.append("[bold underline]Key Data Fields[/bold underline]")
             for df in data_fields:
                 lines.append(f"  {df}")
             lines.append("")
 
-    # --- Section 6: PRO Registry (ASCAP/BMI) ---
-    ext = ev.external_data
-    if ext and ext.pro_checked:
-        lines.append("[bold underline]PRO Registry (ASCAP/BMI)[/bold underline]")
-        if ext.pro_songwriter_registered:
-            registries = []
-            if ext.pro_found_bmi:
-                registries.append("BMI")
-            if ext.pro_found_ascap:
-                registries.append("ASCAP")
-            reg_str = " + ".join(registries) if registries else "PRO"
-            lines.append(f"  [green]Registered[/green] with {reg_str}")
-            if ext.pro_works_count:
-                lines.append(f"  Works: {ext.pro_works_count}")
-            if ext.pro_publishers:
-                lines.append(f"  Publisher(s): {', '.join(ext.pro_publishers[:3])}")
-            if ext.pro_songwriter_share_pct >= 0:
-                sw = ext.pro_songwriter_share_pct
-                pub = ext.pro_publisher_share_pct
-                if ext.pro_zero_songwriter_share:
-                    lines.append(f"  [red]Ownership: 0% songwriter / 100% publisher[/red]")
-                elif pub >= 0:
-                    lines.append(f"  Ownership: {sw:.0f}% songwriter / {pub:.0f}% publisher")
-                else:
-                    lines.append(f"  Songwriter share: {sw:.0f}%")
-            if ext.pro_pfc_publisher_match:
-                lines.append(f"  [red]Publisher matches known PFC entity[/red]")
-        else:
-            lines.append(f"  [dim]Not found in BMI or ASCAP databases[/dim]")
-            if ext.musicbrainz_ipis:
-                lines.append(f"  [yellow]Has IPI code (non-US PRO registration)[/yellow]")
-        lines.append("")
-
-    # --- Section 7: Blocklist Status ---
+    # --- Section 6: Blocklist Status ---
     _BLOCKLIST_TAGS = {
         "pfc_label", "known_ai_artist", "pfc_songwriter", "known_ai_label",
         "entity_confirmed_bad", "entity_suspected", "pfc_publisher",
@@ -435,7 +431,7 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
         lines.append(f"  [green]Clean — not on any blocklist[/green]")
     lines.append("")
 
-    # --- Section 8: Red flags (non-blocklist) ---
+    # --- Section 7: Red flags (non-blocklist) ---
     if non_blocklist_reds:
         lines.append(f"[bold red]Red Flags ({len(non_blocklist_reds)}):[/bold red]")
         for e in non_blocklist_reds:
@@ -445,7 +441,7 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
             lines.append(f"      [dim]{e.detail}[/dim]")
         lines.append("")
 
-    # --- Section 9: Green flags ---
+    # --- Section 8: Green flags ---
     if ev.green_flags:
         lines.append(f"[bold green]Green Flags ({len(ev.green_flags)}):[/bold green]")
         for e in ev.green_flags:
@@ -455,7 +451,7 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
             lines.append(f"      [dim]{e.detail}[/dim]")
         lines.append("")
 
-    # --- Section 10: Neutral notes ---
+    # --- Section 9: Neutral notes ---
     if ev.neutral_notes:
         lines.append("[bold]Notes:[/bold]")
         for e in ev.neutral_notes:
