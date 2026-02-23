@@ -305,11 +305,60 @@ def to_markdown(report: PlaylistReport) -> str:
                 lines.append(f"**How we decided:** {' -> '.join(ev.decision_path)}")
                 lines.append("")
 
-            # Red flags
-            if ev.red_flags:
+            # PRO Registry (ASCAP/BMI)
+            ext = ev.external_data
+            if ext and ext.pro_checked:
+                lines.append("**PRO Registry (ASCAP/BMI):**")
+                lines.append("")
+                if ext.pro_songwriter_registered:
+                    registries = []
+                    if ext.pro_found_bmi:
+                        registries.append("BMI")
+                    if ext.pro_found_ascap:
+                        registries.append("ASCAP")
+                    reg_str = " + ".join(registries) if registries else "PRO"
+                    parts = [f"Registered with {reg_str}"]
+                    if ext.pro_works_count:
+                        parts.append(f"{ext.pro_works_count} works")
+                    if ext.pro_publishers:
+                        parts.append(f"Publisher: {', '.join(ext.pro_publishers[:3])}")
+                    if ext.pro_songwriter_share_pct >= 0:
+                        if ext.pro_zero_songwriter_share:
+                            parts.append("**0% songwriter / 100% publisher**")
+                        elif ext.pro_publisher_share_pct >= 0:
+                            parts.append(f"{ext.pro_songwriter_share_pct:.0f}% songwriter / {ext.pro_publisher_share_pct:.0f}% publisher")
+                    lines.append(f"- {' | '.join(parts)}")
+                    if ext.pro_pfc_publisher_match:
+                        lines.append(f"- **Publisher matches known PFC entity**")
+                else:
+                    lines.append("- Not found in BMI or ASCAP databases")
+                    if ext.musicbrainz_ipis:
+                        lines.append("- Has IPI code (non-US PRO registration)")
+                lines.append("")
+
+            # Blocklist Status (broken out separately)
+            _BLOCKLIST_TAGS = {
+                "pfc_label", "known_ai_artist", "pfc_songwriter", "known_ai_label",
+                "entity_confirmed_bad", "entity_suspected", "pfc_publisher",
+            }
+            blocklist_hits = [e for e in ev.red_flags if set(e.tags) & _BLOCKLIST_TAGS]
+            non_blocklist_reds = [e for e in ev.red_flags if not (set(e.tags) & _BLOCKLIST_TAGS)]
+
+            lines.append("**Blocklist Status:**")
+            lines.append("")
+            if blocklist_hits:
+                for e in blocklist_hits:
+                    lines.append(f"- [{e.strength.upper()}] {e.finding} ({e.source})")
+                    lines.append(f"  - {e.detail}")
+            else:
+                lines.append("- Clean — not on any blocklist")
+            lines.append("")
+
+            # Red flags (non-blocklist)
+            if non_blocklist_reds:
                 lines.append("**Red Flags:**")
                 lines.append("")
-                for e in ev.red_flags:
+                for e in non_blocklist_reds:
                     lines.append(f"- [{e.strength.upper()}] {e.finding} ({e.source})")
                     lines.append(f"  - {e.detail}")
                 lines.append("")

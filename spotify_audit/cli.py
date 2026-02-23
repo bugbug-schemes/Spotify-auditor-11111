@@ -382,17 +382,70 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
                 lines.append(f"  {df}")
             lines.append("")
 
-    # --- Section 6: Red flags ---
-    if ev.red_flags:
-        lines.append(f"[bold red]Red Flags ({len(ev.red_flags)}):[/bold red]")
-        for e in ev.red_flags:
+    # --- Section 6: PRO Registry (ASCAP/BMI) ---
+    ext = ev.external_data
+    if ext and ext.pro_checked:
+        lines.append("[bold underline]PRO Registry (ASCAP/BMI)[/bold underline]")
+        if ext.pro_songwriter_registered:
+            registries = []
+            if ext.pro_found_bmi:
+                registries.append("BMI")
+            if ext.pro_found_ascap:
+                registries.append("ASCAP")
+            reg_str = " + ".join(registries) if registries else "PRO"
+            lines.append(f"  [green]Registered[/green] with {reg_str}")
+            if ext.pro_works_count:
+                lines.append(f"  Works: {ext.pro_works_count}")
+            if ext.pro_publishers:
+                lines.append(f"  Publisher(s): {', '.join(ext.pro_publishers[:3])}")
+            if ext.pro_songwriter_share_pct >= 0:
+                sw = ext.pro_songwriter_share_pct
+                pub = ext.pro_publisher_share_pct
+                if ext.pro_zero_songwriter_share:
+                    lines.append(f"  [red]Ownership: 0% songwriter / 100% publisher[/red]")
+                elif pub >= 0:
+                    lines.append(f"  Ownership: {sw:.0f}% songwriter / {pub:.0f}% publisher")
+                else:
+                    lines.append(f"  Songwriter share: {sw:.0f}%")
+            if ext.pro_pfc_publisher_match:
+                lines.append(f"  [red]Publisher matches known PFC entity[/red]")
+        else:
+            lines.append(f"  [dim]Not found in BMI or ASCAP databases[/dim]")
+            if ext.musicbrainz_ipis:
+                lines.append(f"  [yellow]Has IPI code (non-US PRO registration)[/yellow]")
+        lines.append("")
+
+    # --- Section 7: Blocklist Status ---
+    _BLOCKLIST_TAGS = {
+        "pfc_label", "known_ai_artist", "pfc_songwriter", "known_ai_label",
+        "entity_confirmed_bad", "entity_suspected", "pfc_publisher",
+    }
+    blocklist_hits = [e for e in ev.red_flags if set(e.tags) & _BLOCKLIST_TAGS]
+    non_blocklist_reds = [e for e in ev.red_flags if not (set(e.tags) & _BLOCKLIST_TAGS)]
+
+    lines.append("[bold underline]Blocklist Status[/bold underline]")
+    if blocklist_hits:
+        lines.append(f"  [red]{len(blocklist_hits)} blocklist hit(s):[/red]")
+        for e in blocklist_hits:
+            strength_icon = {"strong": "!!!", "moderate": "!!", "weak": "!"}
+            icon = strength_icon.get(e.strength, "!")
+            lines.append(f"    {icon} {e.finding} [dim]({e.source})[/dim]")
+            lines.append(f"        [dim]{e.detail}[/dim]")
+    else:
+        lines.append(f"  [green]Clean — not on any blocklist[/green]")
+    lines.append("")
+
+    # --- Section 8: Red flags (non-blocklist) ---
+    if non_blocklist_reds:
+        lines.append(f"[bold red]Red Flags ({len(non_blocklist_reds)}):[/bold red]")
+        for e in non_blocklist_reds:
             strength_icon = {"strong": "!!!", "moderate": "!!", "weak": "!"}
             icon = strength_icon.get(e.strength, "!")
             lines.append(f"  [{e.strength}] {icon} {e.finding} [dim]({e.source})[/dim]")
             lines.append(f"      [dim]{e.detail}[/dim]")
         lines.append("")
 
-    # --- Section 7: Green flags ---
+    # --- Section 9: Green flags ---
     if ev.green_flags:
         lines.append(f"[bold green]Green Flags ({len(ev.green_flags)}):[/bold green]")
         for e in ev.green_flags:
@@ -402,7 +455,7 @@ def _build_evidence_text(ev: ArtistEvaluation) -> str:
             lines.append(f"      [dim]{e.detail}[/dim]")
         lines.append("")
 
-    # --- Section 8: Neutral notes ---
+    # --- Section 10: Neutral notes ---
     if ev.neutral_notes:
         lines.append("[bold]Notes:[/bold]")
         for e in ev.neutral_notes:
