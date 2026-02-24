@@ -211,7 +211,7 @@ def _verdict_to_score(ev: ArtistEvaluation) -> int:
         Verdict.SUSPICIOUS: (18, 37),
         Verdict.LIKELY_ARTIFICIAL: (0, 17),
     }
-    lo, hi = base_ranges.get(ev.verdict, (35, 54))
+    lo, hi = base_ranges.get(ev.verdict, (38, 57))
 
     # Confidence shifts within range
     conf_frac = CONFIDENCE_FRACTIONS.get(ev.confidence, 0.5)

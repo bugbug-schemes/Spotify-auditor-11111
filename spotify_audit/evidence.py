@@ -1639,16 +1639,18 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
             tags=["not_found"],
         ))
 
-    # Combined live show assessment
-    if total_shows == 0 and not ext.setlistfm_found:
+    # Combined live show assessment — only add if not already covered by setlistfm-specific flag
+    songkick_shows = getattr(ext, "songkick_total_past_events", 0) or 0
+    if total_shows == 0 and not ext.setlistfm_found and songkick_shows == 0 and not getattr(ext, "songkick_found", False):
         evidence.append(Evidence(
             finding="No live performance history found anywhere",
             source="Live shows",
             evidence_type="red_flag",
             strength="moderate",
-            detail="No concerts found on Setlist.fm. While some real "
+            detail="No concerts found on Setlist.fm or Songkick. While some real "
                    "artists are studio-only, the absence of any live history is a "
                    "common pattern for ghost and AI-generated artists.",
+            tags=["concert_history"],
         ))
 
     return evidence
@@ -2290,7 +2292,7 @@ def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
     if ext.wikipedia_description:
         desc = ext.wikipedia_description.lower()
         music_terms = ["musician", "singer", "band", "rapper", "composer",
-                       "songwriter", "DJ", "group", "artist", "producer"]
+                       "songwriter", "dj", "group", "artist", "producer"]
         if any(term in desc for term in music_terms):
             evidence.append(Evidence(
                 finding=f"Wikidata: \"{ext.wikipedia_description}\"",
