@@ -34,13 +34,14 @@ const VERIFIED_ARTIST = {
     { finding: '342 concerts on Setlist.fm across 28 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance', 'touring_geography'], detail: 'Extensive touring 2015\u2013present' },
     { finding: '12 physical releases on Discogs (vinyl, CD)', source: 'Discogs', type: 'green_flag', strength: 'moderate', tags: ['physical_release'], detail: '' },
     { finding: '14 upcoming shows on Bandsintown', source: 'Bandsintown', type: 'green_flag', strength: 'moderate', tags: ['live_performance'], detail: '' },
-    // Online Identity
+    // Platform Presence (YouTube, Wikipedia, social)
     { finding: 'Wikipedia article (42,891 bytes, 156 references)', source: 'Wikipedia', type: 'green_flag', strength: 'strong', tags: ['wikipedia'], detail: '' },
     { finding: 'Verified social media: Instagram (2.1M), Twitter (489K)', source: 'Analysis', type: 'green_flag', strength: 'strong', tags: ['social_media', 'verified_identity'], detail: '' },
+    // Industry Signals (bio, PRO, ISNI/IPI)
     { finding: 'Authentic artist bio with career narrative', source: 'Analysis', type: 'green_flag', strength: 'weak', tags: ['authentic_bio', 'career_bio'], detail: '' },
-    // Industry Signals
     { finding: 'ISNI registered (0000 0004 5847 1234)', source: 'MusicBrainz', type: 'green_flag', strength: 'moderate', tags: ['isni_registered', 'industry_registered'], detail: '' },
-    { finding: 'IPI registered with multiple PROs', source: 'MusicBrainz', type: 'green_flag', strength: 'moderate', tags: ['ipi_registered', 'pro_registered'], detail: '' },
+    { finding: 'Registered songwriter with BMI and ASCAP (47 works)', source: 'PRO Registry', type: 'green_flag', strength: 'moderate', tags: ['pro_registered'], detail: '' },
+    // Blocklist Status
     { finding: 'Clean across all blocklists', source: 'Blocklist', type: 'green_flag', strength: 'weak', tags: [], detail: '' },
   ],
 };
@@ -67,13 +68,14 @@ const AUTHENTIC_ARTIST = {
     { finding: '187 concerts on Setlist.fm in 12 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance', 'touring_geography'], detail: '' },
     { finding: '23 physical releases on Discogs (vinyl, CD, cassette)', source: 'Discogs', type: 'green_flag', strength: 'moderate', tags: ['physical_release'], detail: '' },
     { finding: '6 upcoming shows on Bandsintown', source: 'Bandsintown', type: 'green_flag', strength: 'weak', tags: ['live_performance'], detail: '' },
-    // Online Identity
+    // Platform Presence (Wikipedia, social)
     { finding: 'Wikipedia article (18,234 bytes)', source: 'Wikipedia', type: 'green_flag', strength: 'moderate', tags: ['wikipedia'], detail: '' },
     { finding: 'Verified social media: Instagram (198K), Twitter (45K)', source: 'Analysis', type: 'green_flag', strength: 'moderate', tags: ['social_media'], detail: '' },
+    // Industry Signals (bio, PRO, ISNI/IPI)
     { finding: 'Authentic artist bio with career narrative', source: 'Analysis', type: 'green_flag', strength: 'weak', tags: ['authentic_bio'], detail: '' },
-    // Industry Signals
     { finding: 'ISNI registered', source: 'MusicBrainz', type: 'green_flag', strength: 'moderate', tags: ['isni_registered'], detail: '' },
-    { finding: 'IPI registered', source: 'MusicBrainz', type: 'green_flag', strength: 'moderate', tags: ['ipi_registered'], detail: '' },
+    { finding: 'Registered songwriter with ASCAP (23 works, 50% writer share)', source: 'PRO Registry', type: 'green_flag', strength: 'moderate', tags: ['pro_registered'], detail: '' },
+    // Blocklist Status
     { finding: 'Clean across all blocklists', source: 'Blocklist', type: 'green_flag', strength: 'weak', tags: [], detail: '' },
   ],
 };
@@ -99,12 +101,13 @@ const INCONCLUSIVE_ARTIST = {
     { finding: '8 concerts on Setlist.fm', source: 'Setlist.fm', type: 'green_flag', strength: 'weak', tags: ['live_performance'], detail: 'Primarily local shows in Iceland' },
     { finding: 'No physical releases found on Discogs', source: 'Discogs', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
     { finding: 'No events found on Bandsintown', source: 'Bandsintown', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
-    // Online Identity
+    // Platform Presence (Wikipedia, social)
     { finding: 'Wikipedia stub article (4,173 bytes)', source: 'Wikipedia', type: 'green_flag', strength: 'weak', tags: ['wikipedia'], detail: '' },
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
+    // Industry Signals (PRO, press)
     { finding: 'No press coverage found', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['press_coverage'], detail: '' },
-    // Industry Signals
     { finding: 'No ISNI or IPI registration found', source: 'MusicBrainz', type: 'red_flag', strength: 'weak', tags: ['no_pro_registration'], detail: '' },
+    // Blocklist Status
     { finding: 'Clean across all blocklists', source: 'Blocklist', type: 'green_flag', strength: 'weak', tags: [], detail: '' },
     { finding: 'No prior intelligence in entity database', source: 'Entity DB', type: 'neutral', strength: 'weak', tags: [], detail: '' },
   ],
@@ -129,14 +132,15 @@ const SUSPICIOUS_ARTIST = {
     { finding: '38 singles, 0 albums (content farm pattern)', source: 'Catalog', type: 'red_flag', strength: 'strong', tags: ['content_farm', 'high_release_rate'], detail: 'Active since 2022. Average duration 1:52. \u03C3 = 0:08' },
     { finding: 'Mood-word track titles pattern detected', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['mood_word_titles', 'cookie_cutter'], detail: '' },
     // IRL Presence — all absent, padding will fill
-    // Online Identity
+    // Platform Presence (social, Wikipedia)
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
-    { finding: 'No genres listed on Spotify profile', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['no_genres'], detail: '' },
     { finding: 'No Wikipedia article found', source: 'Wikipedia', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
-    // Industry Signals
+    // Industry Signals (PRO, genres)
+    { finding: 'No genres listed on Spotify profile', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['no_genres'], detail: '' },
+    { finding: 'No PRO registration found', source: 'PRO Registry', type: 'red_flag', strength: 'weak', tags: ['no_pro_registration'], detail: '' },
+    // Blocklist Status
     { finding: 'Label "Chill Vibes Records" matches PFC distributor list', source: 'Blocklist', type: 'red_flag', strength: 'strong', tags: ['pfc_label'], detail: '' },
     { finding: 'Songwriter "Marcus Wellstone" matches PFC songwriter list', source: 'Blocklist', type: 'red_flag', strength: 'strong', tags: ['pfc_songwriter'], detail: '' },
-    { finding: 'No PRO registration found', source: 'PRO Registry', type: 'red_flag', strength: 'weak', tags: ['no_pro_registration'], detail: '' },
   ],
 };
 
@@ -159,14 +163,15 @@ const ARTIFICIAL_ARTIST = {
     { finding: 'Same-day multi-releases detected (12 instances)', source: 'Analysis', type: 'red_flag', strength: 'strong', tags: ['same_day_release', 'stream_farm'], detail: '' },
     { finding: 'Generic artist name pattern', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['generic_name'], detail: '' },
     // IRL Presence — all absent, padding will fill
-    // Online Identity
+    // Platform Presence (social, Wikipedia)
     { finding: 'No Wikipedia article found', source: 'Wikipedia', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
+    // Industry Signals (AI detection, PRO, image)
     { finding: 'AI-generated profile image detected', source: 'Analysis', type: 'red_flag', strength: 'strong', tags: ['ai_generated_image'], detail: '' },
-    // Industry Signals
     { finding: 'AI-generated music pattern detected', source: 'Analysis', type: 'red_flag', strength: 'strong', tags: ['ai_generated_music'], detail: '' },
-    { finding: 'Known AI artist name match', source: 'Blocklist', type: 'red_flag', strength: 'strong', tags: ['known_ai_artist'], detail: '' },
     { finding: 'No PRO registration found', source: 'PRO Registry', type: 'red_flag', strength: 'weak', tags: ['no_pro_registration'], detail: '' },
+    // Blocklist Status
+    { finding: 'Known AI artist name match', source: 'Blocklist', type: 'red_flag', strength: 'strong', tags: ['known_ai_artist'], detail: '' },
   ],
 };
 

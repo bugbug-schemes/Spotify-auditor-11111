@@ -19,17 +19,29 @@ const SECTION_ORDER = [
   'Fan Engagement',
   'Creative History',
   'IRL Presence',
-  'Online Identity',
   'Industry Signals',
+  'Blocklist Status',
 ];
 
 const TAG_TO_SECTION = {
+  // Platform Presence (includes YouTube, Wikipedia, social media, verified identity)
   multi_platform: 'Platform Presence',
   single_platform: 'Platform Presence',
+  wikipedia: 'Platform Presence',
+  social_media: 'Platform Presence',
+  no_social_media: 'Platform Presence',
+  genius_verified: 'Platform Presence',
+  verified_identity: 'Platform Presence',
+  youtube_presence: 'Platform Presence',
+  no_youtube: 'Platform Presence',
+  bandcamp_presence: 'Platform Presence',
+  // Fan Engagement
   genuine_fans: 'Fan Engagement',
   low_fans: 'Fan Engagement',
   low_scrobble_engagement: 'Fan Engagement',
   listener_playlist_ratio: 'Fan Engagement',
+  youtube_disparity: 'Fan Engagement',
+  // Creative History
   catalog_albums: 'Creative History',
   empty_catalog: 'Creative History',
   content_farm: 'Creative History',
@@ -39,51 +51,49 @@ const TAG_TO_SECTION = {
   same_day_release: 'Creative History',
   genius_credits: 'Creative History',
   collaboration: 'Creative History',
+  mood_word_titles: 'Creative History',
+  // IRL Presence
   live_performance: 'IRL Presence',
   physical_release: 'IRL Presence',
   concert_history: 'IRL Presence',
   touring_geography: 'IRL Presence',
   named_tour: 'IRL Presence',
-  bandcamp_presence: 'IRL Presence',
-  wikipedia: 'Online Identity',
-  social_media: 'Online Identity',
-  no_social_media: 'Online Identity',
-  genius_verified: 'Online Identity',
-  career_bio: 'Online Identity',
-  verified_identity: 'Online Identity',
-  no_genres: 'Online Identity',
+  // Industry Signals (includes bio, photo, identity, PRO, press)
   industry_registered: 'Industry Signals',
   isni_registered: 'Industry Signals',
   ipi_registered: 'Industry Signals',
   pro_registered: 'Industry Signals',
   no_pro_registration: 'Industry Signals',
-  pfc_label: 'Industry Signals',
-  known_ai_artist: 'Industry Signals',
-  known_ai_label: 'Industry Signals',
-  pfc_songwriter: 'Industry Signals',
-  pfc_publisher: 'Industry Signals',
   no_songwriter_share: 'Industry Signals',
-  isrc_pfc_registrant: 'Industry Signals',
-  cowriter_network: 'Industry Signals',
-  entity_confirmed_bad: 'Industry Signals',
-  entity_suspected: 'Industry Signals',
-  entity_bad_label: 'Industry Signals',
-  entity_bad_songwriter: 'Industry Signals',
-  entity_bad_network: 'Industry Signals',
-  ai_generated_image: 'Online Identity',
-  ai_bio: 'Online Identity',
-  stock_photo: 'Online Identity',
-  authentic_photo: 'Online Identity',
-  authentic_bio: 'Online Identity',
-  suspicious_bio: 'Online Identity',
+  normal_pro_split: 'Industry Signals',
+  career_bio: 'Industry Signals',
+  authentic_bio: 'Industry Signals',
+  ai_bio: 'Industry Signals',
+  ai_generated_image: 'Industry Signals',
+  stock_photo: 'Industry Signals',
+  authentic_photo: 'Industry Signals',
+  suspicious_bio: 'Industry Signals',
+  impersonation: 'Industry Signals',
   ai_generated_music: 'Industry Signals',
   deezer_ai_clear: 'Industry Signals',
-  youtube_presence: 'Online Identity',
-  no_youtube: 'Online Identity',
-  youtube_disparity: 'Fan Engagement',
-  press_coverage: 'Online Identity',
-  generic_name: 'Online Identity',
-  mood_word_titles: 'Creative History',
+  press_coverage: 'Industry Signals',
+  generic_name: 'Industry Signals',
+  no_genres: 'Industry Signals',
+  // Blocklist Status
+  pfc_label: 'Blocklist Status',
+  known_ai_artist: 'Blocklist Status',
+  known_ai_label: 'Blocklist Status',
+  pfc_songwriter: 'Blocklist Status',
+  pfc_publisher: 'Blocklist Status',
+  isrc_pfc_registrant: 'Blocklist Status',
+  cowriter_network: 'Blocklist Status',
+  entity_confirmed_bad: 'Blocklist Status',
+  entity_suspected: 'Blocklist Status',
+  entity_cleared: 'Blocklist Status',
+  entity_bad_label: 'Blocklist Status',
+  entity_bad_songwriter: 'Blocklist Status',
+  entity_bad_network: 'Blocklist Status',
+  known_bad_actor: 'Blocklist Status',
 };
 
 const SOURCE_TO_SECTION = {
@@ -94,12 +104,12 @@ const SOURCE_TO_SECTION = {
   Discogs: 'IRL Presence',
   'Setlist.fm': 'IRL Presence',
   'Last.fm': 'Fan Engagement',
-  Wikipedia: 'Online Identity',
+  Wikipedia: 'Platform Presence',
   Songkick: 'IRL Presence',
   Bandsintown: 'IRL Presence',
-  YouTube: 'Online Identity',
-  Blocklist: 'Industry Signals',
-  'Entity DB': 'Industry Signals',
+  YouTube: 'Platform Presence',
+  Blocklist: 'Blocklist Status',
+  'Entity DB': 'Blocklist Status',
   'PRO Registry': 'Industry Signals',
   Spotify: 'Platform Presence',
 };
@@ -110,8 +120,8 @@ const NO_DATA_SIGNALS = {
   'Fan Engagement': { finding: 'No fan engagement data from Last.fm or Deezer', source: 'Analysis' },
   'Creative History': { finding: 'No release history or creative credits found', source: 'Analysis' },
   'IRL Presence': { finding: 'No live performances on Setlist.fm and no physical releases on Discogs', source: 'Analysis' },
-  'Online Identity': { finding: 'No Wikipedia article, social media, or verified profiles found', source: 'Analysis' },
   'Industry Signals': { finding: 'No industry registrations (ISNI, IPI, PRO) found', source: 'Analysis' },
+  'Blocklist Status': { finding: 'Clean across all blocklists', source: 'Blocklist' },
 };
 
 // Candidates for padding thin sections — only used when source is absent from ALL evidence
@@ -120,10 +130,11 @@ const SECTION_PAD_CANDIDATES = {
     { src: 'Deezer', finding: 'Not found on Deezer' },
     { src: 'MusicBrainz', finding: 'Not found on MusicBrainz' },
     { src: 'Genius', finding: 'Not found on Genius' },
+    { src: 'Wikipedia', finding: 'No Wikipedia article found' },
+    { src: 'YouTube', finding: 'No YouTube channel found' },
   ],
   'Fan Engagement': [
     { src: 'Last.fm', finding: 'No Last.fm listener data found' },
-    { src: 'YouTube', finding: 'No YouTube engagement data found' },
   ],
   'Creative History': [],
   'IRL Presence': [
@@ -131,12 +142,10 @@ const SECTION_PAD_CANDIDATES = {
     { src: 'Discogs', finding: 'No physical releases found on Discogs' },
     { src: 'Bandsintown', finding: 'No events found on Bandsintown' },
   ],
-  'Online Identity': [
-    { src: 'Wikipedia', finding: 'No Wikipedia article found' },
-    { src: 'YouTube', finding: 'No YouTube channel found' },
-  ],
   'Industry Signals': [
     { src: 'PRO Registry', finding: 'No PRO registration found' },
+  ],
+  'Blocklist Status': [
     { src: 'Entity DB', finding: 'No prior intelligence in entity database' },
   ],
 };
@@ -146,8 +155,8 @@ const SECTION_ICONS = {
   'Fan Engagement': '\uD83D\uDC65',
   'Creative History': '\uD83C\uDFB5',
   'IRL Presence': '\uD83C\uDFE4',
-  'Online Identity': '\uD83D\uDD0D',
   'Industry Signals': '\uD83C\uDFAD',
+  'Blocklist Status': '\uD83D\uDEE1\uFE0F',
 };
 
 // ---------------------------------------------------------------------------
@@ -332,10 +341,11 @@ function buildSections(evidenceList) {
   for (const name of SECTION_ORDER) {
     if (sections[name].length === 0) {
       const fallback = NO_DATA_SIGNALS[name];
+      const fallbackType = name === 'Blocklist Status' ? 'green_flag' : 'red_flag';
       sections[name].push({
         finding: fallback.finding,
         source: fallback.source,
-        type: 'red_flag',
+        type: fallbackType,
         strength: 'weak',
         tags: ['not_found'],
         detail: '',
