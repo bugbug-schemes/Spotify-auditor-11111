@@ -57,6 +57,10 @@ class LastfmClient:
         self._session.mount("https://", adapter)
         self._session.mount("http://", adapter)
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self._session.close()
+
     def _get(self, method: str, **params) -> dict | None:
         """Make a Last.fm API call."""
         params.update({

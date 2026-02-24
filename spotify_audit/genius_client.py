@@ -62,6 +62,10 @@ class GeniusClient:
         self.delay = delay
         self.enabled = bool(access_token)
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self.session.close()
+
     def _get(self, path: str, params: dict | None = None) -> dict:
         if not self.enabled:
             return {}

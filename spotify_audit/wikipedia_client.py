@@ -60,6 +60,10 @@ class WikipediaClient:
         self._session.mount("https://", adapter)
         self._session.mount("http://", adapter)
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self._session.close()
+
     # ------------------------------------------------------------------
 
     def _mw_get(self, **params) -> dict | None:

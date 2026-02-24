@@ -58,7 +58,6 @@ MAX_CONCURRENT_SCANS = 5
 
 # In-memory cache for fast progress updates during active scans.
 # The ScanStore (SQLite) is the source of truth and survives restarts.
-_scans_lock = threading.Lock()
 _active_scans: OrderedDict[str, dict] = OrderedDict()
 
 # Persistent scan store — initialized at module level so gunicorn
@@ -207,6 +206,21 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             _active_scans.pop(scan_id, None)
 
         threading.Thread(target=_deferred_cleanup, daemon=True).start()
+
+
+@app.errorhandler(404)
+def not_found(e):
+    if request.path.startswith("/api/"):
+        return jsonify({"error": "Not found"}), 404
+    return render_template("index.html"), 404
+
+
+@app.errorhandler(500)
+def internal_error(e):
+    logger.exception("Internal server error")
+    if request.path.startswith("/api/"):
+        return jsonify({"error": "Internal server error"}), 500
+    return "Internal server error", 500
 
 
 @app.route("/healthz")

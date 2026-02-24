@@ -34,7 +34,7 @@ const VERIFIED_ARTIST = {
     { finding: '342 concerts on Setlist.fm across 28 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance', 'touring_geography'], detail: 'Extensive touring 2015\u2013present' },
     { finding: '12 physical releases on Discogs (vinyl, CD)', source: 'Discogs', type: 'green_flag', strength: 'moderate', tags: ['physical_release'], detail: '' },
     { finding: '14 upcoming shows on Bandsintown', source: 'Bandsintown', type: 'green_flag', strength: 'moderate', tags: ['live_performance'], detail: '' },
-    // Online Identity
+    // Platform Presence / Blocklist Status
     { finding: 'Wikipedia article (42,891 bytes, 156 references)', source: 'Wikipedia', type: 'green_flag', strength: 'strong', tags: ['wikipedia'], detail: '' },
     { finding: 'Verified social media: Instagram (2.1M), Twitter (489K)', source: 'Analysis', type: 'green_flag', strength: 'strong', tags: ['social_media', 'verified_identity'], detail: '' },
     { finding: 'Authentic artist bio with career narrative', source: 'Analysis', type: 'green_flag', strength: 'weak', tags: ['authentic_bio', 'career_bio'], detail: '' },
@@ -67,7 +67,7 @@ const AUTHENTIC_ARTIST = {
     { finding: '187 concerts on Setlist.fm in 12 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance', 'touring_geography'], detail: '' },
     { finding: '23 physical releases on Discogs (vinyl, CD, cassette)', source: 'Discogs', type: 'green_flag', strength: 'moderate', tags: ['physical_release'], detail: '' },
     { finding: '6 upcoming shows on Bandsintown', source: 'Bandsintown', type: 'green_flag', strength: 'weak', tags: ['live_performance'], detail: '' },
-    // Online Identity
+    // Platform Presence / Blocklist Status
     { finding: 'Wikipedia article (18,234 bytes)', source: 'Wikipedia', type: 'green_flag', strength: 'moderate', tags: ['wikipedia'], detail: '' },
     { finding: 'Verified social media: Instagram (198K), Twitter (45K)', source: 'Analysis', type: 'green_flag', strength: 'moderate', tags: ['social_media'], detail: '' },
     { finding: 'Authentic artist bio with career narrative', source: 'Analysis', type: 'green_flag', strength: 'weak', tags: ['authentic_bio'], detail: '' },
@@ -99,7 +99,7 @@ const INCONCLUSIVE_ARTIST = {
     { finding: '8 concerts on Setlist.fm', source: 'Setlist.fm', type: 'green_flag', strength: 'weak', tags: ['live_performance'], detail: 'Primarily local shows in Iceland' },
     { finding: 'No physical releases found on Discogs', source: 'Discogs', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
     { finding: 'No events found on Bandsintown', source: 'Bandsintown', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
-    // Online Identity
+    // Platform Presence / Blocklist Status
     { finding: 'Wikipedia stub article (4,173 bytes)', source: 'Wikipedia', type: 'green_flag', strength: 'weak', tags: ['wikipedia'], detail: '' },
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
     { finding: 'No press coverage found', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['press_coverage'], detail: '' },
@@ -129,7 +129,7 @@ const SUSPICIOUS_ARTIST = {
     { finding: '38 singles, 0 albums (content farm pattern)', source: 'Catalog', type: 'red_flag', strength: 'strong', tags: ['content_farm', 'high_release_rate'], detail: 'Active since 2022. Average duration 1:52. \u03C3 = 0:08' },
     { finding: 'Mood-word track titles pattern detected', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['mood_word_titles', 'cookie_cutter'], detail: '' },
     // IRL Presence — all absent, padding will fill
-    // Online Identity
+    // Platform Presence / Blocklist Status
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
     { finding: 'No genres listed on Spotify profile', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['no_genres'], detail: '' },
     { finding: 'No Wikipedia article found', source: 'Wikipedia', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
@@ -159,7 +159,7 @@ const ARTIFICIAL_ARTIST = {
     { finding: 'Same-day multi-releases detected (12 instances)', source: 'Analysis', type: 'red_flag', strength: 'strong', tags: ['same_day_release', 'stream_farm'], detail: '' },
     { finding: 'Generic artist name pattern', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['generic_name'], detail: '' },
     // IRL Presence — all absent, padding will fill
-    // Online Identity
+    // Platform Presence / Blocklist Status
     { finding: 'No Wikipedia article found', source: 'Wikipedia', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
     { finding: 'AI-generated profile image detected', source: 'Analysis', type: 'red_flag', strength: 'strong', tags: ['ai_generated_image'], detail: '' },

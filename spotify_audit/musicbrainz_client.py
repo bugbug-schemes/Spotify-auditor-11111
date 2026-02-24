@@ -10,6 +10,7 @@ and validate release history.
 
 from __future__ import annotations
 
+import threading
 import time
 import logging
 from dataclasses import dataclass, field
@@ -71,6 +72,10 @@ class MBArtist:
 class MusicBrainzClient:
     """Query MusicBrainz for artist metadata and label/release info."""
 
+    # Class-level lock ensures the 1 req/sec rate limit is respected even
+    # when enrich() fires 4 concurrent threads for the same artist.
+    _rate_lock = threading.Lock()
+
     def __init__(self, delay: float = 1.1) -> None:
         self.session = requests.Session()
         self.session.headers["User-Agent"] = USER_AGENT
@@ -82,26 +87,32 @@ class MusicBrainzClient:
         self.session.mount("http://", adapter)
         self.delay = delay
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self.session.close()
+
     def _get(self, path: str, params: dict | None = None) -> dict:
         url = f"{MB_API}{path}"
         last_exc: Exception | None = None
         for attempt in range(3):
-            try:
-                r = self.session.get(url, params={**(params or {}), "fmt": "json"}, timeout=15)
-            except requests.RequestException as exc:
-                last_exc = exc
-                wait = 2 ** (attempt + 1)
-                logger.debug("MusicBrainz request failed (attempt %d): %s", attempt + 1, exc)
-                time.sleep(wait)
-                continue
-            if r.status_code == 429 or r.status_code == 503:
-                wait = 2 ** (attempt + 1)
-                logger.debug("MusicBrainz %d rate-limited, backing off %ds", r.status_code, wait)
-                time.sleep(wait)
-                continue
-            r.raise_for_status()
-            time.sleep(self.delay)
-            return r.json()
+            # Serialize requests across threads to respect 1 req/sec rate limit
+            with MusicBrainzClient._rate_lock:
+                try:
+                    r = self.session.get(url, params={**(params or {}), "fmt": "json"}, timeout=15)
+                except requests.RequestException as exc:
+                    last_exc = exc
+                    wait = 2 ** (attempt + 1)
+                    logger.debug("MusicBrainz request failed (attempt %d): %s", attempt + 1, exc)
+                    time.sleep(wait)
+                    continue
+                if r.status_code == 429 or r.status_code == 503:
+                    wait = 2 ** (attempt + 1)
+                    logger.debug("MusicBrainz %d rate-limited, backing off %ds", r.status_code, wait)
+                    time.sleep(wait)
+                    continue
+                r.raise_for_status()
+                time.sleep(self.delay)
+                return r.json()
         if last_exc:
             raise last_exc
         r.raise_for_status()

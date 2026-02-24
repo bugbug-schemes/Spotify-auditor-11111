@@ -60,6 +60,10 @@ class SongkickClient:
         self._session.mount("https://", adapter)
         self._session.mount("http://", adapter)
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self._session.close()
+
     def _get(self, path: str, params: dict | None = None) -> dict | None:
         """Make a Songkick API call."""
         if not self.enabled:

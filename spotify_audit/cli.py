@@ -2,7 +2,7 @@
 spotify-audit CLI entry point.
 
 Usage:
-    spotify-audit <playlist-url> [--tier quick|standard|deep] [--format md|html|json] [--output FILE]
+    spotify-audit <playlist-url> [--deep] [--format md|html|json] [--output FILE]
 
 No Spotify API key required — data is scraped from public embed endpoints.
 """

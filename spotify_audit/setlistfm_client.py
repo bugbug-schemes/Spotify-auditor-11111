@@ -65,6 +65,10 @@ class SetlistFmClient:
         self.delay = delay
         self.enabled = bool(api_key)
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self.session.close()
+
     def _get(self, path: str, params: dict | None = None) -> dict:
         if not self.enabled:
             return {}

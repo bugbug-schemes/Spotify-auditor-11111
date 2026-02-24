@@ -64,6 +64,10 @@ class DiscogsClient:
         self.delay = delay
         self.enabled = True  # Discogs works without a token (lower rate limit)
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self.session.close()
+
     def _get(self, path: str, params: dict | None = None) -> dict:
         url = f"{DISCOGS_API}{path}"
         last_exc: Exception | None = None
