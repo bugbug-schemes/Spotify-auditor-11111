@@ -66,8 +66,16 @@ class DiscogsClient:
 
     def _get(self, path: str, params: dict | None = None) -> dict:
         url = f"{DISCOGS_API}{path}"
+        last_exc: Exception | None = None
         for attempt in range(3):
-            r = self.session.get(url, params=params, timeout=15)
+            try:
+                r = self.session.get(url, params=params, timeout=15)
+            except requests.RequestException as exc:
+                last_exc = exc
+                wait = 2 ** (attempt + 1)
+                logger.debug("Discogs request failed (attempt %d): %s", attempt + 1, exc)
+                time.sleep(wait)
+                continue
             if r.status_code == 429:
                 wait = 2 ** (attempt + 1)
                 logger.debug("Discogs 429 rate-limited, backing off %ds", wait)
@@ -76,6 +84,8 @@ class DiscogsClient:
             r.raise_for_status()
             time.sleep(self.delay)
             return r.json()
+        if last_exc:
+            raise last_exc
         r.raise_for_status()
         return {}
 
