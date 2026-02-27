@@ -861,11 +861,16 @@ def _not_found_strength(ext: ExternalData, platform: str, artist_name: str = "")
     """Determine how strong a 'not found' red flag should be.
 
     Factors:
+    - If the API errored, return 'weak' (absence is uncertain, not confirmed).
     - If we had a platform ID (from MusicBrainz bridging) and still got no result,
       that's a strong signal the artist truly isn't there.
     - Name-only search for a very short name → weaker signal (matching uncertainty).
     - Default is 'moderate' (current behavior preserved for backward compat).
     """
+    # Guard: if the API errored, we can't be sure the artist isn't there
+    if _api_errored(ext, platform):
+        return "weak"
+
     had_id = ext.had_platform_ids.get(platform, False)
     if had_id:
         return "strong"
