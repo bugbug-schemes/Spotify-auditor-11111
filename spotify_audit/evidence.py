@@ -1084,8 +1084,13 @@ def _collect_duration_evidence(artist: ArtistInfo) -> list[Evidence]:
             tags=["stream_farm"],
         ))
 
-    # Cookie-cutter uniform durations
-    if stdev_s < 10 and len(durations) >= 5:
+    # Cookie-cutter uniform durations — exempt genres where uniform lengths
+    # are natural (ambient, classical, meditation, electronic, lo-fi)
+    _UNIFORM_EXEMPT_GENRES = {"ambient", "classical", "meditation", "electronic",
+                              "lo-fi", "lofi", "new age", "drone", "minimal"}
+    artist_genres = {g.lower() for g in (artist.genres or [])}
+    genre_exempt = bool(artist_genres & _UNIFORM_EXEMPT_GENRES)
+    if stdev_s < 10 and len(durations) >= 5 and not genre_exempt:
         evidence.append(Evidence(
             finding=f"Very uniform track lengths (stdev: {stdev_s:.1f}s)",
             source="Deezer",
@@ -1469,15 +1474,18 @@ def _collect_credit_network_evidence(artist: ArtistInfo) -> list[Evidence]:
                    for r in roles)
         ]
         if len(producers) == 1 and len(artist.track_titles) >= 5:
-            evidence.append(Evidence(
-                finding=f"All tracks credit a single producer: {producers[0]}",
-                source="Credit network",
-                evidence_type="red_flag",
-                strength="weak",
-                detail=f"Every track credits '{producers[0]}' as the sole producer/composer. "
-                       "While some solo artists self-produce, this pattern is also common "
-                       "with ghost producers who write entire catalogs under pseudonyms.",
-            ))
+            # Skip flag when the single producer IS the artist (self-producing)
+            is_self_produced = producers[0].lower().strip() == artist.name.lower().strip()
+            if not is_self_produced:
+                evidence.append(Evidence(
+                    finding=f"All tracks credit a single producer: {producers[0]}",
+                    source="Credit network",
+                    evidence_type="red_flag",
+                    strength="weak",
+                    detail=f"Every track credits '{producers[0]}' as the sole producer/composer. "
+                           "While some solo artists self-produce, this pattern is also common "
+                           "with ghost producers who write entire catalogs under pseudonyms.",
+                ))
 
     return evidence
 
@@ -2298,15 +2306,24 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
         ))
         return evidence
 
-    evidence.append(Evidence(
-        finding=f"Found on Last.fm ({ext.lastfm_listeners:,} listeners, "
-                f"{ext.lastfm_playcount:,} scrobbles)",
-        source="Last.fm",
-        evidence_type="green_flag",
-        strength="moderate",
-        detail=f"Artist has {ext.lastfm_listeners:,} unique listeners and "
-               f"{ext.lastfm_playcount:,} total scrobbles on Last.fm.",
-    ))
+    # Gate green flag strength on listener count
+    if ext.lastfm_listeners >= 100:
+        lastfm_found_strength = "moderate"
+    elif ext.lastfm_listeners >= 50:
+        lastfm_found_strength = "weak"
+    else:
+        lastfm_found_strength = None  # negligible — don't award green flag
+
+    if lastfm_found_strength:
+        evidence.append(Evidence(
+            finding=f"Found on Last.fm ({ext.lastfm_listeners:,} listeners, "
+                    f"{ext.lastfm_playcount:,} scrobbles)",
+            source="Last.fm",
+            evidence_type="green_flag",
+            strength=lastfm_found_strength,
+            detail=f"Artist has {ext.lastfm_listeners:,} unique listeners and "
+                   f"{ext.lastfm_playcount:,} total scrobbles on Last.fm.",
+        ))
 
     # Listener-to-playcount ratio analysis
     # Real artists: ratio typically 5-50+ (fans listen repeatedly)
@@ -2979,7 +2996,7 @@ def _decide_verdict(
         "genuine_fans" in e.tags and e.strength == "strong"
         for e in green_flags
     )
-    if presence.count() >= 3 and has_genuine_fans_strong and not strong_reds:
+    if presence.count() >= 3 and has_genuine_fans_strong and not strong_reds and total_red_strength < 6:
         decision_path.append(
             f"Present on {presence.count()} platforms with strong fan engagement, "
             f"no major red flags → Verified Artist"
@@ -3002,7 +3019,9 @@ def _decide_verdict(
 
     # Rule 8: PFC label alone → Suspicious (medium confidence —
     # being on a confirmed PFC label is not a weak signal)
-    if has_pfc_label:
+    # Guard: only apply when green evidence doesn't clearly outweigh red,
+    # otherwise let Rule 9 handle it.
+    if has_pfc_label and total_green_strength <= total_red_strength * 1.5:
         decision_path.append("PFC distributor match (without other strong signals) → Suspicious")
         return Verdict.SUSPICIOUS, "medium", "Rule 8: PFC Label Alone"
 
@@ -3228,7 +3247,6 @@ def fast_mode_evaluation(artist: ArtistInfo) -> ArtistEvaluation:
     """Return a pre-built VERIFIED ARTIST evaluation for obviously legitimate artists."""
     presence = PlatformPresence(deezer=True)
     if artist.deezer_fans > 0:
-        presence.deezer = True
         presence.deezer_fans = artist.deezer_fans
     green_flags = [
         Evidence(

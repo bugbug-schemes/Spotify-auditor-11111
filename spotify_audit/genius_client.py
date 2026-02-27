@@ -85,9 +85,18 @@ class GeniusClient:
                 logger.debug("Genius 429 rate-limited, backing off %ds", wait)
                 time.sleep(wait)
                 continue
+            if r.status_code in (500, 502, 503):
+                wait = 2 ** (attempt + 1)
+                logger.debug("Genius %d server error, backing off %ds", r.status_code, wait)
+                time.sleep(wait)
+                continue
             r.raise_for_status()
             time.sleep(self.delay)
-            return r.json()
+            try:
+                return r.json()
+            except (ValueError, requests.exceptions.JSONDecodeError):
+                logger.warning("Genius returned non-JSON for %s", path)
+                return {}
         if last_exc:
             raise last_exc
         r.raise_for_status()  # raise on final 429

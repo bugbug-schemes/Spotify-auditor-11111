@@ -337,8 +337,8 @@ def start_scan():
             }), 503
         _active_scan_count += 1
 
-    scan_id = uuid.uuid4().hex[:8]
-    _active_scans[scan_id] = {
+    scan_id = uuid.uuid4().hex[:16]
+    scan_entry = {
         "status": "running",
         "phase": "starting",
         "current": 0,
@@ -349,8 +349,10 @@ def start_scan():
         "started_at": time.time(),
         "playlist_name": None,
     }
+    with _scans_lock:
+        _active_scans[scan_id] = scan_entry
     # Persist immediately so we can detect interrupted scans after a restart
-    scan_store.save(scan_id, _active_scans[scan_id])
+    scan_store.save(scan_id, scan_entry)
 
     # Evict old completed scans if store is too large
     with _scans_lock:

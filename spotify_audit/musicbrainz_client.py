@@ -236,8 +236,8 @@ class MusicBrainzClient:
             match_method=match.match_method if match.found else "fallback",
         )
 
-    def get_releases(self, mbid: str) -> list[MBRelease]:
-        """Get all releases for an artist by MBID."""
+    def get_releases(self, mbid: str, max_releases: int = 500) -> list[MBRelease]:
+        """Get releases for an artist by MBID (capped at max_releases)."""
         releases: list[MBRelease] = []
         offset = 0
         while True:
@@ -265,7 +265,7 @@ class MusicBrainzClient:
                     catalog_number=catalog,
                 ))
             offset += len(batch)
-            if offset >= data.get("release-count", 0):
+            if offset >= data.get("release-count", 0) or offset >= max_releases:
                 break
         return releases
 

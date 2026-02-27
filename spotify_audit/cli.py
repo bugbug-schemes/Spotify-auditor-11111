@@ -1635,4 +1635,13 @@ def _run_audit(
         finally:
             persist_db.close()
 
+    # Close all API client sessions
+    for c in (deezer_client, mb_client, genius_client, discogs_client,
+              setlistfm_client, lastfm_client, wikipedia_client,
+              songkick_client, youtube_client, deezer_ai_checker, pro_client):
+        try:
+            c.close()
+        except Exception:
+            pass
+
     return playlist_report, blocklist_report

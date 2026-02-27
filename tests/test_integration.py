@@ -21,6 +21,7 @@ from spotify_audit.evidence import (
 from spotify_audit.scoring import (
     finalize_artist_report,
     build_playlist_report,
+    _VERDICT_ORDER,
 )
 from spotify_audit.config import score_label
 
@@ -250,7 +251,7 @@ class TestFullPipelineFromEnrichedData:
         # Verify sort order: most concerning first
         for i in range(len(pr.artists) - 1):
             a, b = pr.artists[i], pr.artists[i + 1]
-            assert (a.verdict_enum.value, -a.final_score) <= (b.verdict_enum.value, -b.final_score) or True
+            assert (_VERDICT_ORDER.get(a.verdict_enum, 2), -a.final_score) <= (_VERDICT_ORDER.get(b.verdict_enum, 2), -b.final_score)
         # Verify breakdown adds up
         total_breakdown = (
             pr.verified_artists + pr.likely_authentic + pr.inconclusive
