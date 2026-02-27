@@ -258,9 +258,12 @@ function ScanDetail({ detail }) {
         {/* Verdict bar with Not Scanned segment */}
         <VerdictBar results={results} skippedCount={skippedCount} />
 
-        {/* Methodology link (spec Part 1) */}
+        {/* Methodology link (spec Part 1: one-line link) */}
         <div className="methodology-link">
-          Analyzed across 6 evidence categories using 7 data sources
+          Analyzed across 6 evidence categories using 7 data sources &mdash;{' '}
+          <a href="/methodology" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--blue)' }}>
+            How does this work? ↗
+          </a>
         </div>
       </div>
 

@@ -246,7 +246,8 @@ class TestNameEvidence:
         reds = [e for e in ev if "generic" in e.finding.lower()]
         assert len(reds) >= 1
 
-    def test_mood_word_titles(self):
+    def test_mood_word_titles_removed(self):
+        """Mood-word track title analysis removed per spec Part 9."""
         artist = ArtistInfo(
             artist_id="a", name="Test",
             track_titles=["Morning Calm", "Peaceful Rain", "Gentle Breeze",
@@ -254,7 +255,7 @@ class TestNameEvidence:
         )
         ev = _collect_name_evidence(artist)
         reds = [e for e in ev if "mood" in e.finding.lower()]
-        assert len(reds) >= 1
+        assert len(reds) == 0
 
 
 # ---------------------------------------------------------------------------
@@ -544,7 +545,7 @@ class TestDecideVerdict:
             tags=["known_ai_artist"],
         )]
         path: list[str] = []
-        verdict, conf = _decide_verdict(reds, [], PlatformPresence(), path)
+        verdict, conf, _ = _decide_verdict(reds, [], PlatformPresence(), path)
         assert verdict == Verdict.LIKELY_ARTIFICIAL
         assert conf == "high"
 
@@ -558,7 +559,7 @@ class TestDecideVerdict:
                      tags=["content_farm"]),
         ]
         path: list[str] = []
-        verdict, conf = _decide_verdict(reds, [], PlatformPresence(), path)
+        verdict, conf, _ = _decide_verdict(reds, [], PlatformPresence(), path)
         assert verdict == Verdict.LIKELY_ARTIFICIAL
 
     def test_strong_greens_verified(self):
@@ -567,7 +568,7 @@ class TestDecideVerdict:
             self._flag("Many concerts", "strong", "green_flag"),
         ]
         path: list[str] = []
-        verdict, conf = _decide_verdict([], greens, PlatformPresence(), path)
+        verdict, conf, _ = _decide_verdict([], greens, PlatformPresence(), path)
         assert verdict == Verdict.VERIFIED_ARTIST
         assert conf == "high"
 
@@ -581,7 +582,7 @@ class TestDecideVerdict:
             tags=["genuine_fans"],
         )]
         path: list[str] = []
-        verdict, conf = _decide_verdict([], greens, presence, path)
+        verdict, conf, _ = _decide_verdict([], greens, presence, path)
         assert verdict == Verdict.VERIFIED_ARTIST
 
     def test_few_balanced_flags_insufficient_data(self):
@@ -589,7 +590,7 @@ class TestDecideVerdict:
         reds = [self._flag("r", "moderate", "red_flag")]
         greens = [self._flag("g", "moderate", "green_flag")]
         path: list[str] = []
-        verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
+        verdict, _, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
         assert verdict == Verdict.INSUFFICIENT_DATA
 
     def test_many_balanced_flags_conflicting_signals(self):
@@ -597,7 +598,7 @@ class TestDecideVerdict:
         reds = [self._flag(f"r{i}", "moderate", "red_flag") for i in range(3)]
         greens = [self._flag(f"g{i}", "moderate", "green_flag") for i in range(3)]
         path: list[str] = []
-        verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
+        verdict, _, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
         assert verdict == Verdict.CONFLICTING_SIGNALS
 
     def test_moderate_balanced_flags_inconclusive(self):
@@ -607,7 +608,7 @@ class TestDecideVerdict:
         reds = [self._flag(f"r{i}", "weak", "red_flag") for i in range(3)]
         greens = [self._flag(f"g{i}", "weak", "green_flag") for i in range(3)]
         path: list[str] = []
-        verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
+        verdict, _, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
         assert verdict == Verdict.INCONCLUSIVE
 
     def test_more_green_likely_authentic(self):
@@ -618,7 +619,7 @@ class TestDecideVerdict:
         ]
         reds = [self._flag("r1", "weak", "red_flag")]
         path: list[str] = []
-        verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
+        verdict, _, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
         assert verdict == Verdict.LIKELY_AUTHENTIC
 
     def test_more_red_suspicious(self):
@@ -629,7 +630,7 @@ class TestDecideVerdict:
         ]
         greens = [self._flag("g1", "weak", "green_flag")]
         path: list[str] = []
-        verdict, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
+        verdict, _, _ = _decide_verdict(reds, greens, PlatformPresence(), path)
         assert verdict == Verdict.SUSPICIOUS
 
 
@@ -724,7 +725,8 @@ class TestCategoryScores:
         ev = evaluate_artist(legitimate_artist, rich_external_data)
         scores = compute_category_scores(ev)
         # A well-known artist should score well on most categories
-        assert scores["Platform Presence"] >= 50
+        # (Platform Presence lower after removing "Found on N platforms" per spec Part 7 Rule 5)
+        assert scores["Platform Presence"] >= 20
         assert scores["IRL Presence"] >= 50
         assert scores["Industry Signals"] >= 30
 
