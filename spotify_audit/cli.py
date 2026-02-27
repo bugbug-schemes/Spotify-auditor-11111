@@ -54,6 +54,7 @@ from spotify_audit.scoring import (
 from spotify_audit.reports.formatter import to_markdown, to_html, to_json
 from spotify_audit.deep_analysis import run_deep_analysis, run_deep_analysis_batch, DeepAnalysis
 from spotify_audit.entity_db import EntityDB
+from spotify_audit import scan_db
 
 console = Console()
 logger = logging.getLogger("spotify_audit")
@@ -837,6 +838,13 @@ def _run_audit(
     """Core workflow: fetch playlist -> resolve artists -> external lookups -> evidence evaluation."""
     scan_start = time.monotonic()
 
+    # Initialize scan persistence database
+    try:
+        persist_db = scan_db.init_database()
+    except Exception as exc:
+        logger.debug("Scan persistence DB init failed (non-fatal): %s", exc)
+        persist_db = None
+
     # 1. Fetch playlist
     with console.status("[bold green]Fetching playlist from Spotify..."):
         meta, tracks = client.get_playlist(playlist_url)
@@ -845,6 +853,23 @@ def _run_audit(
         f"Loaded [bold]{meta.name}[/bold] -- "
         f"{meta.total_tracks} tracks by {meta.owner}"
     )
+
+    # Create scan record in persistence DB
+    persist_scan_id = None
+    if persist_db:
+        try:
+            persist_scan_id = scan_db.create_scan(
+                persist_db,
+                playlist_id=meta.playlist_id,
+                playlist_name=meta.name,
+                playlist_owner=meta.owner,
+                playlist_url=playlist_url,
+                total_tracks=meta.total_tracks,
+                is_editorial=meta.is_spotify_owned,
+                scan_tier="deep" if deep else "standard",
+            )
+        except Exception as exc:
+            logger.debug("Scan record creation failed (non-fatal): %s", exc)
 
     # Set up entity intelligence DB (for prior knowledge)
     try:
@@ -1369,6 +1394,97 @@ def _run_audit(
     all_evaluations = list(evaluations.values())
     blocklist_report = analyze_for_blocklist(all_evaluations) if all_evaluations else None
 
+    # 7.5 Persist scan data to SQLite (scan_db)
+    if persist_db and persist_scan_id:
+        try:
+            artists_from_cache_count = 0
+            artists_fresh_count = 0
+            for report in artist_reports:
+                artist = artist_infos.get(report.artist_id)
+                ev = evaluations.get(report.artist_id)
+                if not artist:
+                    continue
+
+                # Check if artist was already in persistence DB
+                was_cached = not scan_db.should_scan_artist(report.artist_id, persist_db)
+                if was_cached:
+                    artists_from_cache_count += 1
+                else:
+                    artists_fresh_count += 1
+
+                # Save raw API responses to disk
+                raw_data_path = None
+                if ev and ev.external_data:
+                    ext = ev.external_data
+                    raw_base = scan_db.DEFAULT_RAW_DIR
+                    try:
+                        # Save per-source raw data markers
+                        sources = {
+                            "deezer": {"found": ext.deezer_ai_checked or (hasattr(artist, 'deezer_fans') and artist.deezer_fans > 0), "fans": getattr(artist, 'deezer_fans', 0)},
+                            "musicbrainz": {"found": ext.musicbrainz_found, "type": ext.musicbrainz_type, "country": ext.musicbrainz_country},
+                            "genius": {"found": ext.genius_found, "song_count": ext.genius_song_count},
+                            "discogs": {"found": ext.discogs_found, "physical": ext.discogs_physical_releases, "total": ext.discogs_total_releases},
+                            "lastfm": {"found": ext.lastfm_found, "listeners": ext.lastfm_listeners, "playcount": ext.lastfm_playcount},
+                            "setlistfm": {"found": ext.setlistfm_found, "shows": ext.setlistfm_total_shows},
+                        }
+                        for src_name, src_data in sources.items():
+                            found = src_data.pop("found", False)
+                            scan_db.save_raw_response(
+                                report.artist_id, src_name, src_data,
+                                status="found" if found else "not_found",
+                                base_dir=raw_base,
+                            )
+                        raw_data_path = str(raw_base / report.artist_id.replace(":", "_").replace("/", "_"))
+                    except Exception as exc:
+                        logger.debug("Raw response save failed for '%s': %s", report.artist_name, exc)
+
+                # Save artist record
+                scan_db.save_artist_from_report(
+                    persist_db,
+                    artist_id=report.artist_id,
+                    artist_name=report.artist_name,
+                    artist_info=artist,
+                    evaluation=ev,
+                    report=report,
+                    raw_data_path=raw_data_path,
+                )
+
+                # Save evidence
+                if ev:
+                    scan_db.save_evidence_from_evaluation(
+                        persist_db, report.artist_id, persist_scan_id, ev,
+                    )
+
+                # Save entities (labels, songwriters, distributors)
+                if ev:
+                    ext = ev.external_data
+                    scan_db.save_entities_from_evaluation(
+                        persist_db, report.artist_id, ev, ext,
+                    )
+
+                # Link artist to scan
+                scan_db.link_scan_artist(
+                    persist_db, persist_scan_id, report.artist_id,
+                )
+
+            # Update unique_artists count on the scan record
+            persist_db.execute(
+                "UPDATE scan_log SET unique_artists = ? WHERE id = ?",
+                (len(artist_reports), persist_scan_id),
+            )
+
+            persist_db.commit()
+
+            # Update entity network stats
+            scan_db.update_entity_flagged_counts(persist_db)
+
+            console.print(
+                f"[dim]Scan data persisted: {artists_fresh_count} new, "
+                f"{artists_from_cache_count} cached[/dim]"
+            )
+        except Exception as exc:
+            logger.debug("Scan data persistence failed (non-fatal): %s", exc)
+
     # 8. Populate entity database with scan results (batched in single transaction)
     if entity_db:
         try:
@@ -1473,5 +1589,52 @@ def _run_audit(
     if youtube_client.enabled:
         api_counts["YouTube"] = n_artists
     playlist_report.api_source_counts = {k: v for k, v in api_counts.items() if v > 0}
+
+    # 10. Finalize scan persistence and export
+    if persist_db and persist_scan_id:
+        try:
+            # Build API usage summary
+            api_usage_list = [
+                {"name": name, "calls": count, "errors": 0}
+                for name, count in api_counts.items()
+            ]
+
+            # Verdict breakdown for persistence
+            verdict_bk = {
+                "Verified Artist": playlist_report.verified_artists,
+                "Likely Authentic": playlist_report.likely_authentic,
+                "Inconclusive": playlist_report.inconclusive,
+                "Suspicious": playlist_report.suspicious,
+                "Likely Artificial": playlist_report.likely_artificial,
+            }
+
+            # Threat breakdown
+            threat_bk: dict[str, int] = {}
+            for ar in artist_reports:
+                if ar.threat_category is not None:
+                    key = str(ar.threat_category)
+                    threat_bk[key] = threat_bk.get(key, 0) + 1
+
+            scan_db.finalize_scan(
+                persist_db,
+                scan_id=persist_scan_id,
+                health_score=playlist_report.health_score,
+                verdict_breakdown=verdict_bk,
+                threat_breakdown=threat_bk,
+                duration_seconds=playlist_report.scan_duration_seconds,
+                api_usage=api_usage_list,
+                status="completed",
+            )
+
+            # Auto-export scan results to JSON
+            try:
+                scan_db.export_scan_results(persist_db, persist_scan_id)
+            except Exception as exc:
+                logger.debug("Scan export failed (non-fatal): %s", exc)
+
+        except Exception as exc:
+            logger.debug("Scan finalization failed (non-fatal): %s", exc)
+        finally:
+            persist_db.close()
 
     return playlist_report, blocklist_report
