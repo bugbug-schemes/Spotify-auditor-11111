@@ -1035,14 +1035,14 @@ def _collect_catalog_evidence(artist: ArtistInfo) -> list[Evidence]:
                    "mass-produce short tracks for playlist placement.",
             tags=["content_farm"],
         ))
-    elif albums == 0 and singles > 10:
+    elif albums == 0 and singles > 20:
         evidence.append(Evidence(
             finding=f"{singles} singles, 0 albums",
             source="Deezer",
             evidence_type="red_flag",
             strength="moderate",
             detail=f"{singles} singles with no albums. Could be a singles-focused "
-                   "artist or could indicate content farming.",
+                   "artist (common in EDM/hip-hop) or could indicate content farming.",
             tags=["content_farm"],
         ))
 
@@ -1360,16 +1360,17 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
         ))
         return evidence
 
-    # Generic two-word pattern
+    # Generic two-word pattern — only flag as neutral (too many legitimate
+    # artists match "Title Case + Title Case": Taylor Swift, Bruno Mars, etc.)
     if re.match(r"^(The\s+)?[A-Z][a-z]+\s+[A-Z][a-z]+s?$", name):
         evidence.append(Evidence(
             finding="Generic two-word artist name",
             source="Name analysis",
-            evidence_type="red_flag",
+            evidence_type="neutral",
             strength="weak",
             detail=f'"{name}" follows a common pattern for generated artist names '
-                   "(Title Case Adjective + Noun). Many real artists also have "
-                   "names like this, so this is only a weak signal.",
+                   "(Title Case + Title Case). Many real artists also have "
+                   "names like this, so this is only a note, not a red flag.",
             tags=["generic_name"],
         ))
 
@@ -2394,14 +2395,6 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
 
     return evidence
 
-
-def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
-    """Touring geography and named tours removed per spec Part 9.
-
-    The spec says to remove: mood-word track title analysis, touring geography,
-    named tours. Concert count is already covered by _collect_setlistfm_evidence.
-    """
-    return []
 
 
 def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:

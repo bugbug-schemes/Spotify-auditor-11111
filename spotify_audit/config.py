@@ -48,19 +48,6 @@ SCORE_LABELS = {
 }
 
 
-# ---------------------------------------------------------------------------
-# PFC mood/atmosphere words (used in name evidence analysis)
-# ---------------------------------------------------------------------------
-MOOD_WORDS: frozenset[str] = frozenset({
-    "calm", "peaceful", "gentle", "soft", "quiet", "serene", "tranquil",
-    "dreamy", "hazy", "misty", "ambient", "chill", "cozy", "warm",
-    "morning", "evening", "night", "dawn", "dusk", "sunset", "sunrise",
-    "rain", "ocean", "forest", "garden", "meadow", "river", "sky",
-    "clouds", "breeze", "wind", "snow", "light", "glow", "drift",
-    "float", "flow", "sleep", "rest", "relax", "breathe", "solitude",
-    "silence", "whisper", "echo", "reflection", "meditation",
-})
-
 
 def score_label(score: int) -> str:
     for (lo, hi), label in SCORE_LABELS.items():
@@ -190,10 +177,6 @@ def _load_blocklist_set(name: str) -> frozenset[str]:
 def pfc_distributors() -> frozenset[str]:
     return _load_blocklist_set("pfc_distributors")
 
-
-@lru_cache(maxsize=None)
-def pfc_playlists() -> frozenset[str]:
-    return _load_blocklist_set("pfc_playlists")
 
 
 @lru_cache(maxsize=None)

@@ -80,6 +80,10 @@ class GeniusClient:
                 logger.debug("Genius request failed (attempt %d): %s", attempt + 1, exc)
                 time.sleep(wait)
                 continue
+            if r.status_code in (401, 403):
+                logger.warning("Genius API key invalid (HTTP %d) — disabling client", r.status_code)
+                self.enabled = False
+                return {}
             if r.status_code == 429:
                 wait = 2 ** (attempt + 1)
                 logger.debug("Genius 429 rate-limited, backing off %ds", wait)

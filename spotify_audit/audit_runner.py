@@ -35,7 +35,8 @@ from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
 from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
 from spotify_audit.evidence import (
-    evaluate_artist, ArtistEvaluation, Verdict, ExternalData, Evidence, incorporate_deep_evidence,
+    evaluate_artist, ArtistEvaluation, Verdict, ExternalData, Evidence,
+    incorporate_deep_evidence, PlatformPresence,
 )
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
@@ -501,58 +502,71 @@ def _run_audit_core(
 
     resolved_i = 0
     resolved_keys: set[str] = set()
-    with ThreadPoolExecutor(max_workers=2, thread_name_prefix="resolve") as pool:
-        futures = {
-            pool.submit(_resolve_single, key, is_id): key
-            for key, is_id in artist_keys
-        }
-        try:
-            for fut in as_completed(futures, timeout=RESOLVE_TIMEOUT):
-                key = futures[fut]
-                try:
-                    key, artist, cached_qr, is_cache_hit = fut.result()
-                    resolved_keys.add(key)
-                    resolved_i += 1
+    pool = ThreadPoolExecutor(max_workers=2, thread_name_prefix="resolve")
+    futures = {
+        pool.submit(_resolve_single, key, is_id): key
+        for key, is_id in artist_keys
+    }
+    try:
+        for fut in as_completed(futures, timeout=RESOLVE_TIMEOUT):
+            key = futures[fut]
+            try:
+                key, artist, cached_qr, is_cache_hit = fut.result()
+                resolved_keys.add(key)
+                resolved_i += 1
 
-                    if is_cache_hit:
-                        artist_infos[key] = artist
+                if is_cache_hit:
+                    artist_infos[key] = artist
+                    quick_results[key] = cached_qr
+                else:
+                    artist_infos[key] = artist
+                    if cached_qr:
                         quick_results[key] = cached_qr
                     else:
-                        artist_infos[key] = artist
-                        if cached_qr:
-                            quick_results[key] = cached_qr
-                        else:
-                            qr = quick_scan(artist, config.quick_weights)
-                            quick_results[key] = qr
+                        qr = quick_scan(artist, config.quick_weights)
+                        quick_results[key] = qr
 
-                        qr = quick_results[key]
-                        if cache:
-                            cache.put(key, "quick", {
-                                "artist_id": qr.artist_id,
-                                "artist_name": qr.artist_name,
-                                "score": qr.score,
-                                "artist_info": dataclasses.asdict(artist),
-                            })
+                    qr = quick_results[key]
+                    if cache:
+                        cache.put(key, "quick", {
+                            "artist_id": qr.artist_id,
+                            "artist_name": qr.artist_name,
+                            "score": qr.score,
+                            "artist_info": dataclasses.asdict(artist),
+                        })
 
-                    progress("resolve", resolved_i, total_artists, f"Resolved {artist_infos[key].name}")
-                except Exception as exc:
-                    resolved_keys.add(key)
-                    resolved_i += 1
-                    name = _key_names.get(key, key)
-                    logger.warning("Failed to resolve '%s': %s", name, exc)
-                    skipped_artists.append({"name": name, "reason": f"Resolve error: {exc}", "artist_key": key})
-                    progress("resolve", resolved_i, total_artists, f"Skipped {name} (error)")
-        except TimeoutError:
-            logger.warning("Resolve phase timed out after %ds", RESOLVE_TIMEOUT)
-
-        # Track artists that never completed (timed out)
-        for fut, key in futures.items():
-            if key not in resolved_keys:
-                name = _key_names.get(key, key)
-                skipped_artists.append({"name": name, "reason": "Timed out during artist resolution", "artist_key": key})
-                fut.cancel()
+                progress("resolve", resolved_i, total_artists, f"Resolved {artist_infos[key].name}")
+            except Exception as exc:
+                resolved_keys.add(key)
                 resolved_i += 1
-                progress("resolve", resolved_i, total_artists, f"Skipped {name} (timeout)")
+                name = _key_names.get(key, key)
+                logger.warning("Failed to resolve '%s': %s", name, exc)
+                skipped_artists.append({"name": name, "reason": f"Resolve error: {exc}", "artist_key": key})
+                progress("resolve", resolved_i, total_artists, f"Skipped {name} (error)")
+    except TimeoutError:
+        logger.warning("Resolve phase timed out after %ds", RESOLVE_TIMEOUT)
+
+    # Drain completed futures and skip the rest — shutdown without waiting
+    # for still-running tasks so timeouts are actually enforced.
+    for fut, key in futures.items():
+        if fut.done() and key not in resolved_keys:
+            # Late completion — harvest the result
+            try:
+                key, artist, cached_qr, is_cache_hit = fut.result(timeout=0)
+                resolved_keys.add(key)
+                resolved_i += 1
+                artist_infos[key] = artist
+                quick_results[key] = cached_qr if cached_qr else quick_scan(artist, config.quick_weights)
+                progress("resolve", resolved_i, total_artists, f"Resolved {artist.name} (late)")
+            except Exception:
+                pass
+        if key not in resolved_keys:
+            name = _key_names.get(key, key)
+            skipped_artists.append({"name": name, "reason": "Timed out during artist resolution", "artist_key": key})
+            fut.cancel()
+            resolved_i += 1
+            progress("resolve", resolved_i, total_artists, f"Skipped {name} (timeout)")
+    pool.shutdown(wait=False, cancel_futures=True)
 
     # 4. External lookups + evidence evaluation
     evaluations: dict[str, ArtistEvaluation] = {}
@@ -617,17 +631,27 @@ def _run_audit_core(
             )
             return (key, ev, sr)
 
-        # Standard external lookups (concurrent)
-        ext = _lookup_external_data(
-            artist_name=artist.name,
-            genius=genius_client,
-            discogs=discogs_client,
-            setlistfm=setlistfm_client,
-            mb_client=mb_client,
-            lastfm=lastfm_client,
-            wikipedia=wikipedia_client,
-            songkick=songkick_client,
-        )
+        # Check cache for prior external API results
+        cached_ext = cache.get(key, "standard") if cache else None
+        if cached_ext:
+            try:
+                ext = ExternalData(**{k: v for k, v in cached_ext.items()
+                                      if hasattr(ExternalData, k)})
+            except Exception:
+                cached_ext = None  # fall through to live lookup
+
+        if not cached_ext:
+            # Standard external lookups (concurrent)
+            ext = _lookup_external_data(
+                artist_name=artist.name,
+                genius=genius_client,
+                discogs=discogs_client,
+                setlistfm=setlistfm_client,
+                mb_client=mb_client,
+                lastfm=lastfm_client,
+                wikipedia=wikipedia_client,
+                songkick=songkick_client,
+            )
 
         # Inject pre-seeded evidence from pre-check
         if pre.pre_seeded_evidence:
@@ -698,6 +722,13 @@ def _run_audit_core(
         # Run evidence evaluation
         ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
 
+        # Cache the external API data so re-scans don't repeat all lookups
+        if cache:
+            try:
+                cache.put_deferred(key, "standard", dataclasses.asdict(ext))
+            except Exception:
+                pass  # non-fatal
+
         # Priority 1: Update entity DB after scan
         if entity_db:
             try:
@@ -724,39 +755,50 @@ def _run_audit_core(
 
     eval_completed = 0
     evaluated_keys: set[str] = set()
-    with ThreadPoolExecutor(max_workers=3, thread_name_prefix="eval") as pool:
-        futures = {
-            pool.submit(_lookup_and_evaluate, key, artist): key
-            for key, artist in artists_to_lookup
-        }
-        try:
-            for fut in as_completed(futures, timeout=EVALUATE_TIMEOUT):
-                key = futures[fut]
-                try:
-                    key, ev, sr = fut.result()
-                    evaluations[key] = ev
-                    standard_results[key] = sr
-                    evaluated_keys.add(key)
-                    eval_completed += 1
-                    progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name}")
-                except Exception as exc:
-                    evaluated_keys.add(key)
-                    eval_completed += 1
-                    name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
-                    logger.warning("Failed to evaluate '%s': %s", name, exc)
-                    skipped_artists.append({"name": name, "reason": f"Evaluation error: {exc}", "artist_key": key})
-                    progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (error)")
-        except TimeoutError:
-            logger.warning("Evaluate phase timed out after %ds", EVALUATE_TIMEOUT)
-
-        # Track artists that never completed (timed out)
-        for fut, key in futures.items():
-            if key not in evaluated_keys:
-                name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
-                skipped_artists.append({"name": name, "reason": "Timed out during evaluation", "artist_key": key})
-                fut.cancel()
+    eval_pool = ThreadPoolExecutor(max_workers=3, thread_name_prefix="eval")
+    futures = {
+        eval_pool.submit(_lookup_and_evaluate, key, artist): key
+        for key, artist in artists_to_lookup
+    }
+    try:
+        for fut in as_completed(futures, timeout=EVALUATE_TIMEOUT):
+            key = futures[fut]
+            try:
+                key, ev, sr = fut.result()
+                evaluations[key] = ev
+                standard_results[key] = sr
+                evaluated_keys.add(key)
                 eval_completed += 1
-                progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (timeout)")
+                progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name}")
+            except Exception as exc:
+                evaluated_keys.add(key)
+                eval_completed += 1
+                name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+                logger.warning("Failed to evaluate '%s': %s", name, exc)
+                skipped_artists.append({"name": name, "reason": f"Evaluation error: {exc}", "artist_key": key})
+                progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (error)")
+    except TimeoutError:
+        logger.warning("Evaluate phase timed out after %ds", EVALUATE_TIMEOUT)
+
+    # Drain completed futures and skip the rest
+    for fut, key in futures.items():
+        if fut.done() and key not in evaluated_keys:
+            try:
+                key, ev, sr = fut.result(timeout=0)
+                evaluations[key] = ev
+                standard_results[key] = sr
+                evaluated_keys.add(key)
+                eval_completed += 1
+                progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name} (late)")
+            except Exception:
+                pass
+        if key not in evaluated_keys:
+            name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+            skipped_artists.append({"name": name, "reason": "Timed out during evaluation", "artist_key": key})
+            fut.cancel()
+            eval_completed += 1
+            progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (timeout)")
+    eval_pool.shutdown(wait=False, cancel_futures=True)
 
     # Safety fallback — evaluate any resolved artists that weren't evaluated.
     # When falling back due to timeout, flag all external APIs as errored so
@@ -1009,6 +1051,14 @@ def retry_skipped_artists(
     songkick_client = SongkickClient(api_key=config.songkick_api_key, delay=0.5)
     youtube_client = YouTubeClient(api_key=config.youtube_api_key, delay=0.3)
     deezer_ai_checker = DeezerAIChecker(delay=1.5)
+
+    # Entity DB for pre-check and post-evaluation
+    entity_db = None
+    try:
+        entity_db = EntityDB()
+    except Exception as exc:
+        logger.warning("Entity DB init failed in retry: %s", exc)
+    deezer_ai_checker = DeezerAIChecker(delay=1.5)
     pro_client = PRORegistryClient(delay=2.5)
 
     still_skipped: list[dict] = []
@@ -1067,6 +1117,37 @@ def retry_skipped_artists(
     progress("evaluate", 0, len(artists_to_lookup), "Running external lookups...")
 
     def _lookup_and_evaluate_retry(key: str, artist: ArtistInfo):
+        # Run pre-check (same as main path)
+        pre = run_pre_check(
+            artist_name=artist.name,
+            labels=artist.labels,
+            contributors=artist.contributors,
+            entity_db=entity_db,
+        )
+        if pre.short_circuit:
+            ext = ExternalData(pre_seeded_evidence=pre.pre_seeded_evidence, artist_name=artist.name)
+            ev = ArtistEvaluation(
+                artist_id=artist.artist_id,
+                artist_name=artist.name,
+                verdict=Verdict.LIKELY_ARTIFICIAL,
+                confidence="high",
+                platform_presence=PlatformPresence(deezer=artist.deezer_fans > 0),
+                red_flags=[Evidence(
+                    finding=pre.reason, source="Pre-check",
+                    evidence_type="red_flag", strength="strong",
+                    detail=pre.reason, tags=["known_bad_actor"],
+                )],
+                green_flags=[],
+                decision_path=[f"Pre-check: {pre.reason}"],
+            )
+            qr = quick_results[key]
+            sr = standard_scan_from_external(
+                quick_result=qr, ext=ext,
+                deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
+                weights=config.standard_weights,
+            )
+            return (key, ev, sr)
+
         ext = _lookup_external_data(
             artist_name=artist.name,
             genius=genius_client,
@@ -1077,6 +1158,8 @@ def retry_skipped_artists(
             wikipedia=wikipedia_client,
             songkick=songkick_client,
         )
+        if pre.pre_seeded_evidence:
+            ext.pre_seeded_evidence = pre.pre_seeded_evidence
         # YouTube enrichment
         if youtube_client.enabled:
             try:
@@ -1089,6 +1172,13 @@ def retry_skipped_artists(
                     ext.youtube_video_count = yt_result.video_count
             except Exception:
                 pass
+        # Deezer AI check
+        try:
+            ai_result = deezer_ai_checker.check_artist(artist.name)
+            if ai_result and ai_result.get("is_ai"):
+                ext.deezer_ai_flagged = True
+        except Exception:
+            pass
         # PRO registry
         try:
             pro_result = pro_client.search_writer(artist.name)
@@ -1102,7 +1192,7 @@ def retry_skipped_artists(
             ext.pro_zero_songwriter_share = pro_result.zero_songwriter_share
         except Exception:
             pass
-        ev = evaluate_artist(artist, external=ext, entity_db=None)
+        ev = evaluate_artist(artist, external=ext, entity_db=entity_db)
         qr = quick_results[key]
         sr = standard_scan_from_external(
             quick_result=qr, ext=ext,

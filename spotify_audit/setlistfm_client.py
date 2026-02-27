@@ -83,6 +83,10 @@ class SetlistFmClient:
                 logger.debug("Setlist.fm request failed (attempt %d): %s", attempt + 1, exc)
                 time.sleep(wait)
                 continue
+            if r.status_code in (401, 403):
+                logger.warning("Setlist.fm API key invalid (HTTP %d) — disabling client", r.status_code)
+                self.enabled = False
+                return {}
             if r.status_code == 429:
                 wait = 2 ** (attempt + 1)
                 logger.debug("Setlist.fm 429 rate-limited, backing off %ds", wait)
