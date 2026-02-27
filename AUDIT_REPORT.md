@@ -8,13 +8,13 @@
 
 ## Executive Summary
 
-| Severity | Count | Key Areas |
-|----------|-------|-----------|
-| **Critical** | 5 | Dead code in decision tree, SQL injection vector, race conditions in EntityDB, Deezer client missing error handling |
-| **High** | 15 | Decision tree ordering, deep evidence skips dedup, timeout false negatives, MusicBrainz lock contention, no auth on CMS, double-counting PFC flags |
-| **Medium** | 28 | False positives in evidence collectors, scoring inconsistencies, missing cache for external APIs, unsynchronized rate limiters, missing indexes, unused imports |
-| **Low** | 22 | Dead fields, dead code, code duplication, minor logic issues |
-| **Total** | **70** | |
+| Severity | Found | Fixed | Key Areas |
+|----------|-------|-------|-----------|
+| **Critical** | 5 | **5** | Dead code in decision tree, SQL injection vector, race conditions in EntityDB, Deezer client missing error handling |
+| **High** | 15 | **15** | Decision tree ordering, deep evidence skips dedup, timeout false negatives, MusicBrainz lock contention, no auth on CMS, double-counting PFC flags |
+| **Medium** | 28 | **22** | False positives in evidence collectors, scoring inconsistencies, missing cache for external APIs, unsynchronized rate limiters, missing indexes, unused imports |
+| **Low** | 22 | **9** | Dead fields, dead code, code duplication, minor logic issues |
+| **Total** | **70** | **51** | |
 
 ---
 
@@ -515,15 +515,33 @@ assert (a.verdict_enum.value, -a.final_score) <= (b.verdict_enum.value, -b.final
 
 ---
 
-## 8. TOP 10 RECOMMENDED FIXES (Priority Order)
+## 8. FIX STATUS
 
-1. **Fix duplicate `elif top2_share >= 0.80`** (C-1) — Simple one-line fix, restores intended 3-tier graduated scoring
-2. **Add column allowlist to `heartbeat()`** (C-2) — 5-line fix, closes SQL injection vector
-3. **Make EntityDB `_in_batch` thread-local** (C-3/C-5) — Prevents race conditions and potential DB corruption
-4. **Add try/except to Deezer `_get`** (C-4) — Match pattern used by all other clients
-5. **Remove duplicate PFC songwriter check** (H-3) — One-line deletion fixes double-counting
-6. **Add tag-based evidence deduplication** (H-4) — Prevents 3x inflation of PFC label evidence
-7. **Fix timeout fallback evaluation** (H-5) — Flag APIs as errored instead of passing empty ExternalData
-8. **Fix `retry_skipped_artists` return type** (H-15) — Change `return []` to `return [], []`
-9. **Restructure MusicBrainz rate limiter** (H-7/H-8) — Timestamp-based instead of lock-held-during-I/O
-10. **Add authentication to CMS endpoints** (H-12) — API key middleware on all write operations
+### All Critical (5/5) — FIXED
+### High-severity (15/15) — FIXED
+### Medium-severity (22/28) — 22 FIXED, 6 remaining
+
+**Remaining medium (deferred — low impact or require larger refactors):**
+- M-3: `" and "` separator splits band names — needs full-name-first search strategy
+- M-11: Collaboration green flag doesn't verify collaborators aren't fake — requires passing entity_db to collector
+- M-16: Rate limiters unsynchronized on Genius/Discogs/Setlist.fm/Last.fm — moderate risk, mitigated by existing per-call delays
+- M-19: Retry path doesn't reuse cached data — partially mitigated by H-11 (main path caching)
+- M-20: Late-completing futures after timeout have results discarded — partially mitigated by H-6 (drain completed)
+- M-25: No rate limiting on scan endpoint — deployment-specific (recommend Flask-Limiter)
+
+### Low-severity (9/22) — 9 FIXED, 13 remaining
+
+**Remaining low (informational — dead fields, minor test gaps):**
+- L-1: 8 ExternalData fields populated but never read in evidence logic
+- L-2: Missing `" prod. "` and parenthetical `(feat. X)` separators
+- L-3: Year regex misses pre-1950, breaks after 2029
+- L-4: Year-only release dates normalized to same day
+- L-5: Platform evidence generated then immediately discarded
+- L-7: YouTube <100 subscribers flagged for auto-generated topic channels
+- L-8: Neutral "Not on Blocklist" ignores PFC songwriter match
+- L-9: Score ranges never fully utilized (boundary values unreachable)
+- L-10: Secondary sort within verdict groups is counter-intuitive
+- L-11: Legacy breakdown labels "Inconclusive" as "likely_non_authentic"
+- L-15: `analyze_pfc_data.py`, `fetch_pfc_tracks.py`, `api_logger.py` orphaned modules
+- L-19: `getattr()` used unnecessarily on defined dataclass field
+- L-20: `.env.example` has non-empty Anthropic key placeholder
