@@ -260,8 +260,7 @@ class Evidence:
         catalog_albums       — has album releases
         genius_credits       — has Genius songwriter credits
         collaboration        — has collaborators / related artists
-        touring_geography    — international touring spread
-        named_tour           — has named tour(s)
+        # touring_geography, named_tour — removed (deprecated)
 
     Platform / identity:
         multi_platform       — found on 3+ platforms
@@ -2379,58 +2378,8 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
     return evidence
 
 
-def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
-    """Analyze geographic spread of touring (from Setlist.fm)."""
-    evidence: list[Evidence] = []
-
-    if not ext.setlistfm_found:
-        return evidence
-
-    # Tour names indicate organized, named tours
-    if ext.setlistfm_tour_names:
-        evidence.append(Evidence(
-            finding=f"{len(ext.setlistfm_tour_names)} named tour(s)",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Named tours: {', '.join(ext.setlistfm_tour_names[:5])}. "
-                   "Named tours indicate professional touring activity.",
-            tags=["named_tour", "touring_geography"],
-        ))
-
-    # Geographic spread
-    countries = ext.setlistfm_venue_countries
-    cities = ext.setlistfm_venue_cities
-    if len(countries) >= 5:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(countries)} countries",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="strong",
-            detail=f"International touring across: {', '.join(countries[:8])}. "
-                   "International touring is very strong proof of a real artist.",
-            tags=["touring_geography"],
-        ))
-    elif len(countries) >= 2:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(countries)} countries",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Toured in: {', '.join(countries[:5])}.",
-            tags=["touring_geography"],
-        ))
-    elif len(cities) >= 3:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(cities)} cities",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="weak",
-            detail=f"Venues in: {', '.join(cities[:5])}.",
-            tags=["touring_geography"],
-        ))
-
-    return evidence
+## _collect_touring_geography_evidence removed — deprecated per spec.
+## Geographic spread is now handled by live_performance tags in Songkick collector.
 
 
 def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
@@ -2446,24 +2395,26 @@ def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
         return evidence
 
     # Article length — longer articles indicate more notability
+    # Display as approximate word count (bytes / 6) per spec
     length = ext.wikipedia_length
+    words = max(1, length // 6) if length > 0 else 0
     views = ext.wikipedia_monthly_views
     extract = ext.wikipedia_extract
 
     if length >= 20_000 and views >= 10_000:
         evidence.append(Evidence(
-            finding=f"Substantial Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            finding=f"Substantial Wikipedia article (~{words:,} words, {views:,} monthly views)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="strong",
-            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is {length:,} bytes with "
+            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is ~{words:,} words with "
                    f"{views:,} monthly page views. Large, actively-viewed articles indicate "
                    f"significant public notability. Summary: \"{extract[:200]}{'...' if len(extract) > 200 else ''}\"",
             tags=["wikipedia"],
         ))
     elif length >= 5_000 or views >= 1_000:
         evidence.append(Evidence(
-            finding=f"Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            finding=f"Wikipedia article (~{words:,} words, {views:,} monthly views)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="strong",
@@ -2474,11 +2425,11 @@ def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
         ))
     elif length > 0:
         evidence.append(Evidence(
-            finding=f"Wikipedia stub article ({length:,} bytes)",
+            finding=f"Wikipedia stub article (~{words:,} words)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="moderate",
-            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" ({length:,} bytes). "
+            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" (~{words:,} words). "
                    f"Even stub articles require notability per Wikipedia guidelines.",
             tags=["wikipedia"],
         ))
@@ -2563,7 +2514,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             tags=["live_performance"],
         ))
 
-    # Geographic spread (complements Setlist.fm touring geography)
+    # Geographic spread
     countries = ext.songkick_venue_countries
     cities = ext.songkick_venue_cities
     if len(countries) >= 5:
@@ -2573,7 +2524,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="strong",
             detail=f"International touring: {', '.join(countries[:8])}.",
-            tags=["touring_geography"],
+            tags=["live_performance"],
         ))
     elif len(countries) >= 2:
         evidence.append(Evidence(
@@ -2582,7 +2533,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Touring in: {', '.join(countries[:5])}.",
-            tags=["touring_geography"],
+            tags=["live_performance"],
         ))
     elif len(cities) >= 3:
         evidence.append(Evidence(
@@ -2591,7 +2542,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="weak",
             detail=f"Events in: {', '.join(cities[:5])}.",
-            tags=["touring_geography"],
+            tags=["live_performance"],
         ))
 
     # Festival appearances

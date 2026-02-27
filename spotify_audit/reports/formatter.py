@@ -1849,11 +1849,8 @@ _TAG_TO_AXIS: dict[str, str] = {
     "cookie_cutter": "Creative History",
     "high_release_rate": "Creative History",
     "same_day_release": "Creative History",
-    "mood_word_titles": "Creative History",
     # IRL Presence — physical-world evidence of the artist
     "live_performance": "IRL Presence",
-    "touring_geography": "IRL Presence",
-    "named_tour": "IRL Presence",
     "concert_history": "IRL Presence",
     "physical_release": "IRL Presence",
     # Industry Signals — professional music industry registration and bios
