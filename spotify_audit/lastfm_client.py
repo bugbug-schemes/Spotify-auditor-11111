@@ -76,8 +76,17 @@ class LastfmClient:
                     logger.debug("Last.fm 429 rate-limited, backing off %ds", wait)
                     time.sleep(wait)
                     continue
+                if resp.status_code in (500, 502, 503):
+                    wait = 2 ** (attempt + 1)
+                    logger.debug("Last.fm %d server error, backing off %ds", resp.status_code, wait)
+                    time.sleep(wait)
+                    continue
                 resp.raise_for_status()
-                data = resp.json()
+                try:
+                    data = resp.json()
+                except (ValueError, Exception):
+                    logger.warning("Last.fm returned non-JSON for %s", method)
+                    return None
                 if "error" in data:
                     logger.debug("Last.fm error for %s: %s", method, data.get("message", ""))
                     return None

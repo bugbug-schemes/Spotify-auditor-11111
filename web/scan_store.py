@@ -78,6 +78,7 @@ class ScanStore:
         conn = sqlite3.connect(self._db_path, timeout=5)
         conn.row_factory = sqlite3.Row
         conn.execute("PRAGMA journal_mode=WAL")
+        conn.execute("PRAGMA busy_timeout=5000")
         return conn
 
     def _init_db(self) -> None:
@@ -129,12 +130,22 @@ class ScanStore:
                 (scan_id, now, now),
             )
 
+    # Columns that heartbeat() is allowed to update — prevents SQL injection
+    # via dynamic column names in **fields.
+    _HEARTBEAT_COLUMNS = frozenset({
+        "status", "phase", "current", "total", "message",
+        "result_html", "error", "playlist_name", "last_heartbeat",
+    })
+
     def heartbeat(self, scan_id: str, **fields: object) -> None:
         """Update progress fields and refresh heartbeat timestamp.
 
         Only writes to SQLite — called periodically from the scan thread
         to avoid hammering the DB on every progress tick.
         """
+        for k in fields:
+            if k not in self._HEARTBEAT_COLUMNS:
+                raise ValueError(f"heartbeat(): invalid column '{k}'")
         fields["last_heartbeat"] = time.time()
         set_parts = [f"{k}=?" for k in fields]
         values = list(fields.values()) + [scan_id]

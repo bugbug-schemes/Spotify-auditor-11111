@@ -72,9 +72,11 @@ class MBArtist:
 class MusicBrainzClient:
     """Query MusicBrainz for artist metadata and label/release info."""
 
-    # Class-level lock ensures the 1 req/sec rate limit is respected even
-    # when enrich() fires 4 concurrent threads for the same artist.
+    # Class-level lock and timestamp ensure the 1 req/sec rate limit is
+    # respected even when enrich() fires 4 concurrent threads. The lock is
+    # held only briefly (to check/update the timestamp), NOT during I/O.
     _rate_lock = threading.Lock()
+    _last_request_time: float = 0.0
 
     def __init__(self, delay: float = 1.1) -> None:
         self.session = requests.Session()
@@ -91,28 +93,47 @@ class MusicBrainzClient:
         """Close the underlying HTTP session."""
         self.session.close()
 
+    def _wait_for_rate_limit(self) -> None:
+        """Sleep just enough to respect 1 req/sec. Lock held only briefly."""
+        with MusicBrainzClient._rate_lock:
+            elapsed = time.time() - MusicBrainzClient._last_request_time
+            wait = self.delay - elapsed
+        if wait > 0:
+            time.sleep(wait)
+
     def _get(self, path: str, params: dict | None = None) -> dict:
         url = f"{MB_API}{path}"
         last_exc: Exception | None = None
         for attempt in range(3):
-            # Serialize requests across threads to respect 1 req/sec rate limit
+            self._wait_for_rate_limit()
+
+            try:
+                r = self.session.get(url, params={**(params or {}), "fmt": "json"}, timeout=15)
+            except requests.RequestException as exc:
+                last_exc = exc
+                wait = 2 ** (attempt + 1)
+                logger.debug("MusicBrainz request failed (attempt %d): %s", attempt + 1, exc)
+                time.sleep(wait)
+                continue
+
+            # Record this request time (lock held briefly, not during I/O)
             with MusicBrainzClient._rate_lock:
-                try:
-                    r = self.session.get(url, params={**(params or {}), "fmt": "json"}, timeout=15)
-                except requests.RequestException as exc:
-                    last_exc = exc
-                    wait = 2 ** (attempt + 1)
-                    logger.debug("MusicBrainz request failed (attempt %d): %s", attempt + 1, exc)
-                    time.sleep(wait)
-                    continue
-                if r.status_code == 429 or r.status_code == 503:
-                    wait = 2 ** (attempt + 1)
-                    logger.debug("MusicBrainz %d rate-limited, backing off %ds", r.status_code, wait)
-                    time.sleep(wait)
-                    continue
-                r.raise_for_status()
-                time.sleep(self.delay)
+                MusicBrainzClient._last_request_time = time.time()
+
+            if r.status_code == 429 or r.status_code == 503:
+                wait = 2 ** (attempt + 1)
+                logger.debug("MusicBrainz %d rate-limited, backing off %ds", r.status_code, wait)
+                time.sleep(wait)
+                continue
+
+            r.raise_for_status()
+
+            try:
                 return r.json()
+            except (ValueError, requests.exceptions.JSONDecodeError):
+                logger.warning("MusicBrainz returned non-JSON for %s", path)
+                return {}
+
         if last_exc:
             raise last_exc
         r.raise_for_status()
@@ -215,8 +236,8 @@ class MusicBrainzClient:
             match_method=match.match_method if match.found else "fallback",
         )
 
-    def get_releases(self, mbid: str) -> list[MBRelease]:
-        """Get all releases for an artist by MBID."""
+    def get_releases(self, mbid: str, max_releases: int = 500) -> list[MBRelease]:
+        """Get releases for an artist by MBID (capped at max_releases)."""
         releases: list[MBRelease] = []
         offset = 0
         while True:
@@ -244,7 +265,7 @@ class MusicBrainzClient:
                     catalog_number=catalog,
                 ))
             offset += len(batch)
-            if offset >= data.get("release-count", 0):
+            if offset >= data.get("release-count", 0) or offset >= max_releases:
                 break
         return releases
 

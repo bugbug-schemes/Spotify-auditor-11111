@@ -321,8 +321,12 @@ def start_scan():
     if not playlist_url:
         return jsonify({"error": "Please provide a playlist URL"}), 400
 
-    # Accept various Spotify URL formats
-    if "spotify.com" not in playlist_url and "spotify:" not in playlist_url:
+    # Validate Spotify URL format strictly to prevent SSRF
+    import re
+    _SPOTIFY_URL_RE = re.compile(
+        r'^https?://open\.spotify\.com/(playlist|album|track|artist)/[a-zA-Z0-9]+',
+    )
+    if not _SPOTIFY_URL_RE.match(playlist_url) and not playlist_url.startswith("spotify:"):
         return jsonify({"error": "Please provide a valid Spotify playlist URL"}), 400
 
     # Check concurrent scan limit
@@ -333,8 +337,8 @@ def start_scan():
             }), 503
         _active_scan_count += 1
 
-    scan_id = uuid.uuid4().hex[:8]
-    _active_scans[scan_id] = {
+    scan_id = uuid.uuid4().hex[:16]
+    scan_entry = {
         "status": "running",
         "phase": "starting",
         "current": 0,
@@ -345,8 +349,10 @@ def start_scan():
         "started_at": time.time(),
         "playlist_name": None,
     }
+    with _scans_lock:
+        _active_scans[scan_id] = scan_entry
     # Persist immediately so we can detect interrupted scans after a restart
-    scan_store.save(scan_id, _active_scans[scan_id])
+    scan_store.save(scan_id, scan_entry)
 
     # Evict old completed scans if store is too large
     with _scans_lock:

@@ -112,9 +112,28 @@ class DeezerClient:
 
         for attempt in range(self._max_retries + 1):
             self._wait_for_rate_limit()
-            r = self.session.get(url, params=params, timeout=15)
+            try:
+                r = self.session.get(url, params=params, timeout=15)
+            except requests.RequestException as exc:
+                last_exc = exc
+                wait = min(2 ** attempt, 16)
+                logger.debug("Deezer request failed (attempt %d): %s", attempt + 1, exc)
+                time.sleep(wait)
+                continue
+
+            if r.status_code == 429 or r.status_code in (500, 502, 503):
+                wait = min(2 ** attempt, 16)
+                logger.debug("Deezer %d (attempt %d), backing off %ds", r.status_code, attempt + 1, wait)
+                time.sleep(wait)
+                continue
+
             r.raise_for_status()
-            data = r.json()
+
+            try:
+                data = r.json()
+            except (ValueError, requests.exceptions.JSONDecodeError):
+                logger.warning("Deezer returned non-JSON response for %s", path)
+                return {}
 
             if "error" in data:
                 error = data["error"]

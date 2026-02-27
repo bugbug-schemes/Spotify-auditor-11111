@@ -182,7 +182,10 @@ def finalize_artist_report(
             tier_score = report.standard_score
         elif report.quick_score is not None:
             tier_score = report.quick_score
-        report.final_score = max(0, 100 - (tier_score or 0))
+        if tier_score is None:
+            report.final_score = 50  # Inconclusive: no scan data available
+        else:
+            report.final_score = max(0, 100 - tier_score)
         report.label = score_label(report.final_score)
     report.threat_category = _infer_threat_category(report)
     if report.threat_category is not None:
@@ -222,10 +225,14 @@ def _verdict_to_score(ev: ArtistEvaluation) -> int:
     green_total = len(ev.green_flags)
     red_total = len(ev.red_flags)
 
-    # Net signal: positive = more green, negative = more red
-    net = (strong_greens * 3 + green_total) - (strong_reds * 3 + red_total)
+    # Net signal: positive = more green, negative = more red.
+    # Subtract strong counts from totals to avoid double-counting
+    # (strong flags already have 3x weight; don't also count them at 1x).
+    non_strong_greens = green_total - strong_greens
+    non_strong_reds = red_total - strong_reds
+    net = (strong_greens * 3 + non_strong_greens) - (strong_reds * 3 + non_strong_reds)
     # Normalize net to [-1, 1] range
-    max_possible = max(strong_greens * 3 + green_total + strong_reds * 3 + red_total, 1)
+    max_possible = max(strong_greens * 3 + non_strong_greens + strong_reds * 3 + non_strong_reds, 1)
     net_frac = max(-1.0, min(1.0, net / max_possible))
 
     # Blend: 70% confidence, 30% net signal
