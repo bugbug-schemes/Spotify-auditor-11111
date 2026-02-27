@@ -18,6 +18,20 @@ const VERIFIED_ARTIST = {
   score: 91,
   confidence: 'high',
   threat_category: '',
+  matched_rule: 'Rule 4: Multi-platform with strong green signals',
+  api_status: {
+    deezer: 'found', musicbrainz: 'found', genius: 'found',
+    lastfm: 'found', discogs: 'found', setlistfm: 'found', wikipedia: 'found',
+  },
+  profile_urls: {
+    deezer: 'https://www.deezer.com/artist/67890',
+    musicbrainz: 'https://musicbrainz.org/artist/abc-123',
+    genius: 'https://genius.com/artists/Aurora',
+    lastfm: 'https://www.last.fm/music/Aurora',
+    discogs: 'https://www.discogs.com/artist/12345',
+    wikipedia: 'https://en.wikipedia.org/wiki/Aurora_(singer)',
+  },
+  sources_reached: { Deezer: true, MusicBrainz: true, Genius: true, 'Last.fm': true, Discogs: true, 'Setlist.fm': true, Wikipedia: true },
   evidence_json: [
     // Platform Presence
     { finding: 'Found on Deezer with 2,145,231 fans', source: 'Deezer', type: 'green_flag', strength: 'strong', tags: ['multi_platform', 'genuine_fans'], detail: '' },
@@ -31,11 +45,11 @@ const VERIFIED_ARTIST = {
     { finding: '8 albums, 24 singles \u2014 healthy release cadence', source: 'Catalog', type: 'green_flag', strength: 'strong', tags: ['catalog_albums'], detail: 'Active since 2012. Average duration 3:42. \u03C3 = 0:48' },
     { finding: 'Songwriting credits on 95% of tracks', source: 'Genius', type: 'green_flag', strength: 'moderate', tags: ['genius_credits', 'collaboration'], detail: '' },
     // IRL Presence
-    { finding: '342 concerts on Setlist.fm across 28 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance', 'touring_geography'], detail: 'Extensive touring 2015\u2013present' },
+    { finding: '342 concerts on Setlist.fm across 28 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance'], detail: 'Extensive touring 2015\u2013present' },
     { finding: '12 physical releases on Discogs (vinyl, CD)', source: 'Discogs', type: 'green_flag', strength: 'moderate', tags: ['physical_release'], detail: '' },
     { finding: '14 upcoming shows on Bandsintown', source: 'Bandsintown', type: 'green_flag', strength: 'moderate', tags: ['live_performance'], detail: '' },
     // Platform Presence / Blocklist Status
-    { finding: 'Wikipedia article (42,891 bytes, 156 references)', source: 'Wikipedia', type: 'green_flag', strength: 'strong', tags: ['wikipedia'], detail: '' },
+    { finding: 'Wikipedia article (~7,148 words, 156 references)', source: 'Wikipedia', type: 'green_flag', strength: 'strong', tags: ['wikipedia'], detail: '' },
     { finding: 'Verified social media: Instagram (2.1M), Twitter (489K)', source: 'Analysis', type: 'green_flag', strength: 'strong', tags: ['social_media', 'verified_identity'], detail: '' },
     { finding: 'Authentic artist bio with career narrative', source: 'Analysis', type: 'green_flag', strength: 'weak', tags: ['authentic_bio', 'career_bio'], detail: '' },
     // Industry Signals
@@ -51,6 +65,18 @@ const AUTHENTIC_ARTIST = {
   score: 74,
   confidence: 'high',
   threat_category: '',
+  matched_rule: 'Rule 6: Green signals outweigh red 2:1',
+  api_status: {
+    deezer: 'found', musicbrainz: 'found', genius: 'found',
+    lastfm: 'found', discogs: 'found', setlistfm: 'found', wikipedia: 'found',
+  },
+  profile_urls: {
+    deezer: 'https://www.deezer.com/artist/99999',
+    musicbrainz: 'https://musicbrainz.org/artist/def-456',
+    genius: 'https://genius.com/artists/The-midnight',
+    lastfm: 'https://www.last.fm/music/The+Midnight',
+  },
+  sources_reached: { Deezer: true, MusicBrainz: true, Genius: true, 'Last.fm': true, Discogs: true, 'Setlist.fm': true, Wikipedia: true },
   evidence_json: [
     // Platform Presence
     { finding: 'Found on Deezer with 312,876 fans', source: 'Deezer', type: 'green_flag', strength: 'strong', tags: ['multi_platform', 'genuine_fans'], detail: '' },
@@ -64,11 +90,11 @@ const AUTHENTIC_ARTIST = {
     { finding: '6 albums, 18 singles \u2014 normal release cadence', source: 'Catalog', type: 'green_flag', strength: 'strong', tags: ['catalog_albums'], detail: 'Active since 2014. Average duration 4:32. \u03C3 = 0:58' },
     { finding: 'Collaborative songwriting on most tracks', source: 'Genius', type: 'green_flag', strength: 'weak', tags: ['collaboration'], detail: '' },
     // IRL Presence
-    { finding: '187 concerts on Setlist.fm in 12 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance', 'touring_geography'], detail: '' },
+    { finding: '187 concerts on Setlist.fm in 12 countries', source: 'Setlist.fm', type: 'green_flag', strength: 'strong', tags: ['live_performance'], detail: '' },
     { finding: '23 physical releases on Discogs (vinyl, CD, cassette)', source: 'Discogs', type: 'green_flag', strength: 'moderate', tags: ['physical_release'], detail: '' },
     { finding: '6 upcoming shows on Bandsintown', source: 'Bandsintown', type: 'green_flag', strength: 'weak', tags: ['live_performance'], detail: '' },
     // Platform Presence / Blocklist Status
-    { finding: 'Wikipedia article (18,234 bytes)', source: 'Wikipedia', type: 'green_flag', strength: 'moderate', tags: ['wikipedia'], detail: '' },
+    { finding: 'Wikipedia article (~3,039 words)', source: 'Wikipedia', type: 'green_flag', strength: 'moderate', tags: ['wikipedia'], detail: '' },
     { finding: 'Verified social media: Instagram (198K), Twitter (45K)', source: 'Analysis', type: 'green_flag', strength: 'moderate', tags: ['social_media'], detail: '' },
     { finding: 'Authentic artist bio with career narrative', source: 'Analysis', type: 'green_flag', strength: 'weak', tags: ['authentic_bio'], detail: '' },
     // Industry Signals
@@ -84,6 +110,16 @@ const INCONCLUSIVE_ARTIST = {
   score: 47,
   confidence: 'medium',
   threat_category: '',
+  matched_rule: 'Rule 11: Default \u2014 Inconclusive',
+  api_status: {
+    deezer: 'found', musicbrainz: 'found', genius: 'not_found',
+    lastfm: 'found', discogs: 'not_found', setlistfm: 'found', wikipedia: 'found',
+  },
+  profile_urls: {
+    deezer: 'https://www.deezer.com/artist/11111',
+    musicbrainz: 'https://musicbrainz.org/artist/ghi-789',
+  },
+  sources_reached: { Deezer: true, MusicBrainz: true, Genius: false, 'Last.fm': true, Discogs: false, 'Setlist.fm': true, Wikipedia: true },
   evidence_json: [
     // Platform Presence
     { finding: 'Found on Deezer with 4,173 fans', source: 'Deezer', type: 'green_flag', strength: 'weak', tags: ['multi_platform'], detail: '' },
@@ -100,7 +136,7 @@ const INCONCLUSIVE_ARTIST = {
     { finding: 'No physical releases found on Discogs', source: 'Discogs', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
     { finding: 'No events found on Bandsintown', source: 'Bandsintown', type: 'red_flag', strength: 'weak', tags: [], detail: '' },
     // Platform Presence / Blocklist Status
-    { finding: 'Wikipedia stub article (4,173 bytes)', source: 'Wikipedia', type: 'green_flag', strength: 'weak', tags: ['wikipedia'], detail: '' },
+    { finding: 'Wikipedia stub article (~695 words)', source: 'Wikipedia', type: 'green_flag', strength: 'weak', tags: ['wikipedia'], detail: '' },
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
     { finding: 'No press coverage found', source: 'Analysis', type: 'red_flag', strength: 'weak', tags: ['press_coverage'], detail: '' },
     // Industry Signals
@@ -116,6 +152,12 @@ const SUSPICIOUS_ARTIST = {
   score: 24,
   confidence: 'high',
   threat_category: 'PFC Ghost Artist',
+  matched_rule: 'Rule 2: PFC Label + Content Farm Pattern',
+  api_status: {
+    deezer: 'found', musicbrainz: 'not_found', genius: 'not_found',
+    lastfm: 'found', discogs: 'not_found', setlistfm: 'not_found', wikipedia: 'not_found',
+  },
+  sources_reached: { Deezer: true, MusicBrainz: false, Genius: false, 'Last.fm': true, Discogs: false, 'Setlist.fm': false, Wikipedia: false },
   evidence_json: [
     // Platform Presence
     { finding: 'Found on Deezer (20 fans)', source: 'Deezer', type: 'green_flag', strength: 'weak', tags: ['single_platform'], detail: '' },
@@ -127,7 +169,7 @@ const SUSPICIOUS_ARTIST = {
     { finding: 'No YouTube channel found', source: 'YouTube', type: 'red_flag', strength: 'weak', tags: ['no_youtube'], detail: '' },
     // Creative History
     { finding: '38 singles, 0 albums (content farm pattern)', source: 'Catalog', type: 'red_flag', strength: 'strong', tags: ['content_farm', 'high_release_rate'], detail: 'Active since 2022. Average duration 1:52. \u03C3 = 0:08' },
-    { finding: 'Mood-word track titles pattern detected', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['mood_word_titles', 'cookie_cutter'], detail: '' },
+    { finding: 'Cookie-cutter catalog pattern', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['cookie_cutter'], detail: '' },
     // IRL Presence — all absent, padding will fill
     // Platform Presence / Blocklist Status
     { finding: 'No social media profiles found', source: 'Analysis', type: 'red_flag', strength: 'moderate', tags: ['no_social_media'], detail: '' },
@@ -145,12 +187,18 @@ const ARTIFICIAL_ARTIST = {
   verdict: 'Likely Artificial',
   score: 6,
   confidence: 'high',
-  threat_category: 'Content Farm',
+  threat_category: 'AI Fraud Farm',
+  matched_rule: 'Rule 1: Known AI Artist (blocklist match)',
+  api_status: {
+    deezer: 'not_found', musicbrainz: 'not_found', genius: 'timeout',
+    lastfm: 'not_found', discogs: 'error', setlistfm: 'not_found', wikipedia: 'not_found',
+  },
+  sources_reached: { Deezer: false, MusicBrainz: false, Genius: false, 'Last.fm': false, Discogs: false, 'Setlist.fm': false, Wikipedia: false },
   evidence_json: [
     // Platform Presence
     { finding: 'Not found on Deezer', source: 'Deezer', type: 'red_flag', strength: 'moderate', tags: ['single_platform'], detail: '' },
     { finding: 'Not found on MusicBrainz', source: 'MusicBrainz', type: 'red_flag', strength: 'moderate', tags: ['single_platform'], detail: '' },
-    { finding: 'Not found on Genius', source: 'Genius', type: 'red_flag', strength: 'moderate', tags: ['single_platform'], detail: '' },
+    { finding: 'Genius could not be reached', source: 'Genius', type: 'neutral', strength: 'weak', tags: [], detail: 'API timeout' },
     // Fan Engagement
     { finding: 'Not found on Last.fm', source: 'Last.fm', type: 'red_flag', strength: 'moderate', tags: ['low_fans'], detail: '' },
     { finding: 'No YouTube channel found', source: 'YouTube', type: 'red_flag', strength: 'weak', tags: ['no_youtube'], detail: '' },

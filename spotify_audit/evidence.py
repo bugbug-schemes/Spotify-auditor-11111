@@ -709,14 +709,22 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     if ext.musicbrainz_ipis:
         industry_pts += 30
 
-    # ASCAP/BMI registration
+    # ASCAP/BMI registration (C.3 scoring)
     if ext.pro_checked:
         if ext.pro_songwriter_registered:
-            industry_pts += 30
-            # PFC publisher match overrides
+            industry_pts += 30  # registered as songwriter → +30 Strong
+            # Normal writer/publisher split → +5 Weak
+            if ext.pro_songwriter_share_pct >= 30:
+                industry_pts += 5
+            # 0% songwriter share → -15 Moderate
+            if ext.pro_zero_songwriter_share:
+                industry_pts -= 15
+            # PFC publisher match → -30 Strong (overrides the +30)
             if ext.pro_pfc_publisher_match:
-                industry_pts -= 30  # net zero from PRO, plus penalty
-        # No ISNI, IPI, or PRO
+                industry_pts -= 30
+        else:
+            industry_pts -= 5  # not found → -5 Weak
+    # No ISNI, IPI, or PRO
     if not ext.musicbrainz_isnis and not ext.musicbrainz_ipis and not ext.pro_songwriter_registered:
         industry_pts -= 5  # weak negative for missing all identifiers
 
@@ -2737,14 +2745,18 @@ def _collect_pro_registry_evidence(ext: ExternalData) -> list[Evidence]:
         if ext.pro_found_bmi and ext.pro_found_ascap:
             pro_name = "BMI and ASCAP"
 
+        # C.3: registered as songwriter → +30 Strong
+        sw_pct = ext.pro_songwriter_share_pct
+        share_str = f", songwriter holds {sw_pct:.0f}% share" if sw_pct >= 0 else ""
         evidence.append(Evidence(
-            finding=f"Registered songwriter with {pro_name} ({total_works} works)",
+            finding=f"Registered with {pro_name}: {total_works} works{share_str}",
             source="PRO Registry",
             evidence_type="green_flag",
-            strength="moderate",
+            strength="strong",
             detail=f"Artist found as registered songwriter with {pro_name}, "
                    f"{total_works} works registered. "
-                   "Professional songwriters collecting US royalties are registered with PROs.",
+                   "Professional songwriters collecting US royalties are registered with PROs. "
+                   "This is one of the strongest authenticity indicators available.",
             tags=["pro_registered"],
         ))
 
@@ -2799,13 +2811,15 @@ def _collect_pro_registry_evidence(ext: ExternalData) -> list[Evidence]:
                 tags=["pro_registered"],
             ))
         else:
+            # C.3: not found → -5 Weak (many legit non-US/indie artists aren't registered)
             evidence.append(Evidence(
                 finding="Not found in BMI or ASCAP databases",
                 source="PRO Registry",
                 evidence_type="red_flag",
-                strength="moderate",
-                detail="No works registered with BMI or ASCAP. Any professional songwriter "
-                       "collecting royalties in the US will be registered with a PRO.",
+                strength="weak",
+                detail="No works registered with BMI or ASCAP. Many legitimate non-US "
+                       "and indie artists are not registered with US PROs, so this is "
+                       "only a weak signal.",
                 tags=["no_pro_registration"],
             ))
 
