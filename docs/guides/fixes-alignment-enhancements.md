@@ -1,7 +1,7 @@
 # Spotify Auditor — Fixes, Alignment & Enhancements
 
 **Date:** 2026-02-27
-**Companion to:** `ui-spec-round2.md` (the canonical UI spec)
+**Companion to:** `docs/specs/ui-spec-round2.md` (the canonical UI spec)
 
 This document covers everything needed to bring the system into alignment with the UI spec and fix critical bugs discovered during report audits. It is organized by priority: critical bugs first, then document alignment, then enhancements.
 
@@ -81,7 +81,7 @@ elif result.status in ("error", "timeout", "skipped"):
     # Do NOT emit any red flag
 ```
 
-**UI changes needed (add to ui-spec-round2.md checklist):**
+**UI changes needed (add to docs/specs/ui-spec-round2.md checklist):**
 - [ ] Platform checkmark row: add ⚠ state (yellow/amber) for "attempted but failed"
 - [ ] Categories where all sources errored → gray (no data), NOT red (0)
 - [ ] Verdict description: note API failures — "Evidence on {name} is incomplete — {N} data sources could not be reached"
@@ -168,7 +168,7 @@ This makes failures visible instead of silent.
 
 # PART B: Document Alignment
 
-These changes bring existing project documents into alignment with `ui-spec-round2.md`.
+These changes bring existing project documents into alignment with `docs/specs/ui-spec-round2.md`.
 
 ## B.1 JSON Schema (`playlist_results_schema.md`)
 
@@ -601,7 +601,7 @@ Everything from the UI spec checklist plus all items from this document.
 - [ ] **Fix 6:** Add per-artist API status logging to results JSON
 
 ### Backend (evaluation engine)
-- [ ] Implement per-category scoring tables per `ui-spec-round2.md` Part 5
+- [ ] Implement per-category scoring tables per `docs/specs/ui-spec-round2.md` Part 5
 - [ ] Blocklist: AI blocklist / PFC label → score 0. Songwriter/distributor → -80.
 - [ ] Physical releases (Discogs) scored as strong (+30)
 - [ ] Top track concentration: 3 tiers (≥90% / 80–89% / 70–79%)
@@ -617,7 +617,7 @@ Everything from the UI spec checklist plus all items from this document.
 - [ ] Store Deezer per-track rank data
 
 ### Frontend (React)
-- [ ] Render bullets per ui-spec-round2.md Part 6
+- [ ] Render bullets per docs/specs/ui-spec-round2.md Part 6
 - [ ] All platform names clickable links (new tab)
 - [ ] Category colors: 4-tier (green/light-green/orange/red) + gray for no-data
 - [ ] Blocklist: binary (100 = green, <100 = red)
