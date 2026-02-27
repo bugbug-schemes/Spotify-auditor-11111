@@ -295,23 +295,47 @@ function renderRecentScans() {
     if (recent.length === 0) return;
     document.getElementById('recentScans').style.display = 'block';
     const list = document.getElementById('recentList');
-    list.innerHTML = '';
-    for (const s of recent) {
-      const row = document.createElement('div');
-      row.className = 'recent-item';
-      const nameSpan = document.createElement('span');
-      nameSpan.className = 'recent-name';
-      nameSpan.textContent = s.name || 'Unknown';
-      const link = document.createElement('a');
-      link.className = 'recent-link';
-      link.href = '/report/' + encodeURIComponent(s.id);
-      link.target = '_blank';
-      link.textContent = 'View Report';
-      row.appendChild(nameSpan);
-      row.appendChild(link);
-      list.appendChild(row);
-    }
+    renderRecentList(list, recent);
+    // Prune links whose reports no longer exist on the server
+    pruneRecentScans(recent);
   } catch(e) {}
+}
+
+function renderRecentList(list, items) {
+  list.innerHTML = '';
+  for (const s of items) {
+    const row = document.createElement('div');
+    row.className = 'recent-item';
+    const nameSpan = document.createElement('span');
+    nameSpan.className = 'recent-name';
+    nameSpan.textContent = s.name || 'Unknown';
+    const link = document.createElement('a');
+    link.className = 'recent-link';
+    link.href = '/report/' + encodeURIComponent(s.id);
+    link.target = '_blank';
+    link.textContent = 'View Report';
+    row.appendChild(nameSpan);
+    row.appendChild(link);
+    list.appendChild(row);
+  }
+}
+
+function pruneRecentScans(recent) {
+  // Check each recent scan in parallel; remove ones that are truly gone
+  Promise.all(recent.map(s =>
+    fetch('/api/scan/' + s.id).then(r => r.ok ? s : null).catch(() => null)
+  )).then(results => {
+    const valid = results.filter(Boolean);
+    if (valid.length < recent.length) {
+      localStorage.setItem('recentScans', JSON.stringify(valid));
+      const list = document.getElementById('recentList');
+      if (valid.length === 0) {
+        document.getElementById('recentScans').style.display = 'none';
+      } else {
+        renderRecentList(list, valid);
+      }
+    }
+  });
 }
 
 // Allow Enter key to start scan
