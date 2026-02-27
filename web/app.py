@@ -4,9 +4,8 @@ Spotify Audit — Web Interface
 A Flask app that lets users paste a Spotify playlist URL
 and get an HTML report back, with real-time progress updates.
 
-Scan state is persisted to SQLite (via ScanStore) so that status
-polls survive gunicorn worker restarts, OOM kills, and other
-transient failures common on free-tier hosting.
+Scan state is persisted to SQLite so that completed reports survive
+gunicorn worker restarts, OOM kills, and other transient failures.
 
 Usage:
     python web/app.py                  # dev server on port 5000
@@ -18,6 +17,7 @@ from __future__ import annotations
 import argparse
 import logging
 import os
+import sqlite3
 import sys
 import threading
 import time
@@ -32,11 +32,94 @@ sys.path.insert(0, str(PROJECT_ROOT))
 from flask import Flask, request, jsonify, render_template, send_from_directory
 
 from web.api import cms_api, init_db
-from web.scan_store import ScanStore
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
 app.register_blueprint(cms_api)
 logger = logging.getLogger("spotify_audit.web")
+
+# ---------------------------------------------------------------------------
+# Persistent scan store — SQLite-backed so reports survive server restarts
+# ---------------------------------------------------------------------------
+SCAN_DB_PATH = Path(__file__).parent.parent / "spotify_audit" / "data" / "scan_reports.db"
+
+
+class ScanStore:
+    """SQLite store for completed scan reports."""
+
+    def __init__(self, db_path: Path = SCAN_DB_PATH):
+        db_path.parent.mkdir(parents=True, exist_ok=True)
+        self._db_path = str(db_path)
+        self._local = threading.local()
+        self._init_schema(self._get_conn())
+
+    def _get_conn(self) -> sqlite3.Connection:
+        conn = getattr(self._local, "conn", None)
+        if conn is None:
+            conn = sqlite3.connect(self._db_path)
+            conn.row_factory = sqlite3.Row
+            self._local.conn = conn
+        return conn
+
+    @staticmethod
+    def _init_schema(conn: sqlite3.Connection) -> None:
+        conn.execute("""
+            CREATE TABLE IF NOT EXISTS scan_reports (
+                scan_id       TEXT PRIMARY KEY,
+                status        TEXT NOT NULL,
+                result_html   TEXT,
+                playlist_name TEXT,
+                message       TEXT,
+                error         TEXT,
+                created_at    REAL NOT NULL
+            )
+        """)
+        conn.commit()
+
+    def save(self, scan_id: str, scan: dict) -> None:
+        conn = self._get_conn()
+        conn.execute("""
+            INSERT OR REPLACE INTO scan_reports
+                (scan_id, status, result_html, playlist_name, message, error, created_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?)
+        """, (
+            scan_id,
+            scan["status"],
+            scan.get("result_html"),
+            scan.get("playlist_name"),
+            scan.get("message"),
+            scan.get("error"),
+            scan.get("started_at", time.time()),
+        ))
+        conn.commit()
+
+    def get(self, scan_id: str) -> dict | None:
+        conn = self._get_conn()
+        row = conn.execute(
+            "SELECT * FROM scan_reports WHERE scan_id = ?", (scan_id,)
+        ).fetchone()
+        if not row:
+            return None
+        return dict(row)
+
+    def recover_interrupted(self) -> int:
+        """Mark any scans left in 'running' state as interrupted (server died mid-scan)."""
+        conn = self._get_conn()
+        cursor = conn.execute("""
+            UPDATE scan_reports
+               SET status = 'error',
+                   error  = 'Scan interrupted by server restart. Please try again.',
+                   message = 'Scan interrupted by server restart. Please try again.'
+             WHERE status = 'running'
+        """)
+        conn.commit()
+        return cursor.rowcount
+
+
+scan_store = ScanStore()
+# On startup, mark any orphaned running scans as interrupted
+_recovered = scan_store.recover_interrupted()
+if _recovered:
+    logger.info("Recovered %d interrupted scan(s) from previous run", _recovered)
 
 # Serve the Entity Review CMS React app at /cms
 CMS_DIR = Path(__file__).parent / "static" / "cms"
@@ -54,15 +137,20 @@ def serve_cms(subpath=""):
     # Otherwise serve index.html for client-side routing
     return send_from_directory(CMS_DIR, "index.html")
 
+
+# Bounded in-memory scan store — evicts oldest entries when full
+MAX_SCANS = 100
 MAX_CONCURRENT_SCANS = 5
 
-# In-memory cache for fast progress updates during active scans.
-# The ScanStore (SQLite) is the source of truth and survives restarts.
+_scans_lock = threading.Lock()
 _active_scans: OrderedDict[str, dict] = OrderedDict()
+_active_scan_count = 0
 
-# Persistent scan store — initialized at module level so gunicorn
-# workers each get their own connection but share the same DB file.
-scan_store = ScanStore()
+
+def _evict_old_scans() -> None:
+    """Remove oldest completed scans when store exceeds MAX_SCANS."""
+    while len(_active_scans) > MAX_SCANS:
+        _active_scans.popitem(last=False)
 
 
 def _build_error_report(playlist_url: str, exc: Exception, tb: str) -> str:
@@ -106,19 +194,15 @@ def _build_error_report(playlist_url: str, exc: Exception, tb: str) -> str:
 
 def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
     """Background thread: run the audit and store results."""
+    global _active_scan_count
+
     # Lazy-import heavy scan machinery so the Flask app starts instantly.
     # These imports pull in 13+ API clients and ML modules — too slow for
     # worker init on Render's free tier where CPU is limited.
     from spotify_audit.audit_runner import run_audit, build_config
     from spotify_audit.reports.formatter import to_html
 
-    # Track last heartbeat write to avoid hammering SQLite on every tick
-    last_db_write = time.time()
-    HEARTBEAT_INTERVAL = 10  # seconds between SQLite writes
-
     def on_progress(phase: str, current: int, total: int, message: str):
-        nonlocal last_db_write
-        # Always update the fast in-memory cache
         if scan_id in _active_scans:
             _active_scans[scan_id].update({
                 "phase": phase,
@@ -126,17 +210,6 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
                 "total": total,
                 "message": message,
             })
-
-        # Periodically persist to SQLite (heartbeat)
-        now = time.time()
-        if now - last_db_write >= HEARTBEAT_INTERVAL:
-            try:
-                scan_store.heartbeat(scan_id,
-                                     phase=phase, current=current,
-                                     total=total, message=message)
-            except Exception:
-                logger.debug("Heartbeat write failed for %s", scan_id)
-            last_db_write = now
 
     try:
         config = build_config()
@@ -160,52 +233,32 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
         else:
             done_msg = f"Done! Analyzed {analyzed} artists."
 
-        # Update in-memory cache
-        if scan_id in _active_scans:
-            _active_scans[scan_id].update({
-                "status": "complete",
-                "phase": "done",
-                "result_html": html,
-                "playlist_name": playlist_report.playlist_name,
-                "message": done_msg,
-            })
-
-        # Persist to SQLite
-        scan_store.mark_complete(
-            scan_id, result_html=html,
-            playlist_name=playlist_report.playlist_name,
-            message=done_msg,
-        )
+        _active_scans[scan_id].update({
+            "status": "complete",
+            "phase": "done",
+            "result_html": html,
+            "playlist_name": playlist_report.playlist_name,
+            "message": done_msg,
+        })
+        # Persist completed scan to SQLite so it survives server restarts
+        scan_store.save(scan_id, _active_scans[scan_id])
     except Exception as exc:
         import traceback
         tb = traceback.format_exc()
         logger.exception("Scan %s failed", scan_id)
 
-        # Even on total failure, try to generate a minimal error report
+        # Even on total failure, generate a minimal error report
         html = _build_error_report(playlist_url, exc, tb)
-        error_str = str(exc)
-
-        if scan_id in _active_scans:
-            _active_scans[scan_id].update({
-                "status": "complete",
-                "phase": "done",
-                "result_html": html,
-                "message": f"Scan failed: {error_str}",
-            })
-
-        scan_store.mark_complete(
-            scan_id, result_html=html,
-            playlist_name=None,
-            message=f"Scan failed: {error_str}",
-        )
+        _active_scans[scan_id].update({
+            "status": "complete",
+            "phase": "done",
+            "result_html": html,
+            "message": f"Scan failed: {exc}",
+        })
+        scan_store.save(scan_id, _active_scans[scan_id])
     finally:
-        # Clean up in-memory entry after a delay so the frontend
-        # has time to see the final status before it's removed.
-        def _deferred_cleanup():
-            time.sleep(120)
-            _active_scans.pop(scan_id, None)
-
-        threading.Thread(target=_deferred_cleanup, daemon=True).start()
+        with _scans_lock:
+            _active_scan_count -= 1
 
 
 @app.errorhandler(404)
@@ -236,6 +289,8 @@ def index():
 
 @app.route("/api/scan", methods=["POST"])
 def start_scan():
+    global _active_scan_count
+
     data = request.get_json(silent=True) or {}
     playlist_url = data.get("url", "").strip()
     deep = bool(data.get("deep", False))
@@ -247,20 +302,15 @@ def start_scan():
     if "spotify.com" not in playlist_url and "spotify:" not in playlist_url:
         return jsonify({"error": "Please provide a valid Spotify playlist URL"}), 400
 
-    # Check concurrent scan limit (uses DB count for accuracy across restarts)
-    active = scan_store.count_active()
-    if active >= MAX_CONCURRENT_SCANS:
-        return jsonify({
-            "error": f"Server busy — {active} scans running. Please try again shortly."
-        }), 503
+    # Check concurrent scan limit
+    with _scans_lock:
+        if _active_scan_count >= MAX_CONCURRENT_SCANS:
+            return jsonify({
+                "error": f"Server busy — {_active_scan_count} scans running. Please try again shortly."
+            }), 503
+        _active_scan_count += 1
 
     scan_id = uuid.uuid4().hex[:8]
-    now = time.time()
-
-    # Persist to SQLite first (source of truth)
-    scan_store.create(scan_id)
-
-    # Also cache in-memory for fast progress polling
     _active_scans[scan_id] = {
         "status": "running",
         "phase": "starting",
@@ -269,15 +319,15 @@ def start_scan():
         "message": "Starting scan...",
         "result_html": None,
         "error": None,
-        "started_at": now,
+        "started_at": time.time(),
         "playlist_name": None,
     }
+    # Persist immediately so we can detect interrupted scans after a restart
+    scan_store.save(scan_id, _active_scans[scan_id])
 
-    # Clean up old DB entries periodically
-    try:
-        scan_store.cleanup_old()
-    except Exception:
-        pass
+    # Evict old completed scans if store is too large
+    with _scans_lock:
+        _evict_old_scans()
 
     thread = threading.Thread(
         target=_run_scan_background,
@@ -291,55 +341,47 @@ def start_scan():
 
 @app.route("/api/scan/<scan_id>")
 def scan_status(scan_id):
-    # Always check SQLite first — it is the source of truth and has
-    # stale/timeout detection that catches hung scan threads.
-    scan = scan_store.get(scan_id)
-    if not scan:
-        return jsonify({"error": "Scan not found"}), 404
+    # Check in-memory store first (for running scans with live progress)
+    scan = _active_scans.get(scan_id)
+    if scan:
+        resp = {k: v for k, v in scan.items() if k != "result_html"}
+        resp["has_result"] = scan["result_html"] is not None
+        elapsed = time.time() - scan["started_at"]
+        resp["elapsed_seconds"] = round(elapsed, 1)
+        return jsonify(resp)
 
-    # If SQLite says the scan is still running, overlay fresher progress
-    # data from the in-memory cache (updated on every progress tick).
-    if scan["status"] == "running":
-        cached = _active_scans.get(scan_id)
-        if cached:
-            if cached["status"] in ("complete", "error"):
-                # Thread finished but SQLite hasn't been updated yet — use in-memory
-                scan = dict(cached)
-            else:
-                # Thread is alive — use in-memory progress (more current than
-                # the SQLite heartbeats which only write every 10s)
-                scan["phase"] = cached.get("phase", scan["phase"])
-                scan["current"] = cached.get("current", scan["current"])
-                scan["total"] = cached.get("total", scan["total"])
-                scan["message"] = cached.get("message", scan["message"])
-    elif scan["status"] == "error" and scan_id in _active_scans:
-        # SQLite detected stale/timeout — sync to in-memory so the
-        # deferred cleanup thread and report endpoint stay consistent.
-        _active_scans[scan_id].update({
-            "status": scan["status"],
-            "phase": scan.get("phase", "error"),
-            "error": scan.get("error", ""),
-            "message": scan.get("message", ""),
+    # Fall back to SQLite for completed scans that survived a restart
+    saved = scan_store.get(scan_id)
+    if saved:
+        return jsonify({
+            "status": saved["status"],
+            "phase": "done" if saved["status"] == "complete" else "error",
+            "has_result": saved["result_html"] is not None,
+            "playlist_name": saved["playlist_name"],
+            "message": saved["message"],
+            "error": saved.get("error"),
+            "elapsed_seconds": 0,
+            "current": 0,
+            "total": 0,
         })
 
-    resp = {k: v for k, v in scan.items() if k not in ("result_html",)}
-    resp["has_result"] = scan.get("result_html") is not None
-    elapsed = time.time() - scan["started_at"]
-    resp["elapsed_seconds"] = round(elapsed, 1)
-    return jsonify(resp)
+    return jsonify({"error": "Scan not found"}), 404
 
 
 @app.route("/report/<scan_id>")
 def view_report(scan_id):
     # Check in-memory first
-    cached = _active_scans.get(scan_id)
-    if cached and cached["status"] == "complete" and cached["result_html"]:
-        return cached["result_html"]
+    scan = _active_scans.get(scan_id)
+    if scan and scan["status"] == "complete" and scan["result_html"]:
+        return scan["result_html"]
 
     # Fall back to SQLite
-    html = scan_store.get_result_html(scan_id)
-    if html:
-        return html
+    saved = scan_store.get(scan_id)
+    if saved:
+        if saved["status"] == "complete" and saved["result_html"]:
+            return saved["result_html"]
+        if saved["status"] == "error":
+            return saved.get("error") or "Scan failed", 410
 
     return "Report not ready yet", 404
 
