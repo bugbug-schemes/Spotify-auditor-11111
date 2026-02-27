@@ -50,6 +50,20 @@
   .scan-btn:hover { background: #1ed760; }
   .scan-btn:disabled { background: #333; color: #666; cursor: not-allowed; }
 
+  /* Demo link */
+  .demo-link-row {
+    text-align: center; margin-top: 1.2rem; padding-top: 0.5rem;
+  }
+  .demo-divider {
+    display: block; color: #444; font-size: 0.8rem; margin-bottom: 0.4rem;
+    letter-spacing: 0.05em;
+  }
+  .demo-link {
+    color: #888; font-size: 0.9rem; text-decoration: none;
+    transition: color 0.2s;
+  }
+  .demo-link:hover { color: #1DB954; }
+
   /* Progress */
   .progress-panel {
     display: none;
@@ -131,6 +145,12 @@
       </div>
       <button class="scan-btn" id="scanBtn" onclick="startScan()">Scan Playlist</button>
     </div>
+    {% if demo_enabled %}
+    <div class="demo-link-row">
+      <span class="demo-divider">&mdash;&mdash; or &mdash;&mdash;</span>
+      <a href="/demo" class="demo-link">View a sample report &rarr;</a>
+    </div>
+    {% endif %}
   </div>
 
   <div class="progress-panel" id="progressPanel">

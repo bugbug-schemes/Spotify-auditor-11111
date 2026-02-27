@@ -38,6 +38,12 @@ app.register_blueprint(cms_api)
 logger = logging.getLogger("spotify_audit.web")
 
 # ---------------------------------------------------------------------------
+# Demo mode — serve cached report for UI development
+# ---------------------------------------------------------------------------
+DEMO_MODE_ENABLED = os.environ.get("DEMO_MODE_ENABLED", "true").lower() in ("true", "1", "yes")
+DEMO_CACHE_PATH = PROJECT_ROOT / "data" / "demo" / "cached_report.html"
+
+# ---------------------------------------------------------------------------
 # Persistent scan store — SQLite-backed so reports survive server restarts
 # ---------------------------------------------------------------------------
 SCAN_DB_PATH = Path(__file__).parent.parent / "spotify_audit" / "data" / "scan_reports.db"
@@ -301,7 +307,7 @@ def healthz():
 
 @app.route("/")
 def index():
-    return render_template("index.html")
+    return render_template("index.html", demo_enabled=DEMO_MODE_ENABLED)
 
 
 @app.route("/api/scan", methods=["POST"])
@@ -401,6 +407,36 @@ def view_report(scan_id):
             return saved.get("error") or "Scan failed", 410
 
     return "Report not ready yet", 404
+
+
+@app.route("/demo")
+def demo_report():
+    """Serve a cached report for UI development — no pipeline, no API calls."""
+    if not DEMO_MODE_ENABLED:
+        return "Not found", 404
+
+    if not DEMO_CACHE_PATH.is_file():
+        return "Demo report not available. Run: python scripts/generate_demo_cache.py", 404
+
+    html = DEMO_CACHE_PATH.read_text(encoding="utf-8")
+
+    # Inject dismissible demo banner right after <body>
+    demo_banner = """<div id="demoBanner" style="
+      background:#1a2332; border-bottom:1px solid #2a3a4a;
+      padding:8px 16px; text-align:center; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+      font-size:0.85rem; color:#94a3b8; position:relative; z-index:9999;
+    ">
+      <span style="margin-right:8px">&#9889;</span>
+      <strong style="color:#c8d0da">Demo Mode</strong>
+      &mdash; Viewing cached report data. Results may not reflect the latest analysis.
+      <button onclick="document.getElementById('demoBanner').remove()" style="
+        background:none; border:none; color:#667788; cursor:pointer;
+        font-size:1.1rem; margin-left:12px; padding:0 4px; vertical-align:middle;
+      " aria-label="Dismiss">&times;</button>
+    </div>"""
+
+    html = html.replace("<body>", "<body>" + demo_banner, 1)
+    return html
 
 
 @app.route("/api/scan/<scan_id>/retry-skipped", methods=["POST"])
