@@ -72,7 +72,7 @@ Label evidence checks ALL three lists. Contributors checked against `pfc_songwri
 
 ## Recent Changes (v0.7)
 - **Simplified scoring architecture**: Single-pass Collect → Evaluate → Output pipeline
-- **Tag vocabulary alignment**: Controlled tags matching `docs/simplified_scoring_architecture.md`
+- **Tag vocabulary alignment**: Controlled tags matching `docs/architecture/simplified_scoring_architecture.md`
 - **Updated score ranges**: 82-100/58-81/38-57/18-37/0-17 (from 80-100/55-79/35-54/15-34/0-14)
 - **Decision tree updates**: Rule 4 uses `total_red < 4` guard, Rule 5 uses tag-based `genuine_fans`, Rule 8 medium confidence
 - **Fast Mode**: Skip external APIs for obviously-legitimate artists (500K+ followers, Wikipedia, 3+ genres, 5+ albums, clean blocklists)

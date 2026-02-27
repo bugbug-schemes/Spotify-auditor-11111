@@ -1,6 +1,6 @@
 # Instructions: New Evidence Sources & Enhanced Detection
 
-Read the existing codebase and `docs/simplified_scoring_architecture.md` before implementing. Implement these enhancements in priority order. Each section is self-contained and can be merged independently.
+Read the existing codebase and `docs/architecture/simplified_scoring_architecture.md` before implementing. Implement these enhancements in priority order. Each section is self-contained and can be merged independently.
 
 ### Important: Data Access Constraints
 

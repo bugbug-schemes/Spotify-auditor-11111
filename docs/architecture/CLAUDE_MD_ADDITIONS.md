@@ -8,12 +8,12 @@ This project detects Perfect Fit Content (PFC) — fake artists and commissioned
 
 Read these before building any detection or analysis logic:
 
-- `docs/pfc_analysis_pipeline.md` — **START HERE.** The implementation guide for the 5-phase analysis pipeline. Contains directory structure, API query sequences, enriched profile schema, entity graph design, feature matrix spec, and session-by-session build plan.
-- `docs/spotify-audit-spec.md` — Original build spec, CLI design, scoring system with 6-dimension radar chart
-- `docs/api_field_research.md` — Exact API fields available from each of the 7 data sources (MusicBrainz, Deezer, Genius, Discogs, Setlist.fm, Last.fm, Bandsintown)
-- `docs/bad_actor_database.md` — Known PFC providers, producers, labels, fake artist names. Use this for matching in Phase 2 entity expansion. Key entities: Epidemic Sound, Firefly Entertainment, Queenstreet/Audiowell, Johan Röhr, Christer Sandelin/"Chillmi"
-- `docs/pfc_playlist_registry.md` — 76 documented PFC playlists with evidence tiers
-- `docs/pfc_playlists_fake_artists_database.md` — Extended fake artist name database (the 2,600 seed artists)
+- `docs/research/pfc_analysis_pipeline.md` — **START HERE.** The implementation guide for the 5-phase analysis pipeline. Contains directory structure, API query sequences, enriched profile schema, entity graph design, feature matrix spec, and session-by-session build plan.
+- `docs/specs/spotify-audit-spec.md` — Original build spec, CLI design, scoring system with 6-dimension radar chart
+- `docs/research/api_field_research.md` — Exact API fields available from each of the 7 data sources (MusicBrainz, Deezer, Genius, Discogs, Setlist.fm, Last.fm, Bandsintown)
+- `docs/research/bad_actor_database.md` — Known PFC providers, producers, labels, fake artist names. Use this for matching in Phase 2 entity expansion. Key entities: Epidemic Sound, Firefly Entertainment, Queenstreet/Audiowell, Johan Röhr, Christer Sandelin/"Chillmi"
+- `docs/research/pfc_playlist_registry.md` — 76 documented PFC playlists with evidence tiers
+- `docs/research/pfc_playlists_fake_artists_database.md` — Extended fake artist name database (the 2,600 seed artists)
 
 ## Pipeline Scripts
 
@@ -49,7 +49,7 @@ data/
 2. **Never discard raw API responses.** Store raw alongside normalized data in every enriched profile. We may discover new signals later that require re-parsing.
 3. **One artist at a time.** Process all 7 APIs for one artist before moving to the next. Save after each artist completes.
 4. **Log everything.** Every API call gets timestamp, HTTP status, response time. Every disambiguation decision gets logged with confidence level.
-5. **Exponential backoff on rate limits.** Start at 1 second, double each retry, max 60 seconds. Per-API rate limits vary — see the rate limits table in `docs/pfc_analysis_pipeline.md`.
+5. **Exponential backoff on rate limits.** Start at 1 second, double each retry, max 60 seconds. Per-API rate limits vary — see the rate limits table in `docs/research/pfc_analysis_pipeline.md`.
 6. **Error handling: never crash on a single failure.** 404 = record as `"found": false` (absence is data). 500 = retry 3x then record as error. Timeout = retry 3x then record as timeout.
 
 ## API Keys
