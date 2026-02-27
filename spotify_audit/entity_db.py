@@ -304,6 +304,8 @@ CREATE INDEX IF NOT EXISTS idx_scan_results_verdict ON scan_results(verdict);
 CREATE INDEX IF NOT EXISTS idx_scan_results_scan ON scan_results(scan_id);
 CREATE INDEX IF NOT EXISTS idx_api_calls_name ON api_calls(api_name);
 CREATE INDEX IF NOT EXISTS idx_api_calls_timestamp ON api_calls(timestamp);
+CREATE INDEX IF NOT EXISTS idx_artist_publishers_pub ON artist_publishers(publisher_id);
+CREATE INDEX IF NOT EXISTS idx_scans_started ON scans(started_at);
 """
 
 
@@ -321,17 +323,26 @@ class EntityDB:
         self.db_path = Path(db_path) if db_path else DEFAULT_DB_PATH
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._local = threading.local()
-        self._in_batch = False
         self._init_schema()
+
+    @property
+    def _in_batch(self) -> bool:
+        """Thread-local batch flag — prevents cross-thread transaction leaks."""
+        return getattr(self._local, "_in_batch", False)
+
+    @_in_batch.setter
+    def _in_batch(self, value: bool) -> None:
+        self._local._in_batch = value
 
     def _get_conn(self) -> sqlite3.Connection:
         """Get or create a thread-local SQLite connection."""
         conn = getattr(self._local, "conn", None)
         if conn is None:
-            conn = sqlite3.connect(str(self.db_path), check_same_thread=False)
+            conn = sqlite3.connect(str(self.db_path))
             conn.row_factory = sqlite3.Row
             conn.execute("PRAGMA journal_mode=WAL")
             conn.execute("PRAGMA foreign_keys=ON")
+            conn.execute("PRAGMA busy_timeout=5000")
             self._local.conn = conn
         return conn
 
@@ -379,6 +390,17 @@ class EntityDB:
                     self._conn.execute(f"ALTER TABLE {table} ADD COLUMN {col} {typ}")
                 except sqlite3.OperationalError:
                     pass
+
+        # Indexes on migration columns (must run after ALTER TABLEs above)
+        for idx_sql in [
+            "CREATE INDEX IF NOT EXISTS idx_labels_review ON labels(review_status)",
+            "CREATE INDEX IF NOT EXISTS idx_songwriters_review ON songwriters(review_status)",
+            "CREATE INDEX IF NOT EXISTS idx_publishers_review ON publishers(review_status)",
+        ]:
+            try:
+                self._conn.execute(idx_sql)
+            except sqlite3.OperationalError:
+                pass
 
         self._conn.commit()
 

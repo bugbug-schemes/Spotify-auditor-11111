@@ -28,6 +28,15 @@ logger = logging.getLogger("spotify_audit.web.api")
 
 cms_api = Blueprint("cms_api", __name__, url_prefix="/api/cms")
 
+VALID_ENTITY_TYPES = ("artist", "label", "songwriter", "publisher")
+
+
+def _validate_entity_type(entity_type: str):
+    """Return a 400 JSON error response if entity_type is invalid, else None."""
+    if entity_type not in VALID_ENTITY_TYPES:
+        return jsonify({"error": f"Invalid entity type: {entity_type}"}), 400
+    return None
+
 # ---------------------------------------------------------------------------
 # DB helper — one EntityDB instance per app (lazy init)
 # ---------------------------------------------------------------------------
@@ -92,8 +101,9 @@ def queue_stats():
 @cms_api.route("/entities/<entity_type>/<int:entity_id>", methods=["GET"])
 def entity_detail(entity_type: str, entity_id: int):
     """Full entity detail with connected artists, context clues, etc."""
-    if entity_type not in ("label", "songwriter", "publisher", "artist"):
-        return jsonify({"error": f"Invalid entity type: {entity_type}"}), 400
+    err = _validate_entity_type(entity_type)
+    if err:
+        return err
 
     db = _get_db()
 
@@ -111,6 +121,9 @@ def entity_detail(entity_type: str, entity_id: int):
 @cms_api.route("/entities/<entity_type>/<int:entity_id>/network", methods=["GET"])
 def entity_network(entity_type: str, entity_id: int):
     """Network graph data (nodes + edges) centered on an entity."""
+    err = _validate_entity_type(entity_type)
+    if err:
+        return err
     db = _get_db()
     graph = db.get_network_graph(entity_type=entity_type, entity_id=entity_id)
     return jsonify(graph)
@@ -128,6 +141,9 @@ def submit_review(entity_type: str, entity_id: int):
         action: confirmed_bad | dismissed | deferred
         note: optional free-text justification
     """
+    err = _validate_entity_type(entity_type)
+    if err:
+        return err
     data = request.get_json(silent=True) or {}
     action = data.get("action", "")
     note = data.get("note", "")
@@ -155,6 +171,9 @@ def add_note(entity_type: str, entity_id: int):
     JSON body:
         note: the note text
     """
+    err = _validate_entity_type(entity_type)
+    if err:
+        return err
     data = request.get_json(silent=True) or {}
     note = data.get("note", "").strip()
     if not note:
@@ -177,6 +196,9 @@ def create_alias(entity_type: str, entity_id: int):
         relationship: alias | subsidiary | same_person (default: alias)
         note: optional
     """
+    err = _validate_entity_type(entity_type)
+    if err:
+        return err
     data = request.get_json(silent=True) or {}
     target_type = data.get("target_type", "")
     target_id = data.get("target_id")
@@ -185,6 +207,9 @@ def create_alias(entity_type: str, entity_id: int):
 
     if not target_type or target_id is None:
         return jsonify({"error": "target_type and target_id are required"}), 400
+    err = _validate_entity_type(target_type)
+    if err:
+        return err
 
     db = _get_db()
     alias_id = db.link_entity_alias(

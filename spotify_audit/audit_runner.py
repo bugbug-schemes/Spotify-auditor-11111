@@ -413,7 +413,8 @@ def _run_audit_core(
             entity_db = EntityDB()
             db_stats = entity_db.stats()
             db_total = sum(db_stats[t] for t in ("artists", "labels", "songwriters", "publishers"))
-        except Exception:
+        except Exception as exc:
+            logger.warning("Entity DB initialization failed: %s", exc)
             entity_db = None
 
     # Set up API clients
@@ -757,13 +758,22 @@ def _run_audit_core(
                 eval_completed += 1
                 progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (timeout)")
 
-    # Safety fallback — evaluate any resolved artists that weren't evaluated
+    # Safety fallback — evaluate any resolved artists that weren't evaluated.
+    # When falling back due to timeout, flag all external APIs as errored so
+    # the sanity check can distinguish "no data due to timeout" from "truly
+    # not present on any platform" (prevents false negatives).
+    _timeout_api_errors = {
+        "Genius": "evaluation timeout", "Discogs": "evaluation timeout",
+        "Setlist.fm": "evaluation timeout", "MusicBrainz": "evaluation timeout",
+        "Last.fm": "evaluation timeout",
+    }
     for key in quick_results:
         if key not in evaluations:
             artist = artist_infos.get(key)
             if artist:
                 try:
-                    ev = evaluate_artist(artist, entity_db=entity_db)
+                    timeout_ext = ExternalData(api_errors=dict(_timeout_api_errors))
+                    ev = evaluate_artist(artist, external=timeout_ext, entity_db=entity_db)
                     evaluations[key] = ev
                 except Exception as exc:
                     name = artist.name
@@ -773,7 +783,8 @@ def _run_audit_core(
                 qr = quick_results[key]
                 try:
                     minimal = ArtistInfo(artist_id=qr.artist_id, name=qr.artist_name)
-                    ev = evaluate_artist(minimal, entity_db=entity_db)
+                    timeout_ext = ExternalData(api_errors=dict(_timeout_api_errors))
+                    ev = evaluate_artist(minimal, external=timeout_ext, entity_db=entity_db)
                     evaluations[key] = ev
                 except Exception as exc:
                     logger.warning("Minimal evaluation failed for '%s': %s", qr.artist_name, exc)
@@ -970,7 +981,7 @@ def retry_skipped_artists(
     progress = on_progress
 
     if not skipped:
-        return []
+        return [], []
 
     # Build artist_keys from the skipped entries
     artist_keys: list[tuple[str, bool]] = []

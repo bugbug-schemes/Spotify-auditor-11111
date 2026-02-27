@@ -12,7 +12,6 @@ from __future__ import annotations
 import dataclasses
 import logging
 import os
-import sys
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -23,7 +22,6 @@ from rich.console import Console
 from rich.progress import Progress, SpinnerColumn, TextColumn, BarColumn
 from rich.table import Table
 from rich.panel import Panel
-from rich.text import Text
 
 from spotify_audit.config import AuditConfig
 from spotify_audit.spotify_client import SpotifyClient, ArtistInfo
@@ -41,7 +39,7 @@ from spotify_audit.pro_registry import PRORegistryClient
 from spotify_audit.known_entities import run_pre_check, auto_promote_entity
 from spotify_audit.cache import Cache
 from spotify_audit.analyzers.quick import quick_scan, QuickScanResult
-from spotify_audit.analyzers.standard import standard_scan, standard_scan_from_external, StandardScanResult
+from spotify_audit.analyzers.standard import standard_scan_from_external, StandardScanResult
 from spotify_audit.evidence import evaluate_artist, ArtistEvaluation, Verdict, ExternalData, Evidence, incorporate_deep_evidence, is_obviously_legitimate, fast_mode_evaluation
 from spotify_audit.blocklist_builder import analyze_for_blocklist, BlocklistReport
 from spotify_audit.scoring import (
@@ -52,7 +50,7 @@ from spotify_audit.scoring import (
     PlaylistReport,
 )
 from spotify_audit.reports.formatter import to_markdown, to_html, to_json
-from spotify_audit.deep_analysis import run_deep_analysis, run_deep_analysis_batch, DeepAnalysis
+from spotify_audit.deep_analysis import run_deep_analysis_batch
 from spotify_audit.entity_db import EntityDB
 from spotify_audit import scan_db
 

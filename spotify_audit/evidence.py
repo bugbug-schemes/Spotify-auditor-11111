@@ -20,7 +20,7 @@ from datetime import datetime, timezone
 from enum import Enum
 
 from spotify_audit.spotify_client import ArtistInfo
-from spotify_audit.config import pfc_distributors, known_ai_artists, pfc_songwriters, MOOD_WORDS
+from spotify_audit.config import pfc_distributors, known_ai_artists, pfc_songwriters
 
 logger = logging.getLogger(__name__)
 
@@ -32,7 +32,7 @@ logger = logging.getLogger(__name__)
 # Ordered longest-first to avoid partial matches (e.g. " feat " before " ft ")
 _ARTIST_SEPARATORS = [
     " feat. ", " feat ", " ft. ", " ft ",
-    ", ", " & ", " and ", " x ", " vs. ", " vs ",
+    ", ", " & ", " with ", " and ", " x ", " vs. ", " vs ",
 ]
 
 
@@ -508,8 +508,8 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
         bio_count += 1
     if len(ext.discogs_profile) >= 50:
         bio_count += 1
-    if ext.genius_found and ext.genius_followers_count >= 0:
-        bio_count += 1  # Genius has profile info
+    if ext.genius_found and ext.genius_followers_count > 0:
+        bio_count += 1  # Genius has profile with actual followers
 
     if bio_count >= 3:
         platform_pts += 30  # bio exists (15) + 3+ platforms bonus (15)
@@ -545,12 +545,12 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
 
         # Play/listener ratio
         ratio = ext.lastfm_listener_play_ratio
-        if 2.0 <= ratio <= 15.0:
-            fan_pts += 15  # healthy range
+        if 2.0 <= ratio <= 30.0:
+            fan_pts += 15  # healthy range (including dedicated fanbases)
         elif ratio < 2.0 and ratio > 0:
             fan_pts -= 5  # low repeat
-        elif ratio > 15.0:
-            fan_pts -= 15  # suspicious
+        elif ratio > 30.0:
+            fan_pts -= 5  # very high ratio — unusual but not inherently bad
     else:
         # Not found on Last.fm — only penalize if API didn't error
         if not _api_errored(ext, "Last.fm"):
@@ -813,6 +813,48 @@ def _error_evidence(platform: str, ext: ExternalData) -> Evidence:
                f"Error: {error_msg[:200] if error_msg else 'timeout or connection failure'}",
         tags=["api_error"],
     )
+
+
+def _deduplicate_evidence(all_evidence: list[Evidence]) -> list[Evidence]:
+    """Deduplicate evidence in two passes.
+
+    Pass 1: Same (source, finding) key → keep only the stronger item.
+    Pass 2: Same tag → keep at most 2 items (strongest first) to prevent
+    cross-source inflation (e.g., PFC label matched from 3 different sources).
+    """
+    strength_order = {"strong": 3, "moderate": 2, "weak": 1}
+
+    # Pass 1: source+finding dedup
+    seen: dict[tuple[str, str], Evidence] = {}
+    for ev_item in all_evidence:
+        key = (ev_item.source, ev_item.finding)
+        existing = seen.get(key)
+        if existing is None:
+            seen[key] = ev_item
+        elif strength_order.get(ev_item.strength, 0) > strength_order.get(existing.strength, 0):
+            seen[key] = ev_item
+    deduped = list(seen.values())
+
+    # Pass 2: cap same-tag evidence at 2 items max (for red/green flags only)
+    tag_counts: dict[str, int] = {}
+    result: list[Evidence] = []
+    # Sort by strength descending so we keep the strongest items per tag
+    deduped.sort(key=lambda e: strength_order.get(e.strength, 0), reverse=True)
+    for ev_item in deduped:
+        if ev_item.evidence_type in ("red_flag", "green_flag") and ev_item.tags:
+            dominated = False
+            for tag in ev_item.tags:
+                count = tag_counts.get(tag, 0)
+                if count >= 2:
+                    dominated = True
+                    break
+            if dominated:
+                continue
+            for tag in ev_item.tags:
+                tag_counts[tag] = tag_counts.get(tag, 0) + 1
+        result.append(ev_item)
+
+    return result
 
 
 def _not_found_strength(ext: ExternalData, platform: str, artist_name: str = "") -> str:
@@ -1279,21 +1321,8 @@ def _collect_label_evidence(artist: ArtistInfo) -> list[Evidence]:
             tags=["known_ai_label"],
         ))
 
-    # Check contributors against PFC songwriter blocklist
-    pfc_writers = pfc_songwriters()
-    if artist.contributors and pfc_writers:
-        matched_writers = [c for c in artist.contributors if c.lower() in pfc_writers]
-        if matched_writers:
-            evidence.append(Evidence(
-                finding=f"Contributor matches PFC songwriter blocklist: {', '.join(matched_writers[:3])}",
-                source="Blocklist",
-                evidence_type="red_flag",
-                strength="strong",
-                detail=f"This artist's credits include known PFC songwriters: "
-                       f"{', '.join(matched_writers[:5])}. "
-                       "PFC songwriters are associated with factory-produced content.",
-                tags=["pfc_songwriter"],
-            ))
+    # PFC songwriter check moved to _collect_credit_network_evidence to
+    # avoid double-counting the same signal from two collectors.
 
     if not matched_pfc and not matched_ai:
         # Having a recognizable label is a green flag
@@ -1518,18 +1547,6 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
                     detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
                            f"{top2_share:.0%} of all popularity (extreme — almost certainly "
                            "playlist-placed, not organic).",
-                    tags=["playlist_stuffing"],
-                ))
-            elif top2_share >= 0.80:
-                evidence.append(Evidence(
-                    finding=f"Top track holds {top1_share:.0%} of total Deezer rank · "
-                            f"Top 2: {top2_share:.0%} · Top 3: {top3_share:.0%}",
-                    source="Deezer",
-                    evidence_type="red_flag",
-                    strength="strong",
-                    detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
-                           f"{top2_share:.0%} of all popularity. This extreme concentration "
-                           "is a strong signal of playlist stuffing.",
                     tags=["playlist_stuffing"],
                 ))
             elif top2_share >= 0.80:
@@ -3376,18 +3393,11 @@ def evaluate_artist(
         all_evidence.extend(_collect_entity_db_evidence(artist, entity_db))
         all_evidence.extend(_collect_cowriter_network_evidence(ext, entity_db, artist.name))
 
-    # Evidence deduplication: if two items share the same (source, finding) key,
-    # keep only the stronger one. Prevents double-counting the same signal.
-    seen: dict[tuple[str, str], Evidence] = {}
-    strength_order = {"strong": 3, "moderate": 2, "weak": 1}
-    for ev_item in all_evidence:
-        key = (ev_item.source, ev_item.finding)
-        existing = seen.get(key)
-        if existing is None:
-            seen[key] = ev_item
-        elif strength_order.get(ev_item.strength, 0) > strength_order.get(existing.strength, 0):
-            seen[key] = ev_item
-    all_evidence = list(seen.values())
+    # Evidence deduplication: two passes.
+    # Pass 1: if two items share the same (source, finding) key, keep strongest.
+    # Pass 2: cap same-tag evidence at 2 items max to prevent cross-source
+    # inflation (e.g., PFC label matched from Blocklist, Discogs, AND MusicBrainz).
+    all_evidence = _deduplicate_evidence(all_evidence)
 
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]
@@ -3455,13 +3465,14 @@ def incorporate_deep_evidence(
     if not deep_evidence:
         return evaluation
 
-    # Merge all evidence
+    # Merge all evidence and deduplicate (same logic as evaluate_artist)
     all_evidence = (
         evaluation.red_flags
         + evaluation.green_flags
         + evaluation.neutral_notes
         + deep_evidence
     )
+    all_evidence = _deduplicate_evidence(all_evidence)
 
     # Re-separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]
@@ -3473,6 +3484,35 @@ def incorporate_deep_evidence(
     verdict, confidence, matched_rule = _decide_verdict(
         red_flags, green_flags, evaluation.platform_presence, decision_path,
     )
+
+    # Re-apply sanity check (same as evaluate_artist) to prevent reverting
+    # a previously-corrected verdict due to API failure conditions.
+    ext = evaluation.external_data
+    if ext and verdict in (Verdict.SUSPICIOUS, Verdict.LIKELY_ARTIFICIAL):
+        cat_scores = compute_category_scores(
+            ArtistEvaluation(
+                artist_id=evaluation.artist_id, artist_name=evaluation.artist_name,
+                verdict=verdict, confidence=confidence,
+                platform_presence=evaluation.platform_presence,
+                red_flags=red_flags, green_flags=green_flags,
+                neutral_notes=neutral_notes, decision_path=[],
+                external_data=ext,
+            )
+        )
+        blocklist_clean = cat_scores.get("Blocklist Status", 0) == 100
+        all_zeros = all(
+            cat_scores.get(k, 0) == 0
+            for k in ["Platform Presence", "Fan Engagement", "IRL Presence", "Industry Signals"]
+        )
+        deezer_fans = getattr(ext, "deezer_fans", 0) or 0
+        if deezer_fans >= 1000 and all_zeros and blocklist_clean:
+            num_errors = len(ext.api_errors)
+            verdict = Verdict.INCONCLUSIVE
+            confidence = "low"
+            decision_path.append(
+                f"Sanity check override: {deezer_fans:,} Deezer fans but {num_errors} "
+                f"API errors caused all-zero scores → Inconclusive (data collection failure)"
+            )
 
     return ArtistEvaluation(
         artist_id=evaluation.artist_id,

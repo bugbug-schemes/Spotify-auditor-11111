@@ -321,8 +321,12 @@ def start_scan():
     if not playlist_url:
         return jsonify({"error": "Please provide a playlist URL"}), 400
 
-    # Accept various Spotify URL formats
-    if "spotify.com" not in playlist_url and "spotify:" not in playlist_url:
+    # Validate Spotify URL format strictly to prevent SSRF
+    import re
+    _SPOTIFY_URL_RE = re.compile(
+        r'^https?://open\.spotify\.com/(playlist|album|track|artist)/[a-zA-Z0-9]+',
+    )
+    if not _SPOTIFY_URL_RE.match(playlist_url) and not playlist_url.startswith("spotify:"):
         return jsonify({"error": "Please provide a valid Spotify playlist URL"}), 400
 
     # Check concurrent scan limit
