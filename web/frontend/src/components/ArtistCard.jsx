@@ -73,11 +73,8 @@ const TAG_TO_SECTION = {
   cookie_cutter: 'Creative History',
   high_release_rate: 'Creative History',
   same_day_release: 'Creative History',
-  mood_word_titles: 'Creative History',
   // IRL Presence
   live_performance: 'IRL Presence',
-  touring_geography: 'IRL Presence',
-  named_tour: 'IRL Presence',
   concert_history: 'IRL Presence',
   physical_release: 'IRL Presence',
   // Industry Signals
@@ -353,34 +350,53 @@ function MiniCategoryBar({ scores }) {
 }
 
 // Platform checkmarks row with clickable links (spec Part 3)
+// Three states: ✓ found (green), ✗ not found (dim), ⚠ error/timeout (amber)
 function PlatformCheckmarks({ result, sources }) {
   const platformList = [
-    { name: 'Deezer', key: 'Deezer' },
-    { name: 'MusicBrainz', key: 'MusicBrainz' },
-    { name: 'Genius', key: 'Genius' },
-    { name: 'Last.fm', key: 'Last.fm' },
-    { name: 'Discogs', key: 'Discogs' },
-    { name: 'Setlist.fm', key: 'Setlist.fm' },
-    { name: 'Wikipedia', key: 'Wikipedia' },
+    { name: 'Deezer', key: 'Deezer', statusKey: 'deezer' },
+    { name: 'MusicBrainz', key: 'MusicBrainz', statusKey: 'musicbrainz' },
+    { name: 'Genius', key: 'Genius', statusKey: 'genius' },
+    { name: 'Last.fm', key: 'Last.fm', statusKey: 'lastfm' },
+    { name: 'Discogs', key: 'Discogs', statusKey: 'discogs' },
+    { name: 'Setlist.fm', key: 'Setlist.fm', statusKey: 'setlistfm' },
+    { name: 'Wikipedia', key: 'Wikipedia', statusKey: 'wikipedia' },
   ];
 
   const ext = result.external_data || {};
   const artistName = result.artist_name || '';
+  const apiStatus = result.api_status || {};
+  const profileUrls = result.profile_urls || {};
 
   return (
     <div className="platform-checkmarks">
-      {platformList.map(({ name, key }) => {
-        const found = sources?.[key];
-        const urlBuilder = PLATFORM_URLS[key];
-        const url = found && urlBuilder ? urlBuilder(ext, artistName) : null;
+      {platformList.map(({ name, key, statusKey }) => {
+        const status = apiStatus[statusKey];
+        const found = status === 'found' || (!status && sources?.[key]);
+        const errored = status === 'error' || status === 'timeout';
+        const skipped = status === 'skipped';
 
-        const icon = found ? '\u2713' : '\u2717';
-        const color = found ? '#22c55e' : '#444';
+        // Use profile_urls from JSON, fallback to URL builders
+        const urlBuilder = PLATFORM_URLS[key];
+        const url = found
+          ? (profileUrls[statusKey] || (urlBuilder ? urlBuilder(ext, artistName) : null))
+          : null;
+
+        let icon, color, title;
+        if (found) {
+          icon = '\u2713'; color = '#22c55e'; title = `${name}: Found`;
+        } else if (errored) {
+          icon = '\u26A0'; color = '#fbbf24'; title = `${name}: ${status === 'timeout' ? 'Timed out' : 'Error'}`;
+        } else if (skipped) {
+          icon = '\u2014'; color = '#9ca3af'; title = `${name}: Not checked`;
+        } else {
+          icon = '\u2717'; color = '#444'; title = `${name}: Not found`;
+        }
 
         const content = (
           <span
-            className="platform-check-item"
+            className={`platform-check-item${errored ? ' platform-check-item--warning' : ''}`}
             style={{ color, borderColor: color + '33' }}
+            title={title}
           >
             <span className="platform-check-icon">{icon}</span>
             {name}
@@ -468,6 +484,7 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
   const score = result.score ?? 0;
   const confidence = result.confidence || '';
   const threatCategory = result.threat_category || '';
+  const matchedRule = result.matched_rule || '';
   const verdictColor = getVerdictColor(verdict);
   const flags = useMemo(() => countFlags(evidence), [evidence]);
   const topReason = useMemo(() => getTopRedReason(evidence), [evidence]);
@@ -487,6 +504,15 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
 
   const sources = result.sources_reached || {};
 
+  // Check if analysis is incomplete (any API errored/timed out) — Fix 1
+  const apiStatus = result.api_status || {};
+  const hasApiErrors = useMemo(() => {
+    return Object.values(apiStatus).some(s => s === 'error' || s === 'timeout');
+  }, [apiStatus]);
+  const erroredCount = useMemo(() => {
+    return Object.values(apiStatus).filter(s => s === 'error' || s === 'timeout').length;
+  }, [apiStatus]);
+
   return (
     <div className="artist-card">
       {/* === COLLAPSED STATE (spec Part 2) === */}
@@ -500,7 +526,17 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
         <ScoreBadge score={score} verdict={verdict} confidence={confidence} />
 
         <div className="artist-card-header-content">
-          <span className="artist-card-name">{result.artist_name}</span>
+          <span className="artist-card-name">
+            {result.artist_name}
+            {hasApiErrors && (
+              <span
+                className="artist-card-incomplete"
+                title={`Incomplete analysis \u2014 ${erroredCount} data source${erroredCount > 1 ? 's' : ''} could not be reached`}
+              >
+                {' '}{'\u26A0'}
+              </span>
+            )}
+          </span>
           <div className="artist-card-description">{descriptionText}</div>
           <div className="artist-card-tags">
             <span
@@ -541,6 +577,27 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
         <div className="artist-card-body">
           {/* 1. Platform checkmarks row with clickable links */}
           <PlatformCheckmarks result={result} sources={sources} />
+
+          {/* 1b. Matched decision tree rule (spec C.1) */}
+          {matchedRule && (
+            <div className="matched-rule" style={{ color: verdictColor }}>
+              <span className="matched-rule-icon">
+                {verdict === 'Suspicious' || verdict === 'Likely Artificial' ? '\u26A0' : '\u2139'}
+              </span>
+              <span className="matched-rule-text">
+                {verdict === 'Suspicious' || verdict === 'Likely Artificial' ? 'Flagged by ' : 'Matched '}
+                {matchedRule}
+                {confidence && ` (${confidence} confidence)`}
+              </span>
+            </div>
+          )}
+
+          {/* 1c. Incomplete analysis warning (Fix 1) */}
+          {hasApiErrors && (
+            <div className="incomplete-warning">
+              {'\u26A0'} Evidence incomplete \u2014 {erroredCount} data source{erroredCount > 1 ? 's' : ''} could not be reached
+            </div>
+          )}
 
           {/* 2. Radar chart + category sections layout */}
           <div className="artist-card-top">

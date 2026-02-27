@@ -26,6 +26,38 @@ logger = logging.getLogger(__name__)
 
 
 # ---------------------------------------------------------------------------
+# Multi-artist credit splitting (Fix 3)
+# ---------------------------------------------------------------------------
+
+# Ordered longest-first to avoid partial matches (e.g. " feat " before " ft ")
+_ARTIST_SEPARATORS = [
+    " feat. ", " feat ", " ft. ", " ft ",
+    ", ", " & ", " and ", " x ", " vs. ", " vs ",
+]
+
+
+def extract_primary_artist(credit: str) -> str:
+    """Extract the primary artist name from a combined credit string.
+
+    Handles separators like ", ", " & ", " feat. ", " ft. ", " x ", etc.
+    Returns the first (primary) artist name.
+
+    Examples:
+        "Roger Eno, Brian Eno" → "Roger Eno"
+        "Max Richter, Grace Davidson" → "Max Richter"
+        "Kendrick Lamar feat. SZA" → "Kendrick Lamar"
+        "A Winged Victory for the Sullen" → "A Winged Victory for the Sullen"
+    """
+    credit_lower = credit.lower()
+    for sep in _ARTIST_SEPARATORS:
+        if sep in credit_lower:
+            # Find the separator position case-insensitively
+            idx = credit_lower.index(sep)
+            return credit[:idx].strip()
+    return credit.strip()
+
+
+# ---------------------------------------------------------------------------
 # External API results container (passed in from CLI)
 # ---------------------------------------------------------------------------
 
@@ -81,6 +113,7 @@ class ExternalData:
     musicbrainz_ipis: list[str] = field(default_factory=list)
     musicbrainz_gender: str = ""
     musicbrainz_area: str = ""
+    musicbrainz_relationship_count: int = 0  # number of URL/artist/recording relations
 
     # Last.fm
     lastfm_found: bool = False
@@ -171,6 +204,9 @@ class ExternalData:
     # Track which APIs errored (timeout/network) vs genuinely returned no results
     api_errors: dict[str, str] = field(default_factory=dict)
 
+    # Deezer per-track rank data for frontend display
+    deezer_track_ranks: list[dict] = field(default_factory=list)  # [{title, rank}]
+
 
 # ---------------------------------------------------------------------------
 # Data structures
@@ -224,8 +260,7 @@ class Evidence:
         catalog_albums       — has album releases
         genius_credits       — has Genius songwriter credits
         collaboration        — has collaborators / related artists
-        touring_geography    — international touring spread
-        named_tour           — has named tour(s)
+        # touring_geography, named_tour — removed (deprecated)
 
     Platform / identity:
         multi_platform       — found on 3+ platforms
@@ -286,9 +321,11 @@ class Evidence:
         entity_bad_songwriter — songwriter flagged in entity DB
         entity_bad_network   — connected to flagged artists via shared producers
 
-    Mood / name patterns:
+    Name patterns:
         generic_name         — generic two-word name pattern
-        mood_word_titles     — track titles dominated by mood/atmosphere words
+
+    API status:
+        api_error            — API call failed (error/timeout), not scored
     """
     finding: str          # Short summary (e.g. "Found on Deezer with 145,231 fans")
     source: str           # Data source (e.g. "Deezer", "MusicBrainz", "Blocklist")
@@ -359,6 +396,9 @@ class ArtistEvaluation:
 
     # Keep external data for source status display
     external_data: ExternalData | None = None
+
+    # C.1: Matched decision tree rule (e.g. "Rule 2: PFC Label + Content Farm Pattern")
+    matched_rule: str = ""
 
     @property
     def red_flag_count(self) -> int:
@@ -434,13 +474,13 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
         # Bonus: Wikipedia >= 5,000 words (~30,000 bytes)
         if ext.wikipedia_length >= 30000:
             platform_pts += 15
-    else:
+    elif not _api_errored(ext, "Wikipedia"):
         platform_pts -= 5
 
     # Genius profile exists
     if ext.genius_found:
         platform_pts += 5
-    else:
+    elif not _api_errored(ext, "Genius"):
         platform_pts -= 5
 
     # Social media presence
@@ -512,11 +552,12 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
         elif ratio > 15.0:
             fan_pts -= 15  # suspicious
     else:
-        # Not found on Last.fm
-        if fans == 0:
-            fan_pts -= 30  # Not found AND 0 Deezer fans (strong)
-        else:
-            fan_pts -= 15  # Not found on Last.fm alone
+        # Not found on Last.fm — only penalize if API didn't error
+        if not _api_errored(ext, "Last.fm"):
+            if fans == 0:
+                fan_pts -= 30  # Not found AND 0 Deezer fans (strong)
+            else:
+                fan_pts -= 15  # Not found on Last.fm alone
 
     # Deezer fans
     if fans >= 100:
@@ -613,12 +654,24 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
         live_pts += 30  # tangible evidence (strong)
         has_physical = True
 
-    # Penalties for missing
+    # Penalties for missing — only if APIs didn't error
+    setlistfm_err = _api_errored(ext, "Setlist.fm")
+    songkick_err = _api_errored(ext, "Songkick")
+    discogs_err = _api_errored(ext, "Discogs")
+    concerts_unknowable = setlistfm_err and songkick_err
+    physical_unknowable = discogs_err
+
     if not has_concerts and not has_physical:
-        live_pts -= 30  # no concerts AND no physical (strong)
-    elif not has_concerts:
+        if not concerts_unknowable and not physical_unknowable:
+            live_pts -= 30  # no concerts AND no physical (strong)
+        elif not concerts_unknowable:
+            live_pts -= 15  # only know concerts are missing
+        elif not physical_unknowable:
+            live_pts -= 15  # only know physical is missing
+        # else: both errored, don't penalize
+    elif not has_concerts and not concerts_unknowable:
         live_pts -= 15  # no concerts
-    elif not has_physical:
+    elif not has_physical and not physical_unknowable:
         live_pts -= 15  # no physical releases
 
     live_score = _clamp(live_pts)
@@ -644,8 +697,8 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
                            ext.musicbrainz_begin_date])
         if has_complete:
             industry_pts += 15
-    else:
-        industry_pts -= 15  # no MusicBrainz entry
+    elif not _api_errored(ext, "MusicBrainz"):
+        industry_pts -= 15  # no MusicBrainz entry (only if API didn't error)
 
     # ISNI
     if ext.musicbrainz_isnis:
@@ -655,22 +708,48 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     if ext.musicbrainz_ipis:
         industry_pts += 30
 
-    # ASCAP/BMI registration
+    # ASCAP/BMI registration (C.3 scoring)
     if ext.pro_checked:
         if ext.pro_songwriter_registered:
-            industry_pts += 30
-            # PFC publisher match overrides
+            industry_pts += 30  # registered as songwriter → +30 Strong
+            # Normal writer/publisher split → +5 Weak
+            if ext.pro_songwriter_share_pct >= 30:
+                industry_pts += 5
+            # 0% songwriter share → -15 Moderate
+            if ext.pro_zero_songwriter_share:
+                industry_pts -= 15
+            # PFC publisher match → -30 Strong (overrides the +30)
             if ext.pro_pfc_publisher_match:
-                industry_pts -= 30  # net zero from PRO, plus penalty
-        # No ISNI, IPI, or PRO
+                industry_pts -= 30
+        else:
+            industry_pts -= 5  # not found → -5 Weak
+    # No ISNI, IPI, or PRO
     if not ext.musicbrainz_isnis and not ext.musicbrainz_ipis and not ext.pro_songwriter_registered:
         industry_pts -= 5  # weak negative for missing all identifiers
 
-    # Discogs bio with career keywords (kept from previous version)
-    if len(ext.discogs_profile) >= 200:
-        industry_pts += 10
-    elif len(ext.discogs_profile) >= 50:
-        industry_pts += 5
+    # Bio analysis Phase 1: presence + length + generic detection
+    bio_sources = 0
+    total_bio_chars = 0
+    if ext.discogs_profile and len(ext.discogs_profile) > 0:
+        bio_sources += 1
+        total_bio_chars += len(ext.discogs_profile)
+    if ext.genius_found and ext.genius_description:
+        bio_sources += 1
+        total_bio_chars += len(ext.genius_description)
+    if ext.lastfm_bio_exists:
+        bio_sources += 1
+    if ext.wikipedia_found and ext.wikipedia_length > 0:
+        bio_sources += 1
+        total_bio_chars += ext.wikipedia_length
+
+    if total_bio_chars >= 500 and bio_sources >= 2:
+        industry_pts += 15  # substantial bios across multiple sources
+    elif total_bio_chars >= 200:
+        industry_pts += 10  # decent bio content
+    elif total_bio_chars >= 50:
+        industry_pts += 5   # minimal bio
+    elif bio_sources == 0 and not _api_errored(ext, "Discogs") and not _api_errored(ext, "Genius"):
+        industry_pts -= 5   # no bios found despite checking multiple APIs
 
     # Discogs data quality
     if ext.discogs_data_quality == "Correct":
@@ -723,6 +802,33 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
 # ---------------------------------------------------------------------------
 # Match quality helpers — modulate evidence strength based on search confidence
 # ---------------------------------------------------------------------------
+
+def _api_errored(ext: ExternalData, platform: str) -> bool:
+    """Check if an API call errored/timed out (vs genuinely not finding the artist).
+
+    When an API errored, we should NOT penalize the artist — the absence of data
+    is due to our failure, not the artist's absence from the platform.
+    """
+    return platform.lower() in {k.lower() for k in ext.api_errors}
+
+
+def _error_evidence(platform: str, ext: ExternalData) -> Evidence:
+    """Return a neutral evidence item for an API that errored/timed out."""
+    error_msg = ""
+    for k, v in ext.api_errors.items():
+        if k.lower() == platform.lower():
+            error_msg = v
+            break
+    return Evidence(
+        finding=f"{platform}: API error (not scored)",
+        source=platform,
+        evidence_type="neutral",
+        strength="weak",
+        detail=f"Could not reach {platform} — this is NOT scored as 'not found'. "
+               f"Error: {error_msg[:200] if error_msg else 'timeout or connection failure'}",
+        tags=["api_error"],
+    )
+
 
 def _not_found_strength(ext: ExternalData, platform: str, artist_name: str = "") -> str:
     """Determine how strong a 'not found' red flag should be.
@@ -1264,26 +1370,8 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
             tags=["generic_name"],
         ))
 
-    # Mood-word track titles (PFC tracks use generic mood/atmosphere names)
-    if artist.track_titles:
-        mood_count = 0
-        for title in artist.track_titles:
-            title_words = set(title.lower().split())
-            if title_words & MOOD_WORDS:
-                mood_count += 1
-        mood_ratio = mood_count / len(artist.track_titles) if artist.track_titles else 0
-        if mood_ratio >= 0.7 and len(artist.track_titles) >= 4:
-            evidence.append(Evidence(
-                finding=f"{mood_ratio:.0%} of track titles use generic mood/atmosphere words",
-                source="Name analysis",
-                evidence_type="red_flag",
-                strength="moderate",
-                detail=f"{mood_count} of {len(artist.track_titles)} tracks have names built "
-                       "from mood vocabulary (calm, peaceful, rain, morning, etc.). PFC music "
-                       "is often named to match playlist moods rather than artistic expression. "
-                       f"Sample titles: {', '.join(artist.track_titles[:5])}.",
-                tags=["mood_word_titles"],
-            ))
+    # Mood-word track titles removed per alignment doc — too many false positives
+    # with ambient/wellness/classical genres
 
     return evidence
 
@@ -1444,7 +1532,7 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
 
     avg_rank = statistics.mean(artist.track_ranks)
 
-    # Top tracks concentration: if 1-2 tracks hold vast majority of popularity
+    # Top tracks concentration: 3-tier scoring for playlist stuffing detection
     if len(artist.track_ranks) >= 4:
         sorted_ranks = sorted(artist.track_ranks, reverse=True)
         total_rank = sum(sorted_ranks)
@@ -1455,11 +1543,32 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
                     finding=f"Top 2 tracks hold {top2_share:.0%} of total rank score",
                     source="Deezer",
                     evidence_type="red_flag",
+                    strength="strong",
+                    detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
+                           f"{top2_share:.0%} of all popularity. This extreme concentration "
+                           "is a strong signal of playlist stuffing.",
+                    tags=["playlist_stuffing"],
+                ))
+            elif top2_share >= 0.80:
+                evidence.append(Evidence(
+                    finding=f"Top 2 tracks hold {top2_share:.0%} of total rank score",
+                    source="Deezer",
+                    evidence_type="red_flag",
                     strength="moderate",
                     detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
                            f"{top2_share:.0%} of all popularity. This concentration pattern "
-                           "is consistent with playlist stuffing — a couple of tracks placed "
-                           "on playlists while the rest have near-zero organic plays.",
+                           "is consistent with playlist stuffing.",
+                    tags=["playlist_stuffing"],
+                ))
+            elif top2_share >= 0.70:
+                evidence.append(Evidence(
+                    finding=f"Top 2 tracks hold {top2_share:.0%} of total rank score",
+                    source="Deezer",
+                    evidence_type="red_flag",
+                    strength="weak",
+                    detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
+                           f"{top2_share:.0%} of all popularity. Mildly concentrated — "
+                           "could be normal for artists with one breakout hit.",
                     tags=["playlist_stuffing"],
                 ))
 
@@ -1493,6 +1602,9 @@ def _collect_genius_evidence(ext: ExternalData) -> list[Evidence]:
     evidence: list[Evidence] = []
 
     if not ext.genius_found:
+        # Fix 1: If the API errored, don't penalize — emit neutral instead
+        if _api_errored(ext, "Genius"):
+            return [_error_evidence("Genius", ext)]
         evidence.append(Evidence(
             finding="Not found on Genius",
             source="Genius",
@@ -1561,6 +1673,8 @@ def _collect_discogs_evidence(ext: ExternalData) -> list[Evidence]:
     evidence: list[Evidence] = []
 
     if not ext.discogs_found:
+        if _api_errored(ext, "Discogs"):
+            return [_error_evidence("Discogs", ext)]
         evidence.append(Evidence(
             finding="Not found on Discogs",
             source="Discogs",
@@ -1703,19 +1817,27 @@ def _collect_live_show_evidence(ext: ExternalData) -> list[Evidence]:
                 detail="Artist exists on Setlist.fm but no performances are recorded.",
             ))
     else:
-        evidence.append(Evidence(
-            finding="Not found on Setlist.fm",
-            source="Setlist.fm",
-            evidence_type="red_flag",
-            strength=_not_found_strength(ext, "setlistfm", ext.artist_name),
-            detail="No concert history found on Setlist.fm. Could be a new or "
-                   "studio-only artist, or could indicate a non-performing entity.",
-            tags=["not_found"],
-        ))
+        if _api_errored(ext, "Setlist.fm"):
+            evidence.append(_error_evidence("Setlist.fm", ext))
+        else:
+            evidence.append(Evidence(
+                finding="Not found on Setlist.fm",
+                source="Setlist.fm",
+                evidence_type="red_flag",
+                strength=_not_found_strength(ext, "setlistfm", ext.artist_name),
+                detail="No concert history found on Setlist.fm. Could be a new or "
+                       "studio-only artist, or could indicate a non-performing entity.",
+                tags=["not_found"],
+            ))
 
     # Combined live show assessment — only add if not already covered by setlistfm-specific flag
+    # Don't penalize if APIs errored — we just don't know
     songkick_shows = getattr(ext, "songkick_total_past_events", 0) or 0
-    if total_shows == 0 and not ext.setlistfm_found and songkick_shows == 0 and not getattr(ext, "songkick_found", False):
+    setlistfm_errored = _api_errored(ext, "Setlist.fm")
+    songkick_errored = _api_errored(ext, "Songkick")
+    if (total_shows == 0 and not ext.setlistfm_found and songkick_shows == 0
+            and not getattr(ext, "songkick_found", False)
+            and not setlistfm_errored and not songkick_errored):
         evidence.append(Evidence(
             finding="No live performance history found anywhere",
             source="Live shows",
@@ -1735,6 +1857,8 @@ def _collect_musicbrainz_evidence(ext: ExternalData) -> list[Evidence]:
     evidence: list[Evidence] = []
 
     if not ext.musicbrainz_found:
+        if _api_errored(ext, "MusicBrainz"):
+            return [_error_evidence("MusicBrainz", ext)]
         evidence.append(Evidence(
             finding="Not found on MusicBrainz",
             source="MusicBrainz",
@@ -1892,13 +2016,18 @@ def _collect_social_media_evidence(ext: ExternalData) -> list[Evidence]:
             detail=f"Minimal web presence found: {platforms_str}.",
         ))
     else:
-        # Only flag if we actually checked multiple APIs
+        # Only flag if we actually checked multiple APIs successfully (not errored)
         apis_checked = sum([
             ext.genius_found,
             ext.discogs_found,
             ext.musicbrainz_found,
         ])
-        if apis_checked >= 2:
+        apis_errored = sum([
+            _api_errored(ext, "Genius"),
+            _api_errored(ext, "Discogs"),
+            _api_errored(ext, "MusicBrainz"),
+        ])
+        if apis_checked >= 2 and apis_errored == 0:
             evidence.append(Evidence(
                 finding="No social media or website links found",
                 source="Social media",
@@ -2155,6 +2284,8 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
     evidence: list[Evidence] = []
 
     if not ext.lastfm_found:
+        if _api_errored(ext, "Last.fm"):
+            return [_error_evidence("Last.fm", ext)]
         evidence.append(Evidence(
             finding="Not found on Last.fm",
             source="Last.fm",
@@ -2247,58 +2378,8 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
     return evidence
 
 
-def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
-    """Analyze geographic spread of touring (from Setlist.fm)."""
-    evidence: list[Evidence] = []
-
-    if not ext.setlistfm_found:
-        return evidence
-
-    # Tour names indicate organized, named tours
-    if ext.setlistfm_tour_names:
-        evidence.append(Evidence(
-            finding=f"{len(ext.setlistfm_tour_names)} named tour(s)",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Named tours: {', '.join(ext.setlistfm_tour_names[:5])}. "
-                   "Named tours indicate professional touring activity.",
-            tags=["named_tour", "touring_geography"],
-        ))
-
-    # Geographic spread
-    countries = ext.setlistfm_venue_countries
-    cities = ext.setlistfm_venue_cities
-    if len(countries) >= 5:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(countries)} countries",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="strong",
-            detail=f"International touring across: {', '.join(countries[:8])}. "
-                   "International touring is very strong proof of a real artist.",
-            tags=["touring_geography"],
-        ))
-    elif len(countries) >= 2:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(countries)} countries",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Toured in: {', '.join(countries[:5])}.",
-            tags=["touring_geography"],
-        ))
-    elif len(cities) >= 3:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(cities)} cities",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="weak",
-            detail=f"Venues in: {', '.join(cities[:5])}.",
-            tags=["touring_geography"],
-        ))
-
-    return evidence
+## _collect_touring_geography_evidence removed — deprecated per spec.
+## Geographic spread is now handled by live_performance tags in Songkick collector.
 
 
 def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
@@ -2314,24 +2395,26 @@ def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
         return evidence
 
     # Article length — longer articles indicate more notability
+    # Display as approximate word count (bytes / 6) per spec
     length = ext.wikipedia_length
+    words = max(1, length // 6) if length > 0 else 0
     views = ext.wikipedia_monthly_views
     extract = ext.wikipedia_extract
 
     if length >= 20_000 and views >= 10_000:
         evidence.append(Evidence(
-            finding=f"Substantial Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            finding=f"Substantial Wikipedia article (~{words:,} words, {views:,} monthly views)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="strong",
-            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is {length:,} bytes with "
+            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is ~{words:,} words with "
                    f"{views:,} monthly page views. Large, actively-viewed articles indicate "
                    f"significant public notability. Summary: \"{extract[:200]}{'...' if len(extract) > 200 else ''}\"",
             tags=["wikipedia"],
         ))
     elif length >= 5_000 or views >= 1_000:
         evidence.append(Evidence(
-            finding=f"Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            finding=f"Wikipedia article (~{words:,} words, {views:,} monthly views)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="strong",
@@ -2342,11 +2425,11 @@ def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
         ))
     elif length > 0:
         evidence.append(Evidence(
-            finding=f"Wikipedia stub article ({length:,} bytes)",
+            finding=f"Wikipedia stub article (~{words:,} words)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="moderate",
-            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" ({length:,} bytes). "
+            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" (~{words:,} words). "
                    f"Even stub articles require notability per Wikipedia guidelines.",
             tags=["wikipedia"],
         ))
@@ -2431,7 +2514,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             tags=["live_performance"],
         ))
 
-    # Geographic spread (complements Setlist.fm touring geography)
+    # Geographic spread
     countries = ext.songkick_venue_countries
     cities = ext.songkick_venue_cities
     if len(countries) >= 5:
@@ -2441,7 +2524,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="strong",
             detail=f"International touring: {', '.join(countries[:8])}.",
-            tags=["touring_geography"],
+            tags=["live_performance"],
         ))
     elif len(countries) >= 2:
         evidence.append(Evidence(
@@ -2450,7 +2533,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="moderate",
             detail=f"Touring in: {', '.join(countries[:5])}.",
-            tags=["touring_geography"],
+            tags=["live_performance"],
         ))
     elif len(cities) >= 3:
         evidence.append(Evidence(
@@ -2459,7 +2542,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             evidence_type="green_flag",
             strength="weak",
             detail=f"Events in: {', '.join(cities[:5])}.",
-            tags=["touring_geography"],
+            tags=["live_performance"],
         ))
 
     # Festival appearances
@@ -2613,14 +2696,18 @@ def _collect_pro_registry_evidence(ext: ExternalData) -> list[Evidence]:
         if ext.pro_found_bmi and ext.pro_found_ascap:
             pro_name = "BMI and ASCAP"
 
+        # C.3: registered as songwriter → +30 Strong
+        sw_pct = ext.pro_songwriter_share_pct
+        share_str = f", songwriter holds {sw_pct:.0f}% share" if sw_pct >= 0 else ""
         evidence.append(Evidence(
-            finding=f"Registered songwriter with {pro_name} ({total_works} works)",
+            finding=f"Registered with {pro_name}: {total_works} works{share_str}",
             source="PRO Registry",
             evidence_type="green_flag",
-            strength="moderate",
+            strength="strong",
             detail=f"Artist found as registered songwriter with {pro_name}, "
                    f"{total_works} works registered. "
-                   "Professional songwriters collecting US royalties are registered with PROs.",
+                   "Professional songwriters collecting US royalties are registered with PROs. "
+                   "This is one of the strongest authenticity indicators available.",
             tags=["pro_registered"],
         ))
 
@@ -2675,13 +2762,15 @@ def _collect_pro_registry_evidence(ext: ExternalData) -> list[Evidence]:
                 tags=["pro_registered"],
             ))
         else:
+            # C.3: not found → -5 Weak (many legit non-US/indie artists aren't registered)
             evidence.append(Evidence(
                 finding="Not found in BMI or ASCAP databases",
                 source="PRO Registry",
                 evidence_type="red_flag",
-                strength="moderate",
-                detail="No works registered with BMI or ASCAP. Any professional songwriter "
-                       "collecting royalties in the US will be registered with a PRO.",
+                strength="weak",
+                detail="No works registered with BMI or ASCAP. Many legitimate non-US "
+                       "and indie artists are not registered with US PROs, so this is "
+                       "only a weak signal.",
                 tags=["no_pro_registration"],
             ))
 
@@ -2858,8 +2947,8 @@ def _decide_verdict(
     green_flags: list[Evidence],
     presence: PlatformPresence,
     decision_path: list[str],
-) -> tuple[Verdict, str]:
-    """Walk the decision tree and return (verdict, confidence)."""
+) -> tuple[Verdict, str, str]:
+    """Walk the decision tree and return (verdict, confidence, matched_rule)."""
 
     strong_reds = [e for e in red_flags if e.strength == "strong"]
     moderate_reds = [e for e in red_flags if e.strength == "moderate"]
@@ -2876,24 +2965,24 @@ def _decide_verdict(
     # Rule 1: Known AI artist name → Likely Artificial
     if _any_red_tag("known_ai_artist"):
         decision_path.append("Name matches known AI artist blocklist → Likely Artificial")
-        return Verdict.LIKELY_ARTIFICIAL, "high"
+        return Verdict.LIKELY_ARTIFICIAL, "high", "Rule 1: Known AI Artist"
 
     # Rule 1.5: Deezer AI Content Flag → Likely Artificial
     if _any_red_tag("ai_generated_music"):
         decision_path.append("Deezer AI detection flagged content → Likely Artificial")
-        return Verdict.LIKELY_ARTIFICIAL, "high"
+        return Verdict.LIKELY_ARTIFICIAL, "high", "Rule 1.5: Deezer AI Content Flag"
 
     # Rule 2: PFC label + content farm patterns → Likely Artificial
     has_pfc_label = _any_red_tag("pfc_label")
     has_farm_pattern = _any_red_tag("content_farm") or _any_red_tag("stream_farm")
     if has_pfc_label and has_farm_pattern:
         decision_path.append("PFC distributor + content farm pattern → Likely Artificial")
-        return Verdict.LIKELY_ARTIFICIAL, "high"
+        return Verdict.LIKELY_ARTIFICIAL, "high", "Rule 2: PFC Label + Content Farm Pattern"
 
     # Rule 3: Multiple strong red flags with no green → Likely Artificial
     if len(strong_reds) >= 3 and not strong_greens and not moderate_greens:
         decision_path.append(f"{len(strong_reds)} strong red flags, no green flags → Likely Artificial")
-        return Verdict.LIKELY_ARTIFICIAL, "medium"
+        return Verdict.LIKELY_ARTIFICIAL, "medium", "Rule 3: Overwhelming Red, No Green"
 
     # Compute weighted totals for rules 4+
     weak_greens = [e for e in green_flags if e.strength == "weak"]
@@ -2908,7 +2997,7 @@ def _decide_verdict(
             f"Multiple strong legitimacy signals ({len(strong_greens)}) "
             f"with minimal concerns → Verified Artist"
         )
-        return Verdict.VERIFIED_ARTIST, "high"
+        return Verdict.VERIFIED_ARTIST, "high", "Rule 4: Strong Greens Dominate"
 
     # Rule 5: Multi-platform + genuine fans + no strong reds → Verified
     has_genuine_fans_strong = any(
@@ -2920,54 +3009,54 @@ def _decide_verdict(
             f"Present on {presence.count()} platforms with strong fan engagement, "
             f"no major red flags → Verified Artist"
         )
-        return Verdict.VERIFIED_ARTIST, "high"
+        return Verdict.VERIFIED_ARTIST, "high", "Rule 5: Multi-Platform + Genuine Fans"
 
     # Rule 6: Green strongly outweighs red
     if total_green_strength >= total_red_strength * 2 and total_green_strength >= 4:
         decision_path.append(
             f"Legitimacy evidence substantially outweighs concerns → Likely Authentic"
         )
-        return Verdict.LIKELY_AUTHENTIC, "medium"
+        return Verdict.LIKELY_AUTHENTIC, "medium", "Rule 6: Green Strongly Outweighs Red"
 
     # Rule 7: Red flags dominate
     if total_red_strength >= total_green_strength * 2 and total_red_strength >= 4:
         decision_path.append(
             f"Suspicious indicators substantially outweigh legitimacy evidence → Suspicious"
         )
-        return Verdict.SUSPICIOUS, "medium"
+        return Verdict.SUSPICIOUS, "medium", "Rule 7: Red Strongly Outweighs Green"
 
     # Rule 8: PFC label alone → Suspicious (medium confidence —
     # being on a confirmed PFC label is not a weak signal)
     if has_pfc_label:
         decision_path.append("PFC distributor match (without other strong signals) → Suspicious")
-        return Verdict.SUSPICIOUS, "medium"
+        return Verdict.SUSPICIOUS, "medium", "Rule 8: PFC Label Alone"
 
     # Rule 9: More green than red → Likely Authentic
     if total_green_strength > total_red_strength:
         decision_path.append(
             "Slightly more legitimacy evidence than concerns → Likely Authentic"
         )
-        return Verdict.LIKELY_AUTHENTIC, "low"
+        return Verdict.LIKELY_AUTHENTIC, "low", "Rule 9: Green > Red"
 
     # Rule 10: More red than green → Suspicious
     if total_red_strength > total_green_strength:
         decision_path.append(
             "Slightly more concerns than legitimacy evidence → Suspicious"
         )
-        return Verdict.SUSPICIOUS, "low"
+        return Verdict.SUSPICIOUS, "low", "Rule 10: Red > Green"
 
     # Default: Distinguish "not enough data" from "conflicting data"
     total_flags = len(red_flags) + len(green_flags)
     if total_flags < 5:
         decision_path.append(f"Only {total_flags} flags collected — insufficient data to judge")
-        return Verdict.INSUFFICIENT_DATA, "low"
+        return Verdict.INSUFFICIENT_DATA, "low", "Default: Insufficient Data"
     elif total_green_strength >= 4 and total_red_strength >= 4:
         decision_path.append(f"Green ({total_green_strength}) and Red ({total_red_strength}) "
                              "both substantial — conflicting signals")
-        return Verdict.CONFLICTING_SIGNALS, "low"
+        return Verdict.CONFLICTING_SIGNALS, "low", "Default: Conflicting Signals"
     else:
         decision_path.append("Mixed or insufficient evidence → Inconclusive")
-        return Verdict.INCONCLUSIVE, "low"
+        return Verdict.INCONCLUSIVE, "low", "Default: Inconclusive"
 
 
 # ---------------------------------------------------------------------------
@@ -3299,7 +3388,7 @@ def evaluate_artist(
     all_evidence.extend(_collect_social_media_evidence(ext))
     all_evidence.extend(_collect_identity_evidence(ext))
     all_evidence.extend(_collect_lastfm_evidence(ext))
-    all_evidence.extend(_collect_touring_geography_evidence(ext))
+    # Touring geography removed per alignment doc — live_show evidence is sufficient
     all_evidence.extend(_collect_wikipedia_evidence(ext))
     all_evidence.extend(_collect_songkick_evidence(ext))
 
@@ -3329,13 +3418,55 @@ def evaluate_artist(
         all_evidence.extend(_collect_entity_db_evidence(artist, entity_db))
         all_evidence.extend(_collect_cowriter_network_evidence(ext, entity_db, artist.name))
 
+    # Evidence deduplication: if two items share the same (source, finding) key,
+    # keep only the stronger one. Prevents double-counting the same signal.
+    seen: dict[tuple[str, str], Evidence] = {}
+    strength_order = {"strong": 3, "moderate": 2, "weak": 1}
+    for ev_item in all_evidence:
+        key = (ev_item.source, ev_item.finding)
+        existing = seen.get(key)
+        if existing is None:
+            seen[key] = ev_item
+        elif strength_order.get(ev_item.strength, 0) > strength_order.get(existing.strength, 0):
+            seen[key] = ev_item
+    all_evidence = list(seen.values())
+
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]
     green_flags = [e for e in all_evidence if e.evidence_type == "green_flag"]
     neutral_notes = [e for e in all_evidence if e.evidence_type == "neutral"]
 
     # Run decision tree
-    verdict, confidence = _decide_verdict(red_flags, green_flags, presence, decision_path)
+    verdict, confidence, matched_rule = _decide_verdict(red_flags, green_flags, presence, decision_path)
+
+    # Fix 4: Sanity check — if Deezer shows real fans but all category scores
+    # are zero due to API failures, override to Inconclusive instead of Suspicious.
+    # This prevents false accusations when data collection fails.
+    if verdict in (Verdict.SUSPICIOUS, Verdict.LIKELY_ARTIFICIAL):
+        cat_scores = compute_category_scores(
+            ArtistEvaluation(
+                artist_id=artist.artist_id, artist_name=artist.name,
+                verdict=verdict, confidence=confidence,
+                platform_presence=presence,
+                red_flags=red_flags, green_flags=green_flags,
+                neutral_notes=neutral_notes, decision_path=[],
+                external_data=ext,
+            )
+        )
+        blocklist_clean = cat_scores.get("Blocklist Status", 0) == 100
+        all_zeros = all(
+            cat_scores.get(k, 0) == 0
+            for k in ["Platform Presence", "Fan Engagement", "IRL Presence", "Industry Signals"]
+        )
+        deezer_fans = artist.deezer_fans or 0
+        if deezer_fans >= 1000 and all_zeros and blocklist_clean:
+            num_errors = len(ext.api_errors)
+            verdict = Verdict.INCONCLUSIVE
+            confidence = "low"
+            decision_path.append(
+                f"Sanity check override: {deezer_fans:,} Deezer fans but {num_errors} "
+                f"API errors caused all-zero scores → Inconclusive (data collection failure)"
+            )
 
     return ArtistEvaluation(
         artist_id=artist.artist_id,
@@ -3350,6 +3481,7 @@ def evaluate_artist(
         labels=artist.labels,
         contributors=artist.contributors,
         external_data=ext,
+        matched_rule=matched_rule,
     )
 
 
@@ -3380,7 +3512,7 @@ def incorporate_deep_evidence(
 
     # Re-run decision tree with expanded evidence
     decision_path: list[str] = ["Re-evaluated with Deep tier (Claude) evidence"]
-    verdict, confidence = _decide_verdict(
+    verdict, confidence, matched_rule = _decide_verdict(
         red_flags, green_flags, evaluation.platform_presence, decision_path,
     )
 
@@ -3397,4 +3529,5 @@ def incorporate_deep_evidence(
         labels=evaluation.labels,
         contributors=evaluation.contributors,
         external_data=evaluation.external_data,
+        matched_rule=matched_rule,
     )

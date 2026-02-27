@@ -28,6 +28,7 @@ def to_json(report: PlaylistReport) -> str:
 
 
 def _report_to_dict(report: PlaylistReport) -> dict:
+    not_scanned = len(report.skipped_artists) if report.skipped_artists else 0
     return {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "playlist": {
@@ -37,14 +38,20 @@ def _report_to_dict(report: PlaylistReport) -> dict:
             "total_tracks": report.total_tracks,
             "total_unique_artists": report.total_unique_artists,
             "is_spotify_owned": report.is_spotify_owned,
-            "health_score": report.health_score,
         },
-        "verdict_summary": {
-            "verified_artists": report.verified_artists,
-            "likely_authentic": report.likely_authentic,
-            "inconclusive": report.inconclusive,
-            "suspicious": report.suspicious,
-            "likely_artificial": report.likely_artificial,
+        "summary": {
+            "health_score": report.health_score,
+            "analyzed_count": len(report.artists),
+            "timed_out_count": not_scanned,
+            "total_playlist_artists": report.total_unique_artists,
+            "verdict_breakdown": {
+                "Verified Artist": report.verified_artists,
+                "Likely Authentic": report.likely_authentic,
+                "Inconclusive": report.inconclusive,
+                "Suspicious": report.suspicious,
+                "Likely Artificial": report.likely_artificial,
+                "Not Scanned": not_scanned,
+            },
         },
         "artists": [_artist_to_dict(a) for a in report.artists],
     }
@@ -67,9 +74,14 @@ def _artist_to_dict(a: ArtistReport) -> dict:
     ev = a.evaluation
     if ev:
         d["confidence"] = ev.confidence
+        d["matched_rule"] = getattr(ev, "matched_rule", "")
         d["platform_presence"] = ev.platform_presence.names()
+        d["radar"] = {
+            "labels": ["Platform Presence", "Fan Engagement", "Creative History",
+                       "IRL Presence", "Industry Signals", "Blocklist Status"],
+            "scores": list(ev.category_scores.values()),
+        }
         d["category_scores"] = ev.category_scores
-        d["sources_reached"] = ev.sources_reached
         d["decision_path"] = ev.decision_path
         d["red_flags"] = [_evidence_to_dict(e) for e in ev.red_flags]
         d["green_flags"] = [_evidence_to_dict(e) for e in ev.green_flags]
@@ -79,9 +91,14 @@ def _artist_to_dict(a: ArtistReport) -> dict:
         if ev.contributors:
             d["contributors"] = ev.contributors
 
-        # Full external data snapshot
+        # Per-artist API status (Fix 6) — found / not_found / error / timeout / skipped
         ext = ev.external_data
         if ext:
+            d["api_status"] = _build_api_status(ext)
+            d["profile_urls"] = _build_profile_urls(ext)
+            d["bio_data"] = _build_bio_data(ext)
+            d["musicbrainz_relationship_count"] = getattr(ext, "musicbrainz_relationship_count", 0)
+            d["deezer_track_ranks"] = getattr(ext, "deezer_track_ranks", [])
             d["external_data"] = _external_data_to_dict(ext)
 
     # Legacy score data (supplementary)
@@ -93,6 +110,112 @@ def _artist_to_dict(a: ArtistReport) -> dict:
         d["quick_signals"] = a.quick_signals
 
     return d
+
+
+def _build_api_status(ext: ExternalData) -> dict:
+    """Build per-platform API status: found / not_found / error / skipped."""
+    platforms = {
+        "deezer": ext.genius_found is not None,  # always checked
+        "musicbrainz": True,
+        "genius": True,
+        "lastfm": True,
+        "discogs": True,
+        "setlistfm": True,
+        "wikipedia": True,
+    }
+    status: dict[str, str] = {}
+    found_map = {
+        "deezer": True,  # always resolved via Deezer
+        "musicbrainz": ext.musicbrainz_found,
+        "genius": ext.genius_found,
+        "lastfm": ext.lastfm_found,
+        "discogs": ext.discogs_found,
+        "setlistfm": ext.setlistfm_found,
+        "wikipedia": ext.wikipedia_found,
+    }
+    errors_lower = {k.lower(): v for k, v in ext.api_errors.items()}
+    for platform in found_map:
+        if found_map[platform]:
+            status[platform] = "found"
+        elif platform in errors_lower or platform.replace(".", "") in {
+            k.replace(".", "").replace(" ", "").lower() for k in ext.api_errors
+        }:
+            err_msg = errors_lower.get(platform, "")
+            if not err_msg:
+                # Try fuzzy key match (e.g. "Last.fm" vs "lastfm")
+                for k, v in ext.api_errors.items():
+                    if k.lower().replace(".", "").replace(" ", "") == platform.replace(".", ""):
+                        err_msg = v
+                        break
+            if "timeout" in err_msg.lower() or "timed out" in err_msg.lower():
+                status[platform] = "timeout"
+            else:
+                status[platform] = "error"
+        else:
+            status[platform] = "not_found"
+    return status
+
+
+def _build_profile_urls(ext: ExternalData) -> dict:
+    """Build profile URLs per platform from available data."""
+    urls: dict = {}
+    if ext.wikipedia_url:
+        urls["wikipedia"] = ext.wikipedia_url
+    if ext.musicbrainz_bandcamp_url:
+        urls["bandcamp"] = ext.musicbrainz_bandcamp_url
+    if ext.musicbrainz_official_website:
+        urls["official_website"] = ext.musicbrainz_official_website
+    if ext.musicbrainz_youtube_url:
+        urls["youtube"] = ext.musicbrainz_youtube_url
+    # Social URLs from MusicBrainz
+    social: dict = {}
+    for rel_type, url in ext.musicbrainz_urls.items():
+        url_lower = url.lower()
+        if "facebook" in url_lower:
+            social["facebook"] = url
+        elif "instagram" in url_lower:
+            social["instagram"] = url
+        elif "twitter" in url_lower or "x.com" in url_lower:
+            social["twitter"] = url
+    # Add from Genius
+    if ext.genius_facebook_name:
+        social.setdefault("facebook", f"https://facebook.com/{ext.genius_facebook_name}")
+    if ext.genius_instagram_name:
+        social.setdefault("instagram", f"https://instagram.com/{ext.genius_instagram_name}")
+    if ext.genius_twitter_name:
+        social.setdefault("twitter", f"https://twitter.com/{ext.genius_twitter_name}")
+    if social:
+        urls["social"] = social
+    return urls
+
+
+def _build_bio_data(ext: ExternalData) -> dict:
+    """Build bio analysis data for frontend display."""
+    sources: list[str] = []
+    total_chars = 0
+    if ext.wikipedia_found and ext.wikipedia_length > 0:
+        sources.append("wikipedia")
+        # Wikipedia length is in bytes; approximate chars
+        total_chars += ext.wikipedia_length
+    if ext.discogs_profile and len(ext.discogs_profile) > 0:
+        sources.append("discogs")
+        total_chars += len(ext.discogs_profile)
+    if ext.genius_found and ext.genius_description:
+        sources.append("genius")
+        total_chars += len(ext.genius_description)
+    if ext.lastfm_bio_exists:
+        sources.append("lastfm")
+
+    # Check for generic/boilerplate bio
+    is_generic = total_chars < 200 and len(sources) <= 1
+
+    return {
+        "sources": sources,
+        "total_chars": total_chars,
+        "has_verifiable_details": total_chars >= 200 and len(sources) >= 2,
+        "real_name": ext.discogs_realname or "",
+        "is_generic": is_generic,
+    }
 
 
 def _external_data_to_dict(ext: ExternalData) -> dict:
@@ -1726,11 +1849,8 @@ _TAG_TO_AXIS: dict[str, str] = {
     "cookie_cutter": "Creative History",
     "high_release_rate": "Creative History",
     "same_day_release": "Creative History",
-    "mood_word_titles": "Creative History",
     # IRL Presence — physical-world evidence of the artist
     "live_performance": "IRL Presence",
-    "touring_geography": "IRL Presence",
-    "named_tour": "IRL Presence",
     "concert_history": "IRL Presence",
     "physical_release": "IRL Presence",
     # Industry Signals — professional music industry registration and bios

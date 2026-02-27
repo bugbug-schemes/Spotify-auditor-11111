@@ -718,6 +718,49 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
   overflow-wrap: break-word;
 }
 
+/* --- Incomplete analysis indicator (Fix 1) --- */
+.artist-card-incomplete {
+  color: #fbbf24;
+  font-size: 14px;
+  cursor: help;
+}
+
+/* Platform check warning state (⚠ amber) */
+.platform-check-item--warning {
+  border-style: dashed;
+}
+
+/* Matched decision tree rule (spec C.1) */
+.matched-rule {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  opacity: 0.85;
+  margin-bottom: 12px;
+  padding: 6px 10px;
+  background: rgba(139,148,158,0.06);
+  border-radius: 4px;
+}
+.matched-rule-icon {
+  font-size: 13px;
+  flex-shrink: 0;
+}
+.matched-rule-text {
+  font-style: italic;
+}
+
+/* Incomplete analysis warning banner */
+.incomplete-warning {
+  font-size: 12px;
+  color: #fbbf24;
+  background: rgba(251,191,36,0.08);
+  border: 1px solid rgba(251,191,36,0.2);
+  border-radius: 4px;
+  padding: 6px 10px;
+  margin-bottom: 12px;
+}
+
 /* ==========================================================================
    Responsive
    ========================================================================== */
@@ -780,5 +823,97 @@ input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--green); 
     height: 28px;
     width: 100%;
     min-width: unset;
+  }
+}
+
+/* ==========================================================================
+   Print Stylesheet (spec C.9)
+   ========================================================================== */
+
+@media print {
+  /* White background, black text */
+  :root {
+    --bg: #fff;
+    --bg-card: #fff;
+    --bg-hover: #fff;
+    --bg-input: #fff;
+    --border: #ccc;
+    --text: #000;
+    --text-dim: #555;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11px;
+  }
+
+  /* Hide interactive elements */
+  .sidebar,
+  .sort-filter-controls,
+  .artist-card-chevron,
+  button,
+  .btn,
+  .methodology-link {
+    display: none !important;
+  }
+
+  /* Full width without sidebar */
+  .main {
+    margin-left: 0;
+    padding: 0;
+    max-width: 100%;
+  }
+
+  /* Expand all artist cards */
+  .artist-card-header {
+    cursor: default;
+  }
+  .artist-card-body {
+    display: block !important;
+  }
+
+  /* High-contrast cards */
+  .artist-card {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    margin-bottom: 12px;
+  }
+
+  /* Score badge: high contrast */
+  .artist-score-badge {
+    border-width: 2px !important;
+    border-style: solid !important;
+    opacity: 1 !important;
+  }
+
+  /* Verdict bar: high contrast segments */
+  .verdict-bar-segment {
+    color: #000 !important;
+    border: 1px solid #999;
+  }
+
+  /* Radar chart: grayscale */
+  .radar-chart-svg {
+    filter: grayscale(100%);
+  }
+
+  /* Section bars: grayscale fill */
+  .section-bar-fill {
+    filter: grayscale(60%);
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  /* Platform checkmarks: ensure readable */
+  .platform-check-item {
+    color: #000 !important;
+    border-color: #999 !important;
+  }
+
+  /* Print footer with URL */
+  @page {
+    margin: 1.5cm;
   }
 }

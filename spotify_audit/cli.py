@@ -520,8 +520,9 @@ def _resolve_artist_by_name(
 
     For combined names like "Kendrick Lamar, SZA", searches the primary artist.
     """
-    # For combined artist names, search the first (primary) artist
-    search_name = name.split(",")[0].strip() if "," in name else name
+    # For combined artist names, search the first (primary) artist (Fix 3)
+    from spotify_audit.evidence import extract_primary_artist
+    search_name = extract_primary_artist(name)
 
     # Strategy 1: Deezer search -> real artist data (fast, no auth needed)
     try:
@@ -616,7 +617,8 @@ def _lookup_external_data(
     """
     ext = ExternalData()
     ext.artist_name = artist_name
-    search_name = artist_name.split(",")[0].strip() if "," in artist_name else artist_name
+    from spotify_audit.evidence import extract_primary_artist
+    search_name = extract_primary_artist(artist_name)
 
     # ------------------------------------------------------------------
     # Phase 1: MusicBrainz first (provides platform IDs for other APIs)
@@ -642,6 +644,7 @@ def _lookup_external_data(
             mb = mb_client.enrich(mb)
             ext.musicbrainz_labels = mb.labels
             ext.musicbrainz_urls = mb.urls
+            ext.musicbrainz_relationship_count = len(mb.urls)
             # Priority 5: Enhanced URL categorization
             ext.musicbrainz_youtube_url = mb.youtube_url
             ext.musicbrainz_bandcamp_url = mb.bandcamp_url
@@ -1204,6 +1207,13 @@ def _run_audit(
                         "releases": count,
                     }
                 ext.release_year_summary = year_summary
+
+            # Store per-track rank data for frontend display
+            if artist.track_ranks and artist.track_titles:
+                ext.deezer_track_ranks = [
+                    {"title": t, "rank": r}
+                    for t, r in zip(artist.track_titles[:20], artist.track_ranks[:20])
+                ]
 
             # Run evidence evaluation
             ev = evaluate_artist(artist, external=ext, entity_db=entity_db)

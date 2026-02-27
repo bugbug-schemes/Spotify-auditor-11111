@@ -72,7 +72,7 @@ This document defines the single-pass analysis pipeline for the Spotify Playlist
 ┌─────────────────────────────────────────────────────────────┐
 │                 PHASE 2: EVALUATE                           │
 │                                                             │
-│  19 Evidence Collectors → typed flags:                      │
+│  20 Evidence Collectors → typed flags:                      │
 │                                                             │
 │  Each produces Evidence objects:                            │
 │    • type: red_flag | green_flag | neutral                  │
@@ -94,12 +94,13 @@ This document defines the single-pass analysis pipeline for the Spotify Playlist
 │  │   5. Release Cadence         16. Social Media         │  │
 │  │   6. Label (blocklists)      17. Identity             │  │
 │  │   7. Name Pattern            18. Last.fm              │  │
-│  │   8. Collaboration           19. Touring Geography    │  │
-│  │   9. Credit Network                                   │  │
-│  │  10. Genre                   From Claude (optional):  │  │
-│  │  11. Track Rank              20. Bio Analysis         │  │
-│  │                              21. Image Analysis       │  │
-│  │                              22. Synthesis            │  │
+│  │   8. Collaboration           19. Wikipedia            │  │
+│  │   9. Credit Network          20. YouTube              │  │
+│  │  10. Genre                                            │  │
+│  │  11. Track Rank              From Claude (optional):  │  │
+│  │                              21. Bio Analysis         │  │
+│  │                              22. Image Analysis       │  │
+│  │                              23. Synthesis            │  │
 │  └────────────────────────────────────────────────────────┘  │
 │                                                             │
 │                      │                                      │
@@ -318,10 +319,10 @@ Each verdict maps to a score range on the 0–100 legitimacy scale:
 Verdict              Range     Meaning
 ─────────────────────────────────────────────
 Verified Artist      82-100    Confirmed legitimate
-Likely Authentic     58-80     Probably legitimate
-Inconclusive         38-56     Can't determine
-Suspicious           18-36     Probably fraudulent
-Likely Artificial     0-16     Confirmed fraudulent
+Likely Authentic     58-81     Probably legitimate
+Inconclusive         38-57     Can't determine
+Suspicious           18-37     Probably fraudulent
+Likely Artificial     0-17     Confirmed fraudulent
 ```
 
 Position within the range is determined by blending confidence and flag balance:
@@ -420,14 +421,13 @@ DEFAULT: Category 1 — PFC Ghost Artist
 |---|-----------|--------|-------------|-----------|
 | 12 | Genius | Genius API | Song count, bio, verified status, followers | not_found, genuine_fans |
 | 13 | Discogs | Discogs API | Physical releases, labels vs blocklist, bio | physical_release, pfc_label, not_found |
-| 14 | Live Shows | Setlist.fm | Show count, venue details | live_performance, not_found |
+| 14 | Live Shows | Setlist.fm + Songkick | Show count, venue details | live_performance, not_found |
 | 15 | MusicBrainz | MusicBrainz API | Metadata richness, labels vs blocklist, ISNI/IPI | industry_registered, pfc_label, not_found |
 | 16 | Social Media | Genius + Discogs + MB | Social link count, Wikipedia, verified | wikipedia, verified_identity |
 | 17 | Identity | Discogs + MB | Real name, aliases, group members, ISNI, IPI | verified_identity, industry_registered |
 | 18 | Last.fm | Last.fm API | Listeners, play/listener ratio, bio | genuine_fans, not_found |
-| 19 | Touring | Setlist.fm + Songkick | Countries, cities, tour names, on-tour status | live_performance, touring_geography |
-| 20 | Wikipedia | Wikipedia API | Article length, monthly views, categories | wikipedia |
-| 21 | YouTube | YouTube Data API | Subscribers, video count, music videos | youtube_presence |
+| 19 | Wikipedia | Wikipedia API | Article length, monthly views, categories | wikipedia |
+| 20 | YouTube | YouTube Data API | Subscribers, video count, music videos | youtube_presence |
 
 ### From Claude AI (optional)
 

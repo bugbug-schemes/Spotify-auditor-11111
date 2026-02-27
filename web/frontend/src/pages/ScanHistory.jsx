@@ -200,8 +200,10 @@ function ScanDetail({ detail }) {
   const [filterVerdict, setFilterVerdict] = useState('All');
 
   const results = detail.results || [];
-  const skippedCount = detail.skipped_count || detail.skipped_artists?.length || 0;
-  const analyzedCount = results.length;
+  const summary = detail.summary || {};
+  const skippedCount = summary.timed_out_count || detail.skipped_count || detail.skipped_artists?.length || 0;
+  const analyzedCount = summary.analyzed_count || results.length;
+  const totalArtists = summary.total_playlist_artists || (analyzedCount + skippedCount);
 
   // Sort and filter results
   const displayResults = useMemo(() => {
@@ -239,16 +241,16 @@ function ScanDetail({ detail }) {
         <div className="scan-summary-metrics">
           <div className="scan-summary-stat">
             <span className="scan-summary-value">{analyzedCount}</span>
-            <span className="scan-summary-label">Analyzed</span>
+            <span className="scan-summary-label">Analyzed{totalArtists > analyzedCount ? ` of ${totalArtists}` : ''}</span>
           </div>
           {skippedCount > 0 && (
             <div className="scan-summary-stat scan-summary-stat--warning">
-              <span className="scan-summary-value">{skippedCount} timed out \u26A0\uFE0F</span>
+              <span className="scan-summary-value">{skippedCount} timed out {'\u26A0\uFE0F'}</span>
               <span className="scan-summary-label">Not scanned</span>
             </div>
           )}
           <div className="scan-summary-stat">
-            <span className="scan-summary-value">{detail.health_score ?? '-'}</span>
+            <span className="scan-summary-value">{summary.health_score ?? detail.health_score ?? '-'}</span>
             <span className="scan-summary-label">Health Score</span>
           </div>
         </div>
