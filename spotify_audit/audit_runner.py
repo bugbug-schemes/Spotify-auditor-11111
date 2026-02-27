@@ -539,7 +539,7 @@ def _run_audit_core(
                     resolved_i += 1
                     name = _key_names.get(key, key)
                     logger.warning("Failed to resolve '%s': %s", name, exc)
-                    skipped_artists.append({"name": name, "reason": f"Resolve error: {exc}"})
+                    skipped_artists.append({"name": name, "reason": f"Resolve error: {exc}", "artist_key": key})
                     progress("resolve", resolved_i, total_artists, f"Skipped {name} (error)")
         except TimeoutError:
             logger.warning("Resolve phase timed out after %ds", RESOLVE_TIMEOUT)
@@ -548,7 +548,7 @@ def _run_audit_core(
         for fut, key in futures.items():
             if key not in resolved_keys:
                 name = _key_names.get(key, key)
-                skipped_artists.append({"name": name, "reason": "Timed out during artist resolution"})
+                skipped_artists.append({"name": name, "reason": "Timed out during artist resolution", "artist_key": key})
                 fut.cancel()
                 resolved_i += 1
                 progress("resolve", resolved_i, total_artists, f"Skipped {name} (timeout)")
@@ -743,7 +743,7 @@ def _run_audit_core(
                     eval_completed += 1
                     name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
                     logger.warning("Failed to evaluate '%s': %s", name, exc)
-                    skipped_artists.append({"name": name, "reason": f"Evaluation error: {exc}"})
+                    skipped_artists.append({"name": name, "reason": f"Evaluation error: {exc}", "artist_key": key})
                     progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (error)")
         except TimeoutError:
             logger.warning("Evaluate phase timed out after %ds", EVALUATE_TIMEOUT)
@@ -752,7 +752,7 @@ def _run_audit_core(
         for fut, key in futures.items():
             if key not in evaluated_keys:
                 name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
-                skipped_artists.append({"name": name, "reason": "Timed out during evaluation"})
+                skipped_artists.append({"name": name, "reason": "Timed out during evaluation", "artist_key": key})
                 fut.cancel()
                 eval_completed += 1
                 progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (timeout)")
@@ -768,7 +768,7 @@ def _run_audit_core(
                 except Exception as exc:
                     name = artist.name
                     logger.warning("Fallback evaluation failed for '%s': %s", name, exc)
-                    skipped_artists.append({"name": name, "reason": f"Fallback evaluation error: {exc}"})
+                    skipped_artists.append({"name": name, "reason": f"Fallback evaluation error: {exc}", "artist_key": key})
             else:
                 qr = quick_results[key]
                 try:
@@ -777,7 +777,7 @@ def _run_audit_core(
                     evaluations[key] = ev
                 except Exception as exc:
                     logger.warning("Minimal evaluation failed for '%s': %s", qr.artist_name, exc)
-                    skipped_artists.append({"name": qr.artist_name, "reason": f"Minimal evaluation error: {exc}"})
+                    skipped_artists.append({"name": qr.artist_name, "reason": f"Minimal evaluation error: {exc}", "artist_key": key})
 
     # 5. Deep analysis (optional — Claude AI)
     deep_count = 0
@@ -942,3 +942,207 @@ def _run_audit_core(
 
     progress("done", 1, 1, "Scan complete!")
     return playlist_report, blocklist_report
+
+
+# ---------------------------------------------------------------------------
+# Retry skipped artists — targeted re-scan with extended timeouts
+# ---------------------------------------------------------------------------
+
+# Retry uses longer timeouts since these artists already failed once
+RETRY_RESOLVE_TIMEOUT = 180  # 3 min (vs 2 min normal)
+RETRY_EVALUATE_TIMEOUT = 300  # 5 min (vs 3 min normal)
+
+
+def retry_skipped_artists(
+    skipped: list[dict],
+    config: AuditConfig,
+    on_progress: ProgressCallback = _noop_progress,
+) -> tuple[list[ArtistReport], list[dict]]:
+    """Re-run the analysis pipeline for previously skipped artists.
+
+    Takes the skipped_artists list from a previous scan (each entry has
+    'name', 'reason', and 'artist_key') and processes them through the
+    full resolve + evaluate pipeline with extended timeouts.
+
+    Returns (artist_reports, still_skipped) — successfully analyzed artists
+    and any that still failed on retry.
+    """
+    progress = on_progress
+
+    if not skipped:
+        return []
+
+    # Build artist_keys from the skipped entries
+    artist_keys: list[tuple[str, bool]] = []
+    _key_names: dict[str, str] = {}
+    for s in skipped:
+        key = s.get("artist_key", s["name"])
+        name = s["name"]
+        # If the key looks like a Spotify ID (alphanumeric, ~22 chars), treat as ID
+        is_id = key != name and len(key) >= 10
+        artist_keys.append((key, is_id))
+        _key_names[key] = name
+
+    total_artists = len(artist_keys)
+    progress("resolve", 0, total_artists, f"Retrying {total_artists} skipped artists...")
+
+    # Set up API clients
+    client = SpotifyClient()
+    deezer_client = DeezerClient(delay=0.5)
+    mb_client = MusicBrainzClient(delay=1.1)
+    genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
+    discogs_client = DiscogsClient(token=config.discogs_token, delay=1.0)
+    setlistfm_client = SetlistFmClient(api_key=config.setlistfm_api_key, delay=0.5)
+    lastfm_client = LastfmClient(api_key=config.lastfm_api_key, delay=0.25)
+    wikipedia_client = WikipediaClient(delay=0.2)
+    songkick_client = SongkickClient(api_key=config.songkick_api_key, delay=0.5)
+    youtube_client = YouTubeClient(api_key=config.youtube_api_key, delay=0.3)
+    deezer_ai_checker = DeezerAIChecker(delay=1.5)
+    pro_client = PRORegistryClient(delay=2.5)
+
+    still_skipped: list[dict] = []
+
+    # 1. Resolve artists
+    artist_infos: dict[str, ArtistInfo] = {}
+    quick_results: dict[str, QuickScanResult] = {}
+    resolved_i = 0
+    resolved_keys: set[str] = set()
+
+    def _resolve_single(key: str, is_id: bool):
+        if is_id:
+            artist = client.get_artist_info(key)
+        else:
+            artist = _resolve_artist_by_name(key, client, deezer_client, mb_client)
+        return (key, artist)
+
+    with ThreadPoolExecutor(max_workers=2, thread_name_prefix="retry-resolve") as pool:
+        futures = {
+            pool.submit(_resolve_single, key, is_id): key
+            for key, is_id in artist_keys
+        }
+        try:
+            for fut in as_completed(futures, timeout=RETRY_RESOLVE_TIMEOUT):
+                key = futures[fut]
+                try:
+                    key, artist = fut.result()
+                    resolved_keys.add(key)
+                    resolved_i += 1
+                    artist_infos[key] = artist
+                    qr = quick_scan(artist, config.quick_weights)
+                    quick_results[key] = qr
+                    progress("resolve", resolved_i, total_artists, f"Resolved {artist.name}")
+                except Exception as exc:
+                    resolved_keys.add(key)
+                    resolved_i += 1
+                    name = _key_names.get(key, key)
+                    still_skipped.append({"name": name, "reason": f"Retry resolve error: {exc}", "artist_key": key})
+                    progress("resolve", resolved_i, total_artists, f"Skipped {name}")
+        except TimeoutError:
+            pass
+
+        for fut, key in futures.items():
+            if key not in resolved_keys:
+                name = _key_names.get(key, key)
+                still_skipped.append({"name": name, "reason": "Timed out during retry resolution", "artist_key": key})
+                fut.cancel()
+
+    # 2. Evaluate resolved artists
+    evaluations: dict[str, ArtistEvaluation] = {}
+    standard_results: dict[str, StandardScanResult] = {}
+    artists_to_lookup = [
+        (key, artist_infos[key]) for key in quick_results if key in artist_infos
+    ]
+
+    progress("evaluate", 0, len(artists_to_lookup), "Running external lookups...")
+
+    def _lookup_and_evaluate_retry(key: str, artist: ArtistInfo):
+        ext = _lookup_external_data(
+            artist_name=artist.name,
+            genius=genius_client,
+            discogs=discogs_client,
+            setlistfm=setlistfm_client,
+            mb_client=mb_client,
+            lastfm=lastfm_client,
+            wikipedia=wikipedia_client,
+            songkick=songkick_client,
+        )
+        # YouTube enrichment
+        if youtube_client.enabled:
+            try:
+                yt_url = ext.musicbrainz_youtube_url or None
+                yt_result = youtube_client.search_artist(artist.name, yt_url)
+                if yt_result:
+                    ext.youtube_checked = True
+                    ext.youtube_channel_found = yt_result.channel_found
+                    ext.youtube_subscriber_count = yt_result.subscriber_count
+                    ext.youtube_video_count = yt_result.video_count
+            except Exception:
+                pass
+        # PRO registry
+        try:
+            pro_result = pro_client.search_writer(artist.name)
+            ext.pro_checked = True
+            ext.pro_found_bmi = pro_result.found_bmi
+            ext.pro_found_ascap = pro_result.found_ascap
+            ext.pro_works_count = pro_result.bmi_works_count + pro_result.ascap_works_count
+            ext.pro_publishers = pro_result.publishers
+            ext.pro_songwriter_registered = pro_result.songwriter_registered
+            ext.pro_pfc_publisher_match = pro_result.pfc_publisher_match
+            ext.pro_zero_songwriter_share = pro_result.zero_songwriter_share
+        except Exception:
+            pass
+        ev = evaluate_artist(artist, external=ext, entity_db=None)
+        qr = quick_results[key]
+        sr = standard_scan_from_external(
+            quick_result=qr, ext=ext,
+            deezer_fans=artist.deezer_fans if hasattr(artist, 'deezer_fans') else 0,
+            weights=config.standard_weights,
+        )
+        return (key, ev, sr)
+
+    eval_completed = 0
+    evaluated_keys: set[str] = set()
+    with ThreadPoolExecutor(max_workers=3, thread_name_prefix="retry-eval") as pool:
+        futures = {
+            pool.submit(_lookup_and_evaluate_retry, key, artist): key
+            for key, artist in artists_to_lookup
+        }
+        try:
+            for fut in as_completed(futures, timeout=RETRY_EVALUATE_TIMEOUT):
+                key = futures[fut]
+                try:
+                    key, ev, sr = fut.result()
+                    evaluations[key] = ev
+                    standard_results[key] = sr
+                    evaluated_keys.add(key)
+                    eval_completed += 1
+                    progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name}")
+                except Exception as exc:
+                    evaluated_keys.add(key)
+                    eval_completed += 1
+                    name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+                    still_skipped.append({"name": name, "reason": f"Retry evaluation error: {exc}", "artist_key": key})
+        except TimeoutError:
+            pass
+
+        for fut, key in futures.items():
+            if key not in evaluated_keys:
+                name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+                still_skipped.append({"name": name, "reason": "Timed out during retry evaluation", "artist_key": key})
+                fut.cancel()
+
+    # 3. Build reports
+    artist_reports: list[ArtistReport] = []
+    for key, qr in quick_results.items():
+        if key in evaluations:
+            report = finalize_artist_report(
+                artist_id=key,
+                artist_name=qr.artist_name,
+                evaluation=evaluations.get(key),
+                quick_result=qr,
+                standard_result=standard_results.get(key),
+            )
+            artist_reports.append(report)
+
+    progress("done", 1, 1, f"Retry complete — {len(artist_reports)} analyzed, {len(still_skipped)} still skipped")
+    return artist_reports, still_skipped

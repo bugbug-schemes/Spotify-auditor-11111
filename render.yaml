@@ -22,3 +22,7 @@ services:
         sync: false
       - key: LASTFM_API_KEY
         sync: false
+      - key: SONGKICK_API_KEY
+        sync: false
+      - key: YOUTUBE_API_KEY
+        sync: false
