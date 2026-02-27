@@ -583,6 +583,23 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     if ext.genius_found and ext.genius_song_count >= 1:
         creative_pts += 5
 
+    # Top track concentration — spec Part 5.3
+    for e in ev.red_flags:
+        if "playlist_stuffing" in e.tags:
+            if e.strength == "strong":
+                creative_pts -= 30  # >= 90%
+            elif e.strength == "moderate":
+                creative_pts -= 15  # 80-89%
+            else:
+                creative_pts -= 5  # 70-79%
+            break
+
+    # Same-day releases — spec Part 5.3
+    for e in ev.red_flags:
+        if "same_day_release" in e.tags:
+            creative_pts -= 15
+            break
+
     creative_score = _clamp(creative_pts)
 
     # --- 5.4 IRL Presence (0-100) ---
@@ -666,22 +683,8 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     if not ext.musicbrainz_isnis and not ext.musicbrainz_ipis and not ext.pro_songwriter_registered:
         industry_pts -= 5  # weak negative for missing all identifiers
 
-    # Discogs bio with career keywords (kept from previous version)
-    if len(ext.discogs_profile) >= 200:
-        industry_pts += 10
-    elif len(ext.discogs_profile) >= 50:
-        industry_pts += 5
-
-    # Discogs data quality
-    if ext.discogs_data_quality == "Correct":
-        industry_pts += 5
-    elif ext.discogs_data_quality:
-        industry_pts += 3
-
-    # PFC label penalty
-    for e in ev.red_flags:
-        if "pfc_label" in e.tags:
-            industry_pts -= 40
+    # Discogs bio and data quality scoring removed — not in spec Part 5.5
+    # PFC label penalty removed from Industry Signals — spec puts it in Blocklist only
 
     industry_score = _clamp(industry_pts)
 
@@ -782,29 +785,13 @@ def _collect_platform_evidence(artist: ArtistInfo) -> tuple[PlatformPresence, li
     if "deezer" in urls:
         presence.deezer = True
 
+    # Spec Part 7 Rule 5: Do NOT emit "Found on N platforms" — redundant.
+    # Platform-specific found/not-found bullets are emitted by individual
+    # collectors. Keep the tag for scoring purposes but don't emit evidence.
     platforms_found = presence.count()
-    if platforms_found >= 3:
+    if platforms_found <= 1:
         evidence.append(Evidence(
-            finding=f"Found on {platforms_found} platforms",
-            source="Cross-platform",
-            evidence_type="green_flag",
-            strength="strong",
-            detail=f"Artist exists on: {', '.join(presence.names())}. "
-                   "Artists present on multiple platforms are very likely real.",
-            tags=["multi_platform"],
-        ))
-    elif platforms_found >= 2:
-        evidence.append(Evidence(
-            finding=f"Found on {platforms_found} platforms",
-            source="Cross-platform",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Found on: {', '.join(presence.names())}.",
-            tags=["multi_platform"],
-        ))
-    elif platforms_found <= 1:
-        evidence.append(Evidence(
-            finding="Only found on 1 platform",
+            finding="Only found on 1 platform outside Spotify",
             source="Cross-platform",
             evidence_type="red_flag",
             strength="weak",
@@ -1264,26 +1251,7 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
             tags=["generic_name"],
         ))
 
-    # Mood-word track titles (PFC tracks use generic mood/atmosphere names)
-    if artist.track_titles:
-        mood_count = 0
-        for title in artist.track_titles:
-            title_words = set(title.lower().split())
-            if title_words & MOOD_WORDS:
-                mood_count += 1
-        mood_ratio = mood_count / len(artist.track_titles) if artist.track_titles else 0
-        if mood_ratio >= 0.7 and len(artist.track_titles) >= 4:
-            evidence.append(Evidence(
-                finding=f"{mood_ratio:.0%} of track titles use generic mood/atmosphere words",
-                source="Name analysis",
-                evidence_type="red_flag",
-                strength="moderate",
-                detail=f"{mood_count} of {len(artist.track_titles)} tracks have names built "
-                       "from mood vocabulary (calm, peaceful, rain, morning, etc.). PFC music "
-                       "is often named to match playlist moods rather than artistic expression. "
-                       f"Sample titles: {', '.join(artist.track_titles[:5])}.",
-                tags=["mood_word_titles"],
-            ))
+    # Mood-word track title analysis removed per spec Part 9
 
     return evidence
 
@@ -1444,22 +1412,47 @@ def _collect_track_rank_evidence(artist: ArtistInfo) -> list[Evidence]:
 
     avg_rank = statistics.mean(artist.track_ranks)
 
-    # Top tracks concentration: if 1-2 tracks hold vast majority of popularity
+    # Top tracks concentration — spec Part 5.3: 3 tiers
     if len(artist.track_ranks) >= 4:
         sorted_ranks = sorted(artist.track_ranks, reverse=True)
         total_rank = sum(sorted_ranks)
         if total_rank > 0:
+            top1_share = sorted_ranks[0] / total_rank
             top2_share = sum(sorted_ranks[:2]) / total_rank
+            top3_share = sum(sorted_ranks[:3]) / total_rank if len(sorted_ranks) >= 3 else top2_share
             if top2_share >= 0.90:
                 evidence.append(Evidence(
-                    finding=f"Top 2 tracks hold {top2_share:.0%} of total rank score",
+                    finding=f"Top track holds {top1_share:.0%} of total Deezer rank · "
+                            f"Top 2: {top2_share:.0%} · Top 3: {top3_share:.0%}",
+                    source="Deezer",
+                    evidence_type="red_flag",
+                    strength="strong",
+                    detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
+                           f"{top2_share:.0%} of all popularity (extreme — almost certainly "
+                           "playlist-placed, not organic).",
+                    tags=["playlist_stuffing"],
+                ))
+            elif top2_share >= 0.80:
+                evidence.append(Evidence(
+                    finding=f"Top track holds {top1_share:.0%} of total Deezer rank · "
+                            f"Top 2: {top2_share:.0%} · Top 3: {top3_share:.0%}",
                     source="Deezer",
                     evidence_type="red_flag",
                     strength="moderate",
                     detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
-                           f"{top2_share:.0%} of all popularity. This concentration pattern "
-                           "is consistent with playlist stuffing — a couple of tracks placed "
-                           "on playlists while the rest have near-zero organic plays.",
+                           f"{top2_share:.0%} of all popularity (high — catalog heavily "
+                           "dependent on 1-2 tracks).",
+                    tags=["playlist_stuffing"],
+                ))
+            elif top2_share >= 0.70:
+                evidence.append(Evidence(
+                    finding=f"Top track holds {top1_share:.0%} of total Deezer rank · "
+                            f"Top 2: {top2_share:.0%} · Top 3: {top3_share:.0%}",
+                    source="Deezer",
+                    evidence_type="red_flag",
+                    strength="weak",
+                    detail=f"Out of {len(artist.track_ranks)} tracks, the top 2 account for "
+                           f"{top2_share:.0%} of all popularity (elevated — worth noting).",
                     tags=["playlist_stuffing"],
                 ))
 
@@ -2248,57 +2241,12 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
 
 
 def _collect_touring_geography_evidence(ext: ExternalData) -> list[Evidence]:
-    """Analyze geographic spread of touring (from Setlist.fm)."""
-    evidence: list[Evidence] = []
+    """Touring geography and named tours removed per spec Part 9.
 
-    if not ext.setlistfm_found:
-        return evidence
-
-    # Tour names indicate organized, named tours
-    if ext.setlistfm_tour_names:
-        evidence.append(Evidence(
-            finding=f"{len(ext.setlistfm_tour_names)} named tour(s)",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Named tours: {', '.join(ext.setlistfm_tour_names[:5])}. "
-                   "Named tours indicate professional touring activity.",
-            tags=["named_tour", "touring_geography"],
-        ))
-
-    # Geographic spread
-    countries = ext.setlistfm_venue_countries
-    cities = ext.setlistfm_venue_cities
-    if len(countries) >= 5:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(countries)} countries",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="strong",
-            detail=f"International touring across: {', '.join(countries[:8])}. "
-                   "International touring is very strong proof of a real artist.",
-            tags=["touring_geography"],
-        ))
-    elif len(countries) >= 2:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(countries)} countries",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Toured in: {', '.join(countries[:5])}.",
-            tags=["touring_geography"],
-        ))
-    elif len(cities) >= 3:
-        evidence.append(Evidence(
-            finding=f"Performed in {len(cities)} cities",
-            source="Setlist.fm",
-            evidence_type="green_flag",
-            strength="weak",
-            detail=f"Venues in: {', '.join(cities[:5])}.",
-            tags=["touring_geography"],
-        ))
-
-    return evidence
+    The spec says to remove: mood-word track title analysis, touring geography,
+    named tours. Concert count is already covered by _collect_setlistfm_evidence.
+    """
+    return []
 
 
 def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
@@ -2313,25 +2261,26 @@ def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
         # This collector only fires when the dedicated Wikipedia client found data.
         return evidence
 
-    # Article length — longer articles indicate more notability
+    # Article length — spec Part 6.1: word count = bytes / 6, rounded
     length = ext.wikipedia_length
+    word_count = round(length / 6) if length > 0 else 0
     views = ext.wikipedia_monthly_views
     extract = ext.wikipedia_extract
 
     if length >= 20_000 and views >= 10_000:
         evidence.append(Evidence(
-            finding=f"Substantial Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            finding=f"Wikipedia article (~{word_count:,} words, {views:,} monthly views)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="strong",
-            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is {length:,} bytes with "
+            detail=f"Wikipedia article \"{ext.wikipedia_title}\" is ~{word_count:,} words with "
                    f"{views:,} monthly page views. Large, actively-viewed articles indicate "
                    f"significant public notability. Summary: \"{extract[:200]}{'...' if len(extract) > 200 else ''}\"",
             tags=["wikipedia"],
         ))
     elif length >= 5_000 or views >= 1_000:
         evidence.append(Evidence(
-            finding=f"Wikipedia article ({length:,} bytes, {views:,} monthly views)",
+            finding=f"Wikipedia article (~{word_count:,} words, {views:,} monthly views)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="strong",
@@ -2342,11 +2291,11 @@ def _collect_wikipedia_evidence(ext: ExternalData) -> list[Evidence]:
         ))
     elif length > 0:
         evidence.append(Evidence(
-            finding=f"Wikipedia stub article ({length:,} bytes)",
+            finding=f"Wikipedia article (~{word_count:,} words)",
             source="Wikipedia",
             evidence_type="green_flag",
             strength="moderate",
-            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" ({length:,} bytes). "
+            detail=f"Short Wikipedia article \"{ext.wikipedia_title}\" (~{word_count:,} words). "
                    f"Even stub articles require notability per Wikipedia guidelines.",
             tags=["wikipedia"],
         ))
@@ -2431,36 +2380,7 @@ def _collect_songkick_evidence(ext: ExternalData) -> list[Evidence]:
             tags=["live_performance"],
         ))
 
-    # Geographic spread (complements Setlist.fm touring geography)
-    countries = ext.songkick_venue_countries
-    cities = ext.songkick_venue_cities
-    if len(countries) >= 5:
-        evidence.append(Evidence(
-            finding=f"Songkick events in {len(countries)} countries",
-            source="Songkick",
-            evidence_type="green_flag",
-            strength="strong",
-            detail=f"International touring: {', '.join(countries[:8])}.",
-            tags=["touring_geography"],
-        ))
-    elif len(countries) >= 2:
-        evidence.append(Evidence(
-            finding=f"Songkick events in {len(countries)} countries",
-            source="Songkick",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Touring in: {', '.join(countries[:5])}.",
-            tags=["touring_geography"],
-        ))
-    elif len(cities) >= 3:
-        evidence.append(Evidence(
-            finding=f"Songkick events in {len(cities)} cities",
-            source="Songkick",
-            evidence_type="green_flag",
-            strength="weak",
-            detail=f"Events in: {', '.join(cities[:5])}.",
-            tags=["touring_geography"],
-        ))
+    # Touring geography removed per spec Part 9
 
     # Festival appearances
     festival_count = ext.songkick_event_types.count("Festival")

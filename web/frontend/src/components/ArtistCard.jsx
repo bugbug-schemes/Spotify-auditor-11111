@@ -263,11 +263,12 @@ function countFlags(evidenceList) {
 }
 
 // Spec Part 2: Standardized verdict description templates
-function getVerdictDescription(verdict, name, greenCount, redCount, topReason) {
+function getVerdictDescription(verdict, name, greenCount, redCount, topReason, platformCount) {
   const n = name || 'This artist';
+  const platforms = platformCount || 0;
   switch (verdict) {
     case 'Verified Artist':
-      return `${n} shows strong evidence of legitimacy across multiple platforms.`;
+      return `${n} shows strong evidence of legitimacy across ${platforms} platforms.`;
     case 'Likely Authentic':
       return `${n} appears legitimate. ${greenCount} positive and ${redCount} negative signals.`;
     case 'Inconclusive':
@@ -275,7 +276,7 @@ function getVerdictDescription(verdict, name, greenCount, redCount, topReason) {
     case 'Conflicting Signals':
       return `Evidence on ${n} is mixed \u2014 ${greenCount} positive and ${redCount} negative signals.`;
     case 'Suspicious':
-      return `${n} shows warning signs. Found with ${redCount} red flags.`;
+      return `${n} shows warning signs. Found on ${platforms} platforms with ${redCount} red flags.`;
     case 'Likely Artificial':
       return `${n} has strong indicators of being artificial.${topReason ? ` ${topReason}.` : ''}`;
     default:
@@ -477,8 +478,14 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
     [sections, evidence, verdict],
   );
 
+  // Count platforms for description template
+  const platformCount = useMemo(() => {
+    if (!sources) return 0;
+    return Object.values(sources).filter(Boolean).length;
+  }, [sources]);
+
   const descriptionText = getVerdictDescription(
-    verdict, result.artist_name, flags.green, flags.red, topReason
+    verdict, result.artist_name, flags.green, flags.red, topReason, platformCount
   );
 
   // Threat category tag only for Suspicious/Likely Artificial (spec Part 2)
@@ -574,9 +581,13 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
                       isBlocklist={isBlocklist}
                     />
                     <div className="artist-section-signals">
-                      {/* Green flags first */}
+                      {/* Green flags first (spec Part 7 Rule 8) */}
                       {greenItems.map((ev, i) => (
                         <SignalItem key={`g-${i}`} evidence={ev} />
+                      ))}
+                      {/* Neutral items between green and red (spec Part 7 Rule 8) */}
+                      {s.neutral.map((ev, i) => (
+                        <SignalItem key={`n-${i}`} evidence={ev} />
                       ))}
                       {/* Red flags (non-"not found" items) */}
                       {redItems.filter(ev => !negativeLines.includes(ev.finding)).map((ev, i) => (
@@ -603,11 +614,21 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
                           }}
                         />
                       )}
-                      {/* If section has no signals at all */}
+                      {/* If section has no signals at all — name specific sources per spec Part 7 Rule 4 */}
                       {greenItems.length === 0 && redItems.length === 0 && !isBlocklist && (
                         <SignalItem
                           evidence={{
-                            finding: `No data available for ${sectionName.toLowerCase()}`,
+                            finding: sectionName === 'Platform Presence'
+                              ? 'Not found on Deezer, YouTube, Bandcamp, Wikipedia, Genius'
+                              : sectionName === 'Fan Engagement'
+                              ? 'Not found on Last.fm \u00B7 0 Deezer fans'
+                              : sectionName === 'Creative History'
+                              ? 'No catalog data available from Deezer or Genius'
+                              : sectionName === 'IRL Presence'
+                              ? 'No concert history on Setlist.fm \u00B7 No physical releases on Discogs'
+                              : sectionName === 'Industry Signals'
+                              ? 'No MusicBrainz entry \u00B7 No ISNI/IPI codes \u00B7 No ASCAP/BMI registration'
+                              : `No data for ${sectionName.toLowerCase()}`,
                             type: 'neutral',
                             strength: 'weak',
                           }}

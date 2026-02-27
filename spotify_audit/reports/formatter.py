@@ -13,6 +13,7 @@ import json
 import math
 import html as html_mod
 from datetime import datetime, timezone
+from urllib.parse import quote as _url_quote
 
 from spotify_audit.scoring import PlaylistReport, ArtistReport
 from spotify_audit.evidence import ArtistEvaluation, Evidence, Verdict, ExternalData
@@ -1102,12 +1103,8 @@ body {{
     </div>
   </div>
   <div class="metrics-col">
-    <!-- Key metrics (spec Part 1: removed Contamination, Scan Time, API Calls) -->
+    <!-- Key metrics (spec Part 1: show only analyzed count + timeout warning) -->
     <div class="metric-row">
-      <div class="metric-card">
-        <div class="metric-value">{report.total_tracks}</div>
-        <div class="metric-label">Tracks</div>
-      </div>
       <div class="metric-card">
         <div class="metric-value">{report.total_unique_artists}</div>
         <div class="metric-label">Analyzed</div>
@@ -1124,11 +1121,11 @@ body {{
       <div class="bar-label">Verdict Breakdown</div>
       {_stacked_bar(verdict_segments, total_bar)}
       <div class="legend">
-        <span><span class="legend-dot" style="background:#22c55e"></span>Verified</span>
-        <span><span class="legend-dot" style="background:#86efac"></span>Authentic</span>
+        <span><span class="legend-dot" style="background:#22c55e"></span>Verified Artist</span>
+        <span><span class="legend-dot" style="background:#86efac"></span>Likely Authentic</span>
         <span><span class="legend-dot" style="background:#fbbf24"></span>Inconclusive</span>
         <span><span class="legend-dot" style="background:#f97316"></span>Suspicious</span>
-        <span><span class="legend-dot" style="background:#ef4444"></span>Artificial</span>
+        <span><span class="legend-dot" style="background:#ef4444"></span>Likely Artificial</span>
         {f'<span><span class="legend-dot" style="background:#9ca3af"></span>Not Scanned</span>' if skipped_count else ''}
       </div>
     </div>
@@ -1138,79 +1135,10 @@ body {{
   </div>
 </div>
 
-<!-- How This Works -->
-<details class="methodology">
-  <summary>How This Works &mdash; Six Evidence Categories</summary>
-  <div class="methodology-body">
-    <p>For every artist on this playlist, we queried up to 9 independent platforms (plus PRO registries and
-    Deezer AI detection) and checked against curated databases of known bad actors. The analysis evaluates six dimensions:</p>
-
-    <div class="q-grid">
-      <div class="q-item">
-        <span class="q-num">1</span>
-        <div>
-          <div class="q-text">Platform Presence</div>
-          <div class="q-detail">Where does this artist exist? Deezer, MusicBrainz, Genius, Last.fm, Discogs, Setlist.fm, Songkick, YouTube, Wikipedia, social media. Ghost artists leave zero traces outside Spotify.</div>
-        </div>
-      </div>
-      <div class="q-item">
-        <span class="q-num">2</span>
-        <div>
-          <div class="q-text">Fan Engagement</div>
-          <div class="q-detail">Do real humans listen? Last.fm scrobbles and play/listener ratio, Deezer fans, Genius followers. Key metric: repeat listeners.</div>
-        </div>
-      </div>
-      <div class="q-item">
-        <span class="q-num">3</span>
-        <div>
-          <div class="q-text">Creative History</div>
-          <div class="q-detail">Release cadence by year, track durations, album-to-single ratio, collaborative songwriting, title patterns. Content farms release 40+ short singles with no albums.</div>
-        </div>
-      </div>
-      <div class="q-item">
-        <span class="q-num">4</span>
-        <div>
-          <div class="q-text">IRL Presence</div>
-          <div class="q-detail">Live concert history on Setlist.fm and Songkick. Physical releases on Discogs. Touring geography. Named tours. Upcoming shows.</div>
-        </div>
-      </div>
-      <div class="q-item">
-        <span class="q-num">5</span>
-        <div>
-          <div class="q-text">Industry Signals</div>
-          <div class="q-detail">MusicBrainz metadata (type, country, dates). ISNI/IPI codes. ASCAP/BMI songwriter registration with ownership splits. Genius profile depth. Discogs bio{', and Claude AI synthesis' if has_deep else ''}.</div>
-        </div>
-      </div>
-      <div class="q-item">
-        <span class="q-num">6</span>
-        <div>
-          <div class="q-text">Blocklist Status</div>
-          <div class="q-detail">Artist name, label, distributor, and credited songwriters checked against investigated databases of confirmed PFC providers, known AI artists, and PFC publishers.</div>
-        </div>
-      </div>
-    </div>
-
-    <h3>Verdicts</h3>
-    <table class="verdict-table">
-      <tr><th>Verdict</th><th>Score</th><th>Meaning</th></tr>
-      <tr><td style="color:#22c55e">Verified Artist</td><td>82&ndash;100</td><td>Strong evidence of legitimacy across multiple independent sources.</td></tr>
-      <tr><td style="color:#86efac">Likely Authentic</td><td>58&ndash;81</td><td>More green flags than red. Probably a real artist.</td></tr>
-      <tr><td style="color:#fbbf24">Inconclusive</td><td>38&ndash;57</td><td>Insufficient data or conflicting signals.</td></tr>
-      <tr><td style="color:#f97316">Suspicious</td><td>18&ndash;37</td><td>More red flags than green. Probably fraudulent.</td></tr>
-      <tr><td style="color:#ef4444">Likely Artificial</td><td>0&ndash;17</td><td>Known bad actor match, or overwhelming evidence of fraud.</td></tr>
-    </table>
-
-    <h3>Threat Categories</h3>
-    <table class="verdict-table">
-      <tr><th>Category</th><th>Description</th></tr>
-      <tr><td style="color:#f59e0b">PFC Ghost Artist</td><td>Human-made music commissioned by Spotify at a flat fee, published under fake names.</td></tr>
-      <tr><td style="color:#f97316">PFC + AI Hybrid</td><td>Same PFC infrastructure, but using AI tools instead of human session musicians.</td></tr>
-      <tr><td style="color:#a78bfa">Independent AI</td><td>AI-generated music uploaded by individuals, not affiliated with PFC pipeline.</td></tr>
-      <tr><td style="color:#ef4444">AI Fraud Farm</td><td>Mass-produced AI content uploaded with bots for streaming revenue fraud.</td></tr>
-      <tr><td style="color:#ec4899">AI Impersonation</td><td>AI-generated tracks uploaded to a real artist's page without consent.</td></tr>
-    </table>
-  </div>
-</details>
+<!-- Methodology link (spec Part 1: replaced inline section with one-line link) -->
+<div style="font-size:0.88rem;color:var(--text-dim);margin-bottom:24px;padding:12px 20px;background:var(--card);border:1px solid var(--border);border-radius:8px">
+  Analyzed across 6 evidence categories using 7 data sources
+</div>
 
 <!-- Artist list -->
 <div class="list-controls">
@@ -1463,78 +1391,53 @@ def _build_card(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
 
 
 def _build_stats_line(a: ArtistReport, ev: ArtistEvaluation | None) -> str:
-    """Build the two-line stats summary for collapsed card.
+    """Build a standardized verdict description for the collapsed card.
 
-    Line 1: Bad actor check + PRO registry result (search/lookup indicators)
-    Line 2: Platform data (Deezer fans, Last.fm, shows, etc.)
+    Per spec Part 2: use fixed templates instead of platform data.
+    Collapsed card shows ONLY: score badge, name, verdict tag, threat, chevron.
+    The description is the one-liner under the name.
     """
     if not ev:
         return ""
-    ext = ev.external_data or ExternalData()
 
-    # --- Line 1: Search/lookup indicators ---
-    search_parts: list[str] = []
+    name = _esc(a.artist_name)
+    green_count = len(ev.green_flags)
+    red_count = len(ev.red_flags)
+    verdict_str = ev.verdict.value
 
-    # Bad actor / blocklist check
-    all_tags: set[str] = set()
-    for e in ev.red_flags + ev.green_flags:
-        if e.tags:
-            all_tags.update(e.tags)
-
-    if all_tags & {"entity_confirmed_bad", "known_bad_actor"}:
-        search_parts.append('<span style="color:#ef4444">&#9940; Bad actor match</span>')
-    elif all_tags & {"pfc_label", "known_ai_label", "pfc_songwriter", "known_ai_artist"}:
-        tag_names: list[str] = []
-        if all_tags & {"pfc_label", "known_ai_label"}:
-            tag_names.append("PFC label")
-        if all_tags & {"pfc_songwriter"}:
-            tag_names.append("PFC writer")
-        if all_tags & {"known_ai_artist"}:
-            tag_names.append("AI artist")
-        search_parts.append(f'<span style="color:#f59e0b">&#9888; {", ".join(tag_names)}</span>')
-    elif all_tags & {"entity_suspected"}:
-        search_parts.append('<span style="color:#f59e0b">&#9888; Suspected entity</span>')
-    else:
-        search_parts.append('<span style="color:#556">&#10003; Blocklist clear</span>')
-
-    # PRO registry (publishing databases)
-    if ext.pro_checked:
-        pro_names: list[str] = []
-        if ext.pro_found_bmi:
-            pro_names.append("BMI")
-        if ext.pro_found_ascap:
-            pro_names.append("ASCAP")
-        if pro_names:
-            works_str = f", {ext.pro_works_count} works" if ext.pro_works_count else ""
-            search_parts.append(f'<span style="color:#22c55e">PRO: {"+".join(pro_names)}{works_str}</span>')
-        else:
-            search_parts.append('<span style="color:#f59e0b">No PRO registration</span>')
-
-    # --- Line 2: Platform data ---
-    data_parts: list[str] = []
-
-    if ev.platform_presence.deezer_fans:
-        data_parts.append(f"Deezer fans: {_fmt_num(ev.platform_presence.deezer_fans)}")
-    if ext.lastfm_listeners:
-        data_parts.append(f"Last.fm: {_fmt_num(ext.lastfm_listeners)} listeners")
-    if ext.setlistfm_total_shows:
-        data_parts.append(f"{ext.setlistfm_total_shows} shows")
-    if ext.discogs_physical_releases:
-        data_parts.append(f"{ext.discogs_physical_releases} vinyl/CD")
-    if ext.wikipedia_found:
-        data_parts.append("Wikipedia")
-
-    # Fallback
-    if not data_parts:
-        data_parts.append(f"{len(ev.green_flags)} green / {len(ev.red_flags)} red flags")
-
-    # Labels
-    if ev.labels:
-        data_parts.append(_esc(ev.labels[0]))
-
-    line1 = " &middot; ".join(search_parts)
-    line2 = " &middot; ".join(data_parts[:5])
-    return f'{line1}<br>{line2}'
+    # Spec Part 2 verdict description templates
+    if verdict_str == "Verified Artist":
+        platform_count = ev.platform_presence.count()
+        return f"{name} shows strong evidence of legitimacy across {platform_count} platforms."
+    elif verdict_str == "Likely Authentic":
+        return f"{name} appears legitimate. {green_count} positive and {red_count} negative signals."
+    elif verdict_str in ("Inconclusive", "Insufficient Data", "Conflicting Signals"):
+        return f"Evidence on {name} is mixed &mdash; {green_count} positive and {red_count} negative signals."
+    elif verdict_str == "Suspicious":
+        platform_count = ev.platform_presence.count()
+        return f"{name} shows warning signs. Found on {platform_count} platforms with {red_count} red flags."
+    elif verdict_str == "Likely Artificial":
+        # Find top reason
+        top_reason = ""
+        for e in ev.red_flags:
+            if e.strength != "strong":
+                continue
+            tag_set = set(e.tags) if e.tags else set()
+            if tag_set & {"pfc_label", "known_ai_label"}:
+                top_reason = "PFC label match"
+                break
+            if "known_ai_artist" in tag_set:
+                top_reason = "Known AI artist match"
+                break
+            if "content_farm" in tag_set:
+                top_reason = "Content farm pattern"
+                break
+            if "stream_farm" in tag_set:
+                top_reason = "Stream farm pattern"
+                break
+        suffix = f" {top_reason}." if top_reason else ""
+        return f"{name} has strong indicators of being artificial.{suffix}"
+    return ""
 
 
 def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
@@ -1581,27 +1484,63 @@ def _build_card_body(a: ArtistReport, ev: ArtistEvaluation) -> str:
     # 3. Six-axis bucket grid
     buckets_html = _build_axis_buckets(ev, ext, scores)
 
-    # 4. AI analysis (if available)
-    ai_html = ""
-    for sig in a.deep_signals:
-        if isinstance(sig, dict) and sig.get("detail"):
-            ai_html = (
-                f'<div class="explanation" style="background:#1a2332;border-left:3px solid #a78bfa">'
-                f'<div style="font-size:0.72rem;color:#a78bfa;text-transform:uppercase;margin-bottom:6px">'
-                f'AI Analysis</div>{_esc(sig["detail"])}</div>'
-            )
-            break
+    # AI analysis removed per spec Part 1 ("Claude AI Deep Dive — remove entirely, add back later")
 
     return f"""
     {explanation_html}
     {scorecard_html}
     {buckets_html}
-    {ai_html}
     """
 
 
 def _build_platform_icons(ev: ArtistEvaluation, ext: ExternalData) -> str:
-    """Build the Platform Icons Row showing found/not-found for each platform."""
+    """Build the Platform Icons Row showing found/not-found for each platform.
+
+    Per spec Part 3: each found platform is a clickable link to the artist's
+    actual profile on that platform (new tab). Not-found sources are not clickable.
+    """
+    artist_name = ev.artist_name or ""
+
+    # Build profile URLs for each platform
+    platform_urls: dict[str, str] = {}
+    # Deezer — use deezer_id from ExternalData
+    deezer_id = getattr(ext, 'deezer_id', '') or ''
+    if deezer_id:
+        platform_urls["Deezer"] = f"https://www.deezer.com/artist/{deezer_id}"
+
+    # MusicBrainz
+    mbid = getattr(ext, 'musicbrainz_id', '') or ''
+    if mbid:
+        platform_urls["MusicBrainz"] = f"https://musicbrainz.org/artist/{mbid}"
+
+    # Genius
+    genius_url = getattr(ext, 'genius_url', '') or ''
+    if genius_url:
+        platform_urls["Genius"] = genius_url
+
+    # Last.fm
+    if artist_name:
+        platform_urls["Last.fm"] = f"https://www.last.fm/music/{_url_quote(artist_name)}"
+
+    # Discogs
+    discogs_id = getattr(ext, 'discogs_id', '') or ''
+    if discogs_id:
+        platform_urls["Discogs"] = f"https://www.discogs.com/artist/{discogs_id}"
+
+    # Setlist.fm — uses MusicBrainz ID
+    setlistfm_mbid = getattr(ext, 'setlistfm_mbid', '') or mbid
+    if setlistfm_mbid:
+        platform_urls["Setlist.fm"] = f"https://www.setlist.fm/setlists/{setlistfm_mbid}.html"
+
+    # Wikipedia
+    if ext.wikipedia_url:
+        platform_urls["Wikipedia"] = ext.wikipedia_url
+
+    # YouTube
+    yt_url = getattr(ext, 'youtube_url', '') or ext.musicbrainz_youtube_url or ''
+    if yt_url:
+        platform_urls["YouTube"] = yt_url
+
     platforms = [
         ("Deezer", ev.platform_presence.deezer),
         ("MusicBrainz", ext.musicbrainz_found),
@@ -1616,7 +1555,6 @@ def _build_platform_icons(ev: ArtistEvaluation, ext: ExternalData) -> str:
     badges = []
     for name, found in platforms:
         if found is None:
-            # Not checked
             icon = '<span style="color:#333">&#8226;</span>'
             color = "#333"
         elif found:
@@ -1625,12 +1563,21 @@ def _build_platform_icons(ev: ArtistEvaluation, ext: ExternalData) -> str:
         else:
             icon = '<span style="color:#444">&#10007;</span>'
             color = "#444"
-        badges.append(
+
+        badge_inner = (
             f'<span style="display:inline-flex;align-items:center;gap:3px;'
             f'padding:2px 6px;border:1px solid {color}33;border-radius:4px;'
             f'font-size:0.7rem;color:{color}">'
             f'{icon} {_esc(name)}</span>'
         )
+
+        # Wrap found platforms in clickable link (spec Part 3)
+        url = platform_urls.get(name)
+        if found and url:
+            badge_inner = f'<a href="{_esc(url)}" target="_blank" rel="noopener noreferrer" style="text-decoration:none">{badge_inner}</a>'
+
+        badges.append(badge_inner)
+
     return (
         '<div style="display:flex;flex-wrap:wrap;gap:4px;margin-bottom:10px">'
         + "".join(badges)
