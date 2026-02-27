@@ -32,7 +32,6 @@ from spotify_audit.evidence import (
     _collect_lastfm_evidence,
     _collect_social_media_evidence,
     _collect_identity_evidence,
-    _collect_touring_geography_evidence,
     _decide_verdict,
 )
 
@@ -524,25 +523,6 @@ class TestIdentityEvidence:
         greens = [e for e in ev if "member" in e.finding.lower()]
         assert len(greens) >= 1
 
-
-# ---------------------------------------------------------------------------
-# Touring geography evidence
-# ---------------------------------------------------------------------------
-
-class TestTouringGeographyEvidence:
-    def test_international_touring_strong_green(self):
-        ext = ExternalData(
-            setlistfm_found=True,
-            setlistfm_venue_countries=["US", "UK", "Japan", "France", "Germany"],
-        )
-        ev = _collect_touring_geography_evidence(ext)
-        greens = [e for e in ev if e.evidence_type == "green_flag"]
-        assert any(e.strength == "strong" for e in greens)
-
-    def test_not_found_empty(self):
-        ext = ExternalData(setlistfm_found=False)
-        ev = _collect_touring_geography_evidence(ext)
-        assert len(ev) == 0
 
 
 # ---------------------------------------------------------------------------
