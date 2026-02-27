@@ -26,7 +26,9 @@ This document defines the single-pass analysis pipeline for the Spotify Playlist
 │  │  • monthly_listeners │  │  • MusicBrainz              │  │
 │  │  • popularity        │  │  • Setlist.fm               │  │
 │  │  • genres            │  │  • Last.fm                  │  │
-│  │  • catalog           │  │  • Bandsintown              │  │
+│  │  • catalog           │  │  • Songkick                 │  │
+│  │  • YouTube                  │  │
+│  │  • Wikipedia                │  │
 │  │  • track durations   │  │                             │  │
 │  │  • release dates     │  │  All fire concurrently.     │  │
 │  │  • labels            │  │  ~2-3 seconds per artist.   │  │
@@ -423,15 +425,17 @@ DEFAULT: Category 1 — PFC Ghost Artist
 | 16 | Social Media | Genius + Discogs + MB | Social link count, Wikipedia, verified | wikipedia, verified_identity |
 | 17 | Identity | Discogs + MB | Real name, aliases, group members, ISNI, IPI | verified_identity, industry_registered |
 | 18 | Last.fm | Last.fm API | Listeners, play/listener ratio, bio | genuine_fans, not_found |
-| 19 | Touring | Setlist.fm | Countries, cities, tour names | live_performance |
+| 19 | Touring | Setlist.fm + Songkick | Countries, cities, tour names, on-tour status | live_performance, touring_geography |
+| 20 | Wikipedia | Wikipedia API | Article length, monthly views, categories | wikipedia |
+| 21 | YouTube | YouTube Data API | Subscribers, video count, music videos | youtube_presence |
 
 ### From Claude AI (optional)
 
 | # | Collector | Input | Key Signals | Tags Used |
 |---|-----------|-------|-------------|-----------|
-| 20 | Bio Analysis | All available bios | AI mentions, verifiable claims, geographic specificity | ai_bio |
-| 21 | Image Analysis | Profile image | AI artifacts, stock photo, human photo | ai_generated_image, stock_photo |
-| 22 | Synthesis | All prior evidence | Holistic PFC/AI/legitimate assessment | ai_generated_music, impersonation |
+| 22 | Bio Analysis | All available bios | AI mentions, verifiable claims, geographic specificity | ai_bio |
+| 23 | Image Analysis | Profile image | AI artifacts, stock photo, human photo | ai_generated_image, stock_photo |
+| 24 | Synthesis | All prior evidence | Holistic PFC/AI/legitimate assessment | ai_generated_music, impersonation |
 
 ---
 
@@ -441,12 +445,12 @@ For visualization. Each dimension scored 0–100 using evidence tags (not string
 
 | Dimension | What it measures | Key inputs |
 |-----------|-----------------|------------|
-| Platform Presence | How widely the artist exists across services | Platform count × 14.3 (7 platforms max) |
+| Platform Presence | How widely the artist exists across services | Platform count, YouTube, Wikipedia, social media, Genius followers |
 | Fan Engagement | Real fan activity vs algorithmic/passive | Deezer fans, Last.fm ratio, Genius followers |
-| Creative History | Evidence of genuine artistic output | Albums, physical releases, Genius songs, collaborators |
-| Live Performance | Concert and touring activity | Setlist.fm shows, tour names, countries played |
-| Online Identity | Web footprint outside streaming platforms | Social media count, Wikipedia, Discogs bio, real name |
-| Industry Signals | Professional music industry registration | ISNI, IPI, MusicBrainz metadata, Discogs quality, PFC label penalty |
+| Creative History | Evidence of genuine artistic output | Albums, Genius songs, collaborators, release cadence |
+| IRL Presence | Physical-world evidence of the artist | Setlist.fm/Songkick shows, Discogs physical releases, tour names, countries |
+| Industry Signals | Professional music industry registration | ISNI, IPI, ASCAP/BMI, MusicBrainz metadata, Discogs bio/quality |
+| Blocklist Status | Matches against known fraud databases | PFC distributors, known AI artists, PFC songwriters, entity DB |
 
 ---
 
