@@ -1275,7 +1275,11 @@ def _threat_bar_section(segments: list[tuple[str, int, str]], total: int) -> str
 
 
 def _build_skipped_section(skipped: list[dict]) -> str:
-    """Render a notice section for artists that were skipped during scanning."""
+    """Render a notice section for artists that were skipped during scanning.
+
+    Includes a "Retry Skipped Artists" button that calls the retry API endpoint.
+    The scan_id is extracted from the page URL (e.g., /report/<scan_id>).
+    """
     if not skipped:
         return ""
     rows = []
@@ -1286,18 +1290,37 @@ def _build_skipped_section(skipped: list[dict]) -> str:
             f'<tr><td style="color:#e8eef4;font-weight:500">{name}</td>'
             f'<td style="color:#94a3b8">{reason}</td></tr>'
         )
+
+    count = len(skipped)
+    plural = "s" if count != 1 else ""
+
     return f"""
-<div style="background:#1a1510;border:1px solid #3d2e1a;border-radius:10px;padding:16px 20px;margin:20px 0">
-  <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px">
-    <span style="color:#f59e0b;font-size:1.2rem">&#9888;</span>
-    <span style="color:#f59e0b;font-weight:600;font-size:0.95rem">
-      {len(skipped)} artist{'s' if len(skipped) != 1 else ''} could not be scanned
-    </span>
+<div id="skipped-section" style="background:#1a1510;border:1px solid #3d2e1a;border-radius:10px;padding:16px 20px;margin:20px 0">
+  <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
+    <div style="display:flex;align-items:center;gap:8px">
+      <span style="color:#f59e0b;font-size:1.2rem">&#9888;</span>
+      <span style="color:#f59e0b;font-weight:600;font-size:0.95rem">
+        {count} artist{plural} could not be scanned
+      </span>
+    </div>
+    <button id="retryBtn" onclick="retrySkipped()" style="
+      background:#f59e0b;color:#000;border:none;padding:8px 18px;border-radius:6px;
+      font-weight:700;font-size:0.85rem;cursor:pointer;white-space:nowrap
+    ">&#8635; Retry {count} Artist{plural}</button>
   </div>
   <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:10px">
     These artists were skipped due to timeouts or errors during scanning.
     They are not included in the analysis above.
   </p>
+  <div id="retryProgress" style="display:none;margin-bottom:12px">
+    <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
+      <div style="width:14px;height:14px;border:2px solid #f59e0b;border-top-color:transparent;border-radius:50%;animation:spin 1s linear infinite"></div>
+      <span id="retryMsg" style="color:#f59e0b;font-size:0.85rem">Starting retry...</span>
+    </div>
+    <div style="background:#111820;border-radius:4px;height:6px;overflow:hidden">
+      <div id="retryBar" style="width:0%;height:100%;background:#f59e0b;border-radius:4px;transition:width 0.3s"></div>
+    </div>
+  </div>
   <table style="width:100%;border-collapse:collapse;font-size:0.85rem">
     <tr style="border-bottom:1px solid #3d2e1a">
       <th style="text-align:left;padding:6px 8px;color:#f59e0b">Artist</th>
@@ -1305,7 +1328,63 @@ def _build_skipped_section(skipped: list[dict]) -> str:
     </tr>
     {"".join(rows)}
   </table>
-</div>"""
+</div>
+<style>@keyframes spin {{ to {{ transform: rotate(360deg) }} }}</style>
+<script>
+function retrySkipped() {{
+  var btn = document.getElementById('retryBtn');
+  var progress = document.getElementById('retryProgress');
+  var msg = document.getElementById('retryMsg');
+  var bar = document.getElementById('retryBar');
+
+  // Extract scan_id from URL path: /report/<scan_id>
+  var parts = window.location.pathname.split('/');
+  var scanId = parts[parts.length - 1] || parts[parts.length - 2];
+  if (!scanId) {{ alert('Could not determine scan ID'); return; }}
+
+  btn.disabled = true;
+  btn.textContent = 'Retrying...';
+  btn.style.opacity = '0.6';
+  progress.style.display = 'block';
+
+  fetch('/api/scan/' + scanId + '/retry-skipped', {{ method: 'POST' }})
+    .then(function(r) {{ return r.json(); }})
+    .then(function(data) {{
+      if (data.error) {{ throw new Error(data.error); }}
+      var retryId = data.scan_id;
+      // Poll for progress
+      var poll = setInterval(function() {{
+        fetch('/api/scan/' + retryId)
+          .then(function(r) {{ return r.json(); }})
+          .then(function(s) {{
+            if (s.message) msg.textContent = s.message;
+            if (s.total > 0) bar.style.width = Math.round(s.current / s.total * 100) + '%';
+            if (s.status === 'complete' && s.has_result) {{
+              clearInterval(poll);
+              msg.textContent = s.message || 'Done!';
+              bar.style.width = '100%';
+              // Show link to retry results
+              progress.innerHTML =
+                '<div style="display:flex;align-items:center;gap:10px">' +
+                '<span style="color:#22c55e;font-size:1.1rem">&#10003;</span>' +
+                '<span style="color:#22c55e;font-weight:600">' + (s.message || 'Retry complete') + '</span>' +
+                '<a href="/report/' + retryId + '" style="color:#f59e0b;font-weight:600;margin-left:12px">View Retry Results &rarr;</a>' +
+                '</div>';
+              btn.style.display = 'none';
+            }}
+          }})
+          .catch(function() {{}});
+      }}, 2000);
+    }})
+    .catch(function(err) {{
+      msg.textContent = 'Retry failed: ' + err.message;
+      msg.style.color = '#ef4444';
+      btn.disabled = false;
+      btn.textContent = '\\u21BB Retry {count} Artist{plural}';
+      btn.style.opacity = '1';
+    }});
+}}
+</script>"""
 
 
 # ---------------------------------------------------------------------------

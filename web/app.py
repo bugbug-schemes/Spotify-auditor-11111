@@ -73,14 +73,24 @@ class ScanStore:
                 created_at    REAL NOT NULL
             )
         """)
+        # Add columns for retry support (idempotent)
+        for col, coltype in [
+            ("playlist_url", "TEXT"),
+            ("skipped_json", "TEXT"),
+        ]:
+            try:
+                conn.execute(f"ALTER TABLE scan_reports ADD COLUMN {col} {coltype}")
+            except sqlite3.OperationalError:
+                pass  # column already exists
         conn.commit()
 
     def save(self, scan_id: str, scan: dict) -> None:
         conn = self._get_conn()
         conn.execute("""
             INSERT OR REPLACE INTO scan_reports
-                (scan_id, status, result_html, playlist_name, message, error, created_at)
-            VALUES (?, ?, ?, ?, ?, ?, ?)
+                (scan_id, status, result_html, playlist_name, message, error, created_at,
+                 playlist_url, skipped_json)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             scan_id,
             scan["status"],
@@ -89,6 +99,8 @@ class ScanStore:
             scan.get("message"),
             scan.get("error"),
             scan.get("started_at", time.time()),
+            scan.get("playlist_url"),
+            scan.get("skipped_json"),
         ))
         conn.commit()
 
@@ -233,12 +245,17 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
         else:
             done_msg = f"Done! Analyzed {analyzed} artists."
 
+        import json as _json
+        skipped_json = _json.dumps(playlist_report.skipped_artists) if playlist_report.skipped_artists else None
+
         _active_scans[scan_id].update({
             "status": "complete",
             "phase": "done",
             "result_html": html,
             "playlist_name": playlist_report.playlist_name,
             "message": done_msg,
+            "playlist_url": playlist_url,
+            "skipped_json": skipped_json,
         })
         # Persist completed scan to SQLite so it survives server restarts
         scan_store.save(scan_id, _active_scans[scan_id])
@@ -384,6 +401,137 @@ def view_report(scan_id):
             return saved.get("error") or "Scan failed", 410
 
     return "Report not ready yet", 404
+
+
+@app.route("/api/scan/<scan_id>/retry-skipped", methods=["POST"])
+def retry_skipped(scan_id):
+    """Retry analysis for artists that timed out in a previous scan."""
+    global _active_scan_count
+    import json as _json
+
+    # Find skipped data from in-memory store or SQLite
+    scan = _active_scans.get(scan_id)
+    skipped_json = None
+    if scan:
+        skipped_json = scan.get("skipped_json")
+    if not skipped_json:
+        saved = scan_store.get(scan_id)
+        if saved:
+            skipped_json = saved.get("skipped_json")
+
+    if not skipped_json:
+        return jsonify({"error": "No skipped artists found for this scan"}), 404
+
+    try:
+        skipped = _json.loads(skipped_json)
+    except (TypeError, _json.JSONDecodeError):
+        return jsonify({"error": "Invalid skipped artists data"}), 500
+
+    if not skipped:
+        return jsonify({"error": "No skipped artists to retry"}), 400
+
+    # Check concurrent scan limit
+    with _scans_lock:
+        if _active_scan_count >= MAX_CONCURRENT_SCANS:
+            return jsonify({
+                "error": f"Server busy — {_active_scan_count} scans running. Please try again shortly."
+            }), 503
+        _active_scan_count += 1
+
+    retry_id = uuid.uuid4().hex[:8]
+    _active_scans[retry_id] = {
+        "status": "running",
+        "phase": "starting",
+        "current": 0,
+        "total": len(skipped),
+        "message": f"Retrying {len(skipped)} skipped artists...",
+        "result_html": None,
+        "error": None,
+        "started_at": time.time(),
+        "playlist_name": None,
+    }
+    scan_store.save(retry_id, _active_scans[retry_id])
+
+    thread = threading.Thread(
+        target=_run_retry_background,
+        args=(retry_id, skipped, scan_id),
+        daemon=True,
+    )
+    thread.start()
+
+    return jsonify({"scan_id": retry_id})
+
+
+def _run_retry_background(retry_id: str, skipped: list[dict], original_scan_id: str) -> None:
+    """Background thread: retry skipped artists and generate a mini-report."""
+    global _active_scan_count
+
+    from spotify_audit.audit_runner import retry_skipped_artists, build_config
+    from spotify_audit.reports.formatter import to_html
+    from spotify_audit.scoring import build_playlist_report
+
+    def on_progress(phase: str, current: int, total: int, message: str):
+        if retry_id in _active_scans:
+            _active_scans[retry_id].update({
+                "phase": phase,
+                "current": current,
+                "total": total,
+                "message": message,
+            })
+
+    try:
+        config = build_config()
+        artist_reports, still_skipped = retry_skipped_artists(
+            skipped=skipped,
+            config=config,
+            on_progress=on_progress,
+        )
+
+        # Build a mini playlist report for the retried artists
+        playlist_report = build_playlist_report(
+            playlist_name=f"Retry of {len(skipped)} skipped artists",
+            playlist_id=f"retry-{original_scan_id}",
+            owner="",
+            total_tracks=0,
+            is_spotify_owned=False,
+            artist_reports=artist_reports,
+            skipped_artists=still_skipped,
+        )
+        html = to_html(playlist_report)
+
+        analyzed = len(artist_reports)
+        still_count = len(still_skipped)
+        if still_count:
+            done_msg = f"Retry complete — {analyzed} analyzed, {still_count} still skipped."
+        else:
+            done_msg = f"Retry complete — all {analyzed} artists analyzed successfully!"
+
+        import json as _json
+        _active_scans[retry_id].update({
+            "status": "complete",
+            "phase": "done",
+            "result_html": html,
+            "playlist_name": playlist_report.playlist_name,
+            "message": done_msg,
+            "skipped_json": _json.dumps(still_skipped) if still_skipped else None,
+        })
+        scan_store.save(retry_id, _active_scans[retry_id])
+    except Exception as exc:
+        import traceback
+        tb = traceback.format_exc()
+        logger.exception("Retry %s failed", retry_id)
+
+        html = _build_error_report(f"retry-{original_scan_id}", exc, tb)
+        _active_scans[retry_id].update({
+            "status": "complete",
+            "phase": "done",
+            "result_html": html,
+            "message": f"Retry failed: {exc}",
+        })
+        scan_store.save(retry_id, _active_scans[retry_id])
+    finally:
+        with _scans_lock:
+            _active_scan_count -= 1
 
 
 if __name__ == "__main__":
