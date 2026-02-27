@@ -4,9 +4,12 @@ import {
   getSignalColor,
   getSignalIcon,
   getScoreColor,
+  getScoreIcon,
+  getBlocklistColor,
   getVerdictColor,
   getVerdictBadgeBg,
   SIGNAL_COLORS,
+  VERDICT_COLORS,
 } from './signalColors';
 import RadarChart from './RadarChart';
 
@@ -23,7 +26,16 @@ const SECTION_ORDER = [
   'Blocklist Status',
 ];
 
-// Aligned with formatter.py _TAG_TO_AXIS (v0.9)
+const SECTION_SUBTITLES = {
+  'Platform Presence': 'Where the artist exists and who they are',
+  'Fan Engagement': 'Do real people listen to this artist?',
+  'Creative History': 'What have they actually made?',
+  'IRL Presence': 'Does this artist exist in the physical world?',
+  'Industry Signals': 'Formal music industry recognition',
+  'Blocklist Status': 'Known bad actor matches',
+};
+
+// Tag-to-section classification (aligned with formatter.py _TAG_TO_AXIS)
 const TAG_TO_SECTION = {
   // Platform Presence
   platform_presence: 'Platform Presence',
@@ -119,43 +131,6 @@ const SOURCE_TO_SECTION = {
   'pre-check': 'Blocklist Status',
 };
 
-// Default "no data" fallbacks
-const NO_DATA_SIGNALS = {
-  'Platform Presence': { finding: 'Not found on Deezer, MusicBrainz, or Genius', source: 'Analysis' },
-  'Fan Engagement': { finding: 'No fan engagement data from Last.fm or Deezer', source: 'Analysis' },
-  'Creative History': { finding: 'No release history or creative credits found', source: 'Analysis' },
-  'IRL Presence': { finding: 'No live performances on Setlist.fm and no physical releases on Discogs', source: 'Analysis' },
-  'Industry Signals': { finding: 'No industry registrations (ISNI, IPI, PRO) found', source: 'Analysis' },
-  'Blocklist Status': { finding: 'No blocklist matches found — clean record', source: 'Analysis' },
-};
-
-// Candidates for padding thin sections — only used when source is absent from ALL evidence
-const SECTION_PAD_CANDIDATES = {
-  'Platform Presence': [
-    { src: 'Deezer', finding: 'Not found on Deezer' },
-    { src: 'MusicBrainz', finding: 'Not found on MusicBrainz' },
-    { src: 'Genius', finding: 'Not found on Genius' },
-  ],
-  'Fan Engagement': [
-    { src: 'Last.fm', finding: 'No Last.fm listener data found' },
-    { src: 'YouTube', finding: 'No YouTube engagement data found' },
-  ],
-  'Creative History': [],
-  'IRL Presence': [
-    { src: 'Setlist.fm', finding: 'No concerts found on Setlist.fm' },
-    { src: 'Discogs', finding: 'No physical releases found on Discogs' },
-  ],
-  'Industry Signals': [
-    { src: 'PRO Registry', finding: 'No PRO registration found' },
-    { src: 'Wikipedia', finding: 'No Wikipedia article found' },
-    { src: 'YouTube', finding: 'No YouTube channel found' },
-  ],
-  'Blocklist Status': [
-    { src: 'Blocklist', finding: 'Not matched on any blocklists' },
-    { src: 'Entity DB', finding: 'No prior intelligence in entity database' },
-  ],
-};
-
 const SECTION_ICONS = {
   'Platform Presence': '\uD83C\uDF10',
   'Fan Engagement': '\uD83D\uDC65',
@@ -163,6 +138,18 @@ const SECTION_ICONS = {
   'IRL Presence': '\uD83C\uDFE4',
   'Industry Signals': '\uD83C\uDFAD',
   'Blocklist Status': '\uD83D\uDEE1',
+};
+
+// Platform profile URL builders
+const PLATFORM_URLS = {
+  Deezer: (ext) => ext?.deezer_id ? `https://www.deezer.com/artist/${ext.deezer_id}` : null,
+  MusicBrainz: (ext) => ext?.musicbrainz_id ? `https://musicbrainz.org/artist/${ext.musicbrainz_id}` : null,
+  Genius: (ext) => ext?.genius_url || null,
+  'Last.fm': (ext, name) => name ? `https://www.last.fm/music/${encodeURIComponent(name)}` : null,
+  Discogs: (ext) => ext?.discogs_id ? `https://www.discogs.com/artist/${ext.discogs_id}` : null,
+  'Setlist.fm': (ext) => ext?.setlistfm_mbid ? `https://www.setlist.fm/setlists/${ext.setlistfm_mbid}.html` : null,
+  Wikipedia: (ext) => ext?.wikipedia_url || null,
+  YouTube: (ext) => ext?.youtube_url || null,
 };
 
 // ---------------------------------------------------------------------------
@@ -181,221 +168,93 @@ function classifyEvidence(evidence) {
   return 'Industry Signals';
 }
 
-function parseDurationToSecs(dur) {
-  if (!dur) return null;
-  const parts = dur.split(':');
-  if (parts.length !== 2) return null;
-  return parseInt(parts[0], 10) * 60 + parseInt(parts[1], 10);
-}
-
 // ---------------------------------------------------------------------------
-// Creative metrics — extract from evidence and generate natural-language signals
+// Section building — spec Part 6 & 7 rules
 // ---------------------------------------------------------------------------
-
-function buildCreativeMetrics(evidenceList) {
-  const metrics = {};
-
-  for (const ev of evidenceList) {
-    const f = ev.finding || '';
-    const d = ev.detail || '';
-    const combined = f + ' ' + d;
-
-    const singlesMatch = combined.match(/(\d+)\s*singles?/i);
-    if (singlesMatch) metrics.singles = parseInt(singlesMatch[1], 10);
-
-    const albumsMatch = combined.match(/(\d+)\s*albums?/i);
-    if (albumsMatch) metrics.albums = parseInt(albumsMatch[1], 10);
-
-    const durationMatch = combined.match(/(?:avg|average)\s*(?:duration|track length|song duration)[:\s]*(\d+:\d{2})/i);
-    if (durationMatch) metrics.avgDuration = durationMatch[1];
-
-    const durationMatch2 = combined.match(/(\d:\d{2})\s*(?:avg|average)/i);
-    if (durationMatch2 && !metrics.avgDuration) metrics.avgDuration = durationMatch2[1];
-
-    const varianceMatch = combined.match(/(?:\u03C3|std|stdev|variance|deviation)[:\s=]*(\d+:\d{2}|\d+\.\d+s?)/i);
-    if (varianceMatch) metrics.durationVariance = varianceMatch[1];
-
-    const rangeMatch = combined.match(/range[:\s]*(\d+:\d{2})\s*[-\u2013]\s*(\d+:\d{2})/i);
-    if (rangeMatch) metrics.durationRange = `${rangeMatch[1]}\u2013${rangeMatch[2]}`;
-
-    const activeMatch = combined.match(/(?:active|career|recording)\s*(?:since|from|span)[:\s]*(\d{4})/i);
-    if (activeMatch && !metrics.startYear) metrics.startYear = parseInt(activeMatch[1], 10);
-
-    const firstReleaseMatch = combined.match(/(?:first|earliest)\s*(?:release|track|recording)[:\s]*(?:in\s*)?(\d{4})/i);
-    if (firstReleaseMatch && !metrics.startYear) metrics.startYear = parseInt(firstReleaseMatch[1], 10);
-
-    const dateRangeMatch = combined.match(/(\d{4})\s*[-\u2013]\s*(?:(\d{4})|present)/i);
-    if (dateRangeMatch && !metrics.startYear) metrics.startYear = parseInt(dateRangeMatch[1], 10);
-  }
-
-  if (metrics.startYear) {
-    const currentYear = new Date().getFullYear();
-    metrics.yearsActive = Math.max(1, currentYear - metrics.startYear);
-  }
-
-  return metrics;
-}
-
-function buildCreativeSignals(metrics) {
-  const signals = [];
-  const yearsActive = metrics.yearsActive || null;
-
-  // --- Duration signal (natural language) ---
-  if (metrics.avgDuration) {
-    const secs = parseDurationToSecs(metrics.avgDuration);
-    let finding = `Avg song duration ${metrics.avgDuration}`;
-
-    if (metrics.durationVariance) {
-      const varSecs = parseDurationToSecs(metrics.durationVariance);
-      if (varSecs !== null) {
-        if (varSecs < 15) finding += ' with very low variation';
-        else if (varSecs < 30) finding += ' with low variation';
-        else if (varSecs < 60) finding += ' with normal variation';
-        else finding += ' with high variation';
-      }
-    } else if (metrics.durationRange) {
-      finding += ` (range: ${metrics.durationRange})`;
-    }
-
-    let type = 'green_flag';
-    let strength = 'weak';
-    if (secs !== null) {
-      if (secs < 120) { type = 'red_flag'; strength = 'strong'; }
-      else if (secs < 150) { type = 'red_flag'; strength = 'weak'; }
-      else if (secs >= 180) { type = 'green_flag'; strength = 'moderate'; }
-    }
-
-    signals.push({ finding, source: 'Catalog', type, strength, tags: ['duration_analysis'], detail: '' });
-  }
-
-  return signals;
-}
-
-// ---------------------------------------------------------------------------
-// Section building
-// ---------------------------------------------------------------------------
-
-function padSection(sectionName, signals, allEvidence, minCount = 3) {
-  if (signals.length >= minCount) return signals;
-
-  const candidates = SECTION_PAD_CANDIDATES[sectionName];
-  if (!candidates || !candidates.length) return signals;
-
-  // Only add "Not found on X" if X doesn't appear ANYWHERE in evidence
-  const allSources = new Set(allEvidence.map(e => e.source));
-  const padded = [...signals];
-
-  for (const cand of candidates) {
-    if (padded.length >= minCount) break;
-    if (allSources.has(cand.src)) continue;
-    // Blocklist "not matched" items are positive, not negative
-    const isPositive = sectionName === 'Blocklist Status';
-    padded.push({
-      finding: cand.finding,
-      source: cand.src,
-      type: isPositive ? 'green_flag' : 'red_flag',
-      strength: 'weak',
-      tags: [],
-      detail: '',
-    });
-  }
-
-  return padded;
-}
 
 function buildSections(evidenceList) {
   const sections = {};
   for (const name of SECTION_ORDER) {
-    sections[name] = [];
+    sections[name] = { green: [], red: [], neutral: [] };
   }
+
+  // Deduplicate: track findings to prevent duplicate bullets (Part 7, Rule 6)
+  const seenFindings = new Set();
 
   for (const ev of evidenceList) {
+    const key = (ev.finding || '').toLowerCase().trim();
+    if (seenFindings.has(key) && key.length > 0) continue;
+    seenFindings.add(key);
+
     const section = classifyEvidence(ev);
-    if (sections[section]) {
-      sections[section].push(ev);
+    const bucket = sections[section] || sections['Industry Signals'];
+
+    if (ev.type === 'green_flag') {
+      bucket.green.push(ev);
+    } else if (ev.type === 'red_flag') {
+      bucket.red.push(ev);
     } else {
-      sections['Industry Signals'].push(ev);
+      bucket.neutral.push(ev);
     }
   }
 
-  // Inject creative metric signals if not already covered by existing findings
-  const metrics = buildCreativeMetrics(evidenceList);
-  const creativeSignals = buildCreativeSignals(metrics);
-  const existingFindings = sections['Creative History'].map(e => (e.finding || '').toLowerCase()).join(' ');
-  for (const cs of creativeSignals) {
-    if (cs.tags.includes('duration_analysis') && /duration|avg/.test(existingFindings)) continue;
-    sections['Creative History'].push(cs);
-  }
-
-  // Sort by strength: strong first, then moderate, then weak
+  // Sort within each bucket: strong first, then moderate, then weak (Part 7, Rule 8)
   const strengthOrder = { strong: 0, moderate: 1, weak: 2 };
   for (const name of SECTION_ORDER) {
-    sections[name].sort((a, b) => {
-      const aOrder = strengthOrder[a.strength] ?? 1;
-      const bOrder = strengthOrder[b.strength] ?? 1;
-      return aOrder - bOrder;
-    });
-    if (sections[name].length > 5) {
-      sections[name] = sections[name].slice(0, 5);
-    }
-  }
-
-  // Pad thin sections to at least 3 signals
-  for (const name of SECTION_ORDER) {
-    sections[name] = padSection(name, sections[name], evidenceList);
-  }
-
-  // Final ensure: every section has at least 1 signal
-  for (const name of SECTION_ORDER) {
-    if (sections[name].length === 0) {
-      const fallback = NO_DATA_SIGNALS[name];
-      // Blocklist "no matches" is a positive signal (clean record)
-      const isPositive = name === 'Blocklist Status';
-      sections[name].push({
-        finding: fallback.finding,
-        source: fallback.source,
-        type: isPositive ? 'green_flag' : 'red_flag',
-        strength: 'weak',
-        tags: isPositive ? ['clean_record'] : ['not_found'],
-        detail: '',
-      });
-    }
+    const s = sections[name];
+    const sortFn = (a, b) => (strengthOrder[a.strength] ?? 1) - (strengthOrder[b.strength] ?? 1);
+    s.green.sort(sortFn);
+    s.red.sort(sortFn);
   }
 
   return sections;
 }
 
 function computeCategoryScores(sections, evidenceList, verdict) {
-  const verdictBase = {
-    'Verified Artist': 75,
-    'Likely Authentic': 62,
-    'Inconclusive': 50,
-    'Insufficient Data': 45,
-    'Conflicting Signals': 50,
-    'Suspicious': 35,
-    'Likely Artificial': 20,
-  };
-  const base = verdictBase[verdict] || 50;
+  // Point values per spec Part 4
+  const PTS = { strong: 30, moderate: 15, weak: 5 };
 
   const scores = {};
   for (const name of SECTION_ORDER) {
-    const items = sections[name];
-    let pts = base;
-    for (const ev of items) {
-      if (ev.type === 'green_flag') {
-        pts += ev.strength === 'strong' ? 18 : ev.strength === 'moderate' ? 10 : 5;
-      } else if (ev.type === 'red_flag') {
-        pts -= ev.strength === 'strong' ? 18 : ev.strength === 'moderate' ? 10 : 5;
-      }
+    const s = sections[name];
+    let total = 0;
+    let maxPossible = 0;
+
+    for (const ev of s.green) {
+      const pts = PTS[ev.strength] || 5;
+      total += pts;
+      maxPossible += pts;
     }
-    scores[name] = Math.max(0, Math.min(100, pts));
+    for (const ev of s.red) {
+      const pts = PTS[ev.strength] || 5;
+      total -= pts;
+      maxPossible += pts;
+    }
+    for (const ev of s.neutral) {
+      maxPossible += 5;
+    }
+
+    // Normalize to 0-100
+    if (maxPossible > 0) {
+      scores[name] = Math.max(0, Math.min(100, Math.round((total / maxPossible + 1) / 2 * 100)));
+    } else {
+      scores[name] = 0;
+    }
   }
+
+  // Blocklist is binary per spec: 100 = clean, any hit → deduct
+  const bl = sections['Blocklist Status'];
+  if (bl.red.length > 0) {
+    scores['Blocklist Status'] = 0;
+  } else {
+    scores['Blocklist Status'] = 100;
+  }
+
   return scores;
 }
 
 function countFlags(evidenceList) {
-  let green = 0;
-  let red = 0;
+  let green = 0, red = 0;
   for (const ev of evidenceList) {
     if (ev.type === 'green_flag') green++;
     else if (ev.type === 'red_flag') red++;
@@ -403,78 +262,179 @@ function countFlags(evidenceList) {
   return { green, red };
 }
 
-function getSummaryText(verdict) {
+// Spec Part 2: Standardized verdict description templates
+function getVerdictDescription(verdict, name, greenCount, redCount, topReason) {
+  const n = name || 'This artist';
   switch (verdict) {
     case 'Verified Artist':
-      return 'Strong cross-platform presence with genuine fan engagement and verified identity.';
+      return `${n} shows strong evidence of legitimacy across multiple platforms.`;
     case 'Likely Authentic':
-      return 'Multiple legitimacy indicators found across platforms with real fan activity.';
+      return `${n} appears legitimate. ${greenCount} positive and ${redCount} negative signals.`;
     case 'Inconclusive':
-      return 'Mixed or insufficient evidence \u2014 further investigation recommended.';
     case 'Insufficient Data':
-      return 'Too few data sources available to make a confident determination.';
     case 'Conflicting Signals':
-      return 'Conflicting evidence found \u2014 positive and negative signals are balanced.';
+      return `Evidence on ${n} is mixed \u2014 ${greenCount} positive and ${redCount} negative signals.`;
     case 'Suspicious':
-      return 'Multiple warning signs detected. Patterns suggest possible artificial activity.';
+      return `${n} shows warning signs. Found with ${redCount} red flags.`;
     case 'Likely Artificial':
-      return 'Strong indicators of artificial or manufactured activity detected.';
+      return `${n} has strong indicators of being artificial.${topReason ? ` ${topReason}.` : ''}`;
     default:
       return '';
   }
+}
+
+// Extract the top red flag reason for Likely Artificial verdict description
+function getTopRedReason(evidenceList) {
+  for (const ev of evidenceList) {
+    if (ev.type !== 'red_flag' || ev.strength !== 'strong') continue;
+    if (ev.tags?.includes('pfc_label')) return 'PFC label match';
+    if (ev.tags?.includes('known_ai_artist')) return 'Known AI artist match';
+    if (ev.tags?.includes('content_farm')) return 'Content farm pattern';
+    if (ev.tags?.includes('stream_farm')) return 'Stream farm pattern';
+  }
+  return '';
 }
 
 // ---------------------------------------------------------------------------
 // Sub-components
 // ---------------------------------------------------------------------------
 
-function ScoreBadge({ score, verdict }) {
+function ScoreBadge({ score, verdict, confidence }) {
   const color = getVerdictColor(verdict);
   const bg = getVerdictBadgeBg(verdict);
+
+  // Confidence visual treatment per spec Part 2
+  let borderStyle = '2px solid';
+  let opacity = 1;
+  if (confidence === 'low') {
+    borderStyle = '2px dashed';
+    opacity = 0.7;
+  } else if (confidence === 'medium') {
+    // Standard — no change
+  }
+  // High = solid, full opacity (default)
+
   return (
     <div
       className="artist-score-badge"
-      style={{ background: bg, color, borderColor: color }}
+      style={{
+        background: bg,
+        color,
+        borderColor: color,
+        borderStyle: borderStyle.split(' ')[1] || 'solid',
+        borderWidth: '2px',
+        opacity,
+      }}
     >
       {score}
     </div>
   );
 }
 
-function SignalItem({ evidence }) {
+// Mini 6-segment category bar (spec Part 2)
+function MiniCategoryBar({ scores }) {
+  return (
+    <div className="mini-category-bar" title="Category scores: Platform | Fan | Creative | IRL | Industry | Blocklist">
+      {SECTION_ORDER.map(name => {
+        const score = scores[name] ?? 0;
+        const isBlocklist = name === 'Blocklist Status';
+        const color = isBlocklist ? getBlocklistColor(score) : getScoreColor(score, score > 0);
+        return (
+          <div
+            key={name}
+            className="mini-category-segment"
+            style={{ background: color }}
+            title={`${name}: ${score}`}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+// Platform checkmarks row with clickable links (spec Part 3)
+function PlatformCheckmarks({ result, sources }) {
+  const platformList = [
+    { name: 'Deezer', key: 'Deezer' },
+    { name: 'MusicBrainz', key: 'MusicBrainz' },
+    { name: 'Genius', key: 'Genius' },
+    { name: 'Last.fm', key: 'Last.fm' },
+    { name: 'Discogs', key: 'Discogs' },
+    { name: 'Setlist.fm', key: 'Setlist.fm' },
+    { name: 'Wikipedia', key: 'Wikipedia' },
+  ];
+
+  const ext = result.external_data || {};
+  const artistName = result.artist_name || '';
+
+  return (
+    <div className="platform-checkmarks">
+      {platformList.map(({ name, key }) => {
+        const found = sources?.[key];
+        const urlBuilder = PLATFORM_URLS[key];
+        const url = found && urlBuilder ? urlBuilder(ext, artistName) : null;
+
+        const icon = found ? '\u2713' : '\u2717';
+        const color = found ? '#22c55e' : '#444';
+
+        const content = (
+          <span
+            className="platform-check-item"
+            style={{ color, borderColor: color + '33' }}
+          >
+            <span className="platform-check-icon">{icon}</span>
+            {name}
+          </span>
+        );
+
+        if (url) {
+          return (
+            <a key={key} href={url} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+              {content}
+            </a>
+          );
+        }
+        return <span key={key}>{content}</span>;
+      })}
+    </div>
+  );
+}
+
+// Signal item with accessibility icon
+function SignalItem({ evidence, isNegativeLine }) {
   const level = getSignalLevel(evidence.type, evidence.strength);
-  const color = getSignalColor(level);
-  const icon = getSignalIcon(level);
-  const showSource = evidence.source
-    && evidence.source !== 'Analysis'
-    && evidence.source !== 'Spotify';
+  const color = isNegativeLine ? '#9ca3af' : getSignalColor(level);
+  const icon = isNegativeLine ? '\u2014' : getSignalIcon(level);
 
   return (
     <div className="signal-item" style={{ color }}>
       <span className="signal-icon">{icon}</span>
       <span className="signal-content">
         <span className="signal-text">{evidence.finding}</span>
-        {showSource && (
-          <span className="signal-source">{evidence.source}</span>
-        )}
       </span>
     </div>
   );
 }
 
-function SectionBar({ name, score }) {
-  const color = getScoreColor(score);
+// Section bar with 4-tier color + accessibility icon
+function SectionBar({ name, score, isBlocklist }) {
+  const color = isBlocklist ? getBlocklistColor(score) : getScoreColor(score, score > 0);
+  const icon = isBlocklist
+    ? (score >= 100 ? '\u2713' : '\u2717')
+    : getScoreIcon(score, score > 0);
   const pct = Math.max(0, Math.min(100, score));
-  const icon = SECTION_ICONS[name] || '';
+  const sectionIcon = SECTION_ICONS[name] || '';
 
   return (
     <div className="section-header-bar">
       <div className="section-bar-label">
         <span className="section-bar-name">
-          {icon && <span className="section-bar-icon">{icon}</span>}
+          {sectionIcon && <span className="section-bar-icon">{sectionIcon}</span>}
           {name}
         </span>
-        <span className="section-bar-score" style={{ color }}>{score}</span>
+        <span className="section-bar-score" style={{ color }}>
+          <span className="section-bar-indicator">{icon}</span> {score}
+        </span>
       </div>
       <div className="section-bar-track">
         <div
@@ -482,26 +442,6 @@ function SectionBar({ name, score }) {
           style={{ width: `${pct}%`, background: color }}
         />
       </div>
-    </div>
-  );
-}
-
-function FlagSummary({ green, red, confidence }) {
-  return (
-    <div className="artist-card-flag-summary">
-      <span className="flag-count flag-count--green">
-        {green} green
-      </span>
-      <span className="flag-count-divider">/</span>
-      <span className="flag-count flag-count--red">
-        {red} red
-      </span>
-      {confidence && (
-        <>
-          <span className="flag-count-divider">&middot;</span>
-          <span className="flag-count flag-count--conf">{confidence} conf.</span>
-        </>
-      )}
     </div>
   );
 }
@@ -529,21 +469,27 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
   const confidence = result.confidence || '';
   const threatCategory = result.threat_category || '';
   const verdictColor = getVerdictColor(verdict);
-  const summaryText = getSummaryText(verdict);
   const flags = useMemo(() => countFlags(evidence), [evidence]);
+  const topReason = useMemo(() => getTopRedReason(evidence), [evidence]);
 
   const categoryScores = useMemo(
     () => computeCategoryScores(sections, evidence, verdict),
     [sections, evidence, verdict],
   );
 
-  const tags = [verdict];
-  if (threatCategory && threatCategory !== 'None' && threatCategory !== '') {
-    tags.push(threatCategory);
-  }
+  const descriptionText = getVerdictDescription(
+    verdict, result.artist_name, flags.green, flags.red, topReason
+  );
+
+  // Threat category tag only for Suspicious/Likely Artificial (spec Part 2)
+  const showThreat = (verdict === 'Suspicious' || verdict === 'Likely Artificial')
+    && threatCategory && threatCategory !== 'None';
+
+  const sources = result.sources_reached || {};
 
   return (
     <div className="artist-card">
+      {/* === COLLAPSED STATE (spec Part 2) === */}
       <div
         className={`artist-card-header ${expanded ? 'artist-card-header--expanded' : ''}`}
         onClick={() => setExpanded(!expanded)}
@@ -551,29 +497,34 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
         tabIndex={0}
         onKeyDown={e => { if (e.key === 'Enter' || e.key === ' ') setExpanded(!expanded); }}
       >
-        <ScoreBadge score={score} verdict={verdict} />
+        <ScoreBadge score={score} verdict={verdict} confidence={confidence} />
 
         <div className="artist-card-header-content">
           <span className="artist-card-name">{result.artist_name}</span>
+          <div className="artist-card-description">{descriptionText}</div>
           <div className="artist-card-tags">
-            {tags.map((tag, i) => (
+            <span
+              className="artist-card-tag"
+              style={{
+                background: getVerdictBadgeBg(verdict),
+                color: verdictColor,
+              }}
+            >
+              {verdict}
+            </span>
+            {showThreat && (
               <span
-                key={i}
                 className="artist-card-tag"
                 style={{
-                  background: i === 0 ? getVerdictBadgeBg(verdict) : 'rgba(139,148,158,0.15)',
-                  color: i === 0 ? verdictColor : '#8b949e',
+                  background: 'rgba(139,148,158,0.15)',
+                  color: '#8b949e',
                 }}
               >
-                {tag}
-              </span>
-            ))}
-            {confidence && (
-              <span className="artist-card-tag artist-card-tag--confidence">
-                {confidence} confidence
+                {threatCategory}
               </span>
             )}
           </div>
+          <MiniCategoryBar scores={categoryScores} />
         </div>
 
         <button
@@ -585,37 +536,90 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
         </button>
       </div>
 
+      {/* === EXPANDED STATE (spec Parts 3, 6, 7) === */}
       {expanded && (
         <div className="artist-card-body">
+          {/* 1. Platform checkmarks row with clickable links */}
+          <PlatformCheckmarks result={result} sources={sources} />
+
+          {/* 2. Radar chart + category sections layout */}
           <div className="artist-card-top">
             <RadarChart scores={categoryScores} color={verdictColor} />
-            <div className="artist-card-summary-area">
-              <div className="artist-card-summary" style={{ color: verdictColor }}>
-                {summaryText}
-              </div>
-              <FlagSummary
-                green={flags.green}
-                red={flags.red}
-                confidence={confidence}
-              />
+            <div className="artist-card-sections-col">
+              {/* 3. Six category sections */}
+              {SECTION_ORDER.map(sectionName => {
+                const s = sections[sectionName];
+                const sectionScore = categoryScores[sectionName] ?? 0;
+                const isBlocklist = sectionName === 'Blocklist Status';
+
+                // Build ordered signal list: green first, neutral, red, then negative line (Part 7, Rule 8)
+                const greenItems = s.green;
+                const redItems = s.red;
+
+                // Build consolidated negative bullet (Part 7, Rules 2-4)
+                const negativeLines = [];
+                if (sectionName !== 'Blocklist Status') {
+                  for (const ev of redItems) {
+                    if (ev.finding && /not found|no |0 /.test(ev.finding.toLowerCase())) {
+                      negativeLines.push(ev.finding);
+                    }
+                  }
+                }
+
+                return (
+                  <div key={sectionName} className="artist-section">
+                    <SectionBar
+                      name={sectionName}
+                      score={sectionScore}
+                      isBlocklist={isBlocklist}
+                    />
+                    <div className="artist-section-signals">
+                      {/* Green flags first */}
+                      {greenItems.map((ev, i) => (
+                        <SignalItem key={`g-${i}`} evidence={ev} />
+                      ))}
+                      {/* Red flags (non-"not found" items) */}
+                      {redItems.filter(ev => !negativeLines.includes(ev.finding)).map((ev, i) => (
+                        <SignalItem key={`r-${i}`} evidence={ev} />
+                      ))}
+                      {/* Consolidated negative line (Part 7, Rule 3) */}
+                      {negativeLines.length > 0 && (
+                        <SignalItem
+                          evidence={{
+                            finding: negativeLines.join(' \u00B7 '),
+                            type: 'red_flag',
+                            strength: 'weak',
+                          }}
+                          isNegativeLine
+                        />
+                      )}
+                      {/* Blocklist: show each match separately (Part 6.6) */}
+                      {isBlocklist && redItems.length === 0 && (
+                        <SignalItem
+                          evidence={{
+                            finding: 'Clean across all blocklists',
+                            type: 'green_flag',
+                            strength: 'moderate',
+                          }}
+                        />
+                      )}
+                      {/* If section has no signals at all */}
+                      {greenItems.length === 0 && redItems.length === 0 && !isBlocklist && (
+                        <SignalItem
+                          evidence={{
+                            finding: `No data available for ${sectionName.toLowerCase()}`,
+                            type: 'neutral',
+                            strength: 'weak',
+                          }}
+                          isNegativeLine
+                        />
+                      )}
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
-
-          {SECTION_ORDER.map(sectionName => {
-            const signals = sections[sectionName];
-            const sectionScore = categoryScores[sectionName] ?? 0;
-
-            return (
-              <div key={sectionName} className="artist-section">
-                <SectionBar name={sectionName} score={sectionScore} />
-                <div className="artist-section-signals">
-                  {signals.map((ev, i) => (
-                    <SignalItem key={i} evidence={ev} />
-                  ))}
-                </div>
-              </div>
-            );
-          })}
         </div>
       )}
     </div>

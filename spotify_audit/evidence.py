@@ -398,43 +398,52 @@ class ArtistEvaluation:
 def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
     """Compute 0-100 scores for 6 signal categories.
 
-    Categories (v0.8 — Online Identity removed, Blocklist Status added):
+    Scoring tables per UI Spec Round 2, Part 5.
+
+    Categories:
         Platform Presence: Where does this artist exist across the music ecosystem?
         Fan Engagement: Do real humans listen to and engage with this artist?
         Creative History: Does this artist have a legitimate creative body of work?
         IRL Presence: Does this artist exist in the physical world?
         Industry Signals: Is the artist recognized by the music industry infrastructure?
         Blocklist Status: Does this artist match any known fraud databases?
-
-    Former "Online Identity" data points redistributed:
-        - YouTube, Wikipedia, social media → Platform Presence
-        - Discogs bio with career keywords → Industry Signals
     """
     ext = ev.external_data or ExternalData()
 
     def _clamp(v: float) -> int:
         return max(0, min(100, int(v)))
 
-    # --- Platform Presence (0-100) ---
-    # Core platform count (8 platforms max: Deezer, MusicBrainz, Genius,
-    # Last.fm, Discogs, Setlist.fm, YouTube, Wikipedia)
-    platform_pts = ev.platform_presence.count() * 8  # base ~8 pts per platform
+    # --- 5.1 Platform Presence (0-100) ---
+    platform_pts = 0
 
-    # YouTube (moved from Online Identity)
+    # Deezer exists
+    if ev.platform_presence.deezer:
+        platform_pts += 5
+    else:
+        platform_pts -= 5
+
+    # YouTube channel exists
     if ext.youtube_channel_found:
-        platform_pts += 10
-        if ext.youtube_subscriber_count >= 10_000:
-            platform_pts += 8
+        platform_pts += 5
+    else:
+        platform_pts -= 5
 
-    # Wikipedia (moved from Online Identity)
+    # Wikipedia article exists
     if ext.wikipedia_found:
-        platform_pts += 12
-        if ext.wikipedia_length >= 5000:
-            platform_pts += 5
-    elif any("wikipedia" in v.lower() for v in ext.musicbrainz_urls.values()):
-        platform_pts += 8
+        platform_pts += 15
+        # Bonus: Wikipedia >= 5,000 words (~30,000 bytes)
+        if ext.wikipedia_length >= 30000:
+            platform_pts += 15
+    else:
+        platform_pts -= 5
 
-    # Social media presence (moved from Online Identity)
+    # Genius profile exists
+    if ext.genius_found:
+        platform_pts += 5
+    else:
+        platform_pts -= 5
+
+    # Social media presence
     social_count = 0
     if ext.genius_facebook_name:
         social_count += 1
@@ -448,155 +457,216 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
         if any(s in url.lower() for s in ["facebook", "instagram", "twitter", "youtube", "bandcamp"]):
             social_count += 1
     social_count = min(social_count, 6)  # cap duplicates
-    platform_pts += social_count * 3
+    if social_count >= 4:
+        platform_pts += 30  # >=2 social (15) + >=4 bonus (15)
+    elif social_count >= 2:
+        platform_pts += 15
 
-    # Genius followers as platform signal
-    if ext.genius_followers_count >= 100:
-        platform_pts += 5
+    # Bio analysis
+    bio_count = 0
+    if ext.wikipedia_found and ext.wikipedia_length > 0:
+        bio_count += 1
+    if len(ext.discogs_profile) >= 50:
+        bio_count += 1
+    if ext.genius_found and ext.genius_followers_count >= 0:
+        bio_count += 1  # Genius has profile info
+
+    if bio_count >= 3:
+        platform_pts += 30  # bio exists (15) + 3+ platforms bonus (15)
+    elif bio_count >= 1:
+        platform_pts += 15  # bio exists on at least one platform
+    else:
+        platform_pts -= 30  # no bio on any platform (strong penalty)
+
+    # Real name known
+    if ext.discogs_realname:
+        platform_pts += 15
+
+    # Bandcamp presence
+    for _rel_type, url in ext.musicbrainz_urls.items():
+        if "bandcamp" in url.lower():
+            platform_pts += 5
+            break
 
     platform_score = _clamp(platform_pts)
 
-    # --- Fan Engagement (0-100) ---
-    fans = ev.platform_presence.deezer_fans or 0
+    # --- 5.2 Fan Engagement (0-100) ---
     fan_pts = 0
-    if fans >= 1_000_000:
-        fan_pts = 50
-    elif fans >= 100_000:
-        fan_pts = 40
-    elif fans >= 10_000:
-        fan_pts = 25
-    elif fans >= 1_000:
-        fan_pts = 15
+    fans = ev.platform_presence.deezer_fans or 0
+
+    # Last.fm
+    if ext.lastfm_found:
+        fan_pts += 15
+        # Listeners thresholds
+        if ext.lastfm_listeners >= 100_000:
+            fan_pts += 30  # 10K (15) + 100K bonus (15)
+        elif ext.lastfm_listeners >= 10_000:
+            fan_pts += 15
+
+        # Play/listener ratio
+        ratio = ext.lastfm_listener_play_ratio
+        if 2.0 <= ratio <= 15.0:
+            fan_pts += 15  # healthy range
+        elif ratio < 2.0 and ratio > 0:
+            fan_pts -= 5  # low repeat
+        elif ratio > 15.0:
+            fan_pts -= 15  # suspicious
+    else:
+        # Not found on Last.fm
+        if fans == 0:
+            fan_pts -= 30  # Not found AND 0 Deezer fans (strong)
+        else:
+            fan_pts -= 15  # Not found on Last.fm alone
+
+    # Deezer fans
+    if fans >= 100:
+        fan_pts += 15
     elif fans > 0:
-        fan_pts = 5
-
-    # Last.fm scrobble engagement
-    if ext.lastfm_listener_play_ratio >= 10:
-        fan_pts += 20
-    elif ext.lastfm_listener_play_ratio >= 4:
-        fan_pts += 10
-    elif ext.lastfm_listeners >= 100:
         fan_pts += 5
-
-    # Genius followers
-    if ext.genius_followers_count >= 1_000:
-        fan_pts += 20
-    elif ext.genius_followers_count >= 100:
-        fan_pts += 10
-
-    # Genius song count as proxy for fan interest
-    if ext.genius_song_count >= 20:
-        fan_pts += 10
-    elif ext.genius_song_count >= 5:
-        fan_pts += 5
+    elif fans == 0 and ext.lastfm_listeners >= 10_000:
+        fan_pts -= 15  # 0 Deezer fans despite Last.fm audience
 
     engagement_score = _clamp(fan_pts)
 
-    # --- Creative History (0-100) ---
-    # Uses structured tags — no string matching on finding text
+    # --- 5.3 Creative History (0-100) ---
     creative_pts = 0
 
+    # Album count (from evidence tags)
     for e in ev.green_flags:
         if "catalog_albums" in e.tags:
-            creative_pts += 25 if e.strength in ("strong", "moderate") else 15
-        if "physical_release" in e.tags:
-            creative_pts += 30 if e.strength == "strong" else 15
-        if "genius_credits" in e.tags:
-            creative_pts += {"strong": 20, "moderate": 10}.get(e.strength, 5)
-        if "collaboration" in e.tags:
-            creative_pts += 10
+            if e.strength in ("strong", "moderate"):
+                creative_pts += 30  # >=1 album (15) + >=3 albums bonus (15)
+            else:
+                creative_pts += 15  # >=1 album
+            break
 
+    # Track duration analysis (from evidence tags)
     for e in ev.red_flags:
-        if "content_farm" in e.tags or "stream_farm" in e.tags:
+        if "stream_farm" in e.tags:
+            creative_pts -= 30  # avg < 90s
+            break
+    else:
+        # Check for normal duration (green flag)
+        for e in ev.green_flags + ev.neutral_notes:
+            if e.finding and "normal track" in e.finding.lower():
+                creative_pts += 5
+                break
+
+    # Cookie-cutter durations
+    for e in ev.red_flags:
+        if "cookie_cutter" in e.tags:
+            creative_pts -= 15
+            break
+
+    # Content farm pattern (singles only)
+    for e in ev.red_flags:
+        if "content_farm" in e.tags:
+            if e.strength == "strong":
+                creative_pts -= 30  # >= 40 singles, 0 albums
+            else:
+                creative_pts -= 15  # >= 20 singles, 0 albums
+            break
+
+    # Empty catalog
+    for e in ev.red_flags:
+        if "empty_catalog" in e.tags:
             creative_pts -= 30
-        elif "empty_catalog" in e.tags:
-            creative_pts -= 20
+            break
+
+    # Collaborations
+    for e in ev.green_flags:
+        if "collaboration" in e.tags:
+            creative_pts += 15
+            break
+
+    # Genius presence
+    if ext.genius_found and ext.genius_song_count >= 1:
+        creative_pts += 5
 
     creative_score = _clamp(creative_pts)
 
-    # --- IRL Presence (0-100) --- (renamed from Live Performance)
+    # --- 5.4 IRL Presence (0-100) ---
     live_pts = 0
+    has_concerts = False
+    has_physical = False
 
     # Setlist.fm
-    if ext.setlistfm_total_shows >= 50:
-        live_pts += 40
-    elif ext.setlistfm_total_shows >= 10:
-        live_pts += 25
+    if ext.setlistfm_total_shows >= 10:
+        live_pts += 30  # established touring (strong)
+        has_concerts = True
     elif ext.setlistfm_total_shows >= 1:
-        live_pts += 10
-
-    # Songkick (additive — different data source)
-    if ext.songkick_total_past_events >= 50:
-        live_pts += 30
+        live_pts += 15  # any live history (moderate)
+        has_concerts = True
+    # Also check Songkick as supplementary concert source
     elif ext.songkick_total_past_events >= 10:
-        live_pts += 20
+        live_pts += 30
+        has_concerts = True
     elif ext.songkick_total_past_events >= 1:
-        live_pts += 8
+        live_pts += 15
+        has_concerts = True
 
-    # Currently on tour (Songkick)
-    if ext.songkick_on_tour:
-        live_pts += 10
-
-    # Physical releases on Discogs
+    # Physical releases on Discogs (strong signal)
     if ext.discogs_physical_releases >= 5:
-        live_pts += 15
+        live_pts += 45  # >=1 physical (30) + >=5 bonus (15)
+        has_physical = True
     elif ext.discogs_physical_releases >= 1:
-        live_pts += 8
+        live_pts += 30  # tangible evidence (strong)
+        has_physical = True
 
-    # Tour names
-    if ext.setlistfm_tour_names:
-        live_pts += 15
-
-    # Geographic spread (best of Setlist.fm or Songkick)
-    countries = max(len(ext.setlistfm_venue_countries), len(ext.songkick_venue_countries))
-    if countries >= 5:
-        live_pts += 25
-    elif countries >= 2:
-        live_pts += 15
-    elif countries >= 1:
-        live_pts += 5
+    # Penalties for missing
+    if not has_concerts and not has_physical:
+        live_pts -= 30  # no concerts AND no physical (strong)
+    elif not has_concerts:
+        live_pts -= 15  # no concerts
+    elif not has_physical:
+        live_pts -= 15  # no physical releases
 
     live_score = _clamp(live_pts)
 
-    # --- Industry Signals (0-100) ---
+    # --- 5.5 Industry Signals (0-100) ---
     industry_pts = 0
+
+    # MusicBrainz entry
+    if ext.musicbrainz_found:
+        industry_pts += 5
+
+        # MusicBrainz completeness (relationship count)
+        mb_rel_count = getattr(ext, 'musicbrainz_relationship_count', 0)
+        if mb_rel_count >= 10:
+            industry_pts += 30  # rich profile (strong)
+        elif mb_rel_count >= 3:
+            industry_pts += 15  # moderate profile
+        else:
+            industry_pts -= 5  # stub (weak)
+
+        # Complete metadata (type + country + dates)
+        has_complete = all([ext.musicbrainz_type, ext.musicbrainz_country,
+                           ext.musicbrainz_begin_date])
+        if has_complete:
+            industry_pts += 15
+    else:
+        industry_pts -= 15  # no MusicBrainz entry
 
     # ISNI
     if ext.musicbrainz_isnis:
-        industry_pts += 20
+        industry_pts += 30
 
     # IPI
     if ext.musicbrainz_ipis:
-        industry_pts += 20
+        industry_pts += 30
 
     # ASCAP/BMI registration
     if ext.pro_checked:
         if ext.pro_songwriter_registered:
-            industry_pts += 15
-            if ext.pro_songwriter_share_pct >= 30:
-                industry_pts += 5  # normal split bonus
-        elif ext.musicbrainz_ipis:
-            pass  # already counted via IPI above
-        else:
-            industry_pts -= 10  # not found penalty
+            industry_pts += 30
+            # PFC publisher match overrides
+            if ext.pro_pfc_publisher_match:
+                industry_pts -= 30  # net zero from PRO, plus penalty
+        # No ISNI, IPI, or PRO
+    if not ext.musicbrainz_isnis and not ext.musicbrainz_ipis and not ext.pro_songwriter_registered:
+        industry_pts -= 5  # weak negative for missing all identifiers
 
-    # MusicBrainz metadata richness
-    mb_rich = sum([
-        bool(ext.musicbrainz_type),
-        bool(ext.musicbrainz_country),
-        bool(ext.musicbrainz_begin_date),
-        len(ext.musicbrainz_labels) >= 1,
-        len(ext.musicbrainz_genres) >= 1,
-    ])
-    industry_pts += mb_rich * 5
-
-    # Genius profile depth
-    if ext.genius_song_count >= 20:
-        industry_pts += 10
-    elif ext.genius_song_count >= 5:
-        industry_pts += 5
-
-    # Discogs bio with career keywords (moved from Online Identity)
+    # Discogs bio with career keywords (kept from previous version)
     if len(ext.discogs_profile) >= 200:
         industry_pts += 10
     elif len(ext.discogs_profile) >= 50:
@@ -615,24 +685,28 @@ def compute_category_scores(ev: ArtistEvaluation) -> dict[str, int]:
 
     industry_score = _clamp(industry_pts)
 
-    # --- Blocklist Status (0-100) --- (new category)
-    # 100 = completely clean, 0 = matched on all blocklists
-    blocklist_pts = 100  # start clean, deduct for hits
+    # --- 5.6 Blocklist Status (0-100) ---
+    # Starts at 100. Any match → binary red display.
+    blocklist_pts = 100
 
     for e in ev.red_flags:
         tag_set = set(e.tags) if e.tags else set()
         if tag_set & {"known_ai_artist"}:
-            blocklist_pts -= 40
+            blocklist_pts -= 100  # artist name match → 0
         if tag_set & {"pfc_label", "known_ai_label"}:
-            blocklist_pts -= 30
+            blocklist_pts -= 100  # label match → 0
         if tag_set & {"pfc_songwriter"}:
-            blocklist_pts -= 20
-        if tag_set & {"entity_confirmed_bad"}:
-            blocklist_pts -= 30
-        if tag_set & {"entity_suspected"}:
-            blocklist_pts -= 15
+            blocklist_pts -= 80
         if tag_set & {"pfc_publisher"}:
-            blocklist_pts -= 25
+            blocklist_pts -= 80
+        if tag_set & {"isrc_pfc_registrant"}:
+            blocklist_pts -= 60
+        if tag_set & {"entity_bad_network"}:
+            blocklist_pts -= 50
+        if tag_set & {"entity_confirmed_bad"}:
+            blocklist_pts -= 100
+        if tag_set & {"entity_suspected"}:
+            blocklist_pts -= 50
 
     blocklist_score = _clamp(blocklist_pts)
 

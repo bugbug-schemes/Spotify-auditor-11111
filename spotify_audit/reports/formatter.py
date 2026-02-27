@@ -200,13 +200,16 @@ def _external_data_to_dict(ext: ExternalData) -> dict:
 
 
 def _evidence_to_dict(e: Evidence) -> dict:
-    return {
+    d = {
         "finding": e.finding,
         "source": e.source,
         "type": e.evidence_type,
         "strength": e.strength,
         "detail": e.detail,
     }
+    if e.tags:
+        d["tags"] = list(e.tags)
+    return d
 
 
 # ---------------------------------------------------------------------------
@@ -359,12 +362,13 @@ def _md_key_evidence(ev: ArtistEvaluation) -> str:
 
 _VERDICT_COLORS = {
     "Verified Artist": "#22c55e",
-    "Likely Authentic": "#3b82f6",
-    "Inconclusive": "#94a3b8",
-    "Insufficient Data": "#94a3b8",
-    "Conflicting Signals": "#94a3b8",
-    "Suspicious": "#f59e0b",
+    "Likely Authentic": "#86efac",
+    "Inconclusive": "#fbbf24",
+    "Insufficient Data": "#fbbf24",
+    "Conflicting Signals": "#fbbf24",
+    "Suspicious": "#f97316",
     "Likely Artificial": "#ef4444",
+    "Not Scanned": "#9ca3af",
 }
 
 _THREAT_COLORS = {
@@ -543,8 +547,8 @@ def to_html(report: PlaylistReport) -> str:
 
     # Compute metrics
     flagged = report.suspicious + report.likely_artificial
-    contamination = (flagged / report.total_unique_artists * 100) if report.total_unique_artists else 0
-    total_api_calls = sum(report.api_source_counts.values()) if report.api_source_counts else 0
+    skipped_count = len(report.skipped_artists) if report.skipped_artists else 0
+    total_bar = report.total_unique_artists + skipped_count
 
     # Derive scan tier from artist data
     has_deep = any("deep" in a.tiers_completed for a in report.artists)
@@ -556,14 +560,16 @@ def to_html(report: PlaylistReport) -> str:
         ev = a.evaluation
         artist_cards_html.append(_build_card(a, ev, idx))
 
-    # Verdict bar segments
+    # Verdict bar segments (spec Part 1: updated colors + Not Scanned segment)
     verdict_segments = [
         ("Verified Artist", report.verified_artists, "#22c55e"),
-        ("Likely Authentic", report.likely_authentic, "#3b82f6"),
-        ("Inconclusive", report.inconclusive, "#94a3b8"),
-        ("Suspicious", report.suspicious, "#f59e0b"),
+        ("Likely Authentic", report.likely_authentic, "#86efac"),
+        ("Inconclusive", report.inconclusive, "#fbbf24"),
+        ("Suspicious", report.suspicious, "#f97316"),
         ("Likely Artificial", report.likely_artificial, "#ef4444"),
     ]
+    if skipped_count > 0:
+        verdict_segments.append(("Not Scanned", skipped_count, "#9ca3af"))
 
     # Threat bar segments
     threat_segments = [
@@ -572,16 +578,7 @@ def to_html(report: PlaylistReport) -> str:
                       "AI Fraud Farm", "AI Impersonation"]
     ]
 
-    # Data sources panel
-    sources_html = ""
-    if report.api_source_counts:
-        dots = []
-        for name, count in report.api_source_counts.items():
-            dots.append(f'<span class="src-dot"><span class="dot-ok"></span> {_esc(name)} ({count})</span>')
-        sources_html = '<div class="sources-row">' + " ".join(dots) + '</div>'
-        sources_html += f'<div style="color:#556;font-size:0.75rem;margin-top:4px">Total: {total_api_calls} API calls</div>'
-
-    # Duration
+    # Duration (kept for footer only)
     duration_str = ""
     if report.scan_duration_seconds:
         mins = int(report.scan_duration_seconds // 60)
@@ -1105,7 +1102,7 @@ body {{
     </div>
   </div>
   <div class="metrics-col">
-    <!-- Key metrics -->
+    <!-- Key metrics (spec Part 1: removed Contamination, Scan Time, API Calls) -->
     <div class="metric-row">
       <div class="metric-card">
         <div class="metric-value">{report.total_tracks}</div>
@@ -1113,38 +1110,31 @@ body {{
       </div>
       <div class="metric-card">
         <div class="metric-value">{report.total_unique_artists}</div>
-        <div class="metric-label">Artists</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-value" style="color:{('#ef4444' if contamination > 30 else '#f59e0b' if contamination > 10 else '#22c55e')}">{contamination:.0f}%</div>
-        <div class="metric-label">Contamination</div>
+        <div class="metric-label">Analyzed</div>
       </div>
       <div class="metric-card">
         <div class="metric-value">{flagged}</div>
         <div class="metric-label">Flagged</div>
       </div>
-      {f'<div class="metric-card"><div class="metric-value">{duration_str}</div><div class="metric-label">Scan Time</div></div>' if duration_str else ''}
-      {f'<div class="metric-card"><div class="metric-value">{total_api_calls}</div><div class="metric-label">API Calls</div></div>' if total_api_calls else ''}
+      {f'<div class="metric-card"><div class="metric-value" style="color:#f97316">{skipped_count} &#9888;</div><div class="metric-label">Timed Out</div></div>' if skipped_count else ''}
     </div>
 
-    <!-- Verdict bar -->
+    <!-- Verdict bar (spec Part 1: updated colors + Not Scanned segment) -->
     <div class="bar-section">
       <div class="bar-label">Verdict Breakdown</div>
-      {_stacked_bar(verdict_segments, report.total_unique_artists)}
+      {_stacked_bar(verdict_segments, total_bar)}
       <div class="legend">
         <span><span class="legend-dot" style="background:#22c55e"></span>Verified</span>
-        <span><span class="legend-dot" style="background:#3b82f6"></span>Authentic</span>
-        <span><span class="legend-dot" style="background:#94a3b8"></span>Inconclusive</span>
-        <span><span class="legend-dot" style="background:#f59e0b"></span>Suspicious</span>
+        <span><span class="legend-dot" style="background:#86efac"></span>Authentic</span>
+        <span><span class="legend-dot" style="background:#fbbf24"></span>Inconclusive</span>
+        <span><span class="legend-dot" style="background:#f97316"></span>Suspicious</span>
         <span><span class="legend-dot" style="background:#ef4444"></span>Artificial</span>
+        {f'<span><span class="legend-dot" style="background:#9ca3af"></span>Not Scanned</span>' if skipped_count else ''}
       </div>
     </div>
 
-    <!-- Threat bar (only if flagged artists) -->
+    <!-- Threat bar (nested under flagged, only if flagged artists) -->
     {_threat_bar_section(threat_segments, flagged) if flagged else ''}
-
-    <!-- Data sources -->
-    {f'<div class="bar-section"><div class="bar-label">Data Sources</div>{sources_html}</div>' if sources_html else ''}
   </div>
 </div>
 
@@ -1204,9 +1194,9 @@ body {{
     <table class="verdict-table">
       <tr><th>Verdict</th><th>Score</th><th>Meaning</th></tr>
       <tr><td style="color:#22c55e">Verified Artist</td><td>82&ndash;100</td><td>Strong evidence of legitimacy across multiple independent sources.</td></tr>
-      <tr><td style="color:#3b82f6">Likely Authentic</td><td>58&ndash;81</td><td>More green flags than red. Probably a real artist.</td></tr>
-      <tr><td style="color:#94a3b8">Inconclusive</td><td>38&ndash;57</td><td>Insufficient data or conflicting signals.</td></tr>
-      <tr><td style="color:#f59e0b">Suspicious</td><td>18&ndash;37</td><td>More red flags than green. Probably fraudulent.</td></tr>
+      <tr><td style="color:#86efac">Likely Authentic</td><td>58&ndash;81</td><td>More green flags than red. Probably a real artist.</td></tr>
+      <tr><td style="color:#fbbf24">Inconclusive</td><td>38&ndash;57</td><td>Insufficient data or conflicting signals.</td></tr>
+      <tr><td style="color:#f97316">Suspicious</td><td>18&ndash;37</td><td>More red flags than green. Probably fraudulent.</td></tr>
       <tr><td style="color:#ef4444">Likely Artificial</td><td>0&ndash;17</td><td>Known bad actor match, or overwhelming evidence of fraud.</td></tr>
     </table>
 
@@ -1225,7 +1215,17 @@ body {{
 <!-- Artist list -->
 <div class="list-controls">
   <h2>Artist Analysis ({len(sorted_artists)})</h2>
-  <button class="toggle-btn" onclick="toggleAll()">Expand All</button>
+  <div style="display:flex;gap:6px;align-items:center;flex-wrap:wrap">
+    <span style="font-size:0.72rem;color:var(--text-dim)">Sort:</span>
+    <button class="toggle-btn" onclick="sortCards('score-asc')" id="sort-score-asc">Score &#8593;</button>
+    <button class="toggle-btn" onclick="sortCards('score-desc')" id="sort-score-desc">Score &#8595;</button>
+    <button class="toggle-btn" onclick="sortCards('alpha')" id="sort-alpha">A-Z</button>
+    <span style="margin-left:8px"></span>
+    <button class="toggle-btn" onclick="filterCards('all')" id="filter-all" style="border-color:var(--accent)">All</button>
+    <button class="toggle-btn" onclick="filterCards('flagged')" id="filter-flagged">Flagged</button>
+    <span style="margin-left:8px"></span>
+    <button class="toggle-btn" onclick="toggleAll()">Expand All</button>
+  </div>
 </div>
 
 {"".join(artist_cards_html)}
@@ -1235,8 +1235,7 @@ body {{
 <!-- Footer -->
 <div class="footer">
   Generated by Playlist Authenticity Analyzer &middot; {scan_tier} &middot; {now.strftime('%Y-%m-%d %H:%M UTC')}<br>
-  {len(sorted_artists)} artists analyzed across {len(report.api_source_counts) if report.api_source_counts else 'multiple'} data sources
-  {f' &middot; {total_api_calls} API calls' if total_api_calls else ''}
+  {len(sorted_artists)} artists analyzed across 6 evidence categories
   {f' &middot; {duration_str}' if duration_str else ''}<br>
   {f'{_esc(report.blocklist_version)}' if report.blocklist_version else ''}
 </div>
@@ -1247,16 +1246,39 @@ function toggleCard(el) {{
   el.closest('.card').classList.toggle('open');
 }}
 function toggleAll() {{
-  const cards = document.querySelectorAll('.card');
-  const btn = document.querySelector('.toggle-btn');
+  const cards = document.querySelectorAll('.card[data-idx]');
   const anyOpen = document.querySelector('.card.open');
   cards.forEach(c => {{
     if (anyOpen) c.classList.remove('open');
     else c.classList.add('open');
   }});
-  btn.textContent = anyOpen ? 'Expand All' : 'Collapse All';
 }}
-// All cards start collapsed — user clicks to expand
+function sortCards(mode) {{
+  const container = document.querySelector('.card[data-idx]')?.parentElement;
+  if (!container) return;
+  const cards = Array.from(container.querySelectorAll('.card[data-idx]'));
+  cards.sort((a, b) => {{
+    if (mode === 'score-asc') return (parseInt(a.dataset.score) || 0) - (parseInt(b.dataset.score) || 0);
+    if (mode === 'score-desc') return (parseInt(b.dataset.score) || 0) - (parseInt(a.dataset.score) || 0);
+    if (mode === 'alpha') return (a.dataset.name || '').localeCompare(b.dataset.name || '');
+    return 0;
+  }});
+  cards.forEach(c => container.appendChild(c));
+  // Update active button
+  document.querySelectorAll('[id^="sort-"]').forEach(b => b.style.borderColor = '');
+  var el = document.getElementById('sort-' + mode);
+  if (el) el.style.borderColor = 'var(--accent)';
+}}
+function filterCards(mode) {{
+  const cards = document.querySelectorAll('.card[data-idx]');
+  cards.forEach(c => {{
+    if (mode === 'all') c.style.display = '';
+    else if (mode === 'flagged') c.style.display = c.dataset.flagged === 'true' ? '' : 'none';
+  }});
+  document.querySelectorAll('[id^="filter-"]').forEach(b => b.style.borderColor = '');
+  var el = document.getElementById('filter-' + mode);
+  if (el) el.style.borderColor = 'var(--accent)';
+}}
 </script>
 </body>
 </html>"""
@@ -1398,15 +1420,15 @@ def _build_card(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
     verdict_color = _VERDICT_COLORS.get(verdict_str, "#94a3b8")
     is_flagged = verdict_str in ("Suspicious", "Likely Artificial")
 
-    # Score badge color (aligned to verdict score ranges)
+    # Score badge color (spec Part 1: aligned to updated verdict colors)
     if score >= 82:
         badge_bg = "#22c55e"
     elif score >= 58:
-        badge_bg = "#3b82f6"
+        badge_bg = "#86efac"
     elif score >= 38:
-        badge_bg = "#94a3b8"
+        badge_bg = "#fbbf24"
     elif score >= 18:
-        badge_bg = "#f59e0b"
+        badge_bg = "#f97316"
     else:
         badge_bg = "#ef4444"
 
@@ -1424,7 +1446,7 @@ def _build_card(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
     if ev:
         body_html = _build_card_body(a, ev)
 
-    return f"""<div class="card" data-flagged="{'true' if is_flagged else 'false'}" data-idx="{idx}">
+    return f"""<div class="card" data-flagged="{'true' if is_flagged else 'false'}" data-idx="{idx}" data-score="{score}" data-name="{_esc(a.artist_name)}">
   <div class="card-row" onclick="toggleCard(this)">
     <div class="score-badge" style="background:{badge_bg}">{score}</div>
     <div class="card-info">
@@ -1852,7 +1874,17 @@ def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[st
     buckets: list[str] = []
     for axis in axis_order:
         score = scores.get(axis, 0)
-        color = "#22c55e" if score >= 60 else "#f59e0b" if score >= 30 else "#ef4444"
+        # 4-tier color per spec Part 5
+        if axis == "Blocklist Status":
+            color = "#22c55e" if score >= 100 else "#ef4444"
+        elif score >= 70:
+            color = "#22c55e"
+        elif score >= 40:
+            color = "#86efac"
+        elif score >= 15:
+            color = "#f97316"
+        else:
+            color = "#ef4444" if score > 0 else "#9ca3af"
         icon = axis_icons.get(axis, "")
 
         greens = sorted(axis_greens.get(axis, []), key=lambda e: strength_order.get(e.strength, 2))
@@ -2156,12 +2188,17 @@ def _build_signal_bars(scores: dict[str, int]) -> str:
     """Render signal bars for the 6 radar categories."""
     rows = []
     for cat, val in scores.items():
-        if val >= 60:
+        # 4-tier color per spec Part 5
+        if cat == "Blocklist Status":
+            color = "#22c55e" if val >= 100 else "#ef4444"
+        elif val >= 70:
             color = "#22c55e"
-        elif val >= 30:
-            color = "#f59e0b"
+        elif val >= 40:
+            color = "#86efac"
+        elif val >= 15:
+            color = "#f97316"
         else:
-            color = "#ef4444"
+            color = "#ef4444" if val > 0 else "#9ca3af"
         rows.append(
             f'<div class="signal-row">'
             f'<span class="signal-label">{_esc(cat)}</span>'
