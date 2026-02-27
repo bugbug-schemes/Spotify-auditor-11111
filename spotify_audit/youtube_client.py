@@ -61,6 +61,10 @@ class YouTubeClient:
     def quota_used(self) -> int:
         return self._quota_used
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self._session.close()
+
     def _get(self, endpoint: str, params: dict) -> dict | None:
         """Make a YouTube API call."""
         if not self.enabled:

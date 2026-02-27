@@ -65,12 +65,24 @@ class SetlistFmClient:
         self.delay = delay
         self.enabled = bool(api_key)
 
+    def close(self) -> None:
+        """Close the underlying HTTP session."""
+        self.session.close()
+
     def _get(self, path: str, params: dict | None = None) -> dict:
         if not self.enabled:
             return {}
         url = f"{SETLIST_API}{path}"
+        last_exc: Exception | None = None
         for attempt in range(3):
-            r = self.session.get(url, params=params, timeout=15)
+            try:
+                r = self.session.get(url, params=params, timeout=15)
+            except requests.RequestException as exc:
+                last_exc = exc
+                wait = 2 ** (attempt + 1)
+                logger.debug("Setlist.fm request failed (attempt %d): %s", attempt + 1, exc)
+                time.sleep(wait)
+                continue
             if r.status_code == 429:
                 wait = 2 ** (attempt + 1)
                 logger.debug("Setlist.fm 429 rate-limited, backing off %ds", wait)
@@ -79,6 +91,8 @@ class SetlistFmClient:
             r.raise_for_status()
             time.sleep(self.delay)
             return r.json()
+        if last_exc:
+            raise last_exc
         r.raise_for_status()
         return {}
 

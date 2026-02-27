@@ -63,10 +63,17 @@ def _fetch_image_base64(url: str) -> tuple[str, str] | None:
         else:
             media_type = "image/jpeg"
 
-        data = resp.content
-        if len(data) > MAX_IMAGE_BYTES:
-            logger.debug("Image too large (%d bytes), skipping", len(data))
-            return None
+        # Stream download with size limit to avoid loading huge images into memory
+        chunks: list[bytes] = []
+        downloaded = 0
+        for chunk in resp.iter_content(chunk_size=8192):
+            downloaded += len(chunk)
+            if downloaded > MAX_IMAGE_BYTES:
+                logger.debug("Image too large (>%d bytes), skipping", MAX_IMAGE_BYTES)
+                resp.close()
+                return None
+            chunks.append(chunk)
+        data = b"".join(chunks)
         return base64.standard_b64encode(data).decode("utf-8"), media_type
     except Exception as exc:
         logger.debug("Failed to fetch image from %s: %s", url, exc)

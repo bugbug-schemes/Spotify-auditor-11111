@@ -87,6 +87,7 @@ class DeezerClient:
 
     def _wait_for_rate_limit(self) -> None:
         """Block until we're under the per-window request limit."""
+        sleep_time = 0.0
         with DeezerClient._rate_lock:
             now = time.time()
             cutoff = now - DeezerClient._WINDOW_SECONDS
@@ -95,11 +96,14 @@ class DeezerClient:
                 t for t in DeezerClient._request_times if t > cutoff
             ]
             if len(DeezerClient._request_times) >= DeezerClient._MAX_REQUESTS_PER_WINDOW:
-                # Wait until the oldest request in the window expires
+                # Calculate sleep needed, but release lock before sleeping
                 sleep_time = DeezerClient._request_times[0] - cutoff + 0.1
-                if sleep_time > 0:
-                    logger.debug("Deezer rate limiter: sleeping %.1fs", sleep_time)
-                    time.sleep(sleep_time)
+        # Sleep outside the lock so other threads aren't blocked
+        if sleep_time > 0:
+            logger.debug("Deezer rate limiter: sleeping %.1fs", sleep_time)
+            time.sleep(sleep_time)
+        # Re-acquire lock to record the request timestamp
+        with DeezerClient._rate_lock:
             DeezerClient._request_times.append(time.time())
 
     def _get(self, path: str, params: dict | None = None) -> dict:

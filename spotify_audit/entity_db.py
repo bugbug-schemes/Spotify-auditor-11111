@@ -1209,7 +1209,8 @@ class EntityDB:
                    FROM artist_publishers WHERE publisher_id = publishers.id
                )"""
         )
-        self._conn.commit()
+        if not self._in_batch:
+            self._conn.commit()
 
     # ------------------------------------------------------------------
     # Review queue — threshold checking
@@ -1287,12 +1288,12 @@ class EntityDB:
         if entity.get("threat_status") == CONFIRMED_BAD:
             return False
 
-        # Already in the review queue or reviewed
-        if entity.get("review_status") in (PENDING_REVIEW, REVIEWED):
+        # Already in the review queue
+        if entity.get("review_status") == PENDING_REVIEW:
             return True
 
         # Dismissed entities only re-queue if count exceeds their threshold
-        if entity.get("review_status") == "dismissed":
+        if entity.get("review_action") == "dismissed":
             requeue_threshold = entity.get("dismiss_requeue_threshold") or 0
             flagged_count = self._flagged_artist_count(entity_type, entity_id)
             if flagged_count <= requeue_threshold:

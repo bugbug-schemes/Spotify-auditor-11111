@@ -295,12 +295,22 @@ function renderRecentScans() {
     if (recent.length === 0) return;
     document.getElementById('recentScans').style.display = 'block';
     const list = document.getElementById('recentList');
-    list.innerHTML = recent.map(s =>
-      '<div class="recent-item">' +
-        '<span class="recent-name">' + (s.name || 'Unknown') + '</span>' +
-        '<a class="recent-link" href="/report/' + s.id + '" target="_blank">View Report</a>' +
-      '</div>'
-    ).join('');
+    list.innerHTML = '';
+    for (const s of recent) {
+      const row = document.createElement('div');
+      row.className = 'recent-item';
+      const nameSpan = document.createElement('span');
+      nameSpan.className = 'recent-name';
+      nameSpan.textContent = s.name || 'Unknown';
+      const link = document.createElement('a');
+      link.className = 'recent-link';
+      link.href = '/report/' + encodeURIComponent(s.id);
+      link.target = '_blank';
+      link.textContent = 'View Report';
+      row.appendChild(nameSpan);
+      row.appendChild(link);
+      list.appendChild(row);
+    }
   } catch(e) {}
 }
 
