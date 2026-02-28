@@ -399,5 +399,11 @@ def build_playlist_report(
 
 
 def should_escalate_to_deep(score: int, config: AuditConfig) -> bool:
-    """Decide if an artist should get Claude deep analysis based on score."""
+    """Decide if an artist should get Claude deep analysis based on suspicion score.
+
+    NOTE: ``score`` here is the raw suspicion score from quick/standard scan
+    (higher = more suspicious), NOT the inverted legitimacy score (higher = more
+    legitimate).  Artists exceeding the threshold are "suspicious enough" to
+    warrant deeper investigation.
+    """
     return score > config.escalate_to_deep

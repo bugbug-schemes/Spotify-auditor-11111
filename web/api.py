@@ -3,12 +3,18 @@ Flask Blueprint — Entity Review CMS API
 
 All /api/cms/* routes for the review queue, entity detail, review actions,
 scan history, blocklist management, and API health monitoring.
+
+Authentication: Write endpoints require a CMS_API_KEY header (or query param).
+Set the CMS_API_KEY environment variable to enable. If unset, write endpoints
+are disabled with a 503 response.
 """
 
 from __future__ import annotations
 
+import functools
 import json
 import logging
+import os
 from pathlib import Path
 
 from flask import Blueprint, jsonify, request
@@ -29,6 +35,25 @@ logger = logging.getLogger("spotify_audit.web.api")
 cms_api = Blueprint("cms_api", __name__, url_prefix="/api/cms")
 
 VALID_ENTITY_TYPES = ("artist", "label", "songwriter", "publisher")
+
+# ---------------------------------------------------------------------------
+# Authentication
+# ---------------------------------------------------------------------------
+
+_CMS_API_KEY = os.environ.get("CMS_API_KEY", "")
+
+
+def _require_auth(f):
+    """Decorator: require CMS_API_KEY for write endpoints."""
+    @functools.wraps(f)
+    def wrapper(*args, **kwargs):
+        if not _CMS_API_KEY:
+            return jsonify({"error": "CMS_API_KEY not configured — write access disabled"}), 503
+        provided = request.headers.get("X-CMS-API-Key") or request.args.get("api_key", "")
+        if provided != _CMS_API_KEY:
+            return jsonify({"error": "Invalid or missing API key"}), 401
+        return f(*args, **kwargs)
+    return wrapper
 
 
 def _validate_entity_type(entity_type: str):
@@ -134,6 +159,7 @@ def entity_network(entity_type: str, entity_id: int):
 # ---------------------------------------------------------------------------
 
 @cms_api.route("/entities/<entity_type>/<int:entity_id>/review", methods=["POST"])
+@_require_auth
 def submit_review(entity_type: str, entity_id: int):
     """Submit a review decision.
 
@@ -165,6 +191,7 @@ def submit_review(entity_type: str, entity_id: int):
 
 
 @cms_api.route("/entities/<entity_type>/<int:entity_id>/note", methods=["POST"])
+@_require_auth
 def add_note(entity_type: str, entity_id: int):
     """Add a note to an entity.
 
@@ -187,6 +214,7 @@ def add_note(entity_type: str, entity_id: int):
 
 
 @cms_api.route("/entities/<entity_type>/<int:entity_id>/alias", methods=["POST"])
+@_require_auth
 def create_alias(entity_type: str, entity_id: int):
     """Link two entities as aliases.
 
@@ -226,6 +254,7 @@ def create_alias(entity_type: str, entity_id: int):
 # ---------------------------------------------------------------------------
 
 @cms_api.route("/batch-review", methods=["POST"])
+@_require_auth
 def batch_review():
     """Submit review decisions for multiple entities at once.
 
@@ -361,6 +390,7 @@ def browse_blocklist(name: str):
 
 
 @cms_api.route("/blocklists/<name>/add", methods=["POST"])
+@_require_auth
 def add_to_blocklist(name: str):
     """Manually add an entry to a blocklist.
 
@@ -391,6 +421,7 @@ def add_to_blocklist(name: str):
 
 
 @cms_api.route("/blocklists/<name>/remove", methods=["POST"])
+@_require_auth
 def remove_from_blocklist(name: str):
     """Remove an entry from a blocklist (clears the entity).
 
@@ -440,6 +471,7 @@ def export_blocklist(name: str):
 
 
 @cms_api.route("/blocklists/sync", methods=["POST"])
+@_require_auth
 def sync_blocklists():
     """Regenerate all blocklist JSON files from confirmed entities."""
     db = _get_db()
@@ -486,6 +518,7 @@ def full_network():
 # ---------------------------------------------------------------------------
 
 @cms_api.route("/check-thresholds", methods=["POST"])
+@_require_auth
 def check_thresholds():
     """Re-check all entity thresholds and queue any that cross."""
     db = _get_db()

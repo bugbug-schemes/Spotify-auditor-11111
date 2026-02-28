@@ -14,6 +14,15 @@ from spotify_audit.discogs_client import DiscogsClient, DiscogsArtist
 from spotify_audit.spotify_client import extract_id, _safe_int
 
 
+def _mock_response(json_data):
+    """Create a mock HTTP response with the given JSON data."""
+    resp = MagicMock()
+    resp.json.return_value = json_data
+    resp.raise_for_status.return_value = None
+    resp.status_code = 200
+    return resp
+
+
 # ---------------------------------------------------------------------------
 # URL / utility helpers
 # ---------------------------------------------------------------------------
@@ -61,11 +70,9 @@ class TestSafeInt:
 # ---------------------------------------------------------------------------
 
 class TestDeezerClient:
-    def _mock_response(self, json_data):
-        resp = MagicMock()
-        resp.json.return_value = json_data
-        resp.raise_for_status.return_value = None
-        return resp
+    @staticmethod
+    def _mock_response(json_data):
+        return _mock_response(json_data)
 
     @patch("spotify_audit.deezer_client.time.sleep")
     def test_search_artist_exact_match(self, mock_sleep):
@@ -119,11 +126,9 @@ class TestDeezerClient:
 # ---------------------------------------------------------------------------
 
 class TestGeniusClient:
-    def _mock_response(self, json_data):
-        resp = MagicMock()
-        resp.json.return_value = json_data
-        resp.raise_for_status.return_value = None
-        return resp
+    @staticmethod
+    def _mock_response(json_data):
+        return _mock_response(json_data)
 
     def test_disabled_without_token(self):
         client = GeniusClient(access_token="")
@@ -179,11 +184,9 @@ class TestGeniusClient:
 # ---------------------------------------------------------------------------
 
 class TestMusicBrainzClient:
-    def _mock_response(self, json_data):
-        resp = MagicMock()
-        resp.json.return_value = json_data
-        resp.raise_for_status.return_value = None
-        return resp
+    @staticmethod
+    def _mock_response(json_data):
+        return _mock_response(json_data)
 
     @patch("spotify_audit.musicbrainz_client.time.sleep")
     def test_search_artist_exact_match(self, mock_sleep):
@@ -220,11 +223,9 @@ class TestSetlistFmClient:
         assert client.enabled is False
         assert client.search_artist("Test") is None
 
-    def _mock_response(self, json_data):
-        resp = MagicMock()
-        resp.json.return_value = json_data
-        resp.raise_for_status.return_value = None
-        return resp
+    @staticmethod
+    def _mock_response(json_data):
+        return _mock_response(json_data)
 
     @patch("spotify_audit.setlistfm_client.time.sleep")
     def test_search_artist_exact_match(self, mock_sleep):
@@ -324,11 +325,9 @@ class TestLastfmClient:
 # ---------------------------------------------------------------------------
 
 class TestDiscogsClient:
-    def _mock_response(self, json_data):
-        resp = MagicMock()
-        resp.json.return_value = json_data
-        resp.raise_for_status.return_value = None
-        return resp
+    @staticmethod
+    def _mock_response(json_data):
+        return _mock_response(json_data)
 
     @patch("spotify_audit.discogs_client.time.sleep")
     def test_search_artist_exact_match(self, mock_sleep):
