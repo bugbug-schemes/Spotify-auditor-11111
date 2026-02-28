@@ -313,7 +313,7 @@ class TestBuildPlaylistReport:
         pr = build_playlist_report("Test", "p4", "owner", 30, False, artists)
         assert pr.verified_legit == 1   # score >= 82
         assert pr.probably_fine == 1    # score 58-81
-        assert pr.likely_non_authentic == 1  # score < 58
+        assert pr.needs_review == 1  # score < 58
 
 
 # ---------------------------------------------------------------------------

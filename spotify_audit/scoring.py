@@ -112,10 +112,10 @@ class PlaylistReport:
     # Artists that were skipped due to timeout / error during scan
     skipped_artists: list[dict] = field(default_factory=list)  # [{name, reason}]
 
-    # Legacy breakdown (kept for backward compatibility)
+    # Legacy breakdown (score-based — see also evidence-based fields above)
     verified_legit: int = 0
     probably_fine: int = 0
-    likely_non_authentic: int = 0
+    needs_review: int = 0
 
 
 # ---------------------------------------------------------------------------
@@ -374,7 +374,7 @@ def build_playlist_report(
         elif a.final_score >= 58:
             pr.probably_fine += 1
         else:
-            pr.likely_non_authentic += 1
+            pr.needs_review += 1
 
     # Health score: based on evidence verdicts
     if artist_reports:
