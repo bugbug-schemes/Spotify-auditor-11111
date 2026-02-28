@@ -270,7 +270,8 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
         html = to_html(playlist_report)
 
         skipped_count = len(playlist_report.skipped_artists)
-        analyzed = playlist_report.total_unique_artists - skipped_count
+        # total_unique_artists already excludes skipped (BUG-22 fix)
+        analyzed = playlist_report.total_unique_artists
         if skipped_count:
             done_msg = (
                 f"Done! Analyzed {analyzed} artists "

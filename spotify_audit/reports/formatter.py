@@ -43,7 +43,7 @@ def _report_to_dict(report: PlaylistReport) -> dict:
         "summary": {
             "health_score": report.health_score,
             "analyzed_count": len(report.artists),
-            "timed_out_count": not_scanned,
+            "skipped_count": not_scanned,
             # BUG-22 fix: total includes analyzed + skipped
             "total_playlist_artists": report.total_unique_artists + not_scanned,
             "verdict_breakdown": {
@@ -52,10 +52,15 @@ def _report_to_dict(report: PlaylistReport) -> dict:
                 "Inconclusive": report.inconclusive,
                 "Suspicious": report.suspicious,
                 "Likely Artificial": report.likely_artificial,
-                "Not Scanned": not_scanned,
             },
         },
         "artists": [_artist_to_dict(a) for a in report.artists],
+        "skipped_artists": [
+            {"artist_name": s.get("name", "Unknown"),
+             "skip_reason": s.get("reason", "Unknown error"),
+             "artist_key": s.get("artist_key", "")}
+            for s in (report.skipped_artists or [])
+        ],
     }
 
 
@@ -636,19 +641,37 @@ def _health_gauge_svg(score: int) -> str:
 # Stacked bar helpers
 # ---------------------------------------------------------------------------
 
-def _stacked_bar(segments: list[tuple[str, int, str]], total: int) -> str:
-    """Render a horizontal stacked bar."""
+def _stacked_bar(segments: list[tuple[str, int, str]], total: int,
+                  pct_base: int = 0) -> str:
+    """Render a horizontal stacked bar.
+
+    Parameters
+    ----------
+    segments : list of (label, count, color)
+    total : int
+        Total used for bar *width* proportions (includes all segments).
+    pct_base : int, optional
+        If > 0, analyzed-only segments show "{pct}%" labels (where
+        pct = count/pct_base * 100) while "Not Scanned" segments show
+        raw count.  When 0 (default), all segments show raw counts.
+    """
     if total == 0:
         return '<div style="height:28px;background:#1a2332;border-radius:4px"></div>'
     parts = []
     for label, count, color in segments:
         if count <= 0:
             continue
-        pct = count / total * 100
+        width_pct = count / total * 100
+        if pct_base > 0 and label != "Not Scanned":
+            display = f"{count / pct_base * 100:.0f}%"
+            title_text = f"{_esc(label)}: {count} ({display})"
+        else:
+            display = str(count)
+            title_text = f"{_esc(label)}: {count}"
         parts.append(
-            f'<div style="width:{pct:.1f}%;background:{color};display:flex;align-items:center;'
+            f'<div style="width:{width_pct:.1f}%;background:{color};display:flex;align-items:center;'
             f'justify-content:center;font-size:0.7rem;color:#fff;white-space:nowrap;'
-            f'min-width:20px" title="{_esc(label)}: {count}">{count}</div>'
+            f'min-width:20px" title="{title_text}">{display}</div>'
         )
     return (
         '<div style="display:flex;height:28px;border-radius:4px;overflow:hidden;gap:1px">'
@@ -1232,7 +1255,7 @@ body {{
     <div class="metric-row">
       <div class="metric-card">
         <div class="metric-value">{report.total_unique_artists}</div>
-        <div class="metric-label">Analyzed</div>
+        <div class="metric-label">Analyzed{f' <span style="font-weight:400;color:var(--text-dim)">of {total_bar}</span>' if skipped_count else ''}</div>
       </div>
       <div class="metric-card">
         <div class="metric-value">{f'{skipped_count} &#9888;' if skipped_count else '0 &#10003;'}</div>
@@ -1247,7 +1270,7 @@ body {{
     <!-- Verdict bar (spec Part 1: updated colors + Not Scanned segment) -->
     <div class="bar-section">
       <div class="bar-label">Verdict Breakdown</div>
-      {_stacked_bar(verdict_segments, total_bar)}
+      {_stacked_bar(verdict_segments, total_bar, pct_base=report.total_unique_artists)}
       <div class="legend">
         <span><span class="legend-dot" style="background:#22c55e"></span>Verified Artist</span>
         <span><span class="legend-dot" style="background:#86efac"></span>Likely Authentic</span>
@@ -1415,13 +1438,21 @@ def _build_skipped_section(skipped: list[dict]) -> str:
       <div id="retryBar" style="width:0%;height:100%;background:#f59e0b;border-radius:4px;transition:width 0.3s"></div>
     </div>
   </div>
-  <table style="width:100%;border-collapse:collapse;font-size:0.85rem">
-    <tr style="border-bottom:1px solid #3d2e1a">
-      <th style="text-align:left;padding:6px 8px;color:#f59e0b">Artist</th>
-      <th style="text-align:left;padding:6px 8px;color:#f59e0b">Reason</th>
-    </tr>
-    {"".join(rows)}
-  </table>
+  <div id="skippedListToggle" style="margin-bottom:8px">
+    <button onclick="document.getElementById('skippedList').style.display=document.getElementById('skippedList').style.display==='none'?'block':'none';this.textContent=this.textContent.includes('View')?'\\u25B2 Hide skipped artists':'\\u25BC View skipped artists'" style="
+      background:none;border:1px solid #3d2e1a;color:#94a3b8;padding:6px 14px;border-radius:6px;
+      font-size:0.82rem;cursor:pointer
+    ">&#9660; View skipped artists</button>
+  </div>
+  <div id="skippedList" style="display:none">
+    <table style="width:100%;border-collapse:collapse;font-size:0.85rem">
+      <tr style="border-bottom:1px solid #3d2e1a">
+        <th style="text-align:left;padding:6px 8px;color:#f59e0b">Artist</th>
+        <th style="text-align:left;padding:6px 8px;color:#f59e0b">Reason</th>
+      </tr>
+      {"".join(rows)}
+    </table>
+  </div>
 </div>
 <style>@keyframes spin {{ to {{ transform: rotate(360deg) }} }}</style>
 <script>

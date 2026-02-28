@@ -1053,7 +1053,7 @@ def retry_skipped_artists(
     progress("resolve", 0, total_artists, f"Retrying {total_artists} skipped artists...")
 
     # Set up API clients
-    client = SpotifyClient()
+    client = SpotifyClient(config)
     deezer_client = DeezerClient(delay=0.5)
     mb_client = MusicBrainzClient(delay=1.1)
     genius_client = GeniusClient(access_token=config.genius_token, delay=0.3)
