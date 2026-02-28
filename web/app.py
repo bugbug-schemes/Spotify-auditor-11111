@@ -30,12 +30,29 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from flask import Flask, request, jsonify, render_template, send_from_directory
+from flask_limiter import Limiter
 
 from web.api import cms_api, init_db
 
 app = Flask(__name__, template_folder="templates", static_folder="static")
 app.register_blueprint(cms_api)
 logger = logging.getLogger("spotify_audit.web")
+
+
+def _get_real_ip():
+    """Get real client IP, even behind reverse proxy (Render, Railway, etc.)."""
+    forwarded = request.headers.get("X-Forwarded-For")
+    if forwarded:
+        return forwarded.split(",")[0].strip()
+    return request.remote_addr
+
+
+limiter = Limiter(
+    key_func=_get_real_ip,
+    app=app,
+    default_limits=[],        # No global limit — only on specific endpoints
+    storage_uri="memory://",  # In-memory store; swap to redis:// for multi-process
+)
 
 # ---------------------------------------------------------------------------
 # Demo mode — serve cached report for UI development
@@ -293,6 +310,15 @@ def not_found(e):
     return render_template("index.html"), 404
 
 
+@app.errorhandler(429)
+def rate_limit_exceeded(e):
+    return jsonify({
+        "error": "Rate limit exceeded",
+        "message": "Maximum 5 scans per minute. Please wait before trying again.",
+        "retry_after": str(e.description),
+    }), 429
+
+
 @app.errorhandler(500)
 def internal_error(e):
     logger.exception("Internal server error")
@@ -313,6 +339,7 @@ def index():
 
 
 @app.route("/api/scan", methods=["POST"])
+@limiter.limit("5/minute")
 def start_scan():
     global _active_scan_count
 

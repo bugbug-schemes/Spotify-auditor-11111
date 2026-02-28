@@ -29,32 +29,92 @@ logger = logging.getLogger(__name__)
 # Multi-artist credit splitting (Fix 3)
 # ---------------------------------------------------------------------------
 
-# Ordered longest-first to avoid partial matches (e.g. " feat " before " ft ")
+# Phase 1: Strip parenthetical/bracket features BEFORE separator splitting
+_FEATURED_PATTERN = re.compile(
+    r'\s*[\(\[]\s*(?:feat\.?|ft\.?|featuring|with)\s+.+?[\)\]]',
+    re.IGNORECASE
+)
+_PROD_PATTERN = re.compile(
+    r'\s+prod\.?\s+.+$',
+    re.IGNORECASE
+)
+
+# Phase 2: Separators to split on — ordered by specificity
 _ARTIST_SEPARATORS = [
-    " feat. ", " feat ", " ft. ", " ft ",
-    ", ", " & ", " with ", " and ", " x ", " vs. ", " vs ",
+    ", ", " & ", " feat. ", " ft. ", " feat ", " ft ", " x ",
+    " vs. ", " vs ", " prod. ", " prod ",
 ]
+
+# Known bands with " and " in the name — fast-path allowlist
+_AND_BANDS = {
+    "simon and garfunkel",
+    "florence and the machine",
+    "belle and sebastian",
+    "mumford and sons",
+    "earth wind and fire",
+    "earth, wind & fire",
+    "tegan and sara",
+    "hall and oates",
+    "peter paul and mary",
+    "crosby stills and nash",
+    "crosby stills nash and young",
+    "emerson lake and palmer",
+    "blood sweat and tears",
+    "huey lewis and the news",
+    "tom petty and the heartbreakers",
+    "echo and the bunnymen",
+    "bob marley and the wailers",
+    "sly and the family stone",
+    "kool and the gang",
+    "prince and the revolution",
+    "a winged victory for the sullen",
+}
 
 
 def extract_primary_artist(credit: str) -> str:
     """Extract the primary artist name from a combined credit string.
 
-    Handles separators like ", ", " & ", " feat. ", " ft. ", " x ", etc.
-    Returns the first (primary) artist name.
+    Strategy:
+    1. Strip parenthetical features: "Drake (feat. Future)" → "Drake"
+    2. Strip prod. credits: "Track prod. Metro Boomin" → "Track"
+    3. Check if full (cleaned) name is a known "and" band → return as-is
+    4. Split on separators, return first segment
 
     Examples:
         "Roger Eno, Brian Eno" → "Roger Eno"
         "Max Richter, Grace Davidson" → "Max Richter"
         "Kendrick Lamar feat. SZA" → "Kendrick Lamar"
+        "Drake (feat. Future)" → "Drake"
+        "Track prod. Metro Boomin" → "Track"
+        "Simon and Garfunkel" → "Simon and Garfunkel"
+        "Florence and the Machine" → "Florence and the Machine"
         "A Winged Victory for the Sullen" → "A Winged Victory for the Sullen"
     """
-    credit_lower = credit.lower()
+    if not credit or not credit.strip():
+        return credit
+
+    # Step 1: Strip parenthetical features
+    cleaned = _FEATURED_PATTERN.sub('', credit).strip()
+
+    # Step 2: Strip trailing prod. credits
+    cleaned = _PROD_PATTERN.sub('', cleaned).strip()
+
+    # Step 3: Check "and" band allowlist (case-insensitive)
+    if cleaned.lower() in _AND_BANDS:
+        return cleaned
+
+    # Also check " and the " pattern — very likely a band name
+    if " and the " in cleaned.lower():
+        return cleaned
+
+    # Step 4: Split on separators
+    cleaned_lower = cleaned.lower()
     for sep in _ARTIST_SEPARATORS:
-        if sep in credit_lower:
-            # Find the separator position case-insensitively
-            idx = credit_lower.index(sep)
-            return credit[:idx].strip()
-    return credit.strip()
+        if sep in cleaned_lower:
+            idx = cleaned_lower.index(sep)
+            return cleaned[:idx].strip()
+
+    return cleaned
 
 
 # ---------------------------------------------------------------------------
@@ -1384,55 +1444,100 @@ def _collect_name_evidence(artist: ArtistInfo) -> list[Evidence]:
     return evidence
 
 
-def _collect_collaboration_evidence(artist: ArtistInfo) -> list[Evidence]:
-    """Analyze collaborators and related artists."""
+def _collect_collaboration_evidence(artist: ArtistInfo, entity_db=None) -> list[Evidence]:
+    """Analyze collaborators and related artists, cross-referencing blocklists."""
     evidence: list[Evidence] = []
 
-    # Contributors (featured artists, producers on tracks)
-    if len(artist.contributors) >= 3:
+    collaborator_names = list(artist.contributors)
+    related_artists = list(artist.related_artist_names)
+
+    # Cross-reference all associated artists against blocklists
+    all_associated = set()
+    all_associated.update(c.lower().strip() for c in collaborator_names if c)
+    all_associated.update(r.lower().strip() for r in related_artists if r)
+
+    ai_artists_set = known_ai_artists()  # already lowercased frozenset
+    pfc_sw_set = pfc_songwriters()       # already lowercased frozenset
+
+    flagged_collaborators = []
+    for name in all_associated:
+        if name in ai_artists_set or name in pfc_sw_set:
+            flagged_collaborators.append(name)
+            continue
+        if entity_db:
+            try:
+                row = entity_db.execute(
+                    "SELECT blocklist_status FROM artists WHERE LOWER(name) = ? AND blocklist_status IN ('confirmed_bad', 'suspected')",
+                    (name,)
+                ).fetchone()
+                if row:
+                    flagged_collaborators.append(name)
+            except Exception:
+                pass  # DB lookup failure should not block evaluation
+
+    flagged_set = {f.lower() for f in flagged_collaborators}
+
+    # Emit red flag if collaborators are on blocklists
+    if flagged_collaborators:
+        flagged_ratio = len(flagged_collaborators) / len(all_associated) if all_associated else 0
+        display_names = ', '.join(flagged_collaborators[:3])
+        if len(flagged_collaborators) > 3:
+            display_names += f' (+{len(flagged_collaborators) - 3} more)'
         evidence.append(Evidence(
-            finding=f"{len(artist.contributors)} collaborators found",
-            source="Deezer",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Artist has worked with {len(artist.contributors)} other artists: "
-                   f"{', '.join(artist.contributors[:5])}"
-                   f"{'...' if len(artist.contributors) > 5 else ''}. "
-                   "Real artists collaborate; fake profiles typically don't.",
-            tags=["collaboration"],
-        ))
-    elif len(artist.contributors) >= 1:
-        evidence.append(Evidence(
-            finding=f"{len(artist.contributors)} collaborator(s)",
-            source="Deezer",
-            evidence_type="green_flag",
-            strength="weak",
-            detail=f"Collaborators: {', '.join(artist.contributors)}.",
-            tags=["collaboration"],
+            finding=f"Collaborates with {len(flagged_collaborators)} flagged artist(s): {display_names}",
+            source="collaboration_check",
+            evidence_type="red_flag",
+            strength="moderate" if flagged_ratio >= 0.5 else "weak",
+            detail=f"Cross-referencing collaborators and related artists against blocklists "
+                   f"found {len(flagged_collaborators)} match(es). This may indicate a PFC network.",
+            tags=["pfc_network"],
         ))
 
-    # Related artists on Deezer
-    # Note: Deezer's related artist algorithm uses collaborative filtering,
-    # which can generate links for any artist appearing on similar playlists —
-    # including artificial ones. Treat as a weak signal only.
-    if len(artist.related_artist_names) >= 5:
+    # Contributors — only award green flags when collaborators are clean
+    clean_collaborators = [c for c in collaborator_names if c.lower().strip() not in flagged_set]
+    if not flagged_collaborators:
+        if len(collaborator_names) >= 3:
+            evidence.append(Evidence(
+                finding=f"{len(collaborator_names)} collaborators found",
+                source="Deezer",
+                evidence_type="green_flag",
+                strength="moderate",
+                detail=f"Artist has worked with {len(collaborator_names)} other artists: "
+                       f"{', '.join(collaborator_names[:5])}"
+                       f"{'...' if len(collaborator_names) > 5 else ''}. "
+                       "Real artists collaborate; fake profiles typically don't.",
+                tags=["collaboration"],
+            ))
+        elif len(collaborator_names) >= 1:
+            evidence.append(Evidence(
+                finding=f"{len(collaborator_names)} collaborator(s)",
+                source="Deezer",
+                evidence_type="green_flag",
+                strength="weak",
+                detail=f"Collaborators: {', '.join(collaborator_names)}.",
+                tags=["collaboration"],
+            ))
+
+    # Related artists on Deezer — only award green for clean related artists
+    clean_related = [r for r in related_artists if r.lower().strip() not in flagged_set]
+    if len(clean_related) >= 5:
         evidence.append(Evidence(
-            finding=f"{len(artist.related_artist_names)} related artists on Deezer",
+            finding=f"{len(clean_related)} clean related artists on Deezer",
             source="Deezer",
             evidence_type="green_flag",
             strength="weak",
             detail=f"Deezer links this artist to: "
-                   f"{', '.join(artist.related_artist_names[:5])}. "
+                   f"{', '.join(clean_related[:5])}. "
                    "Related artist connections can develop from listener behavior, "
                    "but can also appear for playlist-placed artists.",
         ))
-    elif len(artist.related_artist_names) >= 1:
+    elif len(clean_related) >= 1:
         evidence.append(Evidence(
-            finding=f"{len(artist.related_artist_names)} related artist(s) on Deezer",
+            finding=f"{len(clean_related)} related artist(s) on Deezer",
             source="Deezer",
             evidence_type="neutral",
             strength="weak",
-            detail=f"Related: {', '.join(artist.related_artist_names[:3])}. "
+            detail=f"Related: {', '.join(clean_related[:3])}. "
                    "Deezer related artists can appear for both real and artificial artists.",
         ))
 
@@ -2136,7 +2241,11 @@ def _collect_identity_evidence(ext: ExternalData) -> list[Evidence]:
         career_hits = [kw for kw in career_keywords if kw.lower() in bio_lower]
 
         # Detect year mentions (suggests real career timeline)
-        year_pattern = re.findall(r"\b(19[5-9]\d|20[0-2]\d)\b", bio)
+        current_year = datetime.now().year
+        year_pattern = [
+            y for y in re.findall(r"\b((?:19|20)\d{2})\b", bio)
+            if 1900 <= int(y) <= current_year + 2
+        ]
 
         if bio_len >= 200 and (len(career_hits) >= 3 or len(year_pattern) >= 2):
             evidence.append(Evidence(
@@ -3298,7 +3407,7 @@ def evaluate_artist(
     decision_path: list[str] = []
 
     # Collect evidence from core data (Deezer/Spotify)
-    presence, platform_ev = _collect_platform_evidence(artist)
+    presence, _ = _collect_platform_evidence(artist)
 
     # Update platform presence with external API results
     if ext.genius_found:
@@ -3366,7 +3475,7 @@ def evaluate_artist(
     all_evidence.extend(_collect_release_evidence(artist))
     all_evidence.extend(_collect_label_evidence(artist))
     all_evidence.extend(_collect_name_evidence(artist))
-    all_evidence.extend(_collect_collaboration_evidence(artist))
+    all_evidence.extend(_collect_collaboration_evidence(artist, entity_db=entity_db))
     all_evidence.extend(_collect_credit_network_evidence(artist))
     all_evidence.extend(_collect_genre_evidence(artist, ext))
     all_evidence.extend(_collect_track_rank_evidence(artist))

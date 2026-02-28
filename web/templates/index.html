@@ -217,8 +217,19 @@ function startScan() {
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({url: url, deep: deep}),
   })
-  .then(r => r.json())
+  .then(r => {
+    if (r.status === 429) {
+      return r.json().then(data => {
+        showError(data.message || 'Rate limit exceeded. Please wait before trying again.');
+        document.getElementById('scanBtn').disabled = false;
+        hideProgress();
+        return null;
+      });
+    }
+    return r.json();
+  })
   .then(data => {
+    if (!data) return;
     if (data.error) {
       showError(data.error);
       document.getElementById('scanBtn').disabled = false;

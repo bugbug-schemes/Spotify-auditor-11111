@@ -546,26 +546,32 @@ def _run_audit_core(
     except TimeoutError:
         logger.warning("Resolve phase timed out after %ds", RESOLVE_TIMEOUT)
 
-    # Drain completed futures and skip the rest — shutdown without waiting
-    # for still-running tasks so timeouts are actually enforced.
-    for fut, key in futures.items():
-        if fut.done() and key not in resolved_keys:
-            # Late completion — harvest the result
+    # Two-pass drain: pass 1 — collect futures that are still running
+    still_running = {
+        fut: key for fut, key in futures.items()
+        if key not in resolved_keys
+    }
+    # Pass 2: re-check — some may have completed during pass 1
+    for fut, key in still_running.items():
+        if fut.done():
             try:
-                key, artist, cached_qr, is_cache_hit = fut.result(timeout=0)
+                key, artist, cached_qr, is_cache_hit = fut.result()
                 resolved_keys.add(key)
                 resolved_i += 1
                 artist_infos[key] = artist
-                quick_results[key] = cached_qr if cached_qr else quick_scan(artist, config.quick_weights)
-                progress("resolve", resolved_i, total_artists, f"Resolved {artist.name} (late)")
-            except Exception:
-                pass
-        if key not in resolved_keys:
+                if cached_qr:
+                    quick_results[key] = cached_qr
+                progress("resolve", resolved_i, total_artists, f"Late resolve: {_key_names.get(key, key)}")
+            except Exception as exc:
+                resolved_keys.add(key)
+                resolved_i += 1
+                name = _key_names.get(key, key)
+                logger.warning("Late resolve failed for '%s': %s", name, exc)
+                skipped_artists.append({"name": name, "reason": f"Resolve error: {exc}", "artist_key": key})
+        else:
             name = _key_names.get(key, key)
             skipped_artists.append({"name": name, "reason": "Timed out during artist resolution", "artist_key": key})
             fut.cancel()
-            resolved_i += 1
-            progress("resolve", resolved_i, total_artists, f"Skipped {name} (timeout)")
     pool.shutdown(wait=False, cancel_futures=True)
 
     # 4. External lookups + evidence evaluation
@@ -780,24 +786,31 @@ def _run_audit_core(
     except TimeoutError:
         logger.warning("Evaluate phase timed out after %ds", EVALUATE_TIMEOUT)
 
-    # Drain completed futures and skip the rest
-    for fut, key in futures.items():
-        if fut.done() and key not in evaluated_keys:
+    # Two-pass drain: pass 1 — collect futures still running
+    still_running = {
+        fut: key for fut, key in futures.items()
+        if key not in evaluated_keys
+    }
+    # Pass 2: re-check — some may have completed during pass 1
+    for fut, key in still_running.items():
+        if fut.done():
             try:
-                key, ev, sr = fut.result(timeout=0)
+                key, ev, sr = fut.result()
                 evaluations[key] = ev
                 standard_results[key] = sr
                 evaluated_keys.add(key)
                 eval_completed += 1
-                progress("evaluate", eval_completed, len(artists_to_lookup), f"Evaluated {artist_infos[key].name} (late)")
-            except Exception:
-                pass
-        if key not in evaluated_keys:
+                progress("evaluate", eval_completed, len(artists_to_lookup), f"Late evaluate: {artist_infos.get(key, _key_names.get(key, key))}")
+            except Exception as exc:
+                evaluated_keys.add(key)
+                eval_completed += 1
+                name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+                logger.warning("Late evaluate failed for '%s': %s", name, exc)
+                skipped_artists.append({"name": name, "reason": f"Evaluation error: {exc}", "artist_key": key})
+        else:
             name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
             skipped_artists.append({"name": name, "reason": "Timed out during evaluation", "artist_key": key})
             fut.cancel()
-            eval_completed += 1
-            progress("evaluate", eval_completed, len(artists_to_lookup), f"Skipped {name} (timeout)")
     eval_pool.shutdown(wait=False, cancel_futures=True)
 
     # Safety fallback — evaluate any resolved artists that weren't evaluated.
@@ -1101,8 +1114,28 @@ def retry_skipped_artists(
         except TimeoutError:
             pass
 
-        for fut, key in futures.items():
-            if key not in resolved_keys:
+        # Two-pass drain: pass 1 — collect futures still running
+        still_running = {
+            fut: key for fut, key in futures.items()
+            if key not in resolved_keys
+        }
+        # Pass 2: re-check — some may have completed during pass 1
+        for fut, key in still_running.items():
+            if fut.done():
+                try:
+                    key, artist = fut.result()
+                    resolved_keys.add(key)
+                    resolved_i += 1
+                    artist_infos[key] = artist
+                    qr = quick_scan(artist, config.quick_weights)
+                    quick_results[key] = qr
+                    progress("resolve", resolved_i, total_artists, f"Late resolve: {artist.name}")
+                except Exception as exc:
+                    resolved_keys.add(key)
+                    resolved_i += 1
+                    name = _key_names.get(key, key)
+                    still_skipped.append({"name": name, "reason": f"Retry resolve error: {exc}", "artist_key": key})
+            else:
                 name = _key_names.get(key, key)
                 still_skipped.append({"name": name, "reason": "Timed out during retry resolution", "artist_key": key})
                 fut.cancel()
@@ -1226,8 +1259,27 @@ def retry_skipped_artists(
         except TimeoutError:
             pass
 
-        for fut, key in futures.items():
-            if key not in evaluated_keys:
+        # Two-pass drain: pass 1 — collect futures still running
+        still_running = {
+            fut: key for fut, key in futures.items()
+            if key not in evaluated_keys
+        }
+        # Pass 2: re-check — some may have completed during pass 1
+        for fut, key in still_running.items():
+            if fut.done():
+                try:
+                    key, ev, sr = fut.result()
+                    evaluations[key] = ev
+                    standard_results[key] = sr
+                    evaluated_keys.add(key)
+                    eval_completed += 1
+                    progress("evaluate", eval_completed, len(artists_to_lookup), f"Late evaluate: {artist_infos.get(key, _key_names.get(key, key))}")
+                except Exception as exc:
+                    evaluated_keys.add(key)
+                    eval_completed += 1
+                    name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
+                    still_skipped.append({"name": name, "reason": f"Retry evaluation error: {exc}", "artist_key": key})
+            else:
                 name = artist_infos[key].name if key in artist_infos else _key_names.get(key, key)
                 still_skipped.append({"name": name, "reason": "Timed out during retry evaluation", "artist_key": key})
                 fut.cancel()
