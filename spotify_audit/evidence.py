@@ -1127,6 +1127,12 @@ def _collect_duration_evidence(artist: ArtistInfo) -> list[Evidence]:
     avg_s = avg_ms / 1000
     stdev_s = stdev_ms / 1000
 
+    # BUG-03 fix: If avg duration is 0 (or near-zero), the data is missing/invalid.
+    # A duration of 0 is not real data — no song is 0 seconds long.  Don't emit
+    # it as a red flag; just skip duration evidence entirely.
+    if avg_s < 1:
+        return evidence
+
     # Very short tracks (stream farming targets just past the 30s payout threshold)
     if avg_s < 90:
         evidence.append(Evidence(
@@ -2421,60 +2427,41 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
         ))
         return evidence
 
-    # Gate green flag strength on listener count
-    if ext.lastfm_listeners >= 100:
-        lastfm_found_strength = "moderate"
-    elif ext.lastfm_listeners >= 50:
-        lastfm_found_strength = "weak"
-    else:
-        lastfm_found_strength = None  # negligible — don't award green flag
+    # BUG-02 fix: Emit ONE consolidated Last.fm bullet combining listeners,
+    # scrobbles, and play ratio. Per spec Part 6.2, the canonical format is:
+    # "{scrobble_count} Last.fm scrobbles ({listener_count} listeners, {ratio}x play ratio)"
+    ratio = ext.lastfm_listener_play_ratio
 
-    if lastfm_found_strength:
+    if ext.lastfm_listeners >= 50:
+        # Determine strength from both listener count and engagement ratio
+        if ratio >= 10:
+            strength = "strong"
+            tags = ["genuine_fans"]
+        elif ratio >= 4:
+            strength = "moderate"
+            tags = ["genuine_fans"]
+        elif ext.lastfm_listeners >= 100:
+            strength = "moderate"
+            tags = []
+        else:
+            strength = "weak"
+            tags = []
+
+        ratio_str = f", {ratio:.1f}x play ratio" if ratio > 0 else ""
         evidence.append(Evidence(
-            finding=f"Found on Last.fm ({ext.lastfm_listeners:,} listeners, "
-                    f"{ext.lastfm_playcount:,} scrobbles)",
+            finding=f"{ext.lastfm_playcount:,} Last.fm scrobbles "
+                    f"({ext.lastfm_listeners:,} listeners{ratio_str})",
             source="Last.fm",
             evidence_type="green_flag",
-            strength=lastfm_found_strength,
+            strength=strength,
             detail=f"Artist has {ext.lastfm_listeners:,} unique listeners and "
-                   f"{ext.lastfm_playcount:,} total scrobbles on Last.fm.",
+                   f"{ext.lastfm_playcount:,} total scrobbles on Last.fm."
+                   f"{f' Each listener averages {ratio:.1f} plays.' if ratio > 0 else ''}",
+            tags=tags,
         ))
 
-    # Listener-to-playcount ratio analysis
-    # Real artists: ratio typically 5-50+ (fans listen repeatedly)
-    # Ghost artists: ratio near 1-3 (no real fans, incidental scrobbles)
-    ratio = ext.lastfm_listener_play_ratio
-    if ratio > 0:
-        if ratio >= 10:
-            evidence.append(Evidence(
-                finding=f"Strong scrobble engagement (play/listener ratio: {ratio:.1f})",
-                source="Last.fm",
-                evidence_type="green_flag",
-                strength="strong",
-                detail=f"Each listener averages {ratio:.1f} plays. High replay value "
-                       "indicates genuine fans who return to this artist's music.",
-                tags=["genuine_fans"],
-            ))
-        elif ratio >= 4:
-            evidence.append(Evidence(
-                finding=f"Moderate scrobble engagement (play/listener ratio: {ratio:.1f})",
-                source="Last.fm",
-                evidence_type="green_flag",
-                strength="moderate",
-                detail=f"Each listener averages {ratio:.1f} plays. Reasonable replay "
-                       "rate suggesting some genuine fan engagement.",
-                tags=["genuine_fans"],
-            ))
-        elif ratio >= 2:
-            evidence.append(Evidence(
-                finding=f"Low scrobble engagement (play/listener ratio: {ratio:.1f})",
-                source="Last.fm",
-                evidence_type="neutral",
-                strength="weak",
-                detail=f"Each listener averages {ratio:.1f} plays. Borderline — "
-                       "could indicate casual listeners or early-stage fanbase.",
-            ))
-        elif ext.lastfm_listeners >= 100:
+        # Very low engagement despite decent listener count → separate red flag
+        if ratio > 0 and ratio < 2 and ext.lastfm_listeners >= 100:
             evidence.append(Evidence(
                 finding=f"Very low scrobble engagement (play/listener ratio: {ratio:.1f})",
                 source="Last.fm",
@@ -2485,9 +2472,8 @@ def _collect_lastfm_evidence(ext: ExternalData) -> list[Evidence]:
                        "rather than genuine fans — a common pattern with PFC content.",
                 tags=["low_scrobble_engagement"],
             ))
-
-    # Low listener count vs Spotify presence
-    if ext.lastfm_listeners > 0 and ext.lastfm_listeners < 50:
+    elif ext.lastfm_listeners > 0:
+        # Negligible presence
         evidence.append(Evidence(
             finding=f"Negligible Last.fm presence ({ext.lastfm_listeners} listeners)",
             source="Last.fm",
@@ -3425,47 +3411,31 @@ def evaluate_artist(
     if ext.songkick_found:
         presence.songkick = True
 
-    # Re-generate platform evidence with updated counts
+    # Re-generate platform evidence with updated counts.
+    # BUG-04 fix: Per spec Part 7 Rule 5, do NOT emit "Found on N platforms" —
+    # it's redundant since individual platform bullets already convey this.
+    # Only emit the single_platform red flag when found on 0-1 platforms.
     platforms_found = presence.count()
-    platform_ev = []  # clear and rebuild
-    if platforms_found >= 5:
+    platform_ev = []
+    if platforms_found <= 1:
         platform_ev.append(Evidence(
-            finding=f"Found on {platforms_found} platforms",
-            source="Cross-platform",
-            evidence_type="green_flag",
-            strength="strong",
-            detail=f"Artist verified on: {', '.join(presence.names())}. "
-                   "Broad cross-platform presence is very strong proof of a real artist.",
-            tags=["multi_platform"],
-        ))
-    elif platforms_found >= 3:
-        platform_ev.append(Evidence(
-            finding=f"Found on {platforms_found} platforms",
-            source="Cross-platform",
-            evidence_type="green_flag",
-            strength="strong",
-            detail=f"Artist exists on: {', '.join(presence.names())}. "
-                   "Artists present on multiple platforms are very likely real.",
-            tags=["multi_platform"],
-        ))
-    elif platforms_found >= 2:
-        platform_ev.append(Evidence(
-            finding=f"Found on {platforms_found} platforms",
-            source="Cross-platform",
-            evidence_type="green_flag",
-            strength="moderate",
-            detail=f"Found on: {', '.join(presence.names())}.",
-            tags=["multi_platform"],
-        ))
-    elif platforms_found <= 1:
-        platform_ev.append(Evidence(
-            finding="Only found on 1 platform",
+            finding="Only found on 1 platform outside Spotify",
             source="Cross-platform",
             evidence_type="red_flag",
             strength="weak",
             detail="Artist only verified on a single platform. "
                    "Could be new or could be a fabricated artist.",
             tags=["single_platform"],
+        ))
+    else:
+        # Still tag for scoring purposes (multi_platform), but no visible bullet
+        platform_ev.append(Evidence(
+            finding=f"Verified on {', '.join(presence.names())}",
+            source="Cross-platform",
+            evidence_type="green_flag",
+            strength="strong" if platforms_found >= 3 else "moderate",
+            detail=f"Artist exists on {platforms_found} platforms: {', '.join(presence.names())}.",
+            tags=["multi_platform"],
         ))
 
     all_evidence.extend(platform_ev)
@@ -3524,6 +3494,46 @@ def evaluate_artist(
     # inflation (e.g., PFC label matched from Blocklist, Discogs, AND MusicBrainz).
     all_evidence = _deduplicate_evidence(all_evidence)
 
+    # BUG-01 fix: Consolidate blocklist "clean" bullets.
+    # When no blocklist hits exist, emit exactly ONE green bullet: "Clean across
+    # all blocklists". Remove individual clean/neutral bullets from Blocklist,
+    # Entity DB, and Deezer AI Detection sources that say "not on any blocklist",
+    # "no prior intelligence", etc.
+    _BLOCKLIST_TAGS = {"pfc_label", "pfc_songwriter", "pfc_publisher",
+                       "known_ai_artist", "known_ai_label", "known_bad_actor",
+                       "entity_confirmed_bad", "entity_suspected",
+                       "entity_bad_label", "entity_bad_songwriter",
+                       "entity_bad_network", "isrc_pfc_registrant",
+                       "ai_generated_music"}
+    has_blocklist_hit = any(
+        e.evidence_type == "red_flag" and bool(set(e.tags) & _BLOCKLIST_TAGS)
+        for e in all_evidence
+    )
+    if not has_blocklist_hit:
+        # Remove individual "clean" bullets from blocklist-related sources
+        _CLEAN_SOURCES = {"Blocklist", "Entity DB", "pre-check"}
+        all_evidence = [
+            e for e in all_evidence
+            if not (
+                e.evidence_type in ("neutral", "green_flag")
+                and (
+                    e.source in _CLEAN_SOURCES
+                    or any(t in {"deezer_ai_clear", "entity_cleared"} for t in e.tags)
+                    or "blocklist" in e.finding.lower()
+                )
+            )
+        ]
+        # Add single consolidated clean bullet
+        all_evidence.append(Evidence(
+            finding="Clean across all blocklists",
+            source="Blocklist",
+            evidence_type="green_flag",
+            strength="moderate",
+            detail="Not matched on PFC distributor, known AI artist, or PFC songwriter blocklists. "
+                   "No prior negative intelligence in entity database.",
+            tags=["deezer_ai_clear"],
+        ))
+
     # Separate by type
     red_flags = [e for e in all_evidence if e.evidence_type == "red_flag"]
     green_flags = [e for e in all_evidence if e.evidence_type == "green_flag"]
@@ -3561,7 +3571,7 @@ def evaluate_artist(
                 f"API errors caused all-zero scores → Inconclusive (data collection failure)"
             )
 
-    return ArtistEvaluation(
+    evaluation = ArtistEvaluation(
         artist_id=artist.artist_id,
         artist_name=artist.name,
         verdict=verdict,
@@ -3576,6 +3586,38 @@ def evaluate_artist(
         external_data=ext,
         matched_rule=matched_rule,
     )
+
+    # BUG-21 fix: Sanity check — log warning when category score > 0 but
+    # no evidence bullets exist for that category.  This helps catch cases
+    # where the scoring function awards points but the evidence emitter
+    # didn't produce a matching bullet.
+    cat_scores = compute_category_scores(evaluation)
+    _TAG_TO_CAT = {
+        "multi_platform": "Platform Presence", "single_platform": "Platform Presence",
+        "wikipedia": "Platform Presence", "social_media": "Platform Presence",
+        "youtube_presence": "Platform Presence", "bandcamp_presence": "Platform Presence",
+        "genuine_fans": "Fan Engagement", "low_fans": "Fan Engagement",
+        "low_scrobble_engagement": "Fan Engagement",
+        "catalog_albums": "Creative History", "genius_credits": "Creative History",
+        "content_farm": "Creative History", "stream_farm": "Creative History",
+        "live_performance": "IRL Presence", "physical_release": "IRL Presence",
+        "industry_registered": "Industry Signals", "pro_registered": "Industry Signals",
+        "pfc_label": "Blocklist Status", "known_ai_artist": "Blocklist Status",
+    }
+    for cat_name, cat_score in cat_scores.items():
+        if cat_score > 0 and cat_name != "Blocklist Status":
+            has_bullets = any(
+                any(t in _TAG_TO_CAT and _TAG_TO_CAT[t] == cat_name for t in e.tags)
+                for e in (red_flags + green_flags)
+                if e.tags
+            )
+            if not has_bullets:
+                logger.warning(
+                    "Score %d for %s but no evidence emitted for %s",
+                    cat_score, cat_name, artist.name,
+                )
+
+    return evaluation
 
 
 def incorporate_deep_evidence(

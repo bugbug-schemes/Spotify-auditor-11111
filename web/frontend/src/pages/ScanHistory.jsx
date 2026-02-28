@@ -204,6 +204,9 @@ function ScanDetail({ detail }) {
   const skippedCount = summary.timed_out_count || detail.skipped_count || detail.skipped_artists?.length || 0;
   const analyzedCount = summary.analyzed_count || results.length;
   const totalArtists = summary.total_playlist_artists || (analyzedCount + skippedCount);
+  const flaggedCount = useMemo(() => results.filter(
+    r => r.verdict === 'Suspicious' || r.verdict === 'Likely Artificial'
+  ).length, [results]);
 
   // Sort and filter results
   const displayResults = useMemo(() => {
@@ -238,20 +241,23 @@ function ScanDetail({ detail }) {
 
       {/* Summary card (spec Part 1) */}
       <div className="card scan-summary-card">
+        {/* BUG-11 fix: Removed Health Score card. Show Analyzed, Timed Out, Flagged. */}
         <div className="scan-summary-metrics">
           <div className="scan-summary-stat">
             <span className="scan-summary-value">{analyzedCount}</span>
             <span className="scan-summary-label">Analyzed{totalArtists > analyzedCount ? ` of ${totalArtists}` : ''}</span>
           </div>
-          {skippedCount > 0 && (
-            <div className="scan-summary-stat scan-summary-stat--warning">
-              <span className="scan-summary-value">{skippedCount} timed out {'\u26A0\uFE0F'}</span>
-              <span className="scan-summary-label">Not scanned</span>
-            </div>
-          )}
           <div className="scan-summary-stat">
-            <span className="scan-summary-value">{summary.health_score ?? detail.health_score ?? '-'}</span>
-            <span className="scan-summary-label">Health Score</span>
+            <span className="scan-summary-value">
+              {skippedCount > 0 ? `${skippedCount} \u26A0\uFE0F` : `0 \u2713`}
+            </span>
+            <span className="scan-summary-label">Timed Out</span>
+          </div>
+          <div className="scan-summary-stat">
+            <span className="scan-summary-value" style={{ color: flaggedCount > 0 ? 'var(--red, #ef4444)' : undefined }}>
+              {flaggedCount}
+            </span>
+            <span className="scan-summary-label">Flagged</span>
           </div>
         </div>
 

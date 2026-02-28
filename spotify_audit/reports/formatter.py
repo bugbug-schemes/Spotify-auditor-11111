@@ -44,7 +44,8 @@ def _report_to_dict(report: PlaylistReport) -> dict:
             "health_score": report.health_score,
             "analyzed_count": len(report.artists),
             "timed_out_count": not_scanned,
-            "total_playlist_artists": report.total_unique_artists,
+            # BUG-22 fix: total includes analyzed + skipped
+            "total_playlist_artists": report.total_unique_artists + not_scanned,
             "verdict_breakdown": {
                 "Verified Artist": report.verified_artists,
                 "Likely Authentic": report.likely_authentic,
@@ -123,6 +124,7 @@ def _build_api_status(ext: ExternalData) -> dict:
         "discogs": True,
         "setlistfm": True,
         "wikipedia": True,
+        "youtube": True,  # BUG-07 fix: include YouTube in API status
     }
     status: dict[str, str] = {}
     found_map = {
@@ -133,9 +135,14 @@ def _build_api_status(ext: ExternalData) -> dict:
         "discogs": ext.discogs_found,
         "setlistfm": ext.setlistfm_found,
         "wikipedia": ext.wikipedia_found,
+        "youtube": ext.youtube_channel_found if ext.youtube_checked else None,  # BUG-07
     }
     errors_lower = {k.lower(): v for k, v in ext.api_errors.items()}
     for platform in found_map:
+        # BUG-07 fix: None means the check was never performed → "skipped"
+        if found_map[platform] is None:
+            status[platform] = "skipped"
+            continue
         if found_map[platform]:
             status[platform] = "found"
         elif platform in errors_lower or platform.replace(".", "") in {
@@ -672,6 +679,7 @@ def to_html(report: PlaylistReport) -> str:
     # Compute metrics
     flagged = report.suspicious + report.likely_artificial
     skipped_count = len(report.skipped_artists) if report.skipped_artists else 0
+    # BUG-22 fix: total_unique_artists now excludes skipped — add them for verdict bar
     total_bar = report.total_unique_artists + skipped_count
 
     # Derive scan tier from artist data
@@ -1219,24 +1227,21 @@ body {{
 
 <!-- Summary -->
 <div class="summary">
-  <div class="gauge-col">
-    {_health_gauge_svg(report.health_score)}
-    <div class="gauge-subtitle">
-      {report.health_score}% of artists show legitimacy signals
-    </div>
-  </div>
-  <div class="metrics-col">
-    <!-- Key metrics (spec Part 1: show only analyzed count + timeout warning) -->
+  <!-- BUG-11 fix: Health Score gauge removed. Show Analyzed, Timed Out, Flagged. -->
+  <div class="metrics-col" style="width:100%">
     <div class="metric-row">
       <div class="metric-card">
         <div class="metric-value">{report.total_unique_artists}</div>
         <div class="metric-label">Analyzed</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">{flagged}</div>
+        <div class="metric-value">{f'{skipped_count} &#9888;' if skipped_count else '0 &#10003;'}</div>
+        <div class="metric-label">Timed Out</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-value" style="color:{('#ef4444' if flagged else '#9ca3af')}">{flagged}</div>
         <div class="metric-label">Flagged</div>
       </div>
-      {f'<div class="metric-card"><div class="metric-value" style="color:#f97316">{skipped_count} &#9888;</div><div class="metric-label">Timed Out</div></div>' if skipped_count else ''}
     </div>
 
     <!-- Verdict bar (spec Part 1: updated colors + Not Scanned segment) -->
@@ -1258,9 +1263,10 @@ body {{
   </div>
 </div>
 
-<!-- Methodology link (spec Part 1: replaced inline section with one-line link) -->
+<!-- Methodology link (spec Part 1: BUG-23 fix — add clickable link) -->
 <div style="font-size:0.88rem;color:var(--text-dim);margin-bottom:24px;padding:12px 20px;background:var(--card);border:1px solid var(--border);border-radius:8px">
   Analyzed across 6 evidence categories using 7 data sources
+  &mdash; <a href="/methodology" target="_blank" rel="noopener" style="color:var(--accent)">How does this work? &#8599;</a>
 </div>
 
 <!-- Artist list -->
@@ -1273,7 +1279,11 @@ body {{
     <button class="toggle-btn" onclick="sortCards('alpha')" id="sort-alpha">A-Z</button>
     <span style="margin-left:8px"></span>
     <button class="toggle-btn" onclick="filterCards('all')" id="filter-all" style="border-color:var(--accent)">All</button>
-    <button class="toggle-btn" onclick="filterCards('flagged')" id="filter-flagged">Flagged</button>
+    <button class="toggle-btn" onclick="filterCards('Verified Artist')" id="filter-verified">Verified</button>
+    <button class="toggle-btn" onclick="filterCards('Likely Authentic')" id="filter-authentic">Likely Authentic</button>
+    <button class="toggle-btn" onclick="filterCards('Inconclusive')" id="filter-inconclusive">Inconclusive</button>
+    <button class="toggle-btn" onclick="filterCards('Suspicious')" id="filter-suspicious">Suspicious</button>
+    <button class="toggle-btn" onclick="filterCards('Likely Artificial')" id="filter-artificial">Likely Artificial</button>
     <span style="margin-left:8px"></span>
     <button class="toggle-btn" onclick="toggleAll()">Expand All</button>
   </div>
@@ -1323,11 +1333,16 @@ function sortCards(mode) {{
 function filterCards(mode) {{
   const cards = document.querySelectorAll('.card[data-idx]');
   cards.forEach(c => {{
-    if (mode === 'all') c.style.display = '';
-    else if (mode === 'flagged') c.style.display = c.dataset.flagged === 'true' ? '' : 'none';
+    if (mode === 'all') {{
+      c.style.display = '';
+    }} else {{
+      // BUG-15 fix: Per-verdict filtering. Match against data-verdict attribute.
+      c.style.display = c.dataset.verdict === mode ? '' : 'none';
+    }}
   }});
   document.querySelectorAll('[id^="filter-"]').forEach(b => b.style.borderColor = '');
-  var el = document.getElementById('filter-' + mode);
+  var el = document.getElementById('filter-' + mode.replace(/ /g, '').toLowerCase());
+  if (!el) el = document.getElementById('filter-all');
   if (el) el.style.borderColor = 'var(--accent)';
 }}
 </script>
@@ -1337,14 +1352,20 @@ function filterCards(mode) {{
 
 
 def _threat_bar_section(segments: list[tuple[str, int, str]], total: int) -> str:
-    """Render threat category bar section."""
+    """Render threat breakdown section — BUG-13 fix: nested under verdict bar."""
     bar = _stacked_bar(segments, total)
     legend_items = []
     for name, count, color in segments:
         if count > 0:
             legend_items.append(f'<span><span class="legend-dot" style="background:{color}"></span>{_esc(name)}</span>')
     legend = '<div class="legend">' + " ".join(legend_items) + '</div>' if legend_items else ''
-    return f'<div class="bar-section"><div class="bar-label">Threat Categories</div>{bar}{legend}</div>'
+    return (
+        f'<div style="margin-left:20px;border-left:3px solid #f97316;padding-left:16px;margin-top:8px">'
+        f'<div class="bar-label">Threat Breakdown</div>'
+        f'<div style="font-size:0.78rem;color:var(--text-dim);margin-bottom:8px">'
+        f'{total} artists flagged as Suspicious or Likely Artificial</div>'
+        f'{bar}{legend}</div>'
+    )
 
 
 def _build_skipped_section(skipped: list[dict]) -> str:
@@ -1483,6 +1504,24 @@ def _build_card(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
     else:
         badge_bg = "#ef4444"
 
+    # BUG-16 fix: Confidence-based badge styling
+    confidence = ev.confidence if ev else "medium"
+    if confidence == "low":
+        badge_border = f"2px dashed {badge_bg}"
+        badge_opacity = "0.7"
+        badge_fill = "transparent"
+        badge_text_color = badge_bg
+    elif confidence == "high":
+        badge_border = f"2px solid {badge_bg}"
+        badge_opacity = "1"
+        badge_fill = badge_bg
+        badge_text_color = "#fff"
+    else:  # medium
+        badge_border = f"1px solid {badge_bg}"
+        badge_opacity = "1"
+        badge_fill = badge_bg
+        badge_text_color = "#fff"
+
     # Collapsed stats line
     stats = _build_stats_line(a, ev)
 
@@ -1497,9 +1536,9 @@ def _build_card(a: ArtistReport, ev: ArtistEvaluation | None, idx: int) -> str:
     if ev:
         body_html = _build_card_body(a, ev)
 
-    return f"""<div class="card" data-flagged="{'true' if is_flagged else 'false'}" data-idx="{idx}" data-score="{score}" data-name="{_esc(a.artist_name)}">
+    return f"""<div class="card" data-flagged="{'true' if is_flagged else 'false'}" data-verdict="{_esc(a.verdict)}" data-idx="{idx}" data-score="{score}" data-name="{_esc(a.artist_name)}">
   <div class="card-row" onclick="toggleCard(this)">
-    <div class="score-badge" style="background:{badge_bg}">{score}</div>
+    <div class="score-badge" style="background:{badge_fill};border:{badge_border};color:{badge_text_color};opacity:{badge_opacity}">{score}</div>
     <div class="card-info">
       <div class="card-name">{_esc(a.artist_name)}</div>
       <div class="card-stats">{stats}</div>
@@ -1678,8 +1717,9 @@ def _build_platform_icons(ev: ArtistEvaluation, ext: ExternalData) -> str:
     badges = []
     for name, found in platforms:
         if found is None:
-            icon = '<span style="color:#333">&#8226;</span>'
-            color = "#333"
+            # BUG-07 fix: YouTube not checked → show ✗ (not found), not neutral dot
+            icon = '<span style="color:#444">&#10007;</span>'
+            color = "#444"
         elif found:
             icon = '<span style="color:#22c55e">&#10003;</span>'
             color = "#22c55e"
@@ -1806,7 +1846,7 @@ _TAG_TO_AXIS: dict[str, str] = {
     "no_pro_registration": "Industry Signals",
     "normal_pro_split": "Industry Signals",
     "no_songwriter_share": "Industry Signals",
-    "career_bio": "Industry Signals",
+    "career_bio": "Platform Presence",  # BUG-06 fix: bio → Platform Presence per spec Part 5.1
     "ai_bio": "Industry Signals",
     "suspicious_bio": "Industry Signals",
     "impersonation": "Industry Signals",
@@ -1881,12 +1921,12 @@ _PAD_CANDIDATES: dict[str, list[tuple[str, str]]] = {
         ("Discogs", "No physical releases found on Discogs"),
     ],
     "Industry Signals": [
-        ("PRO Registry", "No PRO registration found"),
+        # BUG-10 fix: Reword to match spec ("Not registered with ASCAP, BMI, or SESAC")
+        ("PRO Registry", "Not registered with ASCAP, BMI, or SESAC"),
     ],
-    "Blocklist Status": [
-        ("Blocklist", "Not matched on any blocklists"),
-        ("Entity DB", "No prior intelligence in entity database"),
-    ],
+    # BUG-01 fix: Blocklist Status no longer needs padding — the backend now
+    # emits a single consolidated "Clean across all blocklists" bullet.
+    "Blocklist Status": [],
 }
 
 
@@ -1942,6 +1982,8 @@ def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[st
     for axis in axis_order:
         score = scores.get(axis, 0)
         # 4-tier color per spec Part 5
+        # BUG-09 fix: score 0 with no evidence → gray; score 0 with red flags → red
+        has_evidence = bool(axis_greens.get(axis)) or bool(axis_reds.get(axis))
         if axis == "Blocklist Status":
             color = "#22c55e" if score >= 100 else "#ef4444"
         elif score >= 70:
@@ -1951,7 +1993,7 @@ def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[st
         elif score >= 15:
             color = "#f97316"
         else:
-            color = "#ef4444" if score > 0 else "#9ca3af"
+            color = "#ef4444" if has_evidence else "#9ca3af"
         icon = axis_icons.get(axis, "")
 
         greens = sorted(axis_greens.get(axis, []), key=lambda e: strength_order.get(e.strength, 2))
@@ -1986,17 +2028,37 @@ def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[st
                 if shown >= 3:
                     break
                 is_positive = axis == "Blocklist Status"
-                pad_color = "#22c55e" if is_positive else "#556"
-                pad_icon = "&#10003;" if is_positive else "&#8226;"
+                # BUG-10 fix: Pad items for Industry Signals (like PRO absence)
+                # should render as weak red (✗), not neutral dot (•)
+                is_negative_pad = axis == "Industry Signals"
+                if is_positive:
+                    pad_color = "#22c55e"
+                    pad_icon = "&#10003;"
+                elif is_negative_pad:
+                    pad_color = "#f97316"
+                    pad_icon = "&#10007;"  # ✗
+                else:
+                    pad_color = "#556"
+                    pad_icon = "&#8226;"
                 items_html += (
                     f'<div class="axis-item">'
                     f'<span class="axis-icon" style="color:{pad_color}">{pad_icon}</span>'
-                    f'<span style="color:#556">{_esc(finding)}</span></div>'
+                    f'<span style="color:{pad_color}">{_esc(finding)}</span></div>'
                 )
                 shown += 1
 
+        # BUG-19 fix: Never show "No data" — name specific sources checked
         if not items_html:
-            items_html = '<div class="axis-item"><span style="color:#445">No data</span></div>'
+            no_data_map = {
+                "Platform Presence": "Not found on Deezer, YouTube, Bandcamp, Wikipedia, Genius",
+                "Fan Engagement": "Not found on Last.fm &middot; 0 Deezer fans",
+                "Creative History": "No catalog data from Deezer &middot; No songs on Genius &middot; No collaborator data from MusicBrainz",
+                "IRL Presence": "No concerts on Setlist.fm &middot; No releases on Discogs",
+                "Industry Signals": "No MusicBrainz entry &middot; No ISNI/IPI codes",
+                "Blocklist Status": "Clean across all blocklists",
+            }
+            msg = no_data_map.get(axis, "No relevant data sources returned results")
+            items_html = f'<div class="axis-item"><span style="color:#556">&mdash; {msg}</span></div>'
 
         # Special treatment for Creative History: add release timeline
         timeline_html = ""
@@ -2021,10 +2083,24 @@ def _build_axis_buckets(ev: ArtistEvaluation, ext: ExternalData, scores: dict[st
                     f'&#9888; {len(reds)} blocklist hit{"s" if len(reds) != 1 else ""}</div>'
                 )
 
+        # BUG-20 fix: Add accessibility indicator alongside score
+        if axis == "Blocklist Status":
+            acc_icon = "&#10003;" if score >= 100 else "&#10007;"
+        elif score >= 70:
+            acc_icon = "&#10003;"  # ✓
+        elif score >= 40:
+            acc_icon = "&#9675;"   # ○
+        elif score >= 15:
+            acc_icon = "&#9651;"   # △
+        elif has_evidence:
+            acc_icon = "&#10007;"  # ✗
+        else:
+            acc_icon = "&mdash;"   # —
+
         buckets.append(f"""<div class="axis-bucket">
   <div class="axis-header">
     <span class="axis-name">{icon} {_esc(axis)}</span>
-    <span class="axis-score" style="color:{color}">{score}</span>
+    <span class="axis-score" style="color:{color}">{acc_icon} {score}</span>
   </div>
   <div class="axis-bar"><div class="axis-bar-fill" style="width:{score}%;background:{color}"></div></div>
   {banner_html}
@@ -2130,9 +2206,9 @@ def _inject_data_signals(
     if ext.lastfm_listeners and ext.lastfm_listeners >= 1_000:
         _green("Fan Engagement", f"Last.fm: {ext.lastfm_listeners:,} listeners")
 
-    # Creative History
-    if ext.discogs_physical_releases:
-        _green("Creative History", f"{ext.discogs_physical_releases} physical releases (Discogs)")
+    # Creative History — BUG-05 fix: Discogs physical releases belong in IRL
+    # Presence only, not Creative History. Creative History uses Deezer catalog,
+    # Genius credits, and MusicBrainz data.
     if ext.genius_song_count and ext.genius_song_count >= 5:
         _green("Creative History", f"{ext.genius_song_count} songs on Genius")
 
@@ -2144,8 +2220,9 @@ def _inject_data_signals(
     countries = ext.setlistfm_venue_countries or ext.songkick_venue_countries
     if countries and len(countries) >= 3:
         _green("IRL Presence", f"Toured {len(countries)} countries")
+    # BUG-05 fix: ONE consolidated Discogs physical release bullet in IRL Presence
     if ext.discogs_physical_releases:
-        _green("IRL Presence", f"{ext.discogs_physical_releases} vinyl/CD (Discogs)")
+        _green("IRL Presence", f"{ext.discogs_physical_releases} physical releases on Discogs (vinyl/CD)")
 
     # Industry Signals (now includes Discogs bio, real name)
     if ext.musicbrainz_isnis:
@@ -2168,8 +2245,10 @@ def _inject_data_signals(
             _red("Industry Signals", "Not in BMI or ASCAP")
     if ext.discogs_realname:
         _green("Industry Signals", f"Real name: {ext.discogs_realname}")
+    # BUG-06 fix: Discogs bio is a Platform Presence signal per spec Part 5.1,
+    # not Industry Signals. Emit ONE bullet with char count.
     if len(ext.discogs_profile) >= 200:
-        _green("Industry Signals", "Detailed Discogs bio")
+        _green("Platform Presence", f"Discogs bio ({len(ext.discogs_profile)} chars)")
 
     # Blocklist Status (new category)
     all_tags: set[str] = set()

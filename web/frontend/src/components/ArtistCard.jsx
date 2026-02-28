@@ -85,7 +85,7 @@ const TAG_TO_SECTION = {
   no_pro_registration: 'Industry Signals',
   normal_pro_split: 'Industry Signals',
   no_songwriter_share: 'Industry Signals',
-  career_bio: 'Industry Signals',
+  career_bio: 'Platform Presence',  // BUG-06 fix: bio → Platform Presence per spec Part 5.1
   ai_bio: 'Industry Signals',
   suspicious_bio: 'Industry Signals',
   impersonation: 'Industry Signals',
@@ -330,13 +330,16 @@ function ScoreBadge({ score, verdict, confidence }) {
 }
 
 // Mini 6-segment category bar (spec Part 2)
-function MiniCategoryBar({ scores }) {
+// BUG-09 fix: Pass sections to determine hasEvidence for gray vs red distinction
+function MiniCategoryBar({ scores, sections }) {
   return (
     <div className="mini-category-bar" title="Category scores: Platform | Fan | Creative | IRL | Industry | Blocklist">
       {SECTION_ORDER.map(name => {
         const score = scores[name] ?? 0;
         const isBlocklist = name === 'Blocklist Status';
-        const color = isBlocklist ? getBlocklistColor(score) : getScoreColor(score, score > 0);
+        const s = sections?.[name];
+        const hasEvidence = s ? (s.green.length > 0 || s.red.length > 0) : score > 0;
+        const color = isBlocklist ? getBlocklistColor(score) : getScoreColor(score, hasEvidence);
         return (
           <div
             key={name}
@@ -361,6 +364,7 @@ function PlatformCheckmarks({ result, sources }) {
     { name: 'Discogs', key: 'Discogs', statusKey: 'discogs' },
     { name: 'Setlist.fm', key: 'Setlist.fm', statusKey: 'setlistfm' },
     { name: 'Wikipedia', key: 'Wikipedia', statusKey: 'wikipedia' },
+    { name: 'YouTube', key: 'YouTube', statusKey: 'youtube' },  // BUG-07 fix
   ];
 
   const ext = result.external_data || {};
@@ -434,11 +438,13 @@ function SignalItem({ evidence, isNegativeLine }) {
 }
 
 // Section bar with 4-tier color + accessibility icon
-function SectionBar({ name, score, isBlocklist }) {
-  const color = isBlocklist ? getBlocklistColor(score) : getScoreColor(score, score > 0);
+// BUG-09 fix: hasEvidence determines gray vs red for score=0
+function SectionBar({ name, score, isBlocklist, hasEvidence }) {
+  const hasData = hasEvidence !== undefined ? hasEvidence : score > 0;
+  const color = isBlocklist ? getBlocklistColor(score) : getScoreColor(score, hasData);
   const icon = isBlocklist
     ? (score >= 100 ? '\u2713' : '\u2717')
-    : getScoreIcon(score, score > 0);
+    : getScoreIcon(score, hasData);
   const pct = Math.max(0, Math.min(100, score));
   const sectionIcon = SECTION_ICONS[name] || '';
 
@@ -567,7 +573,7 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
               </span>
             )}
           </div>
-          <MiniCategoryBar scores={categoryScores} />
+          <MiniCategoryBar scores={categoryScores} sections={sections} />
         </div>
 
         <button
@@ -620,6 +626,10 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
                 const greenItems = s.green;
                 const redItems = s.red;
 
+                // BUG-09 fix: Determine if section has any real evidence
+                // (green or red flags). If not, score 0 = gray (no data), not red.
+                const hasEvidence = greenItems.length > 0 || redItems.length > 0;
+
                 // Build consolidated negative bullet (Part 7, Rules 2-4)
                 const negativeLines = [];
                 if (sectionName !== 'Blocklist Status') {
@@ -636,6 +646,7 @@ export default function ArtistCard({ result, defaultExpanded = false }) {
                       name={sectionName}
                       score={sectionScore}
                       isBlocklist={isBlocklist}
+                      hasEvidence={hasEvidence}
                     />
                     <div className="artist-section-signals">
                       {/* Green flags first (spec Part 7 Rule 8) */}
