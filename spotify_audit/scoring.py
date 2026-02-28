@@ -346,7 +346,8 @@ def build_playlist_report(
         playlist_id=playlist_id,
         owner=owner,
         total_tracks=total_tracks,
-        total_unique_artists=len(artist_reports) + len(skipped_artists or []),
+        # BUG-22 fix: "Analyzed" count should only include actually-analyzed artists
+        total_unique_artists=len(artist_reports),
         is_spotify_owned=is_spotify_owned,
         artists=sorted_reports,
         skipped_artists=skipped_artists or [],
