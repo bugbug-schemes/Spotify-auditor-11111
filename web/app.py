@@ -30,7 +30,12 @@ PROJECT_ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
 from flask import Flask, request, jsonify, render_template, send_from_directory
-from flask_limiter import Limiter
+
+try:
+    from flask_limiter import Limiter
+    _HAS_LIMITER = True
+except ImportError:
+    _HAS_LIMITER = False
 
 from web.api import cms_api, init_db
 
@@ -47,12 +52,16 @@ def _get_real_ip():
     return request.remote_addr
 
 
-limiter = Limiter(
-    key_func=_get_real_ip,
-    app=app,
-    default_limits=[],        # No global limit — only on specific endpoints
-    storage_uri="memory://",  # In-memory store; swap to redis:// for multi-process
-)
+if _HAS_LIMITER:
+    limiter = Limiter(
+        key_func=_get_real_ip,
+        app=app,
+        default_limits=[],        # No global limit — only on specific endpoints
+        storage_uri="memory://",  # In-memory store; swap to redis:// for multi-process
+    )
+else:
+    limiter = None
+    logger.warning("flask-limiter not installed — rate limiting disabled")
 
 # ---------------------------------------------------------------------------
 # Demo mode — serve cached report for UI development
@@ -339,7 +348,7 @@ def index():
 
 
 @app.route("/api/scan", methods=["POST"])
-@limiter.limit("5/minute")
+@(limiter.limit("5/minute") if limiter else lambda f: f)
 def start_scan():
     global _active_scan_count
 
