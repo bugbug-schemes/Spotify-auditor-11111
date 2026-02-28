@@ -641,6 +641,36 @@ def _health_gauge_svg(score: int) -> str:
 # Stacked bar helpers
 # ---------------------------------------------------------------------------
 
+def _verdict_legend_items(segments: list[tuple[str, int, str]],
+                          analyzed_count: int, skipped_count: int) -> str:
+    """Build legend items with percentages based on analyzed_count only.
+
+    Verdict segments show 'Label: NN% (count)'.
+    The 'Not Scanned' segment shows 'count Not Scanned' (no percentage).
+    """
+    items = []
+    for label, count, color in segments:
+        if count <= 0:
+            continue
+        if label == "Not Scanned":
+            items.append(
+                f'<span><span class="legend-dot" style="background:{color}"></span>'
+                f'{count} Not Scanned</span>'
+            )
+        elif analyzed_count > 0:
+            pct = round(count / analyzed_count * 100)
+            items.append(
+                f'<span><span class="legend-dot" style="background:{color}"></span>'
+                f'{_esc(label)}: {pct}% ({count})</span>'
+            )
+        else:
+            items.append(
+                f'<span><span class="legend-dot" style="background:{color}"></span>'
+                f'{_esc(label)} ({count})</span>'
+            )
+    return "\n        ".join(items)
+
+
 def _stacked_bar(segments: list[tuple[str, int, str]], total: int,
                   pct_base: int = 0) -> str:
     """Render a horizontal stacked bar.
@@ -1248,9 +1278,8 @@ body {{
   <div class="subtitle">{_esc(report.playlist_name)} &middot; by {_esc(report.owner)} &middot; {scan_tier} &middot; {now.strftime('%Y-%m-%d')}</div>
 </div>
 
-<!-- Summary -->
+<!-- Summary — metrics based on analyzed_count ONLY, skipped shown separately -->
 <div class="summary">
-  <!-- BUG-11 fix: Health Score gauge removed. Show Analyzed, Timed Out, Flagged. -->
   <div class="metrics-col" style="width:100%">
     <div class="metric-row">
       <div class="metric-card">
@@ -1258,26 +1287,17 @@ body {{
         <div class="metric-label">Analyzed{f' <span style="font-weight:400;color:var(--text-dim)">of {total_bar}</span>' if skipped_count else ''}</div>
       </div>
       <div class="metric-card">
-        <div class="metric-value">{f'{skipped_count} &#9888;' if skipped_count else '0 &#10003;'}</div>
-        <div class="metric-label">Timed Out</div>
-      </div>
-      <div class="metric-card">
         <div class="metric-value" style="color:{('#ef4444' if flagged else '#9ca3af')}">{flagged}</div>
         <div class="metric-label">Flagged</div>
       </div>
     </div>
 
-    <!-- Verdict bar (spec Part 1: updated colors + Not Scanned segment) -->
+    <!-- Verdict bar: widths proportional to full playlist, percentages from analyzed_count -->
     <div class="bar-section">
       <div class="bar-label">Verdict Breakdown</div>
       {_stacked_bar(verdict_segments, total_bar, pct_base=report.total_unique_artists)}
       <div class="legend">
-        <span><span class="legend-dot" style="background:#22c55e"></span>Verified Artist</span>
-        <span><span class="legend-dot" style="background:#86efac"></span>Likely Authentic</span>
-        <span><span class="legend-dot" style="background:#fbbf24"></span>Inconclusive</span>
-        <span><span class="legend-dot" style="background:#f97316"></span>Suspicious</span>
-        <span><span class="legend-dot" style="background:#ef4444"></span>Likely Artificial</span>
-        {f'<span><span class="legend-dot" style="background:#9ca3af"></span>Not Scanned</span>' if skipped_count else ''}
+        {_verdict_legend_items(verdict_segments, report.total_unique_artists, skipped_count)}
       </div>
     </div>
 
@@ -1285,6 +1305,9 @@ body {{
     {_threat_bar_section(threat_segments, flagged) if flagged else ''}
   </div>
 </div>
+
+<!-- Skipped artists notice — separate from summary, positioned below -->
+{_build_skipped_section(report.skipped_artists)}
 
 <!-- Methodology link (spec Part 1: BUG-23 fix — add clickable link) -->
 <div style="font-size:0.88rem;color:var(--text-dim);margin-bottom:24px;padding:12px 20px;background:var(--card);border:1px solid var(--border);border-radius:8px">
@@ -1313,8 +1336,6 @@ body {{
 </div>
 
 {"".join(artist_cards_html)}
-
-{_build_skipped_section(report.skipped_artists)}
 
 <!-- Footer -->
 <div class="footer">
@@ -1412,18 +1433,18 @@ def _build_skipped_section(skipped: list[dict]) -> str:
     plural = "s" if count != 1 else ""
 
     return f"""
-<div id="skipped-section" style="background:#1a1510;border:1px solid #3d2e1a;border-radius:10px;padding:16px 20px;margin:20px 0">
+<div id="skipped-section" style="background:rgba(156,163,175,0.08);border:1px solid rgba(156,163,175,0.2);border-radius:10px;padding:16px 20px;margin-bottom:24px">
   <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:10px">
     <div style="display:flex;align-items:center;gap:8px">
-      <span style="color:#f59e0b;font-size:1.2rem">&#9888;</span>
-      <span style="color:#f59e0b;font-weight:600;font-size:0.95rem">
+      <span style="color:#9ca3af;font-size:1.2rem">&#9888;</span>
+      <span style="color:var(--text);font-weight:600;font-size:0.95rem">
         {count} artist{plural} could not be scanned
       </span>
     </div>
     <button id="retryBtn" onclick="retrySkipped()" style="
-      background:#f59e0b;color:#000;border:none;padding:8px 18px;border-radius:6px;
+      background:#9ca3af;color:#000;border:none;padding:8px 18px;border-radius:6px;
       font-weight:700;font-size:0.85rem;cursor:pointer;white-space:nowrap
-    ">&#8635; Retry {count} Artist{plural}</button>
+    ">Retry Scan &rarr;</button>
   </div>
   <p style="color:#94a3b8;font-size:0.85rem;margin-bottom:10px">
     These artists were skipped due to timeouts or errors during scanning.
@@ -1431,24 +1452,24 @@ def _build_skipped_section(skipped: list[dict]) -> str:
   </p>
   <div id="retryProgress" style="display:none;margin-bottom:12px">
     <div style="display:flex;align-items:center;gap:10px;margin-bottom:6px">
-      <div style="width:14px;height:14px;border:2px solid #f59e0b;border-top-color:transparent;border-radius:50%;animation:spin 1s linear infinite"></div>
-      <span id="retryMsg" style="color:#f59e0b;font-size:0.85rem">Starting retry...</span>
+      <div style="width:14px;height:14px;border:2px solid #9ca3af;border-top-color:transparent;border-radius:50%;animation:spin 1s linear infinite"></div>
+      <span id="retryMsg" style="color:var(--text);font-size:0.85rem">Starting retry...</span>
     </div>
     <div style="background:#111820;border-radius:4px;height:6px;overflow:hidden">
-      <div id="retryBar" style="width:0%;height:100%;background:#f59e0b;border-radius:4px;transition:width 0.3s"></div>
+      <div id="retryBar" style="width:0%;height:100%;background:#9ca3af;border-radius:4px;transition:width 0.3s"></div>
     </div>
   </div>
   <div id="skippedListToggle" style="margin-bottom:8px">
     <button onclick="document.getElementById('skippedList').style.display=document.getElementById('skippedList').style.display==='none'?'block':'none';this.textContent=this.textContent.includes('View')?'\\u25B2 Hide skipped artists':'\\u25BC View skipped artists'" style="
-      background:none;border:1px solid #3d2e1a;color:#94a3b8;padding:6px 14px;border-radius:6px;
+      background:none;border:1px solid rgba(156,163,175,0.2);color:#94a3b8;padding:6px 14px;border-radius:6px;
       font-size:0.82rem;cursor:pointer
     ">&#9660; View skipped artists</button>
   </div>
   <div id="skippedList" style="display:none">
     <table style="width:100%;border-collapse:collapse;font-size:0.85rem">
-      <tr style="border-bottom:1px solid #3d2e1a">
-        <th style="text-align:left;padding:6px 8px;color:#f59e0b">Artist</th>
-        <th style="text-align:left;padding:6px 8px;color:#f59e0b">Reason</th>
+      <tr style="border-bottom:1px solid rgba(156,163,175,0.15)">
+        <th style="text-align:left;padding:6px 8px;color:var(--text)">Artist</th>
+        <th style="text-align:left;padding:6px 8px;color:var(--text-dim)">Reason</th>
       </tr>
       {"".join(rows)}
     </table>
@@ -1456,6 +1477,7 @@ def _build_skipped_section(skipped: list[dict]) -> str:
 </div>
 <style>@keyframes spin {{ to {{ transform: rotate(360deg) }} }}</style>
 <script>
+var _retryAttempts = 0;
 function retrySkipped() {{
   var btn = document.getElementById('retryBtn');
   var progress = document.getElementById('retryProgress');
@@ -1467,8 +1489,9 @@ function retrySkipped() {{
   var scanId = parts[parts.length - 1] || parts[parts.length - 2];
   if (!scanId) {{ alert('Could not determine scan ID'); return; }}
 
+  _retryAttempts++;
   btn.disabled = true;
-  btn.textContent = 'Retrying...';
+  btn.textContent = 'Retrying {count} artists...';
   btn.style.opacity = '0.6';
   progress.style.display = 'block';
 
@@ -1483,19 +1506,16 @@ function retrySkipped() {{
           .then(function(r) {{ return r.json(); }})
           .then(function(s) {{
             if (s.message) msg.textContent = s.message;
-            if (s.total > 0) bar.style.width = Math.round(s.current / s.total * 100) + '%';
+            if (s.total > 0) {{
+              bar.style.width = Math.round(s.current / s.total * 100) + '%';
+              msg.textContent = 'Retrying... ' + s.current + '/' + s.total + ' complete';
+            }}
             if (s.status === 'complete' && s.has_result) {{
               clearInterval(poll);
-              msg.textContent = s.message || 'Done!';
               bar.style.width = '100%';
-              // Show link to retry results
-              progress.innerHTML =
-                '<div style="display:flex;align-items:center;gap:10px">' +
-                '<span style="color:#22c55e;font-size:1.1rem">&#10003;</span>' +
-                '<span style="color:#22c55e;font-weight:600">' + (s.message || 'Retry complete') + '</span>' +
-                '<a href="/report/' + retryId + '" style="color:#f59e0b;font-weight:600;margin-left:12px">View Retry Results &rarr;</a>' +
-                '</div>';
-              btn.style.display = 'none';
+              // Reload page to show merged results (retry merges back into original scan)
+              msg.textContent = (s.message || 'Retry complete!') + ' Reloading...';
+              setTimeout(function() {{ window.location.reload(); }}, 1500);
             }}
           }})
           .catch(function() {{}});
@@ -1504,9 +1524,17 @@ function retrySkipped() {{
     .catch(function(err) {{
       msg.textContent = 'Retry failed: ' + err.message;
       msg.style.color = '#ef4444';
-      btn.disabled = false;
-      btn.textContent = '\\u21BB Retry {count} Artist{plural}';
-      btn.style.opacity = '1';
+      if (_retryAttempts < 2) {{
+        btn.disabled = false;
+        btn.textContent = 'Retry Again \\u2192';
+        btn.style.opacity = '1';
+      }} else {{
+        btn.textContent = 'Retry failed';
+        progress.innerHTML =
+          '<p style="color:#f97316;font-size:0.85rem">' +
+          'Retry failed &mdash; artists still could not be scanned. ' +
+          'This may be due to API outages. Try again later.</p>';
+      }}
     }});
 }}
 </script>"""

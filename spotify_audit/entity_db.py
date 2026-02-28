@@ -1978,7 +1978,7 @@ class EntityDB:
         return [dict(r) for r in rows]
 
     def get_scan_detail(self, scan_id: int) -> dict | None:
-        """Get a scan with its full results."""
+        """Get a scan with its full results and computed summary."""
         row = self._conn.execute(
             "SELECT * FROM scans WHERE id = ?", (scan_id,)
         ).fetchone()
@@ -1986,6 +1986,25 @@ class EntityDB:
             return None
         scan = dict(row)
         scan["results"] = self.get_scan_results(scan_id)
+
+        # Compute summary with verdict breakdown for frontend
+        results = scan["results"]
+        analyzed_count = len(results)
+        verdict_breakdown = {}
+        for r in results:
+            v = r.get("verdict", "Inconclusive")
+            verdict_breakdown[v] = verdict_breakdown.get(v, 0) + 1
+        flagged_count = (
+            verdict_breakdown.get("Suspicious", 0)
+            + verdict_breakdown.get("Likely Artificial", 0)
+        )
+        scan["summary"] = {
+            "analyzed_count": analyzed_count,
+            "skipped_count": 0,  # entity DB doesn't track skipped
+            "total_playlist_artists": scan.get("artist_count", analyzed_count),
+            "verdict_breakdown": verdict_breakdown,
+            "flagged_count": flagged_count,
+        }
         return scan
 
     def get_artist_scan_history(self, artist_name: str, limit: int = 20) -> list[dict]:
