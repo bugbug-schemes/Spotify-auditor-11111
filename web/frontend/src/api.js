@@ -76,6 +76,29 @@ export const api = {
     }),
   syncBlocklists: () => req('/blocklists/sync', { method: 'POST' }),
 
+  // Retry skipped artists — uses main app API, not CMS
+  retryScan: async (scanId) => {
+    const res = await fetch(`/api/scan/${scanId}/retry-skipped`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+    });
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}));
+      throw new Error(body.error || `HTTP ${res.status}`);
+    }
+    return res.json();
+  },
+
+  // Poll scan status — uses main app API, not CMS
+  getScanStatus: async (scanId) => {
+    const res = await fetch(`/api/scan/${scanId}`);
+    if (!res.ok) {
+      const body = await res.json().catch(() => ({}));
+      throw new Error(body.error || `HTTP ${res.status}`);
+    }
+    return res.json();
+  },
+
   // API health
   getApiHealth: (hours = 24) => req(`/api-health?hours=${hours}`),
 

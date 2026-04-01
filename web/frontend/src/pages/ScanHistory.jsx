@@ -1,4 +1,4 @@
-import { useState, useEffect, useMemo } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { api } from '../api';
 import ArtistCard from '../components/ArtistCard';
@@ -26,9 +26,11 @@ const VERDICT_FILTER_OPTIONS = [
 
 // ---------------------------------------------------------------------------
 // Verdict Breakdown Bar (spec Part 1)
+// Widths proportional to FULL playlist, percentages from analyzed_count only
 // ---------------------------------------------------------------------------
 
 function VerdictBar({ results, skippedCount }) {
+  const analyzedCount = results.length;
   const counts = useMemo(() => {
     const c = {
       'Verified Artist': 0,
@@ -45,20 +47,20 @@ function VerdictBar({ results, skippedCount }) {
     return c;
   }, [results]);
 
-  const total = results.length + (skippedCount || 0);
+  const total = analyzedCount + (skippedCount || 0);
   if (total === 0) return null;
 
   const segments = [
-    { label: 'Verified Artist', count: counts['Verified Artist'], color: VERDICT_COLORS['Verified Artist'] },
-    { label: 'Likely Authentic', count: counts['Likely Authentic'], color: VERDICT_COLORS['Likely Authentic'] },
-    { label: 'Inconclusive', count: counts['Inconclusive'], color: VERDICT_COLORS['Inconclusive'] },
-    { label: 'Suspicious', count: counts['Suspicious'], color: VERDICT_COLORS['Suspicious'] },
-    { label: 'Likely Artificial', count: counts['Likely Artificial'], color: VERDICT_COLORS['Likely Artificial'] },
+    { label: 'Verified Artist', count: counts['Verified Artist'], color: VERDICT_COLORS['Verified Artist'], isVerdict: true },
+    { label: 'Likely Authentic', count: counts['Likely Authentic'], color: VERDICT_COLORS['Likely Authentic'], isVerdict: true },
+    { label: 'Inconclusive', count: counts['Inconclusive'], color: VERDICT_COLORS['Inconclusive'], isVerdict: true },
+    { label: 'Suspicious', count: counts['Suspicious'], color: VERDICT_COLORS['Suspicious'], isVerdict: true },
+    { label: 'Likely Artificial', count: counts['Likely Artificial'], color: VERDICT_COLORS['Likely Artificial'], isVerdict: true },
   ];
 
-  // Add gray "Not Scanned" segment (spec Part 1)
+  // Add gray "Not Scanned" segment (widths proportional to full playlist)
   if (skippedCount > 0) {
-    segments.push({ label: 'Not Scanned', count: skippedCount, color: VERDICT_COLORS['Not Scanned'] });
+    segments.push({ label: 'Not Scanned', count: skippedCount, color: VERDICT_COLORS['Not Scanned'], isVerdict: false });
   }
 
   const flaggedCount = counts['Suspicious'] + counts['Likely Artificial'];
@@ -69,6 +71,7 @@ function VerdictBar({ results, skippedCount }) {
       <div className="verdict-bar">
         {segments.map(seg => {
           if (seg.count <= 0) return null;
+          // Widths proportional to full playlist (analyzed + skipped)
           const pct = (seg.count / total) * 100;
           return (
             <div
@@ -83,14 +86,19 @@ function VerdictBar({ results, skippedCount }) {
         })}
       </div>
       <div className="verdict-bar-legend">
-        {segments.map(seg => (
-          seg.count > 0 && (
+        {segments.map(seg => {
+          if (seg.count <= 0) return null;
+          // Percentage labels: verdicts use analyzed_count; "Not Scanned" shows count only
+          const legendText = seg.isVerdict && analyzedCount > 0
+            ? `${seg.label}: ${Math.round((seg.count / analyzedCount) * 100)}% (${seg.count})`
+            : `${seg.count} ${seg.label}`;
+          return (
             <span key={seg.label} className="verdict-legend-item">
               <span className="verdict-legend-dot" style={{ background: seg.color }} />
-              {seg.label} ({seg.count})
+              {legendText}
             </span>
-          )
-        ))}
+          );
+        })}
       </div>
 
       {/* Nested Threat Breakdown (spec Part 1) */}
@@ -145,6 +153,167 @@ function ThreatBreakdown({ results, flaggedCount }) {
 }
 
 // ---------------------------------------------------------------------------
+// Skipped Artists Notice (collapsible, with retry button)
+// ---------------------------------------------------------------------------
+
+function SkippedArtistsNotice({ skippedArtists, scanId, onRetryComplete }) {
+  const [expanded, setExpanded] = useState(false);
+  const [retryState, setRetryState] = useState('idle'); // idle | loading | polling | done | failed
+  const [retryProgress, setRetryProgress] = useState({ current: 0, total: 0, message: '' });
+  const [retryResult, setRetryResult] = useState(null);
+  const [retryAttempts, setRetryAttempts] = useState(0);
+
+  const maxRetries = 2;
+
+  const handleRetry = useCallback(async () => {
+    if (retryState === 'loading' || retryState === 'polling') return;
+
+    setRetryState('loading');
+    setRetryProgress({ current: 0, total: skippedArtists.length, message: `Retrying ${skippedArtists.length} artists...` });
+
+    try {
+      const { scan_id: retryId } = await api.retryScan(scanId);
+      setRetryState('polling');
+
+      // Poll for progress
+      const poll = async () => {
+        try {
+          const status = await api.getScanStatus(retryId);
+          setRetryProgress({
+            current: status.current || 0,
+            total: status.total || skippedArtists.length,
+            message: status.message || 'Retrying...',
+          });
+
+          if (status.status === 'complete') {
+            const recovered = (status.recovered_count || 0);
+            const stillSkipped = status.skipped_json ? JSON.parse(status.skipped_json).length : 0;
+
+            if (stillSkipped === 0) {
+              setRetryState('done');
+              setRetryResult({ type: 'all_recovered', recovered, stillSkipped: 0 });
+            } else if (recovered > 0) {
+              setRetryState('done');
+              setRetryResult({ type: 'partial', recovered, stillSkipped });
+            } else {
+              setRetryState('failed');
+              setRetryResult({ type: 'none', recovered: 0, stillSkipped });
+            }
+            setRetryAttempts(prev => prev + 1);
+            if (onRetryComplete) onRetryComplete();
+            return;
+          }
+
+          if (status.status === 'error' || status.phase === 'error') {
+            setRetryState('failed');
+            setRetryResult({ type: 'error', message: status.message || status.error || 'Retry failed' });
+            return;
+          }
+
+          // Continue polling
+          setTimeout(poll, 2000);
+        } catch (err) {
+          setRetryState('failed');
+          setRetryResult({ type: 'error', message: err.message });
+        }
+      };
+      poll();
+    } catch (err) {
+      setRetryState('failed');
+      setRetryResult({ type: 'error', message: err.message });
+    }
+  }, [scanId, skippedArtists.length, retryState, onRetryComplete]);
+
+  if (!skippedArtists || skippedArtists.length === 0) return null;
+
+  // After all artists recovered, hide the notice
+  if (retryState === 'done' && retryResult?.type === 'all_recovered') {
+    return (
+      <div className="skipped-notice skipped-notice--success">
+        <span className="skipped-notice-icon">&#10003;</span>
+        <span>All {retryResult.recovered} previously skipped artists have been recovered and added to the analysis.</span>
+      </div>
+    );
+  }
+
+  return (
+    <div className="skipped-notice">
+      <div className="skipped-notice-header">
+        <div className="skipped-notice-summary">
+          <span className="skipped-notice-icon">&#9888;</span>
+          <span>
+            {retryState === 'done' && retryResult?.type === 'partial'
+              ? `${retryResult.stillSkipped} artists still could not be scanned (${retryResult.recovered} recovered)`
+              : `${skippedArtists.length} artists could not be scanned`
+            }
+          </span>
+        </div>
+        <button
+          className="skipped-notice-toggle"
+          onClick={() => setExpanded(!expanded)}
+          aria-expanded={expanded}
+        >
+          {expanded ? '\u25B2 Hide' : '\u25BC View skipped artists'}
+        </button>
+      </div>
+
+      <div className="skipped-notice-subtitle">
+        These artists were skipped due to timeouts or errors during scanning.
+        They are not included in the analysis above.
+      </div>
+
+      {expanded && (
+        <div className="skipped-notice-list">
+          {skippedArtists.map((s, i) => (
+            <div key={i} className="skipped-notice-item">
+              <span className="skipped-notice-name">{s.artist_name || s.name || 'Unknown'}</span>
+              <span className="skipped-notice-reason">{s.skip_reason || s.reason || 'Unknown error'}</span>
+            </div>
+          ))}
+        </div>
+      )}
+
+      <div className="skipped-notice-actions">
+        {retryState === 'idle' && retryAttempts < maxRetries && (
+          <button className="retry-btn" onClick={handleRetry}>
+            Retry Scan &rarr;
+          </button>
+        )}
+        {(retryState === 'loading' || retryState === 'polling') && (
+          <button className="retry-btn retry-btn--loading" disabled>
+            <span className="retry-spinner" />
+            {retryProgress.current > 0
+              ? `Retrying... ${retryProgress.current}/${retryProgress.total} complete`
+              : `Retrying ${retryProgress.total} artists...`
+            }
+          </button>
+        )}
+        {retryState === 'failed' && (
+          <>
+            <div className="skipped-notice-error">
+              {retryResult?.type === 'none'
+                ? 'Retry failed \u2014 all artists still could not be scanned. This may be due to API outages. Try again later.'
+                : `Retry failed: ${retryResult?.message || 'Unknown error'}`
+              }
+            </div>
+            {retryAttempts < maxRetries && (
+              <button className="retry-btn" onClick={handleRetry}>
+                Retry Again &rarr;
+              </button>
+            )}
+          </>
+        )}
+        {retryState === 'done' && retryResult?.type === 'partial' && retryAttempts < maxRetries && (
+          <button className="retry-btn" onClick={handleRetry}>
+            Retry Again &rarr;
+          </button>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
 // Sort & Filter Controls (spec Part 2)
 // ---------------------------------------------------------------------------
 
@@ -157,13 +326,13 @@ function SortFilterControls({ sortBy, onSortChange, filterVerdict, onFilterChang
           className={`sort-btn ${sortBy === 'score-asc' ? 'sort-btn--active' : ''}`}
           onClick={() => onSortChange('score-asc')}
         >
-          Score \u2191
+          Score ↑
         </button>
         <button
           className={`sort-btn ${sortBy === 'score-desc' ? 'sort-btn--active' : ''}`}
           onClick={() => onSortChange('score-desc')}
         >
-          Score \u2193
+          Score ↓
         </button>
         <button
           className={`sort-btn ${sortBy === 'alpha' ? 'sort-btn--active' : ''}`}
@@ -195,13 +364,14 @@ function SortFilterControls({ sortBy, onSortChange, filterVerdict, onFilterChang
 // Scan Detail View
 // ---------------------------------------------------------------------------
 
-function ScanDetail({ detail }) {
+function ScanDetail({ detail, onRefresh }) {
   const [sortBy, setSortBy] = useState('score-asc');
   const [filterVerdict, setFilterVerdict] = useState('All');
 
   const results = detail.results || [];
   const summary = detail.summary || {};
-  const skippedCount = summary.timed_out_count || detail.skipped_count || detail.skipped_artists?.length || 0;
+  const skippedArtists = detail.skipped_artists || [];
+  const skippedCount = summary.skipped_count || summary.timed_out_count || skippedArtists.length || 0;
   const analyzedCount = summary.analyzed_count || results.length;
   const totalArtists = summary.total_playlist_artists || (analyzedCount + skippedCount);
   const flaggedCount = useMemo(() => results.filter(
@@ -239,19 +409,14 @@ function ScanDetail({ detail }) {
         </div>
       </div>
 
-      {/* Summary card (spec Part 1) */}
+      {/* Summary card — metrics based on analyzed_count ONLY */}
       <div className="card scan-summary-card">
-        {/* BUG-11 fix: Removed Health Score card. Show Analyzed, Timed Out, Flagged. */}
         <div className="scan-summary-metrics">
           <div className="scan-summary-stat">
             <span className="scan-summary-value">{analyzedCount}</span>
-            <span className="scan-summary-label">Analyzed{totalArtists > analyzedCount ? ` of ${totalArtists}` : ''}</span>
-          </div>
-          <div className="scan-summary-stat">
-            <span className="scan-summary-value">
-              {skippedCount > 0 ? `${skippedCount} \u26A0\uFE0F` : `0 \u2713`}
+            <span className="scan-summary-label">
+              Analyzed{totalArtists > analyzedCount ? ` of ${totalArtists}` : ''}
             </span>
-            <span className="scan-summary-label">Timed Out</span>
           </div>
           <div className="scan-summary-stat">
             <span className="scan-summary-value" style={{ color: flaggedCount > 0 ? 'var(--red, #ef4444)' : undefined }}>
@@ -261,10 +426,10 @@ function ScanDetail({ detail }) {
           </div>
         </div>
 
-        {/* Verdict bar with Not Scanned segment */}
+        {/* Verdict bar — widths from total, percentages from analyzed_count */}
         <VerdictBar results={results} skippedCount={skippedCount} />
 
-        {/* Methodology link (spec Part 1: one-line link) */}
+        {/* Methodology link */}
         <div className="methodology-link">
           Analyzed across 6 evidence categories using 7 data sources &mdash;{' '}
           <a href="/methodology" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--blue)' }}>
@@ -272,6 +437,15 @@ function ScanDetail({ detail }) {
           </a>
         </div>
       </div>
+
+      {/* Skipped artists notice — separate from summary, with retry button */}
+      {skippedCount > 0 && (
+        <SkippedArtistsNotice
+          skippedArtists={skippedArtists}
+          scanId={detail.id}
+          onRetryComplete={onRefresh}
+        />
+      )}
 
       {/* Sort & Filter (spec Part 2) */}
       <SortFilterControls
@@ -314,26 +488,32 @@ export default function ScanHistory() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
-  useEffect(() => {
+  const loadDetail = useCallback(() => {
+    if (!scanId) return;
     setLoading(true);
+    api.getScan(scanId)
+      .then(setDetail)
+      .catch(e => setError(e.message))
+      .finally(() => setLoading(false));
+  }, [scanId]);
+
+  useEffect(() => {
     if (scanId) {
-      api.getScan(scanId)
-        .then(setDetail)
-        .catch(e => setError(e.message))
-        .finally(() => setLoading(false));
+      loadDetail();
     } else {
+      setLoading(true);
       api.getScans()
         .then(data => setScans(data.scans || []))
         .catch(e => setError(e.message))
         .finally(() => setLoading(false));
     }
-  }, [scanId]);
+  }, [scanId, loadDetail]);
 
   if (error) return <div className="error">{error}</div>;
   if (loading) return <div className="loading">Loading...</div>;
 
   if (detail) {
-    return <ScanDetail detail={detail} />;
+    return <ScanDetail detail={detail} onRefresh={loadDetail} />;
   }
 
   return (

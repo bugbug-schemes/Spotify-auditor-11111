@@ -111,6 +111,8 @@ class ScanStore:
         for col, coltype in [
             ("playlist_url", "TEXT"),
             ("skipped_json", "TEXT"),
+            ("report_pickle", "BLOB"),
+            ("original_scan_id", "TEXT"),
         ]:
             try:
                 conn.execute(f"ALTER TABLE scan_reports ADD COLUMN {col} {coltype}")
@@ -123,8 +125,8 @@ class ScanStore:
         conn.execute("""
             INSERT OR REPLACE INTO scan_reports
                 (scan_id, status, result_html, playlist_name, message, error, created_at,
-                 playlist_url, skipped_json)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+                 playlist_url, skipped_json, report_pickle, original_scan_id)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             scan_id,
             scan["status"],
@@ -135,6 +137,8 @@ class ScanStore:
             scan.get("started_at", time.time()),
             scan.get("playlist_url"),
             scan.get("skipped_json"),
+            scan.get("report_pickle"),
+            scan.get("original_scan_id"),
         ))
         conn.commit()
 
@@ -281,7 +285,9 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             done_msg = f"Done! Analyzed {analyzed} artists."
 
         import json as _json
+        import pickle as _pickle
         skipped_json = _json.dumps(playlist_report.skipped_artists) if playlist_report.skipped_artists else None
+        report_pickle = _pickle.dumps(playlist_report)
 
         _active_scans[scan_id].update({
             "status": "complete",
@@ -291,6 +297,7 @@ def _run_scan_background(scan_id: str, playlist_url: str, deep: bool) -> None:
             "message": done_msg,
             "playlist_url": playlist_url,
             "skipped_json": skipped_json,
+            "report_pickle": report_pickle,
         })
         # Persist completed scan to SQLite so it survives server restarts
         scan_store.save(scan_id, _active_scans[scan_id])
@@ -409,10 +416,13 @@ def start_scan():
 
 @app.route("/api/scan/<scan_id>")
 def scan_status(scan_id):
+    # Fields to exclude from the status response (binary or large data)
+    _EXCLUDE = {"result_html", "report_pickle"}
+
     # Check in-memory store first (for running scans with live progress)
     scan = _active_scans.get(scan_id)
     if scan:
-        resp = {k: v for k, v in scan.items() if k != "result_html"}
+        resp = {k: v for k, v in scan.items() if k not in _EXCLUDE}
         resp["has_result"] = scan["result_html"] is not None
         elapsed = time.time() - scan["started_at"]
         resp["elapsed_seconds"] = round(elapsed, 1)
@@ -428,6 +438,7 @@ def scan_status(scan_id):
             "playlist_name": saved["playlist_name"],
             "message": saved["message"],
             "error": saved.get("error"),
+            "original_scan_id": saved.get("original_scan_id"),
             "elapsed_seconds": 0,
             "current": 0,
             "total": 0,
@@ -544,7 +555,7 @@ def retry_skipped(scan_id):
 
 
 def _run_retry_background(retry_id: str, skipped: list[dict], original_scan_id: str) -> None:
-    """Background thread: retry skipped artists and generate a mini-report."""
+    """Background thread: retry skipped artists and merge results into original scan."""
     global _active_scan_count
 
     from spotify_audit.audit_runner import retry_skipped_artists, build_config
@@ -568,8 +579,126 @@ def _run_retry_background(retry_id: str, skipped: list[dict], original_scan_id: 
             on_progress=on_progress,
         )
 
-        # Build a mini playlist report for the retried artists
-        playlist_report = build_playlist_report(
+        import json as _json
+        import pickle as _pickle
+
+        analyzed = len(artist_reports)
+        still_count = len(still_skipped)
+        recovered = analyzed
+
+        # --- Merge retry results back into the original scan ---
+        original_scan = _active_scans.get(original_scan_id)
+        original_pickle = None
+        if original_scan:
+            original_pickle = original_scan.get("report_pickle")
+        if not original_pickle:
+            saved = scan_store.get(original_scan_id)
+            if saved:
+                original_pickle = saved.get("report_pickle")
+
+        if original_pickle and artist_reports:
+            # Unpickle the original PlaylistReport, merge in retry results
+            original_report = _pickle.loads(
+                original_pickle if isinstance(original_pickle, bytes)
+                else original_pickle.encode("latin-1")
+            )
+
+            # Append recovered artists into the original report
+            original_report.artists.extend(artist_reports)
+            original_report.total_unique_artists = len(original_report.artists)
+            original_report.skipped_artists = still_skipped
+
+            # Recalculate verdict counts from scratch
+            original_report.verified_artists = 0
+            original_report.likely_authentic = 0
+            original_report.inconclusive = 0
+            original_report.suspicious = 0
+            original_report.likely_artificial = 0
+            original_report.verified_legit = 0
+            original_report.probably_fine = 0
+            original_report.needs_review = 0
+
+            from spotify_audit.evidence import Verdict
+            for a in original_report.artists:
+                v = a.verdict_enum
+                if v == Verdict.VERIFIED_ARTIST:
+                    original_report.verified_artists += 1
+                elif v == Verdict.LIKELY_AUTHENTIC:
+                    original_report.likely_authentic += 1
+                elif v in (Verdict.INCONCLUSIVE, Verdict.INSUFFICIENT_DATA,
+                           Verdict.CONFLICTING_SIGNALS):
+                    original_report.inconclusive += 1
+                elif v == Verdict.SUSPICIOUS:
+                    original_report.suspicious += 1
+                elif v == Verdict.LIKELY_ARTIFICIAL:
+                    original_report.likely_artificial += 1
+
+                if a.final_score >= 82:
+                    original_report.verified_legit += 1
+                elif a.final_score >= 58:
+                    original_report.probably_fine += 1
+                else:
+                    original_report.needs_review += 1
+
+            # Recalculate health score
+            verdict_health = {
+                Verdict.VERIFIED_ARTIST: 100,
+                Verdict.LIKELY_AUTHENTIC: 85,
+                Verdict.INCONCLUSIVE: 50,
+                Verdict.INSUFFICIENT_DATA: 50,
+                Verdict.CONFLICTING_SIGNALS: 50,
+                Verdict.SUSPICIOUS: 25,
+                Verdict.LIKELY_ARTIFICIAL: 0,
+            }
+            if original_report.artists:
+                total_health = sum(
+                    verdict_health.get(a.verdict_enum, 50) for a in original_report.artists
+                )
+                original_report.health_score = int(total_health / len(original_report.artists))
+
+            # Regenerate HTML from the merged report
+            merged_html = to_html(original_report)
+            merged_pickle = _pickle.dumps(original_report)
+
+            total_analyzed = original_report.total_unique_artists
+            if still_count:
+                merged_msg = (
+                    f"Done! Analyzed {total_analyzed} artists "
+                    f"({still_count} skipped due to errors/timeouts). "
+                    f"Retry recovered {recovered} additional artists."
+                )
+            else:
+                merged_msg = (
+                    f"Done! Analyzed {total_analyzed} artists. "
+                    f"Retry recovered all {recovered} previously skipped artists!"
+                )
+
+            # Update the ORIGINAL scan entry with merged results
+            if original_scan:
+                original_scan.update({
+                    "result_html": merged_html,
+                    "report_pickle": merged_pickle,
+                    "skipped_json": _json.dumps(still_skipped) if still_skipped else None,
+                    "message": merged_msg,
+                })
+            scan_store.save(original_scan_id, {
+                "status": "complete",
+                "phase": "done",
+                "result_html": merged_html,
+                "report_pickle": merged_pickle,
+                "playlist_name": original_report.playlist_name,
+                "message": merged_msg,
+                "playlist_url": (original_scan or {}).get("playlist_url", ""),
+                "skipped_json": _json.dumps(still_skipped) if still_skipped else None,
+                "started_at": (original_scan or {}).get("started_at", time.time()),
+            })
+            logger.info(
+                "Retry %s merged %d artists into original scan %s",
+                retry_id, recovered, original_scan_id,
+            )
+
+        # Also build a standalone retry report for the retry scan entry
+        retry_report = build_playlist_report(
             playlist_name=f"Retry of {len(skipped)} skipped artists",
             playlist_id=f"retry-{original_scan_id}",
             owner="",
@@ -578,23 +707,22 @@ def _run_retry_background(retry_id: str, skipped: list[dict], original_scan_id: 
             artist_reports=artist_reports,
             skipped_artists=still_skipped,
         )
-        html = to_html(playlist_report)
+        retry_html = to_html(retry_report)
 
-        analyzed = len(artist_reports)
-        still_count = len(still_skipped)
         if still_count:
             done_msg = f"Retry complete — {analyzed} analyzed, {still_count} still skipped."
         else:
             done_msg = f"Retry complete — all {analyzed} artists analyzed successfully!"
 
-        import json as _json
         _active_scans[retry_id].update({
             "status": "complete",
             "phase": "done",
-            "result_html": html,
-            "playlist_name": playlist_report.playlist_name,
+            "result_html": retry_html,
+            "playlist_name": retry_report.playlist_name,
             "message": done_msg,
             "skipped_json": _json.dumps(still_skipped) if still_skipped else None,
+            "original_scan_id": original_scan_id,
+            "recovered_count": recovered,
         })
         scan_store.save(retry_id, _active_scans[retry_id])
     except Exception as exc:
@@ -608,6 +736,7 @@ def _run_retry_background(retry_id: str, skipped: list[dict], original_scan_id: 
             "phase": "done",
             "result_html": html,
             "message": f"Retry failed: {exc}",
+            "original_scan_id": original_scan_id,
         })
         scan_store.save(retry_id, _active_scans[retry_id])
     finally:
